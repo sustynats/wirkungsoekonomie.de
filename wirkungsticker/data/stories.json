@@ -2,8 +2,1514 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T08:07:47.503Z",
+  "updated_at": "2026-09-16T08:22:35.578Z",
   "stories": [
+    {
+      "story_id": "wt-5f61f8c5ae4c67bd",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-563aa65479ef1de4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-d7af017f25b00b28-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-53c478d9d6550236-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "die-juristische-presseschau-vom-16-september-2026-supreme-court-zu-briefwahl-eu-plant-ki-4c67bd",
+      "title": "Laut LTO stoppt der US-Supreme Court Briefwahl-Beschränkung von Präsident Trump",
+      "source_summary": "Die Legal Tribune Online fasst mehrere rechtspolitische Themen zusammen. Im Mittelpunkt steht der US-Supreme Court: Das Gericht lehnte laut Darstellung mehrheitlich den Antrag der Regierung ab, den Stopp einer geplanten Briefwahl-Beschränkung auszusetzen. Zuvor hatte eine Bundesrichterin in Boston die Regelung per einstweiliger Verfügung gestoppt.\n\nDie vorliegende Auswahl nennt als Begründung unter anderem den späten Zeitpunkt vor den Midterm-Wahlen. Eine Begründung der Mehrheit des Supreme Court lag laut Quelle zunächst nicht vor. Daneben berichtet die Presseschau über geplante EU-Regeln zum Jugendschutz in sozialen Netzwerken. Die Auswahl ist unvollständig; der vollständige Kontext und unabhängige Bestätigungen liegen hier nicht vor.",
+      "summary": "Der US-Supreme Court ließ den Stopp einer geplanten Briefwahl-Beschränkung bestehen. Das könnte den Zugang zur Briefwahl und die demokratische Korrekturfähigkeit berühren; Umfang und Dauer der Folgen sind offen.",
+      "detail_summary": "Laut Legal Tribune Online hat der US-Supreme Court den Antrag der US-Regierung abgelehnt, den Stopp einer geplanten Briefwahl-Beschränkung auszusetzen. Eine Bundesrichterin in Boston hatte die Regelung zuvor per einstweiliger Verfügung gestoppt, weil eine Umsetzung vor den Midterm-Wahlen nicht mehr rechtzeitig möglich sein könne. Die Entscheidung kann kurzfristig dazu beitragen, dass die bisherige Briefwahlpraxis bestehen bleibt. Davon könnten Briefwählende und Wahlbehörden profitieren, sofern keine weitere Entscheidung folgt. Die Mehrheit des Gerichts legte laut Quelle zunächst keine Begründung vor; deshalb bleiben Reichweite, Rechtsgrundlage und längerfristige Folgen offen. Die Presseschau enthält außerdem Hinweise auf geplante EU-Regeln zum Jugendschutz, die hier nicht zum Hauptgegenstand gemacht werden.",
+      "why_relevant": "Der Streit betrifft den Zugang zu einem Wahlweg und damit eine zentrale demokratische Infrastruktur. Die vorliegende Quelle belegt eine gerichtliche Zwischenentscheidung, aber noch keine längerfristige Wirkung auf Wahlbeteiligung, Vertrauen oder Verwaltung.",
+      "topic": [
+        "Energie",
+        "Soziales",
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Der US-Supreme Court lehnte laut Legal Tribune Online den Antrag ab, den Stopp einer geplanten Briefwahl-Beschränkung auszusetzen.",
+        "evaluation_target": {
+          "label": "Zugang und Stabilität des Briefwahlverfahrens",
+          "type": "decision"
+        },
+        "baseline": "Die geplante Beschränkung wäre ohne den gerichtlichen Stopp weiterverfolgt worden; die bisherige Briefwahlpraxis bildet den Vergleichszustand.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne den bestätigten Stopp könnte die geplante Briefwahl-Beschränkung weiter umgesetzt oder kurzfristig vorbereitet werden. Welche konkrete Praxis sich ohne die Entscheidung ergeben hätte, ist nicht vollständig belegt.",
+        "reference_frame": [
+          "demokratische Teilhabe",
+          "Wahlzugang",
+          "rechtstaatliche Kontrolle",
+          "Agenda 2030/SDG 16"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der mögliche Erhalt bestehender Briefwahlabläufe kann Zugang und organisatorische Sicherheit für Briefwählende stützen. Belastbare Daten zu betroffenen Gruppen oder tatsächlichen Folgen fehlen.",
+            "planet": "Der Vorgang betrifft primär Wahlrecht und Wahlverwaltung. Ein eigenständiger materieller Umweltpfad ist in den gelieferten Quellen nicht belegt und wird deshalb als vernachlässigbar modelliert.",
+            "democracy": "Die gerichtliche Kontrolle einer kurzfristig geplanten Wahlregel kann demokratische Korrekturfähigkeit und Verfahrensstabilität berühren. Eine Wirkung auf Vertrauen oder Beteiligung ist möglich, aber nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der gerichtliche Stopp der geplanten Briefwahl-Beschränkung bleibt vorerst bestehen.",
+          "second_order": "Bestehende Zugangs- und Verwaltungsabläufe könnten unter der Bedingung ausbleibender weiterer Änderungen fortbestehen.",
+          "third_order": "Die Entscheidung könnte Maßstäbe für die gerichtliche Kontrolle kurzfristiger Eingriffe in Wahlverfahren prägen; Umfang und Dauer sind offen.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die fehlende Begründung der Mehrheit lässt offen, ob die Entscheidung eng verfahrensbezogen ist.",
+            "Die vorliegende Quelle belegt keine tatsächlichen Änderungen bei Wahlbeteiligung, Vertrauen oder Repräsentation.",
+            "Eine weitere Entscheidung könnte den gegenwärtigen Zustand wieder verändern."
+          ],
+          "source_independence": "Es liegt eine journalistische Sekundärquelle vor. Die Auswahl verweist auf weitere Darstellungen, liefert deren vollständige Texte aber nicht. Unabhängigkeit und zusätzliche Bestätigung sind daher nicht verifiziert.",
+          "institutional_status": "Nach der gelieferten Darstellung hat der Supreme Court den Antrag mehrheitlich abgelehnt; die vollständige Begründung und der endgültige rechtliche Status der zugrunde liegenden Regelung sind offen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen den gerichtlichen Stopp, aber nicht dessen tatsächliche Auswirkungen auf einzelne Briefwählende. Der bedingte Pfad ist deshalb auf den möglichen Erhalt des Zugangs und der Verwaltungsstabilität begrenzt.",
+            "reviewed_source_ids": [
+              "lto-news"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Der Zugang zur bisherigen Briefwahlpraxis könnte zunächst erhalten bleiben.",
+                "mechanism": "Der gerichtliche Stopp verhindert nach der gelieferten Darstellung vorerst die geplante Beschränkung.",
+                "recipients": [
+                  "Briefwählende",
+                  "Wahlbehörden"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Der Pfad setzt voraus, dass keine weitere Entscheidung den Stopp aufhebt und Wahlbehörden die bisherigen Abläufe anwenden können.",
+                "reference_space": "US-Wahlverwaltung und betroffene Briefwählende",
+                "time_horizon": "bis zu weiteren gerichtlichen oder administrativen Entscheidungen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der bisherige Ablauf bleibt praktisch verfügbar und die Entscheidung wird von den zuständigen Stellen umgesetzt.",
+                "source_support": "Die Quelle belegt den gerichtlichen Stopp und den Streit über eine geplante Beschränkung, nicht die konkrete Nutzung durch Briefwählende.",
+                "limitations": "Keine Daten zu Reichweite, Verteilung, Teilnahme oder tatsächlichem Zugang.",
+                "first_order": "Die geplante Beschränkung könnte vorerst nicht umgesetzt werden.",
+                "second_order": "Briefwählende könnten unter unveränderten Abläufen ihre bisherige Zugangsmöglichkeit behalten.",
+                "third_order": "Stabilere Zugangsbedingungen könnten die organisatorische Resilienz des Wahlverfahrens stützen; ein Effekt auf Repräsentation bleibt offen.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der mögliche Zugangseffekt reicht von begrenzter Verfahrensstabilität bis zu breiterem Schutz der Briefwahl, abhängig von weiteren Entscheidungen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Folgenmessung und keine unabhängige Bestätigung geliefert; der Pfad bleibt bedingt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Pfad kann Briefwählende und Wahlbehörden im betroffenen Verfahren erreichen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ein unveränderter Zugang kann für Betroffene praktisch bedeutsam sein.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hängt von weiteren gerichtlichen oder politischen Schritten ab.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verfahrensregeln können durch spätere Entscheidungen erneut geändert werden.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen, die auf Briefwahl angewiesen sind, könnten besonders von kurzfristigen Änderungen abhängen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Zugang, Verwaltung und demokratische Teilhabe.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Zugang zu einem Wahlweg ist eine maßgebliche demokratische Schutzgrenze; der Pfad bleibt wegen fehlender Folgenmessung bedingt.",
+                  "reference_frame": "Zugang zu politischer Teilhabe",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Rechtsunsicherheit könnte Briefwählende und Wahlbehörden belasten.",
+                "mechanism": "Eine fehlende Begründung und mögliche weitere Verfahren können die Stabilität der Regeln erschweren.",
+                "recipients": [
+                  "Briefwählende",
+                  "Wahlbehörden"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "low",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Der Risikopfad setzt weitere kurzfristige Rechtsänderungen oder widersprüchliche Anweisungen voraus.",
+                "reference_space": "US-Wahlverwaltung",
+                "time_horizon": "bis zur Klärung des Rechtsstreits",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unklarheit führt zu zusätzlichem organisatorischem Anpassungsbedarf.",
+                "source_support": "Die Quelle belegt die fehlende Begründung und den zeitlichen Streit, nicht konkrete Belastungen.",
+                "limitations": "Keine Daten zu Fehlern, Kosten oder Verunsicherung.",
+                "first_order": "Behörden könnten weitere rechtliche Klärung abwarten müssen.",
+                "second_order": "Betroffene könnten ihre Möglichkeiten zur Briefwahl schwerer einschätzen.",
+                "third_order": "Wiederholte kurzfristige Regeländerungen könnten Vertrauen in Wahlverfahren schwächen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Das Risiko reicht von geringer zusätzlicher Unsicherheit bis zu spürbaren organisatorischen Problemen bei weiteren Änderungen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zu Belastungen oder Vertrauensverlusten geliefert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Das Risiko betrifft vor allem Beteiligte am konkreten Verfahren.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Belastung besteht zunächst in Unsicherheit und Anpassungsbedarf.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hängt von der ausstehenden rechtlichen Klärung ab.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Organisatorische Unsicherheit wäre grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Auf Briefwahl angewiesene Personen könnten von unklaren Vorgaben stärker betroffen sein.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Risikopfad berührt Verwaltung und Vertrauen in Wahlverfahren.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Das Risiko ist materiell prüfbar, erreicht nach der vorliegenden Evidenz aber keine nachgewiesene Schutzgrenzverletzung.",
+                  "reference_frame": "verlässlicher und verständlicher Wahlzugang",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der mögliche positive Pfad betrifft den vorläufigen Erhalt eines Wahlzugangs. Ein begrenzter negativer Nebenpfad entsteht aus der offenen Rechtslage. Die Richtung ist trotz fehlender Messdaten modellierbar, weil der gerichtliche Ausgangspunkt und die betroffenen Funktionen beschrieben sind.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der positive Hauptpfad schützt potenziell den Zugang zur Briefwahl; der negative Pfad betrifft vor allem Unsicherheit und ist schwächer sowie nicht beobachtet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Der Zugang zur bisherigen Briefwahlpraxis könnte zunächst erhalten bleiben.",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Der Zugang zur bisherigen Briefwahlpraxis könnte zunächst erhalten bleiben.",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Quellen nennen keine Umwelt-, Energie-, Ressourcen- oder Emissionsdimension des Briefwahlstreits. Ein materieller Umweltpfad ist im abgegrenzten Gegenstand und Zeitraum vernachlässigbar.",
+            "reviewed_source_ids": [
+              "lto-news"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Für die Umwelt ist aus dem Briefwahlstreit keine materielle Zustandsänderung ableitbar.",
+                "mechanism": "Der Gegenstand betrifft gerichtliche Kontrolle und Wahlverwaltung, nicht eine belegte Umweltmaßnahme.",
+                "recipients": [
+                  "Natur"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Der Pfad bleibt auf den beschriebenen Wahlrechtsgegenstand begrenzt.",
+                "reference_space": "US-Wahlverfahren und unmittelbare Verwaltungsfolgen",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Keine nicht gelieferte Umweltmaßnahme oder relevante Ressourcenänderung wird unterstellt.",
+                "source_support": "Die Quelle beschreibt einen Briefwahlstreit und keine Umweltfolgen.",
+                "limitations": "Keine Umweltkennzahlen oder Prozessdaten.",
+                "first_order": "Keine materielle Umweltzustandsänderung ist belegt oder plausibel konkretisiert.",
+                "second_order": "Keine belastbare ökologische Folge lässt sich aus dem Gegenstand ableiten.",
+                "third_order": "Keine systemische Umweltwirkung ist innerhalb der definierten Systemgrenze modellierbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Der Pfad ist im beschriebenen Raum und Zeitraum begründet vernachlässigbar."
+                },
+                "negligibility_rationale": "Die Quelle enthält keinen Umweltbezug; der Gegenstand ist eine gerichtliche Entscheidung zu Briefwahlregeln.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen Umweltmechanismus.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Empfängergruppe ist durch den Vorgang konkret erreicht.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung wird beschrieben.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Umweltwirkung mit zeitlicher Dauer ist belegt.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ohne Umweltzustandsänderung besteht keine ökologische Irreversibilität.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzliche Umweltkomponente wird im Beleg angesprochen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Der Vorgang besitzt innerhalb der Systemgrenze keine belegte ökologische Tiefe.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch den gelieferten Sachverhalt berührt.",
+                  "reference_frame": "ökologische Unversehrtheit",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Planet-Pfad erhält nicht wegen fehlender Daten, sondern wegen des konkret beschriebenen Gegenstands und fehlender ökologischer Mechanismen Faktoren 0.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Für die Umwelt ist aus dem Briefwahlstreit keine materielle Zustandsänderung ableitbar.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die Umwelt ist aus dem Briefwahlstreit keine materielle Zustandsänderung ableitbar.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle trägt den gerichtlichen Stopp und den zeitlichen Konflikt, aber keine Messung von Beteiligung, Vertrauen oder Repräsentation. Das Potenzial wird daher auf Verfahrenszugang und institutionelle Kontrolle begrenzt.",
+            "reviewed_source_ids": [
+              "lto-news"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Gerichtliche Kontrolle könnte die Stabilität des Briefwahlzugangs und die Korrekturfähigkeit des Wahlverfahrens stützen.",
+                "mechanism": "Der Supreme Court lässt laut Quelle den Stopp einer kurzfristig geplanten Beschränkung bestehen.",
+                "recipients": [
+                  "Briefwählende",
+                  "Wahlbehörden",
+                  "Gerichte"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Entscheidung praktisch beachtet wird und keine spätere Entscheidung den Stopp aufhebt.",
+                "reference_space": "US-Wahlverfahren und demokratische Institutionen",
+                "time_horizon": "bis zur weiteren rechtlichen Klärung und darüber hinaus als möglicher Präzedenzfall",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Gerichtliche Kontrolle begrenzt kurzfristige Eingriffe und erhält den bisherigen Zugang.",
+                "source_support": "Die Quelle belegt die gerichtliche Ablehnung und den vorherigen Stopp, nicht eine tatsächliche Verbesserung demokratischer Ergebnisse.",
+                "limitations": "Keine Daten zu Beteiligung, Vertrauen, Repräsentation oder langfristiger Rechtsprechung.",
+                "first_order": "Die geplante Beschränkung könnte vorerst nicht in Kraft gesetzt werden.",
+                "second_order": "Der bestehende Briefwahlzugang könnte für Betroffene und Behörden verlässlicher bleiben.",
+                "third_order": "Die Entscheidung könnte die demokratische Korrekturfähigkeit gegenüber kurzfristigen Regeländerungen stärken; eine solche Prägewirkung ist offen.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Wirkung reicht plausibel von einer engen Verfahrensentscheidung bis zu einem breiteren Signal für stabile Wahlregeln."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung findet keinen unabhängigen Nachweis langfristiger demokratischer Folgen; der Pfad bleibt ein bedingtes Potenzial.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Wahlzugangsregeln können viele Briefwählende und Wahlbehörden betreffen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Der Schutz eines Wahlwegs kann für politische Teilhabe wesentlich sein.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hängt von weiteren Verfahren und der konkreten Regelung ab.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ein möglicher institutioneller Präzedenzfall wäre teilweise dauerhaft, die konkrete Regel bleibt änderbar.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen mit besonderem Bedarf an Briefwahl können von stabilen Zugangsregeln abhängen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad verbindet Wahlzugang, Gerichte und institutionelle Korrekturfähigkeit.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Freier und verlässlicher Zugang zu Wahlverfahren ist eine demokratische Schutzgrenze; die konkrete Schutzwirkung bleibt wegen fehlender Folgebelege bedingt.",
+                  "reference_frame": "demokratische Teilhabe und rechtstaatliche Wahlkontrolle",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Die ungeklärte Begründung könnte das Vertrauen in die Stabilität der Wahlregeln belasten.",
+                "mechanism": "Widersprüchliche oder kurzfristige Regeländerungen können die Verständlichkeit und Vorhersehbarkeit des Wahlverfahrens schwächen.",
+                "recipients": [
+                  "Briefwählende",
+                  "Öffentlichkeit",
+                  "Wahlbehörden"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "low",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Der Risikopfad setzt voraus, dass die fehlende Begründung und weitere Verfahren öffentlich als Instabilität wahrgenommen werden.",
+                "reference_space": "US-demokratische Öffentlichkeit und Wahlverwaltung",
+                "time_horizon": "während des laufenden Rechtsstreits",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Rechtliche Unklarheit beeinflusst die wahrgenommene Verlässlichkeit von Wahlregeln.",
+                "source_support": "Die Quelle nennt die fehlende Begründung und die zeitliche Nähe zu den Midterm-Wahlen.",
+                "limitations": "Keine Umfragen, Diskursdaten oder Verhaltensdaten geliefert.",
+                "first_order": "Die Regelung bleibt erklärungsbedürftig und politisch umkämpft.",
+                "second_order": "Ein Teil der Öffentlichkeit könnte die Verfahrensstabilität schlechter einschätzen.",
+                "third_order": "Wiederholte Konflikte könnten langfristig Vertrauen in Institutionen schwächen; dies ist nicht beobachtet.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Vertrauenseffekt reicht von begrenzter Unsicherheit bis zu einer breiteren Debatte über Wahllegitimität."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten belegen einen Vertrauens- oder Diskurseffekt; nur ein bedingtes Risiko ist modellierbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Das Risiko erreicht vor allem die politisch interessierte Öffentlichkeit und Betroffene.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Wirkung besteht zunächst in Unsicherheit über Regeln und Begründung.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer ist an weitere Verfahren und öffentliche Erklärungen gebunden.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen und Verständlichkeit könnten durch spätere Klarheit teilweise wiederhergestellt werden.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen mit geringerem Zugang zu rechtlichen Informationen könnten stärker belastet sein.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt institutionelles Vertrauen, aber keine nachgewiesene Strukturveränderung.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Das Risiko betrifft demokratische Qualität, eine konkrete Grenzverletzung ist jedoch nicht belegt.",
+                  "reference_frame": "Verlässlichkeit und Verständlichkeit demokratischer Verfahren",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der positive Hauptpfad betrifft die gerichtliche Begrenzung einer kurzfristigen Änderung des Wahlzugangs. Ein schwächerer negativer Risikopfad folgt aus der offenen Begründung und möglichen weiteren Regeländerungen. Keine dieser Möglichkeiten ist als eingetretene demokratische Wirkung belegt.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der positive Pfad betrifft eine zentrale demokratische Schutzfunktion, während der negative Pfad ein unbestätigtes Vertrauensrisiko bleibt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Gerichtliche Kontrolle könnte die Stabilität des Briefwahlzugangs und die Korrekturfähigkeit des Wahlverfahrens stützen.",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gerichtliche Kontrolle könnte die Stabilität des Briefwahlzugangs und die Korrekturfähigkeit des Wahlverfahrens stützen.",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T08:25:26.571Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "lto-news",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle trägt die Darstellung der gerichtlichen Ablehnung, des vorherigen Stopps, des zeitlichen Problems und der offenen Begründung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen den gerichtlichen Stopp, aber nicht dessen tatsächliche Auswirkungen auf einzelne Briefwählende. Der bedingte Pfad ist deshalb auf den möglichen Erhalt des Zugangs und der Verwaltungsstabilität begrenzt.",
+          "reviewed_source_ids": [
+            "lto-news"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Der Zugang zur bisherigen Briefwahlpraxis könnte zunächst erhalten bleiben.",
+              "mechanism": "Der gerichtliche Stopp verhindert nach der gelieferten Darstellung vorerst die geplante Beschränkung.",
+              "recipients": [
+                "Briefwählende",
+                "Wahlbehörden"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Der Pfad setzt voraus, dass keine weitere Entscheidung den Stopp aufhebt und Wahlbehörden die bisherigen Abläufe anwenden können.",
+              "reference_space": "US-Wahlverwaltung und betroffene Briefwählende",
+              "time_horizon": "bis zu weiteren gerichtlichen oder administrativen Entscheidungen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der bisherige Ablauf bleibt praktisch verfügbar und die Entscheidung wird von den zuständigen Stellen umgesetzt.",
+              "source_support": "Die Quelle belegt den gerichtlichen Stopp und den Streit über eine geplante Beschränkung, nicht die konkrete Nutzung durch Briefwählende.",
+              "limitations": "Keine Daten zu Reichweite, Verteilung, Teilnahme oder tatsächlichem Zugang.",
+              "first_order": "Die geplante Beschränkung könnte vorerst nicht umgesetzt werden.",
+              "second_order": "Briefwählende könnten unter unveränderten Abläufen ihre bisherige Zugangsmöglichkeit behalten.",
+              "third_order": "Stabilere Zugangsbedingungen könnten die organisatorische Resilienz des Wahlverfahrens stützen; ein Effekt auf Repräsentation bleibt offen.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der mögliche Zugangseffekt reicht von begrenzter Verfahrensstabilität bis zu breiterem Schutz der Briefwahl, abhängig von weiteren Entscheidungen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Folgenmessung und keine unabhängige Bestätigung geliefert; der Pfad bleibt bedingt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Pfad kann Briefwählende und Wahlbehörden im betroffenen Verfahren erreichen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ein unveränderter Zugang kann für Betroffene praktisch bedeutsam sein.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hängt von weiteren gerichtlichen oder politischen Schritten ab.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verfahrensregeln können durch spätere Entscheidungen erneut geändert werden.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen, die auf Briefwahl angewiesen sind, könnten besonders von kurzfristigen Änderungen abhängen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Zugang, Verwaltung und demokratische Teilhabe.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Zugang zu einem Wahlweg ist eine maßgebliche demokratische Schutzgrenze; der Pfad bleibt wegen fehlender Folgenmessung bedingt.",
+                "reference_frame": "Zugang zu politischer Teilhabe",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Rechtsunsicherheit könnte Briefwählende und Wahlbehörden belasten.",
+              "mechanism": "Eine fehlende Begründung und mögliche weitere Verfahren können die Stabilität der Regeln erschweren.",
+              "recipients": [
+                "Briefwählende",
+                "Wahlbehörden"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "low",
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Der Risikopfad setzt weitere kurzfristige Rechtsänderungen oder widersprüchliche Anweisungen voraus.",
+              "reference_space": "US-Wahlverwaltung",
+              "time_horizon": "bis zur Klärung des Rechtsstreits",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unklarheit führt zu zusätzlichem organisatorischem Anpassungsbedarf.",
+              "source_support": "Die Quelle belegt die fehlende Begründung und den zeitlichen Streit, nicht konkrete Belastungen.",
+              "limitations": "Keine Daten zu Fehlern, Kosten oder Verunsicherung.",
+              "first_order": "Behörden könnten weitere rechtliche Klärung abwarten müssen.",
+              "second_order": "Betroffene könnten ihre Möglichkeiten zur Briefwahl schwerer einschätzen.",
+              "third_order": "Wiederholte kurzfristige Regeländerungen könnten Vertrauen in Wahlverfahren schwächen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Das Risiko reicht von geringer zusätzlicher Unsicherheit bis zu spürbaren organisatorischen Problemen bei weiteren Änderungen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zu Belastungen oder Vertrauensverlusten geliefert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Das Risiko betrifft vor allem Beteiligte am konkreten Verfahren.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Belastung besteht zunächst in Unsicherheit und Anpassungsbedarf.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hängt von der ausstehenden rechtlichen Klärung ab.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Organisatorische Unsicherheit wäre grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Auf Briefwahl angewiesene Personen könnten von unklaren Vorgaben stärker betroffen sein.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Risikopfad berührt Verwaltung und Vertrauen in Wahlverfahren.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Das Risiko ist materiell prüfbar, erreicht nach der vorliegenden Evidenz aber keine nachgewiesene Schutzgrenzverletzung.",
+                "reference_frame": "verlässlicher und verständlicher Wahlzugang",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der mögliche positive Pfad betrifft den vorläufigen Erhalt eines Wahlzugangs. Ein begrenzter negativer Nebenpfad entsteht aus der offenen Rechtslage. Die Richtung ist trotz fehlender Messdaten modellierbar, weil der gerichtliche Ausgangspunkt und die betroffenen Funktionen beschrieben sind.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der positive Hauptpfad schützt potenziell den Zugang zur Briefwahl; der negative Pfad betrifft vor allem Unsicherheit und ist schwächer sowie nicht beobachtet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Der Zugang zur bisherigen Briefwahlpraxis könnte zunächst erhalten bleiben.",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Der Zugang zur bisherigen Briefwahlpraxis könnte zunächst erhalten bleiben.",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Quellen nennen keine Umwelt-, Energie-, Ressourcen- oder Emissionsdimension des Briefwahlstreits. Ein materieller Umweltpfad ist im abgegrenzten Gegenstand und Zeitraum vernachlässigbar.",
+          "reviewed_source_ids": [
+            "lto-news"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Für die Umwelt ist aus dem Briefwahlstreit keine materielle Zustandsänderung ableitbar.",
+              "mechanism": "Der Gegenstand betrifft gerichtliche Kontrolle und Wahlverwaltung, nicht eine belegte Umweltmaßnahme.",
+              "recipients": [
+                "Natur"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Der Pfad bleibt auf den beschriebenen Wahlrechtsgegenstand begrenzt.",
+              "reference_space": "US-Wahlverfahren und unmittelbare Verwaltungsfolgen",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Keine nicht gelieferte Umweltmaßnahme oder relevante Ressourcenänderung wird unterstellt.",
+              "source_support": "Die Quelle beschreibt einen Briefwahlstreit und keine Umweltfolgen.",
+              "limitations": "Keine Umweltkennzahlen oder Prozessdaten.",
+              "first_order": "Keine materielle Umweltzustandsänderung ist belegt oder plausibel konkretisiert.",
+              "second_order": "Keine belastbare ökologische Folge lässt sich aus dem Gegenstand ableiten.",
+              "third_order": "Keine systemische Umweltwirkung ist innerhalb der definierten Systemgrenze modellierbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Der Pfad ist im beschriebenen Raum und Zeitraum begründet vernachlässigbar."
+              },
+              "negligibility_rationale": "Die Quelle enthält keinen Umweltbezug; der Gegenstand ist eine gerichtliche Entscheidung zu Briefwahlregeln.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen Umweltmechanismus.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Empfängergruppe ist durch den Vorgang konkret erreicht.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung wird beschrieben.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Umweltwirkung mit zeitlicher Dauer ist belegt.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ohne Umweltzustandsänderung besteht keine ökologische Irreversibilität.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzliche Umweltkomponente wird im Beleg angesprochen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Der Vorgang besitzt innerhalb der Systemgrenze keine belegte ökologische Tiefe.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch den gelieferten Sachverhalt berührt.",
+                "reference_frame": "ökologische Unversehrtheit",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Planet-Pfad erhält nicht wegen fehlender Daten, sondern wegen des konkret beschriebenen Gegenstands und fehlender ökologischer Mechanismen Faktoren 0.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die Umwelt ist aus dem Briefwahlstreit keine materielle Zustandsänderung ableitbar.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Für die Umwelt ist aus dem Briefwahlstreit keine materielle Zustandsänderung ableitbar.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle trägt den gerichtlichen Stopp und den zeitlichen Konflikt, aber keine Messung von Beteiligung, Vertrauen oder Repräsentation. Das Potenzial wird daher auf Verfahrenszugang und institutionelle Kontrolle begrenzt.",
+          "reviewed_source_ids": [
+            "lto-news"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Gerichtliche Kontrolle könnte die Stabilität des Briefwahlzugangs und die Korrekturfähigkeit des Wahlverfahrens stützen.",
+              "mechanism": "Der Supreme Court lässt laut Quelle den Stopp einer kurzfristig geplanten Beschränkung bestehen.",
+              "recipients": [
+                "Briefwählende",
+                "Wahlbehörden",
+                "Gerichte"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Entscheidung praktisch beachtet wird und keine spätere Entscheidung den Stopp aufhebt.",
+              "reference_space": "US-Wahlverfahren und demokratische Institutionen",
+              "time_horizon": "bis zur weiteren rechtlichen Klärung und darüber hinaus als möglicher Präzedenzfall",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Gerichtliche Kontrolle begrenzt kurzfristige Eingriffe und erhält den bisherigen Zugang.",
+              "source_support": "Die Quelle belegt die gerichtliche Ablehnung und den vorherigen Stopp, nicht eine tatsächliche Verbesserung demokratischer Ergebnisse.",
+              "limitations": "Keine Daten zu Beteiligung, Vertrauen, Repräsentation oder langfristiger Rechtsprechung.",
+              "first_order": "Die geplante Beschränkung könnte vorerst nicht in Kraft gesetzt werden.",
+              "second_order": "Der bestehende Briefwahlzugang könnte für Betroffene und Behörden verlässlicher bleiben.",
+              "third_order": "Die Entscheidung könnte die demokratische Korrekturfähigkeit gegenüber kurzfristigen Regeländerungen stärken; eine solche Prägewirkung ist offen.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Wirkung reicht plausibel von einer engen Verfahrensentscheidung bis zu einem breiteren Signal für stabile Wahlregeln."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung findet keinen unabhängigen Nachweis langfristiger demokratischer Folgen; der Pfad bleibt ein bedingtes Potenzial.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Wahlzugangsregeln können viele Briefwählende und Wahlbehörden betreffen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Der Schutz eines Wahlwegs kann für politische Teilhabe wesentlich sein.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hängt von weiteren Verfahren und der konkreten Regelung ab.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ein möglicher institutioneller Präzedenzfall wäre teilweise dauerhaft, die konkrete Regel bleibt änderbar.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen mit besonderem Bedarf an Briefwahl können von stabilen Zugangsregeln abhängen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad verbindet Wahlzugang, Gerichte und institutionelle Korrekturfähigkeit.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Freier und verlässlicher Zugang zu Wahlverfahren ist eine demokratische Schutzgrenze; die konkrete Schutzwirkung bleibt wegen fehlender Folgebelege bedingt.",
+                "reference_frame": "demokratische Teilhabe und rechtstaatliche Wahlkontrolle",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Die ungeklärte Begründung könnte das Vertrauen in die Stabilität der Wahlregeln belasten.",
+              "mechanism": "Widersprüchliche oder kurzfristige Regeländerungen können die Verständlichkeit und Vorhersehbarkeit des Wahlverfahrens schwächen.",
+              "recipients": [
+                "Briefwählende",
+                "Öffentlichkeit",
+                "Wahlbehörden"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "low",
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Der Risikopfad setzt voraus, dass die fehlende Begründung und weitere Verfahren öffentlich als Instabilität wahrgenommen werden.",
+              "reference_space": "US-demokratische Öffentlichkeit und Wahlverwaltung",
+              "time_horizon": "während des laufenden Rechtsstreits",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Rechtliche Unklarheit beeinflusst die wahrgenommene Verlässlichkeit von Wahlregeln.",
+              "source_support": "Die Quelle nennt die fehlende Begründung und die zeitliche Nähe zu den Midterm-Wahlen.",
+              "limitations": "Keine Umfragen, Diskursdaten oder Verhaltensdaten geliefert.",
+              "first_order": "Die Regelung bleibt erklärungsbedürftig und politisch umkämpft.",
+              "second_order": "Ein Teil der Öffentlichkeit könnte die Verfahrensstabilität schlechter einschätzen.",
+              "third_order": "Wiederholte Konflikte könnten langfristig Vertrauen in Institutionen schwächen; dies ist nicht beobachtet.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Vertrauenseffekt reicht von begrenzter Unsicherheit bis zu einer breiteren Debatte über Wahllegitimität."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten belegen einen Vertrauens- oder Diskurseffekt; nur ein bedingtes Risiko ist modellierbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Das Risiko erreicht vor allem die politisch interessierte Öffentlichkeit und Betroffene.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Wirkung besteht zunächst in Unsicherheit über Regeln und Begründung.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer ist an weitere Verfahren und öffentliche Erklärungen gebunden.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen und Verständlichkeit könnten durch spätere Klarheit teilweise wiederhergestellt werden.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen mit geringerem Zugang zu rechtlichen Informationen könnten stärker belastet sein.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt institutionelles Vertrauen, aber keine nachgewiesene Strukturveränderung.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Das Risiko betrifft demokratische Qualität, eine konkrete Grenzverletzung ist jedoch nicht belegt.",
+                "reference_frame": "Verlässlichkeit und Verständlichkeit demokratischer Verfahren",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der positive Hauptpfad betrifft die gerichtliche Begrenzung einer kurzfristigen Änderung des Wahlzugangs. Ein schwächerer negativer Risikopfad folgt aus der offenen Begründung und möglichen weiteren Regeländerungen. Keine dieser Möglichkeiten ist als eingetretene demokratische Wirkung belegt.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der positive Pfad betrifft eine zentrale demokratische Schutzfunktion, während der negative Pfad ein unbestätigtes Vertrauensrisiko bleibt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gerichtliche Kontrolle könnte die Stabilität des Briefwahlzugangs und die Korrekturfähigkeit des Wahlverfahrens stützen.",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Gerichtliche Kontrolle könnte die Stabilität des Briefwahlzugangs und die Korrekturfähigkeit des Wahlverfahrens stützen.",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "verbraucherinnen",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T08:22:35.578Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T05:25:00.000Z",
+      "last_updated": "2026-09-16T08:25:26.566Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-7f384b00c598641a9eba",
+      "case_file": null,
+      "source_published_at": "2026-09-16T05:25:00.000Z",
+      "published_at": "2026-09-16T08:25:26.566Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "lto-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Begründung der Mehrheit des Supreme Court und die weitere Behandlung der Briefwahl-Regelung sollten geprüft werden.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichung der gerichtlichen Begründung oder weiterer gerichtlicher Entscheidungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-81dc7310a4b29f86",
+          "announced_at": "2026-09-16T05:25:00.000Z",
+          "follow_up_date": "2026-09-23T08:25:26.566Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/presseschau/p/presseschau-16-09-2026-briefwahl-usa-kids-act-eu-maschsee-moerder?r=rss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T05:25:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-90f05434b7e53384",
       "title_image": {
