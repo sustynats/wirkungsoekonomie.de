@@ -2,8 +2,1686 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T09:22:10.469Z",
+  "updated_at": "2026-09-16T10:37:35.261Z",
   "stories": [
+    {
+      "story_id": "wt-7bca08a77fd631f1",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7bca08a77fd631f1-7f694d8b7ae25508-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7bca08a77fd631f1-5149d8517d2fe5b0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7bca08a77fd631f1-706292e2dc8f369e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "grossaktionar-macht-druck-ubernahmekampf-bei-boss-aufsichtsratschef-legt-amt-nieder-d631f1",
+      "title": "Laut Stern: Frasers Group arbeitet an Übernahme von Hugo Boss – Aufsichtsratschef legt Amt nieder",
+      "source_summary": "Der Stern berichtet, dass die britische Frasers Group an einer Übernahme des deutschen Modekonzerns Hugo Boss arbeitet. Nach Darstellung der Quelle ist damit ein möglicher Eigentümerwechsel bei dem Unternehmen verbunden. Der Bericht ordnet den Vorgang als Übernahmekampf ein.\n\nZugleich wird berichtet, dass Stephan Sturm sein Amt als Aufsichtsratschef von Hugo Boss niederlegt. Als Hintergrund nennt der Stern, dass das Vertrauen der Frasers Group in Sturm bereits zuvor nicht mehr bestanden habe. Der vorliegende Quellenstand belegt damit den Übernahmevorstoß als Bericht und den Rückzug des Aufsichtsratschefs. Offen bleiben formale Schritte der Frasers Group, die genaue Begründung und der Zeitpunkt des Amtsniederlegens sowie mögliche Folgen für Hugo Boss, Beschäftigte, Standorte und Lieferketten.",
+      "summary": "Laut Stern arbeitet Frasers Group an einer Übernahme von Hugo Boss; Aufsichtsratschef Stephan Sturm legt sein Amt nieder. Formale Schritte und Folgen bleiben offen.",
+      "detail_summary": "Der Stern berichtet über zwei miteinander verknüpfte Entwicklungen bei Hugo Boss: Die britische Frasers Group arbeitet demnach an einer Übernahme, während Aufsichtsratschef Stephan Sturm seinen Posten niedergelegt hat. Als Hintergrund nennt die Quelle ein bereits länger beschädigtes Vertrauen der Frasers Group in Sturm. Damit steht ein möglicher Eigentümerwechsel neben einer Veränderung in der Unternehmensaufsicht. Das könnte Entscheidungen zu Strategie, Führung und Kapitalallokation beeinflussen, falls aus den Überlegungen ein formaler Übernahmeprozess wird. Für Beschäftigte, Standorte und Lieferketten sind Folgen in der vorliegenden Quelle nicht belegt. Unklar bleiben außerdem die Gründe und der genaue Zeitpunkt des Rücktritts sowie die Positionen von Hugo Boss und weiteren Aktionären.",
+      "why_relevant": "Ein möglicher Eigentümerwechsel und der Rückzug des Aufsichtsratschefs könnten die Governance und strategische Ausrichtung eines großen Modeunternehmens verändern; der formale Status ist offen.",
+      "topic": [
+        "Arbeit",
+        "Geopolitik"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über einen möglichen Übernahmeprozess bei Hugo Boss und den Rücktritt des Aufsichtsratschefs",
+        "evaluation_target": {
+          "label": "möglicher Eigentümer- und Governance-Wechsel bei Hugo Boss",
+          "type": "development"
+        },
+        "baseline": "Hugo Boss ohne belegten formalen Übernahmeprozess und mit Stephan Sturm als bisherigem Aufsichtsratschef laut vorliegendem Bericht",
+        "counterfactual": "Ohne weitere formale Schritte blieben Eigentümerstruktur und strategische Entscheidungswege zunächst im bisherigen Zustand; der Rücktritt kann davon unabhängig eine Neuordnung der Aufsicht auslösen.",
+        "reference_frame": [
+          "Unternehmensgovernance",
+          "Beschäftigung und Lieferketten",
+          "ökologische Produktionswirkungen",
+          "demokratische Korrekturfähigkeit in Unternehmen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher Eigentümer- und Führungswechsel könnte Beschäftigte, Standorte und Lieferanten über Strategie- oder Kostenentscheidungen betreffen; konkrete Auswirkungen sind nicht belegt.",
+            "planet": "Eine neue Unternehmensstrategie könnte Beschaffung, Produktion oder Umweltstandards beeinflussen, doch die Quelle nennt keine Umweltziele, Maßnahmen oder Zustandsdaten.",
+            "democracy": "Der Wechsel könnte interne Macht- und Kontrollstrukturen verändern; Auswirkungen auf öffentliche Institutionen oder demokratische Verfahren sind im vorliegenden Unternehmensfall nur indirekt und offen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche Veränderung von Eigentümerinteressen und Aufsicht bei Hugo Boss.",
+          "second_order": "Bei einem formalen Prozess könnten Strategie, Investitionen und Beziehungen zu Beschäftigten und Lieferanten neu bewertet werden.",
+          "third_order": "Langfristige Veränderungen in Wertschöpfung, Branchenposition oder Unternehmensmacht sind möglich, aber ohne Angebot und Strategie nicht bestimmbar.",
+          "enablement": [
+            "enables_power",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Es ist kein formales Übernahmeangebot belegt.",
+            "Die Quelle liefert keine Angaben zu Strategie, Finanzierung, Beschäftigung, Lieferketten oder Umweltfolgen.",
+            "Eine unabhängige Bestätigung des Berichts liegt nicht vor."
+          ],
+          "source_independence": "Nur eine journalistische Quelle liegt vor; unabhängige Bestätigung ist nicht etabliert. Die Quelle ist als publisher-only origin unverified gekennzeichnet.",
+          "institutional_status": "Es handelt sich um eine mögliche unternehmerische Übernahme und eine Veränderung im Aufsichtsrat; ein formaler Übernahmeschritt oder eine staatliche Entscheidung ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keinen konkreten Beschäftigungs-, Standort- oder Lieferketteneffekt. Modellierbar bleibt nur der bedingte Pfad über eine mögliche spätere Strategie- oder Kontrolländerung.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein formaler Eigentümerwechsel könnte Entscheidungen mit Auswirkungen auf Beschäftigte, Standorte und Lieferanten verändern. Richtung und Ausmaß bleiben offen, weil Angebot, Strategie und betroffene Einheiten nicht belegt sind.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Neuordnung von Beschäftigung, Standorten oder Lieferketten durch einen Eigentümerwechsel",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ein formaler Übernahmeprozess könnte Eigentümerinteressen und strategische Entscheidungen verändern; diese könnten anschließend Personal-, Standort- oder Beschaffungsentscheidungen beeinflussen.",
+                "recipients": [
+                  "Beschäftigte",
+                  "Standorte",
+                  "Lieferanten"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite könnte über ein einzelnes Unternehmen hinausreichen, die konkrete Intensität und Dauer sind ohne Strategieangaben offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad betrifft zunächst Hugo Boss und verbundene Geschäftspartner.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Konkrete Personal- oder Standortmaßnahmen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine Eigentümer- und Governance-Änderung könnte längerfristige Entscheidungen prägen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Entscheidungen wären teilweise korrigierbar, konkrete Bindungen sind unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Beschäftigte und kleinere Lieferanten könnten von Unternehmensentscheidungen besonders abhängig sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht über die Aufsicht hinaus in Strategie und Wertschöpfung, ist aber nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung von Arbeits- oder Versorgungsschutz ist nicht belegt.",
+                  "reference_frame": "Beschäftigungssicherheit und faire Unternehmensführung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt ein formales Übernahmeangebot und danach konkrete Strategie- oder Personalentscheidungen voraus.",
+                "reference_space": "Hugo Boss und direkt verbundene Beschäftigte, Standorte und Lieferanten",
+                "time_horizon": "kurz- bis langfristig nach einem möglichen formalen Übernahmeprozess",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass ein Eigentümerwechsel strategische Prioritäten und damit verbundene Entscheidungen beeinflussen könnte.",
+                "source_support": "Die Quelle belegt nur die mögliche Übernahme und den Rücktritt, nicht die Folgeentscheidungen.",
+                "limitations": "Keine Angaben zu Angebot, Finanzierung, Strategie, Ländern, Beschäftigten oder Lieferketten.",
+                "first_order": "Eine formale Übernahme könnte Eigentümer- und Kontrollstrukturen verändern.",
+                "second_order": "Daraus könnten neue Prioritäten für Personal, Standorte und Lieferanten entstehen, sofern entsprechende Entscheidungen getroffen würden.",
+                "third_order": "Eine längerfristige Verschiebung der Wertschöpfung wäre möglich, bleibt ohne Unternehmensplan offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Datensatz belegt konkrete Auswirkungen auf Beschäftigte, Standorte oder Lieferketten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Unsicherheit für Beschäftigte und Geschäftspartner während eines Übernahmeprozesses",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Unklare Eigentümer- und Führungsfragen könnten Erwartungen und Planungen von Beschäftigten und Geschäftspartnern erschweren.",
+                "recipients": [
+                  "Beschäftigte",
+                  "Geschäftspartner"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Effekt könnte zeitlich begrenzt sein, ist aber ohne Angaben zum Prozess nicht quantifizierbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wären vor allem direkt verbundene Gruppen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Belastung ist nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Unsicherheit könnte bis zur Klärung der Eigentümerfrage anhalten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Erwartungsunsicherheit wäre grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Abhängige Beschäftigte und Lieferanten könnten begrenzte Ausweichmöglichkeiten haben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Nebenpfad bleibt auf direkte Geschäftspartner begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzverletzung ist nicht belegt.",
+                  "reference_frame": "Planungssicherheit im Arbeits- und Geschäftsverhältnis",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt einen öffentlich oder intern fortdauernden Übernahmeprozess voraus.",
+                "reference_space": "Direkte Beschäftigte und Geschäftspartner von Hugo Boss",
+                "time_horizon": "Während eines möglichen Übernahmeprozesses",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unklarheit über Eigentümer und Führung könnte Planungen erschweren.",
+                "source_support": "Die Quelle berichtet über die mögliche Übernahme und den Rücktritt, nicht über Unsicherheitsfolgen.",
+                "limitations": "Keine Angaben zu Reaktionen, Dauer oder Betroffenenzahl.",
+                "first_order": "Mögliche Unsicherheit über die künftige Führung.",
+                "second_order": "Mögliche Zurückhaltung bei Personal- oder Geschäftsentscheidungen.",
+                "third_order": "Eine dauerhafte Wirkung ist ohne weitere Belege nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keinen Beleg für bereits eingetretene Unsicherheit oder konkrete Reaktionen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Neuordnung von Beschäftigung, Standorten oder Lieferketten durch einen Eigentümerwechsel",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Neuordnung von Beschäftigung, Standorten oder Lieferketten durch einen Eigentümerwechsel",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle nennt keine Umweltziele, Produktionsänderungen, Emissionen oder Lieferkettenmaßnahmen. Ein ökologischer Pfad ist nur als bedingte Wirkung einer späteren Unternehmensstrategie formulierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Eigentümerwechsel könnte Beschaffung, Produktion oder Umweltstandards beeinflussen, aber weder Richtung noch Eintritt sind belegt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung ökologischer Standards durch eine neue Unternehmensstrategie",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ein möglicher Eigentümerwechsel könnte strategische Prioritäten verändern; diese könnten bei späteren Entscheidungen Beschaffung, Produktion oder Umweltstandards betreffen.",
+                "recipients": [
+                  "Umwelt",
+                  "Produktionsstandorte",
+                  "Lieferkettengemeinschaften"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist mittelbar und ohne Angaben zu Produktion oder Strategie besonders unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ein internationaler Modekonzern könnte mehrere Produktionsstufen berühren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine konkrete ökologische Maßnahme oder Veränderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Strategische Standards könnten über längere Zeit wirken, falls sie geändert würden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Viele Unternehmensstandards wären grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Betroffenheit ist möglich, aber konkrete vulnerable Räume sind unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Umweltpfad ist ohne Lieferketten- und Produktionsdaten nicht belegbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Umweltgrenze oder Überschreitung wird in der Quelle genannt.",
+                  "reference_frame": "Umweltstandards und Ressourcenverbrauch in der Wertschöpfung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt einen Eigentümerwechsel und danach veränderte Beschaffungs-, Produktions- oder Umweltentscheidungen voraus.",
+                "reference_space": "Wertschöpfungskette von Hugo Boss",
+                "time_horizon": "mittel- bis langfristig nach einer möglichen Übernahme",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine neue Eigentümerstrategie könnte ökologische Anforderungen verändern.",
+                "source_support": "Die Quelle belegt keinen Umweltbezug und keine konkrete Strategie.",
+                "limitations": "Keine Daten zu Emissionen, Materialien, Produktionsorten, Standards oder Lieferanten.",
+                "first_order": "Mögliche strategische Neubewertung der Produktion.",
+                "second_order": "Mögliche Veränderung von Beschaffung und Umweltstandards.",
+                "third_order": "Mögliche kumulative Auswirkungen auf Ressourcenverbrauch, ohne belastbare Richtung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle beantwortet die Umwelt- oder Lieferkettenfrage.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Verlagerung ökologischer Belastungen in der Lieferkette",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Eine spätere strategische Verlagerung von Beschaffung oder Produktion könnte Umweltbelastungen räumlich verschieben.",
+                "recipients": [
+                  "Produktionsregionen",
+                  "Ökosysteme"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist nur als entfernte Möglichkeit modellierbar und nicht durch Produktionsdaten gestützt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Konkrete betroffene Regionen sind nicht bekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Belastungsintensität ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Lieferkettenentscheidungen könnten länger wirken, falls sie erfolgen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verlagerungen wären teilweise korrigierbar, konkrete Bindungen fehlen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Vulnerable Ökosysteme oder Gemeinden sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische Verlagerung ist ohne Lieferkettendaten nicht nachweisbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird nicht angesprochen.",
+                  "reference_frame": "Schutz von Ökosystemen und Produktionsregionen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Erforderlich wären ein Eigentümerwechsel und eine nachweisbare Änderung der Lieferkette.",
+                "reference_space": "Nicht näher bestimmbar; mögliche Lieferketten von Hugo Boss",
+                "time_horizon": "langfristig und nur nach späteren Entscheidungen",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Beschaffung und Produktion könnten bei einer neuen Strategie neu geordnet werden.",
+                "source_support": "Dafür gibt es im gelieferten Text keinen konkreten Beleg.",
+                "limitations": "Keine Regionen, Mengen, Materialien oder Umweltindikatoren.",
+                "first_order": "Mögliche Änderung von Beschaffungsstandorten.",
+                "second_order": "Mögliche räumliche Verschiebung von Umweltbelastungen.",
+                "third_order": "Kumulative Folgen bleiben vollständig offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung der gelieferten Quelle ergab keine belastbaren Angaben zur Lieferkette.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung ökologischer Standards durch eine neue Unternehmensstrategie",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung ökologischer Standards durch eine neue Unternehmensstrategie",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine Auswirkungen auf staatliche Institutionen, Wahlen oder öffentliche Entscheidungsprozesse. Modellierbar ist nur ein begrenzter Governance-Pfad innerhalb eines Unternehmens.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der mögliche Eigentümerwechsel könnte interne Macht- und Kontrollstrukturen verändern, berührt demokratische Institutionen aber nicht unmittelbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verschiebung von Macht und Kontrolle innerhalb der Unternehmensführung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ein Eigentümerwechsel und der Rücktritt des Aufsichtsratschefs könnten die Verteilung von Einfluss zwischen Eigentümern, Aufsichtsrat und Unternehmensleitung verändern.",
+                "recipients": [
+                  "Eigentümer",
+                  "Aufsichtsrat",
+                  "Unternehmensleitung",
+                  "Beschäftigtenvertretungen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Governance-Effekt kann intern relevant sein, seine öffentliche und institutionelle Reichweite ist voraussichtlich begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft vorrangig die Unternehmensorgane.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Wechsel an der Aufsichtsratsspitze kann interne Kontrolle spürbar verändern.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eigentümer- und Governance-Strukturen können längerfristig bestehen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Interne Besetzungen und Kontrollregeln sind grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene Akteure verfügen überwiegend über institutionelle Einflussmöglichkeiten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine Wirkung auf demokratische Strukturen außerhalb des Unternehmens ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine Beeinträchtigung demokratischer Rechte oder Institutionen ist nicht belegt.",
+                  "reference_frame": "Unternehmensaufsicht und institutionelle Rechenschaft",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt einen tatsächlichen Eigentümerwechsel oder eine daraus folgende Neuordnung der Organe voraus.",
+                "reference_space": "Unternehmensinterne Governance bei Hugo Boss",
+                "time_horizon": "kurz- bis langfristig nach einer möglichen Übernahme",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eigentümer- und Personalwechsel könnten die interne Rechenschaft und Machtverteilung verändern.",
+                "source_support": "Die Quelle belegt den möglichen Übernahmeprozess und den Rücktritt, nicht die spätere Besetzung oder Governance-Praxis.",
+                "limitations": "Keine Angaben zu Mitbestimmung, Aktionärsstruktur, Nachfolge oder institutionellen Folgen.",
+                "first_order": "Mögliche Veränderung der internen Kontrollstruktur.",
+                "second_order": "Mögliche neue Prioritäten bei Rechenschaft und Entscheidungswegen.",
+                "third_order": "Eine Wirkung auf öffentliche Debatten oder demokratische Institutionen ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine Belege für demokratische oder staatliche Folgeeffekte.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Normalisierung konzentrierter Eigentümerkontrolle als Unternehmensmodell",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Ein erfolgreicher Eigentümerwechsel könnte als Beispiel für konzentrierten Einfluss auf Unternehmensorgane wahrgenommen werden.",
+                "recipients": [
+                  "Aktionäre",
+                  "Beschäftigte",
+                  "Unternehmensöffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine über den Einzelfall hinausgehende Normalisierung ist spekulativ und nicht durch Publikumsdaten belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Resonanzraum bleibt auf Unternehmens- und Kapitalmarktakteure begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Wahrnehmungs- oder Verhaltensänderung ist nicht beobachtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Beispielcharakter könnte kurzlebig bleiben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Wahrnehmungen und Unternehmensnormen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Konkrete besonders abhängige Gruppen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein breiter institutioneller Wandel ist nicht nachweisbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wird durch den Bericht nicht berührt.",
+                  "reference_frame": "Unternehmensmacht und Rechenschaft",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Erforderlich wären ein vollzogener Eigentümerwechsel und eine über den Einzelfall hinausgehende Wahrnehmung.",
+                "reference_space": "Unternehmens- und Kapitalmarktöffentlichkeit",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein Einzelfall könnte als Referenz für weitere Eigentümerentscheidungen dienen.",
+                "source_support": "Die Quelle berichtet nicht über Resonanz, Nachahmung oder institutionelle Wirkung.",
+                "limitations": "Keine Publikums-, Markt- oder Diskursdaten liegen vor.",
+                "first_order": "Mögliche Aufmerksamkeit für Eigentümer- und Kontrollfragen.",
+                "second_order": "Mögliche Einordnung des Vorgangs als Unternehmenspräzedenz.",
+                "third_order": "Eine Normalisierung konzentrierter Kontrolle ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt Resonanz, Nachahmung oder eine Wirkung auf demokratische Institutionen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Verschiebung von Macht und Kontrolle innerhalb der Unternehmensführung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Verschiebung von Macht und Kontrolle innerhalb der Unternehmensführung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T10:44:17.082Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über die mögliche Übernahme von Hugo Boss, den Rücktritt Stephan Sturms und das beschädigte Vertrauen der Frasers Group."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://enlargement.ec.europa.eu/document/download/55101d35-f157-43d8-a33d-5f03b01b862d_en?filename=MK+Cluster+2_screening+report_Public_20250204.pdf",
+          "title": "F CHAPTER 6 - COMPANY LAW",
+          "publisher": "European Commission",
+          "source_id": "research-eu-company-law-governance",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keinen konkreten Beschäftigungs-, Standort- oder Lieferketteneffekt. Modellierbar bleibt nur der bedingte Pfad über eine mögliche spätere Strategie- oder Kontrolländerung.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein formaler Eigentümerwechsel könnte Entscheidungen mit Auswirkungen auf Beschäftigte, Standorte und Lieferanten verändern. Richtung und Ausmaß bleiben offen, weil Angebot, Strategie und betroffene Einheiten nicht belegt sind.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Neuordnung von Beschäftigung, Standorten oder Lieferketten durch einen Eigentümerwechsel",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ein formaler Übernahmeprozess könnte Eigentümerinteressen und strategische Entscheidungen verändern; diese könnten anschließend Personal-, Standort- oder Beschaffungsentscheidungen beeinflussen.",
+              "recipients": [
+                "Beschäftigte",
+                "Standorte",
+                "Lieferanten"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite könnte über ein einzelnes Unternehmen hinausreichen, die konkrete Intensität und Dauer sind ohne Strategieangaben offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad betrifft zunächst Hugo Boss und verbundene Geschäftspartner.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Konkrete Personal- oder Standortmaßnahmen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine Eigentümer- und Governance-Änderung könnte längerfristige Entscheidungen prägen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Entscheidungen wären teilweise korrigierbar, konkrete Bindungen sind unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Beschäftigte und kleinere Lieferanten könnten von Unternehmensentscheidungen besonders abhängig sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht über die Aufsicht hinaus in Strategie und Wertschöpfung, ist aber nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung von Arbeits- oder Versorgungsschutz ist nicht belegt.",
+                "reference_frame": "Beschäftigungssicherheit und faire Unternehmensführung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt ein formales Übernahmeangebot und danach konkrete Strategie- oder Personalentscheidungen voraus.",
+              "reference_space": "Hugo Boss und direkt verbundene Beschäftigte, Standorte und Lieferanten",
+              "time_horizon": "kurz- bis langfristig nach einem möglichen formalen Übernahmeprozess",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass ein Eigentümerwechsel strategische Prioritäten und damit verbundene Entscheidungen beeinflussen könnte.",
+              "source_support": "Die Quelle belegt nur die mögliche Übernahme und den Rücktritt, nicht die Folgeentscheidungen.",
+              "limitations": "Keine Angaben zu Angebot, Finanzierung, Strategie, Ländern, Beschäftigten oder Lieferketten.",
+              "first_order": "Eine formale Übernahme könnte Eigentümer- und Kontrollstrukturen verändern.",
+              "second_order": "Daraus könnten neue Prioritäten für Personal, Standorte und Lieferanten entstehen, sofern entsprechende Entscheidungen getroffen würden.",
+              "third_order": "Eine längerfristige Verschiebung der Wertschöpfung wäre möglich, bleibt ohne Unternehmensplan offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Datensatz belegt konkrete Auswirkungen auf Beschäftigte, Standorte oder Lieferketten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Unsicherheit für Beschäftigte und Geschäftspartner während eines Übernahmeprozesses",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Unklare Eigentümer- und Führungsfragen könnten Erwartungen und Planungen von Beschäftigten und Geschäftspartnern erschweren.",
+              "recipients": [
+                "Beschäftigte",
+                "Geschäftspartner"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Effekt könnte zeitlich begrenzt sein, ist aber ohne Angaben zum Prozess nicht quantifizierbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wären vor allem direkt verbundene Gruppen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Belastung ist nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Unsicherheit könnte bis zur Klärung der Eigentümerfrage anhalten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Erwartungsunsicherheit wäre grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Abhängige Beschäftigte und Lieferanten könnten begrenzte Ausweichmöglichkeiten haben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Nebenpfad bleibt auf direkte Geschäftspartner begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzverletzung ist nicht belegt.",
+                "reference_frame": "Planungssicherheit im Arbeits- und Geschäftsverhältnis",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt einen öffentlich oder intern fortdauernden Übernahmeprozess voraus.",
+              "reference_space": "Direkte Beschäftigte und Geschäftspartner von Hugo Boss",
+              "time_horizon": "Während eines möglichen Übernahmeprozesses",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unklarheit über Eigentümer und Führung könnte Planungen erschweren.",
+              "source_support": "Die Quelle berichtet über die mögliche Übernahme und den Rücktritt, nicht über Unsicherheitsfolgen.",
+              "limitations": "Keine Angaben zu Reaktionen, Dauer oder Betroffenenzahl.",
+              "first_order": "Mögliche Unsicherheit über die künftige Führung.",
+              "second_order": "Mögliche Zurückhaltung bei Personal- oder Geschäftsentscheidungen.",
+              "third_order": "Eine dauerhafte Wirkung ist ohne weitere Belege nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keinen Beleg für bereits eingetretene Unsicherheit oder konkrete Reaktionen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Neuordnung von Beschäftigung, Standorten oder Lieferketten durch einen Eigentümerwechsel",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Neuordnung von Beschäftigung, Standorten oder Lieferketten durch einen Eigentümerwechsel",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle nennt keine Umweltziele, Produktionsänderungen, Emissionen oder Lieferkettenmaßnahmen. Ein ökologischer Pfad ist nur als bedingte Wirkung einer späteren Unternehmensstrategie formulierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Eigentümerwechsel könnte Beschaffung, Produktion oder Umweltstandards beeinflussen, aber weder Richtung noch Eintritt sind belegt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung ökologischer Standards durch eine neue Unternehmensstrategie",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ein möglicher Eigentümerwechsel könnte strategische Prioritäten verändern; diese könnten bei späteren Entscheidungen Beschaffung, Produktion oder Umweltstandards betreffen.",
+              "recipients": [
+                "Umwelt",
+                "Produktionsstandorte",
+                "Lieferkettengemeinschaften"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist mittelbar und ohne Angaben zu Produktion oder Strategie besonders unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ein internationaler Modekonzern könnte mehrere Produktionsstufen berühren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine konkrete ökologische Maßnahme oder Veränderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Strategische Standards könnten über längere Zeit wirken, falls sie geändert würden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Viele Unternehmensstandards wären grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Betroffenheit ist möglich, aber konkrete vulnerable Räume sind unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Umweltpfad ist ohne Lieferketten- und Produktionsdaten nicht belegbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Umweltgrenze oder Überschreitung wird in der Quelle genannt.",
+                "reference_frame": "Umweltstandards und Ressourcenverbrauch in der Wertschöpfung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt einen Eigentümerwechsel und danach veränderte Beschaffungs-, Produktions- oder Umweltentscheidungen voraus.",
+              "reference_space": "Wertschöpfungskette von Hugo Boss",
+              "time_horizon": "mittel- bis langfristig nach einer möglichen Übernahme",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine neue Eigentümerstrategie könnte ökologische Anforderungen verändern.",
+              "source_support": "Die Quelle belegt keinen Umweltbezug und keine konkrete Strategie.",
+              "limitations": "Keine Daten zu Emissionen, Materialien, Produktionsorten, Standards oder Lieferanten.",
+              "first_order": "Mögliche strategische Neubewertung der Produktion.",
+              "second_order": "Mögliche Veränderung von Beschaffung und Umweltstandards.",
+              "third_order": "Mögliche kumulative Auswirkungen auf Ressourcenverbrauch, ohne belastbare Richtung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle beantwortet die Umwelt- oder Lieferkettenfrage.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Verlagerung ökologischer Belastungen in der Lieferkette",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Eine spätere strategische Verlagerung von Beschaffung oder Produktion könnte Umweltbelastungen räumlich verschieben.",
+              "recipients": [
+                "Produktionsregionen",
+                "Ökosysteme"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist nur als entfernte Möglichkeit modellierbar und nicht durch Produktionsdaten gestützt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Konkrete betroffene Regionen sind nicht bekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Belastungsintensität ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Lieferkettenentscheidungen könnten länger wirken, falls sie erfolgen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verlagerungen wären teilweise korrigierbar, konkrete Bindungen fehlen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Vulnerable Ökosysteme oder Gemeinden sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische Verlagerung ist ohne Lieferkettendaten nicht nachweisbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird nicht angesprochen.",
+                "reference_frame": "Schutz von Ökosystemen und Produktionsregionen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Erforderlich wären ein Eigentümerwechsel und eine nachweisbare Änderung der Lieferkette.",
+              "reference_space": "Nicht näher bestimmbar; mögliche Lieferketten von Hugo Boss",
+              "time_horizon": "langfristig und nur nach späteren Entscheidungen",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Beschaffung und Produktion könnten bei einer neuen Strategie neu geordnet werden.",
+              "source_support": "Dafür gibt es im gelieferten Text keinen konkreten Beleg.",
+              "limitations": "Keine Regionen, Mengen, Materialien oder Umweltindikatoren.",
+              "first_order": "Mögliche Änderung von Beschaffungsstandorten.",
+              "second_order": "Mögliche räumliche Verschiebung von Umweltbelastungen.",
+              "third_order": "Kumulative Folgen bleiben vollständig offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung der gelieferten Quelle ergab keine belastbaren Angaben zur Lieferkette.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung ökologischer Standards durch eine neue Unternehmensstrategie",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung ökologischer Standards durch eine neue Unternehmensstrategie",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine Auswirkungen auf staatliche Institutionen, Wahlen oder öffentliche Entscheidungsprozesse. Modellierbar ist nur ein begrenzter Governance-Pfad innerhalb eines Unternehmens.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der mögliche Eigentümerwechsel könnte interne Macht- und Kontrollstrukturen verändern, berührt demokratische Institutionen aber nicht unmittelbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verschiebung von Macht und Kontrolle innerhalb der Unternehmensführung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ein Eigentümerwechsel und der Rücktritt des Aufsichtsratschefs könnten die Verteilung von Einfluss zwischen Eigentümern, Aufsichtsrat und Unternehmensleitung verändern.",
+              "recipients": [
+                "Eigentümer",
+                "Aufsichtsrat",
+                "Unternehmensleitung",
+                "Beschäftigtenvertretungen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Governance-Effekt kann intern relevant sein, seine öffentliche und institutionelle Reichweite ist voraussichtlich begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft vorrangig die Unternehmensorgane.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Wechsel an der Aufsichtsratsspitze kann interne Kontrolle spürbar verändern.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eigentümer- und Governance-Strukturen können längerfristig bestehen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Interne Besetzungen und Kontrollregeln sind grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene Akteure verfügen überwiegend über institutionelle Einflussmöglichkeiten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine Wirkung auf demokratische Strukturen außerhalb des Unternehmens ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine Beeinträchtigung demokratischer Rechte oder Institutionen ist nicht belegt.",
+                "reference_frame": "Unternehmensaufsicht und institutionelle Rechenschaft",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt einen tatsächlichen Eigentümerwechsel oder eine daraus folgende Neuordnung der Organe voraus.",
+              "reference_space": "Unternehmensinterne Governance bei Hugo Boss",
+              "time_horizon": "kurz- bis langfristig nach einer möglichen Übernahme",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eigentümer- und Personalwechsel könnten die interne Rechenschaft und Machtverteilung verändern.",
+              "source_support": "Die Quelle belegt den möglichen Übernahmeprozess und den Rücktritt, nicht die spätere Besetzung oder Governance-Praxis.",
+              "limitations": "Keine Angaben zu Mitbestimmung, Aktionärsstruktur, Nachfolge oder institutionellen Folgen.",
+              "first_order": "Mögliche Veränderung der internen Kontrollstruktur.",
+              "second_order": "Mögliche neue Prioritäten bei Rechenschaft und Entscheidungswegen.",
+              "third_order": "Eine Wirkung auf öffentliche Debatten oder demokratische Institutionen ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine Belege für demokratische oder staatliche Folgeeffekte.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Normalisierung konzentrierter Eigentümerkontrolle als Unternehmensmodell",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Ein erfolgreicher Eigentümerwechsel könnte als Beispiel für konzentrierten Einfluss auf Unternehmensorgane wahrgenommen werden.",
+              "recipients": [
+                "Aktionäre",
+                "Beschäftigte",
+                "Unternehmensöffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine über den Einzelfall hinausgehende Normalisierung ist spekulativ und nicht durch Publikumsdaten belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Resonanzraum bleibt auf Unternehmens- und Kapitalmarktakteure begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Wahrnehmungs- oder Verhaltensänderung ist nicht beobachtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Beispielcharakter könnte kurzlebig bleiben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Wahrnehmungen und Unternehmensnormen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Konkrete besonders abhängige Gruppen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein breiter institutioneller Wandel ist nicht nachweisbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wird durch den Bericht nicht berührt.",
+                "reference_frame": "Unternehmensmacht und Rechenschaft",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Erforderlich wären ein vollzogener Eigentümerwechsel und eine über den Einzelfall hinausgehende Wahrnehmung.",
+              "reference_space": "Unternehmens- und Kapitalmarktöffentlichkeit",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein Einzelfall könnte als Referenz für weitere Eigentümerentscheidungen dienen.",
+              "source_support": "Die Quelle berichtet nicht über Resonanz, Nachahmung oder institutionelle Wirkung.",
+              "limitations": "Keine Publikums-, Markt- oder Diskursdaten liegen vor.",
+              "first_order": "Mögliche Aufmerksamkeit für Eigentümer- und Kontrollfragen.",
+              "second_order": "Mögliche Einordnung des Vorgangs als Unternehmenspräzedenz.",
+              "third_order": "Eine Normalisierung konzentrierter Kontrolle ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt Resonanz, Nachahmung oder eine Wirkung auf demokratische Institutionen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Verschiebung von Macht und Kontrolle innerhalb der Unternehmensführung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Verschiebung von Macht und Kontrolle innerhalb der Unternehmensführung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T10:37:35.261Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T07:46:07.000Z",
+      "last_updated": "2026-09-16T10:44:17.079Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-089c8dd3287c28a8338d",
+      "case_file": null,
+      "source_published_at": "2026-09-14T07:46:07.000Z",
+      "published_at": "2026-09-14T08:44:44.807Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen sind die formalen Schritte der möglichen Übernahme sowie die Gründe und der Zeitpunkt des Ausscheidens von Stephan Sturm.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Unternehmensmitteilungen, formale Übernahmeunterlagen und Angaben zur Nachfolge",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4c8390606a7da0f3",
+          "announced_at": "2026-09-14T07:46:07.000Z",
+          "follow_up_date": "2026-09-21T08:44:44.807Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/grossaktionaer-macht-druck--uebernahmekampf-bei-boss--aufsichtsratschef-legt-amt-nieder-38249676.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T07:46:07.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b366fbf1c9a92998",
       "title_image": {
@@ -45825,88 +47503,6 @@
           "url": "https://www.france24.com/en/middle-east/20260914-iranian-ship-qeshm-island-tehran-hormuz",
           "source_type": "media_rss",
           "published_at": "2026-09-14T02:35:36.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7bca08a77fd631f1",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7bca08a77fd631f1-9b4b826a4706fe55-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7bca08a77fd631f1-315928baa3054cc8-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7bca08a77fd631f1-5d1b3aa0de218a70-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "grossaktionar-macht-druck-ubernahmekampf-bei-boss-aufsichtsratschef-legt-amt-nieder-d631f1",
-      "title": "Großaktionär macht Druck: Übernahmekampf bei Boss: Aufsichtsratschef legt Amt nieder",
-      "source_summary": "Der Stern berichtet, dass die britische Frasers Group an einer Übernahme des deutschen Modekonzerns Hugo Boss arbeitet. Zugleich lege der Aufsichtsratschef Stephan Sturm sein Amt nieder; laut dem Bericht habe Frasers das Vertrauen in Sturm bereits länger verloren.\n\nDie vorliegenden Auszüge belegen einen aktuellen Übernahmekonflikt und den Führungswechsel, aber noch nicht dessen formale Hintergründe, den Stand eines Übernahmeangebots oder die Zustimmung zuständiger Gremien. Die Angaben stammen aus einer journalistischen Einzelquelle und sollten für eine bestätigte Einordnung weiter geprüft werden.",
-      "summary": "Bei Hugo Boss treffen ein möglicher Übernahmeversuch und der Rückzug des Aufsichtsratschefs zusammen. Belegt ist bislang der Bericht des Stern; formale Schritte und die Folgen für das Unternehmen sind offen.",
-      "detail_summary": "Der Stern berichtet, dass die britische Frasers Group an einer Übernahme von Hugo Boss arbeitet. Nach dem vorliegenden Auszug legt Aufsichtsratschef Stephan Sturm sein Amt nieder. Als Zusammenhang nennt der Bericht das bereits länger fehlende Vertrauen von Frasers in Sturm. Für Hugo Boss kann die Kombination aus Eigentümerdruck und Führungswechsel die Unternehmenssteuerung und die Verhandlungen beeinflussen. Ob daraus eine tatsächliche Übernahme, Veränderungen für Beschäftigte oder eine neue Strategie folgen, ist noch nicht belegt.",
-      "why_relevant": "Ein möglicher Kontrollwechsel bei einem börsennotierten Modekonzern und der gleichzeitige Rückzug des Aufsichtsratschefs können die Unternehmensführung und strategische Entscheidungen verändern. Der konkrete Verlauf ist noch offen.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-14T08:44:44.807Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-14T07:46:07.000Z",
-      "last_updated": "2026-09-14T12:11:06.335Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-089c8dd3287c28a8338d",
-      "case_file": null,
-      "source_published_at": "2026-09-14T07:46:07.000Z",
-      "published_at": "2026-09-14T08:44:44.807Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Zu prüfen sind die formalen Schritte der möglichen Übernahme sowie die Gründe und der Zeitpunkt des Ausscheidens von Stephan Sturm.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Veröffentlichte Unternehmensmitteilungen, formale Übernahmeunterlagen und Angaben zur Nachfolge",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-4c8390606a7da0f3",
-          "announced_at": "2026-09-14T07:46:07.000Z",
-          "follow_up_date": "2026-09-21T08:44:44.807Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/grossaktionaer-macht-druck--uebernahmekampf-bei-boss--aufsichtsratschef-legt-amt-nieder-38249676.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-14T07:46:07.000Z",
           "primary_source": false
         }
       ]
