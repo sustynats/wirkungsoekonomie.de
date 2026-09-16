@@ -335,3 +335,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Der erste vollautomatische Entwurf ist da: Die NEU-DENKEN-Folge vom 15.09. wurde selbst beauftragt, mit offiziellem Transkript bearbeitet und als Nachgehört-Vorschau geliefert („Was meinen wir, wenn wir vom ‚Westen' sprechen?“, drei Quellen, 12 000 Zeichen, 1,1 Cent). Die Ablage verwarf sie mit `EDITORIAL_PREVIEW_SOURCE_INVALID`: Die Freigabeprüfung verlangt je Quelle `publisher` und bei Nachgehört/Nachgesehen `source_media` mit `show`, `episode_title`, `original_release_date`, `original_url`; der Vertrag beschrieb `sources` dagegen nur als Objektliste, und das Modell lieferte `episode`/`published_at`. Der Vertrag nennt die Pflichtfelder jetzt im Schema und in einer Anweisung.
 - **Geprüft:** `tests/news/redaktionsworker.test.mjs` (neu: vollständige Folge besteht, fehlender `publisher` und alte Schlüsselnamen werden abgelehnt, Schema und Anweisung nennen die Felder).
+
+## 2026-09-16 - Claude: Textlängen als harte Grenzen in der Anweisung
+
+- **Was:** Nach den Strukturreparaturen sind die verbliebenen Gate-Fehler Textregeln. Gemessen am Lauf 05:22 UTC: `source_summary` 77 Wörter bei verlangten 100 (publication_depth deepened), `detail_summary` 458 Zeichen und 4 Sätze bei verlangten 500 und 5 bis 7. Beide Grenzen stehen jetzt mit der Tiefenunterscheidung (initial 60/300, deepened 100/500) in der Systemanweisung, mit dem ausdrücklichen Hinweis, dass zu kurz genauso ungültig ist wie zu lang.
+- **Geprüft:** `tests/news/direct-operation.test.mjs`.
