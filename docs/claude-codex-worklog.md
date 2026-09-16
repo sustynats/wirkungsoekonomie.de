@@ -292,3 +292,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Seit #791 laufen im Worker drei Schritte (Analysekandidaten, Sendungen, Entwürfe); alle holten die Import-Sperre mit derselben manuellen Lauf-ID. Nach dem ersten Schritt galt der Slot als abgeschlossen, Sendungen und Entwürfe wurden übersprungen (`BRIDGE_SLOT_ALREADY_COMPLETED`, Takt 23:35 UTC). Jeder Schritt hängt jetzt eine Schrittziffer an die Versuchsnummer (`<run>:<attempt><schritt>`, bleibt im Format Ziffern:Ziffern).
 - **Geprüft:** Worker-, Sendungs- und Workflow-Tests.
+
+## 2026-09-16 - Claude: Worker: Web-Suche ohne JSON-Modus
+
+- **Was:** Der erste Takt-Lauf mit vollständigem Stand (00:05 UTC) nannte den Grund der Ablehnung: „Web Search cannot be used with JSON mode.“ Mit Suchwerkzeug wird die Anfrage jetzt ohne `text.format` gestellt; das Profil verlangt ohnehin genau ein JSON-Objekt, und die Antwort wird tolerant gelesen (`extractJsonObject`: Markdown-Zaun und Umtext werden entfernt, sonst `AI_MALFORMED_JSON`). Ohne Suchwerkzeug bleibt der JSON-Modus an. Derselbe Lauf reihte den ersten automatischen Sendungsauftrag ein (NEU DENKEN, 15.09., 79k Zeichen Transkript).
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs` 10/10 (erweitert: kein `text.format` mit Werkzeug, JSON-Modus ohne Werkzeug, eingezäunte Antwort lesbar, Nicht-JSON abgelehnt).
