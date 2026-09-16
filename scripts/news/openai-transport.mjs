@@ -12,6 +12,7 @@ import { analysisResponseFormat, schemaEligible, ANALYSIS_JSON_SCHEMA } from './
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 import { evidenceGroups } from './newsroom.mjs';
+import { sourceNumberTokens } from './numeric-evidence.mjs';
 
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
 export const DEFAULT_NEWS_MODEL = 'gpt-5.4-mini';
@@ -70,6 +71,7 @@ export function storyBriefing(story) {
   if (!depth) return '';
   const deepened = depth === 'deepened';
   const origins = independentOrigins(story);
+  const numbers = sourceNumberBriefing(story);
   return ['VORGABEN FÜR DIESE MELDUNG (nicht zu wählen, sie folgen dem Aktenstand):',
     `publication_depth: ${depth}.`,
     deepened
@@ -80,6 +82,7 @@ export function storyBriefing(story) {
       : 'detail_summary: 4 bis 6 Sätze, 350 bis 900 Zeichen.',
     'summary: genau zwei Sätze.',
     'Zahlen in event_claims: Jede Zahl einer Aussage muss wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst. Steht sie dort nicht, formuliere die Aussage ohne Zahl.',
+    ...(numbers.length ? [`Belegbare Zahlen je Quelle (Schreibweise wie in der Quelle, Dezimalkomma erlaubt): ${numbers.join(' | ')}.`] : []),
     origins >= 2
       ? `Der Quellenbestand hat ${origins} voneinander unabhängige Herkünfte. status confirmed_claim nur, wenn du für diese Aussage zwei davon zitierst; sonst single_source_claim, primary_source_claim oder uncertain_claim.`
       : `Der Quellenbestand hat nur ${origins === 1 ? 'eine' : 'keine'} unabhängige Herkunft. status confirmed_claim ist damit ausgeschlossen: nutze single_source_claim, primary_source_claim (nur bei zitierter Primärquelle) oder uncertain_claim.`,
@@ -336,6 +339,21 @@ export function repairClaimIndependence(analysis, story, repairs = []) {
     claim.status = next;
   }
   return analysis;
+}
+
+// Welche Zahlen in welcher Quelle tatsächlich stehen. Die Prüfung vergleicht je
+// Aussage gegen die zitierte Quelle, also bekommt das Modell dieselbe Liste
+// vorab statt einer Ermahnung (16.09.: CLAIM_NUMBER_NOT_IN_EVIDENCE in jedem
+// zweiten Lauf). Derselbe Auszug wie in der Prüfung, damit nichts auseinanderläuft.
+export const BRIEFING_NUMBERS_PER_SOURCE = 25;
+export function sourceNumberBriefing(story, limit = BRIEFING_NUMBERS_PER_SOURCE) {
+  const rows = [];
+  for (const source of Array.isArray(story?.sources) ? story.sources : []) {
+    if (!source?.source_id) continue;
+    const numbers = [...sourceNumberTokens(source)].slice(0, limit);
+    rows.push(`${source.source_id}: ${numbers.length ? numbers.join(', ') : 'keine Zahlen'}`);
+  }
+  return rows;
 }
 
 // Wie viele voneinander unabhängige Herkünfte der gelieferte Quellenbestand

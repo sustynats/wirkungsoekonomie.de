@@ -700,3 +700,22 @@ test('ein nicht belegbarer Aussagestatus wird herabgestuft, nicht verworfen', as
   assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary] }), /nur eine unabhängige Herkunft.*confirmed_claim ist damit ausgeschlossen/s);
   assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary, agency] }), /2 voneinander unabhängige Herkünfte/);
 });
+
+test('die Vorgabe nennt die belegbaren Zahlen je Quelle, mit demselben Auszug wie die Prüfung', async () => {
+  const { sourceNumberBriefing, storyBriefing, BRIEFING_NUMBERS_PER_SOURCE } = await import('../../scripts/news/openai-transport.mjs');
+  const { sourceNumberTokens } = await import('../../scripts/news/numeric-evidence.mjs');
+  const source = { source_id: 'swr-aktuell', publisher_id: 'swr', url: 'https://swr.example/1',
+    title: '12 Waffen und 300 Schuss Munition gefunden', summary: 'Die Polizei fand am 15. September 2026 rund 4,5 Kilogramm Material.' };
+  const ohne = { source_id: 'rbb24', publisher_id: 'rbb', url: 'https://rbb.example/1', title: 'Kein Zahlenbezug', summary: 'Ein Text ohne Ziffern.' };
+  // Genau die Zahlen, die die Prüfung akzeptiert - kein eigener Auszug.
+  assert.deepEqual(sourceNumberBriefing({ sources: [source] }), [`swr-aktuell: ${[...sourceNumberTokens(source)].join(', ')}`]);
+  assert.deepEqual(sourceNumberBriefing({ sources: [ohne] }), ['rbb24: keine Zahlen']);
+  assert.deepEqual(sourceNumberBriefing({}), []);
+  assert.deepEqual(sourceNumberBriefing({ sources: [{ title: 'ohne Kennung' }] }), [], 'ohne source_id keine Zeile');
+  // Lange Zahlenlisten werden begrenzt, damit die Anweisung nicht ausufert.
+  const viele = { source_id: 'viele', title: Array.from({ length: 60 }, (_, i) => `${i + 1}`).join(' '), summary: '' };
+  assert.equal(sourceNumberBriefing({ sources: [viele] })[0].split(', ').length, BRIEFING_NUMBERS_PER_SOURCE);
+  // Und die Liste steht in der Vorgabe.
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [source, ohne] }),
+    /Belegbare Zahlen je Quelle .*swr-aktuell: 12, 300, 15, 2026, 4\.5 \| rbb24: keine Zahlen/);
+});
