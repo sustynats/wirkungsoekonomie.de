@@ -135,6 +135,31 @@ export function loadShows(root = ROOT) {
 // amtlichen Untertitel. Dieselbe Folge steht oft mehrfach in der Liste (mit und
 // ohne Untertitel); je Folge gewinnt die Fassung mit Untertiteln.
 export const MEDIATHEK_QUERY_URL = 'https://mediathekviewweb.de/api/query';
+// Natalie am 16.09.2026: „Lanz sollten wir immer Zeit geben mit 14:00 am
+// Folgetag. Dann hätten wir es vielleicht 14:30 live, was okay ist für
+// Nachbetrachtung." Ein Stichtag auf der Wanduhr ist dafür richtiger als eine
+// Stundenzahl: die Sendezeit schwankt, der Stichtag nicht.
+export function berlinOffsetMinutes(at) {
+  const name = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', timeZoneName: 'longOffset' })
+    .formatToParts(new Date(at)).find((part) => part.type === 'timeZoneName')?.value || 'GMT+00:00';
+  const match = /GMT([+-])(\d{2}):(\d{2})/.exec(name);
+  return match ? (match[1] === '-' ? -1 : 1) * (Number(match[2]) * 60 + Number(match[3])) : 0;
+}
+
+// Der Stichtag ist Berliner Wanduhrzeit, gerechnet vom Berliner Kalendertag der
+// Folge. Ohne Angabe gibt es keinen Stichtag und das Stundenfenster gilt weiter.
+export function transcriptDeadline(publishedAt, rule) {
+  if (!rule || typeof rule !== 'object') return null;
+  const published = Date.parse(publishedAt);
+  if (!Number.isFinite(published)) return null;
+  const hour = Number.isFinite(Number(rule.berlin_hour)) ? Number(rule.berlin_hour) : 14;
+  const minute = Number.isFinite(Number(rule.berlin_minute)) ? Number(rule.berlin_minute) : 0;
+  const dayOffset = Number.isFinite(Number(rule.day_offset)) ? Number(rule.day_offset) : 1;
+  const berlin = new Date(published + berlinOffsetMinutes(published) * 60000);
+  const naive = Date.UTC(berlin.getUTCFullYear(), berlin.getUTCMonth(), berlin.getUTCDate() + dayOffset, hour, minute);
+  return new Date(naive - berlinOffsetMinutes(naive) * 60000).toISOString();
+}
+
 export function mediathekQueryBody(show, size = 12) {
   return JSON.stringify({ queries: [{ fields: ['title'], query: show.mediathek.title }, { fields: ['channel'], query: show.mediathek.channel }],
     sortBy: 'timestamp', sortOrder: 'desc', future: false, offset: 0, size });
@@ -251,7 +276,11 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       // Wartefenster läuft, bleibt die Folge liegen statt ohne Wortlaut in eine
       // Rückfrage zu laufen (16.09.: Lanz vom 15.09. ohne Untertitel).
       const ageHours = (Date.parse(now) - Date.parse(episode.published_at)) / 3600000;
-      if (!transcript && ageHours < subtitleWaitHours) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry) }); continue; }
+      // Ein Stichtag der Sendung schlägt das allgemeine Stundenfenster: bis dahin
+      // bekommen die amtlichen Untertitel Zeit, danach greift die eigene Abschrift.
+      const deadline = transcriptDeadline(episode.published_at, show.transcript_deadline);
+      const waitingForSubtitles = deadline ? Date.parse(now) < Date.parse(deadline) : ageHours < subtitleWaitHours;
+      if (!transcript && waitingForSubtitles) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry), ...(deadline ? { deadline } : {}) }); continue; }
       if (!transcript && transcribe && transcriptDay.transcribed < maxTranscriptsPerDay) {
         try {
           const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });

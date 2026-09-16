@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { observeLiveNews, planRecovery, recoverDelivery, workflowChecks } from '../../scripts/ops/news-recovery.mjs';
+import { observeLiveNews, planRecovery, recoverDelivery, workflowChecks, workflowFailed } from '../../scripts/ops/news-recovery.mjs';
 
 const now = '2026-09-14T04:00:00Z', head = 'a'.repeat(40);
 const item = (slug, date = '2026-09-14T03:00:00Z') => ({ url: `https://wirkungsoekonomie.de/wirkungsticker/${slug}/`,
   _woek_type: 'Wirkungsakte', date_published: date });
-const snapshot = () => ({ 'wirkungsticker.yml': [], 'deploy.yml': [] });
+const snapshot = () => ({ 'wirkungsticker.yml': [], 'deploy.yml': [], 'redaktionsworker.yml': [] });
 const input = () => ({ head, snapshot: snapshot(), now, state: {}, pendingPublication: 1,
   bridgeMode: true, bridge: { reachable: true, poll_at: now, output_wait_minutes: 20 } });
 
@@ -88,4 +88,37 @@ test('starting a retry cannot mark a failed workflow as repaired', () => {
   runs['deploy.yml'][1] = { status: 'completed', conclusion: 'success', created_at: '2026-09-14T03:55:00Z' };
   assert.equal(workflowChecks(runs, now).find(c => c.id === 'delivery-deploy.yml').ok, true);
   assert.equal(workflowChecks(null, now)[0].ok, false);
+});
+
+test('ein gescheiterter oder überfälliger Redaktionslauf bekommt genau einen erneuten Anlauf je Quellstand', async () => {
+  const failed = { status: 'completed', conclusion: 'failure', created_at: '2026-09-14T03:50:00Z' };
+  const fine = { status: 'completed', conclusion: 'success', created_at: '2026-09-14T03:50:00Z' };
+  const base = { ...input(), pendingPublication: 0, bridgeMode: false };
+  // Ein Fehlschlag im Redaktionslauf ist ein Hänger, den niemand sieht.
+  const plan = planRecovery({ ...base, snapshot: { ...snapshot(), 'redaktionsworker.yml': [failed] } });
+  assert.equal(plan[0].workflow, 'redaktionsworker.yml');
+  // Ein erfolgreicher Lauf, ein laufender Lauf und ein junger offener Lauf nicht.
+  for (const runs of [[fine], [{ status: 'in_progress', created_at: '2026-09-14T03:55:00Z' }], [{ status: 'queued', created_at: '2026-09-14T03:30:00Z' }]])
+    assert.deepEqual(planRecovery({ ...base, snapshot: { ...snapshot(), 'redaktionsworker.yml': runs } }), [], JSON.stringify(runs));
+  // Ein Lauf, der seit über 65 Minuten hängt, wird gemeldet, aber nicht doppelt
+  // gestartet: solange etwas läuft, kommt kein zweiter Anlauf dazu.
+  const hanging = { ...snapshot(), 'redaktionsworker.yml': [{ status: 'queued', created_at: '2026-09-14T02:00:00Z' }] };
+  assert.equal(workflowFailed(hanging['redaktionsworker.yml'], now), true);
+  assert.deepEqual(planRecovery({ ...base, snapshot: hanging }), []);
+  // Genau einer je Quellstand.
+  const once = planRecovery({ ...base, snapshot: { ...snapshot(), 'redaktionsworker.yml': [failed] } })[0];
+  assert.deepEqual(planRecovery({ ...base, snapshot: { ...snapshot(), 'redaktionsworker.yml': [failed] },
+    state: { recovery_attempts: [{ ...once, at: '2026-09-13T00:00:00Z' }] } }), []);
+  // Der Bericht nennt den Lauf beim Namen.
+  const checks = workflowChecks({ ...snapshot(), 'redaktionsworker.yml': [failed] }, now);
+  const row = checks.find((check) => check.id === 'delivery-redaktionsworker.yml');
+  assert.equal(row.name, 'Redaktionslauf');
+  assert.equal(row.ok, false);
+  assert.equal(row.immediate, true);
+  // Und der Anlauf läuft als gewöhnlicher Lauf auf main.
+  const dispatched = [];
+  const state = {};
+  await recoverDelivery({ state, actions: [once], save: async () => {}, refresh: async () => ({ head, runs: [failed] }), dispatch: async (workflow, options) => dispatched.push([workflow, options]) });
+  assert.deepEqual(dispatched, [['redaktionsworker.yml', { ref: 'main' }]]);
+  assert.equal(state.recovery_attempts[0].status, 'dispatched');
 });
