@@ -92,7 +92,11 @@ Doppelläufe.
   nie nachgefordert. Token beider Aufrufe fließen in denselben Kostenbeleg, der Folgeaufruf zählt
   im Stundendeckel (`repair_calls`). Abschaltbar mit `WOEK_NEWS_ASSESSMENT_REPAIR=false`. Das ist
   die bewusste Ausnahme von „ein Aufruf je Meldung“: höchstens zwei, der zweite klein und nur bei
-  strukturellem Befund.
+  strukturellem Befund. **Der Folgeaufruf ist seit 16.09. schemagebunden** (`scripts/news/impact-json-schema.mjs`,
+  `text.format` = `json_schema` mit `strict: true`, Enums aus den Vertragsmodulen, damit Schema und Gate nicht
+  auseinanderlaufen): eine schemagebundene Antwort kann keinen Schlüssel weglassen, das Gate beurteilt nur noch
+  den Inhalt. Lehnt der Anbieter das Schema ab (HTTP 400), folgt genau ein weiterer Versuch im einfachen
+  JSON-Modus; abschaltbar mit `WOEK_NEWS_REPAIR_SCHEMA=false`.
 - Betriebsmodell seit 15.09.2026 abends: `gpt-5.6-luna` (Variable `WOEK_NEWS_MODEL`, Entscheidung
   Natalie); September-Freigabe auf 100 EUR angehoben (`NEWS_AI_BUDGET_DIRECT_OPERATION`).
 - Modell über Repository-Variable `WOEK_NEWS_MODEL` (Code-Standard `gpt-5.4-mini`; zugelassen
