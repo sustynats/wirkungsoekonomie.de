@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded, evaluateRunHealth, reportOperationallyHealthy } from "../../scripts/news/check-run-health.mjs";
+import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded, evaluateRunHealth, reportOperationallyHealthy, sourceHealthDegraded } from "../../scripts/news/check-run-health.mjs";
 
 const now = "2026-09-07T00:36:19Z";
 const fixture = () => ({
@@ -64,4 +64,22 @@ test('per-job bridge holds remain visible without failing independent completed 
   assert.ok(evaluateRunHealth({ ...report, bridge_monitor: { dropbox_reachable: false } }, { now }).errors.includes('BRIDGE_UNAVAILABLE'));
   assert.ok(evaluateRunHealth({ ...report, ai_calls: 1 }, { now }).errors.includes('BRIDGE_API_CALL_DETECTED'));
   assert.ok(evaluateRunHealth({ ...report, completed_at: null }, { now }).errors.includes('RUN_NOT_COMPLETED'));
+});
+
+test("eine einzelne tote Quelle ist ein Quellenproblem, kein Laufausfall", () => {
+  const health = (broken, total) => ({ source_health: [
+    ...Array.from({ length: broken }, (_, i) => ({ source_id: `kaputt-${i}`, status: "disturbed", last_error: "FEED_HTTP_404" })),
+    ...Array.from({ length: Math.max(0, total - broken) }, (_, i) => ({ source_id: `ok-${i}`, status: "active" })),
+  ] });
+  // 16.09.: ein 404 der WirtschaftsWoche liess ab 11:50 UTC jeden Lauf als
+  // fehlgeschlagen erscheinen, obwohl er veroeffentlicht hat.
+  assert.equal(sourceHealthDegraded(health(1, 50)), false);
+  assert.equal(sourceHealthDegraded(health(2, 50)), false, "zwei von fuenfzig sind noch kein Ausfall");
+  assert.equal(sourceHealthDegraded(health(3, 50)), true, "drei gleichzeitig schon");
+  assert.equal(sourceHealthDegraded(health(2, 8)), true, "oder zwei bei kleinem Bestand");
+  assert.equal(sourceHealthDegraded(health(0, 50)), false);
+  assert.equal(sourceHealthDegraded({}), false);
+  // Ein veralteter Bestand zaehlt wie eine Stoerung, andere Zustaende nicht.
+  assert.equal(sourceHealthDegraded({ source_health: [{ status: "stale" }, { status: "stale" }, { status: "stale" }] }), true);
+  assert.equal(sourceHealthDegraded({ source_health: [{ status: "governance_hold" }, { status: "stale_content" }, { status: "pending" }, { status: "no_free_access" }] }), false);
 });
