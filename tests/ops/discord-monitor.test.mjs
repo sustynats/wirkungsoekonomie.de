@@ -322,13 +322,26 @@ test('a lone throttled retry with fresh portfolio evidence does not hide the sep
   assert.equal(checks.find(c=>c.id==='budget').ok, false);
   assert.equal(d.report.source_health[0].status, 'governance_hold');
 });
-test('image-provider outages and exhausted retries are monitored, deliberate cards and safety rejections are not outages', () => {
-  const d=fixture();
-  d.stories=[{published:true,title_image:{mode:'impact_card',fallback_reason:'IMAGE_CONTAINS_TEXT'}}];
-  assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='images').ok,true);
-  d.stories.push({published:true,title_image:{mode:'editorial',refresh_failure:'HIGGSFIELD_RETRY_EXHAUSTED'}});
-  const c=evaluateChecks(d,now).checks.find(c=>c.id==='images');
-  assert.equal(c.ok,false);assert.match(c.reason,/1 Symbolbild mit/);assert.match(c.reason,/Nachrichten werden dadurch nicht zurückgehalten/);
+test('gemessen wird das nutzbare Titelbild, nicht der Zustand des Bildanbieters', () => {
+  // Natalies Entscheidung: kein KI-Titelfoto, sondern Wirkungskarte. Ein nicht
+  // eingerichteter Anbieter ist damit der gewollte Zustand, kein Fehler.
+  const card = (extra = {}) => ({ published: true, title_image: { mode: 'impact_card',
+    og: { url: 'https://example.org/og.png' }, square: { url: 'https://example.org/square.png' }, ...extra } });
+  const d = fixture();
+  d.stories = [card({ fallback_reason: 'IMAGE_CONTAINS_TEXT' }), card({ fallback_reason: 'HIGGSFIELD_NOT_CONFIGURED' }), card({ refresh_failure: 'HIGGSFIELD_RETRY_EXHAUSTED' })];
+  const fine = evaluateChecks(d, now).checks.find((c) => c.id === 'images');
+  assert.equal(fine.ok, true, fine.reason);
+  assert.match(fine.reason, /0 veröffentlichte Meldung\(en\) ohne nutzbares Titelbild/);
+  assert.match(fine.reason, /2 mit Kartenfallback/);
+  // Fehlt der Leserin das Bild, ist es ein Fehler - unabhängig vom Grund.
+  d.stories.push({ published: true, title_image: { mode: 'impact_card', og: { url: 'https://example.org/og.png' } } });
+  d.stories.push({ published: true });
+  const broken = evaluateChecks(d, now).checks.find((c) => c.id === 'images');
+  assert.equal(broken.ok, false);
+  assert.match(broken.reason, /2 veröffentlichte Meldung\(en\) ohne nutzbares Titelbild/);
+  // Nicht gelistete oder unveröffentlichte Meldungen zählen nicht.
+  d.stories.push({ published: true, listed: false }, { published: false });
+  assert.match(evaluateChecks(d, now).checks.find((c) => c.id === 'images').reason, /2 veröffentlichte Meldung\(en\)/);
 });
 test('stale or missing report, provider failure, and missing feed are detected', () => {
   const d = fixture(); d.report.completed_at = '2026-09-04T04:00:00Z'; d.report.ai_error = 'HTTP503'; d.liveFeed = null;
