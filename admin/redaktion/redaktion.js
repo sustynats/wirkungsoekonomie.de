@@ -55,7 +55,21 @@ async function loadStatus(){
   body.append(element('p','Befund wird geholt …','muted'));
   let view;
   try{ const data=await api('/status'); view=betriebsAnzeige(data?.status||null); }
-  catch(error){ body.textContent=''; body.append(element('p',error.message||'Der Befund ist gerade nicht abrufbar.','error')); $('betrieb-dot').textContent=''; return; }
+  catch(error){
+    body.textContent='';
+    // Die Auskunft ist eine neue Route des Redaktionsservers. Erscheint die App
+    // vor seiner neuen Fassung, antwortet er mit 404 - dann gehoert dort ein
+    // Satz hin, den man versteht, und nicht der rohe Serverhinweis
+    // (16.09., Natalie: "diese Aktion wurde nicht gefunden").
+    const text = error.status===404
+      ? 'Der Redaktionsserver kennt die Betriebsauskunft noch nicht. Sie erscheint, sobald seine neue Fassung ausgeliefert ist - am Ticker selbst ändert das nichts.'
+      : error.status===403 || error.status===401
+      ? 'Für die Betriebsauskunft ist eine neue Anmeldung nötig.'
+      : (error.message || 'Der Befund ist gerade nicht abrufbar.');
+    body.append(element('p',text,error.status===404?'quiet':'error'));
+    $('betrieb-dot').textContent='';
+    return;
+  }
   body.textContent='';
   $('betrieb-dot').textContent=view.dot;
   $('betrieb-dot').className='dot dot-'+view.tone;

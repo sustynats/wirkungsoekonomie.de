@@ -37,3 +37,16 @@ test('die Arbeitszeile darf umbrechen statt zu klemmen', () => {
   assert.match(css, /\.betrieb-chip\{[^}]*min-height:34px/);
   assert.match(css, /\.betrieb-chip:focus-visible\{outline:3px solid/, 'mit sichtbarem Tastaturfokus');
 });
+
+// 16.09., Natalie im Betrieb-Reiter: „diese Aktion wurde nicht gefunden." Die
+// Auskunft ist eine neue Route des Redaktionsservers; die App war vor seiner
+// neuen Fassung da. Dann gehoert dort ein verstaendlicher Satz hin statt des
+// rohen Serverhinweises - und der Ticker laeuft davon unberuehrt weiter.
+test('eine noch unbekannte Betriebsroute wird erklaert, nicht durchgereicht', () => {
+  const block = app.slice(app.indexOf('async function loadStatus'), app.indexOf('async function loadStatus') + 1400);
+  assert.match(block, /error\.status===404/, 'der Fall wird unterschieden');
+  assert.match(block, /Der Redaktionsserver kennt die Betriebsauskunft noch nicht/);
+  assert.match(block, /am Ticker selbst ändert das nichts/, 'und sagt, dass nichts kaputt ist');
+  assert.match(block, /error\.status===403 \|\| error\.status===401/, 'eine abgelaufene Anmeldung ist etwas anderes');
+  assert.ok(!/body\.append\(element\('p',error\.message\|\|/.test(block), 'der rohe Serverhinweis steht nicht mehr allein da');
+});
