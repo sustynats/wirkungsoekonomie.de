@@ -4,3 +4,16 @@
 
 #request-preview{scroll-margin-top:20px;overflow-wrap:anywhere}#request-preview h2{margin-top:18px}.private-preview-text{white-space:pre-wrap;font-size:17px;line-height:1.75;margin-top:24px}.preview-status{margin:24px 0}.preview-status.error{color:#8a362e;background:#fff0ec;border:1px solid #ead4cc;padding:14px;border-radius:12px}
 .supplement-note{border-left:4px solid var(--ink);background:var(--accent);margin-bottom:16px}.supplement-note p{margin:0 0 8px}.supplement-note button{padding:0}
+
+/* Betriebsauskunft: ruhig, lesbar, keine Alarmfarben ohne Anlass. */
+.dot{margin-left:.35rem;font-size:.7rem;vertical-align:middle}
+.dot-ok{color:#2f7d54}
+.dot-hinweis{color:#a7761f}
+.dot-alarm,.dot-stale{color:#a7402c}
+.betrieb-headline{margin:.2rem 0 .6rem;font-size:1.15rem}
+.betrieb-ok{color:#1f5b3a}
+.betrieb-hinweis{color:#6d4d13}
+.betrieb-alarm,.betrieb-stale{color:#8a3320}
+.betrieb-list{display:grid;grid-template-columns:1fr auto;gap:.2rem .8rem;margin:.3rem 0 1rem}
+.betrieb-list dt{color:#4b554e}
+.betrieb-list dd{margin:0;font-variant-numeric:tabular-nums;text-align:right}

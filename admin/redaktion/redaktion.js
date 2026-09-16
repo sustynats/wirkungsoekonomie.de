@@ -1,5 +1,6 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
 import {approvalStates,orderedReviews,requestWithReview,requestPresentation,supplementBrief,supplementable} from './review-state.js';
+import {betriebsAnzeige} from './betrieb-view.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
 const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
@@ -41,11 +42,32 @@ function setSupplement(request){
 function startSupplement(request){setSupplement(request);show('compose');$('brief').focus();}
 function show(view){
   previewGeneration++;$('request-preview').hidden=true;$('request-list').hidden=false;
-  for(const id of ['compose','requests','receipt','approvals'])$(id).hidden=id!==view;
-  for(const [id,active] of [['tab-new',view==='compose'],['tab-list',view==='requests'],['tab-approval',view==='approvals']]){$(id).classList.toggle('selected',active);$(id).setAttribute('aria-pressed',String(active));}
+  for(const id of ['compose','requests','receipt','approvals','betrieb'])$(id).hidden=id!==view;
+  for(const [id,active] of [['tab-new',view==='compose'],['tab-list',view==='requests'],['tab-approval',view==='approvals'],['tab-status',view==='betrieb']]){$(id).classList.toggle('selected',active);$(id).setAttribute('aria-pressed',String(active));}
   note('');window.scrollTo({top:0,behavior:'smooth'});
 }
 $('tab-new').addEventListener('click',()=>show('compose'));
+$('tab-status').addEventListener('click',()=>{show('betrieb');void loadStatus();});
+
+// Reine Auskunft: abrufen, anzeigen, nichts entscheiden.
+async function loadStatus(){
+  const body=$('betrieb-body');body.textContent='';
+  body.append(element('p','Befund wird geholt …','muted'));
+  let view;
+  try{ const data=await api('/status'); view=betriebsAnzeige(data?.status||null); }
+  catch(error){ body.textContent=''; body.append(element('p',error.message||'Der Befund ist gerade nicht abrufbar.','error')); $('betrieb-dot').textContent=''; return; }
+  body.textContent='';
+  $('betrieb-dot').textContent=view.dot;
+  $('betrieb-dot').className='dot dot-'+view.tone;
+  const head=element('h2',view.headline);head.className='betrieb-headline betrieb-'+view.tone;body.append(head);
+  for(const line of view.lines)body.append(element('p',line));
+  for(const group of view.groups){
+    body.append(element('h3',group.title));
+    const list=element('dl',undefined,'betrieb-list');
+    for(const [label,value] of group.items){list.append(element('dt',label));list.append(element('dd',value));}
+    body.append(list);
+  }
+}
 $('tab-list').addEventListener('click',()=>{show('requests');load().catch(error=>note(error.message,true));});
 $('refresh').addEventListener('click',()=>load().catch(error=>note(error.message,true)));
 $('view-request').addEventListener('click',()=>{show('requests');load().catch(error=>note(error.message,true));});
