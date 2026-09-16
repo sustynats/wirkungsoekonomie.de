@@ -2,8 +2,1656 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T08:37:24.519Z",
+  "updated_at": "2026-09-16T08:52:21.569Z",
   "stories": [
+    {
+      "story_id": "wt-2a30b5d43da541f7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-f573398fb84a19ec-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-faa9413881eee67a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-7c20bc68764aad21-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hohe-kraftstoffpreise-unionsfraktionschef-frei-will-entlastungs-massnahmen-bis-1-oktober-a541f7",
+      "title": "Laut Unionsfraktionschef Frei sollen Sofortmaßnahmen gegen hohe Kraftstoffpreise bis 1. Oktober kommen",
+      "source_summary": "Der Deutschlandfunk berichtet, dass Unionsfraktionschef Thorsten Frei wegen stark gestiegener Kraftstoffpreise Entlastungen für Verbraucher binnen weniger Wochen fordert. Als Ziel nennt Frei Sofortmaßnahmen zum 1. Oktober.\n\nAls mögliche Instrumente werden eine erneute Senkung der Energiesteuer nach dem Vorbild des Tankrabatts vom Mai und Juni sowie eine Senkung der Mehrwertsteuer auf Kraftstoffe von 19 auf 7 Prozent genannt. Frei weist Forderungen nach einer Übergewinnsteuer zurück. Ob eine Maßnahme beschlossen wird, bleibt offen.",
+      "summary": "Thorsten Frei fordert laut Deutschlandfunk wegen hoher Kraftstoffpreise Sofortmaßnahmen bis 1. Oktober. Vorgeschlagen werden niedrigere Energie- oder Mehrwertsteuern; eine Umsetzung ist nicht belegt.",
+      "detail_summary": "Unionsfraktionschef Thorsten Frei fordert laut Deutschlandfunk Entlastungen für Verbraucher wegen stark gestiegener Kraftstoffpreise. Als Ziel nennt er Sofortmaßnahmen zum 1. Oktober und bringt niedrigere Energie- oder Mehrwertsteuern ins Gespräch. Die Forderung könnte Haushalte kurzfristig entlasten, zugleich aber den Verbrauch fossiler Kraftstoffe stützen. Ob der Staat eine Maßnahme beschließt, wer tatsächlich profitieren würde und wie stark Preise sinken könnten, ist offen. Der Deutschlandfunk berichtet außerdem, dass Frei eine schnelle Entspannung der Lage am Persischen Golf nicht erwartet.",
+      "why_relevant": "Die Forderung berührt kurzfristige Haushaltsbelastungen, staatliche Einnahmen, fossilen Kraftstoffverbrauch und die politische Debatte über die Verteilung von Entlastungen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Frei fordert wegen hoher Kraftstoffpreise Sofortmaßnahmen bis 1. Oktober und nennt steuerliche Entlastungen als mögliche Instrumente.",
+        "evaluation_target": {
+          "label": "Politische Forderung nach steuerlicher Kraftstoffentlastung",
+          "type": "proposal"
+        },
+        "baseline": "Hohe Kraftstoffpreise ohne belegte neue Entlastungsmaßnahme; der bestehende politische Zustand ist eine Forderungs- und Debattenlage.",
+        "counterfactual": "Ohne eine beschlossene Entlastung würden die im Bericht beschriebenen hohen Kraftstoffpreise zunächst ohne diese staatliche Preismaßnahme fortbestehen; alternative Instrumente bleiben offen.",
+        "reference_frame": [
+          "Finanzielle Belastbarkeit von Haushalten",
+          "Energie- und Klimaverträglichkeit",
+          "Demokratische Rechenschaft und politische Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine mögliche Steuerentlastung könnte Haushalte mit Kraftstoffausgaben kurzfristig erreichen. Verteilung, tatsächliche Preisweitergabe und Gegenfinanzierung sind offen.",
+            "planet": "Ein niedrigerer Kraftstoffpreis könnte Nachfrage und fossile Bindung stützen. Eine belastbare Emissionswirkung ist nicht gemessen.",
+            "democracy": "Die Forderung macht einen Verteilungskonflikt zwischen schneller Entlastung und alternativer Finanzierung öffentlich. Eine institutionelle Entscheidung oder Einschränkung demokratischer Korrektur ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Politische Forderung nach steuerlicher Entlastung und möglicher Preisveränderung für Kraftstoff.",
+          "second_order": "Bedingte Folgen für Haushaltsbudgets, Verbrauchsanreize, Staatseinnahmen und politische Prioritätensetzung.",
+          "third_order": "Mögliche Pfadabhängigkeit bei fossiler Mobilität und längerfristige Verteilungskonflikte, sofern eine Entlastung beschlossen und wiederholt wird.",
+          "enablement": [
+            "enables_budget_control"
+          ],
+          "counter_evidence": [
+            "Es ist kein Beschluss, keine Umsetzung und kein gemessener Preis- oder Verbrauchseffekt belegt.",
+            "Eine gezielte statt allgemeine Entlastung könnte Verteilungs- und Umweltnebenwirkungen begrenzen.",
+            "Alternative Instrumente wie eine Übergewinnsteuer werden in der Quelle als politische Kontroverse erwähnt, aber nicht bewertet."
+          ],
+          "source_independence": "Es liegt eine journalistische Deutschlandfunk-Quelle vor. Die Quelle beruht auf Aussagen von Thorsten Frei; eine unabhängige Bestätigung oder Primärdokumentation ist nicht geliefert.",
+          "institutional_status": "Es handelt sich um eine politische Forderung und mögliche Instrumente, nicht um geltendes Recht, einen Beschluss oder eine laufende Umsetzung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt nur die Forderung. Der mögliche positive Haushaltseffekt ist an Beschluss, Zielgenauigkeit und Preisweitergabe gebunden; Messwerte fehlen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Der stärkste menschliche Pfad ist eine mögliche kurzfristige Entlastung von Haushalten, aber nur bei Beschluss und Preisweitergabe. Verteilung und Nebenwirkungen bleiben unsicher.",
+            "primary_paths": [
+              {
+                "label": "Kurzfristige Entlastung von Haushalten mit Kraftstoffausgaben durch eine mögliche Steuersenkung",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine beschlossene Senkung von Energie- oder Mehrwertsteuer könnte den Endpreis von Kraftstoff verringern, sofern sie weitergegeben wird.",
+                "recipients": [
+                  "haushalte",
+                  "verbraucherinnen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Wirkung reicht von keiner praktischen Weitergabe bis zu einer spürbaren, aber zeitlich begrenzten Entlastung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoffpreise können viele Haushalte mit Mobilitätsausgaben betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Preisentlastung ist nicht beziffert und von der Weitergabe abhängig.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Maßnahme ist nicht genannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine Steueränderung wäre grundsätzlich politisch reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Haushalte mit notwendiger Autonutzung könnten besonders preissensibel sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Haushaltsbudgets, aber keine belegte Strukturänderung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze für Menschen ist aus der Quelle nicht konkret belegt.",
+                  "reference_frame": "Finanzielle Belastbarkeit von Haushalten",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Es müsste eine konkrete Maßnahme beschlossen, umgesetzt und im Verkaufspreis weitergegeben werden.",
+                "reference_space": "Verbraucherhaushalte in Deutschland mit Kraftstoffausgaben",
+                "time_horizon": "Kurzfristig ab einer möglichen Umsetzung bis zur Dauer der Entlastung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Steuerentlastung wird beschlossen und zumindest teilweise an Verbraucher weitergegeben.",
+                "source_support": "Die Quelle belegt die Forderung und die genannten Instrumente, nicht deren Umsetzung oder Preiswirkung.",
+                "limitations": "Keine Daten zu Haushaltsgruppen, Weitergabe, Gegenfinanzierung oder tatsächlicher Entlastung.",
+                "first_order": "Mögliche Senkung des Endpreises von Kraftstoff.",
+                "second_order": "Mögliche kurzfristige Entlastung von Haushalten mit Auto oder anderen Kraftstoffausgaben.",
+                "third_order": "Mögliche Veränderung der politischen Akzeptanz weiterer Energiepreismaßnahmen; Eintritt und Dauer sind offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten bestätigen eine eingetretene Entlastung; der Pfad bleibt eine bedingte Modellierung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Mögliche ungleiche Verteilung einer allgemeinen Kraftstoffentlastung",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Eine allgemeine Steuersenkung könnte Haushalte mit höherem Kraftstoffverbrauch absolut stärker entlasten als Haushalte mit geringem oder keinem Verbrauch.",
+                "recipients": [
+                  "haushalte",
+                  "verbraucherinnen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Umsetzung entfällt der Pfad; bei allgemeiner Ausgestaltung bleibt die mögliche Ungleichheit begrenzt, aber plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft nur Haushalte mit unterschiedlicher Kraftstoffnutzung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die relative Belastung ist ohne Ausgestaltung nicht bestimmbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der möglichen Steueränderung ist unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die Verteilungswirkung wäre politisch reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Haushalte mit unvermeidbarer Mobilität könnten anders betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf eine einzelne Entlastungsregel begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer sozialen Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Faire Verteilung staatlicher Entlastungen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Maßnahme müsste allgemein statt zielgenau ausgestaltet werden und tatsächlich umgesetzt werden.",
+                "reference_space": "Verteilung der möglichen Entlastung zwischen Haushalten",
+                "time_horizon": "Während einer möglichen Entlastungsperiode",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Verbrauch ist ungleich verteilt und die Entlastung wird nicht zielgenau begrenzt.",
+                "source_support": "Die Quelle nennt eine mögliche Steuersenkung, enthält aber keine Verteilungsdaten oder Ausgestaltung.",
+                "limitations": "Keine Angaben zu Haushaltseinkommen, Mobilitätszwängen, Verbrauch oder Rückverteilung.",
+                "first_order": "Unterschiedliche absolute Entlastungsbeträge je nach Kraftstoffverbrauch.",
+                "second_order": "Mögliche Verschiebung der Verteilungswirkung zugunsten höherer Verbrauchsgruppen.",
+                "third_order": "Mögliche politische Kontroverse über Zielgenauigkeit und Gegenfinanzierung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Verteilungsdaten erlauben eine Quantifizierung; die Ungleichheitsrichtung bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein möglicher kurzfristiger Entlastungspfad steht einem ähnlich tragfähigen, aber ausstattungsabhängigen Verteilungspfad gegenüber. Eine Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Kurzfristige Entlastung von Haushalten mit Kraftstoffausgaben durch eine mögliche Steuersenkung",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kurzfristige Entlastung von Haushalten mit Kraftstoffausgaben durch eine mögliche Steuersenkung",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Emissions-, Verbrauchs- oder Klimadaten. Der negative Umweltpfad ist deshalb nur als bedingte Hypothese modellierbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Eine mögliche allgemeine Kraftstoffentlastung könnte fossile Preissignale abschwächen. Ohne Umsetzung, Dauer und Verbrauchsdaten bleibt die Umweltwirkung offen und begrenzt modellierbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Stützung des fossilen Kraftstoffverbrauchs durch eine Preisentlastung",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine steuerliche Senkung könnte den Endpreis von Kraftstoff reduzieren und damit den Preisanreiz zum Einsparen fossiler Energie abschwächen.",
+                "recipients": [
+                  "natur",
+                  "haushalte",
+                  "unternehmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der Pfad entfällt ohne Umsetzung; bei einer länger anhaltenden allgemeinen Entlastung könnte er materieller werden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoffnutzung ist in Verkehr und Wirtschaft breit verankert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die mögliche Preisänderung ist nicht beziffert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer Entlastung ist nicht genannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisliche Anreize wären grundsätzlich politisch reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökosysteme könnten zusätzliche Belastungen nicht unmittelbar ausgleichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad könnte fossile Nachfrage und Energiepolitik verbinden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze oder Messüberschreitung ist nicht belegt.",
+                  "reference_frame": "Minderung fossiler Energieabhängigkeit und ökologischer Belastungen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Eine steuerliche Entlastung müsste beschlossen, umgesetzt und an den Endpreis weitergegeben werden.",
+                "reference_space": "Fossiler Kraftstoffverbrauch und damit verbundene Umweltbelastungen in Deutschland",
+                "time_horizon": "Während der möglichen Entlastung und bei wiederholter Anwendung darüber hinaus",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen beeinflussen Nachfrage und die Entlastung wird nicht vollständig durch andere Faktoren überlagert.",
+                "source_support": "Die Quelle nennt Steuersenkungen als Vorschläge; sie belegt keine Nachfrage- oder Emissionswirkung.",
+                "limitations": "Keine Daten zu Verbrauch, Emissionen, Dauer, Preisweitergabe oder Ausweichreaktionen.",
+                "first_order": "Möglicherweise niedrigerer Kraftstoffpreis.",
+                "second_order": "Möglicherweise schwächerer Anreiz zu Kraftstoffersparnis und Umstieg.",
+                "third_order": "Bei wiederholter Anwendung mögliche Verlängerung fossiler Pfadabhängigkeit.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Umwelt- oder Verbrauchsdaten bestätigen den Pfad; er bleibt eine bedingte Modellierung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Verlagerung zwischen Preisentlastung und anderen Energiepolitiken",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Eine politische Priorisierung kurzfristiger Kraftstoffentlastung könnte Aufmerksamkeit und Budgetspielraum von anderen Energieinstrumenten verschieben, ohne dass die Richtung belegt ist.",
+                "recipients": [
+                  "natur",
+                  "staat",
+                  "unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist ohne Beschluss und ohne belegte Ressourcenkonkurrenz sehr unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad betrifft energiepolitische Entscheidungen, nicht unmittelbar alle Menschen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Prioritätenverschiebung ist weder quantifiziert noch belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen politischen Verschiebung ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Prioritäten könnten grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine konkrete besondere Umweltvulnerabilität ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Energiepolitik verbinden, bleibt aber hypothetisch.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird durch die Quelle nicht beschrieben.",
+                  "reference_frame": "Energiepolitische Transformationsfähigkeit",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Eine Maßnahme müsste beschlossen werden und mit anderen Energieentscheidungen um knappe politische oder finanzielle Ressourcen konkurrieren.",
+                "reference_space": "Energiepolitische Prioritäten in Deutschland",
+                "time_horizon": "Mittelfristig nach einer möglichen Entscheidung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Aufmerksamkeit oder Haushaltsmittel sind begrenzt und werden tatsächlich umgeschichtet.",
+                "source_support": "Die Quelle nennt die Steueroptionen und die Kontroverse um eine Übergewinnsteuer, belegt aber keine Budget- oder Prioritätenverschiebung.",
+                "limitations": "Keine Angaben zu Haushaltsplanung, Alternativmaßnahmen oder institutionellen Prioritäten.",
+                "first_order": "Mögliche politische Fokussierung auf schnelle Preisentlastung.",
+                "second_order": "Mögliche Verzögerung oder Verdrängung anderer Energieinstrumente.",
+                "third_order": "Mögliche Verstärkung fossiler Pfadabhängigkeit, falls dies wiederholt geschieht.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferten Quellen enthalten keine Informationen zu Budgetverschiebungen oder verdrängten Umweltmaßnahmen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Stützung des fossilen Kraftstoffverbrauchs durch eine Preisentlastung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Stützung des fossilen Kraftstoffverbrauchs durch eine Preisentlastung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine öffentlich zugeschriebene politische Forderung und einen benannten Zieltermin, aber keine Entscheidung oder beobachtete demokratische Wirkung.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Die Forderung kann politische Rechenschaft über Entlastungsinstrumente und Finanzierung ermöglichen. Eine Polarisierungswirkung ist möglich, aber mangels Resonanzdaten nicht nachgewiesen.",
+            "primary_paths": [
+              {
+                "label": "Öffentliche politische Auseinandersetzung über Kosten, Finanzierung und Prioritäten der Energieentlastung",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Forderung und die genannten Alternativen machen politische Verantwortlichkeit und einen Verteilungskonflikt sichtbar.",
+                "recipients": [
+                  "haushalte",
+                  "staat",
+                  "unternehmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Debattenwirkung kann von bloßer Forderungswiederholung bis zu nachvollziehbarer politischer Rechenschaft reichen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Forderung richtet sich an Verbraucher und politische Entscheidungsträger.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Konkrete Instrumente und ein Zieltermin erhöhen die politische Prüfbarkeit.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Debatte über den Zieltermin hinaus ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Politische Forderungen und Prioritäten sind grundsätzlich revidierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Von hohen Preisen betroffene Haushalte könnten politisch besonders auf Entlastungsdebatten angewiesen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Rechenschaft und Prioritätensetzung, nicht belegte Institutionenänderung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Beschädigung ist nicht belegt.",
+                  "reference_frame": "Demokratische Rechenschaft und nachvollziehbare Prioritätensetzung",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Forderung müsste öffentlich diskutiert und in einen nachvollziehbaren Entscheidungsprozess überführt werden.",
+                "reference_space": "Öffentliche und parlamentarische Debatte über Energiepreise und Entlastungsfinanzierung",
+                "time_horizon": "Kurzfristig bis zum genannten Zieltermin 1. Oktober",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Öffentliche Forderungen werden von politischen Institutionen und Medien als überprüfbare Handlungsoptionen behandelt.",
+                "source_support": "Die Quelle berichtet über Frei, seine Instrumentenvorschläge und seine Zurückweisung einer Übergewinnsteuer.",
+                "limitations": "Keine Angaben zu parlamentarischer Beratung, Gegenpositionen außerhalb der genannten Kontroverse oder öffentlicher Reaktion.",
+                "first_order": "Eine konkrete Forderung mit Zieltermin wird politisch sichtbar.",
+                "second_order": "Mögliche Rechenschaft über Instrument, Finanzierung und Verteilung der Entlastung.",
+                "third_order": "Mögliche Stärkung oder Schwächung des Vertrauens in politische Problemlösung, abhängig von Transparenz und Umsetzung.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle zeigt einen Debattenbeitrag, aber keine gemessene Veränderung von Vertrauen, Beteiligung oder Korrekturfähigkeit.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Polarisierung durch konkurrierende Entlastungs- und Finanzierungsframes",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Die Gegenüberstellung von Steuersenkung und Übergewinnsteuer könnte den politischen Konflikt auf zugespitzte Finanzierungsalternativen verengen.",
+                "recipients": [
+                  "haushalte",
+                  "staat",
+                  "unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne wiederholte Verbreitung und Publikumsdaten bleibt das Risiko gering bis offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt eine einzelne journalistische Darstellung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine zugespitzte Wirkung ist nicht gemessen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Diskurswirkung ist zeitlich unbestimmt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Diskursive Schwerpunktsetzungen können korrigiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere demokratische Vulnerabilität ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad berührt politische Entscheidungsstrukturen nur indirekt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete demokratische Schutzgrenze wird durch die Quelle als verletzt belegt.",
+                  "reference_frame": "Offene und korrigierbare politische Willensbildung",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Gegenüberstellung müsste wiederholt und ohne transparente Prüfung von Kosten und Verteilung verbreitet werden.",
+                "reference_space": "Politischer Diskurs über Energiepreismaßnahmen",
+                "time_horizon": "Während der öffentlichen Debatte bis zu einer möglichen Entscheidung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Zugespitzte Alternativen prägen die Debatte stärker als Sachinformationen zu Ausgestaltung und Folgen.",
+                "source_support": "Die Quelle belegt, dass Frei eine Übergewinnsteuer zurückweist und andere Instrumente nennt; eine Polarisierungswirkung ist nicht beobachtet.",
+                "limitations": "Keine Daten zu Resonanz, Wiederholung, Publikumsreaktionen oder Vertrauensveränderungen.",
+                "first_order": "Mögliche stärkere Sichtbarkeit eines politischen Gegensatzes.",
+                "second_order": "Mögliche Vereinfachung der Debatte über Finanzierung und Zielgenauigkeit.",
+                "third_order": "Mögliche Belastung demokratischer Korrekturfähigkeit, falls Alternativen nicht mehr sachlich geprüft werden.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellen messen Resonanz, Polarisierung oder Vertrauensänderung; der Pfad bleibt eine begrenzte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Öffentliche politische Auseinandersetzung über Kosten, Finanzierung und Prioritäten der Energieentlastung",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Öffentliche politische Auseinandersetzung über Kosten, Finanzierung und Prioritäten der Energieentlastung",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T08:54:37.311Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle belegt die Forderung von Thorsten Frei, das Ziel 1. Oktober und die genannten steuerlichen Möglichkeiten."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt nur die Forderung. Der mögliche positive Haushaltseffekt ist an Beschluss, Zielgenauigkeit und Preisweitergabe gebunden; Messwerte fehlen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Der stärkste menschliche Pfad ist eine mögliche kurzfristige Entlastung von Haushalten, aber nur bei Beschluss und Preisweitergabe. Verteilung und Nebenwirkungen bleiben unsicher.",
+          "primary_paths": [
+            {
+              "label": "Kurzfristige Entlastung von Haushalten mit Kraftstoffausgaben durch eine mögliche Steuersenkung",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine beschlossene Senkung von Energie- oder Mehrwertsteuer könnte den Endpreis von Kraftstoff verringern, sofern sie weitergegeben wird.",
+              "recipients": [
+                "haushalte",
+                "verbraucherinnen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Wirkung reicht von keiner praktischen Weitergabe bis zu einer spürbaren, aber zeitlich begrenzten Entlastung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoffpreise können viele Haushalte mit Mobilitätsausgaben betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Preisentlastung ist nicht beziffert und von der Weitergabe abhängig.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Maßnahme ist nicht genannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine Steueränderung wäre grundsätzlich politisch reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Haushalte mit notwendiger Autonutzung könnten besonders preissensibel sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Haushaltsbudgets, aber keine belegte Strukturänderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze für Menschen ist aus der Quelle nicht konkret belegt.",
+                "reference_frame": "Finanzielle Belastbarkeit von Haushalten",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Es müsste eine konkrete Maßnahme beschlossen, umgesetzt und im Verkaufspreis weitergegeben werden.",
+              "reference_space": "Verbraucherhaushalte in Deutschland mit Kraftstoffausgaben",
+              "time_horizon": "Kurzfristig ab einer möglichen Umsetzung bis zur Dauer der Entlastung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Steuerentlastung wird beschlossen und zumindest teilweise an Verbraucher weitergegeben.",
+              "source_support": "Die Quelle belegt die Forderung und die genannten Instrumente, nicht deren Umsetzung oder Preiswirkung.",
+              "limitations": "Keine Daten zu Haushaltsgruppen, Weitergabe, Gegenfinanzierung oder tatsächlicher Entlastung.",
+              "first_order": "Mögliche Senkung des Endpreises von Kraftstoff.",
+              "second_order": "Mögliche kurzfristige Entlastung von Haushalten mit Auto oder anderen Kraftstoffausgaben.",
+              "third_order": "Mögliche Veränderung der politischen Akzeptanz weiterer Energiepreismaßnahmen; Eintritt und Dauer sind offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten bestätigen eine eingetretene Entlastung; der Pfad bleibt eine bedingte Modellierung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Mögliche ungleiche Verteilung einer allgemeinen Kraftstoffentlastung",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Eine allgemeine Steuersenkung könnte Haushalte mit höherem Kraftstoffverbrauch absolut stärker entlasten als Haushalte mit geringem oder keinem Verbrauch.",
+              "recipients": [
+                "haushalte",
+                "verbraucherinnen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Umsetzung entfällt der Pfad; bei allgemeiner Ausgestaltung bleibt die mögliche Ungleichheit begrenzt, aber plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft nur Haushalte mit unterschiedlicher Kraftstoffnutzung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die relative Belastung ist ohne Ausgestaltung nicht bestimmbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der möglichen Steueränderung ist unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die Verteilungswirkung wäre politisch reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Haushalte mit unvermeidbarer Mobilität könnten anders betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf eine einzelne Entlastungsregel begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer sozialen Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Faire Verteilung staatlicher Entlastungen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Maßnahme müsste allgemein statt zielgenau ausgestaltet werden und tatsächlich umgesetzt werden.",
+              "reference_space": "Verteilung der möglichen Entlastung zwischen Haushalten",
+              "time_horizon": "Während einer möglichen Entlastungsperiode",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Verbrauch ist ungleich verteilt und die Entlastung wird nicht zielgenau begrenzt.",
+              "source_support": "Die Quelle nennt eine mögliche Steuersenkung, enthält aber keine Verteilungsdaten oder Ausgestaltung.",
+              "limitations": "Keine Angaben zu Haushaltseinkommen, Mobilitätszwängen, Verbrauch oder Rückverteilung.",
+              "first_order": "Unterschiedliche absolute Entlastungsbeträge je nach Kraftstoffverbrauch.",
+              "second_order": "Mögliche Verschiebung der Verteilungswirkung zugunsten höherer Verbrauchsgruppen.",
+              "third_order": "Mögliche politische Kontroverse über Zielgenauigkeit und Gegenfinanzierung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Verteilungsdaten erlauben eine Quantifizierung; die Ungleichheitsrichtung bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein möglicher kurzfristiger Entlastungspfad steht einem ähnlich tragfähigen, aber ausstattungsabhängigen Verteilungspfad gegenüber. Eine Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kurzfristige Entlastung von Haushalten mit Kraftstoffausgaben durch eine mögliche Steuersenkung",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Kurzfristige Entlastung von Haushalten mit Kraftstoffausgaben durch eine mögliche Steuersenkung",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Emissions-, Verbrauchs- oder Klimadaten. Der negative Umweltpfad ist deshalb nur als bedingte Hypothese modellierbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Eine mögliche allgemeine Kraftstoffentlastung könnte fossile Preissignale abschwächen. Ohne Umsetzung, Dauer und Verbrauchsdaten bleibt die Umweltwirkung offen und begrenzt modellierbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Stützung des fossilen Kraftstoffverbrauchs durch eine Preisentlastung",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine steuerliche Senkung könnte den Endpreis von Kraftstoff reduzieren und damit den Preisanreiz zum Einsparen fossiler Energie abschwächen.",
+              "recipients": [
+                "natur",
+                "haushalte",
+                "unternehmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der Pfad entfällt ohne Umsetzung; bei einer länger anhaltenden allgemeinen Entlastung könnte er materieller werden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoffnutzung ist in Verkehr und Wirtschaft breit verankert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die mögliche Preisänderung ist nicht beziffert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer Entlastung ist nicht genannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisliche Anreize wären grundsätzlich politisch reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökosysteme könnten zusätzliche Belastungen nicht unmittelbar ausgleichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad könnte fossile Nachfrage und Energiepolitik verbinden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze oder Messüberschreitung ist nicht belegt.",
+                "reference_frame": "Minderung fossiler Energieabhängigkeit und ökologischer Belastungen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Eine steuerliche Entlastung müsste beschlossen, umgesetzt und an den Endpreis weitergegeben werden.",
+              "reference_space": "Fossiler Kraftstoffverbrauch und damit verbundene Umweltbelastungen in Deutschland",
+              "time_horizon": "Während der möglichen Entlastung und bei wiederholter Anwendung darüber hinaus",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen beeinflussen Nachfrage und die Entlastung wird nicht vollständig durch andere Faktoren überlagert.",
+              "source_support": "Die Quelle nennt Steuersenkungen als Vorschläge; sie belegt keine Nachfrage- oder Emissionswirkung.",
+              "limitations": "Keine Daten zu Verbrauch, Emissionen, Dauer, Preisweitergabe oder Ausweichreaktionen.",
+              "first_order": "Möglicherweise niedrigerer Kraftstoffpreis.",
+              "second_order": "Möglicherweise schwächerer Anreiz zu Kraftstoffersparnis und Umstieg.",
+              "third_order": "Bei wiederholter Anwendung mögliche Verlängerung fossiler Pfadabhängigkeit.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Umwelt- oder Verbrauchsdaten bestätigen den Pfad; er bleibt eine bedingte Modellierung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Verlagerung zwischen Preisentlastung und anderen Energiepolitiken",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Eine politische Priorisierung kurzfristiger Kraftstoffentlastung könnte Aufmerksamkeit und Budgetspielraum von anderen Energieinstrumenten verschieben, ohne dass die Richtung belegt ist.",
+              "recipients": [
+                "natur",
+                "staat",
+                "unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist ohne Beschluss und ohne belegte Ressourcenkonkurrenz sehr unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad betrifft energiepolitische Entscheidungen, nicht unmittelbar alle Menschen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Prioritätenverschiebung ist weder quantifiziert noch belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen politischen Verschiebung ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Prioritäten könnten grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine konkrete besondere Umweltvulnerabilität ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Energiepolitik verbinden, bleibt aber hypothetisch.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird durch die Quelle nicht beschrieben.",
+                "reference_frame": "Energiepolitische Transformationsfähigkeit",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Eine Maßnahme müsste beschlossen werden und mit anderen Energieentscheidungen um knappe politische oder finanzielle Ressourcen konkurrieren.",
+              "reference_space": "Energiepolitische Prioritäten in Deutschland",
+              "time_horizon": "Mittelfristig nach einer möglichen Entscheidung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Aufmerksamkeit oder Haushaltsmittel sind begrenzt und werden tatsächlich umgeschichtet.",
+              "source_support": "Die Quelle nennt die Steueroptionen und die Kontroverse um eine Übergewinnsteuer, belegt aber keine Budget- oder Prioritätenverschiebung.",
+              "limitations": "Keine Angaben zu Haushaltsplanung, Alternativmaßnahmen oder institutionellen Prioritäten.",
+              "first_order": "Mögliche politische Fokussierung auf schnelle Preisentlastung.",
+              "second_order": "Mögliche Verzögerung oder Verdrängung anderer Energieinstrumente.",
+              "third_order": "Mögliche Verstärkung fossiler Pfadabhängigkeit, falls dies wiederholt geschieht.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferten Quellen enthalten keine Informationen zu Budgetverschiebungen oder verdrängten Umweltmaßnahmen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Stützung des fossilen Kraftstoffverbrauchs durch eine Preisentlastung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Stützung des fossilen Kraftstoffverbrauchs durch eine Preisentlastung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine öffentlich zugeschriebene politische Forderung und einen benannten Zieltermin, aber keine Entscheidung oder beobachtete demokratische Wirkung.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Die Forderung kann politische Rechenschaft über Entlastungsinstrumente und Finanzierung ermöglichen. Eine Polarisierungswirkung ist möglich, aber mangels Resonanzdaten nicht nachgewiesen.",
+          "primary_paths": [
+            {
+              "label": "Öffentliche politische Auseinandersetzung über Kosten, Finanzierung und Prioritäten der Energieentlastung",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Forderung und die genannten Alternativen machen politische Verantwortlichkeit und einen Verteilungskonflikt sichtbar.",
+              "recipients": [
+                "haushalte",
+                "staat",
+                "unternehmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Debattenwirkung kann von bloßer Forderungswiederholung bis zu nachvollziehbarer politischer Rechenschaft reichen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Forderung richtet sich an Verbraucher und politische Entscheidungsträger.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Konkrete Instrumente und ein Zieltermin erhöhen die politische Prüfbarkeit.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Debatte über den Zieltermin hinaus ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Politische Forderungen und Prioritäten sind grundsätzlich revidierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Von hohen Preisen betroffene Haushalte könnten politisch besonders auf Entlastungsdebatten angewiesen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Rechenschaft und Prioritätensetzung, nicht belegte Institutionenänderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Beschädigung ist nicht belegt.",
+                "reference_frame": "Demokratische Rechenschaft und nachvollziehbare Prioritätensetzung",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Forderung müsste öffentlich diskutiert und in einen nachvollziehbaren Entscheidungsprozess überführt werden.",
+              "reference_space": "Öffentliche und parlamentarische Debatte über Energiepreise und Entlastungsfinanzierung",
+              "time_horizon": "Kurzfristig bis zum genannten Zieltermin 1. Oktober",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Öffentliche Forderungen werden von politischen Institutionen und Medien als überprüfbare Handlungsoptionen behandelt.",
+              "source_support": "Die Quelle berichtet über Frei, seine Instrumentenvorschläge und seine Zurückweisung einer Übergewinnsteuer.",
+              "limitations": "Keine Angaben zu parlamentarischer Beratung, Gegenpositionen außerhalb der genannten Kontroverse oder öffentlicher Reaktion.",
+              "first_order": "Eine konkrete Forderung mit Zieltermin wird politisch sichtbar.",
+              "second_order": "Mögliche Rechenschaft über Instrument, Finanzierung und Verteilung der Entlastung.",
+              "third_order": "Mögliche Stärkung oder Schwächung des Vertrauens in politische Problemlösung, abhängig von Transparenz und Umsetzung.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle zeigt einen Debattenbeitrag, aber keine gemessene Veränderung von Vertrauen, Beteiligung oder Korrekturfähigkeit.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Polarisierung durch konkurrierende Entlastungs- und Finanzierungsframes",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Die Gegenüberstellung von Steuersenkung und Übergewinnsteuer könnte den politischen Konflikt auf zugespitzte Finanzierungsalternativen verengen.",
+              "recipients": [
+                "haushalte",
+                "staat",
+                "unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne wiederholte Verbreitung und Publikumsdaten bleibt das Risiko gering bis offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt eine einzelne journalistische Darstellung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine zugespitzte Wirkung ist nicht gemessen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Diskurswirkung ist zeitlich unbestimmt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Diskursive Schwerpunktsetzungen können korrigiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere demokratische Vulnerabilität ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad berührt politische Entscheidungsstrukturen nur indirekt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete demokratische Schutzgrenze wird durch die Quelle als verletzt belegt.",
+                "reference_frame": "Offene und korrigierbare politische Willensbildung",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Gegenüberstellung müsste wiederholt und ohne transparente Prüfung von Kosten und Verteilung verbreitet werden.",
+              "reference_space": "Politischer Diskurs über Energiepreismaßnahmen",
+              "time_horizon": "Während der öffentlichen Debatte bis zu einer möglichen Entscheidung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Zugespitzte Alternativen prägen die Debatte stärker als Sachinformationen zu Ausgestaltung und Folgen.",
+              "source_support": "Die Quelle belegt, dass Frei eine Übergewinnsteuer zurückweist und andere Instrumente nennt; eine Polarisierungswirkung ist nicht beobachtet.",
+              "limitations": "Keine Daten zu Resonanz, Wiederholung, Publikumsreaktionen oder Vertrauensveränderungen.",
+              "first_order": "Mögliche stärkere Sichtbarkeit eines politischen Gegensatzes.",
+              "second_order": "Mögliche Vereinfachung der Debatte über Finanzierung und Zielgenauigkeit.",
+              "third_order": "Mögliche Belastung demokratischer Korrekturfähigkeit, falls Alternativen nicht mehr sachlich geprüft werden.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellen messen Resonanz, Polarisierung oder Vertrauensänderung; der Pfad bleibt eine begrenzte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Öffentliche politische Auseinandersetzung über Kosten, Finanzierung und Prioritäten der Energieentlastung",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Öffentliche politische Auseinandersetzung über Kosten, Finanzierung und Prioritäten der Energieentlastung",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T08:52:21.569Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T07:56:03.000Z",
+      "last_updated": "2026-09-16T08:54:37.304Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-a59e13622d515e24c0e3",
+      "case_file": null,
+      "source_published_at": "2026-09-16T07:56:03.000Z",
+      "published_at": "2026-09-16T08:54:37.304Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob bis 1. Oktober eine konkrete Entlastungsmaßnahme beschlossen oder umgesetzt wird, bleibt zu prüfen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-10-01",
+          "measurable_indicator": "Beschluss oder Beginn einer konkreten Maßnahme",
+          "expected_by_evidence_hash": "59e6fd71c1ac01ddcf9a8dd5416e12a239ac63391affcf7620e97aa1b792726c",
+          "followup_id": "followup-06d220db22ac2a33",
+          "announced_at": "2026-09-16T07:56:03.000Z",
+          "follow_up_date": "2026-10-01T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/unionsfraktionschef-frei-will-entlastungs-massnahmen-bis-1-oktober-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T07:56:03.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e698a78dcdecf191",
       "title_image": {
