@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-16T17:18:18.635Z",
+  "last_successful_run": "2026-09-16T17:24:52.826Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -83473,6 +83473,10 @@
     }
   },
   "pending_story_ids": [
+    "wt-30b0609cdaeb1aa6",
+    "wt-1cb303c142c834c1",
+    "wt-2ac3c6408f18eb66",
+    "wt-6e58e7f00c23df31",
     "wt-4fe74829f9063791",
     "wt-50e17e4048044b29",
     "wt-8d45b7addd95df8f",
@@ -84125,14 +84129,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-2ac3c6408f18eb66",
-    "wt-6e58e7f00c23df31",
-    "wt-1cb303c142c834c1",
-    "wt-30b0609cdaeb1aa6"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-16T17:18:18.635Z",
+  "last_attempted_run": "2026-09-16T17:24:52.826Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1539,
@@ -87022,6 +87022,11 @@
       "input_hash": "678ddba654c3c64887bd1e32",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-16T17:18:18.635Z"
+    },
+    "wt-2ac3c6408f18eb66": {
+      "input_hash": "678ddba654c3c64887bd1e32",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-16T17:24:52.826Z"
     }
   }
 }
