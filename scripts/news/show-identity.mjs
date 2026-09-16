@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {escape} from './editorial-markdown.mjs';
+import {assetSize} from './asset-size.mjs';
 
 const config = JSON.parse(fs.readFileSync(new URL('../../data/news/show-visual-identities.json', import.meta.url)));
 // Ein freigegebenes Logo darf nicht an einer Schreibweise scheitern. Die
@@ -58,11 +59,27 @@ export function officialShowName(value, { shows = config.shows } = {}) {
   return matches.length === 1 ? matches[0].show_name : null;
 }
 
+const assetSizes = new Map();
+export function showAssetSize(asset) {
+  if (assetSizes.has(asset)) return assetSizes.get(asset);
+  let size = null;
+  try { size = assetSize(new URL('../..' + asset, import.meta.url)); } catch { size = null; }
+  assetSizes.set(asset, size);
+  return size;
+}
+
 export function renderShowIdentity(media, options) {
   if (!media?.show) return '';
   const show = showIdentity(media, options);
   const accent = /^#[a-f0-9]{6}$/i.test(show?.stable_accent || '') ? show.stable_accent : '#32634e';
+  // Die Massangaben kommen aus der Datei: pauschale 800x800 liessen den Browser
+  // fuer jedes Logo ein Quadrat reservieren, obwohl vier von sechs im Verhaeltnis
+  // 16:9 oder 1,63:1 liegen - beim Laden ruckte die Karte zurecht. Und die
+  // Freigabe erlaubt ausschliesslich proportionale Skalierung, kein Beschnitt:
+  // ein falsches Verhaeltnis im Markup ist deshalb nicht nur unruhig.
+  const size = show?.usable_asset ? showAssetSize(show.usable_asset) : null;
+  const dimensions = size ? ` width="${size.width}" height="${size.height}"` : '';
   return `<figure class="news-show-identity" style="--show-accent:${accent}">${show?.usable_asset
-    ? `<img src="${escape(show.usable_asset)}" alt="Offizielles Logo: ${escape(show.show_name)}" width="800" height="800" loading="lazy" decoding="async"><figcaption>${escape(show.credit)}</figcaption>`
+    ? `<img src="${escape(show.usable_asset)}" alt="Offizielles Logo: ${escape(show.show_name)}"${dimensions} loading="lazy" decoding="async"><figcaption>${escape(show.credit)}</figcaption>`
     : `<div class="news-show-identity__fallback"><span aria-hidden="true">◌</span><strong>${escape(media.show)}</strong></div>`}</figure>`;
 }
