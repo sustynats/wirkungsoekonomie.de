@@ -370,7 +370,16 @@ export function independentOrigins(story) {
 }
 
 export function requiredPublicationDepth(story) {
-  if (!story || typeof story !== 'object' || story.impact_reassessment) return null;
+  if (!story || typeof story !== 'object') return null;
+  // Eine Neubewertung behaelt die Tiefe der bestehenden Akte („wie bisher" im
+  // Vertrag). Bisher gab der Server dafuer gar keine Vorgabe: das Modell wählte
+  // „deepened", weil die Meldung veroeffentlicht ist, und scheiterte dann an der
+  // strengeren Laengenregel (16.09., Lauf 13:05: 74 Woerter, gespeicherte Tiefe
+  // initial, also gueltig gewesen). Den gespeicherten Wert kennt der Server.
+  if (story.impact_reassessment) {
+    const stored = story.existing_story?.analysis?.publication_depth;
+    return stored === 'initial' || stored === 'deepened' ? stored : null;
+  }
   const published = story.existing_story?.published;
   return typeof published === 'boolean' ? (published ? 'deepened' : 'initial') : null;
 }
