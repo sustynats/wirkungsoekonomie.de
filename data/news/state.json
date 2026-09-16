@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-16T16:52:45.151Z",
+  "last_successful_run": "2026-09-16T17:07:25.058Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -83313,8 +83313,13 @@
   },
   "pending_story_ids": [
     "wt-4fe74829f9063791",
+    "wt-50e17e4048044b29",
+    "wt-8d45b7addd95df8f",
+    "wt-2fe1aac48f4a373a",
+    "wt-a8afee4f1864a5d7",
     "wt-4a021e793366bcc5",
     "wt-26ad3df8a22e6fc6",
+    "wt-d11770b85822351b",
     "wt-fc7cdfdac7032c78",
     "wt-314bba24584d4907",
     "wt-782f81fef7f7ae4b",
@@ -83410,7 +83415,6 @@
     "wt-91f11c9983ce6db0",
     "wt-57691fb161c73033",
     "wt-e8baa3638ffa07f5",
-    "wt-8d45b7addd95df8f",
     "wt-c452a8839e03d965",
     "wt-5d56ede3944983f8",
     "wt-46a131d3a1f884e3",
@@ -83733,7 +83737,6 @@
     "wt-80dda39f9693b70b",
     "wt-e5bc829b9c018478",
     "wt-4f6d1731b49f2637",
-    "wt-054286034e19643f",
     "wt-db9d5b50489c2d4e",
     "wt-b73826ca385754b2",
     "wt-4c3fef87dc59fd91",
@@ -83750,7 +83753,6 @@
     "wt-ca7515289dccf7ea",
     "wt-4e5686433439282b",
     "wt-eb01fef7d56d8561",
-    "wt-561f6b367c1a4381",
     "wt-c1126d74a7638b08",
     "wt-21ddfb3b4170ccc4",
     "wt-b36c82dd6dcb53e8",
@@ -83967,14 +83969,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-d11770b85822351b",
-    "wt-a8afee4f1864a5d7",
-    "wt-2fe1aac48f4a373a",
-    "wt-50e17e4048044b29"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-16T16:52:45.151Z",
+  "last_attempted_run": "2026-09-16T17:07:25.058Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1539,
@@ -86180,21 +86178,6 @@
       "version": "2026-09-09.1",
       "checked_at": "2026-09-09T19:06:39.083Z"
     },
-    "wt-d038e53a4e7896dd": {
-      "input_hash": "08bcedc1f8559c8d7ac2f854",
-      "version": "2026-09-09.1",
-      "checked_at": "2026-09-09T16:58:51.834Z"
-    },
-    "wt-386cbdf14bc0f104": {
-      "input_hash": "890ccc8cb97c3f99226abe54",
-      "version": "2026-09-09.1",
-      "checked_at": "2026-09-09T16:58:51.834Z"
-    },
-    "wt-f7ca671a25c5071a": {
-      "input_hash": "1eb9fcdccd9f91d0b75f882c",
-      "version": "2026-09-09.1",
-      "checked_at": "2026-09-09T16:58:51.834Z"
-    },
     "wt-026d11d680622587": {
       "input_hash": "fdb132878b898211afd56fad",
       "version": "2026-09-09.1",
@@ -86889,6 +86872,11 @@
       "input_hash": "b2eb51cd168af889fc63bfc6",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-16T16:52:45.151Z"
+    },
+    "wt-50e17e4048044b29": {
+      "input_hash": "cef32bf9862c07c9ec615e2d",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-16T17:07:25.058Z"
     }
   }
 }
