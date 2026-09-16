@@ -21,7 +21,7 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-4';
+export const WORKER_VERSION = 'redaktionsworker-5';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
@@ -155,12 +155,74 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
 // the stale window the GitHub worker adopts it instead of skipping the request
 // on every run. A recent claim is still respected.
 export const STALE_CLAIM_HOURS = 6;
+// Formales gleicht die Software an, nicht die Redaktion. Ein fertiger Entwurf
+// darf nicht an einer Darstellungsregel verloren gehen (16.09.: ein Text begann
+// mit einer eigenen Hauptüberschrift und wurde deshalb verworfen, obwohl Inhalt,
+// Quellen und Prüfvermerke vollständig waren). Angeglichen wird ausschließlich
+// Mechanisches: Überschriftenebene, bekannte Schlüsselnamen, ein aus der URL
+// ablesbarer Verlagsname. Inhalt, Aussagen, Prüfvermerke und Quellen bleiben
+// unangetastet; jede Angleichung wird protokolliert.
+const HOST_PUBLISHER = { 'apnews.com': 'The Associated Press', 'www.theguardian.com': 'The Guardian', 'www.zdf.de': 'ZDF', 'www.tagesschau.de': 'tagesschau / ARD', 'www.abc.net.au': 'ABC News' };
+export const MEDIA_ALIASES = { episode: 'episode_title', episode_name: 'episode_title', title: 'episode_title',
+  published_at: 'original_release_date', release_date: 'original_release_date', date: 'original_release_date', air_date: 'original_release_date',
+  url: 'original_url', page: 'original_url', original_page: 'original_url', episode_url: 'original_url', show_name: 'show' };
+
+export function normalizeEditorialPreview(preview, { links = [], repairs = [] } = {}) {
+  if (!preview || typeof preview !== 'object') return preview;
+  if (typeof preview.markdown === 'string') {
+    const title = String(preview.title || '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const lines = preview.markdown.replace(/^\uFEFF/, '').split('\n');
+    const kept = [];
+    for (const line of lines) {
+      const heading = /^#\s+(.*)$/.exec(line);
+      if (!heading) { kept.push(line); continue; }
+      const text = heading[1].replace(/\s+/g, ' ').trim();
+      // Eine Hauptüberschrift, die den Titel wiederholt, ist überflüssig; jede
+      // andere wird zur Abschnittsüberschrift, weil der Titel getrennt steht.
+      if (text.toLowerCase() === title) { repairs.push('markdown:doppelter Titel entfernt'); continue; }
+      repairs.push('markdown:Hauptüberschrift zur Abschnittsebene');
+      kept.push(`## ${text}`);
+    }
+    const next = kept.join('\n').replace(/^\n+/, '').replace(/\s+$/, '');
+    if (next !== preview.markdown) preview.markdown = next;
+  }
+  for (const source of Array.isArray(preview.sources) ? preview.sources : []) {
+    if (!source || typeof source !== 'object') continue;
+    if (!String(source.publisher || '').trim() && /^https:\/\//.test(source.url || '')) {
+      try {
+        const host = new URL(source.url).hostname;
+        source.publisher = HOST_PUBLISHER[host] || host.replace(/^www\./, '');
+        repairs.push(`sources:publisher aus der Adresse (${source.publisher})`);
+      } catch { /* ungültige Adresse bleibt für die Prüfung */ }
+    }
+  }
+  const media = preview.source_media;
+  if (media && typeof media === 'object' && ['listened', 'watched'].includes(preview.format)) {
+    for (const [alias, key] of Object.entries(MEDIA_ALIASES)) {
+      if (media[key] === undefined && media[alias] !== undefined) { media[key] = media[alias]; repairs.push(`source_media:${alias} als ${key} gelesen`); }
+    }
+    const date = String(media.original_release_date || '');
+    if (/^\d{4}-\d{2}-\d{2}T/.test(date)) { media.original_release_date = date.slice(0, 10); repairs.push('source_media:Datum auf den Tag gekürzt'); }
+    if (!/^https:\/\//.test(media.original_url || '')) {
+      const page = links.find((url) => /^https:\/\//.test(url) && !/\.(mp3|mp4|m4a|aac|vtt|xml|txt|json)(\?|$)/i.test(url));
+      if (page) { media.original_url = page; repairs.push('source_media:Sendungsseite aus dem Auftrag ergänzt'); }
+    }
+  }
+  return preview;
+}
+
 export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false' } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
   if (!job || job.ack || job.accepted || job.status !== 'queued') return { job_id: id, status: 'already_processed' };
   const attempt = await session.store.observation(`github-attempt:${id}`);
-  if (attempt?.provider_called) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered' };
+  // Eine an unseren eigenen Formvorgaben gescheiterte Ablage ist kein
+  // redaktionelles Ergebnis: Der Entwurf war da, die Ausgabe wurde verworfen
+  // (16.09.: EDITORIAL_MARKDOWN_DUPLICATE_TITLE, der Vertrag nannte die Regel
+  // nicht). Nach einer Vertragskorrektur, erkennbar an der höheren
+  // Workerversion, darf genau ein weiterer Versuch folgen.
+  const contractFixed = attempt?.status === 'validation_failed' && attempt.version !== WORKER_VERSION && !attempt.retried_after_contract_fix;
+  if (attempt?.provider_called && !contractFixed) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered' };
   const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
   if (await session.transport.metadata(outputPath) || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) return { job_id: id, status: 'already_delivered' };
   const name = `${id}.input.json`, sourcePath = bridgePath('00_INBOX', name), claimPath = bridgePath('10_CLAIMED', name);
@@ -187,24 +249,26 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     catch { return { job_id: id, status: 'claim_unknown' }; }
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', at: now() });
   }
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
   let result;
   try { result = await draft(request); }
   catch (error) {
     const status = error.providerNotCalled ? 'provider_unavailable' : 'output_unusable';
     const message = [String(error.message), error.detail].filter(Boolean).join(' · ').slice(0, 320);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now() });
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
     return { job_id: id, status, error: message, cost_usd: error.cost ?? 0 };
   }
   if (rawOutputDir) {
     try { fs.mkdirSync(rawOutputDir, { recursive: true }); fs.writeFileSync(path.join(rawOutputDir, `${now().replace(/[:.]/g, '-')}-${id}.json`), JSON.stringify({ job_id: id, model: result.model, usage: result.usage, answer: result.answer }, null, 2)); } catch { /* best effort */ }
   }
   const output = { ...result.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
+  const previewRepairs = [];
+  if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
   let validated;
   try { validated = validateApiOutput(output, packet, now()); }
   catch (error) {
-    const message = [String(error.message), ...(error.issues || [])].join('\n').slice(0, 2000);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage: result.usage, cost_usd: result.cost, at: now() });
+    const message = [String(error.message), ...(error.issues || []), ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : [])].join('\n').slice(0, 2000);
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage: result.usage, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
     return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: result.cost };
   }
   const latest = await session.store.get(id);
@@ -212,9 +276,9 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   if (await session.transport.metadata(outputPath)) return { job_id: id, status: 'already_delivered', cost_usd: result.cost };
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
-  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now() });
-  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
+  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
 
 export async function runRedaktionsworker({ session = null, root = ROOT, knowledge = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), env = process.env, laneWait = null, fetchImpl = fetch,

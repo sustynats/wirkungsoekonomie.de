@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts } from '../../scripts/news/redaktionsworker.mjs';
+import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 
 const owner = '123456789012345678';
@@ -286,4 +286,74 @@ test('kein Test und kein Skript enthält einen absoluten Pfad dieser Maschine', 
   };
   for (const dir of ['tests/news', 'tests/ops', 'scripts/news', '.github/workflows']) walk(dir);
   assert.deepEqual(findings, [], `absolute Pfade gefunden: ${findings.slice(0, 5).join(' | ')}`);
+});
+
+test('eine an unseren Formvorgaben gescheiterte Ablage darf nach der Vertragskorrektur genau einmal nachlaufen', async () => {
+  const { WORKER_VERSION } = await import('../../scripts/news/redaktionsworker.mjs');
+  const { EDITORIAL_REQUEST_CONTRACT_V4 } = await import('../../scripts/news/bridge/intake-processing.mjs');
+  assert.ok(EDITORIAL_REQUEST_CONTRACT_V4.instructions.some((line) => line.includes('beginnt NICHT mit einer Hauptüberschrift')), 'der Vertrag nennt die Formatregel');
+  const attemptKey = `github-attempt:${jobId}`;
+  const setup = (attempt) => {
+    const session = fakeSession([queuedJob()]);
+    session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+    session.observations.set(attemptKey, attempt);
+    return session;
+  };
+  const draft = async () => ({ output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}' });
+  const row = { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' };
+  // Alte Version, an der Form gescheitert: ein Nachlauf.
+  const fixed = setup({ job_id: jobId, provider_called: true, status: 'validation_failed', version: 'redaktionsworker-4', error: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE' });
+  const retried = await processEditorialRequest(fixed, row, { knowledge, draft, now });
+  assert.equal(retried.status, 'output_delivered');
+  assert.equal(fixed.observations.get(attemptKey).retried_after_contract_fix, true);
+  assert.equal(fixed.observations.get(attemptKey).version, WORKER_VERSION);
+  // Derselbe Nachlauf passiert nicht zweimal.
+  const again = await processEditorialRequest(setup({ ...fixed.observations.get(attemptKey) }), row, { knowledge, draft: async () => assert.fail('kein zweiter Nachlauf'), now });
+  assert.equal(again.status, 'attempt_exhausted');
+  // Gleiche Version bleibt verbraucht, und eine inhaltliche Rückfrage ebenso.
+  for (const attempt of [{ provider_called: true, status: 'validation_failed', version: WORKER_VERSION },
+    { provider_called: true, status: 'output_delivered', version: 'redaktionsworker-4' }]) {
+    const done = await processEditorialRequest(setup(attempt), row, { knowledge, draft: async () => assert.fail('kein Nachlauf'), now });
+    assert.equal(done.status, 'attempt_exhausted');
+  }
+});
+
+test('Formales gleicht die Software an: der fertige Entwurf geht nicht an einer Darstellungsregel verloren', async () => {
+  const session = fakeSession([queuedJob()]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const raw = preview();
+  raw.markdown = `# ${raw.title}\n\n${raw.markdown}\n\n# Nachtrag\n\nEin weiterer belegter Abschnitt zum Test der Angleichung.`;
+  raw.sources = [{ url: 'https://apnews.com/article/x', title: 'Female athletes accuse' }];
+  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' },
+    { knowledge, draft: async () => ({ output: { preview: raw }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}' }), now });
+  assert.equal(result.status, 'output_delivered', 'der Entwurf wird abgelegt statt verworfen');
+  assert.deepEqual(result.preview_repairs, ['markdown:doppelter Titel entfernt', 'markdown:Hauptüberschrift zur Abschnittsebene', 'sources:publisher aus der Adresse (The Associated Press)']);
+  const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  assert.equal(delivered.preview.markdown.startsWith('## '), true);
+  assert.equal(/^# /m.test(delivered.preview.markdown), false, 'keine Hauptüberschrift mehr im Text');
+  assert.ok(delivered.preview.markdown.includes('## Nachtrag'), 'die zweite Überschrift bleibt als Abschnitt');
+  assert.equal(delivered.preview.sources[0].publisher, 'The Associated Press');
+  assert.equal(JSON.parse(session.files.get(bridgePath('95_LOGS', `processor-github-${jobId}.json`))).preview_repairs.length, 3);
+});
+
+test('die Angleichung berührt nur Mechanisches und erfindet nichts', () => {
+  const repairs = [];
+  const clean = { format: 'opinion_analysis', title: 'Ein Titel', markdown: '## Abschnitt\n\nText.', sources: [{ url: 'https://beispiel.de/a', title: 'A', publisher: 'Beispiel' }] };
+  const before = structuredClone(clean);
+  normalizeEditorialPreview(clean, { links: [], repairs });
+  assert.deepEqual(clean, before); assert.deepEqual(repairs, [], 'ein sauberer Entwurf wird nicht angefasst');
+  const media = { format: 'watched', title: 'Nachgesehen: X', markdown: '## A\n\nText.', sources: [{ url: 'https://www.zdf.de/a', title: 'A', publisher: 'ZDF' }],
+    source_media: { show_name: 'Markus Lanz', episode: 'Folge vom 15. September', published_at: '2026-09-15T20:45:00.000Z' } };
+  const mediaRepairs = [];
+  normalizeEditorialPreview(media, { links: ['https://cdn.example/lanz.mp4', 'https://www.zdf.de/video/talk/lanz-99'], repairs: mediaRepairs });
+  assert.equal(media.source_media.show, 'Markus Lanz'); assert.equal(media.source_media.episode_title, 'Folge vom 15. September');
+  assert.equal(media.source_media.original_release_date, '2026-09-15');
+  assert.equal(media.source_media.original_url, 'https://www.zdf.de/video/talk/lanz-99', 'die Mediendatei ist nicht die Sendungsseite');
+  assert.equal(mediaRepairs.length, 5);
+  const missing = { format: 'opinion_analysis', title: 'T', markdown: '## A\n\nText.', sources: [{ url: 'nichts', title: 'A' }], checks: {} };
+  const missingRepairs = [];
+  normalizeEditorialPreview(missing, { links: [], repairs: missingRepairs });
+  assert.equal(missing.sources[0].publisher, undefined, 'ohne gültige Adresse wird kein Verlag erfunden');
+  assert.deepEqual(missing.checks, {}, 'Prüfvermerke werden nie gesetzt');
+  assert.deepEqual(missingRepairs, []);
 });
