@@ -5,6 +5,7 @@ import { showIdentity, renderShowIdentity, officialShowName, canonicalShowName, 
 import { normalizeEditorialPreview } from '../../scripts/news/redaktionsworker.mjs';
 
 const config = JSON.parse(fs.readFileSync(new URL('../../data/news/show-visual-identities.json', import.meta.url)));
+const css = fs.readFileSync(new URL('../../assets/css/news.css', import.meta.url), 'utf8');
 const cleared = config.shows.filter((show) => show.rights_status === 'PERMISSION_GRANTED' && show.asset_delivery_status === 'DELIVERED');
 
 // 16.09.: Die Ausgabe zu Folge #262 schrieb „Lanz & Precht", die ZDF-Freigabe
@@ -83,4 +84,38 @@ test('jede veroeffentlichte Ausgabe mit freigegebener Sendung zeigt ihr Logo', (
     const entry = cleared.find((show) => show.show_name === official);
     if (entry) assert.equal(showIdentity(edition.source_media)?.usable_asset, entry.asset, `${edition.slug} zeigt sein Logo`);
   }
+});
+
+// 16.09.: Jede Sendungskachel deklarierte 800x800. Tatsaechlich sind vier von
+// sechs gelieferten Logos 16:9 oder 1,63:1 - der Browser reservierte ein
+// Quadrat und rueckte beim Laden zurecht. Und die ZDF-Freigabe erlaubt
+// ausschliesslich proportionale Skalierung: ein falsches Verhaeltnis im Markup
+// ist deshalb nicht nur unruhig, es behauptet einen anderen Ausschnitt.
+test('die Massangaben im Markup stimmen mit den ausgelieferten Dateien', async () => {
+  const { assetSize } = await import('../../scripts/news/asset-size.mjs');
+  const { showAssetSize } = await import('../../scripts/news/show-identity.mjs');
+  let geprueft = 0;
+  for (const show of cleared) {
+    const real = assetSize(new URL(`../..${show.asset}`, import.meta.url));
+    assert.ok(real && real.width > 0 && real.height > 0, `${show.show_name}: Masse lesbar`);
+    assert.deepEqual(showAssetSize(show.asset), real, `${show.show_name}: gelesene Masse`);
+    const html = renderShowIdentity({ show: show.show_name });
+    assert.ok(html.includes(` width="${real.width}" height="${real.height}"`), `${show.show_name}: ${real.width}x${real.height} im Markup`);
+    geprueft += 1;
+  }
+  assert.ok(geprueft >= 5, 'alle gelieferten Logos geprueft');
+  // Mindestens ein Logo ist nicht quadratisch - sonst pruefte der Test nichts.
+  assert.ok(cleared.some((show) => { const r = assetSize(new URL(`../..${show.asset}`, import.meta.url)); return r.width !== r.height; }),
+    'es gibt nicht quadratische Logos, genau darum geht es');
+  // Eine fehlende Datei darf die Seite nicht anhalten: dann eben ohne Angabe.
+  assert.equal(showAssetSize('/assets/img/shows/gibt-es-nicht.jpg'), null);
+});
+
+// Die Freigabe verbietet Beschnitt: das Layout darf das Logo nie beschneiden.
+test('das Layout skaliert proportional und beschneidet nicht', () => {
+  const rule = css.split('\n').find((line) => line.trim().startsWith('.news-show-identity img'));
+  assert.ok(rule, 'die Bildregel ist auffindbar');
+  assert.match(rule, /object-fit:contain/, 'proportional einpassen, nie fuellen');
+  assert.match(rule, /height:auto/, 'die Hoehe folgt dem Verhaeltnis der Datei');
+  assert.ok(!/object-fit:cover/.test(css), 'kein cover auf einem freigegebenen Logo');
 });
