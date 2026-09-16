@@ -301,3 +301,7 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Der erste Takt-Lauf mit vollständigem Stand (00:05 UTC) nannte den Grund der Ablehnung: „Web Search cannot be used with JSON mode.“ Mit Suchwerkzeug wird die Anfrage jetzt ohne `text.format` gestellt; das Profil verlangt ohnehin genau ein JSON-Objekt, und die Antwort wird tolerant gelesen (`extractJsonObject`: Markdown-Zaun und Umtext werden entfernt, sonst `AI_MALFORMED_JSON`). Ohne Suchwerkzeug bleibt der JSON-Modus an. Derselbe Lauf reihte den ersten automatischen Sendungsauftrag ein (NEU DENKEN, 15.09., 79k Zeichen Transkript).
 - **Geprüft:** `tests/news/redaktionsworker.test.mjs` 10/10 (erweitert: kein `text.format` mit Werkzeug, JSON-Modus ohne Werkzeug, eingezäunte Antwort lesbar, Nicht-JSON abgelehnt).
+## 2026-09-16 - Claude: Nachlieferung mit 24k Ausgabebudget und Diagnosekopie
+
+- **Was:** Erster Lauf mit Nachlieferung (00:07 UTC): vier Meldungen, sieben Aufrufe, eine veröffentlicht (Ukraine-Meldung nach drei vergeblichen Läufen, diesmal durch die deterministischen Reparaturen). Die drei Folgeaufrufe erzeugten je rund 9k Antwort-Token plus Reasoning und liefen in die 16k-Grenze: keine Endnachricht, bezahlt, keine Wirkung, und keine Rohkopie, weil nur Antworten mit Text gesichert wurden. Grenze auf 24k, Rohkopie auch ohne Endnachricht (Status, incomplete, Ausgabetypen).
+- **Geprüft:** `tests/news/direct-operation.test.mjs` 21/21.
