@@ -199,6 +199,14 @@ export function auditSourceIntegrity(stories, registry, now = new Date().toISOSt
   };
 }
 
+// A finding that the previous committed report already listed is known, not a
+// regression of this run. Only a story id that appears now and did not appear
+// before blocks a publication cycle.
+export function newlyHeldStories(report, previous) {
+  const known = new Set((previous?.findings || []).map((finding) => finding.story_id));
+  return [...new Set((report?.findings || []).map((finding) => finding.story_id))].filter((id) => !known.has(id)).sort();
+}
+
 export function sourceIntegrityRecord(result = {}) {
   return {
     status: result.status === "verified" ? "verified" : "open",
