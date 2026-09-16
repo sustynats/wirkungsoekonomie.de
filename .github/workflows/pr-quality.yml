@@ -67,6 +67,13 @@ jobs:
       - name: Check Sachsen-Anhalt public count semantics
         run: node scripts/quality/check-sachsen-anhalt-public-count-semantics.mjs
 
+      - name: Wirkungsticker unit and security tests
+        # Bis 16.09. lief diese Suite ausschließlich im Nachrichtenlauf, wo der
+        # Testschritt jeden weiteren Schritt sperrt: ein gebrochener Test nahm
+        # damit die Produktion herunter (fünf Läufe, 50 Minuten). Sie gehört vor
+        # den Merge.
+        run: npm run news:test
+
       - name: Keep rejected Parliament reference-scene candidates fail-closed (no generation)
         run: |
           node --test tests/news/parliament-reference-scene.test.mjs tests/news/parliament-reference-scene-qa.test.mjs

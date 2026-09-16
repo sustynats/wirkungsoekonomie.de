@@ -8,6 +8,7 @@ import { semanticIssues } from './impact-publication.mjs';
 import { modelledPublicationIssues } from './impact-scope.mjs';
 import { secondPassComplete } from './impact-gate.mjs';
 import { impactAssessmentResponseFormat } from './impact-json-schema.mjs';
+import { analysisResponseFormat, schemaEligible, ANALYSIS_JSON_SCHEMA } from './analysis-json-schema.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 
@@ -323,7 +324,75 @@ export function assessmentIssues(analysis, story) {
 // each plus medium reasoning and still ran into the 16k cap (no final message,
 // paid for nothing).
 export const REPAIR_MAX_OUTPUT_TOKENS = 24000;
-export function repairAddendum(storyId, issues, previous) {
+
+// Welche Felder ein Befund betrifft. Nur diese werden nachgefordert, alles
+// andere bleibt wie geantwortet. Das Schema erzwingt auch hier Vollständigkeit;
+// Längen kann es nicht erzwingen, deshalb nennt die Nachfrage sie im Klartext.
+export const FIELD_FINDINGS = [
+  [/^AI_SOURCE_SUMMARY_|^AI_EXCESSIVE_SOURCE_SUMMARY_COPY$/, 'source_summary'],
+  [/^AI_DETAIL_SUMMARY_/, 'detail_summary'],
+  [/^AI_SUMMARY_SENTENCE_COUNT$/, 'summary'],
+  [/^CLAIM_|^EDITORIAL_HEADLINE_ATTRIBUTION_REQUIRED$/, 'event_claims'],
+  [/^EDITORIAL_HEADLINE_ATTRIBUTION_REQUIRED$|^EDITORIAL_HEADLINE_INVALID$/, 'headline'],
+  [/^FOLLOWUP_/, 'followups'],
+  [/^AI_REQUIRED_STRING:why_relevant$|^AI_EX_ANTE_CAUSAL_OVERCLAIM$/, 'impact_potential'],
+  [/^MEDIA_/, 'media_impact'],
+  [/^AI_IMPORTANCE_INVALID$/, 'importance'],
+  [/^AI_PUBLICATION_GATE_REQUIRED$/, 'publication_gate'],
+  [/^AI_UNCERTAINTY_REQUIRED$/, 'uncertainties'],
+  [/^AI_WATCH_NEXT_REQUIRED$/, 'watch_next'],
+];
+// Viele Befunde nennen ihr Feld selbst (AI_ARRAY_REQUIRED:uncertainties,
+// AI_REQUIRED_STRING:resilience). Trägt der Befund ein Feld der Analyse im
+// Namen, ist die Nachlieferung damit bestimmt und braucht keine Tabelle. Das
+// Bewertungsobjekt bleibt ausgenommen, es hat seinen eigenen Weg.
+const FIELD_SUFFIX_CODES = /^AI_(?:ARRAY_REQUIRED|EMPTY_ARRAY|REQUIRED_STRING|INVALID_STRING|STRING_TOO_LONG|LIST_TOO_LONG)$/;
+const NOT_SEPARATELY_REPAIRABLE = new Set(['story_id', 'impact_assessment', 'visuals']);
+export function fieldFromFinding(issue) {
+  const [code, field] = String(issue).split(':');
+  if (!FIELD_SUFFIX_CODES.test(code) || !field || NOT_SEPARATELY_REPAIRABLE.has(field)) return null;
+  const property = ANALYSIS_JSON_SCHEMA.properties[field];
+  return property && property.type !== 'null' ? field : null;
+}
+export function repairFields(issues = []) {
+  const fields = new Set();
+  for (const issue of issues) {
+    for (const [pattern, field] of FIELD_FINDINGS) if (pattern.test(issue)) fields.add(field);
+    const derived = fieldFromFinding(issue);
+    if (derived) fields.add(derived);
+  }
+  return [...fields];
+}
+export function fieldRepairFormat(fields, name = 'wirkungsticker_nachlieferung_1') {
+  const properties = { story_id: { type: 'string' } };
+  for (const field of fields) {
+    const property = ANALYSIS_JSON_SCHEMA.properties[field];
+    // media_impact ist im Analyse-Schema bewusst offen (type null): dafür gibt
+    // es kein erzwingbares Schema, also bleibt die Nachlieferung dort frei.
+    if (!property || property.type === 'null') return null;
+    properties[field] = property;
+  }
+  return { type: 'json_schema', name, strict: true,
+    schema: { type: 'object', additionalProperties: false, required: Object.keys(properties), properties } };
+}
+export function repairAddendum(storyId, issues, previous, fields = []) {
+  if (fields.length) {
+    const hints = {
+      source_summary: 'source_summary: 60 bis 180 Wörter bei publication_depth initial, 100 bis 180 bei deepened, zwei bis drei Absätze, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen.',
+      detail_summary: 'detail_summary: bei initial mindestens 300 Zeichen und 3 bis 7 Sätze, bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze.',
+      summary: 'summary: genau zwei Sätze.',
+      event_claims: 'event_claims: jede Zahl im Claim muss in einem zitierten evidence-Segment derselben Quelle stehen; attribution_required mit headline_claim nur, wenn headline_qualifier wörtlich im Titel steht.',
+      headline: 'headline: 10 bis 260 Zeichen; trägt ein Claim attribution_required und headline_claim, dann steht headline_qualifier wörtlich darin.',
+      followups: 'followups: claim, source_id aus den gelieferten Quellen und measurable_indicator sind Pflicht.',
+      impact_potential: 'impact_potential: Wirkungen als Möglichkeit formulieren, keine Tatsachenform für noch nicht eingetretene Folgen.',
+      media_impact: 'media_impact: vollständig nach der Medienwirkungs-Methode, public_explanation 80 bis 200 Wörter, reason, factual_core und editorial_assessment als Text, keine Absichtszuschreibung und keine Bewertung von Medienhäusern.',
+    };
+    return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber einzelne Felder bestehen die Prüfung nicht.`,
+      `Prüfbefunde: ${issues.join(', ')}.`,
+      `Liefere ausschließlich diese Felder neu: ${fields.join(', ')}. Alles andere bleibt unverändert und wird nicht erneut gesendet.`,
+      ...fields.map((field) => hints[field]).filter(Boolean),
+      'Inhalt und Aussagen bleiben gleich; korrigiere nur den beanstandeten Punkt. Keine erfundenen Zahlen, Quellen oder Zitate.'].join('\n');
+  }
   return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber impact_assessment fehlt oder besteht die deterministische Prüfung nicht.`,
     `Prüfbefunde: ${issues.join(', ')}.`,
     previous ? `Bisheriger, unvollständiger Entwurf von impact_assessment (nur als Ausgangspunkt, Befunde beheben): ${JSON.stringify(previous).slice(0, 60000)}` : 'Es lag noch kein impact_assessment vor.',
@@ -332,12 +401,13 @@ export function repairAddendum(storyId, issues, previous) {
 const sumUsage = (a, b) => !a ? b : !b ? a : { input_tokens: a.input_tokens + b.input_tokens, output_tokens: a.output_tokens + b.output_tokens,
   ...((a.cached_input_tokens ?? b.cached_input_tokens) !== undefined ? { cached_input_tokens: (a.cached_input_tokens || 0) + (b.cached_input_tokens || 0) } : {}) };
 
-async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true }) {
-  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null);
+async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true, fields = [] }) {
+  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null, fields);
   // A schema-bound answer cannot omit a key. The provider may reject the
   // schema (unknown model, unsupported keyword); then exactly one further try
   // in plain JSON mode follows, which is the previous behaviour.
-  const formats = schema ? [impactAssessmentResponseFormat(), { type: 'json_object' }] : [{ type: 'json_object' }];
+  const wanted = fields.length ? fieldRepairFormat(fields) : impactAssessmentResponseFormat();
+  const formats = schema && wanted ? [wanted, { type: 'json_object' }] : [{ type: 'json_object' }];
   let payload = null, status = 0, usedSchema = false;
   for (const [index, format] of formats.entries()) {
     const body = JSON.stringify(buildOpenAiRequest(`${prompt}\n\n${addendum}`, { model, maxOutputTokens: REPAIR_MAX_OUTPUT_TOKENS, reasoningEffort, responseFormat: format }));
@@ -357,8 +427,13 @@ async function requestAssessmentRepair({ prompt, story, analysis, issues, model,
   if (rawDir) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, schema: usedSchema, answer: answer || null, output_types: (payload?.output || []).map((item) => item?.type), story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
   let parsed = null;
   try { parsed = answer ? JSON.parse(answer) : null; } catch { parsed = null; }
-  const assessment = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id)?.impact_assessment || parsed?.analyses?.[0]?.impact_assessment || parsed?.impact_assessment
-    || (parsed?.dimensions && parsed?.version ? parsed : null);
+  const body = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id) || parsed?.analyses?.[0] || parsed;
+  if (fields.length) {
+    const delivered = {};
+    for (const field of fields) if (body && body[field] !== undefined) delivered[field] = body[field];
+    return { usage, fields: delivered, assessment: null, answerChars: (answer || '').length, status, schema: usedSchema };
+  }
+  const assessment = body?.impact_assessment || (parsed?.dimensions && parsed?.version ? parsed : null);
   return { usage, assessment: assessment && typeof assessment === 'object' ? assessment : null, answerChars: (answer || '').length, status, schema: usedSchema };
 }
 
@@ -369,10 +444,18 @@ export async function callOpenAiDirect(stories, options = {}) {
   const apiKey = options.apiKey || process.env.OPENAI_API_KEY;
   if (!apiKey) throw Object.assign(new Error('OPENAI_API_KEY_MISSING'), { requestAttempts: 0, providerNotCalled: true, localRefusal: true });
   const model = options.model || newsModel();
-  const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api' });
-  const body = JSON.stringify(buildOpenAiRequest(prompt, { model,
+  // Erzwungenes Antwortschema, wo es möglich ist: dann kann kein Pflichtfeld
+  // fehlen. Bei lokal erkanntem Medienanlass bleibt der Aufruf frei, weil
+  // media_impact dort ein offenes Objekt ist. Lehnt der Anbieter das Schema ab,
+  // folgt genau ein Versuch im einfachen JSON-Modus, also das alte Verhalten.
+  const wantSchema = options.schema !== false && process.env.WOEK_NEWS_ANALYSIS_SCHEMA !== 'false' && !options.prompt && schemaEligible(stories);
+  const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api', ...(wantSchema ? { includeVisuals: false } : {}) });
+  const formats = wantSchema ? [analysisResponseFormat(), { type: 'json_object' }] : [{ type: 'json_object' }];
+  const bodyFor = (format) => JSON.stringify(buildOpenAiRequest(prompt, { model, responseFormat: format,
     maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 24000),
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' }));
+  let formatIndex = 0;
+  let body = bodyFor(formats[formatIndex]);
   // A transport failure without any completed model output is not a paid
   // attempt. Two transport tries at most; never a third provider call.
   const transportAttempts = Math.max(1, Math.min(2, Number(options.attempts || 2)));
@@ -388,6 +471,9 @@ export async function callOpenAiDirect(stories, options = {}) {
       payload = await response.json().catch(() => null);
       if (response.ok) break;
       if (response.status === 401 || response.status === 403) throw Object.assign(new Error('AI_PROVIDER_AUTH_FAILED'), { requestAttempts: attempts, providerNotCalled: attempts === 1 });
+      // Ein abgelehntes Schema erzeugt keine Antwort und ist kein bezahlter
+      // Versuch: derselbe Versuch läuft ohne Schemazwang weiter.
+      if (response.status === 400 && formatIndex < formats.length - 1) { formatIndex += 1; body = bodyFor(formats[formatIndex]); attempt -= 1; continue; }
       if (attempt < transportAttempts && retryable(response.status)) { await (options.retryDelayImpl || sleep)(attempt * 15000); continue; }
       throw Object.assign(new Error(`AI_PROVIDER_ERROR:${response.status}`), { requestAttempts: attempts });
     } catch (error) {
@@ -418,8 +504,17 @@ export async function callOpenAiDirect(stories, options = {}) {
     if (payload?.status === 'incomplete') error.incompleteReason = sanitizeFeedText(payload.incomplete_details?.reason || 'unknown', 80);
     throw error;
   }
-  const result = decodeWoekAiResponse({ ok: true, answer, provider: 'OpenAI Responses API', model: reportedModel,
+  // Mit Schema ist die Analyse selbst die Wurzel; der Decoder erwartet analyses.
+  let decodable = answer;
+  if (formats[formatIndex].type === 'json_schema') {
+    try {
+      const parsed = JSON.parse(answer);
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && !Array.isArray(parsed.analyses)) decodable = JSON.stringify({ analyses: [parsed] });
+    } catch { /* der Decoder meldet die unbrauchbare Antwort */ }
+  }
+  const result = decodeWoekAiResponse({ ok: true, answer: decodable, provider: 'OpenAI Responses API', model: reportedModel,
     mode: TRANSPORT_VERSION, usage, sources: [] }, prompt, attempts);
+  result.analysis_schema = formats[formatIndex].type === 'json_schema';
   const storyFor = (analysis) => stories.find((story) => story?.story_id === analysis?.story_id) || (stories.length === 1 ? stories[0] : null);
   result.analyses = result.analyses.map((analysis) => normalizeAnalysisOutput(analysis, storyFor(analysis)));
   result.repair_calls = 0;
@@ -428,10 +523,15 @@ export async function callOpenAiDirect(stories, options = {}) {
       const story = storyFor(analysis);
       // A rejection carries no assessment by design; only a recommended story is completed.
       if (!story || result.repair_calls >= 1 || analysis?.publication_recommendation === false || analysis?.rejection) continue;
+      // Das Bewertungsobjekt hat Vorrang; nur wenn es vollständig ist, gehen die
+      // Textbefunde in die eine Nachlieferung. Ein Aufruf je Meldung bleibt die
+      // Grenze, deshalb wird nicht beides in einem Schema verschachtelt.
       const issues = assessmentIssues(analysis, story);
-      if (!issues.length) continue;
+      const textIssues = typeof options.findIssues === 'function' ? options.findIssues(analysis, story) : [];
+      const fields = issues.length ? [] : repairFields(textIssues);
+      if (!issues.length && !fields.length) continue;
       result.repair_calls += 1;
-      const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, rawDir,
+      const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues: issues.length ? issues : textIssues, fields, model, apiKey, fetchImpl, rawDir,
         schema: options.repairSchema !== false && process.env.WOEK_NEWS_REPAIR_SCHEMA !== 'false',
         timeoutMs: Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000), reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' });
       if (repaired.usage) result.reported_usage = sumUsage(result.reported_usage, repaired.usage);
@@ -441,7 +541,11 @@ export async function callOpenAiDirect(stories, options = {}) {
         normalizeAnalysisOutput(analysis, story);
         const remaining = assessmentIssues(analysis, story);
         (analysis.transport_repairs ||= []).push(`impact_assessment:nachgeliefert${repaired.schema ? ' mit Schema' : ''} (${issues.length} Befunde, danach ${remaining.length})`);
-      } else (analysis.transport_repairs ||= []).push(`impact_assessment:nachlieferung ohne Ergebnis (HTTP ${repaired.status})`);
+      } else if (repaired.fields && Object.keys(repaired.fields).length) {
+        for (const [field, value] of Object.entries(repaired.fields)) analysis[field] = value;
+        normalizeAnalysisOutput(analysis, story);
+        (analysis.transport_repairs ||= []).push(`${Object.keys(repaired.fields).join('+')}:nachgeliefert${repaired.schema ? ' mit Schema' : ''} (${textIssues.length} Befunde)`);
+      } else (analysis.transport_repairs ||= []).push(`${issues.length ? 'impact_assessment' : fields.join('+')}:nachlieferung ohne Ergebnis (HTTP ${repaired.status})`);
     }
   }
   result.rates = modelRates(reportedModel);

@@ -1608,6 +1608,9 @@ export async function runWirkungsticker(options = {}) {
         }));
         aiRequestStarted = true;
         const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
+          // Der Transport kennt das Bewertungsobjekt, nicht die Lesertextregeln.
+          // Für die eine Nachlieferung bekommt er sie als Prüffunktion mit.
+          findIssues: (analysis, story) => validateAnalysis(analysis, story, { requireDirectionAssessment: true, requireImpactAssessment: true }),
           apiUrl: process.env.WOEK_NEWS_API_URL,
           authToken: process.env.WOEK_NEWS_ANALYSIS_TOKEN,
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
