@@ -641,6 +641,13 @@ test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reich
     assert.equal(answer.publication_depth, depth);
   }
   assert.equal(requiredPublicationDepth({ existing_story: { published: true }, impact_reassessment: true }), null);
+  // Die Nachlieferung nennt dieselbe konkrete Spanne wie der erste Aufruf.
+  const deep = repairAddendum('wt-1', ['AI_SOURCE_SUMMARY_LENGTH'], null, ['source_summary'], 'deepened');
+  assert.match(deep, /120 bis 170 Wörter in genau drei Absätzen/);
+  assert.match(deep, /Zähle die Wörter/);
+  assert.match(repairAddendum('wt-1', ['AI_DETAIL_SUMMARY_LENGTH'], null, ['detail_summary'], 'initial'), /4 bis 6 Sätze, 350 bis 900 Zeichen/);
+  // Ohne bekannte Tiefe bleibt die bisherige Formulierung.
+  assert.match(repairAddendum('wt-1', ['AI_SOURCE_SUMMARY_LENGTH'], null, ['source_summary']), /60 bis 180 Wörter bei publication_depth initial/);
 
   // Beim einzelnen Aufruf steht die Vorgabe in der Anweisung, nicht im Meldungsteil.
   const bodies = [];

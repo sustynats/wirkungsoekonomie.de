@@ -424,11 +424,19 @@ export function fieldRepairFormat(fields, name = 'wirkungsticker_nachlieferung_1
   return { type: 'json_schema', name, strict: true,
     schema: { type: 'object', additionalProperties: false, required: Object.keys(properties), properties } };
 }
-export function repairAddendum(storyId, issues, previous, fields = []) {
+export function repairAddendum(storyId, issues, previous, fields = [], depth = null) {
   if (fields.length) {
+    // Dieselbe konkrete Spanne wie im ersten Aufruf. Die bedingte Formulierung
+    // („bei initial so, bei deepened so") war hier derselbe Fehler: die
+    // Nachlieferung traf die Länge dreimal nicht (Lauf 10:20 UTC).
+    const deepened = depth === 'deepened';
     const hints = {
-      source_summary: 'source_summary: 60 bis 180 Wörter bei publication_depth initial, 100 bis 180 bei deepened, zwei bis drei Absätze, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen.',
-      detail_summary: 'detail_summary: bei initial mindestens 300 Zeichen und 3 bis 7 Sätze, bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze.',
+      source_summary: depth
+        ? `source_summary: ${deepened ? '120 bis 170' : '90 bis 160'} Wörter in genau drei Absätzen, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen. Zähle die Wörter.`
+        : 'source_summary: 60 bis 180 Wörter bei publication_depth initial, 100 bis 180 bei deepened, zwei bis drei Absätze, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen.',
+      detail_summary: depth
+        ? `detail_summary: ${deepened ? '5 bis 7 Sätze, 600 bis 1100 Zeichen' : '4 bis 6 Sätze, 350 bis 900 Zeichen'}. Zähle die Sätze und Zeichen.`
+        : 'detail_summary: bei initial mindestens 300 Zeichen und 3 bis 7 Sätze, bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze.',
       summary: 'summary: genau zwei Sätze.',
       event_claims: 'event_claims: jede Zahl im Claim muss in einem zitierten evidence-Segment derselben Quelle stehen; attribution_required mit headline_claim nur, wenn headline_qualifier wörtlich im Titel steht.',
       headline: 'headline: 10 bis 260 Zeichen; trägt ein Claim attribution_required und headline_claim, dann steht headline_qualifier wörtlich darin.',
@@ -451,7 +459,7 @@ const sumUsage = (a, b) => !a ? b : !b ? a : { input_tokens: a.input_tokens + b.
   ...((a.cached_input_tokens ?? b.cached_input_tokens) !== undefined ? { cached_input_tokens: (a.cached_input_tokens || 0) + (b.cached_input_tokens || 0) } : {}) };
 
 async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true, fields = [] }) {
-  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null, fields);
+  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null, fields, requiredPublicationDepth(story));
   // A schema-bound answer cannot omit a key. The provider may reject the
   // schema (unknown model, unsupported keyword); then exactly one further try
   // in plain JSON mode follows, which is the previous behaviour.
