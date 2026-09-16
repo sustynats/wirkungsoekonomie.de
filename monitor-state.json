@@ -12,13 +12,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-15T21:50:42.565Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-16T04:04:18.609Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4b30ecb4c97982e1258cccb7",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-16T04:35:37.900Z"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1110,10 +1111,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/verteidigungsminister-pistorius-und-hegseth-schliessen-verteidigungsdeal-a8dbe2/": {
         "first_seen_at": "2026-09-16T02:50:45.761Z",
         "source_at": "2026-09-15T23:37:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schwanger-und-gesetzlich-versichert-frauenarzte-warnen-vor-problemen-ab-2027-acbf03/": {
+        "first_seen_at": "2026-09-16T04:35:37.900Z",
+        "source_at": "2026-09-16T02:50:21.000Z"
       }
     },
-    "last_new_at": "2026-09-16T02:50:45.761Z",
-    "checked_at": "2026-09-16T04:20:38.993Z",
-    "last_current_new_at": "2026-09-16T02:50:45.761Z"
+    "last_new_at": "2026-09-16T04:35:37.900Z",
+    "checked_at": "2026-09-16T04:35:37.900Z",
+    "last_current_new_at": "2026-09-16T04:35:37.900Z"
   }
 }
