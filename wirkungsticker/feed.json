@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-16T05:37:25.725Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-16T05:52:12.137Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -58,6 +58,66 @@
         "planet": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/rote-linie-saudi-arabien-wirft-huthi-miliz-angriff-auf-heilige-stadt-mekka-vor-62e039/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/rote-linie-saudi-arabien-wirft-huthi-miliz-angriff-auf-heilige-stadt-mekka-vor-62e039/",
+      "title": "Nach Angaben der von Riad angeführten Militärkoalition: Drohne nahe Mekka abgewehrt",
+      "summary": "Saudi-Arabien beschuldigt die Huthi, eine Drohne auf Mekka gerichtet zu haben. Die Huthi bestreiten das; ein unabhängiger Beleg liegt nicht vor.",
+      "date_published": "2026-09-16T04:51:25.000Z",
+      "date_modified": "2026-09-16T04:51:25.000Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 3,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/nachrichten-fur-nrw-diskussion-uber-entlastungen-c399e4/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/nachrichten-fur-nrw-diskussion-uber-entlastungen-c399e4/",
+      "title": "Laut WDR: Merz will Menschen bei Spritpreisen entlasten",
+      "summary": "Merz kündigt laut WDR Entlastungen wegen hoher Spritpreise an. Welche Maßnahme kommt, wer sie erhält und wann sie umgesetzt würde, ist offen.",
+      "date_published": "2026-09-16T04:32:07.000Z",
+      "date_modified": "2026-09-16T04:32:07.000Z",
+      "tags": [
+        "Finanzen"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "mixed",
           "status": "potential"
         },
         "democracy": {

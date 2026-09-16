@@ -316,6 +316,11 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Geprüft:** `tests/news/redaktionsworker.test.mjs` 12/12 (2 neu), Sendungs- und Workflow-Tests.
 - **Offen:** Die 16 HOLD-Aufträge der Nacht haben ihren einen Versuch verbraucht; Natalie kann sie in der App mit Kommentar zurückgeben (neue Fassung), oder wir reihen sie einmalig neu ein. Tagesdeckel für heute bereits erreicht (16); Variable `WOEK_EDITORIAL_MAX_JOBS_PER_DAY` nach dem Merge anheben.
 
+## 2026-09-16 - Claude: Worker muss vor einem Belege-HOLD suchen
+
+- **Was:** Erster Lauf mit Quellenauszügen (04:50 UTC): Die Auszüge wirken, das Modell bestätigt sie wörtlich („durch den mitgelieferten Tagesschau-Auszug belegt“), hielt aber mit `SOURCE_VERIFICATION_REQUIRED` wegen fehlender Mechanismusbelege, ohne das Suchwerkzeug ein einziges Mal zu nutzen (`web_searches: 0`). Die Werkzeugregel verlangt jetzt: Fehlen tragende Tatsachen oder Mechanismusbelege, ist gezielt danach zu suchen; ein Belege-HOLD ist erst zulässig, wenn die Suche keine belastbaren Quellen ergab, und nennt die durchgeführten Suchen.
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs`.
+- **Offen:** Ein Auftrag besteht nur aus vier Screenshots ohne Links; dort ist der HOLD sachlich richtig. Bildeingabe für solche Aufträge ist der nächste Schritt (Dropbox-Binärabruf liegt in der Bridge bereit).
 ## 2026-09-16 - Claude: Nachlieferung schemagebunden (Structured Outputs)
 
 - **Was:** Die Nachlieferung wirkt (Lauf 04:25 UTC: drei von vier Meldungen live, zweimal „nachgeliefert (1 Befund, danach 0)“), aber sie erbt die Schwäche des ersten Aufrufs: weggelassene Schlüssel (`rationale`, `balance`, ganze Dimensionen). Der Folgeaufruf ist jetzt an ein striktes JSON-Schema gebunden (`scripts/news/impact-json-schema.mjs`, 90 Objekte, alle Schlüssel Pflicht, keine Zusatzfelder, Verschachtelung 9 von erlaubten 10, Enums aus den Vertragsmodulen). Lehnt der Anbieter das Schema ab, folgt genau ein Versuch im einfachen JSON-Modus. Abschaltbar über `WOEK_NEWS_REPAIR_SCHEMA=false`.
