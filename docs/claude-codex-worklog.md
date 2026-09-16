@@ -361,3 +361,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Natalie wartet auf die Nachbesprechung zum Lanz vom 15.09. Das ZDF hat dafür zwölf Stunden nach der Sendung noch keine Untertitel veröffentlicht (die Folgen vom 08./09./10.09. haben sie). Zusätzlich griff meine Nachrück-Regel nicht: Der Vermerk der ersten Einreihung stammt aus der Zeit davor und kennt das Feld `transcript_origin` nicht; `undefined === null` ist falsch, also galt die Folge als erledigt. Ein fehlendes Feld bedeutet jetzt ebenfalls „ohne Wortlaut eingereiht“. Das Wartefenster steht über die Variable auf zwölf Stunden, damit bei ausbleibenden Untertiteln die eigene Abschrift greift und die Folge heute bearbeitet wird.
 - **Geprüft:** `tests/news/sendungs-kandidaten.test.mjs` 12/12 (neu: Altvermerk ohne Feld gilt als ohne Wortlaut).
+
+## 2026-09-16 - Claude: Nachrichten-Testsuite in die PR-Prüfung
+
+- **Was:** Die Suite `npm run news:test` lief bisher nur im Nachrichtenlauf, wo der Testschritt jeden weiteren Schritt sperrt. Ein gebrochener Test nahm damit die Produktion herunter statt einen Merge zu verhindern (16.09.: fünf Läufe, 50 Minuten). Sie läuft jetzt auch im PR-Gate (`pr-quality.yml`), also vor dem Merge.
+- **Geprüft:** Der Schritt braucht in der Werkbank rund 40 Sekunden.
+- **Lehre:** Was die Produktion sperren kann, muss vor dem Merge laufen.
