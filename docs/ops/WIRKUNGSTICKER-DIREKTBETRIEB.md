@@ -191,7 +191,11 @@ Push (`--finalize`). Eine gestörte Redaktion hält den Nachrichtenlauf nie an.
    `WOEK_EPISODE_TRANSCRIPTS_PER_DAY`, rund 0,45 USD je Sendung): ffmpeg zieht die Tonspur (mono, 16 kHz,
    32 kbit/s, unter 25 MB), `whisper-1` liefert Segmente mit Zeitmarken.
    Untertitel erscheinen einige Stunden nach der Sendung. Solange `WOEK_EPISODE_SUBTITLE_WAIT_HOURS`
-   (18) nicht abgelaufen ist, bleibt eine Folge ohne Wortlaut liegen, statt in eine Rückfrage zu laufen;
+   (18) nicht abgelaufen ist, bleibt eine Folge ohne Wortlaut liegen, statt in eine Rückfrage zu laufen.
+   Wurde eine Folge trotzdem ohne Wortlaut eingereiht (vor dieser Regel), darf sie **genau einmal** erneut
+   eingereiht werden, sobald ein Wortlaut vorliegt: der erste Auftrag ist nach der Rückfrage verbraucht.
+   Der neue Auftrag hat eine eigene Kennung, überschreibt nichts und sagt im Auftragstext, dass er der
+   zweite Versuch mit Wortlaut ist;
    der Auftrag nennt die Herkunft des Wortlauts ausdrücklich (amtliche Untertitel sind verbindlich,
    eine eigene Abschrift kann Hörfehler enthalten). Nichts davon wird veröffentlicht.
    `author_notes` bleiben leer; der Entwurf ist ein Vorschlag zur Bestätigung.
