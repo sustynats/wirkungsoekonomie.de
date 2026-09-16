@@ -604,6 +604,18 @@ export function sanitizeAnalysisMediaImpact(analysis, candidate, report = {}, no
   return analysis;
 }
 
+// The candidate check runs against the feed title; the published record carries
+// the model's headline and its own neutral source summary, and the semantic
+// comparison uses exactly those fields. A story could therefore pass as a
+// candidate and be open once published, which made the strict audit discard the
+// whole cycle afterwards (run 03:50 UTC on 16.09.). The publishable record is
+// checked again here, and an open finding holds this one story.
+export function publicationIntegrityIssues(record, registry, publishedStories, now) {
+  const result = sourceIntegrityForStory(record, registry, publishedStories, now);
+  return { record: sourceIntegrityRecord(result), issues: result.issues || [],
+    errors: result.status === 'verified' ? [] : [...new Set((result.issues || []).map((issue) => `SOURCE_INTEGRITY_OPEN:${issue.code}`))] };
+}
+
 export function publishedRecord(candidate, analysis, ai, now) {
   const existing = candidate.existing_story;
   const versionNumber = Number(existing?.current_version || 0) + 1;
@@ -1660,6 +1672,14 @@ export async function runWirkungsticker(options = {}) {
             if (!errors.length) {
               const release = releaseDeterministicImpact(nextPublished, { now: options.now ? now : new Date().toISOString(), existing: candidate.existing_story });
               if (!release.released) errors.push(...release.issues);
+            }
+            if (!errors.length) {
+              const integrity = publicationIntegrityIssues(nextPublished, registry, matchableStories, options.now ? now : new Date().toISOString());
+              nextPublished.source_integrity = integrity.record;
+              if (integrity.errors.length) {
+                errors.push(...integrity.errors);
+                report.source_integrity_holds.push({ story_id: candidate.story_id, stage: 'publication', issues: integrity.issues });
+              }
             }
           }
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, candidate, mediaInputBeforeSanitizing, directionInputBeforeNormalization) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
