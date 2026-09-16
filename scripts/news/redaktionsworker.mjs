@@ -14,12 +14,14 @@ import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { prepareApiJob, validateApiOutput } from './bridge/api-processor.mjs';
 import { editorialKnowledge } from './bridge/editorial-knowledge.mjs';
 import { OPENAI_RESPONSES_URL, finalOutputText, decodeUsage, newsModel } from './openai-transport.mjs';
-import { extractJsonObject } from './lib.mjs';
+import { extractJsonObject, extractArticleText } from './lib.mjs';
+import { acquireLane } from './bridge/acquire-lane.mjs';
+import { isIP } from 'node:net';
 import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-3';
+export const WORKER_VERSION = 'redaktionsworker-4';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
@@ -45,13 +47,50 @@ export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() 
 // the sources named in the request; the profile sentence is swapped for the
 // tool rule, everything else in the contract stays untouched.
 export const NO_TOOLS_SENTENCE = 'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.';
-export const webSearchRule = (maxSearches) => `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe). Nutze es zuerst, um die im Auftrag verlinkten Quellen tatsächlich zu lesen, danach nur für konkret fehlende tragende Tatsachen. Als Tatsachenbelege gelten mitgelieferte Textauszüge und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen. Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen. Die Antwort ist genau ein JSON-Objekt als reiner Text: kein Markdown-Zaun, kein Kommentar davor oder danach.`;
+export const webSearchRule = (maxSearches) => `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe). Nutze es zuerst, um die im Auftrag verlinkten Quellen tatsächlich zu lesen, danach nur für konkret fehlende tragende Tatsachen. Als Tatsachenbelege gelten mitgelieferte Textauszüge (unter origin.source_excerpts liegen die tatsächlich abgerufenen Texte der verlinkten Quellen, unter origin.transcript ein offizielles Transkript) und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen. Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen. Die Antwort ist genau ein JSON-Objekt als reiner Text: kein Markdown-Zaun, kein Kommentar davor oder danach.`;
 export function researchInstructions(instructions, maxSearches) {
   const rule = webSearchRule(maxSearches);
   return instructions.includes(NO_TOOLS_SENTENCE) ? instructions.replace(NO_TOOLS_SENTENCE, rule) : `${rule}\n${instructions}`;
 }
 // OpenAI bills hosted web search per call in addition to the tokens it adds.
 export const WEB_SEARCH_USD_PER_CALL = 0.01;
+
+// The news run holds the import lane for its whole duration and both workflows
+// start on the same Oracle push; instead of losing the cycle, an editorial step
+// waits for the lane (at most ten minutes).
+export const LANE_WAIT = { retries: 20, waitMs: 30000 };
+
+// The linked articles are fetched once and travel as text excerpts inside the
+// request packet (origin.source_excerpts). The profile accepts only supplied
+// excerpts as facts; the hosted search tool did not read the links reliably
+// (night of 16.09.: every draft came back SOURCE_VERIFICATION_REQUIRED).
+export const EXCERPT_MAX_CHARS = 7000, EXCERPT_MAX_LINKS = 6;
+const privateHost = (host) => /^(localhost|.*\.local|.*\.internal)$/i.test(host) || (isIP(host) && /^(10\.|127\.|0\.|169\.254\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.|::1$|fc|fd|fe80)/i.test(host));
+export async function fetchLinkExcerpt(url, fetchImpl = fetch, timeoutMs = 15000) {
+  let parsed; try { parsed = new URL(url); } catch { return null; }
+  if (parsed.protocol !== 'https:' || parsed.username || parsed.password || privateHost(parsed.hostname)) return null;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetchImpl(url, { signal: controller.signal, redirect: 'follow', headers: { Accept: 'text/html, application/xhtml+xml;q=0.9, text/plain;q=0.7, text/vtt;q=0.7', 'User-Agent': 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)' } });
+    if (!response.ok) return { url, status: response.status, excerpt: null };
+    const type = String(response.headers?.get?.('content-type') || '');
+    if (!/html|xml|text\/plain|text\/vtt/i.test(type)) return { url, status: response.status, excerpt: null, content_type: type.slice(0, 60) };
+    const body = await response.text();
+    const excerpt = /html|xml/i.test(type) ? extractArticleText(body, EXCERPT_MAX_CHARS) : body.replace(/\s+/g, ' ').trim().slice(0, EXCERPT_MAX_CHARS);
+    const title = (body.match(/<title[^>]*>([^<]{3,200})<\/title>/i) || [])[1]?.replace(/\s+/g, ' ').trim() || null;
+    return { url, status: response.status, title, excerpt: excerpt.length >= 120 ? excerpt : null, chars: excerpt.length };
+  } catch (error) { return { url, status: 0, excerpt: null, error: String(error?.name || error).slice(0, 40) }; }
+  finally { clearTimeout(timer); }
+}
+export async function collectSourceExcerpts(links = [], fetchImpl = fetch) {
+  const results = [];
+  for (const url of [...new Set(links.filter((u) => typeof u === 'string'))].slice(0, EXCERPT_MAX_LINKS)) {
+    const result = await fetchLinkExcerpt(url, fetchImpl);
+    if (result) results.push(result);
+  }
+  return results;
+}
 
 // The hosted search tool has changed names and parameters over time; a 400
 // on the first variant is retried once with the older spelling and without
@@ -108,7 +147,7 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
 // the stale window the GitHub worker adopts it instead of skipping the request
 // on every run. A recent claim is still respected.
 export const STALE_CLAIM_HOURS = 6;
-export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS } = {}) {
+export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false' } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
   if (!job || job.ack || job.accepted || job.status !== 'queued') return { job_id: id, status: 'already_processed' };
@@ -128,7 +167,10 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   }
   const packet = JSON.parse(await session.transport.read(ownClaim?.state === 'claimed' || adoptedClaim ? claimPath : sourcePath));
   if (packet.job_id !== id || packet.input_hash !== job.input.input_hash || packet.job_type !== 'editorial_request') throw new Error('BRIDGE_JOB_BINDING_MISMATCH');
-  const request = prepareApiJob(packet, knowledge);
+  // Prompt copy only: the stored packet and its input_hash stay untouched.
+  const sourceExcerpts = excerpts ? await collectSourceExcerpts(packet.request?.links || [], fetchImpl) : [];
+  const promptPacket = sourceExcerpts.length ? { ...packet, origin: { ...(packet.origin || {}), source_excerpts: sourceExcerpts } } : packet;
+  const request = prepareApiJob(promptPacket, knowledge);
   if (adoptedClaim) {
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', adopted_stale_claim_from: adoptedClaim, at: now() });
   } else if (!ownClaim) {
@@ -163,11 +205,11 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
   await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now() });
-  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now() });
+  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
 
-export async function runRedaktionsworker({ session = null, root = ROOT, knowledge = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), env = process.env,
+export async function runRedaktionsworker({ session = null, root = ROOT, knowledge = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), env = process.env, laneWait = null, fetchImpl = fetch,
   maxJobsPerRun = Number(env.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || 2), maxJobsPerDay = Number(env.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || 10) } = {}) {
   let store, transport;
   try { ({ store, transport } = session || bridgeSession(env)); }
@@ -175,7 +217,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
   const live = { store, transport };
   let acquired = false;
   try {
-    await store.acquire(now(), 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}3` });
+    await acquireLane(() => store.acquire(now(), 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}3` }), { ...LANE_WAIT, ...(laneWait || {}) });
     acquired = true;
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, results: [] }; throw error; }
   try {
@@ -192,7 +234,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     let paid = 0;
     for (const row of candidates) {
       if (paid >= budget) break;
-      const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now });
+      const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl });
       results.push(result);
       if (PAID_STATUS.has(result.status)) { paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6)); await store.observe(`github-editorial-day:${day}`, counter); }
       if (result.status === 'provider_unavailable') break;
