@@ -7,6 +7,7 @@
 // als Entwurf ab. Die Redaktionsapp holt den Entwurf ab und legt ihn Natalie
 // zur Freigabe oder Rückgabe vor. Nichts wird direkt veröffentlicht.
 import path from 'node:path';
+import { withoutProcessNotes } from './editorial-markdown.mjs';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
@@ -196,8 +197,14 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
       repairs.push('markdown:Hauptüberschrift zur Abschnittsebene');
       kept.push(`## ${text}`);
     }
-    const next = kept.join('\n').replace(/^\n+/, '').replace(/\s+$/, '');
+    const stripped = [];
+    const next = withoutProcessNotes(kept.join('\n').replace(/^\n+/, '').replace(/\s+$/, ''), { removed: stripped });
+    for (const note of stripped) repairs.push(`markdown:Freigabevermerk entfernt (${note.slice(0, 60)})`);
     if (next !== preview.markdown) preview.markdown = next;
+    // Eine Korrekturfassung muss ihren Patch mitführen: die Ablage verlangt
+    // patch.body_markdown === preview.markdown, sonst verwirft sie den Entwurf.
+    const patch = preview.editorial_revision?.patch;
+    if (patch && typeof patch.body_markdown === 'string' && patch.body_markdown !== preview.markdown) patch.body_markdown = preview.markdown;
   }
   for (const source of Array.isArray(preview.sources) ? preview.sources : []) {
     if (!source || typeof source !== 'object') continue;

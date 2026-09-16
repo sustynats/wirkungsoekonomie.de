@@ -102,6 +102,68 @@ export function knownEpisodeUrls({ editions = [], requests = [] } = {}) {
   for (const r of requests) for (const u of r?.input?.request?.links || r?.request?.links || []) add(u);
   return urls;
 }
+// Dubletten entstehen nicht nur über Adressen. Natalies eigener Auftrag kann
+// die Folge beschreiben, ohne sie zu verlinken; der Vorschlag kennt sie über
+// den Feed. Dann laufen zwei Fassungen derselben Folge durch die Redaktion
+// (16.09.: "Den Westen NEU DENKEN" - ihr Auftrag um 00:07 nannte Sendung und
+// Thema im Klartext, der Vorschlag um 08:36 die Feed-Adresse; beide gingen live).
+// Verglichen werden deshalb zusätzlich die tragenden Wörter: der Vorschlag
+// weicht, wenn ein offener Auftrag dieselbe Sendung UND dasselbe Thema nennt.
+const STOPWORDS = new Set(['der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einer', 'eines', 'und', 'oder', 'mit', 'ohne', 'von', 'vom', 'zum', 'zur', 'fuer', 'ueber', 'auf', 'aus', 'bei', 'ist', 'sind', 'wie', 'was', 'wer', 'nicht', 'auch', 'noch', 'folge', 'episode', 'teil', 'podcast', 'sendung', 'analyse', 'bitte', 'machen', 'thema', 'nachgehoert', 'nachgesehen', 'heute', 'neue', 'neuen', 'vom', 'januar', 'februar', 'maerz', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'dezember']);
+export const topicWords = (value) => new Set(String(value || '').toLowerCase()
+  .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .split(/[^a-z0-9]+/).filter((word) => word.length > 2 && !STOPWORDS.has(word)));
+
+export const compactWords = (value) => String(value || '').toLowerCase()
+  .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '');
+
+// Die Sendung gilt als genannt, wenn ihre Kennung im Auftragstext steht - auch
+// zusammengeschrieben ("neudenken") oder nur mit dem tragenden Namensteil
+// ("Lanz"). Natalie schreibt den Namen so, wie sie ihn spricht.
+export function requestNamesShow(text, show) {
+  const compact = compactWords(text), words = topicWords(text);
+  const id = String(show?.id || '');
+  if (!id) return false;
+  if (compact.includes(compactWords(id))) return true;
+  return id.split(/[^a-z0-9]+/i).some((part) => part.length >= 4 && words.has(compactWords(part)));
+}
+
+// Sendungstitel wie "Markus Lanz vom 15. September 2026" tragen kein Thema.
+// Dort entscheidet das Datum: nennt der Auftrag denselben Sendetag, ist es
+// dieselbe Folge.
+export function requestNamesDate(text, publishedAt) {
+  const date = new Date(publishedAt || '');
+  if (!Number.isFinite(date.getTime())) return false;
+  const parts = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'numeric', year: 'numeric', timeZone: 'Europe/Berlin' })
+    .formatToParts(date).reduce((all, part) => ({ ...all, [part.type]: part.value }), {});
+  const day = Number(parts.day), month = Number(parts.month);
+  const names = ['januar', 'februar', 'maerz', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'dezember'];
+  const compact = compactWords(text);
+  const pad = (n) => String(n).padStart(2, '0');
+  return [`${pad(day)}${pad(month)}`, `${day}${pad(month)}`, `${pad(day)}${month}`, `${day}${names[month - 1]}`, `${pad(day)}${names[month - 1]}`]
+    .some((needle) => compact.includes(needle));
+}
+
+export function duplicateRequestFor(episode, show, requests = []) {
+  const showCompact = compactWords(show?.id);
+  // Die Wörter der Sendung tragen kein Thema: sonst wäre jeder Auftrag zu der
+  // Sendung eine Dublette zu jeder ihrer Folgen. Auch der zusammengeschriebene
+  // Sendungsname ("neudenken") enthält seine Teile ("neu", "denken").
+  const title = [...topicWords(episode?.title)].filter((word) => !showCompact.includes(compactWords(word)));
+  for (const job of requests) {
+    const request = job?.input?.request || job?.request || {};
+    const text = [request.brief, request.title, request.topic].filter(Boolean).join(' ');
+    if (!text.trim() || !requestNamesShow(text, show)) continue;
+    const words = topicWords(text);
+    const shared = title.filter((word) => words.has(word));
+    if (requestNamesDate(text, episode?.published_at)) shared.unshift('sendetag');
+    if (shared.length) return { job_id: job?.input?.job_id || job?.job_id || null, shared };
+  }
+  return null;
+}
+
 const germanDate = (iso) => new Date(iso).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Berlin' });
 const germanDuration = (s) => s ? `${Math.round(s / 60)} Minuten` : '';
 
@@ -257,7 +319,8 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     // Liste, als die Untertitel kamen und die Mediathek-Kennung wechselte).
     const known = knownEpisodeUrls({ editions, requests: requests.filter((job) => !ownEpisodeRequest(job)) });
     const seen = (u) => u && known.has(u.replace(/[?#].*$/, '').replace(/\/$/, ''));
-    const feedErrors = [], fresh = [];
+    const ownRequests = requests.filter((job) => !ownEpisodeRequest(job));
+    const feedErrors = [], fresh = [], duplicates = [];
     for (const show of shows || loadShows(root)) {
       try {
         const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays, limit: 3 });
@@ -282,6 +345,10 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           // Die URL-Prüfung schützt vor Dubletten zu Natalies eigenen Aufträgen;
           // beim eigenen Wiederholungsversuch ist die Herkunft bekannt.
           if (!previous && (seen(episode.page) || seen(episode.media))) continue;
+          // Ein offener Auftrag Natalies zur selben Sendung und zum selben Thema
+          // zählt wie eine bekannte Adresse: ihre Fassung hat Vorrang.
+          const twin = previous ? null : duplicateRequestFor(episode, show, ownRequests);
+          if (twin) { duplicates.push({ show_id: show.id, episode: episode.title, job_id: twin.job_id, shared: twin.shared.slice(0, 4) }); continue; }
           fresh.push({ episode, show, retry: Boolean(previous) });
         }
       } catch (error) { feedErrors.push({ show_id: show.id, error: String(error.message || error).slice(0, 80) }); }
@@ -333,7 +400,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || null, transcript_cost_usd: transcript?.cost_usd || 0 });
       counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
     }
-    return { status: 'ok', day, checked_shows: (shows || loadShows(root)).length, fresh_episodes: fresh.length, feed_errors: feedErrors, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
+    return { status: 'ok', day, checked_shows: (shows || loadShows(root)).length, fresh_episodes: fresh.length, feed_errors: feedErrors, duplicate_requests: duplicates, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
 }
 
