@@ -221,10 +221,43 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
       if (page) { media.original_url = page; repairs.push('source_media:Sendungsseite aus dem Auftrag ergänzt'); }
     }
   }
+  // Ein Bild ohne belegte Nutzungserlaubnis ist kein Grund, einen fertigen Text
+  // zu verwerfen: der Vertrag erlaubt ausdrücklich visual null. Die Ablage
+  // verlangt eine Adresse auf wirkungsoekonomie.de, Alternativtext, Nachweis,
+  // gültigen Rechtestatus und die Freigabe für die Website (16.09.:
+  // EDITORIAL_PREVIEW_IMAGE_NOT_CLEARED verwarf einen vollständigen Entwurf).
+  if (preview.visual && !clearedVisual(preview.visual)) {
+    preview.visual = null;
+    repairs.push('visual:ohne belegte Freigabe entfernt');
+  }
   return preview;
 }
 
-export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false' } = {}) {
+export const VISUAL_RIGHTS = ['OWN', 'CLEARED', 'LICENSED', 'CC_LICENSED', 'PERMISSION_GRANTED'];
+export function clearedVisual(visual) {
+  if (!visual || typeof visual !== 'object') return false;
+  if (!/^https:\/\/wirkungsoekonomie\.de\//.test(visual.url || '')) return false;
+  if (!String(visual.alt || '').trim() || !String(visual.credit || '').trim()) return false;
+  if (!VISUAL_RIGHTS.includes(visual.rights_status)) return false;
+  if (visual.allow_website !== true) return false;
+  if (visual.expires_at && (!Number.isFinite(Date.parse(visual.expires_at)) || Date.parse(visual.expires_at) <= Date.now())) return false;
+  return true;
+}
+
+// Die Befunde im Klartext, ohne Codes zu erklären: das Modell sieht dieselbe
+// Prüfung, die die Ablage anwendet, und liefert dieselbe Fassung mit behobenen
+// Punkten. Neue Aussagen sind ausdrücklich nicht erwünscht.
+export function editorialRepairAddendum(issues = [], repairs = []) {
+  return ['NACHLIEFERUNG: Deine Ausgabe ist angekommen, wurde von der Ablage aber abgewiesen.',
+    `Befunde: ${issues.filter(Boolean).join(' | ')}.`,
+    ...(repairs.length ? [`Bereits automatisch angeglichen: ${repairs.join('; ')}.`] : []),
+    'Liefere dieselbe Fassung erneut als vollständiges output.json, nur mit diesen Punkten behoben.',
+    'Inhalt, Aussagen, Quellen und persönliche Passagen bleiben unverändert. Keine neuen Behauptungen, keine erfundenen Quellen oder Bilder.',
+    'Formatregeln: preview.markdown ohne Hauptüberschrift (#), Gliederung ab ##, keine HTML- oder Codeblöcke, keine Bilder im Text. Jede Quelle mit url (https), title und publisher. visual nur mit belegter Freigabe, sonst null.'].join('\n');
+}
+
+export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false',
+  repairPass = process.env.WOEK_EDITORIAL_REPAIR !== 'false' } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
   if (!job || job.ack || job.accepted || job.status !== 'queued') return { job_id: id, status: 'already_processed' };
@@ -289,24 +322,40 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   if (rawOutputDir) {
     try { fs.mkdirSync(rawOutputDir, { recursive: true }); fs.writeFileSync(path.join(rawOutputDir, `${now().replace(/[:.]/g, '-')}-${id}.json`), JSON.stringify({ job_id: id, model: result.model, usage: result.usage, answer: result.answer }, null, 2)); } catch { /* best effort */ }
   }
-  const output = { ...result.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
+  // Die Ablage prüft streng, und eine abgewiesene Ausgabe war bisher das Ende
+  // des Auftrags: der Entwurf lag vor, niemand sah ihn, und erst eine Änderung
+  // am Code holte ihn zurück. Wie in der Nachrichtenspur folgt jetzt genau eine
+  // Nachlieferung im selben Lauf, die die Befunde im Klartext mitbekommt. Was
+  // die Software selbst angleichen kann, ist vorher schon angeglichen.
+  let output = { ...result.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
   const previewRepairs = [];
-  if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
-  let validated;
-  try { validated = validateApiOutput(output, packet, now()); }
-  catch (error) {
-    const message = [String(error.message), ...(error.issues || []), ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : [])].join('\n').slice(0, 2000);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage: result.usage, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
-    return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: result.cost };
+  let validated = null, lastIssues = [], repairCalls = 0, cost = result.cost || 0, usage = result.usage;
+  for (let pass = 0; pass <= (repairPass ? 1 : 0); pass += 1) {
+    if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
+    try { validated = validateApiOutput(output, packet, now()); break; }
+    catch (error) { lastIssues = [String(error.message), ...(error.issues || [])]; }
+    if (pass >= (repairPass ? 1 : 0)) break;
+    let retry;
+    try { retry = await draft({ ...request, prompt: `${request.prompt}\n\n${editorialRepairAddendum(lastIssues, previewRepairs)}` }); }
+    catch (error) { cost += error.cost || 0; break; }
+    repairCalls += 1;
+    cost = Number((cost + (retry.cost || 0)).toFixed(6));
+    usage = retry.usage || usage;
+    output = { ...retry.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
+  }
+  if (!validated) {
+    const message = [...lastIssues, ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : []), ...(repairCalls ? ['eine Nachlieferung blieb erfolglos'] : [])].join('\n').slice(0, 2000);
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+    return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: cost, repair_calls: repairCalls };
   }
   const latest = await session.store.get(id);
   if (!latest || latest.ack || latest.accepted) return { job_id: id, status: 'already_processed', cost_usd: result.cost };
   if (await session.transport.metadata(outputPath)) return { job_id: id, status: 'already_delivered', cost_usd: result.cost };
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
-  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
-  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model,
+  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, repair_calls: repairCalls, cost_usd: cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage, web_searches: result.web_searches ?? 0, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: cost, model: result.model, ...(repairCalls ? { repair_calls: repairCalls } : {}),
     ...(supplement ? { supplement_of: supplement.job_id, supplement_previous_version: Boolean(supplement.previous_version) } : {}), web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
 
