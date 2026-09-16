@@ -892,6 +892,21 @@ export function partitionAiQueue(eligible, stage, maxStories, now = new Date().t
     const keep = selected.filter((candidate) => candidate.story_id !== repair.story_id);
     selected = [...keep.slice(0, limit - 1), repair];
   }
+  // Natalie am 16.09.2026: „Messerangriffe haben auch eine Wirkung auf
+  // Demokratie und auf Sicherheit. Gerade vor dem Hintergrund der
+  // Sicherheitslage in Deutschland würde ich da schon ein Wirkungspotenzial
+  // erkennen." Ein akutes Sicherheitsereignis ist damit kein Chronikfall, der
+  // auf einen freien Platz warten darf. Frisch ist es ohnehin TOP; älter als
+  // drei Stunden verlor es bisher jeden Vergleich gegen den frischen Strom und
+  // verfiel im Horizont (16.09.: Waffenfund bei Speyer und Messerangriff in
+  // Potsdam, 17 Stunden alt, Relevanz 67 und 62, nie ausgewählt). Ein Platz je
+  // Lauf, solange eines wartet.
+  const acuteSafety = (candidate) => (candidate?.preanalysis?.event_score?.signals || []).includes('acute_safety');
+  const acute = allowed.find((candidate) => acuteSafety(candidate) && !candidate.impact_reassessment);
+  if (acute && limit >= 2 && !selected.some(acuteSafety)) {
+    const keep = selected.filter((candidate) => candidate.story_id !== acute.story_id);
+    selected = [...keep.slice(0, limit - 1), acute];
+  }
   const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
 }
