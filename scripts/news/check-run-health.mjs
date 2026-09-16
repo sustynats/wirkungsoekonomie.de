@@ -42,6 +42,21 @@ export function sourceCoverageDegraded(report = {}) {
   return failures >= 3 || (failures >= 2 && failures / attempted >= 0.2);
 }
 
+// Eine einzelne tote Quelle ist ein Quellenproblem, kein Laufausfall. Der
+// Deckungswert alarmiert schon bei drei Fehlschlaegen oder zwei mit einem
+// Fuenftel des Bestandes; der Gesundheitswert tat es bei jeder einzelnen
+// gestoerten Quelle. Folge: Ein 404 der WirtschaftsWoche liess ab 11:50 UTC
+// jeden Lauf als fehlgeschlagen erscheinen, obwohl er veroeffentlicht hat
+// (16.09.). Gleiche Schwelle wie bei der Deckung, damit beide Signale
+// dieselbe Sprache sprechen.
+export function sourceHealthDegraded(report = {}) {
+  const rows = Array.isArray(report?.source_health) ? report.source_health : [];
+  const broken = rows.filter((source) => ['disturbed', 'stale'].includes(source?.status)).length;
+  if (!broken) return false;
+  const observed = Math.max(1, rows.length);
+  return broken >= 3 || (broken >= 2 && broken / observed >= 0.2);
+}
+
 export function reportOperationallyHealthy(report = {}) {
   if (report.ai_error || sourceCoverageDegraded(report)) return false;
   if (report.operational_status) return report.operational_status === "ok";
