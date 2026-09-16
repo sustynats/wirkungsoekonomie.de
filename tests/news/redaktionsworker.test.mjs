@@ -6,6 +6,8 @@ import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandi
 
 const owner = '123456789012345678';
 const knowledge = { hash: 'a'.repeat(64), instructions: 'Synthetische Redaktionsanweisung für den Test.', compatibleHashes: [] };
+// Unit tests never reach the network: source excerpts are switched on per test.
+process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS = 'false';
 const now = () => '2026-09-15T20:30:00.000Z';
 function packetFor(id) {
   const content = { kind: 'opinion_analysis', brief: 'Bitte diesen synthetischen Testfall vorbereiten.', links: ['https://example.org/source'], author_notes: '', urgent: false, publication_intent: 'final_approval_required', attachments: [] };
@@ -211,7 +213,7 @@ test('linked sources travel as fetched excerpts inside the prompt copy while the
   const body = 'Der Artikel beschreibt den Sachverhalt ausführlich. '.repeat(12);
   let seen;
   const draft = async (request) => { seen = request; return { output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}', web_searches: 0 }; };
-  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now, fetchImpl: async () => page(body) });
+  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now, excerpts: true, fetchImpl: async () => page(body) });
   assert.equal(result.status, 'output_delivered'); assert.equal(result.source_excerpts, Math.min(links.length, 6));
   assert.ok(seen.prompt.includes('source_excerpts') && seen.prompt.includes('Der Artikel beschreibt den Sachverhalt'), 'excerpt text reaches the model');
   assert.ok(researchInstructions('Regel.', 3).includes('origin.source_excerpts'), 'the tool rule names the excerpts');
