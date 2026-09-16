@@ -2,8 +2,1956 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-15T21:33:39.240Z",
+  "updated_at": "2026-09-15T23:52:16.922Z",
   "stories": [
+    {
+      "story_id": "wt-6785fa48bf74c9ff",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6785fa48bf74c9ff-19733dc829051ec2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6785fa48bf74c9ff-6adb279dc64782a8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6785fa48bf74c9ff-e7962f632166e28c-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kennedy-center-von-donald-trump-eingesetzte-fuhrung-beschliesst-schliessung-74c9ff",
+      "title": "Laut DER SPIEGEL: Von Donald Trump eingesetzte Kennedy-Center-Führung beschließt Schließung",
+      "source_summary": "DER SPIEGEL berichtet, dass das Kennedy Center in Washington, D.C. sofort schließen soll. Als Begründung werden angeblich dringend notwendige Renovierungsarbeiten genannt. Der Bericht ordnet die Führung als von Donald Trump eingesetzt ein.\n\nAußerdem schreibt DER SPIEGEL, Trump habe zuvor unbedingt seinen Namen an der Stätte verewigen sehen wollen. Die vorliegende Quelle ist eine journalistische Sekundärquelle. Ein Originalbeschluss, Angaben zum Beginn und zur Dauer der Schließung sowie nähere Informationen zu den Renovierungsarbeiten liegen in den gelieferten Belegen nicht vor.",
+      "summary": "DER SPIEGEL berichtet, dass die von Donald Trump eingesetzte Führung des Kennedy Center eine sofortige Schließung wegen angeblich notwendiger Renovierungsarbeiten beschlossen hat. Offen bleiben Originalbeschluss, Dauer und konkrete Folgen.",
+      "detail_summary": "Das Kennedy Center in Washington, D.C. soll laut DER SPIEGEL sofort schließen. Als Begründung nennt der Bericht angeblich dringend notwendige Renovierungsarbeiten. Der Vorgang ist relevant, weil eine zentrale Kulturinstitution vorübergehend aus dem öffentlichen Betrieb fallen könnte. Bedingt könnten Veranstaltungen, Beschäftigte und der Zugang des Publikums betroffen sein. Die Quelle belegt jedoch weder Beginn noch Dauer noch konkrete Auswirkungen. Auch die politische Einordnung über Trumps Namenswunsch bleibt eine zugeschriebene Darstellung.",
+      "why_relevant": "Eine mögliche sofortige Schließung kann den Zugang zu einer bedeutenden Kulturinstitution, deren Betrieb und öffentliche Rechenschaft berühren. Die Reichweite und Dauer der Folgen sind noch offen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über die von DER SPIEGEL zugeschriebene Entscheidung der Kennedy-Center-Führung zur sofortigen Schließung",
+        "evaluation_target": {
+          "label": "mögliche Schließung und institutionelle Folgen des Kennedy Center",
+          "type": "decision"
+        },
+        "baseline": "Laufender Betrieb des Kennedy Center ohne die berichtete sofortige Schließung",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne die berichtete Schließung würde der bisherige Betriebs- und Zugangsstatus voraussichtlich fortbestehen; konkrete Vergleichsdaten liegen nicht vor.",
+        "reference_frame": [
+          "öffentlicher Zugang zu Kultur",
+          "institutionelle Funktionsfähigkeit",
+          "demokratische Rechenschaft und Transparenz"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine Schließung kann Zugang, Veranstaltungen und Arbeitsabläufe betreffen. Verteilungseffekte und besonders betroffene Gruppen sind ohne Umsetzungsdaten offen.",
+            "planet": "Renovierungsarbeiten könnten bauliche Zustände verändern, doch Umfang, Verfahren und ökologische Folgen sind nicht belegt. Ein eigenständiger materieller Umweltpfad ist deshalb vernachlässigbar modelliert.",
+            "democracy": "Die berichtete Verbindung von eingesetzter Führung, Schließung und Namenswunsch kann institutionelle Eigenständigkeit und öffentliche Rechenschaft zum Gegenstand machen. Ein tatsächlicher Vertrauens- oder Kontrollverlust ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche sofortige Unterbrechung des Betriebs und des Zugangs zum Kennedy Center.",
+          "second_order": "Bei längerer Schließung mögliche Folgen für Veranstaltungen, Beschäftigte, Kulturschaffende und institutionelle Wahrnehmung.",
+          "third_order": "Bedingte Debatte über politische Kontrolle und Eigenständigkeit öffentlicher Kulturinstitutionen; ohne zusätzliche Belege keine weitergehende Kaskade.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Renovierungsarbeiten könnten einen sachlichen und zeitlich begrenzten Grund für die Schließung darstellen.",
+            "Es gibt keinen gelieferten Beleg für bereits ausgefallene Veranstaltungen, Arbeitsplatzverluste oder einen Vertrauensverlust.",
+            "Die Quelle bestätigt weder die Dauer noch die konkrete Entscheidungslage durch einen Originalbeschluss."
+          ],
+          "source_independence": "Nur eine gelieferte journalistische Sekundärquelle ist vorhanden. Unabhängigkeit und Originalherkunft sind nicht verifiziert; eine zusätzliche Bestätigung fehlt.",
+          "institutional_status": "Die Quelle berichtet über eine Entscheidung der Führung, belegt aber weder den Originalbeschluss noch den rechtlichen Status, die Zuständigkeit oder das Inkrafttreten einer Schließung."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keine Angaben zu betroffenen Veranstaltungen, Beschäftigten, Publikum oder zur Dauer. Modelliert wird daher nur ein bedingtes, kurzfristig bis mittelfristig negatives Zugangsszenario.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Eine tatsächliche Schließung unterbricht den Zugang zu Veranstaltungen und den laufenden Betrieb des Kennedy Center.",
+                "mechanism": "Die Schließung beendet oder begrenzt vorübergehend die Nutzung der Einrichtung durch Publikum und Beschäftigte.",
+                "recipients": [
+                  "Besucherinnen und Besucher",
+                  "Beschäftigte",
+                  "Kulturschaffende"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die von DER SPIEGEL berichtete sofortige Schließung wird tatsächlich umgesetzt und dauert länger als eine rein formale Ankündigung.",
+                "reference_space": "Kennedy Center in Washington, D.C.; Zugang und Betrieb im Vergleich zum bisherigen Zustand",
+                "time_horizon": "Während einer möglichen Schließung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Einrichtung ist für Veranstaltungen und Publikumszugang relevant; Dauer und Umfang der Schließung bleiben offen.",
+                "source_support": "Die Quelle berichtet eine sofortige Schließung; konkrete betroffene Gruppen und Folgen nennt sie nicht.",
+                "limitations": "Keine Angaben zu Dauer, Veranstaltungsplan, Beschäftigtenstatus oder Ersatzangeboten.",
+                "first_order": "Mögliche Unterbrechung von Zugang und Betrieb.",
+                "second_order": "Bei längerer Dauer mögliche organisatorische und wirtschaftliche Belastungen für Beschäftigte und Kulturschaffende.",
+                "third_order": "Mögliche ungleiche kulturelle Zugangseffekte; Ausmaß und Verteilung sind nicht bestimmbar.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite kann bei kurzer Schließung begrenzt bleiben, bei längerem Ausfall aber mehrere Nutzergruppen betreffen."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche Wirkungs- oder Zustandsinformation in der gelieferten Quelle; Eintritt, Dauer und Betroffenheit bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die mögliche Unterbrechung betrifft mehrere Nutzergruppen einer einzelnen Kulturinstitution.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine Schließung würde Zugang und Betrieb unmittelbar begrenzen, der Umfang ist jedoch unbekannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt eine sofortige Schließung, aber keine Dauer.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugang und Betrieb könnten nach Ende der Schließung grundsätzlich wiederhergestellt werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Besonders abhängig sind Personen mit konkreten Veranstaltungen oder Arbeitsaufträgen; Betroffenheit ist nicht quantifiziert.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft primär den Betrieb einer einzelnen Institution, nicht nachweislich ein größeres Versorgungssystem.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze für Zugang oder Sicherheit ist möglich, aber weder Schwere noch Dauer sind belegt.",
+                  "reference_frame": "kulturelle Teilhabe und Zugang",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Renovierungsarbeiten könnten den baulichen Zustand der Einrichtung verbessern.",
+                "mechanism": "Eine Schließung ermöglicht möglicherweise Arbeiten, die ohne Betriebsunterbrechung nicht oder nur eingeschränkt durchgeführt werden könnten.",
+                "recipients": [
+                  "Besucherinnen und Besucher",
+                  "Beschäftigte"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die als Begründung genannten Renovierungsarbeiten sind tatsächlich erforderlich, werden umgesetzt und verbessern den Zustand der Einrichtung.",
+                "reference_space": "Baulicher Zustand und Nutzungssicherheit des Kennedy Center",
+                "time_horizon": "Nach Abschluss möglicher Renovierungsarbeiten",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Renovierungsarbeiten finden statt und erreichen ihren behaupteten Zweck.",
+                "source_support": "Die Quelle nennt angeblich dringend notwendige Renovierungsarbeiten als Begründung.",
+                "limitations": "Notwendigkeit, Umfang, Qualität und Ergebnis der Arbeiten sind nicht unabhängig belegt.",
+                "first_order": "Mögliche bauliche Instandsetzung während der Schließung.",
+                "second_order": "Möglicherweise verbesserter Zugang oder Betrieb nach Abschluss.",
+                "third_order": "Keine belastbare Grundlage für weitergehende soziale oder institutionelle Folgen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Nutzen reicht von keiner nachweisbaren Verbesserung bis zu einer begrenzten Verbesserung des Gebäudebetriebs."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle bestätigt weder Beginn noch Durchführung oder Ergebnis der Renovierungsarbeiten; der positive Pfad bleibt hypothetisch.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher baulicher Nutzen beträfe zunächst die einzelne Einrichtung.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Verbesserung ist möglich, ihre Stärke aber nicht beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein baulicher Nutzen könnte über die Schließung hinaus anhalten, ist aber unbelegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Bauliche Verbesserungen wären grundsätzlich veränderbar oder erneuerbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Nutzen für Nutzerinnen und Nutzer ist indirekt und nicht näher belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf den Zustand einer einzelnen Institution begrenzt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine Schutzgrenze wird durch die Quelle nicht konkret beschrieben.",
+                  "reference_frame": "bauliche Nutzbarkeit und Zugang",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Eine politisch aufgeladene Schließung könnte das Vertrauen in die institutionelle Eigenständigkeit belasten.",
+                "mechanism": "Die Verbindung von eingesetzter Führung, Schließung und Namenswunsch kann die Wahrnehmung politischer Einflussnahme prägen.",
+                "recipients": [
+                  "Publikum",
+                  "Beschäftigte",
+                  "Kulturschaffende"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die berichteten Elemente werden öffentlich als institutionelle Umgestaltung verstanden und erhalten entsprechende Bedeutung.",
+                "reference_space": "Öffentliche Wahrnehmung des Kennedy Center als Kulturinstitution",
+                "time_horizon": "Während und nach einer möglichen Schließung",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kommunikation und institutionelle Entscheidungen werden miteinander verknüpft wahrgenommen.",
+                "source_support": "Die Quelle nennt die eingesetzte Führung, die Schließung und Trumps Namenswunsch.",
+                "limitations": "Es gibt keinen Beleg für eine tatsächliche Vertrauensänderung oder öffentliche Reaktion.",
+                "first_order": "Mögliche veränderte Wahrnehmung der Führung.",
+                "second_order": "Mögliche Belastung institutioneller Legitimität.",
+                "third_order": "Keine belastbare Grundlage für einen weitergehenden gesellschaftlichen Effekt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne beobachtete Reaktion bleibt der mögliche Vertrauenseffekt gering und unsicher."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Vertrauen, öffentliche Reaktionen oder institutionelle Legitimität; der Pfad bleibt eine Wissensgrenze.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die mögliche Wahrnehmungsänderung betrifft vor allem das Umfeld der Institution.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Vertrauensänderung ist nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Wahrnehmungsfolgen sind möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Wahrnehmungen können sich durch spätere Informationen wieder verändern.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Verwundbarkeit einzelner Gruppen ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte institutionelle Legitimität berühren, bleibt aber indirekt und unbestätigt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret verletzt oder beobachtet.",
+                  "reference_frame": "institutionelle Eigenständigkeit und öffentliche Rechenschaft",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der zentrale menschliche Pfad ist eine bedingte Betriebs- und Zugangseinschränkung. Positive Renovierungsnutzen und institutionelle Wahrnehmungsrisiken bleiben wegen fehlender Umsetzungs- und Wirkungsdaten nachrangig.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Die möglichen negativen Zugangseffekte und der mögliche Renovierungsnutzen sind nicht gleichartig belegt; eine Schutzgrenze ist nicht festgestellt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Eine tatsächliche Schließung unterbricht den Zugang zu Veranstaltungen und den laufenden Betrieb des Kennedy Center.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Eine tatsächliche Schließung unterbricht den Zugang zu Veranstaltungen und den laufenden Betrieb des Kennedy Center.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle nennt Renovierungsarbeiten, aber keine Bauweise, Materialien, Energieverbräuche, Emissionen, Abfälle oder Umweltauflagen. Ein materieller ökologischer Pfad ist für die vorliegenden Angaben begründet vernachlässigbar modelliert.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Für die berichtete Schließung ist keine eigenständige materielle ökologische Zustandsänderung belegt.",
+                "mechanism": "Ohne Angaben zu Art und Umfang der Renovierungsarbeiten lässt sich kein konkreter Umweltmechanismus ableiten.",
+                "recipients": [
+                  "Natur"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Es liegen weiterhin keine konkreten Angaben zu Bauarbeiten, Energie, Material oder Emissionen vor.",
+                "reference_space": "Ökologische Auswirkungen der möglichen Schließung und Renovierung am Kennedy Center",
+                "time_horizon": "Während und nach einer möglichen Schließung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Keine zusätzlichen, nicht gelieferten Umweltdaten werden angenommen.",
+                "source_support": "Die Quelle erwähnt Renovierungsarbeiten, beschreibt deren ökologische Eigenschaften aber nicht.",
+                "limitations": "Keine Messwerte, kein Projektumfang und keine Umweltprüfung in den gelieferten Quellen.",
+                "first_order": "Keine belastbare ökologische Zustandsänderung bestimmbar.",
+                "second_order": "Keine belastbare Folge für Energie, Emissionen oder Ressourcen bestimmbar.",
+                "third_order": "Keine systemische Umweltkaskade ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den abgegrenzten Informationsstand ist kein materieller ökologischer Pfad konkret bestimmbar; der Pfad wird begründet als vernachlässigbar eingeordnet."
+                },
+                "negligibility_rationale": "Die Quelle liefert außer dem Wort Renovierungsarbeiten keinen konkreten Umweltbezug. In Raum und Zeit der Meldung ist daher keine materielle ökologische Änderung belastbar modellierbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Wirkungsinformation in der gelieferten Quelle; Umweltfolgen bleiben eine Wissensgrenze.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologisch betroffener Raum oder Empfängerkreis ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine konkrete Umweltbelastung oder Verbesserung ist beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders verwundbaren Ökosysteme oder Gruppen sind genannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systemmechanismus ist in der Quelle ausgewiesen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird nicht beschrieben und ist nicht feststellbar.",
+                  "reference_frame": "ökologische Unversehrtheit",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Renovierungsarbeiten könnten je nach Ausgestaltung Ressourcen- und Emissionsfolgen haben.",
+                "mechanism": "Bauarbeiten können grundsätzlich Material-, Energie- und Abfallströme verändern.",
+                "recipients": [
+                  "Natur"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die Renovierungsarbeiten finden statt und weisen einen relevanten Material- oder Energiebedarf auf.",
+                "reference_space": "Mögliche Renovierungsarbeiten am Kennedy Center",
+                "time_horizon": "Während der möglichen Bauphase",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der allgemeine Bauwirkmechanismus wird nur als Möglichkeit benannt, nicht als konkrete Folge dieses Projekts.",
+                "source_support": "Die Quelle nennt Renovierungsarbeiten, aber keine Details zu deren Ausgestaltung.",
+                "limitations": "Keine Angaben zu Umfang, Dauer, Material, Energie, Abfall oder Schutzmaßnahmen.",
+                "first_order": "Mögliche Ressourcen- und Energieverwendung.",
+                "second_order": "Mögliche lokale Emissionen oder Abfälle.",
+                "third_order": "Keine belastbare regionale oder globale Folge bestimmbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Projektdaten ist höchstens ein kleiner, unbestimmter Nebenpfad denkbar."
+                },
+                "negligibility_rationale": "Der Pfad bleibt ohne konkrete Bau- und Umweltdaten unterhalb einer belastbar materiellen Einordnung.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine Prüfung dieses allgemeinen Mechanismus am konkreten Projekt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Der betroffene ökologische Raum ist nicht beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine Intensität von Bau- oder Umweltwirkungen ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Die Dauer möglicher Arbeiten ist unbekannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine ökologisch besonders verwundbaren Empfänger sind genannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine systemische ökologische Verbindung ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es liegt keine konkrete Umweltgrenze oder Überschreitung vor.",
+                  "reference_frame": "ökologische Schutzgüter",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "rationale": "Die Quelle erwähnt Renovierungsarbeiten, liefert aber keine ökologischen Zustandsdaten. Ein materieller Planet-Pfad wird deshalb nicht aus dem Schlagwort abgeleitet.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt weder einen belegten positiven noch negativen ökologischen Hauptpfad; die Wissensgrenze überwiegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Für die berichtete Schließung ist keine eigenständige materielle ökologische Zustandsänderung belegt.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die berichtete Schließung ist keine eigenständige materielle ökologische Zustandsänderung belegt.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle Reaktion oder Vertrauensänderung. Sie liefert aber einen begrenzten Ausgangspunkt für einen bedingten Pfad über Führung, Schließungsentscheidung und mögliche politische Symbolik; tatsächliche demokratische Wirkung bleibt offen.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Eine von einer eingesetzten Führung beschlossene Schließung könnte die Wahrnehmung institutioneller Eigenständigkeit und Rechenschaft beeinflussen.",
+                "mechanism": "Die Verbindung von Führungsbesetzung, Schließung und dem berichteten Namenswunsch kann die Frage politischer Kontrolle über eine Kulturinstitution sichtbar machen.",
+                "recipients": [
+                  "Publikum",
+                  "Beschäftigte",
+                  "öffentliche Institutionen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die berichtete Entscheidung wird umgesetzt und öffentlich als politische Umgestaltung statt ausschließlich als technische Renovierung verstanden.",
+                "reference_space": "Institutionelle Eigenständigkeit und öffentliche Rechenschaft des Kennedy Center",
+                "time_horizon": "Während und nach einer möglichen Schließung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Institutionelle Entscheidungen und öffentliche Kommunikation beeinflussen die Wahrnehmung von Rechenschaft.",
+                "source_support": "Die Quelle nennt eine von Trump eingesetzte Führung, eine Schließung und Trumps Namenswunsch.",
+                "limitations": "Keine Belege für politische Einflussnahme, Vertrauensverlust, Proteste oder veränderte Entscheidungsstrukturen.",
+                "first_order": "Mögliche öffentliche Aufmerksamkeit für Führung und Entscheidungsgrund.",
+                "second_order": "Mögliche Debatte über institutionelle Eigenständigkeit und Rechenschaft.",
+                "third_order": "Keine belastbare Grundlage für eine Normalisierung oder Übertragung auf andere Institutionen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad kann ohne öffentliche Reaktion folgenlos bleiben, bei politischer Deutung aber institutionelle Debatten auslösen."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle misst demokratische oder institutionelle Wirkungen; die konkrete Wissensgrenze betrifft öffentliche Reaktionen und tatsächliche Kontrollveränderungen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft zunächst das Umfeld einer einzelnen Kulturinstitution.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine institutionelle Wahrnehmungsänderung ist möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Debatte oder Vertrauensänderung ist unbekannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Institutionelle Wahrnehmungen können sich durch weitere Entscheidungen und Belege verändern.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere demokratische Verwundbarkeit ist nicht konkret ausgewiesen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad berührt institutionelle Legitimität, bleibt aber indirekt und lokal begrenzt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder ein Eingriff in Wahl- oder Kontrollrechte ist nicht belegt.",
+                  "reference_frame": "institutionelle Eigenständigkeit und Rechenschaft",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "positive",
+                "label": "Eine transparente, sachlich begründete Renovierungsentscheidung könnte institutionelle Rechenschaft stärken.",
+                "mechanism": "Offengelegte Gründe und nachvollziehbare Umsetzung könnten die Kontrolle durch Öffentlichkeit und Betroffene erleichtern.",
+                "recipients": [
+                  "Publikum",
+                  "Beschäftigte",
+                  "öffentliche Institutionen"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die Führung legt Gründe, Verfahren, Zeitplan und Folgen der Renovierung transparent offen.",
+                "reference_space": "Öffentliche Rechenschaft über die Schließungsentscheidung",
+                "time_horizon": "Während der Entscheidungs- und Umsetzungsphase",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Transparente Information verbessert grundsätzlich die Nachvollziehbarkeit institutioneller Entscheidungen.",
+                "source_support": "Die Quelle nennt Renovierungsarbeiten als Begründung, belegt aber keine Transparenzmaßnahmen.",
+                "limitations": "Es gibt keine Angaben zu Verfahren, Beteiligung, Kontrolle oder Kommunikation.",
+                "first_order": "Mögliche bessere Nachvollziehbarkeit der Entscheidung.",
+                "second_order": "Mögliche Begrenzung von Misstrauen und Konflikten.",
+                "third_order": "Keine belastbare institutionelle Verstetigung ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der mögliche Rechenschaftsnutzen bleibt ohne Angaben zu Transparenz und Beteiligung gering.",
+                  "negligibility_rationale": null
+                },
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält keine Angaben zu Transparenz, Beteiligung oder institutioneller Kontrolle; der positive Gegenpfad bleibt hypothetisch.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Transparenz würde vor allem das institutionelle Umfeld erreichen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Rechenschaftsnutzen ist nicht konkretisiert.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines möglichen Vertrauenseffekts ist unbekannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Rechenschaftswahrnehmungen sind grundsätzlich reversibel.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Verwundbarkeit der Empfänger ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf Nachvollziehbarkeit einer Einzelentscheidung begrenzt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret betroffen.",
+                  "reference_frame": "öffentliche Rechenschaft",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der demokratische Hauptpfad ist eine vorsichtige, bedingte Wahrnehmungs- und Rechenschaftsfrage. Die Quelle belegt keine tatsächliche demokratische Wirkung; der positive Gegenpfad setzt Transparenz voraus, die nicht beschrieben wird.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Die möglichen Pfade sind nicht gleichartig belegt. Eine materielle demokratische Schutzgrenze ist nicht festgestellt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Eine von einer eingesetzten Führung beschlossene Schließung könnte die Wahrnehmung institutioneller Eigenständigkeit und Rechenschaft beeinflussen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine von einer eingesetzten Führung beschlossene Schließung könnte die Wahrnehmung institutioneller Eigenständigkeit und Rechenschaft beeinflussen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-15T23:55:54.339Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über die angebliche sofortige Schließung, die zugeschriebene Begründung mit Renovierungsarbeiten und den genannten Namenswunsch."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keine Angaben zu betroffenen Veranstaltungen, Beschäftigten, Publikum oder zur Dauer. Modelliert wird daher nur ein bedingtes, kurzfristig bis mittelfristig negatives Zugangsszenario.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Eine tatsächliche Schließung unterbricht den Zugang zu Veranstaltungen und den laufenden Betrieb des Kennedy Center.",
+              "mechanism": "Die Schließung beendet oder begrenzt vorübergehend die Nutzung der Einrichtung durch Publikum und Beschäftigte.",
+              "recipients": [
+                "Besucherinnen und Besucher",
+                "Beschäftigte",
+                "Kulturschaffende"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die von DER SPIEGEL berichtete sofortige Schließung wird tatsächlich umgesetzt und dauert länger als eine rein formale Ankündigung.",
+              "reference_space": "Kennedy Center in Washington, D.C.; Zugang und Betrieb im Vergleich zum bisherigen Zustand",
+              "time_horizon": "Während einer möglichen Schließung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Einrichtung ist für Veranstaltungen und Publikumszugang relevant; Dauer und Umfang der Schließung bleiben offen.",
+              "source_support": "Die Quelle berichtet eine sofortige Schließung; konkrete betroffene Gruppen und Folgen nennt sie nicht.",
+              "limitations": "Keine Angaben zu Dauer, Veranstaltungsplan, Beschäftigtenstatus oder Ersatzangeboten.",
+              "first_order": "Mögliche Unterbrechung von Zugang und Betrieb.",
+              "second_order": "Bei längerer Dauer mögliche organisatorische und wirtschaftliche Belastungen für Beschäftigte und Kulturschaffende.",
+              "third_order": "Mögliche ungleiche kulturelle Zugangseffekte; Ausmaß und Verteilung sind nicht bestimmbar.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite kann bei kurzer Schließung begrenzt bleiben, bei längerem Ausfall aber mehrere Nutzergruppen betreffen."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche Wirkungs- oder Zustandsinformation in der gelieferten Quelle; Eintritt, Dauer und Betroffenheit bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die mögliche Unterbrechung betrifft mehrere Nutzergruppen einer einzelnen Kulturinstitution.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine Schließung würde Zugang und Betrieb unmittelbar begrenzen, der Umfang ist jedoch unbekannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt eine sofortige Schließung, aber keine Dauer.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugang und Betrieb könnten nach Ende der Schließung grundsätzlich wiederhergestellt werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Besonders abhängig sind Personen mit konkreten Veranstaltungen oder Arbeitsaufträgen; Betroffenheit ist nicht quantifiziert.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft primär den Betrieb einer einzelnen Institution, nicht nachweislich ein größeres Versorgungssystem.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze für Zugang oder Sicherheit ist möglich, aber weder Schwere noch Dauer sind belegt.",
+                "reference_frame": "kulturelle Teilhabe und Zugang",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Renovierungsarbeiten könnten den baulichen Zustand der Einrichtung verbessern.",
+              "mechanism": "Eine Schließung ermöglicht möglicherweise Arbeiten, die ohne Betriebsunterbrechung nicht oder nur eingeschränkt durchgeführt werden könnten.",
+              "recipients": [
+                "Besucherinnen und Besucher",
+                "Beschäftigte"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die als Begründung genannten Renovierungsarbeiten sind tatsächlich erforderlich, werden umgesetzt und verbessern den Zustand der Einrichtung.",
+              "reference_space": "Baulicher Zustand und Nutzungssicherheit des Kennedy Center",
+              "time_horizon": "Nach Abschluss möglicher Renovierungsarbeiten",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Renovierungsarbeiten finden statt und erreichen ihren behaupteten Zweck.",
+              "source_support": "Die Quelle nennt angeblich dringend notwendige Renovierungsarbeiten als Begründung.",
+              "limitations": "Notwendigkeit, Umfang, Qualität und Ergebnis der Arbeiten sind nicht unabhängig belegt.",
+              "first_order": "Mögliche bauliche Instandsetzung während der Schließung.",
+              "second_order": "Möglicherweise verbesserter Zugang oder Betrieb nach Abschluss.",
+              "third_order": "Keine belastbare Grundlage für weitergehende soziale oder institutionelle Folgen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Nutzen reicht von keiner nachweisbaren Verbesserung bis zu einer begrenzten Verbesserung des Gebäudebetriebs."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle bestätigt weder Beginn noch Durchführung oder Ergebnis der Renovierungsarbeiten; der positive Pfad bleibt hypothetisch.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher baulicher Nutzen beträfe zunächst die einzelne Einrichtung.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Verbesserung ist möglich, ihre Stärke aber nicht beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein baulicher Nutzen könnte über die Schließung hinaus anhalten, ist aber unbelegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Bauliche Verbesserungen wären grundsätzlich veränderbar oder erneuerbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Nutzen für Nutzerinnen und Nutzer ist indirekt und nicht näher belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf den Zustand einer einzelnen Institution begrenzt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine Schutzgrenze wird durch die Quelle nicht konkret beschrieben.",
+                "reference_frame": "bauliche Nutzbarkeit und Zugang",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Eine politisch aufgeladene Schließung könnte das Vertrauen in die institutionelle Eigenständigkeit belasten.",
+              "mechanism": "Die Verbindung von eingesetzter Führung, Schließung und Namenswunsch kann die Wahrnehmung politischer Einflussnahme prägen.",
+              "recipients": [
+                "Publikum",
+                "Beschäftigte",
+                "Kulturschaffende"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "very_low",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die berichteten Elemente werden öffentlich als institutionelle Umgestaltung verstanden und erhalten entsprechende Bedeutung.",
+              "reference_space": "Öffentliche Wahrnehmung des Kennedy Center als Kulturinstitution",
+              "time_horizon": "Während und nach einer möglichen Schließung",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kommunikation und institutionelle Entscheidungen werden miteinander verknüpft wahrgenommen.",
+              "source_support": "Die Quelle nennt die eingesetzte Führung, die Schließung und Trumps Namenswunsch.",
+              "limitations": "Es gibt keinen Beleg für eine tatsächliche Vertrauensänderung oder öffentliche Reaktion.",
+              "first_order": "Mögliche veränderte Wahrnehmung der Führung.",
+              "second_order": "Mögliche Belastung institutioneller Legitimität.",
+              "third_order": "Keine belastbare Grundlage für einen weitergehenden gesellschaftlichen Effekt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne beobachtete Reaktion bleibt der mögliche Vertrauenseffekt gering und unsicher."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Vertrauen, öffentliche Reaktionen oder institutionelle Legitimität; der Pfad bleibt eine Wissensgrenze.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die mögliche Wahrnehmungsänderung betrifft vor allem das Umfeld der Institution.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Vertrauensänderung ist nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Wahrnehmungsfolgen sind möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Wahrnehmungen können sich durch spätere Informationen wieder verändern.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Verwundbarkeit einzelner Gruppen ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte institutionelle Legitimität berühren, bleibt aber indirekt und unbestätigt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret verletzt oder beobachtet.",
+                "reference_frame": "institutionelle Eigenständigkeit und öffentliche Rechenschaft",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der zentrale menschliche Pfad ist eine bedingte Betriebs- und Zugangseinschränkung. Positive Renovierungsnutzen und institutionelle Wahrnehmungsrisiken bleiben wegen fehlender Umsetzungs- und Wirkungsdaten nachrangig.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Die möglichen negativen Zugangseffekte und der mögliche Renovierungsnutzen sind nicht gleichartig belegt; eine Schutzgrenze ist nicht festgestellt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Eine tatsächliche Schließung unterbricht den Zugang zu Veranstaltungen und den laufenden Betrieb des Kennedy Center.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Eine tatsächliche Schließung unterbricht den Zugang zu Veranstaltungen und den laufenden Betrieb des Kennedy Center.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle nennt Renovierungsarbeiten, aber keine Bauweise, Materialien, Energieverbräuche, Emissionen, Abfälle oder Umweltauflagen. Ein materieller ökologischer Pfad ist für die vorliegenden Angaben begründet vernachlässigbar modelliert.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Für die berichtete Schließung ist keine eigenständige materielle ökologische Zustandsänderung belegt.",
+              "mechanism": "Ohne Angaben zu Art und Umfang der Renovierungsarbeiten lässt sich kein konkreter Umweltmechanismus ableiten.",
+              "recipients": [
+                "Natur"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Es liegen weiterhin keine konkreten Angaben zu Bauarbeiten, Energie, Material oder Emissionen vor.",
+              "reference_space": "Ökologische Auswirkungen der möglichen Schließung und Renovierung am Kennedy Center",
+              "time_horizon": "Während und nach einer möglichen Schließung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Keine zusätzlichen, nicht gelieferten Umweltdaten werden angenommen.",
+              "source_support": "Die Quelle erwähnt Renovierungsarbeiten, beschreibt deren ökologische Eigenschaften aber nicht.",
+              "limitations": "Keine Messwerte, kein Projektumfang und keine Umweltprüfung in den gelieferten Quellen.",
+              "first_order": "Keine belastbare ökologische Zustandsänderung bestimmbar.",
+              "second_order": "Keine belastbare Folge für Energie, Emissionen oder Ressourcen bestimmbar.",
+              "third_order": "Keine systemische Umweltkaskade ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den abgegrenzten Informationsstand ist kein materieller ökologischer Pfad konkret bestimmbar; der Pfad wird begründet als vernachlässigbar eingeordnet."
+              },
+              "negligibility_rationale": "Die Quelle liefert außer dem Wort Renovierungsarbeiten keinen konkreten Umweltbezug. In Raum und Zeit der Meldung ist daher keine materielle ökologische Änderung belastbar modellierbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Wirkungsinformation in der gelieferten Quelle; Umweltfolgen bleiben eine Wissensgrenze.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologisch betroffener Raum oder Empfängerkreis ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine konkrete Umweltbelastung oder Verbesserung ist beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders verwundbaren Ökosysteme oder Gruppen sind genannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systemmechanismus ist in der Quelle ausgewiesen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird nicht beschrieben und ist nicht feststellbar.",
+                "reference_frame": "ökologische Unversehrtheit",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Renovierungsarbeiten könnten je nach Ausgestaltung Ressourcen- und Emissionsfolgen haben.",
+              "mechanism": "Bauarbeiten können grundsätzlich Material-, Energie- und Abfallströme verändern.",
+              "recipients": [
+                "Natur"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die Renovierungsarbeiten finden statt und weisen einen relevanten Material- oder Energiebedarf auf.",
+              "reference_space": "Mögliche Renovierungsarbeiten am Kennedy Center",
+              "time_horizon": "Während der möglichen Bauphase",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der allgemeine Bauwirkmechanismus wird nur als Möglichkeit benannt, nicht als konkrete Folge dieses Projekts.",
+              "source_support": "Die Quelle nennt Renovierungsarbeiten, aber keine Details zu deren Ausgestaltung.",
+              "limitations": "Keine Angaben zu Umfang, Dauer, Material, Energie, Abfall oder Schutzmaßnahmen.",
+              "first_order": "Mögliche Ressourcen- und Energieverwendung.",
+              "second_order": "Mögliche lokale Emissionen oder Abfälle.",
+              "third_order": "Keine belastbare regionale oder globale Folge bestimmbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Projektdaten ist höchstens ein kleiner, unbestimmter Nebenpfad denkbar."
+              },
+              "negligibility_rationale": "Der Pfad bleibt ohne konkrete Bau- und Umweltdaten unterhalb einer belastbar materiellen Einordnung.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine Prüfung dieses allgemeinen Mechanismus am konkreten Projekt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Der betroffene ökologische Raum ist nicht beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine Intensität von Bau- oder Umweltwirkungen ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Die Dauer möglicher Arbeiten ist unbekannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine ökologisch besonders verwundbaren Empfänger sind genannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine systemische ökologische Verbindung ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es liegt keine konkrete Umweltgrenze oder Überschreitung vor.",
+                "reference_frame": "ökologische Schutzgüter",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "rationale": "Die Quelle erwähnt Renovierungsarbeiten, liefert aber keine ökologischen Zustandsdaten. Ein materieller Planet-Pfad wird deshalb nicht aus dem Schlagwort abgeleitet.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt weder einen belegten positiven noch negativen ökologischen Hauptpfad; die Wissensgrenze überwiegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die berichtete Schließung ist keine eigenständige materielle ökologische Zustandsänderung belegt.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Für die berichtete Schließung ist keine eigenständige materielle ökologische Zustandsänderung belegt.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle Reaktion oder Vertrauensänderung. Sie liefert aber einen begrenzten Ausgangspunkt für einen bedingten Pfad über Führung, Schließungsentscheidung und mögliche politische Symbolik; tatsächliche demokratische Wirkung bleibt offen.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Eine von einer eingesetzten Führung beschlossene Schließung könnte die Wahrnehmung institutioneller Eigenständigkeit und Rechenschaft beeinflussen.",
+              "mechanism": "Die Verbindung von Führungsbesetzung, Schließung und dem berichteten Namenswunsch kann die Frage politischer Kontrolle über eine Kulturinstitution sichtbar machen.",
+              "recipients": [
+                "Publikum",
+                "Beschäftigte",
+                "öffentliche Institutionen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die berichtete Entscheidung wird umgesetzt und öffentlich als politische Umgestaltung statt ausschließlich als technische Renovierung verstanden.",
+              "reference_space": "Institutionelle Eigenständigkeit und öffentliche Rechenschaft des Kennedy Center",
+              "time_horizon": "Während und nach einer möglichen Schließung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Institutionelle Entscheidungen und öffentliche Kommunikation beeinflussen die Wahrnehmung von Rechenschaft.",
+              "source_support": "Die Quelle nennt eine von Trump eingesetzte Führung, eine Schließung und Trumps Namenswunsch.",
+              "limitations": "Keine Belege für politische Einflussnahme, Vertrauensverlust, Proteste oder veränderte Entscheidungsstrukturen.",
+              "first_order": "Mögliche öffentliche Aufmerksamkeit für Führung und Entscheidungsgrund.",
+              "second_order": "Mögliche Debatte über institutionelle Eigenständigkeit und Rechenschaft.",
+              "third_order": "Keine belastbare Grundlage für eine Normalisierung oder Übertragung auf andere Institutionen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad kann ohne öffentliche Reaktion folgenlos bleiben, bei politischer Deutung aber institutionelle Debatten auslösen."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle misst demokratische oder institutionelle Wirkungen; die konkrete Wissensgrenze betrifft öffentliche Reaktionen und tatsächliche Kontrollveränderungen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft zunächst das Umfeld einer einzelnen Kulturinstitution.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine institutionelle Wahrnehmungsänderung ist möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Debatte oder Vertrauensänderung ist unbekannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Institutionelle Wahrnehmungen können sich durch weitere Entscheidungen und Belege verändern.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere demokratische Verwundbarkeit ist nicht konkret ausgewiesen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad berührt institutionelle Legitimität, bleibt aber indirekt und lokal begrenzt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder ein Eingriff in Wahl- oder Kontrollrechte ist nicht belegt.",
+                "reference_frame": "institutionelle Eigenständigkeit und Rechenschaft",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "positive",
+              "label": "Eine transparente, sachlich begründete Renovierungsentscheidung könnte institutionelle Rechenschaft stärken.",
+              "mechanism": "Offengelegte Gründe und nachvollziehbare Umsetzung könnten die Kontrolle durch Öffentlichkeit und Betroffene erleichtern.",
+              "recipients": [
+                "Publikum",
+                "Beschäftigte",
+                "öffentliche Institutionen"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die Führung legt Gründe, Verfahren, Zeitplan und Folgen der Renovierung transparent offen.",
+              "reference_space": "Öffentliche Rechenschaft über die Schließungsentscheidung",
+              "time_horizon": "Während der Entscheidungs- und Umsetzungsphase",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Transparente Information verbessert grundsätzlich die Nachvollziehbarkeit institutioneller Entscheidungen.",
+              "source_support": "Die Quelle nennt Renovierungsarbeiten als Begründung, belegt aber keine Transparenzmaßnahmen.",
+              "limitations": "Es gibt keine Angaben zu Verfahren, Beteiligung, Kontrolle oder Kommunikation.",
+              "first_order": "Mögliche bessere Nachvollziehbarkeit der Entscheidung.",
+              "second_order": "Mögliche Begrenzung von Misstrauen und Konflikten.",
+              "third_order": "Keine belastbare institutionelle Verstetigung ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der mögliche Rechenschaftsnutzen bleibt ohne Angaben zu Transparenz und Beteiligung gering.",
+                "negligibility_rationale": null
+              },
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält keine Angaben zu Transparenz, Beteiligung oder institutioneller Kontrolle; der positive Gegenpfad bleibt hypothetisch.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Transparenz würde vor allem das institutionelle Umfeld erreichen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Rechenschaftsnutzen ist nicht konkretisiert.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines möglichen Vertrauenseffekts ist unbekannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Rechenschaftswahrnehmungen sind grundsätzlich reversibel.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Verwundbarkeit der Empfänger ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf Nachvollziehbarkeit einer Einzelentscheidung begrenzt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret betroffen.",
+                "reference_frame": "öffentliche Rechenschaft",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der demokratische Hauptpfad ist eine vorsichtige, bedingte Wahrnehmungs- und Rechenschaftsfrage. Die Quelle belegt keine tatsächliche demokratische Wirkung; der positive Gegenpfad setzt Transparenz voraus, die nicht beschrieben wird.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Die möglichen Pfade sind nicht gleichartig belegt. Eine materielle demokratische Schutzgrenze ist nicht festgestellt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine von einer eingesetzten Führung beschlossene Schließung könnte die Wahrnehmung institutioneller Eigenständigkeit und Rechenschaft beeinflussen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Eine von einer eingesetzten Führung beschlossene Schließung könnte die Wahrnehmung institutioneller Eigenständigkeit und Rechenschaft beeinflussen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-15T23:52:16.922Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-15T21:02:00.000Z",
+      "last_updated": "2026-09-15T23:55:54.335Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-355bf8b4f71d66b90279",
+      "case_file": null,
+      "source_published_at": "2026-09-15T21:02:00.000Z",
+      "published_at": "2026-09-15T23:55:54.335Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, wann die Schließung beginnt, wie lange sie dauern soll und welche Renovierungsarbeiten konkret geplant sind.",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Beginn, Dauer und Umfang der angekündigten Schließung und Renovierungsarbeiten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3f0697994232af95",
+          "announced_at": "2026-09-15T21:02:00.000Z",
+          "follow_up_date": "2026-09-22T23:55:54.335Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zu prüfen ist, welche Auswirkungen die Schließung auf Veranstaltungen, Beschäftigte und Besucherinnen und Besucher hat.",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Veranstaltungsabsagen, Beschäftigtenstatus und Zugangsänderungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ec135a14bba4bb1c",
+          "announced_at": "2026-09-15T21:02:00.000Z",
+          "follow_up_date": "2026-09-22T23:55:54.335Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/kennedy-center-von-donald-trump-eingesetzte-fuehrung-beschliesst-schliessung-a-802b89d1-4631-4c9c-9c00-51e1c74ae069",
+          "source_type": "media_rss",
+          "published_at": "2026-09-15T21:02:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3b985e43c3905275",
       "title_image": {
