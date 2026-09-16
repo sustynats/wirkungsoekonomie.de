@@ -8,6 +8,7 @@
 // zur Freigabe oder Rückgabe vor. Nichts wird direkt veröffentlicht.
 import path from 'node:path';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
+import { officialShowName } from './show-identity.mjs';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
@@ -221,6 +222,11 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
     for (const [alias, key] of Object.entries(MEDIA_ALIASES)) {
       if (media[key] === undefined && media[alias] !== undefined) { media[key] = media[alias]; repairs.push(`source_media:${alias} als ${key} gelesen`); }
     }
+    // Der Sendungsname traegt die Rechtefreigabe: steht er in der Freigabeliste,
+    // wird die amtliche Schreibweise eingetragen. Sonst entscheidet ein „&"
+    // statt eines „+" darueber, ob das freigegebene Logo gefunden wird.
+    const official = officialShowName(media.show);
+    if (official && official !== media.show) { repairs.push(`source_media:Sendungsname auf die amtliche Schreibweise (${official})`); media.show = official; }
     const date = String(media.original_release_date || '');
     if (/^\d{4}-\d{2}-\d{2}T/.test(date)) { media.original_release_date = date.slice(0, 10); repairs.push('source_media:Datum auf den Tag gekürzt'); }
     if (!/^https:\/\//.test(media.original_url || '')) {
