@@ -93,6 +93,16 @@
     button.hidden = false;
     button.addEventListener("click", goBack);
   });
+  // Der Rückweg am Artikelanfang ist ein echter Verweis: ohne JavaScript führt
+  // er zur Übersicht, hier übernimmt derselbe Weg wie das Wischen und behält
+  // Filter und Leseposition (16.09.: „Es ist nur am Ende des Artikels zurück").
+  document.querySelectorAll("a[data-news-back-top]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      goBack();
+    });
+  });
   const hint = document.querySelector("[data-news-swipe-hint]");
   if (hint) hint.hidden = false;
 
