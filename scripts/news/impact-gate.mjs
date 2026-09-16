@@ -11,13 +11,27 @@ import { assessmentBasis } from './migrate-impact-assessments.mjs';
 import { retainPotentialHistory } from './impact-potential.mjs';
 import { IMPACT_VERSION } from './impact-assessment.mjs';
 
-export const DETERMINISTIC_GATE_VERSION = 'deterministic-gate-1';
+export const DETERMINISTIC_GATE_VERSION = 'deterministic-gate-2';
+
+// In direct operation the targeted second research pass happens inside the
+// one model call: every primary path of every modelled dimension carries
+// research_pass second_pass with a written research_result, and research_check
+// is completed. Only then may a central dimension stay explicitly open
+// (IMPACT_CENTRAL_DIMENSION_UNRESOLVED), exactly as the contract intends.
+const written = (value) => typeof value === 'string' && value.trim().length >= 12;
+export function secondPassComplete(assessment) {
+  const research = assessment?.research_check;
+  if (!research || research.status !== 'completed') return false;
+  const dimensions = Object.values(assessment.dimensions || {});
+  return dimensions.length > 0 && dimensions.every((d) => d?.path_status === 'modelled' && Array.isArray(d.primary_paths) && d.primary_paths.length > 0
+    && d.primary_paths.every((p) => p?.research_pass === 'second_pass' && written(p.research_result)));
+}
 
 export function deterministicGateIssues(record) {
   const assessment = record?.impact_assessment;
   if (!assessment) return ['IMPACT_ASSESSMENT_REQUIRED'];
   if (assessment.version !== IMPACT_VERSION) return ['IMPACT_VERSION_INVALID'];
-  const issues = [...semanticIssues(assessment, record), ...modelledPublicationIssues(assessment)];
+  const issues = [...semanticIssues(assessment, record, { secondPassComplete: secondPassComplete(assessment) }), ...modelledPublicationIssues(assessment)];
   return [...new Set(issues)];
 }
 

@@ -292,3 +292,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Seit #791 laufen im Worker drei Schritte (Analysekandidaten, Sendungen, Entwürfe); alle holten die Import-Sperre mit derselben manuellen Lauf-ID. Nach dem ersten Schritt galt der Slot als abgeschlossen, Sendungen und Entwürfe wurden übersprungen (`BRIDGE_SLOT_ALREADY_COMPLETED`, Takt 23:35 UTC). Jeder Schritt hängt jetzt eine Schrittziffer an die Versuchsnummer (`<run>:<attempt><schritt>`, bleibt im Format Ziffern:Ziffern).
 - **Geprüft:** Worker-, Sendungs- und Workflow-Tests.
+
+## 2026-09-16 - Claude: Gate: zweiter Recherchepass im selben Aufruf zählt; Zeitstatus und Fragmente
+
+- **Was:** Lauf 00:07 UTC: eine Meldung mit hoher Systemrelevanz hielt an `IMPACT_CENTRAL_DIMENSION_UNRESOLVED`, obwohl Planet und Demokratie nach zweitem Pass ausdrücklich offen modelliert waren; das Gate kannte den zweiten Pass nur aus der früheren Zweitprüfung per Job. `secondPassComplete` (`impact-gate.mjs`, Gate-Version 2) leitet ihn jetzt aus dem Bewertungsobjekt ab (research_check completed, jeder Hauptpfad second_pass mit research_result); Transport-Befunde nutzen dieselbe Regel. Deterministisch zusätzlich: fehlender `temporal_status` je Dimension wird aus den Pfaden abgeleitet (ongoing nur mit beobachtetem Signal), ein Hauptpfad-Fragment ohne Faktoren weicht, wenn ein bewerteter Hauptpfad bleibt. Anweisung: ex-ante-Wirkungen als Möglichkeit formulieren (`AI_EX_ANTE_CAUSAL_OVERCLAIM`).
+- **Geprüft:** `tests/news/direct-operation.test.mjs` (23 Tests, 2 neu), Ticker- und Ring-Tests.

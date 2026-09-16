@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution } from '../../scripts/news/openai-transport.mjs';
-import { releaseDeterministicImpact, deterministicGateIssues } from '../../scripts/news/impact-gate.mjs';
+import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
@@ -102,7 +102,7 @@ test('deterministic gate releases a complete modelled profile publicly and refus
   const release = releaseDeterministicImpact(record, { now: '2026-09-15T12:00:00.000Z' });
   assert.equal(release.released, true);
   assert.equal(record.impact_assessment.publication_status, 'ready');
-  assert.equal(record.impact_semantic_review.status, 'ready'); assert.equal(record.impact_semantic_review.mode, 'deterministic-gate-1');
+  assert.equal(record.impact_semantic_review.status, 'ready'); assert.equal(record.impact_semantic_review.mode, 'deterministic-gate-2');
   assert.ok(publicImpactAssessment(record), 'profile must be public after the gate');
   assert.equal(record.current_potential_assessment.origin, 'current_assessment');
   const blank = releasableRecord();
@@ -256,12 +256,15 @@ test('fragments where paths belong are discarded, incomplete paths stay for the 
   const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: assessment }, story);
   const d = analysis.impact_assessment.dimensions;
   assert.deepEqual(d.human.secondary_paths, []);
-  assert.equal(d.planet.primary_paths.length, 1); assert.equal(d.planet.secondary_paths.length, 1, 'a labelled path without mechanism or type is kept for the gate as side path, text and null are not');
+  assert.equal(d.planet.primary_paths.length, 1); assert.equal(d.planet.secondary_paths.length, 0, 'a labelled path without factors gives way once a scored main path remains; text and null are fragments');
   assert.equal(d.democracy.secondary_paths.length, 1); assert.equal(d.democracy.secondary_paths[0].type, 'side_effect');
-  assert.deepEqual(analysis.transport_repairs, ['human.secondary_paths:1 fragment(s) discarded', 'planet.primary_paths:2 fragment(s) discarded', 'planet.primary_paths:untyped->secondary_paths', 'democracy.secondary_paths:1 fragment(s) discarded']);
+  assert.deepEqual(analysis.transport_repairs, ['human.secondary_paths:1 fragment(s) discarded', 'planet.primary_paths:2 fragment(s) discarded', 'planet.primary_paths:1 unscored path(s) discarded', 'democracy.secondary_paths:1 fragment(s) discarded']);
   const errors = validateAnalysis(analysis, story, { requireImpactAssessment: true });
-  assert.ok(errors.includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:planet'), 'the incomplete planet path still fails the gate');
-  assert.equal(errors.some((e) => e.endsWith(':human') || e.endsWith(':democracy')), false, errors.join(','));
+  assert.equal(errors.some((e) => e.startsWith('IMPACT_')), false, errors.join(','));
+  const alone = syntheticPotentialAssessment(); alone.dimensions.planet.primary_paths = [{ label: 'nur Etikett, kein Mechanismus', type: 'main_path' }];
+  const kept = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: alone }, story);
+  assert.equal(kept.impact_assessment.dimensions.planet.primary_paths.length, 1, 'without a scored main path the incomplete path stays for the gate');
+  assert.ok(validateAnalysis(kept, story, { requireImpactAssessment: true }).includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:planet'));
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Datum der Berichterstattung wird nicht ergänzt'));
 });
 
@@ -333,4 +336,38 @@ test('an attributed headline claim without its qualifier in the title gets the a
   const noClaim = repairHeadlineAttribution({ headline: 'Titel ohne Zuordnung', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: false }, { claim: 'y', attribution_required: true, headline_claim: true }] });
   assert.equal(noClaim.headline, 'Titel ohne Zuordnung', 'without any attribution wording nothing is invented');
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('rationale (Begründungstext) und balance') && SINGLE_CALL_INSTRUCTIONS.includes('mehr als 20 Wörtern wörtlich'));
+});
+
+test('a missing dimension time status is derived from its paths and an unscored counter path gives way to a scored main path', () => {
+  const assessment = syntheticPotentialAssessment();
+  const human = assessment.dimensions.human, planet = assessment.dimensions.planet;
+  delete human.temporal_status; planet.temporal_status = 'ex_post';
+  planet.primary_paths.push({ ...syntheticPotentialPath({ type: 'counter_path', direction: 'negative', magnitude: 1 }), magnitude_factors: undefined });
+  const story = { story_id: 'wt-1', sources: [{ source_id: 'official', url: 'https://example.org/a', title: 'Q', summary: 'Q' }], claims: [{ claim_id: 'c', claim: 'x', source_id: 'official' }] };
+  const before = validateAnalysis({ story_id: 'wt-1', impact_assessment: structuredClone(assessment) }, story, { requireImpactAssessment: true });
+  assert.ok(before.includes('IMPACT_POTENTIAL_STATUS_INVALID:human') && before.includes('IMPACT_FACTOR_REQUIRED:reach:planet'), before.join(','));
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: assessment }, story);
+  assert.equal(analysis.impact_assessment.dimensions.human.temporal_status, 'ex_ante'); assert.equal(analysis.impact_assessment.dimensions.planet.temporal_status, 'ex_ante');
+  assert.equal(analysis.impact_assessment.dimensions.planet.primary_paths.length, 1);
+  assert.ok(analysis.transport_repairs.includes('human.temporal_status:undefined->ex_ante') && analysis.transport_repairs.includes('planet.primary_paths:1 unscored path(s) discarded'), analysis.transport_repairs.join(','));
+  assert.equal(validateAnalysis(analysis, story, { requireImpactAssessment: true }).some((e) => e.startsWith('IMPACT_')), false);
+  const signal = syntheticPotentialAssessment(); const dim = signal.dimensions.democracy; delete dim.temporal_status;
+  dim.primary_paths[0].temporal_status = 'ongoing'; dim.primary_paths[0].observed_signal = { change: 'Ein erstes beobachtetes Signal liegt vor.', source_ids: ['official'] };
+  assert.equal(normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: signal }, story).impact_assessment.dimensions.democracy.temporal_status, 'ongoing');
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Wirkungen als Möglichkeit formulieren'));
+});
+
+test('after a completed second pass a central dimension may stay explicitly open in the deterministic gate', () => {
+  const record = releasableRecord();
+  const assessment = record.impact_assessment;
+  assessment.systemic_relevance = 'high'; assessment.system_check.central_dimensions = ['human', 'planet'];
+  const planet = assessment.dimensions.planet;
+  planet.primary_paths = [syntheticPotentialPath({ direction: 'open', magnitude: 1 })]; planet.direction = 'open'; planet.dominance = 'none'; planet.magnitude = 1;
+  assert.equal(secondPassComplete(assessment), true);
+  assert.equal(deterministicGateIssues(record).some((e) => e.startsWith('IMPACT_CENTRAL_DIMENSION_UNRESOLVED')), false, deterministicGateIssues(record).join(','));
+  assert.deepEqual(assessmentIssues({ impact_assessment: assessment }, record), []);
+  planet.primary_paths[0].research_pass = 'initial'; delete planet.primary_paths[0].research_result; planet.primary_paths[0].evidence = 'medium';
+  assert.equal(secondPassComplete(assessment), false);
+  assert.ok(deterministicGateIssues(record).includes('IMPACT_CENTRAL_DIMENSION_UNRESOLVED:planet'), 'without the second pass an open central dimension still holds');
+  assert.equal(secondPassComplete({ ...assessment, research_check: { ...assessment.research_check, status: 'needs_research' } }), false);
 });
