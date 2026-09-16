@@ -8,17 +8,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-16T08:20:43.247Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-16T12:03:38.492Z",
-      "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-16T12:03:38.492Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "65e252c6958337eca4f65e06",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-16T15:50:29.635Z"
+    },
+    {
+      "id": "43d4dcc693ea62c229a025cb",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-16T15:50:29.635Z"
+    }
+  ],
   "dailyDate": "2026-09-16",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1190,11 +1191,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/auch-bahn-betroffen-bombenfund-bei-spergau-sperrkreis-eingerichtet-49e539/": {
         "first_seen_at": "2026-09-16T13:43:14.043Z",
         "source_at": "2026-09-16T12:19:22.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/naturschutz-naturschutz-minister-will-kooperation-statt-konfrontation-5d4904/": {
+        "first_seen_at": "2026-09-16T15:50:29.635Z",
+        "source_at": "2026-09-16T12:28:02.000Z"
       }
     },
-    "last_new_at": "2026-09-16T13:43:14.043Z",
-    "checked_at": "2026-09-16T15:35:42.588Z",
-    "last_current_new_at": "2026-09-16T13:43:14.043Z"
+    "last_new_at": "2026-09-16T15:50:29.635Z",
+    "checked_at": "2026-09-16T15:50:29.635Z",
+    "last_current_new_at": "2026-09-16T15:50:29.635Z"
   },
   "recovery_attempts": [
     {
