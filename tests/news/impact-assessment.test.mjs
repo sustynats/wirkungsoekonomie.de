@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { deriveImpactPresentation, migrateImpactAssessment, impactAssessmentErrors, IMPACT_RULE } from '../../scripts/news/impact-assessment.mjs';
 import { retainPotentialHistory } from '../../scripts/news/impact-potential.mjs';
 import { renderDimensionMeters } from '../../scripts/news/visuals.mjs';
@@ -84,4 +85,39 @@ test('communication and dossier targets are supported without political identity
 test('the six factors, not the direction or prior relevance, determine magnitude',()=>{
  const a=profile(),p=a.dimensions.human.primary_paths[0];p.magnitude_factors=syntheticFactors(1,['official']);
  assert.ok(check(a).includes('IMPACT_MAGNITUDE_CALCULATION_MISMATCH:human'));
+});
+
+// 17.09.2026: Ob das balance-Objekt gebraucht wird, entschied bisher das
+// Modell - Pflicht bei direction mixed „oder maßgeblicher Schutzgrenze". Die
+// Schutzgrenze rechnet der Server aber erst danach aus den Wirkpfaden aus. Das
+// Modell lieferte null, das Gate forderte nach, und der zweite Aufruf war
+// bezahlt. Das war der haeufigste Grund fuer eine Nachlieferung und verstiess
+// gegen Natalies Regel „nur 1x die API bis hin zur Veröffentlichung".
+// Jetzt verlangt das Schema das Objekt immer.
+test('das balance-Objekt ist nie null und stoert bei eindeutiger Richtung nicht', async () => {
+  const { IMPACT_ASSESSMENT_JSON_SCHEMA } = await import('../../scripts/news/impact-json-schema.mjs');
+  const dimension = IMPACT_ASSESSMENT_JSON_SCHEMA?.properties?.dimensions?.properties?.human
+    || IMPACT_ASSESSMENT_JSON_SCHEMA?.$defs?.dimension
+    || null;
+  const balance = dimension?.properties?.balance;
+  assert.ok(balance, 'das Schema kennt eine Dimension mit balance');
+  assert.equal(balance.type, 'object', 'null ist nicht mehr erlaubt');
+  assert.deepEqual([...balance.required].sort(), ['comparable_material_paths', 'protection_boundary_decisive', 'rationale']);
+
+  // Eine eindeutig negative Dimension mit gefuelltem balance-Objekt bleibt gueltig:
+  // keine Regel verlangt dort null, deshalb kostet das immer gelieferte Objekt nichts.
+  const a = profile();
+  for (const key of ['human', 'planet', 'democracy']) {
+    a.dimensions[key].balance = { comparable_material_paths: false, protection_boundary_decisive: false,
+      rationale: 'Eindeutige Richtung, keine gegenlaeufigen materiellen Hauptpfade.' };
+  }
+  assert.deepEqual(check(a), [], 'ein mitgeliefertes balance-Objekt darf nichts brechen');
+});
+
+// Die Anfrage muss es unmissverstaendlich verlangen, sonst liefert das Modell
+// weiter null - eine Vorgabe, keine Bitte.
+test('die Anfrage verlangt das balance-Objekt unbedingt', () => {
+  const transport = fs.readFileSync('scripts/news/openai-transport.mjs', 'utf8');
+  assert.match(transport, /balance ist IMMER ein Objekt/);
+  assert.match(transport, /niemals null/);
 });
