@@ -3,6 +3,12 @@ import fs from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
+// 17.09.2026: Zahl und Banner haengen an der Herausgabezeit, nicht an der
+// Ereigniszeit. Vorher war eine Meldung, die wir mehr als eine Stunde nach dem
+// Ereignis herausgaben, ein "Nachtrag" und wurde von Zahl und Banner
+// ausgeschlossen. Bei der tatsaechlichen Laufzeit der Produktion traf das fast
+// jede Meldung: Natalies App-Symbol stand auf Null, obwohl stuendlich
+// Meldungen live gingen. Die Chronologie der Liste bleibt die Ereigniszeit.
 test("new badges distinguish a first visit, recent unseen news and historical backfill", () => {
   const app=fs.readFileSync("assets/js/news-pwa.js","utf8");
   const code=app.slice(app.indexOf("  function newestCardTimestamp("),app.indexOf("  async function initializeNotifications("));
@@ -10,18 +16,41 @@ test("new badges distinguish a first visit, recent unseen news and historical ba
   class Clock extends Date {static now(){return now;}}
   for(const stored of [null,'invalid','2026-09-08T00:00:00Z']) {
     const data=new Map(stored===null?[]:[['seen',stored]]),badges=[];
-    const cards=[['2026-09-09T10:00:00Z',false],['2026-09-12T14:00:00Z',false],['2026-09-12T13:00:00Z',true]].map(([date,late])=>{
-      const badge={hidden:false};return {dataset:{newsUpdatedAt:date,newsLateDelivery:String(late)},badge,querySelector:()=>badge};
+    // [Ereigniszeit, Herausgabezeit, Nachtrag]
+    const cards=[
+      ['2026-09-09T10:00:00Z','2026-09-09T10:30:00Z',false], // laengst herausgegeben
+      ['2026-09-12T14:00:00Z','2026-09-12T14:05:00Z',false], // frisch
+      ['2026-09-10T13:00:00Z','2026-09-12T13:30:00Z',true],  // Nachtrag: jetzt herausgegeben
+    ].map(([date,released,late])=>{
+      const badge={hidden:false};
+      return {dataset:{newsUpdatedAt:date,newsReleasedAt:released,newsLateDelivery:String(late)},badge,querySelector:()=>badge};
     });
     const markReadButton={hidden:false};
     const context={Date:Clock,cards,lastSeenKey:'seen',markReadButton,updateAppBadge:n=>badges.push(n),window:{localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)}}};
     vm.runInNewContext(`${code}\ninitializeNewsState()`,context);
     const returning=stored==='2026-09-08T00:00:00Z';
-    assert.deepEqual(cards.map(c=>!c.badge.hidden),[false,returning,false]);
-    assert.equal(badges.at(-1),returning?1:0);
+    // Der Nachtrag zaehlt jetzt mit: er ist gerade herausgegeben worden.
+    assert.deepEqual(cards.map(c=>!c.badge.hidden),[false,returning,returning]);
+    assert.equal(badges.at(-1),returning?2:0);
     assert.equal(markReadButton.hidden,!returning);
-    if(!returning)assert.equal(data.get('seen'),'2026-09-12T14:00:00.000Z');
+    if(!returning)assert.equal(data.get('seen'),'2026-09-12T14:05:00.000Z');
   }
+});
+
+// Ohne data-news-released-at (aeltere, noch zwischengespeicherte Seite) gilt
+// weiter die Ereigniszeit: die App darf daran nicht verstummen.
+test('ohne Herausgabezeit auf der Karte gilt die Ereigniszeit weiter', () => {
+  const app=fs.readFileSync("assets/js/news-pwa.js","utf8");
+  const code=app.slice(app.indexOf("  function newestCardTimestamp("),app.indexOf("  async function initializeNotifications("));
+  const now=Date.parse('2026-09-12T15:00:00Z');
+  class Clock extends Date {static now(){return now;}}
+  const data=new Map([['seen','2026-09-08T00:00:00Z']]),badges=[];
+  const cards=[['2026-09-12T14:00:00Z'],['2026-09-09T10:00:00Z']].map(([date])=>{
+    const badge={hidden:false};return {dataset:{newsUpdatedAt:date},badge,querySelector:()=>badge};
+  });
+  vm.runInNewContext(`${code}\ninitializeNewsState()`,{Date:Clock,cards,lastSeenKey:'seen',markReadButton:{hidden:false},
+    updateAppBadge:n=>badges.push(n),window:{localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)}}});
+  assert.equal(badges.at(-1),1);
 });
 
 test("Wirkungsticker registers real Web Push and preserves the periodic fallback", () => {
@@ -77,14 +106,21 @@ test('a later feed refresh cannot revive old badges or invent unread news on fir
  const app=fs.readFileSync('assets/js/news-pwa.js','utf8');
  const code=app.slice(app.indexOf('  async function checkForNews('),app.indexOf('  async function markNewsAsSeen('));
  const now=Date.parse('2026-09-12T15:00:00Z');class Clock extends Date{static now(){return now;}}
- const feed={items:[{date_modified:'2026-09-09T12:00:00Z'},{date_modified:'2026-09-12T14:00:00Z'},{date_modified:'2026-09-12T13:00:00Z',_woek_late_delivery:true},{date_modified:'2026-09-13T14:00:00Z'},{date_modified:'invalid'},{}]};
+ // Ereigniszeit ordnet, Herausgabezeit zaehlt. Der Nachtrag (Ereignis vom
+ // 10.09., heute herausgegeben) ist neu; die Meldung von uebermorgen ist es nicht.
+ const feed={items:[
+  {date_modified:'2026-09-09T12:00:00Z',_woek_released_at:'2026-09-09T12:30:00Z'},
+  {date_modified:'2026-09-12T14:00:00Z',_woek_released_at:'2026-09-12T14:00:00Z'},
+  {date_modified:'2026-09-10T13:00:00Z',_woek_released_at:'2026-09-12T13:00:00Z',_woek_late_delivery:true},
+  {date_modified:'2026-09-13T14:00:00Z',_woek_released_at:'2026-09-13T14:00:00Z'},
+  {date_modified:'invalid'},{}]};
  for(const stored of [null,'invalid','2026-09-08T00:00:00Z']){
   const data=new Map(stored===null?[]:[['seen',stored]]),badges=[],notifications=[];
   const context={Date:Clock,AbortController,navigator:{},cards:[],reloadStarted:false,latestFeedTimestamp:0,autoReloadKey:'reload',lastSeenKey:'seen',lastNotifiedKey:'notified',notificationTag:'news',newestCardTimestamp:()=>0,
    document:{visibilityState:'hidden',querySelector:()=>null},refreshStatus:{textContent:''},updateAppBadge:async n=>badges.push(n),registrationPromise:Promise.resolve({showNotification:async(...args)=>notifications.push(args)}),
    window:{setTimeout,clearTimeout,sessionStorage:{getItem:()=>null,setItem(){}},localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)},location:{reload(){throw Error('Unexpected reload');}}},fetch:async()=>({ok:true,json:async()=>feed})};
   await vm.runInNewContext(`${code}\ncheckForNews()`,context);
-  const returning=stored==='2026-09-08T00:00:00Z';assert.equal(badges.at(-1),returning?1:0);assert.equal(notifications.length,returning?1:0);
+  const returning=stored==='2026-09-08T00:00:00Z';assert.equal(badges.at(-1),returning?2:0);assert.equal(notifications.length,returning?1:0);
   if(!returning)assert.equal(data.get('seen'),'2026-09-12T14:00:00.000Z');
   await vm.runInNewContext('checkForNews()',context);assert.equal(notifications.length,returning?1:0);
  }
@@ -185,4 +221,48 @@ test('der Lesestand wird nur auf ausdrueckliche Handlung geschrieben', () => {
   // Der Push-Weg bleibt unberuehrt: die Zahl kommt aus dem Hintergrundlauf.
   assert.match(app, /await updateAppBadge\(updates\.length\);/, 'der Hintergrundlauf setzt die Zahl wieder selbst');
   assert.ok(!app.includes('const watching'), 'und unterdrueckt sie nicht bei offener Liste');
+});
+
+// 17.09.2026: Der Feed ist nach Ereigniszeit sortiert. items[0] ist damit die
+// Meldung mit dem jUengsten Ereignis, nicht die zuletzt herausgegebene. Von
+// zwoelf Auslieferungen an diesem Morgen verwarf Oracle neun als Dublette,
+// weil sich items[0] nicht geaendert hatte - Natalie bekam nichts.
+test('die Push-Kennung kommt von der zuletzt herausgegebenen Meldung', async () => {
+  const { publicationForFeed, newestRelease } = await import('../../scripts/news/publish-push.mjs');
+  const aeltestesEreignisZuletztHerausgegeben = {
+    id: 'https://wirkungsoekonomie.de/wirkungsticker/fed-leitzins/',
+    url: 'https://wirkungsoekonomie.de/wirkungsticker/fed-leitzins/',
+    title: 'US-Notenbank Fed erhöht Leitzins',
+    date_published: '2026-09-16T18:02:17Z', date_modified: '2026-09-16T18:02:17Z',
+    _woek_released_at: '2026-09-17T09:15:50Z',
+  };
+  const juengstesEreignis = {
+    id: 'https://wirkungsoekonomie.de/wirkungsticker/explosionen-frankfurt/',
+    url: 'https://wirkungsoekonomie.de/wirkungsticker/explosionen-frankfurt/',
+    title: 'Erneute Explosionen in Frankfurt',
+    date_published: '2026-09-17T08:10:15Z', date_modified: '2026-09-17T08:10:15Z',
+    _woek_released_at: '2026-09-17T09:09:49Z',
+  };
+  // Feed-Reihenfolge: nach Ereigniszeit, also das jUengste Ereignis vorn.
+  const feed = { items: [juengstesEreignis, aeltestesEreignisZuletztHerausgegeben] };
+  assert.equal(newestRelease(feed.items), aeltestesEreignisZuletztHerausgegeben);
+  const publication = publicationForFeed(feed);
+  assert.equal(publication.publicationId, `${aeltestesEreignisZuletztHerausgegeben.id}@2026-09-17T09:15:50Z`);
+  assert.equal(publication.url, aeltestesEreignisZuletztHerausgegeben.url);
+  // Die Kennung muss sich unterscheiden, sonst verwirft Oracle den Versand.
+  assert.notEqual(publication.publicationId, `${juengstesEreignis.id}@${juengstesEreignis.date_modified}`);
+  // Aeltere Feeds ohne das Feld behalten das bisherige Verhalten.
+  const alt = { items: [{ id: 'a', url: 'https://wirkungsoekonomie.de/wirkungsticker/a/', date_modified: '2026-09-17T08:10:15Z' }] };
+  assert.equal(publicationForFeed(alt).publicationId, 'a@2026-09-17T08:10:15Z');
+  assert.equal(publicationForFeed({ items: [] }), null);
+});
+
+// Der Feed muss die Herausgabezeit tatsaechlich mitliefern, sonst faellt die
+// ganze Kette stillschweigend auf die Ereigniszeit zurueck.
+test('der Feed-Bauer liefert die Herausgabezeit mit', () => {
+  const build = fs.readFileSync('scripts/news/build.mjs', 'utf8');
+  assert.match(build, /_woek_released_at: item\.released_at/);
+  assert.equal([...build.matchAll(/_woek_released_at: item\.released_at/g)].length, 2, 'beide JSON-Feeds');
+  assert.match(build, /released_at: story\.published_at/);
+  assert.match(build, /data-news-released-at="\$\{escapeHtml\(story\.published_at \|\| ""\)\}"/);
 });
