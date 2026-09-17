@@ -28,3 +28,37 @@ test('already committed usage and a report from a different runner cannot be cha
   assert.throws(() => recoverUsageReport({runs:[]},report,{...workflow,created_at:'2026-09-07T00:00:00Z'},'now'),/BINDING_INVALID/);
   assert.throws(() => recoverUsageReport({runs:[]},report,{...workflow,conclusion:'success'},'now'),/BINDING_INVALID/);
 });
+
+// Natalie am 17.09.2026: „wir hatten gesagt, dass es Prozess ist, nur 1x die
+// API bis hin zur Veröffentlichung hin zu benutzen." Gemessen waren es 263
+// Aufrufe auf 171 Meldungen (1,54 je Meldung) - aber die Nutzungsakte hielt nur
+// die Summe fest, sodass die Ursache nicht zu erkennen war. Ein zusaetzlicher
+// Aufruf hat drei moegliche Gruende, und nur einer davon ist die verbotene
+// Nachbesserung. Deshalb werden sie getrennt gebucht und dauerhaft aufbewahrt.
+test('die Nutzungsakte trennt Anfrageversuch, Nachbesserung und gescheiterten Aufruf', () => {
+  const quelle = fs.readFileSync('scripts/news/run.mjs', 'utf8');
+
+  // In der Nutzungsakte, nicht nur im fluechtigen Lauf-Bericht.
+  for (const feld of ['ai_request_attempts: Number(report.ai_request_attempts || 0)',
+    'ai_repair_calls: Number(report.ai_repair_calls || 0)',
+    'ai_failed_calls: Number(report.ai_failed_calls || 0)']) {
+    assert.ok(quelle.includes(feld), `fehlt in der Nutzungsakte: ${feld}`);
+  }
+
+  // Getrennt gezaehlt: der Anfrageversuch erhoeht nicht den Nachbesserungszaehler.
+  assert.match(quelle, /report\.ai_request_attempts = Number\(report\.ai_request_attempts \|\| 0\) \+ Number\(aiResult\.request_attempts \|\| 1\)/);
+  assert.match(quelle, /report\.ai_repair_calls = Number\(report\.ai_repair_calls \|\| 0\) \+ Number\(aiResult\.repair_calls \|\| 0\)/);
+  assert.match(quelle, /report\.ai_failed_calls = Number\(report\.ai_failed_calls \|\| 0\)/);
+
+  // Die Summe bleibt die Summe: das Stundenkontingent zaehlt weiter alles Bezahlte.
+  assert.match(quelle, /report\.ai_calls \+= Number\(aiResult\.request_attempts \|\| 1\) \+ Number\(aiResult\.repair_calls \|\| 0\)/);
+});
+
+// Das Kontingent darf eine schlechte Ausbeute nicht mit mehr bezahlten Aufrufen
+// ausgleichen - das war die Begruendung fuer den Wert 6 und widerspricht der Regel.
+test('das Stundenkontingent begruendet sich nicht mit der Ausbeute', () => {
+  const quelle = fs.readFileSync('scripts/news/stundenkontingent.mjs', 'utf8');
+  assert.ok(!/brauchen rund sechs Aufrufe/.test(quelle), 'die alte Begruendung ist entfernt');
+  assert.match(quelle, /nur 1x die API/); // Natalies Regel steht als Begruendung im Modul
+  assert.match(quelle, /Eine schlechte Ausbeute darf nicht mit mehr/);
+});
