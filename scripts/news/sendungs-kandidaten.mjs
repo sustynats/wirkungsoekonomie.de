@@ -232,8 +232,15 @@ export function transcriptDeadline(publishedAt, rule) {
   return new Date(naive - berlinOffsetMinutes(naive) * 60000).toISOString();
 }
 
+// MediathekViewWeb fuehrt die Sendung im Feld `topic`, die einzelne Folge in
+// `title`. Gesucht wurde bisher im Titel - das trifft nur zu, wenn der
+// Sendungsname im Folgentitel wiederholt wird. Bei „maybrit illner", „Markus
+// Lanz" und „maischberger" ist das so, bei MAITHINK X nicht: dort heissen die
+// Folgen „Was ist Musik? (S2026/E06)". Diese Folgen waren fuer die Abfrage
+// unsichtbar (17.09.2026, Natalie: „Es fehlen noch die letzten Sendungen von
+// Lesch und MaiThink"). Gesucht wird deshalb im Sendungsfeld.
 export function mediathekQueryBody(show, size = 12) {
-  return JSON.stringify({ queries: [{ fields: ['title'], query: show.mediathek.title }, { fields: ['channel'], query: show.mediathek.channel }],
+  return JSON.stringify({ queries: [{ fields: ['topic'], query: show.mediathek.topic || show.mediathek.title }, { fields: ['channel'], query: show.mediathek.channel }],
     sortBy: 'timestamp', sortOrder: 'desc', future: false, offset: 0, size });
 }
 // Dieselbe Folge liegt mehrfach in der Liste: Fassung mit Untertiteln, Fassung
@@ -323,7 +330,13 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const feedErrors = [], fresh = [], duplicates = [];
     for (const show of shows || loadShows(root)) {
       try {
-        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays, limit: 3 });
+        // Sendungen mit festem Rhythmus sind nach sieben Tagen erledigt. Reihen
+        // wie Terra X Lesch & Co oder MAITHINK X senden in Staffeln und liegen
+        // dazwischen monatelang als Wiederholung in der Mediathek - fuer die
+        // gilt das Fenster ihrer Sendung, sonst waere ihre letzte Folge nie
+        // vorgeschlagen worden.
+        const showAgeDays = Number(show.max_age_days) > 0 ? Number(show.max_age_days) : maxAgeDays;
+        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays: showAgeDays, limit: 3 });
         for (const episode of episodes) {
           // Die Kennung der Mediathek wechselt, sobald die untertitelte Fassung
           // gewinnt. Der Vermerk haengt deshalb an der Folge selbst (Titel ohne
