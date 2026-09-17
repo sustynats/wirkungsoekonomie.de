@@ -9,6 +9,7 @@
 import path from 'node:path';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
 import { officialShowName } from './show-identity.mjs';
+import { repairMissingPackets } from './auftrag-einreichen.mjs';
 import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, noteEditorialDraft, tickerStoriesInWindow, sharedHourlyRoom, configuredHourlyQuota, waitingRecord } from './stundenkontingent.mjs';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -402,6 +403,12 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // Arbeit liegt. Ein Abbruch ohne Vermerk wuerde die Reserve verfallen
     // lassen - und genau dann bleibt die Redaktionsarbeit liegen.
     const rows = await store.all();
+    // Ein Auftrag in der Ablage ohne Paket im Postfach war am 17.09.2026 das
+    // Ende der ganzen Spur: processEditorialRequest liest das Paket, brach mit
+    // BRIDGE_DROPBOX_NOT_FOUND ab und nahm den Lauf mit. Die Reparatur gehoert
+    // deshalb hierher, in den Lauf, der die Auftraege zieht - nicht in den
+    // Einreichweg, der nur laeuft, wenn Natalie etwas einreicht.
+    const repairedPackets = await repairMissingPackets(live, rows, now());
     await store.observe(EDITORIAL_WAITING_KEY, waitingRecord(selectEditorialRequests(rows, { limit: 500 }).length, now()));
     // Ihre eigenen Auftraege laufen auch dann, wenn Tageszahl und Stundenplatz
     // erschoepft sind: sie hat sie ausdruecklich gestellt, es sind wenige, und
@@ -439,7 +446,16 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     for (const row of candidates) {
       if (paid >= budget) break;
       if (superseded.has(row.input.job_id)) { results.push({ job_id: row.input.job_id, status: 'superseded_by_supplement' }); continue; }
-      const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl });
+      // Ein einzelner Auftrag, der nicht lesbar ist, darf die anderen nicht
+      // mitnehmen. Vorher brach der ganze Lauf ab, und damit lag auch die
+      // automatische Spur - anderthalb Stunden am 17.09.2026.
+      let result;
+      try { result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl }); }
+      catch (error) {
+        const code = /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EDITORIAL_REQUEST_FAILED';
+        result = { job_id: row.input.job_id, status: 'request_failed', error: code };
+        await store.observe(`github-editorial-failure:${row.input.job_id}`, { job_id: row.input.job_id, error: code, at: now() }).catch?.(() => {});
+      }
       results.push(result);
       if (PAID_STATUS.has(result.status)) {
         paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6));
@@ -450,7 +466,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       }
       if (result.status === 'provider_unavailable') break;
     }
-    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
+    return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }
