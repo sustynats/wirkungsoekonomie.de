@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-17T05:37:37.121Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-17T06:52:32.895Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-neue-russland-sanktionen-was-der-us-kongress-beschlossen-hat-458288/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-neue-russland-sanktionen-was-der-us-kongress-beschlossen-hat-458288/",
+      "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
+      "summary": "Das US-Repräsentantenhaus hat laut Deutschlandfunk ein neues Sanktionspaket gegen Russland verabschiedet. Unterzeichnung, Umsetzung und konkrete Folgen für Energiehandel und politische Zuständigkeiten sind noch offen.",
+      "date_published": "2026-09-17T06:31:24.000Z",
+      "date_modified": "2026-09-17T06:31:24.000Z",
+      "tags": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/grossbrand-in-mannheimer-recyclingbetrieb-fenster-und-turen-geschlossen-halten-e35b70/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/grossbrand-in-mannheimer-recyclingbetrieb-fenster-und-turen-geschlossen-halten-e35b70/",
@@ -1840,8 +1871,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/nach-explosionen-in-weimar-fehlt-vom-hausbesitzer-jede-spur-18d479/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/nach-explosionen-in-weimar-fehlt-vom-hausbesitzer-jede-spur-18d479/",
-      "title": "Nach Explosionen in Weimar fehlt vom Hausbesitzer jede Spur",
-      "summary": "Nach zwei Explosionen und einem Großbrand in Weimar-Lützendorf sucht die Polizei nach dem 61-jährigen Hausbesitzer. Wohnhaus und Nebengebäude wurden zerstört; Ursache, Aufenthaltsort des Mannes und Schadenshöhe sind noch offen.",
+      "title": "Explosionen in Weimar: Suche nach 61-jährigem Hausbesitzer dauert an",
+      "summary": "In Weimar-Lützendorf wird nach zwei Explosionen weiter nach einem 61-jährigen Hausbesitzer gesucht. Die Polizei vermutet vorsätzlich ausgelöste Explosionen, doch Aufenthaltsort, Urheber und Hintergründe sind offen.",
       "date_published": "2026-09-14T06:18:45.000Z",
       "date_modified": "2026-09-14T06:18:45.000Z",
       "tags": [
@@ -1849,7 +1880,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/olpreis-anstieg-auf-rund-107-dollar-pro-barrel-der-sorte-brent-4e660b/",
