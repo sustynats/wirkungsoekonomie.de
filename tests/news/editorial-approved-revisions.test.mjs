@@ -114,3 +114,32 @@ test('personal factual correction previews and imports only after fresh approval
  assert.equal(updated.content_hash,base.content_hash);
  assert.ok(editorialAnalysisPage(base).includes('data-editorial-content-hash="'+base.content_hash+'"'));
 });
+
+// 17.09.2026: Natalie stand vor einer freigegebenen Fassung zu „Markus Lanz vom
+// 15. September 2026 (S2026/E99)", deren Folge seit dem Vortag unter anderem
+// Titel veroeffentlicht war. Die Veroeffentlichung scheiterte, die Fassung
+// wurde geparkt - und der Grund hiess nicht, was er war. Eine zweite Analyse
+// zur selben Folge ist eine Dublette, auch mit anderem Titel und anderer
+// Adresse.
+test('eine zweite Analyse zur selben Folge heisst beim Namen', async () => {
+  const { episodeIdentity } = await import('../../scripts/news/bridge/personal-publication.mjs');
+  const folge = { source_media: { show: 'Markus Lanz', episode_title: 'Markus Lanz vom 15. September 2026 (S2026/E99)' } };
+  // Gleiche Folge, andere Schreibweise: dieselbe Identitaet.
+  assert.equal(episodeIdentity(folge), episodeIdentity({ source_media: { show: 'markus lanz', episode_title: 'Markus Lanz vom 15.  September 2026 – (S2026/E99)' } }));
+  // Andere Folge derselben Sendung: andere Identitaet.
+  assert.notEqual(episodeIdentity(folge), episodeIdentity({ source_media: { show: 'Markus Lanz', episode_title: 'Markus Lanz vom 16. September 2026 (S2026/E100)' } }));
+  // Ohne Sendung oder Folge greift die Pruefung nicht - ein Beitrag ohne
+  // Sendungsbezug darf nicht an einer erfundenen Identitaet haengen.
+  assert.equal(episodeIdentity({ source_media: { show: 'Markus Lanz' } }), null);
+  assert.equal(episodeIdentity({ source_media: {} }), null);
+  assert.equal(episodeIdentity(null), null);
+  // Die echte veroeffentlichte Ausgabe traegt genau diese Identitaet.
+  const editions = JSON.parse(fs.readFileSync('data/news/personal-editorials.json', 'utf8')).editions;
+  const online = editions.find((edition) => edition.slug.startsWith('wenn-politische-unruhe-selbst-zum-thema-wird'));
+  if (online) assert.equal(episodeIdentity(online), episodeIdentity(folge), 'die Folge vom 15.09. ist veroeffentlicht');
+  // Und der Import wirft den sprechenden Code.
+  const quelle = fs.readFileSync('scripts/news/bridge/personal-publication.mjs', 'utf8');
+  assert.match(quelle, /PERSONAL_EPISODE_ALREADY_PUBLISHED/);
+  assert.ok(quelle.indexOf('PERSONAL_SLUG_COLLISION') < quelle.indexOf('PERSONAL_EPISODE_ALREADY_PUBLISHED'),
+    'die Adresskollision wird zuerst geprueft, dann die Folgenidentitaet');
+});

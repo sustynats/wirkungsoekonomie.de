@@ -8,6 +8,7 @@ import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
 import { bridgeSession } from '../news/bridge/remote.mjs';
 import { OPS_STATUS_KEY, operationalStatus } from './betriebsstatus.mjs';
+import { PARKED_KEY } from '../news/bridge/observation-keys.mjs';
 import { feedDate } from '../news/feed-order.mjs';
 import { observeLiveNews, workflowChecks, planRecovery, recoverDelivery, RECOVERY_WORKFLOWS } from './news-recovery.mjs';
 
@@ -172,6 +173,11 @@ export function aiFailureReason(report = {}) {
 }
 
 export function evaluateChecks(data, now) {
+  // Eine Fassung, deren Veroeffentlichung gescheitert ist, liegt geparkt in der
+  // privaten Freigabeliste. Sie stand in keiner Pruefung - Natalie fand sie am
+  // 17.09. selbst, waehrend der Monitor 19 von 20 gruen meldete. main() legt den
+  // Vermerk in data.parked, damit diese Pruefung synchron bleibt.
+  const parked = Array.isArray(data.parked) ? data.parked : [];
   const summary = summarizeNews(data, now);
   const bridgeMode = data.processing_mode === 'dropbox_chatgpt_bridge' || data.report?.processing_mode === 'dropbox_chatgpt_bridge';
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
@@ -201,6 +207,10 @@ export function evaluateChecks(data, now) {
     && /^HIGGSFIELD_/.test(s.title_image?.refresh_failure || s.title_image?.fallback_reason || '')).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: missingImages === 0, immediate: false,
     reason: `${missingImages} veröffentlichte Meldung(en) ohne nutzbares Titelbild; ${providerFallbacks} mit Kartenfallback nach Anbieterhinweis (das ist der gewollte Zustand).` });
+  checks.push({ id: 'parked-editions', name: 'Geparkte Fassungen', ok: parked.length === 0, immediate: false,
+    reason: parked.length
+      ? `${parked.length} freigegebene Fassung(en) konnten nicht veroeffentlicht werden und warten in der privaten Freigabeliste: ${parked.map((entry) => entry.code).filter(Boolean).slice(0, 3).join(', ')}. Dort fehlt der Freigeben-Knopf; die App nennt den Grund.`
+      : 'Keine freigegebene Fassung haengt nach einem Veroeffentlichungsfehler.' });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
   const freshCoverage = age(summary.coverageAudit?.checked_at, now) >= 0 && age(summary.coverageAudit?.checked_at, now) <= 45;
@@ -394,6 +404,12 @@ export async function main() {
   if(data.processing_mode==='dropbox_chatgpt_bridge') {
     try { data.bridge=await bridgeSession().monitor(); }
     catch { data.bridge={reachable:false}; }
+  }
+  // Geparkte Fassungen: der Vermerk kommt aus derselben Ablage wie der Befund.
+  data.parked = [];
+  if (!dryRun) {
+    try { data.parked = (await bridgeSession().store.observation(PARKED_KEY))?.parked || []; }
+    catch { data.parked = []; }
   }
   if (!dryRun && (!process.env.GH_TOKEN || !process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN || !/^\d{15,22}$/.test(process.env.WOEK_MONITOR_DISCORD_USER_ID || ''))) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
   const statePath = 'monitor-state.json';
