@@ -1,11 +1,43 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-17T02:07:27.052Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-17T03:22:19.902Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/usa-kongress-beschliesst-gesetz-fur-russland-sanktionen-5d34fb/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/usa-kongress-beschliesst-gesetz-fur-russland-sanktionen-5d34fb/",
+      "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
+      "summary": "Das US-Repräsentantenhaus hat laut Deutschlandfunk ein Sanktionspaket gegen Russland angenommen. Seine Umsetzung und mögliche Folgen für Menschen, Umwelt und internationale Politik sind noch offen.",
+      "date_published": "2026-09-17T02:45:49.000Z",
+      "date_modified": "2026-09-17T02:45:49.000Z",
+      "tags": [
+        "Geopolitik",
+        "Finanzen",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/berlin-brandenburg-us-kongress-beschliesst-gesetz-fur-russland-sanktionen-4e40de/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/berlin-brandenburg-us-kongress-beschliesst-gesetz-fur-russland-sanktionen-4e40de/",
@@ -3012,8 +3044,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce/",
-      "title": "Autobahn in die Schweiz wegen Polizei-Einsatzes gesperrt - SWR meldet zwei Festnahmen",
-      "summary": "Die A861 in die Schweiz war am Mittwoch wegen eines Polizeieinsatzes gesperrt. Nach SWR-Informationen gab es zwei Festnahmen; weitere Details bleiben offen.",
+      "title": "A861 in die Schweiz wegen Polizeieinsatzes gesperrt",
+      "summary": "Die A861 zur Schweiz wurde wegen eines Polizeieinsatzes gesperrt; ein Sprengstoff-Alarm und zwei Festnahmen werden berichtet. Auslöser, Verdachtslage und Folgen für den Grenzverkehr bleiben im vorliegenden Einzelbericht offen.",
       "date_published": "2026-09-09T18:25:40.000Z",
       "date_modified": "2026-09-09T18:25:40.000Z",
       "tags": [
@@ -3021,7 +3053,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587/",
