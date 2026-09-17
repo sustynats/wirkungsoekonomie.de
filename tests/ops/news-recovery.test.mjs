@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { observeLiveNews, planRecovery, recoverDelivery, workflowChecks, workflowFailed } from '../../scripts/ops/news-recovery.mjs';
+import { readFile } from 'node:fs/promises';
+import { dispatchRejected, observeLiveNews, planRecovery, recoverDelivery, workflowChecks, workflowFailed } from '../../scripts/ops/news-recovery.mjs';
 
 const now = '2026-09-14T04:00:00Z', head = 'a'.repeat(40);
 const item = (slug, date = '2026-09-14T03:00:00Z') => ({ url: `https://wirkungsoekonomie.de/wirkungsticker/${slug}/`,
@@ -121,4 +122,63 @@ test('ein gescheiterter oder überfälliger Redaktionslauf bekommt genau einen e
   await recoverDelivery({ state, actions: [once], save: async () => {}, refresh: async () => ({ head, runs: [failed] }), dispatch: async (workflow, options) => dispatched.push([workflow, options]) });
   assert.deepEqual(dispatched, [['redaktionsworker.yml', { ref: 'main' }]]);
   assert.equal(state.recovery_attempts[0].status, 'dispatched');
+});
+
+// Am 16.09.2026 rief die Selbstheilung den Ticker mit der Eingabe bridge_phase
+// auf, die es im Direktbetrieb nicht mehr gibt. GitHub wies jeden Aufruf ab,
+// und weil ein abgewiesener Anlauf als verbraucht zaehlte, war die
+// Selbstheilung danach 24 Stunden aus. Der Test liest die echte
+// Workflow-Datei, damit ein Aufruf und seine Eingaben nie wieder auseinanderlaufen.
+test('jede Eingabe der Selbstheilung ist im Workflow wirklich deklariert', async () => {
+  const yaml = await readFile(new URL('../../.github/workflows/wirkungsticker.yml', import.meta.url), 'utf8');
+  const block = yaml.slice(yaml.indexOf('workflow_dispatch:'));
+  const declared = new Set();
+  for (const line of block.slice(block.indexOf('inputs:')).split('\n').slice(1)) {
+    if (!line.trim()) continue;
+    if (/^ {0,4}\S/.test(line)) break; // Der Eingabeblock ist hier zu Ende.
+    if (/^ {6}\S/.test(line)) declared.add(line.trim().replace(/:.*$/, ''));
+  }
+  assert.ok(declared.has('request_id'), 'request_id muss deklariert sein');
+  assert.ok(!declared.has('bridge_phase'), 'bridge_phase gibt es im Direktbetrieb nicht');
+
+  const sent = [];
+  await recoverDelivery({ state: {}, actions: planRecovery({ ...input(), pendingPublication: 0, bridgeMode: false,
+      snapshot: { ...snapshot(), 'wirkungsticker.yml': [{ status: 'completed', conclusion: 'failure',
+        created_at: '2026-09-14T03:50:00Z' }] } }),
+    refresh: async () => ({ head, runs: [] }), save: async () => {},
+    dispatch: async (workflow, body) => sent.push({ workflow, body }) });
+  const ticker = sent.filter(call => call.workflow === 'wirkungsticker.yml');
+  assert.ok(ticker.length, 'der Ticker wird bei einem gescheiterten Lauf angestossen');
+  for (const call of ticker) {
+    assert.equal(call.body.ref, 'main');
+    for (const key of Object.keys(call.body.inputs || {})) assert.ok(declared.has(key), `unbekannte Eingabe ${key}`);
+  }
+});
+
+test('ein abgewiesener Aufruf verbraucht kein Kontingent, ein unklarer schon', async () => {
+  const at = (minutes) => new Date(Date.parse(now) - minutes * 60_000).toISOString();
+  const attempt = (status, minutes) => ({ key: `k${minutes}`, workflow: 'deploy.yml', at: at(minutes), status,
+    ...(status === 'dispatched' ? {} : { error: 'MONITOR_STATE_HTTP_422' }) });
+
+  // Vier abgewiesene Anlaeufe: die Selbstheilung bleibt handlungsfaehig.
+  assert.ok(planRecovery({ ...input(), state: { recovery_attempts:
+    [40, 60, 90, 120].map(m => attempt('dispatch_rejected', m)) } }).length,
+    'abgewiesene Anlaeufe duerfen die Selbstheilung nicht abschalten');
+
+  // Vier unklare Anlaeufe: es kann je ein Lauf angelaufen sein, also Schluss.
+  assert.deepEqual(planRecovery({ ...input(), state: { recovery_attempts:
+    [40, 60, 90, 120].map(m => attempt('dispatch_uncertain', m)) } }), [],
+    'unklare Anlaeufe zaehlen weiter, damit nie zwei Laeufe dasselbe bauen');
+
+  assert.equal(dispatchRejected(new Error('MONITOR_STATE_HTTP_422')), true);
+  assert.equal(dispatchRejected(new Error('HTTP 404')), true);
+  assert.equal(dispatchRejected(new Error('MONITOR_STATE_HTTP_502')), false);
+  assert.equal(dispatchRejected(new Error('network response lost')), false);
+
+  // Der Grund landet im Vermerk, nicht im Nichts.
+  const state = {};
+  await recoverDelivery({ state, actions: planRecovery(input()), refresh: async () => ({ head, runs: [] }),
+    save: async () => {}, dispatch: async () => { throw new Error('MONITOR_STATE_HTTP_422'); } });
+  assert.equal(state.recovery_attempts[0].status, 'dispatch_rejected');
+  assert.equal(state.recovery_attempts[0].error, 'MONITOR_STATE_HTTP_422');
 });
