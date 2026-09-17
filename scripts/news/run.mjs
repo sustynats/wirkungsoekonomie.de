@@ -1757,6 +1757,13 @@ export async function runWirkungsticker(options = {}) {
         report.ai_provider_successes += 1;
         report.provider ||= aiResult.provider;
         report.model ||= aiResult.model;
+        // Natalies Regel vom 16.09.2026: genau ein Aufruf je Meldung bis zur
+        // Veroeffentlichung. Messbar ist das nur, wenn die drei Gruende fuer
+        // einen zusaetzlichen Aufruf getrennt gebucht werden: Anfrageversuch
+        // (Netz, unvollstaendige Antwort), Nachbesserung (Vertragsverstoss des
+        // Modells) und gescheiterter Aufruf. Bisher stand nur die Summe in der
+        // Nutzungsakte - 263 Aufrufe auf 171 Meldungen, ohne erkennbare Ursache.
+        report.ai_request_attempts = Number(report.ai_request_attempts || 0) + Number(aiResult.request_attempts || 1);
         report.ai_calls += Number(aiResult.request_attempts || 1) + Number(aiResult.repair_calls || 0);
         // Ob der Anbieter das Antwortschema angenommen hat, ist der Unterschied
         // zwischen „kann nichts fehlen" und „hoffentlich fehlt nichts". Ohne
@@ -1877,6 +1884,7 @@ export async function runWirkungsticker(options = {}) {
       } catch (error) {
         if (!aiCostRecorded) {
           const cost = failedRequestCost(aiRequestStarted ? error : { requestAttempts: 0 });
+          report.ai_failed_calls = Number(report.ai_failed_calls || 0) + (aiRequestStarted ? Number(error?.requestAttempts ?? 1) : 0);
           report.ai_calls += aiRequestStarted ? Number(error?.requestAttempts ?? 1) : 0;
           report.prompt_chars_sent += Number(error?.promptChars || 0);
           report.input_tokens += cost.input_tokens;
@@ -2069,6 +2077,9 @@ export async function runWirkungsticker(options = {}) {
       eligible_stories: report.eligible_stories,
       ai_stories: report.ai_stories,
       ai_requests: report.ai_calls,
+      ai_request_attempts: Number(report.ai_request_attempts || 0),
+      ai_repair_calls: Number(report.ai_repair_calls || 0),
+      ai_failed_calls: Number(report.ai_failed_calls || 0),
       reviews_reused: report.reviews_reused,
       ai_retries_cooling_down: report.ai_retries_cooling_down || 0,
       input_holds: report.input_holds.length,
