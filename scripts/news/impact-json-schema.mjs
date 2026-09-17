@@ -82,11 +82,21 @@ const dimension = object({
   rationale: text('Begründung des Potenzials, Pflichtfeld.'),
   primary_paths: list(path, 'Mindestens ein Hauptpfad, nur main_path oder counter_path.'),
   secondary_paths: list(path, 'Neben- und Gegenpfade, darf leer sein.'),
-  balance: { type: ['object', 'null'], additionalProperties: false, required: ['comparable_material_paths', 'protection_boundary_decisive', 'rationale'],
+  // Ob dieses Objekt gebraucht wird, entschied bisher das Modell: Pflicht bei
+  // direction mixed „oder maßgeblicher Schutzgrenze", sonst null. Die
+  // Schutzgrenze rechnet aber der Server erst danach aus den Wirkpfaden aus -
+  // das Modell musste vorausahnen, was es nicht wissen kann, lieferte null, und
+  // das Gate forderte einen zweiten bezahlten Aufruf nach. Am 17.09.2026 war
+  // das der haeufigste Grund fuer eine Nachlieferung (IMPACT_BALANCE_REQUIRED).
+  // Ein striktes Schema kann „Pflicht, wenn" nicht ausdruecken, deshalb wird
+  // das Objekt immer verlangt. Die beiden Booleans leitet der Server ohnehin
+  // selbst ab (deriveAssessmentCalculations); oeffentlich sichtbar ist nichts
+  // davon, die Nutzlast traegt nur Staerke, Richtung und Status.
+  balance: { type: 'object', additionalProperties: false, required: ['comparable_material_paths', 'protection_boundary_decisive', 'rationale'],
     properties: { comparable_material_paths: { type: 'boolean', description: 'Vergleichbar starke materielle Pfade.' },
       protection_boundary_decisive: { type: 'boolean', description: 'Maßgebliche Schutzgrenze.' },
-      rationale: text('Abwägung der Hauptpfade.') },
-    description: 'Bei direction mixed oder maßgeblicher Schutzgrenze Pflicht, sonst null.' },
+      rationale: text('Abwägung der Hauptpfade. Bei eindeutiger Richtung ein Satz, warum keine Abwägung nötig ist.') },
+    description: 'Immer mitliefern. Die beiden Booleans setzt der Server aus den Wirkpfaden; maßgeblich ist die rationale.' },
 }, 'Eine modellierte MPD-Dimension.');
 
 const observedEffect = object({

@@ -2094,6 +2094,11 @@ export async function runWirkungsticker(options = {}) {
       updated_stories: report.updated_stories,
       queue_completed: report.queue_completed,
     },
+    // Ohne die Ursachen-Codes ist die Nachbesserungsquote eine Zahl ohne
+    // Ursache. Sie standen bisher nur im Bericht des letzten Laufs und waren
+    // beim naechsten ueberschrieben - ueber Tage also nicht auswertbar.
+    ...(report.ai_repair_findings && Object.keys(report.ai_repair_findings).length
+      ? { repair_findings: { ...report.ai_repair_findings } } : {}),
     ai: report.ai_calls ? {
       requests: report.ai_calls,
       provider: report.provider,
