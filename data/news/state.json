@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-17T06:07:34.063Z",
+  "last_successful_run": "2026-09-17T06:15:15.398Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -86772,6 +86772,11 @@
     }
   },
   "pending_story_ids": [
+    "wt-a2101630c4ac817d",
+    "wt-7fc6ef7afc458288",
+    "wt-5aad0e3bf82a11eb",
+    "wt-d39c9be81741d0bf",
+    "wt-252bb18a5bbf8ab8",
     "wt-9d21972a5692e1b2",
     "wt-825da5fbd8a0403e",
     "wt-157adac5474b08c0",
@@ -86802,7 +86807,6 @@
     "wt-abe1aff88fdd631e",
     "wt-76f2854d9f481f4b",
     "wt-3aa24b36aef21077",
-    "wt-252bb18a5bbf8ab8",
     "wt-c46eaf3fa3e1d9ce",
     "wt-e9f469686def2b9f",
     "wt-6b366287680c22e7",
@@ -87167,7 +87171,6 @@
     "wt-b440e799fd5ac1ec",
     "wt-df47c22457341601",
     "wt-5f915b79b8e253e8",
-    "wt-4133c7a83203a3ec",
     "wt-53d0ddcf12c399e4",
     "wt-5a8930201362e039",
     "wt-426ab052c0305092",
@@ -87417,14 +87420,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-7fc6ef7afc458288",
-    "wt-5aad0e3bf82a11eb",
-    "wt-a2101630c4ac817d",
-    "wt-d39c9be81741d0bf"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-17T06:07:34.063Z",
+  "last_attempted_run": "2026-09-17T06:15:15.398Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1537,
@@ -89778,16 +89777,6 @@
       "version": "2026-09-10.2",
       "checked_at": "2026-09-10T09:57:19.267Z"
     },
-    "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-merz-friedensgespraeche-sumy,ukraine-news-10-09-2026-100.html": {
-      "input_hash": "271538ee1b4b947741893260",
-      "version": "2026-09-09.1",
-      "checked_at": "2026-09-10T06:10:25.721Z"
-    },
-    "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html": {
-      "input_hash": "a44be7e134ff802042299f3a",
-      "version": "2026-09-09.1",
-      "checked_at": "2026-09-10T06:10:25.721Z"
-    },
     "https://www.wiwo.de/politik/konjunktur/verbraucherpreise-teure-energie-treibt-inflation-an-die-drei-prozent-marke/100253445.html": {
       "input_hash": "ef15cb6633e1b1804854ffc8",
       "version": "2026-09-09.1",
@@ -90352,6 +90341,11 @@
       "input_hash": "a563eabedf2d1f3cd9dbfdd4",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-17T06:07:34.063Z"
+    },
+    "wt-7fc6ef7afc458288": {
+      "input_hash": "a563eabedf2d1f3cd9dbfdd4",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-17T06:15:15.398Z"
     }
   }
 }
