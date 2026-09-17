@@ -257,6 +257,14 @@ Monatsrahmen traegt 1,21 USD am Tag. Erst wenn ein Aufruf je Veroeffentlichung
 gilt, ist der Umstieg bezahlbar. Das ist Natalies eigene Regel, und sie ist
 hier die Sperre.
 
+**1a. Natalies Freigaben duerfen nicht am Lage-Takt haengen.** Die Uebernahme
+freigegebener Fassungen und die Quittung laufen heute in jedem
+Viertelstundenlauf, weil `schedule.mjs` im Direktbetrieb fuer jeden geplanten
+Lauf `should_run=true` liefert. Wird die Veroeffentlichung auf drei Lagen
+umgestellt, darf dieser Schritt **nicht** mit an den Lage-Takt gebunden werden:
+eine Freigabe um 13:00 wuerde sonst bis 18:00 warten. Verbindlich bleibt, was
+am 17.09. gemessen wurde: Freigabe 19:42, live 19:56 - vierzehn Minuten.
+
 **2. Die Nachbesserungsquote selbst.** Gemessen 1,50 Aufrufe je Meldung, 50 %
 der bezahlten Meldungen brauchen einen zweiten Aufruf. Eine Ursache ist
 behoben (#868), eine weitere sichtbar gemacht (#873: ein stiller Rueckfall auf
