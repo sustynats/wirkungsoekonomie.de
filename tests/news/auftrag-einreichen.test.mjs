@@ -61,7 +61,7 @@ test('ohne Kennung des Redaktionstisches wird nichts eingereiht', async () => {
   const session = (rows) => ({
     store: { acquire: async () => true, release: async () => true, all: async () => rows,
       get: async () => null, put: async () => { throw new Error('darf nicht schreiben'); }, observe: async () => true },
-    transport: {},
+    transport: { writeAtomic: async () => { throw new Error('darf nicht schreiben'); }, read: async () => '{}' },
   });
   assert.deepEqual(await submitOrder({ session: session([]), env: {}, kind: 'news', brief, links }), { status: 'owner_unknown' });
 });
@@ -75,10 +75,67 @@ test('derselbe Auftrag wird nicht zweimal eingereiht', async () => {
     store: { acquire: async () => true, release: async () => true, all: async () => [reference, bekannt],
       get: async (id) => (id === reference.input.job_id ? { ...reference, intake: { owner } } : null),
       put: async () => { geschrieben += 1; }, observe: async () => true },
-    transport: {},
+    transport: { writeAtomic: async () => true, read: async () => '{}' },
   };
   const ergebnis = await submitOrder({ session, env: {}, now: () => at, kind: 'news', brief, links });
   assert.equal(ergebnis.status, 'already_known');
   assert.equal(ergebnis.job_id, bekannt.input.job_id);
   assert.equal(geschrieben, 0, 'kein zweiter Auftrag');
+});
+
+// 17.09.2026: Mein Einreichweg legte den Auftrag nur in die Ablage. Der Worker
+// liest ihn aber als Paket aus dem Postfach (00_INBOX/<job>.input.json) und
+// brach ohne das Paket mit BRIDGE_DROPBOX_NOT_FOUND ab - damit stand die ganze
+// Redaktionsspur, einschliesslich Natalies eigener Auftraege.
+test('der Auftrag wird als Paket ins Postfach geschrieben, vor dem Eintrag in die Ablage', async () => {
+  const reference = { input: { job_id: `wt_20260915T200000Z_${'a'.repeat(24)}`, job_type: 'editorial_request' } };
+  const schritte = [];
+  const dateien = new Map();
+  const session = {
+    store: { acquire: async () => true, release: async () => true, all: async () => [reference],
+      get: async (id) => (id === reference.input.job_id ? { ...reference, intake: { owner } } : null),
+      put: async (job) => { schritte.push('ablage:' + job.input.job_id.slice(-6)); }, observe: async () => true },
+    transport: {
+      writeAtomic: async (pfad, wert) => { schritte.push('postfach:' + pfad.split('/').pop().slice(-11)); dateien.set(pfad, JSON.stringify(wert)); },
+      read: async (pfad) => dateien.get(pfad),
+    },
+  };
+  const ergebnis = await submitOrder({ session, env: {}, now: () => at, kind: 'news', brief, links });
+  assert.equal(ergebnis.status, 'queued');
+  assert.equal(schritte.length, 2);
+  assert.ok(schritte[0].startsWith('postfach:'), 'erst das Paket');
+  assert.ok(schritte[1].startsWith('ablage:'), 'dann der Eintrag');
+  const [pfad] = [...dateien.keys()];
+  assert.match(pfad, /00_INBOX\/wt_\d{8}T\d{6}Z_[a-f0-9]{24}\.input\.json$/, 'genau der Pfad, den der Worker liest');
+  const paket = JSON.parse(dateien.get(pfad));
+  assert.equal(paket.job_type, 'editorial_request');
+  assert.equal(paket.request.kind, 'news');
+  assert.deepEqual(paket.request.links, links);
+});
+
+// Und die Reparatur: die beiden Meta-Auftraege lagen am 17.09. schon ohne Paket
+// in der Ablage. Jeder Lauf legt fehlende Pakete nach, damit die Spur sich
+// selbst befreit statt auf eine Hand zu warten.
+test('fehlende Auftragspakete werden nachgelegt', async () => {
+  const { repairMissingPackets } = await import('../../scripts/news/auftrag-einreichen.mjs');
+  const dateien = new Map();
+  const vermerke = [];
+  const eigenerOhnePaket = { input: { job_id: `wt_20260917T073200Z_${'e'.repeat(24)}`, job_type: 'editorial_request', request: { kind: 'news' } }, status: 'queued', intake: { trigger_type: 'manual_order' } };
+  const appOhnePaket = { input: { job_id: `wt_20260917T070000Z_${'f'.repeat(24)}`, job_type: 'editorial_request' }, status: 'queued', intake: { draft_id: 'abc' } };
+  const automatisch = { input: { job_id: `wt_20260917T060000Z_${'a'.repeat(24)}`, job_type: 'editorial_request' }, status: 'queued', intake: { trigger_type: 'automatic_candidate' } };
+  const schonFertig = { input: { job_id: `wt_20260917T050000Z_${'b'.repeat(24)}`, job_type: 'editorial_request' }, status: 'accepted', intake: { trigger_type: 'manual_order' } };
+  const mitPaket = { input: { job_id: `wt_20260917T040000Z_${'c'.repeat(24)}`, job_type: 'editorial_request' }, status: 'queued', intake: { trigger_type: 'manual_order' } };
+  dateien.set(`/00_INBOX/${mitPaket.input.job_id}.input.json`, '{}');
+  const session = {
+    store: { observe: async (key) => vermerke.push(key) },
+    transport: {
+      metadata: async (pfad) => (dateien.has(pfad.replace(/^.*(\/00_INBOX\/)/, '$1')) ? {} : null),
+      writeAtomic: async (pfad, wert) => { dateien.set(pfad, JSON.stringify(wert)); },
+    },
+  };
+  const repariert = await repairMissingPackets(session, [eigenerOhnePaket, appOhnePaket, automatisch, schonFertig, mitPaket], '2026-09-17T08:00:00.000Z');
+  assert.deepEqual(repariert, [eigenerOhnePaket.input.job_id, appOhnePaket.input.job_id],
+    'nur die eigenen, wartenden Auftraege ohne Paket');
+  assert.equal(vermerke.length, 2, 'die Reparatur wird vermerkt');
+  assert.ok(vermerke.every((key) => key.startsWith('manual-order-repaired:')));
 });
