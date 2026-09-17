@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {splitSpeech, localVoices, SpeechReader} from '../../assets/js/read-aloud.js';
 function setup() {
   const calls = [], synth = {cancel(){calls.push('cancel');},resume(){},speak(u){calls.push(u);}};
@@ -57,4 +59,16 @@ test('zurueck funktioniert pausiert und nach dem Ende',()=>{
   s.reader.next();s.spoken().at(-1).onend();assert.equal(s.reader.state,'finished');
   s.reader.previous();assert.equal(s.reader.state,'playing');assert.equal(s.spoken().at(-1).text,'Zweiter Absatz.','nach dem Ende kommt der letzte Abschnitt');
   const leer=setup();leer.reader.previous();assert.equal(leer.reader.state,'idle');
+});
+
+// Der Vorleser wird mit fester Versionsmarke geladen (main.js). Ohne neue Marke
+// liefert der Cache die alte Fassung aus - am 17.09.2026 haette Natalie den
+// neuen Zurueck-Knopf deshalb nicht gesehen, obwohl er ausgeliefert war.
+// Nichts erzwang das Mitziehen, also erzwingt es jetzt dieser Test.
+test('die Versionsmarke wandert mit jeder Aenderung am Vorleser',()=>{
+  const quelle=fs.readFileSync(new URL('../../assets/js/read-aloud.js',import.meta.url));
+  const marke=fs.readFileSync(new URL('../../assets/js/main.js',import.meta.url),'utf8').match(/read-aloud\.js\?v=([\w-]+)/)?.[1];
+  assert.equal(createHash('sha256').update(quelle).digest('hex').slice(0,16),'f2c35e33866fc56a',
+    'read-aloud.js wurde geaendert: neue Versionsmarke in main.js setzen und beide Werte hier nachziehen, sonst bleibt die alte Fassung im Cache.');
+  assert.equal(marke,'20260917-zurueck','Die Marke in main.js und der Wert in diesem Test muessen zusammen wandern.');
 });
