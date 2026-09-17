@@ -2,11 +2,25 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Der Feed ist nach Ereigniszeit sortiert, nicht nach Veroeffentlichungszeit.
+// items[0] ist also die Meldung mit dem jUengsten Ereignis - nicht die, die wir
+// gerade herausgegeben haben. Veroeffentlichen wir jetzt eine Meldung ueber ein
+// Ereignis von gestern Abend, bleibt items[0] unveraendert, Oracle erkennt
+// dieselbe Kennung und verwirft den Versand als Dublette. Am 17.09.2026 traf
+// das 9 von 12 Auslieferungen: kein Banner, keine Zahl. Maßgeblich ist deshalb
+// _woek_released_at, die echte Herausgabezeit.
+export function newestRelease(items) {
+  const released = (item) => Date.parse(item?._woek_released_at || 0);
+  const candidates = items.filter((item) => Number.isFinite(released(item)));
+  if (!candidates.length) return items[0]; // Aeltere Feeds ohne das Feld.
+  return candidates.reduce((best, item) => released(item) > released(best) ? item : best);
+}
+
 export function publicationForFeed(feed) {
-  const item = Array.isArray(feed?.items) ? feed.items[0] : undefined;
+  const item = Array.isArray(feed?.items) && feed.items.length ? newestRelease(feed.items) : undefined;
   if (!item) return null;
   if (!item.id || !item.url) throw new Error("NEWS_PUSH_FEED_INVALID");
-  const modified = item.date_modified || item.date_published;
+  const modified = item._woek_released_at || item.date_modified || item.date_published;
   if (!Number.isFinite(Date.parse(modified))) throw new Error("NEWS_PUSH_DATE_INVALID");
   // Import reports can overtake queued releases. Image/app revisions must not
   // change this stable identity, which Oracle deduplicates durably.

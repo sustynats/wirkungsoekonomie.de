@@ -20,3 +20,28 @@ test('unauthorized or forbidden responses and valid application errors are not r
   let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return Response.json({ok:false,error:'BRIDGE_RUN_LOCKED'},{status:409});}});
   await assert.rejects(()=>s.store.acquire(),/BRIDGE_RUN_LOCKED/);assert.equal(calls,1);
 });
+
+// 17.09.2026: Ticker und Redaktionslauf haengen beide am selben Oracle-Takt
+// und starten in derselben Sekunde. Der Verlierer des Rennens um die Spur bekam
+// BRIDGE_OPERATION_BUSY und der ganze Lauf scheiterte - waehrend Natalies
+// eingereichte Auftraege unbearbeitet lagen. Der Server wirft BUSY, bevor er
+// die Operation ausfuehrt: es wurde nichts geschrieben, Warten ist sicher.
+test('eine besetzte Spur wird abgewartet, auch bei einer Schreiboperation', async () => {
+  let calls = 0; const pausen = [];
+  const s = bridgeSession(env, { sleep: async (ms) => { pausen.push(ms); },
+    fetchImpl: async () => ++calls <= 2
+      ? Response.json({ ok: false, error: 'BRIDGE_OPERATION_BUSY' }, { status: 409 })
+      : Response.json({ ok: true, result: true }) });
+  assert.equal(await s.store.put({ input: { job_id: 'manual-meta' } }), true);
+  assert.equal(calls, 3);
+  assert.deepEqual(pausen, [2000, 4000]);
+});
+
+test('eine dauerhaft besetzte Spur scheitert sichtbar, nicht endlos', async () => {
+  let calls = 0; const pausen = [];
+  const s = bridgeSession(env, { sleep: async (ms) => { pausen.push(ms); },
+    fetchImpl: async () => { calls++; return Response.json({ ok: false, error: 'BRIDGE_OPERATION_BUSY' }, { status: 409 }); } });
+  await assert.rejects(() => s.store.editorialClaim('manual-meta'), /BRIDGE_OPERATION_BUSY/);
+  assert.equal(calls, 6);
+  assert.deepEqual(pausen, [2000, 4000, 6000, 8000, 10000]); // zusammen 30 Sekunden
+});

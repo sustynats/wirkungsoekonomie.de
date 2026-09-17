@@ -139,3 +139,22 @@ test('fehlende Auftragspakete werden nachgelegt', async () => {
   assert.equal(vermerke.length, 2, 'die Reparatur wird vermerkt');
   assert.ok(vermerke.every((key) => key.startsWith('manual-order-repaired:')));
 });
+
+// 17.09.2026: Der Riegel assertFinalPersonalSection verlangt fuer alles ausser
+// Nachrichten, dass die letzte redaktionelle Hauptsektion "Meine Einordnung"
+// heisst. Der erste Auftragsweg sagte das dem Modell nicht - der Meta-Entwurf
+// fiel deshalb bei der Einreihung durch und lag nicht bei Natalie zur Freigabe.
+test('ein Analyseauftrag verlangt die abschliessende Einordnung, ein Nachrichtenauftrag nicht', () => {
+  const auftrag = (kind) => orderRequest({ kind,
+    brief: 'Meta muss Finanzfluss entsperren: Gerichtsentscheidung mit Folgen fuer Plattformmacht.',
+    links: ['https://example.org/urteil'], owner: '123456789012345678', at: '2026-09-17T10:00:00.000Z' }).job;
+
+  const analyse = auftrag('opinion_analysis');
+  assert.match(analyse.input.instructions, /Meine Einordnung/);
+  assert.match(analyse.input.instructions, /nur als Vorschlag zur Bestätigung/);
+  assert.match(analyse.input.instructions, /Keine erfundenen Erlebnisse/);
+  // Nachrichten gehen nicht durch die Freigabeliste und tragen keine Einordnung.
+  assert.doesNotMatch(auftrag('news').input.instructions, /Meine Einordnung/);
+  // Der Auftrag selbst bleibt der Auftrag: die Anweisung veraendert die Kennung nicht.
+  assert.match(analyse.input.instructions, /Bearbeite ausschließlich den konkreten Redaktionsauftrag/);
+});

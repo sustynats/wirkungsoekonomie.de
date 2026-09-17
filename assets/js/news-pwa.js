@@ -149,8 +149,26 @@
     }, 0);
   }
 
+  // Die Ereigniszeit ordnet die Liste, die Herausgabezeit entscheidet, was fuer
+  // die Leserin neu ist. Eine Meldung ueber ein Ereignis von vorgestern, die
+  // wir gerade herausgegeben haben, steht weit unten in der Chronologie und ist
+  // trotzdem neu. Vorher galt sie als "Nachtrag" und wurde von Zahl und Banner
+  // ausgeschlossen - bei der heutigen Laufzeit traf das fast jede Meldung.
+  function cardReleaseTime(card) {
+    const released = Date.parse(card.dataset.newsReleasedAt || "");
+    return Number.isFinite(released) ? released : Date.parse(card.dataset.newsUpdatedAt || "");
+  }
+
+  function newestCardRelease() {
+    return cards.reduce((latest, card) => {
+      const timestamp = cardReleaseTime(card);
+      return timestamp > latest ? timestamp : latest;
+    }, 0);
+  }
+
+
   function initializeNewsState() {
-    const newest = newestCardTimestamp();
+    const newest = newestCardRelease();
     const stored = Date.parse(window.localStorage.getItem(lastSeenKey) || "");
     cards.forEach((card) => {
       const badge = card.querySelector("[data-news-new-badge]");
@@ -164,9 +182,8 @@
     }
     const now = Date.now();
     const newCards = cards.filter((card) => {
-      const timestamp = Date.parse(card.dataset.newsUpdatedAt || "");
-      return card.dataset.newsLateDelivery !== "true" && timestamp > stored
-        && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
+      const timestamp = cardReleaseTime(card);
+      return timestamp > stored && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
     });
     newCards.forEach((card) => {
       const badge = card.querySelector("[data-news-new-badge]");
@@ -419,6 +436,11 @@
   }
 
   async function checkForNews({ manual = false } = {}) {
+    // Herausgabezeit, wo vorhanden; sonst die Ereigniszeit (aeltere Feeds).
+    const itemReleaseTime = (item) => {
+      const released = Date.parse(item._woek_released_at || "");
+      return Number.isFinite(released) ? released : Date.parse(item.date_modified || item.date_published || "");
+    };
     const controller = new AbortController();
     const timeout = window.setTimeout(() => controller.abort(), 12000);
     try {
@@ -453,19 +475,22 @@
           return true;
         }
       }
+      const feedLatestRelease = feed.items.reduce((value, item) => {
+        const timestamp = itemReleaseTime(item);
+        return timestamp <= Date.now() && timestamp > value ? timestamp : value;
+      }, 0);
       let lastSeen = Date.parse(window.localStorage.getItem(lastSeenKey) || "");
       if (!Number.isFinite(lastSeen)) {
-        lastSeen = feedLatest || Date.now();
+        lastSeen = feedLatestRelease || Date.now();
         window.localStorage.setItem(lastSeenKey, new Date(lastSeen).toISOString());
       }
       const lastNotified = Date.parse(window.localStorage.getItem(lastNotifiedKey) || "") || 0;
       const now = Date.now();
       const updates = feed.items.filter((item) => {
-        const timestamp = Date.parse(item.date_modified || item.date_published || "");
-        return !item._woek_late_delivery && timestamp > lastSeen
-          && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
+        const timestamp = itemReleaseTime(item);
+        return timestamp > lastSeen && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
       });
-      const latest = updates.reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || "") || 0), 0);
+      const latest = updates.reduce((value, item) => Math.max(value, itemReleaseTime(item) || 0), 0);
       await updateAppBadge(updates.length);
       if (!updates.length || latest <= lastNotified || document.visibilityState === "visible") return false;
       const registration = await registrationPromise;
