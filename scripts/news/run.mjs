@@ -1419,7 +1419,35 @@ export async function runWirkungsticker(options = {}) {
     && !candidate.followup_due && !candidate.deepening_due
     && nowDate.getTime() - (latestSourceDate(candidate.sources) || Date.parse(candidate.first_seen || candidate.last_updated || now)) > lifoHorizonMs);
   const lifoExpiredIds = new Set(lifoExpired.map((candidate) => candidate.story_id));
-  const currentClusters = clusters.filter((candidate) => !lifoExpiredIds.has(candidate.story_id));
+  // Natalie am 17.09.2026: „Irgendwie kommen keine neuen Nachrichten." Es kamen
+  // welche - aber vier der sechs neuesten waren dieselbe Nachricht, zwei davon
+  // mit identischem Titel derselben Quelle. existingStoryMatch verglich eine
+  // neue Meldung nur mit anderen Meldungen desselben Laufs, nie mit dem
+  // veroeffentlichten Bestand. Vier bezahlte Aufrufe aus einem Kontingent von
+  // drei je Stunde gingen so in eine einzige Nachricht, und die Liste sah
+  // stillstehend aus.
+  //
+  // Die Schwelle ist absichtlich hoch: der identische Fall traf 1,00, die
+  // umformulierten Meldungen anderer Haeuser 0,00. Bei 0,95 fallen genau die
+  // sicheren Dubletten weg und nichts sonst - eine falsche Zusammenfuehrung
+  // waere schlimmer als eine Dublette.
+  const publishedMatchable = (storyStore.stories || []).filter((story) => story.published && story.listed !== false);
+  const duplicateOfPublished = clusters.filter((candidate) => {
+    if (lifoExpiredIds.has(candidate.story_id)) return false;
+    if (candidate.existing_story?.published || candidate.impact_reassessment || candidate.reassessment) return false;
+    if (candidate.followup_due || candidate.deepening_due) return false;
+    const item = { title: candidate.title, summary: candidate.sources?.[0]?.summary || '',
+      url: candidate.sources?.[0]?.url, published_at: new Date(latestSourceDate(candidate.sources) || Date.parse(candidate.first_seen || now)).toISOString() };
+    return publishedMatchable.some((story) => story.story_id !== candidate.story_id
+      && existingStoryMatch(item, { story, last_updated: story.last_updated || story.published_at }, now) >= 0.95);
+  });
+  const duplicateIds = new Set(duplicateOfPublished.map((candidate) => candidate.story_id));
+  report.duplicates_of_published = duplicateOfPublished.length;
+  for (const candidate of duplicateOfPublished) {
+    newsroom.decisions ||= [];
+    newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: 'duplicate_of_published_story' });
+  }
+  const currentClusters = clusters.filter((candidate) => !lifoExpiredIds.has(candidate.story_id) && !duplicateIds.has(candidate.story_id));
   report.lifo_expired = lifoExpired.length;
   report.lifo_horizon_hours = lifoHorizonMs / 3600000;
   const initiallyEligible = currentClusters
