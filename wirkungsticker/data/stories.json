@@ -2,8 +2,1680 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T15:39:02.587Z",
+  "updated_at": "2026-09-17T16:52:56.130Z",
   "stories": [
+    {
+      "story_id": "wt-85695a3a0ab0befa",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "deutschland-und-kanada-investieren-millionen-in-ki-projekt-lawzero-b0befa",
+      "title": "Deutschland und Kanada fördern sicherheitsorientiertes KI-Projekt",
+      "source_summary": "Heise Security berichtet, dass Deutschland und Kanada ein KI-Projekt des KI-Pioniers Yoshua Bengio fördern. Im Mittelpunkt steht laut der Quelle ein sicherheitsorientierter Gegenentwurf zu autonomen KI-Agenten.\n\nDer Bericht beschreibt damit eine internationale Förderung und eine bestimmte technische Ausrichtung des Projekts. Welche Summen bereitgestellt werden, wie die Förderung rechtlich ausgestaltet ist und wann Ergebnisse vorliegen sollen, geht aus dem vorliegenden Auszug nicht hervor.\n\nDie Angaben stammen aus einer journalistischen Quelle. Eine unabhängige Bestätigung oder eine Primärquelle zur Förderung und zum Projektumfang liegt in der Akte nicht vor; der vollständige Kontext des Originalberichts bleibt zu prüfen.",
+      "summary": "Deutschland und Kanada fördern laut Heise Security ein KI-Projekt von Yoshua Bengio, das autonome KI-Agenten sicherheitsorientiert begrenzen soll. Umfang, Rechtsform und Ergebnisse der Förderung bleiben offen.",
+      "detail_summary": "Deutschland und Kanada fördern laut Heise Security ein Projekt des KI-Pioniers Yoshua Bengio. Es soll einen sicherheitsorientierten Gegenentwurf zu autonomen KI-Agenten entwickeln. Nachrichtenwert hat die Verbindung staatlicher Förderung mit einem alternativen Entwicklungsansatz für leistungsfähige KI. Das mögliche Wirkungspotenzial liegt in einer Verschiebung von Forschungs- und Entwicklungsprioritäten, falls die Förderung tatsächlich umgesetzt und der Ansatz technisch tragfähig wird. Der vorliegende Auszug belegt jedoch weder konkrete Fördersummen noch die Umsetzung oder Ergebnisse. Eine unabhängige Bestätigung und die Prüfung des vollständigen Originalkontexts stehen aus.",
+      "why_relevant": "Staatliche Förderung kann Forschungsprioritäten und Entwicklungswege bei KI mitprägen; Umfang, Umsetzung und technische Ergebnisse sind noch offen.",
+      "topic": [
+        "KI",
+        "Geopolitik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über die Förderung eines sicherheitsorientierten KI-Projekts durch Deutschland und Kanada",
+        "evaluation_target": {
+          "label": "staatlich unterstütztes KI-Forschungsprojekt",
+          "type": "proposal"
+        },
+        "baseline": "Kein aus der Akte belegter Ausbau dieses konkreten Projekts oder seiner Ansätze.",
+        "counterfactual": "Ohne die berichtete Förderung könnte das Projekt langsamer wachsen oder stärker auf andere Finanzierungsquellen angewiesen sein; Umfang und Richtung dieses Unterschieds sind offen.",
+        "reference_frame": [
+          "Sichere und verantwortungsvolle KI-Entwicklung",
+          "Demokratische Kontrolle technischer Infrastruktur",
+          "Internationale Forschungskooperation"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Sicherheitsorientierte Forschung könnte Risiken für Nutzerinnen und Nutzer begrenzen, wenn sie in robuste technische Verfahren übersetzt wird; konkrete Schutzwirkungen sind nicht belegt.",
+            "planet": "KI-Forschung kann Ressourcen und Recheninfrastruktur binden; ökologische Folgen der Förderung sind im Auszug nicht beschrieben und bleiben offen.",
+            "democracy": "Internationale öffentliche Förderung könnte Transparenz und gemeinsame Kontrolle stärken, sofern Ziele, Ergebnisse und Rechenschaft öffentlich zugänglich werden; eine solche Umsetzung ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Förderung könnte Ressourcen und Aufmerksamkeit auf sicherheitsorientierte KI-Forschung lenken.",
+          "second_order": "Bei tragfähigen Ergebnissen könnten Sicherheitsanforderungen in Entwicklung und Aufsicht stärker berücksichtigt werden; dafür fehlen Umsetzungsbelege.",
+          "third_order": "Eine erfolgreiche internationale Kooperation könnte langfristig Standards und institutionelle Kontrolle prägen, bleibt aber von Wirkung, Offenheit und Übertragbarkeit des Projekts abhängig.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der Auszug nennt keine konkrete Fördersumme, Laufzeit, technische Ergebnisse oder institutionellen Kontrollmechanismen.",
+            "Eine unabhängige Bestätigung der Förderung und des Projektumfangs fehlt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor; unabhängige Bestätigung und Primärbelege sind nicht vorhanden.",
+          "institutional_status": "Der Bericht beschreibt eine Förderung, belegt aber weder einen formalen Rechtsakt noch eine Umsetzung, ein Gesetz oder einen verbindlichen Standard."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt weder technische Sicherheitsgewinne noch betroffene Nutzergruppen. Modellierbar bleibt nur ein bedingter Pfad von Förderung über Sicherheitsforschung zu möglicher Risikobegrenzung.",
+            "reviewed_source_ids": [
+              "heise-security"
+            ],
+            "rationale": "Wenn die Förderung umgesetzt wird und der Gegenentwurf in anwendbare Sicherheitsverfahren mündet, könnte sie mittelbar den Schutz von Nutzerinnen und Nutzern verbessern. Eintritt und Reichweite sind wegen fehlender Projekt- und Ergebnisdaten unsicher.",
+            "primary_paths": [
+              {
+                "label": "Sicherheitsorientierte KI-Forschung könnte Schutz von Nutzerinnen und Nutzern stärken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Fördermittel könnten Forschung und Entwicklung von Sicherheitsverfahren gegenüber ausschließlich autonomen Entwicklungszielen stärken.",
+                "recipients": [
+                  "Nutzerinnen und Nutzer von KI-Systemen",
+                  "Entwickler und Betreiber von KI-Systemen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite reicht über ein einzelnes Forschungsprojekt hinaus, ist aber ohne Umsetzung und Ergebnisse begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mögliche Reichweite über Forschungspartner und spätere Anwender, aber keine belegte Verbreitung.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Sicherheitsgewinne könnten relevant sein, ihre konkrete Stärke ist derzeit nicht messbar.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine dauerhafte Wirkung wäre an erfolgreiche Entwicklung und Übernahme gebunden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Forschungsprioritäten und technische Verfahren könnten grundsätzlich geändert oder ersetzt werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen könnten von sichereren KI-Systemen profitieren, besonders bei riskanten Anwendungen; Gruppen sind nicht benannt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht potenziell von Finanzierung zu Technik und Nutzung, ist aber nicht institutionell belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Menschen wird im Auszug nicht beschrieben; der Pfad bleibt eine bedingte Sicherheitsmöglichkeit.",
+                  "reference_frame": "Schutz vor vermeidbaren Risiken durch KI-Systeme",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Förderung, technische Entwicklung und spätere Nutzung sicherheitsorientierter Verfahren müssten tatsächlich erfolgen.",
+                "reference_space": "Betroffene Nutzerinnen und Nutzer von KI-Systemen im möglichen späteren Anwendungsraum",
+                "time_horizon": "Mittelfristig bis langfristig nach Entwicklung und Übernahme der Verfahren",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der sicherheitsorientierte Ansatz ist technisch tragfähig und wird nicht nur erforscht, sondern in Anwendungen oder Standards übernommen.",
+                "source_support": "Die Quelle belegt die Förderung und Zielrichtung, nicht die Schutzwirkung.",
+                "limitations": "Keine Daten zu Anwendungen, Risiken, Zielgruppen oder Ergebnissen; Kausalität bleibt offen.",
+                "first_order": "Mögliche Stärkung sicherheitsbezogener Forschungsarbeit.",
+                "second_order": "Mögliche Übernahme von Sicherheitsverfahren in KI-Entwicklung und Betrieb.",
+                "third_order": "Mögliche langfristige Verringerung bestimmter KI-Risiken in mehreren Anwendungsfeldern, sofern Übertragbarkeit gelingt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand belegt eine bereits eingetretene Schutzwirkung oder technische Übernahme.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Sicherheitsansatz könnte bei begrenzter Umsetzung ohne breite Schutzwirkung bleiben",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn Finanzierung oder technische Übertragbarkeit begrenzt bleiben, könnten Erwartungen an Schutzwirkung entstehen, ohne dass sich der Schutz im Alltag verändert.",
+                "recipients": [
+                  "Nutzerinnen und Nutzer",
+                  "Öffentlichkeit",
+                  "Entwicklungsorganisationen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Vertrauens- oder Fehlallokationseffekt ist im Auszug nicht belegt und hängt stark von Kommunikation und Umsetzung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffene Reichweite bleibt auf Projektumfeld und informierte Öffentlichkeit begrenzt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Belastung oder ein konkreter Schaden ist nicht belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Effekt könnte mit der öffentlichen Aufmerksamkeit zum Projekt abnehmen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Fehlende oder überhöhte Erwartungen könnten durch neue Informationen korrigiert werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders gefährdete Gruppen werden nicht benannt; ein allgemeiner Erwartungseffekt ist nur hypothetisch.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft vor allem Wahrnehmung und Prioritätensetzung, nicht belegte Systemänderungen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenze oder eingetretene Schädigung ist belegt.",
+                  "reference_frame": "Transparente Einordnung von KI-Sicherheitsversprechen",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Der Ansatz müsste öffentlich überhöht dargestellt werden und zugleich ohne tragfähige Umsetzung bleiben.",
+                "reference_space": "Öffentliche Wahrnehmung und Prioritätensetzung im Umfeld der KI-Forschung",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kommunikation über das Projekt beeinflusst Erwartungen stärker als die späteren Ergebnisse.",
+                "source_support": "Die Quelle beschreibt den Ansatz, belegt aber keine öffentliche Wirkung oder Überhöhung.",
+                "limitations": "Keine Publikumsdaten, keine Kommunikationsanalyse und keine Umsetzungsdaten.",
+                "first_order": "Mögliche erhöhte Aufmerksamkeit für den Ansatz.",
+                "second_order": "Mögliche Verschiebung von Erwartungen an sichere KI.",
+                "third_order": "Keine belastbare systemische Folge ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keine Daten zur öffentlichen Aufnahme oder zu Fehlallokation.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Sicherheitsnutzen ist dem begrenzten Erwartungs- und Umsetzungsrisiko gegenüberzustellen; für eine eindeutige Bilanz fehlen Ergebnisdaten."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Sicherheitsorientierte KI-Forschung könnte Schutz von Nutzerinnen und Nutzern stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Sicherheitsorientierte KI-Forschung könnte Schutz von Nutzerinnen und Nutzern stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand enthält keine Angaben zu Rechenaufwand, Energieverbrauch, Hardware, Emissionen oder ökologischen Zielen. Eine materielle planetare Richtung ist daher nicht belastbar bestimmbar.",
+            "reviewed_source_ids": [
+              "heise-security"
+            ],
+            "rationale": "KI-Forschung kann zusätzliche Rechen- und Infrastrukturressourcen benötigen, könnte aber auch effizientere oder sicherere Systeme hervorbringen. Beide Richtungen sind ohne Projektdaten offen.",
+            "primary_paths": [
+              {
+                "label": "Forschungsaufwand könnte zusätzliche Ressourcen beanspruchen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Entwicklung eines KI-Gegenentwurfs könnte Rechenleistung, Hardware und weitere Infrastruktur erfordern; Umfang und Effizienz sind unbekannt.",
+                "recipients": [
+                  "Energie- und Recheninfrastruktur",
+                  "Umwelt und Ressourcenhaushalte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle belegt weder zusätzlichen Ressourcenverbrauch noch Einsparungen; der mögliche Effekt bleibt auf das Projektumfeld begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Ressourcenbedarf betrifft zunächst die Projektinfrastruktur; eine größere Reichweite ist unbelegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Intensität und Rechenaufwand werden nicht beschrieben.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer hängt von der Projektlaufzeit ab, die nicht genannt wird.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ressourcennutzung eines Forschungsprojekts wäre grundsätzlich begrenzbar und veränderbar.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologisch vulnerable Räume oder Gruppen werden nicht benannt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Infrastrukturpfad ist denkbar, aber keine gekoppelte Systemwirkung belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze, Belastung oder Überschreitung wird in der Quelle beschrieben.",
+                  "reference_frame": "Ressourcen- und Emissionsbelastung digitaler Forschung",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Das Projekt müsste zusätzliche Rechen- oder Infrastrukturressourcen einsetzen; deren Umfang und Energiequelle wären entscheidend.",
+                "reference_space": "Projektbezogene digitale Infrastruktur",
+                "time_horizon": "Während der Entwicklung und eines möglichen Betriebs",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Gegenentwurf erfordert nennenswerten Rechen- und Infrastrukturaufwand.",
+                "source_support": "Die Quelle belegt nur die Förderung und Zielrichtung, nicht Ressourcen- oder Umweltwirkungen.",
+                "limitations": "Keine Verbrauchs-, Emissions-, Hardware- oder Effizienzdaten.",
+                "first_order": "Möglicher zusätzlicher Ressourcenbedarf.",
+                "second_order": "Mögliche lokale oder systemische Belastung durch Energie- und Hardwarebedarf.",
+                "third_order": "Keine belastbare ökologische Kaskade ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellenangaben erlauben eine planetare Wirkungsrichtung oder Größenordnung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Sicherheitsorientierte Entwicklung könnte spätere Effizienzentscheidungen beeinflussen",
+                "direction": "open",
+                "type": "counter_path",
+                "mechanism": "Falls der Ansatz effizientere oder kontrollierbarere Systeme hervorbringt, könnte sich der Ressourcenbedarf späterer Anwendungen verändern.",
+                "recipients": [
+                  "Betreiber von KI-Systemen",
+                  "Energie- und Recheninfrastruktur",
+                  "Umwelt und Ressourcenhaushalte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein möglicher späterer Effizienzpfad ist weder technisch beschrieben noch empirisch belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine spätere Reichweite wäre von Übernahme und Skalierung abhängig.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Effizienzänderung ist nicht quantifiziert.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Effekte wären an breite technische Nutzung gebunden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Technische Effizienzentscheidungen können grundsätzlich angepasst werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Konkrete besonders betroffene Ökosysteme oder Gruppen sind unbekannt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Effizienzpfad ist möglich, aber nicht aus dem Projektbericht ableitbar.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche Effizienzpfad berührt keine im Quellenbestand belegte ökologische Schutzgrenze.",
+                  "reference_frame": "Ressourceneffizienz digitaler Systeme",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Technische Ergebnisse müssten entstehen und von anderen Entwicklern übernommen werden.",
+                "reference_space": "Spätere KI-Anwendungen und ihre Infrastruktur",
+                "time_horizon": "Langfristig und nur bei erfolgreicher Übertragung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sicherheitsorientierung und Ressourceneffizienz würden sich technisch verbinden.",
+                "source_support": "Eine solche Verbindung wird im Auszug nicht belegt.",
+                "limitations": "Keine technischen Spezifikationen, keine Effizienzdaten, keine Übernahmesignale.",
+                "first_order": "Mögliche Berücksichtigung von Effizienz bei späterer Entwicklung.",
+                "second_order": "Mögliche Veränderung des Ressourcenbedarfs von KI-Anwendungen.",
+                "third_order": "Keine belastbare planetare Systemfolge ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keine Evidenz für Effizienzgewinne oder ökologische Übertragbarkeit.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ressourcenmehrbedarf und mögliche spätere Effizienz stehen als offene Pfade gegenüber; die Quelle erlaubt keine belastbare Richtungsentscheidung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Forschungsaufwand könnte zusätzliche Ressourcen beanspruchen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Forschungsaufwand könnte zusätzliche Ressourcen beanspruchen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt internationale Förderung und einen sicherheitsorientierten Ansatz, aber keine Transparenzregeln, Beteiligung, Aufsicht oder demokratische Wirkung. Modellierbar ist daher nur ein bedingter institutioneller Pfad.",
+            "reviewed_source_ids": [
+              "heise-security"
+            ],
+            "rationale": "Öffentliche und internationale Förderung könnte sicherheitsorientierte Forschung in politische und institutionelle Debatten einbringen. Demokratische Wirkung wäre jedoch nur bei Transparenz, Rechenschaft und tatsächlicher Übernahme von Sicherheitsstandards plausibel.",
+            "primary_paths": [
+              {
+                "label": "Internationale Förderung könnte gemeinsame KI-Sicherheitsgovernance stärken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Staatliche Unterstützung eines sicherheitsorientierten Projekts könnte gemeinsame technische und institutionelle Anforderungen sichtbar machen und Kooperation fördern.",
+                "recipients": [
+                  "Öffentliche Institutionen",
+                  "Forschungsorganisationen",
+                  "Gesellschaftliche Öffentlichkeit"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Pfad kann über Forschung und Standards hinausreichen, ist aber ohne Governance- und Transparenzdaten begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Internationale Beteiligung eröffnet eine potenzielle Reichweite über einzelne Institutionen hinaus.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine mögliche Verschiebung von Sicherheitsprioritäten wäre institutionell relevant, aber nicht belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Kooperations- oder Standardwirkungen könnten länger anhalten, wenn sie institutionalisiert werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Prioritäten und Standards könnten grundsätzlich politisch und technisch revidiert werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Öffentlichkeit und Nutzer könnten von besserer Rechenschaft über KI-Risiken profitieren; konkrete Gruppen sind nicht benannt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht potenziell von Finanzierung zu Institutionen und Standards, ist aber nicht umgesetzt belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder ein Eingriff in Rechte ist nicht belegt.",
+                  "reference_frame": "Transparenz, Rechenschaft und demokratische Kontrolle von KI-Entwicklung",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Die Förderung müsste transparent ausgestaltet werden und Ergebnisse müssten in offene Aufsicht, Standards oder politische Beratung einfließen.",
+                "reference_space": "Internationale KI-Forschungs- und Governance-Strukturen",
+                "time_horizon": "Mittelfristig bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sicherheitsforschung wird öffentlich nachvollziehbar und für institutionelle Entscheidungen nutzbar.",
+                "source_support": "Die Quelle belegt die internationale Förderung und Zielrichtung, nicht Transparenz oder demokratische Beteiligung.",
+                "limitations": "Keine Angaben zu Auftraggebern, Governance, Veröffentlichung, Beteiligungsformaten oder Aufsicht.",
+                "first_order": "Mögliche politische und öffentliche Aufmerksamkeit für sichere KI-Entwicklung.",
+                "second_order": "Mögliche gemeinsame Anforderungen an Forschung, Entwicklung und Kontrolle.",
+                "third_order": "Mögliche langfristige Stärkung demokratischer Rechenschaft bei KI, sofern Institutionalisierung gelingt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt demokratische Beteiligung, Transparenz oder institutionelle Übernahme.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Internationale Projektförderung könnte Entscheidungsmacht in spezialisierten Institutionen bündeln",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn Ziele, Mittel und Ergebnisse nicht transparent sind, könnte die Förderung Fach- und Entscheidungsmacht bei wenigen Projektträgern konzentrieren.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Forschungsinstitutionen",
+                  "Öffentliche Entscheidungsträger"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine Konzentration ist möglich, aber im Quellenbestand weder beobachtet noch durch Governance-Daten belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt beschränkt sich zunächst auf das Projekt- und Förderumfeld.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete Machtverschiebungen oder Ausschlüsse sind nicht beschrieben.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Effekt wäre von Förderstruktur und Dauer abhängig, die unbekannt sind.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Institutionelle Konzentration könnte durch Transparenz und neue Entscheidungen korrigiert werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders ausgeschlossene Gruppen werden nicht benannt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad betrifft institutionelle Zugänge, nicht belegte demokratische Strukturveränderungen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist kein konkreter Rechts- oder Beteiligungseingriff belegt.",
+                  "reference_frame": "Demokratische Rechenschaft und Zugang zu KI-Entscheidungen",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Förderung und Projektsteuerung müssten wenig transparent und stark konzentriert sein.",
+                "reference_space": "Förder- und Forschungsinstitutionen im Projektumfeld",
+                "time_horizon": "Während der Förderung und möglicher institutioneller Verstetigung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Internationale Förderung wird ohne ausreichende Offenheit und Rechenschaft organisiert.",
+                "source_support": "Die Quelle nennt keine Governance- oder Transparenzstruktur.",
+                "limitations": "Keine Informationen zu Entscheidungswegen, Beteiligung, Finanzierungskriterien oder Kontrolle.",
+                "first_order": "Mögliche Konzentration von Fachaufmerksamkeit und Ressourcen.",
+                "second_order": "Mögliche geringere Vielfalt in Forschungs- und Sicherheitsdebatten.",
+                "third_order": "Eine demokratische Systemwirkung ist ohne weitere Belege nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keine Angaben, die eine tatsächliche Machtkonzentration oder Ausschlusswirkung belegen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mögliche Kooperations- und Rechenschaftsgewinne stehen einem unbestätigten Konzentrationsrisiko gegenüber; die institutionelle Ausgestaltung ist offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Internationale Förderung könnte gemeinsame KI-Sicherheitsgovernance stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Internationale Förderung könnte gemeinsame KI-Sicherheitsgovernance stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T16:56:31.653Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "heise-security",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle trägt die Angaben zur Förderung durch Deutschland und Kanada sowie zur sicherheitsorientierten Ausrichtung des Projekts."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt weder technische Sicherheitsgewinne noch betroffene Nutzergruppen. Modellierbar bleibt nur ein bedingter Pfad von Förderung über Sicherheitsforschung zu möglicher Risikobegrenzung.",
+          "reviewed_source_ids": [
+            "heise-security"
+          ],
+          "rationale": "Wenn die Förderung umgesetzt wird und der Gegenentwurf in anwendbare Sicherheitsverfahren mündet, könnte sie mittelbar den Schutz von Nutzerinnen und Nutzern verbessern. Eintritt und Reichweite sind wegen fehlender Projekt- und Ergebnisdaten unsicher.",
+          "primary_paths": [
+            {
+              "label": "Sicherheitsorientierte KI-Forschung könnte Schutz von Nutzerinnen und Nutzern stärken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Fördermittel könnten Forschung und Entwicklung von Sicherheitsverfahren gegenüber ausschließlich autonomen Entwicklungszielen stärken.",
+              "recipients": [
+                "Nutzerinnen und Nutzer von KI-Systemen",
+                "Entwickler und Betreiber von KI-Systemen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite reicht über ein einzelnes Forschungsprojekt hinaus, ist aber ohne Umsetzung und Ergebnisse begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mögliche Reichweite über Forschungspartner und spätere Anwender, aber keine belegte Verbreitung.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Sicherheitsgewinne könnten relevant sein, ihre konkrete Stärke ist derzeit nicht messbar.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine dauerhafte Wirkung wäre an erfolgreiche Entwicklung und Übernahme gebunden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Forschungsprioritäten und technische Verfahren könnten grundsätzlich geändert oder ersetzt werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen könnten von sichereren KI-Systemen profitieren, besonders bei riskanten Anwendungen; Gruppen sind nicht benannt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht potenziell von Finanzierung zu Technik und Nutzung, ist aber nicht institutionell belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Menschen wird im Auszug nicht beschrieben; der Pfad bleibt eine bedingte Sicherheitsmöglichkeit.",
+                "reference_frame": "Schutz vor vermeidbaren Risiken durch KI-Systeme",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Förderung, technische Entwicklung und spätere Nutzung sicherheitsorientierter Verfahren müssten tatsächlich erfolgen.",
+              "reference_space": "Betroffene Nutzerinnen und Nutzer von KI-Systemen im möglichen späteren Anwendungsraum",
+              "time_horizon": "Mittelfristig bis langfristig nach Entwicklung und Übernahme der Verfahren",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der sicherheitsorientierte Ansatz ist technisch tragfähig und wird nicht nur erforscht, sondern in Anwendungen oder Standards übernommen.",
+              "source_support": "Die Quelle belegt die Förderung und Zielrichtung, nicht die Schutzwirkung.",
+              "limitations": "Keine Daten zu Anwendungen, Risiken, Zielgruppen oder Ergebnissen; Kausalität bleibt offen.",
+              "first_order": "Mögliche Stärkung sicherheitsbezogener Forschungsarbeit.",
+              "second_order": "Mögliche Übernahme von Sicherheitsverfahren in KI-Entwicklung und Betrieb.",
+              "third_order": "Mögliche langfristige Verringerung bestimmter KI-Risiken in mehreren Anwendungsfeldern, sofern Übertragbarkeit gelingt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand belegt eine bereits eingetretene Schutzwirkung oder technische Übernahme.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Sicherheitsansatz könnte bei begrenzter Umsetzung ohne breite Schutzwirkung bleiben",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn Finanzierung oder technische Übertragbarkeit begrenzt bleiben, könnten Erwartungen an Schutzwirkung entstehen, ohne dass sich der Schutz im Alltag verändert.",
+              "recipients": [
+                "Nutzerinnen und Nutzer",
+                "Öffentlichkeit",
+                "Entwicklungsorganisationen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Vertrauens- oder Fehlallokationseffekt ist im Auszug nicht belegt und hängt stark von Kommunikation und Umsetzung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffene Reichweite bleibt auf Projektumfeld und informierte Öffentlichkeit begrenzt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Belastung oder ein konkreter Schaden ist nicht belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Effekt könnte mit der öffentlichen Aufmerksamkeit zum Projekt abnehmen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Fehlende oder überhöhte Erwartungen könnten durch neue Informationen korrigiert werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders gefährdete Gruppen werden nicht benannt; ein allgemeiner Erwartungseffekt ist nur hypothetisch.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft vor allem Wahrnehmung und Prioritätensetzung, nicht belegte Systemänderungen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenze oder eingetretene Schädigung ist belegt.",
+                "reference_frame": "Transparente Einordnung von KI-Sicherheitsversprechen",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Der Ansatz müsste öffentlich überhöht dargestellt werden und zugleich ohne tragfähige Umsetzung bleiben.",
+              "reference_space": "Öffentliche Wahrnehmung und Prioritätensetzung im Umfeld der KI-Forschung",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kommunikation über das Projekt beeinflusst Erwartungen stärker als die späteren Ergebnisse.",
+              "source_support": "Die Quelle beschreibt den Ansatz, belegt aber keine öffentliche Wirkung oder Überhöhung.",
+              "limitations": "Keine Publikumsdaten, keine Kommunikationsanalyse und keine Umsetzungsdaten.",
+              "first_order": "Mögliche erhöhte Aufmerksamkeit für den Ansatz.",
+              "second_order": "Mögliche Verschiebung von Erwartungen an sichere KI.",
+              "third_order": "Keine belastbare systemische Folge ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keine Daten zur öffentlichen Aufnahme oder zu Fehlallokation.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Sicherheitsnutzen ist dem begrenzten Erwartungs- und Umsetzungsrisiko gegenüberzustellen; für eine eindeutige Bilanz fehlen Ergebnisdaten."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Sicherheitsorientierte KI-Forschung könnte Schutz von Nutzerinnen und Nutzern stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Sicherheitsorientierte KI-Forschung könnte Schutz von Nutzerinnen und Nutzern stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand enthält keine Angaben zu Rechenaufwand, Energieverbrauch, Hardware, Emissionen oder ökologischen Zielen. Eine materielle planetare Richtung ist daher nicht belastbar bestimmbar.",
+          "reviewed_source_ids": [
+            "heise-security"
+          ],
+          "rationale": "KI-Forschung kann zusätzliche Rechen- und Infrastrukturressourcen benötigen, könnte aber auch effizientere oder sicherere Systeme hervorbringen. Beide Richtungen sind ohne Projektdaten offen.",
+          "primary_paths": [
+            {
+              "label": "Forschungsaufwand könnte zusätzliche Ressourcen beanspruchen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Entwicklung eines KI-Gegenentwurfs könnte Rechenleistung, Hardware und weitere Infrastruktur erfordern; Umfang und Effizienz sind unbekannt.",
+              "recipients": [
+                "Energie- und Recheninfrastruktur",
+                "Umwelt und Ressourcenhaushalte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle belegt weder zusätzlichen Ressourcenverbrauch noch Einsparungen; der mögliche Effekt bleibt auf das Projektumfeld begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Ressourcenbedarf betrifft zunächst die Projektinfrastruktur; eine größere Reichweite ist unbelegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Intensität und Rechenaufwand werden nicht beschrieben.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer hängt von der Projektlaufzeit ab, die nicht genannt wird.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ressourcennutzung eines Forschungsprojekts wäre grundsätzlich begrenzbar und veränderbar.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologisch vulnerable Räume oder Gruppen werden nicht benannt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Infrastrukturpfad ist denkbar, aber keine gekoppelte Systemwirkung belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze, Belastung oder Überschreitung wird in der Quelle beschrieben.",
+                "reference_frame": "Ressourcen- und Emissionsbelastung digitaler Forschung",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Das Projekt müsste zusätzliche Rechen- oder Infrastrukturressourcen einsetzen; deren Umfang und Energiequelle wären entscheidend.",
+              "reference_space": "Projektbezogene digitale Infrastruktur",
+              "time_horizon": "Während der Entwicklung und eines möglichen Betriebs",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Gegenentwurf erfordert nennenswerten Rechen- und Infrastrukturaufwand.",
+              "source_support": "Die Quelle belegt nur die Förderung und Zielrichtung, nicht Ressourcen- oder Umweltwirkungen.",
+              "limitations": "Keine Verbrauchs-, Emissions-, Hardware- oder Effizienzdaten.",
+              "first_order": "Möglicher zusätzlicher Ressourcenbedarf.",
+              "second_order": "Mögliche lokale oder systemische Belastung durch Energie- und Hardwarebedarf.",
+              "third_order": "Keine belastbare ökologische Kaskade ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellenangaben erlauben eine planetare Wirkungsrichtung oder Größenordnung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Sicherheitsorientierte Entwicklung könnte spätere Effizienzentscheidungen beeinflussen",
+              "direction": "open",
+              "type": "counter_path",
+              "mechanism": "Falls der Ansatz effizientere oder kontrollierbarere Systeme hervorbringt, könnte sich der Ressourcenbedarf späterer Anwendungen verändern.",
+              "recipients": [
+                "Betreiber von KI-Systemen",
+                "Energie- und Recheninfrastruktur",
+                "Umwelt und Ressourcenhaushalte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein möglicher späterer Effizienzpfad ist weder technisch beschrieben noch empirisch belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine spätere Reichweite wäre von Übernahme und Skalierung abhängig.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Effizienzänderung ist nicht quantifiziert.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Effekte wären an breite technische Nutzung gebunden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Technische Effizienzentscheidungen können grundsätzlich angepasst werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Konkrete besonders betroffene Ökosysteme oder Gruppen sind unbekannt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Effizienzpfad ist möglich, aber nicht aus dem Projektbericht ableitbar.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche Effizienzpfad berührt keine im Quellenbestand belegte ökologische Schutzgrenze.",
+                "reference_frame": "Ressourceneffizienz digitaler Systeme",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Technische Ergebnisse müssten entstehen und von anderen Entwicklern übernommen werden.",
+              "reference_space": "Spätere KI-Anwendungen und ihre Infrastruktur",
+              "time_horizon": "Langfristig und nur bei erfolgreicher Übertragung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sicherheitsorientierung und Ressourceneffizienz würden sich technisch verbinden.",
+              "source_support": "Eine solche Verbindung wird im Auszug nicht belegt.",
+              "limitations": "Keine technischen Spezifikationen, keine Effizienzdaten, keine Übernahmesignale.",
+              "first_order": "Mögliche Berücksichtigung von Effizienz bei späterer Entwicklung.",
+              "second_order": "Mögliche Veränderung des Ressourcenbedarfs von KI-Anwendungen.",
+              "third_order": "Keine belastbare planetare Systemfolge ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keine Evidenz für Effizienzgewinne oder ökologische Übertragbarkeit.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ressourcenmehrbedarf und mögliche spätere Effizienz stehen als offene Pfade gegenüber; die Quelle erlaubt keine belastbare Richtungsentscheidung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Forschungsaufwand könnte zusätzliche Ressourcen beanspruchen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Forschungsaufwand könnte zusätzliche Ressourcen beanspruchen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt internationale Förderung und einen sicherheitsorientierten Ansatz, aber keine Transparenzregeln, Beteiligung, Aufsicht oder demokratische Wirkung. Modellierbar ist daher nur ein bedingter institutioneller Pfad.",
+          "reviewed_source_ids": [
+            "heise-security"
+          ],
+          "rationale": "Öffentliche und internationale Förderung könnte sicherheitsorientierte Forschung in politische und institutionelle Debatten einbringen. Demokratische Wirkung wäre jedoch nur bei Transparenz, Rechenschaft und tatsächlicher Übernahme von Sicherheitsstandards plausibel.",
+          "primary_paths": [
+            {
+              "label": "Internationale Förderung könnte gemeinsame KI-Sicherheitsgovernance stärken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Staatliche Unterstützung eines sicherheitsorientierten Projekts könnte gemeinsame technische und institutionelle Anforderungen sichtbar machen und Kooperation fördern.",
+              "recipients": [
+                "Öffentliche Institutionen",
+                "Forschungsorganisationen",
+                "Gesellschaftliche Öffentlichkeit"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Pfad kann über Forschung und Standards hinausreichen, ist aber ohne Governance- und Transparenzdaten begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Internationale Beteiligung eröffnet eine potenzielle Reichweite über einzelne Institutionen hinaus.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine mögliche Verschiebung von Sicherheitsprioritäten wäre institutionell relevant, aber nicht belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Kooperations- oder Standardwirkungen könnten länger anhalten, wenn sie institutionalisiert werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Prioritäten und Standards könnten grundsätzlich politisch und technisch revidiert werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Öffentlichkeit und Nutzer könnten von besserer Rechenschaft über KI-Risiken profitieren; konkrete Gruppen sind nicht benannt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht potenziell von Finanzierung zu Institutionen und Standards, ist aber nicht umgesetzt belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder ein Eingriff in Rechte ist nicht belegt.",
+                "reference_frame": "Transparenz, Rechenschaft und demokratische Kontrolle von KI-Entwicklung",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Die Förderung müsste transparent ausgestaltet werden und Ergebnisse müssten in offene Aufsicht, Standards oder politische Beratung einfließen.",
+              "reference_space": "Internationale KI-Forschungs- und Governance-Strukturen",
+              "time_horizon": "Mittelfristig bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sicherheitsforschung wird öffentlich nachvollziehbar und für institutionelle Entscheidungen nutzbar.",
+              "source_support": "Die Quelle belegt die internationale Förderung und Zielrichtung, nicht Transparenz oder demokratische Beteiligung.",
+              "limitations": "Keine Angaben zu Auftraggebern, Governance, Veröffentlichung, Beteiligungsformaten oder Aufsicht.",
+              "first_order": "Mögliche politische und öffentliche Aufmerksamkeit für sichere KI-Entwicklung.",
+              "second_order": "Mögliche gemeinsame Anforderungen an Forschung, Entwicklung und Kontrolle.",
+              "third_order": "Mögliche langfristige Stärkung demokratischer Rechenschaft bei KI, sofern Institutionalisierung gelingt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt demokratische Beteiligung, Transparenz oder institutionelle Übernahme.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Internationale Projektförderung könnte Entscheidungsmacht in spezialisierten Institutionen bündeln",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn Ziele, Mittel und Ergebnisse nicht transparent sind, könnte die Förderung Fach- und Entscheidungsmacht bei wenigen Projektträgern konzentrieren.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Forschungsinstitutionen",
+                "Öffentliche Entscheidungsträger"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine Konzentration ist möglich, aber im Quellenbestand weder beobachtet noch durch Governance-Daten belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt beschränkt sich zunächst auf das Projekt- und Förderumfeld.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete Machtverschiebungen oder Ausschlüsse sind nicht beschrieben.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Effekt wäre von Förderstruktur und Dauer abhängig, die unbekannt sind.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Institutionelle Konzentration könnte durch Transparenz und neue Entscheidungen korrigiert werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders ausgeschlossene Gruppen werden nicht benannt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad betrifft institutionelle Zugänge, nicht belegte demokratische Strukturveränderungen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist kein konkreter Rechts- oder Beteiligungseingriff belegt.",
+                "reference_frame": "Demokratische Rechenschaft und Zugang zu KI-Entscheidungen",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Förderung und Projektsteuerung müssten wenig transparent und stark konzentriert sein.",
+              "reference_space": "Förder- und Forschungsinstitutionen im Projektumfeld",
+              "time_horizon": "Während der Förderung und möglicher institutioneller Verstetigung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Internationale Förderung wird ohne ausreichende Offenheit und Rechenschaft organisiert.",
+              "source_support": "Die Quelle nennt keine Governance- oder Transparenzstruktur.",
+              "limitations": "Keine Informationen zu Entscheidungswegen, Beteiligung, Finanzierungskriterien oder Kontrolle.",
+              "first_order": "Mögliche Konzentration von Fachaufmerksamkeit und Ressourcen.",
+              "second_order": "Mögliche geringere Vielfalt in Forschungs- und Sicherheitsdebatten.",
+              "third_order": "Eine demokratische Systemwirkung ist ohne weitere Belege nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keine Angaben, die eine tatsächliche Machtkonzentration oder Ausschlusswirkung belegen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mögliche Kooperations- und Rechenschaftsgewinne stehen einem unbestätigten Konzentrationsrisiko gegenüber; die institutionelle Ausgestaltung ist offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Internationale Förderung könnte gemeinsame KI-Sicherheitsgovernance stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Internationale Förderung könnte gemeinsame KI-Sicherheitsgovernance stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T16:52:56.130Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T15:41:00.000Z",
+      "last_updated": "2026-09-17T16:56:31.648Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-200b8523df4014119546",
+      "case_file": null,
+      "source_published_at": "2026-09-17T15:41:00.000Z",
+      "published_at": "2026-09-17T16:56:31.648Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "heise-security"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "heise Security",
+          "url": "https://www.heise.de/news/Deutschland-und-Kanada-investieren-gemeinsam-in-sichere-KI-11457301.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T15:41:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d0b87be2a421eeeb",
       "title_image": {
