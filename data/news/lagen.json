@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-17T10:00:00.000Z",
+  "updated_at": "2026-09-17T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-17-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-17",
+      "window_from": "2026-09-17T10:00:00.000Z",
+      "window_to": "2026-09-17T16:00:00.000Z",
+      "stand": "2026-09-17T16:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 7,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-d0b87be2a421eeeb",
+          "slug": "solartechnik-sma-investiert-80-millionen-euro-in-neues-werk-21eeeb",
+          "title": "SMA Solar eröffnet in Niestetal neues Werk für Wechselrichter",
+          "state": "neu",
+          "at": "2026-09-17T15:42:46.457Z",
+          "score": 7.9522
+        },
+        {
+          "story_id": "wt-281f3b3f226d191e",
+          "slug": "corona-maskenaffare-warum-jens-spahn-die-verantwortung-tragt-egal-wie-das-urteil-ausfall-6d191e",
+          "title": "Maskenbeschaffung bleibt politisch und haushalterisch umstritten",
+          "state": "neu",
+          "at": "2026-09-17T13:55:37.194Z",
+          "score": 3.6545
+        },
+        {
+          "story_id": "wt-58c33de01adbcd60",
+          "slug": "erneute-explosionen-in-frankfurt-laden-auf-berger-strasse-und-zeil-beschadigt-dbcd60",
+          "title": "Laut hessenschau: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-17T13:25:24.504Z",
+          "score": 5.3206
+        },
+        {
+          "story_id": "wt-cfe395d486558be9",
+          "slug": "kriminalitat-polizei-meldet-eine-festnahme-nach-explosionen-in-frankfurt-558be9",
+          "title": "Laut Polizei: Festnahme nach zwei weiteren Explosionen in Frankfurt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-17T13:10:18.774Z",
+          "score": 5.2786
+        },
+        {
+          "story_id": "wt-aa0db77f30c3deb1",
+          "slug": "uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1",
+          "title": "Laut Polizei: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
+          "state": "neu",
+          "at": "2026-09-17T12:55:40.931Z",
+          "score": 5.488
+        },
+        {
+          "story_id": "wt-0df5952c7921c1b7",
+          "slug": "bedrohung-gegen-schulen-bombendrohungen-gegen-schulen-gebaude-evakuiert-21c1b7",
+          "title": "Bombendrohungen gegen Schulen: Gebäude evakuiert, laut stern",
+          "state": "neu",
+          "at": "2026-09-17T12:13:13.193Z",
+          "score": 5.3701
+        },
+        {
+          "story_id": "wt-cb532148d6a98dbc",
+          "slug": "drei-schulen-in-engen-wegen-zweimaliger-bombendrohung-evakuiert-a98dbc",
+          "title": "Laut SWR: Drei Schulen in Engen nach zwei Bombendrohungen evakuiert",
+          "state": "neu",
+          "at": "2026-09-17T12:04:35.888Z",
+          "score": 5.7398
+        },
+        {
+          "story_id": "wt-b40ed385d3ba5f9a",
+          "slug": "ministerprasident-dr-markus-soder-zum-rucktritt-von-justizminister-georg-eisenreich-gros-ba5f9a",
+          "title": "Laut Söder zieht sich Justizminister Georg Eisenreich aus Bayerns politischer Spitze zurück",
+          "state": "neu",
+          "at": "2026-09-17T11:11:07.582Z",
+          "score": 3.1976
+        },
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in der Ukraine",
+          "state": "neu",
+          "at": "2026-09-17T10:41:17.999Z",
+          "score": 7.8651
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-17-mittagslage",
       "slot": "mittagslage",
