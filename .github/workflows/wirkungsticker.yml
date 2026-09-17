@@ -151,8 +151,13 @@ jobs:
       # die Lage des laufenden Fensters; vor 06:00 Berliner Zeit ist keine
       # faellig und der Schritt schreibt nichts. Danach werden die Seiten
       # erneuert, damit die Lage-Seite im selben Commit liegt.
+      # Dieser Schritt laeuft VOR dem Commit. Wuerde er den Lauf abbrechen, ginge
+      # die bereits bezahlte Analyse dieses Laufs verloren - Geld fuer nichts.
+      # Deshalb bricht er nicht ab. Stumm bleibt der Fehler trotzdem nicht: der
+      # Betriebsmonitor prueft, ob eine Lage fuer das laufende Fenster vorliegt.
       - name: Redaktionelle Lage schreiben und Seiten erneuern
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        continue-on-error: true
         run: |
           set -euo pipefail
           node scripts/news/lage-schreiben.mjs
