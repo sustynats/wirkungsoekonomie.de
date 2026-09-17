@@ -257,6 +257,14 @@ Monatsrahmen traegt 1,21 USD am Tag. Erst wenn ein Aufruf je Veroeffentlichung
 gilt, ist der Umstieg bezahlbar. Das ist Natalies eigene Regel, und sie ist
 hier die Sperre.
 
+**1a. Natalies Freigaben duerfen nicht am Lage-Takt haengen.** Die Uebernahme
+freigegebener Fassungen und die Quittung laufen heute in jedem
+Viertelstundenlauf, weil `schedule.mjs` im Direktbetrieb fuer jeden geplanten
+Lauf `should_run=true` liefert. Wird die Veroeffentlichung auf drei Lagen
+umgestellt, darf dieser Schritt **nicht** mit an den Lage-Takt gebunden werden:
+eine Freigabe um 13:00 wuerde sonst bis 18:00 warten. Verbindlich bleibt, was
+am 17.09. gemessen wurde: Freigabe 19:42, live 19:56 - vierzehn Minuten.
+
 **2. Die Nachbesserungsquote selbst.** Gemessen 1,50 Aufrufe je Meldung, 50 %
 der bezahlten Meldungen brauchen einen zweiten Aufruf. Eine Ursache ist
 behoben (#868), eine weitere sichtbar gemacht (#873: ein stiller Rueckfall auf
@@ -264,18 +272,59 @@ ein schemafreies Antwortformat nach HTTP 400, dessen Grund weggeworfen wurde).
 Der Ablehnungsgrund wird jetzt aufbewahrt; die Reparatur folgt daraus, nicht
 aus einer Vermutung.
 
-**3. Die Quellenliste hat keine Technologiequelle.** Gemessen: 80 Quellen, und
-die einzige mit Technologiebezug ist `heise-wirtschaft` - der Wirtschaftsteil,
-nicht der Technikteil. Kein netzpolitik, kein Golem, keine
-Forschungsorganisation, kein BSI. Im Bestand: Technologie 3 und KI 3 Meldungen
-gegen Politik 106 und Geopolitik 80.
+**Der Befund ist da (17.09.2026, abends).** Seit dem 16.09. sind 15
+Nachbesserungsgruende in `data/news/usage.json` aufgezeichnet - und es ist
+kein Zufallsrauschen:
 
-Die Auswahl nach Relevanz (#878) verhindert, dass Technologie an der
-*Medienresonanz* scheitert, und reserviert Plaetze. Sie kann aber keine Themen
-auswaehlen, die nie eingesammelt wurden. **Neue Quellen sind eine redaktionelle
-Entscheidung und liegen bei Natalie**, nicht bei mir. Vorschlag zur Pruefung:
-heise online (Hauptfeed), netzpolitik.org, Golem, BSI-Pressemeldungen, idw
-(Informationsdienst Wissenschaft), Fraunhofer/Helmholtz/Max-Planck.
+| Anzahl | Grund |
+| --- | --- |
+| 11 | fehlende Pflichtteile der Wirkungsbewertung (`IMPACT_POWER_PATH_REQUIRED` 2x, `IMPACT_RATIONALE_REQUIRED` 2x, `IMPACT_POTENTIAL_PATH_REQUIRED` 2x, `IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED` 2x, dazu Balance, Emerging Signal, zentrale Dimension) |
+| 4 | Textregeln (`AI_EX_ANTE_CAUSAL_OVERCLAIM`, `CLAIM_NUMBER_NOT_IN_EVIDENCE`, `AI_SOURCE_SUMMARY_LENGTH`, `FOLLOWUP_DATE_UNSUPPORTED`) |
+
+Ein Ausloeser davon ist **deterministisch bekannt, bevor der Aufruf
+hinausgeht**: `impactContextRequirements` leitet aus dem Quelltext ab, ob eine
+Meldung Macht-, Energie- oder Schadensbezug hat, und macht daraus danach ein
+Pflichtgate. Das Modell erfuhr es nie. Es erfaehrt es jetzt gezielt fuer die
+Meldung, um die es geht - mit Ausloeser, Pflicht und Folge.
+
+Nebenbefund, der die Grenze zeigt: als allgemeine Regel fuer alle Meldungen
+kostete dieser Hinweis 977 Zeichen und sprengte das Eingabebudget eines echten
+September-Pakets mit 21 Quellen (`AI_INPUT_TOO_LARGE` im Prueflauf). Die
+Regeln teilen sich rund 44.000 Zeichen mit den Belegen. Der Hinweis steht
+deshalb nur bei der Meldung, die ihn braucht, und weicht, wenn das Paket beides
+nicht traegt: **Belege gehen dem Hinweis vor.**
+
+**3. Technologie: korrigierter Befund.** Ich hatte hier zweimal falsch
+geschlossen und schreibe beides hin, weil der falsche Befund sonst
+weiterwirkt.
+
+Erst: "Die Quellenliste hat keine Technologiequelle." Falsch - `heise-netzpolitik`
+und `heise-security` stehen im Verzeichnis. Dann implizit: es gebe keine
+Technikberichterstattung. Auch falsch - Natalie am 17.09.: "Wir hatten nur
+Heise, was auch gut ist. Aber auch Spiegel, Handelsblatt, FAZ & Co. haben auch
+Technik."
+
+Gemessen gilt: 49 von 363 veroeffentlichten Meldungen (13,5 %) haben
+Technikbezug im Text, aber nur 13 tragen ein Techniketikett. Die Knappheit war
+zu einem grossen Teil ein **Etikettierungsartefakt**, keine Themenluecke. Die
+Ursache stand in `app-pages.mjs`: die Ressortzuordnung sah nur dann in Titel
+und Anriss, wenn kein Etikett passte. Eine Meldung mit dem Etikett "Energie"
+und dem Titel "Kuenstliche Intelligenz: ..." traf ueber das Etikett schon
+Wirtschaft und Klima - der Titel wurde nie gelesen.
+
+Behoben mit einem gemeinsamen Ressortverzeichnis (`scripts/news/themen.mjs`):
+Etiketten UND oeffentlicher Text gelten zusammen, und die reservierten Plaetze
+der Lage lesen dasselbe Verzeichnis, statt exakte Etikettentexte zu
+vergleichen. Gemessen am Bestand: Technik 22 -> 31 Meldungen, Gesellschaft
+73 -> 87, keine Meldung verliert ein Thema. Bewusst nicht im Technikmuster:
+"Drohne" (4 von 9 neuen Treffern waren Kriegsmeldungen) und "Infrastruktur" als
+Muster (holte Kriegsschaeden an Energieanlagen herein); als ausdrueckliches
+Etikett bleibt Infrastruktur reserviert.
+
+Offen bleibt die **redaktionelle** Frage, die nur Natalie entscheiden kann:
+FAZ und Handelsblatt fehlen im Quellenverzeichnis (80 Quellen). Ein Ausbau um
+heise online (Hauptfeed), netzpolitik.org, Golem, BSI oder idw waere moeglich,
+ist aber eine Entscheidung ueber die Blattlinie, keine technische.
 
 **4. Breaking-Ausnahme.** Solange die Produktion im Viertelstundentakt laeuft,
 erscheinen Ereignisse ohnehin sofort als Karte; die Ausnahme wird erst mit

@@ -7,6 +7,7 @@
 // als Entwurf ab. Die Redaktionsapp holt den Entwurf ab und legt ihn Natalie
 // zur Freigabe oder Rückgabe vor. Nichts wird direkt veröffentlicht.
 import path from 'node:path';
+import { EXHAUSTED_ORDERS_KEY } from './bridge/observation-keys.mjs';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
 import { officialShowName } from './show-identity.mjs';
 import { repairMissingPackets } from './auftrag-einreichen.mjs';
@@ -466,7 +467,14 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       }
       if (result.status === 'provider_unavailable') break;
     }
-    return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
+    // Ein erschoepfter Auftrag ist kein redaktionelles Ergebnis, sondern ein
+    // liegengebliebener Auftrag. Der Vermerk macht ihn ausserhalb des
+    // Laufprotokolls sichtbar - ohne Auftragstext, nur Kennung und Alter.
+    const erschoepft = results.filter((result) => result.status === 'attempt_exhausted' && result.delivered !== true)
+      .map((result) => ({ job_id: String(result.job_id || '').slice(0, 64),
+        seit: rows.find((row) => row?.input?.job_id === result.job_id)?.created_at || null }));
+    await store.observe(EXHAUSTED_ORDERS_KEY, { at: now(), worker_version: WORKER_VERSION, orders: erschoepft }).catch?.(() => {});
+    return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, exhausted_orders: erschoepft.length, results };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }

@@ -8,7 +8,7 @@ import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
 import { bridgeSession } from '../news/bridge/remote.mjs';
 import { OPS_STATUS_KEY, operationalStatus } from './betriebsstatus.mjs';
-import { PARKED_KEY } from '../news/bridge/observation-keys.mjs';
+import { PARKED_KEY, EXHAUSTED_ORDERS_KEY } from '../news/bridge/observation-keys.mjs';
 import { feedDate } from '../news/feed-order.mjs';
 import { observeLiveNews, workflowChecks, planRecovery, recoverDelivery, RECOVERY_WORKFLOWS } from './news-recovery.mjs';
 
@@ -197,6 +197,8 @@ export function lageCheck({ lagen = [], now } = {}) {
           : 'Es liegt keine einzige Lage vor.' };
 }
 
+const awaitingSince = (data) => Number.isFinite(Date.parse(data?.awaitingSince || '')) ? data.awaitingSince : null;
+
 export function evaluateChecks(data, now) {
   // Eine Fassung, deren Veroeffentlichung gescheitert ist, liegt geparkt in der
   // privaten Freigabeliste. Sie stand in keiner Pruefung - Natalie fand sie am
@@ -236,6 +238,27 @@ export function evaluateChecks(data, now) {
     reason: parked.length
       ? `${parked.length} freigegebene Fassung(en) konnten nicht veroeffentlicht werden und warten in der privaten Freigabeliste: ${parked.map((entry) => entry.code).filter(Boolean).slice(0, 3).join(', ')}. Dort fehlt der Freigeben-Knopf; die App nennt den Grund.`
       : 'Keine freigegebene Fassung haengt nach einem Veroeffentlichungsfehler.' });
+  // Die Gegenprobe zur geparkten Fassung: hier steht die Freigabe live, gilt auf
+  // dem Schreibtisch aber weiter als offen, weil die Quittung fehlt. Genau das
+  // lief am 17.09.2026 dauerhaft (BRIDGE_OWNER_MISMATCH, die Quittung holte die
+  // Importspur nicht). Zwei Stunden Toleranz: die Bestaetigung gehoert
+  // planmaessig einem spaeteren Lauf, der die ausgelieferte Seite sieht.
+  const awaiting = Number(data.awaitingReceipt) || 0;
+  const awaitingHours = age(data.awaitingSince, now) / 60;
+  const receiptStuck = awaiting > 0 && awaitingSince(data) && awaitingHours >= 2;
+  checks.push({ id: 'freigabe-quittung', name: 'Quittung freigegebener Fassungen', ok: !receiptStuck, immediate: false,
+    reason: receiptStuck
+      ? `${awaiting} freigegebene Fassung(en) stehen veroeffentlicht, gelten in der Redaktions-App seit ${Math.round(awaitingHours)} Stunden aber weiter als offen. Die Quittung an den Schreibtisch greift nicht.`
+      : awaiting > 0 ? `${awaiting} Fassung(en) warten auf die Quittung des naechsten Laufs - im Plan.` : 'Keine Freigabe wartet auf eine Quittung.' });
+  // Ein Auftrag, dessen einziger bezahlter Versuch nichts abgeliefert hat,
+  // kehrt erst mit einer Vertragskorrektur zurueck. Bis dahin wartet Natalie
+  // auf eine Analyse, die niemand mehr schreibt (17.09.2026: zwei Auftraege
+  // vom Morgen, dazu der Befund vom 16.09. mit einem seit dem 13.09.).
+  const erschoepft = Array.isArray(data.exhaustedOrders) ? data.exhaustedOrders : [];
+  checks.push({ id: 'liegengebliebene-auftraege', name: 'Liegengebliebene Redaktionsauftraege', ok: erschoepft.length === 0, immediate: false,
+    reason: erschoepft.length
+      ? `${erschoepft.length} Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit ${erschoepft.map((order) => order.seit).filter(Boolean).sort()[0] || 'unbekannt'}). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.`
+      : 'Kein Auftrag hat seinen Versuch ohne Entwurf verbraucht.' });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
   const freshCoverage = age(summary.coverageAudit?.checked_at, now) >= 0 && age(summary.coverageAudit?.checked_at, now) <= 45;
@@ -438,7 +461,13 @@ export async function main() {
   // Geparkte Fassungen: der Vermerk kommt aus derselben Ablage wie der Befund.
   data.parked = [];
   if (!dryRun) {
-    try { data.parked = (await bridgeSession().store.observation(PARKED_KEY))?.parked || []; }
+    try { const auftraege = await bridgeSession().store.observation(EXHAUSTED_ORDERS_KEY);
+      data.exhaustedOrders = Array.isArray(auftraege?.orders) ? auftraege.orders : []; }
+    catch { data.exhaustedOrders = []; }
+    try { const vermerk = await bridgeSession().store.observation(PARKED_KEY);
+      data.parked = vermerk?.parked || [];
+      data.awaitingReceipt = Number(vermerk?.awaiting) || 0;
+      data.awaitingSince = vermerk?.awaiting_since || null; }
     catch { data.parked = []; }
   }
   if (!dryRun && (!process.env.GH_TOKEN || !process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN || !/^\d{15,22}$/.test(process.env.WOEK_MONITOR_DISCORD_USER_ID || ''))) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');

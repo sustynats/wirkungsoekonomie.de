@@ -23,13 +23,16 @@ export async function importApprovedEditorials(store,root){
  if(!store.editorialClaim)return {changed:false};
  const editions=await store.editorialClaim();if(!editions.length)return {changed:false};
  const file=path.join(root,PERSONAL_FILE),data=fs.existsSync(file)?JSON.parse(fs.readFileSync(file)):{schema_version:'1.0',editions:[]};
- let changed=false;const failed=[];
+ // awaiting: schon uebernommene Fassungen, die der Schreibtisch weiter
+ // anbietet, weil die Quittung fehlt. Bleibt das stehen, steht Natalies
+ // Freigabe live und gilt dort trotzdem als offen.
+ let changed=false,awaiting=0;const failed=[];
  for(const edition of editions){
  try{
   if(edition.format===EDITORIAL_REVISION_FORMAT){
    validateApprovedEditorialRevision(edition);
    const revisionFile=path.join(root,EDITORIAL_REVISION_FILE),revisions=fs.existsSync(revisionFile)?JSON.parse(fs.readFileSync(revisionFile)):{schema_version:'1.0',editions:[]};
-   if(revisions.editions.some(e=>e.content_hash===edition.content_hash))continue;
+   if(revisions.editions.some(e=>e.content_hash===edition.content_hash)){awaiting+=1;continue;}
    const analysisFile=path.join(root,'data/news/editorial-analyses.json');
    const originals=[...(fs.existsSync(analysisFile)?JSON.parse(fs.readFileSync(analysisFile)).analyses:[]),...loadManualEditorials(root),...loadPersonalEditorials(root)];
    const base=applyApprovedEditorialRevisions(originals,root).find(a=>a.analysis_id===edition.analysis_id);
@@ -43,11 +46,11 @@ export async function importApprovedEditorials(store,root){
   if(edition.format==='approved_news'){
    const file=path.join(root,'data/news/stories.json'),catalog=JSON.parse(fs.readFileSync(file));
    const result=importApprovedNews(edition,catalog.stories,loadNewsRegistry(root),new Date().toISOString());
-   if(result.changed){catalog.stories=result.stories;catalog.public_updated_at=new Date().toISOString();fs.writeFileSync(file+'.tmp',JSON.stringify(catalog,null,2)+'\n');fs.renameSync(file+'.tmp',file);changed=true;}continue;
+   if(result.changed){catalog.stories=result.stories;catalog.public_updated_at=new Date().toISOString();fs.writeFileSync(file+'.tmp',JSON.stringify(catalog,null,2)+'\n');fs.renameSync(file+'.tmp',file);changed=true;}else awaiting+=1;continue;
   }
   validatePersonalEdition(edition);
   const previous=data.editions.find(e=>e.analysis_id===edition.analysis_id);
-  if(previous){if(previous.content_hash!==edition.content_hash)throw Error('PERSONAL_PUBLISHED_EDITION_CHANGED');continue;}
+  if(previous){if(previous.content_hash!==edition.content_hash)throw Error('PERSONAL_PUBLISHED_EDITION_CHANGED');awaiting+=1;continue;}
   if(data.editions.some(e=>e.slug===edition.slug))throw Error('PERSONAL_SLUG_COLLISION');
  // Eine zweite Analyse zur selben Folge ist eine Dublette, auch wenn sie einen
  // anderen Titel und eine andere Adresse hat. Natalie am 17.09.2026: sie stand
@@ -64,7 +67,11 @@ export async function importApprovedEditorials(store,root){
  // Monitor pruefte 20 Punkte und meldete gruen, waehrend Natalie vor einer
  // Fassung sass, die sie nicht freigeben konnte (17.09.2026). Der Vermerk macht
  // sie von aussen sichtbar - ohne Titel und ohne Text, nur Kennung und Grund.
+ let vorher=null;
+ if(store.observation)try{vorher=await store.observation(PARKED_KEY);}catch{/* Ein fehlender Vormerk darf nichts anhalten. */}
+ const seit=awaiting>0?(Number(vorher?.awaiting)>0&&vorher?.awaiting_since)||new Date().toISOString():null;
  if(store.observe)await store.observe(PARKED_KEY,{at:new Date().toISOString(),
-  parked:failed.map(f=>({content_hash:String(f.content_hash||'').slice(0,64),code:String(f.code||'').slice(0,80)}))}).catch?.(()=>{});
- return {changed,failed};
+  parked:failed.map(f=>({content_hash:String(f.content_hash||'').slice(0,64),code:String(f.code||'').slice(0,80)})),
+  awaiting,awaiting_since:seit}).catch?.(()=>{});
+ return {changed,failed,awaiting_receipt:awaiting};
 }

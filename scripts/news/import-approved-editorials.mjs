@@ -24,19 +24,37 @@ export async function claimApprovedEditorials({ session = null, root = ROOT, now
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, changed: false }; throw error; }
   try {
     const result = await importApprovedEditorials(store, root);
-    return { status: 'ok', changed: Boolean(result.changed), failed: result.failed || [] };
+    return { status: 'ok', changed: Boolean(result.changed), failed: result.failed || [],
+      awaiting_receipt: Number(result.awaiting_receipt) || 0 };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }
 }
 
-export async function finalizeApprovedEditorials({ session = null, env = process.env } = {}) {
+// Die Quittung braucht die Importspur genauso wie die Uebernahme: der Bridge
+// Server verlangt fuer jede store-Operation eine gehaltene Spur desselben
+// Besitzers und antwortete sonst mit BRIDGE_OWNER_MISMATCH. Genau das ist am
+// 17.09.2026 bei Natalies vier Freigaben passiert - sie standen live, blieben
+// auf dem Schreibtisch aber auf "wird veroeffentlicht" stehen.
+//
+// Bewusst OHNE manualRunId: der Uebernahmeschritt desselben Laufs hat seinen
+// Lauf-Platz schon als abgeschlossen quittiert, ein zweiter Griff danach
+// scheiterte an BRIDGE_SLOT_ALREADY_COMPLETED. Die Quittung nimmt deshalb den
+// Fuenf-Minuten-Platz der Importspur.
+export async function finalizeApprovedEditorials({ session = null, now = new Date().toISOString(), env = process.env } = {}) {
   let store;
   try { store = (session || bridgeSession(env)).store; }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message }; throw error; }
   if (typeof store.editorialFinalize !== 'function') return { status: 'skipped', reason: 'EDITORIAL_FINALIZE_UNAVAILABLE' };
-  await store.editorialFinalize();
-  return { status: 'ok' };
+  let acquired = false;
+  try { await store.acquire(now, 'import'); acquired = true; }
+  catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message }; throw error; }
+  try {
+    const result = await store.editorialFinalize();
+    return { status: 'ok', published: Number(result?.published) || 0 };
+  } finally {
+    if (acquired) await store.release(true).catch(() => {});
+  }
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
