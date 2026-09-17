@@ -142,12 +142,17 @@ test('Meinung-und-Analyse candidates become regular private requests bound to th
   assert.match(job.input.job_id, /^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/); assert.equal(job.input.input_hash, hash(job.input.request)); assert.equal(job.intake.owner, owner);
   assert.equal(job.input.request.author_notes, ''); assert.equal(job.input.request.kind, 'opinion_analysis'); assert.equal(job.status, 'queued');
   const session = fakeSession([queuedJob()]);
-  const report = await proposeEditorialCandidates({ session, now: now(), env: {}, stories: [story], assess });
+  // Seit 17.09.2026 haengt der Vorschlag standardmaessig am staerksten Eintrag
+  // der jUengsten Lage (Natalie: „Zu den Top Lagen gibt es dann jeweils eine
+  // Meinung&Analyse"). Dieser Test prueft den Weg ohne Bindung, deshalb
+  // ausdruecklich restrictTo: null. Die Bindung selbst deckt
+  // tests/news/lage-analyse.test.mjs ab.
+  const report = await proposeEditorialCandidates({ session, now: now(), env: {}, stories: [story], assess, restrictTo: null });
   assert.equal(report.status, 'ok'); assert.equal(report.proposed.length, 1);
   assert.ok(session.files.has(bridgePath('00_INBOX', `${report.proposed[0].job_id}.input.json`)));
-  const second = await proposeEditorialCandidates({ session, now: now(), env: {}, stories: [story], assess });
+  const second = await proposeEditorialCandidates({ session, now: now(), env: {}, stories: [story], assess, restrictTo: null });
   assert.equal(second.proposed.length, 0, 'same story is never proposed twice');
-  assert.equal((await proposeEditorialCandidates({ session: fakeSession([]), now: now(), env: {}, stories: [story], assess })).status, 'owner_unknown');
+  assert.equal((await proposeEditorialCandidates({ session: fakeSession([]), now: now(), env: {}, stories: [story], assess, restrictTo: null })).status, 'owner_unknown');
 });
 
 test('the worker workflow uses only contexts that GitHub allows at job level', async () => {

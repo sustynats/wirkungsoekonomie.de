@@ -218,3 +218,18 @@ export function lagenNachDatum(store) {
     .sort(([a], [b]) => (a < b ? 1 : a > b ? -1 : 0))
     .map(([date, eintraege]) => ({ date, lagen: eintraege.sort((a, b) => Date.parse(b.stand) - Date.parse(a.stand)) }));
 }
+
+// Natalie am 17.09.2026: „Zu den Top Lagen gibt es dann jeweils eine
+// Meinung&Analyse." Der staerkste Eintrag der jUengsten Lage ist der Anker -
+// nicht die neueste Meldung und nicht die mit den meisten Quellen.
+export function topLageEintrag(store) {
+  const lagen = (Array.isArray(store?.lagen) ? store.lagen : [])
+    .filter((lage) => Number.isFinite(Date.parse(lage?.stand)))
+    .sort((a, b) => Date.parse(b.stand) - Date.parse(a.stand));
+  const neueste = lagen[0];
+  const eintraege = (neueste?.entries || []).filter((e) => e?.story_id);
+  if (!eintraege.length) return null;
+  const top = [...eintraege].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)
+    || String(b.at).localeCompare(String(a.at)))[0];
+  return { lage_id: neueste.lage_id, slot: neueste.slot, story_id: top.story_id, score: Number(top.score) || 0 };
+}
