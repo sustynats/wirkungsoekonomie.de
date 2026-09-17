@@ -133,8 +133,8 @@ test("ticker push job runs after a successful deploy despite skipped release-ass
   assert.match(notificationJob, /if: always\(\) && needs\.build\.outputs\.ticker_only == 'true' && needs\.deploy\.result == 'success'/);
 });
 
-function workerHarness({ offline = false } = {}) {
-  let state = { enabled: true, lastKnown: "2026-09-03T18:00:00.000Z", unreadCount: 0 };
+function workerHarness({ offline = false, initialState = null } = {}) {
+  let state = initialState || { enabled: true, lastKnown: "2026-09-03T18:00:00.000Z", unreadCount: 0 };
   const handlers = new Map();
   const notifications = [];
   const badges = [];
@@ -265,4 +265,37 @@ test('der Feed-Bauer liefert die Herausgabezeit mit', () => {
   assert.equal([...build.matchAll(/_woek_released_at: item\.released_at/g)].length, 2, 'beide JSON-Feeds');
   assert.match(build, /released_at: story\.published_at/);
   assert.match(build, /data-news-released-at="\$\{escapeHtml\(story\.published_at \|\| ""\)\}"/);
+});
+
+// 17.09.2026, Natalie: „wir muessen schauen, dass die Push-Nachrichten kommen,
+// die irgendwie aktuell nicht funktionieren." Der Worker behandelte den Push nur
+// als Auslöser und entschied dann anhand seines eigenen Lesestands, ob er etwas
+// anzeigt. Lag dieser Stand vorn - aus welchem Grund auch immer -, blieb es
+// still, obwohl der Server gerade eine neue Veroeffentlichung gemeldet hatte.
+// Der Server entdoppelt selbst ueber die Kennung; er wird nicht ueberstimmt.
+test('ein Versand des Servers wird angezeigt, auch wenn der eigene Lesestand vorn liegt', async () => {
+  const worker = workerHarness({ initialState: { enabled: true,
+    lastKnown: "2026-09-03T18:00:00.000Z",
+    lastReleased: "2026-09-30T00:00:00.000Z", // vorn: die eigene Rechnung findet nichts
+    unreadCount: 0 } });
+  const data = { json: () => ({ publicationId: "story-1@2026-09-03T19:00:00.000Z",
+    title: "Neue Wirkungsnachricht",
+    url: "https://wirkungsoekonomie.de/wirkungsticker/story-1/",
+    publishedAt: "2026-09-03T19:00:00.000Z" }) };
+  await worker.dispatch("push", data);
+  assert.equal(worker.notifications.length, 1, 'der Versand des Servers wird angezeigt');
+  assert.deepEqual(worker.badges, [1]);
+  // Derselbe Versand zweimal zeigt nichts erneut.
+  await worker.dispatch("push", data);
+  assert.equal(worker.notifications.length, 1);
+  assert.equal(worker.state().lastPushPublicationId, "story-1@2026-09-03T19:00:00.000Z");
+});
+
+// Ohne Kennung (periodicsync, kein Versand) bleibt es bei der eigenen Rechnung:
+// ein Hintergrundlauf darf nicht aus dem Nichts eine Meldung erfinden.
+test('ein Hintergrundlauf ohne Versand erfindet keine Benachrichtigung', async () => {
+  const worker = workerHarness({ initialState: { enabled: true,
+    lastKnown: "2026-09-03T18:00:00.000Z", lastReleased: "2026-09-30T00:00:00.000Z", unreadCount: 0 } });
+  await worker.dispatch("push", { json: () => ({}) });
+  assert.equal(worker.notifications.length, 0);
 });
