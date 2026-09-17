@@ -2,8 +2,1045 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T20:52:51.735Z",
+  "updated_at": "2026-09-17T23:08:34.404Z",
   "stories": [
+    {
+      "story_id": "wt-bc9d5aae223d144a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bc9d5aae223d144a-d87a65b5c17294c5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bc9d5aae223d144a-dd95fc31f1ad09b0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bc9d5aae223d144a-d192991365745d6e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a",
+      "title": "SPD liegt laut stern-Umfrage vor AfD in Mecklenburg-Vorpommern",
+      "source_summary": "Der stern berichtet über eine Umfrage für das ZDF zur Landtagswahl in Mecklenburg-Vorpommern. Drei Tage vor der Wahl soll die SPD erstmals die lange führende AfD überholt haben.\n\nLaut dem Bericht kommt die SPD auf 37 Prozent und liegt damit drei Prozentpunkte über der Vorwoche. Die AfD erreicht 36 Prozent und verliert demnach einen Punkt.\n\nDie Meldung stützt sich auf eine journalistische Darstellung einer Erhebung der Forschungsgruppe Wahlen. Eine unabhängige zweite Quelle oder Angaben zu Methode, Stichprobe und Fehlertoleranz liegen im Quellenbestand nicht vor.",
+      "summary": "Eine stern-Meldung sieht die SPD drei Tage vor der Landtagswahl in einer ZDF-Umfrage bei 37 Prozent und damit vor der AfD mit 36 Prozent. Offen bleiben Methode, Stichprobe und die Bestätigung durch unabhängige Quellen.",
+      "detail_summary": "Drei Tage vor der Landtagswahl in Mecklenburg-Vorpommern soll die SPD in einer für das ZDF berichteten Umfrage die AfD überholt haben. Der stern nennt 37 Prozent für die SPD und 36 Prozent für die AfD; gegenüber der Vorwoche werden für beide Parteien Veränderungen berichtet. Der Befund kann die Wahrnehmung des Wettbewerbs und die strategische Kommunikation im Wahlkampf beeinflussen. Er belegt jedoch weder ein Wahlergebnis noch eine tatsächliche Veränderung des Wahlverhaltens. Im Quellenbestand fehlen Angaben zu Methode, Stichprobe und unabhängiger Bestätigung.",
+      "why_relevant": "Ein knapper Umfrageabstand kurz vor einer Landtagswahl kann die öffentliche Einordnung des Wettbewerbs und die Kommunikation der Beteiligten prägen; ein Wahlergebnis ist daraus nicht ableitbar.",
+      "topic": [
+        "Soziales",
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über eine ZDF-Umfrage zur Landtagswahl in Mecklenburg-Vorpommern drei Tage vor der Wahl",
+        "evaluation_target": {
+          "label": "Öffentlich berichtete Wahlumfrage",
+          "type": "communication"
+        },
+        "baseline": "Die zuvor berichtete Umfragelage, in der die AfD laut Quelle lange Zeit führte",
+        "counterfactual": "Ohne diese Veröffentlichung könnte die berichtete Rangverschiebung kurzfristig weniger stark als Deutungsangebot im Wahlkampf präsent sein.",
+        "reference_frame": [
+          "demokratische Willensbildung",
+          "verlässliche politische Information",
+          "Korrekturfähigkeit durch weitere Umfragen und das Wahlergebnis"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Für Menschen kann die Veröffentlichung die Orientierung im Wahlkampf beeinflussen; materielle Auswirkungen auf Gesundheit, Einkommen oder Versorgung sind nicht belegt.",
+            "planet": "Ein belastbarer ökologischer Wirkpfad ist aus einer einzelnen Wahlumfrage nicht ersichtlich; politische Prioritätensetzung bleibt nur hypothetisch.",
+            "democracy": "Die Veröffentlichung kann die Wahrnehmung des Wettbewerbs und strategische Kommunikation beeinflussen. Ein Einfluss auf Wahlentscheidungen oder Institutionen ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "democracy"
+          ],
+          "first_order": "Die berichtete Rangfolge kann die Wahrnehmung des Wahlkampfs verändern.",
+          "second_order": "Unter der Bedingung, dass Akteure den Befund aufgreifen, könnte sie Mobilisierungs- und Kommunikationsstrategien beeinflussen.",
+          "third_order": "Nur bei wiederholter Bestätigung und entsprechender Rezeption könnte sich die strategische Bewertung des Wettbewerbs verfestigen; dafür liegt kein Nachweis vor.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle ist eine einzelne journalistische Darstellung ohne unabhängige Bestätigung.",
+            "Methodische Angaben zu Stichprobe und Fehlertoleranz fehlen.",
+            "Das tatsächliche Wahlergebnis liegt im Quellenbestand nicht vor."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle mit einer Herkunft vor; unabhängige Bestätigung ist nicht belegt.",
+          "institutional_status": "Es handelt sich um eine berichtete Umfrage vor einer Landtagswahl, nicht um ein amtliches Wahlergebnis oder eine institutionelle Entscheidung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt nur die berichteten Umfragewerte. Ob Menschen ihre Wahlentscheidung oder ihr Vertrauen aufgrund der Veröffentlichung ändern, ist nicht untersucht.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein möglicher menschlicher Wirkpfad betrifft politische Orientierung und Informationsverarbeitung, nicht unmittelbar Gesundheit, Einkommen oder Versorgung. Richtung und Eintritt bleiben offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung politischer Orientierung durch die berichtete Rangfolge",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Veröffentlichung kann die wahrgenommene Wettbewerbsfähigkeit der Parteien verändern und dadurch Aufmerksamkeit oder Wahlkampfkommunikation beeinflussen.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "politisch interessierte Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Reichweite ist öffentlich, aber die Intensität und tatsächliche Rezeption sind unbelegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Meldung kann die erreichte Öffentlichkeit kurzfristig ansprechen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die berichtete Differenz ist knapp und ihre Wirkung nicht gemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der mögliche Impuls betrifft die kurze Zeit bis zur Wahl.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine politische Wahrnehmung kann durch neue Informationen korrigiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders empfängliche Personen könnten Umfragewerte stärker gewichten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt zunächst auf Orientierung und Kommunikation begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete Verletzung eines menschlichen Schutzguts belegt.",
+                  "reference_frame": "Schutz vor irreführender politischer Information",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Eine Wirkung setzt voraus, dass Menschen die Meldung wahrnehmen und als relevante Information für ihre Orientierung verwenden.",
+                "reference_space": "Öffentliche politische Kommunikation in Mecklenburg-Vorpommern",
+                "time_horizon": "Bis zur Landtagswahl und kurzfristig danach",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Veröffentlichung wird wahrgenommen und nicht durch neue oder widersprechende Informationen überlagert.",
+                "source_support": "Die Quelle belegt die berichtete Umfrage, nicht deren Wirkung auf Menschen.",
+                "limitations": "Keine Daten zu Reichweite, Rezeption, Wahlabsichten oder Verhaltensänderungen.",
+                "first_order": "Mögliche Veränderung der Wahrnehmung des Parteienwettbewerbs.",
+                "second_order": "Mögliche Anpassung individueller Aufmerksamkeit oder Mobilisierung.",
+                "third_order": "Eine längerfristige Verfestigung ist nur hypothetisch und nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten oder unabhängige Rezeptionsevidenz im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbarer materieller Gegenpfad und eine entscheidende Schutzgrenze sind nicht belegt; die Richtung des möglichen Informationsimpulses bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung politischer Orientierung durch die berichtete Rangfolge",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung politischer Orientierung durch die berichtete Rangfolge",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Umwelt, Energie, Infrastruktur oder politischen Sachentscheidungen. Ein ökologischer Wirkpfad der Umfrage ist daher nicht belastbar ableitbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Meldung betrifft einen Umfragewert und keine Maßnahme mit unmittelbarer Umweltwirkung. Ein indirekter Einfluss auf politische Prioritäten ist denkbar, aber für den abgegrenzten Zeitraum nicht belastbar modellierbar.",
+            "primary_paths": [
+              {
+                "label": "Praktisch vernachlässigbarer unmittelbarer Umweltpfad der Umfrageveröffentlichung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Veröffentlichung selbst verändert keine belegte Ressource, Infrastruktur oder Emissionsquelle.",
+                "recipients": [
+                  "Umwelt und Ökosysteme"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den unmittelbaren Zeitraum ist keine konkrete ökologische Zustandsänderung aus der Quelle ableitbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine konkrete ökologische Reichweite der Meldung belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine unmittelbare Umweltintensität der Meldung erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine konkrete Dauer einer Umweltveränderung belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung durch die Meldung belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine konkret betroffene ökologische Verwundbarkeit belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine systemische Umweltveränderung aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird durch den berichteten Umfragewert nicht konkret berührt.",
+                  "reference_frame": "ökologische Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur ein späterer politischer Kurswechsel mit konkreten Umweltfolgen könnte einen indirekten Pfad eröffnen; ein solcher Kurswechsel ist nicht belegt.",
+                "reference_space": "Ökologische Folgen im Umfeld der Landtagswahl",
+                "time_horizon": "Kurzfristig bis zur Wahl",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Meldung bleibt eine Information über eine Umfrage und löst keine belegte Sachentscheidung aus.",
+                "source_support": "Die Quelle belegt ausschließlich eine Umfragedarstellung.",
+                "limitations": "Keine Angaben zu politischen Programmen, Entscheidungen, Emissionen, Flächennutzung oder Umweltzuständen.",
+                "first_order": "Keine konkrete ökologische Zustandsänderung modellierbar.",
+                "second_order": "Ein politischer Prioritätenshift bleibt hypothetisch.",
+                "third_order": "Keine belastbare ökologische Kaskade ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung ohne ökologischen Mechanismus oder Gegenevidenz im Quellenbestand.",
+                "negligibility_rationale": "Im Zeitraum bis zur Wahl ist keine konkrete Umweltmaßnahme, Ressourcennutzung oder Zustandsänderung belegt; der unmittelbare ökologische Pfad ist daher praktisch vernachlässigbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven oder negativen Umweltpfad, der mit dem unmittelbaren Informationsereignis vergleichbar wäre."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Praktisch vernachlässigbarer unmittelbarer Umweltpfad der Umfrageveröffentlichung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Praktisch vernachlässigbarer unmittelbarer Umweltpfad der Umfrageveröffentlichung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine berichtete Rangfolge in einer Umfrage, aber keine Wirkung auf Wahlentscheidungen, Parteienstrategien, Vertrauen oder Institutionen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Demokratisch relevant ist ein möglicher kurzfristiger Informations- und Kommunikationspfad. Die Richtung bleibt offen, weil weder Rezeption noch tatsächliche Verhaltens- oder Institutionseffekte gemessen sind.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verschiebung der Wahrnehmung des Wahlkampfwettbewerbs",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die berichtete Rangfolge kann als Signal für Wettbewerbsfähigkeit gelesen und in politischer Kommunikation aufgegriffen werden.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Parteien",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Befund betrifft einen breiten öffentlichen Diskurs, doch Rezeption, Dauer und tatsächliche Folgen sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Eine Wahlumfrage kann viele Teile der politischen Öffentlichkeit erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Abstand ist knapp und die Quelle belegt keine starke Reaktion.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der mögliche Kommunikationsimpuls ist auf die kurze Wahlkampfphase begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Neue Umfragen und das Wahlergebnis können die Wahrnehmung korrigieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Personen mit geringer anderweitiger Information könnten den Befund stärker gewichten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft zunächst Wahrnehmung und Kommunikation, nicht Institutionen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine entscheidende demokratische Schutzgrenze wie Wahlbehinderung oder institutionelle Ausschaltung ist nicht belegt.",
+                  "reference_frame": "faire politische Willensbildung und informierte Öffentlichkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Parteien, Medien oder Wahlberechtigte die berichtete Rangfolge aufgreifen und ihr Bedeutung beimessen.",
+                "reference_space": "Wahlkampföffentlichkeit in Mecklenburg-Vorpommern",
+                "time_horizon": "Drei Tage vor der Wahl bis zur öffentlichen Einordnung des Wahlergebnisses",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Umfrage wird als glaubwürdiges Signal wahrgenommen und nicht sofort durch andere Informationen relativiert.",
+                "source_support": "Die Quelle belegt die berichtete Umfrage und Rangfolge, nicht demokratische Folgeeffekte.",
+                "limitations": "Keine unabhängige Bestätigung, keine Rezipienten- oder Verhaltensdaten und kein Wahlergebnis im Quellenbestand.",
+                "first_order": "Mögliche Veränderung der Wahrnehmung des Parteienwettbewerbs.",
+                "second_order": "Mögliche Anpassung von Mobilisierungs- und Kommunikationsstrategien.",
+                "third_order": "Eine Verfestigung von Wettbewerbsnarrativen ist nur bei wiederholter Bestätigung und entsprechender Rezeption plausibel.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Evidenz für tatsächliche Rezeption, Mobilisierung oder Wahlverhaltensänderung im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein materieller Gegenpfad mit gleicher Evidenz ist nicht belegt; die mögliche demokratische Wirkung bleibt deshalb offen statt ausgewogen bewertet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Verschiebung der Wahrnehmung des Wahlkampfwettbewerbs",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Verschiebung der Wahrnehmung des Wahlkampfwettbewerbs",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T23:10:46.019Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Berichtete Umfragewerte und ihre Veränderung gegenüber der Vorwoche."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt nur die berichteten Umfragewerte. Ob Menschen ihre Wahlentscheidung oder ihr Vertrauen aufgrund der Veröffentlichung ändern, ist nicht untersucht.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein möglicher menschlicher Wirkpfad betrifft politische Orientierung und Informationsverarbeitung, nicht unmittelbar Gesundheit, Einkommen oder Versorgung. Richtung und Eintritt bleiben offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung politischer Orientierung durch die berichtete Rangfolge",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Veröffentlichung kann die wahrgenommene Wettbewerbsfähigkeit der Parteien verändern und dadurch Aufmerksamkeit oder Wahlkampfkommunikation beeinflussen.",
+              "recipients": [
+                "Wahlberechtigte",
+                "politisch interessierte Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Reichweite ist öffentlich, aber die Intensität und tatsächliche Rezeption sind unbelegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Meldung kann die erreichte Öffentlichkeit kurzfristig ansprechen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die berichtete Differenz ist knapp und ihre Wirkung nicht gemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der mögliche Impuls betrifft die kurze Zeit bis zur Wahl.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine politische Wahrnehmung kann durch neue Informationen korrigiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders empfängliche Personen könnten Umfragewerte stärker gewichten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt zunächst auf Orientierung und Kommunikation begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete Verletzung eines menschlichen Schutzguts belegt.",
+                "reference_frame": "Schutz vor irreführender politischer Information",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Eine Wirkung setzt voraus, dass Menschen die Meldung wahrnehmen und als relevante Information für ihre Orientierung verwenden.",
+              "reference_space": "Öffentliche politische Kommunikation in Mecklenburg-Vorpommern",
+              "time_horizon": "Bis zur Landtagswahl und kurzfristig danach",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Veröffentlichung wird wahrgenommen und nicht durch neue oder widersprechende Informationen überlagert.",
+              "source_support": "Die Quelle belegt die berichtete Umfrage, nicht deren Wirkung auf Menschen.",
+              "limitations": "Keine Daten zu Reichweite, Rezeption, Wahlabsichten oder Verhaltensänderungen.",
+              "first_order": "Mögliche Veränderung der Wahrnehmung des Parteienwettbewerbs.",
+              "second_order": "Mögliche Anpassung individueller Aufmerksamkeit oder Mobilisierung.",
+              "third_order": "Eine längerfristige Verfestigung ist nur hypothetisch und nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten oder unabhängige Rezeptionsevidenz im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbarer materieller Gegenpfad und eine entscheidende Schutzgrenze sind nicht belegt; die Richtung des möglichen Informationsimpulses bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung politischer Orientierung durch die berichtete Rangfolge",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung politischer Orientierung durch die berichtete Rangfolge",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Umwelt, Energie, Infrastruktur oder politischen Sachentscheidungen. Ein ökologischer Wirkpfad der Umfrage ist daher nicht belastbar ableitbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Meldung betrifft einen Umfragewert und keine Maßnahme mit unmittelbarer Umweltwirkung. Ein indirekter Einfluss auf politische Prioritäten ist denkbar, aber für den abgegrenzten Zeitraum nicht belastbar modellierbar.",
+          "primary_paths": [
+            {
+              "label": "Praktisch vernachlässigbarer unmittelbarer Umweltpfad der Umfrageveröffentlichung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Veröffentlichung selbst verändert keine belegte Ressource, Infrastruktur oder Emissionsquelle.",
+              "recipients": [
+                "Umwelt und Ökosysteme"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den unmittelbaren Zeitraum ist keine konkrete ökologische Zustandsänderung aus der Quelle ableitbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine konkrete ökologische Reichweite der Meldung belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine unmittelbare Umweltintensität der Meldung erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine konkrete Dauer einer Umweltveränderung belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung durch die Meldung belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine konkret betroffene ökologische Verwundbarkeit belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine systemische Umweltveränderung aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird durch den berichteten Umfragewert nicht konkret berührt.",
+                "reference_frame": "ökologische Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur ein späterer politischer Kurswechsel mit konkreten Umweltfolgen könnte einen indirekten Pfad eröffnen; ein solcher Kurswechsel ist nicht belegt.",
+              "reference_space": "Ökologische Folgen im Umfeld der Landtagswahl",
+              "time_horizon": "Kurzfristig bis zur Wahl",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Meldung bleibt eine Information über eine Umfrage und löst keine belegte Sachentscheidung aus.",
+              "source_support": "Die Quelle belegt ausschließlich eine Umfragedarstellung.",
+              "limitations": "Keine Angaben zu politischen Programmen, Entscheidungen, Emissionen, Flächennutzung oder Umweltzuständen.",
+              "first_order": "Keine konkrete ökologische Zustandsänderung modellierbar.",
+              "second_order": "Ein politischer Prioritätenshift bleibt hypothetisch.",
+              "third_order": "Keine belastbare ökologische Kaskade ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung ohne ökologischen Mechanismus oder Gegenevidenz im Quellenbestand.",
+              "negligibility_rationale": "Im Zeitraum bis zur Wahl ist keine konkrete Umweltmaßnahme, Ressourcennutzung oder Zustandsänderung belegt; der unmittelbare ökologische Pfad ist daher praktisch vernachlässigbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven oder negativen Umweltpfad, der mit dem unmittelbaren Informationsereignis vergleichbar wäre."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Praktisch vernachlässigbarer unmittelbarer Umweltpfad der Umfrageveröffentlichung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Praktisch vernachlässigbarer unmittelbarer Umweltpfad der Umfrageveröffentlichung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine berichtete Rangfolge in einer Umfrage, aber keine Wirkung auf Wahlentscheidungen, Parteienstrategien, Vertrauen oder Institutionen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Demokratisch relevant ist ein möglicher kurzfristiger Informations- und Kommunikationspfad. Die Richtung bleibt offen, weil weder Rezeption noch tatsächliche Verhaltens- oder Institutionseffekte gemessen sind.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verschiebung der Wahrnehmung des Wahlkampfwettbewerbs",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die berichtete Rangfolge kann als Signal für Wettbewerbsfähigkeit gelesen und in politischer Kommunikation aufgegriffen werden.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Parteien",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Befund betrifft einen breiten öffentlichen Diskurs, doch Rezeption, Dauer und tatsächliche Folgen sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Eine Wahlumfrage kann viele Teile der politischen Öffentlichkeit erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Abstand ist knapp und die Quelle belegt keine starke Reaktion.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der mögliche Kommunikationsimpuls ist auf die kurze Wahlkampfphase begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Neue Umfragen und das Wahlergebnis können die Wahrnehmung korrigieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Personen mit geringer anderweitiger Information könnten den Befund stärker gewichten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft zunächst Wahrnehmung und Kommunikation, nicht Institutionen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine entscheidende demokratische Schutzgrenze wie Wahlbehinderung oder institutionelle Ausschaltung ist nicht belegt.",
+                "reference_frame": "faire politische Willensbildung und informierte Öffentlichkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Parteien, Medien oder Wahlberechtigte die berichtete Rangfolge aufgreifen und ihr Bedeutung beimessen.",
+              "reference_space": "Wahlkampföffentlichkeit in Mecklenburg-Vorpommern",
+              "time_horizon": "Drei Tage vor der Wahl bis zur öffentlichen Einordnung des Wahlergebnisses",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Umfrage wird als glaubwürdiges Signal wahrgenommen und nicht sofort durch andere Informationen relativiert.",
+              "source_support": "Die Quelle belegt die berichtete Umfrage und Rangfolge, nicht demokratische Folgeeffekte.",
+              "limitations": "Keine unabhängige Bestätigung, keine Rezipienten- oder Verhaltensdaten und kein Wahlergebnis im Quellenbestand.",
+              "first_order": "Mögliche Veränderung der Wahrnehmung des Parteienwettbewerbs.",
+              "second_order": "Mögliche Anpassung von Mobilisierungs- und Kommunikationsstrategien.",
+              "third_order": "Eine Verfestigung von Wettbewerbsnarrativen ist nur bei wiederholter Bestätigung und entsprechender Rezeption plausibel.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Evidenz für tatsächliche Rezeption, Mobilisierung oder Wahlverhaltensänderung im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein materieller Gegenpfad mit gleicher Evidenz ist nicht belegt; die mögliche demokratische Wirkung bleibt deshalb offen statt ausgewogen bewertet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Verschiebung der Wahrnehmung des Wahlkampfwettbewerbs",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Verschiebung der Wahrnehmung des Wahlkampfwettbewerbs",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T23:08:34.404Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T20:14:37.000Z",
+      "last_updated": "2026-09-17T23:10:46.015Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0d367f74c15a101a7930",
+      "case_file": null,
+      "source_published_at": "2026-09-17T20:14:37.000Z",
+      "published_at": "2026-09-17T23:10:46.015Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/vor-landtagswahl-in-mecklenburg-vorpommern--spd-schiebt-sich-in-umfrage-vor-afd-38269754.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T20:14:37.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-17183454da128b91",
       "title_image": {
@@ -182323,7 +183360,7 @@
       "teaser": "Das Landgericht Frankfurt sieht Meta bei bestimmten Betrugsanzeigen in der Verantwortung. Die Entscheidung ist noch nicht rechtskräftig – ihre Wirkungslogik reicht dennoch über den Einzelfall hinaus.",
       "published_at": "2026-09-17T17:42:26.902Z",
       "updated_at": "2026-09-17T17:42:26.902Z",
-      "reading_time_minutes": 7
+      "reading_time_minutes": 6
     },
     {
       "analysis_id": "woek-personal-e06ff0b071f63652",
