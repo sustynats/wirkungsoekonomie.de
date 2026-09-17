@@ -151,7 +151,12 @@ test('ein Analyseauftrag verlangt die abschliessende Einordnung, ein Nachrichten
 
   const analyse = auftrag('opinion_analysis');
   assert.match(analyse.input.instructions, /Meine Einordnung/);
-  assert.match(analyse.input.instructions, /nur als Vorschlag zur Bestätigung/);
+  // Bis zum 18.09.2026 stand hier "nur als Vorschlag zur Bestätigung" - und
+  // genau dieser Verfahrensvermerk erschien als Lesertext in drei Ausgaben.
+  // Der Auftrag nennt jetzt die Grundlage der Einordnung, nicht das Verfahren.
+  assert.match(analyse.input.instructions, /wirkungsökonomischen Methodik/);
+  assert.match(analyse.input.instructions, /keine Rückfrage oder Anrede an die Redaktion/);
+  assert.doesNotMatch(analyse.input.instructions, /Vorschlag zur Bestätigung/);
   assert.match(analyse.input.instructions, /Keine erfundenen Erlebnisse/);
   // Nachrichten gehen nicht durch die Freigabeliste und tragen keine Einordnung.
   assert.doesNotMatch(auftrag('news').input.instructions, /Meine Einordnung/);

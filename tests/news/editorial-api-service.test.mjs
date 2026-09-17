@@ -220,7 +220,13 @@ test('knowledge pack is versioned, source-bound and preserves all MPD/approval r
   const knowledge = editorialKnowledge(path.resolve('.'));
   assert.equal(knowledge.manifest.sources.length, 3); assert.equal(knowledge.hash.length, 64);
   assert.ok(knowledge.research_access.article_exclusions['apnews.com']);
-  for (const phrase of ['keinen Zugriff auf Natalies ChatGPT-Erinnerungen', 'abschließende Natalie-Freigabe', 'R/I/D/U/V/S', 'Reverse Merit Order', 'Meine Einordnung', 'Alle drei MPD-Dimensionen']) assert.ok(knowledge.instructions.includes(phrase));
+  // "abschließende Natalie-Freigabe" stand hier bis zum 18.09.2026 - und genau
+  // diese Wendung hat das Modell in den Lesertext uebernommen ("Redaktionelle
+  // Rueckfrage vor der abschliessenden Natalie-Freigabe"). Die Freigabepflicht
+  // bleibt, aber ausdruecklich als Verfahrensvermerk, der nicht in den Text darf.
+  for (const phrase of ['keinen Zugriff auf Natalies ChatGPT-Erinnerungen', 'abschließenden Freigabe der Herausgeberin',
+    'Verfahrensvermerk und darf im Text nicht vorkommen', 'Niemals eine Frage, eine Aufgabe oder eine Anrede an die Redaktion',
+    'wirkungsökonomischen Methodik', 'R/I/D/U/V/S', 'Reverse Merit Order', 'Meine Einordnung', 'Alle drei MPD-Dimensionen']) assert.ok(knowledge.instructions.includes(phrase), phrase);
 });
 test('a budget-only refusal can resume after funding without duplicating provider work', async t => {
   const f = await fixture(t, { block: true }), input = request();

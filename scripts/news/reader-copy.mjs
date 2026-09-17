@@ -2,7 +2,30 @@
 // source records stay intact; this gate never silently rewrites journalism.
 export const READER_COPY_RULE = "Lesertexte liefern konkrete Befunde, Quellen und Wissensgrenzen, keine Redaktionsanweisungen, internen Prüfcodes oder Erklärungen der eigenen Arbeitsregeln. Methodik nur verlinken; Korrekturhinweise erhalten.";
 
+// Am 18.09.2026 stand eine an Natalie gerichtete Rueckfrage als Lesertext in
+// "Meine Einordnung": "Redaktionelle Rueckfrage vor der abschliessenden
+// Natalie-Freigabe: Eine persoenliche Gewichtung ist in den vorliegenden
+// author_notes nicht mitgeteilt. Bitte festlegen, ob ...". Geprueft wurde
+// vorher nur "Bestaetigung durch Natalie" - eine Wortliste aus dem Vorfall vom
+// 16.09., die der naechsten Formulierung nicht gewachsen war.
+//
+// Erfasst wird deshalb die Klasse, nicht der Wortlaut: der Freigabevorbehalt,
+// die Anrede der Redaktion, die Aufgabe an sie und die internen Feldnamen.
+export const PROCESS_NOTE_PATTERN = new RegExp([
+  '\\b(?:Freigabe|Bestätigung|Genehmigung|Zustimmung|Rückfrage)\\s+(?:durch|von|bei)\\s+Natalie\\b',
+  '\\bNatalie[- ]?(?:Freigabe|Bestätigung|Genehmigung|Zustimmung|Rückfrage)\\b',
+  '\\b(?:Vorschlag|Vorbehalt|Entwurf)\\s+zur\\s+(?:Bestätigung|Freigabe|Genehmigung|Zustimmung)\\b',
+  '\\bzur\\s+(?:Bestätigung|Freigabe)\\s+(?:durch|vorgelegt|eingereicht)\\b',
+  '\\bvor\\s+der\\s+(?:abschließenden|endgültigen|finalen)\\s+(?:Freigabe|Bestätigung|Natalie)',
+  '\\b(?:Redaktionelle[rs]?\\s+)?Rückfrage\\s+(?:an|vor|zur)\\b',
+  '\\bBitte\\s+(?:festlegen|entscheiden|ergänzen|bestätigen|freigeben|prüfen,\\s*ob)\\b',
+  '\\b(?:Hinweis|Anmerkung|Notiz)\\s+an\\s+(?:die\\s+)?Redaktion\\b',
+  '\\bWerkstattnotiz\\b',
+  '\\b(?:author_notes|body_markdown|source_summary|impact_assessment|author_perspective|claim_indices|job_id|hold_code|editorial_revision|contract_path)\\b',
+].join('|'), 'u');
+
 const EDITORIAL_RESIDUE = [
+  PROCESS_NOTE_PATTERN,
   /\bWahrheit\s+zuerst\s*:/iu,
   /\b(?:das\s+interne\s+)?Claim[-\s]+Ledger\b/iu,
   /\b(?:Redaktionshinweis|interne[rns]?\s+(?:Hinweis|Prüfvermerk|Arbeitsanweisung))\s*:/iu,
