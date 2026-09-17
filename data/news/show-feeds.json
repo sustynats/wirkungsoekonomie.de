@@ -31,6 +31,22 @@
       }
     },
     {
+      "id": "maischberger",
+      "show_name": "maischberger",
+      "kind": "watched",
+      "provider": "ARD-Mediathek (WDR) über MediathekViewWeb, amtliche Untertitel bis 14:00 des Folgetags",
+      "min_duration_seconds": 2400,
+      "enabled": true,
+      "mediathek": {
+        "title": "maischberger",
+        "channel": "WDR"
+      },
+      "transcript_deadline": {
+        "day_offset": 1,
+        "berlin_hour": 14
+      }
+    },
+    {
       "id": "maithink-x",
       "show_name": "MAITHINK X",
       "kind": "watched",

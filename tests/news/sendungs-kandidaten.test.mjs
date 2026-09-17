@@ -425,3 +425,42 @@ test('ein offener Auftrag zur selben Folge verdrängt den Feed-Vorschlag', async
   assert.equal(requestNamesDate('am 16.09. lief', '2026-09-15T22:00:00.000Z'), true);
   assert.equal(requestNamesDate('ohne Datum', 'unlesbar'), false);
 });
+
+// 17.09.2026, Natalie: „Warum gibt es noch keine Maischberger-Analyse zum
+// Freigeben?" Weil die Sendung nie als verfolgte Sendung eingetragen war - nur
+// als Quellenverweis in der Medienliste. MediathekViewWeb fuehrt sie unter
+// Kanal WDR (nicht ARD), Titel "maischberger am TT.MM.JJJJ", ganze Folgen mit
+// 73 bis 77 Minuten, daneben 16- bis 26-Minuten-Clips und eine
+// Gebaerdensprach-Fassung je Folge. Die Zeilen unten sind die echte Antwort
+// der Abfrage vom 17.09. (gekuerzt).
+const maischbergerRows = () => [
+  { title: 'maischberger am 16.09.2026', topic: 'maischberger', channel: 'WDR', timestamp: 1789591800, duration: 4380, url_website: 'https://www.ardmediathek.de/video/maischberger/16-09', url_video: 'https://cdn.example/mb-16.mp4', url_video_low: 'https://cdn.example/mb-16-low.mp4', url_subtitle: '', id: 'm1' },
+  { title: 'maischberger am 16.09.2026 (Gebärdensprache)', topic: 'maischberger', channel: 'WDR', timestamp: 1789591800, duration: 4380, url_website: 'https://www.ardmediathek.de/video/maischberger/16-09-dgs', url_video: 'https://cdn.example/mb-16-dgs.mp4', url_subtitle: '', id: 'm2' },
+  { title: 'maischberger am 15.09.2026', topic: 'maischberger', channel: 'WDR', timestamp: 1789505400, duration: 4620, description: 'Mit Gästen zur Landtagswahl.', url_website: 'https://www.ardmediathek.de/video/maischberger/15-09', url_video: 'https://cdn.example/mb-15.mp4', url_video_low: 'https://cdn.example/mb-15-low.mp4', url_subtitle: 'https://www.ardmediathek.de/subtitle/maischberger-15-09.xml', id: 'm3' },
+  { title: 'maischberger am 15.09.2026 (Gebärdensprache)', topic: 'maischberger', channel: 'WDR', timestamp: 1789505400, duration: 4620, url_website: 'https://www.ardmediathek.de/video/maischberger/15-09-dgs', url_video: 'https://cdn.example/mb-15-dgs.mp4', url_subtitle: '', id: 'm4' },
+  { title: 'Jürgen Klinsmann und Ingo Zamperoni über die Verstrickung von Sport und Politik', topic: 'maischberger', channel: 'WDR', timestamp: 1789505400, duration: 1260, url_website: 'https://www.ardmediathek.de/video/maischberger/clip', url_video: 'https://cdn.example/mb-clip.mp4', url_subtitle: 'https://www.ardmediathek.de/subtitle/clip.xml', id: 'm5' },
+];
+
+test('maischberger ist eine verfolgte Sendung und wird aus der WDR-Mediathek gelesen', () => {
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const show = loadShows(root).find((entry) => entry.id === 'maischberger');
+  assert.ok(show, 'die Sendung steht in show-feeds.json');
+  assert.equal(show.kind, 'watched');
+  assert.equal(show.enabled, true);
+  assert.deepEqual(show.mediathek, { title: 'maischberger', channel: 'WDR' }, 'WDR, nicht ARD - so fuehrt MediathekViewWeb die Sendung');
+  assert.ok(show.min_duration_seconds >= 2000, 'die 16- bis 26-Minuten-Clips fallen unter die Mindestdauer');
+  assert.deepEqual(show.transcript_deadline, { day_offset: 1, berlin_hour: 14 }, 'amtliche Untertitel bis 14:00 des Folgetags, wie bei Lanz');
+  const body = JSON.parse(mediathekQueryBody(show));
+  assert.deepEqual(body.queries, [{ fields: ['title'], query: 'maischberger' }, { fields: ['channel'], query: 'WDR' }]);
+
+  const episodes = mediathekEpisodes(maischbergerRows(), show);
+  assert.equal(episodes.length, 2, 'zwei Folgen: der Clip faellt weg, die Gebaerdenfassungen sind dieselben Folgen');
+  const [neu, alt] = episodes;
+  assert.equal(neu.title, 'maischberger am 16.09.2026');
+  assert.ok(!neu.subtitle_url, 'die Folge von gestern hat noch keine amtlichen Untertitel - sie wartet');
+  assert.equal(neu.media, 'https://cdn.example/mb-16-low.mp4');
+  assert.equal(alt.title, 'maischberger am 15.09.2026');
+  assert.equal(alt.subtitle_url, 'https://www.ardmediathek.de/subtitle/maischberger-15-09.xml', 'die Folge vom 15.09. hat Untertitel');
+  assert.equal(alt.duration, 4620);
+  assert.ok(alt.summary.startsWith('Mit Gästen'));
+});
