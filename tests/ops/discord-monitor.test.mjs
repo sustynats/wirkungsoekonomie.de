@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow } from '../../scripts/ops/discord-monitor.mjs';
+import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow, lageCheck } from '../../scripts/ops/discord-monitor.mjs';
 
 const now = '2026-09-04T06:00:00Z';
 const fixture = () => ({ report: { status: 'ok', operational_status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [], queue: { status: 'clear', total: 0, capacity: 0, technical: 0, editorial: 0 }, source_funnel: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
@@ -494,4 +494,34 @@ test('long daily reports keep their final budget and warnings, with stable per-p
     assert.deepEqual(call.allowed_mentions, { parse: [] });
     assert.doesNotMatch(call.content, /[\uD800-\uDBFF]$/u, 'do not split an icon surrogate pair');
   }
+});
+
+// 17.09.2026: Der Lage-Schritt im Ticker-Lauf laeuft VOR dem Commit. Wuerde er
+// den Lauf abbrechen, ginge die bereits bezahlte Analyse dieses Laufs verloren.
+// Deshalb bricht er nicht ab - und deshalb muss sein Ausfall hier auffallen.
+test('eine fehlende oder veraltete Lage faellt auf, vor 06:00 aber nicht', () => {
+  const lage = (stand) => ({ lage_id: 'x', slot: 'mittagslage', date: '2026-09-17', stand });
+
+  // 14:00 Berlin, Lage von 12:00: in Ordnung.
+  let check = lageCheck({ lagen: [lage('2026-09-17T10:00:00Z')], now: '2026-09-17T12:00:00Z' });
+  assert.equal(check.ok, true);
+  assert.match(check.reason, /2\.0 Stunden alt/);
+
+  // 14:00 Berlin, jüngste Lage von gestern Abend: nicht in Ordnung.
+  check = lageCheck({ lagen: [lage('2026-09-16T16:00:00Z')], now: '2026-09-17T12:00:00Z' });
+  assert.equal(check.ok, false);
+  assert.match(check.reason, /spätestens alle sechs Stunden/);
+
+  // Gar keine Lage: nicht in Ordnung, mit klarer Aussage.
+  check = lageCheck({ lagen: [], now: '2026-09-17T12:00:00Z' });
+  assert.equal(check.ok, false);
+  assert.equal(check.reason, 'Es liegt keine einzige Lage vor.');
+
+  // 04:00 Berlin: keine neue Lage fällig, also kein Befund.
+  check = lageCheck({ lagen: [], now: '2026-09-17T02:00:00Z' });
+  assert.equal(check.ok, true);
+  assert.match(check.reason, /Vor 06:00/);
+
+  // Der Check ist keine Sofortmeldung: er weckt niemanden nachts.
+  assert.equal(lageCheck({ lagen: [], now: '2026-09-17T12:00:00Z' }).immediate, false);
 });
