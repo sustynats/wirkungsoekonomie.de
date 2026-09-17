@@ -525,3 +525,26 @@ test('eine fehlende oder veraltete Lage faellt auf, vor 06:00 aber nicht', () =>
   // Der Check ist keine Sofortmeldung: er weckt niemanden nachts.
   assert.equal(lageCheck({ lagen: [], now: '2026-09-17T12:00:00Z' }).immediate, false);
 });
+
+// Die Gegenprobe zur geparkten Fassung: hier steht die Freigabe live, gilt auf
+// dem Schreibtisch aber weiter als offen. Am 17.09.2026 lief genau das
+// dauerhaft, und keine der 20 Pruefungen sagte etwas dazu.
+test('eine unquittierte Freigabe faellt nach zwei Stunden auf, vorher nicht', () => {
+  const befund = (data) => evaluateChecks({ ...fixture(), ...data }, '2026-09-17T18:00:00Z')
+    .checks.find((check) => check.id === 'freigabe-quittung');
+
+  assert.equal(befund({}).ok, true, 'ohne Vermerk keine Meldung');
+  assert.match(befund({}).reason, /Keine Freigabe wartet/);
+
+  const frisch = befund({ awaitingReceipt: 4, awaitingSince: '2026-09-17T17:30:00Z' });
+  assert.equal(frisch.ok, true, 'die Quittung gehoert planmaessig einem spaeteren Lauf');
+  assert.match(frisch.reason, /4 Fassung\(en\) warten/);
+
+  const haengt = befund({ awaitingReceipt: 4, awaitingSince: '2026-09-17T13:00:00Z' });
+  assert.equal(haengt.ok, false);
+  assert.match(haengt.reason, /seit 5 Stunden/);
+  assert.match(haengt.reason, /Quittung an den Schreibtisch greift nicht/);
+
+  // Ohne belastbaren Beginn wird nicht alarmiert, sondern gezaehlt.
+  assert.equal(befund({ awaitingReceipt: 4, awaitingSince: 'kaputt' }).ok, true);
+});
