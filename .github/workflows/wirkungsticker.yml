@@ -108,6 +108,12 @@ jobs:
           # begrenzt zusätzlich die Taktung aus der Monatsfreigabe.
           WOEK_NEWS_MAX_AI_STORIES_PER_RUN: ${{ inputs.max_ai_stories || vars.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || '4' }}
           WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || '4' }}
+          # Tagesprofil: tagsueber das volle Kontingent, nachts gedrosselt.
+          # Drei veroeffentlichte Meldungen je Stunde brauchen rund sechs
+          # Aufrufe; rund um die Uhr waere das ausserhalb des Monatsrahmens.
+          WOEK_NEWS_NIGHT_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_NIGHT_STORIES_PER_HOUR || '' }}
+          WOEK_NEWS_DAY_FROM_HOUR: ${{ vars.WOEK_NEWS_DAY_FROM_HOUR || '7' }}
+          WOEK_NEWS_DAY_UNTIL_HOUR: ${{ vars.WOEK_NEWS_DAY_UNTIL_HOUR || '23' }}
           WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || '4' }}
           # LIFO ab heute: unveröffentlichte Kandidaten älter als der Horizont werden ohne Aufruf geschlossen.
           WOEK_NEWS_MAX_SOURCE_AGE_HOURS: ${{ vars.WOEK_NEWS_MAX_SOURCE_AGE_HOURS || '24' }}

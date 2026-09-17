@@ -90,5 +90,39 @@ export function tickerStoriesInWindow(usage, now, windowMinutes = WINDOW_MINUTES
   }, 0);
 }
 
-export const configuredHourlyQuota = (env = process.env) => Math.max(0,
-  Number(env.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+// Natalie am 17.09.2026: „So dass eben permanent jetzt mal wieder neue
+// Nachrichten live gehen. Drei Stück pro Stunde." Drei *veroeffentlichte*
+// Meldungen je Stunde brauchen rund sechs Aufrufe: gemessen wird etwa die
+// Haelfte der Aufrufe veroeffentlicht, die andere Haelfte haelt das Gate.
+//
+// Gleichmaessig ueber 24 Stunden waeren sechs Aufrufe je Stunde 2,03 USD am Tag
+// und damit ausserhalb des Monatsrahmens. Nachts liest niemand, tagsueber
+// dagegen soll die Liste laufen - deshalb ein Tagesprofil: von 7 bis 23 Uhr
+// Berliner Zeit das volle Kontingent, nachts das gedrosselte. Das kostet 1,47
+// USD am Tag und liefert tagsueber die drei.
+//
+// Die Budgetbremse bleibt die harte Grenze darunter: laeuft der Monat knapp,
+// drosselt sie von allein, und Natalies eigene Auftraege laufen weiter.
+// de-DE formatiert die Stunde als „07 Uhr". Number() liest daraus NaN, und NaN
+// fiel in den Nachtwert - das Tagesprofil war damit immer Nacht. Gelesen wird
+// deshalb der Zahlenteil, nicht die formatierte Zeichenkette.
+const berlinHour = (now) => {
+  const at = Date.parse(now);
+  if (!Number.isFinite(at)) return null;
+  const part = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hourCycle: 'h23' })
+    .formatToParts(at).find((entry) => entry.type === 'hour')?.value;
+  const hour = Number(part);
+  return Number.isInteger(hour) && hour >= 0 && hour <= 23 ? hour : null;
+};
+
+export function configuredHourlyQuota(env = process.env, now = new Date().toISOString()) {
+  const day = Math.max(0, Number(env.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+  const night = Number(env.WOEK_NEWS_NIGHT_STORIES_PER_HOUR);
+  if (!Number.isFinite(night) || night < 0) return day;
+  const from = Number(env.WOEK_NEWS_DAY_FROM_HOUR ?? 7);
+  const until = Number(env.WOEK_NEWS_DAY_UNTIL_HOUR ?? 23);
+  const hour = berlinHour(now);
+  // Ohne lesbare Zeit gilt die gedrosselte Zahl: im Zweifel weniger ausgeben.
+  if (hour === null || !Number.isFinite(from) || !Number.isFinite(until)) return Math.min(day, night);
+  return hour >= from && hour < until ? day : Math.min(day, night);
+}
