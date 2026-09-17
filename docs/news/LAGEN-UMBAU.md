@@ -227,3 +227,70 @@ abgeschaltet.
 0,023 USD je Aufruf rund 0,55–0,85 USD täglich. Dabei entstehen mehr
 redaktionelle Einheiten als heute (heute landen etwa 17 am Tag live), jede mit
 mehreren Quellen statt einer.
+
+## 11. Stand am 17.09.2026, 18:00
+
+Gebaut und eingebracht:
+
+| Schritt | Stand | Beleg |
+|---|---|---|
+| Lage als Datenobjekt | fertig (#871) | 13 Tests; Fenster lueckenlos, Zeitumstellung in beide Richtungen geprueft |
+| Lage-Seite | fertig (#874, #876) | Karten werden mit `storyCard` gerendert, Regressionstest auf woertliche Gleichheit; 0 nicht aufloesbare Verweise auf der gebauten Seite |
+| Lagen entstehen von selbst | fertig (#877) | Schritt im Ticker-Lauf vor dem Commit; an den Fenstergrenzen gegen echte Daten geprueft |
+| Auswahl nach Relevanz | fertig (#878) | 7 Tests; Medienresonanz ausdruecklich kein Kriterium, reservierte Plaetze nur mit Wirkungsstaerke |
+| Startseite und App | fertig (#879) | 3 Tests; Lagen des jUengsten Tages, neueste zuerst, Karten bleiben auf der Lage-Seite |
+| Meinung & Analyse je Lage | fertig (#880) | Anker ist der staerkste Eintrag der jUengsten Lage, Tagesdeckel 3, Schwellen bleiben |
+
+### Was ausdruecklich offen ist
+
+**1. Die Analyse findet weiter im Viertelstundentakt statt, nicht zur Lage.**
+Der Ticker sammelt und bewertet weiter alle 15 Minuten; gebuendelt wird die
+*Veroeffentlichungsflaeche* (die Lage), nicht der bezahlte Aufruf. Natalies
+fachliches Argument dafuer, die Bewertung erst zur Lage zu machen („Um 12 Uhr
+liegen vielleicht die Primaerquelle, eine Behoerdenreaktion und zwei
+unabhaengige Berichte vor"), bleibt richtig.
+
+Der Umstieg ist **an die Nachbesserungsquote gebunden, aus Budgetgruenden**:
+15 Cluster je Lauf mal 3 Laeufe = 45 Aufrufe am Tag. Bei der gemessenen Quote
+von 1,50 Aufrufen je Meldung werden daraus 68 - rund 1,55 USD am Tag. Der
+Monatsrahmen traegt 1,21 USD am Tag. Erst wenn ein Aufruf je Veroeffentlichung
+gilt, ist der Umstieg bezahlbar. Das ist Natalies eigene Regel, und sie ist
+hier die Sperre.
+
+**2. Die Nachbesserungsquote selbst.** Gemessen 1,50 Aufrufe je Meldung, 50 %
+der bezahlten Meldungen brauchen einen zweiten Aufruf. Eine Ursache ist
+behoben (#868), eine weitere sichtbar gemacht (#873: ein stiller Rueckfall auf
+ein schemafreies Antwortformat nach HTTP 400, dessen Grund weggeworfen wurde).
+Der Ablehnungsgrund wird jetzt aufbewahrt; die Reparatur folgt daraus, nicht
+aus einer Vermutung.
+
+**3. Die Quellenliste hat keine Technologiequelle.** Gemessen: 80 Quellen, und
+die einzige mit Technologiebezug ist `heise-wirtschaft` - der Wirtschaftsteil,
+nicht der Technikteil. Kein netzpolitik, kein Golem, keine
+Forschungsorganisation, kein BSI. Im Bestand: Technologie 3 und KI 3 Meldungen
+gegen Politik 106 und Geopolitik 80.
+
+Die Auswahl nach Relevanz (#878) verhindert, dass Technologie an der
+*Medienresonanz* scheitert, und reserviert Plaetze. Sie kann aber keine Themen
+auswaehlen, die nie eingesammelt wurden. **Neue Quellen sind eine redaktionelle
+Entscheidung und liegen bei Natalie**, nicht bei mir. Vorschlag zur Pruefung:
+heise online (Hauptfeed), netzpolitik.org, Golem, BSI-Pressemeldungen, idw
+(Informationsdienst Wissenschaft), Fraunhofer/Helmholtz/Max-Planck.
+
+**4. Breaking-Ausnahme.** Solange die Produktion im Viertelstundentakt laeuft,
+erscheinen Ereignisse ohnehin sofort als Karte; die Ausnahme wird erst mit
+Punkt 1 gebraucht. Die Regel aus Abschnitt 6 (geschlossene Liste, hoechstens
+zwei ausserplanmaessige Lagen am Tag) gilt dann unveraendert.
+
+### Eine Lehre, die im Plan bleiben soll
+
+Am 17.09.2026 hat die erste Lage-Seite den Deploy blockiert: die Karten
+verlinkten relativ, was nur von `/wirkungsticker/` aus aufgeht, und der
+Link-Check brach mit 23 kaputten Verweisen ab. Ein gescheiterter Build
+blockiert **jede** Veroeffentlichung - der Fehler kostete knapp zwei Stunden
+ohne neue Meldungen.
+
+Daraus folgt verbindlich: **Vor jeder Aenderung an einer gebauten Seite werden
+die Verweise der gebauten Seite geprueft**, nicht nur ihr Aussehen. Und zwar
+mit vollstaendigem Arbeitsbaum - im Sparse-Checkout melden 46 Navigationsziele
+faelschlich als kaputt, was den echten Befund verdeckt.

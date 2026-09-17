@@ -995,7 +995,11 @@ export function buildNewsSite() {
   const previousEditorialSlugs = fs.existsSync(EDITORIAL_MANIFEST_FILE) ? readJson(EDITORIAL_MANIFEST_FILE).slugs || [] : [];
   const currentEditorialSlugs = new Set(editorialAnalyses.map((analysis) => analysis.slug));
   for (const slug of previousEditorialSlugs) if (!currentEditorialSlugs.has(slug) && /^[a-z0-9-]+$/.test(slug)) fs.rmSync(path.join(TICKER_DIR, "analyse", slug), { recursive: true, force: true });
-  const appRoutes = buildAppPages({root:ROOT,stories,analyses:editorialAnalyses,storiesById,storyCard,editorialCard,pageShell,write,updatedAt:publicationUpdatedAt,appTools:indexPage([],publicationUpdatedAt).match(/<section class="section news-app-tools"[\s\S]*?<\/section>/)?.[0]||""});
+  // Die Ablage der Lagen wird einmal gelesen: die App zeigt sie auf der
+  // Startseite, der Seitenbau erzeugt je Lage eine Seite. Fehlt die Ablage,
+  // entsteht kein Abschnitt und keine Seite, und der Bau laeuft weiter.
+  const lagenStore = fs.existsSync(LAGEN_FILE) ? readJson(LAGEN_FILE) : { lagen: [] };
+  const appRoutes = buildAppPages({root:ROOT,stories,analyses:editorialAnalyses,storiesById,storyCard,editorialCard,pageShell,write,updatedAt:publicationUpdatedAt,lagen: lagenStore.lagen || [], appTools:indexPage([],publicationUpdatedAt).match(/<section class="section news-app-tools"[\s\S]*?<\/section>/)?.[0]||""});
   for (const story of pageStories) {
     const representativeIndex = stories.findIndex((item) => item.story_id === (story.case_file?.representative_id || story.story_id));
     const sameCaseIds = new Set(story.case_file?.members.map((member) => member.story_id) || []);
@@ -1035,9 +1039,7 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, _woek_released_at: item.released_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
-  // Lage-Seiten: zusaetzlich zum laufenden Betrieb, nichts Bestehendes aendert
-  // sich. Fehlt die Ablage, entsteht keine Seite und der Bau laeuft weiter.
-  const lagenStore = fs.existsSync(LAGEN_FILE) ? readJson(LAGEN_FILE) : { lagen: [] };
+  // Lage-Seiten: eine je Lage, aus der oben gelesenen Ablage.
   for (const lage of (lagenStore.lagen || []).slice(0, 30)) {
     if (!lage?.lage_id || !Number.isFinite(Date.parse(lage.stand))) continue;
     write(path.join(TICKER_DIR, 'lage', lage.lage_id, 'index.html'), pageShell({
