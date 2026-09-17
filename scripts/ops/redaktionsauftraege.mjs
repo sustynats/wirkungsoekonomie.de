@@ -10,6 +10,9 @@
 // an einem Auftrag. Und es gibt keinen Auftragstext aus - nur Kennung, Art,
 // Zeit und Zustand. Die Laufprotokolle sind oeffentlich, die Auftraege nicht.
 import { bridgeSession } from '../news/bridge/remote.mjs';
+// Dieselbe Kennung wie im Worker, eine Definition (siehe observation-keys.mjs).
+import { fehlerkennung } from '../news/bridge/observation-keys.mjs';
+export { fehlerkennung };
 
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED', 'BRIDGE_OPERATION_BUSY']);
 
@@ -38,10 +41,16 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
   if (acquired) {
     try {
       const rows = await bridge.store.all();
-      auftraege = rows.filter((row) => row?.input?.job_type === 'editorial_request')
+      const alle = rows.filter((row) => row?.input?.job_type === 'editorial_request')
         .map((row) => auftragsBefund(row, now))
-        .sort((a, b) => String(b.erstellt).localeCompare(String(a.erstellt)))
-        .slice(0, 25);
+        .sort((a, b) => String(b.erstellt).localeCompare(String(a.erstellt)));
+      // Interessant ist der offene Auftrag, nicht der neueste: ein
+      // liegengebliebener ist per Definition alt. Die ersten 25 nach Datum
+      // haetten den Fall verdeckt, den dieser Befund finden soll (der erste
+      // Lauf am 17.09.2026 zeigte 25 Auftraege von heute und gestern, waehrend
+      // vier offene aelter waren).
+      const offen = alle.filter((befund) => befund.zustand !== 'accepted');
+      auftraege = [...offen, ...alle.filter((befund) => befund.zustand === 'accepted').slice(0, 10)].slice(0, 40);
       // Der entscheidende Zustand steht nicht im Auftrag, sondern im Vermerk
       // zum Versuch: provider_called ohne output_delivered heisst, der Auftrag
       // ist verbraucht und kehrt erst mit einer Vertragskorrektur zurueck.
@@ -49,7 +58,8 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
         const versuch = await bridge.store.observation(`github-attempt:${befund.job_id}`).catch?.(() => null);
         befund.versuch = versuch ? { zustand: String(versuch.status || '').slice(0, 40),
           bezahlter_aufruf: Boolean(versuch.provider_called), workerversion: String(versuch.version || '').slice(0, 40),
-          verbraucht: Boolean(versuch.provider_called) && versuch.status !== 'output_delivered' } : null;
+          verbraucht: Boolean(versuch.provider_called) && versuch.status !== 'output_delivered',
+          grund: fehlerkennung(versuch.error) } : null;
       }
     } finally { await bridge.store.release(true).catch(() => {}); }
   }

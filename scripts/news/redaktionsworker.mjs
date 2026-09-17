@@ -7,7 +7,7 @@
 // als Entwurf ab. Die Redaktionsapp holt den Entwurf ab und legt ihn Natalie
 // zur Freigabe oder Rückgabe vor. Nichts wird direkt veröffentlicht.
 import path from 'node:path';
-import { EXHAUSTED_ORDERS_KEY } from './bridge/observation-keys.mjs';
+import { EXHAUSTED_ORDERS_KEY, fehlerkennung } from './bridge/observation-keys.mjs';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
 import { officialShowName } from './show-identity.mjs';
 import { repairMissingPackets } from './auftrag-einreichen.mjs';
@@ -43,6 +43,21 @@ const isoDay = (value) => String(value).slice(0, 10);
 // Ausloesertyp. Automatische Vorschlaege tragen beides nicht.
 export const manualRequest = (row) => Boolean(row?.intake?.draft_id)
   || /^manual/.test(String(row?.intake?.trigger_type || ''));
+
+// Ein Auftrag ist liegengeblieben, wenn sein bezahlter Versuch nichts
+// abgeliefert hat - dieselbe Regel, mit der processEditorialRequest ihn
+// 'attempt_exhausted' nennt. Abgeleitet aus dem Bestand, damit der Vermerk
+// nicht davon abhaengt, ob dieser Lauf ueberhaupt zum Zeichnen kam.
+export async function erschoepfteAuftraege(store, rows, { limit = 25 } = {}) {
+  const liste = [];
+  for (const row of selectEditorialRequests(rows, { limit })) {
+    const attempt = await store.observation(`github-attempt:${row.input.job_id}`).catch?.(() => null);
+    if (!attempt?.provider_called || attempt.status === 'output_delivered') continue;
+    liste.push({ job_id: String(row.input.job_id).slice(0, 64), seit: row.created_at || null,
+      grund: fehlerkennung(attempt.error), zustand: String(attempt.status || '').slice(0, 40) });
+  }
+  return liste;
+}
 
 export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() } = {}) {
   return rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued'
@@ -414,6 +429,12 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // Ihre eigenen Auftraege laufen auch dann, wenn Tageszahl und Stundenplatz
     // erschoepft sind: sie hat sie ausdruecklich gestellt, es sind wenige, und
     // ein liegengebliebener Auftrag von ihr ist teurer als ein paar Cent.
+    // Der Vermerk ueber liegengebliebene Auftraege gehoert VOR die Kontingent
+    // pruefungen: mit erschoepftem Stundenkontingent kehrt der Lauf hier zurueck,
+    // und mit ihm verschwaende genau die Meldung, die die Stille beenden soll
+    // (Lauf 35270196124, 17.09.2026: 'hourly_quota_reached', kein Vermerk).
+    await store.observe(EXHAUSTED_ORDERS_KEY, { at: now(), worker_version: WORKER_VERSION,
+      orders: await erschoepfteAuftraege(store, rows) }).catch?.(() => {});
     const eigene = selectEditorialRequests(rows, { limit: 50 }).filter(manualRequest);
     if (counter.paid >= maxJobsPerDay && !eigene.length) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
     // Ein Kontingent fuer alles, was bezahlt wird (Natalie am 16.09.: die
@@ -467,12 +488,9 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       }
       if (result.status === 'provider_unavailable') break;
     }
-    // Ein erschoepfter Auftrag ist kein redaktionelles Ergebnis, sondern ein
-    // liegengebliebener Auftrag. Der Vermerk macht ihn ausserhalb des
-    // Laufprotokolls sichtbar - ohne Auftragstext, nur Kennung und Alter.
-    const erschoepft = results.filter((result) => result.status === 'attempt_exhausted' && result.delivered !== true)
-      .map((result) => ({ job_id: String(result.job_id || '').slice(0, 64),
-        seit: rows.find((row) => row?.input?.job_id === result.job_id)?.created_at || null }));
+    // Nach der Arbeit derselbe Vermerk noch einmal: dieser Lauf kann einen
+    // Auftrag gerade verbraucht haben.
+    const erschoepft = await erschoepfteAuftraege(store, await store.all());
     await store.observe(EXHAUSTED_ORDERS_KEY, { at: now(), worker_version: WORKER_VERSION, orders: erschoepft }).catch?.(() => {});
     return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, exhausted_orders: erschoepft.length, results };
   } finally {

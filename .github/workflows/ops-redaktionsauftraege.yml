@@ -24,6 +24,7 @@ jobs:
             scripts/ops/redaktionsauftraege.mjs
             scripts/news/bridge/remote.mjs
             scripts/news/request-deadline.mjs
+            scripts/news/bridge/observation-keys.mjs
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:

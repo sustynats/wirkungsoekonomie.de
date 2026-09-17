@@ -46,3 +46,26 @@ test('reserviert ist ein Thema auch ohne passendes Etikett', () => {
   assert.equal(istReserviertesThema({ topic: ['Technologie'], title: 'Ohne jedes Musterwort' }), true, 'das ausdrueckliche Etikett bleibt gueltig');
   assert.equal(istReserviertesThema({ topic: ['Politik'], title: 'Generaldebatte im Bundestag', teaser: 'Haushalt und Etat' }), false);
 });
+
+// Gemessen am 17.09.2026: das Ressort "Wissenschaft" traf 0 von 363
+// veroeffentlichten Meldungen, wurde aber als Filter angeboten. Ein Filter,
+// der immer leer antwortet, ist ein Fehler und keine Auswahl.
+test('ein Ressort ohne einen einzigen Beitrag wird nicht angeboten', async () => {
+  const { buildAppPages } = await import('../../scripts/news/app-pages.mjs');
+  const path = await import('node:path');
+  const os = await import('node:os');
+  const geschrieben = new Map();
+  const wurzel = path.join(os.tmpdir(), `themen-test-${Math.random().toString(36).slice(2)}`);
+  const story = { story_id: 's1', slug: 'chipfabrik', title: 'Halbleiter: Neue Chipfabrik beschlossen',
+    teaser: 'Eine Entscheidung mit Folgen.', published: true, published_at: '2026-09-17T09:00:00.000Z',
+    source_published_at: '2026-09-17T08:00:00.000Z', topic: ['Technologie'], sources: [] };
+  buildAppPages({ root: wurzel, stories: [story], analyses: [], storiesById: new Map([['s1', story]]),
+    storyCard: () => '<article data-news-card></article>', editorialCard: () => '',
+    pageShell: ({ body }) => body, write: (datei, inhalt) => geschrieben.set(datei, inhalt),
+    updatedAt: '2026-09-17T10:00:00.000Z' });
+  const html = geschrieben.get(path.join(wurzel, 'wirkungsticker', 'news', 'index.html')) || '';
+  assert.ok(html.includes('data-app-filter="technik"'), 'das belegte Ressort steht da');
+  assert.equal(html.includes('data-app-filter="wissenschaft"'), false, 'das leere Ressort nicht');
+  assert.equal(html.includes('value="wissenschaft"'), false, 'auch nicht in der Auswahlliste');
+  assert.ok(html.includes('data-app-filter="alle"'), '"Alle" bleibt immer');
+});
