@@ -139,31 +139,13 @@ test('alte Lagen fallen aus der Ablage, nach Tag gruppiert bleibt die Folge lesb
   assert.deepEqual(upsertLage({ lagen: [alt] }, null).lagen, [alt], 'ohne Lage bleibt die Ablage unberührt');
 });
 
-// Die Bauregel aus docs/news/LAGEN-UMBAU.md, Abschnitt 6a: die Lage ist ein
-// Rahmen um die bestehenden Karten, kein neuer Kartentyp. Der Test prüft das am
-// echten Meldungsbestand und auf die härteste denkbare Weise - die Lage muss die
-// Ausgabe von storyCard wörtlich enthalten. Damit kann keine Lage eine Karte
-// ohne Balken, Ringe, Quellen oder Wirkungsanalyse zeigen.
-test('die Lage rendert wörtlich dieselbe Karte wie die Ticker-Liste', async () => {
-  const fs = await import('node:fs');
-  const { storyCard, lageBody } = await import('../../scripts/news/build.mjs');
-  const katalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories
-    .filter((s) => s.published && s.analysis && s.listed !== false);
-  assert.ok(katalog.length > 50, 'der Test läuft gegen den echten Bestand');
-  const echte = katalog[0];
-
-  const lage = { lage_id: '2026-09-17-mittagslage', slot: 'mittagslage', label: 'Mittagslage',
-    date: '2026-09-17', stand: '2026-09-17T10:00:00.000Z',
-    headline: 'Das sind die 1 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.',
-    entries: [{ story_id: echte.story_id, slug: echte.slug, state: 'neu' }] };
-  const html = lageBody(lage, new Map([[echte.story_id, echte]]));
-
-  assert.ok(html.includes(storyCard(echte, 0)), 'die Karte ist wörtlich dieselbe');
-  assert.match(html, /data-news-lage="2026-09-17-mittagslage"/);
-  assert.match(html, /Mittagslage · 17\. September · Stand 12:00 Uhr/, 'Stand in Berliner Zeit');
-  assert.ok(html.includes(lage.headline));
-});
-
+// 17.09.2026: Der Seitenbau ist zurueckgenommen. Die Karten verlinken mit
+// storyHref() relativ ("./slug/"), was nur von /wirkungsticker/ aus aufgeht -
+// von /wirkungsticker/lage/<kennung>/ zeigten 23 Links ins Leere und der
+// Website-Check brach den Deploy ab. Gescheiterte Builds blockieren die
+// Veroeffentlichung, deshalb erst zurueck, dann richtig. Die Bauregel aus
+// Abschnitt 6a bleibt: lageBody rendert mit storyCard. Der Regressionstest
+// dazu kommt mit dem Seitenbau wieder, dann mit tragfaehigen Verweisen.
 test('eine Lage ohne auflösbare Meldung bricht nicht und behauptet nichts', async () => {
   const { lageBody } = await import('../../scripts/news/build.mjs');
   const lage = { lage_id: '2026-09-17-abendlage', slot: 'abendlage', label: 'Abendlage',

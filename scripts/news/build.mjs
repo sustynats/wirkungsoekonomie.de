@@ -1023,22 +1023,6 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, _woek_released_at: item.released_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
-  // Lage-Seiten: zusaetzlich zum laufenden Betrieb, nichts Bestehendes aendert
-  // sich. Fehlt die Ablage, entsteht keine Seite und der Bau laeuft weiter.
-  const lagenStore = fs.existsSync(LAGEN_FILE) ? readJson(LAGEN_FILE) : { lagen: [] };
-  for (const lage of (lagenStore.lagen || []).slice(0, 30)) {
-    if (!lage?.lage_id || !Number.isFinite(Date.parse(lage.stand))) continue;
-    write(path.join(TICKER_DIR, 'lage', lage.lage_id, 'index.html'), pageShell({
-      title: `${lage.label} · ${lage.date}`,
-      description: lage.headline,
-      canonical: `${SITE}/wirkungsticker/lage/${lage.lage_id}/`,
-      base: '../../../',
-      body: lageBody(lage, storiesById),
-      publicUpdatedAt: lage.stand,
-      jsonLd: { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${lage.label} ${lage.date}`,
-        url: `${SITE}/wirkungsticker/lage/${lage.lage_id}/`, dateModified: lage.stand },
-    }));
-  }
   write(path.join(TICKER_DIR, 'methodik/index.html'), pageShell({title:'Wie der Wirkungsticker Wirkungen bewertet', description:'Richtung, Tragweite, Eintrittsplausibilität und Evidenz: die sechs Faktoren und Schutzgrenzen des Wirkungstickers verständlich erklärt.', canonical:`${SITE}/wirkungsticker/methodik/`, base:'../../', body:impactMethodology({profilesReleased:Boolean(PUBLIC_IMPACT_PROFILE_VERSION)}), jsonLd:{'@context':'https://schema.org','@type':'WebPage',name:'Methodik des Wirkungstickers',url:`${SITE}/wirkungsticker/methodik/`}}));
   const sourceRoutes = buildSourcePages(loadNewsRegistry(ROOT), readJson(path.join(ROOT, "data/news/state.json")), { pageShell, write, escapeHtml, root: ROOT, site: SITE, formatDate });
   const editorialRoutes = editorialAnalyses.map((analysis) => `wirkungsticker/analyse/${analysis.slug}/`);
