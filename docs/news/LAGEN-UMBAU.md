@@ -264,18 +264,37 @@ ein schemafreies Antwortformat nach HTTP 400, dessen Grund weggeworfen wurde).
 Der Ablehnungsgrund wird jetzt aufbewahrt; die Reparatur folgt daraus, nicht
 aus einer Vermutung.
 
-**3. Die Quellenliste hat keine Technologiequelle.** Gemessen: 80 Quellen, und
-die einzige mit Technologiebezug ist `heise-wirtschaft` - der Wirtschaftsteil,
-nicht der Technikteil. Kein netzpolitik, kein Golem, keine
-Forschungsorganisation, kein BSI. Im Bestand: Technologie 3 und KI 3 Meldungen
-gegen Politik 106 und Geopolitik 80.
+**3. Technologie: korrigierter Befund.** Ich hatte hier zweimal falsch
+geschlossen und schreibe beides hin, weil der falsche Befund sonst
+weiterwirkt.
 
-Die Auswahl nach Relevanz (#878) verhindert, dass Technologie an der
-*Medienresonanz* scheitert, und reserviert Plaetze. Sie kann aber keine Themen
-auswaehlen, die nie eingesammelt wurden. **Neue Quellen sind eine redaktionelle
-Entscheidung und liegen bei Natalie**, nicht bei mir. Vorschlag zur Pruefung:
-heise online (Hauptfeed), netzpolitik.org, Golem, BSI-Pressemeldungen, idw
-(Informationsdienst Wissenschaft), Fraunhofer/Helmholtz/Max-Planck.
+Erst: "Die Quellenliste hat keine Technologiequelle." Falsch - `heise-netzpolitik`
+und `heise-security` stehen im Verzeichnis. Dann implizit: es gebe keine
+Technikberichterstattung. Auch falsch - Natalie am 17.09.: "Wir hatten nur
+Heise, was auch gut ist. Aber auch Spiegel, Handelsblatt, FAZ & Co. haben auch
+Technik."
+
+Gemessen gilt: 49 von 363 veroeffentlichten Meldungen (13,5 %) haben
+Technikbezug im Text, aber nur 13 tragen ein Techniketikett. Die Knappheit war
+zu einem grossen Teil ein **Etikettierungsartefakt**, keine Themenluecke. Die
+Ursache stand in `app-pages.mjs`: die Ressortzuordnung sah nur dann in Titel
+und Anriss, wenn kein Etikett passte. Eine Meldung mit dem Etikett "Energie"
+und dem Titel "Kuenstliche Intelligenz: ..." traf ueber das Etikett schon
+Wirtschaft und Klima - der Titel wurde nie gelesen.
+
+Behoben mit einem gemeinsamen Ressortverzeichnis (`scripts/news/themen.mjs`):
+Etiketten UND oeffentlicher Text gelten zusammen, und die reservierten Plaetze
+der Lage lesen dasselbe Verzeichnis, statt exakte Etikettentexte zu
+vergleichen. Gemessen am Bestand: Technik 22 -> 31 Meldungen, Gesellschaft
+73 -> 87, keine Meldung verliert ein Thema. Bewusst nicht im Technikmuster:
+"Drohne" (4 von 9 neuen Treffern waren Kriegsmeldungen) und "Infrastruktur" als
+Muster (holte Kriegsschaeden an Energieanlagen herein); als ausdrueckliches
+Etikett bleibt Infrastruktur reserviert.
+
+Offen bleibt die **redaktionelle** Frage, die nur Natalie entscheiden kann:
+FAZ und Handelsblatt fehlen im Quellenverzeichnis (80 Quellen). Ein Ausbau um
+heise online (Hauptfeed), netzpolitik.org, Golem, BSI oder idw waere moeglich,
+ist aber eine Entscheidung ueber die Blattlinie, keine technische.
 
 **4. Breaking-Ausnahme.** Solange die Produktion im Viertelstundentakt laeuft,
 erscheinen Ereignisse ohnehin sofort als Karte; die Ausnahme wird erst mit
