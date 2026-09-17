@@ -43,6 +43,7 @@ import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG, digest as imageDigest } from "./title-image/policy.mjs";
 import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, sharedHourlyRoom, editorialReserve, waitingCount } from "./stundenkontingent.mjs";
+import { sameEventByFacts } from "./ereignisfakten.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
 import { numberTokens, evidenceNumberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
@@ -1438,8 +1439,14 @@ export async function runWirkungsticker(options = {}) {
     if (candidate.followup_due || candidate.deepening_due) return false;
     const item = { title: candidate.title, summary: candidate.sources?.[0]?.summary || '',
       url: candidate.sources?.[0]?.url, published_at: new Date(latestSourceDate(candidate.sources) || Date.parse(candidate.first_seen || now)).toISOString() };
+    // Zwei Wege, dieselbe Nachricht zu erkennen: der Wortvergleich faengt die
+    // identische Dublette, der Faktenvergleich die umformulierte aus einem
+    // anderen Haus. Am Bestand gemessen erkennt der Faktenvergleich genau die
+    // vier Sanktions-Meldungen und fuehrt keine zwei verschiedenen Meldungen
+    // zusammen - rollende Lagen sind darin ausdruecklich ausgenommen.
     return publishedMatchable.some((story) => story.story_id !== candidate.story_id
-      && existingStoryMatch(item, { story, last_updated: story.last_updated || story.published_at }, now) >= 0.95);
+      && (existingStoryMatch(item, { story, last_updated: story.last_updated || story.published_at }, now) >= 0.95
+        || sameEventByFacts(item, { title: story.title, summary: story.analysis?.source_summary || '', published_at: story.published_at })));
   });
   const duplicateIds = new Set(duplicateOfPublished.map((candidate) => candidate.story_id));
   report.duplicates_of_published = duplicateOfPublished.length;
