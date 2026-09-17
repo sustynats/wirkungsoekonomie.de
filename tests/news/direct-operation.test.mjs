@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat, fieldFromFinding, combinedRepairFormat } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
@@ -818,4 +819,48 @@ test('eine Meldung, die schon veroeffentlicht ist, kostet keinen zweiten Aufruf'
   const block = quelle.slice(quelle.indexOf('const duplicateOfPublished'), quelle.indexOf('const duplicateIds'));
   assert.match(block, /candidate\.existing_story\?\.published \|\| candidate\.impact_reassessment \|\| candidate\.reassessment/);
   assert.match(block, /candidate\.followup_due \|\| candidate\.deepening_due/);
+});
+
+// 17.09.2026: Lehnt der Anbieter die Anfrage mit dem strikten Schema mit 400 ab,
+// faellt der Lauf auf das schemafreie Format zurueck. Dort darf das Modell
+// Pflichtfelder weglassen - im Lauf um 12:09 fehlten zwei der drei
+// MPD-Dimensionen und die Begruendung, das Gate forderte nach, und die
+// Nachbesserung war bezahlt. Der Grund der Ablehnung wurde dabei weggeworfen,
+// also war der Kostentreiber unsichtbar. Genau das darf nicht wieder passieren.
+test('eine abgelehnte Schema-Anfrage haelt ihren Grund fest', async () => {
+  const gesendet = [];
+  let calls = 0;
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.4-mini',
+    retryDelayImpl: async () => {},
+    fetchImpl: async (url, options) => {
+      gesendet.push(JSON.parse(options.body).text?.format?.type);
+      calls += 1;
+      if (calls === 1) return { ok: false, status: 400,
+        json: async () => ({ error: { code: 'invalid_json_schema', message: 'Schema hat zu viele Verschachtelungsebenen.' } }) };
+      return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1',
+        publication_recommendation: false, rejection: { code: 'not_material', reason: 'Nur eine Routinemitteilung ohne materielle Veränderung.' } }] })) };
+    } });
+
+  // Der Rueckfall passiert weiterhin, er ist jetzt nur nicht mehr stumm.
+  assert.deepEqual(gesendet, ['json_schema', 'json_object']);
+  assert.equal(result.analysis_schema, false, 'die Antwort kam ohne Schemazwang');
+  assert.equal(result.schema_rejections.length, 1);
+  assert.deepEqual(result.schema_rejections[0], { format: 'json_schema',
+    code: 'invalid_json_schema', message: 'Schema hat zu viele Verschachtelungsebenen.' });
+  // Ein abgelehntes Schema ist kein bezahlter Versuch.
+  assert.equal(result.request_attempts, 1);
+});
+
+test('ohne Ablehnung bleibt das Feld leer und die Antwort schemagebunden', async () => {
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.4-mini',
+    fetchImpl: async () => ({ ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1',
+      publication_recommendation: false, rejection: { code: 'not_material', reason: 'Nur eine Routinemitteilung ohne materielle Veränderung.' } }] })) }) });
+  assert.equal(result.schema_rejections, undefined);
+});
+
+// Der Bericht und die Nutzungsakte fuehren den Grund, nicht nur die Zahl.
+test('der Ablehnungsgrund landet im Bericht und in der Nutzungsakte', () => {
+  const quelle = fs.readFileSync('scripts/news/run.mjs', 'utf8');
+  assert.match(quelle, /report\.ai_schema_rejections \|\|= \{\}/);
+  assert.match(quelle, /schema_rejections: \{ \.\.\.report\.ai_schema_rejections \}/);
 });
