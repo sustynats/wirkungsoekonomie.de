@@ -2,8 +2,1254 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T10:37:32.868Z",
+  "updated_at": "2026-09-17T11:07:38.127Z",
   "stories": [
+    {
+      "story_id": "wt-b40ed385d3ba5f9a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b40ed385d3ba5f9a-5c1ed2adf39778f1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b40ed385d3ba5f9a-f4a22d9440ea0bb8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b40ed385d3ba5f9a-f974f4e68c292bfe-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ministerprasident-dr-markus-soder-zum-rucktritt-von-justizminister-georg-eisenreich-gros-ba5f9a",
+      "title": "Laut Söder zieht sich Justizminister Georg Eisenreich aus Bayerns politischer Spitze zurück",
+      "source_summary": "Die Bayerische Staatsregierung veröffentlicht eine Erklärung von Ministerpräsident Markus Söder zum Rückzug von Justizminister Georg Eisenreich. Danach habe Eisenreich eine private Entscheidung getroffen und wolle sich aus der vordersten Reihe der Politik zurückziehen. Söder bedauert den Schritt und würdigt Eisenreichs Arbeit für Bayern.\n\nDie Erklärung beschreibt Eisenreichs politische Stationen: Er war zunächst Staatssekretär für Bildung und Kultus, Wissenschaft und Kunst, danach Staatsminister für Europa, Digitales und Medien und seit 2018 Staatsminister der Justiz. Die Quelle stellt seine Kompetenz und sein Wirken für den Freistaat positiv dar.\n\nOffen bleiben in dem vorliegenden Ausschnitt das genaue Wirksamkeitsdatum des Rückzugs, eine Nachfolge im Justizressort und mögliche weitere politische Schritte Eisenreichs. Es liegt nur die institutionelle Erklärung der Staatsregierung vor.",
+      "summary": "Markus Söder bestätigt den angekündigten Rückzug von Justizminister Georg Eisenreich und würdigt dessen politische Arbeit. Zeitpunkt und Nachfolge im Justizressort bleiben offen.",
+      "detail_summary": "Ministerpräsident Markus Söder erklärt, Georg Eisenreich ziehe sich nach einer privaten Entscheidung aus der vordersten Reihe der Politik zurück. Die Staatsregierung würdigt seine Arbeit in mehreren politischen Ämtern und nennt ihn seit 2018 als Justizminister. Der Vorgang kann die Zuständigkeit und politische Entscheidungsfindung im Ressort verändern, falls ein Wechsel umgesetzt wird. Für Menschen und Umwelt ist aus der Quelle keine eingetretene Wirkung ableitbar. Offen bleiben Wirksamkeitsdatum, Nachfolge und konkrete politische Folgen.",
+      "why_relevant": "Der angekündigte Rückzug eines amtierenden Landesministers kann Zuständigkeiten, Prioritäten und politische Verantwortlichkeit im Justizressort verändern. Die Quelle belegt jedoch noch keine Nachfolge oder Umsetzung.",
+      "topic": [
+        "Arbeit",
+        "Digitalisierung",
+        "Europa",
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Ankündigung des Rückzugs von Justizminister Georg Eisenreich durch Ministerpräsident Markus Söder",
+        "evaluation_target": {
+          "label": "politischer Rückzug und mögliche Amtsübergabe im bayerischen Justizressort",
+          "type": "development"
+        },
+        "baseline": "Georg Eisenreich wird in der Quelle als seit 2018 amtierender Staatsminister der Justiz beschrieben; eine konkrete Übergangsregelung ist nicht belegt.",
+        "counterfactual": "Ohne den angekündigten Rückzug bliebe die bisherige personelle Zuständigkeit zunächst bestehen, sofern keine andere Veränderung eintritt.",
+        "reference_frame": [
+          "institutionelle Kontinuität",
+          "Rechtsstaatlichkeit",
+          "politische Rechenschaft"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher Amtswechsel könnte mittelbar die Prioritäten und Zugänge im Justizressort verändern. Konkrete Auswirkungen auf Rechte, Versorgung oder Verteilung sind nicht belegt.",
+            "planet": "Die Quelle nennt keine umweltbezogene Maßnahme. Ein materieller Umweltpfad ist im abgegrenzten Gegenstand praktisch vernachlässigbar.",
+            "democracy": "Ein personeller Wechsel könnte Verantwortlichkeit, politische Kontrolle und Entscheidungswege im Ressort verändern. Richtung und Ausmaß hängen von Wirksamkeitsdatum und Nachfolge ab."
+          },
+          "central_dimensions": [
+            "democracy",
+            "human"
+          ],
+          "first_order": "Der angekündigte Rückzug könnte die personelle Zuständigkeit im Justizressort verändern.",
+          "second_order": "Eine Nachfolge könnte politische Prioritäten und administrative Entscheidungswege neu ordnen.",
+          "third_order": "Bei einer deutlich veränderten Leitung könnten sich institutionelle Kontinuität und politische Rechenschaft im Ressort mittelbar verändern; dafür fehlen konkrete Angaben.",
+          "enablement": [
+            "enables_office",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine Nachfolge, kein Wirksamkeitsdatum und keine konkrete Änderung der Justizpolitik.",
+            "Die institutionellen Verfahren können einen Übergang begrenzen oder stabilisieren.",
+            "Für einen Umweltpfad nennt die Quelle keinen relevanten Mechanismus."
+          ],
+          "source_independence": "Es liegt nur eine institutionelle Primärquelle der Bayerischen Staatsregierung vor. Eine unabhängige Bestätigung ist nicht vorhanden; die Erklärung belegt die Aussage der Staatsregierung, nicht automatisch alle daraus abgeleiteten Folgen.",
+          "institutional_status": "Die Quelle beschreibt einen angekündigten persönlichen Rückzug. Ein formaler Amtswechsel, seine Wirksamkeit und eine Nachfolge sind im vorliegenden Ausschnitt nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand erlaubt keine belastbare Aussage zu konkreten Folgen für Menschen. Modellierbar bleibt nur ein bedingter Pfad über eine mögliche Veränderung von Zuständigkeiten und rechtspolitischen Prioritäten.",
+            "reviewed_source_ids": [
+              "bayern-landesregierung-presse"
+            ],
+            "rationale": "Ein personeller Wechsel könnte mittelbar politische Entscheidungen im Justizressort beeinflussen. Ein konkreter Nutzen oder Schaden für Menschen ist nicht belegt; die Richtung des modellierten Hauptpfads ist daher nur als möglich und bedingt einzuordnen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Neuordnung von Zuständigkeiten im Justizressort",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine Amtsübergabe könnte Entscheidungszuständigkeiten neu ordnen und bei geeigneter Nachfolge institutionelle Kontinuität oder klarere Verantwortlichkeit ermöglichen.",
+                "recipients": [
+                  "Bayerische Justizverwaltung",
+                  "Rechtsuchende und von Justizentscheidungen betroffene Menschen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Wirkung wäre begrenzt und hängt vollständig von Wirksamkeitsdatum, Nachfolge und deren Prioritäten ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Das Justizressort betrifft viele Menschen, aber der konkrete Vorgang ist zunächst personell begrenzt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Veränderung der Zuständigkeit wäre zunächst institutionell und nicht unmittelbar existenziell.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Folgen hängt von der noch unbekannten Nachfolge und Amtsführung ab.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Personelle Zuständigkeiten und politische Prioritäten sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene Gruppen könnten von Justizentscheidungen abhängen, doch konkrete Risiken sind nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad reicht möglicherweise in Verwaltungsabläufe, verändert aber nicht nachweislich die institutionelle Grundordnung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Menschen wird durch die Quelle nicht beschrieben.",
+                  "reference_frame": "Zugang zu rechtsstaatlichen Institutionen",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Nur bei tatsächlichem Rückzug, geregelter Nachfolge und einer damit verbundenen Veränderung von Zuständigkeiten oder Prioritäten.",
+                "reference_space": "Bayern, Justizressort und davon betroffene Menschen",
+                "time_horizon": "Nach einer möglichen Amtsübergabe",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass eine Nachfolgeentscheidung politische oder administrative Prioritäten beeinflussen könnte.",
+                "source_support": "Die Quelle belegt den angekündigten Rückzug und die bisherige Funktion, nicht die Folge für Menschen.",
+                "limitations": "Zeitpunkt, Nachfolge, Umsetzung und konkrete Maßnahmen sind unbekannt.",
+                "first_order": "Mögliche Veränderung der politischen Leitung.",
+                "second_order": "Mögliche Anpassung von Verwaltungs- und Rechtspolitik.",
+                "third_order": "Mögliche mittelbare Veränderung von institutioneller Verlässlichkeit und Zugang zu Recht.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche belastbare Wirkungsinformation im gelieferten Bestand; Eintritt und Richtung bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Mögliche Neuordnung von Zuständigkeiten im Justizressort",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Mögliche Neuordnung von Zuständigkeiten im Justizressort",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der gelieferte Quellenbestand enthält keinen Umweltbezug, keine umweltpolitische Maßnahme und keinen plausiblen konkreten Übertragungsmechanismus. Ein materieller Umweltpfad ist im abgegrenzten Raum und Zeitraum vernachlässigbar.",
+            "reviewed_source_ids": [
+              "bayern-landesregierung-presse"
+            ],
+            "rationale": "Der Gegenstand ist ein personeller Rückzug im Justizressort. Die Quelle nennt keine Umweltentscheidung, keinen Ressourceneinsatz und keine ökologische Zustandsänderung; deshalb ist der planetare Pfad begründet vernachlässigbar.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller planetarer Wirkpfad aus dem belegten Vorgang",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Der belegte Vorgang betrifft eine politische Personalentscheidung im Justizressort und enthält keinen Mechanismus zu Umwelt, Energie, Landnutzung oder Emissionen.",
+                "recipients": [
+                  "Ökosysteme und natürliche Ressourcen"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im gelieferten Sachverhalt ist kein materieller Umweltmechanismus erkennbar; ein höherer Wert wäre nicht quellengebunden begründbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine betroffene Umweltreichweite ist im Quellenbestand erkennbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Zustandsänderung wird beschrieben.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine umweltbezogene Dauer oder zeitliche Wirkung ist belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Veränderung und damit keine Irreversibilität ist belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzlichen Ökosysteme oder Ressourcen werden im Vorgang adressiert.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Der Vorgang enthält keinen ökologischen Systemmechanismus.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze ist vom Sachverhalt berührt.",
+                  "reference_frame": "ökologische Integrität und Ressourcenschutz",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Nur ein zusätzlicher, in der Quelle nicht enthaltener Umweltbezug könnte den Pfad verändern.",
+                "reference_space": "Bayern und betroffene Ökosysteme",
+                "time_horizon": "Unbestimmt; im vorliegenden Vorgang kein relevanter Zeitraum ableitbar",
+                "path_quality": [
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Keine zusätzlichen Umweltmaßnahmen oder Ressortentscheidungen werden unterstellt.",
+                "source_support": "Die Quelle beschreibt ausschließlich Rückzug, Ämter und politische Würdigung.",
+                "limitations": "Der Quellenbestand ist begrenzt und enthält keine Umweltinformationen.",
+                "first_order": "Keine belegte ökologische Zustandsänderung.",
+                "second_order": "Keine belegte ökologische Folge.",
+                "third_order": "Keine belegte systemische Umweltkaskade.",
+                "research_pass": "second_pass",
+                "research_result": "Keine umweltbezogene Information oder Gegenevidenz im gelieferten Quellenbestand.",
+                "negligibility_rationale": "Der Vorgang betrifft nach dem gelieferten Beleg eine Personalentscheidung im Justizressort; ein materieller Umweltmechanismus ist nicht erkennbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem belegten Vorgang",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem belegten Vorgang",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand belegt den angekündigten Rückzug, aber keine Nachfolge und keine Veränderung von Mehrheiten, Verfahren oder institutionellen Regeln. Deshalb sind sowohl Kontinuität als auch mögliche Neuordnung nur bedingte Pfade.",
+            "reviewed_source_ids": [
+              "bayern-landesregierung-presse"
+            ],
+            "rationale": "Ein Ministerwechsel kann Verantwortlichkeit und Entscheidungswege verändern. Ohne Angaben zur Nachfolge bleibt offen, ob dies die demokratische Rechenschaft stärkt, schwächt oder praktisch unverändert lässt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche geordnete Amtsübergabe und klare Verantwortlichkeit",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine transparente Nachfolgeregelung könnte Zuständigkeit, politische Rechenschaft und institutionelle Kontinuität im Ressort sichern.",
+                "recipients": [
+                  "Bayerischer Landtag",
+                  "Bayerische Staatsregierung",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche demokratische Wirkung ist begrenzt, solange weder Verfahren noch Nachfolge bekannt sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Vorgang betrifft die politische Leitung eines Landesressorts und damit einen begrenzten institutionellen Kreis.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Veränderung der Rechenschaft wäre institutionell, nicht unmittelbar eine Regeländerung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt von der Ausgestaltung und Stabilität der Nachfolge ab.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Personelle Entscheidungen und politische Verantwortlichkeit sind demokratisch grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Öffentliche Kontrolle kann von klarer Verantwortlichkeit profitieren, konkrete Schutzbedarfe sind aber nicht benannt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft eine Ressortleitung, nicht nachweislich die demokratische Grundordnung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze wird durch die Quelle nicht berührt.",
+                  "reference_frame": "politische Verantwortlichkeit und institutionelle Rechenschaft",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Eine geordnete, transparente Nachfolge müsste tatsächlich beschlossen und kommuniziert werden.",
+                "reference_space": "Bayerische Landesregierung und Justizressort",
+                "time_horizon": "Im Zeitraum der möglichen Amtsübergabe",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine geregelte Nachfolge wird als mögliche, nicht belegte Bedingung angenommen.",
+                "source_support": "Die Quelle belegt den Rückzug und Söders Würdigung, nicht die Qualität eines Übergangs.",
+                "limitations": "Keine Angaben zu Verfahren, Nachfolge, parlamentarischer Kontrolle oder politischen Prioritäten.",
+                "first_order": "Mögliche Neubesetzung einer politischen Leitungsfunktion.",
+                "second_order": "Mögliche Veränderung von Verantwortlichkeit und politischen Entscheidungswegen.",
+                "third_order": "Mögliche Veränderung der institutionellen Kontinuität und öffentlichen Rechenschaft.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige oder zusätzliche Information zur demokratischen Folge im gelieferten Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "label": "Mögliche Übergangsunsicherheit und verzögerte Verantwortungszuordnung",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Falls Wirksamkeitsdatum oder Nachfolge unklar bleiben, könnten Zuständigkeiten und politische Verantwortlichkeit vorübergehend weniger eindeutig sein.",
+                "recipients": [
+                  "Bayerischer Landtag",
+                  "Bayerische Justizverwaltung",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Gegenpfad ist an eine nicht belegte Verzögerung oder unklare Übergangsregelung gebunden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Unklarheit beträfe vor allem das Ressort und seine politischen Kontrollbeziehungen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die mögliche Beeinträchtigung wäre zunächst begrenzt auf Zuständigkeit und Koordination.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Übergangsunsicherheit könnte kurz- oder mittelfristig bestehen, ist aber nicht datiert.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine Zuständigkeitsunklarheit wäre durch eine klare Entscheidung grundsätzlich reversibel.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene demokratische Kontrollbeziehungen könnten vorübergehend belastet sein, konkrete Auswirkungen fehlen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft mögliche Verwaltungs- und Rechenschaftsabläufe, nicht die Grundordnung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle demokratische Schutzgrenze ist nicht belegt; es handelt sich um ein mögliches Übergangsrisiko.",
+                  "reference_frame": "klare Zuständigkeit und demokratische Rechenschaft",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Nur falls Wirksamkeitsdatum oder Nachfolge nicht rechtzeitig und eindeutig geregelt werden.",
+                "reference_space": "Bayerische Landesregierung, Landtag und Justizressort",
+                "time_horizon": "Mögliche Übergangsphase",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Quelle lässt offen, ob und wann eine Nachfolgeregelung erfolgt.",
+                "source_support": "Die Quelle enthält keine Angaben zu Verzögerungen oder institutionellen Problemen.",
+                "limitations": "Der negative Pfad ist eine konditionale Hypothese und nicht beobachtet.",
+                "first_order": "Mögliche Unklarheit über politische Zuständigkeit.",
+                "second_order": "Mögliche Verzögerung von Entscheidungen oder Kontrolle.",
+                "third_order": "Mögliche vorübergehende Schwächung institutioneller Rechenschaft.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Angaben zur Übergangsorganisation oder zu Verzögerungen im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative demokratische Pfade sind nur bedingt modellierbar und in ihrer möglichen Größenordnung vergleichbar. Die Quelle erlaubt keine Entscheidung über eine dominante Richtung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Mögliche geordnete Amtsübergabe und klare Verantwortlichkeit",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche geordnete Amtsübergabe und klare Verantwortlichkeit",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T11:11:07.586Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "bayern-landesregierung-presse",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Die Primärquelle trägt die amtliche Erklärung zum persönlichen Rückzug, die Würdigung durch Söder und die genannten politischen Stationen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand erlaubt keine belastbare Aussage zu konkreten Folgen für Menschen. Modellierbar bleibt nur ein bedingter Pfad über eine mögliche Veränderung von Zuständigkeiten und rechtspolitischen Prioritäten.",
+          "reviewed_source_ids": [
+            "bayern-landesregierung-presse"
+          ],
+          "rationale": "Ein personeller Wechsel könnte mittelbar politische Entscheidungen im Justizressort beeinflussen. Ein konkreter Nutzen oder Schaden für Menschen ist nicht belegt; die Richtung des modellierten Hauptpfads ist daher nur als möglich und bedingt einzuordnen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Neuordnung von Zuständigkeiten im Justizressort",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine Amtsübergabe könnte Entscheidungszuständigkeiten neu ordnen und bei geeigneter Nachfolge institutionelle Kontinuität oder klarere Verantwortlichkeit ermöglichen.",
+              "recipients": [
+                "Bayerische Justizverwaltung",
+                "Rechtsuchende und von Justizentscheidungen betroffene Menschen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Wirkung wäre begrenzt und hängt vollständig von Wirksamkeitsdatum, Nachfolge und deren Prioritäten ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Das Justizressort betrifft viele Menschen, aber der konkrete Vorgang ist zunächst personell begrenzt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Veränderung der Zuständigkeit wäre zunächst institutionell und nicht unmittelbar existenziell.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Folgen hängt von der noch unbekannten Nachfolge und Amtsführung ab.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Personelle Zuständigkeiten und politische Prioritäten sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene Gruppen könnten von Justizentscheidungen abhängen, doch konkrete Risiken sind nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad reicht möglicherweise in Verwaltungsabläufe, verändert aber nicht nachweislich die institutionelle Grundordnung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Menschen wird durch die Quelle nicht beschrieben.",
+                "reference_frame": "Zugang zu rechtsstaatlichen Institutionen",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Nur bei tatsächlichem Rückzug, geregelter Nachfolge und einer damit verbundenen Veränderung von Zuständigkeiten oder Prioritäten.",
+              "reference_space": "Bayern, Justizressort und davon betroffene Menschen",
+              "time_horizon": "Nach einer möglichen Amtsübergabe",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass eine Nachfolgeentscheidung politische oder administrative Prioritäten beeinflussen könnte.",
+              "source_support": "Die Quelle belegt den angekündigten Rückzug und die bisherige Funktion, nicht die Folge für Menschen.",
+              "limitations": "Zeitpunkt, Nachfolge, Umsetzung und konkrete Maßnahmen sind unbekannt.",
+              "first_order": "Mögliche Veränderung der politischen Leitung.",
+              "second_order": "Mögliche Anpassung von Verwaltungs- und Rechtspolitik.",
+              "third_order": "Mögliche mittelbare Veränderung von institutioneller Verlässlichkeit und Zugang zu Recht.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche belastbare Wirkungsinformation im gelieferten Bestand; Eintritt und Richtung bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Mögliche Neuordnung von Zuständigkeiten im Justizressort",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Mögliche Neuordnung von Zuständigkeiten im Justizressort",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der gelieferte Quellenbestand enthält keinen Umweltbezug, keine umweltpolitische Maßnahme und keinen plausiblen konkreten Übertragungsmechanismus. Ein materieller Umweltpfad ist im abgegrenzten Raum und Zeitraum vernachlässigbar.",
+          "reviewed_source_ids": [
+            "bayern-landesregierung-presse"
+          ],
+          "rationale": "Der Gegenstand ist ein personeller Rückzug im Justizressort. Die Quelle nennt keine Umweltentscheidung, keinen Ressourceneinsatz und keine ökologische Zustandsänderung; deshalb ist der planetare Pfad begründet vernachlässigbar.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller planetarer Wirkpfad aus dem belegten Vorgang",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Der belegte Vorgang betrifft eine politische Personalentscheidung im Justizressort und enthält keinen Mechanismus zu Umwelt, Energie, Landnutzung oder Emissionen.",
+              "recipients": [
+                "Ökosysteme und natürliche Ressourcen"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im gelieferten Sachverhalt ist kein materieller Umweltmechanismus erkennbar; ein höherer Wert wäre nicht quellengebunden begründbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine betroffene Umweltreichweite ist im Quellenbestand erkennbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Zustandsänderung wird beschrieben.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine umweltbezogene Dauer oder zeitliche Wirkung ist belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Veränderung und damit keine Irreversibilität ist belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzlichen Ökosysteme oder Ressourcen werden im Vorgang adressiert.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Der Vorgang enthält keinen ökologischen Systemmechanismus.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze ist vom Sachverhalt berührt.",
+                "reference_frame": "ökologische Integrität und Ressourcenschutz",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Nur ein zusätzlicher, in der Quelle nicht enthaltener Umweltbezug könnte den Pfad verändern.",
+              "reference_space": "Bayern und betroffene Ökosysteme",
+              "time_horizon": "Unbestimmt; im vorliegenden Vorgang kein relevanter Zeitraum ableitbar",
+              "path_quality": [
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Keine zusätzlichen Umweltmaßnahmen oder Ressortentscheidungen werden unterstellt.",
+              "source_support": "Die Quelle beschreibt ausschließlich Rückzug, Ämter und politische Würdigung.",
+              "limitations": "Der Quellenbestand ist begrenzt und enthält keine Umweltinformationen.",
+              "first_order": "Keine belegte ökologische Zustandsänderung.",
+              "second_order": "Keine belegte ökologische Folge.",
+              "third_order": "Keine belegte systemische Umweltkaskade.",
+              "research_pass": "second_pass",
+              "research_result": "Keine umweltbezogene Information oder Gegenevidenz im gelieferten Quellenbestand.",
+              "negligibility_rationale": "Der Vorgang betrifft nach dem gelieferten Beleg eine Personalentscheidung im Justizressort; ein materieller Umweltmechanismus ist nicht erkennbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem belegten Vorgang",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem belegten Vorgang",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand belegt den angekündigten Rückzug, aber keine Nachfolge und keine Veränderung von Mehrheiten, Verfahren oder institutionellen Regeln. Deshalb sind sowohl Kontinuität als auch mögliche Neuordnung nur bedingte Pfade.",
+          "reviewed_source_ids": [
+            "bayern-landesregierung-presse"
+          ],
+          "rationale": "Ein Ministerwechsel kann Verantwortlichkeit und Entscheidungswege verändern. Ohne Angaben zur Nachfolge bleibt offen, ob dies die demokratische Rechenschaft stärkt, schwächt oder praktisch unverändert lässt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche geordnete Amtsübergabe und klare Verantwortlichkeit",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine transparente Nachfolgeregelung könnte Zuständigkeit, politische Rechenschaft und institutionelle Kontinuität im Ressort sichern.",
+              "recipients": [
+                "Bayerischer Landtag",
+                "Bayerische Staatsregierung",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche demokratische Wirkung ist begrenzt, solange weder Verfahren noch Nachfolge bekannt sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Vorgang betrifft die politische Leitung eines Landesressorts und damit einen begrenzten institutionellen Kreis.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Veränderung der Rechenschaft wäre institutionell, nicht unmittelbar eine Regeländerung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt von der Ausgestaltung und Stabilität der Nachfolge ab.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Personelle Entscheidungen und politische Verantwortlichkeit sind demokratisch grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Öffentliche Kontrolle kann von klarer Verantwortlichkeit profitieren, konkrete Schutzbedarfe sind aber nicht benannt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft eine Ressortleitung, nicht nachweislich die demokratische Grundordnung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze wird durch die Quelle nicht berührt.",
+                "reference_frame": "politische Verantwortlichkeit und institutionelle Rechenschaft",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Eine geordnete, transparente Nachfolge müsste tatsächlich beschlossen und kommuniziert werden.",
+              "reference_space": "Bayerische Landesregierung und Justizressort",
+              "time_horizon": "Im Zeitraum der möglichen Amtsübergabe",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine geregelte Nachfolge wird als mögliche, nicht belegte Bedingung angenommen.",
+              "source_support": "Die Quelle belegt den Rückzug und Söders Würdigung, nicht die Qualität eines Übergangs.",
+              "limitations": "Keine Angaben zu Verfahren, Nachfolge, parlamentarischer Kontrolle oder politischen Prioritäten.",
+              "first_order": "Mögliche Neubesetzung einer politischen Leitungsfunktion.",
+              "second_order": "Mögliche Veränderung von Verantwortlichkeit und politischen Entscheidungswegen.",
+              "third_order": "Mögliche Veränderung der institutionellen Kontinuität und öffentlichen Rechenschaft.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige oder zusätzliche Information zur demokratischen Folge im gelieferten Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "label": "Mögliche Übergangsunsicherheit und verzögerte Verantwortungszuordnung",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Falls Wirksamkeitsdatum oder Nachfolge unklar bleiben, könnten Zuständigkeiten und politische Verantwortlichkeit vorübergehend weniger eindeutig sein.",
+              "recipients": [
+                "Bayerischer Landtag",
+                "Bayerische Justizverwaltung",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Gegenpfad ist an eine nicht belegte Verzögerung oder unklare Übergangsregelung gebunden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Unklarheit beträfe vor allem das Ressort und seine politischen Kontrollbeziehungen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die mögliche Beeinträchtigung wäre zunächst begrenzt auf Zuständigkeit und Koordination.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Übergangsunsicherheit könnte kurz- oder mittelfristig bestehen, ist aber nicht datiert.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine Zuständigkeitsunklarheit wäre durch eine klare Entscheidung grundsätzlich reversibel.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene demokratische Kontrollbeziehungen könnten vorübergehend belastet sein, konkrete Auswirkungen fehlen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft mögliche Verwaltungs- und Rechenschaftsabläufe, nicht die Grundordnung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle demokratische Schutzgrenze ist nicht belegt; es handelt sich um ein mögliches Übergangsrisiko.",
+                "reference_frame": "klare Zuständigkeit und demokratische Rechenschaft",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Nur falls Wirksamkeitsdatum oder Nachfolge nicht rechtzeitig und eindeutig geregelt werden.",
+              "reference_space": "Bayerische Landesregierung, Landtag und Justizressort",
+              "time_horizon": "Mögliche Übergangsphase",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Quelle lässt offen, ob und wann eine Nachfolgeregelung erfolgt.",
+              "source_support": "Die Quelle enthält keine Angaben zu Verzögerungen oder institutionellen Problemen.",
+              "limitations": "Der negative Pfad ist eine konditionale Hypothese und nicht beobachtet.",
+              "first_order": "Mögliche Unklarheit über politische Zuständigkeit.",
+              "second_order": "Mögliche Verzögerung von Entscheidungen oder Kontrolle.",
+              "third_order": "Mögliche vorübergehende Schwächung institutioneller Rechenschaft.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Angaben zur Übergangsorganisation oder zu Verzögerungen im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative demokratische Pfade sind nur bedingt modellierbar und in ihrer möglichen Größenordnung vergleichbar. Die Quelle erlaubt keine Entscheidung über eine dominante Richtung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche geordnete Amtsübergabe und klare Verantwortlichkeit",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Mögliche geordnete Amtsübergabe und klare Verantwortlichkeit",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T11:07:38.127Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T10:30:52.000Z",
+      "last_updated": "2026-09-17T11:11:07.582Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-d26dbb28a1de3374ab5f",
+      "case_file": null,
+      "source_published_at": "2026-09-17T10:30:52.000Z",
+      "published_at": "2026-09-17T11:11:07.582Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bayern-landesregierung-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu klären ist, wann Eisenreichs Rückzug wirksam wird und wer das Justizressort übernimmt.",
+          "source_id": "bayern-landesregierung-presse",
+          "measurable_indicator": "Bekanntgabe des Wirksamkeitsdatums und einer Nachfolge",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2168c5535ad67be0",
+          "announced_at": "2026-09-17T10:30:52.000Z",
+          "follow_up_date": "2026-09-24T11:11:07.582Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Bayerische Staatsregierung - Pressemitteilungen",
+          "url": "https://www.bayern.de/ministerpraesident-dr-markus-soeder-zum-ruecktritt-von-justizminister-georg-eisenreich-grosse-verdienste-fuer-den-freistaat-dank-und-respekt-fuer-erfolgreiches-wirken-in-politisch",
+          "source_type": "official_rss",
+          "published_at": "2026-09-17T10:30:52.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-0eb1ca5aac1439a2",
       "title_image": {
