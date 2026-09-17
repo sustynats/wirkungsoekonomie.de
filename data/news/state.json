@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-17T02:07:27.052Z",
+  "last_successful_run": "2026-09-17T02:22:19.748Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -85477,6 +85477,9 @@
     }
   },
   "pending_story_ids": [
+    "wt-6000b2fabc397176",
+    "wt-45f19b878b0002b9",
+    "wt-9cef7e8aead366d8",
     "wt-8b79d1ba79cdb408",
     "wt-34ae319c56dfbd17",
     "wt-2b04a65d392b9002",
@@ -85486,6 +85489,7 @@
     "wt-b07986df07ef1461",
     "wt-3a32fcfe83191edc",
     "wt-03c6bacdda808696",
+    "wt-eaabe8b0a6ee2397",
     "wt-9da3311b07614bba",
     "wt-337679fe5fe35b70",
     "wt-825da5fbd8a0403e",
@@ -85886,13 +85890,8 @@
     "wt-c4067f7e595bcb41",
     "wt-745a85024a8bb932",
     "wt-a43d4554e3a8dbe2",
-    "wt-a6e561eadfd34f30",
     "wt-0193c404c9d1cfa3",
-    "wt-766f9828fdaeff54",
     "wt-20371d8af2907d26",
-    "wt-89de0769e6145357",
-    "wt-38e36577640f3627",
-    "wt-fc7dc1660a9ea748",
     "wt-1e8982ee442a3d55",
     "wt-93d263068324f20e",
     "wt-8f739bc11a854009",
@@ -86122,13 +86121,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-eaabe8b0a6ee2397",
-    "wt-45f19b878b0002b9",
-    "wt-9cef7e8aead366d8"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-17T02:07:27.052Z",
+  "last_attempted_run": "2026-09-17T02:22:19.748Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1537,
@@ -87372,24 +87368,24 @@
       "last_modified": null
     },
     "zdf-politics-index": {
-      "last_attempt": "2026-09-17T01:20:53.442Z",
+      "last_attempt": "2026-09-17T02:22:19.748Z",
       "source_id": "zdfheute-nachrichten",
       "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-politik.xml",
-      "last_success": "2026-09-17T01:20:53.442Z",
+      "last_success": "2026-09-17T02:22:19.748Z",
       "items": 1,
       "last_error": null,
       "etag": null,
-      "last_modified": "Thu, 17 Sep 2026 00:48:24 GMT"
+      "last_modified": "Thu, 17 Sep 2026 01:48:21 GMT"
     },
     "zdf-economy-index": {
-      "last_attempt": "2026-09-17T01:20:53.442Z",
+      "last_attempt": "2026-09-17T02:22:19.748Z",
       "source_id": "zdfheute-nachrichten",
       "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-wirtschaft.xml",
-      "last_success": "2026-09-17T01:20:53.442Z",
+      "last_success": "2026-09-17T02:22:19.748Z",
       "items": 0,
       "last_error": null,
       "etag": null,
-      "last_modified": "Thu, 17 Sep 2026 00:48:25 GMT"
+      "last_modified": "Thu, 17 Sep 2026 01:48:22 GMT"
     }
   },
   "agenda_watch": [
