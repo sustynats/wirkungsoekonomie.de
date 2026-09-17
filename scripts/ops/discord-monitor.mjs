@@ -8,7 +8,7 @@ import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
 import { bridgeSession } from '../news/bridge/remote.mjs';
 import { OPS_STATUS_KEY, operationalStatus } from './betriebsstatus.mjs';
-import { PARKED_KEY } from '../news/bridge/observation-keys.mjs';
+import { PARKED_KEY, EXHAUSTED_ORDERS_KEY } from '../news/bridge/observation-keys.mjs';
 import { feedDate } from '../news/feed-order.mjs';
 import { observeLiveNews, workflowChecks, planRecovery, recoverDelivery, RECOVERY_WORKFLOWS } from './news-recovery.mjs';
 
@@ -250,6 +250,15 @@ export function evaluateChecks(data, now) {
     reason: receiptStuck
       ? `${awaiting} freigegebene Fassung(en) stehen veroeffentlicht, gelten in der Redaktions-App seit ${Math.round(awaitingHours)} Stunden aber weiter als offen. Die Quittung an den Schreibtisch greift nicht.`
       : awaiting > 0 ? `${awaiting} Fassung(en) warten auf die Quittung des naechsten Laufs - im Plan.` : 'Keine Freigabe wartet auf eine Quittung.' });
+  // Ein Auftrag, dessen einziger bezahlter Versuch nichts abgeliefert hat,
+  // kehrt erst mit einer Vertragskorrektur zurueck. Bis dahin wartet Natalie
+  // auf eine Analyse, die niemand mehr schreibt (17.09.2026: zwei Auftraege
+  // vom Morgen, dazu der Befund vom 16.09. mit einem seit dem 13.09.).
+  const erschoepft = Array.isArray(data.exhaustedOrders) ? data.exhaustedOrders : [];
+  checks.push({ id: 'liegengebliebene-auftraege', name: 'Liegengebliebene Redaktionsauftraege', ok: erschoepft.length === 0, immediate: false,
+    reason: erschoepft.length
+      ? `${erschoepft.length} Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit ${erschoepft.map((order) => order.seit).filter(Boolean).sort()[0] || 'unbekannt'}). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.`
+      : 'Kein Auftrag hat seinen Versuch ohne Entwurf verbraucht.' });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
   const freshCoverage = age(summary.coverageAudit?.checked_at, now) >= 0 && age(summary.coverageAudit?.checked_at, now) <= 45;
@@ -452,6 +461,9 @@ export async function main() {
   // Geparkte Fassungen: der Vermerk kommt aus derselben Ablage wie der Befund.
   data.parked = [];
   if (!dryRun) {
+    try { const auftraege = await bridgeSession().store.observation(EXHAUSTED_ORDERS_KEY);
+      data.exhaustedOrders = Array.isArray(auftraege?.orders) ? auftraege.orders : []; }
+    catch { data.exhaustedOrders = []; }
     try { const vermerk = await bridgeSession().store.observation(PARKED_KEY);
       data.parked = vermerk?.parked || [];
       data.awaitingReceipt = Number(vermerk?.awaiting) || 0;

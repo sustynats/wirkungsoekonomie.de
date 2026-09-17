@@ -548,3 +548,17 @@ test('eine unquittierte Freigabe faellt nach zwei Stunden auf, vorher nicht', ()
   // Ohne belastbaren Beginn wird nicht alarmiert, sondern gezaehlt.
   assert.equal(befund({ awaitingReceipt: 4, awaitingSince: 'kaputt' }).ok, true);
 });
+
+// Der Befund vom 16.09.2026: drei Auftraege standen auf verbrauchtem Versuch
+// ohne Entwurf, einer seit dem 13.09. - und keine Pruefung sagte etwas dazu.
+test('ein Auftrag mit verbrauchtem Versuch ohne Entwurf faellt auf', () => {
+  const befund = (orders) => evaluateChecks({ ...fixture(), exhaustedOrders: orders }, '2026-09-17T18:00:00Z')
+    .checks.find((check) => check.id === 'liegengebliebene-auftraege');
+
+  assert.equal(befund([]).ok, true);
+  const offen = befund([{ job_id: 'wt_a', seit: '2026-09-17T05:59:26Z' }, { job_id: 'wt_b', seit: '2026-09-13T09:00:00Z' }]);
+  assert.equal(offen.ok, false);
+  assert.match(offen.reason, /2 Auftrag/);
+  assert.match(offen.reason, /2026-09-13/, 'der aelteste steht drin, nicht der neueste');
+  assert.match(offen.reason, /keiner Freigabeliste/);
+});

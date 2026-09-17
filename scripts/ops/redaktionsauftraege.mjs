@@ -40,10 +40,21 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
       const rows = await bridge.store.all();
       auftraege = rows.filter((row) => row?.input?.job_type === 'editorial_request')
         .map((row) => auftragsBefund(row, now))
-        .sort((a, b) => String(b.erstellt).localeCompare(String(a.erstellt)));
+        .sort((a, b) => String(b.erstellt).localeCompare(String(a.erstellt)))
+        .slice(0, 25);
+      // Der entscheidende Zustand steht nicht im Auftrag, sondern im Vermerk
+      // zum Versuch: provider_called ohne output_delivered heisst, der Auftrag
+      // ist verbraucht und kehrt erst mit einer Vertragskorrektur zurueck.
+      for (const befund of auftraege) {
+        const versuch = await bridge.store.observation(`github-attempt:${befund.job_id}`).catch?.(() => null);
+        befund.versuch = versuch ? { zustand: String(versuch.status || '').slice(0, 40),
+          bezahlter_aufruf: Boolean(versuch.provider_called), workerversion: String(versuch.version || '').slice(0, 40),
+          verbraucht: Boolean(versuch.provider_called) && versuch.status !== 'output_delivered' } : null;
+      }
     } finally { await bridge.store.release(true).catch(() => {}); }
   }
   return { at: now, offen: betrieb?.open_count ?? null, offene_auftraege: betrieb?.open_personal_count ?? null,
+    verbrauchte_auftraege: (auftraege || []).filter((befund) => befund.versuch?.verbraucht).length,
     aeltester_offener_auftrag_minuten: Math.round(betrieb?.oldest_open_minutes ?? 0),
     warteschlange_unlesbar: grund, auftraege };
 }

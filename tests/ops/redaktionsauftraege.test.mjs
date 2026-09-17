@@ -15,6 +15,7 @@ const session = (rows, calls) => ({
     acquire: async (...args) => { calls.push(`acquire:${args[1]}`); },
     release: async (ok) => { calls.push(`release:${ok}`); },
     all: async () => { calls.push('all'); return rows; },
+    observation: async (key) => { calls.push('observation'); return key === 'github-attempt:woek-a' ? { status: 'draft_rejected', provider_called: true, version: 'redaktionsworker-5' } : null; },
     put: async () => { throw new Error('DIESER BEFUND DARF NICHTS SCHREIBEN'); },
     observe: async () => { throw new Error('DIESER BEFUND DARF NICHTS SCHREIBEN'); },
     editorialClaim: async () => { throw new Error('DIESER BEFUND DARF NICHTS FREIGEBEN'); },
@@ -25,7 +26,13 @@ test('der Befund liest die Warteschlange und schreibt nichts', async () => {
   const calls = [];
   const ergebnis = await redaktionsauftraege({ session: session([auftrag('woek-a', '2026-09-14T09:00:00.000Z'), auftrag('woek-b', '2026-09-17T09:00:00.000Z', { status: 'acknowledged', accepted: true, completed_at: '2026-09-17T10:00:00.000Z' }),
     { input: { job_id: 'story-1', job_type: 'news_story' }, created_at: now }], calls), now });
-  assert.deepEqual(calls, ['monitor', 'acquire:import', 'all', 'release:true']);
+  assert.deepEqual(calls.filter((call) => call !== 'observation'), ['monitor', 'acquire:import', 'all', 'release:true']);
+  // Der Zustand, der einen Auftrag lautlos beendet: bezahlter Versuch, nichts
+  // abgeliefert. Er steht im Vermerk zum Versuch, nicht im Auftrag.
+  const verbraucht = ergebnis.auftraege.find((auftrag) => auftrag.job_id === 'woek-a');
+  assert.deepEqual(verbraucht.versuch, { zustand: 'draft_rejected', bezahlter_aufruf: true, workerversion: 'redaktionsworker-5', verbraucht: true });
+  assert.equal(ergebnis.verbrauchte_auftraege, 1);
+  assert.equal(ergebnis.auftraege.find((auftrag) => auftrag.job_id === 'woek-b').versuch, null);
   assert.equal(ergebnis.offene_auftraege, 1);
   assert.equal(ergebnis.auftraege.length, 2, 'nur Redaktionsauftraege, keine Nachrichtenakte');
   assert.deepEqual(ergebnis.auftraege.map((a) => a.job_id), ['woek-b', 'woek-a'], 'neueste zuerst');
