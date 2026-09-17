@@ -10,9 +10,11 @@
       "min_duration_seconds": 1500,
       "enabled": true,
       "mediathek": {
+        "topic": "maybrit illner",
         "title": "maybrit illner",
         "channel": "ZDF"
-      }
+      },
+      "max_age_days": 14
     },
     {
       "id": "markus-lanz",
@@ -22,6 +24,7 @@
       "min_duration_seconds": 1500,
       "enabled": true,
       "mediathek": {
+        "topic": "Markus Lanz",
         "title": "Markus Lanz",
         "channel": "ZDF"
       },
@@ -38,37 +41,115 @@
       "min_duration_seconds": 2400,
       "enabled": true,
       "mediathek": {
+        "topic": "maischberger",
         "title": "maischberger",
         "channel": "WDR"
       },
       "transcript_deadline": {
         "day_offset": 1,
         "berlin_hour": 14
-      }
+      },
+      "max_age_days": 14
     },
     {
       "id": "maithink-x",
       "show_name": "MAITHINK X",
       "kind": "watched",
-      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
+      "provider": "ZDFneo-Mediathek über MediathekViewWeb; Staffelsendung, zwischen den Staffeln Wiederholungen",
       "min_duration_seconds": 900,
       "enabled": true,
       "mediathek": {
+        "topic": "MAITHINK X - Die Show",
         "title": "MAITHINK X",
-        "channel": "ZDF"
-      }
+        "channel": "ZDFneo"
+      },
+      "max_age_days": 210
     },
     {
       "id": "terra-x-lesch-co",
       "show_name": "Terra X Lesch & Co",
       "kind": "watched",
-      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
+      "provider": "ZDF-Mediathek über MediathekViewWeb; Reihe mit langen Pausen, Wiederholungen zaehlen",
       "min_duration_seconds": 600,
       "enabled": true,
       "mediathek": {
-        "title": "Lesch",
+        "topic": "Terra X Lesch & Co",
+        "title": "Terra X Lesch & Co",
         "channel": "ZDF"
-      }
+      },
+      "max_age_days": 120
+    },
+    {
+      "id": "caren-miosga",
+      "show_name": "Caren Miosga",
+      "kind": "watched",
+      "provider": "ARD-Mediathek (NDR) über MediathekViewWeb, amtliche Untertitel",
+      "min_duration_seconds": 2400,
+      "enabled": true,
+      "mediathek": {
+        "topic": "Caren Miosga",
+        "title": "Caren Miosga",
+        "channel": "NDR"
+      },
+      "transcript_deadline": {
+        "day_offset": 1,
+        "berlin_hour": 14
+      },
+      "max_age_days": 14
+    },
+    {
+      "id": "hart-aber-fair",
+      "show_name": "Hart aber fair",
+      "kind": "watched",
+      "provider": "ARD-Mediathek (WDR) über MediathekViewWeb, amtliche Untertitel",
+      "min_duration_seconds": 2400,
+      "enabled": true,
+      "mediathek": {
+        "topic": "Hart aber fair",
+        "title": "Hart aber fair",
+        "channel": "WDR"
+      },
+      "transcript_deadline": {
+        "day_offset": 1,
+        "berlin_hour": 14
+      },
+      "max_age_days": 14
+    },
+    {
+      "id": "presseclub",
+      "show_name": "Presseclub",
+      "kind": "watched",
+      "provider": "ARD-Mediathek (WDR) über MediathekViewWeb, amtliche Untertitel",
+      "min_duration_seconds": 1800,
+      "enabled": true,
+      "mediathek": {
+        "topic": "Presseclub",
+        "title": "Presseclub",
+        "channel": "WDR"
+      },
+      "transcript_deadline": {
+        "day_offset": 1,
+        "berlin_hour": 14
+      },
+      "max_age_days": 14
+    },
+    {
+      "id": "phoenix-runde",
+      "show_name": "phoenix runde",
+      "kind": "watched",
+      "provider": "phoenix über MediathekViewWeb. ACHTUNG: keine amtlichen Untertitel in der Mediathek, jede Folge braucht eigene Spracherkennung (rund 0,45 USD). Bei taeglicher Sendung sprengt das das Monatsbudget - deshalb bis zu Natalies Entscheidung abgeschaltet.",
+      "min_duration_seconds": 2100,
+      "enabled": false,
+      "mediathek": {
+        "topic": "phoenix runde",
+        "title": "phoenix runde",
+        "channel": "PHOENIX"
+      },
+      "transcript_deadline": {
+        "day_offset": 1,
+        "berlin_hour": 14
+      },
+      "max_age_days": 14
     },
     {
       "id": "lanz-precht",
