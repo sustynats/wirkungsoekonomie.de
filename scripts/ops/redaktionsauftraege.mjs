@@ -10,18 +10,11 @@
 // an einem Auftrag. Und es gibt keinen Auftragstext aus - nur Kennung, Art,
 // Zeit und Zustand. Die Laufprotokolle sind oeffentlich, die Auftraege nicht.
 import { bridgeSession } from '../news/bridge/remote.mjs';
+// Dieselbe Kennung wie im Worker, eine Definition (siehe observation-keys.mjs).
+import { fehlerkennung } from '../news/bridge/observation-keys.mjs';
+export { fehlerkennung };
 
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED', 'BRIDGE_OPERATION_BUSY']);
-
-// Der Grund steht im Vermerk, aber als Freitext: "CODE · Detail", und das
-// Detail kann Bruchstuecke des Entwurfs enthalten. Die Laufprotokolle sind
-// oeffentlich, also geht nur die Kennung hinaus - der Teil, der die Ursache
-// benennt, ohne den Text zu zeigen.
-export function fehlerkennung(wert) {
-  const erster = String(wert || '').split('·')[0].trim();
-  if (!erster) return null;
-  return /^[A-Z][A-Z_0-9]{3,79}$/.test(erster) ? erster : 'nicht als Kennung lesbar';
-}
 
 export function auftragsBefund(job, now) {
   const alter = (Date.parse(now) - Date.parse(job?.created_at || '')) / 3600000;
