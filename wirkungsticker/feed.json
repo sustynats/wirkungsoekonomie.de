@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-17T20:52:51.735Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-17T23:08:34.404Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,39 @@
         "democracy": {
           "magnitude": 2,
           "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a/",
+      "title": "SPD liegt laut stern-Umfrage vor AfD in Mecklenburg-Vorpommern",
+      "summary": "Eine stern-Meldung sieht die SPD drei Tage vor der Landtagswahl in einer ZDF-Umfrage bei 37 Prozent und damit vor der AfD mit 36 Prozent. Offen bleiben Methode, Stichprobe und die Bestätigung durch unabhängige Quellen.",
+      "date_published": "2026-09-17T20:14:37.000Z",
+      "date_modified": "2026-09-17T20:14:37.000Z",
+      "_woek_released_at": "2026-09-17T23:10:46.015Z",
+      "tags": [
+        "Soziales",
+        "Demokratie",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
