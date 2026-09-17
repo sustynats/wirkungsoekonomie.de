@@ -52,7 +52,7 @@ test('beide Spuren rechnen auf dasselbe Kontingent', async () => {
   assert.match(worker, /store\.observe\(EDITORIAL_HOUR_KEY, hourUsage\)/, 'im gemeinsamen Vermerk');
   assert.match(worker, /status: 'hourly_quota_reached'/, 'ein voller Stundenplatz ist ein Ergebnis, kein Fehler');
   assert.match(ticker, /editorialDraftsInWindow\(await bridge\.store\.observation\(EDITORIAL_HOUR_KEY\), now\)/, 'die Nachrichtenspur liest den Vermerk');
-  assert.match(ticker, /sharedHourlyRoom\(\{ configured: configuredStoriesPerHour, tickerStories: aiStoriesInLastHour, editorialDrafts: editorialDraftsInLastHour \}\)/, 'und zieht sie ab');
+  assert.match(ticker, /sharedHourlyRoom\(\{ configured: configuredStoriesPerHour, tickerStories: aiStoriesInLastHour, editorialDrafts: editorialDraftsInLastHour/, 'und zieht sie ab');
   assert.match(ticker, /report\.editorial_drafts_in_last_hour = editorialDraftsInLastHour;/, 'der Laufbericht zeigt es');
   assert.match(ticker, /report\.shared_hourly_room = hourlyRoom;/);
 });
@@ -73,4 +73,50 @@ test('die Meldungen der letzten Stunde kommen aus der Nutzungsdatei', async () =
   assert.equal(configuredHourlyQuota({ WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: '3' }), 3);
   assert.equal(configuredHourlyQuota({ WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: '2' }), 2);
   assert.equal(configuredHourlyQuota({}), 4);
+});
+
+// 17.09.2026: Die Nachrichtenspur laeuft in jedem Zyklus vier Minuten vor der
+// Redaktionsspur (:04/:19/:34/:49 gegen :08/:23/:38/:53). Ohne Reserve nahm sie
+// alle Plaetze der Stunde, und die Redaktionsspur fand um :08 nichts mehr:
+// Natalies Analysen und Nachbesprechungen waeren nie gezogen worden, ohne dass
+// irgendwo ein Fehler auftaucht. Genau das Gegenteil ihrer Vorgabe.
+test('wartende Redaktionsarbeit bekommt ihren Platz in der Stunde', async () => {
+  const { editorialReserve, sharedHourlyRoom, waitingRecord, waitingCount, EDITORIAL_WAITING_KEY } = await import('../../scripts/news/stundenkontingent.mjs');
+  // Die Stunde spielt sich so ab, wie Natalie sie beschrieben hat.
+  assert.equal(editorialReserve({ configured: 3, waiting: 92, editorialDrafts: 0 }), 1, 'ein Platz bleibt frei');
+  assert.equal(sharedHourlyRoom({ configured: 3, tickerStories: 0, editorialDrafts: 0, reserve: 1 }), 2, 'die Nachrichtenspur nimmt um :04 nur zwei');
+  assert.equal(sharedHourlyRoom({ configured: 3, tickerStories: 2, editorialDrafts: 0 }), 1, 'die Redaktionsspur findet um :08 ihren Platz');
+  assert.equal(editorialReserve({ configured: 3, waiting: 92, editorialDrafts: 1 }), 0, 'der eingelöste Platz wird nicht doppelt reserviert');
+  assert.equal(sharedHourlyRoom({ configured: 3, tickerStories: 2, editorialDrafts: 1, reserve: 0 }), 0, 'danach ist die Stunde voll');
+
+  // Keine wartende Arbeit, keine Reserve - die Nachrichtenspur bekommt alles.
+  assert.equal(editorialReserve({ configured: 3, waiting: 0 }), 0);
+  assert.equal(sharedHourlyRoom({ configured: 3, tickerStories: 0, editorialDrafts: 0, reserve: 0 }), 3);
+  // Bei einem einzigen Platz je Stunde wuerde die Reserve die Nachrichten ganz anhalten.
+  assert.equal(editorialReserve({ configured: 1, waiting: 92 }), 0);
+  assert.equal(editorialReserve({ configured: 'drei', waiting: 92 }), 0);
+
+  // Ein alter Vermerk darf keinen Platz auf Dauer blockieren.
+  const at = '2026-09-17T08:00:00.000Z';
+  assert.equal(waitingCount(waitingRecord(92, at), '2026-09-17T08:30:00.000Z'), 92);
+  assert.equal(waitingCount(waitingRecord(92, at), '2026-09-17T10:00:00.000Z'), 0, 'nach 90 Minuten nicht mehr');
+  assert.equal(waitingCount(waitingRecord(0, at), at), 0);
+  assert.equal(waitingCount(null, at), 0);
+  assert.equal(waitingCount(waitingRecord(92, 'unlesbar'), at), 0);
+  assert.equal(EDITORIAL_WAITING_KEY, 'editorial-waiting');
+});
+
+test('beide Spuren sind fuer die Reserve verdrahtet', async () => {
+  const fs = await import('node:fs');
+  const worker = fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8');
+  const ticker = fs.readFileSync('scripts/news/run.mjs', 'utf8');
+  // Der Wartestand wird vor jedem Abbruch vermerkt, sonst verfaellt die Reserve.
+  const vermerk = worker.indexOf('store.observe(EDITORIAL_WAITING_KEY');
+  assert.ok(vermerk > 0, 'die Redaktionsspur vermerkt ihren Wartestand');
+  assert.ok(vermerk < worker.indexOf("status: 'daily_limit'"), 'und zwar vor dem Tageslimit-Abbruch');
+  assert.ok(vermerk < worker.indexOf("status: 'hourly_quota_reached'"), 'und vor dem Stundenabbruch');
+  assert.match(ticker, /editorialReserve\(\{ configured: configuredStoriesPerHour, waiting: editorialWaiting/, 'die Nachrichtenspur rechnet die Reserve');
+  assert.match(ticker, /reserve: editorialSlotReserve \}\)/, 'und zieht sie ab');
+  assert.match(ticker, /report\.editorial_waiting = editorialWaiting;/, 'der Laufbericht zeigt beides');
+  assert.match(ticker, /report\.editorial_slot_reserve = editorialSlotReserve;/);
 });
