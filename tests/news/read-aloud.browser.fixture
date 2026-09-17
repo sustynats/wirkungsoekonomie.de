@@ -77,6 +77,15 @@ check('initialization is idempotent and never starts automatically', () => {
   const s=mount(true,[voice]); initReadAloud(s.doc,{});
   assert(s.doc.querySelectorAll('[data-read-aloud-player]').length===1,'duplicate');assert(s.spoken.length===0,'autoplay');
 });
+check('zurueck ist bedienbar und fuehrt in den Abschnitt zurueck', () => {
+  const s=mount(true,[voice]); s.play();
+  const knopf=(zeichen)=>[...s.doc.querySelectorAll('.read-aloud__controls button')].find(b=>b.textContent===zeichen);
+  assert(knopf('\u2190'),'kein Zurueck-Knopf');
+  assert(knopf('\u2190').getAttribute('aria-label'),'Zurueck ohne Beschriftung');
+  knopf('\u2192').click(); assert(s.reader.index===1,'vor: '+s.reader.index);
+  knopf('\u2190').click(); assert(s.reader.index===0,'zurueck: '+s.reader.index);
+  assert(s.spoken.at(-1).text==='Testbeitrag','der Anfang wird wieder gesprochen: '+s.spoken.at(-1).text);
+});
 window.__readAloudTestResults=results;
 document.querySelector('#result').textContent=JSON.stringify(results,null,2);
 document.title=results.some(r=>r.status==='FAIL')?'FAIL: Read aloud':'PASS: Read aloud';
