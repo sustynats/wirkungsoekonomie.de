@@ -35,3 +35,26 @@ test('speed changes keep position and ignore the cancelled event',()=>{
 test('speech errors stop the reader without remote fallback',()=>{
   const s=setup();s.reader.start([{text:'Text.'}],s.voice);s.spoken()[0].onerror({error:'voice-unavailable'});assert.equal(s.reader.state,'error');assert.equal(s.spoken().length,1);
 });
+test('zurueck wiederholt den Abschnitt und erreicht dann den vorherigen',()=>{
+  const s=setup();
+  s.reader.start([{text:'Erster Absatz mit zwei Saetzen. Und noch einem Satz dazu.'},{text:'Langer Absatz. '.repeat(100)},{text:'Dritter Absatz.'}],s.voice);
+  s.reader.next();assert.equal(s.spoken().at(-1).text.startsWith('Langer Absatz.'),true);
+  // Mitten im langen Absatz: zurueck heisst zuerst „noch einmal von vorn".
+  const drin=s.reader.index;s.spoken().at(-1).onend();assert.ok(s.reader.index>drin);
+  s.reader.previous();assert.equal(s.reader.index,drin,'derselbe Absatz von vorn');
+  // Schon am Anfang: zurueck heisst der vorherige Absatz, und zwar an dessen Anfang.
+  s.reader.previous();assert.equal(s.reader.index,0);
+  assert.equal(s.spoken().at(-1).text,'Erster Absatz mit zwei Saetzen. Und noch einem Satz dazu.','kurze Absaetze bleiben ein Stueck');
+  // Am Anfang des ersten Absatzes bleibt zurueck stehen, statt zu springen.
+  s.reader.previous();assert.equal(s.reader.index,0);
+});
+test('zurueck funktioniert pausiert und nach dem Ende',()=>{
+  const s=setup();
+  s.reader.start([{text:'Erster Absatz.'},{text:'Zweiter Absatz.'}],s.voice);
+  s.reader.next();s.reader.pause();const vorher=s.spoken().length;
+  s.reader.previous();assert.equal(s.reader.state,'paused');assert.equal(s.spoken().length,vorher,'pausiert wird nicht gesprochen');
+  s.reader.resume();assert.equal(s.spoken().at(-1).text,'Erster Absatz.');
+  s.reader.next();s.spoken().at(-1).onend();assert.equal(s.reader.state,'finished');
+  s.reader.previous();assert.equal(s.reader.state,'playing');assert.equal(s.spoken().at(-1).text,'Zweiter Absatz.','nach dem Ende kommt der letzte Abschnitt');
+  const leer=setup();leer.reader.previous();assert.equal(leer.reader.state,'idle');
+});

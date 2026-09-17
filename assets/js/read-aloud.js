@@ -120,6 +120,29 @@ export class SpeechReader {
     while (this.index < this.chunks.length && this.chunks[this.index].blockIndex === block) this.index++;
     this.cancel(); if (this.state === 'playing') this.speak(); else if (this.index >= this.chunks.length) { this.state = 'finished'; this.update(); } else this.update();
   }
+  // Der erste Textteil des Abschnitts, in dem eine Position liegt.
+  blockStart(position) {
+    if (!this.chunks.length) return 0;
+    const at = Math.min(Math.max(0, position), this.chunks.length - 1);
+    const block = this.chunks[at].blockIndex;
+    let start = at;
+    while (start > 0 && this.chunks[start - 1].blockIndex === block) start--;
+    return start;
+  }
+  // Natalie am 17.09.2026: „Nach Vorne springen geht, aber nicht zurueck."
+  // Die Regel ist die von Abspielgeraeten: mitten im Abschnitt heisst zurueck
+  // zuerst „diesen Abschnitt noch einmal", erst danach „den vorigen". So
+  // erreicht man auch die Stelle wieder, die man gerade verpasst hat.
+  previous() {
+    if (!this.chunks.length || !['playing', 'paused', 'finished'].includes(this.state)) return;
+    if (this.state === 'finished') {
+      this.index = this.blockStart(this.chunks.length - 1);
+      this.state = 'playing'; this.cancel(); this.speak(); return;
+    }
+    const start = this.blockStart(this.index);
+    this.index = this.index > start ? start : this.blockStart(Math.max(0, start - 1));
+    this.cancel(); if (this.state === 'playing') this.speak(); else this.update();
+  }
   setRate(rate) { this.rate = rate; if (this.state === 'playing') { this.cancel(); this.speak(); } }
 }
 
@@ -135,8 +158,9 @@ export function initReadAloud(doc = document, win = window) {
   const play = button(say('▶ Vorlesen', '▶ Read aloud'));
   const pause = button(say('Pause', 'Pause'));
   const stop = button(say('Beenden', 'Stop'));
+  const back = button('←', say('Abschnitt noch einmal oder vorherigen vorlesen', 'Repeat this paragraph or read the previous one'));
   const next = button('→', say('Nächsten Abschnitt vorlesen', 'Read next paragraph'));
-  const controls = doc.createElement('div'); controls.className = 'read-aloud__controls'; controls.hidden = true; controls.append(pause, next, stop);
+  const controls = doc.createElement('div'); controls.className = 'read-aloud__controls'; controls.hidden = true; controls.append(pause, back, next, stop);
   const settings = doc.createElement('details'); settings.className = 'read-aloud__settings';
   const summary = doc.createElement('summary'); summary.textContent = say('Stimme & Tempo', 'Voice & speed'); settings.append(summary);
   const voices = doc.createElement('select'); voices.setAttribute('aria-label', say('Lokale Systemstimme', 'Local system voice'));
@@ -197,6 +221,7 @@ export function initReadAloud(doc = document, win = window) {
   });
   pause.addEventListener('click', () => reader.state === 'paused' ? reader.resume() : reader.pause());
   stop.addEventListener('click', () => { reader.stop(); play.focus(); });
+  back.addEventListener('click', () => reader.previous());
   next.addEventListener('click', () => reader.next()); rate.addEventListener('change', () => reader.setRate(Number(rate.value)));
   settings.addEventListener('toggle', position); win.addEventListener('resize', position);
   win.addEventListener('pagehide', () => reader.stop());
