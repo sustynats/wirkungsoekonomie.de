@@ -3,7 +3,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { withRequestDeadline } from '../request-deadline.mjs';
 
-export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
+export function bridgeSession(env = process.env, { fetchImpl = fetch,
+  sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)) } = {}) {
   const endpoint = env.WOEK_NEWS_BRIDGE_URL;
   const secret = env.WOEK_NEWS_BRIDGE_TOKEN;
   const runId = env.GITHUB_RUN_ID;
@@ -33,14 +34,29 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
     return result.result;
     }, {timeoutMs:180000, code:'BRIDGE_REMOTE_TIMEOUT'});
   }
+  // BRIDGE_OPERATION_BUSY wirft der Server, BEVOR er die Operation ausfuehrt:
+  // eine andere Anfrage derselben Spur ist genau jetzt unterwegs. Es ist damit
+  // nebenwirkungsfrei, kurz zu warten und erneut zu fragen - auch bei
+  // Schreiboperationen, denn es wurde nichts geschrieben. Ticker und
+  // Redaktionslauf haengen beide am selben Oracle-Takt (Push auf
+  // codex/wirkungsticker-clock) und starten deshalb in derselben Sekunde. Am
+  // 17.09.2026 ist der Redaktionslauf um 09:50 genau daran gescheitert, waehrend
+  // Natalies Auftraege unbearbeitet lagen.
   async function request(op, args = []) {
-    try { return await requestOnce(op, args); }
-    catch (error) {
-      if (!readOperations.has(op) || error.message !== 'BRIDGE_REMOTE_INVALID_RESPONSE' || !error.read_retryable) throw error;
-      // One idempotent reread can recover a truncated gateway response. The
-      // second failure remains a real run error; no stale/default result is used.
-      console.warn(JSON.stringify({ event: 'bridge_read_retry', operation: op, http_status: error.http_status, response_bytes: error.response_bytes }));
-      return requestOnce(op, args);
+    for (let attempt = 1; ; attempt += 1) {
+      try { return await requestOnce(op, args); }
+      catch (error) {
+        if (error.message === 'BRIDGE_OPERATION_BUSY' && attempt < 6) {
+          console.warn(JSON.stringify({ event: 'bridge_busy_retry', operation: op, attempt }));
+          await sleep(attempt * 2000); // zusammen bis 30 Sekunden
+          continue;
+        }
+        if (!readOperations.has(op) || error.message !== 'BRIDGE_REMOTE_INVALID_RESPONSE' || !error.read_retryable) throw error;
+        // One idempotent reread can recover a truncated gateway response. The
+        // second failure remains a real run error; no stale/default result is used.
+        console.warn(JSON.stringify({ event: 'bridge_read_retry', operation: op, http_status: error.http_status, response_bytes: error.response_bytes }));
+        return requestOnce(op, args);
+      }
     }
   }
   const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
