@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { redaktionsauftraege, auftragsBefund } from '../../scripts/ops/redaktionsauftraege.mjs';
+import { redaktionsauftraege, auftragsBefund, fehlerkennung } from '../../scripts/ops/redaktionsauftraege.mjs';
 
 const now = '2026-09-17T18:00:00.000Z';
 const auftrag = (id, at, felder = {}) => ({ input: { job_id: id, job_type: 'editorial_request', request: { kind: 'opinion_analysis', brief: 'GEHEIMER AUFTRAGSTEXT' } },
@@ -15,7 +15,7 @@ const session = (rows, calls) => ({
     acquire: async (...args) => { calls.push(`acquire:${args[1]}`); },
     release: async (ok) => { calls.push(`release:${ok}`); },
     all: async () => { calls.push('all'); return rows; },
-    observation: async (key) => { calls.push('observation'); return key === 'github-attempt:woek-a' ? { status: 'draft_rejected', provider_called: true, version: 'redaktionsworker-5' } : null; },
+    observation: async (key) => { calls.push('observation'); return key === 'github-attempt:woek-a' ? { status: 'draft_rejected', provider_called: true, version: 'redaktionsworker-5', error: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE · Der Titel „GEHEIMER AUFTRAGSTEXT" steht zweimal' } : null; },
     put: async () => { throw new Error('DIESER BEFUND DARF NICHTS SCHREIBEN'); },
     observe: async () => { throw new Error('DIESER BEFUND DARF NICHTS SCHREIBEN'); },
     editorialClaim: async () => { throw new Error('DIESER BEFUND DARF NICHTS FREIGEBEN'); },
@@ -30,7 +30,7 @@ test('der Befund liest die Warteschlange und schreibt nichts', async () => {
   // Der Zustand, der einen Auftrag lautlos beendet: bezahlter Versuch, nichts
   // abgeliefert. Er steht im Vermerk zum Versuch, nicht im Auftrag.
   const verbraucht = ergebnis.auftraege.find((auftrag) => auftrag.job_id === 'woek-a');
-  assert.deepEqual(verbraucht.versuch, { zustand: 'draft_rejected', bezahlter_aufruf: true, workerversion: 'redaktionsworker-5', verbraucht: true });
+  assert.deepEqual(verbraucht.versuch, { zustand: 'draft_rejected', bezahlter_aufruf: true, workerversion: 'redaktionsworker-5', verbraucht: true, grund: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE' });
   assert.equal(ergebnis.verbrauchte_auftraege, 1);
   assert.equal(ergebnis.auftraege.find((auftrag) => auftrag.job_id === 'woek-b').versuch, null);
   assert.equal(ergebnis.offene_auftraege, 1);
@@ -82,4 +82,13 @@ test('offene Auftraege stehen im Befund, auch wenn sie alt sind', async () => {
   assert.ok(ergebnis.auftraege.some((befund) => befund.job_id === 'alt-offen'), 'der alte offene Auftrag steht drin');
   assert.equal(ergebnis.auftraege.filter((befund) => befund.zustand === 'accepted').length, 10, 'von den erledigten reichen die zehn neuesten');
   assert.equal(ergebnis.auftraege[0].job_id, 'alt-offen', 'offene zuerst');
+});
+
+// Der Grund muss mitkommen - sonst weiss man, dass etwas scheiterte, aber
+// nicht was. Er darf aber nichts vom Entwurf zeigen.
+test('die Fehlerkennung kommt mit, das Detail bleibt drin', () => {
+  assert.equal(fehlerkennung('EDITORIAL_MARKDOWN_DUPLICATE_TITLE · Der Titel steht zweimal'), 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE');
+  assert.equal(fehlerkennung('Unerwarteter Satz mit Auftragstext'), 'nicht als Kennung lesbar');
+  assert.equal(fehlerkennung(''), null);
+  assert.equal(fehlerkennung(undefined), null);
 });

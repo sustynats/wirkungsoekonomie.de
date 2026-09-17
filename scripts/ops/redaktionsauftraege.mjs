@@ -13,6 +13,16 @@ import { bridgeSession } from '../news/bridge/remote.mjs';
 
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED', 'BRIDGE_OPERATION_BUSY']);
 
+// Der Grund steht im Vermerk, aber als Freitext: "CODE · Detail", und das
+// Detail kann Bruchstuecke des Entwurfs enthalten. Die Laufprotokolle sind
+// oeffentlich, also geht nur die Kennung hinaus - der Teil, der die Ursache
+// benennt, ohne den Text zu zeigen.
+export function fehlerkennung(wert) {
+  const erster = String(wert || '').split('·')[0].trim();
+  if (!erster) return null;
+  return /^[A-Z][A-Z_0-9]{3,79}$/.test(erster) ? erster : 'nicht als Kennung lesbar';
+}
+
 export function auftragsBefund(job, now) {
   const alter = (Date.parse(now) - Date.parse(job?.created_at || '')) / 3600000;
   return {
@@ -55,7 +65,8 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
         const versuch = await bridge.store.observation(`github-attempt:${befund.job_id}`).catch?.(() => null);
         befund.versuch = versuch ? { zustand: String(versuch.status || '').slice(0, 40),
           bezahlter_aufruf: Boolean(versuch.provider_called), workerversion: String(versuch.version || '').slice(0, 40),
-          verbraucht: Boolean(versuch.provider_called) && versuch.status !== 'output_delivered' } : null;
+          verbraucht: Boolean(versuch.provider_called) && versuch.status !== 'output_delivered',
+          grund: fehlerkennung(versuch.error) } : null;
       }
     } finally { await bridge.store.release(true).catch(() => {}); }
   }
