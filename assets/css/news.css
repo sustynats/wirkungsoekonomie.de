@@ -2874,6 +2874,20 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .ticker-home-explainer {background:#e9eee5;border-radius:18px;}
 .ticker-explainer-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
 .ticker-more-links {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;}
+/* Die drei Lagen als Einstieg auf der Startseite: ordnen, nicht alles zeigen.
+   Der Satz ist die Aussage, die Zahl der Umfang, der Stand die Verlaesslichkeit. */
+.ticker-home-lagen .ticker-lagen-liste {list-style:none;margin:0;padding:0;display:grid;gap:.75rem;}
+.ticker-home-lagen .ticker-lagen-liste>li {margin:0;}
+.ticker-home-lagen .ticker-lagen-liste a {display:block;border:1px solid #a2b6aa;border-left:4px solid #245b45;border-radius:12px;padding:1rem 1.1rem;color:inherit;text-decoration:none;background:#fff;}
+.ticker-home-lagen .ticker-lagen-liste a:hover,.ticker-home-lagen .ticker-lagen-liste a:focus-visible {border-color:#245b45;box-shadow:0 2px 14px #102c2114;}
+.ticker-lage-kicker {margin:0 0 .35rem;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:#4b6a5b;}
+.ticker-lage-satz {margin:0 0 .4rem;font-size:1.06rem;line-height:1.4;font-weight:600;color:#14301f;}
+.ticker-lage-zahl {margin:0;font-size:.86rem;color:#4b6a5b;}
+@media(prefers-color-scheme:dark){
+ .ticker-home-lagen .ticker-lagen-liste a {background:#12251c;border-color:#2f4a3b;border-left-color:#7fc7a3;}
+ .ticker-lage-satz {color:#eaf4ee;}
+ .ticker-lage-kicker,.ticker-lage-zahl {color:#a8c2b3;}
+}
 .ticker-more-links>a {display:flex;align-items:center;justify-content:space-between;gap:1rem;border:1px solid #a2b6aa;border-radius:12px;padding:1rem;color:#245b45;min-height:54px;}
 .ticker-app-main .news-grid--compact .news-card__summary {display:block;}
 .ticker-app-shell [id] {scroll-margin-top:170px;}
@@ -2894,6 +2908,8 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
  .ticker-section-heading h2 {font-size:1.5rem;}
  .ticker-section-heading a {font-size:.8rem;}
  .ticker-more-links {grid-template-columns:1fr;}
+ .ticker-home-lagen .ticker-lagen-liste a {padding:.85rem .9rem;}
+ .ticker-lage-satz {font-size:1rem;}
  .ticker-app-shell .news-reader-nav {bottom:calc(78px + env(safe-area-inset-bottom));}
 }
 .ticker-app-main .news-grid--compact .news-story-visual__frame {padding:.85rem;border-radius:12px;}
