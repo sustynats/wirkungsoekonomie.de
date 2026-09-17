@@ -137,3 +137,38 @@ test('Tageszahl und Stundenplatz halten ihre eigenen Auftraege nicht auf', async
   const vermerk = worker.indexOf('store.observe(EDITORIAL_WAITING_KEY');
   assert.ok(vermerk > 0 && vermerk < worker.indexOf("status: 'daily_limit'"));
 });
+
+// Natalie am 17.09.2026: „So dass eben permanent jetzt mal wieder neue
+// Nachrichten live gehen. Drei Stück pro Stunde." Drei *veroeffentlichte*
+// Meldungen brauchen rund sechs Aufrufe - etwa die Haelfte haelt das Gate.
+// Gleichmaessig ueber 24 Stunden waeren das 2,03 USD am Tag und damit ausserhalb
+// des Monatsrahmens; nachts liest niemand. Daher ein Tagesprofil.
+test('tagsueber das volle Kontingent, nachts das gedrosselte', async () => {
+  const { configuredHourlyQuota } = await import('../../scripts/news/stundenkontingent.mjs');
+  const env = { WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: '6', WOEK_NEWS_NIGHT_STORIES_PER_HOUR: '1' };
+  // Berliner Zeit, Sommerzeit: 05:30 UTC ist 07:30 Uhr.
+  assert.equal(configuredHourlyQuota(env, '2026-09-17T05:30:00.000Z'), 6, '07 Uhr: Tag');
+  assert.equal(configuredHourlyQuota(env, '2026-09-17T14:00:00.000Z'), 6, '16 Uhr: Tag');
+  assert.equal(configuredHourlyQuota(env, '2026-09-17T20:59:00.000Z'), 6, '22 Uhr: noch Tag');
+  assert.equal(configuredHourlyQuota(env, '2026-09-17T21:30:00.000Z'), 1, '23 Uhr: Nacht');
+  assert.equal(configuredHourlyQuota(env, '2026-09-18T01:00:00.000Z'), 1, '03 Uhr: Nacht');
+  assert.equal(configuredHourlyQuota(env, '2026-09-17T04:30:00.000Z'), 1, '06 Uhr: noch Nacht');
+  // Winterzeit: 06:30 UTC ist 07:30 Uhr.
+  assert.equal(configuredHourlyQuota(env, '2026-12-17T06:30:00.000Z'), 6, 'Winterzeit wird mitgerechnet');
+  assert.equal(configuredHourlyQuota(env, '2026-12-17T05:30:00.000Z'), 1);
+  // Die Fenstergrenzen sind einstellbar.
+  assert.equal(configuredHourlyQuota({ ...env, WOEK_NEWS_DAY_FROM_HOUR: '9', WOEK_NEWS_DAY_UNTIL_HOUR: '18' }, '2026-09-17T05:30:00.000Z'), 1);
+  // Ohne Nachtwert bleibt es beim alten Verhalten: eine Zahl, rund um die Uhr.
+  assert.equal(configuredHourlyQuota({ WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: '3' }, '2026-09-18T01:00:00.000Z'), 3);
+  // Im Zweifel weniger ausgeben: unlesbare Zeit oder unsinniger Nachtwert.
+  assert.equal(configuredHourlyQuota(env, 'kaputt'), 1);
+  assert.equal(configuredHourlyQuota({ ...env, WOEK_NEWS_NIGHT_STORIES_PER_HOUR: '-5' }, '2026-09-17T14:00:00.000Z'), 6);
+  // Der Nachtwert kann das Tageskontingent nicht ueberschreiten.
+  assert.equal(configuredHourlyQuota({ ...env, WOEK_NEWS_NIGHT_STORIES_PER_HOUR: '99' }, '2026-09-18T01:00:00.000Z'), 6);
+});
+
+test('beide Spuren fragen das Kontingent mit der Uhrzeit ab', async () => {
+  const fs = await import('node:fs');
+  assert.match(fs.readFileSync('scripts/news/run.mjs', 'utf8'), /configuredHourlyQuota\(process\.env, now\)/, 'die Nachrichtenspur');
+  assert.match(fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8'), /configuredHourlyQuota\(env, now\(\)\)/, 'die Redaktionsspur');
+});
