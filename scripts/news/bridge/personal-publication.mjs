@@ -5,9 +5,20 @@ import {importApprovedNews} from './approved-news.mjs';
 import {loadNewsRegistry} from '../registry.mjs';
 import {loadManualEditorials} from '../manual-editorial.mjs';
 import {EDITORIAL_REVISION_FORMAT,EDITORIAL_REVISION_FILE,applyApprovedEditorialRevisions,validateApprovedEditorialRevision,validateEditorialRevisionPreview} from '../editorial-approved-revisions.mjs';
+import {PARKED_KEY} from './observation-keys.mjs';
+export {PARKED_KEY};
 
 // Called by the existing serial Git publisher while it owns the import lock.
 // The Oracle service only exports frozen versions explicitly approved by owner.
+// Die Identitaet einer Folge: Sendung und Folgenkennung, unabhaengig von Titel
+// und Adresse der Ausgabe. Ohne Sendungsangabe gibt es keine Identitaet - dann
+// greift die Pruefung nicht.
+export function episodeIdentity(edition){
+ const show=String(edition?.source_media?.show||'').normalize('NFKC').toLocaleLowerCase('de').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+ const episode=String(edition?.source_media?.episode_title||'').normalize('NFKC').toLocaleLowerCase('de').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+ return show&&episode?`${show}|${episode}`:null;
+}
+
 export async function importApprovedEditorials(store,root){
  if(!store.editorialClaim)return {changed:false};
  const editions=await store.editorialClaim();if(!editions.length)return {changed:false};
@@ -38,9 +49,22 @@ export async function importApprovedEditorials(store,root){
   const previous=data.editions.find(e=>e.analysis_id===edition.analysis_id);
   if(previous){if(previous.content_hash!==edition.content_hash)throw Error('PERSONAL_PUBLISHED_EDITION_CHANGED');continue;}
   if(data.editions.some(e=>e.slug===edition.slug))throw Error('PERSONAL_SLUG_COLLISION');
+ // Eine zweite Analyse zur selben Folge ist eine Dublette, auch wenn sie einen
+ // anderen Titel und eine andere Adresse hat. Natalie am 17.09.2026: sie stand
+ // vor einer geparkten Fassung zu "Markus Lanz vom 15. September 2026
+ // (S2026/E99)", deren Folge seit dem Vortag unter anderem Titel online war.
+ // Die Veroeffentlichung scheiterte, und niemand sagte ihr warum. Der Fall
+ // heisst jetzt so, wie er ist.
+ if(episodeIdentity(edition)&&data.editions.some(e=>e.slug!==edition.slug&&episodeIdentity(e)===episodeIdentity(edition)))throw Error('PERSONAL_EPISODE_ALREADY_PUBLISHED');
   data.editions.push(edition);changed=true;
  }catch(error){failed.push({content_hash:edition.content_hash,code:error.message});if(store.editorialFailure)await store.editorialFailure(edition.content_hash,error.message);}
  }
  if(changed){fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file+'.tmp',JSON.stringify(data,null,2)+'\n');fs.renameSync(file+'.tmp',file);}
+ // Eine geparkte Fassung stand bisher nur in der privaten Freigabeliste: der
+ // Monitor pruefte 20 Punkte und meldete gruen, waehrend Natalie vor einer
+ // Fassung sass, die sie nicht freigeben konnte (17.09.2026). Der Vermerk macht
+ // sie von aussen sichtbar - ohne Titel und ohne Text, nur Kennung und Grund.
+ if(store.observe)await store.observe(PARKED_KEY,{at:new Date().toISOString(),
+  parked:failed.map(f=>({content_hash:String(f.content_hash||'').slice(0,64),code:String(f.code||'').slice(0,80)}))}).catch?.(()=>{});
  return {changed,failed};
 }
