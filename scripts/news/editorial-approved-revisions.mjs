@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {assertWithoutProcessNotes} from './editorial-markdown.mjs';
 import path from 'node:path';
 import {hash} from './bridge/contract.mjs';
 import {renderEditorialMarkdown,renderEditorialMarkdownWithFootnotes} from './editorial-markdown.mjs';
@@ -7,6 +8,9 @@ export const EDITORIAL_REVISION_FORMAT='approved_editorial_revision';
 export const EDITORIAL_REVISION_FILE='data/news/editorial-revisions.json';
 const fail=()=>{throw Error('EDITORIAL_REVISION_INVALID');};
 export function assertFinalPersonalSection(markdown,{footnotes=false}={}){
+ // Jede Fassung mit persoenlicher Einordnung laeuft hier durch: Korrekturfassung,
+ // Buchbesprechung, Auftragsentwurf. Ein Verfahrensvermerk im Text endet hier.
+ assertWithoutProcessNotes(markdown);
  const parsed=footnotes?renderEditorialMarkdownWithFootnotes(markdown):renderEditorialMarkdown(markdown);
  const content=parsed.headings.filter(h=>h.level===2&&!/^(?:Das Buch|Quellen(?: und (?:Originale|Bezugspunkte|weiterführende Einordnung))?|Literatur|Originalfolge|Redaktioneller Hinweis)$/i.test(h.title));
  if(content.at(-1)?.title!=='Meine Einordnung')throw Error('EDITORIAL_FINAL_PERSPECTIVE_REQUIRED');

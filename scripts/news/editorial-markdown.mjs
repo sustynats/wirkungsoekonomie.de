@@ -1,3 +1,4 @@
+import { PROCESS_NOTE_PATTERN } from './reader-copy.mjs';
 // Deliberately small, deterministic editorial Markdown subset. No HTML, scripts,
 // images or embedded instructions execute. Unsupported blocks fail closed.
 // Uses the site's existing table-wrap/data-table and text-link conventions.
@@ -29,25 +30,61 @@ export function inlineEditorialMarkdown(text) {
 // Entfernt wird ausschließlich der Vorbehalt selbst: eine Zeile, die nur aus ihm
 // besteht, oder ein einzelner Satz in einem Absatz. Alles andere - Inhalt,
 // Transparenzhinweise, Prüfvermerke - bleibt unangetastet.
-const APPROVAL_PHRASE = /\b(?:Freigabe|Bestätigung|Genehmigung|Zustimmung)\s+durch\s+Natalie\b/;
+// Das Muster gehoert zur Grenze "Lesertext" und steht deshalb in
+// reader-copy.mjs - eine Definition fuer beide Welten: die Nachrichten-Analysen
+// pruefen dort gegen dieselbe Klasse (EDITORIAL_PUBLIC_EDITORIAL_RESIDUE).
+const APPROVAL_PHRASE = PROCESS_NOTE_PATTERN;
+
 const bareLine = line => line.replace(/^#{1,6}\s+/, '').replace(/\*\*|\*|_/g, '').replace(/[:.\s]+$/, '').trim();
 
 export function withoutProcessNotes(markdown, { removed = [] } = {}) {
   if (typeof markdown !== 'string' || !APPROVAL_PHRASE.test(markdown)) return markdown;
+  // Ein Rest ohne eigene Aussage ist kein Lesertext, sondern Schutt.
+  const tragfaehig = (text) => text.replace(/[^\p{L}]/gu, '').length >= 12 && /\p{L}{3,}/u.test(text);
   const kept = [];
   for (const line of markdown.split('\n')) {
     if (!APPROVAL_PHRASE.test(line)) { kept.push(line); continue; }
-    const bare = bareLine(line);
-    // Eine Zeile, die nur den Vorbehalt trägt (auch als Überschrift oder fett),
-    // fällt ganz weg; der nachfolgende Abschnittstext trägt sich selbst.
-    if (/^(?:Vorschlag|Hinweis|Anmerkung|Redaktioneller Hinweis)?[^.!?]*$/.test(bare)) { removed.push(bare); continue; }
+    // Zuerst der Vermerk als Etikett vor der Aussage ("Vorschlag zur
+    // Bestätigung: Die Sendung ist dann stark, wenn ..."): nur das Etikett geht,
+    // die Aussage trägt sich selbst. Diese Regel steht vor der naechsten, weil
+    // eine solche Zeile aus einem einzigen Satz besteht und sonst ganz fiele.
+    let rumpf = line;
+    const etikett = /^([#*_\s]*[^:\n]{0,140}?:\s*(?:\*\*|\*|_)?\s*)(\S.*)$/.exec(line);
+    if (etikett && APPROVAL_PHRASE.test(etikett[1]) && tragfaehig(etikett[2])) {
+      removed.push(etikett[1].replace(/[#*_\s]+$/, '').trim());
+      rumpf = etikett[2];
+      if (!APPROVAL_PHRASE.test(rumpf)) { kept.push(rumpf); continue; }
+    } else {
+      const bare = bareLine(line);
+      // Eine Zeile, die nur den Vorbehalt trägt (auch als Überschrift oder
+      // fett), fällt ganz weg; der nachfolgende Abschnittstext trägt sich selbst.
+      if (/^(?:Vorschlag|Hinweis|Anmerkung|Redaktioneller Hinweis)?[^.!?]*$/.test(bare)) { removed.push(bare); continue; }
+    }
     // Sonst steht der Vorbehalt als Satz in einem Absatz: nur dieser Satz geht.
-    const sentences = line.match(/[^.!?]+[.!?]+\s*|[^.!?]+$/g) || [line];
+    const sentences = rumpf.match(/[^.!?]+[.!?]+\s*|[^.!?]+$/g) || [rumpf];
     const rest = sentences.filter(s => { const hit = APPROVAL_PHRASE.test(s); if (hit) removed.push(s.trim()); return !hit; }).join('').replace(/\s+$/, '');
-    if (rest.trim()) kept.push(rest);
+    if (rest.trim() && tragfaehig(rest)) kept.push(rest);
+    else if (rest.trim()) removed.push(rest.trim());
   }
   // Durch den Wegfall entstandene Leerzeilenpaare zusammenziehen.
   return kept.join('\n').replace(/\n{3,}/g, '\n\n').replace(/^\n+/, '').replace(/\s+$/, '');
+}
+
+// Der Filter allein reicht nicht: was er nicht trifft, erscheint stumm. Diese
+// Pruefung verwandelt einen Durchrutscher in eine verweigerte Veroeffentlichung
+// mit Grund - an jeder Stelle, die einen Beitrag annimmt oder baut.
+export function processNoteFindings(markdown) {
+  const treffer = [];
+  for (const zeile of String(markdown || '').split('\n')) {
+    const fund = APPROVAL_PHRASE.exec(zeile);
+    if (fund) treffer.push(fund[0].trim().slice(0, 80));
+  }
+  return [...new Set(treffer)];
+}
+
+export function assertWithoutProcessNotes(markdown) {
+  const treffer = processNoteFindings(markdown);
+  if (treffer.length) throw Object.assign(Error('EDITORIAL_PROCESS_NOTE_IN_TEXT'), { detail: treffer.join(' | ') });
 }
 
 export function renderEditorialMarkdown(markdown) {
