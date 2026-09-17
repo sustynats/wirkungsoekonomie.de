@@ -413,7 +413,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // „dann kommt dann ein Artikel jeweils weniger"). Automatisch erzeugt wird
     // weiter beides; wartende Auftraege verfallen nicht, sie kommen im
     // naechsten Lauf dran.
-    const quota = configuredHourlyQuota(env);
+    const quota = configuredHourlyQuota(env, now());
     let hourUsage = (await store.observation(EDITORIAL_HOUR_KEY)) || { drafts: [] };
     let tickerStories = 0;
     try { tickerStories = tickerStoriesInWindow(JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json'), 'utf8')), now()); }

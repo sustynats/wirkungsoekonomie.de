@@ -44,6 +44,7 @@ import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeli
 import { IMAGE_CONFIG, digest as imageDigest } from "./title-image/policy.mjs";
 import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, sharedHourlyRoom, editorialReserve, waitingCount } from "./stundenkontingent.mjs";
 import { sameEventByFacts } from "./ereignisfakten.mjs";
+import { configuredHourlyQuota } from "./stundenkontingent.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
 import { numberTokens, evidenceNumberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
@@ -1543,7 +1544,7 @@ export async function runWirkungsticker(options = {}) {
   const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
   // Die Stundengrenze gilt fuer Meldungen. Der alte Name bleibt als Rueckfall,
   // damit eine gesetzte Variable weiter wirkt.
-  const configuredStoriesPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+  const configuredStoriesPerHour = configuredHourlyQuota(process.env, now);
   // Die Freigabe gilt für den Kalendermonat, also verteilt sich ihr Rest auf die
   // restlichen Stunden. Damit reicht sie bis zum Monatsende, ohne dass jemand
   // eine Zahl nachstellt (Natalie am 16.09.: „Bis Monatsende sollten wir mit
