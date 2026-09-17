@@ -7,12 +7,44 @@ const text = value => typeof value === 'string' && value.trim().length >= 12;
 export const structuredSemanticChecks = review => SEMANTIC_CHECKS.every(key => ['pass','fail'].includes(review?.checks?.[key]?.status) && text(review.checks[key].rationale));
 const sourceText = record => [record.title, record.source_summary, ...[...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => `${s.title || ''} ${s.summary || ''} ${s.article_excerpt || ''}`)].filter(Boolean).join('\n');
 
+// Die Ausloeser stehen als Wortlisten hier, und die Muster werden daraus
+// gebaut - nicht umgekehrt. Denn dasselbe Wissen geht in den Auftrag an das
+// Modell (IMPACT_CONTEXT_PROMPT_RULE): gemessen am 17.09.2026 waren 11 von 15
+// Nachbesserungen fehlende Pflichtteile der Wirkungsbewertung, zweimal
+// IMPACT_POWER_PATH_REQUIRED. Jede Nachbesserung ist ein zweiter bezahlter
+// Aufruf - und Natalies Regel ist ein Aufruf je Veroeffentlichung. Wenn die
+// Software vor dem Aufruf weiss, was die Meldung verlangt, muss sie es sagen.
+export const POWER_TRIGGER_WORDS = ['Regierungsbildung', 'Regierungsmehrheit', 'Regierungsbeteiligung', 'Koalition', 'Duldung', 'Sondierung', 'politische Zusammenarbeit', 'Personalentscheidung', 'Institutionenmacht'];
+export const ENERGY_TRIGGER_WORDS = ['Energiepolitik', 'Energieversorgung', 'Energiewende', 'Gasimporte', 'Gaslieferungen', 'Kohlekraft', 'Windkraft', 'Photovoltaik', 'CO2-Bepreisung'];
+const triggerPattern = (words) => new RegExp(`(?:${words.map((word) => word.replace(/ /g, '[\\s-]+')).join('|')})`, 'iu');
+export const POWER_TRIGGER = triggerPattern(POWER_TRIGGER_WORDS);
+export const ENERGY_TRIGGER = triggerPattern(ENERGY_TRIGGER_WORDS);
+
+// Der Auftrag nennt die Pflicht und die Folge - aber nur fuer die Meldung, um
+// die es geht. Eine allgemeine Regel fuer alle Meldungen kostete 977 Zeichen
+// und sprengte das Eingabebudget (AI_INPUT_TOO_LARGE im Prueflauf gegen die
+// echten September-Pakete). Die gezielte Zeile kostet nichts, wo sie nicht
+// gebraucht wird, und wird dort, wo sie steht, eher gelesen.
+export function impactContextPromptRule(record = {}) {
+  const { power, energy, harm } = impactContextRequirements(record);
+  const pflichten = [
+    ...(power ? ['dimensions.democracy braucht mindestens einen modellierten primary_path UND system_check.enablement mindestens einen Marker (Machtbezug ist belegt)'] : []),
+    ...(energy ? ['dimensions.planet braucht mindestens einen modellierten primary_path (Energiebezug ist belegt)'] : []),
+    ...(harm ? ['observed_effects braucht einen Eintrag dimension:human/direction:negative (belegter eingetretener Schaden, kein Risiko)'] : []),
+  ];
+  if (!pflichten.length) return '';
+  // Die Folge muss dabeistehen, sonst ist es eine Bitte: zweimal am 17.09.2026
+  // fehlte genau der Machtpfad, und jede Nachbesserung ist ein zweiter
+  // bezahlter Aufruf.
+  return `Pflichtteile dieser Meldung: ${pflichten.join('; ')}. Fehlt eines, wird die Antwort verworfen. Richtung, Staerke und Evidenz bleiben deine quellengebundene Entscheidung, "open" bleibt bei belegter Unklarheit erlaubt.`;
+}
+
 // Signals request scrutiny, never produce a political direction or magnitude.
 // No party/person/source-name rules are permitted here.
 export function impactContextRequirements(record = {}) {
   const material = sourceText(record);
-  const power = /(?:Regierungsbildung|Regierungsmehrheit|Regierungsbeteiligung|Koalition|Duldung|Sondierung|politische[\s-]+Zusammenarbeit|Personalentscheidung|Institutionenmacht)/iu.test(material);
-  const energy = /(?:Energiepolitik|Energieversorgung|Energiewende|Gasimporte|Gaslieferungen|Kohlekraft|Windkraft|Photovoltaik|CO2-Bepreisung)/iu.test(material);
+  const power = POWER_TRIGGER.test(material);
+  const energy = ENERGY_TRIGGER.test(material);
   const harm = /(?:\b\d+\s+(?:Tote|Verletzte)|(?:getötet|gestorben|ums Leben gekommen|verletzt worden))/iu.test(material)
     && !/(?:könnte|könnten|befürchtet|Szenario).{0,35}(?:Tote|Verletzte|sterben)/iu.test(material);
   return { power, energy, harm, central_dimensions: [...(power ? ['democracy'] : []), ...(energy ? ['planet'] : []), ...(harm ? ['human'] : [])] };

@@ -46,5 +46,10 @@ test('search includes published article text, guests and source names but no edi
 });
 test('personal analyses without topic tags remain discoverable by ressort',()=>{
   assert.ok(contentTopics({tags:['Nachgesehen','Meinung & Analyse'],title:'Die Denkzettelwahl',subtitle:'Politikstil und Wahlergebnis'}).includes('politik'));
-  assert.deepEqual(contentTopics({topic:['Technik'],title:'Regierung und Wirtschaft'}),['technik']);
+  // Seit 17.09.2026 gelten Etikett UND Titel zusammen: das Etikett bleibt immer
+  // erhalten, der Titel kann nur hinzufuegen. Vorher verdeckte das erste
+  // passende Etikett den Titel vollstaendig - eine KI-Meldung mit dem Etikett
+  // "Energie" bekam deshalb nie das Ressort Technik.
+  assert.deepEqual(contentTopics({topic:['Technik'],title:'Regierung und Wirtschaft'}),['politik','wirtschaft','technik']);
+  assert.ok(contentTopics({topic:['Technik'],title:'Ein Titel ohne Ressortwort'}).includes('technik'),'das Etikett geht nie verloren');
 });

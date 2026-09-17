@@ -6,6 +6,7 @@
 // rechnet Fenster, Kennungen, Eintraege und die Kopfzeile. Alles, was
 // veroeffentlicht wird, laesst sich damit vorher pruefen.
 import { berlinParts } from './lib.mjs';
+import { istReserviertesThema, RESERVIERTE_ETIKETTEN } from './themen.mjs';
 
 export const LAGEN = [
   { slot: 'morgenlage', label: 'Morgenlage', hour: 6, fromHour: 18, fromPreviousDay: true,
@@ -93,11 +94,16 @@ const updateAt = (story) => Date.parse(story?.last_updated || story?.updated_at 
 // nur weil nicht alle Medien darueber berichten."
 const EVIDENZ_GEWICHT = { high: 2, medium: 1, low: 0.5 };
 
-// Themen, die im Bestand strukturell untergehen (gemessen am 17.09.2026:
-// Technologie 3 und KI 3 Meldungen gegen Politik 106 und Geopolitik 80). Fuer
-// sie sind Plaetze reserviert, damit sie nicht gegen lautere Politikthemen
-// verlieren - aber nur mit belastbarer Wirkungsstaerke, nie als Quote.
-export const RESERVIERTE_THEMEN = ['Technologie', 'KI', 'Digitalisierung', 'Wissenschaft', 'Forschung', 'Infrastruktur', 'Bildung'];
+// Themen, die im Bestand strukturell untergehen. Fuer sie sind Plaetze
+// reserviert, damit sie nicht gegen lautere Politikthemen verlieren - aber nur
+// mit belastbarer Wirkungsstaerke, nie als Quote.
+//
+// Die Pruefung lief zuerst nur gegen exakte Etikettentexte. Das war zu wenig:
+// die gemessene Knappheit ("Technologie 3 Meldungen") war zum Teil ein
+// Etikettierungsartefakt - 49 von 363 Meldungen hatten Technikbezug im Text,
+// 13 ein Techniketikett. Jetzt entscheidet das gemeinsame Ressortverzeichnis
+// ueber Etiketten UND oeffentlichen Text (scripts/news/themen.mjs).
+export const RESERVIERTE_THEMEN = RESERVIERTE_ETIKETTEN;
 export const RESERVIERTE_PLAETZE = 2;
 const RESERVE_MINDESTSTAERKE = 3;
 
@@ -116,7 +122,7 @@ export function lageRelevanz(story, { state = 'neu', window: fenster } = {}) {
   return Number((staerke * 2 + evidenz + veraenderung + neuigkeit).toFixed(4));
 }
 
-const reserviert = (story) => (story?.topic || []).some((thema) => RESERVIERTE_THEMEN.includes(thema));
+const reserviert = (story) => istReserviertesThema(story);
 
 export function lageEntries({ stories = [], window: fenster, max = MAX_ENTRIES } = {}) {
   if (!fenster) return [];

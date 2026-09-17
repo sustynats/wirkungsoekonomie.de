@@ -1,5 +1,6 @@
 import path from 'node:path';
 import fs from 'node:fs';
+import { themenVon } from './themen.mjs';
 import {createHash} from 'node:crypto';
 import {escape as esc} from './editorial-markdown.mjs';
 import {mixedFeedItems,feedDate} from './feed-order.mjs';
@@ -11,14 +12,11 @@ export const APP_TOPICS = {alle:'Alle',politik:'Politik',wirtschaft:'Wirtschaft'
 export const PAGE_SIZE=20;
 const base='/wirkungsticker/';
 export function contentType(item){return item.type==='story'?'news':item.value.format==='book_and_impact'||item.value.subtype==='book_review'?'book':['listened','watched'].includes(item.value.subtype)?item.value.subtype:'analysis';}
-export function contentTopics(value){
- const patterns={politik:/politik|demokratie|recht|partei|wahl|regierung|bundestag|bundeswehr/,wirtschaft:/wirtschaft|finanz|arbeit|energie|industrie|handel|unternehmen|etat|investition|kapital/,gesellschaft:/gesellschaft|sozial|bildung|kultur|sicherheit|schule|zusammenhalt/,technik:/technik|technolog|digital|\bki\b|\bai\b|cyber|software/,klima:/klima|umwelt|energie|planet/,gesundheit:/gesundheit|medizin/,wissenschaft:/wissenschaft|forschung/,international:/international|europa|geopolitik/};
- const tags=[...(Array.isArray(value.topic)?value.topic:[]),...(Array.isArray(value.tags)?value.tags:[])].join(' ').toLowerCase();
- const match=text=>Object.entries(patterns).filter(([,re])=>re.test(text)).map(([key])=>key);
- const explicit=match(tags);
- // Personal formats do not all have editorial topic tags; use their public title/deck for navigation.
- return explicit.length?explicit:match([value.title,value.subtitle,value.teaser,value.book?.title].filter(Boolean).join(' ').toLowerCase());
-}
+// Ressorts kommen aus dem gemeinsamen Verzeichnis: Etiketten UND Titel/Anriss
+// (scripts/news/themen.mjs). Personal formats do not all have editorial topic
+// tags, und ein Etikett aus einem anderen Ressort darf den Titel nicht mehr
+// verdecken.
+export const contentTopics = themenVon;
 export function appNavigation(canonical){
  const route=new URL(canonical).pathname;
  const active=route===base?'start':route.startsWith(base+'analyse/')||route===base+'analysen/'?'analysen':route===base+'merkzettel/'?'merkzettel':route===base+'news/'||!/^\/(?:wirkungsticker)\/(?:mehr|suche|quellen|methodik)\//.test(route)?'news':'mehr';

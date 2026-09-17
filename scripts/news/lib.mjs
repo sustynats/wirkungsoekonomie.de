@@ -11,6 +11,7 @@ import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_PROMPT_RULE, IMPACT_PROMPT_SCHEMA, IMPACT_PROMPT_DEFS, impactAssessmentErrors } from './impact-assessment.mjs';
+import { impactContextPromptRule } from './impact-publication.mjs';
 import { modelledPublicationIssues } from './impact-scope.mjs';
 import { directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
@@ -943,7 +944,7 @@ export function analysisInputFor(stories) {
 // a bounded 5k reserve instead of dropping sources or governing checks.
 export const ANALYSIS_PROMPT_MAX_CHARS = 44000;
 export const BRIDGE_ANALYSIS_PROMPT_MAX_CHARS = 64000;
-export function buildAnalysisPrompt(stories, { includeVisuals = true, transport = 'api' } = {}) {
+export function buildAnalysisPrompt(stories, { includeVisuals = true, transport = 'api', includeContextRequirements = true } = {}) {
   if (!['api', 'dropbox_chatgpt_bridge'].includes(transport)) throw new Error('ANALYSIS_PROMPT_TRANSPORT_INVALID');
   const input = analysisInputFor(stories);
   const lines = [
@@ -968,6 +969,8 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
     "Ablehnen: Meinung/Wiederholung/Spekulation/Zeremonie/Routinezahl ohne Neuigkeit, unbeantwortete Frage ohne materielle Antwort, formaler Vorgang ohne relevanten Pfad. Quellenrang/Aufmerksamkeit kein Relevanzbeweis. Rückblick ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
     "material_development_review: Kandidatur/Rücktritt/Koalition/Regierungsbildung/Ergebnis auf Neuigkeit prüfen; neues Medium allein Dublette. Artikelzeit≠Aussagezeit; Videoüberschrift≠Originalton. Kurswechsel: frühere Bedingungen/datierte Aussagen/Nachträge prüfen. Zeitdruck≠Evidenz. Parteien/Medien gleich behandeln; Landtagswahl≠Regierungschefwahl.",
     IMPACT_PROMPT_RULE, EDITORIAL_EVIDENCE_RULE,
+    // Was diese Meldung zwingend braucht, weiss die Software vor dem Aufruf.
+    ...(includeContextRequirements ? stories.map(story => impactContextPromptRule(story)).filter(Boolean) : []),
     "Hauptgegenstand zum Quelldatum: Kabinetts-Gesetzentwurf=Entwurf, beschlossen=endgültig verabschiedet, in Kraft=belegtes Inkrafttreten. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung trennen, Teilvergleich setzt nicht Hauptstatus. Unklar=offen. Ex ante betrifft Folgen, auch nach Inkrafttreten.",
     "Zielbezug ist kein Kausalitätsbeweis. Fakten, Inferenz und Bewertung trennen.",
     "Keine Personen-/Parteien-/Moralrangliste. Reichweite≠Wirkung. Nichtkompensation/Reverse Merit Order bei materiellen Schutzgrenzen/Priorisierung.",
@@ -1047,7 +1050,11 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
     // Optional new illustrations must not crowd out a complete source catalog.
     // Retry prompt assembly locally, never the provider. No required rule or
     // source record is removed, and genuinely oversized input still fails safe.
-    if (includeVisuals && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals: false, transport });
+    if (includeVisuals && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals: false, transport, includeContextRequirements });
+    // Der gezielte Pflichthinweis spart einen zweiten bezahlten Aufruf, aber er
+    // ist ein Hinweis - Belege und Regeln gehen vor. Bei einem echten
+    // September-Paket mit 21 Quellen hat genau er das Paket gesprengt.
+    if (includeContextRequirements && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals, transport, includeContextRequirements: false });
     throw error;
   }
   return lines.join("\n");
