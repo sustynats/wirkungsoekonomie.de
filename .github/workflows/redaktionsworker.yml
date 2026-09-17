@@ -46,6 +46,12 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
       WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
       WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
+      # Dieselbe Stundenzahl wie die Nachrichtenspur, damit beide auf
+      # dasselbe Kontingent rechnen.
+      WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || '4' }}
+      WOEK_NEWS_NIGHT_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_NIGHT_STORIES_PER_HOUR || '' }}
+      WOEK_NEWS_DAY_FROM_HOUR: ${{ vars.WOEK_NEWS_DAY_FROM_HOUR || '7' }}
+      WOEK_NEWS_DAY_UNTIL_HOUR: ${{ vars.WOEK_NEWS_DAY_UNTIL_HOUR || '23' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
       # 16 je Tag seit 16.09.: Rückstand von rund 20 Aufträgen plus automatische
       # Sendungs- und Analysekandidaten; je Auftrag wenige Cent (gpt-5.6-luna).
