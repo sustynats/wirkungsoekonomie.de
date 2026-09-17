@@ -3054,8 +3054,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176/",
-      "title": "Rheinfelden: Grenzübergang wegen Sprengstoffverdachts gesperrt – zwei vorläufige Festnahmen gemeldet",
-      "summary": "Der Grenzübergang Rheinfelden ist gesperrt. Zwei vorläufige Festnahmen werden gemeldet, aber noch nicht abschließend bestätigt.",
+      "title": "Grenzübergang Rheinfelden nach Sprengstoffverdacht zeitweise gesperrt",
+      "summary": "Nach einem Hundealarm wurde der Grenzübergang Rheinfelden zeitweise geschlossen. Laut Ermittlern wurde kein gefährliches Material gefunden; zwei vorläufige Festnahmen werden berichtet.",
       "date_published": "2026-09-09T16:29:42.000Z",
       "date_modified": "2026-09-09T16:29:42.000Z",
       "tags": [
@@ -3064,7 +3064,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/fliegerbombe-in-hamburg-bahrenfeld-evakuierung-lauft-zugverkehr-ruht-d4ad5f/",
