@@ -9,7 +9,7 @@
 import path from 'node:path';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
 import { officialShowName } from './show-identity.mjs';
-import { EDITORIAL_HOUR_KEY, editorialDraftsInWindow, noteEditorialDraft, tickerStoriesInWindow, sharedHourlyRoom, configuredHourlyQuota } from './stundenkontingent.mjs';
+import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, noteEditorialDraft, tickerStoriesInWindow, sharedHourlyRoom, configuredHourlyQuota, waitingRecord } from './stundenkontingent.mjs';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
@@ -387,6 +387,12 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
   try {
     const day = isoDay(now());
     const counter = (await store.observation(`github-editorial-day:${day}`)) || { day, paid: 0, cost_usd: 0 };
+    // Der Wartestand wird zuerst vermerkt, vor jedem Abbruch: die
+    // Nachrichtenspur haelt nur dann einen Platz frei, wenn sie weiss, dass hier
+    // Arbeit liegt. Ein Abbruch ohne Vermerk wuerde die Reserve verfallen
+    // lassen - und genau dann bleibt die Redaktionsarbeit liegen.
+    const rows = await store.all();
+    await store.observe(EDITORIAL_WAITING_KEY, waitingRecord(selectEditorialRequests(rows, { limit: 500 }).length, now()));
     if (counter.paid >= maxJobsPerDay) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
     // Ein Kontingent fuer alles, was bezahlt wird (Natalie am 16.09.: die
     // Nachbesprechungen und Analysen sind Teil derselben Veroeffentlichung,
@@ -401,7 +407,6 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     const hourlyRoom = sharedHourlyRoom({ configured: quota, tickerStories, editorialDrafts: editorialDraftsInWindow(hourUsage, now()) });
     if (hourlyRoom <= 0) return { status: 'hourly_quota_reached', day, quota, ticker_stories_last_hour: tickerStories,
       editorial_drafts_last_hour: editorialDraftsInWindow(hourUsage, now()), results: [] };
-    const rows = await store.all();
     // Rows that turn out to be delivered, exhausted or freshly claimed elsewhere
     // cost no model call; they must not use up the paid slots of this run.
     const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid, hourlyRoom);

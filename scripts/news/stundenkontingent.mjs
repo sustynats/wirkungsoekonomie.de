@@ -12,6 +12,7 @@
 // Automatisch erzeugt wird weiter beides; wartende Aufträge verfallen nicht,
 // sie kommen im nächsten Lauf dran und landen wie immer in Natalies Freigabe.
 export const EDITORIAL_HOUR_KEY = 'editorial-hour-usage';
+export const EDITORIAL_WAITING_KEY = 'editorial-waiting';
 const WINDOW_MINUTES = 60;
 
 const times = (value) => (Array.isArray(value?.drafts) ? value.drafts : Array.isArray(value) ? value : [])
@@ -36,10 +37,43 @@ export function noteEditorialDraft(observation, at, windowMinutes = WINDOW_MINUT
   return { drafts };
 }
 
-export function sharedHourlyRoom({ configured, tickerStories = 0, editorialDrafts = 0 }) {
+export function sharedHourlyRoom({ configured, tickerStories = 0, editorialDrafts = 0, reserve = 0 }) {
   const limit = Math.max(0, Number(configured) || 0);
   const used = Math.max(0, Number(tickerStories) || 0) + Math.max(0, Number(editorialDrafts) || 0);
-  return Math.max(0, limit - used);
+  return Math.max(0, limit - used - Math.max(0, Number(reserve) || 0));
+}
+
+// Die Nachrichtenspur laeuft in jedem Zyklus vier Minuten vor der
+// Redaktionsspur (:04/:19/:34/:49 gegen :08/:23/:38/:53). Ohne Reserve nimmt sie
+// alle Plaetze der Stunde, und die Redaktionsspur findet um :08 nichts mehr -
+// Natalies Analysen und Nachbesprechungen kaemen nie dran, ohne dass irgendwo
+// ein Fehler auftaucht. Das ist das Gegenteil von „dann kommt ein Artikel
+// jeweils weniger" (Natalie am 16.09.2026).
+//
+// Wartet Redaktionsarbeit, haelt die Nachrichtenspur deshalb einen Platz frei.
+// Nur einen, und nur solange das Kontingent mindestens zwei hergibt: bei einem
+// einzigen Platz je Stunde wuerde die Reserve die Nachrichten ganz anhalten.
+export function editorialReserve({ configured, waiting = 0, editorialDrafts = 0 }) {
+  const limit = Math.max(0, Number(configured) || 0);
+  if (limit < 2) return 0;
+  if (Math.max(0, Number(waiting) || 0) <= 0) return 0;
+  // In dieser Stunde schon geliefert? Dann ist der Platz eingelöst.
+  return Math.max(0, Number(editorialDrafts) || 0) > 0 ? 0 : 1;
+}
+
+// Wie viele Auftraege warten - der Vermerk ist die einzige Stelle, an der die
+// Nachrichtenspur davon erfaehrt.
+export function waitingRecord(count, at) {
+  return { waiting: Math.max(0, Number(count) || 0), at: String(at || '') };
+}
+
+export function waitingCount(observation, now, maxAgeMinutes = 90) {
+  const at = Date.parse(observation?.at || '');
+  const jetzt = Date.parse(now);
+  if (!Number.isFinite(at) || !Number.isFinite(jetzt)) return 0;
+  // Ein alter Vermerk darf keinen Platz auf Dauer blockieren.
+  if (jetzt - at > Math.max(1, Number(maxAgeMinutes) || 90) * 60000) return 0;
+  return Math.max(0, Number(observation?.waiting) || 0);
 }
 
 // Die Nachrichtenspur fuehrt ihre bezahlten Meldungen in data/news/usage.json,
