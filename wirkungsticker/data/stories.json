@@ -2,8 +2,1197 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T23:52:16.913Z",
+  "updated_at": "2026-09-17T00:52:33.847Z",
   "stories": [
+    {
+      "story_id": "wt-03c6bacdda808696",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-03c6bacdda808696-0ce08c9a9029c4f9-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-03c6bacdda808696-8ecbe9253f8fa31f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-03c6bacdda808696-99fcb8a5ad24c1fa-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+      "title": "Nach Angaben der Polizei: Sabotagevorwürfe an Stromanlagen und Fahndung nach einem 48-Jährigen",
+      "source_summary": "Der Bericht schildert Ermittlungen zu mutmaßlichen Sabotagehandlungen an Stromanlagen in Brandenburg und Nordrhein-Westfalen. Die Polizei hält zwei Bekennerschreiben für authentisch; darin präsentiert sich ein 48-Jähriger als alleiniger Täter. Zugleich bleibt offen, ob er die Schreiben tatsächlich verfasst hat und ob er allein gehandelt hat.\n\nNach Angaben des Berichts wurden an weiteren Umspannwerken potenzielle Sabotageziele und Abschussvorrichtungen entdeckt. Genannt werden Anlagen in Dormagen und Weisweiler. Die Schreiben sollen Anlagen ausgewählt haben, die an Kohlekraftwerke angeschlossen sind.\n\nDer Bericht nennt außerdem Abschaltungen in Kraftwerksblöcken nach Angriffen in Jänschwalde und Bergheim. Die Auswahl der Textstellen ist begrenzt; eine unabhängige Bestätigung, eine abschließende Täterzuordnung und eine vollständige Einordnung der Versorgungslage liegen in der gelieferten Quelle nicht vor.",
+      "summary": "Die Polizei hält Bekennerschreiben zu Stromanlagen für authentisch und sucht einen 48-Jährigen. Seine Verfasserschaft bleibt offen; der Bericht nennt zudem Abschaltungen in Kraftwerksblöcken.",
+      "detail_summary": "Die Polizei hält laut Bericht Bekennerschreiben zu Sabotagevorwürfen an Umspannwerken in Jänschwalde und Nordrhein-Westfalen für authentisch. Gesucht wird ein 48-Jähriger aus Gevelsberg, der sich in den Schreiben als alleiniger Täter darstellt. Ob er die Schreiben tatsächlich verfasst hat und ob er allein handelte, ist dem Bericht zufolge nicht abschließend geklärt. An weiteren Anlagen in Dormagen und Weisweiler wurden potenzielle Sabotageziele oder Abschussvorrichtungen entdeckt. Für die Stromversorgung nennt die Quelle Abschaltungen in Kraftwerksblöcken nach Angriffen in Jänschwalde und Bergheim. Das Wirkungspotenzial reicht damit von möglichen Versorgungsstörungen bis zu zusätzlichem Sicherungs- und Ermittlungsaufwand, bleibt aber wegen der einzelnen Quellenbasis und der offenen Zuordnung unsicher.",
+      "why_relevant": "Stromanlagen sind kritische Infrastruktur. Der Bericht verbindet mögliche Eingriffe in diese Infrastruktur mit einer offenen Täterzuordnung und bereits berichteten Abschaltungen; Umfang, Dauer und Ursache der Folgen sind jedoch nicht unabhängig bestätigt.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über Ermittlungen zu möglichen Sabotagehandlungen an Stromanlagen, weitere potenzielle Ziele und berichtete Abschaltungen in Kraftwerksblöcken",
+        "evaluation_target": {
+          "label": "mögliche Eingriffe in kritische Strominfrastruktur und ihre öffentliche Einordnung",
+          "type": "event"
+        },
+        "baseline": "Stromversorgung und öffentliche Sicherheitskommunikation ohne die berichteten Vorfälle beziehungsweise ohne weitere bestätigte Eingriffe",
+        "counterfactual": "Ohne weitere Eingriffe und ohne bestätigte Kettenbildung blieben mögliche Versorgungsstörungen, Sicherungsaufwand und öffentliche Kontroversen begrenzter; die konkrete Entwicklung ist offen.",
+        "reference_frame": [
+          "Versorgungssicherheit",
+          "Schutz kritischer Infrastruktur",
+          "rechtsstaatliche Unschuldsvermutung",
+          "Agenda 2030/SDG 7 und SDG 16"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Versorgungsunterbrechungen, Sicherheitsbelastungen und Verteilungsfolgen für Haushalte, Unternehmen und kritische Einrichtungen werden geprüft; konkrete Betroffenenzahlen fehlen.",
+            "planet": "Der berichtete Bezug zu Anlagen an Kohlekraftwerken kann einen Umweltpfad eröffnen, doch Emissionsänderungen, Betriebsdaten und ökologische Folgen sind nicht belegt.",
+            "democracy": "Die offene Täter- und Motivzuordnung kann die öffentliche Sicherheitskommunikation und demokratische Korrekturfähigkeit berühren; eine konkrete Kommunikationswirkung ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche Störung oder Abschaltung von Stromanlagen sowie unmittelbarer Ermittlungs- und Sicherungsaufwand.",
+          "second_order": "Mögliche Belastung von Versorgung, Anlagenbetrieb, politischer Kommunikation und öffentlichem Vertrauen, falls weitere oder bestätigte Vorfälle hinzukommen.",
+          "third_order": "Bei wiederholten bestätigten Eingriffen mögliche dauerhafte Verschiebung von Schutzprioritäten und Sicherheitsnarrativen; eine systemweite Folge ist nicht belegt.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle nennt keine unabhängige Bestätigung und keine vollständige Schadens- oder Versorgungsbilanz.",
+            "Die Täterzuordnung und die Verbindung der Fälle sind offen.",
+            "Sicherungs- und Redundanzmaßnahmen könnten mögliche Folgen begrenzen."
+          ],
+          "source_independence": "Nur eine gelieferte journalistische Quelle ist vorhanden; ihre Unabhängigkeit ist nicht verifiziert. Sie stützt zugeschriebene Ermittlungsangaben, nicht deren abschließende Wahrheit.",
+          "institutional_status": "Laufende Ermittlungen; kein Urteil, keine abschließende Täterfeststellung und kein belegter Beschluss über neue Schutzregeln."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt Abschaltungen in Kraftwerksblöcken, aber keine Reichweite, Dauer oder Zahl Betroffener. Ein weiterer Versorgungspfad bleibt deshalb bedingt und unsicher.",
+            "reviewed_source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "rationale": "Der menschliche Hauptpfad ist ein bedingtes Risiko möglicher Versorgungsstörungen. Die Quelle berichtet Abschaltungen, liefert aber keine belastbare Reichweite oder Dauer; ein Schutzgewinn durch Ermittlungen bleibt hypothetisch.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Abschaltungen oder Störungen könnten die Stromversorgung von Haushalten, Unternehmen und kritischen Einrichtungen beeinträchtigen.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eingriffe in Umspannwerke oder Leitungen könnten Schutzabschaltungen und Betriebsunterbrechungen auslösen.",
+                "recipients": [
+                  "haushalte",
+                  "unternehmen",
+                  "staat"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle trägt einen begrenzten unmittelbaren Pfad; Reichweite und Dauer sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere Anlagen und angeschlossene Räume könnten betroffen sein.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Abschaltungen werden berichtet, ihre Stärke bleibt offen.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer möglicher Unterbrechungen ist nicht belegt.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Stromunterbrechungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Kritische Einrichtungen und verletzliche Haushalte könnten besonders abhängig sein.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Versorgung und Krisenvorsorge, nicht das Gesamtsystem.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenze ist möglich, aber wegen fehlender Angaben zu Betroffenen und Dauer nicht entscheidend.",
+                  "reference_frame": "kontinuierliche und sichere Stromversorgung",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Weitere Eingriffe müssten stattfinden und Schutz- oder Netzreaktionen auslösen.",
+                "reference_space": "Betroffene Stromanlagen und angeschlossene Versorgungsräume",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichteten Abschaltungen stehen in einem ursächlichen Zusammenhang mit den Vorfällen; Umfang und Dauer bleiben offen.",
+                "source_support": "Die Quelle berichtet von Abschaltungen in Kraftwerksblöcken nach Angriffen und von möglichen Zielen an Stromanlagen.",
+                "limitations": "Keine unabhängige Bestätigung, keine Reichweiten- oder Dauerdaten und keine Zahl betroffener Personen.",
+                "first_order": "Mögliche Betriebsunterbrechung oder Schutzabschaltung an einer Stromanlage.",
+                "second_order": "Mögliche Ausfälle oder Vorsorgebelastungen bei angeschlossenen Verbrauchern und Einrichtungen.",
+                "third_order": "Bei Wiederholung möglicher Druck auf Versorgungssicherheit und Krisenvorsorge.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quantifizierung der Versorgungsfolgen in der gelieferten Quelle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Abschaltungen oder Störungen könnten die Stromversorgung von Haushalten, Unternehmen und kritischen Einrichtungen beeinträchtigen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Abschaltungen oder Störungen könnten die Stromversorgung von Haushalten, Unternehmen und kritischen Einrichtungen beeinträchtigen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt einen Bezug der Schreiben zu Anlagen an Kohlekraftwerken, belegt aber weder Emissionsänderungen noch ökologische Schäden oder Verbesserungen.",
+            "reviewed_source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "rationale": "Ein planetarer Wirkpfad ist nur als schwache Hypothese über den Bezug zu Kohlekraftwerken modellierbar. Die Quelle liefert keine Messwerte zu Emissionen, Natur oder Ressourcen; die Richtung bleibt offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Eingriffe an Anlagen mit Bezug zu Kohlekraftwerken könnten den Betrieb fossiler Erzeugung kurzfristig stören, ohne dass die ökologische Richtung feststeht.",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine Störung könnte fossile Erzeugung oder Ersatz- und Umleitungsentscheidungen beeinflussen.",
+                "recipients": [
+                  "natur",
+                  "unternehmen",
+                  "staat"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle trägt nur einen indirekten Anlagenbezug, nicht die ökologische Wirkung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche ökologische Bezug betrifft nur genannte Anlagen.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine ökologische Intensität ist nicht belegt.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer ökologischer Änderungen ist unbekannt.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Kurzfristige Betriebsänderungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Konkrete besonders verletzliche Ökosysteme werden nicht genannt.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Umweltpfad ist nicht belegt.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze ist durch die Quelle belegt.",
+                  "reference_frame": "Schutz von Klima und Ökosystemen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Die genannten Anlagen müssten tatsächlich betroffen sein und es müsste zu einer relevanten Betriebsänderung kommen.",
+                "reference_space": "Anlagen mit Bezug zu Kohlekraftwerken und ihr Versorgungsraum",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Betriebsänderungen wirken sich auf fossile Erzeugung oder Ersatzversorgung aus.",
+                "source_support": "Die Quelle berichtet, dass Anlagen ausgewählt worden seien, die an Kohlekraftwerke angeschlossen sind.",
+                "limitations": "Keine Emissionsdaten, keine Betriebsdaten und keine belegte ökologische Folge.",
+                "first_order": "Mögliche Betriebsänderung an einer energiebezogenen Anlage.",
+                "second_order": "Mögliche Verschiebung zwischen Erzeugung, Ersatzversorgung und Sicherheitsbetrieb.",
+                "third_order": "Keine belastbare Grundlage für langfristige Umwelt- oder Transformationsfolgen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Emissionen, Brennstoffwechsel oder ökologische Schäden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Eingriffe an Anlagen mit Bezug zu Kohlekraftwerken könnten den Betrieb fossiler Erzeugung kurzfristig stören, ohne dass die ökologische Richtung feststeht.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Eingriffe an Anlagen mit Bezug zu Kohlekraftwerken könnten den Betrieb fossiler Erzeugung kurzfristig stören, ohne dass die ökologische Richtung feststeht.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine gemessene Kommunikations- oder Vertrauenswirkung. Sie trägt jedoch eine plausible Wissensgrenze: Offene Täter- und Motivfragen lassen keine belastbare Zuschreibung zu.",
+            "reviewed_source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "rationale": "Der zentrale demokratische Risikopfad betrifft mögliche Verfestigung einer offenen Täter- und Motivzuschreibung. Eine klare Attribution kann dagegen korrigierend wirken; mangels unabhängiger Diskursdaten bleibt die Größenordnung niedrig bis begrenzt.",
+            "primary_paths": [
+              {
+                "label": "Eine prominente, aber offene Täter- und Motivzuordnung könnte Vertrauen in Ermittlungen und öffentliche Kommunikation belasten.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Verbindung von Sabotagevorwürfen, Energiepolitik und einer identifizierten Person kann vor Abschluss der Ermittlungen als fertige Schuldgeschichte gelesen werden.",
+                "recipients": [
+                  "staat",
+                  "haushalte",
+                  "unternehmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein Kommunikationsrisiko ist plausibel, aber weder Reichweite noch Wirkung sind gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Sicherheits- und Energiefragen können breite Öffentlichkeit erreichen.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Sabotagevorwürfe an Stromanlagen besitzen hohe thematische Schärfe.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Wiederholte Ermittlungsupdates könnten die Debatte verlängern.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Frühe Zuschreibungen können sich kommunikativ verfestigen.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Vertrauen in Sicherheitskommunikation ist bei Krisenthemen empfindlich.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt öffentliche Korrekturfähigkeit, bleibt aber unbelegt.",
+                    "source_ids": [
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist möglich, aber nicht konkret beobachtet.",
+                  "reference_frame": "rechtsstaatliche und evidenzgebundene öffentliche Kommunikation",
+                  "source_ids": [],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Die offene Zuordnung müsste öffentlich als gesichert verstanden oder wiederholt werden.",
+                "reference_space": "Öffentliche Sicherheitskommunikation und demokratische Meinungsbildung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung und prominente Personalisierung beeinflussen die Bewertung der Ermittlungen.",
+                "source_support": "Die Quelle stellt die Verfasserschaft und die Frage des Alleinhandelns als offen dar und nennt zugleich politische Inhalte der Schreiben.",
+                "limitations": "Keine Publikumsdaten, keine unabhängige Diskursanalyse und kein Kausalitätsnachweis.",
+                "first_order": "Erhöhte öffentliche Aufmerksamkeit für Sicherheits- und Energiefragen.",
+                "second_order": "Mögliche Verfestigung von Schuld- oder Motivannahmen trotz offener Ermittlungen.",
+                "third_order": "Bei wiederholten ungeklärten Fällen mögliche Belastung von Vertrauen und demokratischer Korrekturfähigkeit.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Vertrauen, Meinungsänderungen oder Diskursfolgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Eine prominente, aber offene Täter- und Motivzuordnung könnte Vertrauen in Ermittlungen und öffentliche Kommunikation belasten.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine prominente, aber offene Täter- und Motivzuordnung könnte Vertrauen in Ermittlungen und öffentliche Kommunikation belasten.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T00:57:48.838Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "rbb24-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle berichtet über authentisch eingeschätzte Bekennerschreiben, einen gesuchten 48-Jährigen, weitere potenzielle Ziele, Abschaltungen sowie offene Ermittlungsfragen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt Abschaltungen in Kraftwerksblöcken, aber keine Reichweite, Dauer oder Zahl Betroffener. Ein weiterer Versorgungspfad bleibt deshalb bedingt und unsicher.",
+          "reviewed_source_ids": [
+            "rbb24-nachrichten"
+          ],
+          "rationale": "Der menschliche Hauptpfad ist ein bedingtes Risiko möglicher Versorgungsstörungen. Die Quelle berichtet Abschaltungen, liefert aber keine belastbare Reichweite oder Dauer; ein Schutzgewinn durch Ermittlungen bleibt hypothetisch.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Abschaltungen oder Störungen könnten die Stromversorgung von Haushalten, Unternehmen und kritischen Einrichtungen beeinträchtigen.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eingriffe in Umspannwerke oder Leitungen könnten Schutzabschaltungen und Betriebsunterbrechungen auslösen.",
+              "recipients": [
+                "haushalte",
+                "unternehmen",
+                "staat"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle trägt einen begrenzten unmittelbaren Pfad; Reichweite und Dauer sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere Anlagen und angeschlossene Räume könnten betroffen sein.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Abschaltungen werden berichtet, ihre Stärke bleibt offen.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer möglicher Unterbrechungen ist nicht belegt.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Stromunterbrechungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Kritische Einrichtungen und verletzliche Haushalte könnten besonders abhängig sein.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Versorgung und Krisenvorsorge, nicht das Gesamtsystem.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenze ist möglich, aber wegen fehlender Angaben zu Betroffenen und Dauer nicht entscheidend.",
+                "reference_frame": "kontinuierliche und sichere Stromversorgung",
+                "source_ids": [
+                  "rbb24-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "rbb24-nachrichten"
+              ],
+              "condition": "Weitere Eingriffe müssten stattfinden und Schutz- oder Netzreaktionen auslösen.",
+              "reference_space": "Betroffene Stromanlagen und angeschlossene Versorgungsräume",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichteten Abschaltungen stehen in einem ursächlichen Zusammenhang mit den Vorfällen; Umfang und Dauer bleiben offen.",
+              "source_support": "Die Quelle berichtet von Abschaltungen in Kraftwerksblöcken nach Angriffen und von möglichen Zielen an Stromanlagen.",
+              "limitations": "Keine unabhängige Bestätigung, keine Reichweiten- oder Dauerdaten und keine Zahl betroffener Personen.",
+              "first_order": "Mögliche Betriebsunterbrechung oder Schutzabschaltung an einer Stromanlage.",
+              "second_order": "Mögliche Ausfälle oder Vorsorgebelastungen bei angeschlossenen Verbrauchern und Einrichtungen.",
+              "third_order": "Bei Wiederholung möglicher Druck auf Versorgungssicherheit und Krisenvorsorge.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quantifizierung der Versorgungsfolgen in der gelieferten Quelle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Abschaltungen oder Störungen könnten die Stromversorgung von Haushalten, Unternehmen und kritischen Einrichtungen beeinträchtigen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Abschaltungen oder Störungen könnten die Stromversorgung von Haushalten, Unternehmen und kritischen Einrichtungen beeinträchtigen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt einen Bezug der Schreiben zu Anlagen an Kohlekraftwerken, belegt aber weder Emissionsänderungen noch ökologische Schäden oder Verbesserungen.",
+          "reviewed_source_ids": [
+            "rbb24-nachrichten"
+          ],
+          "rationale": "Ein planetarer Wirkpfad ist nur als schwache Hypothese über den Bezug zu Kohlekraftwerken modellierbar. Die Quelle liefert keine Messwerte zu Emissionen, Natur oder Ressourcen; die Richtung bleibt offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Eingriffe an Anlagen mit Bezug zu Kohlekraftwerken könnten den Betrieb fossiler Erzeugung kurzfristig stören, ohne dass die ökologische Richtung feststeht.",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine Störung könnte fossile Erzeugung oder Ersatz- und Umleitungsentscheidungen beeinflussen.",
+              "recipients": [
+                "natur",
+                "unternehmen",
+                "staat"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle trägt nur einen indirekten Anlagenbezug, nicht die ökologische Wirkung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche ökologische Bezug betrifft nur genannte Anlagen.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine ökologische Intensität ist nicht belegt.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer ökologischer Änderungen ist unbekannt.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Kurzfristige Betriebsänderungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Konkrete besonders verletzliche Ökosysteme werden nicht genannt.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Umweltpfad ist nicht belegt.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze ist durch die Quelle belegt.",
+                "reference_frame": "Schutz von Klima und Ökosystemen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "rbb24-nachrichten"
+              ],
+              "condition": "Die genannten Anlagen müssten tatsächlich betroffen sein und es müsste zu einer relevanten Betriebsänderung kommen.",
+              "reference_space": "Anlagen mit Bezug zu Kohlekraftwerken und ihr Versorgungsraum",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Betriebsänderungen wirken sich auf fossile Erzeugung oder Ersatzversorgung aus.",
+              "source_support": "Die Quelle berichtet, dass Anlagen ausgewählt worden seien, die an Kohlekraftwerke angeschlossen sind.",
+              "limitations": "Keine Emissionsdaten, keine Betriebsdaten und keine belegte ökologische Folge.",
+              "first_order": "Mögliche Betriebsänderung an einer energiebezogenen Anlage.",
+              "second_order": "Mögliche Verschiebung zwischen Erzeugung, Ersatzversorgung und Sicherheitsbetrieb.",
+              "third_order": "Keine belastbare Grundlage für langfristige Umwelt- oder Transformationsfolgen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Emissionen, Brennstoffwechsel oder ökologische Schäden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Eingriffe an Anlagen mit Bezug zu Kohlekraftwerken könnten den Betrieb fossiler Erzeugung kurzfristig stören, ohne dass die ökologische Richtung feststeht.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Eingriffe an Anlagen mit Bezug zu Kohlekraftwerken könnten den Betrieb fossiler Erzeugung kurzfristig stören, ohne dass die ökologische Richtung feststeht.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine gemessene Kommunikations- oder Vertrauenswirkung. Sie trägt jedoch eine plausible Wissensgrenze: Offene Täter- und Motivfragen lassen keine belastbare Zuschreibung zu.",
+          "reviewed_source_ids": [
+            "rbb24-nachrichten"
+          ],
+          "rationale": "Der zentrale demokratische Risikopfad betrifft mögliche Verfestigung einer offenen Täter- und Motivzuschreibung. Eine klare Attribution kann dagegen korrigierend wirken; mangels unabhängiger Diskursdaten bleibt die Größenordnung niedrig bis begrenzt.",
+          "primary_paths": [
+            {
+              "label": "Eine prominente, aber offene Täter- und Motivzuordnung könnte Vertrauen in Ermittlungen und öffentliche Kommunikation belasten.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Verbindung von Sabotagevorwürfen, Energiepolitik und einer identifizierten Person kann vor Abschluss der Ermittlungen als fertige Schuldgeschichte gelesen werden.",
+              "recipients": [
+                "staat",
+                "haushalte",
+                "unternehmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein Kommunikationsrisiko ist plausibel, aber weder Reichweite noch Wirkung sind gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Sicherheits- und Energiefragen können breite Öffentlichkeit erreichen.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Sabotagevorwürfe an Stromanlagen besitzen hohe thematische Schärfe.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Wiederholte Ermittlungsupdates könnten die Debatte verlängern.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Frühe Zuschreibungen können sich kommunikativ verfestigen.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Vertrauen in Sicherheitskommunikation ist bei Krisenthemen empfindlich.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt öffentliche Korrekturfähigkeit, bleibt aber unbelegt.",
+                  "source_ids": [
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist möglich, aber nicht konkret beobachtet.",
+                "reference_frame": "rechtsstaatliche und evidenzgebundene öffentliche Kommunikation",
+                "source_ids": [],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "rbb24-nachrichten"
+              ],
+              "condition": "Die offene Zuordnung müsste öffentlich als gesichert verstanden oder wiederholt werden.",
+              "reference_space": "Öffentliche Sicherheitskommunikation und demokratische Meinungsbildung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung und prominente Personalisierung beeinflussen die Bewertung der Ermittlungen.",
+              "source_support": "Die Quelle stellt die Verfasserschaft und die Frage des Alleinhandelns als offen dar und nennt zugleich politische Inhalte der Schreiben.",
+              "limitations": "Keine Publikumsdaten, keine unabhängige Diskursanalyse und kein Kausalitätsnachweis.",
+              "first_order": "Erhöhte öffentliche Aufmerksamkeit für Sicherheits- und Energiefragen.",
+              "second_order": "Mögliche Verfestigung von Schuld- oder Motivannahmen trotz offener Ermittlungen.",
+              "third_order": "Bei wiederholten ungeklärten Fällen mögliche Belastung von Vertrauen und demokratischer Korrekturfähigkeit.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Vertrauen, Meinungsänderungen oder Diskursfolgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine prominente, aber offene Täter- und Motivzuordnung könnte Vertrauen in Ermittlungen und öffentliche Kommunikation belasten.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Eine prominente, aber offene Täter- und Motivzuordnung könnte Vertrauen in Ermittlungen und öffentliche Kommunikation belasten.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Kombination aus Sabotagevorwürfen, kritischer Infrastruktur und offener Täterzuordnung kann Sicherheits- und Schuldframes verstärken.",
+        "factual_core": "Die Polizei hält Bekennerschreiben für authentisch; ein 48-Jähriger wird gesucht, seine Verfasserschaft ist aber nicht abschließend geklärt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der Bericht schreibt der Polizei die Einschätzung der Authentizität zu.",
+            "Der Bericht nennt einen gesuchten 48-Jährigen und weitere potenzielle Ziele."
+          ],
+          "actor_claims": [
+            "In den Schreiben präsentiert sich der 48-Jährige als alleiniger Täter."
+          ],
+          "open": [
+            "Ob der Gesuchte die Schreiben verfasst hat, ob er allein handelte und welche Folgen ursächlich auf die Vorfälle zurückgehen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "rbb24-nachrichten",
+          "speaker": "Polizei und im Bericht genannte Akteure",
+          "original_term": "Sabotage",
+          "usage_type": "paraphrase",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Sabotage",
+          "origin_in_story": "rbb24-nachrichten",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Sabotage",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Mögliche Angriffe auf Stromanlagen werden als Sicherheitsproblem kritischer Infrastruktur gefasst.",
+          "implied_cause": "Gezielte Eingriffe in Anlagen; die konkrete Täterschaft bleibt offen.",
+          "implied_responsibility": "Keine abschließende Verantwortungszuschreibung möglich.",
+          "implied_threat": "Mögliche Störung der Stromversorgung und Belastung staatlicher Schutzaufgaben.",
+          "implied_solution_space": "Ermittlungen, Sicherung und Schutz kritischer Anlagen.",
+          "material_omissions": [
+            "Keine unabhängige Bestätigung des Berichts",
+            "Keine vollständigen Angaben zu Dauer und Umfang der Abschaltungen"
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Der Bericht nennt Kritik an fossilen Energieträgern als Inhalt der Schreiben; daraus folgt keine bestätigte politische Motivation.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "rbb24-nachrichten",
+              "claim_supported": "Der Bericht gibt an, dass die Schreiben Stimmung gegen fossile Energieträger machen sollten."
+            }
+          ],
+          "uncertainty": "Die politische Motivation und ihre Bedeutung für die Vorfälle sind nicht abschließend geklärt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatten über Versorgungssicherheit, kritische Infrastruktur und politische Gewalt",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die Verbindung von Energiepolitik und Sabotagevorwürfen könnte Lagerdeutungen verstärken.",
+          "trust_effect_potential": "Eine vorschnelle Täterzuschreibung könnte Vertrauen in Ermittlungen und Berichterstattung beeinträchtigen.",
+          "discourse_effect_potential": "Wiederholte Berichte könnten Sicherheitsmaßnahmen und politische Forderungen stärker in den Vordergrund rücken."
+        },
+        "impact_path": {
+          "first_order": "Berichterstattung kann die Wahrnehmung eines möglichen Angriffs auf kritische Infrastruktur erhöhen.",
+          "second_order": "Bei Wiederholung könnte sie Forderungen nach stärkerer Sicherung und härterer Sicherheitskommunikation verstärken.",
+          "third_order": "Bei unklarer Beweislage könnte eine dauerhafte Täter- oder Motivzuschreibung Vertrauen und politische Korrekturfähigkeit belasten."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Die Quelle berichtet von authentisch eingeschätzten Bekennerschreiben und einem gesuchten 48-Jährigen. Die Quelle berichtet von weiteren potenziellen Zielen und Abschaltungen in Kraftwerksblöcken.",
+          "what_is_inferred": "Die Kombination aus kritischer Infrastruktur und offener Zuschreibung besitzt ein mediales Sicherheits- und Polarisierungspotenzial.",
+          "what_is_open": "Eine unabhängige Quellenbestätigung und belastbare Publikums- oder Verhaltensdaten fehlen.",
+          "facts": [
+            "Die Quelle berichtet von authentisch eingeschätzten Bekennerschreiben und einem gesuchten 48-Jährigen.",
+            "Die Quelle berichtet von weiteren potenziellen Zielen und Abschaltungen in Kraftwerksblöcken."
+          ],
+          "observations": [
+            "Die Quelle stellt die Täterzuordnung als offen dar."
+          ],
+          "inferences": [
+            "Die Kombination aus kritischer Infrastruktur und offener Zuschreibung besitzt ein mediales Sicherheits- und Polarisierungspotenzial."
+          ],
+          "impact_potentials": [
+            "Mögliche Verschiebung der Debatte hin zu Schutz kritischer Infrastruktur und Versorgungssicherheit."
+          ],
+          "impact_risks": [
+            "Vorschnelle Verknüpfung von Energiepolitik, Motiv und Täterschaft."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Eine unabhängige Quellenbestätigung und belastbare Publikums- oder Verhaltensdaten fehlen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der Bericht handelt von möglichen Angriffen auf Stromanlagen. Die Polizei hält Bekennerschreiben für authentisch und sucht einen 48-Jährigen; zugleich ist offen, ob er die Schreiben verfasst hat und ob er allein handelte. Die Quelle berichtet außerdem von weiteren potenziellen Zielen und von Abschaltungen in Kraftwerksblöcken. Das macht den Fall für die Versorgungssicherheit relevant. Es ist aber nicht belegt, wie groß oder wie lange mögliche Störungen waren und welche Vorgänge genau zusammengehören. Auch eine politische Motivation bleibt eine offene Frage. Für die Berichterstattung ist deshalb wichtig, die Ermittlungsangaben klar zuzuschreiben und den Verdächtigen nicht als Täter zu bezeichnen. Eine Wirkung auf öffentliche Debatten ist möglich, aber nicht gemessen.",
+        "editorial_assessment": "Der Bericht handelt von möglichen Angriffen auf Stromanlagen. Die Polizei hält Bekennerschreiben für authentisch und sucht einen 48-Jährigen; zugleich ist offen, ob er die Schreiben verfasst hat und ob er allein handelte. Die Quelle berichtet außerdem von weiteren potenziellen Zielen und von Abschaltungen in Kraftwerksblöcken. Das macht den Fall für die Versorgungssicherheit relevant. Es ist aber nicht belegt, wie groß oder wie lange mögliche Störungen waren und welche Vorgänge genau zusammengehören. Auch eine politische Motivation bleibt eine offene Frage. Für die Berichterstattung ist deshalb wichtig, die Ermittlungsangaben klar zuzuschreiben und den Verdächtigen nicht als Täter zu bezeichnen. Eine Wirkung auf öffentliche Debatten ist möglich, aber nicht gemessen.",
+        "fact_first_alternative": "Die Polizei hält Bekennerschreiben zu möglichen Angriffen auf Stromanlagen für authentisch; ein 48-Jähriger wird gesucht, seine Verfasserschaft ist offen. Der Bericht nennt weitere Funde und Abschaltungen, belegt aber keine abschließende Täter- oder Motivzuordnung.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der Begriff Sabotage kann vor Abschluss der Ermittlungen eine feste Schuld- und Motivdeutung nahelegen.",
+            "Die Überschrift verbindet Verdacht und Person; die Attribution muss sichtbar bleiben.",
+            "Unsicherer Frame-Einstieg in title",
+            "Unsicherer Frame-Einstieg in summary"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Nach Angaben der Polizei: Sabotagevorwürfe an Stromanlagen und Fahndung nach einem 48-Jährigen",
+          "recommended_summary": "Die Polizei hält Bekennerschreiben zu Stromanlagen für authentisch und sucht einen 48-Jährigen. Seine Verfasserschaft bleibt offen; der Bericht nennt zudem Abschaltungen in Kraftwerksblöcken.",
+          "recommended_meta_description": "Polizei hält Bekennerschreiben zu Stromanlagen für authentisch; ein 48-Jähriger wird gesucht. Täterzuordnung und Folgen bleiben teilweise offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T00:52:33.847Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-04T18:11:14.000Z",
+      "last_updated": "2026-09-17T00:57:48.833Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-5fed0f90ee4fb60ffd0d",
+      "case_file": null,
+      "source_published_at": "2026-09-05T06:37:20.000Z",
+      "published_at": "2026-09-04T18:22:40.051Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Gesuchte tatsächlich Verfasser der Schreiben war und wie die Ermittlungen weiter eingeordnet werden",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsbehörden nennen gesicherte Zuordnung oder korrigieren sie",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f38c9a803352d269",
+          "announced_at": "2026-09-04T18:11:14.000Z",
+          "follow_up_date": "2026-09-11T18:22:40.051Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:37:20.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a826aa65db4e40de",
       "title_image": {
@@ -128858,7 +130047,43 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-745265b7cc9f4888cbad",
-      "case_file": null,
+      "case_file": {
+        "case_id": "case-820912314a3256",
+        "member_count": 3,
+        "publisher_count": 5,
+        "members": [
+          {
+            "story_id": "wt-1c2c187d0b858b7c",
+            "slug": "anschlage-auf-stromleitungen-21-sprengsatze-an-stromleitungen-entdeckt-und-entscharft-858b7c",
+            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
+            "summary": "In Sachsen sind mehr als 21 Sprengsätze an Hochspannungsleitungen entdeckt und entschärft worden. Die Polizei sucht einen 48-Jährigen und bittet weiter um Hinweise.",
+            "updated_at": "2026-09-07T22:08:26.896Z",
+            "published_at": "2026-09-07T22:08:26.896Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-6c26e428b894e714",
+            "slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+            "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+            "summary": "In Sachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden. Die Ermittlungen laufen weiter, weitere Hintergründe sind in den vorliegenden Texten offen.",
+            "updated_at": "2026-09-05T14:15:41.958Z",
+            "published_at": "2026-09-05T14:15:41.958Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "In Sachsen haben Ermittler Sprengvorrichtungen entdeckt, der Einsatz dauert an. Ein möglicher Zusammenhang zu Angriffen auf das Stromnetz in Brandenburg und NRW ist weiter offen.",
+            "updated_at": "2026-09-05T09:32:24.269Z",
+            "published_at": "2026-09-04T19:51:20.503Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
       "source_published_at": "2026-09-07T09:21:15.000Z",
       "published_at": "2026-09-07T22:08:26.896Z",
       "evidence_groups": {
@@ -134176,43 +135401,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-ae3d4b273922de048bb3",
-      "case_file": {
-        "case_id": "case-820912314a3256",
-        "member_count": 3,
-        "publisher_count": 6,
-        "members": [
-          {
-            "story_id": "wt-86ea1ddfd89beabf",
-            "slug": "sabotage-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-fahndung-mit-foto-n-9beabf",
-            "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
-            "summary": "In Sachsen wurden an Stromtrassen zwölf Sprengvorrichtungen entdeckt. Die Polizei fahndet per Foto nach einem Verdächtigen und prüft Zusammenhänge mit Fällen in anderen Ländern.",
-            "updated_at": "2026-09-06T05:34:49.981Z",
-            "published_at": "2026-09-06T05:34:49.981Z",
-            "kind": "Ermittlungsstand",
-            "current": true
-          },
-          {
-            "story_id": "wt-6c26e428b894e714",
-            "slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
-            "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-            "summary": "In Sachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden. Die Ermittlungen laufen weiter, weitere Hintergründe sind in den vorliegenden Texten offen.",
-            "updated_at": "2026-09-05T14:15:41.958Z",
-            "published_at": "2026-09-05T14:15:41.958Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-33e396f2be1a3a1f",
-            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-            "summary": "In Sachsen haben Ermittler Sprengvorrichtungen entdeckt, der Einsatz dauert an. Ein möglicher Zusammenhang zu Angriffen auf das Stromnetz in Brandenburg und NRW ist weiter offen.",
-            "updated_at": "2026-09-05T09:32:24.269Z",
-            "published_at": "2026-09-04T19:51:20.503Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          }
-        ]
-      },
+      "case_file": null,
       "source_published_at": "2026-09-06T05:18:36.000Z",
       "published_at": "2026-09-06T05:34:49.981Z",
       "evidence_groups": {
@@ -137170,91 +138359,6 @@
           "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
           "source_type": "media_rss",
           "published_at": "2026-09-04T17:51:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-03c6bacdda808696",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-24b72254775b0eec-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-6dfc694f9f6dbd8d-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-079b3a39f725e3c8-square.png",
-          "width": 1080,
-          "height": 1080
-        },
-        "background": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-ab3ac9ead7abff38-source.png"
-        }
-      },
-      "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
-      "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
-      "source_summary": "Die Quelle berichtet über Ermittlungen nach Sabotagevorwürfen an Umspannwerken in Brandenburg und Nordrhein-Westfalen. Gesucht wird ein 48-jähriger Mann aus Gevelsberg; in seinem Wohnhaus fanden Einsatzkräfte sprengstoffverdächtige Gegenstände, außerdem wurde sein Fahrzeug gestürmt. Nach Angaben der Minister werden zwei Bekennerschreiben als authentisch eingeschätzt, zugleich ist die abschließende Prüfung der Täterschaft noch offen.\n\nGenannt werden auch Anschläge in Jänschwalde und Bergheim, die laut Sicherheitsbehörden und Betreiber zu Abschaltungen in Kraftwerksblöcken führten, ohne dass die Stromversorgung beeinträchtigt oder gefährdet gewesen sei. In den Schreiben seien weitere mögliche Sabotageziele genannt worden; in Dormagen und Weisweiler seien danach Abschussvorrichtungen entdeckt worden. Die Ermittlungen laufen unter anderem wegen verfassungsfeindlicher Sabotage, in Brandenburg auch wegen Bildung einer Terrorvereinigung.",
-      "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
-      "detail_summary": "Gesichert ist zunächst, dass die Ermittlungen nach Sabotagevorwürfen an Umspannwerken weiterlaufen und sich die Polizei auf einen 48-jährigen Verdächtigen aus Gevelsberg konzentriert. In seinem Wohnhaus wurden sprengstoffverdächtige Gegenstände gefunden, zusätzlich wurde sein Fahrzeug gestürmt. Für die Nachricht relevant ist das wegen des betroffenen Systems: Stromnetzinfrastruktur kann bei Sabotage nicht nur lokal, sondern über Kraftwerksblöcke und Abschaltungen in Betrieb und Resilienz eingreifen. Als mögliche Folge kommen weitere Sicherheitsmaßnahmen, zusätzliche Ermittlungs- und Schutzkosten sowie ein erhöhtes Störungsrisiko für einzelne Anlagen in Betracht. Die Beleglage bleibt jedoch auf eine einzige journalistische Quelle begrenzt; die Täterschaft ist nach der Quelle nicht abschließend geklärt, daher bleiben Ursachen- und Wirkungsaussagen vorsichtig.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Schutz- und Folgekosten für ein systemrelevantes Versorgungsnetz.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "editorial_analysis": null,
-      "first_seen": "2026-09-04T18:11:14.000Z",
-      "last_updated": "2026-09-04T18:22:40.051Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-5fed0f90ee4fb60ffd0d",
-      "case_file": null,
-      "source_published_at": "2026-09-04T18:11:14.000Z",
-      "published_at": "2026-09-04T18:22:40.051Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Gesuchte tatsächlich Verfasser der Schreiben war und wie die Ermittlungen weiter eingeordnet werden",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Ermittlungsbehörden nennen gesicherte Zuordnung oder korrigieren sie",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-f38c9a803352d269",
-          "announced_at": "2026-09-04T18:11:14.000Z",
-          "follow_up_date": "2026-09-11T18:22:40.051Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:11:14.000Z",
           "primary_source": false
         }
       ]
