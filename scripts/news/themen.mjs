@@ -31,7 +31,13 @@ export const THEMEN_MUSTER = {
   klima: /klima|umwelt|energie|planet/,
   gesundheit: /gesundheit|medizin/,
   wissenschaft: /wissenschaft|forschung/,
-  international: /international|europa|geopolitik/,
+  // "Europaeische Union" traf das Muster nie: "europa" ist in "Europäische"
+  // nicht enthalten. Bei Meldungen fiel das nicht auf, weil ein Etikett
+  // einsprang - aber alle 46 Analysen (Meinung & Analyse, Nachgehoert,
+  // Nachgesehen) tragen ueberhaupt kein Etikett. Dort entscheidet allein
+  // Titel und Anriss, und dort fehlten "EU-Waldbrandsaison" und
+  // "EU-Genehmigung" im Ressort International.
+  international: /international|europa|europä|\beu\b|geopolitik/,
 };
 
 const kleinschrift = (teile) => teile.filter((teil) => typeof teil === 'string' && teil).join(' ').toLowerCase();

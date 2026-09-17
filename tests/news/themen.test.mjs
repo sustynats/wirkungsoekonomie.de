@@ -36,6 +36,13 @@ test('Kriegsmeldungen werden nicht zum Technikthema', () => {
   assert.equal(themenVon({ topic: ['Geopolitik'], title: 'Russische Drohne trifft Geheimdienst-Sitz in Kiew' }).includes('technik'), false);
 });
 
+test('die Europaeische Union gehoert zu International', () => {
+  for (const titel of ['Kanada soll assoziiertes EU-Mitglied werden', 'Die Europäische Union genehmigt den Kapazitätsmechanismus', 'Europa ordnet sich neu', 'Ein EU-Gipfel ohne Ergebnis']) {
+    assert.ok(themenVon({ topic: [], title: titel }).includes('international'), titel);
+  }
+  assert.equal(themenVon({ topic: [], title: 'Ein Landtag beschliesst den Etat' }).includes('international'), false);
+});
+
 test('Navigation und Lage lesen dasselbe Verzeichnis', () => {
   assert.equal(contentTopics, themenVon);
   assert.deepEqual(RESERVIERTE_THEMEN, ['Technologie', 'KI', 'Digitalisierung', 'Wissenschaft', 'Forschung', 'Infrastruktur', 'Bildung']);
