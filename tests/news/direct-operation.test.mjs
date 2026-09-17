@@ -776,3 +776,46 @@ test('fehlt Bewertung und Text, holt die eine Nachlieferung beides in einem Aufr
     JSON.stringify(result.analyses[0].transport_repairs));
   assert.deepEqual(assessmentIssues(result.analyses[0], stories[0]), []);
 });
+
+// 17.09.2026, Natalie: „Irgendwie kommen keine neuen Nachrichten." Es kamen
+// welche - aber vier der sechs neuesten waren dieselbe Nachricht (US-Kongress
+// beschliesst Russland-Sanktionen), zwei davon mit identischem Titel derselben
+// Quelle. existingStoryMatch verglich eine neue Meldung nur mit anderen
+// Meldungen desselben Laufs, nie mit dem veroeffentlichten Bestand. Vier
+// bezahlte Aufrufe aus einem Kontingent von drei je Stunde gingen in eine
+// einzige Nachricht.
+test('eine Meldung, die schon veroeffentlicht ist, kostet keinen zweiten Aufruf', async () => {
+  const { existingStoryMatch } = await import('../../scripts/news/lib.mjs');
+  const now = '2026-09-17T07:30:00.000Z';
+  const veroeffentlicht = {
+    story_id: 'wt-alt', published: true, listed: true, published_at: '2026-09-17T03:26:00.000Z',
+    last_updated: '2026-09-17T03:26:00.000Z',
+    title: 'Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket',
+    sources: [{ url: 'https://www.deutschlandfunk.de/sanktionen-100.html', publisher: 'Deutschlandfunk',
+      title: 'US-Repräsentantenhaus verabschiedet Sanktionspaket', summary: 'Das Repräsentantenhaus hat das Sanktionspaket beschlossen.',
+      published_at: '2026-09-17T03:20:00.000Z' }],
+  };
+  // Identischer Titel, andere Adresse: der Abgleich trifft sicher.
+  const identisch = { title: veroeffentlicht.title, summary: 'Das Repräsentantenhaus hat das Sanktionspaket beschlossen.',
+    url: 'https://www.deutschlandfunk.de/sanktionen-102.html', published_at: '2026-09-17T06:50:00.000Z' };
+  const treffer = existingStoryMatch(identisch, { story: veroeffentlicht, last_updated: veroeffentlicht.last_updated }, now);
+  assert.ok(treffer >= 0.95, `identische Dublette wird erkannt (${treffer.toFixed(2)})`);
+
+  // Eine andere Nachricht bleibt darunter und wird nicht zusammengefuehrt.
+  const andere = { title: 'Großbrand in Mannheimer Recyclinghof: Warnung aufgehoben', summary: 'Die Warnung für Mannheim ist aufgehoben.',
+    url: 'https://www.swr.de/mannheim-100.html', published_at: '2026-09-17T04:20:00.000Z' };
+  assert.ok(existingStoryMatch(andere, { story: veroeffentlicht, last_updated: veroeffentlicht.last_updated }, now) < 0.95,
+    'eine andere Nachricht wird nicht zusammengefuehrt');
+
+  // Der Lauf prueft gegen den veroeffentlichten Bestand und haelt die Schwelle hoch.
+  const fs = await import('node:fs');
+  const quelle = fs.readFileSync('scripts/news/run.mjs', 'utf8');
+  assert.match(quelle, /const publishedMatchable = \(storyStore\.stories \|\| \[\]\)\.filter\(\(story\) => story\.published && story\.listed !== false\)/);
+  assert.match(quelle, /existingStoryMatch\(item, \{ story, last_updated: story\.last_updated \|\| story\.published_at \}, now\) >= 0\.95/);
+  assert.match(quelle, /decision: 'duplicate_of_published_story'/, 'der Fall wird im Protokoll benannt');
+  assert.match(quelle, /report\.duplicates_of_published = duplicateOfPublished\.length/, 'und im Laufbericht gezaehlt');
+  // Fortschreibungen, Neubewertungen und Folgetermine bleiben unberuehrt.
+  const block = quelle.slice(quelle.indexOf('const duplicateOfPublished'), quelle.indexOf('const duplicateIds'));
+  assert.match(block, /candidate\.existing_story\?\.published \|\| candidate\.impact_reassessment \|\| candidate\.reassessment/);
+  assert.match(block, /candidate\.followup_due \|\| candidate\.deepening_due/);
+});
