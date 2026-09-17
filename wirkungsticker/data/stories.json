@@ -2,8 +2,1734 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T04:22:34.038Z",
+  "updated_at": "2026-09-17T05:37:37.121Z",
   "stories": [
+    {
+      "story_id": "wt-d1bafe5a495d34fb",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-10fbc3f97d13f8c7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-9333c95f629d6ebd-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-916b0de89cc21fb1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "usa-kongress-beschliesst-gesetz-fur-russland-sanktionen-5d34fb",
+      "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
+      "source_summary": "Der Deutschlandfunk berichtet, dass das US-Repräsentantenhaus ein umfassendes Sanktionspaket gegen Russland angenommen hat. Der Gesetzentwurf erhielt 262 Stimmen gegenüber 159 Gegenstimmen und soll an US-Präsident Trump zur Unterzeichnung weitergeleitet werden. Der Senat hatte dem Vorhaben bereits im vergangenen Monat zugestimmt.\n\nVorgesehen sind Maßnahmen gegen russische Amtsträger, Banken und die russische Schattenflotte. Dazu kommen Einreiseverbote, das Einfrieren von Vermögen sowie mögliche Zollaufschläge von bis zu 100 Prozent auf Waren aus wichtigen Abnehmerländern russischer Energie.\n\nDer Bericht beschreibt das Vorhaben als Druckmittel gegen Russlands Energieexporte und als Unterstützung für die Ukraine. Offen bleiben die Unterzeichnung, konkrete Ausnahmen, Fristen, die tatsächliche Anwendung der Zollbefugnisse und die Folgen für Handel, Energieversorgung und internationale Beziehungen.",
+      "summary": "Das US-Repräsentantenhaus hat laut Deutschlandfunk ein Sanktionspaket gegen Russland angenommen; die Unterzeichnung und Umsetzung sind offen. Vorgesehen sind Maßnahmen gegen russische Akteure, Banken und Energieexporte sowie mögliche Zollaufschläge gegen wichtige Abnehmerländer.",
+      "detail_summary": "Laut Deutschlandfunk nahm das US-Repräsentantenhaus ein Sanktionspaket gegen Russland mit 262 zu 159 Stimmen an; der Gesetzentwurf soll an US-Präsident Trump weitergeleitet werden. Vorgesehen sind Maßnahmen gegen russische Amtsträger, Banken und die Schattenflotte sowie mögliche Zollaufschläge von bis zu 100 Prozent auf Produkte aus wichtigen Abnehmerländern russischer Energie. Der Senat hatte bereits im vergangenen Monat zugestimmt. Politisch relevant ist damit ein möglicher Wechsel von angekündigtem Druck zu verbindlicheren Maßnahmen, sofern der Präsident unterzeichnet und Behörden sie anwenden. Für Menschen könnte der Druck auf die Kriegsfinanzierung relevant sein, zugleich könnten Handels- und Energieverlagerungen neue Belastungen erzeugen. Umwelt- und Demokratiefolgen bleiben wegen fehlender Umsetzungsdaten offen.",
+      "why_relevant": "Der Vorgang kann Regeln für Finanz-, Energie- und Handelsbeziehungen verändern und betrifft damit Kriegsfinanzierung, internationale Märkte sowie den Handlungsspielraum der US-Regierung.",
+      "topic": [
+        "Geopolitik",
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Annahme eines US-Gesetzentwurfs mit Russland-Sanktionen durch das Repräsentantenhaus und bevorstehende Weiterleitung an den Präsidenten",
+        "evaluation_target": {
+          "label": "Sanktionspaket gegen Russland",
+          "type": "proposal"
+        },
+        "baseline": "Vor der möglichen Unterzeichnung gelten die im Bericht beschriebenen zusätzlichen Maßnahmen noch nicht als umgesetzt.",
+        "counterfactual": "Ohne Unterzeichnung und Umsetzung blieben die beschriebenen zusätzlichen Sanktionen und Zollbefugnisse aus diesem Vorhaben zunächst ohne neue rechtliche Wirkung.",
+        "reference_frame": [
+          "wirtschaftlicher Druck auf Kriegsfinanzierung",
+          "Schutz vor unbeabsichtigten Handels- und Energieverlagerungen",
+          "demokratische Kontrolle exekutiver Sanktionsbefugnisse"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Das Paket könnte Finanzierungsquellen des Krieges erschweren, aber über Handels- und Energieverlagerungen auch Unternehmen, Beschäftigte und Verbraucher in betroffenen Ländern belasten. Die Verteilung dieser möglichen Folgen ist offen.",
+            "planet": "Eine mögliche Verringerung russischer Energieexporte könnte fossile Handelsströme verändern. Der Bericht belegt weder eine Emissionsänderung noch eine ökologische Folge; Ausweichhandel und andere Lieferketten bleiben möglich.",
+            "democracy": "Die Ausweitung möglicher Zollbefugnisse könnte den Handlungsspielraum der Exekutive vergrößern. Zugleich bleibt parlamentarische Kontrolle möglich; Umfang und Grenzen der Befugnisse sind im Beleg nicht vollständig beschrieben."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Bei Unterzeichnung könnten zusätzliche finanzielle, personelle und handelspolitische Beschränkungen für Russland gelten.",
+          "second_order": "Reaktionen betroffener Staaten könnten Handelswege, Energiepreise, Unternehmensentscheidungen und politische Beziehungen verändern.",
+          "third_order": "Bei dauerhafter Anwendung könnte sich die internationale Sanktionsarchitektur verschieben; Richtung und Stärke sind wegen fehlender Umsetzungsdaten offen.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Der Bericht belegt keine Unterzeichnung und keinen Eintritt der beschriebenen Folgen.",
+            "Kritiker bezweifeln, dass das Gesetz zwingend neue Sanktionen gegen Russland vorschreibt.",
+            "Ausweichhandel und Gegenmaßnahmen könnten den wirtschaftlichen Druck begrenzen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Herkunft vor. Die zwei Berichte stammen vom Deutschlandfunk und sind keine unabhängige Bestätigung.",
+          "institutional_status": "Der Gesetzentwurf wurde laut Quelle vom Repräsentantenhaus angenommen und soll an den Präsidenten weitergeleitet werden; ein Inkrafttreten ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen nennen mögliche Belastungs- und Entlastungsmechanismen, liefern aber keine Daten zu tatsächlichen Preisen, Einkommen, Versorgung oder Kriegsfinanzierung.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein positiver Pfad über erschwerte Kriegsfinanzierung steht einem möglichen negativen Pfad über Handels-, Energie- und Verteilungseffekte gegenüber. Beide Pfade sind materiell, aber nur schwach belegt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Erschwerung russischer Kriegsfinanzierung",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Finanzielle und handelspolitische Beschränkungen könnten Einnahmen und Zugänge russischer Akteure begrenzen.",
+                "recipients": [
+                  "Menschen in der Ukraine",
+                  "russische Bevölkerung",
+                  "internationale Unternehmen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Reichweite könnte über Banken, Energie und Drittstaaten groß sein, die tatsächliche Umsetzung ist aber offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Banken, Amtsträger und Energiehandel könnten mehrere Länder betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ein Teil der Maßnahmen könnte Finanzierungs- und Handelszugänge spürbar erschweren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Sanktionen könnten bei Umsetzung über längere Zeit gelten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Handels- und Finanzbeziehungen könnten grundsätzlich wieder angepasst werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Kriegsbetroffene und stark abhängige Marktakteure wären besonders verletzlich.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad verbindet Finanz-, Energie- und Sicherheitsbeziehungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein konkreter Schutzgrenzwert für Menschen ist nicht belegt; der Pfad bleibt bedingt.",
+                  "reference_frame": "Schutz von Zivilbevölkerung und Versorgung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Unterzeichnung, konkrete Anwendung und begrenzter Ausweichhandel wären erforderlich.",
+                "reference_space": "Russland, Ukraine und betroffene internationale Finanz- und Energiemärkte",
+                "time_horizon": "mittel- bis langfristig nach möglicher Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die vorgesehenen Maßnahmen werden tatsächlich angewandt und erreichen die genannten Akteure.",
+                "source_support": "Die Quelle nennt Zielgruppen, Energieexporte und das Ziel erhöhten wirtschaftlichen Drucks, belegt aber keine eingetretene Wirkung.",
+                "limitations": "Keine Daten zu Einnahmen, Versorgung, Preisen oder Kriegsverlauf.",
+                "first_order": "Zugänge zu Finanz- und Handelskanälen könnten erschwert werden.",
+                "second_order": "Betroffene Akteure könnten Ausweichwege oder neue Lieferbeziehungen suchen.",
+                "third_order": "Internationale Wirtschafts- und Sicherheitsbeziehungen könnten sich dauerhaft neu ordnen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Messdaten zur tatsächlichen humanitären oder wirtschaftlichen Wirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Mögliche Belastungen durch Handels- und Energieverlagerungen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Zollaufschläge und Gegenreaktionen könnten Kosten, Lieferwege und wirtschaftliche Risiken verlagern.",
+                "recipients": [
+                  "Unternehmen in betroffenen Ländern",
+                  "Verbraucher",
+                  "Beschäftigte im Energie- und Handelssektor"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Quelle nennt mehrere potenziell betroffene Länder, aber keine Preise, Mengen oder konkreten Gegenmaßnahmen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mögliche Zollmaßnahmen könnten Handelsbeziehungen mehrerer Länder erfassen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Zollaufschläge könnten einzelne Lieferketten deutlich verteuern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer möglicher Belastungen hängt von politischen Reaktionen ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Lieferketten können sich anpassen, aber Umstellungen können nachwirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Abhängige Unternehmen und Haushalte könnten Anpassungskosten stärker tragen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad kann Handel, Energieversorgung und internationale Beziehungen koppeln.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schwelle für Versorgungsschäden ist nicht belegt.",
+                  "reference_frame": "bezahlbare und verlässliche Versorgung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Zollaufschläge werden angewandt und nicht durch alternative Lieferungen ausgeglichen.",
+                "reference_space": "China, Indien, Russland und verbundene Handelsmärkte",
+                "time_horizon": "kurz- bis mittelfristig nach Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Betroffene Staaten und Unternehmen können nicht vollständig ausweichen.",
+                "source_support": "Die Quelle belegt vorgesehene Zollaufschläge und mögliche betroffene Abnehmerländer, nicht deren Folgen.",
+                "limitations": "Keine Daten zu Liefermengen, Preisen, Beschäftigung oder Verteilung.",
+                "first_order": "Importe und Handelskosten könnten sich verändern.",
+                "second_order": "Unternehmen könnten Lieferanten, Preise oder Absatzmärkte anpassen.",
+                "third_order": "Handelsblöcke und Abhängigkeiten könnten sich verfestigen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Preis-, Versorgungs- oder Verteilungsdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Schutzgewinn durch erschwerte Kriegsfinanzierung und mögliche Belastungen durch Handels- und Energieverlagerungen sind materiell vergleichbar; die Quellen erlauben keine Dominanzentscheidung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Mögliche Erschwerung russischer Kriegsfinanzierung",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Erschwerung russischer Kriegsfinanzierung",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt Druck auf russische Energieexporte, enthält aber keine Emissions-, Förder-, Transport- oder Verlagerungsdaten.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein möglicher Rückgang fossiler Exporte könnte Umwelt- und Klimabelastungen mindern, während Ausweichhandel oder andere Lieferketten den Effekt begrenzen oder verlagern könnten.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verringerung russischer fossiler Exportströme",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Sanktionen könnten Absatz und Finanzierung russischer Öl- und Gasexporte erschweren.",
+                "recipients": [
+                  "Ökosysteme in Förder- und Transportregionen",
+                  "globale Klimasysteme"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Mechanismus ist aus dem beschriebenen Ziel ableitbar, aber Mengen und tatsächliche Substitution sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte internationale Energieflüsse betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine mögliche Dämpfung der Exportströme wäre in ihrer Stärke unklar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hinge von Sanktionen, Ausweichhandel und Nachfrage ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Energiehandelsströme können grundsätzlich umgeleitet werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Förder- und Transportregionen könnten unterschiedlich betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad verbindet Energiehandel mit möglichen Umweltfolgen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird nicht beschrieben.",
+                  "reference_frame": "Minderung fossiler Umwelt- und Klimabelastungen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Maßnahmen reduzieren tatsächlich Förderung, Export oder Verbrauch statt nur Lieferwege zu verschieben.",
+                "reference_space": "russische Energieexporte und globale Energiemärkte",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es kommt zu einer realen Verringerung fossiler Mengen.",
+                "source_support": "Die Quelle nennt die Verringerung von Einnahmen aus Öl- und Gasexporten als Ziel, nicht eine ökologische Wirkung.",
+                "limitations": "Keine Daten zu Emissionen, Fördermengen oder Substitution.",
+                "first_order": "Energieexporte könnten sich verändern.",
+                "second_order": "Andere Lieferanten oder Transportwege könnten an Bedeutung gewinnen.",
+                "third_order": "Die globale fossile Infrastruktur könnte sich verlagern statt schrumpfen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Umwelt- oder Energiedaten zur Prüfung eines Nettoeffekts.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Mögliche Verlagerung fossiler Handelswege",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Ausweichhandel und neue Lieferketten könnten Umweltbelastungen räumlich verlagern.",
+                "recipients": [
+                  "Förder- und Transitregionen",
+                  "Ökosysteme entlang neuer Lieferketten"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Eine Verlagerung ist plausibel, aber im Quellenbestand nicht beobachtet oder quantifiziert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Neue Handelswege könnten mehrere Förder- und Transitregionen berühren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Intensität möglicher zusätzlicher Belastungen ist unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Verlagerungen könnten über längere Zeit bestehen, falls sie wirtschaftlich tragfähig sind.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Handelswege können sich bei politischen Änderungen erneut verändern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökologisch belastete Regionen könnten besonders betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad verbindet Sanktionen, Energiehandel und Umweltlasten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Bericht nennt keine konkrete Umweltgrenze oder eingetretene Schädigung.",
+                  "reference_frame": "Schutz von Ökosystemen und Klimasystem",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Betroffene Marktakteure weichen auf andere fossile Lieferketten aus.",
+                "reference_space": "globale Energie- und Transitmärkte",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Nachfrage nach fossilen Energieträgern bleibt bestehen.",
+                "source_support": "Die Quelle beschreibt Druck auf russische Energieexporte und mögliche betroffene Abnehmer, nicht ökologische Verlagerungen.",
+                "limitations": "Keine Daten zu Ersatzlieferungen, Emissionen oder Ökosystemen.",
+                "first_order": "Lieferanten und Transportwege könnten wechseln.",
+                "second_order": "Umweltlasten könnten zwischen Regionen verschoben werden.",
+                "third_order": "Neue fossile Abhängigkeiten könnten längerfristige Lock-ins erzeugen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zu Substitution, Emissionen oder Umweltbelastungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Mögliche Minderungen und Verlagerungen sind beide denkbar; ohne Energie- und Emissionsdaten bleibt die Richtung offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Mögliche Verringerung russischer fossiler Exportströme",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Verringerung russischer fossiler Exportströme",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt Kritik an erweiterten Zollbefugnissen und Ermessensspielräumen, aber keine spätere Anwendung oder institutionelle Folge.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Das parlamentarische Verfahren kann demokratische Kontrolle sichtbar machen, zugleich könnten weitreichende exekutive Befugnisse die Entscheidungsmacht verschieben. Beide Pfade sind quellengebunden, aber nicht als Wirkung beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Ausweitung exekutiver Zollbefugnisse",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn das Gesetz Ermessensspielräume erweitert, könnten handelspolitische Entscheidungen stärker beim Präsidenten liegen.",
+                "recipients": [
+                  "US-Kongress",
+                  "US-Regierung",
+                  "betroffene Staaten und Unternehmen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Quelle berichtet ausdrücklich über Kritik an erweiterten Befugnissen, beschreibt deren konkrete Reichweite aber nicht vollständig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Zollentscheidungen könnten internationale Akteure und Märkte erfassen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Mehr Ermessensspielraum könnte die parlamentarische Einflussnahme spürbar verändern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Gesetzliche Befugnisse könnten über längere Zeit genutzt werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Parlamentarische Änderungen oder gerichtliche Kontrolle könnten gegensteuern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Abhängige Unternehmen und kleinere Handelspartner könnten weniger Einfluss auf Entscheidungen haben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad betrifft Machtverteilung, Handelspolitik und internationale Beziehungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung demokratischer Schutzrechte ist nicht belegt.",
+                  "reference_frame": "parlamentarische Kontrolle exekutiver Wirtschaftsmacht",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die kritisierten Befugnisse werden tatsächlich eingeräumt und ohne wirksame Kontrolle genutzt.",
+                "reference_space": "US-Institutionen und internationale Handelspartner",
+                "time_horizon": "mittel- bis langfristig nach Inkrafttreten",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die im Bericht beschriebene Kritik trifft die tatsächliche Rechtswirkung des Gesetzes.",
+                "source_support": "Die Quelle belegt Kritik an einer möglichen Ausweitung und an Ermessensspielräumen, nicht deren tatsächliche Nutzung.",
+                "limitations": "Vollständiger Gesetzestext und Kontrollmechanismen liegen nicht vor.",
+                "first_order": "Entscheidungen könnten stärker exekutiv getroffen werden.",
+                "second_order": "Kongress und Handelspartner könnten mit Kontrolle oder Gegenmaßnahmen reagieren.",
+                "third_order": "Die institutionelle Balance zwischen Gesetzgebung und Exekutive könnte sich verschieben.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Primärquelle zum Gesetzestext oder zu späteren Vollzugsentscheidungen im Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Parlamentarische Beratung als Kontrollpfad",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Abstimmung, Senatszustimmung und öffentliche Kritik könnten parlamentarische Rechenschaft ermöglichen.",
+                "recipients": [
+                  "US-Parlament",
+                  "Öffentlichkeit",
+                  "betroffene internationale Partner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Das Verfahren ist belegt, seine tatsächliche Kontrollwirkung bleibt wegen fehlender Folgeinformationen offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Entscheidung betrifft nationale Institutionen und internationale Partner.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Abstimmung und Kritik schaffen sichtbare, aber begrenzte Kontrollmöglichkeiten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Parlamentarische Kontrolle kann über Beratung und spätere Überwachung fortwirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Institutionelle Entscheidungen können grundsätzlich geändert oder korrigiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Gruppen haben möglicherweise ungleichen Zugang zu politischer Einflussnahme.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Gesetzgebung und Rechenschaft, ohne eine institutionelle Änderung zu belegen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ausreichende demokratische Schutzgrenze oder ihr Überschreiten ist nicht belegt.",
+                  "reference_frame": "öffentliche und parlamentarische Rechenschaft",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Parlamentarische Debatte und spätere Kontrolle bleiben wirksam.",
+                "reference_space": "US-Kongress und Öffentlichkeit",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichtete Abstimmung und Kritik führen zu tatsächlicher Rechenschaft.",
+                "source_support": "Die Quelle belegt die Abstimmung und Kritik einzelner Demokraten, nicht deren spätere Kontrollwirkung.",
+                "limitations": "Keine Daten zu Transparenz, Kontrolle oder institutioneller Reaktion.",
+                "first_order": "Die Befugnisse werden parlamentarisch beraten und politisch umkämpft.",
+                "second_order": "Kritik könnte Änderungen, Einschränkungen oder Gegenkontrolle auslösen.",
+                "third_order": "Das Verfahren könnte Präzedenzwirkung für künftige Sanktionsgesetze haben.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zur tatsächlichen parlamentarischen Kontrolle nach der Abstimmung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Die mögliche Ausweitung exekutiver Befugnisse und der parlamentarische Kontrollpfad sind beide materiell; ihre tatsächliche Stärke bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Mögliche Ausweitung exekutiver Zollbefugnisse",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Ausweitung exekutiver Zollbefugnisse",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T05:42:57.325Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der Bericht belegt die Annahme des Gesetzentwurfs, die vorgesehenen Sanktions- und Zollmaßnahmen sowie Kritik an erweiterten Zollbefugnissen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen nennen mögliche Belastungs- und Entlastungsmechanismen, liefern aber keine Daten zu tatsächlichen Preisen, Einkommen, Versorgung oder Kriegsfinanzierung.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein positiver Pfad über erschwerte Kriegsfinanzierung steht einem möglichen negativen Pfad über Handels-, Energie- und Verteilungseffekte gegenüber. Beide Pfade sind materiell, aber nur schwach belegt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Erschwerung russischer Kriegsfinanzierung",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Finanzielle und handelspolitische Beschränkungen könnten Einnahmen und Zugänge russischer Akteure begrenzen.",
+              "recipients": [
+                "Menschen in der Ukraine",
+                "russische Bevölkerung",
+                "internationale Unternehmen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Reichweite könnte über Banken, Energie und Drittstaaten groß sein, die tatsächliche Umsetzung ist aber offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Banken, Amtsträger und Energiehandel könnten mehrere Länder betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ein Teil der Maßnahmen könnte Finanzierungs- und Handelszugänge spürbar erschweren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Sanktionen könnten bei Umsetzung über längere Zeit gelten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Handels- und Finanzbeziehungen könnten grundsätzlich wieder angepasst werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Kriegsbetroffene und stark abhängige Marktakteure wären besonders verletzlich.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad verbindet Finanz-, Energie- und Sicherheitsbeziehungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein konkreter Schutzgrenzwert für Menschen ist nicht belegt; der Pfad bleibt bedingt.",
+                "reference_frame": "Schutz von Zivilbevölkerung und Versorgung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Unterzeichnung, konkrete Anwendung und begrenzter Ausweichhandel wären erforderlich.",
+              "reference_space": "Russland, Ukraine und betroffene internationale Finanz- und Energiemärkte",
+              "time_horizon": "mittel- bis langfristig nach möglicher Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die vorgesehenen Maßnahmen werden tatsächlich angewandt und erreichen die genannten Akteure.",
+              "source_support": "Die Quelle nennt Zielgruppen, Energieexporte und das Ziel erhöhten wirtschaftlichen Drucks, belegt aber keine eingetretene Wirkung.",
+              "limitations": "Keine Daten zu Einnahmen, Versorgung, Preisen oder Kriegsverlauf.",
+              "first_order": "Zugänge zu Finanz- und Handelskanälen könnten erschwert werden.",
+              "second_order": "Betroffene Akteure könnten Ausweichwege oder neue Lieferbeziehungen suchen.",
+              "third_order": "Internationale Wirtschafts- und Sicherheitsbeziehungen könnten sich dauerhaft neu ordnen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Messdaten zur tatsächlichen humanitären oder wirtschaftlichen Wirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Mögliche Belastungen durch Handels- und Energieverlagerungen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Zollaufschläge und Gegenreaktionen könnten Kosten, Lieferwege und wirtschaftliche Risiken verlagern.",
+              "recipients": [
+                "Unternehmen in betroffenen Ländern",
+                "Verbraucher",
+                "Beschäftigte im Energie- und Handelssektor"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Quelle nennt mehrere potenziell betroffene Länder, aber keine Preise, Mengen oder konkreten Gegenmaßnahmen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mögliche Zollmaßnahmen könnten Handelsbeziehungen mehrerer Länder erfassen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Zollaufschläge könnten einzelne Lieferketten deutlich verteuern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer möglicher Belastungen hängt von politischen Reaktionen ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Lieferketten können sich anpassen, aber Umstellungen können nachwirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Abhängige Unternehmen und Haushalte könnten Anpassungskosten stärker tragen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad kann Handel, Energieversorgung und internationale Beziehungen koppeln.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schwelle für Versorgungsschäden ist nicht belegt.",
+                "reference_frame": "bezahlbare und verlässliche Versorgung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Zollaufschläge werden angewandt und nicht durch alternative Lieferungen ausgeglichen.",
+              "reference_space": "China, Indien, Russland und verbundene Handelsmärkte",
+              "time_horizon": "kurz- bis mittelfristig nach Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Betroffene Staaten und Unternehmen können nicht vollständig ausweichen.",
+              "source_support": "Die Quelle belegt vorgesehene Zollaufschläge und mögliche betroffene Abnehmerländer, nicht deren Folgen.",
+              "limitations": "Keine Daten zu Liefermengen, Preisen, Beschäftigung oder Verteilung.",
+              "first_order": "Importe und Handelskosten könnten sich verändern.",
+              "second_order": "Unternehmen könnten Lieferanten, Preise oder Absatzmärkte anpassen.",
+              "third_order": "Handelsblöcke und Abhängigkeiten könnten sich verfestigen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Preis-, Versorgungs- oder Verteilungsdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Schutzgewinn durch erschwerte Kriegsfinanzierung und mögliche Belastungen durch Handels- und Energieverlagerungen sind materiell vergleichbar; die Quellen erlauben keine Dominanzentscheidung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Erschwerung russischer Kriegsfinanzierung",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Mögliche Erschwerung russischer Kriegsfinanzierung",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt Druck auf russische Energieexporte, enthält aber keine Emissions-, Förder-, Transport- oder Verlagerungsdaten.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein möglicher Rückgang fossiler Exporte könnte Umwelt- und Klimabelastungen mindern, während Ausweichhandel oder andere Lieferketten den Effekt begrenzen oder verlagern könnten.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verringerung russischer fossiler Exportströme",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Sanktionen könnten Absatz und Finanzierung russischer Öl- und Gasexporte erschweren.",
+              "recipients": [
+                "Ökosysteme in Förder- und Transportregionen",
+                "globale Klimasysteme"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Mechanismus ist aus dem beschriebenen Ziel ableitbar, aber Mengen und tatsächliche Substitution sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte internationale Energieflüsse betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine mögliche Dämpfung der Exportströme wäre in ihrer Stärke unklar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hinge von Sanktionen, Ausweichhandel und Nachfrage ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Energiehandelsströme können grundsätzlich umgeleitet werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Förder- und Transportregionen könnten unterschiedlich betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad verbindet Energiehandel mit möglichen Umweltfolgen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird nicht beschrieben.",
+                "reference_frame": "Minderung fossiler Umwelt- und Klimabelastungen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Maßnahmen reduzieren tatsächlich Förderung, Export oder Verbrauch statt nur Lieferwege zu verschieben.",
+              "reference_space": "russische Energieexporte und globale Energiemärkte",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es kommt zu einer realen Verringerung fossiler Mengen.",
+              "source_support": "Die Quelle nennt die Verringerung von Einnahmen aus Öl- und Gasexporten als Ziel, nicht eine ökologische Wirkung.",
+              "limitations": "Keine Daten zu Emissionen, Fördermengen oder Substitution.",
+              "first_order": "Energieexporte könnten sich verändern.",
+              "second_order": "Andere Lieferanten oder Transportwege könnten an Bedeutung gewinnen.",
+              "third_order": "Die globale fossile Infrastruktur könnte sich verlagern statt schrumpfen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Umwelt- oder Energiedaten zur Prüfung eines Nettoeffekts.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Mögliche Verlagerung fossiler Handelswege",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Ausweichhandel und neue Lieferketten könnten Umweltbelastungen räumlich verlagern.",
+              "recipients": [
+                "Förder- und Transitregionen",
+                "Ökosysteme entlang neuer Lieferketten"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Eine Verlagerung ist plausibel, aber im Quellenbestand nicht beobachtet oder quantifiziert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Neue Handelswege könnten mehrere Förder- und Transitregionen berühren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Intensität möglicher zusätzlicher Belastungen ist unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Verlagerungen könnten über längere Zeit bestehen, falls sie wirtschaftlich tragfähig sind.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Handelswege können sich bei politischen Änderungen erneut verändern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökologisch belastete Regionen könnten besonders betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad verbindet Sanktionen, Energiehandel und Umweltlasten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Bericht nennt keine konkrete Umweltgrenze oder eingetretene Schädigung.",
+                "reference_frame": "Schutz von Ökosystemen und Klimasystem",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Betroffene Marktakteure weichen auf andere fossile Lieferketten aus.",
+              "reference_space": "globale Energie- und Transitmärkte",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Nachfrage nach fossilen Energieträgern bleibt bestehen.",
+              "source_support": "Die Quelle beschreibt Druck auf russische Energieexporte und mögliche betroffene Abnehmer, nicht ökologische Verlagerungen.",
+              "limitations": "Keine Daten zu Ersatzlieferungen, Emissionen oder Ökosystemen.",
+              "first_order": "Lieferanten und Transportwege könnten wechseln.",
+              "second_order": "Umweltlasten könnten zwischen Regionen verschoben werden.",
+              "third_order": "Neue fossile Abhängigkeiten könnten längerfristige Lock-ins erzeugen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zu Substitution, Emissionen oder Umweltbelastungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Mögliche Minderungen und Verlagerungen sind beide denkbar; ohne Energie- und Emissionsdaten bleibt die Richtung offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Verringerung russischer fossiler Exportströme",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Mögliche Verringerung russischer fossiler Exportströme",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt Kritik an erweiterten Zollbefugnissen und Ermessensspielräumen, aber keine spätere Anwendung oder institutionelle Folge.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Das parlamentarische Verfahren kann demokratische Kontrolle sichtbar machen, zugleich könnten weitreichende exekutive Befugnisse die Entscheidungsmacht verschieben. Beide Pfade sind quellengebunden, aber nicht als Wirkung beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Ausweitung exekutiver Zollbefugnisse",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn das Gesetz Ermessensspielräume erweitert, könnten handelspolitische Entscheidungen stärker beim Präsidenten liegen.",
+              "recipients": [
+                "US-Kongress",
+                "US-Regierung",
+                "betroffene Staaten und Unternehmen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Quelle berichtet ausdrücklich über Kritik an erweiterten Befugnissen, beschreibt deren konkrete Reichweite aber nicht vollständig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Zollentscheidungen könnten internationale Akteure und Märkte erfassen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Mehr Ermessensspielraum könnte die parlamentarische Einflussnahme spürbar verändern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Gesetzliche Befugnisse könnten über längere Zeit genutzt werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Parlamentarische Änderungen oder gerichtliche Kontrolle könnten gegensteuern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Abhängige Unternehmen und kleinere Handelspartner könnten weniger Einfluss auf Entscheidungen haben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad betrifft Machtverteilung, Handelspolitik und internationale Beziehungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung demokratischer Schutzrechte ist nicht belegt.",
+                "reference_frame": "parlamentarische Kontrolle exekutiver Wirtschaftsmacht",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die kritisierten Befugnisse werden tatsächlich eingeräumt und ohne wirksame Kontrolle genutzt.",
+              "reference_space": "US-Institutionen und internationale Handelspartner",
+              "time_horizon": "mittel- bis langfristig nach Inkrafttreten",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die im Bericht beschriebene Kritik trifft die tatsächliche Rechtswirkung des Gesetzes.",
+              "source_support": "Die Quelle belegt Kritik an einer möglichen Ausweitung und an Ermessensspielräumen, nicht deren tatsächliche Nutzung.",
+              "limitations": "Vollständiger Gesetzestext und Kontrollmechanismen liegen nicht vor.",
+              "first_order": "Entscheidungen könnten stärker exekutiv getroffen werden.",
+              "second_order": "Kongress und Handelspartner könnten mit Kontrolle oder Gegenmaßnahmen reagieren.",
+              "third_order": "Die institutionelle Balance zwischen Gesetzgebung und Exekutive könnte sich verschieben.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Primärquelle zum Gesetzestext oder zu späteren Vollzugsentscheidungen im Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Parlamentarische Beratung als Kontrollpfad",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Abstimmung, Senatszustimmung und öffentliche Kritik könnten parlamentarische Rechenschaft ermöglichen.",
+              "recipients": [
+                "US-Parlament",
+                "Öffentlichkeit",
+                "betroffene internationale Partner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Das Verfahren ist belegt, seine tatsächliche Kontrollwirkung bleibt wegen fehlender Folgeinformationen offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Entscheidung betrifft nationale Institutionen und internationale Partner.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Abstimmung und Kritik schaffen sichtbare, aber begrenzte Kontrollmöglichkeiten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Parlamentarische Kontrolle kann über Beratung und spätere Überwachung fortwirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Institutionelle Entscheidungen können grundsätzlich geändert oder korrigiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Gruppen haben möglicherweise ungleichen Zugang zu politischer Einflussnahme.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Gesetzgebung und Rechenschaft, ohne eine institutionelle Änderung zu belegen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ausreichende demokratische Schutzgrenze oder ihr Überschreiten ist nicht belegt.",
+                "reference_frame": "öffentliche und parlamentarische Rechenschaft",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Parlamentarische Debatte und spätere Kontrolle bleiben wirksam.",
+              "reference_space": "US-Kongress und Öffentlichkeit",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichtete Abstimmung und Kritik führen zu tatsächlicher Rechenschaft.",
+              "source_support": "Die Quelle belegt die Abstimmung und Kritik einzelner Demokraten, nicht deren spätere Kontrollwirkung.",
+              "limitations": "Keine Daten zu Transparenz, Kontrolle oder institutioneller Reaktion.",
+              "first_order": "Die Befugnisse werden parlamentarisch beraten und politisch umkämpft.",
+              "second_order": "Kritik könnte Änderungen, Einschränkungen oder Gegenkontrolle auslösen.",
+              "third_order": "Das Verfahren könnte Präzedenzwirkung für künftige Sanktionsgesetze haben.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zur tatsächlichen parlamentarischen Kontrolle nach der Abstimmung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Die mögliche Ausweitung exekutiver Befugnisse und der parlamentarische Kontrollpfad sind beide materiell; ihre tatsächliche Stärke bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Ausweitung exekutiver Zollbefugnisse",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Mögliche Ausweitung exekutiver Zollbefugnisse",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T05:37:37.121Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T23:10:53.000Z",
+      "last_updated": "2026-09-17T05:42:57.321Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-fabee1986889a40c40f7",
+      "case_file": null,
+      "source_published_at": "2026-09-17T02:45:49.000Z",
+      "published_at": "2026-09-17T03:26:54.593Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Es ist zu prüfen, ob der Gesetzentwurf vom US-Präsidenten unterzeichnet wird und welche Bestimmungen anschließend gelten.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Unterzeichnung des Gesetzentwurfs und Veröffentlichung der geltenden Bestimmungen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a50b3f60549ff8f4",
+          "announced_at": "2026-09-17T02:45:49.000Z",
+          "follow_up_date": "2026-09-24T03:26:54.593Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Unterzeichnung durch den US-Präsidenten und die konkrete Umsetzung des Gesetzentwurfs sind zu prüfen.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Unterzeichnung oder weitere parlamentarische beziehungsweise administrative Umsetzung des Gesetzentwurfs",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d46f0dc433e11257",
+          "announced_at": "2026-09-17T02:45:49.000Z",
+          "follow_up_date": "2026-09-24T05:42:57.321Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kongress-beschliesst-gesetz-fuer-russland-sanktionen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T02:45:49.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kongress-beschliesst-gesetz-fuer-russland-sanktionen-114.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T05:01:05.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-337679fe5fe35b70",
       "title_image": {
@@ -2093,1483 +3819,6 @@
           "url": "https://www.stern.de/news/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt---swr-meldet-zwei-festnahmen-38229310.html",
           "source_type": "media_rss",
           "published_at": "2026-09-09T18:25:40.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-d1bafe5a495d34fb",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-9f70329dae6a909d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-64f2977f8c3fe451-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-f1ff4d09432e1120-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "usa-kongress-beschliesst-gesetz-fur-russland-sanktionen-5d34fb",
-      "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
-      "source_summary": "Der Deutschlandfunk berichtet, dass das US-Repräsentantenhaus ein umfassendes Sanktionspaket gegen Russland angenommen hat. Der Gesetzentwurf erhielt 262 Stimmen gegenüber 159 Stimmen und soll zur Unterzeichnung an US-Präsident Trump weitergeleitet werden.\n\nVorgesehen sind laut Quelle Maßnahmen gegen russische Amtsträger, Banken und die russische Schattenflotte. Außerdem werden Einreiseverbote und das Einfrieren von Vermögen beschrieben.\n\nDie Quelle nennt zudem Zollaufschläge von bis zu 100 Prozent für bestimmte Produkte aus China und Indien. Offen bleibt in dem vorliegenden Beleg, ob der Präsident unterschreibt und wie die Regelungen umgesetzt würden.",
-      "summary": "Das US-Repräsentantenhaus hat laut Deutschlandfunk ein Sanktionspaket gegen Russland angenommen. Seine Umsetzung und mögliche Folgen für Menschen, Umwelt und internationale Politik sind noch offen.",
-      "detail_summary": "Der Deutschlandfunk berichtet über die Annahme eines Sanktionspakets im US-Repräsentantenhaus und die Weiterleitung an den Präsidenten. Vorgesehen sind Maßnahmen gegen russische Amtsträger, Banken und die Schattenflotte sowie mögliche Zollaufschläge für bestimmte Produkte aus China und Indien. Das könnte den wirtschaftlichen Druck auf Russland erhöhen und Handelswege verändern, falls der Entwurf unterzeichnet und umgesetzt wird. Zugleich könnten Ausweichgeschäfte, Belastungen für Handelspartner und politische Spannungen zunehmen. Der vorliegende Beleg bestätigt weder die Unterzeichnung noch konkrete Wirkungen.",
-      "why_relevant": "Der Entwurf könnte Finanzierungswege, Handelsbeziehungen und den politischen Umgang mit Russlands Krieg beeinflussen. Reichweite und Umsetzung sind jedoch noch nicht belegt.",
-      "topic": [
-        "Geopolitik",
-        "Finanzen",
-        "Politik"
-      ],
-      "status": "Entwurf",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Annahme eines umfassenden Sanktionspakets durch das US-Repräsentantenhaus und Weiterleitung des Entwurfs zur Unterzeichnung",
-        "evaluation_target": {
-          "label": "Sanktionspaket gegen Russland",
-          "type": "proposal"
-        },
-        "baseline": "Vor der möglichen Unterzeichnung bestehen die im Beleg beschriebenen neuen Maßnahmen noch nicht als geltende Regelung.",
-        "counterfactual": "Ohne Unterzeichnung und Umsetzung blieben die beschriebenen zusätzlichen Sanktionen und Zollaufschläge aus diesem Entwurf aus.",
-        "reference_frame": [
-          "Schutz von Menschen und Versorgung",
-          "ökologische Folgewirkungen von Handels- und Energieverlagerungen",
-          "demokratische Rechenschaft und rechtsstaatliche Nachvollziehbarkeit"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "high",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Finanzielle und handelspolitische Einschränkungen könnten den Druck auf Russland erhöhen, zugleich aber Handelspartner, Beschäftigte und Verbraucher belasten. Verteilung und Versorgung hängen von Umsetzung und Ausweichmöglichkeiten ab.",
-            "planet": "Veränderte Energie- und Handelsströme könnten Transportwege, Förderanreize und Emissionen verschieben. Der Beleg enthält dazu keine Messdaten; die Richtung bleibt bedingt.",
-            "democracy": "Ein umfassender Kongressbeschluss könnte institutionelle Verantwortlichkeit und internationale Sanktionskoordination stärken. Zugleich könnten umstrittene extraterritoriale Maßnahmen Konflikte über Zuständigkeit und demokratische Kontrolle verschärfen."
-          },
-          "central_dimensions": [
-            "human",
-            "planet",
-            "democracy"
-          ],
-          "first_order": "Der Entwurf könnte Finanzzugänge, Handelskosten und politische Handlungsoptionen russischer Akteure und betroffener Handelspartner verändern.",
-          "second_order": "Unternehmen und Staaten könnten auf alternative Zahlungs-, Liefer- und Energiewege ausweichen; Verteilungseffekte und politische Gegenreaktionen wären möglich.",
-          "third_order": "Bei dauerhafter Umsetzung könnte sich die internationale Sanktions- und Handelsordnung verändern, wobei die Wirkung von Durchsetzung, Kooperation und Gegenmaßnahmen abhängt.",
-          "enablement": [
-            "enables_legislation",
-            "enables_institutional_control"
-          ],
-          "counter_evidence": [
-            "Der Entwurf ist noch nicht als geltendes Recht belegt.",
-            "Alternative Handels- und Finanzierungswege könnten den Druck abschwächen.",
-            "Konkrete Wirkungsdaten und unabhängige Folgenanalysen liegen nicht vor."
-          ],
-          "source_independence": "Es liegt nur eine journalistische Quelle vor; eine unabhängige Bestätigung oder eigenständige Folgenquelle ist nicht enthalten.",
-          "institutional_status": "Das Repräsentantenhaus hat laut Quelle zugestimmt; der Entwurf soll noch dem US-Präsidenten zur Unterzeichnung vorgelegt werden. Ein Inkrafttreten ist nicht belegt."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "positive",
-            "dominance": "dominant_positive",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Der Beleg beschreibt mögliche Eingriffe in Finanz- und Handelsströme, enthält aber keine Daten zu tatsächlichen Belastungen oder Schutzwirkungen. Die Richtung bleibt von Unterzeichnung, Durchsetzung und Ausweichreaktionen abhängig.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Ein bedingter positiver Pfad ist plausibel, wenn finanzielle Einschränkungen den Druck auf russische Kriegsressourcen erhöhen und Unterstützung für die Ukraine stärken. Gegenbelastungen für Handelspartner bleiben möglich, sind aber im Beleg nicht quantifiziert.",
-            "primary_paths": [
-              {
-                "label": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
-                "direction": "positive",
-                "type": "main_path",
-                "mechanism": "Sanktionen gegen Banken, Amtsträger und die Schattenflotte könnten Finanzierungs- und Handelsmöglichkeiten beschränken.",
-                "recipients": [
-                  "Menschen in der Ukraine",
-                  "russische Bevölkerung",
-                  "betroffene Unternehmen und Beschäftigte"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die Reichweite könnte über Finanz- und Handelsbeziehungen erheblich sein, doch Rechtsstatus, Durchsetzung und Reaktionen sind offen."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Finanz- und Handelsbeziehungen könnten mehrere Länder und Unternehmen betreffen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Beschränkungen könnten einzelne Akteure und Transaktionen spürbar belasten.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Eine mögliche Wirkung könnte über die Laufzeit der Maßnahmen anhalten.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Finanz- und Handelswege könnten grundsätzlich wieder angepasst werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Menschen in Kriegs- und Versorgungslagen wären gegenüber wirtschaftlichem Druck besonders verletzlich.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad berührt Finanzierungs- und Handelsstrukturen, aber keine belegte Systemveränderung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Der Beleg beschreibt keine konkrete Schutzgrenze oder eingetretene humanitäre Schädigung.",
-                  "reference_frame": "Schutz von Menschen und Versorgung",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Unterzeichnung, konkrete Durchsetzung und ausreichende internationale Befolgung wären erforderlich.",
-                "reference_space": "USA, Russland, Ukraine und betroffene Handelspartner",
-                "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Finanzielle Einschränkungen werden umgesetzt und nicht vollständig durch alternative Wege ersetzt.",
-                "source_support": "Die Quelle belegt vorgesehene Sanktionen, nicht deren humanitäre Wirkung.",
-                "limitations": "Keine Folgenmessung, keine unabhängige Bestätigung und keine Angaben zu Ausnahmen oder Gegenmaßnahmen.",
-                "first_order": "Finanzzugänge und Handelsmöglichkeiten könnten eingeschränkt werden.",
-                "second_order": "Unternehmen und Haushalte könnten mit Anpassungskosten oder veränderten Versorgungswegen konfrontiert werden.",
-                "third_order": "Anhaltender wirtschaftlicher Druck könnte politische und humanitäre Entwicklungen beeinflussen, die Richtung bleibt offen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine belastbare Folgenquelle im gelieferten Bestand; der Pfad bleibt eine bedingte Hypothese.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 12,
-                  "divisor": 6,
-                  "raw": 2,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Handelsverlagerungen könnten bestimmte Verbraucher und Beschäftigte belasten",
-                "direction": "negative",
-                "type": "side_effect",
-                "mechanism": "Zollaufschläge und Umgehungsreaktionen könnten Lieferketten und Preise verändern.",
-                "recipients": [
-                  "Verbraucher",
-                  "Beschäftigte",
-                  "Unternehmen in betroffenen Handelsbeziehungen"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Die Quelle nennt mögliche Zollaufschläge, aber keine konkreten Preis- oder Beschäftigungsdaten."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Betroffene Handelsbeziehungen könnten mehrere Länder und Märkte umfassen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die konkrete Belastung einzelner Haushalte oder Unternehmen ist nicht belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Anpassungskosten könnten während einer Sanktionsperiode anhalten.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Lieferketten könnten bei veränderten Regeln wieder angepasst werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Abhängige Haushalte und kleinere Unternehmen könnten stärker betroffen sein.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Der Pfad betrifft Handelsanpassungen ohne belegte tiefe Strukturwirkung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
-                  "reference_frame": "Versorgung und soziale Verteilung",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Zollaufschläge müssen in Kraft treten und auf relevante Lieferketten durchschlagen.",
-                "reference_space": "Betroffene Handels- und Importmärkte",
-                "time_horizon": "Nach einer möglichen Umsetzung",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Handelsakteure geben zusätzliche Kosten teilweise weiter.",
-                "source_support": "Die Quelle belegt vorgesehene Zollaufschläge, nicht deren Marktfolgen.",
-                "limitations": "Keine Preis-, Beschäftigungs- oder Versorgungsdaten.",
-                "first_order": "Importkosten könnten steigen.",
-                "second_order": "Lieferketten könnten sich verlagern.",
-                "third_order": "Veränderte Handelsmuster könnten soziale Ungleichheiten verstärken.",
-                "research_pass": "second_pass",
-                "research_result": "Konkrete Markt- und Verteilungsdaten fehlen im Quellenbestand.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 9,
-                  "divisor": 6,
-                  "raw": 1.5,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "balance": null,
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "+ Potenzial",
-              "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
-              "direction": "positive"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "+ Potenzial",
-            "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
-            "display_direction": "positive",
-            "label": "+ Potenzial",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "+ Potenzial"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "low",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Der Beleg nennt Energiehandel und mögliche Zollmaßnahmen, liefert aber keine Emissions-, Förder- oder Transportdaten. Ökologische Folgen können deshalb nur als unsicherer Verlagerungspfad modelliert werden.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Veränderte Handelswege für russisches Öl und Erdgas könnten Transporte, Lieferquellen und Förderanreize verschieben. Eine positive oder negative Gesamtwirkung ist nicht belegt; der ausgewählte Pfad beschreibt das Risiko zusätzlicher Verlagerungen.",
-            "primary_paths": [
-              {
-                "label": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Sanktionen und Zollaufschläge könnten Energiehandel auf längere oder weniger effiziente Lieferwege verlagern.",
-                "recipients": [
-                  "Ökosysteme entlang von Förder- und Transportwegen",
-                  "betroffene Regionen"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Der Energiebezug ist im Beleg genannt, konkrete Mengen und ökologische Veränderungen fehlen jedoch."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Energiehandel zwischen mehreren Ländern könnte von Umleitungen betroffen sein.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die Intensität möglicher zusätzlicher Umweltbelastungen ist nicht quantifiziert.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Handelsumleitungen könnten über längere Sanktionszeiträume bestehen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Handels- und Transportrouten könnten grundsätzlich wieder geändert werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Ökologisch und sozial belastete Förder- und Transitregionen könnten empfindlicher reagieren.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein tiefer ökologischer Strukturwandel ist aus dem Beleg nicht ableitbar.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Der Quellenbestand belegt keine konkrete Überschreitung einer ökologischen Schutzgrenze.",
-                  "reference_frame": "Ökologische Belastungsgrenzen und Energieemissionen",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Handelsströme müssen sich wegen der Maßnahmen tatsächlich verlagern.",
-                "reference_space": "Internationale Öl- und Gasmärkte sowie Transitregionen",
-                "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Alternative Lieferwege werden genutzt und sind ökologisch belastender.",
-                "source_support": "Die Quelle nennt russisches Öl, Erdgas und mögliche Zollaufschläge, aber keine Umweltfolgen.",
-                "limitations": "Keine Emissions-, Mengen- oder Ökosystemdaten.",
-                "first_order": "Energiehandelswege könnten sich verändern.",
-                "second_order": "Transportentfernungen und Förderanreize könnten sich verschieben.",
-                "third_order": "Die Umweltbilanz internationaler Energieversorgung könnte sich verändern, Richtung und Größe bleiben offen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine ökologische Folgenquelle oder Messung im gelieferten Bestand.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 9,
-                  "divisor": 6,
-                  "raw": 1.5,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": null,
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "mixed",
-            "dominance": "balanced",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Der Beleg zeigt einen parlamentarischen Vorgang, enthält aber keine Analyse demokratischer Kontrolle, internationaler Legitimation oder gesellschaftlicher Reaktionen. Positive und negative institutionelle Pfade bleiben bedingt.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Der parlamentarische Beschluss könnte Rechenschaft und institutionelle Entscheidung sichtbar machen. Zugleich könnten weitreichende Sanktionen und mögliche Auswirkungen auf Drittstaaten Konflikte über Zuständigkeit, Kontrolle und demokratische Legitimation verschärfen.",
-            "primary_paths": [
-              {
-                "label": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
-                "direction": "positive",
-                "type": "main_path",
-                "mechanism": "Die Behandlung im Repräsentantenhaus macht die politische Entscheidung und ihre Verantwortlichen öffentlich nachvollziehbarer.",
-                "recipients": [
-                  "US-Wählerschaft",
-                  "betroffene Parlamente",
-                  "internationale Öffentlichkeit"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Der institutionelle Vorgang ist sichtbar, seine tatsächliche Wirkung auf Kontrolle und Vertrauen bleibt offen."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Die Entscheidung könnte nationale und internationale politische Akteure erreichen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Ein umfassendes Sanktionspaket könnte parlamentarische Verantwortung spürbar machen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die politische Verantwortungszuordnung könnte über die Abstimmung hinaus fortwirken.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Parlamentarische Entscheidungen und politische Positionen können später korrigiert werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Betroffene Gruppen sind auf transparente und überprüfbare Entscheidungen angewiesen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad berührt institutionelle Kontrolle, belegt aber keinen dauerhaften Systemwandel.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete demokratische Schutzgrenze oder ein eingetretener Rechtsverstoß ist nicht belegt.",
-                  "reference_frame": "Demokratische Rechenschaft und rechtsstaatliche Kontrolle",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Der Gesetzgebungsprozess bleibt transparent und die Umsetzung wird parlamentarisch kontrolliert.",
-                "reference_space": "US-Institutionen und internationale politische Öffentlichkeit",
-                "time_horizon": "Von der Verabschiedung bis zur möglichen Umsetzung",
-                "path_quality": [
-                  "direct",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Parlamentarische Sichtbarkeit führt zu nachvollziehbarer Verantwortungszuordnung.",
-                "source_support": "Die Quelle belegt die Abstimmung und den weiteren institutionellen Schritt, nicht deren demokratische Wirkung.",
-                "limitations": "Keine Angaben zu Debatte, Kontrolle, Opposition oder gesellschaftlicher Rezeption.",
-                "first_order": "Die politische Verantwortung für den Entwurf wird sichtbarer.",
-                "second_order": "Internationale Akteure könnten ihre Positionen und Kooperationen anpassen.",
-                "third_order": "Der Vorgang könnte die Rolle von Parlamenten bei internationaler Wirtschaftspolitik prägen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine unabhängige Analyse institutioneller Folgen im gelieferten Quellenbestand.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 11,
-                  "divisor": 6,
-                  "raw": 1.8333333333333333,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              },
-              {
-                "label": "Extraterrestritoriale Wirkungen könnten Zuständigkeitskonflikte verschärfen",
-                "direction": "negative",
-                "type": "counter_path",
-                "mechanism": "Maßnahmen mit Auswirkungen auf Handelspartner könnten Konflikte über politische und rechtliche Zuständigkeit auslösen.",
-                "recipients": [
-                  "US-Institutionen",
-                  "betroffene Drittstaaten",
-                  "internationale Organisationen"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die Quelle beschreibt mögliche Maßnahmen gegenüber Produkten aus Drittstaaten, aber keine tatsächlichen Konflikte."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Drittstaaten und internationale Handelsbeziehungen könnten einbezogen werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Zollaufschläge könnten politische Reaktionen und Zuständigkeitsstreit auslösen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Konflikte könnten während der Geltung und Durchsetzung der Maßnahmen anhalten.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Institutionelle Konflikte und Regelungen können grundsätzlich politisch korrigiert werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Die demokratische Verwundbarkeit einzelner Institutionen ist im Beleg nicht konkret ausgewiesen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad betrifft internationale Regelbeziehungen, ohne einen belegten Systembruch.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Der Quellenbestand belegt keinen konkreten demokratischen Schaden oder eine überschrittene Schutzgrenze.",
-                  "reference_frame": "Internationale Zuständigkeit und demokratische Kontrolle",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Die Maßnahmen werden unterzeichnet, angewandt und von Drittstaaten als extraterritorialer Eingriff zurückgewiesen.",
-                "reference_space": "USA, betroffene Drittstaaten und internationale Handelsinstitutionen",
-                "time_horizon": "Nach einer möglichen Umsetzung",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Betroffene Staaten reagieren politisch oder institutionell gegen die Maßnahmen.",
-                "source_support": "Die Quelle nennt mögliche Zollaufschläge gegenüber Produkten aus Drittstaaten, nicht daraus entstehende Konflikte.",
-                "limitations": "Keine Reaktionen, Rechtsgutachten oder Daten zur institutionellen Wirkung enthalten.",
-                "first_order": "Drittstaaten könnten politisch auf die Regelung reagieren.",
-                "second_order": "Handels- und Sanktionskooperationen könnten schwieriger werden.",
-                "third_order": "Wiederholte Zuständigkeitskonflikte könnten internationale Regelbeziehungen belasten.",
-                "research_pass": "second_pass",
-                "research_result": "Keine belastbare Quelle zu internationalen Rechts- oder Demokratiefolgen im gelieferten Bestand.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 10,
-                  "divisor": 6,
-                  "raw": 1.6666666666666667,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": true,
-              "protection_boundary_decisive": false,
-              "rationale": "Der mögliche Gewinn an parlamentarischer Verantwortlichkeit und das mögliche Risiko internationaler Zuständigkeitskonflikte betreffen denselben institutionellen Gegenstand. Beide Pfade sind nur bedingt und niedrig belegt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "± gegenläufig",
-              "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
-              "direction": "mixed"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
-            "display_direction": "mixed",
-            "label": "± gegenläufig",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "± gegenläufig"
-          }
-        },
-        "observed_effects": [],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-17T03:26:54.598Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "dlf-nachrichten",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Bericht über die Annahme des Sanktionspakets, das Abstimmungsergebnis und die Weiterleitung des Entwurfs."
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Beschreibung der vorgesehenen Maßnahmen gegen Amtsträger, Banken, Schattenflotte und bestimmte Importe."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Hohe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "positive",
-          "dominance": "dominant_positive",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Der Beleg beschreibt mögliche Eingriffe in Finanz- und Handelsströme, enthält aber keine Daten zu tatsächlichen Belastungen oder Schutzwirkungen. Die Richtung bleibt von Unterzeichnung, Durchsetzung und Ausweichreaktionen abhängig.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Ein bedingter positiver Pfad ist plausibel, wenn finanzielle Einschränkungen den Druck auf russische Kriegsressourcen erhöhen und Unterstützung für die Ukraine stärken. Gegenbelastungen für Handelspartner bleiben möglich, sind aber im Beleg nicht quantifiziert.",
-          "primary_paths": [
-            {
-              "label": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
-              "direction": "positive",
-              "type": "main_path",
-              "mechanism": "Sanktionen gegen Banken, Amtsträger und die Schattenflotte könnten Finanzierungs- und Handelsmöglichkeiten beschränken.",
-              "recipients": [
-                "Menschen in der Ukraine",
-                "russische Bevölkerung",
-                "betroffene Unternehmen und Beschäftigte"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die Reichweite könnte über Finanz- und Handelsbeziehungen erheblich sein, doch Rechtsstatus, Durchsetzung und Reaktionen sind offen."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Finanz- und Handelsbeziehungen könnten mehrere Länder und Unternehmen betreffen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Beschränkungen könnten einzelne Akteure und Transaktionen spürbar belasten.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Eine mögliche Wirkung könnte über die Laufzeit der Maßnahmen anhalten.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Finanz- und Handelswege könnten grundsätzlich wieder angepasst werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Menschen in Kriegs- und Versorgungslagen wären gegenüber wirtschaftlichem Druck besonders verletzlich.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad berührt Finanzierungs- und Handelsstrukturen, aber keine belegte Systemveränderung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Der Beleg beschreibt keine konkrete Schutzgrenze oder eingetretene humanitäre Schädigung.",
-                "reference_frame": "Schutz von Menschen und Versorgung",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Unterzeichnung, konkrete Durchsetzung und ausreichende internationale Befolgung wären erforderlich.",
-              "reference_space": "USA, Russland, Ukraine und betroffene Handelspartner",
-              "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Finanzielle Einschränkungen werden umgesetzt und nicht vollständig durch alternative Wege ersetzt.",
-              "source_support": "Die Quelle belegt vorgesehene Sanktionen, nicht deren humanitäre Wirkung.",
-              "limitations": "Keine Folgenmessung, keine unabhängige Bestätigung und keine Angaben zu Ausnahmen oder Gegenmaßnahmen.",
-              "first_order": "Finanzzugänge und Handelsmöglichkeiten könnten eingeschränkt werden.",
-              "second_order": "Unternehmen und Haushalte könnten mit Anpassungskosten oder veränderten Versorgungswegen konfrontiert werden.",
-              "third_order": "Anhaltender wirtschaftlicher Druck könnte politische und humanitäre Entwicklungen beeinflussen, die Richtung bleibt offen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine belastbare Folgenquelle im gelieferten Bestand; der Pfad bleibt eine bedingte Hypothese.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 12,
-                "divisor": 6,
-                "raw": 2,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Handelsverlagerungen könnten bestimmte Verbraucher und Beschäftigte belasten",
-              "direction": "negative",
-              "type": "side_effect",
-              "mechanism": "Zollaufschläge und Umgehungsreaktionen könnten Lieferketten und Preise verändern.",
-              "recipients": [
-                "Verbraucher",
-                "Beschäftigte",
-                "Unternehmen in betroffenen Handelsbeziehungen"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Die Quelle nennt mögliche Zollaufschläge, aber keine konkreten Preis- oder Beschäftigungsdaten."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Betroffene Handelsbeziehungen könnten mehrere Länder und Märkte umfassen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die konkrete Belastung einzelner Haushalte oder Unternehmen ist nicht belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Anpassungskosten könnten während einer Sanktionsperiode anhalten.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Lieferketten könnten bei veränderten Regeln wieder angepasst werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Abhängige Haushalte und kleinere Unternehmen könnten stärker betroffen sein.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Der Pfad betrifft Handelsanpassungen ohne belegte tiefe Strukturwirkung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
-                "reference_frame": "Versorgung und soziale Verteilung",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Zollaufschläge müssen in Kraft treten und auf relevante Lieferketten durchschlagen.",
-              "reference_space": "Betroffene Handels- und Importmärkte",
-              "time_horizon": "Nach einer möglichen Umsetzung",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Handelsakteure geben zusätzliche Kosten teilweise weiter.",
-              "source_support": "Die Quelle belegt vorgesehene Zollaufschläge, nicht deren Marktfolgen.",
-              "limitations": "Keine Preis-, Beschäftigungs- oder Versorgungsdaten.",
-              "first_order": "Importkosten könnten steigen.",
-              "second_order": "Lieferketten könnten sich verlagern.",
-              "third_order": "Veränderte Handelsmuster könnten soziale Ungleichheiten verstärken.",
-              "research_pass": "second_pass",
-              "research_result": "Konkrete Markt- und Verteilungsdaten fehlen im Quellenbestand.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 9,
-                "divisor": 6,
-                "raw": 1.5,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "balance": null,
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "+ Potenzial",
-            "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
-            "direction": "positive"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "+ Potenzial",
-          "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
-          "display_direction": "positive",
-          "label": "+ Potenzial",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "+ Potenzial"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "low",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Der Beleg nennt Energiehandel und mögliche Zollmaßnahmen, liefert aber keine Emissions-, Förder- oder Transportdaten. Ökologische Folgen können deshalb nur als unsicherer Verlagerungspfad modelliert werden.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Veränderte Handelswege für russisches Öl und Erdgas könnten Transporte, Lieferquellen und Förderanreize verschieben. Eine positive oder negative Gesamtwirkung ist nicht belegt; der ausgewählte Pfad beschreibt das Risiko zusätzlicher Verlagerungen.",
-          "primary_paths": [
-            {
-              "label": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Sanktionen und Zollaufschläge könnten Energiehandel auf längere oder weniger effiziente Lieferwege verlagern.",
-              "recipients": [
-                "Ökosysteme entlang von Förder- und Transportwegen",
-                "betroffene Regionen"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Der Energiebezug ist im Beleg genannt, konkrete Mengen und ökologische Veränderungen fehlen jedoch."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Energiehandel zwischen mehreren Ländern könnte von Umleitungen betroffen sein.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die Intensität möglicher zusätzlicher Umweltbelastungen ist nicht quantifiziert.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Handelsumleitungen könnten über längere Sanktionszeiträume bestehen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Handels- und Transportrouten könnten grundsätzlich wieder geändert werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Ökologisch und sozial belastete Förder- und Transitregionen könnten empfindlicher reagieren.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein tiefer ökologischer Strukturwandel ist aus dem Beleg nicht ableitbar.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Der Quellenbestand belegt keine konkrete Überschreitung einer ökologischen Schutzgrenze.",
-                "reference_frame": "Ökologische Belastungsgrenzen und Energieemissionen",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Handelsströme müssen sich wegen der Maßnahmen tatsächlich verlagern.",
-              "reference_space": "Internationale Öl- und Gasmärkte sowie Transitregionen",
-              "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Alternative Lieferwege werden genutzt und sind ökologisch belastender.",
-              "source_support": "Die Quelle nennt russisches Öl, Erdgas und mögliche Zollaufschläge, aber keine Umweltfolgen.",
-              "limitations": "Keine Emissions-, Mengen- oder Ökosystemdaten.",
-              "first_order": "Energiehandelswege könnten sich verändern.",
-              "second_order": "Transportentfernungen und Förderanreize könnten sich verschieben.",
-              "third_order": "Die Umweltbilanz internationaler Energieversorgung könnte sich verändern, Richtung und Größe bleiben offen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine ökologische Folgenquelle oder Messung im gelieferten Bestand.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 9,
-                "divisor": 6,
-                "raw": 1.5,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": null,
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "mixed",
-          "dominance": "balanced",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Der Beleg zeigt einen parlamentarischen Vorgang, enthält aber keine Analyse demokratischer Kontrolle, internationaler Legitimation oder gesellschaftlicher Reaktionen. Positive und negative institutionelle Pfade bleiben bedingt.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Der parlamentarische Beschluss könnte Rechenschaft und institutionelle Entscheidung sichtbar machen. Zugleich könnten weitreichende Sanktionen und mögliche Auswirkungen auf Drittstaaten Konflikte über Zuständigkeit, Kontrolle und demokratische Legitimation verschärfen.",
-          "primary_paths": [
-            {
-              "label": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
-              "direction": "positive",
-              "type": "main_path",
-              "mechanism": "Die Behandlung im Repräsentantenhaus macht die politische Entscheidung und ihre Verantwortlichen öffentlich nachvollziehbarer.",
-              "recipients": [
-                "US-Wählerschaft",
-                "betroffene Parlamente",
-                "internationale Öffentlichkeit"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Der institutionelle Vorgang ist sichtbar, seine tatsächliche Wirkung auf Kontrolle und Vertrauen bleibt offen."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Die Entscheidung könnte nationale und internationale politische Akteure erreichen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Ein umfassendes Sanktionspaket könnte parlamentarische Verantwortung spürbar machen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die politische Verantwortungszuordnung könnte über die Abstimmung hinaus fortwirken.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Parlamentarische Entscheidungen und politische Positionen können später korrigiert werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Betroffene Gruppen sind auf transparente und überprüfbare Entscheidungen angewiesen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad berührt institutionelle Kontrolle, belegt aber keinen dauerhaften Systemwandel.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete demokratische Schutzgrenze oder ein eingetretener Rechtsverstoß ist nicht belegt.",
-                "reference_frame": "Demokratische Rechenschaft und rechtsstaatliche Kontrolle",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Der Gesetzgebungsprozess bleibt transparent und die Umsetzung wird parlamentarisch kontrolliert.",
-              "reference_space": "US-Institutionen und internationale politische Öffentlichkeit",
-              "time_horizon": "Von der Verabschiedung bis zur möglichen Umsetzung",
-              "path_quality": [
-                "direct",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Parlamentarische Sichtbarkeit führt zu nachvollziehbarer Verantwortungszuordnung.",
-              "source_support": "Die Quelle belegt die Abstimmung und den weiteren institutionellen Schritt, nicht deren demokratische Wirkung.",
-              "limitations": "Keine Angaben zu Debatte, Kontrolle, Opposition oder gesellschaftlicher Rezeption.",
-              "first_order": "Die politische Verantwortung für den Entwurf wird sichtbarer.",
-              "second_order": "Internationale Akteure könnten ihre Positionen und Kooperationen anpassen.",
-              "third_order": "Der Vorgang könnte die Rolle von Parlamenten bei internationaler Wirtschaftspolitik prägen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine unabhängige Analyse institutioneller Folgen im gelieferten Quellenbestand.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 11,
-                "divisor": 6,
-                "raw": 1.8333333333333333,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            },
-            {
-              "label": "Extraterrestritoriale Wirkungen könnten Zuständigkeitskonflikte verschärfen",
-              "direction": "negative",
-              "type": "counter_path",
-              "mechanism": "Maßnahmen mit Auswirkungen auf Handelspartner könnten Konflikte über politische und rechtliche Zuständigkeit auslösen.",
-              "recipients": [
-                "US-Institutionen",
-                "betroffene Drittstaaten",
-                "internationale Organisationen"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die Quelle beschreibt mögliche Maßnahmen gegenüber Produkten aus Drittstaaten, aber keine tatsächlichen Konflikte."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Drittstaaten und internationale Handelsbeziehungen könnten einbezogen werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Zollaufschläge könnten politische Reaktionen und Zuständigkeitsstreit auslösen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Konflikte könnten während der Geltung und Durchsetzung der Maßnahmen anhalten.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Institutionelle Konflikte und Regelungen können grundsätzlich politisch korrigiert werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Die demokratische Verwundbarkeit einzelner Institutionen ist im Beleg nicht konkret ausgewiesen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad betrifft internationale Regelbeziehungen, ohne einen belegten Systembruch.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Der Quellenbestand belegt keinen konkreten demokratischen Schaden oder eine überschrittene Schutzgrenze.",
-                "reference_frame": "Internationale Zuständigkeit und demokratische Kontrolle",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Die Maßnahmen werden unterzeichnet, angewandt und von Drittstaaten als extraterritorialer Eingriff zurückgewiesen.",
-              "reference_space": "USA, betroffene Drittstaaten und internationale Handelsinstitutionen",
-              "time_horizon": "Nach einer möglichen Umsetzung",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Betroffene Staaten reagieren politisch oder institutionell gegen die Maßnahmen.",
-              "source_support": "Die Quelle nennt mögliche Zollaufschläge gegenüber Produkten aus Drittstaaten, nicht daraus entstehende Konflikte.",
-              "limitations": "Keine Reaktionen, Rechtsgutachten oder Daten zur institutionellen Wirkung enthalten.",
-              "first_order": "Drittstaaten könnten politisch auf die Regelung reagieren.",
-              "second_order": "Handels- und Sanktionskooperationen könnten schwieriger werden.",
-              "third_order": "Wiederholte Zuständigkeitskonflikte könnten internationale Regelbeziehungen belasten.",
-              "research_pass": "second_pass",
-              "research_result": "Keine belastbare Quelle zu internationalen Rechts- oder Demokratiefolgen im gelieferten Bestand.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 10,
-                "divisor": 6,
-                "raw": 1.6666666666666667,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": true,
-            "protection_boundary_decisive": false,
-            "rationale": "Der mögliche Gewinn an parlamentarischer Verantwortlichkeit und das mögliche Risiko internationaler Zuständigkeitskonflikte betreffen denselben institutionellen Gegenstand. Beide Pfade sind nur bedingt und niedrig belegt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
-            "direction": "mixed"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "± gegenläufig",
-          "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
-          "display_direction": "mixed",
-          "label": "± gegenläufig",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "± gegenläufig"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-17T03:22:19.902Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-16T23:10:53.000Z",
-      "last_updated": "2026-09-17T03:26:54.593Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-fabee1986889a40c40f7",
-      "case_file": null,
-      "source_published_at": "2026-09-17T02:45:49.000Z",
-      "published_at": "2026-09-17T03:26:54.593Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Es ist zu prüfen, ob der Gesetzentwurf vom US-Präsidenten unterzeichnet wird und welche Bestimmungen anschließend gelten.",
-          "source_id": "dlf-nachrichten",
-          "measurable_indicator": "Unterzeichnung des Gesetzentwurfs und Veröffentlichung der geltenden Bestimmungen",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-a50b3f60549ff8f4",
-          "announced_at": "2026-09-17T02:45:49.000Z",
-          "follow_up_date": "2026-09-24T03:26:54.593Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/kongress-beschliesst-gesetz-fuer-russland-sanktionen-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-17T02:45:49.000Z",
           "primary_source": false
         }
       ]
