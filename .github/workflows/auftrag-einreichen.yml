@@ -1,0 +1,60 @@
+# Einen Redaktionsauftrag einreihen, den Natalie im Gespräch gegeben hat.
+#
+# Der Auftrag landet in derselben Warteschlange wie ein Auftrag aus der App und
+# trägt denselben Vorrang: der Redaktionsworker zieht ihn vor die automatischen
+# Vorschläge und auch dann, wenn Tageszahl und Stundenplatz erschöpft sind.
+# Veröffentlicht wird nichts ohne Natalies Freigabe.
+name: Redaktionsauftrag einreihen
+
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "Art des Beitrags"
+        required: true
+        type: choice
+        options: [opinion_analysis, news, book_review, listened, watched]
+      brief:
+        description: "Auftrag im Klartext (mindestens 40 Zeichen)"
+        required: true
+        type: string
+      links:
+        description: "Quellen, durch Leerzeichen getrennt (https, höchstens sechs)"
+        required: true
+        type: string
+      notes:
+        description: "Anmerkungen für die Redaktion (optional)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: redaktionsworker
+  cancel-in-progress: false
+
+jobs:
+  einreihen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      WOEK_ORDER_KIND: ${{ inputs.kind }}
+      WOEK_ORDER_BRIEF: ${{ inputs.brief }}
+      WOEK_ORDER_LINKS: ${{ inputs.links }}
+      WOEK_ORDER_NOTES: ${{ inputs.notes }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Tests der Auftragsspur
+        run: node --test tests/news/auftrag-einreichen.test.mjs tests/news/redaktionsworker.test.mjs
+      - name: Auftrag einreihen
+        run: node scripts/news/auftrag-einreichen.mjs
