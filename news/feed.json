@@ -6,6 +6,37 @@
   "language": "de",
   "items": [
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
+      "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in der Ukraine",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; für Kiew werden mindestens 18 Verletzte gemeldet. Umfang der Ausfälle und Reparaturen bleibt offen.",
+      "date_published": "2026-09-17T14:53:31.000Z",
+      "date_modified": "2026-09-17T14:53:31.000Z",
+      "_woek_released_at": "2026-09-17T10:41:17.999Z",
+      "tags": [
+        "Energie"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/corona-maskenaffare-warum-jens-spahn-die-verantwortung-tragt-egal-wie-das-urteil-ausfall-6d191e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/corona-maskenaffare-warum-jens-spahn-die-verantwortung-tragt-egal-wie-das-urteil-ausfall-6d191e/",
       "title": "Maskenbeschaffung bleibt politisch und haushalterisch umstritten",
@@ -126,37 +157,6 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
-          "status": "potential"
-        }
-      }
-    },
-    {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
-      "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in der Ukraine",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; für Kiew werden mindestens 18 Verletzte gemeldet. Wie stark Versorgung und Reparaturen betroffen sind, bleibt offen.",
-      "date_published": "2026-09-17T10:34:49.000Z",
-      "date_modified": "2026-09-17T10:34:49.000Z",
-      "_woek_released_at": "2026-09-17T10:41:17.999Z",
-      "tags": [
-        "Energie"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": false,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 4,
-          "direction": "negative",
-          "status": "observed"
-        },
-        "planet": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 2,
-          "direction": "negative",
           "status": "potential"
         }
       }
