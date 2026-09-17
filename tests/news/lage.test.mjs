@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { LAGEN, MAX_ENTRIES, berlinInstant, previousIsoDate, lageWindow, dueLage, lageId,
-  lageEntries, lageHeadline, buildLage } from '../../scripts/news/lage.mjs';
+  lageEntries, lageHeadline, buildLage, upsertLage, lagenNachDatum, KEEP_DAYS } from '../../scripts/news/lage.mjs';
 
 const story = (slug, published, updated = null, extra = {}) => ({ story_id: `wt-${slug}`, slug,
   title: `Titel ${slug}`, published: true, published_at: published,
@@ -109,4 +109,67 @@ test('eine Lage ist ein vollständiges, prüfbares Objekt', () => {
   assert.deepEqual(lage.entries.map((e) => e.state), ['fortgeschrieben', 'neu']);
   assert.equal(buildLage({ slot: 'zwischenlage', now: '2026-09-17T10:05:00Z' }), null);
   assert.equal(LAGEN.length, 3);
+});
+
+test('dieselbe Lage zweimal ergibt keinen zweiten Eintrag', () => {
+  const lage = (slot, now) => buildLage({ slot, now, stories: [story('a', '2026-09-17T07:00:00Z')] });
+  let store = { lagen: [] };
+  store = upsertLage(store, lage('mittagslage', '2026-09-17T10:05:00Z'));
+  store = upsertLage(store, lage('mittagslage', '2026-09-17T10:20:00Z')); // Wiederholung desselben Laufs
+  assert.equal(store.lagen.length, 1, 'ein wiederholter Lauf erzeugt keine Doppelausgabe');
+  store = upsertLage(store, lage('abendlage', '2026-09-17T16:05:00Z'));
+  assert.deepEqual(store.lagen.map((l) => l.slot), ['abendlage', 'mittagslage'], 'neueste zuerst');
+  assert.equal(store.updated_at, store.lagen[0].stand);
+  assert.equal(store.schema_version, '1.0');
+});
+
+test('alte Lagen fallen aus der Ablage, nach Tag gruppiert bleibt die Folge lesbar', () => {
+  const alt = { lage_id: '2026-07-01-morgenlage', slot: 'morgenlage', date: '2026-07-01', stand: '2026-07-01T04:00:00.000Z' };
+  const neu = buildLage({ slot: 'mittagslage', now: '2026-09-17T10:05:00Z', stories: [] });
+  const store = upsertLage({ lagen: [alt] }, neu, { keepDays: 30 });
+  assert.deepEqual(store.lagen.map((l) => l.lage_id), ['2026-09-17-mittagslage'], 'die alte Lage ist heraus');
+
+  const gruppen = lagenNachDatum({ lagen: [
+    { lage_id: '2026-09-16-abendlage', slot: 'abendlage', date: '2026-09-16', stand: '2026-09-16T16:00:00.000Z' },
+    { lage_id: '2026-09-17-morgenlage', slot: 'morgenlage', date: '2026-09-17', stand: '2026-09-17T04:00:00.000Z' },
+    { lage_id: '2026-09-17-mittagslage', slot: 'mittagslage', date: '2026-09-17', stand: '2026-09-17T10:00:00.000Z' },
+  ] });
+  assert.deepEqual(gruppen.map((g) => g.date), ['2026-09-17', '2026-09-16'], 'neuester Tag zuerst');
+  assert.deepEqual(gruppen[0].lagen.map((l) => l.slot), ['mittagslage', 'morgenlage'], 'innerhalb des Tages neueste zuerst');
+  assert.deepEqual(upsertLage({ lagen: [alt] }, null).lagen, [alt], 'ohne Lage bleibt die Ablage unberührt');
+});
+
+// Die Bauregel aus docs/news/LAGEN-UMBAU.md, Abschnitt 6a: die Lage ist ein
+// Rahmen um die bestehenden Karten, kein neuer Kartentyp. Der Test prüft das am
+// echten Meldungsbestand und auf die härteste denkbare Weise - die Lage muss die
+// Ausgabe von storyCard wörtlich enthalten. Damit kann keine Lage eine Karte
+// ohne Balken, Ringe, Quellen oder Wirkungsanalyse zeigen.
+test('die Lage rendert wörtlich dieselbe Karte wie die Ticker-Liste', async () => {
+  const fs = await import('node:fs');
+  const { storyCard, lageBody } = await import('../../scripts/news/build.mjs');
+  const katalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories
+    .filter((s) => s.published && s.analysis && s.listed !== false);
+  assert.ok(katalog.length > 50, 'der Test läuft gegen den echten Bestand');
+  const echte = katalog[0];
+
+  const lage = { lage_id: '2026-09-17-mittagslage', slot: 'mittagslage', label: 'Mittagslage',
+    date: '2026-09-17', stand: '2026-09-17T10:00:00.000Z',
+    headline: 'Das sind die 1 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.',
+    entries: [{ story_id: echte.story_id, slug: echte.slug, state: 'neu' }] };
+  const html = lageBody(lage, new Map([[echte.story_id, echte]]));
+
+  assert.ok(html.includes(storyCard(echte, 0)), 'die Karte ist wörtlich dieselbe');
+  assert.match(html, /data-news-lage="2026-09-17-mittagslage"/);
+  assert.match(html, /Mittagslage · 17\. September · Stand 12:00 Uhr/, 'Stand in Berliner Zeit');
+  assert.ok(html.includes(lage.headline));
+});
+
+test('eine Lage ohne auflösbare Meldung bricht nicht und behauptet nichts', async () => {
+  const { lageBody } = await import('../../scripts/news/build.mjs');
+  const lage = { lage_id: '2026-09-17-abendlage', slot: 'abendlage', label: 'Abendlage',
+    date: '2026-09-17', stand: '2026-09-17T16:00:00.000Z',
+    headline: 'Keine belastbare neue Entwicklung seit 12 Uhr.', entries: [{ story_id: 'wt-verschwunden' }] };
+  const html = lageBody(lage, new Map());
+  assert.match(html, /Keine belastbare neue Entwicklung in diesem Zeitraum/);
+  assert.doesNotMatch(html, /data-news-card/, 'keine erfundene Karte');
 });

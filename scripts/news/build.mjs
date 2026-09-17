@@ -35,6 +35,7 @@ const SITE = "https://wirkungsoekonomie.de";
 const PUBLIC_RELEASE = "20260912-news-freshness";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
+const LAGEN_FILE = path.join(ROOT, "data/news/lagen.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
 const MANIFEST_FILE = path.join(TICKER_DIR, ".generated-story-slugs.json");
@@ -354,6 +355,27 @@ function editorialCard(analysis, story, index) {
   <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${personal ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.source_media?.show || personalLabel(analysis.subtype))}</p>` : book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}<div class="news-editorial-card__byline"><img src="${personal ? personalPortrait(analysis.subtype) : book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
   ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">${book ? (analysis.self_authored_work ? "Autorinnenbeitrag lesen" : "Buchbesprechung lesen") : "Analyse lesen"}${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
 </article>`;
+}
+
+// Eine Lage ist ein Rahmen um die bestehenden Karten, kein neuer Kartentyp
+// (docs/news/LAGEN-UMBAU.md, Abschnitt 6a). Gerendert wird mit derselben
+// Funktion wie die Ticker-Liste - deshalb kann eine Lage keine Karte ohne
+// Balken, Ringe, Quellen oder Wirkungsanalyse zeigen: diese Darstellung gibt es
+// nirgends. Ein Eintrag ist eine Referenz auf die Wirkungsakte, keine Kopie.
+export function lageBody(lage, storiesById) {
+  const cards = (lage?.entries || []).map((entry, index) => {
+    const story = storiesById.get(entry.story_id);
+    return story ? storyCard(story, index) : "";
+  }).filter(Boolean).join("\n");
+  const stand = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(lage.stand));
+  const datum = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', day: 'numeric', month: 'long' }).format(new Date(lage.stand));
+  return `<section class="news-lage" data-news-lage="${escapeHtml(lage.lage_id)}" data-news-lage-slot="${escapeHtml(lage.slot)}">
+  <header class="news-lage__header">
+    <p class="news-lage__kicker">${escapeHtml(lage.label)} · ${escapeHtml(datum)} · Stand ${escapeHtml(stand)} Uhr</p>
+    <h1 class="news-lage__headline">${escapeHtml(lage.headline)}</h1>
+  </header>
+  ${cards || '<div class="news-empty"><h2>Keine belastbare neue Entwicklung in diesem Zeitraum.</h2><p>Der Ticker f\u00fcllt keine Ausgabe k\u00fcnstlich.</p></div>'}
+</section>`;
 }
 
 function mixedCards(stories, analyses, storiesById) {
@@ -1001,6 +1023,22 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, _woek_released_at: item.released_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
+  // Lage-Seiten: zusaetzlich zum laufenden Betrieb, nichts Bestehendes aendert
+  // sich. Fehlt die Ablage, entsteht keine Seite und der Bau laeuft weiter.
+  const lagenStore = fs.existsSync(LAGEN_FILE) ? readJson(LAGEN_FILE) : { lagen: [] };
+  for (const lage of (lagenStore.lagen || []).slice(0, 30)) {
+    if (!lage?.lage_id || !Number.isFinite(Date.parse(lage.stand))) continue;
+    write(path.join(TICKER_DIR, 'lage', lage.lage_id, 'index.html'), pageShell({
+      title: `${lage.label} · ${lage.date}`,
+      description: lage.headline,
+      canonical: `${SITE}/wirkungsticker/lage/${lage.lage_id}/`,
+      base: '../../../',
+      body: lageBody(lage, storiesById),
+      publicUpdatedAt: lage.stand,
+      jsonLd: { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${lage.label} ${lage.date}`,
+        url: `${SITE}/wirkungsticker/lage/${lage.lage_id}/`, dateModified: lage.stand },
+    }));
+  }
   write(path.join(TICKER_DIR, 'methodik/index.html'), pageShell({title:'Wie der Wirkungsticker Wirkungen bewertet', description:'Richtung, Tragweite, Eintrittsplausibilität und Evidenz: die sechs Faktoren und Schutzgrenzen des Wirkungstickers verständlich erklärt.', canonical:`${SITE}/wirkungsticker/methodik/`, base:'../../', body:impactMethodology({profilesReleased:Boolean(PUBLIC_IMPACT_PROFILE_VERSION)}), jsonLd:{'@context':'https://schema.org','@type':'WebPage',name:'Methodik des Wirkungstickers',url:`${SITE}/wirkungsticker/methodik/`}}));
   const sourceRoutes = buildSourcePages(loadNewsRegistry(ROOT), readJson(path.join(ROOT, "data/news/state.json")), { pageShell, write, escapeHtml, root: ROOT, site: SITE, formatDate });
   const editorialRoutes = editorialAnalyses.map((analysis) => `wirkungsticker/analyse/${analysis.slug}/`);
