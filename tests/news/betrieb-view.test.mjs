@@ -88,5 +88,10 @@ test('die Betriebsdaten erreichen die oeffentliche App nicht', () => {
   // Die Redaktions-App liefert die neue Datei aus, sonst bleibt der Reiter leer.
   const worker = fs.readFileSync(new URL('../../admin/redaktion/sw.js', import.meta.url), 'utf8');
   assert.match(worker, /'\.\/betrieb-view\.js'/);
-  assert.match(worker, /woek-redaktion-shell-v7/, 'neue Schale, damit die Datei wirklich ankommt');
+  assert.match(worker, /woek-redaktion-shell-v\d+/, 'die Schale traegt eine Version');
+  // Jede neue Datei der App braucht eine neue Schale, sonst liefert der
+  // Service Worker die alte Fassung weiter aus.
+  const version = Number(worker.match(/woek-redaktion-shell-v(\d+)/)[1]);
+  assert.ok(version >= 8, `die Schale wurde mit jeder neuen Datei angehoben (jetzt v${version})`);
+  assert.match(worker, /'\.\/parked-review\.js'/, 'die Erklaerung geparkter Fassungen wird ausgeliefert');
 });

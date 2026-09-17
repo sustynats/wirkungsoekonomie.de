@@ -50,3 +50,29 @@ test('eine noch unbekannte Betriebsroute wird erklaert, nicht durchgereicht', ()
   assert.match(block, /error\.status===403 \|\| error\.status===401/, 'eine abgelaufene Anmeldung ist etwas anderes');
   assert.ok(!/body\.append\(element\('p',error\.message\|\|/.test(block), 'der rohe Serverhinweis steht nicht mehr allein da');
 });
+
+// 17.09.2026, Natalie vor einer geparkten Fassung: „Hier ist gar kein
+// Freigeben-Button?" und „Aber bei Freigeben steht eine 1 oben. Ich muss also
+// etwas tun." Der Reiter zaehlte sie als offen, der Knopf war weg, der Grund
+// stand nirgends. Die App erklaert ihn jetzt.
+test('eine geparkte Fassung erklaert sich, statt nur den Knopf wegzunehmen', async () => {
+  const { parkedReason, PARKED_CODES } = await import('../../admin/redaktion/parked-review.js');
+  const geparkt = parkedReason({ status: 'NEEDS_REVIEW', publication: { error: 'PERSONAL_EPISODE_ALREADY_PUBLISHED' } });
+  assert.equal(geparkt.kopf, 'Diese Fassung ist geparkt');
+  assert.match(geparkt.was, /schon eine Analyse veröffentlicht/, 'sagt, was passiert ist');
+  assert.match(geparkt.warum, /Deshalb fehlt/, 'und warum der Knopf fehlt');
+  assert.match(geparkt.tun, /Nicht veröffentlichen/, 'und was zu tun ist');
+  assert.equal(geparkt.code, 'PERSONAL_EPISODE_ALREADY_PUBLISHED');
+  // Ein unbekannter Code bleibt verstaendlich, statt roh durchzureichen.
+  const unbekannt = parkedReason({ status: 'NEEDS_REVIEW', publication: { error: 'IRGENDWAS_NEUES' } });
+  assert.match(unbekannt.was, /Veröffentlichung ist danach fehlgeschlagen/);
+  assert.match(unbekannt.tun, /zurückgeben|nicht veröffentlichen/i);
+  // Ohne Code und in jedem anderen Zustand passiert nichts.
+  assert.equal(parkedReason({ status: 'NEEDS_REVIEW' }).code, null);
+  assert.equal(parkedReason({ status: 'AWAITING_FINAL_APPROVAL' }), null);
+  assert.equal(parkedReason(null), null);
+  assert.ok(PARKED_CODES.includes('PERSONAL_SLUG_COLLISION'));
+  // Die App zeigt den Kasten vor den Knoepfen.
+  const kasten = app.indexOf('const geparkt=parkedReason(r)');
+  assert.ok(kasten > 0 && kasten < app.indexOf("'approval-actions'"), 'die Erklaerung steht vor den Knoepfen');
+});

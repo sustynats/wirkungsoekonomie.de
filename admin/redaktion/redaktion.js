@@ -1,6 +1,7 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
 import {approvalStates,orderedReviews,requestWithReview,requestPresentation,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
+import {parkedReason} from './parked-review.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
 const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
@@ -199,6 +200,17 @@ async function openReview(id){
   const label=element('label','Kommentar an die Redaktion','field'),comment=element('textarea');comment.rows=8;comment.id='review-comment';comment.setAttribute('aria-describedby','review-comment-count');label.append(comment);mount.append(label);
   const count=element('p',undefined,'quiet');count.id='review-comment-count';count.setAttribute('aria-live','polite');
   const updateCount=()=>{count.textContent=`${comment.value.length.toLocaleString('de-DE')} / ${EDITORIAL_COMMENT_LIMIT.toLocaleString('de-DE')} Zeichen`;count.classList.toggle('error',comment.value.length>EDITORIAL_COMMENT_LIMIT);};comment.addEventListener('input',updateCount);updateCount();mount.append(count);
+  // Eine geparkte Fassung erklaert sich, bevor die Knoepfe kommen.
+  const geparkt=parkedReason(r);
+  if(geparkt){
+   const box=element('div',undefined,'parked');
+   box.append(element('h3',geparkt.kopf));
+   box.append(element('p',geparkt.was));
+   box.append(element('p',geparkt.warum,'quiet'));
+   box.append(element('p',geparkt.tun,'parked-do'));
+   if(geparkt.code)box.append(element('p','Kennung des Fehlers: '+geparkt.code,'quiet'));
+   mount.append(box);
+  }
   const controls=element('div',undefined,'approval-actions');
   for(const [action,title,cls]of[['APPROVE','Diese Fassung freigeben','primary'],['REVISE','Mit Kommentar zurückgeben','secondary'],['HOLD','Für später zurückstellen','text-button'],['SKIP','Nicht veröffentlichen','text-button']]){
    if(r.status==='NEEDS_REVIEW'&&action==='APPROVE')continue;const button=element('button',title,cls);button.type='button';button.addEventListener('click',async()=>{if(comment.value.length>EDITORIAL_COMMENT_LIMIT){note(COMMENT_TOO_LONG_MESSAGE,true);comment.focus();return;}if(action==='REVISE'&&!comment.value.trim()){note('Bitte schreibe dazu, was geändert werden soll.',true);comment.focus();return;}for(const b of controls.querySelectorAll('button'))b.disabled=true;try{await api(`/reviews/${id}/decision`,{method:'POST',body:JSON.stringify({action,preview_hash:r.preview_hash,comment:comment.value})});mount.hidden=true;$('approval-list').hidden=false;await load();note({APPROVE:'Freigabe gespeichert. Genau diese Fassung ist zur Veröffentlichung freigegeben.',REVISE:'Dein Kommentar ist gespeichert. Die überarbeitete Fassung erscheint wieder zur Freigabe.',HOLD:'Der Beitrag ist zurückgestellt.',SKIP:'Der Beitrag wird nicht veröffentlicht.'}[action]);}catch(e){note(e.status===409?'Die Fassung hat sich geändert. Bitte die neue Vorschau öffnen.':e.message,true);for(const b of controls.querySelectorAll('button'))b.disabled=false;}});controls.append(button);
