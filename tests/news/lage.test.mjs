@@ -158,7 +158,15 @@ test('die Lage rendert wörtlich dieselbe Karte wie die Ticker-Liste', async () 
     entries: [{ story_id: echte.story_id, slug: echte.slug, state: 'neu' }] };
   const html = lageBody(lage, new Map([[echte.story_id, echte]]));
 
-  assert.ok(html.includes(storyCard(echte, 0)), 'die Karte ist wörtlich dieselbe');
+  // Wörtlich dieselbe Funktion mit demselben Verweis-Ursprung: die Lage liegt
+  // eine Ebene tiefer als die Liste, deshalb wurzelrelative Verweise. Ohne diese
+  // Übergabe zeigten 23 Kartenlinks ins Leere und der Deploy brach ab (17.09.).
+  assert.ok(html.includes(storyCard(echte, 0, { hrefBase: '/wirkungsticker/' })), 'die Karte ist wörtlich dieselbe');
+  // Und kein Verweis der Karte darf tiefenabhängig sein.
+  const kartenTeil = html.slice(html.indexOf('<article'));
+  const relativ = [...kartenTeil.matchAll(/(?:href|src)="([^"]+)"/g)].map((m) => m[1])
+    .filter((u) => !/^(https?:|\/|#|mailto:|data:)/.test(u));
+  assert.deepEqual(relativ, [], 'kein relativer Verweis in der Karte');
   assert.match(html, /data-news-lage="2026-09-17-mittagslage"/);
   assert.match(html, /Mittagslage · 17\. September · Stand 12:00 Uhr/, 'Stand in Berliner Zeit');
   assert.ok(html.includes(lage.headline));
