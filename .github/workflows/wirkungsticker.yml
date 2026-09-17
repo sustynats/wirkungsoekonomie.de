@@ -198,8 +198,14 @@ jobs:
           [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Invalid published commit." >&2; exit 1; }
           echo "commit=$RELEASE_COMMIT" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
+      # Die Quittung laeuft in JEDEM Lauf, nicht nur wenn dieser Lauf etwas
+      # uebernommen hat. Sie prueft die Seite live, und die Seite ist zum
+      # Zeitpunkt der Uebernahme noch nicht ausgeliefert - die Bestaetigung
+      # gehoert deshalb zwangslaeufig einem spaeteren Lauf, der selbst nichts
+      # uebernimmt. Mit der alten Bedingung blieb jede Freigabe dauerhaft auf
+      # "wird veroeffentlicht" stehen.
       - name: Acknowledge approved editions after the durable push
-        if: steps.commit.outputs.changed == 'true' && steps.approved.outputs.changed == 'true'
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         continue-on-error: true
         env:
           WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"

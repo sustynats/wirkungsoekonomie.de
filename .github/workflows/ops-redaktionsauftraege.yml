@@ -1,0 +1,35 @@
+name: WÖk Befund der Redaktionsaufträge
+
+# Nur auf Zuruf und nur lesend: nennt Kennung, Art, Zeit und Zustand der
+# eingereichten Aufträge. Kein Auftragstext, keine Schreiboperation.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && 'wirkungsticker-oracle-bridge-access' || 'woek-ops-monitor-api-access' }}
+  cancel-in-progress: false
+
+jobs:
+  befund:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            scripts/ops/redaktionsauftraege.mjs
+            scripts/news/bridge/remote.mjs
+            scripts/news/request-deadline.mjs
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Auftragsbefund lesen
+        env:
+          WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+        run: node scripts/ops/redaktionsauftraege.mjs
