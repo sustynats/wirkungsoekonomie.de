@@ -82,12 +82,48 @@ const updateAt = (story) => Date.parse(story?.last_updated || story?.updated_at 
 // die Verwechslung beider Zeiten die Benachrichtigungen verschluckt; dieselbe
 // Verwechslung wuerde hier eine Meldung aus dem Fenster fallen lassen, nur weil
 // das Ereignis aelter ist als der Lauf.
+// Natalies Auswahlformel vom 17.09.2026:
+//   Neuigkeit x Materialitaet x MPD-Relevanz x Evidenz x Veraenderung
+// Medienresonanz ist ausdruecklich KEIN Kriterium. Das ist keine Meinung gegen
+// die Messung, sondern deckungsgleich mit ihr: veroeffentlichte und
+// zurueckgehaltene Meldungen haben dieselbe Quellenbreite-Verteilung (je rund
+// 83 % Einzelquelle). Quellenbreite ist damit kein Relevanzindikator und darf
+// auch nicht als Hilfsgroesse einfliessen. Natalie: „Es duerfen aber
+// insbesondere bei Technologie spannende Themen nicht unter den Tisch fallen,
+// nur weil nicht alle Medien darueber berichten."
+const EVIDENZ_GEWICHT = { high: 2, medium: 1, low: 0.5 };
+
+// Themen, die im Bestand strukturell untergehen (gemessen am 17.09.2026:
+// Technologie 3 und KI 3 Meldungen gegen Politik 106 und Geopolitik 80). Fuer
+// sie sind Plaetze reserviert, damit sie nicht gegen lautere Politikthemen
+// verlieren - aber nur mit belastbarer Wirkungsstaerke, nie als Quote.
+export const RESERVIERTE_THEMEN = ['Technologie', 'KI', 'Digitalisierung', 'Wissenschaft', 'Forschung', 'Infrastruktur', 'Bildung'];
+export const RESERVIERTE_PLAETZE = 2;
+const RESERVE_MINDESTSTAERKE = 3;
+
+export function lageRelevanz(story, { state = 'neu', window: fenster } = {}) {
+  const dimensionen = Object.values(story?.impact_assessment?.dimensions || {});
+  // Materialitaet und MPD-Relevanz: die staerkste modellierte Dimension traegt
+  // die Nachrichtenlage. (Das Ergebnis der Bewertung bleibt unberuehrt - dort
+  // gilt weiter Nichtkompensation.)
+  const staerke = dimensionen.reduce((hoch, d) => Math.max(hoch, Number(d?.magnitude) || 0), 0);
+  const evidenz = dimensionen.reduce((hoch, d) => Math.max(hoch, EVIDENZ_GEWICHT[d?.evidence] || 0), 0);
+  const veraenderung = state === 'neu' ? 0.5 : 0.25;
+  const von = Date.parse(fenster?.from), bis = Date.parse(fenster?.to);
+  const at = Date.parse(story?.last_updated || story?.published_at || '');
+  const neuigkeit = Number.isFinite(von) && Number.isFinite(bis) && bis > von && Number.isFinite(at)
+    ? Math.min(1, Math.max(0, (at - von) / (bis - von))) : 0;
+  return Number((staerke * 2 + evidenz + veraenderung + neuigkeit).toFixed(4));
+}
+
+const reserviert = (story) => (story?.topic || []).some((thema) => RESERVIERTE_THEMEN.includes(thema));
+
 export function lageEntries({ stories = [], window: fenster, max = MAX_ENTRIES } = {}) {
   if (!fenster) return [];
   const from = Date.parse(fenster.from), to = Date.parse(fenster.to);
   if (!Number.isFinite(from) || !Number.isFinite(to)) return [];
   const inWindow = (value) => Number.isFinite(value) && value > from && value <= to;
-  return stories
+  const inhalte = stories
     .filter((story) => story?.published && story.slug)
     .map((story) => {
       const released = releaseAt(story), updated = updateAt(story);
@@ -96,9 +132,32 @@ export function lageEntries({ stories = [], window: fenster, max = MAX_ENTRIES }
       return null;
     })
     .filter(Boolean)
+    .map((eintrag) => ({ ...eintrag, score: lageRelevanz(eintrag.story, { state: eintrag.state, window: fenster }) }));
+
+  const grenze = Math.max(0, Number(max) || 0);
+  const nachRelevanz = [...inhalte].sort((a, b) => b.score - a.score || b.at - a.at);
+  const gewaehlt = nachRelevanz.slice(0, grenze);
+
+  // Reservierte Themen: was sonst durch die Obergrenze faellt, aber belastbare
+  // Wirkungsstaerke hat, verdraengt den schwaechsten Eintrag. Hoechstens zwei
+  // Plaetze, und nie ohne Staerke - eine Quote waere wieder der alte Fehler.
+  if (grenze > RESERVIERTE_PLAETZE) {
+    const drin = new Set(gewaehlt.map((e) => e.story.story_id));
+    const nachrueckend = nachRelevanz.filter((e) => !drin.has(e.story.story_id)
+      && reserviert(e.story) && lageRelevanz(e.story, { state: e.state, window: fenster }) >= RESERVE_MINDESTSTAERKE);
+    for (const kandidat of nachrueckend.slice(0, RESERVIERTE_PLAETZE)) {
+      const schwaechster = [...gewaehlt].filter((e) => !reserviert(e.story)).sort((a, b) => a.score - b.score)[0];
+      if (!schwaechster || schwaechster.score >= kandidat.score) break;
+      gewaehlt.splice(gewaehlt.indexOf(schwaechster), 1, kandidat);
+    }
+  }
+
+  // Angezeigt wird chronologisch: die Auswahl entscheidet die Relevanz, die
+  // Reihenfolge die Zeit.
+  return gewaehlt
     .sort((a, b) => b.at - a.at)
-    .slice(0, Math.max(0, Number(max) || 0))
-    .map(({ story, at, state }) => ({ story_id: story.story_id, slug: story.slug, title: story.title, state, at: new Date(at).toISOString() }));
+    .map(({ story, at, state, score }) => ({ story_id: story.story_id, slug: story.slug, title: story.title,
+      state, at: new Date(at).toISOString(), score }));
 }
 
 // Deterministischer Text, kein Modellaufruf. Die Zahl ist gezaehlt, nicht
