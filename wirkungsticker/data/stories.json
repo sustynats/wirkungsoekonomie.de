@@ -2,17 +2,1754 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T16:52:56.130Z",
+  "updated_at": "2026-09-17T17:02:04.758Z",
   "stories": [
+    {
+      "story_id": "wt-cf7f064177001cb5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf7f064177001cb5-dc50721d58bf83e6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf7f064177001cb5-c173c2a853a035c0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf7f064177001cb5-b6b0115b5c50e704-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-001cb5",
+      "title": "US-Notenbank erhöht Leitzins auf 3,75 bis 4,00 Prozent",
+      "source_summary": "Mehrere Medienberichte bestätigen, dass die US-Notenbank den Leitzins erstmals seit 2023 erhöhte. Der Satz stieg um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent. Als Hintergrund nennen die Berichte die anhaltend hohe Inflation; Deutschlandfunk und ZDFheute verweisen dabei auf die geldpolitische Reaktion der Fed.\n\nDie Quellen beschreiben zugleich einen Konflikt zwischen der Notenbank und US-Präsident Trump. Er hatte niedrigere Zinsen gefordert und reagierte nach der Entscheidung ablehnend. Deutschlandfunk berichtet außerdem, Trump habe die Entscheidung als politisch motiviert bezeichnet.\n\nOffen bleibt, wie sich der Schritt auf Preise, Kredite, Sparguthaben, Wachstum und Beschäftigung auswirkt. Einzelne Berichte halten weitere Schritte für möglich, belegen aber weder deren Eintritt noch bereits eingetretene Veränderungen bei Inflation, Konjunktur oder Arbeitsmarkt.",
+      "summary": "Die Fed hat den US-Leitzins auf 3,75 bis 4,00 Prozent angehoben. Der Schritt kann Kredite, Sparen und das Verhältnis zwischen Notenbank und Regierung beeinflussen; konkrete Folgen sind noch nicht belegt.",
+      "detail_summary": "Die US-Notenbank hat den Leitzins erstmals seit 2023 um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent angehoben. Mehrere unabhängige Berichte nennen die anhaltend hohe Inflation als Anlass; Deutschlandfunk beziffert die Teuerungsrate zuletzt mit 3,4 Prozent. Für Haushalte kann der Schritt Kredite verteuern und Sparguthaben höher verzinsen, wobei die konkrete Verteilung offen bleibt. Unternehmen könnten Investitionen verschieben, während eine straffere Geldpolitik den Preisdruck dämpfen könnte. Zugleich verschärft die Entscheidung den öffentlich beschriebenen Konflikt zwischen Fed und Präsident Trump, der niedrigere Zinsen fordert. Belegt sind bislang die Entscheidung und politische Reaktionen, nicht aber konkrete Veränderungen bei Wachstum, Beschäftigung oder Inflation.",
+      "why_relevant": "Der Leitzins wirkt über Kreditkosten, Sparanreize und Kapitalflüsse auf Haushalte, Unternehmen und öffentliche Debatten. Die Quellen belegen den geldpolitischen Schritt, aber noch keinen wirtschaftlichen Wirkungseintritt.",
+      "topic": [
+        "Geopolitik",
+        "Finanzen",
+        "Wirtschaft",
+        "Energie"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Anhebung des US-Leitzinses um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent",
+        "evaluation_target": {
+          "label": "geldpolitische Leitzinserhöhung der US-Notenbank",
+          "type": "decision"
+        },
+        "baseline": "US-Leitzins vor der Entscheidung und die zuvor geltende geldpolitische Ausrichtung",
+        "counterfactual": "Ohne die Anhebung wären die kurzfristigen Leitzinsen zunächst niedriger geblieben; Kredit-, Spar- und Inflationserwartungen hätten sich unter den sonst gleichen Bedingungen anders entwickeln können.",
+        "reference_frame": [
+          "Preisstabilität und Beschäftigung",
+          "Zugang zu Finanzierung und Verteilung der Zinslasten",
+          "Unabhängigkeit der US-Notenbank"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die möglichen Folgen für Kreditnehmende, Sparende, Beschäftigte und Unternehmen werden über Finanzierungskosten, Nachfrage und Verteilung modelliert; eingetretene Veränderungen sind nicht belegt.",
+            "planet": "Die Quellen belegen keinen direkten ökologischen Effekt. Indirekte Pfade über Investitionen, Energiepreise und Finanzierungskosten sind möglich, aber in Richtung und Stärke offen.",
+            "democracy": "Der politische Druck des Präsidenten auf die Fed kann die Wahrnehmung institutioneller Unabhängigkeit und die öffentliche Rechenschaft beeinflussen; ein institutioneller Schaden ist nicht festgestellt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Entscheidung verändert den kurzfristigen Preis von Geld und die politische Kontroverse über die Unabhängigkeit der Fed.",
+          "second_order": "Über Kredite, Sparen, Investitionen und Erwartungen könnten sich Verteilungs- und Konjunktureffekte entwickeln; über die öffentliche Auseinandersetzung könnte institutionelles Vertrauen berührt werden.",
+          "third_order": "Bei anhaltendem politischen Druck könnte sich die Rolle der Notenbank in politischen Entscheidungsstrukturen verändern; dieser Pfad ist hoch unsicher und nicht als eingetretene Entwicklung belegt.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Berichte belegen die Entscheidung, aber keine eingetretene Veränderung von Inflation, Wachstum oder Beschäftigung.",
+            "Eine einzelne Zinserhöhung belegt weder eine dauerhafte politische Einflussnahme noch einen strukturellen Vertrauensverlust.",
+            "Für direkte ökologische Folgen liegt kein belastbarer Beleg vor."
+          ],
+          "source_independence": "Sieben journalistische Herkünfte sind im Bestand ausgewiesen. Einzelne Beiträge können auf Agenturmaterial beruhen; die Quellen belegen den Ereigniskern mehrfach, nicht jedoch unabhängig voneinander alle Wirkungsfolgen.",
+          "institutional_status": "Die Fed-Entscheidung ist als beschlossen berichtet. Ein rechtlicher Statuswechsel der Notenbank oder eine formale Einschränkung ihrer Unabhängigkeit ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen den Mechanismus höherer Kreditkosten und höherer Sparzinsen, aber keine bereits eingetretene Veränderung bei Haushalten, Investitionen oder Beschäftigung.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten",
+              "zdfheute-nachrichten",
+              "tagesschau-access"
+            ],
+            "rationale": "Der Hauptpfad betrifft Menschen mit variabler Verschuldung und Unternehmen mit Finanzierungsbedarf. Sparende könnten gegenläufig profitieren; die Quellen erlauben aber keine quantitative Verteilungsschätzung.",
+            "primary_paths": [
+              {
+                "label": "Höhere Finanzierungskosten belasten kreditabhängige Haushalte und Unternehmen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein höherer Leitzins kann über Banken und Finanzmärkte Kreditzinsen erhöhen und dadurch verfügbare Einkommen oder Investitionsspielräume verringern.",
+                "recipients": [
+                  "kreditabhängige Haushalte",
+                  "kleine und mittlere Unternehmen",
+                  "Beschäftigte in zinssensitiven Branchen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite ist groß, die konkrete Belastung hängt jedoch von Kreditart, Laufzeit, Einkommen und Reaktion der Finanzmärkte ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kredite und Investitionen betreffen viele Haushalte und Unternehmen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Anhebung beträgt 0,25 Prozentpunkte; individuelle Belastungen bleiben offen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hängt von weiteren Entscheidungen und Vertragslaufzeiten ab.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zinsbedingungen können durch spätere Entscheidungen wieder verändert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Verschuldete Haushalte und finanzierungsabhängige Betriebe sind besonders exponiert.",
+                    "source_ids": [
+                      "zdfheute-nachrichten",
+                      "tagesschau-access"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht über Nachfrage und Investitionen in die Gesamtwirtschaft.",
+                    "source_ids": [
+                      "tagesschau-access",
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen belegen keine konkrete Verletzung einer Schutzgrenze; Belastungen sind als bedingtes Verteilungsrisiko modelliert.",
+                  "reference_frame": "Zugang zu notwendiger Finanzierung und wirtschaftlicher Teilhabe",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "zdfheute-nachrichten",
+                  "tagesschau-access"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Banken und Kapitalmärkte den höheren Leitzins an Kreditnehmende weitergeben und die Nachfrage zinssensitiv reagiert.",
+                "reference_space": "USA, Haushalte und Unternehmen mit variabler oder neu aufzunehmender Finanzierung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die geldpolitische Transmission funktioniert grundsätzlich; Umfang und Verteilung der Weitergabe werden nicht unterstellt.",
+                "source_support": "Die Quellen nennen höhere Kreditzinsen, Sparzinsen und mögliche Bremswirkungen; sie messen keine Folgen dieses konkreten Schritts.",
+                "limitations": "Keine Haushalts-, Kredit-, Investitions- oder Beschäftigungsdaten zur konkreten Entscheidung liegen vor.",
+                "first_order": "Kredite könnten teurer werden und Sparen attraktiver werden.",
+                "second_order": "Haushalte könnten Konsum verschieben und Unternehmen Investitionen zurückstellen.",
+                "third_order": "Eine länger anhaltende Straffung könnte Wachstum und Beschäftigung in zinssensitiven Bereichen belasten.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle weist eine bereits eingetretene, kausal zurechenbare Veränderung aus.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Höhere Sparzinsen können Sparerinnen und Sparer begünstigen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Banken könnten höhere Refinanzierungskosten teilweise über bessere Sparzinsen weitergeben.",
+                "recipients": [
+                  "Sparerinnen und Sparer",
+                  "Haushalte mit liquiden Guthaben"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus wird berichtet, seine tatsächliche Weitergabe und Verteilung sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Viele Haushalte verfügen über Sparguthaben, aber nicht alle.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die konkrete Verzinsung der Guthaben ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Wirkung könnte bei anhaltend höheren Zinsen fortbestehen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Sparzinsen können mit späteren Zinsentscheidungen wieder sinken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Der Nutzen hängt von vorhandenen liquiden Guthaben ab.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad verändert vor allem Haushaltsentscheidungen und nicht unmittelbar Institutionen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein Schutzgrenzeneffekt ist nicht belegt; der Nutzen ist als begrenzter Gegenpfad eingeordnet.",
+                  "reference_frame": "Verteilung von Zinsgewinnen und Zinslasten",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Banken müssen die höheren Marktzinsen an Einlagen weitergeben.",
+                "reference_space": "USA, Haushalte mit verzinslichen Einlagen",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Weitergabe an Sparer erfolgt zumindest teilweise.",
+                "source_support": "ZDFheute nennt höhere Zinsen auf Sparvermögen als mögliche Folge höherer Leitzinsen.",
+                "limitations": "Es fehlen Daten zu Einlagenstruktur und tatsächlicher Weitergabe.",
+                "first_order": "Sparguthaben könnten höher verzinst werden.",
+                "second_order": "Einige Haushalte könnten Konsum zugunsten des Sparens verschieben.",
+                "third_order": "Verteilungseffekte zwischen Schuldnern und Sparenden könnten sichtbarer werden.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle beschreibt den Mechanismus, aber keine eingetretene oder quantifizierte Wirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Kreditpfad ist wegen der möglichen Belastung verschuldeter Haushalte und Investitionen stärker als der begrenzte, ungleich verteilte Nutzen für Sparer."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Höhere Finanzierungskosten belasten kreditabhängige Haushalte und Unternehmen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Höhere Finanzierungskosten belasten kreditabhängige Haushalte und Unternehmen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Quellen enthalten keinen belastbaren Umweltindikator. Ein indirekter Investitions- oder Energiepreis-Pfad bleibt als Wissensgrenze offen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten",
+              "tagesschau-access"
+            ],
+            "rationale": "Ein direkter ökologischer Effekt der Zinsentscheidung ist nicht belegt. Indirekte Wirkungen über Investitionen, Nachfrage oder Energiepreise sind möglich, aber ohne Richtung und Größenordnung nicht belastbar zu bestimmen.",
+            "primary_paths": [
+              {
+                "label": "Veränderte Finanzierung kann Investitionen mit Umweltbezug verschieben",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Zinskosten können Investitionen in energieintensive oder emissionsarme Projekte unterschiedlich beeinflussen.",
+                "recipients": [
+                  "Unternehmen",
+                  "Energie- und Infrastrukturprojekte",
+                  "betroffene Regionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt und hängt von Projektfinanzierung, Energiepreisen und Investitionsentscheidungen ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Investitionsbedingungen betreffen mehrere Branchen, nicht aber jede Aktivität.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Für Umweltinvestitionen ist keine konkrete Zinswirkung ausgewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Finanzierungsbedingungen können über Projektlaufzeiten nachwirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Investitionsentscheidungen können später angepasst oder nachgeholt werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders abhängig wären kapitalintensive und finanzierungsbedürftige Projekte.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der ökologische Pfad bleibt gegenüber dem Finanzierungsmechanismus nachgelagert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine Quelle belegt eine konkrete ökologische Schutzgrenze oder deren Annäherung.",
+                  "reference_frame": "ökologische Belastungsgrenzen und emissionsarme Investitionen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine relevante Finanzierungssensitivität von Umwelt- oder Energieprojekten voraus.",
+                "reference_space": "USA, kapitalintensive Investitionen und indirekte globale Lieferketten",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Andere Einflussgrößen wie Regulierung, Technologie, Energiepreise und Nachfrage bleiben unverändert.",
+                "source_support": "Die Quellen belegen allgemeine Finanzierungs- und Energiepreiszusammenhänge, aber keinen konkreten Umweltmechanismus dieser Entscheidung.",
+                "limitations": "Es fehlen Emissionsdaten, Investitionsdaten und ein Vergleich von Finanzierungsbedingungen nach Projektart.",
+                "first_order": "Finanzierungskosten könnten Investitionsentscheidungen verändern.",
+                "second_order": "Das könnte die Geschwindigkeit einzelner Energie- oder Infrastrukturprojekte beeinflussen.",
+                "third_order": "Über längere Zeiträume könnten sich Lock-ins oder Verzögerungen ergeben; Richtung und Umfang bleiben offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst ökologische Folgen oder erlaubt eine belastbare Richtungsbestimmung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es liegt kein gleichwertiger positiver oder negativer ökologischer Hauptpfad mit belastbarer Evidenz vor; die Einordnung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Veränderte Finanzierung kann Investitionen mit Umweltbezug verschieben",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Finanzierung kann Investitionen mit Umweltbezug verschieben",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen öffentlichen politischen Druck und die Forderung nach niedrigeren Zinsen, aber keine formale Einschränkung der Fed oder einen gemessenen Vertrauensverlust.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten",
+              "taz-aktuell",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Die Entscheidung kann wegen des öffentlich beschriebenen Gegensatzes zwischen Präsident und Notenbank die Wahrnehmung institutioneller Unabhängigkeit beeinflussen. Ein demokratischer Schaden ist jedoch nicht festgestellt.",
+            "primary_paths": [
+              {
+                "label": "Öffentlicher Druck auf die Fed kann die Wahrnehmung ihrer Unabhängigkeit belasten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wiederholte politische Forderungen nach niedrigeren Zinsen und die Darstellung der Entscheidung als politisch motiviert können institutionelle Zuständigkeiten im öffentlichen Diskurs verschieben.",
+                "recipients": [
+                  "US-Öffentlichkeit",
+                  "Notenbankinstitutionen",
+                  "politische Entscheidungsträger"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Konflikt ist öffentlich sichtbar, aber ein institutioneller Wandel oder Vertrauensverlust ist nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Auseinandersetzung betrifft eine zentrale US-Institution und öffentliche Debatten.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quellen berichten deutliche Forderungen, aber keine formale Intervention.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Wiederholter Druck könnte länger wirken, seine Dauer ist jedoch offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Institutionelle Wahrnehmungen können sich durch spätere Entscheidungen wieder verändern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Zentralbanken sind auf gesetzliche und öffentliche Legitimität angewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Zuständigkeits- und Rechenschaftsordnungen, bleibt aber indirekt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen belegen keine rechtliche Verletzung der Unabhängigkeit; der Schutzpfad betrifft eine mögliche Wahrnehmungs- und Normverschiebung.",
+                  "reference_frame": "institutionelle Unabhängigkeit und demokratische Rechenschaft",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "taz-aktuell",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass öffentliche Forderungen wiederholt werden und die institutionelle Kontroverse politisch weitergeführt wird.",
+                "reference_space": "USA, Verhältnis von Regierung, Präsident und Federal Reserve",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Öffentliche Zuschreibungen beeinflussen die Wahrnehmung institutioneller Zuständigkeiten; eine tatsächliche Kompetenzänderung wird nicht angenommen.",
+                "source_support": "Die Quellen belegen Trumps Forderungen, seine Kritik und den beschriebenen Gegensatz zur Fed.",
+                "limitations": "Keine Umfrage, Verhaltensmessung oder institutionelle Entscheidung belegt einen Vertrauensverlust oder eine Änderung der Fed-Unabhängigkeit.",
+                "first_order": "Die Zinsentscheidung kann die politische Auseinandersetzung über die Fed sichtbar verschärfen.",
+                "second_order": "Wiederholte Kritik könnte die öffentliche Bewertung geldpolitischer Entscheidungen stärker personalisieren.",
+                "third_order": "Bei anhaltendem Druck könnte sich die Norm unabhängiger Geldpolitik in politischen Debatten abschwächen; dieser Pfad bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Die Recherche in den gelieferten Quellen findet öffentliche Kritik, aber keinen belegten institutionellen Eingriff oder messbaren Vertrauensschaden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Die Entscheidung kann institutionelle Gegenwehr und Rechenschaft sichtbar machen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Eine von politischen Forderungen abweichende Zinsentscheidung kann die eigenständige Zuständigkeit der Notenbank öffentlich verdeutlichen.",
+                "recipients": [
+                  "US-Öffentlichkeit",
+                  "Notenbankgremien",
+                  "politische Institutionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche positive Signalwert ergibt sich aus der sichtbaren Abgrenzung, ist aber nicht als demokratische Wirkung gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Entscheidung wird breit berichtet, erreicht aber nicht alle Bürgerinnen und Bürger.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein einzelner Beschluss setzt ein begrenztes institutionelles Signal.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Signalwirkung hängt von folgenden Entscheidungen und Reaktionen ab.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die öffentliche Interpretation kann sich mit neuen Entscheidungen ändern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Der Nutzen betrifft vor allem institutionelle Orientierung und öffentliche Rechenschaft.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Gegenpfad bleibt kommunikativ und verändert keine Zuständigkeit.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen belegen keine demokratische Schutzgrenze, deren Einhaltung durch den Beschluss abschließend gesichert wäre.",
+                  "reference_frame": "institutionelle Rechenschaft und Gewaltenteilung",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Die Öffentlichkeit muss die Entscheidung als institutionelle Eigenständigkeit und nicht nur als politischen Konflikt interpretieren.",
+                "reference_space": "USA, öffentliche und politische Wahrnehmung der Fed",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Institutionelle Abgrenzung kann als Rechenschaftssignal wahrgenommen werden.",
+                "source_support": "Die Quellen berichten, dass die Fed gegen Trumps Zinsforderungen entschied und ihre Unabhängigkeit politisch thematisiert wird.",
+                "limitations": "Es gibt keinen Publikumsnachweis und keine Messung der demokratischen Wirkung.",
+                "first_order": "Die Entscheidung kann die Zuständigkeit der Fed sichtbar machen.",
+                "second_order": "Das könnte die Debatte über unabhängige Institutionen strukturieren.",
+                "third_order": "Eine dauerhafte Stärkung demokratischer Korrekturfähigkeit ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen erlauben nur eine bedingte Modellierung eines möglichen institutionellen Signals.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Pfad einer möglichen Normalisierung politischen Drucks ist stärker als der begrenzte Gegenpfad eines institutionellen Eigenständigkeitssignals; beide bleiben ex ante."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Öffentlicher Druck auf die Fed kann die Wahrnehmung ihrer Unabhängigkeit belasten",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Öffentlicher Druck auf die Fed kann die Wahrnehmung ihrer Unabhängigkeit belasten",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T17:04:51.397Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Bericht über Zinserhöhung, Inflationshintergrund, mögliche Kredit- und Wachstumskanäle sowie Trumps Reaktion."
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Bestätigung der neuen Zinsspanne und Hinweise auf höhere Kredit- sowie Sparzinsen."
+          },
+          {
+            "source_id": "tagesschau-access",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Bestätigung des Zinsschritts sowie Einordnung des Zielkonflikts zwischen Preisstabilität und Beschäftigung."
+          },
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Bericht über politische Reaktion, Inflationsstand und mögliche weitere Zinserhöhung."
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bestätigung, dass die Fed den Leitzins erstmals seit 2023 erhöhte."
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bestätigung des Zinsschritts und des politischen Gegensatzes zu Trump."
+          },
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Einordnung des Zinsschritts als Konflikt zwischen Fed-Chef und US-Präsident."
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bestätigung der Zinserhöhung und des öffentlich beschriebenen Konflikts."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen den Mechanismus höherer Kreditkosten und höherer Sparzinsen, aber keine bereits eingetretene Veränderung bei Haushalten, Investitionen oder Beschäftigung.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten",
+            "zdfheute-nachrichten",
+            "tagesschau-access"
+          ],
+          "rationale": "Der Hauptpfad betrifft Menschen mit variabler Verschuldung und Unternehmen mit Finanzierungsbedarf. Sparende könnten gegenläufig profitieren; die Quellen erlauben aber keine quantitative Verteilungsschätzung.",
+          "primary_paths": [
+            {
+              "label": "Höhere Finanzierungskosten belasten kreditabhängige Haushalte und Unternehmen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein höherer Leitzins kann über Banken und Finanzmärkte Kreditzinsen erhöhen und dadurch verfügbare Einkommen oder Investitionsspielräume verringern.",
+              "recipients": [
+                "kreditabhängige Haushalte",
+                "kleine und mittlere Unternehmen",
+                "Beschäftigte in zinssensitiven Branchen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite ist groß, die konkrete Belastung hängt jedoch von Kreditart, Laufzeit, Einkommen und Reaktion der Finanzmärkte ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kredite und Investitionen betreffen viele Haushalte und Unternehmen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Anhebung beträgt 0,25 Prozentpunkte; individuelle Belastungen bleiben offen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hängt von weiteren Entscheidungen und Vertragslaufzeiten ab.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zinsbedingungen können durch spätere Entscheidungen wieder verändert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Verschuldete Haushalte und finanzierungsabhängige Betriebe sind besonders exponiert.",
+                  "source_ids": [
+                    "zdfheute-nachrichten",
+                    "tagesschau-access"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht über Nachfrage und Investitionen in die Gesamtwirtschaft.",
+                  "source_ids": [
+                    "tagesschau-access",
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen keine konkrete Verletzung einer Schutzgrenze; Belastungen sind als bedingtes Verteilungsrisiko modelliert.",
+                "reference_frame": "Zugang zu notwendiger Finanzierung und wirtschaftlicher Teilhabe",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "zdfheute-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten",
+                "zdfheute-nachrichten",
+                "tagesschau-access"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Banken und Kapitalmärkte den höheren Leitzins an Kreditnehmende weitergeben und die Nachfrage zinssensitiv reagiert.",
+              "reference_space": "USA, Haushalte und Unternehmen mit variabler oder neu aufzunehmender Finanzierung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die geldpolitische Transmission funktioniert grundsätzlich; Umfang und Verteilung der Weitergabe werden nicht unterstellt.",
+              "source_support": "Die Quellen nennen höhere Kreditzinsen, Sparzinsen und mögliche Bremswirkungen; sie messen keine Folgen dieses konkreten Schritts.",
+              "limitations": "Keine Haushalts-, Kredit-, Investitions- oder Beschäftigungsdaten zur konkreten Entscheidung liegen vor.",
+              "first_order": "Kredite könnten teurer werden und Sparen attraktiver werden.",
+              "second_order": "Haushalte könnten Konsum verschieben und Unternehmen Investitionen zurückstellen.",
+              "third_order": "Eine länger anhaltende Straffung könnte Wachstum und Beschäftigung in zinssensitiven Bereichen belasten.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle weist eine bereits eingetretene, kausal zurechenbare Veränderung aus.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Höhere Sparzinsen können Sparerinnen und Sparer begünstigen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Banken könnten höhere Refinanzierungskosten teilweise über bessere Sparzinsen weitergeben.",
+              "recipients": [
+                "Sparerinnen und Sparer",
+                "Haushalte mit liquiden Guthaben"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus wird berichtet, seine tatsächliche Weitergabe und Verteilung sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Viele Haushalte verfügen über Sparguthaben, aber nicht alle.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die konkrete Verzinsung der Guthaben ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Wirkung könnte bei anhaltend höheren Zinsen fortbestehen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Sparzinsen können mit späteren Zinsentscheidungen wieder sinken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Der Nutzen hängt von vorhandenen liquiden Guthaben ab.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad verändert vor allem Haushaltsentscheidungen und nicht unmittelbar Institutionen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein Schutzgrenzeneffekt ist nicht belegt; der Nutzen ist als begrenzter Gegenpfad eingeordnet.",
+                "reference_frame": "Verteilung von Zinsgewinnen und Zinslasten",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Banken müssen die höheren Marktzinsen an Einlagen weitergeben.",
+              "reference_space": "USA, Haushalte mit verzinslichen Einlagen",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Weitergabe an Sparer erfolgt zumindest teilweise.",
+              "source_support": "ZDFheute nennt höhere Zinsen auf Sparvermögen als mögliche Folge höherer Leitzinsen.",
+              "limitations": "Es fehlen Daten zu Einlagenstruktur und tatsächlicher Weitergabe.",
+              "first_order": "Sparguthaben könnten höher verzinst werden.",
+              "second_order": "Einige Haushalte könnten Konsum zugunsten des Sparens verschieben.",
+              "third_order": "Verteilungseffekte zwischen Schuldnern und Sparenden könnten sichtbarer werden.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle beschreibt den Mechanismus, aber keine eingetretene oder quantifizierte Wirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Kreditpfad ist wegen der möglichen Belastung verschuldeter Haushalte und Investitionen stärker als der begrenzte, ungleich verteilte Nutzen für Sparer."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Höhere Finanzierungskosten belasten kreditabhängige Haushalte und Unternehmen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Höhere Finanzierungskosten belasten kreditabhängige Haushalte und Unternehmen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Quellen enthalten keinen belastbaren Umweltindikator. Ein indirekter Investitions- oder Energiepreis-Pfad bleibt als Wissensgrenze offen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten",
+            "tagesschau-access"
+          ],
+          "rationale": "Ein direkter ökologischer Effekt der Zinsentscheidung ist nicht belegt. Indirekte Wirkungen über Investitionen, Nachfrage oder Energiepreise sind möglich, aber ohne Richtung und Größenordnung nicht belastbar zu bestimmen.",
+          "primary_paths": [
+            {
+              "label": "Veränderte Finanzierung kann Investitionen mit Umweltbezug verschieben",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Zinskosten können Investitionen in energieintensive oder emissionsarme Projekte unterschiedlich beeinflussen.",
+              "recipients": [
+                "Unternehmen",
+                "Energie- und Infrastrukturprojekte",
+                "betroffene Regionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt und hängt von Projektfinanzierung, Energiepreisen und Investitionsentscheidungen ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Investitionsbedingungen betreffen mehrere Branchen, nicht aber jede Aktivität.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Für Umweltinvestitionen ist keine konkrete Zinswirkung ausgewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Finanzierungsbedingungen können über Projektlaufzeiten nachwirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Investitionsentscheidungen können später angepasst oder nachgeholt werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders abhängig wären kapitalintensive und finanzierungsbedürftige Projekte.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der ökologische Pfad bleibt gegenüber dem Finanzierungsmechanismus nachgelagert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine Quelle belegt eine konkrete ökologische Schutzgrenze oder deren Annäherung.",
+                "reference_frame": "ökologische Belastungsgrenzen und emissionsarme Investitionen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine relevante Finanzierungssensitivität von Umwelt- oder Energieprojekten voraus.",
+              "reference_space": "USA, kapitalintensive Investitionen und indirekte globale Lieferketten",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Andere Einflussgrößen wie Regulierung, Technologie, Energiepreise und Nachfrage bleiben unverändert.",
+              "source_support": "Die Quellen belegen allgemeine Finanzierungs- und Energiepreiszusammenhänge, aber keinen konkreten Umweltmechanismus dieser Entscheidung.",
+              "limitations": "Es fehlen Emissionsdaten, Investitionsdaten und ein Vergleich von Finanzierungsbedingungen nach Projektart.",
+              "first_order": "Finanzierungskosten könnten Investitionsentscheidungen verändern.",
+              "second_order": "Das könnte die Geschwindigkeit einzelner Energie- oder Infrastrukturprojekte beeinflussen.",
+              "third_order": "Über längere Zeiträume könnten sich Lock-ins oder Verzögerungen ergeben; Richtung und Umfang bleiben offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst ökologische Folgen oder erlaubt eine belastbare Richtungsbestimmung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es liegt kein gleichwertiger positiver oder negativer ökologischer Hauptpfad mit belastbarer Evidenz vor; die Einordnung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Finanzierung kann Investitionen mit Umweltbezug verschieben",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Veränderte Finanzierung kann Investitionen mit Umweltbezug verschieben",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen öffentlichen politischen Druck und die Forderung nach niedrigeren Zinsen, aber keine formale Einschränkung der Fed oder einen gemessenen Vertrauensverlust.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten",
+            "taz-aktuell",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Die Entscheidung kann wegen des öffentlich beschriebenen Gegensatzes zwischen Präsident und Notenbank die Wahrnehmung institutioneller Unabhängigkeit beeinflussen. Ein demokratischer Schaden ist jedoch nicht festgestellt.",
+          "primary_paths": [
+            {
+              "label": "Öffentlicher Druck auf die Fed kann die Wahrnehmung ihrer Unabhängigkeit belasten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wiederholte politische Forderungen nach niedrigeren Zinsen und die Darstellung der Entscheidung als politisch motiviert können institutionelle Zuständigkeiten im öffentlichen Diskurs verschieben.",
+              "recipients": [
+                "US-Öffentlichkeit",
+                "Notenbankinstitutionen",
+                "politische Entscheidungsträger"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Konflikt ist öffentlich sichtbar, aber ein institutioneller Wandel oder Vertrauensverlust ist nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Auseinandersetzung betrifft eine zentrale US-Institution und öffentliche Debatten.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quellen berichten deutliche Forderungen, aber keine formale Intervention.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Wiederholter Druck könnte länger wirken, seine Dauer ist jedoch offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Institutionelle Wahrnehmungen können sich durch spätere Entscheidungen wieder verändern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Zentralbanken sind auf gesetzliche und öffentliche Legitimität angewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Zuständigkeits- und Rechenschaftsordnungen, bleibt aber indirekt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen keine rechtliche Verletzung der Unabhängigkeit; der Schutzpfad betrifft eine mögliche Wahrnehmungs- und Normverschiebung.",
+                "reference_frame": "institutionelle Unabhängigkeit und demokratische Rechenschaft",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten",
+                "taz-aktuell",
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass öffentliche Forderungen wiederholt werden und die institutionelle Kontroverse politisch weitergeführt wird.",
+              "reference_space": "USA, Verhältnis von Regierung, Präsident und Federal Reserve",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Öffentliche Zuschreibungen beeinflussen die Wahrnehmung institutioneller Zuständigkeiten; eine tatsächliche Kompetenzänderung wird nicht angenommen.",
+              "source_support": "Die Quellen belegen Trumps Forderungen, seine Kritik und den beschriebenen Gegensatz zur Fed.",
+              "limitations": "Keine Umfrage, Verhaltensmessung oder institutionelle Entscheidung belegt einen Vertrauensverlust oder eine Änderung der Fed-Unabhängigkeit.",
+              "first_order": "Die Zinsentscheidung kann die politische Auseinandersetzung über die Fed sichtbar verschärfen.",
+              "second_order": "Wiederholte Kritik könnte die öffentliche Bewertung geldpolitischer Entscheidungen stärker personalisieren.",
+              "third_order": "Bei anhaltendem Druck könnte sich die Norm unabhängiger Geldpolitik in politischen Debatten abschwächen; dieser Pfad bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Die Recherche in den gelieferten Quellen findet öffentliche Kritik, aber keinen belegten institutionellen Eingriff oder messbaren Vertrauensschaden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Die Entscheidung kann institutionelle Gegenwehr und Rechenschaft sichtbar machen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Eine von politischen Forderungen abweichende Zinsentscheidung kann die eigenständige Zuständigkeit der Notenbank öffentlich verdeutlichen.",
+              "recipients": [
+                "US-Öffentlichkeit",
+                "Notenbankgremien",
+                "politische Institutionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche positive Signalwert ergibt sich aus der sichtbaren Abgrenzung, ist aber nicht als demokratische Wirkung gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Entscheidung wird breit berichtet, erreicht aber nicht alle Bürgerinnen und Bürger.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein einzelner Beschluss setzt ein begrenztes institutionelles Signal.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Signalwirkung hängt von folgenden Entscheidungen und Reaktionen ab.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die öffentliche Interpretation kann sich mit neuen Entscheidungen ändern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Der Nutzen betrifft vor allem institutionelle Orientierung und öffentliche Rechenschaft.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Gegenpfad bleibt kommunikativ und verändert keine Zuständigkeit.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen keine demokratische Schutzgrenze, deren Einhaltung durch den Beschluss abschließend gesichert wäre.",
+                "reference_frame": "institutionelle Rechenschaft und Gewaltenteilung",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten",
+                "tagesspiegel-home"
+              ],
+              "condition": "Die Öffentlichkeit muss die Entscheidung als institutionelle Eigenständigkeit und nicht nur als politischen Konflikt interpretieren.",
+              "reference_space": "USA, öffentliche und politische Wahrnehmung der Fed",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Institutionelle Abgrenzung kann als Rechenschaftssignal wahrgenommen werden.",
+              "source_support": "Die Quellen berichten, dass die Fed gegen Trumps Zinsforderungen entschied und ihre Unabhängigkeit politisch thematisiert wird.",
+              "limitations": "Es gibt keinen Publikumsnachweis und keine Messung der demokratischen Wirkung.",
+              "first_order": "Die Entscheidung kann die Zuständigkeit der Fed sichtbar machen.",
+              "second_order": "Das könnte die Debatte über unabhängige Institutionen strukturieren.",
+              "third_order": "Eine dauerhafte Stärkung demokratischer Korrekturfähigkeit ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen erlauben nur eine bedingte Modellierung eines möglichen institutionellen Signals.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Pfad einer möglichen Normalisierung politischen Drucks ist stärker als der begrenzte Gegenpfad eines institutionellen Eigenständigkeitssignals; beide bleiben ex ante."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Öffentlicher Druck auf die Fed kann die Wahrnehmung ihrer Unabhängigkeit belasten",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Öffentlicher Druck auf die Fed kann die Wahrnehmung ihrer Unabhängigkeit belasten",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T17:02:04.758Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T18:01:58.000Z",
+      "last_updated": "2026-09-17T17:04:51.390Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-2d8557a8f112228b791c",
+      "case_file": null,
+      "source_published_at": "2026-09-16T18:02:17.000Z",
+      "published_at": "2026-09-16T19:25:26.660Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "tagesschau-access"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 7,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesschau-access",
+              "tagesschau-access"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob weitere Zinsschritte der Fed folgen.",
+          "source_id": "zdfheute-nachrichten",
+          "measurable_indicator": "Nächste Zinsentscheidung und veröffentlichte geldpolitische Signale der Fed",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0051970661e37bf0",
+          "announced_at": "2026-09-16T18:06:00.000Z",
+          "follow_up_date": "2026-09-23T19:25:26.660Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Eine weitere Leitzinserhöhung der US-Notenbank bleibt möglich.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Die nächste veröffentlichte Leitzinsentscheidung der US-Notenbank",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-208fa0513f057323",
+          "announced_at": "2026-09-16T20:45:28.000Z",
+          "follow_up_date": "2026-09-24T17:04:51.390Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-wirtschaft--us-notenbank-erhoeht-erstmals-seit-juli-2023-wieder-leitzins-38263562.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T20:47:44.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-16061911.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T18:02:17.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/us-notenbank-fed-erhoeht-leitzins-erstmals-seit-2023-a-c72447c1-ff8e-4fdb-a5c1-9745d77ce5b9",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T18:13:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-notenbank-erhoeht-erstmals-seit-juli-2023-wieder-leitzins-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T20:45:28.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/fed-entscheidung-leitzins-usa-notenbank-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T21:48:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eilmeldung-fed-leitzins-erhoeht-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T18:30:02.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/fed-leitzins-erhoeht-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T00:15:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/gegen-wunsch-von-trump-us-notenbank-fed-hebt-erstmals-seit-2023-leitzins-an-16061952.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T18:23:34.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-notenbank-erhoeht-erstmals-seit-juli-2023-wieder-leitzins-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T21:34:58.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-notenbank-erhoeht-erstmals-seit-juli-2023-wieder-leitzins-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T16:46:29.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/ausland/fed-leitzins-us-notenbank-erhoeht-zins-auf-bis-zu-400-prozent/100254802.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T18:46:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Leitzins-in-den-USA/!6213894",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T07:24:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-85695a3a0ab0befa",
       "title_image": {
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-85695a3a0ab0befa-9ca3a8d4b9322199-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-85695a3a0ab0befa-259ff91151ac73c4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-85695a3a0ab0befa-571c1327b8dd7bdc-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "deutschland-und-kanada-investieren-millionen-in-ki-projekt-lawzero-b0befa",
@@ -36239,1879 +37976,6 @@
           "url": "https://www.deutschlandfunk.de/ministerpraesident-kretschmer-kritisiert-glaxosmithkline-wegen-schliessung-von-standort-dresden-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-16T20:11:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-cf7f064177001cb5",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf7f064177001cb5-7176282abceb2093-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf7f064177001cb5-f5310cfb8353a74f-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf7f064177001cb5-9f852eb6651ff1bc-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-001cb5",
-      "title": "US-Notenbank Fed erhöht Leitzins erstmals seit 2023",
-      "source_summary": "Mehrere unabhängige journalistische Berichte melden, dass die US-Notenbank Fed den Leitzins erstmals seit 2023 erhöht hat. Deutschlandfunk und ZDFheute nennen eine Anhebung um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent. Als Anlass wird anhaltend hohe Inflation genannt.\n\nDie Berichte ordnen die Entscheidung zugleich in den politischen Druck auf die Fed ein. Donald Trump hatte laut ZDFheute und Deutschlandfunk niedrigere Zinsen gefordert; Fed-Chef Kevin Warsh gerät demnach auf Konfrontationskurs mit dem Präsidenten.\n\nOffen bleibt, ob weitere Erhöhungen folgen und wie stark sich die Entscheidung auf Kredite, Sparvermögen, Wirtschaft und Arbeitsmarkt auswirkt. Die Quellen berichten über mögliche Folgen, liefern in den vorliegenden Ausschnitten aber keine belastbare Wirkungsbilanz.",
-      "summary": "Die US-Notenbank Fed erhöht den Leitzins um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent. Die Entscheidung könnte Kredite, Sparen und das Verhältnis der Notenbank zur Regierung beeinflussen; konkrete Folgen bleiben offen.",
-      "detail_summary": "Die US-Notenbank Fed hat den Leitzins erstmals seit 2023 um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent angehoben. Deutschlandfunk und ZDFheute führen anhaltend hohe Inflation als Anlass an. Für Haushalte und Unternehmen könnten Kredite teurer werden, während Sparguthaben höhere Zinsen abwerfen könnten. Zugleich steht Fed-Chef Kevin Warsh laut den Berichten im politischen Spannungsfeld mit Donald Trump, der niedrigere Zinsen gefordert hatte. Ob die Maßnahme die Inflation dämpft, Wachstum und Arbeitsmarkt belastet oder weitere Zinsschritte auslöst, ist anhand der vorliegenden Ausschnitte nicht belegt.",
-      "why_relevant": "Der Zinsschritt verändert die geldpolitischen Rahmenbedingungen und berührt Kreditkosten, Sparen, Inflation, Wirtschaft und die institutionelle Unabhängigkeit der Fed.",
-      "topic": [
-        "Geopolitik",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Erhöhung des US-Leitzinses um 0,25 Prozentpunkte auf 3,75 bis 4,00 Prozent",
-        "evaluation_target": {
-          "label": "geldpolitische Leitzinserhöhung der US-Notenbank",
-          "type": "decision"
-        },
-        "baseline": "Leitzins vor der gemeldeten Entscheidung",
-        "counterfactual": "Ohne die Erhöhung bliebe der Leitzins zunächst auf dem vorherigen Niveau; Kredit-, Spar- und Inflationseffekte würden sich anders entwickeln.",
-        "reference_frame": [
-          "Preisstabilität",
-          "Beschäftigung und Wirtschaftsentwicklung",
-          "Zugang zu Finanzierung",
-          "institutionelle Unabhängigkeit der Geldpolitik"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "high",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Die Zinsänderung könnte Kreditnehmende, Sparende, Beschäftigte und Unternehmen unterschiedlich treffen. Verteilung, Verschuldung und Zugang zu Hilfe sind in den Quellen nicht quantifiziert.",
-            "planet": "Über Finanzierungskosten könnte die Entscheidung Investitionen und damit mittelbar Energie- und Ressourcenpfade beeinflussen. Ein belastbarer ökologischer Effekt ist nicht belegt.",
-            "democracy": "Der offene Konflikt zwischen Fed und Präsident könnte die Wahrnehmung institutioneller Unabhängigkeit prägen. Eine tatsächliche Schwächung oder Stärkung ist nicht nachgewiesen."
-          },
-          "central_dimensions": [
-            "human",
-            "democracy"
-          ],
-          "first_order": "Die Entscheidung verändert den geldpolitischen Preis von Finanzierung und Sparen.",
-          "second_order": "Über Nachfrage, Investitionen und Inflation könnten sich Folgen für Haushalte, Unternehmen und Beschäftigung ergeben.",
-          "third_order": "Bei anhaltendem politischem Druck könnte sich die Rolle unabhängiger Institutionen im wirtschaftspolitischen System verändern; dies bleibt bedingt und offen.",
-          "enablement": [
-            "enables_institutional_control",
-            "normalisation_effect"
-          ],
-          "counter_evidence": [
-            "Die Quellen nennen unterschiedliche Erwartungen zu weiteren Zinsschritten.",
-            "Ein einzelner Zinsschritt belegt weder eine dauerhafte Inflationsdämpfung noch eine institutionelle Kursänderung.",
-            "Für planetare Folgen liegt kein belastbarer direkter Beleg vor."
-          ],
-          "source_independence": "Die Kernentscheidung wird von Deutschlandfunk und ZDFheute sowie weiteren journalistischen Quellen berichtet. Stern und Tagesspiegel weisen möglicherweise gemeinsame Wortlautbasis auf; die beiden tagesschau-Einträge stammen aus derselben Herkunft und zählen nicht als unabhängige Bestätigung.",
-          "institutional_status": "Die Fed-Entscheidung ist als beschlossener geldpolitischer Schritt berichtet. Ein belegtes Ergebnis für Inflation, Wachstum, Beschäftigung oder institutionelle Unabhängigkeit liegt nicht vor."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "mixed",
-            "dominance": "balanced",
-            "magnitude": 2,
-            "evidence": "medium",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quellen belegen den geldpolitischen Mechanismus, aber nicht die Größe oder Verteilung der Folgen für Haushalte, Unternehmen und Beschäftigte.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten",
-              "zdfheute-nachrichten"
-            ],
-            "rationale": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten; höhere Sparzinsen könnten Sparende begünstigen. Die Verteilung und der Eintritt sind offen.",
-            "primary_paths": [
-              {
-                "label": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Ein höherer Leitzins könnte über Banken und Finanzmärkte die Kosten neuer oder variabel verzinster Kredite erhöhen.",
-                "recipients": [
-                  "verschuldete Haushalte",
-                  "Unternehmen",
-                  "Beschäftigte"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Breite Betroffenheit ist plausibel, die konkrete Stärke hängt von Kreditstruktur und Weitergabe ab."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Kreditkosten können viele Haushalte und Unternehmen erreichen.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Die Quellen nennen höhere Kreditkosten, quantifizieren deren Belastung aber nicht.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die Dauer hängt von weiteren Zinsentscheidungen und Vertragslaufzeiten ab.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Kredit- und Nachfrageeffekte wären grundsätzlich politisch und vertraglich umkehrbar.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Stärker verschuldete Haushalte und Unternehmen könnten empfindlicher reagieren.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad reicht über Finanzierung in Nachfrage und Beschäftigung.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete Verletzung eines Schutzguts ist nicht belegt; Verteilungsrisiken bleiben bedingt.",
-                  "reference_frame": "Zugang zu tragbarer Finanzierung",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "medium",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "condition": "Der Pfad setzt eine Weitergabe des höheren Leitzinses an Kreditnehmende voraus.",
-                "reference_space": "USA, Haushalte und Unternehmen mit Kreditbedarf",
-                "time_horizon": "kurz- bis mittelfristig",
-                "path_quality": [
-                  "direct",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Banken und Finanzmärkte geben den Zinsschritt teilweise weiter.",
-                "source_support": "Die Quellen nennen höhere Kreditkosten als mögliche Wirkung, nicht als gemessene Folge.",
-                "limitations": "Keine Angaben zu Betroffenenzahl, Kreditstruktur oder tatsächlicher Weitergabe.",
-                "first_order": "Kredite könnten teurer werden.",
-                "second_order": "Investitionen und Konsum könnten zurückgehen und Beschäftigung belasten.",
-                "third_order": "Länger anhaltende Finanzierungshürden könnten soziale und wirtschaftliche Ungleichheiten verstärken.",
-                "research_pass": "second_pass",
-                "research_result": "Keine gelieferten Daten erlauben eine Quantifizierung der Belastung.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 13,
-                  "divisor": 6,
-                  "raw": 2.1666666666666665,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              },
-              {
-                "label": "Höhere Sparzinsen könnten Sparerträge erhöhen",
-                "direction": "positive",
-                "type": "counter_path",
-                "mechanism": "Ein höherer Leitzins könnte über Bankprodukte und Kapitalmärkte zu höheren Zinsen auf Sparvermögen beitragen.",
-                "recipients": [
-                  "Sparende",
-                  "Haushalte mit Geldvermögen"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Der Nutzen könnte auf Haushalte mit Sparvermögen begrenzt bleiben und wird nicht quantifiziert."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Sparprodukte sind weit verbreitet, aber nicht alle Haushalte verfügen über Rücklagen.",
-                    "source_ids": [
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die Quelle nennt höhere Sparzinsen ohne Größenordnung.",
-                    "source_ids": [
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die Dauer hängt von der Weitergabe und dem weiteren Zinskurs ab.",
-                    "source_ids": [
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Zinsvorteile wären bei späteren Kursänderungen reversibel.",
-                    "source_ids": [
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Der mögliche Vorteil setzt vorhandenes Sparvermögen voraus.",
-                    "source_ids": [
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Der Pfad betrifft vor allem Erträge auf Sparvermögen.",
-                    "source_ids": [
-                      "zdfheute-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine maßgebliche Schutzgrenze wird durch höhere Sparzinsen nicht erkennbar berührt.",
-                  "reference_frame": "Verteilung von Zinsgewinnen",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "zdfheute-nachrichten"
-                ],
-                "condition": "Banken und Kapitalmärkte müssen den Zinsschritt an Sparprodukte weitergeben.",
-                "reference_space": "USA, Haushalte mit Sparvermögen",
-                "time_horizon": "kurz- bis mittelfristig",
-                "path_quality": [
-                  "direct",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Die Weitergabe an Einlagen erfolgt teilweise.",
-                "source_support": "ZDFheute nennt höhere Zinsen auf Sparvermögen als mögliche Auswirkung.",
-                "limitations": "Keine Daten zur Weitergabe, Verteilung oder realen Verzinsung.",
-                "first_order": "Sparerträge könnten steigen.",
-                "second_order": "Mehr Zinserträge könnten die finanzielle Lage einzelner Haushalte stützen.",
-                "third_order": "Der Verteilungseffekt könnte die Unterschiede zwischen Sparenden und Verschuldeten verstärken.",
-                "research_pass": "second_pass",
-                "research_result": "Die gelieferten Quellen bestätigen den Mechanismus, aber nicht seine Größe oder Verteilung.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 7,
-                  "divisor": 6,
-                  "raw": 1.1666666666666667,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": true,
-              "protection_boundary_decisive": false,
-              "rationale": "Belastung durch Kredite und möglicher Vorteil für Sparende sind vergleichbare, aber unterschiedlich verteilte Pfade; der negative Hauptpfad ist wegen Reichweite und Verwundbarkeit stärker."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "± gegenläufig",
-              "shortPathLabel": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten",
-              "direction": "mixed"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten",
-            "display_direction": "mixed",
-            "label": "± gegenläufig",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "mittel",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "± gegenläufig"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "open",
-            "dominance": "none",
-            "magnitude": 1,
-            "evidence": "not_assessable",
-            "likelihood": "unknown",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die gelieferten Quellen enthalten keinen belastbaren Umwelt-, Emissions- oder Ressourcenbeleg. Ein indirekter Finanzierungsmechanismus bleibt als Hypothese offen.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten",
-              "zdfheute-nachrichten"
-            ],
-            "rationale": "Zinsen könnten Investitionen und damit mittelbar emissions- oder ressourcenintensive Aktivitäten beeinflussen. Richtung und Größe sind ohne sektorale Daten nicht bestimmbar.",
-            "primary_paths": [
-              {
-                "label": "Veränderte Finanzierung könnte Investitionsentscheidungen und Ressourcenpfade beeinflussen",
-                "direction": "open",
-                "type": "main_path",
-                "mechanism": "Zinsänderungen könnten die Finanzierung von Unternehmen und Projekten verteuern oder umlenken.",
-                "recipients": [
-                  "Unternehmen",
-                  "Investoren",
-                  "energie- und ressourcenintensive Projekte"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Ein indirekter Pfad ist plausibel, aber ohne Angaben zu Investitionssektoren und Projekten schwach bestimmt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Finanzierungskosten wirken potenziell über viele Investitionen.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die Quellen belegen keine konkrete ökologische Intensität.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Die Dauer hängt von weiteren Zins- und Investitionsentscheidungen ab.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Finanzierungsbedingungen sind grundsätzlich veränderbar und reversibel.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Besonders betroffene Umweltgüter oder Gruppen werden nicht benannt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Der ökologische Pfad ist nur indirekt über Investitionsentscheidungen plausibel.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzverletzung ist in den Quellen belegt.",
-                  "reference_frame": "Emissionen und Ressourcenverbrauch",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "unknown",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "condition": "Der Pfad setzt eine Veränderung sektoraler Investitionen durch Finanzierungskosten voraus.",
-                "reference_space": "USA, finanzierte Investitionen und verbundene Lieferketten",
-                "time_horizon": "mittel- bis langfristig",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Finanzierungskosten beeinflussen die Auswahl und Umsetzung von Investitionen.",
-                "source_support": "Die Quellen belegen den Zinsmechanismus, nicht seine ökologischen Folgen.",
-                "limitations": "Keine Emissions-, Energie-, Ressourcen- oder Investitionsdaten liegen vor.",
-                "first_order": "Investitionen könnten sich verteuern oder verschieben.",
-                "second_order": "Sektorale Produktions- und Energiepfade könnten sich verändern.",
-                "third_order": "Langfristige ökologische Rückkopplungen sind ohne Projektdaten nicht seriös bestimmbar.",
-                "research_pass": "second_pass",
-                "research_result": "Keine der gelieferten Quellen enthält eine belastbare ökologische Wirkungsanalyse.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 6,
-                  "divisor": 6,
-                  "raw": 1,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              },
-              {
-                "label": "Keine belegte direkte Umweltwirkung der Entscheidung",
-                "direction": "neutral",
-                "type": "counter_path",
-                "mechanism": "Ohne nachgewiesene Veränderung konkreter Investitionen bleibt eine direkte Umweltwirkung im gelieferten Material aus.",
-                "recipients": [
-                  "Umweltgüter",
-                  "betroffene Gemeinschaften"
-                ],
-                "magnitude": 0,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 0,
-                  "rationale": "Für den unmittelbaren Zeitraum ist keine direkte Umweltveränderung belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 0,
-                    "rationale": "Keine direkte ökologische Reichweite ist belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 0,
-                    "rationale": "Keine konkrete ökologische Intensität ist belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 0,
-                    "rationale": "Keine Dauer einer Umweltwirkung ist belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Keine irreversible Umweltveränderung ist belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 0,
-                    "rationale": "Keine besonders verwundbare Umweltgruppe ist benannt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 0,
-                    "rationale": "Keine direkte ökologische Systemtiefe ist belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Mangels Umweltbefund ist keine Schutzgrenze entscheidend.",
-                  "reference_frame": "ökologische Schutzgüter",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "very_low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "condition": "Gilt nur für den unmittelbaren, in den Quellen beschriebenen Entscheidungsbefund.",
-                "reference_space": "in den gelieferten Berichten beschriebener Zeitraum",
-                "time_horizon": "unmittelbar",
-                "path_quality": [
-                  "weak",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Keine nicht berichtete Investitions- oder Produktionsänderung wird unterstellt.",
-                "source_support": "Die Quellen enthalten keinen Umweltbefund.",
-                "limitations": "Das Fehlen eines Belegs ist kein Nachweis langfristiger Umweltneutralität.",
-                "first_order": "Keine direkte Umweltänderung ist belegt.",
-                "second_order": "Indirekte Investitionspfade bleiben offen.",
-                "third_order": "Keine Kaskade darf aus dem Material abgeleitet werden.",
-                "research_pass": "second_pass",
-                "research_result": "Gezielte Prüfung der gelieferten Quellen ergab keinen Umweltbeleg.",
-                "negligibility_rationale": "Im unmittelbar berichteten Entscheidungsereignis ist keine direkte Umweltveränderung belegt.",
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 0,
-                  "divisor": 6,
-                  "raw": 0,
-                  "rounded": 0,
-                  "protection_floor": 0,
-                  "final": 0
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": null,
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 1,
-              "directionLabel": "? Richtung offen",
-              "shortPathLabel": "Veränderte Finanzierung könnte Investitionsentscheidungen und Ressourcenpfade beeinflussen",
-              "direction": "open"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Veränderte Finanzierung könnte Investitionsentscheidungen und Ressourcenpfade beeinflussen",
-            "display_direction": "open",
-            "label": "? Richtung offen",
-            "magnitude_label": "sehr gering",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "nicht belastbar bestimmt",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "? Richtung offen"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "mixed",
-            "dominance": "balanced",
-            "magnitude": 3,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quellen belegen politischen Druck und die öffentliche Betonung der Fed-Unabhängigkeit, aber keine eingetretene institutionelle Veränderung oder messbare Vertrauenswirkung.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten",
-              "zdfheute-nachrichten"
-            ],
-            "rationale": "Die Entscheidung könnte die Unabhängigkeit der Fed sichtbar machen, zugleich aber den Konflikt mit der Regierung verschärfen. Richtung und Dauer der institutionellen Wirkung bleiben offen.",
-            "primary_paths": [
-              {
-                "label": "Der Zinsschritt könnte die institutionelle Unabhängigkeit der Fed sichtbar stützen",
-                "direction": "positive",
-                "type": "main_path",
-                "mechanism": "Eine Entscheidung gegen den politischen Wunsch nach niedrigeren Zinsen könnte als eigenständige Ausübung des geldpolitischen Mandats wahrgenommen werden.",
-                "recipients": [
-                  "Fed",
-                  "Öffentlichkeit",
-                  "politische Institutionen"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die Entscheidung ist sichtbar und institutionell relevant, belegt aber noch keine dauerhafte Vertrauenswirkung."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Die Entscheidung betrifft eine zentrale öffentliche Institution und wird breit berichtet.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Der politische Gegensatz wird berichtet, seine gesellschaftliche Wirkung aber nicht gemessen.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Eine dauerhafte Wirkung hängt von weiteren Entscheidungen und Reaktionen ab.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Wahrnehmungen und institutionelle Signale können sich durch spätere Entscheidungen ändern.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Institutionelles Vertrauen kann unter offenem politischem Druck empfindlich reagieren.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Der Pfad berührt die Beziehung zwischen Regierung und unabhängiger Notenbank.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete Verletzung der institutionellen Unabhängigkeit ist nicht belegt.",
-                  "reference_frame": "Unabhängigkeit der Geldpolitik",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "condition": "Der Pfad setzt voraus, dass die Entscheidung als eigenständige institutionelle Entscheidung wahrgenommen wird.",
-                "reference_space": "USA, Fed und politische Öffentlichkeit",
-                "time_horizon": "kurz- bis mittelfristig",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Öffentliche Wahrnehmung und politische Reaktionen folgen der berichteten Konfliktlinie.",
-                "source_support": "Die Quellen berichten politischen Druck und die Bedeutung der Fed-Unabhängigkeit, nicht deren Wirkung auf Vertrauen.",
-                "limitations": "Keine Umfragen, Verhaltensdaten oder institutionellen Folgemessungen liegen vor.",
-                "first_order": "Die Entscheidung setzt ein sichtbares institutionelles Signal.",
-                "second_order": "Das Signal könnte Erwartungen an politische Einflussnahme oder Unabhängigkeit prägen.",
-                "third_order": "Wiederholter Druck könnte die demokratische Korrekturfähigkeit wirtschaftspolitischer Institutionen verändern; dies ist nicht belegt.",
-                "research_pass": "second_pass",
-                "research_result": "Keine gelieferte Quelle misst Vertrauen oder institutionelle Folgen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 13,
-                  "divisor": 6,
-                  "raw": 2.1666666666666665,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              },
-              {
-                "label": "Anhaltender politischer Druck könnte die Unabhängigkeit der Fed schwächen",
-                "direction": "negative",
-                "type": "counter_path",
-                "mechanism": "Wiederholte Forderungen nach einer bestimmten Zinsentscheidung könnten die öffentliche und politische Erwartung direkter Einflussnahme verstärken.",
-                "recipients": [
-                  "Fed",
-                  "Regierung",
-                  "Öffentlichkeit"
-                ],
-                "magnitude": 3,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die Quellen berichten wiederholten Druck, aber keine eingetretene institutionelle Schwächung."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Der Konflikt betrifft eine zentrale wirtschaftspolitische Institution.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Der berichtete Druck ist politisch sichtbar, aber nicht institutionell quantifiziert.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die Dauer hängt von weiteren öffentlichen Forderungen und Entscheidungen ab.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Vertrauens- und Normeffekte könnten länger nachwirken, wären aber nicht zwingend irreversibel.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Institutionelle Unabhängigkeit kann unter wiederholtem politischem Druck verwundbar sein.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Der Pfad reicht von Kommunikation zu institutionellen Entscheidungsnormen.",
-                    "source_ids": [
-                      "dlf-nachrichten",
-                      "zdfheute-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Die Quellen belegen Druck, aber keine konkrete Überschreitung einer institutionellen Schutzgrenze.",
-                  "reference_frame": "institutionelle Unabhängigkeit und demokratische Rechenschaft",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "condition": "Der Pfad setzt anhaltenden oder zunehmenden politischen Druck und eine entsprechende institutionelle Reaktion voraus.",
-                "reference_space": "USA, Regierung, Fed und Öffentlichkeit",
-                "time_horizon": "mittel- bis langfristig",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Wiederholung politischer Forderungen könnte Normen und Vertrauen beeinflussen.",
-                "source_support": "Die Quellen berichten Druck und Sorgen über politische Steuerung, aber keinen eingetretenen Schaden.",
-                "limitations": "Keine Daten zur Wiederholung außerhalb der vorliegenden Berichte und keine Messung institutioneller Folgen.",
-                "first_order": "Politische Forderungen könnten die Fed öffentlich unter Druck setzen.",
-                "second_order": "Das könnte Erwartungen an die Entscheidungsautonomie verändern.",
-                "third_order": "Eine dauerhafte Normalisierung politischer Einflussnahme könnte institutionelle Korrekturfähigkeit schwächen; das bleibt eine Hypothese.",
-                "research_pass": "second_pass",
-                "research_result": "Die Quellen liefern keine unabhängige Messung einer eingetretenen Vertrauens- oder Autonomieveränderung.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 15,
-                  "divisor": 6,
-                  "raw": 2.5,
-                  "rounded": 3,
-                  "protection_floor": 0,
-                  "final": 3
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": true,
-              "protection_boundary_decisive": false,
-              "rationale": "Sichtbare Eigenständigkeit und möglicher Vertrauensdruck sind vergleichbare institutionelle Pfade. Beide bleiben ohne Messung offen; kein Pfad darf als eingetretene Wirkung dargestellt werden."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 3,
-              "directionLabel": "± gegenläufig",
-              "shortPathLabel": "Der Zinsschritt könnte die institutionelle Unabhängigkeit der Fed sichtbar stützen",
-              "direction": "mixed"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Der Zinsschritt könnte die institutionelle Unabhängigkeit der Fed sichtbar stützen",
-            "display_direction": "mixed",
-            "label": "± gegenläufig",
-            "magnitude_label": "deutlich",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "± gegenläufig"
-          }
-        },
-        "observed_effects": [],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-16T19:25:26.666Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "dlf-nachrichten",
-            "functions": [
-              "event",
-              "mechanism",
-              "reference"
-            ],
-            "supported_claim": "Belegt Zinsschritt, Zinsspanne, Inflationsbezug, mögliche Kredit- und Beschäftigungsmechanismen sowie politischen Druck."
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "functions": [
-              "event",
-              "mechanism",
-              "reference",
-              "counter_evidence"
-            ],
-            "supported_claim": "Belegt Zinsschritt und Zinsspanne, nennt mögliche Wirkungen auf Kredite und Sparen sowie unterschiedliche Erwartungen zu weiteren Schritten."
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "functions": [
-              "event",
-              "counter_evidence"
-            ],
-            "supported_claim": "Berichtet Zinserhöhung und macht zugleich deutlich, dass sie zuvor nicht sicher war."
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Berichtet den gleichen Kern der Zinserhöhung und die zuvor erwartete, aber nicht sichere Entscheidung."
-          },
-          {
-            "source_id": "spiegel-schlagzeilen",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Berichtet die Zinserhöhung und die politische Konfrontation als journalistische Einordnung."
-          },
-          {
-            "source_id": "tagesschau-access",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Berichtet Zinserhöhung und neue Zinsspanne; die beiden Einträge werden wegen gemeinsamer Herkunft nicht als unabhängige Bestätigung gezählt."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Hohe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "mixed",
-          "dominance": "balanced",
-          "magnitude": 2,
-          "evidence": "medium",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quellen belegen den geldpolitischen Mechanismus, aber nicht die Größe oder Verteilung der Folgen für Haushalte, Unternehmen und Beschäftigte.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten",
-            "zdfheute-nachrichten"
-          ],
-          "rationale": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten; höhere Sparzinsen könnten Sparende begünstigen. Die Verteilung und der Eintritt sind offen.",
-          "primary_paths": [
-            {
-              "label": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Ein höherer Leitzins könnte über Banken und Finanzmärkte die Kosten neuer oder variabel verzinster Kredite erhöhen.",
-              "recipients": [
-                "verschuldete Haushalte",
-                "Unternehmen",
-                "Beschäftigte"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Breite Betroffenheit ist plausibel, die konkrete Stärke hängt von Kreditstruktur und Weitergabe ab."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Kreditkosten können viele Haushalte und Unternehmen erreichen.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Die Quellen nennen höhere Kreditkosten, quantifizieren deren Belastung aber nicht.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die Dauer hängt von weiteren Zinsentscheidungen und Vertragslaufzeiten ab.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Kredit- und Nachfrageeffekte wären grundsätzlich politisch und vertraglich umkehrbar.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Stärker verschuldete Haushalte und Unternehmen könnten empfindlicher reagieren.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad reicht über Finanzierung in Nachfrage und Beschäftigung.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete Verletzung eines Schutzguts ist nicht belegt; Verteilungsrisiken bleiben bedingt.",
-                "reference_frame": "Zugang zu tragbarer Finanzierung",
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "medium",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten",
-                "zdfheute-nachrichten"
-              ],
-              "condition": "Der Pfad setzt eine Weitergabe des höheren Leitzinses an Kreditnehmende voraus.",
-              "reference_space": "USA, Haushalte und Unternehmen mit Kreditbedarf",
-              "time_horizon": "kurz- bis mittelfristig",
-              "path_quality": [
-                "direct",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Banken und Finanzmärkte geben den Zinsschritt teilweise weiter.",
-              "source_support": "Die Quellen nennen höhere Kreditkosten als mögliche Wirkung, nicht als gemessene Folge.",
-              "limitations": "Keine Angaben zu Betroffenenzahl, Kreditstruktur oder tatsächlicher Weitergabe.",
-              "first_order": "Kredite könnten teurer werden.",
-              "second_order": "Investitionen und Konsum könnten zurückgehen und Beschäftigung belasten.",
-              "third_order": "Länger anhaltende Finanzierungshürden könnten soziale und wirtschaftliche Ungleichheiten verstärken.",
-              "research_pass": "second_pass",
-              "research_result": "Keine gelieferten Daten erlauben eine Quantifizierung der Belastung.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 13,
-                "divisor": 6,
-                "raw": 2.1666666666666665,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            },
-            {
-              "label": "Höhere Sparzinsen könnten Sparerträge erhöhen",
-              "direction": "positive",
-              "type": "counter_path",
-              "mechanism": "Ein höherer Leitzins könnte über Bankprodukte und Kapitalmärkte zu höheren Zinsen auf Sparvermögen beitragen.",
-              "recipients": [
-                "Sparende",
-                "Haushalte mit Geldvermögen"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Der Nutzen könnte auf Haushalte mit Sparvermögen begrenzt bleiben und wird nicht quantifiziert."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Sparprodukte sind weit verbreitet, aber nicht alle Haushalte verfügen über Rücklagen.",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die Quelle nennt höhere Sparzinsen ohne Größenordnung.",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die Dauer hängt von der Weitergabe und dem weiteren Zinskurs ab.",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Zinsvorteile wären bei späteren Kursänderungen reversibel.",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Der mögliche Vorteil setzt vorhandenes Sparvermögen voraus.",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Der Pfad betrifft vor allem Erträge auf Sparvermögen.",
-                  "source_ids": [
-                    "zdfheute-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine maßgebliche Schutzgrenze wird durch höhere Sparzinsen nicht erkennbar berührt.",
-                "reference_frame": "Verteilung von Zinsgewinnen",
-                "source_ids": [
-                  "zdfheute-nachrichten"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "zdfheute-nachrichten"
-              ],
-              "condition": "Banken und Kapitalmärkte müssen den Zinsschritt an Sparprodukte weitergeben.",
-              "reference_space": "USA, Haushalte mit Sparvermögen",
-              "time_horizon": "kurz- bis mittelfristig",
-              "path_quality": [
-                "direct",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Die Weitergabe an Einlagen erfolgt teilweise.",
-              "source_support": "ZDFheute nennt höhere Zinsen auf Sparvermögen als mögliche Auswirkung.",
-              "limitations": "Keine Daten zur Weitergabe, Verteilung oder realen Verzinsung.",
-              "first_order": "Sparerträge könnten steigen.",
-              "second_order": "Mehr Zinserträge könnten die finanzielle Lage einzelner Haushalte stützen.",
-              "third_order": "Der Verteilungseffekt könnte die Unterschiede zwischen Sparenden und Verschuldeten verstärken.",
-              "research_pass": "second_pass",
-              "research_result": "Die gelieferten Quellen bestätigen den Mechanismus, aber nicht seine Größe oder Verteilung.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 7,
-                "divisor": 6,
-                "raw": 1.1666666666666667,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": true,
-            "protection_boundary_decisive": false,
-            "rationale": "Belastung durch Kredite und möglicher Vorteil für Sparende sind vergleichbare, aber unterschiedlich verteilte Pfade; der negative Hauptpfad ist wegen Reichweite und Verwundbarkeit stärker."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten",
-            "direction": "mixed"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "± gegenläufig",
-          "shortPathLabel": "Höhere Finanzierungskosten könnten verschuldete Haushalte und Unternehmen belasten",
-          "display_direction": "mixed",
-          "label": "± gegenläufig",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "mittel",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "± gegenläufig"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "open",
-          "dominance": "none",
-          "magnitude": 1,
-          "evidence": "not_assessable",
-          "likelihood": "unknown",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die gelieferten Quellen enthalten keinen belastbaren Umwelt-, Emissions- oder Ressourcenbeleg. Ein indirekter Finanzierungsmechanismus bleibt als Hypothese offen.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten",
-            "zdfheute-nachrichten"
-          ],
-          "rationale": "Zinsen könnten Investitionen und damit mittelbar emissions- oder ressourcenintensive Aktivitäten beeinflussen. Richtung und Größe sind ohne sektorale Daten nicht bestimmbar.",
-          "primary_paths": [
-            {
-              "label": "Veränderte Finanzierung könnte Investitionsentscheidungen und Ressourcenpfade beeinflussen",
-              "direction": "open",
-              "type": "main_path",
-              "mechanism": "Zinsänderungen könnten die Finanzierung von Unternehmen und Projekten verteuern oder umlenken.",
-              "recipients": [
-                "Unternehmen",
-                "Investoren",
-                "energie- und ressourcenintensive Projekte"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Ein indirekter Pfad ist plausibel, aber ohne Angaben zu Investitionssektoren und Projekten schwach bestimmt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Finanzierungskosten wirken potenziell über viele Investitionen.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die Quellen belegen keine konkrete ökologische Intensität.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Die Dauer hängt von weiteren Zins- und Investitionsentscheidungen ab.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Finanzierungsbedingungen sind grundsätzlich veränderbar und reversibel.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Besonders betroffene Umweltgüter oder Gruppen werden nicht benannt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Der ökologische Pfad ist nur indirekt über Investitionsentscheidungen plausibel.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzverletzung ist in den Quellen belegt.",
-                "reference_frame": "Emissionen und Ressourcenverbrauch",
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "unknown",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten",
-                "zdfheute-nachrichten"
-              ],
-              "condition": "Der Pfad setzt eine Veränderung sektoraler Investitionen durch Finanzierungskosten voraus.",
-              "reference_space": "USA, finanzierte Investitionen und verbundene Lieferketten",
-              "time_horizon": "mittel- bis langfristig",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Finanzierungskosten beeinflussen die Auswahl und Umsetzung von Investitionen.",
-              "source_support": "Die Quellen belegen den Zinsmechanismus, nicht seine ökologischen Folgen.",
-              "limitations": "Keine Emissions-, Energie-, Ressourcen- oder Investitionsdaten liegen vor.",
-              "first_order": "Investitionen könnten sich verteuern oder verschieben.",
-              "second_order": "Sektorale Produktions- und Energiepfade könnten sich verändern.",
-              "third_order": "Langfristige ökologische Rückkopplungen sind ohne Projektdaten nicht seriös bestimmbar.",
-              "research_pass": "second_pass",
-              "research_result": "Keine der gelieferten Quellen enthält eine belastbare ökologische Wirkungsanalyse.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 6,
-                "divisor": 6,
-                "raw": 1,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            },
-            {
-              "label": "Keine belegte direkte Umweltwirkung der Entscheidung",
-              "direction": "neutral",
-              "type": "counter_path",
-              "mechanism": "Ohne nachgewiesene Veränderung konkreter Investitionen bleibt eine direkte Umweltwirkung im gelieferten Material aus.",
-              "recipients": [
-                "Umweltgüter",
-                "betroffene Gemeinschaften"
-              ],
-              "magnitude": 0,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 0,
-                "rationale": "Für den unmittelbaren Zeitraum ist keine direkte Umweltveränderung belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 0,
-                  "rationale": "Keine direkte ökologische Reichweite ist belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 0,
-                  "rationale": "Keine konkrete ökologische Intensität ist belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 0,
-                  "rationale": "Keine Dauer einer Umweltwirkung ist belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Keine irreversible Umweltveränderung ist belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 0,
-                  "rationale": "Keine besonders verwundbare Umweltgruppe ist benannt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 0,
-                  "rationale": "Keine direkte ökologische Systemtiefe ist belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Mangels Umweltbefund ist keine Schutzgrenze entscheidend.",
-                "reference_frame": "ökologische Schutzgüter",
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "very_low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten",
-                "zdfheute-nachrichten"
-              ],
-              "condition": "Gilt nur für den unmittelbaren, in den Quellen beschriebenen Entscheidungsbefund.",
-              "reference_space": "in den gelieferten Berichten beschriebener Zeitraum",
-              "time_horizon": "unmittelbar",
-              "path_quality": [
-                "weak",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Keine nicht berichtete Investitions- oder Produktionsänderung wird unterstellt.",
-              "source_support": "Die Quellen enthalten keinen Umweltbefund.",
-              "limitations": "Das Fehlen eines Belegs ist kein Nachweis langfristiger Umweltneutralität.",
-              "first_order": "Keine direkte Umweltänderung ist belegt.",
-              "second_order": "Indirekte Investitionspfade bleiben offen.",
-              "third_order": "Keine Kaskade darf aus dem Material abgeleitet werden.",
-              "research_pass": "second_pass",
-              "research_result": "Gezielte Prüfung der gelieferten Quellen ergab keinen Umweltbeleg.",
-              "negligibility_rationale": "Im unmittelbar berichteten Entscheidungsereignis ist keine direkte Umweltveränderung belegt.",
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 0,
-                "divisor": 6,
-                "raw": 0,
-                "rounded": 0,
-                "protection_floor": 0,
-                "final": 0
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": null,
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Veränderte Finanzierung könnte Investitionsentscheidungen und Ressourcenpfade beeinflussen",
-            "direction": "open"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 1,
-          "directionLabel": "? Richtung offen",
-          "shortPathLabel": "Veränderte Finanzierung könnte Investitionsentscheidungen und Ressourcenpfade beeinflussen",
-          "display_direction": "open",
-          "label": "? Richtung offen",
-          "magnitude_label": "sehr gering",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "nicht belastbar bestimmt",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "? Richtung offen"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "mixed",
-          "dominance": "balanced",
-          "magnitude": 3,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quellen belegen politischen Druck und die öffentliche Betonung der Fed-Unabhängigkeit, aber keine eingetretene institutionelle Veränderung oder messbare Vertrauenswirkung.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten",
-            "zdfheute-nachrichten"
-          ],
-          "rationale": "Die Entscheidung könnte die Unabhängigkeit der Fed sichtbar machen, zugleich aber den Konflikt mit der Regierung verschärfen. Richtung und Dauer der institutionellen Wirkung bleiben offen.",
-          "primary_paths": [
-            {
-              "label": "Der Zinsschritt könnte die institutionelle Unabhängigkeit der Fed sichtbar stützen",
-              "direction": "positive",
-              "type": "main_path",
-              "mechanism": "Eine Entscheidung gegen den politischen Wunsch nach niedrigeren Zinsen könnte als eigenständige Ausübung des geldpolitischen Mandats wahrgenommen werden.",
-              "recipients": [
-                "Fed",
-                "Öffentlichkeit",
-                "politische Institutionen"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die Entscheidung ist sichtbar und institutionell relevant, belegt aber noch keine dauerhafte Vertrauenswirkung."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Die Entscheidung betrifft eine zentrale öffentliche Institution und wird breit berichtet.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Der politische Gegensatz wird berichtet, seine gesellschaftliche Wirkung aber nicht gemessen.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Eine dauerhafte Wirkung hängt von weiteren Entscheidungen und Reaktionen ab.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Wahrnehmungen und institutionelle Signale können sich durch spätere Entscheidungen ändern.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Institutionelles Vertrauen kann unter offenem politischem Druck empfindlich reagieren.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Pfad berührt die Beziehung zwischen Regierung und unabhängiger Notenbank.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete Verletzung der institutionellen Unabhängigkeit ist nicht belegt.",
-                "reference_frame": "Unabhängigkeit der Geldpolitik",
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten",
-                "zdfheute-nachrichten"
-              ],
-              "condition": "Der Pfad setzt voraus, dass die Entscheidung als eigenständige institutionelle Entscheidung wahrgenommen wird.",
-              "reference_space": "USA, Fed und politische Öffentlichkeit",
-              "time_horizon": "kurz- bis mittelfristig",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Öffentliche Wahrnehmung und politische Reaktionen folgen der berichteten Konfliktlinie.",
-              "source_support": "Die Quellen berichten politischen Druck und die Bedeutung der Fed-Unabhängigkeit, nicht deren Wirkung auf Vertrauen.",
-              "limitations": "Keine Umfragen, Verhaltensdaten oder institutionellen Folgemessungen liegen vor.",
-              "first_order": "Die Entscheidung setzt ein sichtbares institutionelles Signal.",
-              "second_order": "Das Signal könnte Erwartungen an politische Einflussnahme oder Unabhängigkeit prägen.",
-              "third_order": "Wiederholter Druck könnte die demokratische Korrekturfähigkeit wirtschaftspolitischer Institutionen verändern; dies ist nicht belegt.",
-              "research_pass": "second_pass",
-              "research_result": "Keine gelieferte Quelle misst Vertrauen oder institutionelle Folgen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 13,
-                "divisor": 6,
-                "raw": 2.1666666666666665,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            },
-            {
-              "label": "Anhaltender politischer Druck könnte die Unabhängigkeit der Fed schwächen",
-              "direction": "negative",
-              "type": "counter_path",
-              "mechanism": "Wiederholte Forderungen nach einer bestimmten Zinsentscheidung könnten die öffentliche und politische Erwartung direkter Einflussnahme verstärken.",
-              "recipients": [
-                "Fed",
-                "Regierung",
-                "Öffentlichkeit"
-              ],
-              "magnitude": 3,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die Quellen berichten wiederholten Druck, aber keine eingetretene institutionelle Schwächung."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Der Konflikt betrifft eine zentrale wirtschaftspolitische Institution.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Der berichtete Druck ist politisch sichtbar, aber nicht institutionell quantifiziert.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die Dauer hängt von weiteren öffentlichen Forderungen und Entscheidungen ab.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Vertrauens- und Normeffekte könnten länger nachwirken, wären aber nicht zwingend irreversibel.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Institutionelle Unabhängigkeit kann unter wiederholtem politischem Druck verwundbar sein.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Pfad reicht von Kommunikation zu institutionellen Entscheidungsnormen.",
-                  "source_ids": [
-                    "dlf-nachrichten",
-                    "zdfheute-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Die Quellen belegen Druck, aber keine konkrete Überschreitung einer institutionellen Schutzgrenze.",
-                "reference_frame": "institutionelle Unabhängigkeit und demokratische Rechenschaft",
-                "source_ids": [
-                  "dlf-nachrichten",
-                  "zdfheute-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten",
-                "zdfheute-nachrichten"
-              ],
-              "condition": "Der Pfad setzt anhaltenden oder zunehmenden politischen Druck und eine entsprechende institutionelle Reaktion voraus.",
-              "reference_space": "USA, Regierung, Fed und Öffentlichkeit",
-              "time_horizon": "mittel- bis langfristig",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Wiederholung politischer Forderungen könnte Normen und Vertrauen beeinflussen.",
-              "source_support": "Die Quellen berichten Druck und Sorgen über politische Steuerung, aber keinen eingetretenen Schaden.",
-              "limitations": "Keine Daten zur Wiederholung außerhalb der vorliegenden Berichte und keine Messung institutioneller Folgen.",
-              "first_order": "Politische Forderungen könnten die Fed öffentlich unter Druck setzen.",
-              "second_order": "Das könnte Erwartungen an die Entscheidungsautonomie verändern.",
-              "third_order": "Eine dauerhafte Normalisierung politischer Einflussnahme könnte institutionelle Korrekturfähigkeit schwächen; das bleibt eine Hypothese.",
-              "research_pass": "second_pass",
-              "research_result": "Die Quellen liefern keine unabhängige Messung einer eingetretenen Vertrauens- oder Autonomieveränderung.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 15,
-                "divisor": 6,
-                "raw": 2.5,
-                "rounded": 3,
-                "protection_floor": 0,
-                "final": 3
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": true,
-            "protection_boundary_decisive": false,
-            "rationale": "Sichtbare Eigenständigkeit und möglicher Vertrauensdruck sind vergleichbare institutionelle Pfade. Beide bleiben ohne Messung offen; kein Pfad darf als eingetretene Wirkung dargestellt werden."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Der Zinsschritt könnte die institutionelle Unabhängigkeit der Fed sichtbar stützen",
-            "direction": "mixed"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 3,
-          "directionLabel": "± gegenläufig",
-          "shortPathLabel": "Der Zinsschritt könnte die institutionelle Unabhängigkeit der Fed sichtbar stützen",
-          "display_direction": "mixed",
-          "label": "± gegenläufig",
-          "magnitude_label": "deutlich",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "± gegenläufig"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-16T19:22:28.527Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-16T18:01:58.000Z",
-      "last_updated": "2026-09-16T19:25:26.660Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-2d8557a8f112228b791c",
-      "case_file": null,
-      "source_published_at": "2026-09-16T18:02:17.000Z",
-      "published_at": "2026-09-16T19:25:26.660Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ],
-          [
-            "dlf-nachrichten"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "tagesschau-access"
-          ]
-        ],
-        "possible_independent_origins": 5,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "tagesschau-access",
-              "tagesschau-access"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Zu prüfen ist, ob weitere Zinsschritte der Fed folgen.",
-          "source_id": "zdfheute-nachrichten",
-          "measurable_indicator": "Nächste Zinsentscheidung und veröffentlichte geldpolitische Signale der Fed",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0051970661e37bf0",
-          "announced_at": "2026-09-16T18:06:00.000Z",
-          "follow_up_date": "2026-09-23T19:25:26.660Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/us-wirtschaft--us-notenbank-erhoeht-erstmals-seit-juli-2023-wieder-leitzins-38263562.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T19:00:05.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-16061911.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T18:02:17.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/wirtschaft/us-notenbank-fed-erhoeht-leitzins-erstmals-seit-2023-a-c72447c1-ff8e-4fdb-a5c1-9745d77ce5b9",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T18:13:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-notenbank-erhoeht-erstmals-seit-juli-2023-wieder-leitzins-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T18:48:58.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wirtschaft/fed-entscheidung-leitzins-usa-notenbank-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T18:06:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eilmeldung-fed-leitzins-erhoeht-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T18:30:02.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/fed-leitzins-erhoeht-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T19:15:01.000Z",
           "primary_source": false
         }
       ]
