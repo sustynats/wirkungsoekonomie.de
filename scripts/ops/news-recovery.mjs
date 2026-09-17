@@ -73,7 +73,12 @@ export function planRecovery({ head, snapshot, pendingPublication, bridge, bridg
   const attempts = state?.recovery_attempts || [];
   // One attempt per workflow and source commit, at most four/day. A failed or
   // ambiguous request remains consumed. No escalating retries or paid repairs.
-  if (attempts.filter(attempt => elapsed(attempt.at, now) >= 0 && elapsed(attempt.at, now) < 1440).length >= 4) return [];
+  // Gezaehlt werden nur Anlaeufe, die tatsaechlich gestartet sind. Ein
+  // abgewiesener Aufruf hat nichts bewirkt; ihn mitzuzaehlen hat die
+  // Selbstheilung am 16.09.2026 fuer einen Tag lahmgelegt (vier Mal
+  // dispatch_uncertain wegen einer Eingabe, die der Workflow nicht mehr kennt).
+  if (attempts.filter(attempt => attempt.status !== 'dispatch_rejected'
+    && elapsed(attempt.at, now) >= 0 && elapsed(attempt.at, now) < 1440).length >= 4) return [];
   const needs = [
     ['deploy.yml', Number(pendingPublication) > 0],
     ['wirkungsticker.yml', bridgeMode && bridge?.reachable === true
@@ -94,6 +99,14 @@ export function planRecovery({ head, snapshot, pendingPublication, bridge, bridg
   return [];
 }
 
+// Ein abgewiesener Aufruf (HTTP 4xx) hat nachweislich keinen Lauf gestartet:
+// GitHub hat ihn vor der Ausfuehrung verworfen. Eine Zeitueberschreitung oder
+// ein 5xx laesst offen, ob der Lauf doch angelaufen ist - der zaehlt weiter als
+// verbraucht, damit nie zwei Laeufe gleichzeitig dieselbe Meldung bauen.
+export function dispatchRejected(error) {
+  return /(?:^|_)HTTP[ _]4\d\d$/.test(String(error?.message || error).trim());
+}
+
 export async function recoverDelivery({ state, actions, save, refresh, dispatch }) {
   for (const action of actions) {
     if (!RECOVERY_WORKFLOWS.includes(action.workflow)) throw new Error('MONITOR_RECOVERY_WORKFLOW_INVALID');
@@ -106,12 +119,21 @@ export async function recoverDelivery({ state, actions, save, refresh, dispatch 
     state.recovery_attempts.push(attempt);
     await save(); // Must succeed BEFORE the remote side effect.
     try {
+      // Der Ticker hatte zur Bridge-Zeit eine Eingabe bridge_phase. Im
+      // Direktbetrieb gibt es sie nicht mehr, und GitHub weist einen Aufruf mit
+      // unbekannter Eingabe ab. Genau daran sind am 16.09.2026 vier
+      // Anlaeufe gescheitert - und weil sie als verbraucht zaehlten, war die
+      // Selbstheilung danach fuer 24 Stunden aus, ohne dass es jemand sah.
       await dispatch(action.workflow, action.workflow === 'wirkungsticker.yml'
-        ? { ref: 'main', inputs: { bridge_phase: 'import', request_id: `recovery-${action.key.slice(0, 16)}` } }
+        ? { ref: 'main', inputs: { request_id: `recovery-${action.key.slice(0, 16)}` } }
         : { ref: 'main' }); // Full normal run; every gate and every cap remains.
       attempt.status = 'dispatched';
-    } catch {
-      attempt.status = 'dispatch_uncertain';
+    } catch (error) {
+      // Der Grund wird festgehalten, nicht verschluckt. Am 16.09.2026 stand in
+      // vier Anlaeufen nur "dispatch_uncertain" - dass GitHub eine unbekannte
+      // Eingabe abgewiesen hatte, war aus dem Vermerk nicht zu erkennen.
+      attempt.status = dispatchRejected(error) ? 'dispatch_rejected' : 'dispatch_uncertain';
+      attempt.error = String(error?.message || error).slice(0, 200);
     }
     await save();
   }
