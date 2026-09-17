@@ -172,6 +172,31 @@ export function aiFailureReason(report = {}) {
   return reason;
 }
 
+// Liegt eine aktuelle Lage vor? Absichtlich OHNE Import aus scripts/news: der
+// Monitor laeuft mit einer engen Sparse-Liste, und lage.mjs wuerde lib.mjs mit
+// ihrem ganzen Abhaengigkeitsbaum nachziehen (dieselbe Falle wie am 16.09. mit
+// personal-publication.mjs). Gebraucht wird nur die Berliner Stunde und das
+// Alter der jUengsten Lage.
+//
+// Der Lage-Schritt im Ticker-Lauf bricht den Lauf absichtlich nicht ab, damit
+// eine bereits bezahlte Analyse nie verloren geht. Stumm darf sein Ausfall
+// deshalb nicht bleiben.
+export function lageCheck({ lagen = [], now } = {}) {
+  const stunde = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hourCycle: 'h23' })
+    .formatToParts(new Date(now)).find((teil) => teil.type === 'hour')?.value);
+  const juengste = (lagen || []).map((lage) => Date.parse(lage?.stand)).filter(Number.isFinite).sort((a, b) => b - a)[0];
+  const alter = Number.isFinite(juengste) ? (Date.parse(now) - juengste) / 3600000 : Infinity;
+  // Vor 06:00 Berliner Zeit ist keine neue Lage faellig; dann ist Schweigen richtig.
+  const faellig = Number.isInteger(stunde) && stunde >= 6;
+  return { id: 'lage', name: 'Redaktionelle Lage', immediate: false,
+    ok: !faellig || alter <= 7,
+    reason: !faellig ? 'Vor 06:00 Berliner Zeit ist keine neue Lage fällig.'
+      : alter <= 7 ? `Die jüngste Lage ist ${alter.toFixed(1)} Stunden alt.`
+        : Number.isFinite(alter)
+          ? `Die jüngste Lage ist ${alter.toFixed(1)} Stunden alt; spätestens alle sechs Stunden muss eine neue vorliegen. Der Schritt im Ticker-Lauf bricht absichtlich nicht ab, damit eine bezahlte Analyse nicht verloren geht - deshalb muss sein Ausfall hier auffallen.`
+          : 'Es liegt keine einzige Lage vor.' };
+}
+
 export function evaluateChecks(data, now) {
   // Eine Fassung, deren Veroeffentlichung gescheitert ist, liegt geparkt in der
   // privaten Freigabeliste. Sie stand in keiner Pruefung - Natalie fand sie am
@@ -399,6 +424,11 @@ export async function main() {
     if (response.ok) { const body = await response.json(); if (Array.isArray(body.items)) liveFeed = body; }
   } catch { /* Evaluated explicitly as unavailable, never a zero count. */ }
   const data = { probes, liveFeed, report: read('reports/wirkungsticker-latest-run.json'), usage: read('data/news/usage.json'), stories: read('data/news/stories.json').stories };
+  // Der Lage-Schritt im Ticker-Lauf bricht den Lauf absichtlich nicht ab, damit
+  // eine bereits bezahlte Analyse nie verloren geht. Stumm darf sein Ausfall
+  // deshalb nicht bleiben: hier wird geprueft, ob eine Lage fuer das laufende
+  // Fenster vorliegt.
+  try { data.lagen = read('data/news/lagen.json').lagen || []; } catch { data.lagen = []; }
   data.processing_mode=process.env.WIRKUNGSTICKER_PROCESSING_MODE || data.report.processing_mode;
   data.discovery_enabled=process.env.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED!=='false';
   if(data.processing_mode==='dropbox_chatgpt_bridge') {
@@ -433,6 +463,7 @@ export async function main() {
   // Vortag das Tagesbudget verbraucht hatten - unsichtbar.
   const gescheitert = (state?.recovery_attempts || []).filter(attempt => attempt.error && age(attempt.at, now) <= 1440);
   const abgewiesen = gescheitert.filter(attempt => attempt.status === 'dispatch_rejected');
+  checks.push(lageCheck({ lagen: data.lagen, now }));
   checks.push({ id: 'self-healing', name: 'Selbstheilung', immediate: true,
     ok: abgewiesen.length === 0 && gescheitert.length < 2,
     reason: abgewiesen.length
