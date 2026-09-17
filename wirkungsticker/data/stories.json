@@ -2,8 +2,1689 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T12:09:54.841Z",
+  "updated_at": "2026-09-17T12:52:25.258Z",
   "stories": [
+    {
+      "story_id": "wt-aa0db77f30c3deb1",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa0db77f30c3deb1-00be4534d353a295-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa0db77f30c3deb1-e86ede7896a1dd0e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa0db77f30c3deb1-75efe46cd474d990-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1",
+      "title": "Laut Polizei: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
+      "source_summary": "Die hessenschau berichtet über zwei Explosionen in der Nacht in Frankfurt. Nach Angaben der Polizei detonierten Sprengsätze vor einem Café an der Berger Straße und vor einer Shisha-Bar auf der Zeil. Beide Gebäude wurden stark beschädigt, außerdem gingen Scheiben zu Bruch.\n\nVerletzt wurde bei den Explosionen niemand. Ein Überwachungsvideo soll den Moment der Detonation und einen Mann zeigen; die Darstellung des Verdachts bleibt dem Ermittlungsstand zugeordnet.\n\nDie Polizei nahm einen 17-jährigen Tatverdächtigen in Tatortnähe fest. Die Ermittler beziehen drei ähnlich gelagerte Fälle der vergangenen Tage ein und prüfen, ob zwischen insgesamt fünf Taten ein Zusammenhang besteht. Hinweise auf mögliche Bezüge zur Organisierten Kriminalität werden als erste Erkenntnisse beschrieben.",
+      "summary": "Zwei Explosionen beschädigten in Frankfurt ein Café und eine Shisha-Bar, verletzt wurde niemand. Die Polizei nahm einen 17-jährigen Tatverdächtigen fest; ein Zusammenhang mit drei weiteren Fällen ist offen.",
+      "detail_summary": "In Frankfurt detonierten laut Polizei zwei Sprengsätze vor einem Café an der Berger Straße und einer Shisha-Bar auf der Zeil. Beide Gebäude wurden stark beschädigt, mehrere Scheiben gingen zu Bruch; verletzt wurde niemand. Die Polizei nahm einen 17-jährigen Tatverdächtigen in Tatortnähe fest. Überwachungsvideomaterial und Zeugenaussagen gehören zu den beschriebenen Ermittlungsansätzen. Ob die beiden neuen Taten mit drei ähnlichen Fällen der vergangenen Tage zusammenhängen, ist noch offen. Das Wirkungspotenzial liegt vor allem bei Sicherheit, Geschäftsbetrieb und Vertrauen in den Schutz öffentlicher Räume; eingetretene weitergehende Folgen sind nicht belegt.",
+      "why_relevant": "Die Meldung betrifft konkrete Schäden an mehreren Orten, eine akute Sicherheitslage und laufende Ermittlungen zu möglichen zusammenhängenden Taten.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Zwei Explosionen vor einem Café und einer Shisha-Bar in Frankfurt mit Sachschäden und anschließender Festnahme eines Tatverdächtigen.",
+        "evaluation_target": {
+          "label": "akute Sicherheitslage durch Explosionen und Ermittlungen",
+          "type": "event"
+        },
+        "baseline": "Öffentliche und gewerbliche Nutzung der betroffenen Orte ohne die berichteten Explosionen.",
+        "counterfactual": "Ohne die Explosionen wären die beschriebenen Sachschäden, Tatortmaßnahmen und die darauf bezogene Ermittlungsarbeit an diesen Orten nicht ausgelöst worden.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Sicherheit und Nutzbarkeit öffentlicher Räume",
+          "Resilienz lokaler Betriebe und Institutionen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Gebäudeschäden können Betriebe, Beschäftigte, Anwohner und die körperliche Sicherheit betreffen; Verletzungen sind nicht berichtet.",
+            "planet": "Direkte ökologische Folgen sind nicht belegt; mögliche Abfälle, Reparaturen und Ressourcenverbräuche bleiben begrenzte, bedingte Pfade.",
+            "democracy": "Ermittlungen und Sicherheitskommunikation können Vertrauen und lokale Debatten beeinflussen; ein institutioneller Macht- oder Rechtsfolgenpfad ist noch offen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Sachschäden und mögliche Nutzungseinschränkungen an zwei gewerblichen Orten.",
+          "second_order": "Wiederholungsannahmen könnten Sicherheitsmaßnahmen, Ermittlungsprioritäten und Alltagsnutzung verändern.",
+          "third_order": "Ein bestätigter Zusammenhang könnte die lokale Debatte über organisierte Kriminalität und Prävention strukturieren; das ist nicht belegt.",
+          "enablement": [],
+          "counter_evidence": [
+            "Es wurde niemand verletzt.",
+            "Ein Zusammenhang zwischen den insgesamt fünf Taten ist nicht geklärt.",
+            "Direkte ökologische Schäden werden in der Quelle nicht berichtet."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Herkunft vor; unabhängige Bestätigung fehlt.",
+          "institutional_status": "Laufende polizeiliche und staatsanwaltschaftliche Ermittlungen; ein abschließender juristischer Befund ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt Sachschäden und keine Verletzten, aber keine längerfristigen Folgen für Gesundheit, Einkommen oder Versorgung.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Der direkte negative Pfad zu Gebäuden, Betrieben und Sicherheitsgefühl ist quellengebunden plausibel. Umfang und Dauer der Folgen bleiben wegen fehlender unabhängiger Daten unsicher.",
+            "primary_paths": [
+              {
+                "label": "Sachschäden und mögliche Nutzungsausfälle an betroffenen Betrieben",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Explosionen beschädigen Gebäude und können Reparaturen, Sperrungen und Einnahmeausfälle auslösen.",
+                "recipients": [
+                  "Betroffene Betriebe",
+                  "Beschäftigte",
+                  "Anwohner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Zwei beschädigte Gebäude und weitere beschädigte Objekte sprechen für lokale, aber nicht quantifizierte Folgen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere konkrete Tatorte und angrenzende Objekte sind betroffen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Gebäude wurden stark beschädigt und Scheiben gingen zu Bruch.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Reparatur- und Nutzungsausfälle sind möglich, ihre Dauer ist unbekannt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Sachschäden sind grundsätzlich reparierbar; Dauer und Kosten fehlen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betriebe und Anwohner können durch Ausfälle und Sicherheitslagen belastet werden.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der belegte Pfad bleibt bislang lokal und infrastrukturell begrenzt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine Verletzten sind berichtet; eine schwere Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "körperliche Unversehrtheit und sichere Nutzung öffentlicher Räume",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Weitere Nutzungseinschränkungen oder Reparaturbedarf müssen eintreten.",
+                "reference_space": "Betroffene Gebäude und ihr unmittelbares Umfeld in Frankfurt",
+                "time_horizon": "Tage bis Monate nach dem Ereignis",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Beschädigte Räume sind zumindest zeitweise nicht vollständig nutzbar.",
+                "source_support": "Die Quelle belegt starke Gebäudeschäden und zerbrochene Scheiben, nicht aber Ausfallzeiten oder Kosten.",
+                "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Reparaturdauer, Beschäftigung oder Einkommen.",
+                "first_order": "Gebäude und betriebliche Abläufe könnten ausfallen.",
+                "second_order": "Betriebe und Beschäftigte könnten Einnahmen oder Arbeitsmöglichkeiten verlieren.",
+                "third_order": "Bei Wiederholung könnte die lokale Nutzung bestimmter Orte zurückgehen; dies bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten quantifizieren Dauer, Kosten oder Reichweite der Nutzungsausfälle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Verunsicherung durch wiederholte Explosionen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Mehrere ähnliche Fälle und sichtbare Schäden könnten das Sicherheitsgefühl im Umfeld beeinträchtigen.",
+                "recipients": [
+                  "Anwohner",
+                  "Besucher",
+                  "Gewerbetreibende"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus ist plausibel, aber eine Veränderung des Sicherheitsgefühls wurde nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft vor allem das lokale Umfeld.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Belastung ist möglich, ihre Stärke ist nicht erhoben.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt von Wiederholung und Aufklärung ab.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Sicherheitswahrnehmungen können sich grundsätzlich wieder verändern.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Anwohner und Betriebe an Tatorten sind besonders exponiert.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Wahrnehmungseffekt erreicht keine belegte Systemebene.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenzverletzung durch Verunsicherung ist nicht gemessen.",
+                  "reference_frame": "subjektives Sicherheitsgefühl",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Weitere ähnliche Taten oder anhaltende Sperrungen müssten die Wahrnehmung prägen.",
+                "reference_space": "Lokales Umfeld der Tatorte",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung und sichtbare Schäden beeinflussen die lokale Risikowahrnehmung.",
+                "source_support": "Die Quelle berichtet über mehrere ähnliche Fälle, misst aber keine Wahrnehmungsänderung.",
+                "limitations": "Keine Umfrage, Verhaltensdaten oder unabhängige Untersuchung liegen vor.",
+                "first_order": "Sicherheitsbedenken könnten zunehmen.",
+                "second_order": "Besuche und lokale Geschäftsabläufe könnten beeinflusst werden.",
+                "third_order": "Eine dauerhafte Vermeidungsreaktion ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten erlauben eine Messung des Sicherheitsgefühls oder des Besuchsverhaltens.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist kein vergleichbarer positiver Hauptpfad belegt; mögliche Ermittlungsgewinne sind keine eingetretene Gegenwirkung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Sachschäden und mögliche Nutzungsausfälle an betroffenen Betrieben",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Sachschäden und mögliche Nutzungsausfälle an betroffenen Betrieben",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt keine Messwerte zu Schadstoffen, Abfall, Energieverbrauch oder ökologischen Schäden.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Ein kleiner negativer Pfad über Reparatur, Bauschutt und beschädigte Materialien ist plausibel, aber nicht quantifiziert und gegenüber den direkten Sicherheitsfolgen nachrangig.",
+            "primary_paths": [
+              {
+                "label": "Reparatur- und Entsorgungsaufwand nach Gebäudeschäden",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Beschädigte Gebäude und Scheiben könnten Materialverbrauch, Abfall und Transporte zur Wiederherstellung erfordern.",
+                "recipients": [
+                  "Lokale Umwelt",
+                  "Bau- und Entsorgungsinfrastruktur"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Zwei beschädigte Gebäude machen einen kleinen lokalen Ressourcenpfad plausibel; Umfang und Dauer fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Material- und Abfallpfad bleibt auf die Tatorte begrenzt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Schäden sind beschrieben, ökologische Intensität aber nicht gemessen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Reparatur- und Entsorgungsdauer ist unbekannt und voraussichtlich begrenzt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Lokale Reparaturfolgen sind grundsätzlich reversibel.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Verwundbarkeit ist nicht beschrieben.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ein tiefer ökologischer Systempfad ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze oder Kontamination ist berichtet.",
+                  "reference_frame": "lokale Umweltbelastung durch Reparatur und Entsorgung",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Reparaturen und Entsorgung beschädigter Materialien müssen stattfinden.",
+                "reference_space": "Unmittelbares Umfeld der beschädigten Gebäude",
+                "time_horizon": "Tage bis Monate",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Schäden werden baulich beseitigt und Materialien entsorgt.",
+                "source_support": "Die Quelle belegt Gebäudeschäden, aber keine ökologischen Folgen.",
+                "limitations": "Keine Daten zu Materialmengen, Kontamination, Energie oder Emissionen.",
+                "first_order": "Reparaturbedarf könnte Material- und Transportaufwand erzeugen.",
+                "second_order": "Lokale Entsorgungswege könnten beansprucht werden.",
+                "third_order": "Ein relevanter ökologischer Systemeffekt ist ohne weitere Ereignisse nicht plausibel belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand liefert ökologische Messwerte oder eine Bilanz der Schäden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Keine belegte überregionale ökologische Kaskade",
+                "direction": "open",
+                "type": "counter_path",
+                "mechanism": "Die lokale Schadenslage könnte ohne größere Reparatur- oder Folgeschäden ökologisch begrenzt bleiben.",
+                "recipients": [
+                  "Lokale Umwelt"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ein größerer ökologischer Effekt ist im gelieferten Material nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine überregionale ökologische Reichweite ist belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität wurde gemessen oder beschrieben.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine dauerhafte ökologische Veränderung ist belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung ist bekannt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Eine spezifische betroffene Umweltvulnerabilität ist nicht genannt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein tiefer Systempfad ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Grenzverletzung ist berichtet.",
+                  "reference_frame": "ökologische Schutzgüter",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Es treten keine zusätzlichen Schäden oder relevanten Freisetzungen auf.",
+                "reference_space": "Frankfurt und unmittelbares Umfeld",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichteten Schäden bleiben lokal und ohne besondere Umweltfolgen.",
+                "source_support": "Die Quelle berichtet Sachschäden, aber keine Umweltbeeinträchtigung.",
+                "limitations": "Fehlende Umweltprüfung begrenzt die Aussage.",
+                "first_order": "Keine über den Reparaturpfad hinaus belegte Änderung.",
+                "second_order": "Keine belastbare ökologische Folge ableitbar.",
+                "third_order": "Keine ökologische Kaskade modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Wissensgrenze bleibt bestehen, weil keine Umweltquelle geliefert wurde.",
+                "negligibility_rationale": "Im abgegrenzten Zeitraum ist kein größerer ökologischer Effekt belegt oder plausibel quantifizierbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein kleiner negativer Reparaturpfad steht keinem belegten positiven ökologischen Pfad gegenüber; die Richtung bleibt in ihrer Stärke unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Reparatur- und Entsorgungsaufwand nach Gebäudeschäden",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Reparatur- und Entsorgungsaufwand nach Gebäudeschäden",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt Ermittlungen, aber keine messbare Veränderung von Vertrauen, Beteiligung oder institutioneller Kontrolle.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Die Ereignisse könnten lokale Sicherheitsdebatten und Erwartungen an staatliche Aufklärung beeinflussen. Eine demokratische Wirkung ist weder in Richtung noch Umfang belegt.",
+            "primary_paths": [
+              {
+                "label": "Ermittlungen und Sicherheitsdebatte könnten institutionelles Vertrauen beeinflussen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Berichte über wiederholte Explosionen und Ermittlungen können Erwartungen an Aufklärung, Schutz und Rechenschaft verändern.",
+                "recipients": [
+                  "Bevölkerung",
+                  "Polizei und Justiz",
+                  "Kommunale Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein lokaler Kommunikations- und Vertrauenseffekt ist möglich, aber nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt ist auf die lokale Öffentlichkeit begrenzt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Vertrauensänderung wird nicht beobachtet oder quantifiziert.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt von Ermittlungsverlauf und weiterer Berichterstattung ab.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Vertrauen und Debatten sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere demokratische Verwundbarkeit ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer institutioneller Umbau ist nicht aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine Einschränkung demokratischer Rechte oder Verfahren ist berichtet.",
+                  "reference_frame": "öffentliche Rechenschaft und Vertrauen in Ermittlungsinstitutionen",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Die Ereignisse müssen als Serie wahrgenommen werden und die Ermittlungen müssen öffentliche Erwartungen auslösen.",
+                "reference_space": "Lokale Öffentlichkeit und zuständige Sicherheitsinstitutionen in Frankfurt",
+                "time_horizon": "Wochen bis Monate",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sicherheitsereignisse werden politisch und institutionell bewertet.",
+                "source_support": "Die Quelle belegt Ermittlungen und einen offenen möglichen Zusammenhang, nicht deren demokratische Wirkung.",
+                "limitations": "Keine Umfragen, Diskursanalyse oder Daten zu Vertrauen und Beteiligung liegen vor.",
+                "first_order": "Forderungen nach Aufklärung und Schutz könnten zunehmen.",
+                "second_order": "Die Bewertung polizeilicher Arbeit könnte die lokale Debatte prägen.",
+                "third_order": "Eine dauerhafte Verschiebung institutionellen Vertrauens ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten messen demokratische oder institutionelle Folgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Normalisierung sicherheitspolitischer Deutungen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wiederholte Berichte und ein unbestätigter Serienzusammenhang könnten pauschale Bedrohungsbilder verstärken.",
+                "recipients": [
+                  "Öffentliche Debatte",
+                  "Betroffene Gruppen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der kommunikative Risikopfad ist möglich, aber weder Wirkung noch Zielgruppe sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt lokale Ereignisse ohne gemessene breite Verbreitung.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Deutungsverengung ist nicht beobachtet.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer hängt von Wiederholung und späterer Aufklärung ab.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche Deutungen können durch neue Belege korrigiert werden.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere Betroffenheiten oder gruppenspezifische Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein struktureller demokratischer Effekt ist nicht nachgewiesen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze wird nicht berührt oder belegt.",
+                  "reference_frame": "offene und nicht pauschalisierende öffentliche Sicherheitsdebatte",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Der offene Ermittlungszusammenhang müsste öffentlich als gesicherte Serie behandelt werden.",
+                "reference_space": "Lokaler öffentlicher Diskurs",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ungeklärte Ermittlungsangaben können vorzeitig verallgemeinert werden.",
+                "source_support": "Die Quelle kennzeichnet den Zusammenhang als offen; eine Diskurswirkung ist nicht gemessen.",
+                "limitations": "Keine Medienvergleichsdaten und keine Diskurs- oder Publikumsforschung liegen vor.",
+                "first_order": "Sicherheitsdeutungen könnten zugespitzt werden.",
+                "second_order": "Pauschale Zuschreibungen könnten die Debatte verengen.",
+                "third_order": "Eine Normalisierung solcher Deutungen bleibt eine Möglichkeit, keine Feststellung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Diskursquelle oder Verhaltensmessung ist im Bestand enthalten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt einen möglichen vertrauensbildenden Aufklärungspfad und einen möglichen Verengungspfad; beide sind schwach belegt und werden nicht zu einer festen Richtung verrechnet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ermittlungen und Sicherheitsdebatte könnten institutionelles Vertrauen beeinflussen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ermittlungen und Sicherheitsdebatte könnten institutionelles Vertrauen beeinflussen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T12:55:40.936Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "hr-hessenschau",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Berichtet über Explosionen, Sachschäden, fehlende Verletzte, Festnahme und den offenen Ermittlungszusammenhang."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt Sachschäden und keine Verletzten, aber keine längerfristigen Folgen für Gesundheit, Einkommen oder Versorgung.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Der direkte negative Pfad zu Gebäuden, Betrieben und Sicherheitsgefühl ist quellengebunden plausibel. Umfang und Dauer der Folgen bleiben wegen fehlender unabhängiger Daten unsicher.",
+          "primary_paths": [
+            {
+              "label": "Sachschäden und mögliche Nutzungsausfälle an betroffenen Betrieben",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Explosionen beschädigen Gebäude und können Reparaturen, Sperrungen und Einnahmeausfälle auslösen.",
+              "recipients": [
+                "Betroffene Betriebe",
+                "Beschäftigte",
+                "Anwohner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Zwei beschädigte Gebäude und weitere beschädigte Objekte sprechen für lokale, aber nicht quantifizierte Folgen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere konkrete Tatorte und angrenzende Objekte sind betroffen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Gebäude wurden stark beschädigt und Scheiben gingen zu Bruch.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Reparatur- und Nutzungsausfälle sind möglich, ihre Dauer ist unbekannt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Sachschäden sind grundsätzlich reparierbar; Dauer und Kosten fehlen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betriebe und Anwohner können durch Ausfälle und Sicherheitslagen belastet werden.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der belegte Pfad bleibt bislang lokal und infrastrukturell begrenzt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine Verletzten sind berichtet; eine schwere Schutzgrenze ist nicht belegt.",
+                "reference_frame": "körperliche Unversehrtheit und sichere Nutzung öffentlicher Räume",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Weitere Nutzungseinschränkungen oder Reparaturbedarf müssen eintreten.",
+              "reference_space": "Betroffene Gebäude und ihr unmittelbares Umfeld in Frankfurt",
+              "time_horizon": "Tage bis Monate nach dem Ereignis",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Beschädigte Räume sind zumindest zeitweise nicht vollständig nutzbar.",
+              "source_support": "Die Quelle belegt starke Gebäudeschäden und zerbrochene Scheiben, nicht aber Ausfallzeiten oder Kosten.",
+              "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Reparaturdauer, Beschäftigung oder Einkommen.",
+              "first_order": "Gebäude und betriebliche Abläufe könnten ausfallen.",
+              "second_order": "Betriebe und Beschäftigte könnten Einnahmen oder Arbeitsmöglichkeiten verlieren.",
+              "third_order": "Bei Wiederholung könnte die lokale Nutzung bestimmter Orte zurückgehen; dies bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten quantifizieren Dauer, Kosten oder Reichweite der Nutzungsausfälle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Verunsicherung durch wiederholte Explosionen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Mehrere ähnliche Fälle und sichtbare Schäden könnten das Sicherheitsgefühl im Umfeld beeinträchtigen.",
+              "recipients": [
+                "Anwohner",
+                "Besucher",
+                "Gewerbetreibende"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus ist plausibel, aber eine Veränderung des Sicherheitsgefühls wurde nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft vor allem das lokale Umfeld.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Belastung ist möglich, ihre Stärke ist nicht erhoben.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt von Wiederholung und Aufklärung ab.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Sicherheitswahrnehmungen können sich grundsätzlich wieder verändern.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Anwohner und Betriebe an Tatorten sind besonders exponiert.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Wahrnehmungseffekt erreicht keine belegte Systemebene.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenzverletzung durch Verunsicherung ist nicht gemessen.",
+                "reference_frame": "subjektives Sicherheitsgefühl",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Weitere ähnliche Taten oder anhaltende Sperrungen müssten die Wahrnehmung prägen.",
+              "reference_space": "Lokales Umfeld der Tatorte",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung und sichtbare Schäden beeinflussen die lokale Risikowahrnehmung.",
+              "source_support": "Die Quelle berichtet über mehrere ähnliche Fälle, misst aber keine Wahrnehmungsänderung.",
+              "limitations": "Keine Umfrage, Verhaltensdaten oder unabhängige Untersuchung liegen vor.",
+              "first_order": "Sicherheitsbedenken könnten zunehmen.",
+              "second_order": "Besuche und lokale Geschäftsabläufe könnten beeinflusst werden.",
+              "third_order": "Eine dauerhafte Vermeidungsreaktion ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten erlauben eine Messung des Sicherheitsgefühls oder des Besuchsverhaltens.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist kein vergleichbarer positiver Hauptpfad belegt; mögliche Ermittlungsgewinne sind keine eingetretene Gegenwirkung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Sachschäden und mögliche Nutzungsausfälle an betroffenen Betrieben",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Sachschäden und mögliche Nutzungsausfälle an betroffenen Betrieben",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt keine Messwerte zu Schadstoffen, Abfall, Energieverbrauch oder ökologischen Schäden.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Ein kleiner negativer Pfad über Reparatur, Bauschutt und beschädigte Materialien ist plausibel, aber nicht quantifiziert und gegenüber den direkten Sicherheitsfolgen nachrangig.",
+          "primary_paths": [
+            {
+              "label": "Reparatur- und Entsorgungsaufwand nach Gebäudeschäden",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Beschädigte Gebäude und Scheiben könnten Materialverbrauch, Abfall und Transporte zur Wiederherstellung erfordern.",
+              "recipients": [
+                "Lokale Umwelt",
+                "Bau- und Entsorgungsinfrastruktur"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Zwei beschädigte Gebäude machen einen kleinen lokalen Ressourcenpfad plausibel; Umfang und Dauer fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Material- und Abfallpfad bleibt auf die Tatorte begrenzt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Schäden sind beschrieben, ökologische Intensität aber nicht gemessen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Reparatur- und Entsorgungsdauer ist unbekannt und voraussichtlich begrenzt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Lokale Reparaturfolgen sind grundsätzlich reversibel.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Verwundbarkeit ist nicht beschrieben.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ein tiefer ökologischer Systempfad ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze oder Kontamination ist berichtet.",
+                "reference_frame": "lokale Umweltbelastung durch Reparatur und Entsorgung",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Reparaturen und Entsorgung beschädigter Materialien müssen stattfinden.",
+              "reference_space": "Unmittelbares Umfeld der beschädigten Gebäude",
+              "time_horizon": "Tage bis Monate",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Schäden werden baulich beseitigt und Materialien entsorgt.",
+              "source_support": "Die Quelle belegt Gebäudeschäden, aber keine ökologischen Folgen.",
+              "limitations": "Keine Daten zu Materialmengen, Kontamination, Energie oder Emissionen.",
+              "first_order": "Reparaturbedarf könnte Material- und Transportaufwand erzeugen.",
+              "second_order": "Lokale Entsorgungswege könnten beansprucht werden.",
+              "third_order": "Ein relevanter ökologischer Systemeffekt ist ohne weitere Ereignisse nicht plausibel belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand liefert ökologische Messwerte oder eine Bilanz der Schäden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Keine belegte überregionale ökologische Kaskade",
+              "direction": "open",
+              "type": "counter_path",
+              "mechanism": "Die lokale Schadenslage könnte ohne größere Reparatur- oder Folgeschäden ökologisch begrenzt bleiben.",
+              "recipients": [
+                "Lokale Umwelt"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ein größerer ökologischer Effekt ist im gelieferten Material nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine überregionale ökologische Reichweite ist belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität wurde gemessen oder beschrieben.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine dauerhafte ökologische Veränderung ist belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung ist bekannt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Eine spezifische betroffene Umweltvulnerabilität ist nicht genannt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein tiefer Systempfad ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Grenzverletzung ist berichtet.",
+                "reference_frame": "ökologische Schutzgüter",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Es treten keine zusätzlichen Schäden oder relevanten Freisetzungen auf.",
+              "reference_space": "Frankfurt und unmittelbares Umfeld",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichteten Schäden bleiben lokal und ohne besondere Umweltfolgen.",
+              "source_support": "Die Quelle berichtet Sachschäden, aber keine Umweltbeeinträchtigung.",
+              "limitations": "Fehlende Umweltprüfung begrenzt die Aussage.",
+              "first_order": "Keine über den Reparaturpfad hinaus belegte Änderung.",
+              "second_order": "Keine belastbare ökologische Folge ableitbar.",
+              "third_order": "Keine ökologische Kaskade modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Wissensgrenze bleibt bestehen, weil keine Umweltquelle geliefert wurde.",
+              "negligibility_rationale": "Im abgegrenzten Zeitraum ist kein größerer ökologischer Effekt belegt oder plausibel quantifizierbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein kleiner negativer Reparaturpfad steht keinem belegten positiven ökologischen Pfad gegenüber; die Richtung bleibt in ihrer Stärke unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Reparatur- und Entsorgungsaufwand nach Gebäudeschäden",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Reparatur- und Entsorgungsaufwand nach Gebäudeschäden",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt Ermittlungen, aber keine messbare Veränderung von Vertrauen, Beteiligung oder institutioneller Kontrolle.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Die Ereignisse könnten lokale Sicherheitsdebatten und Erwartungen an staatliche Aufklärung beeinflussen. Eine demokratische Wirkung ist weder in Richtung noch Umfang belegt.",
+          "primary_paths": [
+            {
+              "label": "Ermittlungen und Sicherheitsdebatte könnten institutionelles Vertrauen beeinflussen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Berichte über wiederholte Explosionen und Ermittlungen können Erwartungen an Aufklärung, Schutz und Rechenschaft verändern.",
+              "recipients": [
+                "Bevölkerung",
+                "Polizei und Justiz",
+                "Kommunale Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein lokaler Kommunikations- und Vertrauenseffekt ist möglich, aber nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt ist auf die lokale Öffentlichkeit begrenzt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Vertrauensänderung wird nicht beobachtet oder quantifiziert.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt von Ermittlungsverlauf und weiterer Berichterstattung ab.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Vertrauen und Debatten sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere demokratische Verwundbarkeit ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer institutioneller Umbau ist nicht aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine Einschränkung demokratischer Rechte oder Verfahren ist berichtet.",
+                "reference_frame": "öffentliche Rechenschaft und Vertrauen in Ermittlungsinstitutionen",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Die Ereignisse müssen als Serie wahrgenommen werden und die Ermittlungen müssen öffentliche Erwartungen auslösen.",
+              "reference_space": "Lokale Öffentlichkeit und zuständige Sicherheitsinstitutionen in Frankfurt",
+              "time_horizon": "Wochen bis Monate",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sicherheitsereignisse werden politisch und institutionell bewertet.",
+              "source_support": "Die Quelle belegt Ermittlungen und einen offenen möglichen Zusammenhang, nicht deren demokratische Wirkung.",
+              "limitations": "Keine Umfragen, Diskursanalyse oder Daten zu Vertrauen und Beteiligung liegen vor.",
+              "first_order": "Forderungen nach Aufklärung und Schutz könnten zunehmen.",
+              "second_order": "Die Bewertung polizeilicher Arbeit könnte die lokale Debatte prägen.",
+              "third_order": "Eine dauerhafte Verschiebung institutionellen Vertrauens ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten messen demokratische oder institutionelle Folgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Normalisierung sicherheitspolitischer Deutungen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wiederholte Berichte und ein unbestätigter Serienzusammenhang könnten pauschale Bedrohungsbilder verstärken.",
+              "recipients": [
+                "Öffentliche Debatte",
+                "Betroffene Gruppen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der kommunikative Risikopfad ist möglich, aber weder Wirkung noch Zielgruppe sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt lokale Ereignisse ohne gemessene breite Verbreitung.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Deutungsverengung ist nicht beobachtet.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer hängt von Wiederholung und späterer Aufklärung ab.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche Deutungen können durch neue Belege korrigiert werden.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere Betroffenheiten oder gruppenspezifische Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein struktureller demokratischer Effekt ist nicht nachgewiesen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze wird nicht berührt oder belegt.",
+                "reference_frame": "offene und nicht pauschalisierende öffentliche Sicherheitsdebatte",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Der offene Ermittlungszusammenhang müsste öffentlich als gesicherte Serie behandelt werden.",
+              "reference_space": "Lokaler öffentlicher Diskurs",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ungeklärte Ermittlungsangaben können vorzeitig verallgemeinert werden.",
+              "source_support": "Die Quelle kennzeichnet den Zusammenhang als offen; eine Diskurswirkung ist nicht gemessen.",
+              "limitations": "Keine Medienvergleichsdaten und keine Diskurs- oder Publikumsforschung liegen vor.",
+              "first_order": "Sicherheitsdeutungen könnten zugespitzt werden.",
+              "second_order": "Pauschale Zuschreibungen könnten die Debatte verengen.",
+              "third_order": "Eine Normalisierung solcher Deutungen bleibt eine Möglichkeit, keine Feststellung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Diskursquelle oder Verhaltensmessung ist im Bestand enthalten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt einen möglichen vertrauensbildenden Aufklärungspfad und einen möglichen Verengungspfad; beide sind schwach belegt und werden nicht zu einer festen Richtung verrechnet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ermittlungen und Sicherheitsdebatte könnten institutionelles Vertrauen beeinflussen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ermittlungen und Sicherheitsdebatte könnten institutionelles Vertrauen beeinflussen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T12:52:25.258Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T11:47:46.000Z",
+      "last_updated": "2026-09-17T12:55:40.931Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-812fd78baf317ad978f1",
+      "case_file": null,
+      "source_published_at": "2026-09-17T11:47:46.000Z",
+      "published_at": "2026-09-17T12:55:40.931Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittlungen sollen klären, ob zwischen den insgesamt fünf Taten ein Zusammenhang besteht.",
+          "source_id": "hr-hessenschau",
+          "measurable_indicator": "Ermittlungsergebnis zum möglichen Zusammenhang der Taten",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-10dd0fe3f9c84abf",
+          "announced_at": "2026-09-17T11:47:46.000Z",
+          "follow_up_date": "2026-09-24T12:55:40.931Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/ueberwachungskamera-filmt-taeter-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-v6,explosionen-frankfurt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T11:47:46.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0df5952c7921c1b7",
       "title_image": {

@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-17T12:09:54.841Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-17T12:52:25.258Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -64,6 +64,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1/",
+      "title": "Laut Polizei: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
+      "summary": "Zwei Explosionen beschädigten in Frankfurt ein Café und eine Shisha-Bar, verletzt wurde niemand. Die Polizei nahm einen 17-jährigen Tatverdächtigen fest; ein Zusammenhang mit drei weiteren Fällen ist offen.",
+      "date_published": "2026-09-17T11:47:46.000Z",
+      "date_modified": "2026-09-17T11:47:46.000Z",
+      "_woek_released_at": "2026-09-17T12:55:40.931Z",
+      "tags": [
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
