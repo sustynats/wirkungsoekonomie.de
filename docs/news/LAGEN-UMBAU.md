@@ -135,6 +135,45 @@ Die Ausnahme ist die Tür, durch die die Stundenjagd zurückkommt. Deshalb:
 - Alles Zweifelhafte wartet auf die nächste reguläre Lage.
 - Jede außerplanmäßige Lage wird im Betriebsbericht mit ihrem Auslöser vermerkt.
 
+## 6a. Was unverändert bleibt (verbindlich)
+
+Natalie am 17.09.2026: „Die Bewertungen bleiben selbstverständlich, nach den
+Wirkungspotenzialen und der wirkungsökonomischen Einordnung und Einschätzung."
+
+Der Umbau betrifft **Takt und Bündelung**, nicht die fachliche Substanz. Nichts
+aus dieser Liste wird entfernt, ersetzt, vereinfacht oder „vorerst weggelassen":
+
+- **Wirkungspotenziale je Dimension** Mensch, Planet, Demokratie: Stärke 0–5,
+  Richtung, Dominanz, Evidenzstufe, Zeitstatus — die Balken und Ringe. Natalie
+  am 15.09.: „Balken/Ringe sind der Kern."
+- **Nichtkompensation / Reverse Merit Order**: keine gemittelte MPD-Gesamtnote,
+  das Ergebnis ist das Minimum der Kernfelder.
+- **Wirkungsökonomische Einordnung und Einschätzung**: Befund in Alltagssprache,
+  Wirkpfade mit Empfängern, Mechanismus, Bedingung, Raum, Zeit, Ordnungen 1–3,
+  Quellenbindung, Annahmen und Grenzen; mindestens eine quellengebundene
+  Wirkungsvisualisierung (Kaskade).
+- **Folgencheck vor Faktencheck** und das Truth-Sandwich: zu jeder Zahl die Folge.
+- **Das deterministische Gate** für die drei modellierten Dimensionen. Eine
+  Meldung ohne belastbare Bewertung geht nicht live, sie wartet.
+- **Trennung von Relevanz, Tragweite, Eintrittsplausibilität und Evidenz.**
+  Offen ist nicht neutral, unsicherer Eintritt ist keine offene Richtung.
+- **„Meine Einordnung"** als abschließende persönliche Passage in Meinung &
+  Analyse, mit Freigabeschritt.
+- **Quellen und Belege** je Karte, Wirkungsakte mit Versionsverlauf.
+- **Methodikseite** `/wirkungsticker/methodik/`.
+
+### Bauregel, damit das nicht verloren gehen kann
+
+Die Lage ist ein **Rahmen um die bestehenden Karten, kein neuer Kartentyp.** Die
+Lage-Seite und die App-Ansicht rendern die Einträge mit derselben Funktion wie
+die heutige Ticker-Liste (`storyCard` / `editorialCard`). Ein Eintrag in einer
+Lage ist eine Referenz auf die Wirkungsakte, keine Kopie ihrer Inhalte.
+
+Damit gilt automatisch: keine Lage kann eine Karte ohne Balken, Ringe, Quellen
+oder Wirkungsanalyse zeigen, weil es diese Darstellung nirgends gibt. Ein
+Regressionstest prüft in Schritt 1b, dass die Lage-Seite dieselben
+`data-magnitude`- und Dimensionsmarker enthält wie die Ticker-Liste.
+
 ## 7. Oberfläche
 
 Startseite:
