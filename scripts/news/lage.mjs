@@ -1,0 +1,129 @@
+// Drei redaktionelle Lagen am Tag statt Stundenjagd (Natalie, 17.09.2026):
+// gesammelt wird permanent, veroeffentlicht gebuendelt. Plan:
+// docs/news/LAGEN-UMBAU.md
+//
+// Dieses Modul ist absichtlich rein: keine Dateien, kein Netz, kein Modell. Es
+// rechnet Fenster, Kennungen, Eintraege und die Kopfzeile. Alles, was
+// veroeffentlicht wird, laesst sich damit vorher pruefen.
+import { berlinParts } from './lib.mjs';
+
+export const LAGEN = [
+  { slot: 'morgenlage', label: 'Morgenlage', hour: 6, fromHour: 18, fromPreviousDay: true,
+    since: 'seit gestern Abend' },
+  { slot: 'mittagslage', label: 'Mittagslage', hour: 12, fromHour: 6, fromPreviousDay: false,
+    since: 'seit 6 Uhr' },
+  { slot: 'abendlage', label: 'Abendlage', hour: 18, fromHour: 12, fromPreviousDay: false,
+    since: 'seit 12 Uhr' },
+];
+
+// Obergrenze, keine Untergrenze. Eine Untergrenze waere ein Anreiz, kuenstlich
+// Meldungen zu erzeugen - genau der Mechanismus, der abgeschafft wird.
+export const MAX_ENTRIES = 15;
+
+export function lageDefinition(slot) {
+  return LAGEN.find((entry) => entry.slot === slot) || null;
+}
+
+// Der Zeitpunkt, an dem in Berlin eine bestimmte Stunde eines Tages beginnt.
+// Sommerzeit wird nicht gerechnet, sondern geprueft: der Versatz, der beim
+// Zurueckformatieren wieder dasselbe Datum und dieselbe Stunde ergibt, ist der
+// richtige. 06/12/18 Uhr sind nie die doppelte Stunde einer Zeitumstellung.
+export function berlinInstant(isoDate, hour) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(isoDate || '')) || !Number.isInteger(hour) || hour < 0 || hour > 23) return null;
+  const stamp = `${isoDate}T${String(hour).padStart(2, '0')}:00:00`;
+  for (const offset of ['+01:00', '+02:00']) {
+    const at = Date.parse(`${stamp}${offset}`);
+    if (!Number.isFinite(at)) continue;
+    const parts = berlinParts(new Date(at));
+    if (parts.isoDate === isoDate && parts.hourNumber === hour) return new Date(at).toISOString();
+  }
+  return null;
+}
+
+export function previousIsoDate(isoDate) {
+  const at = Date.parse(`${isoDate}T12:00:00Z`);
+  if (!Number.isFinite(at)) return null;
+  return new Date(at - 86400000).toISOString().slice(0, 10);
+}
+
+// Das Fenster einer Lage, bezogen auf den Berliner Tag des Laufzeitpunkts.
+export function lageWindow(slot, now) {
+  const definition = lageDefinition(slot);
+  const at = Date.parse(now);
+  if (!definition || !Number.isFinite(at)) return null;
+  const isoDate = berlinParts(new Date(at)).isoDate;
+  const to = berlinInstant(isoDate, definition.hour);
+  const fromDate = definition.fromPreviousDay ? previousIsoDate(isoDate) : isoDate;
+  const from = fromDate ? berlinInstant(fromDate, definition.fromHour) : null;
+  if (!to || !from) return null;
+  return { slot, label: definition.label, since: definition.since, isoDate, from, to };
+}
+
+// Welche Lage ist zu diesem Zeitpunkt faellig? Ein Lauf, der sich verspaetet,
+// gehoert weiter zu seiner Lage: von 06:00 bis vor 12:00 ist es die Morgenlage.
+export function dueLage(now) {
+  const at = Date.parse(now);
+  if (!Number.isFinite(at)) return null;
+  const hour = berlinParts(new Date(at)).hourNumber;
+  const candidates = LAGEN.filter((entry) => hour >= entry.hour);
+  // Vor 06:00 laeuft noch das Fenster der Abendlage des Vortags weiter; dann ist
+  // keine Lage faellig, die Recherche sammelt weiter.
+  return candidates.length ? candidates[candidates.length - 1].slot : null;
+}
+
+export function lageId(isoDate, slot) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(String(isoDate || '')) && lageDefinition(slot) ? `${isoDate}-${slot}` : null;
+}
+
+const releaseAt = (story) => Date.parse(story?.published_at || '');
+const updateAt = (story) => Date.parse(story?.last_updated || story?.updated_at || story?.published_at || '');
+
+// Maßgeblich ist die Herausgabezeit, nicht die Ereigniszeit. Am 17.09.2026 hat
+// die Verwechslung beider Zeiten die Benachrichtigungen verschluckt; dieselbe
+// Verwechslung wuerde hier eine Meldung aus dem Fenster fallen lassen, nur weil
+// das Ereignis aelter ist als der Lauf.
+export function lageEntries({ stories = [], window: fenster, max = MAX_ENTRIES } = {}) {
+  if (!fenster) return [];
+  const from = Date.parse(fenster.from), to = Date.parse(fenster.to);
+  if (!Number.isFinite(from) || !Number.isFinite(to)) return [];
+  const inWindow = (value) => Number.isFinite(value) && value > from && value <= to;
+  return stories
+    .filter((story) => story?.published && story.slug)
+    .map((story) => {
+      const released = releaseAt(story), updated = updateAt(story);
+      if (inWindow(released)) return { story, at: released, state: 'neu' };
+      if (released < from && inWindow(updated)) return { story, at: updated, state: 'fortgeschrieben' };
+      return null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.at - a.at)
+    .slice(0, Math.max(0, Number(max) || 0))
+    .map(({ story, at, state }) => ({ story_id: story.story_id, slug: story.slug, title: story.title, state, at: new Date(at).toISOString() }));
+}
+
+// Deterministischer Text, kein Modellaufruf. Die Zahl ist gezaehlt, nicht
+// geschaetzt, und null Entwicklungen sind eine Aussage, keine Leerstelle
+// (Natalie: „Seit 12 Uhr gab es zu diesem großen Thema keine belastbare neue
+// Entwicklung." ist journalistisch wertvoller als ein erfundener Artikel).
+export function lageHeadline({ entries = [], window: fenster } = {}) {
+  const since = fenster?.since || 'seit dem letzten Stand';
+  if (!entries.length) return `Keine belastbare neue Entwicklung ${since}.`;
+  if (entries.length === 1) return `Das ist die eine Entwicklung, die ${since} wirkungsrelevant geworden ist.`;
+  return `Das sind die ${entries.length} Entwicklungen, die ${since} wirkungsrelevant geworden sind.`;
+}
+
+export function buildLage({ slot, now, stories = [], max = MAX_ENTRIES } = {}) {
+  const fenster = lageWindow(slot, now);
+  if (!fenster) return null;
+  const entries = lageEntries({ stories, window: fenster, max });
+  return {
+    lage_id: lageId(fenster.isoDate, slot),
+    slot, label: fenster.label, date: fenster.isoDate,
+    window_from: fenster.from, window_to: fenster.to,
+    stand: fenster.to,
+    headline: lageHeadline({ entries, window: fenster }),
+    counts: { total: entries.length, neu: entries.filter((e) => e.state === 'neu').length,
+      fortgeschrieben: entries.filter((e) => e.state === 'fortgeschrieben').length },
+    entries,
+  };
+}
