@@ -169,67 +169,20 @@ test("offline push fallback is idempotent and disabling suppresses future notifi
   assert.equal(worker.state().enabled, false);
 });
 
-// 16.09., Natalie: „die Zahl nimmt zu aber nicht ab, wenn ich gelesen habe"
-// (Stand 60). Gesenkt hat die Zahl bisher ausschliesslich der Knopf „Als
-// gelesen markieren". Wer die Liste offen vor sich hat, hat hingesehen.
-test('die Liste offen vor sich zu haben senkt die Zahl am App-Symbol', async () => {
+// 17.09.2026: Die Bestaetigung "gesehen beim Lesen" ist zurueckgenommen. Sie
+// hatte bei Natalie Banner und Zahl vollstaendig verstummen lassen - vorher
+// kamen beide trotz stummgeschalteter Glocke. Dieser Test haelt den
+// wiederhergestellten Zustand fest, damit derselbe Eingriff nicht
+// unbeabsichtigt zurueckkommt: der Lesestand wird ausschliesslich auf
+// ausdrueckliche Handlung geschrieben, nie auf einem Zeitgeber.
+test('der Lesestand wird nur auf ausdrueckliche Handlung geschrieben', () => {
   const app = fs.readFileSync("assets/js/news-pwa.js", "utf8");
-  const code = app.slice(app.indexOf("  const SEEN_DWELL_MS"), app.indexOf("  function initializeNewsState("));
-  const badges = [], seen = new Map(), posted = [];
-  let timer = null;
-  const cards = [{ dataset: { newsUpdatedAt: '2026-09-16T18:00:00Z' }, querySelector: () => ({ hidden: false }) }];
-  const context = { cards, badges, seen, posted,
-    document: { visibilityState: 'visible', addEventListener: (name, cb) => { context.onVisibility = cb; } },
-    window: { setTimeout: (cb) => { timer = cb; return 1; }, clearTimeout: () => { timer = null; },
-      localStorage: { getItem: (k) => seen.get(k) ?? null, setItem: (k, v) => seen.set(k, v) } },
-    lastSeenKey: 'seen', lastNotifiedKey: 'notified', markReadButton: { hidden: false },
-    latestFeedTimestamp: Date.parse('2026-09-16T19:00:00Z'),
-    registrationPromise: Promise.resolve({ active: { postMessage: (m) => posted.push(m) } }),
-    updateAppBadge: async (n) => { badges.push(n); },
-  };
-  vm.runInNewContext(`${code}
-  function newestCardTimestamp(){return cards.reduce((a,c)=>Math.max(a,Date.parse(c.dataset.newsUpdatedAt)),0);}
-  async function acknowledgeVisibleNews({hideMarkers=false,includeFeed=false}={}){
-    const newest=includeFeed?Math.max(newestCardTimestamp(),latestFeedTimestamp):newestCardTimestamp();
-    if(newest){const v=new Date(newest).toISOString();window.localStorage.setItem(lastSeenKey,v);window.localStorage.setItem(lastNotifiedKey,v);
-      const r=await registrationPromise;r?.active?.postMessage({type:'NEWS_MARK_SEEN',latest:v});}
-    if(markReadButton)markReadButton.hidden=true;await updateAppBadge(0);}
-  initializeSeenOnRead()`, context);
-
-  assert.deepEqual(badges, [], 'nicht sofort: ein Durchblättern zaehlt nicht als gelesen');
-  assert.ok(timer, 'die Bestaetigung wartet eine kurze Verweildauer ab');
-  timer();
-  await new Promise((resolve) => setImmediate(resolve));
-  assert.deepEqual(badges, [0], 'danach steht die Zahl auf null');
-  assert.equal(seen.get('seen'), '2026-09-16T18:00:00.000Z', 'der Lesestand reicht bis zur neuesten gerenderten Karte');
-  assert.notEqual(seen.get('seen'), '2026-09-16T19:00:00.000Z', 'nicht bis zu einer Meldung, die diese Seite nie gezeigt hat');
-  // Aus dem VM-Realm, deshalb Feld fuer Feld statt deepEqual (fremder Prototyp).
-  assert.equal(posted.length, 1, 'der Service Worker erfaehrt es, sonst hebt er die Zahl wieder');
-  assert.equal(posted[0].type, 'NEWS_MARK_SEEN');
-  assert.equal(posted[0].latest, '2026-09-16T18:00:00.000Z');
-});
-
-test('ohne Karten oder im Hintergrund wird nichts als gelesen gewertet', () => {
-  const app = fs.readFileSync("assets/js/news-pwa.js", "utf8");
-  const code = app.slice(app.indexOf("  const SEEN_DWELL_MS"), app.indexOf("  function initializeNewsState("));
-  for (const [label, cards, visibility] of [['ohne Karten', [], 'visible'], ['im Hintergrund', [{}], 'hidden']]) {
-    let timer = null;
-    const badges = [];
-    const context = { cards, document: { visibilityState: visibility, addEventListener() {} },
-      window: { setTimeout: (cb) => { timer = cb; return 1; }, clearTimeout() {} },
-      updateAppBadge: async (n) => { badges.push(n); }, acknowledgeVisibleNews: async () => { badges.push('quittiert'); } };
-    vm.runInNewContext(`${code}\ninitializeSeenOnRead()`, context);
-    assert.equal(timer, null, `${label}: keine Bestaetigung geplant`);
-    assert.deepEqual(badges, [], `${label}: die Zahl bleibt unberuehrt`);
-  }
-});
-
-// Der Hintergrundlauf darf die Zahl nicht wieder heben, waehrend die Liste offen
-// ist - und er schreibt den Lesestand nicht selbst.
-test('der Hintergrundlauf hebt die Zahl nicht, wenn die Liste offen ist', () => {
-  const app = fs.readFileSync("assets/js/news-pwa.js", "utf8");
-  assert.match(app, /const watching = document\.visibilityState === "visible" && cards\.length > 0;/);
-  assert.match(app, /await updateAppBadge\(watching \? 0 : updates\.length\);/);
-  const check = app.slice(app.indexOf("  async function checkForNews("), app.indexOf("  async function markNewsAsSeen("));
-  assert.ok(!/acknowledgeVisibleNews\(\s*\{/.test(check), 'der Hintergrundlauf schreibt keinen Lesestand mit Feed-Grenze');
+  assert.ok(!app.includes('initializeSeenOnRead'), 'keine Bestaetigung beim blossen Ansehen');
+  assert.ok(!app.includes('SEEN_DWELL_MS'), 'kein Zeitgeber, der den Lesestand vorrueckt');
+  // acknowledgeVisibleNews darf nur aus dem Knopf und der Aktualisierung kommen.
+  const aufrufe = [...app.matchAll(/acknowledgeVisibleNews\(/g)].length;
+  assert.equal(aufrufe, 3, 'Definition, Knopf und Aktualisierung - kein vierter Aufruf');
+  // Der Push-Weg bleibt unberuehrt: die Zahl kommt aus dem Hintergrundlauf.
+  assert.match(app, /await updateAppBadge\(updates\.length\);/, 'der Hintergrundlauf setzt die Zahl wieder selbst');
+  assert.ok(!app.includes('const watching'), 'und unterdrueckt sie nicht bei offener Liste');
 });
