@@ -538,3 +538,25 @@ test('der Freigabevorbehalt bleibt im Entwurf und nicht im veröffentlichten Tex
   });
   assert.equal(revised.editorial_revision.patch.body_markdown, revised.markdown, 'Patch und Vorschau bleiben deckungsgleich');
 });
+
+// 17.09.2026: Ein Auftrag in der Ablage ohne Paket im Postfach nahm den ganzen
+// Lauf mit - processEditorialRequest brach mit BRIDGE_DROPBOX_NOT_FOUND ab, und
+// damit lag anderthalb Stunden auch die automatische Spur. Zwei Lehren: der
+// Lauf legt fehlende Pakete selbst nach, und ein einzelner kaputter Auftrag
+// darf die anderen nicht mitnehmen.
+test('der Lauf legt fehlende Pakete nach und ueberlebt einen kaputten Auftrag', async () => {
+  const fs = await import('node:fs');
+  const quelle = fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8');
+  // Die Reparatur laeuft im Lauf, der die Auftraege zieht.
+  assert.match(quelle, /import \{ repairMissingPackets \} from '\.\/auftrag-einreichen\.mjs'/);
+  const reparatur = quelle.indexOf('await repairMissingPackets(live, rows, now())');
+  assert.ok(reparatur > 0, 'die Reparatur wird aufgerufen');
+  assert.ok(reparatur < quelle.indexOf('const superseded'), 'bevor Auftraege gezogen werden');
+  // Ein Fehlschlag je Auftrag wird gefangen und protokolliert, nicht geworfen.
+  const schleife = quelle.slice(quelle.indexOf('for (const row of candidates)'), quelle.indexOf('if (PAID_STATUS.has(result.status))'));
+  assert.match(schleife, /try \{ result = await processEditorialRequest/, 'der Aufruf ist abgesichert');
+  assert.match(schleife, /status: 'request_failed'/, 'der Fehlschlag wird als Ergebnis geführt');
+  assert.match(schleife, /github-editorial-failure:/, 'und vermerkt');
+  assert.ok(!/throw/.test(schleife), 'und nicht weitergeworfen');
+  assert.match(quelle, /repaired_packets: repairedPackets/, 'der Bericht nennt nachgelegte Pakete');
+});
