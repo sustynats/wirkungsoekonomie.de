@@ -232,7 +232,16 @@ async function checkForNewsUpdates(fallbackPublication = {}) {
       lastReleased: latestRelease ? new Date(latestRelease).toISOString() : null, unreadCount: 0 });
     return;
   }
-  if (!updates.length) return;
+  if (!updates.length) {
+    // Der Server hat diesen Versand ausgeloest, weil er eine neue
+    // Veroeffentlichungskennung gesehen hat - und er entdoppelt selbst. Wenn die
+    // eigene Rechnung des Workers dann "nichts neu" sagt, ist die eigene
+    // Rechnung das Problem, nicht der Versand. Vorher blieb es in diesem Fall
+    // still, und der Push kam bei Natalie nie an. Die Kennung wird im Zustand
+    // vermerkt, ein zweiter Versand derselben Kennung zeigt also nichts erneut.
+    await showFallbackPush(state, fallbackPublication);
+    return;
+  }
   const totalUnread = unreadCount + updates.length;
   const targetUrl = updates.length === 1 && updates[0]?.url
     ? new URL(updates[0].url).pathname
