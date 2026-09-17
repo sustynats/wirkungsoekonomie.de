@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
+import { topLageEintrag } from './lage.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { editorialAnalysisAssessment } from './editorial-analysis.mjs';
@@ -19,14 +20,19 @@ const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRI
 
 // Only recent, published, independently sourced stories with a high editorial
 // analysis score and analysis gain. Purely a local, free pre-selection.
-export function selectEditorialCandidates(stories, now, { minScore = 70, minGain = 40, maxAgeHours = 48, limit = 1, assess = editorialAnalysisAssessment } = {}) {
+// restrictTo bindet den Vorschlag an bestimmte Meldungen - im Betrieb an den
+// staerksten Eintrag der jUengsten Lage (Natalie: „Zu den Top Lagen gibt es
+// dann jeweils eine Meinung&Analyse"). Die Schwellen bleiben: eine schwache
+// Lage erzeugt keine Analyse, es gibt keine Quote.
+export function selectEditorialCandidates(stories, now, { minScore = 70, minGain = 40, maxAgeHours = 48, limit = 1, assess = editorialAnalysisAssessment, restrictTo = null } = {}) {
   const cutoff = Date.parse(now) - maxAgeHours * 3600000;
   return stories
     .filter((story) => story.published && story.listed !== false && !isMerged(story) && story.analysis && !story.manual_authority && !story.book
       && Date.parse(story.published_at || 0) >= cutoff)
     .map((story) => ({ story, assessment: assess(story) }))
-    .filter(({ assessment }) => assessment.candidate && assessment.evidence_gate?.passed
-      && assessment.editorial_analysis_score >= minScore && assessment.analysis_gain_score >= minGain)
+    .filter(({ story, assessment }) => assessment.candidate && assessment.evidence_gate?.passed
+      && assessment.editorial_analysis_score >= minScore && assessment.analysis_gain_score >= minGain
+      && (!restrictTo || restrictTo.has(story.story_id)))
     .sort((a, b) => b.assessment.editorial_analysis_score - a.assessment.editorial_analysis_score || String(b.story.published_at).localeCompare(String(a.story.published_at)))
     .slice(0, Math.max(0, limit));
 }
@@ -54,7 +60,7 @@ export function buildCandidateRequest(story, assessment, { owner, now }) {
   return { job, fingerprint };
 }
 
-export async function proposeEditorialCandidates({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env, laneWait = null, limit = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_RUN || 1), maxPerDay = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_DAY || 2), stories = null, assess = editorialAnalysisAssessment } = {}) {
+export async function proposeEditorialCandidates({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env, laneWait = null, limit = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_RUN || 1), maxPerDay = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_DAY || 3), stories = null, assess = editorialAnalysisAssessment, restrictTo = undefined } = {}) {
   let store, transport;
   try { ({ store, transport } = session || bridgeSession(env)); }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
@@ -74,7 +80,15 @@ export async function proposeEditorialCandidates({ session = null, root = ROOT, 
     if (!/^\d{15,22}$/.test(owner || '')) return { status: 'owner_unknown', proposed: [] };
     const catalog = stories || JSON.parse(fs.readFileSync(path.join(root, 'data/news/stories.json'), 'utf8')).stories;
     const proposed = [];
-    for (const { story, assessment } of selectEditorialCandidates(catalog, now, { limit: Math.min(limit, maxPerDay - counter.proposed), assess })) {
+    // Ohne ausdrueckliche Vorgabe wird der Anker aus der Lagen-Ablage gelesen.
+    // Fehlt sie, bleibt es beim bisherigen Verhalten (staerkste Meldung).
+    let anker = restrictTo;
+    if (anker === undefined) {
+      const lagenPfad = path.join(root, 'data/news/lagen.json');
+      const top = fs.existsSync(lagenPfad) ? topLageEintrag(JSON.parse(fs.readFileSync(lagenPfad, 'utf8'))) : null;
+      anker = top ? new Set([top.story_id]) : null;
+    }
+    for (const { story, assessment } of selectEditorialCandidates(catalog, now, { limit: Math.min(limit, maxPerDay - counter.proposed), assess, restrictTo: anker })) {
       const { job, fingerprint } = buildCandidateRequest(story, assessment, { owner, now });
       if (await store.observation(`intake-fingerprint:${fingerprint}`) || await store.observation(`github-candidate:${story.story_id}`)) continue;
       await store.observe(`github-candidate:${story.story_id}`, { job_id: job.input.job_id, fingerprint, at: now, version: CANDIDATE_VERSION });
