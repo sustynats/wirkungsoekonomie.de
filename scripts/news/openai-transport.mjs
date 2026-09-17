@@ -619,6 +619,13 @@ export async function callOpenAiDirect(stories, options = {}) {
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' }));
   let formatIndex = 0;
   let body = bodyFor(formats[formatIndex]);
+  // Warum das strikte Schema abgelehnt wurde, wurde bisher weggeworfen. Folge:
+  // der Lauf fiel lautlos auf das schemafreie Format zurueck, dort darf das
+  // Modell Dimensionen weglassen, das Gate forderte nach - und die
+  // Nachbesserung war bezahlt. Am 17.09.2026 lief genau so der Lauf um 12:09
+  // (Schema-Antworten 0, Anbieter-Fehlschlaege 0, eine Nachbesserung, zwei
+  // fehlende Dimensionen). Ohne den Grund ist das nicht behebbar.
+  const schemaRejections = [];
   // A transport failure without any completed model output is not a paid
   // attempt. Two transport tries at most; never a third provider call.
   const transportAttempts = Math.max(1, Math.min(2, Number(options.attempts || 2)));
@@ -636,7 +643,12 @@ export async function callOpenAiDirect(stories, options = {}) {
       if (response.status === 401 || response.status === 403) throw Object.assign(new Error('AI_PROVIDER_AUTH_FAILED'), { requestAttempts: attempts, providerNotCalled: attempts === 1 });
       // Ein abgelehntes Schema erzeugt keine Antwort und ist kein bezahlter
       // Versuch: derselbe Versuch läuft ohne Schemazwang weiter.
-      if (response.status === 400 && formatIndex < formats.length - 1) { formatIndex += 1; body = bodyFor(formats[formatIndex]); attempt -= 1; continue; }
+      if (response.status === 400 && formatIndex < formats.length - 1) {
+        schemaRejections.push({ format: formats[formatIndex].type,
+          code: sanitizeFeedText(payload?.error?.code || payload?.error?.type || 'unbekannt', 60),
+          message: sanitizeFeedText(payload?.error?.message || 'ohne Begruendung', 200) });
+        formatIndex += 1; body = bodyFor(formats[formatIndex]); attempt -= 1; continue;
+      }
       if (attempt < transportAttempts && retryable(response.status)) { await (options.retryDelayImpl || sleep)(attempt * 15000); continue; }
       throw Object.assign(new Error(`AI_PROVIDER_ERROR:${response.status}`), { requestAttempts: attempts });
     } catch (error) {
@@ -678,6 +690,7 @@ export async function callOpenAiDirect(stories, options = {}) {
   const result = decodeWoekAiResponse({ ok: true, answer: decodable, provider: 'OpenAI Responses API', model: reportedModel,
     mode: TRANSPORT_VERSION, usage, sources: [] }, prompt, attempts);
   result.analysis_schema = formats[formatIndex].type === 'json_schema';
+  if (schemaRejections.length) result.schema_rejections = schemaRejections;
   const storyFor = (analysis) => stories.find((story) => story?.story_id === analysis?.story_id) || (stories.length === 1 ? stories[0] : null);
   result.analyses = result.analyses.map((analysis) => normalizeAnalysisOutput(analysis, storyFor(analysis)));
   result.repair_calls = 0;
