@@ -91,9 +91,16 @@ export function tickerStoriesInWindow(usage, now, windowMinutes = WINDOW_MINUTES
 }
 
 // Natalie am 17.09.2026: „So dass eben permanent jetzt mal wieder neue
-// Nachrichten live gehen. Drei Stück pro Stunde." Drei *veroeffentlichte*
-// Meldungen je Stunde brauchen rund sechs Aufrufe: gemessen wird etwa die
-// Haelfte der Aufrufe veroeffentlicht, die andere Haelfte haelt das Gate.
+// Nachrichten live gehen. Drei Stück pro Stunde." Gemeint sind drei
+// *veroeffentlichte* Meldungen.
+//
+// Hier stand vorher, drei Veroeffentlichungen brauchten rund sechs Aufrufe,
+// weil das Gate die Haelfte halte - und das Kontingent stand deshalb auf sechs.
+// Das widerspricht Natalies Prozessregel vom 16.09.2026: „nur 1x die API bis
+// hin zur Veroeffentlichung". Eine schlechte Ausbeute darf nicht mit mehr
+// bezahlten Aufrufen ausgeglichen werden, sie ist der Fehler. Das Kontingent
+// bleibt bei drei; die Ausbeute wird gemessen (ai_request_attempts,
+// ai_repair_calls, ai_failed_calls je Lauf) und an der Ursache behoben.
 //
 // Gleichmaessig ueber 24 Stunden waeren sechs Aufrufe je Stunde 2,03 USD am Tag
 // und damit ausserhalb des Monatsrahmens. Nachts liest niemand, tagsueber
