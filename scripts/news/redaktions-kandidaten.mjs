@@ -3,7 +3,8 @@
 // privaten Redaktion (derselbe Weg wie ein von Natalie eingereichter Auftrag).
 // Der Redaktionsworker entwirft ihn, die Redaktionsapp legt ihn zur Freigabe
 // vor. Es wird nichts direkt veröffentlicht und keine Position erfunden:
-// author_notes bleiben leer, der Entwurf ist ein Vorschlag zur Bestätigung.
+// author_notes bleiben leer; die Einordnung leitet sich aus der Methodik ab
+// (18.09.2026: der Vermerk "Vorschlag zur Bestaetigung" stand als Lesertext live).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -43,7 +44,7 @@ export function buildCandidateRequest(story, assessment, { owner, now }) {
   const links = [...new Set((story.sources || []).map((source) => source.url).filter((url) => /^https:\/\//.test(url || '')))].slice(0, 6);
   const brief = [`Meinung & Analyse zur Wirkungsakte „${story.title}“.`,
     story.analysis?.why_relevant ? `Warum relevant: ${story.analysis.why_relevant}` : null,
-    `Auftrag: Systemische Vertiefung mit Beispiel → Mechanismus → System, belegte Fakten, getrennte persönliche Einordnung nur als Vorschlag zur Bestätigung. Vorschlag des Redaktionsworkers (Relevanzwert ${assessment.editorial_analysis_score}, Analysegewinn ${assessment.analysis_gain_score}), keine Position der Autorin vorgegeben.`]
+    `Auftrag: Systemische Vertiefung mit Beispiel → Mechanismus → System, belegte Fakten, getrennte persönliche Einordnung: Gewichtung der belegten Befunde nach der wirkungsökonomischen Methodik, keine Rückfrage und keine Anrede an die Redaktion im Text. Vorschlag des Redaktionsworkers (Relevanzwert ${assessment.editorial_analysis_score}, Analysegewinn ${assessment.analysis_gain_score}), keine Position der Autorin vorgegeben.`]
     .filter(Boolean).join('\n').slice(0, 1800);
   const content = { kind: 'opinion_analysis', brief, links, author_notes: '', urgent: false, publication_intent: 'final_approval_required', attachments: [] };
   const fingerprint = hash({ origin: story.story_id, version: story.current_version || 1, kind: 'opinion_analysis', CANDIDATE_VERSION });

@@ -45,7 +45,11 @@ export function orderRequest({ kind, brief, links = [], authorNotes = '', owner,
       // scheitert der Entwurf am Riegel und landet in einer Korrekturrunde,
       // statt bei Natalie zu liegen - genau das ist am 17.09.2026 mit dem
       // Meta-Auftrag passiert. Der Sendungsauftrag sagt es dem Modell laengst.
-      ...(kind === 'news' ? [] : ['Letzte redaktionelle Hauptsektion mit dem sichtbaren Titel „Meine Einordnung": persönliche Gewichtung der belegten Befunde, nur als Vorschlag zur Bestätigung. Keine erfundenen Erlebnisse, Positionen oder behauptete eigene Prüfung.']),
+      // Die vorige Fassung sagte "nur als Vorschlag zur Bestätigung" - und genau
+      // dieser Verfahrensvermerk stand danach als Lesertext in drei Ausgaben
+      // ("Vorschlag zur Bestätigung: ..."). Der Vorbehalt gehoert in das
+      // Verfahren, nicht in den Auftrag an das Modell.
+      ...(kind === 'news' ? [] : ['Letzte redaktionelle Hauptsektion mit dem sichtbaren Titel „Meine Einordnung": Gewichtung der belegten Befunde nach der wirkungsökonomischen Methodik (Folgen vor Fakten, Nichtkompensation, materielle Schutzgrenzen, Korrekturfähigkeit). Keine erfundenen Erlebnisse, keine neuen Fakten, keine behauptete eigene Prüfung - und keine Rückfrage oder Anrede an die Redaktion im Text.']),
     ].join(' ') };
   const candidate = { story_id: `wt-${fingerprint.slice(0, 16)}`, event_id: `manual-${fingerprint.slice(0, 16)}`,
     content_hash: fingerprint, title: content.brief.slice(0, 150), sources: quellen.map((url) => ({ url, title: content.brief.slice(0, 120) })) };
