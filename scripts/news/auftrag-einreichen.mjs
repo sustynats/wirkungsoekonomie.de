@@ -46,6 +46,27 @@ export function orderRequest({ kind, brief, links = [], authorNotes = '', owner,
   return { job, fingerprint };
 }
 
+// Ein Auftrag in der Ablage ohne Paket im Postfach ist unbearbeitbar: der
+// Worker bricht mit BRIDGE_DROPBOX_NOT_FOUND ab und zieht in demselben Lauf
+// auch keinen anderen Auftrag mehr. Am 17.09.2026 stand deshalb die ganze
+// Redaktionsspur. Jeder Lauf legt fehlende Pakete deshalb nach, statt auf eine
+// Hand zu warten.
+export async function repairMissingPackets({ store, transport }, rows, now) {
+  const repariert = [];
+  for (const row of rows) {
+    if (row?.input?.job_type !== 'editorial_request' || row.status !== 'queued') continue;
+    if (!/^manual/.test(String(row?.intake?.trigger_type || '')) && !row?.intake?.draft_id) continue;
+    const pfad = bridgePath('00_INBOX', `${row.input.job_id}.input.json`);
+    try { if (await transport.metadata?.(pfad)) continue; } catch { /* nicht lesbar gilt als fehlend */ }
+    try {
+      await transport.writeAtomic(pfad, row.input);
+      repariert.push(row.input.job_id);
+      await store.observe?.(`manual-order-repaired:${row.input.job_id}`, { at: now, actor: ORDER_ACTOR });
+    } catch { /* der naechste Lauf versucht es erneut */ }
+  }
+  return repariert;
+}
+
 export async function submitOrder({ session = null, env = process.env, now = () => new Date().toISOString(), laneWait = null,
   kind = env.WOEK_ORDER_KIND, brief = env.WOEK_ORDER_BRIEF, links = String(env.WOEK_ORDER_LINKS || '').split(/[\s,]+/).filter(Boolean),
   authorNotes = env.WOEK_ORDER_NOTES || '' } = {}) {
@@ -59,16 +80,26 @@ export async function submitOrder({ session = null, env = process.env, now = () 
     // Wem der private Redaktionstisch gehoert, steht in einem echten
     // eingereichten Auftrag - nicht in einer Konfiguration und nicht im Code.
     const rows = await store.all();
+    const repariert = await repairMissingPackets({ store, transport }, rows, now());
     const reference = rows.find((row) => row?.input?.job_type === 'editorial_request');
     const owner = reference ? (await store.get(reference.input.job_id))?.intake?.owner : null;
     if (!/^\d{15,22}$/.test(owner || '')) return { status: 'owner_unknown' };
     const { job, fingerprint } = orderRequest({ kind, brief, links, authorNotes, owner, at: now() });
-    if (await store.get(job.input.job_id)) return { status: 'already_queued', job_id: job.input.job_id, kind };
+    if (await store.get(job.input.job_id)) return { status: 'already_queued', job_id: job.input.job_id, kind, repaired: repariert };
     const bekannt = rows.find((row) => row?.intake?.fingerprint === fingerprint);
-    if (bekannt) return { status: 'already_known', job_id: bekannt.input.job_id, kind };
+    if (bekannt) return { status: 'already_known', job_id: bekannt.input.job_id, kind, repaired: repariert };
+    // Der Worker liest den Auftrag als Paket aus dem Postfach, nicht aus der
+    // Ablage: processEditorialRequest holt 00_INBOX/<job>.input.json. Ohne das
+    // Paket scheitert er mit BRIDGE_DROPBOX_NOT_FOUND - und weil er dabei
+    // abbricht, stand am 17.09.2026 die ganze Redaktionsspur. Erst das Paket,
+    // dann der Eintrag in die Ablage: ein Eintrag ohne Paket ist unbearbeitbar,
+    // ein Paket ohne Eintrag wird schlicht nicht gezogen.
+    const inbox = bridgePath('00_INBOX', `${job.input.job_id}.input.json`);
+    await transport.writeAtomic(inbox, job.input);
+    if (hash(JSON.parse(await transport.read(inbox))) !== hash(job.input)) throw new Error('ORDER_PACKET_READBACK_FAILED');
     await store.put(job);
     await store.observe(`manual-order:${job.input.job_id}`, { kind, links: job.input.request.links, at: now(), actor: ORDER_ACTOR });
-    return { status: 'queued', job_id: job.input.job_id, kind, links: job.input.request.links.length };
+    return { status: 'queued', job_id: job.input.job_id, kind, links: job.input.request.links.length, repaired: repariert };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
 }
 
