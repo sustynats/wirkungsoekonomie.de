@@ -427,6 +427,19 @@ export async function main() {
     } catch { /* Unverified workflow state blocks recovery and raises a check. */ }
   }
   checks.push(...workflowChecks(snapshot, now));
+  // Eine Selbstheilung, die sich selbst abgeschaltet hat, ist der schlimmste
+  // Zustand: es sieht nach Betrieb aus und niemand greift ein. Am 17.09.2026
+  // lag die Redaktionsspur zwei Stunden, weil vier abgewiesene Anlaeufe vom
+  // Vortag das Tagesbudget verbraucht hatten - unsichtbar.
+  const gescheitert = (state?.recovery_attempts || []).filter(attempt => attempt.error && age(attempt.at, now) <= 1440);
+  const abgewiesen = gescheitert.filter(attempt => attempt.status === 'dispatch_rejected');
+  checks.push({ id: 'self-healing', name: 'Selbstheilung', immediate: true,
+    ok: abgewiesen.length === 0 && gescheitert.length < 2,
+    reason: abgewiesen.length
+      ? `Die Selbstheilung wurde abgewiesen (${[...new Set(abgewiesen.map(a => `${a.workflow}: ${a.error}`))].join(' | ')}). Der Fehler liegt im Aufruf, nicht im Lauf - er wiederholt sich bei jedem Versuch, bis er behoben ist.`
+      : gescheitert.length >= 2
+        ? `${gescheitert.length} Anlaeufe der letzten 24 Stunden blieben unklar (${[...new Set(gescheitert.map(a => `${a.workflow}: ${a.error}`))].join(' | ')}). Nach vier verbrauchten Anlaeufen greift die Selbstheilung 24 Stunden nicht mehr.`
+        : 'Die Selbstheilung kann anlaufen.' });
   const recoveryPlan = planRecovery({ head: process.env.WOEK_MONITOR_SOURCE_COMMIT, snapshot,
     pendingPublication: summary.pendingPublication, bridge: data.bridge,
     bridgeMode: data.processing_mode === 'dropbox_chatgpt_bridge', state, now });
