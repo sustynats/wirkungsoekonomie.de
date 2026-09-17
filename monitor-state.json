@@ -8,13 +8,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-17T01:35:29.424Z",
       "active": true
-    },
-    "delivery-redaktionsworker.yml": {
-      "firstSeen": "2026-09-17T07:50:43.243Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "aede4fb0c0885a2e4c3cdfcf",
+      "content": "✓ WÖk-Störung behoben\nRedaktionslauf\nPrüfung: 2026-09-17T09:50:29.982Z"
+    }
+  ],
   "dailyDate": "2026-09-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1266,11 +1267,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/gegen-wunsch-von-trump-us-notenbank-fed-hebt-erstmals-seit-2023-leitzins-an-70e6b3/": {
         "first_seen_at": "2026-09-17T09:35:44.435Z",
         "source_at": "2026-09-16T18:13:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/merz-bleibt-kanzler-frei-warnt-vor-personaldebatten-und-minderheitsregierung-23aafd/": {
+        "first_seen_at": "2026-09-17T09:50:29.982Z",
+        "source_at": "2026-09-17T07:09:08.000Z"
       }
     },
-    "last_new_at": "2026-09-17T09:35:44.435Z",
-    "checked_at": "2026-09-17T09:35:44.435Z",
-    "last_current_new_at": "2026-09-17T09:35:44.435Z"
+    "last_new_at": "2026-09-17T09:50:29.982Z",
+    "checked_at": "2026-09-17T09:50:29.982Z",
+    "last_current_new_at": "2026-09-17T09:50:29.982Z"
   },
   "recovery_attempts": [
     {
