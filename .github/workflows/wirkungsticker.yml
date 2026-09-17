@@ -144,6 +144,19 @@ jobs:
         id: outcome
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         run: node -e 'const fs=require("node:fs"); const report=require("./reports/wirkungsticker-latest-run.json"); fs.appendFileSync(process.env.GITHUB_OUTPUT, "public_changed=" + Boolean(report.public_changed) + "\n");'
+      # Die redaktionelle Lage ist eine Ableitung aus den bereits
+      # veroeffentlichten Wirkungsakten: kein Modellaufruf, keine Kosten.
+      # Derselbe Lauf zweimal ergibt dieselbe Lage (upsertLage), ein
+      # wiederholter Lauf erzeugt also keine Doppelausgabe. Geschrieben wird
+      # die Lage des laufenden Fensters; vor 06:00 Berliner Zeit ist keine
+      # faellig und der Schritt schreibt nichts. Danach werden die Seiten
+      # erneuert, damit die Lage-Seite im selben Commit liegt.
+      - name: Redaktionelle Lage schreiben und Seiten erneuern
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        run: |
+          set -euo pipefail
+          node scripts/news/lage-schreiben.mjs
+          npm run news:build
       - name: Synchronize public survey pages from Oracle
         id: polls
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true

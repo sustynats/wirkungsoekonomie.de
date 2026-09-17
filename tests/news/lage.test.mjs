@@ -181,3 +181,29 @@ test('eine Lage ohne auflösbare Meldung bricht nicht und behauptet nichts', asy
   assert.match(html, /Keine belastbare neue Entwicklung in diesem Zeitraum/);
   assert.doesNotMatch(html, /data-news-card/, 'keine erfundene Karte');
 });
+
+// Die Lage muss von selbst entstehen, sonst ist der Umbau eine Handarbeit. Sie
+// haengt am vorhandenen Ticker-Lauf: der committet data/news und wirkungsticker
+// schon mit gesicherter Push-Logik, also braucht es keinen zweiten Commit-Weg.
+// Reihenfolge ist Pflicht: erst Lage schreiben, dann Seiten bauen, dann
+// committen - sonst liegt die Lage-Seite nicht im selben Commit.
+test('der Ticker-Lauf schreibt die Lage und baut sie vor dem Commit', async () => {
+  const fs = await import('node:fs');
+  const workflow = fs.readFileSync('.github/workflows/wirkungsticker.yml', 'utf8');
+
+  const lageSchritt = workflow.indexOf('- name: Redaktionelle Lage schreiben und Seiten erneuern');
+  const commitSchritt = workflow.indexOf('- name: Commit one atomic update');
+  assert.ok(lageSchritt > 0, 'der Schritt existiert');
+  assert.ok(commitSchritt > lageSchritt, 'die Lage wird vor dem Commit geschrieben');
+
+  const block = workflow.slice(lageSchritt, commitSchritt);
+  assert.match(block, /node scripts\/news\/lage-schreiben\.mjs/);
+  assert.match(block, /npm run news:build/, 'die Seiten werden nach der Lage erneuert');
+  assert.ok(block.indexOf('lage-schreiben.mjs') < block.indexOf('npm run news:build'),
+    'erst schreiben, dann bauen');
+
+  // Der Commit muss die Ablage und die Seiten mitnehmen.
+  const commitBlock = workflow.slice(commitSchritt, commitSchritt + 2000);
+  assert.match(commitBlock, /git add -- data\/news[^\n]*wirkungsticker/,
+    'data/news und wirkungsticker sind im Commit');
+});
