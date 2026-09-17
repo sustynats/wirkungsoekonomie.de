@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-17T11:07:38.127Z",
+  "last_successful_run": "2026-09-17T11:22:37.969Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -89966,6 +89966,10 @@
     }
   },
   "pending_story_ids": [
+    "wt-5a3677cd5f3f1706",
+    "wt-612a7a3e07d495ae",
+    "wt-01bf95622eae8651",
+    "wt-519f1bda0530fcd8",
     "wt-a653df65e8669146",
     "wt-32d42fddd637ea19",
     "wt-b5b4c9bdc5b391fd",
@@ -89978,6 +89982,7 @@
     "wt-45d0cbaa3fa84a5a",
     "wt-467212938e799839",
     "wt-8a4132aa9e783bac",
+    "wt-16b158a009013062",
     "wt-2638d89da787527b",
     "wt-d8c478db7ce295d4",
     "wt-de3f7de661000802",
@@ -90342,16 +90347,8 @@
     "wt-71d162285fff9cfa",
     "wt-22b22c734dd19939",
     "wt-2ad99050a09bb9d2",
-    "wt-ed0fd89c0ce023e0",
-    "wt-b511ece6e5c8ddc4",
-    "wt-f76a32125207dc48",
-    "wt-5f3eb353a7685092",
     "wt-4a96954a8dbcbd88",
-    "wt-d98f6e2983b2ca72",
-    "wt-a7f084ba7e8f0697",
-    "wt-6b2e926203ca417b",
     "wt-9fbc3b6853a1f7d9",
-    "wt-26fc4c4890739280",
     "wt-fb70d3fc03cb74af",
     "wt-3eddfb4384c350e5",
     "wt-14149ffd118b4dca",
@@ -90397,7 +90394,6 @@
     "wt-e4954c3d2658fea3",
     "wt-6785fa48bf74c9ff",
     "wt-9eb80291005a8e1c",
-    "wt-2f645c3af877a8ea",
     "wt-b762a45eda4cc3be",
     "wt-9026a65900e2af06",
     "wt-68964a07db225df1",
@@ -90614,15 +90610,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-612a7a3e07d495ae",
-    "wt-16b158a009013062",
-    "wt-519f1bda0530fcd8",
-    "wt-5a3677cd5f3f1706",
-    "wt-01bf95622eae8651"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-17T11:07:38.127Z",
+  "last_attempted_run": "2026-09-17T11:22:37.969Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1537,
@@ -93692,6 +93683,11 @@
       "input_hash": "70a3bafdb7ec5977bae80f0b",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-17T11:07:38.127Z"
+    },
+    "wt-612a7a3e07d495ae": {
+      "input_hash": "70a3bafdb7ec5977bae80f0b",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-17T11:22:37.969Z"
     }
   }
 }
