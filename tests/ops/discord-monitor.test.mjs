@@ -556,9 +556,13 @@ test('ein Auftrag mit verbrauchtem Versuch ohne Entwurf faellt auf', () => {
     .checks.find((check) => check.id === 'liegengebliebene-auftraege');
 
   assert.equal(befund([]).ok, true);
-  const offen = befund([{ job_id: 'wt_a', seit: '2026-09-17T05:59:26Z' }, { job_id: 'wt_b', seit: '2026-09-13T09:00:00Z' }]);
+  const offen = befund([{ job_id: 'wt_a', seit: '2026-09-17T05:59:26Z', grund: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE' },
+    { job_id: 'wt_b', seit: '2026-09-13T09:00:00Z', grund: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE' }]);
   assert.equal(offen.ok, false);
   assert.match(offen.reason, /2 Auftrag/);
   assert.match(offen.reason, /2026-09-13/, 'der aelteste steht drin, nicht der neueste');
   assert.match(offen.reason, /keiner Freigabeliste/);
+  // Der Grund gehoert in die Meldung: sonst weiss sie, dass etwas liegt, aber
+  // nicht, was zu tun ist. Gleiche Gruende werden nicht wiederholt.
+  assert.match(offen.reason, /Grund: EDITORIAL_MARKDOWN_DUPLICATE_TITLE\)/);
 });

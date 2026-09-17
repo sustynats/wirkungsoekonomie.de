@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates } from '../../scripts/news/redaktionsworker.mjs';
+import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 
@@ -564,4 +564,31 @@ test('der Lauf legt fehlende Pakete nach und ueberlebt einen kaputten Auftrag', 
   assert.match(schleife, /github-editorial-failure:/, 'und vermerkt');
   assert.ok(!/throw/.test(schleife), 'und nicht weitergeworfen');
   assert.match(quelle, /repaired_packets: repairedPackets/, 'der Bericht nennt nachgelegte Pakete');
+});
+
+// Lauf 35270196124 am 17.09.2026: 'hourly_quota_reached' - und damit kein
+// Vermerk ueber die liegengebliebenen Auftraege. Ein Befund, der nur in Laeufen
+// entsteht, die ohnehin arbeiten, meldet genau dann nichts, wenn nichts laeuft.
+test('der Vermerk ueber liegengebliebene Auftraege entsteht auch ohne Stundenplatz', async () => {
+  const session = fakeSession([queuedJob()]);
+  session.observations.set(`github-attempt:${jobId}`, { provider_called: true, status: 'output_unusable',
+    error: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE \u00b7 Der Titel steht zweimal' });
+  // Stundenplatz erschoepft: der Lauf kehrt vor jeder Arbeit zurueck.
+  session.observations.set('editorial-hour-usage', { drafts: [now(), now(), now(), now(), now()] });
+  const report = await runRedaktionsworker({ session, knowledge,
+    draft: async () => { throw new Error('darf nicht zeichnen'); }, now, env: {}, maxJobsPerDay: 10 });
+  assert.equal(report.status, 'hourly_quota_reached');
+  const vermerk = session.observations.get('editorial-orders-exhausted');
+  assert.equal(vermerk.orders.length, 1);
+  assert.equal(vermerk.orders[0].job_id, jobId);
+  assert.equal(vermerk.orders[0].grund, 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE', 'die Kennung, nicht das Detail');
+  assert.equal(JSON.stringify(vermerk).includes('Der Titel steht zweimal'), false);
+});
+
+test('ein Auftrag mit ausgeliefertem Entwurf ist nicht liegengeblieben', async () => {
+  const session = fakeSession([queuedJob()]);
+  session.observations.set(`github-attempt:${jobId}`, { provider_called: true, status: 'output_delivered' });
+  assert.deepEqual(await erschoepfteAuftraege(session.store, await session.store.all()), []);
+  session.observations.set(`github-attempt:${jobId}`, { provider_called: false, status: 'provider_unavailable' });
+  assert.deepEqual(await erschoepfteAuftraege(session.store, await session.store.all()), [], 'ohne bezahlten Aufruf ist nichts verbraucht');
 });

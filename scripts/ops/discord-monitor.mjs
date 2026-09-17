@@ -257,7 +257,7 @@ export function evaluateChecks(data, now) {
   const erschoepft = Array.isArray(data.exhaustedOrders) ? data.exhaustedOrders : [];
   checks.push({ id: 'liegengebliebene-auftraege', name: 'Liegengebliebene Redaktionsauftraege', ok: erschoepft.length === 0, immediate: false,
     reason: erschoepft.length
-      ? `${erschoepft.length} Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit ${erschoepft.map((order) => order.seit).filter(Boolean).sort()[0] || 'unbekannt'}). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.`
+      ? `${erschoepft.length} Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit ${erschoepft.map((order) => order.seit).filter(Boolean).sort()[0] || 'unbekannt'}; Grund: ${[...new Set(erschoepft.map((order) => order.grund).filter(Boolean))].slice(0, 3).join(', ') || 'nicht vermerkt'}). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.`
       : 'Kein Auftrag hat seinen Versuch ohne Entwurf verbraucht.' });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
