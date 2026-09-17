@@ -47,7 +47,7 @@ test('beide Spuren rechnen auf dasselbe Kontingent', async () => {
   const fs = await import('node:fs');
   const worker = fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8');
   const ticker = fs.readFileSync('scripts/news/run.mjs', 'utf8');
-  assert.match(worker, /const budget = Math\.min\(maxJobsPerRun, maxJobsPerDay - counter\.paid, hourlyRoom\)/, 'die Redaktionsspur deckelt ihr Laufbudget');
+  assert.match(worker, /Math\.min\(maxJobsPerRun, maxJobsPerDay - counter\.paid, hourlyRoom\)/, 'die automatische Spur deckelt ihr Laufbudget');
   assert.match(worker, /hourUsage = noteEditorialDraft\(hourUsage, now\(\)\)/, 'und vermerkt jeden bezahlten Entwurf');
   assert.match(worker, /store\.observe\(EDITORIAL_HOUR_KEY, hourUsage\)/, 'im gemeinsamen Vermerk');
   assert.match(worker, /status: 'hourly_quota_reached'/, 'ein voller Stundenplatz ist ein Ergebnis, kein Fehler');
@@ -119,4 +119,21 @@ test('beide Spuren sind fuer die Reserve verdrahtet', async () => {
   assert.match(ticker, /reserve: editorialSlotReserve \}\)/, 'und zieht sie ab');
   assert.match(ticker, /report\.editorial_waiting = editorialWaiting;/, 'der Laufbericht zeigt beides');
   assert.match(ticker, /report\.editorial_slot_reserve = editorialSlotReserve;/);
+});
+
+// Natalie am 17.09.2026: „manuell von mir eingereichte Meinungen und Analyse und
+// Nachrichten müssen auf jeden Fall verarbeitet werden. Also egal, was das
+// Budget sagt oder die Grenze pro Stunde." Die Grenzen deckeln also die
+// automatische Spur, nicht ihre eigenen Auftraege.
+test('Tageszahl und Stundenplatz halten ihre eigenen Auftraege nicht auf', async () => {
+  const fs = await import('node:fs');
+  const worker = fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8');
+  assert.match(worker, /const eigene = selectEditorialRequests\(rows, \{ limit: 50 \}\)\.filter\(manualRequest\)/, 'die eigenen werden gezaehlt');
+  assert.match(worker, /counter\.paid >= maxJobsPerDay && !eigene\.length/, 'das Tageslimit bricht nur ohne eigene Auftraege ab');
+  assert.match(worker, /hourlyRoom <= 0 && !eigene\.length/, 'der Stundenplatz ebenso');
+  assert.match(worker, /Math\.min\(maxJobsPerRun, eigene\.length\)/, 'und sie kommen auf das Laufbudget obendrauf');
+  // Der Vermerk fuer die Reserve zaehlt sie weiterhin mit, damit die
+  // Nachrichtenspur von der wartenden Arbeit erfaehrt.
+  const vermerk = worker.indexOf('store.observe(EDITORIAL_WAITING_KEY');
+  assert.ok(vermerk > 0 && vermerk < worker.indexOf("status: 'daily_limit'"));
 });

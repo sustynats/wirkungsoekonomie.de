@@ -135,7 +135,7 @@ test('die Mediathek-Abfrage führt Barrierefreiheitsfassungen zusammen und wähl
   assert.equal(episodeKey('Titel (Hörfassung)', 7), episodeKey('Titel  ', 7));
   assert.notEqual(episodeKey('Titel', 7), episodeKey('Titel', 8));
   const body = JSON.parse(mediathekQueryBody(illner));
-  assert.deepEqual(body.queries, [{ fields: ['title'], query: 'maybrit illner' }, { fields: ['channel'], query: 'ZDF' }]);
+  assert.deepEqual(body.queries, [{ fields: ['topic'], query: 'maybrit illner' }, { fields: ['channel'], query: 'ZDF' }]);
   assert.equal(body.future, false); assert.equal(body.sortBy, 'timestamp');
   const root = fileURLToPath(new URL('../../', import.meta.url));
   assert.ok(loadShows(root).every((show) => show.mediathek || /^https:\/\//.test(show.feed)), 'jede Sendung hat eine Quelle');
@@ -447,11 +447,12 @@ test('maischberger ist eine verfolgte Sendung und wird aus der WDR-Mediathek gel
   assert.ok(show, 'die Sendung steht in show-feeds.json');
   assert.equal(show.kind, 'watched');
   assert.equal(show.enabled, true);
-  assert.deepEqual(show.mediathek, { title: 'maischberger', channel: 'WDR' }, 'WDR, nicht ARD - so fuehrt MediathekViewWeb die Sendung');
+  assert.equal(show.mediathek.channel, 'WDR', 'WDR, nicht ARD - so fuehrt MediathekViewWeb die Sendung');
+  assert.equal(show.mediathek.topic, 'maischberger', 'gesucht wird im Sendungsfeld');
   assert.ok(show.min_duration_seconds >= 2000, 'die 16- bis 26-Minuten-Clips fallen unter die Mindestdauer');
   assert.deepEqual(show.transcript_deadline, { day_offset: 1, berlin_hour: 14 }, 'amtliche Untertitel bis 14:00 des Folgetags, wie bei Lanz');
   const body = JSON.parse(mediathekQueryBody(show));
-  assert.deepEqual(body.queries, [{ fields: ['title'], query: 'maischberger' }, { fields: ['channel'], query: 'WDR' }]);
+  assert.deepEqual(body.queries, [{ fields: ['topic'], query: 'maischberger' }, { fields: ['channel'], query: 'WDR' }]);
 
   const episodes = mediathekEpisodes(maischbergerRows(), show);
   assert.equal(episodes.length, 2, 'zwei Folgen: der Clip faellt weg, die Gebaerdenfassungen sind dieselben Folgen');
@@ -463,4 +464,70 @@ test('maischberger ist eine verfolgte Sendung und wird aus der WDR-Mediathek gel
   assert.equal(alt.subtitle_url, 'https://www.ardmediathek.de/subtitle/maischberger-15-09.xml', 'die Folge vom 15.09. hat Untertitel');
   assert.equal(alt.duration, 4620);
   assert.ok(alt.summary.startsWith('Mit Gästen'));
+});
+
+// 17.09.2026, Natalie: „Es fehlen noch die letzten Sendungen von Lesch und
+// MaiThink (auch wenn es Wiederholungen sind)." Zwei Ursachen, beide hier
+// festgehalten.
+test('die Abfrage sucht die Sendung, nicht den Folgentitel', () => {
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const shows = loadShows(root).filter((show) => show.mediathek);
+  for (const show of shows) {
+    const body = JSON.parse(mediathekQueryBody(show));
+    assert.deepEqual(body.queries[0].fields, ['topic'], `${show.id}: MediathekViewWeb fuehrt die Sendung in topic, die Folge in title`);
+    assert.ok(body.queries[0].query, `${show.id}: hat einen Sendungsnamen`);
+    assert.deepEqual(body.queries[1].fields, ['channel']);
+  }
+  // MAITHINK X ist der Fall, an dem die Titelsuche scheiterte: die Folgen
+  // heissen „Was ist Musik? (S2026/E06)" und tragen den Sendungsnamen nicht.
+  const maithink = shows.find((show) => show.id === 'maithink-x');
+  assert.equal(JSON.parse(mediathekQueryBody(maithink)).queries[0].query, 'MAITHINK X - Die Show');
+  assert.equal(maithink.mediathek.channel, 'ZDFneo', 'die Show liegt auf ZDFneo, nicht ZDF');
+  const folgen = mediathekEpisodes([
+    { title: 'Was ist Musik? (S2026/E06)', topic: 'MAITHINK X - Die Show', channel: 'ZDFneo', timestamp: 1776556800, duration: 1800,
+      url_website: 'https://www.zdf.de/show/maithink-x/musik-100', url_video: 'https://cdn.example/mt.mp4', url_subtitle: 'https://utstreaming.zdf.de/mtt/mt.xml', id: 'x1' },
+  ], maithink);
+  assert.equal(folgen.length, 1, 'eine Folge ohne Sendungsnamen im Titel wird gefunden');
+  assert.equal(folgen[0].subtitle_url, 'https://utstreaming.zdf.de/mtt/mt.xml');
+});
+
+test('Reihen mit langen Pausen haben ihr eigenes Zeitfenster', () => {
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const shows = loadShows(root);
+  const fenster = (id) => shows.find((show) => show.id === id)?.max_age_days;
+  // Staffelsendungen: ihre letzte Folge liegt Monate zurueck und ist trotzdem
+  // die aktuelle Folge. Mit den sieben Standardtagen war sie unerreichbar.
+  assert.ok(fenster('maithink-x') >= 180, 'MAITHINK X sendet in Staffeln');
+  assert.ok(fenster('terra-x-lesch-co') >= 90, 'Terra X Lesch & Co hat lange Pausen');
+  // Wochensendungen: 14 Tage, damit eine ausgefallene Woche nichts verliert.
+  for (const id of ['maybrit-illner', 'maischberger', 'caren-miosga', 'hart-aber-fair', 'presseclub']) {
+    assert.equal(fenster(id), 14, `${id} ist eine Wochensendung`);
+  }
+  assert.equal(fenster('markus-lanz'), undefined, 'Lanz sendet mehrmals woechentlich und bleibt bei den sieben Standardtagen');
+  // Das Fenster je Sendung wirkt auch in der Auswahl.
+  const alt = [{ published_at: '2026-04-26T20:15:00.000Z', title: 'alt' }];
+  assert.equal(selectNewEpisodes(alt, '2026-09-17T08:00:00.000Z', { maxAgeDays: 7 }).length, 0);
+  assert.equal(selectNewEpisodes(alt, '2026-09-17T08:00:00.000Z', { maxAgeDays: 210 }).length, 1);
+});
+
+test('die verfolgten Sendungen decken Natalies Standardlaeufe ab', async () => {
+  const { readFileSync } = await import('node:fs');
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const ids = new Set(loadShows(root).map((show) => show.id));
+  for (const id of ['maybrit-illner', 'markus-lanz', 'maischberger', 'caren-miosga', 'hart-aber-fair', 'presseclub', 'maithink-x', 'terra-x-lesch-co']) {
+    assert.ok(ids.has(id), `${id} wird verfolgt`);
+  }
+  // phoenix runde hat keine amtlichen Untertitel: jede Folge braeuchte eigene
+  // Spracherkennung, bei taeglicher Sendung sprengt das das Monatsbudget.
+  // Deshalb eingetragen, aber abgeschaltet - mit dem Grund im Eintrag.
+  const datei = JSON.parse(readFileSync(new URL('../../data/news/show-feeds.json', import.meta.url), 'utf8'));
+  const phoenix = datei.shows.find((show) => show.id === 'phoenix-runde');
+  assert.ok(phoenix, 'phoenix runde ist eingetragen');
+  assert.equal(phoenix.enabled, false);
+  assert.match(phoenix.provider, /keine amtlichen Untertitel/, 'der Grund steht im Eintrag');
+  assert.equal(ids.has('phoenix-runde'), false, 'abgeschaltet heisst: kein Lauf zieht sie');
+  // Jede eingetragene Sendung hat eine benutzbare Quelle.
+  for (const show of datei.shows) {
+    assert.ok(show.mediathek?.channel && (show.mediathek?.topic || show.mediathek?.title) || /^https:\/\//.test(show.feed || ''), `${show.id} hat eine Quelle`);
+  }
 });

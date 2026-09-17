@@ -34,10 +34,20 @@ const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRI
 const PAID_STATUS = new Set(['output_delivered', 'validation_failed', 'output_unusable']);
 const isoDay = (value) => String(value).slice(0, 10);
 
+// Natalie am 17.09.2026: „manuell von mir eingereichte Meinungen und Analyse und
+// Nachrichten müssen auf jeden Fall verarbeitet werden. Also egal, was das
+// Budget sagt oder die Grenze pro Stunde." Ein Auftrag, den sie selbst gestellt
+// hat, traegt eine draft_id (aus der App) oder einen ausdruecklichen
+// Ausloesertyp. Automatische Vorschlaege tragen beides nicht.
+export const manualRequest = (row) => Boolean(row?.intake?.draft_id)
+  || /^manual/.test(String(row?.intake?.trigger_type || ''));
+
 export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() } = {}) {
   return rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued'
       && JOB_ID.test(row.input.job_id || '') && !row.ack && !row.accepted && !excluded.has(row.input.job_id))
-    .sort((a, b) => String(a.created_at || '').localeCompare(String(b.created_at || '')))
+    // Ihre eigenen Auftraege zuerst, danach nach Alter.
+    .sort((a, b) => (manualRequest(b) ? 1 : 0) - (manualRequest(a) ? 1 : 0)
+      || String(a.created_at || '').localeCompare(String(b.created_at || '')))
     .slice(0, Math.max(0, limit));
 }
 
@@ -393,7 +403,11 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // lassen - und genau dann bleibt die Redaktionsarbeit liegen.
     const rows = await store.all();
     await store.observe(EDITORIAL_WAITING_KEY, waitingRecord(selectEditorialRequests(rows, { limit: 500 }).length, now()));
-    if (counter.paid >= maxJobsPerDay) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
+    // Ihre eigenen Auftraege laufen auch dann, wenn Tageszahl und Stundenplatz
+    // erschoepft sind: sie hat sie ausdruecklich gestellt, es sind wenige, und
+    // ein liegengebliebener Auftrag von ihr ist teurer als ein paar Cent.
+    const eigene = selectEditorialRequests(rows, { limit: 50 }).filter(manualRequest);
+    if (counter.paid >= maxJobsPerDay && !eigene.length) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
     // Ein Kontingent fuer alles, was bezahlt wird (Natalie am 16.09.: die
     // Nachbesprechungen und Analysen sind Teil derselben Veroeffentlichung,
     // „dann kommt dann ein Artikel jeweils weniger"). Automatisch erzeugt wird
@@ -405,11 +419,15 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     try { tickerStories = tickerStoriesInWindow(JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json'), 'utf8')), now()); }
     catch { /* ohne Nutzungsdatei zaehlt nur die eigene Spur */ }
     const hourlyRoom = sharedHourlyRoom({ configured: quota, tickerStories, editorialDrafts: editorialDraftsInWindow(hourUsage, now()) });
-    if (hourlyRoom <= 0) return { status: 'hourly_quota_reached', day, quota, ticker_stories_last_hour: tickerStories,
+    if (hourlyRoom <= 0 && !eigene.length) return { status: 'hourly_quota_reached', day, quota, ticker_stories_last_hour: tickerStories,
       editorial_drafts_last_hour: editorialDraftsInWindow(hourUsage, now()), results: [] };
     // Rows that turn out to be delivered, exhausted or freshly claimed elsewhere
     // cost no model call; they must not use up the paid slots of this run.
-    const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid, hourlyRoom);
+    // Das Laufbudget deckelt die automatische Spur; ihre eigenen Auftraege
+    // kommen obendrauf, hoechstens so viele wie ein Lauf ohnehin schafft.
+    const budget = Math.max(
+      Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid, hourlyRoom),
+      Math.min(maxJobsPerRun, eigene.length));
     const candidates = selectEditorialRequests(rows, { limit: Math.max(budget, 0) + 20 });
     // Hat Natalie nachgeliefert, trägt die Nachlieferung den ursprünglichen
     // Auftrag mit. Ein zweiter Entwurf ohne den Zusatz wäre eine veraltete
