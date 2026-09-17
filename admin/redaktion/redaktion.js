@@ -55,7 +55,21 @@ async function loadStatus(){
   body.append(element('p','Befund wird geholt …','muted'));
   let view;
   try{ const data=await api('/status'); view=betriebsAnzeige(data?.status||null); }
-  catch(error){ body.textContent=''; body.append(element('p',error.message||'Der Befund ist gerade nicht abrufbar.','error')); $('betrieb-dot').textContent=''; return; }
+  catch(error){
+    body.textContent='';
+    // Die Auskunft ist eine neue Route des Redaktionsservers. Erscheint die App
+    // vor seiner neuen Fassung, antwortet er mit 404 - dann gehoert dort ein
+    // Satz hin, den man versteht, und nicht der rohe Serverhinweis
+    // (16.09., Natalie: "diese Aktion wurde nicht gefunden").
+    const text = error.status===404
+      ? 'Der Redaktionsserver kennt die Betriebsauskunft noch nicht. Sie erscheint, sobald seine neue Fassung ausgeliefert ist - am Ticker selbst ändert das nichts.'
+      : error.status===403 || error.status===401
+      ? 'Für die Betriebsauskunft ist eine neue Anmeldung nötig.'
+      : (error.message || 'Der Befund ist gerade nicht abrufbar.');
+    body.append(element('p',text,error.status===404?'quiet':'error'));
+    $('betrieb-dot').textContent='';
+    return;
+  }
   body.textContent='';
   $('betrieb-dot').textContent=view.dot;
   $('betrieb-dot').className='dot dot-'+view.tone;
@@ -155,7 +169,7 @@ async function openPrivatePreview(request){
 async function load(){
   if(!auth())return;
   const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.review_job_id||r.job_id)));drawReviews(reviewData.reviews);
-  $('login').hidden=true;$('workspace').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
+  $('login').hidden=true;$('workspace').hidden=false;$('tab-status').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
   if(!poll)poll=setInterval(()=>{if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));},60000);
 }
 window.addEventListener('online',()=>note('Du bist wieder online.'));
