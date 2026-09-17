@@ -264,6 +264,28 @@ ein schemafreies Antwortformat nach HTTP 400, dessen Grund weggeworfen wurde).
 Der Ablehnungsgrund wird jetzt aufbewahrt; die Reparatur folgt daraus, nicht
 aus einer Vermutung.
 
+**Der Befund ist da (17.09.2026, abends).** Seit dem 16.09. sind 15
+Nachbesserungsgruende in `data/news/usage.json` aufgezeichnet - und es ist
+kein Zufallsrauschen:
+
+| Anzahl | Grund |
+| --- | --- |
+| 11 | fehlende Pflichtteile der Wirkungsbewertung (`IMPACT_POWER_PATH_REQUIRED` 2x, `IMPACT_RATIONALE_REQUIRED` 2x, `IMPACT_POTENTIAL_PATH_REQUIRED` 2x, `IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED` 2x, dazu Balance, Emerging Signal, zentrale Dimension) |
+| 4 | Textregeln (`AI_EX_ANTE_CAUSAL_OVERCLAIM`, `CLAIM_NUMBER_NOT_IN_EVIDENCE`, `AI_SOURCE_SUMMARY_LENGTH`, `FOLLOWUP_DATE_UNSUPPORTED`) |
+
+Ein Ausloeser davon ist **deterministisch bekannt, bevor der Aufruf
+hinausgeht**: `impactContextRequirements` leitet aus dem Quelltext ab, ob eine
+Meldung Macht-, Energie- oder Schadensbezug hat, und macht daraus danach ein
+Pflichtgate. Das Modell erfuhr es nie. Es erfaehrt es jetzt gezielt fuer die
+Meldung, um die es geht - mit Ausloeser, Pflicht und Folge.
+
+Nebenbefund, der die Grenze zeigt: als allgemeine Regel fuer alle Meldungen
+kostete dieser Hinweis 977 Zeichen und sprengte das Eingabebudget eines echten
+September-Pakets mit 21 Quellen (`AI_INPUT_TOO_LARGE` im Prueflauf). Die
+Regeln teilen sich rund 44.000 Zeichen mit den Belegen. Der Hinweis steht
+deshalb nur bei der Meldung, die ihn braucht, und weicht, wenn das Paket beides
+nicht traegt: **Belege gehen dem Hinweis vor.**
+
 **3. Technologie: korrigierter Befund.** Ich hatte hier zweimal falsch
 geschlossen und schreibe beides hin, weil der falsche Befund sonst
 weiterwirkt.
