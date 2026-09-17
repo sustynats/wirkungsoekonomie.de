@@ -211,12 +211,25 @@ async function checkForNewsUpdates(fallbackPublication = {}) {
     await showFallbackPush(state, fallbackPublication);
     return;
   }
+  // date_published/date_modified sind die Ereigniszeit. Was fuer die Leserin
+  // neu ist, entscheidet die Herausgabezeit: eine Meldung ueber ein Ereignis
+  // von gestern Abend, die wir jetzt veroeffentlichen, steht in der
+  // Chronologie weit unten - sie ist trotzdem neu. Wer hier die Ereigniszeit
+  // vergleicht, laesst den Lesestand auf das jUengste Ereignis vorspringen und
+  // verschluckt danach jede spaeter herausgegebene, aeltere Meldung. Genau so
+  // blieben am 17.09.2026 Banner und Zahl aus.
+  const releasedAt = (item) => Date.parse(item._woek_released_at || item.date_modified || item.date_published || 0);
   const previous = Date.parse(state.lastKnown || 0);
+  // Ohne eigenen Herausgabestand gilt der bisherige Lesestand weiter: kein
+  // stummer Neuanfang und keine Nachtragsflut bei der Umstellung.
+  const seen = Number.isFinite(Date.parse(state.lastReleased)) ? Date.parse(state.lastReleased) : previous;
   const unreadCount = Math.max(0, Number(state.unreadCount) || 0);
-  const updates = (feed.items || []).filter((item) => Date.parse(item.date_modified || item.date_published || 0) > previous);
+  const updates = (feed.items || []).filter((item) => releasedAt(item) > seen);
   const latest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
+  const latestRelease = (feed.items || []).reduce((value, item) => Math.max(value, releasedAt(item)), 0);
   if (!previous) {
-    await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : null, unreadCount: 0 });
+    await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : null,
+      lastReleased: latestRelease ? new Date(latestRelease).toISOString() : null, unreadCount: 0 });
     return;
   }
   if (!updates.length) return;
@@ -228,6 +241,7 @@ async function checkForNewsUpdates(fallbackPublication = {}) {
   await writeNewsState({
     enabled: true,
     lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown,
+    lastReleased: latestRelease ? new Date(latestRelease).toISOString() : state.lastReleased,
     unreadCount: totalUnread,
     lastPushPublicationId: fallbackPublication.publicationId || state.lastPushPublicationId || null,
   });
