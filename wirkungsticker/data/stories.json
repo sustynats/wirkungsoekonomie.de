@@ -2,8 +2,2565 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T02:07:27.052Z",
+  "updated_at": "2026-09-17T03:22:19.902Z",
   "stories": [
+    {
+      "story_id": "wt-c46eaf3fa3e1d9ce",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-3c91588bf5d2980e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-bb7a57bf22337b3f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-2f2bf6621a78e097-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce",
+      "title": "A861 in die Schweiz wegen Polizeieinsatzes gesperrt",
+      "source_summary": "Der vorliegende Bericht schildert eine Sperrung der Autobahn A861 in Richtung Schweiz. Als Anlass wird ein Polizeieinsatz genannt; eine Sprecherin der Bundespolizei in Weil am Rhein bestätigte gegenüber AFP, dass die Strecke in beiden Fahrtrichtungen nicht befahrbar gewesen sei.\n\nDaneben verweist der Bericht auf eine Darstellung der Bild-Zeitung, wonach es nach einer Fahrzeugkontrolle am Grenzübergang Rheinfelden einen Sprengstoff-Alarm gegeben habe. Diese Darstellung ist im vorliegenden Material nicht unabhängig bestätigt.\n\nNach Informationen des SWR seien zwei Männer festgenommen worden. Offen bleiben der genaue Auslöser des Einsatzes, die Dauer der Sperrung, der weitere Status der Festnahmen und ob sich der Sprengstoffverdacht bestätigt hat.",
+      "summary": "Die A861 zur Schweiz wurde wegen eines Polizeieinsatzes gesperrt; ein Sprengstoff-Alarm und zwei Festnahmen werden berichtet. Auslöser, Verdachtslage und Folgen für den Grenzverkehr bleiben im vorliegenden Einzelbericht offen.",
+      "detail_summary": "Die A861 in Richtung Schweiz war laut vorliegendem Bericht wegen eines Polizeieinsatzes in beiden Fahrtrichtungen nicht befahrbar. Eine Sprecherin der Bundespolizei in Weil am Rhein bestätigte den Einsatz gegenüber AFP. Der Bericht verweist außerdem auf einen Sprengstoff-Alarm nach einer Fahrzeugkontrolle am Grenzübergang Rheinfelden. Diese Darstellung stammt aus einer zitierten Zeitungsangabe und ist hier nicht unabhängig bestätigt. Nach Informationen des SWR wurden zwei Männer festgenommen. Für Menschen und Betriebe im Grenzraum könnte eine längere Sperrung Wege, Lieferungen und Erreichbarkeit beeinträchtigen; Umfang und Dauer sind jedoch nicht belegt. Auch die sicherheitliche Bedeutung des Einsatzes bleibt offen, weil Angaben zu gefährlichem Material und zur Aufhebung der Sperrung fehlen.",
+      "why_relevant": "Eine grenzüberschreitende Verkehrsverbindung war nach dem Bericht kurzfristig nicht befahrbar. Das kann bei längerer Dauer Erreichbarkeit und Versorgung im Grenzraum berühren, doch der Umfang ist offen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Sperrung der A861 zur Schweiz wegen eines zugeschriebenen Polizeieinsatzes",
+        "evaluation_target": {
+          "label": "Grenzüberschreitende Verkehrsverbindung und kurzfristige Sicherheitslage am Grenzübergang Rheinfelden",
+          "type": "event"
+        },
+        "baseline": "Üblicher grenzüberschreitender Verkehr ohne berichtete Sperrung und ohne öffentlich bekannte Einsatzlage.",
+        "counterfactual": "Ohne Sperrung könnte der Verkehr die Verbindung regulär nutzen; ohne zugeschriebene Einsatzmeldung gäbe es weniger Anlass für kurzfristige Umleitungen und Sicherheitskommunikation.",
+        "reference_frame": [
+          "Erreichbarkeit und Versorgung im Grenzraum",
+          "Sicherheit und transparente öffentliche Information",
+          "Resilienz grenzüberschreitender Verkehrsverbindungen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine längere Sperrung könnte Arbeitswege, Lieferungen und erreichbare Hilfe im Grenzraum erschweren; Umfang und Dauer sind offen.",
+            "planet": "Kurzfristige Umleitungen könnten zusätzliche Wege und Emissionen verursachen. Für eine belastbare ökologische Wirkung fehlen Angaben zu Dauer, Verkehrsmengen und Ausweichrouten.",
+            "democracy": "Zugeschriebene, nicht unabhängig bestätigte Angaben könnten die öffentliche Wahrnehmung der Sicherheitslage beeinflussen. Eine institutionelle oder rechtliche Strukturänderung ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Sperrung könnte Verkehr und Informationsbedarf im Grenzraum kurzfristig verändern.",
+          "second_order": "Bei längerer Dauer könnten Umwege, Verzögerungen und Unsicherheit Arbeits-, Liefer- und Kommunikationsabläufe belasten.",
+          "third_order": "Nur bei längerer oder wiederholter Unterbrechung könnte sich die regionale Abhängigkeit von Ausweichverbindungen stärker zeigen; dafür gibt es keinen Nachweis.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Sperrung könnte kurzfristig aufgehoben worden sein.",
+            "Ausweichrouten könnten die Belastung begrenzen.",
+            "Der berichtete Sprengstoff-Alarm ist nicht unabhängig bestätigt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Herkunft vor. Der Bericht enthält Zuschreibungen an AFP, die Bild-Zeitung und den SWR; unabhängige Bestätigung ist nicht hergestellt.",
+          "institutional_status": "Berichtet wird ein Polizeieinsatz; ein Beschluss, eine neue Regel oder eine dauerhafte institutionelle Änderung ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand belegt keine Dauer und keine konkreten Betroffenenzahlen. Ein negativer Verkehrspfad ist nur für den Fall einer anhaltenden Sperrung plausibel.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Sperrung könnte bei längerer Dauer Erreichbarkeit, Arbeitswege und Lieferungen im Grenzraum beeinträchtigen. Die Richtung ist plausibel, die Größenordnung aber wegen fehlender Dauer- und Verkehrsdaten begrenzt.",
+            "primary_paths": [
+              {
+                "label": "Längere Sperrung erschwert grenzüberschreitende Wege und Versorgung",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Unterbrechung der A861 könnte Verkehr auf Umwege verlagern und dadurch Zeit- und Organisationsaufwand für Pendler, Transporte und lokale Betriebe erhöhen.",
+                "recipients": [
+                  "Pendler im Grenzraum",
+                  "Transportunternehmen",
+                  "lokale Betriebe"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Regional begrenzter Pfad mit unklarer Dauer; bei rascher Freigabe gering, bei längerer Sperrung stärker."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wäre vor allem der regionale Grenzverkehr.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Umwege könnten Zeit und Planung moderat belasten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Sperrung ist im Material nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Verkehrliche Verzögerungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Pendler und zeitkritische Transporte könnten besonders betroffen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht in regionale Abläufe, nicht in tragende Systeme.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Gesundheit oder Versorgung ist nicht belegt.",
+                  "reference_frame": "Erreichbarkeit und regionale Versorgung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur bei anhaltender Sperrung und fehlenden leistungsfähigen Ausweichrouten.",
+                "reference_space": "Grenzraum Rheinfelden und angrenzender Verkehr",
+                "time_horizon": "Kurzfristig bis zur Wiederfreigabe; Dauer offen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Sperrung bleibt lange genug bestehen, um Wege oder Lieferungen umzulenken.",
+                "source_support": "Die Quelle belegt die Sperrung, nicht deren konkrete Folgen.",
+                "limitations": "Keine Dauer, keine Verkehrsmengen und keine Angaben zu Ausweichrouten.",
+                "first_order": "Verkehr könnte ausweichen und sich verzögern.",
+                "second_order": "Zeit- und Kostenaufwand für Betroffene könnte steigen.",
+                "third_order": "Bei Wiederholung könnte regionale Abhängigkeit von der Verbindung sichtbarer werden; dies ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Konkrete Betroffenenzahlen und Dauer fehlen; die Bandbreite bleibt deshalb regional und bedingt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Längere Sperrung erschwert grenzüberschreitende Wege und Versorgung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Längere Sperrung erschwert grenzüberschreitende Wege und Versorgung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es fehlen Verkehrsmengen, Dauer und Ausweichrouten. Ein kleiner zusätzlicher Emissionspfad durch Umwege ist denkbar, aber nicht quantifizierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Eine mögliche Umleitung könnte zusätzliche Fahrwege verursachen. Im gegebenen Raum und auf Basis der kurzen, nicht datierten Sperrungsdauer ist der ökologische Pfad begründet vernachlässigbar modelliert.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Umwege verursachen zusätzliche Verkehrswege",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Sperrung könnte Fahrzeuge auf längere Routen oder andere Übergänge lenken und dadurch zusätzliche Fahrleistung erzeugen.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "lokale Umwelt"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne belegte Dauer, Verkehrsmengen oder Ausweichrouten bleibt der mögliche Effekt praktisch vernachlässigbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Die Reichweite ökologischer Folgen ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Eine zusätzliche Belastungsstärke ist nicht messbar ausgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Die Dauer der Sperrung und Umwege fehlt vollständig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kurzfristige Verkehrseffekte wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Besonders verletzliche ökologische Empfänger sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ein systemischer ökologischer Einfluss ist nicht plausibel belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze ist durch den Bericht berührt oder belegt.",
+                  "reference_frame": "Kurzfristige Verkehrs- und Emissionsbelastung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur bei längerer Sperrung und tatsächlich längeren Ausweichfahrten.",
+                "reference_space": "Lokaler Grenzverkehr um Rheinfelden",
+                "time_horizon": "Bis zur Wiederfreigabe; unbekannt",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ausweichverkehr würde zusätzliche Strecke fahren.",
+                "source_support": "Die Quelle belegt nur die Sperrung, nicht Verkehrs- oder Emissionsfolgen.",
+                "limitations": "Keine Mengen, Messwerte, Dauer oder Ausweichrouten vorhanden.",
+                "first_order": "Fahrzeuge könnten umgeleitet werden.",
+                "second_order": "Zusätzliche Fahrleistung könnte lokal Emissionen erhöhen.",
+                "third_order": "Ein überregionaler ökologischer Effekt ist bei diesem Ereignis nicht begründbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten erlauben eine belastbare ökologische Größenordnung.",
+                "negligibility_rationale": "Der mögliche Effekt ist mangels belegter Dauer, Reichweite und Verkehrsdaten auf einen nicht quantifizierbaren lokalen Kurzzeitpfad begrenzt.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Umwege verursachen zusätzliche Verkehrswege",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Umwege verursachen zusätzliche Verkehrswege",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keinen Beleg für eine eingetretene Vertrauens- oder Beteiligungsänderung. Möglich ist nur ein begrenzter Informationspfad durch unbestätigte Sicherheitsangaben.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die öffentliche Einordnung könnte durch die Kombination aus Sperrung, Sprengstoff-Alarm und Festnahmen beeinflusst werden. Da zentrale Angaben zugeschrieben und nicht unabhängig bestätigt sind, bleibt der demokratische Pfad klein und unsicher.",
+            "primary_paths": [
+              {
+                "label": "Unklare Sicherheitsangaben beeinflussen die öffentliche Lageeinschätzung",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die prominente Verbindung von Polizeieinsatz, Sprengstoff-Alarm und Festnahmen könnte Aufmerksamkeit und Risikowahrnehmung erhöhen, bevor die Angaben geklärt sind.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "Öffentlichkeit im Grenzraum"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Informationspfad ist regional und kurzzeitig; eine stärkere Wirkung setzt Wiederholung oder bestätigte Gefahren voraus."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle erreicht potenziell ein regional interessiertes Publikum.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Meldung kann Aufmerksamkeit auslösen, ihre Wirkung ist aber nicht gemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Informationsimpuls dürfte ohne weitere Ereignisse kurz anhalten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Fehl- oder Überinterpretationen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Menschen mit unmittelbarem Bezug zum Grenzübergang könnten stärker reagieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein dauerhafter institutioneller Vertrauenseffekt ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wird durch den Einzelbericht nicht konkret überschritten.",
+                  "reference_frame": "Transparente und überprüfbare Sicherheitsinformation",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn unbestätigte Angaben wiederholt oder ohne klare Einordnung verbreitet werden.",
+                "reference_space": "Öffentliche Kommunikation im regionalen Umfeld",
+                "time_horizon": "Kurzfristige Informationsphase",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Rezipierende nehmen die zugeschriebenen Angaben als belastbare Lagebeschreibung wahr.",
+                "source_support": "Die Quelle belegt die Berichterstattung und ihre Zuschreibungen, nicht eine Wirkung auf Einstellungen oder Verhalten.",
+                "limitations": "Keine Publikumsdaten, Wiederholungsmessungen oder unabhängigen Bestätigungen vorhanden.",
+                "first_order": "Die Meldung könnte Aufmerksamkeit auf die Sicherheitslage lenken.",
+                "second_order": "Unsicherheit könnte Nachfrage nach amtlicher Klärung oder vorsichtigerem Verhalten auslösen.",
+                "third_order": "Ein Vertrauenseffekt wäre nur bei längerer Unklarheit oder späterer Korrektur plausibel; er ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten belegen eine eingetretene Kommunikations- oder Vertrauenswirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Unklare Sicherheitsangaben beeinflussen die öffentliche Lageeinschätzung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Unklare Sicherheitsangaben beeinflussen die öffentliche Lageeinschätzung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T03:27:52.495Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle belegt den berichteten Polizeieinsatz, die Sperrung und zugeschriebene Angaben zu Sprengstoff-Alarm und Festnahmen; sie belegt keine unabhängige Bestätigung der Folgen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand belegt keine Dauer und keine konkreten Betroffenenzahlen. Ein negativer Verkehrspfad ist nur für den Fall einer anhaltenden Sperrung plausibel.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Sperrung könnte bei längerer Dauer Erreichbarkeit, Arbeitswege und Lieferungen im Grenzraum beeinträchtigen. Die Richtung ist plausibel, die Größenordnung aber wegen fehlender Dauer- und Verkehrsdaten begrenzt.",
+          "primary_paths": [
+            {
+              "label": "Längere Sperrung erschwert grenzüberschreitende Wege und Versorgung",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Unterbrechung der A861 könnte Verkehr auf Umwege verlagern und dadurch Zeit- und Organisationsaufwand für Pendler, Transporte und lokale Betriebe erhöhen.",
+              "recipients": [
+                "Pendler im Grenzraum",
+                "Transportunternehmen",
+                "lokale Betriebe"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Regional begrenzter Pfad mit unklarer Dauer; bei rascher Freigabe gering, bei längerer Sperrung stärker."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wäre vor allem der regionale Grenzverkehr.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Umwege könnten Zeit und Planung moderat belasten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Sperrung ist im Material nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Verkehrliche Verzögerungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Pendler und zeitkritische Transporte könnten besonders betroffen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht in regionale Abläufe, nicht in tragende Systeme.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Gesundheit oder Versorgung ist nicht belegt.",
+                "reference_frame": "Erreichbarkeit und regionale Versorgung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur bei anhaltender Sperrung und fehlenden leistungsfähigen Ausweichrouten.",
+              "reference_space": "Grenzraum Rheinfelden und angrenzender Verkehr",
+              "time_horizon": "Kurzfristig bis zur Wiederfreigabe; Dauer offen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Sperrung bleibt lange genug bestehen, um Wege oder Lieferungen umzulenken.",
+              "source_support": "Die Quelle belegt die Sperrung, nicht deren konkrete Folgen.",
+              "limitations": "Keine Dauer, keine Verkehrsmengen und keine Angaben zu Ausweichrouten.",
+              "first_order": "Verkehr könnte ausweichen und sich verzögern.",
+              "second_order": "Zeit- und Kostenaufwand für Betroffene könnte steigen.",
+              "third_order": "Bei Wiederholung könnte regionale Abhängigkeit von der Verbindung sichtbarer werden; dies ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Konkrete Betroffenenzahlen und Dauer fehlen; die Bandbreite bleibt deshalb regional und bedingt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Längere Sperrung erschwert grenzüberschreitende Wege und Versorgung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Längere Sperrung erschwert grenzüberschreitende Wege und Versorgung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es fehlen Verkehrsmengen, Dauer und Ausweichrouten. Ein kleiner zusätzlicher Emissionspfad durch Umwege ist denkbar, aber nicht quantifizierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Eine mögliche Umleitung könnte zusätzliche Fahrwege verursachen. Im gegebenen Raum und auf Basis der kurzen, nicht datierten Sperrungsdauer ist der ökologische Pfad begründet vernachlässigbar modelliert.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Umwege verursachen zusätzliche Verkehrswege",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Sperrung könnte Fahrzeuge auf längere Routen oder andere Übergänge lenken und dadurch zusätzliche Fahrleistung erzeugen.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "lokale Umwelt"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne belegte Dauer, Verkehrsmengen oder Ausweichrouten bleibt der mögliche Effekt praktisch vernachlässigbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Die Reichweite ökologischer Folgen ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Eine zusätzliche Belastungsstärke ist nicht messbar ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Die Dauer der Sperrung und Umwege fehlt vollständig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kurzfristige Verkehrseffekte wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Besonders verletzliche ökologische Empfänger sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ein systemischer ökologischer Einfluss ist nicht plausibel belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze ist durch den Bericht berührt oder belegt.",
+                "reference_frame": "Kurzfristige Verkehrs- und Emissionsbelastung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur bei längerer Sperrung und tatsächlich längeren Ausweichfahrten.",
+              "reference_space": "Lokaler Grenzverkehr um Rheinfelden",
+              "time_horizon": "Bis zur Wiederfreigabe; unbekannt",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ausweichverkehr würde zusätzliche Strecke fahren.",
+              "source_support": "Die Quelle belegt nur die Sperrung, nicht Verkehrs- oder Emissionsfolgen.",
+              "limitations": "Keine Mengen, Messwerte, Dauer oder Ausweichrouten vorhanden.",
+              "first_order": "Fahrzeuge könnten umgeleitet werden.",
+              "second_order": "Zusätzliche Fahrleistung könnte lokal Emissionen erhöhen.",
+              "third_order": "Ein überregionaler ökologischer Effekt ist bei diesem Ereignis nicht begründbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten erlauben eine belastbare ökologische Größenordnung.",
+              "negligibility_rationale": "Der mögliche Effekt ist mangels belegter Dauer, Reichweite und Verkehrsdaten auf einen nicht quantifizierbaren lokalen Kurzzeitpfad begrenzt.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Umwege verursachen zusätzliche Verkehrswege",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Umwege verursachen zusätzliche Verkehrswege",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keinen Beleg für eine eingetretene Vertrauens- oder Beteiligungsänderung. Möglich ist nur ein begrenzter Informationspfad durch unbestätigte Sicherheitsangaben.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die öffentliche Einordnung könnte durch die Kombination aus Sperrung, Sprengstoff-Alarm und Festnahmen beeinflusst werden. Da zentrale Angaben zugeschrieben und nicht unabhängig bestätigt sind, bleibt der demokratische Pfad klein und unsicher.",
+          "primary_paths": [
+            {
+              "label": "Unklare Sicherheitsangaben beeinflussen die öffentliche Lageeinschätzung",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die prominente Verbindung von Polizeieinsatz, Sprengstoff-Alarm und Festnahmen könnte Aufmerksamkeit und Risikowahrnehmung erhöhen, bevor die Angaben geklärt sind.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Öffentlichkeit im Grenzraum"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Informationspfad ist regional und kurzzeitig; eine stärkere Wirkung setzt Wiederholung oder bestätigte Gefahren voraus."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle erreicht potenziell ein regional interessiertes Publikum.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Meldung kann Aufmerksamkeit auslösen, ihre Wirkung ist aber nicht gemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Informationsimpuls dürfte ohne weitere Ereignisse kurz anhalten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Fehl- oder Überinterpretationen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Menschen mit unmittelbarem Bezug zum Grenzübergang könnten stärker reagieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein dauerhafter institutioneller Vertrauenseffekt ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wird durch den Einzelbericht nicht konkret überschritten.",
+                "reference_frame": "Transparente und überprüfbare Sicherheitsinformation",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn unbestätigte Angaben wiederholt oder ohne klare Einordnung verbreitet werden.",
+              "reference_space": "Öffentliche Kommunikation im regionalen Umfeld",
+              "time_horizon": "Kurzfristige Informationsphase",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Rezipierende nehmen die zugeschriebenen Angaben als belastbare Lagebeschreibung wahr.",
+              "source_support": "Die Quelle belegt die Berichterstattung und ihre Zuschreibungen, nicht eine Wirkung auf Einstellungen oder Verhalten.",
+              "limitations": "Keine Publikumsdaten, Wiederholungsmessungen oder unabhängigen Bestätigungen vorhanden.",
+              "first_order": "Die Meldung könnte Aufmerksamkeit auf die Sicherheitslage lenken.",
+              "second_order": "Unsicherheit könnte Nachfrage nach amtlicher Klärung oder vorsichtigerem Verhalten auslösen.",
+              "third_order": "Ein Vertrauenseffekt wäre nur bei längerer Unklarheit oder späterer Korrektur plausibel; er ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten belegen eine eingetretene Kommunikations- oder Vertrauenswirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Unklare Sicherheitsangaben beeinflussen die öffentliche Lageeinschätzung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Unklare Sicherheitsangaben beeinflussen die öffentliche Lageeinschätzung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T03:22:19.902Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T18:25:40.000Z",
+      "last_updated": "2026-09-17T03:27:52.493Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-7a13c31e7ec6e441b385",
+      "case_file": null,
+      "source_published_at": "2026-09-09T18:25:40.000Z",
+      "published_at": "2026-09-09T18:57:09.160Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Sperrung aufgehoben wurde, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Status der Sperrung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-107195cd3fdea325",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt wurde, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung oder Entkräftung des Verdachts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-905d4641626b36ef",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Festnahmen Bestand haben, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung der Festnahmen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-037cb5a6ff0cfe6d",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Sperrung aufgehoben wurde, bleibt zu prüfen.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Status der Sperrung",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2f03762f857e88f9",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-24T03:27:52.493Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt oder entkräftet wurde, bleibt zu prüfen.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Bestätigung oder Entkräftung des Verdachts",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4cd66ce058210807",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-24T03:27:52.493Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Festnahmen Bestand haben, bleibt zu prüfen.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Bestätigung der Festnahmen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b388f648c461d77a",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-24T03:27:52.493Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt---swr-meldet-zwei-festnahmen-38229310.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:25:40.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d1bafe5a495d34fb",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-9f70329dae6a909d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-64f2977f8c3fe451-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d1bafe5a495d34fb-f1ff4d09432e1120-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "usa-kongress-beschliesst-gesetz-fur-russland-sanktionen-5d34fb",
+      "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
+      "source_summary": "Der Deutschlandfunk berichtet, dass das US-Repräsentantenhaus ein umfassendes Sanktionspaket gegen Russland angenommen hat. Der Gesetzentwurf erhielt 262 Stimmen gegenüber 159 Stimmen und soll zur Unterzeichnung an US-Präsident Trump weitergeleitet werden.\n\nVorgesehen sind laut Quelle Maßnahmen gegen russische Amtsträger, Banken und die russische Schattenflotte. Außerdem werden Einreiseverbote und das Einfrieren von Vermögen beschrieben.\n\nDie Quelle nennt zudem Zollaufschläge von bis zu 100 Prozent für bestimmte Produkte aus China und Indien. Offen bleibt in dem vorliegenden Beleg, ob der Präsident unterschreibt und wie die Regelungen umgesetzt würden.",
+      "summary": "Das US-Repräsentantenhaus hat laut Deutschlandfunk ein Sanktionspaket gegen Russland angenommen. Seine Umsetzung und mögliche Folgen für Menschen, Umwelt und internationale Politik sind noch offen.",
+      "detail_summary": "Der Deutschlandfunk berichtet über die Annahme eines Sanktionspakets im US-Repräsentantenhaus und die Weiterleitung an den Präsidenten. Vorgesehen sind Maßnahmen gegen russische Amtsträger, Banken und die Schattenflotte sowie mögliche Zollaufschläge für bestimmte Produkte aus China und Indien. Das könnte den wirtschaftlichen Druck auf Russland erhöhen und Handelswege verändern, falls der Entwurf unterzeichnet und umgesetzt wird. Zugleich könnten Ausweichgeschäfte, Belastungen für Handelspartner und politische Spannungen zunehmen. Der vorliegende Beleg bestätigt weder die Unterzeichnung noch konkrete Wirkungen.",
+      "why_relevant": "Der Entwurf könnte Finanzierungswege, Handelsbeziehungen und den politischen Umgang mit Russlands Krieg beeinflussen. Reichweite und Umsetzung sind jedoch noch nicht belegt.",
+      "topic": [
+        "Geopolitik",
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Annahme eines umfassenden Sanktionspakets durch das US-Repräsentantenhaus und Weiterleitung des Entwurfs zur Unterzeichnung",
+        "evaluation_target": {
+          "label": "Sanktionspaket gegen Russland",
+          "type": "proposal"
+        },
+        "baseline": "Vor der möglichen Unterzeichnung bestehen die im Beleg beschriebenen neuen Maßnahmen noch nicht als geltende Regelung.",
+        "counterfactual": "Ohne Unterzeichnung und Umsetzung blieben die beschriebenen zusätzlichen Sanktionen und Zollaufschläge aus diesem Entwurf aus.",
+        "reference_frame": [
+          "Schutz von Menschen und Versorgung",
+          "ökologische Folgewirkungen von Handels- und Energieverlagerungen",
+          "demokratische Rechenschaft und rechtsstaatliche Nachvollziehbarkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Finanzielle und handelspolitische Einschränkungen könnten den Druck auf Russland erhöhen, zugleich aber Handelspartner, Beschäftigte und Verbraucher belasten. Verteilung und Versorgung hängen von Umsetzung und Ausweichmöglichkeiten ab.",
+            "planet": "Veränderte Energie- und Handelsströme könnten Transportwege, Förderanreize und Emissionen verschieben. Der Beleg enthält dazu keine Messdaten; die Richtung bleibt bedingt.",
+            "democracy": "Ein umfassender Kongressbeschluss könnte institutionelle Verantwortlichkeit und internationale Sanktionskoordination stärken. Zugleich könnten umstrittene extraterritoriale Maßnahmen Konflikte über Zuständigkeit und demokratische Kontrolle verschärfen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der Entwurf könnte Finanzzugänge, Handelskosten und politische Handlungsoptionen russischer Akteure und betroffener Handelspartner verändern.",
+          "second_order": "Unternehmen und Staaten könnten auf alternative Zahlungs-, Liefer- und Energiewege ausweichen; Verteilungseffekte und politische Gegenreaktionen wären möglich.",
+          "third_order": "Bei dauerhafter Umsetzung könnte sich die internationale Sanktions- und Handelsordnung verändern, wobei die Wirkung von Durchsetzung, Kooperation und Gegenmaßnahmen abhängt.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der Entwurf ist noch nicht als geltendes Recht belegt.",
+            "Alternative Handels- und Finanzierungswege könnten den Druck abschwächen.",
+            "Konkrete Wirkungsdaten und unabhängige Folgenanalysen liegen nicht vor."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor; eine unabhängige Bestätigung oder eigenständige Folgenquelle ist nicht enthalten.",
+          "institutional_status": "Das Repräsentantenhaus hat laut Quelle zugestimmt; der Entwurf soll noch dem US-Präsidenten zur Unterzeichnung vorgelegt werden. Ein Inkrafttreten ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Beleg beschreibt mögliche Eingriffe in Finanz- und Handelsströme, enthält aber keine Daten zu tatsächlichen Belastungen oder Schutzwirkungen. Die Richtung bleibt von Unterzeichnung, Durchsetzung und Ausweichreaktionen abhängig.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein bedingter positiver Pfad ist plausibel, wenn finanzielle Einschränkungen den Druck auf russische Kriegsressourcen erhöhen und Unterstützung für die Ukraine stärken. Gegenbelastungen für Handelspartner bleiben möglich, sind aber im Beleg nicht quantifiziert.",
+            "primary_paths": [
+              {
+                "label": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Sanktionen gegen Banken, Amtsträger und die Schattenflotte könnten Finanzierungs- und Handelsmöglichkeiten beschränken.",
+                "recipients": [
+                  "Menschen in der Ukraine",
+                  "russische Bevölkerung",
+                  "betroffene Unternehmen und Beschäftigte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite könnte über Finanz- und Handelsbeziehungen erheblich sein, doch Rechtsstatus, Durchsetzung und Reaktionen sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Finanz- und Handelsbeziehungen könnten mehrere Länder und Unternehmen betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Beschränkungen könnten einzelne Akteure und Transaktionen spürbar belasten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine mögliche Wirkung könnte über die Laufzeit der Maßnahmen anhalten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Finanz- und Handelswege könnten grundsätzlich wieder angepasst werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen in Kriegs- und Versorgungslagen wären gegenüber wirtschaftlichem Druck besonders verletzlich.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Finanzierungs- und Handelsstrukturen, aber keine belegte Systemveränderung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Beleg beschreibt keine konkrete Schutzgrenze oder eingetretene humanitäre Schädigung.",
+                  "reference_frame": "Schutz von Menschen und Versorgung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Unterzeichnung, konkrete Durchsetzung und ausreichende internationale Befolgung wären erforderlich.",
+                "reference_space": "USA, Russland, Ukraine und betroffene Handelspartner",
+                "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Finanzielle Einschränkungen werden umgesetzt und nicht vollständig durch alternative Wege ersetzt.",
+                "source_support": "Die Quelle belegt vorgesehene Sanktionen, nicht deren humanitäre Wirkung.",
+                "limitations": "Keine Folgenmessung, keine unabhängige Bestätigung und keine Angaben zu Ausnahmen oder Gegenmaßnahmen.",
+                "first_order": "Finanzzugänge und Handelsmöglichkeiten könnten eingeschränkt werden.",
+                "second_order": "Unternehmen und Haushalte könnten mit Anpassungskosten oder veränderten Versorgungswegen konfrontiert werden.",
+                "third_order": "Anhaltender wirtschaftlicher Druck könnte politische und humanitäre Entwicklungen beeinflussen, die Richtung bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Folgenquelle im gelieferten Bestand; der Pfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Handelsverlagerungen könnten bestimmte Verbraucher und Beschäftigte belasten",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Zollaufschläge und Umgehungsreaktionen könnten Lieferketten und Preise verändern.",
+                "recipients": [
+                  "Verbraucher",
+                  "Beschäftigte",
+                  "Unternehmen in betroffenen Handelsbeziehungen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle nennt mögliche Zollaufschläge, aber keine konkreten Preis- oder Beschäftigungsdaten."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffene Handelsbeziehungen könnten mehrere Länder und Märkte umfassen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die konkrete Belastung einzelner Haushalte oder Unternehmen ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Anpassungskosten könnten während einer Sanktionsperiode anhalten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Lieferketten könnten bei veränderten Regeln wieder angepasst werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Abhängige Haushalte und kleinere Unternehmen könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft Handelsanpassungen ohne belegte tiefe Strukturwirkung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Versorgung und soziale Verteilung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Zollaufschläge müssen in Kraft treten und auf relevante Lieferketten durchschlagen.",
+                "reference_space": "Betroffene Handels- und Importmärkte",
+                "time_horizon": "Nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Handelsakteure geben zusätzliche Kosten teilweise weiter.",
+                "source_support": "Die Quelle belegt vorgesehene Zollaufschläge, nicht deren Marktfolgen.",
+                "limitations": "Keine Preis-, Beschäftigungs- oder Versorgungsdaten.",
+                "first_order": "Importkosten könnten steigen.",
+                "second_order": "Lieferketten könnten sich verlagern.",
+                "third_order": "Veränderte Handelsmuster könnten soziale Ungleichheiten verstärken.",
+                "research_pass": "second_pass",
+                "research_result": "Konkrete Markt- und Verteilungsdaten fehlen im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Beleg nennt Energiehandel und mögliche Zollmaßnahmen, liefert aber keine Emissions-, Förder- oder Transportdaten. Ökologische Folgen können deshalb nur als unsicherer Verlagerungspfad modelliert werden.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Veränderte Handelswege für russisches Öl und Erdgas könnten Transporte, Lieferquellen und Förderanreize verschieben. Eine positive oder negative Gesamtwirkung ist nicht belegt; der ausgewählte Pfad beschreibt das Risiko zusätzlicher Verlagerungen.",
+            "primary_paths": [
+              {
+                "label": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Sanktionen und Zollaufschläge könnten Energiehandel auf längere oder weniger effiziente Lieferwege verlagern.",
+                "recipients": [
+                  "Ökosysteme entlang von Förder- und Transportwegen",
+                  "betroffene Regionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Energiebezug ist im Beleg genannt, konkrete Mengen und ökologische Veränderungen fehlen jedoch."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Energiehandel zwischen mehreren Ländern könnte von Umleitungen betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Intensität möglicher zusätzlicher Umweltbelastungen ist nicht quantifiziert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Handelsumleitungen könnten über längere Sanktionszeiträume bestehen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Handels- und Transportrouten könnten grundsätzlich wieder geändert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökologisch und sozial belastete Förder- und Transitregionen könnten empfindlicher reagieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer ökologischer Strukturwandel ist aus dem Beleg nicht ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Quellenbestand belegt keine konkrete Überschreitung einer ökologischen Schutzgrenze.",
+                  "reference_frame": "Ökologische Belastungsgrenzen und Energieemissionen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Handelsströme müssen sich wegen der Maßnahmen tatsächlich verlagern.",
+                "reference_space": "Internationale Öl- und Gasmärkte sowie Transitregionen",
+                "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Alternative Lieferwege werden genutzt und sind ökologisch belastender.",
+                "source_support": "Die Quelle nennt russisches Öl, Erdgas und mögliche Zollaufschläge, aber keine Umweltfolgen.",
+                "limitations": "Keine Emissions-, Mengen- oder Ökosystemdaten.",
+                "first_order": "Energiehandelswege könnten sich verändern.",
+                "second_order": "Transportentfernungen und Förderanreize könnten sich verschieben.",
+                "third_order": "Die Umweltbilanz internationaler Energieversorgung könnte sich verändern, Richtung und Größe bleiben offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Folgenquelle oder Messung im gelieferten Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Beleg zeigt einen parlamentarischen Vorgang, enthält aber keine Analyse demokratischer Kontrolle, internationaler Legitimation oder gesellschaftlicher Reaktionen. Positive und negative institutionelle Pfade bleiben bedingt.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Der parlamentarische Beschluss könnte Rechenschaft und institutionelle Entscheidung sichtbar machen. Zugleich könnten weitreichende Sanktionen und mögliche Auswirkungen auf Drittstaaten Konflikte über Zuständigkeit, Kontrolle und demokratische Legitimation verschärfen.",
+            "primary_paths": [
+              {
+                "label": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Behandlung im Repräsentantenhaus macht die politische Entscheidung und ihre Verantwortlichen öffentlich nachvollziehbarer.",
+                "recipients": [
+                  "US-Wählerschaft",
+                  "betroffene Parlamente",
+                  "internationale Öffentlichkeit"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der institutionelle Vorgang ist sichtbar, seine tatsächliche Wirkung auf Kontrolle und Vertrauen bleibt offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Entscheidung könnte nationale und internationale politische Akteure erreichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein umfassendes Sanktionspaket könnte parlamentarische Verantwortung spürbar machen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die politische Verantwortungszuordnung könnte über die Abstimmung hinaus fortwirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Parlamentarische Entscheidungen und politische Positionen können später korrigiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Gruppen sind auf transparente und überprüfbare Entscheidungen angewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt institutionelle Kontrolle, belegt aber keinen dauerhaften Systemwandel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder ein eingetretener Rechtsverstoß ist nicht belegt.",
+                  "reference_frame": "Demokratische Rechenschaft und rechtsstaatliche Kontrolle",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Gesetzgebungsprozess bleibt transparent und die Umsetzung wird parlamentarisch kontrolliert.",
+                "reference_space": "US-Institutionen und internationale politische Öffentlichkeit",
+                "time_horizon": "Von der Verabschiedung bis zur möglichen Umsetzung",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Parlamentarische Sichtbarkeit führt zu nachvollziehbarer Verantwortungszuordnung.",
+                "source_support": "Die Quelle belegt die Abstimmung und den weiteren institutionellen Schritt, nicht deren demokratische Wirkung.",
+                "limitations": "Keine Angaben zu Debatte, Kontrolle, Opposition oder gesellschaftlicher Rezeption.",
+                "first_order": "Die politische Verantwortung für den Entwurf wird sichtbarer.",
+                "second_order": "Internationale Akteure könnten ihre Positionen und Kooperationen anpassen.",
+                "third_order": "Der Vorgang könnte die Rolle von Parlamenten bei internationaler Wirtschaftspolitik prägen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Analyse institutioneller Folgen im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Extraterrestritoriale Wirkungen könnten Zuständigkeitskonflikte verschärfen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Maßnahmen mit Auswirkungen auf Handelspartner könnten Konflikte über politische und rechtliche Zuständigkeit auslösen.",
+                "recipients": [
+                  "US-Institutionen",
+                  "betroffene Drittstaaten",
+                  "internationale Organisationen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle beschreibt mögliche Maßnahmen gegenüber Produkten aus Drittstaaten, aber keine tatsächlichen Konflikte."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Drittstaaten und internationale Handelsbeziehungen könnten einbezogen werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Zollaufschläge könnten politische Reaktionen und Zuständigkeitsstreit auslösen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Konflikte könnten während der Geltung und Durchsetzung der Maßnahmen anhalten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Institutionelle Konflikte und Regelungen können grundsätzlich politisch korrigiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die demokratische Verwundbarkeit einzelner Institutionen ist im Beleg nicht konkret ausgewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft internationale Regelbeziehungen, ohne einen belegten Systembruch.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Quellenbestand belegt keinen konkreten demokratischen Schaden oder eine überschrittene Schutzgrenze.",
+                  "reference_frame": "Internationale Zuständigkeit und demokratische Kontrolle",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Maßnahmen werden unterzeichnet, angewandt und von Drittstaaten als extraterritorialer Eingriff zurückgewiesen.",
+                "reference_space": "USA, betroffene Drittstaaten und internationale Handelsinstitutionen",
+                "time_horizon": "Nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Betroffene Staaten reagieren politisch oder institutionell gegen die Maßnahmen.",
+                "source_support": "Die Quelle nennt mögliche Zollaufschläge gegenüber Produkten aus Drittstaaten, nicht daraus entstehende Konflikte.",
+                "limitations": "Keine Reaktionen, Rechtsgutachten oder Daten zur institutionellen Wirkung enthalten.",
+                "first_order": "Drittstaaten könnten politisch auf die Regelung reagieren.",
+                "second_order": "Handels- und Sanktionskooperationen könnten schwieriger werden.",
+                "third_order": "Wiederholte Zuständigkeitskonflikte könnten internationale Regelbeziehungen belasten.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Quelle zu internationalen Rechts- oder Demokratiefolgen im gelieferten Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Gewinn an parlamentarischer Verantwortlichkeit und das mögliche Risiko internationaler Zuständigkeitskonflikte betreffen denselben institutionellen Gegenstand. Beide Pfade sind nur bedingt und niedrig belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T03:26:54.598Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über die Annahme des Sanktionspakets, das Abstimmungsergebnis und die Weiterleitung des Entwurfs."
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Beschreibung der vorgesehenen Maßnahmen gegen Amtsträger, Banken, Schattenflotte und bestimmte Importe."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Beleg beschreibt mögliche Eingriffe in Finanz- und Handelsströme, enthält aber keine Daten zu tatsächlichen Belastungen oder Schutzwirkungen. Die Richtung bleibt von Unterzeichnung, Durchsetzung und Ausweichreaktionen abhängig.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein bedingter positiver Pfad ist plausibel, wenn finanzielle Einschränkungen den Druck auf russische Kriegsressourcen erhöhen und Unterstützung für die Ukraine stärken. Gegenbelastungen für Handelspartner bleiben möglich, sind aber im Beleg nicht quantifiziert.",
+          "primary_paths": [
+            {
+              "label": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Sanktionen gegen Banken, Amtsträger und die Schattenflotte könnten Finanzierungs- und Handelsmöglichkeiten beschränken.",
+              "recipients": [
+                "Menschen in der Ukraine",
+                "russische Bevölkerung",
+                "betroffene Unternehmen und Beschäftigte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite könnte über Finanz- und Handelsbeziehungen erheblich sein, doch Rechtsstatus, Durchsetzung und Reaktionen sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Finanz- und Handelsbeziehungen könnten mehrere Länder und Unternehmen betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Beschränkungen könnten einzelne Akteure und Transaktionen spürbar belasten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine mögliche Wirkung könnte über die Laufzeit der Maßnahmen anhalten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Finanz- und Handelswege könnten grundsätzlich wieder angepasst werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen in Kriegs- und Versorgungslagen wären gegenüber wirtschaftlichem Druck besonders verletzlich.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Finanzierungs- und Handelsstrukturen, aber keine belegte Systemveränderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Beleg beschreibt keine konkrete Schutzgrenze oder eingetretene humanitäre Schädigung.",
+                "reference_frame": "Schutz von Menschen und Versorgung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Unterzeichnung, konkrete Durchsetzung und ausreichende internationale Befolgung wären erforderlich.",
+              "reference_space": "USA, Russland, Ukraine und betroffene Handelspartner",
+              "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Finanzielle Einschränkungen werden umgesetzt und nicht vollständig durch alternative Wege ersetzt.",
+              "source_support": "Die Quelle belegt vorgesehene Sanktionen, nicht deren humanitäre Wirkung.",
+              "limitations": "Keine Folgenmessung, keine unabhängige Bestätigung und keine Angaben zu Ausnahmen oder Gegenmaßnahmen.",
+              "first_order": "Finanzzugänge und Handelsmöglichkeiten könnten eingeschränkt werden.",
+              "second_order": "Unternehmen und Haushalte könnten mit Anpassungskosten oder veränderten Versorgungswegen konfrontiert werden.",
+              "third_order": "Anhaltender wirtschaftlicher Druck könnte politische und humanitäre Entwicklungen beeinflussen, die Richtung bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Folgenquelle im gelieferten Bestand; der Pfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Handelsverlagerungen könnten bestimmte Verbraucher und Beschäftigte belasten",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Zollaufschläge und Umgehungsreaktionen könnten Lieferketten und Preise verändern.",
+              "recipients": [
+                "Verbraucher",
+                "Beschäftigte",
+                "Unternehmen in betroffenen Handelsbeziehungen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle nennt mögliche Zollaufschläge, aber keine konkreten Preis- oder Beschäftigungsdaten."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffene Handelsbeziehungen könnten mehrere Länder und Märkte umfassen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die konkrete Belastung einzelner Haushalte oder Unternehmen ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Anpassungskosten könnten während einer Sanktionsperiode anhalten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Lieferketten könnten bei veränderten Regeln wieder angepasst werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Abhängige Haushalte und kleinere Unternehmen könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft Handelsanpassungen ohne belegte tiefe Strukturwirkung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Versorgung und soziale Verteilung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Zollaufschläge müssen in Kraft treten und auf relevante Lieferketten durchschlagen.",
+              "reference_space": "Betroffene Handels- und Importmärkte",
+              "time_horizon": "Nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Handelsakteure geben zusätzliche Kosten teilweise weiter.",
+              "source_support": "Die Quelle belegt vorgesehene Zollaufschläge, nicht deren Marktfolgen.",
+              "limitations": "Keine Preis-, Beschäftigungs- oder Versorgungsdaten.",
+              "first_order": "Importkosten könnten steigen.",
+              "second_order": "Lieferketten könnten sich verlagern.",
+              "third_order": "Veränderte Handelsmuster könnten soziale Ungleichheiten verstärken.",
+              "research_pass": "second_pass",
+              "research_result": "Konkrete Markt- und Verteilungsdaten fehlen im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Erschwerter Zugang zu Finanzmitteln könnte den Druck auf russische Kriegsressourcen erhöhen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Beleg nennt Energiehandel und mögliche Zollmaßnahmen, liefert aber keine Emissions-, Förder- oder Transportdaten. Ökologische Folgen können deshalb nur als unsicherer Verlagerungspfad modelliert werden.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Veränderte Handelswege für russisches Öl und Erdgas könnten Transporte, Lieferquellen und Förderanreize verschieben. Eine positive oder negative Gesamtwirkung ist nicht belegt; der ausgewählte Pfad beschreibt das Risiko zusätzlicher Verlagerungen.",
+          "primary_paths": [
+            {
+              "label": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Sanktionen und Zollaufschläge könnten Energiehandel auf längere oder weniger effiziente Lieferwege verlagern.",
+              "recipients": [
+                "Ökosysteme entlang von Förder- und Transportwegen",
+                "betroffene Regionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Energiebezug ist im Beleg genannt, konkrete Mengen und ökologische Veränderungen fehlen jedoch."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Energiehandel zwischen mehreren Ländern könnte von Umleitungen betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Intensität möglicher zusätzlicher Umweltbelastungen ist nicht quantifiziert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Handelsumleitungen könnten über längere Sanktionszeiträume bestehen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Handels- und Transportrouten könnten grundsätzlich wieder geändert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökologisch und sozial belastete Förder- und Transitregionen könnten empfindlicher reagieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer ökologischer Strukturwandel ist aus dem Beleg nicht ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Quellenbestand belegt keine konkrete Überschreitung einer ökologischen Schutzgrenze.",
+                "reference_frame": "Ökologische Belastungsgrenzen und Energieemissionen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Handelsströme müssen sich wegen der Maßnahmen tatsächlich verlagern.",
+              "reference_space": "Internationale Öl- und Gasmärkte sowie Transitregionen",
+              "time_horizon": "Mittelfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Alternative Lieferwege werden genutzt und sind ökologisch belastender.",
+              "source_support": "Die Quelle nennt russisches Öl, Erdgas und mögliche Zollaufschläge, aber keine Umweltfolgen.",
+              "limitations": "Keine Emissions-, Mengen- oder Ökosystemdaten.",
+              "first_order": "Energiehandelswege könnten sich verändern.",
+              "second_order": "Transportentfernungen und Förderanreize könnten sich verschieben.",
+              "third_order": "Die Umweltbilanz internationaler Energieversorgung könnte sich verändern, Richtung und Größe bleiben offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Folgenquelle oder Messung im gelieferten Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Veränderte Energiehandelswege könnten zusätzliche Transport- und Förderanreize erzeugen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Beleg zeigt einen parlamentarischen Vorgang, enthält aber keine Analyse demokratischer Kontrolle, internationaler Legitimation oder gesellschaftlicher Reaktionen. Positive und negative institutionelle Pfade bleiben bedingt.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Der parlamentarische Beschluss könnte Rechenschaft und institutionelle Entscheidung sichtbar machen. Zugleich könnten weitreichende Sanktionen und mögliche Auswirkungen auf Drittstaaten Konflikte über Zuständigkeit, Kontrolle und demokratische Legitimation verschärfen.",
+          "primary_paths": [
+            {
+              "label": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Behandlung im Repräsentantenhaus macht die politische Entscheidung und ihre Verantwortlichen öffentlich nachvollziehbarer.",
+              "recipients": [
+                "US-Wählerschaft",
+                "betroffene Parlamente",
+                "internationale Öffentlichkeit"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der institutionelle Vorgang ist sichtbar, seine tatsächliche Wirkung auf Kontrolle und Vertrauen bleibt offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Entscheidung könnte nationale und internationale politische Akteure erreichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein umfassendes Sanktionspaket könnte parlamentarische Verantwortung spürbar machen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die politische Verantwortungszuordnung könnte über die Abstimmung hinaus fortwirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Parlamentarische Entscheidungen und politische Positionen können später korrigiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Gruppen sind auf transparente und überprüfbare Entscheidungen angewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt institutionelle Kontrolle, belegt aber keinen dauerhaften Systemwandel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder ein eingetretener Rechtsverstoß ist nicht belegt.",
+                "reference_frame": "Demokratische Rechenschaft und rechtsstaatliche Kontrolle",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Gesetzgebungsprozess bleibt transparent und die Umsetzung wird parlamentarisch kontrolliert.",
+              "reference_space": "US-Institutionen und internationale politische Öffentlichkeit",
+              "time_horizon": "Von der Verabschiedung bis zur möglichen Umsetzung",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Parlamentarische Sichtbarkeit führt zu nachvollziehbarer Verantwortungszuordnung.",
+              "source_support": "Die Quelle belegt die Abstimmung und den weiteren institutionellen Schritt, nicht deren demokratische Wirkung.",
+              "limitations": "Keine Angaben zu Debatte, Kontrolle, Opposition oder gesellschaftlicher Rezeption.",
+              "first_order": "Die politische Verantwortung für den Entwurf wird sichtbarer.",
+              "second_order": "Internationale Akteure könnten ihre Positionen und Kooperationen anpassen.",
+              "third_order": "Der Vorgang könnte die Rolle von Parlamenten bei internationaler Wirtschaftspolitik prägen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Analyse institutioneller Folgen im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Extraterrestritoriale Wirkungen könnten Zuständigkeitskonflikte verschärfen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Maßnahmen mit Auswirkungen auf Handelspartner könnten Konflikte über politische und rechtliche Zuständigkeit auslösen.",
+              "recipients": [
+                "US-Institutionen",
+                "betroffene Drittstaaten",
+                "internationale Organisationen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle beschreibt mögliche Maßnahmen gegenüber Produkten aus Drittstaaten, aber keine tatsächlichen Konflikte."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Drittstaaten und internationale Handelsbeziehungen könnten einbezogen werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Zollaufschläge könnten politische Reaktionen und Zuständigkeitsstreit auslösen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Konflikte könnten während der Geltung und Durchsetzung der Maßnahmen anhalten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Institutionelle Konflikte und Regelungen können grundsätzlich politisch korrigiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die demokratische Verwundbarkeit einzelner Institutionen ist im Beleg nicht konkret ausgewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft internationale Regelbeziehungen, ohne einen belegten Systembruch.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Quellenbestand belegt keinen konkreten demokratischen Schaden oder eine überschrittene Schutzgrenze.",
+                "reference_frame": "Internationale Zuständigkeit und demokratische Kontrolle",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Maßnahmen werden unterzeichnet, angewandt und von Drittstaaten als extraterritorialer Eingriff zurückgewiesen.",
+              "reference_space": "USA, betroffene Drittstaaten und internationale Handelsinstitutionen",
+              "time_horizon": "Nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Betroffene Staaten reagieren politisch oder institutionell gegen die Maßnahmen.",
+              "source_support": "Die Quelle nennt mögliche Zollaufschläge gegenüber Produkten aus Drittstaaten, nicht daraus entstehende Konflikte.",
+              "limitations": "Keine Reaktionen, Rechtsgutachten oder Daten zur institutionellen Wirkung enthalten.",
+              "first_order": "Drittstaaten könnten politisch auf die Regelung reagieren.",
+              "second_order": "Handels- und Sanktionskooperationen könnten schwieriger werden.",
+              "third_order": "Wiederholte Zuständigkeitskonflikte könnten internationale Regelbeziehungen belasten.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Quelle zu internationalen Rechts- oder Demokratiefolgen im gelieferten Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Gewinn an parlamentarischer Verantwortlichkeit und das mögliche Risiko internationaler Zuständigkeitskonflikte betreffen denselben institutionellen Gegenstand. Beide Pfade sind nur bedingt und niedrig belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Parlamentarische Entscheidung könnte Verantwortlichkeit für Sanktionspolitik stärken",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T03:22:19.902Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T23:10:53.000Z",
+      "last_updated": "2026-09-17T03:26:54.593Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-fabee1986889a40c40f7",
+      "case_file": null,
+      "source_published_at": "2026-09-17T02:45:49.000Z",
+      "published_at": "2026-09-17T03:26:54.593Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Es ist zu prüfen, ob der Gesetzentwurf vom US-Präsidenten unterzeichnet wird und welche Bestimmungen anschließend gelten.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Unterzeichnung des Gesetzentwurfs und Veröffentlichung der geltenden Bestimmungen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a50b3f60549ff8f4",
+          "announced_at": "2026-09-17T02:45:49.000Z",
+          "follow_up_date": "2026-09-24T03:26:54.593Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kongress-beschliesst-gesetz-fuer-russland-sanktionen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T02:45:49.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6000b2fabc397176",
       "title_image": {
@@ -122675,117 +125232,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-09",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-c46eaf3fa3e1d9ce",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-29bf4b29029ac0a3-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-095a5340f6bd5fa5-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-d8e963e1b49eb81b-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce",
-      "title": "Autobahn in die Schweiz wegen Polizei-Einsatzes gesperrt - SWR meldet zwei Festnahmen",
-      "source_summary": "In Baden-Württemberg ist die Autobahn A861 in die Schweiz am Mittwoch wegen eines polizeilichen Einsatzes vollständig gesperrt worden. Laut der vorliegenden Meldung war die Strecke in beiden Fahrtrichtungen nicht befahrbar. Als Begründung wird ein polizeilicher Einsatz genannt; weitere Details sind in der Quelle nicht belegt.\n\nDie Meldung verweist außerdem auf eine weitere Information des SWR: Danach sollen zwei Männer festgenommen worden sein. Ob ein Sprengstoffverdacht bestätigt wurde, wie lange die Sperrung dauerte und wie der Einsatz endete, bleibt in der gelieferten Quelle offen.",
-      "summary": "Die A861 in die Schweiz war am Mittwoch wegen eines Polizeieinsatzes gesperrt. Nach SWR-Informationen gab es zwei Festnahmen; weitere Details bleiben offen.",
-      "detail_summary": "Die Meldung beschreibt eine akute Störung auf einer grenzüberschreitenden Verkehrsverbindung. Belegt sind die Vollsperrung der A861 in beide Richtungen und zwei Festnahmen nach SWR-Informationen. Offen bleibt, was den Einsatz ausgelöst hat und ob ein Sprengstoffverdacht bestätigt wurde. Für die Einordnung reicht die Quelle nur als erster, noch nicht abgesicherter Zwischenstand. Relevanz entsteht vor allem durch die unmittelbare Unterbrechung von Verkehr und möglicher Sicherheitsbezug. Ein Wirkungsschluss über Folgen, Dauer oder Verantwortung ist mit der gelieferten Evidenz noch nicht belastbar.",
-      "why_relevant": "Die Meldung betrifft eine grenzüberschreitende Autobahn, akute Verkehrsstörung und einen möglichen Sicherheitsvorfall. Das ist materiell wegen Reichweite, unmittelbarer Unterbrechung und offenem Gefahrenbezug.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": {
-        "affected_groups": [
-          "unternehmen",
-          "beschaeftigte",
-          "kommunen",
-          "staat"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T18:49:47.382Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T18:25:40.000Z",
-      "last_updated": "2026-09-09T18:57:09.160Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-7a13c31e7ec6e441b385",
-      "case_file": null,
-      "source_published_at": "2026-09-09T18:25:40.000Z",
-      "published_at": "2026-09-09T18:57:09.160Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Sperrung aufgehoben wurde, ist offen.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Status der Sperrung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-107195cd3fdea325",
-          "announced_at": "2026-09-09T18:25:40.000Z",
-          "follow_up_date": "2026-09-16T18:57:09.160Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob der Sprengstoffverdacht bestätigt wurde, ist offen.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Bestätigung oder Entkräftung des Verdachts",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-905d4641626b36ef",
-          "announced_at": "2026-09-09T18:25:40.000Z",
-          "follow_up_date": "2026-09-16T18:57:09.160Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die Festnahmen Bestand haben, ist offen.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Bestätigung der Festnahmen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-037cb5a6ff0cfe6d",
-          "announced_at": "2026-09-09T18:25:40.000Z",
-          "follow_up_date": "2026-09-16T18:57:09.160Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt---swr-meldet-zwei-festnahmen-38229310.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T18:25:40.000Z",
-          "primary_source": false
         }
       ]
     },
