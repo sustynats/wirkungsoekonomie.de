@@ -2,8 +2,2262 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T06:52:32.895Z",
+  "updated_at": "2026-09-17T07:52:45.050Z",
   "stories": [
+    {
+      "story_id": "wt-8229c6de51d5d54a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8229c6de51d5d54a-875dfdfc81c49ef5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8229c6de51d5d54a-005e2268f0be10e7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8229c6de51d5d54a-76d6f7791848db2a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "schon-die-dritte-nacht-mit-detonationen-polizei-ermittelt-nach-zwei-weiteren-explosionen-d5d54a",
+      "title": "Laut Polizei: Ermittlungen nach zwei weiteren Explosionen in Frankfurt",
+      "source_summary": "Der Tagesspiegel berichtet über zwei weitere Explosionen in Frankfurt. Nach dem Bericht ereigneten sich die Detonationen innerhalb weniger Minuten; die Polizei prüft, ob es sich um eine größere Serie handeln könnte.\n\nAls Einordnung wird die Aussage der Polizei wiedergegeben, man sei mit den Ermittlungen beschäftigt. Der Bericht beschreibt damit einen laufenden Polizeieinsatz, nennt aber keine bestätigte Ursache, keinen Urheber und keine Angaben zu Verletzten oder Schäden.\n\nDie Quellenlage beruht auf einer journalistischen Darstellung. Unklar bleiben der genaue Ort, die Folgen der Explosionen und ein möglicher Zusammenhang mit früheren Ereignissen.",
+      "summary": "In Frankfurt hat es laut Polizei zwei weitere Explosionen gegeben. Ob die Detonationen Teil einer größeren Serie sind und welche Folgen entstanden, ist offen.",
+      "detail_summary": "Laut dem Tagesspiegel kam es in Frankfurt innerhalb weniger Minuten zu zwei weiteren Explosionen. Die Polizei ermittelt und prüft, ob die Detonationen zu einer größeren Serie gehören. Bestätigte Angaben zu Ursache, Urheber, Verletzten oder Sachschäden liegen in der vorliegenden Quelle nicht vor. Für Menschen kann die unklare Sicherheitslage kurzfristig Wege, Aufenthaltsentscheidungen und den Einsatz von Rettungs- oder Polizeikräften beeinflussen. Ein ökologischer oder institutioneller Folgeschaden ist derzeit nicht belegt; mögliche Wirkungen bleiben deshalb an weitere Ermittlungsbefunde gebunden.",
+      "why_relevant": "Mehrere Detonationen in kurzer Folge berühren unmittelbar die öffentliche Sicherheit; Ursache, Ausmaß und Zusammenhang sind noch offen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Zwei weitere Explosionen in Frankfurt und laufende polizeiliche Ermittlungen",
+        "evaluation_target": {
+          "label": "Lokale Sicherheitslage nach mehreren Detonationen",
+          "type": "event"
+        },
+        "baseline": "Öffentliche Sicherheitslage in Frankfurt ohne bestätigten Zusammenhang der Detonationen",
+        "counterfactual": "Ohne die weiteren Detonationen und die Ermittlungen gäbe es an diesem Anlass keinen zusätzlichen kurzfristigen Sicherungs- und Informationsbedarf.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Lokale Gefahrenabwehr",
+          "Vertrauenswürdige öffentliche Information"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Weitere Detonationen könnten kurzfristig Unsicherheit, Vorsicht und zusätzlichen Einsatzbedarf auslösen; konkrete Schäden oder Verletzungen sind nicht belegt.",
+            "planet": "Die Quelle nennt keine Umweltbeeinträchtigung. Ein relevanter ökologischer Pfad bleibt deshalb auf mögliche, derzeit unbelegte Schadensereignisse begrenzt.",
+            "democracy": "Transparente Ermittlungsinformationen könnten Orientierung ermöglichen; wiederholte unbestätigte Deutungen könnten dagegen Vertrauen und öffentliche Debatten belasten."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche zusätzliche Sicherheits- und Ermittlungsmaßnahmen im lokalen Umfeld.",
+          "second_order": "Bei bestätigtem Zusammenhang könnten Ressourcen, Schutzmaßnahmen und öffentliche Kommunikation ausgeweitet werden.",
+          "third_order": "Eine bestätigte Serie könnte Sicherheitsprioritäten und institutionelle Abläufe verändern; dafür gibt es derzeit keinen Nachweis.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die vorliegende Quelle nennt keine Verletzten, Schäden, Ursache oder bestätigte Serie.",
+            "Es gibt keine unabhängige zweite Quelle im gelieferten Bestand.",
+            "Ein ökologischer Folgeschaden ist nicht beschrieben."
+          ],
+          "source_independence": "Nur eine journalistische Herkunft ist geliefert; unabhängige Bestätigung und Primärbeleg fehlen.",
+          "institutional_status": "Laufende polizeiliche Ermittlungen; weder Ursache noch rechtliche Einordnung oder dauerhafte Maßnahme sind belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keinen gelieferten Nachweis zu Verletzungen oder konkreten Schäden. Modelliert wird nur ein bedingter lokaler Sicherheits- und Belastungspfad.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Weitere Detonationen könnten bei Menschen kurzfristig Unsicherheit, Vorsicht und zusätzlichen Bedarf an Gefahrenabwehr auslösen. Die Richtung ist als mögliches Risiko modelliert, nicht als eingetretener Schaden.",
+            "primary_paths": [
+              {
+                "label": "Kurzfristige Belastung und erhöhte Vorsicht im lokalen Umfeld",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Weitere Explosionen könnten Schutzentscheidungen, Verunsicherung und zusätzlichen Einsatzbedarf auslösen.",
+                "recipients": [
+                  "Anwohnerinnen und Anwohner",
+                  "Beschäftigte im Umfeld",
+                  "Polizei und Rettungskräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite ist lokal, die Intensität hängt von Schäden und Wiederholung ab; deshalb reicht der plausible Bereich von gering bis mittel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der belegte Ereignisort ist Frankfurt; eine größere Reichweite ist nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mehrere Detonationen können kurzfristig erhebliche Vorsicht auslösen, konkrete Schäden fehlen aber.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt einen aktuellen Ermittlungsanlass, aber keine anhaltende Belastungsdauer.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Für dauerhafte oder irreversible menschliche Schäden gibt es keinen gelieferten Beleg.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen im unmittelbaren Umfeld könnten besonders auf unklare weitere Gefahren reagieren.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad bleibt zunächst auf lokale Sicherheit und Einsatzorganisation begrenzt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung oder Grenzverletzung des Schutzguts ist nicht belegt; der Schutzpfad bleibt bedingt.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad würde insbesondere eintreten, wenn weitere Detonationen folgen oder Gefahren im Umfeld bestätigt werden.",
+                "reference_space": "Frankfurt und unmittelbar betroffene Personen",
+                "time_horizon": "kurzfristig, mit möglicher Verlängerung bei bestätigter Wiederholung",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass wiederholte Detonationen Vorsicht und Einsatzbedarf erhöhen können; konkrete Betroffenenzahlen werden nicht angenommen.",
+                "source_support": "Die Quelle belegt zwei weitere Explosionen und Ermittlungen, nicht aber Verletzungen oder konkrete Belastungen.",
+                "limitations": "Ursache, Schäden, Verletzte, Ort und Dauer sind offen.",
+                "first_order": "Mögliche erhöhte Vorsicht und zusätzlicher Einsatzbedarf.",
+                "second_order": "Bei bestätigtem Zusammenhang könnten Schutzmaßnahmen und Informationsbedarf ausgeweitet werden.",
+                "third_order": "Eine länger anhaltende Sicherheitslage könnte lokale Routinen der Gefahrenabwehr verändern; dies ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Folgenquelle im gelieferten Bestand; konkrete menschliche Schäden bleiben unbekannt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Kurzfristige Belastung und erhöhte Vorsicht im lokalen Umfeld",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Kurzfristige Belastung und erhöhte Vorsicht im lokalen Umfeld",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keinen Umweltbefund. Ein ökologischer Pfad ist ohne Angaben zu Stoffen, Bränden, Boden, Luft oder Wasser nicht belastbar quantifizierbar.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein Umweltpfad ist als Möglichkeit prüfbar, aber derzeit weder positiv noch negativ aus dem gelieferten Material ableitbar. Die Stufe null beschreibt die begründete Vernachlässigbarkeit der aktuell modellierbaren ökologischen Änderung, nicht die Unmöglichkeit späterer Schäden.",
+            "primary_paths": [
+              {
+                "label": "Keine derzeit belegbare ökologische Zustandsänderung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ohne Angaben zu Brand, Freisetzung oder beschädigter Infrastruktur lässt sich keine konkrete ökologische Zustandsänderung ableiten.",
+                "recipients": [
+                  "Luft, Boden und Wasser im lokalen Umfeld"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Im gelieferten Material ist keine ökologische Änderung beschrieben; nur bei zusätzlichen Schadensbefunden wäre eine höhere Stufe plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Ausbreitungsraum ist in der Quelle beschrieben.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Es gibt keine Angaben zu Schadstoffen, Bränden oder ökologischer Belastungsstärke.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine Dauer ökologischer Folgen wird nicht genannt und ist nicht ableitbar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Irreversible Umweltschäden sind in der Quelle nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Besonders verletzliche Ökosysteme oder Schutzgebiete werden nicht genannt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ein ökologischer Systempfad ist ohne Schadens- oder Freisetzungsbefund nicht modellierbar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete ökologische Schutzgrenze oder Grenzverletzung beschrieben.",
+                  "reference_frame": "Schutz von Luft, Wasser, Boden und Ökosystemen",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Ein relevanter Pfad setzt zusätzliche Belege zu Brand, Freisetzung, Beschädigung oder Kontamination voraus.",
+                "reference_space": "Lokales Umfeld der Explosionen",
+                "time_horizon": "offen",
+                "path_quality": [
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird nichts über Art oder Ausmaß möglicher Schäden angenommen.",
+                "source_support": "Die Quelle belegt Explosionen und Ermittlungen, aber keinen Umweltbefund.",
+                "limitations": "Keine Angaben zu Emissionen, Stoffen, Flächen, Dauer oder betroffenen Ökosystemen.",
+                "first_order": "Derzeit keine belegbare ökologische Zustandsänderung.",
+                "second_order": "Bei später belegter Freisetzung könnten lokale Umweltbelastungen entstehen.",
+                "third_order": "Weitergehende ökologische Kaskaden sind ohne Schadensdaten nicht modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung der gelieferten Quelle ergab keinen Umweltbefund; externe Umweltquellen sind nicht geliefert.",
+                "negligibility_rationale": "Im abgegrenzten lokalen und aktuellen Betrachtungszeitraum ist keine ökologische Änderung beschrieben oder quantifizierbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine derzeit belegbare ökologische Zustandsänderung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine derzeit belegbare ökologische Zustandsänderung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keinen Nachweis einer bereits veränderten politischen Beteiligung oder institutionellen Entscheidung. Modellierbar sind nur gegenläufige Informations- und Vertrauenspfade bei weiterer Entwicklung.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Die Ermittlungen können bei klarer Information Orientierung ermöglichen, während wiederholte unbestätigte Deutungen Vertrauen und öffentliche Debatten belasten könnten. Beide Pfade bleiben wegen der dünnen Quellenlage hypothetisch.",
+            "primary_paths": [
+              {
+                "label": "Öffentliche Orientierung durch laufende Ermittlungsinformationen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Belastbare behördliche Informationen könnten Unsicherheit reduzieren und eine überprüfbare öffentliche Einordnung ermöglichen.",
+                "recipients": [
+                  "Öffentlichkeit in Frankfurt",
+                  "lokale Institutionen",
+                  "Medien"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Effekt ist lokal und informationsabhängig; ohne weitere bestätigte Angaben bleibt er gering."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt einen lokalen Frankfurter Vorgang ohne überregionalen institutionellen Bezug.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Informationsorientierung könnte geringfügig helfen, konkrete politische Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der mögliche Orientierungseffekt hängt von der kurzen Ermittlungsphase und weiteren Informationen ab.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine mögliche bessere Einordnung wäre grundsätzlich korrigierbar und nicht dauerhaft.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Menschen mit geringerem Zugang zu verlässlichen Informationen könnten stärker auf klare Angaben angewiesen sein.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zunächst Information und Vertrauen, nicht institutionelle Machtverteilung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret betroffen; es geht um mögliches Informations- und Vertrauenshandeln.",
+                  "reference_frame": "Verlässliche öffentliche Information und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der positive Pfad setzt zeitnahe, klare und überprüfbare Ermittlungsinformationen voraus.",
+                "reference_space": "Lokale Öffentlichkeit und kommunale Institutionen in Frankfurt",
+                "time_horizon": "kurzfristig während der Ermittlungen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass verlässliche Informationen öffentliche Orientierung unterstützen können.",
+                "source_support": "Die Quelle belegt Ermittlungen, aber keine Kommunikationsmaßnahme oder Vertrauensänderung.",
+                "limitations": "Keine Daten zu Publikumsreaktionen, Beteiligung, Vertrauen oder institutionellen Entscheidungen.",
+                "first_order": "Mögliche bessere Einordnung der unklaren Sicherheitslage.",
+                "second_order": "Weniger Raum für unbelegte Deutungen, wenn Behörden belastbare Informationen liefern.",
+                "third_order": "Eine längerfristige Verbesserung institutionellen Vertrauens ist nicht belegbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst demokratische oder kommunikative Folgen; der Pfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "label": "Vertrauens- und Debattenbelastung durch unbestätigte Serienannahmen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Wiederholte Meldungen über Detonationen könnten bei unklarer Faktenlage eine verfestigte, aber unbelegte Gefahrenwahrnehmung fördern.",
+                "recipients": [
+                  "Lokale Öffentlichkeit",
+                  "politische Entscheidungsträger",
+                  "Medien"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt und lokal; seine Stärke hängt von weiterer Berichterstattung und bestätigten Fakten ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der gelieferte Bericht betrifft Frankfurt und belegt keine breite gesellschaftliche Reichweite.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Debattenbelastung wäre ohne bestätigte Serie zunächst begrenzt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt von weiteren Ereignissen und der Qualität späterer Aufklärung ab.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Falsche oder überzogene Einordnungen könnten grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders informationsabhängige Gruppen könnten stärker auf unklare Berichte reagieren.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Strukturwandel ist nicht belegt; möglich ist nur ein begrenzter Vertrauenseffekt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Grenzverletzung ist nicht belegt; modelliert wird ein begrenztes Kommunikationsrisiko.",
+                  "reference_frame": "Verlässliche öffentliche Information und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der negative Pfad setzt weitere Wiederholung, unklare Kommunikation und eine verfestigte unbelegte Deutung voraus.",
+                "reference_space": "Lokale öffentliche Debatte in Frankfurt",
+                "time_horizon": "kurzfristig bis zur Klärung der Ermittlungen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Quelle selbst belegt keine Publikumsreaktion; der Pfad ist eine begrenzte Hypothese über mögliche Informationswirkungen.",
+                "source_support": "Die Quelle stellt die Frage nach einer größeren Serie, belegt aber keine solche Serie und keine Debattenfolge.",
+                "limitations": "Keine unabhängigen Kommunikationsdaten, keine Befragung und kein Nachweis einer Vertrauensänderung.",
+                "first_order": "Mögliche Verstärkung einer unklaren Gefahrenwahrnehmung.",
+                "second_order": "Bei ausbleibender Klärung könnte die öffentliche Debatte stärker von Spekulationen geprägt werden.",
+                "third_order": "Eine dauerhafte Normalisierung unbelegter Sicherheitsannahmen ist nicht belegt und bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle liefert keinen Publikums- oder Vertrauensnachweis; ein möglicher Diskurseffekt bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative Informationspfade sind beide nur hypothetisch und liegen in der modellierten Größenordnung eng beieinander; daher keine Dominanz."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Öffentliche Orientierung durch laufende Ermittlungsinformationen",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Öffentliche Orientierung durch laufende Ermittlungsinformationen",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T07:58:31.041Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle trägt die Meldung über zwei weitere Explosionen, die polizeilichen Ermittlungen und die offene Frage eines größeren Zusammenhangs."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keinen gelieferten Nachweis zu Verletzungen oder konkreten Schäden. Modelliert wird nur ein bedingter lokaler Sicherheits- und Belastungspfad.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Weitere Detonationen könnten bei Menschen kurzfristig Unsicherheit, Vorsicht und zusätzlichen Bedarf an Gefahrenabwehr auslösen. Die Richtung ist als mögliches Risiko modelliert, nicht als eingetretener Schaden.",
+          "primary_paths": [
+            {
+              "label": "Kurzfristige Belastung und erhöhte Vorsicht im lokalen Umfeld",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Weitere Explosionen könnten Schutzentscheidungen, Verunsicherung und zusätzlichen Einsatzbedarf auslösen.",
+              "recipients": [
+                "Anwohnerinnen und Anwohner",
+                "Beschäftigte im Umfeld",
+                "Polizei und Rettungskräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite ist lokal, die Intensität hängt von Schäden und Wiederholung ab; deshalb reicht der plausible Bereich von gering bis mittel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der belegte Ereignisort ist Frankfurt; eine größere Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mehrere Detonationen können kurzfristig erhebliche Vorsicht auslösen, konkrete Schäden fehlen aber.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt einen aktuellen Ermittlungsanlass, aber keine anhaltende Belastungsdauer.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Für dauerhafte oder irreversible menschliche Schäden gibt es keinen gelieferten Beleg.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen im unmittelbaren Umfeld könnten besonders auf unklare weitere Gefahren reagieren.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad bleibt zunächst auf lokale Sicherheit und Einsatzorganisation begrenzt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung oder Grenzverletzung des Schutzguts ist nicht belegt; der Schutzpfad bleibt bedingt.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad würde insbesondere eintreten, wenn weitere Detonationen folgen oder Gefahren im Umfeld bestätigt werden.",
+              "reference_space": "Frankfurt und unmittelbar betroffene Personen",
+              "time_horizon": "kurzfristig, mit möglicher Verlängerung bei bestätigter Wiederholung",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass wiederholte Detonationen Vorsicht und Einsatzbedarf erhöhen können; konkrete Betroffenenzahlen werden nicht angenommen.",
+              "source_support": "Die Quelle belegt zwei weitere Explosionen und Ermittlungen, nicht aber Verletzungen oder konkrete Belastungen.",
+              "limitations": "Ursache, Schäden, Verletzte, Ort und Dauer sind offen.",
+              "first_order": "Mögliche erhöhte Vorsicht und zusätzlicher Einsatzbedarf.",
+              "second_order": "Bei bestätigtem Zusammenhang könnten Schutzmaßnahmen und Informationsbedarf ausgeweitet werden.",
+              "third_order": "Eine länger anhaltende Sicherheitslage könnte lokale Routinen der Gefahrenabwehr verändern; dies ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Folgenquelle im gelieferten Bestand; konkrete menschliche Schäden bleiben unbekannt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Kurzfristige Belastung und erhöhte Vorsicht im lokalen Umfeld",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Kurzfristige Belastung und erhöhte Vorsicht im lokalen Umfeld",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keinen Umweltbefund. Ein ökologischer Pfad ist ohne Angaben zu Stoffen, Bränden, Boden, Luft oder Wasser nicht belastbar quantifizierbar.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein Umweltpfad ist als Möglichkeit prüfbar, aber derzeit weder positiv noch negativ aus dem gelieferten Material ableitbar. Die Stufe null beschreibt die begründete Vernachlässigbarkeit der aktuell modellierbaren ökologischen Änderung, nicht die Unmöglichkeit späterer Schäden.",
+          "primary_paths": [
+            {
+              "label": "Keine derzeit belegbare ökologische Zustandsänderung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ohne Angaben zu Brand, Freisetzung oder beschädigter Infrastruktur lässt sich keine konkrete ökologische Zustandsänderung ableiten.",
+              "recipients": [
+                "Luft, Boden und Wasser im lokalen Umfeld"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Im gelieferten Material ist keine ökologische Änderung beschrieben; nur bei zusätzlichen Schadensbefunden wäre eine höhere Stufe plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Ausbreitungsraum ist in der Quelle beschrieben.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Es gibt keine Angaben zu Schadstoffen, Bränden oder ökologischer Belastungsstärke.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine Dauer ökologischer Folgen wird nicht genannt und ist nicht ableitbar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Irreversible Umweltschäden sind in der Quelle nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Besonders verletzliche Ökosysteme oder Schutzgebiete werden nicht genannt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ein ökologischer Systempfad ist ohne Schadens- oder Freisetzungsbefund nicht modellierbar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete ökologische Schutzgrenze oder Grenzverletzung beschrieben.",
+                "reference_frame": "Schutz von Luft, Wasser, Boden und Ökosystemen",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Ein relevanter Pfad setzt zusätzliche Belege zu Brand, Freisetzung, Beschädigung oder Kontamination voraus.",
+              "reference_space": "Lokales Umfeld der Explosionen",
+              "time_horizon": "offen",
+              "path_quality": [
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird nichts über Art oder Ausmaß möglicher Schäden angenommen.",
+              "source_support": "Die Quelle belegt Explosionen und Ermittlungen, aber keinen Umweltbefund.",
+              "limitations": "Keine Angaben zu Emissionen, Stoffen, Flächen, Dauer oder betroffenen Ökosystemen.",
+              "first_order": "Derzeit keine belegbare ökologische Zustandsänderung.",
+              "second_order": "Bei später belegter Freisetzung könnten lokale Umweltbelastungen entstehen.",
+              "third_order": "Weitergehende ökologische Kaskaden sind ohne Schadensdaten nicht modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung der gelieferten Quelle ergab keinen Umweltbefund; externe Umweltquellen sind nicht geliefert.",
+              "negligibility_rationale": "Im abgegrenzten lokalen und aktuellen Betrachtungszeitraum ist keine ökologische Änderung beschrieben oder quantifizierbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine derzeit belegbare ökologische Zustandsänderung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine derzeit belegbare ökologische Zustandsänderung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keinen Nachweis einer bereits veränderten politischen Beteiligung oder institutionellen Entscheidung. Modellierbar sind nur gegenläufige Informations- und Vertrauenspfade bei weiterer Entwicklung.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Die Ermittlungen können bei klarer Information Orientierung ermöglichen, während wiederholte unbestätigte Deutungen Vertrauen und öffentliche Debatten belasten könnten. Beide Pfade bleiben wegen der dünnen Quellenlage hypothetisch.",
+          "primary_paths": [
+            {
+              "label": "Öffentliche Orientierung durch laufende Ermittlungsinformationen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Belastbare behördliche Informationen könnten Unsicherheit reduzieren und eine überprüfbare öffentliche Einordnung ermöglichen.",
+              "recipients": [
+                "Öffentlichkeit in Frankfurt",
+                "lokale Institutionen",
+                "Medien"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Effekt ist lokal und informationsabhängig; ohne weitere bestätigte Angaben bleibt er gering."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt einen lokalen Frankfurter Vorgang ohne überregionalen institutionellen Bezug.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Informationsorientierung könnte geringfügig helfen, konkrete politische Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der mögliche Orientierungseffekt hängt von der kurzen Ermittlungsphase und weiteren Informationen ab.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine mögliche bessere Einordnung wäre grundsätzlich korrigierbar und nicht dauerhaft.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Menschen mit geringerem Zugang zu verlässlichen Informationen könnten stärker auf klare Angaben angewiesen sein.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zunächst Information und Vertrauen, nicht institutionelle Machtverteilung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret betroffen; es geht um mögliches Informations- und Vertrauenshandeln.",
+                "reference_frame": "Verlässliche öffentliche Information und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der positive Pfad setzt zeitnahe, klare und überprüfbare Ermittlungsinformationen voraus.",
+              "reference_space": "Lokale Öffentlichkeit und kommunale Institutionen in Frankfurt",
+              "time_horizon": "kurzfristig während der Ermittlungen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass verlässliche Informationen öffentliche Orientierung unterstützen können.",
+              "source_support": "Die Quelle belegt Ermittlungen, aber keine Kommunikationsmaßnahme oder Vertrauensänderung.",
+              "limitations": "Keine Daten zu Publikumsreaktionen, Beteiligung, Vertrauen oder institutionellen Entscheidungen.",
+              "first_order": "Mögliche bessere Einordnung der unklaren Sicherheitslage.",
+              "second_order": "Weniger Raum für unbelegte Deutungen, wenn Behörden belastbare Informationen liefern.",
+              "third_order": "Eine längerfristige Verbesserung institutionellen Vertrauens ist nicht belegbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst demokratische oder kommunikative Folgen; der Pfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "label": "Vertrauens- und Debattenbelastung durch unbestätigte Serienannahmen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Wiederholte Meldungen über Detonationen könnten bei unklarer Faktenlage eine verfestigte, aber unbelegte Gefahrenwahrnehmung fördern.",
+              "recipients": [
+                "Lokale Öffentlichkeit",
+                "politische Entscheidungsträger",
+                "Medien"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt und lokal; seine Stärke hängt von weiterer Berichterstattung und bestätigten Fakten ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der gelieferte Bericht betrifft Frankfurt und belegt keine breite gesellschaftliche Reichweite.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Debattenbelastung wäre ohne bestätigte Serie zunächst begrenzt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt von weiteren Ereignissen und der Qualität späterer Aufklärung ab.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Falsche oder überzogene Einordnungen könnten grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders informationsabhängige Gruppen könnten stärker auf unklare Berichte reagieren.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Strukturwandel ist nicht belegt; möglich ist nur ein begrenzter Vertrauenseffekt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Grenzverletzung ist nicht belegt; modelliert wird ein begrenztes Kommunikationsrisiko.",
+                "reference_frame": "Verlässliche öffentliche Information und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der negative Pfad setzt weitere Wiederholung, unklare Kommunikation und eine verfestigte unbelegte Deutung voraus.",
+              "reference_space": "Lokale öffentliche Debatte in Frankfurt",
+              "time_horizon": "kurzfristig bis zur Klärung der Ermittlungen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Quelle selbst belegt keine Publikumsreaktion; der Pfad ist eine begrenzte Hypothese über mögliche Informationswirkungen.",
+              "source_support": "Die Quelle stellt die Frage nach einer größeren Serie, belegt aber keine solche Serie und keine Debattenfolge.",
+              "limitations": "Keine unabhängigen Kommunikationsdaten, keine Befragung und kein Nachweis einer Vertrauensänderung.",
+              "first_order": "Mögliche Verstärkung einer unklaren Gefahrenwahrnehmung.",
+              "second_order": "Bei ausbleibender Klärung könnte die öffentliche Debatte stärker von Spekulationen geprägt werden.",
+              "third_order": "Eine dauerhafte Normalisierung unbelegter Sicherheitsannahmen ist nicht belegt und bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle liefert keinen Publikums- oder Vertrauensnachweis; ein möglicher Diskurseffekt bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative Informationspfade sind beide nur hypothetisch und liegen in der modellierten Größenordnung eng beieinander; daher keine Dominanz."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Öffentliche Orientierung durch laufende Ermittlungsinformationen",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Öffentliche Orientierung durch laufende Ermittlungsinformationen",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T07:52:45.050Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T07:08:09.000Z",
+      "last_updated": "2026-09-17T07:58:31.038Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-c2bc91f4936b27d73d67",
+      "case_file": null,
+      "source_published_at": "2026-09-17T07:08:09.000Z",
+      "published_at": "2026-09-17T07:58:31.038Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittlungen sollten klären, ob ein Zusammenhang mit weiteren Detonationen besteht.",
+          "source_id": "tagesspiegel-home",
+          "measurable_indicator": "Neue Angaben der Ermittlungsbehörden zu einem möglichen Serienzusammenhang oder zur Ursache der Explosionen.",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f3d24c28928c0400",
+          "announced_at": "2026-09-17T07:08:09.000Z",
+          "follow_up_date": "2026-09-24T07:58:31.038Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-ermittelt-nach-zwei-weiteren-explosionen-in-frankfurt-16062893.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T07:08:09.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-cfe395d486558be9",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cfe395d486558be9-a1fcc2eeae73b94d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cfe395d486558be9-24066817945c1814-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cfe395d486558be9-3f580fe55f5af65d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kriminalitat-polizei-meldet-eine-festnahme-nach-explosionen-in-frankfurt-558be9",
+      "title": "Polizei meldet Festnahme nach zwei weiteren Explosionen in Frankfurt",
+      "source_summary": "Der stern berichtet über eine Festnahme im Zusammenhang mit Explosionen in Frankfurt. Der Titel ordnet die Festnahme der Polizei zu.\n\nNach dem vorliegenden Auszug kam es in Hessens größter Stadt binnen nur weniger Minuten zu zwei weiteren Explosionen. Weitere Angaben zu Ort, Ursache, möglichen Schäden, Verletzten oder dem Verdacht gegen die festgenommene Person enthält der gelieferte Text nicht.\n\nDie Meldung stammt aus einer einzelnen journalistischen Quelle. Eine unabhängige Bestätigung oder ein Primärbeleg liegt in der Akte nicht vor; der vollständige Kontext soll laut Quellenhinweis in der Originalquelle geprüft werden.",
+      "summary": "Die Polizei meldet laut stern eine Festnahme nach zwei weiteren Explosionen in Frankfurt. Ursachen, Schäden und mögliche Folgen bleiben im vorliegenden Auszug offen.",
+      "detail_summary": "Laut stern meldet die Polizei eine Festnahme nach zwei weiteren Explosionen in Frankfurt. Die Explosionen sollen binnen nur weniger Minuten erfolgt sein. Der vorliegende Auszug nennt weder Ort und Ursache noch Verletzte, Schäden oder ein mögliches Motiv. Nachrichtenwert hat der aktuelle Sicherheitsvorfall, doch die Beleglage beruht auf einer einzelnen journalistischen Quelle. Ein Wirkungsrisiko für Menschen, Umwelt und Vertrauen in die öffentliche Sicherheit lässt sich deshalb nur bedingt modellieren, nicht als eingetretene Folge feststellen.",
+      "why_relevant": "Ein aktueller Sicherheitsvorfall mit mehreren Explosionen und einer gemeldeten Festnahme kann Schutzmaßnahmen, Ermittlungen und die Wahrnehmung öffentlicher Sicherheit auslösen. Umfang und Folgen sind offen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Polizeilich gemeldete Festnahme nach zwei weiteren Explosionen in Frankfurt",
+        "evaluation_target": {
+          "label": "Sicherheitsvorfall und seine möglichen Folgen",
+          "type": "event"
+        },
+        "baseline": "Öffentliche Lage ohne den gemeldeten Vorfall und die daraus möglichen Schutz- und Ermittlungsmaßnahmen",
+        "counterfactual": "Ohne den Vorfall würden die unmittelbar daran geknüpften Schutz- und Ermittlungsmaßnahmen sowie die spezifische lokale Verunsicherung voraussichtlich nicht entstehen.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "öffentliche Sicherheit",
+          "verlässliche behördliche Information"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Explosionen könnten Menschen unmittelbar gefährden oder Schutzmaßnahmen auslösen; Verletzte und Schäden sind nicht belegt.",
+            "planet": "Mögliche lokale Emissionen, Brände oder Sachschäden sind denkbar, im Quellenmaterial aber nicht beschrieben.",
+            "democracy": "Der Vorfall könnte Vertrauen in Sicherheitskommunikation und die Bewertung behördlichen Handelns beeinflussen; ein solcher Effekt ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Schutz- und Ermittlungsmaßnahmen nach mehreren Explosionen.",
+          "second_order": "Mögliche Verhaltensanpassungen und veränderte Wahrnehmung lokaler Sicherheit.",
+          "third_order": "Unter Bedingungen anhaltender Unklarheit könnte die Akzeptanz behördlicher Sicherheitskommunikation belastet werden.",
+          "enablement": [],
+          "counter_evidence": [
+            "Der vorliegende Auszug nennt keine Verletzten, Schäden oder andauernde Gefahr.",
+            "Es gibt nur eine journalistische Quelle und keine unabhängige Bestätigung.",
+            "Eine Festnahme kann zugleich zur Aufklärung und zur Begrenzung weiterer Risiken beitragen."
+          ],
+          "source_independence": "Nur eine journalistische Herkunft ist geliefert; Unabhängigkeit und Primärbelege sind nicht nachgewiesen.",
+          "institutional_status": "Eine polizeiliche Meldung und eine Festnahme sind berichtet; ein gerichtlicher oder abschließender Ermittlungsstatus ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Keine zusätzlichen belastbaren Angaben zu Verletzten, Schäden oder Betroffenenzahl im gelieferten Material; ein Schadenspfad bleibt deshalb hypothetisch.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Mehrere Explosionen könnten Menschen im betroffenen Umfeld gefährden oder Schutzmaßnahmen auslösen. Der negative Pfad ist plausibel, aber wegen fehlender Angaben zu Ort und Schäden nur niedrig belegt.",
+            "primary_paths": [
+              {
+                "label": "Explosionen könnten die Sicherheit von Menschen im betroffenen Umfeld beeinträchtigen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Explosion kann Schutzbedarf, Gefahrenabwehr und mögliche Verletzungsrisiken erzeugen; konkrete Schäden sind nicht belegt.",
+                "recipients": [
+                  "Menschen im betroffenen Umfeld",
+                  "Anwohner und Einsatzkräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Zahl möglicher Betroffener und die Schadensintensität sind unbekannt; der Ereigniskern ist jedoch berichtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der betroffene Raum ist im Beleg nicht genauer abgegrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mehrere Explosionen könnten eine erhebliche lokale Gefährdung bedeuten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein kurzfristiger Ereigniszeitraum ist berichtet, weitere Dauer bleibt offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Schäden oder irreversible Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders gefährdete Gruppen und konkrete Exposition sind unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Sicherheitsvorfall ist plausibel, strukturelle Folgen nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung oder schwere Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt eine tatsächliche Gefahrenlage oder Exposition von Menschen voraus.",
+                "reference_space": "Frankfurt und das unmittelbar betroffene Umfeld",
+                "time_horizon": "kurzfristig, mit möglicher Nachwirkung durch Ermittlungen",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichteten Explosionen haben zumindest lokale Schutz- oder Gefahrenabwehrrelevanz.",
+                "source_support": "Die Quelle belegt die zugeschriebenen Explosionen und eine Festnahme, nicht Verletzungen oder Schäden.",
+                "limitations": "Ort, Ursache, Betroffenenzahl und Schadensausmaß fehlen.",
+                "first_order": "Mögliche Gefährdung und Schutzmaßnahmen im Umfeld.",
+                "second_order": "Mögliche vorübergehende Verhaltensänderungen und Belastungen für Betroffene.",
+                "third_order": "Mögliche Belastung des Sicherheitsgefühls bei anhaltender Unsicherheit.",
+                "research_pass": "second_pass",
+                "research_result": "Der gelieferte Beleg erlaubt keine verlässlichere Schätzung von Reichweite oder Schadenshöhe.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Explosionen könnten die Sicherheit von Menschen im betroffenen Umfeld beeinträchtigen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Explosionen könnten die Sicherheit von Menschen im betroffenen Umfeld beeinträchtigen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Beleg enthält keine Angaben zu Bränden, Freisetzungen, Sachschäden oder Umweltfolgen; der Umweltpfad bleibt eine begrenzte Hypothese.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Explosionen könnten lokal Sach- oder Umweltschäden verursachen, doch der gelieferte Auszug nennt keine solchen Folgen. Das Potenzial ist daher niedrig und unsicher.",
+            "primary_paths": [
+              {
+                "label": "Explosionen könnten lokale Umwelt- oder Sachschäden verursachen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Explosion könnte Material beschädigen oder Stoffe freisetzen; konkrete Schäden oder Freisetzungen sind nicht berichtet.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Gebäude und Infrastruktur"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Art und Umfang möglicher Schäden sind vollständig offen; der Mechanismus ist nur allgemein plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der räumliche Wirkbereich ist im Beleg nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Umwelt- oder Sachintensität wird nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine kurzfristige lokale Wirkung wäre möglich, Dauerfolgen sind offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Irreversible Umweltschäden sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Empfindliche Ökosysteme oder Anlagen sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Effekt ist denkbar, eine systemische Umweltwirkung nicht.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Umwelt- oder Sachschutzgrenze ist im Beleg dokumentiert.",
+                  "reference_frame": "Schutz lokaler Umwelt und Infrastruktur",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt eine Explosion mit materiellen oder stofflichen Auswirkungen voraus.",
+                "reference_space": "Lokales Umfeld in Frankfurt",
+                "time_horizon": "kurzfristig bis gegebenenfalls nachlaufend",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Explosionen können grundsätzlich lokale Material- oder Umweltfolgen haben.",
+                "source_support": "Die Quelle belegt Explosionen, aber keine ökologischen Folgen.",
+                "limitations": "Keine Angaben zu Ort, Stoffen, Feuer, Gebäuden oder Infrastruktur.",
+                "first_order": "Mögliche lokale Sach- oder Umweltbeeinträchtigung.",
+                "second_order": "Möglicher zusätzlicher Aufwand für Sicherung und Reinigung.",
+                "third_order": "Keine belastbare Grundlage für weiterreichende ökologische Kaskaden.",
+                "research_pass": "second_pass",
+                "research_result": "Mit dem gelieferten Material lässt sich weder eine Umweltwirkung bestätigen noch quantifizieren.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Explosionen könnten lokale Umwelt- oder Sachschäden verursachen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Explosionen könnten lokale Umwelt- oder Sachschäden verursachen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es liegt kein Beleg für verändertes Vertrauen, politische Reaktionen oder eine institutionelle Folge vor; nur ein möglicher Kommunikationspfad kann beschrieben werden.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein unklarer Sicherheitsvorfall könnte die Wahrnehmung behördlicher Gefahrenabwehr und Kommunikation beeinflussen. Eine demokratische Wirkung ist jedoch nicht beobachtet und hängt stark von weiterer Aufklärung ab.",
+            "primary_paths": [
+              {
+                "label": "Der Vorfall könnte die Bewertung behördlicher Sicherheitskommunikation beeinflussen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Meldung über mehrere Explosionen und eine Festnahme kann öffentliche Aufmerksamkeit auf Gefahrenabwehr und behördliche Information lenken.",
+                "recipients": [
+                  "lokale Öffentlichkeit",
+                  "Behörden und politische Entscheidungsträger"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Kommunikative Aufmerksamkeit ist möglich, aber Reichweite und tatsächliche Vertrauensänderung sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Reichweite der Meldung und des Ereignisses ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete politische Kontroverse ist nicht berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine längerfristige Wirkung hängt von weiteren Ereignissen und Informationen ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kommunikative Bewertungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene oder vulnerable Öffentlichkeiten sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Strukturwandel ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder Einschränkung ist nicht berichtet.",
+                  "reference_frame": "Verlässliche Sicherheitsinformation und demokratische Rechenschaft",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt anhaltende Unklarheit oder widersprüchliche Sicherheitskommunikation voraus.",
+                "reference_space": "Lokale Öffentlichkeit und zuständige Behörden",
+                "time_horizon": "kurzfristig bis zur weiteren Aufklärung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sicherheitsvorfälle können Aufmerksamkeit und Anforderungen an behördliche Kommunikation erhöhen.",
+                "source_support": "Die Quelle belegt den berichteten Vorfall, nicht eine Veränderung von Vertrauen oder politischer Beteiligung.",
+                "limitations": "Keine Umfragen, Reaktionen, Debatten oder institutionellen Entscheidungen liegen vor.",
+                "first_order": "Erhöhter Informationsbedarf gegenüber Behörden.",
+                "second_order": "Mögliche Bewertung der Qualität und Glaubwürdigkeit der Sicherheitskommunikation.",
+                "third_order": "Eine längerfristige Vertrauenswirkung ist nur bei anhaltender Unsicherheit denkbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im gelieferten Bestand belegt einen demokratischen oder institutionellen Folgeeffekt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Der Vorfall könnte die Bewertung behördlicher Sicherheitskommunikation beeinflussen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der Vorfall könnte die Bewertung behördlicher Sicherheitskommunikation beeinflussen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T07:56:47.027Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Bericht trägt die zugeschriebene Meldung über eine Festnahme und zwei weitere Explosionen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Keine zusätzlichen belastbaren Angaben zu Verletzten, Schäden oder Betroffenenzahl im gelieferten Material; ein Schadenspfad bleibt deshalb hypothetisch.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Mehrere Explosionen könnten Menschen im betroffenen Umfeld gefährden oder Schutzmaßnahmen auslösen. Der negative Pfad ist plausibel, aber wegen fehlender Angaben zu Ort und Schäden nur niedrig belegt.",
+          "primary_paths": [
+            {
+              "label": "Explosionen könnten die Sicherheit von Menschen im betroffenen Umfeld beeinträchtigen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Explosion kann Schutzbedarf, Gefahrenabwehr und mögliche Verletzungsrisiken erzeugen; konkrete Schäden sind nicht belegt.",
+              "recipients": [
+                "Menschen im betroffenen Umfeld",
+                "Anwohner und Einsatzkräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Zahl möglicher Betroffener und die Schadensintensität sind unbekannt; der Ereigniskern ist jedoch berichtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der betroffene Raum ist im Beleg nicht genauer abgegrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mehrere Explosionen könnten eine erhebliche lokale Gefährdung bedeuten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein kurzfristiger Ereigniszeitraum ist berichtet, weitere Dauer bleibt offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Schäden oder irreversible Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders gefährdete Gruppen und konkrete Exposition sind unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Sicherheitsvorfall ist plausibel, strukturelle Folgen nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung oder schwere Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt eine tatsächliche Gefahrenlage oder Exposition von Menschen voraus.",
+              "reference_space": "Frankfurt und das unmittelbar betroffene Umfeld",
+              "time_horizon": "kurzfristig, mit möglicher Nachwirkung durch Ermittlungen",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichteten Explosionen haben zumindest lokale Schutz- oder Gefahrenabwehrrelevanz.",
+              "source_support": "Die Quelle belegt die zugeschriebenen Explosionen und eine Festnahme, nicht Verletzungen oder Schäden.",
+              "limitations": "Ort, Ursache, Betroffenenzahl und Schadensausmaß fehlen.",
+              "first_order": "Mögliche Gefährdung und Schutzmaßnahmen im Umfeld.",
+              "second_order": "Mögliche vorübergehende Verhaltensänderungen und Belastungen für Betroffene.",
+              "third_order": "Mögliche Belastung des Sicherheitsgefühls bei anhaltender Unsicherheit.",
+              "research_pass": "second_pass",
+              "research_result": "Der gelieferte Beleg erlaubt keine verlässlichere Schätzung von Reichweite oder Schadenshöhe.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Explosionen könnten die Sicherheit von Menschen im betroffenen Umfeld beeinträchtigen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Explosionen könnten die Sicherheit von Menschen im betroffenen Umfeld beeinträchtigen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Beleg enthält keine Angaben zu Bränden, Freisetzungen, Sachschäden oder Umweltfolgen; der Umweltpfad bleibt eine begrenzte Hypothese.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Explosionen könnten lokal Sach- oder Umweltschäden verursachen, doch der gelieferte Auszug nennt keine solchen Folgen. Das Potenzial ist daher niedrig und unsicher.",
+          "primary_paths": [
+            {
+              "label": "Explosionen könnten lokale Umwelt- oder Sachschäden verursachen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Explosion könnte Material beschädigen oder Stoffe freisetzen; konkrete Schäden oder Freisetzungen sind nicht berichtet.",
+              "recipients": [
+                "lokale Umwelt",
+                "Gebäude und Infrastruktur"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Art und Umfang möglicher Schäden sind vollständig offen; der Mechanismus ist nur allgemein plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der räumliche Wirkbereich ist im Beleg nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Umwelt- oder Sachintensität wird nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine kurzfristige lokale Wirkung wäre möglich, Dauerfolgen sind offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Irreversible Umweltschäden sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Empfindliche Ökosysteme oder Anlagen sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Effekt ist denkbar, eine systemische Umweltwirkung nicht.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Umwelt- oder Sachschutzgrenze ist im Beleg dokumentiert.",
+                "reference_frame": "Schutz lokaler Umwelt und Infrastruktur",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt eine Explosion mit materiellen oder stofflichen Auswirkungen voraus.",
+              "reference_space": "Lokales Umfeld in Frankfurt",
+              "time_horizon": "kurzfristig bis gegebenenfalls nachlaufend",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Explosionen können grundsätzlich lokale Material- oder Umweltfolgen haben.",
+              "source_support": "Die Quelle belegt Explosionen, aber keine ökologischen Folgen.",
+              "limitations": "Keine Angaben zu Ort, Stoffen, Feuer, Gebäuden oder Infrastruktur.",
+              "first_order": "Mögliche lokale Sach- oder Umweltbeeinträchtigung.",
+              "second_order": "Möglicher zusätzlicher Aufwand für Sicherung und Reinigung.",
+              "third_order": "Keine belastbare Grundlage für weiterreichende ökologische Kaskaden.",
+              "research_pass": "second_pass",
+              "research_result": "Mit dem gelieferten Material lässt sich weder eine Umweltwirkung bestätigen noch quantifizieren.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Explosionen könnten lokale Umwelt- oder Sachschäden verursachen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Explosionen könnten lokale Umwelt- oder Sachschäden verursachen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es liegt kein Beleg für verändertes Vertrauen, politische Reaktionen oder eine institutionelle Folge vor; nur ein möglicher Kommunikationspfad kann beschrieben werden.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein unklarer Sicherheitsvorfall könnte die Wahrnehmung behördlicher Gefahrenabwehr und Kommunikation beeinflussen. Eine demokratische Wirkung ist jedoch nicht beobachtet und hängt stark von weiterer Aufklärung ab.",
+          "primary_paths": [
+            {
+              "label": "Der Vorfall könnte die Bewertung behördlicher Sicherheitskommunikation beeinflussen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Meldung über mehrere Explosionen und eine Festnahme kann öffentliche Aufmerksamkeit auf Gefahrenabwehr und behördliche Information lenken.",
+              "recipients": [
+                "lokale Öffentlichkeit",
+                "Behörden und politische Entscheidungsträger"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Kommunikative Aufmerksamkeit ist möglich, aber Reichweite und tatsächliche Vertrauensänderung sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Reichweite der Meldung und des Ereignisses ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete politische Kontroverse ist nicht berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine längerfristige Wirkung hängt von weiteren Ereignissen und Informationen ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kommunikative Bewertungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene oder vulnerable Öffentlichkeiten sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Strukturwandel ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder Einschränkung ist nicht berichtet.",
+                "reference_frame": "Verlässliche Sicherheitsinformation und demokratische Rechenschaft",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt anhaltende Unklarheit oder widersprüchliche Sicherheitskommunikation voraus.",
+              "reference_space": "Lokale Öffentlichkeit und zuständige Behörden",
+              "time_horizon": "kurzfristig bis zur weiteren Aufklärung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sicherheitsvorfälle können Aufmerksamkeit und Anforderungen an behördliche Kommunikation erhöhen.",
+              "source_support": "Die Quelle belegt den berichteten Vorfall, nicht eine Veränderung von Vertrauen oder politischer Beteiligung.",
+              "limitations": "Keine Umfragen, Reaktionen, Debatten oder institutionellen Entscheidungen liegen vor.",
+              "first_order": "Erhöhter Informationsbedarf gegenüber Behörden.",
+              "second_order": "Mögliche Bewertung der Qualität und Glaubwürdigkeit der Sicherheitskommunikation.",
+              "third_order": "Eine längerfristige Vertrauenswirkung ist nur bei anhaltender Unsicherheit denkbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im gelieferten Bestand belegt einen demokratischen oder institutionellen Folgeeffekt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der Vorfall könnte die Bewertung behördlicher Sicherheitskommunikation beeinflussen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Der Vorfall könnte die Bewertung behördlicher Sicherheitskommunikation beeinflussen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T07:52:45.050Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T07:47:47.000Z",
+      "last_updated": "2026-09-17T07:56:47.023Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9ea62554b37a12dd7761",
+      "case_file": null,
+      "source_published_at": "2026-09-17T07:47:47.000Z",
+      "published_at": "2026-09-17T07:56:47.023Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hessen/kriminalitaet--polizei-meldet-eine-festnahme-nach-explosionen-in-frankfurt-38265154.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T07:47:47.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-35f79ae84a18d479",
       "title_image": {
