@@ -190,8 +190,13 @@ function impactSourceDate(source) {
   return Number.isFinite(Date.parse(source.retrieved_at)) ? `Veröffentlichungsdatum nicht ausgewiesen · abgerufen ${formatDate(source.retrieved_at, { dateOnly: true })}` : 'Veröffentlichungsdatum nicht ausgewiesen';
 }
 
-function storyHref(story) {
-  return `./${story.slug}/`;
+// Der Verweis-Ursprung ist ausdruecklich, weil die Karten aus mehr als einer
+// Seitentiefe gerendert werden. "./" gilt fuer /wirkungsticker/ selbst; eine
+// Seite tiefer (z. B. eine Lage) uebergibt "/wirkungsticker/". Am 17.09.2026
+// hat die stille Annahme "immer eine Ebene" 23 kaputte Links erzeugt und den
+// Deploy blockiert - damit ging nichts mehr live.
+function storyHref(story, base = './') {
+  return `${base}${story.slug}/`;
 }
 
 function analysisTypeLabel(type) {
@@ -274,18 +279,22 @@ function caseFileBadge(story) {
   return `<span class="news-badge news-badge--case">Lageakte · ${escapeHtml(caseFile.member_count)} Entwicklungen</span>`;
 }
 
-export function renderUpdateBanner(story, { detail = false, caseFile = story.case_file } = {}) {
+export function renderUpdateBanner(story, { detail = false, caseFile = story.case_file, hrefBase = null } = {}) {
   const update = storyUpdateNotice(story, caseFile);
   if (!update) return "";
   const isCase = update.scope === "case";
   const changes = isCase ? caseFile.update_details || [] : [storyUpdateDetails(story)].filter(Boolean);
   const target = changes.length && !detail ? "aktuelles-update" : isCase ? "lageakte" : "versionsverlauf";
-  const href = detail && update.slug === story.slug ? `#${target}` : `${detail ? "../" : "./"}${update.slug}/#${target}`;
+  // Der Verweis-Ursprung wird uebergeben, wenn die Karte tiefer als
+  // /wirkungsticker/ gerendert wird. Ohne Uebergabe bleibt es beim bisherigen
+  // Verhalten: "./" in der Liste, "../" auf der Detailseite.
+  const basis = hrefBase || (detail ? "../" : "./");
+  const href = detail && update.slug === story.slug ? `#${target}` : `${basis}${update.slug}/#${target}`;
   const changeHtml = detail ? changes.slice(0, 3).map(change => `<div class="news-update-banner__change" data-news-update-content><p class="news-update-banner__label">${escapeHtml(change.label)}</p>${isCase || change.kind === "media" || change.kind === "analysis" ? `<p class="news-update-banner__context">${escapeHtml(change.title)}</p>` : ""}<p>${escapeHtml(change.text)}</p>${change.kind === "media" ? `<p class="news-update-banner__note">Ergänzt wurde die Einordnung der Berichterstattung. Das ist keine neue Entwicklung des Ereignisses.</p>` : ""}${change.kind === "current" ? `<p class="news-update-banner__note">Für diese ältere Akte ist kein Textvergleich mit der vorherigen Fassung verfügbar.</p>` : ""}${change.previous ? `<details class="news-update-banner__previous"><summary>Zum Vergleich: vorherige Fassung vom ${escapeHtml(formatDate(change.previous.at))} Uhr</summary><p>${escapeHtml(change.previous.text)}</p></details>` : ""}${isCase && change.slug !== story.slug && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(change.slug || "") ? `<a class="news-update-banner__link" href="../${escapeHtml(change.slug)}/#nachricht">Diese Entwicklung lesen${renderIcon("pfeil")}</a>` : ""}</div>`).join("") : "";
   return `<aside class="news-update-banner${detail ? " news-update-banner--detail" : ""}"${detail ? ' id="aktuelles-update"' : ""} data-news-update-banner data-search-exclude aria-label="${isCase ? "Aktualisierung der Lageakte" : "Aktualisierung dieser Meldung"}"><span class="news-update-banner__flag">${renderIcon("aktualisieren")}<strong>Update</strong></span><div class="news-update-banner__copy"><strong>${isCase ? "Lageakte fortgeschrieben" : "Meldung aktualisiert"}</strong><time datetime="${escapeHtml(update.at)}">${escapeHtml(formatDate(update.at))} Uhr</time><span>Aktualisierter Stand - keine doppelte Meldung.</span></div>${changeHtml}<a class="news-update-banner__link news-update-banner__history" href="${escapeHtml(href)}">${!detail && changes.length ? "Was ist neu?" : isCase ? "Zum aktuellen Stand" : "Zum Versionsverlauf"}${renderIcon("pfeil")}</a></aside>`;
 }
 
-export function storyCard(story, index, {privateImpactPreview = false} = {}) {
+export function storyCard(story, index, {privateImpactPreview = false, hrefBase = './'} = {}) {
   const a = story.analysis;
   const publicAssessment = publicImpactAssessment(story);
   const topics = (story.topic || []).join(" ").toLowerCase();
@@ -314,8 +323,8 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
   const publishers = [...new Set(story.sources.map((source) => source.publisher).filter(Boolean))];
   const publisherLabel = `${publishers.slice(0, 2).join(", ")}${publishers.length > 2 ? " u. a." : ""}`;
   const version = Number(story.current_version || 1);
-  const updateBanner = renderUpdateBanner(story);
-  const href = storyHref(story);
+  const updateBanner = renderUpdateBanner(story, { hrefBase });
+  const href = storyHref(story, hrefBase);
   const visual = renderStoryVisual(story, { href, loading: index === 0 ? "eager" : "lazy", sourceLabel: `${publisherLabel} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}`, impactContext:{privateImpactPreview} });
   return `<article class="news-card${visual ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" ${privateImpactPreview ? 'data-private-impact-preview ' : ''}id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(feedDate(story))}" data-news-released-at="${escapeHtml(story.published_at || "")}" data-news-late-delivery="${isLateNewsDelivery(story)}">
   ${updateBanner}
@@ -343,10 +352,10 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
 </article>`;
 }
 
-function editorialCard(analysis, story, index) {
+function editorialCard(analysis, story, index, { hrefBase = "./" } = {}) {
   const personal=analysis.format===PERSONAL_FORMAT;
   const book = analysis.format === BOOK_FORMAT;
-  const href = `./analyse/${analysis.slug}/`;
+  const href = `${hrefBase}analyse/${analysis.slug}/`;
   const topic = (story?.topic || analysis.tags || []).join(" ").toLowerCase();
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
   const titleImage = publicTitleImage(analysis.title_image);
@@ -363,9 +372,12 @@ function editorialCard(analysis, story, index) {
 // Balken, Ringe, Quellen oder Wirkungsanalyse zeigen: diese Darstellung gibt es
 // nirgends. Ein Eintrag ist eine Referenz auf die Wirkungsakte, keine Kopie.
 export function lageBody(lage, storiesById) {
+  // Wurzelrelativer Verweis-Ursprung: die Lage liegt eine Ebene tiefer als die
+  // Liste. Ohne diese Uebergabe zeigten am 17.09.2026 23 Kartenlinks ins Leere
+  // und der Website-Check blockierte den Deploy.
   const cards = (lage?.entries || []).map((entry, index) => {
     const story = storiesById.get(entry.story_id);
-    return story ? storyCard(story, index) : "";
+    return story ? storyCard(story, index, { hrefBase: '/wirkungsticker/' }) : "";
   }).filter(Boolean).join("\n");
   const stand = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(lage.stand));
   const datum = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', day: 'numeric', month: 'long' }).format(new Date(lage.stand));
