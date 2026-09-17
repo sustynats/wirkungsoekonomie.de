@@ -1770,6 +1770,15 @@ export async function runWirkungsticker(options = {}) {
         // diese Zahl im Bericht wäre das nicht prüfbar.
         report.ai_schema_calls = Number(report.ai_schema_calls || 0) + Number(Boolean(aiResult.analysis_schema));
         report.ai_repair_calls = Number(report.ai_repair_calls || 0) + Number(aiResult.repair_calls || 0);
+        // Eine abgelehnte Schema-Anfrage faellt auf das schemafreie Format
+        // zurueck. Das Modell darf dort Pflichtfelder weglassen, also kostet der
+        // Rueckfall vorhersehbar eine Nachbesserung. Der Grund gehoert in den
+        // Bericht, sonst bleibt es bei "irgendwie teurer".
+        for (const rejection of aiResult.schema_rejections || []) {
+          report.ai_schema_rejections ||= {};
+          const key = `${rejection.code}: ${rejection.message}`.slice(0, 200);
+          report.ai_schema_rejections[key] = Number(report.ai_schema_rejections[key] || 0) + 1;
+        }
         for (const finding of aiResult.repair_findings || []) {
           report.ai_repair_findings ||= {};
           report.ai_repair_findings[finding] = Number(report.ai_repair_findings[finding] || 0) + 1;
@@ -2099,6 +2108,8 @@ export async function runWirkungsticker(options = {}) {
     // beim naechsten ueberschrieben - ueber Tage also nicht auswertbar.
     ...(report.ai_repair_findings && Object.keys(report.ai_repair_findings).length
       ? { repair_findings: { ...report.ai_repair_findings } } : {}),
+    ...(report.ai_schema_rejections && Object.keys(report.ai_schema_rejections).length
+      ? { schema_rejections: { ...report.ai_schema_rejections } } : {}),
     ai: report.ai_calls ? {
       requests: report.ai_calls,
       provider: report.provider,
