@@ -38,10 +38,16 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
   if (acquired) {
     try {
       const rows = await bridge.store.all();
-      auftraege = rows.filter((row) => row?.input?.job_type === 'editorial_request')
+      const alle = rows.filter((row) => row?.input?.job_type === 'editorial_request')
         .map((row) => auftragsBefund(row, now))
-        .sort((a, b) => String(b.erstellt).localeCompare(String(a.erstellt)))
-        .slice(0, 25);
+        .sort((a, b) => String(b.erstellt).localeCompare(String(a.erstellt)));
+      // Interessant ist der offene Auftrag, nicht der neueste: ein
+      // liegengebliebener ist per Definition alt. Die ersten 25 nach Datum
+      // haetten den Fall verdeckt, den dieser Befund finden soll (der erste
+      // Lauf am 17.09.2026 zeigte 25 Auftraege von heute und gestern, waehrend
+      // vier offene aelter waren).
+      const offen = alle.filter((befund) => befund.zustand !== 'accepted');
+      auftraege = [...offen, ...alle.filter((befund) => befund.zustand === 'accepted').slice(0, 10)].slice(0, 40);
       // Der entscheidende Zustand steht nicht im Auftrag, sondern im Vermerk
       // zum Versuch: provider_called ohne output_delivered heisst, der Auftrag
       // ist verbraucht und kehrt erst mit einer Vertragskorrektur zurueck.

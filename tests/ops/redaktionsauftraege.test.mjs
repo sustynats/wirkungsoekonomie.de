@@ -72,3 +72,14 @@ test('der Befund-Lauf hat seinen vollstaendigen Abhaengigkeitsbaum im sparse che
   };
   visit('scripts/ops/redaktionsauftraege.mjs');
 });
+
+// Der erste Lauf am 17.09.2026 zeigte 25 erledigte Auftraege von heute und
+// gestern - und verdeckte damit genau die vier offenen, die aelter waren.
+test('offene Auftraege stehen im Befund, auch wenn sie alt sind', async () => {
+  const viele = Array.from({ length: 30 }, (_, i) => auftrag(`neu-${i}`, `2026-09-17T${String(i % 24).padStart(2, '0')}:00:00.000Z`, { status: 'accepted', accepted: true }));
+  const alt = auftrag('alt-offen', '2026-09-11T08:00:00.000Z');
+  const ergebnis = await redaktionsauftraege({ session: session([...viele, alt], []), now });
+  assert.ok(ergebnis.auftraege.some((befund) => befund.job_id === 'alt-offen'), 'der alte offene Auftrag steht drin');
+  assert.equal(ergebnis.auftraege.filter((befund) => befund.zustand === 'accepted').length, 10, 'von den erledigten reichen die zehn neuesten');
+  assert.equal(ergebnis.auftraege[0].job_id, 'alt-offen', 'offene zuerst');
+});
