@@ -2,8 +2,2705 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T00:52:33.847Z",
+  "updated_at": "2026-09-17T02:07:27.052Z",
   "stories": [
+    {
+      "story_id": "wt-6000b2fabc397176",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-aa10a6d2222851c0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-d09c43cc18749827-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-ff98b997beb22982-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176",
+      "title": "Grenzübergang Rheinfelden nach Sprengstoffverdacht zeitweise gesperrt",
+      "source_summary": "Der SWR berichtet von einer zeitweisen Sperrung des Grenzübergangs bei Rheinfelden in beide Richtungen. Bei einer Kontrolle schlugen Sprengstoff-Suchhunde an; Spezialkräfte untersuchten das Fahrzeug. Nach Angaben der Ermittler wurde kein gefährliches Material gefunden. Zwei Fahrzeuginsassen seien laut Polizei dennoch vorläufig festgenommen worden.\n\nDie Berichte von Tagesspiegel und stern nennen ebenfalls den Polizeieinsatz, den Sprengstoffverdacht und zwei vorläufige Festnahmen. Die Dauer des Einsatzes und die Umstände der Festnahmen waren in den bereitgestellten Kurzfassungen zunächst offen.\n\nDer SWR ergänzt, dass die Sperrung bis nach 21 Uhr dauerte und der Verkehr danach wieder freigegeben wurde. Ungeklärt blieb, warum die Hunde anschlugen und welche Vorwürfe gegen die Festgenommenen erhoben werden.",
+      "summary": "Nach einem Hundealarm wurde der Grenzübergang Rheinfelden zeitweise geschlossen. Laut Ermittlern wurde kein gefährliches Material gefunden; zwei vorläufige Festnahmen werden berichtet.",
+      "detail_summary": "Bei einer Kontrolle am Grenzübergang Rheinfelden schlugen Sprengstoff-Suchhunde an, woraufhin die Bundespolizei das Fahrzeug untersuchte und der Übergang vorübergehend in beide Richtungen gesperrt wurde. Spezialkräfte fanden nach Angaben der Ermittler kein gefährliches Material. Zwei Fahrzeuginsassen wurden laut Polizei dennoch vorläufig festgenommen; die Gründe dafür und die Ursache des Hundealarms sind nicht geklärt. Der Verkehr war nach 21 Uhr wieder freigegeben, zwischenzeitlich kam es zu kilometerlangen Staus. Für Menschen kann eine solche Lage kurzfristig Wege, Arbeits- und Reisezeiten sowie den Zugang zu grenznahen Angeboten beeinträchtigen. Das Wirkungspotenzial liegt vor allem in einer möglichen Wiederholung von Verkehrs- und Sicherheitsunterbrechungen; ob daraus längerfristige Folgen entstehen, ist nicht belegt.",
+      "why_relevant": "Der Vorgang verbindet eine sicherheitsbedingte Grenzschließung mit grenzüberschreitenden Verkehrsfolgen. Die neue Fassung trennt bestätigte Einsatzdaten, polizeiliche Angaben und offene Ermittlungsfragen.",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Zeitweise Sperrung des Grenzübergangs Rheinfelden nach einem Hundealarm bei einer Fahrzeugkontrolle, mit berichteten vorläufigen Festnahmen, späterer Entwarnung und Wiederfreigabe des Verkehrs.",
+        "evaluation_target": {
+          "label": "Grenzübergang Rheinfelden und der laufende Grenzverkehr",
+          "type": "event"
+        },
+        "baseline": "Grenzübergang ohne sicherheitsbedingte Sperrung und mit regulärem grenzüberschreitendem Verkehr.",
+        "counterfactual": "Ohne den Hundealarm und die anschließende Untersuchung wäre der Übergang voraussichtlich nicht aus diesem Anlass gesperrt worden; eine alternative Entwicklung bei einem tatsächlich bestehenden Risiko ist nicht belegt.",
+        "reference_frame": [
+          "Schutz von Menschen vor konkreten Gefahren",
+          "Zugang zu grenzüberschreitender Mobilität und Versorgung",
+          "Nachvollziehbare Sicherheitskommunikation",
+          "Agenda 2030/SDG 3, SDG 9 und SDG 16"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Sperrung und Staus können kurzfristig Wege, Reisezeiten und zeitkritische Arbeits- oder Versorgungsverbindungen belasten. Die Sicherheitskontrolle könnte zugleich Menschen vor einer realen Gefahr schützen, ein gefährlicher Fund ist jedoch nicht belegt.",
+            "planet": "Umleitungen und wartende Fahrzeuge können lokale Verkehrs-, Lärm- und Emissionsbelastungen erhöhen. Die Quellen enthalten keine Umweltmessungen; eine dauerhafte ökologische Wirkung ist nicht belegt.",
+            "democracy": "Die Trennung von Verdacht, Untersuchungsergebnis und vorläufigen Festnahmen kann öffentliche Kontrolle unterstützen. Eine wiederholte oder verkürzte Darstellung könnte dagegen Fehlzuschreibungen und Vertrauensrisiken begünstigen; Publikums- oder Verhaltensdaten fehlen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Sicherheitskontrolle, Räumung und Sperrung unterbrechen kurzfristig den Zugang zum Grenzübergang und lenken Verkehr um.",
+          "second_order": "Staus und unklare Ermittlungsangaben können Pendel-, Liefer- und Informationswege belasten; Umfang und Dauer solcher Folgen bleiben begrenzt oder offen.",
+          "third_order": "Bei wiederholten Vorfällen könnten sich grenznahe Verkehrs- und Kommunikationsroutinen verändern; eine solche systemische Entwicklung ist nicht beobachtet.",
+          "enablement": [],
+          "counter_evidence": [
+            "Spezialkräfte fanden laut SWR kein gefährliches Material.",
+            "Der Verkehr wurde nach der Sperrung wieder freigegeben.",
+            "Die Quellen belegen keine längerfristigen Schäden, keine Umweltmessungen, keine Vertrauensmessung und keine politische Reaktion."
+          ],
+          "source_independence": "SWR, Tagesspiegel und stern bilden zwei mögliche Herkunftsgruppen. Tagesspiegel und stern können auf gemeinsamer Agenturvorlage beruhen; die Unabhängigkeit aller Darstellungen ist nicht verifiziert. Die ausführliche Darstellung von Entwarnung, Staus und Wiederfreigabe stammt vom SWR.",
+          "institutional_status": "Belegt ist ein polizeilicher Einsatz mit vorläufigen Festnahmen und einer zeitweisen Verkehrssperre. Ein Gerichtsurteil, eine dauerhafte Maßnahme oder eine Änderung des Grenz- und Verkehrsrechts ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen kurzfristige Sperrung und Staus, aber keine längerfristigen individuellen Folgen. Ein Sicherheitsgewinn bleibt an eine tatsächlich bestehende Gefahr gebunden, die nicht belegt wurde.",
+            "reviewed_source_ids": [
+              "swr-aktuell",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Sperrung kann kurzfristig Mobilität und zeitkritische Wege beeinträchtigen. Eine vorsorgliche Kontrolle könnte bei realer Gefahr schützen, doch der Gefahrfund blieb aus; beide Hauptpfade sind daher bedingt und kleinräumig.",
+            "primary_paths": [
+              {
+                "label": "Zeitweise Sperrung könnte Pendel-, Reise- und Lieferwege verlängern",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Sicherheitskontrolle sperrt den Grenzübergang und lenkt Verkehr auf Ausweichstrecken.",
+                "recipients": [
+                  "Pendlerinnen und Pendler",
+                  "Reisende",
+                  "Lieferverkehre",
+                  "Menschen mit grenznahen Arbeits- und Versorgungswegen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die kurzfristige Sperrung und Staus sind belegt; Betroffenenzahl und individuelle Reisezeitverluste bleiben offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Sperrung betraf einen regional wichtigen Grenzübergang.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Staus und Umleitungen konnten kurzfristig belastend wirken.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die berichtete Sperrung endete nach dem Einsatz.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die spätere Verkehrsfreigabe spricht gegen dauerhafte individuelle Folgen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Zeitkritische Arbeits-, Liefer- und Versorgungswege könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Veränderung des Verkehrssystems ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere oder dauerhafte Verletzung eines menschlichen Schutzguts ist nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Eine vergleichbare oder längere Sperrung müsste erneut auftreten oder fortbestehen.",
+                "reference_space": "Grenzübergang Rheinfelden und angrenzende Verkehrswege",
+                "time_horizon": "Stunden bis wenige Tage",
+                "path_quality": [
+                  "direct",
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Ausweichrouten können zusätzlichen Verkehr nicht vollständig aufnehmen.",
+                "source_support": "Die Quellen belegen Sperrung und Staus, nicht aber individuelle Schäden oder Betroffenenzahlen.",
+                "limitations": "Keine Daten zu Reisezeitverlusten, Versorgungsausfällen oder Verteilungswirkungen liegen vor.",
+                "first_order": "Verkehr wird unterbrochen oder umgeleitet.",
+                "second_order": "Wartezeiten und lokale Staus könnten Arbeits- und Versorgungswege erschweren.",
+                "third_order": "Bei Wiederholung könnte die Verlässlichkeit grenznaher Mobilität sinken; dies ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen belegen Staus und Wiederfreigabe, aber keine längerfristige individuelle Wirkung oder Betroffenenzahl.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "label": "Sicherheitskontrolle könnte Menschen vor einer tatsächlichen Gefahr schützen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Kontrolle, Räumung und Untersuchung könnten bei realer Gefahr eine Exposition verhindern.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "Einsatzkräfte",
+                  "Beschäftigte am Grenzübergang"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Ohne gefährlichen Fund bleibt der Pfad unsicher; bei realer Gefahr könnte die Wirkung im Kontrollbereich relevant sein."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Schutz betrifft vor allem den unmittelbaren Kontrollbereich.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Bei realer Gefahr könnte eine Sperrung körperlichen Schutz ermöglichen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der mögliche Schutz wäre an die kurze Einsatzdauer gebunden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine vorsorgliche Sperrung wäre grundsätzlich reversibel.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen im möglichen Gefahrenbereich wären besonders schutzbedürftig.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Sicherheitsänderung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenze wurde nicht beobachtet; sie wäre nur bei realer Gefahr maßgeblich.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Es müsste tatsächlich gefährliches Material oder eine andere konkrete Gefahr vorgelegen haben.",
+                "reference_space": "Kontrollbereich des Grenzübergangs",
+                "time_horizon": "Während des Einsatzes",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sperrung und Räumung wären bei realer Gefahr angemessen und wirksam.",
+                "source_support": "Die Quellen belegen Sicherheitsmaßnahmen, aber keinen gefährlichen Fund.",
+                "limitations": "Der Schutzgewinn ist kontrafaktisch und wegen der Entwarnung nicht messbar.",
+                "first_order": "Menschen verlassen oder meiden den Kontrollbereich.",
+                "second_order": "Eine mögliche Exposition gegenüber einer Gefahr könnte sinken.",
+                "third_order": "Ein allgemeiner Sicherheitsgewinn ist für diesen Einzelfall hinaus nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle belegt einen gefährlichen Stoff; der positive Schutzpfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Ungeklärte Festnahmen könnten Betroffene reputativ und sozial belasten",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Die Verbindung von Verdacht und vorläufiger Festnahme kann vor einer Klärung der Vorwürfe Vorannahmen fördern.",
+                "recipients": [
+                  "vorläufig festgenommene Personen",
+                  "Angehörige"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Möglichkeit besteht; Reichweite und Dauer einer solchen Wirkung sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die mögliche Wirkung betrifft einen begrenzten Personenkreis.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ungeklärte Vorwürfe können kurzfristig belastend sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Wirkung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Reputative Folgen wären teilweise korrigierbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene sind gegenüber öffentlicher Zuschreibung verletzlich.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine institutionelle Vertiefung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Berichterstattung müsste ohne spätere Einordnung weiterverbreitet werden.",
+                "reference_space": "Öffentliche Wahrnehmung im Umfeld des Ereignisses",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Publika könnten die Festnahmen als Schuldhinweis interpretieren.",
+                "source_support": "Die Quellen belegen vorläufige Festnahmen und offene Vorwürfe, nicht deren soziale Folgen.",
+                "limitations": "Keine Publikums- oder Verhaltensdaten liegen vor.",
+                "first_order": "Aufmerksamkeit richtet sich auf die Festnahmen.",
+                "second_order": "Vorläufige Angaben könnten als abschließende Schuldzuschreibung gelesen werden.",
+                "third_order": "Ein dauerhafter Vertrauensverlust ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle misst reputative Folgen; die Wissensgrenze betrifft tatsächliche Publikumswirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Verkehrsbelastung und möglicher Schutz sind kurzfristig vergleichbare Pfade; der Schutzpfad bleibt wegen des fehlenden Gefahrfunds unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Zeitweise Sperrung könnte Pendel-, Reise- und Lieferwege verlängern",
+              "direction": "mixed"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+                "direction": "negative",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "data_status": "observed",
+                "evidence": "high",
+                "attribution": "established",
+                "reference_frame": "Zugang zu grenzüberschreitender Mobilität und regulärem Verkehr",
+                "reference_space": "Grenzübergang Rheinfelden, A861 in Deutschland und A3 in der Schweiz",
+                "observed_at": "Am Mittwoch von mittags bis nach 21 Uhr",
+                "temporal_status": "ex_post",
+                "mechanism": "Polizeiliche Untersuchung eines Fahrzeugs nach unabhängigem Anschlagen von Sprengstoff-Spürhunden führte zur Sperrung des Grenzübergangs.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "Pendlerinnen und Pendler",
+                  "Lieferverkehre",
+                  "Anwohnende im Grenzraum"
+                ],
+                "time_horizon": "Stunden",
+                "magnitude": 1,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere grenznahe Verkehrsachsen waren betroffen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Kilometerlange Staus belegen eine kurzfristige Verkehrsbelastung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Sperrung endete noch am selben Abend.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die Verkehrsfreigabe spricht gegen dauerhafte Verkehrsschäden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Zeitkritische Wege können durch Staus stärker belastet werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Systemveränderung ist nicht beobachtet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die beobachtete Verkehrsunterbrechung belegt keine schwere dauerhafte Schutzgrenzverletzung.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 1,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+              "direction": "negative",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "data_status": "observed",
+              "evidence": "high",
+              "attribution": "established",
+              "reference_frame": "Zugang zu grenzüberschreitender Mobilität und regulärem Verkehr",
+              "reference_space": "Grenzübergang Rheinfelden, A861 in Deutschland und A3 in der Schweiz",
+              "observed_at": "Am Mittwoch von mittags bis nach 21 Uhr",
+              "temporal_status": "ex_post",
+              "mechanism": "Polizeiliche Untersuchung eines Fahrzeugs nach unabhängigem Anschlagen von Sprengstoff-Spürhunden führte zur Sperrung des Grenzübergangs.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Pendlerinnen und Pendler",
+                "Lieferverkehre",
+                "Anwohnende im Grenzraum"
+              ],
+              "time_horizon": "Stunden",
+              "magnitude": 1,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere grenznahe Verkehrsachsen waren betroffen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Kilometerlange Staus belegen eine kurzfristige Verkehrsbelastung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Sperrung endete noch am selben Abend.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die Verkehrsfreigabe spricht gegen dauerhafte Verkehrsschäden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Zeitkritische Wege können durch Staus stärker belastet werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Systemveränderung ist nicht beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die beobachtete Verkehrsunterbrechung belegt keine schwere dauerhafte Schutzgrenzverletzung.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 1,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+            "display_direction": "negative",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen nennen Staus und Umleitungen, liefern aber keine Emissions-, Kraftstoff- oder Lärmmessungen. Ein begrenztes negatives Potenzial ist plausibel, jedoch nicht quantifizierbar.",
+            "reviewed_source_ids": [
+              "swr-aktuell",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der quellennahe Umweltpfad läuft über wartende und umgeleitete Fahrzeuge. Wegen der begrenzten Einsatzdauer und fehlender Messwerte bleibt das Potenzial niedrig; eine positive Umweltwirkung ist mangels Gefahrfunds vernachlässigbar.",
+            "primary_paths": [
+              {
+                "label": "Umleitungen und Staus könnten kurzfristig zusätzliche Verkehrsbelastungen erzeugen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Sperrung verlagert Fahrzeuge auf andere Strecken und verlängert Wartezeiten.",
+                "recipients": [
+                  "Anwohnende an Ausweichstrecken",
+                  "Verkehrsumwelt im Grenzraum"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Staus sind belegt, die ökologische Zusatzwirkung bleibt mangels Messdaten klein und unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die mögliche Belastung beschränkt sich auf den Grenzraum.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Staus könnten lokal zusätzliche Verkehrsbelastung erzeugen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Sperrung war zeitlich begrenzt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kurzfristige Verkehrsbelastungen sind reversibel.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Anwohnende an Ausweichstrecken könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine dauerhafte ökologische Systemänderung ist belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete oder dauerhafte ökologische Schutzgrenze ist belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Die Sperrung müsste Verkehr in nennenswertem Umfang umleiten.",
+                "reference_space": "Grenzübergang und angrenzende Ausweichstrecken",
+                "time_horizon": "Stunden",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Umgeleitete oder wartende Fahrzeuge verursachen gegenüber regulärem Verkehr zusätzliche lokale Belastungen.",
+                "source_support": "Der SWR berichtet von kilometerlangen Staus, aber ohne Umweltmessung.",
+                "limitations": "Keine Angaben zu Fahrzeugzahl, Emissionen, Lärm oder Ausweichrouten liegen vor.",
+                "first_order": "Verkehr wird angehalten oder umgeleitet.",
+                "second_order": "Lokale Abgas- und Lärmbelastungen könnten vorübergehend steigen.",
+                "third_order": "Eine dauerhafte ökologische Veränderung ist nicht plausibel belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle enthält Umweltmessungen; nur ein kurzfristiger Verkehrsmechanismus lässt sich modellieren.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Eine kurze Sperrung könnte bei realer Gefahr eine größere Umwelt- oder Expositionsbelastung verhindern",
+                "direction": "positive",
+                "type": "side_effect",
+                "mechanism": "Die Unterbrechung hält Menschen und Fahrzeuge aus einem möglichen Gefahrenbereich fern.",
+                "recipients": [
+                  "Menschen und Umwelt im Kontrollbereich"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Mangels gefährlichen Fundes und konkreter Expositionsdaten ist dieser Umweltpfad praktisch vernachlässigbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein konkreter betroffener Umweltbereich ist belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Kein gefährlicher Stoff und keine Exposition sind belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine umweltbezogene Dauerwirkung ist belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine mögliche kurzfristige Vermeidung wäre vollständig reversibel.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Besonders gefährdete Umweltgüter sind nicht benannt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemtiefe ist erkennbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist im konkreten Fall nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Es müsste eine reale stoffliche Gefahr bestanden haben.",
+                "reference_space": "Kontrollbereich des Grenzübergangs",
+                "time_horizon": "Während des Einsatzes",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine reale Gefahr hätte durch den Verkehr relevant verbreitet werden können.",
+                "source_support": "Kein gefährliches Material wurde laut SWR gefunden.",
+                "limitations": "Der Pfad ist kontrafaktisch und ohne Stoff- oder Expositionsdaten.",
+                "first_order": "Verkehr wird aus dem Bereich ferngehalten.",
+                "second_order": "Eine mögliche Exposition könnte sinken.",
+                "third_order": "Keine dauerhafte Umweltwirkung ist ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen belegen keinen Stofffund und keine Umweltgefährdung; der Schutzpfad bleibt praktisch vernachlässigbar.",
+                "negligibility_rationale": "Ohne belegtes gefährliches Material und ohne Expositionsdaten ist eine zusätzliche Umweltwirkung in Raum und Zeit vernachlässigbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Umleitungen und Staus könnten kurzfristig zusätzliche Verkehrsbelastungen erzeugen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Umleitungen und Staus könnten kurzfristig zusätzliche Verkehrsbelastungen erzeugen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen erlauben eine Prüfung der Kommunikations- und Rechenschaftsbedingungen, enthalten aber keine Daten zu Vertrauen, politischer Mobilisierung oder institutionellen Folgewirkungen. Möglich sind kurzfristige Informations- und Einordnungswirkungen.",
+            "reviewed_source_ids": [
+              "swr-aktuell",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Klare Attribution und spätere Entwarnung können die öffentliche Einordnung unterstützen. Die Verbindung von Verdacht und Festnahmen kann bei wiederholter oder verkürzter Kommunikation Fehlinterpretationen begünstigen; empirische Wirkungsdaten fehlen.",
+            "primary_paths": [
+              {
+                "label": "Klare Trennung von Verdacht, Untersuchung und Entwarnung könnte öffentliche Kontrolle stärken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Transparente Zuschreibung macht sichtbar, was belegt, vorläufig oder offen ist.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Betroffene",
+                  "Sicherheitsbehörden",
+                  "journalistische Vermittler"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Kommunikationspfad ist plausibel, aber Wirkung und Reichweite sind nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Kommunikation betrifft vor allem das regionale Publikum.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Einordnungsnutzen ist möglich, aber nicht direkt messbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die mögliche Wirkung wäre an die Berichterstattung gebunden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Fehleinordnungen könnten grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Sicherheits- und Verkehrsbetroffene sind auf klare Information angewiesen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine institutionelle Verbesserung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret verletzt oder beobachtet.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Behörden und Medien müssten die offene Beweislage dauerhaft klar kommunizieren.",
+                "reference_space": "Öffentliche Sicherheitskommunikation im Grenzraum",
+                "time_horizon": "Tage bis Wochen",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Zuschreibung und Korrektur ermöglichen dem Publikum eine differenzierte Bewertung.",
+                "source_support": "Die Quellen enthalten zugeschriebene Polizeiinformationen und eine berichtete Entwarnung.",
+                "limitations": "Keine Daten zu Vertrauen, Verständnis oder institutioneller Rechenschaft liegen vor.",
+                "first_order": "Die Öffentlichkeit erhält eine differenzierte Darstellung des Einsatzes.",
+                "second_order": "Klarheit könnte Fehlinterpretationen von Verdacht und Festnahme begrenzen.",
+                "third_order": "Eine dauerhafte Stärkung demokratischer Kontrolle ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle misst den Effekt transparenter Kommunikation; der Pfad bleibt ein begrenztes ex ante Potenzial.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "label": "Ein wiederholtes Bedrohungsframing könnte Vertrauen in die Einordnung von Sicherheitslagen belasten",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Die Verbindung von Sprengstoffverdacht und Festnahmen kann offene Ermittlungsfragen überlagern.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "vorläufig festgenommene Personen",
+                  "Sicherheitsinstitutionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Diskursrisikopfad ist möglich, aber weder Wiederholung noch Publikumswirkung sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Diskursbezug bleibt regional und ereignisgebunden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Meldung kann Aufmerksamkeit, aber keine Überzeugungsänderung belegen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauerwirkung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kommunikative Fehlbilder sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene und Sicherheitsabhängige könnten stärker auf Einordnung angewiesen sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine Veränderung demokratischer Institutionen ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere demokratische Schutzgrenze ist nicht beobachtet.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Verdachtsdarstellungen müssten wiederholt oder ohne Entwarnung verbreitet werden.",
+                "reference_space": "Öffentlicher Diskurs über Grenzsicherheit",
+                "time_horizon": "Kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Publika könnten die Einzelfallmeldung auf allgemeine Sicherheitsurteile übertragen.",
+                "source_support": "Die Quellen verwenden den Verdachtsrahmen und berichten zugleich offene Fragen und Entwarnung.",
+                "limitations": "Keine empirischen Daten zu Vertrauen, Wiederholung oder politischem Verhalten liegen vor.",
+                "first_order": "Aufmerksamkeit richtet sich auf eine mögliche Gefahrenlage.",
+                "second_order": "Ungeklärte Festnahmen könnten als Schuldhinweis interpretiert werden.",
+                "third_order": "Ein institutioneller Vertrauensverlust ist nicht beobachtet und nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen belegen keine Vertrauens- oder Verhaltenswirkung; die Wissensgrenze betrifft Wiederholung und Rezeption.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Transparenz und negatives Framing sind vergleichbare, aber schwache Kommunikationspfade; keiner ist empirisch dominant."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Klare Trennung von Verdacht, Untersuchung und Entwarnung könnte öffentliche Kontrolle stärken",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Klare Trennung von Verdacht, Untersuchung und Entwarnung könnte öffentliche Kontrolle stärken",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+            "direction": "negative",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "data_status": "observed",
+            "evidence": "high",
+            "attribution": "established",
+            "reference_frame": "Zugang zu grenzüberschreitender Mobilität und regulärem Verkehr",
+            "reference_space": "Grenzübergang Rheinfelden, A861 in Deutschland und A3 in der Schweiz",
+            "observed_at": "Am Mittwoch von mittags bis nach 21 Uhr",
+            "temporal_status": "ex_post",
+            "mechanism": "Polizeiliche Untersuchung eines Fahrzeugs nach unabhängigem Anschlagen von Sprengstoff-Spürhunden führte zur Sperrung des Grenzübergangs.",
+            "recipients": [
+              "Verkehrsteilnehmende",
+              "Pendlerinnen und Pendler",
+              "Lieferverkehre",
+              "Anwohnende im Grenzraum"
+            ],
+            "time_horizon": "Stunden",
+            "magnitude": 1,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Mehrere grenznahe Verkehrsachsen waren betroffen.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Kilometerlange Staus belegen eine kurzfristige Verkehrsbelastung.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Sperrung endete noch am selben Abend.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Die Verkehrsfreigabe spricht gegen dauerhafte Verkehrsschäden.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Zeitkritische Wege können durch Staus stärker belastet werden.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Eine dauerhafte Systemveränderung ist nicht beobachtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die beobachtete Verkehrsunterbrechung belegt keine schwere dauerhafte Schutzgrenzverletzung.",
+              "reference_frame": null,
+              "source_ids": [],
+              "status": "not_decisive"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-17T02:13:54.514Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Sperrung, Hundealarm, Untersuchung, fehlendes gefährliches Material, Staus, Verkehrsfreigabe und offene Ermittlungsfragen."
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Journalistische Darstellung des Polizeieinsatzes, des Verdachts und der vorläufigen Festnahmen."
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Journalistische Darstellung des Verdachts, der Sperrung und der vorläufigen Festnahmen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen kurzfristige Sperrung und Staus, aber keine längerfristigen individuellen Folgen. Ein Sicherheitsgewinn bleibt an eine tatsächlich bestehende Gefahr gebunden, die nicht belegt wurde.",
+          "reviewed_source_ids": [
+            "swr-aktuell",
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Sperrung kann kurzfristig Mobilität und zeitkritische Wege beeinträchtigen. Eine vorsorgliche Kontrolle könnte bei realer Gefahr schützen, doch der Gefahrfund blieb aus; beide Hauptpfade sind daher bedingt und kleinräumig.",
+          "primary_paths": [
+            {
+              "label": "Zeitweise Sperrung könnte Pendel-, Reise- und Lieferwege verlängern",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Sicherheitskontrolle sperrt den Grenzübergang und lenkt Verkehr auf Ausweichstrecken.",
+              "recipients": [
+                "Pendlerinnen und Pendler",
+                "Reisende",
+                "Lieferverkehre",
+                "Menschen mit grenznahen Arbeits- und Versorgungswegen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die kurzfristige Sperrung und Staus sind belegt; Betroffenenzahl und individuelle Reisezeitverluste bleiben offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Sperrung betraf einen regional wichtigen Grenzübergang.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Staus und Umleitungen konnten kurzfristig belastend wirken.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die berichtete Sperrung endete nach dem Einsatz.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die spätere Verkehrsfreigabe spricht gegen dauerhafte individuelle Folgen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Zeitkritische Arbeits-, Liefer- und Versorgungswege könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Veränderung des Verkehrssystems ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere oder dauerhafte Verletzung eines menschlichen Schutzguts ist nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell",
+                "tagesspiegel-home",
+                "stern-schlagzeilen"
+              ],
+              "condition": "Eine vergleichbare oder längere Sperrung müsste erneut auftreten oder fortbestehen.",
+              "reference_space": "Grenzübergang Rheinfelden und angrenzende Verkehrswege",
+              "time_horizon": "Stunden bis wenige Tage",
+              "path_quality": [
+                "direct",
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Ausweichrouten können zusätzlichen Verkehr nicht vollständig aufnehmen.",
+              "source_support": "Die Quellen belegen Sperrung und Staus, nicht aber individuelle Schäden oder Betroffenenzahlen.",
+              "limitations": "Keine Daten zu Reisezeitverlusten, Versorgungsausfällen oder Verteilungswirkungen liegen vor.",
+              "first_order": "Verkehr wird unterbrochen oder umgeleitet.",
+              "second_order": "Wartezeiten und lokale Staus könnten Arbeits- und Versorgungswege erschweren.",
+              "third_order": "Bei Wiederholung könnte die Verlässlichkeit grenznaher Mobilität sinken; dies ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen belegen Staus und Wiederfreigabe, aber keine längerfristige individuelle Wirkung oder Betroffenenzahl.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "label": "Sicherheitskontrolle könnte Menschen vor einer tatsächlichen Gefahr schützen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Kontrolle, Räumung und Untersuchung könnten bei realer Gefahr eine Exposition verhindern.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Einsatzkräfte",
+                "Beschäftigte am Grenzübergang"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Ohne gefährlichen Fund bleibt der Pfad unsicher; bei realer Gefahr könnte die Wirkung im Kontrollbereich relevant sein."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Schutz betrifft vor allem den unmittelbaren Kontrollbereich.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Bei realer Gefahr könnte eine Sperrung körperlichen Schutz ermöglichen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der mögliche Schutz wäre an die kurze Einsatzdauer gebunden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine vorsorgliche Sperrung wäre grundsätzlich reversibel.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen im möglichen Gefahrenbereich wären besonders schutzbedürftig.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Sicherheitsänderung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenze wurde nicht beobachtet; sie wäre nur bei realer Gefahr maßgeblich.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Es müsste tatsächlich gefährliches Material oder eine andere konkrete Gefahr vorgelegen haben.",
+              "reference_space": "Kontrollbereich des Grenzübergangs",
+              "time_horizon": "Während des Einsatzes",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sperrung und Räumung wären bei realer Gefahr angemessen und wirksam.",
+              "source_support": "Die Quellen belegen Sicherheitsmaßnahmen, aber keinen gefährlichen Fund.",
+              "limitations": "Der Schutzgewinn ist kontrafaktisch und wegen der Entwarnung nicht messbar.",
+              "first_order": "Menschen verlassen oder meiden den Kontrollbereich.",
+              "second_order": "Eine mögliche Exposition gegenüber einer Gefahr könnte sinken.",
+              "third_order": "Ein allgemeiner Sicherheitsgewinn ist für diesen Einzelfall hinaus nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle belegt einen gefährlichen Stoff; der positive Schutzpfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Ungeklärte Festnahmen könnten Betroffene reputativ und sozial belasten",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Die Verbindung von Verdacht und vorläufiger Festnahme kann vor einer Klärung der Vorwürfe Vorannahmen fördern.",
+              "recipients": [
+                "vorläufig festgenommene Personen",
+                "Angehörige"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Möglichkeit besteht; Reichweite und Dauer einer solchen Wirkung sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die mögliche Wirkung betrifft einen begrenzten Personenkreis.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ungeklärte Vorwürfe können kurzfristig belastend sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Reputative Folgen wären teilweise korrigierbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene sind gegenüber öffentlicher Zuschreibung verletzlich.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine institutionelle Vertiefung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell",
+                "tagesspiegel-home",
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Berichterstattung müsste ohne spätere Einordnung weiterverbreitet werden.",
+              "reference_space": "Öffentliche Wahrnehmung im Umfeld des Ereignisses",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Publika könnten die Festnahmen als Schuldhinweis interpretieren.",
+              "source_support": "Die Quellen belegen vorläufige Festnahmen und offene Vorwürfe, nicht deren soziale Folgen.",
+              "limitations": "Keine Publikums- oder Verhaltensdaten liegen vor.",
+              "first_order": "Aufmerksamkeit richtet sich auf die Festnahmen.",
+              "second_order": "Vorläufige Angaben könnten als abschließende Schuldzuschreibung gelesen werden.",
+              "third_order": "Ein dauerhafter Vertrauensverlust ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle misst reputative Folgen; die Wissensgrenze betrifft tatsächliche Publikumswirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Verkehrsbelastung und möglicher Schutz sind kurzfristig vergleichbare Pfade; der Schutzpfad bleibt wegen des fehlenden Gefahrfunds unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Zeitweise Sperrung könnte Pendel-, Reise- und Lieferwege verlängern",
+            "direction": "mixed"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+              "direction": "negative",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "data_status": "observed",
+              "evidence": "high",
+              "attribution": "established",
+              "reference_frame": "Zugang zu grenzüberschreitender Mobilität und regulärem Verkehr",
+              "reference_space": "Grenzübergang Rheinfelden, A861 in Deutschland und A3 in der Schweiz",
+              "observed_at": "Am Mittwoch von mittags bis nach 21 Uhr",
+              "temporal_status": "ex_post",
+              "mechanism": "Polizeiliche Untersuchung eines Fahrzeugs nach unabhängigem Anschlagen von Sprengstoff-Spürhunden führte zur Sperrung des Grenzübergangs.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Pendlerinnen und Pendler",
+                "Lieferverkehre",
+                "Anwohnende im Grenzraum"
+              ],
+              "time_horizon": "Stunden",
+              "magnitude": 1,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere grenznahe Verkehrsachsen waren betroffen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Kilometerlange Staus belegen eine kurzfristige Verkehrsbelastung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Sperrung endete noch am selben Abend.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die Verkehrsfreigabe spricht gegen dauerhafte Verkehrsschäden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Zeitkritische Wege können durch Staus stärker belastet werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Systemveränderung ist nicht beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die beobachtete Verkehrsunterbrechung belegt keine schwere dauerhafte Schutzgrenzverletzung.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+            "direction": "negative",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "data_status": "observed",
+            "evidence": "high",
+            "attribution": "established",
+            "reference_frame": "Zugang zu grenzüberschreitender Mobilität und regulärem Verkehr",
+            "reference_space": "Grenzübergang Rheinfelden, A861 in Deutschland und A3 in der Schweiz",
+            "observed_at": "Am Mittwoch von mittags bis nach 21 Uhr",
+            "temporal_status": "ex_post",
+            "mechanism": "Polizeiliche Untersuchung eines Fahrzeugs nach unabhängigem Anschlagen von Sprengstoff-Spürhunden führte zur Sperrung des Grenzübergangs.",
+            "recipients": [
+              "Verkehrsteilnehmende",
+              "Pendlerinnen und Pendler",
+              "Lieferverkehre",
+              "Anwohnende im Grenzraum"
+            ],
+            "time_horizon": "Stunden",
+            "magnitude": 1,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Mehrere grenznahe Verkehrsachsen waren betroffen.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Kilometerlange Staus belegen eine kurzfristige Verkehrsbelastung.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Sperrung endete noch am selben Abend.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Die Verkehrsfreigabe spricht gegen dauerhafte Verkehrsschäden.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Zeitkritische Wege können durch Staus stärker belastet werden.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Eine dauerhafte Systemveränderung ist nicht beobachtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die beobachtete Verkehrsunterbrechung belegt keine schwere dauerhafte Schutzgrenzverletzung.",
+              "reference_frame": null,
+              "source_ids": [],
+              "status": "not_decisive"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 1,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 1,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Der Grenzübergang war zeitweise in beide Richtungen gesperrt; es kam zu kilometerlangen Staus. Nach 21 Uhr war der Verkehr wieder freigegeben.",
+          "display_direction": "negative",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen nennen Staus und Umleitungen, liefern aber keine Emissions-, Kraftstoff- oder Lärmmessungen. Ein begrenztes negatives Potenzial ist plausibel, jedoch nicht quantifizierbar.",
+          "reviewed_source_ids": [
+            "swr-aktuell",
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der quellennahe Umweltpfad läuft über wartende und umgeleitete Fahrzeuge. Wegen der begrenzten Einsatzdauer und fehlender Messwerte bleibt das Potenzial niedrig; eine positive Umweltwirkung ist mangels Gefahrfunds vernachlässigbar.",
+          "primary_paths": [
+            {
+              "label": "Umleitungen und Staus könnten kurzfristig zusätzliche Verkehrsbelastungen erzeugen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Sperrung verlagert Fahrzeuge auf andere Strecken und verlängert Wartezeiten.",
+              "recipients": [
+                "Anwohnende an Ausweichstrecken",
+                "Verkehrsumwelt im Grenzraum"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Staus sind belegt, die ökologische Zusatzwirkung bleibt mangels Messdaten klein und unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die mögliche Belastung beschränkt sich auf den Grenzraum.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Staus könnten lokal zusätzliche Verkehrsbelastung erzeugen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Sperrung war zeitlich begrenzt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kurzfristige Verkehrsbelastungen sind reversibel.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Anwohnende an Ausweichstrecken könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine dauerhafte ökologische Systemänderung ist belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete oder dauerhafte ökologische Schutzgrenze ist belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Die Sperrung müsste Verkehr in nennenswertem Umfang umleiten.",
+              "reference_space": "Grenzübergang und angrenzende Ausweichstrecken",
+              "time_horizon": "Stunden",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Umgeleitete oder wartende Fahrzeuge verursachen gegenüber regulärem Verkehr zusätzliche lokale Belastungen.",
+              "source_support": "Der SWR berichtet von kilometerlangen Staus, aber ohne Umweltmessung.",
+              "limitations": "Keine Angaben zu Fahrzeugzahl, Emissionen, Lärm oder Ausweichrouten liegen vor.",
+              "first_order": "Verkehr wird angehalten oder umgeleitet.",
+              "second_order": "Lokale Abgas- und Lärmbelastungen könnten vorübergehend steigen.",
+              "third_order": "Eine dauerhafte ökologische Veränderung ist nicht plausibel belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle enthält Umweltmessungen; nur ein kurzfristiger Verkehrsmechanismus lässt sich modellieren.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Eine kurze Sperrung könnte bei realer Gefahr eine größere Umwelt- oder Expositionsbelastung verhindern",
+              "direction": "positive",
+              "type": "side_effect",
+              "mechanism": "Die Unterbrechung hält Menschen und Fahrzeuge aus einem möglichen Gefahrenbereich fern.",
+              "recipients": [
+                "Menschen und Umwelt im Kontrollbereich"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Mangels gefährlichen Fundes und konkreter Expositionsdaten ist dieser Umweltpfad praktisch vernachlässigbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein konkreter betroffener Umweltbereich ist belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Kein gefährlicher Stoff und keine Exposition sind belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine umweltbezogene Dauerwirkung ist belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine mögliche kurzfristige Vermeidung wäre vollständig reversibel.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Besonders gefährdete Umweltgüter sind nicht benannt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemtiefe ist erkennbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist im konkreten Fall nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Es müsste eine reale stoffliche Gefahr bestanden haben.",
+              "reference_space": "Kontrollbereich des Grenzübergangs",
+              "time_horizon": "Während des Einsatzes",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine reale Gefahr hätte durch den Verkehr relevant verbreitet werden können.",
+              "source_support": "Kein gefährliches Material wurde laut SWR gefunden.",
+              "limitations": "Der Pfad ist kontrafaktisch und ohne Stoff- oder Expositionsdaten.",
+              "first_order": "Verkehr wird aus dem Bereich ferngehalten.",
+              "second_order": "Eine mögliche Exposition könnte sinken.",
+              "third_order": "Keine dauerhafte Umweltwirkung ist ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen belegen keinen Stofffund und keine Umweltgefährdung; der Schutzpfad bleibt praktisch vernachlässigbar.",
+              "negligibility_rationale": "Ohne belegtes gefährliches Material und ohne Expositionsdaten ist eine zusätzliche Umweltwirkung in Raum und Zeit vernachlässigbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Umleitungen und Staus könnten kurzfristig zusätzliche Verkehrsbelastungen erzeugen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Umleitungen und Staus könnten kurzfristig zusätzliche Verkehrsbelastungen erzeugen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen erlauben eine Prüfung der Kommunikations- und Rechenschaftsbedingungen, enthalten aber keine Daten zu Vertrauen, politischer Mobilisierung oder institutionellen Folgewirkungen. Möglich sind kurzfristige Informations- und Einordnungswirkungen.",
+          "reviewed_source_ids": [
+            "swr-aktuell",
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Klare Attribution und spätere Entwarnung können die öffentliche Einordnung unterstützen. Die Verbindung von Verdacht und Festnahmen kann bei wiederholter oder verkürzter Kommunikation Fehlinterpretationen begünstigen; empirische Wirkungsdaten fehlen.",
+          "primary_paths": [
+            {
+              "label": "Klare Trennung von Verdacht, Untersuchung und Entwarnung könnte öffentliche Kontrolle stärken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Transparente Zuschreibung macht sichtbar, was belegt, vorläufig oder offen ist.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Betroffene",
+                "Sicherheitsbehörden",
+                "journalistische Vermittler"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Kommunikationspfad ist plausibel, aber Wirkung und Reichweite sind nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Kommunikation betrifft vor allem das regionale Publikum.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Einordnungsnutzen ist möglich, aber nicht direkt messbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die mögliche Wirkung wäre an die Berichterstattung gebunden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Fehleinordnungen könnten grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Sicherheits- und Verkehrsbetroffene sind auf klare Information angewiesen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine institutionelle Verbesserung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret verletzt oder beobachtet.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell",
+                "tagesspiegel-home",
+                "stern-schlagzeilen"
+              ],
+              "condition": "Behörden und Medien müssten die offene Beweislage dauerhaft klar kommunizieren.",
+              "reference_space": "Öffentliche Sicherheitskommunikation im Grenzraum",
+              "time_horizon": "Tage bis Wochen",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Zuschreibung und Korrektur ermöglichen dem Publikum eine differenzierte Bewertung.",
+              "source_support": "Die Quellen enthalten zugeschriebene Polizeiinformationen und eine berichtete Entwarnung.",
+              "limitations": "Keine Daten zu Vertrauen, Verständnis oder institutioneller Rechenschaft liegen vor.",
+              "first_order": "Die Öffentlichkeit erhält eine differenzierte Darstellung des Einsatzes.",
+              "second_order": "Klarheit könnte Fehlinterpretationen von Verdacht und Festnahme begrenzen.",
+              "third_order": "Eine dauerhafte Stärkung demokratischer Kontrolle ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle misst den Effekt transparenter Kommunikation; der Pfad bleibt ein begrenztes ex ante Potenzial.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "label": "Ein wiederholtes Bedrohungsframing könnte Vertrauen in die Einordnung von Sicherheitslagen belasten",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Die Verbindung von Sprengstoffverdacht und Festnahmen kann offene Ermittlungsfragen überlagern.",
+              "recipients": [
+                "Öffentlichkeit",
+                "vorläufig festgenommene Personen",
+                "Sicherheitsinstitutionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Diskursrisikopfad ist möglich, aber weder Wiederholung noch Publikumswirkung sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Diskursbezug bleibt regional und ereignisgebunden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Meldung kann Aufmerksamkeit, aber keine Überzeugungsänderung belegen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauerwirkung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kommunikative Fehlbilder sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene und Sicherheitsabhängige könnten stärker auf Einordnung angewiesen sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine Veränderung demokratischer Institutionen ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere demokratische Schutzgrenze ist nicht beobachtet.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell",
+                "tagesspiegel-home",
+                "stern-schlagzeilen"
+              ],
+              "condition": "Verdachtsdarstellungen müssten wiederholt oder ohne Entwarnung verbreitet werden.",
+              "reference_space": "Öffentlicher Diskurs über Grenzsicherheit",
+              "time_horizon": "Kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Publika könnten die Einzelfallmeldung auf allgemeine Sicherheitsurteile übertragen.",
+              "source_support": "Die Quellen verwenden den Verdachtsrahmen und berichten zugleich offene Fragen und Entwarnung.",
+              "limitations": "Keine empirischen Daten zu Vertrauen, Wiederholung oder politischem Verhalten liegen vor.",
+              "first_order": "Aufmerksamkeit richtet sich auf eine mögliche Gefahrenlage.",
+              "second_order": "Ungeklärte Festnahmen könnten als Schuldhinweis interpretiert werden.",
+              "third_order": "Ein institutioneller Vertrauensverlust ist nicht beobachtet und nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen belegen keine Vertrauens- oder Verhaltenswirkung; die Wissensgrenze betrifft Wiederholung und Rezeption.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Transparenz und negatives Framing sind vergleichbare, aber schwache Kommunikationspfade; keiner ist empirisch dominant."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Klare Trennung von Verdacht, Untersuchung und Entwarnung könnte öffentliche Kontrolle stärken",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Klare Trennung von Verdacht, Untersuchung und Entwarnung könnte öffentliche Kontrolle stärken",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Kombination aus Sprengstoffverdacht, Grenzschließung und vorläufigen Festnahmen besitzt ein deutliches Sicherheits- und Bedrohungsframing; die Quellenlage enthält zugleich eine spätere Entwarnung.",
+        "factual_core": "Bei einer Kontrolle schlugen Sprengstoff-Suchhunde an, der Grenzübergang wurde zeitweise gesperrt, gefährliches Material wurde laut Ermittlern nicht gefunden und zwei Personen wurden laut Polizei vorläufig festgenommen.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der Grenzübergang war zeitweise gesperrt.",
+            "Sprengstoff-Suchhunde schlugen bei einer Autokontrolle an.",
+            "Der Verkehr wurde nach der Sperrung wieder freigegeben."
+          ],
+          "actor_claims": [
+            "Laut Polizei wurden zwei Fahrzeuginsassen vorläufig festgenommen.",
+            "Ermittler teilten mit, dass kein gefährlicher Stoff gefunden worden sei."
+          ],
+          "open": [
+            "Warum die Hunde anschlugen.",
+            "Welche Vorwürfe gegen die festgenommenen Personen erhoben werden.",
+            "Ob weitere Ermittlungen den Verdacht erklären."
+          ]
+        },
+        "attribution": {
+          "frame_source": "stern-schlagzeilen und tagesspiegel-home",
+          "speaker": "Polizei und Ermittler, vermittelt durch journalistische Berichte",
+          "original_term": "Sprengstoffverdacht",
+          "usage_type": "paraphrase",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Sprengstoffverdacht",
+          "origin_in_story": "stern-schlagzeilen und tagesspiegel-home",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Sprengstoffverdacht",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Ein möglicher gefährlicher Stoff an einem Grenzübergang wird als akute Sicherheitslage dargestellt.",
+          "implied_cause": "Die Ursache des Hundealarms bleibt offen; der Begriff legt jedoch zunächst einen möglichen Sprengstoffbezug nahe.",
+          "implied_responsibility": "Eine Verantwortung bestimmter Personen ist nicht belegt.",
+          "implied_threat": "Der Begriff kann eine unmittelbare Gefahr für Verkehrsteilnehmende und Einsatzkräfte nahelegen.",
+          "implied_solution_space": "Kontrolle, Sperrung und Untersuchung durch Sicherheitsbehörden.",
+          "material_omissions": [
+            "Die später berichtete Feststellung, dass kein gefährliches Material gefunden wurde, muss gegenüber dem Verdachtsbegriff sichtbar bleiben.",
+            "Die Gründe für die vorläufigen Festnahmen sind offen."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Politische Verantwortungs- oder Motivzuschreibungen sind nicht belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sicherheitskommunikation, Grenzverkehr und Berichterstattung über Verdachtslagen",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Niedrig bis mittel; könnte bei wiederholter unklarer Berichterstattung steigen.",
+          "trust_effect_potential": "Eine klare Trennung von Verdacht, Entwarnung und Festnahmen könnte Vertrauen stützen; widersprüchliche Verkürzungen könnten es belasten.",
+          "discourse_effect_potential": "Der Fall könnte die Wahrnehmung kurzfristiger Grenzsicherheitslagen prägen, ohne dass eine längerfristige Wirkung belegt ist."
+        },
+        "impact_path": {
+          "first_order": "Der Sicherheitsbegriff kann Aufmerksamkeit auf die Sperrung und den Polizeieinsatz lenken.",
+          "second_order": "Die Verbindung von Verdacht und Festnahmen könnte Unsicherheit verstärken, wenn die spätere Entwarnung nicht gleichrangig vermittelt wird.",
+          "third_order": "Bei wiederholter ähnlicher Darstellung könnte sich ein dauerhaft erhöhtes Bedrohungsnarrativ an Grenzübergängen herausbilden; dies ist nicht beobachtet."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Der SWR berichtet über Sperrung, Hundealarm, Untersuchung, Entwarnung und Verkehrsfreigabe. Weitere journalistische Kurzfassungen berichten über den Verdacht und vorläufige Festnahmen.",
+          "what_is_inferred": "Die Sicherheitsformulierung kann kurzfristig ein Bedrohungsframing erzeugen. Eine längerfristige Meinungs- oder Verhaltenswirkung ist nicht nachgewiesen.",
+          "what_is_open": "Keine repräsentativen Publikumsdaten oder Verhaltensmessungen liegen vor. Die journalistischen Kurzfassungen sind keine unabhängige Wirkungsstudie.",
+          "facts": [
+            "Der SWR berichtet über Sperrung, Hundealarm, Untersuchung, Entwarnung und Verkehrsfreigabe.",
+            "Weitere journalistische Kurzfassungen berichten über den Verdacht und vorläufige Festnahmen."
+          ],
+          "observations": [
+            "Die bereitgestellten Quellen enthalten unterschiedliche Zeitpunkte der Berichterstattung.",
+            "Die Quelle mit der ausführlichsten Fundlage ist der SWR."
+          ],
+          "inferences": [
+            "Die Sicherheitsformulierung kann kurzfristig ein Bedrohungsframing erzeugen.",
+            "Eine längerfristige Meinungs- oder Verhaltenswirkung ist nicht nachgewiesen."
+          ],
+          "impact_potentials": [
+            "Die Meldung könnte die Aufmerksamkeit für Grenzsicherheit und Verkehrsunterbrechungen erhöhen."
+          ],
+          "impact_risks": [
+            "Eine prominente Verdachtsdarstellung könnte die ungeklärte Ursache des Hundealarms überlagern."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine repräsentativen Publikumsdaten oder Verhaltensmessungen liegen vor.",
+            "Die journalistischen Kurzfassungen sind keine unabhängige Wirkungsstudie."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der konkrete Befund ist zunächst einfach: Sprengstoff-Suchhunde schlugen an einem Auto an, deshalb wurde der Grenzübergang Rheinfelden vorübergehend gesperrt. Spezialkräfte fanden nach Angaben der Ermittler kein gefährliches Material. Zwei Insassen wurden laut Polizei dennoch vorläufig festgenommen. Warum die Hunde reagierten und welche Vorwürfe gegen die Personen bestehen, ist offen. Die Nachricht kann kurzfristig beeinflussen, wie Menschen die Sicherheit an Grenzübergängen einschätzen. Sie kann außerdem Aufmerksamkeit auf die Folgen einer Sperrung für Pendler, Reisende und Lieferverkehre lenken. Eine längerfristige Wirkung auf Vertrauen, Verhalten oder politische Entscheidungen ist nicht belegt. Entscheidend ist deshalb, Verdacht, polizeiliche Angaben und bestätigte Untersuchungsergebnisse getrennt zu berichten.",
+        "editorial_assessment": "Der konkrete Befund ist zunächst einfach: Sprengstoff-Suchhunde schlugen an einem Auto an, deshalb wurde der Grenzübergang Rheinfelden vorübergehend gesperrt. Spezialkräfte fanden nach Angaben der Ermittler kein gefährliches Material. Zwei Insassen wurden laut Polizei dennoch vorläufig festgenommen. Warum die Hunde reagierten und welche Vorwürfe gegen die Personen bestehen, ist offen. Die Nachricht kann kurzfristig beeinflussen, wie Menschen die Sicherheit an Grenzübergängen einschätzen. Sie kann außerdem Aufmerksamkeit auf die Folgen einer Sperrung für Pendler, Reisende und Lieferverkehre lenken. Eine längerfristige Wirkung auf Vertrauen, Verhalten oder politische Entscheidungen ist nicht belegt. Entscheidend ist deshalb, Verdacht, polizeiliche Angaben und bestätigte Untersuchungsergebnisse getrennt zu berichten.",
+        "fact_first_alternative": "Am Grenzübergang Rheinfelden schlugen Sprengstoff-Suchhunde an; der Übergang wurde zeitweise gesperrt. Laut Ermittlern wurde kein gefährliches Material gefunden, zwei Personen wurden laut Polizei vorläufig festgenommen. Die Ursache des Hundealarms und die Vorwürfe bleiben offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der Begriff Sprengstoffverdacht kann die ungeklärte Gefahrenlage stärker erscheinen lassen als die belegte spätere Entwarnung.",
+            "Die Festnahmen könnten ohne Attribution als bestätigte Schuldzuschreibung gelesen werden.",
+            "Unsicherer Frame-Einstieg in title",
+            "Unsicherer Frame-Einstieg in summary"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Grenzübergang Rheinfelden nach Hundealarm zeitweise gesperrt",
+          "recommended_summary": "Nach einem Hundealarm wurde der Grenzübergang Rheinfelden zeitweise geschlossen. Laut Ermittlern wurde kein gefährliches Material gefunden; zwei vorläufige Festnahmen werden berichtet.",
+          "recommended_meta_description": "Hundealarm, zeitweise Sperrung und zwei vorläufige Festnahmen am Grenzübergang Rheinfelden: Was belegt ist und welche Fragen offen bleiben."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "SWR, Tagesspiegel und stern berichten übereinstimmend über den Polizeieinsatz, die zeitweise Sperrung und den Verdacht. Die ausführliche Fundlage und die Entwarnung stammen aus dem SWR; die vorläufigen Festnahmen bleiben zugeschrieben."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-17T02:07:27.052Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T17:09:01.000Z",
+      "last_updated": "2026-09-17T02:13:54.509Z",
+      "version": 4,
+      "news_status": "updated",
+      "event_id": "event-f13a6030063ce9f88544",
+      "case_file": null,
+      "source_published_at": "2026-09-09T16:29:42.000Z",
+      "published_at": "2026-09-09T17:50:31.611Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ],
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 6
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 21
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt wird und was genau im Fahrzeug gefunden wurde.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Bestätigung oder Klarstellung der Ermittler",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dc6bf45d9aae3fb7",
+          "announced_at": "2026-09-09T17:09:01.000Z",
+          "follow_up_date": "2026-09-16T17:50:31.611Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie lange der Grenzübergang gesperrt bleibt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Aufhebung oder Fortdauer der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b12dbc8f7f506230",
+          "announced_at": "2026-09-09T17:07:52.000Z",
+          "follow_up_date": "2026-09-16T17:50:31.611Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Offizielle Bestätigung der vorläufigen Festnahmen und des Ermittlungsstands",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung oder belastbare Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f9a9e7032819ca73",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Angabe zur Dauer der Sperre und zur Wiederfreigabe des Übergangs",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Zeitpunkt der Aufhebung der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b02c1e6dd775120",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Klärung, ob tatsächlich Sprengstoff oder nur ein Verdacht vorlag",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "amtlich bestätigte Einstufung des Falls",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-47d8468f02755a52",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie lange der Grenzübergang gesperrt bleibt beziehungsweise wann er wieder freigegeben wird.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Aufhebung oder Fortdauer der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c5963d39a3b2fb49",
+          "announced_at": "2026-09-09T17:07:52.000Z",
+          "follow_up_date": "2026-09-24T02:13:54.509Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die vorläufigen Festnahmen und der Ermittlungsstand offiziell bestätigt werden.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung oder belastbare Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-54392e166018a751",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-24T02:13:54.509Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/eil-grenzuebergang-schweiz-gesperrt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:02:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-notfalle-16036890.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:09:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/notfaelle--sprengstoffverdacht-an-grenze---zwei-vorlaeufige-festnahmen-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:07:52.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz-wegen-sprengstoffverdachts-gesperrt-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:36:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/notfaelle--grenze-zur-schweiz-dicht--polizei-prueft-auto-auf-sprengstoff-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:29:42.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--zwei-festnahmen-wegen-sprengstoffverdachts-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:51:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--spuerhunde-schlagen-an---sprengstoffverdacht-an-der-grenze-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:44:23.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-zwei-vorlaufige-festnahmen-16036890.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:09:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--sprengstoffverdacht---polizei-gibt-entwarnung-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:26:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--sprengstoffverdacht-blockiert-rheinfelden-grenze-stundenlang-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:57:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-03c6bacdda808696",
       "title_image": {
@@ -119684,242 +122381,6 @@
           "url": "https://www.zdfheute.de/video/zdfheute-live/droege-generaldebatte-bundestag-rede-video-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-09T08:55:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-6000b2fabc397176",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-fba5538cbebc53a4-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-bd0c65c86f1f8445-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-be4fd75445f1c5ac-square.png",
-          "width": 1080,
-          "height": 1080
-        },
-        "background": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-a96cbc6c325af971-source.png"
-        }
-      },
-      "slug": "notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176",
-      "title": "Rheinfelden: Grenzübergang wegen Sprengstoffverdachts gesperrt – zwei vorläufige Festnahmen gemeldet",
-      "source_summary": "Am Grenzübergang Rheinfelden zur Schweiz ist der Verkehr nach Angaben der Quellen in beide Richtungen gesperrt. Die Bundespolizei ist im Einsatz, und bei einer Kontrolle schlugen Sprengstoff-Suchhunde an. Der SWR berichtet von zwei vorläufigen Festnahmen; mehrere Kurzmeldungen greifen diese Angabe auf. Zugleich bleibt offen, ob der Sprengstoffverdacht bestätigt wird und wie lange der Einsatz dauert.\n\nDie Quellenlage ist damit klar im Kern, aber noch nicht vollständig gesichert. Der Ereigniskern ist eine akute Sperrung mit Polizeieinsatz; die Ursache und die endgültige Bewertung sind weiter offen.",
-      "summary": "Der Grenzübergang Rheinfelden ist gesperrt. Zwei vorläufige Festnahmen werden gemeldet, aber noch nicht abschließend bestätigt.",
-      "detail_summary": "Die Meldung beschreibt einen akuten Polizeieinsatz am Grenzübergang Rheinfelden zur Schweiz. Laut den gelieferten Quellen ist der Übergang in beide Richtungen gesperrt, die Bundespolizei ist im Einsatz und Sprengstoff-Suchhunde haben angeschlagen. Der SWR nennt zwei vorläufige Festnahmen; mehrere weitere Kurzmeldungen übernehmen diese Angabe. Der genaue Sachstand bleibt offen, weil die Bestätigung der Festnahmen, die Dauer der Sperre und die endgültige Einordnung des Verdachts in den Quellen noch nicht vollständig geklärt sind. Für die Nachricht zählt vor allem die unmittelbare Störung des Grenzverkehrs und der laufende Polizeieinsatz. Eine längerfristige Folge ist daraus noch nicht belegbar.",
-      "why_relevant": "Akute Grenzsperrung, Polizeieinsatz und gemeldete Festnahmen betreffen den Verkehr zwischen Deutschland und der Schweiz unmittelbar und haben klare Relevanz für Sicherheit und Mobilität.",
-      "topic": [
-        "Gesellschaft",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": {
-        "path_directions": [
-          {
-            "order": "third_order",
-            "path": "Vorübergehende Anpassung von Routen und Abläufen im Grenzraum",
-            "direction": "open",
-            "condition": "Nur wenn der Einsatz länger dauert, passen Unternehmen und Pendelnde ihre Wege dauerhaft an.",
-            "evidence": "scenario",
-            "claim_ids": [],
-            "dimensions": [
-              "human"
-            ]
-          }
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T20:12:06.952Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T17:09:01.000Z",
-      "last_updated": "2026-09-09T20:13:14.570Z",
-      "version": 3,
-      "news_status": "developing",
-      "event_id": "event-f13a6030063ce9f88544",
-      "case_file": null,
-      "source_published_at": "2026-09-09T16:29:42.000Z",
-      "published_at": "2026-09-09T17:50:31.611Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "swr-aktuell"
-          ],
-          [
-            "tagesspiegel-home",
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 6
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 21
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "tagesspiegel-home"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob der Sprengstoffverdacht bestätigt wird und was genau im Fahrzeug gefunden wurde.",
-          "source_id": "tagesspiegel-home",
-          "expected_by": null,
-          "measurable_indicator": "amtliche Bestätigung oder Klarstellung der Ermittler",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-dc6bf45d9aae3fb7",
-          "announced_at": "2026-09-09T17:09:01.000Z",
-          "follow_up_date": "2026-09-16T17:50:31.611Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Wie lange der Grenzübergang gesperrt bleibt.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Aufhebung oder Fortdauer der Sperre",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-b12dbc8f7f506230",
-          "announced_at": "2026-09-09T17:07:52.000Z",
-          "follow_up_date": "2026-09-16T17:50:31.611Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Offizielle Bestätigung der vorläufigen Festnahmen und des Ermittlungsstands",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung oder belastbare Bestätigung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-f9a9e7032819ca73",
-          "announced_at": "2026-09-09T18:02:46.000Z",
-          "follow_up_date": "2026-09-16T20:13:14.570Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Angabe zur Dauer der Sperre und zur Wiederfreigabe des Übergangs",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Zeitpunkt der Aufhebung der Sperre",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8b02c1e6dd775120",
-          "announced_at": "2026-09-09T18:02:46.000Z",
-          "follow_up_date": "2026-09-16T20:13:14.570Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Klärung, ob tatsächlich Sprengstoff oder nur ein Verdacht vorlag",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "amtlich bestätigte Einstufung des Falls",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-47d8468f02755a52",
-          "announced_at": "2026-09-09T18:02:46.000Z",
-          "follow_up_date": "2026-09-16T20:13:14.570Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/eil-grenzuebergang-schweiz-gesperrt-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T18:02:46.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-notfalle-16036890.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:09:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/notfaelle--sprengstoffverdacht-an-grenze---zwei-vorlaeufige-festnahmen-38229130.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:07:52.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz-wegen-sprengstoffverdachts-gesperrt-38229144.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T16:36:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/notfaelle--grenze-zur-schweiz-dicht--polizei-prueft-auto-auf-sprengstoff-38229130.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T16:29:42.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--zwei-festnahmen-wegen-sprengstoffverdachts-38229144.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:51:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--spuerhunde-schlagen-an---sprengstoffverdacht-an-der-grenze-38229130.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:44:23.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-zwei-vorlaufige-festnahmen-16036890.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:09:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--sprengstoffverdacht---polizei-gibt-entwarnung-38229144.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T18:26:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--sprengstoffverdacht-blockiert-rheinfelden-grenze-stundenlang-38229130.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T18:57:42.000Z",
           "primary_source": false
         }
       ]
