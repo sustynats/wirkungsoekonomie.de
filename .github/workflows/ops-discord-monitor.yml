@@ -64,6 +64,7 @@ jobs:
             tests/ops/news-recovery.test.mjs
             reports/wirkungsticker-latest-run.json
             data/news/stories.json
+            data/news/lagen.json
             data/news/usage.json
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
