@@ -25,14 +25,17 @@ function harness({ withViewport = true, lagging = false } = {}) {
   const media = { matches: true, addEventListener: (key, cb) => { mediaEvents[key] = cb; } };
   const window = { innerHeight: 844, visualViewport: withViewport ? viewport : undefined, matchMedia: () => media,
     requestAnimationFrame: cb => { frames.push(cb); return frames.length; }, addEventListener: (key, cb) => { events[key] = cb; } };
-  const document = { hidden: false, querySelector: () => nav, addEventListener: (key, cb) => { events[key] = cb; } };
+  const document = { hidden: false, activeElement: null, querySelector: () => nav, addEventListener: (key, cb) => { events[key] = cb; } };
   vm.runInNewContext(script, { window, document });
   const flush = () => { while (frames.length) frames.shift()(); };
   flush();
   return { state, viewport, window, document, media, nav, frames, flush,
     bottom: () => nav.getBoundingClientRect().bottom,
     event: name => { events[name](); flush(); }, viewportEvent: name => { viewportEvents[name](); flush(); },
-    desktop: () => { media.matches = false; mediaEvents.change(); flush(); } };
+    desktop: () => { media.matches = false; mediaEvents.change(); flush(); },
+    // Tastatur: ein Eingabefeld hat den Fokus.
+    tippen: () => { document.activeElement = { tagName: 'INPUT', type: 'search' }; events.focusin(); flush(); },
+    fertig: () => { document.activeElement = null; events.focusout(); flush(); } };
 }
 
 // 16.09., Natalies Screenshot: die Navigationsleiste stand mitten in der Seite,
@@ -55,6 +58,7 @@ test('gewöhnliches Scrollen lässt die native Leiste unberührt', () => {
 // maß damit ihre eigene Wirkung mit. Jetzt zählt allein die Viewport-Geometrie.
 test('vierzig Wischbewegungen verschieben nichts, auch bei nachhinkender Messung', () => {
   const h = harness({ lagging: true });
+  h.tippen();
   h.viewport.height = 700;
   for (let i = 0; i < 40; i += 1) { h.event('scroll'); h.event('touchend'); }
   assert.equal(h.state.lift, 144, 'der Wert folgt der Geometrie und läuft nicht davon');
@@ -63,7 +67,7 @@ test('vierzig Wischbewegungen verschieben nichts, auch bei nachhinkender Messung
   assert.equal(h.state.lift, 0, 'und fällt zurück, sobald der Sichtbereich wieder voll ist');
 });
 test('Tastatur öffnen und schließen folgt dem sichtbaren Bereich, auch bei stehengebliebenem iOS-Offset', () => {
-  const h = harness(); h.viewport.height = 480; h.viewport.offsetTop = 110;
+  const h = harness(); h.tippen(); h.viewport.height = 480; h.viewport.offsetTop = 110;
   h.viewportEvent('resize');
   assert.equal(h.state.lift, 254, 'die Leiste steht über der Tastatur');
   assert.equal(h.bottom(), 590, 'genau am unteren Rand des sichtbaren Bereichs');
@@ -76,13 +80,14 @@ test('eingeklappte Browserleiste, Drehung, Zurücknavigation und Rückkehr rechn
   const h = harness(); h.window.innerHeight = 650; h.viewport.height = 844;
   h.viewportEvent('resize');
   assert.equal(h.state.lift, -194); assert.equal(h.bottom(), 844);
+  h.tippen();
   for (const [event, height, expected] of [['orientationchange', 390, 260], ['pageshow', 844, -194], ['visibilitychange', 650, 0]]) {
     h.viewport.height = height; h.event(event);
     assert.equal(h.state.lift, expected, `${event} rechnet aus der aktuellen Geometrie`);
   }
 });
 test('Desktop und Pinch-Zoom geben die Anpassung frei', () => {
-  const h = harness(); h.viewport.height = 600; h.viewportEvent('resize');
+  const h = harness(); h.tippen(); h.viewport.height = 600; h.viewportEvent('resize');
   assert.equal(h.state.lift, 244, 'der verkleinerte Sichtbereich hebt die Leiste');
   h.viewport.scale = 2; h.viewportEvent('resize'); assert.equal(h.state.lift, 0);
   h.viewport.scale = 1; h.viewportEvent('resize'); assert.equal(h.state.lift, 244);
@@ -98,4 +103,25 @@ test('ältere Browser bleiben beim Browserverhalten; Seiten ohne App-Navigation 
     window: { matchMedia: () => ({ matches: false, addEventListener() {} }), addEventListener() {}, requestAnimationFrame() {} },
     document: { querySelector: () => null, addEventListener() {} },
   }));
+});
+
+// 18.09.2026, Natalies Screenshot: in der eingebetteten Browseransicht (Link aus
+// einer anderen App) stand die Leiste ein Drittel des Bildschirms hoch mitten in
+// einer Tabelle. Die ein- und ausfahrenden Browserleisten verkleinern den
+// sichtbaren Bereich, ohne dass eine Tastatur offen ist.
+test('eine eingeblendete Browserleiste hebt die Navigation nicht an, nur die Tastatur tut es', () => {
+  const h = harness();
+  h.viewport.height = 600; h.viewportEvent('resize'); h.event('scroll');
+  assert.equal(h.state.lift, 0, 'ohne Eingabefeld bleibt die Leiste unten');
+  assert.equal(h.state.writes, 0);
+  h.tippen();
+  assert.equal(h.state.lift, 244, 'beim Tippen steht sie über der Tastatur');
+  h.fertig();
+  assert.equal(h.state.lift, 0, 'und geht danach sofort zurück');
+  // Knoepfe und Haekchen oeffnen keine Tastatur.
+  const k = harness(); k.viewport.height = 600;
+  for (const type of ['checkbox', 'button', 'radio', 'submit']) {
+    k.document.activeElement = { tagName: 'INPUT', type }; k.viewportEvent('resize');
+    assert.equal(k.state.lift, 0, type);
+  }
 });

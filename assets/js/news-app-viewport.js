@@ -22,6 +22,21 @@
   // Kartentext). Und gerechnet wird ausschließlich aus der Viewport-Geometrie,
   // nicht aus der gemessenen Kante der Leiste: eine Korrektur, die ihre eigene
   // Wirkung mitmisst, schleppt jeden Messfehler in den nächsten Schritt.
+  // 18.09.2026, Natalies Screenshot: In der eingebetteten Browseransicht
+  // (Link aus einer anderen App, oben "X", unten Teilen/Neu laden) fahren die
+  // Browserleisten beim Scrollen ein und aus. Der sichtbare Bereich wird dabei
+  // kleiner, ohne dass eine Tastatur offen ist - und die Leiste stand ein
+  // Drittel des Bildschirms hoch mitten in der Tabelle. Angehoben wird deshalb
+  // nur noch, wenn wirklich eingetippt wird; sonst haelt der Browser sie selbst.
+  function editing() {
+    const element = document.activeElement;
+    if (!element || element === document.body) return false;
+    if (element.isContentEditable) return true;
+    const tag = String(element.tagName || '').toLowerCase();
+    if (tag === 'textarea' || tag === 'select') return true;
+    return tag === 'input' && !/^(?:button|checkbox|radio|range|submit|reset|file|image|color|hidden)$/i.test(element.type || 'text');
+  }
+
   function align() {
     frame = null;
     if (!mobile.matches || (viewport?.scale || 1) > 1.01 || !viewport) return apply(0);
@@ -32,6 +47,9 @@
     // eingeklappte Browserleiste vergrößert ihn (Leiste runter).
     const visibleBottom = height + top;
     const distance = window.innerHeight - visibleBottom;
+    // Hochschieben nur bei offener Tastatur (siehe editing). Das
+    // Herunterziehen an den echten Rand bei eingeklappter Browserleiste bleibt.
+    if (distance > 0 && !editing()) return apply(0);
     apply(Math.round(Math.max(-window.innerHeight, Math.min(window.innerHeight, distance)) * 100) / 100);
   }
   function schedule() {
@@ -44,5 +62,8 @@
   viewport?.addEventListener('scroll', schedule, { passive: true });
   mobile.addEventListener('change', schedule);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) schedule(); });
+  // Tastatur auf und zu: Fokus rein und raus loest die Rechnung neu aus.
+  document.addEventListener('focusin', schedule);
+  document.addEventListener('focusout', schedule);
   schedule();
 })();
