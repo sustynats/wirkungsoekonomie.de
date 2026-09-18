@@ -2,8 +2,1896 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T06:02:49.376Z",
+  "updated_at": "2026-09-18T06:16:46.714Z",
   "stories": [
+    {
+      "story_id": "wt-8370ac4af74b5913",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8370ac4af74b5913-5d05fbdd4b400314-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8370ac4af74b5913-d3d08044513b82e3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8370ac4af74b5913-ba0aca556a592a72-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8370ac4af74b5913-8357f86999f5927c-source.png"
+        }
+      },
+      "slug": "japan-notenbank-hebt-leitzins-auf-hochsten-stand-seit-31-jahren-4b5913",
+      "title": "Laut manager magazin: Japans Notenbank hebt Leitzins auf höchsten Stand seit 31 Jahren",
+      "source_summary": "Manager magazin berichtet, dass Japans Notenbank ihren Leitzins auf den höchsten Stand seit 31 Jahren angehoben habe. Der Bericht ordnet den Schritt vor dem Hintergrund der internationalen Zinsentwicklung ein.\n\nAls Gründe für die Sorgen der japanischen Währungshüter nennt die Quelle den schwachen Yen, hohe Renditen für Staatsanleihen und eine anziehende Inflation. Die Angaben stammen aus einer journalistischen Sekundärquelle.\n\nDer Bericht beschreibt die Entscheidung als Abkehr von der Politik des extrem billigen Geldes. Eine unabhängige Bestätigung, genaue Angaben zum Zinssatz und Messdaten zu Folgen für Haushalte, Unternehmen oder Umwelt liegen im Quellenbestand nicht vor.",
+      "summary": "Japans Notenbank entfernt sich laut manager magazin weiter vom extrem billigen Geld. Mögliche Folgen für Kredite, Yen, Inflation und politische Handlungsspielräume sind offen.",
+      "detail_summary": "Laut manager magazin hebt Japans Notenbank den Leitzins auf den höchsten Stand seit 31 Jahren. Als Hintergrund nennt der Bericht den schwachen Yen, hohe Renditen für Staatsanleihen und eine anziehende Inflation. Der Schritt kann Kredite verteuern und die Finanzierung von Staat, Unternehmen und Haushalten verändern. Zugleich könnte eine straffere Geldpolitik den Wechselkurs und die Preisentwicklung beeinflussen. Unabhängige Bestätigung, genaue Zinshöhe und belastbare Wirkungsdaten liegen in der vorliegenden Quelle nicht vor.",
+      "why_relevant": "Der berichtete Kurswechsel betrifft die Finanzierung einer großen Volkswirtschaft und kann über Kredite, Wechselkurse und Staatsanleihemärkte über Japan hinauswirken. Die konkrete Tragweite bleibt wegen der einzelnen Sekundärquelle offen.",
+      "topic": [
+        "Finanzen"
+      ],
+      "status": "in Kraft",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über eine Anhebung des Leitzinses der Bank of Japan auf den höchsten Stand seit 31 Jahren",
+        "evaluation_target": {
+          "label": "geldpolitischer Kurswechsel der Bank of Japan",
+          "type": "decision"
+        },
+        "baseline": "Politik des extrem billigen Geldes vor dem berichteten Kurswechsel",
+        "counterfactual": "Ohne den berichteten Schritt könnte die bisherige geldpolitische Linie zunächst fortbestehen; die weitere Entwicklung bleibt offen.",
+        "reference_frame": [
+          "finanzielle Stabilität",
+          "Verteilung von Finanzierungskosten",
+          "makroökonomische Anpassungsfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Folgen für Kreditnehmer, Sparer, Beschäftigung und öffentliche Leistungen sind modelliert; Verteilungsdaten fehlen.",
+            "planet": "Mögliche Nachfrage- und Investitionseffekte sind indirekt und unsicher; ein belastbarer Umweltpfad ist nicht belegt.",
+            "democracy": "Mögliche Folgen für staatliche Haushalts- und Handlungsspielräume sind modelliert; konkrete institutionelle Veränderungen sind nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Geldentscheidung könnte Finanzierungskosten, Wechselkurs und Renditen verändern.",
+          "second_order": "Diese Veränderungen könnten Investitionen, Konsum, Staatsfinanzen und Verteilung beeinflussen.",
+          "third_order": "Anhaltende Finanzierungs- und Kapitalflussänderungen könnten internationale wirtschaftspolitische Spielräume verschieben; dies bleibt hypothesenbasiert.",
+          "enablement": [
+            "enables_budget_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine eingetretenen Folgen.",
+            "Eine Zinserhöhung kann je nach Reaktion von Wechselkurs, Inflation und Nachfrage unterschiedliche Richtungen annehmen.",
+            "Für Umwelt- und Demokratiepfade fehlen direkte Messdaten."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Sekundärquelle vor; unabhängige Bestätigung ist nicht etabliert.",
+          "institutional_status": "Berichtet wird eine Entscheidung der Bank of Japan; genaue Rechts- und Umsetzungsdetails sind nicht überliefert."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den geldpolitischen Schritt, aber nicht seine Folgen für Kreditnehmer oder Sparer; die Verteilungsrichtung bleibt abhängig von Verschuldung und Zinsweitergabe.",
+            "reviewed_source_ids": [
+              "manager-magazin-news"
+            ],
+            "rationale": "Der plausibelste Pfad führt über höhere Refinanzierungskosten zu Belastungen für Kreditnehmer. Ein Gegenpfad zugunsten von Sparern und möglicher Preisstabilität ist vorhanden, aber nicht quantifizierbar.",
+            "primary_paths": [
+              {
+                "label": "Höhere Finanzierungskosten belasten Kreditnehmer",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine straffere Geldpolitik kann über Banken und Kapitalmärkte Kredit- und Refinanzierungskosten erhöhen.",
+                "recipients": [
+                  "verschuldete Haushalte",
+                  "Unternehmen",
+                  "öffentliche Haushalte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite kann groß sein, die konkrete Weitergabe und Dauer sind jedoch unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kredit- und Staatsfinanzierung können viele Akteure im Land erreichen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine Belastung ist plausibel, ihre Stärke wird nicht beziffert.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hängt von der weiteren Geldpolitik und Refinanzierung ab.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zins- und Finanzierungsbedingungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Hoch verschuldete Kreditnehmer wären gegenüber höheren Kosten besonders exponiert.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht in Haushalts-, Unternehmens- und Staatsfinanzierung hinein.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Einkommen, Versorgung oder Rechte ist nicht belegt.",
+                  "reference_frame": "finanzielle Belastbarkeit von Kreditnehmern",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Banken und Kapitalmärkte die höheren Leitzinsen weitergeben.",
+                "reference_space": "Japanische Haushalte, Unternehmen und öffentliche Haushalte",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichtete Zinsentscheidung ist zutreffend und wirkt über Refinanzierungskanäle.",
+                "source_support": "Die Quelle belegt den geldpolitischen Kurswechsel, nicht die tatsächliche Kostenweitergabe.",
+                "limitations": "Keine Zinshöhe, keine Kreditdaten und keine Beobachtung der Betroffenenreaktionen.",
+                "first_order": "Kredite und Refinanzierungen könnten teurer werden.",
+                "second_order": "Investitionen und Konsum könnten bei belasteten Kreditnehmern zurückgehen.",
+                "third_order": "Eine anhaltende Belastung könnte Verteilung und öffentliche Haushaltsräume beeinflussen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten erlauben eine Quantifizierung der Belastung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Mögliche Entlastung durch stabilere Preise und höhere Sparzinsen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Eine straffere Geldpolitik könnte Inflationserwartungen dämpfen und Zinserträge für Sparer erhöhen.",
+                "recipients": [
+                  "Sparer",
+                  "Haushalte mit geringer Verschuldung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus ist plausibel, aber Wirkung und Verteilung sind aus der Quelle nicht messbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Sparer und Preisbetroffene könnten breit, aber ungleich erreicht werden.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Entlastung ist nicht quantifiziert.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Effekt könnte mit der Dauer der strafferen Linie anhalten.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preis- und Zinserwartungen können sich wieder ändern.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Sparer und einkommensschwache Haushalte profitieren nicht gleichermaßen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Gegenpfad bleibt überwiegend auf Haushalte und Preise begrenzt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Kaufkraft und Sparfähigkeit",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Geldpolitik Inflationserwartungen und Einlagenzinsen beeinflusst.",
+                "reference_space": "Japanische Haushalte",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preis- und Sparreaktionen folgen dem geldpolitischen Signal.",
+                "source_support": "Die Quelle nennt eine anziehende Inflation, belegt aber keine spätere Stabilisierung.",
+                "limitations": "Keine Daten zu Sparquoten, Preisen oder Einlagenzinsen.",
+                "first_order": "Spar- und Preisbedingungen könnten sich verändern.",
+                "second_order": "Haushalte könnten Konsum und Sparen anpassen.",
+                "third_order": "Verteilungswirkungen könnten politische Anpassungen auslösen.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle erlaubt keine Prüfung, ob dieser Gegenpfad bereits eintritt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Belastung bestimmter Schuldnergruppen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Variable Kredite und kurze Refinanzierungen könnten Kosten schneller anpassen.",
+                "recipients": [
+                  "hoch verschuldete Haushalte",
+                  "kleine Unternehmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Betroffenheit ist plausibel, aber Umfang und Datenlage sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft nur bestimmte Finanzierungsprofile.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Für einzelne Schuldner kann die Belastung spürbar sein.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Belastung kann bis zur Refinanzierung oder Kursänderung anhalten.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Kreditkonditionen können angepasst oder refinanziert werden.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Geringe finanzielle Puffer erhöhen die Verwundbarkeit.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf besonders exponierte Schuldner begrenzt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Überschreitung einer Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "finanzielle Grundsicherung",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Variable oder kurzfristig refinanzierte Kredite müssen vorhanden sein.",
+                "reference_space": "Japan",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Finanzierungsbedingungen werden zeitnah angepasst.",
+                "source_support": "Die Quelle nennt keine Kreditstruktur.",
+                "limitations": "Keine Verteilungs- oder Haushaltsdaten.",
+                "first_order": "Einzelne Refinanzierungen könnten teurer werden.",
+                "second_order": "Betroffene könnten Ausgaben oder Investitionen verschieben.",
+                "third_order": "Bei Häufung könnte der Pfad Nachfrage und soziale Ungleichheit beeinflussen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand quantifiziert diesen Nebenpfad.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Belastungen für Kreditnehmer und mögliche Vorteile für Sparer sind vergleichbar, aber nicht quantifiziert; der negative Hauptpfad ist daher nur vorläufig stärker."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Höhere Finanzierungskosten belasten Kreditnehmer",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Höhere Finanzierungskosten belasten Kreditnehmer",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Umwelt- oder Emissionsdaten; mögliche Nachfrage- und Investitionseffekte bleiben hypothetisch.",
+            "reviewed_source_ids": [
+              "manager-magazin-news"
+            ],
+            "rationale": "Ein geldpolitischer Schritt könnte über Nachfrage und Investitionen Energieverbrauch beeinflussen, doch Richtung und Größenordnung sind nicht aus der Quelle ableitbar.",
+            "primary_paths": [
+              {
+                "label": "Veränderte Finanzierung könnte Energieinvestitionen beeinflussen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Zinsänderungen können Investitionsentscheidungen und damit energiebezogene Projekte verändern.",
+                "recipients": [
+                  "Unternehmen",
+                  "Energiesysteme",
+                  "Umwelt"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Umweltpfad ist indirekt und von Investitionsentscheidungen abhängig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Investitionen können mehrere Sektoren erreichen, aber nicht automatisch alle.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Umweltintensität ist nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Investitionsentscheidungen können länger wirken als Zinsänderungen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Viele Finanzierungsentscheidungen sind korrigierbar, Infrastruktur teils weniger.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Verwundbarkeit ist in der Quelle nicht ausgewiesen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt indirekt und ohne belegte Kaskade.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzüberschreitung ist belegt.",
+                  "reference_frame": "Umwelt- und Emissionspfade",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Zinsen müssen Investitionsentscheidungen mit relevantem Energiebezug verändern.",
+                "reference_space": "Japanische Wirtschaft",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Finanzierungskosten beeinflussen Umfang und Art von Investitionen.",
+                "source_support": "Die Quelle belegt weder Investitionsänderungen noch Umweltfolgen.",
+                "limitations": "Keine Energie-, Emissions- oder Projektdaten.",
+                "first_order": "Investitionspläne könnten angepasst werden.",
+                "second_order": "Energieverbrauch und Emissionen könnten sich je nach Investitionsrichtung verändern.",
+                "third_order": "Langfristige Infrastrukturpfade könnten Umwelt- und Versorgungssysteme beeinflussen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Belege erlauben eine Richtungsentscheidung für den Umweltpfad.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Nachfragedämpfung mit möglicher Emissionswirkung",
+                "direction": "open",
+                "type": "side_effect",
+                "mechanism": "Höhere Finanzierungskosten könnten Nachfrage und Produktion beeinflussen.",
+                "recipients": [
+                  "Industrie",
+                  "Energieverbrauch",
+                  "Umwelt"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Pfad ist mehrfach vermittelt und ohne Messdaten besonders unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Nachfrageeffekte könnten mehrere Wirtschaftsbereiche erreichen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Intensität ist nicht quantifiziert.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt von Nachfrage und weiterer Geldpolitik ab.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Nachfrageänderungen sind grundsätzlich umkehrbar.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Verwundbarkeit wird nicht konkret beschrieben.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Kein belegter tiefer Systempfad liegt vor.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist nicht konkret angesprochen.",
+                  "reference_frame": "Emissionen und Ressourcenverbrauch",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Kreditkosten müssen die gesamtwirtschaftliche Nachfrage messbar verändern.",
+                "reference_space": "Japan",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Nachfrage und Energieverbrauch bewegen sich gemeinsam.",
+                "source_support": "Die Quelle enthält keine Nachfrage- oder Emissionsbeobachtung.",
+                "limitations": "Richtung, Umfang und Verteilung sind offen.",
+                "first_order": "Nachfrage könnte sich verändern.",
+                "second_order": "Energieverbrauch könnte mit Verzögerung reagieren.",
+                "third_order": "Langfristige Emissionspfade könnten beeinflusst werden.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keinen Umweltbeleg.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen gleichwertig belegten positiven oder negativen Umweltpfad; die Einordnung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Veränderte Finanzierung könnte Energieinvestitionen beeinflussen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Finanzierung könnte Energieinvestitionen beeinflussen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle oder demokratische Folge; der Pfad über öffentliche Finanzierungsspielräume bleibt eine Wissenshypothese.",
+            "reviewed_source_ids": [
+              "manager-magazin-news"
+            ],
+            "rationale": "Geldpolitik kann mittelbar den fiskalischen Handlungsspielraum verändern. Ein demokratischer Effekt ist jedoch weder beobachtet noch durch die Quelle belegt.",
+            "primary_paths": [
+              {
+                "label": "Veränderte Zinslast könnte politische Haushaltsräume beeinflussen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Höhere Renditen können die Kosten staatlicher Refinanzierung verändern und damit Prioritätensetzungen beeinflussen.",
+                "recipients": [
+                  "öffentliche Haushalte",
+                  "Parlament",
+                  "Bürgerinnen und Bürger"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist institutionell plausibel, aber von Schuldenstruktur und politischer Reaktion abhängig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Staatliche Haushaltsentscheidungen können viele Menschen erreichen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Belastung des Haushalts ist nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Zinskosten können über Haushaltsjahre wirken.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Budgetentscheidungen und Finanzierung können politisch geändert werden.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Öffentliche Leistungen können bei engem Haushaltsspielraum empfindlich sein.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der institutionelle Pfad ist indirekt und ohne belegte Machtverschiebung.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Einschränkung demokratischer Rechte oder Verfahren ist nicht belegt.",
+                  "reference_frame": "öffentliche Rechenschaft und Haushaltsgestaltung",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Höhere Staatsfinanzierungskosten müssen den politischen Haushaltsspielraum tatsächlich einengen.",
+                "reference_space": "Japanische staatliche Haushaltsentscheidungen",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Renditeänderungen werden in den Staatshaushalt weitergegeben.",
+                "source_support": "Die Quelle nennt hohe Renditen für Staatsanleihen, aber keine Haushaltsfolge.",
+                "limitations": "Keine Schuldendaten, Budgetentscheidungen oder institutionellen Beobachtungen.",
+                "first_order": "Zinsausgaben könnten sich verändern.",
+                "second_order": "Prioritäten und Verteilung öffentlicher Mittel könnten politisch umstritten werden.",
+                "third_order": "Anhaltender Finanzdruck könnte Vertrauen oder Korrekturfähigkeit beeinflussen; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen oder institutionellen Belege für diesen demokratischen Pfad liegen vor.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Politischer Druck durch wirtschaftliche Belastungen",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Verteilte finanzielle Belastungen könnten politische Konflikte und Forderungen nach Kursänderung verstärken.",
+                "recipients": [
+                  "Regierung",
+                  "Parlament",
+                  "betroffene Haushalte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Konflikt- und Reaktionspfade sind möglich, aber nicht beobachtet oder quantifiziert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Wirtschaftliche Belastungen können politische Debatten breit erreichen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine konkrete politische Intensität ist belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Politische Reaktionen können kurzfristig bleiben oder anhalten.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Debatten und politische Entscheidungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Besonders belastete Gruppen könnten politisch stärker betroffen sein.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer institutioneller Wandel ist nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete demokratische Schutzgrenze ist betroffen oder belegt.",
+                  "reference_frame": "politische Teilhabe und Korrekturfähigkeit",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Wirtschaftliche Folgen müssen politisch sichtbar und konfliktfähig werden.",
+                "reference_space": "Japanischer politischer Diskurs",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Verteilungswirkungen werden politisch zugeschrieben und mobilisiert.",
+                "source_support": "Die Quelle berichtet keine politische Reaktion.",
+                "limitations": "Keine Umfragen, Debattenbelege oder Verhaltensdaten.",
+                "first_order": "Wirtschaftspolitische Debatten könnten zunehmen.",
+                "second_order": "Forderungen nach Anpassung der Geld- oder Fiskalpolitik könnten entstehen.",
+                "third_order": "Institutionelles Vertrauen könnte sich verändern; dafür gibt es keinen Nachweis.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keinen Beleg für politische Reaktionen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es liegt kein gleichwertig belegter positiver oder negativer demokratischer Gegenpfad vor; die Richtung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Veränderte Zinslast könnte politische Haushaltsräume beeinflussen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Zinslast könnte politische Haushaltsräume beeinflussen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T06:18:46.117Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "manager-magazin-news",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Berichtete Zinsentscheidung, genannte wirtschaftliche Hintergründe und Einordnung als Abkehr vom extrem billigen Geld."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den geldpolitischen Schritt, aber nicht seine Folgen für Kreditnehmer oder Sparer; die Verteilungsrichtung bleibt abhängig von Verschuldung und Zinsweitergabe.",
+          "reviewed_source_ids": [
+            "manager-magazin-news"
+          ],
+          "rationale": "Der plausibelste Pfad führt über höhere Refinanzierungskosten zu Belastungen für Kreditnehmer. Ein Gegenpfad zugunsten von Sparern und möglicher Preisstabilität ist vorhanden, aber nicht quantifizierbar.",
+          "primary_paths": [
+            {
+              "label": "Höhere Finanzierungskosten belasten Kreditnehmer",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine straffere Geldpolitik kann über Banken und Kapitalmärkte Kredit- und Refinanzierungskosten erhöhen.",
+              "recipients": [
+                "verschuldete Haushalte",
+                "Unternehmen",
+                "öffentliche Haushalte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite kann groß sein, die konkrete Weitergabe und Dauer sind jedoch unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kredit- und Staatsfinanzierung können viele Akteure im Land erreichen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine Belastung ist plausibel, ihre Stärke wird nicht beziffert.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hängt von der weiteren Geldpolitik und Refinanzierung ab.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zins- und Finanzierungsbedingungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Hoch verschuldete Kreditnehmer wären gegenüber höheren Kosten besonders exponiert.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht in Haushalts-, Unternehmens- und Staatsfinanzierung hinein.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Einkommen, Versorgung oder Rechte ist nicht belegt.",
+                "reference_frame": "finanzielle Belastbarkeit von Kreditnehmern",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Banken und Kapitalmärkte die höheren Leitzinsen weitergeben.",
+              "reference_space": "Japanische Haushalte, Unternehmen und öffentliche Haushalte",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichtete Zinsentscheidung ist zutreffend und wirkt über Refinanzierungskanäle.",
+              "source_support": "Die Quelle belegt den geldpolitischen Kurswechsel, nicht die tatsächliche Kostenweitergabe.",
+              "limitations": "Keine Zinshöhe, keine Kreditdaten und keine Beobachtung der Betroffenenreaktionen.",
+              "first_order": "Kredite und Refinanzierungen könnten teurer werden.",
+              "second_order": "Investitionen und Konsum könnten bei belasteten Kreditnehmern zurückgehen.",
+              "third_order": "Eine anhaltende Belastung könnte Verteilung und öffentliche Haushaltsräume beeinflussen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten erlauben eine Quantifizierung der Belastung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Mögliche Entlastung durch stabilere Preise und höhere Sparzinsen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Eine straffere Geldpolitik könnte Inflationserwartungen dämpfen und Zinserträge für Sparer erhöhen.",
+              "recipients": [
+                "Sparer",
+                "Haushalte mit geringer Verschuldung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus ist plausibel, aber Wirkung und Verteilung sind aus der Quelle nicht messbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Sparer und Preisbetroffene könnten breit, aber ungleich erreicht werden.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Entlastung ist nicht quantifiziert.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Effekt könnte mit der Dauer der strafferen Linie anhalten.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preis- und Zinserwartungen können sich wieder ändern.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Sparer und einkommensschwache Haushalte profitieren nicht gleichermaßen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Gegenpfad bleibt überwiegend auf Haushalte und Preise begrenzt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Kaufkraft und Sparfähigkeit",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Geldpolitik Inflationserwartungen und Einlagenzinsen beeinflusst.",
+              "reference_space": "Japanische Haushalte",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preis- und Sparreaktionen folgen dem geldpolitischen Signal.",
+              "source_support": "Die Quelle nennt eine anziehende Inflation, belegt aber keine spätere Stabilisierung.",
+              "limitations": "Keine Daten zu Sparquoten, Preisen oder Einlagenzinsen.",
+              "first_order": "Spar- und Preisbedingungen könnten sich verändern.",
+              "second_order": "Haushalte könnten Konsum und Sparen anpassen.",
+              "third_order": "Verteilungswirkungen könnten politische Anpassungen auslösen.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle erlaubt keine Prüfung, ob dieser Gegenpfad bereits eintritt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Belastung bestimmter Schuldnergruppen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Variable Kredite und kurze Refinanzierungen könnten Kosten schneller anpassen.",
+              "recipients": [
+                "hoch verschuldete Haushalte",
+                "kleine Unternehmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Betroffenheit ist plausibel, aber Umfang und Datenlage sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft nur bestimmte Finanzierungsprofile.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Für einzelne Schuldner kann die Belastung spürbar sein.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Belastung kann bis zur Refinanzierung oder Kursänderung anhalten.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Kreditkonditionen können angepasst oder refinanziert werden.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Geringe finanzielle Puffer erhöhen die Verwundbarkeit.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf besonders exponierte Schuldner begrenzt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Überschreitung einer Schutzgrenze ist nicht belegt.",
+                "reference_frame": "finanzielle Grundsicherung",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Variable oder kurzfristig refinanzierte Kredite müssen vorhanden sein.",
+              "reference_space": "Japan",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Finanzierungsbedingungen werden zeitnah angepasst.",
+              "source_support": "Die Quelle nennt keine Kreditstruktur.",
+              "limitations": "Keine Verteilungs- oder Haushaltsdaten.",
+              "first_order": "Einzelne Refinanzierungen könnten teurer werden.",
+              "second_order": "Betroffene könnten Ausgaben oder Investitionen verschieben.",
+              "third_order": "Bei Häufung könnte der Pfad Nachfrage und soziale Ungleichheit beeinflussen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand quantifiziert diesen Nebenpfad.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Belastungen für Kreditnehmer und mögliche Vorteile für Sparer sind vergleichbar, aber nicht quantifiziert; der negative Hauptpfad ist daher nur vorläufig stärker."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Höhere Finanzierungskosten belasten Kreditnehmer",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Höhere Finanzierungskosten belasten Kreditnehmer",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Umwelt- oder Emissionsdaten; mögliche Nachfrage- und Investitionseffekte bleiben hypothetisch.",
+          "reviewed_source_ids": [
+            "manager-magazin-news"
+          ],
+          "rationale": "Ein geldpolitischer Schritt könnte über Nachfrage und Investitionen Energieverbrauch beeinflussen, doch Richtung und Größenordnung sind nicht aus der Quelle ableitbar.",
+          "primary_paths": [
+            {
+              "label": "Veränderte Finanzierung könnte Energieinvestitionen beeinflussen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Zinsänderungen können Investitionsentscheidungen und damit energiebezogene Projekte verändern.",
+              "recipients": [
+                "Unternehmen",
+                "Energiesysteme",
+                "Umwelt"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Umweltpfad ist indirekt und von Investitionsentscheidungen abhängig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Investitionen können mehrere Sektoren erreichen, aber nicht automatisch alle.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Umweltintensität ist nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Investitionsentscheidungen können länger wirken als Zinsänderungen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Viele Finanzierungsentscheidungen sind korrigierbar, Infrastruktur teils weniger.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Verwundbarkeit ist in der Quelle nicht ausgewiesen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt indirekt und ohne belegte Kaskade.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzüberschreitung ist belegt.",
+                "reference_frame": "Umwelt- und Emissionspfade",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Zinsen müssen Investitionsentscheidungen mit relevantem Energiebezug verändern.",
+              "reference_space": "Japanische Wirtschaft",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Finanzierungskosten beeinflussen Umfang und Art von Investitionen.",
+              "source_support": "Die Quelle belegt weder Investitionsänderungen noch Umweltfolgen.",
+              "limitations": "Keine Energie-, Emissions- oder Projektdaten.",
+              "first_order": "Investitionspläne könnten angepasst werden.",
+              "second_order": "Energieverbrauch und Emissionen könnten sich je nach Investitionsrichtung verändern.",
+              "third_order": "Langfristige Infrastrukturpfade könnten Umwelt- und Versorgungssysteme beeinflussen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Belege erlauben eine Richtungsentscheidung für den Umweltpfad.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Nachfragedämpfung mit möglicher Emissionswirkung",
+              "direction": "open",
+              "type": "side_effect",
+              "mechanism": "Höhere Finanzierungskosten könnten Nachfrage und Produktion beeinflussen.",
+              "recipients": [
+                "Industrie",
+                "Energieverbrauch",
+                "Umwelt"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Pfad ist mehrfach vermittelt und ohne Messdaten besonders unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Nachfrageeffekte könnten mehrere Wirtschaftsbereiche erreichen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Intensität ist nicht quantifiziert.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt von Nachfrage und weiterer Geldpolitik ab.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Nachfrageänderungen sind grundsätzlich umkehrbar.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Verwundbarkeit wird nicht konkret beschrieben.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Kein belegter tiefer Systempfad liegt vor.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist nicht konkret angesprochen.",
+                "reference_frame": "Emissionen und Ressourcenverbrauch",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Kreditkosten müssen die gesamtwirtschaftliche Nachfrage messbar verändern.",
+              "reference_space": "Japan",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Nachfrage und Energieverbrauch bewegen sich gemeinsam.",
+              "source_support": "Die Quelle enthält keine Nachfrage- oder Emissionsbeobachtung.",
+              "limitations": "Richtung, Umfang und Verteilung sind offen.",
+              "first_order": "Nachfrage könnte sich verändern.",
+              "second_order": "Energieverbrauch könnte mit Verzögerung reagieren.",
+              "third_order": "Langfristige Emissionspfade könnten beeinflusst werden.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keinen Umweltbeleg.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen gleichwertig belegten positiven oder negativen Umweltpfad; die Einordnung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Finanzierung könnte Energieinvestitionen beeinflussen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Veränderte Finanzierung könnte Energieinvestitionen beeinflussen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle oder demokratische Folge; der Pfad über öffentliche Finanzierungsspielräume bleibt eine Wissenshypothese.",
+          "reviewed_source_ids": [
+            "manager-magazin-news"
+          ],
+          "rationale": "Geldpolitik kann mittelbar den fiskalischen Handlungsspielraum verändern. Ein demokratischer Effekt ist jedoch weder beobachtet noch durch die Quelle belegt.",
+          "primary_paths": [
+            {
+              "label": "Veränderte Zinslast könnte politische Haushaltsräume beeinflussen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Höhere Renditen können die Kosten staatlicher Refinanzierung verändern und damit Prioritätensetzungen beeinflussen.",
+              "recipients": [
+                "öffentliche Haushalte",
+                "Parlament",
+                "Bürgerinnen und Bürger"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist institutionell plausibel, aber von Schuldenstruktur und politischer Reaktion abhängig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Staatliche Haushaltsentscheidungen können viele Menschen erreichen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Belastung des Haushalts ist nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Zinskosten können über Haushaltsjahre wirken.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Budgetentscheidungen und Finanzierung können politisch geändert werden.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Öffentliche Leistungen können bei engem Haushaltsspielraum empfindlich sein.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der institutionelle Pfad ist indirekt und ohne belegte Machtverschiebung.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Einschränkung demokratischer Rechte oder Verfahren ist nicht belegt.",
+                "reference_frame": "öffentliche Rechenschaft und Haushaltsgestaltung",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Höhere Staatsfinanzierungskosten müssen den politischen Haushaltsspielraum tatsächlich einengen.",
+              "reference_space": "Japanische staatliche Haushaltsentscheidungen",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Renditeänderungen werden in den Staatshaushalt weitergegeben.",
+              "source_support": "Die Quelle nennt hohe Renditen für Staatsanleihen, aber keine Haushaltsfolge.",
+              "limitations": "Keine Schuldendaten, Budgetentscheidungen oder institutionellen Beobachtungen.",
+              "first_order": "Zinsausgaben könnten sich verändern.",
+              "second_order": "Prioritäten und Verteilung öffentlicher Mittel könnten politisch umstritten werden.",
+              "third_order": "Anhaltender Finanzdruck könnte Vertrauen oder Korrekturfähigkeit beeinflussen; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen oder institutionellen Belege für diesen demokratischen Pfad liegen vor.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Politischer Druck durch wirtschaftliche Belastungen",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Verteilte finanzielle Belastungen könnten politische Konflikte und Forderungen nach Kursänderung verstärken.",
+              "recipients": [
+                "Regierung",
+                "Parlament",
+                "betroffene Haushalte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Konflikt- und Reaktionspfade sind möglich, aber nicht beobachtet oder quantifiziert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Wirtschaftliche Belastungen können politische Debatten breit erreichen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine konkrete politische Intensität ist belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Politische Reaktionen können kurzfristig bleiben oder anhalten.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Debatten und politische Entscheidungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Besonders belastete Gruppen könnten politisch stärker betroffen sein.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer institutioneller Wandel ist nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete demokratische Schutzgrenze ist betroffen oder belegt.",
+                "reference_frame": "politische Teilhabe und Korrekturfähigkeit",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Wirtschaftliche Folgen müssen politisch sichtbar und konfliktfähig werden.",
+              "reference_space": "Japanischer politischer Diskurs",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Verteilungswirkungen werden politisch zugeschrieben und mobilisiert.",
+              "source_support": "Die Quelle berichtet keine politische Reaktion.",
+              "limitations": "Keine Umfragen, Debattenbelege oder Verhaltensdaten.",
+              "first_order": "Wirtschaftspolitische Debatten könnten zunehmen.",
+              "second_order": "Forderungen nach Anpassung der Geld- oder Fiskalpolitik könnten entstehen.",
+              "third_order": "Institutionelles Vertrauen könnte sich verändern; dafür gibt es keinen Nachweis.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keinen Beleg für politische Reaktionen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es liegt kein gleichwertig belegter positiver oder negativer demokratischer Gegenpfad vor; die Richtung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Zinslast könnte politische Haushaltsräume beeinflussen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Veränderte Zinslast könnte politische Haushaltsräume beeinflussen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T06:16:46.714Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T05:43:00.000Z",
+      "last_updated": "2026-09-18T06:18:46.111Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d9af58b8d5b331c765f5",
+      "case_file": null,
+      "source_published_at": "2026-09-18T05:43:00.000Z",
+      "published_at": "2026-09-18T06:18:46.111Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/politik/weltwirtschaft/japan-notenbank-hebt-leitzins-auf-hoechsten-stand-seit-31-jahren-a-2f9ca989-5f99-4c22-b6d7-06b25d1d26e5",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T05:43:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2d3f98683f6f8ac9",
       "title_image": {
@@ -60820,22 +62708,25 @@
     {
       "story_id": "wt-32f230b755f42144",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32f230b755f42144-dbef57c55e3e8273-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-32f230b755f42144-e2e08bdfa5f18d29-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32f230b755f42144-49fa1244261cc594-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-32f230b755f42144-415ebcaca2d19c10-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32f230b755f42144-d4e90ad0f317018d-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-32f230b755f42144-64329c6f805a4ce6-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-32f230b755f42144-fcb082a113913aad-source.png"
         }
       },
       "slug": "800-milliarden-investitionsbedarf-fur-wassermanagement-f42144",
@@ -65608,22 +67499,25 @@
     {
       "story_id": "wt-068fa5f5aba8a416",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-865321882be00594-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-068fa5f5aba8a416-23bf420b3ec96a65-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-6532d18551f2547b-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-068fa5f5aba8a416-e4c8010770a4a777-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-e9ff5ea85b4f7ce9-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-068fa5f5aba8a416-329cce068341a325-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-068fa5f5aba8a416-6392c4085194a511-source.png"
         }
       },
       "slug": "hessen-plant-1-7-milliarden-euro-neue-schulden-rekordetat-fur-schulen-a8a416",
@@ -86712,22 +88606,25 @@
     {
       "story_id": "wt-5f61f8c5ae4c67bd",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-563aa65479ef1de4-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-cb72ec5657131fa6-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-d7af017f25b00b28-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-a457013e07e03c0a-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-53c478d9d6550236-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-7e12f8d2d3c44377-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5f61f8c5ae4c67bd-f02626cf2cc1620c-source.png"
         }
       },
       "slug": "die-juristische-presseschau-vom-16-september-2026-supreme-court-zu-briefwahl-eu-plant-ki-4c67bd",
