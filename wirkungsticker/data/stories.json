@@ -2,8 +2,1496 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T05:07:45.067Z",
+  "updated_at": "2026-09-18T05:22:24.007Z",
   "stories": [
+    {
+      "story_id": "wt-5ad167748060938a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5ad167748060938a-8c495e378872d643-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5ad167748060938a-97c5bc11812a56fe-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5ad167748060938a-4a999f927bdf5015-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hochwasser-in-hanoi-uberschwemmungen-in-vietnam-drei-tote-und-meterhohe-fluten-60938a",
+      "title": "Laut Tagesspiegel: Hochwasser in Hanoi – drei Tote und 20.000 Häuser unter Wasser",
+      "source_summary": "Der Tagesspiegel berichtet von Überschwemmungen in Hanoi und Nordvietnam. Bewohner kämpfen demnach mit Booten gegen mehr als zwei Meter Wasser auf den Straßen. Autos können in den betroffenen Bereichen nicht wie gewohnt genutzt werden.\n\nNach dem Bericht stehen 20.000 Häuser unter Wasser. Außerdem seien drei Menschen bei einem Erdrutsch gestorben. Die Meldung verbindet die Überflutung mit diesem tödlichen Ereignis, nennt aber keine weiteren Angaben zu den Betroffenen.\n\nDie Angaben stammen aus einer journalistischen Darstellung mit nur einer verfügbaren Herkunft. Ungeklärt bleiben unter anderem der genaue Zeitraum, das Ausmaß der Schäden außerhalb der genannten Häuser und die weitere Entwicklung der Lage.",
+      "summary": "Nach Angaben des Tagesspiegels stehen in Hanoi und Nordvietnam 20.000 Häuser unter Wasser; drei Menschen starben bei einem Erdrutsch. Das Ausmaß der Schäden und die weitere Entwicklung bleiben offen.",
+      "detail_summary": "Der Tagesspiegel berichtet von mehr als zwei Meter hohem Wasser auf Straßen in Hanoi und Nordvietnam. Demnach stehen 20.000 Häuser unter Wasser, und drei Menschen sterben bei einem Erdrutsch. Boote ersetzen in den betroffenen Bereichen den Straßenverkehr. Für Menschen können dadurch Wohnungen, Wege und erreichbare Hilfe ausfallen. Die Meldung beruht auf einer einzelnen journalistischen Quelle; Schäden jenseits der genannten Häuser und die weitere Entwicklung sind nicht belegt.",
+      "why_relevant": "Überflutete Wohnhäuser und ein tödlicher Erdrutsch markieren eine mögliche akute Belastung für Sicherheit, Wohnen, Mobilität und Versorgung. Das Ausmaß bleibt wegen der einzelnen Quelle begrenzt beurteilbar.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über Überschwemmungen in Hanoi und Nordvietnam mit mehr als zwei Meter hohem Wasser auf Straßen, 20.000 überfluteten Häusern und drei Todesfällen bei einem Erdrutsch.",
+        "evaluation_target": {
+          "label": "Überschwemmungslage und ihre möglichen Folgen",
+          "type": "event"
+        },
+        "baseline": "Nutzung von Wohnraum, Straßen und lokaler Versorgung vor der gemeldeten Überflutung.",
+        "counterfactual": "Ohne die Überflutung könnten die genannten Häuser und Straßen voraussichtlich weiter genutzt werden; die Entwicklung ohne zusätzliche Schutz- oder Hilfsmaßnahmen ist nicht belegt.",
+        "reference_frame": [
+          "Schutz von Leben und Gesundheit",
+          "Sicherer Zugang zu Wohnen, Mobilität und Hilfe",
+          "Resilienz lokaler Infrastruktur"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die berichteten Todesfälle und überfluteten Häuser weisen auf mögliche Folgen für Sicherheit, Wohnen, Mobilität und Versorgung hin; Dauer, Verteilung und weitere Schäden bleiben offen.",
+            "planet": "Die Überflutung kann Böden, Gewässer und Siedlungsflächen beanspruchen; ökologische Veränderungen, Verschmutzung und Ursachen sind durch die Quelle nicht belegt.",
+            "democracy": "Eine akute Notlage könnte lokale Verwaltung und Hilfeverteilung beanspruchen; konkrete institutionelle Folgen oder Einschränkungen demokratischer Korrekturfähigkeit sind nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Wasser könnte Wohnhäuser und Verkehrswege unbenutzbar machen; zugleich wird ein tödlicher Erdrutsch berichtet.",
+          "second_order": "Bei anhaltender Überflutung könnten Versorgung, Hilfezugang und lokale Verwaltung belastet werden. Das setzt eine längere Dauer und begrenzte Ausweichmöglichkeiten voraus.",
+          "third_order": "Wiederholte oder lang anhaltende Ereignisse könnten Anpassungs- und Wiederaufbaukapazitäten binden; dafür gibt es in der Quelle keinen Nachweis.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle nennt keine Dauer, keine Verletzten, keine weiteren Schäden und keine institutionellen Folgen.",
+            "Die Nutzung von Booten deutet auf eine verbleibende Mobilität hin.",
+            "Eine unabhängige Bestätigung oder Gegendarstellung liegt nicht vor."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle mit nicht verifizierter Unabhängigkeit vor; eine zusätzliche unabhängige Bestätigung ist nicht geliefert.",
+          "institutional_status": "Es handelt sich um ein berichtetes Ereignis, nicht um eine politische Maßnahme und nicht um eine belegte Änderung des Rechts- oder Verwaltungsstatus."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt die akute Lage, aber nicht Dauer, Verteilung der Schäden oder weitere Versorgungsfolgen; der negative Pfad bleibt bedingt.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Überflutete Häuser und Straßen können Wohnen, Mobilität und Hilfezugang beeinträchtigen. Der Pfad ist plausibel, sein Umfang bleibt wegen der Einzelquelle und fehlender Verlaufsdaten unsicher.",
+            "primary_paths": [
+              {
+                "label": "Überflutete Wohnhäuser und Straßen erschweren Wohnen, Mobilität und Hilfezugang",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wasser in Siedlungs- und Verkehrsflächen kann die Nutzung von Wohnraum und Wegen einschränken.",
+                "recipients": [
+                  "Bewohner überfluteter Häuser",
+                  "Menschen auf lokale Verkehrs- und Versorgungswege angewiesen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die gemeldete Zahl überfluteter Häuser spricht für eine relevante lokale Belastung; Dauer und Ausdehnung fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "20.000 Häuser werden als betroffen berichtet.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Mehr als zwei Meter Wasser auf Straßen kann Nutzung und Sicherheit stark einschränken.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt keine Dauer der Überflutung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vorübergehende Einschränkungen sind plausibel, dauerhafte Schäden aber offen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Bewohner überfluteter Häuser können besonders auf erreichbare Hilfe angewiesen sein.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Wohn- und Verkehrsbeeinträchtigungen können lokale Versorgung koppeln.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Pfad beschreibt mögliche Einschränkungen von Wohnen und Hilfezugang; die berichteten Todesfälle werden getrennt als beobachtete Wirkung erfasst.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt anhaltendes Wasser und fehlende sichere Ausweichwege voraus.",
+                "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+                "time_horizon": "kurzfristig während und nach der Überflutung",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Überflutete Häuser und Straßen sind für ihre Bewohner beziehungsweise Nutzer tatsächlich eingeschränkt.",
+                "source_support": "Die Quelle belegt Wasserhöhe, überflutete Häuser und Nutzung von Booten; sie belegt nicht den vollständigen Hilfe- oder Versorgungsausfall.",
+                "limitations": "Dauer, weitere Opfer, Verletzte und genaue räumliche Verteilung fehlen.",
+                "first_order": "Wohnraum und Wege könnten unmittelbar schlechter nutzbar sein.",
+                "second_order": "Bei anhaltender Überflutung könnte der Zugang zu Versorgung und Hilfe erschwert werden.",
+                "third_order": "Längere Einschränkungen könnten lokale Haushalte und Wiederaufbaukapazitäten belasten; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche unabhängige Evidenz in der gelieferten Quelle; Umfang und Dauer bleiben Wissensgrenze.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist kein vergleichbarer positiver Hauptpfad belegt; die negative Möglichkeit bleibt wegen fehlender Angaben zu Dauer und Verteilung eingeschränkt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Überflutete Wohnhäuser und Straßen erschweren Wohnen, Mobilität und Hilfezugang",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+                "direction": "negative",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und Wohnraum",
+                "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+                "observed_at": "im gelieferten Bericht",
+                "temporal_status": "ex_post",
+                "mechanism": "Erdrutsch und Überschwemmung werden als Bestandteile der gemeldeten Hochwasserlage beschrieben; eine weitergehende Kausalitätsprüfung liegt nicht vor.",
+                "recipients": [
+                  "drei Verstorbene und ihre Angehörigen",
+                  "Bewohner der 20.000 überfluteten Häuser"
+                ],
+                "time_horizon": "zum Zeitpunkt der Berichterstattung und kurzfristig danach",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "20.000 Häuser werden als unter Wasser berichtet.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Drei Todesfälle und mehr als zwei Meter Wasser markieren eine schwere akute Belastung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Überflutung wird nicht genannt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Todesfälle sind irreversibel; Schäden an Häusern bleiben im Umfang offen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Bewohner überfluteter Häuser sind unmittelbar von Wohn- und Sicherheitsrisiken betroffen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die berichteten Schäden können lokale Mobilität und Versorgung mitbetreffen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Die berichteten Todesfälle markieren eine eingetretene Verletzung des Schutzguts Leben.",
+                  "reference_frame": "Schutz von Leben und sicherem Wohnen",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+              "direction": "negative",
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und Wohnraum",
+              "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+              "observed_at": "im gelieferten Bericht",
+              "temporal_status": "ex_post",
+              "mechanism": "Erdrutsch und Überschwemmung werden als Bestandteile der gemeldeten Hochwasserlage beschrieben; eine weitergehende Kausalitätsprüfung liegt nicht vor.",
+              "recipients": [
+                "drei Verstorbene und ihre Angehörigen",
+                "Bewohner der 20.000 überfluteten Häuser"
+              ],
+              "time_horizon": "zum Zeitpunkt der Berichterstattung und kurzfristig danach",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "20.000 Häuser werden als unter Wasser berichtet.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Drei Todesfälle und mehr als zwei Meter Wasser markieren eine schwere akute Belastung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Überflutung wird nicht genannt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Todesfälle sind irreversibel; Schäden an Häusern bleiben im Umfang offen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Bewohner überfluteter Häuser sind unmittelbar von Wohn- und Sicherheitsrisiken betroffen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die berichteten Schäden können lokale Mobilität und Versorgung mitbetreffen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die berichteten Todesfälle markieren eine eingetretene Verletzung des Schutzguts Leben.",
+                "reference_frame": "Schutz von Leben und sicherem Wohnen",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt die Überflutung, misst aber keine ökologischen Veränderungen; ökologische Folgen bleiben daher bedingt.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Überflutetes Siedlungsland kann Böden und Gewässer beanspruchen, doch die Quelle liefert keine Angaben zu Verschmutzung, Erosion oder Dauer.",
+            "primary_paths": [
+              {
+                "label": "Überflutung beansprucht Siedlungsflächen und lokale Gewässer",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Große Wassermengen können Siedlungsflächen, Böden und Gewässer vorübergehend verändern.",
+                "recipients": [
+                  "lokale Böden und Gewässer",
+                  "Bewohner der betroffenen Siedlungsflächen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine lokale Belastung ist möglich, aber konkrete ökologische Schäden sind nicht berichtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Meldung beschreibt mehrere betroffene Siedlungsbereiche.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ökologische Intensität wird nicht gemessen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Wasserbelastung bleibt unbekannt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Dauerhafte ökologische Veränderungen sind nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Verwundbarkeit wird nicht beschrieben.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Umweltpfad ist möglich, aber nicht weiter belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle nennt keine konkrete Verletzung einer ökologischen Schutzgrenze.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt eine ausreichend lange oder schadstoffbelastete Überflutung voraus.",
+                "reference_space": "überflutete Siedlungsflächen in Hanoi und Nordvietnam",
+                "time_horizon": "während und nach der Überflutung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wasser kann lokal Stoffe oder Sedimente verlagern.",
+                "source_support": "Die Quelle belegt Wasser auf Straßen und in Häusern, nicht ökologische Schäden.",
+                "limitations": "Keine Messwerte zu Wasserqualität, Erosion, Abfällen oder Wiederherstellung.",
+                "first_order": "Siedlungsflächen könnten ökologisch beansprucht werden.",
+                "second_order": "Verlagerte Stoffe könnten lokale Gewässer belasten; das ist nicht belegt.",
+                "third_order": "Eine dauerhafte ökologische Veränderung ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Messung oder unabhängige Fachquelle ist geliefert; Richtung und Umfang bleiben unsicher.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven ökologischen Hauptpfad; die negative Möglichkeit bleibt wegen fehlender Messdaten begrenzt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Überflutung beansprucht Siedlungsflächen und lokale Gewässer",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Überflutung beansprucht Siedlungsflächen und lokale Gewässer",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle berichtet keine politischen oder institutionellen Reaktionen; demokratische Folgen können nur als bedingter Verwaltungspfad benannt werden.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Eine akute Flut könnte lokale Behörden bei Hilfe, Evakuierung und Ressourcenverteilung beanspruchen. Ob dies Entscheidungsstrukturen oder Vertrauen verändert, ist nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Krisenhilfe könnte lokale Verwaltung und Verteilung von Ressourcen beanspruchen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine akute Notlage kann zusätzliche Entscheidungen über Hilfe, Verkehrswege und Schutzmaßnahmen erforderlich machen.",
+                "recipients": [
+                  "lokale Verwaltungen",
+                  "betroffene Bewohner"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Verwaltungsdruck ist möglich, aber Reaktionen und institutionelle Folgen werden nicht berichtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle grenzt den Verwaltungsraum nicht aus.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Belastung der Verwaltung ist möglich, aber nicht gemessen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des Krisenmanagements ist unbekannt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Dauerhafte institutionelle Veränderungen sind nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene könnten von erreichbarer und fairer Hilfe abhängen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Verwaltungspfad bleibt lokal und indirekt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten wird nicht berichtet.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt eine anhaltende Lage und Entscheidungen über Hilfe oder Evakuierung voraus.",
+                "reference_space": "lokale Verwaltung in Hanoi und Nordvietnam",
+                "time_horizon": "während der Krisenbewältigung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Lokale Behörden müssen knappe Ressourcen und Zugang zu betroffenen Gebieten organisieren.",
+                "source_support": "Die Quelle berichtet die Flutlage, nicht Verwaltungshandeln oder politische Reaktionen.",
+                "limitations": "Keine Angaben zu Behörden, Hilfsentscheidungen, Beteiligung, Vertrauen oder Rechtsbeschränkungen.",
+                "first_order": "Lokale Entscheidungen über Zugang und Hilfe könnten dringlicher werden.",
+                "second_order": "Ungleiche Hilfe könnte Vertrauen und Rechenschaft beeinflussen; das ist offen.",
+                "third_order": "Eine strukturelle Veränderung demokratischer Institutionen ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine Angaben zu Verwaltungshandeln oder demokratischen Folgen; der Pfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Hauptpfad; institutionelle Folgen bleiben offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Krisenhilfe könnte lokale Verwaltung und Verteilung von Ressourcen beanspruchen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Krisenhilfe könnte lokale Verwaltung und Verteilung von Ressourcen beanspruchen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+            "direction": "negative",
+            "source_ids": [
+              "tagesspiegel-home"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und Wohnraum",
+            "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+            "observed_at": "im gelieferten Bericht",
+            "temporal_status": "ex_post",
+            "mechanism": "Erdrutsch und Überschwemmung werden als Bestandteile der gemeldeten Hochwasserlage beschrieben; eine weitergehende Kausalitätsprüfung liegt nicht vor.",
+            "recipients": [
+              "drei Verstorbene und ihre Angehörigen",
+              "Bewohner der 20.000 überfluteten Häuser"
+            ],
+            "time_horizon": "zum Zeitpunkt der Berichterstattung und kurzfristig danach",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "20.000 Häuser werden als unter Wasser berichtet.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Drei Todesfälle und mehr als zwei Meter Wasser markieren eine schwere akute Belastung.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer der Überflutung wird nicht genannt.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Todesfälle sind irreversibel; Schäden an Häusern bleiben im Umfang offen.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Bewohner überfluteter Häuser sind unmittelbar von Wohn- und Sicherheitsrisiken betroffen.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Die berichteten Schäden können lokale Mobilität und Versorgung mitbetreffen.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Die berichteten Todesfälle markieren eine eingetretene Verletzung des Schutzguts Leben.",
+              "reference_frame": "Schutz von Leben und sicherem Wohnen",
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 17,
+              "divisor": 6,
+              "raw": 2.8333333333333335,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T05:25:50.914Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Journalistischer Bericht über mehr als zwei Meter Wasser auf Straßen, 20.000 überflutete Häuser und drei Todesfälle bei einem Erdrutsch."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt die akute Lage, aber nicht Dauer, Verteilung der Schäden oder weitere Versorgungsfolgen; der negative Pfad bleibt bedingt.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Überflutete Häuser und Straßen können Wohnen, Mobilität und Hilfezugang beeinträchtigen. Der Pfad ist plausibel, sein Umfang bleibt wegen der Einzelquelle und fehlender Verlaufsdaten unsicher.",
+          "primary_paths": [
+            {
+              "label": "Überflutete Wohnhäuser und Straßen erschweren Wohnen, Mobilität und Hilfezugang",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wasser in Siedlungs- und Verkehrsflächen kann die Nutzung von Wohnraum und Wegen einschränken.",
+              "recipients": [
+                "Bewohner überfluteter Häuser",
+                "Menschen auf lokale Verkehrs- und Versorgungswege angewiesen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die gemeldete Zahl überfluteter Häuser spricht für eine relevante lokale Belastung; Dauer und Ausdehnung fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "20.000 Häuser werden als betroffen berichtet.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Mehr als zwei Meter Wasser auf Straßen kann Nutzung und Sicherheit stark einschränken.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt keine Dauer der Überflutung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vorübergehende Einschränkungen sind plausibel, dauerhafte Schäden aber offen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Bewohner überfluteter Häuser können besonders auf erreichbare Hilfe angewiesen sein.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Wohn- und Verkehrsbeeinträchtigungen können lokale Versorgung koppeln.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Pfad beschreibt mögliche Einschränkungen von Wohnen und Hilfezugang; die berichteten Todesfälle werden getrennt als beobachtete Wirkung erfasst.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt anhaltendes Wasser und fehlende sichere Ausweichwege voraus.",
+              "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+              "time_horizon": "kurzfristig während und nach der Überflutung",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Überflutete Häuser und Straßen sind für ihre Bewohner beziehungsweise Nutzer tatsächlich eingeschränkt.",
+              "source_support": "Die Quelle belegt Wasserhöhe, überflutete Häuser und Nutzung von Booten; sie belegt nicht den vollständigen Hilfe- oder Versorgungsausfall.",
+              "limitations": "Dauer, weitere Opfer, Verletzte und genaue räumliche Verteilung fehlen.",
+              "first_order": "Wohnraum und Wege könnten unmittelbar schlechter nutzbar sein.",
+              "second_order": "Bei anhaltender Überflutung könnte der Zugang zu Versorgung und Hilfe erschwert werden.",
+              "third_order": "Längere Einschränkungen könnten lokale Haushalte und Wiederaufbaukapazitäten belasten; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche unabhängige Evidenz in der gelieferten Quelle; Umfang und Dauer bleiben Wissensgrenze.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist kein vergleichbarer positiver Hauptpfad belegt; die negative Möglichkeit bleibt wegen fehlender Angaben zu Dauer und Verteilung eingeschränkt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Überflutete Wohnhäuser und Straßen erschweren Wohnen, Mobilität und Hilfezugang",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+              "direction": "negative",
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und Wohnraum",
+              "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+              "observed_at": "im gelieferten Bericht",
+              "temporal_status": "ex_post",
+              "mechanism": "Erdrutsch und Überschwemmung werden als Bestandteile der gemeldeten Hochwasserlage beschrieben; eine weitergehende Kausalitätsprüfung liegt nicht vor.",
+              "recipients": [
+                "drei Verstorbene und ihre Angehörigen",
+                "Bewohner der 20.000 überfluteten Häuser"
+              ],
+              "time_horizon": "zum Zeitpunkt der Berichterstattung und kurzfristig danach",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "20.000 Häuser werden als unter Wasser berichtet.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Drei Todesfälle und mehr als zwei Meter Wasser markieren eine schwere akute Belastung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Überflutung wird nicht genannt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Todesfälle sind irreversibel; Schäden an Häusern bleiben im Umfang offen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Bewohner überfluteter Häuser sind unmittelbar von Wohn- und Sicherheitsrisiken betroffen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die berichteten Schäden können lokale Mobilität und Versorgung mitbetreffen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die berichteten Todesfälle markieren eine eingetretene Verletzung des Schutzguts Leben.",
+                "reference_frame": "Schutz von Leben und sicherem Wohnen",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+            "direction": "negative",
+            "source_ids": [
+              "tagesspiegel-home"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und Wohnraum",
+            "reference_space": "Hanoi und Nordvietnam, soweit im Bericht beschrieben",
+            "observed_at": "im gelieferten Bericht",
+            "temporal_status": "ex_post",
+            "mechanism": "Erdrutsch und Überschwemmung werden als Bestandteile der gemeldeten Hochwasserlage beschrieben; eine weitergehende Kausalitätsprüfung liegt nicht vor.",
+            "recipients": [
+              "drei Verstorbene und ihre Angehörigen",
+              "Bewohner der 20.000 überfluteten Häuser"
+            ],
+            "time_horizon": "zum Zeitpunkt der Berichterstattung und kurzfristig danach",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "20.000 Häuser werden als unter Wasser berichtet.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Drei Todesfälle und mehr als zwei Meter Wasser markieren eine schwere akute Belastung.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer der Überflutung wird nicht genannt.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Todesfälle sind irreversibel; Schäden an Häusern bleiben im Umfang offen.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Bewohner überfluteter Häuser sind unmittelbar von Wohn- und Sicherheitsrisiken betroffen.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Die berichteten Schäden können lokale Mobilität und Versorgung mitbetreffen.",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Die berichteten Todesfälle markieren eine eingetretene Verletzung des Schutzguts Leben.",
+              "reference_frame": "Schutz von Leben und sicherem Wohnen",
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 17,
+              "divisor": 6,
+              "raw": 2.8333333333333335,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Der Tagesspiegel berichtet drei Todesfälle bei einem Erdrutsch und 20.000 Häuser unter Wasser.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt die Überflutung, misst aber keine ökologischen Veränderungen; ökologische Folgen bleiben daher bedingt.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Überflutetes Siedlungsland kann Böden und Gewässer beanspruchen, doch die Quelle liefert keine Angaben zu Verschmutzung, Erosion oder Dauer.",
+          "primary_paths": [
+            {
+              "label": "Überflutung beansprucht Siedlungsflächen und lokale Gewässer",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Große Wassermengen können Siedlungsflächen, Böden und Gewässer vorübergehend verändern.",
+              "recipients": [
+                "lokale Böden und Gewässer",
+                "Bewohner der betroffenen Siedlungsflächen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine lokale Belastung ist möglich, aber konkrete ökologische Schäden sind nicht berichtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Meldung beschreibt mehrere betroffene Siedlungsbereiche.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ökologische Intensität wird nicht gemessen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Wasserbelastung bleibt unbekannt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Dauerhafte ökologische Veränderungen sind nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Verwundbarkeit wird nicht beschrieben.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Umweltpfad ist möglich, aber nicht weiter belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle nennt keine konkrete Verletzung einer ökologischen Schutzgrenze.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt eine ausreichend lange oder schadstoffbelastete Überflutung voraus.",
+              "reference_space": "überflutete Siedlungsflächen in Hanoi und Nordvietnam",
+              "time_horizon": "während und nach der Überflutung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wasser kann lokal Stoffe oder Sedimente verlagern.",
+              "source_support": "Die Quelle belegt Wasser auf Straßen und in Häusern, nicht ökologische Schäden.",
+              "limitations": "Keine Messwerte zu Wasserqualität, Erosion, Abfällen oder Wiederherstellung.",
+              "first_order": "Siedlungsflächen könnten ökologisch beansprucht werden.",
+              "second_order": "Verlagerte Stoffe könnten lokale Gewässer belasten; das ist nicht belegt.",
+              "third_order": "Eine dauerhafte ökologische Veränderung ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Messung oder unabhängige Fachquelle ist geliefert; Richtung und Umfang bleiben unsicher.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven ökologischen Hauptpfad; die negative Möglichkeit bleibt wegen fehlender Messdaten begrenzt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Überflutung beansprucht Siedlungsflächen und lokale Gewässer",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Überflutung beansprucht Siedlungsflächen und lokale Gewässer",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle berichtet keine politischen oder institutionellen Reaktionen; demokratische Folgen können nur als bedingter Verwaltungspfad benannt werden.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Eine akute Flut könnte lokale Behörden bei Hilfe, Evakuierung und Ressourcenverteilung beanspruchen. Ob dies Entscheidungsstrukturen oder Vertrauen verändert, ist nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Krisenhilfe könnte lokale Verwaltung und Verteilung von Ressourcen beanspruchen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine akute Notlage kann zusätzliche Entscheidungen über Hilfe, Verkehrswege und Schutzmaßnahmen erforderlich machen.",
+              "recipients": [
+                "lokale Verwaltungen",
+                "betroffene Bewohner"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Verwaltungsdruck ist möglich, aber Reaktionen und institutionelle Folgen werden nicht berichtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle grenzt den Verwaltungsraum nicht aus.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Belastung der Verwaltung ist möglich, aber nicht gemessen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des Krisenmanagements ist unbekannt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Dauerhafte institutionelle Veränderungen sind nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene könnten von erreichbarer und fairer Hilfe abhängen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Verwaltungspfad bleibt lokal und indirekt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten wird nicht berichtet.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt eine anhaltende Lage und Entscheidungen über Hilfe oder Evakuierung voraus.",
+              "reference_space": "lokale Verwaltung in Hanoi und Nordvietnam",
+              "time_horizon": "während der Krisenbewältigung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Lokale Behörden müssen knappe Ressourcen und Zugang zu betroffenen Gebieten organisieren.",
+              "source_support": "Die Quelle berichtet die Flutlage, nicht Verwaltungshandeln oder politische Reaktionen.",
+              "limitations": "Keine Angaben zu Behörden, Hilfsentscheidungen, Beteiligung, Vertrauen oder Rechtsbeschränkungen.",
+              "first_order": "Lokale Entscheidungen über Zugang und Hilfe könnten dringlicher werden.",
+              "second_order": "Ungleiche Hilfe könnte Vertrauen und Rechenschaft beeinflussen; das ist offen.",
+              "third_order": "Eine strukturelle Veränderung demokratischer Institutionen ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine Angaben zu Verwaltungshandeln oder demokratischen Folgen; der Pfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Hauptpfad; institutionelle Folgen bleiben offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Krisenhilfe könnte lokale Verwaltung und Verteilung von Ressourcen beanspruchen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Krisenhilfe könnte lokale Verwaltung und Verteilung von Ressourcen beanspruchen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T05:22:24.007Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T05:03:14.000Z",
+      "last_updated": "2026-09-18T05:25:50.908Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-bf9a04f3667f9f5ddc62",
+      "case_file": null,
+      "source_published_at": "2026-09-18T05:03:14.000Z",
+      "published_at": "2026-09-18T05:25:50.908Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-hochwasser-in-hanoi-uberschwemmungen-in-vietnam-drei-tote-und-meterhohe-fluten-16067901.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T05:03:14.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6af9fdff824b9a4c",
       "title_image": {
