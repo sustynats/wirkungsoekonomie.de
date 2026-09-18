@@ -2,8 +2,1470 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T07:07:23.680Z",
+  "updated_at": "2026-09-18T07:22:24.849Z",
   "stories": [
+    {
+      "story_id": "wt-cc54d157ba3a63c6",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-cc54d157ba3a63c6-a3c74fe520a0c70a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-cc54d157ba3a63c6-eef4e69e3c9ac0c9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-cc54d157ba3a63c6-6611711edf8f1659-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "polizei-einsatz-schusse-auf-haus-in-koln-mulheim-3a63c6",
+      "title": "Laut WDR: Polizei-Einsatz nach Schüssen auf Haus in Köln-Mülheim",
+      "source_summary": "Der WDR berichtet von einem laufenden Polizei-Einsatz in Köln-Mülheim. Nach dem vorliegenden Auszug soll es dort am frühen Freitagmorgen Schüsse auf ein Haus gegeben haben.\n\nDer Auszug nennt keine Angaben zu Verletzten, Tatverdächtigen, Hintergründen oder möglichen Schäden am Gebäude. Auch zur Dauer und zum Umfang des Einsatzes enthält das Material keine näheren Informationen.\n\nDie Meldung beruht auf einer journalistischen Darstellung des WDR. Eine unabhängige Bestätigung oder ein ausführlicher Originalbericht der Polizei liegt in der vorliegenden Quellenakte nicht vor; der Sachverhalt bleibt deshalb in wichtigen Punkten offen.",
+      "summary": "In Köln-Mülheim läuft laut WDR ein Polizei-Einsatz nach Schüssen auf ein Haus. Zu Verletzten, Verdächtigen und Hintergründen liegen im vorliegenden Auszug keine Angaben vor.",
+      "detail_summary": "Der WDR berichtet über einen laufenden Polizei-Einsatz in Köln-Mülheim. Anlass sollen Schüsse auf ein Haus am frühen Freitagmorgen gewesen sein. Damit ist ein akuter Sicherheitsvorfall als Nachrichtenkern belegt, nicht aber dessen Ursache oder Ausmaß. Der vorliegende Auszug nennt keine Verletzten, Tatverdächtigen oder Schäden. Möglich sind kurzfristige Folgen für Anwohner und Einsatzkräfte, doch dafür gibt es noch keine Mess- oder Beobachtungsdaten. Weitere Angaben der Polizei könnten den Sachverhalt einordnen.",
+      "why_relevant": "Schüsse auf ein Wohnhaus und ein laufender Einsatz betreffen die akute öffentliche Sicherheit. Das Ausmaß und mögliche Folgen sind noch ungeklärt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über Schüsse auf ein Haus und einen laufenden Polizei-Einsatz in Köln-Mülheim",
+        "evaluation_target": {
+          "label": "akuter lokaler Sicherheitsvorfall und Polizeieinsatz",
+          "type": "event"
+        },
+        "baseline": "Vor dem berichteten Vorfall bestand im konkret beschriebenen Umfeld kein aus der Quelle belegter laufender Polizeieinsatz.",
+        "counterfactual": "Ohne den Vorfall und den Einsatz gäbe es nach dem vorliegenden Material keine daraus ableitbare kurzfristige Einsatz- oder Informationsdynamik.",
+        "reference_frame": [
+          "Schutz von Anwohnern und Einsatzkräften",
+          "öffentliche Sicherheit",
+          "rechtsstaatliche und transparente Information"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche kurzfristige Auswirkungen auf Sicherheit, Bewegungsfreiheit und Verunsicherung im Umfeld werden modelliert; Verletzungen oder konkrete Schäden sind nicht belegt.",
+            "planet": "Für ökologische Folgen, Ressourcenverbrauch oder Belastungen liegen keine belastbaren Hinweise vor; ein kleiner lokaler Einsatzpfad bleibt möglich.",
+            "democracy": "Transparente behördliche Information könnte die Korrekturfähigkeit der öffentlichen Einordnung unterstützen; eine institutionelle oder politische Folge ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Der berichtete Einsatz könnte kurzfristig die Sicherheitslage und Zugänglichkeit im unmittelbaren Umfeld beeinflussen.",
+          "second_order": "Weitere behördliche Angaben könnten Unsicherheit reduzieren oder bei neuen Befunden die öffentliche Bewertung verändern.",
+          "third_order": "Eine über den lokalen Vorfall hinausgehende institutionelle oder gesellschaftliche Kaskade bleibt ohne weitere Fakten spekulativ.",
+          "enablement": [],
+          "counter_evidence": [
+            "Der Quellenabschnitt nennt keine Verletzten, Schäden, Absperrungen oder weitergehenden Folgen.",
+            "Es liegt nur eine journalistische Quelle ohne unabhängige Bestätigung vor.",
+            "Für planetare Folgen gibt es keinen konkreten Beleg."
+          ],
+          "source_independence": "Nur eine Quelle ist geliefert. Die Unabhängigkeit ist nicht etabliert; die Quelle ist als journalistische Sekundärquelle gekennzeichnet.",
+          "institutional_status": "Ein laufender Polizeieinsatz wird berichtet. Rechtlicher Status, Einsatzumfang und behördliche Entscheidungen sind nicht näher belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den Einsatz und die Schüsse, aber keine Verletzungen, Schäden oder konkreten Einschränkungen. Der mögliche lokale Sicherheitspfad bleibt deshalb niedrig ausgeprägt und unsicher.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Ein Schusswaffenvorfall an einem Wohnhaus kann kurzfristig Risiken und Einschränkungen für Anwohner erzeugen. Die Richtung ist als mögliches Belastungsrisiko modelliert; das Ausmaß ist wegen fehlender Angaben begrenzt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche kurzfristige Belastung der Sicherheit im Umfeld",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein laufender Polizeieinsatz nach Schüssen könnte Zugänge, Bewegungen und das Sicherheitsgefühl im unmittelbaren Umfeld beeinflussen.",
+                "recipients": [
+                  "Anwohner",
+                  "Einsatzkräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Pfad ist lokal und kurzfristig, aber Angaben zu konkreten Folgen fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Quellenbezug beschränkt den möglichen Wirkungsraum auf das lokale Umfeld.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Schüsse auf ein Haus können eine erhebliche lokale Sicherheitsbelastung bedeuten.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Einsatzdauer und die Dauer möglicher Einschränkungen sind unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Dauerhafte menschliche Folgen sind im Quellenmaterial nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Bewohner eines betroffenen Hauses könnten dem Ereignis unmittelbar ausgesetzt sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine vertiefte soziale oder institutionelle Wirkung ist nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung oder schwere Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": "Schutz von Anwohnern vor unmittelbarer Gewalt",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der Einsatz tatsächlich mit einer relevanten Gefährdung oder lokalen Einschränkung verbunden ist.",
+                "reference_space": "Köln-Mülheim, insbesondere das Umfeld des betroffenen Hauses",
+                "time_horizon": "kurzfristig während und unmittelbar nach dem Einsatz",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der berichtete Einsatz findet im beschriebenen Umfeld statt und kann dort polizeiliche Maßnahmen auslösen.",
+                "source_support": "Die Quelle belegt nur Einsatz und Schüsse, nicht die Folge auf Anwohner.",
+                "limitations": "Keine Daten zu Verletzten, Schäden, Absperrungen, Dauer oder Betroffenenzahl.",
+                "first_order": "Mögliche kurzfristige Einschränkung und Verunsicherung im Umfeld.",
+                "second_order": "Möglicher zusätzlicher Informationsbedarf bei Anwohnern.",
+                "third_order": "Eine dauerhafte Veränderung des Sicherheitsverhaltens ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen Angaben im gelieferten Material; Eintritt und Umfang des Pfads bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Belastung von Einsatzkräften",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Ein laufender Einsatz nach Schüssen könnte Personal und Ressourcen der Einsatzkräfte binden.",
+                "recipients": [
+                  "Einsatzkräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Einsatz ist berichtet, sein Umfang und seine Dauer sind aber unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Empfängerkreis bleibt auf den Einsatz beschränkt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Belastung ist möglich, konkrete Intensität wird nicht genannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Zur Dauer des Einsatzes liegen keine Angaben vor.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Dauerhafte Folgen für Einsatzkräfte sind nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Einsatzkräfte können bei Schussvorfällen besonderen Risiken ausgesetzt sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine systemische Ressourcenfolge ist nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung oder schwere Schädigung von Einsatzkräften ist nicht berichtet.",
+                  "reference_frame": "Schutz von Einsatzkräften",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt einen tatsächlich umfangreichen oder länger dauernden Einsatz voraus.",
+                "reference_space": "Köln-Mülheim",
+                "time_horizon": "während des laufenden Einsatzes",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein berichteter Polizeieinsatz bindet zumindest vorübergehend Personal.",
+                "source_support": "Die Quelle bestätigt den Einsatz, nicht seine Ressourcenfolgen.",
+                "limitations": "Keine Angaben zu Personalstärke, Dauer oder Verletzungen.",
+                "first_order": "Mögliche zusätzliche Belastung des eingesetzten Personals.",
+                "second_order": "Keine belastbare Aussage zu Auswirkungen auf andere Einsätze.",
+                "third_order": "Keine belegte systemische Folge.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keine Informationen zum Umfang oder zu Folgen für Einsatzkräfte.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein belastbarer positiver Gegenpfad ist nicht belegt; mögliche Schutzwirkung des Einsatzes wird nicht als Ausgleich für ein ungeklärtes Sicherheitsrisiko gewertet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche kurzfristige Belastung der Sicherheit im Umfeld",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche kurzfristige Belastung der Sicherheit im Umfeld",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle enthält keinen belastbaren Hinweis auf ökologische Veränderungen, Emissionen, Schäden oder Ressourcenfolgen. Der planetare Pfad ist daher nicht inhaltlich bewertbar und wird begründet vernachlässigbar modelliert.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Für planetare Wirkungen gibt es im vorliegenden Ereignisauszug keinen konkreten Anknüpfungspunkt. Ein kleiner Ressourcenverbrauch des Einsatzes wäre nicht quantifizierbar und nicht als materielle Wirkung belegt.",
+            "primary_paths": [
+              {
+                "label": "Keine belastbar ableitbare planetare Zustandsänderung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Der Bericht beschreibt einen lokalen Polizeieinsatz, ohne ökologische Zustandsänderung oder relevante Umweltbelastung zu nennen.",
+                "recipients": [
+                  "lokale Umwelt"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im gelieferten Material ist kein materieller planetarer Wirkpfad erkennbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Wirkungsraum ist in der Quelle benannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine Umweltbelastung oder Zustandsänderung ist belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Dauer einer ökologischen Wirkung ist angegeben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltfolge ist beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders verletzliche Umweltkomponente ist genannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemwirkung ist aus dem Auszug ableitbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine ökologische Schutzgrenze betroffen oder beschrieben.",
+                  "reference_frame": "lokale Umwelt",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Ein planetarer Pfad würde konkrete Umwelt- oder Ressourceninformationen voraussetzen.",
+                "reference_space": "Köln-Mülheim und Umgebung",
+                "time_horizon": "offen",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Keine über den Quelleninhalt hinausgehenden Umweltfolgen werden angenommen.",
+                "source_support": "Die Quelle trägt keine planetare Wirkungsbehauptung.",
+                "limitations": "Keine Daten zu Schäden, Emissionen, Ressourcenverbrauch oder Umweltbelastungen.",
+                "first_order": "Keine belastbar modellierbare ökologische Zustandsänderung.",
+                "second_order": "Keine belastbar modellierbare ökologische Folge.",
+                "third_order": "Keine belastbar modellierbare systemische Umweltfolge.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung des gelieferten Materials ergab keinen planetaren Folgenbeleg.",
+                "negligibility_rationale": "Im abgegrenzten lokalen Ereignisrahmen ist keine materielle planetare Zustandsänderung belegt oder plausibel spezifiziert.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mangels eines belegten planetaren Hauptpfads ist keine materielle Abwägung erforderlich."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine belastbar ableitbare planetare Zustandsänderung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine belastbar ableitbare planetare Zustandsänderung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle Entscheidung, politische Reaktion oder Veränderung des Vertrauens. Möglich ist lediglich ein begrenzter Informations- und Rechenschaftspfad; sein Eintritt bleibt offen.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Ein akuter Sicherheitsbericht kann Informationsbedarf und Nachfrage nach behördlicher Einordnung auslösen. Für eine demokratische Zustandsänderung fehlen jedoch Angaben zu Kommunikation, Kontroversen oder institutionellen Folgen.",
+            "primary_paths": [
+              {
+                "label": "Möglicher kurzfristiger Informations- und Rechenschaftsbedarf",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Der Bericht über einen laufenden Einsatz könnte die Nachfrage nach nachvollziehbaren behördlichen Angaben zu Ablauf und Gefahrenlage erhöhen.",
+                "recipients": [
+                  "Anwohner",
+                  "lokale Öffentlichkeit",
+                  "Behörden"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ein Informationspfad ist denkbar, aber weder Nachfrage noch institutionelle Reaktion sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Nachrichtenkern ist lokal auf Köln-Mülheim bezogen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der mögliche Informationsbedarf ist vorhanden, seine Stärke aber unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Dauer einer öffentlichen oder institutionellen Reaktion ist belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine dauerhafte demokratische Veränderung ist beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene Anwohner könnten auf verlässliche Informationen angewiesen sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine Veränderung institutioneller Strukturen ist nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder institutionelle Beeinträchtigung ist nicht belegt.",
+                  "reference_frame": "transparente behördliche Information und öffentliche Rechenschaft",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Behörden weitere Informationen bereitstellen und diese öffentlich nachgefragt werden.",
+                "reference_space": "lokale Öffentlichkeit in Köln-Mülheim",
+                "time_horizon": "kurzfristig nach Bekanntwerden des Vorfalls",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Informationen über einen laufenden Einsatz können grundsätzlich Nachfrage nach Einordnung erzeugen.",
+                "source_support": "Die Quelle berichtet das Ereignis, nicht seine demokratische Wirkung.",
+                "limitations": "Keine Daten zu öffentlicher Reaktion, behördlicher Kommunikation, Vertrauen oder politischer Debatte.",
+                "first_order": "Möglicher Bedarf an weiteren behördlichen Informationen.",
+                "second_order": "Mögliche Veränderung der öffentlichen Einordnung bei neuen Fakten.",
+                "third_order": "Keine belastbare Grundlage für Aussagen über Institutionen, Vertrauen oder politische Entscheidungen.",
+                "research_pass": "second_pass",
+                "research_result": "Der gelieferte Quellenbestand enthält keine Angaben zu öffentlicher Resonanz oder institutionellen Folgen.",
+                "negligibility_rationale": "Für eine messbare demokratische Zustandsänderung fehlen im Quellenbestand konkrete Beobachtungen; der mögliche Informationspfad bleibt unterhalb einer belastbaren Wirkungseinstufung.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 3,
+                  "divisor": 6,
+                  "raw": 0.5,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Verunsicherung durch unvollständige Frühinformationen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Ein knapper Bericht ohne Angaben zu Ursache und Ausmaß könnte vorübergehend Raum für ungesicherte Einordnungen lassen.",
+                "recipients": [
+                  "lokale Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der kommunikative Risikopfad ist möglich, aber weder Verbreitung noch Reaktion sind beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Gegenstand ist räumlich und thematisch begrenzt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Informationslücke kann Unsicherheit erzeugen, ihre Intensität ist unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Zur Dauer einer möglichen Verunsicherung gibt es keine Angaben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte demokratische Folge ist nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Menschen im unmittelbaren Umfeld könnten besonders auf verlässliche Informationen angewiesen sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine vertiefte Veränderung von Diskurs oder Institutionen ist belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": "verlässliche öffentliche Information",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine öffentliche Weiterverbreitung ohne zeitnahe Ergänzung belastbarer Informationen voraus.",
+                "reference_space": "lokale Öffentlichkeit",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unvollständige frühe Berichte können prinzipiell zu offenen Fragen führen.",
+                "source_support": "Die Quelle enthält offene Punkte, belegt aber keine tatsächliche Verunsicherung.",
+                "limitations": "Keine Publikumsdaten, keine Anschlusskommunikation und keine Beobachtung einer Diskurswirkung.",
+                "first_order": "Mögliche offene Fragen zum Vorfall.",
+                "second_order": "Mögliche Nachfrage nach behördlicher Präzisierung.",
+                "third_order": "Keine belegte Normalisierung oder Polarisierung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Resonanz- oder Diskursdaten im gelieferten Material.",
+                "negligibility_rationale": "Eine eingetretene demokratische Wirkung ist nicht beobachtet; der mögliche kommunikative Nebenpfad bleibt unterhalb einer materiellen Einstufung.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 3,
+                  "divisor": 6,
+                  "raw": 0.5,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Hauptpfad mit materieller Tragweite; die Einordnung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Möglicher kurzfristiger Informations- und Rechenschaftsbedarf",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Möglicher kurzfristiger Informations- und Rechenschaftsbedarf",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T07:25:17.359Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "wdr-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über den laufenden Polizei-Einsatz und Schüsse auf ein Haus in Köln-Mülheim."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den Einsatz und die Schüsse, aber keine Verletzungen, Schäden oder konkreten Einschränkungen. Der mögliche lokale Sicherheitspfad bleibt deshalb niedrig ausgeprägt und unsicher.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Ein Schusswaffenvorfall an einem Wohnhaus kann kurzfristig Risiken und Einschränkungen für Anwohner erzeugen. Die Richtung ist als mögliches Belastungsrisiko modelliert; das Ausmaß ist wegen fehlender Angaben begrenzt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche kurzfristige Belastung der Sicherheit im Umfeld",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein laufender Polizeieinsatz nach Schüssen könnte Zugänge, Bewegungen und das Sicherheitsgefühl im unmittelbaren Umfeld beeinflussen.",
+              "recipients": [
+                "Anwohner",
+                "Einsatzkräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Pfad ist lokal und kurzfristig, aber Angaben zu konkreten Folgen fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Quellenbezug beschränkt den möglichen Wirkungsraum auf das lokale Umfeld.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Schüsse auf ein Haus können eine erhebliche lokale Sicherheitsbelastung bedeuten.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Einsatzdauer und die Dauer möglicher Einschränkungen sind unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Dauerhafte menschliche Folgen sind im Quellenmaterial nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Bewohner eines betroffenen Hauses könnten dem Ereignis unmittelbar ausgesetzt sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine vertiefte soziale oder institutionelle Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung oder schwere Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": "Schutz von Anwohnern vor unmittelbarer Gewalt",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der Einsatz tatsächlich mit einer relevanten Gefährdung oder lokalen Einschränkung verbunden ist.",
+              "reference_space": "Köln-Mülheim, insbesondere das Umfeld des betroffenen Hauses",
+              "time_horizon": "kurzfristig während und unmittelbar nach dem Einsatz",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der berichtete Einsatz findet im beschriebenen Umfeld statt und kann dort polizeiliche Maßnahmen auslösen.",
+              "source_support": "Die Quelle belegt nur Einsatz und Schüsse, nicht die Folge auf Anwohner.",
+              "limitations": "Keine Daten zu Verletzten, Schäden, Absperrungen, Dauer oder Betroffenenzahl.",
+              "first_order": "Mögliche kurzfristige Einschränkung und Verunsicherung im Umfeld.",
+              "second_order": "Möglicher zusätzlicher Informationsbedarf bei Anwohnern.",
+              "third_order": "Eine dauerhafte Veränderung des Sicherheitsverhaltens ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen Angaben im gelieferten Material; Eintritt und Umfang des Pfads bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Belastung von Einsatzkräften",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Ein laufender Einsatz nach Schüssen könnte Personal und Ressourcen der Einsatzkräfte binden.",
+              "recipients": [
+                "Einsatzkräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Einsatz ist berichtet, sein Umfang und seine Dauer sind aber unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Empfängerkreis bleibt auf den Einsatz beschränkt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Belastung ist möglich, konkrete Intensität wird nicht genannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Zur Dauer des Einsatzes liegen keine Angaben vor.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Dauerhafte Folgen für Einsatzkräfte sind nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Einsatzkräfte können bei Schussvorfällen besonderen Risiken ausgesetzt sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine systemische Ressourcenfolge ist nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung oder schwere Schädigung von Einsatzkräften ist nicht berichtet.",
+                "reference_frame": "Schutz von Einsatzkräften",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt einen tatsächlich umfangreichen oder länger dauernden Einsatz voraus.",
+              "reference_space": "Köln-Mülheim",
+              "time_horizon": "während des laufenden Einsatzes",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein berichteter Polizeieinsatz bindet zumindest vorübergehend Personal.",
+              "source_support": "Die Quelle bestätigt den Einsatz, nicht seine Ressourcenfolgen.",
+              "limitations": "Keine Angaben zu Personalstärke, Dauer oder Verletzungen.",
+              "first_order": "Mögliche zusätzliche Belastung des eingesetzten Personals.",
+              "second_order": "Keine belastbare Aussage zu Auswirkungen auf andere Einsätze.",
+              "third_order": "Keine belegte systemische Folge.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keine Informationen zum Umfang oder zu Folgen für Einsatzkräfte.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein belastbarer positiver Gegenpfad ist nicht belegt; mögliche Schutzwirkung des Einsatzes wird nicht als Ausgleich für ein ungeklärtes Sicherheitsrisiko gewertet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche kurzfristige Belastung der Sicherheit im Umfeld",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche kurzfristige Belastung der Sicherheit im Umfeld",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle enthält keinen belastbaren Hinweis auf ökologische Veränderungen, Emissionen, Schäden oder Ressourcenfolgen. Der planetare Pfad ist daher nicht inhaltlich bewertbar und wird begründet vernachlässigbar modelliert.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Für planetare Wirkungen gibt es im vorliegenden Ereignisauszug keinen konkreten Anknüpfungspunkt. Ein kleiner Ressourcenverbrauch des Einsatzes wäre nicht quantifizierbar und nicht als materielle Wirkung belegt.",
+          "primary_paths": [
+            {
+              "label": "Keine belastbar ableitbare planetare Zustandsänderung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Der Bericht beschreibt einen lokalen Polizeieinsatz, ohne ökologische Zustandsänderung oder relevante Umweltbelastung zu nennen.",
+              "recipients": [
+                "lokale Umwelt"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im gelieferten Material ist kein materieller planetarer Wirkpfad erkennbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Wirkungsraum ist in der Quelle benannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine Umweltbelastung oder Zustandsänderung ist belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Dauer einer ökologischen Wirkung ist angegeben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltfolge ist beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders verletzliche Umweltkomponente ist genannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemwirkung ist aus dem Auszug ableitbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine ökologische Schutzgrenze betroffen oder beschrieben.",
+                "reference_frame": "lokale Umwelt",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Ein planetarer Pfad würde konkrete Umwelt- oder Ressourceninformationen voraussetzen.",
+              "reference_space": "Köln-Mülheim und Umgebung",
+              "time_horizon": "offen",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Keine über den Quelleninhalt hinausgehenden Umweltfolgen werden angenommen.",
+              "source_support": "Die Quelle trägt keine planetare Wirkungsbehauptung.",
+              "limitations": "Keine Daten zu Schäden, Emissionen, Ressourcenverbrauch oder Umweltbelastungen.",
+              "first_order": "Keine belastbar modellierbare ökologische Zustandsänderung.",
+              "second_order": "Keine belastbar modellierbare ökologische Folge.",
+              "third_order": "Keine belastbar modellierbare systemische Umweltfolge.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung des gelieferten Materials ergab keinen planetaren Folgenbeleg.",
+              "negligibility_rationale": "Im abgegrenzten lokalen Ereignisrahmen ist keine materielle planetare Zustandsänderung belegt oder plausibel spezifiziert.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mangels eines belegten planetaren Hauptpfads ist keine materielle Abwägung erforderlich."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine belastbar ableitbare planetare Zustandsänderung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine belastbar ableitbare planetare Zustandsänderung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle Entscheidung, politische Reaktion oder Veränderung des Vertrauens. Möglich ist lediglich ein begrenzter Informations- und Rechenschaftspfad; sein Eintritt bleibt offen.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Ein akuter Sicherheitsbericht kann Informationsbedarf und Nachfrage nach behördlicher Einordnung auslösen. Für eine demokratische Zustandsänderung fehlen jedoch Angaben zu Kommunikation, Kontroversen oder institutionellen Folgen.",
+          "primary_paths": [
+            {
+              "label": "Möglicher kurzfristiger Informations- und Rechenschaftsbedarf",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Der Bericht über einen laufenden Einsatz könnte die Nachfrage nach nachvollziehbaren behördlichen Angaben zu Ablauf und Gefahrenlage erhöhen.",
+              "recipients": [
+                "Anwohner",
+                "lokale Öffentlichkeit",
+                "Behörden"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ein Informationspfad ist denkbar, aber weder Nachfrage noch institutionelle Reaktion sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Nachrichtenkern ist lokal auf Köln-Mülheim bezogen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der mögliche Informationsbedarf ist vorhanden, seine Stärke aber unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Dauer einer öffentlichen oder institutionellen Reaktion ist belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine dauerhafte demokratische Veränderung ist beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene Anwohner könnten auf verlässliche Informationen angewiesen sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine Veränderung institutioneller Strukturen ist nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder institutionelle Beeinträchtigung ist nicht belegt.",
+                "reference_frame": "transparente behördliche Information und öffentliche Rechenschaft",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Behörden weitere Informationen bereitstellen und diese öffentlich nachgefragt werden.",
+              "reference_space": "lokale Öffentlichkeit in Köln-Mülheim",
+              "time_horizon": "kurzfristig nach Bekanntwerden des Vorfalls",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Informationen über einen laufenden Einsatz können grundsätzlich Nachfrage nach Einordnung erzeugen.",
+              "source_support": "Die Quelle berichtet das Ereignis, nicht seine demokratische Wirkung.",
+              "limitations": "Keine Daten zu öffentlicher Reaktion, behördlicher Kommunikation, Vertrauen oder politischer Debatte.",
+              "first_order": "Möglicher Bedarf an weiteren behördlichen Informationen.",
+              "second_order": "Mögliche Veränderung der öffentlichen Einordnung bei neuen Fakten.",
+              "third_order": "Keine belastbare Grundlage für Aussagen über Institutionen, Vertrauen oder politische Entscheidungen.",
+              "research_pass": "second_pass",
+              "research_result": "Der gelieferte Quellenbestand enthält keine Angaben zu öffentlicher Resonanz oder institutionellen Folgen.",
+              "negligibility_rationale": "Für eine messbare demokratische Zustandsänderung fehlen im Quellenbestand konkrete Beobachtungen; der mögliche Informationspfad bleibt unterhalb einer belastbaren Wirkungseinstufung.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 3,
+                "divisor": 6,
+                "raw": 0.5,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Verunsicherung durch unvollständige Frühinformationen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Ein knapper Bericht ohne Angaben zu Ursache und Ausmaß könnte vorübergehend Raum für ungesicherte Einordnungen lassen.",
+              "recipients": [
+                "lokale Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der kommunikative Risikopfad ist möglich, aber weder Verbreitung noch Reaktion sind beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Gegenstand ist räumlich und thematisch begrenzt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Informationslücke kann Unsicherheit erzeugen, ihre Intensität ist unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Zur Dauer einer möglichen Verunsicherung gibt es keine Angaben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte demokratische Folge ist nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Menschen im unmittelbaren Umfeld könnten besonders auf verlässliche Informationen angewiesen sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine vertiefte Veränderung von Diskurs oder Institutionen ist belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": "verlässliche öffentliche Information",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine öffentliche Weiterverbreitung ohne zeitnahe Ergänzung belastbarer Informationen voraus.",
+              "reference_space": "lokale Öffentlichkeit",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unvollständige frühe Berichte können prinzipiell zu offenen Fragen führen.",
+              "source_support": "Die Quelle enthält offene Punkte, belegt aber keine tatsächliche Verunsicherung.",
+              "limitations": "Keine Publikumsdaten, keine Anschlusskommunikation und keine Beobachtung einer Diskurswirkung.",
+              "first_order": "Mögliche offene Fragen zum Vorfall.",
+              "second_order": "Mögliche Nachfrage nach behördlicher Präzisierung.",
+              "third_order": "Keine belegte Normalisierung oder Polarisierung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Resonanz- oder Diskursdaten im gelieferten Material.",
+              "negligibility_rationale": "Eine eingetretene demokratische Wirkung ist nicht beobachtet; der mögliche kommunikative Nebenpfad bleibt unterhalb einer materiellen Einstufung.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 3,
+                "divisor": 6,
+                "raw": 0.5,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Hauptpfad mit materieller Tragweite; die Einordnung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Möglicher kurzfristiger Informations- und Rechenschaftsbedarf",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Möglicher kurzfristiger Informations- und Rechenschaftsbedarf",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T07:22:24.849Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T07:08:26.000Z",
+      "last_updated": "2026-09-18T07:25:17.353Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ccbd64851e5f40ca0a36",
+      "case_file": null,
+      "source_published_at": "2026-09-18T07:08:26.000Z",
+      "published_at": "2026-09-18T07:25:17.353Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Polizei sollte den Ablauf, mögliche Verletzte und den Anlass der Schüsse weiter einordnen.",
+          "source_id": "wdr-nachrichten",
+          "measurable_indicator": "Veröffentlichte Angaben der Polizei zu Ablauf, Verletzten und Anlass",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c644eb297073f0da",
+          "announced_at": "2026-09-18T07:08:26.000Z",
+          "follow_up_date": "2026-09-25T07:25:17.353Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/koeln/schuesse-muelheim-polizei-einsatz-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T07:08:26.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-bc9d5aae223d144a",
       "title_image": {
@@ -92795,22 +94257,25 @@
     {
       "story_id": "wt-53d0ddcf12c399e4",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53d0ddcf12c399e4-6432f54370c4d986-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-53d0ddcf12c399e4-a619e8ffb8fdf38b-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53d0ddcf12c399e4-627ed34f2703e710-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-53d0ddcf12c399e4-dfb2b7b0f967ce5b-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53d0ddcf12c399e4-af92d0fb3f7bc8ef-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-53d0ddcf12c399e4-a40375f9ca6edba3-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-53d0ddcf12c399e4-0c796ccd919b380f-source.png"
         }
       },
       "slug": "nachrichten-fur-nrw-diskussion-uber-entlastungen-c399e4",
