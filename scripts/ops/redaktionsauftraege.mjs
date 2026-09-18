@@ -83,8 +83,11 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
       // neuesten erledigten.
       const offen = alle.filter((befund) => befund.zustand !== 'accepted');
       const ueberarbeitungen = alle.filter((befund) => befund.zustand === 'accepted' && befund.rueckgabe_von);
-      const rest = alle.filter((befund) => befund.zustand === 'accepted' && !befund.rueckgabe_von).slice(0, 10);
-      auftraege = [...offen, ...ueberarbeitungen, ...rest].slice(0, 60);
+      // Dazu jeder erledigte Auftrag der letzten 36 Stunden: am 18.09.2026
+      // verdeckten zehn Hoerbesprechungen den Wunstorf-Auftrag vom Vormittag.
+      const rest = alle.filter((befund, index, liste) => befund.zustand === 'accepted' && !befund.rueckgabe_von
+        && (befund.stunden_alt <= 36 || liste.filter((b) => b.zustand === 'accepted' && !b.rueckgabe_von).indexOf(befund) < 10));
+      auftraege = [...offen, ...ueberarbeitungen, ...rest].slice(0, 80);
       // Der entscheidende Zustand steht nicht im Auftrag, sondern im Vermerk
       // zum Versuch: provider_called ohne output_delivered heisst, der Auftrag
       // ist verbraucht und kehrt erst mit einer Vertragskorrektur zurueck.

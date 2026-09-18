@@ -188,6 +188,8 @@ export function lageCheck({ lagen = [], now } = {}) {
   const alter = Number.isFinite(juengste) ? (Date.parse(now) - juengste) / 3600000 : Infinity;
   // Vor 06:00 Berliner Zeit ist keine neue Lage faellig; dann ist Schweigen richtig.
   const faellig = Number.isInteger(stunde) && stunde >= 6;
+  if (lagen === null) return { id: 'lage', name: 'Redaktionelle Lage', immediate: false, ok: false,
+    reason: 'Die Lagen-Datei ist für den Monitor nicht lesbar; die Prüfung der Lage ist blind.' };
   return { id: 'lage', name: 'Redaktionelle Lage', immediate: false,
     ok: !faellig || alter <= 7,
     reason: !faellig ? 'Vor 06:00 Berliner Zeit ist keine neue Lage fällig.'
@@ -466,7 +468,9 @@ export async function main() {
   // eine bereits bezahlte Analyse nie verloren geht. Stumm darf sein Ausfall
   // deshalb nicht bleiben: hier wird geprueft, ob eine Lage fuer das laufende
   // Fenster vorliegt.
-  try { data.lagen = read('data/news/lagen.json').lagen || []; } catch { data.lagen = []; }
+  // Unlesbar ist nicht dasselbe wie leer: am 18.09.2026 fehlte die Datei im
+  // Checkout, und die Pruefung meldete "keine einzige Lage", waehrend drei live waren.
+  try { data.lagen = read('data/news/lagen.json').lagen || []; } catch { data.lagen = null; }
   data.processing_mode=process.env.WIRKUNGSTICKER_PROCESSING_MODE || data.report.processing_mode;
   data.discovery_enabled=process.env.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED!=='false';
   if(data.processing_mode==='dropbox_chatgpt_bridge') {

@@ -76,7 +76,8 @@ test('der Befund-Lauf hat seinen vollstaendigen Abhaengigkeitsbaum im sparse che
 // Der erste Lauf am 17.09.2026 zeigte 25 erledigte Auftraege von heute und
 // gestern - und verdeckte damit genau die vier offenen, die aelter waren.
 test('offene Auftraege stehen im Befund, auch wenn sie alt sind', async () => {
-  const viele = Array.from({ length: 30 }, (_, i) => auftrag(`neu-${i}`, `2026-09-17T${String(i % 24).padStart(2, '0')}:00:00.000Z`, { status: 'accepted', accepted: true }));
+  // Aelter als 36 Stunden: davon reichen die zehn neuesten.
+  const viele = Array.from({ length: 30 }, (_, i) => auftrag(`neu-${i}`, `2026-09-15T${String(i % 24).padStart(2, '0')}:00:00.000Z`, { status: 'accepted', accepted: true }));
   const alt = auftrag('alt-offen', '2026-09-11T08:00:00.000Z');
   const ergebnis = await redaktionsauftraege({ session: session([...viele, alt], []), now });
   assert.ok(ergebnis.auftraege.some((befund) => befund.job_id === 'alt-offen'), 'der alte offene Auftrag steht drin');
@@ -123,4 +124,13 @@ test('eine zurueckgegebene Meldung zeigt, wo ihr Meldungsweg steht', async () =>
   assert.equal(JSON.stringify(ergebnis).includes('GEHEIMER AUFTRAGSTEXT'), false);
   // Fehlt der Meldungsauftrag (archiviert), wird er einzeln gefragt.
   assert.equal(meldungsweg({ intake: { news_job_id: 'weg' } }, null).meldung, 'fehlt');
+});
+
+test('jeder erledigte Auftrag der letzten 36 Stunden steht im Befund, nicht nur die zehn neuesten', async () => {
+  const rows = Array.from({ length: 14 }, (_, i) => auftrag(`woek-${i}`, new Date(Date.parse(now) - (i + 1) * 3600000).toISOString(), { status: 'accepted', accepted: true }));
+  rows.push(auftrag('woek-alt', '2026-09-10T09:00:00.000Z', { status: 'accepted', accepted: true }));
+  const ergebnis = await redaktionsauftraege({ session: session(rows, []), now });
+  const kennungen = ergebnis.auftraege.map((a) => a.job_id);
+  assert.equal(kennungen.includes('woek-13'), true, 'der 14 Stunden alte Auftrag fehlt nicht');
+  assert.equal(kennungen.includes('woek-alt'), false, 'aeltere erledigte nur unter den zehn neuesten');
 });

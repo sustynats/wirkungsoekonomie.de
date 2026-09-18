@@ -37,6 +37,12 @@ test('monitor sparse checkout includes the complete local module dependency grap
   visit('scripts/ops/discord-monitor.mjs');
   visit('tests/ops/discord-monitor.test.mjs');
   visit('tests/ops/news-recovery.test.mjs');
+  // Die Daten, die der Monitor zur Laufzeit liest (read('...')): am 18.09.2026
+  // fehlte data/news/lagen.json, und die Lage-Pruefung meldete "keine Lage".
+  const monitor = fs.readFileSync(path.join(root, 'scripts/ops/discord-monitor.mjs'), 'utf8');
+  const gelesen = [...monitor.matchAll(/\bread\(\s*['"]([^'"]+)['"]\s*\)/g)].map((match) => match[1]);
+  assert.ok(gelesen.includes('data/news/lagen.json'), 'das Muster erkennt die Laufzeitlesungen');
+  for (const file of gelesen) assert.ok(checkout.includes(file), `Monitor checkout is missing ${file} (read at runtime)`);
 });
 
 test('ein gescheiterter Selbsttest wird gemeldet, statt den Monitor stumm zu schalten', () => {
@@ -544,6 +550,11 @@ test('eine fehlende oder veraltete Lage faellt auf, vor 06:00 aber nicht', () =>
 
   // Der Check ist keine Sofortmeldung: er weckt niemanden nachts.
   assert.equal(lageCheck({ lagen: [], now: '2026-09-17T12:00:00Z' }).immediate, false);
+
+  // Unlesbare Datei: blind, nicht "keine Lage" (18.09.2026).
+  check = lageCheck({ lagen: null, now: '2026-09-17T12:00:00Z' });
+  assert.equal(check.ok, false);
+  assert.match(check.reason, /nicht lesbar/);
 });
 
 // Die Gegenprobe zur geparkten Fassung: hier steht die Freigabe live, gilt auf
