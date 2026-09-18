@@ -2,8 +2,1711 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T07:22:24.849Z",
+  "updated_at": "2026-09-18T07:37:47.781Z",
   "stories": [
+    {
+      "story_id": "wt-aeced19bfd9a9d57",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-aeced19bfd9a9d57-7ed142644142612c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-aeced19bfd9a9d57-b6151de3a1a4b706-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-aeced19bfd9a9d57-4af744dab187cd73-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "grosshandelspreise-im-august-2026-6-8-gegenuber-august-2025-9a9d57",
+      "title": "Großhandelspreise steigen im August 2026 um 6,8 Prozent",
+      "source_summary": "Das Statistische Bundesamt berichtet, dass die Verkaufspreise im Großhandel im August 2026 über dem Vorjahresniveau lagen. Gegenüber Juli 2026 wurde ebenfalls ein Anstieg ausgewiesen; im Vergleich zu den Vormonaten nahm die jährliche Veränderungsrate zu.\n\nBesonders deutlich stiegen die Preise für Mineralölerzeugnisse. Auch Nicht-Eisen-Erze, Metalle und Metallhalbzeug sowie chemische Erzeugnisse verteuerten sich, während unter anderem Preise für lebende Tiere, Milchprodukte und Fleisch zurückgingen.\n\nDestatis nennt höhere Preise für Energieprodukte und Rohstoffe im Zusammenhang mit Kriegshandlungen im Iran und im Nahen Osten als Ursache. Die Meldung stammt aus einer amtlichen Quelle; eine unabhängige zweite Herkunft liegt nicht vor.",
+      "summary": "Die Großhandelspreise lagen im August 2026 deutlich über dem Vorjahresniveau, besonders bei Mineralölerzeugnissen. Welche Folgen daraus für Verbraucher, Unternehmen und die Gesamtwirtschaft entstehen, bleibt offen.",
+      "detail_summary": "Das Statistische Bundesamt meldet für August 2026 einen Anstieg der Großhandelspreise gegenüber dem Vorjahresmonat und gegenüber Juli 2026. Besonders stark verteuerten sich Mineralölerzeugnisse; zugleich sanken die Preise in mehreren Bereichen, darunter bei lebenden Tieren sowie bei Milch- und Fleischwaren. Destatis nennt höhere Energie- und Rohstoffpreise im Zusammenhang mit Kriegshandlungen im Iran und im Nahen Osten als eine Ursache. Für Haushalte und Unternehmen könnte der Befund über Kosten und Lieferketten weiterwirken, doch die Quelle belegt keine konkreten Folgeeffekte. Eine unabhängige Bestätigung oder eine Kausalanalyse liegt nicht vor.",
+      "why_relevant": "Großhandelspreise können ein frühes Signal für Kostenveränderungen in Lieferketten sein. Der Befund ist daher für Haushalte, Unternehmen und wirtschaftspolitische Beobachtung relevant, belegt aber noch keine Weitergabe an Endpreise oder konkrete Belastungen.",
+      "topic": [
+        "Energie",
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Amtliche Veröffentlichung zu den Großhandelspreisen im August 2026",
+        "evaluation_target": {
+          "label": "Großhandelspreise im August 2026",
+          "type": "measure"
+        },
+        "baseline": "Großhandelspreise im Vorjahresmonat und im Juli 2026",
+        "counterfactual": "Ohne die ausgewiesene Preisveränderung wären die Beschaffungs- und Lieferkettenkosten im betrachteten Vergleichsraum auf dem jeweiligen Vergleichsniveau geblieben; die weitere Entwicklung ist offen.",
+        "reference_frame": [
+          "Preis- und Versorgungssicherheit",
+          "Verteilungseffekte",
+          "wirtschaftliche Stabilität"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Folgen für Kaufkraft, Unternehmenskosten und Verteilung wurden modelliert; konkrete Belastungen sind nicht gemessen.",
+            "planet": "Mögliche indirekte Signale über Energie- und Rohstoffmärkte wurden geprüft; ökologische Wirkungen sind nicht belegt.",
+            "democracy": "Mögliche Folgen für politischen Anpassungsdruck und Vertrauen in Preis- und Versorgungspolitik wurden geprüft; institutionelle Veränderungen sind nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Preisbewegung verändert potenziell Beschaffungskosten in Unternehmen und damit die Ausgangslage für weitere Preisentscheidungen.",
+          "second_order": "Eine mögliche Weitergabe könnte Haushalte, Investitionen und öffentliche Budgets unterschiedlich treffen; Dauer und Umfang sind offen.",
+          "third_order": "Bei anhaltender Entwicklung könnten Verteilungs- und Versorgungskonflikte politischen Anpassungsdruck erzeugen, ohne dass dies bereits beobachtet ist.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "In mehreren Warengruppen wurden gleichzeitig Preisrückgänge ausgewiesen.",
+            "Die Quelle belegt keine Weitergabe an Verbraucherpreise und keine eingetretenen sozialen oder politischen Folgen.",
+            "Eine unabhängige zweite Quellenherkunft fehlt."
+          ],
+          "source_independence": "Es liegt nur eine institutionelle Herkunft vor: das Statistische Bundesamt. Die beiden gelieferten Texte stammen aus derselben Quelle und sind daher keine unabhängige Bestätigung.",
+          "institutional_status": "Es handelt sich um amtliche Statistik zu Großhandelspreisen, nicht um eine politische Maßnahme oder eine Rechtsänderung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine konkrete Belastung von Haushalten oder Beschäftigten. Modellierbar bleibt nur der bedingte Pfad über mögliche Kostenweitergabe und unterschiedliche Betroffenheit.",
+            "reviewed_source_ids": [
+              "destatis-aktuell"
+            ],
+            "rationale": "Höhere Großhandelspreise könnten über Beschaffung und Weitergabe die Kaufkraft und die Kostenlage von Unternehmen beeinflussen. Das Ausmaß hängt von Dauer, Marktstruktur und Einkommen ab; konkrete Folgen sind nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Weitergabe höherer Großhandelskosten an Haushalte und Unternehmen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Höhere Beschaffungskosten könnten bei Weitergabe Preise erhöhen oder bei Unternehmen Margen und Investitionen belasten.",
+                "recipients": [
+                  "Haushalte",
+                  "energie- und rohstoffabhängige Unternehmen",
+                  "öffentliche Budgets"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite kann über Lieferketten erheblich sein, während Weitergabe und Dauer nicht belegt sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Lieferketten können viele Abnehmer erreichen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Gesamtanstieg ist deutlich, aber Folgenintensität bleibt offen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Quelle zeigt einen Monats- und Jahresvergleich, keine Dauer.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisänderungen und Verträge können grundsätzlich angepasst werden.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Energie- und rohstoffabhängige Gruppen könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Kosten und Verteilung, nicht nachgewiesene Strukturen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Kaufkraft und wirtschaftliche Teilhabe",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "condition": "Die Preissteigerung hält an und wird über Beschaffungs- oder Endpreise weitergegeben.",
+                "reference_space": "Deutschland, Großhandel und nachgelagerte Lieferketten",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Unternehmen geben einen Teil höherer Kosten weiter oder reduzieren Margen und Investitionen.",
+                "source_support": "Die Quelle belegt höhere Großhandelspreise und betroffene Warengruppen, nicht die Weitergabe oder soziale Folgen.",
+                "limitations": "Keine Daten zu Einkommen, Haushaltsbudgets, Vertragsbindungen, Beschäftigung oder Verbraucherpreisen.",
+                "first_order": "Beschaffungskosten könnten steigen und Entscheidungen von Unternehmen beeinflussen.",
+                "second_order": "Haushalte könnten bei Weitergabe höhere Ausgaben tragen; die Verteilung wäre ungleich.",
+                "third_order": "Bei Dauer könnte der Kostendruck Anpassungs- und Verteilungskonflikte verstärken.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte unabhängige Quelle misst die Weitergabe oder Betroffenheit einzelner Gruppen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Preisrückgänge in einzelnen Warengruppen könnten Belastungen begrenzen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Niedrigere Preise einzelner Güter könnten Kostenanstiege in anderen Bereichen teilweise abfedern.",
+                "recipients": [
+                  "Haushalte",
+                  "Lebensmittelhandel",
+                  "verarbeitende Unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Gegenpfad ist auf einzelne Warengruppen begrenzt und nicht als Gesamtausgleich belegbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Gegenpfad betrifft ausgewählte Warengruppen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Preisrückgänge können punktuell entlasten.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Rückgänge ist nicht belegt.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die Preisbewegung ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die Entlastung erreicht nicht zwingend besonders verletzliche Gruppen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf einzelne Kostenpositionen begrenzt.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine Schutzgrenze wird durch diesen Gegenpfad bestimmt.",
+                  "reference_frame": "Kaufkraft",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "condition": "Die ausgewiesenen Preisrückgänge bleiben bestehen und erreichen nachgelagerte Märkte.",
+                "reference_space": "Deutschland, ausgewählte Großhandelswarengruppen",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Preisrückgänge werden zumindest teilweise weitergegeben.",
+                "source_support": "Die Quelle weist Rückgänge bei einzelnen Warengruppen aus, nicht deren Wirkung auf Haushalte.",
+                "limitations": "Kein Warenkorbvergleich und keine Verteilungsdaten liegen vor.",
+                "first_order": "Einzelne Beschaffungskosten könnten sinken.",
+                "second_order": "Die Entlastung könnte Teile der höheren Kosten ausgleichen.",
+                "third_order": "Ein gesamtwirtschaftlicher Ausgleich ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Wissensgrenze bleibt bestehen, weil keine Quelle die Ausgleichswirkung misst.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Hauptpfad ist materiell stärker als der begrenzte Gegenpfad, ohne dass eine Schutzgrenze festgestellt ist."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Weitergabe höherer Großhandelskosten an Haushalte und Unternehmen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Weitergabe höherer Großhandelskosten an Haushalte und Unternehmen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt Energie- und Rohstoffpreise, misst aber weder Verbrauch, Emissionen noch ökologische Veränderungen. Ein möglicher Pfad über Nachfrage und Produktionsentscheidungen bleibt daher unsicher.",
+            "reviewed_source_ids": [
+              "destatis-aktuell"
+            ],
+            "rationale": "Höhere Preise für Energieprodukte und Rohstoffe könnten Produktions- und Beschaffungsentscheidungen verändern. Ob dies zu höherem Verbrauch, Einsparungen oder Verlagerungen führt, ist aus den Daten nicht bestimmbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung von Energie- und Rohstoffnutzung durch Preisänderungen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Preisänderungen könnten Produktionsweisen, Beschaffung und Nachfrage verschieben; ohne zusätzliche Daten ist die ökologische Richtung unsicher und wird hier als mögliches Risiko modelliert.",
+                "recipients": [
+                  "energieintensive Unternehmen",
+                  "Rohstoffmärkte",
+                  "betroffene Ökosysteme"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der Pfad reicht von vernachlässigbarer Reaktion bis zu sektoralen Verlagerungen, ist aber nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Energie- und Rohstoffmärkte können mehrere Branchen erreichen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ökologische Intensität ist aus Preisangaben nicht ablesbar.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein anhaltender Preistrend könnte Entscheidungen verlängert beeinflussen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Viele Anpassungen wären reversibel, ökologische Folgeschäden nicht zwingend.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Rohstoffabhängige Systeme und Ökosysteme könnten ungleich betroffen sein.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Produktionsstrukturen berühren, ist aber nicht belegt.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird durch die Quelle nicht ausgewiesen.",
+                  "reference_frame": "Ressourcenverbrauch und ökologische Belastung",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "condition": "Preisänderungen beeinflussen tatsächliche Produktion, Nachfrage oder Substitution.",
+                "reference_space": "Energie- und rohstoffabhängige Wirtschaftsbereiche",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preise wirken auf Technologie-, Beschaffungs- oder Produktionsentscheidungen.",
+                "source_support": "Die Quelle belegt Preisänderungen bei Energieprodukten und Rohstoffen, nicht ökologische Folgen.",
+                "limitations": "Keine Verbrauchs-, Emissions-, Substitutions- oder Verlagerungsdaten.",
+                "first_order": "Unternehmen könnten Beschaffung und Produktion anpassen.",
+                "second_order": "Anpassungen könnten Ressourcenverbrauch oder Verlagerungen verändern.",
+                "third_order": "Bei Dauer könnten sich technologische und infrastrukturelle Bindungen verstärken oder lösen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle erlaubt eine belastbare Bestimmung der ökologischen Richtung oder Größenordnung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Preissignale könnten Einsparung oder Substitution anreizen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Höhere Energie- und Rohstoffpreise könnten Investitionen in Effizienz oder alternative Beschaffung anstoßen.",
+                "recipients": [
+                  "energieintensive Unternehmen",
+                  "öffentliche und private Investoren"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein Anreiz ist plausibel, aber konkrete Investitionen oder Einsparungen sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Anreiz betrifft vor allem abhängige Marktteilnehmer.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die tatsächliche Reaktion auf Preise ist unbekannt.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ohne Dauer der Preisbewegung bleibt der Anreiz begrenzt.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Investitionen könnten langfristige Bindungen erzeugen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Kapitalzugang und Anpassungsfähigkeit sind nicht ausgewiesen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein struktureller Wandel ist nur als Möglichkeit modelliert.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch diesen möglichen Nutzen bestimmt.",
+                  "reference_frame": "Ressourceneffizienz",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "condition": "Unternehmen verfügen über Kapital, Alternativen und ausreichende Preisperspektive.",
+                "reference_space": "energie- und rohstoffabhängige Branchen",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen werden als dauerhaft und investitionsrelevant wahrgenommen.",
+                "source_support": "Die Quelle weist Preissteigerungen aus, belegt aber keine Reaktionen.",
+                "limitations": "Keine Investitions- oder Verbrauchsdaten.",
+                "first_order": "Effizienzentscheidungen könnten wirtschaftlich attraktiver werden.",
+                "second_order": "Technologie- oder Beschaffungswechsel könnten Ressourcenbedarf verändern.",
+                "third_order": "Ein dauerhafter Strukturwandel ist offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine Daten zu Einsparungen, Substitution oder Investitionen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Negative und positive ökologische Pfade sind beide unsicher; der mögliche Risikopfad ist etwas stärker, aber nicht entscheidend."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Veränderung von Energie- und Rohstoffnutzung durch Preisänderungen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Veränderung von Energie- und Rohstoffnutzung durch Preisänderungen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Daten zu Vertrauen, politischer Beteiligung oder Entscheidungen. Modellierbar ist nur ein bedingter Pfad über Verteilungs- und Versorgungskonflikte.",
+            "reviewed_source_ids": [
+              "destatis-aktuell"
+            ],
+            "rationale": "Anhaltender Kostendruck könnte politischen Anpassungsdruck und Konflikte über Verteilung oder Versorgung verstärken. Ein solcher Effekt ist weder beobachtet noch einer politischen Akteurin oder einem politischen Akteur zugeschrieben.",
+            "primary_paths": [
+              {
+                "label": "Möglicher politischer Anpassungsdruck durch anhaltenden Kostendruck",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn Preissteigerungen dauerhaft und sozial ungleich verteilt werden, könnten Verteilungs- und Versorgungskonflikte politische Entscheidungen und Vertrauen belasten.",
+                "recipients": [
+                  "Haushalte",
+                  "politische Institutionen",
+                  "wirtschaftliche Interessenvertretungen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der Pfad reicht von keiner politischen Folge bis zu zusätzlichem Anpassungsdruck, ist aber nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Preis- und Versorgungsthemen können breite Gruppen betreffen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Politische Intensität ist aus Preisstatistik nicht bestimmbar.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Dauerhafte Preisbewegungen könnten Debatten länger prägen.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Reaktionen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ungleich betroffene Gruppen könnten stärker politischen Druck entwickeln.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Prioritäten und Verteilungsentscheidungen berühren.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                  "reference_frame": "politische Teilhabe und Korrekturfähigkeit",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "condition": "Die Preisentwicklung hält an, wird ungleich wahrgenommen und prägt politische Verteilungsentscheidungen.",
+                "reference_space": "Deutschland, öffentliche Debatten und politische Entscheidungsprozesse",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kosten- und Versorgungsfragen werden politisch mobilisierbar und beeinflussen Prioritäten.",
+                "source_support": "Die Quelle belegt Preisbewegungen, nicht politische Reaktionen oder Vertrauensänderungen.",
+                "limitations": "Keine Umfragen, Diskursdaten, Wahl- oder Entscheidungsdaten liegen vor.",
+                "first_order": "Preis- und Versorgungsthemen könnten politische Aufmerksamkeit erhalten.",
+                "second_order": "Verteilungsentscheidungen und Interessenkonflikte könnten intensiver werden.",
+                "third_order": "Bei Dauer könnte sich die politische Agenda verändern; dies ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst politische Resonanz, Vertrauen, Beteiligung oder institutionelle Veränderungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Amtliche Statistik kann öffentliche Orientierung und Rechenschaft ermöglichen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Transparente Preisangaben könnten öffentliche Debatten informieren und politische Antworten überprüfbarer machen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Parlamente",
+                  "Verwaltungen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Informationsfunktion ist möglich, aber ihre Nutzung und Wirkung sind nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Veröffentlichung ist grundsätzlich öffentlich zugänglich.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine einzelne Statistik verändert Debatten nicht zwingend stark.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Aufmerksamkeit ist nicht belegt.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Informationswirkungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Der Nutzen hängt von Zugang und Einordnung ab.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Die Veröffentlichung stärkt höchstens begrenzt die Informationsbasis.",
+                    "source_ids": [
+                      "destatis-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wird durch diesen Informationspfad nicht bestimmt.",
+                  "reference_frame": "öffentliche Rechenschaft",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "condition": "Die Daten werden öffentlich wahrgenommen und sachlich eingeordnet.",
+                "reference_space": "öffentliche Wirtschaftsberichterstattung und politische Beobachtung",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Amtliche Daten können als gemeinsame Referenz genutzt werden.",
+                "source_support": "Die Quelle ist eine amtliche Veröffentlichung, belegt aber keine tatsächliche Rezeption.",
+                "limitations": "Keine Nutzungs-, Resonanz- oder Diskursdaten liegen vor.",
+                "first_order": "Die Veröffentlichung stellt eine aktuelle Preisreferenz bereit.",
+                "second_order": "Sie könnte politische Rechenschaft und Einordnung erleichtern.",
+                "third_order": "Ein dauerhafter Beitrag zur informierten Debatte ist offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle belegt die Veröffentlichung, nicht deren demokratische Wirkung oder Reichweite.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche politische Anpassungsdruck und die mögliche Informationsfunktion sind beide unsicher; keine Schutzgrenze ist festgestellt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Möglicher politischer Anpassungsdruck durch anhaltenden Kostendruck",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Möglicher politischer Anpassungsdruck durch anhaltenden Kostendruck",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T07:40:53.536Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "destatis-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Amtliche Preisveränderungen im Großhandel, betroffene Warengruppen und die von Destatis genannte Einordnung zu Energie- und Rohstoffpreisen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine konkrete Belastung von Haushalten oder Beschäftigten. Modellierbar bleibt nur der bedingte Pfad über mögliche Kostenweitergabe und unterschiedliche Betroffenheit.",
+          "reviewed_source_ids": [
+            "destatis-aktuell"
+          ],
+          "rationale": "Höhere Großhandelspreise könnten über Beschaffung und Weitergabe die Kaufkraft und die Kostenlage von Unternehmen beeinflussen. Das Ausmaß hängt von Dauer, Marktstruktur und Einkommen ab; konkrete Folgen sind nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Weitergabe höherer Großhandelskosten an Haushalte und Unternehmen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Höhere Beschaffungskosten könnten bei Weitergabe Preise erhöhen oder bei Unternehmen Margen und Investitionen belasten.",
+              "recipients": [
+                "Haushalte",
+                "energie- und rohstoffabhängige Unternehmen",
+                "öffentliche Budgets"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite kann über Lieferketten erheblich sein, während Weitergabe und Dauer nicht belegt sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Lieferketten können viele Abnehmer erreichen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Gesamtanstieg ist deutlich, aber Folgenintensität bleibt offen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Quelle zeigt einen Monats- und Jahresvergleich, keine Dauer.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisänderungen und Verträge können grundsätzlich angepasst werden.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Energie- und rohstoffabhängige Gruppen könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Kosten und Verteilung, nicht nachgewiesene Strukturen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Kaufkraft und wirtschaftliche Teilhabe",
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "destatis-aktuell"
+              ],
+              "condition": "Die Preissteigerung hält an und wird über Beschaffungs- oder Endpreise weitergegeben.",
+              "reference_space": "Deutschland, Großhandel und nachgelagerte Lieferketten",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Unternehmen geben einen Teil höherer Kosten weiter oder reduzieren Margen und Investitionen.",
+              "source_support": "Die Quelle belegt höhere Großhandelspreise und betroffene Warengruppen, nicht die Weitergabe oder soziale Folgen.",
+              "limitations": "Keine Daten zu Einkommen, Haushaltsbudgets, Vertragsbindungen, Beschäftigung oder Verbraucherpreisen.",
+              "first_order": "Beschaffungskosten könnten steigen und Entscheidungen von Unternehmen beeinflussen.",
+              "second_order": "Haushalte könnten bei Weitergabe höhere Ausgaben tragen; die Verteilung wäre ungleich.",
+              "third_order": "Bei Dauer könnte der Kostendruck Anpassungs- und Verteilungskonflikte verstärken.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte unabhängige Quelle misst die Weitergabe oder Betroffenheit einzelner Gruppen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Preisrückgänge in einzelnen Warengruppen könnten Belastungen begrenzen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Niedrigere Preise einzelner Güter könnten Kostenanstiege in anderen Bereichen teilweise abfedern.",
+              "recipients": [
+                "Haushalte",
+                "Lebensmittelhandel",
+                "verarbeitende Unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Gegenpfad ist auf einzelne Warengruppen begrenzt und nicht als Gesamtausgleich belegbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Gegenpfad betrifft ausgewählte Warengruppen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Preisrückgänge können punktuell entlasten.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Rückgänge ist nicht belegt.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die Preisbewegung ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die Entlastung erreicht nicht zwingend besonders verletzliche Gruppen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf einzelne Kostenpositionen begrenzt.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine Schutzgrenze wird durch diesen Gegenpfad bestimmt.",
+                "reference_frame": "Kaufkraft",
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "destatis-aktuell"
+              ],
+              "condition": "Die ausgewiesenen Preisrückgänge bleiben bestehen und erreichen nachgelagerte Märkte.",
+              "reference_space": "Deutschland, ausgewählte Großhandelswarengruppen",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Preisrückgänge werden zumindest teilweise weitergegeben.",
+              "source_support": "Die Quelle weist Rückgänge bei einzelnen Warengruppen aus, nicht deren Wirkung auf Haushalte.",
+              "limitations": "Kein Warenkorbvergleich und keine Verteilungsdaten liegen vor.",
+              "first_order": "Einzelne Beschaffungskosten könnten sinken.",
+              "second_order": "Die Entlastung könnte Teile der höheren Kosten ausgleichen.",
+              "third_order": "Ein gesamtwirtschaftlicher Ausgleich ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Wissensgrenze bleibt bestehen, weil keine Quelle die Ausgleichswirkung misst.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Hauptpfad ist materiell stärker als der begrenzte Gegenpfad, ohne dass eine Schutzgrenze festgestellt ist."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Weitergabe höherer Großhandelskosten an Haushalte und Unternehmen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Weitergabe höherer Großhandelskosten an Haushalte und Unternehmen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt Energie- und Rohstoffpreise, misst aber weder Verbrauch, Emissionen noch ökologische Veränderungen. Ein möglicher Pfad über Nachfrage und Produktionsentscheidungen bleibt daher unsicher.",
+          "reviewed_source_ids": [
+            "destatis-aktuell"
+          ],
+          "rationale": "Höhere Preise für Energieprodukte und Rohstoffe könnten Produktions- und Beschaffungsentscheidungen verändern. Ob dies zu höherem Verbrauch, Einsparungen oder Verlagerungen führt, ist aus den Daten nicht bestimmbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung von Energie- und Rohstoffnutzung durch Preisänderungen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Preisänderungen könnten Produktionsweisen, Beschaffung und Nachfrage verschieben; ohne zusätzliche Daten ist die ökologische Richtung unsicher und wird hier als mögliches Risiko modelliert.",
+              "recipients": [
+                "energieintensive Unternehmen",
+                "Rohstoffmärkte",
+                "betroffene Ökosysteme"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der Pfad reicht von vernachlässigbarer Reaktion bis zu sektoralen Verlagerungen, ist aber nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Energie- und Rohstoffmärkte können mehrere Branchen erreichen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ökologische Intensität ist aus Preisangaben nicht ablesbar.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein anhaltender Preistrend könnte Entscheidungen verlängert beeinflussen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Viele Anpassungen wären reversibel, ökologische Folgeschäden nicht zwingend.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Rohstoffabhängige Systeme und Ökosysteme könnten ungleich betroffen sein.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Produktionsstrukturen berühren, ist aber nicht belegt.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird durch die Quelle nicht ausgewiesen.",
+                "reference_frame": "Ressourcenverbrauch und ökologische Belastung",
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "destatis-aktuell"
+              ],
+              "condition": "Preisänderungen beeinflussen tatsächliche Produktion, Nachfrage oder Substitution.",
+              "reference_space": "Energie- und rohstoffabhängige Wirtschaftsbereiche",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preise wirken auf Technologie-, Beschaffungs- oder Produktionsentscheidungen.",
+              "source_support": "Die Quelle belegt Preisänderungen bei Energieprodukten und Rohstoffen, nicht ökologische Folgen.",
+              "limitations": "Keine Verbrauchs-, Emissions-, Substitutions- oder Verlagerungsdaten.",
+              "first_order": "Unternehmen könnten Beschaffung und Produktion anpassen.",
+              "second_order": "Anpassungen könnten Ressourcenverbrauch oder Verlagerungen verändern.",
+              "third_order": "Bei Dauer könnten sich technologische und infrastrukturelle Bindungen verstärken oder lösen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle erlaubt eine belastbare Bestimmung der ökologischen Richtung oder Größenordnung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Preissignale könnten Einsparung oder Substitution anreizen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Höhere Energie- und Rohstoffpreise könnten Investitionen in Effizienz oder alternative Beschaffung anstoßen.",
+              "recipients": [
+                "energieintensive Unternehmen",
+                "öffentliche und private Investoren"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein Anreiz ist plausibel, aber konkrete Investitionen oder Einsparungen sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Anreiz betrifft vor allem abhängige Marktteilnehmer.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die tatsächliche Reaktion auf Preise ist unbekannt.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ohne Dauer der Preisbewegung bleibt der Anreiz begrenzt.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Investitionen könnten langfristige Bindungen erzeugen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Kapitalzugang und Anpassungsfähigkeit sind nicht ausgewiesen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein struktureller Wandel ist nur als Möglichkeit modelliert.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch diesen möglichen Nutzen bestimmt.",
+                "reference_frame": "Ressourceneffizienz",
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "destatis-aktuell"
+              ],
+              "condition": "Unternehmen verfügen über Kapital, Alternativen und ausreichende Preisperspektive.",
+              "reference_space": "energie- und rohstoffabhängige Branchen",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen werden als dauerhaft und investitionsrelevant wahrgenommen.",
+              "source_support": "Die Quelle weist Preissteigerungen aus, belegt aber keine Reaktionen.",
+              "limitations": "Keine Investitions- oder Verbrauchsdaten.",
+              "first_order": "Effizienzentscheidungen könnten wirtschaftlich attraktiver werden.",
+              "second_order": "Technologie- oder Beschaffungswechsel könnten Ressourcenbedarf verändern.",
+              "third_order": "Ein dauerhafter Strukturwandel ist offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine Daten zu Einsparungen, Substitution oder Investitionen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Negative und positive ökologische Pfade sind beide unsicher; der mögliche Risikopfad ist etwas stärker, aber nicht entscheidend."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Veränderung von Energie- und Rohstoffnutzung durch Preisänderungen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Veränderung von Energie- und Rohstoffnutzung durch Preisänderungen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Daten zu Vertrauen, politischer Beteiligung oder Entscheidungen. Modellierbar ist nur ein bedingter Pfad über Verteilungs- und Versorgungskonflikte.",
+          "reviewed_source_ids": [
+            "destatis-aktuell"
+          ],
+          "rationale": "Anhaltender Kostendruck könnte politischen Anpassungsdruck und Konflikte über Verteilung oder Versorgung verstärken. Ein solcher Effekt ist weder beobachtet noch einer politischen Akteurin oder einem politischen Akteur zugeschrieben.",
+          "primary_paths": [
+            {
+              "label": "Möglicher politischer Anpassungsdruck durch anhaltenden Kostendruck",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn Preissteigerungen dauerhaft und sozial ungleich verteilt werden, könnten Verteilungs- und Versorgungskonflikte politische Entscheidungen und Vertrauen belasten.",
+              "recipients": [
+                "Haushalte",
+                "politische Institutionen",
+                "wirtschaftliche Interessenvertretungen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der Pfad reicht von keiner politischen Folge bis zu zusätzlichem Anpassungsdruck, ist aber nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Preis- und Versorgungsthemen können breite Gruppen betreffen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Politische Intensität ist aus Preisstatistik nicht bestimmbar.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Dauerhafte Preisbewegungen könnten Debatten länger prägen.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Reaktionen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ungleich betroffene Gruppen könnten stärker politischen Druck entwickeln.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Prioritäten und Verteilungsentscheidungen berühren.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                "reference_frame": "politische Teilhabe und Korrekturfähigkeit",
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "destatis-aktuell"
+              ],
+              "condition": "Die Preisentwicklung hält an, wird ungleich wahrgenommen und prägt politische Verteilungsentscheidungen.",
+              "reference_space": "Deutschland, öffentliche Debatten und politische Entscheidungsprozesse",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kosten- und Versorgungsfragen werden politisch mobilisierbar und beeinflussen Prioritäten.",
+              "source_support": "Die Quelle belegt Preisbewegungen, nicht politische Reaktionen oder Vertrauensänderungen.",
+              "limitations": "Keine Umfragen, Diskursdaten, Wahl- oder Entscheidungsdaten liegen vor.",
+              "first_order": "Preis- und Versorgungsthemen könnten politische Aufmerksamkeit erhalten.",
+              "second_order": "Verteilungsentscheidungen und Interessenkonflikte könnten intensiver werden.",
+              "third_order": "Bei Dauer könnte sich die politische Agenda verändern; dies ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst politische Resonanz, Vertrauen, Beteiligung oder institutionelle Veränderungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Amtliche Statistik kann öffentliche Orientierung und Rechenschaft ermöglichen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Transparente Preisangaben könnten öffentliche Debatten informieren und politische Antworten überprüfbarer machen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Parlamente",
+                "Verwaltungen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Informationsfunktion ist möglich, aber ihre Nutzung und Wirkung sind nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Veröffentlichung ist grundsätzlich öffentlich zugänglich.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine einzelne Statistik verändert Debatten nicht zwingend stark.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Aufmerksamkeit ist nicht belegt.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Informationswirkungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Der Nutzen hängt von Zugang und Einordnung ab.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Die Veröffentlichung stärkt höchstens begrenzt die Informationsbasis.",
+                  "source_ids": [
+                    "destatis-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wird durch diesen Informationspfad nicht bestimmt.",
+                "reference_frame": "öffentliche Rechenschaft",
+                "source_ids": [
+                  "destatis-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "destatis-aktuell"
+              ],
+              "condition": "Die Daten werden öffentlich wahrgenommen und sachlich eingeordnet.",
+              "reference_space": "öffentliche Wirtschaftsberichterstattung und politische Beobachtung",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Amtliche Daten können als gemeinsame Referenz genutzt werden.",
+              "source_support": "Die Quelle ist eine amtliche Veröffentlichung, belegt aber keine tatsächliche Rezeption.",
+              "limitations": "Keine Nutzungs-, Resonanz- oder Diskursdaten liegen vor.",
+              "first_order": "Die Veröffentlichung stellt eine aktuelle Preisreferenz bereit.",
+              "second_order": "Sie könnte politische Rechenschaft und Einordnung erleichtern.",
+              "third_order": "Ein dauerhafter Beitrag zur informierten Debatte ist offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle belegt die Veröffentlichung, nicht deren demokratische Wirkung oder Reichweite.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche politische Anpassungsdruck und die mögliche Informationsfunktion sind beide unsicher; keine Schutzgrenze ist festgestellt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Möglicher politischer Anpassungsdruck durch anhaltenden Kostendruck",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Möglicher politischer Anpassungsdruck durch anhaltenden Kostendruck",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T07:37:47.781Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-15T06:00:00.000Z",
+      "last_updated": "2026-09-18T07:40:53.530Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-90a0243a5117582cd241",
+      "case_file": null,
+      "source_published_at": "2026-09-15T06:00:00.000Z",
+      "published_at": "2026-09-18T07:40:53.530Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "destatis-aktuell",
+              "destatis-aktuell"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_326_61281.html",
+          "source_type": "official_rss",
+          "published_at": "2026-09-15T06:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_328_61241.html",
+          "source_type": "official_rss",
+          "published_at": "2026-09-18T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-cc54d157ba3a63c6",
       "title_image": {
@@ -76345,22 +78048,25 @@
     {
       "story_id": "wt-d29b1934046ecd8e",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d29b1934046ecd8e-e887b154715efec0-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-d29b1934046ecd8e-f72dc297613b7de9-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d29b1934046ecd8e-7c677578485d4937-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-d29b1934046ecd8e-cdaff24ad9445f28-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d29b1934046ecd8e-946ae11a34e2a06f-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-d29b1934046ecd8e-82940f834af710bb-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-d29b1934046ecd8e-e3158d3335f2cb89-source.png"
         }
       },
       "slug": "pcb-grenzwerte-uberschritten-nurnberger-kirche-wegen-schadstoffen-gesperrt-6ecd8e",
