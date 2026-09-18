@@ -445,7 +445,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-app-20260914-viewport">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-app-20260918-tabellen">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body class="ticker-app-shell">
@@ -458,7 +458,7 @@ ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkung
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260911-reader4"></script>
-<script src="${base}assets/js/news-app-viewport.js?v=20260914-viewport"></script>
+<script src="${base}assets/js/news-app-viewport.js?v=20260918-tastatur"></script>
 <script src="${base}assets/js/news-share.js?v=20260911-dynamic-share"></script>
 ${extraScript}
 </body>
