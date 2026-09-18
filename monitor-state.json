@@ -11,10 +11,15 @@
     },
     "lage": {
       "firstSeen": "2026-09-18T14:48:28.864Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e74472afb4cbb9b320bac84e",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionelle Lage: Es liegt keine einzige Lage vor.\nSeit: 2026-09-18T14:48:28.864Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1401,7 +1406,7 @@
       }
     },
     "last_new_at": "2026-09-18T14:48:28.864Z",
-    "checked_at": "2026-09-18T14:50:45.334Z",
+    "checked_at": "2026-09-18T15:05:42.471Z",
     "last_current_new_at": "2026-09-18T14:48:28.864Z"
   },
   "recovery_attempts": [
