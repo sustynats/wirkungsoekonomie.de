@@ -233,7 +233,11 @@ export function evaluateChecks(data, now) {
   const providerFallbacks = livePublished.filter((s) => usableTitleImage(s)
     && /^HIGGSFIELD_/.test(s.title_image?.refresh_failure || s.title_image?.fallback_reason || '')).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: missingImages === 0, immediate: false,
-    reason: `${missingImages} veröffentlichte Meldung(en) ohne nutzbares Titelbild; ${providerFallbacks} mit Kartenfallback nach Anbieterhinweis (das ist der gewollte Zustand).` });
+    // "gewollter Zustand" stand hier, als der Bilddienst nach dem Umbau vom
+    // 15.09.2026 gar nicht mehr angebunden war - so blieb unbemerkt, dass seit
+    // dem 12.09. keine Meldung mehr ein Symbolmotiv bekam. Ein Kartenfallback
+    // nach Anbieterhinweis ist erlaubt, aber ein Befund, kein Normalzustand.
+    reason: `${missingImages} veröffentlichte Meldung(en) ohne nutzbares Titelbild; ${providerFallbacks} mit Kartenfallback, weil der Bilddienst nicht lieferte.` });
   checks.push({ id: 'parked-editions', name: 'Geparkte Fassungen', ok: parked.length === 0, immediate: false,
     reason: parked.length
       ? `${parked.length} freigegebene Fassung(en) konnten nicht veroeffentlicht werden und warten in der privaten Freigabeliste: ${parked.map((entry) => entry.code).filter(Boolean).slice(0, 3).join(', ')}. Dort fehlt der Freigeben-Knopf; die App nennt den Grund.`
