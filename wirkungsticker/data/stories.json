@@ -2,8 +2,1913 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T13:37:51.537Z",
+  "updated_at": "2026-09-18T14:23:00.609Z",
   "stories": [
+    {
+      "story_id": "wt-1e97ba2918206370",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1e97ba2918206370-bf184598db772d68-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1e97ba2918206370-37986a9ea11c99b3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1e97ba2918206370-aced1f7b255440f1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370",
+      "title": "Laut Polizei mindestens 16 Tote bei Autobombenanschlag in Pakistan",
+      "source_summary": "Mehrere gelieferte Berichte melden einen Autobombenanschlag auf dem Gelände einer Polizeizentrale im Nordwesten Pakistans. Eine Darstellung nennt mindestens 14 Tote und ordnet die Angaben einem lokalen Polizeivertreter zu. Weitere bereitgestellte Schlagzeilen aktualisieren die Zahl auf mindestens 16 Tote.\n\nDie Texte berichten außerdem, dass die Detonation eine Moschee beschädigt habe. Der Deutschlandfunk fasst den Kern als Bombenanschlag mit mindestens 16 getöteten Menschen zusammen. Die bereitgestellten Ausschnitte nennen keine belastbare Verletztenzahl und klären weder Motiv noch Verantwortlichkeit.\n\nOffen bleiben auch das genaue Ausmaß des Sachschadens und mögliche Folgereaktionen. Die Quellenlage ist zudem nicht vollständig unabhängig dokumentiert: Mehrere Darstellungen können auf gemeinsamen Agenturtexten beruhen. Die Angaben belegen daher den berichteten Ereigniskern, nicht aber eine vollständige Opfer- oder Schadensbilanz.",
+      "summary": "Bei einem Autobombenanschlag in Pakistan wurden laut Polizei mindestens 16 Menschen getötet. Ziel war eine Polizeizentrale; Verletztenzahl, Motiv und Verantwortlichkeit bleiben offen.",
+      "detail_summary": "Bei einem Autobombenanschlag im Nordwesten Pakistans wurden laut Polizei mindestens 16 Menschen getötet. Vorliegende Berichte nennen eine Polizeizentrale als Ziel; eine Moschee soll ebenfalls beschädigt worden sein. Der tödliche Ereigniskern wird von zwei voneinander unabhängigen journalistischen Herkünften übereinstimmend berichtet. Unklar bleiben Verletztenzahl, Motiv, Verantwortlichkeit und das Ausmaß des Sachschadens. Für Menschen liegt deshalb ein hohes bedingtes Schadenspotenzial nahe, während ökologische und demokratische Folgen nur als indirekte Szenarien modellierbar sind. Weitere Quellen müssten insbesondere Opferangaben und mögliche Reaktionen staatlicher Stellen prüfen.",
+      "why_relevant": "Der belegte tödliche Anschlag betrifft Menschen unmittelbar und kann unter Bedingungen Sicherheitsgefühl, Polizeiarbeit und politische Reaktionen beeinflussen. Das Ausmaß weiterer Folgen ist offen.",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ongoing",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Berichte über einen Autobombenanschlag auf eine Polizeizentrale im Nordwesten Pakistans mit mindestens 16 Toten und Schäden an einer Moschee.",
+        "evaluation_target": {
+          "label": "berichteter Autobombenanschlag und seine möglichen Folgen",
+          "type": "event"
+        },
+        "baseline": "Sicherheitslage und öffentliche Infrastruktur vor dem berichteten Anschlag im betroffenen Umfeld.",
+        "counterfactual": "Ohne den Anschlag wären die unmittelbar berichteten Todesfälle und die damit verbundene Beschädigung der Moschee an diesem Ort voraussichtlich nicht eingetreten; weitergehende Abweichungen sind nicht belegt.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Schutz kritischer öffentlicher Einrichtungen",
+          "zivile Sicherheit und demokratische Handlungsfähigkeit"
+        ],
+        "temporal_status": "ongoing",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der belegte Tod von mindestens 16 Menschen ist eine bereits eingetretene schwere menschliche Folge. Weitere Verletzungen, Hilfebedarfe und längerfristige Belastungen bleiben offen; Schäden an einer Moschee können zusätzlich die Sicherheit von Gläubigen und lokaler Infrastruktur berühren.",
+            "planet": "Die Quellen belegen eine Explosion und Schäden an einer Moschee, aber keine konkreten Boden-, Luft- oder Gewässerfolgen. Ein begrenzter Pfad über Trümmer, Reparaturbedarf und mögliche lokale Belastungen ist denkbar, bleibt wegen fehlender Sachschadens- und Messdaten unsicher.",
+            "democracy": "Ein Anschlag auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und die öffentliche Sicherheitskommunikation belasten. Ob dies geschieht, wie stark es ausfällt und ob politische oder institutionelle Reaktionen folgen, ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Explosion kann unmittelbar Menschen töten, verletzen und eine Polizeizentrale sowie eine Moschee beschädigen.",
+          "second_order": "Weitere Belastungen könnten durch medizinische Versorgung, Reparaturen, Ermittlungen und eine erhöhte Sicherheitspräsenz entstehen; Umfang und Dauer sind offen.",
+          "third_order": "Bei wiederholten Anschlägen oder ausbleibender Aufklärung könnte sich die Sicherheitslage institutionell und gesellschaftlich verschärfen; dafür liegen keine belastbaren Folgedaten vor.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quellen nennen keine bestätigte Verletztenzahl, kein Motiv, keine Verantwortlichkeit und keinen Umfang weiterer Sachschäden. Die Berichte stammen teilweise aus möglicherweise verbundenen journalistischen Darstellungen; unabhängige Bestätigung ist nicht verifiziert."
+          ],
+          "source_independence": "Der Ereigniskern erscheint in Stern-, Tagesspiegel- und Deutschlandfunk-Darstellungen. Stern und Tagesspiegel verweisen auf dpa beziehungsweise weisen mögliche gemeinsame Formulierungen auf; die Unabhängigkeit der Berichte ist daher nicht vollständig belegt. Der Deutschlandfunk bestätigt die Zahl von mindestens 16 Toten, liefert aber in den bereitgestellten Ausschnitten keine unabhängige Detailprüfung.",
+          "institutional_status": "Es handelt sich um einen berichteten Anschlag und laufende beziehungsweise offene Sicherheits- und Ermittlungsfragen. Die Quellen belegen keinen Gerichtsentscheid, keine Verantwortungszuweisung und keine staatliche Folgemaßnahme."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "medium",
+            "likelihood": "already_occurring",
+            "data_status": "modelled",
+            "temporal_status": "ongoing",
+            "research_pass": "second_pass",
+            "research_result": "Die menschliche Schädigung ist durch Berichte über mindestens 16 Tote belegt. Verletztenzahl, genaue Opfergruppen und längerfristige Folgen bleiben ungeklärt; eine unabhängige Detailbestätigung ist in den gelieferten Ausschnitten nicht vollständig dokumentiert.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home",
+              "dlf-nachrichten"
+            ],
+            "rationale": "Der Tod von mindestens 16 Menschen ist eine schwere, bereits eingetretene menschliche Folge. Die Tragweite ist hoch, die genaue Verteilung und weitere Belastung bleiben wegen der begrenzten Textauswahl teilweise offen.",
+            "primary_paths": [
+              {
+                "label": "Unmittelbarer Verlust von mindestens 16 Menschenleben durch die Explosion",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Autobombenexplosion auf dem Gelände einer Polizeizentrale kann Menschen im betroffenen Bereich töten; die gelieferten Quellen berichten mindestens 16 Tote.",
+                "recipients": [
+                  "betroffene Menschen",
+                  "Angehörige",
+                  "Rettungs- und Versorgungseinrichtungen"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 4,
+                  "upper": 5,
+                  "rationale": "Mindestens 16 Tote belegen eine schwere unmittelbare Schädigung; zusätzliche Verletzte und der genaue räumliche Umfang sind nicht bekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mindestens 16 Menschen sind konkret betroffen; ein größerer Betroffenenkreis ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Der Verlust von Menschenleben stellt im betroffenen Kreis eine außergewöhnlich schwere Schädigung dar.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Todesfälle sind dauerhaft; weitere zeitliche Belastungen für Betroffene bleiben ungeklärt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Der Tod der berichteten Menschen ist nicht reversibel und betrifft ein elementares Schutzgut.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen im Explosionsbereich und ihre Angehörigen sind unmittelbar besonders schutzbedürftig.",
+                    "source_ids": [
+                      "tagesspiegel-home",
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die unmittelbare menschliche Schädigung ist tiefgreifend; systemische Folgeketten sind noch nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der belegte Tod von Menschen überschreitet die Schutzgrenze des Lebens auf einem negativen Pfad.",
+                  "reference_frame": "Schutz des menschlichen Lebens",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "observed"
+                },
+                "evidence": "medium",
+                "likelihood": "already_occurring",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der berichtete Ereigniskern und die Opferzahl müssen sich auf denselben Anschlag beziehen; die Quellenlage bleibt teilweise abhängig und unvollständig.",
+                "reference_space": "Betroffene Menschen und Angehörige im Umfeld der Polizeizentrale im Nordwesten Pakistans.",
+                "time_horizon": "Unmittelbar eingetreten; dauerhafte Folgen für die Verstorbenen und mögliche längerfristige Folgen für Angehörige.",
+                "path_quality": [
+                  "direct"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die in den Quellen genannten mindestens 16 Toten beziehen sich auf die berichtete Explosion.",
+                "source_support": "Die Quellen belegen den Anschlag und mindestens 16 Tote; sie belegen keine vollständige Opferbilanz und keinen spezifischen Explosionsmechanismus im Detail.",
+                "limitations": "Verletztenzahl, Motiv, Verantwortlichkeit und Umfang weiterer Schäden sind offen; unabhängige Bestätigung ist nicht vollständig dokumentiert.",
+                "first_order": "Die Explosion tötet mindestens 16 Menschen.",
+                "second_order": "Angehörige und Versorgungseinrichtungen könnten dauerhaft beziehungsweise über längere Zeit belastet werden; das Ausmaß ist nicht belegt.",
+                "third_order": "Wiederholte Gewalt könnte Sicherheitsbedürfnisse und staatliche Schutzanforderungen verstärken; eine solche Entwicklung ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Belegt ist der Tod von mindestens 16 Menschen; Verletztenzahl, genaue Betroffenengruppen und längerfristige Folgen bleiben eine Wissensgrenze.",
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": "Die gelieferten Berichte nennen mindestens 16 Tote infolge des Bombenanschlags.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 22,
+                  "divisor": 6,
+                  "raw": 3.6666666666666665,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Der negative Hauptpfad ist durch den berichteten Tod von mindestens 16 Menschen geprägt; ein vergleichbar starker positiver Gegenpfad ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Unmittelbarer Verlust von mindestens 16 Menschenleben durch die Explosion",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+                "direction": "negative",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "open",
+                "reference_frame": "Schutz des menschlichen Lebens",
+                "reference_space": "Menschen im Umfeld der Polizeizentrale im Nordwesten Pakistans",
+                "observed_at": "2026-09-18",
+                "temporal_status": "ongoing",
+                "mechanism": "Bombenanschlag mit einer Autobombe nach den gelieferten Berichten",
+                "recipients": [
+                  "betroffene Menschen",
+                  "Angehörige"
+                ],
+                "time_horizon": "Dauerhaft für die Getöteten; weitere Folgen sind offen.",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mindestens 16 Menschen sind als unmittelbar Betroffene berichtet.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Der Tod ist eine außergewöhnlich schwere unmittelbare Schädigung.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Die Todesfolge ist dauerhaft; weitere Belastungsdauer bleibt offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Der berichtete Verlust von Menschenleben ist nicht reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen im Explosionsbereich und Angehörige sind besonders schutzbedürftig.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die schwere Primärfolge ist belegt, systemische Nachwirkungen jedoch nicht.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der belegte Tod von Menschen verletzt die Schutzgrenze des Lebens.",
+                  "reference_frame": "Schutz des menschlichen Lebens",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 22,
+                  "divisor": 6,
+                  "raw": 3.6666666666666665,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "emerging",
+                  "ringLabel": "Erste / laufende Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− laufende Wirkung",
+                  "shortPathLabel": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten",
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Schutz des menschlichen Lebens",
+              "reference_space": "Menschen im Umfeld der Polizeizentrale im Nordwesten Pakistans",
+              "observed_at": "2026-09-18",
+              "temporal_status": "ongoing",
+              "mechanism": "Bombenanschlag mit einer Autobombe nach den gelieferten Berichten",
+              "recipients": [
+                "betroffene Menschen",
+                "Angehörige"
+              ],
+              "time_horizon": "Dauerhaft für die Getöteten; weitere Folgen sind offen.",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mindestens 16 Menschen sind als unmittelbar Betroffene berichtet.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Tod ist eine außergewöhnlich schwere unmittelbare Schädigung.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Die Todesfolge ist dauerhaft; weitere Belastungsdauer bleibt offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der berichtete Verlust von Menschenleben ist nicht reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen im Explosionsbereich und Angehörige sind besonders schutzbedürftig.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die schwere Primärfolge ist belegt, systemische Nachwirkungen jedoch nicht.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der belegte Tod von Menschen verletzt die Schutzgrenze des Lebens.",
+                "reference_frame": "Schutz des menschlichen Lebens",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "mittel",
+            "likelihood_label": "bereits eingetreten",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Laufende Prüfung",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen die Beschädigung einer Moschee, aber keine messbaren ökologischen Folgen. Ein möglicher lokaler Pfad über Trümmer, Reparatur und Entsorgung bleibt wegen fehlender Schadens- und Messdaten offen.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein begrenzter materieller und ökologischer Folgepfad ist denkbar, weil eine Explosion eine Moschee beschädigt haben soll. Die Richtung und Tragweite planetarer Folgen sind jedoch nicht belastbar bestimmbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche lokale Belastung durch Trümmer und Reparatur der beschädigten Moschee",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Explosionsschäden können Trümmer, Reparaturarbeiten und Entsorgungsbedarf erzeugen; konkrete Materialien, Mengen und Umweltpfade sind nicht berichtet.",
+                "recipients": [
+                  "natur",
+                  "kommunale Infrastruktur",
+                  "Anwohnerinnen und Anwohner"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine lokale Belastung ist plausibel, aber weder Ausmaß noch ökologische Richtung sind durch Messwerte oder Schadensdaten belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die berichtete Beschädigung betrifft nach den Ausschnitten einen lokalen Ort; weitere Reichweite ist offen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Beschädigung ist belegt, ihre konkrete materielle oder ökologische Intensität jedoch nicht.",
+                    "source_ids": [
+                      "tagesspiegel-home",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Reparatur- oder Entsorgungsfolgen könnten zeitlich begrenzt sein; Dauerangaben fehlen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte ökologische oder materielle Unumkehrbarkeit ist in den Quellen nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Lokale Umwelt- und Infrastrukturgüter könnten betroffen sein, konkrete verletzliche Systeme sind nicht ausgewiesen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Folgepfad ist denkbar, aber systemische ökologische Kaskaden sind nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home",
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen belegen keine schwere ökologische Grenzverletzung und keine belastbare dauerhafte Umweltveränderung.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müssten konkrete Trümmer-, Material-, Entsorgungs- oder Messdaten vorliegen und sich auf denselben Anschlag beziehen.",
+                "reference_space": "Lokales Umfeld der beschädigten Moschee und der Polizeizentrale.",
+                "time_horizon": "Kurz- bis mittelfristig während Sicherung, Reparatur und Entsorgung.",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die gemeldete Beschädigung kann materiellen Reparatur- und Entsorgungsbedarf einschließen.",
+                "source_support": "Die Quellen tragen den Bericht über die Beschädigung einer Moschee; sie tragen keine Aussage über konkrete ökologische Auswirkungen.",
+                "limitations": "Keine Messwerte, Schadenssumme, Materialangaben, Flächenangaben oder unabhängige Umweltprüfung liegen vor.",
+                "first_order": "Die Explosion könnte Trümmer und Reparaturbedarf an der Moschee hinterlassen.",
+                "second_order": "Sicherung und Entsorgung könnten lokale Ressourcen beanspruchen; Umfang und ökologische Richtung bleiben offen.",
+                "third_order": "Eine systemische ökologische Folge ist nicht aus den gelieferten Quellen ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Belege für messbare Umweltfolgen; die Wissensgrenze betrifft Schadensart, Material, Menge und Dauer.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven oder negativen planetaren Gegenpfad mit vergleichbarer Materialität; die Einordnung bleibt wegen fehlender Umweltdaten offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche lokale Belastung durch Trümmer und Reparatur der beschädigten Moschee",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche lokale Belastung durch Trümmer und Reparatur der beschädigten Moschee",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen einen Anschlag auf eine Polizeizentrale, aber keine beobachtete Veränderung von Vertrauen, Beteiligung, Repression oder institutionellen Regeln. Demokratische Folgen bleiben daher ein bedingter, unsicherer Pfad.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein Anschlag auf eine staatliche Sicherheitsinfrastruktur könnte Debatten über Schutz, Verantwortung und Sicherheitsmaßnahmen auslösen. Ob dies demokratische Korrekturfähigkeit stärkt oder belastet, ist ohne Reaktions- und Verlaufsdaten nicht bestimmbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Belastung des Vertrauens in staatlichen Schutz nach dem Anschlag auf eine Polizeizentrale",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ein tödlicher Anschlag auf eine Polizeizentrale kann öffentliche Sicherheitsdebatten und die Bewertung staatlicher Schutzfähigkeit beeinflussen; konkrete Reaktionen sind nicht berichtet.",
+                "recipients": [
+                  "Bevölkerung",
+                  "Polizeiinstitutionen",
+                  "politische Entscheidungsträger"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine institutionelle und kommunikative Folge ist plausibel, aber weder Vertrauensänderung noch politische Reaktion sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Ausgangspunkt ist ein lokales Sicherheitsereignis; eine überregionale demokratische Reichweite ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Vertrauensbelastung ist nicht gemessen und daher nur als begrenztes Potenzial einzuordnen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauerhafte institutionelle Folgen sind nicht belegt; die zeitliche Wirkung bleibt offen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine unumkehrbare demokratische Veränderung ist aus den gelieferten Quellen nicht ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Vertrauen in Schutzinstitutionen kann in einer akuten Sicherheitslage empfindlich reagieren, ist hier aber nicht gemessen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad betrifft Sicherheitskommunikation, nicht nachweislich demokratische Strukturen oder Regeln.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen belegen keine schwere Verletzung demokratischer Schutzgüter oder institutioneller Rechte.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Es müssten öffentliche Reaktionen, Sicherheitsentscheidungen oder belastbare Daten zu Vertrauen und Beteiligung vorliegen.",
+                "reference_space": "Öffentliche Sicherheitskommunikation und staatliche Institutionen im betroffenen Umfeld und darüber hinaus.",
+                "time_horizon": "Kurz- bis mittelfristig nach dem Anschlag; langfristige Wirkungen sind offen.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Polizeizentrale wird von der Bevölkerung als staatliche Schutzinstitution wahrgenommen und der Anschlag löst öffentliche Bewertung aus.",
+                "source_support": "Die Quellen belegen den Anschlag auf eine Polizeizentrale und die Zahl der Toten; sie belegen keine Vertrauens- oder Beteiligungsänderung.",
+                "limitations": "Keine Daten zu Reaktionen, Sicherheitsmaßnahmen, Verantwortungszuschreibungen, Diskursverläufen oder demokratischen Indikatoren liegen vor.",
+                "first_order": "Der Anschlag könnte öffentliche Sicherheitskommunikation und politische Aufmerksamkeit auslösen.",
+                "second_order": "Debatten über Schutz und Verantwortung könnten institutionelle Prioritäten beeinflussen; konkrete Entscheidungen sind nicht berichtet.",
+                "third_order": "Eine längerfristige Normalisierung von Ausnahme- oder Sicherheitslogiken ist nur eine Möglichkeit und nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Es fehlen belastbare Daten zu Vertrauen, Diskurs, Beteiligung und institutionellen Reaktionen; deshalb ist die demokratische Richtung offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein demokratischer Nutzen oder Schaden vergleichbarer Materialität ist nicht belegt; die mögliche Wirkung bleibt wegen fehlender Reaktionsdaten offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Belastung des Vertrauens in staatlichen Schutz nach dem Anschlag auf eine Polizeizentrale",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Belastung des Vertrauens in staatlichen Schutz nach dem Anschlag auf eine Polizeizentrale",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten",
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Schutz des menschlichen Lebens",
+            "reference_space": "Menschen im Umfeld der Polizeizentrale im Nordwesten Pakistans",
+            "observed_at": "2026-09-18",
+            "temporal_status": "ongoing",
+            "mechanism": "Bombenanschlag mit einer Autobombe nach den gelieferten Berichten",
+            "recipients": [
+              "betroffene Menschen",
+              "Angehörige"
+            ],
+            "time_horizon": "Dauerhaft für die Getöteten; weitere Folgen sind offen.",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Mindestens 16 Menschen sind als unmittelbar Betroffene berichtet.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Der Tod ist eine außergewöhnlich schwere unmittelbare Schädigung.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 3,
+                "rationale": "Die Todesfolge ist dauerhaft; weitere Belastungsdauer bleibt offen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der berichtete Verlust von Menschenleben ist nicht reversibel.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Menschen im Explosionsbereich und Angehörige sind besonders schutzbedürftig.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Die schwere Primärfolge ist belegt, systemische Nachwirkungen jedoch nicht.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der belegte Tod von Menschen verletzt die Schutzgrenze des Lebens.",
+              "reference_frame": "Schutz des menschlichen Lebens",
+              "source_ids": [
+                "dlf-nachrichten",
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 22,
+              "divisor": 6,
+              "raw": 3.6666666666666665,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T14:27:34.727Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über mindestens 14 Tote, den Anschlag auf dem Gelände einer Polizeizentrale in Kohat und die Zuschreibung an Polizeiangaben."
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über die Autobombenexplosion, die getroffene Polizeizentrale und die Beschädigung einer Moschee."
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht, dass in Pakistan mindestens 16 Menschen bei einem Bombenanschlag getötet wurden."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "medium",
+          "likelihood": "already_occurring",
+          "data_status": "modelled",
+          "temporal_status": "ongoing",
+          "research_pass": "second_pass",
+          "research_result": "Die menschliche Schädigung ist durch Berichte über mindestens 16 Tote belegt. Verletztenzahl, genaue Opfergruppen und längerfristige Folgen bleiben ungeklärt; eine unabhängige Detailbestätigung ist in den gelieferten Ausschnitten nicht vollständig dokumentiert.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home",
+            "dlf-nachrichten"
+          ],
+          "rationale": "Der Tod von mindestens 16 Menschen ist eine schwere, bereits eingetretene menschliche Folge. Die Tragweite ist hoch, die genaue Verteilung und weitere Belastung bleiben wegen der begrenzten Textauswahl teilweise offen.",
+          "primary_paths": [
+            {
+              "label": "Unmittelbarer Verlust von mindestens 16 Menschenleben durch die Explosion",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Autobombenexplosion auf dem Gelände einer Polizeizentrale kann Menschen im betroffenen Bereich töten; die gelieferten Quellen berichten mindestens 16 Tote.",
+              "recipients": [
+                "betroffene Menschen",
+                "Angehörige",
+                "Rettungs- und Versorgungseinrichtungen"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 4,
+                "upper": 5,
+                "rationale": "Mindestens 16 Tote belegen eine schwere unmittelbare Schädigung; zusätzliche Verletzte und der genaue räumliche Umfang sind nicht bekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mindestens 16 Menschen sind konkret betroffen; ein größerer Betroffenenkreis ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Verlust von Menschenleben stellt im betroffenen Kreis eine außergewöhnlich schwere Schädigung dar.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Todesfälle sind dauerhaft; weitere zeitliche Belastungen für Betroffene bleiben ungeklärt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der Tod der berichteten Menschen ist nicht reversibel und betrifft ein elementares Schutzgut.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen im Explosionsbereich und ihre Angehörigen sind unmittelbar besonders schutzbedürftig.",
+                  "source_ids": [
+                    "tagesspiegel-home",
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die unmittelbare menschliche Schädigung ist tiefgreifend; systemische Folgeketten sind noch nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der belegte Tod von Menschen überschreitet die Schutzgrenze des Lebens auf einem negativen Pfad.",
+                "reference_frame": "Schutz des menschlichen Lebens",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "evidence": "medium",
+              "likelihood": "already_occurring",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten",
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der berichtete Ereigniskern und die Opferzahl müssen sich auf denselben Anschlag beziehen; die Quellenlage bleibt teilweise abhängig und unvollständig.",
+              "reference_space": "Betroffene Menschen und Angehörige im Umfeld der Polizeizentrale im Nordwesten Pakistans.",
+              "time_horizon": "Unmittelbar eingetreten; dauerhafte Folgen für die Verstorbenen und mögliche längerfristige Folgen für Angehörige.",
+              "path_quality": [
+                "direct"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die in den Quellen genannten mindestens 16 Toten beziehen sich auf die berichtete Explosion.",
+              "source_support": "Die Quellen belegen den Anschlag und mindestens 16 Tote; sie belegen keine vollständige Opferbilanz und keinen spezifischen Explosionsmechanismus im Detail.",
+              "limitations": "Verletztenzahl, Motiv, Verantwortlichkeit und Umfang weiterer Schäden sind offen; unabhängige Bestätigung ist nicht vollständig dokumentiert.",
+              "first_order": "Die Explosion tötet mindestens 16 Menschen.",
+              "second_order": "Angehörige und Versorgungseinrichtungen könnten dauerhaft beziehungsweise über längere Zeit belastet werden; das Ausmaß ist nicht belegt.",
+              "third_order": "Wiederholte Gewalt könnte Sicherheitsbedürfnisse und staatliche Schutzanforderungen verstärken; eine solche Entwicklung ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Belegt ist der Tod von mindestens 16 Menschen; Verletztenzahl, genaue Betroffenengruppen und längerfristige Folgen bleiben eine Wissensgrenze.",
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": "Die gelieferten Berichte nennen mindestens 16 Tote infolge des Bombenanschlags.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Der negative Hauptpfad ist durch den berichteten Tod von mindestens 16 Menschen geprägt; ein vergleichbar starker positiver Gegenpfad ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Unmittelbarer Verlust von mindestens 16 Menschenleben durch die Explosion",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten",
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Schutz des menschlichen Lebens",
+              "reference_space": "Menschen im Umfeld der Polizeizentrale im Nordwesten Pakistans",
+              "observed_at": "2026-09-18",
+              "temporal_status": "ongoing",
+              "mechanism": "Bombenanschlag mit einer Autobombe nach den gelieferten Berichten",
+              "recipients": [
+                "betroffene Menschen",
+                "Angehörige"
+              ],
+              "time_horizon": "Dauerhaft für die Getöteten; weitere Folgen sind offen.",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mindestens 16 Menschen sind als unmittelbar Betroffene berichtet.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Tod ist eine außergewöhnlich schwere unmittelbare Schädigung.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Die Todesfolge ist dauerhaft; weitere Belastungsdauer bleibt offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der berichtete Verlust von Menschenleben ist nicht reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen im Explosionsbereich und Angehörige sind besonders schutzbedürftig.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die schwere Primärfolge ist belegt, systemische Nachwirkungen jedoch nicht.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der belegte Tod von Menschen verletzt die Schutzgrenze des Lebens.",
+                "reference_frame": "Schutz des menschlichen Lebens",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten",
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Schutz des menschlichen Lebens",
+            "reference_space": "Menschen im Umfeld der Polizeizentrale im Nordwesten Pakistans",
+            "observed_at": "2026-09-18",
+            "temporal_status": "ongoing",
+            "mechanism": "Bombenanschlag mit einer Autobombe nach den gelieferten Berichten",
+            "recipients": [
+              "betroffene Menschen",
+              "Angehörige"
+            ],
+            "time_horizon": "Dauerhaft für die Getöteten; weitere Folgen sind offen.",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Mindestens 16 Menschen sind als unmittelbar Betroffene berichtet.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Der Tod ist eine außergewöhnlich schwere unmittelbare Schädigung.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 3,
+                "rationale": "Die Todesfolge ist dauerhaft; weitere Belastungsdauer bleibt offen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der berichtete Verlust von Menschenleben ist nicht reversibel.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Menschen im Explosionsbereich und Angehörige sind besonders schutzbedürftig.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Die schwere Primärfolge ist belegt, systemische Nachwirkungen jedoch nicht.",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "tagesspiegel-home"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der belegte Tod von Menschen verletzt die Schutzgrenze des Lebens.",
+              "reference_frame": "Schutz des menschlichen Lebens",
+              "source_ids": [
+                "dlf-nachrichten",
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 22,
+              "divisor": 6,
+              "raw": 3.6666666666666665,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "Mindestens 16 Menschen wurden bei dem Bombenanschlag getötet.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "mittel",
+          "likelihood_label": "bereits eingetreten",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Laufende Prüfung",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen die Beschädigung einer Moschee, aber keine messbaren ökologischen Folgen. Ein möglicher lokaler Pfad über Trümmer, Reparatur und Entsorgung bleibt wegen fehlender Schadens- und Messdaten offen.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein begrenzter materieller und ökologischer Folgepfad ist denkbar, weil eine Explosion eine Moschee beschädigt haben soll. Die Richtung und Tragweite planetarer Folgen sind jedoch nicht belastbar bestimmbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche lokale Belastung durch Trümmer und Reparatur der beschädigten Moschee",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Explosionsschäden können Trümmer, Reparaturarbeiten und Entsorgungsbedarf erzeugen; konkrete Materialien, Mengen und Umweltpfade sind nicht berichtet.",
+              "recipients": [
+                "natur",
+                "kommunale Infrastruktur",
+                "Anwohnerinnen und Anwohner"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine lokale Belastung ist plausibel, aber weder Ausmaß noch ökologische Richtung sind durch Messwerte oder Schadensdaten belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die berichtete Beschädigung betrifft nach den Ausschnitten einen lokalen Ort; weitere Reichweite ist offen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Beschädigung ist belegt, ihre konkrete materielle oder ökologische Intensität jedoch nicht.",
+                  "source_ids": [
+                    "tagesspiegel-home",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Reparatur- oder Entsorgungsfolgen könnten zeitlich begrenzt sein; Dauerangaben fehlen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte ökologische oder materielle Unumkehrbarkeit ist in den Quellen nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Lokale Umwelt- und Infrastrukturgüter könnten betroffen sein, konkrete verletzliche Systeme sind nicht ausgewiesen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Folgepfad ist denkbar, aber systemische ökologische Kaskaden sind nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home",
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen keine schwere ökologische Grenzverletzung und keine belastbare dauerhafte Umweltveränderung.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home",
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müssten konkrete Trümmer-, Material-, Entsorgungs- oder Messdaten vorliegen und sich auf denselben Anschlag beziehen.",
+              "reference_space": "Lokales Umfeld der beschädigten Moschee und der Polizeizentrale.",
+              "time_horizon": "Kurz- bis mittelfristig während Sicherung, Reparatur und Entsorgung.",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die gemeldete Beschädigung kann materiellen Reparatur- und Entsorgungsbedarf einschließen.",
+              "source_support": "Die Quellen tragen den Bericht über die Beschädigung einer Moschee; sie tragen keine Aussage über konkrete ökologische Auswirkungen.",
+              "limitations": "Keine Messwerte, Schadenssumme, Materialangaben, Flächenangaben oder unabhängige Umweltprüfung liegen vor.",
+              "first_order": "Die Explosion könnte Trümmer und Reparaturbedarf an der Moschee hinterlassen.",
+              "second_order": "Sicherung und Entsorgung könnten lokale Ressourcen beanspruchen; Umfang und ökologische Richtung bleiben offen.",
+              "third_order": "Eine systemische ökologische Folge ist nicht aus den gelieferten Quellen ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Belege für messbare Umweltfolgen; die Wissensgrenze betrifft Schadensart, Material, Menge und Dauer.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven oder negativen planetaren Gegenpfad mit vergleichbarer Materialität; die Einordnung bleibt wegen fehlender Umweltdaten offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche lokale Belastung durch Trümmer und Reparatur der beschädigten Moschee",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche lokale Belastung durch Trümmer und Reparatur der beschädigten Moschee",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen einen Anschlag auf eine Polizeizentrale, aber keine beobachtete Veränderung von Vertrauen, Beteiligung, Repression oder institutionellen Regeln. Demokratische Folgen bleiben daher ein bedingter, unsicherer Pfad.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein Anschlag auf eine staatliche Sicherheitsinfrastruktur könnte Debatten über Schutz, Verantwortung und Sicherheitsmaßnahmen auslösen. Ob dies demokratische Korrekturfähigkeit stärkt oder belastet, ist ohne Reaktions- und Verlaufsdaten nicht bestimmbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Belastung des Vertrauens in staatlichen Schutz nach dem Anschlag auf eine Polizeizentrale",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ein tödlicher Anschlag auf eine Polizeizentrale kann öffentliche Sicherheitsdebatten und die Bewertung staatlicher Schutzfähigkeit beeinflussen; konkrete Reaktionen sind nicht berichtet.",
+              "recipients": [
+                "Bevölkerung",
+                "Polizeiinstitutionen",
+                "politische Entscheidungsträger"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine institutionelle und kommunikative Folge ist plausibel, aber weder Vertrauensänderung noch politische Reaktion sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Ausgangspunkt ist ein lokales Sicherheitsereignis; eine überregionale demokratische Reichweite ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Vertrauensbelastung ist nicht gemessen und daher nur als begrenztes Potenzial einzuordnen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauerhafte institutionelle Folgen sind nicht belegt; die zeitliche Wirkung bleibt offen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine unumkehrbare demokratische Veränderung ist aus den gelieferten Quellen nicht ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Vertrauen in Schutzinstitutionen kann in einer akuten Sicherheitslage empfindlich reagieren, ist hier aber nicht gemessen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad betrifft Sicherheitskommunikation, nicht nachweislich demokratische Strukturen oder Regeln.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen keine schwere Verletzung demokratischer Schutzgüter oder institutioneller Rechte.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten",
+                "tagesspiegel-home"
+              ],
+              "condition": "Es müssten öffentliche Reaktionen, Sicherheitsentscheidungen oder belastbare Daten zu Vertrauen und Beteiligung vorliegen.",
+              "reference_space": "Öffentliche Sicherheitskommunikation und staatliche Institutionen im betroffenen Umfeld und darüber hinaus.",
+              "time_horizon": "Kurz- bis mittelfristig nach dem Anschlag; langfristige Wirkungen sind offen.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Polizeizentrale wird von der Bevölkerung als staatliche Schutzinstitution wahrgenommen und der Anschlag löst öffentliche Bewertung aus.",
+              "source_support": "Die Quellen belegen den Anschlag auf eine Polizeizentrale und die Zahl der Toten; sie belegen keine Vertrauens- oder Beteiligungsänderung.",
+              "limitations": "Keine Daten zu Reaktionen, Sicherheitsmaßnahmen, Verantwortungszuschreibungen, Diskursverläufen oder demokratischen Indikatoren liegen vor.",
+              "first_order": "Der Anschlag könnte öffentliche Sicherheitskommunikation und politische Aufmerksamkeit auslösen.",
+              "second_order": "Debatten über Schutz und Verantwortung könnten institutionelle Prioritäten beeinflussen; konkrete Entscheidungen sind nicht berichtet.",
+              "third_order": "Eine längerfristige Normalisierung von Ausnahme- oder Sicherheitslogiken ist nur eine Möglichkeit und nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Es fehlen belastbare Daten zu Vertrauen, Diskurs, Beteiligung und institutionellen Reaktionen; deshalb ist die demokratische Richtung offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein demokratischer Nutzen oder Schaden vergleichbarer Materialität ist nicht belegt; die mögliche Wirkung bleibt wegen fehlender Reaktionsdaten offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Belastung des Vertrauens in staatlichen Schutz nach dem Anschlag auf eine Polizeizentrale",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Belastung des Vertrauens in staatlichen Schutz nach dem Anschlag auf eine Polizeizentrale",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "second_order",
+            "path": "Unter Bedingungen erhöhter Unsicherheit könnten Behörden Schutzmaßnahmen verstärken.",
+            "direction": "open",
+            "condition": "Eine solche Reaktion hängt von behördlichen Bewertungen und dem weiteren Sachverhalt ab.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "democracy"
+            ]
+          },
+          {
+            "order": "third_order",
+            "path": "Längerfristig könnte der Anschlag Sicherheits- und Verantwortungsdebatten beeinflussen.",
+            "direction": "open",
+            "condition": "Das setzt öffentliche und institutionelle Folgereaktionen voraus, die nicht belegt sind.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "key_figures": [
+          {
+            "label": "Getötete Menschen",
+            "value": "16",
+            "unit": "Menschen",
+            "context": "Von mehreren vorliegenden Berichten genannte Mindestzahl der Todesopfer.",
+            "claim_id": "wt-1e97ba2918206370-v4-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "kinder_jugend",
+          "haushalte"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die hohe Opferzahl und die Bezeichnung als Terrorismus können die Sicherheitsdebatte prägen; die Ursachen bleiben offen.",
+        "factual_core": "Vorliegende Berichte nennen mindestens 16 Tote bei einem Autobombenanschlag in Pakistan.",
+        "epistemic_status": {
+          "confirmed": [
+            "Mindestens 16 Tote werden von zwei journalistischen Herkünften berichtet."
+          ],
+          "actor_claims": [
+            "Die Opferzahl wird laut Berichten auf Polizeiangaben gestützt."
+          ],
+          "open": [
+            "Verletztenzahl, Motiv, Verantwortlichkeit und Sachschaden"
+          ]
+        },
+        "attribution": {
+          "frame_source": "dlf-nachrichten",
+          "speaker": "offen",
+          "original_term": "Terrorismus",
+          "usage_type": "editorial",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Terrorismus",
+          "origin_in_story": "dlf-nachrichten",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Terrorismus",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Der Vorgang wird als sicherheitsbezogener Gewaltakt eingeordnet.",
+          "implied_cause": "Eine konkrete Ursache wird nicht belegt.",
+          "implied_responsibility": "Verantwortliche werden nicht benannt.",
+          "implied_threat": "Der Begriff kann eine über den konkreten Ereigniskern hinausgehende Bedrohungsdeutung nahelegen.",
+          "implied_solution_space": "Mögliche Sicherheitsreaktionen werden nahegelegt, aber nicht konkret benannt.",
+          "material_omissions": [
+            "Motiv und Verantwortlichkeit",
+            "Verletztenzahl",
+            "Umfang des Sachschadens"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Die gelieferten Quellen belegen keine politische Urheberschaft oder konkrete Folgereaktion."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sicherheits- und Verantwortungsdebatten",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "medium",
+          "trust_effect_potential": "open",
+          "discourse_effect_potential": "Die Meldung kann Aufmerksamkeit für Sicherheitsfragen bündeln; eine konkrete Wirkung auf Einstellungen ist nicht belegt."
+        },
+        "impact_path": {
+          "first_order": "Die Berichterstattung macht den tödlichen Anschlag öffentlich sichtbar.",
+          "second_order": "Die sicherheitsbezogene Rahmung kann Debatten über Schutzmaßnahmen beeinflussen.",
+          "third_order": "Wiederholte unbestätigte Zuschreibungen könnten Vertrauen und Verantwortungsdebatten belasten."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Mindestens 16 Tote werden in mehreren vorliegenden Berichten genannt. Eine Polizeizentrale wird als Ziel beschrieben.",
+          "what_is_inferred": "Sicherheitsdebatten könnten Aufmerksamkeit erhalten.",
+          "what_is_open": "Kein Publikums- oder Verhaltensnachweis Begrenzte Quellenausschnitte Keine unabhängige Bestätigung der Verantwortlichkeit",
+          "facts": [
+            "Mindestens 16 Tote werden in mehreren vorliegenden Berichten genannt.",
+            "Eine Polizeizentrale wird als Ziel beschrieben."
+          ],
+          "observations": [
+            "Die Quellenlage enthält unterschiedliche, teils gleichlautende journalistische Darstellungen."
+          ],
+          "inferences": [
+            "Sicherheitsdebatten könnten Aufmerksamkeit erhalten."
+          ],
+          "impact_potentials": [
+            "Mögliche stärkere Nachfrage nach Schutzmaßnahmen."
+          ],
+          "impact_risks": [
+            "Mögliche Verengung auf einen Bedrohungsframe ohne geklärtes Motiv."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Kein Publikums- oder Verhaltensnachweis",
+            "Begrenzte Quellenausschnitte",
+            "Keine unabhängige Bestätigung der Verantwortlichkeit"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Belegt ist, dass mehrere vorliegende Berichte mindestens 16 Tote nach einem Autobombenanschlag in Pakistan nennen. Ein Quellenausschnitt beschreibt eine Polizeizentrale als Ziel und berichtet von einer beschädigten Moschee. Der Deutschlandfunk verwendet den Begriff Terrorismus; damit wird der Vorgang in einen sicherheitspolitischen Rahmen gestellt. Das kann Aufmerksamkeit und Debatten über Schutzmaßnahmen verstärken. Daraus folgt aber nicht, wer verantwortlich war oder welches Motiv vorlag. Auch Verletztenzahl und weiterer Sachschaden sind offen. Die mögliche Wirkung auf Vertrauen, politische Entscheidungen oder gesellschaftliche Spannungen ist deshalb nur ein Szenario, kein beobachteter Effekt. Sachliche Berichterstattung sollte den belegten Ereigniskern von Zuschreibungen und offenen Fragen trennen.",
+        "editorial_assessment": "Belegt ist, dass mehrere vorliegende Berichte mindestens 16 Tote nach einem Autobombenanschlag in Pakistan nennen. Ein Quellenausschnitt beschreibt eine Polizeizentrale als Ziel und berichtet von einer beschädigten Moschee. Der Deutschlandfunk verwendet den Begriff Terrorismus; damit wird der Vorgang in einen sicherheitspolitischen Rahmen gestellt. Das kann Aufmerksamkeit und Debatten über Schutzmaßnahmen verstärken. Daraus folgt aber nicht, wer verantwortlich war oder welches Motiv vorlag. Auch Verletztenzahl und weiterer Sachschaden sind offen. Die mögliche Wirkung auf Vertrauen, politische Entscheidungen oder gesellschaftliche Spannungen ist deshalb nur ein Szenario, kein beobachteter Effekt. Sachliche Berichterstattung sollte den belegten Ereigniskern von Zuschreibungen und offenen Fragen trennen.",
+        "fact_first_alternative": "Mehrere Berichte nennen mindestens 16 Tote bei einem Autobombenanschlag in Pakistan; Motiv, Verantwortlichkeit und weitere Schäden sind offen. Der Deutschlandfunk ordnet den Vorgang als Terrorismus ein.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der Begriff Terrorismus kann eine Verantwortungs- und Bedrohungsdeutung nahelegen, obwohl Motiv und Verantwortlichkeit offen sind."
+          ],
+          "frame_repetition_count": 0,
+          "rewrite_required": true,
+          "recommended_title": "Laut Polizei mindestens 16 Tote bei Autobombenanschlag in Pakistan",
+          "recommended_summary": "Bei einem Autobombenanschlag in Pakistan wurden laut Polizei mindestens 16 Menschen getötet. Weitere Angaben zu Verletzten, Motiv und Verantwortlichkeit sind offen.",
+          "recommended_meta_description": "Mindestens 16 Tote werden nach einem Autobombenanschlag in Pakistan gemeldet. Ziel war eine Polizeizentrale; weitere Folgen bleiben offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Stern beziehungsweise Tagesspiegel und Deutschlandfunk bilden zwei journalistische Herkünfte; die Unabhängigkeit einzelner Schlagzeilen ist nicht vollständig dokumentiert."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T14:23:00.609Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T09:37:40.000Z",
+      "last_updated": "2026-09-18T14:27:34.720Z",
+      "version": 4,
+      "news_status": "updated",
+      "event_id": "event-69f9100ffb6a2110eddd",
+      "case_file": null,
+      "source_published_at": "2026-09-18T09:37:40.000Z",
+      "published_at": "2026-09-18T09:55:40.233Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Die Zahl der Verletzten und das Ausmaß der Sachschäden müssen weiter geprüft werden.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Unabhängig bestätigte Angaben zu Verletzten und Sachschäden",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0f561fe0295155ca",
+          "announced_at": "2026-09-18T09:37:40.000Z",
+          "follow_up_date": "2026-09-25T10:12:24.373Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Verantwortlichkeit und das Motiv des Anschlags bleiben zu klären.",
+          "source_id": "tagesspiegel-home",
+          "measurable_indicator": "Behördlich oder unabhängig belegte Angaben zu Verantwortlichkeit und Motiv",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2ac9a36a4d676a26",
+          "announced_at": "2026-09-18T09:56:32.000Z",
+          "follow_up_date": "2026-09-25T10:12:24.373Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Opferzahl, die Zahl der Verletzten sowie Motiv und Verantwortlichkeit des Anschlags bleiben zu prüfen.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Neue amtliche oder unabhängige Angaben zu Toten, Verletzten, Motiv oder Verantwortlichkeit",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0b571d2d3253d07b",
+          "announced_at": "2026-09-18T09:37:40.000Z",
+          "follow_up_date": "2026-09-25T10:41:46.649Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Verletztenzahl, der Sachschaden sowie Motiv und Verantwortlichkeit sollten mit weiteren Primär- und unabhängigen Quellen geprüft werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigte Angaben zu Verletzten, Sachschaden, Motiv und Verantwortlichkeit",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-673482fde25134c6",
+          "announced_at": "2026-09-18T14:14:35.000Z",
+          "follow_up_date": "2026-09-25T14:27:34.720Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/explosionen--mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-38272370.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T09:37:40.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-16069461.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T09:56:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/explosionen--mindestens-16-tote-bei-anschlag-mit-autobombe-in-pakistan-38272532.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T10:35:14.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-explosionen-mindestens-16-tote-bei-anschlag-mit-autobombe-in-pakistan-16069461.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T09:56:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/mindestens-16-tote-bei-anschlag-in-pakistan-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T14:14:35.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-koordinierte-attacke-zahlreiche-tote-bei-anschlag-mit-autobombe-in-pakistan-16069461.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T09:56:32.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-be0ebac4cfdc4b24",
       "title_image": {
@@ -9102,2068 +11007,6 @@
           "url": "https://www.stern.de/gesellschaft/regional/sachsen/versuchter-totschlag--nach-messerangriff-in-dresden--anklage-gegen-36-jaehrigen-38272172.html",
           "source_type": "media_rss",
           "published_at": "2026-09-18T09:07:56.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-1e97ba2918206370",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1e97ba2918206370-fdd335ef7679e5ef-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1e97ba2918206370-5f7e39c2ed7a50ec-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1e97ba2918206370-52a6650736653726-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370",
-      "title": "Laut Polizei mindestens 16 Tote bei Autobombenanschlag in Pakistan",
-      "source_summary": "Zwei vorliegende journalistische Darstellungen berichten über einen Autobombenanschlag auf eine Polizeizentrale im Nordwesten Pakistans. Eine Meldung gibt unter Berufung auf einen lokalen Polizeivertreter zunächst mindestens 14 Tote an und verortet den Angriff in Kohat. Eine weitere Darstellung berichtet, dass auch eine Moschee während des Freitagsgebets beschädigt wurde.\n\nEine spätere Schlagzeile nennt mindestens 16 Tote. Damit hat sich die berichtete Opferzahl innerhalb des vorliegenden Quellenbestands verändert. Die Quellenlage stammt jedoch aus einer gemeinsamen journalistischen Herkunft beziehungsweise ist nicht als unabhängig bestätigt dokumentiert.\n\nNicht belegt sind in den vorliegenden Ausschnitten die Zahl der Verletzten, das Motiv, die Verantwortlichkeit und das Ausmaß weiterer Sachschäden. Der Sachverhalt ist deshalb als aktualisierte, aber weiterhin zugeschriebene Meldung einzuordnen.",
-      "summary": "Bei einem Autobombenanschlag auf eine Polizeizentrale im Nordwesten Pakistans werden laut Polizei mindestens 16 Tote berichtet. Auch eine Moschee soll beschädigt worden sein; Verletztenzahl, Motiv und Verantwortlichkeit bleiben offen.",
-      "detail_summary": "Bei einem Autobombenanschlag im Nordwesten Pakistans werden nach Polizeiangaben zunächst mindestens 14, in einer späteren Schlagzeile mindestens 16 Tote berichtet. Der Angriff soll sich auf dem Gelände einer Polizeizentrale in Kohat ereignet haben. Eine weitere Darstellung nennt Schäden an einer Moschee während des Freitagsgebets. Der belegte Schaden macht den Vorgang für die menschliche Sicherheit unmittelbar relevant; darüber hinaus können Rettung, Versorgung und das Sicherheitsgefühl in der Umgebung belastet werden. Solche Folgen bleiben im vorliegenden Material jedoch Wirkpotenziale und sind nicht als eingetretene Kaskaden belegt. Verletztenzahl, Motiv, Verantwortlichkeit und weitere Sachschäden sind offen. Die Quellen sind zudem nicht als unabhängig bestätigt dokumentiert.",
-      "why_relevant": "Die berichtete Zahl der Todesopfer wurde aktualisiert; zugleich betrifft der Anschlag eine Polizeizentrale und nach einer Quelle auch eine Moschee. Das macht mögliche Folgen für Sicherheit, Versorgung und Vertrauen prüfbar, ohne sie vorwegzunehmen.",
-      "topic": [
-        "Gesellschaft",
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Aktualisierte Berichte über einen Autobombenanschlag auf eine Polizeizentrale im Nordwesten Pakistans mit mindestens 16 berichteten Toten.",
-        "evaluation_target": {
-          "label": "berichteter Autobombenanschlag und seine möglichen Folgen",
-          "type": "event"
-        },
-        "baseline": "Lokale Sicherheits-, Versorgungs- und Vertrauenslage vor dem berichteten Anschlag; konkrete Vergleichsdaten fehlen.",
-        "counterfactual": "Ohne den Anschlag wären die unmittelbar durch Explosion und Todesfälle ausgelösten Belastungen am Ereignisort nicht entstanden; weitergehende Entwicklungen hängen von unbekannten Bedingungen ab.",
-        "reference_frame": [
-          "Schutz von Leben und körperlicher Unversehrtheit",
-          "lokale zivile und institutionelle Sicherheit",
-          "Agenda 2030/SDG 16"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "high",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Der unmittelbare menschliche Schaden ist als zugeschriebener Bericht belegt. Weitere Belastungen für Verletzte, Rettung, Versorgung und Sicherheit sind nur bedingt modellierbar, weil Verletztenzahl und Schadensumfang offen sind.",
-            "planet": "Die Quellen belegen keine ökologischen Schäden. Eine begrenzte lokale Belastung durch Explosion, Trümmer oder Reparaturarbeiten ist als unsicherer Pfad denkbar, aber nicht gemessen.",
-            "democracy": "Ein Anschlag auf eine Polizeizentrale könnte bei anhaltender Unsicherheit Vertrauen in Schutzinstitutionen und öffentliche Koordination belasten. Reaktionen, Debatten und Vertrauensdaten fehlen."
-          },
-          "central_dimensions": [
-            "human",
-            "democracy"
-          ],
-          "first_order": "Todesfälle sowie mögliche Schäden an Polizeiinfrastruktur und einer Moschee verändern die unmittelbare Sicherheitslage.",
-          "second_order": "Rettungsbedarf, eingeschränkter Zugang und anhaltende Unsicherheit könnten Versorgung, Alltag und Vertrauen im lokalen Umfeld belasten.",
-          "third_order": "Wiederholte Gewalt oder umstrittene Reaktionen könnten institutionelle Legitimität und gesellschaftliche Koordination schwächen; Folgeereignisse sind nicht belegt.",
-          "enablement": [],
-          "counter_evidence": [
-            "Die Opferzahl erscheint im Quellenbestand zunächst mit mindestens 14 und später mit mindestens 16; die unabhängige Herkunft der Berichte ist nicht verifiziert.",
-            "Verletztenzahl, Motiv, Verantwortlichkeit, Ausmaß der Sachschäden, Rettungsmaßnahmen und institutionelle Reaktionen bleiben offen.",
-            "Ökologische Schäden und demokratische Folgeeffekte sind nicht beobachtet."
-          ],
-          "source_independence": "Es liegen zwei journalistische source_id vor, die Akte dokumentiert jedoch nur eine mögliche unabhängige Herkunft und mögliche Syndizierung. Eine unabhängige Bestätigung ist nicht verifiziert.",
-          "institutional_status": "Es wird ein berichtetes Ereignis mit zugeschriebenen Polizeiangaben bewertet. Ein Beschluss-, Rechts- oder Umsetzungsstatus liegt nicht vor."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 4,
-            "evidence": "medium",
-            "likelihood": "high",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Der Tod von mindestens 16 Menschen wird in einer späteren Schlagzeile berichtet, ist aber nicht unabhängig bestätigt. Verletztenzahl, Reichweite weiterer Schäden und längerfristige Folgen bleiben offen.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "rationale": "Der berichtete Tod von mindestens 16 Menschen begründet ein hohes menschliches Wirkungspotenzial. Zusätzliche Belastungen für Rettung, Versorgung und Sicherheit bleiben wegen fehlender Angaben bedingt und unsicher.",
-            "primary_paths": [
-              {
-                "label": "Todesfälle und zusätzliche Sicherheitsbelastung am Ereignisort",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Eine Autobombenexplosion kann Menschen töten, Infrastruktur beschädigen und Rettungs- sowie Schutzressourcen binden.",
-                "recipients": [
-                  "Angehörige",
-                  "Bewohnerinnen und Bewohner im Umfeld",
-                  "Polizei und Rettungsdienste"
-                ],
-                "magnitude": 4,
-                "magnitude_range": {
-                  "lower": 3,
-                  "upper": 4,
-                  "rationale": "Die berichteten Todesfälle sind schwerwiegend; Umfang und Dauer zusätzlicher Belastungen bleiben wegen fehlender Verletzten- und Schadensdaten begrenzt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Der belegte Ort ist lokal, die Folgen können jedoch mehrere betroffene Gruppen erreichen.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 4,
-                    "rationale": "Mindestens 16 berichtete Tote markieren eine hohe unmittelbare Schwere.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 3,
-                    "rationale": "Todesfälle wirken dauerhaft; weitere Belastungen können zeitlich begrenzt bleiben.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 4,
-                    "rationale": "Der Verlust von Menschenleben ist nicht reversibel; Folgeschäden bleiben offen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 4,
-                    "rationale": "Betroffene Zivilpersonen und Nutzer der beschädigten Moschee können besonders schutzbedürftig sein.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Sicherheits- und Versorgungsbeziehungen könnten über den unmittelbaren Ort hinaus belastet werden.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Der berichtete Todesfall wird als beobachteter Schaden separat erfasst; dieser ex-ante-Pfad bewertet nur mögliche weitere Belastungen.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "medium",
-                "likelihood": "high",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ],
-                "condition": "Zusätzliche Belastungen setzen weitere Schäden, Rettungsbedarf oder anhaltende Unsicherheit voraus.",
-                "reference_space": "Polizeizentrale, Moschee und angrenzendes lokales Umfeld in Kohat",
-                "time_horizon": "unmittelbar bis mittelfristig",
-                "path_quality": [
-                  "direct",
-                  "systemic"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Die berichtete Explosion und die Todesfälle beziehen sich auf dasselbe Ereignis.",
-                "source_support": "Die Quellen tragen Ereignisart, Ort, zugeschriebene Todeszahl und Moscheeschaden; sie belegen keine vollständige Folgekette.",
-                "limitations": "Verletztenzahl, Schadensausmaß, Reaktionen und Dauer sind unbekannt.",
-                "first_order": "Todesfälle und mögliche weitere Verletzungen oder Sachschäden könnten Menschen und Rettungsdienste belasten.",
-                "second_order": "Anhaltende Unsicherheit könnte Zugänge, Versorgung und Alltag einschränken.",
-                "third_order": "Wiederholte Gewalt könnte lokale Resilienz und Vertrauen schwächen; Folgeereignisse sind nicht belegt.",
-                "research_pass": "second_pass",
-                "research_result": "Keine unabhängige Bestätigung und keine belastbaren Daten zu Verletzten oder längerfristigen Folgen im gelieferten Bestand.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 21,
-                  "divisor": 6,
-                  "raw": 3.5,
-                  "rounded": 4,
-                  "protection_floor": 0,
-                  "final": 4
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Mögliche Belastung lokaler Versorgung durch Schäden und Rettung",
-                "direction": "negative",
-                "type": "side_risk",
-                "mechanism": "Beschädigte Infrastruktur und Rettungsbedarf könnten Zugänge und lokale Versorgung erschweren.",
-                "recipients": [
-                  "Anwohnerinnen und Anwohner",
-                  "Rettungsdienste"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 2,
-                  "rationale": "Eine Moscheebeschädigung ist berichtet, weitere Infrastrukturfolgen sind jedoch nicht belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Der mögliche Effekt bleibt nach Aktenlage lokal begrenzt.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Eine Beschädigung kann Zugänge und Abläufe beeinträchtigen.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Die Dauer möglicher Einschränkungen ist unbekannt.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Bauliche oder organisatorische Folgen könnten grundsätzlich behoben werden.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Menschen mit unmittelbarem Hilfebedarf wären besonders betroffen.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein lokaler Versorgungseffekt ist möglich, aber nicht als Kaskade belegt.",
-                    "source_ids": [
-                      "tagesspiegel-home"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Keine konkrete Schutzgrenzverletzung oder Versorgungsknappheit ist für diesen Nebenpfad belegt.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "tagesspiegel-home"
-                ],
-                "condition": "Die berichtete Beschädigung müsste den Zugang oder Betrieb tatsächlich beeinträchtigen.",
-                "reference_space": "Moschee und lokales Umfeld",
-                "time_horizon": "kurzfristig",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Die Beschädigung ist funktional relevant.",
-                "source_support": "Belegt ist die Beschädigung, nicht deren Umfang oder Wirkung.",
-                "limitations": "Keine Angaben zu Gebäudestatus, Versorgung oder Zugang.",
-                "first_order": "Die mögliche Beschädigung könnte Abläufe stören.",
-                "second_order": "Störungen könnten lokale Hilfen verzögern.",
-                "third_order": "Eine dauerhafte Versorgungskrise ist nicht belegt.",
-                "research_pass": "second_pass",
-                "research_result": "Keine ergänzenden Angaben zur Funktionsfähigkeit der betroffenen Infrastruktur.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 8,
-                  "divisor": 6,
-                  "raw": 1.3333333333333333,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Der negative Hauptpfad ist wegen der berichteten Todesfälle und ihrer Irreversibilität eindeutig; ein vergleichbar starker Gegenpfad ist nicht belegt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 4,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Todesfälle und zusätzliche Sicherheitsbelastung am Ereignisort",
-              "direction": "negative"
-            },
-            "observations": [
-              {
-                "dimension": "human",
-                "change": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-                "direction": "negative",
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ],
-                "data_status": "secondary_source",
-                "evidence": "medium",
-                "attribution": "open",
-                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-                "reference_space": "Nordwesten Pakistans, berichteter Anschlagsort",
-                "observed_at": "2026-09-18",
-                "temporal_status": "ex_post",
-                "mechanism": "Die Todesfälle werden dem Autobombenanschlag zugerechnet; die Quellenlage ist zugeschrieben und nicht unabhängig bestätigt.",
-                "recipients": [
-                  "Angehörige",
-                  "betroffene Bevölkerung",
-                  "Polizei und Rettungsdienste"
-                ],
-                "time_horizon": "unmittelbar und dauerhaft",
-                "magnitude": 4,
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Die berichteten Todesfälle betreffen mehrere Familien und die lokale Gemeinschaft.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 4,
-                    "rationale": "Mindestens 16 Todesfälle sind ein schwerer unmittelbarer Schaden.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 4,
-                    "rationale": "Der Verlust von Menschenleben wirkt dauerhaft fort.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 4,
-                    "rationale": "Todesfälle sind nicht rückgängig zu machen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 4,
-                    "rationale": "Die unmittelbar Betroffenen und ihre Angehörigen sind besonders verletzlich.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Der Schaden kann Familien, Dienste und lokale Sicherheit dauerhaft belasten.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": true,
-                  "rationale": "Der berichtete Tod von Menschen berührt die Schutzgrenze des Lebens unmittelbar.",
-                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "observed"
-                },
-                "same_target": true,
-                "same_baseline": true,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 22,
-                  "divisor": 6,
-                  "raw": 3.6666666666666665,
-                  "rounded": 4,
-                  "protection_floor": 4,
-                  "final": 4
-                },
-                "presentation": {
-                  "ringStatus": "observed",
-                  "ringLabel": "Beobachtete Wirkung",
-                  "magnitudeBars": 4,
-                  "directionLabel": "− beobachtet",
-                  "shortPathLabel": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-                  "direction": "negative"
-                }
-              }
-            ],
-            "displayed_observation": {
-              "dimension": "human",
-              "change": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-              "direction": "negative",
-              "source_ids": [
-                "stern-schlagzeilen",
-                "tagesspiegel-home"
-              ],
-              "data_status": "secondary_source",
-              "evidence": "medium",
-              "attribution": "open",
-              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-              "reference_space": "Nordwesten Pakistans, berichteter Anschlagsort",
-              "observed_at": "2026-09-18",
-              "temporal_status": "ex_post",
-              "mechanism": "Die Todesfälle werden dem Autobombenanschlag zugerechnet; die Quellenlage ist zugeschrieben und nicht unabhängig bestätigt.",
-              "recipients": [
-                "Angehörige",
-                "betroffene Bevölkerung",
-                "Polizei und Rettungsdienste"
-              ],
-              "time_horizon": "unmittelbar und dauerhaft",
-              "magnitude": 4,
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Die berichteten Todesfälle betreffen mehrere Familien und die lokale Gemeinschaft.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 4,
-                  "rationale": "Mindestens 16 Todesfälle sind ein schwerer unmittelbarer Schaden.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 4,
-                  "rationale": "Der Verlust von Menschenleben wirkt dauerhaft fort.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 4,
-                  "rationale": "Todesfälle sind nicht rückgängig zu machen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Die unmittelbar Betroffenen und ihre Angehörigen sind besonders verletzlich.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Schaden kann Familien, Dienste und lokale Sicherheit dauerhaft belasten.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Der berichtete Tod von Menschen berührt die Schutzgrenze des Lebens unmittelbar.",
-                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "observed"
-              },
-              "same_target": true,
-              "same_baseline": true,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 22,
-                "divisor": 6,
-                "raw": 3.6666666666666665,
-                "rounded": 4,
-                "protection_floor": 4,
-                "final": 4
-              },
-              "presentation": {
-                "ringStatus": "observed",
-                "ringLabel": "Beobachtete Wirkung",
-                "magnitudeBars": 4,
-                "directionLabel": "− beobachtet",
-                "shortPathLabel": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-                "direction": "negative"
-              }
-            },
-            "ringStatus": "observed",
-            "ringLabel": "Beobachtete Wirkung",
-            "magnitudeBars": 4,
-            "directionLabel": "− beobachtet",
-            "shortPathLabel": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "hoch",
-            "evidence_label": "mittel",
-            "likelihood_label": "hoch",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 1,
-            "evidence": "low",
-            "likelihood": "low",
-            "data_status": "estimated",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Keine ökologischen Messwerte oder Angaben zu Schadstoffen, Flächenumfang oder langfristigen Umweltschäden liegen vor. Nur ein begrenzter lokaler Belastungspfad ist plausibel modellierbar.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "rationale": "Der Quellenbestand belegt keine Umweltwirkung. Eine kleine lokale Belastung durch Explosion, Trümmer und Reparaturarbeiten bleibt als unsicherer Nebenpfad möglich.",
-            "primary_paths": [
-              {
-                "label": "Mögliche lokale Belastung durch Explosion und Trümmer",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Eine Explosion kann lokal Material freisetzen und Flächen oder Gebäude beschädigen; Umfang und Dauer sind unbekannt.",
-                "recipients": [
-                  "lokale Umwelt",
-                  "Anwohnerinnen und Anwohner"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Ohne Angaben zu Material, Fläche oder Kontamination bleibt der mögliche Effekt klein und unsicher."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Die Quellen verorten das Ereignis an einem lokalen Ort.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Eine ökologische Intensität ist nicht gemessen und nur begrenzt plausibel.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Mögliche Trümmer- oder Materialfolgen könnten kurzzeitig sein.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Keine dauerhafte Umweltveränderung ist im Material belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Lokale Umwelt und nahe Anwohner könnten geringfügig betroffen sein.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Eine über den Ort hinausgehende ökologische Kaskade ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Es gibt keinen Beleg für eine ökologische Schutzgrenze oder dauerhafte Kontamination.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ],
-                "condition": "Die Explosion müsste relevante Materialien freigesetzt oder Flächen beschädigt haben.",
-                "reference_space": "unmittelbares Umfeld der Polizeizentrale und Moschee",
-                "time_horizon": "kurzfristig",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Explosion und Trümmer erzeugen eine begrenzte lokale Belastung.",
-                "source_support": "Die Quellen belegen den Anschlag und Moscheeschaden, nicht Umweltfolgen.",
-                "limitations": "Keine Messungen, Schadstoffangaben oder Flächen- und Zeitdaten.",
-                "first_order": "Mögliche Trümmer und Materialfreisetzung könnten den Ort lokal belasten.",
-                "second_order": "Aufräum- und Reparaturarbeiten könnten zusätzliche Ressourcen benötigen.",
-                "third_order": "Eine weitergehende ökologische Wirkung ist nicht plausibel belegt.",
-                "research_pass": "second_pass",
-                "research_result": "Keine Umwelt- oder Schadensdaten in den gelieferten Quellen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 5,
-                  "divisor": 6,
-                  "raw": 0.8333333333333334,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Ein kleiner negativer Umweltpfad ist plausibel, aber weder gemessen noch von einer Schutzgrenze geprägt; ein vergleichbarer Gegenpfad ist nicht belegt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 1,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Mögliche lokale Belastung durch Explosion und Trümmer",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Mögliche lokale Belastung durch Explosion und Trümmer",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "sehr gering",
-            "evidence_label": "gering",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "low",
-            "data_status": "estimated",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Es gibt keine Angaben zu staatlichen Reaktionen, Verantwortungszuschreibungen, öffentlicher Debatte oder institutionellem Vertrauen. Nur ein bedingter lokaler Sicherheits- und Vertrauenspfad ist modellierbar.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "rationale": "Ein Anschlag auf eine Polizeizentrale könnte bei anhaltender Unsicherheit Vertrauen in Schutzinstitutionen und öffentliche Koordination belasten. Konkrete demokratische Folgen sind nicht beobachtet.",
-            "primary_paths": [
-              {
-                "label": "Mögliche Belastung des Vertrauens in Schutzinstitutionen",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Ein tödlicher Anschlag auf eine Polizeizentrale kann die wahrgenommene Schutzfähigkeit staatlicher Institutionen infrage stellen, wenn Unsicherheit anhält.",
-                "recipients": [
-                  "lokale Bevölkerung",
-                  "Polizei und Behörden",
-                  "öffentliche Institutionen"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Der institutionelle Ort ist relevant, doch Reaktionen und Vertrauensdaten fehlen."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Eine Polizeizentrale kann über unmittelbar Betroffene hinaus wahrgenommen werden.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Ein tödlicher Anschlag kann Vertrauen spürbar belasten, ist aber nicht gemessen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Vertrauensfolgen könnten über den Anschlagstag hinausreichen.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Vertrauen kann sich durch Aufklärung und Schutzmaßnahmen wieder verändern.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Menschen in unsicherer Lage sind stärker auf funktionierende Schutzinstitutionen angewiesen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Eine institutionelle Belastung könnte Koordination und Rechenschaft berühren.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Reaktion ist nicht belegt.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ],
-                "condition": "Die Unsicherheit müsste anhalten oder sich durch weitere Gewalt beziehungsweise umstrittene Reaktionen verstärken.",
-                "reference_space": "lokale Bevölkerung und zuständige Institutionen",
-                "time_horizon": "kurzfristig bis mittelfristig",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Sicherheitsereignisse können die Wahrnehmung institutioneller Schutzfähigkeit beeinflussen.",
-                "source_support": "Die Quellen belegen den Anschlag und den Ort, nicht Vertrauen oder politische Reaktionen.",
-                "limitations": "Keine Umfragen, Debatten, Maßnahmen oder Verantwortungszuschreibungen liegen vor.",
-                "first_order": "Die Polizeizentrale könnte als Ort staatlicher Verwundbarkeit wahrgenommen werden.",
-                "second_order": "Anhaltende Unsicherheit könnte Vertrauen und Kooperation belasten.",
-                "third_order": "Wiederholte oder schlecht aufgeklärte Gewalt könnte institutionelle Legitimität schwächen; das ist nicht beobachtet.",
-                "research_pass": "second_pass",
-                "research_result": "Keine Belege zu Vertrauen, öffentlicher Debatte oder institutionellen Reaktionen im gelieferten Material.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 12,
-                  "divisor": 6,
-                  "raw": 2,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Polarisierung durch ungeklärte Verantwortlichkeit",
-                "direction": "negative",
-                "type": "side_risk",
-                "mechanism": "Ungeklärte Verantwortlichkeit kann bei zugespitzter Kommunikation Misstrauen und gegenseitige Zuschreibungen verstärken.",
-                "recipients": [
-                  "lokale Bevölkerung",
-                  "politische und staatliche Akteure"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Motiv und Verantwortlichkeit sind offen; Polarisierung bleibt ein unsicheres Risiko."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Der mögliche Diskurseffekt ist im Material nicht über den Ort hinaus belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Keine zugespitzten Reaktionen oder Debatten sind dokumentiert.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Ein möglicher Effekt könnte vorübergehend bleiben.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Diskursive Zuschreibungen sind grundsätzlich korrigierbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Unsichere Gemeinschaften können auf ungeklärte Gewalt besonders empfindlich reagieren.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Eine dauerhafte Diskursverschiebung ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen",
-                      "tagesspiegel-home"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Es gibt keinen Beleg für eine konkrete demokratische Schutzgrenze oder bereits eingetretene Polarisierung.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ],
-                "condition": "Es müssten zugespitzte oder falsche Zuschreibungen öffentlich verbreitet und aufgenommen werden.",
-                "reference_space": "lokale öffentliche Kommunikation",
-                "time_horizon": "kurzfristig",
-                "path_quality": [
-                  "indirect",
-                  "weak",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Ungeklärte Verantwortlichkeit kann in einem angespannten Umfeld kommunikative Konflikte verstärken.",
-                "source_support": "Die Quellen nennen keine Reaktionen oder Zuschreibungen.",
-                "limitations": "Keine Diskurs-, Verhaltens- oder Vertrauensdaten.",
-                "first_order": "Unklare Verantwortlichkeit kann den Informationsbedarf erhöhen.",
-                "second_order": "Ungeprüfte Zuschreibungen könnten Kooperation erschweren.",
-                "third_order": "Eine institutionelle Normalisierung von Schuldzuweisungen ist nicht belegt.",
-                "research_pass": "second_pass",
-                "research_result": "Keine Angaben zu öffentlicher Resonanz, politischer Kommunikation oder Diskursverlauf.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 6,
-                  "divisor": 6,
-                  "raw": 1,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Der negative institutionelle Risikopfad ist plausibel, aber schwach belegt; ein vergleichbar starker positiver Gegenpfad ist nicht belegt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Mögliche Belastung des Vertrauens in Schutzinstitutionen",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Mögliche Belastung des Vertrauens in Schutzinstitutionen",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          }
-        },
-        "observed_effects": [
-          {
-            "dimension": "human",
-            "change": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-            "direction": "negative",
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "data_status": "secondary_source",
-            "evidence": "medium",
-            "attribution": "open",
-            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-            "reference_space": "Nordwesten Pakistans, berichteter Anschlagsort",
-            "observed_at": "2026-09-18",
-            "temporal_status": "ex_post",
-            "mechanism": "Die Todesfälle werden dem Autobombenanschlag zugerechnet; die Quellenlage ist zugeschrieben und nicht unabhängig bestätigt.",
-            "recipients": [
-              "Angehörige",
-              "betroffene Bevölkerung",
-              "Polizei und Rettungsdienste"
-            ],
-            "time_horizon": "unmittelbar und dauerhaft",
-            "magnitude": 4,
-            "magnitude_factors": {
-              "reach": {
-                "value": 3,
-                "rationale": "Die berichteten Todesfälle betreffen mehrere Familien und die lokale Gemeinschaft.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "intensity": {
-                "value": 4,
-                "rationale": "Mindestens 16 Todesfälle sind ein schwerer unmittelbarer Schaden.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "duration": {
-                "value": 4,
-                "rationale": "Der Verlust von Menschenleben wirkt dauerhaft fort.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "irreversibility": {
-                "value": 4,
-                "rationale": "Todesfälle sind nicht rückgängig zu machen.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "vulnerability": {
-                "value": 4,
-                "rationale": "Die unmittelbar Betroffenen und ihre Angehörigen sind besonders verletzlich.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "system_depth": {
-                "value": 3,
-                "rationale": "Der Schaden kann Familien, Dienste und lokale Sicherheit dauerhaft belasten.",
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ]
-              }
-            },
-            "protection_boundary": {
-              "decisive": true,
-              "rationale": "Der berichtete Tod von Menschen berührt die Schutzgrenze des Lebens unmittelbar.",
-              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "status": "observed"
-            },
-            "same_target": true,
-            "same_baseline": true,
-            "magnitude_calculation": {
-              "method_version": "2.1",
-              "sum": 22,
-              "divisor": 6,
-              "raw": 3.6666666666666665,
-              "rounded": 4,
-              "protection_floor": 4,
-              "final": 4
-            }
-          }
-        ],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-18T10:41:46.654Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "functions": [
-              "event",
-              "counter_evidence"
-            ],
-            "supported_claim": "Polizeiangaben zu mindestens 14 beziehungsweise einer späteren Schlagzeile zu mindestens 16 Toten sowie Ort und Ereignisart."
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Autobombenanschlag auf eine Polizeizentrale und Beschädigung einer Moschee während des Freitagsgebets."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Hohe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 4,
-          "evidence": "medium",
-          "likelihood": "high",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Der Tod von mindestens 16 Menschen wird in einer späteren Schlagzeile berichtet, ist aber nicht unabhängig bestätigt. Verletztenzahl, Reichweite weiterer Schäden und längerfristige Folgen bleiben offen.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          "rationale": "Der berichtete Tod von mindestens 16 Menschen begründet ein hohes menschliches Wirkungspotenzial. Zusätzliche Belastungen für Rettung, Versorgung und Sicherheit bleiben wegen fehlender Angaben bedingt und unsicher.",
-          "primary_paths": [
-            {
-              "label": "Todesfälle und zusätzliche Sicherheitsbelastung am Ereignisort",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Eine Autobombenexplosion kann Menschen töten, Infrastruktur beschädigen und Rettungs- sowie Schutzressourcen binden.",
-              "recipients": [
-                "Angehörige",
-                "Bewohnerinnen und Bewohner im Umfeld",
-                "Polizei und Rettungsdienste"
-              ],
-              "magnitude": 4,
-              "magnitude_range": {
-                "lower": 3,
-                "upper": 4,
-                "rationale": "Die berichteten Todesfälle sind schwerwiegend; Umfang und Dauer zusätzlicher Belastungen bleiben wegen fehlender Verletzten- und Schadensdaten begrenzt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Der belegte Ort ist lokal, die Folgen können jedoch mehrere betroffene Gruppen erreichen.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "intensity": {
-                  "value": 4,
-                  "rationale": "Mindestens 16 berichtete Tote markieren eine hohe unmittelbare Schwere.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 3,
-                  "rationale": "Todesfälle wirken dauerhaft; weitere Belastungen können zeitlich begrenzt bleiben.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 4,
-                  "rationale": "Der Verlust von Menschenleben ist nicht reversibel; Folgeschäden bleiben offen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Betroffene Zivilpersonen und Nutzer der beschädigten Moschee können besonders schutzbedürftig sein.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Sicherheits- und Versorgungsbeziehungen könnten über den unmittelbaren Ort hinaus belastet werden.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Der berichtete Todesfall wird als beobachteter Schaden separat erfasst; dieser ex-ante-Pfad bewertet nur mögliche weitere Belastungen.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "medium",
-              "likelihood": "high",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen",
-                "tagesspiegel-home"
-              ],
-              "condition": "Zusätzliche Belastungen setzen weitere Schäden, Rettungsbedarf oder anhaltende Unsicherheit voraus.",
-              "reference_space": "Polizeizentrale, Moschee und angrenzendes lokales Umfeld in Kohat",
-              "time_horizon": "unmittelbar bis mittelfristig",
-              "path_quality": [
-                "direct",
-                "systemic"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Die berichtete Explosion und die Todesfälle beziehen sich auf dasselbe Ereignis.",
-              "source_support": "Die Quellen tragen Ereignisart, Ort, zugeschriebene Todeszahl und Moscheeschaden; sie belegen keine vollständige Folgekette.",
-              "limitations": "Verletztenzahl, Schadensausmaß, Reaktionen und Dauer sind unbekannt.",
-              "first_order": "Todesfälle und mögliche weitere Verletzungen oder Sachschäden könnten Menschen und Rettungsdienste belasten.",
-              "second_order": "Anhaltende Unsicherheit könnte Zugänge, Versorgung und Alltag einschränken.",
-              "third_order": "Wiederholte Gewalt könnte lokale Resilienz und Vertrauen schwächen; Folgeereignisse sind nicht belegt.",
-              "research_pass": "second_pass",
-              "research_result": "Keine unabhängige Bestätigung und keine belastbaren Daten zu Verletzten oder längerfristigen Folgen im gelieferten Bestand.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 21,
-                "divisor": 6,
-                "raw": 3.5,
-                "rounded": 4,
-                "protection_floor": 0,
-                "final": 4
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Mögliche Belastung lokaler Versorgung durch Schäden und Rettung",
-              "direction": "negative",
-              "type": "side_risk",
-              "mechanism": "Beschädigte Infrastruktur und Rettungsbedarf könnten Zugänge und lokale Versorgung erschweren.",
-              "recipients": [
-                "Anwohnerinnen und Anwohner",
-                "Rettungsdienste"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 2,
-                "rationale": "Eine Moscheebeschädigung ist berichtet, weitere Infrastrukturfolgen sind jedoch nicht belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der mögliche Effekt bleibt nach Aktenlage lokal begrenzt.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Eine Beschädigung kann Zugänge und Abläufe beeinträchtigen.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Die Dauer möglicher Einschränkungen ist unbekannt.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Bauliche oder organisatorische Folgen könnten grundsätzlich behoben werden.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Menschen mit unmittelbarem Hilfebedarf wären besonders betroffen.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein lokaler Versorgungseffekt ist möglich, aber nicht als Kaskade belegt.",
-                  "source_ids": [
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Keine konkrete Schutzgrenzverletzung oder Versorgungsknappheit ist für diesen Nebenpfad belegt.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "tagesspiegel-home"
-              ],
-              "condition": "Die berichtete Beschädigung müsste den Zugang oder Betrieb tatsächlich beeinträchtigen.",
-              "reference_space": "Moschee und lokales Umfeld",
-              "time_horizon": "kurzfristig",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Die Beschädigung ist funktional relevant.",
-              "source_support": "Belegt ist die Beschädigung, nicht deren Umfang oder Wirkung.",
-              "limitations": "Keine Angaben zu Gebäudestatus, Versorgung oder Zugang.",
-              "first_order": "Die mögliche Beschädigung könnte Abläufe stören.",
-              "second_order": "Störungen könnten lokale Hilfen verzögern.",
-              "third_order": "Eine dauerhafte Versorgungskrise ist nicht belegt.",
-              "research_pass": "second_pass",
-              "research_result": "Keine ergänzenden Angaben zur Funktionsfähigkeit der betroffenen Infrastruktur.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 8,
-                "divisor": 6,
-                "raw": 1.3333333333333333,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Der negative Hauptpfad ist wegen der berichteten Todesfälle und ihrer Irreversibilität eindeutig; ein vergleichbar starker Gegenpfad ist nicht belegt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 4,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Todesfälle und zusätzliche Sicherheitsbelastung am Ereignisort",
-            "direction": "negative"
-          },
-          "observations": [
-            {
-              "dimension": "human",
-              "change": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-              "direction": "negative",
-              "source_ids": [
-                "stern-schlagzeilen",
-                "tagesspiegel-home"
-              ],
-              "data_status": "secondary_source",
-              "evidence": "medium",
-              "attribution": "open",
-              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-              "reference_space": "Nordwesten Pakistans, berichteter Anschlagsort",
-              "observed_at": "2026-09-18",
-              "temporal_status": "ex_post",
-              "mechanism": "Die Todesfälle werden dem Autobombenanschlag zugerechnet; die Quellenlage ist zugeschrieben und nicht unabhängig bestätigt.",
-              "recipients": [
-                "Angehörige",
-                "betroffene Bevölkerung",
-                "Polizei und Rettungsdienste"
-              ],
-              "time_horizon": "unmittelbar und dauerhaft",
-              "magnitude": 4,
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Die berichteten Todesfälle betreffen mehrere Familien und die lokale Gemeinschaft.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 4,
-                  "rationale": "Mindestens 16 Todesfälle sind ein schwerer unmittelbarer Schaden.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 4,
-                  "rationale": "Der Verlust von Menschenleben wirkt dauerhaft fort.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 4,
-                  "rationale": "Todesfälle sind nicht rückgängig zu machen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Die unmittelbar Betroffenen und ihre Angehörigen sind besonders verletzlich.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Schaden kann Familien, Dienste und lokale Sicherheit dauerhaft belasten.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Der berichtete Tod von Menschen berührt die Schutzgrenze des Lebens unmittelbar.",
-                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "observed"
-              },
-              "same_target": true,
-              "same_baseline": true,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 22,
-                "divisor": 6,
-                "raw": 3.6666666666666665,
-                "rounded": 4,
-                "protection_floor": 4,
-                "final": 4
-              },
-              "presentation": {
-                "ringStatus": "observed",
-                "ringLabel": "Beobachtete Wirkung",
-                "magnitudeBars": 4,
-                "directionLabel": "− beobachtet",
-                "shortPathLabel": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-                "direction": "negative"
-              }
-            }
-          ],
-          "displayed_observation": {
-            "dimension": "human",
-            "change": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-            "direction": "negative",
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "data_status": "secondary_source",
-            "evidence": "medium",
-            "attribution": "open",
-            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-            "reference_space": "Nordwesten Pakistans, berichteter Anschlagsort",
-            "observed_at": "2026-09-18",
-            "temporal_status": "ex_post",
-            "mechanism": "Die Todesfälle werden dem Autobombenanschlag zugerechnet; die Quellenlage ist zugeschrieben und nicht unabhängig bestätigt.",
-            "recipients": [
-              "Angehörige",
-              "betroffene Bevölkerung",
-              "Polizei und Rettungsdienste"
-            ],
-            "time_horizon": "unmittelbar und dauerhaft",
-            "magnitude": 4,
-            "magnitude_factors": {
-              "reach": {
-                "value": 3,
-                "rationale": "Die berichteten Todesfälle betreffen mehrere Familien und die lokale Gemeinschaft.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "intensity": {
-                "value": 4,
-                "rationale": "Mindestens 16 Todesfälle sind ein schwerer unmittelbarer Schaden.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "duration": {
-                "value": 4,
-                "rationale": "Der Verlust von Menschenleben wirkt dauerhaft fort.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "irreversibility": {
-                "value": 4,
-                "rationale": "Todesfälle sind nicht rückgängig zu machen.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "vulnerability": {
-                "value": 4,
-                "rationale": "Die unmittelbar Betroffenen und ihre Angehörigen sind besonders verletzlich.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "system_depth": {
-                "value": 3,
-                "rationale": "Der Schaden kann Familien, Dienste und lokale Sicherheit dauerhaft belasten.",
-                "source_ids": [
-                  "stern-schlagzeilen",
-                  "tagesspiegel-home"
-                ]
-              }
-            },
-            "protection_boundary": {
-              "decisive": true,
-              "rationale": "Der berichtete Tod von Menschen berührt die Schutzgrenze des Lebens unmittelbar.",
-              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "status": "observed"
-            },
-            "same_target": true,
-            "same_baseline": true,
-            "magnitude_calculation": {
-              "method_version": "2.1",
-              "sum": 22,
-              "divisor": 6,
-              "raw": 3.6666666666666665,
-              "rounded": 4,
-              "protection_floor": 4,
-              "final": 4
-            },
-            "presentation": {
-              "ringStatus": "observed",
-              "ringLabel": "Beobachtete Wirkung",
-              "magnitudeBars": 4,
-              "directionLabel": "− beobachtet",
-              "shortPathLabel": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-              "direction": "negative"
-            }
-          },
-          "ringStatus": "observed",
-          "ringLabel": "Beobachtete Wirkung",
-          "magnitudeBars": 4,
-          "directionLabel": "− beobachtet",
-          "shortPathLabel": "Mindestens 16 Menschen werden in einer späteren Schlagzeile als Tote des Autobombenanschlags berichtet.",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "hoch",
-          "evidence_label": "mittel",
-          "likelihood_label": "hoch",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 1,
-          "evidence": "low",
-          "likelihood": "low",
-          "data_status": "estimated",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Keine ökologischen Messwerte oder Angaben zu Schadstoffen, Flächenumfang oder langfristigen Umweltschäden liegen vor. Nur ein begrenzter lokaler Belastungspfad ist plausibel modellierbar.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          "rationale": "Der Quellenbestand belegt keine Umweltwirkung. Eine kleine lokale Belastung durch Explosion, Trümmer und Reparaturarbeiten bleibt als unsicherer Nebenpfad möglich.",
-          "primary_paths": [
-            {
-              "label": "Mögliche lokale Belastung durch Explosion und Trümmer",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Eine Explosion kann lokal Material freisetzen und Flächen oder Gebäude beschädigen; Umfang und Dauer sind unbekannt.",
-              "recipients": [
-                "lokale Umwelt",
-                "Anwohnerinnen und Anwohner"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Ohne Angaben zu Material, Fläche oder Kontamination bleibt der mögliche Effekt klein und unsicher."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Die Quellen verorten das Ereignis an einem lokalen Ort.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Eine ökologische Intensität ist nicht gemessen und nur begrenzt plausibel.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Mögliche Trümmer- oder Materialfolgen könnten kurzzeitig sein.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Keine dauerhafte Umweltveränderung ist im Material belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Lokale Umwelt und nahe Anwohner könnten geringfügig betroffen sein.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Eine über den Ort hinausgehende ökologische Kaskade ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Es gibt keinen Beleg für eine ökologische Schutzgrenze oder dauerhafte Kontamination.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen",
-                "tagesspiegel-home"
-              ],
-              "condition": "Die Explosion müsste relevante Materialien freigesetzt oder Flächen beschädigt haben.",
-              "reference_space": "unmittelbares Umfeld der Polizeizentrale und Moschee",
-              "time_horizon": "kurzfristig",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Explosion und Trümmer erzeugen eine begrenzte lokale Belastung.",
-              "source_support": "Die Quellen belegen den Anschlag und Moscheeschaden, nicht Umweltfolgen.",
-              "limitations": "Keine Messungen, Schadstoffangaben oder Flächen- und Zeitdaten.",
-              "first_order": "Mögliche Trümmer und Materialfreisetzung könnten den Ort lokal belasten.",
-              "second_order": "Aufräum- und Reparaturarbeiten könnten zusätzliche Ressourcen benötigen.",
-              "third_order": "Eine weitergehende ökologische Wirkung ist nicht plausibel belegt.",
-              "research_pass": "second_pass",
-              "research_result": "Keine Umwelt- oder Schadensdaten in den gelieferten Quellen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 5,
-                "divisor": 6,
-                "raw": 0.8333333333333334,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Ein kleiner negativer Umweltpfad ist plausibel, aber weder gemessen noch von einer Schutzgrenze geprägt; ein vergleichbarer Gegenpfad ist nicht belegt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Mögliche lokale Belastung durch Explosion und Trümmer",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 1,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Mögliche lokale Belastung durch Explosion und Trümmer",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "sehr gering",
-          "evidence_label": "gering",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "low",
-          "data_status": "estimated",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Es gibt keine Angaben zu staatlichen Reaktionen, Verantwortungszuschreibungen, öffentlicher Debatte oder institutionellem Vertrauen. Nur ein bedingter lokaler Sicherheits- und Vertrauenspfad ist modellierbar.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          "rationale": "Ein Anschlag auf eine Polizeizentrale könnte bei anhaltender Unsicherheit Vertrauen in Schutzinstitutionen und öffentliche Koordination belasten. Konkrete demokratische Folgen sind nicht beobachtet.",
-          "primary_paths": [
-            {
-              "label": "Mögliche Belastung des Vertrauens in Schutzinstitutionen",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Ein tödlicher Anschlag auf eine Polizeizentrale kann die wahrgenommene Schutzfähigkeit staatlicher Institutionen infrage stellen, wenn Unsicherheit anhält.",
-              "recipients": [
-                "lokale Bevölkerung",
-                "Polizei und Behörden",
-                "öffentliche Institutionen"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Der institutionelle Ort ist relevant, doch Reaktionen und Vertrauensdaten fehlen."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Eine Polizeizentrale kann über unmittelbar Betroffene hinaus wahrgenommen werden.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Ein tödlicher Anschlag kann Vertrauen spürbar belasten, ist aber nicht gemessen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Vertrauensfolgen könnten über den Anschlagstag hinausreichen.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Vertrauen kann sich durch Aufklärung und Schutzmaßnahmen wieder verändern.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Menschen in unsicherer Lage sind stärker auf funktionierende Schutzinstitutionen angewiesen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Eine institutionelle Belastung könnte Koordination und Rechenschaft berühren.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Reaktion ist nicht belegt.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen",
-                "tagesspiegel-home"
-              ],
-              "condition": "Die Unsicherheit müsste anhalten oder sich durch weitere Gewalt beziehungsweise umstrittene Reaktionen verstärken.",
-              "reference_space": "lokale Bevölkerung und zuständige Institutionen",
-              "time_horizon": "kurzfristig bis mittelfristig",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Sicherheitsereignisse können die Wahrnehmung institutioneller Schutzfähigkeit beeinflussen.",
-              "source_support": "Die Quellen belegen den Anschlag und den Ort, nicht Vertrauen oder politische Reaktionen.",
-              "limitations": "Keine Umfragen, Debatten, Maßnahmen oder Verantwortungszuschreibungen liegen vor.",
-              "first_order": "Die Polizeizentrale könnte als Ort staatlicher Verwundbarkeit wahrgenommen werden.",
-              "second_order": "Anhaltende Unsicherheit könnte Vertrauen und Kooperation belasten.",
-              "third_order": "Wiederholte oder schlecht aufgeklärte Gewalt könnte institutionelle Legitimität schwächen; das ist nicht beobachtet.",
-              "research_pass": "second_pass",
-              "research_result": "Keine Belege zu Vertrauen, öffentlicher Debatte oder institutionellen Reaktionen im gelieferten Material.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 12,
-                "divisor": 6,
-                "raw": 2,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Polarisierung durch ungeklärte Verantwortlichkeit",
-              "direction": "negative",
-              "type": "side_risk",
-              "mechanism": "Ungeklärte Verantwortlichkeit kann bei zugespitzter Kommunikation Misstrauen und gegenseitige Zuschreibungen verstärken.",
-              "recipients": [
-                "lokale Bevölkerung",
-                "politische und staatliche Akteure"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Motiv und Verantwortlichkeit sind offen; Polarisierung bleibt ein unsicheres Risiko."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der mögliche Diskurseffekt ist im Material nicht über den Ort hinaus belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Keine zugespitzten Reaktionen oder Debatten sind dokumentiert.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Ein möglicher Effekt könnte vorübergehend bleiben.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Diskursive Zuschreibungen sind grundsätzlich korrigierbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Unsichere Gemeinschaften können auf ungeklärte Gewalt besonders empfindlich reagieren.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Eine dauerhafte Diskursverschiebung ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen",
-                    "tagesspiegel-home"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Es gibt keinen Beleg für eine konkrete demokratische Schutzgrenze oder bereits eingetretene Polarisierung.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen",
-                "tagesspiegel-home"
-              ],
-              "condition": "Es müssten zugespitzte oder falsche Zuschreibungen öffentlich verbreitet und aufgenommen werden.",
-              "reference_space": "lokale öffentliche Kommunikation",
-              "time_horizon": "kurzfristig",
-              "path_quality": [
-                "indirect",
-                "weak",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Ungeklärte Verantwortlichkeit kann in einem angespannten Umfeld kommunikative Konflikte verstärken.",
-              "source_support": "Die Quellen nennen keine Reaktionen oder Zuschreibungen.",
-              "limitations": "Keine Diskurs-, Verhaltens- oder Vertrauensdaten.",
-              "first_order": "Unklare Verantwortlichkeit kann den Informationsbedarf erhöhen.",
-              "second_order": "Ungeprüfte Zuschreibungen könnten Kooperation erschweren.",
-              "third_order": "Eine institutionelle Normalisierung von Schuldzuweisungen ist nicht belegt.",
-              "research_pass": "second_pass",
-              "research_result": "Keine Angaben zu öffentlicher Resonanz, politischer Kommunikation oder Diskursverlauf.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 6,
-                "divisor": 6,
-                "raw": 1,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Der negative institutionelle Risikopfad ist plausibel, aber schwach belegt; ein vergleichbar starker positiver Gegenpfad ist nicht belegt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Mögliche Belastung des Vertrauens in Schutzinstitutionen",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Mögliche Belastung des Vertrauens in Schutzinstitutionen",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-18T10:37:52.736Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-18T09:37:40.000Z",
-      "last_updated": "2026-09-18T10:41:46.649Z",
-      "version": 3,
-      "news_status": "updated",
-      "event_id": "event-69f9100ffb6a2110eddd",
-      "case_file": null,
-      "source_published_at": "2026-09-18T09:37:40.000Z",
-      "published_at": "2026-09-18T09:55:40.233Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 2
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "tagesspiegel-home"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Die Zahl der Verletzten und das Ausmaß der Sachschäden müssen weiter geprüft werden.",
-          "source_id": "stern-schlagzeilen",
-          "measurable_indicator": "Unabhängig bestätigte Angaben zu Verletzten und Sachschäden",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0f561fe0295155ca",
-          "announced_at": "2026-09-18T09:37:40.000Z",
-          "follow_up_date": "2026-09-25T10:12:24.373Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Die Verantwortlichkeit und das Motiv des Anschlags bleiben zu klären.",
-          "source_id": "tagesspiegel-home",
-          "measurable_indicator": "Behördlich oder unabhängig belegte Angaben zu Verantwortlichkeit und Motiv",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-2ac9a36a4d676a26",
-          "announced_at": "2026-09-18T09:56:32.000Z",
-          "follow_up_date": "2026-09-25T10:12:24.373Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Die Opferzahl, die Zahl der Verletzten sowie Motiv und Verantwortlichkeit des Anschlags bleiben zu prüfen.",
-          "source_id": "stern-schlagzeilen",
-          "measurable_indicator": "Neue amtliche oder unabhängige Angaben zu Toten, Verletzten, Motiv oder Verantwortlichkeit",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0b571d2d3253d07b",
-          "announced_at": "2026-09-18T09:37:40.000Z",
-          "follow_up_date": "2026-09-25T10:41:46.649Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/explosionen--mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-38272370.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-18T09:37:40.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-16069461.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-18T09:56:32.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/explosionen--mindestens-16-tote-bei-anschlag-mit-autobombe-in-pakistan-38272532.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-18T10:35:14.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-explosionen-mindestens-16-tote-bei-anschlag-mit-autobombe-in-pakistan-16069461.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-18T09:56:32.000Z",
           "primary_source": false
         }
       ]
@@ -208285,6 +208128,16 @@
   ],
   "editorial_analyses": [
     {
+      "analysis_id": "woek-personal-60a72849c1a35de7",
+      "slug": "die-verletzliche-abkurzung-der-globalen-olversorgung-60a728",
+      "title": "Die verletzliche Abkürzung der globalen Ölversorgung",
+      "subtitle": "Warum ein beschädigter Pipelinekorridor mehr zeigt als einen vorübergehenden Spritpreisschock",
+      "teaser": "Warum ein beschädigter Pipelinekorridor mehr zeigt als einen vorübergehenden Spritpreisschock",
+      "published_at": "2026-09-18T12:11:45.640Z",
+      "updated_at": "2026-09-18T13:58:41.062Z",
+      "reading_time_minutes": 5
+    },
+    {
       "analysis_id": "woek-personal-741dd358fe439126",
       "slug": "nachgehort-eine-partei-wirkt-lange-bevor-sie-regiert-741dd3",
       "title": "Nachgehört: Eine Partei wirkt lange bevor sie regiert",
@@ -208292,16 +208145,6 @@
       "teaser": "Lanz und Precht sprechen über Gramsci, kulturelle Hegemonie und den Aufstieg der AfD. Der entscheidende Punkt liegt davor: Politische Wirkung beginnt nicht erst mit Ministerien und Gesetzen, sondern dort, wo sich Wahrnehmung, Sprache und gesellschaftliche Normalität verändern.",
       "published_at": "2026-09-10T22:33:28.833Z",
       "updated_at": "2026-09-18T12:54:50.911Z",
-      "reading_time_minutes": 5
-    },
-    {
-      "analysis_id": "woek-personal-60a72849c1a35de7",
-      "slug": "die-verletzliche-abkurzung-der-globalen-olversorgung-60a728",
-      "title": "Die verletzliche Abkürzung der globalen Ölversorgung",
-      "subtitle": "Warum ein beschädigter Pipelinekorridor mehr zeigt als einen vorübergehenden Spritpreisschock",
-      "teaser": "Warum ein beschädigter Pipelinekorridor mehr zeigt als einen vorübergehenden Spritpreisschock",
-      "published_at": "2026-09-18T12:11:45.640Z",
-      "updated_at": "2026-09-18T12:11:45.640Z",
       "reading_time_minutes": 5
     },
     {
