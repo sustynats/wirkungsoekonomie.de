@@ -2,8 +2,1975 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T12:54:50.911Z",
+  "updated_at": "2026-09-18T13:22:42.065Z",
   "stories": [
+    {
+      "story_id": "wt-8fce6e6793e05359",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8fce6e6793e05359-9e0970cdca7fe10a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8fce6e6793e05359-eaf45d597594c7ce-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8fce6e6793e05359-d4475e4375130a2c-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8fce6e6793e05359-c6cc51f8c3de350d-source.png"
+        }
+      },
+      "slug": "philippinen-banga-national-high-school-drei-tote-nach-schussen-an-schule-e05359",
+      "title": "Mindestens drei Tote bei Schüssen an Schule auf den Philippinen",
+      "source_summary": "DER SPIEGEL nennt Schüsse an einer Schule in South Cotabato und berichtet von mindestens drei Toten. Der vorliegende Auszug enthält dazu keinen weiteren Kurztext.\n\nZDFheute berichtet über drei Tote und mehrere Verletzte nach Schüssen an einer Schule auf Mindanao. Nach dem Bericht bestätigten philippinische Behörden den Vorfall.\n\nDer ausführlichere Auszug verortet das Geschehen an der Banga National High School. Die Zahl der Verletzten und das Motiv waren demnach zunächst offen; der Unterricht in der Gemeinde wurde ausgesetzt.",
+      "summary": "Bei Schüssen an der Banga National High School auf Mindanao starben mindestens drei Menschen, mehrere weitere wurden verletzt. Die Zahl der Verletzten und das Motiv waren zunächst offen.",
+      "detail_summary": "Bei Schüssen an der Banga National High School auf der philippinischen Insel Mindanao wurden mindestens drei Schüler getötet und mehrere weitere verletzt. ZDFheute berichtet, dass philippinische Behörden den Vorfall bestätigten; DER SPIEGEL nennt ebenfalls mindestens drei Tote. Eine genaue Zahl der Verletzten lag zunächst nicht vor, und das Motiv war offen. Der Unterricht in der gesamten Gemeinde wurde zunächst ausgesetzt. Damit ist der unmittelbare Schaden belegt, während weitergehende Folgen für Sicherheit, Vertrauen und den Schulbetrieb nur als mögliche Wirkpfade gelten.",
+      "why_relevant": "Der Vorfall verbindet einen belegten tödlichen Angriff mit einer unmittelbaren Unterbrechung des Unterrichts; Opferzahl, Motiv und weitere Folgen bleiben teilweise offen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Tödlicher Schusswaffenangriff an der Banga National High School auf Mindanao",
+        "evaluation_target": {
+          "label": "Angriff und mögliche Folgen für Betroffene, Schulbetrieb und öffentliche Schutzentscheidungen",
+          "type": "event"
+        },
+        "baseline": "Schulbetrieb und lokale Sicherheitslage vor dem Angriff",
+        "counterfactual": "Ohne den Angriff wären die berichteten Todesfälle, Verletzungen und die vorläufige Unterrichtsaussetzung an diesem Ort nicht eingetreten; allgemeine Sicherheitsrisiken bleiben offen.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Zugang zu Bildung und Sicherheit in Schulen",
+          "öffentliche Rechenschaft und Krisenbewältigung"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Angriff hat belegte Todesfälle und Verletzungen verursacht. Mögliche weitere Folgen betreffen medizinische und psychosoziale Belastungen, den Schulzugang und die Dauer der Unterbrechung; deren Umfang ist nicht belegt.",
+            "planet": "Die Quellen berichten keine Umweltveränderung, keinen Ressourcenverbrauch und keine ökologische Folgewirkung. Ein direkter ökologischer Pfad ist im abgegrenzten Ereignisraum begründet vernachlässigbar.",
+            "democracy": "Ermittlungen und Koordination durch Behörden können weitere öffentliche Schutz- und Rechenschaftsentscheidungen auslösen. Vertrauen, Beteiligung oder institutionelle Veränderungen sind jedoch nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Todesfälle, Verletzungen und die zunächst ausgesetzte Unterrichtstätigkeit verändern den unmittelbaren Alltag der Schulgemeinschaft.",
+          "second_order": "Betroffene und Behörden könnten medizinische, psychosoziale, sicherheitsbezogene und organisatorische Folgemaßnahmen benötigen; Umfang und Dauer bleiben offen.",
+          "third_order": "Eine anhaltende Unsicherheit könnte Bildungsentscheidungen und Vertrauen in Schutzinstitutionen belasten, falls die Unterbrechung oder ungeklärte Motivlage fortbesteht; eine solche Entwicklung ist nicht belegt.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quellen quantifizieren weder die genaue Verletztenzahl noch die Dauer der Unterrichtsaussetzung.",
+            "Es gibt keine Angaben zu Umweltfolgen, Vertrauensdaten, Reformen oder dauerhaften Sicherheitsmaßnahmen.",
+            "Die berichteten Ermittlungen und die Koordination zur Klärung der Hintergründe belegen noch keine institutionelle Wirkung."
+          ],
+          "source_independence": "DER SPIEGEL und ZDFheute sind unterschiedliche journalistische Quellen, ihre Unabhängigkeit von zugrunde liegenden Behörden- oder Agenturangaben ist jedoch nicht verifiziert. Der Ereigniskern ist in beiden Quellen belegt; Wirkungsfolgen sind nicht unabhängig gemessen.",
+          "institutional_status": "Berichtet sind der Angriff, Ermittlungen, die Koordination von Bildungsministerium, örtlichen Behörden und Polizei sowie eine vorläufige Unterrichtsaussetzung. Dauerhafte Sicherheitsregeln, Reformen oder rechtliche Entscheidungen sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "medium",
+            "likelihood": "high",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der unmittelbare Schaden ist separat als beobachteter Effekt belegt. Für weitere gesundheitliche, psychosoziale und schulische Folgen fehlen Angaben zu Dauer, Unterstützungsbedarf und Wiederaufnahme des Unterrichts.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen",
+              "zdfheute-nachrichten"
+            ],
+            "rationale": "Der beobachtete Angriff bildet einen starken Ausgangspunkt für mögliche weitere Belastungen von verletzten Schülern, Familien und der Schulgemeinschaft. Die zusätzliche Wirkung bleibt hinsichtlich Dauer und Reichweite begrenzt beurteilbar; die Schutzgrenze wird durch den beobachteten Schaden, nicht durch den ex-ante-Pfad, bewertet.",
+            "primary_paths": [
+              {
+                "label": "Weitere gesundheitliche Belastungen und Unterbrechungen des Schulbetriebs könnten fortbestehen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Schwere Verletzungen und ein tödlicher Angriff können medizinische, psychosoziale und organisatorische Unterstützung erforderlich machen; die Unterrichtsaussetzung kann den Bildungsalltag unterbrechen.",
+                "recipients": [
+                  "verletzte Schüler",
+                  "Familien",
+                  "Schüler und Beschäftigte der Schule",
+                  "Gemeinde Banga"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Ausgangslage ist schwerwiegend, doch Reichweite und Dauer zusätzlicher Folgen sind wegen fehlender Verlaufsdaten offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Betroffen sind Opfer, Familien und die örtliche Schulgemeinschaft.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Todesfälle und teils schwere Verletzungen markieren eine hohe Ausgangsintensität.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Dauer der Verletzungsfolgen und Unterrichtsunterbrechung bleibt offen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Todesfälle sind irreversibel; weitere Belastungen können unterschiedlich verlaufen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Schüler und verletzte Menschen sind in der Situation besonders schutzbedürftig.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Anhaltende Folgen könnten Gesundheit, Bildung und Familienalltag verbinden.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der schwere Lebens- und Gesundheitsschaden ist beobachtet und separat ausgewiesen; dieser ex-ante-Pfad belegt keine zusätzliche Schutzgrenzverletzung.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "medium",
+                "likelihood": "high",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen",
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Die Folgen würden davon abhängen, wie schwer die Verletzungen sind, welche Unterstützung verfügbar ist und wann der Unterricht wieder aufgenommen wird.",
+                "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+                "time_horizon": "unmittelbar bis mittelfristig nach dem Angriff",
+                "path_quality": [
+                  "direct",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichteten Verletzungen und die Unterrichtsaussetzung bilden den Ausgangspunkt; zusätzliche psychische oder soziale Folgen werden nicht als bereits eingetreten behauptet.",
+                "source_support": "Die Quellen belegen Tote, mehrere teils schwer Verletzte und die vorläufige Unterrichtsaussetzung, nicht die Dauer oder das Ausmaß weiterer Folgen.",
+                "limitations": "Genaue Verletztenzahl, Unterstützungsangebote, Wiederaufnahme des Unterrichts und längerfristige Gesundheitsdaten fehlen.",
+                "first_order": "Verletzte und Familien könnten medizinische und psychosoziale Unterstützung benötigen.",
+                "second_order": "Eine längere Unterbrechung könnte den Bildungsalltag und die Versorgung der Schulgemeinschaft belasten.",
+                "third_order": "Anhaltende Unsicherheit könnte Bildungsentscheidungen und Vertrauen in den Schulbetrieb beeinflussen; dies ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Der gelieferte Quellenbestand enthält keine Verlaufsdaten zu Gesundheit, Unterstützung oder Wiederaufnahme des Unterrichts.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 20,
+                  "divisor": 6,
+                  "raw": 3.3333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Zusätzliche Sicherheitsvorkehrungen könnten den Schulzugang erschweren",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Eine mögliche Reaktion auf den Angriff könnte den Schulbetrieb durch Zugangsbeschränkungen oder zusätzliche Kontrollen verändern.",
+                "recipients": [
+                  "Schüler",
+                  "Familien",
+                  "Schulpersonal"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist nur bedingt denkbar, weil keine konkreten weiteren Sicherheitsmaßnahmen berichtet sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Auswirkungen blieben voraussichtlich auf den lokalen Schulbereich begrenzt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Alltagsbelastung wäre weniger intensiv als der unmittelbare Angriff.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Umfang möglicher Vorkehrungen sind unbekannt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Nebenfolge ist aus den Quellen ableitbar.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Kinder und Jugendliche könnten von Zugangshürden besonders betroffen sein.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Nebeneffekt bliebe lokal und institutionell begrenzt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete zusätzliche Sicherheitsmaßnahme und keine daraus folgende Schutzgrenzverletzung sind berichtet.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Nur falls Behörden nach der Unterrichtsaussetzung zusätzliche, zugangsbeschränkende Maßnahmen einführen.",
+                "reference_space": "Gemeinde Banga und örtlicher Schulbetrieb",
+                "time_horizon": "mögliche Wiederaufnahme des Unterrichts",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird keine konkrete Maßnahme unterstellt; beschrieben wird nur eine mögliche Nebenfolge.",
+                "source_support": "Die Quelle belegt die vorläufige Unterrichtsaussetzung, nicht weitere Sicherheitsmaßnahmen oder Zugangseffekte.",
+                "limitations": "Keine Daten zu Schutzkonzepten, Zugang, Dauer oder Verteilung möglicher Belastungen.",
+                "first_order": "Zusätzliche Vorkehrungen könnten den Schulalltag verändern.",
+                "second_order": "Regelmäßiger Bildungszugang könnte für einzelne Schüler erschwert werden.",
+                "third_order": "Bei längerer Dauer könnte eine ungleiche Bildungsbelastung entstehen; dafür fehlt ein Nachweis.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keine Angaben zu weiteren Sicherheitsmaßnahmen oder ihren Zugangseffekten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbar starken positiven Hauptpfad; die negative Richtung beruht auf dem belegten Schaden und den daran anknüpfenden möglichen Belastungen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Weitere gesundheitliche Belastungen und Unterbrechungen des Schulbetriebs könnten fortbestehen",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+                "direction": "negative",
+                "source_ids": [
+                  "spiegel-schlagzeilen",
+                  "zdfheute-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "established",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+                "observed_at": "18.09.2026",
+                "temporal_status": "ex_post",
+                "mechanism": "Schusswaffenangriff an einer Schule",
+                "recipients": [
+                  "getötete und verletzte Schüler",
+                  "Schulgemeinschaft"
+                ],
+                "time_horizon": "Unmittelbar; Dauer weiterer Verletzungsfolgen offen",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Opfer und die unmittelbare Schulgemeinschaft sind betroffen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Todesfälle und teils schwere Verletzungen zeigen hohe Intensität.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer der Verletzungsfolgen ist nicht bekannt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Die berichteten Todesfälle sind irreversibel.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Schüler waren als Betroffene in einer Schule besonders schutzbedürftig.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Mögliche Folgen für Schulbetrieb und Vertrauen sind nachgelagert.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Die berichteten Todesfälle überschreiten eine zentrale Schutzgrenze des Lebensschutzes.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+              "direction": "negative",
+              "source_ids": [
+                "spiegel-schlagzeilen",
+                "zdfheute-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+              "observed_at": "18.09.2026",
+              "temporal_status": "ex_post",
+              "mechanism": "Schusswaffenangriff an einer Schule",
+              "recipients": [
+                "getötete und verletzte Schüler",
+                "Schulgemeinschaft"
+              ],
+              "time_horizon": "Unmittelbar; Dauer weiterer Verletzungsfolgen offen",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Opfer und die unmittelbare Schulgemeinschaft sind betroffen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Todesfälle und teils schwere Verletzungen zeigen hohe Intensität.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer der Verletzungsfolgen ist nicht bekannt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Die berichteten Todesfälle sind irreversibel.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Schüler waren als Betroffene in einer Schule besonders schutzbedürftig.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Mögliche Folgen für Schulbetrieb und Vertrauen sind nachgelagert.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die berichteten Todesfälle überschreiten eine zentrale Schutzgrenze des Lebensschutzes.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "spiegel-schlagzeilen",
+                  "zdfheute-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "hoch",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Quellen enthalten keine Angaben zu Umweltveränderungen, Ressourcenverbrauch oder ökologischen Folgewirkungen. Im abgegrenzten Ereignisraum ist daher kein materieller ökologischer Zustandswechsel modellierbar; die Stufe 0 ist begründet vernachlässigbar und keine Aussage über fehlende Daten allgemein.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen",
+              "zdfheute-nachrichten"
+            ],
+            "rationale": "Der Quellenbestand beschreibt einen lokalen Schusswaffenangriff, Opfer, Ermittlungen und Schulbetrieb, aber keinen ökologischen Mechanismus. Ein direkter ökologischer Pfad ist für diesen Sachverhalt in Raum und Zeit praktisch vernachlässigbar.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller ökologischer Zustandswechsel im berichteten Ereignisraum",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Quellen nennen keinen Umweltmechanismus, keine Ressourcenfolge und keine ökologische Veränderung.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Gemeinde Banga"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den berichteten lokalen Angriff ist kein materieller ökologischer Zustandswechsel beschrieben."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite ist im Quellenbestand belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität ist im Material beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauer ist im Material beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist berichtet.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzliche Umweltkomponente ist als betroffen belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen",
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemtiefe ist aus den Quellen ableitbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen",
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze ist durch den berichteten Sachverhalt konkret berührt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen",
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Ein ökologischer Pfad wäre nur bei zusätzlichen, nicht berichteten Veränderungen denkbar.",
+                "reference_space": "Lokaler Ereignisraum der Banga National High School",
+                "time_horizon": "offen",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Keine Umweltwirkung wird allein aus dem Thema oder dem Ort abgeleitet.",
+                "source_support": "Die Quellen liefern Angaben zum Angriff, zu Opfern, Ermittlungen und Schulbetrieb, aber keine ökologischen Daten.",
+                "limitations": "Umweltdaten sowie Angaben zu Ressourcen- oder Schadstofffolgen fehlen vollständig.",
+                "first_order": "Kein ökologischer Erstordnungsbefund ist belegt.",
+                "second_order": "Keine nachgelagerte Umweltfolge ist aus dem Material ableitbar.",
+                "third_order": "Keine ökologische Kaskade kann quellengebunden modelliert werden.",
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung der beiden gelieferten Quellen ergab keinen ökologischen Wirkungsbeleg.",
+                "negligibility_rationale": "Im abgegrenzten lokalen Ereignisraum ist für diesen Angriff kein ökologischer Zustandswechsel beschrieben oder mechanistisch plausibel belegt.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist weder ein materieller positiver noch ein negativer ökologischer Hauptpfad belegt; die Richtung bleibt deshalb offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Kein materieller ökologischer Zustandswechsel im berichteten Ereignisraum",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel im berichteten Ereignisraum",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Mögliche Folgen für lokale Schutzentscheidungen und Vertrauen sind plausibel, aber nicht beobachtet oder gemessen. Der Quellenbestand belegt Ermittlungen und behördliche Koordination, nicht deren demokratische Wirkung.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen",
+              "zdfheute-nachrichten"
+            ],
+            "rationale": "Ein tödlicher Angriff kann Rechenschaft, Schutzentscheidungen und Erwartungen an Behörden auslösen. Ohne Daten zu Transparenz, Beteiligung, Vertrauen oder institutionellen Veränderungen bleibt die Richtung offen und die Tragweite gering.",
+            "primary_paths": [
+              {
+                "label": "Lokale Schutz- und Rechenschaftsentscheidungen könnten an Bedeutung gewinnen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ermittlungen und behördliche Koordination können weitere Erklärungen, organisatorische Entscheidungen und öffentliche Erwartungen an Schutz auslösen.",
+                "recipients": [
+                  "lokale Behörden",
+                  "Schulgemeinschaft",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein möglicher institutioneller Folgepfad ist lokal begrenzt und nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre vor allem die lokale Schulgemeinschaft.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Debatte ist weniger unmittelbar als der menschliche Schaden.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Fortgang institutioneller Reaktionen sind offen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible institutionelle Änderung ist berichtet.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Vertrauen in Schutzinstitutionen könnte lokal empfindlich reagieren.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad betrifft lokale Entscheidungen, nicht belegte Systemänderungen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen berichten keine Einschränkung demokratischer Rechte oder institutionelle Schutzgrenzverletzung.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Behörden den Vorfall weiter aufarbeiten und daraus öffentlich relevante Entscheidungen ableiten.",
+                "reference_space": "Gemeinde Banga sowie zuständige Bildungs- und Sicherheitsbehörden",
+                "time_horizon": "Kurz- bis mittelfristig nach dem Angriff",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine mögliche institutionelle Reaktion wird nicht als bereits erfolgt dargestellt.",
+                "source_support": "Die Quelle belegt Ermittlungen und Koordination zur Klärung der Hintergründe, nicht deren demokratische Wirkung.",
+                "limitations": "Keine Angaben zu Transparenz, Vertrauen, Beteiligung, Rechenschaft oder konkreten Reformen.",
+                "first_order": "Behörden könnten den Vorfall weiter erklären und den Schulbetrieb organisatorisch steuern.",
+                "second_order": "Öffentliche Erwartungen an Schutz und Rechenschaft könnten steigen.",
+                "third_order": "Bei ausbleibender Aufklärung könnte Vertrauen belastet werden; diese Folge ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand misst Vertrauen, Beteiligung oder demokratische Folgen; der Pfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Die ungeklärte Motivlage könnte unbelegte Deutungen im öffentlichen Diskurs begünstigen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine offene Motivlage kann Nachfragen und Zuschreibungen fördern, die über den belegten Sachverhalt hinausgehen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Schulgemeinschaft"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Das Risiko ist kommunikativ möglich, aber ohne Resonanz- oder Diskursdaten nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt wäre zunächst auf das lokale Ereignis bezogen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine konkrete Polarisierung oder Eskalation ist berichtet.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Spekulationen ist unbekannt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Diskursveränderung ist belegt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene Gemeinschaften könnten auf unbelegte Zuschreibungen empfindlich reagieren.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Diskurseffekt ist nicht nachgewiesen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret betroffen oder belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Nur falls ungeprüfte Deutungen öffentlich verbreitet und nicht korrigiert würden.",
+                "reference_space": "Öffentlicher Diskurs zum lokalen Vorfall",
+                "time_horizon": "Kurzfristig bis zur Klärung des Motivs",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird kein konkreter falscher Vorwurf unterstellt.",
+                "source_support": "Die Quelle belegt lediglich, dass das Motiv zunächst unbekannt war.",
+                "limitations": "Keine Daten zur öffentlichen Rezeption, Verbreitung oder Korrektur liegen vor.",
+                "first_order": "Die offene Motivlage kann Nachfragen und Deutungen auslösen.",
+                "second_order": "Unbelegte Zuschreibungen könnten Vertrauen und Debattenqualität belasten.",
+                "third_order": "Eine dauerhafte Normalisierung solcher Zuschreibungen ist aus dem Material nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keine Resonanz- oder Diskursdaten; das Risiko bleibt eine begrenzte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven demokratischen Hauptpfad und keine nachgewiesene institutionelle Schädigung; deshalb bleibt die Richtung offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Lokale Schutz- und Rechenschaftsentscheidungen könnten an Bedeutung gewinnen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Lokale Schutz- und Rechenschaftsentscheidungen könnten an Bedeutung gewinnen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+            "direction": "negative",
+            "source_ids": [
+              "spiegel-schlagzeilen",
+              "zdfheute-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+            "observed_at": "18.09.2026",
+            "temporal_status": "ex_post",
+            "mechanism": "Schusswaffenangriff an einer Schule",
+            "recipients": [
+              "getötete und verletzte Schüler",
+              "Schulgemeinschaft"
+            ],
+            "time_horizon": "Unmittelbar; Dauer weiterer Verletzungsfolgen offen",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Opfer und die unmittelbare Schulgemeinschaft sind betroffen.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Todesfälle und teils schwere Verletzungen zeigen hohe Intensität.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Die Dauer der Verletzungsfolgen ist nicht bekannt.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Die berichteten Todesfälle sind irreversibel.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Schüler waren als Betroffene in einer Schule besonders schutzbedürftig.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Mögliche Folgen für Schulbetrieb und Vertrauen sind nachgelagert.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Die berichteten Todesfälle überschreiten eine zentrale Schutzgrenze des Lebensschutzes.",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "source_ids": [
+                "spiegel-schlagzeilen",
+                "zdfheute-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 18,
+              "divisor": 6,
+              "raw": 3,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T13:27:10.750Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Titelmeldung zu Schüssen an einer Schule in South Cotabato und mindestens drei Toten."
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Bericht über Tote, Verletzte, Ort, offene Opferzahl und Motiv, Unterrichtsaussetzung sowie Ermittlungen und behördliche Koordination."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "medium",
+          "likelihood": "high",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der unmittelbare Schaden ist separat als beobachteter Effekt belegt. Für weitere gesundheitliche, psychosoziale und schulische Folgen fehlen Angaben zu Dauer, Unterstützungsbedarf und Wiederaufnahme des Unterrichts.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen",
+            "zdfheute-nachrichten"
+          ],
+          "rationale": "Der beobachtete Angriff bildet einen starken Ausgangspunkt für mögliche weitere Belastungen von verletzten Schülern, Familien und der Schulgemeinschaft. Die zusätzliche Wirkung bleibt hinsichtlich Dauer und Reichweite begrenzt beurteilbar; die Schutzgrenze wird durch den beobachteten Schaden, nicht durch den ex-ante-Pfad, bewertet.",
+          "primary_paths": [
+            {
+              "label": "Weitere gesundheitliche Belastungen und Unterbrechungen des Schulbetriebs könnten fortbestehen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Schwere Verletzungen und ein tödlicher Angriff können medizinische, psychosoziale und organisatorische Unterstützung erforderlich machen; die Unterrichtsaussetzung kann den Bildungsalltag unterbrechen.",
+              "recipients": [
+                "verletzte Schüler",
+                "Familien",
+                "Schüler und Beschäftigte der Schule",
+                "Gemeinde Banga"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Ausgangslage ist schwerwiegend, doch Reichweite und Dauer zusätzlicher Folgen sind wegen fehlender Verlaufsdaten offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Betroffen sind Opfer, Familien und die örtliche Schulgemeinschaft.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Todesfälle und teils schwere Verletzungen markieren eine hohe Ausgangsintensität.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Dauer der Verletzungsfolgen und Unterrichtsunterbrechung bleibt offen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Todesfälle sind irreversibel; weitere Belastungen können unterschiedlich verlaufen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Schüler und verletzte Menschen sind in der Situation besonders schutzbedürftig.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Anhaltende Folgen könnten Gesundheit, Bildung und Familienalltag verbinden.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der schwere Lebens- und Gesundheitsschaden ist beobachtet und separat ausgewiesen; dieser ex-ante-Pfad belegt keine zusätzliche Schutzgrenzverletzung.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "medium",
+              "likelihood": "high",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen",
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Die Folgen würden davon abhängen, wie schwer die Verletzungen sind, welche Unterstützung verfügbar ist und wann der Unterricht wieder aufgenommen wird.",
+              "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+              "time_horizon": "unmittelbar bis mittelfristig nach dem Angriff",
+              "path_quality": [
+                "direct",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichteten Verletzungen und die Unterrichtsaussetzung bilden den Ausgangspunkt; zusätzliche psychische oder soziale Folgen werden nicht als bereits eingetreten behauptet.",
+              "source_support": "Die Quellen belegen Tote, mehrere teils schwer Verletzte und die vorläufige Unterrichtsaussetzung, nicht die Dauer oder das Ausmaß weiterer Folgen.",
+              "limitations": "Genaue Verletztenzahl, Unterstützungsangebote, Wiederaufnahme des Unterrichts und längerfristige Gesundheitsdaten fehlen.",
+              "first_order": "Verletzte und Familien könnten medizinische und psychosoziale Unterstützung benötigen.",
+              "second_order": "Eine längere Unterbrechung könnte den Bildungsalltag und die Versorgung der Schulgemeinschaft belasten.",
+              "third_order": "Anhaltende Unsicherheit könnte Bildungsentscheidungen und Vertrauen in den Schulbetrieb beeinflussen; dies ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Der gelieferte Quellenbestand enthält keine Verlaufsdaten zu Gesundheit, Unterstützung oder Wiederaufnahme des Unterrichts.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 20,
+                "divisor": 6,
+                "raw": 3.3333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Zusätzliche Sicherheitsvorkehrungen könnten den Schulzugang erschweren",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Eine mögliche Reaktion auf den Angriff könnte den Schulbetrieb durch Zugangsbeschränkungen oder zusätzliche Kontrollen verändern.",
+              "recipients": [
+                "Schüler",
+                "Familien",
+                "Schulpersonal"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist nur bedingt denkbar, weil keine konkreten weiteren Sicherheitsmaßnahmen berichtet sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Auswirkungen blieben voraussichtlich auf den lokalen Schulbereich begrenzt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Alltagsbelastung wäre weniger intensiv als der unmittelbare Angriff.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Umfang möglicher Vorkehrungen sind unbekannt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Nebenfolge ist aus den Quellen ableitbar.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Kinder und Jugendliche könnten von Zugangshürden besonders betroffen sein.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Nebeneffekt bliebe lokal und institutionell begrenzt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete zusätzliche Sicherheitsmaßnahme und keine daraus folgende Schutzgrenzverletzung sind berichtet.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Nur falls Behörden nach der Unterrichtsaussetzung zusätzliche, zugangsbeschränkende Maßnahmen einführen.",
+              "reference_space": "Gemeinde Banga und örtlicher Schulbetrieb",
+              "time_horizon": "mögliche Wiederaufnahme des Unterrichts",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird keine konkrete Maßnahme unterstellt; beschrieben wird nur eine mögliche Nebenfolge.",
+              "source_support": "Die Quelle belegt die vorläufige Unterrichtsaussetzung, nicht weitere Sicherheitsmaßnahmen oder Zugangseffekte.",
+              "limitations": "Keine Daten zu Schutzkonzepten, Zugang, Dauer oder Verteilung möglicher Belastungen.",
+              "first_order": "Zusätzliche Vorkehrungen könnten den Schulalltag verändern.",
+              "second_order": "Regelmäßiger Bildungszugang könnte für einzelne Schüler erschwert werden.",
+              "third_order": "Bei längerer Dauer könnte eine ungleiche Bildungsbelastung entstehen; dafür fehlt ein Nachweis.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keine Angaben zu weiteren Sicherheitsmaßnahmen oder ihren Zugangseffekten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbar starken positiven Hauptpfad; die negative Richtung beruht auf dem belegten Schaden und den daran anknüpfenden möglichen Belastungen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Weitere gesundheitliche Belastungen und Unterbrechungen des Schulbetriebs könnten fortbestehen",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+              "direction": "negative",
+              "source_ids": [
+                "spiegel-schlagzeilen",
+                "zdfheute-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+              "observed_at": "18.09.2026",
+              "temporal_status": "ex_post",
+              "mechanism": "Schusswaffenangriff an einer Schule",
+              "recipients": [
+                "getötete und verletzte Schüler",
+                "Schulgemeinschaft"
+              ],
+              "time_horizon": "Unmittelbar; Dauer weiterer Verletzungsfolgen offen",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Opfer und die unmittelbare Schulgemeinschaft sind betroffen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Todesfälle und teils schwere Verletzungen zeigen hohe Intensität.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer der Verletzungsfolgen ist nicht bekannt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Die berichteten Todesfälle sind irreversibel.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Schüler waren als Betroffene in einer Schule besonders schutzbedürftig.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Mögliche Folgen für Schulbetrieb und Vertrauen sind nachgelagert.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die berichteten Todesfälle überschreiten eine zentrale Schutzgrenze des Lebensschutzes.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "spiegel-schlagzeilen",
+                  "zdfheute-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+            "direction": "negative",
+            "source_ids": [
+              "spiegel-schlagzeilen",
+              "zdfheute-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Banga National High School und Gemeinde Banga auf Mindanao",
+            "observed_at": "18.09.2026",
+            "temporal_status": "ex_post",
+            "mechanism": "Schusswaffenangriff an einer Schule",
+            "recipients": [
+              "getötete und verletzte Schüler",
+              "Schulgemeinschaft"
+            ],
+            "time_horizon": "Unmittelbar; Dauer weiterer Verletzungsfolgen offen",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Opfer und die unmittelbare Schulgemeinschaft sind betroffen.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Todesfälle und teils schwere Verletzungen zeigen hohe Intensität.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Die Dauer der Verletzungsfolgen ist nicht bekannt.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Die berichteten Todesfälle sind irreversibel.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Schüler waren als Betroffene in einer Schule besonders schutzbedürftig.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Mögliche Folgen für Schulbetrieb und Vertrauen sind nachgelagert.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Die berichteten Todesfälle überschreiten eine zentrale Schutzgrenze des Lebensschutzes.",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "source_ids": [
+                "spiegel-schlagzeilen",
+                "zdfheute-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 18,
+              "divisor": 6,
+              "raw": 3,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Mindestens drei Menschen wurden getötet und mehrere weitere verletzt.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "hoch",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Quellen enthalten keine Angaben zu Umweltveränderungen, Ressourcenverbrauch oder ökologischen Folgewirkungen. Im abgegrenzten Ereignisraum ist daher kein materieller ökologischer Zustandswechsel modellierbar; die Stufe 0 ist begründet vernachlässigbar und keine Aussage über fehlende Daten allgemein.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen",
+            "zdfheute-nachrichten"
+          ],
+          "rationale": "Der Quellenbestand beschreibt einen lokalen Schusswaffenangriff, Opfer, Ermittlungen und Schulbetrieb, aber keinen ökologischen Mechanismus. Ein direkter ökologischer Pfad ist für diesen Sachverhalt in Raum und Zeit praktisch vernachlässigbar.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller ökologischer Zustandswechsel im berichteten Ereignisraum",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Quellen nennen keinen Umweltmechanismus, keine Ressourcenfolge und keine ökologische Veränderung.",
+              "recipients": [
+                "lokale Umwelt",
+                "Gemeinde Banga"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den berichteten lokalen Angriff ist kein materieller ökologischer Zustandswechsel beschrieben."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite ist im Quellenbestand belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität ist im Material beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauer ist im Material beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist berichtet.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzliche Umweltkomponente ist als betroffen belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemtiefe ist aus den Quellen ableitbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen",
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze ist durch den berichteten Sachverhalt konkret berührt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen",
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Ein ökologischer Pfad wäre nur bei zusätzlichen, nicht berichteten Veränderungen denkbar.",
+              "reference_space": "Lokaler Ereignisraum der Banga National High School",
+              "time_horizon": "offen",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Keine Umweltwirkung wird allein aus dem Thema oder dem Ort abgeleitet.",
+              "source_support": "Die Quellen liefern Angaben zum Angriff, zu Opfern, Ermittlungen und Schulbetrieb, aber keine ökologischen Daten.",
+              "limitations": "Umweltdaten sowie Angaben zu Ressourcen- oder Schadstofffolgen fehlen vollständig.",
+              "first_order": "Kein ökologischer Erstordnungsbefund ist belegt.",
+              "second_order": "Keine nachgelagerte Umweltfolge ist aus dem Material ableitbar.",
+              "third_order": "Keine ökologische Kaskade kann quellengebunden modelliert werden.",
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung der beiden gelieferten Quellen ergab keinen ökologischen Wirkungsbeleg.",
+              "negligibility_rationale": "Im abgegrenzten lokalen Ereignisraum ist für diesen Angriff kein ökologischer Zustandswechsel beschrieben oder mechanistisch plausibel belegt.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist weder ein materieller positiver noch ein negativer ökologischer Hauptpfad belegt; die Richtung bleibt deshalb offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel im berichteten Ereignisraum",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Kein materieller ökologischer Zustandswechsel im berichteten Ereignisraum",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Mögliche Folgen für lokale Schutzentscheidungen und Vertrauen sind plausibel, aber nicht beobachtet oder gemessen. Der Quellenbestand belegt Ermittlungen und behördliche Koordination, nicht deren demokratische Wirkung.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen",
+            "zdfheute-nachrichten"
+          ],
+          "rationale": "Ein tödlicher Angriff kann Rechenschaft, Schutzentscheidungen und Erwartungen an Behörden auslösen. Ohne Daten zu Transparenz, Beteiligung, Vertrauen oder institutionellen Veränderungen bleibt die Richtung offen und die Tragweite gering.",
+          "primary_paths": [
+            {
+              "label": "Lokale Schutz- und Rechenschaftsentscheidungen könnten an Bedeutung gewinnen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ermittlungen und behördliche Koordination können weitere Erklärungen, organisatorische Entscheidungen und öffentliche Erwartungen an Schutz auslösen.",
+              "recipients": [
+                "lokale Behörden",
+                "Schulgemeinschaft",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein möglicher institutioneller Folgepfad ist lokal begrenzt und nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre vor allem die lokale Schulgemeinschaft.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Debatte ist weniger unmittelbar als der menschliche Schaden.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Fortgang institutioneller Reaktionen sind offen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible institutionelle Änderung ist berichtet.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Vertrauen in Schutzinstitutionen könnte lokal empfindlich reagieren.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad betrifft lokale Entscheidungen, nicht belegte Systemänderungen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen berichten keine Einschränkung demokratischer Rechte oder institutionelle Schutzgrenzverletzung.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Behörden den Vorfall weiter aufarbeiten und daraus öffentlich relevante Entscheidungen ableiten.",
+              "reference_space": "Gemeinde Banga sowie zuständige Bildungs- und Sicherheitsbehörden",
+              "time_horizon": "Kurz- bis mittelfristig nach dem Angriff",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine mögliche institutionelle Reaktion wird nicht als bereits erfolgt dargestellt.",
+              "source_support": "Die Quelle belegt Ermittlungen und Koordination zur Klärung der Hintergründe, nicht deren demokratische Wirkung.",
+              "limitations": "Keine Angaben zu Transparenz, Vertrauen, Beteiligung, Rechenschaft oder konkreten Reformen.",
+              "first_order": "Behörden könnten den Vorfall weiter erklären und den Schulbetrieb organisatorisch steuern.",
+              "second_order": "Öffentliche Erwartungen an Schutz und Rechenschaft könnten steigen.",
+              "third_order": "Bei ausbleibender Aufklärung könnte Vertrauen belastet werden; diese Folge ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand misst Vertrauen, Beteiligung oder demokratische Folgen; der Pfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Die ungeklärte Motivlage könnte unbelegte Deutungen im öffentlichen Diskurs begünstigen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine offene Motivlage kann Nachfragen und Zuschreibungen fördern, die über den belegten Sachverhalt hinausgehen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Schulgemeinschaft"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Das Risiko ist kommunikativ möglich, aber ohne Resonanz- oder Diskursdaten nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt wäre zunächst auf das lokale Ereignis bezogen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine konkrete Polarisierung oder Eskalation ist berichtet.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Spekulationen ist unbekannt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Diskursveränderung ist belegt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene Gemeinschaften könnten auf unbelegte Zuschreibungen empfindlich reagieren.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Diskurseffekt ist nicht nachgewiesen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret betroffen oder belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Nur falls ungeprüfte Deutungen öffentlich verbreitet und nicht korrigiert würden.",
+              "reference_space": "Öffentlicher Diskurs zum lokalen Vorfall",
+              "time_horizon": "Kurzfristig bis zur Klärung des Motivs",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird kein konkreter falscher Vorwurf unterstellt.",
+              "source_support": "Die Quelle belegt lediglich, dass das Motiv zunächst unbekannt war.",
+              "limitations": "Keine Daten zur öffentlichen Rezeption, Verbreitung oder Korrektur liegen vor.",
+              "first_order": "Die offene Motivlage kann Nachfragen und Deutungen auslösen.",
+              "second_order": "Unbelegte Zuschreibungen könnten Vertrauen und Debattenqualität belasten.",
+              "third_order": "Eine dauerhafte Normalisierung solcher Zuschreibungen ist aus dem Material nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keine Resonanz- oder Diskursdaten; das Risiko bleibt eine begrenzte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven demokratischen Hauptpfad und keine nachgewiesene institutionelle Schädigung; deshalb bleibt die Richtung offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Lokale Schutz- und Rechenschaftsentscheidungen könnten an Bedeutung gewinnen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Lokale Schutz- und Rechenschaftsentscheidungen könnten an Bedeutung gewinnen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T13:22:42.065Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T10:06:00.000Z",
+      "last_updated": "2026-09-18T13:27:10.744Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-9ae12b803ff3f99aac5b",
+      "case_file": null,
+      "source_published_at": "2026-09-18T11:06:00.000Z",
+      "published_at": "2026-09-18T13:27:10.744Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/panorama/justiz/philippinen-banga-national-high-school-drei-tote-nach-schuessen-an-schule-a-e3e2933c-6522-4d91-95a5-b64bc9ce5a90",
+          "source_type": "news_sitemap",
+          "published_at": "2026-09-18T12:59:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/panorama/schuesse-philippinen-schule-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T11:06:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e5d9220bd864f8c8",
       "title_image": {
