@@ -2,8 +2,1476 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T13:22:42.065Z",
+  "updated_at": "2026-09-18T13:37:51.537Z",
   "stories": [
+    {
+      "story_id": "wt-be0ebac4cfdc4b24",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-be0ebac4cfdc4b24-ed452797936521a8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-be0ebac4cfdc4b24-9be779dea1e8dc85-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-be0ebac4cfdc4b24-a98eef7dcc223135-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "gewaltkriminalitat-17-schusse-in-adlershof-polizei-fahndet-weiter-nach-tatern-dc4b24",
+      "title": "Laut Tagesspiegel: 17 Schüsse in Adlershof und ein schwer verletztes Opfer",
+      "source_summary": "Der Tagesspiegel berichtet von einem nächtlichen Schusswaffenvorfall in Berlin-Adlershof. Dem Titel zufolge fielen 17 Schüsse; im Vorspann ist von einer Schießerei über mehrere Straßen und einem schwer verletzten Opfer die Rede.\n\nNach dem Bericht suchte die Polizei eine Woche später noch nach Zeugen. Damit ist der Sachverhalt als journalistisch berichteter Vorfall erkennbar, aber nicht durch eine zweite unabhängige Quelle abgesichert.\n\nOffen bleiben in der vorliegenden Textauswahl unter anderem die Identität der Tatverdächtigen, der genaue Ablauf, das Motiv und die Umstände der Verletzung. Eine eingetretene weitergehende Wirkung lässt sich daraus nicht ableiten.",
+      "summary": "In Adlershof berichtet der Tagesspiegel von 17 Schüssen und einem schwer verletzten Opfer. Die Polizei suchte dem Bericht zufolge eine Woche später noch nach Zeugen; Ablauf und Motiv bleiben offen.",
+      "detail_summary": "Der Tagesspiegel berichtet von einem nächtlichen Schusswaffenvorfall in Adlershof, bei dem 17 Schüsse gefallen sein sollen. Im Vorspann ist von einer Schießerei über mehrere Straßen und einem schwer verletzten Opfer die Rede. Eine Woche später habe die Polizei noch nach Zeugen gesucht. Der Bericht ist die einzige vorliegende Quelle und bestätigt den Vorgang daher nicht unabhängig. Für Menschen kann der Vorfall kurzfristig Sicherheitsgefühl, Hilfeverhalten und die Nutzung des öffentlichen Raums beeinflussen. Ob daraus längerfristige Veränderungen entstehen, bleibt offen.",
+      "why_relevant": "Schüsse und ein schwer verletztes Opfer markieren eine akute Sicherheitslage im öffentlichen Raum; zugleich sind Tatablauf, Motiv und weitere Gefahren ungeklärt.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über 17 Schüsse in Adlershof, ein schwer verletztes Opfer und eine laufende Zeugenfahndung",
+        "evaluation_target": {
+          "label": "berichteter Schusswaffenvorfall und seine möglichen lokalen Folgen",
+          "type": "event"
+        },
+        "baseline": "Öffentlicher Raum ohne den konkret berichteten Vorfall und ohne daraus abgeleitete zusätzliche Reaktionen",
+        "counterfactual": "Ohne den Vorfall könnten sich Sicherheitswahrnehmung, Zeugenmobilisierung und lokale Aufmerksamkeit anders entwickeln; weitergehende Unterschiede sind nicht belegbar.",
+        "reference_frame": [
+          "körperliche Unversehrtheit",
+          "öffentliche Sicherheit",
+          "demokratische Rechenschaft und transparente Ermittlungen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der berichtete Vorfall kann kurzfristig Menschen im Umfeld durch Verletzung, Vorsicht und Unsicherheit betreffen. Langfristige soziale oder gesundheitliche Folgen sind nicht belegt.",
+            "planet": "Für ökologische Systeme ist aus dem Schusswaffenvorfall kein plausibler materieller Wirkungspfad von relevanter Größenordnung ableitbar.",
+            "democracy": "Die Zeugenfahndung kann die öffentliche Rechenschaft über Ermittlungen berühren. Eine institutionelle oder politische Veränderung ist bislang nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche unmittelbare Veränderung von Sicherheitswahrnehmung, Verhalten und Zeugenmobilisierung im lokalen Umfeld.",
+          "second_order": "Bei anhaltender Unsicherheit könnten sich Nutzung öffentlicher Räume und Erwartungen an die Ermittlungsbehörden verändern.",
+          "third_order": "Nur bei bestätigten Wiederholungen oder institutionellen Reaktionen könnte eine breitere Sicherheitsdebatte entstehen; dafür liegt kein Beleg vor.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Es liegt nur eine journalistische Quelle vor.",
+            "Keine Quelle belegt eine Verhaltensänderung, Wiederholung oder institutionelle Folge.",
+            "Der Vorfall kann ein lokales Einzelereignis bleiben."
+          ],
+          "source_independence": "Die Quellenbasis umfasst ausschließlich den Tagesspiegel; unabhängige Bestätigung und Primärbelege fehlen.",
+          "institutional_status": "Der Ermittlungsstand ist offen; aus der Quelle ergibt sich weder ein gerichtlicher Befund noch eine neue Regelung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den berichteten Vorfall, aber keine Messung von Verhaltens-, Gesundheits- oder Verteilungseffekten. Der Wirkpfad bleibt deshalb eine bedingte Modellierung mit lokaler Reichweite.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein schwer verletztes Opfer und Schüsse im öffentlichen Raum können kurzfristig körperliche Sicherheit, Vorsicht und Vertrauen in die sichere Nutzbarkeit des Umfelds beeinträchtigen. Dauerhafte Folgen sind nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Berichteter Schusswaffenvorfall kann lokale Sicherheitswahrnehmung und Nutzung öffentlicher Räume verschlechtern",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Kombination aus Schüssen, schwerer Verletzung und offener Fahndung kann bei Anwohnerinnen, Anwohnern und Passantinnen und Passanten Vorsicht und Unsicherheit auslösen.",
+                "recipients": [
+                  "Anwohnerinnen und Anwohner",
+                  "Passantinnen und Passanten",
+                  "potenzielle Zeuginnen und Zeugen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 2,
+                  "rationale": "Lokale und kurzfristige Reichweite sprechen gegen eine hohe Stufe; die berichtete schwere Verletzung begründet dennoch mehr als eine vernachlässigbare Wirkung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der berichtete Ort und mehrere Straßen begrenzen die Reichweite lokal.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Schüsse und ein schwer verletztes Opfer markieren eine erhebliche lokale Belastung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine längerfristige Wirkung wird in der Quelle nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verhaltens- und Wahrnehmungsänderungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen im unmittelbaren Umfeld können durch Gewalt und Unsicherheit besonders betroffen sein.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zunächst individuelles Verhalten und lokale Wahrnehmung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für die Gesamtbevölkerung ist aus der Quelle nicht ableitbar; die körperliche Verletzung betrifft den berichteten Einzelfall.",
+                  "reference_frame": "körperliche Unversehrtheit",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "observed"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der berichtete Vorfall zutrifft und Menschen im Umfeld davon erfahren oder betroffen sind.",
+                "reference_space": "Adlershof und das unmittelbar betroffene lokale Umfeld",
+                "time_horizon": "kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichtete Gewalt kann bei Betroffenen und Beobachtenden die Sicherheitswahrnehmung beeinflussen.",
+                "source_support": "Die Quelle trägt den berichteten Vorfall, die Verletzung und die Zeugenfahndung; sie misst keine Wirkung auf Verhalten oder Gesundheit.",
+                "limitations": "Keine unabhängige Bestätigung, keine Befragungsdaten und keine Angaben zur Dauer oder Verteilung der Folgen.",
+                "first_order": "Mögliche erhöhte Vorsicht und veränderte Nutzung des lokalen öffentlichen Raums.",
+                "second_order": "Bei anhaltender Unsicherheit könnten Menschen Wege oder Zeiten ändern und zusätzliche Hilfe suchen.",
+                "third_order": "Eine breitere Debatte über lokale Sicherheitsmaßnahmen wäre nur bei weiteren bestätigten Ereignissen oder Reaktionen plausibel.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Folgenmessung oder unabhängige Bestätigung in der vorliegenden Quelle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Unklare Täter- und Motivangaben können Gerüchte und Fehlzuschreibungen begünstigen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine offene Fahndung bei begrenzten Informationen kann informelle Deutungen und unbelegte Beschuldigungen fördern.",
+                "recipients": [
+                  "lokale Öffentlichkeit",
+                  "potenziell beschuldigte Personen und Gruppen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Pfad ist möglich, aber weder eingetreten noch in seiner Reichweite belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Gerüchte könnten lokal zirkulieren, ihre Reichweite ist unklar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die mögliche Belastung ist aus der Quelle nicht messbar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer wäre von weiterer Kommunikation abhängig.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fehlzuschreibungen können korrigiert werden, aber vorübergehend schaden.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene Gruppen sind aus der Quelle nicht bestimmbar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad bleibt auf lokale Kommunikation begrenzt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Schutz vor Fehlbeschuldigung",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt öffentliche Weiterverbreitung ohne zusätzliche Fakten voraus.",
+                "reference_space": "lokale Öffentlichkeit",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unvollständige Informationen können Raum für unbelegte Deutungen lassen.",
+                "source_support": "Die Quelle nennt offene Ermittlungsfragen, belegt aber keine Gerüchte oder Fehlbeschuldigungen.",
+                "limitations": "Keine Daten zu Rezeption, Wiederholung oder konkreten Zuschreibungen.",
+                "first_order": "Mögliche Weitergabe ungesicherter Deutungen.",
+                "second_order": "Mögliche Belastung des Vertrauens in Ermittlungen und Berichterstattung.",
+                "third_order": "Eine dauerhafte Polarisierung ist nicht aus der Quelle ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle belegt eine tatsächliche Gerüchte- oder Polarisierungswirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es liegt kein vergleichbarer positiver Hauptpfad vor; mögliche Hilfs- und Aufklärungseffekte gleichen das Verletzungsrisiko nicht automatisch aus."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Berichteter Schusswaffenvorfall kann lokale Sicherheitswahrnehmung und Nutzung öffentlicher Räume verschlechtern",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Berichteter Schusswaffenvorfall kann lokale Sicherheitswahrnehmung und Nutzung öffentlicher Räume verschlechtern",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die vorliegende Quelle enthält keinen belastbaren Hinweis auf ökologische Veränderungen; ein materieller Umweltpfad ist im abgegrenzten lokalen und kurzfristigen Rahmen vernachlässigbar.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Der berichtete Schusswaffenvorfall betrifft nach der vorliegenden Quelle Menschen und öffentliche Sicherheit. Ein eigenständiger relevanter Umweltpfad ist daraus nicht ableitbar.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller ökologischer Zustandswechsel durch den berichteten Vorfall im abgegrenzten Rahmen",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Die Quelle beschreibt Schüsse, eine Verletzung und eine Fahndung, aber keine Freisetzung, Beschädigung oder Nutzung von Umweltressourcen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Ökosysteme im Umfeld"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den berichteten Sachverhalt ist kein belastbarer ökologischer Wirkmechanismus angegeben."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite ist in der Quelle erkennbar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine Umweltbelastung wird im Beleg beschrieben.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kein irreversibler Umweltschaden ist beschrieben.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine betroffene ökologische Vulnerabilität ist ausgewiesen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein systemischer Umweltmechanismus ist aus dem Beleg ableitbar.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird durch den vorliegenden Sachverhalt nicht berührt.",
+                  "reference_frame": "lokale Umweltintegrität",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad gilt für den in der Quelle beschriebenen Vorfall ohne zusätzliche, nicht belegte Begleitereignisse.",
+                "reference_space": "lokales Umfeld von Adlershof",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "direct"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die vorliegende Textauswahl erfasst den relevanten Sachverhalt vollständig genug, um keinen Umweltmechanismus zu erkennen.",
+                "source_support": "Die Quelle nennt Gewalt, Verletzung und Fahndung, aber keine Umweltfolge.",
+                "limitations": "Der vollständige Artikel und mögliche Sachschäden sind nicht vorliegend.",
+                "first_order": "Kein belegter ökologischer Zustandswechsel.",
+                "second_order": "Keine belastbare ökologische Folge ableitbar.",
+                "third_order": "Keine systemische Umweltwirkung ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Folge oder Umweltbelastung in der vorliegenden Quelle beschrieben.",
+                "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum ist kein ökologischer Wirkmechanismus belegt; die modellierte Änderung ist daher praktisch vernachlässigbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen materiellen positiven oder negativen Umweltpfad in der vorliegenden Quellenbasis."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Vorfall im abgegrenzten Rahmen",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Vorfall im abgegrenzten Rahmen",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine laufende Zeugenfahndung, aber keine gemessene Veränderung von Vertrauen, Beteiligung oder Institutionen. Ein möglicher demokratischer Pfad bleibt daher lokal und schwach.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Eine offene Zeugenfahndung kann die Erwartung an transparente Aufklärung berühren. Unklare Informationen könnten Vertrauen belasten, doch eine tatsächliche demokratische Wirkung ist nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Offene Ermittlungen können lokales Vertrauen in Aufklärung und Sicherheitsinstitutionen beeinflussen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die fortdauernde Suche nach Zeugen bei ungeklärtem Ablauf kann Erwartungen an staatliche Aufklärung erhöhen und bei ausbleibenden Ergebnissen Vertrauen belasten.",
+                "recipients": [
+                  "lokale Öffentlichkeit",
+                  "Polizei und Ermittlungsbehörden"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der mögliche institutionelle Bezug ist lokal und indirekt; die Quelle belegt keine tatsächliche Vertrauensänderung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die mögliche Wirkung betrifft vor allem das lokale Umfeld.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Vertrauensbelastung ist nicht gemessen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt vom weiteren Ermittlungsverlauf ab.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen kann durch transparente Aufklärung grundsätzlich wiederhergestellt werden.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere institutionelle oder soziale Vulnerabilität ist nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt bei einer lokalen Erwartung an Ermittlungsarbeit.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht belegt.",
+                  "reference_frame": "Transparenz und Rechenschaft staatlicher Ermittlungen",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die offene Fahndung öffentlich wahrgenommen und als institutionelles Problem bewertet wird.",
+                "reference_space": "lokale Öffentlichkeit und Ermittlungsinstitutionen",
+                "time_horizon": "kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Transparente Information und sichtbare Ermittlungsfortschritte können Vertrauen stützen; ausbleibende Klärung könnte es belasten.",
+                "source_support": "Die Quelle belegt die weitere Zeugenfahndung, nicht deren Wirkung auf Vertrauen oder Beteiligung.",
+                "limitations": "Keine Umfragen, Verwaltungsdaten oder unabhängigen Angaben zur institutionellen Reaktion liegen vor.",
+                "first_order": "Mögliche erhöhte Aufmerksamkeit für die Ermittlungen.",
+                "second_order": "Mögliche Veränderung lokaler Erwartungen an polizeiliche Transparenz und Aufklärung.",
+                "third_order": "Eine breitere demokratische oder institutionelle Folge ist ohne weitere bestätigte Entwicklungen nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Evidenz für eine tatsächliche Vertrauens-, Beteiligungs- oder Institutionswirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Zeugenfahndung kann Beteiligung an der Aufklärung ermöglichen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Der öffentliche Aufruf nach Zeuginnen und Zeugen kann Hinweise aus der Bevölkerung mobilisieren und damit die Ermittlungsfähigkeit unterstützen.",
+                "recipients": [
+                  "potenzielle Zeuginnen und Zeugen",
+                  "Ermittlungsbehörden"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Eine Beteiligungsmöglichkeit ist plausibel, aber eine tatsächliche Mobilisierung wird nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Aufruf richtet sich an das lokale Umfeld.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Stärke der Beteiligung ist unbekannt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Wirkung wäre an die laufende Fahndung gebunden.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine Beteiligungsentscheidung ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere Betroffenheiten der angesprochenen Personen sind nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad unterstützt zunächst nur die konkrete Ermittlung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wird durch die mögliche Zeugenbeteiligung nicht erkennbar berührt.",
+                  "reference_frame": "Beteiligung an rechtsstaatlicher Aufklärung",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Zeuginnen und Zeugen den Aufruf wahrnehmen und belastbare Hinweise geben.",
+                "reference_space": "lokales Ermittlungsumfeld",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Zeugenhinweise können Ermittlungen unterstützen, sofern sie verfügbar und verwertbar sind.",
+                "source_support": "Die Quelle belegt die Suche nach Zeugen, nicht den Eingang oder Nutzen von Hinweisen.",
+                "limitations": "Keine Daten zu eingegangenen Aussagen oder Ermittlungsergebnissen.",
+                "first_order": "Mögliche Kontaktaufnahme von Zeuginnen und Zeugen mit den Behörden.",
+                "second_order": "Mögliche bessere Aufklärung des berichteten Vorfalls.",
+                "third_order": "Eine institutionelle Vertrauensstärkung ist nur bei sichtbaren, rechtsstaatlichen Ergebnissen denkbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle bestätigt die Zeugenfahndung, aber keine tatsächliche Beteiligung oder Aufklärung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein möglicher positiver Beteiligungspfad steht einem schwachen negativen Vertrauenpfad gegenüber; beide sind unbelegt und lokal begrenzt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Offene Ermittlungen können lokales Vertrauen in Aufklärung und Sicherheitsinstitutionen beeinflussen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Offene Ermittlungen können lokales Vertrauen in Aufklärung und Sicherheitsinstitutionen beeinflussen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T13:40:28.683Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Journalistischer Bericht über 17 Schüsse, ein schwer verletztes Opfer und die weitere Suche nach Zeugen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den berichteten Vorfall, aber keine Messung von Verhaltens-, Gesundheits- oder Verteilungseffekten. Der Wirkpfad bleibt deshalb eine bedingte Modellierung mit lokaler Reichweite.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein schwer verletztes Opfer und Schüsse im öffentlichen Raum können kurzfristig körperliche Sicherheit, Vorsicht und Vertrauen in die sichere Nutzbarkeit des Umfelds beeinträchtigen. Dauerhafte Folgen sind nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Berichteter Schusswaffenvorfall kann lokale Sicherheitswahrnehmung und Nutzung öffentlicher Räume verschlechtern",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Kombination aus Schüssen, schwerer Verletzung und offener Fahndung kann bei Anwohnerinnen, Anwohnern und Passantinnen und Passanten Vorsicht und Unsicherheit auslösen.",
+              "recipients": [
+                "Anwohnerinnen und Anwohner",
+                "Passantinnen und Passanten",
+                "potenzielle Zeuginnen und Zeugen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 2,
+                "rationale": "Lokale und kurzfristige Reichweite sprechen gegen eine hohe Stufe; die berichtete schwere Verletzung begründet dennoch mehr als eine vernachlässigbare Wirkung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der berichtete Ort und mehrere Straßen begrenzen die Reichweite lokal.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Schüsse und ein schwer verletztes Opfer markieren eine erhebliche lokale Belastung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine längerfristige Wirkung wird in der Quelle nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verhaltens- und Wahrnehmungsänderungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen im unmittelbaren Umfeld können durch Gewalt und Unsicherheit besonders betroffen sein.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zunächst individuelles Verhalten und lokale Wahrnehmung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für die Gesamtbevölkerung ist aus der Quelle nicht ableitbar; die körperliche Verletzung betrifft den berichteten Einzelfall.",
+                "reference_frame": "körperliche Unversehrtheit",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "observed"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der berichtete Vorfall zutrifft und Menschen im Umfeld davon erfahren oder betroffen sind.",
+              "reference_space": "Adlershof und das unmittelbar betroffene lokale Umfeld",
+              "time_horizon": "kurzfristig bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichtete Gewalt kann bei Betroffenen und Beobachtenden die Sicherheitswahrnehmung beeinflussen.",
+              "source_support": "Die Quelle trägt den berichteten Vorfall, die Verletzung und die Zeugenfahndung; sie misst keine Wirkung auf Verhalten oder Gesundheit.",
+              "limitations": "Keine unabhängige Bestätigung, keine Befragungsdaten und keine Angaben zur Dauer oder Verteilung der Folgen.",
+              "first_order": "Mögliche erhöhte Vorsicht und veränderte Nutzung des lokalen öffentlichen Raums.",
+              "second_order": "Bei anhaltender Unsicherheit könnten Menschen Wege oder Zeiten ändern und zusätzliche Hilfe suchen.",
+              "third_order": "Eine breitere Debatte über lokale Sicherheitsmaßnahmen wäre nur bei weiteren bestätigten Ereignissen oder Reaktionen plausibel.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Folgenmessung oder unabhängige Bestätigung in der vorliegenden Quelle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Unklare Täter- und Motivangaben können Gerüchte und Fehlzuschreibungen begünstigen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine offene Fahndung bei begrenzten Informationen kann informelle Deutungen und unbelegte Beschuldigungen fördern.",
+              "recipients": [
+                "lokale Öffentlichkeit",
+                "potenziell beschuldigte Personen und Gruppen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Pfad ist möglich, aber weder eingetreten noch in seiner Reichweite belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Gerüchte könnten lokal zirkulieren, ihre Reichweite ist unklar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die mögliche Belastung ist aus der Quelle nicht messbar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer wäre von weiterer Kommunikation abhängig.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fehlzuschreibungen können korrigiert werden, aber vorübergehend schaden.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene Gruppen sind aus der Quelle nicht bestimmbar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad bleibt auf lokale Kommunikation begrenzt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Schutz vor Fehlbeschuldigung",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt öffentliche Weiterverbreitung ohne zusätzliche Fakten voraus.",
+              "reference_space": "lokale Öffentlichkeit",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unvollständige Informationen können Raum für unbelegte Deutungen lassen.",
+              "source_support": "Die Quelle nennt offene Ermittlungsfragen, belegt aber keine Gerüchte oder Fehlbeschuldigungen.",
+              "limitations": "Keine Daten zu Rezeption, Wiederholung oder konkreten Zuschreibungen.",
+              "first_order": "Mögliche Weitergabe ungesicherter Deutungen.",
+              "second_order": "Mögliche Belastung des Vertrauens in Ermittlungen und Berichterstattung.",
+              "third_order": "Eine dauerhafte Polarisierung ist nicht aus der Quelle ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle belegt eine tatsächliche Gerüchte- oder Polarisierungswirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es liegt kein vergleichbarer positiver Hauptpfad vor; mögliche Hilfs- und Aufklärungseffekte gleichen das Verletzungsrisiko nicht automatisch aus."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Berichteter Schusswaffenvorfall kann lokale Sicherheitswahrnehmung und Nutzung öffentlicher Räume verschlechtern",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Berichteter Schusswaffenvorfall kann lokale Sicherheitswahrnehmung und Nutzung öffentlicher Räume verschlechtern",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die vorliegende Quelle enthält keinen belastbaren Hinweis auf ökologische Veränderungen; ein materieller Umweltpfad ist im abgegrenzten lokalen und kurzfristigen Rahmen vernachlässigbar.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Der berichtete Schusswaffenvorfall betrifft nach der vorliegenden Quelle Menschen und öffentliche Sicherheit. Ein eigenständiger relevanter Umweltpfad ist daraus nicht ableitbar.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller ökologischer Zustandswechsel durch den berichteten Vorfall im abgegrenzten Rahmen",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Die Quelle beschreibt Schüsse, eine Verletzung und eine Fahndung, aber keine Freisetzung, Beschädigung oder Nutzung von Umweltressourcen.",
+              "recipients": [
+                "lokale Umwelt",
+                "Ökosysteme im Umfeld"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den berichteten Sachverhalt ist kein belastbarer ökologischer Wirkmechanismus angegeben."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite ist in der Quelle erkennbar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine Umweltbelastung wird im Beleg beschrieben.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kein irreversibler Umweltschaden ist beschrieben.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine betroffene ökologische Vulnerabilität ist ausgewiesen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein systemischer Umweltmechanismus ist aus dem Beleg ableitbar.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird durch den vorliegenden Sachverhalt nicht berührt.",
+                "reference_frame": "lokale Umweltintegrität",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad gilt für den in der Quelle beschriebenen Vorfall ohne zusätzliche, nicht belegte Begleitereignisse.",
+              "reference_space": "lokales Umfeld von Adlershof",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "direct"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die vorliegende Textauswahl erfasst den relevanten Sachverhalt vollständig genug, um keinen Umweltmechanismus zu erkennen.",
+              "source_support": "Die Quelle nennt Gewalt, Verletzung und Fahndung, aber keine Umweltfolge.",
+              "limitations": "Der vollständige Artikel und mögliche Sachschäden sind nicht vorliegend.",
+              "first_order": "Kein belegter ökologischer Zustandswechsel.",
+              "second_order": "Keine belastbare ökologische Folge ableitbar.",
+              "third_order": "Keine systemische Umweltwirkung ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Folge oder Umweltbelastung in der vorliegenden Quelle beschrieben.",
+              "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum ist kein ökologischer Wirkmechanismus belegt; die modellierte Änderung ist daher praktisch vernachlässigbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen materiellen positiven oder negativen Umweltpfad in der vorliegenden Quellenbasis."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Vorfall im abgegrenzten Rahmen",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Vorfall im abgegrenzten Rahmen",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine laufende Zeugenfahndung, aber keine gemessene Veränderung von Vertrauen, Beteiligung oder Institutionen. Ein möglicher demokratischer Pfad bleibt daher lokal und schwach.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Eine offene Zeugenfahndung kann die Erwartung an transparente Aufklärung berühren. Unklare Informationen könnten Vertrauen belasten, doch eine tatsächliche demokratische Wirkung ist nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Offene Ermittlungen können lokales Vertrauen in Aufklärung und Sicherheitsinstitutionen beeinflussen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die fortdauernde Suche nach Zeugen bei ungeklärtem Ablauf kann Erwartungen an staatliche Aufklärung erhöhen und bei ausbleibenden Ergebnissen Vertrauen belasten.",
+              "recipients": [
+                "lokale Öffentlichkeit",
+                "Polizei und Ermittlungsbehörden"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der mögliche institutionelle Bezug ist lokal und indirekt; die Quelle belegt keine tatsächliche Vertrauensänderung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die mögliche Wirkung betrifft vor allem das lokale Umfeld.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Vertrauensbelastung ist nicht gemessen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt vom weiteren Ermittlungsverlauf ab.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen kann durch transparente Aufklärung grundsätzlich wiederhergestellt werden.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere institutionelle oder soziale Vulnerabilität ist nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt bei einer lokalen Erwartung an Ermittlungsarbeit.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht belegt.",
+                "reference_frame": "Transparenz und Rechenschaft staatlicher Ermittlungen",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die offene Fahndung öffentlich wahrgenommen und als institutionelles Problem bewertet wird.",
+              "reference_space": "lokale Öffentlichkeit und Ermittlungsinstitutionen",
+              "time_horizon": "kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Transparente Information und sichtbare Ermittlungsfortschritte können Vertrauen stützen; ausbleibende Klärung könnte es belasten.",
+              "source_support": "Die Quelle belegt die weitere Zeugenfahndung, nicht deren Wirkung auf Vertrauen oder Beteiligung.",
+              "limitations": "Keine Umfragen, Verwaltungsdaten oder unabhängigen Angaben zur institutionellen Reaktion liegen vor.",
+              "first_order": "Mögliche erhöhte Aufmerksamkeit für die Ermittlungen.",
+              "second_order": "Mögliche Veränderung lokaler Erwartungen an polizeiliche Transparenz und Aufklärung.",
+              "third_order": "Eine breitere demokratische oder institutionelle Folge ist ohne weitere bestätigte Entwicklungen nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Evidenz für eine tatsächliche Vertrauens-, Beteiligungs- oder Institutionswirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Zeugenfahndung kann Beteiligung an der Aufklärung ermöglichen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Der öffentliche Aufruf nach Zeuginnen und Zeugen kann Hinweise aus der Bevölkerung mobilisieren und damit die Ermittlungsfähigkeit unterstützen.",
+              "recipients": [
+                "potenzielle Zeuginnen und Zeugen",
+                "Ermittlungsbehörden"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Eine Beteiligungsmöglichkeit ist plausibel, aber eine tatsächliche Mobilisierung wird nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Aufruf richtet sich an das lokale Umfeld.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Stärke der Beteiligung ist unbekannt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Wirkung wäre an die laufende Fahndung gebunden.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine Beteiligungsentscheidung ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere Betroffenheiten der angesprochenen Personen sind nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad unterstützt zunächst nur die konkrete Ermittlung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wird durch die mögliche Zeugenbeteiligung nicht erkennbar berührt.",
+                "reference_frame": "Beteiligung an rechtsstaatlicher Aufklärung",
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Zeuginnen und Zeugen den Aufruf wahrnehmen und belastbare Hinweise geben.",
+              "reference_space": "lokales Ermittlungsumfeld",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Zeugenhinweise können Ermittlungen unterstützen, sofern sie verfügbar und verwertbar sind.",
+              "source_support": "Die Quelle belegt die Suche nach Zeugen, nicht den Eingang oder Nutzen von Hinweisen.",
+              "limitations": "Keine Daten zu eingegangenen Aussagen oder Ermittlungsergebnissen.",
+              "first_order": "Mögliche Kontaktaufnahme von Zeuginnen und Zeugen mit den Behörden.",
+              "second_order": "Mögliche bessere Aufklärung des berichteten Vorfalls.",
+              "third_order": "Eine institutionelle Vertrauensstärkung ist nur bei sichtbaren, rechtsstaatlichen Ergebnissen denkbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle bestätigt die Zeugenfahndung, aber keine tatsächliche Beteiligung oder Aufklärung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein möglicher positiver Beteiligungspfad steht einem schwachen negativen Vertrauenpfad gegenüber; beide sind unbelegt und lokal begrenzt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Offene Ermittlungen können lokales Vertrauen in Aufklärung und Sicherheitsinstitutionen beeinflussen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Offene Ermittlungen können lokales Vertrauen in Aufklärung und Sicherheitsinstitutionen beeinflussen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T13:37:51.537Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T12:54:22.000Z",
+      "last_updated": "2026-09-18T13:40:28.678Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-baba7a3a6869490f41b5",
+      "case_file": null,
+      "source_published_at": "2026-09-18T12:54:22.000Z",
+      "published_at": "2026-09-18T13:40:28.678Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Identität der Tatverdächtigen, der genaue Ablauf und das Motiv bleiben zu klären.",
+          "source_id": "tagesspiegel-home",
+          "measurable_indicator": "Polizeiliche Angaben zu Tatverdächtigen, Ablauf und Motiv",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-97ced2854bfe68bd",
+          "announced_at": "2026-09-18T12:54:22.000Z",
+          "follow_up_date": "2026-09-25T13:40:28.678Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-gewaltkriminalitat-17-schusse-in-adlershof-polizei-fahndet-weiter-nach-tatern-16071095.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T12:54:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-8fce6e6793e05359",
       "title_image": {
