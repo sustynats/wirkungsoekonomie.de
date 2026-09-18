@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { redaktionsauftraege, auftragsBefund, fehlerkennung } from '../../scripts/ops/redaktionsauftraege.mjs';
+import { redaktionsauftraege, auftragsBefund, fehlerkennung, meldungsweg } from '../../scripts/ops/redaktionsauftraege.mjs';
 
 const now = '2026-09-17T18:00:00.000Z';
 const auftrag = (id, at, felder = {}) => ({ input: { job_id: id, job_type: 'editorial_request', request: { kind: 'opinion_analysis', brief: 'GEHEIMER AUFTRAGSTEXT' } },
@@ -104,4 +104,23 @@ test('eine gescheiterte Ueberarbeitung zeigt Herkunft und Grund', () => {
   assert.equal(befund.rueckgabe_von, 'woek-eltern');
   assert.equal(befund.letzter_fehler, 'INTAKE_REVISION_SOURCE_INVALID');
   assert.equal(befund.fehlversuche, 3);
+});
+
+// Bei Meldungen heisst "angenommen" nur: Recherche liegt vor. Ob daraus eine
+// Meldung in der Freigabeliste wurde, steht im Meldungsauftrag (18.09.2026).
+test('eine zurueckgegebene Meldung zeigt, wo ihr Meldungsweg steht', async () => {
+  const kind = auftrag('woek-kind', '2026-09-18T09:47:54.000Z', { status: 'accepted', input: { job_id: 'woek-kind', job_type: 'editorial_request', request: { kind: 'news', brief: 'GEHEIMER AUFTRAGSTEXT' } },
+    intake: { kind: 'news', review_parent: 'woek-eltern', news_research: { title: 'GEHEIMER AUFTRAGSTEXT' }, news_job_id: 'story-9', news_retry_at: '2026-09-18T10:00:00.000Z' } });
+  const meldung = { input: { job_id: 'story-9', job_type: 'new_story' }, status: 'accepted', accepted: { record: { title: 'GEHEIMER AUFTRAGSTEXT' } }, semantic_review: { assessment: { publication_status: 'hold' } } };
+  const holte = [];
+  const sitzung = session([kind], []);
+  sitzung.store.get = async (id) => { holte.push(id); return null; };
+  const ergebnis = await redaktionsauftraege({ session: { ...sitzung, store: { ...sitzung.store, all: async () => [kind, meldung] } }, now });
+  const befund = ergebnis.auftraege.find((a) => a.job_id === 'woek-kind');
+  assert.deepEqual(befund.meldungsweg, { recherche: true, recherche_gestoppt: false, nachrecherche: null, meldung: 'accepted',
+    meldung_quittung: null, meldung_bewertet: true, zweitpruefung: 'hold', bereits_berichtet: false, naechster_versuch: '2026-09-18T10:00:00.000Z' });
+  assert.deepEqual(holte, [], 'was store.all schon liefert, wird nicht einzeln geholt');
+  assert.equal(JSON.stringify(ergebnis).includes('GEHEIMER AUFTRAGSTEXT'), false);
+  // Fehlt der Meldungsauftrag (archiviert), wird er einzeln gefragt.
+  assert.equal(meldungsweg({ intake: { news_job_id: 'weg' } }, null).meldung, 'fehlt');
 });
