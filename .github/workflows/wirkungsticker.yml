@@ -100,6 +100,13 @@ jobs:
           WOEK_NEWS_RAW_OUTPUT_DIR: ${{ runner.temp }}/ai-raw-output
           # Bild-Uploads (Wirkungskarten) nutzen weiterhin den vorhandenen Release-Speicher.
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          # Der Bilddienst fuer gekennzeichnete Symbolmotive. Der Umbau auf den
+          # Direktbetrieb (#776, 15.09.2026) hat diese Zeile entfernt; seitdem
+          # fiel jede Meldung auf die Wirkungskarte zurueck (HIGGSFIELD_NOT_
+          # CONFIGURED), und der Monitor hielt das fuer gewollt. Natalies
+          # Entscheidung vom 15.09. war: gekennzeichnetes Symbolmotiv ODER
+          # Wirkungskarte, nie blockierend - nicht: gar kein Motiv mehr.
+          WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
           GH_TOKEN: ${{ github.token }}
           WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
           WT_CHROME_NO_SANDBOX: "true"
