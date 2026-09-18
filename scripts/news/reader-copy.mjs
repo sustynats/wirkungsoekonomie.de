@@ -14,7 +14,16 @@ export const READER_COPY_RULE = "Lesertexte liefern konkrete Befunde, Quellen un
 export const PROCESS_NOTE_PATTERN = new RegExp([
   '\\b(?:Freigabe|Bestätigung|Genehmigung|Zustimmung|Rückfrage)\\s+(?:durch|von|bei)\\s+Natalie\\b',
   '\\bNatalie[- ]?(?:Freigabe|Bestätigung|Genehmigung|Zustimmung|Rückfrage)\\b',
-  '\\b(?:Vorschlag|Vorbehalt|Entwurf)\\s+zur\\s+(?:Bestätigung|Freigabe|Genehmigung|Zustimmung)\\b',
+  '\\b(?:Vorschlag|Vorbehalt|Entwurf)\\s+zur\\s+(?:[a-zäöüß]+\\s+)?(?:Bestätigung|Freigabe|Genehmigung|Zustimmung)\\b',
+  // Der Beitrag spricht nie ueber seine Entstehung (18.09.2026: ein Entwurf begann
+  // mit "Vier von Natalie bereitgestellte Screenshots ..." unter der Zeile
+  // "privater Entwurf zur finalen Freigabe").
+  '\\b(?:private[rn]?|interne[rn]?|vorläufige[rn]?)\\s+Entwurf\\b',
+  '\\b(?:von|durch)\\s+Natalie\\s+(?:\\w+\\s+){0,2}(?:bereitgestellt|eingereicht|übermittelt|zugesandt|geschickt|hochgeladen|geteilt|angehängt)\\w*',
+  // Nur Auftragsmaterial: "hochgeladenen Dateien" steht auch in echter
+  // Berichterstattung (Leak-Seite einer Hackergruppe, Meldung vom 18.09.).
+  '\\b(?:bereitgestellte|eingereichte|zugesandte|hochgeladene|angehängte|beigefügte)n?\\s+(?:Screenshots?|Bildschirmfotos?|JPEG\\S*)',
+  '\\b(?:Rechercheauftrag|Redaktionsauftrag|Auftragstext|Auftragsmaterial)\\w*\\b',
   '\\bzur\\s+(?:Bestätigung|Freigabe)\\s+(?:durch|vorgelegt|eingereicht)\\b',
   '\\bvor\\s+der\\s+(?:abschließenden|endgültigen|finalen)\\s+(?:Freigabe|Bestätigung|Natalie)',
   '\\b(?:Redaktionelle[rs]?\\s+)?Rückfrage\\s+(?:an|vor|zur)\\b',
