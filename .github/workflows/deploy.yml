@@ -319,22 +319,35 @@ jobs:
             gh release create "$release_tag" --target "$GITHUB_SHA" --title 'WÖk public release assets v2' --notes 'Versionierte öffentliche Download-Artefakte der Wirkungsökonomie.'
           fi
 
-          publish_immutable_asset() {
+          verify_immutable_asset() {
             local source_path="$1"
             local asset_name="$2"
             local verify_dir="$RUNNER_TEMP/woek-release-assets/$asset_name"
+            mkdir -p "$verify_dir"
+            gh release download "$release_tag" --pattern "$asset_name" --dir "$verify_dir" --clobber
+            cmp --silent "$source_path" "$verify_dir/$asset_name" || {
+              echo "Release asset $asset_name exists with different bytes; refusing to overwrite an immutable version."
+              exit 1
+            }
+            echo "Verified existing immutable release asset: $asset_name"
+          }
+
+          publish_immutable_asset() {
+            local source_path="$1"
+            local asset_name="$2"
             test -s "$source_path"
             if gh release view "$release_tag" --json assets --jq '.assets[].name' | grep -Fxq "$asset_name"; then
-              mkdir -p "$verify_dir"
-              gh release download "$release_tag" --pattern "$asset_name" --dir "$verify_dir"
-              cmp --silent "$source_path" "$verify_dir/$asset_name" || {
-                echo "Release asset $asset_name exists with different bytes; refusing to overwrite an immutable version."
-                exit 1
-              }
-              echo "Verified existing immutable release asset: $asset_name"
-            else
-              gh release upload "$release_tag" "$source_path#$asset_name"
+              verify_immutable_asset "$source_path" "$asset_name"
+            elif gh release upload "$release_tag" "$source_path#$asset_name" 2> "$RUNNER_TEMP/release-upload.err"; then
               echo "Published immutable release asset: $asset_name"
+            elif grep -q 'already exists' "$RUNNER_TEMP/release-upload.err"; then
+              # Die Liste kam unvollstaendig an, die Datei liegt aber schon im
+              # Release (18.09.2026: eine Auslieferung scheiterte daran). Byte-
+              # Gleichheit bleibt Pflicht - eine andere Fassung bricht weiter ab.
+              verify_immutable_asset "$source_path" "$asset_name"
+            else
+              cat "$RUNNER_TEMP/release-upload.err" >&2
+              exit 1
             fi
           }
 
