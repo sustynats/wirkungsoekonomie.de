@@ -2,8 +2,1520 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T00:22:12.174Z",
+  "updated_at": "2026-09-18T01:22:55.809Z",
   "stories": [
+    {
+      "story_id": "wt-9a23a552e50afd76",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a23a552e50afd76-f1d31675f05b4a28-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a23a552e50afd76-056343bbfc0a7b41-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a23a552e50afd76-819555d91ea9c371-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "urteil-bundesverwaltungsgericht-kippt-ausgleich-fur-uberstunden-eines-rektors-0afd76",
+      "title": "Laut Deutschlandfunk: Bundesverwaltungsgericht hebt Überstundenausgleich für Rektor auf",
+      "source_summary": "Der Deutschlandfunk berichtet über eine Entscheidung des Bundesverwaltungsgerichts zu zusätzlicher Arbeitszeit von Lehrkräften und Schulleitungen. Danach wurde der finanzielle Ausgleich aufgehoben, den ein pensionierter Rektor für geltend gemachte Mehrarbeit erhalten sollte. Das Gericht verwies laut Bericht auf die Pflicht, eine Überlastung anzuzeigen und gegebenenfalls Aufgaben zurückzustellen.\n\nDem Bericht zufolge hatte der Rektor erklärt, deutlich über der für Beamte geltenden durchschnittlichen Wochenarbeitszeit gearbeitet zu haben. Das Oberverwaltungsgericht in Lüneburg hatte ihm zuvor eine Entschädigung von mehr als 31.000 Euro zugesprochen; das Bundesverwaltungsgericht hob diese Entscheidung nach einer Revision des Landes Niedersachsen auf.\n\nDie Quelle enthält keine vollständige Urteilsbegründung und keine unabhängige Einordnung. Deshalb bleiben Reichweite, konkrete Rechtsgrundsätze und die Umsetzung durch Dienstherren und Schulen offen.",
+      "summary": "Das Bundesverwaltungsgericht hob laut Deutschlandfunk den Ausgleich für Mehrarbeit eines pensionierten Rektors auf. Für Lehrkräfte bleibt offen, wie Überlastungsanzeigen und das Zurückstellen von Aufgaben praktisch umgesetzt werden.",
+      "detail_summary": "Das Bundesverwaltungsgericht hat laut Deutschlandfunk den Ausgleich aufgehoben, den ein pensionierter Rektor für geltend gemachte Mehrarbeit erhalten sollte. Zuvor hatte das Oberverwaltungsgericht in Lüneburg eine Entschädigung von mehr als 31.000 Euro zugesprochen. Das Bundesverwaltungsgericht verwies dem Bericht zufolge darauf, dass Lehrkräfte eine Überlastung anzeigen und gegebenenfalls Aufgaben zurückstellen müssen, wenn die Zeit außerhalb der Schulstunden nicht ausreicht. Damit berührt die Entscheidung die Verteilung von Verantwortung zwischen einzelnen Lehrkräften, Schulleitungen und Dienstherren. Möglich ist, dass Überlastungsanzeigen und Priorisierungsentscheidungen an Bedeutung gewinnen; konkrete Umsetzungsfolgen sind jedoch nicht belegt. Die vollständige Urteilsbegründung und eine unabhängige Bestätigung liegen in der vorliegenden Quellenbasis nicht vor.",
+      "why_relevant": "Die Entscheidung kann beeinflussen, wie zusätzliche Arbeitszeit, Überlastung und Aufgabenpriorisierung im Schuldienst behandelt werden. Ihre praktische Reichweite ist ohne vollständige Begründung offen.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Entscheidung des Bundesverwaltungsgerichts zur Behandlung geltend gemachter Mehrarbeit eines pensionierten Rektors",
+        "evaluation_target": {
+          "label": "gerichtliche Entscheidung zur Behandlung zusätzlicher Arbeitszeit im Schuldienst",
+          "type": "decision"
+        },
+        "baseline": "Vor der Entscheidung konnten Gerichte die konkrete Ausgleichsfrage unterschiedlich bewerten; die organisatorische Behandlung von Überlastungsanzeigen und Zusatzaufgaben ist in der Quelle nicht vollständig beschrieben.",
+        "counterfactual": "Ohne diese Entscheidung könnte die Frage des finanziellen Ausgleichs und der Reaktion auf Überlastung nach den zuvor geltenden gerichtlichen und organisatorischen Maßstäben weiterbehandelt werden.",
+        "reference_frame": [
+          "Arbeits- und Gesundheitsschutz im Schuldienst",
+          "verlässliche Organisation schulischer Aufgaben",
+          "Rechtsstaatlichkeit und gerichtliche Nachprüfbarkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Entscheidung könnte die Verteilung von Arbeitslast, Gesundheitsschutz und Zugang zu einem Ausgleich beeinflussen. Belastbare Daten zu tatsächlichen Veränderungen fehlen.",
+            "planet": "Ein unmittelbarer ökologischer Wirkpfad ist nicht erkennbar. Ein vernachlässigbarer Pfad wird modelliert; indirekte Effekte über Verwaltungsarbeit bleiben praktisch begrenzt.",
+            "democracy": "Die Entscheidung könnte Transparenz und institutionelle Verantwortungszuweisung bei Überlastung stärken oder bei uneinheitlicher Umsetzung Rechtsunsicherheit erzeugen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Verschiebung von individueller Mehrarbeitsleistung hin zu Überlastungsanzeige und Aufgabenpriorisierung.",
+          "second_order": "Mögliche Veränderungen bei Schulorganisation, Dokumentation und Verantwortungszuweisung; Eintritt und Richtung hängen von der Umsetzung ab.",
+          "third_order": "Mögliche langfristige Prägung der institutionellen Arbeitszeit- und Verantwortungsordnung im Schuldienst; keine eingetretene Systemveränderung belegt.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine Umsetzung und keine tatsächliche Veränderung von Arbeitsbelastung oder Schulorganisation.",
+            "Ein unmittelbarer Planet-Pfad ist mangels sachlicher Verbindung praktisch vernachlässigbar.",
+            "Die vollständige Urteilsbegründung und unabhängige Bestätigung fehlen."
+          ],
+          "source_independence": "Nur eine journalistische Herkunft ist vorhanden. Die Quelle ist nicht als Primärquelle ausgewiesen; unabhängige Bestätigung fehlt.",
+          "institutional_status": "Berichtet wird über eine gerichtliche Entscheidung des Bundesverwaltungsgerichts. Die vollständige Begründung und die Umsetzung durch Dienstherren und Schulen sind offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keinen Eintritt der Folgen. Offen bleibt, ob Überlastungsanzeigen zu Entlastung führen oder ob Mehrarbeit praktisch bei Lehrkräften verbleibt.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Die Entscheidung könnte die individuelle Arbeitslast und den Zugang zu finanziellem Ausgleich beeinflussen. Der negative Pfad ist plausibel, wenn Anzeigen nicht zu ausreichender Aufgabenrückstellung oder Entlastung führen; ein positiver Gegenpfad ist möglich, aber nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verlagerung zusätzlicher Arbeitslast auf Lehrkräfte ohne finanziellen Ausgleich",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn der Ausgleich entfällt und Überlastungsanzeigen keine ausreichende organisatorische Reaktion auslösen, könnte zusätzliche Arbeit stärker bei einzelnen Lehrkräften verbleiben.",
+                "recipients": [
+                  "Lehrkräfte",
+                  "Schulleitungen",
+                  "Dienstherren"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die mögliche Reichweite reicht über einzelne Fälle hinaus, die tatsächliche Breite und Dauer sind aber nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Schuldienst umfasst viele Beschäftigte, doch die konkrete Betroffenheit bleibt offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Zusätzliche Arbeit und fehlender Ausgleich könnten für Betroffene spürbar sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Arbeitsorganisatorische Folgen könnten über einzelne Entscheidungen hinaus andauern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Arbeitsorganisation und spätere Rechtsanpassungen bleiben grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Lehrkräfte mit bereits hoher Aufgabenlast könnten besonders belastet werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt die institutionelle Verteilung von Arbeitszeit und Verantwortung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Gesundheit oder Arbeitszeit ist im gelieferten Bericht nicht festgestellt.",
+                  "reference_frame": "Arbeits- und Gesundheitsschutz im Schuldienst",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Dienstherren auf Überlastungsanzeigen nicht ausreichend mit Aufgabenrückstellung oder Entlastung reagieren.",
+                "reference_space": "Schuldienst in Deutschland",
+                "time_horizon": "mittelfristig nach der gerichtlichen Entscheidung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die gerichtliche Vorgabe wird in der Praxis als Maßstab für weitere Arbeitsorganisation herangezogen.",
+                "source_support": "Die Quelle belegt die Aufhebung des Ausgleichs sowie den Hinweis auf Überlastungsanzeigen und Aufgabenrückstellungen, nicht aber die Folge.",
+                "limitations": "Keine Umsetzungsdaten, keine Gesundheitsdaten und keine unabhängige juristische Einordnung.",
+                "first_order": "Überlastungsanzeigen und Aufgabenpriorisierung könnten an Bedeutung gewinnen, während finanzieller Ausgleich schwerer erreichbar ist.",
+                "second_order": "Bei unzureichender Reaktion könnte Mehrarbeit ungleich zwischen Lehrkräften und Schulen verteilt werden.",
+                "third_order": "Eine dauerhafte institutionelle Verlagerung von Organisationsverantwortung auf einzelne Beschäftigte ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Messung eingetretener Arbeits- oder Gesundheitsfolgen in der Quelle; Richtung und Breite bleiben bedingt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Entlastung durch verbindlichere Aufgabenpriorisierung",
+                "direction": "positive",
+                "type": "side_effect",
+                "mechanism": "Wenn Überlastungsanzeigen zu tatsächlicher Aufgabenrückstellung führen, könnte die individuelle Arbeitslast sinken.",
+                "recipients": [
+                  "Lehrkräfte",
+                  "Schülerinnen und Schüler",
+                  "Schulleitungen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Nutzen hängt vollständig von der Reaktion der Dienstherren und Schulen ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Eine solche Reaktion könnte einzelne Schulen oder Dienstherren erfassen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Aufgabenrückstellungen könnten einzelne Belastungsspitzen abmildern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Effekt könnte während der organisatorischen Anpassung anhalten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Prioritäten und Verfahren können grundsätzlich wieder geändert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Besonders belastete Lehrkräfte könnten von einer wirksamen Reaktion profitieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft vor allem die Organisation einzelner Schulen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Bericht belegt keine konkrete Entlastungswirkung oder Schutzgrenze.",
+                  "reference_frame": "Arbeits- und Gesundheitsschutz im Schuldienst",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Dienstherren und Schulen müssten Überlastungsanzeigen ernsthaft prüfen und Aufgaben tatsächlich zurückstellen.",
+                "reference_space": "Schuldienst in Deutschland",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die im Bericht genannte Möglichkeit der Aufgabenrückstellung wird praktisch umgesetzt.",
+                "source_support": "Die Quelle nennt Aufgabenrückstellung als mögliche Reaktion, belegt aber keine tatsächliche Entlastung.",
+                "limitations": "Keine Daten zu Verfahren, Ressourcen oder Folgen.",
+                "first_order": "Einzelne Aufgaben könnten entfallen oder verschoben werden.",
+                "second_order": "Unterrichts- und Verwaltungsleistungen könnten zwischen Gruppen ungleich verteilt werden.",
+                "third_order": "Eine institutionelle Priorisierungskultur könnte entstehen, bleibt aber hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält keine Daten zur tatsächlichen Aufgabenrückstellung; der positive Pfad bleibt eine Modellhypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein negativer Belastungspfad und ein positiver Entlastungspfad sind vergleichbar, der negative Pfad ist wegen des möglichen Wegfalls finanziellen Ausgleichs stärker modelliert."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Verlagerung zusätzlicher Arbeitslast auf Lehrkräfte ohne finanziellen Ausgleich",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verlagerung zusätzlicher Arbeitslast auf Lehrkräfte ohne finanziellen Ausgleich",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keinen unmittelbaren ökologischen Mechanismus oder ökologische Zustandsdaten. Der Pfad ist im abgegrenzten Zeitraum praktisch vernachlässigbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Die gerichtliche Entscheidung betrifft die Organisation zusätzlicher Arbeitszeit im Schuldienst. Ein unmittelbarer Einfluss auf Umweltzustände ist aus der Quelle nicht ableitbar; mögliche indirekte Verwaltungseffekte sind zu klein und zu unspezifisch für einen materiellen Pfad.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller unmittelbarer ökologischer Zustandswechsel durch die Arbeitszeitentscheidung",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Die Entscheidung verändert nach der gelieferten Quelle die Behandlung von Arbeitszeit und Überlastung, nicht unmittelbar Energie-, Stoff- oder Flächennutzung.",
+                "recipients": [
+                  "Umwelt",
+                  "Schulverwaltung"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im abgegrenzten Zeitraum ist kein materieller ökologischer Wirkmechanismus belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein materieller ökologischer Empfängerkreis ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Eine ökologische Intensität der Entscheidung ist nicht erkennbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist quellengebunden plausibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Zustandswechsel wird durch die Quelle belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders verwundbare ökologische Einheit ist betroffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systemmechanismus ist mit dem Ereignis verbunden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch den berichteten Sachverhalt berührt.",
+                  "reference_frame": "ökologische Zustandsstabilität",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Nur bei einer nicht belegten, erheblichen Änderung schulischer Infrastruktur oder Verwaltungspraxis wäre ein weiterer Umweltpfad zu prüfen.",
+                "reference_space": "Schulverwaltung in Deutschland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Entscheidung bleibt auf Arbeitszeit- und Organisationsfragen im Schuldienst begrenzt.",
+                "source_support": "Die Quelle berichtet ausschließlich über Gerichtsentscheidung, Arbeitszeit und Aufgabenorganisation.",
+                "limitations": "Keine Umwelt-, Energie- oder Infrastrukturangaben.",
+                "first_order": "Kein materieller ökologischer Effekt modellierbar.",
+                "second_order": "Indirekte Verwaltungseffekte wären allenfalls klein und nicht belegt.",
+                "third_order": "Kein belastbarer ökologischer Systempfad ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen ökologischen Wirkmechanismus; deshalb begründet vernachlässigbarer Pfad.",
+                "negligibility_rationale": "Für die berichtete gerichtliche Entscheidung ist im abgegrenzten Raum und Zeitraum kein materieller ökologischer Zustandswechsel quellengebunden plausibel.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen ökologischen Hauptpfad; die neutrale Einordnung beruht auf begründeter Vernachlässigbarkeit."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein materieller unmittelbarer ökologischer Zustandswechsel durch die Arbeitszeitentscheidung",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller unmittelbarer ökologischer Zustandswechsel durch die Arbeitszeitentscheidung",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle Folgewirkung. Möglich sind sowohl mehr Transparenz durch Überlastungsanzeigen als auch Rechtsunsicherheit bei uneinheitlicher Umsetzung.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Die Entscheidung könnte die demokratische und rechtsstaatliche Verantwortungszuweisung im öffentlichen Schuldienst prägen. Der negative Pfad über uneinheitliche Umsetzung und erschwerte individuelle Durchsetzung ist stärker als der mögliche Transparenzgewinn modelliert, bleibt aber unbestätigt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verlagerung institutioneller Verantwortung auf einzelne Lehrkräfte",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn Überlastungsanzeigen ohne klare Reaktion bleiben, könnte Verantwortung für die Begrenzung von Aufgaben stärker bei einzelnen Beschäftigten liegen.",
+                "recipients": [
+                  "Lehrkräfte",
+                  "Schulleitungen",
+                  "Dienstherren",
+                  "Verwaltungsgerichte"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der Pfad kann institutionelle Verantwortungsbeziehungen betreffen, seine Reichweite ist jedoch nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Entscheidung kann als Orientierung für mehrere Dienstherren dienen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die institutionelle Belastung wäre vor allem bei unklaren Verfahren spürbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Rechts- und Organisationspraktiken können über längere Zeit fortwirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Gesetzgebung, Rechtsprechung und Verwaltungspraxis können gegensteuern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Einzelne Beschäftigte könnten gegenüber institutionellen Entscheidungen strukturell schwächer stehen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Verantwortungs- und Rechenschaftsstrukturen öffentlicher Institutionen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische oder rechtsstaatliche Schutzgrenze ist im Bericht nicht festgestellt.",
+                  "reference_frame": "institutionelle Verantwortlichkeit und gerichtliche Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine uneinheitliche oder unzureichende Reaktion auf Überlastungsanzeigen voraus.",
+                "reference_space": "öffentlicher Schuldienst in Deutschland",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Entscheidung wird in Verwaltung und Schulen als maßgeblicher Organisationsrahmen interpretiert.",
+                "source_support": "Die Quelle nennt Überlastungsanzeigen und Aufgabenrückstellungen als Reaktion, belegt aber keine institutionelle Umsetzung.",
+                "limitations": "Keine Daten zu Verwaltungsverfahren, weiteren Urteilen oder Reaktionen von Dienstherren.",
+                "first_order": "Lehrkräfte könnten stärker selbst dokumentieren und begrenzen müssen, welche Aufgaben sie übernehmen.",
+                "second_order": "Uneinheitliche Verfahren könnten die Nachvollziehbarkeit und Gleichbehandlung zwischen Schulen beeinträchtigen.",
+                "third_order": "Eine dauerhafte Verschiebung von Organisationsverantwortung auf Einzelne könnte institutionelle Rechenschaft schwächen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zu institutionellen Folgen; der demokratische Pfad bleibt eine bedingte Modellierung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Möglicher Transparenzgewinn durch formalisierte Überlastungsanzeigen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Wenn Überlastungsanzeigen dokumentiert und von Dienstherren bearbeitet werden, könnte die Verantwortungszuweisung im Schuldienst nachvollziehbarer werden.",
+                "recipients": [
+                  "Lehrkräfte",
+                  "Schulleitungen",
+                  "Dienstherren",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Transparenzgewinn hängt von Verfahren ab, die die Quelle nicht beschreibt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Effekt könnte auf anwendende Dienstherren und Schulen begrenzt bleiben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Dokumentation könnte einzelne Verantwortungsfragen sichtbar machen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Transparenz könnte mit der Dauer entsprechender Verfahren bestehen bleiben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verfahren und Dokumentationspflichten können wieder geändert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Beschäftigte könnten von nachvollziehbareren Reaktionswegen profitieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft vor allem administrative Verantwortungsabläufe.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine tatsächliche Transparenz oder wirksame Korrekturfähigkeit.",
+                  "reference_frame": "institutionelle Verantwortlichkeit und gerichtliche Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Dienstherren müssten Anzeigen erfassen, beantworten und daraus nachvollziehbare Aufgabenentscheidungen ableiten.",
+                "reference_space": "öffentlicher Schuldienst in Deutschland",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Überlastungsanzeigen werden nicht nur verlangt, sondern institutionell bearbeitet.",
+                "source_support": "Die Quelle verweist auf Überlastungsanzeigen, nennt aber keine Verfahren oder Transparenzdaten.",
+                "limitations": "Keine unabhängige institutionelle Einordnung und keine Beobachtung der Umsetzung.",
+                "first_order": "Arbeitsüberlastung könnte gegenüber Dienstherren nachvollziehbarer werden.",
+                "second_order": "Verantwortlichkeiten könnten zwischen Lehrkräften, Schulleitungen und Dienstherren klarer abgegrenzt werden.",
+                "third_order": "Eine bessere administrative Korrekturfähigkeit ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle liefert keinen Nachweis für formalisierte Verfahren; der positive Gegenpfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein negativer Verantwortungsverlagerungspfad und ein positiver Transparenzpfad sind vergleichbar; der negative Pfad wird wegen der offenen Umsetzungsbedingungen und möglichen Ungleichheit höher gewichtet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Verlagerung institutioneller Verantwortung auf einzelne Lehrkräfte",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verlagerung institutioneller Verantwortung auf einzelne Lehrkräfte",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T01:25:31.724Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle belegt die berichtete Gerichtsentscheidung, die Angaben zur Mehrarbeit sowie den Hinweis auf Überlastungsanzeigen und mögliche Aufgabenrückstellungen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keinen Eintritt der Folgen. Offen bleibt, ob Überlastungsanzeigen zu Entlastung führen oder ob Mehrarbeit praktisch bei Lehrkräften verbleibt.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Die Entscheidung könnte die individuelle Arbeitslast und den Zugang zu finanziellem Ausgleich beeinflussen. Der negative Pfad ist plausibel, wenn Anzeigen nicht zu ausreichender Aufgabenrückstellung oder Entlastung führen; ein positiver Gegenpfad ist möglich, aber nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verlagerung zusätzlicher Arbeitslast auf Lehrkräfte ohne finanziellen Ausgleich",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn der Ausgleich entfällt und Überlastungsanzeigen keine ausreichende organisatorische Reaktion auslösen, könnte zusätzliche Arbeit stärker bei einzelnen Lehrkräften verbleiben.",
+              "recipients": [
+                "Lehrkräfte",
+                "Schulleitungen",
+                "Dienstherren"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die mögliche Reichweite reicht über einzelne Fälle hinaus, die tatsächliche Breite und Dauer sind aber nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Schuldienst umfasst viele Beschäftigte, doch die konkrete Betroffenheit bleibt offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Zusätzliche Arbeit und fehlender Ausgleich könnten für Betroffene spürbar sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Arbeitsorganisatorische Folgen könnten über einzelne Entscheidungen hinaus andauern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Arbeitsorganisation und spätere Rechtsanpassungen bleiben grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Lehrkräfte mit bereits hoher Aufgabenlast könnten besonders belastet werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt die institutionelle Verteilung von Arbeitszeit und Verantwortung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Gesundheit oder Arbeitszeit ist im gelieferten Bericht nicht festgestellt.",
+                "reference_frame": "Arbeits- und Gesundheitsschutz im Schuldienst",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Dienstherren auf Überlastungsanzeigen nicht ausreichend mit Aufgabenrückstellung oder Entlastung reagieren.",
+              "reference_space": "Schuldienst in Deutschland",
+              "time_horizon": "mittelfristig nach der gerichtlichen Entscheidung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die gerichtliche Vorgabe wird in der Praxis als Maßstab für weitere Arbeitsorganisation herangezogen.",
+              "source_support": "Die Quelle belegt die Aufhebung des Ausgleichs sowie den Hinweis auf Überlastungsanzeigen und Aufgabenrückstellungen, nicht aber die Folge.",
+              "limitations": "Keine Umsetzungsdaten, keine Gesundheitsdaten und keine unabhängige juristische Einordnung.",
+              "first_order": "Überlastungsanzeigen und Aufgabenpriorisierung könnten an Bedeutung gewinnen, während finanzieller Ausgleich schwerer erreichbar ist.",
+              "second_order": "Bei unzureichender Reaktion könnte Mehrarbeit ungleich zwischen Lehrkräften und Schulen verteilt werden.",
+              "third_order": "Eine dauerhafte institutionelle Verlagerung von Organisationsverantwortung auf einzelne Beschäftigte ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Messung eingetretener Arbeits- oder Gesundheitsfolgen in der Quelle; Richtung und Breite bleiben bedingt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Entlastung durch verbindlichere Aufgabenpriorisierung",
+              "direction": "positive",
+              "type": "side_effect",
+              "mechanism": "Wenn Überlastungsanzeigen zu tatsächlicher Aufgabenrückstellung führen, könnte die individuelle Arbeitslast sinken.",
+              "recipients": [
+                "Lehrkräfte",
+                "Schülerinnen und Schüler",
+                "Schulleitungen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Nutzen hängt vollständig von der Reaktion der Dienstherren und Schulen ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Eine solche Reaktion könnte einzelne Schulen oder Dienstherren erfassen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Aufgabenrückstellungen könnten einzelne Belastungsspitzen abmildern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Effekt könnte während der organisatorischen Anpassung anhalten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Prioritäten und Verfahren können grundsätzlich wieder geändert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Besonders belastete Lehrkräfte könnten von einer wirksamen Reaktion profitieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft vor allem die Organisation einzelner Schulen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Bericht belegt keine konkrete Entlastungswirkung oder Schutzgrenze.",
+                "reference_frame": "Arbeits- und Gesundheitsschutz im Schuldienst",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Dienstherren und Schulen müssten Überlastungsanzeigen ernsthaft prüfen und Aufgaben tatsächlich zurückstellen.",
+              "reference_space": "Schuldienst in Deutschland",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die im Bericht genannte Möglichkeit der Aufgabenrückstellung wird praktisch umgesetzt.",
+              "source_support": "Die Quelle nennt Aufgabenrückstellung als mögliche Reaktion, belegt aber keine tatsächliche Entlastung.",
+              "limitations": "Keine Daten zu Verfahren, Ressourcen oder Folgen.",
+              "first_order": "Einzelne Aufgaben könnten entfallen oder verschoben werden.",
+              "second_order": "Unterrichts- und Verwaltungsleistungen könnten zwischen Gruppen ungleich verteilt werden.",
+              "third_order": "Eine institutionelle Priorisierungskultur könnte entstehen, bleibt aber hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält keine Daten zur tatsächlichen Aufgabenrückstellung; der positive Pfad bleibt eine Modellhypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein negativer Belastungspfad und ein positiver Entlastungspfad sind vergleichbar, der negative Pfad ist wegen des möglichen Wegfalls finanziellen Ausgleichs stärker modelliert."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verlagerung zusätzlicher Arbeitslast auf Lehrkräfte ohne finanziellen Ausgleich",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Verlagerung zusätzlicher Arbeitslast auf Lehrkräfte ohne finanziellen Ausgleich",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keinen unmittelbaren ökologischen Mechanismus oder ökologische Zustandsdaten. Der Pfad ist im abgegrenzten Zeitraum praktisch vernachlässigbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Die gerichtliche Entscheidung betrifft die Organisation zusätzlicher Arbeitszeit im Schuldienst. Ein unmittelbarer Einfluss auf Umweltzustände ist aus der Quelle nicht ableitbar; mögliche indirekte Verwaltungseffekte sind zu klein und zu unspezifisch für einen materiellen Pfad.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller unmittelbarer ökologischer Zustandswechsel durch die Arbeitszeitentscheidung",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Die Entscheidung verändert nach der gelieferten Quelle die Behandlung von Arbeitszeit und Überlastung, nicht unmittelbar Energie-, Stoff- oder Flächennutzung.",
+              "recipients": [
+                "Umwelt",
+                "Schulverwaltung"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im abgegrenzten Zeitraum ist kein materieller ökologischer Wirkmechanismus belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein materieller ökologischer Empfängerkreis ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Eine ökologische Intensität der Entscheidung ist nicht erkennbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist quellengebunden plausibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Zustandswechsel wird durch die Quelle belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders verwundbare ökologische Einheit ist betroffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systemmechanismus ist mit dem Ereignis verbunden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch den berichteten Sachverhalt berührt.",
+                "reference_frame": "ökologische Zustandsstabilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Nur bei einer nicht belegten, erheblichen Änderung schulischer Infrastruktur oder Verwaltungspraxis wäre ein weiterer Umweltpfad zu prüfen.",
+              "reference_space": "Schulverwaltung in Deutschland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Entscheidung bleibt auf Arbeitszeit- und Organisationsfragen im Schuldienst begrenzt.",
+              "source_support": "Die Quelle berichtet ausschließlich über Gerichtsentscheidung, Arbeitszeit und Aufgabenorganisation.",
+              "limitations": "Keine Umwelt-, Energie- oder Infrastrukturangaben.",
+              "first_order": "Kein materieller ökologischer Effekt modellierbar.",
+              "second_order": "Indirekte Verwaltungseffekte wären allenfalls klein und nicht belegt.",
+              "third_order": "Kein belastbarer ökologischer Systempfad ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen ökologischen Wirkmechanismus; deshalb begründet vernachlässigbarer Pfad.",
+              "negligibility_rationale": "Für die berichtete gerichtliche Entscheidung ist im abgegrenzten Raum und Zeitraum kein materieller ökologischer Zustandswechsel quellengebunden plausibel.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen ökologischen Hauptpfad; die neutrale Einordnung beruht auf begründeter Vernachlässigbarkeit."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller unmittelbarer ökologischer Zustandswechsel durch die Arbeitszeitentscheidung",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein materieller unmittelbarer ökologischer Zustandswechsel durch die Arbeitszeitentscheidung",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle Folgewirkung. Möglich sind sowohl mehr Transparenz durch Überlastungsanzeigen als auch Rechtsunsicherheit bei uneinheitlicher Umsetzung.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Die Entscheidung könnte die demokratische und rechtsstaatliche Verantwortungszuweisung im öffentlichen Schuldienst prägen. Der negative Pfad über uneinheitliche Umsetzung und erschwerte individuelle Durchsetzung ist stärker als der mögliche Transparenzgewinn modelliert, bleibt aber unbestätigt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verlagerung institutioneller Verantwortung auf einzelne Lehrkräfte",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn Überlastungsanzeigen ohne klare Reaktion bleiben, könnte Verantwortung für die Begrenzung von Aufgaben stärker bei einzelnen Beschäftigten liegen.",
+              "recipients": [
+                "Lehrkräfte",
+                "Schulleitungen",
+                "Dienstherren",
+                "Verwaltungsgerichte"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der Pfad kann institutionelle Verantwortungsbeziehungen betreffen, seine Reichweite ist jedoch nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Entscheidung kann als Orientierung für mehrere Dienstherren dienen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die institutionelle Belastung wäre vor allem bei unklaren Verfahren spürbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Rechts- und Organisationspraktiken können über längere Zeit fortwirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Gesetzgebung, Rechtsprechung und Verwaltungspraxis können gegensteuern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Einzelne Beschäftigte könnten gegenüber institutionellen Entscheidungen strukturell schwächer stehen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Verantwortungs- und Rechenschaftsstrukturen öffentlicher Institutionen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische oder rechtsstaatliche Schutzgrenze ist im Bericht nicht festgestellt.",
+                "reference_frame": "institutionelle Verantwortlichkeit und gerichtliche Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine uneinheitliche oder unzureichende Reaktion auf Überlastungsanzeigen voraus.",
+              "reference_space": "öffentlicher Schuldienst in Deutschland",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Entscheidung wird in Verwaltung und Schulen als maßgeblicher Organisationsrahmen interpretiert.",
+              "source_support": "Die Quelle nennt Überlastungsanzeigen und Aufgabenrückstellungen als Reaktion, belegt aber keine institutionelle Umsetzung.",
+              "limitations": "Keine Daten zu Verwaltungsverfahren, weiteren Urteilen oder Reaktionen von Dienstherren.",
+              "first_order": "Lehrkräfte könnten stärker selbst dokumentieren und begrenzen müssen, welche Aufgaben sie übernehmen.",
+              "second_order": "Uneinheitliche Verfahren könnten die Nachvollziehbarkeit und Gleichbehandlung zwischen Schulen beeinträchtigen.",
+              "third_order": "Eine dauerhafte Verschiebung von Organisationsverantwortung auf Einzelne könnte institutionelle Rechenschaft schwächen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zu institutionellen Folgen; der demokratische Pfad bleibt eine bedingte Modellierung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Möglicher Transparenzgewinn durch formalisierte Überlastungsanzeigen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Wenn Überlastungsanzeigen dokumentiert und von Dienstherren bearbeitet werden, könnte die Verantwortungszuweisung im Schuldienst nachvollziehbarer werden.",
+              "recipients": [
+                "Lehrkräfte",
+                "Schulleitungen",
+                "Dienstherren",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Transparenzgewinn hängt von Verfahren ab, die die Quelle nicht beschreibt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Effekt könnte auf anwendende Dienstherren und Schulen begrenzt bleiben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Dokumentation könnte einzelne Verantwortungsfragen sichtbar machen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Transparenz könnte mit der Dauer entsprechender Verfahren bestehen bleiben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verfahren und Dokumentationspflichten können wieder geändert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Beschäftigte könnten von nachvollziehbareren Reaktionswegen profitieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft vor allem administrative Verantwortungsabläufe.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine tatsächliche Transparenz oder wirksame Korrekturfähigkeit.",
+                "reference_frame": "institutionelle Verantwortlichkeit und gerichtliche Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Dienstherren müssten Anzeigen erfassen, beantworten und daraus nachvollziehbare Aufgabenentscheidungen ableiten.",
+              "reference_space": "öffentlicher Schuldienst in Deutschland",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Überlastungsanzeigen werden nicht nur verlangt, sondern institutionell bearbeitet.",
+              "source_support": "Die Quelle verweist auf Überlastungsanzeigen, nennt aber keine Verfahren oder Transparenzdaten.",
+              "limitations": "Keine unabhängige institutionelle Einordnung und keine Beobachtung der Umsetzung.",
+              "first_order": "Arbeitsüberlastung könnte gegenüber Dienstherren nachvollziehbarer werden.",
+              "second_order": "Verantwortlichkeiten könnten zwischen Lehrkräften, Schulleitungen und Dienstherren klarer abgegrenzt werden.",
+              "third_order": "Eine bessere administrative Korrekturfähigkeit ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle liefert keinen Nachweis für formalisierte Verfahren; der positive Gegenpfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein negativer Verantwortungsverlagerungspfad und ein positiver Transparenzpfad sind vergleichbar; der negative Pfad wird wegen der offenen Umsetzungsbedingungen und möglichen Ungleichheit höher gewichtet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verlagerung institutioneller Verantwortung auf einzelne Lehrkräfte",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Verlagerung institutioneller Verantwortung auf einzelne Lehrkräfte",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T01:22:55.809Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T17:02:23.000Z",
+      "last_updated": "2026-09-18T01:25:31.719Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-86cfef48920de79b5b27",
+      "case_file": null,
+      "source_published_at": "2026-09-17T18:49:34.000Z",
+      "published_at": "2026-09-17T18:55:21.864Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, wie die vollständige Urteilsbegründung die Anforderungen an Überlastungsanzeigen und das Zurückstellen von Aufgaben konkret bestimmt.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Veröffentlichte vollständige Urteilsbegründung mit konkreten Anforderungen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eee99570d697d777",
+          "announced_at": "2026-09-17T18:49:34.000Z",
+          "follow_up_date": "2026-09-24T18:55:21.864Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die vollständige Urteilsbegründung und ihre konkreten Vorgaben für Dienstherren und Schulen sollten geprüft werden.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Veröffentlichung oder Prüfung der vollständigen Urteilsbegründung und dokumentierter Umsetzungshinweise",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-db818a03998b3735",
+          "announced_at": "2026-09-17T18:49:34.000Z",
+          "follow_up_date": "2026-09-25T01:25:31.719Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesverwaltungsgericht-kippt-ausgleich-fuer-ueberstunden-eines-rektors-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T18:49:34.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesverwaltungsgericht-kippt-ausgleich-fuer-ueberstunden-eines-rektors-106.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T01:01:57.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-057722ef54ceaa10",
       "title_image": {
@@ -11368,1492 +12880,6 @@
           "url": "https://www.mdr.de/video/mdr-videos/c/video-1650768.html",
           "source_type": "media_rss",
           "published_at": "2026-09-17T17:40:42.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-9a23a552e50afd76",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a23a552e50afd76-b3eb15c8bdcc2c3c-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a23a552e50afd76-96d14b67abfb51b1-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a23a552e50afd76-c046fc6be984791a-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "urteil-bundesverwaltungsgericht-kippt-ausgleich-fur-uberstunden-eines-rektors-0afd76",
-      "title": "Laut Deutschlandfunk: Bundesverwaltungsgericht kippt Ausgleich für Überstunden eines Rektors",
-      "source_summary": "Der Deutschlandfunk berichtet über eine Entscheidung des Bundesverwaltungsgerichts in Leipzig zu zusätzlicher Arbeitszeit von Lehrkräften und Schulleitern. Danach können Lehrer nicht eigenständig länger arbeiten und anschließend zusätzliches Geld verlangen.\n\nIm Mittelpunkt steht ein pensionierter Rektor aus Niedersachsen. Er berief sich auf eine höhere Arbeitsbelastung als die für Beamte geltende Durchschnittszeit von 40 Stunden pro Woche. Das Oberverwaltungsgericht in Lüneburg hatte ihm zunächst mehr als 31.000 Euro zugesprochen.\n\nDas Bundesverwaltungsgericht hob dieses Urteil nach der Revision des Landes Niedersachsen auf. Nach dem Bericht sollen Lehrkräfte bei unzureichender Zeit für Aufgaben eine Überlastung anzeigen und gegebenenfalls Aufgaben zurückstellen. Die vollständige Urteilsbegründung liegt in der vorliegenden Auswahl nicht vor.",
-      "summary": "Das Bundesverwaltungsgericht hob laut Deutschlandfunk den Ausgleich für die Mehrarbeit eines pensionierten Rektors auf. Lehrkräfte sollen Überlastung anzeigen und gegebenenfalls Aufgaben zurückstellen.",
-      "detail_summary": "Das Bundesverwaltungsgericht in Leipzig hat laut Deutschlandfunk den finanziellen Ausgleich für die Mehrarbeit eines pensionierten Rektors aus Niedersachsen aufgehoben. Zuvor hatte das Oberverwaltungsgericht in Lüneburg mehr als 31.000 Euro zugesprochen. Der Bericht ordnet die Entscheidung auch Schulleitern zu. Lehrkräfte sollen bei zu knapper Zeit für Aufgaben eine Überlastung anzeigen und gegebenenfalls Aufgaben zurückstellen. Offen bleibt anhand der vorliegenden Textauswahl, wie das Gericht diese Pflichten im Detail begründet und praktisch abgrenzt.",
-      "why_relevant": "Die Entscheidung kann den Umgang mit dokumentierter Überlastung und zusätzlicher Arbeitszeit im Schulbereich prägen. Ihre praktische Reichweite hängt von der vollständigen Begründung und der Umsetzung vor Ort ab.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Bericht über die Entscheidung des Bundesverwaltungsgerichts zum finanziellen Ausgleich für Mehrarbeit eines pensionierten Rektors",
-        "evaluation_target": {
-          "label": "gerichtliche Entscheidung zur Behandlung zusätzlicher Arbeitszeit im Schuldienst",
-          "type": "decision"
-        },
-        "baseline": "Vor der Entscheidung konnten unterschiedliche gerichtliche Bewertungen zum finanziellen Ausgleich und zum Umgang mit Mehrarbeit bestehen.",
-        "counterfactual": "Ohne diese Entscheidung könnten betroffene Lehrkräfte und Dienstherren die Frage des Ausgleichs zunächst anhand der bisherigen gerichtlichen Bewertung weiterbehandeln.",
-        "reference_frame": [
-          "Funktionsfähigkeit und Qualität öffentlicher Bildung",
-          "Arbeits- und Gesundheitsschutz",
-          "institutionelle Rechenschaft und Rechtsschutz"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "high",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Die Entscheidung könnte Belastung, Aufgabenverteilung und Zugang zu organisatorischer Entlastung im Schulbetrieb beeinflussen. Besonders offen ist, ob Anzeigen zu tatsächlichen Entlastungen führen.",
-            "planet": "Ein belastbarer Umweltpfad ist anhand der Quelle nicht erkennbar; mögliche Material- oder Energieeffekte der Verwaltungsbearbeitung wären im abgegrenzten Fall vernachlässigbar.",
-            "democracy": "Die Entscheidung könnte institutionelle Verantwortlichkeit und Korrekturmöglichkeiten bei Überlastung stärken oder Verantwortung lediglich auf Einzelne und Kollegien verlagern."
-          },
-          "central_dimensions": [
-            "human",
-            "democracy"
-          ],
-          "first_order": "Die Entscheidung könnte den individuellen Umgang mit Mehrarbeit und die Pflicht zur Anzeige von Überlastung verändern.",
-          "second_order": "Die Reaktion von Dienstherren könnte Aufgabenprioritäten, Kollegien und Schulleitungen unterschiedlich belasten.",
-          "third_order": "Wiederholte Anwendung könnte die institutionelle Verteilung von Verantwortung für Schulqualität und Arbeitsbedingungen prägen.",
-          "enablement": [
-            "enables_institutional_control"
-          ],
-          "counter_evidence": [
-            "Die Quelle belegt keine tatsächliche Entlastung, keine Veränderung der Schulqualität und keine Umsetzungspraxis.",
-            "Die vollständige gerichtliche Begründung und unabhängige Einordnung fehlen."
-          ],
-          "source_independence": "Es liegt nur eine journalistische Quelle des Deutschlandfunks vor; eine unabhängige Bestätigung oder Primärquelle ist nicht enthalten.",
-          "institutional_status": "Berichtet wird über eine Entscheidung des Bundesverwaltungsgerichts; genaue Rechtsfolgen und praktische Umsetzung bleiben anhand der vorliegenden Auswahl teilweise offen."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 3,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt die gerichtliche Vorgabe, aber keine eingetretene Belastungsveränderung. Reichweite und Umsetzung der Anzeige- und Priorisierungspflichten bleiben offen.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Der Hauptpfad betrifft mögliche Belastungs- und Verteilungseffekte für Lehrkräfte und Lernende. Ein positiver Gegenpfad durch bessere institutionelle Reaktion ist möglich, aber nicht gleich stark belegt.",
-            "primary_paths": [
-              {
-                "label": "Überlastungsanzeige und Aufgabenpriorisierung könnten Arbeitsbelastung verlagern",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Wenn Mehrarbeit nicht individuell ausgeglichen wird, könnten Lehrkräfte Überlastung anzeigen und Aufgaben zurückstellen; ohne ausreichende Reaktion könnte Belastung auf Kollegien oder Lernende verlagert werden.",
-                "recipients": [
-                  "Lehrkräfte",
-                  "Schulleitungen",
-                  "Lernende"
-                ],
-                "magnitude": 3,
-                "magnitude_range": {
-                  "lower": 2,
-                  "upper": 4,
-                  "rationale": "Die mögliche Reichweite reicht über einzelne Fälle hinaus, die tatsächliche Intensität und Dauer hängen aber von Umsetzung und Ressourcen ab."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Die Entscheidung betrifft den berichteten Schul- und Beamtenkontext, die genaue Zahl Betroffener ist offen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 3,
-                    "rationale": "Aufgabenverlagerung und fehlender Ausgleich könnten einzelne Beschäftigte spürbar belasten.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 3,
-                    "rationale": "Arbeitsorganisatorische Folgen könnten über einzelne Verfahren hinaus fortwirken.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Aufgabenprioritäten und Arbeitsorganisation können grundsätzlich wieder geändert werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Lehrkräfte und Lernende können von knapper Zeit und nicht erledigten Aufgaben unterschiedlich betroffen sein.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Der Pfad berührt die institutionelle Organisation von Schulen und Verantwortungszuweisung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete Verletzung eines belegten Schutzstandards ist nicht nachgewiesen; die mögliche Belastungsverlagerung bleibt bedingt.",
-                  "reference_frame": "Arbeits- und Gesundheitsschutz sowie Zugang zu verlässlicher Bildung",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Der Pfad setzt voraus, dass Dienstherren Anzeigen nicht durch ausreichende Entlastung und Priorisierung auffangen.",
-                "reference_space": "Schulen und Schulverwaltungen im Anwendungsbereich der Entscheidung",
-                "time_horizon": "Kurz- bis mittelfristig nach praktischer Anwendung",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Die berichteten Vorgaben werden in vergleichbaren Überlastungssituationen praktisch herangezogen.",
-                "source_support": "Die Quelle belegt Entscheidung, Mehrarbeitskonflikt und mögliche Anzeige beziehungsweise Aufgabenrückstellung, nicht deren Folgen.",
-                "limitations": "Keine Umsetzungsdaten, keine vollständige Urteilsbegründung und keine unabhängige Untersuchung.",
-                "first_order": "Mehrarbeitsausgleich könnte seltener als individuelle Lösung genutzt werden.",
-                "second_order": "Aufgaben könnten innerhalb von Kollegien oder gegenüber Lernenden neu verteilt werden.",
-                "third_order": "Wiederholte Konflikte könnten institutionelle Verantwortung für Schulqualität und Arbeitsbedingungen verschieben.",
-                "research_pass": "second_pass",
-                "research_result": "Keine zusätzliche Quelle geliefert; konkrete Folgen und Reichweite bleiben ungeklärt.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 17,
-                  "divisor": 6,
-                  "raw": 2.8333333333333335,
-                  "rounded": 3,
-                  "protection_floor": 0,
-                  "final": 3
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Frühere Überlastungsanzeigen könnten institutionelle Korrektur auslösen",
-                "direction": "positive",
-                "type": "counter_path",
-                "mechanism": "Wenn Anzeigen systematisch ausgewertet werden, könnten Dienstherren Aufgaben priorisieren oder organisatorische Entlastung schaffen.",
-                "recipients": [
-                  "Lehrkräfte",
-                  "Dienstherren",
-                  "Schulleitungen"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Der mögliche Nutzen ist institutionell relevant, aber weder Umsetzung noch tatsächliche Entlastung sind belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Der mögliche Effekt beschränkt sich auf Stellen mit wirksamer Anzeige und Reaktion.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Eine wirksame Priorisierung könnte Belastung einzelner Beschäftigter mindern.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Organisatorische Anpassungen könnten über einzelne Fälle hinaus bestehen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Arbeitsabläufe und Prioritäten wären grundsätzlich reversibel.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Besonders überlastete Beschäftigte könnten von einer Reaktion profitieren.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad kann Verwaltungs- und Schulorganisation beeinflussen, bleibt aber umsetzungsabhängig.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Ein positiver Schutzpfad ist möglich, aber die Quelle belegt keine bereits wirksame institutionelle Reaktion.",
-                  "reference_frame": "Arbeits- und Gesundheitsschutz",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Dienstherren müssen Anzeigen ernsthaft prüfen und mit realen Priorisierungs- oder Entlastungsmaßnahmen beantworten.",
-                "reference_space": "Schulen und zuständige Verwaltungen",
-                "time_horizon": "Mittelfristig nach Anwendung der Entscheidung",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Überlastungsanzeigen werden nicht nur dokumentiert, sondern organisatorisch verarbeitet.",
-                "source_support": "Die Quelle nennt Anzeige und mögliches Zurückstellen von Aufgaben, belegt aber keine Reaktionspraxis.",
-                "limitations": "Keine Daten zu Anzeigen, Entscheidungen von Dienstherren oder Entlastung.",
-                "first_order": "Belastung könnte formal sichtbar werden.",
-                "second_order": "Aufgaben könnten priorisiert oder zurückgestellt werden.",
-                "third_order": "Verantwortung für Arbeitsorganisation könnte institutioneller statt individueller behandelt werden.",
-                "research_pass": "second_pass",
-                "research_result": "Die gelieferte Quelle liefert keinen Umsetzungsnachweis; Eintritt und Reichweite bleiben offen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 11,
-                  "divisor": 6,
-                  "raw": 1.8333333333333333,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Negative Verlagerungsrisiken und ein positiver Korrekturpfad sind vergleichbar modelliert; der negative Pfad ist wegen der möglichen fehlenden Entlastung stärker, aber nicht nachgewiesen."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 3,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Überlastungsanzeige und Aufgabenpriorisierung könnten Arbeitsbelastung verlagern",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Überlastungsanzeige und Aufgabenpriorisierung könnten Arbeitsbelastung verlagern",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "deutlich",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "neutral",
-            "dominance": "none",
-            "magnitude": 0,
-            "evidence": "not_assessable",
-            "likelihood": "very_low",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die gelieferte Quelle enthält keinen belastbaren Umweltbezug. Ein materieller Umweltpfad ist für den abgegrenzten gerichtlichen Vorgang nicht erkennbar.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Der Gegenstand betrifft Arbeitsorganisation und Rechtsschutz im Schuldienst. Ein materieller ökologischer Zustandswechsel lässt sich aus der Quelle nicht ableiten.",
-            "primary_paths": [
-              {
-                "label": "Kein materieller Umweltpfad im abgegrenzten Vorgang erkennbar",
-                "direction": "neutral",
-                "type": "main_path",
-                "mechanism": "Die berichtete gerichtliche Entscheidung verändert nach der vorliegenden Quelle weder eine Umweltressource noch eine umweltrelevante Infrastruktur oder einen Stoffstrom.",
-                "recipients": [
-                  "Umwelt und betroffene Öffentlichkeit"
-                ],
-                "magnitude": 0,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 0,
-                  "rationale": "Für Schulen und die berichtete Gerichtsentscheidung ist kein materieller Umweltzustand belegt oder plausibel konkretisiert."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 0,
-                    "rationale": "Kein umweltbezogener Empfängerkreis ist in der Quelle ausgewiesen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 0,
-                    "rationale": "Keine umweltbezogene Zustandsänderung oder Belastung ist beschrieben.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 0,
-                    "rationale": "Es gibt keinen belegten Umweltmechanismus mit zeitlicher Fortwirkung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Kein irreversibler Umweltpfad ist aus dem Vorgang ableitbar.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 0,
-                    "rationale": "Keine besonders verletzliche Umweltressource ist als betroffen belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 0,
-                    "rationale": "Die Quelle weist keine ökologische Systemwirkung der Entscheidung aus.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Keine ökologische Schutzgrenze wird im berichteten Vorgang berührt.",
-                  "reference_frame": "ökologische Schutzgüter",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "very_low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Nur bei zusätzlichen, nicht gelieferten Informationen über konkrete Umweltwirkungen wäre eine Neubewertung erforderlich.",
-                "reference_space": "Berichtete Gerichtsentscheidung und Schulorganisation",
-                "time_horizon": "Nicht bestimmbar; kein materieller Umweltpfad erkennbar",
-                "path_quality": [
-                  "weak",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Der Vorgang bleibt auf die berichtete Arbeits- und Rechtsfrage begrenzt.",
-                "source_support": "Die Quelle enthält ausschließlich Angaben zu Mehrarbeit, Ausgleich und Überlastungsanzeigen.",
-                "limitations": "Keine Umweltindikatoren und keine unabhängige Wirkungsanalyse.",
-                "first_order": "Keine materielle ökologische Zustandsänderung erkennbar.",
-                "second_order": "Keine belastbare ökologische Folge ableitbar.",
-                "third_order": "Keine systemische Umweltwirkung ableitbar.",
-                "research_pass": "second_pass",
-                "research_result": "Keine zusätzliche umweltbezogene Evidenz in der gelieferten Quelle.",
-                "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum ist kein materieller Umweltpfad aus dem berichteten Vorgang erkennbar.",
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 0,
-                  "divisor": 6,
-                  "raw": 0,
-                  "rounded": 0,
-                  "protection_floor": 0,
-                  "final": 0
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Es gibt keinen vergleichbaren positiven oder negativen Umweltpfad; die Einordnung ist auf den fehlenden materiellen Umweltbezug begrenzt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 0,
-              "directionLabel": "neutral",
-              "shortPathLabel": "Kein materieller Umweltpfad im abgegrenzten Vorgang erkennbar",
-              "direction": "neutral"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 0,
-            "directionLabel": "neutral",
-            "shortPathLabel": "Kein materieller Umweltpfad im abgegrenzten Vorgang erkennbar",
-            "display_direction": "neutral",
-            "label": "neutral",
-            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "sehr gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "neutral"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "positive",
-            "dominance": "dominant_positive",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt eine gerichtliche Klärung und berichtete institutionelle Reaktionsmöglichkeiten, aber keine tatsächliche Veränderung von Vertrauen, Beteiligung oder Verwaltungspraxis.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Die Entscheidung könnte institutionelle Rechenschaft bei Überlastung stärken, zugleich aber Verantwortung auf Einzelne verlagern. Beide Pfade sind bedingt und nicht empirisch beobachtet.",
-            "primary_paths": [
-              {
-                "label": "Gerichtliche Klärung könnte institutionelle Rechenschaft stärken",
-                "direction": "positive",
-                "type": "main_path",
-                "mechanism": "Eine klare gerichtliche Vorgabe kann Zuständigkeiten für Überlastungsanzeigen und Aufgabenpriorisierung sichtbarer machen und damit institutionelle Korrektur ermöglichen.",
-                "recipients": [
-                  "Lehrkräfte",
-                  "Schulverwaltungen",
-                  "Dienstherren"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die mögliche Stärkung betrifft institutionelle Verfahren, deren tatsächliche Nutzung und Reichweite offen bleiben."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Der Pfad reicht potenziell in den betroffenen öffentlichen Schuldienst hinein.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Klare Zuständigkeiten könnten Rechenschaft in einzelnen Konflikten erhöhen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Gerichtliche Maßstäbe können über einzelne Fälle hinaus als Orientierung dienen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Verfahrenspraktiken können durch spätere Entscheidungen oder Verwaltung angepasst werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Überlastete Beschäftigte könnten von besserer institutioneller Reaktion profitieren.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad betrifft institutionelle Verantwortungszuweisung, nicht die demokratische Ordnung insgesamt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret verletzt oder gesichert; es geht um mögliches institutionelles Lernen.",
-                  "reference_frame": "institutionelle Rechenschaft und Rechtsschutz",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Die gerichtliche Klärung muss in nachvollziehbare Verwaltungs- und Priorisierungsverfahren übersetzt werden.",
-                "reference_space": "Öffentlicher Schuldienst und zuständige Verwaltungen",
-                "time_horizon": "Mittelfristig nach der praktischen Anwendung",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Institutionen nutzen die Vorgaben zur Klärung von Zuständigkeit statt ausschließlich zur Abwehr von Ausgleichsansprüchen.",
-                "source_support": "Die Quelle berichtet über gerichtliche Vorgaben, nicht über ihre demokratischen oder institutionellen Folgen.",
-                "limitations": "Keine Daten zu Vertrauen, Beteiligung, Verwaltungshandeln oder Wiederholungseffekten.",
-                "first_order": "Zuständigkeiten bei Überlastung könnten klarer adressiert werden.",
-                "second_order": "Verwaltungsentscheidungen könnten stärker begründet und dokumentiert werden.",
-                "third_order": "Institutionelle Korrekturfähigkeit könnte in Arbeitskonflikten zunehmen, sofern Reaktionen tatsächlich erfolgen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine zusätzliche Evidenz zur institutionellen Umsetzung geliefert; der demokratische Pfad bleibt hypothetisch.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 11,
-                  "divisor": 6,
-                  "raw": 1.8333333333333333,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Verantwortungsverlagerung könnte institutionelles Vertrauen schwächen",
-                "direction": "negative",
-                "type": "side_risk",
-                "mechanism": "Wenn die Entscheidung vor allem als Pflicht einzelner Lehrkräfte zur Anzeige und Aufgabenrückstellung umgesetzt wird, könnte Verantwortung für strukturelle Überlastung nach unten verschoben werden.",
-                "recipients": [
-                  "Lehrkräfte",
-                  "Schulkollegien",
-                  "Lernende"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Der mögliche Vertrauens- und Rechenschaftseffekt ist begrenzt auf Umsetzungssituationen und empirisch nicht belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Der mögliche Effekt betrifft Institutionen und Beschäftigte im Anwendungsbereich.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Eine einseitige Verantwortungszuweisung könnte einzelne Konflikte verschärfen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Wiederholte Anwendung könnte Erwartungen an institutionelle Verantwortung prägen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Vertrauen und Verfahrenspraxis können durch spätere Reaktionen korrigiert werden.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Beschäftigte mit hoher Belastung wären von einer solchen Verlagerung besonders abhängig.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad betrifft institutionelle Rechenschaft, bleibt aber sektoral begrenzt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt; es handelt sich um ein bedingtes Rechenschaftsrisiko.",
-                  "reference_frame": "institutionelle Rechenschaft und Zugang zu Rechtsschutz",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Der Pfad setzt eine Umsetzung voraus, die Anzeigen dokumentiert, aber keine wirksame organisatorische Reaktion auslöst.",
-                "reference_space": "Schulverwaltungen und betroffene Beschäftigte",
-                "time_horizon": "Mittelfristig bei wiederholter Anwendung",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Die institutionelle Reaktion bleibt hinter der dokumentierten Belastung zurück.",
-                "source_support": "Die Quelle nennt Anzeige und Aufgabenrückstellung, belegt aber keine Vertrauens- oder Rechenschaftsfolge.",
-                "limitations": "Keine Befragungen, Verwaltungsdaten oder unabhängigen Umsetzungsberichte.",
-                "first_order": "Konflikte über Überlastung könnten stärker formalisiert werden.",
-                "second_order": "Verantwortung könnte von Dienstherren auf einzelne Beschäftigte verschoben erscheinen.",
-                "third_order": "Wiederholte Verlagerung könnte institutionelles Vertrauen schwächen; Eintritt und Reichweite sind offen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine zusätzliche Evidenz zu Vertrauens- oder Rechenschaftseffekten in der gelieferten Quelle.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 11,
-                  "divisor": 6,
-                  "raw": 1.8333333333333333,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Ein möglicher Rechenschaftsgewinn steht einem möglichen Verantwortungsrisiko gegenüber; beide Pfade sind ähnlich begrenzt und nicht beobachtet."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "+ Potenzial",
-              "shortPathLabel": "Gerichtliche Klärung könnte institutionelle Rechenschaft stärken",
-              "direction": "positive"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "+ Potenzial",
-            "shortPathLabel": "Gerichtliche Klärung könnte institutionelle Rechenschaft stärken",
-            "display_direction": "positive",
-            "label": "+ Potenzial",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "+ Potenzial"
-          }
-        },
-        "observed_effects": [],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-17T18:55:21.868Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "dlf-nachrichten",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Bericht über die Entscheidung des Bundesverwaltungsgerichts, den aufgehobenen Ausgleich und den Hinweis auf Überlastungsanzeigen."
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "functions": [
-              "mechanism"
-            ],
-            "supported_claim": "Berichteter Mechanismus aus Überlastungsanzeige und möglichem Zurückstellen von Aufgaben."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Hohe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 3,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt die gerichtliche Vorgabe, aber keine eingetretene Belastungsveränderung. Reichweite und Umsetzung der Anzeige- und Priorisierungspflichten bleiben offen.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Der Hauptpfad betrifft mögliche Belastungs- und Verteilungseffekte für Lehrkräfte und Lernende. Ein positiver Gegenpfad durch bessere institutionelle Reaktion ist möglich, aber nicht gleich stark belegt.",
-          "primary_paths": [
-            {
-              "label": "Überlastungsanzeige und Aufgabenpriorisierung könnten Arbeitsbelastung verlagern",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Wenn Mehrarbeit nicht individuell ausgeglichen wird, könnten Lehrkräfte Überlastung anzeigen und Aufgaben zurückstellen; ohne ausreichende Reaktion könnte Belastung auf Kollegien oder Lernende verlagert werden.",
-              "recipients": [
-                "Lehrkräfte",
-                "Schulleitungen",
-                "Lernende"
-              ],
-              "magnitude": 3,
-              "magnitude_range": {
-                "lower": 2,
-                "upper": 4,
-                "rationale": "Die mögliche Reichweite reicht über einzelne Fälle hinaus, die tatsächliche Intensität und Dauer hängen aber von Umsetzung und Ressourcen ab."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Die Entscheidung betrifft den berichteten Schul- und Beamtenkontext, die genaue Zahl Betroffener ist offen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 3,
-                  "rationale": "Aufgabenverlagerung und fehlender Ausgleich könnten einzelne Beschäftigte spürbar belasten.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 3,
-                  "rationale": "Arbeitsorganisatorische Folgen könnten über einzelne Verfahren hinaus fortwirken.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Aufgabenprioritäten und Arbeitsorganisation können grundsätzlich wieder geändert werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Lehrkräfte und Lernende können von knapper Zeit und nicht erledigten Aufgaben unterschiedlich betroffen sein.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Pfad berührt die institutionelle Organisation von Schulen und Verantwortungszuweisung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete Verletzung eines belegten Schutzstandards ist nicht nachgewiesen; die mögliche Belastungsverlagerung bleibt bedingt.",
-                "reference_frame": "Arbeits- und Gesundheitsschutz sowie Zugang zu verlässlicher Bildung",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Der Pfad setzt voraus, dass Dienstherren Anzeigen nicht durch ausreichende Entlastung und Priorisierung auffangen.",
-              "reference_space": "Schulen und Schulverwaltungen im Anwendungsbereich der Entscheidung",
-              "time_horizon": "Kurz- bis mittelfristig nach praktischer Anwendung",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Die berichteten Vorgaben werden in vergleichbaren Überlastungssituationen praktisch herangezogen.",
-              "source_support": "Die Quelle belegt Entscheidung, Mehrarbeitskonflikt und mögliche Anzeige beziehungsweise Aufgabenrückstellung, nicht deren Folgen.",
-              "limitations": "Keine Umsetzungsdaten, keine vollständige Urteilsbegründung und keine unabhängige Untersuchung.",
-              "first_order": "Mehrarbeitsausgleich könnte seltener als individuelle Lösung genutzt werden.",
-              "second_order": "Aufgaben könnten innerhalb von Kollegien oder gegenüber Lernenden neu verteilt werden.",
-              "third_order": "Wiederholte Konflikte könnten institutionelle Verantwortung für Schulqualität und Arbeitsbedingungen verschieben.",
-              "research_pass": "second_pass",
-              "research_result": "Keine zusätzliche Quelle geliefert; konkrete Folgen und Reichweite bleiben ungeklärt.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 17,
-                "divisor": 6,
-                "raw": 2.8333333333333335,
-                "rounded": 3,
-                "protection_floor": 0,
-                "final": 3
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Frühere Überlastungsanzeigen könnten institutionelle Korrektur auslösen",
-              "direction": "positive",
-              "type": "counter_path",
-              "mechanism": "Wenn Anzeigen systematisch ausgewertet werden, könnten Dienstherren Aufgaben priorisieren oder organisatorische Entlastung schaffen.",
-              "recipients": [
-                "Lehrkräfte",
-                "Dienstherren",
-                "Schulleitungen"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Der mögliche Nutzen ist institutionell relevant, aber weder Umsetzung noch tatsächliche Entlastung sind belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Der mögliche Effekt beschränkt sich auf Stellen mit wirksamer Anzeige und Reaktion.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Eine wirksame Priorisierung könnte Belastung einzelner Beschäftigter mindern.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Organisatorische Anpassungen könnten über einzelne Fälle hinaus bestehen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Arbeitsabläufe und Prioritäten wären grundsätzlich reversibel.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Besonders überlastete Beschäftigte könnten von einer Reaktion profitieren.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad kann Verwaltungs- und Schulorganisation beeinflussen, bleibt aber umsetzungsabhängig.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Ein positiver Schutzpfad ist möglich, aber die Quelle belegt keine bereits wirksame institutionelle Reaktion.",
-                "reference_frame": "Arbeits- und Gesundheitsschutz",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Dienstherren müssen Anzeigen ernsthaft prüfen und mit realen Priorisierungs- oder Entlastungsmaßnahmen beantworten.",
-              "reference_space": "Schulen und zuständige Verwaltungen",
-              "time_horizon": "Mittelfristig nach Anwendung der Entscheidung",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Überlastungsanzeigen werden nicht nur dokumentiert, sondern organisatorisch verarbeitet.",
-              "source_support": "Die Quelle nennt Anzeige und mögliches Zurückstellen von Aufgaben, belegt aber keine Reaktionspraxis.",
-              "limitations": "Keine Daten zu Anzeigen, Entscheidungen von Dienstherren oder Entlastung.",
-              "first_order": "Belastung könnte formal sichtbar werden.",
-              "second_order": "Aufgaben könnten priorisiert oder zurückgestellt werden.",
-              "third_order": "Verantwortung für Arbeitsorganisation könnte institutioneller statt individueller behandelt werden.",
-              "research_pass": "second_pass",
-              "research_result": "Die gelieferte Quelle liefert keinen Umsetzungsnachweis; Eintritt und Reichweite bleiben offen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 11,
-                "divisor": 6,
-                "raw": 1.8333333333333333,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Negative Verlagerungsrisiken und ein positiver Korrekturpfad sind vergleichbar modelliert; der negative Pfad ist wegen der möglichen fehlenden Entlastung stärker, aber nicht nachgewiesen."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Überlastungsanzeige und Aufgabenpriorisierung könnten Arbeitsbelastung verlagern",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 3,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Überlastungsanzeige und Aufgabenpriorisierung könnten Arbeitsbelastung verlagern",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "deutlich",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "neutral",
-          "dominance": "none",
-          "magnitude": 0,
-          "evidence": "not_assessable",
-          "likelihood": "very_low",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die gelieferte Quelle enthält keinen belastbaren Umweltbezug. Ein materieller Umweltpfad ist für den abgegrenzten gerichtlichen Vorgang nicht erkennbar.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Der Gegenstand betrifft Arbeitsorganisation und Rechtsschutz im Schuldienst. Ein materieller ökologischer Zustandswechsel lässt sich aus der Quelle nicht ableiten.",
-          "primary_paths": [
-            {
-              "label": "Kein materieller Umweltpfad im abgegrenzten Vorgang erkennbar",
-              "direction": "neutral",
-              "type": "main_path",
-              "mechanism": "Die berichtete gerichtliche Entscheidung verändert nach der vorliegenden Quelle weder eine Umweltressource noch eine umweltrelevante Infrastruktur oder einen Stoffstrom.",
-              "recipients": [
-                "Umwelt und betroffene Öffentlichkeit"
-              ],
-              "magnitude": 0,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 0,
-                "rationale": "Für Schulen und die berichtete Gerichtsentscheidung ist kein materieller Umweltzustand belegt oder plausibel konkretisiert."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 0,
-                  "rationale": "Kein umweltbezogener Empfängerkreis ist in der Quelle ausgewiesen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 0,
-                  "rationale": "Keine umweltbezogene Zustandsänderung oder Belastung ist beschrieben.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 0,
-                  "rationale": "Es gibt keinen belegten Umweltmechanismus mit zeitlicher Fortwirkung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Kein irreversibler Umweltpfad ist aus dem Vorgang ableitbar.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 0,
-                  "rationale": "Keine besonders verletzliche Umweltressource ist als betroffen belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 0,
-                  "rationale": "Die Quelle weist keine ökologische Systemwirkung der Entscheidung aus.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Keine ökologische Schutzgrenze wird im berichteten Vorgang berührt.",
-                "reference_frame": "ökologische Schutzgüter",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "very_low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Nur bei zusätzlichen, nicht gelieferten Informationen über konkrete Umweltwirkungen wäre eine Neubewertung erforderlich.",
-              "reference_space": "Berichtete Gerichtsentscheidung und Schulorganisation",
-              "time_horizon": "Nicht bestimmbar; kein materieller Umweltpfad erkennbar",
-              "path_quality": [
-                "weak",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Der Vorgang bleibt auf die berichtete Arbeits- und Rechtsfrage begrenzt.",
-              "source_support": "Die Quelle enthält ausschließlich Angaben zu Mehrarbeit, Ausgleich und Überlastungsanzeigen.",
-              "limitations": "Keine Umweltindikatoren und keine unabhängige Wirkungsanalyse.",
-              "first_order": "Keine materielle ökologische Zustandsänderung erkennbar.",
-              "second_order": "Keine belastbare ökologische Folge ableitbar.",
-              "third_order": "Keine systemische Umweltwirkung ableitbar.",
-              "research_pass": "second_pass",
-              "research_result": "Keine zusätzliche umweltbezogene Evidenz in der gelieferten Quelle.",
-              "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum ist kein materieller Umweltpfad aus dem berichteten Vorgang erkennbar.",
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 0,
-                "divisor": 6,
-                "raw": 0,
-                "rounded": 0,
-                "protection_floor": 0,
-                "final": 0
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Es gibt keinen vergleichbaren positiven oder negativen Umweltpfad; die Einordnung ist auf den fehlenden materiellen Umweltbezug begrenzt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 0,
-            "directionLabel": "neutral",
-            "shortPathLabel": "Kein materieller Umweltpfad im abgegrenzten Vorgang erkennbar",
-            "direction": "neutral"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 0,
-          "directionLabel": "neutral",
-          "shortPathLabel": "Kein materieller Umweltpfad im abgegrenzten Vorgang erkennbar",
-          "display_direction": "neutral",
-          "label": "neutral",
-          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "sehr gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "neutral"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "positive",
-          "dominance": "dominant_positive",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt eine gerichtliche Klärung und berichtete institutionelle Reaktionsmöglichkeiten, aber keine tatsächliche Veränderung von Vertrauen, Beteiligung oder Verwaltungspraxis.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Die Entscheidung könnte institutionelle Rechenschaft bei Überlastung stärken, zugleich aber Verantwortung auf Einzelne verlagern. Beide Pfade sind bedingt und nicht empirisch beobachtet.",
-          "primary_paths": [
-            {
-              "label": "Gerichtliche Klärung könnte institutionelle Rechenschaft stärken",
-              "direction": "positive",
-              "type": "main_path",
-              "mechanism": "Eine klare gerichtliche Vorgabe kann Zuständigkeiten für Überlastungsanzeigen und Aufgabenpriorisierung sichtbarer machen und damit institutionelle Korrektur ermöglichen.",
-              "recipients": [
-                "Lehrkräfte",
-                "Schulverwaltungen",
-                "Dienstherren"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die mögliche Stärkung betrifft institutionelle Verfahren, deren tatsächliche Nutzung und Reichweite offen bleiben."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Der Pfad reicht potenziell in den betroffenen öffentlichen Schuldienst hinein.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Klare Zuständigkeiten könnten Rechenschaft in einzelnen Konflikten erhöhen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Gerichtliche Maßstäbe können über einzelne Fälle hinaus als Orientierung dienen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Verfahrenspraktiken können durch spätere Entscheidungen oder Verwaltung angepasst werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Überlastete Beschäftigte könnten von besserer institutioneller Reaktion profitieren.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad betrifft institutionelle Verantwortungszuweisung, nicht die demokratische Ordnung insgesamt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret verletzt oder gesichert; es geht um mögliches institutionelles Lernen.",
-                "reference_frame": "institutionelle Rechenschaft und Rechtsschutz",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Die gerichtliche Klärung muss in nachvollziehbare Verwaltungs- und Priorisierungsverfahren übersetzt werden.",
-              "reference_space": "Öffentlicher Schuldienst und zuständige Verwaltungen",
-              "time_horizon": "Mittelfristig nach der praktischen Anwendung",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Institutionen nutzen die Vorgaben zur Klärung von Zuständigkeit statt ausschließlich zur Abwehr von Ausgleichsansprüchen.",
-              "source_support": "Die Quelle berichtet über gerichtliche Vorgaben, nicht über ihre demokratischen oder institutionellen Folgen.",
-              "limitations": "Keine Daten zu Vertrauen, Beteiligung, Verwaltungshandeln oder Wiederholungseffekten.",
-              "first_order": "Zuständigkeiten bei Überlastung könnten klarer adressiert werden.",
-              "second_order": "Verwaltungsentscheidungen könnten stärker begründet und dokumentiert werden.",
-              "third_order": "Institutionelle Korrekturfähigkeit könnte in Arbeitskonflikten zunehmen, sofern Reaktionen tatsächlich erfolgen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine zusätzliche Evidenz zur institutionellen Umsetzung geliefert; der demokratische Pfad bleibt hypothetisch.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 11,
-                "divisor": 6,
-                "raw": 1.8333333333333333,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Verantwortungsverlagerung könnte institutionelles Vertrauen schwächen",
-              "direction": "negative",
-              "type": "side_risk",
-              "mechanism": "Wenn die Entscheidung vor allem als Pflicht einzelner Lehrkräfte zur Anzeige und Aufgabenrückstellung umgesetzt wird, könnte Verantwortung für strukturelle Überlastung nach unten verschoben werden.",
-              "recipients": [
-                "Lehrkräfte",
-                "Schulkollegien",
-                "Lernende"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Der mögliche Vertrauens- und Rechenschaftseffekt ist begrenzt auf Umsetzungssituationen und empirisch nicht belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Der mögliche Effekt betrifft Institutionen und Beschäftigte im Anwendungsbereich.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Eine einseitige Verantwortungszuweisung könnte einzelne Konflikte verschärfen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Wiederholte Anwendung könnte Erwartungen an institutionelle Verantwortung prägen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Vertrauen und Verfahrenspraxis können durch spätere Reaktionen korrigiert werden.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Beschäftigte mit hoher Belastung wären von einer solchen Verlagerung besonders abhängig.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad betrifft institutionelle Rechenschaft, bleibt aber sektoral begrenzt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt; es handelt sich um ein bedingtes Rechenschaftsrisiko.",
-                "reference_frame": "institutionelle Rechenschaft und Zugang zu Rechtsschutz",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Der Pfad setzt eine Umsetzung voraus, die Anzeigen dokumentiert, aber keine wirksame organisatorische Reaktion auslöst.",
-              "reference_space": "Schulverwaltungen und betroffene Beschäftigte",
-              "time_horizon": "Mittelfristig bei wiederholter Anwendung",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Die institutionelle Reaktion bleibt hinter der dokumentierten Belastung zurück.",
-              "source_support": "Die Quelle nennt Anzeige und Aufgabenrückstellung, belegt aber keine Vertrauens- oder Rechenschaftsfolge.",
-              "limitations": "Keine Befragungen, Verwaltungsdaten oder unabhängigen Umsetzungsberichte.",
-              "first_order": "Konflikte über Überlastung könnten stärker formalisiert werden.",
-              "second_order": "Verantwortung könnte von Dienstherren auf einzelne Beschäftigte verschoben erscheinen.",
-              "third_order": "Wiederholte Verlagerung könnte institutionelles Vertrauen schwächen; Eintritt und Reichweite sind offen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine zusätzliche Evidenz zu Vertrauens- oder Rechenschaftseffekten in der gelieferten Quelle.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 11,
-                "divisor": 6,
-                "raw": 1.8333333333333333,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Ein möglicher Rechenschaftsgewinn steht einem möglichen Verantwortungsrisiko gegenüber; beide Pfade sind ähnlich begrenzt und nicht beobachtet."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "+ Potenzial",
-            "shortPathLabel": "Gerichtliche Klärung könnte institutionelle Rechenschaft stärken",
-            "direction": "positive"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "+ Potenzial",
-          "shortPathLabel": "Gerichtliche Klärung könnte institutionelle Rechenschaft stärken",
-          "display_direction": "positive",
-          "label": "+ Potenzial",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "+ Potenzial"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-17T18:52:50.311Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-17T17:02:23.000Z",
-      "last_updated": "2026-09-17T18:55:21.864Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-86cfef48920de79b5b27",
-      "case_file": null,
-      "source_published_at": "2026-09-17T18:49:34.000Z",
-      "published_at": "2026-09-17T18:55:21.864Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Zu prüfen ist, wie die vollständige Urteilsbegründung die Anforderungen an Überlastungsanzeigen und das Zurückstellen von Aufgaben konkret bestimmt.",
-          "source_id": "dlf-nachrichten",
-          "measurable_indicator": "Veröffentlichte vollständige Urteilsbegründung mit konkreten Anforderungen",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-eee99570d697d777",
-          "announced_at": "2026-09-17T18:49:34.000Z",
-          "follow_up_date": "2026-09-24T18:55:21.864Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bundesverwaltungsgericht-kippt-ausgleich-fuer-ueberstunden-eines-rektors-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-17T18:49:34.000Z",
           "primary_source": false
         }
       ]
