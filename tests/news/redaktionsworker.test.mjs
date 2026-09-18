@@ -592,3 +592,35 @@ test('ein Auftrag mit ausgeliefertem Entwurf ist nicht liegengeblieben', async (
   session.observations.set(`github-attempt:${jobId}`, { provider_called: false, status: 'provider_unavailable' });
   assert.deepEqual(await erschoepfteAuftraege(session.store, await session.store.all()), [], 'ohne bezahlten Aufruf ist nichts verbraucht');
 });
+
+// 18.09.2026: Fuer die Korrektur der Oelkrise-Analyse (persoenliche Ausgabe)
+// lieferte das Modell editorial_revision.author_perspective ohne patch-Huelle;
+// die Ablage verwarf die ganze Antwort, obwohl nur „Meine Einordnung" neu war.
+test('eine Korrekturfassung bindet der Worker selbst an die Veroeffentlichung', async () => {
+  const { bindeKorrekturfassung } = await import('../../scripts/news/redaktionsworker.mjs');
+  const { validateEditorialRevisionPreview, editorialRevisionBaseHash } = await import('../../scripts/news/editorial-approved-revisions.mjs');
+  const { EINORDNUNG_NOTIZ } = await import('../../scripts/news/einordnung.mjs');
+  const koerper = '## Aus einem Ereignis wird ein Risiko\n\n' + 'Die Pipeline bündelt Abhängigkeit. '.repeat(20) + '\n\n## Meine Einordnung\n\n';
+  const base = { format: 'approved_editorial', subtype: 'opinion_analysis', status: 'published', analysis_id: 'woek-personal-76f94e608e540a27',
+    slug: 'wenn-der-ausweichweg-ausfallt', title: 'Wenn der Ausweichweg ausfällt', body_markdown: koerper + 'Alte Einordnung. '.repeat(10),
+    sources: [{ url: 'https://www.reuters.com/a', title: 'Pipeline', publisher: 'Reuters' }] };
+  const target = { analysis_id: base.analysis_id, slug: base.slug, base_hash: editorialRevisionBaseHash(base) };
+  const neu = koerper + 'Neue Einordnung nach der Methodik. '.repeat(10);
+  const preview = { format: 'opinion_analysis', title: 'Anderer Titel', markdown: neu, sources: [{ url: 'https://www.cnbc.com/x', title: 'CNBC', publisher: 'CNBC' }],
+    checks: { source_binding: true, editorial_validation: true, personal_experiences_invented: false }, editorial_revision: { author_perspective: { paragraphs: ['x'], claim_indices: [0] } } };
+  const repairs = [];
+  bindeKorrekturfassung(preview, { revision_base: base, revision_target: target }, repairs);
+  assert.deepEqual(preview.editorial_revision.patch, { body_markdown: neu, correction_note: EINORDNUNG_NOTIZ });
+  assert.equal(preview.title, base.title, 'eine Korrektur aendert den Titel nicht');
+  assert.deepEqual(preview.sources, base.sources, 'die Freigabe zeigt die Quellen, die live gehen');
+  assert.doesNotThrow(() => validateEditorialRevisionPreview(preview));
+  assert.ok(repairs.includes('revision:an die Veröffentlichung gebunden'));
+  // Aendert sich mehr als die Einordnung und fehlt eine Notiz, bleibt es ein Fehler.
+  const mehr = { ...preview, markdown: '## Neuer Abschnitt\n\n' + neu, editorial_revision: {} };
+  bindeKorrekturfassung(mehr, { revision_base: base, revision_target: target }, []);
+  assert.deepEqual(mehr.editorial_revision, {}, 'ohne Notiz wird nichts erfunden');
+  // Ohne Korrekturziel bleibt alles, wie es war.
+  const frei = { title: 'T', markdown: 'M' };
+  assert.equal(bindeKorrekturfassung(frei, {}, []), frei);
+  assert.equal(frei.editorial_revision, undefined);
+});
