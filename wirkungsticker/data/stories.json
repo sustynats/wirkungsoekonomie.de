@@ -2,8 +2,2095 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T17:39:27.175Z",
+  "updated_at": "2026-09-18T18:08:53.727Z",
   "stories": [
+    {
+      "story_id": "wt-684e2fc65b04f7c3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-684e2fc65b04f7c3-10208fb02540a17c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-684e2fc65b04f7c3-ecfcd68c707b7c24-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-684e2fc65b04f7c3-3f941d7eb8a03b09-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "video-autobombe-in-pakistan-explodiert-mindestens-20-tote-04f7c3",
+      "title": "Laut MDR: Autobombe explodiert an Polizeizentrale in Pakistan – mindestens 20 Tote",
+      "source_summary": "Der MDR berichtet über eine Autobombenexplosion im Nordwesten Pakistans. Nach dem vorliegenden Text kamen dabei mindestens 20 Menschen ums Leben.\n\nDem Bericht zufolge rammte ein mit Sprengstoff beladenes Fahrzeug das Tor einer Polizeizentrale und explodierte. Damit beschreibt die Quelle sowohl den Ort des Geschehens als auch den mutmaßlichen Ablauf.\n\nDie vorliegende Auswahl enthält nur eine journalistische Quelle. Unabhängig bestätigte Angaben zu Verletzten, Verantwortlichen, Motiv, weiteren Schäden und den Umständen des Angriffs liegen darin nicht vor.",
+      "summary": "Im Nordwesten Pakistans soll ein mit Sprengstoff beladenes Fahrzeug das Tor einer Polizeizentrale gerammt haben. Der MDR berichtet von mindestens 20 Toten; unabhängige Bestätigungen und Angaben zu weiteren Folgen fehlen.",
+      "detail_summary": "Der MDR berichtet über eine Autobombenexplosion im Nordwesten Pakistans, bei der mindestens 20 Menschen ums Leben gekommen sein sollen. Laut Quelle rammte ein mit Sprengstoff beladenes Fahrzeug das Tor einer Polizeizentrale und explodierte. Der belegte Schaden macht den Vorgang für den Schutz von Menschen und die Sicherheitsordnung relevant. Möglich sind zusätzliche Belastungen für Betroffene und Institutionen, falls der Angriff weitere Verletzte, Schäden oder anhaltende Unsicherheit verursacht. Dafür fehlen im vorliegenden Material jedoch unabhängige Bestätigungen sowie Angaben zu Motiv und Verantwortlichkeit.",
+      "why_relevant": "Mindestens 20 gemeldete Tote und ein Angriff auf eine Polizeizentrale markieren einen potenziell schweren Sicherheits- und Schutzgutfall. Die Quellenlage bleibt auf einen journalistischen Bericht begrenzt.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über die Explosion einer Autobombe im Nordwesten Pakistans mit mindestens 20 gemeldeten Toten",
+        "evaluation_target": {
+          "label": "Folgen des berichteten Autobombenanschlags",
+          "type": "event"
+        },
+        "baseline": "Sicherheits- und Lebenslage im betroffenen Raum vor dem Ereignis",
+        "counterfactual": "Ohne die Explosion wären die unmittelbar berichteten Todesfälle durch dieses Ereignis nicht eingetreten; weitere Unterschiede bleiben offen.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Agenda 2030/SDG 16: Frieden, Gerechtigkeit und starke Institutionen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Bericht trägt einen schweren unmittelbaren menschlichen Schaden; weitere Verletzungen, Versorgungslasten und Verteilungsfolgen sind nicht belegt und werden nur bedingt modelliert.",
+            "planet": "Die Quelle nennt keine Umweltmedien, Flächenschäden oder Schadstofffreisetzung. Ein eigenständiger ökologischer Pfad ist im abgegrenzten Ereignisraum daher begründet vernachlässigbar.",
+            "democracy": "Der Angriff auf eine Polizeizentrale könnte Sicherheitswahrnehmung und institutionelle Reaktionen berühren; konkrete Folgen für Rechte, Verfahren oder Vertrauen sind nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Explosion kann Menschen im unmittelbaren Umfeld töten oder verletzen; mindestens 20 Todesfälle werden von der Quelle berichtet.",
+          "second_order": "Weitere Opfer könnten Familien, Rettung und lokale Versorgung belasten; institutionelle und kommunikative Reaktionen bleiben abhängig von weiteren Informationen.",
+          "third_order": "Bei anhaltender Unsicherheit könnten Sicherheitsdebatten und Vertrauen in staatlichen Schutz beeinflusst werden; eine solche Kaskade ist nicht beobachtet.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Keine Quelle belegt weitere Verletzte, Sachschäden, eine Gewaltserie oder institutionelle Folgewirkungen.",
+            "Die Verantwortlichkeit, das Motiv und die öffentliche Reaktion sind unbekannt."
+          ],
+          "source_independence": "Es liegt nur ein journalistischer MDR-Bericht vor. Eine unabhängige Bestätigung oder Primärquelle ist nicht geliefert.",
+          "institutional_status": "Die Quelle beschreibt eine Polizeizentrale als Ereignisort. Behördliche Zuständigkeiten, rechtliche Einordnung und Reaktionen sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der unmittelbare Schaden ist durch eine einzelne journalistische Quelle beschrieben; Opferzahl und weitere Folgen sind nicht unabhängig bestätigt.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der berichtete Tod von mindestens 20 Menschen begründet ein hohes negatives menschliches Wirkungspotenzial. Der Hauptpfad betrifft mögliche weitere Verletzungen oder Todesfälle im unmittelbaren Explosionsbereich; die Schutzgrenze des Lebens ist dabei nur bedingt, nicht als zusätzlicher beobachteter Schaden, maßgeblich.",
+            "primary_paths": [
+              {
+                "label": "Weitere Menschen könnten durch die Explosion oder ihre unmittelbaren Folgen verletzt oder getötet werden.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Druckwelle, Trümmer und Feuer einer Autobombe können Personen im Umfeld einer Polizeizentrale körperlich schädigen.",
+                "recipients": [
+                  "Menschen im Umfeld der Polizeizentrale",
+                  "Rettungskräfte"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 3,
+                  "upper": 4,
+                  "rationale": "Der direkte Schutzgutschaden kann erheblich sein, sein Umfang ist wegen fehlender Angaben zu Verletzten und Schäden begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt mindestens 20 Tote, aber keine Reichweite der Explosion.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Eine Explosion kann im Nahbereich schwere körperliche Schäden verursachen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Verletzungen und ihre Versorgung könnten über den unmittelbaren Moment hinausreichen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Tödliche oder schwere Verletzungsfolgen können dauerhaft sein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Personen nahe dem Ereignisort wären einer besonderen Gefährdung ausgesetzt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die direkte menschliche Wirkung bleibt voraussichtlich lokal und ereignisbezogen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der bedingte Pfad betrifft eine mögliche schwere Verletzung des Lebensschutzes.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Weitere Personen müssen sich im Wirkbereich der Explosion befinden; Umfang und Zeitpunkt sind unbekannt.",
+                "reference_space": "Polizeizentrale und unmittelbares Umfeld im Nordwesten Pakistans",
+                "time_horizon": "unmittelbar bis kurzfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichtete Explosion ist zutreffend und wirkt nach den beschriebenen physikalischen Mechanismen.",
+                "source_support": "Die Quelle belegt die Explosion und mindestens 20 Tote, nicht aber weitere Opfer.",
+                "limitations": "Keine Verletztenzahl, keine Schadensaufnahme und keine unabhängige Bestätigung.",
+                "first_order": "Weitere mögliche Verletzungen oder Todesfälle im Umfeld.",
+                "second_order": "Mögliche Belastung von Rettung, Familien und lokaler Versorgung bei weiteren Opfern.",
+                "third_order": "Mögliche längerfristige Unsicherheit im betroffenen Raum, falls der Angriff Teil einer anhaltenden Lage ist.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Folgequelle geliefert; weitere Opfer und ihre Größenordnung bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 20,
+                  "divisor": 6,
+                  "raw": 3.3333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Anhaltende Unsicherheit könnte den Zugang zu Alltag, Hilfe und öffentlichen Einrichtungen erschweren.",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Sicherheitsbedenken könnten Schutzmaßnahmen und Vermeidungsverhalten auslösen.",
+                "recipients": [
+                  "Bevölkerung im betroffenen Raum",
+                  "verletzliche Menschen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Eine relevante Wirkung hängt von der weiteren Sicherheitslage und behördlichen Reaktion ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ein lokaler Folgepfad ist möglich, seine Reichweite aber unbekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mögliche Einschränkungen wären voraussichtlich unterschiedlich stark.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine Dauer ist aus dem Bericht nicht ableitbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Alltagsbeschränkungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Verletzliche Menschen könnten Zugangsprobleme stärker spüren.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt ohne Kontext lokal und indirekt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenzverletzung ist für diesen ungeklärten Nebenpfad nicht belegt.",
+                  "reference_frame": "Zugang zu Hilfe und grundlegenden Alltagsfunktionen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Dafür müsste eine anhaltende Gefahrenlage oder entsprechende behördliche Reaktion eintreten.",
+                "reference_space": "Betroffener lokaler Raum",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Sicherheitslage bleibt nach dem Ereignis angespannt.",
+                "source_support": "Die Quelle belegt keine anhaltende Unsicherheit oder Einschränkung.",
+                "limitations": "Keine Angaben zu Reaktionen, Versorgung oder Verteilungsfolgen.",
+                "first_order": "Mögliche zusätzliche Schutzmaßnahmen.",
+                "second_order": "Mögliche Einschränkungen von Zugang und Mobilität.",
+                "third_order": "Mögliche ungleiche Belastung besonders verletzlicher Gruppen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle zu Alltags-, Versorgungs- oder Verteilungsfolgen geliefert.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Der bedingte Lebensschutzpfad ist materiell maßgeblich; ein vergleichbarer positiver Pfad ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Weitere Menschen könnten durch die Explosion oder ihre unmittelbaren Folgen verletzt oder getötet werden.",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+                "direction": "negative",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "reference_space": "Betroffene Menschen im Nordwesten Pakistans",
+                "observed_at": "2026-09-18",
+                "temporal_status": "ex_post",
+                "mechanism": "Explosion einer Autobombe nach dem Bericht des MDR",
+                "recipients": [
+                  "Menschen im betroffenen Raum"
+                ],
+                "time_horizon": "unmittelbar und dauerhaft für die Verstorbenen",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt mindestens 20 unmittelbar Betroffene.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Der Verlust von Menschenleben ist eine sehr schwere Schutzgutverletzung.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Die Todesfolgen sind für die Betroffenen dauerhaft.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Der Tod ist für die unmittelbar Betroffenen nicht reversibel.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen im unmittelbaren Explosionsbereich waren besonders gefährdet.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein lokaler Angriff auf eine Polizeizentrale ist institutionell relevant.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der berichtete Tod von Menschen überschreitet die Schutzgrenze des Lebensschutzes.",
+                  "reference_frame": "Schutz des menschlichen Lebens",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 21,
+                  "divisor": 6,
+                  "raw": 3.5,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+              "direction": "negative",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Betroffene Menschen im Nordwesten Pakistans",
+              "observed_at": "2026-09-18",
+              "temporal_status": "ex_post",
+              "mechanism": "Explosion einer Autobombe nach dem Bericht des MDR",
+              "recipients": [
+                "Menschen im betroffenen Raum"
+              ],
+              "time_horizon": "unmittelbar und dauerhaft für die Verstorbenen",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt mindestens 20 unmittelbar Betroffene.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Verlust von Menschenleben ist eine sehr schwere Schutzgutverletzung.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Die Todesfolgen sind für die Betroffenen dauerhaft.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der Tod ist für die unmittelbar Betroffenen nicht reversibel.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen im unmittelbaren Explosionsbereich waren besonders gefährdet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein lokaler Angriff auf eine Polizeizentrale ist institutionell relevant.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod von Menschen überschreitet die Schutzgrenze des Lebensschutzes.",
+                "reference_frame": "Schutz des menschlichen Lebens",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 21,
+                "divisor": 6,
+                "raw": 3.5,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Umweltmedien, Schadstofffreisetzung, Flächenschäden oder ökologischen Folgen. Ein eigenständiger materieller Umweltpfad ist im abgegrenzten Ereignisraum daher begründet vernachlässigbar.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der Bericht trägt einen menschlichen Schaden, aber keinen eigenständigen Umweltbefund. Die planetare Tragweite wird für den kurzfristigen lokalen Ereignisraum als vernachlässigbar modelliert, nicht als allgemeine Aussage über mögliche Explosionsfolgen.",
+            "primary_paths": [
+              {
+                "label": "Für die Umwelt wird im abgegrenzten Ereignisraum keine eigenständige materielle Zustandsänderung modelliert.",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Der Bericht nennt keine Freisetzung, Flächenschäden oder andere ökologische Beeinträchtigung.",
+                "recipients": [
+                  "Natur im unmittelbaren Ereignisraum"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im gelieferten Material gibt es keinen belastbaren Hinweis auf einen materiellen Umweltpfad."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine betroffene ökologische Reichweite ist belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität ist beschrieben.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Umweltdauer ist angegeben.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltänderung ist belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine konkrete verletzliche Umweltkomponente ist benannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemtiefe ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist im gelieferten Material nicht belegt.",
+                  "reference_frame": "Lokaler Schutz von Boden, Wasser, Luft und Natur",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Es liegen keine Hinweise auf eine über den lokalen Explosionsort hinausgehende Umweltwirkung vor.",
+                "reference_space": "Unmittelbarer Ereignisraum im Nordwesten Pakistans",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Bewertet wird nur ein eigenständiger ökologischer Pfad, nicht möglicher Gebäudeschaden.",
+                "source_support": "Die Quelle berichtet über Explosion, Fahrzeug und Polizeizentrale, aber keine Umweltfolgen.",
+                "limitations": "Keine Angaben zu Boden, Wasser, Luft, Fläche oder Dauer.",
+                "first_order": "Keine eigenständige Umweltfolge aus dem Material ableitbar.",
+                "second_order": "Keine belastbare ökologische Folge modellierbar.",
+                "third_order": "Keine systemische ökologische Kaskade belegbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Umweltfolgen im gelieferten Quellenbestand dokumentiert.",
+                "negligibility_rationale": "Für den lokalen, kurzfristig abgegrenzten Ereignisraum fehlt jeder belastbare Hinweis auf eine eigenständige ökologische Zustandsänderung.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten oder plausibel materiellen positiven oder negativen Umweltpfad im gelieferten Material."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Für die Umwelt wird im abgegrenzten Ereignisraum keine eigenständige materielle Zustandsänderung modelliert.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die Umwelt wird im abgegrenzten Ereignisraum keine eigenständige materielle Zustandsänderung modelliert.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den Angriffsort, aber keine institutionelle Reaktion, Einschränkung von Rechten, politische Mobilisierung oder Vertrauensänderung. Demokratische Folgen bleiben bedingte Hypothesen.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Ein Angriff auf eine Polizeizentrale kann Sicherheitswahrnehmung und institutionelle Aufmerksamkeit beeinflussen. Ohne Angaben zu Behördenreaktion, öffentlicher Debatte oder Verfahren bleibt die Richtung offen und die Tragweite begrenzt.",
+            "primary_paths": [
+              {
+                "label": "Ein Angriff auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und Sicherheitsinstitutionen beeinflussen.",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ein gewaltsamer Angriff auf staatliche Sicherheitsinfrastruktur kann öffentliche Wahrnehmung und politische Reaktionen prägen.",
+                "recipients": [
+                  "Bevölkerung im betroffenen Raum",
+                  "lokale Sicherheitsinstitutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Die institutionelle Bedeutung des Orts ist plausibel, die demokratische Wirkung hängt jedoch vollständig von Reaktionen und Kontext ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ein lokaler Sicherheitsvorfall kann begrenzte öffentliche Reichweite haben.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Vertrauensbelastung ist indirekt und nicht gemessen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer möglicher Wahrnehmungseffekte ist unbekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauens- und Sicherheitswahrnehmungen können sich grundsätzlich korrigieren.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Besonders exponierte Gruppen könnten Sicherheitsfolgen stärker wahrnehmen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Angriffsort ist eine staatliche Sicherheitsinstitution, aber kein demokratisches Verfahren.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Einschränkung demokratischer Rechte oder Verfahren ist nicht belegt.",
+                  "reference_frame": "Vertrauen, Rechenschaft und Korrekturfähigkeit staatlicher Institutionen",
+                  "source_ids": [],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Eine relevante Wirkung setzt öffentliche Wahrnehmung, weitere Informationen und eine institutionelle oder politische Reaktion voraus.",
+                "reference_space": "Lokale Sicherheitsordnung im betroffenen Raum",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Polizeizentrale wird als sichtbare staatliche Schutzinstitution wahrgenommen.",
+                "source_support": "Die Quelle benennt die Polizeizentrale als Zielort, belegt aber keine Vertrauens- oder Politikfolge.",
+                "limitations": "Keine Angaben zu Bevölkerung, Behördenreaktion, politischen Debatten oder demokratischen Verfahren.",
+                "first_order": "Mögliche erhöhte öffentliche Aufmerksamkeit für Sicherheitsfragen.",
+                "second_order": "Mögliche Forderungen nach zusätzlichen Schutzmaßnahmen oder Rechenschaft.",
+                "third_order": "Mögliche Veränderung institutionellen Vertrauens, falls der Angriff nicht aufgeklärt oder politisch instrumentalisiert wird.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle zu Vertrauen, politischer Debatte oder institutioneller Reaktion geliefert.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Eine ungeklärte Zuschreibung könnte öffentliche Sicherheitsdebatten und politische Entscheidungen beeinflussen.",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Unvollständige Informationen können Anschlusskommunikation und politische Forderungen prägen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "politische Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der kommunikative Pfad ist plausibel, aber ohne Resonanz- oder Entscheidungsbeleg sehr unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Resonanzreichweite ist aus einer Quelle nicht bestimmbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mögliche Debatteneffekte wären indirekt und nicht gemessen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine anhaltende Wiederholung ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Kommunikative Deutungen können durch Korrekturen revidiert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen in unsicheren Lagen könnten stärker auf Sicherheitsframes reagieren.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein möglicher Diskurseffekt ist mittelbar und nicht institutionell nachgewiesen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle demokratische Schutzgrenze ist nicht festgestellt.",
+                  "reference_frame": "Informierte öffentliche Willensbildung und demokratische Korrekturfähigkeit",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Dafür müsste der Bericht wiederholt werden und in politische Kommunikation oder Entscheidungsprozesse eingehen.",
+                "reference_space": "Öffentliche und institutionelle Kommunikation im betroffenen politischen Raum",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die offene Verantwortlichkeit bleibt Gegenstand öffentlicher Debatten.",
+                "source_support": "Die Quelle nennt keine Rezeption oder politische Folge.",
+                "limitations": "Kein Publikumsnachweis, keine Debatte und keine Entscheidung sind geliefert.",
+                "first_order": "Mögliche Wiederholung des Sicherheitsframes.",
+                "second_order": "Mögliche Forderungen nach Sicherheits- oder Ermittlungsmaßnahmen.",
+                "third_order": "Mögliche Normalisierung eines sicherheitszentrierten Diskurses ohne unabhängige Bestätigung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Medien-, Publikums- oder Politikfolgen im Quellenbestand belegt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven demokratischen Gegenpfad und keine festgestellte Schutzgrenzverletzung; die offene Einordnung folgt der unsicheren Evidenz."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein Angriff auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und Sicherheitsinstitutionen beeinflussen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein Angriff auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und Sicherheitsinstitutionen beeinflussen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+            "direction": "negative",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Betroffene Menschen im Nordwesten Pakistans",
+            "observed_at": "2026-09-18",
+            "temporal_status": "ex_post",
+            "mechanism": "Explosion einer Autobombe nach dem Bericht des MDR",
+            "recipients": [
+              "Menschen im betroffenen Raum"
+            ],
+            "time_horizon": "unmittelbar und dauerhaft für die Verstorbenen",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Die Quelle nennt mindestens 20 unmittelbar Betroffene.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Der Verlust von Menschenleben ist eine sehr schwere Schutzgutverletzung.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 3,
+                "rationale": "Die Todesfolgen sind für die Betroffenen dauerhaft.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der Tod ist für die unmittelbar Betroffenen nicht reversibel.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Menschen im unmittelbaren Explosionsbereich waren besonders gefährdet.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Ein lokaler Angriff auf eine Polizeizentrale ist institutionell relevant.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod von Menschen überschreitet die Schutzgrenze des Lebensschutzes.",
+              "reference_frame": "Schutz des menschlichen Lebens",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 21,
+              "divisor": 6,
+              "raw": 3.5,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T18:12:42.529Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über die Explosion, den Ereignisort und mindestens 20 Tote."
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle beschreibt ein mit Sprengstoff beladenes Fahrzeug, das das Tor einer Polizeizentrale gerammt habe und explodiert sei."
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle enthält keine unabhängige Bestätigung und keine Angaben zu weiteren Verletzten, Umweltfolgen oder institutionellen Reaktionen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der unmittelbare Schaden ist durch eine einzelne journalistische Quelle beschrieben; Opferzahl und weitere Folgen sind nicht unabhängig bestätigt.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der berichtete Tod von mindestens 20 Menschen begründet ein hohes negatives menschliches Wirkungspotenzial. Der Hauptpfad betrifft mögliche weitere Verletzungen oder Todesfälle im unmittelbaren Explosionsbereich; die Schutzgrenze des Lebens ist dabei nur bedingt, nicht als zusätzlicher beobachteter Schaden, maßgeblich.",
+          "primary_paths": [
+            {
+              "label": "Weitere Menschen könnten durch die Explosion oder ihre unmittelbaren Folgen verletzt oder getötet werden.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Druckwelle, Trümmer und Feuer einer Autobombe können Personen im Umfeld einer Polizeizentrale körperlich schädigen.",
+              "recipients": [
+                "Menschen im Umfeld der Polizeizentrale",
+                "Rettungskräfte"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 3,
+                "upper": 4,
+                "rationale": "Der direkte Schutzgutschaden kann erheblich sein, sein Umfang ist wegen fehlender Angaben zu Verletzten und Schäden begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt mindestens 20 Tote, aber keine Reichweite der Explosion.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Eine Explosion kann im Nahbereich schwere körperliche Schäden verursachen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Verletzungen und ihre Versorgung könnten über den unmittelbaren Moment hinausreichen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Tödliche oder schwere Verletzungsfolgen können dauerhaft sein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Personen nahe dem Ereignisort wären einer besonderen Gefährdung ausgesetzt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die direkte menschliche Wirkung bleibt voraussichtlich lokal und ereignisbezogen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der bedingte Pfad betrifft eine mögliche schwere Verletzung des Lebensschutzes.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Weitere Personen müssen sich im Wirkbereich der Explosion befinden; Umfang und Zeitpunkt sind unbekannt.",
+              "reference_space": "Polizeizentrale und unmittelbares Umfeld im Nordwesten Pakistans",
+              "time_horizon": "unmittelbar bis kurzfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichtete Explosion ist zutreffend und wirkt nach den beschriebenen physikalischen Mechanismen.",
+              "source_support": "Die Quelle belegt die Explosion und mindestens 20 Tote, nicht aber weitere Opfer.",
+              "limitations": "Keine Verletztenzahl, keine Schadensaufnahme und keine unabhängige Bestätigung.",
+              "first_order": "Weitere mögliche Verletzungen oder Todesfälle im Umfeld.",
+              "second_order": "Mögliche Belastung von Rettung, Familien und lokaler Versorgung bei weiteren Opfern.",
+              "third_order": "Mögliche längerfristige Unsicherheit im betroffenen Raum, falls der Angriff Teil einer anhaltenden Lage ist.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Folgequelle geliefert; weitere Opfer und ihre Größenordnung bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 20,
+                "divisor": 6,
+                "raw": 3.3333333333333335,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Anhaltende Unsicherheit könnte den Zugang zu Alltag, Hilfe und öffentlichen Einrichtungen erschweren.",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Sicherheitsbedenken könnten Schutzmaßnahmen und Vermeidungsverhalten auslösen.",
+              "recipients": [
+                "Bevölkerung im betroffenen Raum",
+                "verletzliche Menschen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Eine relevante Wirkung hängt von der weiteren Sicherheitslage und behördlichen Reaktion ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ein lokaler Folgepfad ist möglich, seine Reichweite aber unbekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mögliche Einschränkungen wären voraussichtlich unterschiedlich stark.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine Dauer ist aus dem Bericht nicht ableitbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Alltagsbeschränkungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Verletzliche Menschen könnten Zugangsprobleme stärker spüren.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt ohne Kontext lokal und indirekt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenzverletzung ist für diesen ungeklärten Nebenpfad nicht belegt.",
+                "reference_frame": "Zugang zu Hilfe und grundlegenden Alltagsfunktionen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Dafür müsste eine anhaltende Gefahrenlage oder entsprechende behördliche Reaktion eintreten.",
+              "reference_space": "Betroffener lokaler Raum",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Sicherheitslage bleibt nach dem Ereignis angespannt.",
+              "source_support": "Die Quelle belegt keine anhaltende Unsicherheit oder Einschränkung.",
+              "limitations": "Keine Angaben zu Reaktionen, Versorgung oder Verteilungsfolgen.",
+              "first_order": "Mögliche zusätzliche Schutzmaßnahmen.",
+              "second_order": "Mögliche Einschränkungen von Zugang und Mobilität.",
+              "third_order": "Mögliche ungleiche Belastung besonders verletzlicher Gruppen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle zu Alltags-, Versorgungs- oder Verteilungsfolgen geliefert.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Der bedingte Lebensschutzpfad ist materiell maßgeblich; ein vergleichbarer positiver Pfad ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Weitere Menschen könnten durch die Explosion oder ihre unmittelbaren Folgen verletzt oder getötet werden.",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+              "direction": "negative",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Betroffene Menschen im Nordwesten Pakistans",
+              "observed_at": "2026-09-18",
+              "temporal_status": "ex_post",
+              "mechanism": "Explosion einer Autobombe nach dem Bericht des MDR",
+              "recipients": [
+                "Menschen im betroffenen Raum"
+              ],
+              "time_horizon": "unmittelbar und dauerhaft für die Verstorbenen",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt mindestens 20 unmittelbar Betroffene.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Verlust von Menschenleben ist eine sehr schwere Schutzgutverletzung.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Die Todesfolgen sind für die Betroffenen dauerhaft.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der Tod ist für die unmittelbar Betroffenen nicht reversibel.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen im unmittelbaren Explosionsbereich waren besonders gefährdet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein lokaler Angriff auf eine Polizeizentrale ist institutionell relevant.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod von Menschen überschreitet die Schutzgrenze des Lebensschutzes.",
+                "reference_frame": "Schutz des menschlichen Lebens",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 21,
+                "divisor": 6,
+                "raw": 3.5,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+            "direction": "negative",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Betroffene Menschen im Nordwesten Pakistans",
+            "observed_at": "2026-09-18",
+            "temporal_status": "ex_post",
+            "mechanism": "Explosion einer Autobombe nach dem Bericht des MDR",
+            "recipients": [
+              "Menschen im betroffenen Raum"
+            ],
+            "time_horizon": "unmittelbar und dauerhaft für die Verstorbenen",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Die Quelle nennt mindestens 20 unmittelbar Betroffene.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Der Verlust von Menschenleben ist eine sehr schwere Schutzgutverletzung.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 3,
+                "rationale": "Die Todesfolgen sind für die Betroffenen dauerhaft.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der Tod ist für die unmittelbar Betroffenen nicht reversibel.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Menschen im unmittelbaren Explosionsbereich waren besonders gefährdet.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Ein lokaler Angriff auf eine Polizeizentrale ist institutionell relevant.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod von Menschen überschreitet die Schutzgrenze des Lebensschutzes.",
+              "reference_frame": "Schutz des menschlichen Lebens",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 21,
+              "divisor": 6,
+              "raw": 3.5,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Der MDR berichtet, dass bei der Explosion mindestens 20 Menschen ums Leben gekommen sind.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Umweltmedien, Schadstofffreisetzung, Flächenschäden oder ökologischen Folgen. Ein eigenständiger materieller Umweltpfad ist im abgegrenzten Ereignisraum daher begründet vernachlässigbar.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der Bericht trägt einen menschlichen Schaden, aber keinen eigenständigen Umweltbefund. Die planetare Tragweite wird für den kurzfristigen lokalen Ereignisraum als vernachlässigbar modelliert, nicht als allgemeine Aussage über mögliche Explosionsfolgen.",
+          "primary_paths": [
+            {
+              "label": "Für die Umwelt wird im abgegrenzten Ereignisraum keine eigenständige materielle Zustandsänderung modelliert.",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Der Bericht nennt keine Freisetzung, Flächenschäden oder andere ökologische Beeinträchtigung.",
+              "recipients": [
+                "Natur im unmittelbaren Ereignisraum"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im gelieferten Material gibt es keinen belastbaren Hinweis auf einen materiellen Umweltpfad."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine betroffene ökologische Reichweite ist belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität ist beschrieben.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Umweltdauer ist angegeben.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltänderung ist belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine konkrete verletzliche Umweltkomponente ist benannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemtiefe ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist im gelieferten Material nicht belegt.",
+                "reference_frame": "Lokaler Schutz von Boden, Wasser, Luft und Natur",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Es liegen keine Hinweise auf eine über den lokalen Explosionsort hinausgehende Umweltwirkung vor.",
+              "reference_space": "Unmittelbarer Ereignisraum im Nordwesten Pakistans",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Bewertet wird nur ein eigenständiger ökologischer Pfad, nicht möglicher Gebäudeschaden.",
+              "source_support": "Die Quelle berichtet über Explosion, Fahrzeug und Polizeizentrale, aber keine Umweltfolgen.",
+              "limitations": "Keine Angaben zu Boden, Wasser, Luft, Fläche oder Dauer.",
+              "first_order": "Keine eigenständige Umweltfolge aus dem Material ableitbar.",
+              "second_order": "Keine belastbare ökologische Folge modellierbar.",
+              "third_order": "Keine systemische ökologische Kaskade belegbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Umweltfolgen im gelieferten Quellenbestand dokumentiert.",
+              "negligibility_rationale": "Für den lokalen, kurzfristig abgegrenzten Ereignisraum fehlt jeder belastbare Hinweis auf eine eigenständige ökologische Zustandsänderung.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten oder plausibel materiellen positiven oder negativen Umweltpfad im gelieferten Material."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die Umwelt wird im abgegrenzten Ereignisraum keine eigenständige materielle Zustandsänderung modelliert.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Für die Umwelt wird im abgegrenzten Ereignisraum keine eigenständige materielle Zustandsänderung modelliert.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den Angriffsort, aber keine institutionelle Reaktion, Einschränkung von Rechten, politische Mobilisierung oder Vertrauensänderung. Demokratische Folgen bleiben bedingte Hypothesen.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Ein Angriff auf eine Polizeizentrale kann Sicherheitswahrnehmung und institutionelle Aufmerksamkeit beeinflussen. Ohne Angaben zu Behördenreaktion, öffentlicher Debatte oder Verfahren bleibt die Richtung offen und die Tragweite begrenzt.",
+          "primary_paths": [
+            {
+              "label": "Ein Angriff auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und Sicherheitsinstitutionen beeinflussen.",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ein gewaltsamer Angriff auf staatliche Sicherheitsinfrastruktur kann öffentliche Wahrnehmung und politische Reaktionen prägen.",
+              "recipients": [
+                "Bevölkerung im betroffenen Raum",
+                "lokale Sicherheitsinstitutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Die institutionelle Bedeutung des Orts ist plausibel, die demokratische Wirkung hängt jedoch vollständig von Reaktionen und Kontext ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ein lokaler Sicherheitsvorfall kann begrenzte öffentliche Reichweite haben.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Vertrauensbelastung ist indirekt und nicht gemessen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer möglicher Wahrnehmungseffekte ist unbekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauens- und Sicherheitswahrnehmungen können sich grundsätzlich korrigieren.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Besonders exponierte Gruppen könnten Sicherheitsfolgen stärker wahrnehmen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Angriffsort ist eine staatliche Sicherheitsinstitution, aber kein demokratisches Verfahren.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Einschränkung demokratischer Rechte oder Verfahren ist nicht belegt.",
+                "reference_frame": "Vertrauen, Rechenschaft und Korrekturfähigkeit staatlicher Institutionen",
+                "source_ids": [],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Eine relevante Wirkung setzt öffentliche Wahrnehmung, weitere Informationen und eine institutionelle oder politische Reaktion voraus.",
+              "reference_space": "Lokale Sicherheitsordnung im betroffenen Raum",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Polizeizentrale wird als sichtbare staatliche Schutzinstitution wahrgenommen.",
+              "source_support": "Die Quelle benennt die Polizeizentrale als Zielort, belegt aber keine Vertrauens- oder Politikfolge.",
+              "limitations": "Keine Angaben zu Bevölkerung, Behördenreaktion, politischen Debatten oder demokratischen Verfahren.",
+              "first_order": "Mögliche erhöhte öffentliche Aufmerksamkeit für Sicherheitsfragen.",
+              "second_order": "Mögliche Forderungen nach zusätzlichen Schutzmaßnahmen oder Rechenschaft.",
+              "third_order": "Mögliche Veränderung institutionellen Vertrauens, falls der Angriff nicht aufgeklärt oder politisch instrumentalisiert wird.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle zu Vertrauen, politischer Debatte oder institutioneller Reaktion geliefert.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Eine ungeklärte Zuschreibung könnte öffentliche Sicherheitsdebatten und politische Entscheidungen beeinflussen.",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Unvollständige Informationen können Anschlusskommunikation und politische Forderungen prägen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "politische Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der kommunikative Pfad ist plausibel, aber ohne Resonanz- oder Entscheidungsbeleg sehr unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Resonanzreichweite ist aus einer Quelle nicht bestimmbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mögliche Debatteneffekte wären indirekt und nicht gemessen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine anhaltende Wiederholung ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Kommunikative Deutungen können durch Korrekturen revidiert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen in unsicheren Lagen könnten stärker auf Sicherheitsframes reagieren.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein möglicher Diskurseffekt ist mittelbar und nicht institutionell nachgewiesen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle demokratische Schutzgrenze ist nicht festgestellt.",
+                "reference_frame": "Informierte öffentliche Willensbildung und demokratische Korrekturfähigkeit",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Dafür müsste der Bericht wiederholt werden und in politische Kommunikation oder Entscheidungsprozesse eingehen.",
+              "reference_space": "Öffentliche und institutionelle Kommunikation im betroffenen politischen Raum",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die offene Verantwortlichkeit bleibt Gegenstand öffentlicher Debatten.",
+              "source_support": "Die Quelle nennt keine Rezeption oder politische Folge.",
+              "limitations": "Kein Publikumsnachweis, keine Debatte und keine Entscheidung sind geliefert.",
+              "first_order": "Mögliche Wiederholung des Sicherheitsframes.",
+              "second_order": "Mögliche Forderungen nach Sicherheits- oder Ermittlungsmaßnahmen.",
+              "third_order": "Mögliche Normalisierung eines sicherheitszentrierten Diskurses ohne unabhängige Bestätigung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Medien-, Publikums- oder Politikfolgen im Quellenbestand belegt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven demokratischen Gegenpfad und keine festgestellte Schutzgrenzverletzung; die offene Einordnung folgt der unsicheren Evidenz."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein Angriff auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und Sicherheitsinstitutionen beeinflussen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein Angriff auf eine Polizeizentrale könnte das Vertrauen in staatlichen Schutz und Sicherheitsinstitutionen beeinflussen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "second_order",
+            "path": "Falls die Sicherheitslage anhält, könnten Behörden und Bevölkerung Schutzmaßnahmen verstärken und alltägliche Abläufe im betroffenen Raum einschränken.",
+            "direction": "open",
+            "condition": "Das setzt anhaltende Unsicherheit und entsprechende behördliche oder gesellschaftliche Reaktionen voraus.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "democracy"
+            ]
+          }
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die dramatisierende Überschrift verbindet eine Autobombenexplosion mit mindestens 20 Toten, während die Quelle nur einfach belegt ist.",
+        "factual_core": "Der MDR berichtet über eine Autobombenexplosion im Nordwesten Pakistans und mindestens 20 Tote.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der MDR berichtet über eine Explosion einer Autobombe im Nordwesten Pakistans. Der MDR nennt mindestens 20 Tote."
+          ],
+          "actor_claims": [],
+          "open": [
+            "Unabhängige Bestätigung der Opferzahl",
+            "Verletztenzahl, Motiv, Verantwortlichkeit und weitere Schäden"
+          ]
+        },
+        "attribution": {
+          "frame_source": "mdr-nachrichten",
+          "speaker": "MDR",
+          "original_term": "explodiert",
+          "usage_type": "editorial",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "explodiert",
+          "origin_in_story": "mdr-nachrichten",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "explodiert",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Überschrift stellt das Ereignis als akute Gewalt- und Gefahrenlage dar.",
+          "implied_cause": "Ein mit Sprengstoff beladenes Fahrzeug wird als unmittelbarer Auslöser beschrieben.",
+          "implied_responsibility": "Keine Verantwortlichkeit wird benannt.",
+          "implied_threat": "Die Formulierung kann eine unmittelbare Gefahr und hohe Dramatik hervorheben.",
+          "implied_solution_space": "Keine Lösung oder politische Reaktion wird nahegelegt.",
+          "material_omissions": [
+            "Unabhängige Bestätigung",
+            "Verletztenzahl",
+            "Motiv und Verantwortlichkeit"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Politische Hintergründe sind aus der Quelle nicht ersichtlich."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Berichterstattung über Anschläge und staatliche Sicherheit",
+          "normalization_potential": "low",
+          "repetition_risk": "open",
+          "polarization_potential": "Eine ungeklärte Zuschreibung könnte Polarisierung begünstigen.",
+          "trust_effect_potential": "Übertreibende oder unbestätigte Anschlussdeutungen könnten Vertrauen in Berichterstattung und Institutionen schwächen.",
+          "discourse_effect_potential": "Die Meldung könnte Aufmerksamkeit für Sicherheitsfragen bündeln; eine konkrete Publikumswirkung ist nicht belegt."
+        },
+        "impact_path": {
+          "first_order": "Die Überschrift kann die Wahrnehmung eines akuten Anschlags mit vielen Opfern prägen.",
+          "second_order": "Wiederholte Berichte ohne nachgereichte Einordnung könnten ungeklärte Verantwortlichkeit und Bedrohungsbilder verfestigen.",
+          "third_order": "Bei anhaltender Verbreitung könnten Sicherheitsdebatten stärker von Angst und Zuschreibungen als von überprüften Informationen geprägt werden."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Der MDR berichtet über eine Explosion einer Autobombe im Nordwesten Pakistans. Der MDR nennt mindestens 20 Tote.",
+          "what_is_inferred": "Die Wortwahl der Überschrift kann die Dringlichkeit und Bedrohungswahrnehmung verstärken.",
+          "what_is_open": "Nur eine journalistische Quelle liegt vor. Kein Publikums- oder Verhaltensnachweis liegt vor.",
+          "facts": [
+            "Der MDR berichtet über eine Explosion einer Autobombe im Nordwesten Pakistans.",
+            "Der MDR nennt mindestens 20 Tote."
+          ],
+          "observations": [],
+          "inferences": [
+            "Die Wortwahl der Überschrift kann die Dringlichkeit und Bedrohungswahrnehmung verstärken."
+          ],
+          "impact_potentials": [
+            "Die Meldung kann Aufmerksamkeit für zivile Sicherheit und den Schutz staatlicher Einrichtungen erzeugen."
+          ],
+          "impact_risks": [
+            "Ungeklärte Verantwortlichkeit kann in Anschlussberichten spekulativ ausgelegt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle liegt vor.",
+            "Kein Publikums- oder Verhaltensnachweis liegt vor."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der MDR berichtet über eine Autobombenexplosion im Nordwesten Pakistans und mindestens 20 Tote. Das ist der belegte Kern der Meldung. Die Quelle beschreibt außerdem, dass ein mit Sprengstoff beladenes Fahrzeug das Tor einer Polizeizentrale gerammt habe. Unklar bleiben Verletztenzahl, weitere Schäden, Motiv und Verantwortlichkeit. Deshalb wird der Vorgang als vorläufige Einzelquellenmeldung eingeordnet. Die Nachricht kann Aufmerksamkeit auf den Schutz von Menschen und staatlichen Einrichtungen lenken. Sie könnte aber auch zu vorschnellen Zuschreibungen beitragen, wenn weitere Berichte die offenen Punkte nicht sauber trennen. Eine eingetretene Wirkung auf öffentliche Meinung oder politische Entscheidungen ist nicht belegt. Für eine belastbare Einordnung braucht es unabhängige Bestätigungen und Angaben zum weiteren Verlauf.",
+        "editorial_assessment": "Der MDR berichtet über eine Autobombenexplosion im Nordwesten Pakistans und mindestens 20 Tote. Das ist der belegte Kern der Meldung. Die Quelle beschreibt außerdem, dass ein mit Sprengstoff beladenes Fahrzeug das Tor einer Polizeizentrale gerammt habe. Unklar bleiben Verletztenzahl, weitere Schäden, Motiv und Verantwortlichkeit. Deshalb wird der Vorgang als vorläufige Einzelquellenmeldung eingeordnet. Die Nachricht kann Aufmerksamkeit auf den Schutz von Menschen und staatlichen Einrichtungen lenken. Sie könnte aber auch zu vorschnellen Zuschreibungen beitragen, wenn weitere Berichte die offenen Punkte nicht sauber trennen. Eine eingetretene Wirkung auf öffentliche Meinung oder politische Entscheidungen ist nicht belegt. Für eine belastbare Einordnung braucht es unabhängige Bestätigungen und Angaben zum weiteren Verlauf.",
+        "fact_first_alternative": "Im Nordwesten Pakistans berichtet der MDR über eine Autobombenexplosion mit mindestens 20 Toten. Weitere Angaben, darunter Verletztenzahl, Motiv und Verantwortlichkeit, sind unabhängig nicht bestätigt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Die Überschrift verwendet mit „explodiert“ eine dramatisierende Formulierung.",
+            "Die einfache Quellenlage wird im Titel nur durch die Attribution kenntlich gemacht.",
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Laut MDR mindestens 20 Tote nach Explosion einer Autobombe in Pakistan",
+          "recommended_summary": "Der MDR berichtet über eine Autobombenexplosion im Nordwesten Pakistans und mindestens 20 Tote. Weitere Angaben sind nicht unabhängig bestätigt.",
+          "recommended_meta_description": "Der MDR berichtet über mindestens 20 Tote nach einer Autobombenexplosion im Nordwesten Pakistans. Verletztenzahl, Motiv und Verantwortlichkeit sind offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T18:08:53.727Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T17:35:28.000Z",
+      "last_updated": "2026-09-18T18:12:42.520Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e2f8ace7a1441afcc8ea",
+      "case_file": null,
+      "source_published_at": "2026-09-18T17:35:28.000Z",
+      "published_at": "2026-09-18T18:12:42.520Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Zahl der Todesopfer, weitere Verletzte, die Verantwortlichkeit und das Motiv müssen unabhängig geprüft werden.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Bestätigung von Opferzahl, Verantwortlichkeit, Motiv und Sachschäden",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cf0ff9b76bd58332",
+          "announced_at": "2026-09-18T17:35:28.000Z",
+          "follow_up_date": "2026-09-25T18:12:42.520Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/panorama/pakistan-autobombe-anschlag,video-akt-1284.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T17:35:28.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-1829a37198fc2de1",
       "title_image": {
