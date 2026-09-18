@@ -60,6 +60,7 @@ import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './covera
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
 import { processingMode, visualGenerationProvider, assertAutomaticImpactTransport } from './processing-mode.mjs';
 import { releaseDeterministicImpact } from './impact-gate.mjs';
+import { ladeAuftraege, auftraegeVorziehen, auftragsErgebnisse, zusammenfassung, schreibeErgebnisse } from './meldungsauftraege-lauf.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
@@ -1599,7 +1600,13 @@ export async function runWirkungsticker(options = {}) {
   report.catchup_control = catchUp.control;
   if (catchUp.control.enabled) report.budget_throttle = { ...report.budget_throttle,
     policy_version: "2.1", max_stories_per_run: 6, mode: "bounded_backlog_catchup" };
-  const { selected, deferred } = mode === 'api' ? partitionAiQueue(ready, catchUp.stage, maxAiStories, now) : { selected: [], deferred: [] };
+  let { selected, deferred } = mode === 'api' ? partitionAiQueue(ready, catchUp.stage, maxAiStories, now) : { selected: [], deferred: [] };
+  // Natalies Meldungsauftraege gehen vor (meldungsauftraege-lauf.mjs). Sie
+  // landen nie im oeffentlichen Bestand, sondern in ihrer Freigabeliste.
+  const meldungsauftraege = mode === 'api' ? ladeAuftraege(options.orderFile ?? process.env.WOEK_NEWS_ORDER_FILE) : [];
+  ({ selected, deferred } = auftraegeVorziehen(selected, deferred, meldungsauftraege));
+  const vorAuftraegen = new Map(meldungsauftraege.filter((auftrag) => byId.has(auftrag.story_id)).map((auftrag) => [auftrag.story_id, byId.get(auftrag.story_id)]));
+  const entscheidungenVorAuftraegen = newsroom.decisions?.length ?? 0;
   const bridgeImages = new Map();
   if (mode !== 'api') {
     for (const candidate of ready) byId.set(candidate.story_id, pendingRecord(candidate, mode === 'disabled' ? 'AI_DISABLED' : 'BRIDGE_PENDING', now));
@@ -1971,6 +1978,14 @@ export async function runWirkungsticker(options = {}) {
       byId.set(candidate.story_id, pendingRecord(candidate, aiEnabled ? "AI_BUDGET_BLOCKED" : "AI_DISABLED", now));
       report.quality_holds.push({ story_id: candidate.story_id, reason: aiEnabled ? "AI_BUDGET_BLOCKED" : "AI_DISABLED" });
     }
+  }
+  if (meldungsauftraege.length) {
+    const ergebnisse = auftragsErgebnisse(meldungsauftraege, { byId, vorher: vorAuftraegen, changedStoryIds, report });
+    // Die oeffentliche Redaktionsakte kennt Natalies Auftraege nicht.
+    const auftragsIds = new Set(meldungsauftraege.map((auftrag) => auftrag.story_id));
+    if (Array.isArray(newsroom.decisions)) newsroom.decisions = newsroom.decisions.filter((entscheidung, index) => index < entscheidungenVorAuftraegen || !auftragsIds.has(entscheidung.story_id));
+    schreibeErgebnisse(options.orderResultFile ?? process.env.WOEK_NEWS_ORDER_RESULT_FILE, ergebnisse, now);
+    report.meldungsauftraege = zusammenfassung(ergebnisse);
   }
 
   // Enhancement failures cannot enter the AI-error catch above or suppress a

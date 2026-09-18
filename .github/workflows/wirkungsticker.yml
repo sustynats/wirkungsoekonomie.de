@@ -87,9 +87,23 @@ jobs:
         env:
           REASSESS_LIMIT: ${{ inputs.reassess_limit || vars.WOEK_NEWS_REASSESS_LIMIT || '30' }}
         run: node scripts/news/queue-reassessment.mjs --limit="$REASSESS_LIMIT"
+      # Natalies Meldungsauftraege: seit dem Direktbetrieb (15.09.2026) analysierte
+      # sie niemand mehr - sie blieben nach bestandener Recherche liegen. Der Lauf
+      # holt sie ab, analysiert sie zuerst und gibt sie an ihre Freigabeliste.
+      - name: Fetch Natalie's news orders from the private editorial desk
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        continue-on-error: true
+        env:
+          WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+          WOEK_NEWS_ORDER_FILE: ${{ runner.temp }}/meldungsauftraege/auftraege.json
+        run: node scripts/news/meldungsauftraege.mjs holen
       - name: Import, analyze (one call per story) and build
         if: steps.slot.outputs.should_run == 'true'
         env:
+          # Privat, nur im Runner: Auftraege hinein, fertige Meldungen hinaus.
+          WOEK_NEWS_ORDER_FILE: ${{ runner.temp }}/meldungsauftraege/auftraege.json
+          WOEK_NEWS_ORDER_RESULT_FILE: ${{ runner.temp }}/meldungsauftraege/ergebnisse.json
           # Der Schlüssel liegt ausschließlich im Repository-Secret WIRKUNGSTICKER.
           OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
           WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
@@ -139,6 +153,14 @@ jobs:
           WOEK_NEWS_DRY_RUN: ${{ inputs.dry_run }}
         run: |
           if [ "$WOEK_NEWS_DRY_RUN" = "true" ]; then node scripts/news/run-api.mjs --dry-run; else node scripts/news/run-api.mjs; fi
+      - name: Hand analysed news orders to Natalie's approval list
+        if: ${{ !cancelled() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true }}
+        continue-on-error: true
+        env:
+          WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+          WOEK_NEWS_ORDER_RESULT_FILE: ${{ runner.temp }}/meldungsauftraege/ergebnisse.json
+        run: node scripts/news/meldungsauftraege.mjs abgeben
       - name: Take over editions approved in the private editorial desk
         id: approved
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
