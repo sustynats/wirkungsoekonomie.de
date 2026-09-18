@@ -2,8 +2,2706 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T15:37:18.796Z",
+  "updated_at": "2026-09-18T16:08:40.131Z",
   "stories": [
+    {
+      "story_id": "wt-45e762dbc9da1dbe",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-45e762dbc9da1dbe-284627d3bd6e5938-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-45e762dbc9da1dbe-ce6296fc5a00e4d9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-45e762dbc9da1dbe-f3c8346cb1af9b5e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "schusse-in-koln-wer-sind-die-schutzen-da1dbe",
+      "title": "Schüsse in Köln: laut WDR mehrere Tatorte und offene Ermittlungen",
+      "source_summary": "Der WDR berichtet über mehrere Schüsse und weitere Gewalttaten in Köln und Umgebung. Genannt werden Angriffe auf Häuser, Cafés, Juweliergeschäfte und andere Betriebe. Die Chronologie reicht von Juni über August bis zum 18.09.2026.\n\nNach Darstellung des Berichts hält sich die Polizei aus ermittlungstaktischen Gründen mit umfangreichen Informationen zurück. Einschusslöcher und Patronenhülsen werden an mehreren Tatorten beschrieben; zu den Fällen liegen im Auszug keine vollständigen Angaben vor.\n\nAls möglicher Hintergrund werden Schutzgelderpressungen genannt. Ob die einzelnen Taten zusammenhängen, bleibt offen. Auch zu Tätern, Motiven und möglichen Verletzten bietet der vorliegende Quellenbestand keine unabhängige Bestätigung.",
+      "summary": "Der WDR berichtet über mehrere Schüsse und weitere Gewalttaten in Köln; die Polizei hält sich mit Informationen zurück. Ob die Fälle zusammenhängen und welches Motiv vorliegt, bleibt offen.",
+      "detail_summary": "Der WDR beschreibt mehrere Schüsse auf Häuser, Cafés, Juweliergeschäfte und andere Betriebe in Köln und Umgebung. Die Chronologie umfasst Ereignisse seit Juni und reicht bis zum 18.09.2026. An mehreren Tatorten wurden laut Bericht Einschusslöcher oder Patronenhülsen festgestellt. Als möglicher Hintergrund werden Schutzgelderpressungen genannt, zugleich bleibt ein Zusammenhang der Fälle ungeklärt. Das Wirkungspotenzial liegt vor allem in möglicher Verunsicherung, verändertem Sicherheitsverhalten und zusätzlichem Ermittlungs- und Schutzbedarf. Ob Menschen verletzt wurden oder sich aus den Fällen eine anhaltende Gefahrenlage ergibt, ist auf Grundlage der vorliegenden Einzelquelle nicht geklärt.",
+      "why_relevant": "Die Häufung berichteter Gewalttaten kann Sicherheitsgefühl, Schutzbedarf und Vertrauen in die öffentliche Gefahrenabwehr berühren. Der zentrale Zusammenhang der Fälle ist jedoch offen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ongoing",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "WDR-Bericht über mehrere Schüsse und weitere Gewalttaten in Köln und Umgebung",
+        "evaluation_target": {
+          "label": "Berichtete lokale Gewaltserie und ihre möglichen Folgen",
+          "type": "development"
+        },
+        "baseline": "Lokale Sicherheits- und Informationslage vor beziehungsweise ohne bestätigte Einordnung der berichteten Fälle",
+        "counterfactual": "Ohne weitere bestätigte Informationen könnten getrennte Ermittlungen, lokale Schutzreaktionen und Unsicherheit fortbestehen; Umfang und Zusammenhang der Fälle blieben offen.",
+        "reference_frame": [
+          "Schutz von Menschen und Einrichtungen",
+          "ökologische Unversehrtheit",
+          "transparente und rechtsstaatliche Gefahrenabwehr"
+        ],
+        "temporal_status": "ongoing",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Berichtete Schüsse können Sicherheitswahrnehmung, Schutzbedarf und mögliche Verletzlichkeiten von Anwohnerinnen, Beschäftigten und Betrieben berühren. Eingetretene soziale oder gesundheitliche Folgen sind nicht belegt.",
+            "planet": "Direkte ökologische Folgen werden nicht beschrieben. Die berichteten Sachschäden bleiben nach dem Quellenbestand lokal; weitergehende Umweltpfade sind nicht belegt.",
+            "democracy": "Begrenzte Behördeninformationen und ein ungeklärter Zusammenhang können Informationsvertrauen und lokale Debatten beeinflussen. Eine konkrete institutionelle Folge ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Berichtete Schüsse und begrenzte Behördeninformationen können Sicherheitswahrnehmung, Schutzbedarf und Informationsnachfrage verändern.",
+          "second_order": "Eine anhaltende Unklarheit könnte Ressourcenbindung, Sicherheitsforderungen und Vertrauen in die Gefahrenabwehr beeinflussen.",
+          "third_order": "Bei dauerhafter Unaufklärung könnten lokale Bedrohungsnarrative und gruppenbezogene Zuschreibungen verfestigt werden; dies bleibt hypothetisch.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Der Quellenbestand belegt weder Verletzte noch einen bestätigten Zusammenhang, ein Motiv, eine Tätergruppe oder eine messbare Publikumswirkung.",
+            "Direkte ökologische Folgen werden nicht beschrieben.",
+            "Nur eine journalistische Quelle liegt vor; unabhängige Bestätigung fehlt."
+          ],
+          "source_independence": "Nur wdr-nachrichten ist geliefert. Die Quelle ist journalistisch, ihre unabhängige Herkunft ist nicht verifiziert; die Textauswahl ist zudem unvollständig.",
+          "institutional_status": "Laufende polizeiliche Ermittlungen werden berichtet. Ein gerichtlicher, gesetzgeberischer oder vollzogener institutioneller Status ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Keine unabhängige Evidenz für tatsächliche Verhaltens- oder Gesundheitsfolgen; Sicherheits- und Schutzfolgen sind nur bedingt plausibel modellierbar.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Wiederholte Berichte über Schüsse an Wohn- und Geschäftsorten können lokal verunsichern und Schutzbedarf erhöhen. Ein positiver Gegenpfad durch Aufklärung bleibt möglich, ist aber nicht belegt und schwächer. Verletzte oder eingetretene gesundheitliche Folgen sind nicht nachgewiesen.",
+            "primary_paths": [
+              {
+                "label": "Wiederholte Schussmeldungen könnten die lokale Sicherheitswahrnehmung und den Schutzbedarf von Anwohnerinnen und Betrieben erhöhen.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wahrnehmung wiederholter Gewalt kann Vorsicht, Schutzvorkehrungen und Nachfrage nach Gefahrenabwehr verstärken.",
+                "recipients": [
+                  "Anwohnerinnen",
+                  "Beschäftigte",
+                  "Unternehmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Eine lokale Wirkung ist plausibel, Umfang und Dauer bleiben wegen fehlender Verhaltens- und Gesundheitsdaten offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere lokale Tatorte erweitern den möglichen Betroffenenkreis.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Schüsse auf bewohnte und gewerbliche Orte können stark verunsichern.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die berichtete Chronologie reicht über mehrere Monate.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Sicherheitsverhalten und Vertrauen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Wohnende und Beschäftigte an Tatorten sind besonders exponiert.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Wahrnehmung zu Schutz- und Ermittlungsbedarf.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung von Leben oder Gesundheit ist nicht belegt.",
+                  "reference_frame": "Schutz von Leben, Gesundheit und sicherem Aufenthalt",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Weitere Tatmeldungen oder anhaltende Unklarheit müssten den wahrgenommenen Handlungsdruck aufrechterhalten.",
+                "reference_space": "Köln und Umgebung; lokale Sicherheitswahrnehmung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Betroffene nehmen die Berichte wahr und passen ihr Sicherheitsverhalten an.",
+                "source_support": "Der WDR belegt mehrere berichtete Tatorte und begrenzte Polizeiangaben, nicht eine spätere Verhaltensänderung.",
+                "limitations": "Keine Publikums-, Verhaltens- oder Gesundheitsdaten; der Quellenauszug ist unvollständig.",
+                "first_order": "Mögliche erhöhte Vorsicht und Schutzvorkehrungen an betroffenen Orten.",
+                "second_order": "Möglicher zusätzlicher Schutz- und Ermittlungsbedarf bei Behörden und Betrieben.",
+                "third_order": "Mögliche dauerhafte Verunsicherung einzelner Viertel, falls die Unklarheit anhält.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für tatsächliche Verhaltens- oder Gesundheitsfolgen; der Pfad bleibt bedingt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Transparente Aufklärung und verhältnismäßige Schutzmaßnahmen könnten Sicherheit und Vertrauen betroffener Menschen stützen.",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Verlässliche Informationen und erreichbare Gefahrenabwehr können Unsicherheit begrenzen und Handlungsfähigkeit erhöhen.",
+                "recipients": [
+                  "Anwohnerinnen",
+                  "Beschäftigte",
+                  "Unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der positive Pfad hängt vollständig von künftiger Information und Schutzumsetzung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Informationen könnten mehrere lokale Betroffenengruppen erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Orientierung kann Unsicherheit begrenzen, ersetzt aber keinen Schutz.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Vertrauenswirkung ist offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Informationsbedingte Orientierung ist grundsätzlich revidierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene an Tatorten benötigen besonders klare Informationen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt überwiegend lokal und institutionell begrenzt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein positiver Schutzpfad überschreitet keine festgestellte Schutzgrenze.",
+                  "reference_frame": "Zugang zu verlässlicher Sicherheitsinformation",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Behörden müssten belastbare Informationen bereitstellen und Schutzmaßnahmen wirksam sowie verhältnismäßig umsetzen.",
+                "reference_space": "Köln und Umgebung; lokale Sicherheits- und Informationslage",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Informationen sind verständlich, rechtzeitig und für Betroffene erreichbar.",
+                "source_support": "Die Quelle belegt begrenzte Polizeiangaben; eine spätere Aufklärung oder Schutzwirkung ist nicht belegt.",
+                "limitations": "Keine Daten zur Qualität künftiger Kommunikation oder zu tatsächlichem Vertrauen.",
+                "first_order": "Mögliche bessere Orientierung für Betroffene.",
+                "second_order": "Mögliche Stabilisierung des Sicherheitsgefühls und der Kooperation mit Ermittlungen.",
+                "third_order": "Mögliche Stärkung rechtsstaatlicher Korrekturfähigkeit bei nachvollziehbarer Aufklärung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle belegt bereits eingetretene Vertrauens- oder Schutzwirkungen; nur der bedingte Gegenpfad ist modellierbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Ungeklärte Motive könnten Spekulationen und Stigmatisierungen betroffener Betriebe oder Gruppen fördern.",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Offene Ermittlungsfragen können durch vereinfachende Deutungen gefüllt werden.",
+                "recipients": [
+                  "Anwohnerinnen",
+                  "Unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist möglich, aber ohne Publikumsnachweis schwach belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf das lokale Umfeld begrenzt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keine konkrete Stigmatisierung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Zuschreibungen ist unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Falsche Zuschreibungen können grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Betriebe könnten zusätzlich durch Deutungen belastet werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Effekt ist nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenze ist durch die Quelle belegt.",
+                  "reference_frame": "Schutz vor ungerechtfertigter Zuschreibung",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Öffentliche Kommunikation müsste mögliche Hintergründe unpräzise oder wiederholt ohne Einordnung verbreiten.",
+                "reference_space": "Lokale Öffentlichkeit in Köln und Umgebung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unbestätigte Motive werden als Tatsachen aufgenommen.",
+                "source_support": "Der WDR nennt Schutzgelderpressungen nur als möglichen Hintergrund und hält den Zusammenhang offen.",
+                "limitations": "Keine Daten zu Stigmatisierung oder Publikumsreaktionen.",
+                "first_order": "Mögliche Spekulation über Motive.",
+                "second_order": "Mögliche Zuschreibung gegenüber betroffenen Betrieben oder Gruppen.",
+                "third_order": "Mögliche Verschlechterung lokaler sozialer Beziehungen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für eingetretene Stigmatisierung; nur ein bedingtes Kommunikationsrisiko bleibt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Hauptpfad ist stärker als der positive Gegenpfad; Aufklärung und Schutz bleiben an künftige, unbelegte Bedingungen gebunden."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Wiederholte Schussmeldungen könnten die lokale Sicherheitswahrnehmung und den Schutzbedarf von Anwohnerinnen und Betrieben erhöhen.",
+              "direction": "mixed"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+                "direction": "negative",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "data_status": "observed",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Wohn-, Geschäfts- und Aufenthaltsorten",
+                "reference_space": "Betroffene Häuser, Geschäfte und gastronomische Betriebe in Köln und Umgebung",
+                "observed_at": "18.09.2026",
+                "temporal_status": "ongoing",
+                "mechanism": "Schüsse trafen laut Bericht Fassaden oder Fenster; die genaue Schadenshöhe ist nicht angegeben.",
+                "recipients": [
+                  "Anwohnerinnen",
+                  "Unternehmen"
+                ],
+                "time_horizon": "seit den jeweils berichteten Tatzeitpunkten",
+                "magnitude": 1,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen sind einzelne berichtete Tatorte.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Einschusslöcher zeigen konkrete Sachbeschädigung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Schäden wird nicht beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Sachschäden erscheinen grundsätzlich reparierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Wohn- und Geschäftsräume sind Schutz- und Arbeitsorte.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Sachschaden ist kein Systemnachweis.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt Sachschäden, aber keine Verletzung einer materiellen Schutzgrenze.",
+                  "reference_frame": "Schutz von Wohn- und Geschäftsräumen",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                },
+                "presentation": {
+                  "ringStatus": "emerging",
+                  "ringLabel": "Erste / laufende Wirkung",
+                  "magnitudeBars": 1,
+                  "directionLabel": "− laufende Wirkung",
+                  "shortPathLabel": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+              "direction": "negative",
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "data_status": "observed",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Wohn-, Geschäfts- und Aufenthaltsorten",
+              "reference_space": "Betroffene Häuser, Geschäfte und gastronomische Betriebe in Köln und Umgebung",
+              "observed_at": "18.09.2026",
+              "temporal_status": "ongoing",
+              "mechanism": "Schüsse trafen laut Bericht Fassaden oder Fenster; die genaue Schadenshöhe ist nicht angegeben.",
+              "recipients": [
+                "Anwohnerinnen",
+                "Unternehmen"
+              ],
+              "time_horizon": "seit den jeweils berichteten Tatzeitpunkten",
+              "magnitude": 1,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen sind einzelne berichtete Tatorte.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Einschusslöcher zeigen konkrete Sachbeschädigung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Schäden wird nicht beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Sachschäden erscheinen grundsätzlich reparierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Wohn- und Geschäftsräume sind Schutz- und Arbeitsorte.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Sachschaden ist kein Systemnachweis.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt Sachschäden, aber keine Verletzung einer materiellen Schutzgrenze.",
+                "reference_frame": "Schutz von Wohn- und Geschäftsräumen",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 1,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+            "display_direction": "negative",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand beschreibt keine ökologischen Schäden oder Umweltpfade. Ein eigenständiger Planetpfad ist für den definierten Raum und Zeitraum begründet vernachlässigbar.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Die Quelle beschreibt lokale Tatorte, Einschusslöcher und Patronenhülsen, aber keine Freisetzung, Flächenwirkung oder Veränderung ökologischer Funktionen. Weitergehende Umweltfolgen bleiben eine Wissensgrenze und werden nicht als Wirkung behauptet.",
+            "primary_paths": [
+              {
+                "label": "Keine eigenständige relevante ökologische Zustandsänderung ist aus den berichteten Schüssen ableitbar.",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Quelle beschreibt lokale Tatorte, aber keine Freisetzung, Flächenwirkung oder Veränderung ökologischer Funktionen.",
+                "recipients": [
+                  "Natur"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den definierten lokalen Wirkungsraum ist ein eigenständiger Umweltpfad begründet vernachlässigbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite wird beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität ist belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung wird genannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Veränderung ist festgestellt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine betroffene Natur oder Umwelt wird beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemtiefe ist erkennbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch die Quelle berührt.",
+                  "reference_frame": "Ökologische Unversehrtheit",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Zusätzliche, derzeit nicht belegte Umweltfolgen müssten auftreten.",
+                "reference_space": "Lokale Tatorte in Köln und Umgebung; ökologische Funktionen",
+                "time_horizon": "unbestimmt",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichteten Ereignisse bleiben auf die beschriebenen Sachschäden begrenzt.",
+                "source_support": "Die Quelle belegt Schüsse, Einschusslöcher und Patronenhülsen, aber keine Umweltveränderung.",
+                "limitations": "Keine Umweltmessungen und keine Angaben zu Stoffen, Flächen oder Ökosystemen.",
+                "first_order": "Keine belegte ökologische Zustandsänderung.",
+                "second_order": "Keine belegte ökologische Folge oder Rückkopplung.",
+                "third_order": "Keine belegte systemische Umweltwirkung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Wirkung im gelieferten Quellenbestand; zusätzliche Umweltfolgen bleiben unbelegt.",
+                "negligibility_rationale": "Die Quelle nennt ausschließlich lokale Gewalt- und Sachschadensbefunde, nicht aber ökologische Betroffenheit.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              },
+              {
+                "label": "Mögliche lokale Umweltfolgen bleiben offen, falls zusätzliche bislang nicht berichtete Schäden vorliegen.",
+                "direction": "open",
+                "type": "counter_path",
+                "mechanism": "Nicht berichtete Stoff-, Brand- oder Flächenschäden könnten theoretisch ökologische Funktionen betreffen.",
+                "recipients": [
+                  "Natur"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Ohne einen konkreten Umweltbefund ist der Pfad für den aktuellen Datensatz vernachlässigbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine betroffene ökologische Reichweite ist belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität ist belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Dauerwirkung ist beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Veränderung ist festgestellt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine konkrete Naturbetroffenheit ist genannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Kaskade ist erkennbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze ist belegt.",
+                  "reference_frame": "Ökologische Unversehrtheit",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Zusätzliche, im Quellenbestand nicht enthaltene Umweltbefunde wären erforderlich.",
+                "reference_space": "Tatorte in Köln und Umgebung",
+                "time_horizon": "unbestimmt",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der gelieferte Bericht enthält keine weiteren Umweltangaben.",
+                "source_support": "Der Bericht nennt keine ökologischen Folgen.",
+                "limitations": "Die Textauswahl ist unvollständig und enthält keine Umweltprüfung.",
+                "first_order": "Keine belegte Umweltveränderung.",
+                "second_order": "Keine belegte ökologische Folge.",
+                "third_order": "Keine belegte systemische Umweltwirkung.",
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung findet keinen Umweltbefund; der Pfad bleibt eine Wissensgrenze und wird nicht als Wirkung behauptet.",
+                "negligibility_rationale": "Der hypothetische Umweltpfad hat keinen quellengebundenen Ausgangsbefund.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keine vergleichbar starken ökologischen Hauptpfade; die berichteten lokalen Sachschäden tragen keinen eigenständigen Umweltpfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine eigenständige relevante ökologische Zustandsänderung ist aus den berichteten Schüssen ableitbar.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine eigenständige relevante ökologische Zustandsänderung ist aus den berichteten Schüssen ableitbar.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Bericht belegt eine Informationslücke und eine offene Ermittlungsfrage, aber keine tatsächliche Vertrauens- oder Institutionenwirkung. Modellierbar ist ein begrenztes, bedingtes Informationsrisiko.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Begrenzte Informationen bei wiederholten Tatmeldungen können Nachfrage nach Einordnung und Zweifel an der Gefahrenabwehr verstärken. Nachvollziehbare spätere Aufklärung könnte gegensteuern, ist aber nicht belegt. Eine eingetretene demokratische Wirkung wird nicht behauptet.",
+            "primary_paths": [
+              {
+                "label": "Anhaltende begrenzte Informationen könnten Vertrauen in die öffentliche Gefahrenabwehr und die Einordnung der Lage belasten.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Unvollständige behördliche Angaben bei wiederholten Tatmeldungen können Unsicherheit und Nachfrage nach Erklärungen verstärken.",
+                "recipients": [
+                  "Anwohnerinnen",
+                  "Öffentlichkeit",
+                  "staatliche Stellen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist möglich, aber ohne Publikums- oder Vertrauensdaten niedrig bis moderat einzuschätzen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die lokale Öffentlichkeit kann mehrere betroffene Orte umfassen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keine konkrete Vertrauensänderung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Chronologie erstreckt sich über mehrere Monate.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen kann durch Aufklärung grundsätzlich wiederhergestellt werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Unsicherheit belastet besonders direkt betroffene Anwohnerinnen und Betriebe.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Information zu institutionellem Vertrauen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt belegt.",
+                  "reference_frame": "Transparente und rechtsstaatliche Gefahrenabwehr",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Informationslücke müsste andauern und durch weitere unklare Tatmeldungen verstärkt werden.",
+                "reference_space": "Lokale Öffentlichkeit und Vertrauen in Gefahrenabwehr",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Menschen bewerten die begrenzte Kommunikation als mangelnde Aufklärung statt als Ermittlungsnotwendigkeit.",
+                "source_support": "Der WDR berichtet über begrenzte Polizeiangaben und einen unklaren Zusammenhang.",
+                "limitations": "Kein Vertrauensmaß, keine Befragung und keine unabhängige institutionelle Bewertung.",
+                "first_order": "Mögliche steigende Nachfrage nach Informationen.",
+                "second_order": "Mögliche Belastung des Vertrauens in behördliche Kommunikation.",
+                "third_order": "Mögliche Verfestigung eines Narrativs institutioneller Unfähigkeit bei ausbleibender Aufklärung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für bereits verändertes Vertrauen oder demokratische Beteiligung; nur ein bedingtes Informationsrisiko ist modellierbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Nachvollziehbare Ermittlungsinformationen könnten die öffentliche Einordnung verbessern und demokratische Korrekturfähigkeit stützen.",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Transparente, belastbare Informationen ermöglichen Prüfung, Korrektur und verhältnismäßige öffentliche Reaktion.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "staatliche Stellen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Nutzen bleibt an künftige, derzeit nicht belegte Information gebunden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Behördliche Informationen könnten die lokale Öffentlichkeit erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Information allein beseitigt keine mögliche Gefahrenlage.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines Vertrauenseffekts bleibt offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Informationsbedingte Orientierung ist grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Direkt Betroffene sind besonders auf verlässliche Einordnung angewiesen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Rechenschaft und institutionelles Vertrauen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der positive Pfad betrifft institutionelle Qualität, nicht eine festgestellte Schutzgrenze.",
+                  "reference_frame": "Rechtsstaatliche Rechenschaft und Informationszugang",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Ermittlungsinformationen müssten rechtzeitig, belastbar und mit dem Schutz laufender Ermittlungen vereinbar veröffentlicht werden.",
+                "reference_space": "Lokale demokratische Öffentlichkeit und Gefahrenabwehr",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Öffentlichkeit und Medien können neue Informationen nachvollziehen und von Spekulationen unterscheiden.",
+                "source_support": "Die Quelle zeigt die bestehende Informationsbegrenzung, belegt aber keine spätere Aufklärung.",
+                "limitations": "Keine Daten zu Qualität, Reichweite oder Wirkung künftiger Kommunikation.",
+                "first_order": "Mögliche bessere Einordnung des Geschehens.",
+                "second_order": "Mögliche Stärkung von Rechenschaft und Vertrauen.",
+                "third_order": "Mögliche Verbesserung demokratischer Korrekturfähigkeit bei überprüfbarer Aufklärung.",
+                "research_pass": "second_pass",
+                "research_result": "Der Bericht belegt keine eingetretene positive Institutionenwirkung; der Pfad ist ausschließlich bedingt modelliert.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Wiederholte, unvollständig eingeordnete Berichte könnten vereinfachte Sicherheitsnarrative und Polarisierung fördern.",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wiederholung eines Bedrohungsframes bei offener Ursachenlage kann die öffentliche Debatte verengen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Anwohnerinnen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein Diskursrisiko ist plausibel, aber weder Reichweite noch Eintritt sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Diskurseffekt bleibt zunächst lokal.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine Polarisierung ist beobachtet oder gemessen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines möglichen Frames ist offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Öffentliche Deutungen können durch neue Belege korrigiert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Direkt betroffene Gruppen sind für Zuschreibungen besonders verletzlich.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Systemeffekt ist nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine demokratische Schutzgrenze ist durch die Quelle konkret verletzt belegt.",
+                  "reference_frame": "Offene und überprüfbare öffentliche Debatte",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Weitere Berichte müssten den Bedrohungsbegriff wiederholen, ohne neue belastbare Einordnung zu liefern.",
+                "reference_space": "Lokale öffentliche Debatte",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung wird als Bestätigung einer umfassenden Gefahrenlage wahrgenommen.",
+                "source_support": "Der Bericht verwendet die Formulierung einer Gewaltserie und beschreibt offene Ermittlungen.",
+                "limitations": "Keine Diskursanalyse, keine Publikumsdaten und keine unabhängige Medienvergleichsbasis.",
+                "first_order": "Mögliche stärkere Aufmerksamkeit für Sicherheitsfragen.",
+                "second_order": "Mögliche Verengung der Debatte auf harte Schutzforderungen.",
+                "third_order": "Mögliche Polarisierung oder Normalisierung dauerhafter Bedrohungsframes.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Diskurs- oder Publikumsforschung im Quellenbestand; das Risiko bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Informations- und Diskurspfad ist stärker als der positive Gegenpfad; Aufklärung bleibt an künftige, unbelegte Bedingungen gebunden."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Anhaltende begrenzte Informationen könnten Vertrauen in die öffentliche Gefahrenabwehr und die Einordnung der Lage belasten.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Anhaltende begrenzte Informationen könnten Vertrauen in die öffentliche Gefahrenabwehr und die Einordnung der Lage belasten.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+            "direction": "negative",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "data_status": "observed",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Wohn-, Geschäfts- und Aufenthaltsorten",
+            "reference_space": "Betroffene Häuser, Geschäfte und gastronomische Betriebe in Köln und Umgebung",
+            "observed_at": "18.09.2026",
+            "temporal_status": "ongoing",
+            "mechanism": "Schüsse trafen laut Bericht Fassaden oder Fenster; die genaue Schadenshöhe ist nicht angegeben.",
+            "recipients": [
+              "Anwohnerinnen",
+              "Unternehmen"
+            ],
+            "time_horizon": "seit den jeweils berichteten Tatzeitpunkten",
+            "magnitude": 1,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Betroffen sind einzelne berichtete Tatorte.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Einschusslöcher zeigen konkrete Sachbeschädigung.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer der Schäden wird nicht beschrieben.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Sachschäden erscheinen grundsätzlich reparierbar.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Wohn- und Geschäftsräume sind Schutz- und Arbeitsorte.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Ein lokaler Sachschaden ist kein Systemnachweis.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die Quelle belegt Sachschäden, aber keine Verletzung einer materiellen Schutzgrenze.",
+              "reference_frame": "Schutz von Wohn- und Geschäftsräumen",
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T16:11:53.847Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "wdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Der WDR-Bericht trägt die berichteten Tatorte, Einschusslöcher, begrenzten Polizeiangaben und die offene Frage eines Zusammenhangs."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Keine unabhängige Evidenz für tatsächliche Verhaltens- oder Gesundheitsfolgen; Sicherheits- und Schutzfolgen sind nur bedingt plausibel modellierbar.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Wiederholte Berichte über Schüsse an Wohn- und Geschäftsorten können lokal verunsichern und Schutzbedarf erhöhen. Ein positiver Gegenpfad durch Aufklärung bleibt möglich, ist aber nicht belegt und schwächer. Verletzte oder eingetretene gesundheitliche Folgen sind nicht nachgewiesen.",
+          "primary_paths": [
+            {
+              "label": "Wiederholte Schussmeldungen könnten die lokale Sicherheitswahrnehmung und den Schutzbedarf von Anwohnerinnen und Betrieben erhöhen.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wahrnehmung wiederholter Gewalt kann Vorsicht, Schutzvorkehrungen und Nachfrage nach Gefahrenabwehr verstärken.",
+              "recipients": [
+                "Anwohnerinnen",
+                "Beschäftigte",
+                "Unternehmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Eine lokale Wirkung ist plausibel, Umfang und Dauer bleiben wegen fehlender Verhaltens- und Gesundheitsdaten offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere lokale Tatorte erweitern den möglichen Betroffenenkreis.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Schüsse auf bewohnte und gewerbliche Orte können stark verunsichern.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die berichtete Chronologie reicht über mehrere Monate.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Sicherheitsverhalten und Vertrauen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Wohnende und Beschäftigte an Tatorten sind besonders exponiert.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Wahrnehmung zu Schutz- und Ermittlungsbedarf.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung von Leben oder Gesundheit ist nicht belegt.",
+                "reference_frame": "Schutz von Leben, Gesundheit und sicherem Aufenthalt",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Weitere Tatmeldungen oder anhaltende Unklarheit müssten den wahrgenommenen Handlungsdruck aufrechterhalten.",
+              "reference_space": "Köln und Umgebung; lokale Sicherheitswahrnehmung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Betroffene nehmen die Berichte wahr und passen ihr Sicherheitsverhalten an.",
+              "source_support": "Der WDR belegt mehrere berichtete Tatorte und begrenzte Polizeiangaben, nicht eine spätere Verhaltensänderung.",
+              "limitations": "Keine Publikums-, Verhaltens- oder Gesundheitsdaten; der Quellenauszug ist unvollständig.",
+              "first_order": "Mögliche erhöhte Vorsicht und Schutzvorkehrungen an betroffenen Orten.",
+              "second_order": "Möglicher zusätzlicher Schutz- und Ermittlungsbedarf bei Behörden und Betrieben.",
+              "third_order": "Mögliche dauerhafte Verunsicherung einzelner Viertel, falls die Unklarheit anhält.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für tatsächliche Verhaltens- oder Gesundheitsfolgen; der Pfad bleibt bedingt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Transparente Aufklärung und verhältnismäßige Schutzmaßnahmen könnten Sicherheit und Vertrauen betroffener Menschen stützen.",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Verlässliche Informationen und erreichbare Gefahrenabwehr können Unsicherheit begrenzen und Handlungsfähigkeit erhöhen.",
+              "recipients": [
+                "Anwohnerinnen",
+                "Beschäftigte",
+                "Unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der positive Pfad hängt vollständig von künftiger Information und Schutzumsetzung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Informationen könnten mehrere lokale Betroffenengruppen erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Orientierung kann Unsicherheit begrenzen, ersetzt aber keinen Schutz.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Vertrauenswirkung ist offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Informationsbedingte Orientierung ist grundsätzlich revidierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene an Tatorten benötigen besonders klare Informationen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt überwiegend lokal und institutionell begrenzt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein positiver Schutzpfad überschreitet keine festgestellte Schutzgrenze.",
+                "reference_frame": "Zugang zu verlässlicher Sicherheitsinformation",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Behörden müssten belastbare Informationen bereitstellen und Schutzmaßnahmen wirksam sowie verhältnismäßig umsetzen.",
+              "reference_space": "Köln und Umgebung; lokale Sicherheits- und Informationslage",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Informationen sind verständlich, rechtzeitig und für Betroffene erreichbar.",
+              "source_support": "Die Quelle belegt begrenzte Polizeiangaben; eine spätere Aufklärung oder Schutzwirkung ist nicht belegt.",
+              "limitations": "Keine Daten zur Qualität künftiger Kommunikation oder zu tatsächlichem Vertrauen.",
+              "first_order": "Mögliche bessere Orientierung für Betroffene.",
+              "second_order": "Mögliche Stabilisierung des Sicherheitsgefühls und der Kooperation mit Ermittlungen.",
+              "third_order": "Mögliche Stärkung rechtsstaatlicher Korrekturfähigkeit bei nachvollziehbarer Aufklärung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle belegt bereits eingetretene Vertrauens- oder Schutzwirkungen; nur der bedingte Gegenpfad ist modellierbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Ungeklärte Motive könnten Spekulationen und Stigmatisierungen betroffener Betriebe oder Gruppen fördern.",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Offene Ermittlungsfragen können durch vereinfachende Deutungen gefüllt werden.",
+              "recipients": [
+                "Anwohnerinnen",
+                "Unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist möglich, aber ohne Publikumsnachweis schwach belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf das lokale Umfeld begrenzt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keine konkrete Stigmatisierung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Zuschreibungen ist unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Falsche Zuschreibungen können grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Betriebe könnten zusätzlich durch Deutungen belastet werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Effekt ist nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenze ist durch die Quelle belegt.",
+                "reference_frame": "Schutz vor ungerechtfertigter Zuschreibung",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Öffentliche Kommunikation müsste mögliche Hintergründe unpräzise oder wiederholt ohne Einordnung verbreiten.",
+              "reference_space": "Lokale Öffentlichkeit in Köln und Umgebung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unbestätigte Motive werden als Tatsachen aufgenommen.",
+              "source_support": "Der WDR nennt Schutzgelderpressungen nur als möglichen Hintergrund und hält den Zusammenhang offen.",
+              "limitations": "Keine Daten zu Stigmatisierung oder Publikumsreaktionen.",
+              "first_order": "Mögliche Spekulation über Motive.",
+              "second_order": "Mögliche Zuschreibung gegenüber betroffenen Betrieben oder Gruppen.",
+              "third_order": "Mögliche Verschlechterung lokaler sozialer Beziehungen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für eingetretene Stigmatisierung; nur ein bedingtes Kommunikationsrisiko bleibt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Hauptpfad ist stärker als der positive Gegenpfad; Aufklärung und Schutz bleiben an künftige, unbelegte Bedingungen gebunden."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Wiederholte Schussmeldungen könnten die lokale Sicherheitswahrnehmung und den Schutzbedarf von Anwohnerinnen und Betrieben erhöhen.",
+            "direction": "mixed"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+              "direction": "negative",
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "data_status": "observed",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Wohn-, Geschäfts- und Aufenthaltsorten",
+              "reference_space": "Betroffene Häuser, Geschäfte und gastronomische Betriebe in Köln und Umgebung",
+              "observed_at": "18.09.2026",
+              "temporal_status": "ongoing",
+              "mechanism": "Schüsse trafen laut Bericht Fassaden oder Fenster; die genaue Schadenshöhe ist nicht angegeben.",
+              "recipients": [
+                "Anwohnerinnen",
+                "Unternehmen"
+              ],
+              "time_horizon": "seit den jeweils berichteten Tatzeitpunkten",
+              "magnitude": 1,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen sind einzelne berichtete Tatorte.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Einschusslöcher zeigen konkrete Sachbeschädigung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Schäden wird nicht beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Sachschäden erscheinen grundsätzlich reparierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Wohn- und Geschäftsräume sind Schutz- und Arbeitsorte.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Sachschaden ist kein Systemnachweis.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt Sachschäden, aber keine Verletzung einer materiellen Schutzgrenze.",
+                "reference_frame": "Schutz von Wohn- und Geschäftsräumen",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+            "direction": "negative",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "data_status": "observed",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Wohn-, Geschäfts- und Aufenthaltsorten",
+            "reference_space": "Betroffene Häuser, Geschäfte und gastronomische Betriebe in Köln und Umgebung",
+            "observed_at": "18.09.2026",
+            "temporal_status": "ongoing",
+            "mechanism": "Schüsse trafen laut Bericht Fassaden oder Fenster; die genaue Schadenshöhe ist nicht angegeben.",
+            "recipients": [
+              "Anwohnerinnen",
+              "Unternehmen"
+            ],
+            "time_horizon": "seit den jeweils berichteten Tatzeitpunkten",
+            "magnitude": 1,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Betroffen sind einzelne berichtete Tatorte.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Einschusslöcher zeigen konkrete Sachbeschädigung.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer der Schäden wird nicht beschrieben.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Sachschäden erscheinen grundsätzlich reparierbar.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Wohn- und Geschäftsräume sind Schutz- und Arbeitsorte.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Ein lokaler Sachschaden ist kein Systemnachweis.",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die Quelle belegt Sachschäden, aber keine Verletzung einer materiellen Schutzgrenze.",
+              "reference_frame": "Schutz von Wohn- und Geschäftsräumen",
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            },
+            "presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 1,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 1,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "An mehreren Tatorten wurden laut Bericht Einschusslöcher und teilweise Patronenhülsen festgestellt; dies belegt Sachschäden an betroffenen Fassaden oder Fenstern, nicht deren vollständiges Ausmaß.",
+          "display_direction": "negative",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand beschreibt keine ökologischen Schäden oder Umweltpfade. Ein eigenständiger Planetpfad ist für den definierten Raum und Zeitraum begründet vernachlässigbar.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Die Quelle beschreibt lokale Tatorte, Einschusslöcher und Patronenhülsen, aber keine Freisetzung, Flächenwirkung oder Veränderung ökologischer Funktionen. Weitergehende Umweltfolgen bleiben eine Wissensgrenze und werden nicht als Wirkung behauptet.",
+          "primary_paths": [
+            {
+              "label": "Keine eigenständige relevante ökologische Zustandsänderung ist aus den berichteten Schüssen ableitbar.",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Quelle beschreibt lokale Tatorte, aber keine Freisetzung, Flächenwirkung oder Veränderung ökologischer Funktionen.",
+              "recipients": [
+                "Natur"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den definierten lokalen Wirkungsraum ist ein eigenständiger Umweltpfad begründet vernachlässigbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite wird beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität ist belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung wird genannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Veränderung ist festgestellt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine betroffene Natur oder Umwelt wird beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemtiefe ist erkennbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch die Quelle berührt.",
+                "reference_frame": "Ökologische Unversehrtheit",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Zusätzliche, derzeit nicht belegte Umweltfolgen müssten auftreten.",
+              "reference_space": "Lokale Tatorte in Köln und Umgebung; ökologische Funktionen",
+              "time_horizon": "unbestimmt",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichteten Ereignisse bleiben auf die beschriebenen Sachschäden begrenzt.",
+              "source_support": "Die Quelle belegt Schüsse, Einschusslöcher und Patronenhülsen, aber keine Umweltveränderung.",
+              "limitations": "Keine Umweltmessungen und keine Angaben zu Stoffen, Flächen oder Ökosystemen.",
+              "first_order": "Keine belegte ökologische Zustandsänderung.",
+              "second_order": "Keine belegte ökologische Folge oder Rückkopplung.",
+              "third_order": "Keine belegte systemische Umweltwirkung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Wirkung im gelieferten Quellenbestand; zusätzliche Umweltfolgen bleiben unbelegt.",
+              "negligibility_rationale": "Die Quelle nennt ausschließlich lokale Gewalt- und Sachschadensbefunde, nicht aber ökologische Betroffenheit.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            },
+            {
+              "label": "Mögliche lokale Umweltfolgen bleiben offen, falls zusätzliche bislang nicht berichtete Schäden vorliegen.",
+              "direction": "open",
+              "type": "counter_path",
+              "mechanism": "Nicht berichtete Stoff-, Brand- oder Flächenschäden könnten theoretisch ökologische Funktionen betreffen.",
+              "recipients": [
+                "Natur"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Ohne einen konkreten Umweltbefund ist der Pfad für den aktuellen Datensatz vernachlässigbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine betroffene ökologische Reichweite ist belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität ist belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Dauerwirkung ist beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Veränderung ist festgestellt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine konkrete Naturbetroffenheit ist genannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Kaskade ist erkennbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze ist belegt.",
+                "reference_frame": "Ökologische Unversehrtheit",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Zusätzliche, im Quellenbestand nicht enthaltene Umweltbefunde wären erforderlich.",
+              "reference_space": "Tatorte in Köln und Umgebung",
+              "time_horizon": "unbestimmt",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der gelieferte Bericht enthält keine weiteren Umweltangaben.",
+              "source_support": "Der Bericht nennt keine ökologischen Folgen.",
+              "limitations": "Die Textauswahl ist unvollständig und enthält keine Umweltprüfung.",
+              "first_order": "Keine belegte Umweltveränderung.",
+              "second_order": "Keine belegte ökologische Folge.",
+              "third_order": "Keine belegte systemische Umweltwirkung.",
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung findet keinen Umweltbefund; der Pfad bleibt eine Wissensgrenze und wird nicht als Wirkung behauptet.",
+              "negligibility_rationale": "Der hypothetische Umweltpfad hat keinen quellengebundenen Ausgangsbefund.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keine vergleichbar starken ökologischen Hauptpfade; die berichteten lokalen Sachschäden tragen keinen eigenständigen Umweltpfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine eigenständige relevante ökologische Zustandsänderung ist aus den berichteten Schüssen ableitbar.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine eigenständige relevante ökologische Zustandsänderung ist aus den berichteten Schüssen ableitbar.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Bericht belegt eine Informationslücke und eine offene Ermittlungsfrage, aber keine tatsächliche Vertrauens- oder Institutionenwirkung. Modellierbar ist ein begrenztes, bedingtes Informationsrisiko.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Begrenzte Informationen bei wiederholten Tatmeldungen können Nachfrage nach Einordnung und Zweifel an der Gefahrenabwehr verstärken. Nachvollziehbare spätere Aufklärung könnte gegensteuern, ist aber nicht belegt. Eine eingetretene demokratische Wirkung wird nicht behauptet.",
+          "primary_paths": [
+            {
+              "label": "Anhaltende begrenzte Informationen könnten Vertrauen in die öffentliche Gefahrenabwehr und die Einordnung der Lage belasten.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Unvollständige behördliche Angaben bei wiederholten Tatmeldungen können Unsicherheit und Nachfrage nach Erklärungen verstärken.",
+              "recipients": [
+                "Anwohnerinnen",
+                "Öffentlichkeit",
+                "staatliche Stellen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist möglich, aber ohne Publikums- oder Vertrauensdaten niedrig bis moderat einzuschätzen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die lokale Öffentlichkeit kann mehrere betroffene Orte umfassen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keine konkrete Vertrauensänderung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Chronologie erstreckt sich über mehrere Monate.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen kann durch Aufklärung grundsätzlich wiederhergestellt werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Unsicherheit belastet besonders direkt betroffene Anwohnerinnen und Betriebe.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Information zu institutionellem Vertrauen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt belegt.",
+                "reference_frame": "Transparente und rechtsstaatliche Gefahrenabwehr",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Informationslücke müsste andauern und durch weitere unklare Tatmeldungen verstärkt werden.",
+              "reference_space": "Lokale Öffentlichkeit und Vertrauen in Gefahrenabwehr",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Menschen bewerten die begrenzte Kommunikation als mangelnde Aufklärung statt als Ermittlungsnotwendigkeit.",
+              "source_support": "Der WDR berichtet über begrenzte Polizeiangaben und einen unklaren Zusammenhang.",
+              "limitations": "Kein Vertrauensmaß, keine Befragung und keine unabhängige institutionelle Bewertung.",
+              "first_order": "Mögliche steigende Nachfrage nach Informationen.",
+              "second_order": "Mögliche Belastung des Vertrauens in behördliche Kommunikation.",
+              "third_order": "Mögliche Verfestigung eines Narrativs institutioneller Unfähigkeit bei ausbleibender Aufklärung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für bereits verändertes Vertrauen oder demokratische Beteiligung; nur ein bedingtes Informationsrisiko ist modellierbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Nachvollziehbare Ermittlungsinformationen könnten die öffentliche Einordnung verbessern und demokratische Korrekturfähigkeit stützen.",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Transparente, belastbare Informationen ermöglichen Prüfung, Korrektur und verhältnismäßige öffentliche Reaktion.",
+              "recipients": [
+                "Öffentlichkeit",
+                "staatliche Stellen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Nutzen bleibt an künftige, derzeit nicht belegte Information gebunden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Behördliche Informationen könnten die lokale Öffentlichkeit erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Information allein beseitigt keine mögliche Gefahrenlage.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines Vertrauenseffekts bleibt offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Informationsbedingte Orientierung ist grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Direkt Betroffene sind besonders auf verlässliche Einordnung angewiesen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Rechenschaft und institutionelles Vertrauen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der positive Pfad betrifft institutionelle Qualität, nicht eine festgestellte Schutzgrenze.",
+                "reference_frame": "Rechtsstaatliche Rechenschaft und Informationszugang",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Ermittlungsinformationen müssten rechtzeitig, belastbar und mit dem Schutz laufender Ermittlungen vereinbar veröffentlicht werden.",
+              "reference_space": "Lokale demokratische Öffentlichkeit und Gefahrenabwehr",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Öffentlichkeit und Medien können neue Informationen nachvollziehen und von Spekulationen unterscheiden.",
+              "source_support": "Die Quelle zeigt die bestehende Informationsbegrenzung, belegt aber keine spätere Aufklärung.",
+              "limitations": "Keine Daten zu Qualität, Reichweite oder Wirkung künftiger Kommunikation.",
+              "first_order": "Mögliche bessere Einordnung des Geschehens.",
+              "second_order": "Mögliche Stärkung von Rechenschaft und Vertrauen.",
+              "third_order": "Mögliche Verbesserung demokratischer Korrekturfähigkeit bei überprüfbarer Aufklärung.",
+              "research_pass": "second_pass",
+              "research_result": "Der Bericht belegt keine eingetretene positive Institutionenwirkung; der Pfad ist ausschließlich bedingt modelliert.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Wiederholte, unvollständig eingeordnete Berichte könnten vereinfachte Sicherheitsnarrative und Polarisierung fördern.",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wiederholung eines Bedrohungsframes bei offener Ursachenlage kann die öffentliche Debatte verengen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Anwohnerinnen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein Diskursrisiko ist plausibel, aber weder Reichweite noch Eintritt sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Diskurseffekt bleibt zunächst lokal.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine Polarisierung ist beobachtet oder gemessen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines möglichen Frames ist offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Öffentliche Deutungen können durch neue Belege korrigiert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Direkt betroffene Gruppen sind für Zuschreibungen besonders verletzlich.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Systemeffekt ist nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine demokratische Schutzgrenze ist durch die Quelle konkret verletzt belegt.",
+                "reference_frame": "Offene und überprüfbare öffentliche Debatte",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Weitere Berichte müssten den Bedrohungsbegriff wiederholen, ohne neue belastbare Einordnung zu liefern.",
+              "reference_space": "Lokale öffentliche Debatte",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung wird als Bestätigung einer umfassenden Gefahrenlage wahrgenommen.",
+              "source_support": "Der Bericht verwendet die Formulierung einer Gewaltserie und beschreibt offene Ermittlungen.",
+              "limitations": "Keine Diskursanalyse, keine Publikumsdaten und keine unabhängige Medienvergleichsbasis.",
+              "first_order": "Mögliche stärkere Aufmerksamkeit für Sicherheitsfragen.",
+              "second_order": "Mögliche Verengung der Debatte auf harte Schutzforderungen.",
+              "third_order": "Mögliche Polarisierung oder Normalisierung dauerhafter Bedrohungsframes.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Diskurs- oder Publikumsforschung im Quellenbestand; das Risiko bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Informations- und Diskurspfad ist stärker als der positive Gegenpfad; Aufklärung bleibt an künftige, unbelegte Bedingungen gebunden."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Anhaltende begrenzte Informationen könnten Vertrauen in die öffentliche Gefahrenabwehr und die Einordnung der Lage belasten.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Anhaltende begrenzte Informationen könnten Vertrauen in die öffentliche Gefahrenabwehr und die Einordnung der Lage belasten.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Kombination aus wiederholten Schüssen, einem Bedrohungsframe und offenen Ermittlungen kann die lokale Sicherheitswahrnehmung prägen.",
+        "factual_core": "Der WDR berichtet über mehrere Schüsse und weitere Gewalttaten in Köln und Umgebung; die Polizei macht nur begrenzte Angaben.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der WDR-Bericht beschreibt mehrere Tatorte und eine Chronologie von Gewalttaten."
+          ],
+          "actor_claims": [
+            "Der Bericht gibt die Zurückhaltung der Polizei aus ermittlungstaktischen Gründen wieder."
+          ],
+          "open": [
+            "Zusammenhang, Motiv, Täter, Verletzte und tatsächliche Reichweite der Gefahrenlage"
+          ]
+        },
+        "attribution": {
+          "frame_source": "wdr-nachrichten",
+          "speaker": "WDR-Bericht; Polizei als zitierte Behörde",
+          "original_term": "Serie von Gewalt",
+          "usage_type": "paraphrase",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Serie von Gewalt",
+          "origin_in_story": "wdr-nachrichten",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Serie von Gewalt",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Wiederholte Schüsse und weitere Gewalttaten werden als zusammenhängende Sicherheitslage lesbar.",
+          "implied_cause": "Ein möglicher Zusammenhang wird nahegelegt, aber nicht festgestellt.",
+          "implied_responsibility": "Keine Verantwortung wird belegt zugeschrieben.",
+          "implied_threat": "Lokale Betriebe, Häuser und Anwohner könnten weiter gefährdet sein.",
+          "implied_solution_space": "Ermittlungen, Aufklärung und Schutzmaßnahmen erscheinen als naheliegende Reaktionen.",
+          "material_omissions": [
+            "Unabhängige Bestätigung durch eine zweite Quelle",
+            "Vollständige Angaben zu Verletzten, Tätern und Motiv"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Der vorliegende Quellenbestand belegt keinen parteipolitischen oder politischen Akteurskontext."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Lokale Sicherheitsdebatten und Berichte über organisierte Gewalt",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "medium",
+          "trust_effect_potential": "open",
+          "discourse_effect_potential": "Die Formulierung kann Aufmerksamkeit und Sicherheitsforderungen verstärken, während die offene Beweislage Spekulationen begünstigen kann."
+        },
+        "impact_path": {
+          "first_order": "Berichte über wiederholte Schüsse könnten die lokale Wahrnehmung von Sicherheit und Bedrohung verändern.",
+          "second_order": "Wiederholte Darstellung könnte Forderungen nach mehr Schutz und Ermittlungsinformationen verstärken.",
+          "third_order": "Bei anhaltender Unklarheit könnte sich ein verfestigtes Bedrohungsnarrativ über einzelne Orte oder Gruppen entwickeln."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Der WDR beschreibt mehrere Tatorte und eine Chronologie.",
+          "what_is_inferred": "Eine zusammenhängende Sicherheitslage ist als Deutung möglich, aber nicht belegt.",
+          "what_is_open": "Nur eine journalistische Quelle und unvollständige Textauswahl; kein Publikums- oder Verhaltensnachweis",
+          "facts": [
+            "Der WDR beschreibt mehrere Tatorte und eine Chronologie."
+          ],
+          "observations": [
+            "Die Polizei hält sich laut Bericht mit Informationen zurück."
+          ],
+          "inferences": [
+            "Eine zusammenhängende Sicherheitslage ist als Deutung möglich, aber nicht belegt."
+          ],
+          "impact_potentials": [
+            "Mögliche Veränderung von Sicherheitswahrnehmung und Schutzforderungen"
+          ],
+          "impact_risks": [
+            "Spekulationen über Täter, Motiv oder betroffene Gruppen"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle und unvollständige Textauswahl; kein Publikums- oder Verhaltensnachweis"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der WDR berichtet über mehrere Schüsse und weitere Gewalttaten in Köln und Umgebung. Der Bericht nennt unter anderem Häuser, Cafés und Juweliergeschäfte als Tatorte und beschreibt Einschusslöcher oder Patronenhülsen. Die Polizei hält sich demnach aus ermittlungstaktischen Gründen mit Informationen zurück. Ob die Fälle zusammenhängen, ist offen. Auch ein möglicher Hintergrund durch Schutzgelderpressungen wird nur als Möglichkeit genannt. Die Meldung kann die Wahrnehmung örtlicher Sicherheit beeinflussen und Forderungen nach Schutz oder Aufklärung verstärken. Das ist ein Wirkungspotenzial, kein Nachweis einer bereits eingetretenen gesellschaftlichen Wirkung. Es gibt im vorliegenden Quellenbestand keine unabhängige Bestätigung zu Verletzten, Tätern, Motiv, Publikumsreaktionen oder verändertem Verhalten.",
+        "editorial_assessment": "Der WDR berichtet über mehrere Schüsse und weitere Gewalttaten in Köln und Umgebung. Der Bericht nennt unter anderem Häuser, Cafés und Juweliergeschäfte als Tatorte und beschreibt Einschusslöcher oder Patronenhülsen. Die Polizei hält sich demnach aus ermittlungstaktischen Gründen mit Informationen zurück. Ob die Fälle zusammenhängen, ist offen. Auch ein möglicher Hintergrund durch Schutzgelderpressungen wird nur als Möglichkeit genannt. Die Meldung kann die Wahrnehmung örtlicher Sicherheit beeinflussen und Forderungen nach Schutz oder Aufklärung verstärken. Das ist ein Wirkungspotenzial, kein Nachweis einer bereits eingetretenen gesellschaftlichen Wirkung. Es gibt im vorliegenden Quellenbestand keine unabhängige Bestätigung zu Verletzten, Tätern, Motiv, Publikumsreaktionen oder verändertem Verhalten.",
+        "fact_first_alternative": "Der WDR berichtet über mehrere Schüsse in Köln und Umgebung; die Polizei macht nur begrenzte Angaben, und ein Zusammenhang der Fälle ist nicht geklärt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "WDR berichtet über mehrere Schüsse in Köln und offene Ermittlungen",
+          "recommended_summary": "Der WDR beschreibt mehrere Tatorte in Köln und Umgebung. Zusammenhang, Motiv und Täter sind auf Grundlage des vorliegenden Berichts offen.",
+          "recommended_meta_description": "Der WDR berichtet über mehrere Schüsse in Köln und Umgebung. Die Polizei macht nur begrenzte Angaben; zentrale Ermittlungsfragen bleiben offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T16:08:40.131Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T15:10:36.000Z",
+      "last_updated": "2026-09-18T16:11:53.840Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d2a4f3475fa20a23fdfb",
+      "case_file": null,
+      "source_published_at": "2026-09-18T15:31:49.000Z",
+      "published_at": "2026-09-18T16:11:53.840Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen sind weitere Angaben der Polizei zu Verletzten, Verdächtigen, Tatmotiv und einem möglichen Zusammenhang der Fälle.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Polizeiangaben zu Opfern, Verdächtigen, Motiv oder Tatserie",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e196882f308dc67c",
+          "announced_at": "2026-09-18T15:31:49.000Z",
+          "follow_up_date": "2026-09-25T16:11:53.840Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/koeln/koeln-rheinland-schuesse-gewalt-polizei-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T15:31:49.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e0bb001050d68925",
       "title_image": {
