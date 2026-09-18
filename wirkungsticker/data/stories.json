@@ -2,8 +2,1048 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T08:07:34.527Z",
+  "updated_at": "2026-09-18T08:22:31.167Z",
   "stories": [
+    {
+      "story_id": "wt-73b3b73c6285aa6d",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-73b3b73c6285aa6d-47541480cd699f15-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-73b3b73c6285aa6d-22bde321348bacc9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-73b3b73c6285aa6d-15cf0ff115024840-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-73b3b73c6285aa6d-039ca805ce9bf978-source.png"
+        }
+      },
+      "slug": "polizeieinsatz-schusse-auf-kolner-pizzeria-und-wohnung-85aa6d",
+      "title": "Schüsse treffen Kölner Pizzeria und Wohnung; niemand verletzt",
+      "source_summary": "Der vorliegende Bericht beschreibt einen Polizeieinsatz in Köln. Demnach trafen mehrere Schüsse eine Pizzeria und eine Wohnung. In der Wohnung schlief ein zehnjähriges Kind; verletzt wurde laut dem Bericht niemand.\n\nAls aktueller Sachstand wird genannt, dass die Polizei ermittelt. Angaben zu Tatzeit, möglichen Verdächtigen, einem Motiv, Schäden oder dem genauen Ort innerhalb Kölns enthält der vorliegende Auszug nicht.\n\nDie Meldung beruht auf einer journalistischen Quelle. Eine unabhängige Bestätigung oder ein vollständiger Originalkontext liegen in der Akte nicht vor. Der Ereigniskern ist deshalb als vorläufiger Einzelquellenbericht einzuordnen.",
+      "summary": "In Köln trafen mehrere Schüsse eine Pizzeria und eine Wohnung, in der ein zehnjähriges Kind schlief. Verletzt wurde niemand; die Polizei ermittelt, weitere Hintergründe sind offen.",
+      "detail_summary": "Mehrere Schüsse trafen laut dem vorliegenden Bericht eine Pizzeria und eine Wohnung in Köln. In der Wohnung schlief ein zehnjähriges Kind, verletzt wurde niemand. Die Polizei ermittelt, doch Angaben zu Verdächtigen, Motiv, Schäden und Tatzeit fehlen. Nachrichtenwert hat der akute Sicherheitsfall; die Einordnung bleibt wegen der einzigen journalistischen Quelle vorläufig.",
+      "why_relevant": "Der Bericht beschreibt einen akuten Sicherheitsfall mit möglicher Gefährdung von Gästen und Bewohnern, darunter einem Kind. Die Hintergründe und das Ausmaß sind noch ungeklärt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über mehrere Schüsse auf eine Kölner Pizzeria und eine Wohnung",
+        "evaluation_target": {
+          "label": "lokaler Schusswaffenvorfall und seine möglichen Folgewirkungen",
+          "type": "event"
+        },
+        "baseline": "Lokales Umfeld ohne den berichteten Schusswaffenvorfall und ohne daraus folgende zusätzliche Verunsicherung oder Maßnahmen",
+        "counterfactual": "Ohne den Vorfall würden die unmittelbar betroffenen Räume voraussichtlich keiner vorfallsbezogenen Verunsicherung und keinen entsprechenden Ermittlungsmaßnahmen ausgesetzt sein.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Lokale öffentliche Sicherheit",
+          "Vertrauen in staatliche Ermittlungs- und Schutzfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Folgen für Bewohner, Beschäftigte, Gäste und insbesondere das im Bericht genannte Kind liegen im Bereich Sicherheit und Verunsicherung; Verletzungen wurden nicht berichtet.",
+            "planet": "Für Umwelt, Ressourcen oder Klima ist aus dem vorliegenden Ereignis kein belastbarer Wirkpfad ersichtlich; ein vernachlässigbarer Pfad wird modelliert.",
+            "democracy": "Mögliche Folgen betreffen Vertrauen in Ermittlungs- und Schutzinstitutionen sowie lokale Debatten; Richtung und Eintritt bleiben wegen der Einzelquelle offen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Der berichtete Vorfall kann kurzfristige Sicherheitswahrnehmungen und Ermittlungsaktivität im lokalen Umfeld verändern.",
+          "second_order": "Bei anhaltender Unklarheit könnten Vertrauen, Nutzung betroffener Orte oder Forderungen nach Schutzmaßnahmen beeinflusst werden; dies ist nicht beobachtet.",
+          "third_order": "Eine wiederholte oder politisierte Einordnung könnte lokale Sicherheitsdebatten und institutionelles Vertrauen prägen; ein solcher Pfad bleibt hypothetisch.",
+          "enablement": [],
+          "counter_evidence": [
+            "Niemand wurde laut der Quelle verletzt.",
+            "Es liegen keine Angaben zu Folgeschäden, Wiederholung oder überregionalen Auswirkungen vor."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor; eine unabhängige Bestätigung ist nicht belegt. Die Quelle trägt den Ereignisbericht, aber keinen Wirkungsnachweis.",
+          "institutional_status": "Die Polizei ermittelt laut Bericht. Ein weiterer rechtlicher oder institutioneller Status ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den Vorfall und das Ausbleiben gemeldeter Verletzungen, aber keine längerfristige Verunsicherung oder Verhaltensänderung. Der mögliche negative Pfad bleibt deshalb bedingt.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Schüsse auf eine Pizzeria und eine Wohnung könnten Menschen unmittelbar bedrohen oder verunsichern. Die mögliche Wirkung ist lokal und indirekt; der berichtete Ausbleib von Verletzungen begrenzt den belegten Schaden, nicht aber das ex ante modellierte Risiko.",
+            "primary_paths": [
+              {
+                "label": "Mögliche lokale Verunsicherung nach Schüssen auf öffentlich und privat genutzte Räume",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Der Vorfall könnte die wahrgenommene Sicherheit von Bewohnern, Beschäftigten und Gästen im Umfeld mindern.",
+                "recipients": [
+                  "Bewohnerinnen und Bewohner",
+                  "Beschäftigte und Gäste der betroffenen Orte",
+                  "das im Bericht genannte Kind und sein Haushalt"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 2,
+                  "rationale": "Die Reichweite ist lokal, die mögliche Intensität eines Schusswaffenvorfalls jedoch erheblich; Dauer und Übertragbarkeit sind unklar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen sein könnte vor allem das lokale Umfeld.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Schüsse auf eine Pizzeria und Wohnung markieren eine potenziell intensive Gefährdung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer der Verunsicherung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen und Nutzung könnten grundsätzlich wiederhergestellt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "In der Wohnung schlief ein Kind; besonders Schutzbedürftige sind denkbar betroffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer institutioneller Wandel ist aus dem Auszug nicht ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze wurde nicht verletzt festgestellt; der mögliche Risikopfad bleibt dennoch relevant.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad würde voraussetzen, dass der Vorfall im Umfeld bekannt wird und als persönliche oder lokale Bedrohung wahrgenommen wird.",
+                "reference_space": "Köln, insbesondere das Umfeld der betroffenen Pizzeria und Wohnung",
+                "time_horizon": "kurzfristig bis mittelfristig nach dem Vorfall",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die betroffenen Räume werden von Menschen genutzt und der Vorfall wird im Umfeld wahrgenommen.",
+                "source_support": "Die Quelle belegt Schüsse, die betroffenen Räume und ein schlafendes Kind; sie belegt keine Verunsicherung als Folge.",
+                "limitations": "Keine Daten zu tatsächlichen Reaktionen, Verletzungen, Sachschäden oder Dauer.",
+                "first_order": "Mögliche kurzfristige Verunsicherung und erhöhte Vorsicht im Umfeld.",
+                "second_order": "Mögliche Einschränkung der Nutzung betroffener Orte, falls Unsicherheit anhält.",
+                "third_order": "Mögliche lokale Sicherheitsdebatte bei wiederholter oder politisierter Bezugnahme; Eintritt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Reaktionen oder längerfristige Folgen; nur der bedingte lokale Sicherheits- und Verunsicherungspfad ist plausibel modellierbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es liegt kein vergleichbarer positiver Hauptpfad vor; die mögliche negative Sicherheitswirkung wird wegen der Quellenlage ausdrücklich als bedingt eingeordnet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche lokale Verunsicherung nach Schüssen auf öffentlich und privat genutzte Räume",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Verunsicherung nach Schüssen auf öffentlich und privat genutzte Räume",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der gelieferte Auszug enthält keine Angaben zu Umwelt-, Ressourcen- oder Klimafolgen. Ein belastbarer planetarer Wirkpfad ist für den beschriebenen lokalen Vorfall nicht erkennbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Für Umwelt und Klima nennt die Quelle keine Zustandsänderung. Ein eigenständiger planetarer Pfad ist im abgegrenzten Ereignisraum praktisch vernachlässigbar, solange keine zusätzlichen Informationen zu Bränden, Schadstoffen oder größeren Schäden vorliegen.",
+            "primary_paths": [
+              {
+                "label": "Kein eigenständiger planetarer Wirkpfad aus dem berichteten lokalen Schusswaffenvorfall",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Der Auszug beschreibt Schüsse auf Räume, nennt aber keine Umweltbeeinträchtigung oder ressourcenbezogene Veränderung.",
+                "recipients": [
+                  "lokales Ökosystem",
+                  "Umweltressourcen"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im gelieferten Sachverhalt gibt es keinen belastbaren Umweltmechanismus; mögliche Zusatzinformationen könnten die Einordnung ändern."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite ist im Auszug erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine Umweltintensität oder Kontamination wird berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist angegeben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzliche Umweltkomponente wird genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine planetare Systemtiefe ist aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird im Bericht berührt oder beschrieben.",
+                  "reference_frame": "Schutz von Umwelt und natürlichen Lebensgrundlagen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur zusätzliche Angaben zu Umwelt- oder Sachschäden könnten diesen Pfad verändern.",
+                "reference_space": "Lokales Umfeld des Ereignisses",
+                "time_horizon": "kurzfristig und mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der gelieferte Auszug erfasst den für diese Einordnung relevanten Sachverhalt vollständig genug, um keinen Umweltmechanismus zu erkennen.",
+                "source_support": "Die Quelle nennt Schüsse, eine Pizzeria, eine Wohnung, ein Kind, keine Verletzten und Ermittlungen, aber keine Umweltfolgen.",
+                "limitations": "Der Auszug ist begrenzt; nicht genannte Sach- oder Umweltschäden können nicht ausgeschlossen werden.",
+                "first_order": "Keine modellierbare ökologische Zustandsänderung.",
+                "second_order": "Keine belastbare ökologische Folge oder Verlagerung.",
+                "third_order": "Keine erkennbare planetare Systemwirkung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle enthält einen Umweltbeleg; der Pfad erhält deshalb begründet null und bleibt bei neuen Sachschadensangaben überprüfbar.",
+                "negligibility_rationale": "Im abgegrenzten lokalen Ereignis und auf Basis des gelieferten Auszugs ist keine ökologische Zustandsänderung erkennbar; ein Umweltmechanismus wird nicht berichtet.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten oder plausiblen positiven beziehungsweise negativen Umweltpfad, der gegen diesen vernachlässigbaren Pfad abzuwägen wäre."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein eigenständiger planetarer Wirkpfad aus dem berichteten lokalen Schusswaffenvorfall",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein eigenständiger planetarer Wirkpfad aus dem berichteten lokalen Schusswaffenvorfall",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt Ermittlungen, aber keine öffentliche Reaktion, politische Debatte oder Veränderung institutionellen Vertrauens. Ein demokratischer Wirkungspfad bleibt daher offen und schwach.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein lokaler Schusswaffenvorfall könnte Erwartungen an staatlichen Schutz und Ermittlungen beeinflussen. Ob dies Vertrauen stärkt oder schwächt, ist aus der Einzelquelle nicht bestimmbar; die Richtung bleibt offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung des Vertrauens in lokale Schutz- und Ermittlungsinstitutionen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die laufenden Ermittlungen und ihre öffentliche Einordnung könnten Wahrnehmungen staatlicher Handlungsfähigkeit beeinflussen.",
+                "recipients": [
+                  "Bewohnerinnen und Bewohner im lokalen Umfeld",
+                  "lokale Öffentlichkeit",
+                  "zuständige Ermittlungsinstitutionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Wirkungsraum ist lokal und die Richtung offen; eine politische oder institutionelle Vertiefung ist nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die mögliche Wirkung reicht vor allem in die lokale Öffentlichkeit.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Bericht nennt Ermittlungen, aber keine institutionelle Krise.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Vertrauensänderung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Wahrnehmungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen im betroffenen Umfeld könnten besonders sensibel auf Schutzfragen reagieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Auszug zeigt keinen institutionellen Strukturwandel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten wird nicht berichtet.",
+                  "reference_frame": "Vertrauen in rechtsstaatliche Schutz- und Ermittlungsinstitutionen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad würde voraussetzen, dass der Fall öffentlich wahrgenommen und mit institutioneller Leistungsfähigkeit verknüpft wird.",
+                "reference_space": "Lokale Öffentlichkeit in Köln",
+                "time_horizon": "während der Ermittlungen und der anschließenden öffentlichen Einordnung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Ermittlungen werden öffentlich wahrgenommen und beeinflussen zumindest einen Teil der lokalen Bewertung staatlicher Schutzfähigkeit.",
+                "source_support": "Die Quelle nennt laufende polizeiliche Ermittlungen; sie belegt weder Vertrauen noch eine politische Reaktion.",
+                "limitations": "Keine Umfragen, Verhaltensdaten, Debattenbelege oder unabhängigen Berichte liegen vor.",
+                "first_order": "Mögliche Aufmerksamkeit für lokale Schutz- und Ermittlungsfähigkeit.",
+                "second_order": "Mögliche Forderungen nach Antworten oder zusätzlichen Maßnahmen; nicht belegt.",
+                "third_order": "Mögliche lokale Verschiebung institutionellen Vertrauens; Richtung und Eintritt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle dokumentiert eine demokratische oder institutionelle Folge. Der Pfad bleibt eine schwache, richtungsoffene Hypothese und darf nicht als eingetretene Wirkung gelesen werden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen gleichartigen positiven oder negativen Hauptpfad mit belastbarer Evidenz; die institutionelle Wirkung bleibt richtungsoffen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung des Vertrauens in lokale Schutz- und Ermittlungsinstitutionen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung des Vertrauens in lokale Schutz- und Ermittlungsinstitutionen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T08:25:33.267Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über Schüsse auf eine Pizzeria und eine Wohnung, ein schlafendes zehnjähriges Kind, keine Verletzten und laufende polizeiliche Ermittlungen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den Vorfall und das Ausbleiben gemeldeter Verletzungen, aber keine längerfristige Verunsicherung oder Verhaltensänderung. Der mögliche negative Pfad bleibt deshalb bedingt.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Schüsse auf eine Pizzeria und eine Wohnung könnten Menschen unmittelbar bedrohen oder verunsichern. Die mögliche Wirkung ist lokal und indirekt; der berichtete Ausbleib von Verletzungen begrenzt den belegten Schaden, nicht aber das ex ante modellierte Risiko.",
+          "primary_paths": [
+            {
+              "label": "Mögliche lokale Verunsicherung nach Schüssen auf öffentlich und privat genutzte Räume",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Der Vorfall könnte die wahrgenommene Sicherheit von Bewohnern, Beschäftigten und Gästen im Umfeld mindern.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner",
+                "Beschäftigte und Gäste der betroffenen Orte",
+                "das im Bericht genannte Kind und sein Haushalt"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 2,
+                "rationale": "Die Reichweite ist lokal, die mögliche Intensität eines Schusswaffenvorfalls jedoch erheblich; Dauer und Übertragbarkeit sind unklar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen sein könnte vor allem das lokale Umfeld.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Schüsse auf eine Pizzeria und Wohnung markieren eine potenziell intensive Gefährdung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer der Verunsicherung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen und Nutzung könnten grundsätzlich wiederhergestellt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "In der Wohnung schlief ein Kind; besonders Schutzbedürftige sind denkbar betroffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer institutioneller Wandel ist aus dem Auszug nicht ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze wurde nicht verletzt festgestellt; der mögliche Risikopfad bleibt dennoch relevant.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad würde voraussetzen, dass der Vorfall im Umfeld bekannt wird und als persönliche oder lokale Bedrohung wahrgenommen wird.",
+              "reference_space": "Köln, insbesondere das Umfeld der betroffenen Pizzeria und Wohnung",
+              "time_horizon": "kurzfristig bis mittelfristig nach dem Vorfall",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die betroffenen Räume werden von Menschen genutzt und der Vorfall wird im Umfeld wahrgenommen.",
+              "source_support": "Die Quelle belegt Schüsse, die betroffenen Räume und ein schlafendes Kind; sie belegt keine Verunsicherung als Folge.",
+              "limitations": "Keine Daten zu tatsächlichen Reaktionen, Verletzungen, Sachschäden oder Dauer.",
+              "first_order": "Mögliche kurzfristige Verunsicherung und erhöhte Vorsicht im Umfeld.",
+              "second_order": "Mögliche Einschränkung der Nutzung betroffener Orte, falls Unsicherheit anhält.",
+              "third_order": "Mögliche lokale Sicherheitsdebatte bei wiederholter oder politisierter Bezugnahme; Eintritt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Reaktionen oder längerfristige Folgen; nur der bedingte lokale Sicherheits- und Verunsicherungspfad ist plausibel modellierbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es liegt kein vergleichbarer positiver Hauptpfad vor; die mögliche negative Sicherheitswirkung wird wegen der Quellenlage ausdrücklich als bedingt eingeordnet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Verunsicherung nach Schüssen auf öffentlich und privat genutzte Räume",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche lokale Verunsicherung nach Schüssen auf öffentlich und privat genutzte Räume",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der gelieferte Auszug enthält keine Angaben zu Umwelt-, Ressourcen- oder Klimafolgen. Ein belastbarer planetarer Wirkpfad ist für den beschriebenen lokalen Vorfall nicht erkennbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Für Umwelt und Klima nennt die Quelle keine Zustandsänderung. Ein eigenständiger planetarer Pfad ist im abgegrenzten Ereignisraum praktisch vernachlässigbar, solange keine zusätzlichen Informationen zu Bränden, Schadstoffen oder größeren Schäden vorliegen.",
+          "primary_paths": [
+            {
+              "label": "Kein eigenständiger planetarer Wirkpfad aus dem berichteten lokalen Schusswaffenvorfall",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Der Auszug beschreibt Schüsse auf Räume, nennt aber keine Umweltbeeinträchtigung oder ressourcenbezogene Veränderung.",
+              "recipients": [
+                "lokales Ökosystem",
+                "Umweltressourcen"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im gelieferten Sachverhalt gibt es keinen belastbaren Umweltmechanismus; mögliche Zusatzinformationen könnten die Einordnung ändern."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite ist im Auszug erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine Umweltintensität oder Kontamination wird berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist angegeben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzliche Umweltkomponente wird genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine planetare Systemtiefe ist aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird im Bericht berührt oder beschrieben.",
+                "reference_frame": "Schutz von Umwelt und natürlichen Lebensgrundlagen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur zusätzliche Angaben zu Umwelt- oder Sachschäden könnten diesen Pfad verändern.",
+              "reference_space": "Lokales Umfeld des Ereignisses",
+              "time_horizon": "kurzfristig und mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der gelieferte Auszug erfasst den für diese Einordnung relevanten Sachverhalt vollständig genug, um keinen Umweltmechanismus zu erkennen.",
+              "source_support": "Die Quelle nennt Schüsse, eine Pizzeria, eine Wohnung, ein Kind, keine Verletzten und Ermittlungen, aber keine Umweltfolgen.",
+              "limitations": "Der Auszug ist begrenzt; nicht genannte Sach- oder Umweltschäden können nicht ausgeschlossen werden.",
+              "first_order": "Keine modellierbare ökologische Zustandsänderung.",
+              "second_order": "Keine belastbare ökologische Folge oder Verlagerung.",
+              "third_order": "Keine erkennbare planetare Systemwirkung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle enthält einen Umweltbeleg; der Pfad erhält deshalb begründet null und bleibt bei neuen Sachschadensangaben überprüfbar.",
+              "negligibility_rationale": "Im abgegrenzten lokalen Ereignis und auf Basis des gelieferten Auszugs ist keine ökologische Zustandsänderung erkennbar; ein Umweltmechanismus wird nicht berichtet.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten oder plausiblen positiven beziehungsweise negativen Umweltpfad, der gegen diesen vernachlässigbaren Pfad abzuwägen wäre."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein eigenständiger planetarer Wirkpfad aus dem berichteten lokalen Schusswaffenvorfall",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein eigenständiger planetarer Wirkpfad aus dem berichteten lokalen Schusswaffenvorfall",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt Ermittlungen, aber keine öffentliche Reaktion, politische Debatte oder Veränderung institutionellen Vertrauens. Ein demokratischer Wirkungspfad bleibt daher offen und schwach.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein lokaler Schusswaffenvorfall könnte Erwartungen an staatlichen Schutz und Ermittlungen beeinflussen. Ob dies Vertrauen stärkt oder schwächt, ist aus der Einzelquelle nicht bestimmbar; die Richtung bleibt offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung des Vertrauens in lokale Schutz- und Ermittlungsinstitutionen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die laufenden Ermittlungen und ihre öffentliche Einordnung könnten Wahrnehmungen staatlicher Handlungsfähigkeit beeinflussen.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner im lokalen Umfeld",
+                "lokale Öffentlichkeit",
+                "zuständige Ermittlungsinstitutionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Wirkungsraum ist lokal und die Richtung offen; eine politische oder institutionelle Vertiefung ist nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die mögliche Wirkung reicht vor allem in die lokale Öffentlichkeit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Bericht nennt Ermittlungen, aber keine institutionelle Krise.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Vertrauensänderung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Wahrnehmungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen im betroffenen Umfeld könnten besonders sensibel auf Schutzfragen reagieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Auszug zeigt keinen institutionellen Strukturwandel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten wird nicht berichtet.",
+                "reference_frame": "Vertrauen in rechtsstaatliche Schutz- und Ermittlungsinstitutionen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad würde voraussetzen, dass der Fall öffentlich wahrgenommen und mit institutioneller Leistungsfähigkeit verknüpft wird.",
+              "reference_space": "Lokale Öffentlichkeit in Köln",
+              "time_horizon": "während der Ermittlungen und der anschließenden öffentlichen Einordnung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Ermittlungen werden öffentlich wahrgenommen und beeinflussen zumindest einen Teil der lokalen Bewertung staatlicher Schutzfähigkeit.",
+              "source_support": "Die Quelle nennt laufende polizeiliche Ermittlungen; sie belegt weder Vertrauen noch eine politische Reaktion.",
+              "limitations": "Keine Umfragen, Verhaltensdaten, Debattenbelege oder unabhängigen Berichte liegen vor.",
+              "first_order": "Mögliche Aufmerksamkeit für lokale Schutz- und Ermittlungsfähigkeit.",
+              "second_order": "Mögliche Forderungen nach Antworten oder zusätzlichen Maßnahmen; nicht belegt.",
+              "third_order": "Mögliche lokale Verschiebung institutionellen Vertrauens; Richtung und Eintritt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle dokumentiert eine demokratische oder institutionelle Folge. Der Pfad bleibt eine schwache, richtungsoffene Hypothese und darf nicht als eingetretene Wirkung gelesen werden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen gleichartigen positiven oder negativen Hauptpfad mit belastbarer Evidenz; die institutionelle Wirkung bleibt richtungsoffen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung des Vertrauens in lokale Schutz- und Ermittlungsinstitutionen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung des Vertrauens in lokale Schutz- und Ermittlungsinstitutionen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T08:22:31.167Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T08:07:53.000Z",
+      "last_updated": "2026-09-18T08:25:33.262Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b06df37e20aa33c6cbe5",
+      "case_file": null,
+      "source_published_at": "2026-09-18T08:07:53.000Z",
+      "published_at": "2026-09-18T08:25:33.262Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/polizeieinsatz--schuesse-auf-koelner-pizzeria-und-wohnung-38271536.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T08:07:53.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-aeced19bfd9a9d57",
       "title_image": {
@@ -108433,22 +109473,25 @@
     {
       "story_id": "wt-964c67d17fc4e2cb",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-964c67d17fc4e2cb-056d151d118280ad-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-964c67d17fc4e2cb-5fdbaa9b4ffce31a-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-964c67d17fc4e2cb-224aa112720dfef9-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-964c67d17fc4e2cb-817a28cac4457baf-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-964c67d17fc4e2cb-bc97871af1d3782e-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-964c67d17fc4e2cb-dd3401fcd1cf92d6-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-964c67d17fc4e2cb-3b79fc3a8532e5c8-source.png"
         }
       },
       "slug": "benzin-fur-drei-euro-der-deutsche-verbraucher-ist-der-dreifache-olpreis-verlierer-c4e2cb",
