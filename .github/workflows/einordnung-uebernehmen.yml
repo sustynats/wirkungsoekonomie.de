@@ -1,0 +1,95 @@
+# Eine überarbeitete "Meine Einordnung" übernehmen - ohne bezahlten Aufruf.
+#
+# Natalie am 18.09.2026: "Meine Einordnung sollte automatisiert erfolgen. Wenn
+# ChatGPT nur diese Antwort liefern muss, könnte der Prozess funktionieren."
+#
+# Kanal: ein Issue "[EINORDNUNG] <slug>" mit dem Text im Körper, geöffnet von
+# ihrem eigenen Konto. Der Text ist DATEN - er wird geprüft und eingereiht, nie
+# ausgeführt. Veröffentlicht wird nichts: die Fassung erscheint in Natalies
+# Freigabeliste, und nur ihre Freigabe bringt sie live.
+name: Einordnung übernehmen
+
+on:
+  issues:
+    types: [opened, reopened]
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug der veröffentlichten Ausgabe"
+        required: true
+        type: string
+      einordnung:
+        description: "Neue Einordnung (300 bis 2600 Zeichen, keine neuen Zahlen, keine Adressen)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: redaktionsworker
+  cancel-in-progress: false
+
+jobs:
+  uebernehmen:
+    if: github.event_name == 'workflow_dispatch' || (startsWith(github.event.issue.title, '[EINORDNUNG] ') && contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.issue.author_association))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Issue-Ereignisse lösen GITHUB_SHA auf dem Standardzweig auf. ref=main
+      # macht die Vertrauensgrenze ausdrücklich: der Issue-Text ist Daten.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/news/asset-size.mjs
+            scripts/news/bridge/acquire-lane.mjs
+            scripts/news/bridge/contract.mjs
+            scripts/news/bridge/remote.mjs
+            scripts/news/bridge/research-source-schema.mjs
+            scripts/news/editorial-approved-revisions.mjs
+            scripts/news/editorial-layout.mjs
+            scripts/news/editorial-markdown.mjs
+            scripts/news/einordnung.mjs
+            scripts/news/korrekturfassung.mjs
+            scripts/news/personal-editorial.mjs
+            scripts/news/reader-copy.mjs
+            scripts/news/request-deadline.mjs
+            scripts/news/show-identity.mjs
+            data/news/personal-editorials.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Einordnung einreihen
+        id: einreihen
+        env:
+          WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          DISPATCH_SLUG: ${{ inputs.slug }}
+          DISPATCH_TEXT: ${{ inputs.einordnung }}
+        run: |
+          set -euo pipefail
+          if [ -n "${DISPATCH_SLUG:-}" ]; then
+            export WOEK_EINORDNUNG_SLUG="$DISPATCH_SLUG" WOEK_EINORDNUNG_TEXT="$DISPATCH_TEXT"
+          else
+            export WOEK_EINORDNUNG_SLUG="${ISSUE_TITLE#\[EINORDNUNG\] }" WOEK_EINORDNUNG_TEXT="$ISSUE_BODY"
+          fi
+          node scripts/news/einordnung.mjs | tee einordnung-result.json
+      - name: Ergebnis am Issue vermerken
+        if: always() && github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ERGEBNIS: ${{ steps.einreihen.outcome }}
+        run: |
+          set -euo pipefail
+          RESULT="$(tail -n 1 einordnung-result.json 2>/dev/null || echo '{"status":"failed"}')"
+          printf 'Einordnung %s\n\n```json\n%s\n```\n\nVeroeffentlicht wird nichts ohne Freigabe in der Redaktions-App.\n' "$ERGEBNIS" "$RESULT" > kommentar.txt
+          gh issue comment "$ISSUE_NUMBER" --repo "$GH_REPO" --body-file kommentar.txt
+          if [ "$ERGEBNIS" = "success" ]; then gh issue close "$ISSUE_NUMBER" --repo "$GH_REPO" --reason completed; fi
