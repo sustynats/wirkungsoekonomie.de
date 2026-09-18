@@ -3,6 +3,7 @@ import {appNavigation,buildAppPages} from './app-pages.mjs';
 import { impactMethodology } from './impact-methodology.mjs';
 import { impactCoverage, assertImpactCoverage } from './impact-coverage.mjs';
 import {PERSONAL_FORMAT,loadPersonalEditorials,personalLabel,personalArticleBody,personalPortrait} from './personal-editorial.mjs';
+import {offeneEinordnungen} from './einordnung.mjs';
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
 import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, REVIEWED_IMPACT_PROFILE_VERSION, assertPublicImpactHtml, IMPACT_RELEASE } from './impact-release.mjs';
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
@@ -28,7 +29,7 @@ import { buildCaseFiles } from "./case-files.mjs";
 import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs";
 import { articleShareCard } from "./share-image.mjs";
 import { loadManualEditorials, renderManualArticle, renderBookCover, BOOK_FORMAT } from "./manual-editorial.mjs";
-import {applyApprovedEditorialRevisions} from './editorial-approved-revisions.mjs';
+import {applyApprovedEditorialRevisions,approvedEditorialRevisions} from './editorial-approved-revisions.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
@@ -1027,6 +1028,14 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, _woek_released_at: item.released_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
+  // Die oeffentliche Arbeitsliste fuer die automatisierte Einordnung: welche
+  // veroeffentlichten Beitraege warten noch auf Natalies Stimme. Oeffentlich,
+  // damit die Automatisierung auf ihrer Seite keine Zugangsdaten braucht -
+  // sie liest diese Liste und den Beitrag, beides ohne Anmeldung.
+  write(path.join(TICKER_DIR, "data/einordnung-offen.json"), JSON.stringify({
+    schema_version: "1.0", updated_at: publicationUpdatedAt,
+    hinweis: "Offene persoenliche Einordnungen. Antwort als Issue \"[EINORDNUNG] <slug>\" mit dem Text im Koerper; 300 bis 2600 Zeichen, keine neuen Zahlen, keine Adressen, keine Ueberschriften.",
+    beitraege: offeneEinordnungen(loadPersonalEditorials(ROOT), { revisionen: approvedEditorialRevisions(ROOT) }) }, null, 2));
   write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", impact_profile_version: PUBLIC_IMPACT_PROFILE_VERSION || REVIEWED_IMPACT_PROFILE_VERSION, impact_profile_status: PUBLIC_IMPACT_PROFILE_VERSION ? "ready" : REVIEWED_IMPACT_PROFILE_VERSION ? "reviewed_records_only" : "reassessment_in_progress", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true, subtype: analysis.subtype, ...(analysis.self_authored_work ? { self_authored_work: true } : {}) } : {}) })) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(EDITORIAL_MANIFEST_FILE, JSON.stringify({ slugs: [...currentEditorialSlugs].sort() }, null, 2));
