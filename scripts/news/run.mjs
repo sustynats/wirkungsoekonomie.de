@@ -41,6 +41,7 @@ import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFil
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
+import { chooseTitleImageMode } from "./title-image/policy.mjs";
 import { IMAGE_CONFIG, digest as imageDigest } from "./title-image/policy.mjs";
 import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, sharedHourlyRoom, editorialReserve, waitingCount } from "./stundenkontingent.mjs";
 import { sameEventByFacts } from "./ereignisfakten.mjs";
@@ -782,12 +783,24 @@ export function retryCoolingDown(candidate, now) {
 // Meldungen ohne OG- und Quadratbild, für die Nachrüstung unsichtbar). Fehlt
 // das Bild, kommt die Meldung zuerst; Obergrenze je Lauf und Zeitbudget bleiben.
 export const missingTitleImage = (story) => !(story?.title_image?.og?.url && story?.title_image?.square?.url);
+// Ein vorhandenes Motiv auf einer Meldung, die die Bildregel inzwischen als
+// heikel einstuft. Die Warteschlange nahm bisher nur Meldungen OHNE Bild auf -
+// eine verschaerfte Regel haette ein schon veroeffentlichtes Motiv deshalb nie
+// mehr ersetzt (18.09.2026: Tatort-Motiv zu den Frankfurter Detonationen).
+// Nur SENSITIVE_SUBJECT zaehlt: ein Motiv, das bloss keinen sicheren Anlass
+// mehr findet, ist kein Sicherheitsproblem und bleibt.
+export function sensitiveMotif(story) {
+  return story?.title_image?.mode === 'editorial' && chooseTitleImageMode(story).reason === 'SENSITIVE_SUBJECT';
+}
+
 export function pendingTitleImageQueue(stories, { now, changed = new Set(), limit = 4 } = {}) {
   const at = Date.parse(now);
   const due = (story) => story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= at;
+  const rang = (story) => sensitiveMotif(story) ? 2 : missingTitleImage(story) ? 1 : 0;
   return stories
-    .filter((story) => story?.published && story.listed !== false && !changed.has(story.story_id) && (missingTitleImage(story) || due(story)))
-    .sort((a, b) => (missingTitleImage(b) ? 1 : 0) - (missingTitleImage(a) ? 1 : 0)
+    .filter((story) => story?.published && story.listed !== false && !changed.has(story.story_id) && (missingTitleImage(story) || due(story) || sensitiveMotif(story)))
+    // Ein irrefuehrendes Motiv geht vor einem fehlenden Bild.
+    .sort((a, b) => rang(b) - rang(a)
       || Date.parse(a.title_image?.retry_after || 0) - Date.parse(b.title_image?.retry_after || 0))
     .slice(0, Math.max(0, limit));
 }
