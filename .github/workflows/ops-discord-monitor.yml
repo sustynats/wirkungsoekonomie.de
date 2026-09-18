@@ -39,6 +39,7 @@ jobs:
           ref: main
           sparse-checkout: |
             .github/workflows/ops-discord-monitor.yml
+            .github/workflows/wirkungsticker.yml
             scripts/ops/discord-monitor.mjs
             scripts/ops/news-recovery.mjs
             scripts/ops/betriebsstatus.mjs
@@ -68,7 +69,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      # Am 17./18.09.2026 schwieg der Monitor 30 Stunden: der Selbsttest las eine
+      # Datei, die im Checkout fehlte, und der Lauf brach vor jeder Meldung ab.
+      # Seither laufen die Pruefungen trotzdem, melden den gescheiterten
+      # Selbsttest selbst, und der Lauf wird am Ende dennoch rot.
       - name: Test monitor invariants
+        id: selbsttest
+        continue-on-error: true
         run: node --test tests/ops/discord-monitor.test.mjs tests/ops/news-recovery.test.mjs
       - name: Record the checked-out main revision
         run: echo "WOEK_MONITOR_SOURCE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
@@ -82,7 +89,13 @@ jobs:
           WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED: ${{ vars.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED || 'true' }}
           WOEK_NEWS_BRIDGE_URL: https://130.162.217.58.sslip.io/api/news-bridge
           WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+          WOEK_MONITOR_SELFTEST: ${{ steps.selbsttest.outcome }}
         run: |
           args=()
           if [ "$REPORT_NOW" = "true" ]; then args+=(--report-now); fi
           node scripts/ops/discord-monitor.mjs "${args[@]}"
+      - name: Fail the run when the self-test failed
+        if: steps.selbsttest.outcome == 'failure'
+        run: |
+          echo "::error::Selbsttest des Betriebsmonitors gescheitert; die Pruefungen liefen trotzdem und haben es gemeldet."
+          exit 1
