@@ -7,9 +7,17 @@ export const IMAGE_CONFIG = Object.freeze(JSON.parse(fs.readFileSync(new URL("./
 export const digest = (value) => createHash("sha256").update(value).digest("hex");
 export const imageError = (code) => Object.assign(new Error(code), { code });
 
+// 18.09.2026: Die Meldung "Fuenf Laeden in Frankfurt und Offenbach durch
+// Detonationen stark beschaedigt" lief als NEUTRAL_TOPIC_ECONOMY durch und
+// bekam ein fotorealistisches Motiv mit eingeschlagener Scheibe, Absperrband
+// und Beweismarkierung - ein Bild, das wie ein Tatortfoto des echten Vorfalls
+// aussieht. Die Liste kannte Krieg, Anschlag und Mord, aber keine Explosion,
+// keine Polizei, keinen Unfall und keinen Brand. Ergaenzt ist deshalb die ganze
+// Klasse Gefahrenlage/Einsatz/Verletzung - konservativ, denn ein falscher
+// Treffer kostet nur ein Motiv, ein fehlender ein irrefuehrendes Bild.
 // Conservative subject gate: article/source text is data, never model instructions.
 // A risk match wins over a visualisable topic, including in mixed-subject stories.
-const SENSITIVE = /\b(?:krieg\w*|kriegs\w*|war|wars|angriff\w*|attack\w*|anschl[aä]g\w*|sabotage\w*|terror\w*|gewalt\w*|waffe\w*|weapon\w*|opfer\w*|victim\w*|tot\w*|t[oö]d\w*|todes\w*|dead|death\w*|kind\w*|child\w*|minderj[aä]hr\w*|ermittl\w*|investigat\w*|verd[aä]cht\w*|suspect\w*|beschuldig\w*|vorw[uü]rf\w*|straftat\w*|straft[aä]t\w*|missbrauch\w*|vergewalt\w*|mord\w*|hass\w*|rassis\w*|antisemit\w*|patient\w*|diagnos\w*|krank\w*|fl[uü]cht\w*|gefl[uü]cht\w*|refugee\w*|trump|putin|merz|weidel|netanjahu|netanyahu|selensky\w*)\b/iu;
+const SENSITIVE = /\b(?:explo\w*|detonat\w*|spreng\w*|gesprengt\w*|bomb\w*|brandanschl\w*|brandstift\w*|gro[sß]brand\w*|waldbr[aä]nd\w*|br[aä]nde?|sch[uü]ss\w*|schie[sß]\w*|erschoss\w*|erstoch\w*|messerangriff\w*|polizei\w*|festnahm\w*|festgenommen\w*|verhaft\w*|t[aä]ter\w*|tatort\w*|razzia\w*|einbruch\w*|[uü]berfall\w*|geisel\w*|unf[aä]ll\w*|verletz\w*|verungl[uü]ck\w*|feuerwehr\w*|evakuier\w*|blast\w*|shooting\w*|police|arrest\w*|injur\w*|accident\w*|wildfire\w*|krieg\w*|kriegs\w*|war|wars|angriff\w*|attack\w*|anschl[aä]g\w*|sabotage\w*|terror\w*|gewalt\w*|waffe\w*|weapon\w*|opfer\w*|victim\w*|tot\w*|t[oö]d\w*|todes\w*|dead|death\w*|kind\w*|child\w*|minderj[aä]hr\w*|ermittl\w*|investigat\w*|verd[aä]cht\w*|suspect\w*|beschuldig\w*|vorw[uü]rf\w*|straftat\w*|straft[aä]t\w*|missbrauch\w*|vergewalt\w*|mord\w*|hass\w*|rassis\w*|antisemit\w*|patient\w*|diagnos\w*|krank\w*|fl[uü]cht\w*|gefl[uü]cht\w*|refugee\w*|trump|putin|merz|weidel|netanjahu|netanyahu|selensky\w*)\b/iu;
 const TOPICS = [
   // Specific subjects take precedence over broad policy/economy vocabulary.
   ["care_training", /\b(?:pflegeberuf\w*|gesundheitsberuf\w*|pflegeausbildung\w*)\b/iu, "A recognisable empty clinical training room with practice equipment, folded scrubs and a stethoscope. Depict the training environment, not a person or treatment."],
