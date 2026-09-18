@@ -135,7 +135,10 @@ export async function runEinordnung({ session = null, env = process.env, root = 
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  try { console.log(JSON.stringify(await runEinordnung(), null, 2)); }
+  // Eine Zeile, kein eingeruecktes JSON: der Workflow liest die letzte Zeile
+  // fuer den Kommentar am Issue. Am 18.09.2026 war das "}" - drei erfolgreiche
+  // Uebernahmen standen dort als EINORDNUNG_TECHNISCHER_FEHLER.
+  try { console.log(JSON.stringify(await runEinordnung())); }
   catch (error) {
     console.error(JSON.stringify({ status: 'failed', error: /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EINORDNUNG_FEHLGESCHLAGEN',
       detail: String(error?.detail || '').slice(0, 120) || null }));
