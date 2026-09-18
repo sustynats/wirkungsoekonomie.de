@@ -8,10 +8,19 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-17T01:35:29.424Z",
       "active": true
+    },
+    "lage": {
+      "firstSeen": "2026-09-18T14:48:28.864Z",
+      "active": false
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-09-17",
+  "outbox": [
+    {
+      "id": "32bcf6e59637852925491a7f",
+      "content": "WÖk Tagesbericht · 2026-09-18 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 396 live · 339 aktuelle Lagen und Einzelakten aus 363 aktiven Wirkungsakten · 6 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-09-17) 25; heute bisher 17 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-09-18T14:38:07.405Z; 617 offene Prüfungen, 44 aktive Quellen.\nQueue: 617 offen (574 Kapazität · 0 technisch · 43 redaktionell); Status draining.\nQuellen-Funnel heute: 41512 Feed-Einträge → 1238 neu/aktualisiert → 1203 Story-Kandidaten → 41654 geeignet → 33 KI → 25 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 921; redaktionelle Quellenbeiträge: 1422.\nProduktive Quellen im letzten Lauf: keine im letzten Lauf.\nEreignischeck (begrenzter Quellenbestand): 21 größere Ereignisse · 9 mit Veröffentlichung · 12 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $1.39 · heute $0.76 · Monat $58.49.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 278 Erstveröffentlichungen · 74 Aktualisierungen · 2248 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 13.52 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 124 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 11 neu · 10 aktualisiert · $7.97 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 27 abgeglichen · 8 angewendet · $0.301 nach Anbieter-Nutzungsdaten; $0.500 für 4 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.030; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €60.63 (Limit €100.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 2 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Redaktionelle Themenabdeckung: 4 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\n⚠ Redaktionelle Lage: Es liegt keine einzige Lage vor.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-09-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -1266,11 +1275,139 @@
       "https://wirkungsoekonomie.de/wirkungsticker/merz-bleibt-kanzler-frei-warnt-vor-personaldebatten-und-minderheitsregierung-23aafd/": {
         "first_seen_at": "2026-09-17T09:50:29.982Z",
         "source_at": "2026-09-17T07:09:08.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/gewaltkriminalitat-17-schusse-in-adlershof-polizei-fahndet-weiter-nach-tatern-dc4b24/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T12:54:22.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-auf-wertstoffhof-in-uberlingen-ein-mitarbeiter-schwer-verletzt-64f8c8/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T12:36:23.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/tater-radelte-davon-schusse-auf-meininger-markt-polizei-sucht-zeugen-1f043f/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T11:20:24.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/philippinen-banga-national-high-school-drei-tote-nach-schussen-an-schule-e05359/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T11:06:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T09:37:40.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/versuchter-totschlag-nach-messerangriff-in-dresden-anklage-gegen-36-jahrigen-601438/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T09:07:56.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mindestens-drei-tote-bei-angriff-an-schule-c1afb9/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T09:01:24.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizei-einsatz-schusse-auf-haus-in-koln-mulheim-3a63c6/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T08:43:40.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizeieinsatz-schusse-auf-kolner-pizzeria-und-wohnung-85aa6d/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T08:07:53.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/japan-notenbank-hebt-leitzins-auf-hochsten-stand-seit-31-jahren-4b5913/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T05:43:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-handelsverband-besorgt-nach-serie-von-explosionen-6f8ac9/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T05:24:18.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/hochwasser-in-hanoi-uberschwemmungen-in-vietnam-drei-tote-und-meterhohe-fluten-60938a/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T05:03:14.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/cyberangriff-im-krankenhaus-krisensimulation-zeigt-potenzial-auf-4b9a4c/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T04:17:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/krieg-am-roten-meer-nach-der-blitzoffensive-wer-sind-die-huthi-2cabad/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-18T03:00:18.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/weisses-haus-usa-weisen-uno-bericht-uber-mogliche-kriegsverbrechen-im-iran-zuruck-ceaa10/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T23:32:33.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/erneute-explosionen-in-frankfurt-17-jahriger-tatverdachtiger-festgenommen-128b91/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T20:19:37.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T20:14:37.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bundeslander-einigung-auf-neuen-staatsvertrag-fur-die-digitale-medienwelt-488061/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T19:41:29.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/urteil-bundesverwaltungsgericht-kippt-ausgleich-fur-uberstunden-eines-rektors-0afd76/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T18:49:34.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nach-wahlniederlage-schwedischer-ministerprasident-kristersson-erklart-rucktritt-0e1b17/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T18:20:02.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/lehrer-uberstunden-muss-arbeitszeit-zukunftig-erfasst-werden-859189/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T17:40:42.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/pflege-in-der-krise-sachsen-will-mitreden-22f190/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T17:36:29.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/deutschland-und-kanada-investieren-millionen-in-ki-projekt-lawzero-b0befa/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T15:41:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T14:53:31.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/solartechnik-sma-investiert-80-millionen-euro-in-neues-werk-21eeeb/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T13:56:17.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/corona-maskenaffare-warum-jens-spahn-die-verantwortung-tragt-egal-wie-das-urteil-ausfall-6d191e/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T13:40:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/drei-schulen-in-engen-wegen-zweimaliger-bombendrohung-evakuiert-a98dbc/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T12:00:20.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bedrohung-gegen-schulen-bombendrohungen-gegen-schulen-gebaude-evakuiert-21c1b7/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T11:57:29.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T11:47:46.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ministerprasident-dr-markus-soder-zum-rucktritt-von-justizminister-georg-eisenreich-gros-ba5f9a/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T10:30:52.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bayerns-justizminister-eisenreich-tritt-zuruck-und-verlasst-politik-621d07/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-17T09:12:51.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/grosshandelspreise-im-august-2026-6-8-gegenuber-august-2025-9a9d57/": {
+        "first_seen_at": "2026-09-18T14:48:28.864Z",
+        "source_at": "2026-09-15T06:00:00.000Z"
       }
     },
-    "last_new_at": "2026-09-17T09:50:29.982Z",
-    "checked_at": "2026-09-17T09:50:29.982Z",
-    "last_current_new_at": "2026-09-17T09:50:29.982Z"
+    "last_new_at": "2026-09-18T14:48:28.864Z",
+    "checked_at": "2026-09-18T14:48:28.864Z",
+    "last_current_new_at": "2026-09-18T14:48:28.864Z"
   },
   "recovery_attempts": [
     {
