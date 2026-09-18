@@ -76,6 +76,13 @@ export function validateApprovedEditorialRevision(value){
   ||value.analysis_id!==value.target?.analysis_id||value.slug!==value.target?.slug
   ||!Number.isFinite(Date.parse(value.published_at)))fail();
 }
+// Die freigegebenen Revisionen als Liste - fuer alles, was nur wissen muss, was
+// schon korrigiert wurde (etwa die Arbeitsliste der offenen Einordnungen).
+export function approvedEditorialRevisions(root){
+ const file=path.join(root,EDITORIAL_REVISION_FILE);if(!fs.existsSync(file))return [];
+ const data=JSON.parse(fs.readFileSync(file));
+ return Array.isArray(data.editions)?data.editions:[];
+}
 export function applyApprovedEditorialRevisions(records,root,{partial=false}={}){
  const file=path.join(root,EDITORIAL_REVISION_FILE);if(!fs.existsSync(file))return records;
  const catalog=JSON.parse(fs.readFileSync(file));if(catalog.schema_version!=='1.0'||!Array.isArray(catalog.editions))fail();
