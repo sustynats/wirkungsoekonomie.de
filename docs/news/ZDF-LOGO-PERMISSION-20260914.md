@@ -27,7 +27,7 @@ freigegebenes Sendungslogo.
 Die ZDF-Kommunikation (Hauptabteilung Kommunikation, Zentrale Aufgaben) hat die
 Originaldateien am 15. September 2026 über die Presseportal-Bildanfrage 118949
 bereitgestellt (EPS, JPG, PNG je Sendung mit Archivnummer und Copyright-Hinweis
-„Honorarfrei – nur für diese Sendung inkl. SocialMedia bei Nennung ZDF und
+„Honorarfrei - nur für diese Sendung inkl. SocialMedia bei Nennung ZDF und
 <Gestalter>“). Die fünf Einträge in `data/news/show-visual-identities.json` führen
 jetzt `asset_delivery_status = DELIVERED`, das gebundene Webasset unter
 `assets/img/shows/`, dessen SHA-256-Prüfsumme, die Credit-Zeile und die offizielle

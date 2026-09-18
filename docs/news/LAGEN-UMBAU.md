@@ -6,7 +6,7 @@ Gesammelt und recherchiert wird weiter permanent; **veröffentlicht wird
 gebündelt**.
 
 > Nicht mehr: Was ist seit einer Stunde irgendwo erschienen?
-> Sondern: Was hat sich seit dem letzten Update wirklich verändert – und was
+> Sondern: Was hat sich seit dem letzten Update wirklich verändert - und was
 > davon ist wirkungsrelevant?
 
 ## 1. Was der Umbau löst und was nicht
@@ -14,7 +14,7 @@ gebündelt**.
 Ehrlich zuerst, damit niemand sich täuscht: **die Ausfälle vom 17.09.2026 hätte
 dieser Umbau nicht verhindert.** Eine ungültige Workflow-Eingabe, eine
 Sperrkollision zweier gleichzeitig gestarteter Läufe, eine fehlende Vorgabe im
-Auftragsweg, die Verwechslung von Ereignis- und Herausgabezeit — alle vier wären
+Auftragsweg, die Verwechslung von Ereignis- und Herausgabezeit - alle vier wären
 auch in einem Drei-Lagen-Prozess aufgetreten.
 
 Was er löst:
@@ -44,7 +44,7 @@ ganze Lage. Die Robustheitsanforderung steigt (Abschnitt 5).
 
 Außerplanmäßig **nur** bei echten Breaking-Ereignissen (Abschnitt 6).
 
-Pro Lauf **keine feste Zahl**: typischerweise 8–12 Themencluster, Obergrenze 15,
+Pro Lauf **keine feste Zahl**: typischerweise 8-12 Themencluster, Obergrenze 15,
 keine Untergrenze. Waren vormittags nur sechs Dinge wichtig, sind es sechs.
 
 Eine Lage darf ausdrücklich sagen: *„Seit 12 Uhr gab es zu diesem großen Thema
@@ -67,7 +67,7 @@ Das ist keine Meinung gegen die Messung, sondern deckungsgleich mit ihr: eine
 Auswertung am 17.09.2026 hat gezeigt, dass veröffentlichte und zurückgehaltene
 Meldungen dieselbe Quellenbreite-Verteilung haben (je rund 83 % Einzelquelle).
 Quellenbreite ist damit **kein** Relevanzindikator und darf nicht als Hilfsgröße
-einfließen — weder positiv noch negativ.
+einfließen - weder positiv noch negativ.
 
 Verbindlich:
 
@@ -91,10 +91,10 @@ ist noch offen? Was bedeutet es für Mensch, Planet und Demokratie?
 
 Läuft ein Ereignis weiter, wird **fortgeschrieben, nicht neu geschrieben**:
 Gesetz morgens angekündigt, mittags Entwurf, nachmittags Reaktion der Opposition
-— ein Ereignis mit aktualisierter Faktenlage und aktualisiertem Wirkungspfad, auf
+- ein Ereignis mit aktualisierter Faktenlage und aktualisiertem Wirkungspfad, auf
 der Karte „aktualisiert 18:00".
 
-## 5. Was weiterverwendet wird — mit Beleg
+## 5. Was weiterverwendet wird - mit Beleg
 
 Natalies Vorgabe: „Du musst aufpassen, dass Du nichts Kaputtes übernimmst."
 Deshalb gilt: **kein Baustein wird ohne Beleg weiterverwendet.** Belege sind
@@ -102,7 +102,7 @@ Messungen, keine Annahmen.
 
 | Baustein | Beleg | Übernahme |
 |---|---|---|
-| Ereignis-Clustering über Quellen hinweg | 507–752 zusammengeführte Quelleneinträge je Lauf, 55 Cluster; quellenübergreifende Zusammenführung mit 0 Fehlverbindungen bei 326 Meldungen | ja |
+| Ereignis-Clustering über Quellen hinweg | 507-752 zusammengeführte Quelleneinträge je Lauf, 55 Cluster; quellenübergreifende Zusammenführung mit 0 Fehlverbindungen bei 326 Meldungen | ja |
 | Fortschreiben (Lageakte, `publication_history`, `updated_stories`) | im Betrieb nachweisbar (z. B. Lauf 09:22: 1 veröffentlicht, 1 aktualisiert) | ja |
 | Karten als eigene Objekte mit Quellen und MPD-Profil | heutiger Zustand, 307 Meldungen live | ja |
 | Wirkungsbewertung 2.1 inkl. deterministischem Gate | 131 Tests grün | ja |
@@ -120,7 +120,7 @@ Offen und **vor** Übernahme zu klären:
 1. Restquote der Nachbesserungen und ihre Gründe (Messung läuft seit PR #867).
 2. `CLAIM_NUMBER_NOT_IN_EVIDENCE` und `AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER`:
    inhaltliche Modellfehler, noch ohne Gegenmaßnahme.
-3. Kostenerfassung der Redaktionsspur fehlt in `usage.json` (rund 1–2 % des
+3. Kostenerfassung der Redaktionsspur fehlt in `usage.json` (rund 1-2 % des
    Budgets, aber die Summe ist damit nicht vollständig).
 
 ## 6. Breaking-Ausnahme: hart begrenzt
@@ -143,13 +143,13 @@ Wirkungspotenzialen und der wirkungsökonomischen Einordnung und Einschätzung."
 Der Umbau betrifft **Takt und Bündelung**, nicht die fachliche Substanz. Nichts
 aus dieser Liste wird entfernt, ersetzt, vereinfacht oder „vorerst weggelassen":
 
-- **Wirkungspotenziale je Dimension** Mensch, Planet, Demokratie: Stärke 0–5,
-  Richtung, Dominanz, Evidenzstufe, Zeitstatus — die Balken und Ringe. Natalie
+- **Wirkungspotenziale je Dimension** Mensch, Planet, Demokratie: Stärke 0-5,
+  Richtung, Dominanz, Evidenzstufe, Zeitstatus - die Balken und Ringe. Natalie
   am 15.09.: „Balken/Ringe sind der Kern."
 - **Nichtkompensation / Reverse Merit Order**: keine gemittelte MPD-Gesamtnote,
   das Ergebnis ist das Minimum der Kernfelder.
 - **Wirkungsökonomische Einordnung und Einschätzung**: Befund in Alltagssprache,
-  Wirkpfade mit Empfängern, Mechanismus, Bedingung, Raum, Zeit, Ordnungen 1–3,
+  Wirkpfade mit Empfängern, Mechanismus, Bedingung, Raum, Zeit, Ordnungen 1-3,
   Quellenbindung, Annahmen und Grenzen; mindestens eine quellengebundene
   Wirkungsvisualisierung (Kaskade).
 - **Folgencheck vor Faktencheck** und das Truth-Sandwich: zu jeder Zahl die Folge.
@@ -223,8 +223,8 @@ abgeschaltet.
 
 ## 10. Kosten
 
-3 Lagen × 8–12 Cluster = 24–36 bezahlte Aufrufe am Tag, statt heute 56. Bei
-0,023 USD je Aufruf rund 0,55–0,85 USD täglich. Dabei entstehen mehr
+3 Lagen × 8-12 Cluster = 24-36 bezahlte Aufrufe am Tag, statt heute 56. Bei
+0,023 USD je Aufruf rund 0,55-0,85 USD täglich. Dabei entstehen mehr
 redaktionelle Einheiten als heute (heute landen etwa 17 am Tag live), jede mit
 mehreren Quellen statt einer.
 

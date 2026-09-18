@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4636**
+- Sitemap routes: **4729**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14673**
+- Extra tracked source HTML not in sitemap: **14757**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **264**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **270**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3676,6 +3676,11 @@ Signals are review candidates, not automatic errors.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/japan-notenbank-hebt-leitzins-auf-hochsten-stand-seit-31-jahren-4b5913/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/bundeslander-einigung-auf-neuen-staatsvertrag-fur-die-digitale-medienwelt-488061/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/gegen-wunsch-von-trump-us-notenbank-fed-hebt-erstmals-seit-2023-leitzins-an-70e6b3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-001cb5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/800-milliarden-investitionsbedarf-fur-wassermanagement-f42144/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/energie-und-ki-in-deutschland-emirate-wollen-geld-regnen-lassen-667146/index.html` - dns, alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3693,6 +3698,7 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/zukunftsangst-dampft-kinderwunsch-64b8b5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/fachkraftemangel-ist-mehr-als-eine-frage-der-arbeitsstunden-cfb7ef/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/was-meinen-wir-wenn-wir-den-westen-sagen-23442a/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch/index.html` - dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3874,8 +3880,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1332**
-- Combined matrix items (routes + extra HTML + support): **20641**
+- Tracked support text files inventoried: **1366**
+- Combined matrix items (routes + extra HTML + support): **20852**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4338,11 +4344,13 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/editorial-judgment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/event-relevance.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation, novelty_or_absence |
 | `scripts/news/impact-assessment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/news/impact-json-schema.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/impact-methodology.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/impact-scope.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `scripts/news/lib.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
 | `scripts/news/media-impact.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/newsroom.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/news/openai-transport.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `scripts/news/preview-impact-potential.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/reader-copy.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/run.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
@@ -4417,7 +4425,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/wirkungsradar/import-corona-debattenkarte.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/wirkungswissenschaften/build-wiwi-publications.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation |
+| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation, novelty_or_absence |
 | `tools/apply_state_sustainability_architecture.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_public_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
@@ -4449,7 +4457,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **20642**
+- Combined reviewed items: **20853**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
