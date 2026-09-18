@@ -163,3 +163,21 @@ test('ein Analyseauftrag verlangt die abschliessende Einordnung, ein Nachrichten
   // Der Auftrag selbst bleibt der Auftrag: die Anweisung veraendert die Kennung nicht.
   assert.match(analyse.input.instructions, /Bearbeite ausschließlich den konkreten Redaktionsauftrag/);
 });
+
+// 18.09.2026: Natalie wollte zwei angehaltene Analysen neu recherchieren lassen.
+// Die Nachlieferung braucht ihre Kennzeile unversehrt, sonst ist sie ein neuer
+// Auftrag ohne die bisherige Fassung.
+test('eine Nachlieferung behaelt ihre Kennzeile und damit die bisherige Fassung', async () => {
+  const { supplementTarget, supplementBrief } = await import('../../scripts/news/editorial-supplement.mjs');
+  const ziel = 'wt_20260910T214602Z_47530b2964926efdd144f4df';
+  const { job } = orderRequest({ kind: 'opinion_analysis', owner: '1206956406805102593', at: '2026-09-18T18:00:00.000Z', links: ['https://example.org/studie'],
+    brief: supplementBrief(ziel, 'Bitte neu recherchieren:\n\nEinstieg ohne Bezug auf das Auftragsmaterial, Quellen selbst prüfen und belegen.') });
+  assert.equal(supplementTarget(job.input.request.brief), ziel, 'der Worker erkennt die Nachlieferung');
+  assert.match(job.input.request.brief, /\n\nBitte neu recherchieren: Einstieg ohne Bezug/);
+  assert.doesNotMatch(job.candidate.title, /Nachlieferung zu Auftrag/, 'die Kennzeile ist Technik, kein Titel');
+  // Ein gewoehnlicher Auftrag bleibt, wie er war.
+  const { job: normal } = orderRequest({ kind: 'news', owner: '1206956406805102593', at: '2026-09-18T18:00:00.000Z', links: ['https://example.org/a'],
+    brief: 'Drohnenfund am Fliegerhorst:\n\n  Bundeswehr bestätigt dasselbe Modell wie in Leipzig.' });
+  assert.equal(normal.input.request.brief, 'Drohnenfund am Fliegerhorst: Bundeswehr bestätigt dasselbe Modell wie in Leipzig.');
+  assert.equal(supplementTarget(normal.input.request.brief), null);
+});

@@ -14,6 +14,7 @@ import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
+import { supplementTarget, supplementText, supplementBrief } from './editorial-supplement.mjs';
 
 export const ORDER_ACTOR = 'github-auftrag-einreichen';
 export const KINDS = ['news', 'opinion_analysis', 'book_review', 'listened', 'watched'];
@@ -22,12 +23,17 @@ const SKIP = new Set(['BRIDGE_NOT_CONFIGURED', 'BRIDGE_LANE_BUSY', 'BRIDGE_UNREA
 
 export function orderRequest({ kind, brief, links = [], authorNotes = '', owner, at }) {
   if (!KINDS.includes(kind)) throw new Error('ORDER_KIND_INVALID');
-  const text = String(brief || '').replace(/\s+/g, ' ').trim();
+  // Eine Nachlieferung traegt ihre Bindung in einer eigenen ersten Zeile
+  // (editorial-supplement.mjs). Das Zusammenfassen der Leerzeichen hat diese
+  // Zeile bisher mit dem Text verschmolzen - der Worker hielt die Nachlieferung
+  // dann fuer einen neuen Auftrag ohne die bisherige Fassung (18.09.2026).
+  const target = supplementTarget(brief);
+  const text = String(target ? supplementText(brief) : brief || '').replace(/\s+/g, ' ').trim();
   if (text.length < 40) throw new Error('ORDER_BRIEF_TOO_SHORT');
   const quellen = [...new Set(links.map((url) => String(url || '').trim()).filter((url) => /^https:\/\//.test(url)))].slice(0, 6);
   if (!quellen.length) throw new Error('ORDER_LINK_REQUIRED');
   if (!/^\d{15,22}$/.test(owner || '')) throw new Error('ORDER_OWNER_REQUIRED');
-  const content = { kind, brief: text.slice(0, 1800), links: quellen, author_notes: String(authorNotes || '').slice(0, 1200),
+  const content = { kind, brief: target ? supplementBrief(target, text.slice(0, 1760)) : text.slice(0, 1800), links: quellen, author_notes: String(authorNotes || '').slice(0, 1200),
     urgent: false, publication_intent: 'final_approval_required', attachments: [] };
   // Derselbe Auftrag zweimal eingereicht ergibt dieselbe Kennung: kein Doppelentwurf.
   const fingerprint = hash({ kind, brief: content.brief, links: quellen });
@@ -52,7 +58,7 @@ export function orderRequest({ kind, brief, links = [], authorNotes = '', owner,
       ...(kind === 'news' ? [] : ['Letzte redaktionelle Hauptsektion mit dem sichtbaren Titel „Meine Einordnung": Gewichtung der belegten Befunde nach der wirkungsökonomischen Methodik (Folgen vor Fakten, Nichtkompensation, materielle Schutzgrenzen, Korrekturfähigkeit). Keine erfundenen Erlebnisse, keine neuen Fakten, keine behauptete eigene Prüfung - und keine Rückfrage oder Anrede an die Redaktion im Text.']),
     ].join(' ') };
   const candidate = { story_id: `wt-${fingerprint.slice(0, 16)}`, event_id: `manual-${fingerprint.slice(0, 16)}`,
-    content_hash: fingerprint, title: content.brief.slice(0, 150), sources: quellen.map((url) => ({ url, title: content.brief.slice(0, 120) })) };
+    content_hash: fingerprint, title: text.slice(0, 150), sources: quellen.map((url) => ({ url, title: text.slice(0, 120) })) };
   const job = { input, candidate, status: 'queued', created_at: at, queued_at: at, attempts: {},
     intake: { owner, draft_id: null, kind, fingerprint, run_id: `manual-order-${jobId}`,
       trigger_type: 'manual_order', triggered_at: at, triggered_by: ORDER_ACTOR } };

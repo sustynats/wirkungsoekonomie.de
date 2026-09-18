@@ -91,3 +91,19 @@ test('die Anweisung verlangt die Ableitung aus der Methodik, keine Rueckfrage', 
     }
   }
 });
+
+// 18.09.2026: ein Analyseentwurf begann unter der Zeile „privater Entwurf zur
+// finalen Freigabe" mit „Vier von Natalie bereitgestellte Screenshots ...".
+// Ein Beitrag spricht nie ueber seine Entstehung.
+test('Verweise auf Auftrag, Auftragsmaterial und Entwurfsstatus sind Verfahrensvermerke', async () => {
+  const { PROCESS_NOTE_PATTERN } = await import('../../scripts/news/reader-copy.mjs');
+  for (const vermerk of ['Meinung & Analyse – privater Entwurf zur finalen Freigabe', 'Vier von Natalie bereitgestellte Screenshots über die Schilderungen einer früheren Sexarbeiterin',
+    'Der Entwurf zur finalen Freigabe', 'Laut Rechercheauftrag soll der Text', 'die hochgeladenen Screenshots zeigen', 'vier beigefügte JPEG-Dateien'])
+    assert.equal(PROCESS_NOTE_PATTERN.test(vermerk), true, vermerk);
+  // Berichterstattung ueber Screenshots, Dateien oder Entwuerfe bleibt erlaubt.
+  for (const bericht of ['Auf der Leak-Site sei von einer beendeten Auktion und hochgeladenen Dateien die Rede.', 'Die Polizei veröffentlichte Screenshots der Chats.',
+    'Von der Behörde bereitgestellte Unterlagen belegen den Ablauf.', 'Der Bundestag stimmte dem Entwurf zu.', 'Natalie Weber ist Ökonomin.'])
+    assert.equal(PROCESS_NOTE_PATTERN.test(bericht), false, bericht);
+  const { editorialKnowledge } = await import('../../scripts/news/bridge/editorial-knowledge.mjs');
+  assert.match(editorialKnowledge(process.cwd()).instructions, /spricht nie über seine Entstehung/, 'das Modell kennt die Regel, der Riegel faengt den Rest');
+});

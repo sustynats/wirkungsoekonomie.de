@@ -7,7 +7,7 @@ import { IMPACT_RULE } from '../impact-assessment.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { sourceAccess } from '../access-policy.mjs';
 
-export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-18-eigene-einordnung';
+export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-18-ohne-entstehung';
 export function editorialKnowledge(root) {
   const sources = ['AGENTS.md', 'docs/news/IMPACT-SEMANTICS-2.1.md',
     'source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md'];
@@ -33,6 +33,8 @@ export function editorialKnowledge(root) {
     // dieser Auftrag vollständig mitliefert.
     'Meine Einordnung ist die Anwendung der wirkungsökonomischen Methodik auf die belegten Befunde dieses Beitrags: Folgen vor Fakten, Nichtkompensation und Reverse Merit Order, materielle Schutzgrenzen, Korrekturfähigkeit und Systemresilienz. Gewichte damit, was der Beitrag belegt hat, und benenne offene Stellen als offen. Keine neuen Fakten, keine erfundenen Erlebnisse, keine behauptete eigene Prüfung.',
     'Niemals eine Frage, eine Aufgabe oder eine Anrede an die Redaktion in den Text schreiben - auch nicht als Hinweis, Vorbehalt oder Klammer. Wenn die Methodik den Befund nicht tragen kann, gehört das in das vorgesehene HOLD mit Code, nicht in den Beitrag.',
+    // 18.09.2026: ein Entwurf begann mit "Vier von Natalie bereitgestellte Screenshots ..." unter der Zeile "privater Entwurf zur finalen Freigabe".
+    'Der Beitrag spricht nie über seine Entstehung: kein Hinweis auf Auftrag, Rechercheauftrag, Anhänge, Screenshots oder anderes eingereichtes Material, auf Natalie als Auftraggeberin oder Lieferantin von Material, auf Entwurf, Fassung oder Freigabe. Eingereichtes Material ist Anlass und Hinweis, kein Beleg; der Text beginnt bei der Sache und belegt sie mit Quellen, die du selbst gelesen hast.',
     'Meinung & Analyse, Buch & Wirkung, Nachgehört und Nachgesehen erscheinen erst nach der abschließenden Freigabe der Herausgeberin. Dieser Vorbehalt ist ein Verfahrensvermerk und darf im Text nicht vorkommen. Die letzte Hauptsektion heißt Meine Einordnung. Quellen und formale Werkmetadaten dürfen folgen.',
     'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen. Eine passende Tabelle oder ein erklärendes Diagramm nutzen, wenn es hilft. Keine dekorativen Diagramme oder erfundenen Zahlen.',
     'Originalveröffentlichungsdaten bewahren. Maßnahme, Potenzial, erste Signale und beobachtete Folgen getrennt. Ein belegter Schaden allein beweist keine Klimaattribution.',
@@ -63,7 +65,10 @@ export function editorialKnowledge(root) {
     // Stand vor der Korrektur vom 18.09.2026 (Meine Einordnung leitet die
     // Haltung ab, statt zurueckzufragen). Schon bezahlte Antworten bleiben
     // einlesbar; alle aktuellen Gates gelten unveraendert weiter.
-    '22864ef24d6d292048c36b7197788a783ea9e46d13e0e1cee43f3ee0d47402b7'];
+    '22864ef24d6d292048c36b7197788a783ea9e46d13e0e1cee43f3ee0d47402b7',
+    // Stand vor der Regel vom 18.09.2026 abends (der Beitrag spricht nie ueber
+    // seine Entstehung). Bezahlte Antworten bleiben einlesbar, Gates gelten.
+    '4f9341a2eb235002ddee351c1c9589da89c59b75c0fdabb8359f2c8c278c0d8e'];
   const access = new Map(), candidates = new Set(), seenHosts = new Set();
   for (const source of loadNewsRegistry(root).sources) {
     for (const url of [source.url, source.feed_url].filter(Boolean)) {

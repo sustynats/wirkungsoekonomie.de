@@ -1,0 +1,58 @@
+name: Nachrecherche einer Rückgabe
+
+# Natalie am 18.09.2026: „Da muss man einfach nochmal recherchieren." Die
+# zurückgegebene Überarbeitung wird mit Kommentaren und bisheriger Fassung erneut
+# eingereiht, dazu frei lesbare Quellen. Das Ergebnis erscheint in derselben
+# Freigabe-Karte; veröffentlicht wird nur durch ihre Freigabe.
+on:
+  workflow_dispatch:
+    inputs:
+      review:
+        description: "Kennung der zurückgegebenen Freigabe (wt_…)"
+        required: true
+        type: string
+      links:
+        description: "Frei lesbare Quellen, durch Leerzeichen getrennt (https)"
+        required: true
+        type: string
+      hinweis:
+        description: "Zusätzlicher Rechercheauftrag (optional, ohne Beitragstext)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: redaktionsworker
+  cancel-in-progress: false
+
+jobs:
+  einreihen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      WOEK_RESEARCH_REVIEW: ${{ inputs.review }}
+      WOEK_RESEARCH_LINKS: ${{ inputs.links }}
+      WOEK_RESEARCH_NOTE: ${{ inputs.hinweis }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            scripts/news/nachrecherche.mjs
+            scripts/news/bridge/remote.mjs
+            scripts/news/bridge/acquire-lane.mjs
+            scripts/news/bridge/contract.mjs
+            scripts/news/bridge/research-source-schema.mjs
+            scripts/news/request-deadline.mjs
+          sparse-checkout-cone-mode: false
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Überarbeitung mit Nachrecherche einreihen
+        run: node scripts/news/nachrecherche.mjs

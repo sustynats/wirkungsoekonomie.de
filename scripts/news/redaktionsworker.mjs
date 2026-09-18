@@ -41,8 +41,10 @@ const isoDay = (value) => String(value).slice(0, 10);
 // Budget sagt oder die Grenze pro Stunde." Ein Auftrag, den sie selbst gestellt
 // hat, traegt eine draft_id (aus der App) oder einen ausdruecklichen
 // Ausloesertyp. Automatische Vorschlaege tragen beides nicht.
+// Eine Nachrecherche hat Natalie selbst angestossen (nachrecherche.mjs); sie
+// behaelt ihren trigger_type, damit eine Korrekturfassung als solche kenntlich bleibt.
 export const manualRequest = (row) => Boolean(row?.intake?.draft_id)
-  || /^manual/.test(String(row?.intake?.trigger_type || ''));
+  || /^manual/.test(String(row?.intake?.trigger_type || '')) || row?.intake?.manual_research === true;
 
 // Ein Auftrag ist liegengeblieben, wenn sein bezahlter Versuch nichts
 // abgeliefert hat - dieselbe Regel, mit der processEditorialRequest ihn
