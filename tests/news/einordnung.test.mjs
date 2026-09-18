@@ -102,6 +102,21 @@ test('der Uebernahme-Lauf hat seinen vollstaendigen Abhaengigkeitsbaum im sparse
     }
   };
   besuche('scripts/news/einordnung.mjs');
+  // Code-Importe reichen nicht: am 18.09.2026 brach der Lauf beim Laden ab,
+  // weil show-identity.mjs eine Datendatei liest, die der Checkout nicht hatte.
+  // Mitgeprueft werden deshalb Dateilesungen relativ zum Modul, Daten-Literale
+  // und die Portraitbilder, deren Existenz die Ablage beim Laden verlangt.
+  const daten = new Set();
+  for (const datei of besucht) {
+    const code = fs.readFileSync(path.join(root, datei), 'utf8');
+    for (const treffer of code.matchAll(/new URL\(['"](\.\.?\/[^'"]+\.(?:json|jpe?g|png|svg))['"],\s*import\.meta\.url\)/g)) {
+      daten.add(path.posix.normalize(path.posix.join(path.posix.dirname(datei), treffer[1])));
+    }
+    for (const treffer of code.matchAll(/['"](data\/[A-Za-z0-9_./-]+\.json)['"]/g)) daten.add(treffer[1]);
+    for (const treffer of code.matchAll(/['"]\/?(assets\/img\/people\/[A-Za-z0-9_.-]+)['"]/g)) daten.add(treffer[1]);
+  }
+  assert.ok(daten.size >= 5, `zu wenige Datendateien erkannt: ${[...daten].join(', ')}`);
+  for (const datei of daten) assert.ok(checkout.includes(datei), `Der Checkout vermisst die Datendatei ${datei}`);
 });
 
 // Stuendliche Laeufe treffen denselben Beitrag wieder, solange Natalie noch

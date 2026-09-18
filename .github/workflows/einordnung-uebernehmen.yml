@@ -59,6 +59,11 @@ jobs:
             scripts/news/request-deadline.mjs
             scripts/news/show-identity.mjs
             data/news/personal-editorials.json
+            data/news/editorial-revisions.json
+            data/news/show-visual-identities.json
+            assets/img/people/nats_portrait_nachgehoert.jpg
+            assets/img/people/natalie-weber-buch-und-wirkung.jpeg
+            assets/img/people/natalie-weber-woek-analyse.jpg
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:
@@ -89,7 +94,15 @@ jobs:
           ERGEBNIS: ${{ steps.einreihen.outcome }}
         run: |
           set -euo pipefail
-          RESULT="$(tail -n 1 einordnung-result.json 2>/dev/null || echo '{"status":"failed"}')"
+          RESULT="$(tail -n 1 einordnung-result.json 2>/dev/null || true)"
+          # Am 18.09.2026 stand hier ein leerer Block: der Lauf brach beim Laden
+          # ab, bevor er eine Zeile schrieb. Die Aufgabe auf ChatGPT-Seite sah
+          # "failure" ohne Code und konnte nicht wissen, dass der Fehler bei uns
+          # lag. Ein technischer Fehler heisst deshalb ausdruecklich so - und
+          # verlangt keine Aenderung am Text.
+          if ! printf '%s' "$RESULT" | grep -q '"status"'; then
+            RESULT='{"status":"failed","error":"EINORDNUNG_TECHNISCHER_FEHLER","hinweis":"Fehler auf unserer Seite, nicht im Text. Den Text nicht aendern; das Issue bleibt offen und wird erneut verarbeitet."}'
+          fi
           printf 'Einordnung %s\n\n```json\n%s\n```\n\nVeroeffentlicht wird nichts ohne Freigabe in der Redaktions-App.\n' "$ERGEBNIS" "$RESULT" > kommentar.txt
           gh issue comment "$ISSUE_NUMBER" --repo "$GH_REPO" --body-file kommentar.txt
           if [ "$ERGEBNIS" = "success" ]; then gh issue close "$ISSUE_NUMBER" --repo "$GH_REPO" --reason completed; fi
