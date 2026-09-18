@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-18T11:37:26.652Z",
+  "last_successful_run": "2026-09-18T11:52:22.063Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -100246,6 +100246,15 @@
     }
   },
   "pending_story_ids": [
+    "wt-e0bb001050d68925",
+    "wt-5c6b51d604817628",
+    "wt-b1e97ddbf4a64f58",
+    "wt-7e3c3b27ff10b4a7",
+    "wt-020966d3b3f330bd",
+    "wt-d0ec9deb29e99b76",
+    "wt-4f74a48346e32121",
+    "wt-ffa84c25fc6ac594",
+    "wt-a6005a9e81a9b139",
     "wt-39f475d7d4ecae4e",
     "wt-43949a46e3e57f10",
     "wt-8818b0d27bdff1ae",
@@ -100293,7 +100302,6 @@
     "wt-d705da486b16f47c",
     "wt-1189c9eb2052f418",
     "wt-dd1cd7879ac49102",
-    "wt-020966d3b3f330bd",
     "wt-2ae9509475d54cc6",
     "wt-1d06a09832b71956",
     "wt-bca8154ff3a793f3",
@@ -100592,10 +100600,6 @@
     "wt-79b522331203406b",
     "wt-9ae90e3cf060f79b",
     "wt-6f96f69f95338adb",
-    "wt-12b988b1595d9c34",
-    "wt-af77a996bbcfaa67",
-    "wt-67d22bd375fae7d9",
-    "wt-b5c51a01e53e3c91",
     "wt-d42674aa9def5b66",
     "wt-d112492bfaba453d",
     "wt-24a834933b5dbb25",
@@ -100873,19 +100877,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-450b6403101f043f",
-    "wt-e0bb001050d68925",
-    "wt-b1e97ddbf4a64f58",
-    "wt-7e3c3b27ff10b4a7",
-    "wt-d0ec9deb29e99b76",
-    "wt-a6005a9e81a9b139",
-    "wt-5c6b51d604817628",
-    "wt-4f74a48346e32121",
-    "wt-ffa84c25fc6ac594"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-18T11:37:26.652Z",
+  "last_attempted_run": "2026-09-18T11:52:22.063Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1481,
@@ -102149,24 +102144,24 @@
       "last_modified": null
     },
     "zdf-politics-index": {
-      "last_attempt": "2026-09-18T10:37:52.736Z",
+      "last_attempt": "2026-09-18T11:52:22.063Z",
       "source_id": "zdfheute-nachrichten",
       "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-politik.xml",
-      "last_success": "2026-09-18T10:37:52.736Z",
-      "items": 0,
-      "last_error": null,
-      "etag": null,
-      "last_modified": "Fri, 18 Sep 2026 09:48:33 GMT"
-    },
-    "zdf-economy-index": {
-      "last_attempt": "2026-09-18T10:37:52.736Z",
-      "source_id": "zdfheute-nachrichten",
-      "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-wirtschaft.xml",
-      "last_success": "2026-09-18T10:37:52.736Z",
+      "last_success": "2026-09-18T11:52:22.063Z",
       "items": 1,
       "last_error": null,
       "etag": null,
-      "last_modified": "Fri, 18 Sep 2026 09:48:34 GMT"
+      "last_modified": "Fri, 18 Sep 2026 11:48:32 GMT"
+    },
+    "zdf-economy-index": {
+      "last_attempt": "2026-09-18T11:52:22.063Z",
+      "source_id": "zdfheute-nachrichten",
+      "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-wirtschaft.xml",
+      "last_success": "2026-09-18T11:52:22.063Z",
+      "items": 1,
+      "last_error": null,
+      "etag": null,
+      "last_modified": "Fri, 18 Sep 2026 11:48:33 GMT"
     }
   },
   "agenda_watch": [
@@ -104441,6 +104436,16 @@
       "input_hash": "e0a518ab09f907bd830a3bab",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-18T11:37:26.652Z"
+    },
+    "wt-450b6403101f043f": {
+      "input_hash": "e9b0bfc7fd590e5b69b1c29c",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-18T11:52:22.063Z"
+    },
+    "wt-e0bb001050d68925": {
+      "input_hash": "e0a518ab09f907bd830a3bab",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-18T11:52:22.063Z"
     }
   }
 }
