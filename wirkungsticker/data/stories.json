@@ -2,8 +2,1066 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T10:37:52.736Z",
+  "updated_at": "2026-09-18T10:53:08.639Z",
   "stories": [
+    {
+      "story_id": "wt-f196694f5c601438",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f196694f5c601438-cf58c40536897d1b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f196694f5c601438-7250e940c7eb9383-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f196694f5c601438-a7f96db0d1f49c5e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "versuchter-totschlag-nach-messerangriff-in-dresden-anklage-gegen-36-jahrigen-601438",
+      "title": "Laut Staatsanwaltschaft: Anklage gegen 36-Jährigen nach Messerangriff in Dresden",
+      "source_summary": "Der Stern berichtet über eine Anklage der Staatsanwaltschaft gegen einen 36-Jährigen nach einem Messerangriff in Dresden. Dem Bericht zufolge soll ein Mann bei einem muslimischen Opferfest einen Bekannten mit einem Messer lebensgefährlich verletzt haben. Als Vorwurf wird versuchter Totschlag genannt.\n\nDie vorliegenden Angaben stammen aus einer journalistischen Darstellung des Sterns; eine unabhängige Bestätigung oder ein primärer Beleg ist nicht geliefert. Der genaue Inhalt der Anklage bleibt deshalb offen. Ebenfalls nicht geklärt sind die gerichtliche Bewertung und die Beweislage. Die Darstellung belegt damit den Bericht über die Anklage, nicht den Tatvorwurf als erwiesen.\n\nOffen bleiben außerdem der genaue Tatablauf, das Motiv und die Verletzungsfolgen. Der Vorgang befindet sich nach der vorliegenden Akte in laufender Entwicklung. Die Anklage ist ein Verfahrensschritt; sie ersetzt weder ein Urteil noch einen Nachweis der Schuld. Für die weitere Einordnung wären belastbare Angaben aus dem Verfahren und eine unabhängige Bestätigung des zentralen Sachverhalts erforderlich.",
+      "summary": "Die Staatsanwaltschaft hat laut stern Anklage gegen einen 36-Jährigen nach einem Messerangriff in Dresden erhoben. Tatablauf, Beweislage, Motiv und gerichtliche Bewertung bleiben offen.",
+      "detail_summary": "Der stern berichtet über eine Anklage der Staatsanwaltschaft gegen einen 36-Jährigen nach einem Messerangriff in Dresden. Der Titel ordnet den Vorwurf als versuchten Totschlag ein; im Kurztext ist von einem lebensgefährlich verletzten Bekannten die Rede. Diese Angaben stammen aus einer einzigen journalistischen Quelle und sind nicht unabhängig bestätigt. Für Betroffene kann das Verfahren klären, welche Vorwürfe tatsächlich erhoben werden und welche Schutz- oder Unterstützungsbedarfe bestehen. Institutionell kann die Anklage eine gerichtliche Prüfung des Falls anstoßen, sagt aber noch nichts über Schuld oder eine spätere Entscheidung aus. Der vollständige Anklageinhalt, der Tatablauf, die Beweislage, das Motiv und die gerichtliche Bewertung bleiben offen.",
+      "why_relevant": "Eine Anklage nach einem Messerangriff markiert eine neue institutionelle Verfahrensstufe. Ihre Bedeutung bleibt wegen der Einzelquelle und des unvollständigen Anklageinhalts begrenzt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über eine von der Staatsanwaltschaft erhobene Anklage nach einem Messerangriff in Dresden",
+        "evaluation_target": {
+          "label": "Öffentliche und institutionelle Folgen der berichteten Anklage",
+          "type": "event"
+        },
+        "baseline": "Vor der berichteten Anklage lagen im gelieferten Material keine näheren Angaben zur gerichtlichen Klärung vor.",
+        "counterfactual": "Ohne die berichtete Anklage könnte der Fall zunächst auf Ermittlungs- oder Vorprüfungsstufe bleiben; weitere Folgen hängen von tatsächlichen Verfahrensschritten ab.",
+        "reference_frame": [
+          "Rechtsstaatliches Verfahren",
+          "Schutz und Unterstützung Betroffener",
+          "Demokratische Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Für Betroffene und Angehörige könnten Verfahren und öffentliche Aufmerksamkeit Belastungen oder Zugang zu Klärung erzeugen. Schutz- und Unterstützungsfolgen sind nicht gemessen.",
+            "planet": "Für ökologische Systeme ist aus dem berichteten Einzelereignis kein belastbarer Wirkpfad erkennbar. Ein vernachlässigbarer Pfad wird modelliert.",
+            "democracy": "Die Anklage könnte die institutionelle Bearbeitung eines schweren Vorwurfs und öffentliche Sicherheitsdebatten beeinflussen. Eine allgemeine Wirkung auf Vertrauen oder Diskurs ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die berichtete Anklage könnte eine gerichtliche Prüfung und zusätzliche öffentliche Aufmerksamkeit auslösen.",
+          "second_order": "Verfahrensfortschritte könnten die Einordnung des Vorwurfs präzisieren; zugleich könnte die zugeschriebene Darstellung vor einem Urteil Vorverurteilung fördern.",
+          "third_order": "Der Fall könnte punktuell Sicherheits- und Verantwortungsdebatten beeinflussen, ohne dass eine Übertragung auf allgemeine Entwicklungen belegt ist.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Es liegen keine unabhängige Bestätigung, kein vollständiger Anklageinhalt und keine belastbaren Wirkungsdaten vor.",
+            "Der einzelne Fall belegt keinen allgemeinen Sicherheits- oder Vertrauenswandel."
+          ],
+          "source_independence": "Nur eine journalistische Herkunft ist geliefert; Unabhängigkeit ist nicht verifiziert. Die Quelle belegt die eigene Berichterstattung und zugeschriebene Aussagen, nicht deren abschließende Wahrheit.",
+          "institutional_status": "Berichtet ist eine Anklage als laufende Verfahrensstufe. Ein Urteil, eine gerichtliche Bewertung und ein rechtskräftiger Schuldspruch sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine eingetretene Wirkung auf Betroffene; modellierbar bleibt nur ein bedingter Belastungs- und Verfahrenspfad.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die berichtete Anklage könnte für Betroffene und Angehörige zusätzliche Verfahrens- und Öffentlichkeitsbelastungen erzeugen. Eine gerichtliche Klärung könnte zugleich Orientierung schaffen, ist aber nicht als Wirkung belegt.",
+            "primary_paths": [
+              {
+                "label": "Öffentliche und verfahrensbezogene Belastung Betroffener",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Anklage und ihre öffentliche Darstellung könnten die Aufmerksamkeit auf Betroffene und Angehörige erhöhen und dadurch Belastungen verstärken.",
+                "recipients": [
+                  "betroffene Person",
+                  "Angehörige"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite bleibt auf den Einzelfall und sein Umfeld begrenzt; Intensität und Dauer hängen vom Verfahren und der Berichterstattung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der berichtete Vorgang betrifft einen einzelnen Fall und sein unmittelbares Umfeld.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein lebensgefährlicher Verletzungsvorwurf kann für Betroffene besonders belastend sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Verfahrens- und Öffentlichkeitsbelastungen könnten über die nächste Verfahrensstufe hinaus anhalten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Öffentliche Zuschreibungen können nachträglich nur teilweise korrigiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Betroffene eines berichteten Gewaltvorwurfs könnten gegenüber zusätzlicher Aufmerksamkeit besonders verletzlich sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt überwiegend auf individuelle und verfahrensbezogene Folgen begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist im gelieferten Material nicht beschrieben; Schutzbedarf bleibt gleichwohl zu prüfen.",
+                  "reference_frame": "Schutz und Würde Betroffener",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Berichterstattung öffentlich wahrgenommen wird und keine ausreichenden Schutz- und Korrekturmechanismen greifen.",
+                "reference_space": "Betroffene, Angehörige und das gerichtliche Umfeld in Dresden",
+                "time_horizon": "Während der weiteren Verfahrensentwicklung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die öffentliche Darstellung wird wahrgenommen und beeinflusst die soziale Situation der Betroffenen; das ist nicht gemessen.",
+                "source_support": "Die Quelle trägt die Anklage und die zugeschriebenen Vorwürfe, nicht deren Wirkung auf Menschen.",
+                "limitations": "Keine Daten zu Belastung, Reichweite, Schutzmaßnahmen oder tatsächlicher Wahrnehmung.",
+                "first_order": "Mögliche zusätzliche Belastung durch Verfahren und öffentliche Aufmerksamkeit.",
+                "second_order": "Mögliche Zurückhaltung bei Hilfe- oder Unterstützungszugängen, falls Vorverurteilungen entstehen.",
+                "third_order": "Eine längerfristige soziale Belastung ist möglich, aber aus der Einzelquelle nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten in der gelieferten Quelle; Eintritt, Reichweite und Dauer bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht mit belastbaren Quellen belegt; die mögliche gerichtliche Klärung begrenzt die negative Einordnung nicht als Ausgleich."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Öffentliche und verfahrensbezogene Belastung Betroffener",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Öffentliche und verfahrensbezogene Belastung Betroffener",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keinen belastbaren ökologischen Bezug und keine Messwerte; ein planetarer Pfad ist im beschriebenen Ereignisraum praktisch vernachlässigbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der berichtete Einzelvorgang enthält keinen erkennbaren Mechanismus für eine materielle Zustandsänderung von Umwelt oder Klima. Der Pfad wird daher begründet als vernachlässigbar modelliert.",
+            "primary_paths": [
+              {
+                "label": "Keine materielle ökologische Zustandsänderung im berichteten Ereignisraum",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Das berichtete Ereignis betrifft eine Anklage nach einem Messerangriff; ein ökologischer Übertragungsmechanismus ist nicht beschrieben.",
+                "recipients": [
+                  "ökologische Systeme im berichteten Ereignisraum"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Die Quelle liefert keinen ökologischen Bezug oder Mechanismus; eine materielle Veränderung ist im abgegrenzten Raum praktisch vernachlässigbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Wirkraum ist in der Quelle beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Belastung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist aus dem Bericht ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung ist berichtet oder plausibel konkretisiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine betroffenen ökologischen Schutzgüter werden genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systempfad wird durch den Bericht erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird durch den berichteten Sachverhalt nicht berührt.",
+                  "reference_frame": "Ökologische Schutzgüter",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur bei zusätzlichen, nicht gelieferten Informationen zu materiellen Umweltfolgen wäre dieser Pfad neu zu bewerten.",
+                "reference_space": "Im Bericht beschriebener Ereignisraum",
+                "time_horizon": "Kurz- bis langfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die gelieferte Darstellung erfasst den für die ökologische Einordnung relevanten Sachverhalt.",
+                "source_support": "Die Quelle berichtet über eine Anklage nach einem Messerangriff, nicht über Umweltfolgen.",
+                "limitations": "Keine Umweltmessungen, keine räumlichen Angaben zu ökologischen Gütern und keine Mechanismusbelege.",
+                "first_order": "Keine materielle ökologische Zustandsänderung erkennbar.",
+                "second_order": "Keine nachgelagerte ökologische Folge aus dem Beleg ableitbar.",
+                "third_order": "Kein systemischer ökologischer Pfad im abgegrenzten Ereignis erkennbar.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen ökologischen Mechanismus oder Wirkungsnachweis.",
+                "negligibility_rationale": "Für den berichteten Einzelvorgang fehlt jeder konkrete ökologische Wirkmechanismus; eine materielle Veränderung ist daher im definierten Raum und Zeitraum vernachlässigbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren materiellen ökologischen Hauptpfad; die Einordnung beruht auf dem fehlenden Gegenstand im gelieferten Bericht."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine materielle ökologische Zustandsänderung im berichteten Ereignisraum",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine materielle ökologische Zustandsänderung im berichteten Ereignisraum",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine Veränderung von Vertrauen oder Institutionen; modellierbar ist nur ein bedingtes Risiko für Vorverurteilung und Sicherheitsdiskurs.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Anklage könnte institutionelle Klärung ermöglichen, doch die zugeschriebene Darstellung schwerer Vorwürfe könnte vor einer gerichtlichen Bewertung Vorverurteilungen und vereinfachte Sicherheitsdebatten begünstigen.",
+            "primary_paths": [
+              {
+                "label": "Vorverurteilung vor gerichtlicher Bewertung",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die öffentliche Verbindung von Messerangriff, schwerem Vorwurf und Anklage könnte die Wahrnehmung des Falls vor der gerichtlichen Prüfung verengen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Justiz und Verfahrensbeteiligte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Diskurseffekt bleibt auf den Einzelfall bezogen, könnte aber bei hoher Aufmerksamkeit die Wahrnehmung eines fairen Verfahrens berühren."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle berichtet über einen einzelnen Fall ohne belegte breite Verbreitung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Schwere Vorwürfe können die öffentliche Einordnung vor einem Urteil deutlich prägen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein vorgeprägtes Bild könnte während des weiteren Verfahrens fortwirken.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Spätere gerichtliche Klärung kann Vorprägungen korrigieren, aber nicht sicher vollständig zurücknehmen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Verfahrensbeteiligte und das Vertrauen in faire Klärung können gegenüber Vorverurteilung verletzlich sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte punktuell institutionelles Vertrauen und Sicherheitsdebatten berühren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt belegt; die Unschuldsvermutung bildet den maßgeblichen bedingten Schutzrahmen.",
+                  "reference_frame": "Faires Verfahren und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die zugeschriebene Darstellung vor einer gerichtlichen Bewertung breit wahrgenommen und nicht durch spätere Einordnung korrigiert wird.",
+                "reference_space": "Öffentliche Wahrnehmung und institutionelle Bearbeitung des Falls in Dresden",
+                "time_horizon": "Während der Berichterstattung und des weiteren Verfahrens",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Darstellung beeinflusst Wahrnehmungen von Schuld und Sicherheit; dafür liegen keine Publikums- oder Diskursdaten vor.",
+                "source_support": "Die Quelle trägt den Bericht über Anklage und Vorwürfe, nicht eine Veränderung von Vertrauen oder demokratischer Qualität.",
+                "limitations": "Keine unabhängige Berichterstattung, keine Rezeptionsdaten und keine gerichtliche Bewertung.",
+                "first_order": "Mögliche Vorprägung der öffentlichen Wahrnehmung.",
+                "second_order": "Mögliche Verengung der Debatte auf Schuldannahmen statt Verfahrensklärung.",
+                "third_order": "Ein längerfristiger institutioneller Vertrauenseffekt ist möglich, aber nicht belegt und nicht auf andere Fälle übertragbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Daten zu Vertrauen, Reichweite oder Diskurswirkung; der Pfad bleibt eine bedingte Hypothese mit hoher Unsicherheit.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver Hauptpfad durch gerichtliche Klärung ist als Möglichkeit erkennbar, aber nicht mit Wirkungsevidenz belegt und daher kein gleichwertiger Vergleichspfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Vorverurteilung vor gerichtlicher Bewertung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Vorverurteilung vor gerichtlicher Bewertung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T10:56:05.886Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Berichtete Anklage, zugeschriebene schwere Vorwürfe und offene Verfahrensfragen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine eingetretene Wirkung auf Betroffene; modellierbar bleibt nur ein bedingter Belastungs- und Verfahrenspfad.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die berichtete Anklage könnte für Betroffene und Angehörige zusätzliche Verfahrens- und Öffentlichkeitsbelastungen erzeugen. Eine gerichtliche Klärung könnte zugleich Orientierung schaffen, ist aber nicht als Wirkung belegt.",
+          "primary_paths": [
+            {
+              "label": "Öffentliche und verfahrensbezogene Belastung Betroffener",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Anklage und ihre öffentliche Darstellung könnten die Aufmerksamkeit auf Betroffene und Angehörige erhöhen und dadurch Belastungen verstärken.",
+              "recipients": [
+                "betroffene Person",
+                "Angehörige"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite bleibt auf den Einzelfall und sein Umfeld begrenzt; Intensität und Dauer hängen vom Verfahren und der Berichterstattung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der berichtete Vorgang betrifft einen einzelnen Fall und sein unmittelbares Umfeld.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein lebensgefährlicher Verletzungsvorwurf kann für Betroffene besonders belastend sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Verfahrens- und Öffentlichkeitsbelastungen könnten über die nächste Verfahrensstufe hinaus anhalten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Öffentliche Zuschreibungen können nachträglich nur teilweise korrigiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Betroffene eines berichteten Gewaltvorwurfs könnten gegenüber zusätzlicher Aufmerksamkeit besonders verletzlich sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt überwiegend auf individuelle und verfahrensbezogene Folgen begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist im gelieferten Material nicht beschrieben; Schutzbedarf bleibt gleichwohl zu prüfen.",
+                "reference_frame": "Schutz und Würde Betroffener",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Berichterstattung öffentlich wahrgenommen wird und keine ausreichenden Schutz- und Korrekturmechanismen greifen.",
+              "reference_space": "Betroffene, Angehörige und das gerichtliche Umfeld in Dresden",
+              "time_horizon": "Während der weiteren Verfahrensentwicklung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die öffentliche Darstellung wird wahrgenommen und beeinflusst die soziale Situation der Betroffenen; das ist nicht gemessen.",
+              "source_support": "Die Quelle trägt die Anklage und die zugeschriebenen Vorwürfe, nicht deren Wirkung auf Menschen.",
+              "limitations": "Keine Daten zu Belastung, Reichweite, Schutzmaßnahmen oder tatsächlicher Wahrnehmung.",
+              "first_order": "Mögliche zusätzliche Belastung durch Verfahren und öffentliche Aufmerksamkeit.",
+              "second_order": "Mögliche Zurückhaltung bei Hilfe- oder Unterstützungszugängen, falls Vorverurteilungen entstehen.",
+              "third_order": "Eine längerfristige soziale Belastung ist möglich, aber aus der Einzelquelle nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten in der gelieferten Quelle; Eintritt, Reichweite und Dauer bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht mit belastbaren Quellen belegt; die mögliche gerichtliche Klärung begrenzt die negative Einordnung nicht als Ausgleich."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Öffentliche und verfahrensbezogene Belastung Betroffener",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Öffentliche und verfahrensbezogene Belastung Betroffener",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keinen belastbaren ökologischen Bezug und keine Messwerte; ein planetarer Pfad ist im beschriebenen Ereignisraum praktisch vernachlässigbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der berichtete Einzelvorgang enthält keinen erkennbaren Mechanismus für eine materielle Zustandsänderung von Umwelt oder Klima. Der Pfad wird daher begründet als vernachlässigbar modelliert.",
+          "primary_paths": [
+            {
+              "label": "Keine materielle ökologische Zustandsänderung im berichteten Ereignisraum",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Das berichtete Ereignis betrifft eine Anklage nach einem Messerangriff; ein ökologischer Übertragungsmechanismus ist nicht beschrieben.",
+              "recipients": [
+                "ökologische Systeme im berichteten Ereignisraum"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Die Quelle liefert keinen ökologischen Bezug oder Mechanismus; eine materielle Veränderung ist im abgegrenzten Raum praktisch vernachlässigbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Wirkraum ist in der Quelle beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Belastung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist aus dem Bericht ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung ist berichtet oder plausibel konkretisiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine betroffenen ökologischen Schutzgüter werden genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systempfad wird durch den Bericht erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird durch den berichteten Sachverhalt nicht berührt.",
+                "reference_frame": "Ökologische Schutzgüter",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur bei zusätzlichen, nicht gelieferten Informationen zu materiellen Umweltfolgen wäre dieser Pfad neu zu bewerten.",
+              "reference_space": "Im Bericht beschriebener Ereignisraum",
+              "time_horizon": "Kurz- bis langfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die gelieferte Darstellung erfasst den für die ökologische Einordnung relevanten Sachverhalt.",
+              "source_support": "Die Quelle berichtet über eine Anklage nach einem Messerangriff, nicht über Umweltfolgen.",
+              "limitations": "Keine Umweltmessungen, keine räumlichen Angaben zu ökologischen Gütern und keine Mechanismusbelege.",
+              "first_order": "Keine materielle ökologische Zustandsänderung erkennbar.",
+              "second_order": "Keine nachgelagerte ökologische Folge aus dem Beleg ableitbar.",
+              "third_order": "Kein systemischer ökologischer Pfad im abgegrenzten Ereignis erkennbar.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen ökologischen Mechanismus oder Wirkungsnachweis.",
+              "negligibility_rationale": "Für den berichteten Einzelvorgang fehlt jeder konkrete ökologische Wirkmechanismus; eine materielle Veränderung ist daher im definierten Raum und Zeitraum vernachlässigbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren materiellen ökologischen Hauptpfad; die Einordnung beruht auf dem fehlenden Gegenstand im gelieferten Bericht."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine materielle ökologische Zustandsänderung im berichteten Ereignisraum",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine materielle ökologische Zustandsänderung im berichteten Ereignisraum",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine Veränderung von Vertrauen oder Institutionen; modellierbar ist nur ein bedingtes Risiko für Vorverurteilung und Sicherheitsdiskurs.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Anklage könnte institutionelle Klärung ermöglichen, doch die zugeschriebene Darstellung schwerer Vorwürfe könnte vor einer gerichtlichen Bewertung Vorverurteilungen und vereinfachte Sicherheitsdebatten begünstigen.",
+          "primary_paths": [
+            {
+              "label": "Vorverurteilung vor gerichtlicher Bewertung",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die öffentliche Verbindung von Messerangriff, schwerem Vorwurf und Anklage könnte die Wahrnehmung des Falls vor der gerichtlichen Prüfung verengen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Justiz und Verfahrensbeteiligte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Diskurseffekt bleibt auf den Einzelfall bezogen, könnte aber bei hoher Aufmerksamkeit die Wahrnehmung eines fairen Verfahrens berühren."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle berichtet über einen einzelnen Fall ohne belegte breite Verbreitung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Schwere Vorwürfe können die öffentliche Einordnung vor einem Urteil deutlich prägen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein vorgeprägtes Bild könnte während des weiteren Verfahrens fortwirken.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Spätere gerichtliche Klärung kann Vorprägungen korrigieren, aber nicht sicher vollständig zurücknehmen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Verfahrensbeteiligte und das Vertrauen in faire Klärung können gegenüber Vorverurteilung verletzlich sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte punktuell institutionelles Vertrauen und Sicherheitsdebatten berühren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt belegt; die Unschuldsvermutung bildet den maßgeblichen bedingten Schutzrahmen.",
+                "reference_frame": "Faires Verfahren und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die zugeschriebene Darstellung vor einer gerichtlichen Bewertung breit wahrgenommen und nicht durch spätere Einordnung korrigiert wird.",
+              "reference_space": "Öffentliche Wahrnehmung und institutionelle Bearbeitung des Falls in Dresden",
+              "time_horizon": "Während der Berichterstattung und des weiteren Verfahrens",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Darstellung beeinflusst Wahrnehmungen von Schuld und Sicherheit; dafür liegen keine Publikums- oder Diskursdaten vor.",
+              "source_support": "Die Quelle trägt den Bericht über Anklage und Vorwürfe, nicht eine Veränderung von Vertrauen oder demokratischer Qualität.",
+              "limitations": "Keine unabhängige Berichterstattung, keine Rezeptionsdaten und keine gerichtliche Bewertung.",
+              "first_order": "Mögliche Vorprägung der öffentlichen Wahrnehmung.",
+              "second_order": "Mögliche Verengung der Debatte auf Schuldannahmen statt Verfahrensklärung.",
+              "third_order": "Ein längerfristiger institutioneller Vertrauenseffekt ist möglich, aber nicht belegt und nicht auf andere Fälle übertragbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Daten zu Vertrauen, Reichweite oder Diskurswirkung; der Pfad bleibt eine bedingte Hypothese mit hoher Unsicherheit.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver Hauptpfad durch gerichtliche Klärung ist als Möglichkeit erkennbar, aber nicht mit Wirkungsevidenz belegt und daher kein gleichwertiger Vergleichspfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Vorverurteilung vor gerichtlicher Bewertung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Vorverurteilung vor gerichtlicher Bewertung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T10:53:08.639Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T09:07:56.000Z",
+      "last_updated": "2026-09-18T10:56:05.882Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-151b23af5f6ccd70cb13",
+      "case_file": null,
+      "source_published_at": "2026-09-18T09:07:56.000Z",
+      "published_at": "2026-09-18T09:25:38.605Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen sind der vollständige Anklageinhalt, der konkrete Tatvorwurf und die gerichtliche Einordnung.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Veröffentlichter vollständiger Anklageinhalt oder gerichtliche Mitteilung mit Tatvorwurf und Verfahrensstand",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-badb71fca9a18401",
+          "announced_at": "2026-09-18T09:07:56.000Z",
+          "follow_up_date": "2026-09-25T09:25:38.605Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Der vollständige Anklageinhalt und die gerichtliche Bewertung sind zu prüfen.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Veröffentlichter vollständiger Anklageinhalt oder eine gerichtliche Einordnung",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-39efedfbe0004e51",
+          "announced_at": "2026-09-18T09:07:56.000Z",
+          "follow_up_date": "2026-09-25T10:56:05.882Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen/versuchter-totschlag--nach-messerangriff-in-dresden--anklage-gegen-36-jaehrigen-38272172.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T09:07:56.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-1e97ba2918206370",
       "title_image": {
@@ -2062,1480 +3120,6 @@
           "url": "https://www.tagesspiegel.de/internationales/dpa-explosionen-mindestens-16-tote-bei-anschlag-mit-autobombe-in-pakistan-16069461.html",
           "source_type": "media_rss",
           "published_at": "2026-09-18T09:56:32.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f196694f5c601438",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f196694f5c601438-ef3d6993553ff184-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f196694f5c601438-476fe0cde3474a32-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f196694f5c601438-4d87b8682822b0af-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "versuchter-totschlag-nach-messerangriff-in-dresden-anklage-gegen-36-jahrigen-601438",
-      "title": "Laut Staatsanwaltschaft: Anklage gegen 36-Jährigen nach Messerangriff in Dresden",
-      "source_summary": "Der Stern berichtet über eine Anklage gegen einen 36-Jährigen nach einem Messerangriff in Dresden. Der Titel ordnet den Vorgang als versuchten Totschlag ein und nennt die Anklage als aktuellen Verfahrensschritt.\n\nIm Kurztext heißt es, ein Mann habe beim muslimischen Opferfest einen Bekannten lebensgefährlich verletzt. Die Staatsanwaltschaft erhebe schwere Vorwürfe. Diese Angaben beschreiben einen Vorwurf und keinen rechtskräftigen Schuldspruch.\n\nDie vorliegende Auswahl stammt aus einer journalistischen Quelle. Der vollständige Kontext der Originalmeldung sowie der genaue Anklageinhalt sind in den gelieferten Ausschnitten nicht enthalten; eine unabhängige Bestätigung liegt nicht vor.",
-      "summary": "Der Stern berichtet über eine Anklage gegen einen 36-Jährigen nach einem Messerangriff in Dresden. Der genaue Anklageinhalt und die gerichtliche Bewertung bleiben offen.",
-      "detail_summary": "Der Stern berichtet über eine Anklage gegen einen 36-Jährigen nach einem Messerangriff in Dresden. Laut dem vorliegenden Bericht soll ein Bekannter beim muslimischen Opferfest lebensgefährlich verletzt worden sein. Die Staatsanwaltschaft erhebt demnach schwere Vorwürfe; über Schuld oder Motiv ist damit noch nicht entschieden. Nachrichtenwert hat der neue Verfahrensschritt, weil er den Fall in ein gerichtliches Verfahren überführt. Die Auswahl beruht jedoch auf einer einzigen journalistischen Quelle, und der vollständige Anklageinhalt ist nicht enthalten.",
-      "why_relevant": "Eine Anklage markiert einen formellen Schritt im Strafverfahren; zugleich können Angaben zu Tat, Motiv und Schuld ohne vollständige Akte nicht als festgestellt gelten.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Bericht über eine Anklage gegen einen 36-Jährigen nach einem Messerangriff in Dresden",
-        "evaluation_target": {
-          "label": "Öffentliche und institutionelle Folgen der berichteten Anklage",
-          "type": "event"
-        },
-        "baseline": "Vor dem vorliegenden Bericht war der Anklageschritt in der gelieferten Quellenbasis nicht öffentlich eingeordnet.",
-        "counterfactual": "Ohne den Bericht könnte der formelle Verfahrensschritt in der betrachteten Öffentlichkeit weniger sichtbar sein; das Strafverfahren selbst könnte unabhängig davon fortgeführt werden.",
-        "reference_frame": [
-          "Unschuldsvermutung und faire gerichtliche Klärung",
-          "Schutz vor Gewalt und vor pauschalisierender Gruppenzuschreibung",
-          "Agenda 2030/SDG 16"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "medium",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Der mögliche negative Pfad betrifft Verletzte, Beschuldigten, Angehörige und die lokale Öffentlichkeit. Eine allgemeine Gesundheits- oder Versorgungslage ist nicht belegt.",
-            "planet": "Für ökologische Zustände, Ressourcen oder Emissionen ist aus dem berichteten Messerangriff kein materieller Wirkpfad ersichtlich.",
-            "democracy": "Der Bericht könnte die Wahrnehmung rechtsstaatlicher Strafverfolgung und den öffentlichen Diskurs beeinflussen; eine institutionelle Veränderung ist nicht belegt."
-          },
-          "central_dimensions": [
-            "human",
-            "democracy"
-          ],
-          "first_order": "Der Bericht könnte Aufmerksamkeit auf einen schweren Vorwurf und den formellen Verfahrensschritt lenken.",
-          "second_order": "Die öffentliche Deutung könnte je nach Einordnung entweder die Erwartung rechtsstaatlicher Prüfung stärken oder Vorverurteilungen und Gruppenzuschreibungen fördern.",
-          "third_order": "Bei wiederholter, unvollständiger Darstellung könnte sich ein verengtes Sicherheitsnarrativ verfestigen; belastbare Hinweise auf eine solche Entwicklung liegen nicht vor.",
-          "enablement": [
-            "normalisation_effect"
-          ],
-          "counter_evidence": [
-            "Die gerichtliche Prüfung kann unzutreffende oder unvollständige Vorwürfe korrigieren.",
-            "Der Bericht selbst weist die schweren Vorwürfe der Staatsanwaltschaft zu.",
-            "Für planetare Folgen gibt es keinen tragfähigen materiellen Pfad in der Quelle."
-          ],
-          "source_independence": "Nur eine journalistische Herkunft ist geliefert; unabhängige Bestätigung und vollständiger Primärbeleg fehlen.",
-          "institutional_status": "Eine Anklage ist ein Verfahrensschritt, kein Urteil. Der genaue gerichtliche Status über die Anklage hinaus ist nicht belegt."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt keinen Wirkungseintritt. Modellierbar ist nur der bedingte Pfad von öffentlicher Vorverurteilung oder Gruppenzuschreibung; Ausmaß und Eintritt bleiben offen.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "rationale": "Der mögliche negative Pfad betrifft Beschuldigten, Opferumfeld und potenziell die lokale Öffentlichkeit. Die Schwere des zugeschriebenen Verletzungsvorwurfs erhöht die mögliche Intensität, während Reichweite und Dauer des Medienimpulses unklar bleiben.",
-            "primary_paths": [
-              {
-                "label": "Öffentliche Vorverurteilung oder Stigmatisierung könnte Betroffene zusätzlich belasten",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Die Veröffentlichung eines schweren, noch nicht gerichtlich geklärten Vorwurfs kann die soziale Bewertung des Beschuldigten und seines Umfelds beeinflussen; der religiöse Kontext könnte bei fehlender Einordnung Gruppenzuschreibungen begünstigen.",
-                "recipients": [
-                  "Beschuldigter",
-                  "Opfer und Angehörige",
-                  "lokale Öffentlichkeit"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 4,
-                  "rationale": "Die mögliche Intensität ist wegen des schweren Vorwurfs substanziell, die Reichweite und Dauer sind wegen der Einzelquelle nicht bestimmt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Die Reichweite des einzelnen Berichts ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 3,
-                    "rationale": "Ein lebensgefährlicher Verletzungsvorwurf kann soziale und persönliche Belastungen verstärken.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die Dauer einer möglichen Belastung hängt von weiterer Berichterstattung und dem Verfahren ab.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Gerichtliche Klärung und Korrekturen könnten Fehlbewertungen grundsätzlich korrigieren.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 4,
-                    "rationale": "Opfer, Angehörige und Beschuldigter können gegenüber öffentlicher Zuschreibung besonders verletzlich sein.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad reicht über den Einzelfall hinaus nur bei wiederholter oder pauschalisierender Rezeption.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete Schutzgrenze ist aus dem Ausschnitt nicht feststellbar; die Unschuldsvermutung bleibt der maßgebliche Referenzrahmen.",
-                  "reference_frame": "Unschuldsvermutung und Schutz vor pauschalisierender Zuschreibung",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Der Pfad setzt voraus, dass der Bericht ohne ausreichende Kontextualisierung weiterverbreitet oder gruppenbezogen interpretiert wird.",
-                "reference_space": "Dresden und die erreichbare deutschsprachige Öffentlichkeit",
-                "time_horizon": "Kurz- bis mittelfristig nach der Berichterstattung",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Es wird angenommen, dass öffentliche Aufmerksamkeit die soziale Bewertung beeinflussen kann; ein solcher Einfluss ist nicht gemessen.",
-                "source_support": "Die Quelle belegt den Bericht, den Vorwurf und den religiösen Anlass, nicht die daraus folgende Belastung.",
-                "limitations": "Keine Reichweiten-, Verhaltens- oder Diskursdaten; keine unabhängige Quelle und kein vollständiger Anklagekontext.",
-                "first_order": "Der Vorwurf könnte Aufmerksamkeit und soziale Zuschreibung erhöhen.",
-                "second_order": "Betroffene könnten zusätzlichen sozialen Druck oder Vertrauensverlust erleben, wenn die Unschuldsvermutung untergeht.",
-                "third_order": "Wiederholte unvollständige Darstellungen könnten pauschalisierende Sicherheitsnarrative verstärken; dieser Schritt ist besonders unsicher.",
-                "research_pass": "second_pass",
-                "research_result": "Keine Messdaten oder unabhängigen Wirkungsbelege in der Quelle; der Pfad bleibt eine bedingte Hypothese.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 14,
-                  "divisor": 6,
-                  "raw": 2.3333333333333335,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Gerichtliche Prüfung könnte die Einordnung des Vorwurfs korrigierbar machen",
-                "direction": "positive",
-                "type": "side_effect",
-                "mechanism": "Der formelle Verfahrensweg eröffnet grundsätzlich eine institutionelle Prüfung von Tatvorwurf und Beweislage.",
-                "recipients": [
-                  "Beschuldigter",
-                  "Opfer und Angehörige",
-                  "Öffentlichkeit"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Der mögliche Nutzen ist an den weiteren Verfahrensverlauf gebunden und aus der Quelle nicht als eingetretene Wirkung belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Der institutionelle Nutzen betrifft vor allem die Verfahrensbeteiligten.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Eine mögliche Klärungsfunktion ist relevant, aber nicht näher belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Ein Verfahren kann sich über längere Zeit auf die Einordnung auswirken.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Die gerichtliche Einordnung ist grundsätzlich revidierbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Die Klärungsfunktion kann besonders Betroffenen und Beschuldigtem zugutekommen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Der mögliche Effekt bleibt auf den konkreten Fall und das Verfahren begrenzt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Der Pfad beschreibt eine mögliche Korrekturfunktion, keine festgestellte Schutzwirkung.",
-                  "reference_frame": "Faire gerichtliche Klärung",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": false,
-                "same_baseline": false,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Der Pfad setzt ein reguläres und zugängliches gerichtliches Verfahren voraus.",
-                "reference_space": "Dresden und das zuständige Strafverfahren",
-                "time_horizon": "Mittelfristig im weiteren Verfahren",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Die Anklage wird durch ein Gericht geprüft; der konkrete Verfahrensverlauf ist nicht geliefert.",
-                "source_support": "Die Quelle belegt die Anklage, nicht deren spätere Korrektur- oder Klärungswirkung.",
-                "limitations": "Kein Gerichtstermin, kein Urteil und keine Verfahrensdaten vorhanden.",
-                "first_order": "Der Vorwurf wird in einen institutionellen Prüfprozess eingebracht.",
-                "second_order": "Eine gerichtliche Einordnung könnte öffentliche Fehlbewertungen begrenzen.",
-                "third_order": "Eine allgemeine Stärkung rechtsstaatlichen Vertrauens ist nicht aus dem Einzelfall ableitbar.",
-                "research_pass": "second_pass",
-                "research_result": "Die Quelle liefert keinen Nachweis einer bereits eingetretenen Klärungswirkung; nur der bedingte institutionelle Pfad ist plausibel.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 7,
-                  "divisor": 6,
-                  "raw": 1.1666666666666667,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Ein möglicher Korrekturpfad steht einem stärker ausgeprägten Risiko öffentlicher Vorverurteilung gegenüber; beide Folgen sind ungemessen und bedingt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Öffentliche Vorverurteilung oder Stigmatisierung könnte Betroffene zusätzlich belasten",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Öffentliche Vorverurteilung oder Stigmatisierung könnte Betroffene zusätzlich belasten",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "neutral",
-            "dominance": "none",
-            "magnitude": 0,
-            "evidence": "not_assessable",
-            "likelihood": "very_low",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen plausiblen materiellen Pfad zu Emissionen, Ressourcen, Ökosystemen oder planetaren Schutzgütern.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "rationale": "Der berichtete Messerangriff und die Anklage betreffen einen lokalen strafrechtlichen Vorgang. Die Quelle enthält keinen Hinweis auf ökologische Zustandsänderungen oder entsprechende Mechanismen.",
-            "primary_paths": [
-              {
-                "label": "Kein materieller ökologischer Zustandswechsel durch den berichteten Verfahrensschritt",
-                "direction": "neutral",
-                "type": "main_path",
-                "mechanism": "Der berichtete strafrechtliche Vorgang verändert nach der gelieferten Quellenbasis keine ökologischen Systeme, Ressourcenflüsse oder Emissionen.",
-                "recipients": [
-                  "lokale Umwelt",
-                  "Ökosysteme"
-                ],
-                "magnitude": 0,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 0,
-                  "rationale": "Für den definierten Gegenstand und Zeitraum ist kein materieller planetarer Pfad belegt oder plausibel modellierbar."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 0,
-                    "rationale": "Keine ökologische Reichweite des berichteten Vorgangs erkennbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 0,
-                    "rationale": "Keine ökologische Intensität oder Belastung berichtet.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 0,
-                    "rationale": "Keine ökologische Dauerwirkung beschrieben.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Keine ökologische Zustandsveränderung identifiziert.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 0,
-                    "rationale": "Keine betroffenen Ökosysteme oder Ressourcen genannt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 0,
-                    "rationale": "Keine planetare Systemtiefe aus dem Fall ableitbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Keine planetare Schutzgrenze wird durch den gelieferten Sachverhalt berührt.",
-                  "reference_frame": "Ökologische Integrität und Ressourcen",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "very_low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Nur eine Änderung des berichteten Ereignisses oder ein neuer ökologischer Bezug könnte diesen Pfad verändern.",
-                "reference_space": "Dresden und die im Bericht genannten Systeme",
-                "time_horizon": "Kurz- bis mittelfristig",
-                "path_quality": [
-                  "direct"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Der Gegenstand bleibt auf den berichteten Strafverfahrensschritt begrenzt.",
-                "source_support": "Die Quelle enthält keine planetaren Angaben.",
-                "limitations": "Die Auswahl ist begrenzt; weitergehende Kontextinformationen sind nicht geliefert.",
-                "first_order": "Keine planetare Zustandsänderung identifiziert.",
-                "second_order": "Keine nachgelagerte ökologische Folge identifiziert.",
-                "third_order": "Keine systemische ökologische Kaskade identifiziert.",
-                "research_pass": "second_pass",
-                "research_result": "Keine ökologische Evidenz oder Mechanismusangabe in der gelieferten Quelle; der Pfad ist begründet vernachlässigbar.",
-                "negligibility_rationale": "Im definierten Gegenstand und Zeitraum enthält die Quelle keinen Mechanismus, Empfänger oder Zustandswechsel für planetare Schutzgüter.",
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 0,
-                  "divisor": 6,
-                  "raw": 0,
-                  "rounded": 0,
-                  "protection_floor": 0,
-                  "final": 0
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Es ist kein vergleichbarer planetarer Gegenpfad erkennbar; der ökologische Bezug ist im Quellenmaterial praktisch vernachlässigbar."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 0,
-              "directionLabel": "neutral",
-              "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Verfahrensschritt",
-              "direction": "neutral"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 0,
-            "directionLabel": "neutral",
-            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Verfahrensschritt",
-            "display_direction": "neutral",
-            "label": "neutral",
-            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "sehr gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "neutral"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 1,
-            "evidence": "low",
-            "likelihood": "low",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt keine institutionelle oder diskursive Wirkung. Möglich ist lediglich ein schwacher, bedingter Pfad über Vertrauen in Strafverfahren und öffentliche Vorverurteilung.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "rationale": "Der Bericht macht einen formellen strafrechtlichen Schritt sichtbar und kann damit rechtsstaatliche Prüfung thematisieren. Ohne vollständige Einordnung könnte die zugeschriebene Darstellung jedoch das Vertrauen in faire Verfahren oder gesellschaftliche Gleichbehandlung belasten.",
-            "primary_paths": [
-              {
-                "label": "Unvollständige Vorwurfsdarstellung könnte Vertrauen in faire Strafverfolgung belasten",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Wenn ein zugeschriebener Vorwurf als feststehende Schuld gelesen wird, könnte die Unterscheidung zwischen Anklage und Urteil im öffentlichen Diskurs verwischen.",
-                "recipients": [
-                  "Öffentlichkeit",
-                  "Beschuldigter",
-                  "Justiz und Strafverfolgung"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Der mögliche Effekt ist begrenzt, weil nur eine einzelne Meldung vorliegt; Richtung und Eintritt hängen von weiterer Rezeption ab."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Eine breite öffentliche Reichweite ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Der mögliche Vertrauenseffekt einer einzelnen Meldung ist eher begrenzt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Die Dauer hängt von weiterer Berichterstattung und Verfahrensentwicklung ab.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Öffentliche Einordnungen können durch spätere Informationen korrigiert werden.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Betroffene und Institutionen können durch Vorverurteilung belastet werden, konkrete Hinweise fehlen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein struktureller demokratischer Effekt ist aus einem Einzelfall nicht ableitbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht belegt; maßgeblich bleibt die Trennung von Vorwurf und Urteil.",
-                  "reference_frame": "Rechtsstaatlichkeit und faire öffentliche Meinungsbildung",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Der Pfad setzt eine unkritische Weiterverbreitung oder Rezeption des Vorwurfs als erwiesene Schuld voraus.",
-                "reference_space": "Öffentlicher Diskurs in Dresden und im deutschsprachigen Medienraum",
-                "time_horizon": "Kurzfristig bis zum Vorliegen weiterer Verfahrensinformationen",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Die Meldung wird über den einzelnen Bericht hinaus wahrgenommen; dafür liegen keine Reichweitendaten vor.",
-                "source_support": "Die Quelle belegt den Verfahrensschritt und die Zuschreibung, nicht einen Vertrauens- oder Institutioneneffekt.",
-                "limitations": "Keine Umfragen, Diskursdaten oder unabhängigen journalistischen Darstellungen vorhanden.",
-                "first_order": "Die Anklage könnte als Beleg staatlicher Strafverfolgung oder als feststehende Schuld gelesen werden.",
-                "second_order": "Diese Lesarten könnten Vertrauen in faire Verfahren unterschiedlich beeinflussen.",
-                "third_order": "Eine demokratische Normalisierung von Vorverurteilungen ist nur eine unsichere Möglichkeit, keine beobachtete Entwicklung.",
-                "research_pass": "second_pass",
-                "research_result": "Keine belastbaren Daten zu Vertrauen, Diskurs oder institutioneller Veränderung; nur ein schwacher bedingter Kommunikationspfad bleibt modellierbar.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 5,
-                  "divisor": 6,
-                  "raw": 0.8333333333333334,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Bericht über eine Anklage könnte rechtsstaatliche Prüfung sichtbar machen",
-                "direction": "positive",
-                "type": "counter_path",
-                "mechanism": "Die Meldung kann verdeutlichen, dass ein schwerer Vorwurf in einem formellen Verfahren geprüft wird und nicht mit einem Urteil gleichzusetzen ist.",
-                "recipients": [
-                  "Öffentlichkeit",
-                  "Justiz und Strafverfolgung"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Ein möglicher Orientierungseffekt ist gering und an eine klare Einordnung des Verfahrensschritts gebunden."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Die Reichweite der Meldung ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die mögliche Orientierung über Verfahrenslogik ist schwach ausgeprägt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Der Effekt könnte mit weiteren Verfahrensinformationen wieder abnehmen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Eine einzelne Einordnung ist vollständig korrigierbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Der mögliche Nutzen betrifft die Orientierung der Öffentlichkeit, konkrete Schutzbedarfe sind nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein struktureller Institutioneneffekt ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Der positive Pfad ist eine mögliche Orientierungsleistung, keine festgestellte demokratische Schutzwirkung.",
-                  "reference_frame": "Unschuldsvermutung und rechtsstaatliche Verfahrensprüfung",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": false,
-                "same_baseline": false,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Die Meldung müsste als Verfahrensinformation und nicht als Schuldfeststellung rezipiert werden.",
-                "reference_space": "Öffentlicher Diskurs im Umfeld des Strafverfahrens",
-                "time_horizon": "Kurzfristig",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Leserinnen und Leser unterscheiden zwischen Anklage und Urteil.",
-                "source_support": "Die Quelle nennt die Anklage und schwere Vorwürfe, enthält aber keine Wirkungsmessung.",
-                "limitations": "Keine Daten zur Rezeption, zum Vertrauen oder zur institutionellen Folge vorhanden.",
-                "first_order": "Der Verfahrensschritt wird öffentlich sichtbar.",
-                "second_order": "Eine klare Trennung von Vorwurf und Urteil könnte Orientierung ermöglichen.",
-                "third_order": "Eine Stärkung rechtsstaatlichen Vertrauens ist aus dieser Einzelmeldung nicht ableitbar.",
-                "research_pass": "second_pass",
-                "research_result": "Keine unabhängigen Daten zur Orientierungswirkung; der Pfad bleibt hypothetisch und gering.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 5,
-                  "divisor": 6,
-                  "raw": 0.8333333333333334,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Ein schwacher positiver Orientierungspfad steht einem ebenfalls schwachen, aber plausiblen Risiko der Vorverurteilung gegenüber; keine Richtung ist empirisch nachgewiesen."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 1,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Unvollständige Vorwurfsdarstellung könnte Vertrauen in faire Strafverfolgung belasten",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Unvollständige Vorwurfsdarstellung könnte Vertrauen in faire Strafverfolgung belasten",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "sehr gering",
-            "evidence_label": "gering",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          }
-        },
-        "observed_effects": [],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-18T09:25:38.610Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "functions": [
-              "event",
-              "mechanism",
-              "reference"
-            ],
-            "supported_claim": "Die Quelle trägt die berichtete Anklage, den zugeschriebenen Tatvorwurf und den möglichen Bezug des Ereignisses zur öffentlichen und institutionellen Wahrnehmung; sie belegt keine eingetretene Wirkung."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Mittlere",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt keinen Wirkungseintritt. Modellierbar ist nur der bedingte Pfad von öffentlicher Vorverurteilung oder Gruppenzuschreibung; Ausmaß und Eintritt bleiben offen.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen"
-          ],
-          "rationale": "Der mögliche negative Pfad betrifft Beschuldigten, Opferumfeld und potenziell die lokale Öffentlichkeit. Die Schwere des zugeschriebenen Verletzungsvorwurfs erhöht die mögliche Intensität, während Reichweite und Dauer des Medienimpulses unklar bleiben.",
-          "primary_paths": [
-            {
-              "label": "Öffentliche Vorverurteilung oder Stigmatisierung könnte Betroffene zusätzlich belasten",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Die Veröffentlichung eines schweren, noch nicht gerichtlich geklärten Vorwurfs kann die soziale Bewertung des Beschuldigten und seines Umfelds beeinflussen; der religiöse Kontext könnte bei fehlender Einordnung Gruppenzuschreibungen begünstigen.",
-              "recipients": [
-                "Beschuldigter",
-                "Opfer und Angehörige",
-                "lokale Öffentlichkeit"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 4,
-                "rationale": "Die mögliche Intensität ist wegen des schweren Vorwurfs substanziell, die Reichweite und Dauer sind wegen der Einzelquelle nicht bestimmt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Die Reichweite des einzelnen Berichts ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 3,
-                  "rationale": "Ein lebensgefährlicher Verletzungsvorwurf kann soziale und persönliche Belastungen verstärken.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die Dauer einer möglichen Belastung hängt von weiterer Berichterstattung und dem Verfahren ab.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Gerichtliche Klärung und Korrekturen könnten Fehlbewertungen grundsätzlich korrigieren.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Opfer, Angehörige und Beschuldigter können gegenüber öffentlicher Zuschreibung besonders verletzlich sein.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad reicht über den Einzelfall hinaus nur bei wiederholter oder pauschalisierender Rezeption.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete Schutzgrenze ist aus dem Ausschnitt nicht feststellbar; die Unschuldsvermutung bleibt der maßgebliche Referenzrahmen.",
-                "reference_frame": "Unschuldsvermutung und Schutz vor pauschalisierender Zuschreibung",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Der Pfad setzt voraus, dass der Bericht ohne ausreichende Kontextualisierung weiterverbreitet oder gruppenbezogen interpretiert wird.",
-              "reference_space": "Dresden und die erreichbare deutschsprachige Öffentlichkeit",
-              "time_horizon": "Kurz- bis mittelfristig nach der Berichterstattung",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Es wird angenommen, dass öffentliche Aufmerksamkeit die soziale Bewertung beeinflussen kann; ein solcher Einfluss ist nicht gemessen.",
-              "source_support": "Die Quelle belegt den Bericht, den Vorwurf und den religiösen Anlass, nicht die daraus folgende Belastung.",
-              "limitations": "Keine Reichweiten-, Verhaltens- oder Diskursdaten; keine unabhängige Quelle und kein vollständiger Anklagekontext.",
-              "first_order": "Der Vorwurf könnte Aufmerksamkeit und soziale Zuschreibung erhöhen.",
-              "second_order": "Betroffene könnten zusätzlichen sozialen Druck oder Vertrauensverlust erleben, wenn die Unschuldsvermutung untergeht.",
-              "third_order": "Wiederholte unvollständige Darstellungen könnten pauschalisierende Sicherheitsnarrative verstärken; dieser Schritt ist besonders unsicher.",
-              "research_pass": "second_pass",
-              "research_result": "Keine Messdaten oder unabhängigen Wirkungsbelege in der Quelle; der Pfad bleibt eine bedingte Hypothese.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 14,
-                "divisor": 6,
-                "raw": 2.3333333333333335,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Gerichtliche Prüfung könnte die Einordnung des Vorwurfs korrigierbar machen",
-              "direction": "positive",
-              "type": "side_effect",
-              "mechanism": "Der formelle Verfahrensweg eröffnet grundsätzlich eine institutionelle Prüfung von Tatvorwurf und Beweislage.",
-              "recipients": [
-                "Beschuldigter",
-                "Opfer und Angehörige",
-                "Öffentlichkeit"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Der mögliche Nutzen ist an den weiteren Verfahrensverlauf gebunden und aus der Quelle nicht als eingetretene Wirkung belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der institutionelle Nutzen betrifft vor allem die Verfahrensbeteiligten.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Eine mögliche Klärungsfunktion ist relevant, aber nicht näher belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Ein Verfahren kann sich über längere Zeit auf die Einordnung auswirken.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Die gerichtliche Einordnung ist grundsätzlich revidierbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Die Klärungsfunktion kann besonders Betroffenen und Beschuldigtem zugutekommen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Der mögliche Effekt bleibt auf den konkreten Fall und das Verfahren begrenzt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Der Pfad beschreibt eine mögliche Korrekturfunktion, keine festgestellte Schutzwirkung.",
-                "reference_frame": "Faire gerichtliche Klärung",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": false,
-              "same_baseline": false,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Der Pfad setzt ein reguläres und zugängliches gerichtliches Verfahren voraus.",
-              "reference_space": "Dresden und das zuständige Strafverfahren",
-              "time_horizon": "Mittelfristig im weiteren Verfahren",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Die Anklage wird durch ein Gericht geprüft; der konkrete Verfahrensverlauf ist nicht geliefert.",
-              "source_support": "Die Quelle belegt die Anklage, nicht deren spätere Korrektur- oder Klärungswirkung.",
-              "limitations": "Kein Gerichtstermin, kein Urteil und keine Verfahrensdaten vorhanden.",
-              "first_order": "Der Vorwurf wird in einen institutionellen Prüfprozess eingebracht.",
-              "second_order": "Eine gerichtliche Einordnung könnte öffentliche Fehlbewertungen begrenzen.",
-              "third_order": "Eine allgemeine Stärkung rechtsstaatlichen Vertrauens ist nicht aus dem Einzelfall ableitbar.",
-              "research_pass": "second_pass",
-              "research_result": "Die Quelle liefert keinen Nachweis einer bereits eingetretenen Klärungswirkung; nur der bedingte institutionelle Pfad ist plausibel.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 7,
-                "divisor": 6,
-                "raw": 1.1666666666666667,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Ein möglicher Korrekturpfad steht einem stärker ausgeprägten Risiko öffentlicher Vorverurteilung gegenüber; beide Folgen sind ungemessen und bedingt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Öffentliche Vorverurteilung oder Stigmatisierung könnte Betroffene zusätzlich belasten",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Öffentliche Vorverurteilung oder Stigmatisierung könnte Betroffene zusätzlich belasten",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "neutral",
-          "dominance": "none",
-          "magnitude": 0,
-          "evidence": "not_assessable",
-          "likelihood": "very_low",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen plausiblen materiellen Pfad zu Emissionen, Ressourcen, Ökosystemen oder planetaren Schutzgütern.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen"
-          ],
-          "rationale": "Der berichtete Messerangriff und die Anklage betreffen einen lokalen strafrechtlichen Vorgang. Die Quelle enthält keinen Hinweis auf ökologische Zustandsänderungen oder entsprechende Mechanismen.",
-          "primary_paths": [
-            {
-              "label": "Kein materieller ökologischer Zustandswechsel durch den berichteten Verfahrensschritt",
-              "direction": "neutral",
-              "type": "main_path",
-              "mechanism": "Der berichtete strafrechtliche Vorgang verändert nach der gelieferten Quellenbasis keine ökologischen Systeme, Ressourcenflüsse oder Emissionen.",
-              "recipients": [
-                "lokale Umwelt",
-                "Ökosysteme"
-              ],
-              "magnitude": 0,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 0,
-                "rationale": "Für den definierten Gegenstand und Zeitraum ist kein materieller planetarer Pfad belegt oder plausibel modellierbar."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 0,
-                  "rationale": "Keine ökologische Reichweite des berichteten Vorgangs erkennbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 0,
-                  "rationale": "Keine ökologische Intensität oder Belastung berichtet.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 0,
-                  "rationale": "Keine ökologische Dauerwirkung beschrieben.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Keine ökologische Zustandsveränderung identifiziert.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 0,
-                  "rationale": "Keine betroffenen Ökosysteme oder Ressourcen genannt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 0,
-                  "rationale": "Keine planetare Systemtiefe aus dem Fall ableitbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Keine planetare Schutzgrenze wird durch den gelieferten Sachverhalt berührt.",
-                "reference_frame": "Ökologische Integrität und Ressourcen",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "very_low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Nur eine Änderung des berichteten Ereignisses oder ein neuer ökologischer Bezug könnte diesen Pfad verändern.",
-              "reference_space": "Dresden und die im Bericht genannten Systeme",
-              "time_horizon": "Kurz- bis mittelfristig",
-              "path_quality": [
-                "direct"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Der Gegenstand bleibt auf den berichteten Strafverfahrensschritt begrenzt.",
-              "source_support": "Die Quelle enthält keine planetaren Angaben.",
-              "limitations": "Die Auswahl ist begrenzt; weitergehende Kontextinformationen sind nicht geliefert.",
-              "first_order": "Keine planetare Zustandsänderung identifiziert.",
-              "second_order": "Keine nachgelagerte ökologische Folge identifiziert.",
-              "third_order": "Keine systemische ökologische Kaskade identifiziert.",
-              "research_pass": "second_pass",
-              "research_result": "Keine ökologische Evidenz oder Mechanismusangabe in der gelieferten Quelle; der Pfad ist begründet vernachlässigbar.",
-              "negligibility_rationale": "Im definierten Gegenstand und Zeitraum enthält die Quelle keinen Mechanismus, Empfänger oder Zustandswechsel für planetare Schutzgüter.",
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 0,
-                "divisor": 6,
-                "raw": 0,
-                "rounded": 0,
-                "protection_floor": 0,
-                "final": 0
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Es ist kein vergleichbarer planetarer Gegenpfad erkennbar; der ökologische Bezug ist im Quellenmaterial praktisch vernachlässigbar."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 0,
-            "directionLabel": "neutral",
-            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Verfahrensschritt",
-            "direction": "neutral"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 0,
-          "directionLabel": "neutral",
-          "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den berichteten Verfahrensschritt",
-          "display_direction": "neutral",
-          "label": "neutral",
-          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "sehr gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "neutral"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 1,
-          "evidence": "low",
-          "likelihood": "low",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt keine institutionelle oder diskursive Wirkung. Möglich ist lediglich ein schwacher, bedingter Pfad über Vertrauen in Strafverfahren und öffentliche Vorverurteilung.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen"
-          ],
-          "rationale": "Der Bericht macht einen formellen strafrechtlichen Schritt sichtbar und kann damit rechtsstaatliche Prüfung thematisieren. Ohne vollständige Einordnung könnte die zugeschriebene Darstellung jedoch das Vertrauen in faire Verfahren oder gesellschaftliche Gleichbehandlung belasten.",
-          "primary_paths": [
-            {
-              "label": "Unvollständige Vorwurfsdarstellung könnte Vertrauen in faire Strafverfolgung belasten",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Wenn ein zugeschriebener Vorwurf als feststehende Schuld gelesen wird, könnte die Unterscheidung zwischen Anklage und Urteil im öffentlichen Diskurs verwischen.",
-              "recipients": [
-                "Öffentlichkeit",
-                "Beschuldigter",
-                "Justiz und Strafverfolgung"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Der mögliche Effekt ist begrenzt, weil nur eine einzelne Meldung vorliegt; Richtung und Eintritt hängen von weiterer Rezeption ab."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Eine breite öffentliche Reichweite ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Der mögliche Vertrauenseffekt einer einzelnen Meldung ist eher begrenzt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Die Dauer hängt von weiterer Berichterstattung und Verfahrensentwicklung ab.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Öffentliche Einordnungen können durch spätere Informationen korrigiert werden.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Betroffene und Institutionen können durch Vorverurteilung belastet werden, konkrete Hinweise fehlen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein struktureller demokratischer Effekt ist aus einem Einzelfall nicht ableitbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht belegt; maßgeblich bleibt die Trennung von Vorwurf und Urteil.",
-                "reference_frame": "Rechtsstaatlichkeit und faire öffentliche Meinungsbildung",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Der Pfad setzt eine unkritische Weiterverbreitung oder Rezeption des Vorwurfs als erwiesene Schuld voraus.",
-              "reference_space": "Öffentlicher Diskurs in Dresden und im deutschsprachigen Medienraum",
-              "time_horizon": "Kurzfristig bis zum Vorliegen weiterer Verfahrensinformationen",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Die Meldung wird über den einzelnen Bericht hinaus wahrgenommen; dafür liegen keine Reichweitendaten vor.",
-              "source_support": "Die Quelle belegt den Verfahrensschritt und die Zuschreibung, nicht einen Vertrauens- oder Institutioneneffekt.",
-              "limitations": "Keine Umfragen, Diskursdaten oder unabhängigen journalistischen Darstellungen vorhanden.",
-              "first_order": "Die Anklage könnte als Beleg staatlicher Strafverfolgung oder als feststehende Schuld gelesen werden.",
-              "second_order": "Diese Lesarten könnten Vertrauen in faire Verfahren unterschiedlich beeinflussen.",
-              "third_order": "Eine demokratische Normalisierung von Vorverurteilungen ist nur eine unsichere Möglichkeit, keine beobachtete Entwicklung.",
-              "research_pass": "second_pass",
-              "research_result": "Keine belastbaren Daten zu Vertrauen, Diskurs oder institutioneller Veränderung; nur ein schwacher bedingter Kommunikationspfad bleibt modellierbar.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 5,
-                "divisor": 6,
-                "raw": 0.8333333333333334,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Bericht über eine Anklage könnte rechtsstaatliche Prüfung sichtbar machen",
-              "direction": "positive",
-              "type": "counter_path",
-              "mechanism": "Die Meldung kann verdeutlichen, dass ein schwerer Vorwurf in einem formellen Verfahren geprüft wird und nicht mit einem Urteil gleichzusetzen ist.",
-              "recipients": [
-                "Öffentlichkeit",
-                "Justiz und Strafverfolgung"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Ein möglicher Orientierungseffekt ist gering und an eine klare Einordnung des Verfahrensschritts gebunden."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Die Reichweite der Meldung ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die mögliche Orientierung über Verfahrenslogik ist schwach ausgeprägt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Der Effekt könnte mit weiteren Verfahrensinformationen wieder abnehmen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Eine einzelne Einordnung ist vollständig korrigierbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Der mögliche Nutzen betrifft die Orientierung der Öffentlichkeit, konkrete Schutzbedarfe sind nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein struktureller Institutioneneffekt ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Der positive Pfad ist eine mögliche Orientierungsleistung, keine festgestellte demokratische Schutzwirkung.",
-                "reference_frame": "Unschuldsvermutung und rechtsstaatliche Verfahrensprüfung",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": false,
-              "same_baseline": false,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Die Meldung müsste als Verfahrensinformation und nicht als Schuldfeststellung rezipiert werden.",
-              "reference_space": "Öffentlicher Diskurs im Umfeld des Strafverfahrens",
-              "time_horizon": "Kurzfristig",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Leserinnen und Leser unterscheiden zwischen Anklage und Urteil.",
-              "source_support": "Die Quelle nennt die Anklage und schwere Vorwürfe, enthält aber keine Wirkungsmessung.",
-              "limitations": "Keine Daten zur Rezeption, zum Vertrauen oder zur institutionellen Folge vorhanden.",
-              "first_order": "Der Verfahrensschritt wird öffentlich sichtbar.",
-              "second_order": "Eine klare Trennung von Vorwurf und Urteil könnte Orientierung ermöglichen.",
-              "third_order": "Eine Stärkung rechtsstaatlichen Vertrauens ist aus dieser Einzelmeldung nicht ableitbar.",
-              "research_pass": "second_pass",
-              "research_result": "Keine unabhängigen Daten zur Orientierungswirkung; der Pfad bleibt hypothetisch und gering.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 5,
-                "divisor": 6,
-                "raw": 0.8333333333333334,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Ein schwacher positiver Orientierungspfad steht einem ebenfalls schwachen, aber plausiblen Risiko der Vorverurteilung gegenüber; keine Richtung ist empirisch nachgewiesen."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Unvollständige Vorwurfsdarstellung könnte Vertrauen in faire Strafverfolgung belasten",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 1,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Unvollständige Vorwurfsdarstellung könnte Vertrauen in faire Strafverfolgung belasten",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "sehr gering",
-          "evidence_label": "gering",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-18T09:23:01.229Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-18T09:07:56.000Z",
-      "last_updated": "2026-09-18T09:25:38.605Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-151b23af5f6ccd70cb13",
-      "case_file": null,
-      "source_published_at": "2026-09-18T09:07:56.000Z",
-      "published_at": "2026-09-18T09:25:38.605Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Zu prüfen sind der vollständige Anklageinhalt, der konkrete Tatvorwurf und die gerichtliche Einordnung.",
-          "source_id": "stern-schlagzeilen",
-          "measurable_indicator": "Veröffentlichter vollständiger Anklageinhalt oder gerichtliche Mitteilung mit Tatvorwurf und Verfahrensstand",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-badb71fca9a18401",
-          "announced_at": "2026-09-18T09:07:56.000Z",
-          "follow_up_date": "2026-09-25T09:25:38.605Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/sachsen/versuchter-totschlag--nach-messerangriff-in-dresden--anklage-gegen-36-jaehrigen-38272172.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-18T09:07:56.000Z",
           "primary_source": false
         }
       ]
@@ -200657,6 +200241,26 @@
   ],
   "editorial_analyses": [
     {
+      "analysis_id": "woek-personal-cfb7ef44ef399878",
+      "slug": "fachkraftemangel-ist-mehr-als-eine-frage-der-arbeitsstunden-cfb7ef",
+      "title": "Fachkräftemangel ist mehr als eine Frage der Arbeitsstunden",
+      "subtitle": "Enzo Weber und Maja Göpel sprechen über Demografie, Teilzeit, Qualifizierung, Transformation und KI. Ein zentraler Gedanke: Wettbewerbsfähigkeit entsteht nicht durch einen Lohnwettbewerb nach unten, sondern durch Produktivität, Qualifikation, Investitionen, Infrastruktur und Innovation.",
+      "teaser": "Enzo Weber und Maja Göpel sprechen über Demografie, Teilzeit, Qualifizierung, Transformation und KI. Ein zentraler Gedanke: Wettbewerbsfähigkeit entsteht nicht durch einen Lohnwettbewerb nach unten, sondern durch Produktivität, Qualifikation, Investitionen, Infrastruktur und Innovation.",
+      "published_at": "2026-09-11T21:04:27.174Z",
+      "updated_at": "2026-09-18T10:49:28.795Z",
+      "reading_time_minutes": 7
+    },
+    {
+      "analysis_id": "woek-personal-61c3d43ad5b31742",
+      "slug": "werte-sagen-wohin-wir-wollen-wirkung-zeigt-ob-wir-dort-ankommen-61c3d4",
+      "title": "Werte sagen, wohin wir wollen. Wirkung zeigt, ob wir dort ankommen.",
+      "subtitle": "Maja Göpel und Andreas Püttmann sprechen über Menschenwürde, Freiheit, Demokratie, Nachhaltigkeit und politische Kultur. Für die Wirkungsökonomie liegt die entscheidende Ergänzung zwischen Wert und Wirklichkeit: im Wirkmechanismus.",
+      "teaser": "Maja Göpel und Andreas Püttmann sprechen über Menschenwürde, Freiheit, Demokratie, Nachhaltigkeit und politische Kultur. Für die Wirkungsökonomie liegt die entscheidende Ergänzung zwischen Wert und Wirklichkeit: im Wirkmechanismus.",
+      "published_at": "2026-09-11T05:41:43.439Z",
+      "updated_at": "2026-09-18T10:49:12.386Z",
+      "reading_time_minutes": 5
+    },
+    {
       "analysis_id": "woek-personal-13800b375204e879",
       "slug": "sydney-sweeney-und-der-neue-alte-streit-daruber-wie-eine-frau-sein-darf-13800b",
       "title": "Sydney Sweeney und der neue alte Streit darüber, wie eine Frau sein darf",
@@ -200817,16 +200421,6 @@
       "reading_time_minutes": 5
     },
     {
-      "analysis_id": "woek-personal-cfb7ef44ef399878",
-      "slug": "fachkraftemangel-ist-mehr-als-eine-frage-der-arbeitsstunden-cfb7ef",
-      "title": "Fachkräftemangel ist mehr als eine Frage der Arbeitsstunden",
-      "subtitle": "Enzo Weber und Maja Göpel sprechen über Demografie, Teilzeit, Qualifizierung, Transformation und KI. Ein zentraler Gedanke: Wettbewerbsfähigkeit entsteht nicht durch einen Lohnwettbewerb nach unten, sondern durch Produktivität, Qualifikation, Investitionen, Infrastruktur und Innovation.",
-      "teaser": "Enzo Weber und Maja Göpel sprechen über Demografie, Teilzeit, Qualifizierung, Transformation und KI. Ein zentraler Gedanke: Wettbewerbsfähigkeit entsteht nicht durch einen Lohnwettbewerb nach unten, sondern durch Produktivität, Qualifikation, Investitionen, Infrastruktur und Innovation.",
-      "published_at": "2026-09-11T21:04:27.174Z",
-      "updated_at": "2026-09-11T21:04:27.174Z",
-      "reading_time_minutes": 7
-    },
-    {
       "analysis_id": "woek-personal-e4ed176eb5af08c0",
       "slug": "europas-entscheidungsfreiheit-wie-einflussstrategien-und-abhangigkeiten-zusammenwirken-e4ed17",
       "title": "Europas Entscheidungsfreiheit: Wie Einflussstrategien und Abhängigkeiten zusammenwirken",
@@ -200835,16 +200429,6 @@
       "published_at": "2026-09-11T12:50:31.386Z",
       "updated_at": "2026-09-11T12:50:31.386Z",
       "reading_time_minutes": 12
-    },
-    {
-      "analysis_id": "woek-personal-61c3d43ad5b31742",
-      "slug": "werte-sagen-wohin-wir-wollen-wirkung-zeigt-ob-wir-dort-ankommen-61c3d4",
-      "title": "Werte sagen, wohin wir wollen. Wirkung zeigt, ob wir dort ankommen.",
-      "subtitle": "Maja Göpel und Andreas Püttmann sprechen über Menschenwürde, Freiheit, Demokratie, Nachhaltigkeit und politische Kultur. Für die Wirkungsökonomie liegt die entscheidende Ergänzung zwischen Wert und Wirklichkeit: im Wirkmechanismus.",
-      "teaser": "Maja Göpel und Andreas Püttmann sprechen über Menschenwürde, Freiheit, Demokratie, Nachhaltigkeit und politische Kultur. Für die Wirkungsökonomie liegt die entscheidende Ergänzung zwischen Wert und Wirklichkeit: im Wirkmechanismus.",
-      "published_at": "2026-09-11T05:41:43.439Z",
-      "updated_at": "2026-09-11T05:41:43.439Z",
-      "reading_time_minutes": 5
     },
     {
       "analysis_id": "woek-personal-a9b9a6f6287cfa7a",
