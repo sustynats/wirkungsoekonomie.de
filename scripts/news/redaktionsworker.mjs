@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { supplementTarget, supplementContext, supersededBySupplement, withSupplement } from './editorial-supplement.mjs';
+import { EINORDNUNG_NOTIZ } from './einordnung.mjs';
 import { prepareApiJob, validateApiOutput } from './bridge/api-processor.mjs';
 import { editorialKnowledge } from './bridge/editorial-knowledge.mjs';
 import { OPENAI_RESPONSES_URL, finalOutputText, decodeUsage, newsModel } from './openai-transport.mjs';
@@ -27,7 +28,10 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-6';
+// 7 seit 18.09.2026: Korrekturfassungen bindet der Worker selbst an ihr Ziel
+// (bindeKorrekturfassung). Die Versionsmarke gibt verbrauchten Versuchen genau
+// eine neue Chance - darunter der Oelkrise-Korrektur, die daran scheiterte.
+export const WORKER_VERSION = 'redaktionsworker-7';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
@@ -212,6 +216,42 @@ export const MEDIA_ALIASES = { episode: 'episode_title', episode_name: 'episode_
   published_at: 'original_release_date', release_date: 'original_release_date', date: 'original_release_date', air_date: 'original_release_date',
   url: 'original_url', page: 'original_url', original_page: 'original_url', episode_url: 'original_url', show_name: 'show' };
 
+// Eine Korrekturfassung ueberarbeitet eine bestehende Veroeffentlichung. Wie ihr
+// Aenderungsvorschlag (patch) aussehen muss, haengt von der Veroeffentlichung ab -
+// das weiss der Worker, das Modell nicht: der Vertrag nennt ihm nur
+// author_perspective. Am 18.09.2026 lieferte es fuer eine persoenliche Ausgabe
+// genau das, ohne patch-Huelle, und die Ablage verwarf die ganze Antwort
+// (EDITORIAL_REVISION_INVALID), obwohl nur "Meine Einordnung" neu war.
+// Der Worker bindet deshalb selbst: Grundlage und Ziel aus dem Auftrag, der
+// Vorschlag aus dem gelieferten Text. Titel und Quellen bleiben die der
+// Veroeffentlichung - die Freigabe zeigt, was live geht. Eine persoenliche
+// Ausgabe ohne Korrekturnotiz wird nur gebunden, wenn allein die Einordnung neu ist.
+export function bindeKorrekturfassung(preview, intake, repairs = []) {
+  const base = intake?.revision_base, target = intake?.revision_target;
+  if (!preview || typeof preview !== 'object' || !base || !target) return preview;
+  const modell = preview.editorial_revision && typeof preview.editorial_revision === 'object' ? preview.editorial_revision : {};
+  const vorschlag = modell.patch && typeof modell.patch === 'object' ? modell.patch : modell;
+  const vorEinordnung = (text) => String(text || '').split(/^## Meine Einordnung\s*$/m)[0].trim();
+  let patch = null;
+  if (base.format === 'approved_editorial') {
+    const nurEinordnung = vorEinordnung(base.body_markdown) === vorEinordnung(preview.markdown);
+    // Ist nur die Einordnung neu, sagt die Notiz genau das - in festem Wortlaut,
+    // an dem einordnung.mjs die uebernommene Einordnung auch wiedererkennt.
+    const note = nurEinordnung ? EINORDNUNG_NOTIZ : String(vorschlag.correction_note || '').trim();
+    if (note && typeof preview.markdown === 'string') patch = { body_markdown: preview.markdown, correction_note: note.slice(0, 1500) };
+  } else if (base.format === 'book_and_impact') {
+    if (typeof preview.markdown === 'string') patch = { body_markdown: preview.markdown };
+  } else if (vorschlag.author_perspective && typeof vorschlag.author_perspective === 'object') {
+    patch = { author_perspective: vorschlag.author_perspective };
+  }
+  if (!patch) return preview;
+  if (base.title && preview.title !== base.title) { preview.title = base.title; repairs.push('revision:Titel der Veröffentlichung beibehalten'); }
+  if (base.format === 'approved_editorial' && Array.isArray(base.sources) && base.sources.length) preview.sources = base.sources.map((source) => ({ ...source }));
+  preview.editorial_revision = { base, target, patch, story: intake.revision_story || {} };
+  repairs.push('revision:an die Veröffentlichung gebunden');
+  return preview;
+}
+
 export function normalizeEditorialPreview(preview, { links = [], repairs = [] } = {}) {
   if (!preview || typeof preview !== 'object') return preview;
   if (typeof preview.markdown === 'string') {
@@ -374,6 +414,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   const previewRepairs = [];
   let validated = null, lastIssues = [], repairCalls = 0, cost = result.cost || 0, usage = result.usage;
   for (let pass = 0; pass <= (repairPass ? 1 : 0); pass += 1) {
+    if (output.preview && job.intake?.revision_target) bindeKorrekturfassung(output.preview, job.intake, previewRepairs);
     if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
     try { validated = validateApiOutput(output, packet, now()); break; }
     catch (error) { lastIssues = [String(error.message), ...(error.issues || [])]; }
