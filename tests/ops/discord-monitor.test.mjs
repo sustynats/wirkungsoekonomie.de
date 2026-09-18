@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow, lageCheck } from '../../scripts/ops/discord-monitor.mjs';
+import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow, lageCheck, selbsttestCheck } from '../../scripts/ops/discord-monitor.mjs';
 
 const now = '2026-09-04T06:00:00Z';
 const fixture = () => ({ report: { status: 'ok', operational_status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [], queue: { status: 'clear', total: 0, capacity: 0, technical: 0, editorial: 0 }, source_funnel: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
@@ -26,9 +26,29 @@ test('monitor sparse checkout includes the complete local module dependency grap
     for (const match of code.matchAll(/(?:from\s*|import\s*\(\s*|import\s*)['"](\.[^'"]+\.mjs)['"]/g)) {
       visit(path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1])));
     }
+    // Nicht nur Module: am 17.09.2026 las ein Test die Ticker-Workflow-Datei
+    // per new URL(...), sie fehlte im Checkout, und der Monitor schwieg 30 Stunden.
+    for (const match of code.matchAll(/new URL\(\s*['"](\.\.?\/[^'"]+)['"]\s*,\s*import\.meta\.url\s*\)/g)) {
+      const target = path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1]));
+      if (target.endsWith('/') || target === '.' || target.endsWith('.mjs')) { if (target.endsWith('.mjs')) visit(target); continue; }
+      assert.ok(checkout.includes(target), `Monitor checkout is missing ${target} (read by ${file})`);
+    }
   }
   visit('scripts/ops/discord-monitor.mjs');
   visit('tests/ops/discord-monitor.test.mjs');
+  visit('tests/ops/news-recovery.test.mjs');
+});
+
+test('ein gescheiterter Selbsttest wird gemeldet, statt den Monitor stumm zu schalten', () => {
+  assert.equal(selbsttestCheck('failure').ok, false);
+  assert.equal(selbsttestCheck('failure').immediate, true);
+  assert.equal(selbsttestCheck('success').ok, true);
+  assert.equal(selbsttestCheck(undefined).ok, true, 'lokal ohne Workflow kein Fehlalarm');
+  const workflow = fs.readFileSync(new URL('../../.github/workflows/ops-discord-monitor.yml', import.meta.url), 'utf8');
+  const selbsttest = workflow.slice(workflow.indexOf('id: selbsttest'));
+  assert.match(selbsttest.slice(0, 200), /continue-on-error: true/, 'der Selbsttest darf die Meldungen nicht abbrechen');
+  assert.match(workflow, /WOEK_MONITOR_SELFTEST: \$\{\{ steps\.selbsttest\.outcome \}\}/);
+  assert.match(workflow, /if: steps\.selbsttest\.outcome == 'failure'[\s\S]*exit 1/, 'der Lauf bleibt trotzdem rot');
 });
 
 test('Berlin daily boundary honors winter, summer and DST transitions', () => {
