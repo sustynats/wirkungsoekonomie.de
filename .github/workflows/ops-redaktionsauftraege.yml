@@ -25,6 +25,8 @@ jobs:
             scripts/news/bridge/remote.mjs
             scripts/news/request-deadline.mjs
             scripts/news/bridge/observation-keys.mjs
+            scripts/news/bridge/contract.mjs
+            scripts/news/bridge/research-source-schema.mjs
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:
