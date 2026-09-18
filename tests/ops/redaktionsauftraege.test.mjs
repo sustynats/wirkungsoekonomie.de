@@ -12,7 +12,7 @@ const auftrag = (id, at, felder = {}) => ({ input: { job_id: id, job_type: 'edit
 const session = (rows, calls) => ({
   monitor: async () => { calls.push('monitor'); return { open_count: 3, open_personal_count: 1, oldest_open_minutes: 4321 }; },
   store: {
-    acquire: async (...args) => { calls.push(`acquire:${args[1]}`); },
+    acquire: async (...args) => { calls.push(`acquire:${args[1]}`); if (!/^\d+:\d+9$/.test(args[2]?.manualRunId || '')) throw new Error('EIGENER SPURPLATZ FEHLT'); },
     release: async (ok) => { calls.push(`release:${ok}`); },
     all: async () => { calls.push('all'); return rows; },
     observation: async (key) => { calls.push('observation'); return key === 'github-attempt:woek-a' ? { status: 'draft_rejected', provider_called: true, version: 'redaktionsworker-5', error: 'EDITORIAL_MARKDOWN_DUPLICATE_TITLE · Der Titel „GEHEIMER AUFTRAGSTEXT" steht zweimal' } : null; },
@@ -119,7 +119,8 @@ test('eine zurueckgegebene Meldung zeigt, wo ihr Meldungsweg steht', async () =>
   const ergebnis = await redaktionsauftraege({ session: { ...sitzung, store: { ...sitzung.store, all: async () => [kind, meldung] } }, now });
   const befund = ergebnis.auftraege.find((a) => a.job_id === 'woek-kind');
   assert.deepEqual(befund.meldungsweg, { recherche: true, recherche_gestoppt: false, nachrecherche: null, meldung: 'accepted',
-    meldung_quittung: null, meldung_bewertet: true, zweitpruefung: 'hold', bereits_berichtet: false, naechster_versuch: '2026-09-18T10:00:00.000Z' });
+    meldung_quittung: null, meldung_bewertet: true, zweitpruefung: 'hold', bereits_berichtet: false, naechster_versuch: '2026-09-18T10:00:00.000Z',
+    in_freigabeliste: false });
   assert.deepEqual(holte, [], 'was store.all schon liefert, wird nicht einzeln geholt');
   assert.equal(JSON.stringify(ergebnis).includes('GEHEIMER AUFTRAGSTEXT'), false);
   // Fehlt der Meldungsauftrag (archiviert), wird er einzeln gefragt.
@@ -133,4 +134,17 @@ test('jeder erledigte Auftrag der letzten 36 Stunden steht im Befund, nicht nur 
   const kennungen = ergebnis.auftraege.map((a) => a.job_id);
   assert.equal(kennungen.includes('woek-13'), true, 'der 14 Stunden alte Auftrag fehlt nicht');
   assert.equal(kennungen.includes('woek-alt'), false, 'aeltere erledigte nur unter den zehn neuesten');
+});
+
+test('bereitgestellt heisst: der Redaktionstisch hat den Vermerk gesetzt', async () => {
+  const { hash } = await import('../../scripts/news/bridge/contract.mjs');
+  const record = { title: 'Drohnenfund' };
+  const kind = auftrag('woek-w', '2026-09-18T09:33:00.000Z', { status: 'accepted', input: { job_id: 'woek-w', job_type: 'editorial_request', request: { kind: 'news' } },
+    intake: { kind: 'news', news_research: {}, news_job_id: 'story-w' } });
+  const meldung = { input: { job_id: 'story-w', job_type: 'new_story' }, status: 'accepted', accepted: { record } };
+  const sitzung = session([kind, meldung], []);
+  const beobachtet = sitzung.store.observation;
+  sitzung.store.observation = async (key) => (key === `intake-news-staged:woek-w:${hash(record)}` ? { at: '2026-09-18T16:00:00.000Z' } : beobachtet(key));
+  const ergebnis = await redaktionsauftraege({ session: sitzung, now });
+  assert.equal(ergebnis.auftraege.find((a) => a.job_id === 'woek-w').meldungsweg.in_freigabeliste, true);
 });

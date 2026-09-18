@@ -1,11 +1,24 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-18T16:08:40.131Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-18T16:26:37.779Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/der-tankrabatt-kann-preise-dampfen-und-setzt-zugleich-das-falsche-signal-04aafe/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/der-tankrabatt-kann-preise-dampfen-und-setzt-zugleich-das-falsche-signal-04aafe/",
+      "title": "Meinung & Analyse: Der Tankrabatt kann Preise dämpfen – und setzt zugleich das falsche Signal",
+      "summary": "Eine kurzfristige Entlastung an der Zapfsäule hilft, löst aber weder die soziale Frage noch die Abhängigkeit vom fossilen Verkehr.",
+      "date_published": "2026-09-18T16:18:25.998Z",
+      "date_modified": "2026-09-18T16:18:25.998Z",
+      "_woek_released_at": "2026-09-18T16:18:25.998Z",
+      "tags": [
+        "Meinung & Analyse"
+      ],
+      "_woek_type": "Meinung & Analyse"
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/schusse-in-koln-wer-sind-die-schutzen-da1dbe/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/schusse-in-koln-wer-sind-die-schutzen-da1dbe/",
@@ -1825,6 +1838,37 @@
           "magnitude": 2,
           "direction": "open",
           "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bei-wunstorf-abgesturzte-drohne-suche-nach-teilen-dauert-an-0951a8/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bei-wunstorf-abgesturzte-drohne-suche-nach-teilen-dauert-an-0951a8/",
+      "title": "Laut Polizei dauert die Suche nach Teilen einer mutmaßlich abgestürzten Drohne bei Wunstorf an",
+      "summary": "Bei Wunstorf sucht die Polizei weiter nach Teilen einer mutmaßlich abgestürzten Drohne. Herkunft, Zweck und genaue Ursache des Vorfalls sind offen; das LKA sieht nach eigener Darstellung keine Gefahr für die Bevölkerung.",
+      "date_published": "2026-09-16T13:40:03.836Z",
+      "date_modified": "2026-09-16T13:40:03.836Z",
+      "_woek_released_at": "2026-09-18T15:56:41.631Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "emerging"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "emerging"
         }
       }
     },

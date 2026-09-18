@@ -12,6 +12,7 @@
 import { bridgeSession } from '../news/bridge/remote.mjs';
 // Dieselbe Kennung wie im Worker, eine Definition (siehe observation-keys.mjs).
 import { fehlerkennung } from '../news/bridge/observation-keys.mjs';
+import { hash } from '../news/bridge/contract.mjs';
 export { fehlerkennung };
 
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED', 'BRIDGE_OPERATION_BUSY']);
@@ -65,7 +66,9 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
   const bridge = session || bridgeSession(env);
   const betrieb = await bridge.monitor();
   let acquired = false, auftraege = null, grund = null;
-  try { await bridge.store.acquire(now, 'import'); acquired = true; }
+  // Eigener Spurplatz: der Zeitslot gehoert dem Ticker-Lauf, und nach dessen
+  // Abschluss meldete der Befund am 18.09.2026 nur BRIDGE_SLOT_ALREADY_COMPLETED.
+  try { await bridge.store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}9` }); acquired = true; }
   catch (error) { if (!SKIP.has(error.message)) throw error; grund = error.message; }
   if (acquired) {
     try {
@@ -96,8 +99,17 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
       const holen = async (id) => (id ? nachKennung.get(id) || await Promise.resolve(bridge.store.get?.(id)).catch(() => null) || null : null);
       for (const befund of auftraege) {
         const job = nachKennung.get(befund.job_id);
-        if (job?.intake?.kind === 'news') befund.meldungsweg = meldungsweg(job,
-          await holen(job.intake.news_job_id), await holen(job.intake.news_repair_job_id));
+        if (job?.intake?.kind === 'news') {
+          const meldung = await holen(job.intake.news_job_id);
+          befund.meldungsweg = meldungsweg(job, meldung, await holen(job.intake.news_repair_job_id));
+          // Derselbe Vermerk, den der Redaktionstisch beim Bereitstellen setzt
+          // (intake-news.mjs, stageIntakeNews): erst dann steht die Meldung in
+          // Natalies Freigabeliste. "Bewertet" allein heisst das noch nicht.
+          const record = meldung?.accepted?.record;
+          befund.meldungsweg.in_freigabeliste = record
+            ? Boolean(await Promise.resolve(bridge.store.observation(`intake-news-staged:${job.input.job_id}:${hash(record)}`)).catch(() => null))
+            : false;
+        }
         const versuch = await bridge.store.observation(`github-attempt:${befund.job_id}`).catch?.(() => null);
         befund.versuch = versuch ? { zustand: String(versuch.status || '').slice(0, 40),
           bezahlter_aufruf: Boolean(versuch.provider_called), workerversion: String(versuch.version || '').slice(0, 40),
