@@ -146,3 +146,15 @@ test('eine wartende Korrekturfassung sperrt den Beitrag', async () => {
   const zweite = { store: { ...session.store, all: async () => [quittiert] }, transport: session.transport };
   assert.equal((await uebernehmen({ session: zweite, slug: ausgabe.slug, text: gut, owner: '123456789012345678', root: wurzel, now: () => '2026-09-18T07:00:00.000Z' })).status, 'output_delivered');
 });
+
+// Der Workflow liest die LETZTE Zeile der Ausgabe fuer den Kommentar am Issue.
+// Am 18.09.2026 war das "}" eines eingerueckten JSON - drei erfolgreiche
+// Uebernahmen standen deshalb als EINORDNUNG_TECHNISCHER_FEHLER am Issue.
+test('das Ergebnis ist eine einzige lesbare Zeile', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const skript = fileURLToPath(new URL('../../scripts/news/einordnung.mjs', import.meta.url));
+  const ausgabe = execFileSync(process.execPath, [skript], { env: { PATH: process.env.PATH, WOEK_EINORDNUNG_SLUG: 'x', WOEK_EINORDNUNG_TEXT: 'y' }, encoding: 'utf8' });
+  const zeilen = ausgabe.trim().split('\n');
+  assert.equal(zeilen.length, 1, `mehrzeilig: ${ausgabe}`);
+  assert.equal(JSON.parse(zeilen.at(-1)).status, 'skipped');
+});
