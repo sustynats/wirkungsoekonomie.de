@@ -39,6 +39,28 @@ export function auftragsBefund(job, now) {
   };
 }
 
+// Eine Meldung (Art news) geht nach dem Auftrag einen zweiten Weg: aus der
+// Recherche wird ein eigener Meldungsauftrag, der analysiert, zweitgeprueft und
+// erst dann in die Freigabeliste gestellt wird (intake-news.mjs). "Angenommen"
+// heisst bei Meldungen daher nur: Recherche liegt vor. Wo sie danach steht,
+// zeigt dieser Befund - wieder nur Zustaende, kein Text.
+export function meldungsweg(job, meldung = null, nachrecherche = null) {
+  const intake = job?.intake || {};
+  const zustand = (wert) => String(wert || 'unbekannt').slice(0, 40);
+  return {
+    recherche: Boolean(intake.news_research),
+    recherche_gestoppt: Boolean(intake.news_research_hold),
+    nachrecherche: intake.news_repair_job_id ? (nachrecherche ? zustand(nachrecherche.status) : 'fehlt') : null,
+    meldung: intake.news_job_id ? (meldung ? zustand(meldung.status) : 'fehlt') : null,
+    meldung_quittung: meldung?.ack?.status ? zustand(meldung.ack.status) : null,
+    meldung_bewertet: meldung ? Boolean(meldung.accepted?.record) : null,
+    zweitpruefung: meldung ? (meldung.semantic_review?.assessment?.publication_status
+      || meldung.accepted?.record?.impact_semantic_review?.status || null) : null,
+    bereits_berichtet: Boolean(intake.covered_url),
+    naechster_versuch: intake.news_retry_at || null,
+  };
+}
+
 export async function redaktionsauftraege({ session = null, now = new Date().toISOString(), env = process.env } = {}) {
   const bridge = session || bridgeSession(env);
   const betrieb = await bridge.monitor();
@@ -66,7 +88,13 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
       // Der entscheidende Zustand steht nicht im Auftrag, sondern im Vermerk
       // zum Versuch: provider_called ohne output_delivered heisst, der Auftrag
       // ist verbraucht und kehrt erst mit einer Vertragskorrektur zurueck.
+      const nachKennung = new Map(rows.map((row) => [row?.input?.job_id, row]));
+      // Archivierte Meldungsauftraege fehlen in store.all und kommen einzeln.
+      const holen = async (id) => (id ? nachKennung.get(id) || await Promise.resolve(bridge.store.get?.(id)).catch(() => null) || null : null);
       for (const befund of auftraege) {
+        const job = nachKennung.get(befund.job_id);
+        if (job?.intake?.kind === 'news') befund.meldungsweg = meldungsweg(job,
+          await holen(job.intake.news_job_id), await holen(job.intake.news_repair_job_id));
         const versuch = await bridge.store.observation(`github-attempt:${befund.job_id}`).catch?.(() => null);
         befund.versuch = versuch ? { zustand: String(versuch.status || '').slice(0, 40),
           bezahlter_aufruf: Boolean(versuch.provider_called), workerversion: String(versuch.version || '').slice(0, 40),

@@ -432,6 +432,17 @@ export async function sendDiscord(event, { token, recipient, fetchImpl = fetch }
   }
 }
 
+// Ein Monitor, dessen Selbsttest scheitert, darf nicht schweigen: am
+// 17./18.09.2026 brach er 30 Stunden lang vor jeder Meldung ab. Die Pruefungen
+// laufen deshalb weiter und nennen den gescheiterten Selbsttest selbst.
+export function selbsttestCheck(outcome) {
+  const gescheitert = outcome === 'failure';
+  return { id: 'monitor-selbsttest', name: 'Selbsttest des Betriebsmonitors', immediate: true, ok: !gescheitert,
+    reason: gescheitert
+      ? 'Der Selbsttest des Betriebsmonitors ist gescheitert. Die Prüfungen laufen weiter, sind aber nicht abgesichert, bis er behoben ist.'
+      : 'Selbsttest bestanden.' };
+}
+
 export async function main() {
   const now = new Date().toISOString();
   const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
@@ -504,6 +515,7 @@ export async function main() {
       : gescheitert.length >= 2
         ? `${gescheitert.length} Anlaeufe der letzten 24 Stunden blieben unklar (${[...new Set(gescheitert.map(a => `${a.workflow}: ${a.error}`))].join(' | ')}). Nach vier verbrauchten Anlaeufen greift die Selbstheilung 24 Stunden nicht mehr.`
         : 'Die Selbstheilung kann anlaufen.' });
+  checks.push(selbsttestCheck(process.env.WOEK_MONITOR_SELFTEST));
   const recoveryPlan = planRecovery({ head: process.env.WOEK_MONITOR_SOURCE_COMMIT, snapshot,
     pendingPublication: summary.pendingPublication, bridge: data.bridge,
     bridgeMode: data.processing_mode === 'dropbox_chatgpt_bridge', state, now });
