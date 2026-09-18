@@ -2,8 +2,1076 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T05:22:24.007Z",
+  "updated_at": "2026-09-18T06:02:49.376Z",
   "stories": [
+    {
+      "story_id": "wt-2d3f98683f6f8ac9",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2d3f98683f6f8ac9-8451741edb28aa46-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2d3f98683f6f8ac9-15a716f82e491f1d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2d3f98683f6f8ac9-b94762039ceb3628-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2d3f98683f6f8ac9-18f6eb858ca62d8a-source.png"
+        }
+      },
+      "slug": "kriminalitat-handelsverband-besorgt-nach-serie-von-explosionen-6f8ac9",
+      "title": "Laut stern: Fünf Läden in Frankfurt und Offenbach durch Detonationen stark beschädigt",
+      "source_summary": "Der stern berichtet über eine Serie von Detonationen in Frankfurt und Offenbach. Nach dem vorliegenden Abstract wurden fünf Läden stark beschädigt. Die Quelle nennt keine einzelnen Geschäfte und liefert keine näheren Angaben zum Zeitpunkt, zum genauen Schadensbild oder zu möglichen Verletzten.\n\nDer Bericht beschreibt außerdem die Sorgen von Geschäftsleuten. Diese Reaktion wird der Quelle zufolge mit den Schäden und der Serie in Verbindung gebracht; Umfang und Dauer der wirtschaftlichen Belastung bleiben offen.\n\nWeiter heißt es, laut Polizei gebe es Hinweise auf organisierte Kriminalität. Der vorliegende Beleg macht nicht deutlich, worauf sich diese Hinweise stützen oder ob ein Zusammenhang zwischen allen Detonationen bereits ermittelt ist. Eine unabhängige Bestätigung liegt in der Akte nicht vor.",
+      "summary": "In Frankfurt und Offenbach wurden laut stern fünf Läden durch Detonationen stark beschädigt. Sorgen im lokalen Handel und polizeiliche Hinweise auf organisierte Kriminalität sind berichtet, aber nicht unabhängig bestätigt.",
+      "detail_summary": "Der stern berichtet von fünf stark beschädigten Läden in Frankfurt und Offenbach. Geschäftsleute sorgen sich nach der Serie um die Sicherheit und die weitere Nutzung ihrer Geschäfte. Laut Quelle gibt es zudem polizeiliche Hinweise auf organisierte Kriminalität; deren Grundlage und Reichweite bleiben ungeklärt. Für Menschen könnte die Serie das Sicherheitsgefühl und die Erreichbarkeit lokaler Angebote beeinträchtigen, falls weitere Taten oder längere Sperrungen hinzukommen. Für Umwelt und demokratische Institutionen sind aus dem Beleg keine eingetretenen Folgen ersichtlich; mögliche Pfade bleiben deshalb bedingt und unsicher.",
+      "why_relevant": "Mehrere beschädigte Geschäfte in zwei Städten berühren Sicherheit, lokale Versorgung und die wirtschaftliche Belastbarkeit des Handels. Die zentrale Tatsachenbasis stammt jedoch aus nur einer journalistischen Quelle.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über fünf durch Detonationen stark beschädigte Läden in Frankfurt und Offenbach",
+        "evaluation_target": {
+          "label": "Serie von Detonationen und ihre möglichen Folgen für lokale Sicherheit und Handel",
+          "type": "event"
+        },
+        "baseline": "Lokaler Geschäftsbetrieb und Sicherheitswahrnehmung vor beziehungsweise ohne eine fortgesetzte Serie von Detonationen",
+        "counterfactual": "Ohne weitere Detonationen könnten Reparatur, Ermittlungen und Geschäftsbetrieb auf die bereits berichteten Schäden begrenzt bleiben; dieser Vergleich ist nicht empirisch geprüft.",
+        "reference_frame": [
+          "Schutz von Menschen und lokaler Versorgung",
+          "Sicherheit und Resilienz öffentlicher Räume",
+          "demokratische Rechenschaft über Sicherheitslagen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Beschädigte Geschäfte könnten Zugänglichkeit, Sicherheitsgefühl und wirtschaftliche Stabilität betroffener Geschäftsleute beeinflussen. Verletzte oder konkrete Versorgungsengpässe sind nicht belegt.",
+            "planet": "Direkte ökologische Folgen sind im Beleg nicht beschrieben. Reparatur- oder Entsorgungsfolgen wären nur bei weiteren Angaben prüfbar.",
+            "democracy": "Eine anhaltende Serie könnte Vertrauen in den Schutz öffentlicher Räume und die Nachfrage nach staatlicher Aufklärung beeinflussen. Eine institutionelle Wirkung ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die berichteten Schäden könnten den Betrieb betroffener Läden und die unmittelbare Wahrnehmung lokaler Sicherheit verändern.",
+          "second_order": "Bei weiteren Vorfällen könnten Vermeidungsverhalten, Reparaturbelastungen und der Druck auf Ermittlungs- und Sicherheitsbehörden zunehmen.",
+          "third_order": "Nur bei anhaltender Serie könnte sich eine längerfristige Veränderung von Nutzung, Investitionen und Sicherheitsdiskursen ergeben; dafür fehlt ein belastbarer Nachweis.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Es sind keine Verletzten, längerfristigen Sperrungen oder messbaren Geschäftsverluste belegt.",
+            "Die Hinweise auf organisierte Kriminalität sind nur über einen einzelnen journalistischen Bericht überliefert.",
+            "Eine unabhängige Bestätigung oder Gegenquelle liegt nicht vor."
+          ],
+          "source_independence": "Nur eine Quelle ist geliefert; ihre Unabhängigkeit ist nicht verifiziert. Der Bericht ist journalistisch, aber keine Primärquelle.",
+          "institutional_status": "Die Quelle berichtet über polizeiliche Hinweise und nicht über einen abgeschlossenen Ermittlungs- oder Gerichtsstand. Rechtliche Einordnung und Zuständigkeiten bleiben offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Beleg beschreibt Schäden, aber keine Messwerte zu Verletzungen, Geschäftsausfällen oder Versorgungsänderungen. Der mögliche negative Pfad bleibt daher an weitere Vorfälle und die Dauer von Reparaturen oder Sperrungen gebunden.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Für Menschen ist ein negativer Pfad plausibel, weil beschädigte Läden den Zugang zu lokalen Angeboten und das Sicherheitsgefühl beeinträchtigen könnten. Die Richtung stützt sich auf den berichteten Schaden; Reichweite und Intensität sind wegen fehlender Detaildaten unsicher.",
+            "primary_paths": [
+              {
+                "label": "Beschädigte Läden könnten lokale Nutzung und Sicherheitsgefühl belasten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Sachschäden könnten den Betrieb und die Zugänglichkeit von Geschäften beeinträchtigen; eine Serie könnte zusätzlich Vermeidungsverhalten auslösen.",
+                "recipients": [
+                  "Geschäftsleute",
+                  "Beschäftigte",
+                  "Kundinnen und Kunden",
+                  "Anwohnerinnen und Anwohner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Bericht nennt fünf stark beschädigte Läden, aber keine Verletzten oder Betriebsdauer; deshalb liegt die plausible Spanne zwischen begrenzter lokaler und spürbarer quartiersbezogener Belastung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Fünf Läden in zwei Städten markieren eine lokale, aber nicht flächendeckende Reichweite.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Starke Beschädigungen können den Betrieb erheblich stören, konkrete Betriebsfolgen fehlen jedoch.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer möglicher Reparaturen oder Einschränkungen wird nicht genannt und bleibt begrenzt plausibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Sachschäden an Läden sind grundsätzlich reparierbar; dauerhafte Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Kleine Geschäfte und Menschen mit wenigen Ausweichmöglichkeiten könnten stärker betroffen sein, ohne dass dies belegt ist.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Eine Serie könnte über Sicherheitswahrnehmung und Nutzung lokale Verhaltensmuster beeinflussen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung oder Schutzgrenzüberschreitung für Menschen ist nicht belegt.",
+                  "reference_frame": "Schutz von Leben, Gesundheit und erreichbarer lokaler Versorgung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt weitere Sicherheitsunsicherheit, Betriebsunterbrechungen oder länger andauernde Reparaturen voraus.",
+                "reference_space": "Betroffene Geschäfte und ihr lokales Umfeld in Frankfurt und Offenbach",
+                "time_horizon": "Kurz- bis mittelfristig nach den Detonationen",
+                "path_quality": [
+                  "direct",
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass starke Schäden den Zugang oder Betrieb zumindest zeitweise beeinträchtigen und dass Menschen ihr Verhalten an wahrgenommene Unsicherheit anpassen.",
+                "source_support": "Die Quelle belegt fünf stark beschädigte Läden und Sorgen von Geschäftsleuten, nicht aber den weiteren Wirkungsverlauf.",
+                "limitations": "Keine Angaben zu Verletzten, Sperrungen, Umsätzen, Reparaturdauer oder betroffenen Personengruppen.",
+                "first_order": "Der Geschäftsbetrieb könnte an beschädigten Orten erschwert sein.",
+                "second_order": "Kundschaft und Beschäftigte könnten betroffene Orte meiden, falls Unsicherheit anhält.",
+                "third_order": "Wiederholte Vorfälle könnten lokale Nutzung und Investitionsentscheidungen verändern, sofern sie fortbestehen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Betriebsunterbrechungen, Verletzungen oder Vermeidungsverhalten; der Pfad bleibt modelliert.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein belastbarer gleich starker positiver Gegenpfad ist nicht belegt; mögliche Reparatur und Unterstützung sind offen und werden nicht als Ausgleich unterstellt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Beschädigte Läden könnten lokale Nutzung und Sicherheitsgefühl belasten",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Beschädigte Läden könnten lokale Nutzung und Sicherheitsgefühl belasten",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der gelieferte Beleg enthält keine Angaben zu Schadstoffen, Gebäuderückständen, Energieverbrauch oder Entsorgung. Ein ökologischer Wirkpfad ist deshalb nur als offene Möglichkeit bei weiteren Schäden modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Direkte Umweltfolgen der Detonationen sind nicht beschrieben. Ein begrenzter negativer Pfad könnte über Reparatur, Bauschutt oder zusätzliche Ressourcen entstehen, ist aber nicht ausreichend konkret belegt.",
+            "primary_paths": [
+              {
+                "label": "Reparatur beschädigter Läden könnte zusätzliche Material- und Entsorgungsbedarfe auslösen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Starke Sachschäden könnten Reparatur- und Entsorgungsarbeiten erfordern; deren ökologische Auswirkungen hängen von Schadensart und Umfang ab.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Entsorgungs- und Reparaturinfrastruktur"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Beleg nennt starke Beschädigungen, aber keine Art der Zerstörung oder Reparatur; die mögliche Umweltwirkung bleibt daher klein bis lokal begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die berichtete Reichweite betrifft fünf Läden in zwei Städten, Umweltfolgen sind nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Material- oder Entsorgungsbelastung ist aus dem Beleg nicht quantifizierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Reparaturdauer und mögliche Umweltbelastung werden nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ein konkreter irreversibler Umweltschaden ist im gelieferten Beleg nicht erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders empfindliche Umweltgüter oder betroffene Gruppen werden nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ein tiefer ökologischer Systempfad ist ohne Angaben zu Stoffen oder Schäden nicht begründbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Kontamination wird berichtet.",
+                  "reference_frame": "Schutz lokaler Umwelt und Ressourcen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt Reparatur- oder Entsorgungsarbeiten mit relevanten Material- oder Schadstofffolgen voraus.",
+                "reference_space": "Unmittelbare Umgebung der beschädigten Läden",
+                "time_horizon": "Während möglicher Reparatur und Entsorgung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird nur angenommen, dass starke Sachschäden Reparaturen erfordern könnten; konkrete Materialien und Verfahren sind unbekannt.",
+                "source_support": "Die Quelle belegt starke Beschädigungen, nicht deren ökologische Folgen.",
+                "limitations": "Keine Angaben zu Gebäudeteilen, Schadstoffen, Abfall, Energie oder Entsorgungswegen.",
+                "first_order": "Reparaturen könnten zusätzliche Materialien und Entsorgung erfordern.",
+                "second_order": "Lokale Ressourcen- oder Abfallströme könnten geringfügig belastet werden, falls Schäden umfangreich sind.",
+                "third_order": "Ein systemischer Umweltpfad ist auf Grundlage der Quelle nicht belastbar modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle enthält Umwelt- oder Schadensdetaildaten; Richtung und Eintritt bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt weder einen belegten positiven noch einen belastbaren negativen Umweltpfad; die offene Einordnung vermeidet eine erfundene Abwägung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Reparatur beschädigter Läden könnte zusätzliche Material- und Entsorgungsbedarfe auslösen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Reparatur beschädigter Läden könnte zusätzliche Material- und Entsorgungsbedarfe auslösen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle Veränderung. Ein negativer demokratischer Pfad bleibt an eine anhaltende Serie, öffentliche Unsicherheit und wahrgenommene Schutzlücken gebunden.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Wiederholte Detonationen könnten Vertrauen in den Schutz öffentlicher Räume und den Druck auf Behörden beeinflussen. Eine solche Wirkung ist nicht beobachtet; der Bericht liefert dafür nur den Ereigniskern und die Zuschreibung polizeilicher Hinweise.",
+            "primary_paths": [
+              {
+                "label": "Anhaltende Unsicherheit könnte Vertrauen in staatlichen Schutz belasten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Serie von Schäden könnte öffentliche Aufmerksamkeit und Forderungen nach Aufklärung oder Schutzmaßnahmen erhöhen; bei ausbleibender Klarheit könnte Vertrauen sinken.",
+                "recipients": [
+                  "Anwohnerinnen und Anwohner",
+                  "Geschäftsleute",
+                  "Sicherheits- und Ermittlungsbehörden"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Pfad reicht von begrenzter lokaler Verunsicherung bis zu spürbarem Druck auf Institutionen, setzt aber weitere Ereignisse oder ungeklärte Ermittlungen voraus."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Zwei Städte und eine Serie können lokale öffentliche Aufmerksamkeit erreichen, ohne eine breite Wirkung zu belegen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Sicherheitsbezogene Detonationen können Vertrauen berühren, konkrete Vertrauensdaten fehlen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine länger anhaltende Serie könnte den Effekt verlängern; ihre Dauer ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen und politische Reaktionen sind grundsätzlich korrigierbar, sofern Aufklärung und Schutz sichtbar werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen in unmittelbar betroffenen Vierteln könnten stärker auf wahrgenommene Schutzlücken reagieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad reicht von Sicherheitswahrnehmung zu Rechenschaftsdruck, ist aber nicht institutionell belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Einschränkung demokratischer Rechte oder Institutionen ist nicht berichtet.",
+                  "reference_frame": "Öffentliche Sicherheit, institutionelle Rechenschaft und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt weitere Vorfälle, ausbleibende Aufklärung oder wahrgenommene Schutzlücken voraus.",
+                "reference_space": "Lokale Öffentlichkeit und zuständige Sicherheitsinstitutionen in Frankfurt und Offenbach",
+                "time_horizon": "Kurz- bis mittelfristig bei anhaltender Unsicherheit",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass wiederholte Sicherheitsereignisse Wahrnehmungen und Forderungen nach staatlicher Rechenschaft beeinflussen könnten.",
+                "source_support": "Die Quelle berichtet eine Serie, Sorgen von Geschäftsleuten und polizeiliche Hinweise; sie belegt keine Vertrauens- oder Beteiligungsänderung.",
+                "limitations": "Keine Umfragen, Verhaltensdaten, institutionellen Reaktionen oder Angaben zur öffentlichen Debatte liegen vor.",
+                "first_order": "Die Serie könnte öffentliche Aufmerksamkeit auf Schutz und Ermittlungen lenken.",
+                "second_order": "Bei anhaltender Unsicherheit könnten Forderungen nach Maßnahmen und Rechenschaft zunehmen.",
+                "third_order": "Nur bei längerem Verlauf könnte sich der Sicherheitsdiskurs institutionell verfestigen; das ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Vertrauen, politische Reaktionen oder institutionelle Veränderungen; der Pfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver demokratischer Gegenpfad durch Aufklärung oder institutionelle Reaktion ist möglich, aber nicht belegt und daher kein gleichwertiger Materialpfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Anhaltende Unsicherheit könnte Vertrauen in staatlichen Schutz belasten",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Anhaltende Unsicherheit könnte Vertrauen in staatlichen Schutz belasten",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T06:06:35.820Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über fünf stark beschädigte Läden in Frankfurt und Offenbach sowie Sorgen von Geschäftsleuten."
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Bericht schreibt der Polizei Hinweise auf organisierte Kriminalität zu."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Beleg beschreibt Schäden, aber keine Messwerte zu Verletzungen, Geschäftsausfällen oder Versorgungsänderungen. Der mögliche negative Pfad bleibt daher an weitere Vorfälle und die Dauer von Reparaturen oder Sperrungen gebunden.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Für Menschen ist ein negativer Pfad plausibel, weil beschädigte Läden den Zugang zu lokalen Angeboten und das Sicherheitsgefühl beeinträchtigen könnten. Die Richtung stützt sich auf den berichteten Schaden; Reichweite und Intensität sind wegen fehlender Detaildaten unsicher.",
+          "primary_paths": [
+            {
+              "label": "Beschädigte Läden könnten lokale Nutzung und Sicherheitsgefühl belasten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Sachschäden könnten den Betrieb und die Zugänglichkeit von Geschäften beeinträchtigen; eine Serie könnte zusätzlich Vermeidungsverhalten auslösen.",
+              "recipients": [
+                "Geschäftsleute",
+                "Beschäftigte",
+                "Kundinnen und Kunden",
+                "Anwohnerinnen und Anwohner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Bericht nennt fünf stark beschädigte Läden, aber keine Verletzten oder Betriebsdauer; deshalb liegt die plausible Spanne zwischen begrenzter lokaler und spürbarer quartiersbezogener Belastung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Fünf Läden in zwei Städten markieren eine lokale, aber nicht flächendeckende Reichweite.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Starke Beschädigungen können den Betrieb erheblich stören, konkrete Betriebsfolgen fehlen jedoch.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer möglicher Reparaturen oder Einschränkungen wird nicht genannt und bleibt begrenzt plausibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Sachschäden an Läden sind grundsätzlich reparierbar; dauerhafte Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Kleine Geschäfte und Menschen mit wenigen Ausweichmöglichkeiten könnten stärker betroffen sein, ohne dass dies belegt ist.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine Serie könnte über Sicherheitswahrnehmung und Nutzung lokale Verhaltensmuster beeinflussen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung oder Schutzgrenzüberschreitung für Menschen ist nicht belegt.",
+                "reference_frame": "Schutz von Leben, Gesundheit und erreichbarer lokaler Versorgung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt weitere Sicherheitsunsicherheit, Betriebsunterbrechungen oder länger andauernde Reparaturen voraus.",
+              "reference_space": "Betroffene Geschäfte und ihr lokales Umfeld in Frankfurt und Offenbach",
+              "time_horizon": "Kurz- bis mittelfristig nach den Detonationen",
+              "path_quality": [
+                "direct",
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass starke Schäden den Zugang oder Betrieb zumindest zeitweise beeinträchtigen und dass Menschen ihr Verhalten an wahrgenommene Unsicherheit anpassen.",
+              "source_support": "Die Quelle belegt fünf stark beschädigte Läden und Sorgen von Geschäftsleuten, nicht aber den weiteren Wirkungsverlauf.",
+              "limitations": "Keine Angaben zu Verletzten, Sperrungen, Umsätzen, Reparaturdauer oder betroffenen Personengruppen.",
+              "first_order": "Der Geschäftsbetrieb könnte an beschädigten Orten erschwert sein.",
+              "second_order": "Kundschaft und Beschäftigte könnten betroffene Orte meiden, falls Unsicherheit anhält.",
+              "third_order": "Wiederholte Vorfälle könnten lokale Nutzung und Investitionsentscheidungen verändern, sofern sie fortbestehen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Betriebsunterbrechungen, Verletzungen oder Vermeidungsverhalten; der Pfad bleibt modelliert.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein belastbarer gleich starker positiver Gegenpfad ist nicht belegt; mögliche Reparatur und Unterstützung sind offen und werden nicht als Ausgleich unterstellt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Beschädigte Läden könnten lokale Nutzung und Sicherheitsgefühl belasten",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Beschädigte Läden könnten lokale Nutzung und Sicherheitsgefühl belasten",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der gelieferte Beleg enthält keine Angaben zu Schadstoffen, Gebäuderückständen, Energieverbrauch oder Entsorgung. Ein ökologischer Wirkpfad ist deshalb nur als offene Möglichkeit bei weiteren Schäden modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Direkte Umweltfolgen der Detonationen sind nicht beschrieben. Ein begrenzter negativer Pfad könnte über Reparatur, Bauschutt oder zusätzliche Ressourcen entstehen, ist aber nicht ausreichend konkret belegt.",
+          "primary_paths": [
+            {
+              "label": "Reparatur beschädigter Läden könnte zusätzliche Material- und Entsorgungsbedarfe auslösen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Starke Sachschäden könnten Reparatur- und Entsorgungsarbeiten erfordern; deren ökologische Auswirkungen hängen von Schadensart und Umfang ab.",
+              "recipients": [
+                "lokale Umwelt",
+                "Entsorgungs- und Reparaturinfrastruktur"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Beleg nennt starke Beschädigungen, aber keine Art der Zerstörung oder Reparatur; die mögliche Umweltwirkung bleibt daher klein bis lokal begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die berichtete Reichweite betrifft fünf Läden in zwei Städten, Umweltfolgen sind nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Material- oder Entsorgungsbelastung ist aus dem Beleg nicht quantifizierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Reparaturdauer und mögliche Umweltbelastung werden nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ein konkreter irreversibler Umweltschaden ist im gelieferten Beleg nicht erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders empfindliche Umweltgüter oder betroffene Gruppen werden nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ein tiefer ökologischer Systempfad ist ohne Angaben zu Stoffen oder Schäden nicht begründbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze oder Kontamination wird berichtet.",
+                "reference_frame": "Schutz lokaler Umwelt und Ressourcen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt Reparatur- oder Entsorgungsarbeiten mit relevanten Material- oder Schadstofffolgen voraus.",
+              "reference_space": "Unmittelbare Umgebung der beschädigten Läden",
+              "time_horizon": "Während möglicher Reparatur und Entsorgung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird nur angenommen, dass starke Sachschäden Reparaturen erfordern könnten; konkrete Materialien und Verfahren sind unbekannt.",
+              "source_support": "Die Quelle belegt starke Beschädigungen, nicht deren ökologische Folgen.",
+              "limitations": "Keine Angaben zu Gebäudeteilen, Schadstoffen, Abfall, Energie oder Entsorgungswegen.",
+              "first_order": "Reparaturen könnten zusätzliche Materialien und Entsorgung erfordern.",
+              "second_order": "Lokale Ressourcen- oder Abfallströme könnten geringfügig belastet werden, falls Schäden umfangreich sind.",
+              "third_order": "Ein systemischer Umweltpfad ist auf Grundlage der Quelle nicht belastbar modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle enthält Umwelt- oder Schadensdetaildaten; Richtung und Eintritt bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt weder einen belegten positiven noch einen belastbaren negativen Umweltpfad; die offene Einordnung vermeidet eine erfundene Abwägung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Reparatur beschädigter Läden könnte zusätzliche Material- und Entsorgungsbedarfe auslösen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Reparatur beschädigter Läden könnte zusätzliche Material- und Entsorgungsbedarfe auslösen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle Veränderung. Ein negativer demokratischer Pfad bleibt an eine anhaltende Serie, öffentliche Unsicherheit und wahrgenommene Schutzlücken gebunden.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Wiederholte Detonationen könnten Vertrauen in den Schutz öffentlicher Räume und den Druck auf Behörden beeinflussen. Eine solche Wirkung ist nicht beobachtet; der Bericht liefert dafür nur den Ereigniskern und die Zuschreibung polizeilicher Hinweise.",
+          "primary_paths": [
+            {
+              "label": "Anhaltende Unsicherheit könnte Vertrauen in staatlichen Schutz belasten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Serie von Schäden könnte öffentliche Aufmerksamkeit und Forderungen nach Aufklärung oder Schutzmaßnahmen erhöhen; bei ausbleibender Klarheit könnte Vertrauen sinken.",
+              "recipients": [
+                "Anwohnerinnen und Anwohner",
+                "Geschäftsleute",
+                "Sicherheits- und Ermittlungsbehörden"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Pfad reicht von begrenzter lokaler Verunsicherung bis zu spürbarem Druck auf Institutionen, setzt aber weitere Ereignisse oder ungeklärte Ermittlungen voraus."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Zwei Städte und eine Serie können lokale öffentliche Aufmerksamkeit erreichen, ohne eine breite Wirkung zu belegen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Sicherheitsbezogene Detonationen können Vertrauen berühren, konkrete Vertrauensdaten fehlen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine länger anhaltende Serie könnte den Effekt verlängern; ihre Dauer ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen und politische Reaktionen sind grundsätzlich korrigierbar, sofern Aufklärung und Schutz sichtbar werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen in unmittelbar betroffenen Vierteln könnten stärker auf wahrgenommene Schutzlücken reagieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad reicht von Sicherheitswahrnehmung zu Rechenschaftsdruck, ist aber nicht institutionell belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Einschränkung demokratischer Rechte oder Institutionen ist nicht berichtet.",
+                "reference_frame": "Öffentliche Sicherheit, institutionelle Rechenschaft und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt weitere Vorfälle, ausbleibende Aufklärung oder wahrgenommene Schutzlücken voraus.",
+              "reference_space": "Lokale Öffentlichkeit und zuständige Sicherheitsinstitutionen in Frankfurt und Offenbach",
+              "time_horizon": "Kurz- bis mittelfristig bei anhaltender Unsicherheit",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass wiederholte Sicherheitsereignisse Wahrnehmungen und Forderungen nach staatlicher Rechenschaft beeinflussen könnten.",
+              "source_support": "Die Quelle berichtet eine Serie, Sorgen von Geschäftsleuten und polizeiliche Hinweise; sie belegt keine Vertrauens- oder Beteiligungsänderung.",
+              "limitations": "Keine Umfragen, Verhaltensdaten, institutionellen Reaktionen oder Angaben zur öffentlichen Debatte liegen vor.",
+              "first_order": "Die Serie könnte öffentliche Aufmerksamkeit auf Schutz und Ermittlungen lenken.",
+              "second_order": "Bei anhaltender Unsicherheit könnten Forderungen nach Maßnahmen und Rechenschaft zunehmen.",
+              "third_order": "Nur bei längerem Verlauf könnte sich der Sicherheitsdiskurs institutionell verfestigen; das ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Vertrauen, politische Reaktionen oder institutionelle Veränderungen; der Pfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver demokratischer Gegenpfad durch Aufklärung oder institutionelle Reaktion ist möglich, aber nicht belegt und daher kein gleichwertiger Materialpfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Anhaltende Unsicherheit könnte Vertrauen in staatlichen Schutz belasten",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Anhaltende Unsicherheit könnte Vertrauen in staatlichen Schutz belasten",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T06:02:49.376Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T05:24:18.000Z",
+      "last_updated": "2026-09-18T06:06:35.813Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-11af9c561ecd33ce65c8",
+      "case_file": null,
+      "source_published_at": "2026-09-18T05:24:18.000Z",
+      "published_at": "2026-09-18T06:06:35.813Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Zahl und das Ausmaß der beschädigten Läden sowie die polizeilichen Hinweise auf organisierte Kriminalität müssen durch weitere unabhängige Berichte oder Primärangaben geprüft werden.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Unabhängige Bestätigung der Zahl beschädigter Läden und der polizeilichen Hinweise",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-322c2c42e563184e",
+          "announced_at": "2026-09-18T05:24:18.000Z",
+          "follow_up_date": "2026-09-25T06:06:35.813Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hessen/kriminalitaet--handelsverband-besorgt-nach-serie-von-explosionen-38270736.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T05:24:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-5ad167748060938a",
       "title_image": {
@@ -4763,22 +5831,25 @@
     {
       "story_id": "wt-894c65ec59488061",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-85a3b8749ce1e3f8-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-f3f20d4d37ad17c7-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-00fa229d0a2cc1ae-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-817d3a3c404c0636-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-a6d197fb8f012bc8-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-9bcfa4995793a7ea-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-894c65ec59488061-debe9163870966eb-source.png"
         }
       },
       "slug": "bundeslander-einigung-auf-neuen-staatsvertrag-fur-die-digitale-medienwelt-488061",
@@ -22138,22 +23209,25 @@
     {
       "story_id": "wt-d0b87be2a421eeeb",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-d639d8ab62518df8-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-2189efc3c77b33f6-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-8851f9a0c84146ae-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-27bc9feee4e83725-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-18cea9665c24bdb2-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-cb71ff8f2710afaa-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d0b87be2a421eeeb-e8c63b1919ee681e-source.png"
         }
       },
       "slug": "solartechnik-sma-investiert-80-millionen-euro-in-neues-werk-21eeeb",
@@ -82118,22 +83192,25 @@
     {
       "story_id": "wt-2a30b5d43da541f7",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-f573398fb84a19ec-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-e123508dca20eee2-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-faa9413881eee67a-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-1d51cc59c74b92e7-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-7c20bc68764aad21-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-d579b7422811b01e-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2a30b5d43da541f7-a936979c3fb5f121-source.png"
         }
       },
       "slug": "hohe-kraftstoffpreise-unionsfraktionschef-frei-will-entlastungs-massnahmen-bis-1-oktober-a541f7",
