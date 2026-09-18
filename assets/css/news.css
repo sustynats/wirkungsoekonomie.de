@@ -2412,6 +2412,39 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .news-manual-table table { min-width: 40rem; width: 100%; border-collapse: collapse; }
 /* Keep wide book tables readable despite the global mobile min-width:0 !important reset. */
 .news-editorial-article--book .news-manual-table--wide .data-table { min-width: 40rem !important; table-layout: auto; }
+/* 18.09.2026: Die Ausnahme oben galt nur fuer Buchseiten. Jede andere
+   Ticker-Tabelle fiel unter die globale Mobilregel (style.css: table-layout
+   fixed, min-width:0 !important) - elf Spalten auf Handybreite, Text brach
+   Buchstabe fuer Buchstabe. Jetzt gilt fuer alle Ticker-Tabellen: natuerliche
+   Spaltenbreiten, seitlich wischen, die erste Spalte bleibt stehen. */
+/* Die globale Regel heisst "body .table-wrap .data-table" - die Gegenregel
+   braucht mindestens dieselbe Gewichtung, sonst gewinnt sie nur bei breiten
+   Tabellen (dort hebt :has() die Gewichtung) und die schmalen bleiben gequetscht. */
+/* Breiten im Nachbau gemessen (375 px): neben der festgehaltenen ersten Spalte
+   bleiben ~190 px sichtbar, und jede Textspalte soll darunter bleiben - sonst
+   muesste man innerhalb einer Zeile wischen. 4 Spalten bei 40rem: breiteste
+   183 px; 11 Spalten bei 52rem: die ungetrennten Kopfzeilen der Zahlenspalten
+   brauchen ihren Platz, die Textspalten bleiben lesbar (bei 66rem 344 px). */
+body .news-manual-table.table-wrap .data-table { table-layout: auto !important; min-width: 40rem !important; }
+body .news-manual-table.table-wrap .data-table:has(th:nth-child(6)) { min-width: 52rem !important; }
+/* Mobil setzt style.css mit "body .table-wrap td" Umbruch an jeder Stelle -
+   daher kam das Zerfallen in Einzelbuchstaben. Die Gegenregel braucht dasselbe
+   body-Praefix. Lange Woerter ("Nachfrageausweichung") trennt der Browser
+   silbenrichtig nach lang="de", statt die erste Spalte aufzublaehen. */
+body .news-manual-table.table-wrap th, body .news-manual-table.table-wrap td { overflow-wrap: normal; word-break: normal; -webkit-hyphens: auto; hyphens: auto; }
+/* Kopfzeilen nicht trennen: "TR-AG-WEI-TE" machte die Zahlenspalte so schmal,
+   dass "3,67" auf zwei Zeilen rutschte. Ungetrennt bekommt die Spalte die
+   Breite ihres Titels, und die Zahl passt hinein. */
+body .news-manual-table.table-wrap th { -webkit-hyphens: none; hyphens: none; }
+/* Die erste Spalte bleibt beim Wischen stehen - aber schmal. Ohne Grenze nahm
+   sie bei der elfspaltigen Tabelle 359 px ein, mehr als der ganze Rahmen, und
+   verdeckte beim Wischen jede andere Spalte (im Nachbau gemessen). */
+@media (max-width: 760px) {
+  /* Nur width: Tabellen uebergehen min-/max-width auf Zellen und gaben der
+     ersten Spalte sonst den ganzen Ueberschuss (gemessen 359 px). */
+  body .news-manual-table.table-wrap tr > :first-child { position: sticky; left: 0; z-index: 1; width: 9.5rem !important; min-width: 0 !important; max-width: none !important; background: #fffdf8; box-shadow: 1px 0 0 var(--wt-line); }
+  body .news-manual-table.table-wrap thead tr > :first-child { z-index: 2; background: #e9f0eb; }
+}
 .news-manual-table th, .news-manual-table td { padding: .9rem; vertical-align: top; text-align: left; border-bottom: 1px solid var(--wt-line); line-height: 1.55; }
 .news-manual-table th { background: #e9f0eb; }
 .news-manual-table:focus-visible { outline: 3px solid #347c63; outline-offset: 3px; }

@@ -29,6 +29,13 @@ export function auftragsBefund(job, now) {
     nachbesserungen: Number(job?.correction_count ?? job?.corrections?.length ?? 0),
     quittung: job?.ack?.status || null,
     fehler: String(job?.error || job?.publication_gate?.status || '').slice(0, 60) || null,
+    // Herkunft: "mit Kommentar zurueckgegeben" erzeugt einen Kind-Auftrag, der
+    // den alten Eintrag in der App vertritt. Scheitert er, bleibt der Eintrag
+    // dort dauerhaft auf "zurueckgegeben" (18.09.2026).
+    rueckgabe_von: String(job?.intake?.review_parent || '').slice(0, 64) || null,
+    ausloeser: String(job?.intake?.trigger_type || '').slice(0, 40) || null,
+    letzter_fehler: fehlerkennung(job?.last_error?.error_code),
+    fehlversuche: Number(job?.attempts?.intake || 0) || 0,
   };
 }
 
@@ -49,8 +56,13 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
       // haetten den Fall verdeckt, den dieser Befund finden soll (der erste
       // Lauf am 17.09.2026 zeigte 25 Auftraege von heute und gestern, waehrend
       // vier offene aelter waren).
+      // Offen zuerst, dann jede Ueberarbeitung (auch erledigte - nur so sieht
+      // man, ob zu einer Rueckgabe je eine neue Fassung kam), dann die zehn
+      // neuesten erledigten.
       const offen = alle.filter((befund) => befund.zustand !== 'accepted');
-      auftraege = [...offen, ...alle.filter((befund) => befund.zustand === 'accepted').slice(0, 10)].slice(0, 40);
+      const ueberarbeitungen = alle.filter((befund) => befund.zustand === 'accepted' && befund.rueckgabe_von);
+      const rest = alle.filter((befund) => befund.zustand === 'accepted' && !befund.rueckgabe_von).slice(0, 10);
+      auftraege = [...offen, ...ueberarbeitungen, ...rest].slice(0, 60);
       // Der entscheidende Zustand steht nicht im Auftrag, sondern im Vermerk
       // zum Versuch: provider_called ohne output_delivered heisst, der Auftrag
       // ist verbraucht und kehrt erst mit einer Vertragskorrektur zurueck.
