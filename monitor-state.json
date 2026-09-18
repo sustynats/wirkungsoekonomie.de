@@ -15,14 +15,19 @@
     },
     "sources": {
       "firstSeen": "2026-09-18T17:28:03.610Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-09-18T17:28:03.610Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "28c9ed1e226c1b702d413d8e",
+      "content": "⚠ WÖk-Betriebsstörung\nQuellenabruf: 1 fehlgeschlagene Quellenabrufe im letzten Lauf.\nSeit: 2026-09-18T17:28:03.610Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1425,7 +1430,7 @@
       }
     },
     "last_new_at": "2026-09-18T17:28:03.610Z",
-    "checked_at": "2026-09-18T17:28:03.610Z",
+    "checked_at": "2026-09-18T17:35:36.682Z",
     "last_current_new_at": "2026-09-18T17:28:03.610Z"
   },
   "recovery_attempts": [
