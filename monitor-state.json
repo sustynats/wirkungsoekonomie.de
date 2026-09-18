@@ -8,17 +8,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-17T01:35:29.424Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-09-18T16:50:31.146Z",
-      "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-09-18T16:52:26.597Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "d5e3a4ba5f76423af3a1e4a7",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-09-18T17:20:50.681Z"
+    },
+    {
+      "id": "ad8bfe22231c1bc0eafa57b6",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-09-18T17:20:50.681Z"
+    }
+  ],
   "dailyDate": "2026-09-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1410,10 +1411,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/schusse-in-koln-wer-sind-die-schutzen-da1dbe/": {
         "first_seen_at": "2026-09-18T16:35:31.880Z",
         "source_at": "2026-09-18T15:31:49.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bei-wunstorf-abgesturzte-drohne-suche-nach-teilen-dauert-an-0951a8/": {
+        "first_seen_at": "2026-09-18T17:20:50.681Z",
+        "source_at": "2026-09-16T13:40:03.836Z"
       }
     },
-    "last_new_at": "2026-09-18T16:35:31.880Z",
-    "checked_at": "2026-09-18T17:06:06.451Z",
+    "last_new_at": "2026-09-18T17:20:50.681Z",
+    "checked_at": "2026-09-18T17:20:50.681Z",
     "last_current_new_at": "2026-09-18T16:35:31.880Z"
   },
   "recovery_attempts": [
