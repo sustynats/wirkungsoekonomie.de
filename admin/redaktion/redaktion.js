@@ -1,5 +1,5 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
-import {approvalStates,orderedReviews,requestWithReview,requestPresentation,supplementBrief,supplementable} from './review-state.js';
+import {approvalStates,orderedReviews,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
 import {parkedReason} from './parked-review.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
@@ -169,7 +169,10 @@ async function openPrivatePreview(request){
 }
 async function load(){
   if(!auth())return;
-  const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.review_job_id||r.job_id)));drawReviews(reviewData.reviews);
+  const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));
+  // Der Stand einer Rueckgabe steht im Ueberarbeitungsauftrag - roh gelesen, bevor die Rueckgabe ihn ueberdeckt.
+  const revisions=revisionStates(data.requests,reviewData.reviews);
+  requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.review_job_id||r.job_id),revisions.get(r.review_job_id||r.job_id)));drawReviews(reviewData.reviews,revisions);
   $('login').hidden=true;$('workspace').hidden=false;$('tab-status').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
   if(!poll)poll=setInterval(()=>{if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));},60000);
 }
@@ -181,11 +184,15 @@ if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch
 load().catch(error=>note(error.message,true));
 
 $('tab-approval').addEventListener('click',()=>{show('approvals');load().catch(error=>note(error.message,true));});
-function drawReviews(reviews){
-  $('approval-count').textContent=reviews.filter(r=>['AWAITING_FINAL_APPROVAL','NEEDS_REVIEW'].includes(r.status)).length||'';
+function drawReviews(reviews,revisions=new Map()){
+  // Eine angehaltene Ueberarbeitung braucht Natalie genauso wie eine fertige Fassung.
+  $('approval-count').textContent=reviews.filter(r=>['AWAITING_FINAL_APPROVAL','NEEDS_REVIEW'].includes(r.status)||revisions.get(r.job_id)?.attention).length||'';
   const list=$('approval-list');list.replaceChildren();
   if(!reviews.length){list.append(element('p','Sobald ein Beitrag fertig vorbereitet ist, erscheint hier seine Vorschau.','quiet'));return;}
-  for(const r of orderedReviews(reviews)){const card=element('article',undefined,'request-card');card.append(element('span',types[r.format]||'Redaktion','eyebrow'),element('h2',r.title),element('p',approvalStates[r.status]||r.status));const button=element('button','Vorschau öffnen','text-button');button.type='button';button.addEventListener('click',()=>openReview(r.job_id).catch(e=>note(e.message,true)));card.append(button);list.append(card);}
+  for(const r of orderedReviews(reviews)){const card=element('article',undefined,'request-card'),revision=r.status==='REVISION_REQUESTED'?revisions.get(r.job_id):null;card.append(element('span',types[r.format]||'Redaktion','eyebrow'),element('h2',r.title));
+   if(revision){card.append(element('span',revision.label,`state${revision.attention?' hold':''}`));if(revision.note)card.append(element('p',revision.note));}else card.append(element('p',approvalStates[r.status]||r.status));
+   if(revision?.attention&&revision.parent&&supplementable(revision.parent)){const more=element('button','Informationen nachliefern','text-button');more.type='button';more.addEventListener('click',()=>startSupplement(revision.parent));card.append(more);}
+   const button=element('button','Vorschau öffnen','text-button');button.type='button';button.addEventListener('click',()=>openReview(r.job_id).catch(e=>note(e.message,true)));card.append(button);list.append(card);}
 }
 async function openReview(id){
  const r=await api(`/reviews/${id}`),p=r.preview,mount=$('approval-preview');mount.replaceChildren();mount.hidden=false;$('approval-list').hidden=true;
