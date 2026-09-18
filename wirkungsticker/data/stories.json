@@ -2,8 +2,1688 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T19:55:04.156Z",
+  "updated_at": "2026-09-18T20:24:04.616Z",
   "stories": [
+    {
+      "story_id": "wt-5504cf4d9c233683",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-5504cf4d9c233683-9be8d19302c7e5a3-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-5504cf4d9c233683-31ea9e424ad0809e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-5504cf4d9c233683-48951b065f0e33ff-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "abtreibung-und-patriarchale-ordnung-allianzen-beim-rechten-rollback-233683",
+      "title": "Religiöse Rechte mobilisiert gegen Abtreibungsrechte und verlagert Aktivitäten in soziale Medien",
+      "source_summary": "Die taz berichtet über den „Marsch für das Leben“ in Berlin und anderen Städten sowie über eine parallel stattfindende Konferenz von Abtreibungsgegnern. Nach Darstellung der Quelle reichen die beschriebenen Allianzen von religiösen Gruppen bis zu Akteuren der politischen Rechten.\n\nDer Bericht nennt finanzielle Unterstützung aus den USA für europäische Organisationen und beschreibt soziale Medien als wichtigen Verbreitungsraum. Dabei werden auch zwei Christfluencer mit 338.000 und 96.000 Followern erwähnt.\n\nDie taz deutet die Aktivitäten als Angriff auf Frauenrechte und Demokratie. Unabhängige Bestätigungen der Finanzierungsangaben, Reichweiten und politischen Wirkungen liegen im gelieferten Quellenbestand nicht vor.",
+      "summary": "Die taz berichtet über neue Veranstaltungen und digitale Netzwerke der religiösen Rechten gegen Abtreibungsrechte. Ein demokratisches und menschenrechtliches Wirkungspotenzial ist plausibel, konkrete Folgen bleiben offen.",
+      "detail_summary": "In Berlin und anderen Städten mobilisiert die religiöse Rechte laut taz beim „Marsch für das Leben“ gegen das Recht auf Abtreibung; parallel findet erstmals eine zweitägige Konferenz von Abtreibungsgegnern statt. Die Quelle beschreibt internationale Finanzierungs- und Kontaktnetzwerke sowie eine Verlagerung politischer Kommunikation in soziale Medien. Genannt werden auch Christfluencer mit 338.000 und 96.000 Followern. Daraus könnte ein Pfad über Sichtbarkeit, politische Deutungen und Druck auf Beratungs- oder Gesetzgebungsprozesse entstehen. Belegt sind im Quellenbestand die Darstellung der taz und einzelne Angaben, nicht aber ein eingetretener demokratischer oder menschenrechtlicher Effekt.",
+      "why_relevant": "Die Meldung verbindet körperliche Selbstbestimmung, digitale politische Mobilisierung und demokratische Institutionen. Das kann besonders für Betroffene von Schwangerschaftskonflikten und für Beratungsangebote relevant werden; konkrete Zustandsänderungen sind nicht belegt.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ongoing",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Veranstaltungen und digitale Mobilisierung der religiösen Rechten gegen Abtreibungsrechte",
+        "evaluation_target": {
+          "label": "politische Mobilisierung und ihre möglichen Folgen für Frauenrechte und Demokratie",
+          "type": "communication"
+        },
+        "baseline": "Öffentliche und institutionelle Auseinandersetzung mit Abtreibungsrechten ohne den zusätzlich beschriebenen Mobilisierungsimpuls",
+        "temporal_status": "ongoing",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne zusätzliche Vernetzung und digitale Verbreitung blieben Reichweite, Wiederholung und politische Anschlussfähigkeit möglicherweise geringer; das ist nicht gemessen.",
+        "reference_frame": [
+          "körperliche Selbstbestimmung",
+          "Gleichstellung der Geschlechter",
+          "demokratische Korrekturfähigkeit"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die mögliche Wirkung auf körperliche Selbstbestimmung, Beratungszugang und besonders betroffene Menschen wird modelliert; konkrete Einschränkungen sind nicht belegt.",
+            "planet": "Ein eigenständiger ökologischer Wirkungspfad ist im Quellenbestand nicht belegt. Ein indirekter Ressourcen- oder Aufmerksamkeitskonflikt bleibt praktisch vernachlässigbar.",
+            "democracy": "Mögliche Folgen für politische Narrative, institutionellen Druck und demokratische Aushandlung werden geprüft; der Eintritt ist offen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Veranstaltungen und digitale Inhalte können Sichtbarkeit und politische Ansprache verändern.",
+          "second_order": "Wiederholung und Vernetzung könnten Kategorien, Prioritäten und politischen Druck beeinflussen.",
+          "third_order": "Bei institutioneller Anschlussfähigkeit könnte sich die demokratische Aushandlung von Frauenrechten verengen.",
+          "enablement": [
+            "enables_majority",
+            "enables_legislation",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die sinkende Zahl von Demonstrationsteilnehmern kann gegen eine wachsende Offline-Mobilisierung sprechen.",
+            "Beratung, Gegenmobilisierung und demokratische Verfahren können mögliche Einschränkungen begrenzen.",
+            "Für ökologische Folgen gibt es im Quellenbestand keinen belastbaren Mechanismus."
+          ],
+          "source_independence": "Nur taz-aktuell liegt vor; die Herkunft ist journalistisch, eine unabhängige Bestätigung fehlt.",
+          "institutional_status": "Die Quelle belegt Veranstaltungen und politische Aktivitäten, aber keinen Beschluss, keine Gesetzesänderung und kein Inkrafttreten."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt einen plausiblen, aber nicht gemessenen Pfad von Mobilisierung über politische Narrative zu möglichem Druck auf körperliche Selbstbestimmung und Beratung. Eintritt und Größenordnung bleiben offen.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Möglicher politischer Druck könnte den gesellschaftlichen und institutionellen Schutz körperlicher Selbstbestimmung schwächen.",
+                "mechanism": "Veranstaltungen, internationale Vernetzung und digitale Wiederholung können anti-abtreibungspolitische Positionen sichtbarer und anschlussfähiger machen.",
+                "recipients": [
+                  "Menschen mit Schwangerschaftskonflikten",
+                  "Beratungsstellen",
+                  "Frauen"
+                ],
+                "magnitude": 4,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass digitale und öffentliche Mobilisierung dauerhaft Reichweite gewinnt und in politische oder institutionelle Entscheidungen übersetzt wird.",
+                "reference_space": "Deutschland mit transnationalen digitalen Bezügen",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sichtbarkeit und Vernetzung führen nicht automatisch, könnten aber politische Prioritäten und Druck verändern.",
+                "source_support": "Die Quelle belegt Veranstaltungen, Netzwerke und digitale Inhalte; sie belegt nicht die spätere politische Wirkung.",
+                "limitations": "Keine unabhängigen Wirkungsdaten, keine Angaben zu Beratungszugang oder konkreten Entscheidungen.",
+                "first_order": "Anti-abtreibungspolitische Positionen könnten sichtbarer werden.",
+                "second_order": "Politische Deutungen könnten den Druck auf Beratungsangebote und Gesetzgebungsdebatten erhöhen.",
+                "third_order": "Bei institutioneller Anschlussfähigkeit könnte sich der Schutz körperlicher Selbstbestimmung verengen; dieser Schritt ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Niedrige bis mittlere mögliche Tragweite wegen indirektem Mechanismus und offenem Eintritt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Bestätigung eines eingetretenen Effekts; der Pfad bleibt eine bedingte Hypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Veranstaltungen und genannte digitale Accounts eröffnen Reichweite, deren tatsächliche Wirkung ungemessen ist.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle beschreibt zugespitzte politische Inhalte, nicht konkrete Einschränkungen für Betroffene.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Jährliche Veranstaltungen und wiederholte digitale Kommunikation können anhaltend wirken.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Deutungen und Maßnahmen wären grundsätzlich demokratisch korrigierbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen in Schwangerschaftskonflikten können gegenüber Einschränkungen von Beratung besonders verletzlich sein.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein möglicher Einfluss auf Beratung und Gesetzgebung wäre mittelbar und institutionell relevant.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Körperliche Selbstbestimmung und erreichbare Beratung sind zentrale Schutzgüter; eine mögliche institutionelle Einschränkung wäre materiell.",
+                  "reference_frame": "körperliche Selbstbestimmung und Zugang zu Beratung",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "positive",
+                "label": "Gegenmobilisierung und Solidarität könnten Schutz und Unterstützung für Betroffene stärken.",
+                "mechanism": "Öffentliche Kontroverse kann zivilgesellschaftliche Gegenwehr und Aufmerksamkeit für Beratungsangebote auslösen.",
+                "recipients": [
+                  "Beratungsstellen",
+                  "zivilgesellschaftliche Gruppen",
+                  "Menschen mit Schwangerschaftskonflikten"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die Auseinandersetzung müsste Gegenmobilisierung und konkrete Unterstützung aktivieren.",
+                "reference_space": "Deutschland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kontroverse kann auch Schutzreaktionen auslösen.",
+                "source_support": "Die Quelle erwähnt zivilgesellschaftliches Engagement, belegt aber keine konkrete Gegenwirkung.",
+                "limitations": "Kein Nachweis zu Reichweite oder Wirkung einer Gegenmobilisierung.",
+                "first_order": "Mehr Aufmerksamkeit für Schutzangebote könnte entstehen.",
+                "second_order": "Zivilgesellschaftliche Unterstützung könnte stabilisiert werden.",
+                "third_order": "Demokratische Korrekturfähigkeit könnte dadurch gestärkt werden.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Gegenpfad ist möglich, aber im Quellenbestand kaum konkretisiert."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle nennt zivilgesellschaftliches Engagement, liefert aber keinen Beleg für einen eingetretenen Schutz- oder Resilienzeffekt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Gegenmobilisierung wird nicht quantifiziert.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete Schutzmaßnahmen oder Leistungen sind nicht beschrieben.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Gegenwirkung bleibt offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine mögliche öffentliche Gegenreaktion wäre grundsätzlich reversibel.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Unterstützung könnte besonders verletzlichen Betroffenen zugutekommen, ist aber nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Effekt ist nur indirekt denkbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche positive Nebenpfad ersetzt keine belastbare Prüfung eines Schutzes körperlicher Selbstbestimmung.",
+                  "reference_frame": "Unterstützung und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der negative Hauptpfad betrifft ein materielles Schutzgut und ist trotz geringer Evidenz bedingt modellierbar. Der positive Nebenpfad ist schwächer und nicht als Ausgleich zu behandeln.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Der mögliche Schutzverlust bei körperlicher Selbstbestimmung ist gegenüber einer nur hypothetischen Gegenmobilisierung die entscheidende Schutzgrenze."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Möglicher politischer Druck könnte den gesellschaftlichen und institutionellen Schutz körperlicher Selbstbestimmung schwächen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Möglicher politischer Druck könnte den gesellschaftlichen und institutionellen Schutz körperlicher Selbstbestimmung schwächen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Im gelieferten Bestand gibt es keinen belastbaren ökologischen Mechanismus. Ein eigenständiger Planetpfad ist in Raum und Zeit praktisch vernachlässigbar.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Kein materieller ökologischer Zustandswechsel ist aus der beschriebenen politischen Mobilisierung ableitbar.",
+                "mechanism": "Die Quelle beschreibt politische Kommunikation und Veranstaltungen, aber keine Energie-, Landnutzungs-, Emissions- oder Ressourcenänderung.",
+                "recipients": [
+                  "natur"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Ein ökologischer Effekt würde zusätzliche, im Quellenbestand nicht belegte materielle Aktivitäten voraussetzen.",
+                "reference_space": "Deutschland und die beschriebenen digitalen Netzwerke",
+                "time_horizon": "nicht bestimmbar",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Politische Kommunikation allein verändert den ökologischen Zustand nicht materiell.",
+                "source_support": "Die Quelle enthält keine ökologischen Zustandsdaten oder Maßnahmen.",
+                "limitations": "Keine Daten zu Ressourcen, Emissionen, Infrastruktur oder Umweltfolgen.",
+                "first_order": "Kein unmittelbar belegbarer ökologischer Effekt.",
+                "second_order": "Kein plausibler materieller Folgepfad ohne zusätzliche Maßnahmen.",
+                "third_order": "Keine systemische ökologische Wirkung modellierbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Der Pfad ist mangels materieller ökologischer Handlung in der Quelle begründet vernachlässigbar."
+                },
+                "negligibility_rationale": "Die Quelle beschreibt Kommunikation und politische Mobilisierung, nicht eine materielle Veränderung von Natur, Ressourcen oder Emissionen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Zustandsänderung oder belastbare ökologische Kausalspur in der einzigen Quelle.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Empfängerkreis durch die beschriebene Kommunikation belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine materielle Umweltveränderung beschrieben.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zeitwirkung belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ohne materiellen Pfad entsteht keine ökologische Irreversibilität.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine betroffene ökologische Vulnerabilität im Quellenbestand benannt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemkopplung beschrieben.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist kein ökologischer Schutzpfad erkennbar.",
+                  "reference_frame": "ökologische Zustandsänderung",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Meldung hat einen politischen und menschenrechtlichen Gegenstand. Ein Planetpfad wäre ohne zusätzliche materielle Handlung spekulativ und wird deshalb begründet vernachlässigt.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mangels materieller ökologischer Handlung ist keine ökologische Abwägung erforderlich."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein materieller ökologischer Zustandswechsel ist aus der beschriebenen politischen Mobilisierung ableitbar.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel ist aus der beschriebenen politischen Mobilisierung ableitbar.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt einen plausiblen demokratischen Pfad über digitale Wiederholung, politische Vernetzung und möglichen Druck auf Institutionen. Ein eingetretener Effekt ist nicht belegt.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Politische Vernetzung und digitale Wiederholung könnten demokratische Aushandlungsräume verengen.",
+                "mechanism": "Anti-abtreibungspolitische Akteure bündeln Veranstaltungen, Finanzierung, digitale Reichweite und politische Kontakte.",
+                "recipients": [
+                  "demokratische Institutionen",
+                  "politische Öffentlichkeit",
+                  "zivilgesellschaftliche Gruppen"
+                ],
+                "magnitude": 4,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die beschriebenen Netzwerke über Sichtbarkeit hinaus Einfluss auf politische Prioritäten, Personal oder Gesetzgebung gewinnen.",
+                "reference_space": "Deutschland mit internationalen und digitalen Verbindungen",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "systemic",
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung und Vernetzung können politische Kategorien und Entscheidungsräume beeinflussen, ohne dies automatisch zu tun.",
+                "source_support": "Die Quelle belegt die beschriebene Vernetzung und politische Einordnung, nicht deren institutionellen Erfolg.",
+                "limitations": "Keine unabhängigen Daten zu politischer Einflussnahme, Publikumswirkung oder institutionellen Entscheidungen.",
+                "first_order": "Die Positionen könnten im öffentlichen Raum sichtbarer und organisierter erscheinen.",
+                "second_order": "Politische Narrative könnten die Bewertung von Frauenrechten und demokratischer Zugehörigkeit prägen.",
+                "third_order": "Bei institutioneller Anschlussfähigkeit könnte die demokratische Korrekturfähigkeit bei Grundrechtsfragen geschwächt werden.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die mögliche Tragweite reicht von verstärkter Debattenpolarisierung bis zu institutionellem Druck; der Eintritt bleibt unsicher."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für eine eingetretene institutionelle oder demokratische Zustandsänderung; nur ein bedingter Wirkpfad ist modellierbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Veranstaltungen, transnationale Kontakte und soziale Medien können unterschiedliche Öffentlichkeiten erreichen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Quelle beschreibt zugespitzte politische Inhalte und direkte Nähe zu politischen Akteuren.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Jährliche Veranstaltungen und wiederkehrende digitale Kommunikation können längerfristige Präsenz erzeugen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Demokratische Entscheidungen bleiben grundsätzlich korrigierbar, politische Normalisierung kann aber nachwirken.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Grundrechtsdebatten und Beratungsstrukturen können gegenüber organisierter Einflussnahme verletzlich sein.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der beschriebene Pfad verbindet öffentliche Kommunikation, politische Netzwerke und mögliche institutionelle Entscheidungen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Demokratische Korrekturfähigkeit und gleiche politische Teilhabe sind maßgebliche Schutzgrenzen, wenn Grundrechte politisch unter Druck geraten.",
+                  "reference_frame": "demokratische Korrekturfähigkeit und politische Gleichheit",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "positive",
+                "label": "Öffentliche Gegenrede könnte demokratische Kontrolle und zivilgesellschaftliche Resilienz stärken.",
+                "mechanism": "Die Kontroverse kann Gegenöffentlichkeit, Prüfung und Unterstützung zivilgesellschaftlicher Räume auslösen.",
+                "recipients": [
+                  "zivilgesellschaftliche Gruppen",
+                  "Medien",
+                  "demokratische Institutionen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Demokratische Akteure müssten die Kontroverse in überprüfbare Debatten und Schutzmaßnahmen übersetzen.",
+                "reference_space": "Deutschland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Öffentliche Kontroverse kann auch Transparenz und Gegenkontrolle fördern.",
+                "source_support": "Die Quelle appelliert an Zusammenhalt und zivilgesellschaftliches Engagement, belegt aber keine konkrete Wirkung.",
+                "limitations": "Keine Messung von Gegenöffentlichkeit, Vertrauen oder demokratischer Resilienz.",
+                "first_order": "Mehr Aufmerksamkeit für die Auseinandersetzung könnte entstehen.",
+                "second_order": "Gegenargumente und Prüfungen könnten politische Einseitigkeit begrenzen.",
+                "third_order": "Institutionelle Korrekturfähigkeit könnte gestärkt werden, falls daraus konkrete Unterstützung folgt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein positiver Gegenpfad ist plausibel, aber schwach belegt und nicht quantifiziert."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle nennt zivilgesellschaftliches Engagement, liefert aber keinen Nachweis eines demokratischen Resilienzeffekts.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Gegenöffentlichkeit ist nicht quantifiziert.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete institutionelle Gegenmaßnahmen sind nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Gegenwirkung bleibt offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche Gegenrede ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Zivilgesellschaftliche Räume können Schutz und Kontrolle bieten, ihre Gefährdung ist aber nicht gemessen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Resilienzeffekt ist nur indirekt möglich.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche positive Gegenpfad begrenzt ein Risiko, ersetzt aber keine demokratische Schutzprüfung.",
+                  "reference_frame": "demokratische Resilienz",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Die demokratische Dimension ist wegen der beschriebenen Verbindung von Kommunikation, politischer Vernetzung und möglichen institutionellen Anschlussstellen materiell. Der negative Hauptpfad bleibt eine bedingte Hypothese ohne Wirkungsnachweis.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Die mögliche Schwächung demokratischer Korrekturfähigkeit ist gegenüber einer nur hypothetischen Gegenmobilisierung die entscheidende Schutzgrenze."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Politische Vernetzung und digitale Wiederholung könnten demokratische Aushandlungsräume verengen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Politische Vernetzung und digitale Wiederholung könnten demokratische Aushandlungsräume verengen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T20:27:01.868Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle trägt die Beschreibung der Veranstaltungen, Netzwerke, digitalen Kommunikation und die zugeschriebene politische Einordnung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt einen plausiblen, aber nicht gemessenen Pfad von Mobilisierung über politische Narrative zu möglichem Druck auf körperliche Selbstbestimmung und Beratung. Eintritt und Größenordnung bleiben offen.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Möglicher politischer Druck könnte den gesellschaftlichen und institutionellen Schutz körperlicher Selbstbestimmung schwächen.",
+              "mechanism": "Veranstaltungen, internationale Vernetzung und digitale Wiederholung können anti-abtreibungspolitische Positionen sichtbarer und anschlussfähiger machen.",
+              "recipients": [
+                "Menschen mit Schwangerschaftskonflikten",
+                "Beratungsstellen",
+                "Frauen"
+              ],
+              "magnitude": 4,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass digitale und öffentliche Mobilisierung dauerhaft Reichweite gewinnt und in politische oder institutionelle Entscheidungen übersetzt wird.",
+              "reference_space": "Deutschland mit transnationalen digitalen Bezügen",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sichtbarkeit und Vernetzung führen nicht automatisch, könnten aber politische Prioritäten und Druck verändern.",
+              "source_support": "Die Quelle belegt Veranstaltungen, Netzwerke und digitale Inhalte; sie belegt nicht die spätere politische Wirkung.",
+              "limitations": "Keine unabhängigen Wirkungsdaten, keine Angaben zu Beratungszugang oder konkreten Entscheidungen.",
+              "first_order": "Anti-abtreibungspolitische Positionen könnten sichtbarer werden.",
+              "second_order": "Politische Deutungen könnten den Druck auf Beratungsangebote und Gesetzgebungsdebatten erhöhen.",
+              "third_order": "Bei institutioneller Anschlussfähigkeit könnte sich der Schutz körperlicher Selbstbestimmung verengen; dieser Schritt ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Niedrige bis mittlere mögliche Tragweite wegen indirektem Mechanismus und offenem Eintritt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Bestätigung eines eingetretenen Effekts; der Pfad bleibt eine bedingte Hypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Veranstaltungen und genannte digitale Accounts eröffnen Reichweite, deren tatsächliche Wirkung ungemessen ist.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle beschreibt zugespitzte politische Inhalte, nicht konkrete Einschränkungen für Betroffene.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Jährliche Veranstaltungen und wiederholte digitale Kommunikation können anhaltend wirken.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Deutungen und Maßnahmen wären grundsätzlich demokratisch korrigierbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen in Schwangerschaftskonflikten können gegenüber Einschränkungen von Beratung besonders verletzlich sein.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein möglicher Einfluss auf Beratung und Gesetzgebung wäre mittelbar und institutionell relevant.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Körperliche Selbstbestimmung und erreichbare Beratung sind zentrale Schutzgüter; eine mögliche institutionelle Einschränkung wäre materiell.",
+                "reference_frame": "körperliche Selbstbestimmung und Zugang zu Beratung",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "positive",
+              "label": "Gegenmobilisierung und Solidarität könnten Schutz und Unterstützung für Betroffene stärken.",
+              "mechanism": "Öffentliche Kontroverse kann zivilgesellschaftliche Gegenwehr und Aufmerksamkeit für Beratungsangebote auslösen.",
+              "recipients": [
+                "Beratungsstellen",
+                "zivilgesellschaftliche Gruppen",
+                "Menschen mit Schwangerschaftskonflikten"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die Auseinandersetzung müsste Gegenmobilisierung und konkrete Unterstützung aktivieren.",
+              "reference_space": "Deutschland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kontroverse kann auch Schutzreaktionen auslösen.",
+              "source_support": "Die Quelle erwähnt zivilgesellschaftliches Engagement, belegt aber keine konkrete Gegenwirkung.",
+              "limitations": "Kein Nachweis zu Reichweite oder Wirkung einer Gegenmobilisierung.",
+              "first_order": "Mehr Aufmerksamkeit für Schutzangebote könnte entstehen.",
+              "second_order": "Zivilgesellschaftliche Unterstützung könnte stabilisiert werden.",
+              "third_order": "Demokratische Korrekturfähigkeit könnte dadurch gestärkt werden.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Gegenpfad ist möglich, aber im Quellenbestand kaum konkretisiert."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle nennt zivilgesellschaftliches Engagement, liefert aber keinen Beleg für einen eingetretenen Schutz- oder Resilienzeffekt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Gegenmobilisierung wird nicht quantifiziert.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete Schutzmaßnahmen oder Leistungen sind nicht beschrieben.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Gegenwirkung bleibt offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine mögliche öffentliche Gegenreaktion wäre grundsätzlich reversibel.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Unterstützung könnte besonders verletzlichen Betroffenen zugutekommen, ist aber nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Effekt ist nur indirekt denkbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche positive Nebenpfad ersetzt keine belastbare Prüfung eines Schutzes körperlicher Selbstbestimmung.",
+                "reference_frame": "Unterstützung und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der negative Hauptpfad betrifft ein materielles Schutzgut und ist trotz geringer Evidenz bedingt modellierbar. Der positive Nebenpfad ist schwächer und nicht als Ausgleich zu behandeln.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Der mögliche Schutzverlust bei körperlicher Selbstbestimmung ist gegenüber einer nur hypothetischen Gegenmobilisierung die entscheidende Schutzgrenze."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Möglicher politischer Druck könnte den gesellschaftlichen und institutionellen Schutz körperlicher Selbstbestimmung schwächen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Möglicher politischer Druck könnte den gesellschaftlichen und institutionellen Schutz körperlicher Selbstbestimmung schwächen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Im gelieferten Bestand gibt es keinen belastbaren ökologischen Mechanismus. Ein eigenständiger Planetpfad ist in Raum und Zeit praktisch vernachlässigbar.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Kein materieller ökologischer Zustandswechsel ist aus der beschriebenen politischen Mobilisierung ableitbar.",
+              "mechanism": "Die Quelle beschreibt politische Kommunikation und Veranstaltungen, aber keine Energie-, Landnutzungs-, Emissions- oder Ressourcenänderung.",
+              "recipients": [
+                "natur"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Ein ökologischer Effekt würde zusätzliche, im Quellenbestand nicht belegte materielle Aktivitäten voraussetzen.",
+              "reference_space": "Deutschland und die beschriebenen digitalen Netzwerke",
+              "time_horizon": "nicht bestimmbar",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Politische Kommunikation allein verändert den ökologischen Zustand nicht materiell.",
+              "source_support": "Die Quelle enthält keine ökologischen Zustandsdaten oder Maßnahmen.",
+              "limitations": "Keine Daten zu Ressourcen, Emissionen, Infrastruktur oder Umweltfolgen.",
+              "first_order": "Kein unmittelbar belegbarer ökologischer Effekt.",
+              "second_order": "Kein plausibler materieller Folgepfad ohne zusätzliche Maßnahmen.",
+              "third_order": "Keine systemische ökologische Wirkung modellierbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Der Pfad ist mangels materieller ökologischer Handlung in der Quelle begründet vernachlässigbar."
+              },
+              "negligibility_rationale": "Die Quelle beschreibt Kommunikation und politische Mobilisierung, nicht eine materielle Veränderung von Natur, Ressourcen oder Emissionen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Zustandsänderung oder belastbare ökologische Kausalspur in der einzigen Quelle.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Empfängerkreis durch die beschriebene Kommunikation belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine materielle Umweltveränderung beschrieben.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zeitwirkung belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ohne materiellen Pfad entsteht keine ökologische Irreversibilität.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine betroffene ökologische Vulnerabilität im Quellenbestand benannt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemkopplung beschrieben.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist kein ökologischer Schutzpfad erkennbar.",
+                "reference_frame": "ökologische Zustandsänderung",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Meldung hat einen politischen und menschenrechtlichen Gegenstand. Ein Planetpfad wäre ohne zusätzliche materielle Handlung spekulativ und wird deshalb begründet vernachlässigt.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mangels materieller ökologischer Handlung ist keine ökologische Abwägung erforderlich."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel ist aus der beschriebenen politischen Mobilisierung ableitbar.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein materieller ökologischer Zustandswechsel ist aus der beschriebenen politischen Mobilisierung ableitbar.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt einen plausiblen demokratischen Pfad über digitale Wiederholung, politische Vernetzung und möglichen Druck auf Institutionen. Ein eingetretener Effekt ist nicht belegt.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Politische Vernetzung und digitale Wiederholung könnten demokratische Aushandlungsräume verengen.",
+              "mechanism": "Anti-abtreibungspolitische Akteure bündeln Veranstaltungen, Finanzierung, digitale Reichweite und politische Kontakte.",
+              "recipients": [
+                "demokratische Institutionen",
+                "politische Öffentlichkeit",
+                "zivilgesellschaftliche Gruppen"
+              ],
+              "magnitude": 4,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die beschriebenen Netzwerke über Sichtbarkeit hinaus Einfluss auf politische Prioritäten, Personal oder Gesetzgebung gewinnen.",
+              "reference_space": "Deutschland mit internationalen und digitalen Verbindungen",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "systemic",
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung und Vernetzung können politische Kategorien und Entscheidungsräume beeinflussen, ohne dies automatisch zu tun.",
+              "source_support": "Die Quelle belegt die beschriebene Vernetzung und politische Einordnung, nicht deren institutionellen Erfolg.",
+              "limitations": "Keine unabhängigen Daten zu politischer Einflussnahme, Publikumswirkung oder institutionellen Entscheidungen.",
+              "first_order": "Die Positionen könnten im öffentlichen Raum sichtbarer und organisierter erscheinen.",
+              "second_order": "Politische Narrative könnten die Bewertung von Frauenrechten und demokratischer Zugehörigkeit prägen.",
+              "third_order": "Bei institutioneller Anschlussfähigkeit könnte die demokratische Korrekturfähigkeit bei Grundrechtsfragen geschwächt werden.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die mögliche Tragweite reicht von verstärkter Debattenpolarisierung bis zu institutionellem Druck; der Eintritt bleibt unsicher."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für eine eingetretene institutionelle oder demokratische Zustandsänderung; nur ein bedingter Wirkpfad ist modellierbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Veranstaltungen, transnationale Kontakte und soziale Medien können unterschiedliche Öffentlichkeiten erreichen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Quelle beschreibt zugespitzte politische Inhalte und direkte Nähe zu politischen Akteuren.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Jährliche Veranstaltungen und wiederkehrende digitale Kommunikation können längerfristige Präsenz erzeugen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Demokratische Entscheidungen bleiben grundsätzlich korrigierbar, politische Normalisierung kann aber nachwirken.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Grundrechtsdebatten und Beratungsstrukturen können gegenüber organisierter Einflussnahme verletzlich sein.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der beschriebene Pfad verbindet öffentliche Kommunikation, politische Netzwerke und mögliche institutionelle Entscheidungen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Demokratische Korrekturfähigkeit und gleiche politische Teilhabe sind maßgebliche Schutzgrenzen, wenn Grundrechte politisch unter Druck geraten.",
+                "reference_frame": "demokratische Korrekturfähigkeit und politische Gleichheit",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "positive",
+              "label": "Öffentliche Gegenrede könnte demokratische Kontrolle und zivilgesellschaftliche Resilienz stärken.",
+              "mechanism": "Die Kontroverse kann Gegenöffentlichkeit, Prüfung und Unterstützung zivilgesellschaftlicher Räume auslösen.",
+              "recipients": [
+                "zivilgesellschaftliche Gruppen",
+                "Medien",
+                "demokratische Institutionen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Demokratische Akteure müssten die Kontroverse in überprüfbare Debatten und Schutzmaßnahmen übersetzen.",
+              "reference_space": "Deutschland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Öffentliche Kontroverse kann auch Transparenz und Gegenkontrolle fördern.",
+              "source_support": "Die Quelle appelliert an Zusammenhalt und zivilgesellschaftliches Engagement, belegt aber keine konkrete Wirkung.",
+              "limitations": "Keine Messung von Gegenöffentlichkeit, Vertrauen oder demokratischer Resilienz.",
+              "first_order": "Mehr Aufmerksamkeit für die Auseinandersetzung könnte entstehen.",
+              "second_order": "Gegenargumente und Prüfungen könnten politische Einseitigkeit begrenzen.",
+              "third_order": "Institutionelle Korrekturfähigkeit könnte gestärkt werden, falls daraus konkrete Unterstützung folgt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein positiver Gegenpfad ist plausibel, aber schwach belegt und nicht quantifiziert."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle nennt zivilgesellschaftliches Engagement, liefert aber keinen Nachweis eines demokratischen Resilienzeffekts.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Gegenöffentlichkeit ist nicht quantifiziert.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete institutionelle Gegenmaßnahmen sind nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Gegenwirkung bleibt offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche Gegenrede ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Zivilgesellschaftliche Räume können Schutz und Kontrolle bieten, ihre Gefährdung ist aber nicht gemessen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Resilienzeffekt ist nur indirekt möglich.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche positive Gegenpfad begrenzt ein Risiko, ersetzt aber keine demokratische Schutzprüfung.",
+                "reference_frame": "demokratische Resilienz",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Die demokratische Dimension ist wegen der beschriebenen Verbindung von Kommunikation, politischer Vernetzung und möglichen institutionellen Anschlussstellen materiell. Der negative Hauptpfad bleibt eine bedingte Hypothese ohne Wirkungsnachweis.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Die mögliche Schwächung demokratischer Korrekturfähigkeit ist gegenüber einer nur hypothetischen Gegenmobilisierung die entscheidende Schutzgrenze."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Politische Vernetzung und digitale Wiederholung könnten demokratische Aushandlungsräume verengen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Politische Vernetzung und digitale Wiederholung könnten demokratische Aushandlungsräume verengen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Formulierung verbindet Veranstaltungen gegen Abtreibungsrechte mit einem politisch stark aufgeladenen Demokratie- und Rechtsruck-Frame.",
+        "factual_core": "Die taz berichtet über Veranstaltungen der religiösen Rechten, internationale Netzwerke und digitale Verbreitung anti-abtreibungspolitischer Inhalte.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die taz berichtet über Veranstaltungen in Berlin und anderen Städten.",
+            "Die Quelle nennt soziale Medien sowie zwei Accounts mit 338.000 und 96.000 Followern."
+          ],
+          "actor_claims": [
+            "Die taz bewertet den Angriff auf Frauenrechte als Angriff auf die Demokratie.",
+            "Die taz deutet ein Abtreibungsverbot als Teil eines größeren politischen Projekts."
+          ],
+          "open": [
+            "Unabhängige Bestätigung der Finanzierungs- und Wirkungsangaben fehlt.",
+            "Eine eingetretene Veränderung bei Recht, Beratung oder Wahlverhalten ist nicht belegt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "taz-aktuell",
+          "speaker": "taz",
+          "original_term": "rechter Rollback",
+          "usage_type": "paraphrase",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "rechter Rollback",
+          "origin_in_story": "taz-aktuell",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "rechter Rollback",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Quelle beschreibt anti-abtreibungspolitische Mobilisierung als Angriff auf Frauenrechte und Demokratie.",
+          "implied_cause": "Religiöse und politische Netzwerke sowie digitale Kommunikation werden als zusammenwirkende Ursachen beschrieben.",
+          "implied_responsibility": "Die Verantwortung wird den beschriebenen Akteuren und Netzwerken zugeschrieben.",
+          "implied_threat": "Eine patriarchale Ordnung und eine Schwächung demokratischer Räume werden als mögliche Bedrohung dargestellt.",
+          "implied_solution_space": "Schutz körperlicher Selbstbestimmung sowie Unterstützung zivilgesellschaftlicher Akteure.",
+          "material_omissions": [
+            "Gegenpositionen und unabhängige Wirkungsdaten sind im gelieferten Ausschnitt nicht enthalten."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "politisch umkämpfte Auseinandersetzung über Abtreibungsrechte und demokratische Ordnung",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "taz-aktuell",
+              "claim_supported": "Die Quelle beschreibt die Verbindung von religiöser Rechter, AfD, digitalen Netzwerken und Anti-Abtreibungsorganisationen."
+            }
+          ],
+          "uncertainty": "Die politische Einordnung stammt aus einer einzigen journalistischen Quelle."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Veranstaltungen und soziale Medien könnten Aufmerksamkeit und Anschlusskommunikation erzeugen.",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die Gegenüberstellung von Frauenrechten, religiöser Rechter und Demokratie könnte die Debatte zuspitzen.",
+          "trust_effect_potential": "Die zugespitzte Rahmung könnte Vertrauen in politische Akteure oder Medien je nach Publikum stärken oder schwächen.",
+          "discourse_effect_potential": "Mögliche Verschiebung von Deutungen und politischer Prioritätensetzung; kein Publikumsnachweis."
+        },
+        "impact_path": {
+          "first_order": "Veranstaltungen und digitale Beiträge könnten anti-abtreibungspolitische Positionen sichtbarer machen.",
+          "second_order": "Wiederholung und Vernetzung könnten politische Narrative über Frauenrechte und Demokratie stabilisieren.",
+          "third_order": "Bei institutioneller Anschlussfähigkeit könnte sich der Raum für demokratische Aushandlung und Beratungspolitik verändern."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Die taz berichtet über Veranstaltungen, Netzwerke und digitale Verbreitung. Die Quelle nennt 338.000 und 96.000 Follower.",
+          "what_is_inferred": "Aus Sichtbarkeit und Vernetzung könnte ein politischer Mobilisierungspfad entstehen.",
+          "what_is_open": "Keine unabhängige Quelle, keine repräsentative Reichweitenmessung und kein Wirkungsnachweis.",
+          "facts": [
+            "Die taz berichtet über Veranstaltungen, Netzwerke und digitale Verbreitung.",
+            "Die Quelle nennt 338.000 und 96.000 Follower."
+          ],
+          "observations": [
+            "Im gelieferten Bestand ist eine journalistische Darstellung vorhanden."
+          ],
+          "inferences": [
+            "Aus Sichtbarkeit und Vernetzung könnte ein politischer Mobilisierungspfad entstehen."
+          ],
+          "impact_potentials": [
+            "Mögliche Verstärkung anti-abtreibungspolitischer Narrative und politischen Drucks."
+          ],
+          "impact_risks": [
+            "Mögliche Polarisierung und Verengung der Debatte."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine unabhängige Quelle, keine repräsentative Reichweitenmessung und kein Wirkungsnachweis."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die taz berichtet über den „Marsch für das Leben“ und eine parallel stattfindende Konferenz von Abtreibungsgegnern. Außerdem beschreibt sie internationale Netzwerke und Christfluencer, die anti-abtreibungspolitische und rechtspopulistische Inhalte verbreiten. Die Quelle bewertet diese Entwicklung als Angriff auf Frauenrechte und Demokratie. Das ist eine politische Einordnung der taz, kein unabhängig bestätigter Wirkungsnachweis. Möglich ist ein Pfad über Sichtbarkeit: Veranstaltungen und soziale Medien können Botschaften verbreiten, neue Unterstützer erreichen und politischen Druck erhöhen. Ob sich dadurch Einstellungen, Beratungsangebote oder Entscheidungen verändern, bleibt offen. Die Angaben zu Finanzierung und Reichweite sollten durch unabhängige Quellen und Primärbelege geprüft werden. Belegt ist im gelieferten Bestand vor allem, dass die taz diese Aktivitäten beschreibt und ihnen eine demokratische Bedeutung zuschreibt.",
+        "editorial_assessment": "Die taz berichtet über den „Marsch für das Leben“ und eine parallel stattfindende Konferenz von Abtreibungsgegnern. Außerdem beschreibt sie internationale Netzwerke und Christfluencer, die anti-abtreibungspolitische und rechtspopulistische Inhalte verbreiten. Die Quelle bewertet diese Entwicklung als Angriff auf Frauenrechte und Demokratie. Das ist eine politische Einordnung der taz, kein unabhängig bestätigter Wirkungsnachweis. Möglich ist ein Pfad über Sichtbarkeit: Veranstaltungen und soziale Medien können Botschaften verbreiten, neue Unterstützer erreichen und politischen Druck erhöhen. Ob sich dadurch Einstellungen, Beratungsangebote oder Entscheidungen verändern, bleibt offen. Die Angaben zu Finanzierung und Reichweite sollten durch unabhängige Quellen und Primärbelege geprüft werden. Belegt ist im gelieferten Bestand vor allem, dass die taz diese Aktivitäten beschreibt und ihnen eine demokratische Bedeutung zuschreibt.",
+        "fact_first_alternative": "Die taz berichtet über Veranstaltungen und digitale Netzwerke gegen Abtreibungsrechte. Die politische Wirkung ist offen; die Quelle ordnet die Aktivitäten als Angriff auf Frauenrechte und Demokratie ein.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der Begriff „Rollback“ enthält eine politische Deutung.",
+            "Die Reichweitenangaben erlauben keinen Wirkungsnachweis."
+          ],
+          "frame_repetition_count": 0,
+          "rewrite_required": true,
+          "recommended_title": "Religiöse Rechte mobilisiert gegen Abtreibungsrechte und nutzt soziale Medien",
+          "recommended_summary": "Die taz berichtet über Veranstaltungen, Netzwerke und digitale Verbreitung anti-abtreibungspolitischer Inhalte. Mögliche politische Folgen sind offen.",
+          "recommended_meta_description": "Die taz beschreibt Veranstaltungen und digitale Netzwerke der religiösen Rechten gegen Abtreibungsrechte. Wirkung und Finanzierung bleiben teilweise unbestätigt."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T20:24:04.616Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T17:55:00.000Z",
+      "last_updated": "2026-09-18T20:27:01.861Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-dd7ed6f387287a8c0919",
+      "case_file": null,
+      "source_published_at": "2026-09-18T17:55:00.000Z",
+      "published_at": "2026-09-18T20:27:01.861Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob die beschriebenen Organisationen und Netzwerke durch unabhängige Quellen sowie Primärbelege bestätigt werden.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Belege zu Finanzierung, Organisationen und Reichweiten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a152cbb3dafe0de3",
+          "announced_at": "2026-09-18T17:55:00.000Z",
+          "follow_up_date": "2026-09-25T20:27:01.861Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zu prüfen ist, ob sich aus der beschriebenen digitalen Mobilisierung konkrete Änderungen bei politischen Entscheidungen oder Beratungsangeboten ergeben.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Dokumentierte politische Entscheidungen, Anträge oder Änderungen bei Beratungsstrukturen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-343b21044b313eab",
+          "announced_at": "2026-09-18T17:55:00.000Z",
+          "follow_up_date": "2026-09-25T20:27:01.861Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Abtreibung-und-patriarchale-Ordnung/!6208314",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T17:55:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-9d9acfb9daff09ee",
       "title_image": {
