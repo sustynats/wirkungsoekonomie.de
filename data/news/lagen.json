@@ -1,7 +1,112 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-17T16:00:00.000Z",
+  "updated_at": "2026-09-18T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-18-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-18",
+      "window_from": "2026-09-17T16:00:00.000Z",
+      "window_to": "2026-09-18T04:00:00.000Z",
+      "stand": "2026-09-18T04:00:00.000Z",
+      "headline": "Das sind die 11 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 11,
+        "neu": 10,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-057722ef54ceaa10",
+          "slug": "weisses-haus-usa-weisen-uno-bericht-uber-mogliche-kriegsverbrechen-im-iran-zuruck-ceaa10",
+          "title": "USA weisen laut Deutschlandfunk UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück",
+          "state": "neu",
+          "at": "2026-09-18T00:23:55.501Z",
+          "score": 7.6999
+        },
+        {
+          "story_id": "wt-bc9d5aae223d144a",
+          "slug": "vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a",
+          "title": "SPD liegt laut stern-Umfrage vor AfD in Mecklenburg-Vorpommern",
+          "state": "neu",
+          "at": "2026-09-17T23:10:46.015Z",
+          "score": 3.5983
+        },
+        {
+          "story_id": "wt-17183454da128b91",
+          "slug": "erneute-explosionen-in-frankfurt-17-jahriger-tatverdachtiger-festgenommen-128b91",
+          "title": "Laut hessenschau: Erneute Explosionen in Frankfurt, 17-jähriger Tatverdächtiger festgenommen",
+          "state": "neu",
+          "at": "2026-09-17T20:55:54.013Z",
+          "score": 9.411
+        },
+        {
+          "story_id": "wt-894c65ec59488061",
+          "slug": "bundeslander-einigung-auf-neuen-staatsvertrag-fur-die-digitale-medienwelt-488061",
+          "title": "Laut Deutschlandfunk: Länder-Rundfunkkommission beschließt Entwurf für neuen Staatsvertrag",
+          "state": "neu",
+          "at": "2026-09-17T20:10:19.343Z",
+          "score": 7.9917
+        },
+        {
+          "story_id": "wt-e28fbc8bc4621d07",
+          "slug": "bayerns-justizminister-eisenreich-tritt-zuruck-und-verlasst-politik-621d07",
+          "title": "Bayerns Justizminister Georg Eisenreich kündigt Rücktritt und Abschied aus der Politik an",
+          "state": "neu",
+          "at": "2026-09-17T19:56:06.877Z",
+          "score": 5.3279
+        },
+        {
+          "story_id": "wt-ab2596b44d22f190",
+          "slug": "pflege-in-der-krise-sachsen-will-mitreden-22f190",
+          "title": "Laut MDR will Sachsen bei der Pflegereform mitreden",
+          "state": "neu",
+          "at": "2026-09-17T19:39:41.184Z",
+          "score": 5.3051
+        },
+        {
+          "story_id": "wt-3e1270e788859189",
+          "slug": "lehrer-uberstunden-muss-arbeitszeit-zukunftig-erfasst-werden-859189",
+          "title": "Laut MDR: Bundesverwaltungsgericht urteilt zu Arbeitszeit von Lehrkräften",
+          "state": "neu",
+          "at": "2026-09-17T19:09:33.186Z",
+          "score": 5.2633
+        },
+        {
+          "story_id": "wt-9a23a552e50afd76",
+          "slug": "urteil-bundesverwaltungsgericht-kippt-ausgleich-fur-uberstunden-eines-rektors-0afd76",
+          "title": "Laut Deutschlandfunk: Bundesverwaltungsgericht hebt Überstundenausgleich für Rektor auf",
+          "state": "neu",
+          "at": "2026-09-17T18:55:21.864Z",
+          "score": 7.7855
+        },
+        {
+          "story_id": "wt-aa4c65bfac0e1b17",
+          "slug": "nach-wahlniederlage-schwedischer-ministerprasident-kristersson-erklart-rucktritt-0e1b17",
+          "title": "Nach Angaben des Deutschlandfunks: Schwedischer Ministerpräsident Kristersson kündigt Rücktritt an",
+          "state": "neu",
+          "at": "2026-09-17T18:39:05.973Z",
+          "score": 5.221
+        },
+        {
+          "story_id": "wt-cf7f064177001cb5",
+          "slug": "us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-001cb5",
+          "title": "US-Notenbank erhöht Leitzins auf 3,75 bis 4,00 Prozent",
+          "state": "fortgeschrieben",
+          "at": "2026-09-17T17:04:51.390Z",
+          "score": 4.8401
+        },
+        {
+          "story_id": "wt-85695a3a0ab0befa",
+          "slug": "deutschland-und-kanada-investieren-millionen-in-ki-projekt-lawzero-b0befa",
+          "title": "Deutschland und Kanada fördern sicherheitsorientiertes KI-Projekt",
+          "state": "neu",
+          "at": "2026-09-17T16:56:31.648Z",
+          "score": 5.0785
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-17-abendlage",
       "slot": "abendlage",
