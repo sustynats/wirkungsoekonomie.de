@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-18T10:07:42.871Z",
+  "last_successful_run": "2026-09-18T10:22:30.048Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -99336,6 +99336,14 @@
     }
   },
   "pending_story_ids": [
+    "wt-fe44c118d4ab191b",
+    "wt-aece5eb30ab15157",
+    "wt-ed8a009bda114963",
+    "wt-64ee8b18728787c4",
+    "wt-79ff561b28d00f98",
+    "wt-57bd398c6422046c",
+    "wt-f5ef69598230ad20",
+    "wt-f69f15572d1c47a5",
     "wt-1189c9eb2052f418",
     "wt-dd1cd7879ac49102",
     "wt-020966d3b3f330bd",
@@ -99355,6 +99363,7 @@
     "wt-a4805dc7fcbda1c8",
     "wt-c67fae5447aa1aee",
     "wt-a768b91103f85ae5",
+    "wt-b10313fa151dc473",
     "wt-6093a69e635cfddd",
     "wt-d7001a8c3972903a",
     "wt-08b6398a29f89bf8",
@@ -99391,7 +99400,6 @@
     "wt-a958a26410286f8d",
     "wt-cad1baf18eb2b6d5",
     "wt-299c694677f4840a",
-    "wt-b10313fa151dc473",
     "wt-7d1e2dbe01a7b95a",
     "wt-3df0abfedc66c7c0",
     "wt-f3d48e3434aeabb0",
@@ -99410,7 +99418,6 @@
     "wt-855eed7f1ea35777",
     "wt-e0167940d43f4b5c",
     "wt-59c7e57c9390e748",
-    "wt-f5ef69598230ad20",
     "wt-addbaa10454e191d",
     "wt-beb3818687c9bd13",
     "wt-320896c704cc78eb",
@@ -99633,13 +99640,11 @@
     "wt-0a077a6bcd32c767",
     "wt-f929e3a5dce50179",
     "wt-9de4884c3813fba2",
-    "wt-aece5eb30ab15157",
     "wt-b85e7abf91ebf062",
     "wt-c90820673fd8a955",
     "wt-3b3a38c81543e1db",
     "wt-ce45e7203d423afe",
     "wt-79b522331203406b",
-    "wt-015e7aaa5a0cf7f1",
     "wt-9ae90e3cf060f79b",
     "wt-6f96f69f95338adb",
     "wt-12b988b1595d9c34",
@@ -99672,8 +99677,6 @@
     "wt-16b158a009013062",
     "wt-2638d89da787527b",
     "wt-de3f7de661000802",
-    "wt-118bf75eaa5a26c6",
-    "wt-183e89f9347ae19d",
     "wt-7eca2dcbe375ac03",
     "wt-e78c691e61d71f5e",
     "wt-904ae94ad2d1eff9",
@@ -99687,7 +99690,6 @@
     "wt-7fc6ef7afc458288",
     "wt-c46eaf3fa3e1d9ce",
     "wt-6000b2fabc397176",
-    "wt-b07986df07ef1461",
     "wt-03c6bacdda808696",
     "wt-a826aa65db4e40de",
     "wt-d88c83aa901d7173",
@@ -99707,7 +99709,6 @@
     "wt-c651fa25bb5d4904",
     "wt-107ba3a03e31a7ed",
     "wt-5293ff941640c10f",
-    "wt-20149fcfb1f54cca",
     "wt-6c989644c8c8daa1",
     "wt-a2e7dbe5b41d777c",
     "wt-695ce2c4e8c482f1",
@@ -99945,15 +99946,10 @@
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
     "wt-98ff7e403362fdf9",
-    "wt-79ff561b28d00f98",
-    "wt-fe44c118d4ab191b",
-    "wt-ed8a009bda114963",
-    "wt-f69f15572d1c47a5",
-    "wt-64ee8b18728787c4",
-    "wt-57bd398c6422046c"
+    "wt-b8ad00e151c69566"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-18T10:07:42.871Z",
+  "last_attempted_run": "2026-09-18T10:22:30.048Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1481,
@@ -103419,6 +103415,11 @@
       "input_hash": "3cd47110a891aab365bc7d40",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-18T10:07:42.871Z"
+    },
+    "wt-79ff561b28d00f98": {
+      "input_hash": "61a5bbfb6dd95361ab4ebee8",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-18T10:22:30.048Z"
     }
   }
 }
