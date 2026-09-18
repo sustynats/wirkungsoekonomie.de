@@ -44,7 +44,7 @@ test('kein Auftragstext verlaesst die private Warteschlange', async () => {
   const ergebnis = await redaktionsauftraege({ session: session([auftrag('woek-a', '2026-09-14T09:00:00.000Z')], []), now });
   assert.equal(JSON.stringify(ergebnis).includes('GEHEIMER AUFTRAGSTEXT'), false);
   assert.deepEqual(Object.keys(auftragsBefund(auftrag('woek-a', now), now)).sort(),
-    ['abgeschlossen', 'angenommen', 'art', 'erstellt', 'fehler', 'job_id', 'nachbesserungen', 'quittung', 'stunden_alt', 'zustand']);
+    ['abgeschlossen', 'angenommen', 'art', 'ausloeser', 'erstellt', 'fehler', 'fehlversuche', 'job_id', 'letzter_fehler', 'nachbesserungen', 'quittung', 'rueckgabe_von', 'stunden_alt', 'zustand']);
 });
 
 test('eine belegte Importspur macht den Befund nicht wertlos', async () => {
@@ -91,4 +91,17 @@ test('die Fehlerkennung kommt mit, das Detail bleibt drin', () => {
   assert.equal(fehlerkennung('Unerwarteter Satz mit Auftragstext'), 'nicht als Kennung lesbar');
   assert.equal(fehlerkennung(''), null);
   assert.equal(fehlerkennung(undefined), null);
+});
+
+// Eine Rueckgabe mit Kommentar erzeugt einen Kind-Auftrag. Scheitert er an
+// seinen Pruefungen, wird er abgesondert, und in der App steht der alte Eintrag
+// fuer immer auf "mit Kommentar zurueckgegeben".
+test('eine gescheiterte Ueberarbeitung zeigt Herkunft und Grund', () => {
+  const kind = auftrag('woek-kind', '2026-09-14T20:33:02.000Z', { status: 'quarantined',
+    intake: { review_parent: 'woek-eltern', trigger_type: 'manual_revision' },
+    attempts: { intake: 3 }, last_error: { error_code: 'INTAKE_REVISION_SOURCE_INVALID' } });
+  const befund = auftragsBefund(kind, now);
+  assert.equal(befund.rueckgabe_von, 'woek-eltern');
+  assert.equal(befund.letzter_fehler, 'INTAKE_REVISION_SOURCE_INVALID');
+  assert.equal(befund.fehlversuche, 3);
 });
