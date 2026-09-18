@@ -83,10 +83,12 @@ Aufgabe an und führt sie danach serverseitig aus.
 > 6. Öffne im Repository `sustynats/wirkungsoekonomie.de` ein Issue mit dem Titel
 >    `[EINORDNUNG] <slug>` — genau die Kennung aus der Liste — und dem Text als
 >    Körper, ohne Vorwort und ohne Formatierung drumherum.
-> 7. Kommt an dem Issue ein Kommentar mit einem Fehlercode zurück
->    (`EINORDNUNG_NEUE_ZAHL`, `EINORDNUNG_ZU_LANG`,
->    `EDITORIAL_PROCESS_NOTE_IN_TEXT` und ähnliche), dann korrigiere genau
->    diesen Punkt und öffne ein neues Issue mit demselben Titel.
+> 7. Kommt an dem Issue ein Kommentar mit einem Fehlercode zum Text zurück
+>    (`EINORDNUNG_NEUE_ZAHL`, `EINORDNUNG_ZU_LANG`, `EINORDNUNG_ZU_KURZ`,
+>    `EINORDNUNG_QUELLE_IM_TEXT`, `EDITORIAL_PROCESS_NOTE_IN_TEXT`), dann
+>    korrigiere genau diesen Punkt und öffne ein neues Issue mit demselben Titel.
+>    Bei `EINORDNUNG_TECHNISCHER_FEHLER` liegt der Fehler auf unserer Seite:
+>    nichts ändern, kein neues Issue — es wird erneut verarbeitet.
 
 Voraussetzung: ChatGPT braucht Zugriff auf GitHub für Schritt 2, 6 und 7. Der
 bestand schon — der alte Bridge-Kanal lief über dieselben Issues.
