@@ -1,7 +1,112 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-18T04:00:00.000Z",
+  "updated_at": "2026-09-18T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-18-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-18",
+      "window_from": "2026-09-18T04:00:00.000Z",
+      "window_to": "2026-09-18T10:00:00.000Z",
+      "stand": "2026-09-18T10:00:00.000Z",
+      "headline": "Das sind die 11 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 11,
+        "neu": 10,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-1e97ba2918206370",
+          "slug": "explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370",
+          "title": "Laut Polizeiangaben mindestens 14 Tote bei Autobombenanschlag in Pakistan",
+          "state": "neu",
+          "at": "2026-09-18T09:55:40.233Z",
+          "score": 6
+        },
+        {
+          "story_id": "wt-f196694f5c601438",
+          "slug": "versuchter-totschlag-nach-messerangriff-in-dresden-anklage-gegen-36-jahrigen-601438",
+          "title": "Laut Staatsanwaltschaft: Anklage gegen 36-Jährigen nach Messerangriff in Dresden",
+          "state": "neu",
+          "at": "2026-09-18T09:25:38.605Z",
+          "score": 5.9046
+        },
+        {
+          "story_id": "wt-73b3b73c6285aa6d",
+          "slug": "polizeieinsatz-schusse-auf-kolner-pizzeria-und-wohnung-85aa6d",
+          "title": "Schüsse treffen Kölner Pizzeria und Wohnung; niemand verletzt",
+          "state": "neu",
+          "at": "2026-09-18T08:25:33.262Z",
+          "score": 5.7377
+        },
+        {
+          "story_id": "wt-aeced19bfd9a9d57",
+          "slug": "grosshandelspreise-im-august-2026-6-8-gegenuber-august-2025-9a9d57",
+          "title": "Großhandelspreise steigen im August 2026 um 6,8 Prozent",
+          "state": "neu",
+          "at": "2026-09-18T07:40:53.530Z",
+          "score": 5.6136
+        },
+        {
+          "story_id": "wt-cc54d157ba3a63c6",
+          "slug": "polizei-einsatz-schusse-auf-haus-in-koln-mulheim-3a63c6",
+          "title": "Schüsse auf Haus in Köln-Mülheim: Polizei-Einsatz läuft laut WDR",
+          "state": "neu",
+          "at": "2026-09-18T07:25:17.353Z",
+          "score": 3.8647
+        },
+        {
+          "story_id": "wt-bc9d5aae223d144a",
+          "slug": "vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a",
+          "title": "Laut stern-Umfrage liegt SPD in Mecklenburg-Vorpommern knapp vor AfD",
+          "state": "fortgeschrieben",
+          "at": "2026-09-18T07:09:06.842Z",
+          "score": 3.2753
+        },
+        {
+          "story_id": "wt-8370ac4af74b5913",
+          "slug": "japan-notenbank-hebt-leitzins-auf-hochsten-stand-seit-31-jahren-4b5913",
+          "title": "Laut manager magazin: Japans Notenbank hebt Leitzins auf höchsten Stand seit 31 Jahren",
+          "state": "neu",
+          "at": "2026-09-18T06:18:46.111Z",
+          "score": 5.3855
+        },
+        {
+          "story_id": "wt-2d3f98683f6f8ac9",
+          "slug": "kriminalitat-handelsverband-besorgt-nach-serie-von-explosionen-6f8ac9",
+          "title": "Laut stern: Fünf Läden in Frankfurt und Offenbach durch Detonationen stark beschädigt",
+          "state": "neu",
+          "at": "2026-09-18T06:06:35.813Z",
+          "score": 5.3517
+        },
+        {
+          "story_id": "wt-5ad167748060938a",
+          "slug": "hochwasser-in-hanoi-uberschwemmungen-in-vietnam-drei-tote-und-meterhohe-fluten-60938a",
+          "title": "Laut Tagesspiegel: Hochwasser in Hanoi – drei Tote und 20.000 Häuser unter Wasser",
+          "state": "neu",
+          "at": "2026-09-18T05:25:50.908Z",
+          "score": 5.2385
+        },
+        {
+          "story_id": "wt-6af9fdff824b9a4c",
+          "slug": "cyberangriff-im-krankenhaus-krisensimulation-zeigt-potenzial-auf-4b9a4c",
+          "title": "Laut heise Security: Cyberangriffe können Krankenhäuser lahmlegen – Krisensimulation prüft Resilienz",
+          "state": "neu",
+          "at": "2026-09-18T05:09:31.268Z",
+          "score": 5.1931
+        },
+        {
+          "story_id": "wt-bd7c6643d02cabad",
+          "slug": "krieg-am-roten-meer-nach-der-blitzoffensive-wer-sind-die-huthi-2cabad",
+          "title": "Wer sind die Huthi im Krieg am Roten Meer?",
+          "state": "neu",
+          "at": "2026-09-18T04:55:52.084Z",
+          "score": 5.1552
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-18-morgenlage",
       "slot": "morgenlage",
