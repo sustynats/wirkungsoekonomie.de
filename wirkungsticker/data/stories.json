@@ -2,8 +2,1471 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-18T04:53:14.650Z",
+  "updated_at": "2026-09-18T05:07:45.067Z",
   "stories": [
+    {
+      "story_id": "wt-6af9fdff824b9a4c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6af9fdff824b9a4c-a2ec7732b93fd589-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6af9fdff824b9a4c-38da54d17707441d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6af9fdff824b9a4c-287319c2bb4ed187-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "cyberangriff-im-krankenhaus-krisensimulation-zeigt-potenzial-auf-4b9a4c",
+      "title": "Laut heise Security: Cyberangriffe können Krankenhäuser lahmlegen – Krisensimulation prüft Resilienz",
+      "source_summary": "Heise Security berichtet über eine Krisensimulation des Fraunhofer SIT im Krankenhausbereich. Der Bericht beschreibt Cyberangriffe als mögliche Ursache für eine Lahmlegung von Krankenhäusern.\n\nNach der vorliegenden Zusammenfassung soll die Simulation die Resilienz im Ernstfall prüfen. Außerdem geht es darum, Schwachstellen in Notfallplänen sichtbar zu machen.\n\nDie Akte enthält nur diese journalistische Quelle. Nicht belegt sind konkrete Krankenhäuser, ein eingetretener Angriff, konkrete Ausfälle oder Messergebnisse der Simulation; der vollständige Kontext der Originalquelle bleibt zu prüfen.",
+      "summary": "Eine von Heise Security berichtete Krisensimulation des Fraunhofer SIT untersucht, wie Krankenhäuser auf Cyberangriffe vorbereitet sind. Belegt ist ein Prüf- und Aufklärungsanlass, nicht ein eingetretener Angriff oder konkreter Schaden.",
+      "detail_summary": "Heise Security berichtet über eine Krisensimulation des Fraunhofer SIT für den Krankenhausbereich. Cyberangriffe können nach dem Bericht Krankenhäuser lahmlegen. Die Simulation soll die Resilienz im Ernstfall testen und Schwachstellen in Notfallplänen aufdecken. Daraus ergibt sich ein mögliches Wirkungspotenzial für die Versorgung, wenn erkannte Lücken tatsächlich bearbeitet werden. Konkrete Ausfälle, betroffene Einrichtungen und Ergebnisse der Übung sind in der vorliegenden Quelle nicht belegt.",
+      "why_relevant": "Krankenhäuser sind für kontinuierliche Versorgung und Notfallbehandlung auf funktionierende digitale und organisatorische Abläufe angewiesen; die Quelle beschreibt hierzu einen konkreten Prüfimpuls.",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über eine Krisensimulation des Fraunhofer SIT zur Resilienz von Krankenhäusern gegenüber Cyberangriffen",
+        "evaluation_target": {
+          "label": "Krisensimulation und mögliche Verbesserung von Krankenhaus-Notfallplänen",
+          "type": "development"
+        },
+        "baseline": "Vor der Simulation bestehen keine aus der Quelle belegten Änderungen an Notfallplänen oder messbaren Resilienzgewinnen.",
+        "counterfactual": "Ohne die Simulation könnten die beschriebenen Schwachstellen unentdeckt oder weniger systematisch geprüft bleiben.",
+        "reference_frame": [
+          "Sichere und erreichbare Gesundheitsversorgung",
+          "Digitale Resilienz kritischer Einrichtungen",
+          "Kontinuität von Notfallversorgung"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen; konkrete Patientenschäden oder Verbesserungen sind nicht beobachtet.",
+            "planet": "Direkte ökologische Folgen sind nicht belegt; mögliche indirekte Effekte über Ersatzbetrieb, Technik und Ressourcen bleiben klein und offen.",
+            "democracy": "Bessere Krisenkoordination könnte institutionelles Vertrauen und Handlungsfähigkeit stützen; ein demokratischer Effekt ist nur indirekt und bedingt plausibel."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Simulation könnte Schwachstellen in Krankenhaus-Notfallplänen sichtbar machen.",
+          "second_order": "Bei Umsetzung könnten Reaktionsfähigkeit und Versorgungskontinuität bei späteren Cyberstörungen verbessert werden.",
+          "third_order": "Wiederholte Übungen könnten digitale Resilienz als dauerhafte Organisationsanforderung etablieren; ohne Umsetzung entsteht kein belastbarer Systemeffekt.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine Umsetzung der Simulationsergebnisse.",
+            "Es fehlen unabhängige Angaben zu Umfang, Methode und tatsächlichen Befunden.",
+            "Direkte planetare Wirkungen sind nicht ersichtlich."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert; unabhängige Bestätigung und Primärdokumentation fehlen.",
+          "institutional_status": "Die Quelle beschreibt eine Simulation des Fraunhofer SIT, aber keinen Beschluss, keine Rechtsänderung und kein belegtes Inkrafttreten."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle bestätigt den Prüfimpuls, nicht die spätere Umsetzung oder einen Versorgungseffekt.",
+            "reviewed_source_ids": [
+              "heise-security"
+            ],
+            "rationale": "Wenn die Simulation Schwachstellen sichtbar macht und Krankenhäuser die Ergebnisse umsetzen, könnte sie die Kontinuität medizinischer Versorgung bei späteren Cyberstörungen stärken. Der Pfad bleibt wegen fehlender Ergebnisse und unabhängiger Bestätigung unsicher.",
+            "primary_paths": [
+              {
+                "label": "Verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Simulation könnte Lücken in Notfallplänen sichtbar machen; deren Bearbeitung könnte Reaktions- und Wiederanlauffähigkeit verbessern.",
+                "recipients": [
+                  "Patientinnen und Patienten",
+                  "Krankenhauspersonal",
+                  "Notfallversorgung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Wirkung reicht von einer begrenzten Plananpassung bis zu besserer Krisenkoordination in mehreren Einrichtungen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Krankenhausbezug ist relevant, die betroffene Zahl von Einrichtungen bleibt offen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Notfallplanung kann Versorgung beeinflussen, konkrete Ausfallstärken sind aber unbelegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Verbesserte Pläne könnten über längere Zeit nutzbar bleiben, Umsetzung ist offen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Organisatorische Anpassungen wären grundsätzlich korrigierbar und reversibel.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Patienten und Notfallversorgung können bei digitalen Ausfällen besonders abhängig sein.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Übungserkenntnissen zu möglichen Versorgungsabläufen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer Schutzgrenze ist nicht beobachtet; Schutz der Versorgung bleibt ein bedingter Bewertungsrahmen.",
+                  "reference_frame": "Kontinuität und Sicherheit der Gesundheitsversorgung",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Ergebnisse müssen ausgewertet, priorisiert und in Notfallpläne sowie technische Abläufe umgesetzt werden.",
+                "reference_space": "Krankenhausversorgung im von der Quelle beschriebenen Anwendungsbereich",
+                "time_horizon": "Bei späteren Cyberstörungen nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Simulation bildet relevante Ausfalllagen ab und ihre Erkenntnisse werden organisatorisch umgesetzt.",
+                "source_support": "Die Quelle trägt die Beschreibung der Simulation und des Resilienz- sowie Notfallplanbezugs, nicht den späteren Versorgungseffekt.",
+                "limitations": "Keine konkreten Ergebnisse, keine Messwerte, keine betroffenen Einrichtungen und keine unabhängige Quelle.",
+                "first_order": "Mögliche Lücken in Notfallplänen könnten sichtbar werden.",
+                "second_order": "Bei Umsetzung könnte die Reaktion auf digitale Störungen geordneter und schneller erfolgen.",
+                "third_order": "Wiederholte Übungen könnten die Resilienz von Krankenhausorganisationen vertiefen; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Konkrete Verbesserungen der Versorgung lassen sich aus der gelieferten Quelle nicht bestimmen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Zusätzlicher Organisationsaufwand durch die Simulation",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Planung und Durchführung einer Krisensimulation könnten zeitliche und personelle Ressourcen binden.",
+                "recipients": [
+                  "Krankenhauspersonal",
+                  "Krisenstäbe"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Aufwand ist plausibel, aber in der Quelle nicht quantifiziert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre zunächst der Kreis der beteiligten Organisationen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein begrenzter Organisationsaufwand ist plausibel, aber nicht gemessen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Aufwand dürfte an die Durchführung und Auswertung gebunden sein.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Zeitliche und personelle Bindungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders belastete Teams könnten zusätzliche Koordination schwieriger bewältigen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Nebenpfad betrifft vor allem die Organisation der Übung.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze wird durch den möglichen Organisationsaufwand nicht belegt.",
+                  "reference_frame": "Arbeitsfähigkeit der beteiligten Krisenorganisationen",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Die Simulation bindet Ressourcen, die nicht anderweitig kompensiert werden.",
+                "reference_space": "Beteiligte Krankenhausorganisationen",
+                "time_horizon": "Während Vorbereitung und Auswertung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Übung erfordert zusätzliche Arbeitszeit und Koordination.",
+                "source_support": "Die Quelle belegt eine Simulation, nicht deren Ressourcenaufwand.",
+                "limitations": "Keine Angaben zu Dauer, Personal oder Kosten.",
+                "first_order": "Zusätzliche Koordinationsarbeit könnte anfallen.",
+                "second_order": "Andere Aufgaben könnten zeitweise konkurrieren.",
+                "third_order": "Ein dauerhafter negativer Systemeffekt ist nicht begründet.",
+                "research_pass": "second_pass",
+                "research_result": "Der Ressourcenaufwand ist aus der gelieferten Quelle nicht quantifizierbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Versorgungsnutzen und der begrenzte Organisationsaufwand sind als Pfade vergleichbar, aber beide bleiben ex ante und unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Energieverbrauch, Materialeinsatz oder ökologischen Folgen der Simulation.",
+            "reviewed_source_ids": [
+              "heise-security"
+            ],
+            "rationale": "Ein direkter planetarer Wirkpfad ist aus dem Krankenhaus- und Simulationsgegenstand nicht belastbar ableitbar. Mögliche indirekte Effekte über Ressourcen oder Ersatzbetrieb bleiben offen und werden niedrig modelliert.",
+            "primary_paths": [
+              {
+                "label": "Ökologische Wirkung der Krisensimulation bleibt offen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Durchführung könnte Ressourcen und Technik beanspruchen; Richtung und Umfang einer ökologischen Zustandsänderung sind nicht belegt.",
+                "recipients": [
+                  "Umwelt",
+                  "Krankenhausbetrieb"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Die Quelle liefert keinen belastbaren Nachweis für einen relevanten planetaren Effekt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein räumlicher oder mengenmäßiger ökologischer Umfang ist belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Eine ökologische Belastungsintensität wird nicht beschrieben.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine Wirkungsdauer für Umweltfolgen ist nicht belegt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung ist aus der Quelle ersichtlich.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ressourcenverbrauch könnte empfindliche Systeme theoretisch berühren, bleibt aber offen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein belastbarer systemischer Umweltmechanismus wird beschrieben.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine ökologische Schutzgrenze oder Grenzverletzung belegt.",
+                  "reference_frame": "Ökologische Belastung durch den beschriebenen Prüfprozess",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Es müssten konkrete Ressourcen- oder Emissionsdaten vorliegen.",
+                "reference_space": "Durchführung und mögliche Folgemaßnahmen der Simulation",
+                "time_horizon": "Während und nach der Simulation",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Simulation verursacht keinen ungewöhnlich hohen zusätzlichen Ressourcenverbrauch.",
+                "source_support": "Die Quelle belegt nur Simulation und Resilienzprüfung, keine Umweltwirkung.",
+                "limitations": "Keine Umweltkennzahlen, keine Material- oder Energiedaten und keine Vergleichsbasis.",
+                "first_order": "Ein möglicher zusätzlicher Ressourcenbedarf bleibt unbestimmt.",
+                "second_order": "Ökologische Folgen könnten nur über konkrete Betriebsdaten geprüft werden.",
+                "third_order": "Ein systemischer planetarer Effekt ist nicht begründet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine planetare Wirkung aus der gelieferten Quelle belastbar bestimmbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 1,
+                  "divisor": 6,
+                  "raw": 0.16666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten materiellen positiven oder negativen planetaren Hauptpfad; die Richtung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ökologische Wirkung der Krisensimulation bleibt offen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ökologische Wirkung der Krisensimulation bleibt offen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Ein institutioneller Vertrauenseffekt ist nicht gemessen; plausibel ist nur ein begrenzter Pfad über Transparenz und Krisenfähigkeit.",
+            "reviewed_source_ids": [
+              "heise-security"
+            ],
+            "rationale": "Wenn die Simulation Schwachstellen und Zuständigkeiten transparent macht und daraus Verbesserungen entstehen, könnte sie institutionelle Lernfähigkeit stärken. Ein demokratischer Effekt bleibt indirekt und nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Krisensimulation könnte institutionelle Lernfähigkeit stärken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Das Sichtbarmachen von Schwachstellen könnte Verantwortlichkeiten und Rechenschaft in der Krankenhausorganisation klären.",
+                "recipients": [
+                  "Krankenhausleitungen",
+                  "Beschäftigte",
+                  "Öffentlichkeit als Nutzerin kritischer Versorgung"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad reicht von interner Organisationsverbesserung bis zu begrenztem Vertrauen in Krisenfähigkeit."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft zunächst beteiligte Institutionen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Lernimpuls wäre eher begrenzt und indirekt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Übernommene Verfahren könnten längerfristig in Organisationen bestehen bleiben.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Organisations- und Kommunikationspraktiken sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Vertrauen in kritische Versorgung kann durch Krisenfähigkeit berührt werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf institutionelles Lernen begrenzt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine demokratische Schutzgrenzverletzung und keinen Vertrauensverlust.",
+                  "reference_frame": "Institutionelle Rechenschaft und Krisenfähigkeit",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Ergebnisse werden transparent ausgewertet, Zuständigkeiten geklärt und Verbesserungen umgesetzt.",
+                "reference_space": "Krankenhausorganisationen und ihre öffentliche Rechenschaft",
+                "time_horizon": "Nach Auswertung und möglicher Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Transparente Krisenübungen fördern organisatorisches Lernen und nicht nur interne Kommunikation.",
+                "source_support": "Die Quelle beschreibt Resilienzprüfung und das Aufdecken von Schwachstellen, nicht demokratische Folgen.",
+                "limitations": "Keine Angaben zu Transparenz, Beteiligung, öffentlicher Kommunikation oder Vertrauensdaten.",
+                "first_order": "Institutionelle Schwachstellen könnten benannt und Zuständigkeiten geprüft werden.",
+                "second_order": "Umgesetzte Verbesserungen könnten die wahrgenommene Krisenfähigkeit stützen.",
+                "third_order": "Wiederholtes institutionelles Lernen könnte Rechenschaftsstrukturen stärken; das bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Ein belastbarer demokratischer Effekt ist nicht belegt; nur ein indirekter institutioneller Lernpfad ist plausibel.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Vertrauensrisiko bei fehlender Umsetzung",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn Schwachstellen bekannt werden, aber keine sichtbaren Verbesserungen folgen, könnte die wahrgenommene Krisenfähigkeit sinken.",
+                "recipients": [
+                  "Beschäftigte",
+                  "Patientinnen und Patienten",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Das Risiko setzt öffentliche Kenntnis und ausbleibende Reaktion voraus, die nicht belegt sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Vertrauenseffekt wäre auf den kommunizierten Bereich begrenzt.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein Vertrauensverlust wäre indirekt und in seiner Stärke offen.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hinge von weiterer Kommunikation und tatsächlichen Ereignissen ab.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Vertrauen und Kommunikation können grundsätzlich wieder verändert werden.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Abhängige Nutzerinnen und Nutzer kritischer Versorgung könnten sensibler reagieren.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft Wahrnehmung und institutionelle Legitimität, nicht das gesamte System.",
+                    "source_ids": [
+                      "heise-security"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein tatsächlicher Vertrauensverlust ist nicht beobachtet und keine demokratische Schutzgrenze betroffen.",
+                  "reference_frame": "Institutionelles Vertrauen in kritische Versorgung",
+                  "source_ids": [
+                    "heise-security"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-security"
+                ],
+                "condition": "Die Schwachstellen werden bekannt und es bleibt sichtbar keine Reaktion aus.",
+                "reference_space": "Öffentliche Wahrnehmung der Krankenhaus-Krisenfähigkeit",
+                "time_horizon": "Nach öffentlicher Kommunikation über Ergebnisse",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Ergebnisse werden öffentlich wahrgenommen und als institutionelle Verantwortung bewertet.",
+                "source_support": "Die Quelle belegt weder öffentliche Kommunikation noch Vertrauensreaktionen.",
+                "limitations": "Keine Publikumsdaten, keine Umsetzungsinformationen und keine unabhängige Wirkungsforschung.",
+                "first_order": "Bekannte Lücken könnten Zweifel an der Krisenfähigkeit auslösen.",
+                "second_order": "Daraus könnte begrenzter Druck auf Verantwortliche entstehen.",
+                "third_order": "Ein breiter demokratischer Effekt ist nicht begründet.",
+                "research_pass": "second_pass",
+                "research_result": "Das Vertrauensrisiko bleibt eine hypothetische Folge ohne beobachteten Nachweis.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein möglicher institutioneller Lerngewinn steht einem bedingten Vertrauensrisiko gegenüber; beide Pfade sind indirekt und unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Krisensimulation könnte institutionelle Lernfähigkeit stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Krisensimulation könnte institutionelle Lernfähigkeit stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T05:09:31.274Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "heise-security",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Bericht über die Krisensimulation des Fraunhofer SIT sowie den möglichen Mechanismus über Resilienzprüfung und Notfallpläne."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle bestätigt den Prüfimpuls, nicht die spätere Umsetzung oder einen Versorgungseffekt.",
+          "reviewed_source_ids": [
+            "heise-security"
+          ],
+          "rationale": "Wenn die Simulation Schwachstellen sichtbar macht und Krankenhäuser die Ergebnisse umsetzen, könnte sie die Kontinuität medizinischer Versorgung bei späteren Cyberstörungen stärken. Der Pfad bleibt wegen fehlender Ergebnisse und unabhängiger Bestätigung unsicher.",
+          "primary_paths": [
+            {
+              "label": "Verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Simulation könnte Lücken in Notfallplänen sichtbar machen; deren Bearbeitung könnte Reaktions- und Wiederanlauffähigkeit verbessern.",
+              "recipients": [
+                "Patientinnen und Patienten",
+                "Krankenhauspersonal",
+                "Notfallversorgung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Wirkung reicht von einer begrenzten Plananpassung bis zu besserer Krisenkoordination in mehreren Einrichtungen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Krankenhausbezug ist relevant, die betroffene Zahl von Einrichtungen bleibt offen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Notfallplanung kann Versorgung beeinflussen, konkrete Ausfallstärken sind aber unbelegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Verbesserte Pläne könnten über längere Zeit nutzbar bleiben, Umsetzung ist offen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Organisatorische Anpassungen wären grundsätzlich korrigierbar und reversibel.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Patienten und Notfallversorgung können bei digitalen Ausfällen besonders abhängig sein.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Übungserkenntnissen zu möglichen Versorgungsabläufen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer Schutzgrenze ist nicht beobachtet; Schutz der Versorgung bleibt ein bedingter Bewertungsrahmen.",
+                "reference_frame": "Kontinuität und Sicherheit der Gesundheitsversorgung",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Ergebnisse müssen ausgewertet, priorisiert und in Notfallpläne sowie technische Abläufe umgesetzt werden.",
+              "reference_space": "Krankenhausversorgung im von der Quelle beschriebenen Anwendungsbereich",
+              "time_horizon": "Bei späteren Cyberstörungen nach einer möglichen Umsetzung",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Simulation bildet relevante Ausfalllagen ab und ihre Erkenntnisse werden organisatorisch umgesetzt.",
+              "source_support": "Die Quelle trägt die Beschreibung der Simulation und des Resilienz- sowie Notfallplanbezugs, nicht den späteren Versorgungseffekt.",
+              "limitations": "Keine konkreten Ergebnisse, keine Messwerte, keine betroffenen Einrichtungen und keine unabhängige Quelle.",
+              "first_order": "Mögliche Lücken in Notfallplänen könnten sichtbar werden.",
+              "second_order": "Bei Umsetzung könnte die Reaktion auf digitale Störungen geordneter und schneller erfolgen.",
+              "third_order": "Wiederholte Übungen könnten die Resilienz von Krankenhausorganisationen vertiefen; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Konkrete Verbesserungen der Versorgung lassen sich aus der gelieferten Quelle nicht bestimmen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Zusätzlicher Organisationsaufwand durch die Simulation",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Planung und Durchführung einer Krisensimulation könnten zeitliche und personelle Ressourcen binden.",
+              "recipients": [
+                "Krankenhauspersonal",
+                "Krisenstäbe"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Aufwand ist plausibel, aber in der Quelle nicht quantifiziert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre zunächst der Kreis der beteiligten Organisationen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein begrenzter Organisationsaufwand ist plausibel, aber nicht gemessen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Aufwand dürfte an die Durchführung und Auswertung gebunden sein.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Zeitliche und personelle Bindungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders belastete Teams könnten zusätzliche Koordination schwieriger bewältigen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Nebenpfad betrifft vor allem die Organisation der Übung.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze wird durch den möglichen Organisationsaufwand nicht belegt.",
+                "reference_frame": "Arbeitsfähigkeit der beteiligten Krisenorganisationen",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Die Simulation bindet Ressourcen, die nicht anderweitig kompensiert werden.",
+              "reference_space": "Beteiligte Krankenhausorganisationen",
+              "time_horizon": "Während Vorbereitung und Auswertung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Übung erfordert zusätzliche Arbeitszeit und Koordination.",
+              "source_support": "Die Quelle belegt eine Simulation, nicht deren Ressourcenaufwand.",
+              "limitations": "Keine Angaben zu Dauer, Personal oder Kosten.",
+              "first_order": "Zusätzliche Koordinationsarbeit könnte anfallen.",
+              "second_order": "Andere Aufgaben könnten zeitweise konkurrieren.",
+              "third_order": "Ein dauerhafter negativer Systemeffekt ist nicht begründet.",
+              "research_pass": "second_pass",
+              "research_result": "Der Ressourcenaufwand ist aus der gelieferten Quelle nicht quantifizierbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Versorgungsnutzen und der begrenzte Organisationsaufwand sind als Pfade vergleichbar, aber beide bleiben ex ante und unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Verbesserte Notfallplanung könnte Versorgungsunterbrechungen begrenzen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Energieverbrauch, Materialeinsatz oder ökologischen Folgen der Simulation.",
+          "reviewed_source_ids": [
+            "heise-security"
+          ],
+          "rationale": "Ein direkter planetarer Wirkpfad ist aus dem Krankenhaus- und Simulationsgegenstand nicht belastbar ableitbar. Mögliche indirekte Effekte über Ressourcen oder Ersatzbetrieb bleiben offen und werden niedrig modelliert.",
+          "primary_paths": [
+            {
+              "label": "Ökologische Wirkung der Krisensimulation bleibt offen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Durchführung könnte Ressourcen und Technik beanspruchen; Richtung und Umfang einer ökologischen Zustandsänderung sind nicht belegt.",
+              "recipients": [
+                "Umwelt",
+                "Krankenhausbetrieb"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Die Quelle liefert keinen belastbaren Nachweis für einen relevanten planetaren Effekt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein räumlicher oder mengenmäßiger ökologischer Umfang ist belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Eine ökologische Belastungsintensität wird nicht beschrieben.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine Wirkungsdauer für Umweltfolgen ist nicht belegt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung ist aus der Quelle ersichtlich.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ressourcenverbrauch könnte empfindliche Systeme theoretisch berühren, bleibt aber offen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein belastbarer systemischer Umweltmechanismus wird beschrieben.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine ökologische Schutzgrenze oder Grenzverletzung belegt.",
+                "reference_frame": "Ökologische Belastung durch den beschriebenen Prüfprozess",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Es müssten konkrete Ressourcen- oder Emissionsdaten vorliegen.",
+              "reference_space": "Durchführung und mögliche Folgemaßnahmen der Simulation",
+              "time_horizon": "Während und nach der Simulation",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Simulation verursacht keinen ungewöhnlich hohen zusätzlichen Ressourcenverbrauch.",
+              "source_support": "Die Quelle belegt nur Simulation und Resilienzprüfung, keine Umweltwirkung.",
+              "limitations": "Keine Umweltkennzahlen, keine Material- oder Energiedaten und keine Vergleichsbasis.",
+              "first_order": "Ein möglicher zusätzlicher Ressourcenbedarf bleibt unbestimmt.",
+              "second_order": "Ökologische Folgen könnten nur über konkrete Betriebsdaten geprüft werden.",
+              "third_order": "Ein systemischer planetarer Effekt ist nicht begründet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine planetare Wirkung aus der gelieferten Quelle belastbar bestimmbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 1,
+                "divisor": 6,
+                "raw": 0.16666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten materiellen positiven oder negativen planetaren Hauptpfad; die Richtung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ökologische Wirkung der Krisensimulation bleibt offen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ökologische Wirkung der Krisensimulation bleibt offen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Ein institutioneller Vertrauenseffekt ist nicht gemessen; plausibel ist nur ein begrenzter Pfad über Transparenz und Krisenfähigkeit.",
+          "reviewed_source_ids": [
+            "heise-security"
+          ],
+          "rationale": "Wenn die Simulation Schwachstellen und Zuständigkeiten transparent macht und daraus Verbesserungen entstehen, könnte sie institutionelle Lernfähigkeit stärken. Ein demokratischer Effekt bleibt indirekt und nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Krisensimulation könnte institutionelle Lernfähigkeit stärken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Das Sichtbarmachen von Schwachstellen könnte Verantwortlichkeiten und Rechenschaft in der Krankenhausorganisation klären.",
+              "recipients": [
+                "Krankenhausleitungen",
+                "Beschäftigte",
+                "Öffentlichkeit als Nutzerin kritischer Versorgung"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad reicht von interner Organisationsverbesserung bis zu begrenztem Vertrauen in Krisenfähigkeit."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft zunächst beteiligte Institutionen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Lernimpuls wäre eher begrenzt und indirekt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Übernommene Verfahren könnten längerfristig in Organisationen bestehen bleiben.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Organisations- und Kommunikationspraktiken sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Vertrauen in kritische Versorgung kann durch Krisenfähigkeit berührt werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf institutionelles Lernen begrenzt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine demokratische Schutzgrenzverletzung und keinen Vertrauensverlust.",
+                "reference_frame": "Institutionelle Rechenschaft und Krisenfähigkeit",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Ergebnisse werden transparent ausgewertet, Zuständigkeiten geklärt und Verbesserungen umgesetzt.",
+              "reference_space": "Krankenhausorganisationen und ihre öffentliche Rechenschaft",
+              "time_horizon": "Nach Auswertung und möglicher Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Transparente Krisenübungen fördern organisatorisches Lernen und nicht nur interne Kommunikation.",
+              "source_support": "Die Quelle beschreibt Resilienzprüfung und das Aufdecken von Schwachstellen, nicht demokratische Folgen.",
+              "limitations": "Keine Angaben zu Transparenz, Beteiligung, öffentlicher Kommunikation oder Vertrauensdaten.",
+              "first_order": "Institutionelle Schwachstellen könnten benannt und Zuständigkeiten geprüft werden.",
+              "second_order": "Umgesetzte Verbesserungen könnten die wahrgenommene Krisenfähigkeit stützen.",
+              "third_order": "Wiederholtes institutionelles Lernen könnte Rechenschaftsstrukturen stärken; das bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Ein belastbarer demokratischer Effekt ist nicht belegt; nur ein indirekter institutioneller Lernpfad ist plausibel.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Vertrauensrisiko bei fehlender Umsetzung",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn Schwachstellen bekannt werden, aber keine sichtbaren Verbesserungen folgen, könnte die wahrgenommene Krisenfähigkeit sinken.",
+              "recipients": [
+                "Beschäftigte",
+                "Patientinnen und Patienten",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Das Risiko setzt öffentliche Kenntnis und ausbleibende Reaktion voraus, die nicht belegt sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Vertrauenseffekt wäre auf den kommunizierten Bereich begrenzt.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein Vertrauensverlust wäre indirekt und in seiner Stärke offen.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hinge von weiterer Kommunikation und tatsächlichen Ereignissen ab.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Vertrauen und Kommunikation können grundsätzlich wieder verändert werden.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Abhängige Nutzerinnen und Nutzer kritischer Versorgung könnten sensibler reagieren.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft Wahrnehmung und institutionelle Legitimität, nicht das gesamte System.",
+                  "source_ids": [
+                    "heise-security"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein tatsächlicher Vertrauensverlust ist nicht beobachtet und keine demokratische Schutzgrenze betroffen.",
+                "reference_frame": "Institutionelles Vertrauen in kritische Versorgung",
+                "source_ids": [
+                  "heise-security"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-security"
+              ],
+              "condition": "Die Schwachstellen werden bekannt und es bleibt sichtbar keine Reaktion aus.",
+              "reference_space": "Öffentliche Wahrnehmung der Krankenhaus-Krisenfähigkeit",
+              "time_horizon": "Nach öffentlicher Kommunikation über Ergebnisse",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Ergebnisse werden öffentlich wahrgenommen und als institutionelle Verantwortung bewertet.",
+              "source_support": "Die Quelle belegt weder öffentliche Kommunikation noch Vertrauensreaktionen.",
+              "limitations": "Keine Publikumsdaten, keine Umsetzungsinformationen und keine unabhängige Wirkungsforschung.",
+              "first_order": "Bekannte Lücken könnten Zweifel an der Krisenfähigkeit auslösen.",
+              "second_order": "Daraus könnte begrenzter Druck auf Verantwortliche entstehen.",
+              "third_order": "Ein breiter demokratischer Effekt ist nicht begründet.",
+              "research_pass": "second_pass",
+              "research_result": "Das Vertrauensrisiko bleibt eine hypothetische Folge ohne beobachteten Nachweis.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein möglicher institutioneller Lerngewinn steht einem bedingten Vertrauensrisiko gegenüber; beide Pfade sind indirekt und unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Krisensimulation könnte institutionelle Lernfähigkeit stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Krisensimulation könnte institutionelle Lernfähigkeit stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T05:07:45.067Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-18T04:17:00.000Z",
+      "last_updated": "2026-09-18T05:09:31.268Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-bb5c6e3c308d1a4d2aa1",
+      "case_file": null,
+      "source_published_at": "2026-09-18T04:17:00.000Z",
+      "published_at": "2026-09-18T05:09:31.268Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "heise-security"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "heise Security",
+          "url": "https://www.heise.de/news/Cyberangriff-im-Krankenhaus-Krisensimulation-zeigt-Potenzial-auf-11457429.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-18T04:17:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-bd7c6643d02cabad",
       "title_image": {
