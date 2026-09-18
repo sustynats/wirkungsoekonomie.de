@@ -7,6 +7,14 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+### 2026-09-18 · Claude · Wirkungsticker: Betrieb, Meldungsaufträge, Rückgaben
+- **Monitor:** war seit 17.09. ~10 UTC stumm (Selbsttest las `wirkungsticker.yml`, fehlte im sparse checkout) → #922: Datei ergänzt, Selbsttest `continue-on-error` + eigener Sofort-Check, Lauf bleibt rot; #923: `lagen.json` fehlte ebenso (Fehlalarm „keine Lage“), Schutztest prüft jetzt auch `new URL(...)`- und `read('...')`-Lesungen.
+- **Meldungsaufträge (kind=news):** seit Direktbetrieb nie in der Freigabeliste (Meldungsauftrag blieb `queued`, api-processor aus) → #925: `meldungsauftraege.mjs holen/abgeben` um den Analyse-Schritt; vor jedem Limit, nie öffentlich, Ergebnis via `stageIntakeNews`. Wunstorf verifiziert in der Freigabeliste (`meldungsweg.in_freigabeliste`, #926).
+- **Rückgaben:** App zeigt den Stand der Überarbeitung (angehalten mit Grund/Nachliefern, ohne neue Fassung, läuft, nachgeliefert) #927; Nachrecherche einer Rückgabe (`nachrecherche.yml`, Kommentare + Korrekturziel bleiben) #931; Worker bindet Korrekturfassungen selbst an die Veröffentlichung, `WORKER_VERSION` 7 #932. Beide angehaltenen Analysen (Freier, Ölkrise-Korrektur) liegen neu recherchiert zur Freigabe.
+- **Texte:** Beitrag spricht nie über seine Entstehung (Regel + Riegel, Wissensbasis `2026-09-18-ohne-entstehung`) #930; mobile Tabellen/Navigation #919; Release-Asset-Schritt verifiziert statt abzubrechen #929.
+- **Geprüft:** je PR grüne Checks; Nachbauten (Tabelle 375 px, Redaktions-App), echte Rohantwort lokal gegen Validierung, Live-Auslieferung.
+- **Offen für Codex:** Vertragstext in `intake-processing.mjs` nennt für Korrekturen nur `author_perspective` (persönliche Ausgaben brauchen `body_markdown`+`correction_note`); Registry-fremde Primärquellen (WMO/NOAA/DWD) stoppen Meldungsaufträge; 2 verbrauchte automatische Aufträge vom 17.09.
+
 ### 2026-09-04 · Codex · Automatische rückwirkende Lageakten
 - **Was:** Generische Darstellungsebene oberhalb der unveränderten Wirkungsakten. Zwei Entwicklungen bleiben einzeln; ab drei sicher verbundenen Meldungen entsteht beim Build rückwirkend eine Lageakte. Der neueste materielle Stand repräsentiert die Lage und rückt im Feed nach oben. Wiederholungen ohne neue Information tun das nicht.
 - **Trennung:** Ereignisse, Quellen, Claims, Analysen, Versionen und alte URLs bleiben getrennt und vollständig nachvollziehbar. Die Zeitleiste ordnet nur den gemeinsamen Nachrichtenverlauf; es gibt keine Faktenübertragung zwischen Ereignissen.
