@@ -2,8 +2,1510 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-17T23:08:34.404Z",
+  "updated_at": "2026-09-18T00:22:12.174Z",
   "stories": [
+    {
+      "story_id": "wt-057722ef54ceaa10",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-057722ef54ceaa10-0fffeb81a066e5b8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-057722ef54ceaa10-0084e2129ea52ac3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-057722ef54ceaa10-baa4e70d06d19fad-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "weisses-haus-usa-weisen-uno-bericht-uber-mogliche-kriegsverbrechen-im-iran-zuruck-ceaa10",
+      "title": "USA weisen laut Deutschlandfunk UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück",
+      "source_summary": "Der Deutschlandfunk berichtet, dass die US-Regierung einen Bericht einer Untersuchungskommission des UNO-Menschenrechtsrates zu möglichen Kriegsverbrechen des US-Militärs im Iran zurückgewiesen hat. Eine Sprecherin des Weißen Hauses stellte demnach die Verantwortung des iranischen Regimes in den Mittelpunkt.\n\nLaut dem Bericht erklärte eine unabhängige UNO-Mission, es gebe hinreichende Gründe für die Annahme, dass die USA für den Beschuss einer Schule und einer Sportstätte verantwortlich seien. Die US-Regierung weist diese Darstellung zurück.\n\nBei dem Angriff auf die Schule Ende Februar seien nach iranischen Angaben mehr als 150 Menschen getötet worden, vor allem Kinder. Der vorliegende Quellenbestand enthält dafür nur eine journalistische Darstellung; eine unabhängige Bestätigung und der vollständige Bericht der Untersuchungskommission liegen hier nicht vor.",
+      "summary": "Die US-Regierung weist laut Deutschlandfunk einen UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück. Eine unabhängige Bestätigung der berichteten Vorwürfe und der Opferangaben liegt im Quellenbestand nicht vor.",
+      "detail_summary": "Der Deutschlandfunk berichtet über eine Zurückweisung eines UNO-Berichts durch die US-Regierung. Eine unabhängige UNO-Mission soll hinreichende Gründe für eine US-Verantwortung beim Beschuss einer Schule und einer Sportstätte genannt haben. Nach iranischen Angaben wurden bei dem Angriff auf die Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder. Die Angaben sind im vorliegenden Bestand nicht unabhängig bestätigt. Relevant ist der Vorgang, weil er die Informations- und Rechenschaftsgrundlage eines laufenden Konflikts berührt. Mögliche Folgen für Schutz, Vertrauen und internationale Verantwortungszuweisung bleiben deshalb bedingt und offen.",
+      "why_relevant": "Der Vorgang verbindet einen möglichen Angriff auf zivile Ziele mit einer Zurückweisung internationaler Untersuchungsergebnisse. Das kann Schutz, Rechenschaft und Vertrauen in internationale Verfahren berühren, ohne bereits einen Wirkungsnachweis zu liefern.",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Die US-Regierung weist einen von einer UNO-Untersuchungskommission berichteten Befund zu möglichen US-Kriegsverbrechen im Iran zurück.",
+        "evaluation_target": {
+          "label": "Öffentliche und institutionelle Verarbeitung der berichteten UNO-Einschätzung und ihrer Zurückweisung",
+          "type": "communication"
+        },
+        "baseline": "Die UNO-Mission wird als unabhängig beschrieben und berichtet mögliche Verantwortlichkeit der USA für einen Angriff auf zivile Ziele; eine unabhängige Bestätigung der Angaben liegt im Quellenbestand nicht vor.",
+        "counterfactual": "Ohne die Zurückweisung könnte die UNO-Einschätzung zunächst stärker als Grundlage öffentlicher und institutioneller Prüfung dienen; weitere Belege und Reaktionen wären dennoch erforderlich.",
+        "reference_frame": [
+          "Schutz von Zivilpersonen",
+          "internationale Rechenschaft",
+          "Informations- und Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die berichtete Zurückweisung kann die öffentliche Einordnung möglicher ziviler Schäden und damit mittelbar Schutz- und Aufklärungsprozesse beeinflussen. Die Opferangabe und Verantwortlichkeit sind nur zugeschrieben.",
+            "planet": "Direkte ökologische Folgen sind nicht belegt. Ein indirekter Konflikt- oder Infrastrukturpfad ist nur unter zusätzlichen, nicht belegten Bedingungen denkbar.",
+            "democracy": "Die Zurückweisung kann die Anerkennung internationaler Untersuchungen und die gemeinsame Tatsachengrundlage öffentlicher Rechenschaft beeinflussen. Eine eingetretene demokratische Folge ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Zurückweisung stellt eine konkurrierende Verantwortungsdarstellung neben die berichtete UNO-Einschätzung.",
+          "second_order": "Widersprüchliche Darstellungen könnten unabhängige Aufklärung, öffentliche Rechenschaft und institutionelle Entscheidungen erschweren.",
+          "third_order": "Bei wiederholter Kontroverse könnten sich ungeklärte Konfliktnarrative verfestigen und Korrekturprozesse verlangsamen; dies bleibt eine bedingte Möglichkeit.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle beschreibt die UNO-Mission als unabhängig und berichtet hinreichende Gründe für eine Verantwortungsannahme.",
+            "Die US-Regierung weist die Darstellung zurück.",
+            "Eine unabhängige Bestätigung der Opferangaben, des vollständigen Berichts und konkreter Folgeentscheidungen fehlt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor. Die darin wiedergegebenen Positionen stammen von unterschiedlichen Akteuren, sind aber im gelieferten Bestand nicht durch eine zweite unabhängige Darstellung bestätigt.",
+          "institutional_status": "Berichtet ist eine politische Zurückweisung einer UNO-Einschätzung; ein Gerichtsverfahren, Urteil oder Vollstreckungsstatus ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Keine zusätzlichen Wirkungsdaten liegen vor. Modellierbar ist nur das bedingte Risiko, dass die Zurückweisung die Aufklärung und öffentliche Anerkennung möglicher ziviler Schäden erschwert.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Die Quelle berichtet mögliche zivile Schäden und eine gegensätzliche Verantwortungsdarstellung. Die mögliche Wirkung auf Schutz und Aufklärung ist materiell, aber nicht beobachtet und wegen der einzigen Quelle unsicher.",
+            "primary_paths": [
+              {
+                "label": "Erschwerte Aufklärung möglicher ziviler Schäden",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Zurückweisung könnte die gemeinsame Tatsachengrundlage für unabhängige Aufklärung, Schutzforderungen und humanitäre Reaktionen schwächen.",
+                "recipients": [
+                  "Zivilpersonen im Konfliktgebiet",
+                  "Angehörige möglicher Opfer",
+                  "internationale Untersuchungs- und Hilfsinstitutionen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die mögliche Schutzrelevanz ist hoch, während Reichweite und Eintritt der kommunikativen Folge nicht belegt sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Darstellung kann internationale Institutionen und öffentliche Beobachter erreichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Mögliche zivile Todesfälle berühren grundlegende Schutzinteressen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ungeklärte Verantwortlichkeit kann Aufklärung über längere Zeit erschweren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Mögliche Todesfälle und verlorene Beweise wären nur begrenzt reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Die Quelle nennt vor allem Kinder als mögliche Opfer.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad verbindet zivile Sicherheit, Aufklärung und internationale Rechenschaft.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung wird im Quellenbestand nur als möglicher und zugeschriebener Sachverhalt berichtet; für die kommunikative Folge ist daher keine entscheidende Schutzgrenze belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Zurückweisung müsste die Bereitschaft von Institutionen oder Öffentlichkeit zur unabhängigen Prüfung tatsächlich beeinflussen.",
+                "reference_space": "Iran, internationale Öffentlichkeit sowie Untersuchungs- und Hilfsinstitutionen",
+                "time_horizon": "Kurz- bis mittelfristig nach der Zurückweisung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Akteure reagieren auf konkurrierende Verantwortungsdarstellungen und richten daran ihre Prüf- oder Rechenschaftsentscheidungen aus.",
+                "source_support": "Die Quelle belegt die Zurückweisung, die UNO-Einschätzung und zugeschriebene Opferangaben, nicht deren Folge für Schutz oder Hilfe.",
+                "limitations": "Unabhängige Bestätigung, Daten zu Hilfe, Ermittlungen, Entscheidungen und Verhaltensänderungen fehlen.",
+                "first_order": "Die Zurückweisung könnte die Einordnung des möglichen Angriffs erschweren.",
+                "second_order": "Das könnte die gemeinsame Grundlage für Schutzforderungen und Rechenschaft schwächen.",
+                "third_order": "Bei anhaltender Kontroverse könnte die Aufklärung möglicher ziviler Schäden institutionell langsamer werden.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen Wirkungsbelege im gelieferten Bestand; Eintritt und Umfang bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 20,
+                  "divisor": 6,
+                  "raw": 3.3333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbar starker positiver Hauptpfad ist nicht belegt; die negative Einordnung bleibt ein bedingtes Potenzial."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Erschwerte Aufklärung möglicher ziviler Schäden",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+                "direction": "negative",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Zivilpersonen",
+                "reference_space": "Schule im Iran und betroffene Angehörige",
+                "observed_at": "Ende Februar",
+                "temporal_status": "ex_post",
+                "mechanism": "Die journalistische Quelle berichtet die iranische Angabe, wonach ein Angriff auf eine Schule die Todesfälle verursacht habe; Verantwortlichkeit und Opferzahl sind im Quellenbestand nicht unabhängig bestätigt.",
+                "recipients": [
+                  "getötete Menschen",
+                  "vor allem Kinder",
+                  "Angehörige und betroffene Gemeinschaften"
+                ],
+                "time_horizon": "Seit Ende Februar",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt mehr als 150 getötete Menschen an einem Ort.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Todesfälle und besonders betroffene Kinder markieren hohe Schwere.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Todesfolgen sind dauerhaft und nicht reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Verlorene Menschenleben sind nicht rückgängig zu machen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 5,
+                    "rationale": "Die Quelle nennt vor allem Kinder als Betroffene.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ein möglicher Angriff auf eine Schule berührt Schutz und zivile Infrastruktur.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die berichteten Todesfälle wären als Sachverhalt schwerwiegend, sind hier jedoch nur zugeschrieben und nicht unabhängig bestätigt; daher wird keine entscheidende Schutzgrenze festgestellt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 24,
+                  "divisor": 6,
+                  "raw": 4,
+                  "rounded": 4,
+                  "protection_floor": 0,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Zivilpersonen",
+              "reference_space": "Schule im Iran und betroffene Angehörige",
+              "observed_at": "Ende Februar",
+              "temporal_status": "ex_post",
+              "mechanism": "Die journalistische Quelle berichtet die iranische Angabe, wonach ein Angriff auf eine Schule die Todesfälle verursacht habe; Verantwortlichkeit und Opferzahl sind im Quellenbestand nicht unabhängig bestätigt.",
+              "recipients": [
+                "getötete Menschen",
+                "vor allem Kinder",
+                "Angehörige und betroffene Gemeinschaften"
+              ],
+              "time_horizon": "Seit Ende Februar",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt mehr als 150 getötete Menschen an einem Ort.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Todesfälle und besonders betroffene Kinder markieren hohe Schwere.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Todesfolgen sind dauerhaft und nicht reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Verlorene Menschenleben sind nicht rückgängig zu machen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Die Quelle nennt vor allem Kinder als Betroffene.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ein möglicher Angriff auf eine Schule berührt Schutz und zivile Infrastruktur.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die berichteten Todesfälle wären als Sachverhalt schwerwiegend, sind hier jedoch nur zugeschrieben und nicht unabhängig bestätigt; daher wird keine entscheidende Schutzgrenze festgestellt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 24,
+                "divisor": 6,
+                "raw": 4,
+                "rounded": 4,
+                "protection_floor": 0,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand enthält keine Angaben zu Umwelt- oder Klimafolgen. Ein indirekter Umweltpfad ist nur als hoch unsichere Möglichkeit modellierbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Direkte ökologische Folgen des berichteten Angriffs oder der Zurückweisung sind nicht belegt. Ein möglicher Konflikt- und Infrastrukturpfad bleibt offen und schwach.",
+            "primary_paths": [
+              {
+                "label": "Mögliche indirekte Umweltbelastung bei Konfliktverfestigung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Falls die Kontroverse politische Verhärtung und eine längere Konfliktdauer begünstigt, könnten Umwelt- oder Infrastrukturschäden zunehmen.",
+                "recipients": [
+                  "Ökosysteme im Konfliktgebiet",
+                  "lokale Bevölkerung",
+                  "kritische Infrastruktur"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt, nicht quantifiziert und im Quellenbestand ohne ökologische Ausgangsdaten."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Umwelteffekt wäre zunächst räumlich begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ökologische Intensität wird nicht beschrieben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Konfliktbedingte Belastungen könnten länger anhalten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Mögliche Schäden an Ökosystemen wären teilweise schwer umkehrbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene Ökosysteme oder Infrastrukturen werden nicht konkret benannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Die ökologische Verbindung zur Meldung bleibt indirekt und schwach.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze ist im gelieferten Material nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Zurückweisung müsste über politische Verhärtung zu zusätzlicher Konfliktdauer oder Infrastrukturbelastung beitragen.",
+                "reference_space": "Iran und unmittelbar betroffene Ökosysteme",
+                "time_horizon": "Mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Konfliktpolitische Kommunikation beeinflusst politische Entscheidungen und die Konfliktdauer.",
+                "source_support": "Die Quelle belegt weder Umweltfolgen noch eine Konfliktverlängerung.",
+                "limitations": "Umweltangaben, Messwerte und ein politischer Folgeentscheid fehlen.",
+                "first_order": "Eine ökologische Folge ist nicht direkt aus der Meldung ableitbar.",
+                "second_order": "Nur bei zusätzlicher Konfliktbelastung könnten Umwelt- und Infrastrukturfolgen entstehen.",
+                "third_order": "Langfristige ökologische Schäden bleiben eine offene Möglichkeit.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologischen Wirkungsbelege im gelieferten Bestand; Richtung und Eintritt bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mangels ökologischer Belege ist keine belastbare positive oder negative Abwägung möglich; die Richtung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche indirekte Umweltbelastung bei Konfliktverfestigung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche indirekte Umweltbelastung bei Konfliktverfestigung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Belegt ist keine eingetretene institutionelle Folge. Modellierbar ist nur das bedingte Risiko, dass die Zurückweisung internationale Rechenschaft und gemeinsame Tatsachengrundlagen schwächt.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Die Meldung betrifft die Anerkennung einer internationalen Untersuchung und damit öffentliche Korrekturfähigkeit. Der demokratische Pfad ist indirekt und wegen der einzigen Quelle unsicher.",
+            "primary_paths": [
+              {
+                "label": "Schwächung gemeinsamer Rechenschaftsgrundlagen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Zurückweisung könnte die Anerkennung internationaler Untersuchungsergebnisse erschweren und öffentliche sowie institutionelle Rechenschaft polarisieren.",
+                "recipients": [
+                  "internationale Institutionen",
+                  "Öffentlichkeit",
+                  "Medien",
+                  "politische Entscheidungsträger"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die institutionelle Bedeutung ist erheblich, der Eintritt einer konkreten demokratischen Folge aber nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Internationale Untersuchungen betreffen mehrere öffentliche Arenen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Zurückweisung betrifft eine zentrale Verantwortungsfrage.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Kontroversen über Rechenschaft können länger nachwirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Mögliche Vertrauensverluste wären teilweise korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Institutionen und Öffentlichkeit können bei widersprüchlichen Angaben für Polarisierung anfällig sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad berührt Untersuchung, Öffentlichkeit und internationale Verantwortungszuweisung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere demokratische Schutzgrenzverletzung ist als Folge nicht beobachtet und im Quellenbestand nicht ausreichend belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Zurückweisung müsste von Institutionen oder Öffentlichkeit zum Anlass genommen werden, die Untersuchung nicht anzuerkennen oder nicht weiterzuverfolgen.",
+                "reference_space": "Internationale Institutionen und öffentliche Debatte",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Anerkennung internationaler Belege beeinflusst Rechenschaft und öffentliche Urteilsbildung.",
+                "source_support": "Die Quelle belegt eine Zurückweisung und eine gegensätzliche UNO-Einschätzung, nicht deren demokratische Wirkung.",
+                "limitations": "Daten zu Vertrauen, Entscheidungen, Medienwirkung und institutionellen Reaktionen fehlen.",
+                "first_order": "Die Zurückweisung stellt eine konkurrierende Verantwortungsdarstellung neben die UNO-Einschätzung.",
+                "second_order": "Das könnte die gemeinsame Grundlage öffentlicher Rechenschaft schwächen.",
+                "third_order": "Bei Wiederholung könnte sich die Anerkennung unabhängiger Untersuchungen institutionell abschwächen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen Daten zu Vertrauen oder institutionellen Reaktionen im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 19,
+                  "divisor": 6,
+                  "raw": 3.1666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver Kontrollimpuls ist möglich, aber nicht belegt und nicht mit dem negativen Hauptpfad vergleichbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Schwächung gemeinsamer Rechenschaftsgrundlagen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Schwächung gemeinsamer Rechenschaftsgrundlagen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Zivilpersonen",
+            "reference_space": "Schule im Iran und betroffene Angehörige",
+            "observed_at": "Ende Februar",
+            "temporal_status": "ex_post",
+            "mechanism": "Die journalistische Quelle berichtet die iranische Angabe, wonach ein Angriff auf eine Schule die Todesfälle verursacht habe; Verantwortlichkeit und Opferzahl sind im Quellenbestand nicht unabhängig bestätigt.",
+            "recipients": [
+              "getötete Menschen",
+              "vor allem Kinder",
+              "Angehörige und betroffene Gemeinschaften"
+            ],
+            "time_horizon": "Seit Ende Februar",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Die Quelle nennt mehr als 150 getötete Menschen an einem Ort.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Todesfälle und besonders betroffene Kinder markieren hohe Schwere.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 4,
+                "rationale": "Todesfolgen sind dauerhaft und nicht reversibel.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Verlorene Menschenleben sind nicht rückgängig zu machen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 5,
+                "rationale": "Die Quelle nennt vor allem Kinder als Betroffene.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 3,
+                "rationale": "Ein möglicher Angriff auf eine Schule berührt Schutz und zivile Infrastruktur.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die berichteten Todesfälle wären als Sachverhalt schwerwiegend, sind hier jedoch nur zugeschrieben und nicht unabhängig bestätigt; daher wird keine entscheidende Schutzgrenze festgestellt.",
+              "reference_frame": null,
+              "source_ids": [],
+              "status": "not_decisive"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 24,
+              "divisor": 6,
+              "raw": 4,
+              "rounded": 4,
+              "protection_floor": 0,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-18T00:23:55.504Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle berichtet die Zurückweisung durch die US-Regierung, die gegensätzliche Einschätzung einer UNO-Mission, zugeschriebene Opferangaben und die fehlenden unabhängigen Folgebelege."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Keine zusätzlichen Wirkungsdaten liegen vor. Modellierbar ist nur das bedingte Risiko, dass die Zurückweisung die Aufklärung und öffentliche Anerkennung möglicher ziviler Schäden erschwert.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Die Quelle berichtet mögliche zivile Schäden und eine gegensätzliche Verantwortungsdarstellung. Die mögliche Wirkung auf Schutz und Aufklärung ist materiell, aber nicht beobachtet und wegen der einzigen Quelle unsicher.",
+          "primary_paths": [
+            {
+              "label": "Erschwerte Aufklärung möglicher ziviler Schäden",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Zurückweisung könnte die gemeinsame Tatsachengrundlage für unabhängige Aufklärung, Schutzforderungen und humanitäre Reaktionen schwächen.",
+              "recipients": [
+                "Zivilpersonen im Konfliktgebiet",
+                "Angehörige möglicher Opfer",
+                "internationale Untersuchungs- und Hilfsinstitutionen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die mögliche Schutzrelevanz ist hoch, während Reichweite und Eintritt der kommunikativen Folge nicht belegt sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Darstellung kann internationale Institutionen und öffentliche Beobachter erreichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Mögliche zivile Todesfälle berühren grundlegende Schutzinteressen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ungeklärte Verantwortlichkeit kann Aufklärung über längere Zeit erschweren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Mögliche Todesfälle und verlorene Beweise wären nur begrenzt reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Die Quelle nennt vor allem Kinder als mögliche Opfer.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad verbindet zivile Sicherheit, Aufklärung und internationale Rechenschaft.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung wird im Quellenbestand nur als möglicher und zugeschriebener Sachverhalt berichtet; für die kommunikative Folge ist daher keine entscheidende Schutzgrenze belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Zurückweisung müsste die Bereitschaft von Institutionen oder Öffentlichkeit zur unabhängigen Prüfung tatsächlich beeinflussen.",
+              "reference_space": "Iran, internationale Öffentlichkeit sowie Untersuchungs- und Hilfsinstitutionen",
+              "time_horizon": "Kurz- bis mittelfristig nach der Zurückweisung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Akteure reagieren auf konkurrierende Verantwortungsdarstellungen und richten daran ihre Prüf- oder Rechenschaftsentscheidungen aus.",
+              "source_support": "Die Quelle belegt die Zurückweisung, die UNO-Einschätzung und zugeschriebene Opferangaben, nicht deren Folge für Schutz oder Hilfe.",
+              "limitations": "Unabhängige Bestätigung, Daten zu Hilfe, Ermittlungen, Entscheidungen und Verhaltensänderungen fehlen.",
+              "first_order": "Die Zurückweisung könnte die Einordnung des möglichen Angriffs erschweren.",
+              "second_order": "Das könnte die gemeinsame Grundlage für Schutzforderungen und Rechenschaft schwächen.",
+              "third_order": "Bei anhaltender Kontroverse könnte die Aufklärung möglicher ziviler Schäden institutionell langsamer werden.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen Wirkungsbelege im gelieferten Bestand; Eintritt und Umfang bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 20,
+                "divisor": 6,
+                "raw": 3.3333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbar starker positiver Hauptpfad ist nicht belegt; die negative Einordnung bleibt ein bedingtes Potenzial."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Erschwerte Aufklärung möglicher ziviler Schäden",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Zivilpersonen",
+              "reference_space": "Schule im Iran und betroffene Angehörige",
+              "observed_at": "Ende Februar",
+              "temporal_status": "ex_post",
+              "mechanism": "Die journalistische Quelle berichtet die iranische Angabe, wonach ein Angriff auf eine Schule die Todesfälle verursacht habe; Verantwortlichkeit und Opferzahl sind im Quellenbestand nicht unabhängig bestätigt.",
+              "recipients": [
+                "getötete Menschen",
+                "vor allem Kinder",
+                "Angehörige und betroffene Gemeinschaften"
+              ],
+              "time_horizon": "Seit Ende Februar",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt mehr als 150 getötete Menschen an einem Ort.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Todesfälle und besonders betroffene Kinder markieren hohe Schwere.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Todesfolgen sind dauerhaft und nicht reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Verlorene Menschenleben sind nicht rückgängig zu machen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Die Quelle nennt vor allem Kinder als Betroffene.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ein möglicher Angriff auf eine Schule berührt Schutz und zivile Infrastruktur.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die berichteten Todesfälle wären als Sachverhalt schwerwiegend, sind hier jedoch nur zugeschrieben und nicht unabhängig bestätigt; daher wird keine entscheidende Schutzgrenze festgestellt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 24,
+                "divisor": 6,
+                "raw": 4,
+                "rounded": 4,
+                "protection_floor": 0,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Zivilpersonen",
+            "reference_space": "Schule im Iran und betroffene Angehörige",
+            "observed_at": "Ende Februar",
+            "temporal_status": "ex_post",
+            "mechanism": "Die journalistische Quelle berichtet die iranische Angabe, wonach ein Angriff auf eine Schule die Todesfälle verursacht habe; Verantwortlichkeit und Opferzahl sind im Quellenbestand nicht unabhängig bestätigt.",
+            "recipients": [
+              "getötete Menschen",
+              "vor allem Kinder",
+              "Angehörige und betroffene Gemeinschaften"
+            ],
+            "time_horizon": "Seit Ende Februar",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Die Quelle nennt mehr als 150 getötete Menschen an einem Ort.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Todesfälle und besonders betroffene Kinder markieren hohe Schwere.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 4,
+                "rationale": "Todesfolgen sind dauerhaft und nicht reversibel.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Verlorene Menschenleben sind nicht rückgängig zu machen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 5,
+                "rationale": "Die Quelle nennt vor allem Kinder als Betroffene.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 3,
+                "rationale": "Ein möglicher Angriff auf eine Schule berührt Schutz und zivile Infrastruktur.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die berichteten Todesfälle wären als Sachverhalt schwerwiegend, sind hier jedoch nur zugeschrieben und nicht unabhängig bestätigt; daher wird keine entscheidende Schutzgrenze festgestellt.",
+              "reference_frame": null,
+              "source_ids": [],
+              "status": "not_decisive"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 24,
+              "divisor": 6,
+              "raw": 4,
+              "rounded": 4,
+              "protection_floor": 0,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Nach iranischen Angaben wurden bei dem Angriff auf eine Schule Ende Februar mehr als 150 Menschen getötet, vor allem Kinder.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand enthält keine Angaben zu Umwelt- oder Klimafolgen. Ein indirekter Umweltpfad ist nur als hoch unsichere Möglichkeit modellierbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Direkte ökologische Folgen des berichteten Angriffs oder der Zurückweisung sind nicht belegt. Ein möglicher Konflikt- und Infrastrukturpfad bleibt offen und schwach.",
+          "primary_paths": [
+            {
+              "label": "Mögliche indirekte Umweltbelastung bei Konfliktverfestigung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Falls die Kontroverse politische Verhärtung und eine längere Konfliktdauer begünstigt, könnten Umwelt- oder Infrastrukturschäden zunehmen.",
+              "recipients": [
+                "Ökosysteme im Konfliktgebiet",
+                "lokale Bevölkerung",
+                "kritische Infrastruktur"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt, nicht quantifiziert und im Quellenbestand ohne ökologische Ausgangsdaten."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Umwelteffekt wäre zunächst räumlich begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ökologische Intensität wird nicht beschrieben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Konfliktbedingte Belastungen könnten länger anhalten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Mögliche Schäden an Ökosystemen wären teilweise schwer umkehrbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene Ökosysteme oder Infrastrukturen werden nicht konkret benannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Die ökologische Verbindung zur Meldung bleibt indirekt und schwach.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze ist im gelieferten Material nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Zurückweisung müsste über politische Verhärtung zu zusätzlicher Konfliktdauer oder Infrastrukturbelastung beitragen.",
+              "reference_space": "Iran und unmittelbar betroffene Ökosysteme",
+              "time_horizon": "Mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Konfliktpolitische Kommunikation beeinflusst politische Entscheidungen und die Konfliktdauer.",
+              "source_support": "Die Quelle belegt weder Umweltfolgen noch eine Konfliktverlängerung.",
+              "limitations": "Umweltangaben, Messwerte und ein politischer Folgeentscheid fehlen.",
+              "first_order": "Eine ökologische Folge ist nicht direkt aus der Meldung ableitbar.",
+              "second_order": "Nur bei zusätzlicher Konfliktbelastung könnten Umwelt- und Infrastrukturfolgen entstehen.",
+              "third_order": "Langfristige ökologische Schäden bleiben eine offene Möglichkeit.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologischen Wirkungsbelege im gelieferten Bestand; Richtung und Eintritt bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mangels ökologischer Belege ist keine belastbare positive oder negative Abwägung möglich; die Richtung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche indirekte Umweltbelastung bei Konfliktverfestigung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche indirekte Umweltbelastung bei Konfliktverfestigung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Belegt ist keine eingetretene institutionelle Folge. Modellierbar ist nur das bedingte Risiko, dass die Zurückweisung internationale Rechenschaft und gemeinsame Tatsachengrundlagen schwächt.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Die Meldung betrifft die Anerkennung einer internationalen Untersuchung und damit öffentliche Korrekturfähigkeit. Der demokratische Pfad ist indirekt und wegen der einzigen Quelle unsicher.",
+          "primary_paths": [
+            {
+              "label": "Schwächung gemeinsamer Rechenschaftsgrundlagen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Zurückweisung könnte die Anerkennung internationaler Untersuchungsergebnisse erschweren und öffentliche sowie institutionelle Rechenschaft polarisieren.",
+              "recipients": [
+                "internationale Institutionen",
+                "Öffentlichkeit",
+                "Medien",
+                "politische Entscheidungsträger"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die institutionelle Bedeutung ist erheblich, der Eintritt einer konkreten demokratischen Folge aber nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Internationale Untersuchungen betreffen mehrere öffentliche Arenen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Zurückweisung betrifft eine zentrale Verantwortungsfrage.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Kontroversen über Rechenschaft können länger nachwirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Mögliche Vertrauensverluste wären teilweise korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Institutionen und Öffentlichkeit können bei widersprüchlichen Angaben für Polarisierung anfällig sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad berührt Untersuchung, Öffentlichkeit und internationale Verantwortungszuweisung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere demokratische Schutzgrenzverletzung ist als Folge nicht beobachtet und im Quellenbestand nicht ausreichend belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Zurückweisung müsste von Institutionen oder Öffentlichkeit zum Anlass genommen werden, die Untersuchung nicht anzuerkennen oder nicht weiterzuverfolgen.",
+              "reference_space": "Internationale Institutionen und öffentliche Debatte",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Anerkennung internationaler Belege beeinflusst Rechenschaft und öffentliche Urteilsbildung.",
+              "source_support": "Die Quelle belegt eine Zurückweisung und eine gegensätzliche UNO-Einschätzung, nicht deren demokratische Wirkung.",
+              "limitations": "Daten zu Vertrauen, Entscheidungen, Medienwirkung und institutionellen Reaktionen fehlen.",
+              "first_order": "Die Zurückweisung stellt eine konkurrierende Verantwortungsdarstellung neben die UNO-Einschätzung.",
+              "second_order": "Das könnte die gemeinsame Grundlage öffentlicher Rechenschaft schwächen.",
+              "third_order": "Bei Wiederholung könnte sich die Anerkennung unabhängiger Untersuchungen institutionell abschwächen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen Daten zu Vertrauen oder institutionellen Reaktionen im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 19,
+                "divisor": 6,
+                "raw": 3.1666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver Kontrollimpuls ist möglich, aber nicht belegt und nicht mit dem negativen Hauptpfad vergleichbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Schwächung gemeinsamer Rechenschaftsgrundlagen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Schwächung gemeinsamer Rechenschaftsgrundlagen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-18T00:22:12.174Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-17T22:44:21.000Z",
+      "last_updated": "2026-09-18T00:23:55.501Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-17e15d5592a80a16b7ad",
+      "case_file": null,
+      "source_published_at": "2026-09-17T23:32:33.000Z",
+      "published_at": "2026-09-18T00:23:55.501Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/usa-weisen-uno-bericht-ueber-moegliche-kriegsverbrechen-im-iran-zurueck-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-17T23:32:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-bc9d5aae223d144a",
       "title_image": {
