@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-18T10:53:08.639Z",
+  "last_successful_run": "2026-09-18T11:07:32.618Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -99791,6 +99791,15 @@
     }
   },
   "pending_story_ids": [
+    "wt-5e42449d4752ce0a",
+    "wt-390efbffd8a918b3",
+    "wt-401a514192bdd1da",
+    "wt-b590cab05685686a",
+    "wt-d54b1c7938724679",
+    "wt-a7e40dba1605f915",
+    "wt-1eadada7e7730522",
+    "wt-d7001a8c3972903a",
+    "wt-7826aabee40d3279",
     "wt-096cc714e6f04271",
     "wt-fad6b96e3b2ed439",
     "wt-3b62b365fe2acb60",
@@ -99836,7 +99845,6 @@
     "wt-a768b91103f85ae5",
     "wt-b10313fa151dc473",
     "wt-6093a69e635cfddd",
-    "wt-d7001a8c3972903a",
     "wt-08b6398a29f89bf8",
     "wt-228ee17d7551797a",
     "wt-6a2e700378b668f2",
@@ -100130,7 +100138,6 @@
     "wt-6467e74f666c7419",
     "wt-b40ed385d3ba5f9a",
     "wt-febc6d832330f9d9",
-    "wt-5a3677cd5f3f1706",
     "wt-01bf95622eae8651",
     "wt-517bf101b9ad6a0d",
     "wt-e0cd1c89abc1840d",
@@ -100403,18 +100410,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-7826aabee40d3279",
-    "wt-1eadada7e7730522",
-    "wt-a7e40dba1605f915",
-    "wt-390efbffd8a918b3",
-    "wt-b590cab05685686a",
-    "wt-401a514192bdd1da",
-    "wt-d54b1c7938724679",
-    "wt-5e42449d4752ce0a"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-18T10:53:08.639Z",
+  "last_attempted_run": "2026-09-18T11:07:32.618Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1481,
@@ -103842,9 +103841,9 @@
       "checked_at": "2026-09-18T10:37:52.736Z"
     },
     "wt-d7001a8c3972903a": {
-      "input_hash": "69caf3dcb0f0c56199e12302",
+      "input_hash": "21418fab0f26407fb5952833",
       "version": "2026-09-10.2",
-      "checked_at": "2026-09-18T09:23:01.229Z"
+      "checked_at": "2026-09-18T11:07:32.618Z"
     },
     "https://www.stern.de/news/explosionen--mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-38272370.html": {
       "input_hash": "bbdaa7627a65d79fab8b3e55",
@@ -103920,6 +103919,16 @@
       "input_hash": "5f3d25b6f90fb179f1d0b55f",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-18T10:53:08.639Z"
+    },
+    "wt-7826aabee40d3279": {
+      "input_hash": "fa1a911003cc34ca929dc05b",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-18T11:07:32.618Z"
+    },
+    "wt-096cc714e6f04271": {
+      "input_hash": "40d9fbf92555008af9b3bf00",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-18T11:07:32.618Z"
     }
   }
 }
