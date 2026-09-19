@@ -2,8 +2,1741 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T17:08:00.552Z",
+  "updated_at": "2026-09-19T17:23:41.856Z",
   "stories": [
+    {
+      "story_id": "wt-4a657d0676992670",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4a657d0676992670-dbc5623ce434358d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4a657d0676992670-b627166a481af4a7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4a657d0676992670-d34193b4c92b36cb-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4a657d0676992670-155891b36cb303a6-source.png"
+        }
+      },
+      "slug": "thuringer-linke-will-starkste-kraft-werden-992670",
+      "title": "Laut MDR: Thüringer Linke will stärkste Kraft werden",
+      "source_summary": "Der MDR berichtet über einen Parteitag der Linken in Erfurt. Dort sei ein Leitantrag für das Superwahljahr 2029 beschlossen worden, mit dem die Partei ihr sozialistisches Profil schärfen und stärkste politische Kraft in Thüringen werden wolle.\n\nAls organisatorisches Ziel nennt der Bericht 20.000 Bürgergespräche. Außerdem seien seit Anfang vergangenen Jahres rund 1.700 neue Mitglieder hinzugekommen. Die Gespräche sollen an verschiedenen öffentlichen Orten und bei Haustürbesuchen stattfinden.\n\nIm Thüringer Landtag will die Linke laut Bericht ihren Einfluss ausbauen und den Druck auf die Regierungskoalition erhöhen. Genannt werden ein Transformationsfonds für die Autozuliefererbranche und eine Bundesratsinitiative zur Einführung einer Vermögensteuer; Umsetzung, Finanzierung und politische Mehrheiten sind nicht belegt.",
+      "summary": "Die Thüringer Linke hat laut MDR einen Leitantrag für 2029 beschlossen und will stärkste politische Kraft werden. Der Bericht nennt Bürgergespräche, Mitgliedergewinn und Vorhaben, belegt aber noch keine Umsetzung oder Mehrheiten.",
+      "detail_summary": "Die Thüringer Linke richtet sich laut MDR auf das Superwahljahr 2029 aus und will stärkste politische Kraft im Land werden. Ein beschlossener Leitantrag setzt auf ein schärferes sozialistisches Profil und eine stärkere Rolle als Bewahrerin des Sozialstaats. Als konkretes Organisationsziel nennt die Partei 20.000 Bürgergespräche; außerdem seien rund 1.700 neue Mitglieder hinzugekommen. Im Landtag soll der Druck auf die Regierungskoalition steigen, unter anderem mit Plänen für einen Transformationsfonds und eine Bundesratsinitiative zur Vermögensteuer. Ob daraus parlamentarische Mehrheiten, finanzierte Programme oder messbare Wirkungen entstehen, bleibt offen.",
+      "why_relevant": "Der Leitantrag verbindet eine Wahlstrategie mit Organisationsausbau und angekündigten parlamentarischen Vorhaben. Das kann politische Prioritäten, Koalitionsdruck und die Beteiligung an öffentlichen Debatten beeinflussen, belegt aber noch keine Umsetzung.",
+      "topic": [
+        "Soziales"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Beschlossener Leitantrag der Thüringer Linken mit Wahlziel, Organisationsziel und angekündigten politischen Vorhaben",
+        "evaluation_target": {
+          "label": "Leitantrag und angekündigte politische Umsetzung der Thüringer Linken",
+          "type": "proposal"
+        },
+        "baseline": "Vor dem berichteten Parteitagsbeschluss liegt kein in dieser Akte belegter Umsetzungsstand der genannten Ziele vor.",
+        "counterfactual": "Ohne den Leitantrag würden die in der Quelle genannten Ziele nicht in dieser gebündelten Form als Parteitagslinie vorliegen; politische Konkurrenz und bestehende Debatten könnten dennoch fortbestehen.",
+        "reference_frame": [
+          "demokratische politische Beteiligung",
+          "parlamentarische Verantwortlichkeit",
+          "soziale und ökologische Folgen politischer Programme"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Bürgeransprache könnte politische Zugänge erweitern; ein späterer Fonds oder eine Vermögensteuer könnte Verteilung und Beschäftigung beeinflussen. Konkrete Betroffenenzahlen und Umsetzungsdaten fehlen.",
+            "planet": "Ein Transformationsfonds könnte bei ökologischer Ausrichtung den Umbau der Autozuliefererbranche unterstützen. Die Quelle beschreibt jedoch weder ökologische Kriterien noch erwartete Emissions- oder Ressourcenwirkungen.",
+            "democracy": "Das Wahlziel, die Mitgliedergewinnung und die angekündigten Gespräche könnten politische Mobilisierung und Rechenschaft stärken. Mehrheitsverhältnisse, Gegenpositionen und tatsächliche Beteiligung bleiben offen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Partei bündelt Wahlvorbereitung, Bürgeransprache und angekündigten parlamentarischen Druck in einem Leitantrag.",
+          "second_order": "Bei erfolgreicher Mobilisierung könnten politische Aufmerksamkeit, Verhandlungen und die Ausgestaltung von Industrie- und Verteilungspolitik beeinflusst werden.",
+          "third_order": "Eine anhaltende organisatorische Verstärkung könnte die politische Wettbewerbsstruktur in Thüringen verändern; ohne Umsetzung könnte sie Vertrauen in politische Zusagen schwächen.",
+          "enablement": [
+            "enables_power",
+            "enables_majority",
+            "enables_legislation",
+            "enables_budget_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine Finanzierung, keinen Gesetzesentwurf und keine parlamentarische Mehrheit.",
+            "Die einzige Quelle ist eine journalistische Darstellung ohne unabhängige Bestätigung.",
+            "Ein angekündigtes Bürgergespräch oder Parteiziel ist kein Nachweis einer späteren politischen Wirkung."
+          ],
+          "source_independence": "Es liegt nur eine Quelle mit einer unabhängigen Herkunft vor; die Unabhängigkeit ist nicht verifiziert. Die Quelle ist ein journalistischer Bericht und keine Primärquelle des Parteitags.",
+          "institutional_status": "Der Leitantrag ist laut MDR beschlossen. Die genannten Fonds- und Steuerprojekte sind als politische Vorhaben beschrieben; ein Beschluss, eine Finanzierung oder ein Inkrafttreten ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt nur Ziele und Vorhaben. Ob Bürgeransprache, Industriepolitik oder Vermögensteuer tatsächlich materielle Verbesserungen für Menschen hervorbringen, ist ohne Umsetzungs- und Verteilungsdaten nicht bestimmbar.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der zentrale bedingte Pfad ist eine mögliche bessere politische Ansprache und spätere sozial- oder industriepolitische Unterstützung. Positive und negative Folgen sind plausibel, aber die Quelle liefert keine Wirkungsdaten.",
+            "primary_paths": [
+              {
+                "label": "Bürgeransprache und spätere Sozial- oder Industriepolitik könnten politische Zugänge und materielle Unterstützung beeinflussen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Partei will Bürgergespräche ausbauen und eigene Vorhaben voranbringen; bei tatsächlicher Durchführung und politischer Durchsetzung könnten Anliegen sichtbarer und politische Leistungen zugänglicher werden.",
+                "recipients": [
+                  "Bürgerinnen und Bürger in Thüringen",
+                  "Beschäftigte der Autozuliefererbranche",
+                  "Haushalte mit unterschiedlichen Einkommen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite könnte über die Partei hinausgehen, bleibt aber wegen fehlender Umsetzung und Zielgruppendaten begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die geplante Ansprache ist öffentlich angelegt, ihre tatsächliche Reichweite bleibt offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mögliche Verbesserungen hängen von späteren politischen Entscheidungen und deren Ausgestaltung ab.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein Leitantrag kann länger wirken, konkrete Dauer und Verstetigung sind jedoch nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Prioritäten und Programme können grundsätzlich geändert oder zurückgenommen werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Beschäftigte und einkommensschwache Haushalte könnten von späteren Entscheidungen unterschiedlich stark abhängen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Ansprache zu möglichen politischen Programmen, bleibt institutionell vermittelt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Grenzverletzung bei Gesundheit, Existenzsicherung oder Gleichberechtigung.",
+                  "reference_frame": "soziale Teilhabe und materielle Absicherung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Gespräche müssen stattfinden und die politischen Vorhaben müssten finanziert, beschlossen und umgesetzt werden.",
+                "reference_space": "Thüringen und die dort betroffenen politischen sowie wirtschaftlichen Gruppen",
+                "time_horizon": "Wahlvorbereitung bis zu einer möglichen späteren Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Kontakte führen nicht automatisch zu repräsentativer Beteiligung oder besseren Leistungen; dafür wären Reichweite, Auswahl der Gesprächspartner und konkrete Entscheidungen entscheidend.",
+                "source_support": "Die Quelle belegt den Leitantrag, das Gesprächsziel und die genannten Vorhaben, nicht deren Folgen.",
+                "limitations": "Keine Umsetzungsdaten, keine unabhängige Evidenz und keine Verteilungsanalyse.",
+                "first_order": "Mehr politische Ansprache und Sichtbarkeit sozialer sowie industriepolitischer Anliegen könnten möglich werden.",
+                "second_order": "Bei parlamentarischer Durchsetzung könnten Beschäftigung, Einkommen oder Zugang zu Unterstützung unterschiedlich beeinflusst werden.",
+                "third_order": "Eine dauerhafte organisatorische Verstärkung könnte politische Repräsentation verändern; Richtung und Verteilung bleiben offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Auswirkungen auf Einkommen, Gesundheit, Beschäftigung oder Zugang zu Leistungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Profilverschärfung könnte Kompromissräume und Zugänge zu gemeinsamer Politik verkleinern",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine stärkere sozialistische Profilierung könnte politische Abgrenzung verstärken; dadurch könnten Kooperationen oder breit getragene Lösungen erschwert werden.",
+                "recipients": [
+                  "politische Akteure",
+                  "Bürgerinnen und Bürger mit unterschiedlichen politischen Positionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Effekt ist politisch vermittelt und nicht durch Daten zur Kooperation belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Profilierung richtet sich an die politische Öffentlichkeit, nicht an alle Lebensbereiche.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Verschärfung von Konflikten ist nicht berichtet.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein Parteitagsbeschluss kann die Kommunikation über längere Zeit prägen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Profile und Kooperationsformen können politisch wieder verändert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffen wären vor allem Gruppen, die auf politische Kooperation angewiesen sind.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Verhandlungen beeinflussen, reicht aber nicht unmittelbar in Versorgung oder Rechte hinein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine mögliche politische Polarisierung ist keine belegte Verletzung einer Schutzgrenze.",
+                  "reference_frame": "demokratische Kooperationsfähigkeit",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Profilverschärfung müsste öffentlich wirksam werden und andere Akteure müssten darauf mit geringerer Kooperationsbereitschaft reagieren.",
+                "reference_space": "Thüringer politische Öffentlichkeit und parlamentarische Kooperation",
+                "time_horizon": "Mittelfristige Wahl- und Parlamentsperiode",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Profilklarheit kann sowohl Mobilisierung als auch Kooperation fördern; die Richtung ist nicht sicher.",
+                "source_support": "Die Quelle belegt die angekündigte Profilverschärfung, nicht eine daraus folgende Polarisierung.",
+                "limitations": "Keine Vergleichsdaten zu Kooperation, Resonanz oder politischer Wahrnehmung.",
+                "first_order": "Eine stärker erkennbare politische Positionierung könnte Debatten strukturieren.",
+                "second_order": "Sie könnte je nach Reaktion anderer Akteure Kooperation erleichtern oder erschweren.",
+                "third_order": "Eine dauerhafte Verschiebung politischer Lager wäre möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält keine Daten über Kooperation, Polarisierung oder öffentliche Resonanz.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein möglicher Beteiligungs- und Unterstützungspfad steht einem unsicheren Kooperationsrisiko gegenüber; beide sind nicht als eingetretene Wirkungen belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Bürgeransprache und spätere Sozial- oder Industriepolitik könnten politische Zugänge und materielle Unterstützung beeinflussen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bürgeransprache und spätere Sozial- oder Industriepolitik könnten politische Zugänge und materielle Unterstützung beeinflussen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt einen Transformationsfonds, aber keine ökologischen Kriterien, Technologien, Finanzierung oder Emissionsziele. Ein positiver Umweltpfad ist daher nur als bedingte Möglichkeit modellierbar.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der einzige erkennbare Umweltpfad verläuft über einen möglichen Transformationsfonds für Autozulieferer. Seine ökologische Richtung hängt vollständig von der späteren Ausgestaltung ab.",
+            "primary_paths": [
+              {
+                "label": "Ein Transformationsfonds könnte den ökologischen Umbau der Autozuliefererbranche unterstützen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Ein politisch durchgesetzter und ökologisch ausgerichteter Fonds könnte Investitionen in veränderte Produktion oder Produkte erleichtern.",
+                "recipients": [
+                  "Autozuliefererbranche",
+                  "Beschäftigte und betroffene Regionen",
+                  "Umwelt und Anwohner"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Finanzierungsvolumen, Kriterien und Umsetzung ist nur eine begrenzte mögliche Wirkung plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der genannte Fonds bezieht sich auf eine einzelne Branche und seine Reichweite ist offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine ökologische Veränderung hängt von noch nicht genannten Förderkriterien ab.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Industrieinvestitionen könnten länger wirken, wenn sie tatsächlich getätigt werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Technische und finanzielle Entscheidungen können teilweise korrigiert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Betroffenheit ist möglich, aber konkrete besonders vulnerable Gruppen sind nicht ausgewiesen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein Branchenfonds könnte Lieferketten und Investitionen beeinflussen, sein Systemumfang ist unbekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete ökologische Grenzverletzung oder Schutzgrenze.",
+                  "reference_frame": "ökologischer und industrieller Transformationspfad",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Fonds müsste beschlossen, finanziert und mit ökologisch wirksamen Kriterien umgesetzt werden.",
+                "reference_space": "Thüringen und die Autozuliefererbranche",
+                "time_horizon": "Mehrjährige industrielle Investitionsperiode",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Transformation wird als ökologischer Umbau ausgestaltet und verdrängt keine wirksameren Maßnahmen.",
+                "source_support": "Die Quelle belegt nur die politische Nennung eines Transformationsfonds.",
+                "limitations": "Keine Angaben zu Ziel, Geldvolumen, Förderbedingungen, Technologien oder Emissionswirkung.",
+                "first_order": "Ein Fonds könnte Investitionsentscheidungen der Branche beeinflussen.",
+                "second_order": "Neue Produktionsweisen könnten Ressourcen- und Emissionspfade verändern, abhängig von der Ausgestaltung.",
+                "third_order": "Veränderte Lieferketten könnten regionale Wirtschaftsstrukturen und Importabhängigkeiten beeinflussen; dies ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle enthält ökologische Kennzahlen oder eine Bewertung des Transformationsfonds.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Ein Förderfonds könnte bestehende industrielle Strukturen verlängern, wenn ökologische Kriterien fehlen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Öffentliche Unterstützung könnte Investitionen in bestehende Technologien stabilisieren, falls der Fonds nicht auf ökologische Veränderung ausgerichtet wird.",
+                "recipients": [
+                  "Umwelt",
+                  "Autozuliefererbranche",
+                  "betroffene Regionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Risikopfad hängt von unbekannten Förderbedingungen ab und ist deshalb niedrig einzuschätzen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre zunächst die genannte Branche und ihr regionales Umfeld.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ohne Fondsdetails ist keine starke Umweltwirkung ableitbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Industrieförderung kann über Investitionszyklen wirken, falls sie zustande kommt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Förderbedingungen und Investitionen können grundsätzlich geändert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Konkrete besonders betroffene Ökosysteme oder Gruppen sind nicht genannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Lock-in betrifft eine Branche, nicht nachweislich das Gesamtsystem.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete Schutzgrenze und kein eingetretener Umweltschaden belegt.",
+                  "reference_frame": "ökologische Vorsorge",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Fonds müsste ohne wirksame ökologische Kriterien beschlossen und umgesetzt werden.",
+                "reference_space": "Autozuliefererbranche in Thüringen",
+                "time_horizon": "Mehrjährige Investitionsperiode",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Öffentliche Mittel verändern Investitionen tatsächlich und führen nicht zu zusätzlicher Transformation.",
+                "source_support": "Die Quelle nennt den Fonds, liefert aber keine Ausgestaltung.",
+                "limitations": "Keine Daten zu Technologie, Finanzierung, Umweltzielen oder Gegenmaßnahmen.",
+                "first_order": "Förderentscheidungen könnten Investitionsrichtungen beeinflussen.",
+                "second_order": "Eine falsche Ausrichtung könnte Anpassungen verzögern.",
+                "third_order": "Ein Branchen-Lock-in ist denkbar, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine Prüfung, ob der Fonds ökologische Kriterien oder Lock-in-Risiken enthalten würde.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche ökologische Nutzen und das mögliche Lock-in-Risiko hängen gleichermaßen von einer nicht beschriebenen Fondsarchitektur ab."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Ein Transformationsfonds könnte den ökologischen Umbau der Autozuliefererbranche unterstützen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Ein Transformationsfonds könnte den ökologischen Umbau der Autozuliefererbranche unterstützen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "medium",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Beschluss und die geplanten Gesprächsformate sind als politische Vorgänge berichtet. Nicht belegt ist, ob die Ansprache repräsentativ wirkt, Macht verschiebt oder zu parlamentarischen Entscheidungen führt.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der stärkste Pfad betrifft demokratische Mobilisierung und parlamentarische Agenda-Setzung: Die Partei will Bürgergespräche, Mitgliederaufbau und Druck auf die Koalition verbinden. Das kann Beteiligung und politische Verantwortlichkeit stärken, ist aber von tatsächlicher Reichweite und Kooperation abhängig.",
+            "primary_paths": [
+              {
+                "label": "Bürgergespräche und Mitgliederaufbau könnten politische Beteiligung und parlamentarische Macht verschieben",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Direkte Ansprache und organisatorisches Wachstum könnten mehr Menschen an die Partei binden und dadurch ihre Fähigkeit erhöhen, Themen einzubringen und Druck auf die Regierungskoalition auszuüben.",
+                "recipients": [
+                  "Bürgerinnen und Bürger in Thüringen",
+                  "Mitglieder und politische Unterstützer",
+                  "Thüringer Landtag und Regierungskoalition"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der Pfad betrifft Wahlmobilisierung und parlamentarische Agenda, bleibt aber wegen fehlender Daten zur Reichweite und Repräsentativität begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Partei plant Gespräche im öffentlichen Raum und an Haustüren; die tatsächliche Reichweite ist offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Mitgliederaufbau und parlamentarischer Druck könnten politische Konkurrenz und Verhandlungen spürbar beeinflussen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ein Leitantrag für das Superwahljahr und organisatorischer Ausbau können über längere Zeit wirken.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Veränderte politische Kräfteverhältnisse können korrigiert werden, einzelne Organisationsbindungen aber fortwirken.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Politische Teilhabe und Zugang zu Entscheidungsträgern sind für weniger gut organisierte Gruppen unterschiedlich erreichbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad reicht von direkter Ansprache über Organisation bis zur möglichen parlamentarischen Agenda.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine Einschränkung politischer Rechte; der Pfad betrifft mögliche Beteiligungs- und Machtverschiebungen.",
+                  "reference_frame": "politische Teilhabe und parlamentarische Rechenschaft",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Gespräche müssen tatsächlich stattfinden, neue Mitglieder müssen dauerhaft eingebunden werden und daraus muss politischer Einfluss entstehen.",
+                "reference_space": "Thüringer Öffentlichkeit, Parteiensystem und Landtag",
+                "time_horizon": "Bis zum Superwahljahr 2029 und in der folgenden parlamentarischen Arbeit",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Organisierte Ansprache kann politische Beteiligung erhöhen, ohne automatisch repräsentativ oder wirksam zu sein.",
+                "source_support": "Die Quelle belegt das Ziel der Bürgergespräche, Mitgliederzuwachs und den angekündigten Druck auf die Koalition.",
+                "limitations": "Keine Daten zu Beteiligungsqualität, sozialer Zusammensetzung, Wahlverhalten oder parlamentarischen Ergebnissen.",
+                "first_order": "Die Partei könnte mehr Bürgerkontakte und organisatorische Ressourcen gewinnen.",
+                "second_order": "Dadurch könnte sie Themen und Verhandlungen im Landtag stärker beeinflussen.",
+                "third_order": "Bei anhaltendem Erfolg könnte sich die Macht- und Mehrheitsstruktur im Thüringer Parteiensystem verschieben.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst, ob die Bürgergespräche tatsächlich stattfinden oder zu mehr Beteiligung und parlamentarischer Macht führen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Stärkerer parteipolitischer Druck könnte politische Polarisierung und Ausschlussgefühle verstärken",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine schärfere Profilierung und der angekündigte Druck auf die Koalition könnten Debatten zugespitzter machen, wenn konkurrierende Positionen weniger anschlussfähig behandelt werden.",
+                "recipients": [
+                  "politische Öffentlichkeit",
+                  "Regierungs- und Oppositionsfraktionen",
+                  "nicht organisierte Bürgerinnen und Bürger"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Eine solche Nebenwirkung ist möglich, aber weder als eingetreten noch als zwingende Folge des Beschlusses belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die mögliche Wirkung betrifft die politische Öffentlichkeit und parlamentarische Debatten.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Zugespitzte Konkurrenz könnte Debatten beeinflussen, konkrete Konfliktstärke ist unbekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Profilierung kann bis zur Wahlvorbereitung anhalten, muss aber nicht dauerhaft sein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Diskurs und Kooperationsformen können sich wieder verändern.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit geringer politischer Einbindung könnten von zugespitzten Debatten eher ausgeschlossen werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Diskurs- und Verhandlungsstrukturen berühren, ohne Institutionen unmittelbar zu verändern.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete Verletzung politischer Rechte oder demokratischer Schutzgrenzen belegt.",
+                  "reference_frame": "inklusive politische Kommunikation",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Profilverschärfung müsste zugespitzt vermittelt werden und andere Akteure müssten mit stärkerer Abgrenzung reagieren.",
+                "reference_space": "Thüringer Parteiensystem und politische Öffentlichkeit",
+                "time_horizon": "Wahlvorbereitung bis zur parlamentarischen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Profilierung kann sowohl Orientierung schaffen als auch Polarisierung verstärken.",
+                "source_support": "Die Quelle belegt die angekündigte Profilverschärfung und den Druck auf die Koalition, nicht deren Diskursfolgen.",
+                "limitations": "Keine unabhängigen Daten zu Resonanz, Polarisierung oder Ausschlusswirkungen.",
+                "first_order": "Politische Positionen könnten klarer und konfliktintensiver sichtbar werden.",
+                "second_order": "Dies könnte Koalitionsverhandlungen und öffentliche Debatten erschweren oder strukturieren.",
+                "third_order": "Eine längerfristige Normalisierung konfrontativer Politik ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine Diskurs- oder Verhaltensdaten zur möglichen Polarisierung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mögliche zusätzliche Beteiligung und ein mögliches Polarisierungsrisiko sind getrennte Pfade; eine eingetretene demokratische Wirkung ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Bürgergespräche und Mitgliederaufbau könnten politische Beteiligung und parlamentarische Macht verschieben",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bürgergespräche und Mitgliederaufbau könnten politische Beteiligung und parlamentarische Macht verschieben",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T17:26:48.993Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über den Parteitagsbeschluss und die dort genannten Ziele."
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Beschriebene Bürgergespräche, Mitgliederentwicklung und angekündigter parlamentarischer Druck als Ausgangspunkte möglicher Wirkpfade."
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "reference"
+            ],
+            "supported_claim": "Einordnung der Vorhaben in Wahlvorbereitung, Sozialstaatsprofil, Autozuliefererbranche und Vermögensteuer."
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle belegt keine Umsetzung, Finanzierung, Mehrheiten oder Wirkungsdaten."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt nur Ziele und Vorhaben. Ob Bürgeransprache, Industriepolitik oder Vermögensteuer tatsächlich materielle Verbesserungen für Menschen hervorbringen, ist ohne Umsetzungs- und Verteilungsdaten nicht bestimmbar.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der zentrale bedingte Pfad ist eine mögliche bessere politische Ansprache und spätere sozial- oder industriepolitische Unterstützung. Positive und negative Folgen sind plausibel, aber die Quelle liefert keine Wirkungsdaten.",
+          "primary_paths": [
+            {
+              "label": "Bürgeransprache und spätere Sozial- oder Industriepolitik könnten politische Zugänge und materielle Unterstützung beeinflussen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Partei will Bürgergespräche ausbauen und eigene Vorhaben voranbringen; bei tatsächlicher Durchführung und politischer Durchsetzung könnten Anliegen sichtbarer und politische Leistungen zugänglicher werden.",
+              "recipients": [
+                "Bürgerinnen und Bürger in Thüringen",
+                "Beschäftigte der Autozuliefererbranche",
+                "Haushalte mit unterschiedlichen Einkommen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite könnte über die Partei hinausgehen, bleibt aber wegen fehlender Umsetzung und Zielgruppendaten begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die geplante Ansprache ist öffentlich angelegt, ihre tatsächliche Reichweite bleibt offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mögliche Verbesserungen hängen von späteren politischen Entscheidungen und deren Ausgestaltung ab.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein Leitantrag kann länger wirken, konkrete Dauer und Verstetigung sind jedoch nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Prioritäten und Programme können grundsätzlich geändert oder zurückgenommen werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Beschäftigte und einkommensschwache Haushalte könnten von späteren Entscheidungen unterschiedlich stark abhängen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Ansprache zu möglichen politischen Programmen, bleibt institutionell vermittelt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Grenzverletzung bei Gesundheit, Existenzsicherung oder Gleichberechtigung.",
+                "reference_frame": "soziale Teilhabe und materielle Absicherung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Gespräche müssen stattfinden und die politischen Vorhaben müssten finanziert, beschlossen und umgesetzt werden.",
+              "reference_space": "Thüringen und die dort betroffenen politischen sowie wirtschaftlichen Gruppen",
+              "time_horizon": "Wahlvorbereitung bis zu einer möglichen späteren Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Kontakte führen nicht automatisch zu repräsentativer Beteiligung oder besseren Leistungen; dafür wären Reichweite, Auswahl der Gesprächspartner und konkrete Entscheidungen entscheidend.",
+              "source_support": "Die Quelle belegt den Leitantrag, das Gesprächsziel und die genannten Vorhaben, nicht deren Folgen.",
+              "limitations": "Keine Umsetzungsdaten, keine unabhängige Evidenz und keine Verteilungsanalyse.",
+              "first_order": "Mehr politische Ansprache und Sichtbarkeit sozialer sowie industriepolitischer Anliegen könnten möglich werden.",
+              "second_order": "Bei parlamentarischer Durchsetzung könnten Beschäftigung, Einkommen oder Zugang zu Unterstützung unterschiedlich beeinflusst werden.",
+              "third_order": "Eine dauerhafte organisatorische Verstärkung könnte politische Repräsentation verändern; Richtung und Verteilung bleiben offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Auswirkungen auf Einkommen, Gesundheit, Beschäftigung oder Zugang zu Leistungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Profilverschärfung könnte Kompromissräume und Zugänge zu gemeinsamer Politik verkleinern",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine stärkere sozialistische Profilierung könnte politische Abgrenzung verstärken; dadurch könnten Kooperationen oder breit getragene Lösungen erschwert werden.",
+              "recipients": [
+                "politische Akteure",
+                "Bürgerinnen und Bürger mit unterschiedlichen politischen Positionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Effekt ist politisch vermittelt und nicht durch Daten zur Kooperation belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Profilierung richtet sich an die politische Öffentlichkeit, nicht an alle Lebensbereiche.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Verschärfung von Konflikten ist nicht berichtet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein Parteitagsbeschluss kann die Kommunikation über längere Zeit prägen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Profile und Kooperationsformen können politisch wieder verändert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffen wären vor allem Gruppen, die auf politische Kooperation angewiesen sind.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Verhandlungen beeinflussen, reicht aber nicht unmittelbar in Versorgung oder Rechte hinein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine mögliche politische Polarisierung ist keine belegte Verletzung einer Schutzgrenze.",
+                "reference_frame": "demokratische Kooperationsfähigkeit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Profilverschärfung müsste öffentlich wirksam werden und andere Akteure müssten darauf mit geringerer Kooperationsbereitschaft reagieren.",
+              "reference_space": "Thüringer politische Öffentlichkeit und parlamentarische Kooperation",
+              "time_horizon": "Mittelfristige Wahl- und Parlamentsperiode",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Profilklarheit kann sowohl Mobilisierung als auch Kooperation fördern; die Richtung ist nicht sicher.",
+              "source_support": "Die Quelle belegt die angekündigte Profilverschärfung, nicht eine daraus folgende Polarisierung.",
+              "limitations": "Keine Vergleichsdaten zu Kooperation, Resonanz oder politischer Wahrnehmung.",
+              "first_order": "Eine stärker erkennbare politische Positionierung könnte Debatten strukturieren.",
+              "second_order": "Sie könnte je nach Reaktion anderer Akteure Kooperation erleichtern oder erschweren.",
+              "third_order": "Eine dauerhafte Verschiebung politischer Lager wäre möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält keine Daten über Kooperation, Polarisierung oder öffentliche Resonanz.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein möglicher Beteiligungs- und Unterstützungspfad steht einem unsicheren Kooperationsrisiko gegenüber; beide sind nicht als eingetretene Wirkungen belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bürgeransprache und spätere Sozial- oder Industriepolitik könnten politische Zugänge und materielle Unterstützung beeinflussen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Bürgeransprache und spätere Sozial- oder Industriepolitik könnten politische Zugänge und materielle Unterstützung beeinflussen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt einen Transformationsfonds, aber keine ökologischen Kriterien, Technologien, Finanzierung oder Emissionsziele. Ein positiver Umweltpfad ist daher nur als bedingte Möglichkeit modellierbar.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der einzige erkennbare Umweltpfad verläuft über einen möglichen Transformationsfonds für Autozulieferer. Seine ökologische Richtung hängt vollständig von der späteren Ausgestaltung ab.",
+          "primary_paths": [
+            {
+              "label": "Ein Transformationsfonds könnte den ökologischen Umbau der Autozuliefererbranche unterstützen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Ein politisch durchgesetzter und ökologisch ausgerichteter Fonds könnte Investitionen in veränderte Produktion oder Produkte erleichtern.",
+              "recipients": [
+                "Autozuliefererbranche",
+                "Beschäftigte und betroffene Regionen",
+                "Umwelt und Anwohner"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Finanzierungsvolumen, Kriterien und Umsetzung ist nur eine begrenzte mögliche Wirkung plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der genannte Fonds bezieht sich auf eine einzelne Branche und seine Reichweite ist offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine ökologische Veränderung hängt von noch nicht genannten Förderkriterien ab.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Industrieinvestitionen könnten länger wirken, wenn sie tatsächlich getätigt werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Technische und finanzielle Entscheidungen können teilweise korrigiert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Betroffenheit ist möglich, aber konkrete besonders vulnerable Gruppen sind nicht ausgewiesen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein Branchenfonds könnte Lieferketten und Investitionen beeinflussen, sein Systemumfang ist unbekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete ökologische Grenzverletzung oder Schutzgrenze.",
+                "reference_frame": "ökologischer und industrieller Transformationspfad",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Fonds müsste beschlossen, finanziert und mit ökologisch wirksamen Kriterien umgesetzt werden.",
+              "reference_space": "Thüringen und die Autozuliefererbranche",
+              "time_horizon": "Mehrjährige industrielle Investitionsperiode",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Transformation wird als ökologischer Umbau ausgestaltet und verdrängt keine wirksameren Maßnahmen.",
+              "source_support": "Die Quelle belegt nur die politische Nennung eines Transformationsfonds.",
+              "limitations": "Keine Angaben zu Ziel, Geldvolumen, Förderbedingungen, Technologien oder Emissionswirkung.",
+              "first_order": "Ein Fonds könnte Investitionsentscheidungen der Branche beeinflussen.",
+              "second_order": "Neue Produktionsweisen könnten Ressourcen- und Emissionspfade verändern, abhängig von der Ausgestaltung.",
+              "third_order": "Veränderte Lieferketten könnten regionale Wirtschaftsstrukturen und Importabhängigkeiten beeinflussen; dies ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle enthält ökologische Kennzahlen oder eine Bewertung des Transformationsfonds.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Ein Förderfonds könnte bestehende industrielle Strukturen verlängern, wenn ökologische Kriterien fehlen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Öffentliche Unterstützung könnte Investitionen in bestehende Technologien stabilisieren, falls der Fonds nicht auf ökologische Veränderung ausgerichtet wird.",
+              "recipients": [
+                "Umwelt",
+                "Autozuliefererbranche",
+                "betroffene Regionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Risikopfad hängt von unbekannten Förderbedingungen ab und ist deshalb niedrig einzuschätzen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre zunächst die genannte Branche und ihr regionales Umfeld.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ohne Fondsdetails ist keine starke Umweltwirkung ableitbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Industrieförderung kann über Investitionszyklen wirken, falls sie zustande kommt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Förderbedingungen und Investitionen können grundsätzlich geändert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Konkrete besonders betroffene Ökosysteme oder Gruppen sind nicht genannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Lock-in betrifft eine Branche, nicht nachweislich das Gesamtsystem.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete Schutzgrenze und kein eingetretener Umweltschaden belegt.",
+                "reference_frame": "ökologische Vorsorge",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Fonds müsste ohne wirksame ökologische Kriterien beschlossen und umgesetzt werden.",
+              "reference_space": "Autozuliefererbranche in Thüringen",
+              "time_horizon": "Mehrjährige Investitionsperiode",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Öffentliche Mittel verändern Investitionen tatsächlich und führen nicht zu zusätzlicher Transformation.",
+              "source_support": "Die Quelle nennt den Fonds, liefert aber keine Ausgestaltung.",
+              "limitations": "Keine Daten zu Technologie, Finanzierung, Umweltzielen oder Gegenmaßnahmen.",
+              "first_order": "Förderentscheidungen könnten Investitionsrichtungen beeinflussen.",
+              "second_order": "Eine falsche Ausrichtung könnte Anpassungen verzögern.",
+              "third_order": "Ein Branchen-Lock-in ist denkbar, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine Prüfung, ob der Fonds ökologische Kriterien oder Lock-in-Risiken enthalten würde.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche ökologische Nutzen und das mögliche Lock-in-Risiko hängen gleichermaßen von einer nicht beschriebenen Fondsarchitektur ab."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Ein Transformationsfonds könnte den ökologischen Umbau der Autozuliefererbranche unterstützen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Ein Transformationsfonds könnte den ökologischen Umbau der Autozuliefererbranche unterstützen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "medium",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Beschluss und die geplanten Gesprächsformate sind als politische Vorgänge berichtet. Nicht belegt ist, ob die Ansprache repräsentativ wirkt, Macht verschiebt oder zu parlamentarischen Entscheidungen führt.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der stärkste Pfad betrifft demokratische Mobilisierung und parlamentarische Agenda-Setzung: Die Partei will Bürgergespräche, Mitgliederaufbau und Druck auf die Koalition verbinden. Das kann Beteiligung und politische Verantwortlichkeit stärken, ist aber von tatsächlicher Reichweite und Kooperation abhängig.",
+          "primary_paths": [
+            {
+              "label": "Bürgergespräche und Mitgliederaufbau könnten politische Beteiligung und parlamentarische Macht verschieben",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Direkte Ansprache und organisatorisches Wachstum könnten mehr Menschen an die Partei binden und dadurch ihre Fähigkeit erhöhen, Themen einzubringen und Druck auf die Regierungskoalition auszuüben.",
+              "recipients": [
+                "Bürgerinnen und Bürger in Thüringen",
+                "Mitglieder und politische Unterstützer",
+                "Thüringer Landtag und Regierungskoalition"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der Pfad betrifft Wahlmobilisierung und parlamentarische Agenda, bleibt aber wegen fehlender Daten zur Reichweite und Repräsentativität begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Partei plant Gespräche im öffentlichen Raum und an Haustüren; die tatsächliche Reichweite ist offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Mitgliederaufbau und parlamentarischer Druck könnten politische Konkurrenz und Verhandlungen spürbar beeinflussen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ein Leitantrag für das Superwahljahr und organisatorischer Ausbau können über längere Zeit wirken.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Veränderte politische Kräfteverhältnisse können korrigiert werden, einzelne Organisationsbindungen aber fortwirken.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Politische Teilhabe und Zugang zu Entscheidungsträgern sind für weniger gut organisierte Gruppen unterschiedlich erreichbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad reicht von direkter Ansprache über Organisation bis zur möglichen parlamentarischen Agenda.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine Einschränkung politischer Rechte; der Pfad betrifft mögliche Beteiligungs- und Machtverschiebungen.",
+                "reference_frame": "politische Teilhabe und parlamentarische Rechenschaft",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Gespräche müssen tatsächlich stattfinden, neue Mitglieder müssen dauerhaft eingebunden werden und daraus muss politischer Einfluss entstehen.",
+              "reference_space": "Thüringer Öffentlichkeit, Parteiensystem und Landtag",
+              "time_horizon": "Bis zum Superwahljahr 2029 und in der folgenden parlamentarischen Arbeit",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Organisierte Ansprache kann politische Beteiligung erhöhen, ohne automatisch repräsentativ oder wirksam zu sein.",
+              "source_support": "Die Quelle belegt das Ziel der Bürgergespräche, Mitgliederzuwachs und den angekündigten Druck auf die Koalition.",
+              "limitations": "Keine Daten zu Beteiligungsqualität, sozialer Zusammensetzung, Wahlverhalten oder parlamentarischen Ergebnissen.",
+              "first_order": "Die Partei könnte mehr Bürgerkontakte und organisatorische Ressourcen gewinnen.",
+              "second_order": "Dadurch könnte sie Themen und Verhandlungen im Landtag stärker beeinflussen.",
+              "third_order": "Bei anhaltendem Erfolg könnte sich die Macht- und Mehrheitsstruktur im Thüringer Parteiensystem verschieben.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst, ob die Bürgergespräche tatsächlich stattfinden oder zu mehr Beteiligung und parlamentarischer Macht führen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Stärkerer parteipolitischer Druck könnte politische Polarisierung und Ausschlussgefühle verstärken",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine schärfere Profilierung und der angekündigte Druck auf die Koalition könnten Debatten zugespitzter machen, wenn konkurrierende Positionen weniger anschlussfähig behandelt werden.",
+              "recipients": [
+                "politische Öffentlichkeit",
+                "Regierungs- und Oppositionsfraktionen",
+                "nicht organisierte Bürgerinnen und Bürger"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Eine solche Nebenwirkung ist möglich, aber weder als eingetreten noch als zwingende Folge des Beschlusses belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die mögliche Wirkung betrifft die politische Öffentlichkeit und parlamentarische Debatten.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Zugespitzte Konkurrenz könnte Debatten beeinflussen, konkrete Konfliktstärke ist unbekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Profilierung kann bis zur Wahlvorbereitung anhalten, muss aber nicht dauerhaft sein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Diskurs und Kooperationsformen können sich wieder verändern.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit geringer politischer Einbindung könnten von zugespitzten Debatten eher ausgeschlossen werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Diskurs- und Verhandlungsstrukturen berühren, ohne Institutionen unmittelbar zu verändern.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete Verletzung politischer Rechte oder demokratischer Schutzgrenzen belegt.",
+                "reference_frame": "inklusive politische Kommunikation",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Profilverschärfung müsste zugespitzt vermittelt werden und andere Akteure müssten mit stärkerer Abgrenzung reagieren.",
+              "reference_space": "Thüringer Parteiensystem und politische Öffentlichkeit",
+              "time_horizon": "Wahlvorbereitung bis zur parlamentarischen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Profilierung kann sowohl Orientierung schaffen als auch Polarisierung verstärken.",
+              "source_support": "Die Quelle belegt die angekündigte Profilverschärfung und den Druck auf die Koalition, nicht deren Diskursfolgen.",
+              "limitations": "Keine unabhängigen Daten zu Resonanz, Polarisierung oder Ausschlusswirkungen.",
+              "first_order": "Politische Positionen könnten klarer und konfliktintensiver sichtbar werden.",
+              "second_order": "Dies könnte Koalitionsverhandlungen und öffentliche Debatten erschweren oder strukturieren.",
+              "third_order": "Eine längerfristige Normalisierung konfrontativer Politik ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine Diskurs- oder Verhaltensdaten zur möglichen Polarisierung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mögliche zusätzliche Beteiligung und ein mögliches Polarisierungsrisiko sind getrennte Pfade; eine eingetretene demokratische Wirkung ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bürgergespräche und Mitgliederaufbau könnten politische Beteiligung und parlamentarische Macht verschieben",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Bürgergespräche und Mitgliederaufbau könnten politische Beteiligung und parlamentarische Macht verschieben",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T17:23:41.856Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T15:40:30.000Z",
+      "last_updated": "2026-09-19T17:26:48.988Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-11577ff9b86bbc76c3d3",
+      "case_file": null,
+      "source_published_at": "2026-09-19T15:40:30.000Z",
+      "published_at": "2026-09-19T17:26:48.988Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die angekündigten Bürgergespräche sollen an Infoständen, auf Straßen und Plätzen, bei Haustürbesuchen sowie im direkten Austausch stattfinden.",
+          "source_id": "mdr-nachrichten",
+          "measurable_indicator": "Veröffentlichte Zahl und dokumentierte Formate der Bürgergespräche",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5b3fe4bf63b6ef35",
+          "announced_at": "2026-09-19T15:40:30.000Z",
+          "follow_up_date": "2026-09-26T17:26:48.988Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Partei will den Druck auf die Thüringer Regierungskoalition erhöhen, um eigene Vorhaben voranzubringen.",
+          "source_id": "mdr-nachrichten",
+          "measurable_indicator": "Konkrete parlamentarische Initiativen und Abstimmungen zu den genannten Vorhaben",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-486311a2ec84ab61",
+          "announced_at": "2026-09-19T15:40:30.000Z",
+          "follow_up_date": "2026-09-26T17:26:48.988Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/thueringen/linke-erfurt,parteitag-114.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T15:40:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-9ba8f6561ab6ac17",
       "title_image": {
