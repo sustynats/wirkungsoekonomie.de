@@ -2,8 +2,1216 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T09:09:05.496Z",
+  "updated_at": "2026-09-19T09:38:58.262Z",
   "stories": [
+    {
+      "story_id": "wt-f0ab6fbd584961da",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f0ab6fbd584961da-06fb0832bcde86ef-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f0ab6fbd584961da-4f3e06c1d6d958a9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-f0ab6fbd584961da-4c35a24628a0a8e4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hatte-fast-einen-krieg-ausgelost-us-truppen-bereiteten-offenbar-angriff-auf-schiff-aus-c-4961da",
+      "title": "US-Truppen bereiteten laut Bericht offenbar nach KI-Fehler Angriff auf Schiff aus China vor",
+      "source_summary": "Der Tagesspiegel berichtet, dass im Frühjahr in Washington ein Geheimdienstbericht einen Militäreinsatz ausgelöst haben soll. Anlass soll ein geplanter Angriff von US-Truppen auf ein Schiff aus China gewesen sein.\n\nNach der Darstellung des Berichts beruhten die Informationen auf Künstlicher Intelligenz. CNN wird mit der Einschätzung zitiert, die Angaben seien vollständig falsch gewesen.\n\nDie vorliegende Quelle ist eine journalistische Darstellung. Ein Originalbericht, eine Stellungnahme der beteiligten Behörden und eine unabhängige zweite Recherche liegen in der Akte nicht vor. Deshalb bleiben Ablauf, Verantwortlichkeiten und tatsächliche Einsatzvorbereitungen offen.",
+      "summary": "Ein Bericht stellt einen möglichen militärischen Fehlalarm nach KI-generierten Geheimdienstinformationen dar. Unklar bleiben Originalbeleg, Verantwortlichkeiten und ob konkrete Einsatzvorbereitungen stattfanden.",
+      "detail_summary": "Der Tagesspiegel berichtet unter Berufung auf CNN, dass im Frühjahr ein Geheimdienstbericht in Washington einen Militäreinsatz ausgelöst haben soll. Die Informationen sollen vollständig falsch gewesen sein und von Künstlicher Intelligenz gestammt haben. Der Bericht nennt als möglichen Bezug einen Angriff von US-Truppen auf ein Schiff aus China. Das Wirkungspotenzial liegt vor allem in fehlerhaften Entscheidungsgrundlagen für militärische Stellen und in möglichen Spannungen zwischen Staaten. Belegt sind bislang weder der vollständige Ablauf noch eine tatsächliche Ausführung; die Quelle ist nicht unabhängig bestätigt.",
+      "why_relevant": "Fehlerhafte Informationen in sicherheits- und militärischen Entscheidungsprozessen könnten bei entsprechender Bestätigung hohe Folgen für Menschen und internationale Stabilität haben.",
+      "topic": [
+        "KI",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über einen mutmaßlich durch KI-generierte Fehlinformation ausgelösten US-Militäreinsatz gegen ein Schiff aus China.",
+        "evaluation_target": {
+          "label": "Informations- und Entscheidungsgrundlage für militärische Lageentscheidungen",
+          "type": "event"
+        },
+        "baseline": "Militärische Lagebewertung ohne den im Bericht beschriebenen fehlerhaften Geheimdienstbericht.",
+        "counterfactual": "Ohne den fehlerhaften Bericht würde die konkrete Einsatzvorbereitung auf dieser Informationsgrundlage voraussichtlich entfallen; andere militärische Entscheidungswege blieben möglich.",
+        "reference_frame": [
+          "Schutz von Menschenleben und ziviler Sicherheit",
+          "ökologische Schadensvermeidung",
+          "demokratische und institutionelle Rechenschaftspflicht"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine fehlerhafte militärische Lagegrundlage könnte bei tatsächlicher Einsatzentscheidung Menschen in einem Konfliktgebiet sowie Besatzungen und zivile Schifffahrt gefährden; der konkrete Schaden ist nicht belegt.",
+            "planet": "Ein daraus entstehender militärischer Zwischenfall könnte lokal ökologische Schäden und zusätzliche Emissionen verursachen, doch Umfang und Eintritt sind anhand der Quelle nicht bestimmbar.",
+            "democracy": "Wenn fehlerhafte oder KI-generierte Informationen in staatliche Entscheidungsprozesse gelangen, könnte dies Kontrolle, Verantwortungszuordnung und Vertrauen in sicherheitsrelevante Institutionen belasten."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Ein möglicherweise falscher Geheimdienstbericht könnte eine militärische Lagebewertung und Einsatzvorbereitung beeinflussen.",
+          "second_order": "Bei fehlender Verifikation könnte eine fehlerhafte Lagebewertung operative Entscheidungen, internationale Spannungen und die Zuordnung politischer Verantwortung beeinflussen.",
+          "third_order": "Wiederholte Nutzung ungeprüfter KI-generierter Informationen könnte institutionelle Kontrollstandards und Vertrauen in sicherheitsrelevante Entscheidungen schwächen; diese Folge bleibt hypothetisch.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt weder einen tatsächlich ausgeführten Angriff noch Tote, Verletzte, Sachschäden oder eine eingetretene Eskalation.",
+            "Die Darstellung beruht auf einer einzelnen journalistischen Quelle und verweist auf CNN, dessen Originalbericht hier nicht vorliegt."
+          ],
+          "source_independence": "Nur eine gelieferte journalistische Quelle ist vorhanden; unabhängige Bestätigung und der vollständige Originalkontext fehlen.",
+          "institutional_status": "Der Bericht beschreibt eine mutmaßliche Vorgeschichte eines militärischen Entscheidungsprozesses. Ein ausgeführter Einsatz, ein formeller Beschluss oder eine rechtliche Bewertung sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine eingetretene menschliche Schädigung. Bewertbar bleibt nur ein bedingtes Risiko: Falls die fehlerhafte Information operative Maßnahmen ausgelöst hätte und keine wirksame Verifikation erfolgt wäre, hätte die Gefährdung von Menschen zunehmen können.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Eine fehlerhafte militärische Informationsgrundlage kann bei fehlender Prüfung Entscheidungen mit unmittelbaren Risiken für Besatzungen, zivile Schifffahrt und weitere Personen beeinflussen. Der Pfad ist wegen fehlender Angaben zu Einsatz, Ort und Folgen nur schwach belegt.",
+            "primary_paths": [
+              {
+                "label": "Fehlerhafte militärische Lageinformation könnte die Gefährdung von Menschen durch eine voreilige Einsatzvorbereitung erhöhen.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein als Geheimdienstbericht behandelter, laut Quelle vollständig falscher Informationsbestand könnte operative Bewertungen und Einsatzentscheidungen fehlleiten.",
+                "recipients": [
+                  "Besatzungen eines betroffenen Schiffs",
+                  "zivile Schifffahrt",
+                  "militärisches Personal",
+                  "Menschen in einem möglichen Einsatzgebiet"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Schadensweite reicht von keiner Umsetzung bis zu einer gefährlichen militärischen Fehlentscheidung; konkrete Opfer oder Schäden sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wären zunächst die beteiligten Einheiten und ein begrenztes Einsatzumfeld.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Eine militärische Fehlentscheidung könnte für unmittelbar Betroffene sehr schwerwiegend sein.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt keinen andauernden menschlichen Schaden oder längere Schadensdauer.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ein möglicher militärischer Zwischenfall könnte teilweise irreparable Verletzungen oder Todesfälle verursachen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Besatzungen und Zivilpersonen wären in einer möglichen Konfrontation besonders schutzbedürftig.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft zunächst eine konkrete Entscheidung, könnte aber internationale Sicherheitslagen beeinflussen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung ist nicht beobachtet; die Quelle belegt weder Angriff noch Verletzte oder Tote.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die falsche Information in eine operative Entscheidung einfließt und nicht rechtzeitig verifiziert wird.",
+                "reference_space": "Betroffene militärische und zivile Akteure im möglichen maritimen Einsatzumfeld.",
+                "time_horizon": "Kurzfristig während der Lagebewertung und einer möglichen Einsatzvorbereitung.",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass der berichtete Informationsfehler für eine operative Entscheidung relevant war; das ist in der Quelle nicht vollständig dokumentiert.",
+                "source_support": "Belegt ist der Bericht über einen mutmaßlich ausgelösten Militäreinsatz und vollständig falsche, aus KI stammende Informationen; die menschliche Folge ist nicht belegt.",
+                "limitations": "Keine Angaben zu Einsatzort, konkretem Schiff, Verifikation, Ausführung oder Schäden.",
+                "first_order": "Eine fehlerhafte Lageinformation könnte eine militärische Einsatzvorbereitung beeinflussen.",
+                "second_order": "Bei fehlender Gegenprüfung könnte dies Menschen in einem möglichen Einsatzgebiet oder auf See gefährden.",
+                "third_order": "Ein tatsächlicher Zwischenfall könnte internationale Sicherheitsrisiken verstärken; diese Kaskade ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Unklar bleiben Originalbericht, Entscheidungsweg und jede eingetretene menschliche Folge.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es liegt kein gleich stark belegter positiver Hauptpfad vor; die negative Einordnung bleibt wegen des hypothetischen Eintritts vorsichtig."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Fehlerhafte militärische Lageinformation könnte die Gefährdung von Menschen durch eine voreilige Einsatzvorbereitung erhöhen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Fehlerhafte militärische Lageinformation könnte die Gefährdung von Menschen durch eine voreilige Einsatzvorbereitung erhöhen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Umweltfolgen, Treibstoffaustritt, Schäden an Schiffen oder militärischen Emissionen. Bewertbar ist nur ein bedingtes, sehr unsicheres Risiko über einen möglichen Zwischenfall.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Eine fehlerhafte militärische Entscheidung könnte im Fall einer tatsächlichen Konfrontation lokale ökologische Schäden oder zusätzliche militärische Emissionen nach sich ziehen. Wegen fehlender Angaben zu Ort, Art und Umsetzung ist die Tragweite gering modelliert.",
+            "primary_paths": [
+              {
+                "label": "Eine mögliche militärische Fehlentscheidung könnte lokale ökologische Schäden und zusätzliche Emissionen auslösen.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine durch falsche Informationen angestoßene Einsatzhandlung könnte zu einem maritimen Zwischenfall, Materialschäden oder zusätzlichem Treibstoff- und Ressourcenverbrauch führen.",
+                "recipients": [
+                  "maritime Ökosysteme",
+                  "Küstenräume",
+                  "Natur"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne ausgeführten Einsatz wäre keine Umweltwirkung zu erwarten; bei einem Zwischenfall wären begrenzte lokale Schäden plausibel, aber nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Schaden wäre voraussichtlich auf den Einsatz- oder Unfallort begrenzt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle liefert keinen konkreten Hinweis auf eine Umweltbelastung oder Zerstörung.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine mögliche lokale Belastung könnte zeitlich begrenzt sein, bleibt aber unbelegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ohne belegte Zerstörung ist eine dauerhafte ökologische Veränderung nicht anzunehmen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Maritime Ökosysteme könnten betroffen sein, ihre konkrete Empfindlichkeit ist hier nicht belegt.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Umweltpfad bleibt lokal und hängt vollständig von einer nicht belegten Umsetzung ab.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist weder beobachtet noch durch konkrete Schadensdaten belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Es müsste zu einer tatsächlichen militärischen Handlung oder einem Zwischenfall auf See kommen.",
+                "reference_space": "Mögliches maritimes Einsatzgebiet und angrenzende Ökosysteme.",
+                "time_horizon": "Während einer möglichen Einsatzhandlung und ihrer unmittelbaren Folgen.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Umweltpfad setzt eine tatsächliche Umsetzung des mutmaßlich vorbereiteten Einsatzes voraus.",
+                "source_support": "Die Quelle belegt eine mutmaßliche Einsatzvorbereitung, aber keine Umweltwirkung, keinen Zwischenfall und keine Emission.",
+                "limitations": "Keine Daten zu Ort, Schiff, Waffen, Treibstoff, Schadstoffen oder ökologischer Empfindlichkeit.",
+                "first_order": "Eine mögliche Einsatzhandlung könnte zusätzlichen Ressourcenverbrauch verursachen.",
+                "second_order": "Bei einem maritimen Zwischenfall könnten lokal Schadstoffe oder Trümmer freigesetzt werden.",
+                "third_order": "Eine größere Eskalation könnte zusätzliche militärische Emissionen verursachen; dafür fehlt ein Beleg.",
+                "research_pass": "second_pass",
+                "research_result": "Es fehlen Originalbeleg und belastbare Angaben zu einer tatsächlichen Handlung sowie zu Umweltfolgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven Umweltpfad; die negative Modellierung bleibt wegen des sehr unsicheren Eintritts niedrig."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Eine mögliche militärische Fehlentscheidung könnte lokale ökologische Schäden und zusätzliche Emissionen auslösen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine mögliche militärische Fehlentscheidung könnte lokale ökologische Schäden und zusätzliche Emissionen auslösen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt einen falschen, aus KI stammenden Informationsbestand, aber keine Angaben zu Prüfregeln, Verantwortlichen, parlamentarischer Kontrolle oder institutionellen Konsequenzen. Bewertbar ist daher nur ein bedingtes Risiko für Entscheidungsqualität und Rechenschaft.",
+            "reviewed_source_ids": [
+              "tagesspiegel-home"
+            ],
+            "rationale": "Wenn ungeprüfte KI-generierte Informationen in sicherheitsrelevante Entscheidungen gelangen, könnte dies die Qualität staatlicher Lagebilder und die spätere Verantwortungszuordnung beeinträchtigen. Die demokratische Folge ist plausibel, aber institutionell nicht konkret belegt.",
+            "primary_paths": [
+              {
+                "label": "Die Nutzung einer laut Bericht vollständig falschen KI-basierten Information könnte sicherheitsrelevante Kontrolle und Rechenschaft schwächen.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Fehlerhafte Informationen könnten in einen staatlichen Entscheidungsprozess gelangen, während Herkunft, Prüfung und Verantwortlichkeit unklar bleiben.",
+                "recipients": [
+                  "staatliche Entscheidungsinstitutionen",
+                  "parlamentarische Kontrolle",
+                  "Öffentlichkeit",
+                  "internationale Partner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Wirkung reicht von einer intern korrigierten Fehlbewertung bis zu einem Vertrauens- und Kontrollproblem; konkrete institutionelle Folgen sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wären zunächst beteiligte Sicherheitsinstitutionen und ihre Kontrollbeziehungen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Fehlerhafte Entscheidungsgrundlagen könnten die Qualität sicherheitsrelevanter Entscheidungen merklich beeinträchtigen.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein Vertrauens- oder Kontrollproblem könnte über die einzelne Lagebewertung hinaus fortwirken.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Institutionelle Prüfungen und Korrekturen könnten einen Teil möglicher Folgen wieder beheben.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Sicherheitsentscheidungen sind gegenüber falschen Informationen besonders sensibel, konkrete Abhängigkeiten fehlen jedoch.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Informationsketten, Verantwortungszuordnung und mögliche Kontrollstandards.",
+                    "source_ids": [
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung demokratischer Schutzrechte oder eine eingetretene institutionelle Schädigung ist nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Information ohne wirksame Gegenprüfung in eine staatliche Entscheidung gelangt und ihre Herkunft nicht transparent gemacht wird.",
+                "reference_space": "Staatliche Sicherheitsentscheidungen, Kontrollinstanzen und öffentliche Rechenschaft.",
+                "time_horizon": "Während der Entscheidungsfindung und bei der nachträglichen Aufarbeitung.",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass der beschriebene Fehler eine relevante Entscheidungsgrundlage war; die Quelle belegt weder interne Prüfungen noch deren Ausbleiben.",
+                "source_support": "Belegt ist die Darstellung eines falschen Geheimdienstberichts mit KI-Ursprung und mutmaßlicher operativer Folge; demokratische Auswirkungen sind daraus nur bedingt ableitbar.",
+                "limitations": "Keine unabhängige Bestätigung, kein Originalbericht, keine Angaben zu institutioneller Kontrolle, Verantwortlichkeit oder öffentlicher Aufarbeitung.",
+                "first_order": "Ein falscher Informationsbestand könnte die Qualität einer staatlichen Lageentscheidung schwächen.",
+                "second_order": "Unklare Prüfung und Verantwortungszuordnung könnten parlamentarische und öffentliche Kontrolle erschweren.",
+                "third_order": "Wiederholte Vorfälle könnten Vertrauen in sicherheitsrelevante Institutionen und Standards für KI-Nutzung beeinträchtigen; das bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Es fehlen Belege zu Prüfverfahren, institutioneller Verantwortung und tatsächlichen Kontroll- oder Vertrauensfolgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein gleich stark belegter positiver Hauptpfad ist nicht vorhanden; mögliche Korrekturmechanismen begrenzen lediglich die Unsicherheit und sind kein Gegenpfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Die Nutzung einer laut Bericht vollständig falschen KI-basierten Information könnte sicherheitsrelevante Kontrolle und Rechenschaft schwächen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Die Nutzung einer laut Bericht vollständig falschen KI-basierten Information könnte sicherheitsrelevante Kontrolle und Rechenschaft schwächen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T09:42:47.545Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über einen mutmaßlich durch falsche, aus KI stammende Informationen ausgelösten Militäreinsatz; sie belegt keinen ausgeführten Angriff oder eingetretenen Schaden."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine eingetretene menschliche Schädigung. Bewertbar bleibt nur ein bedingtes Risiko: Falls die fehlerhafte Information operative Maßnahmen ausgelöst hätte und keine wirksame Verifikation erfolgt wäre, hätte die Gefährdung von Menschen zunehmen können.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Eine fehlerhafte militärische Informationsgrundlage kann bei fehlender Prüfung Entscheidungen mit unmittelbaren Risiken für Besatzungen, zivile Schifffahrt und weitere Personen beeinflussen. Der Pfad ist wegen fehlender Angaben zu Einsatz, Ort und Folgen nur schwach belegt.",
+          "primary_paths": [
+            {
+              "label": "Fehlerhafte militärische Lageinformation könnte die Gefährdung von Menschen durch eine voreilige Einsatzvorbereitung erhöhen.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein als Geheimdienstbericht behandelter, laut Quelle vollständig falscher Informationsbestand könnte operative Bewertungen und Einsatzentscheidungen fehlleiten.",
+              "recipients": [
+                "Besatzungen eines betroffenen Schiffs",
+                "zivile Schifffahrt",
+                "militärisches Personal",
+                "Menschen in einem möglichen Einsatzgebiet"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Schadensweite reicht von keiner Umsetzung bis zu einer gefährlichen militärischen Fehlentscheidung; konkrete Opfer oder Schäden sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wären zunächst die beteiligten Einheiten und ein begrenztes Einsatzumfeld.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Eine militärische Fehlentscheidung könnte für unmittelbar Betroffene sehr schwerwiegend sein.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt keinen andauernden menschlichen Schaden oder längere Schadensdauer.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ein möglicher militärischer Zwischenfall könnte teilweise irreparable Verletzungen oder Todesfälle verursachen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Besatzungen und Zivilpersonen wären in einer möglichen Konfrontation besonders schutzbedürftig.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft zunächst eine konkrete Entscheidung, könnte aber internationale Sicherheitslagen beeinflussen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung ist nicht beobachtet; die Quelle belegt weder Angriff noch Verletzte oder Tote.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die falsche Information in eine operative Entscheidung einfließt und nicht rechtzeitig verifiziert wird.",
+              "reference_space": "Betroffene militärische und zivile Akteure im möglichen maritimen Einsatzumfeld.",
+              "time_horizon": "Kurzfristig während der Lagebewertung und einer möglichen Einsatzvorbereitung.",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass der berichtete Informationsfehler für eine operative Entscheidung relevant war; das ist in der Quelle nicht vollständig dokumentiert.",
+              "source_support": "Belegt ist der Bericht über einen mutmaßlich ausgelösten Militäreinsatz und vollständig falsche, aus KI stammende Informationen; die menschliche Folge ist nicht belegt.",
+              "limitations": "Keine Angaben zu Einsatzort, konkretem Schiff, Verifikation, Ausführung oder Schäden.",
+              "first_order": "Eine fehlerhafte Lageinformation könnte eine militärische Einsatzvorbereitung beeinflussen.",
+              "second_order": "Bei fehlender Gegenprüfung könnte dies Menschen in einem möglichen Einsatzgebiet oder auf See gefährden.",
+              "third_order": "Ein tatsächlicher Zwischenfall könnte internationale Sicherheitsrisiken verstärken; diese Kaskade ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Unklar bleiben Originalbericht, Entscheidungsweg und jede eingetretene menschliche Folge.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es liegt kein gleich stark belegter positiver Hauptpfad vor; die negative Einordnung bleibt wegen des hypothetischen Eintritts vorsichtig."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Fehlerhafte militärische Lageinformation könnte die Gefährdung von Menschen durch eine voreilige Einsatzvorbereitung erhöhen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Fehlerhafte militärische Lageinformation könnte die Gefährdung von Menschen durch eine voreilige Einsatzvorbereitung erhöhen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Umweltfolgen, Treibstoffaustritt, Schäden an Schiffen oder militärischen Emissionen. Bewertbar ist nur ein bedingtes, sehr unsicheres Risiko über einen möglichen Zwischenfall.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Eine fehlerhafte militärische Entscheidung könnte im Fall einer tatsächlichen Konfrontation lokale ökologische Schäden oder zusätzliche militärische Emissionen nach sich ziehen. Wegen fehlender Angaben zu Ort, Art und Umsetzung ist die Tragweite gering modelliert.",
+          "primary_paths": [
+            {
+              "label": "Eine mögliche militärische Fehlentscheidung könnte lokale ökologische Schäden und zusätzliche Emissionen auslösen.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine durch falsche Informationen angestoßene Einsatzhandlung könnte zu einem maritimen Zwischenfall, Materialschäden oder zusätzlichem Treibstoff- und Ressourcenverbrauch führen.",
+              "recipients": [
+                "maritime Ökosysteme",
+                "Küstenräume",
+                "Natur"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne ausgeführten Einsatz wäre keine Umweltwirkung zu erwarten; bei einem Zwischenfall wären begrenzte lokale Schäden plausibel, aber nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Schaden wäre voraussichtlich auf den Einsatz- oder Unfallort begrenzt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle liefert keinen konkreten Hinweis auf eine Umweltbelastung oder Zerstörung.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine mögliche lokale Belastung könnte zeitlich begrenzt sein, bleibt aber unbelegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ohne belegte Zerstörung ist eine dauerhafte ökologische Veränderung nicht anzunehmen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Maritime Ökosysteme könnten betroffen sein, ihre konkrete Empfindlichkeit ist hier nicht belegt.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Umweltpfad bleibt lokal und hängt vollständig von einer nicht belegten Umsetzung ab.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist weder beobachtet noch durch konkrete Schadensdaten belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Es müsste zu einer tatsächlichen militärischen Handlung oder einem Zwischenfall auf See kommen.",
+              "reference_space": "Mögliches maritimes Einsatzgebiet und angrenzende Ökosysteme.",
+              "time_horizon": "Während einer möglichen Einsatzhandlung und ihrer unmittelbaren Folgen.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Umweltpfad setzt eine tatsächliche Umsetzung des mutmaßlich vorbereiteten Einsatzes voraus.",
+              "source_support": "Die Quelle belegt eine mutmaßliche Einsatzvorbereitung, aber keine Umweltwirkung, keinen Zwischenfall und keine Emission.",
+              "limitations": "Keine Daten zu Ort, Schiff, Waffen, Treibstoff, Schadstoffen oder ökologischer Empfindlichkeit.",
+              "first_order": "Eine mögliche Einsatzhandlung könnte zusätzlichen Ressourcenverbrauch verursachen.",
+              "second_order": "Bei einem maritimen Zwischenfall könnten lokal Schadstoffe oder Trümmer freigesetzt werden.",
+              "third_order": "Eine größere Eskalation könnte zusätzliche militärische Emissionen verursachen; dafür fehlt ein Beleg.",
+              "research_pass": "second_pass",
+              "research_result": "Es fehlen Originalbeleg und belastbare Angaben zu einer tatsächlichen Handlung sowie zu Umweltfolgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven Umweltpfad; die negative Modellierung bleibt wegen des sehr unsicheren Eintritts niedrig."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine mögliche militärische Fehlentscheidung könnte lokale ökologische Schäden und zusätzliche Emissionen auslösen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Eine mögliche militärische Fehlentscheidung könnte lokale ökologische Schäden und zusätzliche Emissionen auslösen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt einen falschen, aus KI stammenden Informationsbestand, aber keine Angaben zu Prüfregeln, Verantwortlichen, parlamentarischer Kontrolle oder institutionellen Konsequenzen. Bewertbar ist daher nur ein bedingtes Risiko für Entscheidungsqualität und Rechenschaft.",
+          "reviewed_source_ids": [
+            "tagesspiegel-home"
+          ],
+          "rationale": "Wenn ungeprüfte KI-generierte Informationen in sicherheitsrelevante Entscheidungen gelangen, könnte dies die Qualität staatlicher Lagebilder und die spätere Verantwortungszuordnung beeinträchtigen. Die demokratische Folge ist plausibel, aber institutionell nicht konkret belegt.",
+          "primary_paths": [
+            {
+              "label": "Die Nutzung einer laut Bericht vollständig falschen KI-basierten Information könnte sicherheitsrelevante Kontrolle und Rechenschaft schwächen.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Fehlerhafte Informationen könnten in einen staatlichen Entscheidungsprozess gelangen, während Herkunft, Prüfung und Verantwortlichkeit unklar bleiben.",
+              "recipients": [
+                "staatliche Entscheidungsinstitutionen",
+                "parlamentarische Kontrolle",
+                "Öffentlichkeit",
+                "internationale Partner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Wirkung reicht von einer intern korrigierten Fehlbewertung bis zu einem Vertrauens- und Kontrollproblem; konkrete institutionelle Folgen sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wären zunächst beteiligte Sicherheitsinstitutionen und ihre Kontrollbeziehungen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Fehlerhafte Entscheidungsgrundlagen könnten die Qualität sicherheitsrelevanter Entscheidungen merklich beeinträchtigen.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein Vertrauens- oder Kontrollproblem könnte über die einzelne Lagebewertung hinaus fortwirken.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Institutionelle Prüfungen und Korrekturen könnten einen Teil möglicher Folgen wieder beheben.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Sicherheitsentscheidungen sind gegenüber falschen Informationen besonders sensibel, konkrete Abhängigkeiten fehlen jedoch.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Informationsketten, Verantwortungszuordnung und mögliche Kontrollstandards.",
+                  "source_ids": [
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung demokratischer Schutzrechte oder eine eingetretene institutionelle Schädigung ist nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Information ohne wirksame Gegenprüfung in eine staatliche Entscheidung gelangt und ihre Herkunft nicht transparent gemacht wird.",
+              "reference_space": "Staatliche Sicherheitsentscheidungen, Kontrollinstanzen und öffentliche Rechenschaft.",
+              "time_horizon": "Während der Entscheidungsfindung und bei der nachträglichen Aufarbeitung.",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass der beschriebene Fehler eine relevante Entscheidungsgrundlage war; die Quelle belegt weder interne Prüfungen noch deren Ausbleiben.",
+              "source_support": "Belegt ist die Darstellung eines falschen Geheimdienstberichts mit KI-Ursprung und mutmaßlicher operativer Folge; demokratische Auswirkungen sind daraus nur bedingt ableitbar.",
+              "limitations": "Keine unabhängige Bestätigung, kein Originalbericht, keine Angaben zu institutioneller Kontrolle, Verantwortlichkeit oder öffentlicher Aufarbeitung.",
+              "first_order": "Ein falscher Informationsbestand könnte die Qualität einer staatlichen Lageentscheidung schwächen.",
+              "second_order": "Unklare Prüfung und Verantwortungszuordnung könnten parlamentarische und öffentliche Kontrolle erschweren.",
+              "third_order": "Wiederholte Vorfälle könnten Vertrauen in sicherheitsrelevante Institutionen und Standards für KI-Nutzung beeinträchtigen; das bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Es fehlen Belege zu Prüfverfahren, institutioneller Verantwortung und tatsächlichen Kontroll- oder Vertrauensfolgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein gleich stark belegter positiver Hauptpfad ist nicht vorhanden; mögliche Korrekturmechanismen begrenzen lediglich die Unsicherheit und sind kein Gegenpfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Die Nutzung einer laut Bericht vollständig falschen KI-basierten Information könnte sicherheitsrelevante Kontrolle und Rechenschaft schwächen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Die Nutzung einer laut Bericht vollständig falschen KI-basierten Information könnte sicherheitsrelevante Kontrolle und Rechenschaft schwächen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Verbindung von KI, Geheimdienstinformationen und einem möglichen Angriff erzeugt ein hohes Deutungs- und Fehlinterpretationsrisiko.",
+        "factual_core": "Der Tagesspiegel berichtet unter Berufung auf CNN über einen möglichen Militäreinsatz nach fehlerhaften, angeblich KI-generierten Informationen.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der Tagesspiegel berichtet über einen möglichen Militäreinsatz nach einem Geheimdienstbericht. CNN wird mit der Bewertung zitiert, die Informationen seien vollständig falsch gewesen."
+          ],
+          "actor_claims": [
+            "CNN soll die Informationen als vollständig falsch bezeichnet haben."
+          ],
+          "open": [
+            "Ob der Militäreinsatz tatsächlich vorbereitet oder begonnen wurde.",
+            "Ob die Informationen aus Künstlicher Intelligenz stammten.",
+            "Welche Behörden beteiligt waren."
+          ]
+        },
+        "attribution": {
+          "frame_source": "tagesspiegel-home",
+          "speaker": "CNN, laut Tagesspiegel",
+          "original_term": "KI-Fehler",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "KI-Fehler",
+          "origin_in_story": "tagesspiegel-home",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "KI-Fehler",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Fehlerhafte KI-Informationen könnten militärische Entscheidungen beeinflusst haben.",
+          "implied_cause": "Unzureichend geprüfte oder falsche KI-generierte Informationen.",
+          "implied_responsibility": "Offen; eine konkrete Stelle wird in der vorliegenden Quelle nicht benannt.",
+          "implied_threat": "Militärische Fehlentscheidungen und zwischenstaatliche Eskalation.",
+          "implied_solution_space": "Prüfung, menschliche Kontrolle und klare Verantwortlichkeit.",
+          "material_omissions": [
+            "Originalbericht und unabhängige Bestätigung fehlen.",
+            "Der tatsächliche Umfang der Einsatzvorbereitung ist unklar."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "internationaler sicherheits- und militärpolitischer Kontext",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "tagesspiegel-home",
+              "claim_supported": "Bericht über einen möglichen US-Militäreinsatz gegen ein Schiff aus China"
+            }
+          ],
+          "uncertainty": "Die politische Verantwortlichkeit und der tatsächliche Ablauf sind nicht belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatte über KI in Geheimdiensten, militärische Kontrolle und internationale Sicherheit",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "medium",
+          "trust_effect_potential": "negative",
+          "discourse_effect_potential": "Die Darstellung könnte das Vertrauen in KI-gestützte Sicherheitsanalysen schwächen oder pauschale Bedrohungsnarrative verstärken."
+        },
+        "impact_path": {
+          "first_order": "Die Meldung kann Aufmerksamkeit auf mögliche Fehler in militärischen Informationsketten lenken.",
+          "second_order": "Sie könnte Forderungen nach unabhängiger Prüfung und menschlicher Kontrolle verstärken.",
+          "third_order": "Bei Wiederholung könnte sie die öffentliche Bewertung staatlicher KI-Nutzung und institutioneller Verantwortlichkeit prägen."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Der Tagesspiegel berichtet über einen möglichen Militäreinsatz nach einem Geheimdienstbericht. CNN wird mit der Bewertung zitiert, die Informationen seien vollständig falsch gewesen.",
+          "what_is_inferred": "Die Meldung besitzt ein Potenzial für sicherheitspolitische und demokratische Debatten.",
+          "what_is_open": "Eine unabhängige Quelle und der Originalbericht fehlen.",
+          "facts": [
+            "Der Tagesspiegel berichtet über einen möglichen Militäreinsatz nach einem Geheimdienstbericht.",
+            "CNN wird mit der Bewertung zitiert, die Informationen seien vollständig falsch gewesen."
+          ],
+          "observations": [],
+          "inferences": [
+            "Die Meldung besitzt ein Potenzial für sicherheitspolitische und demokratische Debatten."
+          ],
+          "impact_potentials": [
+            "Fehlerhafte Informationsketten könnten als Beispiel für Kontrollbedarf diskutiert werden."
+          ],
+          "impact_risks": [
+            "Die zugespitzte Verbindung von KI und möglichem Krieg könnte ohne weitere Belege überinterpretiert werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Eine unabhängige Quelle und der Originalbericht fehlen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der Bericht beschreibt einen möglichen Fehlalarm: Informationen, die laut CNN vollständig falsch gewesen sein sollen, könnten in Washington militärische Planungen ausgelöst haben. Der Tagesspiegel verbindet den Vorgang mit einem möglichen Angriff von US-Truppen auf ein Schiff aus China und schreibt, die Informationen stammten von Künstlicher Intelligenz. Das ist zunächst eine zugeschriebene Darstellung, kein unabhängig bestätigter Nachweis eines beinahe ausgelösten Krieges. Offen bleiben der Originalbericht, die beteiligten Stellen und die Frage, ob tatsächlich ein Einsatz vorbereitet oder begonnen wurde. Das Wirkungspotenzial liegt darin, dass fehlerhafte Informationen in sicherheitsrelevanten Systemen Entscheidungen und internationale Kommunikation beeinflussen könnten. Ob das hier geschah, lässt sich mit der vorliegenden Quelle nicht feststellen.",
+        "editorial_assessment": "Der Bericht beschreibt einen möglichen Fehlalarm: Informationen, die laut CNN vollständig falsch gewesen sein sollen, könnten in Washington militärische Planungen ausgelöst haben. Der Tagesspiegel verbindet den Vorgang mit einem möglichen Angriff von US-Truppen auf ein Schiff aus China und schreibt, die Informationen stammten von Künstlicher Intelligenz. Das ist zunächst eine zugeschriebene Darstellung, kein unabhängig bestätigter Nachweis eines beinahe ausgelösten Krieges. Offen bleiben der Originalbericht, die beteiligten Stellen und die Frage, ob tatsächlich ein Einsatz vorbereitet oder begonnen wurde. Das Wirkungspotenzial liegt darin, dass fehlerhafte Informationen in sicherheitsrelevanten Systemen Entscheidungen und internationale Kommunikation beeinflussen könnten. Ob das hier geschah, lässt sich mit der vorliegenden Quelle nicht feststellen.",
+        "fact_first_alternative": "Der Tagesspiegel berichtet unter Berufung auf CNN über einen möglichen Militäreinsatz nach fehlerhaften, angeblich KI-generierten Informationen; Originalbeleg und unabhängige Bestätigung fehlen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der Ausdruck „fast einen Krieg ausgelöst“ ist zugespitzt und kann den ungeklärten Sachverhalt vorwegnehmen.",
+            "Die Überschrift muss die zugeschriebene und vorläufige Beweislage sichtbar machen."
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Bericht: Fehlerhafte KI-Informationen könnten US-Militärplanung beeinflusst haben",
+          "recommended_summary": "Ein Bericht beschreibt einen möglichen militärischen Fehlalarm nach angeblich KI-generierten Informationen. Der Ablauf ist nicht unabhängig bestätigt.",
+          "recommended_meta_description": "Der Tagesspiegel berichtet über einen möglichen militärischen Fehlalarm nach angeblich KI-generierten Informationen. Originalbeleg und unabhängige Bestätigung fehlen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T09:38:58.262Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T09:24:00.000Z",
+      "last_updated": "2026-09-19T09:42:47.538Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-d805a1e46913bad289c6",
+      "case_file": null,
+      "source_published_at": "2026-09-19T09:24:00.000Z",
+      "published_at": "2026-09-19T09:42:47.538Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der vollständige Kontext des Berichts und die Darstellung der beteiligten Stellen sollten geprüft werden.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "Vorliegen einer unabhängigen Bestätigung oder einer Originaldarstellung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d572c51e9fee8c31",
+          "announced_at": "2026-09-19T09:24:00.000Z",
+          "follow_up_date": "2026-09-26T09:42:47.538Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/hatte-fast-einen-krieg-ausgelost-ustruppen-bereiteten-offenbar-angriff-auf-schiff-aus-china-vor--nach-ki-fehler-16073539.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T09:24:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-77beb51e3dbfc0b7",
       "title_image": {
