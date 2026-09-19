@@ -2,8 +2,1691 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T11:24:01.117Z",
+  "updated_at": "2026-09-19T11:39:35.873Z",
   "stories": [
+    {
+      "story_id": "wt-492fde11550f416a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-492fde11550f416a-501f19c47538956d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-492fde11550f416a-355bdbb826a06fe2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-492fde11550f416a-a14e4ba06c6178da-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "scharf-jugendherbergen-sind-lernorte-der-demokratie-jugendarbeit-und-jugendpolitik-0f416a",
+      "title": "Laut Bayerischer Staatsregierung bezeichnet Ministerin Scharf Jugendherbergen als Lernorte der Demokratie",
+      "source_summary": "Die Bayerische Staatsregierung berichtet über eine Jubiläumsveranstaltung zum hundertjährigen Bestehen des Deutschen Jugendherbergswerks, Landesverband Bayern. An der Veranstaltung nahm Jugendministerin Ulrike Scharf teil. Die Mitteilung ordnet das Jubiläum in eine Darstellung Bayerns als vielfältiges und solidarisches Land ein.\n\nIm Mittelpunkt der Mitteilung steht die Aussage der Ministerin, Jugendherbergen seien Lernorte der Demokratie. Sie beschreibt diese Häuser als Räume, in denen junge Menschen Gemeinschaft erfahren, Werte leben und demokratische Fähigkeiten praktisch erproben könnten.\n\nDie Quelle hebt außerdem die künftige Rolle der Jugendherbergen hervor. Sie belegt damit eine politische Einordnung und eine ministerielle Aussage, aber keine unabhängige Bewertung, keine konkrete neue Maßnahme und keine Messung tatsächlicher Wirkungen.",
+      "summary": "Bayerns Jugendministerin Ulrike Scharf rückt Jugendherbergen als Orte demokratischen Lernens in den Mittelpunkt. Die Mitteilung nennt jedoch keine neue Maßnahme und keinen Nachweis tatsächlicher Wirkungen.",
+      "detail_summary": "Bei einer Veranstaltung zum hundertjährigen Bestehen des Deutschen Jugendherbergswerks in Bayern stellte Jugendministerin Ulrike Scharf die gesellschaftliche Rolle von Jugendherbergen heraus. Laut Bayerischer Staatsregierung bezeichnete sie die Häuser als Lernorte der Demokratie. Als mögliche Funktion nennt die Mitteilung Räume für Gemeinschaft, Werteerfahrung und das praktische Einüben demokratischer Kompetenzen. Nachrichtenwert hat vor allem die politische Schwerpunktsetzung zur künftigen Rolle der Jugendherbergen. Offen bleibt, ob daraus Förderungen, Programme oder andere verbindliche Schritte folgen und welche Wirkungen tatsächlich eintreten.",
+      "why_relevant": "Die Mitteilung verbindet Jugendunterkünfte mit demokratischer Bildung und setzt damit einen politischen Deutungs- und möglichen Handlungsschwerpunkt. Konkrete Umsetzungsschritte sind nicht belegt.",
+      "topic": [
+        "Energie",
+        "Arbeit",
+        "Soziales",
+        "Gesundheit",
+        "Europa",
+        "Wirtschaft",
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Ministerielle Einordnung von Jugendherbergen als mögliche Lernorte der Demokratie bei einer Jubiläumsveranstaltung",
+        "evaluation_target": {
+          "label": "politische Schwerpunktsetzung zur Rolle von Jugendherbergen",
+          "type": "communication"
+        },
+        "baseline": "Jugendherbergen sind in der Quelle als bestehende Einrichtungen beschrieben; eine neue Maßnahme oder messbare Veränderung ist nicht belegt.",
+        "counterfactual": "Ohne die öffentliche Einordnung könnte die politische Aufmerksamkeit für Jugendherbergen als Orte demokratischen Lernens geringer bleiben; konkrete Alternativverläufe sind offen.",
+        "reference_frame": [
+          "demokratische Bildung und Teilhabe",
+          "gleichberechtigter Zugang zu Bildungsgelegenheiten",
+          "Agenda 2030/SDG 4 und SDG 16"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Bildungs- und Begegnungschancen für junge Menschen sowie Verteilungsfragen beim Zugang sind zu prüfen; konkrete Wirkungsdaten fehlen.",
+            "planet": "Ein direkter ökologischer Wirkpfad ist nicht belegt. Mittelbare Effekte über zusätzliche Reisen, Gebäudenutzung oder Bildungsinhalte bleiben offen.",
+            "democracy": "Die politische Rahmung könnte Aufmerksamkeit für demokratisches Lernen lenken. Ob daraus Beteiligung oder institutionelle Veränderungen entstehen, ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die ministerielle Aussage kann die öffentliche und institutionelle Aufmerksamkeit für Jugendherbergen als Bildungsorte erhöhen.",
+          "second_order": "Bei späterer Umsetzung könnten zusätzliche Lern- und Begegnungsgelegenheiten entstehen; Reichweite, Qualität und Zugang sind offen.",
+          "third_order": "Eine dauerhafte Einbindung in demokratische Bildungsstrukturen könnte lokale Beteiligung unterstützen, setzt aber Programme, Ressourcen und Evaluation voraus.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle nennt keine verbindliche Maßnahme, keine Finanzierung und keine Wirkungsdaten.",
+            "Ein symbolischer Schwerpunkt kann ohne Umsetzung folgenlos bleiben."
+          ],
+          "source_independence": "Es liegt nur eine institutionelle Primärquelle vor. Eine unabhängige Bestätigung oder Gegenprüfung ist nicht vorhanden.",
+          "institutional_status": "Belegt ist eine ministerielle Aussage bei einer Veranstaltung; ein Gesetz, Beschluss, Förderprogramm oder Inkrafttreten wird nicht genannt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt einen möglichen Bildungsmechanismus, liefert aber keine Daten zu Teilnahme, Zugang, Qualität oder Wirkung.",
+            "reviewed_source_ids": [
+              "bayern-landesregierung-presse"
+            ],
+            "rationale": "Wenn Jugendherbergen tatsächlich als zugängliche Lern- und Begegnungsorte genutzt und pädagogisch ausgestattet würden, könnten junge Menschen zusätzliche Gelegenheiten für Gemeinschaft und demokratisches Lernen erhalten. Der Pfad bleibt wegen fehlender Umsetzung und Messung unsicher.",
+            "primary_paths": [
+              {
+                "label": "Zusätzliche demokratische Lern- und Begegnungsgelegenheiten für junge Menschen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine politische Schwerpunktsetzung könnte Träger dazu bewegen, Aufenthalte stärker mit gemeinschaftlichem Lernen, Wertebildung und praktischer Beteiligung zu verbinden.",
+                "recipients": [
+                  "junge Menschen",
+                  "pädagogische Fachkräfte",
+                  "Träger von Jugendherbergen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite ist über einzelne Aufenthalte hinaus denkbar, aber ohne Programm, Finanzierung und Teilnehmerdaten begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Jugendherbergen können viele Gruppen erreichen, konkrete Reichweiten fehlen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Gemeinschaft und praktisches Lernen können prägend sein, ihre Stärke ist unbelegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Lernimpulse könnten über Aufenthalte hinausreichen, sind aber nicht gemessen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Bildungsangebote wären grundsätzlich veränderbar oder reversibel.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Junge Menschen könnten profitieren, besonders bei fehlenden anderen Begegnungsorten.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Bildung und Teilhabe, nicht nachgewiesene Strukturänderungen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Schutzgrenze oder schwere Grenzverletzung.",
+                  "reference_frame": "gleichberechtigter Zugang zu Bildung und Teilhabe",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Es müssten konkrete, zugängliche und pädagogisch qualifizierte Angebote geschaffen oder ausgebaut werden.",
+                "reference_space": "Jugendherbergen und ihre Bildungsangebote in Bayern",
+                "time_horizon": "mittelfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die politische Schwerpunktsetzung wird von Trägern aufgegriffen und erreicht unterschiedliche junge Menschen.",
+                "source_support": "Die Quelle nennt Räume für Gemeinschaft, Werteerfahrung und demokratische Kompetenzen; sie belegt nicht deren Ausbau oder Wirkung.",
+                "limitations": "Keine Daten zu Nutzung, Barrierefreiheit, Kosten, sozialer Verteilung oder Lernergebnissen.",
+                "first_order": "Mögliche zusätzliche Gelegenheiten für gemeinschaftliches und demokratisches Lernen.",
+                "second_order": "Mögliche Stärkung sozialer Fähigkeiten bei wiederholter und qualitätsvoller Nutzung.",
+                "third_order": "Mögliche langfristige Teilhabeimpulse, sofern Zugang, Qualität und Kontinuität gesichert sind.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Wirkungsdaten oder Umsetzungsbelege im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Zusätzlicher organisatorischer Aufwand für Träger",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Eine stärkere Bildungsfunktion könnte zusätzliche pädagogische, räumliche und finanzielle Anforderungen erzeugen.",
+                "recipients": [
+                  "Jugendherbergsträger",
+                  "pädagogisches Personal"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Aufwand ist plausibel, aber weder Maßnahme noch Umfang sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wären vor allem beteiligte Träger und Einrichtungen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Mehraufwand ist derzeit nicht konkretisiert.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Zusätzliche Anforderungen könnten bei dauerhaften Angeboten anhalten.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Organisatorische Anpassungen wären grundsätzlich rücknehmbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die Quelle weist keine besonders gefährdete Trägergruppe aus.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bliebe zunächst auf die Organisationsebene begrenzt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "organisatorische Belastbarkeit",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": false,
+                "same_baseline": false,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Nur bei tatsächlicher Ausweitung von Bildungsangeboten.",
+                "reference_space": "Träger und Einrichtungen in Bayern",
+                "time_horizon": "bei einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Bildungsangebote erfordern zusätzliche Betreuung oder Ausstattung.",
+                "source_support": "Die Quelle nennt keine Anforderungen oder Belastungen; der Pfad ist eine begrenzte Modellannahme.",
+                "limitations": "Keine Angaben zu Personal, Kosten oder Kapazitäten.",
+                "first_order": "Möglicher zusätzlicher Organisationsaufwand.",
+                "second_order": "Mögliche Verlagerung von Ressourcen innerhalb der Einrichtungen.",
+                "third_order": "Keine belastbare Aussage zu langfristigen Strukturfolgen möglich.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält keine Daten zu Aufwand, Ressourcen oder Nebenwirkungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Bildungsnutzen und der mögliche Organisationsaufwand sind in ihrer Größenordnung nicht belastbar vergleichbar; eine Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzliche demokratische Lern- und Begegnungsgelegenheiten für junge Menschen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche demokratische Lern- und Begegnungsgelegenheiten für junge Menschen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Reisen, Gebäudenutzung, Energie, Emissionen oder Umweltbildung.",
+            "reviewed_source_ids": [
+              "bayern-landesregierung-presse"
+            ],
+            "rationale": "Ein direkter planetarer Wirkpfad ist aus der Mitteilung nicht ableitbar. Je nach Ausgestaltung könnten zusätzliche Aufenthalte Ressourcen beanspruchen oder Bildungsinhalte zu Umweltfragen vermitteln; Richtung und Umfang bleiben offen.",
+            "primary_paths": [
+              {
+                "label": "Veränderung von Ressourcen- und Bildungswirkungen durch mögliche zusätzliche Nutzung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine stärkere Nutzung der Jugendherbergen könnte den Betrieb und die Anreise beeinflussen; zugleich könnten Bildungsangebote ökologische Themen einbeziehen.",
+                "recipients": [
+                  "Jugendherbergsträger",
+                  "Gäste",
+                  "lokale Umwelt"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Angaben zu Nutzung, Energie oder Inhalten ist nur ein kleiner bis offener möglicher Pfad vertretbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre zunächst die Nutzung einzelner Einrichtungen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine ökologische Veränderung wird von der Quelle nicht beschrieben.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Wiederholung möglicher Effekte sind unbekannt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Betriebliche Veränderungen wären grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Konkrete besonders verletzliche Ökosysteme werden nicht genannt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Umweltpfad ist nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle beschreibt keine ökologische Schutzgrenze oder konkrete Belastung.",
+                  "reference_frame": "ökologische Belastungsgrenzen",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Es müsste zu einer veränderten Nutzung oder ökologischen Ausrichtung der Einrichtungen kommen.",
+                "reference_space": "Jugendherbergen und ihre lokale Umgebung in Bayern",
+                "time_horizon": "bei einer möglichen späteren Umsetzung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Nutzung, Betrieb oder Bildungsinhalte könnten sich verändern.",
+                "source_support": "Die Quelle spricht über die Rolle von Jugendherbergen, nicht über Umweltwirkungen.",
+                "limitations": "Keine Betriebs-, Reise-, Energie- oder Emissionsdaten.",
+                "first_order": "Mögliche Veränderung von Nutzung und Bildungsinhalten.",
+                "second_order": "Mögliche lokale Ressourcen- oder Verkehrsfolgen.",
+                "third_order": "Keine belastbare Aussage zu regionalen oder überregionalen Umweltfolgen.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand erlaubt keine belastbare Bestimmung der Richtung oder Größenordnung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Ökologische Themen könnten in Bildungsangebote einfließen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Wenn demokratische Lernangebote auch gemeinsame Verantwortung und Umweltfragen behandelten, könnten sie entsprechende Orientierung unterstützen.",
+                "recipients": [
+                  "junge Menschen",
+                  "pädagogische Fachkräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Die Quelle nennt keine Umweltinhalte; der mögliche Pfad bleibt hypothetisch und klein."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Erreichbar wären nur Teilnehmende entsprechender Angebote.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Bildungseffekt wäre nicht unmittelbar ökologisch messbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Verhaltensänderungen sind nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Orientierungen wären grundsätzlich veränderbar und nicht irreversibel.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Betroffenheit ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bliebe auf individuelle Bildungserfahrungen begrenzt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist nicht konkret betroffen.",
+                  "reference_frame": "Umweltbildung",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": false,
+                "same_baseline": false,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Umweltbezüge müssten ausdrücklich Teil späterer Angebote werden.",
+                "reference_space": "Teilnehmende an Jugendherbergsangeboten",
+                "time_horizon": "langfristig und nur bei entsprechender Ausgestaltung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Demokratische Bildung wird mit ökologischer Verantwortung verbunden.",
+                "source_support": "Die Quelle nennt keine Umweltbildung; der Zusammenhang ist nicht belegt.",
+                "limitations": "Keine Inhalte, Methoden oder Verhaltensdaten.",
+                "first_order": "Mögliche Thematisierung ökologischer Verantwortung.",
+                "second_order": "Mögliche individuelle Orientierungsimpulse.",
+                "third_order": "Keine belastbare Aussage über aggregierte Umweltwirkungen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand belegt diesen Bildungsinhalt oder eine ökologische Wirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative ökologische Pfade sind nur hypothetisch und nicht mit Daten vergleichbar; eine Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Veränderung von Ressourcen- und Bildungswirkungen durch mögliche zusätzliche Nutzung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderung von Ressourcen- und Bildungswirkungen durch mögliche zusätzliche Nutzung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine politische Aussage über demokratische Lernorte, aber keine Teilnahme-, Kompetenz- oder Beteiligungsdaten.",
+            "reviewed_source_ids": [
+              "bayern-landesregierung-presse"
+            ],
+            "rationale": "Bei verbindlicher und zugänglicher Umsetzung könnten Jugendherbergen Räume für gemeinschaftliches Erleben und das Einüben demokratischer Fähigkeiten bereitstellen. Die Aussage selbst ist jedoch noch kein Nachweis demokratischer Wirkung.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Stärkung praktischer demokratischer Lerngelegenheiten",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Aufenthalte könnten Diskussion, gemeinschaftliche Entscheidungen und Werteerfahrung mit pädagogischer Begleitung verbinden.",
+                "recipients": [
+                  "junge Menschen",
+                  "pädagogische Fachkräfte",
+                  "lokale Gemeinschaften"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Pfad könnte über einzelne Gruppen hinausreichen, bleibt aber mangels Programm und Evaluation begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Jugendherbergen bieten potenziell vielen Gruppen Begegnungsräume.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Praktisches Einüben kann stärker wirken als reine Information, ist aber unbelegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Erfahrungen könnten nach einem Aufenthalt fortwirken, sind nicht gemessen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Demokratische Lernangebote sind institutionell veränderbar.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Junge Menschen ohne andere Begegnungsräume könnten besonders profitieren.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt demokratische Kompetenzen, aber keine belegte Institutionenänderung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Einschränkung demokratischer Rechte oder Beteiligung.",
+                  "reference_frame": "demokratische Bildung und Teilhabe",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Es braucht offene, zugängliche und pädagogisch qualifizierte Angebote mit tatsächlichen Beteiligungsmöglichkeiten.",
+                "reference_space": "Jugendherbergen als mögliche Bildungs- und Begegnungsorte in Bayern",
+                "time_horizon": "mittelfristig nach konkreter Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die beschriebene Raumfunktion wird in konkrete Lern- und Beteiligungsformate übersetzt.",
+                "source_support": "Die Quelle nennt Gemeinschaft, Werteerfahrung und das praktische Üben demokratischer Kompetenzen.",
+                "limitations": "Keine Angaben zu Methoden, Zugang, Zielgruppen, Qualität, Häufigkeit oder Ergebnissen.",
+                "first_order": "Mögliche zusätzliche Gelegenheiten, demokratische Fähigkeiten praktisch zu erproben.",
+                "second_order": "Mögliche Stärkung von Gesprächs- und Beteiligungserfahrungen.",
+                "third_order": "Mögliche Beiträge zu lokaler demokratischer Kultur, sofern die Angebote dauerhaft und inklusiv sind.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Studie und kein Umsetzungsnachweis zu demokratischen Wirkungen im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Symbolische Demokratiekommunikation ohne Umsetzung",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn die politische Bezeichnung ohne zugängliche Angebote oder Ressourcen bleibt, könnte sie Erwartungen erzeugen, ohne Beteiligungschancen zu verändern.",
+                "recipients": [
+                  "junge Menschen",
+                  "Träger",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Vertrauens- oder Erwartungseffekt ist begrenzt und nicht empirisch belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Mitteilung erreicht zunächst die politische Öffentlichkeit und Träger.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Enttäuschung ist nur bei späteren Erwartungen und Ausbleiben von Umsetzung plausibel.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Kommunikationseffekt könnte vorübergehend bleiben.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kommunikative Erwartungen können durch transparente Nachsteuerung korrigiert werden.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene Gruppen werden von der Quelle nicht ausgewiesen.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft Vertrauen und Erwartungsbildung, nicht die Institutionenordnung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wird durch die Mitteilung selbst nicht konkret verletzt.",
+                  "reference_frame": "Transparenz und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": false,
+                "same_baseline": false,
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "condition": "Es müsste eine deutliche Erwartung entstehen und anschließend keine nachvollziehbare Umsetzung erfolgen.",
+                "reference_space": "öffentliche Kommunikation über Jugendherbergen in Bayern",
+                "time_horizon": "nach einer möglichen politischen oder organisatorischen Umsetzung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Formulierung wird als konkrete Zusage verstanden.",
+                "source_support": "Die Quelle betont die künftige Rolle, nennt aber keine Zusage oder Frist.",
+                "limitations": "Keine Publikumsdaten, keine Reaktionen und kein Nachweis von Erwartungen.",
+                "first_order": "Mögliche Erwartungsbildung durch die politische Rahmung.",
+                "second_order": "Mögliche Enttäuschung bei fehlender Umsetzung.",
+                "third_order": "Keine belastbare Aussage über Vertrauen oder demokratische Beteiligung möglich.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle liefert keine Daten zu Resonanz, Erwartungen oder Vertrauensfolgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche demokratische Bildungsnutzen ist von einem schwachen Kommunikationsrisiko zu unterscheiden; eine materielle Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Mögliche Stärkung praktischer demokratischer Lerngelegenheiten",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Mögliche Stärkung praktischer demokratischer Lerngelegenheiten",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T11:42:35.199Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "bayern-landesregierung-presse",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle belegt die Veranstaltung, die ministerielle Einordnung und den beschriebenen möglichen Bildungsmechanismus; sie belegt keine eingetretene Wirkung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt einen möglichen Bildungsmechanismus, liefert aber keine Daten zu Teilnahme, Zugang, Qualität oder Wirkung.",
+          "reviewed_source_ids": [
+            "bayern-landesregierung-presse"
+          ],
+          "rationale": "Wenn Jugendherbergen tatsächlich als zugängliche Lern- und Begegnungsorte genutzt und pädagogisch ausgestattet würden, könnten junge Menschen zusätzliche Gelegenheiten für Gemeinschaft und demokratisches Lernen erhalten. Der Pfad bleibt wegen fehlender Umsetzung und Messung unsicher.",
+          "primary_paths": [
+            {
+              "label": "Zusätzliche demokratische Lern- und Begegnungsgelegenheiten für junge Menschen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine politische Schwerpunktsetzung könnte Träger dazu bewegen, Aufenthalte stärker mit gemeinschaftlichem Lernen, Wertebildung und praktischer Beteiligung zu verbinden.",
+              "recipients": [
+                "junge Menschen",
+                "pädagogische Fachkräfte",
+                "Träger von Jugendherbergen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite ist über einzelne Aufenthalte hinaus denkbar, aber ohne Programm, Finanzierung und Teilnehmerdaten begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Jugendherbergen können viele Gruppen erreichen, konkrete Reichweiten fehlen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Gemeinschaft und praktisches Lernen können prägend sein, ihre Stärke ist unbelegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Lernimpulse könnten über Aufenthalte hinausreichen, sind aber nicht gemessen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Bildungsangebote wären grundsätzlich veränderbar oder reversibel.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Junge Menschen könnten profitieren, besonders bei fehlenden anderen Begegnungsorten.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Bildung und Teilhabe, nicht nachgewiesene Strukturänderungen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Schutzgrenze oder schwere Grenzverletzung.",
+                "reference_frame": "gleichberechtigter Zugang zu Bildung und Teilhabe",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Es müssten konkrete, zugängliche und pädagogisch qualifizierte Angebote geschaffen oder ausgebaut werden.",
+              "reference_space": "Jugendherbergen und ihre Bildungsangebote in Bayern",
+              "time_horizon": "mittelfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die politische Schwerpunktsetzung wird von Trägern aufgegriffen und erreicht unterschiedliche junge Menschen.",
+              "source_support": "Die Quelle nennt Räume für Gemeinschaft, Werteerfahrung und demokratische Kompetenzen; sie belegt nicht deren Ausbau oder Wirkung.",
+              "limitations": "Keine Daten zu Nutzung, Barrierefreiheit, Kosten, sozialer Verteilung oder Lernergebnissen.",
+              "first_order": "Mögliche zusätzliche Gelegenheiten für gemeinschaftliches und demokratisches Lernen.",
+              "second_order": "Mögliche Stärkung sozialer Fähigkeiten bei wiederholter und qualitätsvoller Nutzung.",
+              "third_order": "Mögliche langfristige Teilhabeimpulse, sofern Zugang, Qualität und Kontinuität gesichert sind.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Wirkungsdaten oder Umsetzungsbelege im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Zusätzlicher organisatorischer Aufwand für Träger",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Eine stärkere Bildungsfunktion könnte zusätzliche pädagogische, räumliche und finanzielle Anforderungen erzeugen.",
+              "recipients": [
+                "Jugendherbergsträger",
+                "pädagogisches Personal"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Aufwand ist plausibel, aber weder Maßnahme noch Umfang sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wären vor allem beteiligte Träger und Einrichtungen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Mehraufwand ist derzeit nicht konkretisiert.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Zusätzliche Anforderungen könnten bei dauerhaften Angeboten anhalten.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Organisatorische Anpassungen wären grundsätzlich rücknehmbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die Quelle weist keine besonders gefährdete Trägergruppe aus.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bliebe zunächst auf die Organisationsebene begrenzt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze ist nicht belegt.",
+                "reference_frame": "organisatorische Belastbarkeit",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": false,
+              "same_baseline": false,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Nur bei tatsächlicher Ausweitung von Bildungsangeboten.",
+              "reference_space": "Träger und Einrichtungen in Bayern",
+              "time_horizon": "bei einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Bildungsangebote erfordern zusätzliche Betreuung oder Ausstattung.",
+              "source_support": "Die Quelle nennt keine Anforderungen oder Belastungen; der Pfad ist eine begrenzte Modellannahme.",
+              "limitations": "Keine Angaben zu Personal, Kosten oder Kapazitäten.",
+              "first_order": "Möglicher zusätzlicher Organisationsaufwand.",
+              "second_order": "Mögliche Verlagerung von Ressourcen innerhalb der Einrichtungen.",
+              "third_order": "Keine belastbare Aussage zu langfristigen Strukturfolgen möglich.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält keine Daten zu Aufwand, Ressourcen oder Nebenwirkungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Bildungsnutzen und der mögliche Organisationsaufwand sind in ihrer Größenordnung nicht belastbar vergleichbar; eine Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche demokratische Lern- und Begegnungsgelegenheiten für junge Menschen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzliche demokratische Lern- und Begegnungsgelegenheiten für junge Menschen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Reisen, Gebäudenutzung, Energie, Emissionen oder Umweltbildung.",
+          "reviewed_source_ids": [
+            "bayern-landesregierung-presse"
+          ],
+          "rationale": "Ein direkter planetarer Wirkpfad ist aus der Mitteilung nicht ableitbar. Je nach Ausgestaltung könnten zusätzliche Aufenthalte Ressourcen beanspruchen oder Bildungsinhalte zu Umweltfragen vermitteln; Richtung und Umfang bleiben offen.",
+          "primary_paths": [
+            {
+              "label": "Veränderung von Ressourcen- und Bildungswirkungen durch mögliche zusätzliche Nutzung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine stärkere Nutzung der Jugendherbergen könnte den Betrieb und die Anreise beeinflussen; zugleich könnten Bildungsangebote ökologische Themen einbeziehen.",
+              "recipients": [
+                "Jugendherbergsträger",
+                "Gäste",
+                "lokale Umwelt"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Angaben zu Nutzung, Energie oder Inhalten ist nur ein kleiner bis offener möglicher Pfad vertretbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre zunächst die Nutzung einzelner Einrichtungen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine ökologische Veränderung wird von der Quelle nicht beschrieben.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Wiederholung möglicher Effekte sind unbekannt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Betriebliche Veränderungen wären grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Konkrete besonders verletzliche Ökosysteme werden nicht genannt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Umweltpfad ist nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle beschreibt keine ökologische Schutzgrenze oder konkrete Belastung.",
+                "reference_frame": "ökologische Belastungsgrenzen",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Es müsste zu einer veränderten Nutzung oder ökologischen Ausrichtung der Einrichtungen kommen.",
+              "reference_space": "Jugendherbergen und ihre lokale Umgebung in Bayern",
+              "time_horizon": "bei einer möglichen späteren Umsetzung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Nutzung, Betrieb oder Bildungsinhalte könnten sich verändern.",
+              "source_support": "Die Quelle spricht über die Rolle von Jugendherbergen, nicht über Umweltwirkungen.",
+              "limitations": "Keine Betriebs-, Reise-, Energie- oder Emissionsdaten.",
+              "first_order": "Mögliche Veränderung von Nutzung und Bildungsinhalten.",
+              "second_order": "Mögliche lokale Ressourcen- oder Verkehrsfolgen.",
+              "third_order": "Keine belastbare Aussage zu regionalen oder überregionalen Umweltfolgen.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand erlaubt keine belastbare Bestimmung der Richtung oder Größenordnung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Ökologische Themen könnten in Bildungsangebote einfließen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Wenn demokratische Lernangebote auch gemeinsame Verantwortung und Umweltfragen behandelten, könnten sie entsprechende Orientierung unterstützen.",
+              "recipients": [
+                "junge Menschen",
+                "pädagogische Fachkräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Die Quelle nennt keine Umweltinhalte; der mögliche Pfad bleibt hypothetisch und klein."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Erreichbar wären nur Teilnehmende entsprechender Angebote.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Bildungseffekt wäre nicht unmittelbar ökologisch messbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Verhaltensänderungen sind nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Orientierungen wären grundsätzlich veränderbar und nicht irreversibel.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Betroffenheit ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bliebe auf individuelle Bildungserfahrungen begrenzt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist nicht konkret betroffen.",
+                "reference_frame": "Umweltbildung",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": false,
+              "same_baseline": false,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Umweltbezüge müssten ausdrücklich Teil späterer Angebote werden.",
+              "reference_space": "Teilnehmende an Jugendherbergsangeboten",
+              "time_horizon": "langfristig und nur bei entsprechender Ausgestaltung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Demokratische Bildung wird mit ökologischer Verantwortung verbunden.",
+              "source_support": "Die Quelle nennt keine Umweltbildung; der Zusammenhang ist nicht belegt.",
+              "limitations": "Keine Inhalte, Methoden oder Verhaltensdaten.",
+              "first_order": "Mögliche Thematisierung ökologischer Verantwortung.",
+              "second_order": "Mögliche individuelle Orientierungsimpulse.",
+              "third_order": "Keine belastbare Aussage über aggregierte Umweltwirkungen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand belegt diesen Bildungsinhalt oder eine ökologische Wirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative ökologische Pfade sind nur hypothetisch und nicht mit Daten vergleichbar; eine Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderung von Ressourcen- und Bildungswirkungen durch mögliche zusätzliche Nutzung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Veränderung von Ressourcen- und Bildungswirkungen durch mögliche zusätzliche Nutzung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine politische Aussage über demokratische Lernorte, aber keine Teilnahme-, Kompetenz- oder Beteiligungsdaten.",
+          "reviewed_source_ids": [
+            "bayern-landesregierung-presse"
+          ],
+          "rationale": "Bei verbindlicher und zugänglicher Umsetzung könnten Jugendherbergen Räume für gemeinschaftliches Erleben und das Einüben demokratischer Fähigkeiten bereitstellen. Die Aussage selbst ist jedoch noch kein Nachweis demokratischer Wirkung.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Stärkung praktischer demokratischer Lerngelegenheiten",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Aufenthalte könnten Diskussion, gemeinschaftliche Entscheidungen und Werteerfahrung mit pädagogischer Begleitung verbinden.",
+              "recipients": [
+                "junge Menschen",
+                "pädagogische Fachkräfte",
+                "lokale Gemeinschaften"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Pfad könnte über einzelne Gruppen hinausreichen, bleibt aber mangels Programm und Evaluation begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Jugendherbergen bieten potenziell vielen Gruppen Begegnungsräume.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Praktisches Einüben kann stärker wirken als reine Information, ist aber unbelegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Erfahrungen könnten nach einem Aufenthalt fortwirken, sind nicht gemessen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Demokratische Lernangebote sind institutionell veränderbar.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Junge Menschen ohne andere Begegnungsräume könnten besonders profitieren.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt demokratische Kompetenzen, aber keine belegte Institutionenänderung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Einschränkung demokratischer Rechte oder Beteiligung.",
+                "reference_frame": "demokratische Bildung und Teilhabe",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Es braucht offene, zugängliche und pädagogisch qualifizierte Angebote mit tatsächlichen Beteiligungsmöglichkeiten.",
+              "reference_space": "Jugendherbergen als mögliche Bildungs- und Begegnungsorte in Bayern",
+              "time_horizon": "mittelfristig nach konkreter Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die beschriebene Raumfunktion wird in konkrete Lern- und Beteiligungsformate übersetzt.",
+              "source_support": "Die Quelle nennt Gemeinschaft, Werteerfahrung und das praktische Üben demokratischer Kompetenzen.",
+              "limitations": "Keine Angaben zu Methoden, Zugang, Zielgruppen, Qualität, Häufigkeit oder Ergebnissen.",
+              "first_order": "Mögliche zusätzliche Gelegenheiten, demokratische Fähigkeiten praktisch zu erproben.",
+              "second_order": "Mögliche Stärkung von Gesprächs- und Beteiligungserfahrungen.",
+              "third_order": "Mögliche Beiträge zu lokaler demokratischer Kultur, sofern die Angebote dauerhaft und inklusiv sind.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Studie und kein Umsetzungsnachweis zu demokratischen Wirkungen im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Symbolische Demokratiekommunikation ohne Umsetzung",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn die politische Bezeichnung ohne zugängliche Angebote oder Ressourcen bleibt, könnte sie Erwartungen erzeugen, ohne Beteiligungschancen zu verändern.",
+              "recipients": [
+                "junge Menschen",
+                "Träger",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Vertrauens- oder Erwartungseffekt ist begrenzt und nicht empirisch belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Mitteilung erreicht zunächst die politische Öffentlichkeit und Träger.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Enttäuschung ist nur bei späteren Erwartungen und Ausbleiben von Umsetzung plausibel.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Kommunikationseffekt könnte vorübergehend bleiben.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kommunikative Erwartungen können durch transparente Nachsteuerung korrigiert werden.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene Gruppen werden von der Quelle nicht ausgewiesen.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft Vertrauen und Erwartungsbildung, nicht die Institutionenordnung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wird durch die Mitteilung selbst nicht konkret verletzt.",
+                "reference_frame": "Transparenz und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "bayern-landesregierung-presse"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": false,
+              "same_baseline": false,
+              "source_ids": [
+                "bayern-landesregierung-presse"
+              ],
+              "condition": "Es müsste eine deutliche Erwartung entstehen und anschließend keine nachvollziehbare Umsetzung erfolgen.",
+              "reference_space": "öffentliche Kommunikation über Jugendherbergen in Bayern",
+              "time_horizon": "nach einer möglichen politischen oder organisatorischen Umsetzung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Formulierung wird als konkrete Zusage verstanden.",
+              "source_support": "Die Quelle betont die künftige Rolle, nennt aber keine Zusage oder Frist.",
+              "limitations": "Keine Publikumsdaten, keine Reaktionen und kein Nachweis von Erwartungen.",
+              "first_order": "Mögliche Erwartungsbildung durch die politische Rahmung.",
+              "second_order": "Mögliche Enttäuschung bei fehlender Umsetzung.",
+              "third_order": "Keine belastbare Aussage über Vertrauen oder demokratische Beteiligung möglich.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle liefert keine Daten zu Resonanz, Erwartungen oder Vertrauensfolgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche demokratische Bildungsnutzen ist von einem schwachen Kommunikationsrisiko zu unterscheiden; eine materielle Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Mögliche Stärkung praktischer demokratischer Lerngelegenheiten",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Mögliche Stärkung praktischer demokratischer Lerngelegenheiten",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T11:39:35.873Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T11:00:00.000Z",
+      "last_updated": "2026-09-19T11:42:35.195Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4621234146090fa87786",
+      "case_file": null,
+      "source_published_at": "2026-09-19T11:00:00.000Z",
+      "published_at": "2026-09-19T11:42:35.195Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bayern-landesregierung-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Bayerische Staatsregierung - Pressemitteilungen",
+          "url": "https://www.bayern.de/scharf-jugendherbergen-sind-lernorte-der-demokratie-jugendarbeit-und-jugendpolitik",
+          "source_type": "official_rss",
+          "published_at": "2026-09-19T11:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-9dd7fd56217f0777",
       "title_image": {
