@@ -2,8 +2,1044 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T17:34:10.018Z",
+  "updated_at": "2026-09-19T18:08:16.705Z",
   "stories": [
+    {
+      "story_id": "wt-a6d938f4673b24e5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a6d938f4673b24e5-e91fc766c5851fa8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a6d938f4673b24e5-9bbad8d047ef52c9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a6d938f4673b24e5-c8834934e4623d01-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "zoppoten-auschwitz-zeitzeuge-berichtet-3b24e5",
+      "title": "Laut MDR berichtet ein Auschwitz-Zeitzeuge in Zoppoten aus seiner Kindheit",
+      "source_summary": "Der MDR berichtet über einen Auftritt des 92jährigen Claus Dieter Heinze in der Martinskirche in Zoppoten. Dem vorliegenden Auszug zufolge erzählte Heinze dort aus seiner Kindheit nahe dem Konzentrationslager Auschwitz.\n\nDer Bericht benennt damit einen Zeitzeugen und den thematischen Rahmen seines Besuchs. Weitere Angaben zum Ablauf, zu seinen konkreten Erinnerungen oder zur Zahl der Zuhörenden enthält der vorliegende Quellenabschnitt nicht.\n\nDie Meldung stützt sich auf eine journalistische Quelle. Eine unabhängige Bestätigung oder der vollständige Kontext des Originalberichts liegen in der vorliegenden Auswahl nicht vor.",
+      "summary": "Ein MDR-Bericht schildert einen Auftritt des 92jährigen Claus Dieter Heinze in Zoppoten. Er soll dort von seiner Kindheit nahe Auschwitz erzählt haben; weitere Einzelheiten bleiben offen.",
+      "detail_summary": "Der MDR berichtet über einen Auftritt des 92jährigen Claus Dieter Heinze in der Martinskirche in Zoppoten. Heinze erzählte dem Auszug zufolge von seiner Kindheit nahe dem Konzentrationslager Auschwitz. Der belegte Kern ist damit ein Zeitzeugenbericht vor Ort, nicht ein Nachweis über konkrete Wirkungen der Veranstaltung. Möglich ist, dass solche Erinnerungen Wissen und die Auseinandersetzung mit nationalsozialistischer Geschichte prägen. Ob dies tatsächlich geschieht, wie viele Menschen erreicht wurden und welche Folgen daraus entstehen, bleibt offen.",
+      "why_relevant": "Zeitzeugenberichte können historische Erinnerung und öffentliche Auseinandersetzung prägen; Reichweite und konkrete Wirkung der Veranstaltung sind jedoch nicht belegt.",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über den Auftritt eines Zeitzeugen in der Martinskirche in Zoppoten",
+        "evaluation_target": {
+          "label": "öffentlicher Zeitzeugenbericht",
+          "type": "communication"
+        },
+        "baseline": "Lokale Öffentlichkeit ohne diesen konkreten Bericht über den Auftritt",
+        "counterfactual": "Ohne den Bericht könnte dieser konkrete Auftritt für Teile der lokalen Öffentlichkeit weniger sichtbar sein; andere Erinnerungsangebote könnten dennoch bestehen.",
+        "reference_frame": [
+          "historische Bildung",
+          "demokratische Erinnerungskultur"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der mögliche Nutzen liegt in historischer Bildung und persönlicher Orientierung; Reichweite, Zugänglichkeit und tatsächliche Aufnahme sind nicht belegt.",
+            "planet": "Für ökologische Zustände ist kein plausibler materieller Wirkpfad aus dem vorliegenden Ereignis erkennbar; ein lokaler Ressourcen- oder Flächeneffekt ist nicht belegt.",
+            "democracy": "Der Bericht könnte Erinnerung und öffentliche Auseinandersetzung unterstützen. Eine Veränderung von Vertrauen, Beteiligung oder Institutionen ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Ein Zeitzeugenbericht wird lokal öffentlich sichtbar und kann Informationen vermitteln.",
+          "second_order": "Die Darstellung könnte Gespräche über historische Verantwortung und Erinnerung anregen, sofern sie eingeordnet und weitervermittelt wird.",
+          "third_order": "Eine nachhaltige Veränderung der Erinnerungskultur wäre nur bei wiederholter Aufnahme und institutioneller Einbettung denkbar; dafür gibt es keinen Beleg.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Es liegen keine Angaben zur Reichweite, Publikumsreaktion oder Anschlusskommunikation vor.",
+            "Eine einzelne journalistische Darstellung belegt keine Veränderung von Wissen oder Verhalten.",
+            "Für planetare Wirkungen fehlt ein belastbarer materieller Mechanismus."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert; ihre Unabhängigkeit ist nicht verifiziert. Eine unabhängige Bestätigung liegt nicht vor.",
+          "institutional_status": "Es handelt sich um einen berichteten öffentlichen Auftritt, nicht um eine staatliche Maßnahme, einen Beschluss oder eine Rechtsänderung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine gemessene Bildungswirkung. Modellierbar bleibt nur ein begrenzter, bedingter Informations- und Gesprächsimpuls.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Ein persönlicher Zeitzeugenbericht kann historische Orientierung und Gesprächsanlässe schaffen. Der mögliche Nutzen ist lokal und von Zugang, Einordnung sowie Aufnahme durch das Publikum abhängig.",
+            "primary_paths": [
+              {
+                "label": "Zeitzeugenbericht kann historische Orientierung vermitteln",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Persönliche Erinnerungen machen historische Erfahrung anschaulich und können bei Zuhörenden Interesse an weiterer Auseinandersetzung auslösen.",
+                "recipients": [
+                  "Besucherinnen und Besucher der Veranstaltung",
+                  "lokale Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Reichweite ist lokal; weder Publikumsgröße noch Anschlussaktivitäten sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Auftritt ist als lokales Ereignis in Zoppoten belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein Bericht kann einen begrenzten Informationsimpuls setzen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Wirkung ist ohne Anschlussvermittlung nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Mögliche Wissensimpulse sind grundsätzlich korrigierbar und reversibel.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die Wirkung kann bei einzelnen Zuhörenden unterschiedlich ausfallen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine institutionelle oder strukturelle Veränderung ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Quellenabschnitt belegt keine konkrete Schutzgrenze oder eingetretene Verletzung.",
+                  "reference_frame": "historische Bildung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Bericht wird zugänglich und historisch eingeordnet aufgenommen.",
+                "reference_space": "Zoppoten und erreichbare lokale Öffentlichkeit",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es gibt Zuhörende, die den Bericht aufnehmen und weiter darüber sprechen.",
+                "source_support": "Die Quelle belegt den Auftritt und das Thema, nicht die Wirkung auf Wissen oder Verhalten.",
+                "limitations": "Publikumsgröße, Reaktionen und Anschlusskommunikation fehlen.",
+                "first_order": "Möglicher Informationsgewinn durch persönliche Erinnerung.",
+                "second_order": "Mögliche Gespräche über historische Verantwortung.",
+                "third_order": "Eine längerfristige Veränderung lokaler Erinnerungskultur bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten in der gelieferten Quelle; Eintritt und Reichweite bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein materieller negativer Gegenpfad ist nicht belegt; der positive Pfad bleibt wegen geringer Reichweite und unsicherer Aufnahme begrenzt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zeitzeugenbericht kann historische Orientierung vermitteln",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zeitzeugenbericht kann historische Orientierung vermitteln",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle enthält keinen belastbaren ökologischen Mechanismus und keine Umweltdaten. Ein materieller planetarer Pfad ist für diesen lokalen Kommunikationsanlass vernachlässigbar.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der Bericht betrifft einen Zeitzeugenauftritt. Aus dem belegten Ereigniskern ergibt sich kein plausibler materieller Einfluss auf Ökosysteme, Emissionen oder Ressourcen.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller planetarer Wirkpfad aus dem Auftritt",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Der Quellenabschnitt beschreibt eine Veranstaltung und historische Erzählung, aber keine ökologische Maßnahme oder Zustandsänderung.",
+                "recipients": [
+                  "lokale Umwelt"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den definierten lokalen Kommunikationsanlass ist kein materieller planetarer Effekt plausibel belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite oder Betroffenheit ist belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Belastung wird beschrieben.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist aus dem Auszug ableitbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung wird berichtet.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders betroffene ökologische Empfängergruppe ist erkennbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systemmechanismus ist im Ereignis enthalten.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird durch den Quellenabschnitt weder berührt noch beschrieben.",
+                  "reference_frame": "ökologische Integrität",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Keine zusätzliche, im Quellenbestand nicht belegte ökologische Maßnahme wird angenommen.",
+                "reference_space": "Zoppoten und die unmittelbar beschriebene Veranstaltung",
+                "time_horizon": "unbestimmt",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der Bewertungsgegenstand bleibt der berichtete Auftritt und wird nicht um unbelegte Folgeaktivitäten erweitert.",
+                "source_support": "Die Quelle belegt einen Zeitzeugenauftritt, aber keinen planetaren Mechanismus.",
+                "limitations": "Ökologische Daten und Veranstaltungsdetails fehlen vollständig.",
+                "first_order": "Keine materiell erkennbare ökologische Zustandsänderung.",
+                "second_order": "Keine belastbare ökologische Anschlussfolge modellierbar.",
+                "third_order": "Keine systemische planetare Folge aus dem vorliegenden Ereigniskern ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine planetare Wirkungsinformation in der gelieferten Quelle; der Pfad wird begründet als vernachlässigbar eingeordnet.",
+                "negligibility_rationale": "Im beschriebenen Ereignis gibt es weder eine ökologische Maßnahme noch einen belegten Ressourcen-, Emissions- oder Ökosystemmechanismus.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen planetaren Pfad, der eine Abwägung erfordern würde."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem Auftritt",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem Auftritt",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine demokratische Wirkung. Möglich bleibt ein begrenzter Beitrag zu informierter historischer Öffentlichkeit, sofern die Darstellung kontextualisiert wird.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Öffentliche Erinnerung an Verfolgungsgeschichte kann demokratische Selbstverständigung unterstützen. Ein einzelner lokaler Bericht verändert jedoch nicht nachweislich Institutionen, Beteiligung oder Korrekturfähigkeit.",
+            "primary_paths": [
+              {
+                "label": "Erinnerungsbericht kann öffentliche historische Selbstverständigung unterstützen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Sichtbarkeit einer persönlichen Erinnerung kann Gespräche über Verantwortung, Menschenwürde und den Umgang mit Geschichte anregen.",
+                "recipients": [
+                  "lokale Öffentlichkeit",
+                  "Teilnehmende der Veranstaltung"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Beitrag ist lokal und indirekt; institutionelle Anschlusswirkungen sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle weist auf einen örtlichen Auftritt in Zoppoten hin.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der mögliche demokratische Impuls bleibt auf Information und Gespräch begrenzt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Wirkung hängt von weiterer Vermittlung ab.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche Deutungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Historische Bildung kann besonders für wenig informierte Gruppen relevant sein, deren Erreichbarkeit aber unbekannt ist.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad kann Diskurse berühren, erreicht aber keine belegte institutionelle Ebene.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                  "reference_frame": "demokratische Erinnerungskultur und historische Bildung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Darstellung wird wahrheitsgemäß, kontextualisiert und für unterschiedliche Teile der Öffentlichkeit zugänglich vermittelt.",
+                "reference_space": "lokale Öffentlichkeit in und um Zoppoten",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Veranstaltung oder ihre Berichterstattung wird wahrgenommen und regt weitere Auseinandersetzung an.",
+                "source_support": "Die Quelle belegt den Auftritt und sein historisches Thema, nicht eine demokratische Folge.",
+                "limitations": "Es fehlen Daten zu Reichweite, Rezeption, Kontroversen und Anschlusskommunikation.",
+                "first_order": "Mögliche öffentliche Information über persönliche Kriegserfahrung und NS-Verfolgung.",
+                "second_order": "Mögliche Gespräche über Verantwortung und demokratische Werte.",
+                "third_order": "Eine längerfristige Stärkung demokratischer Erinnerungskultur bleibt eine unbestätigte Möglichkeit.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Evidenz für Veränderungen demokratischer Einstellungen oder Institutionen; nur ein indirekter, lokaler Potenzialpfad bleibt modellierbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein gleichwertiger materieller Gegenpfad ist nicht belegt; der mögliche positive Beitrag bleibt dennoch klein und unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Erinnerungsbericht kann öffentliche historische Selbstverständigung unterstützen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Erinnerungsbericht kann öffentliche historische Selbstverständigung unterstützen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T18:10:21.557Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über den Auftritt von Claus Dieter Heinze in Zoppoten und seine Erzählung aus der Kindheit nahe Auschwitz."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine gemessene Bildungswirkung. Modellierbar bleibt nur ein begrenzter, bedingter Informations- und Gesprächsimpuls.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Ein persönlicher Zeitzeugenbericht kann historische Orientierung und Gesprächsanlässe schaffen. Der mögliche Nutzen ist lokal und von Zugang, Einordnung sowie Aufnahme durch das Publikum abhängig.",
+          "primary_paths": [
+            {
+              "label": "Zeitzeugenbericht kann historische Orientierung vermitteln",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Persönliche Erinnerungen machen historische Erfahrung anschaulich und können bei Zuhörenden Interesse an weiterer Auseinandersetzung auslösen.",
+              "recipients": [
+                "Besucherinnen und Besucher der Veranstaltung",
+                "lokale Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Reichweite ist lokal; weder Publikumsgröße noch Anschlussaktivitäten sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Auftritt ist als lokales Ereignis in Zoppoten belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein Bericht kann einen begrenzten Informationsimpuls setzen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Wirkung ist ohne Anschlussvermittlung nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Mögliche Wissensimpulse sind grundsätzlich korrigierbar und reversibel.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die Wirkung kann bei einzelnen Zuhörenden unterschiedlich ausfallen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine institutionelle oder strukturelle Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Quellenabschnitt belegt keine konkrete Schutzgrenze oder eingetretene Verletzung.",
+                "reference_frame": "historische Bildung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Bericht wird zugänglich und historisch eingeordnet aufgenommen.",
+              "reference_space": "Zoppoten und erreichbare lokale Öffentlichkeit",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es gibt Zuhörende, die den Bericht aufnehmen und weiter darüber sprechen.",
+              "source_support": "Die Quelle belegt den Auftritt und das Thema, nicht die Wirkung auf Wissen oder Verhalten.",
+              "limitations": "Publikumsgröße, Reaktionen und Anschlusskommunikation fehlen.",
+              "first_order": "Möglicher Informationsgewinn durch persönliche Erinnerung.",
+              "second_order": "Mögliche Gespräche über historische Verantwortung.",
+              "third_order": "Eine längerfristige Veränderung lokaler Erinnerungskultur bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten in der gelieferten Quelle; Eintritt und Reichweite bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein materieller negativer Gegenpfad ist nicht belegt; der positive Pfad bleibt wegen geringer Reichweite und unsicherer Aufnahme begrenzt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zeitzeugenbericht kann historische Orientierung vermitteln",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zeitzeugenbericht kann historische Orientierung vermitteln",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle enthält keinen belastbaren ökologischen Mechanismus und keine Umweltdaten. Ein materieller planetarer Pfad ist für diesen lokalen Kommunikationsanlass vernachlässigbar.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der Bericht betrifft einen Zeitzeugenauftritt. Aus dem belegten Ereigniskern ergibt sich kein plausibler materieller Einfluss auf Ökosysteme, Emissionen oder Ressourcen.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller planetarer Wirkpfad aus dem Auftritt",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Der Quellenabschnitt beschreibt eine Veranstaltung und historische Erzählung, aber keine ökologische Maßnahme oder Zustandsänderung.",
+              "recipients": [
+                "lokale Umwelt"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den definierten lokalen Kommunikationsanlass ist kein materieller planetarer Effekt plausibel belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite oder Betroffenheit ist belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Belastung wird beschrieben.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist aus dem Auszug ableitbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung wird berichtet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders betroffene ökologische Empfängergruppe ist erkennbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systemmechanismus ist im Ereignis enthalten.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird durch den Quellenabschnitt weder berührt noch beschrieben.",
+                "reference_frame": "ökologische Integrität",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Keine zusätzliche, im Quellenbestand nicht belegte ökologische Maßnahme wird angenommen.",
+              "reference_space": "Zoppoten und die unmittelbar beschriebene Veranstaltung",
+              "time_horizon": "unbestimmt",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der Bewertungsgegenstand bleibt der berichtete Auftritt und wird nicht um unbelegte Folgeaktivitäten erweitert.",
+              "source_support": "Die Quelle belegt einen Zeitzeugenauftritt, aber keinen planetaren Mechanismus.",
+              "limitations": "Ökologische Daten und Veranstaltungsdetails fehlen vollständig.",
+              "first_order": "Keine materiell erkennbare ökologische Zustandsänderung.",
+              "second_order": "Keine belastbare ökologische Anschlussfolge modellierbar.",
+              "third_order": "Keine systemische planetare Folge aus dem vorliegenden Ereigniskern ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine planetare Wirkungsinformation in der gelieferten Quelle; der Pfad wird begründet als vernachlässigbar eingeordnet.",
+              "negligibility_rationale": "Im beschriebenen Ereignis gibt es weder eine ökologische Maßnahme noch einen belegten Ressourcen-, Emissions- oder Ökosystemmechanismus.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen planetaren Pfad, der eine Abwägung erfordern würde."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem Auftritt",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein materieller planetarer Wirkpfad aus dem Auftritt",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine demokratische Wirkung. Möglich bleibt ein begrenzter Beitrag zu informierter historischer Öffentlichkeit, sofern die Darstellung kontextualisiert wird.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Öffentliche Erinnerung an Verfolgungsgeschichte kann demokratische Selbstverständigung unterstützen. Ein einzelner lokaler Bericht verändert jedoch nicht nachweislich Institutionen, Beteiligung oder Korrekturfähigkeit.",
+          "primary_paths": [
+            {
+              "label": "Erinnerungsbericht kann öffentliche historische Selbstverständigung unterstützen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Sichtbarkeit einer persönlichen Erinnerung kann Gespräche über Verantwortung, Menschenwürde und den Umgang mit Geschichte anregen.",
+              "recipients": [
+                "lokale Öffentlichkeit",
+                "Teilnehmende der Veranstaltung"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Beitrag ist lokal und indirekt; institutionelle Anschlusswirkungen sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle weist auf einen örtlichen Auftritt in Zoppoten hin.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der mögliche demokratische Impuls bleibt auf Information und Gespräch begrenzt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Wirkung hängt von weiterer Vermittlung ab.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche Deutungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Historische Bildung kann besonders für wenig informierte Gruppen relevant sein, deren Erreichbarkeit aber unbekannt ist.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad kann Diskurse berühren, erreicht aber keine belegte institutionelle Ebene.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                "reference_frame": "demokratische Erinnerungskultur und historische Bildung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Darstellung wird wahrheitsgemäß, kontextualisiert und für unterschiedliche Teile der Öffentlichkeit zugänglich vermittelt.",
+              "reference_space": "lokale Öffentlichkeit in und um Zoppoten",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Veranstaltung oder ihre Berichterstattung wird wahrgenommen und regt weitere Auseinandersetzung an.",
+              "source_support": "Die Quelle belegt den Auftritt und sein historisches Thema, nicht eine demokratische Folge.",
+              "limitations": "Es fehlen Daten zu Reichweite, Rezeption, Kontroversen und Anschlusskommunikation.",
+              "first_order": "Mögliche öffentliche Information über persönliche Kriegserfahrung und NS-Verfolgung.",
+              "second_order": "Mögliche Gespräche über Verantwortung und demokratische Werte.",
+              "third_order": "Eine längerfristige Stärkung demokratischer Erinnerungskultur bleibt eine unbestätigte Möglichkeit.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Evidenz für Veränderungen demokratischer Einstellungen oder Institutionen; nur ein indirekter, lokaler Potenzialpfad bleibt modellierbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein gleichwertiger materieller Gegenpfad ist nicht belegt; der mögliche positive Beitrag bleibt dennoch klein und unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Erinnerungsbericht kann öffentliche historische Selbstverständigung unterstützen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Erinnerungsbericht kann öffentliche historische Selbstverständigung unterstützen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T18:08:16.705Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T18:02:36.000Z",
+      "last_updated": "2026-09-19T18:10:21.553Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-154ed78f21fe0681c853",
+      "case_file": null,
+      "source_published_at": "2026-09-19T18:02:36.000Z",
+      "published_at": "2026-09-19T18:10:21.553Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/saale-orla/video-1651844.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T18:02:36.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3f12ded8ac7dd617",
       "title_image": {
