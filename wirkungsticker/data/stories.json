@@ -2,8 +2,1700 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T07:50:17.575Z",
+  "updated_at": "2026-09-19T08:05:37.212Z",
   "stories": [
+    {
+      "story_id": "wt-3b0b1dd2daa327ab",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-3b0b1dd2daa327ab-83d44978531838c4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-3b0b1dd2daa327ab-a4b560a88b134c35-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-3b0b1dd2daa327ab-35288a42407419e5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-ankundigung-von-donald-trump-cnn-journalisten-arbeiten-trotz-verbots-ab-sofort-weit-a327ab",
+      "title": "Laut DER SPIEGEL: CNN-Journalisten arbeiten trotz angekündigtem Zutrittsverbot weiter",
+      "source_summary": "DER SPIEGEL berichtet, US-Präsident Donald Trump habe Journalisten dreier Medien den Zugang zum Weißen Haus verboten. CNN wertet dies laut dem Bericht als Angriff auf die Pressefreiheit.\n\nDer Beitrag beschreibt zugleich, dass CNN-Journalisten trotz der Ankündigung weiter im Weißen Haus arbeiten. Damit unterscheidet die Quelle zwischen dem angekündigten Verbot und seiner bisher offenbar nicht vollständig belegten Umsetzung.\n\nDie vorliegende Quelle bestätigt weder unabhängig die Zugangssperre noch deren genaue rechtliche oder organisatorische Grundlage. Offen bleibt außerdem, welche Medien neben CNN betroffen sind und ob sich der Zugang tatsächlich verändert hat.",
+      "summary": "DER SPIEGEL berichtet über ein angekündigtes Zutrittsverbot für Journalisten dreier Medien und über die fortgesetzte Arbeit von CNN im Weißen Haus. Ob die Zugangssperre umgesetzt wurde, bleibt offen.",
+      "detail_summary": "DER SPIEGEL berichtet, US-Präsident Donald Trump habe Journalisten dreier Medien den Zugang zum Weißen Haus verboten oder dies angekündigt. CNN bezeichnete den Vorgang laut Quelle als Angriff auf die Pressefreiheit. Zugleich sollen CNN-Journalisten weiter im Weißen Haus arbeiten. Der Bericht markiert damit einen möglichen Konflikt zwischen angekündigter Zugangsbeschränkung und laufender Berichterstattung. Unabhängig bestätigt sind weder die Umsetzung noch die genaue Reichweite des Verbots.",
+      "why_relevant": "Der Vorgang kann den Zugang von Medien zu politischen Informationen und damit öffentliche Kontrolle berühren. Die Quelle belegt jedoch vor allem eine Ankündigung und eine zugeschriebene Bewertung, nicht die vollständige Umsetzung.",
+      "topic": [
+        "Arbeit",
+        "Demokratie"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über ein angekündigtes Zutrittsverbot für Journalisten dreier Medien und die fortgesetzte Arbeit von CNN-Journalisten im Weißen Haus",
+        "evaluation_target": {
+          "label": "Zugang von Journalisten zum Weißen Haus und daraus mögliche Informations- und Kontrollpfade",
+          "type": "event"
+        },
+        "baseline": "Vor dem angekündigten Zutrittsverbot bestehender journalistischer Zugang und bestehende öffentliche Kontrolle durch Berichterstattung",
+        "counterfactual": "Ohne die Ankündigung würde der bisherige Zugang als Vergleichszustand fortbestehen; Änderungen durch andere Faktoren sind nicht belegt.",
+        "reference_frame": [
+          "Pressefreiheit",
+          "öffentlicher Informationszugang",
+          "demokratische Rechenschaft"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein erschwerter Zugang könnte die Informationslage für Bürgerinnen und Bürger sowie Arbeitsbedingungen betroffener Journalisten beeinflussen; konkrete Schäden sind nicht belegt.",
+            "planet": "Für ökologische Zustände ist kein plausibler materieller Wirkpfad aus dem berichteten Zugangskonflikt erkennbar; eine vernachlässigbare Wirkung im betrachteten Raum und Zeitraum wird begründet modelliert.",
+            "democracy": "Ein Zugangskonflikt könnte journalistische Kontrolle und öffentliche Rechenschaft berühren. Die mögliche Wirkung hängt von Umsetzung, Dauer und alternativen Informationswegen ab."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Ankündigung könnte Zugang und Arbeitsabläufe betroffener Journalisten verändern; zugleich wird weitergehende Arbeit von CNN berichtet.",
+          "second_order": "Bei tatsächlicher Einschränkung könnte die Öffentlichkeit Informationen aus dem Weißen Haus später, selektiver oder über weniger direkte Wege erhalten.",
+          "third_order": "Eine dauerhafte Zugangspolitik könnte die institutionelle Beziehung zwischen Regierung und Presse und damit demokratische Korrekturfähigkeit belasten; dieser Pfad ist nicht eingetreten nachgewiesen.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle berichtet, dass CNN-Journalisten trotz der Ankündigung weiterarbeiten.",
+            "Es liegt nur eine journalistische Quelle vor; eine unabhängige Bestätigung der Umsetzung fehlt.",
+            "Eine Ankündigung allein belegt noch keine dauerhafte Zugangsbeschränkung."
+          ],
+          "source_independence": "Es liegt eine einzige journalistische Quelle vor. Eine unabhängige Herkunft oder Bestätigung ist nicht nachgewiesen.",
+          "institutional_status": "Berichtet ist eine Ankündigung beziehungsweise ein behauptetes Verbot; die konkrete Umsetzung und rechtliche Grundlage bleiben offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Recherche im gelieferten Bestand findet keine unabhängigen Daten zu Arbeitsbedingungen, Zugang oder konkreten Belastungen. Bewertet wird deshalb nur der bedingte Informations- und Arbeitszugangspfad.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Die fortgesetzte Arbeit von CNN-Journalisten könnte den unmittelbaren Informationszugang und die berufliche Handlungsfähigkeit betroffener Redaktionen stützen. Dem steht als Gegenpfad eine mögliche Belastung durch ein tatsächlich umgesetztes Verbot gegenüber; die positive Richtung wird hier nur für den berichteten Fortsetzungsaspekt modelliert.",
+            "primary_paths": [
+              {
+                "label": "Fortgesetzte journalistische Arbeit erhält Informationszugang",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Wenn CNN-Journalisten trotz der Ankündigung weiter im Weißen Haus arbeiten können, bleiben Beobachtung und Weitergabe von Informationen teilweise möglich.",
+                "recipients": [
+                  "CNN-Journalisten",
+                  "Medienpublikum"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Wirkung betrifft zunächst eine Redaktion und deren Publikum; sie könnte bei längerer Dauer zunehmen, ist aber durch die unsichere Umsetzung begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wären vor allem eine Redaktion und ihr Publikum.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Einschränkung oder Verbesserung der Arbeitsbedingungen ist nicht gemessen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer der fortgesetzten Arbeit und des Konflikts bleibt offen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugang und Arbeitsabläufe könnten grundsätzlich wieder verändert werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Journalistische Arbeit kann von Zugangsvorgaben institutionell abhängig sein.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der unmittelbare Pfad reicht zunächst nicht über Informationszugang hinaus.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung eines menschlichen Schutzguts ist nicht belegt; der Pfad betrifft potenziellen Informations- und Arbeitszugang.",
+                  "reference_frame": "Arbeits- und Informationszugang",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "CNN-Journalisten müssen tatsächlich weiter Zugang und Arbeitsmöglichkeiten im Weißen Haus haben.",
+                "reference_space": "Weiße Haus-Berichterstattung und deren Publikum",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Weiterarbeit ermöglicht weiterhin Beobachtung und Veröffentlichung; alternative Informationswege werden nicht bewertet.",
+                "source_support": "Die Quelle berichtet von weiterer Arbeit trotz Ankündigung, belegt aber keine konkrete Reichweite des Zugangs.",
+                "limitations": "Keine unabhängige Bestätigung, keine Daten zu Arbeitsbedingungen oder Publikumseffekten.",
+                "first_order": "Weiterarbeit könnte den unmittelbaren Informationszugang der Redaktion erhalten.",
+                "second_order": "Das Publikum könnte weiterhin Informationen aus dem Weißen Haus erhalten.",
+                "third_order": "Eine mögliche Stabilisierung journalistischer Arbeitsfähigkeit könnte institutionelle Kontrolle indirekt stützen; der Pfad ist unsicher.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Folgenquelle im Bestand; der Pfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Belastung durch tatsächliche Zugangsbeschränkung",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Ein tatsächlich durchgesetztes Verbot könnte Arbeitsabläufe und unmittelbaren Zugang der betroffenen Journalisten erschweren.",
+                "recipients": [
+                  "CNN-Journalisten",
+                  "betroffene Redaktionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Belastung wäre zunächst auf betroffene Redaktionen konzentriert; Reichweite und Dauer sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der berichtete Vorgang betrifft Journalisten dreier Medien.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Zugangsentzug könnte Arbeitsabläufe spürbar erschweren.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer eines möglichen Verbots ist unbekannt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugangsvorgaben könnten grundsätzlich zurückgenommen werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Redaktionen wären von den Zugangsvorgaben abhängig.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte über Arbeitsabläufe die Informationsversorgung beeinflussen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete eingetretene Schädigung ist nicht belegt; entscheidend wäre erst eine nachgewiesene dauerhafte Sperre.",
+                  "reference_frame": "journalistischer Zugang und Arbeitsfähigkeit",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Das angekündigte Verbot müsste tatsächlich umgesetzt und auf CNN ausgeweitet werden.",
+                "reference_space": "Weiße Haus-Berichterstattung",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Zugang ist für die fragliche Berichterstattung wesentlich und es bestehen keine gleichwertigen Ersatzwege.",
+                "source_support": "Die Quelle berichtet ein angekündigtes Verbot, aber keine vollständig belegte Umsetzung.",
+                "limitations": "Keine unabhängigen Angaben zu Ausmaß, Dauer oder Ersatzwegen.",
+                "first_order": "Zugang und Arbeitsabläufe könnten erschwert werden.",
+                "second_order": "Die unmittelbare Informationsversorgung des Publikums könnte eingeschränkt werden.",
+                "third_order": "Bei Verstetigung könnte sich die Kontrollbeziehung zwischen Regierung und Presse verschieben; dies ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand erlaubt keine Prüfung der tatsächlichen Zugangshürden; der Pfad bleibt konditional.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Die Fortsetzung der Arbeit ist berichtet, während die negative Wirkung nur aus einer möglichen Umsetzung des angekündigten Verbots folgt; beide Pfade sind daher nicht gleich belastbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Fortgesetzte journalistische Arbeit erhält Informationszugang",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Fortgesetzte journalistische Arbeit erhält Informationszugang",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung findet keinen ökologischen Mechanismus oder Messwert im gelieferten Bestand. Im betrachteten Raum und Zeitraum wird eine materielle planetare Wirkung begründet als vernachlässigbar modelliert.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Der berichtete Konflikt betrifft Medienzugang und politische Kommunikation. Ohne zusätzliche Belege ist keine materielle direkte oder indirekte Veränderung von Emissionen, Ressourcen oder Ökosystemen ableitbar.",
+            "primary_paths": [
+              {
+                "label": "Keine materielle planetare Zustandsänderung aus dem Medienzugangskonflikt",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Der Gegenstand verändert nach dem vorliegenden Beleg weder unmittelbar Umweltressourcen noch eine umweltbezogene Regel oder Infrastruktur.",
+                "recipients": [
+                  "Ökosysteme",
+                  "Umweltressourcen"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im gelieferten Sachverhalt ist kein plausibler materieller Umweltpfad erkennbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine betroffene ökologische Reichweite ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Belastung ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist erkennbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders verletzlichen Ökosysteme werden betroffen beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systemmechanismus ist im Beleg enthalten.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch den berichteten Sachverhalt berührt.",
+                  "reference_frame": "ökologische Zustände und Umweltressourcen",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Es liegen keine zusätzlichen Maßnahmen oder Folgeereignisse mit Umweltbezug vor.",
+                "reference_space": "im Bericht beschriebener Medienzugangskonflikt",
+                "time_horizon": "betrachteter Nachrichtenzeitraum",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Bewertung bleibt auf den konkret berichteten Zugangskonflikt begrenzt.",
+                "source_support": "Die Quelle enthält ausschließlich Angaben zu Medienzugang, CNN-Bewertung und Ankündigung.",
+                "limitations": "Keine Umwelt- oder Emissionsdaten; indirekte politische Langzeitpfade werden nicht konstruiert.",
+                "first_order": "Keine materielle Umweltveränderung ist plausibel belegt.",
+                "second_order": "Keine ökologische Folge lässt sich aus dem Quellenbestand ableiten.",
+                "third_order": "Kein belastbarer ökologischer Systempfad ist modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Folgenquelle im Bestand; die Wissensgrenze bestätigt den vernachlässigbaren Pfad.",
+                "negligibility_rationale": "Im berichteten Gegenstand fehlen Handlung, Ressourceneinsatz oder Regeländerung mit erkennbarem Umweltbezug; deshalb ist eine materielle Wirkung im betrachteten Raum und Zeitraum praktisch vernachlässigbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist kein vergleichbarer materieller positiver oder negativer Umweltpfad belegt; die neutrale Einordnung beruht auf dem fehlenden Mechanismus."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Keine materielle planetare Zustandsänderung aus dem Medienzugangskonflikt",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine materielle planetare Zustandsänderung aus dem Medienzugangskonflikt",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Bestand belegt keine unabhängige Umsetzung und keine Messung demokratischer Folgen. Er erlaubt jedoch zwei bedingte, gegenläufige Pfade: mögliche Einschränkung journalistischer Kontrolle und mögliche Begrenzung dieser Einschränkung durch die fortgesetzte Arbeit von CNN.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Ein tatsächlich umgesetztes Zutrittsverbot könnte den Zugang zu Regierungsinformationen und damit öffentliche Kontrolle schwächen. Die berichtete Weiterarbeit von CNN könnte diesen Effekt begrenzen oder sichtbar machen. Die Richtung bleibt deshalb abhängig von Umsetzung und Dauer.",
+            "primary_paths": [
+              {
+                "label": "Angekündigte Zugangsbeschränkung könnte journalistische Kontrolle schwächen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn das angekündigte Verbot umgesetzt wird, könnten betroffene Journalisten weniger direkten Zugang zu Informationen und politischen Vorgängen im Weißen Haus haben.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "betroffene Medien",
+                  "demokratische Kontrollinstitutionen"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der Pfad kann von redaktioneller Ebene auf öffentliche Rechenschaft ausstrahlen, bleibt aber wegen der unklaren Umsetzung breit unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Informationszugang kann über Medien ein breiteres Publikum erreichen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ein tatsächlicher Ausschluss könnte direkten Zugang zu Regierungsinformationen erheblich erschweren.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Eine länger anhaltende Sperre könnte Kontrollroutinen dauerhaft belasten; die Dauer ist offen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Institutionelle Routinen könnten verändert, aber grundsätzlich wieder korrigiert werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Öffentliche Kontrolle ist verwundbar, wenn direkte Informationswege wegfallen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der mögliche Pfad reicht von Zugang über Berichterstattung bis zu demokratischer Rechenschaft.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Eine nachgewiesene dauerhafte Sperre eines relevanten Informationszugangs könnte demokratische Korrekturfähigkeit und Pressefreiheit materiell berühren.",
+                  "reference_frame": "Pressefreiheit und demokratische Rechenschaft",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die Ankündigung muss in eine tatsächliche, dauerhafte oder wiederholte Zugangsbeschränkung übergehen.",
+                "reference_space": "politische Berichterstattung aus dem Weißen Haus",
+                "time_horizon": "Kurz- bis mittelfristig; bei Verstetigung längerfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Direkter Zugang trägt wesentlich zur unabhängigen Berichterstattung bei und wird nicht vollständig durch andere Quellen ersetzt.",
+                "source_support": "Die Quelle berichtet ein Verbot beziehungsweise eine Ankündigung und ordnet es über CNN der Pressefreiheit zu; sie belegt keine demokratische Folgewirkung.",
+                "limitations": "Keine unabhängige Bestätigung, keine Daten zu Zugang, Berichterstattung oder institutioneller Korrektur.",
+                "first_order": "Ein tatsächlicher Ausschluss könnte journalistischen Zugang beschneiden.",
+                "second_order": "Die Öffentlichkeit könnte weniger direkte oder weniger vielfältige Informationen erhalten.",
+                "third_order": "Bei Verstetigung könnte die demokratische Rechenschaft gegenüber Medien und Öffentlichkeit geschwächt werden.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quelle oder Wirkungsstudie im Bestand; die demokratische Wirkung bleibt ein bedingter Modellpfad.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              },
+              {
+                "label": "Fortgesetzte Arbeit kann Kontrollzugang erhalten",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Wenn CNN trotz der Ankündigung weiterarbeiten kann, bleiben journalistische Beobachtung und öffentliche Berichterstattung zumindest teilweise möglich.",
+                "recipients": [
+                  "CNN-Journalisten",
+                  "Öffentlichkeit",
+                  "demokratische Kontrollinstitutionen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Fortsetzung kann den negativen Zugangspfad begrenzen und über Berichterstattung institutionelle Kontrolle stützen; tatsächlicher Umfang und Dauer sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Berichterstattung kann ein breites Publikum und weitere Medien erreichen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Umfang der tatsächlichen Weiterarbeit und ihres Zugangs ist nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Eine fortgesetzte Arbeit könnte den Effekt über den unmittelbaren Moment hinaus tragen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Erhaltene Berichterstattung kann institutionelle Routinen stützen, ohne irreversibel zu sein.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Journalistische Kontrolle bleibt gegenüber Zugangsentscheidungen institutionell verwundbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad kann Zugang, öffentliche Information und Rechenschaft miteinander verbinden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Fortsetzung der Arbeit kann eine mögliche Schutzgrenze stützen, ersetzt aber keine unabhängige Prüfung der tatsächlichen Zugangslage.",
+                  "reference_frame": "Pressefreiheit und demokratische Rechenschaft",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die berichtete Weiterarbeit muss tatsächlich Zugang zu relevanten Informationen und eine fortgesetzte Veröffentlichung ermöglichen.",
+                "reference_space": "politische Berichterstattung aus dem Weißen Haus",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichtete Arbeit umfasst mehr als eine formale Anwesenheit und führt zu zugänglicher Berichterstattung.",
+                "source_support": "Die Quelle berichtet, CNN-Journalisten arbeiteten weiter; sie misst weder Zugangsumfang noch Kontrollwirkung.",
+                "limitations": "Keine unabhängige Bestätigung und keine Daten über Veröffentlichungen, Reichweite oder institutionelle Folgen.",
+                "first_order": "Journalistische Beobachtung könnte trotz der Ankündigung fortbestehen.",
+                "second_order": "Öffentliche Kontrolle könnte teilweise aufrechterhalten werden.",
+                "third_order": "Die Fortsetzung könnte eine Normalisierung eines vollständigen Ausschlusses erschweren; dieser Effekt ist hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Der Bestand enthält keinen unabhängigen Beleg für den Umfang der Weiterarbeit; der positive Pfad bleibt konditional.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Konfliktrhetorik könnte Medienkonfrontation normalisieren",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Die öffentliche Gegenüberstellung von angekündigtem Verbot und Pressefreiheitskritik könnte den Konflikt zwischen Regierung und Medien weiter zuspitzen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Medien",
+                  "politische Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein möglicher Diskurseffekt kann über den Einzelfall hinausreichen, ist aber weder beobachtet noch unabhängig belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle beschreibt einen prominenten politischen Medienkonflikt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Formulierung als Angriff auf die Pressefreiheit kann Konfliktwahrnehmung verstärken.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine längerfristige Normalisierung ist möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Diskursive Deutungen können durch spätere Informationen korrigiert werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Vertrauen in Medien und Institutionen kann auf zugespitzte Konflikte reagieren.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der mögliche Pfad betrifft öffentliche Deutungen und institutionelle Beziehungen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein Diskurseffekt ist keine nachgewiesene Verletzung demokratischer Schutzgüter.",
+                  "reference_frame": "öffentliche Medien- und Institutionenwahrnehmung",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Der Konflikt müsste wiederholt und von weiteren Akteuren oder Medien aufgegriffen werden.",
+                "reference_space": "öffentlicher Diskurs über Regierung und Presse",
+                "time_horizon": "Mittelfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung und prominente Platzierung könnten Deutungen stabilisieren.",
+                "source_support": "Die Quelle enthält die zugeschriebene CNN-Bewertung, aber keinen Nachweis eines Diskurseffekts.",
+                "limitations": "Keine Publikumsdaten, keine unabhängige Medienvergleichsanalyse und kein beobachteter Vertrauenseffekt.",
+                "first_order": "Der Konflikt könnte als Streit über Pressefreiheit wahrgenommen werden.",
+                "second_order": "Wiederholung könnte politische Lagerbildung oder Misstrauen verstärken.",
+                "third_order": "Eine Normalisierung von Zugangskonflikten könnte demokratische Kontrollbeziehungen belasten; dies bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für Wiederholung, Resonanz oder Normalisierung im Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Es gibt zwei vergleichbare, gegenläufige Hauptpfade: eine mögliche Schwächung journalistischer Kontrolle durch Umsetzung und eine mögliche Begrenzung durch fortgesetzte Arbeit. Die Schutzgrenze bleibt für den negativen Pfad konditional, weil die Umsetzung nicht bestätigt ist."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Angekündigte Zugangsbeschränkung könnte journalistische Kontrolle schwächen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Angekündigte Zugangsbeschränkung könnte journalistische Kontrolle schwächen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T08:08:25.271Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über die Ankündigung eines Zutrittsverbots, die CNN-Bewertung und die fortgesetzte Arbeit von CNN-Journalisten."
+          },
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "counter_evidence"
+            ],
+            "supported_claim": "Der Bericht nennt, dass es bisher offenbar bei einer Ankündigung blieb; dies begrenzt die Aussage über eine bereits umgesetzte Sperre."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Recherche im gelieferten Bestand findet keine unabhängigen Daten zu Arbeitsbedingungen, Zugang oder konkreten Belastungen. Bewertet wird deshalb nur der bedingte Informations- und Arbeitszugangspfad.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Die fortgesetzte Arbeit von CNN-Journalisten könnte den unmittelbaren Informationszugang und die berufliche Handlungsfähigkeit betroffener Redaktionen stützen. Dem steht als Gegenpfad eine mögliche Belastung durch ein tatsächlich umgesetztes Verbot gegenüber; die positive Richtung wird hier nur für den berichteten Fortsetzungsaspekt modelliert.",
+          "primary_paths": [
+            {
+              "label": "Fortgesetzte journalistische Arbeit erhält Informationszugang",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Wenn CNN-Journalisten trotz der Ankündigung weiter im Weißen Haus arbeiten können, bleiben Beobachtung und Weitergabe von Informationen teilweise möglich.",
+              "recipients": [
+                "CNN-Journalisten",
+                "Medienpublikum"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Wirkung betrifft zunächst eine Redaktion und deren Publikum; sie könnte bei längerer Dauer zunehmen, ist aber durch die unsichere Umsetzung begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wären vor allem eine Redaktion und ihr Publikum.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Einschränkung oder Verbesserung der Arbeitsbedingungen ist nicht gemessen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer der fortgesetzten Arbeit und des Konflikts bleibt offen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugang und Arbeitsabläufe könnten grundsätzlich wieder verändert werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Journalistische Arbeit kann von Zugangsvorgaben institutionell abhängig sein.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der unmittelbare Pfad reicht zunächst nicht über Informationszugang hinaus.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung eines menschlichen Schutzguts ist nicht belegt; der Pfad betrifft potenziellen Informations- und Arbeitszugang.",
+                "reference_frame": "Arbeits- und Informationszugang",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "CNN-Journalisten müssen tatsächlich weiter Zugang und Arbeitsmöglichkeiten im Weißen Haus haben.",
+              "reference_space": "Weiße Haus-Berichterstattung und deren Publikum",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Weiterarbeit ermöglicht weiterhin Beobachtung und Veröffentlichung; alternative Informationswege werden nicht bewertet.",
+              "source_support": "Die Quelle berichtet von weiterer Arbeit trotz Ankündigung, belegt aber keine konkrete Reichweite des Zugangs.",
+              "limitations": "Keine unabhängige Bestätigung, keine Daten zu Arbeitsbedingungen oder Publikumseffekten.",
+              "first_order": "Weiterarbeit könnte den unmittelbaren Informationszugang der Redaktion erhalten.",
+              "second_order": "Das Publikum könnte weiterhin Informationen aus dem Weißen Haus erhalten.",
+              "third_order": "Eine mögliche Stabilisierung journalistischer Arbeitsfähigkeit könnte institutionelle Kontrolle indirekt stützen; der Pfad ist unsicher.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Folgenquelle im Bestand; der Pfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Belastung durch tatsächliche Zugangsbeschränkung",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Ein tatsächlich durchgesetztes Verbot könnte Arbeitsabläufe und unmittelbaren Zugang der betroffenen Journalisten erschweren.",
+              "recipients": [
+                "CNN-Journalisten",
+                "betroffene Redaktionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Belastung wäre zunächst auf betroffene Redaktionen konzentriert; Reichweite und Dauer sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der berichtete Vorgang betrifft Journalisten dreier Medien.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Zugangsentzug könnte Arbeitsabläufe spürbar erschweren.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer eines möglichen Verbots ist unbekannt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugangsvorgaben könnten grundsätzlich zurückgenommen werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Redaktionen wären von den Zugangsvorgaben abhängig.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte über Arbeitsabläufe die Informationsversorgung beeinflussen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete eingetretene Schädigung ist nicht belegt; entscheidend wäre erst eine nachgewiesene dauerhafte Sperre.",
+                "reference_frame": "journalistischer Zugang und Arbeitsfähigkeit",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Das angekündigte Verbot müsste tatsächlich umgesetzt und auf CNN ausgeweitet werden.",
+              "reference_space": "Weiße Haus-Berichterstattung",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Zugang ist für die fragliche Berichterstattung wesentlich und es bestehen keine gleichwertigen Ersatzwege.",
+              "source_support": "Die Quelle berichtet ein angekündigtes Verbot, aber keine vollständig belegte Umsetzung.",
+              "limitations": "Keine unabhängigen Angaben zu Ausmaß, Dauer oder Ersatzwegen.",
+              "first_order": "Zugang und Arbeitsabläufe könnten erschwert werden.",
+              "second_order": "Die unmittelbare Informationsversorgung des Publikums könnte eingeschränkt werden.",
+              "third_order": "Bei Verstetigung könnte sich die Kontrollbeziehung zwischen Regierung und Presse verschieben; dies ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand erlaubt keine Prüfung der tatsächlichen Zugangshürden; der Pfad bleibt konditional.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Die Fortsetzung der Arbeit ist berichtet, während die negative Wirkung nur aus einer möglichen Umsetzung des angekündigten Verbots folgt; beide Pfade sind daher nicht gleich belastbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Fortgesetzte journalistische Arbeit erhält Informationszugang",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Fortgesetzte journalistische Arbeit erhält Informationszugang",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung findet keinen ökologischen Mechanismus oder Messwert im gelieferten Bestand. Im betrachteten Raum und Zeitraum wird eine materielle planetare Wirkung begründet als vernachlässigbar modelliert.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Der berichtete Konflikt betrifft Medienzugang und politische Kommunikation. Ohne zusätzliche Belege ist keine materielle direkte oder indirekte Veränderung von Emissionen, Ressourcen oder Ökosystemen ableitbar.",
+          "primary_paths": [
+            {
+              "label": "Keine materielle planetare Zustandsänderung aus dem Medienzugangskonflikt",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Der Gegenstand verändert nach dem vorliegenden Beleg weder unmittelbar Umweltressourcen noch eine umweltbezogene Regel oder Infrastruktur.",
+              "recipients": [
+                "Ökosysteme",
+                "Umweltressourcen"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im gelieferten Sachverhalt ist kein plausibler materieller Umweltpfad erkennbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine betroffene ökologische Reichweite ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Belastung ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist erkennbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders verletzlichen Ökosysteme werden betroffen beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systemmechanismus ist im Beleg enthalten.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch den berichteten Sachverhalt berührt.",
+                "reference_frame": "ökologische Zustände und Umweltressourcen",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Es liegen keine zusätzlichen Maßnahmen oder Folgeereignisse mit Umweltbezug vor.",
+              "reference_space": "im Bericht beschriebener Medienzugangskonflikt",
+              "time_horizon": "betrachteter Nachrichtenzeitraum",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Bewertung bleibt auf den konkret berichteten Zugangskonflikt begrenzt.",
+              "source_support": "Die Quelle enthält ausschließlich Angaben zu Medienzugang, CNN-Bewertung und Ankündigung.",
+              "limitations": "Keine Umwelt- oder Emissionsdaten; indirekte politische Langzeitpfade werden nicht konstruiert.",
+              "first_order": "Keine materielle Umweltveränderung ist plausibel belegt.",
+              "second_order": "Keine ökologische Folge lässt sich aus dem Quellenbestand ableiten.",
+              "third_order": "Kein belastbarer ökologischer Systempfad ist modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Folgenquelle im Bestand; die Wissensgrenze bestätigt den vernachlässigbaren Pfad.",
+              "negligibility_rationale": "Im berichteten Gegenstand fehlen Handlung, Ressourceneinsatz oder Regeländerung mit erkennbarem Umweltbezug; deshalb ist eine materielle Wirkung im betrachteten Raum und Zeitraum praktisch vernachlässigbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist kein vergleichbarer materieller positiver oder negativer Umweltpfad belegt; die neutrale Einordnung beruht auf dem fehlenden Mechanismus."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine materielle planetare Zustandsänderung aus dem Medienzugangskonflikt",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Keine materielle planetare Zustandsänderung aus dem Medienzugangskonflikt",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Bestand belegt keine unabhängige Umsetzung und keine Messung demokratischer Folgen. Er erlaubt jedoch zwei bedingte, gegenläufige Pfade: mögliche Einschränkung journalistischer Kontrolle und mögliche Begrenzung dieser Einschränkung durch die fortgesetzte Arbeit von CNN.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Ein tatsächlich umgesetztes Zutrittsverbot könnte den Zugang zu Regierungsinformationen und damit öffentliche Kontrolle schwächen. Die berichtete Weiterarbeit von CNN könnte diesen Effekt begrenzen oder sichtbar machen. Die Richtung bleibt deshalb abhängig von Umsetzung und Dauer.",
+          "primary_paths": [
+            {
+              "label": "Angekündigte Zugangsbeschränkung könnte journalistische Kontrolle schwächen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn das angekündigte Verbot umgesetzt wird, könnten betroffene Journalisten weniger direkten Zugang zu Informationen und politischen Vorgängen im Weißen Haus haben.",
+              "recipients": [
+                "Öffentlichkeit",
+                "betroffene Medien",
+                "demokratische Kontrollinstitutionen"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der Pfad kann von redaktioneller Ebene auf öffentliche Rechenschaft ausstrahlen, bleibt aber wegen der unklaren Umsetzung breit unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Informationszugang kann über Medien ein breiteres Publikum erreichen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ein tatsächlicher Ausschluss könnte direkten Zugang zu Regierungsinformationen erheblich erschweren.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Eine länger anhaltende Sperre könnte Kontrollroutinen dauerhaft belasten; die Dauer ist offen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Institutionelle Routinen könnten verändert, aber grundsätzlich wieder korrigiert werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Öffentliche Kontrolle ist verwundbar, wenn direkte Informationswege wegfallen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der mögliche Pfad reicht von Zugang über Berichterstattung bis zu demokratischer Rechenschaft.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Eine nachgewiesene dauerhafte Sperre eines relevanten Informationszugangs könnte demokratische Korrekturfähigkeit und Pressefreiheit materiell berühren.",
+                "reference_frame": "Pressefreiheit und demokratische Rechenschaft",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die Ankündigung muss in eine tatsächliche, dauerhafte oder wiederholte Zugangsbeschränkung übergehen.",
+              "reference_space": "politische Berichterstattung aus dem Weißen Haus",
+              "time_horizon": "Kurz- bis mittelfristig; bei Verstetigung längerfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Direkter Zugang trägt wesentlich zur unabhängigen Berichterstattung bei und wird nicht vollständig durch andere Quellen ersetzt.",
+              "source_support": "Die Quelle berichtet ein Verbot beziehungsweise eine Ankündigung und ordnet es über CNN der Pressefreiheit zu; sie belegt keine demokratische Folgewirkung.",
+              "limitations": "Keine unabhängige Bestätigung, keine Daten zu Zugang, Berichterstattung oder institutioneller Korrektur.",
+              "first_order": "Ein tatsächlicher Ausschluss könnte journalistischen Zugang beschneiden.",
+              "second_order": "Die Öffentlichkeit könnte weniger direkte oder weniger vielfältige Informationen erhalten.",
+              "third_order": "Bei Verstetigung könnte die demokratische Rechenschaft gegenüber Medien und Öffentlichkeit geschwächt werden.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quelle oder Wirkungsstudie im Bestand; die demokratische Wirkung bleibt ein bedingter Modellpfad.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            },
+            {
+              "label": "Fortgesetzte Arbeit kann Kontrollzugang erhalten",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Wenn CNN trotz der Ankündigung weiterarbeiten kann, bleiben journalistische Beobachtung und öffentliche Berichterstattung zumindest teilweise möglich.",
+              "recipients": [
+                "CNN-Journalisten",
+                "Öffentlichkeit",
+                "demokratische Kontrollinstitutionen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Fortsetzung kann den negativen Zugangspfad begrenzen und über Berichterstattung institutionelle Kontrolle stützen; tatsächlicher Umfang und Dauer sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Berichterstattung kann ein breites Publikum und weitere Medien erreichen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Umfang der tatsächlichen Weiterarbeit und ihres Zugangs ist nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Eine fortgesetzte Arbeit könnte den Effekt über den unmittelbaren Moment hinaus tragen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Erhaltene Berichterstattung kann institutionelle Routinen stützen, ohne irreversibel zu sein.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Journalistische Kontrolle bleibt gegenüber Zugangsentscheidungen institutionell verwundbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad kann Zugang, öffentliche Information und Rechenschaft miteinander verbinden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Fortsetzung der Arbeit kann eine mögliche Schutzgrenze stützen, ersetzt aber keine unabhängige Prüfung der tatsächlichen Zugangslage.",
+                "reference_frame": "Pressefreiheit und demokratische Rechenschaft",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die berichtete Weiterarbeit muss tatsächlich Zugang zu relevanten Informationen und eine fortgesetzte Veröffentlichung ermöglichen.",
+              "reference_space": "politische Berichterstattung aus dem Weißen Haus",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichtete Arbeit umfasst mehr als eine formale Anwesenheit und führt zu zugänglicher Berichterstattung.",
+              "source_support": "Die Quelle berichtet, CNN-Journalisten arbeiteten weiter; sie misst weder Zugangsumfang noch Kontrollwirkung.",
+              "limitations": "Keine unabhängige Bestätigung und keine Daten über Veröffentlichungen, Reichweite oder institutionelle Folgen.",
+              "first_order": "Journalistische Beobachtung könnte trotz der Ankündigung fortbestehen.",
+              "second_order": "Öffentliche Kontrolle könnte teilweise aufrechterhalten werden.",
+              "third_order": "Die Fortsetzung könnte eine Normalisierung eines vollständigen Ausschlusses erschweren; dieser Effekt ist hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Der Bestand enthält keinen unabhängigen Beleg für den Umfang der Weiterarbeit; der positive Pfad bleibt konditional.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Konfliktrhetorik könnte Medienkonfrontation normalisieren",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Die öffentliche Gegenüberstellung von angekündigtem Verbot und Pressefreiheitskritik könnte den Konflikt zwischen Regierung und Medien weiter zuspitzen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Medien",
+                "politische Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein möglicher Diskurseffekt kann über den Einzelfall hinausreichen, ist aber weder beobachtet noch unabhängig belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle beschreibt einen prominenten politischen Medienkonflikt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Formulierung als Angriff auf die Pressefreiheit kann Konfliktwahrnehmung verstärken.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine längerfristige Normalisierung ist möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Diskursive Deutungen können durch spätere Informationen korrigiert werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Vertrauen in Medien und Institutionen kann auf zugespitzte Konflikte reagieren.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der mögliche Pfad betrifft öffentliche Deutungen und institutionelle Beziehungen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein Diskurseffekt ist keine nachgewiesene Verletzung demokratischer Schutzgüter.",
+                "reference_frame": "öffentliche Medien- und Institutionenwahrnehmung",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Der Konflikt müsste wiederholt und von weiteren Akteuren oder Medien aufgegriffen werden.",
+              "reference_space": "öffentlicher Diskurs über Regierung und Presse",
+              "time_horizon": "Mittelfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung und prominente Platzierung könnten Deutungen stabilisieren.",
+              "source_support": "Die Quelle enthält die zugeschriebene CNN-Bewertung, aber keinen Nachweis eines Diskurseffekts.",
+              "limitations": "Keine Publikumsdaten, keine unabhängige Medienvergleichsanalyse und kein beobachteter Vertrauenseffekt.",
+              "first_order": "Der Konflikt könnte als Streit über Pressefreiheit wahrgenommen werden.",
+              "second_order": "Wiederholung könnte politische Lagerbildung oder Misstrauen verstärken.",
+              "third_order": "Eine Normalisierung von Zugangskonflikten könnte demokratische Kontrollbeziehungen belasten; dies bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für Wiederholung, Resonanz oder Normalisierung im Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Es gibt zwei vergleichbare, gegenläufige Hauptpfade: eine mögliche Schwächung journalistischer Kontrolle durch Umsetzung und eine mögliche Begrenzung durch fortgesetzte Arbeit. Die Schutzgrenze bleibt für den negativen Pfad konditional, weil die Umsetzung nicht bestätigt ist."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Angekündigte Zugangsbeschränkung könnte journalistische Kontrolle schwächen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Angekündigte Zugangsbeschränkung könnte journalistische Kontrolle schwächen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T08:05:37.212Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T07:57:00.000Z",
+      "last_updated": "2026-09-19T08:08:25.265Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-1ee152f85c3f312f9fb6",
+      "case_file": null,
+      "source_published_at": "2026-09-19T07:57:00.000Z",
+      "published_at": "2026-09-19T08:08:25.265Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das angekündigte Zutrittsverbot umgesetzt wird und welche konkreten Zugangsregeln gelten, sollte anhand einer unabhängigen Bestätigung geprüft werden.",
+          "source_id": "spiegel-schlagzeilen",
+          "measurable_indicator": "Bestätigung einer tatsächlichen Zugangsbeschränkung oder einer fortgesetzten Arbeit von CNN-Journalisten im Weißen Haus",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a9611fefe89663ac",
+          "announced_at": "2026-09-19T07:57:00.000Z",
+          "follow_up_date": "2026-09-26T08:08:25.265Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/nach-ankuendigung-von-donald-trump-cnn-journalisten-arbeiten-trotz-verbots-ab-sofort-weiter-im-weissen-haus-a-aae8214d-d027-4e12-81df-def92d70c14e",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T07:57:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-232754c767f45ee7",
       "title_image": {
