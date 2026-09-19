@@ -2,8 +2,1694 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T19:42:41.463Z",
+  "updated_at": "2026-09-19T19:54:13.054Z",
   "stories": [
+    {
+      "story_id": "wt-4c7c567c4274b9f4",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4c7c567c4274b9f4-2ace50829e88d9f0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4c7c567c4274b9f4-5d80a038b629a381-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4c7c567c4274b9f4-02c54c17f767917d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "dreissigjahriger-krieg-das-massaker-von-magdeburg-74b9f4",
+      "title": "Laut stern: 1631 fallen Tausende Söldner in Magdeburg ein",
+      "source_summary": "Der stern berichtet über das Massaker von Magdeburg im Dreißigjährigen Krieg. Nach der vorliegenden Zusammenfassung bleibt die Stadt zunächst verschont, während der Krieg wütet.\n\nFür 1631 beschreibt die Quelle den Einfall von Tausenden Söldnern in die Stadt. Als Darstellung des stern schildert sie außerdem Folter und Morde.\n\nDie Akte enthält nur eine journalistische Quelle und keinen unabhängigen Originalbeleg. Deshalb bleiben Umfang, Ablauf, Verantwortlichkeiten und die genaue Einordnung der Gewalt in dieser Fassung quellengebunden und teilweise offen.",
+      "summary": "Der stern berichtet, dass 1631 Tausende Söldner in Magdeburg einfielen und die Quelle Folter sowie Morde beschreibt. Die Darstellung ist wegen der einzigen journalistischen Quelle vorläufig; Umfang und Ablauf bleiben in der Akte begrenzt belegt.",
+      "detail_summary": "Der stern schildert das Massaker von Magdeburg im Dreißigjährigen Krieg. Nach der vorliegenden Darstellung blieb die Stadt zunächst verschont, bevor 1631 Tausende Söldner einfielen. Die Quelle beschreibt Folter und Morde, belegt damit aber nicht unabhängig den genauen Umfang, Ablauf oder die Verantwortlichkeiten. Für Menschen liegt ein potenziell schwerer Gewaltpfad nahe, dessen historische Folgen hier nicht nachgewiesen werden. Mögliche Wirkungen auf Umwelt und demokratische Ordnung bleiben indirekte Modellannahmen.",
+      "why_relevant": "Die Meldung betrifft ein historisches Massaker mit potenziell weitreichenden Folgen für Menschen und kollektive Erinnerung. Der Nachrichtenwert liegt in der vorliegenden Darstellung; die Evidenzbasis bleibt auf eine journalistische Quelle begrenzt.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Journalistische Darstellung des Massakers von Magdeburg im Dreißigjährigen Krieg",
+        "evaluation_target": {
+          "label": "historisches Massaker von Magdeburg",
+          "type": "event"
+        },
+        "baseline": "Magdeburg bleibt zunächst verschont; anschließend wird ein Einfall bewaffneter Söldner beschrieben.",
+        "counterfactual": "Ohne den beschriebenen Einfall wären die unmittelbar durch dieses Ereignis ausgelösten Gewalt- und Zerstörungspfade in dieser Form nicht entstanden; konkrete Unterschiede sind nicht messbar.",
+        "reference_frame": [
+          "Schutz von Menschen vor Gewalt",
+          "historische Quellenkritik",
+          "Agenda 2030/SDG 16 als analytischer Referenzrahmen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der stärkste bedingte Pfad betrifft mögliche Gewalt gegen Menschen, soziale Zerstörung und langfristige Verletzlichkeit. Opferzahlen und eingetretene Schäden sind nicht unabhängig belegt.",
+            "planet": "Ein indirekter Pfad über kriegsbedingte Zerstörung und Ressourcenverbrauch ist denkbar, aber durch die Quelle nicht konkret belegt. Eine materielle ökologische Wirkung bleibt deshalb offen.",
+            "democracy": "Die Darstellung könnte historische Erinnerung, Feindbilder und spätere Deutungen beeinflussen. Eine konkrete Veränderung demokratischer Institutionen oder Entscheidungen ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der bedingte unmittelbare Pfad reicht von einem bewaffneten Einfall zu möglicher Gewalt und Zerstörung.",
+          "second_order": "Daraus könnten soziale Desintegration, Flucht und langfristige Erinnerungseffekte entstehen; diese Folgen sind quellenmäßig nicht nachgewiesen.",
+          "third_order": "Über historische Deutungen könnten Narrative über Krieg und politische Gewalt weiterwirken, doch ein konkreter systemischer Verlauf bleibt offen.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Akte enthält keine unabhängige Bestätigung, keine Opferzahlen und keine Messdaten zu sozialen, ökologischen oder politischen Folgen.",
+            "Die Quelle beschreibt das Ereignis, belegt aber nicht automatisch seine späteren Wirkungen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Herkunft vor; die Unabhängigkeit ist nicht verifiziert. Die Quelle trägt den Ereigniskern, nicht den Nachweis der Wirkungsfolgen.",
+          "institutional_status": "Historisches Ereignis; aus der Akte lässt sich kein heutiger Rechts- oder Institutionenstatus ableiten."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt schwere Gewalt, liefert aber keine unabhängige Bestätigung, Opferzahlen oder belastbare Daten zu sozialen Langzeitfolgen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Bei zutreffender Darstellung könnte der bewaffnete Einfall unmittelbar schwere Schäden für Menschen und Gemeinschaften verursacht haben. Die Richtung ist wegen der beschriebenen Gewalt plausibel, die konkrete Tragweite bleibt jedoch unsicher.",
+            "primary_paths": [
+              {
+                "label": "Bewaffneter Einfall könnte schwere Gewalt gegen Menschen und soziale Zerstörung auslösen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Der beschriebene Einfall von Söldnern könnte über Folter, Mord und Zerstörung die Sicherheit und soziale Stabilität der Stadtbevölkerung beeinträchtigen.",
+                "recipients": [
+                  "Stadtbevölkerung",
+                  "betroffene Familien",
+                  "lokale Gemeinschaften"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 3,
+                  "upper": 5,
+                  "rationale": "Die mögliche Intensität ist wegen der beschriebenen Gewalt hoch; Reichweite und Dauer bleiben ohne Opfer- und Zerstörungsdaten unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Der Einfall betrifft nach der Quelle eine ganze Stadt, genaue Reichweite bleibt offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Die Quelle beschreibt Folter und Morde als besonders grausame Gewalt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ein zeitlicher Verlauf der Gewalt wird in der Akte nicht ausreichend beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Mögliche Todesfälle und schwere Verletzungen wären für Betroffene irreversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 5,
+                    "rationale": "Zivilbevölkerung wäre einem bewaffneten Einfall und direkter Gewalt besonders schutzlos ausgesetzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Soziale Zerstörung und Verlust könnten über den unmittelbaren Angriff hinauswirken.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der Schutz von Menschen vor Folter und Mord wäre bei zutreffender Darstellung eine maßgebliche Schutzgrenze.",
+                  "reference_frame": "Schutz von Menschen vor schwerer Gewalt",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die journalistische Darstellung des Einfalls und der Gewalt historisch zutrifft.",
+                "reference_space": "Magdeburg und die unmittelbar betroffene Bevölkerung",
+                "time_horizon": "unmittelbar bis langfristig nach dem beschriebenen Ereignis",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Ein bewaffneter Einfall mit Folter und Mord beeinträchtigt typischerweise Sicherheit, Gesundheit und soziale Stabilität.",
+                "source_support": "Die Quelle beschreibt den Einfall sowie Folter und Morde; sie belegt nicht die genaue Opferzahl oder alle Folgewirkungen.",
+                "limitations": "Es fehlen unabhängige historische Belege, Opferzahlen, Angaben zur Zerstörung und Daten zur Erholung der Stadtgesellschaft.",
+                "first_order": "Mögliche unmittelbare Gewalt, Verletzung und Tötung von Menschen.",
+                "second_order": "Mögliche Flucht, soziale Desintegration und langfristige Unsicherheit, sofern die Gewalt umfangreich war.",
+                "third_order": "Mögliche generationenübergreifende Erinnerung und institutionelle Verarbeitung; konkrete Verläufe sind offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche Quelle in der Akte; die Wissensgrenze betrifft Opferzahl, Umfang, Dauer und Langzeitfolgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 24,
+                  "divisor": 6,
+                  "raw": 4,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Historische Gewaltdarstellung könnte vereinfachende Feindbilder verstärken",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Die wiederholte Darstellung extremer Gewalt könnte komplexe historische Verantwortlichkeiten verkürzen und kollektive Zuschreibungen fördern.",
+                "recipients": [
+                  "spätere Öffentlichkeiten",
+                  "Bildungs- und Erinnerungskontexte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Kommunikationspfad ist indirekt und nicht mit Publikums- oder Wirkungsdaten belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Eine einzelne journalistische Darstellung kann begrenzte öffentliche Reichweite haben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die drastische Beschreibung könnte emotional stark wirken, ihre tatsächliche Wirkung ist offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine anhaltende Wirkung wäre von Wiederholung und Kontext abhängig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fehlinterpretationen könnten grundsätzlich durch bessere Einordnung korrigiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Rezipienten mit geringer historischer Einordnung könnten anfälliger für Verkürzungen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Narrative berühren, belegt aber keine institutionelle Veränderung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze ist für diesen indirekten Kommunikationspfad nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt wiederholte oder kontextarme Rezeption voraus, für die keine Daten vorliegen.",
+                "reference_space": "öffentliche historische Kommunikation",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Historische Gewaltdarstellungen können bei fehlender Einordnung vereinfachende Narrative begünstigen.",
+                "source_support": "Die Quelle liefert eine drastische historische Darstellung, aber keinen Publikums- oder Wirkungsnachweis.",
+                "limitations": "Keine Daten zu Reichweite, Wiederholung, Rezeption oder politischer Nutzung.",
+                "first_order": "Mögliche stärkere Aufmerksamkeit für das Ereignis.",
+                "second_order": "Mögliche Verkürzung historischer Verantwortungszuschreibungen.",
+                "third_order": "Mögliche Verfestigung von Erinnerungsnarrativen; Eintritt und Ausmaß sind offen.",
+                "research_pass": "second_pass",
+                "research_result": "Es liegen keine Daten zur Rezeption oder zu Wiederholungseffekten vor; der Pfad bleibt eine begrenzte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht belegt; die mögliche schwere Gewalt dominiert die Einordnung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Bewaffneter Einfall könnte schwere Gewalt gegen Menschen und soziale Zerstörung auslösen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bewaffneter Einfall könnte schwere Gewalt gegen Menschen und soziale Zerstörung auslösen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Zerstörung, Ressourcenverbrauch, Landschaft oder ökologischen Folgen; der ökologische Pfad bleibt hypothetisch.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Kriegerische Gewalt könnte Gebäude, Versorgung und lokale Ressourcen belastet haben. Die vorliegende Quelle belegt jedoch keine konkrete ökologische Veränderung, weshalb die Richtung und Tragweite nur als vorsichtige Modellannahme geführt werden.",
+            "primary_paths": [
+              {
+                "label": "Kriegsbedingte Gewalt könnte lokale Zerstörung und Ressourcenbelastung verstärken",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein bewaffneter Einfall könnte über Zerstörung, Unterbrechung von Versorgung und erhöhten Ressourcenverbrauch lokale Umweltbelastungen auslösen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "städtische Infrastruktur",
+                  "betroffene Bevölkerung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Ohne Angaben zu Gebäuden, Versorgung oder Landschaft ist nur eine kleine bis mittlere lokale Wirkung plausibel modellierbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ein lokaler Einfall könnte das Stadtgebiet betreffen, räumliche Grenzen sind offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt keine konkrete ökologische Zerstörung oder Belastungsstärke.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Versorgungs- und Wiederaufbauprobleme könnten länger anhalten, sind aber unbelegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Lokale Belastungen wären teilweise reversibel, konkrete Schäden sind nicht dokumentiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Verwundbarkeit der betroffenen Räume wird nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Krieg könnte Versorgung und Landnutzung koppeln, ein solcher Verlauf ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird von der Quelle nicht beschrieben.",
+                  "reference_frame": null,
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der Einfall materielle Zerstörung oder Versorgungsunterbrechungen verursachte.",
+                "reference_space": "Magdeburg und das unmittelbar betroffene Umland",
+                "time_horizon": "während des Krieges und im möglichen Wiederaufbau",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Bewaffnete Konflikte können lokale Infrastruktur und Ressourcen beanspruchen; diese allgemeine Annahme ersetzt keinen Ereignisbeleg.",
+                "source_support": "Die Quelle belegt den Einfall und die Gewaltbeschreibung, nicht Umwelt- oder Zerstörungsfolgen.",
+                "limitations": "Keine Daten zu Gebäuden, Versorgung, Landnutzung, Abfällen, Emissionen oder langfristiger ökologischer Erholung.",
+                "first_order": "Mögliche lokale Beschädigung von Infrastruktur und Versorgung.",
+                "second_order": "Mögliche Ressourcenknappheit und Wiederaufbauvorgänge.",
+                "third_order": "Mögliche längerfristige Veränderung lokaler Nutzung; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Evidenz in der gelieferten Quelle; eine belastbare Richtung oder Größenordnung kann nicht bestimmt werden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Versorgungsunterbrechungen könnten lokale Umweltbelastungen verlagern",
+                "direction": "open",
+                "type": "side_effect",
+                "mechanism": "Flucht und kriegsbedingte Neuordnung könnten Belastungen zwischen Stadt und Umland verlagern.",
+                "recipients": [
+                  "Stadt und Umland",
+                  "lokale Versorgungssysteme"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt und vollständig von unbelegten Annahmen über Versorgung und Flucht abhängig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Verlagerung wäre wahrscheinlich lokal begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt keine Umweltintensität der möglichen Verlagerung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Fortbestand einer Verlagerung sind nicht dokumentiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ohne belegte materielle Veränderung ist keine irreversible Wirkung begründbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Verwundbarkeit von Ökosystemen ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer Systemeffekt ist mangels Umwelt- und Versorgungsdaten nicht belegbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete ökologische Grenzverletzung belegt.",
+                  "reference_frame": null,
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt Flucht, Versorgungsunterbrechung und messbare Umweltverlagerung voraus.",
+                "reference_space": "Magdeburg und mögliches Umland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kriegsbedingte soziale Bewegungen können Versorgungsdruck räumlich verschieben.",
+                "source_support": "Die Quelle nennt keine Flucht, Versorgungslage oder Umweltveränderung.",
+                "limitations": "Der gesamte Pfad ist mangels Ereignis- und Wirkungsdaten spekulativ.",
+                "first_order": "Mögliche Verschiebung von Versorgungsbedarfen.",
+                "second_order": "Mögliche lokale Belastung von Ressourcen.",
+                "third_order": "Kein belastbarer systemischer Umweltpfad ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle liefert keinen Beleg für Flucht, Versorgung oder ökologische Verlagerung; der Pfad bleibt offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist kein vergleichbarer positiver ökologischer Hauptpfad belegt; die negative Einordnung bleibt wegen fehlender Umweltdaten schwach."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Kriegsbedingte Gewalt könnte lokale Zerstörung und Ressourcenbelastung verstärken",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Kriegsbedingte Gewalt könnte lokale Zerstörung und Ressourcenbelastung verstärken",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle oder demokratische Folge. Möglich ist nur ein indirekter Erinnerungspfad über historische Gewaltdeutungen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Massaker könnte langfristig beeinflussen, wie Krieg, Gewalt und politische Ordnung erinnert werden. Eine konkrete Wirkung auf demokratische Institutionen oder Korrekturfähigkeit ist aus der Einzelquelle nicht ableitbar.",
+            "primary_paths": [
+              {
+                "label": "Die Gewaltdarstellung könnte historische politische Erinnerung und Narrative prägen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Beschreibung extremer Gewalt könnte über Erinnerung, Bildung und öffentliche Deutung Kategorien von Krieg, Feindschaft und politischer Ordnung beeinflussen.",
+                "recipients": [
+                  "spätere Öffentlichkeiten",
+                  "Erinnerungsinstitutionen",
+                  "politische Bildungsräume"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein langfristiger Erinnerungspfad ist möglich, aber ohne Rezeptions- oder Institutionsdaten nur begrenzt einzuschätzen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle kann historische Deutung erreichen, die tatsächliche Verbreitung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Beschreibung von Folter und Mord kann politische und moralische Deutungen stark berühren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Erinnerungsnarrative könnten lange fortwirken, konkrete Dauer ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Narrative können durch spätere Forschung und Einordnung verändert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Öffentliche Erinnerung kann bei fehlendem Kontext für Vereinfachungen anfällig sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Historische Deutungen könnten Diskurse über Gewalt und Ordnung beeinflussen, nicht aber automatisch Institutionen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Veränderung ist nicht belegt.",
+                  "reference_frame": "demokratische Korrekturfähigkeit und pluralistische Erinnerung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt eine spätere Rezeption und politische oder pädagogische Weiterverwendung der Darstellung voraus.",
+                "reference_space": "öffentliche Erinnerung und politische Bildung",
+                "time_horizon": "langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Historische Darstellungen können Kategorien und Narrative prägen, wenn sie wiederholt und institutionell vermittelt werden.",
+                "source_support": "Die Quelle beschreibt historische Gewalt, belegt aber keine spätere Rezeption oder institutionelle Folge.",
+                "limitations": "Keine Daten zu Bildung, Erinnerungspolitik, öffentlicher Resonanz, Wiederholung oder demokratischen Entscheidungen.",
+                "first_order": "Mögliche stärkere Wahrnehmung historischer Gewalt.",
+                "second_order": "Mögliche Veränderung von Deutungen über Krieg, Feindschaft und politische Ordnung.",
+                "third_order": "Mögliche langfristige Wirkung auf Diskursstrukturen; ein solcher Verlauf ist nicht nachgewiesen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle in der Akte belegt Rezeption, politische Nutzung oder institutionelle Folgen; der demokratische Pfad bleibt eine indirekte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Historische Einordnung könnte demokratische Lernprozesse unterstützen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Eine sorgfältig eingeordnete Darstellung könnte Gewaltgeschichte sichtbar machen und damit historische Urteilskraft stärken.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Bildungseinrichtungen",
+                  "Erinnerungsarbeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche positive Gegenpfad hängt von Kontext, Vermittlung und Rezeption ab, die nicht belegt sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Reichweite der einzelnen Darstellung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein Lernimpuls ist möglich, aber nicht aus der Quelle messbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Bildungswirkung ist nicht nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Mögliche Lernwirkungen wären grundsätzlich veränderbar und nicht irreversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Der Pfad setzt zugängliche und plural eingeordnete Vermittlung voraus.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine einzelne Darstellung belegt keine institutionelle oder systemische Verbesserung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein demokratischer Schutzgewinn ist als Möglichkeit, nicht als belegte Grenze, einzuordnen.",
+                  "reference_frame": "historische Bildung und demokratische Urteilskraft",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt zusätzliche Einordnung, pluralen Kontext und tatsächliche Rezeption voraus.",
+                "reference_space": "öffentliche Bildung und Erinnerung",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Historische Aufarbeitung kann Urteilskraft stärken, wenn sie quellenkritisch und kontextreich vermittelt wird.",
+                "source_support": "Die Quelle liefert eine Darstellung, aber keinen Nachweis von Bildungs- oder Erinnerungseffekten.",
+                "limitations": "Keine Rezeptionsdaten, keine Angaben zur Vermittlung und keine unabhängige Forschung in der Akte.",
+                "first_order": "Mögliche Aufmerksamkeit für historische Gewalt.",
+                "second_order": "Mögliche bessere Einordnung politischer Gewalt.",
+                "third_order": "Möglicher Beitrag zu demokratischer Lernfähigkeit, nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Akte enthält keinen Beleg für Lern- oder Erinnerungseffekte; der positive Gegenpfad bleibt konditional.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein kleiner möglicher Bildungsnutzen steht einem stärker gewichteten, aber ebenfalls unbewiesenen Risiko vereinfachender Gewaltnarrative gegenüber."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Die Gewaltdarstellung könnte historische politische Erinnerung und Narrative prägen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Die Gewaltdarstellung könnte historische politische Erinnerung und Narrative prägen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T19:55:39.327Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die journalistische Quelle trägt die Darstellung, dass Magdeburg zunächst verschont blieb und 1631 Tausende Söldner einfielen; sie beschreibt außerdem Folter und Morde."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt schwere Gewalt, liefert aber keine unabhängige Bestätigung, Opferzahlen oder belastbare Daten zu sozialen Langzeitfolgen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Bei zutreffender Darstellung könnte der bewaffnete Einfall unmittelbar schwere Schäden für Menschen und Gemeinschaften verursacht haben. Die Richtung ist wegen der beschriebenen Gewalt plausibel, die konkrete Tragweite bleibt jedoch unsicher.",
+          "primary_paths": [
+            {
+              "label": "Bewaffneter Einfall könnte schwere Gewalt gegen Menschen und soziale Zerstörung auslösen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Der beschriebene Einfall von Söldnern könnte über Folter, Mord und Zerstörung die Sicherheit und soziale Stabilität der Stadtbevölkerung beeinträchtigen.",
+              "recipients": [
+                "Stadtbevölkerung",
+                "betroffene Familien",
+                "lokale Gemeinschaften"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 3,
+                "upper": 5,
+                "rationale": "Die mögliche Intensität ist wegen der beschriebenen Gewalt hoch; Reichweite und Dauer bleiben ohne Opfer- und Zerstörungsdaten unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Der Einfall betrifft nach der Quelle eine ganze Stadt, genaue Reichweite bleibt offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Die Quelle beschreibt Folter und Morde als besonders grausame Gewalt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ein zeitlicher Verlauf der Gewalt wird in der Akte nicht ausreichend beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Mögliche Todesfälle und schwere Verletzungen wären für Betroffene irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Zivilbevölkerung wäre einem bewaffneten Einfall und direkter Gewalt besonders schutzlos ausgesetzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Soziale Zerstörung und Verlust könnten über den unmittelbaren Angriff hinauswirken.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der Schutz von Menschen vor Folter und Mord wäre bei zutreffender Darstellung eine maßgebliche Schutzgrenze.",
+                "reference_frame": "Schutz von Menschen vor schwerer Gewalt",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die journalistische Darstellung des Einfalls und der Gewalt historisch zutrifft.",
+              "reference_space": "Magdeburg und die unmittelbar betroffene Bevölkerung",
+              "time_horizon": "unmittelbar bis langfristig nach dem beschriebenen Ereignis",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Ein bewaffneter Einfall mit Folter und Mord beeinträchtigt typischerweise Sicherheit, Gesundheit und soziale Stabilität.",
+              "source_support": "Die Quelle beschreibt den Einfall sowie Folter und Morde; sie belegt nicht die genaue Opferzahl oder alle Folgewirkungen.",
+              "limitations": "Es fehlen unabhängige historische Belege, Opferzahlen, Angaben zur Zerstörung und Daten zur Erholung der Stadtgesellschaft.",
+              "first_order": "Mögliche unmittelbare Gewalt, Verletzung und Tötung von Menschen.",
+              "second_order": "Mögliche Flucht, soziale Desintegration und langfristige Unsicherheit, sofern die Gewalt umfangreich war.",
+              "third_order": "Mögliche generationenübergreifende Erinnerung und institutionelle Verarbeitung; konkrete Verläufe sind offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche Quelle in der Akte; die Wissensgrenze betrifft Opferzahl, Umfang, Dauer und Langzeitfolgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 24,
+                "divisor": 6,
+                "raw": 4,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Historische Gewaltdarstellung könnte vereinfachende Feindbilder verstärken",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Die wiederholte Darstellung extremer Gewalt könnte komplexe historische Verantwortlichkeiten verkürzen und kollektive Zuschreibungen fördern.",
+              "recipients": [
+                "spätere Öffentlichkeiten",
+                "Bildungs- und Erinnerungskontexte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Kommunikationspfad ist indirekt und nicht mit Publikums- oder Wirkungsdaten belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Eine einzelne journalistische Darstellung kann begrenzte öffentliche Reichweite haben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die drastische Beschreibung könnte emotional stark wirken, ihre tatsächliche Wirkung ist offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine anhaltende Wirkung wäre von Wiederholung und Kontext abhängig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fehlinterpretationen könnten grundsätzlich durch bessere Einordnung korrigiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Rezipienten mit geringer historischer Einordnung könnten anfälliger für Verkürzungen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Narrative berühren, belegt aber keine institutionelle Veränderung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze ist für diesen indirekten Kommunikationspfad nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt wiederholte oder kontextarme Rezeption voraus, für die keine Daten vorliegen.",
+              "reference_space": "öffentliche historische Kommunikation",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Historische Gewaltdarstellungen können bei fehlender Einordnung vereinfachende Narrative begünstigen.",
+              "source_support": "Die Quelle liefert eine drastische historische Darstellung, aber keinen Publikums- oder Wirkungsnachweis.",
+              "limitations": "Keine Daten zu Reichweite, Wiederholung, Rezeption oder politischer Nutzung.",
+              "first_order": "Mögliche stärkere Aufmerksamkeit für das Ereignis.",
+              "second_order": "Mögliche Verkürzung historischer Verantwortungszuschreibungen.",
+              "third_order": "Mögliche Verfestigung von Erinnerungsnarrativen; Eintritt und Ausmaß sind offen.",
+              "research_pass": "second_pass",
+              "research_result": "Es liegen keine Daten zur Rezeption oder zu Wiederholungseffekten vor; der Pfad bleibt eine begrenzte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht belegt; die mögliche schwere Gewalt dominiert die Einordnung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bewaffneter Einfall könnte schwere Gewalt gegen Menschen und soziale Zerstörung auslösen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Bewaffneter Einfall könnte schwere Gewalt gegen Menschen und soziale Zerstörung auslösen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Zerstörung, Ressourcenverbrauch, Landschaft oder ökologischen Folgen; der ökologische Pfad bleibt hypothetisch.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Kriegerische Gewalt könnte Gebäude, Versorgung und lokale Ressourcen belastet haben. Die vorliegende Quelle belegt jedoch keine konkrete ökologische Veränderung, weshalb die Richtung und Tragweite nur als vorsichtige Modellannahme geführt werden.",
+          "primary_paths": [
+            {
+              "label": "Kriegsbedingte Gewalt könnte lokale Zerstörung und Ressourcenbelastung verstärken",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein bewaffneter Einfall könnte über Zerstörung, Unterbrechung von Versorgung und erhöhten Ressourcenverbrauch lokale Umweltbelastungen auslösen.",
+              "recipients": [
+                "lokale Umwelt",
+                "städtische Infrastruktur",
+                "betroffene Bevölkerung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Ohne Angaben zu Gebäuden, Versorgung oder Landschaft ist nur eine kleine bis mittlere lokale Wirkung plausibel modellierbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ein lokaler Einfall könnte das Stadtgebiet betreffen, räumliche Grenzen sind offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt keine konkrete ökologische Zerstörung oder Belastungsstärke.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Versorgungs- und Wiederaufbauprobleme könnten länger anhalten, sind aber unbelegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Lokale Belastungen wären teilweise reversibel, konkrete Schäden sind nicht dokumentiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Verwundbarkeit der betroffenen Räume wird nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Krieg könnte Versorgung und Landnutzung koppeln, ein solcher Verlauf ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird von der Quelle nicht beschrieben.",
+                "reference_frame": null,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der Einfall materielle Zerstörung oder Versorgungsunterbrechungen verursachte.",
+              "reference_space": "Magdeburg und das unmittelbar betroffene Umland",
+              "time_horizon": "während des Krieges und im möglichen Wiederaufbau",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Bewaffnete Konflikte können lokale Infrastruktur und Ressourcen beanspruchen; diese allgemeine Annahme ersetzt keinen Ereignisbeleg.",
+              "source_support": "Die Quelle belegt den Einfall und die Gewaltbeschreibung, nicht Umwelt- oder Zerstörungsfolgen.",
+              "limitations": "Keine Daten zu Gebäuden, Versorgung, Landnutzung, Abfällen, Emissionen oder langfristiger ökologischer Erholung.",
+              "first_order": "Mögliche lokale Beschädigung von Infrastruktur und Versorgung.",
+              "second_order": "Mögliche Ressourcenknappheit und Wiederaufbauvorgänge.",
+              "third_order": "Mögliche längerfristige Veränderung lokaler Nutzung; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Evidenz in der gelieferten Quelle; eine belastbare Richtung oder Größenordnung kann nicht bestimmt werden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Versorgungsunterbrechungen könnten lokale Umweltbelastungen verlagern",
+              "direction": "open",
+              "type": "side_effect",
+              "mechanism": "Flucht und kriegsbedingte Neuordnung könnten Belastungen zwischen Stadt und Umland verlagern.",
+              "recipients": [
+                "Stadt und Umland",
+                "lokale Versorgungssysteme"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt und vollständig von unbelegten Annahmen über Versorgung und Flucht abhängig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Verlagerung wäre wahrscheinlich lokal begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt keine Umweltintensität der möglichen Verlagerung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Fortbestand einer Verlagerung sind nicht dokumentiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ohne belegte materielle Veränderung ist keine irreversible Wirkung begründbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Verwundbarkeit von Ökosystemen ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer Systemeffekt ist mangels Umwelt- und Versorgungsdaten nicht belegbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete ökologische Grenzverletzung belegt.",
+                "reference_frame": null,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt Flucht, Versorgungsunterbrechung und messbare Umweltverlagerung voraus.",
+              "reference_space": "Magdeburg und mögliches Umland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kriegsbedingte soziale Bewegungen können Versorgungsdruck räumlich verschieben.",
+              "source_support": "Die Quelle nennt keine Flucht, Versorgungslage oder Umweltveränderung.",
+              "limitations": "Der gesamte Pfad ist mangels Ereignis- und Wirkungsdaten spekulativ.",
+              "first_order": "Mögliche Verschiebung von Versorgungsbedarfen.",
+              "second_order": "Mögliche lokale Belastung von Ressourcen.",
+              "third_order": "Kein belastbarer systemischer Umweltpfad ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle liefert keinen Beleg für Flucht, Versorgung oder ökologische Verlagerung; der Pfad bleibt offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist kein vergleichbarer positiver ökologischer Hauptpfad belegt; die negative Einordnung bleibt wegen fehlender Umweltdaten schwach."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Kriegsbedingte Gewalt könnte lokale Zerstörung und Ressourcenbelastung verstärken",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Kriegsbedingte Gewalt könnte lokale Zerstörung und Ressourcenbelastung verstärken",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle oder demokratische Folge. Möglich ist nur ein indirekter Erinnerungspfad über historische Gewaltdeutungen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Massaker könnte langfristig beeinflussen, wie Krieg, Gewalt und politische Ordnung erinnert werden. Eine konkrete Wirkung auf demokratische Institutionen oder Korrekturfähigkeit ist aus der Einzelquelle nicht ableitbar.",
+          "primary_paths": [
+            {
+              "label": "Die Gewaltdarstellung könnte historische politische Erinnerung und Narrative prägen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Beschreibung extremer Gewalt könnte über Erinnerung, Bildung und öffentliche Deutung Kategorien von Krieg, Feindschaft und politischer Ordnung beeinflussen.",
+              "recipients": [
+                "spätere Öffentlichkeiten",
+                "Erinnerungsinstitutionen",
+                "politische Bildungsräume"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein langfristiger Erinnerungspfad ist möglich, aber ohne Rezeptions- oder Institutionsdaten nur begrenzt einzuschätzen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle kann historische Deutung erreichen, die tatsächliche Verbreitung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Beschreibung von Folter und Mord kann politische und moralische Deutungen stark berühren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Erinnerungsnarrative könnten lange fortwirken, konkrete Dauer ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Narrative können durch spätere Forschung und Einordnung verändert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Öffentliche Erinnerung kann bei fehlendem Kontext für Vereinfachungen anfällig sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Historische Deutungen könnten Diskurse über Gewalt und Ordnung beeinflussen, nicht aber automatisch Institutionen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Veränderung ist nicht belegt.",
+                "reference_frame": "demokratische Korrekturfähigkeit und pluralistische Erinnerung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt eine spätere Rezeption und politische oder pädagogische Weiterverwendung der Darstellung voraus.",
+              "reference_space": "öffentliche Erinnerung und politische Bildung",
+              "time_horizon": "langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Historische Darstellungen können Kategorien und Narrative prägen, wenn sie wiederholt und institutionell vermittelt werden.",
+              "source_support": "Die Quelle beschreibt historische Gewalt, belegt aber keine spätere Rezeption oder institutionelle Folge.",
+              "limitations": "Keine Daten zu Bildung, Erinnerungspolitik, öffentlicher Resonanz, Wiederholung oder demokratischen Entscheidungen.",
+              "first_order": "Mögliche stärkere Wahrnehmung historischer Gewalt.",
+              "second_order": "Mögliche Veränderung von Deutungen über Krieg, Feindschaft und politische Ordnung.",
+              "third_order": "Mögliche langfristige Wirkung auf Diskursstrukturen; ein solcher Verlauf ist nicht nachgewiesen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle in der Akte belegt Rezeption, politische Nutzung oder institutionelle Folgen; der demokratische Pfad bleibt eine indirekte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Historische Einordnung könnte demokratische Lernprozesse unterstützen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Eine sorgfältig eingeordnete Darstellung könnte Gewaltgeschichte sichtbar machen und damit historische Urteilskraft stärken.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Bildungseinrichtungen",
+                "Erinnerungsarbeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche positive Gegenpfad hängt von Kontext, Vermittlung und Rezeption ab, die nicht belegt sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Reichweite der einzelnen Darstellung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein Lernimpuls ist möglich, aber nicht aus der Quelle messbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Bildungswirkung ist nicht nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Mögliche Lernwirkungen wären grundsätzlich veränderbar und nicht irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Der Pfad setzt zugängliche und plural eingeordnete Vermittlung voraus.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine einzelne Darstellung belegt keine institutionelle oder systemische Verbesserung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein demokratischer Schutzgewinn ist als Möglichkeit, nicht als belegte Grenze, einzuordnen.",
+                "reference_frame": "historische Bildung und demokratische Urteilskraft",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt zusätzliche Einordnung, pluralen Kontext und tatsächliche Rezeption voraus.",
+              "reference_space": "öffentliche Bildung und Erinnerung",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Historische Aufarbeitung kann Urteilskraft stärken, wenn sie quellenkritisch und kontextreich vermittelt wird.",
+              "source_support": "Die Quelle liefert eine Darstellung, aber keinen Nachweis von Bildungs- oder Erinnerungseffekten.",
+              "limitations": "Keine Rezeptionsdaten, keine Angaben zur Vermittlung und keine unabhängige Forschung in der Akte.",
+              "first_order": "Mögliche Aufmerksamkeit für historische Gewalt.",
+              "second_order": "Mögliche bessere Einordnung politischer Gewalt.",
+              "third_order": "Möglicher Beitrag zu demokratischer Lernfähigkeit, nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Akte enthält keinen Beleg für Lern- oder Erinnerungseffekte; der positive Gegenpfad bleibt konditional.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein kleiner möglicher Bildungsnutzen steht einem stärker gewichteten, aber ebenfalls unbewiesenen Risiko vereinfachender Gewaltnarrative gegenüber."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Die Gewaltdarstellung könnte historische politische Erinnerung und Narrative prägen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Die Gewaltdarstellung könnte historische politische Erinnerung und Narrative prägen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T19:54:13.054Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T19:20:00.000Z",
+      "last_updated": "2026-09-19T19:55:39.322Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-563c4ba6517a521e7bc2",
+      "case_file": null,
+      "source_published_at": "2026-09-19T19:20:00.000Z",
+      "published_at": "2026-09-19T19:55:39.322Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/geo/dreissigjaehriger-krieg--das-massaker-von-magdeburg-36139264.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T19:20:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f6366ae194061e42",
       "title_image": {
