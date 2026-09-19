@@ -2,8 +2,1896 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T18:08:16.705Z",
+  "updated_at": "2026-09-19T18:38:34.175Z",
   "stories": [
+    {
+      "story_id": "wt-a723864377723018",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a723864377723018-3c965c14a245a01f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a723864377723018-d92d052eb50b72d5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a723864377723018-01296f9535ba25b4-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a723864377723018-d795c0a240dfc6a6-source.png"
+        }
+      },
+      "slug": "midterms-in-den-usa-die-us-demokratie-ist-doch-noch-nicht-ganz-verloren-723018",
+      "title": "Laut taz: Supreme Court stoppt Trumps Vorhaben zur Einschränkung der Briefwahl",
+      "source_summary": "Die taz berichtet, der Supreme Court habe ein Vorhaben der Regierung zurückgewiesen, die Briefwahl bürokratisch zu erschweren. Der Bericht stellt die Entscheidung als Begrenzung eines Eingriffs in die bevorstehenden Midterm-Wahlen dar.\n\nZugleich beschreibt die taz ein angespanntes Verhältnis zwischen Präsident Trump und dem Gericht. Sie verweist auf weitere Entscheidungen, bei denen das Gericht Vorhaben der Regierung zurückgewiesen habe.\n\nOffen bleibt, wie die Entscheidung praktisch umgesetzt wird und ob weitere Versuche folgen. Die taz berichtet außerdem, Wahlhelfer würden sich bereits auf mögliche Auseinandersetzungen mit Mitarbeitern des Justizministeriums vorbereiten.",
+      "summary": "Der Supreme Court hat laut taz Trumps Vorhaben zur Erschwerung der Briefwahl zurückgewiesen. Das kann den Zugang zur Wahl schützen, während Umfang und Dauer der Folgen offen bleiben.",
+      "detail_summary": "Die taz berichtet, dass der Supreme Court ein Vorhaben der Regierung zurückgewiesen habe, die Briefwahl bürokratisch zu erschweren. Damit könnte eine Hürde für Menschen entfallen, die ihre Stimme per Brief abgeben wollen. Für die Demokratie liegt ein möglicher Schutzpfad in besserem Zugang und gerichtlicher Kontrolle exekutiver Eingriffe. Zugleich beschreibt die Quelle weitere erwartbare Konflikte rund um die Wahl und mögliche Auseinandersetzungen mit dem Justizministerium. Unklar bleiben Umsetzung, Reichweite und Dauer der Entscheidung.",
+      "why_relevant": "Der Fall berührt den Zugang zu Wahlen und die Fähigkeit eines Gerichts, exekutive Eingriffe zu begrenzen. Das ist für demokratische Korrekturfähigkeit relevant, auch wenn die Quelle keine unabhängige Folgenmessung liefert.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über die Zurückweisung eines Vorhabens zur bürokratischen Erschwerung der Briefwahl durch den Supreme Court",
+        "evaluation_target": {
+          "label": "gerichtliche Begrenzung einer geplanten Wahlzugangshürde",
+          "type": "decision"
+        },
+        "baseline": "Briefwahl ohne die im Bericht beschriebene zusätzliche bürokratische Erschwerung",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne die gerichtliche Begrenzung könnte die beschriebene zusätzliche Hürde weiterverfolgt werden; Umfang und praktische Folgen sind nicht belegt.",
+        "reference_frame": [
+          "Wahlzugang",
+          "demokratische Korrekturfähigkeit",
+          "rechtsstaatliche Kontrolle"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein erleichterter Briefwahlzugang könnte Menschen mit eingeschränkter Mobilität oder begrenzter Zeit helfen; konkrete Betroffenenzahlen und tatsächliche Zugangseffekte fehlen.",
+            "planet": "Der Vorgang betrifft keine erkennbare materielle ökologische Zustandsänderung; ein relevanter Pfad wird als vernachlässigbar modelliert.",
+            "democracy": "Die Entscheidung könnte Wahlzugang und gerichtliche Kontrolle stützen; zugleich können weitere Konflikte und zugespitzte Kommunikation Vertrauen belasten."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche Begrenzung einer bürokratischen Wahlzugangshürde.",
+          "second_order": "Mögliche Veränderungen bei Teilhabe, Verwaltungsunsicherheit und institutionellem Vertrauen.",
+          "third_order": "Mögliche Prägung der demokratischen Korrekturfähigkeit und des öffentlichen Diskurses über Gerichte und Wahlen.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt weder eine tatsächliche Veränderung der Wahlbeteiligung noch eine dauerhafte Stärkung des Gerichts.",
+            "Eine gerichtliche Entscheidung kann durch weitere politische oder administrative Schritte in ihrer praktischen Wirkung begrenzt werden."
+          ],
+          "source_independence": "Nur eine journalistische Herkunft ist geliefert; die Unabhängigkeit ist nicht verifiziert. Der Bericht ist daher als Einzelquelle einzuordnen.",
+          "institutional_status": "Die Quelle berichtet über eine Entscheidung des Supreme Court; der vollständige rechtliche Status und die konkrete Umsetzung sind offen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Der mögliche Schutz des Briefwahlzugangs ist aus dem berichteten gerichtlichen Vorgang ableitbar, aber nicht als eingetretene Wirkung gemessen. Konkrete Reichweite, Betroffenenzahl und Dauer bleiben offen.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Briefwahl bleibt für betroffene Wahlberechtigte möglicherweise zugänglich, wenn die gerichtliche Zurückweisung umgesetzt wird.",
+                "mechanism": "Die Zurückweisung einer bürokratischen Erschwerung kann eine zusätzliche Zugangshürde verhindern.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Menschen mit eingeschränkter Mobilität",
+                  "Wahlhelfer"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die Entscheidung ist verbindlich und wird von der Wahlverwaltung ohne neue gleichgerichtete Hürden umgesetzt.",
+                "reference_space": "USA, betroffene Briefwahlverfahren",
+                "time_horizon": "bis zur beschriebenen Wahl und ihrer Durchführung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichtete Zurückweisung betrifft tatsächlich die geplante bürokratische Erschwerung und wird praktisch beachtet.",
+                "source_support": "Die Quelle berichtet über die Zurückweisung des Vorhabens, nicht über konkrete Zugangseffekte.",
+                "limitations": "Keine Daten zu Betroffenenzahl, Nutzung, Umsetzung oder Wahlbeteiligung.",
+                "first_order": "Eine zusätzliche bürokratische Hürde könnte entfallen.",
+                "second_order": "Ein Teil der Wahlberechtigten könnte die Briefwahl leichter nutzen, sofern Verwaltung und Gerichte die Entscheidung umsetzen.",
+                "third_order": "Ein verlässlicherer Zugang könnte die individuelle politische Teilhabe stützen; Umfang und Dauer sind offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite ist breiter als ein Einzelfall, aber weder Umfang noch tatsächliche Umsetzung sind belegt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Messung der tatsächlichen Zugangswirkung im gelieferten Bestand; der Pfad bleibt bedingt und unsicher.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Briefwahl kann mehrere Gruppen von Wahlberechtigten betreffen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine bürokratische Hürde kann den Zugang spürbar, aber nicht notwendig vollständig verändern.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der mögliche Effekt reicht bis zur Umsetzung der Wahl, seine Dauer ist offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Administrative Zugangshürden können grundsätzlich wieder geändert werden.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen mit weniger Zeit, Mobilität oder Verwaltungskapazität könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft vor allem individuellen Wahlzugang, nicht unmittelbar gesellschaftliche Grundstrukturen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein möglicher Zugangsschutz ist relevant, aber eine konkrete schwere Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": "gleichberechtigter Zugang zur Wahl",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Unsichere oder konfliktbeladene Umsetzung könnte den Zugang zur Briefwahl erschweren.",
+                "mechanism": "Weitere administrative oder politische Auseinandersetzungen können Verfahren verkomplizieren und Unsicherheit erzeugen.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Wahlhelfer"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Weitere Manöver oder Konflikte treten auf und führen zu uneinheitlicher Verwaltungspraxis.",
+                "reference_space": "USA, Wahlverwaltung und Briefwahl",
+                "time_horizon": "bis zur Wahl",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die in der Quelle beschriebenen weiteren Konflikte beeinflussen die praktische Verwaltung.",
+                "source_support": "Die Quelle erwähnt erwartete weitere Manöver und mögliche Auseinandersetzungen mit Justizministeriumsmitarbeitern.",
+                "limitations": "Keine Belege für tatsächliche Behinderungen oder konkrete Verwaltungsanweisungen.",
+                "first_order": "Verfahrensunsicherheit könnte entstehen.",
+                "second_order": "Betroffene könnten Anträge später stellen oder auf die Briefwahl verzichten.",
+                "third_order": "Wiederholte Konflikte könnten das Vertrauen in den Wahlablauf schwächen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle nennt mögliche Konflikte, aber keine eingetretene oder quantifizierte Zugangsschädigung."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der Bestand belegt nur die Möglichkeit weiterer Konflikte, nicht deren konkrete Wirkung auf Wahlberechtigte.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Konflikte könnten auf einzelne Verfahren begrenzt bleiben.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Behinderungsintensität ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Wiederholung möglicher Konflikte bleiben offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verfahrensunsicherheit wäre grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Weniger resiliente Wahlberechtigte könnten organisatorische Unsicherheit stärker spüren.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bliebe zunächst administrativ und lokal begrenzt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein konkreter schwerer Zugangsschaden ist nicht nachgewiesen.",
+                  "reference_frame": "verlässlicher und gleichberechtigter Wahlzugang",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der positive Zugangspfad ist plausibel, aber nur schwach belegt und vollständig von Umsetzung abhängig. Ein negativer Gegenpfad bleibt kleiner, weil konkrete Behinderungen fehlen.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative bedingte Pfade sind vergleichbar; der positive Pfad ist im Modell stärker, ohne dass eine Schutzgrenze überschritten nachgewiesen wäre."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Briefwahl bleibt für betroffene Wahlberechtigte möglicherweise zugänglich, wenn die gerichtliche Zurückweisung umgesetzt wird.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Briefwahl bleibt für betroffene Wahlberechtigte möglicherweise zugänglich, wenn die gerichtliche Zurückweisung umgesetzt wird.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Im gelieferten Bestand gibt es keinen plausiblen, quellengetragenen materiellen Umweltpfad. Der Vorgang betrifft Wahlzugang und institutionelle Kontrolle; ökologische Folgen sind für Raum und Zeithorizont vernachlässigbar.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Für die beschriebene gerichtliche Entscheidung ist keine materielle ökologische Zustandsänderung plausibel.",
+                "mechanism": "Der Nachrichtenanlass betrifft Briefwahlregeln und institutionelle Auseinandersetzungen, nicht Umweltressourcen oder Emissionen.",
+                "recipients": [
+                  "Natur"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die Bewertung bleibt auf den beschriebenen gerichtlichen und wahlorganisatorischen Vorgang begrenzt.",
+                "reference_space": "USA, Briefwahl und institutionelle Kontrolle",
+                "time_horizon": "bis zur beschriebenen Wahl",
+                "path_quality": [
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Es gibt keine nicht berichtete Verbindung zu materiellen Umweltentscheidungen.",
+                "source_support": "Die Quelle behandelt Wahlrecht, Gericht und politische Konflikte, nicht ökologische Zustände.",
+                "limitations": "Keine Umweltprüfung außerhalb des gelieferten Bestands.",
+                "first_order": "Keine erkennbare ökologische Zustandsänderung.",
+                "second_order": "Keine belastbare ökologische Folge aus dem beschriebenen Vorgang.",
+                "third_order": "Keine systemische Umweltkaskade im abgegrenzten Sachverhalt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Der ökologische Pfad ist im abgegrenzten Vorgang konkret vernachlässigbar."
+                },
+                "negligibility_rationale": "Der Bericht nennt weder Umweltressourcen noch Emissionen, Infrastruktur oder ökologische Belastungen; eine materielle Änderung ist daher im definierten Raum und Zeitraum vernachlässigbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Folge im gelieferten Material erkennbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Empfängergruppe wird im Vorgang angesprochen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine materielle Umweltbelastung oder Entlastung ist beschrieben.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Es gibt keinen belegten ökologischen Zeitpfad.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ohne ökologische Zustandsänderung entsteht keine Irreversibilität.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine vulnerable Natur- oder Umweltkomponente ist betroffen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Der Vorgang hat keine belegte ökologische Systemtiefe.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird berührt.",
+                  "reference_frame": "ökologische Unversehrtheit",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Nachrichtenanlass hat keinen belegten materiellen Umweltbezug. Die Faktoren stehen für begründete Vernachlässigbarkeit, nicht für fehlende Recherche.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen Umweltpfad; deshalb ist keine Abwägung erforderlich."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Für die beschriebene gerichtliche Entscheidung ist keine materielle ökologische Zustandsänderung plausibel.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die beschriebene gerichtliche Entscheidung ist keine materielle ökologische Zustandsänderung plausibel.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle trägt einen möglichen institutionellen Schutzpfad: Das Gericht begrenzt laut Bericht eine geplante Erschwerung der Briefwahl. Konkrete Effekte auf Beteiligung, Vertrauen oder institutionelle Dauerhaftigkeit sind nicht gemessen.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Die gerichtliche Zurückweisung könnte Wahlzugang und demokratische Korrekturfähigkeit gegenüber exekutiven Eingriffen stützen.",
+                "mechanism": "Gerichtliche Kontrolle begrenzt eine geplante administrative Erschwerung der Briefwahl.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Wahlverwaltung",
+                  "Gerichte",
+                  "demokratische Institutionen"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die Entscheidung bleibt wirksam, wird umgesetzt und setzt eine erkennbare Grenze für weitere Eingriffe.",
+                "reference_space": "USA, Briefwahl und institutionelle Gewaltenteilung",
+                "time_horizon": "bis zur beschriebenen Wahl und darüber hinaus im institutionellen Lernen",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichtete Entscheidung hat verbindliche praktische Bedeutung und wird von Behörden beachtet.",
+                "source_support": "Die Quelle berichtet über die Zurückweisung des Vorhabens und deutet sie als Begrenzung eines Eingriffs in die Midterm-Wahlen.",
+                "limitations": "Keine unabhängige Bestätigung, kein vollständiger Beschluss, keine Messung von Vertrauen oder Korrekturfähigkeit.",
+                "first_order": "Eine geplante Wahlzugangshürde könnte institutionell begrenzt werden.",
+                "second_order": "Gerichte und Wahlverwaltung könnten als Korrektive gegenüber exekutiven Eingriffen wahrgenommen werden.",
+                "third_order": "Die Entscheidung könnte langfristig die Erwartung stärken, dass Wahlregeln durch institutionelle Kontrolle geschützt werden.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die institutionelle Bedeutung kann über den Einzelfall hinausreichen, bleibt aber wegen fehlender Umsetzung und Messung begrenzt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Messung institutioneller Folgen; der positive Demokratiepfad bleibt ein bedingtes Modell.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Wahlregeln betreffen potenziell viele Wahlberechtigte und Institutionen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Eine gerichtliche Grenze gegen eine Wahlhürde kann institutionell deutlich sein.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die dauerhafte Bedeutung hängt von weiteren Entscheidungen und Verwaltungspraxis ab.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Institutionelles Lernen kann fortwirken, ist aber politisch reversibel.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Wahlberechtigte mit höherem Aufwand bei persönlicher Stimmabgabe können besonders profitieren.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad berührt Gewaltenteilung, Wahlzugang und demokratische Korrektur.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Gleichberechtigter Wahlzugang und gerichtliche Kontrolle sind zentrale demokratische Schutzgüter; der Pfad ist jedoch nur bedingt belegt.",
+                  "reference_frame": "demokratische Teilhabe und rechtsstaatliche Begrenzung exekutiver Macht",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Weitere Konflikte und zugespitzte Kommunikation könnten institutionelles Vertrauen und die Verlässlichkeit des Wahlablaufs belasten.",
+                "mechanism": "Wiederholte Auseinandersetzungen zwischen Exekutive, Gericht und Wahlverwaltung können Unsicherheit und Polarisierung verstärken.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Wahlhelfer",
+                  "Gerichte",
+                  "Wahlverwaltung"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die in der Quelle beschriebenen weiteren Manöver und Konflikte treten ein und werden öffentlich zugespitzt verarbeitet.",
+                "reference_space": "USA, Wahlverwaltung und öffentlicher demokratischer Diskurs",
+                "time_horizon": "bis zur Wahl und im anschließenden institutionellen Diskurs",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Konflikte über Briefwahl werden als Zweifel an der Legitimität des Wahlprozesses interpretiert.",
+                "source_support": "Die Quelle berichtet über mögliche weitere Manöver, vorbereitete Auseinandersetzungen und eine zugespitzte politische Reaktion.",
+                "limitations": "Keine Daten zu Vertrauen, Polarisierung, tatsächlicher Wahlverwaltung oder Verhalten der Wahlberechtigten.",
+                "first_order": "Wahlhelfer und Wählende könnten mit zusätzlicher Unsicherheit konfrontiert werden.",
+                "second_order": "Die Bewertung von Gericht, Regierung und Wahlverwaltung könnte stärker auseinandergehen.",
+                "third_order": "Anhaltende Konflikte könnten die demokratische Korrekturfähigkeit durch Misstrauen und Blockaden schwächen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle beschreibt ein mögliches Konfliktfeld, aber keine eingetretene institutionelle Schädigung."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der Bestand belegt politische Zuspitzung und mögliche Konflikte, aber keine gemessene Vertrauens- oder Verhaltensänderung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Konflikt kann öffentliche Institutionen und Wahlberechtigte erreichen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Belastung ist politisch relevant, aber nicht quantifiziert.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Weitere Konflikte könnten sich bis zur Wahl hinziehen; ihre Dauer bleibt offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Vertrauensverluste können fortwirken, sind aber grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit geringem institutionellem Vertrauen könnten stärker auf Zuspitzungen reagieren.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Legitimität, Wahlverwaltung und öffentliche Diskurse.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein konkreter institutioneller Schaden ist nicht belegt; die Grenze bleibt ein bedingtes Risiko.",
+                  "reference_frame": "Vertrauen in faire Wahlen und rechtsstaatliche Institutionen",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Die mediale Krisenrahmung könnte Polarisierung und Misstrauen gegenüber Institutionen verstärken.",
+                "mechanism": "Wiederholung zugespitzter Begriffe kann den Konflikt als umfassende Bedrohung der Demokratie rahmen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Wahlberechtigte",
+                  "demokratische Institutionen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die Rahmung wird wiederholt und ohne zusätzliche Kontextualisierung rezipiert.",
+                "reference_space": "öffentlicher Diskurs in den USA und darüber hinaus",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die zugespitzte Formulierung erreicht ein relevantes Publikum und beeinflusst dessen Deutung.",
+                "source_support": "Die Quelle enthält eine zugespitzte Überschrift und wertende Formulierungen; Publikumswirkungen sind nicht belegt.",
+                "limitations": "Kein Publikumsnachweis und keine Messung von Polarisierung oder Vertrauen.",
+                "first_order": "Der Konflikt könnte als umfassende demokratische Krise wahrgenommen werden.",
+                "second_order": "Institutionelle Akteure könnten stärker parteipolitisch bewertet werden.",
+                "third_order": "Wiederholung könnte die Bereitschaft zu kompromissorientierter institutioneller Korrektur schwächen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein Resonanzrisiko ist plausibel, aber ohne Publikumsdaten klein und unsicher einzustufen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Evidenz für eine tatsächliche Medienwirkung; nur ein quellengebundenes Resonanzrisiko ist modellierbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Reichweite des einzelnen Beitrags ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Deutungswirkung ist möglich, aber nicht gemessen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Rahmungswirkung ist offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Diskursive Deutungen können durch weitere Informationen korrigiert werden.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Polarisierte Öffentlichkeiten können zugespitzte Rahmungen anfälliger aufnehmen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad betrifft Diskurs und institutionelle Wahrnehmung, nicht unmittelbar Regeln.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein konkreter demokratischer Schutzschaden ist nicht beobachtet.",
+                  "reference_frame": "informierter und pluraler demokratischer Diskurs",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der stärkste bedingte Pfad ist positiv: gerichtliche Kontrolle könnte Wahlzugang und demokratische Korrekturfähigkeit schützen. Gegenpfade durch Konflikt und mediale Zuspitzung bleiben relevant, sind aber schwächer belegt und nicht als eingetretene Schäden nachgewiesen.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative Demokratiepfade sind materiell vergleichbar. Die Schutzgrenze des Wahlzugangs und der gerichtlichen Kontrolle ist entscheidend, während negative Vertrauens- und Diskurspfade nur als Risiken modelliert werden."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Die gerichtliche Zurückweisung könnte Wahlzugang und demokratische Korrekturfähigkeit gegenüber exekutiven Eingriffen stützen.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die gerichtliche Zurückweisung könnte Wahlzugang und demokratische Korrekturfähigkeit gegenüber exekutiven Eingriffen stützen.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T18:40:38.044Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle trägt den berichteten gerichtlichen Vorgang, die zugeschriebene Einordnung als Begrenzung einer Wahlzugangshürde und Hinweise auf mögliche Folgekonflikte."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Der mögliche Schutz des Briefwahlzugangs ist aus dem berichteten gerichtlichen Vorgang ableitbar, aber nicht als eingetretene Wirkung gemessen. Konkrete Reichweite, Betroffenenzahl und Dauer bleiben offen.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Briefwahl bleibt für betroffene Wahlberechtigte möglicherweise zugänglich, wenn die gerichtliche Zurückweisung umgesetzt wird.",
+              "mechanism": "Die Zurückweisung einer bürokratischen Erschwerung kann eine zusätzliche Zugangshürde verhindern.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Menschen mit eingeschränkter Mobilität",
+                "Wahlhelfer"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die Entscheidung ist verbindlich und wird von der Wahlverwaltung ohne neue gleichgerichtete Hürden umgesetzt.",
+              "reference_space": "USA, betroffene Briefwahlverfahren",
+              "time_horizon": "bis zur beschriebenen Wahl und ihrer Durchführung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichtete Zurückweisung betrifft tatsächlich die geplante bürokratische Erschwerung und wird praktisch beachtet.",
+              "source_support": "Die Quelle berichtet über die Zurückweisung des Vorhabens, nicht über konkrete Zugangseffekte.",
+              "limitations": "Keine Daten zu Betroffenenzahl, Nutzung, Umsetzung oder Wahlbeteiligung.",
+              "first_order": "Eine zusätzliche bürokratische Hürde könnte entfallen.",
+              "second_order": "Ein Teil der Wahlberechtigten könnte die Briefwahl leichter nutzen, sofern Verwaltung und Gerichte die Entscheidung umsetzen.",
+              "third_order": "Ein verlässlicherer Zugang könnte die individuelle politische Teilhabe stützen; Umfang und Dauer sind offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite ist breiter als ein Einzelfall, aber weder Umfang noch tatsächliche Umsetzung sind belegt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Messung der tatsächlichen Zugangswirkung im gelieferten Bestand; der Pfad bleibt bedingt und unsicher.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Briefwahl kann mehrere Gruppen von Wahlberechtigten betreffen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine bürokratische Hürde kann den Zugang spürbar, aber nicht notwendig vollständig verändern.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der mögliche Effekt reicht bis zur Umsetzung der Wahl, seine Dauer ist offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Administrative Zugangshürden können grundsätzlich wieder geändert werden.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen mit weniger Zeit, Mobilität oder Verwaltungskapazität könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft vor allem individuellen Wahlzugang, nicht unmittelbar gesellschaftliche Grundstrukturen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein möglicher Zugangsschutz ist relevant, aber eine konkrete schwere Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": "gleichberechtigter Zugang zur Wahl",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Unsichere oder konfliktbeladene Umsetzung könnte den Zugang zur Briefwahl erschweren.",
+              "mechanism": "Weitere administrative oder politische Auseinandersetzungen können Verfahren verkomplizieren und Unsicherheit erzeugen.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Wahlhelfer"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Weitere Manöver oder Konflikte treten auf und führen zu uneinheitlicher Verwaltungspraxis.",
+              "reference_space": "USA, Wahlverwaltung und Briefwahl",
+              "time_horizon": "bis zur Wahl",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die in der Quelle beschriebenen weiteren Konflikte beeinflussen die praktische Verwaltung.",
+              "source_support": "Die Quelle erwähnt erwartete weitere Manöver und mögliche Auseinandersetzungen mit Justizministeriumsmitarbeitern.",
+              "limitations": "Keine Belege für tatsächliche Behinderungen oder konkrete Verwaltungsanweisungen.",
+              "first_order": "Verfahrensunsicherheit könnte entstehen.",
+              "second_order": "Betroffene könnten Anträge später stellen oder auf die Briefwahl verzichten.",
+              "third_order": "Wiederholte Konflikte könnten das Vertrauen in den Wahlablauf schwächen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle nennt mögliche Konflikte, aber keine eingetretene oder quantifizierte Zugangsschädigung."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der Bestand belegt nur die Möglichkeit weiterer Konflikte, nicht deren konkrete Wirkung auf Wahlberechtigte.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Konflikte könnten auf einzelne Verfahren begrenzt bleiben.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Behinderungsintensität ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Wiederholung möglicher Konflikte bleiben offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verfahrensunsicherheit wäre grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Weniger resiliente Wahlberechtigte könnten organisatorische Unsicherheit stärker spüren.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bliebe zunächst administrativ und lokal begrenzt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein konkreter schwerer Zugangsschaden ist nicht nachgewiesen.",
+                "reference_frame": "verlässlicher und gleichberechtigter Wahlzugang",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der positive Zugangspfad ist plausibel, aber nur schwach belegt und vollständig von Umsetzung abhängig. Ein negativer Gegenpfad bleibt kleiner, weil konkrete Behinderungen fehlen.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative bedingte Pfade sind vergleichbar; der positive Pfad ist im Modell stärker, ohne dass eine Schutzgrenze überschritten nachgewiesen wäre."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Briefwahl bleibt für betroffene Wahlberechtigte möglicherweise zugänglich, wenn die gerichtliche Zurückweisung umgesetzt wird.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Briefwahl bleibt für betroffene Wahlberechtigte möglicherweise zugänglich, wenn die gerichtliche Zurückweisung umgesetzt wird.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Im gelieferten Bestand gibt es keinen plausiblen, quellengetragenen materiellen Umweltpfad. Der Vorgang betrifft Wahlzugang und institutionelle Kontrolle; ökologische Folgen sind für Raum und Zeithorizont vernachlässigbar.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Für die beschriebene gerichtliche Entscheidung ist keine materielle ökologische Zustandsänderung plausibel.",
+              "mechanism": "Der Nachrichtenanlass betrifft Briefwahlregeln und institutionelle Auseinandersetzungen, nicht Umweltressourcen oder Emissionen.",
+              "recipients": [
+                "Natur"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die Bewertung bleibt auf den beschriebenen gerichtlichen und wahlorganisatorischen Vorgang begrenzt.",
+              "reference_space": "USA, Briefwahl und institutionelle Kontrolle",
+              "time_horizon": "bis zur beschriebenen Wahl",
+              "path_quality": [
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Es gibt keine nicht berichtete Verbindung zu materiellen Umweltentscheidungen.",
+              "source_support": "Die Quelle behandelt Wahlrecht, Gericht und politische Konflikte, nicht ökologische Zustände.",
+              "limitations": "Keine Umweltprüfung außerhalb des gelieferten Bestands.",
+              "first_order": "Keine erkennbare ökologische Zustandsänderung.",
+              "second_order": "Keine belastbare ökologische Folge aus dem beschriebenen Vorgang.",
+              "third_order": "Keine systemische Umweltkaskade im abgegrenzten Sachverhalt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Der ökologische Pfad ist im abgegrenzten Vorgang konkret vernachlässigbar."
+              },
+              "negligibility_rationale": "Der Bericht nennt weder Umweltressourcen noch Emissionen, Infrastruktur oder ökologische Belastungen; eine materielle Änderung ist daher im definierten Raum und Zeitraum vernachlässigbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Folge im gelieferten Material erkennbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Empfängergruppe wird im Vorgang angesprochen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine materielle Umweltbelastung oder Entlastung ist beschrieben.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Es gibt keinen belegten ökologischen Zeitpfad.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ohne ökologische Zustandsänderung entsteht keine Irreversibilität.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine vulnerable Natur- oder Umweltkomponente ist betroffen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Der Vorgang hat keine belegte ökologische Systemtiefe.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird berührt.",
+                "reference_frame": "ökologische Unversehrtheit",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Nachrichtenanlass hat keinen belegten materiellen Umweltbezug. Die Faktoren stehen für begründete Vernachlässigbarkeit, nicht für fehlende Recherche.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen Umweltpfad; deshalb ist keine Abwägung erforderlich."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Für die beschriebene gerichtliche Entscheidung ist keine materielle ökologische Zustandsänderung plausibel.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Für die beschriebene gerichtliche Entscheidung ist keine materielle ökologische Zustandsänderung plausibel.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle trägt einen möglichen institutionellen Schutzpfad: Das Gericht begrenzt laut Bericht eine geplante Erschwerung der Briefwahl. Konkrete Effekte auf Beteiligung, Vertrauen oder institutionelle Dauerhaftigkeit sind nicht gemessen.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Die gerichtliche Zurückweisung könnte Wahlzugang und demokratische Korrekturfähigkeit gegenüber exekutiven Eingriffen stützen.",
+              "mechanism": "Gerichtliche Kontrolle begrenzt eine geplante administrative Erschwerung der Briefwahl.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Wahlverwaltung",
+                "Gerichte",
+                "demokratische Institutionen"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die Entscheidung bleibt wirksam, wird umgesetzt und setzt eine erkennbare Grenze für weitere Eingriffe.",
+              "reference_space": "USA, Briefwahl und institutionelle Gewaltenteilung",
+              "time_horizon": "bis zur beschriebenen Wahl und darüber hinaus im institutionellen Lernen",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichtete Entscheidung hat verbindliche praktische Bedeutung und wird von Behörden beachtet.",
+              "source_support": "Die Quelle berichtet über die Zurückweisung des Vorhabens und deutet sie als Begrenzung eines Eingriffs in die Midterm-Wahlen.",
+              "limitations": "Keine unabhängige Bestätigung, kein vollständiger Beschluss, keine Messung von Vertrauen oder Korrekturfähigkeit.",
+              "first_order": "Eine geplante Wahlzugangshürde könnte institutionell begrenzt werden.",
+              "second_order": "Gerichte und Wahlverwaltung könnten als Korrektive gegenüber exekutiven Eingriffen wahrgenommen werden.",
+              "third_order": "Die Entscheidung könnte langfristig die Erwartung stärken, dass Wahlregeln durch institutionelle Kontrolle geschützt werden.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die institutionelle Bedeutung kann über den Einzelfall hinausreichen, bleibt aber wegen fehlender Umsetzung und Messung begrenzt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Messung institutioneller Folgen; der positive Demokratiepfad bleibt ein bedingtes Modell.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Wahlregeln betreffen potenziell viele Wahlberechtigte und Institutionen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Eine gerichtliche Grenze gegen eine Wahlhürde kann institutionell deutlich sein.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die dauerhafte Bedeutung hängt von weiteren Entscheidungen und Verwaltungspraxis ab.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Institutionelles Lernen kann fortwirken, ist aber politisch reversibel.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Wahlberechtigte mit höherem Aufwand bei persönlicher Stimmabgabe können besonders profitieren.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad berührt Gewaltenteilung, Wahlzugang und demokratische Korrektur.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Gleichberechtigter Wahlzugang und gerichtliche Kontrolle sind zentrale demokratische Schutzgüter; der Pfad ist jedoch nur bedingt belegt.",
+                "reference_frame": "demokratische Teilhabe und rechtsstaatliche Begrenzung exekutiver Macht",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Weitere Konflikte und zugespitzte Kommunikation könnten institutionelles Vertrauen und die Verlässlichkeit des Wahlablaufs belasten.",
+              "mechanism": "Wiederholte Auseinandersetzungen zwischen Exekutive, Gericht und Wahlverwaltung können Unsicherheit und Polarisierung verstärken.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Wahlhelfer",
+                "Gerichte",
+                "Wahlverwaltung"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die in der Quelle beschriebenen weiteren Manöver und Konflikte treten ein und werden öffentlich zugespitzt verarbeitet.",
+              "reference_space": "USA, Wahlverwaltung und öffentlicher demokratischer Diskurs",
+              "time_horizon": "bis zur Wahl und im anschließenden institutionellen Diskurs",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Konflikte über Briefwahl werden als Zweifel an der Legitimität des Wahlprozesses interpretiert.",
+              "source_support": "Die Quelle berichtet über mögliche weitere Manöver, vorbereitete Auseinandersetzungen und eine zugespitzte politische Reaktion.",
+              "limitations": "Keine Daten zu Vertrauen, Polarisierung, tatsächlicher Wahlverwaltung oder Verhalten der Wahlberechtigten.",
+              "first_order": "Wahlhelfer und Wählende könnten mit zusätzlicher Unsicherheit konfrontiert werden.",
+              "second_order": "Die Bewertung von Gericht, Regierung und Wahlverwaltung könnte stärker auseinandergehen.",
+              "third_order": "Anhaltende Konflikte könnten die demokratische Korrekturfähigkeit durch Misstrauen und Blockaden schwächen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle beschreibt ein mögliches Konfliktfeld, aber keine eingetretene institutionelle Schädigung."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der Bestand belegt politische Zuspitzung und mögliche Konflikte, aber keine gemessene Vertrauens- oder Verhaltensänderung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Konflikt kann öffentliche Institutionen und Wahlberechtigte erreichen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Belastung ist politisch relevant, aber nicht quantifiziert.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Weitere Konflikte könnten sich bis zur Wahl hinziehen; ihre Dauer bleibt offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Vertrauensverluste können fortwirken, sind aber grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit geringem institutionellem Vertrauen könnten stärker auf Zuspitzungen reagieren.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Legitimität, Wahlverwaltung und öffentliche Diskurse.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein konkreter institutioneller Schaden ist nicht belegt; die Grenze bleibt ein bedingtes Risiko.",
+                "reference_frame": "Vertrauen in faire Wahlen und rechtsstaatliche Institutionen",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Die mediale Krisenrahmung könnte Polarisierung und Misstrauen gegenüber Institutionen verstärken.",
+              "mechanism": "Wiederholung zugespitzter Begriffe kann den Konflikt als umfassende Bedrohung der Demokratie rahmen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Wahlberechtigte",
+                "demokratische Institutionen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die Rahmung wird wiederholt und ohne zusätzliche Kontextualisierung rezipiert.",
+              "reference_space": "öffentlicher Diskurs in den USA und darüber hinaus",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die zugespitzte Formulierung erreicht ein relevantes Publikum und beeinflusst dessen Deutung.",
+              "source_support": "Die Quelle enthält eine zugespitzte Überschrift und wertende Formulierungen; Publikumswirkungen sind nicht belegt.",
+              "limitations": "Kein Publikumsnachweis und keine Messung von Polarisierung oder Vertrauen.",
+              "first_order": "Der Konflikt könnte als umfassende demokratische Krise wahrgenommen werden.",
+              "second_order": "Institutionelle Akteure könnten stärker parteipolitisch bewertet werden.",
+              "third_order": "Wiederholung könnte die Bereitschaft zu kompromissorientierter institutioneller Korrektur schwächen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein Resonanzrisiko ist plausibel, aber ohne Publikumsdaten klein und unsicher einzustufen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Evidenz für eine tatsächliche Medienwirkung; nur ein quellengebundenes Resonanzrisiko ist modellierbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Reichweite des einzelnen Beitrags ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Deutungswirkung ist möglich, aber nicht gemessen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Rahmungswirkung ist offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Diskursive Deutungen können durch weitere Informationen korrigiert werden.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Polarisierte Öffentlichkeiten können zugespitzte Rahmungen anfälliger aufnehmen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad betrifft Diskurs und institutionelle Wahrnehmung, nicht unmittelbar Regeln.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein konkreter demokratischer Schutzschaden ist nicht beobachtet.",
+                "reference_frame": "informierter und pluraler demokratischer Diskurs",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der stärkste bedingte Pfad ist positiv: gerichtliche Kontrolle könnte Wahlzugang und demokratische Korrekturfähigkeit schützen. Gegenpfade durch Konflikt und mediale Zuspitzung bleiben relevant, sind aber schwächer belegt und nicht als eingetretene Schäden nachgewiesen.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative Demokratiepfade sind materiell vergleichbar. Die Schutzgrenze des Wahlzugangs und der gerichtlichen Kontrolle ist entscheidend, während negative Vertrauens- und Diskurspfade nur als Risiken modelliert werden."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die gerichtliche Zurückweisung könnte Wahlzugang und demokratische Korrekturfähigkeit gegenüber exekutiven Eingriffen stützen.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Die gerichtliche Zurückweisung könnte Wahlzugang und demokratische Korrekturfähigkeit gegenüber exekutiven Eingriffen stützen.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "staat",
+          "kinder_jugend",
+          "aeltere"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Der Beitrag verbindet einen gerichtlichen Vorgang mit zugespitzten Aussagen über Bedrohung, Unberechenbarkeit und die US-Demokratie.",
+        "factual_core": "Die taz berichtet über eine Zurückweisung eines Vorhabens zur bürokratischen Erschwerung der Briefwahl durch den Supreme Court.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die taz berichtet über die Zurückweisung des Vorhabens zur Erschwerung der Briefwahl."
+          ],
+          "actor_claims": [
+            "Die taz berichtet über das gerichtliche Vorgehen und ordnet es als Begrenzung eines Eingriffs ein."
+          ],
+          "open": [
+            "Vollständiger Beschluss, Umsetzung und Folgen für Wahlzugang und Vertrauen"
+          ]
+        },
+        "attribution": {
+          "frame_source": "taz-aktuell",
+          "speaker": "taz",
+          "original_term": "Die US-Demokratie ist doch noch nicht ganz verloren",
+          "usage_type": "editorial",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Die US-Demokratie ist doch noch nicht ganz verloren",
+          "origin_in_story": "taz-aktuell",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Die US-Demokratie ist doch noch nicht ganz verloren",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die politische und institutionelle Auseinandersetzung wird als Gefährdung der Demokratie beschrieben.",
+          "implied_cause": "Konflikte um exekutive Eingriffe in Wahlen und den Widerstand des Gerichts.",
+          "implied_responsibility": "Die Quelle legt die Verantwortung vor allem beim Präsidenten und seiner Regierung nahe.",
+          "implied_threat": "Weitere Eingriffe könnten Wahlzugang und institutionelle Stabilität belasten.",
+          "implied_solution_space": "Gerichtliche Begrenzung und institutionelle Gegenwehr.",
+          "material_omissions": [
+            "Der vollständige juristische Inhalt und unabhängige Folgenmessungen fehlen."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "politisch umkämpfter Konflikt zwischen Exekutive und Gericht über Wahlregeln",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "taz-aktuell",
+              "claim_supported": "Die Quelle berichtet über Trumps Vorhaben zur Erschwerung der Briefwahl und die Zurückweisung durch den Supreme Court."
+            }
+          ],
+          "uncertainty": "Die Quelle ist eine journalistische Darstellung ohne unabhängige Bestätigung im gelieferten Bestand."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Wahlrecht, Unabhängigkeit des Gerichts und Vertrauen in demokratische Institutionen",
+          "normalization_potential": "medium",
+          "repetition_risk": "high",
+          "polarization_potential": "Die zugespitzte Gegenüberstellung von Präsident und Gericht kann politische Lagerbildung verstärken.",
+          "trust_effect_potential": "Vertrauen in Gerichte könnte gestärkt, Vertrauen in politische Institutionen aber auch belastet werden.",
+          "discourse_effect_potential": "Der Beitrag kann die gerichtliche Entscheidung als Beleg für demokratische Gegenwehr rahmen."
+        },
+        "impact_path": {
+          "first_order": "Die Darstellung macht den Konflikt um Briefwahl und gerichtliche Kontrolle sichtbar.",
+          "second_order": "Die zugespitzte Rahmung kann Bewertungen von Präsident, Gericht und Wahlverwaltung beeinflussen.",
+          "third_order": "Wiederholte Rahmungen könnten den öffentlichen Diskurs über demokratische Stabilität und institutionelle Legitimität prägen."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Die taz berichtet über die Zurückweisung des Vorhabens zur Erschwerung der Briefwahl.",
+          "what_is_inferred": "Die Darstellung kann Resonanz für institutionelle Schutzfunktionen erzeugen.",
+          "what_is_open": "Kein Publikumsnachweis Keine unabhängige Medienvergleichsbasis Keine Messung einer tatsächlichen Einstellungs- oder Verhaltensänderung",
+          "facts": [
+            "Die taz berichtet über die Zurückweisung des Vorhabens zur Erschwerung der Briefwahl."
+          ],
+          "observations": [
+            "Die Quelle verwendet eine zugespitzte Überschrift und wertende Formulierungen."
+          ],
+          "inferences": [
+            "Die Darstellung kann Resonanz für institutionelle Schutzfunktionen erzeugen."
+          ],
+          "impact_potentials": [
+            "Mögliche stärkere Aufmerksamkeit für Wahlzugang und gerichtliche Kontrolle."
+          ],
+          "impact_risks": [
+            "Mögliche Polarisierung durch Bedrohungs- und Krisenrahmen."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Kein Publikumsnachweis",
+            "Keine unabhängige Medienvergleichsbasis",
+            "Keine Messung einer tatsächlichen Einstellungs- oder Verhaltensänderung"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung handelt von einem Streit über die Briefwahl in den USA. Die taz berichtet, der Supreme Court habe ein Vorhaben zurückgewiesen, das die Briefwahl bürokratisch erschweren sollte. Das ist zunächst ein belegter Bericht über einen gerichtlichen Vorgang, nicht über bereits gemessene Folgen. Möglich wäre, dass Menschen ihre Stimme leichter per Brief abgeben können, wenn die Entscheidung praktisch umgesetzt wird. Ebenso könnte der Fall zeigen, dass ein Gericht Grenzen für die Exekutive setzt. Die Quelle beschreibt aber auch weitere Konflikte und warnt vor möglichen Auseinandersetzungen rund um die Wahl. Unklar bleiben der genaue Inhalt des vollständigen Beschlusses, seine Umsetzung und die Wirkung auf Vertrauen oder Wahlbeteiligung. Die zugespitzte Überschrift der taz rahmt den Vorgang als Zeichen demokratischer Gegenwehr.",
+        "editorial_assessment": "Die Meldung handelt von einem Streit über die Briefwahl in den USA. Die taz berichtet, der Supreme Court habe ein Vorhaben zurückgewiesen, das die Briefwahl bürokratisch erschweren sollte. Das ist zunächst ein belegter Bericht über einen gerichtlichen Vorgang, nicht über bereits gemessene Folgen. Möglich wäre, dass Menschen ihre Stimme leichter per Brief abgeben können, wenn die Entscheidung praktisch umgesetzt wird. Ebenso könnte der Fall zeigen, dass ein Gericht Grenzen für die Exekutive setzt. Die Quelle beschreibt aber auch weitere Konflikte und warnt vor möglichen Auseinandersetzungen rund um die Wahl. Unklar bleiben der genaue Inhalt des vollständigen Beschlusses, seine Umsetzung und die Wirkung auf Vertrauen oder Wahlbeteiligung. Die zugespitzte Überschrift der taz rahmt den Vorgang als Zeichen demokratischer Gegenwehr.",
+        "fact_first_alternative": "Der Supreme Court hat laut taz ein Vorhaben zur bürokratischen Erschwerung der Briefwahl zurückgewiesen. Die praktischen und demokratischen Folgen sind noch offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Die ursprüngliche Überschrift verwendet einen zugespitzten Krisen- und Bedrohungsrahmen.",
+            "Die Quelle ist nicht unabhängig bestätigt.",
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Laut taz: Supreme Court stoppt Trumps Vorhaben zur Einschränkung der Briefwahl",
+          "recommended_summary": "Der Supreme Court hat laut taz Trumps Vorhaben zur Erschwerung der Briefwahl zurückgewiesen. Die Folgen für Wahlzugang und institutionelles Vertrauen bleiben offen.",
+          "recommended_meta_description": "Die taz berichtet über eine gerichtliche Zurückweisung von Trumps Vorhaben zur Erschwerung der Briefwahl. Umsetzung und Folgen sind offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T18:38:34.175Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T18:19:00.000Z",
+      "last_updated": "2026-09-19T18:40:38.037Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e196139b74756726e5b6",
+      "case_file": null,
+      "source_published_at": "2026-09-19T18:19:00.000Z",
+      "published_at": "2026-09-19T18:40:38.037Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, wie die Entscheidung des Supreme Court umgesetzt wird und ob weitere Versuche zur Einschränkung der Briefwahl folgen.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "weitere Gerichtsentscheidungen oder neue staatliche Vorgaben zur Briefwahl",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-97aafa49f874f400",
+          "announced_at": "2026-09-19T18:19:00.000Z",
+          "follow_up_date": "2026-09-26T18:40:38.037Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Midterms-in-den-USA/!6212564",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T18:19:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a6d938f4673b24e5",
       "title_image": {
