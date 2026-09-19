@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-19T10:23:28.266Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-19T10:53:58.383Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -98,6 +98,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/was-fur-ein-wahnsinn-grune-kritisieren-tankrabatt-plane-ddcf4e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/was-fur-ein-wahnsinn-grune-kritisieren-tankrabatt-plane-ddcf4e/",
+      "title": "Tankrabatt und Spritpreisdeckel geplant – Kritik an Entlastung",
+      "summary": "Die Bundesregierung plant einen Tankrabatt und einen späteren Spritpreisdeckel. Kritik richtet sich gegen Zielgenauigkeit, Kosten und die mögliche Weitergabe der Entlastung.",
+      "date_published": "2026-09-19T08:24:00.000Z",
+      "date_modified": "2026-09-19T08:24:00.000Z",
+      "_woek_released_at": "2026-09-19T10:55:41.332Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
