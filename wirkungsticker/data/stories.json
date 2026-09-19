@@ -2,8 +2,1473 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T18:53:36.885Z",
+  "updated_at": "2026-09-19T19:08:30.136Z",
   "stories": [
+    {
+      "story_id": "wt-a1b3015132af6390",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a1b3015132af6390-e51aed411045ed53-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a1b3015132af6390-a859847d7e212bbf-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-a1b3015132af6390-259121708c7ac609-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "mediensucht-oft-bemerken-eltern-zu-spat-dass-ihr-kind-abhangig-ist-betroffene-berichten-af6390",
+      "title": "Problematisches Nutzungsverhalten sozialer Medien: Betroffene machen Therapie",
+      "source_summary": "Der stern berichtet über Kinder und Jugendliche mit problematischem Nutzungsverhalten sozialer Medien. Als Größenordnung nennt der Beitrag 1,4 Millionen Betroffene in Deutschland und verweist dabei auf eine DAK-Studie.\n\nIm Mittelpunkt stehen Eric und Lilleth, die wegen ihres Umgangs mit sozialen Medien eine Therapie machen. Der Beitrag stellt damit individuelle Erfahrungen neben die genannte Studienangabe.\n\nDie vorliegende Quelle ist ein journalistischer Bericht. Die Originalstudie, ihre Methode, der genaue Untersuchungszeitraum und die Abgrenzung des problematischen Nutzungsverhaltens liegen in der Akte nicht vor; die Zahlen und Einordnungen sind daher nur aus dieser Quelle belegt.",
+      "summary": "Ein stern-Bericht verbindet eine DAK-Studienangabe mit den Therapieerfahrungen von Eric und Lilleth. Die Größenordnung ist aus einer einzigen journalistischen Quelle belegt, während Methode und Kontext der Studie offenbleiben.",
+      "detail_summary": "Der stern berichtet über 1,4 Millionen Kinder und Jugendliche in Deutschland, denen eine DAK-Studie ein problematisches Nutzungsverhalten sozialer Medien zuschreibt. Zugleich schildert der Beitrag Eric und Lilleth, die deshalb eine Therapie machen. Nachrichtenwert entsteht durch die Verbindung einer quantitativen Angabe mit konkreten Betroffenen und dem Thema gesundheitlicher Unterstützung. Möglich ist, dass solche Befunde Aufmerksamkeit für frühe Hilfen, Beratung und Medienbildung lenken. Nicht belegt sind jedoch die Studienmethode, der genaue Zeitraum und die Frage, wie viele Familien tatsächlich Unterstützung erreichen.",
+      "why_relevant": "Die Meldung verbindet eine große, aber nur einfach belegte Zustandsangabe mit individuellen Therapieerfahrungen und kann dadurch die Debatte über Hilfen und Mediennutzung prägen.",
+      "topic": [
+        "Soziales",
+        "Demokratie"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Journalistischer Bericht über problematisches Nutzungsverhalten sozialer Medien, eine zugeschriebene DAK-Studienangabe und zwei Therapieerfahrungen.",
+        "evaluation_target": {
+          "label": "Bericht und seine mögliche Wirkung auf Wahrnehmung, Hilfesuche und öffentliche Einordnung",
+          "type": "communication"
+        },
+        "baseline": "Vor dem Bericht liegen in der Akte keine belegten Veränderungen von Wahrnehmung, Hilfesuche oder Versorgung vor.",
+        "counterfactual": "Ohne den Bericht könnten die konkrete Studienangabe und die beiden Fallgeschichten in diesem Kommunikationszusammenhang weniger sichtbar sein; andere Informationsquellen bleiben möglich.",
+        "reference_frame": [
+          "Gesundheit und Zugang zu Unterstützung",
+          "Kindeswohl und nicht-stigmatisierende Einordnung",
+          "Informationsqualität und demokratische Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Bericht könnte Wahrnehmung, Gespräche und Hilfesuche beeinflussen. Belastbare Daten zu tatsächlichen Gesundheits- oder Versorgungseffekten fehlen.",
+            "planet": "Ein plausibler direkter ökologischer Wirkpfad ist für diesen Bericht nicht erkennbar; ein praktisch vernachlässigbarer Pfad wird modelliert.",
+            "democracy": "Der Bericht könnte öffentliche Problemdeutungen und Prioritäten beeinflussen. Eine institutionelle oder politische Folge ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Veränderung von Aufmerksamkeit und Informationssuche durch Studienangabe und Fallgeschichten.",
+          "second_order": "Mögliche Veränderung von Gesprächen, Beratungsnachfrage und Problemkategorien unter der Bedingung, dass der Bericht Reichweite und Vertrauen erhält.",
+          "third_order": "Mögliche Verfestigung eines vereinfachten Narrativs über Mediennutzung und Therapie bei wiederholter, kontextarmer Vermittlung; empirisch offen.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt weder eine tatsächliche Reichweite noch eine Veränderung von Verhalten, Versorgung oder politischer Entscheidung.",
+            "Die fehlende Originalstudie begrenzt die Einordnung der genannten Größenordnung."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle eines Verlags vor. Die DAK-Studie wird lediglich über den Bericht zugeschrieben; unabhängige Bestätigung fehlt.",
+          "institutional_status": "Es ist kein Beschluss, keine Rechtsänderung und keine belegte Umsetzung erkennbar. Der Gegenstand ist ein journalistischer Bericht mit zugeschriebenen Studien- und Fallangaben."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle trägt einen möglichen Informations- und Hilfesuchpfad, aber keine Messung von Gesundheits-, Versorgungs- oder Verhaltensänderungen. Die Originalstudie ist nicht geliefert.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Bericht über problematische Mediennutzung könnte Aufmerksamkeit, Gespräche und die Suche nach Unterstützung fördern. Ein Gegenpfad ist möglich, wenn die Darstellung stigmatisiert oder übergeneralisiert. Die Richtung des Hauptpfads ist daher vorsichtig positiv modelliert, bei niedriger Evidenz.",
+            "primary_paths": [
+              {
+                "label": "Bericht erhöht Aufmerksamkeit für Unterstützung bei problematischer Mediennutzung",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine zugeschriebene Größenangabe und konkrete Therapieerfahrungen könnten Eltern, Jugendliche und Fachkräfte zur Informations- oder Hilfesuche veranlassen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Eltern",
+                  "Fachkräfte der Beratung und Therapie"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite der Zahl ist groß, doch tatsächliche Rezeption und Umsetzungsfähigkeit von Hilfen sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt eine große betroffene Gruppe, belegt aber keine tatsächliche Reichweite des Berichts.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Fallgeschichten können Aufmerksamkeit verstärken, ihre konkrete Wirkung bleibt ungemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine längerfristige Wirkung ist möglich, aber weder Verlauf noch Wiederholung sind belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Informationswirkungen können durch weitere Einordnung und Beratung grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Kinder und Jugendliche können von problematischer Nutzung und unpassender Einordnung besonders betroffen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Familienentscheidungen und Beratungsnachfrage berühren, nicht aber nachweislich Institutionen verändern.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Grenzverletzung; ein Schutzinteresse bei Kindern ist dennoch relevant.",
+                  "reference_frame": "Zugang zu nicht-stigmatisierender Unterstützung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Bericht muss wahrgenommen werden und die Betroffenen müssen erreichbare, passende Unterstützung vorfinden.",
+                "reference_space": "Deutschland; Familien, Jugendliche und unterstützende Fachstellen",
+                "time_horizon": "Kurz- bis mittelfristig nach der Veröffentlichung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Informationsaufnahme führt nicht automatisch zu Hilfesuche; die angenommene Wirkung setzt Vertrauen und erreichbare Angebote voraus.",
+                "source_support": "Die Quelle belegt die Studienangabe und zwei Therapieerfahrungen, nicht den Wirkmechanismus.",
+                "limitations": "Keine Reichweiten-, Verhaltens- oder Versorgungsdaten; Originalstudie nicht vorgelegt.",
+                "first_order": "Möglicherweise mehr Aufmerksamkeit und Gespräche über problematische Mediennutzung.",
+                "second_order": "Möglicherweise mehr Nachfrage nach Beratung oder Therapie, sofern Angebote erreichbar sind.",
+                "third_order": "Mögliche stärkere Verankerung von Unterstützungsangeboten in Familiengesprächen; institutionelle Veränderung bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst eine tatsächliche Veränderung von Hilfesuche oder Versorgung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Stigmatisierende oder übergeneralisierende Einordnung erschwert offene Gespräche",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Die Verbindung einer großen Zahl mit individuellen Therapiegeschichten könnte intensive Mediennutzung pauschal problematisieren.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Familien"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Schaden ist begrenzt und nicht beobachtet, aber bei vulnerablen Betroffenen plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keine Reichweite über den einzelnen Bericht hinaus.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine negative Einordnung könnte einzelne Gespräche beeinflussen, ihre Stärke ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Effekt wäre wahrscheinlich korrigierbar, sofern Kontext und Gegenstimmen verfügbar sind.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Stigmatisierende Eindrücke können durch weitere Informationen grundsätzlich revidiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Jugendliche mit Unterstützungsbedarf könnten auf pauschale Zuschreibungen empfindlich reagieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller oder struktureller Effekt ist aus der Quelle nicht ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenzverletzung ist nicht belegt; das Risiko betrifft die mögliche Einordnung.",
+                  "reference_frame": "Nicht-stigmatisierende Gesundheitsinformation",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Bericht müsste pauschal gelesen oder wiederholt werden, ohne die Grenzen der Studienangabe zu beachten.",
+                "reference_space": "Familien und öffentliche Gesundheitskommunikation in Deutschland",
+                "time_horizon": "Kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die mögliche Einordnung wird nicht als Absicht des Berichts behauptet.",
+                "source_support": "Die Quelle enthält eine Studienzahl und Fallgeschichten, aber keine Messung von Stigmatisierung.",
+                "limitations": "Keine Publikumsdaten, keine unabhängige Inhaltsanalyse und keine Verhaltensdaten.",
+                "first_order": "Möglicherweise pauschalere Gespräche über Mediennutzung.",
+                "second_order": "Möglicherweise geringere Offenheit bei einzelnen Betroffenen.",
+                "third_order": "Eine breitere Normalisierung eines vereinfachten Problemframes ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine Evidenz zu Stigmatisierung oder veränderter Hilfenutzung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein möglicher Unterstützungsnutzen steht einem kleinen, unsicheren Stigmatisierungsrisiko gegenüber; keiner der Pfade ist als eingetreten belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Bericht erhöht Aufmerksamkeit für Unterstützung bei problematischer Mediennutzung",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bericht erhöht Aufmerksamkeit für Unterstützung bei problematischer Mediennutzung",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Für den Kommunikationsgegenstand ist in der gelieferten Quelle kein plausibler direkter ökologischer Zustandswechsel erkennbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der Bericht betrifft Mediennutzung, Therapie und gesundheitliche Einordnung. Ein materieller ökologischer Pfad ist im abgegrenzten Gegenstand nicht plausibel.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller ökologischer Zustandswechsel durch den Bericht",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Der Gegenstand enthält keine belegte Veränderung von Energie-, Material- oder Flächennutzung.",
+                "recipients": [
+                  "Ökosysteme",
+                  "künftige Generationen"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im abgegrenzten Kommunikationsereignis ist kein materieller ökologischer Pfad erkennbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite des Gegenstands belegt oder plausibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Belastung beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung des Berichts erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung im Gegenstand angelegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine konkret betroffenen Ökosysteme oder vulnerablen Umweltgüter benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemveränderung durch den Bericht plausibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch den Gegenstand berührt.",
+                  "reference_frame": "Ökologische Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur eine nicht belegte indirekte Kommunikationskaskade könnte den Pfad verändern; dafür gibt es keinen Hinweis.",
+                "reference_space": "Deutschland und der Kommunikationsgegenstand des Berichts",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der Gegenstand bleibt auf gesundheitliche und kommunikative Einordnung begrenzt.",
+                "source_support": "Die Quelle enthält keine ökologische Aussage.",
+                "limitations": "Keine Umwelt- oder Ressourceninformationen in der gelieferten Quelle.",
+                "first_order": "Keine erkennbare ökologische Zustandsänderung.",
+                "second_order": "Keine belastbare ökologische Folge ableitbar.",
+                "third_order": "Keine belastbare ökologische Systemfolge ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Eine gezielte Prüfung der gelieferten Quelle ergab keinen ökologischen Mechanismus.",
+                "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum ist keine materielle ökologische Änderung durch den Bericht erkennbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen ökologischen Hauptpfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den Bericht",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den Bericht",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle erlaubt nur einen schwachen Informationspfad; sie belegt keine Veränderung politischer Entscheidungen, Institutionen oder öffentlicher Meinungsbildung.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Gesundheitsbezogene Berichterstattung kann öffentliche Problemwahrnehmung und Prioritätensetzung beeinflussen. Der demokratische Pfad bleibt schwach, weil Reichweite, Rezeption und politische Anschlussentscheidungen nicht belegt sind.",
+            "primary_paths": [
+              {
+                "label": "Bericht erweitert die öffentliche Informationsgrundlage zu Mediennutzung und Hilfen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Kombination aus Studienangabe und Fallgeschichten könnte Gespräche und öffentliche Aufmerksamkeit für Unterstützungsangebote auslösen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Eltern",
+                  "Fachkräfte",
+                  "politische Entscheidungsträger"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Informationsimpuls kann klein bleiben; eine breitere politische Wirkung ist nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keine Reichweite oder Verbreitung über den Bericht hinaus.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Beitrag kann ein Thema sichtbar machen, ohne institutionelle Entscheidungen auszulösen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine länger anhaltende Priorisierung ist möglich, aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche Einordnungen sind durch weitere Informationen und Korrekturen grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene Familien können von guter Information profitieren, sind aber auch für vereinfachte Deutungen verletzlich.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Bericht könnte Problemdefinitionen und Prioritäten berühren, nicht aber nachweislich Institutionen oder Machtverhältnisse.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wie Wahlbeeinflussung oder institutionelle Ausschaltung ist nicht belegt.",
+                  "reference_frame": "Zugang zu verlässlicher öffentlicher Information",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Beitrag muss öffentliche Aufmerksamkeit erreichen und in weitere Debatten oder Entscheidungen eingehen.",
+                "reference_space": "Öffentliche Gesundheitsdebatte in Deutschland",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Mediale Sichtbarkeit kann Informationsgrundlagen verändern, ohne automatisch politische Wirkung zu erzeugen.",
+                "source_support": "Die Quelle belegt den journalistischen Kommunikationsanlass, nicht dessen demokratische Wirkung.",
+                "limitations": "Keine Publikums-, Diskurs- oder Entscheidungsdaten; keine unabhängige Gegenquelle.",
+                "first_order": "Möglicherweise mehr öffentliche Aufmerksamkeit für das Thema.",
+                "second_order": "Möglicherweise stärkere Nachfrage nach politischen oder institutionellen Antworten.",
+                "third_order": "Eine längerfristige Verschiebung von Prioritäten ist denkbar, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keinen Nachweis einer politischen Reaktion oder institutionellen Veränderung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Vereinfachte Problemdeutung verengt den öffentlichen Lösungsraum",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn die Studienangabe ohne Methoden- und Kontextprüfung übernommen wird, könnte die Debatte stärker auf individuelle Therapie statt auf unterschiedliche Ursachen und Hilfen verengt werden.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Betroffene",
+                  "politische Entscheidungsträger"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Diskurseffekt ist begrenzt und nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Keine Reichweite oder Wiederholung des Beitrags ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Verengung wäre kommunikativ, nicht unmittelbar institutionell.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Weitere Berichte und Studien könnten die Einordnung korrigieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Der mögliche Diskurseffekt ist grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene könnten von einer einseitigen Problemdefinition stärker berührt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Veränderung demokratischer Institutionen ist nicht plausibel belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete demokratische Schutzgrenze ist verletzt oder nachweislich gefährdet.",
+                  "reference_frame": "Pluraler und überprüfbarer öffentlicher Diskurs",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Bericht müsste wiederholt oder ohne methodischen Kontext als allgemeine Erklärung verwendet werden.",
+                "reference_space": "Öffentlicher Diskurs über Kinder, Jugendliche und digitale Medien",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die mögliche Verengung wird nicht als Absicht des Verlags behauptet.",
+                "source_support": "Die Quelle stellt Studienangabe und Fallgeschichten zusammen, misst aber keinen Diskurseffekt.",
+                "limitations": "Keine unabhängige Diskursanalyse und keine Publikumsdaten.",
+                "first_order": "Möglicherweise stärkere Konzentration auf das Therapienarrativ.",
+                "second_order": "Möglicherweise geringere Sichtbarkeit anderer Erklärungen und Unterstützungsformen.",
+                "third_order": "Eine verengte Prioritätensetzung wäre möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst eine Veränderung des öffentlichen Lösungsraums oder politischer Prioritäten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein kleiner möglicher Informationsgewinn steht einem ebenso kleinen, unsicheren Verengungsrisiko gegenüber; beide Folgen sind ungemessen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Bericht erweitert die öffentliche Informationsgrundlage zu Mediennutzung und Hilfen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bericht erweitert die öffentliche Informationsgrundlage zu Mediennutzung und Hilfen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T19:09:45.009Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Der stern-Bericht belegt die zugeschriebene DAK-Studienangabe sowie die Therapieerfahrungen von Eric und Lilleth; er belegt keine Wirkungsdaten."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle trägt einen möglichen Informations- und Hilfesuchpfad, aber keine Messung von Gesundheits-, Versorgungs- oder Verhaltensänderungen. Die Originalstudie ist nicht geliefert.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Bericht über problematische Mediennutzung könnte Aufmerksamkeit, Gespräche und die Suche nach Unterstützung fördern. Ein Gegenpfad ist möglich, wenn die Darstellung stigmatisiert oder übergeneralisiert. Die Richtung des Hauptpfads ist daher vorsichtig positiv modelliert, bei niedriger Evidenz.",
+          "primary_paths": [
+            {
+              "label": "Bericht erhöht Aufmerksamkeit für Unterstützung bei problematischer Mediennutzung",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine zugeschriebene Größenangabe und konkrete Therapieerfahrungen könnten Eltern, Jugendliche und Fachkräfte zur Informations- oder Hilfesuche veranlassen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Eltern",
+                "Fachkräfte der Beratung und Therapie"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite der Zahl ist groß, doch tatsächliche Rezeption und Umsetzungsfähigkeit von Hilfen sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt eine große betroffene Gruppe, belegt aber keine tatsächliche Reichweite des Berichts.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Fallgeschichten können Aufmerksamkeit verstärken, ihre konkrete Wirkung bleibt ungemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine längerfristige Wirkung ist möglich, aber weder Verlauf noch Wiederholung sind belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Informationswirkungen können durch weitere Einordnung und Beratung grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Kinder und Jugendliche können von problematischer Nutzung und unpassender Einordnung besonders betroffen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Familienentscheidungen und Beratungsnachfrage berühren, nicht aber nachweislich Institutionen verändern.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Grenzverletzung; ein Schutzinteresse bei Kindern ist dennoch relevant.",
+                "reference_frame": "Zugang zu nicht-stigmatisierender Unterstützung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Bericht muss wahrgenommen werden und die Betroffenen müssen erreichbare, passende Unterstützung vorfinden.",
+              "reference_space": "Deutschland; Familien, Jugendliche und unterstützende Fachstellen",
+              "time_horizon": "Kurz- bis mittelfristig nach der Veröffentlichung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Informationsaufnahme führt nicht automatisch zu Hilfesuche; die angenommene Wirkung setzt Vertrauen und erreichbare Angebote voraus.",
+              "source_support": "Die Quelle belegt die Studienangabe und zwei Therapieerfahrungen, nicht den Wirkmechanismus.",
+              "limitations": "Keine Reichweiten-, Verhaltens- oder Versorgungsdaten; Originalstudie nicht vorgelegt.",
+              "first_order": "Möglicherweise mehr Aufmerksamkeit und Gespräche über problematische Mediennutzung.",
+              "second_order": "Möglicherweise mehr Nachfrage nach Beratung oder Therapie, sofern Angebote erreichbar sind.",
+              "third_order": "Mögliche stärkere Verankerung von Unterstützungsangeboten in Familiengesprächen; institutionelle Veränderung bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst eine tatsächliche Veränderung von Hilfesuche oder Versorgung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Stigmatisierende oder übergeneralisierende Einordnung erschwert offene Gespräche",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Die Verbindung einer großen Zahl mit individuellen Therapiegeschichten könnte intensive Mediennutzung pauschal problematisieren.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Familien"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Schaden ist begrenzt und nicht beobachtet, aber bei vulnerablen Betroffenen plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keine Reichweite über den einzelnen Bericht hinaus.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine negative Einordnung könnte einzelne Gespräche beeinflussen, ihre Stärke ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Effekt wäre wahrscheinlich korrigierbar, sofern Kontext und Gegenstimmen verfügbar sind.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Stigmatisierende Eindrücke können durch weitere Informationen grundsätzlich revidiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Jugendliche mit Unterstützungsbedarf könnten auf pauschale Zuschreibungen empfindlich reagieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller oder struktureller Effekt ist aus der Quelle nicht ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenzverletzung ist nicht belegt; das Risiko betrifft die mögliche Einordnung.",
+                "reference_frame": "Nicht-stigmatisierende Gesundheitsinformation",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Bericht müsste pauschal gelesen oder wiederholt werden, ohne die Grenzen der Studienangabe zu beachten.",
+              "reference_space": "Familien und öffentliche Gesundheitskommunikation in Deutschland",
+              "time_horizon": "Kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die mögliche Einordnung wird nicht als Absicht des Berichts behauptet.",
+              "source_support": "Die Quelle enthält eine Studienzahl und Fallgeschichten, aber keine Messung von Stigmatisierung.",
+              "limitations": "Keine Publikumsdaten, keine unabhängige Inhaltsanalyse und keine Verhaltensdaten.",
+              "first_order": "Möglicherweise pauschalere Gespräche über Mediennutzung.",
+              "second_order": "Möglicherweise geringere Offenheit bei einzelnen Betroffenen.",
+              "third_order": "Eine breitere Normalisierung eines vereinfachten Problemframes ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine Evidenz zu Stigmatisierung oder veränderter Hilfenutzung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein möglicher Unterstützungsnutzen steht einem kleinen, unsicheren Stigmatisierungsrisiko gegenüber; keiner der Pfade ist als eingetreten belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bericht erhöht Aufmerksamkeit für Unterstützung bei problematischer Mediennutzung",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Bericht erhöht Aufmerksamkeit für Unterstützung bei problematischer Mediennutzung",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Für den Kommunikationsgegenstand ist in der gelieferten Quelle kein plausibler direkter ökologischer Zustandswechsel erkennbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der Bericht betrifft Mediennutzung, Therapie und gesundheitliche Einordnung. Ein materieller ökologischer Pfad ist im abgegrenzten Gegenstand nicht plausibel.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller ökologischer Zustandswechsel durch den Bericht",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Der Gegenstand enthält keine belegte Veränderung von Energie-, Material- oder Flächennutzung.",
+              "recipients": [
+                "Ökosysteme",
+                "künftige Generationen"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im abgegrenzten Kommunikationsereignis ist kein materieller ökologischer Pfad erkennbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite des Gegenstands belegt oder plausibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Belastung beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung des Berichts erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung im Gegenstand angelegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine konkret betroffenen Ökosysteme oder vulnerablen Umweltgüter benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemveränderung durch den Bericht plausibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch den Gegenstand berührt.",
+                "reference_frame": "Ökologische Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur eine nicht belegte indirekte Kommunikationskaskade könnte den Pfad verändern; dafür gibt es keinen Hinweis.",
+              "reference_space": "Deutschland und der Kommunikationsgegenstand des Berichts",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der Gegenstand bleibt auf gesundheitliche und kommunikative Einordnung begrenzt.",
+              "source_support": "Die Quelle enthält keine ökologische Aussage.",
+              "limitations": "Keine Umwelt- oder Ressourceninformationen in der gelieferten Quelle.",
+              "first_order": "Keine erkennbare ökologische Zustandsänderung.",
+              "second_order": "Keine belastbare ökologische Folge ableitbar.",
+              "third_order": "Keine belastbare ökologische Systemfolge ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Eine gezielte Prüfung der gelieferten Quelle ergab keinen ökologischen Mechanismus.",
+              "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum ist keine materielle ökologische Änderung durch den Bericht erkennbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen ökologischen Hauptpfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den Bericht",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein materieller ökologischer Zustandswechsel durch den Bericht",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle erlaubt nur einen schwachen Informationspfad; sie belegt keine Veränderung politischer Entscheidungen, Institutionen oder öffentlicher Meinungsbildung.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Gesundheitsbezogene Berichterstattung kann öffentliche Problemwahrnehmung und Prioritätensetzung beeinflussen. Der demokratische Pfad bleibt schwach, weil Reichweite, Rezeption und politische Anschlussentscheidungen nicht belegt sind.",
+          "primary_paths": [
+            {
+              "label": "Bericht erweitert die öffentliche Informationsgrundlage zu Mediennutzung und Hilfen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Kombination aus Studienangabe und Fallgeschichten könnte Gespräche und öffentliche Aufmerksamkeit für Unterstützungsangebote auslösen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Eltern",
+                "Fachkräfte",
+                "politische Entscheidungsträger"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Informationsimpuls kann klein bleiben; eine breitere politische Wirkung ist nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keine Reichweite oder Verbreitung über den Bericht hinaus.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Beitrag kann ein Thema sichtbar machen, ohne institutionelle Entscheidungen auszulösen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine länger anhaltende Priorisierung ist möglich, aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche Einordnungen sind durch weitere Informationen und Korrekturen grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene Familien können von guter Information profitieren, sind aber auch für vereinfachte Deutungen verletzlich.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Bericht könnte Problemdefinitionen und Prioritäten berühren, nicht aber nachweislich Institutionen oder Machtverhältnisse.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wie Wahlbeeinflussung oder institutionelle Ausschaltung ist nicht belegt.",
+                "reference_frame": "Zugang zu verlässlicher öffentlicher Information",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Beitrag muss öffentliche Aufmerksamkeit erreichen und in weitere Debatten oder Entscheidungen eingehen.",
+              "reference_space": "Öffentliche Gesundheitsdebatte in Deutschland",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Mediale Sichtbarkeit kann Informationsgrundlagen verändern, ohne automatisch politische Wirkung zu erzeugen.",
+              "source_support": "Die Quelle belegt den journalistischen Kommunikationsanlass, nicht dessen demokratische Wirkung.",
+              "limitations": "Keine Publikums-, Diskurs- oder Entscheidungsdaten; keine unabhängige Gegenquelle.",
+              "first_order": "Möglicherweise mehr öffentliche Aufmerksamkeit für das Thema.",
+              "second_order": "Möglicherweise stärkere Nachfrage nach politischen oder institutionellen Antworten.",
+              "third_order": "Eine längerfristige Verschiebung von Prioritäten ist denkbar, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keinen Nachweis einer politischen Reaktion oder institutionellen Veränderung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Vereinfachte Problemdeutung verengt den öffentlichen Lösungsraum",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn die Studienangabe ohne Methoden- und Kontextprüfung übernommen wird, könnte die Debatte stärker auf individuelle Therapie statt auf unterschiedliche Ursachen und Hilfen verengt werden.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Betroffene",
+                "politische Entscheidungsträger"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Diskurseffekt ist begrenzt und nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Keine Reichweite oder Wiederholung des Beitrags ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Verengung wäre kommunikativ, nicht unmittelbar institutionell.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Weitere Berichte und Studien könnten die Einordnung korrigieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Der mögliche Diskurseffekt ist grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene könnten von einer einseitigen Problemdefinition stärker berührt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Veränderung demokratischer Institutionen ist nicht plausibel belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete demokratische Schutzgrenze ist verletzt oder nachweislich gefährdet.",
+                "reference_frame": "Pluraler und überprüfbarer öffentlicher Diskurs",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Bericht müsste wiederholt oder ohne methodischen Kontext als allgemeine Erklärung verwendet werden.",
+              "reference_space": "Öffentlicher Diskurs über Kinder, Jugendliche und digitale Medien",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die mögliche Verengung wird nicht als Absicht des Verlags behauptet.",
+              "source_support": "Die Quelle stellt Studienangabe und Fallgeschichten zusammen, misst aber keinen Diskurseffekt.",
+              "limitations": "Keine unabhängige Diskursanalyse und keine Publikumsdaten.",
+              "first_order": "Möglicherweise stärkere Konzentration auf das Therapienarrativ.",
+              "second_order": "Möglicherweise geringere Sichtbarkeit anderer Erklärungen und Unterstützungsformen.",
+              "third_order": "Eine verengte Prioritätensetzung wäre möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst eine Veränderung des öffentlichen Lösungsraums oder politischer Prioritäten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein kleiner möglicher Informationsgewinn steht einem ebenso kleinen, unsicheren Verengungsrisiko gegenüber; beide Folgen sind ungemessen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bericht erweitert die öffentliche Informationsgrundlage zu Mediennutzung und Hilfen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Bericht erweitert die öffentliche Informationsgrundlage zu Mediennutzung und Hilfen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T19:08:30.136Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T18:14:00.000Z",
+      "last_updated": "2026-09-19T19:09:45.005Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-c80fc7d2a9b62a8d2ad2",
+      "case_file": null,
+      "source_published_at": "2026-09-19T18:14:00.000Z",
+      "published_at": "2026-09-19T19:09:45.005Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesundheit/handysucht--oft-bemerken-eltern-zu-spaet--dass-ihr-kind-abhaengig-ist-38257970.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T18:14:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ec6fb7b716959659",
       "title_image": {
