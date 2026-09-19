@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-18T16:00:00.000Z",
+  "updated_at": "2026-09-19T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-19-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-19",
+      "window_from": "2026-09-18T16:00:00.000Z",
+      "window_to": "2026-09-19T04:00:00.000Z",
+      "stand": "2026-09-19T04:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 8,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-1e97ba2918206370",
+          "slug": "explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370",
+          "title": "Laut Polizei mindestens 16 Tote bei Autobombenanschlag in Pakistan",
+          "state": "fortgeschrieben",
+          "at": "2026-09-19T03:56:27.613Z",
+          "score": 10.2451
+        },
+        {
+          "story_id": "wt-9ba8f6561ab6ac17",
+          "slug": "ehemaliger-uck-anfuhrer-erneut-proteste-im-kosovo-nach-verurteilung-von-ex-prasident-tha-b6ac17",
+          "title": "Erneut Proteste im Kosovo nach Verurteilung von Ex-Präsident Thaci",
+          "state": "neu",
+          "at": "2026-09-18T20:56:14.145Z",
+          "score": 7.4114
+        },
+        {
+          "story_id": "wt-5504cf4d9c233683",
+          "slug": "abtreibung-und-patriarchale-ordnung-allianzen-beim-rechten-rollback-233683",
+          "title": "Religiöse Rechte mobilisiert gegen Abtreibungsrechte und verlagert Aktivitäten in soziale Medien",
+          "state": "neu",
+          "at": "2026-09-18T20:27:01.861Z",
+          "score": 9.3709
+        },
+        {
+          "story_id": "wt-9d9acfb9daff09ee",
+          "slug": "us-prasident-unterstellt-ihnen-falschinformationen-trump-verbietet-medien-cnn-ms-now-und-ff09ee",
+          "title": "Laut Tagesspiegel: Trump untersagt CNN, MS NOW und Politico den Zutritt zum Weißen Haus",
+          "state": "neu",
+          "at": "2026-09-18T19:58:30.950Z",
+          "score": 5.3313
+        },
+        {
+          "story_id": "wt-11b46b6584d929e5",
+          "slug": "bund-und-lander-beschliessen-spritpreis-entlastungspaket-d929e5",
+          "title": "Bund und Länder beschließen Spritpreis-Entlastungspaket",
+          "state": "neu",
+          "at": "2026-09-18T19:11:46.164Z",
+          "score": 5.2663
+        },
+        {
+          "story_id": "wt-684e2fc65b04f7c3",
+          "slug": "video-autobombe-in-pakistan-explodiert-mindestens-20-tote-04f7c3",
+          "title": "Laut MDR: Autobombe explodiert an Polizeizentrale in Pakistan – mindestens 20 Tote",
+          "state": "neu",
+          "at": "2026-09-18T18:12:42.520Z",
+          "score": 9.1843
+        },
+        {
+          "story_id": "wt-1829a37198fc2de1",
+          "slug": "video-weniger-kinder-gleiche-kitas-darf-erfurt-sich-das-leisten-fc2de1",
+          "title": "Laut MDR: Erfurter Stadtrat hält Kita-Moratorium trotz Finanzstreit aufrecht",
+          "state": "neu",
+          "at": "2026-09-18T17:41:37.887Z",
+          "score": 7.1412
+        },
+        {
+          "story_id": "wt-096cc714e6f04271",
+          "slug": "ukraine-krieg-mehrere-opfer-bei-gegenseitigen-angriffen-f04271",
+          "title": "Laut Deutschlandfunk mehrere Tote und Verletzte bei gegenseitigen Angriffen in der Ukraine",
+          "state": "neu",
+          "at": "2026-09-18T17:12:08.525Z",
+          "score": 9.6002
+        },
+        {
+          "story_id": "wt-45e762dbc9da1dbe",
+          "slug": "schusse-in-koln-wer-sind-die-schutzen-da1dbe",
+          "title": "Schüsse in Köln: WDR berichtet über mehrere Tatorte und offene Ermittlungen",
+          "state": "neu",
+          "at": "2026-09-18T16:11:53.840Z",
+          "score": 9.2057
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-18-abendlage",
       "slot": "abendlage",
