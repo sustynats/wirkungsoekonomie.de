@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-19T19:08:30.136Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-19T19:42:41.463Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -317,6 +317,37 @@
         "planet": {
           "magnitude": 1,
           "direction": "positive",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/nach-warnung-vor-angriffen-auf-saudi-arabien-explosionen-und-rauchsaule-am-flughafen-ria-061e42/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/nach-warnung-vor-angriffen-auf-saudi-arabien-explosionen-und-rauchsaule-am-flughafen-ria-061e42/",
+      "title": "Explosionen und schwarze Rauchsäule nahe dem Flughafen Riad nach Luftalarm",
+      "summary": "Nach Luftalarm wurden nahe dem Flughafen Riad Explosionen und schwarzer Rauch gemeldet. Der Flugverkehr ist eingeschränkt, Ursache und mögliche Schäden bleiben offen.",
+      "date_published": "2026-09-19T12:33:07.000Z",
+      "date_modified": "2026-09-19T12:33:07.000Z",
+      "_woek_released_at": "2026-09-19T19:45:17.938Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
