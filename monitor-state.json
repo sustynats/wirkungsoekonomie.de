@@ -4,13 +4,14 @@
     "bridge-access": {
       "firstSeen": "2026-09-15T16:54:49.150Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-19T14:48:49.182Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f9722546bab13106b8e75a71",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-19T15:05:49.771Z"
+    }
+  ],
   "dailyDate": "2026-09-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1498,11 +1499,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-russland-will-mit-afd-bei-gaslieferungen-kooperieren-71ef0f/": {
         "first_seen_at": "2026-09-19T13:51:02.053Z",
         "source_at": "2026-09-19T13:20:44.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/gorch-fock-kriegstuchtig-zwischen-eisbergen-und-buckelwalen-6074aa/": {
+        "first_seen_at": "2026-09-19T15:05:49.771Z",
+        "source_at": "2026-09-19T12:57:59.000Z"
       }
     },
-    "last_new_at": "2026-09-19T13:51:02.053Z",
-    "checked_at": "2026-09-19T14:50:53.864Z",
-    "last_current_new_at": "2026-09-19T13:51:02.053Z"
+    "last_new_at": "2026-09-19T15:05:49.771Z",
+    "checked_at": "2026-09-19T15:05:49.771Z",
+    "last_current_new_at": "2026-09-19T15:05:49.771Z"
   },
   "recovery_attempts": [
     {
