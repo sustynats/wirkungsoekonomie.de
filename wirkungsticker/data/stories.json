@@ -2,8 +2,1469 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T09:53:38.451Z",
+  "updated_at": "2026-09-19T10:23:28.266Z",
   "stories": [
+    {
+      "story_id": "wt-6ff0e95859ad76f8",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-6ff0e95859ad76f8-aad1a32edd43c380-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-6ff0e95859ad76f8-4fa6e1191ab80084-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-6ff0e95859ad76f8-b47c60d0a729eddb-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-6ff0e95859ad76f8-0de058699ce5624c-source.png"
+        }
+      },
+      "slug": "kundigung-wann-eine-arbeitsrechtsschutzversicherung-sinnvoll-ist-ad76f8",
+      "title": "Kündigungsschutzklage kann laut Finanztip mehrere tausend Euro kosten",
+      "source_summary": "Der SWR berichtet über die Frage, wann eine Arbeitsrechtsschutzversicherung nach einer Kündigung sinnvoll sein kann. Als Grund nennt der Beitrag mögliche Anwalts- und Gerichtskosten sowie eine laut Finanztip-Expertin Henriette Neubert häufigere Inanspruchnahme solcher Versicherungen.\n\nFür ein Bruttomonatsgehalt von 5.000 Euro nennt der Bericht ein mögliches Kostenrisiko zwischen 3.400 und 4.200 Euro. Zugleich wird die Versicherung nicht als für alle notwendig dargestellt; wichtigere Versicherungen sollen zunächst bestehen.\n\nDer Beitrag nennt außerdem eine Selbstbeteiligung von höchstens 250 Euro und meist eine Wartezeit von drei Monaten. Die Auswahl ist eine journalistische Sekundärdarstellung; die Originalquelle von Finanztip und der vollständige Kontext liegen hier nicht vor.",
+      "summary": "Nach einer Kündigung können laut Finanztip hohe Kosten für eine Kündigungsschutzklage entstehen. Ob eine Arbeitsrechtsschutzversicherung sinnvoll ist, hängt vom Einzelfall und vom Zeitpunkt des Abschlusses ab.",
+      "detail_summary": "Der SWR beschreibt Arbeitsrechtsschutz als mögliche Absicherung gegen Anwalts- und Gerichtskosten nach einer Kündigung. Für ein Bruttomonatsgehalt von 5.000 Euro nennt der Bericht laut Finanztip ein mögliches Kostenrisiko von 3.400 bis 4.200 Euro. Zugleich sei die Versicherung nicht für jeden notwendig; Privathaftpflicht und Berufsunfähigkeitsversicherung werden als vorrangig genannt. Ein Abschluss vor einem konkret absehbaren Streit und eine Wartezeit von meist drei Monaten können den Zugang begrenzen. Offen bleibt, wie die Kostenangabe berechnet ist und welche Tarife und Ausschlüsse gelten.",
+      "why_relevant": "Der Bericht macht ein mögliches finanzielles Zugangsrisiko nach einer Kündigung sichtbar und verweist auf zeitliche sowie tarifliche Grenzen des Versicherungsschutzes.",
+      "topic": [
+        "Arbeit",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "SWR-Bericht über mögliche Kosten einer Kündigungsschutzklage und die Bedingungen einer Arbeitsrechtsschutzversicherung",
+        "evaluation_target": {
+          "label": "Information über private Absicherung arbeitsrechtlicher Prozesskosten",
+          "type": "communication"
+        },
+        "baseline": "Vor dem Bericht liegt für die Leserschaft keine belegte gemeinsame Informationsgrundlage zu den genannten Kosten- und Versicherungsbedingungen vor.",
+        "counterfactual": "Ohne den Bericht könnten Betroffene die genannten Kosten, Wartezeiten und Alternativen seltener in dieser Form prüfen; Umfang und Richtung dieses Unterschieds sind offen.",
+        "reference_frame": [
+          "Zugang zu Rechtsschutz",
+          "finanzielle Resilienz",
+          "Verbraucherinformation"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Bericht könnte finanzielle Vorsorge und den Zugang zu Beratung beeinflussen; individuelle Unterschiede, Beiträge und Ausschlüsse begrenzen den Pfad.",
+            "planet": "Ein materieller Umweltpfad ist nicht erkennbar; mögliche indirekte Effekte über Versicherungs- oder Beratungsentscheidungen sind vernachlässigbar.",
+            "democracy": "Information über Rechte und Rechtsschutz könnte die Fähigkeit zur Durchsetzung arbeitsrechtlicher Ansprüche stärken; ein institutioneller Effekt ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Veränderung individueller Aufmerksamkeit für Prozesskosten, Wartezeiten und Versicherungsbedingungen.",
+          "second_order": "Unter passenden Bedingungen könnte frühere Beratung oder Vorsorge finanzielle Hürden bei einem Arbeitsrechtsstreit begrenzen.",
+          "third_order": "Bei breiter Rezeption könnte sich die Nachfrage nach Rechtsschutz oder Beratung verändern; eine solche Kaskade ist nicht beobachtet.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle sagt ausdrücklich, dass eine Arbeitsrechtsschutzversicherung nicht für jeden notwendig sei.",
+            "Gewerkschaftsmitglieder könnten über den Mitgliedsbeitrag Zugang zu Beratung und Versicherung haben.",
+            "Es liegen keine Daten zu Rezeption, Vertragsabschlüssen oder Klagezugang vor."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor; die Angaben werden teilweise Finanztip zugeschrieben, eine unabhängige Bestätigung ist nicht vorhanden.",
+          "institutional_status": "Der Bericht beschreibt private Vorsorge und Beratung; eine Änderung von Gesetz, Rechtsprechung oder institutionellen Zuständigkeiten ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keine gelieferte Messung zu verändertem Versicherungsabschluss, Beratung oder Klagezugang; der Pfad bleibt eine bedingte Hypothese.",
+            "reviewed_source_ids": [
+              "swr-aktuell"
+            ],
+            "rationale": "Der Bericht könnte die finanzielle Vorsorge und die Kenntnis von Zugangshürden verbessern. Der mögliche Nutzen ist auf informierte Personen mit passender Vorsorge begrenzt; Nachteile durch Fehlinterpretation oder zusätzliche Beiträge bleiben möglich.",
+            "primary_paths": [
+              {
+                "label": "Frühere Prüfung von Prozesskosten und Rechtsschutz",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Information über ein mögliches Kostenrisiko und Wartezeiten kann Betroffene zu früher Prüfung von Versicherung, Beratung oder Gewerkschaftsschutz bewegen.",
+                "recipients": [
+                  "Arbeitnehmerinnen und Arbeitnehmer mit Kündigungsrisiko"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite ist unbekannt, die mögliche individuelle finanzielle Bedeutung aber spürbar und an konkrete Bedingungen gebunden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Bericht erreicht potenziell die SWR-Leserschaft; ihre tatsächliche Reichweite und Rezeption sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Information kann eine Vorsorgeentscheidung anstoßen, verändert aber nicht unmittelbar die finanzielle Lage.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine frühe Prüfung kann bis zu einem späteren Streit relevant bleiben; tatsächliche Dauerwirkungen sind offen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Versicherungs- und Beratungsentscheidungen können grundsätzlich geändert oder korrigiert werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen nach einer Kündigung können durch Kosten und Zeitdruck besonders verletzlich sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft überwiegend individuelle Vorsorge und reicht nicht belegt in Institutionen hinein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze wird nicht festgestellt; der mögliche Nutzen hängt von Vertrag, Zeitpunkt und Alternativen ab.",
+                  "reference_frame": "finanzieller Zugang zu arbeitsrechtlicher Beratung",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Betroffene den Bericht wahrnehmen, die Angaben korrekt einordnen und rechtzeitig eine passende Option finden.",
+                "reference_space": "Leserschaft des SWR-Berichts in Deutschland",
+                "time_horizon": "Vor und während eines möglichen arbeitsrechtlichen Streits",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Information wird verstanden und führt nicht zu einer überhasteten oder ungeeigneten Police.",
+                "source_support": "Die Quelle belegt Kostenangaben, Wartezeit, Selbstbeteiligung und Alternativen, nicht deren Wirkung auf Menschen.",
+                "limitations": "Keine Daten zu Reichweite, Entscheidungen, Einkommen, Vertragsqualität oder tatsächlichem Rechtsschutz.",
+                "first_order": "Betroffene könnten Kosten und Absicherungsoptionen früher prüfen.",
+                "second_order": "Passende Vorsorge könnte finanzielle Hürden eines späteren Streits begrenzen.",
+                "third_order": "Eine breitere Nachfrage nach Beratung könnte den privaten Zugang zu Rechtsschutz verändern; dies bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten in der gelieferten Quelle; Eintritt und Größenordnung des Pfads bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Fehlgeleitete oder verspätete Versicherungsentscheidung",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine verkürzte Rezeption könnte Beiträge, Wartezeiten oder Ausschlüsse unterschätzen und zu einer ungeeigneten Absicherung führen.",
+                "recipients": [
+                  "Informationssuchende Arbeitnehmerinnen und Arbeitnehmer"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Einzelschaden ist begrenzt und nicht beobachtet, könnte bei falscher Entscheidung aber finanziell relevant werden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nur ein unbekannter Teil der Leserschaft könnte die Information missverstehen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine ungeeignete Police kann im Streitfall zu nicht gedeckten Kosten führen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Beiträge oder eine Fehlentscheidung können über längere Zeit finanzielle Folgen haben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fehlentscheidungen können durch Beratung oder spätere Korrektur teilweise revidiert werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Nach einer Kündigung können Betroffene finanziell und zeitlich unter erhöhtem Druck stehen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Schaden bleibt überwiegend individuell und verändert keine nachgewiesene Struktur.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle nennt Warnhinweise und Alternativen, belegt aber keine eingetretene Schutzverletzung.",
+                  "reference_frame": "finanzielle Absicherung bei Arbeitsrechtsstreitigkeiten",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad setzt Fehlinterpretation und fehlende ergänzende Beratung voraus.",
+                "reference_space": "Leserschaft des Berichts",
+                "time_horizon": "Bei Abschluss und späterer Inanspruchnahme einer Versicherung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Darstellung wird als allgemeine Empfehlung statt als Einzelfallinformation verstanden.",
+                "source_support": "Die Quelle nennt ausdrücklich, dass die Versicherung nicht für jeden notwendig ist und vor einem konkreten Streit abgeschlossen werden muss.",
+                "limitations": "Keine Daten zu Missverständnissen, Policen oder Schadensfällen.",
+                "first_order": "Einige Personen könnten eine ungeeignete oder verspätete Entscheidung treffen.",
+                "second_order": "Im Streitfall könnten Kosten trotz Versicherung ungedeckt bleiben.",
+                "third_order": "Ein breiter Vertrauensverlust in Beratung wäre möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Evidenz zu Fehlentscheidungen oder späteren Schäden; der Pfad ist eine begrenzte Risikohypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein möglicher Informationsnutzen und ein begrenztes Fehlinterpretationsrisiko sind vergleichbar zu prüfen; der positive Pfad ist nicht als eingetretene Wirkung belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Frühere Prüfung von Prozesskosten und Rechtsschutz",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Frühere Prüfung von Prozesskosten und Rechtsschutz",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle enthält keinen belastbaren Umweltpfad; mögliche indirekte Effekte sind für den abgegrenzten Gegenstand vernachlässigbar.",
+            "reviewed_source_ids": [
+              "swr-aktuell"
+            ],
+            "rationale": "Der Bericht behandelt arbeitsrechtliche Prozesskosten und Versicherungen. Für Produktion, Ressourcenverbrauch oder Emissionen wird kein konkreter Wirkmechanismus belegt.",
+            "primary_paths": [
+              {
+                "label": "Keine materiell relevante Umweltveränderung durch die Information",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Der Gegenstand betrifft individuelle Vorsorge; ein belastbarer Übergang zu ökologischen Zustandsänderungen ist nicht erkennbar.",
+                "recipients": [
+                  "Umwelt und natürliche Systeme"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im abgegrenzten Informations- und Vorsorgegegenstand ist kein materieller Umweltpfad belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite des beschriebenen Gegenstands erkennbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Belastung wird beschrieben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung wird als möglich konkretisiert.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine betroffene ökologische Vulnerabilität ist im Gegenstand benannt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemtiefe oder Rückkopplung ist plausibel belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird durch den Bericht nicht berührt.",
+                  "reference_frame": "ökologische Zustandsänderung",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Nur eine direkte oder indirekte Umweltwirkung des Berichts selbst wäre zu prüfen.",
+                "reference_space": "Informationswirkung des SWR-Berichts",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der Bericht bleibt bei arbeitsrechtlicher Vorsorge und löst keine nicht belegte materielle Anschlussmaßnahme aus.",
+                "source_support": "Die Quelle enthält ausschließlich Angaben zu Kündigung, Prozesskosten und Versicherungen.",
+                "limitations": "Keine Umweltdaten oder Angaben zu Anschlussentscheidungen.",
+                "first_order": "Keine relevante Umweltzustandsänderung modellierbar.",
+                "second_order": "Keine belastbare ökologische Folge ableitbar.",
+                "third_order": "Keine ökologische Kaskade ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen belastbaren Umweltmechanismus.",
+                "negligibility_rationale": "Für den abgegrenzten Zeitraum und Gegenstand ist keine materielle Umweltveränderung aus der Quelle ableitbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen Umweltpfad; die ökologische Dimension ist hier praktisch vernachlässigbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine materiell relevante Umweltveränderung durch die Information",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine materiell relevante Umweltveränderung durch die Information",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keine Messung zu Rechtsdurchsetzung oder politischer Beteiligung; ein schwacher Informationspfad ist bedingt modellierbar.",
+            "reviewed_source_ids": [
+              "swr-aktuell"
+            ],
+            "rationale": "Information über mögliche Kosten und Rechtsschutz kann die Fähigkeit stärken, arbeitsrechtliche Ansprüche informiert zu prüfen. Der Bericht belegt weder tatsächliche Rechtsdurchsetzung noch institutionelle Veränderung.",
+            "primary_paths": [
+              {
+                "label": "Bessere Kenntnis privater Rechtsschutzoptionen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Konkrete Hinweise zu Kosten, Wartezeit und Alternativen können die informierte Nutzung von Beratung und bestehenden Rechten erleichtern.",
+                "recipients": [
+                  "Arbeitnehmerinnen und Arbeitnehmer"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Beitrag zur individuellen Rechtswahrnehmung ist begrenzt und hängt stark von Rezeption und Anschlussberatung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die tatsächliche Reichweite und Nutzung des Berichts sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Information kann Orientierung geben, verändert aber keine Rechtsinstitution unmittelbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Orientierung kann bis zu einem möglichen Streit fortwirken, muss aber nicht dauerhaft sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die Wirkung einer Information ist grundsätzlich korrigierbar und nicht dauerhaft festgelegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen nach einer Kündigung können auf verständliche Hinweise zu Kosten und Zugang besonders angewiesen sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft individuelle Rechtswahrnehmung, nicht nachgewiesene institutionelle Machtverhältnisse.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze wird nicht konkret erreicht; der Pfad betrifft begrenzte Rechtsinformation.",
+                  "reference_frame": "informierter Zugang zu arbeitsrechtlicher Beratung",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Bericht muss wahrgenommen, korrekt verstanden und durch passende Beratung ergänzt werden.",
+                "reference_space": "Arbeitsrechtliche Informationsöffentlichkeit in Deutschland",
+                "time_horizon": "Vor und während eines möglichen Rechtsstreits",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Information über private Vorsorge kann in begrenztem Umfang die Nutzung bestehender Rechte unterstützen.",
+                "source_support": "Die Quelle nennt konkrete Kosten- und Zugangsbedingungen, belegt aber keine Rechtsdurchsetzung oder Beteiligungswirkung.",
+                "limitations": "Keine Daten zu Verständlichkeit, Nutzung, Beratung oder Ergebnissen von Streitigkeiten.",
+                "first_order": "Ein Teil der Leserschaft könnte sich früher über Rechtsschutz informieren.",
+                "second_order": "Frühere Information könnte die Fähigkeit zur Suche nach Beratung verbessern.",
+                "third_order": "Eine institutionelle oder demokratische Kaskade ist nicht belegt und bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten zur Rechtsdurchsetzung; der Pfad bleibt eine schwache, bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Verengte Wahrnehmung auf private Versicherung",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine einseitige Rezeption könnte den Eindruck vermitteln, individueller Versicherungsschutz sei der zentrale Weg, obwohl auch Gewerkschaftsberatung und andere Beratung genannt werden.",
+                "recipients": [
+                  "Arbeitnehmerinnen und Arbeitnehmer"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der mögliche Effekt auf Rechtswahrnehmung ist klein und nicht beobachtet; die Quelle nennt selbst eine Alternative."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nur ein begrenzter und unbekannter Teil der Leserschaft könnte die Darstellung verengen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine solche Verengung könnte Orientierung schwächen, verändert aber keine Rechte unmittelbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Deutung ist durch weitere Beratung und Information korrigierbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine falsche Einordnung kann grundsätzlich revidiert werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene unter Kündigungsdruck könnten besonders auf zugängliche und vollständige Optionen angewiesen sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine institutionelle Veränderung oder demokratische Kaskade ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine demokratische Schutzgrenze ist konkret betroffen; es handelt sich um ein mögliches Informationsrisiko.",
+                  "reference_frame": "Pluralität zugänglicher Rechtsschutzoptionen",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Bericht müsste ohne ergänzende Hinweise gelesen und als abschließende Empfehlung verstanden werden.",
+                "reference_space": "Leserschaft des Berichts",
+                "time_horizon": "Bei der Suche nach Beratung oder Absicherung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Leserinnen und Leser übersehen die im Bericht genannte gewerkschaftliche Alternative.",
+                "source_support": "Die Quelle nennt sowohl Versicherung als auch gewerkschaftlichen Zugang zu Beratung und Versicherung.",
+                "limitations": "Keine Daten zu Medienrezeption, Vertrauen oder tatsächlicher Auswahl von Beratungswegen.",
+                "first_order": "Einzelne Personen könnten private Versicherung überbewerten.",
+                "second_order": "Das könnte die Suche nach anderen Beratungswegen verzögern.",
+                "third_order": "Eine strukturelle Schwächung demokratischer Korrekturfähigkeit ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Evidenz für eine solche Verengung in der gelieferten Quelle; der Pfad bleibt spekulativ und klein.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein begrenzter Informationsnutzen steht einem kleinen, nicht belegten Verengungsrisiko gegenüber; kein Pfad erreicht eine demokratische Schutzgrenze."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Bessere Kenntnis privater Rechtsschutzoptionen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bessere Kenntnis privater Rechtsschutzoptionen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T10:25:52.032Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Der SWR belegt den Berichtsanlass, die zugeschriebenen Kosten- und Versicherungsangaben sowie die genannten Bedingungen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keine gelieferte Messung zu verändertem Versicherungsabschluss, Beratung oder Klagezugang; der Pfad bleibt eine bedingte Hypothese.",
+          "reviewed_source_ids": [
+            "swr-aktuell"
+          ],
+          "rationale": "Der Bericht könnte die finanzielle Vorsorge und die Kenntnis von Zugangshürden verbessern. Der mögliche Nutzen ist auf informierte Personen mit passender Vorsorge begrenzt; Nachteile durch Fehlinterpretation oder zusätzliche Beiträge bleiben möglich.",
+          "primary_paths": [
+            {
+              "label": "Frühere Prüfung von Prozesskosten und Rechtsschutz",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Information über ein mögliches Kostenrisiko und Wartezeiten kann Betroffene zu früher Prüfung von Versicherung, Beratung oder Gewerkschaftsschutz bewegen.",
+              "recipients": [
+                "Arbeitnehmerinnen und Arbeitnehmer mit Kündigungsrisiko"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite ist unbekannt, die mögliche individuelle finanzielle Bedeutung aber spürbar und an konkrete Bedingungen gebunden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Bericht erreicht potenziell die SWR-Leserschaft; ihre tatsächliche Reichweite und Rezeption sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Information kann eine Vorsorgeentscheidung anstoßen, verändert aber nicht unmittelbar die finanzielle Lage.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine frühe Prüfung kann bis zu einem späteren Streit relevant bleiben; tatsächliche Dauerwirkungen sind offen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Versicherungs- und Beratungsentscheidungen können grundsätzlich geändert oder korrigiert werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen nach einer Kündigung können durch Kosten und Zeitdruck besonders verletzlich sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft überwiegend individuelle Vorsorge und reicht nicht belegt in Institutionen hinein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze wird nicht festgestellt; der mögliche Nutzen hängt von Vertrag, Zeitpunkt und Alternativen ab.",
+                "reference_frame": "finanzieller Zugang zu arbeitsrechtlicher Beratung",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Betroffene den Bericht wahrnehmen, die Angaben korrekt einordnen und rechtzeitig eine passende Option finden.",
+              "reference_space": "Leserschaft des SWR-Berichts in Deutschland",
+              "time_horizon": "Vor und während eines möglichen arbeitsrechtlichen Streits",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Information wird verstanden und führt nicht zu einer überhasteten oder ungeeigneten Police.",
+              "source_support": "Die Quelle belegt Kostenangaben, Wartezeit, Selbstbeteiligung und Alternativen, nicht deren Wirkung auf Menschen.",
+              "limitations": "Keine Daten zu Reichweite, Entscheidungen, Einkommen, Vertragsqualität oder tatsächlichem Rechtsschutz.",
+              "first_order": "Betroffene könnten Kosten und Absicherungsoptionen früher prüfen.",
+              "second_order": "Passende Vorsorge könnte finanzielle Hürden eines späteren Streits begrenzen.",
+              "third_order": "Eine breitere Nachfrage nach Beratung könnte den privaten Zugang zu Rechtsschutz verändern; dies bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten in der gelieferten Quelle; Eintritt und Größenordnung des Pfads bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Fehlgeleitete oder verspätete Versicherungsentscheidung",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine verkürzte Rezeption könnte Beiträge, Wartezeiten oder Ausschlüsse unterschätzen und zu einer ungeeigneten Absicherung führen.",
+              "recipients": [
+                "Informationssuchende Arbeitnehmerinnen und Arbeitnehmer"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Einzelschaden ist begrenzt und nicht beobachtet, könnte bei falscher Entscheidung aber finanziell relevant werden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nur ein unbekannter Teil der Leserschaft könnte die Information missverstehen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine ungeeignete Police kann im Streitfall zu nicht gedeckten Kosten führen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Beiträge oder eine Fehlentscheidung können über längere Zeit finanzielle Folgen haben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fehlentscheidungen können durch Beratung oder spätere Korrektur teilweise revidiert werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Nach einer Kündigung können Betroffene finanziell und zeitlich unter erhöhtem Druck stehen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Schaden bleibt überwiegend individuell und verändert keine nachgewiesene Struktur.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle nennt Warnhinweise und Alternativen, belegt aber keine eingetretene Schutzverletzung.",
+                "reference_frame": "finanzielle Absicherung bei Arbeitsrechtsstreitigkeiten",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad setzt Fehlinterpretation und fehlende ergänzende Beratung voraus.",
+              "reference_space": "Leserschaft des Berichts",
+              "time_horizon": "Bei Abschluss und späterer Inanspruchnahme einer Versicherung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Darstellung wird als allgemeine Empfehlung statt als Einzelfallinformation verstanden.",
+              "source_support": "Die Quelle nennt ausdrücklich, dass die Versicherung nicht für jeden notwendig ist und vor einem konkreten Streit abgeschlossen werden muss.",
+              "limitations": "Keine Daten zu Missverständnissen, Policen oder Schadensfällen.",
+              "first_order": "Einige Personen könnten eine ungeeignete oder verspätete Entscheidung treffen.",
+              "second_order": "Im Streitfall könnten Kosten trotz Versicherung ungedeckt bleiben.",
+              "third_order": "Ein breiter Vertrauensverlust in Beratung wäre möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Evidenz zu Fehlentscheidungen oder späteren Schäden; der Pfad ist eine begrenzte Risikohypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein möglicher Informationsnutzen und ein begrenztes Fehlinterpretationsrisiko sind vergleichbar zu prüfen; der positive Pfad ist nicht als eingetretene Wirkung belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Frühere Prüfung von Prozesskosten und Rechtsschutz",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Frühere Prüfung von Prozesskosten und Rechtsschutz",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle enthält keinen belastbaren Umweltpfad; mögliche indirekte Effekte sind für den abgegrenzten Gegenstand vernachlässigbar.",
+          "reviewed_source_ids": [
+            "swr-aktuell"
+          ],
+          "rationale": "Der Bericht behandelt arbeitsrechtliche Prozesskosten und Versicherungen. Für Produktion, Ressourcenverbrauch oder Emissionen wird kein konkreter Wirkmechanismus belegt.",
+          "primary_paths": [
+            {
+              "label": "Keine materiell relevante Umweltveränderung durch die Information",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Der Gegenstand betrifft individuelle Vorsorge; ein belastbarer Übergang zu ökologischen Zustandsänderungen ist nicht erkennbar.",
+              "recipients": [
+                "Umwelt und natürliche Systeme"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im abgegrenzten Informations- und Vorsorgegegenstand ist kein materieller Umweltpfad belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite des beschriebenen Gegenstands erkennbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Belastung wird beschrieben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung wird als möglich konkretisiert.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine betroffene ökologische Vulnerabilität ist im Gegenstand benannt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemtiefe oder Rückkopplung ist plausibel belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird durch den Bericht nicht berührt.",
+                "reference_frame": "ökologische Zustandsänderung",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Nur eine direkte oder indirekte Umweltwirkung des Berichts selbst wäre zu prüfen.",
+              "reference_space": "Informationswirkung des SWR-Berichts",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der Bericht bleibt bei arbeitsrechtlicher Vorsorge und löst keine nicht belegte materielle Anschlussmaßnahme aus.",
+              "source_support": "Die Quelle enthält ausschließlich Angaben zu Kündigung, Prozesskosten und Versicherungen.",
+              "limitations": "Keine Umweltdaten oder Angaben zu Anschlussentscheidungen.",
+              "first_order": "Keine relevante Umweltzustandsänderung modellierbar.",
+              "second_order": "Keine belastbare ökologische Folge ableitbar.",
+              "third_order": "Keine ökologische Kaskade ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen belastbaren Umweltmechanismus.",
+              "negligibility_rationale": "Für den abgegrenzten Zeitraum und Gegenstand ist keine materielle Umweltveränderung aus der Quelle ableitbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren materiellen positiven oder negativen Umweltpfad; die ökologische Dimension ist hier praktisch vernachlässigbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine materiell relevante Umweltveränderung durch die Information",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine materiell relevante Umweltveränderung durch die Information",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keine Messung zu Rechtsdurchsetzung oder politischer Beteiligung; ein schwacher Informationspfad ist bedingt modellierbar.",
+          "reviewed_source_ids": [
+            "swr-aktuell"
+          ],
+          "rationale": "Information über mögliche Kosten und Rechtsschutz kann die Fähigkeit stärken, arbeitsrechtliche Ansprüche informiert zu prüfen. Der Bericht belegt weder tatsächliche Rechtsdurchsetzung noch institutionelle Veränderung.",
+          "primary_paths": [
+            {
+              "label": "Bessere Kenntnis privater Rechtsschutzoptionen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Konkrete Hinweise zu Kosten, Wartezeit und Alternativen können die informierte Nutzung von Beratung und bestehenden Rechten erleichtern.",
+              "recipients": [
+                "Arbeitnehmerinnen und Arbeitnehmer"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Beitrag zur individuellen Rechtswahrnehmung ist begrenzt und hängt stark von Rezeption und Anschlussberatung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die tatsächliche Reichweite und Nutzung des Berichts sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Information kann Orientierung geben, verändert aber keine Rechtsinstitution unmittelbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Orientierung kann bis zu einem möglichen Streit fortwirken, muss aber nicht dauerhaft sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die Wirkung einer Information ist grundsätzlich korrigierbar und nicht dauerhaft festgelegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen nach einer Kündigung können auf verständliche Hinweise zu Kosten und Zugang besonders angewiesen sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft individuelle Rechtswahrnehmung, nicht nachgewiesene institutionelle Machtverhältnisse.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze wird nicht konkret erreicht; der Pfad betrifft begrenzte Rechtsinformation.",
+                "reference_frame": "informierter Zugang zu arbeitsrechtlicher Beratung",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Bericht muss wahrgenommen, korrekt verstanden und durch passende Beratung ergänzt werden.",
+              "reference_space": "Arbeitsrechtliche Informationsöffentlichkeit in Deutschland",
+              "time_horizon": "Vor und während eines möglichen Rechtsstreits",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Information über private Vorsorge kann in begrenztem Umfang die Nutzung bestehender Rechte unterstützen.",
+              "source_support": "Die Quelle nennt konkrete Kosten- und Zugangsbedingungen, belegt aber keine Rechtsdurchsetzung oder Beteiligungswirkung.",
+              "limitations": "Keine Daten zu Verständlichkeit, Nutzung, Beratung oder Ergebnissen von Streitigkeiten.",
+              "first_order": "Ein Teil der Leserschaft könnte sich früher über Rechtsschutz informieren.",
+              "second_order": "Frühere Information könnte die Fähigkeit zur Suche nach Beratung verbessern.",
+              "third_order": "Eine institutionelle oder demokratische Kaskade ist nicht belegt und bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten zur Rechtsdurchsetzung; der Pfad bleibt eine schwache, bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Verengte Wahrnehmung auf private Versicherung",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine einseitige Rezeption könnte den Eindruck vermitteln, individueller Versicherungsschutz sei der zentrale Weg, obwohl auch Gewerkschaftsberatung und andere Beratung genannt werden.",
+              "recipients": [
+                "Arbeitnehmerinnen und Arbeitnehmer"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der mögliche Effekt auf Rechtswahrnehmung ist klein und nicht beobachtet; die Quelle nennt selbst eine Alternative."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nur ein begrenzter und unbekannter Teil der Leserschaft könnte die Darstellung verengen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine solche Verengung könnte Orientierung schwächen, verändert aber keine Rechte unmittelbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Deutung ist durch weitere Beratung und Information korrigierbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine falsche Einordnung kann grundsätzlich revidiert werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene unter Kündigungsdruck könnten besonders auf zugängliche und vollständige Optionen angewiesen sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine institutionelle Veränderung oder demokratische Kaskade ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine demokratische Schutzgrenze ist konkret betroffen; es handelt sich um ein mögliches Informationsrisiko.",
+                "reference_frame": "Pluralität zugänglicher Rechtsschutzoptionen",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Bericht müsste ohne ergänzende Hinweise gelesen und als abschließende Empfehlung verstanden werden.",
+              "reference_space": "Leserschaft des Berichts",
+              "time_horizon": "Bei der Suche nach Beratung oder Absicherung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Leserinnen und Leser übersehen die im Bericht genannte gewerkschaftliche Alternative.",
+              "source_support": "Die Quelle nennt sowohl Versicherung als auch gewerkschaftlichen Zugang zu Beratung und Versicherung.",
+              "limitations": "Keine Daten zu Medienrezeption, Vertrauen oder tatsächlicher Auswahl von Beratungswegen.",
+              "first_order": "Einzelne Personen könnten private Versicherung überbewerten.",
+              "second_order": "Das könnte die Suche nach anderen Beratungswegen verzögern.",
+              "third_order": "Eine strukturelle Schwächung demokratischer Korrekturfähigkeit ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Evidenz für eine solche Verengung in der gelieferten Quelle; der Pfad bleibt spekulativ und klein.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein begrenzter Informationsnutzen steht einem kleinen, nicht belegten Verengungsrisiko gegenüber; kein Pfad erreicht eine demokratische Schutzgrenze."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bessere Kenntnis privater Rechtsschutzoptionen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Bessere Kenntnis privater Rechtsschutzoptionen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T10:23:28.266Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T10:02:00.000Z",
+      "last_updated": "2026-09-19T10:25:52.027Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-3102ba0915cb1d2372f4",
+      "case_file": null,
+      "source_published_at": "2026-09-19T10:02:00.000Z",
+      "published_at": "2026-09-19T10:25:52.027Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob die im Bericht genannten Kostenangaben und Versicherungsbedingungen in der Originalquelle von Finanztip näher belegt und eingegrenzt werden.",
+          "source_id": "swr-aktuell",
+          "measurable_indicator": "Originalbeleg mit Berechnung, Tarifbedingungen und Einschränkungen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9ac1370db40b4caa",
+          "announced_at": "2026-09-19T10:02:00.000Z",
+          "follow_up_date": "2026-09-26T10:25:52.027Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell-radio/kuendigung-wann-eine-arbeitsrechtsschutzversicherung-sinnvoll-ist-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T10:02:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-799303ce581dfeb8",
       "title_image": {
