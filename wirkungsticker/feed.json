@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-19T03:53:36.753Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-19T04:54:06.103Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -490,13 +490,14 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370/",
       "title": "Laut Polizei mindestens 16 Tote bei Autobombenanschlag in Pakistan",
-      "summary": "Bei einem Autobombenanschlag in Pakistan wurden laut Polizei mindestens 16 Menschen getötet. Die Opferzahl schwankt in den Berichten, während Motiv, Verantwortlichkeit, Verletztenzahl und weitere Schäden offenbleiben.",
+      "summary": "Bei einem Autobombenanschlag in Kohat wurden laut Polizei mindestens 16 Menschen getötet; mehr als 70 weitere wurden laut Deutschlandfunk verletzt. Die Opferzahl, Verantwortlichkeit und Folgen sind noch nicht abschließend geklärt.",
       "date_published": "2026-09-18T09:37:40.000Z",
       "date_modified": "2026-09-18T09:37:40.000Z",
       "_woek_released_at": "2026-09-18T09:55:40.233Z",
       "tags": [
         "Gesellschaft",
-        "Politik"
+        "Politik",
+        "Gesundheit"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
@@ -504,16 +505,16 @@
         "human": {
           "magnitude": 4,
           "direction": "negative",
-          "status": "emerging"
+          "status": "observed"
         },
         "planet": {
           "magnitude": 1,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "open",
+          "direction": "mixed",
           "status": "potential"
         }
       }
