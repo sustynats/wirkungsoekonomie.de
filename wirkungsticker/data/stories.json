@@ -2,8 +2,1728 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T10:23:28.266Z",
+  "updated_at": "2026-09-19T10:53:58.383Z",
   "stories": [
+    {
+      "story_id": "wt-00a2585a64ddcf4e",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-00a2585a64ddcf4e-1d96ff27bfad5c8c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-00a2585a64ddcf4e-3eeb8434122a01e8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-00a2585a64ddcf4e-c89047809c06a88f-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-00a2585a64ddcf4e-9d78d32ee51646f1-source.png"
+        }
+      },
+      "slug": "was-fur-ein-wahnsinn-grune-kritisieren-tankrabatt-plane-ddcf4e",
+      "title": "Tankrabatt und Spritpreisdeckel geplant – Kritik an Entlastung",
+      "source_summary": "Die Bundesregierung plant laut dem Bericht einen erneuten Tankrabatt. Die Energiesteuer auf Benzin und Diesel soll bis Ende 2026 um 14 Cent je Liter sinken; einschließlich Umsatzsteuer ergibt sich eine Entlastung von 17 Cent je Liter. Bund und Länder sollen dafür rund 2,5 Milliarden Euro bereitstellen.\n\nZusätzlich soll spätestens zum 1. Januar ein Spritpreisdeckel nach Vorbildern in Luxemburg und Belgien eingeführt werden. Der Bericht beschreibt die Maßnahmen als Ergebnis von Verhandlungen zwischen Bund und Ländern.\n\nDie Grünen kritisieren den Tankrabatt scharf und verweisen auf mögliche Gewinne der Ölkonzerne. Die Verbraucherzentrale hält die Vorhaben für teuer, kurzsichtig und wenig zielgenau. Ob die Entlastung vollständig bei Verbraucherinnen und Verbrauchern ankommt, bleibt offen.",
+      "summary": "Die Bundesregierung plant einen Tankrabatt und einen späteren Spritpreisdeckel. Kritik richtet sich gegen Zielgenauigkeit, Kosten und die mögliche Weitergabe der Entlastung.",
+      "detail_summary": "Die Bundesregierung plant laut dem Bericht einen Tankrabatt von 17 Cent je Liter bis Jahresende; dafür sollen Bund und Länder rund 2,5 Milliarden Euro bereitstellen. Spätestens zum 1. Januar soll nach Regierungsangaben ein Spritpreisdeckel folgen. Die Grünen warnen, dass Ölkonzerne von der Maßnahme profitieren könnten, und die Verbraucherzentrale nennt sie wenig zielgerichtet. Für Haushalte kann die Regelung kurzfristig die Kosten an der Zapfsäule senken, sofern die Entlastung weitergegeben wird. Offen bleiben die konkrete Ausgestaltung, die Verteilung und mögliche Folgen für fossile Abhängigkeit und öffentliche Mittel.",
+      "why_relevant": "Die geplante Entlastung verbindet staatliche Ausgaben, Energiepreise und den Umgang mit fossiler Abhängigkeit. Ihre Wirkung hängt wesentlich davon ab, wer die Entlastung erhält und wie sie weitergegeben wird.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Angekündigter Tankrabatt und geplanter Spritpreisdeckel mit politischer Kritik",
+        "evaluation_target": {
+          "label": "staatliche Kraftstoffentlastung",
+          "type": "proposal"
+        },
+        "baseline": "Kraftstoffpreise und politische Energieentlastung ohne die angekündigte Maßnahme",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne die Maßnahme bliebe die angekündigte Steuerentlastung aus; wie sich Preise, Verbrauch und Haushaltsbelastungen dann entwickeln, ist nicht belegt.",
+        "reference_frame": [
+          "Energiebezahlbarkeit",
+          "Verteilungsgerechtigkeit",
+          "fossile Abhängigkeit",
+          "demokratische Rechenschaft"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Maßnahme könnte Haushalte mit hoher Fahrabhängigkeit kurzfristig entlasten; Verteilung und tatsächliche Preisweitergabe sind offen.",
+            "planet": "Eine Preisstützung könnte fossilen Verbrauch weniger stark verteuern; eine konkrete Änderung von Verbrauch oder Emissionen ist nicht belegt.",
+            "democracy": "Die kontroverse Maßnahme könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken oder die Debatte durch zugespitzte Frames verengen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Geplante staatliche Preis- und Steuerentlastung für Kraftstoffe.",
+          "second_order": "Mögliche Änderungen bei Haushaltsbelastung, Anbieteranteilen und Verbrauchsanreizen, jeweils abhängig von Umsetzung und Weitergabe.",
+          "third_order": "Mögliche Rückwirkungen auf fossile Abhängigkeit, Vertrauen in Energiepolitik und künftige Entlastungsentscheidungen.",
+          "enablement": [
+            "enables_budget_control",
+            "enables_legislation",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt weder eine tatsächliche Preisänderung noch eine Verteilung der Entlastung.",
+            "Die behauptete mögliche Begünstigung von Ölkonzernen ist als Akteursbewertung wiedergegeben und nicht unabhängig belegt.",
+            "Ein gezielterer Ausgleich könnte bei entsprechender Ausgestaltung soziale Nachteile begrenzen; diese Ausgestaltung ist nicht belegt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Herkunft vor. Die Quelle verweist auf AFP und dpa, doch unabhängige Belege sind im gelieferten Bestand nicht enthalten.",
+          "institutional_status": "Laut Quelle handelt es sich um geplante beziehungsweise angekündigte Maßnahmen; ein belegtes Inkrafttreten oder eine abgeschlossene Umsetzung liegt nicht vor."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine geplante Entlastung, aber keine tatsächliche Preisweitergabe oder Verteilungswirkung. Das menschliche Wirkungspotenzial bleibt deshalb bedingt und mit mittlerer Unsicherheit modelliert.",
+            "reviewed_source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Kraftstoffkosten könnten für Haushalte mit hoher Fahrabhängigkeit kurzfristig sinken.",
+                "mechanism": "Die Energiesteuerentlastung kann bei Weitergabe den Endpreis von Benzin und Diesel senken.",
+                "recipients": [
+                  "haushalte",
+                  "verbraucherinnen",
+                  "beschaeftigte"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Die Entlastung muss umgesetzt und vollständig oder überwiegend an Verbraucherinnen und Verbraucher weitergegeben werden.",
+                "reference_space": "Haushalte und Beschäftigte mit Kraftstoffbedarf in Deutschland",
+                "time_horizon": "kurzfristig bis zum Ende der angekündigten Entlastung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Steueränderung verändert den Endpreis und erreicht die betroffenen Haushalte.",
+                "source_support": "Die Quelle belegt 17 Cent je Liter und vorgesehene Mittel, nicht die tatsächliche Weitergabe.",
+                "limitations": "Keine Preis- oder Verteilungsdaten; unklarer Umsetzungszeitpunkt.",
+                "first_order": "Mögliche Senkung der Kraftstoffkosten.",
+                "second_order": "Mögliche Entlastung besonders fahrabhängiger Haushalte.",
+                "third_order": "Mögliche Veränderung der politischen Akzeptanz staatlicher Energiehilfen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Spannweite berücksichtigt sowohl vollständige Weitergabe als auch geringe oder ungleichmäßige Weitergabe."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Wirkungsdaten im Quellenbestand; Preis- und Verteilungswirkung bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoff wird von vielen Haushalten und Unternehmen genutzt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt eine konkrete, aber begrenzte Literentlastung.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Quelle beschreibt eine zeitlich begrenzte Entlastung.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Eine Preisentlastung ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Haushalte mit hoher Mobilitätsabhängigkeit könnten besonders betroffen sein.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die Maßnahme berührt Preise und Verteilung, aber kein belegter Strukturwandel liegt vor.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für existenzielle Versorgung ist im Quellenbestand nicht belegt.",
+                  "reference_frame": "bezahlbare Mobilität und faire Verteilung",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Eine pauschale Entlastung könnte Haushalte ungleich erreichen und öffentliche Mittel binden.",
+                "mechanism": "Die Maßnahme knüpft laut Quelle an Kraftstoffverbrauch statt an individuelle Bedürftigkeit an.",
+                "recipients": [
+                  "haushalte",
+                  "staat",
+                  "verbraucherinnen"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Die Entlastung bleibt breit angelegt und wird nicht durch zielgenaue Hilfen ergänzt.",
+                "reference_space": "Haushalte mit unterschiedlichem Einkommen und Mobilitätsbedarf in Deutschland",
+                "time_horizon": "während der Entlastungsperiode",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Mehr Verbrauch führt zu höherer nominaler Entlastung.",
+                "source_support": "Die Quelle gibt die Kritik der Verbraucherzentrale an fehlender Zielgenauigkeit wieder.",
+                "limitations": "Keine Verteilungsrechnung und keine Daten zu Gewinnern oder Verlierern.",
+                "first_order": "Möglicherweise unterschiedliche Entlastungsbeträge.",
+                "second_order": "Mögliche Verteilungsdebatte über Kosten und Zielgenauigkeit.",
+                "third_order": "Mögliche Auswirkungen auf Vertrauen in staatliche Energiehilfen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Wirkung reicht von begrenzter Ungleichverteilung bis zu deutlich wahrgenommenen Mitnahmeeffekten."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält eine zugeschriebene Kritik, aber keine unabhängige Verteilungsanalyse.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Eine breite Kraftstoffmaßnahme kann viele Haushalte erreichen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Ungleichverteilung ist plausibel, aber nicht quantifiziert.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die mögliche Verteilungswirkung wäre an die Maßnahmendauer gebunden.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fehlsteuerungen könnten durch spätere Anpassungen korrigiert werden.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Haushalte mit geringem Einkommen und hoher Fahrabhängigkeit könnten verletzlicher sein.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die Wirkung betrifft Verteilung und Vertrauen, nicht nachgewiesen grundlegende Institutionen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer materiellen Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "faire Verteilung staatlicher Entlastung",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Positive kurzfristige Entlastung und negatives Verteilungsrisiko sind beide plausibel, aber nicht gemessen. Die Richtung bleibt deshalb gemischt.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Die positiven und negativen Pfade betreffen denselben Gegenstand und dieselbe Ausgangslage; ihre tatsächliche Stärke ist offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Kraftstoffkosten könnten für Haushalte mit hoher Fahrabhängigkeit kurzfristig sinken.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kraftstoffkosten könnten für Haushalte mit hoher Fahrabhängigkeit kurzfristig sinken.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand enthält keine Daten zu Verbrauch oder Emissionen. Eine mögliche fossile Lock-in-Wirkung kann nur als bedingte Hypothese modelliert werden.",
+            "reviewed_source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Eine Verbilligung fossiler Kraftstoffe könnte den Anreiz zur Verbrauchsreduktion abschwächen.",
+                "mechanism": "Ein niedrigerer Endpreis kann bei Weitergabe der Entlastung die Nutzung fossiler Kraftstoffe weniger kostspielig machen.",
+                "recipients": [
+                  "natur",
+                  "haushalte",
+                  "unternehmen"
+                ],
+                "magnitude": 2,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Die Entlastung wird weitergegeben und verändert den Preis über einen relevanten Zeitraum.",
+                "reference_space": "Kraftstoffverbrauch und fossile Abhängigkeit in Deutschland",
+                "time_horizon": "während und nach der Entlastungsperiode",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen beeinflussen zumindest teilweise Verbrauchs- oder Investitionsentscheidungen.",
+                "source_support": "Die Quelle belegt die geplante Preisentlastung und die Debatte über fossile Abhängigkeit, nicht Emissions- oder Verbrauchseffekte.",
+                "limitations": "Keine Daten zu Verbrauch, Emissionen, Verkehrsalternativen oder Dauerwirkung.",
+                "first_order": "Möglicherweise geringerer Preisdruck auf fossile Kraftstoffe.",
+                "second_order": "Mögliche Verzögerung von Einspar- oder Umstiegsentscheidungen.",
+                "third_order": "Mögliche Verstärkung fossiler Pfadabhängigkeit bei wiederholten Preisstützungen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die ökologische Wirkung kann bei geringer Weitergabe vernachlässigbar sein, bei wirksamer Preisstützung aber moderat ausfallen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen ökologischen Wirkungsdaten im Quellenbestand; der Pfad bleibt eine bedingte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoffpreise betreffen einen breiten Verkehrs- und Wirtschaftsbereich.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die mögliche ökologische Intensität ist ohne Verbrauchsdaten nicht quantifizierbar.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt eine begrenzte Entlastungsperiode.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Anreizeffekte können durch spätere Preis- oder Klimapolitik korrigiert werden.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Natur und klimaabhängige Systeme sind gegenüber zusätzlichen Emissionen grundsätzlich verletzlich.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Eine wiederholte Maßnahme könnte Pfadabhängigkeiten berühren, ist aber nicht belegt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze oder Emissionsänderung ist nicht belegt.",
+                  "reference_frame": "Verringerung fossiler Abhängigkeit und Klimaschutz",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der planetare Pfad ist wegen der möglichen Verbilligung fossiler Nutzung negativ modelliert, bleibt aber ohne Verbrauchs- und Emissionsdaten schwach belegt.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Im Quellenbestand ist kein vergleichbarer positiver Umweltpfad der Maßnahme belegt; die negative Richtung bleibt konditional."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Eine Verbilligung fossiler Kraftstoffe könnte den Anreiz zur Verbrauchsreduktion abschwächen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine Verbilligung fossiler Kraftstoffe könnte den Anreiz zur Verbrauchsreduktion abschwächen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine politische Kontroverse, aber keine beobachtete Veränderung von Vertrauen, Beteiligung oder Entscheidungen. Demokratische Wirkungen bleiben als bedingte Kommunikations- und Rechenschaftspfade modelliert.",
+            "reviewed_source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Die Kontroverse könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken.",
+                "mechanism": "Öffentliche Kritik macht unterschiedliche Entlastungsmodelle und Verantwortungszuschreibungen sichtbar.",
+                "recipients": [
+                  "staat",
+                  "verbraucherinnen",
+                  "haushalte"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Die Debatte bleibt faktenbezogen und führt zu überprüfbaren Angaben über Kosten, Umsetzung und Verteilung.",
+                "reference_space": "Öffentliche energiepolitische Debatte und parlamentarische Rechenschaft in Deutschland",
+                "time_horizon": "während der politischen Beratung und Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Öffentliche Kontroverse erhöht die Nachfrage nach nachvollziehbaren Informationen.",
+                "source_support": "Die Quelle dokumentiert Kritik verschiedener Akteure und die politische Auseinandersetzung.",
+                "limitations": "Keine Daten zu tatsächlicher Beteiligung, Vertrauen oder Entscheidungsänderungen.",
+                "first_order": "Mehr Sichtbarkeit der Kontroverse über die Maßnahme.",
+                "second_order": "Mögliche Nachfrage nach Begründungen zu Kosten und Zielgenauigkeit.",
+                "third_order": "Mögliche Stärkung oder Schwächung politischer Rechenschaft je nach Informationsqualität.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Debatte kann begrenzte Aufmerksamkeit erzeugen oder bei belastbaren Folgeinformationen stärker auf Rechenschaft wirken."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zur demokratischen Wirkung; nur eine journalistisch vermittelte Kontroverse ist belegt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Energiepreise und staatliche Hilfen betreffen einen breiten öffentlichen Adressatenkreis.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle berichtet zugespitzte Kritik, aber keine messbare Verhaltensänderung.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Debatte kann die Dauer der politischen Umsetzung begleiten.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Informations- und Rechenschaftseffekte sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Vertrauen in staatliche Entlastung kann bei unklarer Verteilung empfindlich reagieren.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Budget- und Gesetzgebungsentscheidungen berühren institutionelle Rechenschaft.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder belegt.",
+                  "reference_frame": "öffentliche Rechenschaft und nachvollziehbare Energiepolitik",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Eine zugespitzte Darstellung könnte die Debatte auf Vorwürfe der Fehlsteuerung verengen.",
+                "mechanism": "Prominente Akteursformulierungen können Problemdefinition und politische Verantwortungszuschreibung prägen.",
+                "recipients": [
+                  "staat",
+                  "verbraucherinnen",
+                  "haushalte"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "condition": "Die zugespitzte Formulierung wird wiederholt, ohne Preis-, Kosten- und Verteilungsdaten nachzuliefern.",
+                "reference_space": "Mediale und politische Debatte über Energieentlastung",
+                "time_horizon": "während der öffentlichen Auseinandersetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung und Prominenz beeinflussen die Problemdefinition zumindest teilweise.",
+                "source_support": "Die Quelle verwendet eine zugespitzte Überschrift und stellt Akteurskritik prominent dar.",
+                "limitations": "Kein Publikumsnachweis und keine unabhängige Diskursmessung.",
+                "first_order": "Stärkere Aufmerksamkeit für den zugespitzten Frame.",
+                "second_order": "Mögliche Polarisierung zwischen Entlastungsbefürwortern und Kritikern.",
+                "third_order": "Mögliche Verengung späterer Entscheidungsoptionen, falls der Frame die Sachdebatte überlagert.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Effekt kann begrenzt bleiben oder bei wiederholter, datenloser Zuspitzung stärker werden."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zu Resonanz, Polarisierung oder Vertrauensänderung; der Pfad bleibt eine Wissensgrenze.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die politische Debatte richtet sich an einen breiten öffentlichen Adressatenkreis.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Formulierung ist zugespitzt, aber ihre tatsächliche Wirkung ist nicht gemessen.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Wiederholung könnte den Frame über die Beratungsphase hinweg erhalten.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Frames können durch spätere Fakten und andere Darstellungen korrigiert werden.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Vertrauen und politische Orientierung können bei unklarer Faktenlage empfindlich sein.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein möglicher Diskurseffekt könnte Entscheidungen beeinflussen, ist aber nicht belegt.",
+                    "source_ids": [
+                      "zdfheute-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Schädigung ist nicht belegt.",
+                  "reference_frame": "informierte öffentliche Debatte",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Kontroverse kann Rechenschaft fördern, zugleich kann die zugespitzte Vermittlung die Debatte verengen. Beide Pfade sind potenziell und nicht beobachtet.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Rechenschafts- und negative Verengungspfade betreffen denselben demokratischen Gegenstand; ihre Stärke ist nicht messbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Die Kontroverse könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die Kontroverse könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T10:55:41.338Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "zdfheute-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle belegt die angekündigten Maßnahmen, die vorgesehenen Beträge und zugeschriebene Kritik; sie belegt keinen Wirkungsnachweis."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine geplante Entlastung, aber keine tatsächliche Preisweitergabe oder Verteilungswirkung. Das menschliche Wirkungspotenzial bleibt deshalb bedingt und mit mittlerer Unsicherheit modelliert.",
+          "reviewed_source_ids": [
+            "zdfheute-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Kraftstoffkosten könnten für Haushalte mit hoher Fahrabhängigkeit kurzfristig sinken.",
+              "mechanism": "Die Energiesteuerentlastung kann bei Weitergabe den Endpreis von Benzin und Diesel senken.",
+              "recipients": [
+                "haushalte",
+                "verbraucherinnen",
+                "beschaeftigte"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Die Entlastung muss umgesetzt und vollständig oder überwiegend an Verbraucherinnen und Verbraucher weitergegeben werden.",
+              "reference_space": "Haushalte und Beschäftigte mit Kraftstoffbedarf in Deutschland",
+              "time_horizon": "kurzfristig bis zum Ende der angekündigten Entlastung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Steueränderung verändert den Endpreis und erreicht die betroffenen Haushalte.",
+              "source_support": "Die Quelle belegt 17 Cent je Liter und vorgesehene Mittel, nicht die tatsächliche Weitergabe.",
+              "limitations": "Keine Preis- oder Verteilungsdaten; unklarer Umsetzungszeitpunkt.",
+              "first_order": "Mögliche Senkung der Kraftstoffkosten.",
+              "second_order": "Mögliche Entlastung besonders fahrabhängiger Haushalte.",
+              "third_order": "Mögliche Veränderung der politischen Akzeptanz staatlicher Energiehilfen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Spannweite berücksichtigt sowohl vollständige Weitergabe als auch geringe oder ungleichmäßige Weitergabe."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Wirkungsdaten im Quellenbestand; Preis- und Verteilungswirkung bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoff wird von vielen Haushalten und Unternehmen genutzt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt eine konkrete, aber begrenzte Literentlastung.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Quelle beschreibt eine zeitlich begrenzte Entlastung.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Eine Preisentlastung ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Haushalte mit hoher Mobilitätsabhängigkeit könnten besonders betroffen sein.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die Maßnahme berührt Preise und Verteilung, aber kein belegter Strukturwandel liegt vor.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für existenzielle Versorgung ist im Quellenbestand nicht belegt.",
+                "reference_frame": "bezahlbare Mobilität und faire Verteilung",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Eine pauschale Entlastung könnte Haushalte ungleich erreichen und öffentliche Mittel binden.",
+              "mechanism": "Die Maßnahme knüpft laut Quelle an Kraftstoffverbrauch statt an individuelle Bedürftigkeit an.",
+              "recipients": [
+                "haushalte",
+                "staat",
+                "verbraucherinnen"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Die Entlastung bleibt breit angelegt und wird nicht durch zielgenaue Hilfen ergänzt.",
+              "reference_space": "Haushalte mit unterschiedlichem Einkommen und Mobilitätsbedarf in Deutschland",
+              "time_horizon": "während der Entlastungsperiode",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Mehr Verbrauch führt zu höherer nominaler Entlastung.",
+              "source_support": "Die Quelle gibt die Kritik der Verbraucherzentrale an fehlender Zielgenauigkeit wieder.",
+              "limitations": "Keine Verteilungsrechnung und keine Daten zu Gewinnern oder Verlierern.",
+              "first_order": "Möglicherweise unterschiedliche Entlastungsbeträge.",
+              "second_order": "Mögliche Verteilungsdebatte über Kosten und Zielgenauigkeit.",
+              "third_order": "Mögliche Auswirkungen auf Vertrauen in staatliche Energiehilfen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Wirkung reicht von begrenzter Ungleichverteilung bis zu deutlich wahrgenommenen Mitnahmeeffekten."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält eine zugeschriebene Kritik, aber keine unabhängige Verteilungsanalyse.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Eine breite Kraftstoffmaßnahme kann viele Haushalte erreichen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Ungleichverteilung ist plausibel, aber nicht quantifiziert.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die mögliche Verteilungswirkung wäre an die Maßnahmendauer gebunden.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fehlsteuerungen könnten durch spätere Anpassungen korrigiert werden.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Haushalte mit geringem Einkommen und hoher Fahrabhängigkeit könnten verletzlicher sein.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die Wirkung betrifft Verteilung und Vertrauen, nicht nachgewiesen grundlegende Institutionen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer materiellen Schutzgrenze ist nicht belegt.",
+                "reference_frame": "faire Verteilung staatlicher Entlastung",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Positive kurzfristige Entlastung und negatives Verteilungsrisiko sind beide plausibel, aber nicht gemessen. Die Richtung bleibt deshalb gemischt.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Die positiven und negativen Pfade betreffen denselben Gegenstand und dieselbe Ausgangslage; ihre tatsächliche Stärke ist offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kraftstoffkosten könnten für Haushalte mit hoher Fahrabhängigkeit kurzfristig sinken.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Kraftstoffkosten könnten für Haushalte mit hoher Fahrabhängigkeit kurzfristig sinken.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand enthält keine Daten zu Verbrauch oder Emissionen. Eine mögliche fossile Lock-in-Wirkung kann nur als bedingte Hypothese modelliert werden.",
+          "reviewed_source_ids": [
+            "zdfheute-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Eine Verbilligung fossiler Kraftstoffe könnte den Anreiz zur Verbrauchsreduktion abschwächen.",
+              "mechanism": "Ein niedrigerer Endpreis kann bei Weitergabe der Entlastung die Nutzung fossiler Kraftstoffe weniger kostspielig machen.",
+              "recipients": [
+                "natur",
+                "haushalte",
+                "unternehmen"
+              ],
+              "magnitude": 2,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Die Entlastung wird weitergegeben und verändert den Preis über einen relevanten Zeitraum.",
+              "reference_space": "Kraftstoffverbrauch und fossile Abhängigkeit in Deutschland",
+              "time_horizon": "während und nach der Entlastungsperiode",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen beeinflussen zumindest teilweise Verbrauchs- oder Investitionsentscheidungen.",
+              "source_support": "Die Quelle belegt die geplante Preisentlastung und die Debatte über fossile Abhängigkeit, nicht Emissions- oder Verbrauchseffekte.",
+              "limitations": "Keine Daten zu Verbrauch, Emissionen, Verkehrsalternativen oder Dauerwirkung.",
+              "first_order": "Möglicherweise geringerer Preisdruck auf fossile Kraftstoffe.",
+              "second_order": "Mögliche Verzögerung von Einspar- oder Umstiegsentscheidungen.",
+              "third_order": "Mögliche Verstärkung fossiler Pfadabhängigkeit bei wiederholten Preisstützungen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die ökologische Wirkung kann bei geringer Weitergabe vernachlässigbar sein, bei wirksamer Preisstützung aber moderat ausfallen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen ökologischen Wirkungsdaten im Quellenbestand; der Pfad bleibt eine bedingte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoffpreise betreffen einen breiten Verkehrs- und Wirtschaftsbereich.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die mögliche ökologische Intensität ist ohne Verbrauchsdaten nicht quantifizierbar.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt eine begrenzte Entlastungsperiode.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Anreizeffekte können durch spätere Preis- oder Klimapolitik korrigiert werden.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Natur und klimaabhängige Systeme sind gegenüber zusätzlichen Emissionen grundsätzlich verletzlich.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine wiederholte Maßnahme könnte Pfadabhängigkeiten berühren, ist aber nicht belegt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze oder Emissionsänderung ist nicht belegt.",
+                "reference_frame": "Verringerung fossiler Abhängigkeit und Klimaschutz",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der planetare Pfad ist wegen der möglichen Verbilligung fossiler Nutzung negativ modelliert, bleibt aber ohne Verbrauchs- und Emissionsdaten schwach belegt.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Im Quellenbestand ist kein vergleichbarer positiver Umweltpfad der Maßnahme belegt; die negative Richtung bleibt konditional."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Eine Verbilligung fossiler Kraftstoffe könnte den Anreiz zur Verbrauchsreduktion abschwächen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Eine Verbilligung fossiler Kraftstoffe könnte den Anreiz zur Verbrauchsreduktion abschwächen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine politische Kontroverse, aber keine beobachtete Veränderung von Vertrauen, Beteiligung oder Entscheidungen. Demokratische Wirkungen bleiben als bedingte Kommunikations- und Rechenschaftspfade modelliert.",
+          "reviewed_source_ids": [
+            "zdfheute-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Die Kontroverse könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken.",
+              "mechanism": "Öffentliche Kritik macht unterschiedliche Entlastungsmodelle und Verantwortungszuschreibungen sichtbar.",
+              "recipients": [
+                "staat",
+                "verbraucherinnen",
+                "haushalte"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Die Debatte bleibt faktenbezogen und führt zu überprüfbaren Angaben über Kosten, Umsetzung und Verteilung.",
+              "reference_space": "Öffentliche energiepolitische Debatte und parlamentarische Rechenschaft in Deutschland",
+              "time_horizon": "während der politischen Beratung und Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Öffentliche Kontroverse erhöht die Nachfrage nach nachvollziehbaren Informationen.",
+              "source_support": "Die Quelle dokumentiert Kritik verschiedener Akteure und die politische Auseinandersetzung.",
+              "limitations": "Keine Daten zu tatsächlicher Beteiligung, Vertrauen oder Entscheidungsänderungen.",
+              "first_order": "Mehr Sichtbarkeit der Kontroverse über die Maßnahme.",
+              "second_order": "Mögliche Nachfrage nach Begründungen zu Kosten und Zielgenauigkeit.",
+              "third_order": "Mögliche Stärkung oder Schwächung politischer Rechenschaft je nach Informationsqualität.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Debatte kann begrenzte Aufmerksamkeit erzeugen oder bei belastbaren Folgeinformationen stärker auf Rechenschaft wirken."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zur demokratischen Wirkung; nur eine journalistisch vermittelte Kontroverse ist belegt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Energiepreise und staatliche Hilfen betreffen einen breiten öffentlichen Adressatenkreis.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle berichtet zugespitzte Kritik, aber keine messbare Verhaltensänderung.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Debatte kann die Dauer der politischen Umsetzung begleiten.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Informations- und Rechenschaftseffekte sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Vertrauen in staatliche Entlastung kann bei unklarer Verteilung empfindlich reagieren.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Budget- und Gesetzgebungsentscheidungen berühren institutionelle Rechenschaft.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder belegt.",
+                "reference_frame": "öffentliche Rechenschaft und nachvollziehbare Energiepolitik",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Eine zugespitzte Darstellung könnte die Debatte auf Vorwürfe der Fehlsteuerung verengen.",
+              "mechanism": "Prominente Akteursformulierungen können Problemdefinition und politische Verantwortungszuschreibung prägen.",
+              "recipients": [
+                "staat",
+                "verbraucherinnen",
+                "haushalte"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "zdfheute-nachrichten"
+              ],
+              "condition": "Die zugespitzte Formulierung wird wiederholt, ohne Preis-, Kosten- und Verteilungsdaten nachzuliefern.",
+              "reference_space": "Mediale und politische Debatte über Energieentlastung",
+              "time_horizon": "während der öffentlichen Auseinandersetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung und Prominenz beeinflussen die Problemdefinition zumindest teilweise.",
+              "source_support": "Die Quelle verwendet eine zugespitzte Überschrift und stellt Akteurskritik prominent dar.",
+              "limitations": "Kein Publikumsnachweis und keine unabhängige Diskursmessung.",
+              "first_order": "Stärkere Aufmerksamkeit für den zugespitzten Frame.",
+              "second_order": "Mögliche Polarisierung zwischen Entlastungsbefürwortern und Kritikern.",
+              "third_order": "Mögliche Verengung späterer Entscheidungsoptionen, falls der Frame die Sachdebatte überlagert.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Effekt kann begrenzt bleiben oder bei wiederholter, datenloser Zuspitzung stärker werden."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zu Resonanz, Polarisierung oder Vertrauensänderung; der Pfad bleibt eine Wissensgrenze.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die politische Debatte richtet sich an einen breiten öffentlichen Adressatenkreis.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Formulierung ist zugespitzt, aber ihre tatsächliche Wirkung ist nicht gemessen.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Wiederholung könnte den Frame über die Beratungsphase hinweg erhalten.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Frames können durch spätere Fakten und andere Darstellungen korrigiert werden.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Vertrauen und politische Orientierung können bei unklarer Faktenlage empfindlich sein.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein möglicher Diskurseffekt könnte Entscheidungen beeinflussen, ist aber nicht belegt.",
+                  "source_ids": [
+                    "zdfheute-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Schädigung ist nicht belegt.",
+                "reference_frame": "informierte öffentliche Debatte",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Kontroverse kann Rechenschaft fördern, zugleich kann die zugespitzte Vermittlung die Debatte verengen. Beide Pfade sind potenziell und nicht beobachtet.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Rechenschafts- und negative Verengungspfade betreffen denselben demokratischen Gegenstand; ihre Stärke ist nicht messbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die Kontroverse könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Die Kontroverse könnte Rechenschaft über Kosten, Zielgenauigkeit und politische Prioritäten stärken.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Kraftstoffpreise könnten kurzfristig sinken, wenn die Steuerentlastung weitergegeben wird.",
+            "direction": "open",
+            "condition": "Die Entlastung muss an Tankstellen und bei Verbraucherinnen und Verbrauchern ankommen; der Bericht belegt dies noch nicht.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet"
+            ]
+          },
+          {
+            "order": "second_order",
+            "path": "Die Maßnahme könnte Investitions- und Verbrauchsanreize im Verkehr beeinflussen, abhängig von Dauer und Ausgestaltung.",
+            "direction": "open",
+            "condition": "Eine tatsächliche Änderung des Verbrauchs oder der Investitionen setzt eine wirksame und ausreichend dauerhafte Preisänderung voraus.",
+            "evidence": "plausible_path",
+            "claim_ids": [],
+            "dimensions": [
+              "planet"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "verbraucherinnen",
+          "unternehmen",
+          "staat"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Die Quelle stellt zugespitzte politische Kritik an einer staatlichen Preismaßnahme prominent heraus.",
+        "factual_core": "Die Bundesregierung plant laut dem Bericht einen Tankrabatt und einen späteren Spritpreisdeckel; mehrere Akteure kritisieren die Zielgenauigkeit.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die Quelle berichtet über geplante Maßnahmen und zugeschriebene Kritik."
+          ],
+          "actor_claims": [
+            "Die Grünen bezeichnen den Tankrabatt als absurd beziehungsweise untauglich.",
+            "Die Verbraucherzentrale nennt die Vorhaben teuer, kurzsichtig und wenig zielgenau."
+          ],
+          "open": [
+            "Ob die Entlastung bei Verbraucherinnen und Verbrauchern ankommt.",
+            "Ob der Preisdeckel tatsächlich eingeführt wird."
+          ]
+        },
+        "attribution": {
+          "frame_source": "zdfheute-nachrichten",
+          "speaker": "Grüne und Verbraucherzentrale",
+          "original_term": "Wahnsinn",
+          "usage_type": "direct_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Wahnsinn",
+          "origin_in_story": "zdfheute-nachrichten",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Wahnsinn",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Maßnahme wird als Fehlsteuerung der Energieentlastung dargestellt.",
+          "implied_cause": "Eine pauschale Entlastung könnte nicht zielgenau wirken.",
+          "implied_responsibility": "Die politische Verantwortung wird der Bundesregierung zugeschrieben.",
+          "implied_threat": "Ölkonzerne könnten von staatlicher Entlastung profitieren.",
+          "implied_solution_space": "Direkte oder zielgenauere Entlastungen sowie eine Verringerung fossiler Abhängigkeit.",
+          "material_omissions": [
+            "Konkrete Daten zur tatsächlichen Preisweitergabe fehlen.",
+            "Eine unabhängige Bestätigung der politischen Bewertungen fehlt."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Kontroverse über staatliche Energiepreis- und Entlastungspolitik",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "zdfheute-nachrichten",
+              "claim_supported": "Der Bericht gibt Kritik der Grünen und der Verbraucherzentrale an den geplanten Maßnahmen wieder."
+            }
+          ],
+          "uncertainty": "Die Quelle stellt nur eine journalistische Darstellung bereit."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatte über Energiepreise, staatliche Hilfen und fossile Abhängigkeit",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die zugespitzte Bewertung kann die Auseinandersetzung zwischen Regierungskritik und Entlastungsbefürwortern verschärfen.",
+          "trust_effect_potential": "Unklare Weitergabe der Entlastung könnte Vertrauen in staatliche Preismaßnahmen beeinflussen.",
+          "discourse_effect_potential": "Die Formulierung könnte die politische Debatte stärker auf Vorwürfe der Fehlsteuerung als auf Verteilungsdaten lenken."
+        },
+        "impact_path": {
+          "first_order": "Zugespitzte Kritik könnte die Wahrnehmung der geplanten Entlastung als politisch umstrittene Maßnahme prägen.",
+          "second_order": "Wiederholung des Frames könnte die Debatte über Zielgenauigkeit und fossile Abhängigkeit strukturieren.",
+          "third_order": "Bei anhaltender Nutzung könnte der Frame politische Entscheidungsoptionen und die Bewertung künftiger Energiehilfen beeinflussen."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Die Quelle berichtet über geplante Maßnahmen und zugeschriebene Kritik.",
+          "what_is_inferred": "Die Formulierung kann die Wahrnehmung und Debattenstruktur beeinflussen.",
+          "what_is_open": "Eine konkrete gesellschaftliche Wirkung ist nicht nachgewiesen.",
+          "facts": [
+            "Die Quelle berichtet über geplante Maßnahmen und zugeschriebene Kritik."
+          ],
+          "observations": [
+            "Die Quelle verwendet eine zugespitzte Überschrift und gibt mehrere Akteursbewertungen wieder."
+          ],
+          "inferences": [
+            "Die Formulierung kann die Wahrnehmung und Debattenstruktur beeinflussen."
+          ],
+          "impact_potentials": [
+            "Der Frame könnte die Aufmerksamkeit auf mögliche Mitnahmeeffekte lenken."
+          ],
+          "impact_risks": [
+            "Die zugespitzte Darstellung könnte eine sachliche Abwägung von Preis- und Verteilungsdaten erschweren."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Eine konkrete gesellschaftliche Wirkung ist nicht nachgewiesen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Im Mittelpunkt steht ein geplanter Tankrabatt, nicht ein belegter Erfolg an der Zapfsäule. ZDFheute berichtet, dass die Energiesteuer auf Benzin und Diesel sinken soll und ein späterer Preisdeckel vorgesehen ist. Die Grünen und die Verbraucherzentrale kritisieren die Maßnahme; sie befürchten unter anderem, dass sie nicht zielgenau ist oder teilweise Ölkonzernen zugutekommt. Das sind zugeschriebene politische und verbandliche Bewertungen, keine unabhängigen Wirkungsnachweise. Entscheidend wird sein, ob die Entlastung tatsächlich bei den Verbraucherinnen und Verbrauchern ankommt, welche Haushalte besonders profitieren und ob sich Verbrauch oder fossile Abhängigkeit verändern. Dazu liefert die vorliegende Quelle noch keine Messdaten. Die zugespitzte Darstellung kann die Debatte prägen, ersetzt aber keine Prüfung der Preisweitergabe und Verteilung.",
+        "editorial_assessment": "Im Mittelpunkt steht ein geplanter Tankrabatt, nicht ein belegter Erfolg an der Zapfsäule. ZDFheute berichtet, dass die Energiesteuer auf Benzin und Diesel sinken soll und ein späterer Preisdeckel vorgesehen ist. Die Grünen und die Verbraucherzentrale kritisieren die Maßnahme; sie befürchten unter anderem, dass sie nicht zielgenau ist oder teilweise Ölkonzernen zugutekommt. Das sind zugeschriebene politische und verbandliche Bewertungen, keine unabhängigen Wirkungsnachweise. Entscheidend wird sein, ob die Entlastung tatsächlich bei den Verbraucherinnen und Verbrauchern ankommt, welche Haushalte besonders profitieren und ob sich Verbrauch oder fossile Abhängigkeit verändern. Dazu liefert die vorliegende Quelle noch keine Messdaten. Die zugespitzte Darstellung kann die Debatte prägen, ersetzt aber keine Prüfung der Preisweitergabe und Verteilung.",
+        "fact_first_alternative": "Die Bundesregierung plant laut ZDFheute einen Tankrabatt und einen späteren Spritpreisdeckel; die Grünen und die Verbraucherzentrale kritisieren die Zielgenauigkeit. Die tatsächliche Preisweitergabe und Wirkung sind offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Die zugespitzte Formulierung im Ausgangstitel stammt aus einer Akteursbewertung und ist ohne klare Attribution missverständlich.",
+            "Die mögliche Wirkung der Maßnahme darf nicht als eingetreten dargestellt werden.",
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Tankrabatt und Spritpreisdeckel geplant – Kritik an Entlastung",
+          "recommended_summary": "Die Bundesregierung plant einen Tankrabatt und einen späteren Spritpreisdeckel. Kritik richtet sich gegen Zielgenauigkeit, Kosten und die mögliche Weitergabe der Entlastung.",
+          "recommended_meta_description": "Geplanter Tankrabatt und Spritpreisdeckel: ZDFheute berichtet über Umfang und Kritik. Preisweitergabe und Verteilungswirkung bleiben offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T10:53:58.383Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T08:24:00.000Z",
+      "last_updated": "2026-09-19T10:55:41.332Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-054059946c8d89a8fc32",
+      "case_file": null,
+      "source_published_at": "2026-09-19T08:24:00.000Z",
+      "published_at": "2026-09-19T10:55:41.332Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Es ist zu prüfen, ob der angekündigte Spritpreisdeckel spätestens zum 1. Januar konkretisiert oder eingeführt wird.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Vorliegen einer konkreten Regelung oder eines belegten Inkrafttretens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9d4d953d69a76d12",
+          "announced_at": "2026-09-19T08:24:00.000Z",
+          "follow_up_date": "2026-09-26T10:55:41.332Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Es ist zu prüfen, wie die Entlastung an der Zapfsäule tatsächlich weitergegeben wird.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Veränderung der Kraftstoffpreise und Verteilung der Entlastung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d87891ad6e1e3f34",
+          "announced_at": "2026-09-19T08:24:00.000Z",
+          "follow_up_date": "2026-09-26T10:55:41.332Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/spritpreise-entlastungen-kritik-gruene-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T08:24:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6ff0e95859ad76f8",
       "title_image": {
