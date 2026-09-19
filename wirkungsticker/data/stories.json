@@ -2,8 +2,1882 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T17:23:41.856Z",
+  "updated_at": "2026-09-19T17:34:10.018Z",
   "stories": [
+    {
+      "story_id": "wt-3f12ded8ac7dd617",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-3f12ded8ac7dd617-e8c4f1efca983e92-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-3f12ded8ac7dd617-7f56e04bf7106a4e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-3f12ded8ac7dd617-e15127288db2a343-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "studie-wg-zimmer-in-millionenstadten-deutlich-teurer-munchen-bleibt-spitzenreiter-7dd617",
+      "title": "Laut Deutschlandfunk: WG-Zimmer in Millionenstädten teurer – München bleibt Spitzenreiter",
+      "source_summary": "Der Deutschlandfunk berichtet über eine Auswertung des Moses-Mendelssohn-Instituts zu WG-Zimmern an deutschen Hochschulstandorten. In den vier deutschen Millionenstädten wurden Zimmer vor dem anstehenden Wintersemester im Schnitt für 692 Euro angeboten, 23 Euro mehr als ein halbes Jahr zuvor.\n\nMünchen blieb mit 850 Euro der teuerste Studienort. Berlin und Hamburg lagen bei jeweils 650 Euro, Köln bei 640 Euro; in mehreren ostdeutschen Städten waren die Medianpreise niedriger.\n\nDie Untersuchung wertete knapp 3.900 öffentliche Inserate für WGs mit zwei oder drei Personen aus. Die Preise beziehen sich laut Bericht meist auf Warmmieten. Die Quelle erklärt nicht unabhängig, wie repräsentativ die Angebote für alle Studierenden sind.",
+      "summary": "WG-Zimmer wurden in den vier deutschen Millionenstädten laut Deutschlandfunk teurer angeboten; München blieb der teuerste Studienort. Die Auswertung deutet auf wachsenden Kostendruck bei der Wahl des Studienorts hin, belegt aber keine Folgen für alle Studierenden.",
+      "detail_summary": "Laut Deutschlandfunk kosteten WG-Zimmer in den vier deutschen Millionenstädten vor dem anstehenden Wintersemester im Schnitt 692 Euro und damit 23 Euro mehr als ein halbes Jahr zuvor. München blieb mit 850 Euro der teuerste Studienort, während Berlin und Hamburg bei jeweils 650 Euro lagen. Die Auswertung des Moses-Mendelssohn-Instituts beruht auf knapp 3.900 öffentlichen Inseraten und umfasst Hochschulstandorte mit mehr als 5.000 Studierenden. Als mögliche Folge könnten höhere Wohnkosten die Wahl eines Studienorts stärker nach finanzieller Erreichbarkeit sortieren. Offen bleibt, wie repräsentativ die Angebote für alle Studierenden sind und ob sich daraus tatsächliche Veränderungen bei Einschreibungen ergeben.",
+      "why_relevant": "Wohnkosten können den Zugang zu Hochschulstandorten und damit Bildungsentscheidungen beeinflussen; die Quelle belegt jedoch zunächst Preisunterschiede und eine institutionelle Einschätzung, keinen Kausalnachweis.",
+      "topic": [
+        "Soziales"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Veröffentlichte Auswertung zu Angebotspreisen für WG-Zimmer an deutschen Hochschulstandorten",
+        "evaluation_target": {
+          "label": "Wohnkosten und mögliche Folgen für die Studienortwahl",
+          "type": "development"
+        },
+        "baseline": "Preisniveau und regionale Unterschiede laut der vorliegenden Auswertung vor dem anstehenden Wintersemester",
+        "counterfactual": "Ohne weitere Preissteigerungen könnten Studierende ihre Studienortwahl stärker nach bisherigen Wohnkosten, verfügbaren Alternativen und finanzieller Unterstützung treffen.",
+        "reference_frame": [
+          "Zugang zu Bildung",
+          "Verteilung finanzieller Belastungen",
+          "bezahlbares Wohnen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Höhere Wohnkosten könnten den Zugang zu Studienorten ungleich verteilen und zusätzlichen Zeit- oder Arbeitsdruck erzeugen; tatsächliche Auswirkungen auf Studienverläufe sind nicht gemessen.",
+            "planet": "Verlagerungen zu längeren Pendelwegen könnten zusätzlichen Verkehr und Energieverbrauch auslösen; Umfang und Richtung hängen von Wohn- und Mobilitätsalternativen ab.",
+            "democracy": "Ungleicher Bildungszugang könnte langfristig Repräsentation und soziale Teilhabe beeinflussen; für diesen Pfad liegen keine direkten Beobachtungsdaten vor."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Auswertung weist auf höhere und regional ungleiche Angebotspreise für WG-Zimmer hin.",
+          "second_order": "Wenn finanzielle Ausweichmöglichkeiten fehlen, könnten sich Studienortwahl, Pendeln oder Erwerbsarbeit nach der Wohnkostenbelastung richten.",
+          "third_order": "Anhaltende Ungleichheiten könnten die räumliche Verteilung von Bildungschancen und gesellschaftlicher Teilhabe verändern; dieser systemische Pfad bleibt hypothetisch.",
+          "enablement": [],
+          "counter_evidence": [
+            "Bundesweit bleiben die Preise laut Quelle weitgehend stabil.",
+            "Günstigere Hochschulorte und unterschiedliche Wohnformen können Ausweichmöglichkeiten bieten.",
+            "Die Inserate bilden nicht zwingend alle tatsächlichen Wohnkosten und Entscheidungen ab."
+          ],
+          "source_independence": "Es liegt eine journalistische Darstellung des Deutschlandfunks vor, die auf einer Auswertung des Moses-Mendelssohn-Instituts beruht. Eine unabhängige zweite Herkunft ist nicht belegt.",
+          "institutional_status": "Es handelt sich um eine Datenauswertung und institutionelle Einschätzung, nicht um eine politische Entscheidung oder rechtlich verbindliche Maßnahme."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt Angebotspreise, aber keine tatsächlichen Folgen für Zugang, Studienverlauf oder Arbeitszeit. Der Wirkungspfad bleibt an fehlende finanzielle Ausweichmöglichkeiten und anhaltende Preisunterschiede gebunden.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Höhere Wohnkosten könnten Studierende mit geringeren Ressourcen stärker belasten und dadurch Standortwahl, Pendeln oder Erwerbsarbeit beeinflussen. Die Richtung des Risikos ist plausibel, der Eintritt und die Größe sind nicht gemessen.",
+            "primary_paths": [
+              {
+                "label": "Höhere WG-Angebotspreise erschweren finanziell schwächeren Studierenden den Zugang zu bestimmten Studienorten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein höherer monatlicher Wohnkostenbedarf kann das verfügbare Budget überschreiten oder zusätzliche Erwerbs- und Pendelentscheidungen auslösen.",
+                "recipients": [
+                  "Studierende mit geringem Einkommen",
+                  "Haushalte ohne ausreichende finanzielle Unterstützung"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die regionale Spannweite ist belegt; tatsächliche Betroffenheit hängt von Einkommen, Wohnform und Ausweichmöglichkeiten ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mehrere deutsche Hochschulstandorte und Studierende können betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Quelle berichtet deutliche Preisunterschiede zwischen Standorten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Anhaltende Wohnkosten könnten über ein Studiensemester hinaus wirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Standort- und Wohnentscheidungen bleiben grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Studierende mit knappen Budgets sind gegenüber Mietunterschieden besonders empfindlich.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad verbindet Wohnungsmarkt, Bildungszugang und soziale Verteilung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung eines belegten Schutzstandards ist nicht nachgewiesen; betroffen ist ein bedingter Zugangspfad.",
+                  "reference_frame": "gleichberechtigter Zugang zu Bildung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Preisunterschiede anhalten und keine ausreichenden Wohn-, Pendel- oder Unterstützungsalternativen verfügbar sind.",
+                "reference_space": "deutsche Hochschulstandorte mit den in der Auswertung berücksichtigten Inseraten",
+                "time_horizon": "kommende Studienentscheidung und anschließender Studienverlauf",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Wohnkosten werden aus verfügbaren Budgets finanziert und wirken bei fehlenden Alternativen auf Standortentscheidungen.",
+                "source_support": "Die Quelle berichtet Preise, regionale Unterschiede und die Einschätzung, dass Wohnkosten die Finanzierbarkeit eines Studienorts beeinflussen können; sie belegt keine eingetretene Folge.",
+                "limitations": "Keine Daten zu Einkommen, tatsächlichen Verträgen, Studienabbrüchen, Pendelzeiten oder Einschreibungen.",
+                "first_order": "Studierende könnten teurere Studienorte meiden oder ihre Wohnform ändern.",
+                "second_order": "Sie könnten auf günstigere Orte ausweichen, mehr pendeln oder Erwerbsarbeit ausweiten.",
+                "third_order": "Eine dauerhafte soziale Sortierung nach Wohnkosten könnte regionale Bildungszugänge verändern; dies bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst die tatsächliche Veränderung von Studienentscheidungen oder Studienverläufen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Günstigere Hochschulorte können als Ausweichpfad wirken",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Niedrigere Medianpreise an einzelnen Hochschulorten könnten den finanziellen Zugang für einen Teil der Studierenden erleichtern.",
+                "recipients": [
+                  "Studierende mit begrenztem Wohnbudget",
+                  "Hochschulorte mit niedrigeren Angebotspreisen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle nennt günstigere Standorte, belegt aber nicht, ob dort passende Studienplätze und Wohnangebote verfügbar sind."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Ausweichpfad betrifft nur bestimmte Hochschulorte und Fächer.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Niedrigere Preise können Budgets entlasten, ihre Wirkung ist individuell.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Entlastung könnte über die Wohnzeit anhalten, bleibt aber vom Angebot abhängig.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ein Wechsel oder eine alternative Wahl ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Der Nutzen ist für preisempfindliche Studierende größer.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft vor allem individuelle und regionale Standortentscheidungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Gegenpfad beschreibt eine mögliche Entlastung, keine nachgewiesene Schutzwirkung.",
+                  "reference_frame": "finanzielle Erreichbarkeit von Studienorten",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Günstigere Standorte müssen das passende Studienangebot und verfügbare Zimmer bieten.",
+                "reference_space": "in der Quelle genannte günstigere Hochschulorte",
+                "time_horizon": "kommende Studienentscheidungen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Studierende können und wollen den Studienort wechseln oder Alternativen wählen.",
+                "source_support": "Die Quelle nennt niedrigere Medianpreise an einigen Orten, aber keine Daten zur Nutzung dieser Orte als Ausweichoption.",
+                "limitations": "Keine Informationen zu Fächerangebot, Verfügbarkeit, Pendelaufwand oder sozialer Passung.",
+                "first_order": "Ein günstigerer Wohnort könnte finanzielle Spielräume schaffen.",
+                "second_order": "Die Standortwahl könnte sich teilweise von den teuersten Städten weg verlagern.",
+                "third_order": "Regionale Nachfrage könnte sich verändern, wenn viele Studierende dieselben Alternativen wählen; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle bestätigt Preisunterschiede, nicht aber einen tatsächlichen Ausweichstrom.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mehr Pendeln oder Erwerbsarbeit als Anpassung an hohe Wohnkosten",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Wenn ein Umzug an den Studienort zu teuer ist, könnten längere Wege oder zusätzliche Arbeitszeiten gewählt werden.",
+                "recipients": [
+                  "Studierende",
+                  "Haushalte mit begrenztem Budget"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Mechanismus ist nachvollziehbar, wird von der Quelle aber nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Nur ein Teil der betroffenen Studierenden verfügt über solche Optionen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Zeit- und Arbeitsbelastung könnten steigen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Belastung könnte während des Studiums anhalten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Arbeits- oder Pendelentscheidungen können verändert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Studierende mit wenig finanziellen Reserven wären stärker betroffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad verbindet Wohnkosten mit Zeit- und Erwerbsressourcen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete gesundheitliche oder rechtliche Grenzverletzung ist nicht belegt.",
+                  "reference_frame": "Studienbedingungen und verfügbare Zeitressourcen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Hohe Preise müssen mit fehlender Unterstützung und fehlenden Wohnalternativen zusammentreffen.",
+                "reference_space": "deutsche Hochschulstandorte",
+                "time_horizon": "während der Studienzeit",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Pendeln oder zusätzliche Arbeit sind für Betroffene praktisch möglich.",
+                "source_support": "Die Quelle weist auf die Bedeutung der Finanzierbarkeit hin, nicht auf Pendel- oder Arbeitsfolgen.",
+                "limitations": "Keine Verhaltens- oder Verlaufsdaten.",
+                "first_order": "Zusätzliche finanzielle Anpassungen könnten nötig werden.",
+                "second_order": "Verfügbare Zeit für Studium und Erholung könnte sinken.",
+                "third_order": "Ungleiche Studienbedingungen könnten sich verfestigen; dies bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle untersucht Pendeln, Erwerbsarbeit oder Studienleistungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein negativer Belastungspfad und ein begrenzter positiver Ausweichpfad sind vergleichbar, aber ihre Stärke und tatsächliche Reichweite sind nicht gemessen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Höhere WG-Angebotspreise erschweren finanziell schwächeren Studierenden den Zugang zu bestimmten Studienorten",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Höhere WG-Angebotspreise erschweren finanziell schwächeren Studierenden den Zugang zu bestimmten Studienorten",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Mobilitäts-, Energie- oder Emissionsdaten. Ein ökologischer Pfad ist nur über mögliche Verlagerungen von Wohn- und Pendelentscheidungen modellierbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Höhere oder räumlich unpassende Wohnkosten könnten längere Wege oder zusätzliche Mobilität begünstigen. Richtung und Umfang bleiben offen, weil die Quelle keine Verkehrs- oder Energieeffekte ausweist.",
+            "primary_paths": [
+              {
+                "label": "Wohnkostenbedingte Ausweichentscheidungen könnten zusätzliche Pendelwege auslösen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn Studierende nicht am Studienort wohnen können, könnten sie aus günstigeren Orten pendeln.",
+                "recipients": [
+                  "Studierende",
+                  "Verkehrs- und Energiesysteme"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein solcher Effekt ist möglich, aber weder beobachtet noch quantifiziert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nur ein Teil der Studierenden dürfte auf Pendeln ausweichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die ökologische Zusatzbelastung je Person ist nicht bekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Pendeln könnte über mehrere Semester fortbestehen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mobilitätsmuster können bei verändertem Wohnangebot angepasst werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die ökologische Betroffenheit hängt von Verkehrsmittel und Entfernung ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Wohnstandort und Mobilität sind miteinander gekoppelt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine ökologische Grenzverletzung oder messbare Emissionsänderung.",
+                  "reference_frame": "Ressourcen- und Emissionsbelastung durch zusätzliche Mobilität",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Hohe Wohnkosten müssen zu längeren Wegen führen und diese müssen überwiegend mit emissionsintensiveren Verkehrsmitteln erfolgen.",
+                "reference_space": "Hochschulstandorte und ihr Einzugsgebiet",
+                "time_horizon": "kommende Studiensemester",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wohnkosten beeinflussen den Wohnort und der Wohnort beeinflusst die Verkehrsmittelwahl.",
+                "source_support": "Die Quelle berichtet Wohnkosten und mögliche Bedeutung für die Studienortwahl, nicht Mobilität oder Emissionen.",
+                "limitations": "Keine Angaben zu Distanzen, Verkehrsmitteln, Energieverbrauch oder Emissionen.",
+                "first_order": "Ein Teil der Studierenden könnte längere Wege wählen.",
+                "second_order": "Der zusätzliche Verkehr könnte Energiebedarf und Emissionen erhöhen.",
+                "third_order": "Bei breiter Verlagerung könnten regionale Verkehrsstrukturen beeinflusst werden; dies ist hoch unsicher.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle liefert Daten zu Pendelwegen oder ökologischen Folgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Konzentration auf günstigere Hochschulorte könnte Wege verkürzen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Wenn Studierende einen näheren oder günstigeren Studienort wählen, könnten einzelne Pendel- oder Umzugswege geringer ausfallen.",
+                "recipients": [
+                  "Studierende",
+                  "regionale Verkehrssysteme"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle nennt Preisunterschiede, aber keine räumlichen oder verkehrlichen Anpassungen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft nur einzelne Standortentscheidungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Veränderung einzelner Wege ist nicht quantifiziert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein Standortwechsel könnte mehrere Semester wirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Standortentscheidungen sind grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Entlastung hängt von konkreter Entfernung und Mobilität ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf individuelle Mobilitätsentscheidungen begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Verkehrsbedingte Ressourcen- und Emissionsbelastung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Studierende müssen einen passenden günstigeren Studienort finden und dadurch tatsächlich Wege reduzieren.",
+                "reference_space": "deutsche Hochschulstandorte",
+                "time_horizon": "kommende Studienentscheidungen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Standortwahl ersetzt längere Pendel- oder Umzugswege.",
+                "source_support": "Nur regionale Preisunterschiede sind belegt.",
+                "limitations": "Keine Daten zu Studienangebot, Entfernungen oder Verkehrsmitteln.",
+                "first_order": "Einzelne Wohn- und Studienorte könnten näher zusammenliegen.",
+                "second_order": "Der individuelle Mobilitätsbedarf könnte sinken.",
+                "third_order": "Eine regionale Verschiebung der Nachfrage könnte Verkehrsmuster verändern; dies ist nicht nachgewiesen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine belastbare Bewertung des ökologischen Gegenpfads.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt sowohl mögliche Mehr- als auch Minderverkehre; mangels Mobilitätsdaten ist keine Richtung mit hoher Sicherheit belegbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Wohnkostenbedingte Ausweichentscheidungen könnten zusätzliche Pendelwege auslösen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Wohnkostenbedingte Ausweichentscheidungen könnten zusätzliche Pendelwege auslösen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine Veränderung politischer Teilhabe oder institutioneller Repräsentation. Der Pfad beruht auf der bedingten Annahme, dass ungleicher Bildungszugang langfristig soziale Teilhabe beeinflussen kann.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Wenn Wohnkosten den Zugang zu bestimmten Studienorten sozial sortieren, könnte dies langfristig Bildungs- und Teilhabechancen ungleich verteilen. Der demokratische Pfad ist indirekt und nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Ungleiche Wohnkosten könnten Bildungszugänge sozial sortieren",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Finanzielle Zugangshürden können die Auswahl von Studienorten und damit Bildungswege nach Ressourcen differenzieren.",
+                "recipients": [
+                  "Studierende mit geringem Einkommen",
+                  "gesellschaftliche Gruppen mit ungleichen Bildungsressourcen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein möglicher Verteilungspfad ist plausibel, aber weder seine Reichweite noch eine Wirkung auf politische Teilhabe sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann mehrere Hochschulorte und soziale Gruppen betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle zeigt Preisunterschiede, nicht politische Folgen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Bildungsentscheidungen können langfristige Folgen für Teilhabe haben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Bildungs- und Wohnentscheidungen bleiben teilweise korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ressourcenarme Haushalte könnten stärker auf Wohnkosten reagieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad verbindet Bildungszugang mit langfristiger gesellschaftlicher Teilhabe.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Einschränkung politischer Rechte oder institutioneller Korrekturfähigkeit.",
+                  "reference_frame": "gleichberechtigter Zugang zu Bildung und gesellschaftlicher Teilhabe",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Preisunterschiede müssen anhalten und sich tatsächlich in ungleichen Bildungswegen niederschlagen.",
+                "reference_space": "deutsche Hochschulstandorte und langfristige Bildungsbiografien",
+                "time_horizon": "mehrere Jahre",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Höhere Bildungschancen wirken langfristig auf gesellschaftliche Teilhabe und diese wird durch Wohnkosten ungleich verteilt.",
+                "source_support": "Die Quelle nennt die mögliche Bedeutung der Wohnkosten für die Studienortwahl, aber keine Daten zu Teilhabe oder Repräsentation.",
+                "limitations": "Keine Angaben zu sozialer Zusammensetzung, politischen Einstellungen, Bildungsabschlüssen oder demokratischer Beteiligung.",
+                "first_order": "Studienortentscheidungen könnten stärker von finanziellen Ressourcen abhängen.",
+                "second_order": "Bildungswege und regionale soziale Zusammensetzung könnten sich auseinanderentwickeln.",
+                "third_order": "Langfristig könnte sich gesellschaftliche Teilhabe ungleich verteilen; dieser Pfad ist nicht empirisch belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle untersucht den Zusammenhang zwischen den genannten WG-Preisen und demokratischer Teilhabe.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Günstigere Standorte könnten Bildungszugang für einzelne Gruppen sichern",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Niedrigere Wohnkosten könnten für einige Studierende den Zugang zu einem passenden Hochschulort ermöglichen.",
+                "recipients": [
+                  "Studierende mit begrenzten finanziellen Ressourcen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle nennt günstigere Orte, belegt aber keinen verbesserten Zugang oder spätere Teilhabe."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der potenzielle Nutzen betrifft nur Studierende mit passendem Studienangebot.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die mögliche Entlastung ist nicht mit Teilhabedaten verbunden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ein erreichbarer Studienort könnte langfristig relevant sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Studien- und Wohnentscheidungen können verändert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Der Nutzen wäre für ressourcenarme Studierende größer.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der demokratische Bezug bleibt indirekt und langfristig.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzwirkung ist nicht belegt.",
+                  "reference_frame": "Zugang zu Bildung als Voraussetzung gesellschaftlicher Teilhabe",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Günstigere Orte müssen passende Studienangebote und reale Wohnmöglichkeiten bieten.",
+                "reference_space": "deutsche Hochschulstandorte",
+                "time_horizon": "kommende Studienentscheidungen und spätere Bildungsbiografien",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Niedrigere Wohnkosten werden tatsächlich in zusätzlichen Bildungszugang übersetzt.",
+                "source_support": "Die Quelle belegt Preisunterschiede, nicht deren demokratische Folgen.",
+                "limitations": "Keine Daten zu Zugangsquoten, Bildungsabschlüssen oder Teilhabe.",
+                "first_order": "Ein günstigerer Studienort könnte finanzielle Hürden mindern.",
+                "second_order": "Bildungswege könnten für einzelne Gruppen erreichbar bleiben.",
+                "third_order": "Langfristige Teilhabe könnte dadurch stabilisiert werden; dies ist offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine belastbare Bewertung eines demokratischen Gegenpfads.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein indirekter negativer Sortierungspfad steht einem begrenzten positiven Ausweichpfad gegenüber; beide sind mangels Teilhabedaten unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Ungleiche Wohnkosten könnten Bildungszugänge sozial sortieren",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ungleiche Wohnkosten könnten Bildungszugänge sozial sortieren",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T17:35:45.982Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle belegt die berichteten Angebotspreise, die regionale Spannweite, die Auswertung öffentlich zugänglicher Inserate und die zugeschriebene Einschätzung zur Bedeutung der Wohnkosten."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt Angebotspreise, aber keine tatsächlichen Folgen für Zugang, Studienverlauf oder Arbeitszeit. Der Wirkungspfad bleibt an fehlende finanzielle Ausweichmöglichkeiten und anhaltende Preisunterschiede gebunden.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Höhere Wohnkosten könnten Studierende mit geringeren Ressourcen stärker belasten und dadurch Standortwahl, Pendeln oder Erwerbsarbeit beeinflussen. Die Richtung des Risikos ist plausibel, der Eintritt und die Größe sind nicht gemessen.",
+          "primary_paths": [
+            {
+              "label": "Höhere WG-Angebotspreise erschweren finanziell schwächeren Studierenden den Zugang zu bestimmten Studienorten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein höherer monatlicher Wohnkostenbedarf kann das verfügbare Budget überschreiten oder zusätzliche Erwerbs- und Pendelentscheidungen auslösen.",
+              "recipients": [
+                "Studierende mit geringem Einkommen",
+                "Haushalte ohne ausreichende finanzielle Unterstützung"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die regionale Spannweite ist belegt; tatsächliche Betroffenheit hängt von Einkommen, Wohnform und Ausweichmöglichkeiten ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mehrere deutsche Hochschulstandorte und Studierende können betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Quelle berichtet deutliche Preisunterschiede zwischen Standorten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Anhaltende Wohnkosten könnten über ein Studiensemester hinaus wirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Standort- und Wohnentscheidungen bleiben grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Studierende mit knappen Budgets sind gegenüber Mietunterschieden besonders empfindlich.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad verbindet Wohnungsmarkt, Bildungszugang und soziale Verteilung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung eines belegten Schutzstandards ist nicht nachgewiesen; betroffen ist ein bedingter Zugangspfad.",
+                "reference_frame": "gleichberechtigter Zugang zu Bildung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Preisunterschiede anhalten und keine ausreichenden Wohn-, Pendel- oder Unterstützungsalternativen verfügbar sind.",
+              "reference_space": "deutsche Hochschulstandorte mit den in der Auswertung berücksichtigten Inseraten",
+              "time_horizon": "kommende Studienentscheidung und anschließender Studienverlauf",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Wohnkosten werden aus verfügbaren Budgets finanziert und wirken bei fehlenden Alternativen auf Standortentscheidungen.",
+              "source_support": "Die Quelle berichtet Preise, regionale Unterschiede und die Einschätzung, dass Wohnkosten die Finanzierbarkeit eines Studienorts beeinflussen können; sie belegt keine eingetretene Folge.",
+              "limitations": "Keine Daten zu Einkommen, tatsächlichen Verträgen, Studienabbrüchen, Pendelzeiten oder Einschreibungen.",
+              "first_order": "Studierende könnten teurere Studienorte meiden oder ihre Wohnform ändern.",
+              "second_order": "Sie könnten auf günstigere Orte ausweichen, mehr pendeln oder Erwerbsarbeit ausweiten.",
+              "third_order": "Eine dauerhafte soziale Sortierung nach Wohnkosten könnte regionale Bildungszugänge verändern; dies bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst die tatsächliche Veränderung von Studienentscheidungen oder Studienverläufen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Günstigere Hochschulorte können als Ausweichpfad wirken",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Niedrigere Medianpreise an einzelnen Hochschulorten könnten den finanziellen Zugang für einen Teil der Studierenden erleichtern.",
+              "recipients": [
+                "Studierende mit begrenztem Wohnbudget",
+                "Hochschulorte mit niedrigeren Angebotspreisen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle nennt günstigere Standorte, belegt aber nicht, ob dort passende Studienplätze und Wohnangebote verfügbar sind."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Ausweichpfad betrifft nur bestimmte Hochschulorte und Fächer.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Niedrigere Preise können Budgets entlasten, ihre Wirkung ist individuell.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Entlastung könnte über die Wohnzeit anhalten, bleibt aber vom Angebot abhängig.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ein Wechsel oder eine alternative Wahl ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Der Nutzen ist für preisempfindliche Studierende größer.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft vor allem individuelle und regionale Standortentscheidungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Gegenpfad beschreibt eine mögliche Entlastung, keine nachgewiesene Schutzwirkung.",
+                "reference_frame": "finanzielle Erreichbarkeit von Studienorten",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Günstigere Standorte müssen das passende Studienangebot und verfügbare Zimmer bieten.",
+              "reference_space": "in der Quelle genannte günstigere Hochschulorte",
+              "time_horizon": "kommende Studienentscheidungen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Studierende können und wollen den Studienort wechseln oder Alternativen wählen.",
+              "source_support": "Die Quelle nennt niedrigere Medianpreise an einigen Orten, aber keine Daten zur Nutzung dieser Orte als Ausweichoption.",
+              "limitations": "Keine Informationen zu Fächerangebot, Verfügbarkeit, Pendelaufwand oder sozialer Passung.",
+              "first_order": "Ein günstigerer Wohnort könnte finanzielle Spielräume schaffen.",
+              "second_order": "Die Standortwahl könnte sich teilweise von den teuersten Städten weg verlagern.",
+              "third_order": "Regionale Nachfrage könnte sich verändern, wenn viele Studierende dieselben Alternativen wählen; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle bestätigt Preisunterschiede, nicht aber einen tatsächlichen Ausweichstrom.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mehr Pendeln oder Erwerbsarbeit als Anpassung an hohe Wohnkosten",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Wenn ein Umzug an den Studienort zu teuer ist, könnten längere Wege oder zusätzliche Arbeitszeiten gewählt werden.",
+              "recipients": [
+                "Studierende",
+                "Haushalte mit begrenztem Budget"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Mechanismus ist nachvollziehbar, wird von der Quelle aber nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Nur ein Teil der betroffenen Studierenden verfügt über solche Optionen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Zeit- und Arbeitsbelastung könnten steigen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Belastung könnte während des Studiums anhalten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Arbeits- oder Pendelentscheidungen können verändert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Studierende mit wenig finanziellen Reserven wären stärker betroffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad verbindet Wohnkosten mit Zeit- und Erwerbsressourcen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete gesundheitliche oder rechtliche Grenzverletzung ist nicht belegt.",
+                "reference_frame": "Studienbedingungen und verfügbare Zeitressourcen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Hohe Preise müssen mit fehlender Unterstützung und fehlenden Wohnalternativen zusammentreffen.",
+              "reference_space": "deutsche Hochschulstandorte",
+              "time_horizon": "während der Studienzeit",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Pendeln oder zusätzliche Arbeit sind für Betroffene praktisch möglich.",
+              "source_support": "Die Quelle weist auf die Bedeutung der Finanzierbarkeit hin, nicht auf Pendel- oder Arbeitsfolgen.",
+              "limitations": "Keine Verhaltens- oder Verlaufsdaten.",
+              "first_order": "Zusätzliche finanzielle Anpassungen könnten nötig werden.",
+              "second_order": "Verfügbare Zeit für Studium und Erholung könnte sinken.",
+              "third_order": "Ungleiche Studienbedingungen könnten sich verfestigen; dies bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle untersucht Pendeln, Erwerbsarbeit oder Studienleistungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein negativer Belastungspfad und ein begrenzter positiver Ausweichpfad sind vergleichbar, aber ihre Stärke und tatsächliche Reichweite sind nicht gemessen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Höhere WG-Angebotspreise erschweren finanziell schwächeren Studierenden den Zugang zu bestimmten Studienorten",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Höhere WG-Angebotspreise erschweren finanziell schwächeren Studierenden den Zugang zu bestimmten Studienorten",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Mobilitäts-, Energie- oder Emissionsdaten. Ein ökologischer Pfad ist nur über mögliche Verlagerungen von Wohn- und Pendelentscheidungen modellierbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Höhere oder räumlich unpassende Wohnkosten könnten längere Wege oder zusätzliche Mobilität begünstigen. Richtung und Umfang bleiben offen, weil die Quelle keine Verkehrs- oder Energieeffekte ausweist.",
+          "primary_paths": [
+            {
+              "label": "Wohnkostenbedingte Ausweichentscheidungen könnten zusätzliche Pendelwege auslösen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn Studierende nicht am Studienort wohnen können, könnten sie aus günstigeren Orten pendeln.",
+              "recipients": [
+                "Studierende",
+                "Verkehrs- und Energiesysteme"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein solcher Effekt ist möglich, aber weder beobachtet noch quantifiziert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nur ein Teil der Studierenden dürfte auf Pendeln ausweichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die ökologische Zusatzbelastung je Person ist nicht bekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Pendeln könnte über mehrere Semester fortbestehen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mobilitätsmuster können bei verändertem Wohnangebot angepasst werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die ökologische Betroffenheit hängt von Verkehrsmittel und Entfernung ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Wohnstandort und Mobilität sind miteinander gekoppelt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine ökologische Grenzverletzung oder messbare Emissionsänderung.",
+                "reference_frame": "Ressourcen- und Emissionsbelastung durch zusätzliche Mobilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Hohe Wohnkosten müssen zu längeren Wegen führen und diese müssen überwiegend mit emissionsintensiveren Verkehrsmitteln erfolgen.",
+              "reference_space": "Hochschulstandorte und ihr Einzugsgebiet",
+              "time_horizon": "kommende Studiensemester",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wohnkosten beeinflussen den Wohnort und der Wohnort beeinflusst die Verkehrsmittelwahl.",
+              "source_support": "Die Quelle berichtet Wohnkosten und mögliche Bedeutung für die Studienortwahl, nicht Mobilität oder Emissionen.",
+              "limitations": "Keine Angaben zu Distanzen, Verkehrsmitteln, Energieverbrauch oder Emissionen.",
+              "first_order": "Ein Teil der Studierenden könnte längere Wege wählen.",
+              "second_order": "Der zusätzliche Verkehr könnte Energiebedarf und Emissionen erhöhen.",
+              "third_order": "Bei breiter Verlagerung könnten regionale Verkehrsstrukturen beeinflusst werden; dies ist hoch unsicher.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle liefert Daten zu Pendelwegen oder ökologischen Folgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Konzentration auf günstigere Hochschulorte könnte Wege verkürzen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Wenn Studierende einen näheren oder günstigeren Studienort wählen, könnten einzelne Pendel- oder Umzugswege geringer ausfallen.",
+              "recipients": [
+                "Studierende",
+                "regionale Verkehrssysteme"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle nennt Preisunterschiede, aber keine räumlichen oder verkehrlichen Anpassungen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft nur einzelne Standortentscheidungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Veränderung einzelner Wege ist nicht quantifiziert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein Standortwechsel könnte mehrere Semester wirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Standortentscheidungen sind grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Entlastung hängt von konkreter Entfernung und Mobilität ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf individuelle Mobilitätsentscheidungen begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Verkehrsbedingte Ressourcen- und Emissionsbelastung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Studierende müssen einen passenden günstigeren Studienort finden und dadurch tatsächlich Wege reduzieren.",
+              "reference_space": "deutsche Hochschulstandorte",
+              "time_horizon": "kommende Studienentscheidungen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Standortwahl ersetzt längere Pendel- oder Umzugswege.",
+              "source_support": "Nur regionale Preisunterschiede sind belegt.",
+              "limitations": "Keine Daten zu Studienangebot, Entfernungen oder Verkehrsmitteln.",
+              "first_order": "Einzelne Wohn- und Studienorte könnten näher zusammenliegen.",
+              "second_order": "Der individuelle Mobilitätsbedarf könnte sinken.",
+              "third_order": "Eine regionale Verschiebung der Nachfrage könnte Verkehrsmuster verändern; dies ist nicht nachgewiesen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine belastbare Bewertung des ökologischen Gegenpfads.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt sowohl mögliche Mehr- als auch Minderverkehre; mangels Mobilitätsdaten ist keine Richtung mit hoher Sicherheit belegbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Wohnkostenbedingte Ausweichentscheidungen könnten zusätzliche Pendelwege auslösen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Wohnkostenbedingte Ausweichentscheidungen könnten zusätzliche Pendelwege auslösen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine Veränderung politischer Teilhabe oder institutioneller Repräsentation. Der Pfad beruht auf der bedingten Annahme, dass ungleicher Bildungszugang langfristig soziale Teilhabe beeinflussen kann.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Wenn Wohnkosten den Zugang zu bestimmten Studienorten sozial sortieren, könnte dies langfristig Bildungs- und Teilhabechancen ungleich verteilen. Der demokratische Pfad ist indirekt und nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Ungleiche Wohnkosten könnten Bildungszugänge sozial sortieren",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Finanzielle Zugangshürden können die Auswahl von Studienorten und damit Bildungswege nach Ressourcen differenzieren.",
+              "recipients": [
+                "Studierende mit geringem Einkommen",
+                "gesellschaftliche Gruppen mit ungleichen Bildungsressourcen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein möglicher Verteilungspfad ist plausibel, aber weder seine Reichweite noch eine Wirkung auf politische Teilhabe sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann mehrere Hochschulorte und soziale Gruppen betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle zeigt Preisunterschiede, nicht politische Folgen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Bildungsentscheidungen können langfristige Folgen für Teilhabe haben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Bildungs- und Wohnentscheidungen bleiben teilweise korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ressourcenarme Haushalte könnten stärker auf Wohnkosten reagieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad verbindet Bildungszugang mit langfristiger gesellschaftlicher Teilhabe.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Einschränkung politischer Rechte oder institutioneller Korrekturfähigkeit.",
+                "reference_frame": "gleichberechtigter Zugang zu Bildung und gesellschaftlicher Teilhabe",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Preisunterschiede müssen anhalten und sich tatsächlich in ungleichen Bildungswegen niederschlagen.",
+              "reference_space": "deutsche Hochschulstandorte und langfristige Bildungsbiografien",
+              "time_horizon": "mehrere Jahre",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Höhere Bildungschancen wirken langfristig auf gesellschaftliche Teilhabe und diese wird durch Wohnkosten ungleich verteilt.",
+              "source_support": "Die Quelle nennt die mögliche Bedeutung der Wohnkosten für die Studienortwahl, aber keine Daten zu Teilhabe oder Repräsentation.",
+              "limitations": "Keine Angaben zu sozialer Zusammensetzung, politischen Einstellungen, Bildungsabschlüssen oder demokratischer Beteiligung.",
+              "first_order": "Studienortentscheidungen könnten stärker von finanziellen Ressourcen abhängen.",
+              "second_order": "Bildungswege und regionale soziale Zusammensetzung könnten sich auseinanderentwickeln.",
+              "third_order": "Langfristig könnte sich gesellschaftliche Teilhabe ungleich verteilen; dieser Pfad ist nicht empirisch belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle untersucht den Zusammenhang zwischen den genannten WG-Preisen und demokratischer Teilhabe.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Günstigere Standorte könnten Bildungszugang für einzelne Gruppen sichern",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Niedrigere Wohnkosten könnten für einige Studierende den Zugang zu einem passenden Hochschulort ermöglichen.",
+              "recipients": [
+                "Studierende mit begrenzten finanziellen Ressourcen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle nennt günstigere Orte, belegt aber keinen verbesserten Zugang oder spätere Teilhabe."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der potenzielle Nutzen betrifft nur Studierende mit passendem Studienangebot.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die mögliche Entlastung ist nicht mit Teilhabedaten verbunden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ein erreichbarer Studienort könnte langfristig relevant sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Studien- und Wohnentscheidungen können verändert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Der Nutzen wäre für ressourcenarme Studierende größer.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der demokratische Bezug bleibt indirekt und langfristig.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzwirkung ist nicht belegt.",
+                "reference_frame": "Zugang zu Bildung als Voraussetzung gesellschaftlicher Teilhabe",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Günstigere Orte müssen passende Studienangebote und reale Wohnmöglichkeiten bieten.",
+              "reference_space": "deutsche Hochschulstandorte",
+              "time_horizon": "kommende Studienentscheidungen und spätere Bildungsbiografien",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Niedrigere Wohnkosten werden tatsächlich in zusätzlichen Bildungszugang übersetzt.",
+              "source_support": "Die Quelle belegt Preisunterschiede, nicht deren demokratische Folgen.",
+              "limitations": "Keine Daten zu Zugangsquoten, Bildungsabschlüssen oder Teilhabe.",
+              "first_order": "Ein günstigerer Studienort könnte finanzielle Hürden mindern.",
+              "second_order": "Bildungswege könnten für einzelne Gruppen erreichbar bleiben.",
+              "third_order": "Langfristige Teilhabe könnte dadurch stabilisiert werden; dies ist offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine belastbare Bewertung eines demokratischen Gegenpfads.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein indirekter negativer Sortierungspfad steht einem begrenzten positiven Ausweichpfad gegenüber; beide sind mangels Teilhabedaten unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ungleiche Wohnkosten könnten Bildungszugänge sozial sortieren",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Ungleiche Wohnkosten könnten Bildungszugänge sozial sortieren",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T17:34:10.018Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T11:59:57.000Z",
+      "last_updated": "2026-09-19T17:35:45.977Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-f123981b6108fb837f2f",
+      "case_file": null,
+      "source_published_at": "2026-09-19T17:17:42.000Z",
+      "published_at": "2026-09-19T17:35:45.977Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/wg-zimmer-in-millionenstaedten-deutlich-teurer-muenchen-bleibt-spitzenreiter-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T17:17:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-4a657d0676992670",
       "title_image": {

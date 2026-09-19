@@ -109414,14 +109414,14 @@
       "items": 10,
       "etag": null,
       "last_modified": "Thu, 10 Sep 2026 07:07:49 GMT",
-      "last_attempt": "2026-09-18T17:23:55.893Z",
-      "attempts": 369,
-      "consecutive_failures": 4,
+      "last_attempt": "2026-09-19T17:34:10.018Z",
+      "attempts": 370,
+      "consecutive_failures": 5,
       "latest_item": null,
       "governance_hold_reason": "ROBOTS_DISALLOWED",
-      "governance_hold_until": "2026-09-19T17:23:55.893Z",
-      "failures": 4,
-      "last_error_at": "2026-09-18T17:23:55.893Z"
+      "governance_hold_until": "2026-09-20T17:34:10.018Z",
+      "failures": 5,
+      "last_error_at": "2026-09-19T17:34:10.018Z"
     },
     "umweltbundesamt-presse": {
       "last_success": "2026-09-19T17:23:41.856Z",
@@ -110011,6 +110011,9 @@
     }
   },
   "pending_story_ids": [
+    "wt-ef3190c1a903196e",
+    "wt-ee09826c0c4d44f4",
+    "wt-acfec50237d9fb4d",
     "wt-020966d3b3f330bd",
     "wt-570af7b7936b7f3a",
     "wt-505f76dd8496e538",
@@ -110049,7 +110052,6 @@
     "wt-bd3412b1eba60164",
     "wt-8c2efa5862d7d6c1",
     "wt-1b0459b9f1370276",
-    "wt-3f12ded8ac7dd617",
     "wt-5a21a3a4471a1e62",
     "wt-492fde11550f416a",
     "wt-9dd7fd56217f0777",
@@ -110162,7 +110164,6 @@
     "wt-666ac625f1ad382c",
     "wt-34c4bcfb55ff9389",
     "wt-1829a37198fc2de1",
-    "wt-ca3d5a77966ea669",
     "wt-096cc714e6f04271",
     "wt-35e6aaa227cbe452",
     "wt-48a527cab9d9067c",
@@ -110456,13 +110457,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-acfec50237d9fb4d",
-    "wt-ef3190c1a903196e",
-    "wt-ee09826c0c4d44f4"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-19T17:23:41.856Z",
+  "last_attempted_run": "2026-09-19T17:34:10.018Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.146,
