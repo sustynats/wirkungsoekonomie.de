@@ -4,21 +4,18 @@
     "bridge-access": {
       "firstSeen": "2026-09-15T16:54:49.150Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-19T17:39:49.529Z",
-      "active": true
-    },
-    "sources": {
-      "firstSeen": "2026-09-19T17:39:49.529Z",
-      "active": false
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-19T17:39:49.529Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "76761b3aad0a2493f5e17a1a",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-19T17:50:54.307Z"
+    },
+    {
+      "id": "af5c040642604410e1375a01",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-19T17:50:54.307Z"
+    }
+  ],
   "dailyDate": "2026-09-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1526,11 +1523,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/umstrittener-tankrabatt-bund-beschliesst-milliarden-hilfen-trotz-scharfer-kritik-028a37/": {
         "first_seen_at": "2026-09-19T16:50:51.237Z",
         "source_at": "2026-09-19T15:48:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/thuringer-linke-will-starkste-kraft-werden-992670/": {
+        "first_seen_at": "2026-09-19T17:50:54.307Z",
+        "source_at": "2026-09-19T15:40:30.000Z"
       }
     },
-    "last_new_at": "2026-09-19T16:50:51.237Z",
-    "checked_at": "2026-09-19T17:39:49.529Z",
-    "last_current_new_at": "2026-09-19T16:50:51.237Z"
+    "last_new_at": "2026-09-19T17:50:54.307Z",
+    "checked_at": "2026-09-19T17:50:54.307Z",
+    "last_current_new_at": "2026-09-19T17:50:54.307Z"
   },
   "recovery_attempts": [
     {
