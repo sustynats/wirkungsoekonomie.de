@@ -2,8 +2,1730 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T07:23:16.550Z",
+  "updated_at": "2026-09-19T07:50:17.575Z",
   "stories": [
+    {
+      "story_id": "wt-232754c767f45ee7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-232754c767f45ee7-5530a11bfebb69af-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-232754c767f45ee7-4ab053f81fe8def6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-232754c767f45ee7-e90b1dbc9776f413-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "tankrabatt-und-preisdeckel-gegen-hohe-spritpreise-f45ee7",
+      "title": "Laut WDR: Tankrabatt und Preisdeckel sollen Autofahrer entlasten",
+      "source_summary": "Der WDR berichtet über Pläne der Bundesregierung und von Bund und Ländern, hohe Kraftstoffpreise durch einen erneuten Tankrabatt und einen Preisdeckel zu begrenzen. Nach dem Bericht soll die Energiesteuer auf Benzin und Diesel gesenkt werden; die Entlastung wird einschließlich des Mehrwertsteuereffekts beschrieben.\n\nAls weiterer Bestandteil wird ein staatlich begrenzter Höchstpreis genannt. Die konkrete Ausgestaltung des Preisdeckels sei noch offen; als Bezugspunkte werden Modelle in Luxemburg und Belgien genannt.\n\nDer Bericht stellt den Plänen Kritik und Alternativen gegenüber. Genannt werden mögliche Marktverzerrungen, eine künstlich hohe Nachfrage nach Benzin sowie eine Senkung der Stromsteuer und gezieltere Zuschüsse für besonders bedürftige Gruppen.",
+      "summary": "Die Bundesregierung plant laut WDR einen erneuten Tankrabatt und einen späteren Preisdeckel für Benzin und Diesel. Ob die Maßnahmen gezielt Bedürftige erreichen und welche Folgen sie für Verbrauch und Staatsfinanzen hätten, bleibt offen.",
+      "detail_summary": "Laut WDR sollen ein erneuter Tankrabatt und ein Preisdeckel die hohen Kosten für Benzin und Diesel begrenzen. Die Steuersenkung soll zunächst bis Ende 2026 gelten; der Preisdeckel soll spätestens zum 1. Januar 2027 folgen, seine genaue Ausgestaltung ist aber noch nicht festgelegt. Die Entlastung könnte vor allem Menschen mit hohem Auto- und Pendelbedarf kurzfristig helfen. Gleichzeitig könnten niedrigere Preise den Anreiz zum Spritsparen schwächen und öffentliche Mittel binden. Der Bericht nennt deshalb auch gezieltere Zuschüsse und eine niedrigere Stromsteuer als Alternativen.",
+      "why_relevant": "Die Pläne verbinden kurzfristige Entlastung mit möglichen Verteilungs-, Verbrauchs- und Finanzierungsfolgen. Ihre konkrete Reichweite und Umsetzung sind noch offen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über geplanten Tankrabatt und geplanten Preisdeckel für Benzin und Diesel",
+        "evaluation_target": {
+          "label": "Geplantes Entlastungspaket für Kraftstoffpreise",
+          "type": "proposal"
+        },
+        "baseline": "Hohe Kraftstoffpreise und politische Debatte über Entlastungen; die konkrete neue Regelung ist noch nicht umgesetzt.",
+        "counterfactual": "Ohne die angekündigten Instrumente blieben die bisherigen Preis- und Steuerbedingungen bestehen; mögliche Entlastungen würden über andere Maßnahmen oder gar nicht erfolgen.",
+        "reference_frame": [
+          "Bezahlbare Mobilität und soziale Verteilung",
+          "Ressourcenschonung und Klimaschutz",
+          "Transparente, demokratisch kontrollierte Preis- und Haushaltsentscheidungen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein Tankrabatt könnte Pendler und Unternehmen kurzfristig entlasten, aber bei breiter Auszahlung weniger zielgenau wirken. Die Verteilung nach Einkommen und Mobilitätsabhängigkeit bleibt offen.",
+            "planet": "Niedrigere Kraftstoffpreise könnten den Verbrauchsanreiz erhöhen. Eine mögliche Gegenwirkung durch eine Stromsteuersenkung und den Umstieg auf Elektromobilität ist nur als bedingter Alternativpfad belegt.",
+            "democracy": "Die Maßnahme könnte politische Steuerungs- und Budgetmacht über Preise und Entlastungen erweitern. Ihre demokratische Korrekturfähigkeit hängt von transparenter Formel, Befristung und Kontrolle ab."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Eine Regelung könnte Kraftstoffpreise, Haushaltsausgaben und staatliche Einnahmen verändern.",
+          "second_order": "Die Preisänderung könnte Verbrauch, Verteilungswirkungen, Marktverhalten und politische Prioritäten beeinflussen.",
+          "third_order": "Bei Wiederholung oder Verlängerung könnten sich Erwartungen an dauerhafte staatliche Preisstützung und energiepolitische Pfade verfestigen.",
+          "enablement": [
+            "enables_budget_control",
+            "enables_institutional_control",
+            "enables_legislation"
+          ],
+          "counter_evidence": [
+            "Der WDR-Bericht nennt Kritik am Tankrabatt und verweist auf mögliche gezieltere Zuschüsse sowie eine Senkung der Stromsteuer.",
+            "Die genaue Umsetzung des Preisdeckels steht noch nicht fest; dadurch sind Reichweite und Wirkungsrichtung einzelner Pfade unsicher.",
+            "Es liegen keine unabhängigen Daten zu bereits eingetretenen Folgen dieses neuen Pakets vor."
+          ],
+          "source_independence": "Alle verwendeten Belege stammen aus zwei Beiträgen desselben WDR-Ursprungs. Eine unabhängige journalistische oder primäre Bestätigung liegt im Quellenbestand nicht vor.",
+          "institutional_status": "Berichtet werden politische Pläne und eine Einigung über einen Preisdeckel; die konkrete Ausgestaltung und Umsetzung sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt mögliche Entlastung und Kritik, aber keine Messung der Verteilung oder der tatsächlichen Preisweitergabe. Die Wirkung bleibt an Umsetzung, Dauer und Mobilitätsabhängigkeit gebunden.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Für Menschen kann der Plan finanzielle Entlastung ermöglichen, besonders bei hoher Autoabhängigkeit. Gleichzeitig kann eine pauschale Verbilligung weniger zielgenau sein und öffentliche Mittel binden. Positive und negative Hauptpfade sind daher vergleichbar.",
+            "primary_paths": [
+              {
+                "label": "Kraftstoffkosten sinken für stark autoabhängige Haushalte",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Steuerentlastung und ein möglicher Höchstpreis senken bei vollständiger Weitergabe den Endpreis.",
+                "recipients": [
+                  "Pendlerinnen und Pendler",
+                  "Haushalte mit hoher Autoabhängigkeit",
+                  "Unternehmen mit Fahrzeugkosten"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Reichweite kann groß sein, die tatsächliche Entlastung hängt jedoch von Weitergabe, Nutzung und Dauer ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Viele Haushalte und Unternehmen könnten Kraftstoff nutzen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Entlastung je Tankvorgang kann spürbar, aber begrenzt sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Steuerentlastung ist zunächst befristet beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preis- und Steueränderungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Geringverdienende und stark abhängige Pendler könnten besonders auf Kosten reagieren.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft zunächst Haushaltsbudgets und Mobilitätskosten.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Menschen ist im Quellenbestand nicht belegt.",
+                  "reference_frame": "Bezahlbare Mobilität",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Regel muss beschlossen, umgesetzt und vollständig an die Verbraucher weitergegeben werden.",
+                "reference_space": "Deutschland; Haushalte und Unternehmen mit Benzin- oder Dieselverbrauch",
+                "time_horizon": "Befristete Entlastungsphase und mögliche Einführung des Preisdeckels",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Steuer- und Preisänderung erreicht den Endpreis und wird genutzt.",
+                "source_support": "Die Quelle beschreibt Steuerentlastung und Preisdeckel als geplante Maßnahmen, nicht deren tatsächliche Wirkung.",
+                "limitations": "Keine unabhängigen Daten zu Preisweitergabe, Verteilung oder realer Entlastung.",
+                "first_order": "Kraftstoffausgaben könnten sinken.",
+                "second_order": "Haushalte könnten kurzfristig mehr finanziellen Spielraum haben.",
+                "third_order": "Bei längerer Geltung könnten sich Mobilitäts- und Budgetentscheidungen an den niedrigeren Preis anpassen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Wirkungs- oder Verteilungsstudie im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Breite Entlastung erreicht Bedürftige nur ungenau",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Eine allgemeine Steuer- oder Preisentlastung gilt auch für Personen mit höherem Einkommen und für verbrauchsstarke Fahrzeuge.",
+                "recipients": [
+                  "Haushalte mit geringem Einkommen",
+                  "Gutverdienende Autofahrer",
+                  "Öffentliche Haushalte"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Quelle beschreibt die fehlende Zielgenauigkeit; die konkrete Verteilungsgröße bleibt offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Eine allgemeine Regelung könnte viele Einkommensgruppen erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Verteilungsabweichung ist relevant, aber nicht quantifiziert.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer ist an die geplante Befristung gebunden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die politische Auswahl des Instruments kann geändert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Geringverdienende könnten trotz Unterstützung relativ stärker belastet bleiben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Verteilung und Haushaltsprioritäten.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer sozialen Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Verteilungsgerechtigkeit",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Entlastung wird pauschal statt bedarfsorientiert ausgestaltet.",
+                "reference_space": "Deutschland; Einkommens- und Mobilitätsgruppen",
+                "time_horizon": "Während der Entlastungsphase",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Maßnahme wird nicht durch gezielte Zuschüsse ergänzt.",
+                "source_support": "Der Bericht bezeichnet den früheren Tankrabatt als wenig zielgerichtet und nennt gezieltere Hilfen als Alternative.",
+                "limitations": "Keine aktuelle Verteilungsrechnung für das neue Paket.",
+                "first_order": "Auch nicht bedürftige Autofahrer könnten profitieren.",
+                "second_order": "Die gleiche Summe könnte für gezielte Hilfen nicht verfügbar sein.",
+                "third_order": "Wiederholte Pauschalhilfen könnten Erwartungen an breite Preisstützung verankern.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Verteilungsanalyse im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Entlastung und mangelnde Zielgenauigkeit sind als bedingte Hauptpfade vergleichbar; eine entscheidende Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Kraftstoffkosten sinken für stark autoabhängige Haushalte",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kraftstoffkosten sinken für stark autoabhängige Haushalte",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der WDR-Bericht nennt den möglichen Nachfrageeffekt, liefert aber keine Verbrauchs- oder Emissionsdaten zum neuen Paket. Der ökologische Pfad bleibt deshalb bedingt und unsicher.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Eine Verbilligung fossiler Kraftstoffe könnte den Sparanreiz schwächen. Ein möglicher positiver Pfad über eine Stromsteuersenkung und Elektromobilität ist als Alternative beschrieben, aber nicht Teil der eindeutig belegten Maßnahme.",
+            "primary_paths": [
+              {
+                "label": "Niedrigerer Spritpreis hält Nachfrage nach Benzin und Diesel höher",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein geringerer Endpreis kann den finanziellen Anreiz zum Spritsparen vermindern.",
+                "recipients": [
+                  "Kraftstoffverbraucher",
+                  "Verkehrssystem",
+                  "Klima und Umwelt"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Mechanismus ist plausibel und im Bericht als Kritik benannt, seine Größe bleibt ohne Verbrauchsdaten offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Kraftstoffpreise betreffen viele Autofahrer und Fahrten.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Preisänderung könnte den Verbrauchsanreiz verändern, aber nicht jede Fahrt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Maßnahme ist als vorübergehend beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Der finanzielle Anreiz kann durch eine Änderung der Regel zurückgenommen werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökologische Belastungen verteilen sich breit; konkrete besonders vulnerable Gruppen sind nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad kann Verbrauchs- und Mobilitätsentscheidungen beeinflussen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird in der Quelle nicht quantifiziert.",
+                  "reference_frame": "Ressourcenschonung und Klimaschutz",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Der niedrigere Preis wird weitergegeben und verändert das Fahr- oder Kaufverhalten.",
+                "reference_space": "Deutschland; Straßenverkehr und Kraftstoffnachfrage",
+                "time_horizon": "Während und nach der Entlastungsphase",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Preiselastizität der Nachfrage wirkt trotz anderer Kostenfaktoren.",
+                "source_support": "Die Quelle gibt die Kritik wieder, dass Preissenkungen die Nachfrage künstlich hochhalten könnten.",
+                "limitations": "Keine Messung von Verbrauch, Emissionen oder Modal Split.",
+                "first_order": "Der Anreiz zum Sparen könnte sinken.",
+                "second_order": "Kraftstoffverbrauch und damit verbundene Emissionen könnten höher ausfallen als ohne Verbilligung.",
+                "third_order": "Bei Verlängerung könnte sich eine fossil geprägte Mobilitätsstruktur stärker verfestigen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Verbrauchs- oder Emissionsdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Stromsteuersenkung könnte Umstieg auf Elektromobilität unterstützen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Eine niedrigere Stromsteuer könnte Stromkosten senken und den Umstieg auf Elektromobilität attraktiver machen.",
+                "recipients": [
+                  "Haushalte",
+                  "Elektromobilitätsnutzer",
+                  "Umwelt"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist nur als Alternative genannt und nicht als beschlossene Maßnahme belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Eine Stromsteuer betrifft grundsätzlich viele Haushalte.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der konkrete Anreiz und seine Stärke sind nicht quantifiziert.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine alternative Steuerregel könnte länger wirken, ihre Dauer ist offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die Steuerentscheidung wäre grundsätzlich reversibel.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keine besondere ökologische oder soziale Schutzgruppe für diesen Pfad.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Energie- und Mobilitätsentscheidungen verbinden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Ressourcenschonung und Klimaschutz",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Stromsteuersenkung wird statt oder zusätzlich zum Tankrabatt umgesetzt und Ladeinfrastruktur ist verfügbar.",
+                "reference_space": "Deutschland; Strom- und Mobilitätsmarkt",
+                "time_horizon": "Mittlere Frist",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen beeinflussen die Wahl des Antriebs ausreichend stark.",
+                "source_support": "Der Bericht führt die Stromsteuersenkung als Vorschlag an und gibt die Einschätzung wieder, sie könne zum Umstieg auf Elektromobilität bewegen.",
+                "limitations": "Keine Daten zu Investitionen, Infrastruktur oder tatsächlichem Umstieg.",
+                "first_order": "Strom könnte gegenüber Kraftstoff relativ günstiger werden.",
+                "second_order": "Der Anreiz für Elektromobilität könnte steigen.",
+                "third_order": "Eine solche Verschiebung könnte langfristig fossile Nachfrage reduzieren.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz zur Wirkung der vorgeschlagenen Stromsteuersenkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Kraftstoffpfad gehört zum berichteten Paket; der positive Strompfad ist nur eine Alternative und daher schwächer belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Niedrigerer Spritpreis hält Nachfrage nach Benzin und Diesel höher",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Niedrigerer Spritpreis hält Nachfrage nach Benzin und Diesel höher",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand belegt politische Steuerungsentscheidungen und angekündigte Beobachtung, aber keine Daten zu Transparenz, parlamentarischer Kontrolle oder institutionellen Machtverschiebungen.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Das Paket könnte demokratische Handlungsfähigkeit durch sichtbare Entlastungsentscheidungen stärken. Zugleich könnten Preisformel, Budgetbindung und wiederholte Kriseninterventionen die Bedeutung exekutiver Preis- und Verteilungssteuerung erhöhen. Die Richtung bleibt daher gemischt.",
+            "primary_paths": [
+              {
+                "label": "Regierung und staatliche Institutionen steuern Kraftstoffpreise und Entlastungen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine gesetzliche Steueränderung und ein staatlicher Höchstpreis erweitern die konkrete politische Steuerung von Preisen und Verteilung.",
+                "recipients": [
+                  "Bundesregierung",
+                  "Bund und Länder",
+                  "Parlament",
+                  "Verbraucher und Unternehmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der institutionelle Eingriff wäre materiell, seine demokratische Qualität hängt aber von Transparenz und Kontrolle ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Preis- und Haushaltsentscheidungen können viele Bürger und Unternehmen betreffen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die politische Steuerung ist relevant, aber konkrete Kompetenzen und Verfahren sind offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Maßnahmen sind als vorübergehend beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Gesetzliche und administrative Regeln können grundsätzlich geändert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Abhängige Verbraucher können stärker von politischen Preisentscheidungen betroffen sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Budget-, Gesetzgebungs- und institutionelle Steuerung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder ein Rechtsverstoß ist nicht belegt.",
+                  "reference_frame": "Transparente demokratische Preis- und Haushaltsentscheidungen",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die angekündigten Maßnahmen werden rechtlich umgesetzt und parlamentarisch oder administrativ kontrolliert.",
+                "reference_space": "Bundespolitik und Energiepreisregulierung in Deutschland",
+                "time_horizon": "Entlastungsphase und mögliche Folgeentscheidungen",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Preis- und Steuerregeln werden dauerhaft beobachtet und öffentlich begründet.",
+                "source_support": "Die Quelle berichtet über politische Einigung, geplante Hilfen und angekündigte Beobachtung der Preisentwicklung.",
+                "limitations": "Keine Primärdokumente zu Verfahren, Kontrolle oder Zuständigkeiten im Quellenbestand.",
+                "first_order": "Politische Institutionen könnten Preise und Entlastung sichtbar gestalten.",
+                "second_order": "Erwartungen an staatliche Krisensteuerung könnten steigen.",
+                "third_order": "Bei Wiederholung könnten sich politische Entscheidungsstrukturen stärker auf kurzfristige Preisinterventionen ausrichten.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Prüfung des Rechts- und Kontrollrahmens im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Preisformel und Kriseninterventionen können exekutive Steuerung verstetigen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Ein nicht näher bestimmter Höchstpreis kann bei wiederholter Anwendung die staatliche Einflussnahme auf Marktpreise und Verteilung ausweiten.",
+                "recipients": [
+                  "Regierung und Verwaltung",
+                  "Mineralölunternehmen",
+                  "Verbraucher",
+                  "Parlament"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle beschreibt die konkrete Umsetzung als offen; der institutionelle Folgepfad ist deshalb hypothetisch."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Regel würde Marktakteure und Verbraucher im betroffenen Sektor erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Eingriff könnte erheblich sein, ist aber noch nicht technisch beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Bericht bezeichnet die Maßnahme als vorübergehend.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Eine Regeländerung wäre grundsätzlich möglich.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Marktteilnehmer mit geringer Ausweichmöglichkeit könnten stärker abhängig werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Preisformeln können Zuständigkeiten und politische Rechenschaft beeinflussen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder belegt.",
+                  "reference_frame": "Demokratische Korrekturfähigkeit und Markttransparenz",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Der Preisdeckel wird wiederholt eingesetzt oder ohne transparente Kontrolle fortgeführt.",
+                "reference_space": "Deutschland; staatliche Energiepreisregulierung",
+                "time_horizon": "Mittlere bis längere Frist",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine befristete Krisenregel wird institutionell zum wiederkehrenden Instrument.",
+                "source_support": "Die Quelle beschreibt den Preisdeckel als vorübergehende Krisenmaßnahme und lässt die Umsetzung offen.",
+                "limitations": "Keine Belege für eine tatsächliche Verstetigung oder für fehlende parlamentarische Kontrolle.",
+                "first_order": "Staatliche Stellen könnten stärker in Preisbildung eingreifen.",
+                "second_order": "Marktakteure könnten ihre Entscheidungen an politischen Preisformeln ausrichten.",
+                "third_order": "Wiederholte Kriseninstrumente könnten die Grenze zwischen Ausnahme und Regel verwischen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz zu Verstetigung, Kontrolle oder institutionellen Folgen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Politische Handlungsfähigkeit und mögliche Verstetigung staatlicher Preissteuerung sind als bedingte Pfade vergleichbar; eine entscheidende Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Regierung und staatliche Institutionen steuern Kraftstoffpreise und Entlastungen",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Regierung und staatliche Institutionen steuern Kraftstoffpreise und Entlastungen",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T07:53:22.622Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "wdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der WDR berichtet über Tankrabatt, Preisdeckel, Zeitangaben, politische Begründungen und Kritik; die Quelle belegt keine unabhängige Wirkungsfeststellung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt mögliche Entlastung und Kritik, aber keine Messung der Verteilung oder der tatsächlichen Preisweitergabe. Die Wirkung bleibt an Umsetzung, Dauer und Mobilitätsabhängigkeit gebunden.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Für Menschen kann der Plan finanzielle Entlastung ermöglichen, besonders bei hoher Autoabhängigkeit. Gleichzeitig kann eine pauschale Verbilligung weniger zielgenau sein und öffentliche Mittel binden. Positive und negative Hauptpfade sind daher vergleichbar.",
+          "primary_paths": [
+            {
+              "label": "Kraftstoffkosten sinken für stark autoabhängige Haushalte",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Steuerentlastung und ein möglicher Höchstpreis senken bei vollständiger Weitergabe den Endpreis.",
+              "recipients": [
+                "Pendlerinnen und Pendler",
+                "Haushalte mit hoher Autoabhängigkeit",
+                "Unternehmen mit Fahrzeugkosten"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Reichweite kann groß sein, die tatsächliche Entlastung hängt jedoch von Weitergabe, Nutzung und Dauer ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Viele Haushalte und Unternehmen könnten Kraftstoff nutzen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Entlastung je Tankvorgang kann spürbar, aber begrenzt sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Steuerentlastung ist zunächst befristet beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preis- und Steueränderungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Geringverdienende und stark abhängige Pendler könnten besonders auf Kosten reagieren.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft zunächst Haushaltsbudgets und Mobilitätskosten.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Menschen ist im Quellenbestand nicht belegt.",
+                "reference_frame": "Bezahlbare Mobilität",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Regel muss beschlossen, umgesetzt und vollständig an die Verbraucher weitergegeben werden.",
+              "reference_space": "Deutschland; Haushalte und Unternehmen mit Benzin- oder Dieselverbrauch",
+              "time_horizon": "Befristete Entlastungsphase und mögliche Einführung des Preisdeckels",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Steuer- und Preisänderung erreicht den Endpreis und wird genutzt.",
+              "source_support": "Die Quelle beschreibt Steuerentlastung und Preisdeckel als geplante Maßnahmen, nicht deren tatsächliche Wirkung.",
+              "limitations": "Keine unabhängigen Daten zu Preisweitergabe, Verteilung oder realer Entlastung.",
+              "first_order": "Kraftstoffausgaben könnten sinken.",
+              "second_order": "Haushalte könnten kurzfristig mehr finanziellen Spielraum haben.",
+              "third_order": "Bei längerer Geltung könnten sich Mobilitäts- und Budgetentscheidungen an den niedrigeren Preis anpassen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Wirkungs- oder Verteilungsstudie im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Breite Entlastung erreicht Bedürftige nur ungenau",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Eine allgemeine Steuer- oder Preisentlastung gilt auch für Personen mit höherem Einkommen und für verbrauchsstarke Fahrzeuge.",
+              "recipients": [
+                "Haushalte mit geringem Einkommen",
+                "Gutverdienende Autofahrer",
+                "Öffentliche Haushalte"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Quelle beschreibt die fehlende Zielgenauigkeit; die konkrete Verteilungsgröße bleibt offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Eine allgemeine Regelung könnte viele Einkommensgruppen erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Verteilungsabweichung ist relevant, aber nicht quantifiziert.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer ist an die geplante Befristung gebunden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die politische Auswahl des Instruments kann geändert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Geringverdienende könnten trotz Unterstützung relativ stärker belastet bleiben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Verteilung und Haushaltsprioritäten.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer sozialen Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Verteilungsgerechtigkeit",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Entlastung wird pauschal statt bedarfsorientiert ausgestaltet.",
+              "reference_space": "Deutschland; Einkommens- und Mobilitätsgruppen",
+              "time_horizon": "Während der Entlastungsphase",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Maßnahme wird nicht durch gezielte Zuschüsse ergänzt.",
+              "source_support": "Der Bericht bezeichnet den früheren Tankrabatt als wenig zielgerichtet und nennt gezieltere Hilfen als Alternative.",
+              "limitations": "Keine aktuelle Verteilungsrechnung für das neue Paket.",
+              "first_order": "Auch nicht bedürftige Autofahrer könnten profitieren.",
+              "second_order": "Die gleiche Summe könnte für gezielte Hilfen nicht verfügbar sein.",
+              "third_order": "Wiederholte Pauschalhilfen könnten Erwartungen an breite Preisstützung verankern.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Verteilungsanalyse im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Entlastung und mangelnde Zielgenauigkeit sind als bedingte Hauptpfade vergleichbar; eine entscheidende Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kraftstoffkosten sinken für stark autoabhängige Haushalte",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Kraftstoffkosten sinken für stark autoabhängige Haushalte",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der WDR-Bericht nennt den möglichen Nachfrageeffekt, liefert aber keine Verbrauchs- oder Emissionsdaten zum neuen Paket. Der ökologische Pfad bleibt deshalb bedingt und unsicher.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Eine Verbilligung fossiler Kraftstoffe könnte den Sparanreiz schwächen. Ein möglicher positiver Pfad über eine Stromsteuersenkung und Elektromobilität ist als Alternative beschrieben, aber nicht Teil der eindeutig belegten Maßnahme.",
+          "primary_paths": [
+            {
+              "label": "Niedrigerer Spritpreis hält Nachfrage nach Benzin und Diesel höher",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein geringerer Endpreis kann den finanziellen Anreiz zum Spritsparen vermindern.",
+              "recipients": [
+                "Kraftstoffverbraucher",
+                "Verkehrssystem",
+                "Klima und Umwelt"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Mechanismus ist plausibel und im Bericht als Kritik benannt, seine Größe bleibt ohne Verbrauchsdaten offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Kraftstoffpreise betreffen viele Autofahrer und Fahrten.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Preisänderung könnte den Verbrauchsanreiz verändern, aber nicht jede Fahrt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Maßnahme ist als vorübergehend beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Der finanzielle Anreiz kann durch eine Änderung der Regel zurückgenommen werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökologische Belastungen verteilen sich breit; konkrete besonders vulnerable Gruppen sind nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad kann Verbrauchs- und Mobilitätsentscheidungen beeinflussen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird in der Quelle nicht quantifiziert.",
+                "reference_frame": "Ressourcenschonung und Klimaschutz",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Der niedrigere Preis wird weitergegeben und verändert das Fahr- oder Kaufverhalten.",
+              "reference_space": "Deutschland; Straßenverkehr und Kraftstoffnachfrage",
+              "time_horizon": "Während und nach der Entlastungsphase",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Preiselastizität der Nachfrage wirkt trotz anderer Kostenfaktoren.",
+              "source_support": "Die Quelle gibt die Kritik wieder, dass Preissenkungen die Nachfrage künstlich hochhalten könnten.",
+              "limitations": "Keine Messung von Verbrauch, Emissionen oder Modal Split.",
+              "first_order": "Der Anreiz zum Sparen könnte sinken.",
+              "second_order": "Kraftstoffverbrauch und damit verbundene Emissionen könnten höher ausfallen als ohne Verbilligung.",
+              "third_order": "Bei Verlängerung könnte sich eine fossil geprägte Mobilitätsstruktur stärker verfestigen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Verbrauchs- oder Emissionsdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Stromsteuersenkung könnte Umstieg auf Elektromobilität unterstützen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Eine niedrigere Stromsteuer könnte Stromkosten senken und den Umstieg auf Elektromobilität attraktiver machen.",
+              "recipients": [
+                "Haushalte",
+                "Elektromobilitätsnutzer",
+                "Umwelt"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist nur als Alternative genannt und nicht als beschlossene Maßnahme belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Eine Stromsteuer betrifft grundsätzlich viele Haushalte.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der konkrete Anreiz und seine Stärke sind nicht quantifiziert.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine alternative Steuerregel könnte länger wirken, ihre Dauer ist offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die Steuerentscheidung wäre grundsätzlich reversibel.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keine besondere ökologische oder soziale Schutzgruppe für diesen Pfad.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Energie- und Mobilitätsentscheidungen verbinden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Ressourcenschonung und Klimaschutz",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Stromsteuersenkung wird statt oder zusätzlich zum Tankrabatt umgesetzt und Ladeinfrastruktur ist verfügbar.",
+              "reference_space": "Deutschland; Strom- und Mobilitätsmarkt",
+              "time_horizon": "Mittlere Frist",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen beeinflussen die Wahl des Antriebs ausreichend stark.",
+              "source_support": "Der Bericht führt die Stromsteuersenkung als Vorschlag an und gibt die Einschätzung wieder, sie könne zum Umstieg auf Elektromobilität bewegen.",
+              "limitations": "Keine Daten zu Investitionen, Infrastruktur oder tatsächlichem Umstieg.",
+              "first_order": "Strom könnte gegenüber Kraftstoff relativ günstiger werden.",
+              "second_order": "Der Anreiz für Elektromobilität könnte steigen.",
+              "third_order": "Eine solche Verschiebung könnte langfristig fossile Nachfrage reduzieren.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz zur Wirkung der vorgeschlagenen Stromsteuersenkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Kraftstoffpfad gehört zum berichteten Paket; der positive Strompfad ist nur eine Alternative und daher schwächer belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Niedrigerer Spritpreis hält Nachfrage nach Benzin und Diesel höher",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Niedrigerer Spritpreis hält Nachfrage nach Benzin und Diesel höher",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand belegt politische Steuerungsentscheidungen und angekündigte Beobachtung, aber keine Daten zu Transparenz, parlamentarischer Kontrolle oder institutionellen Machtverschiebungen.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Das Paket könnte demokratische Handlungsfähigkeit durch sichtbare Entlastungsentscheidungen stärken. Zugleich könnten Preisformel, Budgetbindung und wiederholte Kriseninterventionen die Bedeutung exekutiver Preis- und Verteilungssteuerung erhöhen. Die Richtung bleibt daher gemischt.",
+          "primary_paths": [
+            {
+              "label": "Regierung und staatliche Institutionen steuern Kraftstoffpreise und Entlastungen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine gesetzliche Steueränderung und ein staatlicher Höchstpreis erweitern die konkrete politische Steuerung von Preisen und Verteilung.",
+              "recipients": [
+                "Bundesregierung",
+                "Bund und Länder",
+                "Parlament",
+                "Verbraucher und Unternehmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der institutionelle Eingriff wäre materiell, seine demokratische Qualität hängt aber von Transparenz und Kontrolle ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Preis- und Haushaltsentscheidungen können viele Bürger und Unternehmen betreffen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die politische Steuerung ist relevant, aber konkrete Kompetenzen und Verfahren sind offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Maßnahmen sind als vorübergehend beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Gesetzliche und administrative Regeln können grundsätzlich geändert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Abhängige Verbraucher können stärker von politischen Preisentscheidungen betroffen sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Budget-, Gesetzgebungs- und institutionelle Steuerung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder ein Rechtsverstoß ist nicht belegt.",
+                "reference_frame": "Transparente demokratische Preis- und Haushaltsentscheidungen",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die angekündigten Maßnahmen werden rechtlich umgesetzt und parlamentarisch oder administrativ kontrolliert.",
+              "reference_space": "Bundespolitik und Energiepreisregulierung in Deutschland",
+              "time_horizon": "Entlastungsphase und mögliche Folgeentscheidungen",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Preis- und Steuerregeln werden dauerhaft beobachtet und öffentlich begründet.",
+              "source_support": "Die Quelle berichtet über politische Einigung, geplante Hilfen und angekündigte Beobachtung der Preisentwicklung.",
+              "limitations": "Keine Primärdokumente zu Verfahren, Kontrolle oder Zuständigkeiten im Quellenbestand.",
+              "first_order": "Politische Institutionen könnten Preise und Entlastung sichtbar gestalten.",
+              "second_order": "Erwartungen an staatliche Krisensteuerung könnten steigen.",
+              "third_order": "Bei Wiederholung könnten sich politische Entscheidungsstrukturen stärker auf kurzfristige Preisinterventionen ausrichten.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Prüfung des Rechts- und Kontrollrahmens im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Preisformel und Kriseninterventionen können exekutive Steuerung verstetigen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Ein nicht näher bestimmter Höchstpreis kann bei wiederholter Anwendung die staatliche Einflussnahme auf Marktpreise und Verteilung ausweiten.",
+              "recipients": [
+                "Regierung und Verwaltung",
+                "Mineralölunternehmen",
+                "Verbraucher",
+                "Parlament"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle beschreibt die konkrete Umsetzung als offen; der institutionelle Folgepfad ist deshalb hypothetisch."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Regel würde Marktakteure und Verbraucher im betroffenen Sektor erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Eingriff könnte erheblich sein, ist aber noch nicht technisch beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Bericht bezeichnet die Maßnahme als vorübergehend.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Eine Regeländerung wäre grundsätzlich möglich.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Marktteilnehmer mit geringer Ausweichmöglichkeit könnten stärker abhängig werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Preisformeln können Zuständigkeiten und politische Rechenschaft beeinflussen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder belegt.",
+                "reference_frame": "Demokratische Korrekturfähigkeit und Markttransparenz",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Der Preisdeckel wird wiederholt eingesetzt oder ohne transparente Kontrolle fortgeführt.",
+              "reference_space": "Deutschland; staatliche Energiepreisregulierung",
+              "time_horizon": "Mittlere bis längere Frist",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine befristete Krisenregel wird institutionell zum wiederkehrenden Instrument.",
+              "source_support": "Die Quelle beschreibt den Preisdeckel als vorübergehende Krisenmaßnahme und lässt die Umsetzung offen.",
+              "limitations": "Keine Belege für eine tatsächliche Verstetigung oder für fehlende parlamentarische Kontrolle.",
+              "first_order": "Staatliche Stellen könnten stärker in Preisbildung eingreifen.",
+              "second_order": "Marktakteure könnten ihre Entscheidungen an politischen Preisformeln ausrichten.",
+              "third_order": "Wiederholte Kriseninstrumente könnten die Grenze zwischen Ausnahme und Regel verwischen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz zu Verstetigung, Kontrolle oder institutionellen Folgen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Politische Handlungsfähigkeit und mögliche Verstetigung staatlicher Preissteuerung sind als bedingte Pfade vergleichbar; eine entscheidende Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Regierung und staatliche Institutionen steuern Kraftstoffpreise und Entlastungen",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Regierung und staatliche Institutionen steuern Kraftstoffpreise und Entlastungen",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T07:50:17.575Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-15T14:55:43.000Z",
+      "last_updated": "2026-09-19T07:53:22.616Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-decb6c5bec2200ef2ede",
+      "case_file": null,
+      "source_published_at": "2026-09-16T09:31:18.000Z",
+      "published_at": "2026-09-19T07:53:22.616Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Die genaue Umsetzung des Spritpreisdeckels soll noch festgelegt werden.",
+          "source_id": "wdr-nachrichten",
+          "measurable_indicator": "Veröffentlichte Regelung zur Berechnung und Durchsetzung des Höchstpreises",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9a21dcb8f4925323",
+          "announced_at": "2026-09-16T09:31:18.000Z",
+          "follow_up_date": "2026-09-26T07:53:22.616Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Wirkung des Tankrabatts auf die Preise und die Weitergabe an Autofahrerinnen und Autofahrer soll überprüft werden.",
+          "source_id": "wdr-nachrichten",
+          "measurable_indicator": "Entwicklung der Preise an Tankstellen und dokumentierte Weitergabe der Entlastung",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-56709af4d89b9eee",
+          "announced_at": "2026-09-16T09:31:18.000Z",
+          "follow_up_date": "2026-09-26T07:53:22.616Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/wirtschaft/steigende-preise-entlastung-buerger-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T09:31:18.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/wirtschaft/tankrabatt-und-preisdeckel-sollen-kommen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T05:33:04.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-63f14f261e4520a6",
       "title_image": {
@@ -234487,12 +236209,12 @@
     {
       "analysis_id": "woek-personal-ec1819f834184f4d",
       "slug": "wenn-der-markt-verschwindet-verschwinden-die-bedurfnisse-nicht-ec1819",
-      "title": "Wenn der Markt verschwindet, verschwinden die Bedürfnisse nicht",
-      "subtitle": "Das nordische Modell kann Nachfrage und Ausbeutung zurückdrängen. Es kann aber zugleich Schutz, Kundenscreening und soziale Funktionen im verbleibenden Markt verändern.",
-      "teaser": "Das nordische Modell kann Nachfrage und Ausbeutung zurückdrängen. Es kann aber zugleich Schutz, Kundenscreening und soziale Funktionen im verbleibenden Markt verändern.",
+      "title": "Sexarbeit erfüllt eine gesellschaftliche Funktion",
+      "subtitle": "Sexarbeit erfüllt eine eigenständige gesellschaftliche Funktion, für die Therapie, Partnerschaft oder Dating kein funktionales Äquivalent sind. Wer schützen will, muss freiwillige Sexarbeit als Beruf anerkennen und Zwang, Gewalt und Ausbeutung gezielt bekämpfen - statt Kundschaft pauschal zu kriminalisieren.",
+      "teaser": "Sexarbeit erfüllt eine eigenständige gesellschaftliche Funktion, für die Therapie, Partnerschaft oder Dating kein funktionales Äquivalent sind. Wer schützen will, muss freiwillige Sexarbeit als Beruf anerkennen und Zwang, Gewalt und Ausbeutung gezielt bekämpfen - statt Kundschaft pauschal zu kriminalisieren.",
       "published_at": "2026-09-19T05:04:20.754Z",
       "updated_at": "2026-09-19T05:04:20.754Z",
-      "reading_time_minutes": 8
+      "reading_time_minutes": 9
     },
     {
       "analysis_id": "woek-personal-9a9760d913ca356d",
