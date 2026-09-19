@@ -2,8 +2,1086 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T18:38:34.175Z",
+  "updated_at": "2026-09-19T18:53:36.885Z",
   "stories": [
+    {
+      "story_id": "wt-ec6fb7b716959659",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-ec6fb7b716959659-6420178a86c3d8b0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-ec6fb7b716959659-dfd4de302f0eb631-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-ec6fb7b716959659-91f15f88d8e4578f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "el-nino-im-klimawandel-wenn-das-christkind-noch-mehr-durre-flut-und-hunger-bringt-959659",
+      "title": "Laut taz: Korallenanalyse zeigt stärkeren El-Niño-Effekt im Klimawandel",
+      "source_summary": "Die taz berichtet über ein US-amerikanisches Forschungsteam, das lebende und versteinerte Korallen rund um die Galapagos-Inseln ausgewertet hat. Die Korallenskelette sollen chemische Spuren früherer Wassertemperaturen bewahren. So rekonstruierte das Team El-Niño-Ereignisse der vergangenen rund 1.000 Jahre.\n\nNach Darstellung der taz war El Niño gegenüber der vorindustriellen Zeit um 36,5 Prozent heftiger. Der Bericht verbindet das Wetterphänomen mit Veränderungen von Fischbeständen sowie mit Dürren, Überschwemmungen, Erdrutschen und Ernteausfällen in verschiedenen Regionen.\n\nOffen bleibt in der vorliegenden Textauswahl, welche Originalstudie und welche statistischen Unsicherheiten hinter dem Ergebnis stehen. Zusätzlich verweist die taz auf eine WMO-Warnung vor einem möglichen starken El Niño bis zum Februar 2027.",
+      "summary": "Eine Korallenanalyse legt laut taz nahe, dass El Niño im Klimawandel heftiger geworden ist. Die möglichen Folgen reichen von regionalen Ernteausfällen bis zu Belastungen für Versorgung und Katastrophenschutz; die Originalstudie bleibt zu prüfen.",
+      "detail_summary": "Die taz berichtet über eine Korallenanalyse, mit der ein US-amerikanisches Team El-Niño-Ereignisse der vergangenen rund 1.000 Jahre rekonstruierte. Demnach war das Phänomen gegenüber der vorindustriellen Zeit um 36,5 Prozent heftiger. El Niño kann dadurch regional mit Fischmangel, Dürren, Überschwemmungen, Erdrutschen und Ernteausfällen verbunden sein. Für Menschen könnten daraus Belastungen für Ernährung, Einkommen und Vorsorge entstehen. Für den Planeten ist vor allem die Verstärkung bereits gefährdeter Ökosysteme relevant. Die vorliegende Textauswahl enthält jedoch weder die Originalstudie noch deren Unsicherheitsanalyse.",
+      "why_relevant": "Die Meldung verbindet neue Forschung zur Klimaveränderung mit möglichen Folgen für Ernährung, Ökosysteme, Vorsorge und regionale Krisenanfälligkeit.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über eine Korallenanalyse zur möglichen Verstärkung von El Niño im Klimawandel",
+        "evaluation_target": {
+          "label": "mögliche Verstärkung von El Niño und ihre Folgen",
+          "type": "development"
+        },
+        "baseline": "El-Niño-Ereignisse im Vergleich zur vorindustriellen Zeit und zu bisherigen regionalen Klimamustern",
+        "counterfactual": "Ohne eine zusätzliche Verstärkung blieben die natürlichen El-Niño-Schwankungen der maßgebliche Referenzrahmen; bestehende regionale Verwundbarkeiten bestünden fort.",
+        "reference_frame": [
+          "Klimaanpassung",
+          "Ernährungssicherheit",
+          "Ökosystemschutz",
+          "Katastrophenvorsorge"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine mögliche Verstärkung könnte Ernährung, Einkommen, Gesundheit und Schutz besonders verletzlicher Gruppen regional belasten; Ausmaß und Verteilung bleiben offen.",
+            "planet": "Veränderte Meeres- und Niederschlagsmuster könnten Fischbestände, Regenwald und andere Ökosysteme belasten; die konkrete ökologische Bilanz ist nicht bestimmt.",
+            "democracy": "Wiederkehrende Krisen könnten Prioritäten und Vertrauen in Vorsorge beeinflussen; ein institutioneller Effekt ist nicht beobachtet und bleibt bedingt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Forschungseinordnung verändert den Referenzrahmen für die mögliche Stärke künftiger El-Niño-Ereignisse.",
+          "second_order": "Wenn sich die Annahme bestätigt, könnten regionale Klimaextreme Versorgung, Anpassung und politische Prioritäten stärker beanspruchen.",
+          "third_order": "Bei wiederholten Belastungen könnten Ungleichheiten und Konflikte über Vorsorge- und Verteilungsentscheidungen zunehmen; dieser Pfad ist hypothetisch.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Originalstudie, ihre Unsicherheiten und unabhängige Bestätigungen liegen nicht vor.",
+            "El Niño ist ein natürliches Wetterphänomen; nicht jede regionale Abweichung lässt sich dem Klimawandel zuordnen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle mit einer Herkunft vor; unabhängige Bestätigung ist nicht belegt.",
+          "institutional_status": "Die Meldung beschreibt Forschung und eine zugeschriebene WMO-Prognose, keinen Beschluss und keine belegte Umsetzung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt einen Forschungsbefund und mögliche regionale Folgen, aber keine konkrete Veränderung bei Gesundheit, Einkommen oder Versorgung.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "rationale": "Eine mögliche Verstärkung von El Niño könnte Ernten, Fischerei und Vorsorge belasten. Der Pfad ist plausibel, aber wegen der fehlenden unabhängigen und regionalen Daten nur mit niedriger Evidenz bewertbar.",
+            "primary_paths": [
+              {
+                "label": "Stärkere El-Niño-Muster könnten regionale Versorgung und Einkommen belasten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Veränderte Meeres- und Niederschlagsmuster könnten Fischverfügbarkeit, Ernten und lokale Lebensgrundlagen beeinträchtigen.",
+                "recipients": [
+                  "Haushalte in betroffenen Regionen",
+                  "Fischereibeschäftigte",
+                  "Landwirtschaft",
+                  "öffentliche Vorsorge"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite ist groß, die regionale Intensität und Dauer sind jedoch nicht bestimmt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "El-Niño-Folgen können mehrere Weltregionen erreichen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle beschreibt schwere mögliche Verwerfungen, quantifiziert regionale Schäden aber nicht.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine einzelne Phase wäre zeitlich begrenzt, Wiederholungen bleiben offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Viele Versorgungsfolgen könnten durch Anpassung teilweise reversibel bleiben.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Abhängige Haushalte und Regionen könnten besonders verletzlich sein.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Versorgung und Vorsorge könnten mittelbar mehrere Systeme beanspruchen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist aus der vorliegenden Quelle nicht ableitbar.",
+                  "reference_frame": "Ernährungssicherheit und grundlegende Versorgung",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass sich die berichtete Verstärkung bestätigt und regionale Muster die genannten Versorgungssysteme treffen.",
+                "reference_space": "Betroffene Küsten-, Landwirtschafts- und Trockengebiete weltweit",
+                "time_horizon": "Während künftiger El-Niño-Phasen und möglicher Folgejahre",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Regionale Wetteränderungen übertragen sich auf Ernten, Fischerei und Einkommen; Anpassung wirkt nicht vollständig.",
+                "source_support": "Die Quelle beschreibt Fischmangel, Dürren, Überschwemmungen und Ernteausfälle als mögliche beziehungsweise verbundene Folgen.",
+                "limitations": "Keine regionalen Schadensdaten, keine Gesundheitsdaten und keine unabhängige Wirkungsstudie liegen vor.",
+                "first_order": "Mögliche Änderungen bei Fischverfügbarkeit, Niederschlag und Ernten.",
+                "second_order": "Mögliche Belastungen für Einkommen, Ernährung und öffentliche Vorsorge.",
+                "third_order": "Möglicher zusätzlicher Anpassungs- und Verteilungsdruck bei wiederholten Ereignissen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine belastbare regionale Quantifizierung oder Kausalitätsprüfung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein belastbarer positiver Gegenpfad ist in der Quelle nicht beschrieben; Unsicherheit wird nicht als Ausgleich gewertet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Stärkere El-Niño-Muster könnten regionale Versorgung und Einkommen belasten",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Stärkere El-Niño-Muster könnten regionale Versorgung und Einkommen belasten",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt mögliche Belastungen für marine und terrestrische Ökosysteme, belegt aber keine konkrete zusätzliche ökologische Schädigung.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "rationale": "Stärkere Temperatur- und Niederschlagsabweichungen könnten Fischbestände, Plankton und empfindliche Ökosysteme unter Druck setzen. Die Richtung ist plausibel, die Stärke und Dauer bleiben offen.",
+            "primary_paths": [
+              {
+                "label": "Stärkere El-Niño-Ausprägungen könnten marine und terrestrische Ökosysteme belasten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Erwärmung des Ostpazifiks könnte Plankton und damit verbundene Nahrungsketten beeinflussen; veränderte Niederschläge könnten weitere Ökosysteme stressen.",
+                "recipients": [
+                  "Plankton und marine Nahrungsketten",
+                  "Fischbestände",
+                  "Amazonas-Regenwald",
+                  "trockene und überschwemmungsgefährdete Regionen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle nennt mehrere Ökosysteme, erlaubt aber keine belastbare Größenordnung der zusätzlichen Veränderung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die beschriebenen Wetteranomalien können weit über den Pazifik hinausreichen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die ökologische Intensität wird beschrieben, aber nicht unabhängig gemessen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer ökologischer Folgen kann über die Wetterphase hinausreichen, ist aber offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ökosysteme können sich teilweise erholen, Schäden können jedoch nachwirken.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Plankton, Fischbestände und gestresste Ökosysteme reagieren empfindlich auf Veränderungen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Nahrungsketten und regionale Ökosysteme könnten gekoppelt betroffen sein.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird in der Quelle nicht ausgewiesen.",
+                  "reference_frame": "Schutz mariner und terrestrischer Ökosysteme",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die berichtete Verstärkung die genannten Temperatur- und Niederschlagsanomalien tatsächlich vergrößert.",
+                "reference_space": "Ostpazifik und durch Fernwirkungen betroffene Weltregionen",
+                "time_horizon": "Während und nach künftigen El-Niño-Phasen",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die beschriebenen physikalischen Zusammenhänge wirken bei stärkerer Ausprägung in ähnlicher Richtung weiter.",
+                "source_support": "Die Quelle beschreibt den Zusammenhang von Passatwinden, Meerestemperatur, Plankton und regionalen Wetteranomalien.",
+                "limitations": "Es fehlen unabhängige Ökosystemdaten, konkrete Schwellenwerte und eine Trennung von natürlicher Schwankung und Klimawandeleinfluss.",
+                "first_order": "Mögliche Erwärmung und veränderte Nährstoffverfügbarkeit im Pazifik.",
+                "second_order": "Mögliche Belastung von Plankton, Fischbeständen und weiteren Ökosystemen.",
+                "third_order": "Mögliche Rückwirkungen auf Ernährungssysteme und regionale Anpassungsfähigkeit.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle stützt den Mechanismus, nicht aber eine quantifizierte zusätzliche ökologische Wirkung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein materieller positiver Gegenpfad ist in der Quelle nicht belegt; die ökologische Einordnung bleibt deshalb negativ und bedingt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Stärkere El-Niño-Ausprägungen könnten marine und terrestrische Ökosysteme belasten",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Stärkere El-Niño-Ausprägungen könnten marine und terrestrische Ökosysteme belasten",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine demokratische Zustandsänderung; nur ein indirekter möglicher Einfluss über Krisenprioritäten und Verteilungsentscheidungen ist modellierbar.",
+            "reviewed_source_ids": [
+              "taz-aktuell"
+            ],
+            "rationale": "Klimabedingte Belastungen könnten politische Prioritäten und Verteilungskonflikte beeinflussen. Richtung und Ausmaß sind offen, weil keine institutionellen oder verhaltensbezogenen Daten vorliegen.",
+            "primary_paths": [
+              {
+                "label": "Wiederkehrende Klimaextreme könnten politische Prioritäten und Verteilungskonflikte verändern",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Zusätzlicher Vorsorge- und Hilfsbedarf könnte Entscheidungen über knappe öffentliche Mittel und Schutzmaßnahmen beeinflussen.",
+                "recipients": [
+                  "öffentliche Institutionen",
+                  "betroffene Bevölkerungsgruppen",
+                  "politische Entscheidungsträger"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein indirekter institutioneller Einfluss ist möglich, aber weder Richtung noch Eintritt sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Politische Prioritäten könnten mehrere betroffene Regionen erreichen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete demokratische Intensität ist nicht beobachtet.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Wiederholte Krisen könnten Prioritäten länger beeinflussen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Prioritäten und Verfahren bleiben grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ungleich betroffene Gruppen könnten ungleich politisch berücksichtigt werden.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Verteilungsentscheidungen könnten institutionelle Prozesse mittelbar prägen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder konkrete institutionelle Gefährdung ist nicht belegt.",
+                  "reference_frame": "demokratische Rechenschaft und faire Verteilung von Vorsorgeleistungen",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Der Pfad setzt wiederholte erhebliche Belastungen und politisch umkämpfte Verteilungsentscheidungen voraus.",
+                "reference_space": "Öffentliche Entscheidungsprozesse in betroffenen Regionen",
+                "time_horizon": "Über mehrere Krisen- und Haushaltszyklen",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Krisenlasten werden politisch sichtbar und führen zu konkurrierenden Prioritäten.",
+                "source_support": "Die Quelle verweist auf Belastungen für Gesellschaften und Volkswirtschaften, nicht auf demokratische Folgen.",
+                "limitations": "Keine Daten zu Vertrauen, Beteiligung, Institutionen, Konflikten oder politischer Korrekturfähigkeit.",
+                "first_order": "Möglicher zusätzlicher Bedarf an politischen Vorsorgeentscheidungen.",
+                "second_order": "Mögliche Verteilungskonflikte über Hilfen und Anpassungsressourcen.",
+                "third_order": "Mögliche langfristige Verschiebungen institutioneller Prioritäten; Eintritt und Richtung offen.",
+                "research_pass": "second_pass",
+                "research_result": "Mit der gelieferten Quelle lässt sich kein belastbarer demokratischer Effekt nachweisen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Weder ein positiver noch ein negativer demokratischer Hauptpfad ist ausreichend belegt; die Richtung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Wiederkehrende Klimaextreme könnten politische Prioritäten und Verteilungskonflikte verändern",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Wiederkehrende Klimaextreme könnten politische Prioritäten und Verteilungskonflikte verändern",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T18:55:55.953Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle trägt die Berichterstattung über die Korallenanalyse, den beschriebenen El-Niño-Mechanismus und den Verweis auf die WMO-Prognose."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt einen Forschungsbefund und mögliche regionale Folgen, aber keine konkrete Veränderung bei Gesundheit, Einkommen oder Versorgung.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "rationale": "Eine mögliche Verstärkung von El Niño könnte Ernten, Fischerei und Vorsorge belasten. Der Pfad ist plausibel, aber wegen der fehlenden unabhängigen und regionalen Daten nur mit niedriger Evidenz bewertbar.",
+          "primary_paths": [
+            {
+              "label": "Stärkere El-Niño-Muster könnten regionale Versorgung und Einkommen belasten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Veränderte Meeres- und Niederschlagsmuster könnten Fischverfügbarkeit, Ernten und lokale Lebensgrundlagen beeinträchtigen.",
+              "recipients": [
+                "Haushalte in betroffenen Regionen",
+                "Fischereibeschäftigte",
+                "Landwirtschaft",
+                "öffentliche Vorsorge"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite ist groß, die regionale Intensität und Dauer sind jedoch nicht bestimmt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "El-Niño-Folgen können mehrere Weltregionen erreichen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle beschreibt schwere mögliche Verwerfungen, quantifiziert regionale Schäden aber nicht.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine einzelne Phase wäre zeitlich begrenzt, Wiederholungen bleiben offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Viele Versorgungsfolgen könnten durch Anpassung teilweise reversibel bleiben.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Abhängige Haushalte und Regionen könnten besonders verletzlich sein.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Versorgung und Vorsorge könnten mittelbar mehrere Systeme beanspruchen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist aus der vorliegenden Quelle nicht ableitbar.",
+                "reference_frame": "Ernährungssicherheit und grundlegende Versorgung",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass sich die berichtete Verstärkung bestätigt und regionale Muster die genannten Versorgungssysteme treffen.",
+              "reference_space": "Betroffene Küsten-, Landwirtschafts- und Trockengebiete weltweit",
+              "time_horizon": "Während künftiger El-Niño-Phasen und möglicher Folgejahre",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Regionale Wetteränderungen übertragen sich auf Ernten, Fischerei und Einkommen; Anpassung wirkt nicht vollständig.",
+              "source_support": "Die Quelle beschreibt Fischmangel, Dürren, Überschwemmungen und Ernteausfälle als mögliche beziehungsweise verbundene Folgen.",
+              "limitations": "Keine regionalen Schadensdaten, keine Gesundheitsdaten und keine unabhängige Wirkungsstudie liegen vor.",
+              "first_order": "Mögliche Änderungen bei Fischverfügbarkeit, Niederschlag und Ernten.",
+              "second_order": "Mögliche Belastungen für Einkommen, Ernährung und öffentliche Vorsorge.",
+              "third_order": "Möglicher zusätzlicher Anpassungs- und Verteilungsdruck bei wiederholten Ereignissen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine belastbare regionale Quantifizierung oder Kausalitätsprüfung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein belastbarer positiver Gegenpfad ist in der Quelle nicht beschrieben; Unsicherheit wird nicht als Ausgleich gewertet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Stärkere El-Niño-Muster könnten regionale Versorgung und Einkommen belasten",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Stärkere El-Niño-Muster könnten regionale Versorgung und Einkommen belasten",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt mögliche Belastungen für marine und terrestrische Ökosysteme, belegt aber keine konkrete zusätzliche ökologische Schädigung.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "rationale": "Stärkere Temperatur- und Niederschlagsabweichungen könnten Fischbestände, Plankton und empfindliche Ökosysteme unter Druck setzen. Die Richtung ist plausibel, die Stärke und Dauer bleiben offen.",
+          "primary_paths": [
+            {
+              "label": "Stärkere El-Niño-Ausprägungen könnten marine und terrestrische Ökosysteme belasten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Erwärmung des Ostpazifiks könnte Plankton und damit verbundene Nahrungsketten beeinflussen; veränderte Niederschläge könnten weitere Ökosysteme stressen.",
+              "recipients": [
+                "Plankton und marine Nahrungsketten",
+                "Fischbestände",
+                "Amazonas-Regenwald",
+                "trockene und überschwemmungsgefährdete Regionen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle nennt mehrere Ökosysteme, erlaubt aber keine belastbare Größenordnung der zusätzlichen Veränderung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die beschriebenen Wetteranomalien können weit über den Pazifik hinausreichen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die ökologische Intensität wird beschrieben, aber nicht unabhängig gemessen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer ökologischer Folgen kann über die Wetterphase hinausreichen, ist aber offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ökosysteme können sich teilweise erholen, Schäden können jedoch nachwirken.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Plankton, Fischbestände und gestresste Ökosysteme reagieren empfindlich auf Veränderungen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Nahrungsketten und regionale Ökosysteme könnten gekoppelt betroffen sein.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird in der Quelle nicht ausgewiesen.",
+                "reference_frame": "Schutz mariner und terrestrischer Ökosysteme",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die berichtete Verstärkung die genannten Temperatur- und Niederschlagsanomalien tatsächlich vergrößert.",
+              "reference_space": "Ostpazifik und durch Fernwirkungen betroffene Weltregionen",
+              "time_horizon": "Während und nach künftigen El-Niño-Phasen",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die beschriebenen physikalischen Zusammenhänge wirken bei stärkerer Ausprägung in ähnlicher Richtung weiter.",
+              "source_support": "Die Quelle beschreibt den Zusammenhang von Passatwinden, Meerestemperatur, Plankton und regionalen Wetteranomalien.",
+              "limitations": "Es fehlen unabhängige Ökosystemdaten, konkrete Schwellenwerte und eine Trennung von natürlicher Schwankung und Klimawandeleinfluss.",
+              "first_order": "Mögliche Erwärmung und veränderte Nährstoffverfügbarkeit im Pazifik.",
+              "second_order": "Mögliche Belastung von Plankton, Fischbeständen und weiteren Ökosystemen.",
+              "third_order": "Mögliche Rückwirkungen auf Ernährungssysteme und regionale Anpassungsfähigkeit.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle stützt den Mechanismus, nicht aber eine quantifizierte zusätzliche ökologische Wirkung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein materieller positiver Gegenpfad ist in der Quelle nicht belegt; die ökologische Einordnung bleibt deshalb negativ und bedingt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Stärkere El-Niño-Ausprägungen könnten marine und terrestrische Ökosysteme belasten",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Stärkere El-Niño-Ausprägungen könnten marine und terrestrische Ökosysteme belasten",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine demokratische Zustandsänderung; nur ein indirekter möglicher Einfluss über Krisenprioritäten und Verteilungsentscheidungen ist modellierbar.",
+          "reviewed_source_ids": [
+            "taz-aktuell"
+          ],
+          "rationale": "Klimabedingte Belastungen könnten politische Prioritäten und Verteilungskonflikte beeinflussen. Richtung und Ausmaß sind offen, weil keine institutionellen oder verhaltensbezogenen Daten vorliegen.",
+          "primary_paths": [
+            {
+              "label": "Wiederkehrende Klimaextreme könnten politische Prioritäten und Verteilungskonflikte verändern",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Zusätzlicher Vorsorge- und Hilfsbedarf könnte Entscheidungen über knappe öffentliche Mittel und Schutzmaßnahmen beeinflussen.",
+              "recipients": [
+                "öffentliche Institutionen",
+                "betroffene Bevölkerungsgruppen",
+                "politische Entscheidungsträger"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein indirekter institutioneller Einfluss ist möglich, aber weder Richtung noch Eintritt sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Politische Prioritäten könnten mehrere betroffene Regionen erreichen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete demokratische Intensität ist nicht beobachtet.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Wiederholte Krisen könnten Prioritäten länger beeinflussen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Prioritäten und Verfahren bleiben grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ungleich betroffene Gruppen könnten ungleich politisch berücksichtigt werden.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Verteilungsentscheidungen könnten institutionelle Prozesse mittelbar prägen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder konkrete institutionelle Gefährdung ist nicht belegt.",
+                "reference_frame": "demokratische Rechenschaft und faire Verteilung von Vorsorgeleistungen",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Der Pfad setzt wiederholte erhebliche Belastungen und politisch umkämpfte Verteilungsentscheidungen voraus.",
+              "reference_space": "Öffentliche Entscheidungsprozesse in betroffenen Regionen",
+              "time_horizon": "Über mehrere Krisen- und Haushaltszyklen",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Krisenlasten werden politisch sichtbar und führen zu konkurrierenden Prioritäten.",
+              "source_support": "Die Quelle verweist auf Belastungen für Gesellschaften und Volkswirtschaften, nicht auf demokratische Folgen.",
+              "limitations": "Keine Daten zu Vertrauen, Beteiligung, Institutionen, Konflikten oder politischer Korrekturfähigkeit.",
+              "first_order": "Möglicher zusätzlicher Bedarf an politischen Vorsorgeentscheidungen.",
+              "second_order": "Mögliche Verteilungskonflikte über Hilfen und Anpassungsressourcen.",
+              "third_order": "Mögliche langfristige Verschiebungen institutioneller Prioritäten; Eintritt und Richtung offen.",
+              "research_pass": "second_pass",
+              "research_result": "Mit der gelieferten Quelle lässt sich kein belastbarer demokratischer Effekt nachweisen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Weder ein positiver noch ein negativer demokratischer Hauptpfad ist ausreichend belegt; die Richtung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Wiederkehrende Klimaextreme könnten politische Prioritäten und Verteilungskonflikte verändern",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Wiederkehrende Klimaextreme könnten politische Prioritäten und Verteilungskonflikte verändern",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T18:53:36.885Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T18:19:00.000Z",
+      "last_updated": "2026-09-19T18:55:55.948Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-f99ee7aa304d794a08f7",
+      "case_file": null,
+      "source_published_at": "2026-09-19T18:19:00.000Z",
+      "published_at": "2026-09-19T18:55:55.948Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob die Korallenstudie im Original zugänglich ist und welche Methode, Vergleichszeiträume und Unsicherheiten sie ausweist.",
+          "source_id": "taz-aktuell",
+          "measurable_indicator": "Originalstudie, Methode, Vergleichszeitraum und Unsicherheitsangaben",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2d32d76114b694c7",
+          "announced_at": "2026-09-19T18:19:00.000Z",
+          "follow_up_date": "2026-09-26T18:55:55.948Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zu prüfen ist, ob die WMO-Prognose zum erwarteten El Niño durch eine unabhängige Quelle bestätigt oder revidiert wird.",
+          "source_id": "taz-aktuell",
+          "measurable_indicator": "Aktualisierte WMO-Prognose und unabhängige meteorologische Einordnung",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d0eb42dab51f6dbb",
+          "announced_at": "2026-09-19T18:19:00.000Z",
+          "follow_up_date": "2026-09-26T18:55:55.948Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/El-Nino-im-Klimawandel/!6208343",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T18:19:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a723864377723018",
       "title_image": {
