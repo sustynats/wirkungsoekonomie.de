@@ -2,8 +2,1614 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T20:53:57.462Z",
+  "updated_at": "2026-09-19T21:54:08.968Z",
   "stories": [
+    {
+      "story_id": "wt-2c26fdcea60c52bd",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-2c26fdcea60c52bd-ea5ce8984c40285d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-2c26fdcea60c52bd-981eb265e5a6583b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-2c26fdcea60c52bd-e89fab3d6ddf1e7f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-mutter-und-kinder-bei-angriff-im-kiewer-umland-getotet-0c52bd",
+      "title": "Mutter und Kinder bei Angriff im Kiewer Umland getötet",
+      "source_summary": "Stern und Tagesspiegel berichten übereinstimmend, dass eine Mutter und ihre Kinder bei einem Angriff im Kiewer Umland getötet wurden. Die vorliegenden Ausschnitte ordnen das Geschehen in den Krieg gegen die Ukraine ein.\n\nBeide Quellen schreiben, Kiew und das umliegende Gebiet würden regelmäßig von russischen Drohnen und Raketen angegriffen. Der Bericht bezeichnet den neuen Angriff als weitere Attacke und als Tragödie.\n\nDie beiden Veröffentlichungen stammen aus unterschiedlichen Medien, verwenden aber denselben Wortlaut. Die Ausschnitte nennen keine Opferzahl, keinen genauen Ort, keinen Zeitpunkt des Angriffs und keine unabhängige Bestätigung der Angaben.",
+      "summary": "Bei einem Angriff im Kiewer Umland wurden laut übereinstimmenden Medienausschnitten eine Mutter und ihre Kinder getötet. Die Ausschnitte belegen den Schaden, lassen Details zu Ort, Ablauf und Verantwortungszuordnung offen.",
+      "detail_summary": "Eine Mutter und ihre Kinder wurden nach übereinstimmenden Medienausschnitten bei einem Angriff im Kiewer Umland getötet. Die Quellen ordnen das Geschehen regelmäßigen Angriffen auf Kiew und das umliegende Gebiet mit Drohnen und Raketen zu. Damit ist ein schwerer menschlicher Schaden als Ereigniskern belegt, nicht aber der genaue Ablauf oder eine unabhängige Bestätigung. Möglich ist, dass wiederholte Angriffe Schutzbedarfe und Belastungen für die Zivilbevölkerung verstärken. Die Ausschnitte nennen jedoch keine weiteren Opferzahlen, keinen exakten Ort und keine belastbaren Angaben zu Folgeschäden.",
+      "why_relevant": "Der belegte Tod von Zivilpersonen markiert eine hohe unmittelbare menschliche Betroffenheit. Wiederholte Angriffe können darüber hinaus Schutz, Versorgung und Vertrauen in Sicherheitsstrukturen belasten; diese Folgen sind hier nur als bedingte Potenziale einzuordnen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über den Tod einer Mutter und ihrer Kinder bei einem Angriff im Kiewer Umland",
+        "evaluation_target": {
+          "label": "ziviler Angriffsschaden und mögliche Folgewirkungen wiederholter Angriffe",
+          "type": "event"
+        },
+        "baseline": "Zustand vor dem berichteten Angriff und die im Quellenbestand beschriebene Angriffslage",
+        "counterfactual": "Ohne den berichteten Angriff wäre der konkrete Todesfall nicht eingetreten; weitere Entwicklungen hängen vom Fortgang der Angriffslage ab.",
+        "reference_frame": [
+          "Schutz von Zivilpersonen",
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Gesundheit und Versorgung",
+          "demokratische Handlungs- und Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Tod einer Mutter und ihrer Kinder ist als Schaden berichtet. Bei weiteren Angriffen könnten zusätzliche zivile Opfer, Belastungen von Schutzstrukturen und Versorgungsbedarf entstehen; Umfang und Verteilung sind offen.",
+            "planet": "Direkte ökologische Schäden sind nicht belegt. Trümmer, Brände oder Schadstofffreisetzungen wären mögliche, aber vom Ziel und Ablauf abhängige Folgewirkungen.",
+            "democracy": "Wiederholte Angriffe könnten Sicherheitswahrnehmungen und Erwartungen an staatlichen Schutz beeinflussen. Veränderungen von Vertrauen, Beteiligung oder institutioneller Leistungsfähigkeit sind nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Ein tödlicher Schaden für eine Familie ist berichtet; weitere mögliche direkte Schäden bleiben offen.",
+          "second_order": "Bei anhaltenden Angriffen könnten Schutz, medizinische Hilfe und Versorgung stärker beansprucht werden.",
+          "third_order": "Eine länger andauernde Angriffslage könnte Sicherheitswahrnehmungen und politische Prioritäten verändern; dafür fehlen Verlaufsdaten.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quellen belegen keine weiteren Opfer, Verletzungen, Versorgungsausfälle oder institutionellen Reaktionen.",
+            "Die beiden gelieferten Berichte haben denselben Wortlaut; eine unabhängige Bestätigung ist nicht belegt.",
+            "Ökologische Schäden sind im Quellenbestand nicht beschrieben."
+          ],
+          "source_independence": "Stern und Tagesspiegel sind getrennte Veröffentlichungsorte, die gelieferten Ausschnitte sind jedoch wortgleich. Eine unabhängige Ursprungsbestätigung ist nicht verifiziert.",
+          "institutional_status": "Kein Beschluss, keine Maßnahme und kein rechtlicher Statuswechsel sind belegt; Gegenstand ist ein berichtetes Ereignis."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "medium",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der konkrete Tod ist im Titel berichtet. Zusätzliche Opfer, Verletzungen und längerfristige Folgen lassen sich aus den gelieferten Ausschnitten nicht bestimmen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Der berichtete Todesfall zeigt ein hohes menschliches Schadenspotenzial. Ein darüber hinausgehender Pfad zu weiteren zivilen Schäden und Belastungen von Schutz- und Versorgungsstrukturen ist an die Fortsetzung weiterer Angriffe gebunden und nicht als eingetretene Folge belegt.",
+            "primary_paths": [
+              {
+                "label": "Weitere Angriffe könnten zivile Schutz- und Versorgungslagen verschärfen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wiederholte Angriffe können weitere direkte Schäden verursachen und Schutz- sowie Hilfsressourcen beanspruchen.",
+                "recipients": [
+                  "Zivilbevölkerung im Kiewer Umland",
+                  "Familien",
+                  "lokale Hilfs- und Gesundheitsstrukturen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der konkrete Schaden ist schwer; Reichweite und Dauer möglicher weiterer Schäden bleiben wegen der knappen Ausschnitte offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Quellenbestand nennt Kiew und das umliegende Gebiet als Angriffsräume.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Der berichtete Tod mehrerer Familienmitglieder steht für eine sehr schwere mögliche Intensität.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Regelmäßige Angriffe werden beschrieben, ihre weitere Dauer ist jedoch nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Todesfälle wären für die unmittelbar Betroffenen irreversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind gegenüber weiteren Angriffen besonders verletzlich.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Belastungen von Schutz und Versorgung sind plausibel, aber nicht weiter belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der bedingte Pfad beschreibt mögliche weitere Schäden; die bereits berichtete Schutzgrenzverletzung wird separat als observed_effect erfasst.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "medium",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass weitere Angriffe stattfinden und Zivilpersonen oder zivile Strukturen betroffen sind.",
+                "reference_space": "Kiew und umliegendes Gebiet",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Weitere Angriffe könnten weitere direkte Schäden und eine stärkere Beanspruchung von Schutz- und Hilfsressourcen auslösen.",
+                "source_support": "Die Quellen belegen einen berichteten tödlichen Angriff und eine allgemeine regelmäßige Angriffslage, nicht die weiteren Folgen.",
+                "limitations": "Keine Daten zu Opferentwicklung, Infrastruktur, Versorgung, Hilfskapazitäten oder Verteilung der Belastungen.",
+                "first_order": "Weitere Zivilpersonen könnten getötet oder verletzt werden.",
+                "second_order": "Schutz, medizinische Hilfe und Versorgung könnten stärker beansprucht werden.",
+                "third_order": "Eine dauerhafte Angriffslage könnte Verdrängung und institutionelles Vertrauen beeinflussen; dies bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen Wirkungsdaten im gelieferten Quellenbestand; Umfang und Dauer möglicher Folgeschäden bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 19,
+                  "divisor": 6,
+                  "raw": 3.1666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht belegt; die beobachtete Schutzgrenzverletzung wird getrennt ausgewiesen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Weitere Angriffe könnten zivile Schutz- und Versorgungslagen verschärfen",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+                "direction": "negative",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "reference_space": "Mutter und Kinder im Kiewer Umland",
+                "observed_at": "im gelieferten Bericht",
+                "temporal_status": "ex_post",
+                "mechanism": "Angriff; genauer Ablauf und Verantwortungszuordnung sind im Quellenbestand nicht belegt.",
+                "recipients": [
+                  "die betroffene Familie"
+                ],
+                "time_horizon": "dauerhaft",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der konkret berichtete Schaden betrifft eine Familie.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Der Tod mehrerer Familienmitglieder ist ein maximal schwerer individueller Schaden.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 5,
+                    "rationale": "Der Verlust von Menschenleben ist dauerhaft.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Der eingetretene Todesfall ist irreversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind besonders verletzlich.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Eine weitergehende systemische Wirkung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der berichtete Tod von Zivilpersonen verletzt die grundlegende Schutzgrenze des Lebens.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 22,
+                  "divisor": 6,
+                  "raw": 3.6666666666666665,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Mutter und Kinder im Kiewer Umland",
+              "observed_at": "im gelieferten Bericht",
+              "temporal_status": "ex_post",
+              "mechanism": "Angriff; genauer Ablauf und Verantwortungszuordnung sind im Quellenbestand nicht belegt.",
+              "recipients": [
+                "die betroffene Familie"
+              ],
+              "time_horizon": "dauerhaft",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der konkret berichtete Schaden betrifft eine Familie.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Tod mehrerer Familienmitglieder ist ein maximal schwerer individueller Schaden.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 5,
+                  "rationale": "Der Verlust von Menschenleben ist dauerhaft.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der eingetretene Todesfall ist irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind besonders verletzlich.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine weitergehende systemische Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod von Zivilpersonen verletzt die grundlegende Schutzgrenze des Lebens.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen enthalten keine Angaben zu Bränden, Schadstoffen, Trümmern, Böden, Wasser oder anderen ökologischen Zustandsänderungen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein ökologischer Wirkpfad ist als Möglichkeit modellierbar, aber nicht konkret belegt. Richtung und Eintritt bleiben offen, weil Angaben zu Zielen, Schäden und Freisetzungen fehlen.",
+            "primary_paths": [
+              {
+                "label": "Angriffe könnten lokal ökologische Belastungen verursachen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Abhängig von getroffenen Zielen, Bränden oder Trümmern könnten Angriffe lokale Umweltbelastungen auslösen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Anwohnerinnen und Anwohner"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus ist grundsätzlich plausibel, konkrete ökologische Schäden sind im Quellenbestand jedoch nicht beschrieben."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der berichtete Raum ist auf Kiew und das umliegende Gebiet begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ökologische Intensität oder Freisetzung wird nicht berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Umweltbelastungen ist nicht angegeben.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ohne belegte Umweltveränderung ist keine irreversible Folge ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Lokale Umwelt und Anwohner könnten abhängig vom Angriffsziel betroffen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Systemische ökologische Wirkungen sind ohne Schadensdaten nicht begründbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist im Quellenbestand nicht beobachtet.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Es müssten konkrete Ziele, Brände, Freisetzungen oder Umweltschäden belegt werden.",
+                "reference_space": "Kiew und umliegendes Gebiet",
+                "time_horizon": "unbestimmt",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Mögliche Umweltfolgen hängen vom Ziel und der Art des Angriffs ab.",
+                "source_support": "Die Quellen belegen Angriffe mit Drohnen und Raketen, aber keine ökologische Folge.",
+                "limitations": "Keine Angaben zu Infrastruktur, Schadstoffen, Bränden, Böden, Wasser oder Luft.",
+                "first_order": "Lokale Umweltbelastungen könnten entstehen.",
+                "second_order": "Anwohner könnten mittelbar über Gesundheit oder Versorgung betroffen sein.",
+                "third_order": "Eine weiterreichende ökologische Kaskade ist nicht belegt und bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung des gelieferten Bestands ergab keine ökologischen Zustandsdaten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven ökologischen Gegenpfad und keine festgestellte ökologische Schutzgrenze."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Angriffe könnten lokal ökologische Belastungen verursachen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Angriffe könnten lokal ökologische Belastungen verursachen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keine Beobachtung zu Vertrauen, Beteiligung, Medienwirkung, politischer Reaktion oder institutioneller Leistungsfähigkeit.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Wiederholte Angriffe könnten Sicherheitswahrnehmungen und Erwartungen an staatlichen Schutz beeinflussen. Eine demokratische Zustandsänderung ist im Quellenbestand jedoch nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Wiederholte Angriffe könnten Erwartungen an Schutzinstitutionen belasten",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Anhaltende zivile Gefährdung kann Erwartungen an staatlichen Schutz und politische Handlungsfähigkeit verändern.",
+                "recipients": [
+                  "betroffene Bevölkerung",
+                  "Schutz- und Hilfsinstitutionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus ist möglich, aber weder eine Reaktion der Bevölkerung noch eine Vertrauensänderung ist belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der berichtete Raum ist auf Kiew und das umliegende Gebiet begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine demokratische Wirkung wird nicht direkt berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Vertrauensänderungen ist nicht bestimmbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen kann sich verändern, eine irreversible Änderung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Direkt betroffene Menschen könnten politisch und institutionell besonders belastet sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Wahrgenommenes Schutzversagen könnte institutionelle Erwartungen berühren, bleibt aber hypothetisch.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt anhaltende Angriffe und eine wahrnehmbare Reaktion der Bevölkerung oder Institutionen voraus.",
+                "reference_space": "betroffene Bevölkerung und Schutzinstitutionen",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sicherheitsverluste können Erwartungen an staatliche Schutzfähigkeit beeinflussen.",
+                "source_support": "Die Quellen belegen wiederholte Angriffe, nicht deren demokratische Folgen.",
+                "limitations": "Keine Daten zu Vertrauen, Wahlen, Protesten, politischen Entscheidungen oder institutionellen Reaktionen.",
+                "first_order": "Sicherheitswahrnehmungen könnten sich verändern.",
+                "second_order": "Politischer Druck auf Schutz- und Versorgungsentscheidungen könnte zunehmen.",
+                "third_order": "Langfristig könnte die Korrekturfähigkeit politischer Institutionen anders bewertet werden; dies ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine demokratischen Wirkungsdaten im gelieferten Quellenbestand; Richtung und Eintritt bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven demokratischen Gegenpfad und keine festgestellte institutionelle Schutzgrenze."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Wiederholte Angriffe könnten Erwartungen an Schutzinstitutionen belasten",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Wiederholte Angriffe könnten Erwartungen an Schutzinstitutionen belasten",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Mutter und Kinder im Kiewer Umland",
+            "observed_at": "im gelieferten Bericht",
+            "temporal_status": "ex_post",
+            "mechanism": "Angriff; genauer Ablauf und Verantwortungszuordnung sind im Quellenbestand nicht belegt.",
+            "recipients": [
+              "die betroffene Familie"
+            ],
+            "time_horizon": "dauerhaft",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Der konkret berichtete Schaden betrifft eine Familie.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Der Tod mehrerer Familienmitglieder ist ein maximal schwerer individueller Schaden.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "duration": {
+                "value": 5,
+                "rationale": "Der Verlust von Menschenleben ist dauerhaft.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der eingetretene Todesfall ist irreversibel.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind besonders verletzlich.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Eine weitergehende systemische Wirkung ist nicht belegt.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod von Zivilpersonen verletzt die grundlegende Schutzgrenze des Lebens.",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 22,
+              "divisor": 6,
+              "raw": 3.6666666666666665,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T21:56:09.009Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Titel und Abstract tragen den berichteten Tod sowie die allgemeine Einordnung wiederholter Angriffe."
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Titel und Abstract wiederholen denselben Ereigniskern und dieselbe allgemeine Einordnung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "medium",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der konkrete Tod ist im Titel berichtet. Zusätzliche Opfer, Verletzungen und längerfristige Folgen lassen sich aus den gelieferten Ausschnitten nicht bestimmen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Der berichtete Todesfall zeigt ein hohes menschliches Schadenspotenzial. Ein darüber hinausgehender Pfad zu weiteren zivilen Schäden und Belastungen von Schutz- und Versorgungsstrukturen ist an die Fortsetzung weiterer Angriffe gebunden und nicht als eingetretene Folge belegt.",
+          "primary_paths": [
+            {
+              "label": "Weitere Angriffe könnten zivile Schutz- und Versorgungslagen verschärfen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wiederholte Angriffe können weitere direkte Schäden verursachen und Schutz- sowie Hilfsressourcen beanspruchen.",
+              "recipients": [
+                "Zivilbevölkerung im Kiewer Umland",
+                "Familien",
+                "lokale Hilfs- und Gesundheitsstrukturen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der konkrete Schaden ist schwer; Reichweite und Dauer möglicher weiterer Schäden bleiben wegen der knappen Ausschnitte offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Quellenbestand nennt Kiew und das umliegende Gebiet als Angriffsräume.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Der berichtete Tod mehrerer Familienmitglieder steht für eine sehr schwere mögliche Intensität.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Regelmäßige Angriffe werden beschrieben, ihre weitere Dauer ist jedoch nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Todesfälle wären für die unmittelbar Betroffenen irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind gegenüber weiteren Angriffen besonders verletzlich.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Belastungen von Schutz und Versorgung sind plausibel, aber nicht weiter belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der bedingte Pfad beschreibt mögliche weitere Schäden; die bereits berichtete Schutzgrenzverletzung wird separat als observed_effect erfasst.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "medium",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass weitere Angriffe stattfinden und Zivilpersonen oder zivile Strukturen betroffen sind.",
+              "reference_space": "Kiew und umliegendes Gebiet",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Weitere Angriffe könnten weitere direkte Schäden und eine stärkere Beanspruchung von Schutz- und Hilfsressourcen auslösen.",
+              "source_support": "Die Quellen belegen einen berichteten tödlichen Angriff und eine allgemeine regelmäßige Angriffslage, nicht die weiteren Folgen.",
+              "limitations": "Keine Daten zu Opferentwicklung, Infrastruktur, Versorgung, Hilfskapazitäten oder Verteilung der Belastungen.",
+              "first_order": "Weitere Zivilpersonen könnten getötet oder verletzt werden.",
+              "second_order": "Schutz, medizinische Hilfe und Versorgung könnten stärker beansprucht werden.",
+              "third_order": "Eine dauerhafte Angriffslage könnte Verdrängung und institutionelles Vertrauen beeinflussen; dies bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen Wirkungsdaten im gelieferten Quellenbestand; Umfang und Dauer möglicher Folgeschäden bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 19,
+                "divisor": 6,
+                "raw": 3.1666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht belegt; die beobachtete Schutzgrenzverletzung wird getrennt ausgewiesen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Weitere Angriffe könnten zivile Schutz- und Versorgungslagen verschärfen",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Mutter und Kinder im Kiewer Umland",
+              "observed_at": "im gelieferten Bericht",
+              "temporal_status": "ex_post",
+              "mechanism": "Angriff; genauer Ablauf und Verantwortungszuordnung sind im Quellenbestand nicht belegt.",
+              "recipients": [
+                "die betroffene Familie"
+              ],
+              "time_horizon": "dauerhaft",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der konkret berichtete Schaden betrifft eine Familie.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Der Tod mehrerer Familienmitglieder ist ein maximal schwerer individueller Schaden.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 5,
+                  "rationale": "Der Verlust von Menschenleben ist dauerhaft.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der eingetretene Todesfall ist irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind besonders verletzlich.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine weitergehende systemische Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod von Zivilpersonen verletzt die grundlegende Schutzgrenze des Lebens.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Mutter und Kinder im Kiewer Umland",
+            "observed_at": "im gelieferten Bericht",
+            "temporal_status": "ex_post",
+            "mechanism": "Angriff; genauer Ablauf und Verantwortungszuordnung sind im Quellenbestand nicht belegt.",
+            "recipients": [
+              "die betroffene Familie"
+            ],
+            "time_horizon": "dauerhaft",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Der konkret berichtete Schaden betrifft eine Familie.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Der Tod mehrerer Familienmitglieder ist ein maximal schwerer individueller Schaden.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "duration": {
+                "value": 5,
+                "rationale": "Der Verlust von Menschenleben ist dauerhaft.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der eingetretene Todesfall ist irreversibel.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Zivilpersonen in einem angegriffenen Gebiet sind besonders verletzlich.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Eine weitergehende systemische Wirkung ist nicht belegt.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod von Zivilpersonen verletzt die grundlegende Schutzgrenze des Lebens.",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 22,
+              "divisor": 6,
+              "raw": 3.6666666666666665,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Eine Mutter und ihre Kinder wurden bei einem Angriff im Kiewer Umland getötet.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen enthalten keine Angaben zu Bränden, Schadstoffen, Trümmern, Böden, Wasser oder anderen ökologischen Zustandsänderungen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein ökologischer Wirkpfad ist als Möglichkeit modellierbar, aber nicht konkret belegt. Richtung und Eintritt bleiben offen, weil Angaben zu Zielen, Schäden und Freisetzungen fehlen.",
+          "primary_paths": [
+            {
+              "label": "Angriffe könnten lokal ökologische Belastungen verursachen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Abhängig von getroffenen Zielen, Bränden oder Trümmern könnten Angriffe lokale Umweltbelastungen auslösen.",
+              "recipients": [
+                "lokale Umwelt",
+                "Anwohnerinnen und Anwohner"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus ist grundsätzlich plausibel, konkrete ökologische Schäden sind im Quellenbestand jedoch nicht beschrieben."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der berichtete Raum ist auf Kiew und das umliegende Gebiet begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ökologische Intensität oder Freisetzung wird nicht berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Umweltbelastungen ist nicht angegeben.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ohne belegte Umweltveränderung ist keine irreversible Folge ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Lokale Umwelt und Anwohner könnten abhängig vom Angriffsziel betroffen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Systemische ökologische Wirkungen sind ohne Schadensdaten nicht begründbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist im Quellenbestand nicht beobachtet.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "condition": "Es müssten konkrete Ziele, Brände, Freisetzungen oder Umweltschäden belegt werden.",
+              "reference_space": "Kiew und umliegendes Gebiet",
+              "time_horizon": "unbestimmt",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Mögliche Umweltfolgen hängen vom Ziel und der Art des Angriffs ab.",
+              "source_support": "Die Quellen belegen Angriffe mit Drohnen und Raketen, aber keine ökologische Folge.",
+              "limitations": "Keine Angaben zu Infrastruktur, Schadstoffen, Bränden, Böden, Wasser oder Luft.",
+              "first_order": "Lokale Umweltbelastungen könnten entstehen.",
+              "second_order": "Anwohner könnten mittelbar über Gesundheit oder Versorgung betroffen sein.",
+              "third_order": "Eine weiterreichende ökologische Kaskade ist nicht belegt und bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung des gelieferten Bestands ergab keine ökologischen Zustandsdaten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven ökologischen Gegenpfad und keine festgestellte ökologische Schutzgrenze."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Angriffe könnten lokal ökologische Belastungen verursachen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Angriffe könnten lokal ökologische Belastungen verursachen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keine Beobachtung zu Vertrauen, Beteiligung, Medienwirkung, politischer Reaktion oder institutioneller Leistungsfähigkeit.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Wiederholte Angriffe könnten Sicherheitswahrnehmungen und Erwartungen an staatlichen Schutz beeinflussen. Eine demokratische Zustandsänderung ist im Quellenbestand jedoch nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Wiederholte Angriffe könnten Erwartungen an Schutzinstitutionen belasten",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Anhaltende zivile Gefährdung kann Erwartungen an staatlichen Schutz und politische Handlungsfähigkeit verändern.",
+              "recipients": [
+                "betroffene Bevölkerung",
+                "Schutz- und Hilfsinstitutionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus ist möglich, aber weder eine Reaktion der Bevölkerung noch eine Vertrauensänderung ist belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der berichtete Raum ist auf Kiew und das umliegende Gebiet begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine demokratische Wirkung wird nicht direkt berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Vertrauensänderungen ist nicht bestimmbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen kann sich verändern, eine irreversible Änderung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Direkt betroffene Menschen könnten politisch und institutionell besonders belastet sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Wahrgenommenes Schutzversagen könnte institutionelle Erwartungen berühren, bleibt aber hypothetisch.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt anhaltende Angriffe und eine wahrnehmbare Reaktion der Bevölkerung oder Institutionen voraus.",
+              "reference_space": "betroffene Bevölkerung und Schutzinstitutionen",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sicherheitsverluste können Erwartungen an staatliche Schutzfähigkeit beeinflussen.",
+              "source_support": "Die Quellen belegen wiederholte Angriffe, nicht deren demokratische Folgen.",
+              "limitations": "Keine Daten zu Vertrauen, Wahlen, Protesten, politischen Entscheidungen oder institutionellen Reaktionen.",
+              "first_order": "Sicherheitswahrnehmungen könnten sich verändern.",
+              "second_order": "Politischer Druck auf Schutz- und Versorgungsentscheidungen könnte zunehmen.",
+              "third_order": "Langfristig könnte die Korrekturfähigkeit politischer Institutionen anders bewertet werden; dies ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine demokratischen Wirkungsdaten im gelieferten Quellenbestand; Richtung und Eintritt bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven demokratischen Gegenpfad und keine festgestellte institutionelle Schutzgrenze."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Wiederholte Angriffe könnten Erwartungen an Schutzinstitutionen belasten",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Wiederholte Angriffe könnten Erwartungen an Schutzinstitutionen belasten",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T21:54:08.968Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T21:10:58.000Z",
+      "last_updated": "2026-09-19T21:56:09.003Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4367ef96f28a71a59236",
+      "case_file": null,
+      "source_published_at": "2026-09-19T21:10:58.000Z",
+      "published_at": "2026-09-19T21:56:09.003Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--mutter-und-kinder-bei-angriff-im-kiewer-umland-getoetet-38278348.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T21:10:58.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-mutter-und-kinder-bei-angriff-im-kiewer-umland-getotet-16075850.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T21:12:05.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-1cf513f856fb0c52",
       "title_image": {
