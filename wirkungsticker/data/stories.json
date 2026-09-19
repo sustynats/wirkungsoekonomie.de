@@ -2,8 +2,2145 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T14:38:55.685Z",
+  "updated_at": "2026-09-19T14:51:41.769Z",
   "stories": [
+    {
+      "story_id": "wt-9b00217eb8ece771",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-9b00217eb8ece771-31d19afe6330ef6c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-9b00217eb8ece771-bd452cd93dfd18c7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-9b00217eb8ece771-b164ed26ccc7740d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wohnungsmarkt-jedes-zweite-wg-zimmer-in-berlin-kostet-mehr-als-650-euro-ece771",
+      "title": "Jedes zweite WG-Zimmer in Berlin kostet mehr als 650 Euro",
+      "source_summary": "Mehrere journalistische Berichte greifen eine Auswertung des Moses Mendelssohn Instituts auf. Danach wurde in Berlin zuletzt jedes zweite WG-Zimmer für mehr als 650 Euro angeboten. In München lag der Median bei 850 Euro, in Köln bei 640 Euro.\n\nFür Berlin, Hamburg, München und Köln nennt die Auswertung durchschnittlich 692 Euro für Zimmer in kleineren Wohngemeinschaften. Das seien 23 Euro mehr als ein halbes Jahr zuvor. Deutschlandweit blieb der Durchschnitt mit 510 Euro gegenüber 512 Euro weitgehend stabil.\n\nGrundlage waren öffentlich zugängliche Angebote auf wg-gesucht.de. Die Stichprobe umfasste fast 3.900 Inserate; bestimmte Angebote, darunter Neugründungen und möblierte Zimmer, wurden nicht berücksichtigt. Offen bleibt, wie sich die Angebotspreise auf tatsächlich abgeschlossene Mietverträge übertragen.",
+      "summary": "In Berlin kostet inzwischen jedes zweite angebotene WG-Zimmer mehr als 650 Euro. Die Daten zeigen steigende Preise in mehreren Millionenstädten, während der deutschlandweite Durchschnitt nahezu stabil blieb.",
+      "detail_summary": "Eine Auswertung des Moses Mendelssohn Instituts zeigt, dass in Berlin jedes zweite angebotene WG-Zimmer mehr als 650 Euro kostet. In Berlin, Hamburg, München und Köln lag der Durchschnitt für Zimmer in kleineren Wohngemeinschaften bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor. Deutschlandweit blieb der Durchschnitt dagegen nahezu stabil. Das kann den Zugang zu Studium und Ausbildung nach Standort und Einkommen unterschiedlich erschweren. Die Auswertung beruht auf fast 3.900 öffentlichen Inseraten und bildet daher Angebotspreise ab, nicht alle tatsächlich vereinbarten Mieten.",
+      "why_relevant": "Wohnkosten können beeinflussen, ob ein Studien- oder Ausbildungsort für Menschen mit begrenztem Budget erreichbar bleibt.",
+      "topic": [
+        "Soziales",
+        "Europa"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Neue Auswertung zu den Angebotspreisen für WG-Zimmer in deutschen Hochschulstandorten",
+        "evaluation_target": {
+          "label": "Angebotspreise für WG-Zimmer und ihre mögliche Bedeutung für den Zugang zu Studien- und Ausbildungsorten",
+          "type": "development"
+        },
+        "baseline": "Deutschlandweiter Durchschnitt von 510 Euro gegenüber 512 Euro vor Beginn des Sommersemesters 2026; regional deutlich höhere Werte in vier Millionenstädten.",
+        "counterfactual": "Ohne die ausgewiesene Preissteigerung in den vier Millionenstädten könnten sich die regionalen Wohnkostenunterschiede weniger stark auf Standortentscheidungen auswirken; andere Wohnungsmarktentwicklungen bleiben offen.",
+        "reference_frame": [
+          "bezahlbarer Zugang zu Bildung und Ausbildung",
+          "soziale Teilhabe in Hochschulstädten",
+          "Agenda 2030/SDG 4 und SDG 10"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Höhere Angebotspreise könnten Haushalte mit geringeren finanziellen Spielräumen stärker belasten und Standortentscheidungen beeinflussen. Die Daten belegen Preisunterschiede, aber noch keine individuellen Folgen.",
+            "planet": "Ausweichende Pendelbewegungen könnten zusätzliche Wege und damit Energiebedarf erzeugen; dieser Pfad ist nicht gemessen und bleibt bedingt.",
+            "democracy": "Ungleicher Zugang zu Hochschulstandorten könnte mittelbar die politische und institutionelle Teilhabe beeinflussen. Ein direkter demokratischer Effekt ist nicht belegt; Macht- oder Gesetzgebungseffekte sind aus den Quellen nicht ableitbar."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Preisentwicklung verändert den finanziellen Aufwand für ein WG-Zimmer an bestimmten Standorten.",
+          "second_order": "Unter der Bedingung begrenzter Einkommen könnte sie Wohn- und Standortentscheidungen sowie Pendelbewegungen beeinflussen.",
+          "third_order": "Bei anhaltender regionaler Differenzierung könnte eine räumliche Sortierung nach Zahlungsfähigkeit Bildungs-, Arbeitsmarkt- und Teilhabechancen verstärken; dieser Pfad ist nicht beobachtet.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der deutschlandweite Durchschnitt blieb mit 510 Euro gegenüber 512 Euro nahezu stabil.",
+            "Die Auswertung erfasst Angebotspreise und schließt bestimmte Angebotsarten aus.",
+            "Es gibt keine Quelle für bereits gemessene Veränderungen bei Studienentscheidungen oder demokratischer Teilhabe."
+          ],
+          "source_independence": "taz-aktuell und rbb24 sind unterschiedliche journalistische Herkünfte, greifen aber beide auf dieselbe Auswertung beziehungsweise dpa-nahe Angaben zurück. Die unabhängige Bestätigung des Kernbefunds ist vorhanden; die Quellenlage zu Wirkungen ist begrenzt.",
+          "institutional_status": "Es handelt sich um eine journalistisch berichtete Auswertung und nicht um einen Beschluss, eine Rechtsänderung oder eine belegte Umsetzung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "medium",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen höhere Angebotspreise an mehreren Standorten, aber keine individuellen Belastungs- oder Verhaltensdaten. Der Wirkungspfad bleibt deshalb an begrenzte finanzielle Spielräume und anhaltende Preisunterschiede gebunden.",
+            "reviewed_source_ids": [
+              "taz-aktuell",
+              "rbb24-nachrichten"
+            ],
+            "rationale": "Der direkte finanzielle Mehraufwand ist belegt; eine negative Wirkung auf Zugänglichkeit und Verteilung ist plausibel, aber nicht als bereits eingetretene Veränderung individueller Bildungsentscheidungen gemessen.",
+            "primary_paths": [
+              {
+                "label": "Höhere WG-Angebotspreise erschweren einkommensschwächeren Menschen den Zugang zu bestimmten Studien- und Ausbildungsstandorten",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn Einkommen oder Unterstützung nicht mit den Angebotspreisen wachsen, steigt der Finanzierungsbedarf und kann Standortwahl, Pendeln oder Verzicht wahrscheinlicher machen.",
+                "recipients": [
+                  "Studierende mit geringem Einkommen",
+                  "Auszubildende",
+                  "Haushalte ohne finanzielle Unterstützung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Preisunterschied ist regional materiell, die Zahl der direkt Betroffenen und die Verhaltensreaktion sind jedoch nicht ausgewiesen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere Millionenstädte sind betroffen, aber nicht alle Wohnformen oder Haushalte.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein höherer Zimmerpreis kann das monatliche Budget spürbar belasten.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Quellen zeigen einen Vergleich über ein halbes Jahr, keine langfristige Dauer.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Wohn- und Standortentscheidungen können grundsätzlich wieder verändert werden.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen mit begrenztem Budget sind gegenüber Wohnkosten besonders empfindlich.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Haushaltsbudgets zu Bildungs- und Standortentscheidungen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung eines rechtlich festgelegten Schutzstandards ist nicht belegt.",
+                  "reference_frame": "bezahlbarer Zugang zu Bildung und Ausbildung",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "medium",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Der Pfad setzt begrenzte finanzielle Spielräume, fehlende Ausweichangebote und anhaltende regionale Preisunterschiede voraus.",
+                "reference_space": "Berlin, Hamburg, München und Köln im Vergleich zum deutschlandweiten Angebotspreis",
+                "time_horizon": "kommende Semester und weitere Preisbeobachtungen",
+                "path_quality": [
+                  "direct",
+                  "indirect"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Angebotspreise werden zumindest teilweise zu tatsächlichen Wohnkosten und Haushalte reagieren auf Budgetgrenzen.",
+                "source_support": "Die Quellen belegen Preiswerte und die mögliche Bedeutung der Kosten für die Finanzierbarkeit eines Studienorts, nicht den Eintritt individueller Folgen.",
+                "limitations": "Keine Daten zu Einkommen, Vertragsabschlüssen, Umzügen, Pendelzeiten oder Studienabbrüchen.",
+                "first_order": "Der monatliche Finanzierungsbedarf für ein Zimmer könnte steigen.",
+                "second_order": "Betroffene könnten einen anderen Wohn- oder Studienort wählen oder länger pendeln.",
+                "third_order": "Eine anhaltende Sortierung nach Zahlungsfähigkeit könnte Bildungs- und Arbeitsmarktchancen räumlich ungleich verteilen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellen messen bereits eingetretene Veränderungen bei Studienwahl oder Bildungszugang.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Ausweichende Wohnungssuche könnte Pendelwege verlängern",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Wenn Zimmer in Großstädten nicht finanzierbar sind, könnten Betroffene auf weiter entfernte Wohnorte ausweichen.",
+                "recipients": [
+                  "Studierende",
+                  "Auszubildende",
+                  "Pendlerhaushalte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus ist plausibel, aber weder Ausweichbewegung noch Wegelänge sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nur ein Teil der Wohnungssuchenden dürfte ausweichen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Mögliche Zusatzbelastungen sind nicht quantifiziert.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Pendelwege ist unbekannt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ein Wohnortwechsel ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit wenig Geld oder Zeit könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft vor allem Mobilität und Alltagsorganisation.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Mobilität oder Pendelzeiten ist nicht belegt.",
+                  "reference_frame": "erreichbarer Zugang zu Bildung und Ausbildung",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Der Pfad setzt fehlende bezahlbare Zimmer am Studienort und verfügbare Wohnmöglichkeiten im Umland voraus.",
+                "reference_space": "Großstädte und ihr erreichbares Umland",
+                "time_horizon": "kommende Semester",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wohnungssuchende können und wollen auf weiter entfernte Orte ausweichen.",
+                "source_support": "Die Quellen zeigen Preisunterschiede, aber keine Pendel- oder Umzugsdaten.",
+                "limitations": "Keine Daten zu Verkehr, Wegzeiten, Emissionen oder tatsächlichen Ausweichbewegungen.",
+                "first_order": "Ein Ausweichort könnte die Distanz zum Studien- oder Ausbildungsort erhöhen.",
+                "second_order": "Zeit- und Mobilitätskosten könnten steigen.",
+                "third_order": "Bei breiter Ausweichbewegung könnte regionaler Wohnungs- und Verkehrsdruck zunehmen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferten Quellen enthalten keine Messung von Pendelbewegungen oder Ausweichmieten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist ein negativer Hauptpfad plausibel, aber kein gleichwertiger positiver Gegenpfad aus den Quellen belegbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Höhere WG-Angebotspreise erschweren einkommensschwächeren Menschen den Zugang zu bestimmten Studien- und Ausbildungsstandorten",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+                "direction": "negative",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "established",
+                "reference_frame": "finanzielle Zugänglichkeit von Wohnraum für Studierende und Auszubildende",
+                "reference_space": "Berlin, Hamburg, München und Köln",
+                "observed_at": "19.9.2026",
+                "temporal_status": "ex_post",
+                "mechanism": "Höhere Angebotspreise erhöhen den finanziellen Aufwand für ein WG-Zimmer.",
+                "recipients": [
+                  "Wohnungssuchende Studierende",
+                  "Wohnungssuchende Auszubildende"
+                ],
+                "time_horizon": "Vergleich über ein halbes Jahr bis zum anstehenden Wintersemester",
+                "magnitude": 2,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Vier Millionenstädte weisen erhöhte Durchschnittspreise aus.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Preisunterschied und der Anteil über 650 Euro zeigen eine spürbare Belastung.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Preisentwicklung wird über ein halbes Jahr verglichen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Angebotspreise können sich künftig wieder verändern.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen mit begrenztem Budget sind von höheren Wohnkosten stärker betroffen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Belegt ist zunächst eine Veränderung der Angebotspreise, nicht eine systemische Folgewirkung.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quellen belegen eine Preisbelastung, aber keine rechtlich definierte Schutzgrenzenverletzung.",
+                  "reference_frame": "bezahlbarer Zugang zu Wohnraum",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 2,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+              "direction": "negative",
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "finanzielle Zugänglichkeit von Wohnraum für Studierende und Auszubildende",
+              "reference_space": "Berlin, Hamburg, München und Köln",
+              "observed_at": "19.9.2026",
+              "temporal_status": "ex_post",
+              "mechanism": "Höhere Angebotspreise erhöhen den finanziellen Aufwand für ein WG-Zimmer.",
+              "recipients": [
+                "Wohnungssuchende Studierende",
+                "Wohnungssuchende Auszubildende"
+              ],
+              "time_horizon": "Vergleich über ein halbes Jahr bis zum anstehenden Wintersemester",
+              "magnitude": 2,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Vier Millionenstädte weisen erhöhte Durchschnittspreise aus.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Preisunterschied und der Anteil über 650 Euro zeigen eine spürbare Belastung.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Preisentwicklung wird über ein halbes Jahr verglichen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Angebotspreise können sich künftig wieder verändern.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen mit begrenztem Budget sind von höheren Wohnkosten stärker betroffen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Belegt ist zunächst eine Veränderung der Angebotspreise, nicht eine systemische Folgewirkung.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen eine Preisbelastung, aber keine rechtlich definierte Schutzgrenzenverletzung.",
+                "reference_frame": "bezahlbarer Zugang zu Wohnraum",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen enthalten keine Daten zu Pendelwegen, Verkehrsmitteln oder Energieverbrauch. Ein negativer ökologischer Pfad kann nur unter der Bedingung zusätzlicher Wege modelliert werden.",
+            "reviewed_source_ids": [
+              "taz-aktuell",
+              "rbb24-nachrichten"
+            ],
+            "rationale": "Höhere Wohnkosten könnten Ausweichbewegungen und längere Wege begünstigen, doch die dafür notwendige Verhaltensänderung ist nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Ausweichende Wohnorte könnten zusätzliche Pendelwege erzeugen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn bezahlbare Zimmer in der Stadt fehlen, könnte eine Wohnverlagerung ins Umland den täglichen Weg verlängern und den Verkehrsenergiebedarf erhöhen.",
+                "recipients": [
+                  "ausweichende Studierende",
+                  "ausweichende Auszubildende",
+                  "Verkehrssysteme im Umland"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein möglicher Zusatzpfad ist vorhanden, aber Umfang, Verkehrsmittel und Häufigkeit sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nur ein nicht bestimmter Teil der Betroffenen könnte ausweichen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Möglicher zusätzlicher Energiebedarf ist nicht quantifiziert.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Verlagerung ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Wohn- und Mobilitätsentscheidungen sind grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die ökologische Betroffenheit hängt von Verkehrsmittel und Weglänge ab.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf Mobilitätsentscheidungen begrenzt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Grenzverletzung oder Emissionsänderung ist nicht belegt.",
+                  "reference_frame": "zusätzlicher Verkehrs- und Energiebedarf",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine Wohnverlagerung und überwiegend zusätzliche motorisierte Wege voraus.",
+                "reference_space": "Berlin, Hamburg, München und Köln mit Umland",
+                "time_horizon": "kommende Semester",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wohnkosten beeinflussen den Wohnort und die Ausweichwege werden nicht durch emissionsarme Verkehrsmittel kompensiert.",
+                "source_support": "Die Quellen belegen regionale Preisunterschiede, nicht deren ökologische Folgen.",
+                "limitations": "Keine Daten zu Pendeln, Verkehrsmitteln, Distanzen oder Emissionen.",
+                "first_order": "Ein möglicher Ausweichwohnort könnte die Wegstrecke verlängern.",
+                "second_order": "Der Energieverbrauch für Mobilität könnte steigen.",
+                "third_order": "Bei breiter Verlagerung könnte zusätzlicher Verkehrsdruck im Umland entstehen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellen weisen einen beobachteten Zusammenhang zwischen den WG-Preisen und zusätzlichem Verkehr oder Emissionen aus.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Umweltpfad ist nur als bedingte Nebenfolge modellierbar; ein vergleichbarer positiver Pfad ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Ausweichende Wohnorte könnten zusätzliche Pendelwege erzeugen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ausweichende Wohnorte könnten zusätzliche Pendelwege erzeugen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "very_low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen keine Veränderung politischer Beteiligung, institutioneller Entscheidungen oder Machtverhältnisse. Ein demokratischer Pfad bleibt deshalb offen und setzt eine anhaltende soziale Sortierung sowie politische Reaktionen voraus.",
+            "reviewed_source_ids": [
+              "taz-aktuell",
+              "rbb24-nachrichten"
+            ],
+            "rationale": "Wohnkosten können mittelbar beeinflussen, wer Zugang zu Hochschulstädten und dortigen sozialen Räumen hat; ein demokratischer Effekt ist aus den gelieferten Daten nicht direkt ableitbar.",
+            "primary_paths": [
+              {
+                "label": "Ungleicher Zugang zu Hochschulstädten könnte soziale und politische Teilhabe räumlich verschieben",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Wenn steigende Wohnkosten bestimmte Gruppen dauerhaft vom Wohnen am Studienort ausschließen, könnte sich deren Zugang zu lokalen Netzwerken und institutionellen Beteiligungsmöglichkeiten verändern.",
+                "recipients": [
+                  "Studierende mit geringem Einkommen",
+                  "Auszubildende",
+                  "lokale Hochschul- und Stadtgesellschaften"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der indirekte Pfad ist denkbar, aber weder Ausschluss noch Teilhabeänderung sind gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft nur einen nicht bestimmten Teil der Wohnungssuchenden.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Veränderung politischer Teilhabe ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte soziale Sortierung ist nur als Bedingung angenommen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Wohn- und Beteiligungsbedingungen können sich grundsätzlich verändern.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft möglicherweise finanziell verletzlichere Gruppen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der demokratische Zusammenhang ist indirekt und institutionell nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete Verletzung eines demokratischen oder rechtlichen Schutzstandards belegt.",
+                  "reference_frame": "gleichberechtigter Zugang zu gesellschaftlicher Teilhabe",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine dauerhafte räumliche Ausschließung bestimmter Gruppen und einen Zusammenhang zwischen Wohnort und politischer Beteiligung voraus.",
+                "reference_space": "Hochschulstädte und ihre soziale sowie institutionelle Öffentlichkeit",
+                "time_horizon": "mehrere Semester bis längerfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Lokale soziale und politische Teilhabe hängt teilweise vom dauerhaften Wohnen am Hochschulort ab.",
+                "source_support": "Die Quellen verbinden Wohnkosten mit der möglichen Finanzierbarkeit eines Studienorts, nicht mit politischer Beteiligung.",
+                "limitations": "Keine Daten zu Beteiligung, Repräsentation, Vereinsleben, Machtverhältnissen oder politischen Entscheidungen.",
+                "first_order": "Einige Menschen könnten seltener am sozialen Leben am Studienort teilnehmen.",
+                "second_order": "Die Zusammensetzung lokaler studentischer und zivilgesellschaftlicher Räume könnte sich verändern.",
+                "third_order": "Eine dauerhafte soziale Sortierung könnte politische Artikulation und institutionelle Repräsentation indirekt beeinflussen; dieser Pfad bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellen messen einen demokratischen oder institutionellen Effekt der WG-Preise.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Wohnkosten könnten politische Forderungen nach kommunalen Gegenmaßnahmen verstärken",
+                "direction": "open",
+                "type": "side_effect",
+                "mechanism": "Wenn die Preisentwicklung als untragbar wahrgenommen wird, könnte sie Debatten über Wohnheime oder kommunale Angebote anstoßen.",
+                "recipients": [
+                  "Studierendenvertretungen",
+                  "Kommunen",
+                  "Hochschulöffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine politische Reaktion ist möglich, aber in den Quellen nicht dokumentiert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Debatten wären zunächst auf betroffene Standorte begrenzt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete Forderungen oder Entscheidungen sind nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Debatte ist unbekannt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Politische Debatten und Maßnahmen sind grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene mit geringem Budget könnten stärker auf politische Hilfe angewiesen sein.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad könnte Institutionen ansprechen, ist aber nicht eingetreten.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "rbb24-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es liegt keine belegte institutionelle Reaktion oder Schutzgrenze vor.",
+                  "reference_frame": "politische Korrekturfähigkeit bei Wohn- und Bildungszugang",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "condition": "Der Pfad setzt öffentliche Mobilisierung und anschließende institutionelle Reaktion voraus.",
+                "reference_space": "Kommunen und Hochschulstandorte mit steigenden WG-Angebotspreisen",
+                "time_horizon": "kommende politische und hochschulische Debatten",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisberichte werden von Organisationen oder Kommunen in konkrete Forderungen übersetzt.",
+                "source_support": "Die Quellen berichten Preiswerte und ein Institutszitat, aber keine politischen Forderungen oder Entscheidungen.",
+                "limitations": "Keine Daten zu Debatten, Beschlüssen, Budgets oder institutionellen Reaktionen.",
+                "first_order": "Die Preisentwicklung könnte öffentlich thematisiert werden.",
+                "second_order": "Akteure könnten mehr Wohnangebote oder Unterstützung fordern.",
+                "third_order": "Bei Umsetzung könnten institutionelle Zuständigkeiten und Prioritäten verändert werden; eine solche Umsetzung ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellen dokumentieren eine politische Reaktion auf die aktuelle Auswertung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Hauptpfad mit ausreichender Evidenz; die Einordnung bleibt offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ungleicher Zugang zu Hochschulstädten könnte soziale und politische Teilhabe räumlich verschieben",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ungleicher Zugang zu Hochschulstädten könnte soziale und politische Teilhabe räumlich verschieben",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+            "direction": "negative",
+            "source_ids": [
+              "taz-aktuell",
+              "rbb24-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "finanzielle Zugänglichkeit von Wohnraum für Studierende und Auszubildende",
+            "reference_space": "Berlin, Hamburg, München und Köln",
+            "observed_at": "19.9.2026",
+            "temporal_status": "ex_post",
+            "mechanism": "Höhere Angebotspreise erhöhen den finanziellen Aufwand für ein WG-Zimmer.",
+            "recipients": [
+              "Wohnungssuchende Studierende",
+              "Wohnungssuchende Auszubildende"
+            ],
+            "time_horizon": "Vergleich über ein halbes Jahr bis zum anstehenden Wintersemester",
+            "magnitude": 2,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Vier Millionenstädte weisen erhöhte Durchschnittspreise aus.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Der Preisunterschied und der Anteil über 650 Euro zeigen eine spürbare Belastung.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Die Preisentwicklung wird über ein halbes Jahr verglichen.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Angebotspreise können sich künftig wieder verändern.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Menschen mit begrenztem Budget sind von höheren Wohnkosten stärker betroffen.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Belegt ist zunächst eine Veränderung der Angebotspreise, nicht eine systemische Folgewirkung.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die Quellen belegen eine Preisbelastung, aber keine rechtlich definierte Schutzgrenzenverletzung.",
+              "reference_frame": "bezahlbarer Zugang zu Wohnraum",
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "status": "not_decisive"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 11,
+              "divisor": 6,
+              "raw": 1.8333333333333333,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T14:53:16.772Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Berichtet Preiswerte, regionale Unterschiede, Datengrundlage und die mögliche Bedeutung der Kosten für die Finanzierbarkeit eines Studienorts."
+          },
+          {
+            "source_id": "rbb24-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Bestätigt die zentralen Preisangaben und erläutert Durchschnitt, Median sowie Umfang und Grenzen der Auswertung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "medium",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen höhere Angebotspreise an mehreren Standorten, aber keine individuellen Belastungs- oder Verhaltensdaten. Der Wirkungspfad bleibt deshalb an begrenzte finanzielle Spielräume und anhaltende Preisunterschiede gebunden.",
+          "reviewed_source_ids": [
+            "taz-aktuell",
+            "rbb24-nachrichten"
+          ],
+          "rationale": "Der direkte finanzielle Mehraufwand ist belegt; eine negative Wirkung auf Zugänglichkeit und Verteilung ist plausibel, aber nicht als bereits eingetretene Veränderung individueller Bildungsentscheidungen gemessen.",
+          "primary_paths": [
+            {
+              "label": "Höhere WG-Angebotspreise erschweren einkommensschwächeren Menschen den Zugang zu bestimmten Studien- und Ausbildungsstandorten",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn Einkommen oder Unterstützung nicht mit den Angebotspreisen wachsen, steigt der Finanzierungsbedarf und kann Standortwahl, Pendeln oder Verzicht wahrscheinlicher machen.",
+              "recipients": [
+                "Studierende mit geringem Einkommen",
+                "Auszubildende",
+                "Haushalte ohne finanzielle Unterstützung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Preisunterschied ist regional materiell, die Zahl der direkt Betroffenen und die Verhaltensreaktion sind jedoch nicht ausgewiesen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere Millionenstädte sind betroffen, aber nicht alle Wohnformen oder Haushalte.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein höherer Zimmerpreis kann das monatliche Budget spürbar belasten.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Quellen zeigen einen Vergleich über ein halbes Jahr, keine langfristige Dauer.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Wohn- und Standortentscheidungen können grundsätzlich wieder verändert werden.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen mit begrenztem Budget sind gegenüber Wohnkosten besonders empfindlich.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Haushaltsbudgets zu Bildungs- und Standortentscheidungen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung eines rechtlich festgelegten Schutzstandards ist nicht belegt.",
+                "reference_frame": "bezahlbarer Zugang zu Bildung und Ausbildung",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "medium",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "condition": "Der Pfad setzt begrenzte finanzielle Spielräume, fehlende Ausweichangebote und anhaltende regionale Preisunterschiede voraus.",
+              "reference_space": "Berlin, Hamburg, München und Köln im Vergleich zum deutschlandweiten Angebotspreis",
+              "time_horizon": "kommende Semester und weitere Preisbeobachtungen",
+              "path_quality": [
+                "direct",
+                "indirect"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Angebotspreise werden zumindest teilweise zu tatsächlichen Wohnkosten und Haushalte reagieren auf Budgetgrenzen.",
+              "source_support": "Die Quellen belegen Preiswerte und die mögliche Bedeutung der Kosten für die Finanzierbarkeit eines Studienorts, nicht den Eintritt individueller Folgen.",
+              "limitations": "Keine Daten zu Einkommen, Vertragsabschlüssen, Umzügen, Pendelzeiten oder Studienabbrüchen.",
+              "first_order": "Der monatliche Finanzierungsbedarf für ein Zimmer könnte steigen.",
+              "second_order": "Betroffene könnten einen anderen Wohn- oder Studienort wählen oder länger pendeln.",
+              "third_order": "Eine anhaltende Sortierung nach Zahlungsfähigkeit könnte Bildungs- und Arbeitsmarktchancen räumlich ungleich verteilen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellen messen bereits eingetretene Veränderungen bei Studienwahl oder Bildungszugang.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Ausweichende Wohnungssuche könnte Pendelwege verlängern",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Wenn Zimmer in Großstädten nicht finanzierbar sind, könnten Betroffene auf weiter entfernte Wohnorte ausweichen.",
+              "recipients": [
+                "Studierende",
+                "Auszubildende",
+                "Pendlerhaushalte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus ist plausibel, aber weder Ausweichbewegung noch Wegelänge sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nur ein Teil der Wohnungssuchenden dürfte ausweichen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Mögliche Zusatzbelastungen sind nicht quantifiziert.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Pendelwege ist unbekannt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ein Wohnortwechsel ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit wenig Geld oder Zeit könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft vor allem Mobilität und Alltagsorganisation.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Mobilität oder Pendelzeiten ist nicht belegt.",
+                "reference_frame": "erreichbarer Zugang zu Bildung und Ausbildung",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "condition": "Der Pfad setzt fehlende bezahlbare Zimmer am Studienort und verfügbare Wohnmöglichkeiten im Umland voraus.",
+              "reference_space": "Großstädte und ihr erreichbares Umland",
+              "time_horizon": "kommende Semester",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wohnungssuchende können und wollen auf weiter entfernte Orte ausweichen.",
+              "source_support": "Die Quellen zeigen Preisunterschiede, aber keine Pendel- oder Umzugsdaten.",
+              "limitations": "Keine Daten zu Verkehr, Wegzeiten, Emissionen oder tatsächlichen Ausweichbewegungen.",
+              "first_order": "Ein Ausweichort könnte die Distanz zum Studien- oder Ausbildungsort erhöhen.",
+              "second_order": "Zeit- und Mobilitätskosten könnten steigen.",
+              "third_order": "Bei breiter Ausweichbewegung könnte regionaler Wohnungs- und Verkehrsdruck zunehmen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferten Quellen enthalten keine Messung von Pendelbewegungen oder Ausweichmieten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist ein negativer Hauptpfad plausibel, aber kein gleichwertiger positiver Gegenpfad aus den Quellen belegbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Höhere WG-Angebotspreise erschweren einkommensschwächeren Menschen den Zugang zu bestimmten Studien- und Ausbildungsstandorten",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+              "direction": "negative",
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "finanzielle Zugänglichkeit von Wohnraum für Studierende und Auszubildende",
+              "reference_space": "Berlin, Hamburg, München und Köln",
+              "observed_at": "19.9.2026",
+              "temporal_status": "ex_post",
+              "mechanism": "Höhere Angebotspreise erhöhen den finanziellen Aufwand für ein WG-Zimmer.",
+              "recipients": [
+                "Wohnungssuchende Studierende",
+                "Wohnungssuchende Auszubildende"
+              ],
+              "time_horizon": "Vergleich über ein halbes Jahr bis zum anstehenden Wintersemester",
+              "magnitude": 2,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Vier Millionenstädte weisen erhöhte Durchschnittspreise aus.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Preisunterschied und der Anteil über 650 Euro zeigen eine spürbare Belastung.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Preisentwicklung wird über ein halbes Jahr verglichen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Angebotspreise können sich künftig wieder verändern.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen mit begrenztem Budget sind von höheren Wohnkosten stärker betroffen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Belegt ist zunächst eine Veränderung der Angebotspreise, nicht eine systemische Folgewirkung.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quellen belegen eine Preisbelastung, aber keine rechtlich definierte Schutzgrenzenverletzung.",
+                "reference_frame": "bezahlbarer Zugang zu Wohnraum",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+            "direction": "negative",
+            "source_ids": [
+              "taz-aktuell",
+              "rbb24-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "finanzielle Zugänglichkeit von Wohnraum für Studierende und Auszubildende",
+            "reference_space": "Berlin, Hamburg, München und Köln",
+            "observed_at": "19.9.2026",
+            "temporal_status": "ex_post",
+            "mechanism": "Höhere Angebotspreise erhöhen den finanziellen Aufwand für ein WG-Zimmer.",
+            "recipients": [
+              "Wohnungssuchende Studierende",
+              "Wohnungssuchende Auszubildende"
+            ],
+            "time_horizon": "Vergleich über ein halbes Jahr bis zum anstehenden Wintersemester",
+            "magnitude": 2,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Vier Millionenstädte weisen erhöhte Durchschnittspreise aus.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Der Preisunterschied und der Anteil über 650 Euro zeigen eine spürbare Belastung.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Die Preisentwicklung wird über ein halbes Jahr verglichen.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Angebotspreise können sich künftig wieder verändern.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Menschen mit begrenztem Budget sind von höheren Wohnkosten stärker betroffen.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Belegt ist zunächst eine Veränderung der Angebotspreise, nicht eine systemische Folgewirkung.",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die Quellen belegen eine Preisbelastung, aber keine rechtlich definierte Schutzgrenzenverletzung.",
+              "reference_frame": "bezahlbarer Zugang zu Wohnraum",
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "status": "not_decisive"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 11,
+              "divisor": 6,
+              "raw": 1.8333333333333333,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 2,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 2,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "In Berlin wurde zuletzt jedes zweite angebotene WG-Zimmer für mehr als 650 Euro angeboten; in vier Millionenstädten lag der Durchschnitt bei 692 Euro und damit 23 Euro höher als ein halbes Jahr zuvor.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen enthalten keine Daten zu Pendelwegen, Verkehrsmitteln oder Energieverbrauch. Ein negativer ökologischer Pfad kann nur unter der Bedingung zusätzlicher Wege modelliert werden.",
+          "reviewed_source_ids": [
+            "taz-aktuell",
+            "rbb24-nachrichten"
+          ],
+          "rationale": "Höhere Wohnkosten könnten Ausweichbewegungen und längere Wege begünstigen, doch die dafür notwendige Verhaltensänderung ist nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Ausweichende Wohnorte könnten zusätzliche Pendelwege erzeugen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn bezahlbare Zimmer in der Stadt fehlen, könnte eine Wohnverlagerung ins Umland den täglichen Weg verlängern und den Verkehrsenergiebedarf erhöhen.",
+              "recipients": [
+                "ausweichende Studierende",
+                "ausweichende Auszubildende",
+                "Verkehrssysteme im Umland"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein möglicher Zusatzpfad ist vorhanden, aber Umfang, Verkehrsmittel und Häufigkeit sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nur ein nicht bestimmter Teil der Betroffenen könnte ausweichen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Möglicher zusätzlicher Energiebedarf ist nicht quantifiziert.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Verlagerung ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Wohn- und Mobilitätsentscheidungen sind grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die ökologische Betroffenheit hängt von Verkehrsmittel und Weglänge ab.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf Mobilitätsentscheidungen begrenzt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Grenzverletzung oder Emissionsänderung ist nicht belegt.",
+                "reference_frame": "zusätzlicher Verkehrs- und Energiebedarf",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine Wohnverlagerung und überwiegend zusätzliche motorisierte Wege voraus.",
+              "reference_space": "Berlin, Hamburg, München und Köln mit Umland",
+              "time_horizon": "kommende Semester",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wohnkosten beeinflussen den Wohnort und die Ausweichwege werden nicht durch emissionsarme Verkehrsmittel kompensiert.",
+              "source_support": "Die Quellen belegen regionale Preisunterschiede, nicht deren ökologische Folgen.",
+              "limitations": "Keine Daten zu Pendeln, Verkehrsmitteln, Distanzen oder Emissionen.",
+              "first_order": "Ein möglicher Ausweichwohnort könnte die Wegstrecke verlängern.",
+              "second_order": "Der Energieverbrauch für Mobilität könnte steigen.",
+              "third_order": "Bei breiter Verlagerung könnte zusätzlicher Verkehrsdruck im Umland entstehen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellen weisen einen beobachteten Zusammenhang zwischen den WG-Preisen und zusätzlichem Verkehr oder Emissionen aus.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Umweltpfad ist nur als bedingte Nebenfolge modellierbar; ein vergleichbarer positiver Pfad ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ausweichende Wohnorte könnten zusätzliche Pendelwege erzeugen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Ausweichende Wohnorte könnten zusätzliche Pendelwege erzeugen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "very_low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen keine Veränderung politischer Beteiligung, institutioneller Entscheidungen oder Machtverhältnisse. Ein demokratischer Pfad bleibt deshalb offen und setzt eine anhaltende soziale Sortierung sowie politische Reaktionen voraus.",
+          "reviewed_source_ids": [
+            "taz-aktuell",
+            "rbb24-nachrichten"
+          ],
+          "rationale": "Wohnkosten können mittelbar beeinflussen, wer Zugang zu Hochschulstädten und dortigen sozialen Räumen hat; ein demokratischer Effekt ist aus den gelieferten Daten nicht direkt ableitbar.",
+          "primary_paths": [
+            {
+              "label": "Ungleicher Zugang zu Hochschulstädten könnte soziale und politische Teilhabe räumlich verschieben",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Wenn steigende Wohnkosten bestimmte Gruppen dauerhaft vom Wohnen am Studienort ausschließen, könnte sich deren Zugang zu lokalen Netzwerken und institutionellen Beteiligungsmöglichkeiten verändern.",
+              "recipients": [
+                "Studierende mit geringem Einkommen",
+                "Auszubildende",
+                "lokale Hochschul- und Stadtgesellschaften"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der indirekte Pfad ist denkbar, aber weder Ausschluss noch Teilhabeänderung sind gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft nur einen nicht bestimmten Teil der Wohnungssuchenden.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Veränderung politischer Teilhabe ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte soziale Sortierung ist nur als Bedingung angenommen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Wohn- und Beteiligungsbedingungen können sich grundsätzlich verändern.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft möglicherweise finanziell verletzlichere Gruppen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der demokratische Zusammenhang ist indirekt und institutionell nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete Verletzung eines demokratischen oder rechtlichen Schutzstandards belegt.",
+                "reference_frame": "gleichberechtigter Zugang zu gesellschaftlicher Teilhabe",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine dauerhafte räumliche Ausschließung bestimmter Gruppen und einen Zusammenhang zwischen Wohnort und politischer Beteiligung voraus.",
+              "reference_space": "Hochschulstädte und ihre soziale sowie institutionelle Öffentlichkeit",
+              "time_horizon": "mehrere Semester bis längerfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Lokale soziale und politische Teilhabe hängt teilweise vom dauerhaften Wohnen am Hochschulort ab.",
+              "source_support": "Die Quellen verbinden Wohnkosten mit der möglichen Finanzierbarkeit eines Studienorts, nicht mit politischer Beteiligung.",
+              "limitations": "Keine Daten zu Beteiligung, Repräsentation, Vereinsleben, Machtverhältnissen oder politischen Entscheidungen.",
+              "first_order": "Einige Menschen könnten seltener am sozialen Leben am Studienort teilnehmen.",
+              "second_order": "Die Zusammensetzung lokaler studentischer und zivilgesellschaftlicher Räume könnte sich verändern.",
+              "third_order": "Eine dauerhafte soziale Sortierung könnte politische Artikulation und institutionelle Repräsentation indirekt beeinflussen; dieser Pfad bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellen messen einen demokratischen oder institutionellen Effekt der WG-Preise.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Wohnkosten könnten politische Forderungen nach kommunalen Gegenmaßnahmen verstärken",
+              "direction": "open",
+              "type": "side_effect",
+              "mechanism": "Wenn die Preisentwicklung als untragbar wahrgenommen wird, könnte sie Debatten über Wohnheime oder kommunale Angebote anstoßen.",
+              "recipients": [
+                "Studierendenvertretungen",
+                "Kommunen",
+                "Hochschulöffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine politische Reaktion ist möglich, aber in den Quellen nicht dokumentiert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Debatten wären zunächst auf betroffene Standorte begrenzt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete Forderungen oder Entscheidungen sind nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Debatte ist unbekannt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Politische Debatten und Maßnahmen sind grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene mit geringem Budget könnten stärker auf politische Hilfe angewiesen sein.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad könnte Institutionen ansprechen, ist aber nicht eingetreten.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "rbb24-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es liegt keine belegte institutionelle Reaktion oder Schutzgrenze vor.",
+                "reference_frame": "politische Korrekturfähigkeit bei Wohn- und Bildungszugang",
+                "source_ids": [
+                  "taz-aktuell",
+                  "rbb24-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "taz-aktuell",
+                "rbb24-nachrichten"
+              ],
+              "condition": "Der Pfad setzt öffentliche Mobilisierung und anschließende institutionelle Reaktion voraus.",
+              "reference_space": "Kommunen und Hochschulstandorte mit steigenden WG-Angebotspreisen",
+              "time_horizon": "kommende politische und hochschulische Debatten",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisberichte werden von Organisationen oder Kommunen in konkrete Forderungen übersetzt.",
+              "source_support": "Die Quellen berichten Preiswerte und ein Institutszitat, aber keine politischen Forderungen oder Entscheidungen.",
+              "limitations": "Keine Daten zu Debatten, Beschlüssen, Budgets oder institutionellen Reaktionen.",
+              "first_order": "Die Preisentwicklung könnte öffentlich thematisiert werden.",
+              "second_order": "Akteure könnten mehr Wohnangebote oder Unterstützung fordern.",
+              "third_order": "Bei Umsetzung könnten institutionelle Zuständigkeiten und Prioritäten verändert werden; eine solche Umsetzung ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellen dokumentieren eine politische Reaktion auf die aktuelle Auswertung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Hauptpfad mit ausreichender Evidenz; die Einordnung bleibt offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ungleicher Zugang zu Hochschulstädten könnte soziale und politische Teilhabe räumlich verschieben",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ungleicher Zugang zu Hochschulstädten könnte soziale und politische Teilhabe räumlich verschieben",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T14:51:41.769Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T00:30:05.000Z",
+      "last_updated": "2026-09-19T14:53:16.765Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-eb626132f3e10f9c2ebd",
+      "case_file": null,
+      "source_published_at": "2026-09-19T00:30:05.000Z",
+      "published_at": "2026-09-19T14:53:16.765Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home",
+            "taz-aktuell"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "taz-aktuell"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "taz-aktuell"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Die Entwicklung der Angebotspreise an einzelnen Hochschulstandorten sollte mit weiteren Erhebungen überprüft werden.",
+          "source_id": "taz-aktuell",
+          "measurable_indicator": "Vergleichbare Angebotspreise für WG-Zimmer an Hochschulstandorten",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-997409db878b5eaf",
+          "announced_at": "2026-09-19T11:24:00.000Z",
+          "follow_up_date": "2026-09-26T14:53:16.765Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/wohnungsmarkt--jedes-zweite-wg-zimmer-in-berlin-kostet-mehr-als-650-euro-38275408.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T00:30:05.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-wohnungsmarkt-jedes-zweite-wg-zimmer-in-berlin-kostet-mehr-als-650-euro-16073289.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T00:31:22.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Studi-Mieten-in-Grossstaedten/!6214660",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T11:24:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-wg-zimmer-studium-miete-wohnungsmarkt.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T14:15:52.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7b25cee01b6074aa",
       "title_image": {
