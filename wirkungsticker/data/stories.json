@@ -2,8 +2,1270 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T21:54:08.968Z",
+  "updated_at": "2026-09-19T23:08:54.744Z",
   "stories": [
+    {
+      "story_id": "wt-cd2bd1ed77e15433",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-cd2bd1ed77e15433-c106077cac190f14-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-cd2bd1ed77e15433-da8cb957e7e2163f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-cd2bd1ed77e15433-50ff01644e3f5b0d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "peta-protest-us-modeverbandschef-steven-kolb-nach-angriff-auf-aktivisten-zuruckgetreten-e15433",
+      "title": "Laut DER SPIEGEL: US-Modeverbandschef Steven Kolb tritt nach Angriff auf Peta-Aktivisten zurück",
+      "source_summary": "DER SPIEGEL berichtet, Steven Kolb habe bei einer Veranstaltung in New York Aktivisten der Tierschutzorganisation Peta körperlich angegangen. In der Schilderung wird genannt, dass er einer Frau den Mund zugehalten und sie zu Boden gedrückt habe.\n\nDie Überschrift und der Vorspann verbinden den Vorfall mit Kolbs Ausscheiden aus seiner führenden Position in der Modebranche. Der Bericht stellt damit einen Zusammenhang zwischen dem Protestereignis und einer personellen Konsequenz her.\n\nIm vorliegenden Quellenbestand gibt es nur diese journalistische Darstellung. Eine Originalaufnahme, eine Stellungnahme der Beteiligten oder eine unabhängige Bestätigung des Vorwurfs liegt hier nicht vor; deshalb bleiben Ablauf, Einordnung und genaue Rücktrittsgründe offen.",
+      "summary": "DER SPIEGEL berichtet über einen körperlichen Angriff auf Peta-Aktivisten bei einer Show in New York und Kolbs anschließendes Ausscheiden aus einer führenden Position. Der Vorwurf und die Umstände des Rücktritts sind im vorliegenden Quellenbestand nur einfach belegt.",
+      "detail_summary": "DER SPIEGEL berichtet, Steven Kolb habe bei einer Show in New York eine Frau aus dem Umfeld der Tierschutzorganisation Peta körperlich angegangen. Der Vorspann nennt als konkrete Handlungen, dass er ihr den Mund zugehalten und sie zu Boden gedrückt habe. Zugleich wird berichtet, Kolb sei seinen führenden Posten in der Modebranche los. Der Sachverhalt ist damit als vorläufiger, einer Quelle zugeschriebener Bericht publizierbar. Eine Originalquelle, Stellungnahmen der Beteiligten und unabhängige Bestätigung fehlen jedoch. Das mögliche Wirkungspotenzial reicht von Rechenschaft in Verbänden bis zu einer Verschiebung der Debatte über Protest und Umgang mit Aktivisten, bleibt aber unbelegt.",
+      "why_relevant": "Der Bericht verbindet einen körperlichen Übergriff bei einem öffentlichen Protest mit dem Ausscheiden einer Führungsperson aus der Modebranche. Das ist für Rechenschaft und den Umgang mit Aktivisten relevant, die Tatsachenbasis bleibt jedoch begrenzt.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über einen körperlichen Angriff bei einem Peta-Protest und das anschließende Ausscheiden eines US-Modeverbandschefs",
+        "evaluation_target": {
+          "label": "Berichteter Vorfall und personelle Konsequenz im Modeverband",
+          "type": "event"
+        },
+        "baseline": "Vor dem berichteten Vorfall und ohne die öffentliche Verbindung zwischen Vorwurf und Ausscheiden",
+        "counterfactual": "Ohne öffentliche Berichterstattung könnte die personelle Konsequenz weniger sichtbar sein; die institutionelle Reaktion könnte dennoch unabhängig davon erfolgen.",
+        "reference_frame": [
+          "Rechenschaft und faire Verfahren",
+          "Schutz von Protestteilnehmenden",
+          "demokratische Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Folgen für die Sicherheit und Handlungsfähigkeit von Aktivisten sowie für die faire Behandlung der beschuldigten Person werden geprüft; konkrete Schäden sind nicht belegt.",
+            "planet": "Ein unmittelbarer ökologischer Wirkpfad ist aus dem Bericht nicht ersichtlich. Ein indirekter Bezug könnte nur über die öffentliche Aufmerksamkeit für Tierschutz entstehen und bleibt unsicher.",
+            "democracy": "Der Fall könnte Erwartungen an Rechenschaft, Protestfreiheit und institutionelle Korrektur beeinflussen. Eine unabhängige Bestätigung und transparente Verfahren fehlen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Meldung kann Aufmerksamkeit auf den Umgang mit Aktivisten und auf eine mögliche personelle Reaktion lenken.",
+          "second_order": "Bei Bestätigung könnte sie Erwartungen an Führungsverantwortung und Verbandsverfahren beeinflussen; bei fehlender Bestätigung könnte sie Vorverurteilungen verstärken.",
+          "third_order": "Wiederholte, ungeprüfte Einordnung könnte breitere Narrative über Protest und Verantwortlichkeit prägen; das ist nicht beobachtet.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Es gibt keine unabhängige Bestätigung im Quellenbestand.",
+            "Der Bericht belegt weder eine breitere Veränderung von Verbandsregeln noch eine messbare Wirkung auf Proteste.",
+            "Der ökologische Gegenstand des Peta-Protests wird nicht inhaltlich ausgeführt."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert; eine unabhängige Herkunft oder Primärquelle ist nicht nachgewiesen.",
+          "institutional_status": "Der genaue Verband, die rechtliche Bewertung des Vorfalls und der formale Status des Ausscheidens sind im Quellenbestand nicht geklärt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt den Vorfall, belegt aber weder konkrete eingetretene Schäden noch eine spätere Veränderung der Sicherheit von Aktivisten. Der Pfad bleibt daher eine bedingte Hypothese.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Der Bericht könnte bei Bestätigung Rechenschaft gegenüber Protestteilnehmenden stärken. Ebenso könnte eine nur einseitige Darstellung eine faire Behandlung der beschuldigten Person erschweren; Richtung und Eintritt sind offen.",
+            "primary_paths": [
+              {
+                "label": "Öffentliche Rechenschaft könnte den Schutz und die Handlungsfähigkeit von Protestteilnehmenden stärken",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine sichtbare personelle Konsequenz kann Erwartungen an den Umgang mit körperlichen Konflikten und an Führungsverantwortung beeinflussen.",
+                "recipients": [
+                  "Protestteilnehmende",
+                  "Aktivisten",
+                  "Verbandsmitglieder"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein einzelner, nur einfach belegter Vorfall begrenzt die Reichweite; bei institutioneller Bestätigung wäre eine kleine Wirkung plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Bericht erreicht potenziell ein öffentliches Publikum, belegt aber keine Reichweite.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die geschilderte körperliche Konfrontation ist konkret, ihre Wirkung bleibt ungemessen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine anhaltende Veränderung ist ohne Verbandsreaktion nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche Einordnung und Verfahren könnten korrigiert werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Protestteilnehmende können gegenüber körperlicher Konfrontation besonders schutzbedürftig sein.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Einzelfall erreicht keine belegte Systemebene.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist aus der Einzelquelle nicht rechtlich oder empirisch ableitbar.",
+                  "reference_frame": "Schutz vor körperlicher Gewalt bei öffentlichen Protesten",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Der Vorfall und die personelle Konsequenz müssten unabhängig bestätigt werden und zu transparenten institutionellen Verfahren führen.",
+                "reference_space": "Öffentliche Proteste und der betroffene Modeverband",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die personelle Konsequenz wird als Rechenschaftssignal wahrgenommen und nicht ausschließlich als individuelle Personalentscheidung.",
+                "source_support": "Die Quelle trägt den berichteten Vorfall und das Ausscheiden, nicht die daraus abgeleitete Wirkung.",
+                "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Betroffenenkreis, Verfahren oder späterem Verhalten.",
+                "first_order": "Mögliche Aufmerksamkeit für Schutz und Rechenschaft bei Protesten.",
+                "second_order": "Mögliche Erwartungen an interne Konsequenzen bei Führungspersonen.",
+                "third_order": "Mögliche, aber unbelegte Verschiebung von Normen im Umgang mit Aktivisten.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche Wirkungs- oder Primärquelle im gelieferten Bestand; Eintritt und Richtung bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein materieller Gegenpfad ist im Quellenbestand nicht vergleichbar belegt; dennoch bleibt die Richtung wegen der dünnen Evidenz offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Öffentliche Rechenschaft könnte den Schutz und die Handlungsfähigkeit von Protestteilnehmenden stärken",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Öffentliche Rechenschaft könnte den Schutz und die Handlungsfähigkeit von Protestteilnehmenden stärken",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt eine Tierschutzorganisation, belegt aber keine Veränderung von Tierwohl, Umweltzustand, Ressourcenverbrauch oder politischer Umweltwirkung. Ein ökologischer Pfad ist deshalb nur schwach modellierbar.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Der Bericht könnte Aufmerksamkeit auf eine Tierschutzorganisation lenken, enthält aber keine Information über deren Kampagne oder ökologische Folgen. Richtung und Eintritt sind offen und wahrscheinlich gering.",
+            "primary_paths": [
+              {
+                "label": "Die Berichterstattung könnte Aufmerksamkeit für Tierschutzthemen verändern",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Verbindung eines Protestes mit einer prominenten Personalentscheidung könnte die Sichtbarkeit des thematischen Anlasses erhöhen oder ihn durch den Konflikt überlagern.",
+                "recipients": [
+                  "Tierschutzorganisationen",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Die Quelle nennt den Tierschutzkontext, belegt aber keine thematische Anschlusswirkung oder ökologische Zustandsänderung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche öffentliche Sichtbarkeit ist nicht gemessen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Eine konkrete ökologische Intensität wird im Bericht nicht beschrieben.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte ökologische Folge ist nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung ist erkennbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Tierschutzinteressen werden erwähnt, konkrete gefährdete Systeme fehlen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Der Bericht belegt keine Veränderung ökologischer Systeme.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird im gelieferten Material konkret berührt.",
+                  "reference_frame": "Tierwohl und ökologische Zustände",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Eine thematische Anschlusswirkung müsste über weitere Berichterstattung oder konkrete politische beziehungsweise organisatorische Reaktionen eintreten.",
+                "reference_space": "Öffentliche Aufmerksamkeit für Tierschutz",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Erwähnung von Peta könnte den Tierschutzkontext sichtbar halten, ohne dass dies automatisch eine ökologische Folge erzeugt.",
+                "source_support": "Die Quelle belegt nur die Zugehörigkeit der Aktivisten zu Peta und den berichteten Konflikt.",
+                "limitations": "Keine Daten zu Kampagnenwirkung, Tierwohl, Umweltbelastung oder politischen Entscheidungen.",
+                "first_order": "Mögliche, aber unbelegte Veränderung der Aufmerksamkeit.",
+                "second_order": "Keine belastbare Ableitung zu Verhalten, Regulierung oder Ressourcenflüssen.",
+                "third_order": "Keine belastbare ökologische Systemwirkung ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand enthält keinen ökologischen Folgenbeleg; der Pfad bleibt eine schwache Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 2,
+                  "divisor": 6,
+                  "raw": 0.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren ökologischen Hauptpfad; die Quelle liefert weder positive noch negative ökologische Zustandsdaten."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Die Berichterstattung könnte Aufmerksamkeit für Tierschutzthemen verändern",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Die Berichterstattung könnte Aufmerksamkeit für Tierschutzthemen verändern",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine messbare Veränderung von Protestfreiheit, Vertrauen oder institutionellen Verfahren. Sie erlaubt nur eine bedingte Prüfung möglicher Rechenschafts- und Polarisierungseffekte.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Ein öffentlich berichteter Konflikt und eine mögliche personelle Konsequenz könnten institutionelle Rechenschaft sichtbar machen. Ohne unabhängige Bestätigung könnte dieselbe Meldung jedoch Vorverurteilung und Polarisierung fördern.",
+            "primary_paths": [
+              {
+                "label": "Eine bestätigte personelle Konsequenz könnte institutionelle Rechenschaft sichtbar machen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Verbindung zwischen berichteter Konfrontation und Ausscheiden kann Erwartungen an Verantwortlichkeit von Führungspersonen prägen.",
+                "recipients": [
+                  "Verbandsmitglieder",
+                  "Protestteilnehmende",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Wirkung bleibt auf einen Verband und dessen öffentliches Umfeld begrenzt; unabhängige Bestätigung fehlt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Bericht kann öffentliche Aufmerksamkeit erzeugen, Reichweite ist nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine personelle Konsequenz wäre ein sichtbares Signal, ihre Bedeutung bleibt offen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauerhafte institutionelle Änderungen werden nicht berichtet.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche Bewertungen und Verfahren bleiben grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Protestteilnehmende und Beschuldigte können durch öffentliche Vorfestlegung verletzlich sein.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische demokratische Veränderung ist nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist aus dem Einzelbericht nicht ableitbar.",
+                  "reference_frame": "Faire Verfahren und Korrekturfähigkeit öffentlicher Institutionen",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Die Wirkung setzt eine unabhängige Klärung des Vorfalls und transparente Rechenschaftsverfahren voraus.",
+                "reference_space": "Betroffener Modeverband und öffentliche Protestdebatte",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Öffentliche Personalentscheidungen werden als institutionelle Reaktion und nicht nur als individuelles Ereignis interpretiert.",
+                "source_support": "Die Quelle trägt den Bericht über Vorfall und Ausscheiden, nicht eine demokratische Wirkung.",
+                "limitations": "Keine Angaben zu Verfahren, Regeln, Stellungnahmen, Publikumsreaktionen oder institutionellen Folgeentscheidungen.",
+                "first_order": "Mögliche Sichtbarkeit von Rechenschaft.",
+                "second_order": "Mögliche Veränderung der Erwartungen an Führungsverantwortung und Protestumgang.",
+                "third_order": "Mögliche Normalisierung eines konfliktorientierten Framings, falls der Vorwurf ungeprüft wiederholt wird.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quelle zu institutionellen oder demokratischen Folgen vorhanden; Richtung und Eintritt bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Unbestätigte Berichterstattung könnte Vorverurteilung verstärken",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Die Personalisierung eines ungeklärten Vorwurfs kann faire öffentliche Bewertung erschweren.",
+                "recipients": [
+                  "Beschuldigte Person",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Das Risiko ist plausibel, aber weder Reichweite noch Wiederholung sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Öffentliche Reichweite ist möglich, aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein körperlicher Vorwurf kann stark wirken, bleibt hier aber einfach belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte Wirkung ist nicht dokumentiert.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Der öffentliche Eindruck kann durch neue Belege korrigiert werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die beschuldigte Person ist gegenüber öffentlicher Vorverurteilung potenziell verletzlich.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische Veränderung der öffentlichen Debatte ist nicht belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist möglich, aber im Material nicht konkret beobachtet.",
+                  "reference_frame": "Faire öffentliche Bewertung vor unabhängiger Klärung",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Das Risiko würde durch wiederholte oder nicht ausreichend attribuierte Berichterstattung steigen.",
+                "reference_space": "Öffentliche Debatte über den Vorfall",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Leserinnen und Leser können einen zugeschriebenen Vorwurf als abschließende Tatsachenfeststellung wahrnehmen.",
+                "source_support": "Die Quelle liefert einen zugeschriebenen journalistischen Bericht, aber keine unabhängige Bestätigung.",
+                "limitations": "Keine Daten zur Rezeption, Wiederholung oder tatsächlichen Vertrauenswirkung.",
+                "first_order": "Mögliche Vorfestlegung der Bewertung.",
+                "second_order": "Mögliche Polarisierung der Debatte über Protest und Verantwortlichkeit.",
+                "third_order": "Keine belastbare Aussage über dauerhafte demokratische Folgen möglich.",
+                "research_pass": "second_pass",
+                "research_result": "Es liegen keine Rezeptions- oder Diskursdaten vor; das Risiko bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt einen positiven Rechenschaftspfad und einen negativen Vorverurteilungspfad; beide sind schwach belegt und nicht zu einer Gesamtnote zu verrechnen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine bestätigte personelle Konsequenz könnte institutionelle Rechenschaft sichtbar machen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine bestätigte personelle Konsequenz könnte institutionelle Rechenschaft sichtbar machen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T23:11:20.888Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Journalistischer Bericht über den geschilderten Vorfall und das Ausscheiden aus einer führenden Position."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt den Vorfall, belegt aber weder konkrete eingetretene Schäden noch eine spätere Veränderung der Sicherheit von Aktivisten. Der Pfad bleibt daher eine bedingte Hypothese.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Der Bericht könnte bei Bestätigung Rechenschaft gegenüber Protestteilnehmenden stärken. Ebenso könnte eine nur einseitige Darstellung eine faire Behandlung der beschuldigten Person erschweren; Richtung und Eintritt sind offen.",
+          "primary_paths": [
+            {
+              "label": "Öffentliche Rechenschaft könnte den Schutz und die Handlungsfähigkeit von Protestteilnehmenden stärken",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine sichtbare personelle Konsequenz kann Erwartungen an den Umgang mit körperlichen Konflikten und an Führungsverantwortung beeinflussen.",
+              "recipients": [
+                "Protestteilnehmende",
+                "Aktivisten",
+                "Verbandsmitglieder"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein einzelner, nur einfach belegter Vorfall begrenzt die Reichweite; bei institutioneller Bestätigung wäre eine kleine Wirkung plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Bericht erreicht potenziell ein öffentliches Publikum, belegt aber keine Reichweite.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die geschilderte körperliche Konfrontation ist konkret, ihre Wirkung bleibt ungemessen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine anhaltende Veränderung ist ohne Verbandsreaktion nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche Einordnung und Verfahren könnten korrigiert werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Protestteilnehmende können gegenüber körperlicher Konfrontation besonders schutzbedürftig sein.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Einzelfall erreicht keine belegte Systemebene.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist aus der Einzelquelle nicht rechtlich oder empirisch ableitbar.",
+                "reference_frame": "Schutz vor körperlicher Gewalt bei öffentlichen Protesten",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Der Vorfall und die personelle Konsequenz müssten unabhängig bestätigt werden und zu transparenten institutionellen Verfahren führen.",
+              "reference_space": "Öffentliche Proteste und der betroffene Modeverband",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die personelle Konsequenz wird als Rechenschaftssignal wahrgenommen und nicht ausschließlich als individuelle Personalentscheidung.",
+              "source_support": "Die Quelle trägt den berichteten Vorfall und das Ausscheiden, nicht die daraus abgeleitete Wirkung.",
+              "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Betroffenenkreis, Verfahren oder späterem Verhalten.",
+              "first_order": "Mögliche Aufmerksamkeit für Schutz und Rechenschaft bei Protesten.",
+              "second_order": "Mögliche Erwartungen an interne Konsequenzen bei Führungspersonen.",
+              "third_order": "Mögliche, aber unbelegte Verschiebung von Normen im Umgang mit Aktivisten.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche Wirkungs- oder Primärquelle im gelieferten Bestand; Eintritt und Richtung bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein materieller Gegenpfad ist im Quellenbestand nicht vergleichbar belegt; dennoch bleibt die Richtung wegen der dünnen Evidenz offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Öffentliche Rechenschaft könnte den Schutz und die Handlungsfähigkeit von Protestteilnehmenden stärken",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Öffentliche Rechenschaft könnte den Schutz und die Handlungsfähigkeit von Protestteilnehmenden stärken",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt eine Tierschutzorganisation, belegt aber keine Veränderung von Tierwohl, Umweltzustand, Ressourcenverbrauch oder politischer Umweltwirkung. Ein ökologischer Pfad ist deshalb nur schwach modellierbar.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Der Bericht könnte Aufmerksamkeit auf eine Tierschutzorganisation lenken, enthält aber keine Information über deren Kampagne oder ökologische Folgen. Richtung und Eintritt sind offen und wahrscheinlich gering.",
+          "primary_paths": [
+            {
+              "label": "Die Berichterstattung könnte Aufmerksamkeit für Tierschutzthemen verändern",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Verbindung eines Protestes mit einer prominenten Personalentscheidung könnte die Sichtbarkeit des thematischen Anlasses erhöhen oder ihn durch den Konflikt überlagern.",
+              "recipients": [
+                "Tierschutzorganisationen",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Die Quelle nennt den Tierschutzkontext, belegt aber keine thematische Anschlusswirkung oder ökologische Zustandsänderung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche öffentliche Sichtbarkeit ist nicht gemessen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Eine konkrete ökologische Intensität wird im Bericht nicht beschrieben.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte ökologische Folge ist nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung ist erkennbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Tierschutzinteressen werden erwähnt, konkrete gefährdete Systeme fehlen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Der Bericht belegt keine Veränderung ökologischer Systeme.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird im gelieferten Material konkret berührt.",
+                "reference_frame": "Tierwohl und ökologische Zustände",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Eine thematische Anschlusswirkung müsste über weitere Berichterstattung oder konkrete politische beziehungsweise organisatorische Reaktionen eintreten.",
+              "reference_space": "Öffentliche Aufmerksamkeit für Tierschutz",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Erwähnung von Peta könnte den Tierschutzkontext sichtbar halten, ohne dass dies automatisch eine ökologische Folge erzeugt.",
+              "source_support": "Die Quelle belegt nur die Zugehörigkeit der Aktivisten zu Peta und den berichteten Konflikt.",
+              "limitations": "Keine Daten zu Kampagnenwirkung, Tierwohl, Umweltbelastung oder politischen Entscheidungen.",
+              "first_order": "Mögliche, aber unbelegte Veränderung der Aufmerksamkeit.",
+              "second_order": "Keine belastbare Ableitung zu Verhalten, Regulierung oder Ressourcenflüssen.",
+              "third_order": "Keine belastbare ökologische Systemwirkung ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand enthält keinen ökologischen Folgenbeleg; der Pfad bleibt eine schwache Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 2,
+                "divisor": 6,
+                "raw": 0.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren ökologischen Hauptpfad; die Quelle liefert weder positive noch negative ökologische Zustandsdaten."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Die Berichterstattung könnte Aufmerksamkeit für Tierschutzthemen verändern",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Die Berichterstattung könnte Aufmerksamkeit für Tierschutzthemen verändern",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine messbare Veränderung von Protestfreiheit, Vertrauen oder institutionellen Verfahren. Sie erlaubt nur eine bedingte Prüfung möglicher Rechenschafts- und Polarisierungseffekte.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Ein öffentlich berichteter Konflikt und eine mögliche personelle Konsequenz könnten institutionelle Rechenschaft sichtbar machen. Ohne unabhängige Bestätigung könnte dieselbe Meldung jedoch Vorverurteilung und Polarisierung fördern.",
+          "primary_paths": [
+            {
+              "label": "Eine bestätigte personelle Konsequenz könnte institutionelle Rechenschaft sichtbar machen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Verbindung zwischen berichteter Konfrontation und Ausscheiden kann Erwartungen an Verantwortlichkeit von Führungspersonen prägen.",
+              "recipients": [
+                "Verbandsmitglieder",
+                "Protestteilnehmende",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Wirkung bleibt auf einen Verband und dessen öffentliches Umfeld begrenzt; unabhängige Bestätigung fehlt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Bericht kann öffentliche Aufmerksamkeit erzeugen, Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine personelle Konsequenz wäre ein sichtbares Signal, ihre Bedeutung bleibt offen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauerhafte institutionelle Änderungen werden nicht berichtet.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche Bewertungen und Verfahren bleiben grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Protestteilnehmende und Beschuldigte können durch öffentliche Vorfestlegung verletzlich sein.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische demokratische Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist aus dem Einzelbericht nicht ableitbar.",
+                "reference_frame": "Faire Verfahren und Korrekturfähigkeit öffentlicher Institutionen",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Die Wirkung setzt eine unabhängige Klärung des Vorfalls und transparente Rechenschaftsverfahren voraus.",
+              "reference_space": "Betroffener Modeverband und öffentliche Protestdebatte",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Öffentliche Personalentscheidungen werden als institutionelle Reaktion und nicht nur als individuelles Ereignis interpretiert.",
+              "source_support": "Die Quelle trägt den Bericht über Vorfall und Ausscheiden, nicht eine demokratische Wirkung.",
+              "limitations": "Keine Angaben zu Verfahren, Regeln, Stellungnahmen, Publikumsreaktionen oder institutionellen Folgeentscheidungen.",
+              "first_order": "Mögliche Sichtbarkeit von Rechenschaft.",
+              "second_order": "Mögliche Veränderung der Erwartungen an Führungsverantwortung und Protestumgang.",
+              "third_order": "Mögliche Normalisierung eines konfliktorientierten Framings, falls der Vorwurf ungeprüft wiederholt wird.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quelle zu institutionellen oder demokratischen Folgen vorhanden; Richtung und Eintritt bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Unbestätigte Berichterstattung könnte Vorverurteilung verstärken",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Die Personalisierung eines ungeklärten Vorwurfs kann faire öffentliche Bewertung erschweren.",
+              "recipients": [
+                "Beschuldigte Person",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Das Risiko ist plausibel, aber weder Reichweite noch Wiederholung sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Öffentliche Reichweite ist möglich, aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein körperlicher Vorwurf kann stark wirken, bleibt hier aber einfach belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte Wirkung ist nicht dokumentiert.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Der öffentliche Eindruck kann durch neue Belege korrigiert werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die beschuldigte Person ist gegenüber öffentlicher Vorverurteilung potenziell verletzlich.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische Veränderung der öffentlichen Debatte ist nicht belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist möglich, aber im Material nicht konkret beobachtet.",
+                "reference_frame": "Faire öffentliche Bewertung vor unabhängiger Klärung",
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Das Risiko würde durch wiederholte oder nicht ausreichend attribuierte Berichterstattung steigen.",
+              "reference_space": "Öffentliche Debatte über den Vorfall",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Leserinnen und Leser können einen zugeschriebenen Vorwurf als abschließende Tatsachenfeststellung wahrnehmen.",
+              "source_support": "Die Quelle liefert einen zugeschriebenen journalistischen Bericht, aber keine unabhängige Bestätigung.",
+              "limitations": "Keine Daten zur Rezeption, Wiederholung oder tatsächlichen Vertrauenswirkung.",
+              "first_order": "Mögliche Vorfestlegung der Bewertung.",
+              "second_order": "Mögliche Polarisierung der Debatte über Protest und Verantwortlichkeit.",
+              "third_order": "Keine belastbare Aussage über dauerhafte demokratische Folgen möglich.",
+              "research_pass": "second_pass",
+              "research_result": "Es liegen keine Rezeptions- oder Diskursdaten vor; das Risiko bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt einen positiven Rechenschaftspfad und einen negativen Vorverurteilungspfad; beide sind schwach belegt und nicht zu einer Gesamtnote zu verrechnen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine bestätigte personelle Konsequenz könnte institutionelle Rechenschaft sichtbar machen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine bestätigte personelle Konsequenz könnte institutionelle Rechenschaft sichtbar machen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T23:08:54.744Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T22:02:00.000Z",
+      "last_updated": "2026-09-19T23:11:20.884Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e37070eb89133fa884ef",
+      "case_file": null,
+      "source_published_at": "2026-09-19T22:02:00.000Z",
+      "published_at": "2026-09-19T23:11:20.884Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der geschilderte körperliche Angriff und die Umstände des Rücktritts sollten anhand einer Originalquelle oder einer unabhängigen Recherche geprüft werden.",
+          "source_id": "spiegel-schlagzeilen",
+          "measurable_indicator": "Vorliegen einer unabhängigen Bestätigung, einer Stellungnahme oder eines Originalbelegs",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-926cf7294fb84d7d",
+          "announced_at": "2026-09-19T22:02:00.000Z",
+          "follow_up_date": "2026-09-26T23:11:20.884Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/panorama/gesellschaft/peta-protest-us-modeverbandschef-steven-kolb-nach-angriff-auf-aktivisten-zurueckgetreten-a-08d3b14e-aa6f-4427-bd00-faa97d50e424",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T22:02:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2c26fdcea60c52bd",
       "title_image": {
