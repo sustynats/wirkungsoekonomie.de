@@ -2,8 +2,1504 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T05:24:23.376Z",
+  "updated_at": "2026-09-19T06:09:31.627Z",
   "stories": [
+    {
+      "story_id": "wt-c256eb221825bed0",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-c256eb221825bed0-91ad3224ebf68451-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-c256eb221825bed0-faaea1e357cf0b18-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-c256eb221825bed0-a2cf0a7852a4acc9-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "washington-us-prasident-trump-verbannt-mehrere-medien-aus-dem-weissen-haus-25bed0",
+      "title": "Laut Deutschlandfunk: Trump untersagt CNN, MS NOW und Politico den Zugang zum Weißen Haus",
+      "source_summary": "Der Deutschlandfunk berichtet, US-Präsident Trump habe CNN, MS NOW und Politico den Zutritt zum Weißen Haus untersagt. MS NOW hieß zuvor MSNBC. Nach dem Bericht erklärte Trump auf seiner Onlineplattform, das Hausverbot gelte sofort.\n\nTrump wirft den genannten Medien vor, Falschinformationen zu verbreiten, und stellte weitere Hausverbote in Aussicht. CNN bezeichnete die Maßnahme als rechtswidrigen Angriff auf die Pressefreiheit; Politico kündigte rechtliche Gegenwehr an.\n\nDer Bericht ordnet den Vorgang in frühere Auseinandersetzungen Trumps mit Medien ein. Eine unabhängige Bestätigung, die konkrete Umsetzung und der Umfang möglicher weiterer Verbote sind in der vorliegenden Quelle nicht belegt.",
+      "summary": "Trump soll mehreren Medien den Zugang zum Weißen Haus untersagt haben. Die Folgen für Berichterstattung und institutionelle Kontrolle sind möglich, aber noch nicht unabhängig bestätigt.",
+      "detail_summary": "Der Deutschlandfunk berichtet, dass Trump CNN, MS NOW und Politico den Zugang zum Weißen Haus verweigert. Trump begründet den Schritt laut Bericht mit dem Vorwurf, die Medien verbreiteten Falschinformationen, und kündigt mögliche weitere Verbote an. CNN spricht von einem Angriff auf die Pressefreiheit, während Politico seine Rechte verteidigen will. Relevant ist der Vorgang, weil der Zugang zu Regierungsinformationen und die Arbeitsbedingungen politischer Berichterstattung betroffen sein könnten. Ob und wie vollständig das Verbot umgesetzt wird, welche Rechtsgrundlage gilt und ob weitere Medien folgen, bleibt offen.",
+      "why_relevant": "Der Zugang zu Regierungsinformationen kann die Vielfalt journalistischer Kontrolle und damit demokratische Rechenschaft berühren.",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "status": "in Kraft",
+      "analysis_type": "ongoing",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über den sofortigen Ausschluss mehrerer Medien vom Zugang zum Weißen Haus",
+        "evaluation_target": {
+          "label": "Zugang von Medien zu Regierungsinformationen",
+          "type": "decision"
+        },
+        "baseline": "Vor dem berichteten Hausverbot bestand für die genannten Medien nach der Quellenlage ein Zugang zu Veranstaltungen oder Räumen des Weißen Hauses.",
+        "counterfactual": "Ohne das berichtete Verbot könnten die genannten Medien ihren bisherigen Zugang nutzen; Umfang und tatsächliche Zugangsregeln sind nicht vollständig belegt.",
+        "reference_frame": [
+          "Pressefreiheit",
+          "demokratische Rechenschaft",
+          "Zugang zu staatlicher Information"
+        ],
+        "temporal_status": "ongoing",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Maßnahme könnte Arbeitsbedingungen, Informationszugang und Vertrauen betroffener Journalistinnen und Journalisten beeinflussen; konkrete individuelle Schäden sind nicht belegt.",
+            "planet": "Für ökologische Zustände ist kein plausibler materieller Wirkpfad aus dem berichteten Zugangskonflikt ersichtlich; Kommunikationsfolgen bleiben davon getrennt.",
+            "democracy": "Ein eingeschränkter Zugang zu Regierungsinformationen könnte journalistische Kontrolle und pluralistische Rechenschaft schwächen; Gegenwehr und alternative Zugänge könnten dies begrenzen."
+          },
+          "central_dimensions": [
+            "democracy",
+            "human"
+          ],
+          "first_order": "Der berichtete Zugangsausschluss könnte die Informationsbeschaffung mehrerer Medien unmittelbar erschweren.",
+          "second_order": "Bei längerer oder ausgeweiteter Anwendung könnte sich die Auswahl regierungsnaher Informationskanäle verschieben; Umfang und Eintritt sind offen.",
+          "third_order": "Eine dauerhafte Praxis könnte institutionelle Normen des Regierungszugangs und die Korrekturfähigkeit durch Medien verändern; hierfür gibt es noch keinen Wirkungsnachweis.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "CNN und Politico kündigen Gegenwehr an.",
+            "Alternative Recherchewege könnten den Informationsverlust begrenzen.",
+            "Die konkrete Umsetzung des Verbots ist nicht unabhängig bestätigt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle mit nicht verifizierter unabhängiger Herkunft vor; die Akteursäußerungen sind innerhalb dieses Berichts zugeschrieben.",
+          "institutional_status": "Laut Quelle soll das Hausverbot umgehend gelten; Rechtsgrundlage, gerichtlicher Status und praktische Umsetzung sind offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ongoing",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den berichteten Zugangskonflikt, aber keine messbare Veränderung der Arbeitsbedingungen oder des Wohlergehens von Menschen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Der mögliche menschliche Pfad betrifft zunächst journalistische Arbeitsbedingungen und den Zugang zu Informationen. Er ist plausibel, aber weder in Reichweite noch Dauer gemessen.",
+            "primary_paths": [
+              {
+                "label": "Erschwerter Zugang verändert journalistische Arbeitsbedingungen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein Ausschluss vom Regierungsstandort könnte direkte Recherche- und Zugangsmöglichkeiten betroffener Medien begrenzen.",
+                "recipients": [
+                  "Journalistinnen und Journalisten",
+                  "betroffene Redaktionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Zahl der betroffenen Medien ist berichtet, die tatsächliche Intensität und Dauer bleiben offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere genannte Medien könnten unmittelbar betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der direkte Zugang könnte entfallen, konkrete Einschränkungen sind unklar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des berichteten Verbots ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugangssperren könnten politisch oder rechtlich aufgehoben werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Redaktionen könnten auf direkte Regierungszugänge angewiesen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht über Arbeitsabläufe hinaus in Informationsbeziehungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung individueller Schutzrechte ist nicht belegt; betroffen sein könnte zunächst der berufliche Informationszugang.",
+                  "reference_frame": "Arbeits- und Informationszugang",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Ausschluss müsste praktisch umgesetzt werden und länger oder wiederholt bestehen.",
+                "reference_space": "Betroffene Medien und ihre journalistische Arbeit im Umfeld des Weißen Hauses",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Direkter Zugang erleichtert Recherche; alternative Quellen können den Verlust teilweise ersetzen.",
+                "source_support": "Die Quelle berichtet den Ausschluss und die Reaktionen, nicht dessen Folgen.",
+                "limitations": "Keine Messung von Arbeitsbedingungen, Reichweite oder individuellem Schaden.",
+                "first_order": "Möglicherweise weniger direkter Zugang zu Regierungsinformationen.",
+                "second_order": "Möglicherweise höherer Rechercheaufwand und stärkere Abhängigkeit von indirekten Quellen.",
+                "third_order": "Bei Ausweitung könnte sich die berufliche Informationsumgebung dauerhaft polarisieren; Eintritt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten messen die tatsächliche Belastung oder einen Wohlfahrtseffekt.",
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": "Der Bericht beschreibt einen angekündigten beziehungsweise sofort geltenden Zugangsentzug; eine unabhängige Folgenmessung liegt nicht vor.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Alternative Zugänge begrenzen den möglichen Informationsverlust",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Andere Quellen und rechtliche Gegenwehr könnten den Zugang zu Informationen teilweise erhalten.",
+                "recipients": [
+                  "betroffene Redaktionen",
+                  "Publikum"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Alternative Wege sind plausibel, aber im Material nicht konkret nachgewiesen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Alternative Quellen könnten mehrere Redaktionen erreichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Ausgleich wäre voraussichtlich begrenzt und indirekt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer von Gegenwehr und Ersatzwegen ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Informationswege könnten grundsätzlich wieder geöffnet werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Redaktionen mit Ressourcen könnten leichter ausweichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Gegenpfad betrifft vor allem Arbeitsorganisation und Zugang.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Gegenpfad schützt keinen konkret belegten Grenzbereich, sondern kann eine mögliche Einschränkung abmildern.",
+                  "reference_frame": "Zugang zu Informationen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Andere Informationsquellen oder erfolgreiche Gegenwehr müssten verfügbar sein.",
+                "reference_space": "Journalistische Berichterstattung über die US-Regierung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Journalistische Redaktionen können zumindest teilweise auf andere Zugänge ausweichen.",
+                "source_support": "Die Quelle belegt angekündigte Gegenwehr, nicht ihre Wirkung.",
+                "limitations": "Kein Nachweis über Reichweite oder Erfolg alternativer Wege.",
+                "first_order": "Mögliche Fortsetzung der Recherche trotz Zugangssperre.",
+                "second_order": "Mögliche Verlagerung auf indirekte Informationskanäle.",
+                "third_order": "Institutionelle Gegenwehr könnte eine dauerhafte Zugangssperre begrenzen; offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle nennt Gegenwehr, liefert aber keine Daten zu ihrer Wirksamkeit.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein negativer direkter Pfad steht einem kleineren, unsicheren Gegenpfad durch alternative Zugänge und Gegenwehr gegenüber."
+            },
+            "potential_presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 2,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Erschwerter Zugang verändert journalistische Arbeitsbedingungen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Erschwerter Zugang verändert journalistische Arbeitsbedingungen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Laufende Prüfung",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Quellen enthalten keinen plausiblen materiellen Umweltmechanismus und keine ökologischen Zustandsdaten.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Der berichtete Medienzugangskonflikt betrifft nach der vorliegenden Quellenlage Informations- und Institutionsbeziehungen, nicht direkt ökologische Zustände.",
+            "primary_paths": [
+              {
+                "label": "Kein materieller Umweltpfad aus dem berichteten Zugangskonflikt",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Die Maßnahme verändert nach der Quelle den Zugang von Medien, ohne einen belegten Eingriff in Ressourcen, Emissionen oder Ökosysteme.",
+                "recipients": [
+                  "keine materiell betroffene Umweltkomponente"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den abgegrenzten Nachrichtenanlass ist kein materieller Umweltpfad erkennbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Empfängerkreis ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist erkennbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Eingriff wird berichtet.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzliche Umweltkomponente ist betroffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systempfad ist aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch den berichteten Vorgang berührt.",
+                  "reference_frame": "ökologische Zustände",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Ein Umweltpfad wäre nur bei zusätzlichen, nicht gelieferten Handlungen oder Entscheidungen denkbar.",
+                "reference_space": "Ökologische Zustände im Zusammenhang mit dem berichteten Medienzugangskonflikt",
+                "time_horizon": "offen",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der Quellenbestand beschreibt ausschließlich Medienzugang, Aussagen und Reaktionen.",
+                "source_support": "Die Quelle enthält keine ökologischen Befunde.",
+                "limitations": "Keine Umweltmessungen oder Angaben zu materiellen Folgeentscheidungen.",
+                "first_order": "Keine begründete ökologische Zustandsänderung.",
+                "second_order": "Keine begründete ökologische Folge aus dem vorliegenden Ereigniskern.",
+                "third_order": "Keine begründete ökologische Systemwirkung; zusätzliche Informationen könnten die Bewertung ändern.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen Umweltmechanismus; externe Quellen dürfen hier nicht ergänzt werden.",
+                "negligibility_rationale": "Im abgegrenzten Ereignis und Zeitraum ist keine materiell relevante ökologische Veränderung aus den gelieferten Informationen ableitbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt im Quellenbestand keinen vergleichbaren positiven oder negativen Umweltpfad; die ökologische Wirkung ist begründet vernachlässigbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Kein materieller Umweltpfad aus dem berichteten Zugangskonflikt",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller Umweltpfad aus dem berichteten Zugangskonflikt",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ongoing",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt einen berichteten Zugangsausschluss und zugeschriebene Reaktionen, aber keinen eingetretenen Verlust demokratischer Kontrolle.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Der zentrale demokratische Pfad betrifft die mögliche Verengung journalistischer Kontrolle über Regierungshandeln. Die Richtung ist plausibel, die Reichweite und Dauer sind offen.",
+            "primary_paths": [
+              {
+                "label": "Zugangssperre könnte journalistische Kontrolle über Regierungshandeln verengen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn Medien vom Zugang zu Regierungsinformationen ausgeschlossen werden, könnten Informationen selektiver und indirekter verfügbar sein.",
+                "recipients": [
+                  "Medien",
+                  "Publikum",
+                  "demokratische Institutionen"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der institutionelle Gegenstand ist potenziell weitreichend, konkrete Dauer und Anwendung bleiben aber unklar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mehrere Medien und ihr Publikum könnten mittelbar betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ein unmittelbarer Zugangsentzug kann die Informationsbeschaffung deutlich erschweren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des Verbots ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Wiederholte Zugangssperren könnten Normen prägen, wären aber korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Öffentliche Kontrolle ist auf verlässliche und vielfältige Informationen angewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad kann Informations-, Rechenschafts- und Vertrauensstrukturen verbinden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Ein dauerhafter oder ausgeweiteter Ausschluss könnte den Zugang zu staatlicher Information als demokratische Kontrollbedingung erheblich berühren.",
+                  "reference_frame": "Pressefreiheit und demokratische Rechenschaft",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Sperre müsste umgesetzt, aufrechterhalten oder auf weitere Medien ausgeweitet werden.",
+                "reference_space": "US-Regierungsberichterstattung und öffentliche Kontrolle",
+                "time_horizon": "kurz- bis mittelfristig, bei Wiederholung längerfristig",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Direkter Zugang trägt zur Vielfalt und Prüfung von Regierungsinformationen bei.",
+                "source_support": "Die Quelle belegt den berichteten Zugangsentzug und die Reaktionen, nicht eine bereits eingetretene demokratische Verschlechterung.",
+                "limitations": "Keine unabhängige Bestätigung, keine Daten zu Berichterstattung, Publikum oder institutionellen Folgen.",
+                "first_order": "Möglicherweise weniger direkter Zugang zu Regierungsinformationen.",
+                "second_order": "Mögliche stärkere Abhängigkeit von ausgewählten oder indirekten Informationskanälen.",
+                "third_order": "Bei Normalisierung könnte sich die demokratische Korrekturfähigkeit durch Medien abschwächen; dies ist eine bedingte Möglichkeit.",
+                "research_pass": "second_pass",
+                "research_result": "Die vorliegenden Quellen erlauben keine Messung tatsächlicher Veränderungen von Pluralismus, Vertrauen oder Rechenschaft.",
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": "Die Quelle berichtet den sofortigen Entzug des Zugangs und angekündigte Gegenwehr; eine Veränderung demokratischer Kontrolle ist nicht beobachtet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Rechtliche und institutionelle Gegenwehr könnte den Zugang schützen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Angekündigte rechtliche Schritte und alternative institutionelle Kontrollen könnten die Zugangssperre begrenzen oder korrigieren.",
+                "recipients": [
+                  "betroffene Medien",
+                  "Gerichte",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Gegenwehr ist berichtet, ihr Erfolg und ihre Reichweite sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die angekündigte Gegenwehr betrifft zunächst einzelne betroffene Medien.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Erfolgreiche Gegenwehr könnte den Zugang praktisch oder rechtlich begrenzen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine institutionelle Korrektur könnte über den Einzelfall hinaus wirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Korrekturen wären möglich, aber nicht dauerhaft gesichert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Unabhängige Medien und Gerichte können gegenüber Zugangsdruck unterschiedlich widerstandsfähig sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Gegenpfad kann Zugangsregeln und institutionelle Kontrolle berühren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Erfolgreiche Gegenwehr könnte eine mögliche Beeinträchtigung von Pressefreiheit und Rechenschaft begrenzen.",
+                  "reference_frame": "Pressefreiheit und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Rechtliche oder institutionelle Gegenwehr müsste tatsächlich eingeleitet und wirksam werden.",
+                "reference_space": "Zugang betroffener Medien zu US-Regierungsinformationen",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die angekündigte Verteidigung von Rechten kann institutionelle Korrektur auslösen.",
+                "source_support": "Die Quelle berichtet die Ankündigung von Gegenwehr, nicht deren Erfolg.",
+                "limitations": "Keine Angaben zu Verfahren, Zuständigkeit oder Ergebnis.",
+                "first_order": "Mögliche Anfechtung der Zugangssperre.",
+                "second_order": "Mögliche Klärung von Zugangs- und Pressefreiheitsstandards.",
+                "third_order": "Eine erfolgreiche Korrektur könnte die demokratische Widerstandsfähigkeit stärken; Eintritt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle nennt Gegenwehr, enthält aber keine belastbare Information zu rechtlichem Status oder Erfolg.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Der negative Hauptpfad betrifft eine mögliche Schutzgrenze demokratischer Informationskontrolle; der positive Gegenpfad ist möglich, aber weder umgesetzt noch belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Zugangssperre könnte journalistische Kontrolle über Regierungshandeln verengen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Zugangssperre könnte journalistische Kontrolle über Regierungshandeln verengen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Laufende Prüfung",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T06:12:33.040Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Bericht über den Zugangsausschluss, die zugeschriebenen Begründungen und die Reaktionen von CNN und Politico."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ongoing",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den berichteten Zugangskonflikt, aber keine messbare Veränderung der Arbeitsbedingungen oder des Wohlergehens von Menschen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Der mögliche menschliche Pfad betrifft zunächst journalistische Arbeitsbedingungen und den Zugang zu Informationen. Er ist plausibel, aber weder in Reichweite noch Dauer gemessen.",
+          "primary_paths": [
+            {
+              "label": "Erschwerter Zugang verändert journalistische Arbeitsbedingungen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein Ausschluss vom Regierungsstandort könnte direkte Recherche- und Zugangsmöglichkeiten betroffener Medien begrenzen.",
+              "recipients": [
+                "Journalistinnen und Journalisten",
+                "betroffene Redaktionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Zahl der betroffenen Medien ist berichtet, die tatsächliche Intensität und Dauer bleiben offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere genannte Medien könnten unmittelbar betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der direkte Zugang könnte entfallen, konkrete Einschränkungen sind unklar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des berichteten Verbots ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugangssperren könnten politisch oder rechtlich aufgehoben werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Redaktionen könnten auf direkte Regierungszugänge angewiesen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht über Arbeitsabläufe hinaus in Informationsbeziehungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung individueller Schutzrechte ist nicht belegt; betroffen sein könnte zunächst der berufliche Informationszugang.",
+                "reference_frame": "Arbeits- und Informationszugang",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Ausschluss müsste praktisch umgesetzt werden und länger oder wiederholt bestehen.",
+              "reference_space": "Betroffene Medien und ihre journalistische Arbeit im Umfeld des Weißen Hauses",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Direkter Zugang erleichtert Recherche; alternative Quellen können den Verlust teilweise ersetzen.",
+              "source_support": "Die Quelle berichtet den Ausschluss und die Reaktionen, nicht dessen Folgen.",
+              "limitations": "Keine Messung von Arbeitsbedingungen, Reichweite oder individuellem Schaden.",
+              "first_order": "Möglicherweise weniger direkter Zugang zu Regierungsinformationen.",
+              "second_order": "Möglicherweise höherer Rechercheaufwand und stärkere Abhängigkeit von indirekten Quellen.",
+              "third_order": "Bei Ausweitung könnte sich die berufliche Informationsumgebung dauerhaft polarisieren; Eintritt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten messen die tatsächliche Belastung oder einen Wohlfahrtseffekt.",
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": "Der Bericht beschreibt einen angekündigten beziehungsweise sofort geltenden Zugangsentzug; eine unabhängige Folgenmessung liegt nicht vor.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Alternative Zugänge begrenzen den möglichen Informationsverlust",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Andere Quellen und rechtliche Gegenwehr könnten den Zugang zu Informationen teilweise erhalten.",
+              "recipients": [
+                "betroffene Redaktionen",
+                "Publikum"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Alternative Wege sind plausibel, aber im Material nicht konkret nachgewiesen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Alternative Quellen könnten mehrere Redaktionen erreichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Ausgleich wäre voraussichtlich begrenzt und indirekt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer von Gegenwehr und Ersatzwegen ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Informationswege könnten grundsätzlich wieder geöffnet werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Redaktionen mit Ressourcen könnten leichter ausweichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Gegenpfad betrifft vor allem Arbeitsorganisation und Zugang.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Gegenpfad schützt keinen konkret belegten Grenzbereich, sondern kann eine mögliche Einschränkung abmildern.",
+                "reference_frame": "Zugang zu Informationen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Andere Informationsquellen oder erfolgreiche Gegenwehr müssten verfügbar sein.",
+              "reference_space": "Journalistische Berichterstattung über die US-Regierung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Journalistische Redaktionen können zumindest teilweise auf andere Zugänge ausweichen.",
+              "source_support": "Die Quelle belegt angekündigte Gegenwehr, nicht ihre Wirkung.",
+              "limitations": "Kein Nachweis über Reichweite oder Erfolg alternativer Wege.",
+              "first_order": "Mögliche Fortsetzung der Recherche trotz Zugangssperre.",
+              "second_order": "Mögliche Verlagerung auf indirekte Informationskanäle.",
+              "third_order": "Institutionelle Gegenwehr könnte eine dauerhafte Zugangssperre begrenzen; offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle nennt Gegenwehr, liefert aber keine Daten zu ihrer Wirksamkeit.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein negativer direkter Pfad steht einem kleineren, unsicheren Gegenpfad durch alternative Zugänge und Gegenwehr gegenüber."
+          },
+          "potential_presentation": {
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Erschwerter Zugang verändert journalistische Arbeitsbedingungen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 2,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "Erschwerter Zugang verändert journalistische Arbeitsbedingungen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Laufende Prüfung",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Quellen enthalten keinen plausiblen materiellen Umweltmechanismus und keine ökologischen Zustandsdaten.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Der berichtete Medienzugangskonflikt betrifft nach der vorliegenden Quellenlage Informations- und Institutionsbeziehungen, nicht direkt ökologische Zustände.",
+          "primary_paths": [
+            {
+              "label": "Kein materieller Umweltpfad aus dem berichteten Zugangskonflikt",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Die Maßnahme verändert nach der Quelle den Zugang von Medien, ohne einen belegten Eingriff in Ressourcen, Emissionen oder Ökosysteme.",
+              "recipients": [
+                "keine materiell betroffene Umweltkomponente"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den abgegrenzten Nachrichtenanlass ist kein materieller Umweltpfad erkennbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Empfängerkreis ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist erkennbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Eingriff wird berichtet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzliche Umweltkomponente ist betroffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systempfad ist aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch den berichteten Vorgang berührt.",
+                "reference_frame": "ökologische Zustände",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Ein Umweltpfad wäre nur bei zusätzlichen, nicht gelieferten Handlungen oder Entscheidungen denkbar.",
+              "reference_space": "Ökologische Zustände im Zusammenhang mit dem berichteten Medienzugangskonflikt",
+              "time_horizon": "offen",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der Quellenbestand beschreibt ausschließlich Medienzugang, Aussagen und Reaktionen.",
+              "source_support": "Die Quelle enthält keine ökologischen Befunde.",
+              "limitations": "Keine Umweltmessungen oder Angaben zu materiellen Folgeentscheidungen.",
+              "first_order": "Keine begründete ökologische Zustandsänderung.",
+              "second_order": "Keine begründete ökologische Folge aus dem vorliegenden Ereigniskern.",
+              "third_order": "Keine begründete ökologische Systemwirkung; zusätzliche Informationen könnten die Bewertung ändern.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keinen Umweltmechanismus; externe Quellen dürfen hier nicht ergänzt werden.",
+              "negligibility_rationale": "Im abgegrenzten Ereignis und Zeitraum ist keine materiell relevante ökologische Veränderung aus den gelieferten Informationen ableitbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt im Quellenbestand keinen vergleichbaren positiven oder negativen Umweltpfad; die ökologische Wirkung ist begründet vernachlässigbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Kein materieller Umweltpfad aus dem berichteten Zugangskonflikt",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Kein materieller Umweltpfad aus dem berichteten Zugangskonflikt",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ongoing",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt einen berichteten Zugangsausschluss und zugeschriebene Reaktionen, aber keinen eingetretenen Verlust demokratischer Kontrolle.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Der zentrale demokratische Pfad betrifft die mögliche Verengung journalistischer Kontrolle über Regierungshandeln. Die Richtung ist plausibel, die Reichweite und Dauer sind offen.",
+          "primary_paths": [
+            {
+              "label": "Zugangssperre könnte journalistische Kontrolle über Regierungshandeln verengen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn Medien vom Zugang zu Regierungsinformationen ausgeschlossen werden, könnten Informationen selektiver und indirekter verfügbar sein.",
+              "recipients": [
+                "Medien",
+                "Publikum",
+                "demokratische Institutionen"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der institutionelle Gegenstand ist potenziell weitreichend, konkrete Dauer und Anwendung bleiben aber unklar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mehrere Medien und ihr Publikum könnten mittelbar betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ein unmittelbarer Zugangsentzug kann die Informationsbeschaffung deutlich erschweren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des Verbots ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Wiederholte Zugangssperren könnten Normen prägen, wären aber korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Öffentliche Kontrolle ist auf verlässliche und vielfältige Informationen angewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad kann Informations-, Rechenschafts- und Vertrauensstrukturen verbinden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Ein dauerhafter oder ausgeweiteter Ausschluss könnte den Zugang zu staatlicher Information als demokratische Kontrollbedingung erheblich berühren.",
+                "reference_frame": "Pressefreiheit und demokratische Rechenschaft",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Sperre müsste umgesetzt, aufrechterhalten oder auf weitere Medien ausgeweitet werden.",
+              "reference_space": "US-Regierungsberichterstattung und öffentliche Kontrolle",
+              "time_horizon": "kurz- bis mittelfristig, bei Wiederholung längerfristig",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Direkter Zugang trägt zur Vielfalt und Prüfung von Regierungsinformationen bei.",
+              "source_support": "Die Quelle belegt den berichteten Zugangsentzug und die Reaktionen, nicht eine bereits eingetretene demokratische Verschlechterung.",
+              "limitations": "Keine unabhängige Bestätigung, keine Daten zu Berichterstattung, Publikum oder institutionellen Folgen.",
+              "first_order": "Möglicherweise weniger direkter Zugang zu Regierungsinformationen.",
+              "second_order": "Mögliche stärkere Abhängigkeit von ausgewählten oder indirekten Informationskanälen.",
+              "third_order": "Bei Normalisierung könnte sich die demokratische Korrekturfähigkeit durch Medien abschwächen; dies ist eine bedingte Möglichkeit.",
+              "research_pass": "second_pass",
+              "research_result": "Die vorliegenden Quellen erlauben keine Messung tatsächlicher Veränderungen von Pluralismus, Vertrauen oder Rechenschaft.",
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": "Die Quelle berichtet den sofortigen Entzug des Zugangs und angekündigte Gegenwehr; eine Veränderung demokratischer Kontrolle ist nicht beobachtet.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Rechtliche und institutionelle Gegenwehr könnte den Zugang schützen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Angekündigte rechtliche Schritte und alternative institutionelle Kontrollen könnten die Zugangssperre begrenzen oder korrigieren.",
+              "recipients": [
+                "betroffene Medien",
+                "Gerichte",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Gegenwehr ist berichtet, ihr Erfolg und ihre Reichweite sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die angekündigte Gegenwehr betrifft zunächst einzelne betroffene Medien.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Erfolgreiche Gegenwehr könnte den Zugang praktisch oder rechtlich begrenzen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine institutionelle Korrektur könnte über den Einzelfall hinaus wirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Korrekturen wären möglich, aber nicht dauerhaft gesichert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Unabhängige Medien und Gerichte können gegenüber Zugangsdruck unterschiedlich widerstandsfähig sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Gegenpfad kann Zugangsregeln und institutionelle Kontrolle berühren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Erfolgreiche Gegenwehr könnte eine mögliche Beeinträchtigung von Pressefreiheit und Rechenschaft begrenzen.",
+                "reference_frame": "Pressefreiheit und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Rechtliche oder institutionelle Gegenwehr müsste tatsächlich eingeleitet und wirksam werden.",
+              "reference_space": "Zugang betroffener Medien zu US-Regierungsinformationen",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die angekündigte Verteidigung von Rechten kann institutionelle Korrektur auslösen.",
+              "source_support": "Die Quelle berichtet die Ankündigung von Gegenwehr, nicht deren Erfolg.",
+              "limitations": "Keine Angaben zu Verfahren, Zuständigkeit oder Ergebnis.",
+              "first_order": "Mögliche Anfechtung der Zugangssperre.",
+              "second_order": "Mögliche Klärung von Zugangs- und Pressefreiheitsstandards.",
+              "third_order": "Eine erfolgreiche Korrektur könnte die demokratische Widerstandsfähigkeit stärken; Eintritt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle nennt Gegenwehr, enthält aber keine belastbare Information zu rechtlichem Status oder Erfolg.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Der negative Hauptpfad betrifft eine mögliche Schutzgrenze demokratischer Informationskontrolle; der positive Gegenpfad ist möglich, aber weder umgesetzt noch belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Zugangssperre könnte journalistische Kontrolle über Regierungshandeln verengen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "Zugangssperre könnte journalistische Kontrolle über Regierungshandeln verengen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Laufende Prüfung",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T06:09:31.627Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T03:50:09.000Z",
+      "last_updated": "2026-09-19T06:12:33.035Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-46f57e03e2fb2da6979d",
+      "case_file": null,
+      "source_published_at": "2026-09-19T03:50:09.000Z",
+      "published_at": "2026-09-19T06:12:33.035Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob das Hausverbot umgesetzt wird und ob weitere Medien betroffen sind.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Zugang der genannten oder weiterer Medien zu Veranstaltungen und Räumen des Weißen Hauses",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-7ea669d5fd07acc1",
+          "announced_at": "2026-09-19T03:50:09.000Z",
+          "follow_up_date": "2026-09-26T06:12:33.035Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-praesident-trump-verbannt-mehrere-medien-aus-dem-weissen-haus-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T03:50:09.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f8e9ba47320c307f",
       "title_image": {
