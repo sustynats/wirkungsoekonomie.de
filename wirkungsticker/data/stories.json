@@ -2,8 +2,1944 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T11:39:35.873Z",
+  "updated_at": "2026-09-19T13:24:05.871Z",
   "stories": [
+    {
+      "story_id": "wt-1c7b1cd9b571ef0f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1c7b1cd9b571ef0f-60edf32ce372c7d3-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1c7b1cd9b571ef0f-9a8d7ade2aca5e61-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-1c7b1cd9b571ef0f-b8342b19cdeafe12-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-news-russland-will-mit-afd-bei-gaslieferungen-kooperieren-71ef0f",
+      "title": "Laut MDR: Russland bietet AfD Kooperation bei Gaslieferungen an",
+      "source_summary": "Der MDR berichtet, Russland habe der AfD eine Kooperation angeboten. Als Bezug nennt die Quelle Gaslieferungen und den russischen Regierungs-Beauftragten für internationale wirtschaftliche Zusammenarbeit, Kirill Dmitrijew.\n\nDmitrijew schrieb demnach, Mecklenburg-Vorpommern werde wieder aufblühen, wenn Nord-Stream-Gas durch gemeinsame Arbeit mit der AfD zurückkehre. Die Aussage steht im Zusammenhang mit der Landtagswahl in Mecklenburg-Vorpommern; konkrete Vereinbarungen oder Lieferzusagen werden nicht genannt.\n\nDer Bericht enthält außerdem weitere Meldungen zum Krieg gegen die Ukraine. Für einen russischen Angriff auf ein Wohngebäude in Sumy nennt der MDR zwei Tote und mehrere Verletzte; diese Angaben werden Selenskyj beziehungsweise dem MDR zugeschrieben.",
+      "summary": "Russland bietet der AfD laut MDR eine Zusammenarbeit bei Gaslieferungen an. Ob daraus politische oder wirtschaftliche Schritte folgen, ist offen.",
+      "detail_summary": "Der MDR berichtet über ein Kooperationsangebot Russlands an die AfD, das der russische Regierungs-Beauftragte Kirill Dmitrijew mit Gaslieferungen und Nord Stream verbindet. Die Aussage fällt vor der Landtagswahl in Mecklenburg-Vorpommern. Belegt ist damit zunächst eine politische Botschaft, nicht aber eine Vereinbarung, Lieferung oder Gesetzesänderung. Möglich wäre, dass solche Angebote energiepolitische Positionen und Wahlkampfthemen beeinflussen. Offen bleiben Reichweite, Reaktionen der AfD und jede tatsächliche Umsetzung. Der Bericht nennt außerdem zwei Tote und mehrere Verletzte nach einem russischen Angriff auf ein Wohngebäude in Sumy.",
+      "why_relevant": "Das Angebot verbindet einen politischen Akteur in Deutschland mit russischer Energiekommunikation und kann Debatten über Gas, Außenpolitik und Abhängigkeiten prägen. Konkrete Folgeentscheidungen sind nicht belegt.",
+      "topic": [
+        "Energie",
+        "Wirtschaft",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über ein russisches Kooperationsangebot an die AfD mit Bezug auf Gaslieferungen",
+        "evaluation_target": {
+          "label": "Politisches Gasangebot und seine mögliche Wirkung auf Energie- und Wahlkampfdiskurse",
+          "type": "communication"
+        },
+        "baseline": "Keine im Quellenbestand belegte Vereinbarung zwischen Russland und der AfD über Gaslieferungen.",
+        "counterfactual": "Ohne das berichtete Angebot gäbe es diesen konkreten Kommunikationsanlass und seine mögliche Verknüpfung von AfD, Russland und Gaslieferungen nicht.",
+        "reference_frame": [
+          "Energieversorgungssicherheit",
+          "demokratische Willensbildung",
+          "Prüfung politischer Einfluss- und Abhängigkeitspfade"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher energiepolitischer Kurs könnte Preise, Versorgung und Verteilung berühren; konkrete Auswirkungen auf Haushalte oder Beschäftigte sind nicht belegt. Der Angriff in Sumy wird separat als beobachteter menschlicher Schaden geführt.",
+            "planet": "Eine mögliche Rückkehr zu Gaslieferungen könnte fossile Infrastruktur und Emissionen länger binden; der Quellenbestand enthält dazu keine Emissions- oder Ausbauzahlen.",
+            "democracy": "Die Aussage könnte Wahlkampfthemen, politische Prioritäten und die Wahrnehmung russischer Einflussangebote prägen. Eine Wirkung auf Entscheidungen oder Mehrheiten ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Ein politisches Gasangebot wird öffentlich mit der AfD und Nord Stream verknüpft.",
+          "second_order": "Bei Übernahme durch politische Akteure könnte dies Debatten über Versorgung, Preise, Russlandbeziehungen und fossile Infrastruktur verschieben.",
+          "third_order": "Bei anschließender Umsetzung könnte eine längerfristige energie- und außenpolitische Bindung entstehen; dieser Pfad bleibt hypothetisch.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Der Bericht belegt keine Vereinbarung, keine Liefermenge, keinen Preis und keinen politischen Beschluss.",
+            "Eine einzelne journalistische Quelle ist keine unabhängige Bestätigung der Aussage oder ihrer Folgen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Herkunft vor. Die Quelle ist nicht als unabhängig bestätigt; weitere Belege fehlen.",
+          "institutional_status": "Belegt ist eine berichtete politische Aussage beziehungsweise ein Angebot. Ein Gesetz, Vertrag, Beschluss oder Inkrafttreten ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand belegt keine konkreten menschlichen Folgen des Angebots. Modellierbar ist nur ein bedingter Pfad über mögliche Energie- und Verteilungsentscheidungen; Eintritt, Richtung und Größenordnung bleiben offen.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Ein möglicher energiepolitischer Kurs könnte Haushalte, Unternehmen und Beschäftigte über Preise und Versorgung betreffen. Positive Versorgungseffekte und negative Abhängigkeits- oder Verteilungseffekte sind beide möglich, aber nicht gemessen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung von Energieversorgung und Verteilung",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Wenn politische Akteure das Angebot in konkrete Energiepolitik übersetzen, könnten Gasbezug, Preisannahmen und Versorgungsstrategien verändert werden.",
+                "recipients": [
+                  "Haushalte",
+                  "Unternehmen",
+                  "Beschäftigte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Betroffenenkreis ist breit, aber konkrete Maßnahmen und Intensitäten fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Energiepolitik könnte viele Haushalte und Unternehmen erreichen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine konkrete Belastungs- oder Entlastungsstärke ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Dauerhafte Gasbezüge wären möglich, aber nicht vereinbart.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Infrastruktur- und Vertragsbindungen könnten begrenzt reversibel sein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Energiepreise und Versorgung können vulnerable Haushalte besonders treffen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Versorgung und Verteilung berühren, ist aber politisch noch unverbindlich.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer menschlichen Schutzgrenze durch das Angebot ist nicht belegt.",
+                  "reference_frame": "bezahlbare und verlässliche Energieversorgung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass aus dem Angebot politische Entscheidungen, Lieferungen oder Preiswirkungen entstehen.",
+                "reference_space": "Mecklenburg-Vorpommern und mögliche überregionale Energiebeziehungen",
+                "time_horizon": "kurz- bis langfristig nach einer möglichen politischen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Akteure müssten das Angebot aufgreifen und institutionell umsetzen.",
+                "source_support": "Die Quelle belegt das Angebot und den Bezug zu Gaslieferungen, nicht die menschlichen Folgen.",
+                "limitations": "Keine Daten zu Preisen, Liefermengen, Verträgen, Haushaltsbelastungen oder Beschäftigung.",
+                "first_order": "Mögliche Änderung politischer Erwartungen an Gasversorgung und Preise.",
+                "second_order": "Mögliche Verteilungswirkungen für Haushalte und Unternehmen bei einer Umsetzung.",
+                "third_order": "Mögliche langfristige Abhängigkeiten oder Anpassungskosten; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten oder unabhängige Bestätigung im Quellenbestand; der Pfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche öffentliche Normalisierung eines Gasangebots",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Die Verknüpfung von Gasversorgung und politischer Kooperation könnte Abhängigkeiten als politische Option normalisieren.",
+                "recipients": [
+                  "Haushalte",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Kommunikationsimpuls ist belegt, eine Verhaltens- oder Zustandsänderung jedoch nicht."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Bericht kann den öffentlichen Energiediskurs erreichen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die konkrete kommunikative Intensität ist nicht gemessen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Wirkung ist nicht beobachtet.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Kommunikative Deutungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Abhängige oder einkommensschwache Haushalte könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Nebenpfad betrifft zunächst Wahrnehmung und politische Rahmung.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine unmittelbare menschliche Schutzgrenze wird nicht belegt verletzt.",
+                  "reference_frame": "soziale Absicherung und Versorgung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Nebenpfad setzt öffentliche Aufnahme und politische Wiederholung voraus.",
+                "reference_space": "öffentliche Debatte in Deutschland",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung oder politische Übernahme würde die Aussage sichtbarer machen.",
+                "source_support": "Belegt ist nur die veröffentlichte Aussage.",
+                "limitations": "Keine Publikums- oder Diskursdaten.",
+                "first_order": "Erhöhte Sichtbarkeit eines Gasangebots.",
+                "second_order": "Mögliche Verschiebung von Erwartungen an Versorgung und Preise.",
+                "third_order": "Mögliche politische Verfestigung; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Resonanz- oder Verhaltensdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Versorgungserwartungen und negative Abhängigkeits- oder Verteilungsrisiken sind als bedingte Pfade vergleichbar; keiner ist empirisch belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung von Energieversorgung und Verteilung",
+              "direction": "open"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+                "direction": "negative",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "reference_space": "Wohngebäude in Sumy",
+                "observed_at": "05:00 Uhr",
+                "temporal_status": "ex_post",
+                "mechanism": "Der MDR schreibt die Angaben zum Angriff und zu den Toten Selenskyj beziehungsweise seiner eigenen Meldung zu; eine unabhängige Bestätigung liegt im Quellenbestand nicht vor.",
+                "recipients": [
+                  "Bewohnerinnen und Bewohner des Wohngebäudes",
+                  "Menschen in Sumy"
+                ],
+                "time_horizon": "unmittelbar und mit möglichen längerfristigen Folgen für Verletzte und Angehörige",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der belegte Schaden betrifft ein einzelnes Wohngebäude.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Tote und Verletzte markieren einen schweren individuellen Schaden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der unmittelbare Schaden ist eingetreten; Folgedauer der Verletzungen ist offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Der Tod ist irreversibel; die Zahl der Betroffenen bleibt begrenzt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Bewohnerinnen und Bewohner eines angegriffenen Wohngebäudes sind unmittelbar gefährdet.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der beobachtete Schaden ist schwer, aber räumlich als Einzelfall berichtet.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der berichtete Tod stellt eine schwere Verletzung des Schutzes von Leben dar.",
+                  "reference_frame": "Schutz des Lebens",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+              "direction": "negative",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Wohngebäude in Sumy",
+              "observed_at": "05:00 Uhr",
+              "temporal_status": "ex_post",
+              "mechanism": "Der MDR schreibt die Angaben zum Angriff und zu den Toten Selenskyj beziehungsweise seiner eigenen Meldung zu; eine unabhängige Bestätigung liegt im Quellenbestand nicht vor.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner des Wohngebäudes",
+                "Menschen in Sumy"
+              ],
+              "time_horizon": "unmittelbar und mit möglichen längerfristigen Folgen für Verletzte und Angehörige",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der belegte Schaden betrifft ein einzelnes Wohngebäude.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Tote und Verletzte markieren einen schweren individuellen Schaden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der unmittelbare Schaden ist eingetreten; Folgedauer der Verletzungen ist offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Der Tod ist irreversibel; die Zahl der Betroffenen bleibt begrenzt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Bewohnerinnen und Bewohner eines angegriffenen Wohngebäudes sind unmittelbar gefährdet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der beobachtete Schaden ist schwer, aber räumlich als Einzelfall berichtet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod stellt eine schwere Verletzung des Schutzes von Leben dar.",
+                "reference_frame": "Schutz des Lebens",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+            "display_direction": "negative",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Energiebezug ist im Bericht belegt, aber keine Umsetzung, Verbrauchsänderung oder Emissionswirkung. Ein fossiler Lock-in ist daher nur ein bedingter Modellpfad.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Eine mögliche Rückkehr zu Gaslieferungen könnte fossile Infrastruktur oder Importbeziehungen verlängern. Ein konkreter Ausbau, Verbrauch oder Emissionsanstieg ist jedoch nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verlängerung fossiler Gasbindung",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn das Angebot in langfristige Lieferungen oder Infrastruktur übersetzt würde, könnte es fossile Energiebeziehungen gegenüber alternativen Pfaden stabilisieren.",
+                "recipients": [
+                  "Ökosysteme",
+                  "künftige Generationen",
+                  "Energieinfrastruktur"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Mechanismus ist plausibel, aber Lieferungen und Infrastrukturentscheidungen fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Eine mögliche Gasbeziehung könnte regional und überregional wirken.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine konkrete zusätzliche Gasmenge ist nicht bekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Gasverträge oder Infrastruktur könnten langfristige Bindungen erzeugen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Fossile Investitionen wären teilweise korrigierbar, aber mit Umstellungskosten.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökosysteme und klimasensible Gruppen wären indirekt betroffen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Energiesysteme und Emissionspfade berühren.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Grenzverletzung oder Emissionsänderung ist nicht belegt.",
+                  "reference_frame": "fossile Bindung und Klimaschutz",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine politische Entscheidung für tatsächliche Gaslieferungen oder Infrastruktur voraus.",
+                "reference_space": "deutsche und europäische Energiebeziehungen",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Gaslieferungen würden zusätzliche oder verlängerte fossile Bindungen erzeugen.",
+                "source_support": "Die Quelle nennt Gaslieferungen und Nord Stream als politische Aussage, nicht Emissionen oder Infrastrukturentscheidungen.",
+                "limitations": "Keine Daten zu Mengen, Laufzeiten, Emissionen, Netzen oder Alternativen.",
+                "first_order": "Mögliche politische Aufwertung von Gaslieferungen.",
+                "second_order": "Mögliche Verlängerung fossiler Investitions- und Importentscheidungen.",
+                "third_order": "Mögliche Verringerung von Flexibilität für erneuerbare Pfade; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Umwelt- oder Energiedaten im gelieferten Quellenbestand; Emissions- und Lock-in-Wirkung bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein negativer fossiler Bindungspfad ist plausibel modellierbar; ein gleich stark belegter positiver Umweltpfad ist im Quellenbestand nicht vorhanden."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Verlängerung fossiler Gasbindung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verlängerung fossiler Gasbindung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die politische Kommunikation ist belegt, aber keine Wirkung auf Wahlen, Mehrheiten oder Institutionen. Der demokratische Pfad betrifft daher ein mögliches Agenda- und Normalisierungssignal.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Das Angebot verbindet einen ausländischen Akteur, die AfD und eine energiepolitische Erwartung im Vorfeld einer Landtagswahl. Das könnte politische Agenden und Wahrnehmungen beeinflussen, ohne dass eine tatsächliche Entscheidung oder Wählerwirkung beobachtet ist.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verschiebung der energiepolitischen Wahlkampfarbe",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die öffentliche Verknüpfung von russischem Angebot, AfD und bezahlbarem Gas könnte Themenprioritäten und politische Deutungen im Wahlkampf beeinflussen.",
+                "recipients": [
+                  "Wählerinnen und Wähler",
+                  "Parteien",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Anlass ist politisch sichtbar, aber konkrete Resonanz- oder Wahldaten fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Wahlkampfthemen können eine breite Öffentlichkeit erreichen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Stärke der möglichen Agendaänderung ist nicht gemessen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Bezug zur Wahl kann kurzfristig wirken; dauerhafte Effekte sind offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Öffentliche Deutungen können durch Gegeninformationen korrigiert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Informations- und Versorgungssorgen können unterschiedliche Gruppen ungleich beeinflussen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Agenda und politische Positionierung, nicht belegte Institutionenänderungen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Beeinträchtigung von Wahlrechten oder institutioneller Korrekturfähigkeit ist nicht belegt.",
+                  "reference_frame": "informierte demokratische Willensbildung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt öffentliche Rezeption, politische Wiederholung oder Übernahme des Angebots voraus.",
+                "reference_space": "Wahlkampfdiskurs in Mecklenburg-Vorpommern und Deutschland",
+                "time_horizon": "bis zur Wahl und mögliche Nachwirkungen",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Kommunikation wird von Medien, Parteien oder Wählerschaft aufgegriffen.",
+                "source_support": "Der MDR belegt den Bericht und den Wahlkontext, nicht eine demokratische Wirkung.",
+                "limitations": "Keine Umfragen, Reichweiten, Reaktionen oder Wahldaten liegen vor.",
+                "first_order": "Ein neues energie- und außenpolitisches Thema kann im Wahlkampf sichtbar werden.",
+                "second_order": "Mögliche Verschiebung von Parteipositionen oder Wählerprioritäten.",
+                "third_order": "Mögliche Normalisierung ausländischer politischer Einflussangebote; nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zu Resonanz, Wiederholung oder Wahlwirkung im Quellenbestand; nur ein bedingter Kommunikationspfad bleibt begründbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Normalisierung politischer Einflusskommunikation",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Die direkte Ansprache einer Partei durch einen russischen Regierungsbeauftragten könnte als normale politische Ressource im Diskurs erscheinen, wenn sie ohne Prüfung übernommen wird.",
+                "recipients": [
+                  "Parteien",
+                  "Medien",
+                  "Wählerinnen und Wähler"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Sachverhalt ist kommunikativ relevant, aber eine Normalisierung ist nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Politische Medien und Wahlkampf können die Botschaft weitertragen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Wirkung der einzelnen Aussage ist nicht gemessen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Normalisierung ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Prüfung und Gegenrede könnten die Deutung korrigieren.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Weniger informierte oder besonders verunsicherte Gruppen könnten anfälliger sein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann Diskursnormen berühren, verändert aber nicht automatisch Institutionen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Einschränkung demokratischer Rechte ist nicht belegt.",
+                  "reference_frame": "demokratische Transparenz und Korrekturfähigkeit",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Nebenpfad setzt Wiederholung, unklare Zuschreibung oder fehlende Gegenprüfung voraus.",
+                "reference_space": "politischer und medialer Diskurs in Deutschland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Aussage wird als politisches Angebot weiterverwendet und nicht nur als berichteter Vorgang eingeordnet.",
+                "source_support": "Belegt ist die Aussage und ihre Veröffentlichung, nicht ihre Normalisierungswirkung.",
+                "limitations": "Keine Diskurs-, Publikums- oder Verhaltensdaten.",
+                "first_order": "Erhöhte Sichtbarkeit eines ausländischen politischen Angebots.",
+                "second_order": "Mögliche Verschiebung dessen, was als legitime energiepolitische Option gilt.",
+                "third_order": "Mögliche Schwächung kritischer Prüfung bei wiederholter Kommunikation; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Resonanz- oder Diskursdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative demokratische Kommunikationspfad ist als Risiko modellierbar; ein gleichartiger positiver institutioneller Gegenpfad ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Verschiebung der energiepolitischen Wahlkampfarbe",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verschiebung der energiepolitischen Wahlkampfarbe",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+            "direction": "negative",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Wohngebäude in Sumy",
+            "observed_at": "05:00 Uhr",
+            "temporal_status": "ex_post",
+            "mechanism": "Der MDR schreibt die Angaben zum Angriff und zu den Toten Selenskyj beziehungsweise seiner eigenen Meldung zu; eine unabhängige Bestätigung liegt im Quellenbestand nicht vor.",
+            "recipients": [
+              "Bewohnerinnen und Bewohner des Wohngebäudes",
+              "Menschen in Sumy"
+            ],
+            "time_horizon": "unmittelbar und mit möglichen längerfristigen Folgen für Verletzte und Angehörige",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Der belegte Schaden betrifft ein einzelnes Wohngebäude.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Tote und Verletzte markieren einen schweren individuellen Schaden.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Der unmittelbare Schaden ist eingetreten; Folgedauer der Verletzungen ist offen.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Der Tod ist irreversibel; die Zahl der Betroffenen bleibt begrenzt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Bewohnerinnen und Bewohner eines angegriffenen Wohngebäudes sind unmittelbar gefährdet.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Der beobachtete Schaden ist schwer, aber räumlich als Einzelfall berichtet.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod stellt eine schwere Verletzung des Schutzes von Leben dar.",
+              "reference_frame": "Schutz des Lebens",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 16,
+              "divisor": 6,
+              "raw": 2.6666666666666665,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T13:26:39.037Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Der MDR berichtet über das russische Kooperationsangebot, Dmitrijews Gasbezug und den Kontext der Landtagswahl."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand belegt keine konkreten menschlichen Folgen des Angebots. Modellierbar ist nur ein bedingter Pfad über mögliche Energie- und Verteilungsentscheidungen; Eintritt, Richtung und Größenordnung bleiben offen.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Ein möglicher energiepolitischer Kurs könnte Haushalte, Unternehmen und Beschäftigte über Preise und Versorgung betreffen. Positive Versorgungseffekte und negative Abhängigkeits- oder Verteilungseffekte sind beide möglich, aber nicht gemessen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung von Energieversorgung und Verteilung",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Wenn politische Akteure das Angebot in konkrete Energiepolitik übersetzen, könnten Gasbezug, Preisannahmen und Versorgungsstrategien verändert werden.",
+              "recipients": [
+                "Haushalte",
+                "Unternehmen",
+                "Beschäftigte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Betroffenenkreis ist breit, aber konkrete Maßnahmen und Intensitäten fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Energiepolitik könnte viele Haushalte und Unternehmen erreichen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine konkrete Belastungs- oder Entlastungsstärke ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Dauerhafte Gasbezüge wären möglich, aber nicht vereinbart.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Infrastruktur- und Vertragsbindungen könnten begrenzt reversibel sein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Energiepreise und Versorgung können vulnerable Haushalte besonders treffen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Versorgung und Verteilung berühren, ist aber politisch noch unverbindlich.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer menschlichen Schutzgrenze durch das Angebot ist nicht belegt.",
+                "reference_frame": "bezahlbare und verlässliche Energieversorgung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass aus dem Angebot politische Entscheidungen, Lieferungen oder Preiswirkungen entstehen.",
+              "reference_space": "Mecklenburg-Vorpommern und mögliche überregionale Energiebeziehungen",
+              "time_horizon": "kurz- bis langfristig nach einer möglichen politischen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Akteure müssten das Angebot aufgreifen und institutionell umsetzen.",
+              "source_support": "Die Quelle belegt das Angebot und den Bezug zu Gaslieferungen, nicht die menschlichen Folgen.",
+              "limitations": "Keine Daten zu Preisen, Liefermengen, Verträgen, Haushaltsbelastungen oder Beschäftigung.",
+              "first_order": "Mögliche Änderung politischer Erwartungen an Gasversorgung und Preise.",
+              "second_order": "Mögliche Verteilungswirkungen für Haushalte und Unternehmen bei einer Umsetzung.",
+              "third_order": "Mögliche langfristige Abhängigkeiten oder Anpassungskosten; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten oder unabhängige Bestätigung im Quellenbestand; der Pfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche öffentliche Normalisierung eines Gasangebots",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Die Verknüpfung von Gasversorgung und politischer Kooperation könnte Abhängigkeiten als politische Option normalisieren.",
+              "recipients": [
+                "Haushalte",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Kommunikationsimpuls ist belegt, eine Verhaltens- oder Zustandsänderung jedoch nicht."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Bericht kann den öffentlichen Energiediskurs erreichen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die konkrete kommunikative Intensität ist nicht gemessen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Wirkung ist nicht beobachtet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Kommunikative Deutungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Abhängige oder einkommensschwache Haushalte könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Nebenpfad betrifft zunächst Wahrnehmung und politische Rahmung.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine unmittelbare menschliche Schutzgrenze wird nicht belegt verletzt.",
+                "reference_frame": "soziale Absicherung und Versorgung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Nebenpfad setzt öffentliche Aufnahme und politische Wiederholung voraus.",
+              "reference_space": "öffentliche Debatte in Deutschland",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung oder politische Übernahme würde die Aussage sichtbarer machen.",
+              "source_support": "Belegt ist nur die veröffentlichte Aussage.",
+              "limitations": "Keine Publikums- oder Diskursdaten.",
+              "first_order": "Erhöhte Sichtbarkeit eines Gasangebots.",
+              "second_order": "Mögliche Verschiebung von Erwartungen an Versorgung und Preise.",
+              "third_order": "Mögliche politische Verfestigung; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Resonanz- oder Verhaltensdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Versorgungserwartungen und negative Abhängigkeits- oder Verteilungsrisiken sind als bedingte Pfade vergleichbar; keiner ist empirisch belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Energieversorgung und Verteilung",
+            "direction": "open"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+              "direction": "negative",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Wohngebäude in Sumy",
+              "observed_at": "05:00 Uhr",
+              "temporal_status": "ex_post",
+              "mechanism": "Der MDR schreibt die Angaben zum Angriff und zu den Toten Selenskyj beziehungsweise seiner eigenen Meldung zu; eine unabhängige Bestätigung liegt im Quellenbestand nicht vor.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner des Wohngebäudes",
+                "Menschen in Sumy"
+              ],
+              "time_horizon": "unmittelbar und mit möglichen längerfristigen Folgen für Verletzte und Angehörige",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der belegte Schaden betrifft ein einzelnes Wohngebäude.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Tote und Verletzte markieren einen schweren individuellen Schaden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der unmittelbare Schaden ist eingetreten; Folgedauer der Verletzungen ist offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Der Tod ist irreversibel; die Zahl der Betroffenen bleibt begrenzt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Bewohnerinnen und Bewohner eines angegriffenen Wohngebäudes sind unmittelbar gefährdet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der beobachtete Schaden ist schwer, aber räumlich als Einzelfall berichtet.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod stellt eine schwere Verletzung des Schutzes von Leben dar.",
+                "reference_frame": "Schutz des Lebens",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+            "direction": "negative",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Wohngebäude in Sumy",
+            "observed_at": "05:00 Uhr",
+            "temporal_status": "ex_post",
+            "mechanism": "Der MDR schreibt die Angaben zum Angriff und zu den Toten Selenskyj beziehungsweise seiner eigenen Meldung zu; eine unabhängige Bestätigung liegt im Quellenbestand nicht vor.",
+            "recipients": [
+              "Bewohnerinnen und Bewohner des Wohngebäudes",
+              "Menschen in Sumy"
+            ],
+            "time_horizon": "unmittelbar und mit möglichen längerfristigen Folgen für Verletzte und Angehörige",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Der belegte Schaden betrifft ein einzelnes Wohngebäude.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Tote und Verletzte markieren einen schweren individuellen Schaden.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Der unmittelbare Schaden ist eingetreten; Folgedauer der Verletzungen ist offen.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Der Tod ist irreversibel; die Zahl der Betroffenen bleibt begrenzt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Bewohnerinnen und Bewohner eines angegriffenen Wohngebäudes sind unmittelbar gefährdet.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Der beobachtete Schaden ist schwer, aber räumlich als Einzelfall berichtet.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod stellt eine schwere Verletzung des Schutzes von Leben dar.",
+              "reference_frame": "Schutz des Lebens",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 16,
+              "divisor": 6,
+              "raw": 2.6666666666666665,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Bei einem russischen Angriff auf ein Wohngebäude in Sumy sind nach Angaben des ukrainischen Präsidenten zwei Menschen getötet worden; der MDR berichtet außerdem von mehreren Verletzten.",
+          "display_direction": "negative",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Energiebezug ist im Bericht belegt, aber keine Umsetzung, Verbrauchsänderung oder Emissionswirkung. Ein fossiler Lock-in ist daher nur ein bedingter Modellpfad.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Eine mögliche Rückkehr zu Gaslieferungen könnte fossile Infrastruktur oder Importbeziehungen verlängern. Ein konkreter Ausbau, Verbrauch oder Emissionsanstieg ist jedoch nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verlängerung fossiler Gasbindung",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn das Angebot in langfristige Lieferungen oder Infrastruktur übersetzt würde, könnte es fossile Energiebeziehungen gegenüber alternativen Pfaden stabilisieren.",
+              "recipients": [
+                "Ökosysteme",
+                "künftige Generationen",
+                "Energieinfrastruktur"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Mechanismus ist plausibel, aber Lieferungen und Infrastrukturentscheidungen fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Eine mögliche Gasbeziehung könnte regional und überregional wirken.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine konkrete zusätzliche Gasmenge ist nicht bekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Gasverträge oder Infrastruktur könnten langfristige Bindungen erzeugen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Fossile Investitionen wären teilweise korrigierbar, aber mit Umstellungskosten.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökosysteme und klimasensible Gruppen wären indirekt betroffen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Energiesysteme und Emissionspfade berühren.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Grenzverletzung oder Emissionsänderung ist nicht belegt.",
+                "reference_frame": "fossile Bindung und Klimaschutz",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine politische Entscheidung für tatsächliche Gaslieferungen oder Infrastruktur voraus.",
+              "reference_space": "deutsche und europäische Energiebeziehungen",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Gaslieferungen würden zusätzliche oder verlängerte fossile Bindungen erzeugen.",
+              "source_support": "Die Quelle nennt Gaslieferungen und Nord Stream als politische Aussage, nicht Emissionen oder Infrastrukturentscheidungen.",
+              "limitations": "Keine Daten zu Mengen, Laufzeiten, Emissionen, Netzen oder Alternativen.",
+              "first_order": "Mögliche politische Aufwertung von Gaslieferungen.",
+              "second_order": "Mögliche Verlängerung fossiler Investitions- und Importentscheidungen.",
+              "third_order": "Mögliche Verringerung von Flexibilität für erneuerbare Pfade; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Umwelt- oder Energiedaten im gelieferten Quellenbestand; Emissions- und Lock-in-Wirkung bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein negativer fossiler Bindungspfad ist plausibel modellierbar; ein gleich stark belegter positiver Umweltpfad ist im Quellenbestand nicht vorhanden."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verlängerung fossiler Gasbindung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Verlängerung fossiler Gasbindung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die politische Kommunikation ist belegt, aber keine Wirkung auf Wahlen, Mehrheiten oder Institutionen. Der demokratische Pfad betrifft daher ein mögliches Agenda- und Normalisierungssignal.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Das Angebot verbindet einen ausländischen Akteur, die AfD und eine energiepolitische Erwartung im Vorfeld einer Landtagswahl. Das könnte politische Agenden und Wahrnehmungen beeinflussen, ohne dass eine tatsächliche Entscheidung oder Wählerwirkung beobachtet ist.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verschiebung der energiepolitischen Wahlkampfarbe",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die öffentliche Verknüpfung von russischem Angebot, AfD und bezahlbarem Gas könnte Themenprioritäten und politische Deutungen im Wahlkampf beeinflussen.",
+              "recipients": [
+                "Wählerinnen und Wähler",
+                "Parteien",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Anlass ist politisch sichtbar, aber konkrete Resonanz- oder Wahldaten fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Wahlkampfthemen können eine breite Öffentlichkeit erreichen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Stärke der möglichen Agendaänderung ist nicht gemessen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Bezug zur Wahl kann kurzfristig wirken; dauerhafte Effekte sind offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Öffentliche Deutungen können durch Gegeninformationen korrigiert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Informations- und Versorgungssorgen können unterschiedliche Gruppen ungleich beeinflussen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Agenda und politische Positionierung, nicht belegte Institutionenänderungen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Beeinträchtigung von Wahlrechten oder institutioneller Korrekturfähigkeit ist nicht belegt.",
+                "reference_frame": "informierte demokratische Willensbildung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt öffentliche Rezeption, politische Wiederholung oder Übernahme des Angebots voraus.",
+              "reference_space": "Wahlkampfdiskurs in Mecklenburg-Vorpommern und Deutschland",
+              "time_horizon": "bis zur Wahl und mögliche Nachwirkungen",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Kommunikation wird von Medien, Parteien oder Wählerschaft aufgegriffen.",
+              "source_support": "Der MDR belegt den Bericht und den Wahlkontext, nicht eine demokratische Wirkung.",
+              "limitations": "Keine Umfragen, Reichweiten, Reaktionen oder Wahldaten liegen vor.",
+              "first_order": "Ein neues energie- und außenpolitisches Thema kann im Wahlkampf sichtbar werden.",
+              "second_order": "Mögliche Verschiebung von Parteipositionen oder Wählerprioritäten.",
+              "third_order": "Mögliche Normalisierung ausländischer politischer Einflussangebote; nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zu Resonanz, Wiederholung oder Wahlwirkung im Quellenbestand; nur ein bedingter Kommunikationspfad bleibt begründbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Normalisierung politischer Einflusskommunikation",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Die direkte Ansprache einer Partei durch einen russischen Regierungsbeauftragten könnte als normale politische Ressource im Diskurs erscheinen, wenn sie ohne Prüfung übernommen wird.",
+              "recipients": [
+                "Parteien",
+                "Medien",
+                "Wählerinnen und Wähler"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Sachverhalt ist kommunikativ relevant, aber eine Normalisierung ist nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Politische Medien und Wahlkampf können die Botschaft weitertragen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Wirkung der einzelnen Aussage ist nicht gemessen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Normalisierung ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Prüfung und Gegenrede könnten die Deutung korrigieren.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Weniger informierte oder besonders verunsicherte Gruppen könnten anfälliger sein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann Diskursnormen berühren, verändert aber nicht automatisch Institutionen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Einschränkung demokratischer Rechte ist nicht belegt.",
+                "reference_frame": "demokratische Transparenz und Korrekturfähigkeit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Nebenpfad setzt Wiederholung, unklare Zuschreibung oder fehlende Gegenprüfung voraus.",
+              "reference_space": "politischer und medialer Diskurs in Deutschland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Aussage wird als politisches Angebot weiterverwendet und nicht nur als berichteter Vorgang eingeordnet.",
+              "source_support": "Belegt ist die Aussage und ihre Veröffentlichung, nicht ihre Normalisierungswirkung.",
+              "limitations": "Keine Diskurs-, Publikums- oder Verhaltensdaten.",
+              "first_order": "Erhöhte Sichtbarkeit eines ausländischen politischen Angebots.",
+              "second_order": "Mögliche Verschiebung dessen, was als legitime energiepolitische Option gilt.",
+              "third_order": "Mögliche Schwächung kritischer Prüfung bei wiederholter Kommunikation; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Resonanz- oder Diskursdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative demokratische Kommunikationspfad ist als Risiko modellierbar; ein gleichartiger positiver institutioneller Gegenpfad ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verschiebung der energiepolitischen Wahlkampfarbe",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Verschiebung der energiepolitischen Wahlkampfarbe",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T13:24:05.871Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T13:20:44.000Z",
+      "last_updated": "2026-09-19T13:26:39.031Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-35648420574b756547ca",
+      "case_file": null,
+      "source_published_at": "2026-09-19T13:20:44.000Z",
+      "published_at": "2026-09-19T13:26:39.031Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-landtagswahl-mecklenburg-vorpommern-afd-kirill-dmitrijew,ukraine-news-19-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T13:20:44.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-492fde11550f416a",
       "title_image": {
