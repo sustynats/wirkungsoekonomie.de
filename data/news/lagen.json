@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-19T10:00:00.000Z",
+  "updated_at": "2026-09-19T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-19-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-19",
+      "window_from": "2026-09-19T10:00:00.000Z",
+      "window_to": "2026-09-19T16:00:00.000Z",
+      "stand": "2026-09-19T16:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 9,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-025eca19f84fbaa8",
+          "slug": "eroffnung-im-norden-46-millionen-euro-investition-coherent-eroffnet-neubau-4fbaa8",
+          "title": "Coherent eröffnet Neubau in Lübeck mit 46 Millionen Euro Investition",
+          "state": "neu",
+          "at": "2026-09-19T15:56:48.615Z",
+          "score": 5.9911
+        },
+        {
+          "story_id": "wt-d8301a6ac34d30b0",
+          "slug": "partei-jugendorganisation-jusos-verlangen-abkehr-vom-reformkurs-der-bundesregierung-4d30b0",
+          "title": "Thüringens Jusos kritisieren SPD-Kurs und lehnen Kürzungen im Sozialbereich ab",
+          "state": "neu",
+          "at": "2026-09-19T15:10:44.561Z",
+          "score": 5.8632
+        },
+        {
+          "story_id": "wt-9b00217eb8ece771",
+          "slug": "wohnungsmarkt-jedes-zweite-wg-zimmer-in-berlin-kostet-mehr-als-650-euro-ece771",
+          "title": "Jedes zweite WG-Zimmer in Berlin kostet mehr als 650 Euro",
+          "state": "neu",
+          "at": "2026-09-19T14:53:16.765Z",
+          "score": 6.3147
+        },
+        {
+          "story_id": "wt-7b25cee01b6074aa",
+          "slug": "gorch-fock-kriegstuchtig-zwischen-eisbergen-und-buckelwalen-6074aa",
+          "title": "Laut NDR: „Gorch Fock“ kehrt nach Kiel zurück",
+          "state": "neu",
+          "at": "2026-09-19T14:41:21.963Z",
+          "score": 5.7816
+        },
+        {
+          "story_id": "wt-1c7b1cd9b571ef0f",
+          "slug": "ukraine-news-russland-will-mit-afd-bei-gaslieferungen-kooperieren-71ef0f",
+          "title": "Laut MDR: Russland bietet AfD Kooperation bei Gaslieferungen an",
+          "state": "neu",
+          "at": "2026-09-19T13:26:39.031Z",
+          "score": 5.574
+        },
+        {
+          "story_id": "wt-492fde11550f416a",
+          "slug": "scharf-jugendherbergen-sind-lernorte-der-demokratie-jugendarbeit-und-jugendpolitik-0f416a",
+          "title": "Laut Bayerischer Staatsregierung bezeichnet Ministerin Scharf Jugendherbergen als Lernorte der Demokratie",
+          "state": "neu",
+          "at": "2026-09-19T11:42:35.195Z",
+          "score": 5.285
+        },
+        {
+          "story_id": "wt-9dd7fd56217f0777",
+          "slug": "sparpaket-gesundheitsminister-linnemann-krankenkassen-sollen-doch-wieder-uber-anhebung-v-7f0777",
+          "title": "Laut Gesundheitsminister Linnemann sollen Krankenkassen wieder über Zusatzbeiträge informieren",
+          "state": "neu",
+          "at": "2026-09-19T11:26:32.266Z",
+          "score": 5.2404
+        },
+        {
+          "story_id": "wt-00a2585a64ddcf4e",
+          "slug": "was-fur-ein-wahnsinn-grune-kritisieren-tankrabatt-plane-ddcf4e",
+          "title": "Tankrabatt und Spritpreisdeckel geplant – Kritik an Entlastung",
+          "state": "neu",
+          "at": "2026-09-19T10:55:41.332Z",
+          "score": 5.1547
+        },
+        {
+          "story_id": "wt-6ff0e95859ad76f8",
+          "slug": "kundigung-wann-eine-arbeitsrechtsschutzversicherung-sinnvoll-ist-ad76f8",
+          "title": "Kündigungsschutzklage kann laut Finanztip mehrere tausend Euro kosten",
+          "state": "neu",
+          "at": "2026-09-19T10:25:52.027Z",
+          "score": 5.0719
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-19-mittagslage",
       "slot": "mittagslage",
