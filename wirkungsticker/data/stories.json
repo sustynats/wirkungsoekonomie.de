@@ -2,8 +2,1520 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T04:54:06.103Z",
+  "updated_at": "2026-09-19T05:08:33.660Z",
   "stories": [
+    {
+      "story_id": "wt-45b402bd2485a3b0",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-45b402bd2485a3b0-614a0a0330b65e55-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-45b402bd2485a3b0-9a4dd0dd692671b2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-45b402bd2485a3b0-3178c2a3df477f62-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriff-auf-polizeiwache-in-pakistan-zahl-der-todesopfer-auf-31-gestiegen-85a3b0",
+      "title": "Laut Polizei: Bei Angriff auf Polizeiwache in Pakistan mindestens 31 Tote",
+      "source_summary": "Der stern berichtet über eine Explosion und einen Angriff mit Schusswaffen auf eine Polizeiwache im Norden Pakistans. Nach Angaben eines ranghohen Polizeibeamten stieg die Zahl der Todesopfer auf mindestens 31; unter den Getöteten seien 16 Polizeikräfte.\n\nDie Angaben werden im Bericht einer Aussage des Beamten gegenüber der Nachrichtenagentur AFP zugeschrieben. Eine unabhängige Bestätigung durch eine zweite Herkunft liegt im vorliegenden Quellenbestand nicht vor.\n\nPakistanische Gesundheitsbehörden meldeten zudem mehr als hundert Verletzte. Mehrere Verletzte sollen sich in kritischem Zustand befinden; der vollständige Kontext und die genaue Verantwortlichkeit bleiben offen.",
+      "summary": "Bei einem Angriff auf eine Polizeiwache im Norden Pakistans wurden laut einem ranghohen Polizeibeamten mindestens 31 Menschen getötet. Gesundheitsbehörden meldeten mehr als hundert Verletzte; eine unabhängige Bestätigung liegt nicht vor.",
+      "detail_summary": "Der stern berichtet über eine Explosion und einen Angriff mit Schusswaffen auf eine Polizeiwache im Norden Pakistans. Ein ranghoher Polizeibeamter wird mit der Angabe zitiert, mindestens 31 Menschen seien getötet worden, darunter 16 Polizeikräfte. Pakistanische Gesundheitsbehörden meldeten mehr als hundert Verletzte, von denen mehrere in kritischem Zustand seien. Der gesicherte Nachrichtenkern beruht damit auf einer journalistisch wiedergegebenen Einzelquelle und einer zugeschriebenen Behördenangabe. Unklar bleiben der vollständige Ablauf, die Verantwortlichkeit und die unabhängige Bestätigung.",
+      "why_relevant": "Die Meldung beschreibt eine schwere Sicherheitslage mit vielen gemeldeten Toten und Verletzten. Für die Bewertung müssen bestätigte Schäden von möglichen weiteren Folgen getrennt werden.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Gemeldeter Angriff mit Explosion und Schusswaffen auf eine Polizeiwache im Norden Pakistans mit mindestens 31 Toten und mehr als hundert Verletzten nach zugeschriebenen Angaben.",
+        "evaluation_target": {
+          "label": "Angriff auf eine Polizeiwache und mögliche Folgen",
+          "type": "event"
+        },
+        "baseline": "Sicherheits- und Versorgungszustand der betroffenen Region vor dem gemeldeten Angriff.",
+        "counterfactual": "Ohne den gemeldeten Angriff wären die daraus entstehenden unmittelbaren Verletzungen, Todesfälle und möglichen lokalen Störungen nicht eingetreten; weitere Entwicklungen bleiben unbekannt.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Funktionsfähigkeit öffentlicher Sicherheits- und Gesundheitsdienste",
+          "Agenda 2030/SDG 3 und SDG 16"
+        ],
+        "temporal_status": "ex_post",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der unmittelbar berichtete Schaden betrifft Tote und Verletzte. Darüber hinaus könnten anhaltende Unsicherheit und zusätzliche Belastungen von Sicherheits- und Gesundheitsdiensten Menschen im betroffenen Gebiet treffen; Reichweite und Dauer sind offen.",
+            "planet": "Die Quelle berichtet keine ökologischen Schäden. Ein schwacher, bedingter Pfad über mögliche lokale Sach- oder Stoffschäden bleibt modelliert, ist aber nicht belegt.",
+            "democracy": "Ein Angriff auf eine Sicherheitsinstitution könnte bei anhaltender Gewalt die Wahrnehmung staatlicher Schutzfähigkeit und lokale institutionelle Handlungsfähigkeit belasten. Eine konkrete Veränderung demokratischer Verfahren ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Berichtete Tote und Verletzte sowie mögliche unmittelbare Belastung der Sicherheits- und Gesundheitsfunktionen.",
+          "second_order": "Bei anhaltender Gefährdung könnten medizinische und polizeiliche Ressourcen gebunden und der Zugang zu Schutz erschwert werden.",
+          "third_order": "Wiederholte Gewalt könnte lokale institutionelle Resilienz schwächen; dafür fehlen Angaben zu Folgeereignissen und staatlicher Reaktion.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle belegt keine längerfristige Unterbrechung staatlicher Dienste.",
+            "Ökologische Schäden und demokratische Verfahrensänderungen sind nicht beobachtet.",
+            "Eine unabhängige Bestätigung der Angaben liegt nicht vor."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert. Sie beruft sich auf AFP sowie zugeschriebene Angaben eines ranghohen Polizeibeamten und pakistanischer Gesundheitsbehörden; unabhängige Herkunft ist nicht verifiziert.",
+          "institutional_status": "Berichteter Gewaltvorfall; Verantwortlichkeit, rechtliche Einordnung, Infrastrukturfolgen und längerfristige staatliche Reaktion bleiben offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der zweite Prüfpass findet keine unabhängige Quelle zu weitergehenden Folgen. Der berichtete unmittelbare Schadenskern ist von der möglichen Dauer und Reichweite weiterer Belastungen zu trennen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der Angriff kann über den berichteten unmittelbaren Schaden hinaus Sicherheits- und Versorgungsressourcen belasten. Dieser Folgepfad ist plausibel, aber wegen der Einzelquellenlage nur teilweise gestützt.",
+            "primary_paths": [
+              {
+                "label": "Zusätzliche Belastung von Menschen und lokaler Versorgung durch den Angriff",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Gewalt kann Verletzungen und Todesfälle verursachen und bei fortbestehender Gefährdung den Zugang zu Schutz und medizinischer Hilfe erschweren.",
+                "recipients": [
+                  "verletzte Menschen",
+                  "Angehörige",
+                  "Polizeikräfte",
+                  "lokale Bevölkerung",
+                  "medizinisches Personal"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der berichtete unmittelbare Schaden ist schwer; Ausmaß und Dauer weiterer Belastungen bleiben wegen der Einzelquellenlage unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Tote und Verletzte sowie mögliche Sicherheitsstörungen können mehrere lokale Gruppen betreffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Todesfälle und kritische Verletzungen kennzeichnen eine hohe mögliche Schadensintensität.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine längerfristige Belastung ist möglich, aber durch die Quelle nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Todesfälle wären irreversibel; weitere institutionelle Belastungen könnten sich verändern.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Verletzte, Angehörige und Menschen in unsicherer Umgebung sind besonders schutzbedürftig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine tiefere Systemwirkung ist denkbar, aber durch die Quelle nicht nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Pfad betrifft mögliche zusätzliche Folgen; eine eigenständige künftige Schutzgrenzverletzung ist dafür nicht ausreichend belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der berichtete Angriff zutrifft und Sicherheits- oder Versorgungsstörungen über den Tatort hinausreichen.",
+                "reference_space": "Betroffene Polizeiwache und angrenzende lokale Bevölkerung im Norden Pakistans",
+                "time_horizon": "Unmittelbar bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die gemeldeten Verletzungen und Todesfälle werden als Ausgangspunkt genommen; weitere Folgen werden nur bedingt modelliert.",
+                "source_support": "Die Quelle berichtet den Angriff, mindestens 31 Tote und mehr als hundert Verletzte. Dauer und Reichweite weiterer Belastungen belegt sie nicht.",
+                "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Infrastruktur- oder Versorgungsschäden und keine Daten zur Lage nach dem Angriff.",
+                "first_order": "Menschen könnten getötet, verletzt oder unmittelbar in ihrer Sicherheit beeinträchtigt werden.",
+                "second_order": "Gesundheits- und Sicherheitsdienste könnten bei anhaltender Gefährdung zusätzliche Ressourcen binden.",
+                "third_order": "Wiederholte Gewalt könnte lokale Resilienz und staatliche Schutzfähigkeit schwächen; das bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zweite Quelle zu Reichweite oder Dauer der Folgen im gelieferten Bestand; der Pfad bleibt teilweise hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht belegt; die Abwägung betrifft daher ausschließlich einen negativen, bedingten Folgepfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Zusätzliche Belastung von Menschen und lokaler Versorgung durch den Angriff",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+                "direction": "negative",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "reference_space": "Polizeiwache und betroffene Bevölkerung im Norden Pakistans",
+                "observed_at": "2026-09-19",
+                "temporal_status": "ex_post",
+                "mechanism": "Explosion und Angriff mit Schusswaffen nach zugeschriebenen Angaben",
+                "recipients": [
+                  "Getötete",
+                  "Verletzte",
+                  "Polizeikräfte",
+                  "lokale Bevölkerung"
+                ],
+                "time_horizon": "Unmittelbar",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die gemeldete Opferzahl und mehr als hundert Verletzte zeigen breite unmittelbare Betroffenheit.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Todesfälle und kritische Verletzungen weisen auf hohe unmittelbare Schwere hin.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des beobachteten Schadens wird im Bericht nicht ausgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Die gemeldeten Todesfälle sind unumkehrbar; Verletzungsfolgen bleiben teilweise offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Verletzte Menschen und Einsatzkräfte sind unmittelbar besonders schutzbedürftig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Weitergehende institutionelle Folgen sind im Bericht nicht beobachtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Die berichteten Todesfälle und Verletzungen berühren unmittelbar die Schutzgrenze von Leben und körperlicher Unversehrtheit.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Polizeiwache und betroffene Bevölkerung im Norden Pakistans",
+              "observed_at": "2026-09-19",
+              "temporal_status": "ex_post",
+              "mechanism": "Explosion und Angriff mit Schusswaffen nach zugeschriebenen Angaben",
+              "recipients": [
+                "Getötete",
+                "Verletzte",
+                "Polizeikräfte",
+                "lokale Bevölkerung"
+              ],
+              "time_horizon": "Unmittelbar",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die gemeldete Opferzahl und mehr als hundert Verletzte zeigen breite unmittelbare Betroffenheit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Todesfälle und kritische Verletzungen weisen auf hohe unmittelbare Schwere hin.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des beobachteten Schadens wird im Bericht nicht ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Die gemeldeten Todesfälle sind unumkehrbar; Verletzungsfolgen bleiben teilweise offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Verletzte Menschen und Einsatzkräfte sind unmittelbar besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Weitergehende institutionelle Folgen sind im Bericht nicht beobachtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die berichteten Todesfälle und Verletzungen berühren unmittelbar die Schutzgrenze von Leben und körperlicher Unversehrtheit.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung findet keinen Beleg für ökologische Schäden. Ein niedriger, bedingter Pfad über mögliche lokale Zerstörung oder Entsorgung bleibt hoch unsicher.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Quelle enthält keine Umweltangaben. Ein ökologischer Pfad ist nur als begrenzte Möglichkeit am Ort des Angriffs formulierbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche lokale Umweltbelastung durch Explosion und beschädigte Infrastruktur",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine Explosion könnte lokal Material freisetzen oder Infrastruktur beschädigen; daraus könnten begrenzte Belastungen von Boden, Luft oder Entsorgung entstehen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Anwohnerinnen und Anwohner",
+                  "Einsatz- und Entsorgungskräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Quelle bestätigt keine ökologische Folge; der Pfad bleibt räumlich begrenzt und hoch unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Belastung wäre voraussichtlich auf den Tatort und sein Umfeld begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Zur Stärke einer möglichen Umweltbelastung liegen keine Messungen vor.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine längere Umweltwirkung ist nicht belegt und von der Schadensart abhängig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche lokale Belastungen wären grundsätzlich begrenzbar und reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere ökologische Verwundbarkeit wird in der Quelle nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische ökologische Wirkung wird von der Quelle nicht gestützt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird durch die Quelle nicht beschrieben.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Explosion relevante Sach- oder Stoffschäden verursacht hat; dafür gibt es keinen gelieferten Beleg.",
+                "reference_space": "Tatort und unmittelbares lokales Umfeld",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Explosion wird lediglich als möglicher Ausgangspunkt lokaler Belastung betrachtet; Art und Umfang der Schäden sind unbekannt.",
+                "source_support": "Die Quelle belegt eine Explosion, aber keine Umwelt- oder Infrastrukturschäden.",
+                "limitations": "Keine Messwerte, keine Beschreibung der Gebäudeschäden und keine unabhängige Umweltprüfung.",
+                "first_order": "Eine lokale Belastung durch Trümmer oder freigesetzte Stoffe könnte entstehen.",
+                "second_order": "Aufräum- und Entsorgungsarbeiten könnten kurzfristig zusätzliche Ressourcen benötigen.",
+                "third_order": "Eine weitergehende ökologische Kaskade ist mangels Belegen nicht belastbar modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Umweltquelle und keine Schadensdaten im gelieferten Bestand; Richtung und Eintritt bleiben unsicher.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver ökologischer Hauptpfad ist nicht erkennbar; der negative Pfad bleibt wegen fehlender Umweltbelege niedrig und unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche lokale Umweltbelastung durch Explosion und beschädigte Infrastruktur",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Umweltbelastung durch Explosion und beschädigte Infrastruktur",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Prüfung findet keinen Beleg für eine bereits eingetretene Veränderung demokratischer Verfahren. Ein bedingter Pfad über Vertrauen und institutionelle Handlungsfähigkeit bleibt offen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Angriff auf eine Polizeiwache kann bei anhaltender Unsicherheit die Wahrnehmung staatlicher Schutzfähigkeit beeinflussen. Die Quelle belegt jedoch keine konkrete politische oder demokratische Folge.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Belastung lokaler institutioneller Handlungsfähigkeit",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein schwerer Angriff auf eine Sicherheitsinstitution könnte bei anhaltender Gewalt Vertrauen in Schutzfunktionen und lokale staatliche Handlungsfähigkeit schwächen.",
+                "recipients": [
+                  "lokale Bevölkerung",
+                  "Polizeibehörden",
+                  "kommunale Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der institutionelle Bezug des Tatorts ist klar, die demokratische Folge aber nur bedingt und nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die mögliche Wirkung beträfe vor allem lokale Bevölkerung und zuständige Institutionen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Vertrauensverlust könnte relevant sein, ist aber nicht mit Daten belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hinge von weiterer Gewalt und staatlicher Reaktion ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen und institutionelle Abläufe können grundsätzlich wiederhergestellt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen in unsicheren Gebieten sind stärker auf Schutzinstitutionen angewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Eine tiefere demokratische Wirkung ist möglich, aber im Bericht nicht nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine Einschränkung demokratischer Rechte oder Verfahren.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Unsicherheit anhält und die staatliche Reaktion als unzureichend wahrgenommen wird.",
+                "reference_space": "Lokale staatliche Sicherheitsinstitutionen und Bevölkerung im betroffenen Gebiet",
+                "time_horizon": "Kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Angriff wird als Ereignis mit institutioneller Symbolwirkung betrachtet; eine tatsächliche Vertrauensänderung wird nicht behauptet.",
+                "source_support": "Die Quelle belegt den Angriff auf eine Polizeiwache und die gemeldeten Opfer, nicht aber eine Veränderung von Vertrauen oder demokratischen Verfahren.",
+                "limitations": "Keine Umfragen, Verhaltensdaten oder Angaben zur staatlichen Reaktion liegen vor.",
+                "first_order": "Die betroffene Sicherheitsinstitution könnte vorübergehend weniger handlungsfähig erscheinen.",
+                "second_order": "Anhaltende Unsicherheit könnte die Wahrnehmung staatlicher Schutzfähigkeit beeinflussen.",
+                "third_order": "Bei wiederholten Vorfällen könnte sich die institutionelle Legitimität lokal abschwächen; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quelle zu Vertrauen, institutioneller Leistung oder demokratischen Folgen; der Pfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbarer positiver institutioneller Pfad ist nicht belegt; eine demokratische Schutzgrenze wird durch die Quelle nicht beschrieben."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Belastung lokaler institutioneller Handlungsfähigkeit",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Belastung lokaler institutioneller Handlungsfähigkeit",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Polizeiwache und betroffene Bevölkerung im Norden Pakistans",
+            "observed_at": "2026-09-19",
+            "temporal_status": "ex_post",
+            "mechanism": "Explosion und Angriff mit Schusswaffen nach zugeschriebenen Angaben",
+            "recipients": [
+              "Getötete",
+              "Verletzte",
+              "Polizeikräfte",
+              "lokale Bevölkerung"
+            ],
+            "time_horizon": "Unmittelbar",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Die gemeldete Opferzahl und mehr als hundert Verletzte zeigen breite unmittelbare Betroffenheit.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Todesfälle und kritische Verletzungen weisen auf hohe unmittelbare Schwere hin.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer des beobachteten Schadens wird im Bericht nicht ausgewiesen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Die gemeldeten Todesfälle sind unumkehrbar; Verletzungsfolgen bleiben teilweise offen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Verletzte Menschen und Einsatzkräfte sind unmittelbar besonders schutzbedürftig.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Weitergehende institutionelle Folgen sind im Bericht nicht beobachtet.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Die berichteten Todesfälle und Verletzungen berühren unmittelbar die Schutzgrenze von Leben und körperlicher Unversehrtheit.",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 17,
+              "divisor": 6,
+              "raw": 2.8333333333333335,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T05:12:04.230Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der Bericht trägt die zugeschriebenen Angaben zum Angriff, zu mindestens 31 Toten, 16 getöteten Polizeikräften und mehr als hundert Verletzten sowie die begrenzte Quellenlage."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex post",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der zweite Prüfpass findet keine unabhängige Quelle zu weitergehenden Folgen. Der berichtete unmittelbare Schadenskern ist von der möglichen Dauer und Reichweite weiterer Belastungen zu trennen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der Angriff kann über den berichteten unmittelbaren Schaden hinaus Sicherheits- und Versorgungsressourcen belasten. Dieser Folgepfad ist plausibel, aber wegen der Einzelquellenlage nur teilweise gestützt.",
+          "primary_paths": [
+            {
+              "label": "Zusätzliche Belastung von Menschen und lokaler Versorgung durch den Angriff",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Gewalt kann Verletzungen und Todesfälle verursachen und bei fortbestehender Gefährdung den Zugang zu Schutz und medizinischer Hilfe erschweren.",
+              "recipients": [
+                "verletzte Menschen",
+                "Angehörige",
+                "Polizeikräfte",
+                "lokale Bevölkerung",
+                "medizinisches Personal"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der berichtete unmittelbare Schaden ist schwer; Ausmaß und Dauer weiterer Belastungen bleiben wegen der Einzelquellenlage unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Tote und Verletzte sowie mögliche Sicherheitsstörungen können mehrere lokale Gruppen betreffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Todesfälle und kritische Verletzungen kennzeichnen eine hohe mögliche Schadensintensität.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine längerfristige Belastung ist möglich, aber durch die Quelle nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Todesfälle wären irreversibel; weitere institutionelle Belastungen könnten sich verändern.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Verletzte, Angehörige und Menschen in unsicherer Umgebung sind besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine tiefere Systemwirkung ist denkbar, aber durch die Quelle nicht nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Pfad betrifft mögliche zusätzliche Folgen; eine eigenständige künftige Schutzgrenzverletzung ist dafür nicht ausreichend belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der berichtete Angriff zutrifft und Sicherheits- oder Versorgungsstörungen über den Tatort hinausreichen.",
+              "reference_space": "Betroffene Polizeiwache und angrenzende lokale Bevölkerung im Norden Pakistans",
+              "time_horizon": "Unmittelbar bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die gemeldeten Verletzungen und Todesfälle werden als Ausgangspunkt genommen; weitere Folgen werden nur bedingt modelliert.",
+              "source_support": "Die Quelle berichtet den Angriff, mindestens 31 Tote und mehr als hundert Verletzte. Dauer und Reichweite weiterer Belastungen belegt sie nicht.",
+              "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Infrastruktur- oder Versorgungsschäden und keine Daten zur Lage nach dem Angriff.",
+              "first_order": "Menschen könnten getötet, verletzt oder unmittelbar in ihrer Sicherheit beeinträchtigt werden.",
+              "second_order": "Gesundheits- und Sicherheitsdienste könnten bei anhaltender Gefährdung zusätzliche Ressourcen binden.",
+              "third_order": "Wiederholte Gewalt könnte lokale Resilienz und staatliche Schutzfähigkeit schwächen; das bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zweite Quelle zu Reichweite oder Dauer der Folgen im gelieferten Bestand; der Pfad bleibt teilweise hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbarer positiver Hauptpfad ist nicht belegt; die Abwägung betrifft daher ausschließlich einen negativen, bedingten Folgepfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zusätzliche Belastung von Menschen und lokaler Versorgung durch den Angriff",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "reference_space": "Polizeiwache und betroffene Bevölkerung im Norden Pakistans",
+              "observed_at": "2026-09-19",
+              "temporal_status": "ex_post",
+              "mechanism": "Explosion und Angriff mit Schusswaffen nach zugeschriebenen Angaben",
+              "recipients": [
+                "Getötete",
+                "Verletzte",
+                "Polizeikräfte",
+                "lokale Bevölkerung"
+              ],
+              "time_horizon": "Unmittelbar",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die gemeldete Opferzahl und mehr als hundert Verletzte zeigen breite unmittelbare Betroffenheit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Todesfälle und kritische Verletzungen weisen auf hohe unmittelbare Schwere hin.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des beobachteten Schadens wird im Bericht nicht ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Die gemeldeten Todesfälle sind unumkehrbar; Verletzungsfolgen bleiben teilweise offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Verletzte Menschen und Einsatzkräfte sind unmittelbar besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Weitergehende institutionelle Folgen sind im Bericht nicht beobachtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die berichteten Todesfälle und Verletzungen berühren unmittelbar die Schutzgrenze von Leben und körperlicher Unversehrtheit.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+            "reference_space": "Polizeiwache und betroffene Bevölkerung im Norden Pakistans",
+            "observed_at": "2026-09-19",
+            "temporal_status": "ex_post",
+            "mechanism": "Explosion und Angriff mit Schusswaffen nach zugeschriebenen Angaben",
+            "recipients": [
+              "Getötete",
+              "Verletzte",
+              "Polizeikräfte",
+              "lokale Bevölkerung"
+            ],
+            "time_horizon": "Unmittelbar",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Die gemeldete Opferzahl und mehr als hundert Verletzte zeigen breite unmittelbare Betroffenheit.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Todesfälle und kritische Verletzungen weisen auf hohe unmittelbare Schwere hin.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer des beobachteten Schadens wird im Bericht nicht ausgewiesen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "irreversibility": {
+                "value": 4,
+                "rationale": "Die gemeldeten Todesfälle sind unumkehrbar; Verletzungsfolgen bleiben teilweise offen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Verletzte Menschen und Einsatzkräfte sind unmittelbar besonders schutzbedürftig.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Weitergehende institutionelle Folgen sind im Bericht nicht beobachtet.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Die berichteten Todesfälle und Verletzungen berühren unmittelbar die Schutzgrenze von Leben und körperlicher Unversehrtheit.",
+              "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 17,
+              "divisor": 6,
+              "raw": 2.8333333333333335,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Mindestens 31 Menschen wurden nach Angaben eines ranghohen Polizeibeamten getötet; Gesundheitsbehörden meldeten mehr als hundert Verletzte.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung findet keinen Beleg für ökologische Schäden. Ein niedriger, bedingter Pfad über mögliche lokale Zerstörung oder Entsorgung bleibt hoch unsicher.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Quelle enthält keine Umweltangaben. Ein ökologischer Pfad ist nur als begrenzte Möglichkeit am Ort des Angriffs formulierbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche lokale Umweltbelastung durch Explosion und beschädigte Infrastruktur",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine Explosion könnte lokal Material freisetzen oder Infrastruktur beschädigen; daraus könnten begrenzte Belastungen von Boden, Luft oder Entsorgung entstehen.",
+              "recipients": [
+                "lokale Umwelt",
+                "Anwohnerinnen und Anwohner",
+                "Einsatz- und Entsorgungskräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Quelle bestätigt keine ökologische Folge; der Pfad bleibt räumlich begrenzt und hoch unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Belastung wäre voraussichtlich auf den Tatort und sein Umfeld begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Zur Stärke einer möglichen Umweltbelastung liegen keine Messungen vor.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine längere Umweltwirkung ist nicht belegt und von der Schadensart abhängig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche lokale Belastungen wären grundsätzlich begrenzbar und reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere ökologische Verwundbarkeit wird in der Quelle nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische ökologische Wirkung wird von der Quelle nicht gestützt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird durch die Quelle nicht beschrieben.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Explosion relevante Sach- oder Stoffschäden verursacht hat; dafür gibt es keinen gelieferten Beleg.",
+              "reference_space": "Tatort und unmittelbares lokales Umfeld",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Explosion wird lediglich als möglicher Ausgangspunkt lokaler Belastung betrachtet; Art und Umfang der Schäden sind unbekannt.",
+              "source_support": "Die Quelle belegt eine Explosion, aber keine Umwelt- oder Infrastrukturschäden.",
+              "limitations": "Keine Messwerte, keine Beschreibung der Gebäudeschäden und keine unabhängige Umweltprüfung.",
+              "first_order": "Eine lokale Belastung durch Trümmer oder freigesetzte Stoffe könnte entstehen.",
+              "second_order": "Aufräum- und Entsorgungsarbeiten könnten kurzfristig zusätzliche Ressourcen benötigen.",
+              "third_order": "Eine weitergehende ökologische Kaskade ist mangels Belegen nicht belastbar modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Umweltquelle und keine Schadensdaten im gelieferten Bestand; Richtung und Eintritt bleiben unsicher.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver ökologischer Hauptpfad ist nicht erkennbar; der negative Pfad bleibt wegen fehlender Umweltbelege niedrig und unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Umweltbelastung durch Explosion und beschädigte Infrastruktur",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche lokale Umweltbelastung durch Explosion und beschädigte Infrastruktur",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Prüfung findet keinen Beleg für eine bereits eingetretene Veränderung demokratischer Verfahren. Ein bedingter Pfad über Vertrauen und institutionelle Handlungsfähigkeit bleibt offen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Angriff auf eine Polizeiwache kann bei anhaltender Unsicherheit die Wahrnehmung staatlicher Schutzfähigkeit beeinflussen. Die Quelle belegt jedoch keine konkrete politische oder demokratische Folge.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Belastung lokaler institutioneller Handlungsfähigkeit",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein schwerer Angriff auf eine Sicherheitsinstitution könnte bei anhaltender Gewalt Vertrauen in Schutzfunktionen und lokale staatliche Handlungsfähigkeit schwächen.",
+              "recipients": [
+                "lokale Bevölkerung",
+                "Polizeibehörden",
+                "kommunale Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der institutionelle Bezug des Tatorts ist klar, die demokratische Folge aber nur bedingt und nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die mögliche Wirkung beträfe vor allem lokale Bevölkerung und zuständige Institutionen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Vertrauensverlust könnte relevant sein, ist aber nicht mit Daten belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hinge von weiterer Gewalt und staatlicher Reaktion ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen und institutionelle Abläufe können grundsätzlich wiederhergestellt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen in unsicheren Gebieten sind stärker auf Schutzinstitutionen angewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine tiefere demokratische Wirkung ist möglich, aber im Bericht nicht nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine Einschränkung demokratischer Rechte oder Verfahren.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Unsicherheit anhält und die staatliche Reaktion als unzureichend wahrgenommen wird.",
+              "reference_space": "Lokale staatliche Sicherheitsinstitutionen und Bevölkerung im betroffenen Gebiet",
+              "time_horizon": "Kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Angriff wird als Ereignis mit institutioneller Symbolwirkung betrachtet; eine tatsächliche Vertrauensänderung wird nicht behauptet.",
+              "source_support": "Die Quelle belegt den Angriff auf eine Polizeiwache und die gemeldeten Opfer, nicht aber eine Veränderung von Vertrauen oder demokratischen Verfahren.",
+              "limitations": "Keine Umfragen, Verhaltensdaten oder Angaben zur staatlichen Reaktion liegen vor.",
+              "first_order": "Die betroffene Sicherheitsinstitution könnte vorübergehend weniger handlungsfähig erscheinen.",
+              "second_order": "Anhaltende Unsicherheit könnte die Wahrnehmung staatlicher Schutzfähigkeit beeinflussen.",
+              "third_order": "Bei wiederholten Vorfällen könnte sich die institutionelle Legitimität lokal abschwächen; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quelle zu Vertrauen, institutioneller Leistung oder demokratischen Folgen; der Pfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbarer positiver institutioneller Pfad ist nicht belegt; eine demokratische Schutzgrenze wird durch die Quelle nicht beschrieben."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Belastung lokaler institutioneller Handlungsfähigkeit",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Belastung lokaler institutioneller Handlungsfähigkeit",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T05:08:33.660Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T04:47:21.000Z",
+      "last_updated": "2026-09-19T05:12:04.226Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-167bac3500b74a0050b5",
+      "case_file": null,
+      "source_published_at": "2026-09-19T04:47:21.000Z",
+      "published_at": "2026-09-19T05:12:04.226Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/angriff-auf-polizeiwache-in-pakistan--zahl-der-todesopfer-auf-31-gestiegen-38275910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T04:47:21.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-1e97ba2918206370",
       "title_image": {
