@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-19T16:08:51.165Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-19T16:23:15.260Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -31,6 +31,38 @@
         "planet": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/umstrittener-tankrabatt-bund-beschliesst-milliarden-hilfen-trotz-scharfer-kritik-028a37/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/umstrittener-tankrabatt-bund-beschliesst-milliarden-hilfen-trotz-scharfer-kritik-028a37/",
+      "title": "Laut Heise: Tankrabatt-Pläne mit Steuersenkungen und Preisdeckel umstritten",
+      "summary": "Laut Heise plant die Politik Steuersenkungen und einen Preisdeckel gegen hohe Spritpreise. Konkrete Ausgestaltung, Finanzierung und Verteilungseffekte bleiben offen.",
+      "date_published": "2026-09-19T15:48:00.000Z",
+      "date_modified": "2026-09-19T15:48:00.000Z",
+      "_woek_released_at": "2026-09-19T16:25:27.816Z",
+      "tags": [
+        "Finanzen",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
