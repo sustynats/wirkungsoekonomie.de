@@ -2,8 +2,1884 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-19T16:08:51.165Z",
+  "updated_at": "2026-09-19T16:23:15.260Z",
   "stories": [
+    {
+      "story_id": "wt-ffc8198953028a37",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-ffc8198953028a37-8a06d298fe684ba4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-ffc8198953028a37-221c1e7efbe6137f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-ffc8198953028a37-ef748bd0388ca223-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "umstrittener-tankrabatt-bund-beschliesst-milliarden-hilfen-trotz-scharfer-kritik-028a37",
+      "title": "Laut Heise: Tankrabatt-Pläne mit Steuersenkungen und Preisdeckel umstritten",
+      "source_summary": "Heise online - Wirtschaft berichtet über politische Pläne, die hohen Spritpreise mit Steuersenkungen und einem Preisdeckel zu dämpfen. Der Beitrag bezeichnet das Vorhaben als umstritten und ordnet es als Tankrabatt ein.\n\nNach der vorliegenden Zusammenfassung werfen die Regierungspläne Fragen auf und führen zu Vorwürfen. Welche konkreten Steuersätze, Preisgrenzen, Laufzeiten oder finanziellen Volumina vorgesehen sind, geht aus dem gelieferten Textausschnitt nicht hervor.\n\nDie Meldung stützt sich auf eine journalistische Quelle. Eine unabhängige Bestätigung oder eine Primärquelle liegt im Quellenbestand nicht vor; deshalb bleibt der genaue Stand des Vorhabens offen.",
+      "summary": "Laut Heise plant die Politik Steuersenkungen und einen Preisdeckel gegen hohe Spritpreise. Konkrete Ausgestaltung, Finanzierung und Verteilungseffekte bleiben offen.",
+      "detail_summary": "Heise berichtet über politische Pläne, die hohen Spritpreise mit Steuersenkungen und einem Preisdeckel dämpfen sollen. Der Beitrag beschreibt das Vorhaben als umstritten und nennt offene Fragen sowie Vorwürfe gegen die Regierungspläne. Nachrichtenwert hat der mögliche Eingriff, weil er Preise, staatliche Einnahmen und das Verhalten von Autofahrenden berühren könnte. Ob und wann die Maßnahmen umgesetzt werden, ist aus dem vorliegenden Ausschnitt nicht ersichtlich. Auch konkrete Beträge, Grenzen und Schutzmechanismen bleiben unbelegt.",
+      "why_relevant": "Ein Tankrabatt könnte Preise und staatliche Einnahmen verändern; seine Verteilung, Dauer und Wirkung auf Verbrauch und Mobilität sind jedoch offen.",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über geplante Steuersenkungen und einen Preisdeckel zur Dämpfung hoher Spritpreise",
+        "evaluation_target": {
+          "label": "geplante Kraftstoffpreis- und Steuermaßnahme",
+          "type": "proposal"
+        },
+        "baseline": "Hohe Spritpreise ohne die angekündigten Maßnahmen; konkrete Vergleichswerte fehlen.",
+        "counterfactual": "Ohne die Pläne würden die im Bericht beschriebenen hohen Spritpreise und die bisherige Preis- und Steuerstruktur fortbestehen, soweit keine andere Maßnahme greift.",
+        "reference_frame": [
+          "bezahlbare Mobilität",
+          "staatliche Einnahmen",
+          "nachhaltiger Energieverbrauch",
+          "Verteilungsgerechtigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Maßnahme könnte Haushaltsbudgets und Mobilitätsmöglichkeiten beeinflussen. Verteilung und tatsächliche Entlastung sind ohne Ausgestaltung nicht bestimmbar.",
+            "planet": "Niedrigere Kraftstoffpreise könnten den Sparanreiz schwächen; die ökologische Wirkung hängt von Dauer, Umfang und tatsächlicher Preisweitergabe ab.",
+            "democracy": "Ein Preis- und Steuerinstrument könnte politische Prioritäten und die Debatte über Entlastung beeinflussen. Ein institutioneller oder parteipolitischer Machtpfad ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche Veränderung von Kraftstoffpreisen durch Steuersenkung oder Preisdeckel.",
+          "second_order": "Mögliche Folgen für Haushaltsbudgets, Verbrauch, Mobilitätsentscheidungen und staatliche Einnahmen unter der Bedingung tatsächlicher Umsetzung.",
+          "third_order": "Mögliche längerfristige Verschiebung von Energie- und Mobilitätsanreizen; dafür fehlen Angaben zu Dauer, Umfang und Alternativen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Der Bericht nennt keine konkreten Beträge, Laufzeiten oder Wirkungsdaten.",
+            "Eine unabhängige Bestätigung und eine Primärquelle fehlen.",
+            "Die tatsächliche Weitergabe einer Entlastung an Verbraucherinnen und Verbraucher ist offen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle mit nicht verifizierter unabhängiger Herkunft vor. Die Quelle belegt den Bericht und seine Darstellung, nicht die tatsächliche Umsetzung oder Wirkung.",
+          "institutional_status": "Der vorliegende Text beschreibt Regierungspläne. Ein konkreter Gesetzentwurf, ein endgültiger Beschluss oder ein Inkrafttreten sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt nur die geplanten Instrumente. Verteilung, Reichweite und tatsächliche Entlastung lassen sich ohne konkrete Ausgestaltung nicht bestimmen.",
+            "reviewed_source_ids": [
+              "heise-wirtschaft"
+            ],
+            "rationale": "Die Maßnahme könnte Kraftstoffkosten für einige Haushalte senken, zugleich aber wegen unbekannter Finanzierung und Verteilung andere Haushalte oder den Staatshaushalt belasten. Daher ist der Pfad gemischt und nur schwach belegt.",
+            "primary_paths": [
+              {
+                "label": "Kraftstoffentlastung verändert Haushaltsbudgets",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Steuersenkungen oder ein Preisdeckel könnten den Zahlbetrag an Tankstellen senken, wenn sie umgesetzt und weitergegeben werden.",
+                "recipients": [
+                  "Haushalte mit Kraftstoffbedarf",
+                  "Pendlerinnen und Pendler"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite könnte beträchtlich sein, aber konkrete Preis- und Haushaltsdaten fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoffpreise können viele mobile Haushalte betreffen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Entlastungsstärke hängt von unbekannten Sätzen und Grenzen ab.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine Laufzeit wird im vorliegenden Ausschnitt nicht genannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preis- und Steueränderungen wären grundsätzlich wieder veränderbar.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Auf das Auto angewiesene Haushalte könnten besonders profitieren.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Preisen in Haushaltsbudgets und Mobilitätsentscheidungen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete existenzielle Schutzgrenze ist im Quellenbestand nicht belegt.",
+                  "reference_frame": "bezahlbare Mobilität",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Umsetzung, tatsächliche Preisweitergabe und ausreichende Reichweite der Maßnahme.",
+                "reference_space": "Haushalte und Kraftstoffmarkt im betroffenen politischen Zuständigkeitsraum.",
+                "time_horizon": "Während einer möglichen Laufzeit der Maßnahmen.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass die Instrumente den Zahlbetrag tatsächlich beeinflussen und Haushalte die Veränderung wahrnehmen.",
+                "source_support": "Die Quelle nennt Steuersenkungen und einen Preisdeckel; sie belegt keine Entlastung einzelner Haushalte.",
+                "limitations": "Beträge, Laufzeit, Weitergabe und Verteilung fehlen.",
+                "first_order": "Kraftstoffkosten könnten sinken.",
+                "second_order": "Haushalte könnten mehr verfügbares Einkommen behalten oder ihre Mobilität anpassen.",
+                "third_order": "Veränderte Mobilitätsmuster könnten Verteilung und Nachfrage beeinflussen; dies bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen Angaben zu Reichweite oder Verteilung im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Preisstützung belastet öffentliche Mittel oder Verteilung",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Steuersenkungen könnten Einnahmen mindern und ein Preisdeckel könnte Entlastungen nach Verbrauch statt nach Bedürftigkeit verteilen.",
+                "recipients": [
+                  "öffentliche Haushalte",
+                  "Haushalte ohne oder mit geringem Kraftstoffverbrauch"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Pfad ist materiell, seine Größe hängt von nicht genannten Einnahmeausfällen und Regeln ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Folgen könnten den Staatshaushalt und unterschiedliche Haushaltsgruppen betreffen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Intensität ist ohne finanzielle Eckdaten nicht bestimmbar.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer der möglichen Einnahme- und Verteilungswirkung ist unbekannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Steuer- und Preisregeln wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Die Verteilung könnte Haushalte mit geringer Mobilität anders behandeln.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad verbindet Preisregel, öffentliche Einnahmen und Verteilung.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzverletzung oder Mindestversorgungsschwelle ist nicht belegt.",
+                  "reference_frame": "Verteilung und öffentliche Handlungsfähigkeit",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Steuersenkungen und Preisdeckel werden beschlossen, finanziell wirksam und nicht zielgenau kompensiert.",
+                "reference_space": "öffentliche Haushalte und Haushalte mit unterschiedlichem Kraftstoffverbrauch.",
+                "time_horizon": "Mittelfristig während und nach einer möglichen Maßnahme.",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass eine staatliche Entlastung finanzielle Verteilungswirkungen hat.",
+                "source_support": "Die Quelle nennt Steuersenkungen, Preisdeckel und Vorwürfe; konkrete Einnahme- oder Verteilungsdaten fehlen.",
+                "limitations": "Keine Angaben zu Finanzierung, Zielgenauigkeit oder Haushaltswirkung.",
+                "first_order": "Staatliche Einnahmen oder Marktpreise könnten sich verändern.",
+                "second_order": "Die Entlastung könnte unterschiedlich stark bei Haushalten ankommen.",
+                "third_order": "Andere öffentliche Prioritäten könnten mittelbar betroffen sein; dafür gibt es keinen konkreten Beleg.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine Haushalts- oder Verteilungsdaten.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Möglicherweise schwächerer Sparanreiz beim Kraftstoffverbrauch",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Niedrigere effektive Kraftstoffpreise könnten bei unverändertem Verkehrsangebot den Anreiz zum Sparen verringern.",
+                "recipients": [
+                  "Kraftstoffverbraucherinnen und -verbraucher",
+                  "Haushalte mit hoher Fahrleistung"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Mechanismus ist plausibel, aber Ausmaß und Dauer sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Nutzerinnen und Nutzer von Kraftstoff.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Preisänderung ist nicht quantifiziert.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Laufzeit der Maßnahme ist unbekannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verbrauchsentscheidungen können grundsätzlich wieder geändert werden.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Schutzgruppe ist im Bericht nicht ausgewiesen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad reicht nur bedingt über individuelle Fahrentscheidungen hinaus.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "sparsamer Kraftstoffverbrauch",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Die Maßnahme senkt den effektiven Preis und hält länger an.",
+                "reference_space": "Kraftstoffverbrauch im betroffenen Markt.",
+                "time_horizon": "Während einer möglichen Preisentlastung.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen beeinflussen einzelne Fahr- und Verbrauchsentscheidungen.",
+                "source_support": "Die Quelle nennt Maßnahmen zur Dämpfung der Spritpreise, aber keine Verbrauchsdaten.",
+                "limitations": "Kein gemessener Verbrauchseffekt und keine konkrete Preisänderung liegen vor.",
+                "first_order": "Der effektive Kraftstoffpreis könnte sinken.",
+                "second_order": "Spar- oder Fahrentscheidungen könnten sich verändern.",
+                "third_order": "Ein dauerhafter Effekt auf Mobilitätsmuster ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Verbrauchs- oder Mobilitätsdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Mögliche finanzielle Entlastung und mögliche Verteilungs- oder Einnahmerisiken sind vergleichbar, aber beide Pfade bleiben wegen fehlender Eckdaten unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Kraftstoffentlastung verändert Haushaltsbudgets",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kraftstoffentlastung verändert Haushaltsbudgets",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine Emissionen oder Verbrauchsänderungen. Der ökologische Pfad bleibt eine bedingte Hypothese über mögliche Preis- und Fahranreize.",
+            "reviewed_source_ids": [
+              "heise-wirtschaft"
+            ],
+            "rationale": "Eine Verbilligung fossiler Kraftstoffe könnte den Sparanreiz schwächen. Ein gegenläufiger positiver Umweltpfad ist aus dem Quellenbestand nicht ableitbar.",
+            "primary_paths": [
+              {
+                "label": "Niedrigere effektive Kraftstoffpreise können Verbrauchsanreize verändern",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Steuersenkungen oder ein Preisdeckel könnten den Preis fossiler Kraftstoffe dämpfen und dadurch Sparanreize abschwächen.",
+                "recipients": [
+                  "Kraftstoffverbrauch",
+                  "Umwelt und Klima"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Effekt ist begrenzt durch unbekannte Höhe und Dauer und nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad erreicht Nutzerinnen und Nutzer von Kraftstoff.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Stärke einer möglichen Verbilligung ist unbekannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Laufzeit wird nicht genannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisbedingte Verbrauchsänderungen wären grundsätzlich umkehrbar.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ökologische Schutzgrenze wird nicht beschrieben.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zunächst Preise und individuelle Verbrauchsentscheidungen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Grenzverletzung ist im Quellenbestand nicht belegt.",
+                  "reference_frame": "Vermeidung zusätzlichen fossilen Verbrauchs",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Die Maßnahmen senken den effektiven Kraftstoffpreis und führen zu zusätzlichem Verbrauch.",
+                "reference_space": "Kraftstoffmarkt und Verkehr im betroffenen Zuständigkeitsraum.",
+                "time_horizon": "Während einer möglichen Laufzeit und mit möglichem Nachlauf.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen beeinflussen Verbrauch und die Wahl von Verkehrsmitteln.",
+                "source_support": "Die Quelle nennt eine geplante Dämpfung hoher Spritpreise, aber keine ökologischen Folgen.",
+                "limitations": "Keine Daten zu Preisänderung, Verbrauch, Emissionen oder Alternativen.",
+                "first_order": "Der effektive Preis fossiler Kraftstoffe könnte sinken.",
+                "second_order": "Der Kraftstoffverbrauch könnte weniger stark zurückgehen oder steigen.",
+                "third_order": "Emissionen könnten dadurch höher ausfallen; dieser Pfad ist nicht gemessen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Umwelt- oder Verbrauchsdaten im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Verlagerung von Mobilitätsentscheidungen",
+                "direction": "open",
+                "type": "side_effect",
+                "mechanism": "Veränderte Kraftstoffpreise könnten zwischen Auto, öffentlichem Verkehr und anderen Mobilitätsformen verschieben.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "Verkehrssysteme"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Richtung und Umfang hängen von verfügbaren Alternativen und der Preisänderung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Personen mit Wahlmöglichkeiten bei Mobilität.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die mögliche Preisänderung ist nicht quantifiziert.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Verlagerungen ist unbekannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mobilitätsentscheidungen können grundsätzlich angepasst werden.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene Gruppen oder Räume sind nicht ausgewiesen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt ohne Infrastrukturangaben oberflächennah.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische oder gesundheitliche Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "nachhaltige Mobilität",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Es bestehen erreichbare Mobilitätsalternativen und die Preise ändern sich tatsächlich.",
+                "reference_space": "Mobilitätsentscheidungen im betroffenen Verkehrsraum.",
+                "time_horizon": "Kurz- bis mittelfristig während einer möglichen Maßnahme.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Haushalte reagieren auf relative Mobilitätskosten.",
+                "source_support": "Die Quelle belegt nur geplante Maßnahmen gegen hohe Spritpreise.",
+                "limitations": "Keine Angaben zu Verkehrsmitteln, Infrastruktur oder Verhaltensdaten.",
+                "first_order": "Relative Mobilitätskosten könnten sich verändern.",
+                "second_order": "Einzelne Wege könnten anders gewählt werden.",
+                "third_order": "Eine strukturelle Verschiebung ist möglich, aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Mobilitäts- oder Umweltdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver ökologischer Gegenpfad ist im Quellenbestand nicht substantiiert; der negative Pfad bleibt dennoch hypothetisch und klein."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Niedrigere effektive Kraftstoffpreise können Verbrauchsanreize verändern",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Niedrigere effektive Kraftstoffpreise können Verbrauchsanreize verändern",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt Fragen und Vorwürfe, belegt aber keine institutionelle Veränderung, Mehrheitsverschiebung oder beobachtete Vertrauenswirkung.",
+            "reviewed_source_ids": [
+              "heise-wirtschaft"
+            ],
+            "rationale": "Die politische Kontroverse könnte öffentliche Rechenschaft und Debatten über Entlastung anregen. Ein belastbarer demokratischer Nutzen oder Schaden lässt sich aus der Einzelquelle nicht ableiten.",
+            "primary_paths": [
+              {
+                "label": "Kontroverse über Entlastung kann politische Rechenschaft verstärken",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Fragen und Vorwürfe zu den Regierungsplänen könnten die öffentliche Prüfung von Finanzierung, Verteilung und Zielgenauigkeit auslösen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Parlamentarische und politische Akteure"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Debattenwirkung ist nicht gemessen und hängt von Transparenz und politischer Befassung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Kraftstoffpreise betreffen ein politisch breites Thema.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt Fragen und Vorwürfe, aber keine breite Reaktion.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Kontroverse ist unbekannt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Öffentliche Debatten und politische Bewertungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine konkret gefährdete demokratische Gruppe ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zunächst Kommunikation und Rechenschaft.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Beschädigung ist nicht belegt.",
+                  "reference_frame": "öffentliche Rechenschaft und informierte politische Entscheidung",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Die Pläne werden öffentlich und parlamentarisch konkretisiert und überprüft.",
+                "reference_space": "Politische Öffentlichkeit und zuständige Institutionen.",
+                "time_horizon": "Während der politischen Beratung und möglichen Umsetzung.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Öffentliche Kontroverse führt zu zusätzlicher Prüfung statt nur zu Polarisierung.",
+                "source_support": "Die Quelle nennt Fragen und Vorwürfe im Zusammenhang mit Regierungsplänen.",
+                "limitations": "Keine Daten zu Debatten, Vertrauen, Beteiligung oder institutionellen Entscheidungen.",
+                "first_order": "Die politische Auseinandersetzung könnte sichtbarer werden.",
+                "second_order": "Akteure könnten stärker zu Begründungen über Kosten und Verteilung gedrängt werden.",
+                "third_order": "Eine dauerhafte Veränderung politischer Rechenschaft ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Debatten-, Vertrauens- oder Entscheidungsdaten im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Polarisierende Preisdebatte kann Vertrauen belasten",
+                "direction": "open",
+                "type": "side_risk",
+                "mechanism": "Unklare oder umstrittene Entlastungsregeln könnten als unfair wahrgenommen werden und politische Konflikte verschärfen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "politische Akteure"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist möglich, aber weder Wahrnehmung noch Polarisierung sind belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Das Thema kann viele Haushalte und politische Gruppen ansprechen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Konfliktintensität ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Konflikte bleibt offen.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Bewertungen können durch Informationen und Änderungen korrigiert werden.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Keine spezifische demokratische Schutzgruppe ist belegt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt bleibt auf Debatte und Wahrnehmung begrenzt.",
+                    "source_ids": [
+                      "heise-wirtschaft"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Vertrauens- oder Beteiligungsschwelle ist nicht belegt.",
+                  "reference_frame": "politische Gleichbehandlung und nachvollziehbare Entscheidungsbegründung",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "condition": "Die Ausgestaltung bleibt unklar und wird als ungleich oder nicht nachvollziehbar wahrgenommen.",
+                "reference_space": "Öffentliche politische Debatte.",
+                "time_horizon": "Kurz- bis mittelfristig während der Auseinandersetzung.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unklare Verteilungsregeln können politische Konflikte verstärken.",
+                "source_support": "Die Quelle berichtet über Fragen und Vorwürfe, nicht über eine gemessene Vertrauenswirkung.",
+                "limitations": "Keine Publikumsdaten, Umfragen oder unabhängigen politischen Analysen liegen vor.",
+                "first_order": "Die Kontroverse könnte zugespitzter wahrgenommen werden.",
+                "second_order": "Die Bewertung staatlicher Entlastung könnte stärker parteipolitisch umkämpft werden.",
+                "third_order": "Eine institutionelle Vertrauenswirkung ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Daten zu Polarisierung oder Vertrauen im Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mögliche bessere Rechenschaft und mögliche Polarisierung sind beide denkbar, aber aus der Einzelquelle nicht belastbar zu gewichten."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Kontroverse über Entlastung kann politische Rechenschaft verstärken",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kontroverse über Entlastung kann politische Rechenschaft verstärken",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-19T16:25:27.821Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "heise-wirtschaft",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle berichtet über geplante Steuersenkungen und einen Preisdeckel zur Dämpfung hoher Spritpreise sowie über offene Fragen und Vorwürfe."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt nur die geplanten Instrumente. Verteilung, Reichweite und tatsächliche Entlastung lassen sich ohne konkrete Ausgestaltung nicht bestimmen.",
+          "reviewed_source_ids": [
+            "heise-wirtschaft"
+          ],
+          "rationale": "Die Maßnahme könnte Kraftstoffkosten für einige Haushalte senken, zugleich aber wegen unbekannter Finanzierung und Verteilung andere Haushalte oder den Staatshaushalt belasten. Daher ist der Pfad gemischt und nur schwach belegt.",
+          "primary_paths": [
+            {
+              "label": "Kraftstoffentlastung verändert Haushaltsbudgets",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Steuersenkungen oder ein Preisdeckel könnten den Zahlbetrag an Tankstellen senken, wenn sie umgesetzt und weitergegeben werden.",
+              "recipients": [
+                "Haushalte mit Kraftstoffbedarf",
+                "Pendlerinnen und Pendler"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite könnte beträchtlich sein, aber konkrete Preis- und Haushaltsdaten fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoffpreise können viele mobile Haushalte betreffen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Entlastungsstärke hängt von unbekannten Sätzen und Grenzen ab.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine Laufzeit wird im vorliegenden Ausschnitt nicht genannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preis- und Steueränderungen wären grundsätzlich wieder veränderbar.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Auf das Auto angewiesene Haushalte könnten besonders profitieren.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Preisen in Haushaltsbudgets und Mobilitätsentscheidungen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete existenzielle Schutzgrenze ist im Quellenbestand nicht belegt.",
+                "reference_frame": "bezahlbare Mobilität",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Umsetzung, tatsächliche Preisweitergabe und ausreichende Reichweite der Maßnahme.",
+              "reference_space": "Haushalte und Kraftstoffmarkt im betroffenen politischen Zuständigkeitsraum.",
+              "time_horizon": "Während einer möglichen Laufzeit der Maßnahmen.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass die Instrumente den Zahlbetrag tatsächlich beeinflussen und Haushalte die Veränderung wahrnehmen.",
+              "source_support": "Die Quelle nennt Steuersenkungen und einen Preisdeckel; sie belegt keine Entlastung einzelner Haushalte.",
+              "limitations": "Beträge, Laufzeit, Weitergabe und Verteilung fehlen.",
+              "first_order": "Kraftstoffkosten könnten sinken.",
+              "second_order": "Haushalte könnten mehr verfügbares Einkommen behalten oder ihre Mobilität anpassen.",
+              "third_order": "Veränderte Mobilitätsmuster könnten Verteilung und Nachfrage beeinflussen; dies bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen Angaben zu Reichweite oder Verteilung im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Preisstützung belastet öffentliche Mittel oder Verteilung",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Steuersenkungen könnten Einnahmen mindern und ein Preisdeckel könnte Entlastungen nach Verbrauch statt nach Bedürftigkeit verteilen.",
+              "recipients": [
+                "öffentliche Haushalte",
+                "Haushalte ohne oder mit geringem Kraftstoffverbrauch"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Pfad ist materiell, seine Größe hängt von nicht genannten Einnahmeausfällen und Regeln ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Folgen könnten den Staatshaushalt und unterschiedliche Haushaltsgruppen betreffen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Intensität ist ohne finanzielle Eckdaten nicht bestimmbar.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer der möglichen Einnahme- und Verteilungswirkung ist unbekannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Steuer- und Preisregeln wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Die Verteilung könnte Haushalte mit geringer Mobilität anders behandeln.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad verbindet Preisregel, öffentliche Einnahmen und Verteilung.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzverletzung oder Mindestversorgungsschwelle ist nicht belegt.",
+                "reference_frame": "Verteilung und öffentliche Handlungsfähigkeit",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Steuersenkungen und Preisdeckel werden beschlossen, finanziell wirksam und nicht zielgenau kompensiert.",
+              "reference_space": "öffentliche Haushalte und Haushalte mit unterschiedlichem Kraftstoffverbrauch.",
+              "time_horizon": "Mittelfristig während und nach einer möglichen Maßnahme.",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass eine staatliche Entlastung finanzielle Verteilungswirkungen hat.",
+              "source_support": "Die Quelle nennt Steuersenkungen, Preisdeckel und Vorwürfe; konkrete Einnahme- oder Verteilungsdaten fehlen.",
+              "limitations": "Keine Angaben zu Finanzierung, Zielgenauigkeit oder Haushaltswirkung.",
+              "first_order": "Staatliche Einnahmen oder Marktpreise könnten sich verändern.",
+              "second_order": "Die Entlastung könnte unterschiedlich stark bei Haushalten ankommen.",
+              "third_order": "Andere öffentliche Prioritäten könnten mittelbar betroffen sein; dafür gibt es keinen konkreten Beleg.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine Haushalts- oder Verteilungsdaten.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Möglicherweise schwächerer Sparanreiz beim Kraftstoffverbrauch",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Niedrigere effektive Kraftstoffpreise könnten bei unverändertem Verkehrsangebot den Anreiz zum Sparen verringern.",
+              "recipients": [
+                "Kraftstoffverbraucherinnen und -verbraucher",
+                "Haushalte mit hoher Fahrleistung"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Mechanismus ist plausibel, aber Ausmaß und Dauer sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Nutzerinnen und Nutzer von Kraftstoff.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Preisänderung ist nicht quantifiziert.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Laufzeit der Maßnahme ist unbekannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verbrauchsentscheidungen können grundsätzlich wieder geändert werden.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Schutzgruppe ist im Bericht nicht ausgewiesen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad reicht nur bedingt über individuelle Fahrentscheidungen hinaus.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist nicht belegt.",
+                "reference_frame": "sparsamer Kraftstoffverbrauch",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Die Maßnahme senkt den effektiven Preis und hält länger an.",
+              "reference_space": "Kraftstoffverbrauch im betroffenen Markt.",
+              "time_horizon": "Während einer möglichen Preisentlastung.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen beeinflussen einzelne Fahr- und Verbrauchsentscheidungen.",
+              "source_support": "Die Quelle nennt Maßnahmen zur Dämpfung der Spritpreise, aber keine Verbrauchsdaten.",
+              "limitations": "Kein gemessener Verbrauchseffekt und keine konkrete Preisänderung liegen vor.",
+              "first_order": "Der effektive Kraftstoffpreis könnte sinken.",
+              "second_order": "Spar- oder Fahrentscheidungen könnten sich verändern.",
+              "third_order": "Ein dauerhafter Effekt auf Mobilitätsmuster ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Verbrauchs- oder Mobilitätsdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Mögliche finanzielle Entlastung und mögliche Verteilungs- oder Einnahmerisiken sind vergleichbar, aber beide Pfade bleiben wegen fehlender Eckdaten unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Kraftstoffentlastung verändert Haushaltsbudgets",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Kraftstoffentlastung verändert Haushaltsbudgets",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine Emissionen oder Verbrauchsänderungen. Der ökologische Pfad bleibt eine bedingte Hypothese über mögliche Preis- und Fahranreize.",
+          "reviewed_source_ids": [
+            "heise-wirtschaft"
+          ],
+          "rationale": "Eine Verbilligung fossiler Kraftstoffe könnte den Sparanreiz schwächen. Ein gegenläufiger positiver Umweltpfad ist aus dem Quellenbestand nicht ableitbar.",
+          "primary_paths": [
+            {
+              "label": "Niedrigere effektive Kraftstoffpreise können Verbrauchsanreize verändern",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Steuersenkungen oder ein Preisdeckel könnten den Preis fossiler Kraftstoffe dämpfen und dadurch Sparanreize abschwächen.",
+              "recipients": [
+                "Kraftstoffverbrauch",
+                "Umwelt und Klima"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Effekt ist begrenzt durch unbekannte Höhe und Dauer und nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad erreicht Nutzerinnen und Nutzer von Kraftstoff.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Stärke einer möglichen Verbilligung ist unbekannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Laufzeit wird nicht genannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisbedingte Verbrauchsänderungen wären grundsätzlich umkehrbar.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird nicht beschrieben.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zunächst Preise und individuelle Verbrauchsentscheidungen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Grenzverletzung ist im Quellenbestand nicht belegt.",
+                "reference_frame": "Vermeidung zusätzlichen fossilen Verbrauchs",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Die Maßnahmen senken den effektiven Kraftstoffpreis und führen zu zusätzlichem Verbrauch.",
+              "reference_space": "Kraftstoffmarkt und Verkehr im betroffenen Zuständigkeitsraum.",
+              "time_horizon": "Während einer möglichen Laufzeit und mit möglichem Nachlauf.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen beeinflussen Verbrauch und die Wahl von Verkehrsmitteln.",
+              "source_support": "Die Quelle nennt eine geplante Dämpfung hoher Spritpreise, aber keine ökologischen Folgen.",
+              "limitations": "Keine Daten zu Preisänderung, Verbrauch, Emissionen oder Alternativen.",
+              "first_order": "Der effektive Preis fossiler Kraftstoffe könnte sinken.",
+              "second_order": "Der Kraftstoffverbrauch könnte weniger stark zurückgehen oder steigen.",
+              "third_order": "Emissionen könnten dadurch höher ausfallen; dieser Pfad ist nicht gemessen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Umwelt- oder Verbrauchsdaten im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Verlagerung von Mobilitätsentscheidungen",
+              "direction": "open",
+              "type": "side_effect",
+              "mechanism": "Veränderte Kraftstoffpreise könnten zwischen Auto, öffentlichem Verkehr und anderen Mobilitätsformen verschieben.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Verkehrssysteme"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Richtung und Umfang hängen von verfügbaren Alternativen und der Preisänderung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Personen mit Wahlmöglichkeiten bei Mobilität.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die mögliche Preisänderung ist nicht quantifiziert.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Verlagerungen ist unbekannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mobilitätsentscheidungen können grundsätzlich angepasst werden.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene Gruppen oder Räume sind nicht ausgewiesen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt ohne Infrastrukturangaben oberflächennah.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische oder gesundheitliche Schutzgrenze ist nicht belegt.",
+                "reference_frame": "nachhaltige Mobilität",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Es bestehen erreichbare Mobilitätsalternativen und die Preise ändern sich tatsächlich.",
+              "reference_space": "Mobilitätsentscheidungen im betroffenen Verkehrsraum.",
+              "time_horizon": "Kurz- bis mittelfristig während einer möglichen Maßnahme.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Haushalte reagieren auf relative Mobilitätskosten.",
+              "source_support": "Die Quelle belegt nur geplante Maßnahmen gegen hohe Spritpreise.",
+              "limitations": "Keine Angaben zu Verkehrsmitteln, Infrastruktur oder Verhaltensdaten.",
+              "first_order": "Relative Mobilitätskosten könnten sich verändern.",
+              "second_order": "Einzelne Wege könnten anders gewählt werden.",
+              "third_order": "Eine strukturelle Verschiebung ist möglich, aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Mobilitäts- oder Umweltdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver ökologischer Gegenpfad ist im Quellenbestand nicht substantiiert; der negative Pfad bleibt dennoch hypothetisch und klein."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Niedrigere effektive Kraftstoffpreise können Verbrauchsanreize verändern",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Niedrigere effektive Kraftstoffpreise können Verbrauchsanreize verändern",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt Fragen und Vorwürfe, belegt aber keine institutionelle Veränderung, Mehrheitsverschiebung oder beobachtete Vertrauenswirkung.",
+          "reviewed_source_ids": [
+            "heise-wirtschaft"
+          ],
+          "rationale": "Die politische Kontroverse könnte öffentliche Rechenschaft und Debatten über Entlastung anregen. Ein belastbarer demokratischer Nutzen oder Schaden lässt sich aus der Einzelquelle nicht ableiten.",
+          "primary_paths": [
+            {
+              "label": "Kontroverse über Entlastung kann politische Rechenschaft verstärken",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Fragen und Vorwürfe zu den Regierungsplänen könnten die öffentliche Prüfung von Finanzierung, Verteilung und Zielgenauigkeit auslösen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Parlamentarische und politische Akteure"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Debattenwirkung ist nicht gemessen und hängt von Transparenz und politischer Befassung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Kraftstoffpreise betreffen ein politisch breites Thema.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt Fragen und Vorwürfe, aber keine breite Reaktion.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Kontroverse ist unbekannt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Öffentliche Debatten und politische Bewertungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine konkret gefährdete demokratische Gruppe ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zunächst Kommunikation und Rechenschaft.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Beschädigung ist nicht belegt.",
+                "reference_frame": "öffentliche Rechenschaft und informierte politische Entscheidung",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Die Pläne werden öffentlich und parlamentarisch konkretisiert und überprüft.",
+              "reference_space": "Politische Öffentlichkeit und zuständige Institutionen.",
+              "time_horizon": "Während der politischen Beratung und möglichen Umsetzung.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Öffentliche Kontroverse führt zu zusätzlicher Prüfung statt nur zu Polarisierung.",
+              "source_support": "Die Quelle nennt Fragen und Vorwürfe im Zusammenhang mit Regierungsplänen.",
+              "limitations": "Keine Daten zu Debatten, Vertrauen, Beteiligung oder institutionellen Entscheidungen.",
+              "first_order": "Die politische Auseinandersetzung könnte sichtbarer werden.",
+              "second_order": "Akteure könnten stärker zu Begründungen über Kosten und Verteilung gedrängt werden.",
+              "third_order": "Eine dauerhafte Veränderung politischer Rechenschaft ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Debatten-, Vertrauens- oder Entscheidungsdaten im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Polarisierende Preisdebatte kann Vertrauen belasten",
+              "direction": "open",
+              "type": "side_risk",
+              "mechanism": "Unklare oder umstrittene Entlastungsregeln könnten als unfair wahrgenommen werden und politische Konflikte verschärfen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "politische Akteure"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist möglich, aber weder Wahrnehmung noch Polarisierung sind belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Das Thema kann viele Haushalte und politische Gruppen ansprechen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Konfliktintensität ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Konflikte bleibt offen.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Bewertungen können durch Informationen und Änderungen korrigiert werden.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Keine spezifische demokratische Schutzgruppe ist belegt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt bleibt auf Debatte und Wahrnehmung begrenzt.",
+                  "source_ids": [
+                    "heise-wirtschaft"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Vertrauens- oder Beteiligungsschwelle ist nicht belegt.",
+                "reference_frame": "politische Gleichbehandlung und nachvollziehbare Entscheidungsbegründung",
+                "source_ids": [
+                  "heise-wirtschaft"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "heise-wirtschaft"
+              ],
+              "condition": "Die Ausgestaltung bleibt unklar und wird als ungleich oder nicht nachvollziehbar wahrgenommen.",
+              "reference_space": "Öffentliche politische Debatte.",
+              "time_horizon": "Kurz- bis mittelfristig während der Auseinandersetzung.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unklare Verteilungsregeln können politische Konflikte verstärken.",
+              "source_support": "Die Quelle berichtet über Fragen und Vorwürfe, nicht über eine gemessene Vertrauenswirkung.",
+              "limitations": "Keine Publikumsdaten, Umfragen oder unabhängigen politischen Analysen liegen vor.",
+              "first_order": "Die Kontroverse könnte zugespitzter wahrgenommen werden.",
+              "second_order": "Die Bewertung staatlicher Entlastung könnte stärker parteipolitisch umkämpft werden.",
+              "third_order": "Eine institutionelle Vertrauenswirkung ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Daten zu Polarisierung oder Vertrauen im Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mögliche bessere Rechenschaft und mögliche Polarisierung sind beide denkbar, aber aus der Einzelquelle nicht belastbar zu gewichten."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kontroverse über Entlastung kann politische Rechenschaft verstärken",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Kontroverse über Entlastung kann politische Rechenschaft verstärken",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-19T16:23:15.260Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-19T15:48:00.000Z",
+      "last_updated": "2026-09-19T16:25:27.816Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-f91fa6bea8a7a483554e",
+      "case_file": null,
+      "source_published_at": "2026-09-19T15:48:00.000Z",
+      "published_at": "2026-09-19T16:25:27.816Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "heise-wirtschaft"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "heise online - Wirtschaft",
+          "url": "https://www.heise.de/news/Umstrittener-Tankrabatt-Bund-beschliesst-Milliarden-Hilfen-trotz-scharfer-Kritik-11459167.html?wt_mc=rss.red.ho.beitrag.atom.beitrag.beitrag",
+          "source_type": "media_rss",
+          "published_at": "2026-09-19T15:48:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-799303ce581dfeb8",
       "title_image": {
