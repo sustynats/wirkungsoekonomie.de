@@ -8,9 +8,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-17T01:35:29.424Z",
       "active": true
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-09-19T07:47:10.639Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "70d5074f0f48e2e89df08cd9",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-09-19T07:47:10.639Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1454,11 +1463,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/vierte-festnahme-nach-todlichen-schussen-in-dietzenbach-c0d920/": {
         "first_seen_at": "2026-09-19T07:05:50.282Z",
         "source_at": "2026-09-19T06:23:26.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/angriff-mit-schusswaffe-totungsdelikt-in-dietzenbach-vierter-verdachtiger-gefasst-4520a6/": {
+        "first_seen_at": "2026-09-19T07:47:10.639Z",
+        "source_at": "2026-09-19T07:15:12.000Z"
       }
     },
-    "last_new_at": "2026-09-19T07:05:50.282Z",
-    "checked_at": "2026-09-19T07:35:44.432Z",
-    "last_current_new_at": "2026-09-19T07:05:50.282Z"
+    "last_new_at": "2026-09-19T07:47:10.639Z",
+    "checked_at": "2026-09-19T07:47:10.639Z",
+    "last_current_new_at": "2026-09-19T07:47:10.639Z"
   },
   "recovery_attempts": [
     {
