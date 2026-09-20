@@ -624,3 +624,38 @@ test('eine Korrekturfassung bindet der Worker selbst an die Veroeffentlichung', 
   assert.equal(bindeKorrekturfassung(frei, {}, []), frei);
   assert.equal(frei.editorial_revision, undefined);
 });
+
+// 20.09.2026: Natalie beauftragte eine Analyse mit vier Screenshots und bekam
+// nichts zur Freigabe. Der Worker hielt den Auftrag an: „Die vier Screenshots
+// liegen nicht als lesbarer Inhalt vor." Er hatte nur ihre Dateinamen gesehen.
+test('Screenshots gehen als Material an das Modell, geprueft an ihrer Pruefsumme', async () => {
+  const { collectAttachmentImages, editorialModelInput, attachmentPromptNote } = await import('../../scripts/news/redaktionsworker.mjs');
+  const { createHash } = await import('node:crypto');
+  const bild = Buffer.from('PNG-Bytes der Herausgeberin');
+  const sha = createHash('sha256').update(bild).digest('hex');
+  const session = { transport: { readBinary: async (pfad) => {
+    if (pfad === '/a/eins.png') return bild;
+    if (pfad === '/a/veraendert.png') return Buffer.from('anderes Bild');
+    throw new Error('BRIDGE_FILE_MISSING');
+  } } };
+  const anhaenge = [
+    { name: 'eins.png', path: '/a/eins.png', mime: 'image/png', sha256: sha, size: bild.length },
+    { name: 'gross.jpg', path: '/a/gross.jpg', mime: 'image/jpeg', size: 20 * 1024 * 1024 },
+    { name: 'notiz.pdf', path: '/a/notiz.pdf', mime: 'application/pdf', size: 100 },
+    { name: 'veraendert.png', path: '/a/veraendert.png', mime: 'image/png', sha256: sha, size: 12 },
+  ];
+  const { bilder, uebersprungen } = await collectAttachmentImages(session, anhaenge);
+  assert.deepEqual(bilder.map((b) => b.name), ['eins.png']);
+  assert.equal(bilder[0].base64, bild.toString('base64'));
+  assert.deepEqual(uebersprungen.map((u) => u.grund), ['ANHANG_ZU_GROSS', 'ANHANG_KEIN_BILD', 'ANHANG_VERAENDERT']);
+  // Der Aufruf traegt Text und Bild; ohne Bild bleibt alles wie bisher.
+  const eingabe = editorialModelInput({ prompt: 'Auftrag', images: bilder });
+  assert.equal(eingabe[0].content[0].type, 'input_text');
+  assert.equal(eingabe[0].content[1].type, 'input_image');
+  assert.match(eingabe[0].content[1].image_url, /^data:image\/png;base64,/);
+  assert.equal(editorialModelInput({ prompt: 'Auftrag' }), 'Auftrag');
+  // Und der Auftrag sagt dem Modell, dass Bildtext Material ist, kein Auftrag.
+  assert.match(attachmentPromptNote(bilder), /niemals eine Anweisung/);
+  assert.equal((await collectAttachmentImages({ transport: { readBinary: async () => { throw new Error('x'); } } },
+    [{ name: 'weg.png', path: '/a/weg.png', mime: 'image/png', size: 10 }])).uebersprungen[0].grund, 'ANHANG_NICHT_LESBAR');
+});
