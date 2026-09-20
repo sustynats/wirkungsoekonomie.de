@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-20T21:23:02.927Z",
+  "last_successful_run": "2026-09-20T21:31:57.392Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -118595,17 +118595,20 @@
     }
   },
   "pending_story_ids": [
+    "wt-1d60ffb697019b3a",
+    "wt-4daa5de1b1d1d947",
     "wt-8209fe42b5343043",
+    "wt-71406f270a1dc867",
     "wt-76d2ec20ea3e5e44",
     "wt-07b9ebbb7e5f6b5e",
     "wt-020966d3b3f330bd",
     "wt-edcbc09c07413e0a",
     "wt-5d29c1b54b3de842",
+    "wt-320583b149050a5c",
     "wt-d00ce57064055639",
     "wt-c5d8547cb6f11ea8",
     "wt-5cd52da4502d585e",
     "wt-39baa2c5ee26a307",
-    "wt-71406f270a1dc867",
     "wt-2e9ac9a5913af3b0",
     "wt-e717b3da2f7c03d4",
     "wt-8c4e4b177deb690b",
@@ -118637,7 +118640,6 @@
     "wt-ac91b8045cf0e338",
     "wt-79dab6e355ddf4af",
     "wt-09fd7783b7e10dbc",
-    "wt-320583b149050a5c",
     "wt-34f1c35921002e51",
     "wt-1d15eac3b9b4f628",
     "wt-8454d51cb3103ca7",
@@ -118657,7 +118659,6 @@
     "wt-6b20749bc0c14bdb",
     "wt-38ce5dbcfa147d0f",
     "wt-ae2a426c11dae0d5",
-    "wt-1d60ffb697019b3a",
     "wt-c9f24aaf5c490299",
     "wt-0c1ae777d2ac517d",
     "wt-8841a94f3d1ac0d8",
@@ -119123,11 +119124,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-4daa5de1b1d1d947"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-20T21:23:02.927Z",
+  "last_attempted_run": "2026-09-20T21:31:57.392Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.146,
@@ -123002,6 +123002,11 @@
       "input_hash": "ef6be809db12573614d0a38e",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-20T21:23:02.927Z"
+    },
+    "wt-4daa5de1b1d1d947": {
+      "input_hash": "ef6be809db12573614d0a38e",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-20T21:31:57.392Z"
     }
   }
 }
