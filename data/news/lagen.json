@@ -1,7 +1,144 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-19T16:00:00.000Z",
+  "updated_at": "2026-09-20T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-20-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-20",
+      "window_from": "2026-09-19T16:00:00.000Z",
+      "window_to": "2026-09-20T04:00:00.000Z",
+      "stand": "2026-09-20T04:00:00.000Z",
+      "headline": "Das sind die 15 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 15,
+        "neu": 12,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-f8e9ba47320c307f",
+          "slug": "ukraine-krieg-usa-verhangen-neue-sanktionen-gegen-russland-selenskyj-dankt-trump-0c307f",
+          "title": "Laut Deutschlandfunk: Trump unterzeichnet neue Sanktionen gegen Russland",
+          "state": "fortgeschrieben",
+          "at": "2026-09-20T03:54:45.845Z",
+          "score": 5.7427
+        },
+        {
+          "story_id": "wt-e9d2c1f4810a1485",
+          "slug": "us-armee-vier-tote-bei-angriff-auf-mutmassliches-drogenboot-in-der-karibik-0a1485",
+          "title": "Laut Deutschlandfunk: US-Armee tötet vier Menschen bei Angriff auf mutmaßliches Drogenboot",
+          "state": "neu",
+          "at": "2026-09-20T02:40:38.809Z",
+          "score": 9.8898
+        },
+        {
+          "story_id": "wt-8ae0d5a1b42b0f91",
+          "slug": "ebola-epidemie-test-impfprogramm-in-dr-kongo-gestartet-2b0f91",
+          "title": "Test-Impfprogramm gegen Ebola in der DR Kongo gestartet, laut AFP",
+          "state": "neu",
+          "at": "2026-09-20T01:40:58.519Z",
+          "score": 7.8069
+        },
+        {
+          "story_id": "wt-232754c767f45ee7",
+          "slug": "tankrabatt-und-preisdeckel-gegen-hohe-spritpreise-f45ee7",
+          "title": "Tankrabatt ab Oktober geplant, Preisdeckel spätestens zum 1. Januar 2027",
+          "state": "fortgeschrieben",
+          "at": "2026-09-20T00:25:28.090Z",
+          "score": 5.952
+        },
+        {
+          "story_id": "wt-2c26fdcea60c52bd",
+          "slug": "ukraine-krieg-mutter-und-kinder-bei-angriff-im-kiewer-umland-getotet-0c52bd",
+          "title": "Mutter und Kinder bei Angriff im Kiewer Umland getötet",
+          "state": "neu",
+          "at": "2026-09-19T21:56:09.003Z",
+          "score": 7.9947
+        },
+        {
+          "story_id": "wt-1cf513f856fb0c52",
+          "slug": "tankrabatt-kehrt-zuruck-so-reagieren-wirtschaft-bauernverband-und-klimaschutzer-fb0c52",
+          "title": "Tankrabatt ab 1. Oktober angekündigt – Kritik an kurzfristiger Entlastung",
+          "state": "neu",
+          "at": "2026-09-19T20:56:46.040Z",
+          "score": 5.4122
+        },
+        {
+          "story_id": "wt-ce4e0f8ba1512d3f",
+          "slug": "krieg-in-nahost-huthi-miliz-reklamiert-angriffe-in-saudi-arabien-512d3f",
+          "title": "Saudi-Arabien: Laut Huthi-Miliz unter Beschuss, Brand am Flughafen in Riad gemeldet",
+          "state": "neu",
+          "at": "2026-09-19T20:10:58.709Z",
+          "score": 9.3486
+        },
+        {
+          "story_id": "wt-4c7c567c4274b9f4",
+          "slug": "dreissigjahriger-krieg-das-massaker-von-magdeburg-74b9f4",
+          "title": "Laut stern: 1631 fallen Tausende Söldner in Magdeburg ein",
+          "state": "neu",
+          "at": "2026-09-19T19:55:39.322Z",
+          "score": 9.3273
+        },
+        {
+          "story_id": "wt-f6366ae194061e42",
+          "slug": "nach-warnung-vor-angriffen-auf-saudi-arabien-explosionen-und-rauchsaule-am-flughafen-ria-061e42",
+          "title": "Explosionen und schwarze Rauchsäule nahe dem Flughafen Riad nach Luftalarm",
+          "state": "neu",
+          "at": "2026-09-19T19:45:17.938Z",
+          "score": 5.3129
+        },
+        {
+          "story_id": "wt-a1b3015132af6390",
+          "slug": "mediensucht-oft-bemerken-eltern-zu-spat-dass-ihr-kind-abhangig-ist-betroffene-berichten-af6390",
+          "title": "Problematisches Nutzungsverhalten sozialer Medien: Betroffene machen Therapie",
+          "state": "neu",
+          "at": "2026-09-19T19:09:45.005Z",
+          "score": 5.2635
+        },
+        {
+          "story_id": "wt-ec6fb7b716959659",
+          "slug": "el-nino-im-klimawandel-wenn-das-christkind-noch-mehr-durre-flut-und-hunger-bringt-959659",
+          "title": "Laut taz: Korallenanalyse zeigt stärkeren El-Niño-Effekt im Klimawandel",
+          "state": "neu",
+          "at": "2026-09-19T18:55:55.948Z",
+          "score": 7.2444
+        },
+        {
+          "story_id": "wt-a723864377723018",
+          "slug": "midterms-in-den-usa-die-us-demokratie-ist-doch-noch-nicht-ganz-verloren-723018",
+          "title": "Laut taz: Supreme Court stoppt Trumps Vorhaben zur Einschränkung der Briefwahl",
+          "state": "neu",
+          "at": "2026-09-19T18:40:38.037Z",
+          "score": 7.2231
+        },
+        {
+          "story_id": "wt-3f12ded8ac7dd617",
+          "slug": "studie-wg-zimmer-in-millionenstadten-deutlich-teurer-munchen-bleibt-spitzenreiter-7dd617",
+          "title": "Laut Deutschlandfunk: WG-Zimmer in Millionenstädten teurer – München bleibt Spitzenreiter",
+          "state": "neu",
+          "at": "2026-09-19T17:35:45.977Z",
+          "score": 7.133
+        },
+        {
+          "story_id": "wt-4a657d0676992670",
+          "slug": "thuringer-linke-will-starkste-kraft-werden-992670",
+          "title": "Laut MDR: Thüringer Linke will stärkste Kraft werden",
+          "state": "neu",
+          "at": "2026-09-19T17:26:48.988Z",
+          "score": 7.6206
+        },
+        {
+          "story_id": "wt-799303ce581dfeb8",
+          "slug": "trump-setzt-neue-us-sanktionen-gegen-russland-in-kraft-1dfeb8",
+          "title": "Trump setzt neue Russland-Sanktionen in Kraft",
+          "state": "fortgeschrieben",
+          "at": "2026-09-19T16:11:39.292Z",
+          "score": 6.7662
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-19-abendlage",
       "slot": "abendlage",
