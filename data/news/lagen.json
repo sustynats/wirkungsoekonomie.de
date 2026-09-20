@@ -1,7 +1,72 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-20T04:00:00.000Z",
+  "updated_at": "2026-09-20T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-20-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-20",
+      "window_from": "2026-09-20T04:00:00.000Z",
+      "window_to": "2026-09-20T10:00:00.000Z",
+      "stand": "2026-09-20T10:00:00.000Z",
+      "headline": "Das sind die 6 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 6,
+        "neu": 6,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-9c567e341d2d6795",
+          "slug": "letzter-tag-der-parlamentswahl-in-russland-zwei-tote-bei-drohnenangriffen-in-moskau-2d6795",
+          "title": "Nach Behördenangaben zwei Tote bei Drohnenangriffen am letzten Tag der Parlamentswahl in Russland",
+          "state": "neu",
+          "at": "2026-09-20T09:56:33.991Z",
+          "score": 8.4905
+        },
+        {
+          "story_id": "wt-dd4dcfccac206622",
+          "slug": "brande-feuer-nach-mutmasslicher-explosion-mann-in-lebensgefahr-206622",
+          "title": "Laut stern: Feuer in Quakenbrück nach mutmaßlicher Explosion – Mann in Lebensgefahr",
+          "state": "neu",
+          "at": "2026-09-20T09:24:41.927Z",
+          "score": 9.9019
+        },
+        {
+          "story_id": "wt-55e8722f420ed190",
+          "slug": "frankfurt-schusse-auf-abschleppdienst-beim-aufladen-eines-autos-0ed190",
+          "title": "Laut Polizei: Schüsse auf Abschleppdienst in Frankfurt",
+          "state": "neu",
+          "at": "2026-09-20T09:10:43.798Z",
+          "score": 5.8631
+        },
+        {
+          "story_id": "wt-9c9f6c3a5d1bebab",
+          "slug": "duma-russische-parlamentswahl-geht-zu-ende-zwei-tote-bei-drohnenangriffen-auf-moskau-1bebab",
+          "title": "Russland: Parlamentswahl endet nach Drohnenangriffen auf Moskau",
+          "state": "neu",
+          "at": "2026-09-20T08:41:14.930Z",
+          "score": 9.7812
+        },
+        {
+          "story_id": "wt-938d1790b9baf392",
+          "slug": "brande-feuer-nach-mutmasslicher-explosion-mensch-schwer-verletzt-baf392",
+          "title": "Laut stern: Feuer in Quakenbrück nach mutmaßlicher Explosion – ein Bewohner schwer verletzt",
+          "state": "neu",
+          "at": "2026-09-20T07:29:57.824Z",
+          "score": 7.5832
+        },
+        {
+          "story_id": "wt-6e45efc3e7e51bc1",
+          "slug": "feuer-in-kraftwerk-tiefstack-letzte-glutnester-geloscht-e51bc1",
+          "title": "Feuer in Kohlebunker des Kraftwerks Tiefstack gelöscht",
+          "state": "neu",
+          "at": "2026-09-20T06:11:34.018Z",
+          "score": 9.3655
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-20-morgenlage",
       "slot": "morgenlage",
