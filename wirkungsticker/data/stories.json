@@ -2,8 +2,1507 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-20T12:41:11.501Z",
+  "updated_at": "2026-09-20T13:08:09.283Z",
   "stories": [
+    {
+      "story_id": "wt-4eb94b797e3a7840",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4eb94b797e3a7840-01d196f45247e52e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4eb94b797e3a7840-bdbb55ae1c0ea3fb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-4eb94b797e3a7840-6fd5346904b0011f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "judischer-siedler-im-westjordanland-getotet-verdachtiger-festgenommen-3a7840",
+      "title": "Laut Behörden: Jüdischer Siedler im Westjordanland getötet, Verdächtiger festgenommen",
+      "source_summary": "Der stern berichtet über einen tödlichen Angriff auf einen jüdischen Siedler im Westjordanland. Nach Angaben von Behörden wurde ein Verdächtiger festgenommen.\n\nDem Bericht zufolge ereignete sich der Schusswaffenangriff am Sonntag im Gebiet der Siedlung Neve Tzuf nahe Ramallah. Die Meldung ordnet den Vorfall damit einem konkret benannten Ort im Westjordanland zu.\n\nNach Angaben der israelischen Armee soll ein Soldat den Angreifer angeschossen haben. Der Verdächtige sei später in einem Krankenhaus festgenommen worden. Eine unabhängige Bestätigung oder weitere Angaben zu Tatablauf, Motiv und möglichen weiteren Betroffenen liegen in der vorliegenden Quelle nicht vor.",
+      "summary": "Ein jüdischer Siedler wurde nach Behördenangaben im Westjordanland tödlich angegriffen; ein Verdächtiger wurde festgenommen. Tatablauf, Motiv und weitere mögliche Betroffene sind in der vorliegenden Einzelquelle offen.",
+      "detail_summary": "Der stern berichtet über einen tödlichen Schusswaffenangriff auf einen jüdischen Siedler im Gebiet der Siedlung Neve Tzuf nahe Ramallah. Nach Behördenangaben wurde ein Verdächtiger festgenommen. Die israelische Armee gibt an, ein Soldat habe den mutmaßlichen Angreifer angeschossen; anschließend sei er in einem Krankenhaus festgenommen worden. Der Sachverhalt ist wegen der Einzelquelle vorläufig. Unklar bleiben insbesondere Motiv, genauer Ablauf und mögliche weitere Betroffene. Das Ereignis kann die Sicherheitslage und das Vertrauen in Schutz- und Ermittlungsinstitutionen vor Ort belasten, belegt ist eine solche Folge bislang nicht.",
+      "why_relevant": "Der tödliche Angriff betrifft unmittelbare Sicherheit in einem politisch umkämpften Raum; Festnahme und offene Ermittlungsfragen sind für Einordnung und Rechenschaft relevant.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Tödlicher Schusswaffenangriff auf einen jüdischen Siedler im Westjordanland mit anschließender Festnahme eines Verdächtigen nach Behörden- und Armeeangaben.",
+        "evaluation_target": {
+          "label": "Sicherheits- und Ermittlungsereignis im Westjordanland",
+          "type": "event"
+        },
+        "baseline": "Vor dem berichteten Angriff bestehende Sicherheits- und Vertrauenslage im Umfeld von Neve Tzuf nahe Ramallah.",
+        "counterfactual": "Ohne den berichteten Angriff gäbe es diesen konkreten Todesfall und die daran anknüpfende Festnahme nicht; weitergehende Unterschiede zur allgemeinen Sicherheitslage sind nicht bestimmbar.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "Sicherheit und Zugang zu Hilfe",
+          "Rechtsstaatliche Ermittlung und demokratische Korrekturfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der belegte Todesfall ist ein eingetretener menschlicher Schaden. Darüber hinaus könnte der Vorfall Schutzbedürfnis, Bewegungsfreiheit und Zugang zu Hilfe im lokalen Umfeld beeinflussen; Umfang und Verteilung sind offen.",
+            "planet": "Für ökologische Zustände oder Ressourcen sind keine unmittelbaren Veränderungen belegt. Allenfalls könnten zusätzliche Sicherheits- oder Verkehrsmaßnahmen lokal indirekte Belastungen erzeugen; das bleibt eine schwache Hypothese.",
+            "democracy": "Eine transparente Ermittlung könnte Vertrauen in Institutionen stützen, während unklare Verantwortungszuschreibung oder Vergeltungsforderungen Vertrauen und Korrekturfähigkeit schwächen könnten; beides ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Der Angriff hat nach der vorliegenden Quelle einen Menschen getötet und einen Ermittlungs- und Sicherheitsvorgang ausgelöst.",
+          "second_order": "Mögliche Reaktionen reichen von verstärktem Schutz bis zu Einschränkungen und Polarisierung; sie hängen von Ermittlungsqualität, Kommunikation und lokaler Sicherheitslage ab.",
+          "third_order": "Bei wiederholten oder politisierten Reaktionen könnten sich Sicherheits- und Institutionenvertrauen gegenseitig verstärken oder schwächen; eine solche Kaskade ist nicht belegt.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Festnahme kann auf funktionsfähige Ermittlungs- und Schutzkapazitäten hinweisen.",
+            "Für planetare Folgen enthält die Quelle keinen belastbaren Hinweis.",
+            "Eine unabhängige Bestätigung des Ereignisses und seiner Folgen fehlt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle des stern vor; ihre Unabhängigkeit ist nicht verifiziert. Behörden- und Armeeangaben sind zugeschriebene Aussagen und keine unabhängige Bestätigung.",
+          "institutional_status": "Der Bericht belegt eine Festnahme, aber weder eine Verurteilung noch einen abgeschlossenen Ermittlungsstand. Ein rechtlicher Status des Verdächtigen über die Festnahme hinaus ist offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den Todesfall als eingetretenen Schaden, aber keine belastbaren Daten zur Reichweite weiterer menschlicher Folgen. Der modellierte Pfad bleibt deshalb auf mögliche lokale Sicherheits-, Versorgungs- und Vertrauenseffekte begrenzt.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der unmittelbare menschliche Schaden ist durch den berichteten Todesfall materiell und schwer. Weitergehende Folgen werden als bedingtes Potenzial bewertet, nicht als eingetretene Wirkung.",
+            "primary_paths": [
+              {
+                "label": "Der tödliche Angriff könnte Sicherheitsgefühl und Zugang zu Schutz im lokalen Umfeld verschlechtern.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Gewalt und ein Todesfall können Angst, Schutzbedarf und Reaktionsdruck bei Anwohnern, Angehörigen und Einsatzkräften erhöhen.",
+                "recipients": [
+                  "Anwohnerinnen und Anwohner",
+                  "Angehörige",
+                  "Einsatz- und Rettungskräfte"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Der Todesfall ist schwer; Reichweite und Dauer möglicher zusätzlicher Belastungen sind wegen fehlender Folgedaten begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der belegte Ort weist auf einen zunächst lokalen Betroffenenkreis hin.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Ein tödlicher Angriff stellt eine sehr schwere unmittelbare Belastung dar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer zusätzlicher Angst oder Schutzmaßnahmen ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 4,
+                    "rationale": "Der berichtete Todesfall ist irreversibel; weitere Folgen bleiben offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Angehörige und Menschen am Tatort können besonders verletzlich sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Mögliche Wirkungen reichen über den Einzelfall hinaus, sind aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der eingetretene Todesfall wird als beobachteter Schaden separat ausgewiesen. Für den ex-ante modellierten Folgepfad ist keine zusätzliche schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Weitere negative Folgen würden voraussetzen, dass der Angriff lokal Unsicherheit, Schutzmaßnahmen oder Zugangsprobleme verstärkt.",
+                "reference_space": "Umfeld von Neve Tzuf nahe Ramallah",
+                "time_horizon": "Kurz- bis mittelfristig nach dem Angriff",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der berichtete Todesfall ist zutreffend; zusätzliche Folgen werden nicht als sicher unterstellt.",
+                "source_support": "Die Quelle berichtet den tödlichen Angriff und die Festnahme, nicht die Folgeentwicklung.",
+                "limitations": "Keine unabhängige Bestätigung, keine Messung von Angst, Versorgung, Bewegungsfreiheit oder weiteren Schäden.",
+                "first_order": "Mögliche Verschlechterung des lokalen Sicherheitsgefühls und zusätzlicher Schutzbedarf.",
+                "second_order": "Mögliche Einschränkungen im Alltag oder beim Zugang zu Hilfe, falls Sicherheitsmaßnahmen ausgeweitet werden.",
+                "third_order": "Mögliche längerfristige Vertrauensverluste bei wiederholten oder ungeklärten Vorfällen; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst Folgeeffekte; die Wissensgrenze betrifft Reichweite, Dauer und Verteilung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der modellierte negative Folgepfad hat keinen vergleichbar starken positiven Gegenpfad. Der eingetretene Todesfall wird getrennt als beobachteter Schaden bewertet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Der tödliche Angriff könnte Sicherheitsgefühl und Zugang zu Schutz im lokalen Umfeld verschlechtern.",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+                "direction": "negative",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Leben und körperliche Unversehrtheit",
+                "reference_space": "Westjordanland, Gebiet der Siedlung Neve Tzuf nahe Ramallah",
+                "observed_at": "Sonntag, laut dem vorliegenden Bericht",
+                "temporal_status": "ex_post",
+                "mechanism": "Berichteter tödlicher Schusswaffenangriff",
+                "recipients": [
+                  "getötete Person",
+                  "Angehörige"
+                ],
+                "time_horizon": "Eingetretener, irreversibler Schaden",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der belegte unmittelbare Schaden betrifft eine Person.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 4,
+                    "rationale": "Der Tod ist eine höchst intensive Schädigung von Leben und Gesundheit.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Der Verlust des Lebens ist dauerhaft und irreversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Der eingetretene Tod kann nicht rückgängig gemacht werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Die getötete Person und Angehörige sind durch den tödlichen Angriff besonders betroffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der direkte Schaden ist schwer, aber seine systemische Reichweite ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der berichtete Tod verletzt die Schutzgrenze des Lebens unmittelbar.",
+                  "reference_frame": "Leben und körperliche Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 19,
+                  "divisor": 6,
+                  "raw": 3.1666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Leben und körperliche Unversehrtheit",
+              "reference_space": "Westjordanland, Gebiet der Siedlung Neve Tzuf nahe Ramallah",
+              "observed_at": "Sonntag, laut dem vorliegenden Bericht",
+              "temporal_status": "ex_post",
+              "mechanism": "Berichteter tödlicher Schusswaffenangriff",
+              "recipients": [
+                "getötete Person",
+                "Angehörige"
+              ],
+              "time_horizon": "Eingetretener, irreversibler Schaden",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der belegte unmittelbare Schaden betrifft eine Person.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Der Tod ist eine höchst intensive Schädigung von Leben und Gesundheit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Der Verlust des Lebens ist dauerhaft und irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der eingetretene Tod kann nicht rückgängig gemacht werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Die getötete Person und Angehörige sind durch den tödlichen Angriff besonders betroffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der direkte Schaden ist schwer, aber seine systemische Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod verletzt die Schutzgrenze des Lebens unmittelbar.",
+                "reference_frame": "Leben und körperliche Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 19,
+                "divisor": 6,
+                "raw": 3.1666666666666665,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle enthält keine Angaben zu Umwelt, Ressourcen, Emissionen oder ökologischen Schäden. Ein belastbarer planetarer Wirkpfad ist daher nicht erkennbar; mögliche lokale Nebenwirkungen von Sicherheitsmaßnahmen bleiben spekulativ.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Für den berichteten lokalen Sicherheitsvorfall ist keine substanzielle planetare Zustandsänderung belegt oder quellengebunden plausibel genug, um sie über Stufe null hinaus zu bewerten.",
+            "primary_paths": [
+              {
+                "label": "Keine substanzielle planetare Zustandsänderung ist aus dem berichteten Einzelereignis ableitbar.",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Der Bericht beschreibt Gewalt, Festnahme und Krankenhausaufenthalt, aber keinen Eingriff in Umwelt, Ressourcen oder Infrastruktur mit ökologischer Wirkung.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "betroffene Bevölkerung"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Die Quelle enthält keinen ökologischen Befund; ein kleiner indirekter Effekt bleibt nicht belastbar quantifizierbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Betroffenenkreis wird in der Quelle genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität oder Belastung wird berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Dauer einer Umweltveränderung ist angegeben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Ökologische Verwundbarkeit wird im Bericht nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Es gibt keinen belegten ökologischen Systempfad.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine planetare Schutzgrenze wird durch die vorliegenden Angaben nicht berührt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Ein planetarer Pfad wäre nur bei zusätzlichen, nicht gelieferten Angaben zu Schäden, Infrastruktur oder längerfristigen Sicherheitsfolgen prüfbar.",
+                "reference_space": "Lokales Umfeld des berichteten Vorfalls",
+                "time_horizon": "Offen",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Das Fehlen ökologischer Angaben wird nicht als Beweis für das Ausbleiben jeder Nebenwirkung gewertet.",
+                "source_support": "Die Quelle trägt keine Aussage zu planetaren Folgen.",
+                "limitations": "Keine Umwelt- oder Infrastrukturdaten und keine unabhängige Folgenrecherche in der Akte.",
+                "first_order": "Keine belastbare direkte Umweltveränderung ableitbar.",
+                "second_order": "Indirekte Effekte durch Sicherheitsmaßnahmen bleiben offen und nicht quantifizierbar.",
+                "third_order": "Keine systemische ökologische Kaskade belegbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen ökologischen Befund; weitergehende Recherche wäre erforderlich.",
+                "negligibility_rationale": "Im abgegrenzten Zeitraum und auf Basis der gelieferten Quelle ist keine substanzielle planetare Zustandsänderung modellierbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt weder einen belastbaren positiven noch negativen planetaren Hauptpfad; die Einordnung bleibt wegen fehlender Umweltangaben offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine substanzielle planetare Zustandsänderung ist aus dem berichteten Einzelereignis ableitbar.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine substanzielle planetare Zustandsänderung ist aus dem berichteten Einzelereignis ableitbar.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keinen institutionellen oder diskursiven Folgeeffekt. Plausibel prüfbar bleibt nur ein bedingter Pfad über Ermittlungsqualität, öffentliche Zuschreibung und Vertrauen; Eintritt und Richtung sind offen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein tödlicher Vorfall mit Festnahme kann Erwartungen an Schutz und Rechtsstaatlichkeit berühren. Die Quelle liefert aber keine Daten zu Vertrauen, politischer Reaktion oder institutioneller Korrekturfähigkeit.",
+            "primary_paths": [
+              {
+                "label": "Der Umgang mit dem Vorfall könnte Vertrauen in Ermittlungs- und Schutzinstitutionen verändern.",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Transparente Ermittlungen könnten Rechenschaft signalisieren; unklare Zuschreibungen oder politisierte Reaktionen könnten dagegen Misstrauen verstärken.",
+                "recipients": [
+                  "lokale Bevölkerung",
+                  "Ermittlungs- und Schutzinstitutionen",
+                  "öffentliche Debatte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Gegenstand ist institutionell sensibel, doch konkrete Reaktionen und Vertrauensdaten fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die mögliche Wirkung betrifft vor allem das lokale Umfeld und die öffentliche Debatte.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Todesfall kann institutionelle Erwartungen berühren, ohne selbst einen Institutionenschaden zu belegen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines möglichen Vertrauenseffekts ist nicht bekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauensänderungen könnten grundsätzlich korrigierbar sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "In konfliktbelasteten Lagen können betroffene Gruppen besonders empfindlich auf Schutzversagen reagieren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Institutionen- und Sicherheitswahrnehmung verbinden, ist aber nicht beobachtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Verletzung demokratischer Rechte oder institutioneller Schutzgrenzen.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Ermittlungsverlauf und öffentliche Kommunikation wahrgenommen und politisch zugespitzt werden.",
+                "reference_space": "Lokale Institutionen und öffentliche Debatte im Umfeld des Vorfalls",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Öffentliche Reaktionen, Ermittlungsqualität und institutionelle Kommunikation sind nicht bekannt.",
+                "source_support": "Die Quelle berichtet nur Ereignis und zugeschriebene Angaben, keinen Vertrauens- oder Diskurseffekt.",
+                "limitations": "Keine Umfragen, Diskursdaten, Verfahrensunterlagen oder unabhängigen Berichte liegen vor.",
+                "first_order": "Mögliche erhöhte Nachfrage nach Schutz und Aufklärung.",
+                "second_order": "Mögliche Vertrauensgewinne durch transparente Ermittlungen oder Vertrauensverluste durch unklare Zuschreibungen.",
+                "third_order": "Bei wiederholten Fällen könnte sich eine Normalisierung von Gewalt politisch verfestigen; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle dokumentiert einen institutionellen Folgeeffekt; die Richtung bleibt offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative institutionelle Reaktionen sind als bedingte Gegenpfade denkbar, aber keiner ist beobachtet oder unabhängig belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der Umgang mit dem Vorfall könnte Vertrauen in Ermittlungs- und Schutzinstitutionen verändern.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Umgang mit dem Vorfall könnte Vertrauen in Ermittlungs- und Schutzinstitutionen verändern.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Leben und körperliche Unversehrtheit",
+            "reference_space": "Westjordanland, Gebiet der Siedlung Neve Tzuf nahe Ramallah",
+            "observed_at": "Sonntag, laut dem vorliegenden Bericht",
+            "temporal_status": "ex_post",
+            "mechanism": "Berichteter tödlicher Schusswaffenangriff",
+            "recipients": [
+              "getötete Person",
+              "Angehörige"
+            ],
+            "time_horizon": "Eingetretener, irreversibler Schaden",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Der belegte unmittelbare Schaden betrifft eine Person.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Der Tod ist eine höchst intensive Schädigung von Leben und Gesundheit.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 4,
+                "rationale": "Der Verlust des Lebens ist dauerhaft und irreversibel.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der eingetretene Tod kann nicht rückgängig gemacht werden.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Die getötete Person und Angehörige sind durch den tödlichen Angriff besonders betroffen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Der direkte Schaden ist schwer, aber seine systemische Reichweite ist nicht belegt.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod verletzt die Schutzgrenze des Lebens unmittelbar.",
+              "reference_frame": "Leben und körperliche Unversehrtheit",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 19,
+              "divisor": 6,
+              "raw": 3.1666666666666665,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-20T13:11:06.731Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Der Bericht trägt die vorläufige Darstellung des tödlichen Angriffs, der Festnahme sowie der zugeschriebenen Angaben von Behörden und israelischer Armee."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den Todesfall als eingetretenen Schaden, aber keine belastbaren Daten zur Reichweite weiterer menschlicher Folgen. Der modellierte Pfad bleibt deshalb auf mögliche lokale Sicherheits-, Versorgungs- und Vertrauenseffekte begrenzt.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der unmittelbare menschliche Schaden ist durch den berichteten Todesfall materiell und schwer. Weitergehende Folgen werden als bedingtes Potenzial bewertet, nicht als eingetretene Wirkung.",
+          "primary_paths": [
+            {
+              "label": "Der tödliche Angriff könnte Sicherheitsgefühl und Zugang zu Schutz im lokalen Umfeld verschlechtern.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Gewalt und ein Todesfall können Angst, Schutzbedarf und Reaktionsdruck bei Anwohnern, Angehörigen und Einsatzkräften erhöhen.",
+              "recipients": [
+                "Anwohnerinnen und Anwohner",
+                "Angehörige",
+                "Einsatz- und Rettungskräfte"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Der Todesfall ist schwer; Reichweite und Dauer möglicher zusätzlicher Belastungen sind wegen fehlender Folgedaten begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der belegte Ort weist auf einen zunächst lokalen Betroffenenkreis hin.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Ein tödlicher Angriff stellt eine sehr schwere unmittelbare Belastung dar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer zusätzlicher Angst oder Schutzmaßnahmen ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 4,
+                  "rationale": "Der berichtete Todesfall ist irreversibel; weitere Folgen bleiben offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Angehörige und Menschen am Tatort können besonders verletzlich sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Mögliche Wirkungen reichen über den Einzelfall hinaus, sind aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der eingetretene Todesfall wird als beobachteter Schaden separat ausgewiesen. Für den ex-ante modellierten Folgepfad ist keine zusätzliche schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Weitere negative Folgen würden voraussetzen, dass der Angriff lokal Unsicherheit, Schutzmaßnahmen oder Zugangsprobleme verstärkt.",
+              "reference_space": "Umfeld von Neve Tzuf nahe Ramallah",
+              "time_horizon": "Kurz- bis mittelfristig nach dem Angriff",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der berichtete Todesfall ist zutreffend; zusätzliche Folgen werden nicht als sicher unterstellt.",
+              "source_support": "Die Quelle berichtet den tödlichen Angriff und die Festnahme, nicht die Folgeentwicklung.",
+              "limitations": "Keine unabhängige Bestätigung, keine Messung von Angst, Versorgung, Bewegungsfreiheit oder weiteren Schäden.",
+              "first_order": "Mögliche Verschlechterung des lokalen Sicherheitsgefühls und zusätzlicher Schutzbedarf.",
+              "second_order": "Mögliche Einschränkungen im Alltag oder beim Zugang zu Hilfe, falls Sicherheitsmaßnahmen ausgeweitet werden.",
+              "third_order": "Mögliche längerfristige Vertrauensverluste bei wiederholten oder ungeklärten Vorfällen; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst Folgeeffekte; die Wissensgrenze betrifft Reichweite, Dauer und Verteilung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der modellierte negative Folgepfad hat keinen vergleichbar starken positiven Gegenpfad. Der eingetretene Todesfall wird getrennt als beobachteter Schaden bewertet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der tödliche Angriff könnte Sicherheitsgefühl und Zugang zu Schutz im lokalen Umfeld verschlechtern.",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Leben und körperliche Unversehrtheit",
+              "reference_space": "Westjordanland, Gebiet der Siedlung Neve Tzuf nahe Ramallah",
+              "observed_at": "Sonntag, laut dem vorliegenden Bericht",
+              "temporal_status": "ex_post",
+              "mechanism": "Berichteter tödlicher Schusswaffenangriff",
+              "recipients": [
+                "getötete Person",
+                "Angehörige"
+              ],
+              "time_horizon": "Eingetretener, irreversibler Schaden",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der belegte unmittelbare Schaden betrifft eine Person.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 4,
+                  "rationale": "Der Tod ist eine höchst intensive Schädigung von Leben und Gesundheit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Der Verlust des Lebens ist dauerhaft und irreversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der eingetretene Tod kann nicht rückgängig gemacht werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Die getötete Person und Angehörige sind durch den tödlichen Angriff besonders betroffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der direkte Schaden ist schwer, aber seine systemische Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod verletzt die Schutzgrenze des Lebens unmittelbar.",
+                "reference_frame": "Leben und körperliche Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 19,
+                "divisor": 6,
+                "raw": 3.1666666666666665,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Leben und körperliche Unversehrtheit",
+            "reference_space": "Westjordanland, Gebiet der Siedlung Neve Tzuf nahe Ramallah",
+            "observed_at": "Sonntag, laut dem vorliegenden Bericht",
+            "temporal_status": "ex_post",
+            "mechanism": "Berichteter tödlicher Schusswaffenangriff",
+            "recipients": [
+              "getötete Person",
+              "Angehörige"
+            ],
+            "time_horizon": "Eingetretener, irreversibler Schaden",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Der belegte unmittelbare Schaden betrifft eine Person.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 4,
+                "rationale": "Der Tod ist eine höchst intensive Schädigung von Leben und Gesundheit.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 4,
+                "rationale": "Der Verlust des Lebens ist dauerhaft und irreversibel.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der eingetretene Tod kann nicht rückgängig gemacht werden.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Die getötete Person und Angehörige sind durch den tödlichen Angriff besonders betroffen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Der direkte Schaden ist schwer, aber seine systemische Reichweite ist nicht belegt.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod verletzt die Schutzgrenze des Lebens unmittelbar.",
+              "reference_frame": "Leben und körperliche Unversehrtheit",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 19,
+              "divisor": 6,
+              "raw": 3.1666666666666665,
+              "rounded": 3,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Ein jüdischer Siedler wurde nach dem vorliegenden Bericht bei einem tödlichen Angriff getötet.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle enthält keine Angaben zu Umwelt, Ressourcen, Emissionen oder ökologischen Schäden. Ein belastbarer planetarer Wirkpfad ist daher nicht erkennbar; mögliche lokale Nebenwirkungen von Sicherheitsmaßnahmen bleiben spekulativ.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Für den berichteten lokalen Sicherheitsvorfall ist keine substanzielle planetare Zustandsänderung belegt oder quellengebunden plausibel genug, um sie über Stufe null hinaus zu bewerten.",
+          "primary_paths": [
+            {
+              "label": "Keine substanzielle planetare Zustandsänderung ist aus dem berichteten Einzelereignis ableitbar.",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Der Bericht beschreibt Gewalt, Festnahme und Krankenhausaufenthalt, aber keinen Eingriff in Umwelt, Ressourcen oder Infrastruktur mit ökologischer Wirkung.",
+              "recipients": [
+                "lokale Umwelt",
+                "betroffene Bevölkerung"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Die Quelle enthält keinen ökologischen Befund; ein kleiner indirekter Effekt bleibt nicht belastbar quantifizierbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Betroffenenkreis wird in der Quelle genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität oder Belastung wird berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Dauer einer Umweltveränderung ist angegeben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Ökologische Verwundbarkeit wird im Bericht nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Es gibt keinen belegten ökologischen Systempfad.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine planetare Schutzgrenze wird durch die vorliegenden Angaben nicht berührt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Ein planetarer Pfad wäre nur bei zusätzlichen, nicht gelieferten Angaben zu Schäden, Infrastruktur oder längerfristigen Sicherheitsfolgen prüfbar.",
+              "reference_space": "Lokales Umfeld des berichteten Vorfalls",
+              "time_horizon": "Offen",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Das Fehlen ökologischer Angaben wird nicht als Beweis für das Ausbleiben jeder Nebenwirkung gewertet.",
+              "source_support": "Die Quelle trägt keine Aussage zu planetaren Folgen.",
+              "limitations": "Keine Umwelt- oder Infrastrukturdaten und keine unabhängige Folgenrecherche in der Akte.",
+              "first_order": "Keine belastbare direkte Umweltveränderung ableitbar.",
+              "second_order": "Indirekte Effekte durch Sicherheitsmaßnahmen bleiben offen und nicht quantifizierbar.",
+              "third_order": "Keine systemische ökologische Kaskade belegbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen ökologischen Befund; weitergehende Recherche wäre erforderlich.",
+              "negligibility_rationale": "Im abgegrenzten Zeitraum und auf Basis der gelieferten Quelle ist keine substanzielle planetare Zustandsänderung modellierbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt weder einen belastbaren positiven noch negativen planetaren Hauptpfad; die Einordnung bleibt wegen fehlender Umweltangaben offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine substanzielle planetare Zustandsänderung ist aus dem berichteten Einzelereignis ableitbar.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine substanzielle planetare Zustandsänderung ist aus dem berichteten Einzelereignis ableitbar.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keinen institutionellen oder diskursiven Folgeeffekt. Plausibel prüfbar bleibt nur ein bedingter Pfad über Ermittlungsqualität, öffentliche Zuschreibung und Vertrauen; Eintritt und Richtung sind offen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein tödlicher Vorfall mit Festnahme kann Erwartungen an Schutz und Rechtsstaatlichkeit berühren. Die Quelle liefert aber keine Daten zu Vertrauen, politischer Reaktion oder institutioneller Korrekturfähigkeit.",
+          "primary_paths": [
+            {
+              "label": "Der Umgang mit dem Vorfall könnte Vertrauen in Ermittlungs- und Schutzinstitutionen verändern.",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Transparente Ermittlungen könnten Rechenschaft signalisieren; unklare Zuschreibungen oder politisierte Reaktionen könnten dagegen Misstrauen verstärken.",
+              "recipients": [
+                "lokale Bevölkerung",
+                "Ermittlungs- und Schutzinstitutionen",
+                "öffentliche Debatte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Gegenstand ist institutionell sensibel, doch konkrete Reaktionen und Vertrauensdaten fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die mögliche Wirkung betrifft vor allem das lokale Umfeld und die öffentliche Debatte.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Todesfall kann institutionelle Erwartungen berühren, ohne selbst einen Institutionenschaden zu belegen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines möglichen Vertrauenseffekts ist nicht bekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauensänderungen könnten grundsätzlich korrigierbar sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "In konfliktbelasteten Lagen können betroffene Gruppen besonders empfindlich auf Schutzversagen reagieren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Institutionen- und Sicherheitswahrnehmung verbinden, ist aber nicht beobachtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Verletzung demokratischer Rechte oder institutioneller Schutzgrenzen.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Ermittlungsverlauf und öffentliche Kommunikation wahrgenommen und politisch zugespitzt werden.",
+              "reference_space": "Lokale Institutionen und öffentliche Debatte im Umfeld des Vorfalls",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Öffentliche Reaktionen, Ermittlungsqualität und institutionelle Kommunikation sind nicht bekannt.",
+              "source_support": "Die Quelle berichtet nur Ereignis und zugeschriebene Angaben, keinen Vertrauens- oder Diskurseffekt.",
+              "limitations": "Keine Umfragen, Diskursdaten, Verfahrensunterlagen oder unabhängigen Berichte liegen vor.",
+              "first_order": "Mögliche erhöhte Nachfrage nach Schutz und Aufklärung.",
+              "second_order": "Mögliche Vertrauensgewinne durch transparente Ermittlungen oder Vertrauensverluste durch unklare Zuschreibungen.",
+              "third_order": "Bei wiederholten Fällen könnte sich eine Normalisierung von Gewalt politisch verfestigen; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle dokumentiert einen institutionellen Folgeeffekt; die Richtung bleibt offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative institutionelle Reaktionen sind als bedingte Gegenpfade denkbar, aber keiner ist beobachtet oder unabhängig belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Umgang mit dem Vorfall könnte Vertrauen in Ermittlungs- und Schutzinstitutionen verändern.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der Umgang mit dem Vorfall könnte Vertrauen in Ermittlungs- und Schutzinstitutionen verändern.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-20T13:08:09.283Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-20T12:55:31.000Z",
+      "last_updated": "2026-09-20T13:11:06.726Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-45e2b297006349d23223",
+      "case_file": null,
+      "source_published_at": "2026-09-20T12:55:31.000Z",
+      "published_at": "2026-09-20T13:11:06.726Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/juedischer-siedler-im-westjordanland-getoetet---verdaechtiger-festgenommen-38280354.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-20T12:55:31.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f205d07a7d4f5073",
       "title_image": {
