@@ -531,3 +531,22 @@ test('die verfolgten Sendungen decken Natalies Standardlaeufe ab', async () => {
     assert.ok(show.mediathek?.channel && (show.mediathek?.topic || show.mediathek?.title) || /^https:\/\//.test(show.feed || ''), `${show.id} hat eine Quelle`);
   }
 });
+
+// 20.09.2026: Seit dem 13.09. kam keine neue Nachbesprechung mehr. Jede frische
+// Folge galt als Dublette eines alten Auftrags - gemeinsam war nur „2026" oder
+// „wir". Die Folge war damit für immer blockiert, ohne dass es jemand sah.
+test('ein Jahr oder ein Füllwort macht aus einer neuen Folge keine Dublette', async () => {
+  const { duplicateRequestFor } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  const auftrag = (brief) => [{ input: { job_id: 'wt_20260913T183517Z_8ae19d43fb4d11aa29ec1986', request: { brief } } }];
+  const alt = 'Bitte eine Nachbetrachtung zum Markus Lanz vom 12. September 2026 über die Wahl in Sachsen-Anhalt.';
+  const neu = { title: 'Markus Lanz vom 17. September 2026 (S2026/E101)', published_at: '2026-09-17T21:15:00.000Z' };
+  assert.equal(duplicateRequestFor(neu, { id: 'markus-lanz' }, auftrag(alt)), null, 'nur das Jahr ist kein gemeinsames Thema');
+  const illner = { title: 'Viele Krisen, wenig Rückhalt – kriegt der Kanzler die Kurve - „maybrit illner" vom 17. September 2026', published_at: '2026-09-17T22:15:00.000Z' };
+  assert.equal(duplicateRequestFor(illner, { id: 'maybrit-illner' }, auftrag('Nachgesehen zur maybrit illner spezial am Wahl-Sonntag 2026')), null);
+  const lesch = { title: 'Maja Göpel: Warum wir Veränderung falsch verstehen - Lesch Co', published_at: '2026-09-18T10:00:00.000Z' };
+  assert.equal(duplicateRequestFor(lesch, { id: 'terra-x-lesch-co' }, auftrag('Lesch Co: Bitte schauen, wie wir mit Hitze umgehen')), null, '„wir" trägt kein Thema');
+  // Ein echtes gemeinsames Thema bleibt eine Dublette.
+  assert.ok(duplicateRequestFor(lesch, { id: 'terra-x-lesch-co' }, auftrag('Lesch Co mit Maja Göpel bitte nachbesprechen'))?.shared.includes('goepel'));
+  // Und derselbe Sendetag ebenfalls.
+  assert.ok(duplicateRequestFor(neu, { id: 'markus-lanz' }, auftrag('Nachbetrachtung zum Lanz vom 17. September'))?.shared.includes('sendetag'));
+});

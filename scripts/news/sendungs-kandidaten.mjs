@@ -109,7 +109,12 @@ export function knownEpisodeUrls({ editions = [], requests = [] } = {}) {
 // Thema im Klartext, der Vorschlag um 08:36 die Feed-Adresse; beide gingen live).
 // Verglichen werden deshalb zusätzlich die tragenden Wörter: der Vorschlag
 // weicht, wenn ein offener Auftrag dieselbe Sendung UND dasselbe Thema nennt.
-const STOPWORDS = new Set(['der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einer', 'eines', 'und', 'oder', 'mit', 'ohne', 'von', 'vom', 'zum', 'zur', 'fuer', 'ueber', 'auf', 'aus', 'bei', 'ist', 'sind', 'wie', 'was', 'wer', 'nicht', 'auch', 'noch', 'folge', 'episode', 'teil', 'podcast', 'sendung', 'analyse', 'bitte', 'machen', 'thema', 'nachgehoert', 'nachgesehen', 'heute', 'neue', 'neuen', 'vom', 'januar', 'februar', 'maerz', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'dezember']);
+const STOPWORDS = new Set(['der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einer', 'eines', 'und', 'oder', 'mit', 'ohne', 'von', 'vom', 'zum', 'zur', 'fuer', 'ueber', 'auf', 'aus', 'bei', 'ist', 'sind', 'wie', 'was', 'wer', 'nicht', 'auch', 'noch', 'folge', 'episode', 'teil', 'podcast', 'sendung', 'analyse', 'bitte', 'machen', 'thema', 'nachgehoert', 'nachgesehen', 'heute', 'neue', 'neuen', 'vom', 'januar', 'februar', 'maerz', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'dezember',
+  // 20.09.2026: Jede neue Lanz- und Illner-Folge galt seit dem 13.09. als
+  // Dublette eines alten Auftrags - gemeinsam war nur "2026" oder "wir".
+  // Ein Wort ohne Thema darf keine Folge verhindern.
+  'wir', 'uns', 'man', 'ihr', 'nach', 'vor', 'beim', 'ins', 'als', 'dass', 'wenn', 'denn', 'aber',
+  'mehr', 'warum', 'wieder', 'jetzt', 'schon', 'ganz', 'viele', 'wenig', 'gegen', 'zwischen', 'durch', 'immer', 'sein', 'ihre', 'seine']);
 export const topicWords = (value) => new Set(String(value || '').toLowerCase()
   .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
   .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -151,7 +156,9 @@ export function duplicateRequestFor(episode, show, requests = []) {
   // Die Wörter der Sendung tragen kein Thema: sonst wäre jeder Auftrag zu der
   // Sendung eine Dublette zu jeder ihrer Folgen. Auch der zusammengeschriebene
   // Sendungsname ("neudenken") enthält seine Teile ("neu", "denken").
-  const title = [...topicWords(episode?.title)].filter((word) => !showCompact.includes(compactWords(word)));
+  // Jahres- und Folgenzahlen tragen kein Thema: "Markus Lanz vom 17. September
+  // 2026" und ein Auftrag vom 13.09. teilen sonst die "2026" (20.09.2026).
+  const title = [...topicWords(episode?.title)].filter((word) => !showCompact.includes(compactWords(word)) && !/^\d+$/.test(word));
   for (const job of requests) {
     const request = job?.input?.request || job?.request || {};
     const text = [request.brief, request.title, request.topic].filter(Boolean).join(' ');
