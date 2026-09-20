@@ -221,12 +221,21 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          # Oeffentlich heisst: die ausgelieferten Seiten aendern sich. Am
+          # 20.09.2026 stand die Morgenlage committet im Repository und war
+          # trotzdem nicht im Netz - der Lauf hatte keine neue Meldung
+          # veroeffentlicht, und nur daran hing die Auslieferung. Gemessen wird
+          # vor dem Commit (danach ist nichts mehr vorgemerkt), gemeldet erst
+          # nach der erfolgreichen Veroeffentlichung.
+          PUBLIC_FILES=false
+          if git diff --cached --name-only | grep -qE '^(news/|wirkungsticker/)'; then PUBLIC_FILES=true; fi
           git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
           node scripts/news/publish-git.mjs
           RELEASE_COMMIT="$(git rev-parse HEAD)"
           [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Invalid published commit." >&2; exit 1; }
           echo "commit=$RELEASE_COMMIT" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "public_files=$PUBLIC_FILES" >> "$GITHUB_OUTPUT"
       # Die Quittung laeuft in JEDEM Lauf, nicht nur wenn dieser Lauf etwas
       # uebernommen hat. Sie prueft die Seite live, und die Seite ist zum
       # Zeitpunkt der Uebernahme noch nicht ausgeliefert - die Bestaetigung
@@ -241,7 +250,7 @@ jobs:
           WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
         run: node scripts/news/import-approved-editorials.mjs --finalize
       - name: Publish the committed ticker automatically
-        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.approved.outputs.changed == 'true')
+        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.approved.outputs.changed == 'true' || steps.commit.outputs.public_files == 'true')
         env:
           GH_TOKEN: ${{ github.token }}
           TICKER_COMMIT: ${{ steps.commit.outputs.commit }}
