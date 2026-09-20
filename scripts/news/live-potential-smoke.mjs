@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { gunzipSync } from 'node:zlib';
 import path from 'node:path';
 
 const ROOT = process.cwd();
@@ -45,19 +46,20 @@ async function response(url) {
   return result;
 }
 async function text(url) { return (await response(url)).text(); }
-async function json(url) { return (await response(url)).json(); }
+// Die App-Daten liegen gepackt auf der Seite (app-pages.mjs).
+async function json(url) { return JSON.parse(gunzipSync(Buffer.from(await (await response(url)).arrayBuffer())).toString('utf8')); }
 const cacheBust = url => `${url}${url.includes('?') ? '&' : '?'}release=${encodeURIComponent(releaseSha || Date.now())}`;
 
 export async function livePotentialCheck({ fetchJson = json, fetchText = text } = {}) {
   const store = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/news/stories.json'), 'utf8'));
-  const expectedManifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'wirkungsticker/data/app/manifest.json'), 'utf8'));
+  const expectedManifest = JSON.parse(gunzipSync(fs.readFileSync(path.join(ROOT, 'wirkungsticker/data/app/manifest.json.gz'))).toString('utf8'));
   const reviewed = store.stories.filter(record => record.published && record.listed !== false
     && record.impact_assessment?.version === '2.1'
     && record.impact_semantic_review?.status === 'ready');
   const sourceErrors = reviewed.flatMap(record => completePotential(record) ? [] : [`${record.story_id}:SOURCE_READY_PROFILE_INCOMPLETE`]);
   if (sourceErrors.length) return { ok: false, stage: 'source', errors: sourceErrors };
 
-  const liveManifest = await fetchJson(cacheBust(`${base}/wirkungsticker/data/app/manifest.json`));
+  const liveManifest = await fetchJson(cacheBust(`${base}/wirkungsticker/data/app/manifest.json.gz`));
   if (liveManifest.revision !== expectedManifest.revision) return {
     ok: false, stage: 'propagation', errors: [`MANIFEST_REVISION:${liveManifest.revision || 'missing'}!=${expectedManifest.revision}`],
   };
@@ -66,7 +68,7 @@ export async function livePotentialCheck({ fetchJson = json, fetchText = text } 
   if (!feedMeta || !Number.isInteger(feedMeta.pages)) return { ok: false, stage: 'manifest', errors: ['NEWS_FEED_METADATA_MISSING'] };
   const feedItems = [];
   for (let page = 0; page < feedMeta.pages; page += 1) {
-    const packet = await fetchJson(cacheBust(`${base}/wirkungsticker/data/app/feeds/news-alle-${page}.json`));
+    const packet = await fetchJson(cacheBust(`${base}/wirkungsticker/data/app/feeds/news-alle-${page}.json.gz`));
     if (packet.revision !== liveManifest.revision) return { ok: false, stage: 'feed', errors: [`FEED_REVISION_MISMATCH:${page}`] };
     feedItems.push(...(packet.items || []));
   }
@@ -82,7 +84,7 @@ export async function livePotentialCheck({ fetchJson = json, fetchText = text } 
     visible += 1;
     const liveLookup = liveManifest.lookup?.[relative];
     if (!liveLookup?.id) { errors.push(`${record.story_id}:LIVE_LOOKUP_MISSING`); continue; }
-    const item = await fetchJson(cacheBust(`${base}/wirkungsticker/data/app/items/${liveLookup.id}.json`));
+    const item = await fetchJson(cacheBust(`${base}/wirkungsticker/data/app/items/${liveLookup.id}.json.gz`));
     errors.push(...renderedPotentialErrors(item?.html, `${record.story_id}:bookmark-item`));
     const feed = feedByUrl.get(relative);
     if (!feed) errors.push(`${record.story_id}:NEWS_FEED_CARD_MISSING`);

@@ -13,10 +13,35 @@ async function boot(root){
  function setView(value){const compact=value!=='detailed';grid.classList.toggle('news-grid--compact',compact);root.querySelectorAll('[data-app-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.appView===(compact?'compact':'detailed'))));}
  let view='compact';try{view=localStorage.getItem(VIEW_KEY)||view;}catch{}setView(view);
  root.querySelectorAll('[data-app-view]').forEach(b=>b.addEventListener('click',()=>{setView(b.dataset.appView);try{localStorage.setItem(VIEW_KEY,b.dataset.appView);}catch{}}));
- async function json(file,signal){if(cache.has(file))return cache.get(file);const r=await fetch(API+file,{cache:'no-cache',signal});if(!r.ok)throw Error('HTTP_'+r.status);const data=await r.json();if(signal?.aborted)throw Object.assign(Error('Aborted'),{name:'AbortError'});cache.set(file,data);return data;}
+ // Die Daten liegen gepackt auf der Seite (app-pages.mjs): reiner Text, der
+ // auf ein Sechstel schrumpft - die Auslieferung ueber GitHub Pages hat ein
+ // hartes Limit, und der Ticker war der groesste Zuwachs. Entpackt wird im
+ // Browser. Fehlt DecompressionStream (Browser vor 2023), bleiben die
+ // Beitragsseiten selbst lesbar; nur die Liste sagt, was zu tun ist.
+ async function json(file,signal){
+  if(cache.has(file))return cache.get(file);
+  if(typeof DecompressionStream==='undefined')throw Error('BROWSER_ZU_ALT');
+  const r=await fetch(API+file+'.gz',{cache:'no-cache',signal});
+  // Uebergang: bis der erste Ticker-Lauf nach der Umstellung die Daten neu
+  // geschrieben hat, liegt auf der Seite noch die ungepackte Fassung.
+  if(r.status===404){const alt=await fetch(API+file,{cache:'no-cache',signal});if(!alt.ok)throw Error('HTTP_'+alt.status);
+   const offen=await alt.json();if(signal?.aborted)throw Object.assign(Error('Aborted'),{name:'AbortError'});cache.set(file,offen);return offen;}
+  if(!r.ok)throw Error('HTTP_'+r.status);
+  const entpackt=new Response(r.body.pipeThrough(new DecompressionStream('gzip')));
+  const data=JSON.parse(new TextDecoder().decode(await entpackt.arrayBuffer()));
+  if(signal?.aborted)throw Object.assign(Error('Aborted'),{name:'AbortError'});
+  cache.set(file,data);return data;
+ }
  function setManifest(data){manifest=data;lookup=new Map(Object.values(manifest.lookup).map(r=>[r.id,r]));}
  const controls=()=>{document.dispatchEvent(new CustomEvent('wirkungsraum:content-added'));};
  function info(text){status.textContent=text;}
+ // Ohne Entpackfunktion im Browser bleibt die Liste leer statt still kaputt.
+ // Die bereits gerenderten Beitragskarten und jede einzelne Beitragsseite
+ // funktionieren weiter - nur Nachladen, Filtern und Suchen brauchen die Daten.
+ if(typeof DecompressionStream==='undefined'){
+  info('Zum Nachladen, Filtern und Suchen braucht diese Ansicht einen neueren Browser. Die angezeigten Beiträge und alle Beitragsseiten kannst Du weiter lesen.');
+  more.hidden=true;return;
+ }
  function updateMore(){more.hidden=done;more.disabled=busy;more.textContent=busy?'Wird geladen …':'Weitere Beiträge laden';}
  const indexed=()=>mode==='suche'||mode==='merkzettel'||(mode==='analysen'&&topic!=='alle');
  function showCount(){

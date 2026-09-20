@@ -3,10 +3,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import * as search from '../../assets/js/ticker-search.js';
+import {gzipSync} from 'node:zlib';
+// Die App holt ihre Daten gepackt (app-pages.mjs). Das Fenster antwortet wie
+// die Seite: .json.gz liegt da, die ungepackte Fassung nicht mehr.
+const gepackt=(wert)=>({ok:true,status:200,body:new Blob([gzipSync(Buffer.from(JSON.stringify(wert)))]).stream()});
 const client=fs.readFileSync(new URL('../../assets/js/news-app.js',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
-const tick=()=>new Promise(resolve=>setTimeout(resolve,0));
+const tick=async()=>{for(let i=0;i<8;i++)await new Promise(resolve=>setTimeout(resolve,0));};
 function element(dataset={}){return {dataset,hidden:false,disabled:false,textContent:'',innerHTML:'',events:{},classList:{toggle(){}},setAttribute(){},addEventListener(k,fn){this.events[k]=fn;}};}
-function harness(fetcher,{mode='news',initialQuery='',navigationType='navigate',stored=null}={}){
+function harness(fetcher,{mode='news',initialQuery='',navigationType='navigate',stored=null,fetchImpl=null,entpacken=true}={}){
  const grid=element(),status=element(),more=element(),filters=['alle','technik'].map(appFilter=>element({appFilter}));
  grid.replaceChildren=()=>{grid.innerHTML='';};grid.insertAdjacentHTML=(_,html)=>{grid.innerHTML+=html;};grid.querySelectorAll=()=>Array.from(grid.innerHTML.matchAll(/data-news-card/g));
  const form=element();form.elements={namedItem:name=>name==='ressort'?{value:'alle',options:[{value:'alle'},{value:'technik'}]}:null};
@@ -20,7 +24,8 @@ function harness(fetcher,{mode='news',initialQuery='',navigationType='navigate',
  if(stored)store.set(`woek:ticker-app:v2:${location.pathname}${location.search}`,JSON.stringify(stored));
  let intersect=()=>{};
  const window={addEventListener(k,fn){events[k]=fn;},scrollTo(options){scrolls.push(options.top);},performance:{getEntriesByType:()=>[{type:navigationType}]},IntersectionObserver:true};
- const sandbox={...search,getComputedStyle:()=>({top:'54px'}),document:{querySelector:()=>null,querySelectorAll:s=>s==='.ticker-app-nav a[href="/wirkungsticker/news/"]'?[newsNav]:[],addEventListener(){},dispatchEvent(){}},window,location,history:{pushState(_s,_t,url){location.search=new URL(url,location.origin+location.pathname).search;historyEntries.splice(++historyIndex);historyEntries.push(location.search);},replaceState(_s,_t,url){location.search=url;historyEntries[historyIndex]=url;}},fetch:async(url,opts)=>({ok:true,json:()=>fetcher(url.replace('/wirkungsticker/data/app/',''),opts)}),AbortController,URL,URLSearchParams,CSS:{escape:String},CustomEvent:class{},localStorage:{getItem:()=>null,setItem(){}},sessionStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},requestAnimationFrame:fn=>fn(),setTimeout,clearTimeout,scrollY:0};
+ const sandbox={...search,getComputedStyle:()=>({top:'54px'}),document:{querySelector:()=>null,querySelectorAll:s=>s==='.ticker-app-nav a[href="/wirkungsticker/news/"]'?[newsNav]:[],addEventListener(){},dispatchEvent(){}},window,location,history:{pushState(_s,_t,url){location.search=new URL(url,location.origin+location.pathname).search;historyEntries.splice(++historyIndex);historyEntries.push(location.search);},replaceState(_s,_t,url){location.search=url;historyEntries[historyIndex]=url;}},fetch:fetchImpl||(async(url,opts)=>{const datei=url.replace('/wirkungsticker/data/app/','');if(!datei.endsWith('.gz'))return {ok:false,status:404};return gepackt(await fetcher(datei.slice(0,-3),opts));}),AbortController,URL,URLSearchParams,CSS:{escape:String},CustomEvent:class{},localStorage:{getItem:()=>null,setItem(){}},sessionStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},requestAnimationFrame:fn=>fn(),setTimeout,clearTimeout,scrollY:0,Response,TextDecoder,Blob};
+ if(entpacken)sandbox.DecompressionStream=DecompressionStream;
  sandbox.IntersectionObserver=class{constructor(callback){intersect=()=>callback([{isIntersecting:true}]);}observe(){}};
  vm.runInNewContext(client+';globalThis.testBoot=boot;',sandbox);
  return {start:()=>sandbox.testBoot(root),news:()=>newsNav.events.click({preventDefault(){}}),scrolls,location,intersect:()=>intersect(),back:()=>{location.search=historyEntries[--historyIndex];events.popstate();},search:value=>{query.value=value;searchForm.events.submit({preventDefault(){}});},grid,status,more,filter:name=>filters.find(f=>f.dataset.appFilter===name).events.click({preventDefault(){}})};
@@ -100,4 +105,25 @@ test('tapping News during startup cannot be overwritten by the late initial mani
  const initial=app.start();app.news();await tick();await tick();
  release(manifest('v1'));await initial;await tick();
  assert.match(app.grid.innerHTML,/LATEST/);assert.equal(app.status.textContent,'1 von 0 Beiträgen');assert.equal(reads,2);
+});
+
+// Natalie am 20.09.2026: „koennen die Tickerdaten nicht direkt ins release?"
+// Ins Release nicht - GitHub setzt dort keine Freigabe fuer Skriptzugriffe.
+// Gepackt auf der Seite schrumpfen sie auf ein Sechstel.
+test('bis der erste Lauf die Daten neu schreibt, liest die App noch die ungepackte Fassung',async()=>{
+ const daten={'manifest.json':manifest('v1'),'feeds/news-alle-0.json':packet('v1','UNGEPACKT')};
+ const app=harness(null,{fetchImpl:async(url)=>{const datei=url.replace('/wirkungsticker/data/app/','');
+  if(datei.endsWith('.gz'))return {ok:false,status:404};
+  return {ok:true,status:200,json:async()=>daten[datei]};}});
+ await app.start();
+ assert.match(app.grid.innerHTML,/UNGEPACKT/);
+});
+test('ohne Entpackfunktion bleibt die Liste nicht stumm, sondern sagt, was los ist',async()=>{
+ let geholt=0;
+ const app=harness(null,{entpacken:false,fetchImpl:async()=>{geholt+=1;return {ok:true,status:200};}});
+ await app.start();
+ assert.equal(geholt,0,'ohne Entpackfunktion wird gar nicht erst geladen');
+ assert.match(app.status.textContent,/neueren Browser/);
+ assert.match(app.status.textContent,/Beitragsseiten/);
+ assert.equal(app.more.hidden,true);
 });
