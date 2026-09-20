@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-20T08:38:58.037Z",
+  "last_successful_run": "2026-09-20T08:53:27.914Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -113042,7 +113042,10 @@
     }
   },
   "pending_story_ids": [
+    "wt-e83d249afe16dbba",
+    "wt-9ba7ca89f0e3cc97",
     "wt-020966d3b3f330bd",
+    "wt-5a21a3a4471a1e62",
     "wt-e32967fe34f9c230",
     "wt-12e148d54ba835dc",
     "wt-aa10343dae8ef495",
@@ -113162,7 +113165,6 @@
     "wt-88713f762b686eaf",
     "wt-8c2efa5862d7d6c1",
     "wt-1b0459b9f1370276",
-    "wt-5a21a3a4471a1e62",
     "wt-492fde11550f416a",
     "wt-9dd7fd56217f0777",
     "wt-66b31d80c50077c3",
@@ -113202,7 +113204,6 @@
     "wt-abe226f3ad34c006",
     "wt-c256eb221825bed0",
     "wt-45b402bd2485a3b0",
-    "wt-3160bedf2fb60888",
     "wt-e4b7fcb4aff537de",
     "wt-c66626157558f0cf",
     "wt-d1a1a22e5d1253b8",
@@ -113503,12 +113504,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-e83d249afe16dbba",
-    "wt-9ba7ca89f0e3cc97"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-20T08:38:58.037Z",
+  "last_attempted_run": "2026-09-20T08:53:27.914Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.146,
@@ -114828,18 +114827,6 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-17T17:10:39.728Z"
-    },
-    {
-      "id": "agenda-07a6f92180358cae5c0c",
-      "title": "Verkehrskontrolle: Lastwagen-Fahrer fährt bis zu 30 Stunden ohne Pause",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/verkehrskontrolle--lastwagen-fahrer-faehrt-bis-zu-30-stunden-ohne-pause-38266102.html",
-      "source_published_at": "2026-09-17T08:48:28.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-17T08:52:13.640Z"
     },
     {
       "id": "agenda-b10be49f9b5a7177adac",
