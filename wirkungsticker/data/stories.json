@@ -2,8 +2,1538 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-20T09:08:18.350Z",
+  "updated_at": "2026-09-20T09:23:11.079Z",
   "stories": [
+    {
+      "story_id": "wt-dd4dcfccac206622",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-dd4dcfccac206622-b5bb8efb800a3c77-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-dd4dcfccac206622-77896f04a2d8b6d7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-dd4dcfccac206622-04156302c6bfdc0c-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "brande-feuer-nach-mutmasslicher-explosion-mann-in-lebensgefahr-206622",
+      "title": "Laut stern: Feuer in Quakenbrück nach mutmaßlicher Explosion – Mann in Lebensgefahr",
+      "source_summary": "Der stern berichtet über einen nächtlichen Brand in einem Mehrfamilienhaus in Quakenbrück. Nach der vorliegenden Darstellung wurde dabei ein Bewohner lebensgefährlich verletzt.\n\nAls mögliche Ursache nennt die Quelle eine Explosion. Die Formulierung bleibt jedoch als Frage beziehungsweise Vermutung angelegt; ein ursächlicher Zusammenhang ist damit nicht festgestellt.\n\nDie vorliegende Akte enthält nur eine journalistische Quelle. Angaben zu Brandursache, Ablauf, weiteren Betroffenen, Sachschäden und Ermittlungsstand sind daraus nicht belastbar abzuleiten.",
+      "summary": "In Quakenbrück brennt ein Mehrfamilienhaus; laut stern wurde ein Bewohner lebensgefährlich verletzt. Ob eine Explosion den Brand ausgelöst hat, ist offen.",
+      "detail_summary": "Der stern berichtet von einem nächtlichen Brand in einem Mehrfamilienhaus in Quakenbrück. Ein Bewohner soll lebensgefährlich verletzt worden sein. Eine Explosion wird als mögliche Ursache genannt, ist aber nicht belegt. Der zentrale Nachrichtenwert liegt in der akuten Gefahrenlage und der Schwere der gemeldeten Verletzung. Für eine Einordnung von Ursache, Ablauf, Sachschaden oder weiteren Betroffenen reicht die einzelne vorliegende Quelle nicht aus.",
+      "why_relevant": "Ein Brand mit einer gemeldeten lebensgefährlichen Verletzung betrifft unmittelbar Sicherheit und medizinische Versorgung. Die Ursache und das Ausmaß bleiben offen.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Nächtlicher Brand in einem Mehrfamilienhaus in Quakenbrück mit einer laut stern lebensgefährlich verletzten Person und unklarer möglicher Explosionsursache",
+        "evaluation_target": {
+          "label": "Brandereignis und mögliche Gebäudefolgen",
+          "type": "event"
+        },
+        "baseline": "Mehrfamilienhaus ohne den berichteten Brand und ohne die damit verbundene akute Gefahrenlage",
+        "counterfactual": "Ohne den Brand bestünden aus diesem Ereignis heraus keine zusätzlichen akuten Gefahren für Bewohner, Einsatzkräfte oder lokale Versorgung.",
+        "reference_frame": [
+          "Schutz von Leben und Gesundheit",
+          "Sicherheit bewohnter Gebäude",
+          "Zugang zu medizinischer Hilfe"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher Pfad betrifft Verletzungsrisiken, Wohnsicherheit und medizinische Versorgung. Die Quelle belegt eine lebensgefährliche Verletzung, aber keine weitergehenden Folgen.",
+            "planet": "Ein lokaler Brand könnte Rauch- und Schadstoffbelastungen verursachen. Umfang, Dauer und ökologische Folgen sind nicht belegt.",
+            "democracy": "Ein direkter institutioneller oder demokratischer Pfad ist nicht erkennbar. Eine mögliche indirekte Wirkung bestünde in zusätzlichem Bedarf an behördlicher Gefahrenkommunikation."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Der Brand kann die unmittelbare Sicherheit von Bewohnern und Einsatzkräften beeinträchtigen.",
+          "second_order": "Gebäudeschäden oder Absperrungen könnten vorübergehend Wohnraum, Versorgung und Rettungszugänge beeinflussen.",
+          "third_order": "Nur bei größerem oder wiederkehrendem Schadensausmaß wären Belastungen lokaler Sicherheits- und Unterstützungsstrukturen plausibel; dafür gibt es keinen Beleg.",
+          "enablement": [],
+          "counter_evidence": [
+            "Es liegen keine Angaben zu weiteren Verletzten, Gebäudeschäden, Evakuierungen oder längerfristigen Folgen vor.",
+            "Die mögliche Explosion ist nicht als Ursache festgestellt."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert; eine unabhängige Bestätigung liegt nicht vor.",
+          "institutional_status": "Der rechtliche und behördliche Status des Gebäudes, der Ermittlungen und möglicher Maßnahmen ist offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle bestätigt keinen vollständigen Schadensumfang. Modellierbar bleibt nur ein bedingter lokaler Pfad über Brand, mögliche Gebäuderisiken und medizinischen Hilfebedarf.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Brand in einem bewohnten Gebäude kann bei entsprechender Ausbreitung Leben, Gesundheit und Wohnsicherheit beeinträchtigen. Die Richtung ist negativ, das Ausmaß wegen fehlender Angaben zu weiteren Betroffenen und Schäden begrenzt einschätzbar.",
+            "primary_paths": [
+              {
+                "label": "Brandbedingte Gefährdung von Bewohnern und Rettungskräften",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Rauch, Feuer oder instabile Gebäudeteile könnten die Sicherheit beeinträchtigen und medizinische Hilfe erforderlich machen.",
+                "recipients": [
+                  "Bewohnerinnen und Bewohner",
+                  "Einsatzkräfte",
+                  "medizinische Dienste"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Der gemeldete schwere Verletzungsfall stützt einen relevanten lokalen Pfad; Reichweite und Dauer weiterer Folgen sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen sein könnten Bewohner und Einsatzkräfte des Gebäudes.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle berichtet über eine lebensgefährliche Verletzung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Akute Gefahren könnten bis zur Sicherung des Gebäudes andauern.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Folgen sind möglich, aber nicht aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Bewohner eines brennenden Hauses und Verletzte sind besonders schutzbedürftig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt voraussichtlich auf einen lokalen Einzelfall begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der Schutz von Leben und Gesundheit ist bei einem Brand in einem Wohngebäude eine maßgebliche Schutzgrenze.",
+                  "reference_frame": "Schutz von Leben und Gesundheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Feuer, Rauch oder Gebäudeschäden weitere Personen gefährden.",
+                "reference_space": "Mehrfamilienhaus und unmittelbares Umfeld in Quakenbrück",
+                "time_horizon": "kurzfristig bis zur Sicherung und Klärung der Gebäudelage",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird nicht angenommen, dass weitere Verletzungen eingetreten sind; modelliert wird nur die Möglichkeit zusätzlicher Gefährdung.",
+                "source_support": "Die Quelle belegt den Brand und eine lebensgefährliche Verletzung, nicht den vollständigen Mechanismus oder weitere Folgen.",
+                "limitations": "Keine Angaben zu Gebäudeschäden, Evakuierung, weiteren Betroffenen oder Dauer der Versorgungslage.",
+                "first_order": "Weitere Bewohner könnten durch Feuer oder Rauch gefährdet werden.",
+                "second_order": "Absperrungen oder Schäden könnten Zugang zu Wohnraum und medizinischer Hilfe erschweren.",
+                "third_order": "Bei größerem Schaden könnten lokale Rettungsressourcen zeitweise stärker beansprucht werden; das ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quelle oder weitergehende Schadensangabe im gelieferten Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Ein belastbarer positiver Gegenpfad ist nicht belegt; die mögliche Gefährdung von Leben und Gesundheit steht im Vordergrund."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Brandbedingte Gefährdung von Bewohnern und Rettungskräften",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+                "direction": "negative",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
+                "observed_at": "laut vorliegender stern-Berichterstattung",
+                "temporal_status": "ex_post",
+                "mechanism": "Brandereignis; der genaue Verletzungsmechanismus ist nicht belegt.",
+                "recipients": [
+                  "ein Bewohner"
+                ],
+                "time_horizon": "zum Zeitpunkt des Brandereignisses",
+                "magnitude": 4,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Verletzung wird als lebensgefährlich beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der gesundheitlichen Folgen ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Eine lebensgefährlich verletzte Person ist besonders schutzbedürftig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Für einen über den Einzelfall hinausgehenden Systemeffekt gibt es keinen Beleg.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Eine lebensgefährliche Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
+                  "reference_frame": "Schutz von Leben und Gesundheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "observed"
+                },
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und Gesundheit",
+              "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
+              "observed_at": "laut vorliegender stern-Berichterstattung",
+              "temporal_status": "ex_post",
+              "mechanism": "Brandereignis; der genaue Verletzungsmechanismus ist nicht belegt.",
+              "recipients": [
+                "ein Bewohner"
+              ],
+              "time_horizon": "zum Zeitpunkt des Brandereignisses",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Verletzung wird als lebensgefährlich beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der gesundheitlichen Folgen ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Eine lebensgefährlich verletzte Person ist besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Für einen über den Einzelfall hinausgehenden Systemeffekt gibt es keinen Beleg.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Eine lebensgefährliche Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Rauch, Schadstoffen, Löschwasser, Abfällen oder Umweltschäden. Ein kleiner lokaler Belastungspfad bleibt als Möglichkeit modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Gebäudebrand kann lokal Rauch und Brandrückstände erzeugen. Ohne Angaben zu Dauer, Stoffen oder Ausbreitung ist die ökologische Tragweite nicht belastbar bestimmbar.",
+            "primary_paths": [
+              {
+                "label": "Lokale Rauch- und Brandrückstandsbelastung",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein Brand könnte Rauch sowie kontaminierte Rückstände oder Löschwasser in der unmittelbaren Umgebung erzeugen.",
+                "recipients": [
+                  "unmittelbare Nachbarschaft",
+                  "lokale Umwelt"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein lokaler Belastungspfad ist plausibel, Umfang und Dauer bleiben wegen fehlender Messwerte offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Belastung wäre voraussichtlich auf das Umfeld begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keinen Umfang von Rauch oder Schadstoffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Belastung ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Umweltschäden sind nicht belegt und daher nicht anzunehmen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders empfindliche Umweltgüter werden nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein überlokaler ökologischer Pfad ist aus der Quelle nicht ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze ist mangels Angaben zu Stoffen, Mengen und Ausbreitung nicht entscheidend bewertbar.",
+                  "reference_frame": "lokale Umwelt- und Luftqualität",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der Brand Rauch, Rückstände oder belastetes Löschwasser erzeugt.",
+                "reference_space": "Brandort und unmittelbare Umgebung in Quakenbrück",
+                "time_horizon": "während des Brandes und bei anschließender Räumung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird nur ein allgemeiner Brandmechanismus modelliert; konkrete Stoffe oder Schäden werden nicht unterstellt.",
+                "source_support": "Die Quelle belegt einen Brand, aber keine ökologische Belastung.",
+                "limitations": "Keine Messwerte, keine Angaben zu Rauchentwicklung, Löschwasser, Abfall oder betroffenen Flächen.",
+                "first_order": "Rauch oder Brandrückstände könnten die unmittelbare Umgebung belasten.",
+                "second_order": "Aufräum- und Sicherungsarbeiten könnten zusätzliche lokale Abfälle erzeugen.",
+                "third_order": "Ein überlokaler oder dauerhafter ökologischer Effekt ist ohne weitere Daten nicht plausibel belegbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Umweltangaben oder unabhängige Folgenbelege im gelieferten Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen belegten positiven ökologischen Gegenpfad; die negative Möglichkeit bleibt wegen fehlender Umweltdaten klein und unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Lokale Rauch- und Brandrückstandsbelastung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Lokale Rauch- und Brandrückstandsbelastung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle Reaktion oder Veränderung demokratischer Verfahren. Modellierbar ist lediglich ein schwacher, bedingter Informations- und Vertrauenspfad.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein schwerer lokaler Vorfall könnte Anforderungen an transparente Gefahrenkommunikation auslösen. Eine tatsächliche Wirkung auf Vertrauen, Beteiligung oder Institutionen ist nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Zusätzlicher Bedarf an transparenter Gefahrenkommunikation",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Unklare Ursache und mögliche weitere Gefahren könnten die Anforderungen an behördliche Information und Krisenkommunikation erhöhen.",
+                "recipients": [
+                  "betroffene Bevölkerung",
+                  "kommunale Behörden"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Kommunikationsbedarf ist lokal und indirekt; eine demokratische Zustandsänderung ist nicht beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Informationsbedarf beträfe vor allem das lokale Umfeld.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle weist auf eine schwere Verletzung, aber keine Kommunikationskrise hin.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Bedarf dürfte an die akute Gefahrenlage gebunden sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte institutionelle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Bewohner können besonders auf klare Sicherheitsinformationen angewiesen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer institutioneller oder demokratischer Pfad ist nicht erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist für diesen lokalen Einzelfall nicht konkret belegt.",
+                  "reference_frame": "verlässliche öffentliche Gefahreninformation",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass unklare Gefahrenlage und öffentliche Informationsbedürfnisse behördliche Kommunikation erforderlich machen.",
+                "reference_space": "lokale Bevölkerung und kommunale Institutionen in Quakenbrück",
+                "time_horizon": "kurzfristig während der Gefahrenklärung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird keine konkrete Behördenreaktion und kein Vertrauensverlust unterstellt.",
+                "source_support": "Die Quelle berichtet über den Vorfall, nicht über Institutionen, Kommunikation oder demokratische Folgen.",
+                "limitations": "Keine Angaben zu Behördenkommunikation, öffentlicher Reaktion, Vertrauen oder Beteiligung.",
+                "first_order": "Die unklare Ursache könnte den Bedarf an verständlicher Gefahreninformation erhöhen.",
+                "second_order": "Widersprüchliche oder fehlende Informationen könnten Unsicherheit im lokalen Umfeld verstärken.",
+                "third_order": "Eine dauerhafte demokratische Wirkung ist ohne wiederholte oder institutionelle Folgen nicht begründbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Angaben zu behördlicher Kommunikation oder demokratischen Folgen im gelieferten Bestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver demokratischer Gegenpfad ist nicht belegt; der negative Pfad bleibt indirekt, lokal und sehr unsicher."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Zusätzlicher Bedarf an transparenter Gefahrenkommunikation",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zusätzlicher Bedarf an transparenter Gefahrenkommunikation",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und Gesundheit",
+            "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
+            "observed_at": "laut vorliegender stern-Berichterstattung",
+            "temporal_status": "ex_post",
+            "mechanism": "Brandereignis; der genaue Verletzungsmechanismus ist nicht belegt.",
+            "recipients": [
+              "ein Bewohner"
+            ],
+            "time_horizon": "zum Zeitpunkt des Brandereignisses",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Die Verletzung wird als lebensgefährlich beschrieben.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer der gesundheitlichen Folgen ist unbekannt.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Dauerhafte Folgen sind nicht belegt.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Eine lebensgefährlich verletzte Person ist besonders schutzbedürftig.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "system_depth": {
+                "value": 0,
+                "rationale": "Für einen über den Einzelfall hinausgehenden Systemeffekt gibt es keinen Beleg.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Eine lebensgefährliche Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
+              "reference_frame": "Schutz von Leben und Gesundheit",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 9,
+              "divisor": 6,
+              "raw": 1.5,
+              "rounded": 2,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-20T09:24:41.930Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Brand in einem Mehrfamilienhaus in Quakenbrück, mögliche Explosion und lebensgefährliche Verletzung eines Bewohners."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle bestätigt keinen vollständigen Schadensumfang. Modellierbar bleibt nur ein bedingter lokaler Pfad über Brand, mögliche Gebäuderisiken und medizinischen Hilfebedarf.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Brand in einem bewohnten Gebäude kann bei entsprechender Ausbreitung Leben, Gesundheit und Wohnsicherheit beeinträchtigen. Die Richtung ist negativ, das Ausmaß wegen fehlender Angaben zu weiteren Betroffenen und Schäden begrenzt einschätzbar.",
+          "primary_paths": [
+            {
+              "label": "Brandbedingte Gefährdung von Bewohnern und Rettungskräften",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Rauch, Feuer oder instabile Gebäudeteile könnten die Sicherheit beeinträchtigen und medizinische Hilfe erforderlich machen.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner",
+                "Einsatzkräfte",
+                "medizinische Dienste"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Der gemeldete schwere Verletzungsfall stützt einen relevanten lokalen Pfad; Reichweite und Dauer weiterer Folgen sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen sein könnten Bewohner und Einsatzkräfte des Gebäudes.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle berichtet über eine lebensgefährliche Verletzung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Akute Gefahren könnten bis zur Sicherung des Gebäudes andauern.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Folgen sind möglich, aber nicht aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Bewohner eines brennenden Hauses und Verletzte sind besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt voraussichtlich auf einen lokalen Einzelfall begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der Schutz von Leben und Gesundheit ist bei einem Brand in einem Wohngebäude eine maßgebliche Schutzgrenze.",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Feuer, Rauch oder Gebäudeschäden weitere Personen gefährden.",
+              "reference_space": "Mehrfamilienhaus und unmittelbares Umfeld in Quakenbrück",
+              "time_horizon": "kurzfristig bis zur Sicherung und Klärung der Gebäudelage",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird nicht angenommen, dass weitere Verletzungen eingetreten sind; modelliert wird nur die Möglichkeit zusätzlicher Gefährdung.",
+              "source_support": "Die Quelle belegt den Brand und eine lebensgefährliche Verletzung, nicht den vollständigen Mechanismus oder weitere Folgen.",
+              "limitations": "Keine Angaben zu Gebäudeschäden, Evakuierung, weiteren Betroffenen oder Dauer der Versorgungslage.",
+              "first_order": "Weitere Bewohner könnten durch Feuer oder Rauch gefährdet werden.",
+              "second_order": "Absperrungen oder Schäden könnten Zugang zu Wohnraum und medizinischer Hilfe erschweren.",
+              "third_order": "Bei größerem Schaden könnten lokale Rettungsressourcen zeitweise stärker beansprucht werden; das ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quelle oder weitergehende Schadensangabe im gelieferten Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Ein belastbarer positiver Gegenpfad ist nicht belegt; die mögliche Gefährdung von Leben und Gesundheit steht im Vordergrund."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Brandbedingte Gefährdung von Bewohnern und Rettungskräften",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+              "direction": "negative",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und Gesundheit",
+              "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
+              "observed_at": "laut vorliegender stern-Berichterstattung",
+              "temporal_status": "ex_post",
+              "mechanism": "Brandereignis; der genaue Verletzungsmechanismus ist nicht belegt.",
+              "recipients": [
+                "ein Bewohner"
+              ],
+              "time_horizon": "zum Zeitpunkt des Brandereignisses",
+              "magnitude": 4,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Verletzung wird als lebensgefährlich beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der gesundheitlichen Folgen ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Eine lebensgefährlich verletzte Person ist besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Für einen über den Einzelfall hinausgehenden Systemeffekt gibt es keinen Beleg.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Eine lebensgefährliche Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "observed"
+              },
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+            "direction": "negative",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und Gesundheit",
+            "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
+            "observed_at": "laut vorliegender stern-Berichterstattung",
+            "temporal_status": "ex_post",
+            "mechanism": "Brandereignis; der genaue Verletzungsmechanismus ist nicht belegt.",
+            "recipients": [
+              "ein Bewohner"
+            ],
+            "time_horizon": "zum Zeitpunkt des Brandereignisses",
+            "magnitude": 4,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Die Verletzung wird als lebensgefährlich beschrieben.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Dauer der gesundheitlichen Folgen ist unbekannt.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Dauerhafte Folgen sind nicht belegt.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Eine lebensgefährlich verletzte Person ist besonders schutzbedürftig.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "system_depth": {
+                "value": 0,
+                "rationale": "Für einen über den Einzelfall hinausgehenden Systemeffekt gibt es keinen Beleg.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Eine lebensgefährliche Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
+              "reference_frame": "Schutz von Leben und Gesundheit",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "status": "observed"
+            },
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 9,
+              "divisor": 6,
+              "raw": 1.5,
+              "rounded": 2,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Eine Person wurde laut stern lebensgefährlich verletzt.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Rauch, Schadstoffen, Löschwasser, Abfällen oder Umweltschäden. Ein kleiner lokaler Belastungspfad bleibt als Möglichkeit modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Gebäudebrand kann lokal Rauch und Brandrückstände erzeugen. Ohne Angaben zu Dauer, Stoffen oder Ausbreitung ist die ökologische Tragweite nicht belastbar bestimmbar.",
+          "primary_paths": [
+            {
+              "label": "Lokale Rauch- und Brandrückstandsbelastung",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein Brand könnte Rauch sowie kontaminierte Rückstände oder Löschwasser in der unmittelbaren Umgebung erzeugen.",
+              "recipients": [
+                "unmittelbare Nachbarschaft",
+                "lokale Umwelt"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein lokaler Belastungspfad ist plausibel, Umfang und Dauer bleiben wegen fehlender Messwerte offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Belastung wäre voraussichtlich auf das Umfeld begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keinen Umfang von Rauch oder Schadstoffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Belastung ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Umweltschäden sind nicht belegt und daher nicht anzunehmen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders empfindliche Umweltgüter werden nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein überlokaler ökologischer Pfad ist aus der Quelle nicht ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze ist mangels Angaben zu Stoffen, Mengen und Ausbreitung nicht entscheidend bewertbar.",
+                "reference_frame": "lokale Umwelt- und Luftqualität",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der Brand Rauch, Rückstände oder belastetes Löschwasser erzeugt.",
+              "reference_space": "Brandort und unmittelbare Umgebung in Quakenbrück",
+              "time_horizon": "während des Brandes und bei anschließender Räumung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird nur ein allgemeiner Brandmechanismus modelliert; konkrete Stoffe oder Schäden werden nicht unterstellt.",
+              "source_support": "Die Quelle belegt einen Brand, aber keine ökologische Belastung.",
+              "limitations": "Keine Messwerte, keine Angaben zu Rauchentwicklung, Löschwasser, Abfall oder betroffenen Flächen.",
+              "first_order": "Rauch oder Brandrückstände könnten die unmittelbare Umgebung belasten.",
+              "second_order": "Aufräum- und Sicherungsarbeiten könnten zusätzliche lokale Abfälle erzeugen.",
+              "third_order": "Ein überlokaler oder dauerhafter ökologischer Effekt ist ohne weitere Daten nicht plausibel belegbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Umweltangaben oder unabhängige Folgenbelege im gelieferten Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen belegten positiven ökologischen Gegenpfad; die negative Möglichkeit bleibt wegen fehlender Umweltdaten klein und unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Lokale Rauch- und Brandrückstandsbelastung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Lokale Rauch- und Brandrückstandsbelastung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle Reaktion oder Veränderung demokratischer Verfahren. Modellierbar ist lediglich ein schwacher, bedingter Informations- und Vertrauenspfad.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein schwerer lokaler Vorfall könnte Anforderungen an transparente Gefahrenkommunikation auslösen. Eine tatsächliche Wirkung auf Vertrauen, Beteiligung oder Institutionen ist nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Zusätzlicher Bedarf an transparenter Gefahrenkommunikation",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Unklare Ursache und mögliche weitere Gefahren könnten die Anforderungen an behördliche Information und Krisenkommunikation erhöhen.",
+              "recipients": [
+                "betroffene Bevölkerung",
+                "kommunale Behörden"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Kommunikationsbedarf ist lokal und indirekt; eine demokratische Zustandsänderung ist nicht beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Informationsbedarf beträfe vor allem das lokale Umfeld.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle weist auf eine schwere Verletzung, aber keine Kommunikationskrise hin.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Bedarf dürfte an die akute Gefahrenlage gebunden sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte institutionelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Bewohner können besonders auf klare Sicherheitsinformationen angewiesen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer institutioneller oder demokratischer Pfad ist nicht erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist für diesen lokalen Einzelfall nicht konkret belegt.",
+                "reference_frame": "verlässliche öffentliche Gefahreninformation",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass unklare Gefahrenlage und öffentliche Informationsbedürfnisse behördliche Kommunikation erforderlich machen.",
+              "reference_space": "lokale Bevölkerung und kommunale Institutionen in Quakenbrück",
+              "time_horizon": "kurzfristig während der Gefahrenklärung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird keine konkrete Behördenreaktion und kein Vertrauensverlust unterstellt.",
+              "source_support": "Die Quelle berichtet über den Vorfall, nicht über Institutionen, Kommunikation oder demokratische Folgen.",
+              "limitations": "Keine Angaben zu Behördenkommunikation, öffentlicher Reaktion, Vertrauen oder Beteiligung.",
+              "first_order": "Die unklare Ursache könnte den Bedarf an verständlicher Gefahreninformation erhöhen.",
+              "second_order": "Widersprüchliche oder fehlende Informationen könnten Unsicherheit im lokalen Umfeld verstärken.",
+              "third_order": "Eine dauerhafte demokratische Wirkung ist ohne wiederholte oder institutionelle Folgen nicht begründbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Angaben zu behördlicher Kommunikation oder demokratischen Folgen im gelieferten Bestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver demokratischer Gegenpfad ist nicht belegt; der negative Pfad bleibt indirekt, lokal und sehr unsicher."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zusätzlicher Bedarf an transparenter Gefahrenkommunikation",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Zusätzlicher Bedarf an transparenter Gefahrenkommunikation",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-20T09:23:11.079Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-20T08:43:41.000Z",
+      "last_updated": "2026-09-20T09:24:41.927Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-3c3df03dc66b942fe151",
+      "case_file": {
+        "case_id": "case-72ffc96ef7f586",
+        "member_count": 3,
+        "publisher_count": 1,
+        "members": [
+          {
+            "story_id": "wt-dd4dcfccac206622",
+            "slug": "brande-feuer-nach-mutmasslicher-explosion-mann-in-lebensgefahr-206622",
+            "title": "Laut stern: Feuer in Quakenbrück nach mutmaßlicher Explosion – Mann in Lebensgefahr",
+            "summary": "In Quakenbrück brennt ein Mehrfamilienhaus; laut stern wurde ein Bewohner lebensgefährlich verletzt. Ob eine Explosion den Brand ausgelöst hat, ist offen.",
+            "updated_at": "2026-09-20T09:24:41.927Z",
+            "published_at": "2026-09-20T09:24:41.927Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-938d1790b9baf392",
+            "slug": "brande-feuer-nach-mutmasslicher-explosion-mensch-schwer-verletzt-baf392",
+            "title": "Laut stern: Feuer in Quakenbrück nach mutmaßlicher Explosion – ein Bewohner schwer verletzt",
+            "summary": "In Quakenbrück brannte es laut stern in einem Mehrfamilienhaus; ein Bewohner wurde schwer verletzt. Ob eine Explosion das Feuer ausgelöst hat, ist nach der vorliegenden Quelle offen.",
+            "updated_at": "2026-09-20T07:29:57.824Z",
+            "published_at": "2026-09-20T07:29:57.824Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-453ccb3f2a7d7565",
+            "slug": "feuer-in-einfamilienhaus-explosion-in-einfamilienhaus-bewohner-weiter-gesucht-7d7565",
+            "title": "Feuer in Einfamilienhaus: Explosion in Einfamilienhaus - Bewohner weiter gesucht",
+            "summary": "In Weimar sollen mehrere Explosionen ein Wohnhaus zerstört haben. Die Polizei sucht nach einem Bewohner; Ursache, Aufenthaltsort und mögliche Opfer sind noch offen.",
+            "updated_at": "2026-09-14T12:11:06.335Z",
+            "published_at": "2026-09-14T11:17:14.500Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-20T08:43:41.000Z",
+      "published_at": "2026-09-20T09:24:41.927Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/niedersachsen-bremen/braende--feuer-nach-mutmasslicher-explosion---mann-in-lebensgefahr-38279070.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-20T08:43:41.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-55e8722f420ed190",
       "title_image": {
@@ -2973,1697 +4503,6 @@
           "url": "https://www.deutschlandfunk.de/russische-parlamentswahl-geht-zu-ende-zwei-tote-bei-drohnenangriffen-auf-moskau-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-20T08:34:15.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-938d1790b9baf392",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-938d1790b9baf392-323e4d1733c30f20-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-938d1790b9baf392-6b8e3da6cb68424f-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-938d1790b9baf392-786213e9bb4aad54-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "brande-feuer-nach-mutmasslicher-explosion-mensch-schwer-verletzt-baf392",
-      "title": "Laut stern: Feuer in Quakenbrück nach mutmaßlicher Explosion – ein Bewohner schwer verletzt",
-      "source_summary": "Der stern berichtet über einen nächtlichen Brand in einem Mehrfamilienhaus in Quakenbrück. Als mögliche Ursache wird eine Explosion genannt.\n\nNach dem vorliegenden Abstract wurde einer der Bewohner schwer verletzt. Der Text beschreibt damit einen Brand, eine noch nicht geklärte Ursache und eine konkrete Verletzung.\n\nDie Quelle ist ein journalistischer Bericht des stern und keine Primärquelle. Eine unabhängige Bestätigung, nähere Angaben zum Ablauf sowie Informationen zu weiteren Schäden oder zur Ursache liegen in der gelieferten Auswahl nicht vor.",
-      "summary": "In Quakenbrück brannte es laut stern in einem Mehrfamilienhaus; ein Bewohner wurde schwer verletzt. Ob eine Explosion das Feuer ausgelöst hat, ist nach der vorliegenden Quelle offen.",
-      "detail_summary": "Laut stern brannte es mitten in der Nacht in einem Mehrfamilienhaus in Quakenbrück. Ein Bewohner wurde dabei schwer verletzt. Eine Explosion wird als mögliche Ursache genannt, ist damit aber nicht als Ursache festgestellt. Für die betroffenen Bewohner kann ein Brand kurzfristig Sicherheit, Wohnraum und Versorgung gefährden. Ob weitere Menschen betroffen sind, wie groß der Gebäudeschaden ist und ob eine Gefahr fortbesteht, geht aus der gelieferten Textauswahl nicht hervor.",
-      "why_relevant": "Der Brand mit einer schweren Verletzung ist ein akuter Sicherheitsfall; Ursache, Schadensumfang und weitere Gefahren bleiben offen.",
-      "topic": [
-        "Gesundheit"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Nächtlicher Brand in einem Mehrfamilienhaus in Quakenbrück; eine Explosion wird als mögliche Ursache genannt, ein Bewohner wurde schwer verletzt.",
-        "evaluation_target": {
-          "label": "Brandereignis und mögliche Explosion in einem Mehrfamilienhaus",
-          "type": "event"
-        },
-        "baseline": "Wohn- und Sicherheitszustand des Mehrfamilienhauses und seiner Bewohner vor dem Brand.",
-        "counterfactual": "Ohne den Brand wären die unmittelbaren Gefahren durch Feuer und Rauch an diesem Ort voraussichtlich nicht entstanden; die weitere Entwicklung ist unbekannt.",
-        "reference_frame": [
-          "Schutz von Leben und Gesundheit",
-          "Sicheres Wohnen",
-          "Lokale Gefahrenabwehr"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "low",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Der direkte Pfad betrifft Gesundheit, Sicherheit und möglicherweise die Nutzbarkeit des Wohngebäudes. Umfang, Dauer und weitere Betroffene sind nicht belegt.",
-            "planet": "Ein Brand könnte lokal Rauch oder Rückstände erzeugen. Die Quelle enthält jedoch keine Angaben zu Stoffen, Löschwasser, Messungen oder Umweltschäden.",
-            "democracy": "Der Vorfall könnte lokal Informations- und Rechenschaftsbedarf auslösen. Behördenkommunikation, öffentliche Reaktionen und institutionelle Folgen sind nicht belegt."
-          },
-          "central_dimensions": [
-            "human"
-          ],
-          "first_order": "Der Brand kann die Sicherheit und Nutzbarkeit des Mehrfamilienhauses beeinträchtigen; eine schwere Verletzung ist berichtet.",
-          "second_order": "Abhängig von Gebäudeschäden und Bewohnbarkeit könnten Unterbringung, Versorgung und lokale Hilfe beansprucht werden.",
-          "third_order": "Nur bei größerem oder wiederkehrendem Schaden wären längerfristige Folgen für lokale Sicherheitsregeln oder Vertrauen plausibel; dafür fehlt Evidenz.",
-          "enablement": [],
-          "counter_evidence": [
-            "Keine Angaben zu weiteren Verletzten, großflächigen Schäden, Evakuierung oder anhaltender Gefahr.",
-            "Die Explosion wird lediglich als mögliche Ursache beschrieben.",
-            "Es liegt keine Primärquelle oder unabhängige Bestätigung vor."
-          ],
-          "source_independence": "Der Quellenbestand umfasst nur eine journalistische Quelle. Ihre Unabhängigkeit ist nicht verifiziert; eine Primärquelle und unabhängige Bestätigung fehlen.",
-          "institutional_status": "Akutes Ereignis ohne belegten Beschluss, Rechtsakt oder festgestellte behördliche Maßnahme."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 3,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle bestätigt einen Brand und eine schwere Verletzung, erlaubt aber keine belastbare Einschätzung von Schadensumfang, Dauer oder weiteren Betroffenen.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "rationale": "Der mögliche Hauptpfad betrifft Gesundheit, Sicherheit und Wohnnutzbarkeit. Die schwere Verletzung ist als eingetretener Schaden separat belegt; weitergehende Folgen bleiben bedingt.",
-            "primary_paths": [
-              {
-                "label": "Der Brand kann Sicherheit und Wohnnutzbarkeit des Mehrfamilienhauses beeinträchtigen",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Feuer und Rauch können Bewohner gefährden und die Nutzung des Gebäudes einschränken.",
-                "recipients": [
-                  "Bewohner",
-                  "Rettungs- und Einsatzkräfte"
-                ],
-                "magnitude": 3,
-                "magnitude_range": {
-                  "lower": 2,
-                  "upper": 4,
-                  "rationale": "Die berichtete schwere Verletzung stützt eine relevante unmittelbare Intensität; Reichweite und Dauer des Gebäudeschadens bleiben offen."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Betroffen ist nach der Quelle ein Mehrfamilienhaus; der genaue Personenkreis bleibt offen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 4,
-                    "rationale": "Eine schwere Verletzung weist auf eine hohe unmittelbare Gesundheitsintensität hin.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die Dauer von Gefahren oder möglicher Unbewohnbarkeit ist nicht angegeben.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Verletzungs- oder Gebäudefolgen könnten teilweise dauerhaft sein; Details fehlen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Bewohner eines brennenden Mehrfamilienhauses sind unmittelbar gefährdet.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad reicht nur bedingt über den Einzelfall in Wohn- und Hilfestrukturen hinaus.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Die schwere Verletzung ist als beobachteter Schaden separat erfasst; für den ex-ante modellierten Folgepfad ist keine zusätzliche Schutzgrenze belegt.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Weitere Auswirkungen hängen von Gebäudeschäden, Bewohnbarkeit und der Entwicklung der Gefahrenlage ab.",
-                "reference_space": "Mehrfamilienhaus und lokales Umfeld in Quakenbrück",
-                "time_horizon": "Unmittelbar bis mittelfristig",
-                "path_quality": [
-                  "direct",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Feuer und Rauch können in einem bewohnten Gebäude Gesundheit und Nutzung beeinträchtigen.",
-                "source_support": "Die Quelle belegt einen Brand und eine schwere Verletzung, nicht aber den gesamten Folgepfad.",
-                "limitations": "Keine Angaben zu weiteren Betroffenen, Schäden, Evakuierung oder Dauer.",
-                "first_order": "Mögliche weitere Gefährdung und Einschränkung der Gebäudenutzung.",
-                "second_order": "Möglicher Bedarf an Unterbringung und Unterstützung.",
-                "third_order": "Bei größerem Schaden mögliche Belastung lokaler Hilfestrukturen; nicht belegt.",
-                "research_pass": "second_pass",
-                "research_result": "Die gelieferte Quelle enthält keine zusätzliche belastbare Information zu Reichweite und Dauer.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 15,
-                  "divisor": 6,
-                  "raw": 2.5,
-                  "rounded": 3,
-                  "protection_floor": 0,
-                  "final": 3
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Die ungeklärte Ursache kann vorübergehend zusätzlichen Schutz- und Informationsbedarf erzeugen",
-                "direction": "open",
-                "type": "side_risk",
-                "mechanism": "Solange die mögliche Explosion nicht geklärt ist, könnten Bewohner und Behörden mit Unsicherheit über weitere Gefahren umgehen.",
-                "recipients": [
-                  "Bewohner",
-                  "Behörden",
-                  "Nachbarschaft"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Der Mechanismus ist plausibel, aber eine fortbestehende Gefahr oder konkrete Reaktion ist nicht belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Der mögliche Informationsbedarf betrifft zunächst das lokale Umfeld.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Unsicherheit kann Schutzentscheidungen erschweren; ihre Stärke ist nicht gemessen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Die Dauer hängt von der Ursachenklärung und der Gefahrenlage ab.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Informationsunsicherheit wäre grundsätzlich korrigierbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Bewohner eines möglicherweise beschädigten Hauses könnten auf klare Informationen angewiesen sein.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein weitergehender institutioneller Pfad ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Ein Informationsrisiko ist möglich, aber keine konkrete zusätzliche Schutzgrenzverletzung belegt.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Der Pfad setzt eine ungeklärte oder fortbestehende Gefahrenlage voraus.",
-                "reference_space": "Lokales Wohnumfeld",
-                "time_horizon": "Kurzfristig",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Eine unklare Ursache kann vorübergehend Informations- und Schutzbedarf erzeugen.",
-                "source_support": "Die Quelle nennt eine mögliche Explosion, belegt aber keine anhaltende Gefahr.",
-                "limitations": "Keine Daten zu Kommunikation, Evakuierung oder Verhalten der Bewohner.",
-                "first_order": "Mögliche Unsicherheit über die Gefahrenlage.",
-                "second_order": "Mögliche Verzögerung bei Schutz- oder Unterstützungsentscheidungen.",
-                "third_order": "Keine belastbare Grundlage für langfristige institutionelle Folgen.",
-                "research_pass": "second_pass",
-                "research_result": "Die Quelle enthält keine Angaben zu Warnungen, Evakuierungen oder behördlicher Kommunikation.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 7,
-                  "divisor": 6,
-                  "raw": 1.1666666666666667,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Ein negativer Gesundheitspfad ist durch das Brandereignis und die berichtete schwere Verletzung sachlich relevant; ein vergleichbar starker positiver Gegenpfad ist nicht belegt."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 3,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Der Brand kann Sicherheit und Wohnnutzbarkeit des Mehrfamilienhauses beeinträchtigen",
-              "direction": "negative"
-            },
-            "observations": [
-              {
-                "dimension": "human",
-                "change": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-                "direction": "negative",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "data_status": "secondary_source",
-                "evidence": "low",
-                "attribution": "open",
-                "reference_frame": "Schutz von Leben und Gesundheit",
-                "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
-                "observed_at": "In der Nacht des berichteten Brandes",
-                "temporal_status": "ex_post",
-                "mechanism": "Im Zusammenhang mit dem Brand wurde eine schwere Verletzung berichtet; der genaue Mechanismus ist nicht beschrieben.",
-                "recipients": [
-                  "Ein Bewohner"
-                ],
-                "time_horizon": "Zum Zeitpunkt des Brandes und danach offen",
-                "magnitude": 4,
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 4,
-                    "rationale": "Die Verletzung wird als schwer beschrieben.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Dauer und Folgen der Verletzung sind nicht angegeben.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Mögliche bleibende Folgen sind offen und nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Eine Person in einem brennenden Mehrfamilienhaus ist akut gefährdet.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein weitergehender Systemeffekt ist nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": true,
-                  "rationale": "Eine schwere Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
-                  "reference_frame": "Schutz von Leben und Gesundheit",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ],
-                  "status": "observed"
-                },
-                "same_target": true,
-                "same_baseline": true,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 13,
-                  "divisor": 6,
-                  "raw": 2.1666666666666665,
-                  "rounded": 2,
-                  "protection_floor": 4,
-                  "final": 4
-                },
-                "presentation": {
-                  "ringStatus": "observed",
-                  "ringLabel": "Beobachtete Wirkung",
-                  "magnitudeBars": 4,
-                  "directionLabel": "− beobachtet",
-                  "shortPathLabel": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-                  "direction": "negative"
-                }
-              }
-            ],
-            "displayed_observation": {
-              "dimension": "human",
-              "change": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-              "direction": "negative",
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "data_status": "secondary_source",
-              "evidence": "low",
-              "attribution": "open",
-              "reference_frame": "Schutz von Leben und Gesundheit",
-              "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
-              "observed_at": "In der Nacht des berichteten Brandes",
-              "temporal_status": "ex_post",
-              "mechanism": "Im Zusammenhang mit dem Brand wurde eine schwere Verletzung berichtet; der genaue Mechanismus ist nicht beschrieben.",
-              "recipients": [
-                "Ein Bewohner"
-              ],
-              "time_horizon": "Zum Zeitpunkt des Brandes und danach offen",
-              "magnitude": 4,
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 4,
-                  "rationale": "Die Verletzung wird als schwer beschrieben.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Dauer und Folgen der Verletzung sind nicht angegeben.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Mögliche bleibende Folgen sind offen und nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Eine Person in einem brennenden Mehrfamilienhaus ist akut gefährdet.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein weitergehender Systemeffekt ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Eine schwere Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
-                "reference_frame": "Schutz von Leben und Gesundheit",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "observed"
-              },
-              "same_target": true,
-              "same_baseline": true,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 13,
-                "divisor": 6,
-                "raw": 2.1666666666666665,
-                "rounded": 2,
-                "protection_floor": 4,
-                "final": 4
-              },
-              "presentation": {
-                "ringStatus": "observed",
-                "ringLabel": "Beobachtete Wirkung",
-                "magnitudeBars": 4,
-                "directionLabel": "− beobachtet",
-                "shortPathLabel": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-                "direction": "negative"
-              }
-            },
-            "ringStatus": "observed",
-            "ringLabel": "Beobachtete Wirkung",
-            "magnitudeBars": 4,
-            "directionLabel": "− beobachtet",
-            "shortPathLabel": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "deutlich",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "open",
-            "dominance": "none",
-            "magnitude": 1,
-            "evidence": "not_assessable",
-            "likelihood": "low",
-            "data_status": "estimated",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle enthält keine Angaben zu Rauch, Löschwasser, Schadstoffen, Gebäuderückständen oder ökologischen Schäden; der Umweltpfad bleibt hypothetisch.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "rationale": "Ein Brand kann lokal Umweltmedien belasten, doch die gelieferte Quelle belegt keine konkrete Umweltveränderung und keine sichere Richtung.",
-            "primary_paths": [
-              {
-                "label": "Der Brand könnte lokale Luft- oder Stoffbelastungen verursachen",
-                "direction": "open",
-                "type": "main_path",
-                "mechanism": "Verbrennung sowie mögliche Lösch- oder Gebäuderückstände könnten die lokale Umwelt beeinflussen.",
-                "recipients": [
-                  "Lokale Luft und Böden",
-                  "Anwohner"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Ohne Angaben zu Stoffen, Dauer und Schadensumfang ist nur ein kleiner bis vernachlässigbarer Pfad plausibel."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Ein möglicher Umweltpfad wäre zunächst auf den Brandort begrenzt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Eine konkrete Belastungsintensität ist nicht berichtet.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Die Dauer möglicher Belastungen ist vollständig unbekannt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Eine irreversible Umweltveränderung ist aus der Quelle nicht ableitbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Empfindliche lokale Umweltgüter sind nicht benannt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 0,
-                    "rationale": "Ein systemischer Umweltpfad ist für den unbeschriebenen Einzelbrand nicht belegt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete Umwelt-Schutzgrenze wird durch die Quelle nicht beschrieben.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Der Pfad setzt relevante Brandstoffe oder eine Ausbreitung von Rückständen voraus.",
-                "reference_space": "Brandort und unmittelbares Umfeld",
-                "time_horizon": "Kurzfristig bis mittelfristig",
-                "path_quality": [
-                  "weak",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Brände können grundsätzlich lokale Emissionen oder Rückstände erzeugen.",
-                "source_support": "Die Quelle belegt nur das Feuer, keine Umweltbelastung.",
-                "limitations": "Keine Stoff-, Mess- oder Schadensangaben.",
-                "first_order": "Mögliche lokale Emissionen oder Rückstände.",
-                "second_order": "Möglicher Prüf- oder Sanierungsbedarf.",
-                "third_order": "Keine belastbare Grundlage für weitergehende ökologische Kaskaden.",
-                "research_pass": "second_pass",
-                "research_result": "Die gelieferte Quelle enthält keine Umweltinformationen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 4,
-                  "divisor": 6,
-                  "raw": 0.6666666666666666,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Es ist kein belastbarer positiver oder negativer Umweltpfad nachgewiesen; die Richtung bleibt wegen fehlender Daten offen."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 1,
-              "directionLabel": "? Richtung offen",
-              "shortPathLabel": "Der Brand könnte lokale Luft- oder Stoffbelastungen verursachen",
-              "direction": "open"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Der Brand könnte lokale Luft- oder Stoffbelastungen verursachen",
-            "display_direction": "open",
-            "label": "? Richtung offen",
-            "magnitude_label": "sehr gering",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "? Richtung offen"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "open",
-            "dominance": "none",
-            "magnitude": 1,
-            "evidence": "not_assessable",
-            "likelihood": "low",
-            "data_status": "estimated",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle enthält keine Angaben zu Behördenkommunikation, politischen Entscheidungen, öffentlicher Reaktion oder institutionellen Veränderungen; demokratische Folgen sind nicht belastbar bewertbar.",
-            "reviewed_source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "rationale": "Ein lokaler Sicherheitsfall kann Informations- und Rechenschaftsbedarf erzeugen, doch für demokratische oder institutionelle Wirkungen fehlen Belege.",
-            "primary_paths": [
-              {
-                "label": "Die ungeklärte Ursache könnte lokalen Informations- und Rechenschaftsbedarf erhöhen",
-                "direction": "open",
-                "type": "main_path",
-                "mechanism": "Ein schwerer Sicherheitsvorfall kann Nachfrage nach Ursachenklärung und verständlicher Gefahreninformation auslösen.",
-                "recipients": [
-                  "Bewohner",
-                  "Behörden",
-                  "Lokale Öffentlichkeit"
-                ],
-                "magnitude": 1,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Der mögliche Kommunikationspfad ist lokal und korrigierbar; tatsächliche Nachfrage oder Reaktion ist nicht belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Der mögliche Pfad betrifft vor allem das lokale Umfeld.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Eine öffentliche Kontroverse oder Mobilisierung ist nicht berichtet.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "duration": {
-                    "value": 1,
-                    "rationale": "Der Zeitraum möglicher Informationsnachfrage ist unbekannt und vermutlich begrenzt.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 0,
-                    "rationale": "Informationsdefizite wären grundsätzlich korrigierbar.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Besonders schutzbedürftige Gruppen werden von der Quelle nicht ausgewiesen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Ein Einfluss auf lokale Rechenschaft ist denkbar, aber nicht nachgewiesen.",
-                    "source_ids": [
-                      "stern-schlagzeilen"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht belegt.",
-                  "reference_frame": null,
-                  "source_ids": [],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "condition": "Der Pfad setzt öffentliche oder institutionelle Reaktionen auf den Vorfall voraus.",
-                "reference_space": "Lokale Öffentlichkeit und zuständige Stellen",
-                "time_horizon": "Kurzfristig",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Sicherheitsvorfälle können Nachfrage nach Aufklärung und Information auslösen.",
-                "source_support": "Die Quelle belegt den Vorfall, aber keine Kommunikation oder Reaktion.",
-                "limitations": "Keine Angaben zu Behörden, Verfahren, Debatten oder Publikumsverhalten.",
-                "first_order": "Möglicher Informationsbedarf im lokalen Umfeld.",
-                "second_order": "Mögliche Nachfrage nach Ursachenklärung und Zuständigkeit.",
-                "third_order": "Keine belastbare Grundlage für Aussagen über Vertrauen, Polarisierung oder Institutionen.",
-                "research_pass": "second_pass",
-                "research_result": "Die Quelle enthält keine Angaben zu Reaktionen, Aufklärung oder institutionellen Maßnahmen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 5,
-                  "divisor": 6,
-                  "raw": 0.8333333333333334,
-                  "rounded": 1,
-                  "protection_floor": 0,
-                  "final": 1
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Gegenpfad; die mögliche Wirkung bleibt offen und klein."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 1,
-              "directionLabel": "? Richtung offen",
-              "shortPathLabel": "Die ungeklärte Ursache könnte lokalen Informations- und Rechenschaftsbedarf erhöhen",
-              "direction": "open"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Die ungeklärte Ursache könnte lokalen Informations- und Rechenschaftsbedarf erhöhen",
-            "display_direction": "open",
-            "label": "? Richtung offen",
-            "magnitude_label": "sehr gering",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "? Richtung offen"
-          }
-        },
-        "observed_effects": [
-          {
-            "dimension": "human",
-            "change": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-            "direction": "negative",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "data_status": "secondary_source",
-            "evidence": "low",
-            "attribution": "open",
-            "reference_frame": "Schutz von Leben und Gesundheit",
-            "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
-            "observed_at": "In der Nacht des berichteten Brandes",
-            "temporal_status": "ex_post",
-            "mechanism": "Im Zusammenhang mit dem Brand wurde eine schwere Verletzung berichtet; der genaue Mechanismus ist nicht beschrieben.",
-            "recipients": [
-              "Ein Bewohner"
-            ],
-            "time_horizon": "Zum Zeitpunkt des Brandes und danach offen",
-            "magnitude": 4,
-            "magnitude_factors": {
-              "reach": {
-                "value": 1,
-                "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "intensity": {
-                "value": 4,
-                "rationale": "Die Verletzung wird als schwer beschrieben.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "duration": {
-                "value": 2,
-                "rationale": "Dauer und Folgen der Verletzung sind nicht angegeben.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "irreversibility": {
-                "value": 2,
-                "rationale": "Mögliche bleibende Folgen sind offen und nicht belegt.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "vulnerability": {
-                "value": 3,
-                "rationale": "Eine Person in einem brennenden Mehrfamilienhaus ist akut gefährdet.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "system_depth": {
-                "value": 1,
-                "rationale": "Ein weitergehender Systemeffekt ist nicht belegt.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              }
-            },
-            "protection_boundary": {
-              "decisive": true,
-              "rationale": "Eine schwere Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
-              "reference_frame": "Schutz von Leben und Gesundheit",
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "status": "observed"
-            },
-            "same_target": true,
-            "same_baseline": true,
-            "magnitude_calculation": {
-              "method_version": "2.1",
-              "sum": 13,
-              "divisor": 6,
-              "raw": 2.1666666666666665,
-              "rounded": 2,
-              "protection_floor": 4,
-              "final": 4
-            }
-          }
-        ],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-20T07:29:57.830Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "functions": [
-              "event"
-            ],
-            "supported_claim": "Bericht über den Brand, die mögliche Explosion und einen schwer verletzten Bewohner."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Geringe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 3,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle bestätigt einen Brand und eine schwere Verletzung, erlaubt aber keine belastbare Einschätzung von Schadensumfang, Dauer oder weiteren Betroffenen.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen"
-          ],
-          "rationale": "Der mögliche Hauptpfad betrifft Gesundheit, Sicherheit und Wohnnutzbarkeit. Die schwere Verletzung ist als eingetretener Schaden separat belegt; weitergehende Folgen bleiben bedingt.",
-          "primary_paths": [
-            {
-              "label": "Der Brand kann Sicherheit und Wohnnutzbarkeit des Mehrfamilienhauses beeinträchtigen",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Feuer und Rauch können Bewohner gefährden und die Nutzung des Gebäudes einschränken.",
-              "recipients": [
-                "Bewohner",
-                "Rettungs- und Einsatzkräfte"
-              ],
-              "magnitude": 3,
-              "magnitude_range": {
-                "lower": 2,
-                "upper": 4,
-                "rationale": "Die berichtete schwere Verletzung stützt eine relevante unmittelbare Intensität; Reichweite und Dauer des Gebäudeschadens bleiben offen."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Betroffen ist nach der Quelle ein Mehrfamilienhaus; der genaue Personenkreis bleibt offen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 4,
-                  "rationale": "Eine schwere Verletzung weist auf eine hohe unmittelbare Gesundheitsintensität hin.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die Dauer von Gefahren oder möglicher Unbewohnbarkeit ist nicht angegeben.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Verletzungs- oder Gebäudefolgen könnten teilweise dauerhaft sein; Details fehlen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Bewohner eines brennenden Mehrfamilienhauses sind unmittelbar gefährdet.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad reicht nur bedingt über den Einzelfall in Wohn- und Hilfestrukturen hinaus.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Die schwere Verletzung ist als beobachteter Schaden separat erfasst; für den ex-ante modellierten Folgepfad ist keine zusätzliche Schutzgrenze belegt.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Weitere Auswirkungen hängen von Gebäudeschäden, Bewohnbarkeit und der Entwicklung der Gefahrenlage ab.",
-              "reference_space": "Mehrfamilienhaus und lokales Umfeld in Quakenbrück",
-              "time_horizon": "Unmittelbar bis mittelfristig",
-              "path_quality": [
-                "direct",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Feuer und Rauch können in einem bewohnten Gebäude Gesundheit und Nutzung beeinträchtigen.",
-              "source_support": "Die Quelle belegt einen Brand und eine schwere Verletzung, nicht aber den gesamten Folgepfad.",
-              "limitations": "Keine Angaben zu weiteren Betroffenen, Schäden, Evakuierung oder Dauer.",
-              "first_order": "Mögliche weitere Gefährdung und Einschränkung der Gebäudenutzung.",
-              "second_order": "Möglicher Bedarf an Unterbringung und Unterstützung.",
-              "third_order": "Bei größerem Schaden mögliche Belastung lokaler Hilfestrukturen; nicht belegt.",
-              "research_pass": "second_pass",
-              "research_result": "Die gelieferte Quelle enthält keine zusätzliche belastbare Information zu Reichweite und Dauer.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 15,
-                "divisor": 6,
-                "raw": 2.5,
-                "rounded": 3,
-                "protection_floor": 0,
-                "final": 3
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Die ungeklärte Ursache kann vorübergehend zusätzlichen Schutz- und Informationsbedarf erzeugen",
-              "direction": "open",
-              "type": "side_risk",
-              "mechanism": "Solange die mögliche Explosion nicht geklärt ist, könnten Bewohner und Behörden mit Unsicherheit über weitere Gefahren umgehen.",
-              "recipients": [
-                "Bewohner",
-                "Behörden",
-                "Nachbarschaft"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Der Mechanismus ist plausibel, aber eine fortbestehende Gefahr oder konkrete Reaktion ist nicht belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der mögliche Informationsbedarf betrifft zunächst das lokale Umfeld.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Unsicherheit kann Schutzentscheidungen erschweren; ihre Stärke ist nicht gemessen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Die Dauer hängt von der Ursachenklärung und der Gefahrenlage ab.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Informationsunsicherheit wäre grundsätzlich korrigierbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Bewohner eines möglicherweise beschädigten Hauses könnten auf klare Informationen angewiesen sein.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein weitergehender institutioneller Pfad ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Ein Informationsrisiko ist möglich, aber keine konkrete zusätzliche Schutzgrenzverletzung belegt.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Der Pfad setzt eine ungeklärte oder fortbestehende Gefahrenlage voraus.",
-              "reference_space": "Lokales Wohnumfeld",
-              "time_horizon": "Kurzfristig",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Eine unklare Ursache kann vorübergehend Informations- und Schutzbedarf erzeugen.",
-              "source_support": "Die Quelle nennt eine mögliche Explosion, belegt aber keine anhaltende Gefahr.",
-              "limitations": "Keine Daten zu Kommunikation, Evakuierung oder Verhalten der Bewohner.",
-              "first_order": "Mögliche Unsicherheit über die Gefahrenlage.",
-              "second_order": "Mögliche Verzögerung bei Schutz- oder Unterstützungsentscheidungen.",
-              "third_order": "Keine belastbare Grundlage für langfristige institutionelle Folgen.",
-              "research_pass": "second_pass",
-              "research_result": "Die Quelle enthält keine Angaben zu Warnungen, Evakuierungen oder behördlicher Kommunikation.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 7,
-                "divisor": 6,
-                "raw": 1.1666666666666667,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Ein negativer Gesundheitspfad ist durch das Brandereignis und die berichtete schwere Verletzung sachlich relevant; ein vergleichbar starker positiver Gegenpfad ist nicht belegt."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Der Brand kann Sicherheit und Wohnnutzbarkeit des Mehrfamilienhauses beeinträchtigen",
-            "direction": "negative"
-          },
-          "observations": [
-            {
-              "dimension": "human",
-              "change": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-              "direction": "negative",
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "data_status": "secondary_source",
-              "evidence": "low",
-              "attribution": "open",
-              "reference_frame": "Schutz von Leben und Gesundheit",
-              "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
-              "observed_at": "In der Nacht des berichteten Brandes",
-              "temporal_status": "ex_post",
-              "mechanism": "Im Zusammenhang mit dem Brand wurde eine schwere Verletzung berichtet; der genaue Mechanismus ist nicht beschrieben.",
-              "recipients": [
-                "Ein Bewohner"
-              ],
-              "time_horizon": "Zum Zeitpunkt des Brandes und danach offen",
-              "magnitude": 4,
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 4,
-                  "rationale": "Die Verletzung wird als schwer beschrieben.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Dauer und Folgen der Verletzung sind nicht angegeben.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Mögliche bleibende Folgen sind offen und nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Eine Person in einem brennenden Mehrfamilienhaus ist akut gefährdet.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein weitergehender Systemeffekt ist nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Eine schwere Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
-                "reference_frame": "Schutz von Leben und Gesundheit",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ],
-                "status": "observed"
-              },
-              "same_target": true,
-              "same_baseline": true,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 13,
-                "divisor": 6,
-                "raw": 2.1666666666666665,
-                "rounded": 2,
-                "protection_floor": 4,
-                "final": 4
-              },
-              "presentation": {
-                "ringStatus": "observed",
-                "ringLabel": "Beobachtete Wirkung",
-                "magnitudeBars": 4,
-                "directionLabel": "− beobachtet",
-                "shortPathLabel": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-                "direction": "negative"
-              }
-            }
-          ],
-          "displayed_observation": {
-            "dimension": "human",
-            "change": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-            "direction": "negative",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ],
-            "data_status": "secondary_source",
-            "evidence": "low",
-            "attribution": "open",
-            "reference_frame": "Schutz von Leben und Gesundheit",
-            "reference_space": "Bewohner des betroffenen Mehrfamilienhauses in Quakenbrück",
-            "observed_at": "In der Nacht des berichteten Brandes",
-            "temporal_status": "ex_post",
-            "mechanism": "Im Zusammenhang mit dem Brand wurde eine schwere Verletzung berichtet; der genaue Mechanismus ist nicht beschrieben.",
-            "recipients": [
-              "Ein Bewohner"
-            ],
-            "time_horizon": "Zum Zeitpunkt des Brandes und danach offen",
-            "magnitude": 4,
-            "magnitude_factors": {
-              "reach": {
-                "value": 1,
-                "rationale": "Die Quelle nennt einen betroffenen Bewohner.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "intensity": {
-                "value": 4,
-                "rationale": "Die Verletzung wird als schwer beschrieben.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "duration": {
-                "value": 2,
-                "rationale": "Dauer und Folgen der Verletzung sind nicht angegeben.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "irreversibility": {
-                "value": 2,
-                "rationale": "Mögliche bleibende Folgen sind offen und nicht belegt.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "vulnerability": {
-                "value": 3,
-                "rationale": "Eine Person in einem brennenden Mehrfamilienhaus ist akut gefährdet.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "system_depth": {
-                "value": 1,
-                "rationale": "Ein weitergehender Systemeffekt ist nicht belegt.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              }
-            },
-            "protection_boundary": {
-              "decisive": true,
-              "rationale": "Eine schwere Verletzung berührt unmittelbar den Schutz von Leben und Gesundheit.",
-              "reference_frame": "Schutz von Leben und Gesundheit",
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "status": "observed"
-            },
-            "same_target": true,
-            "same_baseline": true,
-            "magnitude_calculation": {
-              "method_version": "2.1",
-              "sum": 13,
-              "divisor": 6,
-              "raw": 2.1666666666666665,
-              "rounded": 2,
-              "protection_floor": 4,
-              "final": 4
-            },
-            "presentation": {
-              "ringStatus": "observed",
-              "ringLabel": "Beobachtete Wirkung",
-              "magnitudeBars": 4,
-              "directionLabel": "− beobachtet",
-              "shortPathLabel": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-              "direction": "negative"
-            }
-          },
-          "ringStatus": "observed",
-          "ringLabel": "Beobachtete Wirkung",
-          "magnitudeBars": 4,
-          "directionLabel": "− beobachtet",
-          "shortPathLabel": "Ein Bewohner wurde laut der gelieferten Quelle schwer verletzt.",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "deutlich",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "open",
-          "dominance": "none",
-          "magnitude": 1,
-          "evidence": "not_assessable",
-          "likelihood": "low",
-          "data_status": "estimated",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle enthält keine Angaben zu Rauch, Löschwasser, Schadstoffen, Gebäuderückständen oder ökologischen Schäden; der Umweltpfad bleibt hypothetisch.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen"
-          ],
-          "rationale": "Ein Brand kann lokal Umweltmedien belasten, doch die gelieferte Quelle belegt keine konkrete Umweltveränderung und keine sichere Richtung.",
-          "primary_paths": [
-            {
-              "label": "Der Brand könnte lokale Luft- oder Stoffbelastungen verursachen",
-              "direction": "open",
-              "type": "main_path",
-              "mechanism": "Verbrennung sowie mögliche Lösch- oder Gebäuderückstände könnten die lokale Umwelt beeinflussen.",
-              "recipients": [
-                "Lokale Luft und Böden",
-                "Anwohner"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Ohne Angaben zu Stoffen, Dauer und Schadensumfang ist nur ein kleiner bis vernachlässigbarer Pfad plausibel."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Ein möglicher Umweltpfad wäre zunächst auf den Brandort begrenzt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Eine konkrete Belastungsintensität ist nicht berichtet.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Die Dauer möglicher Belastungen ist vollständig unbekannt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Eine irreversible Umweltveränderung ist aus der Quelle nicht ableitbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Empfindliche lokale Umweltgüter sind nicht benannt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 0,
-                  "rationale": "Ein systemischer Umweltpfad ist für den unbeschriebenen Einzelbrand nicht belegt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete Umwelt-Schutzgrenze wird durch die Quelle nicht beschrieben.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Der Pfad setzt relevante Brandstoffe oder eine Ausbreitung von Rückständen voraus.",
-              "reference_space": "Brandort und unmittelbares Umfeld",
-              "time_horizon": "Kurzfristig bis mittelfristig",
-              "path_quality": [
-                "weak",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Brände können grundsätzlich lokale Emissionen oder Rückstände erzeugen.",
-              "source_support": "Die Quelle belegt nur das Feuer, keine Umweltbelastung.",
-              "limitations": "Keine Stoff-, Mess- oder Schadensangaben.",
-              "first_order": "Mögliche lokale Emissionen oder Rückstände.",
-              "second_order": "Möglicher Prüf- oder Sanierungsbedarf.",
-              "third_order": "Keine belastbare Grundlage für weitergehende ökologische Kaskaden.",
-              "research_pass": "second_pass",
-              "research_result": "Die gelieferte Quelle enthält keine Umweltinformationen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 4,
-                "divisor": 6,
-                "raw": 0.6666666666666666,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Es ist kein belastbarer positiver oder negativer Umweltpfad nachgewiesen; die Richtung bleibt wegen fehlender Daten offen."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Der Brand könnte lokale Luft- oder Stoffbelastungen verursachen",
-            "direction": "open"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 1,
-          "directionLabel": "? Richtung offen",
-          "shortPathLabel": "Der Brand könnte lokale Luft- oder Stoffbelastungen verursachen",
-          "display_direction": "open",
-          "label": "? Richtung offen",
-          "magnitude_label": "sehr gering",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "? Richtung offen"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "open",
-          "dominance": "none",
-          "magnitude": 1,
-          "evidence": "not_assessable",
-          "likelihood": "low",
-          "data_status": "estimated",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle enthält keine Angaben zu Behördenkommunikation, politischen Entscheidungen, öffentlicher Reaktion oder institutionellen Veränderungen; demokratische Folgen sind nicht belastbar bewertbar.",
-          "reviewed_source_ids": [
-            "stern-schlagzeilen"
-          ],
-          "rationale": "Ein lokaler Sicherheitsfall kann Informations- und Rechenschaftsbedarf erzeugen, doch für demokratische oder institutionelle Wirkungen fehlen Belege.",
-          "primary_paths": [
-            {
-              "label": "Die ungeklärte Ursache könnte lokalen Informations- und Rechenschaftsbedarf erhöhen",
-              "direction": "open",
-              "type": "main_path",
-              "mechanism": "Ein schwerer Sicherheitsvorfall kann Nachfrage nach Ursachenklärung und verständlicher Gefahreninformation auslösen.",
-              "recipients": [
-                "Bewohner",
-                "Behörden",
-                "Lokale Öffentlichkeit"
-              ],
-              "magnitude": 1,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Der mögliche Kommunikationspfad ist lokal und korrigierbar; tatsächliche Nachfrage oder Reaktion ist nicht belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der mögliche Pfad betrifft vor allem das lokale Umfeld.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Eine öffentliche Kontroverse oder Mobilisierung ist nicht berichtet.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "duration": {
-                  "value": 1,
-                  "rationale": "Der Zeitraum möglicher Informationsnachfrage ist unbekannt und vermutlich begrenzt.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 0,
-                  "rationale": "Informationsdefizite wären grundsätzlich korrigierbar.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Besonders schutzbedürftige Gruppen werden von der Quelle nicht ausgewiesen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Ein Einfluss auf lokale Rechenschaft ist denkbar, aber nicht nachgewiesen.",
-                  "source_ids": [
-                    "stern-schlagzeilen"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht belegt.",
-                "reference_frame": null,
-                "source_ids": [],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "stern-schlagzeilen"
-              ],
-              "condition": "Der Pfad setzt öffentliche oder institutionelle Reaktionen auf den Vorfall voraus.",
-              "reference_space": "Lokale Öffentlichkeit und zuständige Stellen",
-              "time_horizon": "Kurzfristig",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Sicherheitsvorfälle können Nachfrage nach Aufklärung und Information auslösen.",
-              "source_support": "Die Quelle belegt den Vorfall, aber keine Kommunikation oder Reaktion.",
-              "limitations": "Keine Angaben zu Behörden, Verfahren, Debatten oder Publikumsverhalten.",
-              "first_order": "Möglicher Informationsbedarf im lokalen Umfeld.",
-              "second_order": "Mögliche Nachfrage nach Ursachenklärung und Zuständigkeit.",
-              "third_order": "Keine belastbare Grundlage für Aussagen über Vertrauen, Polarisierung oder Institutionen.",
-              "research_pass": "second_pass",
-              "research_result": "Die Quelle enthält keine Angaben zu Reaktionen, Aufklärung oder institutionellen Maßnahmen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 5,
-                "divisor": 6,
-                "raw": 0.8333333333333334,
-                "rounded": 1,
-                "protection_floor": 0,
-                "final": 1
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Es gibt keinen belegten positiven oder negativen demokratischen Gegenpfad; die mögliche Wirkung bleibt offen und klein."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 1,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Die ungeklärte Ursache könnte lokalen Informations- und Rechenschaftsbedarf erhöhen",
-            "direction": "open"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 1,
-          "directionLabel": "? Richtung offen",
-          "shortPathLabel": "Die ungeklärte Ursache könnte lokalen Informations- und Rechenschaftsbedarf erhöhen",
-          "display_direction": "open",
-          "label": "? Richtung offen",
-          "magnitude_label": "sehr gering",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "? Richtung offen"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-20T07:25:53.367Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-20T06:25:19.000Z",
-      "last_updated": "2026-09-20T07:29:57.824Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-2292175d9bb91a8d0058",
-      "case_file": null,
-      "source_published_at": "2026-09-20T06:25:19.000Z",
-      "published_at": "2026-09-20T07:29:57.824Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/niedersachsen-bremen/braende--feuer-nach-mutmasslicher-explosion---mensch-schwer-verletzt-38279070.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-20T06:25:19.000Z",
           "primary_source": false
         }
       ]
@@ -219301,99 +219140,6 @@
           "url": "https://www.deutschlandfunk.de/russischer-angriff-auf-zug-nach-warschau-polens-ministerpraesident-tusk-wirft-moskau-eskalation-vor-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-13T18:43:28.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-453ccb3f2a7d7565",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-453ccb3f2a7d7565-db570dd858d573ca-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-453ccb3f2a7d7565-123cf824930b54be-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-453ccb3f2a7d7565-de3a6267498352a3-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "feuer-in-einfamilienhaus-explosion-in-einfamilienhaus-bewohner-weiter-gesucht-7d7565",
-      "title": "Feuer in Einfamilienhaus: Explosion in Einfamilienhaus - Bewohner weiter gesucht",
-      "source_summary": "Ein Bericht des stern meldet mehrere Explosionen in einem Wohnhaus in Weimar. Das Gebäude soll dabei in Schutt und Asche gelegt worden sein. Die Polizei sucht nach einem Bewohner und prüft, ob er sich unter den Trümmern befinden könnte.\n\nDie vorgelegte Textauswahl nennt keine bestätigte Opferzahl, keine Ursache und keine Angaben zur Schadenshöhe. Der Bericht beruht hier auf einer journalistischen Einzelquelle; der vollständige Originalkontext und unabhängige Bestätigungen liegen nicht vor.",
-      "summary": "In Weimar sollen mehrere Explosionen ein Wohnhaus zerstört haben. Die Polizei sucht nach einem Bewohner; Ursache, Aufenthaltsort und mögliche Opfer sind noch offen.",
-      "detail_summary": "Der vorgelegte stern-Bericht meldet mehrere Explosionen in einem Wohnhaus in Weimar und die Suche nach einem Bewohner. Als unmittelbare Folge wird ein zerstörtes Gebäude beschrieben. Unklar bleiben Ursache, Ablauf, Schadenshöhe und ob sich der Bewohner unter den Trümmern befindet. Für Betroffene bedeutet die Lage zunächst eine akute Gefahren- und Unsicherheitssituation. Die Meldung ist deshalb vorläufig und stützt sich auf eine journalistische Einzelquelle.",
-      "why_relevant": "Ein möglicher Gebäudeschaden mit einer laufenden Suche nach einem Bewohner betrifft unmittelbar Sicherheit, Rettung und die mögliche Versorgung Betroffener. Die zentrale Faktenlage ist noch unvollständig.",
-      "topic": [
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ongoing",
-      "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-14T11:17:14.500Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-14T10:10:24.000Z",
-      "last_updated": "2026-09-14T12:11:06.335Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-37ccf6ea4b015cc7a487",
-      "case_file": null,
-      "source_published_at": "2026-09-14T10:10:24.000Z",
-      "published_at": "2026-09-14T11:17:14.500Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Polizei klärt Ursache, Ablauf und Aufenthaltsort des gesuchten Bewohners.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Angaben zu Ursache, Ablauf und Aufenthaltsort",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6317aaccee8c860a",
-          "announced_at": "2026-09-14T10:10:24.000Z",
-          "follow_up_date": "2026-09-21T11:17:14.500Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Das Ausmaß der Schäden am Wohnhaus und an möglichen Nebengebäuden wird ermittelt.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Polizei- oder Feuerwehrangaben zum Schadensumfang",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-a16cbb4535f67ea3",
-          "announced_at": "2026-09-14T10:10:24.000Z",
-          "follow_up_date": "2026-09-21T11:17:14.500Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/thueringen/feuer-in-einfamilienhaus--explosion-in-einfamilienhaus---bewohner-weiter-gesucht-38250746.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-14T10:10:24.000Z",
           "primary_source": false
         }
       ]
