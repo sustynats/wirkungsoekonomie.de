@@ -2,8 +2,1489 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-20T00:23:09.946Z",
+  "updated_at": "2026-09-20T01:38:25.879Z",
   "stories": [
+    {
+      "story_id": "wt-8ae0d5a1b42b0f91",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8ae0d5a1b42b0f91-09758bc7781290e2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8ae0d5a1b42b0f91-c4f127d632943e5e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8ae0d5a1b42b0f91-59fe7ae75ea5b545-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-8ae0d5a1b42b0f91-5eb00a09ca89f1f1-source.png"
+        }
+      },
+      "slug": "ebola-epidemie-test-impfprogramm-in-dr-kongo-gestartet-2b0f91",
+      "title": "Test-Impfprogramm gegen Ebola in der DR Kongo gestartet, laut AFP",
+      "source_summary": "Der Bericht beschreibt den Start eines Test-Impfprogramms während einer Ebola-Epidemie in der Demokratischen Republik Kongo. Die ersten freiwilligen Beschäftigten des medizinischen Personals seien in Bunia in der Provinz Ituri mit dem Impfstoff Ervebo geimpft worden.\n\nAls Schauplatz nennt die Quelle Bunia, das sie als Zentrum des Ebola-Ausbruchs bezeichnet. Die Angaben werden über Journalisten der Nachrichtenagentur AFP vermittelt; eine unabhängige Bestätigung liegt im Quellenbestand nicht vor.\n\nDie klinische Studie soll neun bis zwölf Monate dauern und 20.000 Menschen einbeziehen. Offen bleiben unter anderem der weitere Verlauf der Rekrutierung, die Datengrundlage zur Wirksamkeit und mögliche Ergebnisse der Studie.",
+      "summary": "In der DR Kongo hat laut AFP ein Test-Impfprogramm gegen Ebola begonnen. Die Studie könnte Schutz und Wissen für die Epidemiebekämpfung erweitern, ihr Erfolg ist aber noch offen.",
+      "detail_summary": "Laut AFP wurden in Bunia, dem Zentrum des Ebola-Ausbruchs in der Provinz Ituri, erste freiwillige Beschäftigte des medizinischen Personals mit Ervebo geimpft. Damit beginnt eine klinische Studie während einer laufenden Epidemie. Sie soll neun bis zwölf Monate dauern und 20.000 Menschen einbeziehen. Für Betroffene könnte das Programm den Zugang zu Schutz und die Informationsgrundlage für weitere Entscheidungen verbessern. Belegt ist bislang der Start, nicht die spätere Wirksamkeit, Reichweite oder Sicherheit der Maßnahme.",
+      "why_relevant": "Der Start verbindet unmittelbare Gesundheitsvorsorge mit der Gewinnung klinischer Daten in einem Epidemiegebiet. Dadurch kann sich die Grundlage für spätere Schutzentscheidungen verändern, sofern die Studie ausreichend Teilnehmende erreicht und belastbare Ergebnisse liefert.",
+      "topic": [
+        "Gesundheit",
+        "Demokratie"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Start eines Test-Impfprogramms gegen Ebola in Bunia während einer Epidemie",
+        "evaluation_target": {
+          "label": "klinisches Test-Impfprogramm mit Ervebo",
+          "type": "development"
+        },
+        "baseline": "Vor dem berichteten Start bestand für die Studie noch keine beobachtete Umsetzung im vorliegenden Quellenbestand.",
+        "counterfactual": "Ohne den berichteten Start würden die ersten Impfungen und die damit verbundene Datenerhebung im beschriebenen Programm nicht zu diesem Zeitpunkt stattfinden.",
+        "reference_frame": [
+          "Gesundheitsschutz",
+          "Epidemievorsorge",
+          "Evidenz für öffentliche Entscheidungen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Das Programm könnte Schutz und medizinisches Wissen erhöhen; Verteilung, Teilnahme, Sicherheit und Zugang sind nicht belegt.",
+            "planet": "Direkte ökologische Wirkungen sind im Quellenbestand nicht belegt. Indirekte Material- und Versorgungswirkungen bleiben als geringe, unsichere Nebenpfade offen.",
+            "democracy": "Neue klinische Daten könnten die Nachvollziehbarkeit und Qualität öffentlicher Entscheidungen verbessern; Transparenz und institutionelle Auswertung sind nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Impfungen und beginnende Datenerhebung verändern die unmittelbare Gesundheits- und Informationslage.",
+          "second_order": "Auswertbare Daten könnten Prioritäten und Schutzentscheidungen beeinflussen, sofern die Studie ausreichend durchgeführt wird.",
+          "third_order": "Die Ergebnisse könnten künftige institutionelle Reaktionen auf Ebola-Ausbrüche prägen; Reichweite und Übertragbarkeit sind offen.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Es liegen keine unabhängigen Bestätigungen, Wirksamkeitsdaten oder Angaben zu Nebenwirkungen vor.",
+            "Die Studie kann trotz ihres Starts unvollständige oder begrenzt übertragbare Ergebnisse liefern."
+          ],
+          "source_independence": "Nur eine journalistische Quelle liegt vor; sie beruft sich auf AFP. Eine unabhängige Herkunft ist nicht verifiziert.",
+          "institutional_status": "Berichtet ist der Start eines Testprogramms und einer klinischen Studie; ein Ergebnis, eine allgemeine Impfempfehlung oder eine rechtlich bindende Regelung ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Start ist berichtet, aber Schutzwirkung, Sicherheit, tatsächliche Teilnahme und Verteilung des Nutzens sind nicht belegt.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der plausibelste Pfad führt über Impfungen und klinische Erkenntnisse zu möglichem Gesundheitsschutz. Die positive Richtung ist bedingt, weil die Quelle keine Ergebnisse oder Sicherheitsdaten liefert.",
+            "primary_paths": [
+              {
+                "label": "Möglicher zusätzlicher Schutz für Teilnehmende und medizinisches Personal",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Impfung und die strukturierte klinische Beobachtung könnten den individuellen Schutz erhöhen und medizinisches Wissen erweitern.",
+                "recipients": [
+                  "medizinisches Personal",
+                  "Studienteilnehmende",
+                  "Menschen im Ebola-Ausbruchsgebiet"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Reichweite ist auf ein Programm begrenzt, könnte bei erfolgreicher Rekrutierung aber über die direkt Geimpften hinausreichen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Das Programm ist örtlich und organisatorisch begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Für einzelne Teilnehmende könnte der Gesundheitsschutz erheblich sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Die Studie ist auf neun bis zwölf Monate angelegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Gesundheits- und Wissenseffekte sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen an vorderster Front einer Ebola-Epidemie können besonders gefährdet sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Klinische Daten könnten spätere Schutzentscheidungen beeinflussen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze wird im Bericht nicht beschrieben; mögliche Schutzgewinne bleiben vom Studienverlauf abhängig.",
+                  "reference_frame": "Schutz vor Ebola und Zugang zu verlässlicher medizinischer Information",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt ausreichende Teilnahme, sichere Durchführung und auswertbare klinische Daten voraus.",
+                "reference_space": "Bunia und das beschriebene Ebola-Ausbruchsgebiet in der Provinz Ituri",
+                "time_horizon": "Während der neun bis zwölf Monate angelegten Studie und danach",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Es wird angenommen, dass Impfungen durchgeführt werden und klinische Beobachtungen verwertbare Informationen erzeugen.",
+                "source_support": "Die Quelle belegt den Start, erste Impfungen und den Studienplan, nicht den späteren Gesundheitsschutz.",
+                "limitations": "Keine Angaben zu Wirksamkeit, Sicherheit, tatsächlicher Teilnahme oder Verteilung.",
+                "first_order": "Teilnehmende könnten zusätzlichen Schutz erhalten.",
+                "second_order": "Ergebnisse könnten medizinische Prioritäten und Schutzentscheidungen beeinflussen.",
+                "third_order": "Die Studie könnte institutionelle Vorbereitung auf spätere Ebola-Ausbrüche stärken, wenn die Ergebnisse belastbar und übertragbar sind.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Ergebnis- oder Sicherheitsdaten im gelieferten Quellenbestand; der Eintritt des Schutzpfads bleibt bedingt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Begrenzte Aussagekraft bei unvollständiger Rekrutierung oder Datenerhebung",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine kleine oder unausgewogene Teilnahme könnte die klinische Aussagekraft und den Nutzen für spätere Entscheidungen begrenzen.",
+                "recipients": [
+                  "Studienteilnehmende",
+                  "Gesundheitsbehörden",
+                  "betroffene Bevölkerung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Schaden liegt vor allem in verzögertem oder unsicherem Wissen; konkrete Folgen sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Unsicherheit betrifft primär das Programm und seine Entscheidungsempfänger.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine begrenzte Evidenz kann Entscheidungen erschweren, ohne einen konkreten Schaden zu belegen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Studie ist zeitlich auf neun bis zwölf Monate angelegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fehlende Daten können durch spätere Forschung teilweise ausgeglichen werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Epidemiebetroffene und exponiertes Personal sind besonders auf verlässliche Schutzentscheidungen angewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Effekt betrifft vor allem die Qualität späterer Entscheidungen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Bericht belegt keine konkrete Verletzung einer Schutzgrenze.",
+                  "reference_frame": "Verlässliche medizinische Entscheidungsgrundlage",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Nebenpfad setzt unvollständige Rekrutierung, Daten oder Auswertung voraus.",
+                "reference_space": "Studienprogramm und seine späteren Entscheidungsempfänger",
+                "time_horizon": "Während und nach der geplanten Studiendauer",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass Umfang oder Qualität der Datenerhebung für die Aussagekraft entscheidend sind.",
+                "source_support": "Die Quelle nennt den geplanten Umfang und Zeitraum, aber keine Qualitäts- oder Ergebnisdaten.",
+                "limitations": "Der konkrete Eintritt und das Ausmaß sind nicht messbar aus dem gelieferten Material.",
+                "first_order": "Die Datenbasis könnte begrenzt bleiben.",
+                "second_order": "Schutzentscheidungen könnten länger unter Unsicherheit getroffen werden.",
+                "third_order": "Institutionelle Lernprozesse könnten schwächer ausfallen, wenn Ergebnisse nicht übertragbar sind.",
+                "research_pass": "second_pass",
+                "research_result": "Der Quellenbestand erlaubt keine Prüfung der tatsächlichen Rekrutierung oder Datenqualität.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Gesundheitsschutz ist der zentrale Pfad; ein begrenzter Daten- und Entscheidungsrisikopfad bleibt wegen fehlender Ergebnisse offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Möglicher zusätzlicher Schutz für Teilnehmende und medizinisches Personal",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Möglicher zusätzlicher Schutz für Teilnehmende und medizinisches Personal",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Im gelieferten Bericht finden sich keine belastbaren Angaben zu ökologischen Zustandsänderungen oder relevanten Umweltwirkungen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Für den Planeten lässt sich aus dem berichteten Impfprogramm kein substantieller Wirkpfad quellengebunden ableiten. Ein vernachlässigbarer direkter Pfad ist für den beschriebenen Raum und Zeitraum die vorsichtigste Modellierung.",
+            "primary_paths": [
+              {
+                "label": "Kein substantieller direkter ökologischer Wirkpfad im beschriebenen Zeitraum",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Der Bericht beschreibt Impfungen und klinische Datenerhebung, aber keine Veränderung von Land, Ressourcen, Emissionen oder Ökosystemen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Versorgungs- und Abfallsysteme"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Auf Basis der gelieferten Angaben ist nur eine praktisch vernachlässigbare direkte Veränderung ableitbar; relevante indirekte Wirkungen bleiben offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite ist im Bericht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine relevante Umweltintensität ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist angegeben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders betroffene Umweltkomponente ist benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemtiefe ist aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Bericht nennt keine ökologische Schutzgrenze oder Grenzverletzung.",
+                  "reference_frame": "Ökologische Zustandsveränderung im beschriebenen Ausbruchsgebiet",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Ein relevanter Pfad wäre nur bei nicht beschriebenen Veränderungen von Material-, Abfall- oder Versorgungssystemen zu prüfen.",
+                "reference_space": "Bunia und die Provinz Ituri",
+                "time_horizon": "Während der Studie",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Bewertung beschränkt sich auf die im Bericht genannten Impf- und Studienaktivitäten.",
+                "source_support": "Die Quelle belegt keine ökologischen Folgen.",
+                "limitations": "Umwelt-, Abfall- und Ressourcenangaben fehlen vollständig.",
+                "first_order": "Keine substanzielle direkte ökologische Änderung ableitbar.",
+                "second_order": "Indirekte Versorgungs- oder Abfallpfade bleiben ungeprüft.",
+                "third_order": "Keine systemische Umweltfolge kann aus dem Material belastbar modelliert werden.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung ohne ökologischen Beleg im gelieferten Quellenbestand; daher begründet vernachlässigbarer direkter Pfad.",
+                "negligibility_rationale": "Für das berichtete Impf- und Studienereignis werden weder Reichweite noch Intensität, Dauer oder Systemtiefe einer ökologischen Änderung beschrieben.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist kein vergleichbarer materieller positiver oder negativer ökologischer Hauptpfad belegt; die Einordnung bleibt auf den beschriebenen Vorgang begrenzt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Kein substantieller direkter ökologischer Wirkpfad im beschriebenen Zeitraum",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kein substantieller direkter ökologischer Wirkpfad im beschriebenen Zeitraum",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Bericht belegt den Studienstart, aber keine Transparenz-, Beteiligungs- oder Rechenschaftsdaten zur institutionellen Umsetzung.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Studie könnte die Qualität öffentlicher Gesundheitsentscheidungen verbessern, wenn ihre Daten nachvollziehbar erhoben und ausgewertet werden. Eine tatsächliche institutionelle Wirkung ist nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche bessere Entscheidungsgrundlage für die Epidemiebekämpfung",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Klinische Daten könnten Behörden und medizinischen Institutionen zusätzliche Grundlagen für nachvollziehbare Schutzentscheidungen geben.",
+                "recipients": [
+                  "Gesundheitsinstitutionen",
+                  "medizinisches Personal",
+                  "betroffene Bevölkerung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Nutzen betrifft Entscheidungen und Rechenschaft, bleibt aber von Datenqualität und Veröffentlichung abhängig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die mögliche Reichweite liegt bei beteiligten Institutionen und der betroffenen Bevölkerung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Zusätzliche Evidenz könnte Entscheidungen verbessern, ohne institutionelle Strukturen unmittelbar zu verändern.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Die Studie ist auf neun bis zwölf Monate angelegt und könnte darüber hinaus genutzt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Entscheidungsgrundlagen können durch spätere Evidenz korrigiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Epidemiebetroffene sind auf nachvollziehbare und wirksame öffentliche Entscheidungen angewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft vor allem Informations- und Entscheidungsprozesse.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung wird nicht berichtet.",
+                  "reference_frame": "Nachvollziehbare, evidenzbasierte öffentliche Gesundheitsentscheidung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt transparente Auswertung, institutionelle Nutzung und zugängliche Kommunikation der Ergebnisse voraus.",
+                "reference_space": "Gesundheitsinstitutionen und betroffene Bevölkerung im beschriebenen Ausbruchsgebiet",
+                "time_horizon": "Während der Studie und bei späterer Nutzung ihrer Ergebnisse",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Es wird angenommen, dass klinische Ergebnisse in öffentliche Entscheidungen einfließen können.",
+                "source_support": "Die Quelle belegt eine klinische Studie, nicht deren Transparenz, Veröffentlichung oder institutionelle Nutzung.",
+                "limitations": "Keine Angaben zu Governance, Datenzugang, Beteiligung oder Rechenschaft.",
+                "first_order": "Eine Studie erzeugt potenziell zusätzliche Entscheidungsinformationen.",
+                "second_order": "Diese Informationen könnten Prioritäten und Begründungen von Schutzmaßnahmen beeinflussen.",
+                "third_order": "Wiederholte Nutzung belastbarer Daten könnte institutionelles Lernen fördern; das bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Angaben zu Transparenz oder institutioneller Nutzung; der demokratische Wirkpfad bleibt hypothetisch und begrenzt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Vertrauensprobleme bei fehlender Transparenz",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn Studiendaten nicht nachvollziehbar zugänglich oder Ergebnisse nicht verständlich kommuniziert werden, könnte die Entscheidungsgrundlage weniger überprüfbar erscheinen.",
+                "recipients": [
+                  "betroffene Bevölkerung",
+                  "Gesundheitsinstitutionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Bericht enthält keine Hinweise auf ein solches Problem; es handelt sich um einen begrenzten, bedingten Risikopfad."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt betrifft die lokale Informations- und Entscheidungsebene.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Vertrauensbeeinträchtigung ist möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Sie könnte die Dauer der Studie und die spätere Kommunikation betreffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen und Nachvollziehbarkeit können durch spätere Offenlegung verbessert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "In einer Epidemie können Betroffene besonders auf verständliche Informationen angewiesen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf Kommunikation und lokale Entscheidungsprozesse begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle beschreibt weder fehlende Transparenz noch eine konkrete demokratische Schädigung.",
+                  "reference_frame": "Nachvollziehbarkeit und Vertrauen in öffentliche Gesundheitsentscheidungen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt fehlende oder unverständliche Kommunikation voraus, für die keine Belege vorliegen.",
+                "reference_space": "Lokale Öffentlichkeit und Gesundheitsinstitutionen",
+                "time_horizon": "Während und nach der Studie",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Transparenz und Kommunikation werden als notwendige Bedingungen für institutionelles Vertrauen angenommen.",
+                "source_support": "Die Quelle berichtet über Start und Planung, nicht über Kommunikation oder Vertrauen.",
+                "limitations": "Keine Daten zu Wahrnehmung, Beteiligung, Vertrauen oder Informationszugang.",
+                "first_order": "Ergebnisse könnten unterschiedlich nachvollziehbar sein.",
+                "second_order": "Das könnte die Akzeptanz späterer Schutzentscheidungen beeinflussen.",
+                "third_order": "Institutionelles Lernen könnte erschwert werden, wenn Daten nicht überprüfbar sind; dies ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Vertrauens- oder Transparenzdaten im gelieferten Quellenbestand; der Risikopfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche Informationsnutzen ist plausibler als ein nicht belegtes Transparenzrisiko; beide Pfade hängen von der späteren Auswertung und Kommunikation ab."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Mögliche bessere Entscheidungsgrundlage für die Epidemiebekämpfung",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Mögliche bessere Entscheidungsgrundlage für die Epidemiebekämpfung",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-20T01:40:58.525Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bericht über den Start des Test-Impfprogramms, die ersten Impfungen in Bunia und die geplante Dauer sowie Größe der Studie."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Start ist berichtet, aber Schutzwirkung, Sicherheit, tatsächliche Teilnahme und Verteilung des Nutzens sind nicht belegt.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der plausibelste Pfad führt über Impfungen und klinische Erkenntnisse zu möglichem Gesundheitsschutz. Die positive Richtung ist bedingt, weil die Quelle keine Ergebnisse oder Sicherheitsdaten liefert.",
+          "primary_paths": [
+            {
+              "label": "Möglicher zusätzlicher Schutz für Teilnehmende und medizinisches Personal",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Impfung und die strukturierte klinische Beobachtung könnten den individuellen Schutz erhöhen und medizinisches Wissen erweitern.",
+              "recipients": [
+                "medizinisches Personal",
+                "Studienteilnehmende",
+                "Menschen im Ebola-Ausbruchsgebiet"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Reichweite ist auf ein Programm begrenzt, könnte bei erfolgreicher Rekrutierung aber über die direkt Geimpften hinausreichen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Das Programm ist örtlich und organisatorisch begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Für einzelne Teilnehmende könnte der Gesundheitsschutz erheblich sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Die Studie ist auf neun bis zwölf Monate angelegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Gesundheits- und Wissenseffekte sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen an vorderster Front einer Ebola-Epidemie können besonders gefährdet sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Klinische Daten könnten spätere Schutzentscheidungen beeinflussen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze wird im Bericht nicht beschrieben; mögliche Schutzgewinne bleiben vom Studienverlauf abhängig.",
+                "reference_frame": "Schutz vor Ebola und Zugang zu verlässlicher medizinischer Information",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt ausreichende Teilnahme, sichere Durchführung und auswertbare klinische Daten voraus.",
+              "reference_space": "Bunia und das beschriebene Ebola-Ausbruchsgebiet in der Provinz Ituri",
+              "time_horizon": "Während der neun bis zwölf Monate angelegten Studie und danach",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Es wird angenommen, dass Impfungen durchgeführt werden und klinische Beobachtungen verwertbare Informationen erzeugen.",
+              "source_support": "Die Quelle belegt den Start, erste Impfungen und den Studienplan, nicht den späteren Gesundheitsschutz.",
+              "limitations": "Keine Angaben zu Wirksamkeit, Sicherheit, tatsächlicher Teilnahme oder Verteilung.",
+              "first_order": "Teilnehmende könnten zusätzlichen Schutz erhalten.",
+              "second_order": "Ergebnisse könnten medizinische Prioritäten und Schutzentscheidungen beeinflussen.",
+              "third_order": "Die Studie könnte institutionelle Vorbereitung auf spätere Ebola-Ausbrüche stärken, wenn die Ergebnisse belastbar und übertragbar sind.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Ergebnis- oder Sicherheitsdaten im gelieferten Quellenbestand; der Eintritt des Schutzpfads bleibt bedingt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Begrenzte Aussagekraft bei unvollständiger Rekrutierung oder Datenerhebung",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine kleine oder unausgewogene Teilnahme könnte die klinische Aussagekraft und den Nutzen für spätere Entscheidungen begrenzen.",
+              "recipients": [
+                "Studienteilnehmende",
+                "Gesundheitsbehörden",
+                "betroffene Bevölkerung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Schaden liegt vor allem in verzögertem oder unsicherem Wissen; konkrete Folgen sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Unsicherheit betrifft primär das Programm und seine Entscheidungsempfänger.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine begrenzte Evidenz kann Entscheidungen erschweren, ohne einen konkreten Schaden zu belegen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Studie ist zeitlich auf neun bis zwölf Monate angelegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fehlende Daten können durch spätere Forschung teilweise ausgeglichen werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Epidemiebetroffene und exponiertes Personal sind besonders auf verlässliche Schutzentscheidungen angewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Effekt betrifft vor allem die Qualität späterer Entscheidungen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Bericht belegt keine konkrete Verletzung einer Schutzgrenze.",
+                "reference_frame": "Verlässliche medizinische Entscheidungsgrundlage",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Nebenpfad setzt unvollständige Rekrutierung, Daten oder Auswertung voraus.",
+              "reference_space": "Studienprogramm und seine späteren Entscheidungsempfänger",
+              "time_horizon": "Während und nach der geplanten Studiendauer",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass Umfang oder Qualität der Datenerhebung für die Aussagekraft entscheidend sind.",
+              "source_support": "Die Quelle nennt den geplanten Umfang und Zeitraum, aber keine Qualitäts- oder Ergebnisdaten.",
+              "limitations": "Der konkrete Eintritt und das Ausmaß sind nicht messbar aus dem gelieferten Material.",
+              "first_order": "Die Datenbasis könnte begrenzt bleiben.",
+              "second_order": "Schutzentscheidungen könnten länger unter Unsicherheit getroffen werden.",
+              "third_order": "Institutionelle Lernprozesse könnten schwächer ausfallen, wenn Ergebnisse nicht übertragbar sind.",
+              "research_pass": "second_pass",
+              "research_result": "Der Quellenbestand erlaubt keine Prüfung der tatsächlichen Rekrutierung oder Datenqualität.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Gesundheitsschutz ist der zentrale Pfad; ein begrenzter Daten- und Entscheidungsrisikopfad bleibt wegen fehlender Ergebnisse offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Möglicher zusätzlicher Schutz für Teilnehmende und medizinisches Personal",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Möglicher zusätzlicher Schutz für Teilnehmende und medizinisches Personal",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Im gelieferten Bericht finden sich keine belastbaren Angaben zu ökologischen Zustandsänderungen oder relevanten Umweltwirkungen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Für den Planeten lässt sich aus dem berichteten Impfprogramm kein substantieller Wirkpfad quellengebunden ableiten. Ein vernachlässigbarer direkter Pfad ist für den beschriebenen Raum und Zeitraum die vorsichtigste Modellierung.",
+          "primary_paths": [
+            {
+              "label": "Kein substantieller direkter ökologischer Wirkpfad im beschriebenen Zeitraum",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Der Bericht beschreibt Impfungen und klinische Datenerhebung, aber keine Veränderung von Land, Ressourcen, Emissionen oder Ökosystemen.",
+              "recipients": [
+                "lokale Umwelt",
+                "Versorgungs- und Abfallsysteme"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Auf Basis der gelieferten Angaben ist nur eine praktisch vernachlässigbare direkte Veränderung ableitbar; relevante indirekte Wirkungen bleiben offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite ist im Bericht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine relevante Umweltintensität ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist angegeben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders betroffene Umweltkomponente ist benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemtiefe ist aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Bericht nennt keine ökologische Schutzgrenze oder Grenzverletzung.",
+                "reference_frame": "Ökologische Zustandsveränderung im beschriebenen Ausbruchsgebiet",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Ein relevanter Pfad wäre nur bei nicht beschriebenen Veränderungen von Material-, Abfall- oder Versorgungssystemen zu prüfen.",
+              "reference_space": "Bunia und die Provinz Ituri",
+              "time_horizon": "Während der Studie",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Bewertung beschränkt sich auf die im Bericht genannten Impf- und Studienaktivitäten.",
+              "source_support": "Die Quelle belegt keine ökologischen Folgen.",
+              "limitations": "Umwelt-, Abfall- und Ressourcenangaben fehlen vollständig.",
+              "first_order": "Keine substanzielle direkte ökologische Änderung ableitbar.",
+              "second_order": "Indirekte Versorgungs- oder Abfallpfade bleiben ungeprüft.",
+              "third_order": "Keine systemische Umweltfolge kann aus dem Material belastbar modelliert werden.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung ohne ökologischen Beleg im gelieferten Quellenbestand; daher begründet vernachlässigbarer direkter Pfad.",
+              "negligibility_rationale": "Für das berichtete Impf- und Studienereignis werden weder Reichweite noch Intensität, Dauer oder Systemtiefe einer ökologischen Änderung beschrieben.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist kein vergleichbarer materieller positiver oder negativer ökologischer Hauptpfad belegt; die Einordnung bleibt auf den beschriebenen Vorgang begrenzt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Kein substantieller direkter ökologischer Wirkpfad im beschriebenen Zeitraum",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Kein substantieller direkter ökologischer Wirkpfad im beschriebenen Zeitraum",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Bericht belegt den Studienstart, aber keine Transparenz-, Beteiligungs- oder Rechenschaftsdaten zur institutionellen Umsetzung.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Studie könnte die Qualität öffentlicher Gesundheitsentscheidungen verbessern, wenn ihre Daten nachvollziehbar erhoben und ausgewertet werden. Eine tatsächliche institutionelle Wirkung ist nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche bessere Entscheidungsgrundlage für die Epidemiebekämpfung",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Klinische Daten könnten Behörden und medizinischen Institutionen zusätzliche Grundlagen für nachvollziehbare Schutzentscheidungen geben.",
+              "recipients": [
+                "Gesundheitsinstitutionen",
+                "medizinisches Personal",
+                "betroffene Bevölkerung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Nutzen betrifft Entscheidungen und Rechenschaft, bleibt aber von Datenqualität und Veröffentlichung abhängig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die mögliche Reichweite liegt bei beteiligten Institutionen und der betroffenen Bevölkerung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Zusätzliche Evidenz könnte Entscheidungen verbessern, ohne institutionelle Strukturen unmittelbar zu verändern.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Die Studie ist auf neun bis zwölf Monate angelegt und könnte darüber hinaus genutzt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Entscheidungsgrundlagen können durch spätere Evidenz korrigiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Epidemiebetroffene sind auf nachvollziehbare und wirksame öffentliche Entscheidungen angewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft vor allem Informations- und Entscheidungsprozesse.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung wird nicht berichtet.",
+                "reference_frame": "Nachvollziehbare, evidenzbasierte öffentliche Gesundheitsentscheidung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt transparente Auswertung, institutionelle Nutzung und zugängliche Kommunikation der Ergebnisse voraus.",
+              "reference_space": "Gesundheitsinstitutionen und betroffene Bevölkerung im beschriebenen Ausbruchsgebiet",
+              "time_horizon": "Während der Studie und bei späterer Nutzung ihrer Ergebnisse",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Es wird angenommen, dass klinische Ergebnisse in öffentliche Entscheidungen einfließen können.",
+              "source_support": "Die Quelle belegt eine klinische Studie, nicht deren Transparenz, Veröffentlichung oder institutionelle Nutzung.",
+              "limitations": "Keine Angaben zu Governance, Datenzugang, Beteiligung oder Rechenschaft.",
+              "first_order": "Eine Studie erzeugt potenziell zusätzliche Entscheidungsinformationen.",
+              "second_order": "Diese Informationen könnten Prioritäten und Begründungen von Schutzmaßnahmen beeinflussen.",
+              "third_order": "Wiederholte Nutzung belastbarer Daten könnte institutionelles Lernen fördern; das bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Angaben zu Transparenz oder institutioneller Nutzung; der demokratische Wirkpfad bleibt hypothetisch und begrenzt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Vertrauensprobleme bei fehlender Transparenz",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn Studiendaten nicht nachvollziehbar zugänglich oder Ergebnisse nicht verständlich kommuniziert werden, könnte die Entscheidungsgrundlage weniger überprüfbar erscheinen.",
+              "recipients": [
+                "betroffene Bevölkerung",
+                "Gesundheitsinstitutionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Bericht enthält keine Hinweise auf ein solches Problem; es handelt sich um einen begrenzten, bedingten Risikopfad."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt betrifft die lokale Informations- und Entscheidungsebene.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Vertrauensbeeinträchtigung ist möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Sie könnte die Dauer der Studie und die spätere Kommunikation betreffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen und Nachvollziehbarkeit können durch spätere Offenlegung verbessert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "In einer Epidemie können Betroffene besonders auf verständliche Informationen angewiesen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf Kommunikation und lokale Entscheidungsprozesse begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle beschreibt weder fehlende Transparenz noch eine konkrete demokratische Schädigung.",
+                "reference_frame": "Nachvollziehbarkeit und Vertrauen in öffentliche Gesundheitsentscheidungen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt fehlende oder unverständliche Kommunikation voraus, für die keine Belege vorliegen.",
+              "reference_space": "Lokale Öffentlichkeit und Gesundheitsinstitutionen",
+              "time_horizon": "Während und nach der Studie",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Transparenz und Kommunikation werden als notwendige Bedingungen für institutionelles Vertrauen angenommen.",
+              "source_support": "Die Quelle berichtet über Start und Planung, nicht über Kommunikation oder Vertrauen.",
+              "limitations": "Keine Daten zu Wahrnehmung, Beteiligung, Vertrauen oder Informationszugang.",
+              "first_order": "Ergebnisse könnten unterschiedlich nachvollziehbar sein.",
+              "second_order": "Das könnte die Akzeptanz späterer Schutzentscheidungen beeinflussen.",
+              "third_order": "Institutionelles Lernen könnte erschwert werden, wenn Daten nicht überprüfbar sind; dies ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Vertrauens- oder Transparenzdaten im gelieferten Quellenbestand; der Risikopfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche Informationsnutzen ist plausibler als ein nicht belegtes Transparenzrisiko; beide Pfade hängen von der späteren Auswertung und Kommunikation ab."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Mögliche bessere Entscheidungsgrundlage für die Epidemiebekämpfung",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Mögliche bessere Entscheidungsgrundlage für die Epidemiebekämpfung",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-20T01:38:25.879Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-20T01:30:37.000Z",
+      "last_updated": "2026-09-20T01:40:58.519Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ee51c2aad42f119390c3",
+      "case_file": null,
+      "source_published_at": "2026-09-20T01:30:37.000Z",
+      "published_at": "2026-09-20T01:40:58.519Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Es ist zu prüfen, wie viele Personen tatsächlich in die Studie aufgenommen und geimpft werden.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Zahl der aufgenommenen und geimpften Studienteilnehmenden",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-45a719944aeda15d",
+          "announced_at": "2026-09-20T01:30:37.000Z",
+          "follow_up_date": "2026-09-27T01:40:58.519Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/ebola-epidemie--test-impfprogramm-in-dr-kongo-gestartet-38278520.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-20T01:30:37.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-232754c767f45ee7",
       "title_image": {
