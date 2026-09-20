@@ -319,24 +319,48 @@ jobs:
             gh release create "$release_tag" --target "$GITHUB_SHA" --title 'WÖk public release assets v2' --notes 'Versionierte öffentliche Download-Artefakte der Wirkungsökonomie.'
           fi
 
-          publish_immutable_asset() {
+          # Die Dateiliste eines Releases wird einmal je Release gelesen, nicht
+          # einmal je Datei: seit die 156 Journal-Lesefassungen dazugehoeren,
+          # waeren das ueber 150 Abfragen in Folge. Eine davon kam am
+          # 20.09.2026 leer zurueck, der Lauf hielt die Datei fuer neu und die
+          # Auslieferung brach ab, obwohl alles in Ordnung war.
+          asset_liste=''
+          lies_asset_liste() {
+            asset_liste=$(gh release view "$release_tag" --json assets --jq '.assets[].name')
+          }
+
+          verify_immutable_asset() {
             local source_path="$1"
             local asset_name="$2"
             local verify_dir="$RUNNER_TEMP/woek-release-assets/$asset_name"
+            mkdir -p "$verify_dir"
+            gh release download "$release_tag" --pattern "$asset_name" --dir "$verify_dir" --clobber
+            cmp --silent "$source_path" "$verify_dir/$asset_name" || {
+              echo "Release asset $asset_name exists with different bytes; refusing to overwrite an immutable version."
+              exit 1
+            }
+            echo "Verified existing immutable release asset: $asset_name"
+          }
+
+          publish_immutable_asset() {
+            local source_path="$1"
+            local asset_name="$2"
             test -s "$source_path"
-            if gh release view "$release_tag" --json assets --jq '.assets[].name' | grep -Fxq "$asset_name"; then
-              mkdir -p "$verify_dir"
-              gh release download "$release_tag" --pattern "$asset_name" --dir "$verify_dir"
-              cmp --silent "$source_path" "$verify_dir/$asset_name" || {
-                echo "Release asset $asset_name exists with different bytes; refusing to overwrite an immutable version."
-                exit 1
-              }
-              echo "Verified existing immutable release asset: $asset_name"
-            else
-              gh release upload "$release_tag" "$source_path#$asset_name"
+            if printf '%s\n' "$asset_liste" | grep -Fxq "$asset_name"; then
+              verify_immutable_asset "$source_path" "$asset_name"
+            elif gh release upload "$release_tag" "$source_path#$asset_name" 2> "$RUNNER_TEMP/release-upload.err"; then
               echo "Published immutable release asset: $asset_name"
+            elif grep -q 'already exists' "$RUNNER_TEMP/release-upload.err"; then
+              # Die Datei liegt schon im Release, die Liste hatte sie nicht.
+              # Byte-Gleichheit bleibt Pflicht - eine andere Fassung bricht ab.
+              verify_immutable_asset "$source_path" "$asset_name"
+            else
+              cat "$RUNNER_TEMP/release-upload.err" >&2
+              exit 1
             fi
           }
+
+          lies_asset_liste
 
           publish_immutable_asset \
             'assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx' \
@@ -352,9 +376,11 @@ jobs:
           # Release. Sie bekommen ein eigenes, weil ein Release hoechstens 1000
           # Dateien fasst und woek-public-assets-v2 mit 930 fast voll ist.
           release_tag='woek-journal-pdfs-v1'
+          asset_liste=''
           if ! gh release view "$release_tag" >/dev/null 2>&1; then
             gh release create "$release_tag" --target "$GITHUB_SHA" --title 'WOeK Journal-Lesefassungen v1' --notes 'Druckfassungen der Journalartikel. Der Dateiname traegt eine Inhaltskennung; eine korrigierte Fassung kommt als neue Datei dazu.'
           fi
+          lies_asset_liste
           node scripts/assets/sync-journal-release-assets.mjs --release-liste > "$RUNNER_TEMP/journal-release-assets.txt"
           while IFS=$'\t' read -r source_path asset_name; do
             [ -n "$asset_name" ] || continue
