@@ -348,6 +348,24 @@ jobs:
             'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf' \
             'WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf'
 
+          # Die Journal-Lesefassungen liegen seit dem 20.09.2026 ebenfalls im
+          # Release. Sie bekommen ein eigenes, weil ein Release hoechstens 1000
+          # Dateien fasst und woek-public-assets-v2 mit 930 fast voll ist.
+          release_tag='woek-journal-pdfs-v1'
+          if ! gh release view "$release_tag" >/dev/null 2>&1; then
+            gh release create "$release_tag" --target "$GITHUB_SHA" --title 'WOeK Journal-Lesefassungen v1' --notes 'Druckfassungen der Journalartikel. Der Dateiname traegt eine Inhaltskennung; eine korrigierte Fassung kommt als neue Datei dazu.'
+          fi
+          node scripts/assets/sync-journal-release-assets.mjs --release-liste > "$RUNNER_TEMP/journal-release-assets.txt"
+          while IFS=$'\t' read -r source_path asset_name; do
+            [ -n "$asset_name" ] || continue
+            # gh release upload leitet den Dateinamen aus der Datei ab; der Teil
+            # hinter # ist nur eine Beschriftung. Deshalb geht eine Kopie unter
+            # dem Zielnamen hoch.
+            cp "$source_path" "$RUNNER_TEMP/$asset_name"
+            publish_immutable_asset "$RUNNER_TEMP/$asset_name" "$asset_name"
+            rm -f "$RUNNER_TEMP/$asset_name"
+          done < "$RUNNER_TEMP/journal-release-assets.txt"
+
   deploy:
     needs: [build, release-assets]
     if: always() && needs.build.result == 'success' && (needs.release-assets.result == 'success' || needs.release-assets.result == 'skipped')
