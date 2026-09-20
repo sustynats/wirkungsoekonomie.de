@@ -37,6 +37,15 @@ export function auftragsBefund(job, now) {
     ausloeser: String(job?.intake?.trigger_type || '').slice(0, 40) || null,
     letzter_fehler: fehlerkennung(job?.last_error?.error_code),
     fehlversuche: Number(job?.attempts?.intake || 0) || 0,
+    // Nach dem Lauf entscheidet der Tisch: bereitgestellt heisst, die Karte
+    // steht in der Freigabeliste; angehalten heisst, der Auftrag wartet auf
+    // etwas und ruehrt sich von allein nicht mehr. Ohne diesen Stand war bei
+    // Meinung & Analyse von aussen nicht zu unterscheiden, ob ein Auftrag
+    // angekommen oder stecken geblieben ist (20.09.2026, Natalie: „Ist das
+    // verlorengegangen?"). Nur Zustand und Code, nie ein Grundtext.
+    freigabe: job?.accepted?.staged === true || job?.staging?.preview_hash ? 'bereitgestellt'
+      : job?.intake?.editorial_hold?.code ? `angehalten:${String(job.intake.editorial_hold.code).slice(0, 40)}`
+      : null,
   };
 }
 

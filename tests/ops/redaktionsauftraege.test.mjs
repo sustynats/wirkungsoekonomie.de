@@ -44,7 +44,7 @@ test('kein Auftragstext verlaesst die private Warteschlange', async () => {
   const ergebnis = await redaktionsauftraege({ session: session([auftrag('woek-a', '2026-09-14T09:00:00.000Z')], []), now });
   assert.equal(JSON.stringify(ergebnis).includes('GEHEIMER AUFTRAGSTEXT'), false);
   assert.deepEqual(Object.keys(auftragsBefund(auftrag('woek-a', now), now)).sort(),
-    ['abgeschlossen', 'angenommen', 'art', 'ausloeser', 'erstellt', 'fehler', 'fehlversuche', 'job_id', 'letzter_fehler', 'nachbesserungen', 'quittung', 'rueckgabe_von', 'stunden_alt', 'zustand']);
+    ['abgeschlossen', 'angenommen', 'art', 'ausloeser', 'erstellt', 'fehler', 'fehlversuche', 'freigabe', 'job_id', 'letzter_fehler', 'nachbesserungen', 'quittung', 'rueckgabe_von', 'stunden_alt', 'zustand']);
 });
 
 test('eine belegte Importspur macht den Befund nicht wertlos', async () => {
@@ -147,4 +147,19 @@ test('bereitgestellt heisst: der Redaktionstisch hat den Vermerk gesetzt', async
   sitzung.store.observation = async (key) => (key === `intake-news-staged:woek-w:${hash(record)}` ? { at: '2026-09-18T16:00:00.000Z' } : beobachtet(key));
   const ergebnis = await redaktionsauftraege({ session: sitzung, now });
   assert.equal(ergebnis.auftraege.find((a) => a.job_id === 'woek-w').meldungsweg.in_freigabeliste, true);
+});
+
+// Natalie am 20.09.2026 zu ihrer Analyse vom Morgen: „Ist das verlorengegangen?"
+// Der Befund zeigte bei Meinung & Analyse nur "accepted" - gleich fuer einen
+// bereitgestellten und einen angehaltenen Auftrag. Der Stand des Tisches fehlte.
+test('der Befund unterscheidet bereitgestellt von angehalten, ohne Grundtext zu nennen', () => {
+  const bereit = auftragsBefund(auftrag('woek-b', now, { status: 'accepted',
+    accepted: { decision: 'publish', staged: true }, staging: { preview_hash: 'p' } }), now);
+  assert.equal(bereit.freigabe, 'bereitgestellt');
+  const angehalten = auftragsBefund(auftrag('woek-c', now, { status: 'accepted',
+    accepted: { decision: 'hold', reason: 'GEHEIMER GRUNDTEXT' },
+    intake: { owner: '1206956406805102593', editorial_hold: { code: 'EDITORIAL_CONTEXT_MISSING', reason: 'GEHEIMER GRUNDTEXT' } } }), now);
+  assert.equal(angehalten.freigabe, 'angehalten:EDITORIAL_CONTEXT_MISSING');
+  assert.equal(JSON.stringify(angehalten).includes('GEHEIM'), false, 'der Befund ist oeffentlich');
+  assert.equal(auftragsBefund(auftrag('woek-d', now), now).freigabe, null, 'ein wartender Auftrag hat noch keinen Stand');
 });
