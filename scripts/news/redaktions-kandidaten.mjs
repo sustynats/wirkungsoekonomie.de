@@ -89,9 +89,11 @@ export async function proposeEditorialCandidates({ session = null, root = ROOT, 
       const top = fs.existsSync(lagenPfad) ? topLageEintrag(JSON.parse(fs.readFileSync(lagenPfad, 'utf8'))) : null;
       anker = top ? new Set([top.story_id]) : null;
     }
-    for (const { story, assessment } of selectEditorialCandidates(catalog, now, { limit: Math.min(limit, maxPerDay - counter.proposed), assess, restrictTo: anker })) {
+    const kandidaten = selectEditorialCandidates(catalog, now, { limit: Math.min(limit, maxPerDay - counter.proposed), assess, restrictTo: anker });
+    let schonVorgeschlagen = 0;
+    for (const { story, assessment } of kandidaten) {
       const { job, fingerprint } = buildCandidateRequest(story, assessment, { owner, now });
-      if (await store.observation(`intake-fingerprint:${fingerprint}`) || await store.observation(`github-candidate:${story.story_id}`)) continue;
+      if (await store.observation(`intake-fingerprint:${fingerprint}`) || await store.observation(`github-candidate:${story.story_id}`)) { schonVorgeschlagen += 1; continue; }
       await store.observe(`github-candidate:${story.story_id}`, { job_id: job.input.job_id, fingerprint, at: now, version: CANDIDATE_VERSION });
       await store.put(job);
       await store.observe(`intake-fingerprint:${fingerprint}`, { job_id: job.input.job_id });
@@ -99,7 +101,13 @@ export async function proposeEditorialCandidates({ session = null, root = ROOT, 
       proposed.push({ job_id: job.input.job_id, story_id: story.story_id, title: story.title, score: assessment.editorial_analysis_score });
       counter.proposed += 1; await store.observe(`github-candidate-day:${day}`, counter);
     }
-    return { status: 'ok', day, proposed };
+    // Ein leeres Ergebnis ohne Grund ist nicht pruefbar: am 20.09.2026 fragte
+    // Natalie nach neuen Analysen, und der Lauf sagte nur "proposed: []".
+    const grund = proposed.length ? null
+      : anker === null || (anker && anker.size === 0) ? 'keine_lage'
+        : !kandidaten.length ? 'unter_schwelle'
+          : schonVorgeschlagen ? 'schon_vorgeschlagen' : 'kein_kandidat';
+    return { status: 'ok', day, proposed, ...(grund ? { grund } : {}) };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
 }
 
