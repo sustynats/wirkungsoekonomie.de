@@ -46,3 +46,21 @@ test('nur der Anker wird vorgeschlagen, und nur wenn er die Schwellen trägt', (
   assert.deepEqual(selectEditorialCandidates(schwach, '2026-09-17T10:00:00Z',
     { assess: bewerten, restrictTo: new Set(['wt-schwach']) }), []);
 });
+
+// 20.09.2026: Natalie fragte nach neuen automatischen Analysen. Der Lauf sagte
+// nur „proposed: []" - ohne Grund ist nicht pruefbar, ob die Spur arbeitet.
+test('bleibt ein Lauf ohne Vorschlag, nennt er den Grund', async () => {
+  const { proposeEditorialCandidates } = await import('../../scripts/news/redaktions-kandidaten.mjs');
+  const beobachtet = new Map();
+  const sitzung = (rows) => ({
+    store: { acquire: async () => {}, release: async () => {}, all: async () => rows,
+      get: async (id) => rows.find((row) => row.input?.job_id === id) || null,
+      observation: async (key) => beobachtet.get(key) || null, observe: async (key, value) => beobachtet.set(key, value), put: async () => {} },
+    transport: { writeAtomic: async () => {} },
+  });
+  const auftrag = [{ input: { job_id: 'wt_20260919T060000Z_aaaaaaaaaaaaaaaaaaaaaaaa', job_type: 'editorial_request' }, intake: { owner: '1206956406805102593' } }];
+  const ohneLage = await proposeEditorialCandidates({ session: sitzung(auftrag), stories: [], restrictTo: null, now: '2026-09-20T06:00:00.000Z' });
+  assert.equal(ohneLage.grund, 'keine_lage');
+  const unterSchwelle = await proposeEditorialCandidates({ session: sitzung(auftrag), stories: [], restrictTo: new Set(['wt-x']), now: '2026-09-20T06:00:00.000Z' });
+  assert.equal(unterSchwelle.grund, 'unter_schwelle');
+});
