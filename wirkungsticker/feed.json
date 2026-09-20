@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-20T17:23:21.870Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-20T17:38:22.344Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -129,6 +129,38 @@
         "democracy": {
           "magnitude": 4,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/afd-wird-laut-hochrechnungen-starkste-kraft-cdu-sturzt-ab-5f6b5e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/afd-wird-laut-hochrechnungen-starkste-kraft-cdu-sturzt-ab-5f6b5e/",
+      "title": "AfD laut Hochrechnungen stärkste Kraft im Osten, CDU unter Druck",
+      "summary": "Laut Hochrechnungen wird die AfD bei der nächsten Wahl im Osten stärkste Kraft. Offen bleiben das amtliche Ergebnis und die Regierungsbildung, bei der das BSW laut Quelle entscheidend werden könnte.",
+      "date_published": "2026-09-20T16:08:00.000Z",
+      "date_modified": "2026-09-20T16:08:00.000Z",
+      "_woek_released_at": "2026-09-20T17:41:16.519Z",
+      "tags": [
+        "Demokratie",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "open",
           "status": "potential"
         }
       }
