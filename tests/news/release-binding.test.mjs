@@ -33,7 +33,7 @@ function runStep(t, source, name, values = {}) {
     git() {
       case "$1" in
         config|add|commit) return 0 ;;
-        diff) [[ "$TEST_CHANGED" != "true" ]] ;;
+        diff) [[ "$*" == *--name-only* ]] && { printf '%s\\n' $TEST_STAGED_FILES; return 0; }; [[ "$TEST_CHANGED" != "true" ]] ;;
         rev-parse) printf '%s\\n' "$fake_head" ;;
         *) return 90 ;;
       esac
@@ -53,6 +53,7 @@ function runStep(t, source, name, values = {}) {
       GITHUB_EVENT_NAME: "workflow_dispatch", GITHUB_SHA: oldCommit,
       INITIAL_COMMIT: oldCommit, PUBLISHED_COMMIT: pushedCommit,
       TEST_CHANGED: "true", TEST_PUSH_SUCCEEDS: "true", SLOT_NAME: "Fixture",
+      TEST_STAGED_FILES: "data/news/stories.json wirkungsticker/lage/2026-09-20-morgenlage/index.html",
       TICKER_COMMIT: pushedCommit, TICKER_ONLY: "true", EXPECTED_COMMIT: oldCommit,
       ...values,
     },
@@ -63,7 +64,7 @@ function runStep(t, source, name, values = {}) {
 test("ticker source is captured after successful rebase/rebuild/push, never before", t => {
   const result = runStep(t, worker, "Commit one atomic update");
   assert.equal(result.status, 0, result.stderr);
-  assert.equal(result.output, `commit=${pushedCommit}\nchanged=true\n`);
+  assert.equal(result.output, `commit=${pushedCommit}\nchanged=true\npublic_files=true\n`);
   assert.doesNotMatch(result.output, new RegExp(oldCommit));
 });
 
@@ -74,6 +75,16 @@ test("failed publication and unchanged work cannot advertise a releasable commit
   const unchanged = runStep(t, worker, "Commit one atomic update", { TEST_CHANGED: "false" });
   assert.equal(unchanged.status, 0);
   assert.equal(unchanged.output, "changed=false\n");
+});
+
+// 20.09.2026: Die Morgenlage lag committet im Repository und war nicht im Netz.
+// Die Auslieferung haengt an "hat dieser Lauf etwas Oeffentliches geaendert" -
+// eine Lage aendert Seiten, auch wenn keine neue Meldung dazukam.
+test("geaenderte Seiten werden gemeldet, reine Datenlaeufe nicht", t => {
+  const nurDaten = runStep(t, worker, "Commit one atomic update", { TEST_STAGED_FILES: "data/news/usage.json reports/wirkungsticker-latest-run.json" });
+  assert.equal(nurDaten.output, `commit=${pushedCommit}\nchanged=true\npublic_files=false\n`);
+  const nurLage = runStep(t, worker, "Commit one atomic update", { TEST_STAGED_FILES: "wirkungsticker/lage/2026-09-20-morgenlage/index.html" });
+  assert.equal(nurLage.output, `commit=${pushedCommit}\nchanged=true\npublic_files=true\n`);
 });
 
 test("dispatch keeps main as workflow definition but binds content to the pushed commit", t => {
