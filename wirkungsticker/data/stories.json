@@ -2,8 +2,1723 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-20T16:22:52.110Z",
+  "updated_at": "2026-09-20T16:41:54.898Z",
   "stories": [
+    {
+      "story_id": "wt-63ed7fc1b2bdbf11",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-63ed7fc1b2bdbf11-c86a7e9a2395a383-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-63ed7fc1b2bdbf11-4aebf1ed419c582d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-63ed7fc1b2bdbf11-05ed1dd69ac28ef3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "saudi-arabien-agypten-jordanien-und-kuwait-verurteilen-huthi-angriff-auf-riad-us-aussenm-bdbf11",
+      "title": "Ägypten, Jordanien und Kuwait verurteilen laut Deutschlandfunk Huthi-Angriffe auf Riad",
+      "source_summary": "Der Deutschlandfunk berichtet, dass Ägypten, Jordanien und Kuwait Angriffe der jemenitischen Huthi-Miliz auf Riad verurteilt haben. Die drei Staaten hätten Saudi-Arabien zudem Unterstützung beim Schutz seiner Souveränität zugesichert.\n\nNach dem Bericht warnte das US-Außenministerium vor einer Verschärfung des Konflikts und riet US-Staatsbürgern, Reisen in die Region ernsthaft zu überdenken. Als mögliche Entwicklung wird eine rasche Eskalation der militärischen Auseinandersetzungen genannt.\n\nDer Bericht gibt außerdem die Darstellung der Huthi-Miliz wieder, sie habe Riad mit Raketen und Drohnen angegriffen. Nahe dem Flughafen habe ein Öltank gebrannt; Ursache, Ausmaß und unabhängige Bestätigung der einzelnen Angaben bleiben in der vorliegenden Quelle offen. Die Nachricht wurde am 20.09.2026 im Deutschlandfunk gesendet.",
+      "summary": "Drei Staaten verurteilen laut Deutschlandfunk Huthi-Angriffe auf Riad und sagen Saudi-Arabien Unterstützung zu. Das US-Außenministerium warnt vor einer möglichen Eskalation; zentrale Angaben zu Angriff und Schäden sind nicht unabhängig bestätigt.",
+      "detail_summary": "Ägypten, Jordanien und Kuwait haben laut Deutschlandfunk Angriffe der Huthi-Miliz auf Riad verurteilt und Saudi-Arabien Unterstützung zugesichert. Das US-Außenministerium warnt vor einer Verschärfung des Konflikts und verweist auf mögliche Angriffe auf zivile Flughäfen. Die Huthi-Darstellung eines Raketen- und Drohnenangriffs sowie der Brand eines Öltanks nahe dem Flughafen sind in der vorliegenden Quelle nicht unabhängig bestätigt. Nachrichtenwert entsteht durch die mögliche Ausweitung eines regionalen Konflikts und die sicherheitspolitische Reaktion mehrerer Staaten. Wie groß die Schäden sind und ob weitere Akteure militärisch reagieren, bleibt offen.",
+      "why_relevant": "Die Meldung verbindet einen berichteten Angriff auf eine Hauptstadt mit regionalen Reaktionen und einer US-Warnung vor Eskalation. Das kann Sicherheits-, Versorgungs- und politische Folgepfade eröffnen, deren Eintritt und Ausmaß offen sind.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über einen Huthi-Angriff auf Riad, regionale Verurteilungen und eine US-Warnung vor Eskalation",
+        "evaluation_target": {
+          "label": "berichtete militärische Eskalation und ihre regionalen Folgepfade",
+          "type": "event"
+        },
+        "baseline": "Vor dem berichteten Angriff und den darauf folgenden öffentlichen Reaktionen in der vorliegenden Meldung",
+        "counterfactual": "Ohne weitere Angriffe oder Reaktionen könnte die regionale Sicherheitslage auf dem bisherigen Konfliktniveau bleiben; das ist kein Nachweis eines stabilen Zustands.",
+        "reference_frame": [
+          "Schutz von Zivilpersonen und ziviler Infrastruktur",
+          "regionale Sicherheit und Konfliktbegrenzung",
+          "Völkerrecht als von den beteiligten Staaten angeführter Bezug"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher Angriff auf eine Hauptstadt und zivile Flughäfen könnte Menschen, Mobilität und Versorgung belasten; konkrete Schäden sind nicht unabhängig belegt.",
+            "planet": "Militärische Aktivitäten und ein berichteter Brand an einem Öltank könnten lokale Umwelt- und Emissionsrisiken schaffen; Umfang und Dauer sind offen.",
+            "democracy": "Öffentliche Verurteilungen und Unterstützungszusagen könnten politische Bündnisse und Eskalationsentscheidungen beeinflussen; eine institutionelle Veränderung ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Der berichtete Angriff und die Reaktionen könnten Sicherheitsentscheidungen, zivile Bewegungen und Schutzmaßnahmen unmittelbar beeinflussen.",
+          "second_order": "Weitere militärische Reaktionen könnten regionale Kooperation, Versorgung und politische Handlungsspielräume unter Bedingungen anhaltender Unsicherheit belasten.",
+          "third_order": "Eine bestätigte, länger andauernde Eskalation könnte Konfliktlinien und institutionelle Kooperation verfestigen; diese Entwicklung ist derzeit nur bedingt modellierbar.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine unabhängige Bestätigung des Angriffs, keine Opferzahlen und keine konkreten Folgemaßnahmen.",
+            "Staatliche Schutz- und Vermittlungsmaßnahmen könnten eine weitere Eskalation begrenzen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor; die Unabhängigkeit der darin wiedergegebenen staatlichen und militärischen Angaben ist nicht verifiziert.",
+          "institutional_status": "Es handelt sich um einen laufenden Konflikt mit politischen Verurteilungen, Unterstützungszusagen und einer Warnung; ein neuer Beschluss oder eine Rechtsänderung ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt mögliche Gefährdung ziviler Flughäfen und einen Brand nahe dem Flughafen, liefert aber keine unabhängigen Angaben zu Opfern, Schäden oder Dauer.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein möglicher Angriff auf eine Hauptstadt und zivile Infrastruktur könnte Menschen, Mobilität und Versorgung belasten. Die Richtung ist wegen des berichteten militärischen Geschehens negativ; Eintritt und Ausmaß bleiben unsicher.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Gefährdung von Menschen und ziviler Infrastruktur",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Angriffe in oder nahe einer Hauptstadt könnten Schutzbedarfe, Bewegungsbeschränkungen und Unterbrechungen ziviler Flughafenfunktionen auslösen.",
+                "recipients": [
+                  "Zivilbevölkerung in Riad",
+                  "Reisende und Beschäftigte an zivilen Flughäfen"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die mögliche Reichweite ist regional relevant, aber konkrete Schäden und die Dauer sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen sein könnten Menschen in einer Hauptstadt und an ziviler Infrastruktur.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Raketen- und Drohnenangriffe wären für Betroffene potenziell akut gefährlich.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keinen Zeitraum anhaltender Beeinträchtigung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Schäden könnten teilweise reparierbar sein; konkrete Zerstörung ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Zivilpersonen und Reisende in einem Konfliktgebiet wären besonders schutzbedürftig.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Sicherheitsereignisse könnten Mobilität und Versorgung über direkte Schäden hinaus belasten.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Bei bestätigten Angriffen auf zivile Flughäfen wäre der Schutz von Zivilpersonen eine maßgebliche Grenze.",
+                  "reference_frame": "Schutz von Zivilpersonen und ziviler Infrastruktur",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der berichtete Angriff stattfand und zivile Infrastruktur tatsächlich betroffen war.",
+                "reference_space": "Riad und unmittelbar betroffene zivile Verkehrs- und Versorgungsstrukturen",
+                "time_horizon": "kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Militärische Angriffe nahe ziviler Infrastruktur können Schutz- und Mobilitätsrisiken erhöhen.",
+                "source_support": "Die Quelle berichtet Angriffe, einen Brand nahe dem Flughafen und einen Hinweis auf zivile Flughäfen; sie belegt keine konkreten Schäden.",
+                "limitations": "Keine unabhängige Bestätigung, keine Opferzahlen und keine belastbaren Angaben zur Dauer.",
+                "first_order": "Mögliche unmittelbare Gefährdung und Einschränkung ziviler Bewegungen.",
+                "second_order": "Mögliche Belastung von Versorgung und wirtschaftlicher Tätigkeit bei anhaltenden Einschränkungen.",
+                "third_order": "Mögliche längerfristige Verschlechterung ziviler Resilienz bei wiederholten Angriffen; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle reicht nicht für eine belastbare Quantifizierung von Opfern, Schäden oder Dauer.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Belastung regionaler Mobilität durch Reisewarnungen",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Eine offizielle Warnung vor Reisen könnte Mobilität, Geschäftsreisen und Hilfeleistungen vorsorglich einschränken.",
+                "recipients": [
+                  "Reisende",
+                  "zivile Organisationen und Unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Warnung ist belegt, ihre tatsächliche Verhaltenswirkung aber nicht."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Reisewarnungen können über direkt Betroffene hinaus wirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die unmittelbare Belastung hängt von individuellen Reiseentscheidungen ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Warnung ist nicht angegeben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Reiseentscheidungen und Warnhinweise sind grundsätzlich reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Reisende und Hilfsakteure können bei Unsicherheit besonders betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft vor allem Mobilität und Vorsorge, nicht belegte Strukturveränderungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Warnung kann Schutzentscheidungen unterstützen, ist aber selbst keine festgestellte Schutzverletzung.",
+                  "reference_frame": "Sichere zivile Mobilität",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Menschen die Warnung wahrnehmen und ihr Verhalten ändern.",
+                "reference_space": "Internationale Reisen in die betroffene Region",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Reisewarnungen können vorsorgliche Verhaltensänderungen auslösen.",
+                "source_support": "Die Quelle belegt die Warnung, nicht deren Wirkung.",
+                "limitations": "Keine Verhaltensdaten oder Angaben zu betroffenen Personen.",
+                "first_order": "Mögliche Vermeidung oder Verschiebung von Reisen.",
+                "second_order": "Mögliche Einschränkungen geschäftlicher und humanitärer Kontakte.",
+                "third_order": "Keine belastbare Grundlage für weitergehende gesellschaftliche Folgen.",
+                "research_pass": "second_pass",
+                "research_result": "Es fehlen Daten zur Reichweite und Verhaltenswirkung der Warnung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Es ist kein gleich stark belegter positiver Hauptpfad erkennbar; der Schutz ziviler Personen begrenzt die Abwägung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Gefährdung von Menschen und ziviler Infrastruktur",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Gefährdung von Menschen und ziviler Infrastruktur",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt einen Brand an einem Öltank, liefert aber keine Messwerte zu Emissionen, Boden- oder Gewässerschäden und keine unabhängige Bestätigung.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein bestätigter Brand an einer Ölinfrastruktur könnte lokale Luft- und Umweltbelastungen verursachen. Wegen fehlender Messdaten und unklarer Ursache bleibt das ökologische Potenzial begrenzt und unsicher.",
+            "primary_paths": [
+              {
+                "label": "Mögliche lokale Umweltbelastung durch einen Brand an einem Öltank",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein Brand an einem Öltank könnte Schadstoffe und Rauch freisetzen und dadurch die lokale Luftqualität beeinträchtigen.",
+                "recipients": [
+                  "Menschen und Ökosysteme im Umfeld des Flughafens",
+                  "lokale Luft und Boden"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der berichtete Brand erlaubt einen möglichen lokalen Pfad, aber keine belastbare Größenbestimmung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein Brand an einem einzelnen Tank hätte wahrscheinlich lokale Reichweite.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ölbrände können kurzfristig intensive Rauch- und Schadstoffbelastungen erzeugen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des Brandes und seiner Umweltwirkung ist unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Lokale Belastungen könnten begrenzt und teilweise reversibel sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders empfindliche Menschen und lokale Ökosysteme könnten betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein einzelnes lokales Ereignis belegt keine tiefe ökologische Systemwirkung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine maßgebliche Umweltgrenze ist ohne Messwerte und bestätigte Schäden nicht feststellbar.",
+                  "reference_frame": "Schutz lokaler Luft und Umwelt",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der Brand stattfand und dabei relevante Schadstoffe freigesetzt wurden.",
+                "reference_space": "Umfeld des internationalen Flughafens von Riad",
+                "time_horizon": "kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Ein bestätigter Ölbrand kann lokale Rauch- und Schadstoffbelastungen verursachen.",
+                "source_support": "Die Quelle berichtet einen brennenden Öltank; sie liefert keine Umweltmessungen.",
+                "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Dauer, Wind, Ausbreitung oder Schäden.",
+                "first_order": "Mögliche lokale Rauch- und Luftbelastung.",
+                "second_order": "Mögliche Belastung von Gesundheit und Aufräumarbeiten bei anhaltender Kontamination.",
+                "third_order": "Weitergehende ökologische Kaskaden sind aus der Quelle nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Es fehlen Messwerte und unabhängige Berichte zur ökologischen Wirkung des Brandes.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche zusätzliche Umweltbelastung durch fortgesetzte Kampfhandlungen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wiederholte Angriffe könnten weitere Brände oder Schäden an Energie- und Verkehrsinfrastruktur auslösen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Anwohnerinnen und Anwohner"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist an eine nicht belegte Fortsetzung der Kampfhandlungen gebunden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Schäden wären zunächst räumlich begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Weitere Intensität ist aus der Quelle nicht bestimmbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Fortdauer des Konflikts ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Umweltschäden könnten teilweise, aber nicht zwingend reversibel sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Lokale Umwelt und Anwohner könnten unterschiedlich exponiert sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische Wirkung ist ohne weitere Ereignisse nicht begründet.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist mangels Messdaten und bestätigter Folgeschäden nicht entscheidend.",
+                  "reference_frame": "Lokaler Umweltschutz",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt eine Fortsetzung der Kampfhandlungen und weitere Infrastrukturschäden voraus.",
+                "reference_space": "Region um Riad",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Weitere militärische Ereignisse könnten zusätzliche Umweltbelastungen verursachen.",
+                "source_support": "Die Quelle nennt militärische Auseinandersetzungen, aber keine weiteren Umweltschäden.",
+                "limitations": "Keine Daten zu Frequenz, Ort oder Folgen weiterer Angriffe.",
+                "first_order": "Mögliche zusätzliche Brände oder Freisetzungen.",
+                "second_order": "Mögliche Belastung lokaler Aufräum- und Gesundheitskapazitäten.",
+                "third_order": "Keine belastbare Grundlage für regionale ökologische Kaskaden.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle erlaubt keine Prüfung eines fortgesetzten Umweltpfads.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver Umweltpfad ist nicht belegt; die mögliche lokale Belastung bleibt wegen fehlender Messdaten vorsichtig modelliert."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche lokale Umweltbelastung durch einen Brand an einem Öltank",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Umweltbelastung durch einen Brand an einem Öltank",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt öffentliche Verurteilungen, Unterstützungszusagen und eine US-Warnung, aber keine institutionelle Entscheidung oder messbare Veränderung politischer Teilhabe.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Öffentliche Reaktionen auf einen möglichen Angriff könnten Bündnisentscheidungen und sicherheitspolitische Prioritäten beeinflussen. Der demokratische Pfad betrifft vor allem institutionelle Rechenschaft und Eskalationsentscheidungen; konkrete Folgen sind offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Verengung politischer Handlungsspielräume durch Eskalationsentscheidungen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein berichteter Angriff und Unterstützungszusagen könnten den Druck auf Regierungen erhöhen, sicherheits- und militärpolitische Maßnahmen zu priorisieren.",
+                "recipients": [
+                  "Regierungen der betroffenen Staaten",
+                  "Parlamente und betroffene Öffentlichkeit"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Der politische Bezug ist regional, aber konkrete Beschlüsse und Einschränkungen demokratischer Kontrolle sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere Staaten und ihre politischen Institutionen sind öffentlich einbezogen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine mögliche Eskalation kann sicherheitspolitischen Entscheidungsdruck erhöhen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer politischer Auswirkungen ist nicht aus der Quelle ersichtlich.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Prioritäten können grundsätzlich korrigiert werden, sofern Kontrolle erhalten bleibt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Öffentlichkeit und Institutionen in einer Krisenlage können unter erhöhtem Entscheidungsdruck stehen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Sicherheitskrisen können Debatten, Bündnisse und institutionelle Prioritäten beeinflussen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Transparente Rechenschaft und demokratische Kontrolle wären bei weitergehenden militärischen Maßnahmen eine maßgebliche Schutzgrenze.",
+                  "reference_frame": "Demokratische Rechenschaft und zivile Kontrolle sicherheitspolitischer Entscheidungen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die öffentliche Reaktion in konkrete und länger anhaltende sicherheitspolitische Entscheidungen übergeht.",
+                "reference_space": "Politische Institutionen und Öffentlichkeit in Saudi-Arabien und den reagierenden Staaten",
+                "time_horizon": "kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sicherheitseskalationen können politische Prioritäten und Entscheidungsdruck verändern.",
+                "source_support": "Die Quelle belegt Verurteilungen, Unterstützung und eine Warnung, aber keine neuen Beschlüsse.",
+                "limitations": "Keine Informationen zu parlamentarischer Kontrolle, Maßnahmen, öffentlicher Debatte oder Teilhabe.",
+                "first_order": "Möglicher erhöhter sicherheitspolitischer Entscheidungsdruck.",
+                "second_order": "Mögliche Verschiebung politischer Prioritäten und Ressourcen.",
+                "third_order": "Mögliche Verfestigung regionaler Bündnismuster; institutionelle Folgen sind nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die vorliegende Quelle enthält keine belastbaren Daten zu Beschlüssen, Kontrolle oder Veränderungen demokratischer Institutionen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Stärkung zwischenstaatlicher Abstimmung zum Schutz staatlicher Souveränität",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Gemeinsame Verurteilungen und Unterstützungszusagen könnten kurzfristig politische Abstimmung und Krisenkommunikation fördern.",
+                "recipients": [
+                  "Regierungen und regionale Institutionen",
+                  "betroffene Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die politische Abstimmung ist als Erklärung berichtet, ihre institutionelle Wirkung aber nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere Staaten sind an der öffentlichen Reaktion beteiligt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt Erklärungen, keine verbindlichen gemeinsamen Maßnahmen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Abstimmung ist unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Öffentliche politische Positionen können grundsätzlich revidiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Abstimmung könnte Schutzbedarfe adressieren, konkrete Empfänger sind nicht ausgewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Erklärungen allein belegen keine tiefe institutionelle Veränderung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Abstimmung kann Rechenschaft unterstützen, ist aber keine nachgewiesene demokratische Schutzwirkung.",
+                  "reference_frame": "Zwischenstaatliche Krisenkoordination und Rechenschaft",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Erklärungen in koordinierte, transparente Maßnahmen übergehen.",
+                "reference_space": "Regionale staatliche Beziehungen",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Gemeinsame öffentliche Reaktionen können Abstimmung erleichtern.",
+                "source_support": "Die Quelle belegt Verurteilungen und eine Unterstützungszusage, nicht deren weitere institutionelle Folgen.",
+                "limitations": "Keine Angaben zu Verfahren, Transparenz oder tatsächlicher Kooperation.",
+                "first_order": "Mögliche gemeinsame Krisenkommunikation.",
+                "second_order": "Mögliche bessere Abstimmung von Schutz- und Vermittlungsmaßnahmen.",
+                "third_order": "Eine dauerhafte institutionelle Kooperation ist nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Es fehlen Belege für verbindliche gemeinsame Institutionen oder überprüfbare demokratische Verbesserungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Ein begrenzter möglicher Koordinationsnutzen steht einem potenziell stärkeren Pfad zu sicherheitspolitischem Entscheidungsdruck gegenüber; demokratische Kontrolle bleibt die Schutzgrenze."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Verengung politischer Handlungsspielräume durch Eskalationsentscheidungen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verengung politischer Handlungsspielräume durch Eskalationsentscheidungen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-20T16:43:38.708Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle trägt den berichteten Angriff, die Reaktionen der drei Staaten, die US-Warnung und die offene Beweislage; sie belegt keine unabhängige Bestätigung der Folgen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt mögliche Gefährdung ziviler Flughäfen und einen Brand nahe dem Flughafen, liefert aber keine unabhängigen Angaben zu Opfern, Schäden oder Dauer.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein möglicher Angriff auf eine Hauptstadt und zivile Infrastruktur könnte Menschen, Mobilität und Versorgung belasten. Die Richtung ist wegen des berichteten militärischen Geschehens negativ; Eintritt und Ausmaß bleiben unsicher.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Gefährdung von Menschen und ziviler Infrastruktur",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Angriffe in oder nahe einer Hauptstadt könnten Schutzbedarfe, Bewegungsbeschränkungen und Unterbrechungen ziviler Flughafenfunktionen auslösen.",
+              "recipients": [
+                "Zivilbevölkerung in Riad",
+                "Reisende und Beschäftigte an zivilen Flughäfen"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die mögliche Reichweite ist regional relevant, aber konkrete Schäden und die Dauer sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen sein könnten Menschen in einer Hauptstadt und an ziviler Infrastruktur.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Raketen- und Drohnenangriffe wären für Betroffene potenziell akut gefährlich.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keinen Zeitraum anhaltender Beeinträchtigung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Schäden könnten teilweise reparierbar sein; konkrete Zerstörung ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Zivilpersonen und Reisende in einem Konfliktgebiet wären besonders schutzbedürftig.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Sicherheitsereignisse könnten Mobilität und Versorgung über direkte Schäden hinaus belasten.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Bei bestätigten Angriffen auf zivile Flughäfen wäre der Schutz von Zivilpersonen eine maßgebliche Grenze.",
+                "reference_frame": "Schutz von Zivilpersonen und ziviler Infrastruktur",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der berichtete Angriff stattfand und zivile Infrastruktur tatsächlich betroffen war.",
+              "reference_space": "Riad und unmittelbar betroffene zivile Verkehrs- und Versorgungsstrukturen",
+              "time_horizon": "kurzfristig bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Militärische Angriffe nahe ziviler Infrastruktur können Schutz- und Mobilitätsrisiken erhöhen.",
+              "source_support": "Die Quelle berichtet Angriffe, einen Brand nahe dem Flughafen und einen Hinweis auf zivile Flughäfen; sie belegt keine konkreten Schäden.",
+              "limitations": "Keine unabhängige Bestätigung, keine Opferzahlen und keine belastbaren Angaben zur Dauer.",
+              "first_order": "Mögliche unmittelbare Gefährdung und Einschränkung ziviler Bewegungen.",
+              "second_order": "Mögliche Belastung von Versorgung und wirtschaftlicher Tätigkeit bei anhaltenden Einschränkungen.",
+              "third_order": "Mögliche längerfristige Verschlechterung ziviler Resilienz bei wiederholten Angriffen; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle reicht nicht für eine belastbare Quantifizierung von Opfern, Schäden oder Dauer.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Belastung regionaler Mobilität durch Reisewarnungen",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Eine offizielle Warnung vor Reisen könnte Mobilität, Geschäftsreisen und Hilfeleistungen vorsorglich einschränken.",
+              "recipients": [
+                "Reisende",
+                "zivile Organisationen und Unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Warnung ist belegt, ihre tatsächliche Verhaltenswirkung aber nicht."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Reisewarnungen können über direkt Betroffene hinaus wirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die unmittelbare Belastung hängt von individuellen Reiseentscheidungen ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Warnung ist nicht angegeben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Reiseentscheidungen und Warnhinweise sind grundsätzlich reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende und Hilfsakteure können bei Unsicherheit besonders betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft vor allem Mobilität und Vorsorge, nicht belegte Strukturveränderungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Warnung kann Schutzentscheidungen unterstützen, ist aber selbst keine festgestellte Schutzverletzung.",
+                "reference_frame": "Sichere zivile Mobilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Menschen die Warnung wahrnehmen und ihr Verhalten ändern.",
+              "reference_space": "Internationale Reisen in die betroffene Region",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Reisewarnungen können vorsorgliche Verhaltensänderungen auslösen.",
+              "source_support": "Die Quelle belegt die Warnung, nicht deren Wirkung.",
+              "limitations": "Keine Verhaltensdaten oder Angaben zu betroffenen Personen.",
+              "first_order": "Mögliche Vermeidung oder Verschiebung von Reisen.",
+              "second_order": "Mögliche Einschränkungen geschäftlicher und humanitärer Kontakte.",
+              "third_order": "Keine belastbare Grundlage für weitergehende gesellschaftliche Folgen.",
+              "research_pass": "second_pass",
+              "research_result": "Es fehlen Daten zur Reichweite und Verhaltenswirkung der Warnung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Es ist kein gleich stark belegter positiver Hauptpfad erkennbar; der Schutz ziviler Personen begrenzt die Abwägung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Gefährdung von Menschen und ziviler Infrastruktur",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Gefährdung von Menschen und ziviler Infrastruktur",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt einen Brand an einem Öltank, liefert aber keine Messwerte zu Emissionen, Boden- oder Gewässerschäden und keine unabhängige Bestätigung.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein bestätigter Brand an einer Ölinfrastruktur könnte lokale Luft- und Umweltbelastungen verursachen. Wegen fehlender Messdaten und unklarer Ursache bleibt das ökologische Potenzial begrenzt und unsicher.",
+          "primary_paths": [
+            {
+              "label": "Mögliche lokale Umweltbelastung durch einen Brand an einem Öltank",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein Brand an einem Öltank könnte Schadstoffe und Rauch freisetzen und dadurch die lokale Luftqualität beeinträchtigen.",
+              "recipients": [
+                "Menschen und Ökosysteme im Umfeld des Flughafens",
+                "lokale Luft und Boden"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der berichtete Brand erlaubt einen möglichen lokalen Pfad, aber keine belastbare Größenbestimmung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein Brand an einem einzelnen Tank hätte wahrscheinlich lokale Reichweite.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ölbrände können kurzfristig intensive Rauch- und Schadstoffbelastungen erzeugen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des Brandes und seiner Umweltwirkung ist unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Lokale Belastungen könnten begrenzt und teilweise reversibel sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders empfindliche Menschen und lokale Ökosysteme könnten betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein einzelnes lokales Ereignis belegt keine tiefe ökologische Systemwirkung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine maßgebliche Umweltgrenze ist ohne Messwerte und bestätigte Schäden nicht feststellbar.",
+                "reference_frame": "Schutz lokaler Luft und Umwelt",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der Brand stattfand und dabei relevante Schadstoffe freigesetzt wurden.",
+              "reference_space": "Umfeld des internationalen Flughafens von Riad",
+              "time_horizon": "kurzfristig bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Ein bestätigter Ölbrand kann lokale Rauch- und Schadstoffbelastungen verursachen.",
+              "source_support": "Die Quelle berichtet einen brennenden Öltank; sie liefert keine Umweltmessungen.",
+              "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Dauer, Wind, Ausbreitung oder Schäden.",
+              "first_order": "Mögliche lokale Rauch- und Luftbelastung.",
+              "second_order": "Mögliche Belastung von Gesundheit und Aufräumarbeiten bei anhaltender Kontamination.",
+              "third_order": "Weitergehende ökologische Kaskaden sind aus der Quelle nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Es fehlen Messwerte und unabhängige Berichte zur ökologischen Wirkung des Brandes.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche zusätzliche Umweltbelastung durch fortgesetzte Kampfhandlungen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wiederholte Angriffe könnten weitere Brände oder Schäden an Energie- und Verkehrsinfrastruktur auslösen.",
+              "recipients": [
+                "lokale Umwelt",
+                "Anwohnerinnen und Anwohner"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist an eine nicht belegte Fortsetzung der Kampfhandlungen gebunden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Schäden wären zunächst räumlich begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Weitere Intensität ist aus der Quelle nicht bestimmbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Fortdauer des Konflikts ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Umweltschäden könnten teilweise, aber nicht zwingend reversibel sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Lokale Umwelt und Anwohner könnten unterschiedlich exponiert sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische Wirkung ist ohne weitere Ereignisse nicht begründet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist mangels Messdaten und bestätigter Folgeschäden nicht entscheidend.",
+                "reference_frame": "Lokaler Umweltschutz",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt eine Fortsetzung der Kampfhandlungen und weitere Infrastrukturschäden voraus.",
+              "reference_space": "Region um Riad",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Weitere militärische Ereignisse könnten zusätzliche Umweltbelastungen verursachen.",
+              "source_support": "Die Quelle nennt militärische Auseinandersetzungen, aber keine weiteren Umweltschäden.",
+              "limitations": "Keine Daten zu Frequenz, Ort oder Folgen weiterer Angriffe.",
+              "first_order": "Mögliche zusätzliche Brände oder Freisetzungen.",
+              "second_order": "Mögliche Belastung lokaler Aufräum- und Gesundheitskapazitäten.",
+              "third_order": "Keine belastbare Grundlage für regionale ökologische Kaskaden.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle erlaubt keine Prüfung eines fortgesetzten Umweltpfads.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver Umweltpfad ist nicht belegt; die mögliche lokale Belastung bleibt wegen fehlender Messdaten vorsichtig modelliert."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Umweltbelastung durch einen Brand an einem Öltank",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche lokale Umweltbelastung durch einen Brand an einem Öltank",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt öffentliche Verurteilungen, Unterstützungszusagen und eine US-Warnung, aber keine institutionelle Entscheidung oder messbare Veränderung politischer Teilhabe.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Öffentliche Reaktionen auf einen möglichen Angriff könnten Bündnisentscheidungen und sicherheitspolitische Prioritäten beeinflussen. Der demokratische Pfad betrifft vor allem institutionelle Rechenschaft und Eskalationsentscheidungen; konkrete Folgen sind offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Verengung politischer Handlungsspielräume durch Eskalationsentscheidungen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein berichteter Angriff und Unterstützungszusagen könnten den Druck auf Regierungen erhöhen, sicherheits- und militärpolitische Maßnahmen zu priorisieren.",
+              "recipients": [
+                "Regierungen der betroffenen Staaten",
+                "Parlamente und betroffene Öffentlichkeit"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Der politische Bezug ist regional, aber konkrete Beschlüsse und Einschränkungen demokratischer Kontrolle sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere Staaten und ihre politischen Institutionen sind öffentlich einbezogen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine mögliche Eskalation kann sicherheitspolitischen Entscheidungsdruck erhöhen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer politischer Auswirkungen ist nicht aus der Quelle ersichtlich.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Prioritäten können grundsätzlich korrigiert werden, sofern Kontrolle erhalten bleibt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Öffentlichkeit und Institutionen in einer Krisenlage können unter erhöhtem Entscheidungsdruck stehen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Sicherheitskrisen können Debatten, Bündnisse und institutionelle Prioritäten beeinflussen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Transparente Rechenschaft und demokratische Kontrolle wären bei weitergehenden militärischen Maßnahmen eine maßgebliche Schutzgrenze.",
+                "reference_frame": "Demokratische Rechenschaft und zivile Kontrolle sicherheitspolitischer Entscheidungen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die öffentliche Reaktion in konkrete und länger anhaltende sicherheitspolitische Entscheidungen übergeht.",
+              "reference_space": "Politische Institutionen und Öffentlichkeit in Saudi-Arabien und den reagierenden Staaten",
+              "time_horizon": "kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sicherheitseskalationen können politische Prioritäten und Entscheidungsdruck verändern.",
+              "source_support": "Die Quelle belegt Verurteilungen, Unterstützung und eine Warnung, aber keine neuen Beschlüsse.",
+              "limitations": "Keine Informationen zu parlamentarischer Kontrolle, Maßnahmen, öffentlicher Debatte oder Teilhabe.",
+              "first_order": "Möglicher erhöhter sicherheitspolitischer Entscheidungsdruck.",
+              "second_order": "Mögliche Verschiebung politischer Prioritäten und Ressourcen.",
+              "third_order": "Mögliche Verfestigung regionaler Bündnismuster; institutionelle Folgen sind nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die vorliegende Quelle enthält keine belastbaren Daten zu Beschlüssen, Kontrolle oder Veränderungen demokratischer Institutionen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Stärkung zwischenstaatlicher Abstimmung zum Schutz staatlicher Souveränität",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Gemeinsame Verurteilungen und Unterstützungszusagen könnten kurzfristig politische Abstimmung und Krisenkommunikation fördern.",
+              "recipients": [
+                "Regierungen und regionale Institutionen",
+                "betroffene Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die politische Abstimmung ist als Erklärung berichtet, ihre institutionelle Wirkung aber nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere Staaten sind an der öffentlichen Reaktion beteiligt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt Erklärungen, keine verbindlichen gemeinsamen Maßnahmen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Abstimmung ist unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Öffentliche politische Positionen können grundsätzlich revidiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Abstimmung könnte Schutzbedarfe adressieren, konkrete Empfänger sind nicht ausgewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Erklärungen allein belegen keine tiefe institutionelle Veränderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Abstimmung kann Rechenschaft unterstützen, ist aber keine nachgewiesene demokratische Schutzwirkung.",
+                "reference_frame": "Zwischenstaatliche Krisenkoordination und Rechenschaft",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Erklärungen in koordinierte, transparente Maßnahmen übergehen.",
+              "reference_space": "Regionale staatliche Beziehungen",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Gemeinsame öffentliche Reaktionen können Abstimmung erleichtern.",
+              "source_support": "Die Quelle belegt Verurteilungen und eine Unterstützungszusage, nicht deren weitere institutionelle Folgen.",
+              "limitations": "Keine Angaben zu Verfahren, Transparenz oder tatsächlicher Kooperation.",
+              "first_order": "Mögliche gemeinsame Krisenkommunikation.",
+              "second_order": "Mögliche bessere Abstimmung von Schutz- und Vermittlungsmaßnahmen.",
+              "third_order": "Eine dauerhafte institutionelle Kooperation ist nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Es fehlen Belege für verbindliche gemeinsame Institutionen oder überprüfbare demokratische Verbesserungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Ein begrenzter möglicher Koordinationsnutzen steht einem potenziell stärkeren Pfad zu sicherheitspolitischem Entscheidungsdruck gegenüber; demokratische Kontrolle bleibt die Schutzgrenze."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Verengung politischer Handlungsspielräume durch Eskalationsentscheidungen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Verengung politischer Handlungsspielräume durch Eskalationsentscheidungen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-20T16:41:54.898Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-20T12:10:21.000Z",
+      "last_updated": "2026-09-20T16:43:38.702Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-8fdcb345a41420d73f3c",
+      "case_file": {
+        "case_id": "case-42fb0e922651d5",
+        "member_count": 4,
+        "publisher_count": 1,
+        "members": [
+          {
+            "story_id": "wt-63ed7fc1b2bdbf11",
+            "slug": "saudi-arabien-agypten-jordanien-und-kuwait-verurteilen-huthi-angriff-auf-riad-us-aussenm-bdbf11",
+            "title": "Ägypten, Jordanien und Kuwait verurteilen laut Deutschlandfunk Huthi-Angriffe auf Riad",
+            "summary": "Drei Staaten verurteilen laut Deutschlandfunk Huthi-Angriffe auf Riad und sagen Saudi-Arabien Unterstützung zu. Das US-Außenministerium warnt vor einer möglichen Eskalation; zentrale Angaben zu Angriff und Schäden sind nicht unabhängig bestätigt.",
+            "updated_at": "2026-09-20T16:43:38.702Z",
+            "published_at": "2026-09-20T16:43:38.702Z",
+            "kind": "Neues Ereignis",
+            "current": true
+          },
+          {
+            "story_id": "wt-e9d2c1f4810a1485",
+            "slug": "us-armee-vier-tote-bei-angriff-auf-mutmassliches-drogenboot-in-der-karibik-0a1485",
+            "title": "Laut Deutschlandfunk: US-Armee tötet vier Menschen bei Angriff auf mutmaßliches Drogenboot",
+            "summary": "Bei einem US-Militäreinsatz in der Karibik wurden laut Deutschlandfunk vier Menschen getötet. Offen bleibt, ob die behauptete Verbindung des Schiffs zum Drogenhandel belegt ist.",
+            "updated_at": "2026-09-20T02:40:38.809Z",
+            "published_at": "2026-09-20T02:40:38.809Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-057722ef54ceaa10",
+            "slug": "weisses-haus-usa-weisen-uno-bericht-uber-mogliche-kriegsverbrechen-im-iran-zuruck-ceaa10",
+            "title": "USA weisen laut Deutschlandfunk UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück",
+            "summary": "Die US-Regierung weist laut Deutschlandfunk einen UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück. Eine unabhängige Bestätigung der berichteten Vorwürfe und der Opferangaben liegt im Quellenbestand nicht vor.",
+            "updated_at": "2026-09-18T00:23:55.501Z",
+            "published_at": "2026-09-18T00:23:55.501Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-7c4c284198ca4d1f",
+            "slug": "nahost-proteste-in-syrien-wegen-gestiegener-benzinpreise-ca4d1f",
+            "title": "Deutschlandfunk berichtet über Proteste in Syrien nach höheren Treibstoffpreisen",
+            "summary": "Deutschlandfunk berichtet über Proteste in Syrien nach höheren Treibstoffpreisen. Anhaltende Mehrkosten können Mobilität und Versorgung belasten; ein möglicher Emissionspfad und die politische Teilhabefolge hängen von zusätzlichen Bedingungen ab.",
+            "updated_at": "2026-09-14T18:53:57.716Z",
+            "published_at": "2026-09-14T15:49:21.164Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-20T16:26:33.000Z",
+      "published_at": "2026-09-20T16:43:38.702Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/aegypten-jordanien-und-kuwait-verurteilen-huthi-angriff-auf-riad-us-aussenministerium-warnt-vor-eska-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-20T16:26:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-99541a66fec14c9e",
       "title_image": {
@@ -22548,1558 +24263,6 @@
           "url": "https://www.deutschlandfunk.de/usa-verhaengen-neue-sanktionen-gegen-russland-selenskyj-dankt-trump-104.html",
           "source_type": "media_rss",
           "published_at": "2026-09-20T03:32:56.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e9d2c1f4810a1485",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-e9d2c1f4810a1485-fb17399c61fd6cd9-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-e9d2c1f4810a1485-07f84a66f86ffd7c-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-3/wt-e9d2c1f4810a1485-574aa2190da62d03-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "us-armee-vier-tote-bei-angriff-auf-mutmassliches-drogenboot-in-der-karibik-0a1485",
-      "title": "Laut Deutschlandfunk: US-Armee tötet vier Menschen bei Angriff auf mutmaßliches Drogenboot",
-      "source_summary": "Der Deutschlandfunk berichtet über einen Angriff des US-Militärs auf ein Schiff in der Karibik. Dabei seien vier Menschen getötet worden. Die Meldung ordnet den Vorgang in wiederholte Einsätze gegen mutmaßliche Drogenschmuggler ein.\n\nNach Darstellung des zuständigen Süd-Kommandos war das Schiff nachweislich am Drogenhandel beteiligt. Zugleich wird berichtet, dass die US-Regierung bislang keine eindeutigen Belege für die behauptete Verwicklung der angegriffenen Schiffe vorgelegt habe.\n\nDer Deutschlandfunk verweist außerdem auf eine AFP-Zählung, nach der bei solchen Einsätzen inzwischen mehr als 200 Menschen getötet worden seien. Kritiker bezeichneten das Vorgehen als außergerichtliche Hinrichtungen und völkerrechtswidrig. Die Auswahl enthält keinen unabhängigen Originalbeleg.",
-      "summary": "Bei einem US-Militäreinsatz in der Karibik wurden laut Deutschlandfunk vier Menschen getötet. Offen bleibt, ob die behauptete Verbindung des Schiffs zum Drogenhandel belegt ist.",
-      "detail_summary": "Der Deutschlandfunk berichtet, dass das US-Militär bei einem Angriff auf ein Schiff in der Karibik vier Menschen getötet habe. Das zuständige Süd-Kommando bezeichnete das Schiff als nachweislich am Drogenhandel beteiligt. Gleichzeitig lagen der US-Regierung laut Bericht keine eindeutigen Belege für die Verwicklung der angegriffenen Schiffe vor. Der Vorgang ist deshalb als vorläufiger Einzelbericht mit widersprüchlicher Beleglage einzuordnen. Als mögliches Wirkungspotenzial stehen eine Ausweitung militärischer Schiffsbekämpfung, Risiken für rechtsstaatliche Kontrolle und Belastungen für den Schutz von Menschenleben im Raum.",
-      "why_relevant": "Der Bericht verbindet einen tödlichen Militäreinsatz mit einer ungeklärten Begründung und einem möglichen Muster wiederholter Einsätze. Das berührt Schutz von Menschenleben, rechtliche Kontrolle und staatliche Gewaltanwendung.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Tödlicher US-Militärangriff auf ein mutmaßliches Drogenboot in der Karibik bei ungeklärter Beleglage zur behaupteten Drogenverbindung",
-        "evaluation_target": {
-          "label": "militärischer Angriff auf ein mutmaßliches Drogenboot",
-          "type": "event"
-        },
-        "baseline": "Vor dem Bericht ist für diesen konkreten Angriff keine unabhängige Bestätigung der Ereignis- und Begründungsdetails geliefert.",
-        "counterfactual": "Ohne den Angriff wären die vier im Bericht genannten Menschen durch diesen konkreten Einsatz nicht getötet worden; ohne weitere Einsätze bliebe zudem der mögliche Trend militärischer Drogenbekämpfung begrenzt.",
-        "reference_frame": [
-          "Schutz des menschlichen Lebens",
-          "rechtsstaatliche Kontrolle staatlicher Gewalt",
-          "internationale Rechenschaft"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "high",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Der konkrete Tod von vier Menschen ist als beobachteter Schaden getrennt vom möglichen weiteren Risiko zu bewerten. Ein weiterer Wirkpfad könnte bei wiederholten Einsätzen Menschen in der Region gefährden; Umfang und Verteilung sind offen.",
-            "planet": "Die Quelle belegt keine ökologische Veränderung. Ein möglicher Pfad über wiederholte maritime Militäreinsätze und deren Ressourcen- oder Schadstofffolgen bleibt schwach und bedingt.",
-            "democracy": "Die widersprüchliche Begründung könnte die Kontrolle militärischer Gewalt und Vertrauen in staatliche Belege berühren. Eine dauerhafte Praxis könnte parlamentarische und rechtliche Korrekturfähigkeit schwächen, falls unabhängige Prüfung ausbleibt."
-          },
-          "central_dimensions": [
-            "human",
-            "democracy"
-          ],
-          "first_order": "Der Angriff kann weitere tödliche Gewalt gegen mutmaßliche Schmuggler legitimieren, während die behauptete Drogenverbindung ungeklärt bleibt.",
-          "second_order": "Wiederholte Einsätze könnten Beweisstandards, Verantwortlichkeit und die Trennung von Strafverfolgung und Militäreinsatz politisch verschieben.",
-          "third_order": "Bei fehlender unabhängiger Kontrolle könnte sich eine institutionelle Praxis verfestigen, die rechtsstaatliche und internationale Grenzen staatlicher Gewalt belastet.",
-          "enablement": [
-            "normalisation_effect"
-          ],
-          "counter_evidence": [
-            "Das Süd-Kommando behauptet laut Bericht eine nachgewiesene Beteiligung am Drogenhandel.",
-            "Die Quelle belegt keine unabhängige Untersuchung des konkreten Angriffs und keine ökologische Folge."
-          ],
-          "source_independence": "Es liegt nur eine journalistische Quelle mit nicht verifizierter unabhängiger Herkunft vor. Angaben des Militärs und der AFP-Zählung werden durch den Deutschlandfunk vermittelt und sind keine unabhängigen Bestätigungen.",
-          "institutional_status": "Der Bericht belegt einen militärischen Einsatz, aber keinen abschließend geklärten rechtlichen Status und keine nachgewiesene parlamentarische oder gerichtliche Kontrolle."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 4,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt vier Tote beim konkreten Angriff, aber keine belastbare Prognose für weitere Opfer. Der bedingte Pfad beruht auf der möglichen Fortsetzung ähnlicher Einsätze.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Der direkte menschliche Schaden ist durch den berichteten Tod von vier Menschen belegt. Für weitere Einsätze ist der negative Pfad plausibel, aber wegen der ungeklärten Drogenbegründung und fehlender unabhängiger Angaben nur mit niedriger Evidenz modellierbar.",
-            "primary_paths": [
-              {
-                "label": "Weitere tödliche Einsätze gegen mutmaßliche Schmuggler könnten Menschen in der Karibik gefährden",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Die Einstufung eines Schiffs als Drogenboot kann militärische Gewalt statt überprüfbarer Strafverfolgung auslösen; bei Wiederholung könnten weitere Menschen getötet oder gefährdet werden.",
-                "recipients": [
-                  "Besatzungen angegriffener Schiffe",
-                  "Menschen in betroffenen Seegebieten"
-                ],
-                "magnitude": 4,
-                "magnitude_range": {
-                  "lower": 2,
-                  "upper": 4,
-                  "rationale": "Der konkrete Tod von vier Menschen zeigt hohe Intensität, während Reichweite und Dauer weiterer Einsätze nicht belegt sind."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Weitere Einsätze könnten mehrere Besatzungen in den betroffenen Seegebieten erreichen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 3,
-                    "rationale": "Ein militärischer Angriff mit tödlichem Ausgang weist auf hohe mögliche Eingriffsintensität hin.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die Quelle berichtet von wiederholten Einsätzen seit rund einem Jahr, belegt aber keine weitere Dauer.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 3,
-                    "rationale": "Tötungen wären für die Betroffenen unumkehrbar, auch wenn die Zahl weiterer Fälle offen bleibt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 4,
-                    "rationale": "Besatzungen auf angegriffenen Booten hätten gegenüber militärischen Kräften eine besonders verletzliche Position.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Der Pfad kann die Grenze zwischen Strafverfolgung und militärischer Gewalt verschieben.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": true,
-                  "rationale": "Der Schutz des Lebens ist bei tödlicher militärischer Gewalt eine maßgebliche Schutzgrenze.",
-                  "reference_frame": "Schutz des menschlichen Lebens",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Der Pfad setzt voraus, dass ähnliche Einsätze fortgesetzt und Schiffe ohne unabhängige Prüfung als legitime militärische Ziele behandelt werden.",
-                "reference_space": "Karibik und dort eingesetzte Schiffsbesatzungen",
-                "time_horizon": "Bei weiteren Einsätzen nach dem berichteten Angriff",
-                "path_quality": [
-                  "direct",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Militärische Zuschreibung beeinflusst die Einsatzentscheidung und es greifen keine ausreichenden unabhängigen Schutz- und Kontrollmechanismen.",
-                "source_support": "Die Quelle belegt einen tödlichen Angriff, wiederholte Einsätze und die umstrittene Begründung, nicht aber den weiteren Eintritt des Pfads.",
-                "limitations": "Keine unabhängigen Angaben zu Ort, Ablauf, rechtlicher Grundlage oder Zahl der künftig Betroffenen.",
-                "first_order": "Weitere Einsätze könnten Menschen auf verdächtigten Schiffen töten oder verletzen.",
-                "second_order": "Die Unsicherheit der Begründung könnte Schutz und Zugang zu rechtsstaatlicher Prüfung für Betroffene erschweren.",
-                "third_order": "Eine wiederholte militärische Praxis könnte tödliche Gewalt als reguläres Mittel der Drogenbekämpfung verankern.",
-                "research_pass": "second_pass",
-                "research_result": "Keine unabhängige Quelle im Bestand bestätigt den weiteren Opferpfad oder die Einsatzregeln.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 18,
-                  "divisor": 6,
-                  "raw": 3,
-                  "rounded": 3,
-                  "protection_floor": 4,
-                  "final": 4
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": true,
-              "rationale": "Es gibt keinen belegten vergleichbaren positiven Hauptpfad. Der mögliche Nutzen der Drogenbekämpfung kann den Schutz des Lebens nicht als gleichrangige Kompensation ersetzen."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 4,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Weitere tödliche Einsätze gegen mutmaßliche Schmuggler könnten Menschen in der Karibik gefährden",
-              "direction": "negative"
-            },
-            "observations": [
-              {
-                "dimension": "human",
-                "change": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-                "direction": "negative",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "data_status": "secondary_source",
-                "evidence": "medium",
-                "attribution": "open",
-                "reference_frame": "Schutz des menschlichen Lebens",
-                "reference_space": "Schiff und betroffene Menschen in der Karibik",
-                "observed_at": "20.09.2026",
-                "temporal_status": "ex_post",
-                "mechanism": "Tödlicher Angriff des US-Militärs auf ein Schiff",
-                "recipients": [
-                  "vier getötete Menschen und ihre Angehörigen"
-                ],
-                "time_horizon": "Zeitpunkt des berichteten Angriffs",
-                "magnitude": 4,
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Der konkret berichtete Schaden betrifft vier Menschen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 5,
-                    "rationale": "Der Tod von Menschen ist eine maximale unmittelbare Schadensintensität.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 5,
-                    "rationale": "Der Verlust des Lebens ist für die Betroffenen dauerhaft.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 5,
-                    "rationale": "Der berichtete Tod ist nicht rückgängig zu machen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 4,
-                    "rationale": "Menschen auf einem angegriffenen Schiff waren militärischer Gewalt besonders ausgesetzt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Für den konkreten Schaden ist ein unmittelbarer menschlicher Effekt belegt, aber keine weitergehende Systemwirkung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": true,
-                  "rationale": "Der Tod von Menschen berührt unmittelbar die Schutzgrenze des menschlichen Lebens.",
-                  "reference_frame": "Schutz des menschlichen Lebens",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "observed"
-                },
-                "same_target": true,
-                "same_baseline": true,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 22,
-                  "divisor": 6,
-                  "raw": 3.6666666666666665,
-                  "rounded": 4,
-                  "protection_floor": 4,
-                  "final": 4
-                },
-                "presentation": {
-                  "ringStatus": "observed",
-                  "ringLabel": "Beobachtete Wirkung",
-                  "magnitudeBars": 4,
-                  "directionLabel": "− beobachtet",
-                  "shortPathLabel": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-                  "direction": "negative"
-                }
-              }
-            ],
-            "displayed_observation": {
-              "dimension": "human",
-              "change": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-              "direction": "negative",
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "data_status": "secondary_source",
-              "evidence": "medium",
-              "attribution": "open",
-              "reference_frame": "Schutz des menschlichen Lebens",
-              "reference_space": "Schiff und betroffene Menschen in der Karibik",
-              "observed_at": "20.09.2026",
-              "temporal_status": "ex_post",
-              "mechanism": "Tödlicher Angriff des US-Militärs auf ein Schiff",
-              "recipients": [
-                "vier getötete Menschen und ihre Angehörigen"
-              ],
-              "time_horizon": "Zeitpunkt des berichteten Angriffs",
-              "magnitude": 4,
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der konkret berichtete Schaden betrifft vier Menschen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 5,
-                  "rationale": "Der Tod von Menschen ist eine maximale unmittelbare Schadensintensität.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 5,
-                  "rationale": "Der Verlust des Lebens ist für die Betroffenen dauerhaft.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 5,
-                  "rationale": "Der berichtete Tod ist nicht rückgängig zu machen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Menschen auf einem angegriffenen Schiff waren militärischer Gewalt besonders ausgesetzt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Für den konkreten Schaden ist ein unmittelbarer menschlicher Effekt belegt, aber keine weitergehende Systemwirkung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Der Tod von Menschen berührt unmittelbar die Schutzgrenze des menschlichen Lebens.",
-                "reference_frame": "Schutz des menschlichen Lebens",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "observed"
-              },
-              "same_target": true,
-              "same_baseline": true,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 22,
-                "divisor": 6,
-                "raw": 3.6666666666666665,
-                "rounded": 4,
-                "protection_floor": 4,
-                "final": 4
-              },
-              "presentation": {
-                "ringStatus": "observed",
-                "ringLabel": "Beobachtete Wirkung",
-                "magnitudeBars": 4,
-                "directionLabel": "− beobachtet",
-                "shortPathLabel": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-                "direction": "negative"
-              }
-            },
-            "ringStatus": "observed",
-            "ringLabel": "Beobachtete Wirkung",
-            "magnitudeBars": 4,
-            "directionLabel": "− beobachtet",
-            "shortPathLabel": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "hoch",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "open",
-            "dominance": "none",
-            "magnitude": 2,
-            "evidence": "not_assessable",
-            "likelihood": "low",
-            "data_status": "estimated",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die gelieferte Quelle enthält keine Messwerte oder konkreten Angaben zu Treibstoff, Schadstoffen, Wracks oder maritimen Ökosystemen. Ein ökologischer Wirkpfad ist deshalb nur als schwache Möglichkeit modellierbar.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Ein maritimer Militäreinsatz kann grundsätzlich materielle oder betriebliche Umweltfolgen haben, doch der Quellenbestand belegt für diesen Angriff keine solche Zustandsänderung. Die Richtung bleibt offen.",
-            "primary_paths": [
-              {
-                "label": "Maritime Militäreinsätze könnten lokale Belastungen eines Seegebiets auslösen",
-                "direction": "open",
-                "type": "main_path",
-                "mechanism": "Ein Angriff auf ein Schiff könnte bei Schäden, Treibstoffaustritt oder Bergungsbedarf marine Belastungen erzeugen; solche Mechanismen sind für diesen Fall nicht belegt.",
-                "recipients": [
-                  "maritime Ökosysteme",
-                  "Menschen und Tätigkeiten im betroffenen Seegebiet"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 3,
-                  "rationale": "Ohne Angaben zu Schiffsschäden oder Stoffaustritt reicht die plausible Bandbreite von vernachlässigbar bis lokal relevant."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 1,
-                    "rationale": "Eine mögliche Belastung wäre nach dem Quellenstand räumlich auf das Seegebiet begrenzt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die Quelle belegt keine konkrete Umweltbelastung oder Stofffreisetzung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Ein möglicher Austritt könnte länger anhalten, ist aber nicht nachgewiesen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Lokale maritime Schäden könnten teilweise fortwirken, ihr Eintritt bleibt ungeklärt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Betroffene Ökosysteme sind nicht benannt und ihre konkrete Verwundbarkeit ist unbekannt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der mögliche Pfad bleibt auf einzelne maritime Einsätze begrenzt und ist nicht systemisch belegt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Die Quelle belegt keine konkrete ökologische Grenzverletzung oder Schutzgutbeeinträchtigung.",
-                  "reference_frame": "Schutz maritimer Ökosysteme",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "low",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Der Pfad setzt voraus, dass der Angriff das Schiff beschädigt oder Stoffe freisetzt und keine rasche Begrenzung erfolgt.",
-                "reference_space": "betroffenes Seegebiet in der Karibik",
-                "time_horizon": "Während und nach dem Angriff, falls eine maritime Belastung eingetreten ist",
-                "path_quality": [
-                  "indirect",
-                  "weak",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Es wird lediglich ein allgemeiner maritimer Schadensmechanismus geprüft, nicht dessen Eintritt behauptet.",
-                "source_support": "Die Quelle belegt den Angriff auf ein Schiff, aber keine Schäden, Leckagen oder ökologischen Messwerte.",
-                "limitations": "Keine Angaben zu Schiffstyp, Schäden, Wetter, Stoffen, Ort oder betroffenen Ökosystemen.",
-                "first_order": "Ein beschädigtes Schiff könnte lokal maritime Belastungen verursachen.",
-                "second_order": "Eine solche Belastung könnte Tätigkeiten und Lebensräume im Seegebiet beeinträchtigen.",
-                "third_order": "Bei wiederholten, nicht kontrollierten Einsätzen könnte sich eine kumulative Belastung ergeben; dafür fehlt jeder konkrete Beleg.",
-                "research_pass": "second_pass",
-                "research_result": "Der Quellenbestand enthält keine Umweltmessung und keine unabhängige Darstellung ökologischer Folgen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 9,
-                  "divisor": 6,
-                  "raw": 1.5,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": false,
-              "rationale": "Es ist weder ein positiver noch ein negativer ökologischer Effekt konkret belegt; deshalb bleibt die Richtung offen statt künstlich ausgeglichen zu werden."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "? Richtung offen",
-              "shortPathLabel": "Maritime Militäreinsätze könnten lokale Belastungen eines Seegebiets auslösen",
-              "direction": "open"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Maritime Militäreinsätze könnten lokale Belastungen eines Seegebiets auslösen",
-            "display_direction": "open",
-            "label": "? Richtung offen",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "gering",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "? Richtung offen"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "negative",
-            "dominance": "dominant_negative",
-            "magnitude": 4,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt widersprüchliche Angaben zur Begründung des Angriffs, aber keine konkrete Reaktion von Parlamenten, Gerichten oder Öffentlichkeit. Der demokratische Pfad ist daher bedingt und mit hoher Unsicherheit versehen.",
-            "reviewed_source_ids": [
-              "dlf-nachrichten"
-            ],
-            "rationale": "Wenn militärische Gewalt gegen mutmaßliche Schmuggler wiederholt ohne unabhängig überprüfbare Belege eingesetzt wird, könnte die demokratische und rechtliche Kontrolle staatlicher Gewalt geschwächt werden. Gegenläufig könnte eine öffentliche Kontroverse Kontrolle auslösen; dafür gibt es im Quellenbestand kein konkretes Signal.",
-            "primary_paths": [
-              {
-                "label": "Wiederholte Einsätze könnten die Kontrolle militärischer Gewalt schwächen",
-                "direction": "negative",
-                "type": "main_path",
-                "mechanism": "Eine staatliche Behauptung über Drogenhandel steht einer berichteten fehlenden eindeutigen Beleglage gegenüber; bei Fortsetzung könnte die Exekutive faktisch über tödliche Gewalt entscheiden, ohne ausreichende unabhängige Prüfung.",
-                "recipients": [
-                  "Parlamente und Gerichte",
-                  "Öffentlichkeit",
-                  "Betroffene von Militäreinsätzen"
-                ],
-                "magnitude": 4,
-                "magnitude_range": {
-                  "lower": 2,
-                  "upper": 4,
-                  "rationale": "Der mögliche institutionelle Effekt reicht von begrenzter Kontroverse bis zu einer dauerhaften Verschiebung von Kontrollstandards; konkrete Reaktionen sind nicht belegt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Die Praxis könnte mehrere staatliche Stellen und die Öffentlichkeit in den betroffenen Staaten erreichen.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 3,
-                    "rationale": "Es geht um die Kontrolle tödlicher staatlicher Gewalt und nicht nur um eine kommunikative Auseinandersetzung.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "duration": {
-                    "value": 3,
-                    "rationale": "Die Quelle berichtet von wiederholten Einsätzen seit rund einem Jahr, was eine dauerhafte Routine ermöglichen könnte.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 3,
-                    "rationale": "Verfestigte Einsatz- und Beweisstandards könnten politisch schwer rückgängig zu machen sein.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Betroffene ohne Zugang zu unabhängiger Prüfung könnten besonders schwach geschützt sein, konkrete Gruppen sind aber nicht benannt.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 4,
-                    "rationale": "Der Pfad betrifft die institutionelle Grenze zwischen militärischem Handeln, Strafverfolgung und demokratischer Kontrolle.",
-                    "source_ids": [
-                      "dlf-nachrichten"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": true,
-                  "rationale": "Unabhängige Kontrolle tödlicher staatlicher Gewalt ist eine zentrale demokratische und rechtsstaatliche Schutzgrenze.",
-                  "reference_frame": "demokratische und rechtsstaatliche Kontrolle staatlicher Gewalt",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "condition": "Der Pfad setzt voraus, dass Einsätze fortgesetzt werden, unabhängige Belege fehlen und wirksame parlamentarische oder gerichtliche Kontrolle nicht greift.",
-                "reference_space": "US-amerikanische Entscheidungs- und Kontrollstrukturen mit Auswirkungen auf die Karibik",
-                "time_horizon": "Bei wiederholten Einsätzen über den konkreten Angriff hinaus",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Die berichtete Beleglücke beeinflusst die Möglichkeit wirksamer Kontrolle; Gegenmaßnahmen könnten den Pfad begrenzen.",
-                "source_support": "Die Quelle belegt die widersprüchliche Begründung und wiederholte Einsätze, nicht aber eine bereits eingetretene Schwächung demokratischer Institutionen.",
-                "limitations": "Keine Angaben zu Gerichten, Parlamenten, Einsatzregeln, Ermittlungen oder konkreten Kontrollentscheidungen.",
-                "first_order": "Der Angriff könnte eine politische und rechtliche Kontroverse über Beweise und Zuständigkeit auslösen.",
-                "second_order": "Wiederholte Entscheidungen ohne unabhängige Prüfung könnten Verantwortlichkeit und Kontrollstandards schwächen.",
-                "third_order": "Eine verfestigte Praxis könnte die demokratische Korrekturfähigkeit bei grenzüberschreitender Gewalt beeinträchtigen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine Quelle im Bestand belegt eine konkrete institutionelle Reaktion oder eine bereits eingetretene demokratische Wirkung.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 18,
-                  "divisor": 6,
-                  "raw": 3,
-                  "rounded": 3,
-                  "protection_floor": 4,
-                  "final": 4
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": false,
-              "protection_boundary_decisive": true,
-              "rationale": "Eine mögliche spätere Kontrolle ist ein Korrekturmechanismus, aber kein gleichrangiger positiver Wirkungspfad. Die Schutzgrenze unabhängiger Kontrolle bleibt maßgeblich."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 4,
-              "directionLabel": "− Risiko",
-              "shortPathLabel": "Wiederholte Einsätze könnten die Kontrolle militärischer Gewalt schwächen",
-              "direction": "negative"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 4,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Wiederholte Einsätze könnten die Kontrolle militärischer Gewalt schwächen",
-            "display_direction": "negative",
-            "label": "− Risiko",
-            "magnitude_label": "hoch",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "− Risiko"
-          }
-        },
-        "observed_effects": [
-          {
-            "dimension": "human",
-            "change": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-            "direction": "negative",
-            "source_ids": [
-              "dlf-nachrichten"
-            ],
-            "data_status": "secondary_source",
-            "evidence": "medium",
-            "attribution": "open",
-            "reference_frame": "Schutz des menschlichen Lebens",
-            "reference_space": "Schiff und betroffene Menschen in der Karibik",
-            "observed_at": "20.09.2026",
-            "temporal_status": "ex_post",
-            "mechanism": "Tödlicher Angriff des US-Militärs auf ein Schiff",
-            "recipients": [
-              "vier getötete Menschen und ihre Angehörigen"
-            ],
-            "time_horizon": "Zeitpunkt des berichteten Angriffs",
-            "magnitude": 4,
-            "magnitude_factors": {
-              "reach": {
-                "value": 1,
-                "rationale": "Der konkret berichtete Schaden betrifft vier Menschen.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "intensity": {
-                "value": 5,
-                "rationale": "Der Tod von Menschen ist eine maximale unmittelbare Schadensintensität.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "duration": {
-                "value": 5,
-                "rationale": "Der Verlust des Lebens ist für die Betroffenen dauerhaft.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "irreversibility": {
-                "value": 5,
-                "rationale": "Der berichtete Tod ist nicht rückgängig zu machen.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "vulnerability": {
-                "value": 4,
-                "rationale": "Menschen auf einem angegriffenen Schiff waren militärischer Gewalt besonders ausgesetzt.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "system_depth": {
-                "value": 2,
-                "rationale": "Für den konkreten Schaden ist ein unmittelbarer menschlicher Effekt belegt, aber keine weitergehende Systemwirkung.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              }
-            },
-            "protection_boundary": {
-              "decisive": true,
-              "rationale": "Der Tod von Menschen berührt unmittelbar die Schutzgrenze des menschlichen Lebens.",
-              "reference_frame": "Schutz des menschlichen Lebens",
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "status": "observed"
-            },
-            "same_target": true,
-            "same_baseline": true,
-            "magnitude_calculation": {
-              "method_version": "2.1",
-              "sum": 22,
-              "divisor": 6,
-              "raw": 3.6666666666666665,
-              "rounded": 4,
-              "protection_floor": 4,
-              "final": 4
-            }
-          }
-        ],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-20T02:40:38.813Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "dlf-nachrichten",
-            "functions": [
-              "event",
-              "counter_evidence"
-            ],
-            "supported_claim": "Die Quelle berichtet über den Angriff, vier Tote, die militärische Begründung, fehlende eindeutige Regierungsbelege und eine AFP-Zählung."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Hohe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 4,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt vier Tote beim konkreten Angriff, aber keine belastbare Prognose für weitere Opfer. Der bedingte Pfad beruht auf der möglichen Fortsetzung ähnlicher Einsätze.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Der direkte menschliche Schaden ist durch den berichteten Tod von vier Menschen belegt. Für weitere Einsätze ist der negative Pfad plausibel, aber wegen der ungeklärten Drogenbegründung und fehlender unabhängiger Angaben nur mit niedriger Evidenz modellierbar.",
-          "primary_paths": [
-            {
-              "label": "Weitere tödliche Einsätze gegen mutmaßliche Schmuggler könnten Menschen in der Karibik gefährden",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Die Einstufung eines Schiffs als Drogenboot kann militärische Gewalt statt überprüfbarer Strafverfolgung auslösen; bei Wiederholung könnten weitere Menschen getötet oder gefährdet werden.",
-              "recipients": [
-                "Besatzungen angegriffener Schiffe",
-                "Menschen in betroffenen Seegebieten"
-              ],
-              "magnitude": 4,
-              "magnitude_range": {
-                "lower": 2,
-                "upper": 4,
-                "rationale": "Der konkrete Tod von vier Menschen zeigt hohe Intensität, während Reichweite und Dauer weiterer Einsätze nicht belegt sind."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Weitere Einsätze könnten mehrere Besatzungen in den betroffenen Seegebieten erreichen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 3,
-                  "rationale": "Ein militärischer Angriff mit tödlichem Ausgang weist auf hohe mögliche Eingriffsintensität hin.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die Quelle berichtet von wiederholten Einsätzen seit rund einem Jahr, belegt aber keine weitere Dauer.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 3,
-                  "rationale": "Tötungen wären für die Betroffenen unumkehrbar, auch wenn die Zahl weiterer Fälle offen bleibt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Besatzungen auf angegriffenen Booten hätten gegenüber militärischen Kräften eine besonders verletzliche Position.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Pfad kann die Grenze zwischen Strafverfolgung und militärischer Gewalt verschieben.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Der Schutz des Lebens ist bei tödlicher militärischer Gewalt eine maßgebliche Schutzgrenze.",
-                "reference_frame": "Schutz des menschlichen Lebens",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Der Pfad setzt voraus, dass ähnliche Einsätze fortgesetzt und Schiffe ohne unabhängige Prüfung als legitime militärische Ziele behandelt werden.",
-              "reference_space": "Karibik und dort eingesetzte Schiffsbesatzungen",
-              "time_horizon": "Bei weiteren Einsätzen nach dem berichteten Angriff",
-              "path_quality": [
-                "direct",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Militärische Zuschreibung beeinflusst die Einsatzentscheidung und es greifen keine ausreichenden unabhängigen Schutz- und Kontrollmechanismen.",
-              "source_support": "Die Quelle belegt einen tödlichen Angriff, wiederholte Einsätze und die umstrittene Begründung, nicht aber den weiteren Eintritt des Pfads.",
-              "limitations": "Keine unabhängigen Angaben zu Ort, Ablauf, rechtlicher Grundlage oder Zahl der künftig Betroffenen.",
-              "first_order": "Weitere Einsätze könnten Menschen auf verdächtigten Schiffen töten oder verletzen.",
-              "second_order": "Die Unsicherheit der Begründung könnte Schutz und Zugang zu rechtsstaatlicher Prüfung für Betroffene erschweren.",
-              "third_order": "Eine wiederholte militärische Praxis könnte tödliche Gewalt als reguläres Mittel der Drogenbekämpfung verankern.",
-              "research_pass": "second_pass",
-              "research_result": "Keine unabhängige Quelle im Bestand bestätigt den weiteren Opferpfad oder die Einsatzregeln.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 18,
-                "divisor": 6,
-                "raw": 3,
-                "rounded": 3,
-                "protection_floor": 4,
-                "final": 4
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": true,
-            "rationale": "Es gibt keinen belegten vergleichbaren positiven Hauptpfad. Der mögliche Nutzen der Drogenbekämpfung kann den Schutz des Lebens nicht als gleichrangige Kompensation ersetzen."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 4,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Weitere tödliche Einsätze gegen mutmaßliche Schmuggler könnten Menschen in der Karibik gefährden",
-            "direction": "negative"
-          },
-          "observations": [
-            {
-              "dimension": "human",
-              "change": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-              "direction": "negative",
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "data_status": "secondary_source",
-              "evidence": "medium",
-              "attribution": "open",
-              "reference_frame": "Schutz des menschlichen Lebens",
-              "reference_space": "Schiff und betroffene Menschen in der Karibik",
-              "observed_at": "20.09.2026",
-              "temporal_status": "ex_post",
-              "mechanism": "Tödlicher Angriff des US-Militärs auf ein Schiff",
-              "recipients": [
-                "vier getötete Menschen und ihre Angehörigen"
-              ],
-              "time_horizon": "Zeitpunkt des berichteten Angriffs",
-              "magnitude": 4,
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Der konkret berichtete Schaden betrifft vier Menschen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 5,
-                  "rationale": "Der Tod von Menschen ist eine maximale unmittelbare Schadensintensität.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 5,
-                  "rationale": "Der Verlust des Lebens ist für die Betroffenen dauerhaft.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 5,
-                  "rationale": "Der berichtete Tod ist nicht rückgängig zu machen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 4,
-                  "rationale": "Menschen auf einem angegriffenen Schiff waren militärischer Gewalt besonders ausgesetzt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Für den konkreten Schaden ist ein unmittelbarer menschlicher Effekt belegt, aber keine weitergehende Systemwirkung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Der Tod von Menschen berührt unmittelbar die Schutzgrenze des menschlichen Lebens.",
-                "reference_frame": "Schutz des menschlichen Lebens",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "observed"
-              },
-              "same_target": true,
-              "same_baseline": true,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 22,
-                "divisor": 6,
-                "raw": 3.6666666666666665,
-                "rounded": 4,
-                "protection_floor": 4,
-                "final": 4
-              },
-              "presentation": {
-                "ringStatus": "observed",
-                "ringLabel": "Beobachtete Wirkung",
-                "magnitudeBars": 4,
-                "directionLabel": "− beobachtet",
-                "shortPathLabel": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-                "direction": "negative"
-              }
-            }
-          ],
-          "displayed_observation": {
-            "dimension": "human",
-            "change": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-            "direction": "negative",
-            "source_ids": [
-              "dlf-nachrichten"
-            ],
-            "data_status": "secondary_source",
-            "evidence": "medium",
-            "attribution": "open",
-            "reference_frame": "Schutz des menschlichen Lebens",
-            "reference_space": "Schiff und betroffene Menschen in der Karibik",
-            "observed_at": "20.09.2026",
-            "temporal_status": "ex_post",
-            "mechanism": "Tödlicher Angriff des US-Militärs auf ein Schiff",
-            "recipients": [
-              "vier getötete Menschen und ihre Angehörigen"
-            ],
-            "time_horizon": "Zeitpunkt des berichteten Angriffs",
-            "magnitude": 4,
-            "magnitude_factors": {
-              "reach": {
-                "value": 1,
-                "rationale": "Der konkret berichtete Schaden betrifft vier Menschen.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "intensity": {
-                "value": 5,
-                "rationale": "Der Tod von Menschen ist eine maximale unmittelbare Schadensintensität.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "duration": {
-                "value": 5,
-                "rationale": "Der Verlust des Lebens ist für die Betroffenen dauerhaft.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "irreversibility": {
-                "value": 5,
-                "rationale": "Der berichtete Tod ist nicht rückgängig zu machen.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "vulnerability": {
-                "value": 4,
-                "rationale": "Menschen auf einem angegriffenen Schiff waren militärischer Gewalt besonders ausgesetzt.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              },
-              "system_depth": {
-                "value": 2,
-                "rationale": "Für den konkreten Schaden ist ein unmittelbarer menschlicher Effekt belegt, aber keine weitergehende Systemwirkung.",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ]
-              }
-            },
-            "protection_boundary": {
-              "decisive": true,
-              "rationale": "Der Tod von Menschen berührt unmittelbar die Schutzgrenze des menschlichen Lebens.",
-              "reference_frame": "Schutz des menschlichen Lebens",
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "status": "observed"
-            },
-            "same_target": true,
-            "same_baseline": true,
-            "magnitude_calculation": {
-              "method_version": "2.1",
-              "sum": 22,
-              "divisor": 6,
-              "raw": 3.6666666666666665,
-              "rounded": 4,
-              "protection_floor": 4,
-              "final": 4
-            },
-            "presentation": {
-              "ringStatus": "observed",
-              "ringLabel": "Beobachtete Wirkung",
-              "magnitudeBars": 4,
-              "directionLabel": "− beobachtet",
-              "shortPathLabel": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-              "direction": "negative"
-            }
-          },
-          "ringStatus": "observed",
-          "ringLabel": "Beobachtete Wirkung",
-          "magnitudeBars": 4,
-          "directionLabel": "− beobachtet",
-          "shortPathLabel": "Bei dem Angriff auf ein Schiff in der Karibik wurden laut Deutschlandfunk vier Menschen getötet.",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "hoch",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "open",
-          "dominance": "none",
-          "magnitude": 2,
-          "evidence": "not_assessable",
-          "likelihood": "low",
-          "data_status": "estimated",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die gelieferte Quelle enthält keine Messwerte oder konkreten Angaben zu Treibstoff, Schadstoffen, Wracks oder maritimen Ökosystemen. Ein ökologischer Wirkpfad ist deshalb nur als schwache Möglichkeit modellierbar.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Ein maritimer Militäreinsatz kann grundsätzlich materielle oder betriebliche Umweltfolgen haben, doch der Quellenbestand belegt für diesen Angriff keine solche Zustandsänderung. Die Richtung bleibt offen.",
-          "primary_paths": [
-            {
-              "label": "Maritime Militäreinsätze könnten lokale Belastungen eines Seegebiets auslösen",
-              "direction": "open",
-              "type": "main_path",
-              "mechanism": "Ein Angriff auf ein Schiff könnte bei Schäden, Treibstoffaustritt oder Bergungsbedarf marine Belastungen erzeugen; solche Mechanismen sind für diesen Fall nicht belegt.",
-              "recipients": [
-                "maritime Ökosysteme",
-                "Menschen und Tätigkeiten im betroffenen Seegebiet"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 3,
-                "rationale": "Ohne Angaben zu Schiffsschäden oder Stoffaustritt reicht die plausible Bandbreite von vernachlässigbar bis lokal relevant."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 1,
-                  "rationale": "Eine mögliche Belastung wäre nach dem Quellenstand räumlich auf das Seegebiet begrenzt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die Quelle belegt keine konkrete Umweltbelastung oder Stofffreisetzung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Ein möglicher Austritt könnte länger anhalten, ist aber nicht nachgewiesen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Lokale maritime Schäden könnten teilweise fortwirken, ihr Eintritt bleibt ungeklärt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Betroffene Ökosysteme sind nicht benannt und ihre konkrete Verwundbarkeit ist unbekannt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der mögliche Pfad bleibt auf einzelne maritime Einsätze begrenzt und ist nicht systemisch belegt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Die Quelle belegt keine konkrete ökologische Grenzverletzung oder Schutzgutbeeinträchtigung.",
-                "reference_frame": "Schutz maritimer Ökosysteme",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "low",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Der Pfad setzt voraus, dass der Angriff das Schiff beschädigt oder Stoffe freisetzt und keine rasche Begrenzung erfolgt.",
-              "reference_space": "betroffenes Seegebiet in der Karibik",
-              "time_horizon": "Während und nach dem Angriff, falls eine maritime Belastung eingetreten ist",
-              "path_quality": [
-                "indirect",
-                "weak",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Es wird lediglich ein allgemeiner maritimer Schadensmechanismus geprüft, nicht dessen Eintritt behauptet.",
-              "source_support": "Die Quelle belegt den Angriff auf ein Schiff, aber keine Schäden, Leckagen oder ökologischen Messwerte.",
-              "limitations": "Keine Angaben zu Schiffstyp, Schäden, Wetter, Stoffen, Ort oder betroffenen Ökosystemen.",
-              "first_order": "Ein beschädigtes Schiff könnte lokal maritime Belastungen verursachen.",
-              "second_order": "Eine solche Belastung könnte Tätigkeiten und Lebensräume im Seegebiet beeinträchtigen.",
-              "third_order": "Bei wiederholten, nicht kontrollierten Einsätzen könnte sich eine kumulative Belastung ergeben; dafür fehlt jeder konkrete Beleg.",
-              "research_pass": "second_pass",
-              "research_result": "Der Quellenbestand enthält keine Umweltmessung und keine unabhängige Darstellung ökologischer Folgen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 9,
-                "divisor": 6,
-                "raw": 1.5,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": false,
-            "rationale": "Es ist weder ein positiver noch ein negativer ökologischer Effekt konkret belegt; deshalb bleibt die Richtung offen statt künstlich ausgeglichen zu werden."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Maritime Militäreinsätze könnten lokale Belastungen eines Seegebiets auslösen",
-            "direction": "open"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "? Richtung offen",
-          "shortPathLabel": "Maritime Militäreinsätze könnten lokale Belastungen eines Seegebiets auslösen",
-          "display_direction": "open",
-          "label": "? Richtung offen",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "gering",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "? Richtung offen"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "negative",
-          "dominance": "dominant_negative",
-          "magnitude": 4,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt widersprüchliche Angaben zur Begründung des Angriffs, aber keine konkrete Reaktion von Parlamenten, Gerichten oder Öffentlichkeit. Der demokratische Pfad ist daher bedingt und mit hoher Unsicherheit versehen.",
-          "reviewed_source_ids": [
-            "dlf-nachrichten"
-          ],
-          "rationale": "Wenn militärische Gewalt gegen mutmaßliche Schmuggler wiederholt ohne unabhängig überprüfbare Belege eingesetzt wird, könnte die demokratische und rechtliche Kontrolle staatlicher Gewalt geschwächt werden. Gegenläufig könnte eine öffentliche Kontroverse Kontrolle auslösen; dafür gibt es im Quellenbestand kein konkretes Signal.",
-          "primary_paths": [
-            {
-              "label": "Wiederholte Einsätze könnten die Kontrolle militärischer Gewalt schwächen",
-              "direction": "negative",
-              "type": "main_path",
-              "mechanism": "Eine staatliche Behauptung über Drogenhandel steht einer berichteten fehlenden eindeutigen Beleglage gegenüber; bei Fortsetzung könnte die Exekutive faktisch über tödliche Gewalt entscheiden, ohne ausreichende unabhängige Prüfung.",
-              "recipients": [
-                "Parlamente und Gerichte",
-                "Öffentlichkeit",
-                "Betroffene von Militäreinsätzen"
-              ],
-              "magnitude": 4,
-              "magnitude_range": {
-                "lower": 2,
-                "upper": 4,
-                "rationale": "Der mögliche institutionelle Effekt reicht von begrenzter Kontroverse bis zu einer dauerhaften Verschiebung von Kontrollstandards; konkrete Reaktionen sind nicht belegt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Die Praxis könnte mehrere staatliche Stellen und die Öffentlichkeit in den betroffenen Staaten erreichen.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "intensity": {
-                  "value": 3,
-                  "rationale": "Es geht um die Kontrolle tödlicher staatlicher Gewalt und nicht nur um eine kommunikative Auseinandersetzung.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "duration": {
-                  "value": 3,
-                  "rationale": "Die Quelle berichtet von wiederholten Einsätzen seit rund einem Jahr, was eine dauerhafte Routine ermöglichen könnte.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 3,
-                  "rationale": "Verfestigte Einsatz- und Beweisstandards könnten politisch schwer rückgängig zu machen sein.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Betroffene ohne Zugang zu unabhängiger Prüfung könnten besonders schwach geschützt sein, konkrete Gruppen sind aber nicht benannt.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                },
-                "system_depth": {
-                  "value": 4,
-                  "rationale": "Der Pfad betrifft die institutionelle Grenze zwischen militärischem Handeln, Strafverfolgung und demokratischer Kontrolle.",
-                  "source_ids": [
-                    "dlf-nachrichten"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": true,
-                "rationale": "Unabhängige Kontrolle tödlicher staatlicher Gewalt ist eine zentrale demokratische und rechtsstaatliche Schutzgrenze.",
-                "reference_frame": "demokratische und rechtsstaatliche Kontrolle staatlicher Gewalt",
-                "source_ids": [
-                  "dlf-nachrichten"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "dlf-nachrichten"
-              ],
-              "condition": "Der Pfad setzt voraus, dass Einsätze fortgesetzt werden, unabhängige Belege fehlen und wirksame parlamentarische oder gerichtliche Kontrolle nicht greift.",
-              "reference_space": "US-amerikanische Entscheidungs- und Kontrollstrukturen mit Auswirkungen auf die Karibik",
-              "time_horizon": "Bei wiederholten Einsätzen über den konkreten Angriff hinaus",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Die berichtete Beleglücke beeinflusst die Möglichkeit wirksamer Kontrolle; Gegenmaßnahmen könnten den Pfad begrenzen.",
-              "source_support": "Die Quelle belegt die widersprüchliche Begründung und wiederholte Einsätze, nicht aber eine bereits eingetretene Schwächung demokratischer Institutionen.",
-              "limitations": "Keine Angaben zu Gerichten, Parlamenten, Einsatzregeln, Ermittlungen oder konkreten Kontrollentscheidungen.",
-              "first_order": "Der Angriff könnte eine politische und rechtliche Kontroverse über Beweise und Zuständigkeit auslösen.",
-              "second_order": "Wiederholte Entscheidungen ohne unabhängige Prüfung könnten Verantwortlichkeit und Kontrollstandards schwächen.",
-              "third_order": "Eine verfestigte Praxis könnte die demokratische Korrekturfähigkeit bei grenzüberschreitender Gewalt beeinträchtigen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine Quelle im Bestand belegt eine konkrete institutionelle Reaktion oder eine bereits eingetretene demokratische Wirkung.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 18,
-                "divisor": 6,
-                "raw": 3,
-                "rounded": 3,
-                "protection_floor": 4,
-                "final": 4
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": false,
-            "protection_boundary_decisive": true,
-            "rationale": "Eine mögliche spätere Kontrolle ist ein Korrekturmechanismus, aber kein gleichrangiger positiver Wirkungspfad. Die Schutzgrenze unabhängiger Kontrolle bleibt maßgeblich."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 4,
-            "directionLabel": "− Risiko",
-            "shortPathLabel": "Wiederholte Einsätze könnten die Kontrolle militärischer Gewalt schwächen",
-            "direction": "negative"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 4,
-          "directionLabel": "− Risiko",
-          "shortPathLabel": "Wiederholte Einsätze könnten die Kontrolle militärischer Gewalt schwächen",
-          "display_direction": "negative",
-          "label": "− Risiko",
-          "magnitude_label": "hoch",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "− Risiko"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-20T02:38:41.018Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-20T02:23:33.000Z",
-      "last_updated": "2026-09-20T02:40:38.809Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-06b004ee1444df9cadd9",
-      "case_file": {
-        "case_id": "case-42fb0e922651d5",
-        "member_count": 3,
-        "publisher_count": 1,
-        "members": [
-          {
-            "story_id": "wt-e9d2c1f4810a1485",
-            "slug": "us-armee-vier-tote-bei-angriff-auf-mutmassliches-drogenboot-in-der-karibik-0a1485",
-            "title": "Laut Deutschlandfunk: US-Armee tötet vier Menschen bei Angriff auf mutmaßliches Drogenboot",
-            "summary": "Bei einem US-Militäreinsatz in der Karibik wurden laut Deutschlandfunk vier Menschen getötet. Offen bleibt, ob die behauptete Verbindung des Schiffs zum Drogenhandel belegt ist.",
-            "updated_at": "2026-09-20T02:40:38.809Z",
-            "published_at": "2026-09-20T02:40:38.809Z",
-            "kind": "Neues Ereignis",
-            "current": true
-          },
-          {
-            "story_id": "wt-057722ef54ceaa10",
-            "slug": "weisses-haus-usa-weisen-uno-bericht-uber-mogliche-kriegsverbrechen-im-iran-zuruck-ceaa10",
-            "title": "USA weisen laut Deutschlandfunk UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück",
-            "summary": "Die US-Regierung weist laut Deutschlandfunk einen UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück. Eine unabhängige Bestätigung der berichteten Vorwürfe und der Opferangaben liegt im Quellenbestand nicht vor.",
-            "updated_at": "2026-09-18T00:23:55.501Z",
-            "published_at": "2026-09-18T00:23:55.501Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-7c4c284198ca4d1f",
-            "slug": "nahost-proteste-in-syrien-wegen-gestiegener-benzinpreise-ca4d1f",
-            "title": "Deutschlandfunk berichtet über Proteste in Syrien nach höheren Treibstoffpreisen",
-            "summary": "Deutschlandfunk berichtet über Proteste in Syrien nach höheren Treibstoffpreisen. Anhaltende Mehrkosten können Mobilität und Versorgung belasten; ein möglicher Emissionspfad und die politische Teilhabefolge hängen von zusätzlichen Bedingungen ab.",
-            "updated_at": "2026-09-14T18:53:57.716Z",
-            "published_at": "2026-09-14T15:49:21.164Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-20T02:23:33.000Z",
-      "published_at": "2026-09-20T02:40:38.809Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Belege für eine tatsächliche Beteiligung der angegriffenen Schiffe am Drogenhandel sollten anhand von Original- und unabhängigen Quellen geprüft werden.",
-          "source_id": "dlf-nachrichten",
-          "measurable_indicator": "Vorliegen überprüfbarer Belege zur Ladung, Route oder strafrechtlichen Einordnung des angegriffenen Schiffs.",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-bdc8a8b945339b4b",
-          "announced_at": "2026-09-20T02:23:33.000Z",
-          "follow_up_date": "2026-09-27T02:40:38.809Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/vier-tote-bei-angriff-auf-mutmassliches-drogenboot-in-der-karibik-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-20T02:23:33.000Z",
           "primary_source": false
         }
       ]
