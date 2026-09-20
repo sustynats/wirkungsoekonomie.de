@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { gunzipSync } from "node:zlib";
 import { assertChronologicalFeedHtml } from "./feed-order.mjs";
 import { checkManualPages } from "./check-manual-pages.mjs";
 import { editorialLabel } from "./systemic-analysis.mjs";
@@ -10,6 +11,14 @@ import {editorialEvidenceIssues} from './editorial-evidence.mjs';
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories, mergedStoryTargetValid } from "./living-files.mjs";
 import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
+// Die App-Daten liegen gepackt (app-pages.mjs).
+const readAppData = (relative) => {
+  const gepackt = path.join(ROOT, `${relative}.gz`);
+  // Uebergang: bis der erste Lauf nach der Umstellung die Daten neu schreibt,
+  // liegt im Arbeitsverzeichnis noch die ungepackte Fassung.
+  if (fs.existsSync(gepackt)) return JSON.parse(gunzipSync(fs.readFileSync(gepackt)).toString("utf8"));
+  return JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
+};
 import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 import { persistedImpactAssessmentErrors } from "./migrate-impact-assessments.mjs";
 
@@ -70,7 +79,7 @@ for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkung
 const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
 const appNews = fs.readFileSync(path.join(ROOT, "wirkungsticker/news/index.html"), "utf8");
 const appMore = fs.readFileSync(path.join(ROOT, "wirkungsticker/mehr/index.html"), "utf8");
-const appManifest = JSON.parse(fs.readFileSync(path.join(ROOT,"wirkungsticker/data/app/manifest.json")));
+const appManifest = readAppData("wirkungsticker/data/app/manifest.json");
 assertChronologicalFeedHtml(appNews);
 if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("/wirkungsticker/methodik/")) fail("NEWS_INDEX_INVALID");
 if (!appNews.includes('data-ticker-app="news"') || !appNews.includes("data-app-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !appNews.includes("Fakten- &amp; Folgencheck öffnen") || !appNews.includes("WÖk-Einordnung aktualisiert") || !appMore.includes("Push-Benachrichtigungen") || !appNews.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
@@ -82,7 +91,7 @@ let allAppCards='';
 for (const mode of ['news','analysen']) {
   let combined='';let count=0;const seen=new Set();const feed=appManifest.feeds[mode+'-alle'];
   for(let page=0;page<feed.pages;page++){
-    const packet=JSON.parse(fs.readFileSync(path.join(ROOT,`wirkungsticker/data/app/feeds/${mode}-alle-${page}.json`)));
+    const packet=readAppData(`wirkungsticker/data/app/feeds/${mode}-alle-${page}.json`);
     if(packet.revision!==appManifest.revision||packet.items.length>20)fail('NEWS_APP_PAGINATION_INVALID');
     for(const item of packet.items){if(seen.has(item.id)||(item.type==='news')!==(mode==='news'))fail('NEWS_APP_CONTENT_MODE_INVALID');seen.add(item.id);combined+=item.html;count++;}
   }
