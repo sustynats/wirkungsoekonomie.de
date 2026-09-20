@@ -207,3 +207,23 @@ test('der Ticker-Lauf schreibt die Lage und baut sie vor dem Commit', async () =
   assert.match(commitBlock, /git add -- data\/news[^\n]*wirkungsticker/,
     'data/news und wirkungsticker sind im Commit');
 });
+
+// Am 20.09.2026 fehlte die Morgenlage im Netz: geschrieben, committet - aber
+// die Auslieferung haengt am Schritt „Publish the committed ticker
+// automatically", und der lief nur, wenn der Lauf eine MELDUNG veroeffentlicht
+// hatte. Eine Lage ohne neue Meldung blieb damit unsichtbar.
+test('eine Lage ohne neue Meldung wird ausgeliefert', async () => {
+  const fs = await import('node:fs');
+  const yaml = fs.readFileSync(new URL('../../.github/workflows/wirkungsticker.yml', import.meta.url), 'utf8');
+  const commit = yaml.slice(yaml.indexOf('name: Commit one atomic update'), yaml.indexOf('name: Acknowledge approved editions'));
+  assert.match(commit, /git diff --cached --name-only \| grep -qE '\^\(news\/\|wirkungsticker\/\)'/,
+    'der Commit-Schritt meldet, ob sich ausgelieferte Seiten geändert haben');
+  assert.match(commit, /PUBLIC_FILES=true/, 'gemessen wird vor dem Commit');
+  assert.match(commit, /echo "public_files=\$PUBLIC_FILES" >> "\$GITHUB_OUTPUT"/, 'gemeldet erst nach der erfolgreichen Veröffentlichung');
+  const publish = yaml.slice(yaml.indexOf('name: Publish the committed ticker automatically'));
+  const bedingung = publish.slice(0, publish.indexOf('\n        env:'));
+  assert.match(bedingung, /steps\.commit\.outputs\.public_files == 'true'/,
+    'geänderte Seiten lösen die Auslieferung aus, auch ohne neue Meldung');
+  // Die Lage selbst steht in wirkungsticker/lage/… und faellt damit unter das Muster.
+  assert.match(lageId({ slot: 'morgenlage', date: '2026-09-20' }) || '2026-09-20-morgenlage', /morgenlage/);
+});
