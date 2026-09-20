@@ -2,6 +2,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { themenVon } from './themen.mjs';
 import {createHash} from 'node:crypto';
+import {gzipSync} from 'node:zlib';
 import {escape as esc} from './editorial-markdown.mjs';
 import {mixedFeedItems,feedDate} from './feed-order.mjs';
 import {searchWords,searchBucket,wordVariants,indexPrefixes} from '../../assets/js/ticker-search.js';
@@ -10,6 +11,20 @@ export {searchWords,searchBucket};
 export const APP_TYPES = {news:'News',analysis:'Meinung & Analyse',book:'Bücher',listened:'Nachgehört',watched:'Nachgesehen'};
 export const APP_TOPICS = {alle:'Alle',politik:'Politik',wirtschaft:'Wirtschaft',gesellschaft:'Gesellschaft',technik:'Technik',klima:'Umwelt & Klima',gesundheit:'Gesundheit',wissenschaft:'Wissenschaft',international:'International'};
 export const PAGE_SIZE=20;
+
+// Die Daten der App liegen gepackt auf der Seite. Sie sind reiner Text und
+// schrumpfen dabei auf ein Sechstel; GitHub Pages liefert hoechstens 1 GB aus,
+// und der Ticker war der groesste Zuwachs. Der Browser entpackt selbst
+// (DecompressionStream), wie die Suche es schon tut. Der Zeitstempel bleibt
+// leer, damit zwei gleiche Staende auch gleiche Dateien ergeben.
+export const DATEN_ENDUNG='.json.gz';
+export function schreibeDaten(datei,wert){
+ const inhalt=gzipSync(Buffer.from(JSON.stringify(wert)),{level:9,mtime:0});
+ fs.mkdirSync(path.dirname(datei),{recursive:true});
+ const vorlaeufig=`${datei}.tmp-${process.pid}`;
+ try{fs.writeFileSync(vorlaeufig,inhalt);fs.renameSync(vorlaeufig,datei);}
+ finally{fs.rmSync(vorlaeufig,{force:true});}
+}
 const base='/wirkungsticker/';
 export function contentType(item){return item.type==='story'?'news':item.value.format==='book_and_impact'||item.value.subtype==='book_review'?'book':['listened','watched'].includes(item.value.subtype)?item.value.subtype:'analysis';}
 // Ressorts kommen aus dem gemeinsamen Verzeichnis: Etiketten UND Titel/Anriss
@@ -63,19 +78,19 @@ export function buildAppPages({root,stories,analyses,storiesById,storyCard,edito
  fs.rmSync(api,{recursive:true,force:true});
  const buckets=Array.from({length:128},()=>({}));
  for(const r of records){
-  const {search,...publicRecord}=r;write(path.join(api,'items',r.id+'.json'),JSON.stringify(publicRecord));
+  const {search,...publicRecord}=r;schreibeDaten(path.join(api,'items',r.id+DATEN_ENDUNG),publicRecord);
   for(const w of new Set(searchWords(search).flatMap(wordVariants))){for(const p of indexPrefixes(w)){const bucket=buckets[Number(searchBucket(p))];bucket[p]??=[];if(!bucket[p].includes(r.id))bucket[p].push(r.id);}}
  }
- buckets.forEach((bucket,i)=>write(path.join(api,'search',i+'.json'),JSON.stringify(bucket)));
+ buckets.forEach((bucket,i)=>schreibeDaten(path.join(api,'search',i+DATEN_ENDUNG),bucket));
  const feeds={};
  for(const mode of ['news','analysen'])for(const key of mode==='news'?Object.keys(APP_TOPICS):['alle',...Object.keys(APP_TYPES).filter(k=>k!=='news')]){
   const selected=records.filter(r=>(mode==='news'?r.type==='news':r.type!=='news')&&(key==='alle'||(mode==='news'?r.topics.includes(key):r.type===key)));
   const prefix=mode+'-'+key;feeds[prefix]={count:selected.length,pages:Math.ceil(selected.length/PAGE_SIZE)};
-  for(let i=0;i<selected.length;i+=PAGE_SIZE)write(path.join(api,'feeds',prefix+'-'+i/PAGE_SIZE+'.json'),JSON.stringify({revision,items:selected.slice(i,i+PAGE_SIZE).map(({search,...r})=>r)}));
+  for(let i=0;i<selected.length;i+=PAGE_SIZE)schreibeDaten(path.join(api,'feeds',prefix+'-'+i/PAGE_SIZE+DATEN_ENDUNG),{revision,items:selected.slice(i,i+PAGE_SIZE).map(({search,...r})=>r)});
  }
- write(path.join(api,'manifest.json'),JSON.stringify({revision,page_size:PAGE_SIZE,feeds,lookup:Object.fromEntries(records.map(r=>[r.url,{id:r.id,type:r.type,date:r.date,title:r.title,topics:r.topics}]))}));
+ schreibeDaten(path.join(api,'manifest'+DATEN_ENDUNG),{revision,page_size:PAGE_SIZE,feeds,lookup:Object.fromEntries(records.map(r=>[r.url,{id:r.id,type:r.type,date:r.date,title:r.title,topics:r.topics}]))});
  const routes=[];
- function page(slug,title,description,body,{noindex=false,mode=''}={}){const route=base+slug;write(path.join(root,route,'index.html'),pageShell({title,description,canonical:'https://wirkungsoekonomie.de'+route,base:slug?'../../':'../',body:`<main id="main-content" data-no-glossary data-search-content data-news-reader="list" class="ticker-app-main"${mode?` data-ticker-app="${mode}" data-app-revision="${revision}"`:''}>${body}</main>`,publicUpdatedAt:updatedAt,robots:noindex?'noindex,follow':'',extraScript:'<script type="module" src="/assets/js/news-app.js?v=20260914-refresh"></script>',jsonLd:{'@context':'https://schema.org','@type':'CollectionPage',name:title,url:'https://wirkungsoekonomie.de'+route}}));if(!noindex)routes.push(route.slice(1));}
+ function page(slug,title,description,body,{noindex=false,mode=''}={}){const route=base+slug;write(path.join(root,route,'index.html'),pageShell({title,description,canonical:'https://wirkungsoekonomie.de'+route,base:slug?'../../':'../',body:`<main id="main-content" data-no-glossary data-search-content data-news-reader="list" class="ticker-app-main"${mode?` data-ticker-app="${mode}" data-app-revision="${revision}"`:''}>${body}</main>`,publicUpdatedAt:updatedAt,robots:noindex?'noindex,follow':'',extraScript:'<script type="module" src="/assets/js/news-app.js?v=20260920-gepackt"></script>',jsonLd:{'@context':'https://schema.org','@type':'CollectionPage',name:title,url:'https://wirkungsoekonomie.de'+route}}));if(!noindex)routes.push(route.slice(1));}
  const cardList=(list)=>list.map(r=>r.html).join('\n');
  // Die Lagen des jUengsten Tages als klare Einstiege: Kopfzeile, Satz, Zahl.
  // Die Karten selbst bleiben auf der Lage-Seite - die Startseite soll ordnen,

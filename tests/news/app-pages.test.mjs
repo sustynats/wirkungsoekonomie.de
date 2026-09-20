@@ -1,11 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {gunzipSync} from 'node:zlib';
 import {contentType,contentTopics,searchWords,searchBucket,appNavigation,PAGE_SIZE} from '../../scripts/news/app-pages.mjs';
 import {showIdentity,renderShowIdentity} from '../../scripts/news/show-identity.mjs';
 const root=new URL('../../',import.meta.url);
 const read=p=>fs.readFileSync(new URL(p,root),'utf8');
-const json=p=>JSON.parse(read(p));
+// Die App-Daten liegen gepackt (app-pages.mjs). Bis der erste Lauf nach der
+// Umstellung sie neu geschrieben hat, liegt noch die ungepackte Fassung da.
+const json=p=>{const gz=new URL(`${p}.gz`,root);
+ return JSON.parse(fs.existsSync(gz)?gunzipSync(fs.readFileSync(gz)).toString('utf8'):read(p));};
 
 test('public modes retain author content types without changing legacy identities',()=>{
  assert.equal(contentType({type:'story',value:{}}),'news');
