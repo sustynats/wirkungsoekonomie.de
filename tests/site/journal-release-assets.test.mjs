@@ -77,3 +77,19 @@ test('das Arbeitsverzeichnis ist geschlossen: Liste gepflegt, Ausnahme entfallen
   const paket = JSON.parse(fs.readFileSync(path.join(repo, 'package.json'), 'utf8'));
   assert.match(paket.scripts.postbuild, /sync-journal-release-assets\.mjs --check/);
 });
+
+// Am 20.09.2026 brach die erste Auslieferung nach der Umstellung ab: die
+// Funktion fragte die Dateiliste des Releases je Datei erneut ab, bei 159
+// Dateien kam eine Antwort leer zurueck, und der Lauf wollte eine vorhandene
+// Datei neu hochladen. Seitdem: Liste einmal je Release, und "existiert
+// bereits" ist kein Abbruch, sondern eine Pruefung auf Byte-Gleichheit.
+test('die Auslieferung fragt die Release-Liste einmal je Release und stolpert nicht ueber vorhandene Dateien', () => {
+  const workflow = fs.readFileSync(path.join(repo, '.github/workflows/deploy.yml'), 'utf8');
+  const schritt = workflow.slice(workflow.indexOf("release_tag='woek-public-assets-v2'"), workflow.indexOf('\n  deploy:'));
+  assert.equal((schritt.match(/gh release view "\$release_tag" --json assets/g) || []).length, 1,
+    'die Liste wird an genau einer Stelle gelesen');
+  assert.equal((schritt.match(/^\s*lies_asset_liste$/gm) || []).length, 2, 'einmal je Release');
+  assert.match(schritt, /grep -q 'already exists'[\s\S]{0,400}verify_immutable_asset/);
+  assert.match(schritt, /cmp --silent "\$source_path"/, 'Byte-Gleichheit bleibt Pflicht');
+});
+
