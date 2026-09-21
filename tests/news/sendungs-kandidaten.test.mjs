@@ -550,3 +550,21 @@ test('ein Jahr oder ein Füllwort macht aus einer neuen Folge keine Dublette', a
   // Und derselbe Sendetag ebenfalls.
   assert.ok(duplicateRequestFor(neu, { id: 'markus-lanz' }, auftrag('Nachbetrachtung zum Lanz vom 17. September'))?.shared.includes('sendetag'));
 });
+
+// Natalie am 21.09.2026: „Es gibt noch kein Nachgesehen von Miosga gestern."
+// Die Folge vom 20.09. galt als Dublette ihres Auftrags vom 13.09. zur Folge
+// davor - beide ueber Sachsen-Anhalt. Ein Auftrag meint keine Folge, die erst
+// eine Woche nach ihm lief.
+test('ein Auftrag haelt keine Folge zurueck, die erst lange nach ihm gesendet wurde', async () => {
+  const { duplicateRequestFor, AUFTRAG_VORLAUF_MS } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  const miosga = { id: 'caren-miosga' };
+  const auftrag = (brief, created_at) => [{ input: { job_id: 'wt_20260913T212900Z_d560542fb92835b913cd1550', request: { brief } }, created_at }];
+  const alt = auftrag('Miosga bitte nachsehen: Nach der Wahl in Sachsen-Anhalt - wackeln jetzt die Reformen?', '2026-09-13T21:29:00.000Z');
+  const folge = (published_at) => ({ title: 'Nach Sachsen-Anhalt: Wackeln jetzt die Reformen?', published_at });
+  assert.equal(duplicateRequestFor(folge('2026-09-20T19:45:00.000Z'), miosga, alt), null, 'eine Woche spaeter ist eine andere Folge');
+  assert.ok(duplicateRequestFor(folge('2026-09-13T19:45:00.000Z'), miosga, alt), 'die Folge vor dem Auftrag bleibt seine Dublette');
+  assert.ok(duplicateRequestFor(folge('2026-09-14T19:45:00.000Z'), miosga, alt), '"bitte heute Abend" meint die Folge desselben Abends');
+  assert.equal(AUFTRAG_VORLAUF_MS, 24 * 3600 * 1000);
+  // Ohne Zeitstempel bleibt es beim bisherigen Vergleich.
+  assert.ok(duplicateRequestFor(folge('2026-09-20T19:45:00.000Z'), miosga, auftrag('Miosga Sachsen-Anhalt Reformen', undefined)));
+});
