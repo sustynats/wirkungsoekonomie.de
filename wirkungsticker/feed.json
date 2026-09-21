@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-21T02:38:50.032Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-21T03:53:46.005Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -65,6 +65,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-kundigt-treffen-mit-us-prasident-trump-in-new-york-an-eb690b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-kundigt-treffen-mit-us-prasident-trump-in-new-york-an-eb690b/",
+      "title": "Selenskyj kündigt an: Selenskyj kündigt Treffen mit Trump in New York an",
+      "summary": "Selenskyj kündigt für seinen Besuch in New York ein Treffen mit Trump an. Ob es stattfindet oder Verhandlungen voranbringt, ist offen.",
+      "date_published": "2026-09-20T21:30:50.000Z",
+      "date_modified": "2026-09-20T21:30:50.000Z",
+      "_woek_released_at": "2026-09-21T03:57:25.431Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         }
       }
