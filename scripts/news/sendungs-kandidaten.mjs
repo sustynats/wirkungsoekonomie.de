@@ -151,6 +151,8 @@ export function requestNamesDate(text, publishedAt) {
     .some((needle) => compact.includes(needle));
 }
 
+export const AUFTRAG_VORLAUF_MS = 24 * 3600 * 1000;
+
 export function duplicateRequestFor(episode, show, requests = []) {
   const showCompact = compactWords(show?.id);
   // Die Wörter der Sendung tragen kein Thema: sonst wäre jeder Auftrag zu der
@@ -159,7 +161,16 @@ export function duplicateRequestFor(episode, show, requests = []) {
   // Jahres- und Folgenzahlen tragen kein Thema: "Markus Lanz vom 17. September
   // 2026" und ein Auftrag vom 13.09. teilen sonst die "2026" (20.09.2026).
   const title = [...topicWords(episode?.title)].filter((word) => !showCompact.includes(compactWords(word)) && !/^\d+$/.test(word));
+  const aired = Date.parse(episode?.published_at || '');
   for (const job of requests) {
+    // Ein Auftrag kann keine Folge meinen, die erst lange nach ihm gesendet
+    // wurde. Natalies Auftrag vom 13.09. zur Miosga-Folge ueber Sachsen-Anhalt
+    // hielt die Folge vom 20.09. zurueck ("Nach Sachsen-Anhalt: Wackeln jetzt
+    // die Reformen?"), und ebenso "Hart aber fair" - dasselbe Thema, eine
+    // Woche spaeter, eine andere Sendung (21.09.2026). Ein Tag Spielraum
+    // bleibt, damit "bitte heute Abend Lanz" die Folge vom Abend weiter meint.
+    const ordered = Date.parse(job?.created_at || job?.input?.created_at || '');
+    if (Number.isFinite(ordered) && Number.isFinite(aired) && aired - ordered > AUFTRAG_VORLAUF_MS) continue;
     const request = job?.input?.request || job?.request || {};
     const text = [request.brief, request.title, request.topic].filter(Boolean).join(' ');
     if (!text.trim() || !requestNamesShow(text, show)) continue;
