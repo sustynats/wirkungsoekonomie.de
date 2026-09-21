@@ -37,13 +37,17 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   ChatGPT-Erinnerungen. Der Entwurf verwendet mitgelieferte Quellenauszüge.
   Der unabhängige Fachpass verwendet einen bis maximal zwei Web-Suchzugriffe für fehlende Belege; maximal zwei Zusatzquellen werden durch die vorhandene Zugangs-/Zitat-
   Prüfung verifiziert. Fehlende Recherche bleibt HOLD; keine Quellenlektüre erfinden.
-- Modell gpt-5.6-luna, reasoning medium, maximal 48.000 Ausgabetokens und
+- Modell standardmäßig gpt-5.6-luna, reasoning medium, maximal 48.000 Ausgabetokens und
   300.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
   Schreibtools. Entwurf reserviert USD .25, Fachpass mit maximal zwei Suchzugriffen
   USD .50. Das ist eine vorherige Kostenreservierung innerhalb derselben
   Monatsgrenzen, keine Budgeterhöhung. Auch die Suchgebühr (USD .01 je Aufruf)
   wird in beiden Journalen verbucht. Tatsächliche Usage wird auch
   bei unbrauchbarem Ergebnis verbucht; Rohantwort bleibt privat gesichert.
+  Seit 21.09.2026 nutzt nur eine von Natalie manuell beauftragte Ausgabe von
+  Meinung & Analyse `gpt-6-astra`; automatische und andere redaktionelle
+  Formate bleiben auf Luna. Der aktuelle Direktbetrieb und die Kostenlogik sind
+  in `WIRKUNGSTICKER-GPT-6-ASTRA-MIGRATION.md` dokumentiert.
 - Dauerhafte Request-Keys ermöglichen GET-Wiederaufnahme ohne erneute Erstellung.
   Ungewisse Providerantworten sperren auch weitere Keys dieses Jobs. Insgesamt
   höchstens ein bezahlter Modellaufruf je Job. Ein regulärer Artikel hat einen
