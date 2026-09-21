@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { callWoekAi } from '../../scripts/news/lib.mjs';
-import { costFromUsage, failedRequestCost } from '../../scripts/news/budget.mjs';
+import { costFromUsage, failedRequestCost, requestReservationUsd } from '../../scripts/news/budget.mjs';
 import { shouldRetryQualityGate } from '../../scripts/news/run.mjs';
 
 const envelope = { ok: true, model: 'gpt-5.4-mini', usage: { input_tokens: 1000, output_tokens: 500, cached_input_tokens: 200 } };
@@ -79,4 +79,10 @@ test('invalid billing evidence cannot release a reserve or poison the ledger', (
   assert.equal(failedRequestCost({ billingEvidence: { model: 'unpriced', reported_usage: envelope.usage } }).estimated_cost_usd, 0.25);
   assert.equal(failedRequestCost({ requestAttempts: 0 }).estimated_cost_usd, 0);
   assert.equal(failedRequestCost({ requestAttempts: 3 }).estimated_cost_usd, 0.75);
+});
+
+test('Astra usage is billed at its published tariff and unknown Astra attempts keep a larger reserve', () => {
+  assert.equal(requestReservationUsd('gpt-6-astra'), 3);
+  assert.equal(costFromUsage({ model: 'gpt-6-astra', reported_usage: { input_tokens: 20000, output_tokens: 5000, cached_input_tokens: 10000 } }).estimated_cost_usd, 0.36);
+  assert.equal(costFromUsage({ model: 'gpt-6-astra', request_attempts: 2 }).estimated_cost_usd, 6);
 });

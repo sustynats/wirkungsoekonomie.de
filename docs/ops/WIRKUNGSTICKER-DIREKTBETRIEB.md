@@ -113,8 +113,13 @@ Doppelläufe.
 - Betriebsmodell seit 15.09.2026 abends: `gpt-5.6-luna` (Variable `WOEK_NEWS_MODEL`, Entscheidung
   Natalie); September-Freigabe auf 100 EUR angehoben (`NEWS_AI_BUDGET_DIRECT_OPERATION`).
 - Modell über Repository-Variable `WOEK_NEWS_MODEL` (Code-Standard `gpt-5.4-mini`; zugelassen
-  `gpt-5.5`, `gpt-5.6-luna`). Richtwerte je Meldung bei rund 11k Eingabe- und 4k Ausgabe-Token:
+  `gpt-5.5`, `gpt-5.6-luna`, technisch auch `gpt-6-astra`). Richtwerte je Meldung bei rund 11k Eingabe- und 4k Ausgabe-Token:
   `gpt-5.6-luna` ≈ 0,7 Cent, `gpt-5.4-mini` ≈ 2,6 Cent, `gpt-5.5` ≈ 18 Cent.
+- Seit 21.09.2026 ist Astra **nicht** das globale Nachrichtenmodell. Der
+  Redaktionsworker routet ausschließlich manuell beauftragte Ausgaben von
+  `opinion_analysis` über `WOEK_EDITORIAL_ANALYSIS_MODEL=gpt-6-astra`; seine
+  übrigen Formate verwenden `WOEK_EDITORIAL_MODEL=gpt-5.6-luna`. Begründung,
+  Kostenmessung und Rollback: `docs/ops/WIRKUNGSTICKER-GPT-6-ASTRA-MIGRATION.md`.
 
 ## Schlüssel und Variablen
 

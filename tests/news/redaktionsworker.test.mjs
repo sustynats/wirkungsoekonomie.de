@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates } from '../../scripts/news/redaktionsworker.mjs';
+import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates, editorialModel, authorAnalysisModel, modelForEditorialRequest } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 
@@ -50,6 +50,32 @@ test('only queued editorial requests are selected, oldest first, bounded', () =>
   ];
   assert.deepEqual(selectEditorialRequests(rows, { limit: 5 }).map((r) => r.input.job_id), [jobId, rows[0].input.job_id]);
   assert.equal(selectEditorialRequests(rows, { limit: 1 }).length, 1);
+});
+
+test('only manually commissioned opinion and analysis uses Astra', () => {
+  const env = { WOEK_EDITORIAL_MODEL: 'gpt-5.6-luna', WOEK_EDITORIAL_ANALYSIS_MODEL: 'gpt-6-astra' };
+  assert.equal(editorialModel(env), 'gpt-5.6-luna');
+  assert.equal(authorAnalysisModel(env), 'gpt-6-astra');
+  const packet = packetFor(jobId);
+  assert.equal(modelForEditorialRequest({ intake: { draft_id: 'manual-1', kind: 'opinion_analysis' } }, packet, env), 'gpt-6-astra');
+  assert.equal(modelForEditorialRequest({ intake: { kind: 'opinion_analysis' } }, packet, env), 'gpt-5.6-luna', 'automatic analysis proposal stays on Luna');
+  assert.equal(modelForEditorialRequest({ intake: { draft_id: 'manual-2', kind: 'book_review' } }, { request: { kind: 'book_review' } }, env), 'gpt-5.6-luna', 'other manual formats stay on Luna');
+});
+
+test('the selected model is passed to the initial and repair calls', async () => {
+  const manual = queuedJob(); manual.intake.draft_id = 'manual-analysis';
+  const session = fakeSession([manual]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const models = [];
+  const draft = async (request, options) => {
+    models.push(options?.model);
+    return models.length === 1
+      ? { output: { preview: { ...preview(), checks: { source_binding: false } } }, usage: { input_tokens: 10, output_tokens: 10 }, model: options.model, cost: 0.01, answer: '{}' }
+      : { output: { preview: preview() }, usage: { input_tokens: 10, output_tokens: 10 }, model: options.model, cost: 0.01, answer: '{}' };
+  };
+  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
+  assert.equal(result.status, 'output_delivered');
+  assert.deepEqual(models, ['gpt-6-astra', 'gpt-6-astra']);
 });
 
 test('a queued request is claimed, drafted with one call, validated and delivered as a private preview', async () => {

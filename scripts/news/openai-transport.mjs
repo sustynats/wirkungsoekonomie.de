@@ -17,7 +17,11 @@ import { sourceNumberTokens } from './numeric-evidence.mjs';
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
 export const DEFAULT_NEWS_MODEL = 'gpt-5.4-mini';
 export const TRANSPORT_VERSION = 'direct-single-call-1';
-export const SUPPORTED_MODELS = /^gpt-5\.(?:4-mini|5|6-luna)(?:-|$)/;
+// Der Nachrichtenticker und die Redaktionsspur teilen sich diesen Transport.
+// GPT-6 Astra ist seit 21.09.2026 fuer die qualitaetskritische, manuell
+// beauftragte Meinung-und-Analyse-Spur zugelassen. Der volumenstarke
+// Nachrichtenlauf waehlt sein Modell weiterhin separat ueber WOEK_NEWS_MODEL.
+export const SUPPORTED_MODELS = /^(?:gpt-5\.(?:4-mini|5|6-luna)(?:-|$)|gpt-6-astra(?:-|$))/;
 
 export function newsModel(env = process.env) {
   const model = String(env.WOEK_NEWS_MODEL || DEFAULT_NEWS_MODEL).trim();
