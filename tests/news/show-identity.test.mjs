@@ -34,6 +34,15 @@ test('alle gelieferten Freigaben sind über ihre amtliche Schreibweise erreichba
   }
 });
 
+test('Lage der Nation nutzt das gelieferte Logo nur im freigegebenen Website-Umfang', () => {
+  const identity = showIdentity({ show: 'Lage der Nation' });
+  assert.equal(identity?.usable_asset, '/assets/img/shows/lage-der-nation-official.png');
+  assert.match(renderShowIdentity({ show: 'Lage der Nation' }), /<img src="\/assets\/img\/shows\/lage-der-nation-official\.png"/);
+  assert.match(renderShowIdentity({ show: 'Lage der Nation' }), /<figcaption>Lage der Nation<\/figcaption>/);
+  assert.equal(showIdentity({ show: 'Lage der Nation' }, { use: 'sharecard' })?.usable_asset, null);
+  assert.equal(showIdentity({ show: 'Lage der Nation' }, { use: 'social' })?.usable_asset, null);
+});
+
 // Eine mehrdeutige Schreibweise darf nie zum Logo der falschen Sendung führen:
 // ein Rechtefehler wäre schwerer als eine Platzhalterkachel.
 test('mehrdeutige oder unbekannte Namen geben die Platzhalterkachel', () => {
