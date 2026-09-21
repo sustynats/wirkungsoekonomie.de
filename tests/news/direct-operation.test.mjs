@@ -30,9 +30,12 @@ test('request carries single-call instructions, JSON mode and no storage', () =>
 test('model selection accepts only priced models', () => {
   assert.equal(newsModel({}), 'gpt-5.4-mini');
   assert.equal(newsModel({ WOEK_NEWS_MODEL: 'gpt-5.6-luna' }), 'gpt-5.6-luna');
+  assert.equal(newsModel({ WOEK_NEWS_MODEL: 'gpt-6-astra' }), 'gpt-6-astra');
   assert.throws(() => newsModel({ WOEK_NEWS_MODEL: 'gpt-3.5' }), /NEWS_MODEL_UNSUPPORTED/);
   assert.equal(modelRates('gpt-5.6-luna').outputUsdPerMillion, 1.2);
+  assert.deepEqual(modelRates('gpt-6-astra'), { inputUsdPerMillion: 10, outputUsdPerMillion: 50, cachedInputUsdPerMillion: 1 });
   assert.equal(costFromUsage({ model: 'gpt-5.6-luna', reported_usage: { input_tokens: 1000, output_tokens: 1000 } }, {}).token_source, 'provider_reported_usage');
+  assert.equal(costFromUsage({ model: 'gpt-6-astra', reported_usage: { input_tokens: 1000, output_tokens: 1000 } }, {}).estimated_cost_usd, 0.06);
 });
 
 test('only the final completed assistant message is used', () => {

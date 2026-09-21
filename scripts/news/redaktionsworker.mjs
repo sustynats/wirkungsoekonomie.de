@@ -51,6 +51,30 @@ const isoDay = (value) => String(value).slice(0, 10);
 export const manualRequest = (row) => Boolean(row?.intake?.draft_id)
   || /^manual/.test(String(row?.intake?.trigger_type || '')) || row?.intake?.manual_research === true;
 
+export const DEFAULT_EDITORIAL_MODEL = 'gpt-5.6-luna';
+export const DEFAULT_AUTHOR_ANALYSIS_MODEL = 'gpt-6-astra';
+
+function configuredModel(value, fallback) {
+  return newsModel({ WOEK_NEWS_MODEL: String(value || fallback).trim() });
+}
+
+// Astra ist absichtlich kein globaler Schalter: Manuell von Natalie
+// beauftragte Meinung & Analyse bekommt die hoechste Textqualitaet. Automatische
+// Vorschlaege und die volumenstarken Formate bleiben auf Luna, damit die drei
+// taeglichen Nachrichtenausgaben weder am Budget noch an der Laufzeit haengen.
+export function editorialModel(env = process.env) {
+  return configuredModel(env.WOEK_EDITORIAL_MODEL, DEFAULT_EDITORIAL_MODEL);
+}
+
+export function authorAnalysisModel(env = process.env) {
+  return configuredModel(env.WOEK_EDITORIAL_ANALYSIS_MODEL, DEFAULT_AUTHOR_ANALYSIS_MODEL);
+}
+
+export function modelForEditorialRequest(job, packet, env = process.env) {
+  const kind = String(packet?.request?.kind || job?.intake?.kind || '');
+  return kind === 'opinion_analysis' && manualRequest(job) ? authorAnalysisModel(env) : editorialModel(env);
+}
+
 // Ein Auftrag ist liegengeblieben, wenn sein bezahlter Versuch nichts
 // abgeliefert hat - dieselbe Regel, mit der processEditorialRequest ihn
 // 'attempt_exhausted' nennt. Abgeleitet aus dem Bestand, damit der Vermerk
@@ -188,7 +212,7 @@ export function editorialModelInput(request) {
     ...bilder.map((bild) => ({ type: 'input_image', image_url: `data:${bild.mime};base64,${bild.base64}` }))] }];
 }
 
-export async function draftEditorialOutput(request, { apiKey = process.env.OPENAI_API_KEY, model = newsModel(), fetchImpl = fetch, reasoningEffort = process.env.WOEK_EDITORIAL_REASONING_EFFORT || 'medium', maxOutputTokens = 48000, timeoutMs = 300000,
+export async function draftEditorialOutput(request, { apiKey = process.env.OPENAI_API_KEY, model = editorialModel(), fetchImpl = fetch, reasoningEffort = process.env.WOEK_EDITORIAL_REASONING_EFFORT || 'medium', maxOutputTokens = 48000, timeoutMs = 300000,
   webSearch = process.env.WOEK_EDITORIAL_WEB_SEARCH !== 'false', maxSearches = Math.max(1, Math.min(10, Number(process.env.WOEK_EDITORIAL_MAX_SEARCHES) || 5)) } = {}) {
   if (!apiKey) throw Object.assign(new Error('OPENAI_API_KEY_MISSING'), { providerNotCalled: true });
   const variants = webSearch ? WEB_SEARCH_VARIANTS.map((variant) => variant(maxSearches)) : [{}];
@@ -380,7 +404,7 @@ export function editorialRepairAddendum(issues = [], repairs = []) {
 }
 
 export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false',
-  repairPass = process.env.WOEK_EDITORIAL_REPAIR !== 'false' } = {}) {
+  repairPass = process.env.WOEK_EDITORIAL_REPAIR !== 'false', env = process.env } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
   if (!job || job.ack || job.accepted || job.status !== 'queued') return { job_id: id, status: 'already_processed' };
@@ -414,6 +438,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   }
   const packet = JSON.parse(await session.transport.read(ownClaim?.state === 'claimed' || adoptedClaim ? claimPath : sourcePath));
   if (packet.job_id !== id || packet.input_hash !== job.input.input_hash || packet.job_type !== 'editorial_request') throw new Error('BRIDGE_JOB_BINDING_MISMATCH');
+  const selectedModel = modelForEditorialRequest(job, packet, env);
   // Prompt copy only: the stored packet and its input_hash stay untouched.
   // Nachlieferung: der Zusatz ist der Auftrag, der frühere Auftrag und seine
   // bisher gelieferte Fassung kommen als Material dazu. Nur die Prompt-Kopie;
@@ -437,9 +462,9 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     catch { return { job_id: id, status: 'claim_unknown' }; }
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', at: now() });
   }
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, requested_model: selectedModel, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
   let result;
-  try { result = await draft(request); }
+  try { result = await draft(request, { model: selectedModel }); }
   catch (error) {
     const status = error.providerNotCalled ? 'provider_unavailable' : 'output_unusable';
     const message = [String(error.message), error.detail].filter(Boolean).join(' · ').slice(0, 320);
@@ -464,7 +489,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     catch (error) { lastIssues = [String(error.message), ...(error.issues || [])]; }
     if (pass >= (repairPass ? 1 : 0)) break;
     let retry;
-    try { retry = await draft({ ...request, prompt: `${request.prompt}\n\n${editorialRepairAddendum(lastIssues, previewRepairs)}` }); }
+    try { retry = await draft({ ...request, prompt: `${request.prompt}\n\n${editorialRepairAddendum(lastIssues, previewRepairs)}` }, { model: selectedModel }); }
     catch (error) { cost += error.cost || 0; break; }
     repairCalls += 1;
     cost = Number((cost + (retry.cost || 0)).toFixed(6));
@@ -560,7 +585,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       // mitnehmen. Vorher brach der ganze Lauf ab, und damit lag auch die
       // automatische Spur - anderthalb Stunden am 17.09.2026.
       let result;
-      try { result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl }); }
+      try { result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl, env }); }
       catch (error) {
         const code = /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EDITORIAL_REQUEST_FAILED';
         result = { job_id: row.input.job_id, status: 'request_failed', error: code };
