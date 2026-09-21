@@ -4,6 +4,10 @@
     "bridge-access": {
       "firstSeen": "2026-09-15T16:54:49.150Z",
       "active": true
+    },
+    "lage": {
+      "firstSeen": "2026-09-21T04:05:58.570Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -1661,7 +1665,7 @@
       }
     },
     "last_new_at": "2026-09-21T02:05:42.379Z",
-    "checked_at": "2026-09-21T03:51:18.441Z",
+    "checked_at": "2026-09-21T04:05:58.570Z",
     "last_current_new_at": "2026-09-21T02:05:42.379Z"
   },
   "recovery_attempts": [
