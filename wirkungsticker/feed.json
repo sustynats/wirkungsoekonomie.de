@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-21T04:54:10.539Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-21T05:08:40.756Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -66,6 +66,38 @@
         "democracy": {
           "magnitude": 2,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/wahl-in-russland-putins-kriegsparlament-kremlpartei-zur-wahlsiegerin-erklart-f09cdd/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/wahl-in-russland-putins-kriegsparlament-kremlpartei-zur-wahlsiegerin-erklart-f09cdd/",
+      "title": "Kremlpartei bei Parlamentswahl in Russland zur Siegerin erklärt",
+      "summary": "Die Kremlpartei ist laut mehreren Berichten zur Siegerin der russischen Parlamentswahl erklärt worden. Offen bleiben genaue Ergebnisdaten und die Folgen für Krieg, besetzte Gebiete und politische Kontrolle.",
+      "date_published": "2026-09-20T23:56:40.000Z",
+      "date_modified": "2026-09-20T23:56:40.000Z",
+      "_woek_released_at": "2026-09-21T05:10:30.945Z",
+      "tags": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 3,
+          "direction": "negative",
           "status": "potential"
         }
       }
