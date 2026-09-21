@@ -12,6 +12,10 @@
     "run": {
       "firstSeen": "2026-09-21T06:28:16.252Z",
       "active": true
+    },
+    "lage": {
+      "firstSeen": "2026-09-21T11:01:27.134Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -1685,7 +1689,7 @@
       }
     },
     "last_new_at": "2026-09-21T05:50:49.010Z",
-    "checked_at": "2026-09-21T10:50:50.935Z",
+    "checked_at": "2026-09-21T11:01:27.134Z",
     "last_current_new_at": "2026-09-21T05:50:49.010Z"
   },
   "recovery_attempts": [
