@@ -44,7 +44,11 @@ jobs:
       WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
       WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
       OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
-      WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
+      # Modelltrennung: manuell beauftragte Meinung & Analyse nutzt Astra;
+      # automatische Vorschlaege, Sendungen und Buchformate bleiben auf Luna.
+      # Die Nachrichtenspur hat weiterhin ihre eigene WOEK_NEWS_MODEL-Variable.
+      WOEK_EDITORIAL_MODEL: ${{ vars.WOEK_EDITORIAL_MODEL || 'gpt-5.6-luna' }}
+      WOEK_EDITORIAL_ANALYSIS_MODEL: ${{ vars.WOEK_EDITORIAL_ANALYSIS_MODEL || 'gpt-6-astra' }}
       WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
       # Dieselbe Stundenzahl wie die Nachrichtenspur, damit beide auf
       # dasselbe Kontingent rechnen.
@@ -54,7 +58,7 @@ jobs:
       WOEK_NEWS_DAY_UNTIL_HOUR: ${{ vars.WOEK_NEWS_DAY_UNTIL_HOUR || '23' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
       # 16 je Tag seit 16.09.: Rückstand von rund 20 Aufträgen plus automatische
-      # Sendungs- und Analysekandidaten; je Auftrag wenige Cent (gpt-5.6-luna).
+      # Sendungs- und Analysekandidaten; die automatische Spur bleibt Luna.
       WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '16' }}
       WOEK_EPISODE_CANDIDATES_PER_RUN: ${{ vars.WOEK_EPISODE_CANDIDATES_PER_RUN || '1' }}
       WOEK_EPISODE_CANDIDATES_PER_DAY: ${{ vars.WOEK_EPISODE_CANDIDATES_PER_DAY || '3' }}
