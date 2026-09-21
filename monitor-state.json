@@ -12,13 +12,14 @@
     "run": {
       "firstSeen": "2026-09-21T06:28:16.252Z",
       "active": true
-    },
-    "lage": {
-      "firstSeen": "2026-09-21T11:01:27.134Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5969c4852de9163c1031cf39",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Lage\nPrüfung: 2026-09-21T22:05:55.042Z"
+    }
+  ],
   "dailyDate": "2026-09-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1689,7 +1690,7 @@
       }
     },
     "last_new_at": "2026-09-21T05:50:49.010Z",
-    "checked_at": "2026-09-21T21:52:45.898Z",
+    "checked_at": "2026-09-21T22:05:55.042Z",
     "last_current_new_at": "2026-09-21T05:50:49.010Z"
   },
   "recovery_attempts": [
