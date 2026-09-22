@@ -20,21 +20,18 @@
     "institute": {
       "firstSeen": "2026-09-22T16:20:47.664Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-22T18:17:04.814Z",
-      "active": true
-    },
-    "sources": {
-      "firstSeen": "2026-09-22T18:17:04.814Z",
-      "active": false
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-22T18:17:04.814Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "984b79a8cebfe95f0557b4a9",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-22T18:35:52.970Z"
+    },
+    {
+      "id": "54b69aca8741b9fe2b8834e5",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-22T18:35:52.970Z"
+    }
+  ],
   "dailyDate": "2026-09-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1858,10 +1855,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/notfalle-zwei-weltkriegsbomben-in-wiesbaden-entdeckt-evakuierung-d6c388/": {
         "first_seen_at": "2026-09-22T17:50:52.715Z",
         "source_at": "2026-09-22T16:21:09.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/offentliche-fahndung-mit-fotos-15-jahriger-getotet-verdachtige-manner-stellen-sich-599acf/": {
+        "first_seen_at": "2026-09-22T18:35:52.970Z",
+        "source_at": "2026-09-22T12:14:57.000Z"
       }
     },
-    "last_new_at": "2026-09-22T17:50:52.715Z",
-    "checked_at": "2026-09-22T18:21:08.070Z",
+    "last_new_at": "2026-09-22T18:35:52.970Z",
+    "checked_at": "2026-09-22T18:35:52.970Z",
     "last_current_new_at": "2026-09-22T17:50:52.715Z"
   },
   "recovery_attempts": [
