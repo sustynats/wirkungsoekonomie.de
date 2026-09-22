@@ -7,6 +7,8 @@ export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
+  const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url || !process.env.SUPABASE_SERVICE_ROLE_KEY) return [];
   return (await listPublishedMemberProfiles()).map((profile) => ({ slug: profile.slug }));
 }
 
