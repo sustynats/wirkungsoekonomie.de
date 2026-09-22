@@ -9,17 +9,24 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { importApprovedEditorials } from './bridge/personal-publication.mjs';
+import { acquireLane } from './bridge/acquire-lane.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED']);
+// The editorial worker and private preview poll share this lane. A definite
+// lock rejection has not claimed or written anything: retry ONLY acquisition,
+// for at most one minute. Never repeat a claim/write after an uncertain result,
+// release somebody else's lock, or spend another model call.
+export const EDITORIAL_LANE_WAIT = { retries: 12, waitMs: 5000 };
 
-export async function claimApprovedEditorials({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env } = {}) {
+export async function claimApprovedEditorials({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env, laneWait = null } = {}) {
   let store;
   try { store = (session || bridgeSession(env)).store; }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, changed: false }; throw error; }
   let acquired = false;
   try {
-    await store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}` });
+    await acquireLane(() => store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}` }),
+      { ...EDITORIAL_LANE_WAIT, ...(laneWait || {}) });
     acquired = true;
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, changed: false }; throw error; }
   try {
@@ -41,13 +48,16 @@ export async function claimApprovedEditorials({ session = null, root = ROOT, now
 // Lauf-Platz schon als abgeschlossen quittiert, ein zweiter Griff danach
 // scheiterte an BRIDGE_SLOT_ALREADY_COMPLETED. Die Quittung nimmt deshalb den
 // Fuenf-Minuten-Platz der Importspur.
-export async function finalizeApprovedEditorials({ session = null, now = new Date().toISOString(), env = process.env } = {}) {
+export async function finalizeApprovedEditorials({ session = null, now = new Date().toISOString(), env = process.env, laneWait = null } = {}) {
   let store;
   try { store = (session || bridgeSession(env)).store; }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message }; throw error; }
   if (typeof store.editorialFinalize !== 'function') return { status: 'skipped', reason: 'EDITORIAL_FINALIZE_UNAVAILABLE' };
   let acquired = false;
-  try { await store.acquire(now, 'import'); acquired = true; }
+  try {
+    await acquireLane(() => store.acquire(now, 'import'), { ...EDITORIAL_LANE_WAIT, ...(laneWait || {}) });
+    acquired = true;
+  }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message }; throw error; }
   try {
     const result = await store.editorialFinalize();

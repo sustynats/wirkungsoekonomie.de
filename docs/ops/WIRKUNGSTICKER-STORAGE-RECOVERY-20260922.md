@@ -53,6 +53,32 @@ auch dann erhalten, wenn ein normaler Folgelauf dieselbe Ausgabe neu berechnet.
 Die bestehenden Nachrichtenfenster 06:00, 12:00 und 18:00 Uhr sowie Modelle,
 Ausgabenlimits und Freigaberegeln werden nicht verändert.
 
+## Automatische Wiederaufnahme und Grenzen
+
+Der Live-Monitor erkannte am 22.09. um 06:36 UTC 427 Nachrichten, davon
+21 erstmals seit der letzten Stunde sichtbar. Das bestätigt die tatsächliche
+Auslieferung, nicht allein einen grünen Build. Der reguläre Nachrichtenlauf
+wird getrennt überwacht. Ein vor dem Merge gestarteter Lauf wurde wegen eines
+kanonischen Datenkonflikts verworfen; er durfte den reparierten Stand nicht
+überschreiben. Der nächste Lauf verwendet den neuen Speicherleser.
+
+Für die private Redaktionsübernahme zeigte derselbe alte Lauf
+`BRIDGE_RUN_LOCKED`: Ein anderer Redaktionsvorgang hielt die Importspur.
+Übernahme und spätere Live-Quittung wiederholen deshalb ausschließlich die
+eindeutig abgewiesene Sperranfrage bis zu zwölfmal im Abstand von fünf Sekunden.
+Nach spätestens einer Minute bleibt der Auftrag für einen späteren regulären
+Lauf erhalten. Es gibt keine zusätzliche KI-Anfrage, keine Freigabeänderung und
+keine Freigabe einer fremden Sperre. Ungewisse Zeitüberschreitungen und bereits
+abgeschlossene Slots werden nicht erneut ausgeführt.
+
+Der bestehende Monitor versucht technische Auslieferungsfehler begrenzt erneut
+und meldet anhaltende Fehler. Er schreibt keine Inhalte um und repariert keinen
+unbekannten Programmfehler eigenmächtig. Die Sicherungen fehlgeschlagener Läufe
+ermöglichen eine Wiederherstellung ohne Neugenerierung; ihre redaktionelle
+Übernahme bleibt derzeit ein geprüftes Recovery-Verfahren, kein automatischer
+Rohantwort-Import. Der Größencheck verhindert einen nicht übertragbaren Commit,
+ersetzt für andere künftig wachsende Datenbestände aber keine Speicherstrategie.
+
 ## Rückfall
 
 Manifest und zugehörige Teile sind eine Einheit. Bei einem Rollback zuerst einen
