@@ -1,7 +1,246 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-21T04:00:00.000Z",
+  "updated_at": "2026-09-22T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-22-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-22",
+      "window_from": "2026-09-21T16:00:00.000Z",
+      "window_to": "2026-09-22T04:00:00.000Z",
+      "stand": "2026-09-22T04:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 7,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-5a09d8ea33380b91",
+          "slug": "evakuierung-haus-von-familie-wegen-rissen-evakuiert-abriss-nebenan-380b91",
+          "title": "Laut stern: Familienhaus nach Schäden durch Abrissarbeiten evakuiert",
+          "state": "neu",
+          "at": "2026-09-22T01:34:53.404Z",
+          "score": 9.7985
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj bietet Deeskalation bei Ende russischer Angriffe auf ukrainische Infrastruktur an",
+          "state": "neu",
+          "at": "2026-09-22T01:00:56.738Z",
+          "score": 9.7513
+        },
+        {
+          "story_id": "wt-150f901b2a42b95e",
+          "slug": "wirtschaft-porsche-chef-dementiert-medienbericht-uber-weiteren-stellenabbau-42b95e",
+          "title": "Porsche-Chef weist laut Deutschlandfunk Bericht über weiteren Stellenabbau zurück",
+          "state": "neu",
+          "at": "2026-09-21T19:41:49.057Z",
+          "score": 5.3081
+        },
+        {
+          "story_id": "wt-a7912228c8853d53",
+          "slug": "landtagswahl-in-mv-linke-vorstand-in-mv-fur-sondierung-mit-spd-und-grunen-853d53",
+          "title": "Laut stern: Linke in MV für Gespräche mit SPD und Grünen offen",
+          "state": "neu",
+          "at": "2026-09-21T19:05:53.143Z",
+          "score": 7.2582
+        },
+        {
+          "story_id": "wt-2989a3fd91f6cb95",
+          "slug": "mercedes-vorstand-kundigt-werkschliessungen-an-wenn-arbeitskosten-nicht-sinken-f6cb95",
+          "title": "Mercedes erwägt laut Produktionsvorstand die Schließung von zwei deutschen Werken",
+          "state": "neu",
+          "at": "2026-09-21T18:10:45.526Z",
+          "score": 7.1816
+        },
+        {
+          "story_id": "wt-56811694cac5f342",
+          "slug": "kolumbien-waldbrand-in-touristenstadt-villa-de-leyva-teilweise-unter-kontrolle-c5f342",
+          "title": "Waldbrand in Villa de Leyva teilweise unter Kontrolle",
+          "state": "neu",
+          "at": "2026-09-21T16:44:47.741Z",
+          "score": 7.0622
+        },
+        {
+          "story_id": "wt-0590727208645523",
+          "slug": "geteiltes-echo-zur-starkung-digitaler-ermittlungsbefugnisse-645523",
+          "title": "Anhörung zu digitalen Ermittlungsbefugnissen zeigt geteilte Positionen",
+          "state": "neu",
+          "at": "2026-09-21T16:09:39.896Z",
+          "score": 9.0134
+        }
+      ],
+      "publication_recovery": {
+        "recovered_at": "2026-09-22T05:33:26.129Z",
+        "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
+      }
+    },
+    {
+      "lage_id": "2026-09-21-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-21",
+      "window_from": "2026-09-21T10:00:00.000Z",
+      "window_to": "2026-09-21T16:00:00.000Z",
+      "stand": "2026-09-21T16:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 8,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-6216449746f5a277",
+          "slug": "burokratieabbau-im-tourismus-f5a277",
+          "title": "Bundestag thematisiert Zukunft von Praxischecks im Tourismus",
+          "state": "neu",
+          "at": "2026-09-21T14:59:06.415Z",
+          "score": 6.3309
+        },
+        {
+          "story_id": "wt-372cd422804114a6",
+          "slug": "bundestag-und-bundesrat-sollen-in-dieser-woche-neuen-tankrabatt-beschliessen-4114a6",
+          "title": "Nach Angaben des Bundesfinanzministeriums: Neuer Tankrabatt soll ab 1. Oktober gelten",
+          "state": "neu",
+          "at": "2026-09-21T14:22:17.286Z",
+          "score": 6.2286
+        },
+        {
+          "story_id": "wt-c0cc887ed3c3381e",
+          "slug": "bericht-aus-der-kabinettssitzung-vom-21-september-2026-c3381e",
+          "title": "Bayern veröffentlicht Bilanz der Städtebauförderung seit 1971",
+          "state": "neu",
+          "at": "2026-09-21T13:06:07.202Z",
+          "score": 3.517
+        },
+        {
+          "story_id": "wt-823d9ccbc9b293b1",
+          "slug": "nachtlicher-messerangriff-mann-auf-heimweg-mit-messer-in-den-bauch-gestochen-b293b1",
+          "title": "Laut Polizei: 50-Jähriger bei nächtlichem Messerangriff verletzt",
+          "state": "neu",
+          "at": "2026-09-21T12:48:47.851Z",
+          "score": 5.4689
+        },
+        {
+          "story_id": "wt-d342c025d5f2ad88",
+          "slug": "wolfsburg-explosion-zerstort-kita-im-schachtweg-grosses-gluck-f2ad88",
+          "title": "Explosion zerstört Kita in Wolfsburg – Kinder vorübergehend umverteilt",
+          "state": "neu",
+          "at": "2026-09-21T12:32:49.526Z",
+          "score": 5.4245
+        },
+        {
+          "story_id": "wt-03ddef7dd2f77ba4",
+          "slug": "streit-eskalierte-24-jahriger-nach-messerangriff-in-haft-f77ba4",
+          "title": "Nach Streit in Aschaffenburg: 24-Jähriger in Untersuchungshaft",
+          "state": "neu",
+          "at": "2026-09-21T12:13:59.562Z",
+          "score": 3.3722
+        },
+        {
+          "story_id": "wt-1363984c6520395e",
+          "slug": "protests-erupt-after-ice-shooting-in-texas-20395e",
+          "title": "Laut France 24: Proteste nach Schuss eines ICE-Beamten in Texas",
+          "state": "neu",
+          "at": "2026-09-21T10:22:04.880Z",
+          "score": 5.0613
+        },
+        {
+          "story_id": "wt-85e0ad305c33aab6",
+          "slug": "waldbrand-in-kolumbien-bedroht-bei-touristen-beliebte-andenstadt-villa-de-leyva-33aab6",
+          "title": "Waldbrand erreicht die Nähe der bei Touristen beliebten Andenstadt Villa de Leyva",
+          "state": "neu",
+          "at": "2026-09-21T10:07:12.746Z",
+          "score": 9.02
+        }
+      ],
+      "publication_recovery": {
+        "recovered_at": "2026-09-22T05:33:26.129Z",
+        "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
+      }
+    },
+    {
+      "lage_id": "2026-09-21-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-21",
+      "window_from": "2026-09-21T04:00:00.000Z",
+      "window_to": "2026-09-21T10:00:00.000Z",
+      "stand": "2026-09-21T10:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 6,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-81ec2dd4ad821608",
+          "slug": "zug-evakuiert-16-jahriger-fahrt-auf-zugdach-mit-und-erleidet-stromschlag-821608",
+          "title": "Zug evakuiert nach Stromschlag auf Zugdach",
+          "state": "neu",
+          "at": "2026-09-21T09:52:29.218Z",
+          "score": 9.9791
+        },
+        {
+          "story_id": "wt-33d7725bd2abf3f0",
+          "slug": "three-south-korean-soldiers-injured-in-dmz-explosion-seoul-says-abf3f0",
+          "title": "Drei südkoreanische Soldaten bei Explosion in der DMZ verletzt, laut Seoul",
+          "state": "neu",
+          "at": "2026-09-21T09:08:21.273Z",
+          "score": 5.8565
+        },
+        {
+          "story_id": "wt-32d6a5f4a960d3a5",
+          "slug": "texas-ice-agent-verletzt-mann-bei-schussen-in-liberaler-enklave-austin-60d3a5",
+          "title": "Laut Spiegel: ICE-Agent verletzt Mann bei Schüssen in Austin",
+          "state": "fortgeschrieben",
+          "at": "2026-09-21T07:58:32.333Z",
+          "score": 5.4126
+        },
+        {
+          "story_id": "wt-c6d5b6f3dffbe9ee",
+          "slug": "die-juristische-presseschau-vom-19-bis-21-september-2026-prozess-gegen-scheuer-startet-j-fbe9ee",
+          "title": "LTO berichtet über Prozessstart gegen Exminister Scheuer und Reformvorschläge des Juristentags",
+          "state": "neu",
+          "at": "2026-09-21T06:21:46.730Z",
+          "score": 5.3938
+        },
+        {
+          "story_id": "wt-07f7e067e963967e",
+          "slug": "wahlen-linke-setzt-auf-berlin-erfolg-hoffnung-fur-leipzig-2027-63967e",
+          "title": "Leipzig 2027: Linke verweist auf Berliner Wahlergebnis",
+          "state": "neu",
+          "at": "2026-09-21T05:27:54.043Z",
+          "score": 3.2442
+        },
+        {
+          "story_id": "wt-420984531ef09cdd",
+          "slug": "wahl-in-russland-putins-kriegsparlament-kremlpartei-zur-wahlsiegerin-erklart-f09cdd",
+          "title": "Kremlpartei bei Parlamentswahl in Russland zur Siegerin erklärt",
+          "state": "neu",
+          "at": "2026-09-21T05:10:30.945Z",
+          "score": 7.6959
+        },
+        {
+          "story_id": "wt-6507f4857e5bd85a",
+          "slug": "seit-kriegsbeginn-iranische-wirtschaft-um-mehr-als-zehn-prozent-geschrumpft-5bd85a",
+          "title": "Iranische Wirtschaft laut offiziellen Angaben um mehr als zehn Prozent geschrumpft",
+          "state": "neu",
+          "at": "2026-09-21T04:57:27.112Z",
+          "score": 5.1596
+        }
+      ],
+      "publication_recovery": {
+        "recovered_at": "2026-09-22T05:33:26.129Z",
+        "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
+      }
+    },
     {
       "lage_id": "2026-09-21-morgenlage",
       "slot": "morgenlage",

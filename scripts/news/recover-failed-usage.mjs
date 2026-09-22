@@ -5,10 +5,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { repositoryJson } from './newsroom-store.mjs';
 
 export function reportFromRunLog(log) {
-  const lines = String(log).split('\n').filter(line => line.includes('\tImport, analyze and build\t'))
-    .map(line => line.replace(/^.*?\tImport, analyze and build\t\S+ /, ''));
+  const step = /\tImport, analyze(?: \(one call per story\))? and build\t/;
+  const lines = String(log).split('\n').filter(line => step.test(line))
+    .map(line => line.split(step).at(-1).replace(/^\S+ /, ''));
   const start = lines.findIndex(line => line.trim() === '{');
   if (start < 0) return null; // Failed before a completed analysis report.
   const body = lines.slice(start).join('\n');
@@ -58,7 +60,7 @@ export function recoverFailedUsage({ root = path.resolve(path.dirname(fileURLToP
     } catch { unresolved.push(run.id); }
   }
   usage.failed_run_recovery = { checked_at:now, checked_run_ids:[...checked].slice(-200), unresolved_run_ids:unresolved, status:unresolved.length ? 'open' : 'checked' };
-  if (write) fs.writeFileSync(file, `${JSON.stringify(usage,null,2)}\n`);
+  if (write) fs.writeFileSync(file, repositoryJson(usage));
   return { recovered_runs:recovered, checked_runs:checked.size, unresolved_run_ids:unresolved, recovered_cost_usd:usage.runs.filter(run => run.recovery?.recovered_at === now).reduce((sum,run)=>sum+run.ai.estimated_cost_usd,0) };
 }
 
