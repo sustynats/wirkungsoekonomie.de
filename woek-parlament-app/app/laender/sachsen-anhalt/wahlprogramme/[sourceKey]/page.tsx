@@ -5,7 +5,12 @@ import { SaxonyAnhaltProgrammeAnalysisV3 } from "@/app/components/SaxonyAnhaltPr
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { getSaxonyAnhaltPublicationSources } from "@/lib/publication/fachakten";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return saxonyAnhaltElectionProgrammes.map((programme) => ({ sourceKey: programme.sourceKey }));
+}
 
 function programmeFor(sourceKey: string) {
   return saxonyAnhaltElectionProgrammes.find((programme) => programme.sourceKey === sourceKey) ?? null;

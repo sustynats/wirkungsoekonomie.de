@@ -3,13 +3,16 @@
 ## Verbindliche Architektur
 
 GitHub ist die kanonische Quelle fuer Commit, Historie, Golden-State-Gates und
-Release-Artefakte. Vercel erhaelt nur den fuer Parliament benoetigten Build- und
-Laufzeitumfang. Das Monorepo ist kein Vercel-Artefaktspeicher.
+Release-Artefakte. Der oeffentliche Parliament-Build wird vollstaendig
+vorgerendert. Vercel erhaelt nur die statische Auslieferung plus die explizit
+verbleibenden, niedrigvolumigen Schreibendpunkte. Das Monorepo ist kein
+Vercel-Artefaktspeicher; Vercel ist kein Hintergrund-Worker.
 
 ```text
 exakter GitHub-Commit
   -> Golden-State- und Public-Projection-Gates
   -> deterministisches minimales Parliament-Artefakt
+  -> statisches Laufzeitgate und vollstaendige Routenklassifikation
   -> GitHub-Actions-Artefakt mit Manifest und Pruefsummen
   -> ein ausdruecklich autorisierter Vercel-RC
   -> Smoke gegen genau diesen RC
@@ -19,6 +22,11 @@ exakter GitHub-Commit
 Automatische Git- und Preview-Deployments bleiben deaktiviert. Weder der
 Artifact-Workflow noch die optionale Prebuilt-Evaluation fuehren `vercel deploy`
 oder `vercel promote` aus.
+
+Die geplanten politischen Hintergrundlaeufe werden direkt als GitHub-Runner
+ausgefuehrt. Ein Workflow darf keine URL unter `/api/cron/` aufrufen. Bis die
+Worker-Secrets vollstaendig ausserhalb Vercels hinterlegt und geprueft sind,
+bleibt `WOEK_AUTOPILOT_RUNTIME_MODE=INITIAL_BOOTSTRAP_2_3` gesetzt.
 
 ## Deterministischer Eingabegraph
 
@@ -84,6 +92,18 @@ GitHub-Actions-Artefakt gespeichert. Fuer eine oeffentliche Release-Version
 werden genau diese bereits geprueften Dateien unter einem neuen, commitgebundenen
 GitHub-Release-Tag publiziert. Ein vorhandenes Asset darf nicht ueberschrieben
 werden; abweichende Bytes sind ein harter Fehler.
+
+`npm run check:static-runtime` prueft vor dem Next-Build insbesondere:
+
+- kein globales request-time Rendering im Root-Layout;
+- kein breites Proxy-Matching oder globales `private, no-store`;
+- `generateStaticParams()` fuer jede oeffentliche dynamische Seite;
+- statische Parliament-Read-APIs, Fachakten, Health und Suchindizes.
+
+Die abschliessende Next-Routenliste ist Release-Nachweis. Oeffentliche
+Darstellungs- und Lesewege muessen `○` oder `●` sein. Ein neues `ƒ` braucht eine
+objektspezifische Begruendung als echter Schreib-/Admin-Endpunkt und eine
+Kostenpruefung.
 
 ## Prebuilt- und Build-Output-Evaluation
 

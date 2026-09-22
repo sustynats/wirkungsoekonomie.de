@@ -54,7 +54,8 @@ test("all full former collection renderers remain reachable in the explicit cont
   for (const component of ["ImpactCasesPage", "SectionPage", "FachanalysenPage", "GovernmentImpactCasesPage", "EuImpactCasesPage"]) assert.ok(context.includes(`<${component}`), component);
   const register = readFileSync("app/wirkungsakten/page.tsx", "utf8");
   assert.match(register, /href="\/wirkungsakten\/bestand"/);
-  assert.match(register, /SamePageQueryForm/);
+  assert.match(register, /ImpactRegisterClient/);
+  assert.match(readFileSync("app/components/ImpactRegisterClient.tsx", "utf8"), /SamePageQueryForm/);
 });
 
 test("institutional entry has a fixed cross-page register destination and normal scrolling", () => {

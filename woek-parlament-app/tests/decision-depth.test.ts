@@ -12,8 +12,10 @@ test("five canonical depths retain every old view alias without changing the dec
   assert.equal(resolveDecisionView("quellen"), "quellen");
   assert.equal(resolveDecisionView("invalid"), "sachverhalt");
   const source = readFileSync("app/entscheidungen/[slug]/page.tsx", "utf8");
-  for (const view of decisionViews) assert.ok(source.includes(`data-decision-panel="${view.id}"`));
-  assert.match(source, /<details id="decision-transparency"[^>]*open=\{ansicht === "fachakte"\}/);
+  const tabs = readFileSync("app/components/DecisionViewTabs.tsx", "utf8");
+  for (const view of decisionViews) assert.ok(source.includes(`<DecisionViewPanel id="${view.id}"`));
+  assert.match(tabs, /data-decision-panel=\{id\}/);
+  assert.match(tabs, /open=\{activeView === "evidenz"\}/);
   assert.match(source, /<CompletePublicationSource source=\{completePublication\} idPrefix="vollstaendige-fachakte"/);
 });
 

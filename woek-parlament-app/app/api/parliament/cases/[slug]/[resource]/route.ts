@@ -1,8 +1,15 @@
 import { NextResponse } from "next/server";
-import { getCase } from "@/lib/cases";
+import { getCase, listPublishedCases } from "@/lib/cases";
 import { publicImpact, publicSources, publicVersions } from "@/lib/public-api";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+const publicResources = ["impact", "sources", "versions", "monitoring"] as const;
+
+export function generateStaticParams() {
+  return listPublishedCases().flatMap((item) => publicResources.map((resource) => ({ slug: item.slug, resource })));
+}
 
 export async function GET(_: Request, { params }: { params: Promise<{ slug: string; resource: string }> }) {
   const { slug, resource } = await params;

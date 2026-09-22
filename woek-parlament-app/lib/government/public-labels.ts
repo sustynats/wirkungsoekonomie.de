@@ -1,0 +1,61 @@
+export const actionTypeLabels: Record<string, string> = {
+  CABINET_DECISION: "Kabinettsentscheidung",
+  GOVERNMENT_BILL: "Regierungsentwurf",
+  REGULATION: "Verordnung",
+  ADMINISTRATIVE_RULE: "Verwaltungsregel",
+  STRATEGY: "Strategie",
+  ACTION_PLAN: "Aktionsplan",
+  GOVERNMENT_PROGRAMME: "Regierungsprogramm",
+  FUNDING_PROGRAMME: "Förderprogramm",
+  BUDGET_ACTION: "Haushaltshandlung",
+  IMPLEMENTATION_ACTION: "Umsetzungsschritt",
+  PROCUREMENT_ACTION: "Beschaffung",
+  STATE_OWNERSHIP_ACTION: "Beteiligungshandlung",
+  INTERNATIONAL_POSITION: "Internationale Position",
+  INTERNATIONAL_AGREEMENT: "Internationale Vereinbarung",
+  GOVERNMENT_REPORT: "Regierungsbericht",
+  GOVERNANCE_ORGANISATION: "Organisationsentscheidung",
+  COMMUNICATION: "Amtliche Kommunikation",
+  OTHER: "Sonstiger Regierungsakt",
+};
+
+export const lifecycleLabels: Record<string, string> = {
+  ANNOUNCED: "angekündigt",
+  MINISTRY_DRAFT: "Ressortentwurf",
+  CONSULTATION: "Anhörung",
+  CABINET_DECIDED: "im Kabinett beschlossen",
+  SUBMITTED_TO_PARLIAMENT: "dem Parlament zugeleitet",
+  PARLIAMENTARY_PROCESS: "im parlamentarischen Verfahren",
+  ADOPTED: "beschlossen",
+  PROMULGATED: "verkündet",
+  IN_FORCE: "in Kraft",
+  IMPLEMENTING: "in Umsetzung",
+  MONITORED: "im Monitoring",
+  EVALUATED: "evaluiert",
+  WITHDRAWN: "zurückgezogen",
+  SUPERSEDED: "abgelöst",
+  UNKNOWN: "Verfahrensstand offen",
+};
+
+export const coverageLabels: Record<string, string> = {
+  COMPLETE_ENUMERATED_SOURCE: "Vollständig für diesen enumerierten Quellenraum",
+  BEST_EFFORT_DEFINED_SOURCE_SCOPE: "Best effort für definierte amtliche Quellen",
+  PARTIAL: "Teilweise erschlossen",
+  SOURCE_UNAVAILABLE: "Quelle derzeit technisch nicht verfügbar",
+  UNKNOWN: "Abdeckung noch nicht bestimmt",
+};
+
+export const sourceFunctionLabels: Record<string, string> = {
+  OFFICIAL_DECISION: "Amtliche Entscheidung",
+  PROCEDURAL_STATUS: "Verfahrensstand",
+  LEGAL_TEXT: "Rechtstext",
+  CONSOLIDATED_LAW: "Konsolidiertes Recht",
+  MINISTRY_DRAFT: "Ressortentwurf",
+  IMPLEMENTATION_RULE: "Umsetzungsregel",
+  BUDGET_DATA: "Haushaltsdaten",
+  FUNDING_RULE: "Förderregel",
+  MONITORING_DATA: "Monitoringdaten",
+  EVALUATION: "Evaluation",
+  COMMUNICATION: "Amtliche Erläuterung",
+  CONTEXT: "Kontextquelle",
+};

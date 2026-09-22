@@ -113,7 +113,7 @@ export function canonicalPortalHref(href: string): string {
 }
 
 export function activePortalBranch(path: string): NavigationItem | undefined {
-  const pathname = canonicalPortalHref(path).split(/[?#]/)[0];
+  const pathname = normalizedPortalPath(path);
   if (pathname.startsWith("/entscheidungen/")) return portalNavigation[1];
   return portalNavigation.find((item) => pathname === item.href || pathname.startsWith(`${item.href}/`));
 }
@@ -131,8 +131,13 @@ function flatten(items: NavigationItem[]): NavigationItem[] {
 }
 export const allNavigationItems = flatten(portalNavigation);
 
-export function portalBreadcrumbs(path: string): NavigationItem[] {
+function normalizedPortalPath(path: string) {
   const pathname = canonicalPortalHref(path).split(/[?#]/)[0];
+  return pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+}
+
+export function portalBreadcrumbs(path: string): NavigationItem[] {
+  const pathname = normalizedPortalPath(path);
   const root = { label: "Startseite", href: "/" };
   if (pathname === "/") return [root];
   if (pathname === "/suche") return [root, { label: "Suche", href: pathname }];
@@ -151,7 +156,8 @@ export function portalBreadcrumbs(path: string): NavigationItem[] {
 }
 
 export function sectionNavigation(path: string): NavigationItem[] {
-  const branch = activePortalBranch(path);
-  const nested = branch?.children?.find((item) => item.children && (path === item.href || path.startsWith(`${item.href}/`)));
+  const pathname = normalizedPortalPath(path);
+  const branch = activePortalBranch(pathname);
+  const nested = branch?.children?.find((item) => item.children && (pathname === item.href || pathname.startsWith(`${item.href}/`)));
   return nested?.children ?? branch?.children ?? [];
 }

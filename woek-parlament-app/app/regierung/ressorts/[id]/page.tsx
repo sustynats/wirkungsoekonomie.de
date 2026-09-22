@@ -3,6 +3,12 @@ import { notFound } from "next/navigation";
 import { GovernmentActionCard } from "@/app/components/government/GovernmentActionCard";
 import { actionTypeLabels, actionsForInstitution, coverageLabels, getGovernmentPublicData, institutionById } from "@/lib/government/public-data";
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getGovernmentPublicData().institutions.map((institution) => ({ id: institution.institution_id }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params; return { title: institutionById(id)?.official_name ?? "Ressort" };
 }

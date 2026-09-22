@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPublicVoteReference } from "@/lib/members/public-votes";
+import { getPublicVoteReference, listPublicVoteReferences } from "@/lib/members/public-votes";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url || !process.env.SUPABASE_SERVICE_ROLE_KEY) return [];
+  return (await listPublicVoteReferences()).map((reference) => ({ voteId: reference.externalVoteId }));
+}
 
 function dateLabel(value: string) {
   return new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${value}T12:00:00Z`));

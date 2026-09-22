@@ -2,9 +2,15 @@
   "team_id": "team_sOR1voJPyc1jY5VsMdQRyFWz",
   "team_slug": "woek-akademie",
   "expected": {
+    "account_plan": "hobby",
+    "must_not_be_soft_blocked": true,
     "command_for_ignoring_build_step": "exit 0",
     "git_deployments": "disabled",
     "build_machine_type": "standard",
+    "hobby_build_machine_types": [
+      "basic",
+      "standard"
+    ],
     "build_machine_selection": "fixed",
     "elastic_concurrency_enabled": false,
     "build_queue": "WAIT_FOR_NAMESPACE_QUEUE",

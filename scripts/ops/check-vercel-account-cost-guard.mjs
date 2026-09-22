@@ -8,6 +8,7 @@ const baseline = JSON.parse(
   fs.readFileSync(path.join(root, "ops", "vercel-project-baseline.json"), "utf8"),
 );
 const failures = [];
+let teamPlan = null;
 
 const teamResult = spawnSync(
   "npx",
@@ -26,18 +27,20 @@ if (teamResult.status !== 0) {
 } else {
   const team = JSON.parse(teamResult.stdout);
   const billingAssessment = assessVercelBilling(team);
+  teamPlan = billingAssessment.plan === "UNKNOWN" ? null : billingAssessment.plan;
   failures.push(...billingAssessment.failures);
   console.log(`VERCEL_CURRENT_PLAN=${billingAssessment.plan}`);
   console.log(`VERCEL_ZERO_COST_PLAN_TARGET_MET=${billingAssessment.zeroCostTargetMet}`);
   // This endpoint does not establish the complete Spend Management configuration.
   // Never confuse a project/build settings check with a provider-side spending cap.
   console.log("VERCEL_PROVIDER_HARD_SPEND_CAP=NOT_VERIFIED_BY_THIS_ENDPOINT");
-  const invoiceItems = team.billing?.invoiceItems ?? {};
-  if ((invoiceItems.teamSeats?.quantity ?? 0) !== baseline.expected.additional_team_seats) {
-    failures.push("Vercel additional team seats are enabled");
+  if (teamPlan !== baseline.expected.account_plan) {
+    failures.push(`Vercel account plan is ${teamPlan ?? "missing"}, expected ${baseline.expected.account_plan}`);
   }
-  if ((invoiceItems.analytics?.quantity ?? 0) !== 0) {
-    failures.push("Paid Vercel Analytics is enabled");
+  if (baseline.expected.must_not_be_soft_blocked === true && team.softBlock != null) {
+    const reason = team.softBlock.reason ?? "unknown reason";
+    const overage = team.softBlock.blockedDueToOverageType ?? "unknown resource";
+    failures.push(`Vercel account is soft-blocked (${reason}; ${overage})`);
   }
 }
 
@@ -61,12 +64,22 @@ for (const project of baseline.projects) {
 
   const current = JSON.parse(result.stdout);
   const expected = baseline.expected;
+  const allowedBuildMachineTypes =
+    teamPlan === "hobby"
+      ? expected.hobby_build_machine_types
+      : [expected.build_machine_type];
   const checks = [
     [current.name === project.name, `project name is ${current.name ?? "missing"}`],
     [current.commandForIgnoringBuildStep === expected.command_for_ignoring_build_step, "ignored-build command changed"],
-    [current.resourceConfig?.buildMachineType === expected.build_machine_type, "build machine is not standard"],
+    [
+      allowedBuildMachineTypes.includes(current.resourceConfig?.buildMachineType),
+      "build machine is not the included Hobby machine",
+    ],
     [current.resourceConfig?.buildMachineSelection === expected.build_machine_selection, "build machine selection is not fixed"],
-    [current.resourceConfig?.elasticConcurrencyEnabled === expected.elastic_concurrency_enabled, "elastic concurrency is enabled"],
+    [
+      (current.resourceConfig?.elasticConcurrencyEnabled ?? false) === expected.elastic_concurrency_enabled,
+      "elastic concurrency is enabled",
+    ],
     [current.resourceConfig?.buildQueue?.configuration === expected.build_queue, "build queue is not serial"],
     [current.features?.webAnalytics === expected.web_analytics_enabled, "Web Analytics is enabled"],
     [(current.speedInsights?.hasData ?? false) === expected.speed_insights_has_data, "Speed Insights is collecting data"],
@@ -102,9 +115,10 @@ if (failures.length > 0) {
 }
 
 console.log("VERCEL_ACCOUNT_COST_GUARD=PASS");
+console.log(`VERCEL_ACCOUNT_PLAN=${teamPlan}`);
 console.log(`VERCEL_PROJECTS_VERIFIED=${baseline.projects.length}`);
 console.log("AUTOMATIC_VERCEL_GIT_DEPLOYMENTS=false");
-console.log("VERCEL_BUILD_MACHINE=standard");
+console.log("VERCEL_BUILD_MACHINE=basic-or-legacy-standard-on-hobby");
 console.log("VERCEL_ELASTIC_CONCURRENCY=false");
 console.log("UNAPPROVED_DEPLOY_HOOKS=0");
 console.log("PAID_ANALYTICS=false");
