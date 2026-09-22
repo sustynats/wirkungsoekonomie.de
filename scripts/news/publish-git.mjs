@@ -55,7 +55,9 @@ export function regeneratablePublicationPath(file) {
 }
 const stdout = result => typeof result === "string" ? result : result?.stdout || "";
 async function git(args) {
-  return exec("git", args, { maxBuffer: 64 * 1024 * 1024, env: { ...process.env, GIT_EDITOR: "true" } });
+  // A three-way recovery reads complete story stores; each can be up to the
+  // guarded repository limit. A 64 MiB stdout cap rejected valid compact JSON.
+  return exec("git", args, { maxBuffer: 128 * 1024 * 1024, env: { ...process.env, GIT_EDITOR: "true" } });
 }
 export async function rebuildPublication({ run = exec, env = process.env } = {}) {
   // No collection, image generation or paid analysis. Re-render the retained

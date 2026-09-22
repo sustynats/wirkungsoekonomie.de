@@ -23,6 +23,12 @@ werden ohne Einrückungsleerzeichen geschrieben (unveränderter JSON-Datenvertra
 Ein vorgelagerter Push-Check weist geänderte Dateien über 95 MiB mit einem
 eindeutigen Fehler zurück, bevor ein nicht übertragbarer Commit entsteht.
 
+Der letzte übertragbare Bestand enthielt 17.007 Quellenstände, 18.999 Ereignisse,
+17.007 Quellen-Ereignis-Verknüpfungen und 20.000 Entscheidungsvermerke.
+104.619.306 Bytes eingerücktes JSON entsprechen 75.739.943 Bytes ohne
+Einrückung – knapp 29 MB bestanden allein aus Formatierung. Die Aufteilung
+begrenzt die **einzelne Datei**, ohne die Recherchehistorie zu löschen.
+
 ## Wiederherstellung
 
 Die `news-recovery-*`-Artefakte sind die Sicherungen bereits bezahlter Arbeit.
@@ -33,6 +39,19 @@ mit alten Snapshots überschrieben werden. Kosten werden je Lauf-ID dedupliziert
 fehlgeschlagene/abgelehnte Versuche werden nicht als neue Veröffentlichungen
 ausgegeben. Nach Übernahme sind Build, bestehende Qualitätsprüfung und die
 Live-Prüfung verpflichtend. Es wird kein Modell zur Wiederherstellung aufgerufen.
+
+`recover-approved-snapshots.mjs` übernimmt geprüfte vollständige Fassungen und
+prüft sie mit dem aktuellen Qualitätsgate erneut. Ein unveränderter Altstand
+aus einem späteren Runner darf eine zwischenzeitlich gerettete Fassung nicht
+zurücksetzen. Neuere redaktionelle Änderungen bleiben geschützt; manuelle
+Buchformate sind ausgeschlossen. Die Nutzungsbuchungen werden über Lauf-ID
+**und** Startzeit dedupliziert. Vorbereitete, noch nicht ausgelieferte Meldungen
+werden dort nicht rückwirkend als bereits veröffentlicht gezählt.
+
+Die nachgeholten Lagen erhalten einen sichtbaren Verspätungshinweis. Er bleibt
+auch dann erhalten, wenn ein normaler Folgelauf dieselbe Ausgabe neu berechnet.
+Die bestehenden Nachrichtenfenster 06:00, 12:00 und 18:00 Uhr sowie Modelle,
+Ausgabenlimits und Freigaberegeln werden nicht verändert.
 
 ## Rückfall
 

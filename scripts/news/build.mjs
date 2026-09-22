@@ -386,6 +386,7 @@ export function lageBody(lage, storiesById) {
   <header class="news-lage__header">
     <p class="news-lage__kicker">${escapeHtml(lage.label)} · ${escapeHtml(datum)} · Stand ${escapeHtml(stand)} Uhr</p>
     <h1 class="news-lage__headline">${escapeHtml(lage.headline)}</h1>
+    ${lage.publication_recovery?.note ? `<p class="news-analysis-copy" role="note">${escapeHtml(lage.publication_recovery.note)}</p>` : ''}
   </header>
   ${cards || '<div class="news-empty"><h2>Keine belastbare neue Entwicklung in diesem Zeitraum.</h2><p>Der Ticker f\u00fcllt keine Ausgabe k\u00fcnstlich.</p></div>'}
 </section>`;
