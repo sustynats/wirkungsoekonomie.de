@@ -12,17 +12,18 @@
     "run": {
       "firstSeen": "2026-09-21T06:28:16.252Z",
       "active": true
-    },
-    "academy": {
-      "firstSeen": "2026-09-22T02:05:53.723Z",
-      "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-09-22T02:05:53.723Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "2548744a479bb433efaffa58",
+      "content": "✓ WÖk-Störung behoben\nAkademie\nPrüfung: 2026-09-22T02:20:46.917Z"
+    },
+    {
+      "id": "44b0e68b58758b96be0e5fa5",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-09-22T02:20:46.917Z"
+    }
+  ],
   "dailyDate": "2026-09-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1693,7 +1694,7 @@
       }
     },
     "last_new_at": "2026-09-21T05:50:49.010Z",
-    "checked_at": "2026-09-22T02:16:09.565Z",
+    "checked_at": "2026-09-22T02:20:46.917Z",
     "last_current_new_at": "2026-09-21T05:50:49.010Z"
   },
   "recovery_attempts": [
