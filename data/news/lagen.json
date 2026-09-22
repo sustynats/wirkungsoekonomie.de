@@ -1,7 +1,80 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-22T04:00:00.000Z",
+  "updated_at": "2026-09-22T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-22-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-22",
+      "window_from": "2026-09-22T04:00:00.000Z",
+      "window_to": "2026-09-22T10:00:00.000Z",
+      "stand": "2026-09-22T10:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 5,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-33f4aabbf0dabd4f",
+          "slug": "berlin-brandenburg-evonik-kundigt-abbau-von-3-200-stellen-ab-dabd4f",
+          "title": "Evonik kündigt laut Stern Abbau von 3.200 Stellen an",
+          "state": "neu",
+          "at": "2026-09-22T09:58:28.106Z",
+          "score": 7.9957
+        },
+        {
+          "story_id": "wt-b8f4f0a8e55c0e9b",
+          "slug": "borse-dax-mit-gewinnen-nasdaq-auf-rekordhoch-5c0e9b",
+          "title": "Dax gerät ins Minus, Nasdaq erreicht Rekordhoch",
+          "state": "neu",
+          "at": "2026-09-22T08:11:37.840Z",
+          "score": 5.699
+        },
+        {
+          "story_id": "wt-f205d07a7d4f5073",
+          "slug": "einsatz-in-gelsenkirchen-passanten-bedroht-polizei-schiesst-auf-38-jahrigen-4f5073",
+          "title": "Laut WDR: Polizistin schießt in Gelsenkirchen auf bewaffneten Mann",
+          "state": "fortgeschrieben",
+          "at": "2026-09-22T07:02:29.451Z",
+          "score": 9.7569
+        },
+        {
+          "story_id": "wt-bd65c0cb99b2f858",
+          "slug": "nachtliche-evakuierung-nach-kampfmittelfung-in-nideggen-b2f858",
+          "title": "Rund 100 Menschen verlassen nachts Häuser in Nideggen-Schmidt nach Kampfmittelfund",
+          "state": "neu",
+          "at": "2026-09-22T06:52:52.265Z",
+          "score": 3.4802
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj bietet Deeskalation bei Ende russischer Angriffe auf ukrainische Infrastruktur an",
+          "state": "fortgeschrieben",
+          "at": "2026-09-22T06:43:21.543Z",
+          "score": 5.2038
+        },
+        {
+          "story_id": "wt-7bfb8f8b229f214e",
+          "slug": "100-tage-geas-reform-eingesperrt-am-flughafen-9f214e",
+          "title": "GEAS-Reform: laut taz Berichte über Haft in Flughafenverfahren",
+          "state": "neu",
+          "at": "2026-09-22T05:17:10.002Z",
+          "score": 9.2144
+        },
+        {
+          "story_id": "wt-60c5b772d4fa9730",
+          "slug": "un-generaldebatte-iran-krieg-und-gronland-abkommen-trumps-agenda-in-new-york-fa9730",
+          "title": "UN-Generaldebatte in New York steht im Zeichen ungelöster Konflikte",
+          "state": "neu",
+          "at": "2026-09-22T04:58:04.226Z",
+          "score": 3.1613
+        }
+      ]
+    },
     {
       "publication_recovery": {
         "recovered_at": "2026-09-22T05:33:26.129Z",
