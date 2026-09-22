@@ -17,15 +17,31 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: woek-parlament-app
     steps:
-      - name: Process approvals and create new political deltas
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: woek-parlament-app/package-lock.json
+      - run: npm ci --ignore-scripts
+      - name: Process approvals and create new political deltas outside Vercel
         env:
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
-          FORCE_SLOT: ${{ github.event_name == 'workflow_dispatch' && '?force=AM' || '' }}
-        run: |
-          test -n "$CRON_SECRET"
-          curl --fail-with-body --silent --show-error \
-            --retry 3 --retry-all-errors --max-time 600 \
-            -H "Authorization: Bearer $CRON_SECRET" \
-            "https://parlament.wirkungsoekonomie.de/api/cron/political-autopilot${FORCE_SLOT}"
+          WOEK_AUTOPILOT_RUNTIME_MODE: ${{ vars.WOEK_AUTOPILOT_RUNTIME_MODE }}
+          WOEK_AUTOPILOT_FORCE_SLOT: ${{ github.event_name == 'workflow_dispatch' && 'AM' || '' }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DIP_API_KEY: ${{ secrets.DIP_API_KEY }}
+          DIP_LOOKAHEAD_DAYS: "10"
+          DIP_WAHLPERIODE: "21"
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+          DISCORD_BOT_TOKEN: ${{ secrets.WOEK_MONITOR_DISCORD_BOT_TOKEN }}
+          DISCORD_REVIEW_RECIPIENT_USER_ID: ${{ secrets.WOEK_MONITOR_DISCORD_USER_ID }}
+          NEXT_PUBLIC_PORTAL_URL: https://parlament.wirkungsoekonomie.de
+        run: npm run autopilot:run

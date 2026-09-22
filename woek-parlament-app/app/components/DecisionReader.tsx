@@ -47,7 +47,8 @@ export function DecisionFragmentAccess({ viewKey }: { viewKey: string }) {
       if (panel?.hidden && panel.dataset.decisionPanel) {
         const url = new URL(window.location.href);
         url.searchParams.set("ansicht", panel.dataset.decisionPanel);
-        router.replace(url.pathname + url.search + url.hash, { scroll: false });
+        if (process.env.NEXT_PUBLIC_WOEK_STATIC_HOST === "1") window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+        else router.replace(url.pathname + url.search + url.hash, { scroll: false });
         return;
       }
       for (let parent: HTMLElement | null = target; parent; parent = parent.parentElement) {

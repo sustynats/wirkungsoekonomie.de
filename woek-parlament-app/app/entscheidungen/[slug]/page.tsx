@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { AssessmentExplainer } from "@/app/components/AssessmentExplainer";
 import { BookmarkLink } from "@/app/components/BookmarkLink";
 import { GlossaryBasics } from "@/app/components/GlossaryBasics";
@@ -13,16 +14,17 @@ import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { ImpactSignature } from "@/app/components/ImpactSignature";
 import { projectImpactSignature, findingExcerpt } from "@/lib/presentation/impact-signature";
-import { decisionViews, resolveDecisionView, decisionReaderTitles, decisionReaderParagraphs } from "@/lib/presentation/decision-depth";
-import { DecisionReader, DecisionFragmentAccess } from "@/app/components/DecisionReader";
+import { decisionReaderTitles, decisionReaderParagraphs } from "@/lib/presentation/decision-depth";
+import { DecisionReader } from "@/app/components/DecisionReader";
 import { ImpactChain } from "@/app/components/ImpactChain";
 import { ReferenceChips, QuestionRing, ProcedureStepper } from "@/app/components/DecisionEvidenceVisuals";
 import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { DecisionTransparency, DecisionViewPanel, DecisionViewTabs } from "@/app/components/DecisionViewTabs";
 import { SamePageStateLink } from "@/app/components/SamePageNavigation";
 import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
-import { getCase, formatDate, materialityLabel } from "@/lib/cases";
+import { getCase, formatDate, listPublishedCases, materialityLabel } from "@/lib/cases";
 import { caseKindLabel, humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
 import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 import { parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
@@ -33,7 +35,11 @@ import { getCasePublicationSource } from "@/lib/publication/fachakten";
 import { publicParliamentSummary } from "@/lib/public-api";
 import { parliamentExecutiveImpactSummary } from "@/lib/executive-impact/parliament";
 
-export const dynamic = "force-dynamic";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return listPublishedCases().map((item) => ({ slug: item.slug }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -77,9 +83,8 @@ function reviewStatuses(item: NonNullable<ReturnType<typeof getCase>>) {
   };
 }
 
-export default async function DecisionPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ ansicht?: string }> }) {
+export default async function DecisionPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { ansicht } = await searchParams;
   const item = getCase(slug);
   if (!item) notFound();
   const normativeMapping = item.publicAssessment?.normativeMapping ?? item.publicWorkingAct?.normativeMapping;
@@ -87,8 +92,6 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const overviewAssessment = parliamentaryOverviewAssessment(item);
   const executiveSummary = overviewAssessment && item.publicWorkingAct ? parliamentExecutiveImpactSummary(item, overviewAssessment) : null;
   const editoriallyPublished = Boolean(overviewAssessment);
-  const activeView = resolveDecisionView(ansicht);
-  const visibleDecisionViews = decisionViews;
   const readerTitles = decisionReaderTitles(item);
   const readerParagraphs = editoriallyPublished ? decisionReaderParagraphs(item) : null;
   const publicationCaseId = typeof item.publicWorkingAct?.fullReview?.result.case_id === "string" ? item.publicWorkingAct.fullReview.result.case_id : "";
@@ -104,7 +107,6 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const signature = projectImpactSignature(overviewAssessment, publicMaturity);
   return (
     <div className="shell decision-page decision-page--depths">
-      <DecisionFragmentAccess viewKey={ansicht ?? ""} />
       <DecisionReader>
         <section className="decision-tier-one" aria-label="Wirkungsakte auf einen Blick">
           <p className="record-context"><Link href="/wirkungsakten">Wirkungschecks</Link><span aria-hidden="true">/</span><span>{caseKindLabel(item.kind)}</span><span className="chip">{materialityLabel(item.materiality)}</span></p>
@@ -125,20 +127,18 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         </section>
         <div className="decision-depth-layout">
           <div className="decision-depth-main">
-            <nav className="decision-view-nav" aria-label="Ansichten dieser Wirkungsakte">
-              <p><strong>Wirkungsakte</strong><span>60 Sekunden zuerst, Details gezielt öffnen.</span></p>
-              <div>{visibleDecisionViews.map((view) => <SamePageStateLink key={view.id} href={view.id === "sachverhalt" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</SamePageStateLink>)}</div>
-            </nav>
+            <Suspense fallback={<div className="decision-view-nav" aria-hidden="true" />}>
+              <DecisionViewTabs slug={item.slug} />
 
-            <section data-decision-panel="sachverhalt" hidden={activeView !== "sachverhalt"} aria-label="Sachverhalt">
+            <DecisionViewPanel id="sachverhalt" label="Sachverhalt">
               {item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}
               <section className="sixty-second" aria-labelledby="sixty-second-title" data-woek-substantive-impact={editoriallyPublished ? "published" : undefined}><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>
               {editoriallyPublished && <DecisionReadinessGate decisionBasis={statuses.decisionBasis} />}
               {decisionReview && <ProblemGoalReview impactCaseId={reviewCaseId} />}
               {editoriallyPublished && <GlossaryBasics termKeys={item.publicAssessment ? ["wirkung", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "nichtkompensation"] : ["wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "rueckkopplung"]} />}
-            </section>
+            </DecisionViewPanel>
 
-            <section data-decision-panel="wirkungsanalyse" hidden={activeView !== "wirkungsanalyse"} aria-label="Wirkungsanalyse">
+            <DecisionViewPanel id="wirkungsanalyse" label="Wirkungsanalyse">
               <ImpactSignature signature={signature} />
               {executiveSummary ? <ExecutiveImpactSummaryView summary={executiveSummary} /> : overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : null}
               <PublicMaturity maturity={publicMaturity} />
@@ -151,28 +151,28 @@ export default async function DecisionPage({ params, searchParams }: { params: P
                 <aside className="decision-section side-card"><p className="eyebrow">Betroffene</p><h2>Wer oder was kann betroffen sein?</h2>{item.affectedGroups.length ? <ul>{item.affectedGroups.map((group) => <li key={group}>{group}</li>)}</ul> : <p>Die fachliche Befüllung folgt nach Fall- und Quellenprüfung.</p>}</aside>
               </div>}
               {!item.publicWorkingAct && <section className="decision-section recommendation-block"><p className="eyebrow">WÖk-Facheinordnung</p><h2>Noch nicht veröffentlicht</h2><p>Eine WÖk-Facheinordnung folgt nur aus einer dokumentierten Fallprüfung, Evidenz, Gegenargumenten und nachvollziehbaren Grenzen. Diese Seite ersetzt kein Rechtsgutachten und keine parlamentarische Entscheidung.</p></section>}
-            </section>
+            </DecisionViewPanel>
 
-            <section data-decision-panel="evidenz" hidden={activeView !== "evidenz"} aria-label="Evidenz und Grenzen">
+            <DecisionViewPanel id="evidenz" label="Evidenz und Grenzen">
               {editoriallyPublished && item.publicWorkingAct && overviewAssessment && <WorkingActExplainer workingAct={item.publicWorkingAct} view="berechnungen" publicEvidenceSummary={overviewAssessment.evidenceSummary} />}
               {!item.publicWorkingAct && <section className="decision-section question-section"><p className="eyebrow">Prüffragen</p><h2>Was muss vor einer Bewertung geklärt werden?</h2><ol>{item.questions.map((question) => <li key={question}>{question}</li>)}</ol></section>}
               {editoriallyPublished && <p><a href="#decision-transparency">Transparenzansicht öffnen</a></p>}
               {!editoriallyPublished && <p>Die fallbezogene Evidenzprüfung ist noch nicht redaktionell veröffentlicht. Fehlende Evidenz bedeutet nicht Neutralität.</p>}
-            </section>
+            </DecisionViewPanel>
 
-            <section data-decision-panel="quellen" hidden={activeView !== "quellen"} aria-label="Quellen">
+            <DecisionViewPanel id="quellen" label="Quellen">
               <section id="quellen" className="decision-section" data-woek-source-layer="published"><p className="eyebrow">Quellen und Grenzen</p><h2>Worauf stützt sich diese Seite?</h2><p className="section-intro">Jede Quelle wird zuerst im Quellenarchiv eingeordnet – mit Herausgeber, Fassung, zeitlicher Rolle und ihrer Verwendung in diesem Check.</p><div className="source-list">{item.sources.map((source) => <article key={source.url}><h3><Link href={sourceDetailHrefForUrl(source.url)}>{source.title}</Link></h3><p>{source.publisher} · abgerufen {formatDate(source.retrievedAt)}</p><p>{source.note}</p><Link className="text-link" href={sourceDetailHrefForUrl(source.url)}>Quellendetail ansehen →</Link></article>)}</div></section>
-            </section>
+            </DecisionViewPanel>
 
-            <section data-decision-panel="verlauf" hidden={activeView !== "verlauf"} aria-label="Verlauf">
+            <DecisionViewPanel id="verlauf" label="Verlauf">
               <section className="decision-section"><p className="eyebrow">Fassung und Änderung</p><h2>Welche Version wurde betrachtet?</h2><p>{item.versionNote}</p><details className="notice"><summary><strong>Technische Nachvollziehbarkeit der Fassung</strong></summary><p>Ein Dokumentvergleich hält Originalquelle, Abrufzeit und die nachvollziehbaren Folgen für die WÖk-Analyse fest.</p></details></section>
               {editoriallyPublished && <section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p>{item.publicWorkingAct?.reviewDetail?.feedback?.interpretation || "Noch keine fachlich freigegebene ex-post Wirkungsbeobachtung veröffentlicht. Aus dem parlamentarischen Status wird keine Wirkung abgeleitet."}</p></section>}
-            </section>
+            </DecisionViewPanel>
 
-            {editoriallyPublished && <details id="decision-transparency" className="decision-transparency" open={ansicht === "fachakte"}>
-              <summary>Rechenweg, Annahmen und Versionsstand öffnen</summary>
+            {editoriallyPublished && <DecisionTransparency>
               {completePublication ? <CompletePublicationSource source={completePublication} idPrefix="vollstaendige-fachakte" /> : item.publicWorkingAct?.fullReview ? <FullReviewRecord review={item.publicWorkingAct.fullReview} /> : <p>Keine zusätzliche Transparenzakte veröffentlicht. Die vollständigen vorhandenen Angaben stehen in den fünf Ansichten.</p>}
-            </details>}
+            </DecisionTransparency>}
+            </Suspense>
           </div>
 
           <aside className="decision-rail">

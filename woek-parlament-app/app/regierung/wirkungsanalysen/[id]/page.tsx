@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GovernmentImpactCase, GovernmentProcessSection } from "@/app/components/government/GovernmentImpactCase";
-import { historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
+import { getPublicImpactCases, historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
 import { analysisUpdatesForImpactCase, evidenceEventsForImpactCase } from "@/lib/observatory/public-data";
 import { publicSystemLabel } from "@/lib/presentation/labels";
 import { ActionPlanMetaDetail, ActionPlanMissionDetail } from "@/app/components/government/StrategyImpactCase";
-import { ACTION_PLAN_META_ID, getActionPlanMission } from "@/lib/government/strategy-impact";
+import { ACTION_PLAN_META_ID, getActionPlanMission, getActionPlanMissions } from "@/lib/government/strategy-impact";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  const ids = new Set([
+    ACTION_PLAN_META_ID,
+    ...getActionPlanMissions().map((mission) => mission.id),
+    ...getPublicImpactCases().map((record) => record.impact_case_id),
+  ]);
+  return [...ids].map((id) => ({ id }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;

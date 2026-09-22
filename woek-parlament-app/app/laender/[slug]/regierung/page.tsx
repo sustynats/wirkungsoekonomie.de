@@ -1,8 +1,14 @@
 import { notFound } from "next/navigation";
 import ApprovedStateReview from "@/app/components/ApprovedStateReview";
-import { stateJurisdictionBySlug } from "@/lib/autopilot/registry";
+import { stateJurisdictionBySlug, stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
 import { loadApprovedStateReview, statePublicContentBySlug } from "@/lib/states/public-content";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return stateJurisdictions.map((state) => ({ slug: stateSlug(state.jurisdiction_id) }));
+}
 
 export default async function StateGovernmentPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

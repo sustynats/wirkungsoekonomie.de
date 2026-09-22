@@ -5,10 +5,16 @@ import { CompleteSourceRecord } from "@/app/components/CompleteSourceRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { getPublicCommitmentRegister } from "@/lib/commitments/public-register";
+import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { getFederalPublicationSource } from "@/lib/publication/fachakten";
 import { factOnlyPublicMaturity, publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return politicalSourceCatalog.map((source) => ({ sourceKey: source.sourceKey }));
+}
 
 type Overview = { summary?: unknown; review_status?: unknown; commitment_count?: unknown };
 

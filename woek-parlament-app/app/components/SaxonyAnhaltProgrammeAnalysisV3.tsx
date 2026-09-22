@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { ImpactVisualScenario } from "@/app/components/impact-visuals/ImpactVisualScenario";
 import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
+import { ProgrammeCommitmentDirectory } from "@/app/components/states/ProgrammeCommitmentDirectory";
 import type { SaxonyAnhaltElectionProgramme } from "@/data/sachsen-anhalt-election-programmes";
 import {
   saxonyAnhaltCommitmentEditorial,
@@ -330,14 +330,11 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   if (!programmeVisual || !caseVisual) throw new Error(`Missing Sachsen-Anhalt impact visual contract for ${programme.sourceKey}`);
   const counts = summarizeStatuses(model.commitments);
   const decisionDate = formatDate(programme.decisionDate);
-  const groups = new Map<string, ProgrammeCommitment[]>();
-  for (const commitment of model.commitments) {
-    const domain = commitment.policyDomain ?? "Weitere Themen / Zuordnung offen";
-    groups.set(domain, [...(groups.get(domain) ?? []), commitment]);
-  }
-  const grouped = [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0], "de"));
+  const reviewedCommitments = model.commitments.filter((commitment) => Boolean(saxonyAnhaltCommitmentEditorial(programme.sourceKey, commitment.key)));
   const reviewedCount = Object.keys(editorial.centralAssessments).length;
   const executiveSummary = saxonyAnhaltExecutiveImpactSummary({ sourceKey: programme.sourceKey, model, editorial, communication: communicationImpact });
+  const reviewArchiveHref = `/wirkungsakten/fachakten/${encodeURIComponent(review.id)}`;
+  const commitmentArchiveHref = `/wirkungsakten/fachakten/${encodeURIComponent(commitments.id)}`;
 
   return <div className={styles.page} data-woek-sachsen-anhalt-public="programme-blueprint-v3">
     <section className={styles.hero}>
@@ -391,24 +388,19 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
 
     <section id="vollstaendige-wirkungsakte" aria-labelledby="einzel-title">
       <div className={styles.sectionHeader}>
-        <p className={styles.eyebrow}>Einzelanalysen</p>
+        <p className={styles.eyebrow}>Objektspezifisch geprüfte Vertiefungen</p>
         <h2 id="einzel-title">Vom schnellen Befund in die Tiefe.</h2>
         <p className={styles.lead}>Jede Zusage beginnt mit Wirkungsrichtung, Evidenz, Key Finding und Entscheidungsreife. Nicht verifizierte Alt-Templates werden nicht mehr als Kurzbewertung ausgegeben.</p>
+        <p>Diese Auswahl enthält ausschließlich Zusagen mit eigener redaktioneller Detailprüfung. Sie ist keine repräsentative Auswahl des Gesamtprogramms und wird nicht zu einer Parteigesamtnote verdichtet.</p>
       </div>
       <div className={styles.auditNotice}><strong>Themenzuordnung im Re-Audit</strong><p>Die Gruppierung übernimmt vorläufig die technische Themenzuordnung des Release-1-Registers. Wo Originaltext und Zuordnung kollidieren, hat der Originaltext Vorrang; die Zuordnung ist kein fachliches Urteil.</p></div>
-      <div className={styles.domainList}>
-        {grouped.map(([domain, entries]) => <details className={styles.domain} key={domain}>
-          <summary>{domain} · {entries.length.toLocaleString("de-DE")} Zusagen <span className={styles.summaryTeaser}>Öffnen für Einzelbefunde</span></summary>
-          <div className={styles.domainBody}><div className={styles.commitmentList}>{entries.map((commitment) => <div id={`commitment-${commitment.index}`} key={commitment.key}><CommitmentDetail sourceKey={programme.sourceKey} commitment={commitment} /></div>)}</div></div>
-        </details>)}
-      </div>
+      <p className={styles.summaryTeaser}>Öffnen für Einzelbefunde</p>
+      <div className={styles.commitmentList}>{reviewedCommitments.map((commitment) => <div id={`commitment-${commitment.index}`} key={commitment.key}><CommitmentDetail sourceKey={programme.sourceKey} commitment={commitment} /></div>)}</div>
     </section>
 
     <section id="vollstaendiges-zusageregister" aria-labelledby="register-title">
-      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Historisches Zusageregister</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Der versionierte Release-1-Arbeitsbestand bleibt vollständig nachvollziehbar erhalten. Er umfasst {model.commitments.length.toLocaleString("de-DE")} historische Einträge und wird nicht mit dem terminalen Nenner von {terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")} autoritativen Source Units verrechnet.</p></div>
-      <details className={styles.proof}><summary>Historisches Arbeitsregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} unveränderte Release-1-Einträge</span></summary><div className={styles.proofBody}>
-        {model.commitments.map((commitment) => <p key={`register-${commitment.key}`}><strong>{commitment.index}.</strong> {commitment.sourceText}{commitment.page ? ` · Seite ${commitment.page}` : ""}</p>)}
-      </div></details>
+      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Historisches Zusageregister</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Der versionierte Release-1-Arbeitsbestand bleibt vollständig nachvollziehbar erhalten. Er umfasst {model.commitments.length.toLocaleString("de-DE")} historische Einträge und wird nicht mit dem terminalen Nenner von {terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")} autoritativen Source Units verrechnet.</p><p>Der Browser lädt dafür einen kompakten, unveränderlichen Suchindex; die vollständigen Fachquellen bleiben getrennte Publikationsartefakte.</p><p><Link href={commitmentArchiveHref}>Historisches Arbeitsregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} unveränderte Release-1-Einträge</span></Link></p></div>
+      <ProgrammeCommitmentDirectory sourceKey={programme.sourceKey} expectedTotal={model.commitments.length} archiveHref={commitmentArchiveHref} />
     </section>
 
     <section id="quellenstatus" aria-labelledby="quellenstatus-title">
@@ -425,14 +417,16 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
       <p><Link href="/laender/sachsen-anhalt/quellen">Originalquellen und Programmnachweise öffnen →</Link></p>
     </section>
 
-    <details className={styles.proof}>
-      <summary>Fachlicher Vollnachweis und technische Prüfinformationen <span className={styles.summaryTeaser}>Historische Fachquelle vollständig erhalten.</span></summary>
-      <div className={styles.proofBody} data-woek-technical-proof="programme-full-source">
-        <p>Die neue Lesefassung überschreibt keine historische Analyse. Für Reproduzierbarkeit bleiben die autorisierten Release-1-Fachquellen unverändert abrufbar.</p>
-        <CompletePublicationSource source={review} idPrefix="fachlicher-vollnachweis-wirkungsakte" />
-        <CompletePublicationSource source={commitments} idPrefix="fachlicher-vollnachweis-zusageregister" />
-      </div>
-    </details>
+    <section className={styles.proof} data-woek-technical-proof="programme-full-source">
+      <h2>Fachlicher Vollnachweis und technische Prüfinformationen</h2>
+      <p className={styles.summaryTeaser}>Historische Fachquelle vollständig erhalten.</p>
+      <p>Die neue Lesefassung überschreibt keine historische Analyse. Für Reproduzierbarkeit bleiben die autorisierten Release-1-Fachquellen unverändert abrufbar.</p>
+      <p>Große Vollarchive werden nicht mehr in jede Übersichtsseite eingebettet, sondern als eigene statische Publikationsakten ausgeliefert.</p>
+      <ul className={styles.sourceList}>
+        <li><Link href={reviewArchiveHref}>Vollständige historische Wirkungsakte öffnen →</Link></li>
+        <li><Link href={commitmentArchiveHref}>Vollständiges Zusageregister öffnen →</Link></li>
+      </ul>
+    </section>
 
     <p><Link href="/laender/sachsen-anhalt">← Zurück zur Übersicht Sachsen-Anhalt</Link></p>
   </div>;

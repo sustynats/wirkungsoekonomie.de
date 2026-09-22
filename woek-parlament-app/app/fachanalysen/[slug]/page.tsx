@@ -10,12 +10,17 @@ import { CompletePublicationSource } from "@/app/components/CompletePublicationS
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import type { FachanalyseSource } from "@/data/fachanalysen";
 import { fullAnalysisBySlug } from "@/data/fachanalysen-full";
-import { getFachanalyse } from "@/lib/fachanalysen";
+import { getFachanalyse, listFachanalysen } from "@/lib/fachanalysen";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { getSpecialistPublicationSource } from "@/lib/publication/fachakten";
 import { publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return listFachanalysen().map((analysis) => ({ slug: analysis.slug }));
+}
 
 function formatDate(value: string) {
   const parsed = new Date(`${value}T12:00:00Z`);
