@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { readNewsroom } from './newsroom-store.mjs';
 import { assertAutomaticImpactTransport } from './processing-mode.mjs';
 import { backgroundBatchEligibility, batchStoryFingerprint, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
 import { editorialContentSnapshot } from "./editorial-judgment.mjs";
@@ -208,7 +209,7 @@ export async function runEditorialAnalyses({
   const usageFile = path.join(root, "data/news/usage.json");
   const stateFile = path.join(root, "data/news/state.json");
   const storyStore = read(storiesFile, { stories: [] });
-  const newsroom = read(path.join(root, "data/news/newsroom.json"), { source_items: {} });
+  const newsroom = readNewsroom(path.join(root, "data/news/newsroom.json"), { source_items: {} });
   const newsRegistry = registry || (fs.existsSync(path.join(root, "content/news/source-registry.json")) ? loadNewsRegistry(root) : { sources: [] });
   const state = read(stateFile, {});
   const usage = read(usageFile, { runs: [] });

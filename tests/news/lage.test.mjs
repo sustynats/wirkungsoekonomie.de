@@ -212,6 +212,18 @@ test('der Ticker-Lauf schreibt die Lage und baut sie vor dem Commit', async () =
 // die Auslieferung haengt am Schritt „Publish the committed ticker
 // automatically", und der lief nur, wenn der Lauf eine MELDUNG veroeffentlicht
 // hatte. Eine Lage ohne neue Meldung blieb damit unsichtbar.
+test('nachgeholte Lagen behalten ihren transparenten Hinweis auch im normalen Folgelauf', async () => {
+  const { lageBody } = await import('../../scripts/news/build.mjs');
+  const lage = buildLage({ slot: 'morgenlage', now: '2026-09-22T04:00:00Z', stories: [] });
+  const publication_recovery = { recovered_at: '2026-09-22T05:30:00Z', note: 'Nachträglich bereitgestellt <geprüft>' };
+  const store = upsertLage({ lagen: [{ ...lage, publication_recovery }] }, lage);
+  assert.deepEqual(store.lagen[0].publication_recovery, publication_recovery);
+  const html = lageBody(store.lagen[0], new Map());
+  assert.ok(html.includes('Nachträglich bereitgestellt &lt;geprüft&gt;'));
+  assert.ok(html.includes('role="note"'));
+  assert.ok(!lageBody(lage, new Map()).includes('Nachträglich bereitgestellt'));
+});
+
 test('eine Lage ohne neue Meldung wird ausgeliefert', async () => {
   const fs = await import('node:fs');
   const yaml = fs.readFileSync(new URL('../../.github/workflows/wirkungsticker.yml', import.meta.url), 'utf8');

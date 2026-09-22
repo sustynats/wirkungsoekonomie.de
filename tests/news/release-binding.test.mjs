@@ -39,6 +39,10 @@ function runStep(t, source, name, values = {}) {
       esac
     }
     node() {
+      if [[ "$1" == "scripts/news/check-git-size.mjs" ]]; then
+        [[ "$TEST_SIZE_GUARD_FAIL" != "true" ]] || return 72
+        return 0
+      fi
       [[ "$1" == "scripts/news/publish-git.mjs" ]] || return 91
       [[ "$TEST_PUSH_SUCCEEDS" == "true" ]] || return 71
       fake_head="$PUBLISHED_COMMIT"
@@ -52,7 +56,7 @@ function runStep(t, source, name, values = {}) {
       GITHUB_OUTPUT: files.output, GITHUB_STEP_SUMMARY: files.summary, TEST_CALLS: files.calls,
       GITHUB_EVENT_NAME: "workflow_dispatch", GITHUB_SHA: oldCommit,
       INITIAL_COMMIT: oldCommit, PUBLISHED_COMMIT: pushedCommit,
-      TEST_CHANGED: "true", TEST_PUSH_SUCCEEDS: "true", SLOT_NAME: "Fixture",
+      TEST_CHANGED: "true", TEST_PUSH_SUCCEEDS: "true", TEST_SIZE_GUARD_FAIL: "false", SLOT_NAME: "Fixture",
       TEST_STAGED_FILES: "data/news/stories.json wirkungsticker/lage/2026-09-20-morgenlage/index.html",
       TICKER_COMMIT: pushedCommit, TICKER_ONLY: "true", EXPECTED_COMMIT: oldCommit,
       ...values,
@@ -75,6 +79,13 @@ test("failed publication and unchanged work cannot advertise a releasable commit
   const unchanged = runStep(t, worker, "Commit one atomic update", { TEST_CHANGED: "false" });
   assert.equal(unchanged.status, 0);
   assert.equal(unchanged.output, "changed=false\n");
+});
+
+test("oversized staged files fail before a release can be advertised", t => {
+  const result = runStep(t, worker, "Commit one atomic update", { TEST_SIZE_GUARD_FAIL: "true" });
+  assert.equal(result.status, 72);
+  assert.equal(result.output, "");
+  assert.equal(result.calls, "");
 });
 
 // 20.09.2026: Die Morgenlage lag committet im Repository und war nicht im Netz.

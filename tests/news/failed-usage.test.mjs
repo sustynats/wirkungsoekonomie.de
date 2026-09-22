@@ -10,11 +10,13 @@ test('failure checkpoint retains routing and editorial decisions alongside stori
   const checkpoint=yaml.slice(yaml.indexOf('- name: Preserve failed-run work'));
   for(const file of ['stories.json','state.json','newsroom.json','usage.json','editorial-analyses.json']) assert.ok(checkpoint.includes(`data/news/${file}`));
   assert.ok(checkpoint.includes('retention-days: 3'));
+  assert.ok(checkpoint.includes('data/news/newsroom.json.parts/'));
   assert.ok(!checkpoint.includes('.env'));
 });
 test('failed run report is parsed as data; no unpublished article counts as live', () => {
   const log = JSON.stringify(report,null,2).split('\n').map(line => `update\tImport, analyze and build\t2026-09-06T17:22:36Z ${line}`).join('\n');
   assert.deepEqual(reportFromRunLog(log),report);
+  assert.deepEqual(reportFromRunLog(log.replaceAll('Import, analyze and build', 'Import, analyze (one call per story) and build')),report);
   const usage = { runs:[] };
   assert.equal(recoverUsageReport(usage,report,workflow,'2026-09-06T18:00:00Z'),true);
   assert.equal(usage.runs[0].counts.published_stories,0);

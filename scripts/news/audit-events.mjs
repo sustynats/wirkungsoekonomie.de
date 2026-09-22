@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { readNewsroom } from './newsroom-store.mjs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { coverageAudit, observedMajorEvents } from './coverage-audit.mjs';
@@ -54,7 +55,7 @@ export function main(args = process.argv.slice(2)) {
   const date = value('date') || berlinDay(new Date());
   const report = read(path.join(ROOT, 'reports/wirkungsticker-latest-run.json'));
   const now = date === berlinDay(new Date()) ? new Date().toISOString() : berlinDayEnd(date);
-  const audit = auditDay({ date, now, newsroom: read(path.join(ROOT,'data/news/newsroom.json')), stories: read(path.join(ROOT,'data/news/stories.json')).stories, report, registry: loadNewsRegistry(ROOT) });
+  const audit = auditDay({ date, now, newsroom: readNewsroom(path.join(ROOT,'data/news/newsroom.json')), stories: read(path.join(ROOT,'data/news/stories.json')).stories, report, registry: loadNewsRegistry(ROOT) });
   const markdown = auditMarkdown(audit);
   if (value('out')) {
     const dir = path.resolve(value('out')); fs.mkdirSync(dir, { recursive: true });
