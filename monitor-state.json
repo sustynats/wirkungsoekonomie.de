@@ -12,17 +12,14 @@
     "run": {
       "firstSeen": "2026-09-21T06:28:16.252Z",
       "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-09-22T05:48:13.367Z",
-      "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-09-22T06:21:12.885Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5e0df60bc8b9f2f7128e513f",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-09-22T06:35:30.273Z"
+    }
+  ],
   "dailyDate": "2026-09-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1690,11 +1687,95 @@
       "https://wirkungsoekonomie.de/wirkungsticker/wahlen-linke-setzt-auf-berlin-erfolg-hoffnung-fur-leipzig-2027-63967e/": {
         "first_seen_at": "2026-09-21T05:50:49.010Z",
         "source_at": "2026-09-21T04:55:31.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/100-tage-geas-reform-eingesperrt-am-flughafen-9f214e/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-22T05:01:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/un-generaldebatte-iran-krieg-und-gronland-abkommen-trumps-agenda-in-new-york-fa9730/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-22T03:08:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nachtliche-evakuierung-nach-kampfmittelfung-in-nideggen-530320/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-22T01:34:49.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/evakuierung-haus-von-familie-wegen-rissen-evakuiert-abriss-nebenan-380b91/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-22T01:01:05.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-22T00:08:50.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/wirtschaft-porsche-chef-dementiert-medienbericht-uber-weiteren-stellenabbau-42b95e/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T19:27:53.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/landtagswahl-in-mv-linke-vorstand-in-mv-fur-sondierung-mit-spd-und-grunen-853d53/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T17:32:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mercedes-vorstand-kundigt-werkschliessungen-an-wenn-arbeitskosten-nicht-sinken-f6cb95/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T16:06:52.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kolumbien-waldbrand-in-touristenstadt-villa-de-leyva-teilweise-unter-kontrolle-c5f342/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T15:46:11.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bundestag-und-bundesrat-sollen-in-dieser-woche-neuen-tankrabatt-beschliessen-4114a6/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T14:01:35.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/burokratieabbau-im-tourismus-f5a277/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T13:38:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nachtlicher-messerangriff-mann-auf-heimweg-mit-messer-in-den-bauch-gestochen-b293b1/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T12:27:21.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/geteiltes-echo-zur-starkung-digitaler-ermittlungsbefugnisse-645523/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T12:00:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/streit-eskalierte-24-jahriger-nach-messerangriff-in-haft-f77ba4/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T11:52:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/wolfsburg-explosion-zerstort-kita-im-schachtweg-grosses-gluck-f2ad88/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T10:21:47.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bericht-aus-der-kabinettssitzung-vom-21-september-2026-c3381e/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T10:01:57.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/waldbrand-in-kolumbien-bedroht-bei-touristen-beliebte-andenstadt-villa-de-leyva-33aab6/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T09:39:38.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/zug-evakuiert-16-jahriger-fahrt-auf-zugdach-mit-und-erleidet-stromschlag-821608/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T09:23:04.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/protests-erupt-after-ice-shooting-in-texas-20395e/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T09:03:04.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/three-south-korean-soldiers-injured-in-dmz-explosion-seoul-says-abf3f0/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T07:59:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/die-juristische-presseschau-vom-19-bis-21-september-2026-prozess-gegen-scheuer-startet-j-fbe9ee/": {
+        "first_seen_at": "2026-09-22T06:35:30.273Z",
+        "source_at": "2026-09-21T05:25:00.000Z"
       }
     },
-    "last_new_at": "2026-09-21T05:50:49.010Z",
-    "checked_at": "2026-09-22T06:21:12.885Z",
-    "last_current_new_at": "2026-09-21T05:50:49.010Z"
+    "last_new_at": "2026-09-22T06:35:30.273Z",
+    "checked_at": "2026-09-22T06:35:30.273Z",
+    "last_current_new_at": "2026-09-22T06:35:30.273Z"
   },
   "recovery_attempts": [
     {
