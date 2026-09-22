@@ -20,6 +20,8 @@ import {
 
 const siteUrl = "https://parlament.wirkungsoekonomie.de";
 
+export const dynamic = "force-static";
+
 function entry(path: string, lastModified?: string, priority = 0.7): MetadataRoute.Sitemap[number] {
   return {
     url: `${siteUrl}${canonicalPortalHref(path)}`,

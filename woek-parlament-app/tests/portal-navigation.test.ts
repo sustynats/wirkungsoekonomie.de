@@ -14,6 +14,7 @@ test("exactly five ordered branches, one unambiguous location per route", () => 
     assert.ok(existsSync(`app${href}/page.tsx`), `missing destination ${href}`);
     assert.equal(portalBreadcrumbs(item.href).at(-1)?.href, href);
   }
+  assert.equal(portalBreadcrumbs("/ebenen/laender/").at(-1)?.href, "/ebenen/laender");
 });
 
 test("legacy lists are preserved as complete register views, families move in one hop", () => {

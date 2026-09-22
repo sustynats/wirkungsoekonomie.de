@@ -36,6 +36,13 @@ for (const filename of filesBelow(appRoot).filter((file) => /\/(page|layout)\.ts
   }
 }
 
+for (const filename of filesBelow(appRoot).filter((file) => /\/route\.ts$/.test(file) && !file.includes(`${path.sep}api${path.sep}`))) {
+  const source = readFileSync(filename, "utf8");
+  const relative = path.relative(root, filename);
+  if (/export const dynamic = ["']force-dynamic["']/.test(source)) failures.push(`${relative} forces a public route into request-time rendering.`);
+  if (relative.includes("[") && !/generateStaticParams/.test(source)) failures.push(`${relative} has a dynamic segment without generateStaticParams().`);
+}
+
 for (const relative of [
   "app/api/parliament/cases/route.ts",
   "app/api/parliament/cases/[slug]/route.ts",
@@ -44,6 +51,8 @@ for (const relative of [
   "app/api/health/route.ts",
   "app/fachakten/[id]/route.ts",
   "app/regierung/akte/index.json/route.ts",
+  "app/ebenen/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/index.json/route.ts",
+  "app/wirkungsakten/fachakten/[id]/route.ts",
 ]) {
   if (!/export const dynamic = ["']force-static["']/.test(read(relative))) failures.push(`${relative} must remain a static read route.`);
 }

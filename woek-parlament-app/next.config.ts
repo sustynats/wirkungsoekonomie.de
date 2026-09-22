@@ -23,15 +23,23 @@ const securityHeaders = [
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
 ];
 
+const staticPublicExport = process.env.WOEK_STATIC_PUBLIC_EXPORT === "1";
+
 const nextConfig: NextConfig = {
   // A handful of source-heavy programme pages intentionally render tens of
   // megabytes of reviewed local data. They are built once and then served as
   // static files; allow that local/release work to finish without retries.
   staticPageGenerationTimeout: 180,
-  async redirects() { return portalRedirects; },
-  async headers() {
-    return [{ source: "/(.*)", headers: securityHeaders }];
-  }
+  ...(staticPublicExport ? {
+    output: "export" as const,
+    trailingSlash: true,
+    images: { unoptimized: true },
+  } : {
+    async redirects() { return portalRedirects; },
+    async headers() {
+      return [{ source: "/(.*)", headers: securityHeaders }];
+    },
+  }),
 };
 
 export default nextConfig;

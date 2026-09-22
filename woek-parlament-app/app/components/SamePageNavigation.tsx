@@ -2,12 +2,21 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import type { ComponentProps, FormEvent, FormHTMLAttributes, ReactNode } from "react";
+import type { ComponentProps, FormEvent, FormHTMLAttributes, MouseEvent, ReactNode } from "react";
 
 type SamePageStateLinkProps = Omit<ComponentProps<typeof Link>, "scroll">;
 
 export function SamePageStateLink(props: SamePageStateLinkProps) {
-  return <Link {...props} scroll={false} />;
+  const { onClick, ...linkProps } = props;
+  function navigate(event: MouseEvent<HTMLAnchorElement>) {
+    onClick?.(event);
+    if (event.defaultPrevented || process.env.NEXT_PUBLIC_WOEK_STATIC_HOST !== "1") return;
+    const target = new URL(event.currentTarget.href);
+    if (target.pathname !== window.location.pathname) return;
+    event.preventDefault();
+    window.history.pushState(null, "", target.href);
+  }
+  return <Link {...linkProps} data-same-page-state scroll={false} onClick={navigate} />;
 }
 
 type SamePageQueryFormProps = Omit<FormHTMLAttributes<HTMLFormElement>, "action" | "method" | "onSubmit"> & {
@@ -25,7 +34,8 @@ export function SamePageQueryForm({ children, ...props }: SamePageQueryFormProps
       if (typeof value === "string" && value.trim()) query.append(name, value);
     }
     const target = query.size ? `${pathname}?${query.toString()}` : pathname;
-    router.push(target, { scroll: false });
+    if (process.env.NEXT_PUBLIC_WOEK_STATIC_HOST === "1") window.history.pushState(null, "", target);
+    else router.push(target, { scroll: false });
   }
 
   return <form {...props} action={pathname} method="get" onSubmit={submit}>{children}</form>;

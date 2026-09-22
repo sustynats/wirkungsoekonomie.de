@@ -28,7 +28,7 @@ const governmentFilter = source("app/components/government/GovernmentActionDirec
 const caseCard = source("app/components/CaseCard.tsx");
 const layout = source("app/layout.tsx");
 
-gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<Link \{\.\.\.props\} scroll=\{false\} \/>/.test(contract), "shared state Link must force Next.js scroll preservation");
+gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<Link \{\.\.\.linkProps\} data-same-page-state scroll=\{false\} onClick=\{navigate\} \/>/.test(contract), "shared state Link must preserve scroll and own static-host query navigation");
 gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /router\.push\(target, \{ scroll: false \}\)/.test(contract), "shared GET form must preserve viewport");
 gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /decisionViews\.map\(\(view\) => <SamePageStateLink/.test(decision) && /\?ansicht=\$\{view\.id\}/.test(decision), "all decision pills must use the shared contract");
 gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", (audience.match(/<SamePageStateLink\b/g) ?? []).length === 2, "both audience modes must use the shared contract");
