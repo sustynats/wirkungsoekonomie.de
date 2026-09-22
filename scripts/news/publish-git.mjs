@@ -4,6 +4,7 @@ import { isDeepStrictEqual } from "node:util";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { repositoryJson } from './newsroom-store.mjs';
 const exec = promisify(execFile);
 
 const GENERATED_PATHS = ["news", "wirkungsticker", "sitemap.xml", "assets/search/search-index.json", "public/data/woek-search-meta.json", "content/taxonomy/site-map.json", "umfragen", "admin/umfragen", "reports/wirkungsticker-source-integrity.json", "reports/wirkungsticker-source-portfolio.json", "data/wirkungsticker/source-audit-2026-09-05.json"];
@@ -84,7 +85,7 @@ export async function fetchPublicationBase(run = git) {
   throw new Error("PUBLISH_COMMON_ANCESTOR_NOT_FOUND");
 }
 
-export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => fs.writeFileSync(STORY_STORE, `${JSON.stringify(store, null, 2)}\n`), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
+export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => fs.writeFileSync(STORY_STORE, repositoryJson(store)), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
   let regenerated = false;
   for (let attempt = 1; attempt <= 3; attempt++) {
     const before = stdout(await run(["rev-parse", "HEAD"])).trim();
