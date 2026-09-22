@@ -1,11 +1,16 @@
 import { canonicalPortalHref, portalNavigation } from "@/lib/navigation";
-import { getPublicationSource } from "@/lib/publication/fachakten";
+import { allPublicationSourceRecords, getPublicationSource } from "@/lib/publication/fachakten";
 import { escapeHtml, renderPublicationMarkdown } from "@/lib/publication/markdown-renderer";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { publicArchiveText } from "@/lib/presentation/labels";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return allPublicationSourceRecords().map((record) => ({ id: record.id }));
+}
 
 function localReturnPath(value: string) {
   return value.startsWith("/") && !value.startsWith("//") ? value : "/";
@@ -72,7 +77,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
   return new Response(document, {
     headers: {
       "content-type": "text/html; charset=utf-8",
-      "cache-control": "private, no-store",
+      "cache-control": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400",
       "x-content-type-options": "nosniff"
     }
   });

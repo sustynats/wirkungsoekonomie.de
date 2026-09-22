@@ -305,12 +305,12 @@ test("government production routes remain closed until all gates pass", () => {
   assert.match(layout, /notFound\(\)/);
 });
 
-test("Vercel builds the approved Dropbox snapshot and GitHub schedules the cloud ingest", () => {
+test("the static release includes approved snapshots and GitHub runs ingest outside Vercel", () => {
   const vercel = JSON.parse(readFileSync("vercel.json", "utf8"));
   assert.equal(vercel.buildCommand, "npm run build");
   const workflow = readFileSync("../.github/workflows/political-autopilot.yml", "utf8");
-  assert.match(workflow, /api\/cron\/political-autopilot/);
-  assert.match(workflow, /secrets\.CRON_SECRET/);
+  assert.match(workflow, /npm run autopilot:run/);
+  assert.doesNotMatch(workflow, /parlament\.wirkungsoekonomie\.de\/api\/cron/);
   const packageJson = JSON.parse(readFileSync("package.json", "utf8"));
   assert.match(packageJson.scripts.prebuild, /government:sync-approved/);
   assert.match(packageJson.scripts.prebuild, /parliament:sync-approved/);

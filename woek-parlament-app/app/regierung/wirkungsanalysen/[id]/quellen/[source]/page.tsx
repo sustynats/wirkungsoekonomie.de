@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { impactCaseById } from "@/lib/government/impact-cases";
+import { getPublicImpactCases, impactCaseById } from "@/lib/government/impact-cases";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getPublicImpactCases().flatMap((record) => [
+    ...record.official_fact_sources.map((_, index) => ({ id: record.impact_case_id, source: `official-${index}` })),
+    ...record.mechanism_sources.map((_, index) => ({ id: record.impact_case_id, source: `mechanism-${index}` })),
+    ...record.post_decision_sources.map((_, index) => ({ id: record.impact_case_id, source: `post-decision-${index}` })),
+  ]);
+}
 
 const roleLabels = {
   official: { title: "Amtliche Faktenquelle", purpose: "Diese Quelle belegt den amtlichen Gegenstand, seinen Stand oder eine dokumentierte Entscheidung. Sie ist nicht automatisch ein Nachweis der Wirkung." },

@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { formatElectionDate, governmentLifecycleLabel, lifecycleLabel, stateJurisdictionBySlug } from "@/lib/autopilot/registry";
+import { formatElectionDate, governmentLifecycleLabel, lifecycleLabel, stateJurisdictionBySlug, stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
 import { statePublicContentBySlug } from "@/lib/states/public-content";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return stateJurisdictions.map((state) => ({ slug: stateSlug(state.jurisdiction_id) }));
+}
 
 export default async function StateHubPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

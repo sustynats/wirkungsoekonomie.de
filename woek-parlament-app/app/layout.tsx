@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import Link from "next/link";
+import Script from "next/script";
+import { Suspense } from "react";
 import { canonicalPortalHref } from "@/lib/navigation";
 import { PortalNav } from "@/app/components/PortalNav";
 import { PortalWayfinding } from "@/app/components/PortalWayfinding";
@@ -29,13 +30,24 @@ export const metadata: Metadata = {
     : {})
 };
 
-export const dynamic = "force-dynamic";
-
-export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  await connection();
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const staticPublicHost = process.env.NEXT_PUBLIC_WOEK_STATIC_HOST === "1";
   return (
     <html lang="de" data-scroll-behavior="smooth">
       <body>
+        {staticPublicHost && <Script id="woek-static-host-navigation" strategy="beforeInteractive">{`
+          document.addEventListener("click", function (event) {
+            if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            const anchor = event.target instanceof Element ? event.target.closest("a[href]") : null;
+            if (!anchor || anchor.target || anchor.hasAttribute("download")) return;
+            const target = new URL(anchor.href, location.href);
+            if (target.origin !== location.origin) return;
+            if (anchor.hasAttribute("data-same-page-state") && target.pathname === location.pathname) return;
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            location.assign(target.href);
+          }, true);
+        `}</Script>}
         <a className="skip-link" href="#content">Zum Inhalt springen</a>
         <SiteAnalyticsTracker />
         <header>
@@ -60,7 +72,9 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
                 <Link href={canonicalPortalHref("/suche")}>Suche</Link>
                 <WirkungsraumLink>Merkliste</WirkungsraumLink>
                 <Link href={canonicalPortalHref("/aktuell/radar-abo")}>Radar abonnieren</Link>
-                <AudienceModeSwitch />
+                <Suspense fallback={<span className="mode-switch" aria-hidden="true" />}>
+                  <AudienceModeSwitch />
+                </Suspense>
                 <a className="ecosystem-link" href="https://wirkungsoekonomie.de">Wirkungsökonomie.de <span aria-hidden="true">↗</span></a>
               </nav>
               <PortalNav />

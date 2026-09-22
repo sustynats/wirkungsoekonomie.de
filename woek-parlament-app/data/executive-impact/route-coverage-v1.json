@@ -98,8 +98,9 @@
     {
       "route_family": "Sachsen-Anhalt programme detail",
       "route_patterns": [
-        "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx",
-        "app/ebenen/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx"
+      "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx",
+      "app/ebenen/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx",
+      "app/ebenen/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/index.json/route.ts"
       ],
       "audited": true,
       "current": "Bottom line, MPD, directed SDG/SDG+, three material paths, noncompensation and evidence precede the approved programme image, communication analysis and all process/source detail.",
@@ -184,8 +185,9 @@
       "route_family": "Government discovery, actions and operational views",
       "route_patterns": [
         "app/regierung/page.tsx",
-        "app/regierung/akte/page.tsx",
-        "app/regierung/akte/[id]/page.tsx",
+    "app/regierung/akte/page.tsx",
+    "app/regierung/akte/index.json/route.ts",
+    "app/regierung/akte/[id]/page.tsx",
         "app/regierung/wirkungsanalysen/page.tsx",
         "app/regierung/haushalt-foerderung/page.tsx",
         "app/regierung/kabinett/page.tsx",

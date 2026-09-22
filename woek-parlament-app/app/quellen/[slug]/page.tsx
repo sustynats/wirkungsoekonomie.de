@@ -4,9 +4,14 @@ import { notFound } from "next/navigation";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { assessmentOnlyPublicMaturity, factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
-import { getPublicSource, sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-registry";
+import { getPublicSource, listPublicSources, sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-registry";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return (await listPublicSources()).map((source) => ({ slug: source.slug }));
+}
 
 function dateLabel(value: string | null) {
   if (!value) return "nicht angegeben";

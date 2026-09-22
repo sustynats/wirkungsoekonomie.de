@@ -21,23 +21,23 @@ function gate(name, condition, detail) {
 }
 
 const contract = source("app/components/SamePageNavigation.tsx");
-const decision = source("app/entscheidungen/[slug]/page.tsx");
+const decision = source("app/components/DecisionViewTabs.tsx");
 const audience = source("app/components/AudienceModeSwitch.tsx");
-const sourcesPage = source("app/quellen/page.tsx");
-const governmentFilter = source("app/regierung/akte/page.tsx");
+const sourcesPage = source("app/components/SourceArchiveList.tsx");
+const governmentFilter = source("app/components/government/GovernmentActionDirectory.tsx");
 const caseCard = source("app/components/CaseCard.tsx");
 const layout = source("app/layout.tsx");
 
-gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<Link \{\.\.\.props\} scroll=\{false\} \/>/.test(contract), "shared state Link must force Next.js scroll preservation");
+gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<Link \{\.\.\.linkProps\} data-same-page-state scroll=\{false\} onClick=\{navigate\} \/>/.test(contract), "shared state Link must preserve scroll and own static-host query navigation");
 gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /router\.push\(target, \{ scroll: false \}\)/.test(contract), "shared GET form must preserve viewport");
-gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /visibleDecisionViews\.map\(\(view\) => <SamePageStateLink/.test(decision) && /\?ansicht=\$\{view\.id\}/.test(decision), "all decision pills must use the shared contract");
+gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /decisionViews\.map\(\(view\) => <SamePageStateLink/.test(decision) && /\?ansicht=\$\{view\.id\}/.test(decision), "all decision pills must use the shared contract");
 gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", (audience.match(/<SamePageStateLink\b/g) ?? []).length === 2, "both audience modes must use the shared contract");
 gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<SamePageQueryForm className="source-archive-search"/.test(sourcesPage), "source query form must use the shared contract");
-gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<SamePageQueryForm className="government-filter"/.test(governmentFilter), "government filters must use the shared contract");
+gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<SamePageQueryForm[^>]*className="government-filter"/.test(governmentFilter), "government filters must use the shared contract");
 
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", !/SamePageStateLink|scroll=\{false\}/.test(caseCard), "case-card cross-page links must keep framework default scrolling");
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", !/SamePageStateLink|scroll=\{false\}/.test(layout), "global cross-page navigation must keep framework default scrolling");
-gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", /<Link href=\{`\/quellen\?\$\{new URLSearchParams/.test(sourcesPage), "result pagination must remain normal page navigation");
+gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", /const pageHref = \(page: number\) => `\/quellen\?/.test(sourcesPage) && /<Link href=\{pageHref\(/.test(sourcesPage), "result pagination must remain normal page navigation");
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", /<html lang="de" data-scroll-behavior="smooth">/.test(layout), "Next.js must be told about the intentional global smooth-scroll CSS");
 
 for (const file of tsxFiles(appRoot)) {
@@ -51,7 +51,7 @@ for (const file of tsxFiles(appRoot)) {
     const [tag, component] = match;
     const hasQueryTarget = /href\s*=\s*(?:["'][^"']*\?|\{`[^`]*\?)/.test(tag);
     if (!hasQueryTarget || component === "SamePageStateLink") continue;
-    const isResultPagination = name === "app/quellen/page.tsx" && /\/quellen\?/.test(tag);
+    const isResultPagination = name === "app/components/SourceArchiveList.tsx" && /pageHref/.test(tag);
     gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", isResultPagination, `${name} contains an unclassified query Link outside the shared contract`);
   }
   const ownsSharedQueryForm = name === "app/components/SamePageNavigation.tsx";
