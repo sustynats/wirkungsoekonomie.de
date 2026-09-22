@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Amtlich belegte namentliche Abstimmungen neben transparenten, ex-ante wirkungsökonomischen Einordnungen."
 };
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 export default async function MembersPage() {
   const profiles = await listPublishedMemberProfiles().catch((error: unknown) => {

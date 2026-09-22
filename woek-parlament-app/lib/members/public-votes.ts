@@ -16,6 +16,16 @@ export type PublicVoteReference = {
   sourceUrl: string;
 };
 
+export async function listPublicVoteReferences(): Promise<PublicVoteReference[]> {
+  const rows = await supabaseRest<VoteEventRow[]>(
+    "parliament.vote_events?is_named_vote=eq.true&select=external_vote_id,vote_date,official_title,source_url,is_named_vote&order=vote_date.desc&limit=500"
+  );
+  return rows.flatMap((row) => {
+    const sourceUrl = isSafePublicSourceUrl(row.source_url);
+    return sourceUrl ? [{ externalVoteId: row.external_vote_id, voteDate: row.vote_date, title: row.official_title, sourceUrl }] : [];
+  });
+}
+
 export async function getPublicVoteReference(externalVoteId: string): Promise<PublicVoteReference | null> {
   const safeId = externalVoteId.trim();
   if (!/^[A-Za-z0-9_-]{4,120}$/.test(safeId)) return null;

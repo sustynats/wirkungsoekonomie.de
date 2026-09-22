@@ -2,10 +2,20 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GovernmentImpactCase, GovernmentProcessSection } from "@/app/components/government/GovernmentImpactCase";
 import { getPublicImpactCases, governmentEditorialProjection, publicRecordFromFullSchema } from "@/lib/government/impact-cases";
-import { getApprovedPoliticalImpactCase } from "@/lib/parliament/daily-impact-cases";
+import { getApprovedParliamentDailyImpactCases, getApprovedPoliticalImpactCase } from "@/lib/parliament/daily-impact-cases";
 import { analysisUpdatesForImpactCase, evidenceEventsForImpactCase } from "@/lib/observatory/public-data";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { publicSystemLabel } from "@/lib/presentation/labels";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  const ids = new Set([
+    ...getPublicImpactCases().map((record) => record.impact_case_id),
+    ...getApprovedParliamentDailyImpactCases().map((record) => record.impact_case_id),
+  ]);
+  return [...ids].map((id) => ({ id }));
+}
 
 export default async function ImpactCasePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

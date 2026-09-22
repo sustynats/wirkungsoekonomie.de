@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDnsIndicator } from "@/lib/indicators";
+import { getDnsIndicator, listDnsIndicators } from "@/lib/indicators";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return listDnsIndicators().map((indicator) => ({ indicatorId: indicator.indicator_id }));
+}
 
 export default async function IndicatorPage({ params }: { params: Promise<{ indicatorId: string }> }) {
   const { indicatorId } = await params; const item = getDnsIndicator(indicatorId); if (!item) notFound();

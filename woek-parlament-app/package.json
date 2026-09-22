@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run fachvollstaendigkeit:materialize-b07 && npm run government:sync-approved && npm run parliament:sync-approved && npm run observatory:sync-approved && npm run check:accessibility",
-    "build": "node scripts/quality/check-design-tokens.mjs && node scripts/quality/check-positioning-pass.mjs && node scripts/quality/check-same-page-navigation.mjs && node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && npm run check:public-labels && npm run check:sachsen-anhalt-publication && npm run check:executive-impact && npm run check:impact-first-publication && npm run check:executive-projections && npm run check:impact-visuals && npm run check:berlin-fach-residual && npm run check:mv-fach-residual && npm run check:state-publication && npm run check:government-identifiers && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/run-b07-local-audits.mjs",
+    "build": "node scripts/quality/check-static-public-runtime.mjs && node scripts/quality/check-design-tokens.mjs && node scripts/quality/check-positioning-pass.mjs && node scripts/quality/check-same-page-navigation.mjs && node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && npm run check:public-labels && npm run check:sachsen-anhalt-publication && npm run check:executive-impact && npm run check:impact-first-publication && npm run check:executive-projections && npm run check:impact-visuals && npm run check:berlin-fach-residual && npm run check:mv-fach-residual && npm run check:state-publication && npm run check:government-identifiers && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/run-b07-local-audits.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "check:static-runtime": "node scripts/quality/check-static-public-runtime.mjs",
     "tokens:check": "node scripts/quality/check-design-tokens.mjs",
     "check:positioning": "node scripts/quality/check-positioning-pass.mjs",
     "audit:accessibility": "node scripts/quality/audit-accessibility-baseline.mjs",
@@ -67,6 +68,8 @@
     "review:export-upcoming": "tsx scripts/export-upcoming-review-batch.ts",
     "review:export-batch": "tsx scripts/export-review-batch.ts",
     "reviews:prepare-upcoming": "tsx scripts/run-upcoming-preparation.ts",
+    "autopilot:run": "NODE_OPTIONS=--conditions=react-server tsx scripts/run-political-autopilot.ts",
+    "autopilot:digest": "NODE_OPTIONS=--conditions=react-server tsx scripts/run-political-daily-digest.ts",
     "fachanalysen:import-full-text": "node scripts/import-fachanalyse-full-text.mjs",
     "review:export-mandate": "tsx scripts/export-mandate-review-batch.ts",
     "review:export-final-historical": "tsx scripts/export-final-historical-review.ts",
@@ -105,6 +108,7 @@
     "nodemailer": "^9.0.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "server-only": "0.0.1",
     "zod": "^3.24.2"
   },
   "devDependencies": {

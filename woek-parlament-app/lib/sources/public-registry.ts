@@ -1403,28 +1403,4 @@ export async function getPublicSource(slug: string) {
   return staticPublicSources().find((source) => source.slug === safeSlug) ?? null;
 }
 
-export const sourceCategoryLabel: Record<SourceCategory, string> = {
-  PARLIAMENTARY_RECORD: "Parlamentarische Primärquelle",
-  GOVERNMENT_RECORD: "Amtliche Regierungsquelle",
-  OFFICIAL_STATISTICS: "Amtliche Statistik",
-  OFFICIAL_EVALUATION: "Amtliche Evaluation",
-  SCIENTIFIC_SOURCE: "Wissenschaftliche Primärquelle",
-  WOEK_METHOD_REFERENCE: "WÖk-Methodenreferenz",
-  OTHER_PRIMARY_SOURCE: "Weitere Primärquelle"
-};
-
-export const sourceRoleLabel: Record<SourceRole, string> = {
-  DECISION_FACT: "Parlamentarischer Sachverhalt",
-  EX_ANTE_EVIDENCE: "Damals verfügbare Evidenz",
-  EX_POST_EVIDENCE: "Später veröffentlichte Evidenz",
-  CALCULATION_INPUT: "Rechen- bzw. Eingangswert",
-  NORMATIVE_REFERENCE: "Normativer Referenzrahmen",
-  METHODOLOGY_REFERENCE: "Methodischer Referenzrahmen",
-  CONTEXT: "Kontext"
-};
-
-export const temporalClassLabel: Record<PublicSource["temporalClass"], string> = {
-  AVAILABLE_AT_DECISION_TIME: "Zum Entscheidungszeitpunkt verfügbar",
-  PUBLISHED_AFTER_DECISION: "Erst nach der Entscheidung veröffentlicht",
-  CURRENT_REFERENCE: "Aktuelle Referenz"
-};
+export { sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-labels";

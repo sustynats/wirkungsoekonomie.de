@@ -11,11 +11,18 @@ import {
   lifecycleLabels,
   readableInstitution,
   sourceFunctionLabels,
+  getGovernmentPublicData,
 } from "@/lib/government/public-data";
 import { impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 import { publicOfficialIdentifierRows } from "@/lib/government/official-identifiers";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getGovernmentPublicData().actions.map((action) => ({ id: action.government_action_id }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;

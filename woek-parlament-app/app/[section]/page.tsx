@@ -21,6 +21,12 @@ const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string
   transparenz: { eyebrow: "Über das Portal", title: "Vertrauen entsteht durch nachvollziehbare Arbeit", lead: "Wer das Portal herausgibt, was seine Einordnung leisten kann, worauf sie beruht – und wo ihre Grenzen liegen.", empty: "Die Angaben zum Portal werden fortlaufend ergänzt und versioniert." }
 };
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Object.keys(sectionCopy).map((section) => ({ section }));
+}
+
 export default async function SectionPage({ params }: { params: Promise<{ section: string }> }) {
   const { section } = await params;
   if (section === "dialog") redirect("/");

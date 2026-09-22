@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPublishedMemberProfile } from "@/lib/members/public-profiles";
+import { getPublishedMemberProfile, listPublishedMemberProfiles } from "@/lib/members/public-profiles";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return (await listPublishedMemberProfiles()).map((profile) => ({ slug: profile.slug }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const profile = await getPublishedMemberProfile((await params).slug);

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import Link from "next/link";
+import { Suspense } from "react";
 import { canonicalPortalHref } from "@/lib/navigation";
 import { PortalNav } from "@/app/components/PortalNav";
 import { PortalWayfinding } from "@/app/components/PortalWayfinding";
@@ -29,10 +29,7 @@ export const metadata: Metadata = {
     : {})
 };
 
-export const dynamic = "force-dynamic";
-
-export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  await connection();
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de" data-scroll-behavior="smooth">
       <body>
@@ -60,7 +57,9 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
                 <Link href={canonicalPortalHref("/suche")}>Suche</Link>
                 <WirkungsraumLink>Merkliste</WirkungsraumLink>
                 <Link href={canonicalPortalHref("/aktuell/radar-abo")}>Radar abonnieren</Link>
-                <AudienceModeSwitch />
+                <Suspense fallback={<span className="mode-switch" aria-hidden="true" />}>
+                  <AudienceModeSwitch />
+                </Suspense>
                 <a className="ecosystem-link" href="https://wirkungsoekonomie.de">Wirkungsökonomie.de <span aria-hidden="true">↗</span></a>
               </nav>
               <PortalNav />

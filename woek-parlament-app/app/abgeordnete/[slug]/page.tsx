@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 /* eslint-disable @next/next/no-img-element -- Amtliche Bildquellen werden ohne Bildoptimierungs-Proxy direkt mit ihrem Bildnachweis ausgeliefert. */
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPublishedMemberProfile } from "@/lib/members/public-profiles";
+import { getPublishedMemberProfile, listPublishedMemberProfiles } from "@/lib/members/public-profiles";
 import { materialityLabel } from "@/lib/presentation/labels";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return (await listPublishedMemberProfiles()).map((profile) => ({ slug: profile.slug }));
+}
 
 const voteLabels: Record<string, string> = { YES: "Ja", NO: "Nein", ABSTENTION: "Enthaltung", DID_NOT_VOTE: "Nicht abgestimmt", NO_SCORE: "Nicht auswertbar" };
 const agreementLabels: Record<string, string> = { ALIGNED: "entspricht der ex-ante Einordnung", NOT_ALIGNED: "weicht von der ex-ante Einordnung ab", ABSTAINED: "Enthaltung", DID_NOT_VOTE: "nicht abgestimmt", NOT_SCORABLE: "nicht auswertbar" };

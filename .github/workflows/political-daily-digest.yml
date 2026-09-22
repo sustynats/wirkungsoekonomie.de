@@ -17,15 +17,36 @@ concurrency:
 jobs:
   send:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: woek-parlament-app
     steps:
-      - name: Send the verified end-of-day newsletter
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: woek-parlament-app/package-lock.json
+      - run: npm ci --ignore-scripts
+      - name: Send the verified end-of-day newsletter outside Vercel
         env:
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
-        run: |
-          test -n "$CRON_SECRET"
-          curl --fail-with-body --silent --show-error \
-            --retry 3 --retry-all-errors --max-time 600 \
-            -H "Authorization: Bearer $CRON_SECRET" \
-            https://parlament.wirkungsoekonomie.de/api/cron/political-daily-digest
-
+          WOEK_AUTOPILOT_RUNTIME_MODE: ${{ vars.WOEK_AUTOPILOT_RUNTIME_MODE }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+          NEXT_PUBLIC_PORTAL_URL: https://parlament.wirkungsoekonomie.de
+          WIRKUNGSRADAR_DAILY_DIGEST_ENABLED: ${{ vars.WIRKUNGSRADAR_DAILY_DIGEST_ENABLED }}
+          WIRKUNGSRADAR_EMAIL_SEND_MODE: ${{ vars.WIRKUNGSRADAR_EMAIL_SEND_MODE }}
+          WIRKUNGSRADAR_DELIVERY_PROVIDER: ${{ vars.WIRKUNGSRADAR_DELIVERY_PROVIDER }}
+          WIRKUNGSRADAR_DAILY_DIGEST_BATCH_SIZE: "50"
+          WIRKUNGSRADAR_UNSUBSCRIBE_SIGNING_SECRET: ${{ secrets.WIRKUNGSRADAR_UNSUBSCRIBE_SIGNING_SECRET }}
+          WIRKUNGSRADAR_SMTP_HOST: smtp.ionos.de
+          WIRKUNGSRADAR_SMTP_PORT: "587"
+          WIRKUNGSRADAR_SMTP_USER: ${{ secrets.WIRKUNGSRADAR_SMTP_USER }}
+          WIRKUNGSRADAR_SMTP_PASSWORD: ${{ secrets.WIRKUNGSRADAR_SMTP_PASSWORD }}
+          WIRKUNGSRADAR_SMTP_FROM: ${{ secrets.WIRKUNGSRADAR_SMTP_FROM }}
+          WIRKUNGSRADAR_SMTP_REPLY_TO: ${{ secrets.WIRKUNGSRADAR_SMTP_REPLY_TO }}
+        run: npm run autopilot:digest
