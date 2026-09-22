@@ -389,14 +389,17 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
     <section id="vollstaendige-wirkungsakte" aria-labelledby="einzel-title">
       <div className={styles.sectionHeader}>
         <p className={styles.eyebrow}>Objektspezifisch geprüfte Vertiefungen</p>
-        <h2 id="einzel-title">Vom Gesamtbefund in die redaktionell geprüfte Tiefe.</h2>
-        <p className={styles.lead}>Diese Auswahl enthält ausschließlich Zusagen mit eigener redaktioneller Detailprüfung. Sie ist keine repräsentative Auswahl des Gesamtprogramms und wird nicht zu einer Parteigesamtnote verdichtet.</p>
+        <h2 id="einzel-title">Vom schnellen Befund in die Tiefe.</h2>
+        <p className={styles.lead}>Jede Zusage beginnt mit Wirkungsrichtung, Evidenz, Key Finding und Entscheidungsreife. Nicht verifizierte Alt-Templates werden nicht mehr als Kurzbewertung ausgegeben.</p>
+        <p>Diese Auswahl enthält ausschließlich Zusagen mit eigener redaktioneller Detailprüfung. Sie ist keine repräsentative Auswahl des Gesamtprogramms und wird nicht zu einer Parteigesamtnote verdichtet.</p>
       </div>
+      <div className={styles.auditNotice}><strong>Themenzuordnung im Re-Audit</strong><p>Die Gruppierung übernimmt vorläufig die technische Themenzuordnung des Release-1-Registers. Wo Originaltext und Zuordnung kollidieren, hat der Originaltext Vorrang; die Zuordnung ist kein fachliches Urteil.</p></div>
+      <p className={styles.summaryTeaser}>Öffnen für Einzelbefunde</p>
       <div className={styles.commitmentList}>{reviewedCommitments.map((commitment) => <div id={`commitment-${commitment.index}`} key={commitment.key}><CommitmentDetail sourceKey={programme.sourceKey} commitment={commitment} /></div>)}</div>
     </section>
 
     <section id="vollstaendiges-zusageregister" aria-labelledby="register-title">
-      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Statischer Zusagenindex</p><h2 id="register-title">Quelle vor Interpretation – ohne 50-MB-Webseite.</h2><p>Der versionierte Release-1-Arbeitsbestand bleibt vollständig auffindbar. Der Browser lädt einen kompakten, unveränderlichen Suchindex; die vollständigen Fachquellen bleiben getrennte Publikationsartefakte. Der historische Arbeitsbestand mit {model.commitments.length.toLocaleString("de-DE")} Einträgen wird nicht mit dem terminalen Nenner von {terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")} autoritativen Source Units verrechnet.</p></div>
+      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Historisches Zusageregister</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Der versionierte Release-1-Arbeitsbestand bleibt vollständig nachvollziehbar erhalten. Er umfasst {model.commitments.length.toLocaleString("de-DE")} historische Einträge und wird nicht mit dem terminalen Nenner von {terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")} autoritativen Source Units verrechnet.</p><p>Der Browser lädt dafür einen kompakten, unveränderlichen Suchindex; die vollständigen Fachquellen bleiben getrennte Publikationsartefakte.</p><p><Link href={commitmentArchiveHref}>Historisches Arbeitsregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} unveränderte Release-1-Einträge</span></Link></p></div>
       <ProgrammeCommitmentDirectory sourceKey={programme.sourceKey} expectedTotal={model.commitments.length} archiveHref={commitmentArchiveHref} />
     </section>
 
@@ -416,7 +419,9 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
 
     <section className={styles.proof} data-woek-technical-proof="programme-full-source">
       <h2>Fachlicher Vollnachweis und technische Prüfinformationen</h2>
-      <p>Die Lesefassung überschreibt keine historische Analyse. Große Vollarchive werden nicht mehr in jede Übersichtsseite eingebettet, sondern als eigene statische Publikationsakten ausgeliefert.</p>
+      <p className={styles.summaryTeaser}>Historische Fachquelle vollständig erhalten.</p>
+      <p>Die neue Lesefassung überschreibt keine historische Analyse. Für Reproduzierbarkeit bleiben die autorisierten Release-1-Fachquellen unverändert abrufbar.</p>
+      <p>Große Vollarchive werden nicht mehr in jede Übersichtsseite eingebettet, sondern als eigene statische Publikationsakten ausgeliefert.</p>
       <ul className={styles.sourceList}>
         <li><Link href={reviewArchiveHref}>Vollständige historische Wirkungsakte öffnen →</Link></li>
         <li><Link href={commitmentArchiveHref}>Vollständiges Zusageregister öffnen →</Link></li>
