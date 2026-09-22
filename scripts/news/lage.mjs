@@ -202,9 +202,12 @@ export const KEEP_DAYS = 30;
 export function upsertLage(store, lage, { keepDays = KEEP_DAYS, now = lage?.stand } = {}) {
   const vorher = Array.isArray(store?.lagen) ? store.lagen : [];
   if (!lage?.lage_id) return { schema_version: '1.0', updated_at: store?.updated_at || null, lagen: vorher };
+  const bisher = vorher.find((entry) => entry?.lage_id === lage.lage_id);
+  // A repeated regular run must not erase a transparent outage/recovery note.
+  const ausgabe = { ...(bisher?.publication_recovery ? { publication_recovery: bisher.publication_recovery } : {}), ...lage };
   const ohne = vorher.filter((entry) => entry?.lage_id !== lage.lage_id);
   const cutoff = Date.parse(now || lage.stand) - Math.max(1, Number(keepDays) || KEEP_DAYS) * 86400000;
-  const lagen = [...ohne, lage]
+  const lagen = [...ohne, ausgabe]
     .filter((entry) => Number.isFinite(Date.parse(entry?.stand)) && Date.parse(entry.stand) >= cutoff)
     .sort((a, b) => Date.parse(b.stand) - Date.parse(a.stand));
   return { schema_version: '1.0', updated_at: lage.stand, lagen };

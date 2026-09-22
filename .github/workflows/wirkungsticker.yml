@@ -216,6 +216,7 @@ jobs:
           git config user.name "wirkungsticker-bot"
           git config user.email "wirkungsticker-bot@users.noreply.github.com"
           git add -- data/news data/wirkungsticker/source-audit-2026-09-05.json news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-source-portfolio.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
+          node scripts/news/check-git-size.mjs
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -281,6 +282,7 @@ jobs:
             data/news/stories.json
             data/news/state.json
             data/news/newsroom.json
+            data/news/newsroom.json.parts/
             data/news/usage.json
             data/news/editorial-analyses.json
             reports/wirkungsticker-latest-run.json

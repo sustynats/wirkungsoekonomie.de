@@ -1,3 +1,4 @@
+import { readNewsroom, writeNewsroom, repositoryJson } from './newsroom-store.mjs';
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
 import {editorialEvidenceReceipt} from './editorial-evidence.mjs';
 import { newsInputReadiness } from './news-input-readiness.mjs';
@@ -125,12 +126,14 @@ const files = {
 };
 
 function readJson(file) {
+  if (file === files.newsroom) return readNewsroom(file);
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
 function writeJson(file, value) {
+  if (file === files.newsroom) return writeNewsroom(file, value);
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  fs.writeFileSync(file, repositoryJson(value), "utf8");
 }
 
 async function mapLimit(values, limit, mapper) {
