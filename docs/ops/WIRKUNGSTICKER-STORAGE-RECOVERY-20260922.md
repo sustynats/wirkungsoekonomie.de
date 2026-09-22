@@ -26,7 +26,7 @@ eindeutigen Fehler zurück, bevor ein nicht übertragbarer Commit entsteht.
 Der letzte übertragbare Bestand enthielt 17.007 Quellenstände, 18.999 Ereignisse,
 17.007 Quellen-Ereignis-Verknüpfungen und 20.000 Entscheidungsvermerke.
 104.619.306 Bytes eingerücktes JSON entsprechen 75.739.943 Bytes ohne
-Einrückung – knapp 29 MB bestanden allein aus Formatierung. Die Aufteilung
+Einrückung - knapp 29 MB bestanden allein aus Formatierung. Die Aufteilung
 begrenzt die **einzelne Datei**, ohne die Recherchehistorie zu löschen.
 
 ## Wiederherstellung
