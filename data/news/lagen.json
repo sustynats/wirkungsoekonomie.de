@@ -1,7 +1,112 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-22T10:00:00.000Z",
+  "updated_at": "2026-09-22T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-22-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-22",
+      "window_from": "2026-09-22T10:00:00.000Z",
+      "window_to": "2026-09-22T16:00:00.000Z",
+      "stand": "2026-09-22T16:00:00.000Z",
+      "headline": "Das sind die 11 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 11,
+        "neu": 11,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-cdcfe085f7ede02d",
+          "slug": "kiosk-in-dortmund-uberfallen-tater-auf-der-flucht-ede02d",
+          "title": "Laut WDR: Kiosk in Dortmund überfallen – mehrere Schüsse, zwei Menschen verletzt",
+          "state": "neu",
+          "at": "2026-09-22T15:58:25.838Z",
+          "score": 3.9956
+        },
+        {
+          "story_id": "wt-8b46db7c7001a2e4",
+          "slug": "standort-vor-dem-aus-mann-hummel-lehnt-alternativkonzept-von-ig-metall-und-betriebsrat-a-01a2e4",
+          "title": "Laut SWR lehnt Mann+Hummel Konzept zum Erhalt des Speyerer Standorts ab",
+          "state": "neu",
+          "at": "2026-09-22T15:12:59.201Z",
+          "score": 7.8694
+        },
+        {
+          "story_id": "wt-ecd21ad392320417",
+          "slug": "polizei-grosseinsatz-an-gymnasium-in-weisswasser-falscher-amokalarm-320417",
+          "title": "Laut Polizei: Falscher Amokalarm an Gymnasium in Weißwasser endet mit Entwarnung",
+          "state": "neu",
+          "at": "2026-09-22T13:57:38.563Z",
+          "score": 5.7448
+        },
+        {
+          "story_id": "wt-62cb41beb7c1b0c6",
+          "slug": "mercedes-vorstand-kundigt-werkschliessungen-an-wenn-arbeitskosten-nicht-sinken-widerstan-c1b0c6",
+          "title": "Laut Mercedes-Produktionsvorstand könnten zwei deutsche Werke schließen, wenn Arbeitskosten nicht sinken",
+          "state": "neu",
+          "at": "2026-09-22T13:40:44.430Z",
+          "score": 7.6132
+        },
+        {
+          "story_id": "wt-4630ee748ea719bd",
+          "slug": "linke-wahlsieg-israels-botschafter-sieht-nach-berlin-wahl-gefahr-fur-juden-a719bd",
+          "title": "Nach Angaben der Berichte: Israels Botschafter sieht nach Linke-Wahlsieg Gefahr für Juden",
+          "state": "neu",
+          "at": "2026-09-22T13:11:34.134Z",
+          "score": 5.5321
+        },
+        {
+          "story_id": "wt-926ecc376c6775c6",
+          "slug": "schuss-auf-fensterscheibe-frau-entdeckt-einschussloch-in-wohnungsfenster-6775c6",
+          "title": "Einschussloch in Wohnungsfenster entdeckt – Polizei ermittelt",
+          "state": "neu",
+          "at": "2026-09-22T12:27:30.925Z",
+          "score": 5.4922
+        },
+        {
+          "story_id": "wt-51e295efc835c09c",
+          "slug": "am-30-september-kriegsmunition-wird-gesprengt-berlin-und-potsdam-betroffen-35c09c",
+          "title": "Am 30. September soll Kriegsmunition nördlich von Potsdam gesprengt werden",
+          "state": "neu",
+          "at": "2026-09-22T12:09:57.102Z",
+          "score": 5.361
+        },
+        {
+          "story_id": "wt-ae2ce044170c0ca5",
+          "slug": "nach-hausexplosion-in-weimar-weiter-keine-spur-von-vermisstem-mann-0c0ca5",
+          "title": "Nach Hausexplosion in Weimar: Laut Polizei weiterhin keine Spur vom vermissten Mann",
+          "state": "neu",
+          "at": "2026-09-22T11:56:13.541Z",
+          "score": 5.7782
+        },
+        {
+          "story_id": "wt-3c46d73b1a47ea71",
+          "slug": "entwarnung-nach-kampfmittelfund-in-nideggen-47ea71",
+          "title": "Entwarnung nach Kampfmittelfund in Nideggen",
+          "state": "neu",
+          "at": "2026-09-22T11:27:50.258Z",
+          "score": 3.244
+        },
+        {
+          "story_id": "wt-257effa65d3ed614",
+          "slug": "turkei-mindestens-elf-verletzte-bei-schusswaffenangriff-nahe-schule-3ed614",
+          "title": "Mindestens elf Verletzte bei Schusswaffenangriff nahe einer Schule in der Türkei",
+          "state": "neu",
+          "at": "2026-09-22T10:42:20.521Z",
+          "score": 5.6176
+        },
+        {
+          "story_id": "wt-be8450daf5fe4eb6",
+          "slug": "munitionsfunde-in-potsdam-teile-von-gross-glienicke-werden-ende-september-abgesperrt-fe4eb6",
+          "title": "Laut Tagesspiegel: Am 30. September wird in Groß Glienicke ein Sperrkreis eingerichtet",
+          "state": "neu",
+          "at": "2026-09-22T10:26:59.746Z",
+          "score": 5.075
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-22-mittagslage",
       "slot": "mittagslage",
