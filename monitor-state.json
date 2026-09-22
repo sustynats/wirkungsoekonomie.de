@@ -20,21 +20,18 @@
     "institute": {
       "firstSeen": "2026-09-22T16:20:47.664Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-22T19:23:31.320Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-09-22T19:23:31.320Z",
-      "active": false
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-22T19:23:31.320Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "074bb9e6a3484a97c983dc03",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-22T19:35:50.947Z"
+    },
+    {
+      "id": "6b941a04f4afca86a5af01b0",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-22T19:35:50.947Z"
+    }
+  ],
   "dailyDate": "2026-09-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1865,7 +1862,7 @@
       }
     },
     "last_new_at": "2026-09-22T18:35:52.970Z",
-    "checked_at": "2026-09-22T19:23:31.320Z",
+    "checked_at": "2026-09-22T19:35:50.947Z",
     "last_current_new_at": "2026-09-22T17:50:52.715Z"
   },
   "recovery_attempts": [
