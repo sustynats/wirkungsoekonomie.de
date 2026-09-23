@@ -1,7 +1,112 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-23T10:00:00.000Z",
+  "updated_at": "2026-09-23T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-23-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-23",
+      "window_from": "2026-09-23T10:00:00.000Z",
+      "window_to": "2026-09-23T16:00:00.000Z",
+      "stand": "2026-09-23T16:00:00.000Z",
+      "headline": "Das sind die 11 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 11,
+        "neu": 9,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-f8f713c6b1b28558",
+          "slug": "illegaler-schusswaffen-handel-berliner-polizei-nimmt-sieben-verdachtige-bei-razzia-fest-b28558",
+          "title": "Laut Polizei: Sieben Verdächtige bei Razzia wegen illegalen Schusswaffenhandels festgenommen",
+          "state": "neu",
+          "at": "2026-09-23T15:59:53.409Z",
+          "score": 7.9997
+        },
+        {
+          "story_id": "wt-39c4406f7c196839",
+          "slug": "bericht-fruhere-spitzenpolitiker-von-berliner-spd-gegen-gesprache-mit-linkspartei-196839",
+          "title": "Laut Bericht: Frühere Berliner SPD-Spitzenpolitiker lehnen Gespräche mit der Linkspartei ab",
+          "state": "neu",
+          "at": "2026-09-23T15:12:48.028Z",
+          "score": 5.8689
+        },
+        {
+          "story_id": "wt-5bee1963de53b728",
+          "slug": "erste-urteile-gefallen-haftstrafen-fur-waffenhandel-53b728",
+          "title": "WDR berichtet von Haftstrafen im Prozess um Kriegswaffenhandel",
+          "state": "neu",
+          "at": "2026-09-23T14:29:01.914Z",
+          "score": 5.7473
+        },
+        {
+          "story_id": "wt-3b7a194735bcc928",
+          "slug": "regierungsbildung-in-berlin-spd-setzt-linken-stoppsignal-antisemitismus-nicht-mit-uns-bcc928",
+          "title": "Regierungsbildung in Berlin: Antisemitismus-Debatte belastet mögliche Koalition",
+          "state": "neu",
+          "at": "2026-09-23T13:28:03.254Z",
+          "score": 5.5779
+        },
+        {
+          "story_id": "wt-fc1b99e0ba79f87a",
+          "slug": "quecksilberverdacht-dhl-paketzentrum-in-leizen-evakuiert-79f87a",
+          "title": "Quecksilberverdacht: DHL-Paketzentrum in Leizen evakuiert",
+          "state": "neu",
+          "at": "2026-09-23T13:14:31.180Z",
+          "score": 5.5403
+        },
+        {
+          "story_id": "wt-3e2002bfa8681482",
+          "slug": "folgen-des-irankriegs-usa-prufen-wegen-hoher-spritpreise-exportstopp-fur-diesel-massnahm-681482",
+          "title": "Laut Deutschlandfunk prüfen die USA einen Exportstopp für Diesel",
+          "state": "neu",
+          "at": "2026-09-23T13:00:37.165Z",
+          "score": 7.5017
+        },
+        {
+          "story_id": "wt-2ea065e821b487d2",
+          "slug": "razzien-wegen-illegalen-schusswaffenhandels-in-berlin-b487d2",
+          "title": "Razzien gegen mutmaßlichen illegalen Schusswaffenhandel in Berlin – mehrere Festnahmen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-23T11:59:36.032Z",
+          "score": 7.5822
+        },
+        {
+          "story_id": "wt-ede36d8e27ed8165",
+          "slug": "angriff-in-franken-polizei-fahndet-nach-messerattacke-nach-mann-aus-wendlingen-ed8165",
+          "title": "Laut stern: Angriff in Franken: Polizei fahndet nach Mann nach Messerattacke",
+          "state": "neu",
+          "at": "2026-09-23T11:28:41.813Z",
+          "score": 9.2464
+        },
+        {
+          "story_id": "wt-0d030338c59f3328",
+          "slug": "verdacht-auf-sprengstoff-ministerium-zum-drohnenfund-hybride-bedrohungen-sind-real-9f3328",
+          "title": "Nach Angaben des Innenministeriums: Hinweise auf hybride Bedrohungen und Drohnenfund",
+          "state": "neu",
+          "at": "2026-09-23T11:18:28.162Z",
+          "score": 5.218
+        },
+        {
+          "story_id": "wt-1d3fd4e1a02fe3e4",
+          "slug": "einsatz-verdacht-auf-giftiges-quecksilber-dhl-zentrum-evakuiert-2fe3e4",
+          "title": "Gefahrstoffverdacht: DHL-Zentrum in Leizen bleibt nach Evakuierung im Fokus",
+          "state": "fortgeschrieben",
+          "at": "2026-09-23T10:25:59.426Z",
+          "score": 8.8222
+        },
+        {
+          "story_id": "wt-0eb1d7fda049bef9",
+          "slug": "trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9",
+          "title": "Laut France 24: Trump und Selenskyj sprechen über möglichen Weg zum Ende des Ukraine-Kriegs",
+          "state": "neu",
+          "at": "2026-09-23T10:12:19.347Z",
+          "score": 5.7066
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-23-mittagslage",
       "slot": "mittagslage",
