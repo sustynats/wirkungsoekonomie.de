@@ -6,6 +6,26 @@ const dropboxContentApi = "https://content.dropboxapi.com/2";
 const dropboxWriteAttempts = 4;
 let lastGrantedScopes = "not reported";
 
+function dropboxRetryDelayMs(response: Response, detail: string, attempt: number) {
+  const retryAfterHeader = Number(response.headers.get("retry-after"));
+  if (Number.isFinite(retryAfterHeader) && retryAfterHeader >= 0) {
+    return Math.min(retryAfterHeader * 1_000, 10_000);
+  }
+  try {
+    const retryAfterBody = Number((JSON.parse(detail) as { retry_after?: unknown }).retry_after);
+    if (Number.isFinite(retryAfterBody) && retryAfterBody >= 0) {
+      return Math.min(retryAfterBody * 1_000, 10_000);
+    }
+  } catch {
+    // A non-JSON Dropbox error falls back to bounded exponential backoff.
+  }
+  return Math.min(2 ** (attempt - 1) * 1_000, 10_000);
+}
+
+function wait(milliseconds: number) {
+  return new Promise<void>((resolve) => setTimeout(resolve, milliseconds));
+}
+
 export type DropboxFileEntry = {
   ".tag": "file";
   id: string;
@@ -129,13 +149,23 @@ async function ensureDropboxFolder(token: string, folderPath: string) {
   let current = "";
   for (const segment of segments) {
     current += `/${segment}`;
-    const response = await fetch(`${dropboxApi}/files/create_folder_v2`, {
-      method: "POST",
-      headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
-      body: JSON.stringify({ path: current, autorename: false }),
-      signal: AbortSignal.timeout(10_000),
-    });
-    if (!response.ok && response.status !== 409) {
+    for (let attempt = 1; attempt <= dropboxWriteAttempts; attempt += 1) {
+      const response = await fetch(`${dropboxApi}/files/create_folder_v2`, {
+        method: "POST",
+        headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+        body: JSON.stringify({ path: current, autorename: false }),
+        signal: AbortSignal.timeout(10_000),
+      });
+      if (response.ok || response.status === 409) break;
+      const detail = (await response.text()).slice(0, 500).replace(/\s+/g, " ").trim();
+      if (response.status === 429 && attempt < dropboxWriteAttempts) {
+        const delayMs = dropboxRetryDelayMs(response, detail, attempt);
+        console.warn(
+          `Dropbox state folder creation throttled (429); retrying in ${delayMs} ms (attempt ${attempt + 1}/${dropboxWriteAttempts}).`,
+        );
+        await wait(delayMs);
+        continue;
+      }
       throw new Error(`Dropbox state folder could not be created (${response.status}).`);
     }
   }
@@ -150,26 +180,6 @@ export async function ensureDropboxFolders(folderPaths: string[]) {
 
 export async function uploadDropboxText(filePath: string, content: string) {
   return uploadDropboxBytes(filePath, new TextEncoder().encode(content));
-}
-
-function dropboxRetryDelayMs(response: Response, detail: string, attempt: number) {
-  const retryAfterHeader = Number(response.headers.get("retry-after"));
-  if (Number.isFinite(retryAfterHeader) && retryAfterHeader >= 0) {
-    return Math.min(retryAfterHeader * 1_000, 10_000);
-  }
-  try {
-    const retryAfterBody = Number((JSON.parse(detail) as { retry_after?: unknown }).retry_after);
-    if (Number.isFinite(retryAfterBody) && retryAfterBody >= 0) {
-      return Math.min(retryAfterBody * 1_000, 10_000);
-    }
-  } catch {
-    // A non-JSON Dropbox error falls back to bounded exponential backoff.
-  }
-  return Math.min(2 ** (attempt - 1) * 1_000, 10_000);
-}
-
-function wait(milliseconds: number) {
-  return new Promise<void>((resolve) => setTimeout(resolve, milliseconds));
 }
 
 export async function uploadDropboxBytes(filePath: string, content: Uint8Array) {

@@ -115,7 +115,7 @@ function resultDetail(label: string, result: unknown) {
 }
 
 function safeRuntimeFailure(reason: unknown) {
-  const message = reason instanceof Error ? reason.message : String(reason ?? "unbekannter Fehler");
+  const message = reason instanceof Error ? reason.stack ?? reason.message : String(reason ?? "unbekannter Fehler");
   return message
     .replace(/(Bearer\s+)[^\s]+/gi, "$1[REDACTED]")
     .replace(/([?&](?:api[_-]?key|key|token)=)[^&\s]+/gi, "$1[REDACTED]")
