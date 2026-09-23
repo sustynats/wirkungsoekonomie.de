@@ -53,6 +53,8 @@ const manifest = {
   schema_version: "woek-static-public-build-v1",
   generated_at: new Date().toISOString(),
   canonical_origin: "https://parlament.wirkungsoekonomie.de",
+  source_commit: process.env.WOEK_SOURCE_COMMIT ?? previous.source_commit ?? null,
+  source_fingerprint: process.env.WOEK_SOURCE_FINGERPRINT ?? previous.source_fingerprint ?? null,
   file_count: files.length,
   total_bytes: totalBytes,
   largest_files: files.slice(0, 20),

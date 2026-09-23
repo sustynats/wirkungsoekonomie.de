@@ -75,6 +75,8 @@ async function processApprovedHandoffs(now: string) {
     const response = await fetch(hook, { method: "POST", signal: AbortSignal.timeout(15_000) });
     if (!response.ok) throw new Error(`Observatory deployment hook failed (${response.status}).`);
     deployment = "REQUESTED";
+  } else if (process.env.WOEK_STATIC_PUBLICATION_MODE === "github_pages") {
+    deployment = "REQUESTED";
   }
   for (const entry of additions) state.files[entry.name] = { content_hash: entry.hash, processed_at: now, deploy_status: deployment };
   await uploadDropboxText(ledgerPath, `${JSON.stringify(state, null, 2)}\n`);

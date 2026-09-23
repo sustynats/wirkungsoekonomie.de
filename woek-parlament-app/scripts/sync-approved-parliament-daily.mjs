@@ -73,5 +73,13 @@ if (health) {
   if (health.schema_version !== "1.0" || !health.domains || typeof health.domains !== "object") {
     throw new Error("Parliament daily sync: unsupported autopilot-health structure.");
   }
-  await writeFile(path.join(outputRoot, "autopilot-health.json"), `${JSON.stringify(health, null, 2)}\n`, "utf8");
+  const healthPath = path.join(outputRoot, "autopilot-health.json");
+  let previousHealth = null;
+  try { previousHealth = JSON.parse(await readFile(healthPath, "utf8")); } catch { /* First health materialization. */ }
+  const stableHealth = (value) => JSON.stringify(value, (key, entry) => ["generated_at", "run_id", "last_run_at", "last_election_check", "last_observation_sync"].includes(key) ? undefined : entry);
+  if (!previousHealth || stableHealth(previousHealth) !== stableHealth(health)) {
+    await writeFile(healthPath, `${JSON.stringify(health, null, 2)}\n`, "utf8");
+  } else {
+    console.log("Parliament daily sync: health heartbeat contained no material public change.");
+  }
 }

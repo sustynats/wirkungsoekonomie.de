@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-09-23",
   "sources": [
     {
       "source_id": "bundeswahlleiterin-wahltermine",
@@ -34,27 +34,27 @@
       "jurisdiction_id": "DE-BE",
       "institutional_role": "ELECTION_AUTHORITY",
       "name": "Landeswahlleiter Berlin",
-      "base_url": "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/",
-      "access_type": "HTML_PDF",
-      "adapter_status": "DEFINED_NOT_AUTOMATED"
+      "base_url": "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1716422.php",
+      "access_type": "HTML",
+      "adapter_status": "ACTIVE"
     },
     {
       "source_id": "state-election-mv-2026",
       "jurisdiction_id": "DE-MV",
       "institutional_role": "ELECTION_AUTHORITY",
       "name": "Landeswahlleitung Mecklenburg-Vorpommern",
-      "base_url": "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/",
-      "access_type": "HTML_PDF",
-      "adapter_status": "DEFINED_NOT_AUTOMATED"
+      "base_url": "https://www.laiv-mv.de/Pressemitteilungen/?id=223732&processor=processor.sa.pressemitteilung",
+      "access_type": "HTML",
+      "adapter_status": "ACTIVE"
     },
     {
       "source_id": "state-election-st-2026",
       "jurisdiction_id": "DE-ST",
       "institutional_role": "ELECTION_AUTHORITY",
       "name": "Landeswahlleitung Sachsen-Anhalt",
-      "base_url": "https://wahlen.sachsen-anhalt.de/",
-      "access_type": "HTML_PDF",
-      "adapter_status": "DEFINED_NOT_AUTOMATED"
+      "base_url": "https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/",
+      "access_type": "HTML",
+      "adapter_status": "ACTIVE"
     },
     {
       "source_id": "eu-commission-register",

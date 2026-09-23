@@ -288,10 +288,16 @@ try {
   if (oversized.length) {
     throw new Error(`Static files above 75 MiB: ${oversized.map((file) => file.path).join(", ")}`);
   }
+  const parliamentState = JSON.parse(await readFile(path.join(buildRoot, "data", "generated", "parliament-daily-state.json"), "utf8"));
+  const governmentState = JSON.parse(await readFile(path.join(buildRoot, "data", "government", "impact-cases", "public-impact-cases-meta.json"), "utf8"));
   const manifest = {
     schema_version: "woek-static-public-build-v1",
     generated_at: new Date().toISOString(),
     canonical_origin: "https://parlament.wirkungsoekonomie.de",
+    source_commit: process.env.WOEK_SOURCE_COMMIT ?? null,
+    source_fingerprint: process.env.WOEK_SOURCE_FINGERPRINT ?? null,
+    parliament_public_hash: parliamentState.source_hash ?? null,
+    government_public_hash: governmentState.source_hash ?? null,
     file_count: files.length,
     total_bytes: totalBytes,
     largest_files: files.slice(0, 20),

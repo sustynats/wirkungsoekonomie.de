@@ -69,7 +69,9 @@ function reconciledRegistry(registry: JurisdictionRegistry, electionCycles: Elec
       return {
         ...entry,
         election_cycle_state: lifecycleStateForElectionCycle(cycle.status),
-        next_election_date: cycle.election_date,
+        next_election_date: cycle.status === "ELECTION_COMPLETE" || cycle.status === "COALITION_FORMATION" || cycle.status === "GOVERNMENT_FORMED" || cycle.status === "CLOSED"
+          ? null
+          : cycle.election_date,
         last_election_check: checkedAt,
       };
     }),
@@ -80,11 +82,12 @@ function statusForStateAdapters(registry: JurisdictionRegistry, sources: SourceR
   const states = registry.jurisdictions.filter((entry) => entry.jurisdiction_type === "STATE");
   const activeStates = states.filter((entry) => entry.monitoring_enabled);
   const activeAdapterStates = new Set(sources.sources.filter((entry) => entry.adapter_status === "ACTIVE").map((entry) => entry.jurisdiction_id));
-  const active = activeStates.filter((entry) => activeAdapterStates.has(entry.jurisdiction_id)).length;
+  const sharedElectionAdapterActive = activeAdapterStates.has("DE-ALL-STATES");
+  const active = activeStates.filter((entry) => sharedElectionAdapterActive || activeAdapterStates.has(entry.jurisdiction_id)).length;
   return {
     status: active > 0 && active === states.length ? "OK" : active > 0 ? "DEGRADED" : "BLOCKED",
     last_run_at: new Date().toISOString(),
-    detail: `${active} von ${states.length} Länderjurisdiktionen besitzen einen vollständig freigegebenen amtlichen Adapter. Der statische Initialbestand ist kein operatives Monitoring.`,
+    detail: `${active} von ${activeStates.length} aktivierten Länder-Wahlzyklen besitzen einen amtlichen Kalender- oder Ergebnisadapter; eigenständige Regierungsadapter bleiben getrennt als offene Abdeckung ausgewiesen.`,
   };
 }
 
