@@ -39,6 +39,7 @@ import { loadNewsRegistry, normalizeNewsRegistry, registryErrors } from "./regis
 import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences, promptEvidenceSegments } from "./newsroom.mjs";
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
+import { consolidateLeizenDuplicates } from "./migrate-leizen-duplicates.mjs";
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
@@ -1331,8 +1332,16 @@ export async function runWirkungsticker(options = {}) {
   report.source_queue_repartitions = repartition.changes;
   const freshUrls = new Set(changedItems.map(item => item.url));
   changedItems.push(...repartition.requeued_sources.filter(item => !freshUrls.has(item.url)));
-  report.living_file_merges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
-  report.retired_stories += report.living_file_merges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
+  // The two independently verified Leizen duplicates need an exact-source
+  // consolidation. Generic place matching rightly cannot infer town/state
+  // equivalence from their headlines; this mapping is evidence-bound and
+  // idempotent, and changes no paid analysis or historical article text.
+  const leizenMerges = consolidateLeizenDuplicates(storyStore.stories || [], now);
+  report.living_file_merges = leizenMerges;
+  report.retired_stories += leizenMerges.length;
+  const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
+  report.living_file_merges.push(...automaticMerges);
+  report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
   const matchableStories = (storyStore.stories || [])
     .filter((story) => story.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE");
   const scheduledFollowups = dueFollowups(matchableStories, now);

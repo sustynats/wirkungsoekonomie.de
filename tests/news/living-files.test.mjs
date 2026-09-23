@@ -4,6 +4,7 @@ import { documentKey, fileSubject, namedSubjects, subjectConflict, livingFileMat
 import { anchoredSources, clusterItems, existingStoryMatch } from "../../scripts/news/lib.mjs";
 import { renderRelatedStories, renderConsolidations } from "../../scripts/news/build.mjs";
 import { runWirkungsticker, publishedRecord, repartitionOversizedSourceQueues } from "../../scripts/news/run.mjs";
+import { consolidateLeizenDuplicates } from "../../scripts/news/migrate-leizen-duplicates.mjs";
 
 const now = "2026-09-04T06:00:00Z";
 const source = (title, url = "https://example.org/a", more = {}) => ({ title, url, source_id: "test", publisher_id: "test", publisher: "Test", primary_source: true, published_at: now, ...more });
@@ -95,6 +96,35 @@ test('an explicitly merged regional report routes by its archived source documen
   assert.equal(routed.existing_story, canonical);
   const differentPlace = { ...region, title: 'DHL-Zentrum in Berlin evakuiert', summary: 'Im DHL-Zentrum in Berlin wird evakuiert.' };
   assert.notEqual(clusterItems([differentPlace], [canonical, archived], now)[0].story_id, 'leizen');
+});
+
+test('source-verified Leizen consolidation preserves all published analyses and original dates', () => {
+  const canonical = story('wt-1d3fd4e1a02fe3e4', 'DHL-Zentrum in Leizen evakuiert', {
+    sources: [source('Einsatz in Leizen', 'https://example.org/leizen'),
+      source('NDR: Leizen', 'https://www.ndr.de/leizen.html'),
+      source('stern: Leizen', 'https://www.stern.de/panorama/leizen-38293914.html')],
+  });
+  const dlf = story('wt-7699cc5cf04f6af2', 'Gefahrstoffverdacht in Leizen', {
+    sources: [source('NDR: Leizen', 'https://www.ndr.de/leizen.html')],
+  });
+  const stern = story('wt-9bfe2b84b6ed7d1e', 'DHL-Zentrum in Mecklenburg-Vorpommern evakuiert', {
+    sources: [source('stern: Leizen', 'https://www.stern.de/weltgeschehen/dhl-38293914.html')],
+  });
+  const stories = [canonical, dlf, stern];
+  const before = stories.map(({ sources, analysis, versions, published_at }) =>
+    structuredClone({ sources, analysis, versions, published_at }));
+  assert.equal(consolidateLeizenDuplicates(stories, now).length, 2);
+  for (const [index, record] of stories.entries()) {
+    assert.deepEqual({ sources: record.sources, analysis: record.analysis,
+      versions: record.versions, published_at: record.published_at }, before[index]);
+  }
+  assert.deepEqual(canonical.living_file.merged_story_ids, [dlf.story_id, stern.story_id]);
+  for (const duplicate of [dlf, stern]) {
+    assert.equal(duplicate.listed, false);
+    assert.deepEqual(duplicate.retirement.canonical_story_ids, [canonical.story_id]);
+  }
+  assert.deepEqual(consolidateLeizenDuplicates(stories, now), []);
+  assert.equal(clusterItems([stern.sources[0]], stories, now)[0].story_id, canonical.story_id);
 });
 
 test('overgrown queue repair preserves publications, requeues every detached source and is idempotent', () => {
