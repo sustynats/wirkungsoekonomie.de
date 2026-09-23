@@ -114,6 +114,14 @@ function resultDetail(label: string, result: unknown) {
   return `${label}: ${status}`;
 }
 
+function safeRuntimeFailure(reason: unknown) {
+  const message = reason instanceof Error ? reason.message : String(reason ?? "unbekannter Fehler");
+  return message
+    .replace(/(Bearer\s+)[^\s]+/gi, "$1[REDACTED]")
+    .replace(/([?&](?:api[_-]?key|key|token)=)[^&\s]+/gi, "$1[REDACTED]")
+    .slice(0, 600);
+}
+
 export async function processPoliticalAutopilot(now = new Date(), forceSlot: "AM" | "PM" | null = null) {
   const scheduled = berlinDateSlot(now);
   const berlin = forceSlot ? { ...scheduled, slot: forceSlot } : scheduled;
@@ -139,6 +147,11 @@ export async function processPoliticalAutopilot(now = new Date(), forceSlot: "AM
     processParliamentDaily({ slot: berlin.slot, now }),
     processObservatorySourceMonitor(now),
   ]);
+  for (const [domain, result] of Object.entries({ government, parliament, observatory })) {
+    if (result.status === "rejected") {
+      console.error(`Political autopilot domain failed (${domain}): ${safeRuntimeFailure(result.reason)}`);
+    }
+  }
   const governmentResult = government.status === "fulfilled" ? government.value : { status: "FAILED", reason: government.reason instanceof Error ? government.reason.message : "Unbekannter Fehler" };
   const parliamentResult = parliament.status === "fulfilled" ? parliament.value : { status: "FAILED", reason: parliament.reason instanceof Error ? parliament.reason.message : "Unbekannter Fehler" };
   const observatoryResult = observatory.status === "fulfilled" ? observatory.value : { status: "FAILED", reason: observatory.reason instanceof Error ? observatory.reason.message : "Unbekannter Fehler" };
