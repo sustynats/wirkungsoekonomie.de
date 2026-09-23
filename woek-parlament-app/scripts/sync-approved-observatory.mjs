@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { parseValidRecords } from "./observatory-sync-validation.mjs";
 
 if (process.env.WOEK_AUTOPILOT_RUNTIME_MODE !== "NORMAL") {
   console.log("Observatory sync: bootstrap/remediation mode; the audited repository snapshot is preserved and Dropbox is not read.");
@@ -59,11 +60,8 @@ async function readJsonl(name) {
 }
 
 function parseRecords(content, validate, sourceName) {
-  const trimmed = content.trim();
-  const records = sourceName.endsWith(".json") ? [JSON.parse(trimmed)] : trimmed.split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
-  return records.map((record, index) => {
-    if (!validate(record)) throw new Error(`${sourceName}:${index + 1} is invalid: ${JSON.stringify(validate.errors)}`);
-    return record;
+  return parseValidRecords(content, validate, sourceName, ({ line, reason }) => {
+    console.warn(`Observatory sync rejected ${sourceName}:${line}; ${reason}`);
   });
 }
 
