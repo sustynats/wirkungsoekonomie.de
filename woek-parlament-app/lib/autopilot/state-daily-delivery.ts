@@ -136,7 +136,15 @@ async function writeOneStateDelivery(args: {
   const existingReady = await downloadDropboxTextIfPresent(`${folder}/READY.json`);
   if (existingReady) {
     const parsed = JSON.parse(existingReady) as { package_sha256?: string };
-    if (parsed.package_sha256 !== packageSha256) throw new Error(`CONTENT_CHANGED_AFTER_HANDOFF: ${folder}`);
+    if (parsed.package_sha256 !== packageSha256) {
+      console.warn(`CONTENT_CHANGED_AFTER_HANDOFF: ${folder}; the immutable READY delivery is preserved and new data waits for the next slot.`);
+      return {
+        jurisdiction_id: jurisdiction.jurisdiction_id,
+        status: "IMMUTABLE_HANDOFF_PRESERVED" as const,
+        package_sha256: parsed.package_sha256 ?? null,
+        attempted_package_sha256: packageSha256,
+      };
+    }
     return { jurisdiction_id: jurisdiction.jurisdiction_id, status: "ALREADY_WRITTEN" as const, package_sha256: packageSha256 };
   }
   for (const [name, content] of Object.entries(files)) await uploadDropboxText(`${folder}/${name}`, content);
