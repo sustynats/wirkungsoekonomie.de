@@ -99,7 +99,7 @@ jobs:
             echo "No material public change; the expensive static build remains skipped."
             exit 0
           fi
-          git commit -m "chore(parlament): publish verified automation snapshot"
+          git commit -m "[parliament-autopilot] publish verified snapshot"
           git push origin HEAD:main
       - name: Surface a blocked runtime after preserving verified domain updates
         if: steps.autopilot.outcome == 'failure'
