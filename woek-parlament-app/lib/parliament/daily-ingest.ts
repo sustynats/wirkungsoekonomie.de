@@ -172,6 +172,9 @@ function newestImpactVersions(records: WoeKImpactCase[]) {
 }
 
 async function requestDeployment(hook: string | undefined) {
+  if (!hook && process.env.WOEK_STATIC_PUBLICATION_MODE === "github_pages") {
+    return { status: "REQUESTED" as const, deployment: "github-pages:queued" };
+  }
   if (!hook) return { status: "NOT_CONFIGURED" as const, deployment: null };
   const response = await fetch(hook, { method: "POST", signal: AbortSignal.timeout(15_000) });
   if (!response.ok) throw new Error(`Parlaments-Deployment-Hook fehlgeschlagen (${response.status}).`);
@@ -184,7 +187,7 @@ async function verifyPendingDeployments(ledger: ParliamentDailyLedger) {
   if (!pending.length) return ledger;
   let publicHash: string | null = null;
   try {
-    const response = await fetch(`${productionBaseUrl}/api/autopilot/version`, { cache: "no-store", signal: AbortSignal.timeout(10_000) });
+    const response = await fetch(`${productionBaseUrl}/_woek-build-manifest.json`, { cache: "no-store", signal: AbortSignal.timeout(10_000) });
     if (response.ok) publicHash = ((await response.json()) as { parliament_public_hash?: string }).parliament_public_hash ?? null;
   } catch {
     return ledger;
@@ -352,7 +355,7 @@ async function processApprovals({ ledger, state, files, config, knownCaseIds, re
       approvals: [...nextState.approvals, { review_id: approval.review_id, input_delivery_id: approval.input_delivery_id, input_hash: approval.input_hash, approval_hash: approvalHash, processed_at: processedAt }],
     };
     candidateState.source_hash = sha256(JSON.stringify({ impact_cases: candidateState.impact_cases, vote_reviews: candidateState.vote_reviews, approvals: candidateState.approvals }));
-    if (!config.deploymentHook) {
+    if (!config.deploymentHook && process.env.WOEK_STATIC_PUBLICATION_MODE !== "github_pages") {
       report.blockers.push(`${file.name}: Production-Deployment-Hook ist nicht konfiguriert.`);
       continue;
     }

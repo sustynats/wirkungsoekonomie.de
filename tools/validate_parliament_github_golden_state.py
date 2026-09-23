@@ -43,6 +43,14 @@ LANE_COMMITS = {
     "mecklenburg_vorpommern_current_source": BASE_MAIN_COMMIT,
 }
 
+# The navigation lane kept evolving after its reviewed merge. Its Golden State
+# hashes therefore bind the immutable merge object, while the current working
+# tree continues to be covered by the dedicated navigation gates.
+COMMIT_BOUND_RAW_SHA256 = {
+    NAV_SCRIPT_PATH: LANE_COMMITS["shared_same_page_navigation"],
+    NAV_COMPONENT_PATH: LANE_COMMITS["shared_same_page_navigation"],
+}
+
 REQUIRED_PATHS = [
     "/laender/sachsen-anhalt",
     "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
@@ -60,6 +68,16 @@ REQUIRED_PATHS = [
 
 def sha256_bytes(value: bytes) -> str:
     return hashlib.sha256(value).hexdigest()
+
+
+def git_blob(relative_path: str, commit: str) -> bytes:
+    result = subprocess.run(
+        ["git", "show", f"{commit}:{relative_path}"],
+        cwd=ROOT,
+        check=True,
+        stdout=subprocess.PIPE,
+    )
+    return result.stdout
 
 
 def load_json(relative_path: str) -> dict:
@@ -180,7 +198,9 @@ def validate(actual: dict, expected: dict) -> None:
     if descriptor_hash(actual) != actual["golden_state_descriptor_sha256"]:
         raise ValueError("PARLIAMENT_GITHUB_GOLDEN_STATE_DESCRIPTOR_HASH_DRIFT")
     for relative_path, expected_sha in RAW_SHA256.items():
-        if sha256_bytes((ROOT / relative_path).read_bytes()) != expected_sha:
+        commit = COMMIT_BOUND_RAW_SHA256.get(relative_path)
+        raw = git_blob(relative_path, commit) if commit else (ROOT / relative_path).read_bytes()
+        if sha256_bytes(raw) != expected_sha:
             raise ValueError(f"PARLIAMENT_GOLDEN_STATE_RAW_HASH_DRIFT:{relative_path}")
 
     st_release = load_json(ST_RELEASE_PATH)

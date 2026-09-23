@@ -132,7 +132,7 @@ async function verifyPendingDeployments(state: DailyIngestState) {
   if (!pending.length) return state;
   let publicHash: string | null = null;
   try {
-    const response = await fetch(`${productionBaseUrl}/api/autopilot/version`, { cache: "no-store", signal: AbortSignal.timeout(10_000) });
+    const response = await fetch(`${productionBaseUrl}/_woek-build-manifest.json`, { cache: "no-store", signal: AbortSignal.timeout(10_000) });
     if (response.ok) publicHash = ((await response.json()) as { government_public_hash?: string }).government_public_hash ?? null;
   } catch {
     return state;
@@ -196,6 +196,9 @@ function reportMarkdown(report: DailyRunReport) {
 }
 
 async function requestDeployment(hook: string | undefined) {
+  if (!hook && process.env.WOEK_STATIC_PUBLICATION_MODE === "github_pages") {
+    return { status: "REQUESTED" as const, commit: "github-pages:queued" };
+  }
   if (!hook) return { status: "NOT_CONFIGURED" as const, commit: null };
   const response = await fetch(hook, { method: "POST", signal: AbortSignal.timeout(15_000) });
   if (!response.ok) throw new Error(`Government production deploy hook failed (${response.status}).`);
