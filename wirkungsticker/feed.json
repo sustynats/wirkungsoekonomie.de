@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-23T10:23:21.338Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-23T11:26:35.882Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/verdacht-auf-sprengstoff-ministerium-zum-drohnenfund-hybride-bedrohungen-sind-real-9f3328/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/verdacht-auf-sprengstoff-ministerium-zum-drohnenfund-hybride-bedrohungen-sind-real-9f3328/",
+      "title": "Nach Angaben des Innenministeriums: Hinweise auf hybride Bedrohungen und Drohnenfund",
+      "summary": "Ein Bericht gibt eine Aussage des niedersächsischen Innenministeriums zu Drohnenangriffen und einem Fund in Wunstorf wieder. Details und Zusammenhang sind offen.",
+      "date_published": "2026-09-23T10:44:56.000Z",
+      "date_modified": "2026-09-23T10:44:56.000Z",
+      "_woek_released_at": "2026-09-23T11:18:28.162Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/maischberger-am-22-september-2026-reformkurs-brandmauer-und-die-frage-nach-politischer-verantwo-a91475/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/maischberger-am-22-september-2026-reformkurs-brandmauer-und-die-frage-nach-politischer-verantwo-a91475/",
@@ -31,6 +62,37 @@
         "Nachgesehen"
       ],
       "_woek_type": "Nachgesehen"
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/angriff-in-franken-polizei-fahndet-nach-messerattacke-nach-mann-aus-wendlingen-ed8165/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/angriff-in-franken-polizei-fahndet-nach-messerattacke-nach-mann-aus-wendlingen-ed8165/",
+      "title": "Laut stern: Angriff in Franken: Polizei fahndet nach Mann nach Messerattacke",
+      "summary": "Bei Nürnberg soll es zu einem blutigen Streit unter Arbeitskollegen gekommen sein; der mutmaßliche Täter wird gesucht. Angaben zu Verletzten, Motiv und genauem Ablauf bleiben in der vorliegenden Quelle offen.",
+      "date_published": "2026-09-23T10:00:47.000Z",
+      "date_modified": "2026-09-23T10:00:47.000Z",
+      "_woek_released_at": "2026-09-23T11:28:41.813Z",
+      "tags": [
+        "Arbeit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
