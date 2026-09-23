@@ -4,12 +4,37 @@ const protectedSchema = "parliament";
 
 export class DatabaseConfigurationError extends Error {}
 
+function supabaseUrl(value: string | undefined, serviceRoleKey: string) {
+  if (value) {
+    try {
+      const direct = new URL(value.trim());
+      if (direct.protocol === "https:") return direct;
+    } catch {
+      // A copied legacy value can be invalid. A Supabase JWT can recover the
+      // public project endpoint without exposing or transmitting the key.
+    }
+  }
+  try {
+    const segments = serviceRoleKey.split(".");
+    if (segments.length !== 3) throw new Error("not a JWT");
+    const payload = JSON.parse(Buffer.from(segments[1], "base64url").toString("utf8")) as {
+      iss?: unknown;
+      ref?: unknown;
+      role?: unknown;
+    };
+    if (payload.iss !== "supabase" || payload.role !== "service_role" || typeof payload.ref !== "string" || !/^[a-z0-9]{20}$/.test(payload.ref)) {
+      throw new Error("unexpected Supabase JWT claims");
+    }
+    return new URL(`https://${payload.ref}.supabase.co`);
+  } catch {
+    throw new DatabaseConfigurationError("Protected database URL is invalid and cannot be recovered from the configured service role key.");
+  }
+}
+
 function configuration() {
-  const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !serviceRoleKey) throw new DatabaseConfigurationError("Protected database access is not configured.");
-  const parsedUrl = new URL(url);
-  if (parsedUrl.protocol !== "https:") throw new DatabaseConfigurationError("Protected database URL must use HTTPS.");
+  if (!serviceRoleKey) throw new DatabaseConfigurationError("Protected database access is not configured.");
+  const parsedUrl = supabaseUrl(process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL, serviceRoleKey);
   return { url: parsedUrl.toString().replace(/\/$/, ""), serviceRoleKey };
 }
 
