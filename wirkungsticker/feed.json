@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-23T05:08:53.931Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-23T05:24:15.227Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/mecklenburg-vorpommern-erneuter-verdacht-auf-quecksilber-dhl-zentrum-evakuiert-4f6af2/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/mecklenburg-vorpommern-erneuter-verdacht-auf-quecksilber-dhl-zentrum-evakuiert-4f6af2/",
+      "title": "DHL-Zentrum in Leizen wegen Gefahrstoffverdachts evakuiert",
+      "summary": "Ein DHL-Zentrum in Leizen wurde wegen eines Gefahrstoffverdachts geräumt. Stoff, Ursache und Zusammenhang mit den Beschwerden einer Zustellerin sind noch offen.",
+      "date_published": "2026-09-23T03:20:35.000Z",
+      "date_modified": "2026-09-23T03:20:35.000Z",
+      "_woek_released_at": "2026-09-23T03:55:46.635Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-sachsen-anhalts-bsw-landeschef-afd-weiss-nicht-was-sie-will-bdcc11/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-sachsen-anhalts-bsw-landeschef-afd-weiss-nicht-was-sie-will-bdcc11/",
@@ -66,37 +97,6 @@
         "democracy": {
           "magnitude": 2,
           "direction": "negative",
-          "status": "potential"
-        }
-      }
-    },
-    {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/mecklenburg-vorpommern-erneuter-verdacht-auf-quecksilber-dhl-zentrum-evakuiert-4f6af2/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/mecklenburg-vorpommern-erneuter-verdacht-auf-quecksilber-dhl-zentrum-evakuiert-4f6af2/",
-      "title": "DHL-Zentrum in Leizen wegen Gefahrstoffverdachts evakuiert",
-      "summary": "Ein DHL-Zentrum in Leizen ist wegen eines Gefahrstoffverdachts evakuiert worden. Ob es Quecksilber war und ob die Beschwerden einer Zustellerin damit zusammenhängen, ist offen.",
-      "date_published": "2026-09-22T20:48:10.000Z",
-      "date_modified": "2026-09-22T20:48:10.000Z",
-      "_woek_released_at": "2026-09-23T03:55:46.635Z",
-      "tags": [
-        "Politik"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": true,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "potential"
-        },
-        "planet": {
-          "magnitude": 1,
-          "direction": "open",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 1,
-          "direction": "open",
           "status": "potential"
         }
       }
