@@ -3,6 +3,27 @@
 Verbindliche Betriebsarchitektur des Wirkungstickers. Sie ersetzt die Dropbox-ChatGPT-Bridge
 (10.-15.09.2026) und die frühere Oracle-Proxy-Lane. Entscheidung: Natalie, 15.09.2026.
 
+## Betriebsschalter und Wiederanlauf (23.09.2026)
+
+Natalie hat am 23.09. ausdrücklich den Wiederanlauf angeordnet. Eine veraltete lokale
+Überwachungsanweisung hatte die Pause des früheren Oracle-Processors vom 14.09. erneut
+auf die inzwischen aktiven GitHub-Routen übertragen. Diese zusätzliche Sperre ist
+aufzuheben, nicht die heutigen Budget-, Quellen-, Qualitäts- oder Freigabegates.
+
+- Nachrichten: `WOEK_NEWS_AI_ENABLED` als Repository-Variable, standardmäßig `true`;
+  ein ausdrücklich gesetztes `false` pausiert die Analyse, nicht den Import.
+- Redaktion: `WOEK_EDITORIAL_PAID_ENABLED=true` erlaubt die Entwurfserstellung;
+  `false` pausiert sie ausdrücklich. Veröffentlichung bleibt an die finale Freigabe gebunden.
+- Transkription: `WOEK_EPISODE_TRANSCRIBE`, standardmäßig `true`, erst nach dem bestehenden
+  Untertitel-Wartefenster und innerhalb des bisherigen Tagesdeckels.
+- Der historische Oracle-Processor bleibt deaktiviert, damit kein paralleler Verarbeitungspfad
+  entsteht. Sein Status ist kein Auftrag, aktive GitHub-Workflows zu sperren.
+
+Überwachung muss den aktuellen Auftrag und diese Architektur berücksichtigen; historische
+Handover-Pausen dürfen nicht still als neue Bedienanweisung wirken. Ein grüner Lauf mit
+übersprungener Entwurfserstellung belegt keine Verarbeitung. Nach Wiederanlauf die tatsächlich
+ausgeführten Schritte und Ergebnisse prüfen. Budgets, Modelle und Mengenlimits bleiben unverändert.
+
 ## Warum
 
 Die Bridge hatte fünf Übergabepunkte (GitHub → Oracle-SQLite → Dropbox → ChatGPT-Worker →

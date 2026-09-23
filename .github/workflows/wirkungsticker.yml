@@ -106,9 +106,9 @@ jobs:
           WOEK_NEWS_ORDER_RESULT_FILE: ${{ runner.temp }}/meldungsauftraege/ergebnisse.json
           # Der Schlüssel liegt ausschließlich im Repository-Secret WIRKUNGSTICKER.
           OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
-          # Server pause covers this separate GitHub route too; import stays active.
-          # Re-enable only after verified ChatGPT preapproval routing and access gate.
-          WOEK_NEWS_AI_ENABLED: "false"
+          # Aktueller Direktbetrieb; nur eine ausdrueckliche neue Bedienpause
+          # schaltet ihn ab. Die alte Oracle-Pause ist keine GitHub-Sperre.
+          WOEK_NEWS_AI_ENABLED: ${{ vars.WOEK_NEWS_AI_ENABLED || 'true' }}
           WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
           # medium seit 15.09. abends: gpt-5.6-luna entgleiste bei low in 2 von 4 Antworten
           # im hinteren Teil (Planet/Demokratie als Fragmente, Kennungen verkürzt).

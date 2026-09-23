@@ -65,8 +65,7 @@ jobs:
       # Wortlaut der Sendungen: amtliche Untertitel zuerst (kostenlos), danach
       # Wartefenster, zuletzt eigene Spracherkennung (rund 0,45 USD je Sendung).
       WOEK_EPISODE_SUBTITLE_WAIT_HOURS: ${{ vars.WOEK_EPISODE_SUBTITLE_WAIT_HOURS || '18' }}
-      # Paid transcription is paused with the other paid editorial routes.
-      WOEK_EPISODE_TRANSCRIBE: "false"
+      WOEK_EPISODE_TRANSCRIBE: ${{ vars.WOEK_EPISODE_TRANSCRIBE || 'true' }}
       WOEK_EPISODE_TRANSCRIPTS_PER_DAY: ${{ vars.WOEK_EPISODE_TRANSCRIPTS_PER_DAY || '2' }}
       # Begrenzte Web-Suche je Auftrag, damit verlinkte Quellen wirklich gelesen werden
       # (sonst antwortet das Profil vertragsgemäß mit SOURCE_VERIFICATION_REQUIRED).
@@ -106,7 +105,8 @@ jobs:
         continue-on-error: true
         run: node scripts/news/sendungs-kandidaten.mjs
       - name: Draft open editorial requests (one paid call per request)
-        # Resume only after real ChatGPT preapproval and the routing/access gates are verified.
+        # Expliziter Betriebsschalter; Wiederanlauf von Natalie am 23.09. freigegeben.
+        # Quellen-/Budgetgates und finale Freigabe in der Redaktionsapp bleiben bestehen.
         if: vars.WOEK_EDITORIAL_PAID_ENABLED == 'true'
         env:
           # github.workspace ist auch in Schritten verfügbar; nur hier gesetzt, damit die
