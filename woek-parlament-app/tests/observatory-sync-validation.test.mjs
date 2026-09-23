@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseValidRecords } from "../scripts/observatory-sync-validation.mjs";
+import { mergeByIdPreservingPublished, parseValidRecords } from "../scripts/observatory-sync-validation.mjs";
 
 test("observatory sync isolates invalid legacy records without publishing them", () => {
   const validate = (record) => record?.schema_version === "current";
@@ -30,4 +30,21 @@ test("observatory sync treats an invalid JSON document as an isolated rejection"
   assert.deepEqual(records, []);
   assert.equal(rejected.length, 1);
   assert.equal(rejected[0].line, 1);
+});
+
+test("observatory sync preserves a published record when an approved candidate conflicts", () => {
+  const existing = [{ evidence_event_id: "event-1", summary: "published" }];
+  const incoming = [
+    { evidence_event_id: "event-1", summary: "changed without version" },
+    { evidence_event_id: "event-2", summary: "new" },
+  ];
+  const conflicts = [];
+
+  const merged = mergeByIdPreservingPublished(existing, incoming, "evidence_event_id", (entry) => conflicts.push(entry));
+
+  assert.deepEqual(merged, [
+    { evidence_event_id: "event-1", summary: "published" },
+    { evidence_event_id: "event-2", summary: "new" },
+  ]);
+  assert.deepEqual(conflicts.map((entry) => entry.id), ["event-1"]);
 });
