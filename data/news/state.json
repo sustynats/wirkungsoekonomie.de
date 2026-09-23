@@ -141717,14 +141717,14 @@
       "items": 15,
       "etag": null,
       "last_modified": null,
-      "last_attempt": "2026-09-23T12:54:38.808Z",
-      "attempts": 726,
-      "consecutive_failures": 7,
+      "last_attempt": "2026-09-23T19:08:36.622Z",
+      "attempts": 727,
+      "consecutive_failures": 8,
       "latest_item": "2026-08-15T12:00:00.000Z",
       "governance_hold_reason": null,
       "governance_hold_until": null,
-      "failures": 7,
-      "last_error_at": "2026-09-23T12:54:38.808Z"
+      "failures": 8,
+      "last_error_at": "2026-09-23T19:08:36.622Z"
     },
     "europepmc-impact-research": {
       "last_attempt": "2026-09-23T17:41:48.237Z",
@@ -142238,6 +142238,12 @@
     }
   },
   "pending_story_ids": [
+    "wt-8601e523866bef53",
+    "wt-026df753c04e25bf",
+    "wt-b97abcfbead68ab5",
+    "wt-357c862d1cbe770d",
+    "wt-aaf2ddc6fe100e7f",
+    "wt-3c71c13c9c8f0c53",
     "wt-1f98b54d7b18b97d",
     "wt-9a0b1ace0b9f3fc0",
     "wt-b50d06668940f1f1",
@@ -142256,7 +142262,6 @@
     "wt-0ba7ab300e5dc525",
     "wt-a85bdb1616786a93",
     "wt-fc6af618320ed742",
-    "wt-357c862d1cbe770d",
     "wt-f669763d7e30c843",
     "wt-74299bdb45c31e4f",
     "wt-9c3f31ebf8b928cb",
@@ -142275,7 +142280,6 @@
     "wt-7c442d1aa9d57cc5",
     "wt-48091d9931f14afc",
     "wt-d7f4b31de1545cd1",
-    "wt-026df753c04e25bf",
     "wt-d1a12ca1dcde842a",
     "wt-4859ebc28049f760",
     "wt-74f6cf55b346bbdc",
@@ -142635,10 +142639,7 @@
     "wt-5dca8551b1b34246",
     "wt-646d0bb030e93f02",
     "wt-455a5e32c08ff8cf",
-    "wt-57a3a9ab2e2517fb",
     "wt-4c10636042a04b9e",
-    "wt-c0ef19dd100d463c",
-    "wt-a5c0a6d4a7a85a86",
     "wt-37f7dd9252599acf",
     "wt-ec63f44be9745f15",
     "wt-6bb3e30fcdd6c388",
@@ -142648,8 +142649,6 @@
     "wt-cdcfe085f7ede02d",
     "wt-8b46db7c7001a2e4",
     "wt-00138f404711b485",
-    "wt-a9a60fc68df18271",
-    "wt-8e1eb8176deae9ca",
     "wt-62cb41beb7c1b0c6",
     "wt-6253fee48a89251b",
     "wt-6e844127eab527c8",
@@ -143051,14 +143050,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-b97abcfbead68ab5",
-    "wt-8601e523866bef53",
-    "wt-3c71c13c9c8f0c53",
-    "wt-aaf2ddc6fe100e7f"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-23T18:54:27.581Z",
+  "last_attempted_run": "2026-09-23T19:08:36.622Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1463,
@@ -147469,6 +147464,11 @@
       "input_hash": "1b5450bdcd3f52c81e67f4e7",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-23T18:54:27.581Z"
+    },
+    "wt-b97abcfbead68ab5": {
+      "input_hash": "1b5450bdcd3f52c81e67f4e7",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-23T19:08:36.622Z"
     }
   },
   "publication_recovery": {
