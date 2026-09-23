@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-23T07:54:24.060Z",
+  "last_successful_run": "2026-09-23T08:08:27.559Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -135252,6 +135252,11 @@
     }
   },
   "pending_story_ids": [
+    "wt-03b216d110f94807",
+    "wt-5bee1963de53b728",
+    "wt-4e1c864637c15f53",
+    "wt-3e2002bfa8681482",
+    "wt-a8a2aa99218519bf",
     "wt-628a1cf47127b43d",
     "wt-5ce7e4c258f1f966",
     "wt-d15b1df6e486d4c1",
@@ -135288,7 +135293,6 @@
     "wt-060d435f10b8cceb",
     "wt-636848e253fdc6e0",
     "wt-a932abba5d9d3c74",
-    "wt-3e2002bfa8681482",
     "wt-25731e5e2f78924c",
     "wt-a46ecd66369bcf46",
     "wt-c3392729d4380306",
@@ -135601,22 +135605,13 @@
     "wt-6bcacd196ab61ee5",
     "wt-ee3fd632ce7b8bd2",
     "wt-b8f4f0a8e55c0e9b",
-    "wt-2b69e20886f8df91",
-    "wt-68b316ba830ecb8d",
-    "wt-9dfe45c1d0e053c0",
-    "wt-64d55f1247fecf6a",
     "wt-4332b06b92e0a8fe",
-    "wt-5d9f903ef7467ce7",
-    "wt-1edd15707c36746a",
-    "wt-8eebcf97059553f7",
-    "wt-7f3a75031adc2e9c",
     "wt-286c7a93f491d070",
     "wt-8f51905400555d75",
     "wt-2afafe65ee132755",
     "wt-4da18d10651b5a35",
     "wt-6cc71f5034818614",
     "wt-bd65c0cb99b2f858",
-    "wt-404596dab9bf36aa",
     "wt-df027ed9cbb8d477",
     "wt-0047f3cf462dc34e",
     "wt-010dddcfa093330e",
@@ -135630,7 +135625,6 @@
     "wt-c3d52db28f2f7b52",
     "wt-f072681a06411422",
     "wt-1c35560d342ac09c",
-    "wt-39db7edac3ebce7f",
     "wt-b12321047e31c338",
     "wt-5a09d8ea33380b91",
     "wt-150f901b2a42b95e",
@@ -135808,7 +135802,6 @@
     "wt-20282aa68ebd0fa9",
     "wt-37b98e2edede6383",
     "wt-adbf2b28a320d2d6",
-    "wt-a8a2aa99218519bf",
     "wt-5d50472ee2b66d93",
     "wt-7d282bac7adadc1b",
     "wt-26b27a50d1cdf845",
@@ -136003,13 +135996,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-5bee1963de53b728",
-    "wt-4e1c864637c15f53",
-    "wt-03b216d110f94807"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-23T07:54:24.060Z",
+  "last_attempted_run": "2026-09-23T08:08:27.559Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1463,
@@ -138586,16 +138576,6 @@
     }
   ],
   "missed_news_rechecks": {
-    "https://www.euronews.com/video/2026/09/16/surge-in-yemen-violence-ends-ceasefire-and-drives-mass-displacement": {
-      "input_hash": "f7fdc23b1d2b180cf54ff587",
-      "version": "2026-09-10.2",
-      "checked_at": "2026-09-16T08:07:47.503Z"
-    },
-    "https://www.lto.de/recht/presseschau/p/presseschau-16-09-2026-briefwahl-usa-kids-act-eu-maschsee-moerder?r=rss": {
-      "input_hash": "1d99f438ea8c9a2791ad1045",
-      "version": "2026-09-10.2",
-      "checked_at": "2026-09-16T08:07:47.503Z"
-    },
     "wt-88fa8ea87e9064a4": {
       "input_hash": "f7fdc23b1d2b180cf54ff587",
       "version": "2026-09-10.2",
@@ -140355,6 +140335,11 @@
       "input_hash": "7ede411ee5ac2818039ff3ea",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-23T07:54:24.060Z"
+    },
+    "wt-3e2002bfa8681482": {
+      "input_hash": "665ad1bd0e19373063a5d9a2",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-23T08:08:27.559Z"
     }
   },
   "publication_recovery": {
