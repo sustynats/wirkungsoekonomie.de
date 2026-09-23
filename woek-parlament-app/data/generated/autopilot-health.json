@@ -1,32 +1,32 @@
 {
   "schema_version": "1.0",
   "run_id": "2026-09-23-AM",
-  "generated_at": "2026-09-23T13:20:04.860Z",
+  "generated_at": "2026-09-23T13:26:57.158Z",
   "overall_status": "BLOCKED",
   "domains": {
     "federal": {
       "status": "OK",
-      "last_run_at": "2026-09-23T13:20:04.860Z",
+      "last_run_at": "2026-09-23T13:26:57.158Z",
       "detail": "Bund: COMPLETED"
     },
     "parliament": {
       "status": "BLOCKED",
-      "last_run_at": "2026-09-23T13:20:04.860Z",
+      "last_run_at": "2026-09-23T13:26:57.158Z",
       "detail": "Parlament: FAILED"
     },
     "states": {
       "status": "DEGRADED",
-      "last_run_at": "2026-09-23T13:20:30.281Z",
+      "last_run_at": "2026-09-23T13:27:24.126Z",
       "detail": "8 von 8 aktivierten Länder-Wahlzyklen besitzen einen amtlichen Kalender- oder Ergebnisadapter; eigenständige Regierungsadapter bleiben getrennt als offene Abdeckung ausgewiesen."
     },
     "eu": {
       "status": "DEGRADED",
-      "last_run_at": "2026-09-23T13:20:30.281Z",
+      "last_run_at": "2026-09-23T13:27:24.127Z",
       "detail": "0 von 3 definierten EU-Quellen sind als produktive Adapter freigegeben. Der EU-Backfill wird bis dahin nicht als vollständig ausgewiesen."
     },
     "observatory": {
       "status": "DEGRADED",
-      "last_run_at": "2026-09-23T13:20:04.860Z",
+      "last_run_at": "2026-09-23T13:26:57.158Z",
       "detail": "Wirkungsobservatorium: DEGRADED"
     }
   },
@@ -107,10 +107,10 @@
   ],
   "next_reality_checks": [],
   "observatory": {
-    "last_observation_sync": "2026-09-23T13:20:04.860Z",
+    "last_observation_sync": "2026-09-23T13:26:57.158Z",
     "last_evidence_review": null,
-    "last_reality_check_trigger": "2026-09-23T13:20:04.860Z",
-    "open_reality_candidates": 10,
+    "last_reality_check_trigger": "2026-09-23T13:26:57.158Z",
+    "open_reality_candidates": 7,
     "blocked_attributions": 0,
     "source_failures": 2,
     "stale_indicators": 0
