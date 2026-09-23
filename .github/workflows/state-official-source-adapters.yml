@@ -19,7 +19,8 @@ on:
       - "woek-parlament-app/package.json"
       - "woek-parlament-app/scripts/run-official-state-source-adapters.mjs"
   schedule:
-    - cron: "17 4 * * *"
+    - cron: "43 5 * * *"
+      timezone: "Europe/Berlin"
   workflow_dispatch:
 
 permissions:
@@ -68,4 +69,4 @@ jobs:
           name: state-source-adapter-snapshot-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/state-source-adapter-snapshot.json
           if-no-files-found: error
-          retention-days: 30
+          retention-days: 7

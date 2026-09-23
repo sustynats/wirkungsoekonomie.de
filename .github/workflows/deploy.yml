@@ -38,7 +38,7 @@ concurrency:
 
 jobs:
   build:
-    if: inputs.speedtest_only != true
+    if: "${{ inputs.speedtest_only != true && !contains(github.event.head_commit.message, 'chore(parlament): publish verified automation snapshot') }}"
     runs-on: ubuntu-latest
     outputs:
       ticker_only: ${{ steps.release-mode.outputs.ticker_only }}

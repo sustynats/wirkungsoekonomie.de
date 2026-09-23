@@ -45,6 +45,8 @@
     "government:sync-approved": "node scripts/sync-approved-government-impact-cases.mjs",
     "parliament:sync-approved": "node scripts/sync-approved-parliament-daily.mjs",
     "observatory:sync-approved": "node scripts/sync-approved-observatory.mjs",
+    "autopilot:sync-election-registry": "node scripts/sync-political-election-registry.mjs",
+    "static-release:update-trigger": "node scripts/update-static-release-trigger.mjs",
     "fachvollstaendigkeit:materialize-b06": "node scripts/materialize-fachvollstaendigkeit-b06.mjs",
     "fachvollstaendigkeit:materialize-b07": "node scripts/materialize-fachvollstaendigkeit-b07.mjs",
     "check:fachvollstaendigkeit-source-vs-view": "node scripts/quality/check-fachvollstaendigkeit-source-vs-view.mjs",

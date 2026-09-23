@@ -78,12 +78,15 @@ for (const record of publicCases) {
 }
 
 const jsonl = publicCases.map((record) => JSON.stringify(record)).join("\n") + (publicCases.length ? "\n" : "");
+const sourceHash = (await import("node:crypto")).createHash("sha256").update(JSON.stringify(publicCases)).digest("hex");
+let previousMeta = null;
+try { previousMeta = JSON.parse(await readFile(path.join(dataRoot, "public-impact-cases-meta.json"), "utf8")); } catch { /* First materialization. */ }
 await writeFile(path.join(dataRoot, "public-impact-cases.jsonl"), jsonl, "utf8");
 await writeFile(path.join(dataRoot, "public-impact-case-history.jsonl"), publicHistory.map((entry) => JSON.stringify(entry)).join("\n") + (publicHistory.length ? "\n" : ""), "utf8");
 await writeFile(path.join(dataRoot, "public-impact-cases-meta.json"), `${JSON.stringify({
-  generated_at: new Date().toISOString(),
+  generated_at: previousMeta?.source_hash === sourceHash ? previousMeta.generated_at : new Date().toISOString(),
   count: publicCases.length,
-  source_hash: (await import("node:crypto")).createHash("sha256").update(JSON.stringify(publicCases)).digest("hex"),
+  source_hash: sourceHash,
   method_version: "WOEK-POLITICAL-IMPACT-2.0",
   schema_id: schema.$id,
 }, null, 2)}\n`, "utf8");

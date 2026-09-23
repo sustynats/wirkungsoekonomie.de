@@ -2,13 +2,12 @@ name: WÖk Political Autopilot
 
 on:
   schedule:
-    # Berlin 06:00 and 16:00, with adjacent UTC hours for daylight-saving time.
-    # The server route accepts only the matching Europe/Berlin time slot.
-    - cron: "0 4,5,14,15 * * *"
+    - cron: "13 6,16 * * *"
+      timezone: "Europe/Berlin"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: woek-political-autopilot
@@ -17,19 +16,37 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     defaults:
       run:
         working-directory: woek-parlament-app
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: woek-parlament-app/package-lock.json
       - run: npm ci --ignore-scripts
+      - name: Verify the fail-closed runtime configuration
+        env:
+          REQUIRED_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          REQUIRED_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          REQUIRED_DIP_API_KEY: ${{ secrets.DIP_API_KEY }}
+          REQUIRED_DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          REQUIRED_DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          REQUIRED_DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+        run: |
+          for name in REQUIRED_SUPABASE_URL REQUIRED_SUPABASE_SERVICE_ROLE_KEY REQUIRED_DIP_API_KEY REQUIRED_DROPBOX_APP_KEY REQUIRED_DROPBOX_APP_SECRET REQUIRED_DROPBOX_REFRESH_TOKEN; do
+            test -n "${!name}" || { echo "Missing required GitHub Actions secret: ${name#REQUIRED_}"; exit 1; }
+          done
+          test "$GITHUB_REF" = "refs/heads/main" || { echo "Publication automation must run from main."; exit 1; }
+          test "${{ vars.WOEK_AUTOPILOT_RUNTIME_MODE }}" = "NORMAL" || { echo "WOEK_AUTOPILOT_RUNTIME_MODE must be NORMAL."; exit 1; }
       - name: Process approvals and create new political deltas outside Vercel
+        id: autopilot
+        continue-on-error: true
         env:
           WOEK_AUTOPILOT_RUNTIME_MODE: ${{ vars.WOEK_AUTOPILOT_RUNTIME_MODE }}
           WOEK_AUTOPILOT_FORCE_SLOT: ${{ github.event_name == 'workflow_dispatch' && 'AM' || '' }}
@@ -44,4 +61,48 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.WOEK_MONITOR_DISCORD_BOT_TOKEN }}
           DISCORD_REVIEW_RECIPIENT_USER_ID: ${{ secrets.WOEK_MONITOR_DISCORD_USER_ID }}
           NEXT_PUBLIC_PORTAL_URL: https://parlament.wirkungsoekonomie.de
+          WOEK_STATIC_PUBLICATION_MODE: github_pages
         run: npm run autopilot:run
+      - name: Materialize only verified or fach-approved public state
+        env:
+          WOEK_AUTOPILOT_RUNTIME_MODE: ${{ vars.WOEK_AUTOPILOT_RUNTIME_MODE }}
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+        run: |
+          npm run autopilot:sync-election-registry
+          npm run government:sync-approved
+          npm run parliament:sync-approved
+          npm run observatory:sync-approved
+          npm run static-release:update-trigger
+      - name: Validate the deterministic publication boundary
+        run: npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts
+      - name: Commit a changed verified snapshot
+        working-directory: .
+        run: |
+          git config user.name "woek-parlament-autopilot[bot]"
+          git config user.email "woek-parlament-autopilot[bot]@users.noreply.github.com"
+          git add \
+            .github/static-release-trigger.json \
+            woek-parlament-app/data/autopilot/election-cycles.json \
+            woek-parlament-app/data/political-jurisdictions.json \
+            woek-parlament-app/data/generated/autopilot-health.json \
+            woek-parlament-app/data/generated/parliament-daily-impact-cases.jsonl \
+            woek-parlament-app/data/generated/parliament-daily-state.json \
+            woek-parlament-app/data/government/impact-cases/public-impact-cases.jsonl \
+            woek-parlament-app/data/government/impact-cases/public-impact-case-history.jsonl \
+            woek-parlament-app/data/government/impact-cases/public-impact-cases-meta.json \
+            woek-parlament-app/data/observatory/public/evidence-events.jsonl \
+            woek-parlament-app/data/observatory/public/reality-check-candidates.jsonl \
+            woek-parlament-app/data/observatory/public/analysis-version-updates.jsonl
+          if git diff --cached --quiet; then
+            echo "No material public change; the expensive static build remains skipped."
+            exit 0
+          fi
+          git commit -m "chore(parlament): publish verified automation snapshot"
+          git push origin HEAD:main
+      - name: Surface a blocked runtime after preserving verified domain updates
+        if: steps.autopilot.outcome == 'failure'
+        run: |
+          echo "At least one runtime domain was blocked. Verified outputs from independent domains were preserved before failing the run."
+          exit 1

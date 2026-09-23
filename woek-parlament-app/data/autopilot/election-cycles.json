@@ -1,17 +1,20 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-18",
+  "generated_at": "2026-09-23",
   "cycles": [
     {
       "election_cycle_id": "DE-ST-LANDTAG-2026",
       "jurisdiction_id": "DE-ST",
       "election_date": "2026-09-06",
-      "election_cycle_state": "PROGRAMME_ANALYSIS",
-      "status": "PROGRAMMES_REVIEW",
-      "official_source_refs": ["https://wahlen.sachsen-anhalt.de/"],
+      "election_cycle_state": "ELECTION_RESULT",
+      "status": "ELECTION_COMPLETE",
+      "official_source_refs": [
+        "https://wahlen.sachsen-anhalt.de/",
+        "https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/"
+      ],
       "programme_collection_status": "IN_PROGRESS",
       "programme_analysis_status": "IN_REVIEW",
-      "result_status": "NOT_AVAILABLE",
+      "result_status": "PRELIMINARY",
       "coalition_formation_status": "NOT_STARTED",
       "new_government_status": "NOT_FORMED"
     },
@@ -19,12 +22,15 @@
       "election_cycle_id": "DE-BE-AGH-2026",
       "jurisdiction_id": "DE-BE",
       "election_date": "2026-09-20",
-      "election_cycle_state": "PROGRAMME_ANALYSIS",
-      "status": "PROGRAMMES_COLLECTING",
-      "official_source_refs": ["https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/"],
+      "election_cycle_state": "ELECTION_RESULT",
+      "status": "ELECTION_COMPLETE",
+      "official_source_refs": [
+        "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/",
+        "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1716422.php"
+      ],
       "programme_collection_status": "IN_PROGRESS",
       "programme_analysis_status": "NOT_STARTED",
-      "result_status": "NOT_AVAILABLE",
+      "result_status": "PRELIMINARY",
       "coalition_formation_status": "NOT_STARTED",
       "new_government_status": "NOT_FORMED"
     },
@@ -32,12 +38,15 @@
       "election_cycle_id": "DE-MV-LANDTAG-2026",
       "jurisdiction_id": "DE-MV",
       "election_date": "2026-09-20",
-      "election_cycle_state": "PROGRAMME_ANALYSIS",
-      "status": "PROGRAMMES_COLLECTING",
-      "official_source_refs": ["https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"],
+      "election_cycle_state": "ELECTION_RESULT",
+      "status": "ELECTION_COMPLETE",
+      "official_source_refs": [
+        "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/",
+        "https://www.laiv-mv.de/Pressemitteilungen/?id=223732&processor=processor.sa.pressemitteilung"
+      ],
       "programme_collection_status": "IN_PROGRESS",
       "programme_analysis_status": "NOT_STARTED",
-      "result_status": "NOT_AVAILABLE",
+      "result_status": "PRELIMINARY",
       "coalition_formation_status": "NOT_STARTED",
       "new_government_status": "NOT_FORMED"
     },
