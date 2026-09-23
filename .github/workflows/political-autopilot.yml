@@ -23,7 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          # The bot only commits on top of the checked-out main SHA. Full
+          # repository history is unnecessary and took more than nine minutes.
+          fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
           node-version: 22
