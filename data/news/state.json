@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-23T14:24:52.532Z",
+  "last_successful_run": "2026-09-23T14:38:36.845Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -139858,8 +139858,14 @@
     }
   },
   "pending_story_ids": [
-    "wt-126e59b0f021fe19",
+    "wt-8a69d5567f8159b0",
+    "wt-5bff205694a33157",
     "wt-1f98b54d7b18b97d",
+    "wt-8cc10dfabcbc74ca",
+    "wt-f6a78850d428be58",
+    "wt-82508b14784487cd",
+    "wt-126e59b0f021fe19",
+    "wt-e3f7a0eba39ba0f7",
     "wt-ec30d0fde6ddbbaa",
     "wt-42ecb465498d0f46",
     "wt-911bad4cc65311e7",
@@ -140044,7 +140050,6 @@
     "wt-c5af888f41500e49",
     "wt-1d0ea41cdd97175d",
     "wt-c6f59d09403280ec",
-    "wt-c28aa59a41502f5e",
     "wt-9b0845516e5fa80b",
     "wt-620db082e00ebb10",
     "wt-2489d6bc09aa42b9",
@@ -140062,6 +140067,7 @@
     "wt-0b2e8833acfc2b1c",
     "wt-03b216d110f94807",
     "wt-4e1c864637c15f53",
+    "wt-c28aa59a41502f5e",
     "wt-a8a2aa99218519bf",
     "wt-628a1cf47127b43d",
     "wt-d15b1df6e486d4c1",
@@ -140131,6 +140137,7 @@
     "wt-57081247f6348ce8",
     "wt-55352d7dd0d2115b",
     "wt-ca83bf869ca3c6e4",
+    "wt-63525a42ddd783b8",
     "wt-2ac07cb7cdbf0946",
     "wt-4dcaae46b0a870d7",
     "wt-be2645780a1ec6da",
@@ -140189,7 +140196,6 @@
     "wt-73b6a829ee448a47",
     "wt-10892fb0fc214db5",
     "wt-82a7e6419852deca",
-    "wt-e3f7a0eba39ba0f7",
     "wt-bd8a6562a732b950",
     "wt-4e7da9f92e682eb7",
     "wt-3e3b1814028f286b",
@@ -140250,15 +140256,10 @@
     "wt-95d738d4a0d74e1c",
     "wt-91d6589f553a47b4",
     "wt-5e48edcac301d940",
-    "wt-55dd36b28fec5e7f",
-    "wt-dcc7556b530d2a07",
-    "wt-1da8eceecc95b6af",
-    "wt-dd04cd03d06db6d9",
     "wt-00138f404711b485",
     "wt-83fc3f0f41b38719",
     "wt-148d8c580dd49b77",
     "wt-a9a60fc68df18271",
-    "wt-83baba9a7505cb1e",
     "wt-8e1eb8176deae9ca",
     "wt-1de4caa634bcda0f",
     "wt-0a628c06effaf8a9",
@@ -140278,7 +140279,6 @@
     "wt-aea22c3e27bf5208",
     "wt-be8450daf5fe4eb6",
     "wt-58207c44fa8625e2",
-    "wt-7f096239379b553e",
     "wt-33f4aabbf0dabd4f",
     "wt-83dd8e4c8c376e47",
     "wt-7aea2a49ce96085c",
@@ -140665,16 +140665,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-8a69d5567f8159b0",
-    "wt-63525a42ddd783b8",
-    "wt-5bff205694a33157",
-    "wt-8cc10dfabcbc74ca",
-    "wt-82508b14784487cd",
-    "wt-f6a78850d428be58"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-23T14:24:52.532Z",
+  "last_attempted_run": "2026-09-23T14:38:36.845Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1463,
@@ -143341,11 +143335,6 @@
     }
   ],
   "missed_news_rechecks": {
-    "https://www.mdr.de/nachrichten/sachsen/impfstoffwerk-dresden-rettungsmassnahmen,landtag-schliessung-gsk-100.html": {
-      "input_hash": "0001687958e77f9185c3d24b",
-      "version": "2026-09-10.2",
-      "checked_at": "2026-09-16T14:37:22.144Z"
-    },
     "wt-b8ba7f14ca7a873f": {
       "input_hash": "be1d856413c5b1e4b34d7b57",
       "version": "2026-09-10.2",
