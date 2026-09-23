@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { mergeByIdPreservingPublished, parseValidRecords } from "./observatory-sync-validation.mjs";
 
 if (process.env.WOEK_AUTOPILOT_RUNTIME_MODE !== "NORMAL") {
   console.log("Observatory sync: bootstrap/remediation mode; the audited repository snapshot is preserved and Dropbox is not read.");
@@ -59,23 +60,15 @@ async function readJsonl(name) {
 }
 
 function parseRecords(content, validate, sourceName) {
-  const trimmed = content.trim();
-  const records = sourceName.endsWith(".json") ? [JSON.parse(trimmed)] : trimmed.split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
-  return records.map((record, index) => {
-    if (!validate(record)) throw new Error(`${sourceName}:${index + 1} is invalid: ${JSON.stringify(validate.errors)}`);
-    return record;
+  return parseValidRecords(content, validate, sourceName, ({ line, reason }) => {
+    console.warn(`Observatory sync rejected ${sourceName}:${line}; ${reason}`);
   });
 }
 
 function mergeById(existing, incoming, idField) {
-  const result = new Map(existing.map((entry) => [entry[idField], entry]));
-  for (const entry of incoming) {
-    const id = entry[idField];
-    const prior = result.get(id);
-    if (prior && JSON.stringify(prior) !== JSON.stringify(entry)) throw new Error(`Conflicting approved observatory record ${id}.`);
-    result.set(id, entry);
-  }
-  return [...result.values()].sort((a, b) => String(a[idField]).localeCompare(String(b[idField])));
+  return mergeByIdPreservingPublished(existing, incoming, idField, ({ id }) => {
+    console.warn(`Observatory sync rejected conflicting approved record ${id}; the published record is preserved.`);
+  });
 }
 
 const evidenceValidate = await validator("evidence-event.schema.json");
