@@ -13,6 +13,7 @@ import {
   validateVoteEvents,
 } from "../lib/parliament/daily-ingest-core";
 import { formatElectionDate } from "../lib/autopilot/registry";
+import { normalizedDomainStatus, resultDetail } from "../lib/autopilot/domain-health";
 import { allNavigationItems, portalNavigation } from "../lib/navigation";
 
 const registry = JSON.parse(readFileSync("data/political-jurisdictions.json", "utf8"));
@@ -41,6 +42,15 @@ test("Berlin scheduling executes only the intended local slots", () => {
   assert.equal(berlinDateSlot(new Date("2026-07-20T04:00:00Z")).slot, "AM");
   assert.equal(berlinDateSlot(new Date("2026-07-20T14:00:00Z")).slot, "PM");
   assert.equal(berlinDateSlot(new Date("2026-07-20T13:00:00Z")).slot, null);
+});
+
+test("source synchronization blockers cannot be reported as a healthy parliament run", () => {
+  const dipFailure = { status: "COMPLETED", report: { blockers: ["DIP-Synchronisierung: ungültiger Schlüssel"] } };
+  const reviewWarning = { status: "COMPLETED", report: { blockers: ["Ein Fachobjekt benötigt Prüfung."] } };
+  assert.equal(normalizedDomainStatus(dipFailure), "BLOCKED");
+  assert.equal(normalizedDomainStatus(reviewWarning), "DEGRADED");
+  assert.equal(normalizedDomainStatus({ status: "COMPLETED", report: { blockers: [] } }), "OK");
+  assert.equal(resultDetail("Parlament", dipFailure), "Parlament: COMPLETED (1 technischer Hinweis)");
 });
 
 test("official individual votes are preserved and never inferred from factions", () => {
