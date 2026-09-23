@@ -78,7 +78,7 @@ jobs:
           npm run observatory:sync-approved
           npm run static-release:update-trigger
       - name: Validate the deterministic publication boundary
-        run: npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts tests/dropbox-app-client.test.ts
+        run: npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts tests/dropbox-app-client.test.ts tests/supabase-admin.test.ts
       - name: Commit a changed verified snapshot
         working-directory: .
         run: |
@@ -113,7 +113,7 @@ jobs:
             if ! git diff --cached --quiet; then
               git commit --amend --no-edit
             fi
-            (cd woek-parlament-app && npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts tests/dropbox-app-client.test.ts)
+            (cd woek-parlament-app && npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts tests/dropbox-app-client.test.ts tests/supabase-admin.test.ts)
             if git push origin HEAD:main; then
               exit 0
             fi
