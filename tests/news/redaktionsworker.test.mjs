@@ -191,6 +191,18 @@ test('the worker workflow uses only contexts that GitHub allows at job level', a
   assert.doesNotMatch(yaml, /contents: write/, 'the worker never commits');
 });
 
+test('active GitHub processing uses its own operator switches, not a hardcoded legacy Oracle pause', async () => {
+  const fs = await import('node:fs');
+  const editorial = fs.readFileSync(new URL('../../.github/workflows/redaktionsworker.yml', import.meta.url), 'utf8');
+  const news = fs.readFileSync(new URL('../../.github/workflows/wirkungsticker.yml', import.meta.url), 'utf8');
+  assert.match(editorial, /WOEK_EPISODE_TRANSCRIBE: \$\{\{ vars\.WOEK_EPISODE_TRANSCRIBE \|\| 'true' \}\}/);
+  assert.match(editorial, /if: vars\.WOEK_EDITORIAL_PAID_ENABLED == 'true'/, 'an explicit editorial operator pause stays available');
+  assert.match(news, /WOEK_NEWS_AI_ENABLED: \$\{\{ vars\.WOEK_NEWS_AI_ENABLED \|\| 'true' \}\}/);
+  assert.doesNotMatch(editorial, /if: \$\{\{ false \}\}|WOEK_EPISODE_TRANSCRIBE: "false"/);
+  assert.doesNotMatch(news, /WOEK_NEWS_AI_ENABLED: "false"/);
+  assert.match(news, /node scripts\/news\/import-approved-editorials\.mjs --claim/, 'restoring processing never bypasses final editorial approval');
+});
+
 test('the editorial call carries a bounded web search and a rejected request is not a paid attempt', async () => {
   const bodies = [];
   const answer = JSON.stringify({ preview: preview() });
