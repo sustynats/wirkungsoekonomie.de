@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-23T12:59:55.718Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-23T13:11:04.370Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -46,6 +46,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/quecksilberverdacht-dhl-paketzentrum-in-leizen-evakuiert-79f87a/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/quecksilberverdacht-dhl-paketzentrum-in-leizen-evakuiert-79f87a/",
+      "title": "Quecksilberverdacht: DHL-Paketzentrum in Leizen evakuiert",
+      "summary": "Ein DHL-Paketzentrum in Leizen wurde nach Beschwerden einer Mitarbeiterin vorsorglich evakuiert. Ob Quecksilber oder ein anderer Gefahrstoff beteiligt war, soll eine Laboranalyse klären.",
+      "date_published": "2026-09-23T10:29:00.000Z",
+      "date_modified": "2026-09-23T10:29:00.000Z",
+      "_woek_released_at": "2026-09-23T13:14:31.180Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
           "status": "potential"
         }
       }
