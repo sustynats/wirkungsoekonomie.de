@@ -76,6 +76,27 @@ test('a reused article URL cannot turn polling into an election result', () => {
   assert.notEqual(clusterItems([result],[poll],now)[0].story_id, poll.story_id);
 });
 
+test('an explicitly merged regional report routes by its archived source document', () => {
+  const town = source('DHL-Zentrum in Leizen evakuiert', 'https://example.org/leizen', {
+    summary: 'Im DHL-Zentrum in Leizen wird wegen eines Gefahrstoffverdachts evakuiert.',
+  });
+  const region = source('DHL-Zentrum in Mecklenburg-Vorpommern evakuiert', 'https://example.org/region', {
+    summary: 'Im DHL-Zentrum in Leizen wird wegen eines Gefahrstoffverdachts evakuiert.',
+  });
+  const canonical = story('leizen', town.title, {
+    sources: [town], living_file: { merged_story_ids: ['regional'] },
+  });
+  const archived = story('regional', region.title, {
+    sources: [region], listed: false,
+    retirement: { reason_code: 'MERGED_INTO_LIVING_FILE', canonical_story_ids: ['leizen'] },
+  });
+  const [routed] = clusterItems([region], [canonical, archived], now);
+  assert.equal(routed.story_id, 'leizen');
+  assert.equal(routed.existing_story, canonical);
+  const differentPlace = { ...region, title: 'DHL-Zentrum in Berlin evakuiert', summary: 'Im DHL-Zentrum in Berlin wird evakuiert.' };
+  assert.notEqual(clusterItems([differentPlace], [canonical, archived], now)[0].story_id, 'leizen');
+});
+
 test('overgrown queue repair preserves publications, requeues every detached source and is idempotent', () => {
   for (const published of [true,false]) {
     const original = story('poll', 'Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen', {published});
