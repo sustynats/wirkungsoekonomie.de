@@ -11,9 +11,7 @@ import { processObservatorySourceMonitor } from "@/lib/observatory/source-monito
 import { processStateElectionCalendar } from "@/lib/autopilot/state-election-monitor";
 import { writeStateDailyDeliveries } from "@/lib/autopilot/state-daily-delivery";
 import { processStateProgrammeMonitor } from "@/lib/autopilot/state-programme-monitor";
-
-type DomainStatus = "OK" | "DEGRADED" | "BLOCKED";
-type DomainHealth = { status: DomainStatus; last_run_at: string; detail: string };
+import { normalizedDomainStatus, resultBlockers, resultDetail, type DomainHealth, type DomainStatus } from "@/lib/autopilot/domain-health";
 
 type JurisdictionRegistry = {
   schema_version: string;
@@ -101,19 +99,6 @@ function statusForEuAdapters(sources: SourceRegistry): DomainHealth {
   };
 }
 
-function normalizedDomainStatus(result: unknown): DomainStatus {
-  if (!result || typeof result !== "object") return "BLOCKED";
-  const status = String((result as { status?: unknown }).status ?? "");
-  if (/^(OK|COMPLETED|ALREADY_PROCESSED)$/.test(status)) return "OK";
-  if (/^(NOT_CONFIGURED|BLOCKED|FAILED)$/.test(status)) return "BLOCKED";
-  return "DEGRADED";
-}
-
-function resultDetail(label: string, result: unknown) {
-  const status = result && typeof result === "object" ? String((result as { status?: unknown }).status ?? "unbekannt") : "unbekannt";
-  return `${label}: ${status}`;
-}
-
 function safeRuntimeFailure(reason: unknown) {
   const message = reason instanceof Error ? reason.stack ?? reason.message : String(reason ?? "unbekannter Fehler");
   return message
@@ -150,6 +135,10 @@ export async function processPoliticalAutopilot(now = new Date(), forceSlot: "AM
   for (const [domain, result] of Object.entries({ government, parliament, observatory })) {
     if (result.status === "rejected") {
       console.error(`Political autopilot domain failed (${domain}): ${safeRuntimeFailure(result.reason)}`);
+      continue;
+    }
+    for (const blocker of resultBlockers(result.value)) {
+      console.warn(`Political autopilot domain reported a blocker (${domain}): ${safeRuntimeFailure(blocker)}`);
     }
   }
   const governmentResult = government.status === "fulfilled" ? government.value : { status: "FAILED", reason: government.reason instanceof Error ? government.reason.message : "Unbekannter Fehler" };

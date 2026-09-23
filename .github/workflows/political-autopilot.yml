@@ -5,6 +5,15 @@ on:
     - cron: "13 6,16 * * *"
       timezone: "Europe/Berlin"
   workflow_dispatch:
+    inputs:
+      force_slot:
+        description: "Delivery-Slot für einen kontrollierten manuellen Lauf"
+        required: true
+        default: AM
+        type: choice
+        options:
+          - AM
+          - PM
 
 permissions:
   contents: write
@@ -51,7 +60,7 @@ jobs:
         continue-on-error: true
         env:
           WOEK_AUTOPILOT_RUNTIME_MODE: ${{ vars.WOEK_AUTOPILOT_RUNTIME_MODE }}
-          WOEK_AUTOPILOT_FORCE_SLOT: ${{ github.event_name == 'workflow_dispatch' && 'AM' || '' }}
+          WOEK_AUTOPILOT_FORCE_SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_slot || '' }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           DIP_API_KEY: ${{ secrets.DIP_API_KEY }}
