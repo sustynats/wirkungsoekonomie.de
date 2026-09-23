@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-23",
+  "sources": [
+    {
+      "election_cycle_id": "DE-ST-LANDTAG-2026",
+      "jurisdiction_id": "DE-ST",
+      "election_date": "2026-09-06",
+      "result_status": "PRELIMINARY",
+      "source_url": "https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/",
+      "allowed_host": "wahlergebnisse.sachsen-anhalt.de",
+      "required_markers": [
+        "Auszählungsstand Sachsen-Anhalt",
+        "2661 von 2661"
+      ]
+    },
+    {
+      "election_cycle_id": "DE-BE-AGH-2026",
+      "jurisdiction_id": "DE-BE",
+      "election_date": "2026-09-20",
+      "result_status": "PRELIMINARY",
+      "source_url": "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1716422.php",
+      "allowed_host": "www.berlin.de",
+      "required_markers": [
+        "Vorläufiges Ergebnis festgestellt",
+        "vorläufige Zweitstimmenergebnis"
+      ]
+    },
+    {
+      "election_cycle_id": "DE-MV-LANDTAG-2026",
+      "jurisdiction_id": "DE-MV",
+      "election_date": "2026-09-20",
+      "result_status": "PRELIMINARY",
+      "source_url": "https://www.laiv-mv.de/Pressemitteilungen/?id=223732&processor=processor.sa.pressemitteilung",
+      "allowed_host": "www.laiv-mv.de",
+      "required_markers": [
+        "Vorläufiges Ergebnis der Landtagswahl 2026",
+        "Landeswahlleiter"
+      ]
+    }
+  ]
+}

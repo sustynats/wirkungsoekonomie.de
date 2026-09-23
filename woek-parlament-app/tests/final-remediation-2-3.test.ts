@@ -48,11 +48,13 @@ test("SEFE LNG remains an ExternalActorEvent and is not a ministerial Government
   assert.equal(actions.some((entry) => /Katherina Reiche.*(schließt|unterzeichnet).*LNG/i.test(`${entry.title_canonical} ${entry.title_official_preferred}`)), false);
 });
 
-test("all 16 state entries fail closed without an operational adapter", () => {
+test("state automation is enabled only for registered election cycles and keeps government coverage fail-closed", () => {
   const states = JSON.parse(readFileSync("data/political-jurisdictions.json", "utf8")).jurisdictions.filter((entry: { jurisdiction_type: string }) => entry.jurisdiction_type === "STATE");
   assert.equal(states.length, 16);
-  assert.equal(states.filter((entry: { monitoring_enabled: boolean }) => entry.monitoring_enabled).length, 0);
-  assert.ok(states.every((entry: { source_status: string; source_health: string }) => entry.source_status === "STATIC_INITIAL_DATASET_NO_OPERATIONAL_ADAPTER" && entry.source_health === "BLOCKED"));
+  const active = states.filter((entry: { monitoring_enabled: boolean }) => entry.monitoring_enabled);
+  assert.equal(active.length, 7);
+  assert.ok(active.every((entry: { source_status: string; source_health: string }) => entry.source_status.startsWith("ACTIVE_ELECTION_") && entry.source_health === "DEGRADED"));
+  assert.ok(states.filter((entry: { monitoring_enabled: boolean }) => !entry.monitoring_enabled).every((entry: { source_status: string; source_health: string }) => entry.source_status === "STATIC_INITIAL_DATASET_NO_OPERATIONAL_ADAPTER" && entry.source_health === "BLOCKED"));
 });
 
 test("remediated Parliament delivery is complete, READY is last, and votes stay unverified zero", () => {

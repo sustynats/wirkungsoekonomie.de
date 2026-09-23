@@ -9,9 +9,11 @@ test("political updates and the end-of-day digest run directly on the free cloud
   assert.equal("crons" in vercel, false, "The Hobby Vercel project must not contain unsupported multi-daily cron definitions.");
   const autopilotWorkflow = text("../.github/workflows/political-autopilot.yml");
   const digestWorkflow = text("../.github/workflows/political-daily-digest.yml");
-  assert.match(autopilotWorkflow, /0 4,5,14,15 \* \* \*/);
+  assert.match(autopilotWorkflow, /13 6,16 \* \* \*/);
+  assert.match(autopilotWorkflow, /timezone: "Europe\/Berlin"/);
   assert.match(autopilotWorkflow, /npm run autopilot:run/);
   assert.match(autopilotWorkflow, /WOEK_AUTOPILOT_FORCE_SLOT/);
+  assert.match(autopilotWorkflow, /WOEK_STATIC_PUBLICATION_MODE: github_pages/);
   assert.match(digestWorkflow, /0 20,21,22 \* \* \*/);
   assert.match(digestWorkflow, /npm run autopilot:digest/);
   assert.doesNotMatch(`${autopilotWorkflow}\n${digestWorkflow}`, /parlament\.wirkungsoekonomie\.de\/api\/cron/);
