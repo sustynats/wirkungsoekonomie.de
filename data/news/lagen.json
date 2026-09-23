@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-23T04:00:00.000Z",
+  "updated_at": "2026-09-23T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-23-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-23",
+      "window_from": "2026-09-23T04:00:00.000Z",
+      "window_to": "2026-09-23T10:00:00.000Z",
+      "stand": "2026-09-23T10:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 2,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-178b738f74a77b7c",
+          "slug": "sondereinheit-razzien-wegen-waffen-polizei-durchkammt-berliner-wohnungen-a77b7c",
+          "title": "Razzien wegen Waffen: Polizei durchsucht Berliner Wohnungen",
+          "state": "neu",
+          "at": "2026-09-23T09:42:29.125Z",
+          "score": 5.9513
+        },
+        {
+          "story_id": "wt-2ea065e821b487d2",
+          "slug": "razzien-wegen-illegalen-schusswaffenhandels-in-berlin-b487d2",
+          "title": "Laut Polizei: Razzien gegen mutmaßlichen illegalen Schusswaffenhandel in Berlin",
+          "state": "neu",
+          "at": "2026-09-23T08:55:35.002Z",
+          "score": 8.3211
+        },
+        {
+          "story_id": "wt-1d3fd4e1a02fe3e4",
+          "slug": "einsatz-verdacht-auf-giftiges-quecksilber-dhl-zentrum-evakuiert-2fe3e4",
+          "title": "Gefahrstoffverdacht: DHL-Zentrum in Leizen evakuiert",
+          "state": "fortgeschrieben",
+          "at": "2026-09-23T06:26:54.600Z",
+          "score": 9.6581
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-23-morgenlage",
       "slot": "morgenlage",
