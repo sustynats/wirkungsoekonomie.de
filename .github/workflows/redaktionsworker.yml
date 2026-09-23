@@ -107,7 +107,7 @@ jobs:
         run: node scripts/news/sendungs-kandidaten.mjs
       - name: Draft open editorial requests (one paid call per request)
         # Resume only after real ChatGPT preapproval and the routing/access gates are verified.
-        if: ${{ false }}
+        if: vars.WOEK_EDITORIAL_PAID_ENABLED == 'true'
         env:
           # github.workspace ist auch in Schritten verfügbar; nur hier gesetzt, damit die
           # Tests davor keine Fixture-Antworten in den Diagnoseordner schreiben.
