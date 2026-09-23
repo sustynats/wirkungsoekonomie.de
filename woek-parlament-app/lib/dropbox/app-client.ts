@@ -3,6 +3,7 @@ import { validateManagedPath } from "@/lib/dropbox/managed-paths";
 const dropboxApi = "https://api.dropboxapi.com/2";
 const dropboxAuthApi = "https://api.dropboxapi.com";
 const dropboxContentApi = "https://content.dropboxapi.com/2";
+const dropboxWriteAttempts = 4;
 let lastGrantedScopes = "not reported";
 
 export type DropboxFileEntry = {
@@ -151,25 +152,56 @@ export async function uploadDropboxText(filePath: string, content: string) {
   return uploadDropboxBytes(filePath, new TextEncoder().encode(content));
 }
 
+function dropboxRetryDelayMs(response: Response, detail: string, attempt: number) {
+  const retryAfterHeader = Number(response.headers.get("retry-after"));
+  if (Number.isFinite(retryAfterHeader) && retryAfterHeader >= 0) {
+    return Math.min(retryAfterHeader * 1_000, 10_000);
+  }
+  try {
+    const retryAfterBody = Number((JSON.parse(detail) as { retry_after?: unknown }).retry_after);
+    if (Number.isFinite(retryAfterBody) && retryAfterBody >= 0) {
+      return Math.min(retryAfterBody * 1_000, 10_000);
+    }
+  } catch {
+    // A non-JSON Dropbox error falls back to bounded exponential backoff.
+  }
+  return Math.min(2 ** (attempt - 1) * 1_000, 10_000);
+}
+
+function wait(milliseconds: number) {
+  return new Promise<void>((resolve) => setTimeout(resolve, milliseconds));
+}
+
 export async function uploadDropboxBytes(filePath: string, content: Uint8Array) {
   const token = await accessToken();
   const path = normalizeDropboxPath(filePath);
   await ensureDropboxFolder(token, path.slice(0, path.lastIndexOf("/")));
-  const response = await fetch(`${dropboxContentApi}/files/upload`, {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${token}`,
-      "content-type": "application/octet-stream",
-      "dropbox-api-arg": JSON.stringify({ path, mode: "overwrite", autorename: false, mute: true, strict_conflict: false }),
-    },
-    body: Buffer.from(content),
-    signal: AbortSignal.timeout(30_000),
-  });
-  if (!response.ok) {
+  for (let attempt = 1; attempt <= dropboxWriteAttempts; attempt += 1) {
+    const response = await fetch(`${dropboxContentApi}/files/upload`, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${token}`,
+        "content-type": "application/octet-stream",
+        "dropbox-api-arg": JSON.stringify({ path, mode: "overwrite", autorename: false, mute: true, strict_conflict: false }),
+      },
+      body: Buffer.from(content),
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (response.ok) {
+      return response.json() as Promise<{ id: string; path_display: string; rev: string }>;
+    }
     const detail = (await response.text()).slice(0, 500).replace(/\s+/g, " ").trim();
+    if (response.status === 429 && attempt < dropboxWriteAttempts) {
+      const delayMs = dropboxRetryDelayMs(response, detail, attempt);
+      console.warn(
+        `Dropbox state upload throttled (429); retrying in ${delayMs} ms (attempt ${attempt + 1}/${dropboxWriteAttempts}).`,
+      );
+      await wait(delayMs);
+      continue;
+    }
     throw new Error(
       `Dropbox state upload failed (${response.status})${detail ? `: ${detail}` : "."} Granted scopes: ${lastGrantedScopes}.`,
     );
   }
-  return response.json() as Promise<{ id: string; path_display: string; rev: string }>;
+  throw new Error("Dropbox state upload exhausted its bounded retry budget.");
 }
