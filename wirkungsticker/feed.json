@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-23T18:25:00.029Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-23T18:39:27.025Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/nordrhein-westfalen-sprengstoffexperten-rucken-wegen-kugelbombe-in-nahe-von-strommast-au-7a6c3b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/nordrhein-westfalen-sprengstoffexperten-rucken-wegen-kugelbombe-in-nahe-von-strommast-au-7a6c3b/",
+      "title": "Laut stern: Sprengstoffexperten rücken wegen Kugelbombe nahe Strommast aus",
+      "summary": "In Nordrhein-Westfalen rückten laut stern Sprengstoffexperten wegen einer Kugelbombe nahe einem Strommast aus. Ob eine Gefahr für die Stromversorgung bestand oder der Fall mit Sabotage zusammenhängt, ist offen.",
+      "date_published": "2026-09-23T17:48:00.000Z",
+      "date_modified": "2026-09-23T17:48:00.000Z",
+      "_woek_released_at": "2026-09-23T18:42:51.379Z",
+      "tags": [
+        "Energie"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "mixed",
           "status": "potential"
         }
       }
