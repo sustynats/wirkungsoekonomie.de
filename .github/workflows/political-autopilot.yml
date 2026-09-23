@@ -78,7 +78,7 @@ jobs:
           npm run observatory:sync-approved
           npm run static-release:update-trigger
       - name: Validate the deterministic publication boundary
-        run: npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts
+        run: npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts tests/dropbox-app-client.test.ts
       - name: Commit a changed verified snapshot
         working-directory: .
         run: |
@@ -102,7 +102,25 @@ jobs:
             exit 0
           fi
           git commit -m "[parliament-autopilot] publish verified snapshot"
-          git push origin HEAD:main
+          for attempt in 1 2; do
+            # Main is also written by the Wirkungsticker. Integrate only a
+            # small recent window, then re-bind the static fingerprint and
+            # rerun the deterministic gates on the exact tree to be pushed.
+            git fetch --deepen=50 origin main:refs/remotes/origin/main
+            git rebase origin/main
+            (cd woek-parlament-app && npm run static-release:update-trigger)
+            git add .github/static-release-trigger.json
+            if ! git diff --cached --quiet; then
+              git commit --amend --no-edit
+            fi
+            (cd woek-parlament-app && npx tsx --test tests/state-election-results.test.ts tests/political-autopilot.test.ts tests/state-autopilot-delivery.test.ts tests/government-public-data.test.ts tests/observatory-contracts.test.ts tests/dropbox-app-client.test.ts)
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Main moved during publish attempt ${attempt}; retrying once after a fresh guarded rebase."
+          done
+          echo "Main continued moving; no stale snapshot was pushed."
+          exit 1
       - name: Surface a blocked runtime after preserving verified domain updates
         if: steps.autopilot.outcome == 'failure'
         run: |
