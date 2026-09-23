@@ -1,7 +1,112 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-22T16:00:00.000Z",
+  "updated_at": "2026-09-23T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-23-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-23",
+      "window_from": "2026-09-22T16:00:00.000Z",
+      "window_to": "2026-09-23T04:00:00.000Z",
+      "stand": "2026-09-23T04:00:00.000Z",
+      "headline": "Das sind die 11 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 11,
+        "neu": 11,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-7699cc5cf04f6af2",
+          "slug": "mecklenburg-vorpommern-erneuter-verdacht-auf-quecksilber-dhl-zentrum-evakuiert-4f6af2",
+          "title": "DHL-Zentrum in Leizen wegen Gefahrstoffverdachts evakuiert",
+          "state": "neu",
+          "at": "2026-09-23T03:55:46.635Z",
+          "score": 5.9941
+        },
+        {
+          "story_id": "wt-a116ddc61af069b3",
+          "slug": "ukraine-krieg-eu-verlangert-russland-sanktionen-bis-2029-f069b3",
+          "title": "Laut Deutschlandfunk: EU verlängert Russland-Sanktionen bis 2029 und streicht zwei Oligarchen von der Liste",
+          "state": "neu",
+          "at": "2026-09-23T01:27:04.247Z",
+          "score": 5.7876
+        },
+        {
+          "story_id": "wt-8636078631bdcc11",
+          "slug": "regierungsbildung-sachsen-anhalts-bsw-landeschef-afd-weiss-nicht-was-sie-will-bdcc11",
+          "title": "Laut BSW-Landeschef: AfD und BSW sprechen über Zusammenarbeit in Magdeburg",
+          "state": "neu",
+          "at": "2026-09-23T00:10:22.013Z",
+          "score": 5.6811
+        },
+        {
+          "story_id": "wt-b14b2c4a44419fb2",
+          "slug": "iran-newsblog-angriffe-rund-um-strasse-von-hormus-preis-fur-brent-rohol-steigt-419fb2",
+          "title": "Laut stern-Newsblog: Angriffe rund um Straße von Hormus lassen Brent-Rohölpreis steigen",
+          "state": "neu",
+          "at": "2026-09-22T20:48:51.395Z",
+          "score": 7.4012
+        },
+        {
+          "story_id": "wt-1d3fd4e1a02fe3e4",
+          "slug": "einsatz-verdacht-auf-giftiges-quecksilber-dhl-zentrum-evakuiert-2fe3e4",
+          "title": "Quecksilberverdacht: DHL-Zentrum in Leizen evakuiert",
+          "state": "neu",
+          "at": "2026-09-22T20:37:28.602Z",
+          "score": 10.3925
+        },
+        {
+          "story_id": "wt-9bfe2b84b6ed7d1e",
+          "slug": "mecklenburg-vorpommern-dhl-zentrum-wegen-verdachtss-auf-giftiges-quecksilber-evakuiert-ed7d1e",
+          "title": "Laut stern: DHL-Zentrum in Mecklenburg-Vorpommern wegen Quecksilberverdachts evakuiert",
+          "state": "neu",
+          "at": "2026-09-22T20:23:20.595Z",
+          "score": 5.3658
+        },
+        {
+          "story_id": "wt-37f7dd9252599acf",
+          "slug": "offentliche-fahndung-mit-fotos-15-jahriger-getotet-verdachtige-manner-stellen-sich-599acf",
+          "title": "Laut stern und Tagesspiegel: Zwei Männer stellen sich nach öffentlicher Fahndung",
+          "state": "neu",
+          "at": "2026-09-22T17:58:07.132Z",
+          "score": 5.1822
+        },
+        {
+          "story_id": "wt-6bb3e30fcdd6c388",
+          "slug": "notfalle-zwei-weltkriegsbomben-in-wiesbaden-entdeckt-evakuierung-d6c388",
+          "title": "Zwei Weltkriegsbomben in Wiesbaden entdeckt – Anwohner müssen Häuser verlassen",
+          "state": "neu",
+          "at": "2026-09-22T17:19:32.489Z",
+          "score": 3.6105
+        },
+        {
+          "story_id": "wt-6d9ed8132146bd6c",
+          "slug": "explosionen-in-weimar-eigentumer-bleibt-verschwunden-46bd6c",
+          "title": "Suche nach dem Eigentümer eines zerstörten Wohnhauses in Weimar geht weiter",
+          "state": "neu",
+          "at": "2026-09-22T16:58:04.881Z",
+          "score": 7.2007
+        },
+        {
+          "story_id": "wt-4e7da9f92e682eb7",
+          "slug": "drohnenfund-in-niedersachsen-womoglich-sprengstoff-in-der-nahe-entdeckt-682eb7",
+          "title": "Laut Rechercheverbund: Verdächtiges Material nahe Drohnenfund in Niedersachsen entdeckt",
+          "state": "neu",
+          "at": "2026-09-22T16:43:42.204Z",
+          "score": 9.0607
+        },
+        {
+          "story_id": "wt-eaf508a3d7f8d4df",
+          "slug": "eu-beschliesst-aufhebung-von-sanktionen-gegen-zwei-russische-oligarchen-f8d4df",
+          "title": "Laut stern: EU hebt Sanktionen gegen zwei russische Oligarchen auf",
+          "state": "neu",
+          "at": "2026-09-22T16:11:04.121Z",
+          "score": 5.0154
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-22-abendlage",
       "slot": "abendlage",
