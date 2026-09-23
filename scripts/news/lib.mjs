@@ -527,6 +527,16 @@ export function anchoredSources(story) {
 }
 
 export function existingStoryMatch(item, entry, now) {
+  // An explicitly consolidated article keeps its old source documents as
+  // routing aliases. Check those documents against their own original source
+  // before the canonical headline/place guard: a regional headline can be a
+  // coarser description of the same town-level event.
+  const aliases = entry.story.routing_original
+    ? (entry.story.sources || []).slice(entry.story.routing_original.sources?.length || 0) : [];
+  for (const alias of aliases) {
+    if (documentKey(item.url) && documentKey(item.url) === documentKey(alias.url)
+      && livingFileMatch(item, { title: alias.title, sources: [alias], last_updated: alias.published_at }).score === 1) return 1;
+  }
   if (subjectConflict(item, entry.story)) return 0;
   // A secondary/contextual source must never become a bridge into a different
   // event. Every usable reference has to connect directly to the leading one.
