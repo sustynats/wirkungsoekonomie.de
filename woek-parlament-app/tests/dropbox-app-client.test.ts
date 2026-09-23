@@ -3,7 +3,7 @@ import test from "node:test";
 
 import { uploadDropboxText } from "@/lib/dropbox/app-client";
 
-test("Dropbox uploads retry a temporary write throttle using the server delay", async (context) => {
+test("Dropbox folder creation and uploads retry temporary write throttles", async (context) => {
   const originalFetch = globalThis.fetch;
   const originalCredentials = {
     appKey: process.env.DROPBOX_APP_KEY,
@@ -15,6 +15,7 @@ test("Dropbox uploads retry a temporary write throttle using the server delay", 
   process.env.DROPBOX_REFRESH_TOKEN = "test-refresh-token";
   const warn = context.mock.method(console, "warn", () => undefined);
 
+  let folderAttempts = 0;
   let uploadAttempts = 0;
   globalThis.fetch = async (input) => {
     const url = String(input);
@@ -22,6 +23,13 @@ test("Dropbox uploads retry a temporary write throttle using the server delay", 
       return Response.json({ access_token: "test-token", scope: "files.content.write" });
     }
     if (url.endsWith("/files/create_folder_v2")) {
+      folderAttempts += 1;
+      if (folderAttempts === 1) {
+        return Response.json(
+          { error: { reason: { ".tag": "too_many_write_operations" } }, retry_after: 0 },
+          { status: 429, headers: { "retry-after": "0" } },
+        );
+      }
       return Response.json({ error_summary: "path/conflict/folder" }, { status: 409 });
     }
     if (url.endsWith("/files/upload")) {
@@ -40,8 +48,9 @@ test("Dropbox uploads retry a temporary write throttle using the server delay", 
   try {
     const result = await uploadDropboxText("/WOEK/AUTOPILOT/state.json", "{}\n");
     assert.equal(result.rev, "1");
+    assert.equal(folderAttempts, 3);
     assert.equal(uploadAttempts, 2);
-    assert.equal(warn.mock.callCount(), 1);
+    assert.equal(warn.mock.callCount(), 2);
   } finally {
     globalThis.fetch = originalFetch;
     for (const [name, value] of Object.entries({
