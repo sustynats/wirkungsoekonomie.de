@@ -21,10 +21,13 @@ export function parseValidRecords(content, validate, sourceName, onReject = () =
     }
 
     if (!validate(record)) {
+      const details = (validate.errors ?? []).slice(0, 5).map((entry) =>
+        `${entry.instancePath || "/"} ${entry.message ?? entry.keyword}`
+      ).join("; ");
       onReject({
         sourceName,
         line: candidate.line,
-        reason: `schema mismatch: ${JSON.stringify(validate.errors ?? [])}`,
+        reason: `schema mismatch: ${details || "validation failed"}`,
       });
       continue;
     }
@@ -32,4 +35,18 @@ export function parseValidRecords(content, validate, sourceName, onReject = () =
   }
 
   return valid;
+}
+
+export function mergeByIdPreservingPublished(existing, incoming, idField, onConflict = () => {}) {
+  const result = new Map(existing.map((entry) => [entry[idField], entry]));
+  for (const entry of incoming) {
+    const id = entry[idField];
+    const prior = result.get(id);
+    if (prior && JSON.stringify(prior) !== JSON.stringify(entry)) {
+      onConflict({ id, prior, incoming: entry });
+      continue;
+    }
+    result.set(id, entry);
+  }
+  return [...result.values()].sort((a, b) => String(a[idField]).localeCompare(String(b[idField])));
 }
