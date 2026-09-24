@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T10:00:00.000Z",
+  "updated_at": "2026-09-24T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-24-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-24",
+      "window_from": "2026-09-24T10:00:00.000Z",
+      "window_to": "2026-09-24T16:00:00.000Z",
+      "stand": "2026-09-24T16:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 2,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa, 18 Menschen in Kiew verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-24T13:59:42.846Z",
+          "score": 9.4159
+        },
+        {
+          "story_id": "wt-e96883120bffa0d1",
+          "slug": "flughafen-ber-was-steckt-hinter-der-drohnen-sichtung-am-flughafen-ber-ffa0d1",
+          "title": "Laut Bericht: Polizei ermittelt nach Drohnen-Alarm am BER – Gefahr bleibt unklar",
+          "state": "fortgeschrieben",
+          "at": "2026-09-24T12:57:23.809Z",
+          "score": 5.2428
+        },
+        {
+          "story_id": "wt-bd73e58fbac3546b",
+          "slug": "mehrere-explosionen-mindestens-acht-tote-bei-russischen-angriffen-auf-die-ukraine-c3546b",
+          "title": "Laut Deutschlandfunk: Erneute russische Angriffe in der Ukraine mit mindestens acht Toten",
+          "state": "neu",
+          "at": "2026-09-24T12:46:04.870Z",
+          "score": 10.2037
+        },
+        {
+          "story_id": "wt-a203a680aa91d35f",
+          "slug": "schusse-boller-benzin-polizei-ermittelt-nach-zwei-vorfallen-in-heidenheim-91d35f",
+          "title": "Laut Polizei und Staatsanwaltschaft: Ermittlungen nach Schüssen und möglicher Brandstiftung in Heidenheim",
+          "state": "neu",
+          "at": "2026-09-24T12:31:12.322Z",
+          "score": 6
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-24-mittagslage",
       "slot": "mittagslage",
