@@ -1,7 +1,51 @@
 {
-  "version": "2026-09-16.1",
+  "version": "2026-09-24.1",
   "note": "Episodenquellen der verfolgten Sendungen für automatische Nachgesehen/Nachgehört-Aufträge (scripts/news/sendungs-kandidaten.mjs). Mediathek-Sendungen laufen über die MediathekViewWeb-Abfrage, weil sie die amtlichen Untertitel für Hörgeschädigte (Barrierefreiheit) mitliefert; Podcasts über ihren offiziellen Feed mit podcast:transcript. Logo-Rechte stehen getrennt in show-visual-identities.json.",
   "shows": [
+    {
+      "id": "missverstehen-sie-mich-richtig",
+      "show_name": "Missverstehen Sie mich richtig",
+      "kind": "watched",
+      "provider": "tRÄNENpALAST, offizieller YouTube-Kanal",
+      "channel_url": "https://www.youtube.com/@MISSVERSTEHENSIEMICHRICHTIG",
+      "youtube_channel_id": "UCBWSgdr27NcLig0XzWLq2gQ",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBWSgdr27NcLig0XzWLq2gQ",
+      "min_duration_seconds": 1800,
+      "max_age_days": 21,
+      "require_transcript": true,
+      "allow_paid_transcription": false,
+      "enabled": true
+    },
+    {
+      "id": "tech-ki-schmetterlinge",
+      "show_name": "Tech, KI & Schmetterlinge",
+      "kind": "watched",
+      "provider": "Sascha Lobo / Schwarz Digits, offizieller YouTube-Kanal und Podcast-Feed",
+      "editorial_context": "Die Reihe entsteht in Zusammenarbeit mit Schwarz Digits. Unternehmensinteressen und unabhängige Belege unterscheiden; Werbung nicht als redaktionellen Befund übernehmen.",
+      "channel_url": "https://www.youtube.com/@Techundschmetterlinge",
+      "youtube_channel_id": "UC1l3kHbAR0l6ilXHd6B1FAg",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1l3kHbAR0l6ilXHd6B1FAg",
+      "podcast_feed": "https://tech-ki.podigee.io/feed/mp3",
+      "min_duration_seconds": 900,
+      "max_age_days": 14,
+      "require_transcript": true,
+      "allow_paid_transcription": false,
+      "enabled": true
+    },
+    {
+      "id": "politik-mit-anne-will",
+      "show_name": "Politik mit Anne Will",
+      "kind": "watched",
+      "provider": "Will Media, offizieller YouTube-Kanal und Podcast-Feed",
+      "channel_url": "https://www.youtube.com/@PolitikmitAnneWill",
+      "youtube_channel_id": "UCbRJHkDuRmTdUj8ETeIp2rw",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbRJHkDuRmTdUj8ETeIp2rw",
+      "podcast_feed": "https://feeds.megaphone.fm/WMG5916123897",
+      "min_duration_seconds": 900,
+      "max_age_days": 14,
+      "require_transcript": true,
+      "enabled": true
+    },
     {
       "id": "maybrit-illner",
       "show_name": "maybrit illner",
