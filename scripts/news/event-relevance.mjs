@@ -2,7 +2,7 @@
 // Event properties are intentionally independent of party, person and outlet names.
 import { evidenceGroups } from './newsroom.mjs';
 
-export const EVENT_RELEVANCE_VERSION = '2026-09-10.2';
+export const EVENT_RELEVANCE_VERSION = '2026-09-24.1';
 export const EVENT_EDITORIAL_POLICY_VERSION = '2026-09-09.2';
 export const COVERAGE_CATEGORIES = ['politics_de', 'economy', 'society', 'environment', 'health', 'science', 'technology', 'europe', 'international', 'security'];
 export const normalizeEventText = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').replace(/ß/g, 'ss').toLowerCase();
@@ -47,6 +47,18 @@ export function eventSignals(item = {}) {
   add('large_investment', /\b(investier\w*|invest\w*|steckt|finanzier\w*|funding|ausbau\w*)\b/.test(t)
     && /\b(milliard\w*|billion\w*|million\w*)\b/.test(t)
     && /\b(infrastruktur\w*|infrastructure|fabrik\w*|factory|kapazitat\w*|rechenzentr\w*|data cent\w*|energie\w*|ki|ai|arbeitsplatz\w*|arbeitsplatze|jobs|produktion\w*)\b/.test(t));
+  // A financing or operating milestone can warrant review; a valuation/watchlist
+  // alone cannot. No publisher/company whitelist and no new fetch or paid job.
+  const startup = /\b(start[- ]?ups?|jungunternehmen|jungfirmen|scale[- ]?ups?)\b/.test(t);
+  const operatingPurpose = /\b(recycling\w*|sanierung\w*|satellit\w*|medizin\w*|therapie\w*|produktion\w*|fabrik\w*|fertigung\w*|pilotanlage\w*|batterie\w*|speicher\w*|halbleiter\w*|robot\w*)\b/.test(t);
+  const completedFunding = /\b(sichert|erhalt|erhalten|erhielt|eingesammelt|abgeschlossen|raised|secured)\b/.test(t)
+    && /\b(finanzierungsrunde|kapital|funding|finanzierung|serie[- ]?[abc]|series[- ]?[abc])\b/.test(t)
+    && /\b(million\w*|milliard\w*|billion\w*)\b/.test(t);
+  const operatingMilestone = /\b(nimmt|genommen|eroffnet|eroffnung|startet|gestartet)\b/.test(t)
+    && /\b(pilotbetrieb|produktion|fertigung|pilotanlage|recyclinganlage)\b/.test(t);
+  const speculative = /\b(konnte\w*|hofft|hoffen|plant|geplant|will|soll|sollen|bald|might|could|plans?)\b/.test(t);
+  const denied = /\b(nicht|keine?|gescheitert|abgesagt|failed|cancelled)\b/.test(t);
+  add('startup_operating_milestone', startup && operatingPurpose && !speculative && !denied && (completedFunding || operatingMilestone));
   add('technology_market_entry', /\b(erst\w*|first|neuartig\w*|einstieg|markteintritt)\b/.test(t)
     && /\b(?:[a-z]*faltbar\w*|fold\w*|quanten\w*|quantum|chiparchitektur\w*)\b/.test(t)
     && /\b(smartphone\w*|phone\w*|iphone\w*|computer\w*|prozessor\w*|processor\w*|chip\w*)\b/.test(t));
@@ -67,7 +79,7 @@ export function eventCategories(sources = []) {
   const t = normalizeEventText(sources.map(s => `${s.title || ''} ${s.summary || ''}`).join(' '));
   const tests = {
     politics_de: /\b(bundestag|bundesrat|bundesregierung|bundeskanzler\w*|landtag\w*|ministerprasident\w*|parteiverbot|verbotsverfahren|brandmauer|wahl\w*)\b/,
-    economy: /\b(wirtschaft\w*|unternehmen\w*|konzern\w*|invest\w*|arbeitsplatz\w*|arbeitsplatze|beschaftigt\w*|finanz\w*|filial\w*|insolvenz\w*|sanierung\w*|[a-z]*olpreis\w*|brent|dax|inflation\w*|econom\w*|jobs|markets?)\b/,
+    economy: /\b(wirtschaft\w*|unternehmen\w*|konzern\w*|invest\w*|start[- ]?ups?|jungunternehmen|jungfirmen|scale[- ]?ups?|arbeitsplatz\w*|arbeitsplatze|beschaftigt\w*|finanz\w*|filial\w*|insolvenz\w*|sanierung\w*|[a-z]*olpreis\w*|brent|dax|inflation\w*|econom\w*|jobs|markets?)\b/,
     society: /\b(gesellschaft\w*|soziale?\w*|bildung\w*|schule\w*|armut\w*|pflege\w*|rente\w*|wohnen|familie\w*)\b/,
     environment: /\b(klima\w*|umwelt\w*|emission\w*|energ\w*|natur\w*|biodivers\w*|strom\w*|climate)\b/,
     health: /\b(gesund\w*|medizin\w*|kranken\w*|pandemie\w*|health\w*|disease\w*)\b/,
@@ -93,7 +105,7 @@ export function scoreEvent(story, now, baseScore = 0) {
   const recentOrigins = evidenceGroups(sources.filter(s => ms(s.published_at) > ms(now) - 3600000 && ms(s.published_at) <= ms(now))).possible_independent_origins;
   const has = name => signals.includes(name);
   const acute = has('acute_safety') || has('cross_border_disruption');
-  const economic = signals.some(s => ['large_investment', 'employment_location', 'market_shock', 'technology_market_entry'].includes(s));
+  const economic = signals.some(s => ['large_investment', 'employment_location', 'market_shock', 'technology_market_entry', 'startup_operating_milestone'].includes(s));
   const political = signals.some(s => ['plenary_debate', 'public_budget', 'political_position', 'political_poll'].includes(s));
   const institutional_score = features.some(f => f.institutional) ? 80 : primary.length ? 55 : 10;
   const impact_score = bounded(Math.max(baseScore, has('large_investment') || has('market_shock') ? 78 : acute ? 72 : has('plenary_debate') || has('public_budget') ? 76 : economic || political || has('technology_conflict') ? 60 : has('public_audit') ? 58 : 0));
