@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { fileURLToPath } from "node:url";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { prepareReviewedStory } from "../../scripts/news/publish-reviewed.mjs";
@@ -11,7 +12,7 @@ import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
 import { validateApprovedNews } from '../../scripts/news/bridge/approved-news.mjs';
 
 const review = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url)));
-const registry = loadNewsRegistry(new URL("../../", import.meta.url).pathname);
+const registry = loadNewsRegistry(fileURLToPath(new URL("../../", import.meta.url)));
 const now = "2026-09-05T23:00:00Z";
 
 const mediaReview = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/seelze-media-2026-09-06.json", import.meta.url)));

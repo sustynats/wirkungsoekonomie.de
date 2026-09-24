@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import { prepareEditorialReview } from "../../scripts/news/publish-editorial-review.mjs";
 import { editorialAnalysisPage } from "../../scripts/news/build.mjs";
-import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, editorialVisualErrors, renderSystemicVisual } from "../../scripts/news/systemic-analysis.mjs";
+import { editorialLabel, editorialVisualErrors, renderSystemicVisual } from "../../scripts/news/systemic-analysis.mjs";
+import { EDITORIAL_RESPONSIBILITY } from "../../scripts/news/editorial-authorship.mjs";
 import { AUTHOR_ANALYSIS_RULE } from "../../scripts/news/analysis-principles.mjs";
 import { renderIcon } from "../../scripts/news/visuals.mjs";
 
@@ -23,8 +24,8 @@ test("opinion and analysis is a shared label, not a new route or fabricated hist
     assert.match(html, /Meinung &amp; Analyse/);
     assert.ok(html.includes(`https://wirkungsoekonomie.de/wirkungsticker/analyse/${record.slug}/`));
     assert.ok(html.includes(`"datePublished":"${record.published_at}"`));
-    assert.equal(html.split(EDITORIAL_TRANSPARENCY_NOTE).length - 1, 1);
-    assert.ok(html.indexOf("news-editorial-byline") < html.indexOf(EDITORIAL_TRANSPARENCY_NOTE));
+    assert.equal(html.split(EDITORIAL_RESPONSIBILITY).length - 1, 1);
+    assert.ok(html.indexOf("news-editorial-byline") < html.indexOf(EDITORIAL_RESPONSIBILITY));
     if (!record.author_perspective) assert.doesNotMatch(html, /id="meine-einordnung"/);
   }
   assert.match(AUTHOR_ANALYSIS_RULE, /Fakten/);
