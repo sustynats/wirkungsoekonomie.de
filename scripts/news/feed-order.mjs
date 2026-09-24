@@ -1,5 +1,32 @@
 // Public editorial timestamps, never ingestion or build time.
 const timestampOrLast = value => Number.isFinite(Date.parse(value)) ? Date.parse(value) : -Infinity;
+
+export const isEpisodeReview = value => ['listened', 'watched'].includes(value?.subtype);
+
+// Originalfolgen sind nach ihrem Berliner Kalendertag geordnet, nicht nach
+// Import, Freigabe oder spaeterer Korrektur der Besprechung. Altdaten enthalten
+// sowohl ISO-Zeitstempel als auch ISO- und deutsche Datumsangaben.
+export function originalEpisodeDate(value) {
+  if (!isEpisodeReview(value)) return '';
+  const raw = String(value.source_media?.original_release_date || '').trim();
+  const german = raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+  const iso = german ? `${german[3]}-${german[2].padStart(2, '0')}-${german[1].padStart(2, '0')}` : raw;
+  if (!/^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}))?$/.test(iso)) return '';
+  const day = iso.slice(0, 10), date = new Date(`${day}T00:00:00.000Z`);
+  if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== day) return '';
+  if (iso.length === 10) return day;
+  const instant = new Date(iso);
+  if (!Number.isFinite(instant.getTime())) return '';
+  return new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Berlin', year:'numeric', month:'2-digit', day:'2-digit'}).format(instant);
+}
+
+export function episodeDateLabel(value) {
+  if (!isEpisodeReview(value)) return '';
+  const date = originalEpisodeDate(value);
+  if (!date) return 'Datum der Originalfolge nicht angegeben';
+  return `${value.subtype === 'watched' ? 'Sendung' : 'Folge'} vom ${date.slice(8)}.${date.slice(5, 7)}.${date.slice(0, 4)}`;
+}
+
 export function originalNewsDate(value) {
   if (Number.isFinite(Date.parse(value.source_published_at))) return new Date(value.source_published_at).toISOString();
   const sourceDates = (value.sources || [])
@@ -8,6 +35,13 @@ export function originalNewsDate(value) {
   return sourceDates.length ? new Date(Math.min(...sourceDates)).toISOString() : '';
 }
 export function feedDate(value, type = "story") {
+  if (type === 'analysis' && isEpisodeReview(value)) {
+    const day = originalEpisodeDate(value);
+    // Mitternacht ist nur der gemeinsame Sortierschluessel fuer den Tag,
+    // keine behauptete Sendezeit. Publikations- und Aenderungsdaten bleiben erhalten.
+    if (day) return `${day}T00:00:00.000Z`;
+    return Number.isFinite(Date.parse(value.published_at)) ? new Date(value.published_at).toISOString() : '';
+  }
   if (type === "story") {
     // A later import or MPD correction is not a new news event. Preserve the
     // original source date; only an explicitly documented news update moves it.
