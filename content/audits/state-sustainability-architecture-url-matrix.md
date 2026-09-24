@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4899**
+- Sitemap routes: **4907**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14930**
+- Extra tracked source HTML not in sitemap: **14933**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **275**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **276**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3707,6 +3707,7 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/wust-bei-gopel-demokratie-braucht-mehr-als-gute-absichten-39805d/index.html` - dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/fachkraftemangel-ist-mehr-als-eine-frage-der-arbeitsstunden-cfb7ef/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3885,8 +3886,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1373**
-- Combined matrix items (routes + extra HTML + support): **21202**
+- Tracked support text files inventoried: **1375**
+- Combined matrix items (routes + extra HTML + support): **21215**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4462,7 +4463,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **21203**
+- Combined reviewed items: **21216**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
