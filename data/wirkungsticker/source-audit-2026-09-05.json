@@ -456,7 +456,7 @@
     }
   ],
   "regional_coverage": {
-    "checked_at": "2026-09-24T13:09:36.405Z",
+    "checked_at": "2026-09-24T13:24:21.372Z",
     "required_states": 16,
     "configured_states": 15,
     "healthy_states": 15,
@@ -510,8 +510,8 @@
             "trial_mode": true,
             "status": "active",
             "content_warning": null,
-            "last_success": "2026-09-24T12:22:07.965Z",
-            "latest_item": "2026-09-24T11:00:00.000Z",
+            "last_success": "2026-09-24T13:24:21.372Z",
+            "latest_item": "2026-09-24T14:02:02.000Z",
             "last_error": null,
             "governance_hold_until": null,
             "interval_minutes": 60,
@@ -594,7 +594,7 @@
             "trial_mode": true,
             "status": "active",
             "content_warning": null,
-            "last_success": "2026-09-24T12:22:07.965Z",
+            "last_success": "2026-09-24T13:24:21.372Z",
             "latest_item": "2026-09-24T00:00:00.000Z",
             "last_error": null,
             "governance_hold_until": null,
@@ -2191,7 +2191,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 49.6,
+      "source_utility_score": 49.5,
       "metrics": {
         "items_seen": 210,
         "items_local_rejected": 0,
