@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { withoutProcessNotes, processNoteFindings, assertWithoutProcessNotes } from '../../scripts/news/editorial-markdown.mjs';
 import { hasEditorialResidue, PROCESS_NOTE_PATTERN } from '../../scripts/news/reader-copy.mjs';
 import { validatePersonalEdition, personalContentHash } from '../../scripts/news/personal-editorial.mjs';
@@ -76,7 +77,7 @@ test('kein veroeffentlichter Beitrag im Bestand traegt einen Verfahrensvermerk',
 // Natalie am 18.09.2026: "hier sollte meine Meinung wiedergeben werden, welche
 // die KI aufgrund der Wirkungsoekonomie eigentlich kennen muesste."
 test('die Anweisung verlangt die Ableitung aus der Methodik, keine Rueckfrage', () => {
-  const wissen = editorialKnowledge(new URL('.', wurzel).pathname.replace(/\/$/, ''));
+  const wissen = editorialKnowledge(fileURLToPath(wurzel));
   assert.equal(/redaktionelle Rückfrage statt/i.test(wissen.instructions), false, 'die alte Regel ist weg');
   assert.match(wissen.instructions, /Meine Einordnung ist die Anwendung der wirkungsökonomischen Methodik/);
   assert.match(wissen.instructions, /Niemals eine Frage, eine Aufgabe oder eine Anrede an die Redaktion/);

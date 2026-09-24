@@ -64,7 +64,7 @@ test('all published media cards and detail origins distinguish episode date from
   for (const value of media) {
     const card=editorialCard(value,null,1), page=editorialAnalysisPage(value);
     assert.ok(card.includes(episodeDateLabel(value)),value.slug);
-    assert.match(card,/news-editorial-card__episode/);
+    assert.match(card,/news-editorial-card__episode|news-show-identity__date/);
     assert.match(card,/Einordnung veröffentlicht/);
     assert.ok(page.includes(episodeDateLabel(value)),value.slug);
     assert.ok(page.includes(`"datePublished":"${value.published_at}"`));

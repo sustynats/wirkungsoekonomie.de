@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { fileURLToPath } from "node:url";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { prepareReviewedStory } from "../../scripts/news/publish-reviewed.mjs";
@@ -7,7 +8,7 @@ import { buildCaseFiles } from "../../scripts/news/case-files.mjs";
 import { duplicateGroups } from "../../scripts/news/living-files.mjs";
 import { storyPage } from "../../scripts/news/build.mjs";
 
-const root = new URL("../../", import.meta.url).pathname;
+const root = fileURLToPath(new URL("../../", import.meta.url));
 const registry = loadNewsRegistry(root);
 const review = JSON.parse(fs.readFileSync(`${root}content/news/reviews/sachsen-anhalt-internationale-reaktionen-2026-09-07.json`));
 const stories = JSON.parse(fs.readFileSync(`${root}data/news/stories.json`)).stories;

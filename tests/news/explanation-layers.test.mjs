@@ -89,7 +89,8 @@ test("Erklärungsebenen: eindeutige IDs, JSON-LD und erreichbare neue Lesepfade"
       assert.ok(html.includes('"@type":"Book"'));
       assert.ok(!html.includes('aria-label="Tragweite für Mensch:'));
     } else if (html.includes('data-personal-editorial="true"')) {
-      assert.ok(html.includes('Persönliche Meinung und wirkungsökonomische Analyse'));
+      assert.ok(html.includes('Die persönliche Einordnung gibt ihre Auffassung wieder.'));
+      assert.ok(html.includes('Recherchierte Fakten, wirkungsökonomische Analyse und persönliche Bewertung werden getrennt ausgewiesen.'));
       assert.ok(html.includes('data-news-reader-back'));
       assert.ok(!html.includes('aria-label="Tragweite für Mensch:'));
     } else { assert.ok(!html.includes('Wir überarbeiten die Wirkungsprofile')); assert.ok(!html.includes('aria-label="Tragweite für Mensch:')); }
