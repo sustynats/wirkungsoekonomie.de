@@ -15,10 +15,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-09-24T12:50:39.155Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ee58ba0320f79b16bd3ff642",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-09-24T12:50:39.155Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2022,11 +2027,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/schusse-boller-benzin-polizei-ermittelt-nach-zwei-vorfallen-in-heidenheim-91d35f/": {
         "first_seen_at": "2026-09-24T12:50:39.155Z",
         "source_at": "2026-09-24T11:43:40.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mehrere-explosionen-mindestens-acht-tote-bei-russischen-angriffen-auf-die-ukraine-c3546b/": {
+        "first_seen_at": "2026-09-24T13:05:53.195Z",
+        "source_at": "2026-09-24T09:30:02.000Z"
       }
     },
-    "last_new_at": "2026-09-24T12:50:39.155Z",
-    "checked_at": "2026-09-24T12:50:39.155Z",
-    "last_current_new_at": "2026-09-24T12:50:39.155Z"
+    "last_new_at": "2026-09-24T13:05:53.195Z",
+    "checked_at": "2026-09-24T13:05:53.195Z",
+    "last_current_new_at": "2026-09-24T13:05:53.195Z"
   },
   "recovery_attempts": [
     {
