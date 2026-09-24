@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
+import {combinedFeedItems} from '../../scripts/news/build.mjs';
 
 // 17.09.2026: Zahl und Banner haengen an der Herausgabezeit, nicht an der
 // Ereigniszeit. Vorher war eine Meldung, die wir mehr als eine Stunde nach dem
@@ -263,7 +264,9 @@ test('der Feed-Bauer liefert die Herausgabezeit mit', () => {
   const build = fs.readFileSync('scripts/news/build.mjs', 'utf8');
   assert.match(build, /_woek_released_at: item\.released_at/);
   assert.equal([...build.matchAll(/_woek_released_at: item\.released_at/g)].length, 2, 'beide JSON-Feeds');
-  assert.match(build, /released_at: story\.published_at/);
+  const published = '2026-09-24T10:00:00Z';
+  const [story] = combinedFeedItems([{story_id:'release-test',slug:'release-test',published_at:published,source_published_at:'2026-09-20T10:00:00Z',analysis:{summary:'Test'}}],[]);
+  assert.equal(story.released_at,published,'Herausgabezeit bleibt trotz Ereignissortierung unveraendert');
   assert.match(build, /data-news-released-at="\$\{escapeHtml\(story\.published_at \|\| ""\)\}"/);
 });
 
