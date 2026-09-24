@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4907**
+- Sitemap routes: **4908**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14933**
+- Extra tracked source HTML not in sitemap: **14934**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **276**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **275**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3688,7 +3688,6 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3887,7 +3886,7 @@ Signals are review candidates, not automatic errors.
 ## Recursive non-HTML publication/support surfaces
 
 - Tracked support text files inventoried: **1379**
-- Combined matrix items (routes + extra HTML + support): **21219**
+- Combined matrix items (routes + extra HTML + support): **21221**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4347,7 +4346,6 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/bridge/write-native-output-config.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/build.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `scripts/news/editorial-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap, dns |
-| `scripts/news/editorial-diagrams.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/editorial-judgment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/event-relevance.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation, novelty_or_absence |
 | `scripts/news/impact-assessment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -4464,7 +4462,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **21220**
+- Combined reviewed items: **21222**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
