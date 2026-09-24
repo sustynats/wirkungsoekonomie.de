@@ -85,6 +85,17 @@ function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
   const transport = { writeAtomic: async (p, v) => { files.set(p, v); } };
   return { session: { store, transport }, files, observations, jobs };
 }
+test('a new subscribed series without transcript waits without charge and does not starve a usable older episode', async () => {
+  const blocked = { ...shows.illner, require_transcript: true, allow_paid_transcription: false };
+  const ready = { ...shows.lp, require_transcript: true };
+  const newer = zdf.replaceAll('10 Sep', '12 Sep');
+  const fixture = async (url) => ({ ok: true, text: async () => url === blocked.feed ? newer : url === ready.feed ? jule : '00:00:01 Inhalt '.repeat(100) });
+  const { session, jobs } = fakeSession();
+  const report = await proposeEpisodeCandidates({ session, root: '/nonexistent', now, env: {}, shows: [blocked, ready], fetchImpl: fixture, limit: 1, maxPerDay: 1,
+    transcribeImpl: async () => assert.fail('no paid fallback for this series') });
+  assert.equal(report.proposed.length, 1); assert.equal(report.proposed[0].show_id, ready.id);
+  assert.equal(report.waiting_for_subtitles[0].show_id, blocked.id); assert.equal(jobs.length, 2);
+});
 const feeds = { 'https://feeds.example/illner': zdf, 'https://feeds.example/lanz': mvw, 'https://feeds.example/lp': jule };
 const fetchImpl = async (url) => ({ ok: url in feeds || /transcript|vtt/.test(url), text: async () => feeds[url] || `WEBVTT\n${'00:00:01.000 --> 00:00:02.000\nText mit Inhalt.\n'.repeat(20)}` });
 
@@ -287,7 +298,7 @@ test('Lanz wartet bis 14:00 des Folgetags auf die amtlichen Untertitel, danach g
   assert.equal(berlinOffsetMinutes(Date.parse('2026-09-16T09:00:00Z')), 120);
   assert.equal(berlinOffsetMinutes(Date.parse('2026-01-16T09:00:00Z')), 60);
   // Die Sendung trägt den Stichtag in der Senderliste.
-  const lanzConfig = loadShows(new URL('../../', import.meta.url).pathname).find((show) => show.id === 'markus-lanz');
+  const lanzConfig = loadShows(fileURLToPath(new URL('../../', import.meta.url))).find((show) => show.id === 'markus-lanz');
   assert.deepEqual(lanzConfig.transcript_deadline, { day_offset: 1, berlin_hour: 14 });
 
   const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500,
