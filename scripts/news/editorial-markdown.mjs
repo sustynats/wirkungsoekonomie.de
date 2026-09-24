@@ -1,4 +1,5 @@
 import { PROCESS_NOTE_PATTERN } from './reader-copy.mjs';
+import { parseAuthoredVisual, renderAuthoredVisual } from '../../assets/js/editorial-authored-visuals.js';
 import { renderArrowDiagram, renderTableDiagram, renderTextDiagram, labeledArrowItem, renderLabeledArrowDiagram } from './editorial-diagrams.mjs';
 // Deliberately small, deterministic editorial Markdown subset. No HTML, scripts,
 // images or embedded instructions execute. Unsupported blocks fail closed.
@@ -88,11 +89,14 @@ export function assertWithoutProcessNotes(markdown) {
   if (treffer.length) throw Object.assign(Error('EDITORIAL_PROCESS_NOTE_IN_TEXT'), { detail: treffer.join(' | ') });
 }
 
-export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [] } = {}) {
+export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [], authoredVisualLabels = {}, automaticArrowDiagrams = !markdown.includes('<!-- WÖK_VISUAL') } = {}) {
+  // Authored markers define the visual scope. Other arrows may be a rejected
+  // example, not an endorsed causal model; preserve them as ordinary prose.
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const sections = [], headings = [], blocks = [];
   let current = { id: "einstieg", title: "", blocks: [] }, tableIndex = 0;
   const renderedSectionDiagrams = new Set();
+  const authoredVisualIds = new Set();
   const add = html => { current.blocks.push(html); blocks.push(html); };
   const endSection = () => {
     for (const diagram of sectionDiagrams.filter(d => d.sectionId ? d.sectionId === current.id : d.section === current.title)) {
@@ -105,7 +109,15 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
   for (let i = 0; i < lines.length;) {
     const line = lines[i];
     if (!line.trim()) { i++; continue; }
-    if (labeledArrowItem(lines.slice(i,i+2).join('\n'))) {
+    if (line === '<!-- WÖK_VISUAL') {
+      const end = lines.indexOf('-->', i + 1);
+      if (end < 0) throw Error('EDITORIAL_VISUAL_UNCLOSED');
+      const visual = parseAuthoredVisual(lines.slice(i, end + 1).join('\n'));
+      if (authoredVisualIds.has(visual.id)) throw Error('EDITORIAL_VISUAL_DUPLICATE_ID');
+      authoredVisualIds.add(visual.id);
+      add(renderAuthoredVisual(visual, { label: Object.hasOwn(authoredVisualLabels, visual.id) ? authoredVisualLabels[visual.id] : undefined })); i = end + 1; continue;
+    }
+    if (automaticArrowDiagrams && labeledArrowItem(lines.slice(i,i+2).join('\n'))) {
       const items = []; let cursor = i;
       while (labeledArrowItem(lines.slice(cursor,cursor+2).join('\n'))) {
         items.push(lines.slice(cursor,cursor+2).join('\n')); cursor += 2;
@@ -131,7 +143,7 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
     if (/^>/.test(line)) {
       const quoted = [];
       while (i < lines.length && /^>/.test(lines[i])) quoted.push(lines[i++].replace(/^> ?/, ""));
-      add(renderArrowDiagram(quoted.join("\n"), inlineEditorialMarkdown) || `<blockquote>${renderEditorialMarkdown(quoted.join("\n")).html}</blockquote>`); continue;
+      add((automaticArrowDiagrams && renderArrowDiagram(quoted.join("\n"), inlineEditorialMarkdown)) || `<blockquote>${renderEditorialMarkdown(quoted.join("\n"), { automaticArrowDiagrams }).html}</blockquote>`); continue;
     }
     if (/^\|/.test(line)) {
       const rows = [];
@@ -147,7 +159,7 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
       add(`<ul>${items.map(item => `<li>${inlineEditorialMarkdown(item)}</li>`).join("")}</ul>`); continue;
     }
     const paragraph = [];
-    while (i < lines.length && lines[i].trim() && !/^(?:#{1,6} |>|\||- |---\s*$)/.test(lines[i])) paragraph.push(lines[i++]);
+    while (i < lines.length && lines[i].trim() && !/^(?:#{1,6} |>|\||- |<!-- WÖK_VISUAL|---\s*$)/.test(lines[i])) paragraph.push(lines[i++]);
     // Authors sometimes separate individual arrow steps by blank lines. Join
     // only explicit continuations; do not turn ordinary paragraphs into paths.
     let next = i;
@@ -156,7 +168,7 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
       if (!/^→\s+/.test(lines[next] || '')) break;
       paragraph.push(lines[next++]); i = next;
     }
-    add(renderArrowDiagram(paragraph.join("\n"), inlineEditorialMarkdown) || `<p>${paragraph.map(l => inlineEditorialMarkdown(l.replace(/ {2}$/, "")) + (l.endsWith("  ") ? "<br>" : "")).join("\n")}</p>`);
+    add((automaticArrowDiagrams && renderArrowDiagram(paragraph.join("\n"), inlineEditorialMarkdown)) || `<p>${paragraph.map(l => inlineEditorialMarkdown(l.replace(/ {2}$/, "")) + (l.endsWith("  ") ? "<br>" : "")).join("\n")}</p>`);
   }
   endSection();
   if (renderedSectionDiagrams.size !== sectionDiagrams.length) throw Error('EDITORIAL_DIAGRAM_SECTION_NOT_FOUND');
