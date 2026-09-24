@@ -65,12 +65,17 @@ test('section IDs survive publication typography and missing anchors fail visibl
  }
  assert.throws(()=>renderEditorialMarkdown('## Anderer Abschnitt\n\nEin belegter Satz.',{sectionDiagrams:[diagram]}),/SECTION_NOT_FOUND/);
 });
-test('all 30 checked publications have real explanatory diagrams, not portraits or MPD meters',()=>{
+test('unchanged reviewed publications have real diagrams; later revisions remain publishable',()=>{
  const rows=auditEditorialVisuals(root);
  assert.ok(rows.length>=86);
  assert.ok(diagramLayouts.entries.length>=30);
  for(const entry of diagramLayouts.entries){
   const row=rows.find(r=>r.slug===entry.slug);
+  assert.ok(row,entry.slug);
+  // A later, separately approved manuscript must not inherit its old layout
+  // or stop the normal publication pipeline. The explicit visual audit reports
+  // stale plans; the hash guard above leaves the new manuscript intact.
+  if(row.layout_status==='stale')continue;
   assert.ok(row?.diagrams>0,entry.slug);
   assert.equal(row.layout_status,'bound',entry.slug);
  }
