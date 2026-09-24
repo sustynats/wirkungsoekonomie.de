@@ -42,7 +42,7 @@ Das bestehende Meinung-&-Analyse-Portrait und historische Beiträge bleiben unve
 Der manuelle Adapter liefert Daten an den vorhandenen Meinung-&-Analyse-
 Renderer: gemeinsame Navigation, Autorinnenbereich, Stil, Merken/Teilen,
 Leseweg, RSS/Atom/JSON, Suche, Sitemap und OpenGraph.
-Die Rubrik ist über /wirkungsticker/?thema=book_and_impact filterbar.
+Die Rubrik ist über /wirkungsticker/analysen/?typ=book filterbar.
 „Grundlagenbuch“ ist eine optionale redaktionelle Kennzeichnung im Manuskript.
 Aus der Buchrezension werden keine erfundenen News-Fakten, MPD-Scores oder
 automatische Wirkungsbewertungen abgeleitet.
@@ -57,3 +57,30 @@ Desktop und Mobile prüfen: komplettes Portrait, separate unverzerrte Cover,
 scrollbare Tabellen, Quellen, Rubrikfilter, interne Links und Share-Metadaten.
 Veröffentlichung über den vorhandenen GitHub-Pages-Releaseweg. Keine neue
 Hostingplattform und keine kostenpflichtigen Dienste für dieses Format.
+
+## Explizite redaktionelle Visualisierungen (24.09.2026)
+
+`<!-- WÖK_VISUAL ... -->`-Blöcke im Originalmanuskript werden beim bestehenden
+Markdown-Build in semantisches HTML übersetzt. Zulässige Typen sind
+`system-loop`, `multi-input-path` und `dependency-network`. Der kleine Parser
+akzeptiert ausschließlich bekannte Schlüssel, Zeichenketten, Listen und
+boolesche Werte; fehlerhafte oder doppelte Marker sperren den Build.
+
+Titel, Beschriftungen und methodische Hinweise stammen unverändert aus dem
+Manuskript. Sichtbare Modellhinweise, Listen und ARIA-Verknüpfungen bleiben
+auch ohne JavaScript zugänglich. Keine Chart-Library, keine Zahlenableitung.
+Zusätzliche, ausdrücklich beauftragte Pflichtlabels stehen unter `visual_labels`
+im manuellen Manifest. Sie ergänzen die Darstellung, ohne die Originalhinweise
+oder den Manuskripttext zu ersetzen; sie werden ebenfalls als Text ausgegeben.
+Bei einem Manuskript mit expliziten Markern werden andere Pfeilfolgen NICHT
+zusätzlich automatisch als Diagramm interpretiert: Sie können beispielsweise
+ein ausdrücklich zurückgewiesenes Erklärungsmodell zitieren.
+
+Die bestehenden Tabellen bleiben semantische, per Tastatur horizontal
+scrollbare Tabellen. Die drei neuen Rezensionen zeigen dafür einen sichtbaren
+Scrollhinweis. Historische Manuskripte und ihre inhaltlichen Abschnitte bleiben
+unverändert; das belegt ein Regressionstest.
+
+Cover-Provenienz einschließlich Download-URL, Rechtequelle, Prüfdatum und
+Originaldatei-Prüfsumme steht pro Titel in `editions.json`. Rechtehinweise
+werden verlagsspezifisch geprüft, nicht zwischen Verlagen übertragen.
