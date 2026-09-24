@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {escape} from './editorial-markdown.mjs';
 import {assetSize} from './asset-size.mjs';
+import {episodeDateLabel} from './feed-order.mjs';
 
 const config = JSON.parse(fs.readFileSync(new URL('../../data/news/show-visual-identities.json', import.meta.url)));
 // Ein freigegebenes Logo darf nicht an einer Schreibweise scheitern. Die
@@ -68,10 +69,14 @@ export function showAssetSize(asset) {
   return size;
 }
 
-export function renderShowIdentity(media, options) {
+export function renderShowIdentity(media, options = {}) {
   if (!media?.show) return '';
   const show = showIdentity(media, options);
-  const accent = /^#[a-f0-9]{6}$/i.test(show?.stable_accent || '') ? show.stable_accent : '#32634e';
+  // Eigene Reihenkennung, kein nachgebautes Fremdlogo. Auch unbekannte Reihen
+  // behalten denselben Akzent; ein neuer Name braucht keinen Asset-/KI-Auftrag.
+  const palette = ['#32634e', '#834367', '#305b81', '#856024', '#a14f36'];
+  const fallbackAccent = palette[parseInt(createHash('sha256').update(normalize(media.show)).digest('hex').slice(0, 4), 16) % palette.length];
+  const accent = /^#[a-f0-9]{6}$/i.test(show?.stable_accent || '') ? show.stable_accent : fallbackAccent;
   // Die Massangaben kommen aus der Datei: pauschale 800x800 liessen den Browser
   // fuer jedes Logo ein Quadrat reservieren, obwohl vier von sechs im Verhaeltnis
   // 16:9 oder 1,63:1 liegen - beim Laden ruckte die Karte zurecht. Und die
@@ -79,7 +84,12 @@ export function renderShowIdentity(media, options) {
   // ein falsches Verhaeltnis im Markup ist deshalb nicht nur unruhig.
   const size = show?.usable_asset ? showAssetSize(show.usable_asset) : null;
   const dimensions = size ? ` width="${size.width}" height="${size.height}"` : '';
-  return `<figure class="news-show-identity" style="--show-accent:${accent}">${show?.usable_asset
-    ? `<img src="${escape(show.usable_asset)}" alt="Offizielles Logo: ${escape(show.show_name)}"${dimensions} loading="lazy" decoding="async"><figcaption>${escape(show.credit)}</figcaption>`
-    : `<div class="news-show-identity__fallback"><span aria-hidden="true">◌</span><strong>${escape(media.show)}</strong></div>`}</figure>`;
+  if (show?.usable_asset) return `<figure class="news-show-identity" style="--show-accent:${accent}"><img src="${escape(show.usable_asset)}" alt="Offizielles Logo: ${escape(show.show_name)}"${dimensions} loading="lazy" decoding="async"><figcaption>${escape(show.credit)}</figcaption></figure>`;
+  const kind = options.kind;
+  const label = kind === 'watched' ? 'Nachgesehen' : kind === 'listened' ? 'Nachgehört' : 'Sendungsbesprechung';
+  const date = episodeDateLabel({subtype:kind, source_media:media});
+  const icon = kind === 'listened'
+    ? '<path d="M4 14v-3a8 8 0 0 1 16 0v3M4 13H3v7h4v-7Zm16 0h1v7h-4v-7Z"/>'
+    : '<rect x="3" y="5" width="18" height="13" rx="2"/><path d="M8 22h8M12 18v4"/>';
+  return `<figure class="news-show-identity news-show-identity--text" style="--show-accent:${accent}" aria-label="${escape(label)}: ${escape(show?.show_name || media.show)}"><div class="news-show-identity__fallback"><div class="news-show-identity__kicker"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${icon}</svg><span>${label}</span></div><strong class="news-show-identity__name">${escape(show?.show_name || media.show)}</strong>${media.episode_title ? `<p class="news-show-identity__episode">${escape(media.episode_title)}</p>` : ''}${date ? `<p class="news-show-identity__date">${escape(date)}</p>` : ''}<p class="news-show-identity__signature">WÖk · Einordnung von Natalie Weber</p></div></figure>`;
 }
