@@ -17,7 +17,7 @@ export const EDITORIAL_AUTHOR = Object.freeze({
 export const MANUAL_DIRECTORY = "content/news/manual";
 const sha = value => crypto.createHash("sha256").update(value).digest("hex");
 const fail = message => { throw new Error(message); };
-const safeFile = value => typeof value === "string" && /^[a-z0-9][a-z0-9_.-]+\.(?:md|jpg)$/.test(value) && !value.includes("..");
+const safeFile = value => typeof value === "string" && /^[a-z0-9][a-z0-9_.-]+\.(?:md|jpg|png|webp)$/.test(value) && !value.includes("..");
 
 export function parseManualFrontmatter(source) {
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n/.exec(source);
@@ -50,11 +50,21 @@ export function manualEdition(record, source, { root } = {}) {
     || !["published", "draft"].includes(record.status)) fail("MANUAL_PUBLICATION_METADATA_INVALID");
   // These exact duplicated Markdown masthead blocks are represented by the
   // shared hero/byline. No prose is shortened, rewritten or normalized.
-  const subtype = body.includes("**Buch & Wirkung · Grundlagenbuch**") ? "Grundlagenbuch" : "Buchbesprechung";
-  const masthead = `# ${fm.title}\n\n**Buch & Wirkung · ${subtype}**\n\n*${fm.subtitle}*${fm.spoiler_note ? `\n\n> **Hinweis:** ${fm.spoiler_note}` : ""}`;
-  if (!body.trimStart().startsWith(masthead)) fail("MANUAL_MASTHEAD_MISMATCH");
-  const articleBody = body.trimStart().slice(masthead.length).trimStart();
-  const rendered = renderEditorialMarkdown(articleBody);
+  const subtype = /\*\*Buch & Wirkung · (Grundlagenbuch|Romanbesprechung|Thrillerbesprechung|Buchbesprechung)\*\*/.exec(body)?.[1];
+  if (!subtype) fail("MANUAL_MASTHEAD_MISMATCH");
+  // Match exact text blocks, allowing the author's blank-line spacing. The
+  // signed original is never normalized or rewritten.
+  const masthead = [`# ${fm.title}`, `**Buch & Wirkung · ${subtype}**`, `*${fm.subtitle}*`];
+  let articleBody = body.trimStart();
+  if (fm.spoiler_note) {
+    const label = body.includes(`> **Spoiler-Hinweis:** ${fm.spoiler_note}`) ? 'Spoiler-Hinweis' : 'Hinweis';
+    masthead.push(`> **${label}:** ${fm.spoiler_note}`);
+  }
+  for (const block of masthead) {
+    if (!articleBody.startsWith(block + '\n')) fail("MANUAL_MASTHEAD_MISMATCH");
+    articleBody = articleBody.slice(block.length).trimStart();
+  }
+  const rendered = renderEditorialMarkdown(articleBody, { authoredVisualLabels: record.visual_labels || {} });
   const bookSection = rendered.sections.find(s => s.title === "Das Buch");
   if (!bookSection || !rendered.sections.some(s => s.title === "Meine Einordnung")) fail("MANUAL_BOOK_SECTIONS_REQUIRED");
   const cover = record.book_cover;
