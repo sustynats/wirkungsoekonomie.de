@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-24T12:22:07.965Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-24T12:54:44.135Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/mehrere-explosionen-mindestens-acht-tote-bei-russischen-angriffen-auf-die-ukraine-c3546b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/mehrere-explosionen-mindestens-acht-tote-bei-russischen-angriffen-auf-die-ukraine-c3546b/",
+      "title": "Russische Angriffe auf die Ukraine: Mindestens acht Tote laut Deutschlandfunk",
+      "summary": "Bei russischen Angriffen auf die Ukraine wurden laut den vorliegenden Berichten mindestens acht Menschen getötet. Die Quellen bestätigen zwei Tote in Kiew, während die Gesamtzahl und weitere Angaben teilweise auf Behördeninformationen beruhen.",
+      "date_published": "2026-09-24T09:30:02.000Z",
+      "date_modified": "2026-09-24T09:30:02.000Z",
+      "_woek_released_at": "2026-09-24T12:46:04.870Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
@@ -292,30 +323,32 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/flughafen-ber-was-steckt-hinter-der-drohnen-sichtung-am-flughafen-ber-ffa0d1/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/flughafen-ber-was-steckt-hinter-der-drohnen-sichtung-am-flughafen-ber-ffa0d1/",
-      "title": "Drohnen-Alarm unterbricht BER-Betrieb – viele Fragen bleiben offen",
-      "summary": "Ein Drohnen-Alarm unterbrach den BER-Betrieb vorübergehend. Ursache, Dauer und konkrete Folgen bleiben in den vorliegenden Darstellungen offen.",
+      "title": "Laut Bericht: Polizei ermittelt nach Drohnen-Alarm am BER – Gefahr bleibt unklar",
+      "summary": "Ein Drohnen-Alarm unterbrach den Betrieb am BER vorübergehend; die Polizei ermittelt, doch eine konkrete Gefahr ist nicht belegt. Für Reisende, Beschäftigte und den Flughafen können sich Folgen ergeben, deren Umfang und Ursache offen bleiben.",
       "date_published": "2026-09-24T03:19:57.000Z",
       "date_modified": "2026-09-24T03:19:57.000Z",
       "_woek_released_at": "2026-09-24T03:57:47.748Z",
       "tags": [
-        "Geopolitik"
+        "Geopolitik",
+        "Gesellschaft",
+        "Politik"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 1,
-          "direction": "mixed",
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 0,
-          "direction": "open",
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "mixed",
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
