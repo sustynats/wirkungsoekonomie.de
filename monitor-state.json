@@ -17,15 +17,7 @@
       "firstSeen": "2026-09-24T09:08:16.228Z",
       "active": true
     },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-09-24T09:08:16.228Z",
-      "active": true
-    },
     "run": {
-      "firstSeen": "2026-09-24T09:50:40.154Z",
-      "active": true
-    },
-    "publication": {
       "firstSeen": "2026-09-24T09:50:40.154Z",
       "active": true
     },
@@ -34,7 +26,16 @@
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e909ec08bfe19d05a69a52ce",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-09-24T12:35:38.309Z"
+    },
+    {
+      "id": "436ec608002b55a9e19ba9d7",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-09-24T12:35:38.309Z"
+    }
+  ],
   "dailyDate": "2026-09-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2030,11 +2031,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/bertelsmann-konzern-ubernimmt-brasilianischen-hochschulbetreiber-yduqs-461c80/": {
         "first_seen_at": "2026-09-24T09:05:34.994Z",
         "source_at": "2026-09-24T08:15:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ki-und-ukraine-krieg-openai-nimmt-ukraine-in-ki-cyberabwehr-programm-auf-1fb67a/": {
+        "first_seen_at": "2026-09-24T12:35:38.309Z",
+        "source_at": "2026-09-24T07:27:58.000Z"
       }
     },
-    "last_new_at": "2026-09-24T09:05:34.994Z",
-    "checked_at": "2026-09-24T12:20:51.824Z",
-    "last_current_new_at": "2026-09-24T09:05:34.994Z"
+    "last_new_at": "2026-09-24T12:35:38.309Z",
+    "checked_at": "2026-09-24T12:35:38.309Z",
+    "last_current_new_at": "2026-09-24T12:35:38.309Z"
   },
   "recovery_attempts": [
     {
