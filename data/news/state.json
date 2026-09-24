@@ -142627,14 +142627,14 @@
       "items": 15,
       "etag": null,
       "last_modified": null,
-      "last_attempt": "2026-09-23T19:08:36.622Z",
-      "attempts": 727,
-      "consecutive_failures": 8,
+      "last_attempt": "2026-09-24T01:08:47.811Z",
+      "attempts": 728,
+      "consecutive_failures": 9,
       "latest_item": "2026-08-15T12:00:00.000Z",
       "governance_hold_reason": null,
       "governance_hold_until": null,
-      "failures": 8,
-      "last_error_at": "2026-09-23T19:08:36.622Z"
+      "failures": 9,
+      "last_error_at": "2026-09-24T01:08:47.811Z"
     },
     "europepmc-impact-research": {
       "last_attempt": "2026-09-23T23:54:41.780Z",
@@ -143148,6 +143148,7 @@
     }
   },
   "pending_story_ids": [
+    "wt-2d37f2529968ef49",
     "wt-1178845d6d9da63d",
     "wt-4b81bebf126d28c7",
     "wt-b97e98fac4bb8a72",
@@ -143532,7 +143533,6 @@
     "wt-bc4b830f1c004d2e",
     "wt-4dcc9ed15a074994",
     "wt-a116ddc61af069b3",
-    "wt-0858f9aaab909431",
     "wt-8636078631bdcc11",
     "wt-ed0dcda0a79f3291",
     "wt-4dcaae46b0a870d7",
@@ -143938,11 +143938,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-2d37f2529968ef49"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-24T00:54:05.563Z",
+  "last_attempted_run": "2026-09-24T01:08:47.811Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1411,
