@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-24T06:20:54.286Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-24T06:33:52.751Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -28,6 +28,37 @@
         "planet": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/haus-eingesturzt-feuerwehr-sucht-mit-drohne-nach-menschen-507979/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/haus-eingesturzt-feuerwehr-sucht-mit-drohne-nach-menschen-507979/",
+      "title": "Laut MDR: Haus in Altenburg eingestürzt, 13 Menschen evakuiert",
+      "summary": "In Altenburg ist laut MDR ein leerstehendes Haus eingestürzt; 13 Menschen mussten benachbarte Wohnungen verlassen. Verletzte wurden dem Bericht zufolge zunächst nicht gemeldet, die Rückkehr bleibt offen.",
+      "date_published": "2026-09-24T05:27:10.000Z",
+      "date_modified": "2026-09-24T05:27:10.000Z",
+      "_woek_released_at": "2026-09-24T06:36:07.833Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
