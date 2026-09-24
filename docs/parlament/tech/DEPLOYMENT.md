@@ -46,7 +46,7 @@ Vercel-Frontend. Der bis Ende Mai 2027 veroeffentlichte DIP-Schluessel ist als
 Uebergangssecret zulaessig; 401-Antworten alarmieren den Betrieb. Kein
 Schluessel gelangt in `NEXT_PUBLIC_*`, Git oder eine oeffentliche API.
 
-Der taegliche Worker ruft ausschliesslich den 7–14-Tage-Vorlauf ab. Der
+Der taegliche Worker ruft ausschliesslich den 7-14-Tage-Vorlauf ab. Der
 einmalige Jahres-Backfill wird bewusst manuell als `scope=BOOTSTRAP` ausgeloest.
 Beide Wege schreiben nur `DRAFT`, amtliche Metadaten, Hash und einen
 `SOURCE_REQUIRED`-Pruefauftrag. Sie koennen weder einen freigegebenen

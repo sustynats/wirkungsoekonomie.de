@@ -11,7 +11,7 @@ import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isC
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
 import { relatedEditorialAnalyses, renderRelatedEditorialAnalyses, renderEditorialParagraphs } from "./editorial-presentation.mjs";
 import fs from "node:fs";
-import { feedDate, originalNewsDate, isLateNewsDelivery, mixedFeedItems, assertChronologicalFeedHtml } from "./feed-order.mjs";
+import { feedDate, originalNewsDate, originalEpisodeDate, episodeDateLabel, isLateNewsDelivery, mixedFeedItems, assertChronologicalFeedHtml } from "./feed-order.mjs";
 import { publicTitleImage } from "./title-image/pipeline.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -353,16 +353,17 @@ export function storyCard(story, index, {privateImpactPreview = false, hrefBase 
 </article>`;
 }
 
-function editorialCard(analysis, story, index, { hrefBase = "./" } = {}) {
+export function editorialCard(analysis, story, index, { hrefBase = "./" } = {}) {
   const personal=analysis.format===PERSONAL_FORMAT;
   const book = analysis.format === BOOK_FORMAT;
   const href = `${hrefBase}analyse/${analysis.slug}/`;
   const topic = (story?.topic || analysis.tags || []).join(" ").toLowerCase();
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
   const titleImage = publicTitleImage(analysis.title_image);
+  const episodeDate = episodeDateLabel(analysis);
   const preview = personal && analysis.source_media ? renderShowIdentity(analysis.source_media) : book ? `<div class="news-editorial-card__book${analysis.book.volumes ? " news-editorial-card__book--volumes" : ""}">${renderBookCover(analysis)}</div>` : titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
   return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-format="${book ? BOOK_FORMAT : "analysis"}" data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="${book || !publicImpactAssessment(analysis) ? "" : "mensch planet demokratie"}" data-high-impact="${!book && !personal}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(feedDate(analysis, "analysis"))}" data-news-released-at="${escapeHtml(analysis.published_at || "")}">
-  <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${personal ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.source_media?.show || personalLabel(analysis.subtype))}</p>` : book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}<div class="news-editorial-card__byline"><img src="${personal ? personalPortrait(analysis.subtype) : book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
+  <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${personal ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.source_media?.show || personalLabel(analysis.subtype))}</p>` : book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}${episodeDate ? `<div class="news-editorial-card__episode"><strong>${escapeHtml(episodeDate)}</strong>${analysis.source_media?.episode_title ? `<br>${escapeHtml(analysis.source_media.episode_title)}` : ''}</div>` : ''}<div class="news-editorial-card__byline"><img src="${personal ? personalPortrait(analysis.subtype) : book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · ${episodeDate ? 'Einordnung veröffentlicht' : 'veröffentlicht'} ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
   ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">${book ? (analysis.self_authored_work ? "Autorinnenbeitrag lesen" : "Buchbesprechung lesen") : "Analyse lesen"}${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
 </article>`;
 }
@@ -877,11 +878,10 @@ export function publicImpactSummary(story) {
 // ueber ein Ereignis von gestern Abend veroeffentlichen, ist fuer die Leserin
 // neu, steht in der Chronologie aber weit unten. Wer dafuer die Ereigniszeit
 // nimmt, verschickt nichts - genau das war am 17.09.2026 der Fall.
-function combinedFeedItems(stories, analyses) {
-  return [
-    ...stories.map((story) => ({ id: story.story_id, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, published_at: feedDate(story), updated_at: feedDate(story), released_at: story.published_at, late_delivery: isLateNewsDelivery(story), impact_profile:publicImpactSummary(story), tags: story.topic, type: "Wirkungsakte" })),
-    ...analyses.map((analysis) => ({ id: analysis.analysis_id, url: `${SITE}/wirkungsticker/analyse/${analysis.slug}/`, title: labelledTitle(analysis), summary: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, released_at: analysis.published_at, tags: [editorialLabel(analysis)], type: editorialLabel(analysis) })),
-  ].sort((left, right) => Date.parse(right.updated_at || 0) - Date.parse(left.updated_at || 0));
+export function combinedFeedItems(stories, analyses) {
+  return mixedFeedItems(stories, analyses).map(({type, value}) => type === 'story'
+    ? { id: value.story_id, url: `${SITE}/wirkungsticker/${value.slug}/`, title: value.title, summary: value.analysis.summary, published_at: feedDate(value), updated_at: feedDate(value), released_at: value.published_at, late_delivery: isLateNewsDelivery(value), impact_profile:publicImpactSummary(value), tags: value.topic, type: "Wirkungsakte" }
+    : { id: value.analysis_id, url: `${SITE}/wirkungsticker/analyse/${value.slug}/`, title: labelledTitle(value), summary: value.teaser, published_at: value.published_at, updated_at: value.updated_at, released_at: value.published_at, original_episode_date: originalEpisodeDate(value), tags: [editorialLabel(value)], type: editorialLabel(value) });
 }
 
 function legacyRedirect(target, title = "Wirkungsticker") {
@@ -970,7 +970,7 @@ export function buildNewsSite() {
     return caseFile ? { ...story, case_file: caseFile } : story;
   });
   const storiesById = new Map(pageStories.map((story) => [story.story_id, story]));
-  const editorialAnalyses = [...(editorialStore.analyses || []), ...manualEditorials].filter((analysis) => analysis.status === "published" && ([BOOK_FORMAT,PERSONAL_FORMAT].includes(analysis.format) || storiesById.has(analysis.story_id))).sort((left, right) => Date.parse(right.updated_at) - Date.parse(left.updated_at));
+  const editorialAnalyses = mixedFeedItems([], [...(editorialStore.analyses || []), ...manualEditorials].filter((analysis) => analysis.status === "published" && ([BOOK_FORMAT,PERSONAL_FORMAT].includes(analysis.format) || storiesById.has(analysis.story_id)))).map(item => item.value);
   if (new Set(editorialAnalyses.map(a => a.slug)).size !== editorialAnalyses.length) throw new Error("EDITORIAL_SLUG_COLLISION");
   const editorialsByStory = new Map();
   for (const analysis of editorialAnalyses) if (analysis.story_id) editorialsByStory.set(analysis.story_id, [...(editorialsByStory.get(analysis.story_id) || []), analysis]);
@@ -1027,7 +1027,7 @@ export function buildNewsSite() {
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
     _woek_revision: `${PUBLIC_RELEASE}:${publicationUpdatedAt}`,
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
-    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, _woek_released_at: item.released_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
+    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, _woek_released_at: item.released_at, ...(item.original_episode_date ? {_woek_original_episode_date: item.original_episode_date} : {}), tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
   // Die oeffentliche Arbeitsliste fuer die automatisierte Einordnung: welche
   // veroeffentlichten Beitraege warten noch auf Natalies Stimme. Oeffentlich,
