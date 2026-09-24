@@ -92,11 +92,13 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const sections = [], headings = [], blocks = [];
   let current = { id: "einstieg", title: "", blocks: [] }, tableIndex = 0;
+  const renderedSectionDiagrams = new Set();
   const add = html => { current.blocks.push(html); blocks.push(html); };
   const endSection = () => {
-    for (const diagram of sectionDiagrams.filter(d => d.section === current.title)) {
+    for (const diagram of sectionDiagrams.filter(d => d.sectionId ? d.sectionId === current.id : d.section === current.title)) {
       if (diagram.items.some(item => !markdown.includes(item))) throw Error('EDITORIAL_DIAGRAM_EXCERPT_CHANGED');
       add(renderTextDiagram(diagram, inlineEditorialMarkdown));
+      renderedSectionDiagrams.add(diagram);
     }
     sections.push({ ...current, html: current.blocks.join("\n") });
   };
@@ -157,6 +159,7 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
     add(renderArrowDiagram(paragraph.join("\n"), inlineEditorialMarkdown) || `<p>${paragraph.map(l => inlineEditorialMarkdown(l.replace(/ {2}$/, "")) + (l.endsWith("  ") ? "<br>" : "")).join("\n")}</p>`);
   }
   endSection();
+  if (renderedSectionDiagrams.size !== sectionDiagrams.length) throw Error('EDITORIAL_DIAGRAM_SECTION_NOT_FOUND');
   return { html: blocks.join("\n"), sections: sections.filter(s => s.html), headings };
 }
 

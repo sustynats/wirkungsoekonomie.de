@@ -58,6 +58,13 @@ test('old layout never silently attaches to a changed approved manuscript',()=>{
  const entry=diagramLayouts.entries[0];
  assert.deepEqual(editorialDiagramLayout({slug:entry.slug,body_markdown:'Neue Fassung'}),{});
 });
+test('section IDs survive publication typography and missing anchors fail visibly',()=>{
+ const diagram={sectionId:'kontext-und-folgen',mode:'comparison',items:['Ein belegter Satz.']};
+ for(const dash of ['-','\u2013']){
+  assert.match(renderEditorialMarkdown(`## Kontext ${dash} und Folgen\n\nEin belegter Satz.`,{sectionDiagrams:[diagram]}).html,/data-editorial-explanatory-visual/);
+ }
+ assert.throws(()=>renderEditorialMarkdown('## Anderer Abschnitt\n\nEin belegter Satz.',{sectionDiagrams:[diagram]}),/SECTION_NOT_FOUND/);
+});
 test('all 30 checked publications have real explanatory diagrams, not portraits or MPD meters',()=>{
  const rows=auditEditorialVisuals(root);
  assert.ok(rows.length>=86);
