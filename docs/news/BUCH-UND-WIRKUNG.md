@@ -42,7 +42,7 @@ Das bestehende Meinung-&-Analyse-Portrait und historische Beiträge bleiben unve
 Der manuelle Adapter liefert Daten an den vorhandenen Meinung-&-Analyse-
 Renderer: gemeinsame Navigation, Autorinnenbereich, Stil, Merken/Teilen,
 Leseweg, RSS/Atom/JSON, Suche, Sitemap und OpenGraph.
-Die Rubrik ist über /wirkungsticker/?thema=book_and_impact filterbar.
+Die Rubrik ist über /wirkungsticker/analysen/?typ=book filterbar.
 „Grundlagenbuch“ ist eine optionale redaktionelle Kennzeichnung im Manuskript.
 Aus der Buchrezension werden keine erfundenen News-Fakten, MPD-Scores oder
 automatische Wirkungsbewertungen abgeleitet.

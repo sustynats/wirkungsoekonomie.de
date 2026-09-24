@@ -29,6 +29,7 @@ for(const slug of newSlugs) test(slug+': intact text, cover, safety, metadata an
   assert.match(html,/"@type":"Book"/);assert.match(html,/data-news-share-button/);
   assert.ok(html.includes(a.book.cover));assert.ok(html.includes(a.author.image));
   assert.notEqual(a.book.cover,a.author.image);
+  assert.match(html,/href="\.\.\/\.\.\/analysen\/\?typ=book"/);
   assert.match(html,/rel="noopener noreferrer"/);
   if(slug!=='orca-franziska-gaensler')assert.match(html,/tabindex="0"><table class="data-table"/);
   if(slug==='code-null-florian-schwiecker')assert.match(html,/https:\/\/www.euspa.europa.eu\//);
