@@ -14,7 +14,7 @@ const build = quelle('../../scripts/news/build.mjs');
 const inhalt = (datei) => createHash('sha256').update(fs.readFileSync(new URL(datei, import.meta.url))).digest('hex').slice(0, 16);
 
 for (const [datei, muster, marke, fingerabdruck, traeger] of [
-  ['../../assets/css/news.css', /assets\/css\/news\.css\?v=\$\{PUBLIC_RELEASE\}-([\w-]+)/, 'app-20260918-tabellen', '7324415e00c69c61'],
+  ['../../assets/css/news.css', /assets\/css\/news\.css\?v=\$\{PUBLIC_RELEASE\}-([\w-]+)/, 'app-20260924-sendungskarten', 'ca7675b0d6e85745'],
   ['../../assets/js/news-app-viewport.js', /assets\/js\/news-app-viewport\.js\?v=([\w-]+)/, '20260918-tastatur', 'e7bc64988561691e'],
   // news-app.js holt seit dem 20.09.2026 gepackte Daten. Laedt ein Browser die
   // alte Fassung aus dem Cache, sucht sie Dateien, die es nicht mehr gibt.

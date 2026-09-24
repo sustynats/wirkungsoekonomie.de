@@ -89,7 +89,9 @@ test('jede veroeffentlichte Ausgabe mit freigegebener Sendung zeigt ihr Logo', (
   for (const edition of withShow) {
     const official = officialShowName(edition.source_media.show);
     if (!official) continue;
-    assert.equal(edition.source_media.show, official, `${edition.slug} traegt die amtliche Schreibweise`);
+    // Historische, freigegebene Texte nicht fuer Grossschreibung umschreiben:
+    // entscheidend ist die eindeutige Zuordnung im gemeinsamen Renderer.
+    assert.equal(canonicalShowName(edition.source_media.show), canonicalShowName(official), `${edition.slug} ist eindeutig zugeordnet`);
     const entry = cleared.find((show) => show.show_name === official);
     if (entry) assert.equal(showIdentity(edition.source_media)?.usable_asset, entry.asset, `${edition.slug} zeigt sein Logo`);
   }
@@ -127,4 +129,20 @@ test('das Layout skaliert proportional und beschneidet nicht', () => {
   assert.match(rule, /object-fit:contain/, 'proportional einpassen, nie fuellen');
   assert.match(rule, /height:auto/, 'die Hoehe folgt dem Verhaeltnis der Datei');
   assert.ok(!/object-fit:cover/.test(css), 'kein cover auf einem freigegebenen Logo');
+});
+
+test('eigene Sendungskarte zeigt Reihe, Folge und Originaldatum statt Ladezeichen', () => {
+  const media = {show:'Europa im Gespräch', episode_title:'Robert Habeck über Europas Sicherheit', original_release_date:'2026-09-22'};
+  const html = renderShowIdentity(media, {kind:'watched'});
+  for (const text of ['news-show-identity--text','Nachgesehen','Europa im Gespräch','Robert Habeck über Europas Sicherheit','Sendung vom 22.09.2026','Einordnung von Natalie Weber']) assert.ok(html.includes(text), text);
+  assert.doesNotMatch(html, /◌|<img|<button|Offizielles Logo|animation/);
+  assert.match(renderShowIdentity(media,{kind:'listened'}), /Nachgehört/);
+  assert.match(renderShowIdentity(media,{kind:'listened'}), /Folge vom 22.09.2026/);
+  assert.match(renderShowIdentity({show:'Einzelgespräch'},{kind:'watched'}), /Datum der Originalfolge nicht angegeben/);
+  assert.doesNotMatch(renderShowIdentity({show:'Einzelgespräch'}), /undefined|Invalid Date|Nachgesehen/);
+  assert.equal(renderShowIdentity({}), '');
+  const escaped = renderShowIdentity({show:'<script>', episode_title:'<img src=x onerror=alert(1)>'},{kind:'watched'});
+  assert.doesNotMatch(escaped, /<script|<img/);
+  assert.match(escaped, /&lt;script&gt;/);
+  assert.equal(html, renderShowIdentity(media,{kind:'watched'}), 'deterministisch, kein zufaelliger Akzent');
 });
