@@ -73,7 +73,10 @@ test("every correction uses a bounded reader notice, with date and unchanged esc
 
 test("public ticker copy explains quality without infrastructure internals", () => {
   const html = fs.readFileSync(new URL("../../wirkungsticker/index.html", import.meta.url), "utf8");
-  assert.doesNotMatch(html, /\b(?:Oracle|OCI|Higgsfield|OpenAI|Anthropic|GPT-\d)/i);
+  // Nachrichten duerfen ueber diese Unternehmen berichten. Nur die Produkt-
+  // und Methodiktexte duerfen keine internen Anbieter-/Betriebsdetails leaken.
+  const productCopy = html.replace(/<article\b[\s\S]*?<\/article>/g, '');
+  assert.doesNotMatch(productCopy, /\b(?:Oracle|OCI|Higgsfield|OpenAI|Anthropic|GPT-\d)/i);
   assert.doesNotMatch(html, /URL-\/Hash-Deduplizierung|Story-Clustering|Fail closed/i);
   assert.doesNotMatch(html, /attributed_single_source|media_trigger|controlled_source_text|provider_reported_usage|AI_INPUT_/i);
   assert.match(html, /Faktencheck, Folgencheck/);
