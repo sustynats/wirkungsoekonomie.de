@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { enhancePrivateEditorialHtml } from '../../assets/js/editorial-diagrams.js';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -7,6 +8,23 @@ import {arrowSteps,renderTextDiagram} from '../../scripts/news/editorial-diagram
 import {auditEditorialVisuals} from '../../scripts/news/audit-editorial-visuals.mjs';
 import {diagramLayouts,editorialDiagramLayout} from '../../scripts/news/editorial-diagram-layouts.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+
+test('authored labeled arrow blocks retain words in public and private renderers',()=>{
+ const items=['**Zieldefinition**\n→ Drei ausdrücklich genannte Gruppen','**Staatliche Hebel**\n→ Verwaltung und Förderung','**Zu prüfende Folgen**\n→ Mögliche Vertrauensverluste'];
+ const md=items.join('\n\n');
+ const current=renderEditorialMarkdown(md).html;
+ assert.equal((current.match(/news-systemic-node"/g)||[]).length,3);
+ const legacy=items.map(x=>'<p>'+x.replace(/\*\*([^*]+)\*\*/,'<strong>$1</strong>')+'</p>').join('\n');
+ const enhanced=enhancePrivateEditorialHtml(legacy);
+ for(const html of [current,enhanced]){
+  assert.match(html,/data-editorial-explanatory-visual/);
+  for(const s of ['Drei ausdrücklich genannte Gruppen','Verwaltung und Förderung','Mögliche Vertrauensverluste'])assert.ok(html.includes(s));
+  assert.match(html,/keine gemessenen Wirkungen/);
+ }
+ assert.equal(enhancePrivateEditorialHtml('<p>Eine normale Aussage.</p>'),'<p>Eine normale Aussage.</p>');
+ const appendix=renderEditorialMarkdown('## Meine Einordnung\n\nMein Urteil.\n\n---\n\n### Wirkungskaskade für die Visualisierung\n\n'+md+'\n\n### Quellen und Dokumente\n\nDie Quelle.');
+ assert.equal(appendix.sections.find(s=>s.title==='Meine Einordnung').html.includes('Zieldefinition'),false);
+});
 
 test('standalone and multiline chains render in the same shared Markdown path as private previews',()=>{
  for(const md of ['A → B → mögliche Folge','> **A → B → mögliche Folge**','A\n\n→ B\n\n→ mögliche Folge']){

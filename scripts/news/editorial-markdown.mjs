@@ -1,5 +1,5 @@
 import { PROCESS_NOTE_PATTERN } from './reader-copy.mjs';
-import { renderArrowDiagram, renderTableDiagram, renderTextDiagram } from './editorial-diagrams.mjs';
+import { renderArrowDiagram, renderTableDiagram, renderTextDiagram, labeledArrowItem, renderLabeledArrowDiagram } from './editorial-diagrams.mjs';
 // Deliberately small, deterministic editorial Markdown subset. No HTML, scripts,
 // images or embedded instructions execute. Unsupported blocks fail closed.
 // Uses the site's existing table-wrap/data-table and text-link conventions.
@@ -103,6 +103,14 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
   for (let i = 0; i < lines.length;) {
     const line = lines[i];
     if (!line.trim()) { i++; continue; }
+    if (labeledArrowItem(lines.slice(i,i+2).join('\n'))) {
+      const items = []; let cursor = i;
+      while (labeledArrowItem(lines.slice(cursor,cursor+2).join('\n'))) {
+        items.push(lines.slice(cursor,cursor+2).join('\n')); cursor += 2;
+        while (cursor < lines.length && !lines[cursor].trim()) cursor++;
+      }
+      if (items.length >= 3 && items.length <= 9) { add(renderLabeledArrowDiagram(items, inlineEditorialMarkdown)); i = cursor; continue; }
+    }
     if (/^\s*(?:<|!\[|```|~~~|\[.+\]:)/.test(line) || /^ {4}\S/.test(line)) throw new Error("EDITORIAL_MARKDOWN_UNSUPPORTED_BLOCK");
     const heading = /^(#{2,6}) (.+)$/.exec(line);
     if (heading) {
@@ -111,8 +119,9 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
       let id = baseId, n = 2;
       while (headings.some(h => h.id === id)) id = `${baseId}-${n++}`;
       headings.push({ id, level, title });
-      if (level === 2) { endSection(); current = { id, title, blocks: [] }; }
-      add(`<h${level}${level !== 2 ? ` id="${id}"` : ""}>${inlineEditorialMarkdown(title)}</h${level}>`);
+      const appendix = level === 3 && /^(?:Wirkungskaskade für die Visualisierung|Quellen und Dokumente)$/.test(title);
+      if (level === 2 || appendix) { endSection(); current = { id, title, blocks: [] }; }
+      add(`<h${level}${level !== 2 && !appendix ? ` id="${id}"` : ""}>${inlineEditorialMarkdown(title)}</h${level}>`);
       i++; continue;
     }
     if (/^# /.test(line)) throw new Error("EDITORIAL_MARKDOWN_DUPLICATE_TITLE");

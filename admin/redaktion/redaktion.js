@@ -2,6 +2,7 @@ import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-li
 import {approvalStates,orderedReviews,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
 import {parkedReason} from './parked-review.js';
+import {enhancePrivateEditorialHtml} from '../../assets/js/editorial-diagrams.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
 const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
@@ -200,7 +201,7 @@ async function openReview(id){
  mount.append(element('p',`${types[p.format]} · Fassung ${r.revision}`,'eyebrow'),element('h2',p.title));if(p.subtitle)mount.append(element('p',p.subtitle));
  if(p.source_media){const m=p.source_media;mount.append(element('h3','Besprochen: '+m.show),element('p',m.episode_title),element('p',[m.original_release_date,...(m.hosts||[]),...(m.guests||[])].filter(Boolean).join(' · ')));}
  if(p.visual){const img=element('img');img.src=p.visual.url;img.alt=p.visual.alt;img.className='review-image';mount.append(img,element('p',p.visual.credit,'quiet'));}
- const frame=element('iframe');frame.title='Vollständiger Beitragsentwurf';frame.setAttribute('sandbox','');frame.className='review-text';frame.srcdoc=r.html_document?r.html:'<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>body{font:17px/1.7 system-ui;color:#173c36;margin:12px;overflow-wrap:anywhere}a{color:inherit}img{max-width:100%}</style><body>'+r.html+'</body></html>';mount.append(frame);
+ const frame=element('iframe');frame.title='Vollständiger Beitragsentwurf';frame.setAttribute('sandbox','');frame.className='review-text';frame.srcdoc=r.html_document?r.html:'<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://wirkungsoekonomie.de/assets/css/news.css?v=20260924-erklargrafiken"><style>body{font:17px/1.7 system-ui;color:#173c36;margin:12px;overflow-wrap:anywhere}a{color:inherit}img{max-width:100%}</style><body>'+enhancePrivateEditorialHtml(r.html)+'</body></html>';mount.append(frame);
  const sourceList=element('ul');for(const source of p.sources){const li=element('li'),link=element('a',`${source.publisher}: ${source.title}`);link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';li.append(link);sourceList.append(li);}mount.append(element('h3','Quellen'),sourceList);
  for(const feedback of r.comments||[])mount.append(element('blockquote',feedback.comment));
  if(['AWAITING_FINAL_APPROVAL','APPROVED_FOR_PUBLICATION','HOLD','NEEDS_REVIEW'].includes(r.status)){
