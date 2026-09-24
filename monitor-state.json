@@ -13,20 +13,25 @@
       "firstSeen": "2026-09-22T16:20:47.664Z",
       "active": true
     },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-09-24T09:08:16.228Z",
-      "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-24T09:50:40.154Z",
-      "active": true
-    },
-    "lage": {
-      "firstSeen": "2026-09-24T11:05:49.775Z",
-      "active": true
+    "editorial-coverage": {
+      "firstSeen": "2026-09-24T12:50:39.155Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "196afdab121f9ab39336f701",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-24T12:50:39.155Z"
+    },
+    {
+      "id": "4dc5d65c536bc80bafae0fdc",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-09-24T12:50:39.155Z"
+    },
+    {
+      "id": "7e1f4d8ebf1c516b78a8699c",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Lage\nPrüfung: 2026-09-24T12:50:39.155Z"
+    }
+  ],
   "dailyDate": "2026-09-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2026,11 +2031,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ki-und-ukraine-krieg-openai-nimmt-ukraine-in-ki-cyberabwehr-programm-auf-1fb67a/": {
         "first_seen_at": "2026-09-24T12:35:38.309Z",
         "source_at": "2026-09-24T07:27:58.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schusse-boller-benzin-polizei-ermittelt-nach-zwei-vorfallen-in-heidenheim-91d35f/": {
+        "first_seen_at": "2026-09-24T12:50:39.155Z",
+        "source_at": "2026-09-24T11:43:40.000Z"
       }
     },
-    "last_new_at": "2026-09-24T12:35:38.309Z",
-    "checked_at": "2026-09-24T12:35:38.309Z",
-    "last_current_new_at": "2026-09-24T12:35:38.309Z"
+    "last_new_at": "2026-09-24T12:50:39.155Z",
+    "checked_at": "2026-09-24T12:50:39.155Z",
+    "last_current_new_at": "2026-09-24T12:50:39.155Z"
   },
   "recovery_attempts": [
     {
