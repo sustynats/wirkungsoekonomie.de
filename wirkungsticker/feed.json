@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-24T07:44:31.230Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-24T07:56:48.445Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -234,6 +234,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/12-uhr-regel-beim-tanken-warum-die-spritpreise-trotzdem-gestiegen-sind-68b837/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/12-uhr-regel-beim-tanken-warum-die-spritpreise-trotzdem-gestiegen-sind-68b837/",
+      "title": "Laut MDR: 12-Uhr-Regel senkt Spritpreise offenbar nicht",
+      "summary": "Laut MDR hat die 12-Uhr-Regel die Spritpreise offenbar nicht gesenkt. Berichtete Preisabstände und Studienbefunde zeigen mögliche Belastungen für Autofahrer, lassen aber wegen der einseitigen Quellenlage Fragen offen.",
+      "date_published": "2026-09-24T03:00:01.000Z",
+      "date_modified": "2026-09-24T03:00:01.000Z",
+      "_woek_released_at": "2026-09-24T08:01:20.086Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
