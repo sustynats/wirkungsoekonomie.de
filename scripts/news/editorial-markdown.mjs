@@ -1,4 +1,5 @@
 import { PROCESS_NOTE_PATTERN } from './reader-copy.mjs';
+import { renderArrowDiagram, renderTableDiagram, renderTextDiagram, labeledArrowItem, renderLabeledArrowDiagram } from './editorial-diagrams.mjs';
 // Deliberately small, deterministic editorial Markdown subset. No HTML, scripts,
 // images or embedded instructions execute. Unsupported blocks fail closed.
 // Uses the site's existing table-wrap/data-table and text-link conventions.
@@ -87,15 +88,31 @@ export function assertWithoutProcessNotes(markdown) {
   if (treffer.length) throw Object.assign(Error('EDITORIAL_PROCESS_NOTE_IN_TEXT'), { detail: treffer.join(' | ') });
 }
 
-export function renderEditorialMarkdown(markdown) {
+export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [] } = {}) {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const sections = [], headings = [], blocks = [];
-  let current = { id: "einstieg", title: "", blocks: [] };
+  let current = { id: "einstieg", title: "", blocks: [] }, tableIndex = 0;
+  const renderedSectionDiagrams = new Set();
   const add = html => { current.blocks.push(html); blocks.push(html); };
-  const endSection = () => { sections.push({ ...current, html: current.blocks.join("\n") }); };
+  const endSection = () => {
+    for (const diagram of sectionDiagrams.filter(d => d.sectionId ? d.sectionId === current.id : d.section === current.title)) {
+      if (diagram.items.some(item => !markdown.includes(item))) throw Error('EDITORIAL_DIAGRAM_EXCERPT_CHANGED');
+      add(renderTextDiagram(diagram, inlineEditorialMarkdown));
+      renderedSectionDiagrams.add(diagram);
+    }
+    sections.push({ ...current, html: current.blocks.join("\n") });
+  };
   for (let i = 0; i < lines.length;) {
     const line = lines[i];
     if (!line.trim()) { i++; continue; }
+    if (labeledArrowItem(lines.slice(i,i+2).join('\n'))) {
+      const items = []; let cursor = i;
+      while (labeledArrowItem(lines.slice(cursor,cursor+2).join('\n'))) {
+        items.push(lines.slice(cursor,cursor+2).join('\n')); cursor += 2;
+        while (cursor < lines.length && !lines[cursor].trim()) cursor++;
+      }
+      if (items.length >= 3 && items.length <= 9) { add(renderLabeledArrowDiagram(items, inlineEditorialMarkdown)); i = cursor; continue; }
+    }
     if (/^\s*(?:<|!\[|```|~~~|\[.+\]:)/.test(line) || /^ {4}\S/.test(line)) throw new Error("EDITORIAL_MARKDOWN_UNSUPPORTED_BLOCK");
     const heading = /^(#{2,6}) (.+)$/.exec(line);
     if (heading) {
@@ -104,8 +121,9 @@ export function renderEditorialMarkdown(markdown) {
       let id = baseId, n = 2;
       while (headings.some(h => h.id === id)) id = `${baseId}-${n++}`;
       headings.push({ id, level, title });
-      if (level === 2) { endSection(); current = { id, title, blocks: [] }; }
-      add(`<h${level}${level !== 2 ? ` id="${id}"` : ""}>${inlineEditorialMarkdown(title)}</h${level}>`);
+      const appendix = level === 3 && /^(?:Wirkungskaskade für die Visualisierung|Quellen und Dokumente)$/.test(title);
+      if (level === 2 || appendix) { endSection(); current = { id, title, blocks: [] }; }
+      add(`<h${level}${level !== 2 && !appendix ? ` id="${id}"` : ""}>${inlineEditorialMarkdown(title)}</h${level}>`);
       i++; continue;
     }
     if (/^# /.test(line)) throw new Error("EDITORIAL_MARKDOWN_DUPLICATE_TITLE");
@@ -113,12 +131,14 @@ export function renderEditorialMarkdown(markdown) {
     if (/^>/.test(line)) {
       const quoted = [];
       while (i < lines.length && /^>/.test(lines[i])) quoted.push(lines[i++].replace(/^> ?/, ""));
-      add(`<blockquote>${renderEditorialMarkdown(quoted.join("\n")).html}</blockquote>`); continue;
+      add(renderArrowDiagram(quoted.join("\n"), inlineEditorialMarkdown) || `<blockquote>${renderEditorialMarkdown(quoted.join("\n")).html}</blockquote>`); continue;
     }
     if (/^\|/.test(line)) {
       const rows = [];
       while (i < lines.length && /^\|/.test(lines[i])) rows.push(lines[i++].trim().replace(/^\||\|$/g, "").split("|").map(c => c.trim()));
       if (rows.length < 3 || rows[1].some(c => !/^:?-+:?$/.test(c)) || rows.some(r => r.length !== rows[0].length)) throw new Error("EDITORIAL_MARKDOWN_TABLE_INVALID");
+      const diagram = tableDiagrams[tableIndex++];
+      if (diagram) { add(renderTableDiagram(rows, diagram, inlineEditorialMarkdown)); continue; }
       add(`<div class="table-wrap news-manual-table${rows[0].length > 2 ? " news-manual-table--wide" : ""}" role="region" aria-label="Wirkungsketten: Tabelle horizontal scrollbar" tabindex="0"><table class="data-table"><thead><tr>${rows[0].map(c => `<th scope="col">${inlineEditorialMarkdown(c)}</th>`).join("")}</tr></thead><tbody>${rows.slice(2).map(r => `<tr>${r.map(c => `<td>${inlineEditorialMarkdown(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`); continue;
     }
     if (/^- /.test(line)) {
@@ -128,9 +148,18 @@ export function renderEditorialMarkdown(markdown) {
     }
     const paragraph = [];
     while (i < lines.length && lines[i].trim() && !/^(?:#{1,6} |>|\||- |---\s*$)/.test(lines[i])) paragraph.push(lines[i++]);
-    add(`<p>${paragraph.map(l => inlineEditorialMarkdown(l.replace(/ {2}$/, "")) + (l.endsWith("  ") ? "<br>" : "")).join("\n")}</p>`);
+    // Authors sometimes separate individual arrow steps by blank lines. Join
+    // only explicit continuations; do not turn ordinary paragraphs into paths.
+    let next = i;
+    while (next < lines.length) {
+      while (next < lines.length && !lines[next].trim()) next++;
+      if (!/^→\s+/.test(lines[next] || '')) break;
+      paragraph.push(lines[next++]); i = next;
+    }
+    add(renderArrowDiagram(paragraph.join("\n"), inlineEditorialMarkdown) || `<p>${paragraph.map(l => inlineEditorialMarkdown(l.replace(/ {2}$/, "")) + (l.endsWith("  ") ? "<br>" : "")).join("\n")}</p>`);
   }
   endSection();
+  if (renderedSectionDiagrams.size !== sectionDiagrams.length) throw Error('EDITORIAL_DIAGRAM_SECTION_NOT_FOUND');
   return { html: blocks.join("\n"), sections: sections.filter(s => s.html), headings };
 }
 

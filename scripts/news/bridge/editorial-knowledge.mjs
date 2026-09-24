@@ -1,4 +1,5 @@
 import { EDITORIAL_EVIDENCE_RULE } from '../editorial-evidence.mjs';
+import { EDITORIAL_VISUAL_RULE } from '../editorial-diagrams.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { hash } from './contract.mjs';
@@ -7,7 +8,7 @@ import { IMPACT_RULE } from '../impact-assessment.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { sourceAccess } from '../access-policy.mjs';
 
-export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-18-ohne-entstehung';
+export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-24-erklaerende-visuals';
 export function editorialKnowledge(root) {
   const sources = ['AGENTS.md', 'docs/news/IMPACT-SEMANTICS-2.1.md',
     'source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md'];
@@ -36,7 +37,8 @@ export function editorialKnowledge(root) {
     // 18.09.2026: ein Entwurf begann mit "Vier von Natalie bereitgestellte Screenshots ..." unter der Zeile "privater Entwurf zur finalen Freigabe".
     'Der Beitrag spricht nie über seine Entstehung: kein Hinweis auf Auftrag, Rechercheauftrag, Anhänge, Screenshots oder anderes eingereichtes Material, auf Natalie als Auftraggeberin oder Lieferantin von Material, auf Entwurf, Fassung oder Freigabe. Eingereichtes Material ist Anlass und Hinweis, kein Beleg; der Text beginnt bei der Sache und belegt sie mit Quellen, die du selbst gelesen hast.',
     'Meinung & Analyse, Buch & Wirkung, Nachgehört und Nachgesehen erscheinen erst nach der abschließenden Freigabe der Herausgeberin. Dieser Vorbehalt ist ein Verfahrensvermerk und darf im Text nicht vorkommen. Die letzte Hauptsektion heißt Meine Einordnung. Quellen und formale Werkmetadaten dürfen folgen.',
-    'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen. Eine passende Tabelle oder ein erklärendes Diagramm nutzen, wenn es hilft. Keine dekorativen Diagramme oder erfundenen Zahlen.',
+    'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen.',
+    EDITORIAL_VISUAL_RULE,
     'Originalveröffentlichungsdaten bewahren. Maßnahme, Potenzial, erste Signale und beobachtete Folgen getrennt. Ein belegter Schaden allein beweist keine Klimaattribution.',
     'Alle drei MPD-Dimensionen bleiben sichtbar. Nur ausreichend begründete Pfade erhalten Tragweite 0..5. Nach gezielter Recherche darf eine Dimension ausdrücklich offen und ohne numerischen Wert bleiben. Fehlende Daten sind weder neutral noch Stufe 0; keine Pflichtpfade erfinden. Richtung, Stärke, Plausibilität und Evidenz bleiben getrennt.',
     'R/I/D/U/V/S am konkreten Pfad begründen. Durchschnitt und Schutzminimum getrennt; Nichtkompensation und Reverse Merit Order. Keine künstliche positive Gegenwirkung. Ein kleiner Nebenpfad macht einen klaren Hauptpfad nicht gegenläufig.',
@@ -52,7 +54,16 @@ export function editorialKnowledge(root) {
   const previousRules = rules.replace(
     'Reguläre News: ausschließlich das im Auftrag verlangte native Analyseformat liefern. Den Bridge-Umschlag erstellt die Software; ihn nicht zusätzlich erzeugen.',
     'Reguläre News: native Analyse und vollständigen Bridge-Umschlag liefern.');
-  const compatibleHashes = [hash({ ...manifest, version: '2026-09-13-1', rules_hash: hash(previousRules) }),
+  const beforeVisualRules = rules.replace(
+    'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen.\n\n' + EDITORIAL_VISUAL_RULE,
+    'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen. Eine passende Tabelle oder ein erklärendes Diagramm nutzen, wenn es hilft. Keine dekorativen Diagramme oder erfundenen Zahlen.');
+  const compatibleHashes = [
+    // Exact manifest before the visual rule and its AGENTS.md addition.
+    '764c22e2f650899a365effef00de5c4e6af945a662c2840fdabf8ece0f4a3795',
+    // Reuse already paid answers against current validation; no regenerated
+    // articles or publication exception just because presentation changed.
+    hash({...manifest,version:'2026-09-18-ohne-entstehung',rules_hash:hash(beforeVisualRules)}),
+    hash({ ...manifest, version: '2026-09-13-1', rules_hash: hash(previousRules) }),
     // Exact preceding production manifests, recorded before the 14 September
     // correction. Recover already paid responses only; packet identity and all
     // CURRENT validation/publication gates still apply in api-processor.mjs.
