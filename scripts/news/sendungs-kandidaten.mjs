@@ -12,6 +12,7 @@ import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { decodeXml } from './lib.mjs';
 import { transcribeEpisode, fetchSubtitleTranscript } from './sendungs-transkript.mjs';
+import { episodeUrlKey, parseYouTubeFeed, inspectYouTubeEpisode, fetchYouTubeTranscript, matchingPodcastEpisode } from './youtube-episodes.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const EPISODE_VERSION = 'sendungs-kandidaten-1';
@@ -92,13 +93,16 @@ export const ownEpisodeRequest = (job) => job?.intake?.trigger_type === 'automat
 // Ein Vermerk je Folge, nicht je Zeile der Mediathek.
 export const observationKey = (show, episode) => `github-episode:${show.id}:${hash(episode.key || episode.guid).slice(0, 32)}`;
 export const pageObservationKey = (episode) => /^https?:\/\//.test(episode?.page || '')
-  ? `github-episode-page:${hash(episode.page.replace(/[?#].*$/, '').replace(/\/$/, '')).slice(0, 32)}`
+  ? `github-episode-page:${hash(episodeUrlKey(episode.page)).slice(0, 32)}`
   : null;
 
 export function knownEpisodeUrls({ editions = [], requests = [] } = {}) {
   const urls = new Set();
-  const add = (u) => { if (typeof u === 'string' && /^https?:\/\//.test(u)) urls.add(u.replace(/[?#].*$/, '').replace(/\/$/, '')); };
-  for (const e of editions) for (const src of [...(e.sources || []), ...(e.source_snapshot || [])]) add(typeof src === 'string' ? src : src?.url);
+  const add = (u) => { if (typeof u === 'string' && /^https?:\/\//.test(u)) urls.add(episodeUrlKey(u)); };
+  for (const e of editions) {
+    add(e.source_media?.original_url);
+    for (const src of [...(e.sources || []), ...(e.source_snapshot || [])]) add(typeof src === 'string' ? src : src?.url);
+  }
   for (const r of requests) for (const u of r?.input?.request?.links || r?.request?.links || []) add(u);
   return urls;
 }
@@ -193,9 +197,13 @@ export function buildEpisodeRequest(episode, show, { owner, now, transcript = nu
   const brief = [`${label}: ${show.show_name} – „${episode.title}“ vom ${germanDate(episode.published_at)}.`,
     episode.summary ? `Beschreibung laut Anbieter: ${episode.summary}` : null,
     episode.duration ? `Dauer: ${germanDuration(episode.duration)}.` : null,
+    episode.podcast_basis ? `Wortlautbasis bei Podcast-Transkript oder eigener Audioabschrift: die zugeordnete offizielle Podcastfassung derselben Folge (${episode.podcast_basis}). Zeitmarken gelten dann für die Podcastfassung, nicht ungeprüft für das Video. Visuelle Beobachtungen nicht aus der Tonspur erfinden.` : null,
+    show.editorial_context ? `Quellenkontext: ${show.editorial_context}` : null,
     transcript ? `${({
       accessibility_subtitles: `Die amtlichen Untertitel der Sendung (Barrierefreiheit des Senders, ${transcript.segments || 0} Abschnitte mit Zeitmarken${transcript.truncated ? ', gekürzt' : ''}) liegen dem Auftrag unter origin.transcript bei. Sie sind die verbindliche Wortlautgrundlage; Sprecherkürzel wie „FB:“ kennzeichnen die Person. Live-Untertitel können kürzen, deshalb Zitate nur so weit wie belegt.`,
       openai_whisper: `Eine eigene maschinelle Abschrift der Sendung (automatische Spracherkennung, ${transcript.segments || 0} Abschnitte mit Zeitmarken${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei. Sie ist keine amtliche Mitschrift: Hörfehler bei Namen und Zahlen einkalkulieren und nur belegbare Aussagen zuschreiben.`,
+      youtube_auto_captions: 'Die automatisch erzeugten YouTube-Untertitel liegen unter origin.transcript bei. Keine amtliche Mitschrift; Namen, Zahlen und Sprecherzuordnung prüfen, ungesicherte wörtliche Zitate vermeiden.',
+      youtube_publisher_captions: 'Die im Originalvideo angebotenen deutschen Untertitel liegen unter origin.transcript bei. Sie sind keine amtliche Mitschrift; Wortlaut und Sprecherzuordnung sorgfältig prüfen.',
     }[transcript.origin] || `Das offizielle Transkript des Anbieters (${transcript.type}${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei.`)} Zeitmarken daraus verwenden.` : 'Ein Transkript liegt nicht bei; Sendungsseite, Begleittext und Presseberichte zur Folge sind die Grundlage.',
     retry ? 'Erneuter Auftrag: Der erste Versuch lief ohne Wortlaut in eine Rückfrage; jetzt liegt er bei.' : null,
     `Auftrag: ${label}-Beitrag nach Redaktionsvertrag. Kontext, Originalargument fair und mit Zeitmarken, Quellenprüfung, Wirkungspotenzial für Mensch, Planet und Demokratie, zuletzt „Meine Einordnung“: Gewichtung der belegten Befunde nach der wirkungsökonomischen Methodik, keine Rückfrage und keine Anrede an die Redaktion im Text. Reicht die Grundlage nicht, HOLD mit konkretem Bedarf. Vorschlag des Redaktionsworkers aus dem Sendungsfeed (${show.provider}).`]
@@ -299,9 +307,27 @@ export async function fetchMediathekEpisodes(show, fetchImpl = fetch, timeoutMs 
     return mediathekEpisodes(data?.result?.results, show);
   } finally { clearTimeout(timer); }
 }
-export const showEpisodes = async (show, fetchImpl = fetch) => show.mediathek
-  ? fetchMediathekEpisodes(show, fetchImpl)
-  : parseEpisodes(await fetchShowFeed(show, fetchImpl), show);
+export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toISOString()) {
+  if (show.mediathek) return fetchMediathekEpisodes(show, fetchImpl);
+  const xml = await fetchShowFeed(show, fetchImpl);
+  if (!show.youtube_channel_id) return parseEpisodes(xml, show);
+  const candidates = selectNewEpisodes(parseYouTubeFeed(xml, show), now, { maxAgeDays: show.max_age_days || 14, limit: 15 });
+  let podcast = [];
+  if (show.podcast_feed) {
+    // Auxiliary source failure must not hide otherwise usable video captions.
+    try { podcast = parseEpisodes(await fetchShowFeed({ feed: show.podcast_feed }, fetchImpl), show); } catch { /* captions remain available */ }
+  }
+  const episodes = [];
+  for (const candidate of candidates) {
+    const episode = await inspectYouTubeEpisode(candidate, show, fetchImpl);
+    if (!episode) continue;
+    const match = matchingPodcastEpisode(episode, podcast, show);
+    if (match) Object.assign(episode, { media: match.media, transcripts: match.transcripts, podcast_basis: match.page || show.podcast_feed });
+    episodes.push(episode);
+    if (episodes.length >= 3) break;
+  }
+  return episodes;
+}
 
 export async function fetchShowFeed(show, fetchImpl = fetch, timeoutMs = 20000) {
   const controller = new AbortController();
@@ -343,7 +369,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     // der Wortlaut vorliegt (16.09.: der Lanz vom 15.09. fiel genau so aus der
     // Liste, als die Untertitel kamen und die Mediathek-Kennung wechselte).
     const known = knownEpisodeUrls({ editions, requests: requests.filter((job) => !ownEpisodeRequest(job)) });
-    const seen = (u) => u && known.has(u.replace(/[?#].*$/, '').replace(/\/$/, ''));
+    const seen = (u) => u && known.has(episodeUrlKey(u));
     const ownRequests = requests.filter((job) => !ownEpisodeRequest(job));
     const feedErrors = [], fresh = [], duplicates = [];
     for (const show of shows || loadShows(root)) {
@@ -354,7 +380,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
         // gilt das Fenster ihrer Sendung, sonst waere ihre letzte Folge nie
         // vorgeschlagen worden.
         const showAgeDays = Number(show.max_age_days) > 0 ? Number(show.max_age_days) : maxAgeDays;
-        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays: showAgeDays, limit: 3 });
+        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl, now), now, { maxAgeDays: showAgeDays, limit: 3 });
         for (const episode of episodes) {
           // Die Kennung der Mediathek wechselt, sobald die untertitelte Fassung
           // gewinnt. Der Vermerk haengt deshalb an der Folge selbst (Titel ohne
@@ -388,10 +414,13 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const proposed = [];
     const transcriptDay = (await store.observation(`github-transcript-day:${day}`)) || { day, transcribed: 0, cost_usd: 0 };
     const transcriptErrors = [], waiting = [];
-    for (const { episode, show, retry } of fresh.slice(0, Math.max(0, Math.min(limit, maxPerDay - counter.proposed)))) {
+    const runLimit = Math.max(0, Math.min(limit, maxPerDay - counter.proposed));
+    for (const { episode, show, retry } of fresh.slice(0, runLimit ? Math.max(12, runLimit) : 0)) {
+      if (proposed.length >= runLimit) break;
       // Reihenfolge des Wortlauts: offizielles Podcast-Transkript, dann die
       // amtlichen Untertitel für Hörgeschädigte, zuletzt eigene Spracherkennung.
-      let transcript = await fetchTranscript(pickTranscript(episode.transcripts), fetchImpl);
+      let transcript = await fetchYouTubeTranscript(episode, fetchImpl);
+      if (!transcript) transcript = await fetchTranscript(pickTranscript(episode.transcripts), fetchImpl);
       if (!transcript) transcript = await fetchSubtitleTranscript(episode.subtitle_url, fetchImpl);
       // Untertitel erscheinen einige Stunden nach der Sendung. Solange das
       // Wartefenster läuft, bleibt die Folge liegen statt ohne Wortlaut in eine
@@ -402,7 +431,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       const deadline = transcriptDeadline(episode.published_at, show.transcript_deadline);
       const waitingForSubtitles = deadline ? Date.parse(now) < Date.parse(deadline) : ageHours < subtitleWaitHours;
       if (!transcript && waitingForSubtitles) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry), ...(deadline ? { deadline } : {}) }); continue; }
-      if (!transcript && transcribe && transcriptDay.transcribed < maxTranscriptsPerDay) {
+      if (!transcript && transcribe && show.allow_paid_transcription !== false && transcriptDay.transcribed < maxTranscriptsPerDay) {
         try {
           const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });
           if (machine) {
@@ -417,7 +446,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       // wenn auch die fehlt, wartet ein Wiederholungsversuch weiter: ein
       // zweiter Auftrag ohne Wortlaut würde genauso in eine Rückfrage laufen
       // wie der erste.
-      if (!transcript && retry) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: true, reason: 'ohne Wortlaut' }); continue; }
+      if (!transcript && (retry || show.require_transcript)) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry), reason: 'ohne Wortlaut' }); continue; }
       const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript, retry });
       const key = observationKey(show, episode);
       const pageKey = pageObservationKey(episode);
