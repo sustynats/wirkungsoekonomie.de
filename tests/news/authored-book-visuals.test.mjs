@@ -23,7 +23,8 @@ for(const slug of newSlugs) test(slug+': intact text, cover, safety, metadata an
   assert.equal((html.match(/data-authored-visual=/g)||[]).length,1);
   assert.doesNotMatch(html,/news-editorial-diagram/, 'Only the authored visual is rendered; rejected arrow examples remain prose.');
   assert.doesNotMatch(html,/WÖK_VISUAL|&lt;!--|\/undefined\//);
-  assert.match(html,/aria-describedby="visual-[^"]+-note"/);
+  assert.match(html,/aria-describedby="visual-[^"]+-note visual-[^"]+-label"/);
+  for (const label of Object.values(manifest.entries.find(e=>e.slug===slug).visual_labels)) assert.ok(html.includes(label));
   assert.match(html,/Methodischer Hinweis/);assert.match(html,/vollständiger digitaler Buchtext lag der Redaktion nicht vor/);
   assert.match(html,/property="og:type" content="article"/);
   assert.match(html,/"@type":"Book"/);assert.match(html,/data-news-share-button/);

@@ -69,6 +69,9 @@ boolesche Werte; fehlerhafte oder doppelte Marker sperren den Build.
 Titel, Beschriftungen und methodische Hinweise stammen unverändert aus dem
 Manuskript. Sichtbare Modellhinweise, Listen und ARIA-Verknüpfungen bleiben
 auch ohne JavaScript zugänglich. Keine Chart-Library, keine Zahlenableitung.
+Zusätzliche, ausdrücklich beauftragte Pflichtlabels stehen unter `visual_labels`
+im manuellen Manifest. Sie ergänzen die Darstellung, ohne die Originalhinweise
+oder den Manuskripttext zu ersetzen; sie werden ebenfalls als Text ausgegeben.
 Bei einem Manuskript mit expliziten Markern werden andere Pfeilfolgen NICHT
 zusätzlich automatisch als Diagramm interpretiert: Sie können beispielsweise
 ein ausdrücklich zurückgewiesenes Erklärungsmodell zitieren.

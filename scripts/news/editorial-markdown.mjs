@@ -89,7 +89,7 @@ export function assertWithoutProcessNotes(markdown) {
   if (treffer.length) throw Object.assign(Error('EDITORIAL_PROCESS_NOTE_IN_TEXT'), { detail: treffer.join(' | ') });
 }
 
-export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [], automaticArrowDiagrams = !markdown.includes('<!-- WÖK_VISUAL') } = {}) {
+export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [], authoredVisualLabels = {}, automaticArrowDiagrams = !markdown.includes('<!-- WÖK_VISUAL') } = {}) {
   // Authored markers define the visual scope. Other arrows may be a rejected
   // example, not an endorsed causal model; preserve them as ordinary prose.
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
@@ -115,7 +115,7 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
       const visual = parseAuthoredVisual(lines.slice(i, end + 1).join('\n'));
       if (authoredVisualIds.has(visual.id)) throw Error('EDITORIAL_VISUAL_DUPLICATE_ID');
       authoredVisualIds.add(visual.id);
-      add(renderAuthoredVisual(visual)); i = end + 1; continue;
+      add(renderAuthoredVisual(visual, { label: Object.hasOwn(authoredVisualLabels, visual.id) ? authoredVisualLabels[visual.id] : undefined })); i = end + 1; continue;
     }
     if (automaticArrowDiagrams && labeledArrowItem(lines.slice(i,i+2).join('\n'))) {
       const items = []; let cursor = i;

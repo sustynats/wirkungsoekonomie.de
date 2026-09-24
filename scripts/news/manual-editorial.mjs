@@ -64,7 +64,7 @@ export function manualEdition(record, source, { root } = {}) {
     if (!articleBody.startsWith(block + '\n')) fail("MANUAL_MASTHEAD_MISMATCH");
     articleBody = articleBody.slice(block.length).trimStart();
   }
-  const rendered = renderEditorialMarkdown(articleBody);
+  const rendered = renderEditorialMarkdown(articleBody, { authoredVisualLabels: record.visual_labels || {} });
   const bookSection = rendered.sections.find(s => s.title === "Das Buch");
   if (!bookSection || !rendered.sections.some(s => s.title === "Meine Einordnung")) fail("MANUAL_BOOK_SECTIONS_REQUIRED");
   const cover = record.book_cover;

@@ -27,7 +27,8 @@ export function parseAuthoredVisual(block) {
     || shape.booleans.some(k => typeof data[k] !== 'boolean')) throw Error('EDITORIAL_VISUAL_INVALID');
   return data;
 }
-export function renderAuthoredVisual(v) {
+export function renderAuthoredVisual(v, { label } = {}) {
+  if (label !== undefined && (typeof label !== 'string' || !label.trim() || label.length > 900)) throw Error('EDITORIAL_VISUAL_LABEL_INVALID');
   const chips = values => `<ul class="news-authored-visual__chips">${values.map(s => `<li>${esc(s)}</li>`).join('')}</ul>`;
   const chain = values => `<ol class="news-authored-visual__chain">${values.map(s => `<li>${esc(s)}</li>`).join('')}</ol>`;
   let body;
@@ -38,5 +39,6 @@ export function renderAuthoredVisual(v) {
   } else {
     body = `<div class="news-authored-visual__ring"><h4>Schutzring</h4><div class="news-authored-visual__center">${esc(v.center)}</div><p class="news-authored-visual__connector" aria-hidden="true">↓</p><h4>Abhängige Bereiche</h4>${chips(v.dependencies)}<div class="news-authored-visual__counter"><h4>Schutz- und Rückfallebenen</h4>${chips(v.protection_ring)}</div></div>`;
   }
-  return `<figure class="news-systemic-visual news-authored-visual news-authored-visual--${esc(v.type)}" id="visual-${esc(v.id)}" data-editorial-explanatory-visual data-authored-visual="${esc(v.type)}" aria-labelledby="visual-${esc(v.id)}-title" aria-describedby="visual-${esc(v.id)}-note"><figcaption id="visual-${esc(v.id)}-title">${esc(v.title)}</figcaption><p class="news-method-note">${esc(v.subtitle)}</p>${body}<p class="news-method-note" id="visual-${esc(v.id)}-note">${esc(v.note)}</p></figure>`;
+  const notice = label ? `<p class="news-method-note" id="visual-${esc(v.id)}-label">${esc(label)}</p>` : '';
+  return `<figure class="news-systemic-visual news-authored-visual news-authored-visual--${esc(v.type)}" id="visual-${esc(v.id)}" data-editorial-explanatory-visual data-authored-visual="${esc(v.type)}" aria-labelledby="visual-${esc(v.id)}-title" aria-describedby="visual-${esc(v.id)}-note${label ? ` visual-${esc(v.id)}-label` : ''}"><figcaption id="visual-${esc(v.id)}-title">${esc(v.title)}</figcaption><p class="news-method-note">${esc(v.subtitle)}</p>${body}<p class="news-method-note" id="visual-${esc(v.id)}-note">${esc(v.note)}</p>${notice}</figure>`;
 }
