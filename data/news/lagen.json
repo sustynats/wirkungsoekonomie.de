@@ -1,7 +1,104 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T04:00:00.000Z",
+  "updated_at": "2026-09-24T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-24-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-24",
+      "window_from": "2026-09-24T04:00:00.000Z",
+      "window_to": "2026-09-24T10:00:00.000Z",
+      "stand": "2026-09-24T10:00:00.000Z",
+      "headline": "Das sind die 10 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 10,
+        "neu": 9,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-cd0cce26811fb67a",
+          "slug": "ki-und-ukraine-krieg-openai-nimmt-ukraine-in-ki-cyberabwehr-programm-auf-1fb67a",
+          "title": "OpenAI nimmt Ukraine in KI-Cyberabwehr-Programm auf",
+          "state": "neu",
+          "at": "2026-09-24T08:58:28.496Z",
+          "score": 5.8291
+        },
+        {
+          "story_id": "wt-a0356c8a65461c80",
+          "slug": "bertelsmann-konzern-ubernimmt-brasilianischen-hochschulbetreiber-yduqs-461c80",
+          "title": "Bertelsmann übernimmt laut manager magazin den brasilianischen Hochschulbetreiber YDUQS",
+          "state": "neu",
+          "at": "2026-09-24T08:44:38.131Z",
+          "score": 5.7907
+        },
+        {
+          "story_id": "wt-38a953140068b837",
+          "slug": "12-uhr-regel-beim-tanken-warum-die-spritpreise-trotzdem-gestiegen-sind-68b837",
+          "title": "Laut MDR: 12-Uhr-Regel senkt Spritpreise offenbar nicht",
+          "state": "neu",
+          "at": "2026-09-24T08:01:20.086Z",
+          "score": 5.6704
+        },
+        {
+          "story_id": "wt-8a5c95679e807bb4",
+          "slug": "usa-und-china-verlangern-waffenstillstand-im-zollkrieg-807bb4",
+          "title": "USA und China verlängern Waffenstillstand im Zollkrieg",
+          "state": "neu",
+          "at": "2026-09-24T07:47:30.009Z",
+          "score": 5.6319
+        },
+        {
+          "story_id": "wt-8d869847ff46516f",
+          "slug": "wie-weiter-nach-der-wahl-cdu-lehnt-spd-einladung-in-sachsen-anhalt-ab-46516f",
+          "title": "Laut Berichten: CDU lehnt SPD-Einladung in Sachsen-Anhalt ab",
+          "state": "neu",
+          "at": "2026-09-24T07:35:34.545Z",
+          "score": 5.5988
+        },
+        {
+          "story_id": "wt-da24932b21c92549",
+          "slug": "das-ist-der-falsche-weg-ozdemir-warnt-grune-vor-koalition-mit-der-linken-in-berlin-und-l-c92549",
+          "title": "Laut Tagesspiegel warnt Özdemir Grüne vor Koalition mit der Linken und lehnt Enteignungen ab",
+          "state": "neu",
+          "at": "2026-09-24T06:47:53.782Z",
+          "score": 5.4664
+        },
+        {
+          "story_id": "wt-0c07697cb5507979",
+          "slug": "haus-eingesturzt-feuerwehr-sucht-mit-drohne-nach-menschen-507979",
+          "title": "Laut MDR: Haus in Altenburg eingestürzt, 13 Menschen evakuiert",
+          "state": "neu",
+          "at": "2026-09-24T06:36:07.833Z",
+          "score": 9.4337
+        },
+        {
+          "story_id": "wt-f1149c6c95362c05",
+          "slug": "weltkriegsbombe-in-braunsbedra-gefunden-evakuierung-lauft-362c05",
+          "title": "Laut MDR: Evakuierung um Weltkriegsbombe in Braunsbedra läuft",
+          "state": "neu",
+          "at": "2026-09-24T06:25:36.101Z",
+          "score": 3.4044
+        },
+        {
+          "story_id": "wt-9a361ca3ef70636f",
+          "slug": "fluge-zeitweise-gestoppt-drohnenalarm-am-flughafen-berlin-hintergrunde-bleiben-unklar-70636f",
+          "title": "Drohnenalarm stoppt BER-Flugbetrieb vorübergehend – Hintergründe bleiben unklar",
+          "state": "neu",
+          "at": "2026-09-24T05:27:45.883Z",
+          "score": 5.2438
+        },
+        {
+          "story_id": "wt-e96883120bffa0d1",
+          "slug": "flughafen-ber-was-steckt-hinter-der-drohnen-sichtung-am-flughafen-ber-ffa0d1",
+          "title": "Drohnen-Alarm unterbricht BER-Betrieb – viele Fragen bleiben offen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-24T05:15:03.585Z",
+          "score": 2.9585
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-24-morgenlage",
       "slot": "morgenlage",
