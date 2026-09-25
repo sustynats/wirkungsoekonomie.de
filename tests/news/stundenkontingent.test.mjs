@@ -43,7 +43,7 @@ test('der Vermerk waechst nicht und verliert nichts, was noch zaehlt', () => {
 // Beide Spuren lesen dieselben zwei Zahlen. Verdrahtet heisst: die
 // Redaktionsspur deckelt ihr Laufbudget damit und vermerkt jeden Entwurf, die
 // Nachrichtenspur zieht die Entwürfe von ihren Plätzen ab.
-test('beide Spuren rechnen auf dasselbe Kontingent', async () => {
+test('beide Spuren rechnen unabhängig; Kostenbelege bleiben erhalten', async () => {
   const fs = await import('node:fs');
   const worker = fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8');
   const ticker = fs.readFileSync('scripts/news/run.mjs', 'utf8');
@@ -51,9 +51,10 @@ test('beide Spuren rechnen auf dasselbe Kontingent', async () => {
   assert.match(worker, /hourUsage = noteEditorialDraft\(hourUsage, now\(\)\)/, 'und vermerkt jeden bezahlten Entwurf');
   assert.match(worker, /store\.observe\(EDITORIAL_HOUR_KEY, hourUsage\)/, 'im gemeinsamen Vermerk');
   assert.match(worker, /status: 'hourly_quota_reached'/, 'ein voller Stundenplatz ist ein Ergebnis, kein Fehler');
-  assert.match(ticker, /editorialDraftsInWindow\(await bridge\.store\.observation\(EDITORIAL_HOUR_KEY\), now\)/, 'die Nachrichtenspur liest den Vermerk');
-  assert.match(ticker, /sharedHourlyRoom\(\{ configured: configuredStoriesPerHour, tickerStories: aiStoriesInLastHour, editorialDrafts: editorialDraftsInLastHour/, 'und zieht sie ab');
-  assert.match(ticker, /report\.editorial_drafts_in_last_hour = editorialDraftsInLastHour;/, 'der Laufbericht zeigt es');
+  assert.doesNotMatch(ticker, /bridge\.store\.observation\(EDITORIAL_HOUR_KEY\)/, 'keine fremde Quotenabfrage');
+  assert.match(ticker, /independentHourlyRoom\(\{ configured: configuredStoriesPerHour, used: aiStoriesInLastHour/, 'nur Nachrichten zählen');
+  assert.doesNotMatch(worker, /tickerStoriesInWindow|sharedHourlyRoom|configuredHourlyQuota/, 'Nachrichtenauslastung kann Redaktion nicht sperren');
+  assert.match(ticker, /report\.hourly_quota_scope = 'news_only';/);
   assert.match(ticker, /report\.shared_hourly_room = hourlyRoom;/);
 });
 
@@ -106,7 +107,7 @@ test('wartende Redaktionsarbeit bekommt ihren Platz in der Stunde', async () => 
   assert.equal(EDITORIAL_WAITING_KEY, 'editorial-waiting');
 });
 
-test('beide Spuren sind fuer die Reserve verdrahtet', async () => {
+test('Wartestand bleibt sichtbar, reserviert aber keine Nachrichtenplätze', async () => {
   const fs = await import('node:fs');
   const worker = fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8');
   const ticker = fs.readFileSync('scripts/news/run.mjs', 'utf8');
@@ -115,10 +116,8 @@ test('beide Spuren sind fuer die Reserve verdrahtet', async () => {
   assert.ok(vermerk > 0, 'die Redaktionsspur vermerkt ihren Wartestand');
   assert.ok(vermerk < worker.indexOf("status: 'daily_limit'"), 'und zwar vor dem Tageslimit-Abbruch');
   assert.ok(vermerk < worker.indexOf("status: 'hourly_quota_reached'"), 'und vor dem Stundenabbruch');
-  assert.match(ticker, /editorialReserve\(\{ configured: configuredStoriesPerHour, waiting: editorialWaiting/, 'die Nachrichtenspur rechnet die Reserve');
-  assert.match(ticker, /reserve: editorialSlotReserve \}\)/, 'und zieht sie ab');
-  assert.match(ticker, /report\.editorial_waiting = editorialWaiting;/, 'der Laufbericht zeigt beides');
-  assert.match(ticker, /report\.editorial_slot_reserve = editorialSlotReserve;/);
+  assert.doesNotMatch(ticker, /editorialReserve\(/);
+  assert.match(ticker, /report\.editorial_slot_reserve = 0;/);
 });
 
 // Natalie am 17.09.2026: „manuell von mir eingereichte Meinungen und Analyse und
@@ -167,8 +166,17 @@ test('tagsueber das volle Kontingent, nachts das gedrosselte', async () => {
   assert.equal(configuredHourlyQuota({ ...env, WOEK_NEWS_NIGHT_STORIES_PER_HOUR: '99' }, '2026-09-18T01:00:00.000Z'), 6);
 });
 
-test('beide Spuren fragen das Kontingent mit der Uhrzeit ab', async () => {
+test('nur Nachrichten folgen dem Nachrichten-Tag-/Nachtkontingent', async () => {
   const fs = await import('node:fs');
   assert.match(fs.readFileSync('scripts/news/run.mjs', 'utf8'), /configuredHourlyQuota\(process\.env, now\)/, 'die Nachrichtenspur');
-  assert.match(fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8'), /configuredHourlyQuota\(env, now\(\)\)/, 'die Redaktionsspur');
+  assert.match(fs.readFileSync('scripts/news/redaktionsworker.mjs', 'utf8'), /configuredEditorialQuota\(env\)/, 'Redaktion hat ein eigenes Kontingent');
+});
+
+test('das Redaktionskontingent ist begrenzt, aber unabhängig von Nachrichtensperren', async () => {
+  const { configuredEditorialQuota, independentHourlyRoom } = await import('../../scripts/news/stundenkontingent.mjs');
+  assert.equal(configuredEditorialQuota({ WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: '0', WOEK_NEWS_NIGHT_STORIES_PER_HOUR: '0' }), 2);
+  assert.equal(configuredEditorialQuota({ WOEK_EDITORIAL_MAX_JOBS_PER_HOUR: '0' }), 0);
+  assert.equal(configuredEditorialQuota({ WOEK_EDITORIAL_MAX_JOBS_PER_HOUR: 'kaputt' }), 0);
+  assert.equal(independentHourlyRoom({ configured: 2, used: 1 }), 1);
+  assert.equal(independentHourlyRoom({ configured: 2, used: 3 }), 0);
 });

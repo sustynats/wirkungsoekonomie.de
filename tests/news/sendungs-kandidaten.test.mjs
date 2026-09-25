@@ -7,6 +7,21 @@ import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTran
 import { labelledTitle } from '../../scripts/news/build.mjs';
 
 const now = '2026-09-16T06:00:00.000Z';
+
+test('alte Nachrecherche mit Vergleichssendungen blockiert keine neue Lanz- oder Illner-Folge', async () => {
+  const { duplicateRequestFor, originalRequestTime, requestNamesDate } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  const old = { created_at: '2026-09-24T07:07:47Z', input: {
+    job_id: 'wt_20260913T183517Z_' + 'a'.repeat(24), created_at: '2026-09-24T07:07:47Z',
+    request: { brief: 'Hart aber fair vom 07.09.2026 prüfen. Eigenständigen Analysewert gegenüber Lanz-/Illner-Nachbesprechungen prüfen.\n\nNachrecherche am 24.09.2026 abgeschlossen.' } } };
+  assert.equal(originalRequestTime(old), Date.parse('2026-09-13T18:35:17Z'));
+  for (const id of ['markus-lanz', 'maybrit-illner']) {
+    assert.equal(duplicateRequestFor({ title: id + ' vom 24. September 2026', published_at: '2026-09-24T20:15:00Z' }, { id }, [old]), null);
+    const recent = structuredClone(old); recent.input.job_id = 'wt_20260924T070747Z_' + 'b'.repeat(24);
+    assert.equal(duplicateRequestFor({ title: id + ' vom 24. September 2026', published_at: '2026-09-24T20:15:00Z' }, { id }, [recent]), null, 'auch ein neuer Auftrag zu einer anderen Sendung ist kein Treffer');
+  }
+  assert.equal(requestNamesDate('Kennung 124092026 und Datum 24.09.2025', '2026-09-24T12:00:00Z'), false);
+  assert.equal(requestNamesDate('am 24.09.2026', '2026-09-24T12:00:00Z'), true);
+});
 const zdf = `<?xml version="1.0"?><rss><channel><title>maybrit illner (AUDIO)</title>
 <item><title>Die Denkzettelwahl &#8211; was muss sich &#228;ndern?</title><itunes:summary>Mit Armin Laschet und Cem &#214;zdemir.</itunes:summary><link>https://www.zdf.de/video/talk/maybrit-illner-128/illner-100</link><enclosure url="https://podfileszdf-a.akamaihd.net/x.mp3" length="1" type="audio/mpeg"/><guid>https://www.zdf.de/uri/c27c443c</guid><pubDate>Thu, 10 Sep 2026 22:15:00 +0200</pubDate><itunes:duration>3718</itunes:duration></item>
 <item><title>Kurzer Clip</title><link>https://www.zdf.de/video/talk/maybrit-illner-128/clip-100</link><guid>clip</guid><pubDate>Fri, 11 Sep 2026 10:00:00 +0200</pubDate><itunes:duration>00:04:10</itunes:duration></item>
@@ -548,7 +563,7 @@ test('die verfolgten Sendungen decken Natalies Standardlaeufe ab', async () => {
 // „wir". Die Folge war damit für immer blockiert, ohne dass es jemand sah.
 test('ein Jahr oder ein Füllwort macht aus einer neuen Folge keine Dublette', async () => {
   const { duplicateRequestFor } = await import('../../scripts/news/sendungs-kandidaten.mjs');
-  const auftrag = (brief) => [{ input: { job_id: 'wt_20260913T183517Z_8ae19d43fb4d11aa29ec1986', request: { brief } } }];
+  const auftrag = (brief) => [{ input: { job_id: 'wt_20260918T183517Z_8ae19d43fb4d11aa29ec1986', request: { brief } } }];
   const alt = 'Bitte eine Nachbetrachtung zum Markus Lanz vom 12. September 2026 über die Wahl in Sachsen-Anhalt.';
   const neu = { title: 'Markus Lanz vom 17. September 2026 (S2026/E101)', published_at: '2026-09-17T21:15:00.000Z' };
   assert.equal(duplicateRequestFor(neu, { id: 'markus-lanz' }, auftrag(alt)), null, 'nur das Jahr ist kein gemeinsames Thema');
@@ -576,6 +591,6 @@ test('ein Auftrag haelt keine Folge zurueck, die erst lange nach ihm gesendet wu
   assert.ok(duplicateRequestFor(folge('2026-09-13T19:45:00.000Z'), miosga, alt), 'die Folge vor dem Auftrag bleibt seine Dublette');
   assert.ok(duplicateRequestFor(folge('2026-09-14T19:45:00.000Z'), miosga, alt), '"bitte heute Abend" meint die Folge desselben Abends');
   assert.equal(AUFTRAG_VORLAUF_MS, 24 * 3600 * 1000);
-  // Ohne Zeitstempel bleibt es beim bisherigen Vergleich.
-  assert.ok(duplicateRequestFor(folge('2026-09-20T19:45:00.000Z'), miosga, auftrag('Miosga Sachsen-Anhalt Reformen', undefined)));
+  // Auch ohne created_at bleibt das Originaldatum in der Kennung maßgeblich.
+  assert.equal(duplicateRequestFor(folge('2026-09-20T19:45:00.000Z'), miosga, auftrag('Miosga Sachsen-Anhalt Reformen', undefined)), null);
 });
