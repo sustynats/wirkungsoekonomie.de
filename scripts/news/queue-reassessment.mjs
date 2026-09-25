@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 // Beauftragt die vollständige Neubewertung des Wirkungspotenzials für die
 // jüngsten veröffentlichten Meldungen ohne komplettes, freigegebenes Profil.
 // Je Meldung entsteht genau ein bezahlter Aufruf im nächsten regulären Lauf;
@@ -60,13 +61,13 @@ export function queueReassessment(store, state, now, { limit = 30 } = {}) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const limit = Number((process.argv.find((arg) => arg.startsWith('--limit=')) || '--limit=30').slice('--limit='.length));
   const now = new Date().toISOString();
-  const store = JSON.parse(fs.readFileSync(files.stories, 'utf8'));
-  const state = JSON.parse(fs.readFileSync(files.state, 'utf8'));
+  const store = readRepositoryJson(files.stories, 'utf8');
+  const state = readRepositoryJson(files.state, 'utf8');
   const downgraded = normalizeIncompleteReleases(store, now);
   const report = queueReassessment(store, state, now, { limit });
   report.downgraded = downgraded;
   if (!process.argv.includes('--dry-run') && (report.queued.length || downgraded.length)) {
-    fs.writeFileSync(files.stories, JSON.stringify(store, null, 2) + '\n');
+    writeRepositoryJson(files.stories, store);
     fs.writeFileSync(files.state, JSON.stringify(state, null, 2) + '\n');
   }
   console.log(JSON.stringify({ dry_run: process.argv.includes('--dry-run'), limit, checked: report.checked, downgraded_incomplete_releases: downgraded.length, queued_count: report.queued.length, queued: report.queued }, null, 2));

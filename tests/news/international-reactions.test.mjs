@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
@@ -10,8 +11,8 @@ import { storyPage } from "../../scripts/news/build.mjs";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
 const registry = loadNewsRegistry(root);
-const review = JSON.parse(fs.readFileSync(`${root}content/news/reviews/sachsen-anhalt-internationale-reaktionen-2026-09-07.json`));
-const stories = JSON.parse(fs.readFileSync(`${root}data/news/stories.json`)).stories;
+const review = readRepositoryJson(`${root}content/news/reviews/sachsen-anhalt-internationale-reaktionen-2026-09-07.json`);
+const stories = readRepositoryJson(`${root}data/news/stories.json`).stories;
 const now = "2026-09-07T19:30:00Z";
 
 test("international reaction report passes normal gates with attributable statements, not a global consensus", () => {

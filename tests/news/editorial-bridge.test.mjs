@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -19,7 +20,7 @@ function fixture(t,{stageOnly=false}={}){
   const store=new BridgeStore(path.join(root,'queue.sqlite')),files=new Map();
   const transport={outage:false,async writeAtomic(p,v){if(this.outage)throw Object.assign(Error('BRIDGE_DROPBOX_HTTP_503'),{retryable:true});const data=JSON.stringify(v);if(files.has(p))assert.equal(files.get(p),data);files.set(p,data);},async list(folder){return [...files.keys()].filter(p=>p.includes('/'+folder+'/')).map(p=>({name:p.split('/').at(-1)}));},async read(p){return files.get(p);},async archive(p){files.delete(p);},async move(a,b){files.set(b,files.get(a));files.delete(a);}};
   const bridge=new DropboxChatGPTBridgeProvider({store,transport,stageOnly,semanticReview:async (_bridge,_job,_output,_record,proposed)=>({status:"ready",assessment:proposed})});
-  const load=()=>JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json')));
+  const load=()=>readRepositoryJson(path.join(root,'data/news/editorial-analyses.json'));
   const putOutput=(job,changes={})=>files.set(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:job.input.job_id,input_hash:job.input.input_hash,processed_at:later,decision:{status:'publish',reason:'Quellengebundene zusätzliche systemische Einordnung.'},editorial_analysis:validEditorial(job.candidate),...changes}));
   t.after(()=>{store.close();fs.rmSync(root,{recursive:true,force:true});});
   return {root,story,store,files,transport,bridge,load,putOutput};

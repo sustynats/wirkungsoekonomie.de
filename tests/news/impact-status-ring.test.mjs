@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {deriveImpactPresentation,impactAssessmentErrors} from '../../scripts/news/impact-assessment.mjs';
@@ -40,7 +41,7 @@ test('an implementation enum without observed signals cannot create an emerging 
  assert.deepEqual(['ex_ante','ongoing','ex_post'].map(deriveImpactStatus),['potential','emerging','observed']);
 });
 test('real card and detail previews keep all three rings, bars and paths with public rollout disabled',()=>{
- const catalog=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+ const catalog=readRepositoryJson('data/news/stories.json').stories;
  const story={...catalog.find(s=>s.published&&s.analysis&&s.listed!==false),impact_assessment:profile()};
  for(const html of [storyCard(story,0,{privateImpactPreview:true}),storyPage(story,{privateImpactPreview:true})]){
   assert.match(html,/data-private-impact-preview/);

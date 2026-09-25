@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from '../newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {PERSONAL_FILE,validatePersonalEdition,loadPersonalEditorials} from '../personal-editorial.mjs';
@@ -22,7 +23,7 @@ export function episodeIdentity(edition){
 export async function importApprovedEditorials(store,root){
  if(!store.editorialClaim)return {changed:false};
  const editions=await store.editorialClaim();if(!editions.length)return {changed:false};
- const file=path.join(root,PERSONAL_FILE),data=fs.existsSync(file)?JSON.parse(fs.readFileSync(file)):{schema_version:'1.0',editions:[]};
+ const file=path.join(root,PERSONAL_FILE),data=fs.existsSync(file)?readRepositoryJson(file):{schema_version:'1.0',editions:[]};
  // awaiting: schon uebernommene Fassungen, die der Schreibtisch weiter
  // anbietet, weil die Quittung fehlt. Bleibt das stehen, steht Natalies
  // Freigabe live und gilt dort trotzdem als offen.
@@ -31,10 +32,10 @@ export async function importApprovedEditorials(store,root){
  try{
   if(edition.format===EDITORIAL_REVISION_FORMAT){
    validateApprovedEditorialRevision(edition);
-   const revisionFile=path.join(root,EDITORIAL_REVISION_FILE),revisions=fs.existsSync(revisionFile)?JSON.parse(fs.readFileSync(revisionFile)):{schema_version:'1.0',editions:[]};
+   const revisionFile=path.join(root,EDITORIAL_REVISION_FILE),revisions=fs.existsSync(revisionFile)?readRepositoryJson(revisionFile):{schema_version:'1.0',editions:[]};
    if(revisions.editions.some(e=>e.content_hash===edition.content_hash)){awaiting+=1;continue;}
    const analysisFile=path.join(root,'data/news/editorial-analyses.json');
-   const originals=[...(fs.existsSync(analysisFile)?JSON.parse(fs.readFileSync(analysisFile)).analyses:[]),...loadManualEditorials(root),...loadPersonalEditorials(root)];
+   const originals=[...(fs.existsSync(analysisFile)?readRepositoryJson(analysisFile).analyses:[]),...loadManualEditorials(root),...loadPersonalEditorials(root)];
    const base=applyApprovedEditorialRevisions(originals,root).find(a=>a.analysis_id===edition.analysis_id);
    if(!base)throw Error('EDITORIAL_REVISION_TARGET_MISSING');
    validateEditorialRevisionPreview({format:base.format==='book_and_impact'?'book_review':base.subtype||'opinion_analysis',title:base.title,
@@ -44,9 +45,9 @@ export async function importApprovedEditorials(store,root){
    fs.mkdirSync(path.dirname(revisionFile),{recursive:true});fs.writeFileSync(revisionFile+'.tmp',JSON.stringify(revisions,null,2)+'\n');fs.renameSync(revisionFile+'.tmp',revisionFile);changed=true;continue;
   }
   if(edition.format==='approved_news'){
-   const file=path.join(root,'data/news/stories.json'),catalog=JSON.parse(fs.readFileSync(file));
+   const file=path.join(root,'data/news/stories.json'),catalog=readRepositoryJson(file);
    const result=importApprovedNews(edition,catalog.stories,loadNewsRegistry(root),new Date().toISOString());
-   if(result.changed){catalog.stories=result.stories;catalog.public_updated_at=new Date().toISOString();fs.writeFileSync(file+'.tmp',JSON.stringify(catalog,null,2)+'\n');fs.renameSync(file+'.tmp',file);changed=true;}else awaiting+=1;continue;
+   if(result.changed){catalog.stories=result.stories;catalog.public_updated_at=new Date().toISOString();writeRepositoryJson(file,catalog);changed=true;}else awaiting+=1;continue;
   }
   validatePersonalEdition(edition);
   const previous=data.editions.find(e=>e.analysis_id===edition.analysis_id);

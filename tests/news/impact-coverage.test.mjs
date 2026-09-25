@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { impactCoverage, assertImpactCoverage, prepareImpactPromotion } from '../../scripts/news/impact-coverage.mjs';
@@ -98,14 +99,14 @@ test('one independently reviewed backfill publishes with fresh cards while other
   }};
   const result=await importImpactJobs(bridge,root,now,options);
   assert.equal(result[0].changed,true);assert.equal(result[0].staged,false);assert.equal(renders,1);
-  const saved=JSON.parse(fs.readFileSync(file)).stories;
+  const saved=readRepositoryJson(file).stories;
   assert.ok(publicImpactAssessment(saved[0]));assert.equal(publicImpactAssessment(saved[1]),null);
   for(const k of ['title','source_summary','analysis','sources','versions'])assert.deepEqual(saved[0][k],record[k]);
   assert.equal((await importImpactJobs(bridge,root,now,options)).length,0);assert.equal(renders,1);
   for(const privateCase of ['test_only','stageOnly','manual_authority']){
     reset();current=structuredClone(job);bridge.stageOnly=privateCase==='stageOnly';
     current.input.test_only=privateCase==='test_only';
-    if(privateCase==='manual_authority'){const data=JSON.parse(fs.readFileSync(file));data.stories[0].manual_authority=true;fs.writeFileSync(file,JSON.stringify(data));}
+    if(privateCase==='manual_authority'){const data=readRepositoryJson(file);data.stories[0].manual_authority=true;fs.writeFileSync(file,JSON.stringify(data));}
     const before=fs.readFileSync(file,'utf8');
     const held=await importImpactJobs(bridge,root,now,options);
     assert.equal(held[0].staged,true);assert.equal(fs.readFileSync(file,'utf8'),before);assert.equal(renders,1);

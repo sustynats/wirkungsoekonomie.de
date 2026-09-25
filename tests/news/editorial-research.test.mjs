@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
@@ -13,7 +14,7 @@ import { loadNewsRegistry } from '../../scripts/news/registry.mjs';
 import { editorialAnalysisPage } from '../../scripts/news/build.mjs';
 
 const root = path.resolve(import.meta.dirname, '../..');
-const read = relative => JSON.parse(fs.readFileSync(path.join(root, relative)));
+const read = relative => readRepositoryJson(path.join(root, relative));
 const store = read('data/news/editorial-analyses.json');
 const record = store.analyses.find(item => item.story_id === 'wt-995822cc0b71a7f8');
 const story = read('data/news/stories.json').stories.find(item => item.story_id === record.story_id);

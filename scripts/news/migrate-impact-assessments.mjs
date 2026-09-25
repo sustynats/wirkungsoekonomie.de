@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -77,12 +78,12 @@ export function migrateImpactCatalog(records, { now = '2026-09-10T10:30:00.000Z'
 export function migrateImpactFiles(root, options = {}) {
   const reports = [];
   for (const [file, key] of [['stories.json', 'stories'], ['editorial-analyses.json', 'analyses']]) {
-    const filename = path.join(root, 'data/news', file), catalog = JSON.parse(fs.readFileSync(filename, 'utf8'));
+    const filename = path.join(root, 'data/news', file), catalog = readRepositoryJson(filename, 'utf8');
     const result = migrateImpactCatalog(catalog[key], options);
     if (result.report.changed) {
       catalog[key] = result.records;
       const temp = `${filename}.tmp-${process.pid}`;
-      fs.writeFileSync(temp, JSON.stringify(catalog, null, 2) + '\n'); fs.renameSync(temp, filename);
+      writeRepositoryJson(filename, catalog);
     }
     reports.push({ file, ...result.report });
   }

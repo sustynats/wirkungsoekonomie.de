@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 // Explicit editorial intake. Reuses the production model and gates, not a bypass.
 import fs from "node:fs";
 import path from "node:path";
@@ -113,12 +114,12 @@ export function prepareReviewedStory(review, registry, stories, now, { independe
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const input = process.argv.find(arg => arg.startsWith("--review="))?.slice(9);
   if (!input) throw new Error("Use --review=<review.json> [--write]; default is validation only.");
-  const review = JSON.parse(fs.readFileSync(path.resolve(input), "utf8"));
+  const review = readRepositoryJson(path.resolve(input), "utf8");
   const file = path.join(ROOT, "data/news/stories.json");
-  const store = JSON.parse(fs.readFileSync(file, "utf8"));
+  const store = readRepositoryJson(file, "utf8");
   const now = new Date().toISOString();
   const receiptPath = process.argv.find(arg => arg.startsWith('--impact-review='))?.slice(16);
-  const independentImpactReview = receiptPath ? JSON.parse(fs.readFileSync(path.resolve(receiptPath), 'utf8')) : null;
+  const independentImpactReview = receiptPath ? readRepositoryJson(path.resolve(receiptPath), 'utf8') : null;
   const result = prepareReviewedStory(review, loadNewsRegistry(ROOT), store.stories, now, { independentImpactReview });
   if (result.errors.length) { console.error(JSON.stringify({ errors: result.errors, integrity: result.candidate.source_integrity.issues })); process.exitCode = 1; }
   else {
@@ -131,8 +132,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       else store.stories[index] = result.record;
       store.updated_at = now;
       store.public_updated_at = now;
-      fs.writeFileSync(`${file}.tmp`, `${JSON.stringify(store, null, 2)}\n`);
-      fs.renameSync(`${file}.tmp`, file);
+      writeRepositoryJson(file, store);
     }
     console.log(JSON.stringify({ story_id: result.record.story_id, slug: result.record.slug, unchanged: Boolean(result.unchanged), written: process.argv.includes("--write") && !result.unchanged, integrity: result.record.source_integrity.status }));
   }

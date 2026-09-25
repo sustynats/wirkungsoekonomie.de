@@ -283,9 +283,11 @@ jobs:
           if-no-files-found: warn
           path: |
             data/news/stories.json
+            data/news/stories.json.parts/
             data/news/state.json
             data/news/newsroom.json
             data/news/newsroom.json.parts/
             data/news/usage.json
             data/news/editorial-analyses.json
+            data/news/personal-editorials.json
             reports/wirkungsticker-latest-run.json

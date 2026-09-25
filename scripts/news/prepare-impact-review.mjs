@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,14 +20,13 @@ export function prepareImpactReview(record, review) {
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-  const filename = path.join(root, 'data/news/stories.json'), data = JSON.parse(fs.readFileSync(filename, 'utf8'));
-  const reviews = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')).reviews;
+  const filename = path.join(root, 'data/news/stories.json'), data = readRepositoryJson(filename, 'utf8');
+  const reviews = readRepositoryJson(process.argv[2], 'utf8').reviews;
   for (const review of reviews) {
     const index = data.stories.findIndex(s => s.story_id === review.story_id);
     if (index < 0) throw Error('IMPACT_REVIEW_STORY_MISSING');
     data.stories[index] = prepareImpactReview(data.stories[index], review);
   }
-  const temp = filename + '.tmp-' + process.pid;
-  fs.writeFileSync(temp, JSON.stringify(data, null, 2) + '\n'); fs.renameSync(temp, filename);
+  writeRepositoryJson(filename, data);
   console.log(`Wirkungsprüfungen für den normalen Bridge-Prozess vorbereitet: ${reviews.length}. Noch keine Produktionsfreigabe.`);
 }

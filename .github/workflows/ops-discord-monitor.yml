@@ -51,6 +51,7 @@ jobs:
             scripts/news/reader-copy.mjs
             scripts/news/living-files.mjs
             scripts/news/newsroom.mjs
+            scripts/news/newsroom-store.mjs
             scripts/news/court-case-identity.mjs
             scripts/news/event-identity.mjs
             scripts/news/projection-cache.mjs
@@ -64,6 +65,7 @@ jobs:
             tests/ops/news-recovery.test.mjs
             reports/wirkungsticker-latest-run.json
             data/news/stories.json
+            data/news/stories.json.parts/
             data/news/lagen.json
             data/news/usage.json
           sparse-checkout-cone-mode: false

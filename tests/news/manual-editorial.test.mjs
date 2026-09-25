@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -17,7 +18,7 @@ import { checkManualPages } from "../../scripts/news/check-manual-pages.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const directory = path.join(root, "content/news/manual");
-const manifest = JSON.parse(fs.readFileSync(path.join(directory, "editions.json")));
+const manifest = readRepositoryJson(path.join(directory, "editions.json"));
 const editions = loadManualEditorials(root).filter(a => !a.self_authored_work).slice(0, 3);
 const source = fs.readFileSync(path.join(directory, manifest.entries[0].source_file), "utf8");
 

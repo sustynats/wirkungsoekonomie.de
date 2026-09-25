@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
 
 const FORMAT = 'woek-newsroom-parts-1';
 const LIMIT = 8 * 1024 * 1024;
@@ -15,8 +16,15 @@ const atomic = (file, text) => {
 };
 
 export function readNewsroom(file, fallback) {
+  if (file instanceof URL) file = fileURLToPath(file);
   if (!fs.existsSync(file) && fallback !== undefined) return structuredClone(fallback);
   const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
+  return decodeNewsroom(manifest, part => fs.readFileSync(path.join(`${file}.parts`, `${part.sha256}.json`)));
+}
+
+// The same decoder also verifies parts read from an exact Git revision during
+// publication conflict recovery. Never combine a manifest with current parts.
+export function decodeNewsroom(manifest, readPart) {
   if (!manifest.storage_format) return manifest; // Legacy snapshots and recovery artifacts.
   if (manifest.storage_format !== FORMAT || !Array.isArray(manifest.fields)) throw Error('NEWSROOM_MANIFEST_INVALID');
   const result = {};
@@ -31,7 +39,7 @@ export function readNewsroom(file, fallback) {
       value = field.kind === 'array' ? [] : {};
       for (const part of field.parts) {
         if (!/^[a-f0-9]{64}$/.test(part.sha256 || '') || !Number.isSafeInteger(part.bytes) || part.bytes < 1 || part.bytes > LIMIT) throw Error('NEWSROOM_PART_INVALID');
-        const bytes = fs.readFileSync(path.join(`${file}.parts`, `${part.sha256}.json`));
+        const bytes = readPart(part);
         if (bytes.length !== part.bytes || digest(bytes) !== part.sha256) throw Error('NEWSROOM_PART_CORRUPT');
         const rows = JSON.parse(bytes.toString('utf8'));
         if (!Array.isArray(rows)) throw Error('NEWSROOM_PART_ROWS_INVALID');
@@ -49,6 +57,7 @@ export function readNewsroom(file, fallback) {
 }
 
 export function writeNewsroom(file, value, { maxPartBytes = LIMIT } = {}) {
+  if (file instanceof URL) file = fileURLToPath(file);
   if (!value || typeof value !== 'object' || Array.isArray(value) || maxPartBytes < 64 || maxPartBytes > LIMIT) throw Error('NEWSROOM_STORE_INVALID');
   const manifest = { storage_format: FORMAT, fields: [] };
   const dir = `${file}.parts`;
@@ -92,4 +101,18 @@ export function writeNewsroom(file, value, { maxPartBytes = LIMIT } = {}) {
 export function repositoryJson(value) {
   const compact = JSON.stringify(value);
   return `${Buffer.byteLength(compact) > 8 * 1024 * 1024 ? compact : JSON.stringify(value, null, 2)}\n`;
+}
+
+// Preserve the in-memory/legacy JSON contract for every caller. The canonical
+// story catalog uses the already established lossless newsroom parts format;
+// browser-facing exports remain ordinary JSON and are built independently.
+export function readRepositoryJson(file) {
+  const filename = file instanceof URL ? fileURLToPath(file) : file;
+  return path.basename(filename) === 'stories.json'
+    ? readNewsroom(filename) : JSON.parse(fs.readFileSync(filename, 'utf8'));
+}
+export function writeRepositoryJson(file, value) {
+  const filename = file instanceof URL ? fileURLToPath(file) : file;
+  if (path.basename(filename) === 'stories.json') return writeNewsroom(filename, value);
+  atomic(filename, repositoryJson(value));
 }

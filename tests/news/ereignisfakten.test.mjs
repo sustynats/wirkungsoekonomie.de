@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -60,7 +61,7 @@ test('rollende Lagen werden nicht zusammengefuehrt', () => {
 // aus dem Ticker loescht. Am gesamten veroeffentlichten Bestand darf die Regel
 // nur Paare erkennen, die wirklich dasselbe Ereignis sind.
 test('am veroeffentlichten Bestand fuehrt die Regel nichts falsch zusammen', () => {
-  const stories = JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json', import.meta.url), 'utf8')).stories
+  const stories = readRepositoryJson(new URL('../../data/news/stories.json', import.meta.url), 'utf8').stories
     .filter((story) => story.published && story.listed !== false)
     .map((story) => ({ title: story.title, summary: story.analysis?.source_summary || '', published_at: story.published_at }));
   assert.ok(stories.length > 200, 'der Bestand ist gross genug fuer die Messung');

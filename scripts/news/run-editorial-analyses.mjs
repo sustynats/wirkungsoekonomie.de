@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import { readNewsroom } from './newsroom-store.mjs';
 import { assertAutomaticImpactTransport } from './processing-mode.mjs';
@@ -24,7 +25,7 @@ import {
 const DEFAULT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
 function read(file, fallback = null) {
-  return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : fallback;
+  return fs.existsSync(file) ? readRepositoryJson(file, "utf8") : fallback;
 }
 
 function writeAtomic(file, value) {

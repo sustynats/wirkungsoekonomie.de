@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
@@ -6,10 +7,10 @@ import { prepareImpactPromotion, assertImpactCoverage } from './impact-coverage.
 import { IMPACT_VERSION } from './impact-assessment.mjs';
 const root=process.cwd(),now=new Date().toISOString();
 const catalogs=[['stories.json','stories'],['editorial-analyses.json','analyses']].map(([file,key])=>({file:path.join(root,'data/news',file),key}));
-for(const c of catalogs)c.data=JSON.parse(fs.readFileSync(c.file,'utf8'));
+for(const c of catalogs)c.data=readRepositoryJson(c.file,'utf8');
 const jobsFile=process.argv.find(arg=>arg.startsWith('--jobs-file='))?.slice(12);
 async function stagingJobs(){const {store}=bridgeSession();const jobs=[];for(const entry of await store.impactStagingIndex())jobs.push(await store.get(entry.id));return jobs;}
-const jobs=process.argv.includes('--catalog-only') ? [] : jobsFile ? JSON.parse(fs.readFileSync(path.resolve(jobsFile),'utf8')) : await stagingJobs();
+const jobs=process.argv.includes('--catalog-only') ? [] : jobsFile ? readRepositoryJson(path.resolve(jobsFile),'utf8') : await stagingJobs();
 const result=prepareImpactPromotion(catalogs.flatMap(c=>c.data[c.key]),jobs);
 fs.mkdirSync(path.join(root,'reports'),{recursive:true});
 fs.writeFileSync(path.join(root,'reports/wirkungsticker-impact21-coverage.json'),JSON.stringify(result.report,null,2)+'\n');
@@ -23,6 +24,6 @@ if(process.argv.includes('--promote')) {
   writes.push({file:path.join(root,'content/news/impact-release.json'),body:JSON.stringify({public_version:IMPACT_VERSION,released_at:now,
     minimum_material_counts:Object.fromEntries(Object.entries(result.report.by_dimension).map(([k,d])=>[k,Math.floor(d.material*.5)]))},null,2)+'\n'});
   const backup=path.join(os.homedir(),'.local/share/woek-impact-backups',now.replaceAll(':','-'));fs.mkdirSync(backup,{recursive:true,mode:0o700});
-  for(const w of writes){if(fs.existsSync(w.file))fs.copyFileSync(w.file,path.join(backup,path.basename(w.file)));fs.writeFileSync(w.file+'.impact21.tmp',w.body);}
-  for(const w of writes)fs.renameSync(w.file+'.impact21.tmp',w.file);
+  for(const w of writes){if(fs.existsSync(w.file)){fs.copyFileSync(w.file,path.join(backup,path.basename(w.file)));if(fs.existsSync(w.file+'.parts'))fs.cpSync(w.file+'.parts',path.join(backup,path.basename(w.file)+'.parts'),{recursive:true});}}
+  for(const w of writes)writeRepositoryJson(w.file,JSON.parse(w.body));
 }

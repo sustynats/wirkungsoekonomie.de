@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -5,7 +6,7 @@ import { formatReferenceFramework } from "../../scripts/news/reference-framework
 import { storyPage } from "../../scripts/news/build.mjs";
 
 test("all 17 numbered goals use the existing website catalogue", () => {
-  const catalogue = JSON.parse(fs.readFileSync(new URL("../../assets/data/sdg-reference.json", import.meta.url)));
+  const catalogue = readRepositoryJson(new URL("../../assets/data/sdg-reference.json", import.meta.url));
   const goals = catalogue.filter((goal) => goal.type === "sdg" && goal.isOfficialUNGoal);
   assert.equal(goals.length, 17);
   for (const goal of goals) {
@@ -30,7 +31,7 @@ test("named references are idempotent; target IDs, SDG+ and unnumbered framework
 });
 
 test("the public source section formats and escapes references without mutating analysis", () => {
-  const story = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories
+  const story = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories
     .find((item) => item.published && item.listed !== false && item.analysis);
   story.analysis.reference_frameworks = ["SDG 7", "DNS <untrusted>"];
   const before = structuredClone(story);
