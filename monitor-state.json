@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-25T06:35:36.350Z",
       "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-09-25T09:50:50.920Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "af48c1185afacbb3ecc60b57",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-09-25T10:05:51.041Z"
+    }
+  ],
   "dailyDate": "2026-09-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2049,7 +2050,7 @@
       }
     },
     "last_new_at": "2026-09-25T07:33:49.941Z",
-    "checked_at": "2026-09-25T09:50:50.920Z",
+    "checked_at": "2026-09-25T10:05:51.041Z",
     "last_current_new_at": "2026-09-25T07:33:49.941Z"
   },
   "recovery_attempts": [
