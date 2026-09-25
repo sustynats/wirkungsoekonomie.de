@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4907**
+- Sitemap routes: **4936**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14933**
+- Extra tracked source HTML not in sitemap: **14948**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **276**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **277**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3699,6 +3699,7 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/zukunftsangst-dampft-kinderwunsch-64b8b5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/e-lkw-im-fernverkehr-was-megawattladen-jetzt-verandern-kann-ac906b/index.html` - dns, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/schweden-2026-der-rechtsruck-ist-nicht-verschwunden-aber-der-aufstieg-der-sd-wurde-gebremst-5c2cb0/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/was-die-wahlabende-uber-berlin-schwerin-und-die-bundespolitik-zeigen-8ee28f/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/wenn-der-markt-verschwindet-verschwinden-die-bedurfnisse-nicht-ec1819/index.html` - folgenabschaetzung, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3886,8 +3887,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1379**
-- Combined matrix items (routes + extra HTML + support): **21219**
+- Tracked support text files inventoried: **1382**
+- Combined matrix items (routes + extra HTML + support): **21266**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4347,7 +4348,6 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/bridge/write-native-output-config.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/build.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `scripts/news/editorial-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap, dns |
-| `scripts/news/editorial-diagrams.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/editorial-judgment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/event-relevance.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation, novelty_or_absence |
 | `scripts/news/impact-assessment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -4464,7 +4464,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **21220**
+- Combined reviewed items: **21267**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
