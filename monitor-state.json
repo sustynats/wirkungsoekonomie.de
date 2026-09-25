@@ -20,6 +20,10 @@
     "run": {
       "firstSeen": "2026-09-25T20:05:40.551Z",
       "active": true
+    },
+    "publication": {
+      "firstSeen": "2026-09-25T21:20:34.469Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2069,7 +2073,7 @@
       }
     },
     "last_new_at": "2026-09-25T19:36:58.640Z",
-    "checked_at": "2026-09-25T21:17:42.999Z",
+    "checked_at": "2026-09-25T21:20:34.469Z",
     "last_current_new_at": "2026-09-25T18:35:54.812Z"
   },
   "recovery_attempts": [
