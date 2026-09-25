@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,7 +9,7 @@ import { reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const file = path.join(root, "data/news/stories.json");
-const store = JSON.parse(fs.readFileSync(file, "utf8"));
+const store = readRepositoryJson(file, "utf8");
 const registry = loadNewsRegistry(root);
 const registryById = new Map(registry.sources.map((source) => [source.source_id, source]));
 const now = new Date().toISOString();
@@ -86,5 +87,5 @@ for (const story of store.stories.filter((entry) => entry.published && entry.lis
 
 store.updated_at = now;
 store.public_updated_at = now;
-fs.writeFileSync(file, `${JSON.stringify(store, null, 2)}\n`, "utf8");
+writeRepositoryJson(file, store);
 console.log(JSON.stringify({ changed: changed.length, stories: changed }, null, 2));

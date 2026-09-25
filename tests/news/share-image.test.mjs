@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -8,8 +9,8 @@ import { storyPage, editorialAnalysisPage } from "../../scripts/news/build.mjs";
 import { normalizeShareMetadata } from "../../scripts/lib/share-metadata.mjs";
 
 const ROOT = new URL("../../", import.meta.url);
-const stories = JSON.parse(fs.readFileSync(new URL("data/news/stories.json", ROOT))).stories;
-const editorials = JSON.parse(fs.readFileSync(new URL("data/news/editorial-analyses.json", ROOT))).analyses;
+const stories = readRepositoryJson(new URL("data/news/stories.json", ROOT)).stories;
+const editorials = readRepositoryJson(new URL("data/news/editorial-analyses.json", ROOT)).analyses;
 const story = stories.find(item => item.published && item.analysis && item.listed !== false);
 const analysis = editorials.find(item => item.status === "published" && stories.some(s => s.story_id === item.story_id));
 const sourceStory = stories.find(s => s.story_id === analysis.story_id);

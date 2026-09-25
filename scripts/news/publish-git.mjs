@@ -4,11 +4,13 @@ import { isDeepStrictEqual } from "node:util";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { repositoryJson } from './newsroom-store.mjs';
+import { decodeNewsroom, writeRepositoryJson } from './newsroom-store.mjs';
 const exec = promisify(execFile);
 
 const GENERATED_PATHS = ["news", "wirkungsticker", "sitemap.xml", "assets/search/search-index.json", "public/data/woek-search-meta.json", "content/taxonomy/site-map.json", "umfragen", "admin/umfragen", "reports/wirkungsticker-source-integrity.json", "reports/wirkungsticker-source-portfolio.json", "data/wirkungsticker/source-audit-2026-09-05.json"];
 const STORY_STORE = "data/news/stories.json";
+const STORY_PARTS = `${STORY_STORE}.parts`;
+const storyStoragePath = file => file === STORY_STORE || /^data\/news\/stories\.json\.parts\/[a-f0-9]{64}\.json$/.test(file);
 
 // Merge whole story records, never prose, evidence, versions or source arrays.
 // Two different changes to the same record remain a real conflict, even when
@@ -87,7 +89,18 @@ export async function fetchPublicationBase(run = git) {
   throw new Error("PUBLISH_COMMON_ANCESTOR_NOT_FOUND");
 }
 
-export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => fs.writeFileSync(STORY_STORE, repositoryJson(store)), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
+export async function readGitStoryStore(reference, run = git) {
+  const manifest = JSON.parse(stdout(await run(['show', `${reference}:${STORY_STORE}`])));
+  if (!manifest.storage_format) return manifest;
+  const parts = new Map();
+  for (const field of manifest.fields || []) for (const part of field.parts || []) {
+    if (!/^[a-f0-9]{64}$/.test(part.sha256 || '')) throw Error('NEWSROOM_PART_INVALID');
+    if (!parts.has(part.sha256)) parts.set(part.sha256, Buffer.from(stdout(await run(['show', `${reference}:${STORY_PARTS}/${part.sha256}.json`]))));
+  }
+  return decodeNewsroom(manifest, part => parts.get(part.sha256));
+}
+
+export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => writeRepositoryJson(STORY_STORE, store), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
   let regenerated = false;
   for (let attempt = 1; attempt <= 3; attempt++) {
     const before = stdout(await run(["rev-parse", "HEAD"])).trim();
@@ -106,19 +119,24 @@ export async function publishGitUpdate({ run = git, rebuild = rebuildPublication
           const conflicts = step === 0 ? firstConflicts : stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
           if (!conflicts.length) throw failure;
           let combinedStories;
-          if (conflicts.includes(STORY_STORE)) {
+          if (conflicts.some(storyStoragePath)) {
             try {
               // In a rebase: stage 1 = common base, 2 = upstream, 3 = worker.
-              const versions = await Promise.all([1, 2, 3].map(async stage => JSON.parse(stdout(await run(["show", `:${stage}:${STORY_STORE}`])))));
+              let versions = conflicts.includes(STORY_STORE) ? await Promise.all([1, 2, 3].map(async stage => JSON.parse(stdout(await run(["show", `:${stage}:${STORY_STORE}`]))))) : null;
+              if (!versions || versions.some(value => value.storage_format)) {
+                const base = stdout(await run(['merge-base', 'HEAD', 'REBASE_HEAD'])).trim();
+                versions = await Promise.all([base, 'HEAD', 'REBASE_HEAD'].map(ref => readGitStoryStore(ref, run)));
+              }
               combinedStories = mergeDisjointStoryStores(...versions);
             } catch { /* Malformed or overlapping records stay blocked. */ }
           }
-          if (!conflicts.every(file => regeneratablePublicationPath(file) || (file === STORY_STORE && combinedStories))) {
+          if (!conflicts.every(file => regeneratablePublicationPath(file) || (storyStoragePath(file) && combinedStories))) {
             throw new Error(`PUBLISH_CANONICAL_CONFLICT:${conflicts.join(",")}`, { cause: failure });
           }
           if (combinedStories) {
-            await writeStoryStore(combinedStories);
+            const saved = await writeStoryStore(combinedStories);
             await run(["add", "--", STORY_STORE]);
+            if (saved?.storage_format) await run(['add', '--', STORY_PARTS]);
           }
           const generatedConflicts = conflicts.filter(regeneratablePublicationPath);
           if (generatedConflicts.length) await run(["restore", "--source=HEAD", "--staged", "--worktree", "--", ...generatedConflicts]);

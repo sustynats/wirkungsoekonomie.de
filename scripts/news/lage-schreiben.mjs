@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { readRepositoryJson } from './newsroom-store.mjs';
 // Schreibt eine Lage in data/news/lagen.json. Kein Modellaufruf, keine Kosten:
 // die Lage ist eine Ableitung aus den bereits veroeffentlichten Wirkungsakten.
 // Derselbe Lauf zweimal ergibt dieselbe Lage (upsertLage), ein abgebrochener
@@ -20,11 +21,11 @@ export function schreibeLage({ slot, now = new Date().toISOString(), root = ROOT
   const gewaehlt = slot || dueLage(now);
   if (!gewaehlt) return { status: 'keine_lage_faellig', now };
   if (!lageDefinition(gewaehlt)) return { status: 'slot_unbekannt', slot: gewaehlt };
-  const stories = (JSON.parse(fs.readFileSync(storiesFile, 'utf8')).stories || [])
+  const stories = (readRepositoryJson(storiesFile, 'utf8').stories || [])
     .filter((story) => story.published && story.analysis && story.listed !== false);
   const lage = buildLage({ slot: gewaehlt, now, stories });
   if (!lage) return { status: 'fenster_unlesbar', slot: gewaehlt, now };
-  const vorher = fs.existsSync(lagenFile) ? JSON.parse(fs.readFileSync(lagenFile, 'utf8')) : { lagen: [] };
+  const vorher = fs.existsSync(lagenFile) ? readRepositoryJson(lagenFile, 'utf8') : { lagen: [] };
   const store = upsertLage(vorher, lage, { now });
   if (!dryRun) fs.writeFileSync(lagenFile, `${JSON.stringify(store, null, 2)}\n`);
   return { status: 'ok', lage_id: lage.lage_id, slot: lage.slot, counts: lage.counts,

@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -48,8 +49,8 @@ export function consolidateLeizenDuplicates(stories, at) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
   const file = path.join(root, 'data/news/stories.json');
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const data = readRepositoryJson(file, 'utf8');
   const changes = consolidateLeizenDuplicates(data.stories, new Date().toISOString());
-  if (changes.length) fs.writeFileSync(file, `${JSON.stringify(data)}\n`);
+  if (changes.length) writeRepositoryJson(file, data);
   console.log(changes.length ? `Leizen: ${changes.length} historische Doppelmeldungen transparent zugeordnet.` : 'Leizen-Zuordnung bereits angewendet.');
 }

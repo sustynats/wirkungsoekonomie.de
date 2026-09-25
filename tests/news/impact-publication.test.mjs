@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import {syntheticScopeReview} from './fixtures/impact21.mjs';
 import { syntheticImpact21 } from './fixtures/impact21.mjs';
 import test from 'node:test';
@@ -11,8 +12,8 @@ import { ensureSemanticReview, importSemanticReviews, semanticOutputSchema } fro
 import { bridgePath, hash, parsePacket } from '../../scripts/news/bridge/contract.mjs';
 import { assertAutomaticImpactTransport } from '../../scripts/news/processing-mode.mjs';
 import { waitingForReview } from '../../scripts/news/bridge/status.mjs';
-const reviews = JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews.map(r=>({...r,impact_assessment:syntheticImpact21(r.impact_assessment)}));
-const catalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+const reviews = readRepositoryJson('content/news/reviews/2026-09-10-impact-semantics.json').reviews.map(r=>({...r,impact_assessment:syntheticImpact21(r.impact_assessment)}));
+const catalog = readRepositoryJson('data/news/stories.json').stories;
 const readyReview = () => ({ status:'ready', checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Prüfpass am jeweiligen Quellbeleg und Wirkpfad geprüft.'}])), findings:[] });
 const bsw = () => { const r=reviews[0], record=structuredClone(catalog.find(s=>s.story_id===r.story_id));record.impact_sources=r.assessment_sources;return {a:structuredClone(r.impact_assessment),record}; };
 

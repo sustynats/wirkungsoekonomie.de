@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -91,7 +92,7 @@ function economyFixture(t, stories = [highStory('economy')]) {
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.mkdirSync(path.join(root, 'data/news'), { recursive: true });
   const save = (name, data) => fs.writeFileSync(path.join(root, 'data/news', `${name}.json`), JSON.stringify(data));
-  const load = name => JSON.parse(fs.readFileSync(path.join(root, 'data/news', `${name}.json`)));
+  const load = name => readRepositoryJson(path.join(root, 'data/news', `${name}.json`));
   save('stories', { stories });
   save('state', { budget_fx: { rate_usd_per_eur: 1.1, rate_date: '2026-09-05' } });
   return { root, stories, save, load, registry: registryFor(stories), execute: true, build: () => {} };
@@ -218,14 +219,14 @@ test('Batch editorial results use the existing quality gate, publish once, and d
   const pending = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:00:00Z' });
   assert.equal(pending.batch_deferred, 1); assert.equal(pending.failed.length, 0); assert.equal(pending.editorial_analyses_published, 0);
   // Test paid retrieval even with missing FX: this must not re-submit or deadlock.
-  const stateFile = path.join(root, 'data/news/state.json'); const state = JSON.parse(fs.readFileSync(stateFile)); delete state.budget_fx; fs.writeFileSync(stateFile, JSON.stringify(state));
+  const stateFile = path.join(root, 'data/news/state.json'); const state = readRepositoryJson(stateFile); delete state.budget_fx; fs.writeFileSync(stateFile, JSON.stringify(state));
   ready = true;
   const completed = await runEditorialAnalyses({ ...opts, requestedStoryIds: [stories[0].story_id], now: '2026-09-07T12:20:00Z' });
   assert.equal(completed.editorial_analyses_published, 1, JSON.stringify(completed)); assert.equal(posts, 1);
   assert.equal(completed.full_generations, 0, 'paid retrieval is not a new generation');
   assert.equal(completed.batch_results_reviewed, 1);
   assert.equal(completed.requested[0].status, 'published');
-  const usage = JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json')));
+  const usage = readRepositoryJson(path.join(root, 'data/news/usage.json'));
   assert.equal(usage.runs.length, 1); assert.equal(usage.runs[0].ai.estimated_cost_usd, .002625);
   const repeat = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:40:00Z' });
   assert.equal(repeat.editorial_analyses_published, 0); assert.equal(posts, 1);
@@ -351,7 +352,7 @@ test("fehlgeschlagene Deep Dives behalten Korrekturhinweise und werden nach Paus
   const options={root,registry:registryFor(stories),execute:true,callAiImpl,build:()=>{}};
   const first=await runEditorialAnalyses({...options,now:'2026-09-05T10:00:00Z'});
   assert.equal(first.failed.length,1);assert.equal(first.editorial_analyses_published,0);assert.equal(calls,2);
-  const stored=JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json')));
+  const stored=readRepositoryJson(path.join(root,'data/news/editorial-analyses.json'));
   assert.ok(stored.retry_state[stories[0].story_id].quality_errors.includes('EDITORIAL_TITLE_LENGTH'));
   const early=await runEditorialAnalyses({...options,now:'2026-09-05T10:05:00Z'});
   assert.equal(early.retry_deferred,1);assert.equal(calls,2);
@@ -359,7 +360,7 @@ test("fehlgeschlagene Deep Dives behalten Korrekturhinweise und werden nach Paus
   const retried=await runEditorialAnalyses({...options,now:'2026-09-05T10:16:00Z'});
   assert.equal(retried.editorial_analyses_published,1);assert.equal(calls,3);
   assert.ok(lastPrompt.includes('EDITORIAL_TITLE_LENGTH'));
-  assert.equal(Object.keys(JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json'))).retry_state).length,0);
+  assert.equal(Object.keys(readRepositoryJson(path.join(root,'data/news/editorial-analyses.json')).retry_state).length,0);
 });
 
 test('Deep-Dive-Formatfehler werden bezahlt verbucht; Budgetablehnungen zählen nicht als Qualitätsversuch', async t => {
@@ -378,17 +379,17 @@ test('Deep-Dive-Formatfehler werden bezahlt verbucht; Budgetablehnungen zählen 
   assert.equal(first.estimated_cost_usd,0.002865);
   assert.equal(first.research_calls,1);
   assert.equal(first.editorial_analyses_published,0);
-  assert.equal(JSON.parse(fs.readFileSync(path.join(root,'data/news/usage.json'))).runs[0].ai.estimated_cost_usd,0.002865);
+  assert.equal(readRepositoryJson(path.join(root,'data/news/usage.json')).runs[0].ai.estimated_cost_usd,0.002865);
   mode='budget';
   const next=await runEditorialAnalyses({...opts,now:'2026-09-05T10:16:00Z'});
   assert.equal(next.estimated_cost_usd,0);
   assert.equal(next.budget_block_scope,'shared');
-  const retry=JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json'))).retry_state[stories[0].story_id];
+  const retry=readRepositoryJson(path.join(root,'data/news/editorial-analyses.json')).retry_state[stories[0].story_id];
   assert.equal(retry.attempts,1);
   assert.equal(retry.next_attempt_at,'2026-09-05T10:31:00.000Z');
   assert.equal(calls,2);
   const file=path.join(root,'data/news/editorial-analyses.json');
-  const legacy=JSON.parse(fs.readFileSync(file));
+  const legacy=readRepositoryJson(file);
   Object.assign(legacy.retry_state[stories[0].story_id],{attempts:7,next_attempt_at:'2026-09-05T22:16:00.000Z'});
   fs.writeFileSync(file,JSON.stringify(legacy));
   const early=await runEditorialAnalyses({...opts,now:'2026-09-05T10:20:00Z'});
@@ -397,7 +398,7 @@ test('Deep-Dive-Formatfehler werden bezahlt verbucht; Budgetablehnungen zählen 
   assert.equal(recovered.retry_deferred,0);
   assert.equal(recovered.budget_blocked,true);
   assert.equal(calls,3);
-  assert.equal(JSON.parse(fs.readFileSync(file)).retry_state[stories[0].story_id].attempts,7);
+  assert.equal(readRepositoryJson(file).retry_state[stories[0].story_id].attempts,7);
 });
 
 test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchgrenze und ist idempotent", async () => {
@@ -419,12 +420,12 @@ test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchg
   const second = await runEditorialAnalyses({ root, registry: registryFor(stories), execute: true, limit: 2, now: "2026-09-05T10:05:00Z", callAiImpl, build: () => {} });
   assert.equal(second.ready_for_research, 0);
   assert.equal(calls, 2);
-  const stored = JSON.parse(fs.readFileSync(path.join(root, "data/news/editorial-analyses.json")));
+  const stored = readRepositoryJson(path.join(root, "data/news/editorial-analyses.json"));
   assert.equal(stored.analyses.length, 2);
   assert.equal(stored.analyses[0].author.name, "Natalie Weber");
   assert.equal(stored.analyses[0].transparency_note, "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie");
   assert.ok(stored.analyses[0].reading_time_minutes >= 5);
-  const logged = JSON.parse(fs.readFileSync(path.join(root, "data/news/usage.json"))).runs[0];
+  const logged = readRepositoryJson(path.join(root, "data/news/usage.json")).runs[0];
   assert.equal(logged.counts.editorial_analyses_published, 2);
   assert.ok(logged.ai.estimated_cost_usd > 0);
 });

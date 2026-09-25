@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from '../newsroom-store.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -10,9 +11,9 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
   if (editorialOnly && (!renderOnly || cardsOnly)) throw new Error("TITLE_IMAGE_EDITORIAL_ONLY_REQUIRES_RENDER_ONLY");
   if (refreshEditorial && (renderOnly || cardsOnly || editorialOnly)) throw new Error("TITLE_IMAGE_REFRESH_MODE_CONFLICT");
   const file = path.join(root, "data/news/stories.json");
-  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  const data = readRepositoryJson(file, "utf8");
   const reportFile = path.join(root, "reports/wirkungsticker-latest-run.json");
-  const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
+  const report = readRepositoryJson(reportFile, "utf8");
   const needsEditorialRefresh = story => chooseTitleImageMode(story).mode === "editorial" && (story.title_image?.mode !== "editorial" || ![C.prompt_version, "woek-editorial-3-concrete"].includes(story.title_image?.source_visual?.prompt_version));
   const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (refreshEditorial
     ? needsEditorialRefresh(story) || (story.title_image?.mode === "impact_card" && story.title_image.template_version !== C.template_version)
@@ -26,7 +27,7 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
     // bounded images at a time; no recurring paid all-history backfill is introduced.
     const queuedAt = new Date().toISOString();
     for (const story of selected) story.title_image = { ...story.title_image, retry_after: queuedAt, ...(refreshEditorial && needsEditorialRefresh(story) ? { refresh_prompt_version: C.prompt_version } : {}) };
-    fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
+    writeRepositoryJson(file, data);
   }
   const deadline = Date.now() + maxDurationMs;
   for (const story of selected) {
@@ -46,7 +47,7 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
     if (changed) data.public_updated_at = new Date().toISOString();
     // Persist each successfully published asset reference, even if a later item
     // fails. Never rewrite news text, editorial dates, versions or source history.
-    fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
+    writeRepositoryJson(file, data);
   }
   if (!dryRun) {
     report.title_images = [...(report.title_images || []), ...results];

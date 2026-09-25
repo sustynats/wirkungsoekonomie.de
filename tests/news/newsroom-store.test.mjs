@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { readNewsroom, writeNewsroom, repositoryJson } from '../../scripts/news/newsroom-store.mjs';
+import { readNewsroom, writeNewsroom, repositoryJson, readRepositoryJson, writeRepositoryJson, decodeNewsroom } from '../../scripts/news/newsroom-store.mjs';
+import { pathToFileURL } from 'node:url';
 import { oversizedGitEntries } from '../../scripts/news/check-git-size.mjs';
 
 function fixture(t) {
@@ -59,4 +60,22 @@ test('large ordinary JSON stores lose whitespace only', () => {
   const bytes = repositoryJson(value);
   assert.deepEqual(JSON.parse(bytes), value);
   assert.equal(bytes, JSON.stringify(value) + '\n');
+});
+
+test('canonical story adapter preserves complete records, histories and approvals without changing public JSON', t => {
+  const file = path.join(path.dirname(fixture(t)), 'stories.json');
+  const value = { schema_version:'1.1', stories:[{story_id:'a',manual_only:true,final_approval_required:true,versions:[{text:'Grüße — 🌍'}],sources:[{url:'https://example.test/'}]}],updated_at:'2026-09-25T20:00:00Z' };
+  fs.writeFileSync(file, JSON.stringify(value));
+  assert.deepEqual(readRepositoryJson(pathToFileURL(file)), value);
+  const manifest = writeRepositoryJson(file, value);
+  assert.ok(manifest.storage_format);
+  assert.deepEqual(readRepositoryJson(file), value);
+  const first = fs.readFileSync(file);
+  writeRepositoryJson(file, value);
+  assert.deepEqual(fs.readFileSync(file), first);
+  const json = path.join(path.dirname(file),'feed.json');
+  writeRepositoryJson(json, value);
+  assert.deepEqual(JSON.parse(fs.readFileSync(json)), value);
+  assert.deepEqual(decodeNewsroom(manifest, part => fs.readFileSync(`${file}.parts/${part.sha256}.json`)),value);
+  assert.throws(()=>decodeNewsroom(manifest,()=>Buffer.from('[]')),/CORRUPT/);
 });

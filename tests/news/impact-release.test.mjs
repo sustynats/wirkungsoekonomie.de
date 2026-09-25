@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import {isGroundedOpenDimension} from '../../scripts/news/impact-potential.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -8,7 +9,7 @@ import { storyToTitleInput } from '../../scripts/news/title-image/index.mjs';
 import {syntheticPotentialAssessment} from './fixtures/impact21.mjs';
 import {assessmentBasis} from '../../scripts/news/migrate-impact-assessments.mjs';
 import {deriveStatusPresentation} from '../../scripts/news/impact-potential.mjs';
-const catalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+const catalog = readRepositoryJson('data/news/stories.json').stories;
 
 test('atomic rollback hides incomplete profiles across cards, detail, API and title images, preserving news', () => {
   assert.equal(PUBLIC_IMPACT_PROFILE_VERSION, null);

@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../news/newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -447,7 +448,7 @@ export function selbsttestCheck(outcome) {
 
 export async function main() {
   const now = new Date().toISOString();
-  const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
+  const read = file => readRepositoryJson(path.join(ROOT, file), 'utf8');
   const repo = process.env.GITHUB_REPOSITORY || 'sustynats/wirkungsoekonomie.de';
   if (repo !== 'sustynats/wirkungsoekonomie.de') throw new Error('MONITOR_REPOSITORY_NOT_ALLOWED');
   const dryRun = process.argv.includes('--dry-run');

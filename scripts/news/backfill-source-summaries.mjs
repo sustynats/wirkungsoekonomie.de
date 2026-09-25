@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -54,7 +55,7 @@ function wordCount(value) {
   return String(value || "").trim().split(/\s+/).filter(Boolean).length;
 }
 
-const store = JSON.parse(fs.readFileSync(STORIES_FILE, "utf8"));
+const store = readRepositoryJson(STORIES_FILE, "utf8");
 let updated = 0;
 for (const story of store.stories) {
   if (!story.published || story.listed === false) continue;
@@ -77,8 +78,6 @@ if (process.argv.includes("--check")) {
   if (updated) throw new Error(`SOURCE_SUMMARY_BACKFILL_REQUIRED:${updated}`);
   console.log("Quellenzusammenfassungen vollständig und gültig.");
 } else {
-  const temporaryFile = `${STORIES_FILE}.tmp-${process.pid}`;
-  fs.writeFileSync(temporaryFile, `${JSON.stringify(store, null, 2)}\n`, "utf8");
-  fs.renameSync(temporaryFile, STORIES_FILE);
+  writeRepositoryJson(STORIES_FILE, store);
   console.log(`Quellenzusammenfassungen ergänzt: ${updated}.`);
 }

@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -48,7 +49,7 @@ test('list and detail explain signed potentials without a mixed total or hidden 
 });
 
 test('a legacy copy of the Dröge case is not silently promoted by presentation',()=>{
-  const s=JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.slug==='droge-mussen-antrag-zum-afd-verbot-einbringen-ac1645');
+  const s=readRepositoryJson('data/news/stories.json').stories.find(s=>s.slug==='droge-mussen-antrag-zum-afd-verbot-einbringen-ac1645');
   assert.ok(s);delete s.impact_assessment;delete s.impact_assessment_basis;
   const before=JSON.stringify(s);
   for(const html of [storyCard(s),storyPage(s)]) {
@@ -60,7 +61,7 @@ test('a legacy copy of the Dröge case is not silently promoted by presentation'
 });
 
 test('completed production reassessments retain all three public magnitude bars',()=>{
-  const assessed=JSON.parse(fs.readFileSync('data/news/stories.json')).stories.filter(s=>s.impact_assessment?.review?.status==='reassessed');
+  const assessed=readRepositoryJson('data/news/stories.json').stories.filter(s=>s.impact_assessment?.review?.status==='reassessed');
   assert.ok(assessed.length,'the checked publication fixtures include completed assessments');
   for(const story of assessed){
     const before=JSON.stringify(story);
@@ -81,7 +82,7 @@ test('legacy mixed records are not silently promoted to the new semantic contrac
 });
 
 test('newly researched manual reviews use the same contract as automatic assessments',()=>{
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-09-soeder-afd-abgrenzung.json'));
+  const review=readRepositoryJson('content/news/reviews/2026-09-09-soeder-afd-abgrenzung.json');
   const registry=loadNewsRegistry(process.cwd());
   const now='2026-09-10T00:00:00Z';
   assert.deepEqual(prepareReviewedStory(review,registry,[],now).errors,[]);
@@ -90,7 +91,7 @@ test('newly researched manual reviews use the same contract as automatic assessm
 });
 
 test('an unscoped historical judgment cannot appear as a verdict about the headline event',()=>{
-  const s=JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.slug==='afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87');
+  const s=readRepositoryJson('data/news/stories.json').stories.find(s=>s.slug==='afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87');
   assert.ok(s);delete s.impact_assessment;delete s.impact_assessment_basis;
   const before=JSON.stringify(s);
   assert.equal(dimensionAssessment(s.analysis,'democracy').status,'unscoped');

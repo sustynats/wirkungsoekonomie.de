@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { LAGEN, MAX_ENTRIES, berlinInstant, previousIsoDate, lageWindow, dueLage, lageId,
@@ -147,7 +148,7 @@ test('alte Lagen fallen aus der Ablage, nach Tag gruppiert bleibt die Folge lesb
 test('die Lage rendert wörtlich dieselbe Karte wie die Ticker-Liste', async () => {
   const fs = await import('node:fs');
   const { storyCard, lageBody } = await import('../../scripts/news/build.mjs');
-  const katalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories
+  const katalog = readRepositoryJson('data/news/stories.json').stories
     .filter((s) => s.published && s.analysis && s.listed !== false);
   assert.ok(katalog.length > 50, 'der Test läuft gegen den echten Bestand');
   const echte = katalog[0];

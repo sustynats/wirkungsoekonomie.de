@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -328,7 +329,7 @@ test("Prompt behandelt externe Texte als untrusted input und fordert Sachverhalt
 test("Backfill ist idempotent, versioniert und protokolliert reale Nutzung", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-media-backfill-"));
   fs.mkdirSync(path.join(root, "data/news"), { recursive: true });
-  const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
+  const production = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url), "utf8");
   const climate = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
   delete climate.analysis.media_impact;
   delete climate.analysis.media_analysis_version;
@@ -348,14 +349,14 @@ test("Backfill ist idempotent, versioniert und protokolliert reale Nutzung", asy
   assert.equal(first.completed, 1, JSON.stringify(first));
   assert.equal(first.quality_retries, 1);
   assert.equal(first.ai_requests, 2);
-  const saved = JSON.parse(fs.readFileSync(path.join(root, "data/news/stories.json"))).stories[0];
+  const saved = readRepositoryJson(path.join(root, "data/news/stories.json")).stories[0];
   assert.equal(saved.current_version, climate.current_version + 1);
   assert.equal(saved.analysis.media_analysis_version, MEDIA_ANALYSIS_VERSION);
   assert.ok(saved.analysis.media_impact.relevant);
   const second = await backfillMediaImpact({ root, limit: 2, dryRun: false, now: "2026-09-05T07:05:00Z", callAiImpl, build: () => {} });
   assert.equal(second.candidates, 0, JSON.stringify({ second, stored: saved.analysis.media_trigger_fingerprint, current: detectMediaImpactTrigger(saved).fingerprint }));
   assert.equal(calls, 2);
-  const logged = JSON.parse(fs.readFileSync(path.join(root, "data/news/usage.json"))).runs[0];
+  const logged = readRepositoryJson(path.join(root, "data/news/usage.json")).runs[0];
   assert.ok(logged.counts.media_check_tokens > 0);
   assert.ok(logged.ai.media_check_cost_usd > 0);
   assert.equal(logged.ai.requests, 2);
@@ -366,7 +367,7 @@ test('Medien-Backfill protokolliert verworfene Antwortkosten, ohne einen Artikel
     const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-media-cost-'));
     t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
     fs.mkdirSync(path.join(root,'data/news'),{recursive:true});
-    const production=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url),'utf8'));
+    const production=readRepositoryJson(new URL('../../data/news/stories.json',import.meta.url),'utf8');
     const climate=structuredClone(production.stories.find(entry=>entry.slug.includes('klimaextremismus')));
     for(const key of ['media_impact','media_analysis_version','media_checked_at','media_trigger_fingerprint']) delete climate.analysis[key];
     const store={schema_version:'1.1',stories:[climate]};
@@ -380,8 +381,8 @@ test('Medien-Backfill protokolliert verworfene Antwortkosten, ohne einen Artikel
     assert.equal(result.completed,0);
     assert.equal(result.ai_requests,1);
     assert.equal(result.media_check_cost_usd,budgetBlocked?0:0.002865);
-    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'data/news/stories.json'))),store);
-    assert.equal(JSON.parse(fs.readFileSync(path.join(root,'data/news/usage.json'))).runs[0].ai.estimated_cost_usd,budgetBlocked?0:0.002865);
+    assert.deepEqual(readRepositoryJson(path.join(root,'data/news/stories.json')),store);
+    assert.equal(readRepositoryJson(path.join(root,'data/news/usage.json')).runs[0].ai.estimated_cost_usd,budgetBlocked?0:0.002865);
     if(budgetBlocked) assert.equal(result.budget_block_scope,'news');
   }
 });
@@ -405,7 +406,7 @@ test("verschärfte Trigger entfernen einen nicht mehr relevanten Mediencheck ohn
   fs.writeFileSync(path.join(root, "data/news/state.json"), JSON.stringify({ budget_fx: { rate_usd_per_eur: 1.1, rate_date: "2026-09-05", checked_at: "2026-09-05T06:00:00Z" } }));
   let calls = 0;
   const result = await backfillMediaImpact({ root, dryRun: false, now: "2026-09-05T08:00:00Z", callAiImpl: async () => { calls += 1; }, build: () => {} });
-  const saved = JSON.parse(fs.readFileSync(path.join(root, "data/news/stories.json"))).stories[0];
+  const saved = readRepositoryJson(path.join(root, "data/news/stories.json")).stories[0];
   assert.equal(result.cleaned, 1);
   assert.equal(calls, 0);
   assert.equal(saved.analysis.media_impact, null);
@@ -426,7 +427,7 @@ test("bestehende Medienchecks werden ohne KI-Aufruf deterministisch normalisiert
   fs.writeFileSync(path.join(root, "data/news/state.json"), JSON.stringify({ budget_fx: { rate_usd_per_eur: 1.1, rate_date: "2026-09-05", checked_at: "2026-09-05T06:00:00Z" } }));
   let calls = 0;
   const result = await backfillMediaImpact({ root, dryRun: false, now: "2026-09-05T08:05:00Z", callAiImpl: async () => { calls += 1; }, build: () => {} });
-  const saved = JSON.parse(fs.readFileSync(path.join(root, "data/news/stories.json"))).stories[0];
+  const saved = readRepositoryJson(path.join(root, "data/news/stories.json")).stories[0];
   assert.equal(result.normalized, 1);
   assert.equal(calls, 0);
   assert.equal(saved.analysis.media_impact.framing.media_usage, "headline");
@@ -434,7 +435,7 @@ test("bestehende Medienchecks werden ohne KI-Aufruf deterministisch normalisiert
 });
 
 test("Detailseite zeigt den Check nur bei Relevanz und nach der Ereignisanalyse", () => {
-  const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
+  const production = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url), "utf8");
   const item = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
   item.analysis.media_impact = validMedia();
   const html = storyPage(item);
@@ -446,7 +447,7 @@ test("Detailseite zeigt den Check nur bei Relevanz und nach der Ereignisanalyse"
 });
 
 test("Medienanzeige trennt redaktionelle Framequelle und Sprecher der Akteursaussage", () => {
-  const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
+  const production = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url), "utf8");
   const item = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
   const media = validMedia();
   media.attribution = { ...media.attribution, speaker: "Redaktionelle Frage", frame_source: "Überschrift des Testmediums", usage_type: "editorial", attribution_quality: "editorial" };
@@ -468,7 +469,7 @@ test("Medienanzeige trennt redaktionelle Framequelle und Sprecher der Akteursaus
 });
 
 test("Medienanzeige übersetzt Zuordnungscodes und zeigt keine unbekannten internen Kategorien", () => {
-  const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
+  const production = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url), "utf8");
   const item = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
   const media = validMedia();
   item.analysis.media_impact = media;
