@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-25T10:00:00.000Z",
+  "updated_at": "2026-09-25T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-25-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-25",
+      "window_from": "2026-09-25T10:00:00.000Z",
+      "window_to": "2026-09-25T16:00:00.000Z",
+      "stand": "2026-09-25T16:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 3,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-34f66419180bd19b",
+          "slug": "verdachtiger-in-u-haft-mann-soll-ex-frau-mit-cuttermesser-attackiert-haben-not-op-0bd19b",
+          "title": "Laut stern: Verdächtiger nach Messerattacke auf Ex-Frau in Untersuchungshaft",
+          "state": "neu",
+          "at": "2026-09-25T15:13:07.912Z",
+          "score": 5.8698
+        },
+        {
+          "story_id": "wt-a1c27db4339f348b",
+          "slug": "polizeieinsatz-19-jahriger-wehrt-sich-gegen-rauber-schuss-in-den-fuss-9f348b",
+          "title": "Laut stern: 19-Jähriger wehrt sich gegen Räuber in Gladbeck",
+          "state": "neu",
+          "at": "2026-09-25T11:58:39.875Z",
+          "score": 9.3296
+        },
+        {
+          "story_id": "wt-25dd9d860bfe5d98",
+          "slug": "kriminalitat-messerattacke-in-hildesheim-27-jahriger-notoperiert-fe5d98",
+          "title": "Laut stern: 27-Jähriger nach Messerattacke in Hildesheim notoperiert",
+          "state": "neu",
+          "at": "2026-09-25T11:15:43.235Z",
+          "score": 5.2103
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Laut Deutschlandfunk: Gegenseitige Angriffe auf Infrastruktur und Industrieanlagen dauern an",
+          "state": "fortgeschrieben",
+          "at": "2026-09-25T10:55:44.771Z",
+          "score": 8.9049
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-25-mittagslage",
       "slot": "mittagslage",
