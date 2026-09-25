@@ -45,7 +45,7 @@ import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { chooseTitleImageMode } from "./title-image/policy.mjs";
 import { IMAGE_CONFIG, digest as imageDigest } from "./title-image/policy.mjs";
-import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, sharedHourlyRoom, editorialReserve, waitingCount } from "./stundenkontingent.mjs";
+import { independentHourlyRoom } from "./stundenkontingent.mjs";
 import { sameEventByFacts } from "./ereignisfakten.mjs";
 import { configuredHourlyQuota } from "./stundenkontingent.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
@@ -1580,30 +1580,18 @@ export async function runWirkungsticker(options = {}) {
     : { ...budgetPacing({ budget, spent: spendBefore, spentLastHour: aiSpendInWindow(usage, now), now, configured: configuredStoriesPerHour }), enabled: true };
   const aiStoriesInLastHour = aiStoriesInWindow(usage, now);
   const aiCallsInLastHour = aiRequestsInWindow(usage, now);
-  // Ein Kontingent fuer alles, was bezahlt wird: eine Nachbesprechung oder eine
-  // Analyse der Redaktionsspur belegt einen Platz dieser Stunde (Natalie am
-  // 16.09.: „dann kommt dann ein Artikel jeweils weniger"). Ohne Ablage bleibt
-  // es bei der eigenen Zaehlung - dann drosselt nur diese Spur sich selbst.
-  let editorialDraftsInLastHour = 0, editorialWaiting = 0;
-  if (bridge && !options.dryRun) {
-    try { editorialDraftsInLastHour = editorialDraftsInWindow(await bridge.store.observation(EDITORIAL_HOUR_KEY), now); }
-    catch { editorialDraftsInLastHour = 0; }
-    try { editorialWaiting = waitingCount(await bridge.store.observation(EDITORIAL_WAITING_KEY), now); }
-    catch { editorialWaiting = 0; }
-  }
-  // Diese Spur laeuft vier Minuten vor der Redaktionsspur. Ohne Reserve nimmt
-  // sie alle Plaetze und die Analysen kommen nie dran - siehe editorialReserve.
-  const editorialSlotReserve = editorialReserve({ configured: configuredStoriesPerHour, waiting: editorialWaiting, editorialDrafts: editorialDraftsInLastHour });
-  const hourlyRoom = sharedHourlyRoom({ configured: configuredStoriesPerHour, tickerStories: aiStoriesInLastHour, editorialDrafts: editorialDraftsInLastHour, reserve: editorialSlotReserve });
+  // Getrennte Kontingente seit Natalies Entscheidung vom 25.09.: Entwürfe
+  // verdrängen keine Nachrichten; eine volle Nachrichtenstunde sperrt keine
+  // Nachbesprechung. Es entfallen zugleich zwei Remote-Abfragen je Lauf.
+  const hourlyRoom = independentHourlyRoom({ configured: configuredStoriesPerHour, used: aiStoriesInLastHour });
   const maxAiCallsPerHour = pacing.paused ? 0 : hourlyRoom;
   const remainingAiCallsThisHour = maxAiCallsPerHour;
   const maxAiStories = Math.min(configuredMaxAiStories, maxAiCallsPerHour);
   report.ai_hourly_limit = maxAiCallsPerHour;
   report.ai_hourly_limit_configured = configuredStoriesPerHour;
   report.ai_stories_in_last_hour = aiStoriesInLastHour;
-  report.editorial_drafts_in_last_hour = editorialDraftsInLastHour;
-  report.editorial_waiting = editorialWaiting;
-  report.editorial_slot_reserve = editorialSlotReserve;
+  report.hourly_quota_scope = 'news_only';
+  report.editorial_slot_reserve = 0;
   report.shared_hourly_room = hourlyRoom;
   report.ai_budget_pacing = { ...pacing, calls_this_month: monthlyAiCalls(usage, month) };
   report.ai_calls_in_last_hour = aiCallsInLastHour;

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { episodeUrlKey, parseYouTubeFeed, jsonValueAfter, inspectYouTubeEpisode, fetchYouTubeTranscript, matchingPodcastEpisode } from '../../scripts/news/youtube-episodes.mjs';
-import { knownEpisodeUrls, pageObservationKey, loadShows, buildEpisodeRequest } from '../../scripts/news/sendungs-kandidaten.mjs';
+import { knownEpisodeUrls, pageObservationKey, loadShows, buildEpisodeRequest, showEpisodes } from '../../scripts/news/sendungs-kandidaten.mjs';
 
 const show = { id: 'serie', show_name: 'Serie', youtube_channel_id: 'UCtest', min_duration_seconds: 900 };
 const episode = { title: 'Das Gespräch mit einem Gast - Serie', page: 'https://www.youtube.com/watch?v=abcdefghijk', published_at: '2026-09-24T06:00:00Z', duration: 3600 };
@@ -48,4 +48,32 @@ test('three requested series use existing private approval route; no logos or au
     const { job } = buildEpisodeRequest({ ...episode, guid: 'youtube:abcdefghijk', transcripts: [] }, s, { owner: '1234567890123456', now: '2026-09-24T12:00:00Z' });
     assert.equal(job.input.manual_only, true); assert.equal(job.input.request.publication_intent, 'final_approval_required'); assert.equal(job.input.request.author_notes, '');
   }
+});
+
+test('blocked YouTube metadata falls back only to an unambiguous official audio episode, labelled Nachgehört', async () => {
+  const { matchingPodcastFallback } = await import('../../scripts/news/youtube-episodes.mjs');
+  const s = { ...show, feed: 'https://example.org/video-feed', podcast_feed: 'https://example.org/podcast-feed', kind: 'watched', provider: 'Test' };
+  const audio = { ...episode, page: 'https://example.org/audio-episode', media: 'https://example.org/e.mp3' };
+  assert.equal(matchingPodcastFallback({ ...episode, duration: null }, [audio], s), audio);
+  assert.equal(matchingPodcastFallback(episode, [audio, audio], s), null, 'mehrdeutige Zuordnung bleibt offen');
+  assert.equal(matchingPodcastFallback(episode, [{ ...audio, published_at: '2026-09-01' }], s), null);
+  const feed = `<feed><entry><yt:videoId>abcdefghijk</yt:videoId><title>${episode.title}</title><published>${episode.published_at}</published></entry></feed>`;
+  const podcast = `<rss><item><title>${episode.title}</title><link>${audio.page}</link><pubDate>${episode.published_at}</pubDate><itunes:duration>3600</itunes:duration><enclosure url="${audio.media}"/></item></rss>`;
+  const failures = [];
+  const fetchImpl = async url => ({ ok: true, text: async () => url === s.feed ? feed : url === s.podcast_feed ? podcast : 'var ytInitialPlayerResponse = {"playabilityStatus":{"status":"LOGIN_REQUIRED"}};' });
+  const list = await showEpisodes(s, fetchImpl, '2026-09-25T12:00:00Z', { onError: e => failures.push(e) });
+  assert.equal(list.length, 1); assert.equal(list[0].delivery_kind, 'listened'); assert.equal(list[0].page, audio.page);
+  assert.equal(list[0].youtube_caption, undefined); assert.equal(failures[0].fallback, 'official_podcast');
+  const { job } = buildEpisodeRequest(list[0], s, { owner: '1234567890123456', now: '2026-09-25T12:00:00Z' });
+  assert.equal(job.input.request.kind, 'listened'); assert.match(job.input.request.brief, /^Nachgehört:/);
+  assert.equal(job.input.request.publication_intent, 'final_approval_required');
+});
+
+test('one inaccessible video does not discard a later accessible episode', async () => {
+  const s = { ...show, feed: 'https://example.org/feed' };
+  const entry = id => `<entry><yt:videoId>${id}</yt:videoId><title>Gespräch mit einem Gast ${id}</title><published>2026-09-24T06:00:00Z</published></entry>`;
+  const failures = [];
+  const list = await showEpisodes(s, async url => ({ ok: true, text: async () => url === s.feed
+    ? `<feed>${entry('lmnopqrstuv')}${entry('abcdefghijk')}</feed>` : url.includes('lmnopqrstuv') ? '' : html() }), '2026-09-25T12:00:00Z', { onError: e => failures.push(e) });
+  assert.equal(list.length, 1); assert.equal(failures.length, 1); assert.equal(list[0].page, episode.page);
 });

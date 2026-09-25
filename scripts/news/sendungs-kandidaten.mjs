@@ -12,7 +12,7 @@ import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { decodeXml } from './lib.mjs';
 import { transcribeEpisode, fetchSubtitleTranscript } from './sendungs-transkript.mjs';
-import { episodeUrlKey, parseYouTubeFeed, inspectYouTubeEpisode, fetchYouTubeTranscript, matchingPodcastEpisode } from './youtube-episodes.mjs';
+import { episodeUrlKey, parseYouTubeFeed, inspectYouTubeEpisode, fetchYouTubeTranscript, matchingPodcastEpisode, matchingPodcastFallback } from './youtube-episodes.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const EPISODE_VERSION = 'sendungs-kandidaten-1';
@@ -149,13 +149,24 @@ export function requestNamesDate(text, publishedAt) {
     .formatToParts(date).reduce((all, part) => ({ ...all, [part.type]: part.value }), {});
   const day = Number(parts.day), month = Number(parts.month);
   const names = ['januar', 'februar', 'maerz', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'dezember'];
-  const compact = compactWords(text);
-  const pad = (n) => String(n).padStart(2, '0');
-  return [`${pad(day)}${pad(month)}`, `${day}${pad(month)}`, `${pad(day)}${month}`, `${day}${names[month - 1]}`, `${pad(day)}${names[month - 1]}`]
-    .some((needle) => compact.includes(needle));
+  const normalized = String(text).toLowerCase().replace(/ä/g, 'ae');
+  // Datumsgrenzen erhalten: zusammengezogene Ziffern, IDs und fremde Jahre
+  // sind kein Sendetag. Ein Nachrecherche-Datum ist ebenfalls kein Folgendatum.
+  return new RegExp(`(?:^|[^\\d])(?:0?${day}\\.\\s*0?${month}\\.(?:\\s*${parts.year}(?!\\d)|(?!\\s*\\d))|0?${day}\\.?\\s+${names[month - 1]}(?:\\s+${parts.year}(?!\\d)|(?!\\s*\\d))|${parts.year}-0?${month}-0?${day}(?!\\d))`, 'i').test(normalized);
 }
 
 export const AUFTRAG_VORLAUF_MS = 24 * 3600 * 1000;
+
+export function originalRequestTime(job) {
+  // Nachrecherchen setzen created_at neu; die Auftragskennung bleibt erhalten.
+  // Ihr ursprünglicher Zeitstempel verhindert, dass ein alter Auftrag plötzlich
+  // alle künftigen Folgen sperrt, nur weil er heute noch einmal bearbeitet wurde.
+  const id = String(job?.input?.job_id || job?.job_id || '');
+  const match = id.match(/^wt_(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z_/);
+  const encoded = match ? `${match[1]}-${match[2]}-${match[3]}T${match[4]}:${match[5]}:${match[6]}Z` : '';
+  const dates = [encoded, job?.created_at, job?.input?.created_at].map(Date.parse).filter(Number.isFinite);
+  return dates.length ? Math.min(...dates) : NaN;
+}
 
 export function duplicateRequestFor(episode, show, requests = []) {
   const showCompact = compactWords(show?.id);
@@ -173,10 +184,13 @@ export function duplicateRequestFor(episode, show, requests = []) {
     // die Reformen?"), und ebenso "Hart aber fair" - dasselbe Thema, eine
     // Woche spaeter, eine andere Sendung (21.09.2026). Ein Tag Spielraum
     // bleibt, damit "bitte heute Abend Lanz" die Folge vom Abend weiter meint.
-    const ordered = Date.parse(job?.created_at || job?.input?.created_at || '');
+    const ordered = originalRequestTime(job);
     if (Number.isFinite(ordered) && Number.isFinite(aired) && aired - ordered > AUFTRAG_VORLAUF_MS) continue;
     const request = job?.input?.request || job?.request || {};
-    const text = [request.brief, request.title, request.topic].filter(Boolean).join(' ');
+    // Vergleichssendungen und spätere Produktionsnotizen bestimmen nicht den
+    // Gegenstand des ursprünglichen Auftrags.
+    const text = [request.title, request.topic, request.brief].filter(Boolean).join(' ')
+      .split(/\n\s*Nachrecherche\b|gegenüber|im Vergleich (?:zu|mit)|anders als/i)[0];
     if (!text.trim() || !requestNamesShow(text, show)) continue;
     const words = topicWords(text);
     const shared = title.filter((word) => words.has(word));
@@ -192,7 +206,7 @@ const germanDuration = (s) => s ? `${Math.round(s / 60)} Minuten` : '';
 // Mirrors the private intake record so the editorial desk treats the proposal
 // exactly like a submitted request (same contract, same approval path).
 export function buildEpisodeRequest(episode, show, { owner, now, transcript = null, retry = false }) {
-  const kind = show.kind === 'listened' ? 'listened' : 'watched', label = LABEL[kind];
+  const kind = episode.delivery_kind === 'listened' || show.kind === 'listened' ? 'listened' : 'watched', label = LABEL[kind];
   const links = [episode.page, episode.media, transcript?.url].filter((u) => /^https:\/\//.test(u || '')).slice(0, 4);
   const brief = [`${label}: ${show.show_name} – „${episode.title}“ vom ${germanDate(episode.published_at)}.`,
     episode.summary ? `Beschreibung laut Anbieter: ${episode.summary}` : null,
@@ -307,7 +321,7 @@ export async function fetchMediathekEpisodes(show, fetchImpl = fetch, timeoutMs 
     return mediathekEpisodes(data?.result?.results, show);
   } finally { clearTimeout(timer); }
 }
-export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toISOString()) {
+export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toISOString(), { onError = null } = {}) {
   if (show.mediathek) return fetchMediathekEpisodes(show, fetchImpl);
   const xml = await fetchShowFeed(show, fetchImpl);
   if (!show.youtube_channel_id) return parseEpisodes(xml, show);
@@ -317,15 +331,28 @@ export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toI
     // Auxiliary source failure must not hide otherwise usable video captions.
     try { podcast = parseEpisodes(await fetchShowFeed({ feed: show.podcast_feed }, fetchImpl), show); } catch { /* captions remain available */ }
   }
-  const episodes = [];
+  const episodes = [], failures = [];
   for (const candidate of candidates) {
-    const episode = await inspectYouTubeEpisode(candidate, show, fetchImpl);
+    let episode;
+    try { episode = await inspectYouTubeEpisode(candidate, show, fetchImpl); }
+    catch (error) {
+      // Ein gesperrtes oder entferntes Video darf nicht die gesamte Reihe
+      // einschließlich älterer, zugänglicher Folgen verschwinden lassen.
+      const audio = matchingPodcastFallback(candidate, podcast, show);
+      const failure = { show_id: show.id, url: candidate.page, error: String(error.message || error).slice(0, 80), ...(audio ? { fallback: 'official_podcast' } : {}) };
+      failures.push(failure); onError?.(failure);
+      if (audio) episodes.push({ ...candidate, page: audio.page, media: audio.media, duration: audio.duration,
+        transcripts: audio.transcripts, delivery_kind: 'listened', podcast_basis: audio.page });
+      if (episodes.length >= 3) break;
+      continue;
+    }
     if (!episode) continue;
     const match = matchingPodcastEpisode(episode, podcast, show);
     if (match) Object.assign(episode, { media: match.media, transcripts: match.transcripts, podcast_basis: match.page || show.podcast_feed });
     episodes.push(episode);
     if (episodes.length >= 3) break;
   }
+  if (!episodes.length && failures.length && !onError) throw new Error(failures[0].error);
   return episodes;
 }
 
@@ -380,7 +407,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
         // gilt das Fenster ihrer Sendung, sonst waere ihre letzte Folge nie
         // vorgeschlagen worden.
         const showAgeDays = Number(show.max_age_days) > 0 ? Number(show.max_age_days) : maxAgeDays;
-        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl, now), now, { maxAgeDays: showAgeDays, limit: 3 });
+        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl, now, { onError: error => feedErrors.push(error) }), now, { maxAgeDays: showAgeDays, limit: 3 });
         for (const episode of episodes) {
           // Die Kennung der Mediathek wechselt, sobald die untertitelte Fassung
           // gewinnt. Der Vermerk haengt deshalb an der Folge selbst (Titel ohne

@@ -95,3 +95,14 @@ export function matchingPodcastEpisode(video, episodes, show) {
     && Math.abs(Date.parse(e.published_at) - Date.parse(video.published_at)) <= 36 * 3600000
     && e.duration > 0 && Math.abs(e.duration - video.duration) < 300) || null;
 }
+
+// Wenn YouTube im Serverlauf keine Metadaten liefert, kann die ausdrücklich
+// zugeordnete offizielle Podcastfassung als Audio besprochen werden. Keine
+// Videodauer, Untertitel oder visuellen Beobachtungen daraus ableiten.
+export function matchingPodcastFallback(video, episodes, show) {
+  const title = comparableEpisodeTitle(video.title, show);
+  const matches = episodes.filter(e => title.length >= 15 && comparableEpisodeTitle(e.title, show) === title
+    && Math.abs(Date.parse(e.published_at) - Date.parse(video.published_at)) <= 36 * 3600000
+    && e.duration >= (show.min_duration_seconds || 900) && /^https:\/\//.test(e.page || ''));
+  return matches.length === 1 ? matches[0] : null;
+}

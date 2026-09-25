@@ -5,6 +5,36 @@ Verbindliche Betriebsarchitektur des Wirkungstickers. Sie ersetzt die Dropbox-Ch
 
 ## Betriebsschalter und Wiederanlauf (23.09.2026)
 
+### Korrektur vom 25.09.2026: unabhängige Redaktionsspur
+
+Natalie hat die Kopplung von Nachrichten und Nachbesprechungen/Analysen ausdrücklich
+aufgehoben. Die nachstehenden historischen Hinweise auf ein gemeinsames Kontingent
+sind damit überholt. Die Redaktion zählt nur eigene Entwürfe (standardmäßig zwei je
+Stunde, `WOEK_EDITORIAL_MAX_JOBS_PER_HOUR`); ihr vorhandener Tagesdeckel, Quellenprüfung,
+Einmalverarbeitung und `single_final_approval` bleiben erhalten. Die Nachrichtenspur
+zieht weder Redaktionsentwürfe noch Reservierungen ab. Nachrichten-Monatsbudget und
+Tag-/Nachtprofil werden nicht verändert. Unabhängigkeit bedeutet nicht Kostenfreiheit:
+Redaktions- und Transkriptionskosten werden weiterhin separat protokolliert.
+
+Die Sendungszuordnung berücksichtigt den ursprünglichen Zeitstempel der Auftrags-ID,
+nicht allein das durch Nachrecherche veränderte `created_at`. Vergleichssendungen und
+Nachrecherche-Vermerke bestimmen nicht den Gegenstand. Damit sperrt ein alter
+Hart-aber-fair-Auftrag keine neuen Lanz-/Illner-Ausgaben. Keine historischen Aufträge
+werden gelöscht, keine Zustimmung wird erzeugt und keine alte Folge neu veröffentlicht.
+
+Ein gesperrtes YouTube-Video blockiert nicht mehr die gesamte Sendungsreihe. Ist eine
+offizielle Podcastfassung konfiguriert, darf ausschließlich eine eindeutig nach Titel
+und Veröffentlichungszeit zugeordnete Langfassung als **Nachgehört** weiterlaufen;
+deren Wortlaut muss weiterhin vorliegen. Daraus werden keine visuellen Beobachtungen
+abgeleitet. Ohne sichere Zuordnung bleibt die Folge mit sichtbarem Fehler zurück.
+
+Der Worker prüft die letzte persönliche Hauptsektion bereits vor der Übergabe an die
+Redaktionsapp. Archivierte, abgewiesene Antworten können ohne neuen Modellaufruf erneut
+übergeben werden, wenn ausschließlich bestehende technische Normalisierungen genügen
+(etwa „Quellen und Werkmetadaten“ → „Quellen“). Originalhash, aktuelle Auftragsbindung
+und sämtliche Inhaltsgates werden geprüft; das Original bleibt im Fehlerarchiv. Keine
+fehlende Einordnung wird ergänzt, keine Freigabe erteilt, keine Ausgabe überschrieben.
+
 Natalie hat am 23.09. ausdrücklich den Wiederanlauf angeordnet. Eine veraltete lokale
 Überwachungsanweisung hatte die Pause des früheren Oracle-Processors vom 14.09. erneut
 auf die inzwischen aktiven GitHub-Routen übertragen. Diese zusätzliche Sperre ist
