@@ -33,8 +33,12 @@ export function validateEditorialRevisionPreview(preview){
   ||target.base_hash!==editorialRevisionBaseHash(base)||preview.title!==base.title)fail();
  if(base.format==='approved_editorial'){
   if(preview.format!==base.subtype||!['body_markdown','correction_note'].every(k=>typeof patch[k]==='string'&&patch[k].trim())
-   ||Object.keys(patch).some(k=>!['body_markdown','correction_note'].includes(k))
+   ||Object.keys(patch).some(k=>!['body_markdown','correction_note','subtitle'].includes(k))
    ||patch.body_markdown!==preview.markdown||patch.correction_note.length>1500)fail();
+  // Vorspann und Artikeltext gehoeren zu derselben freizugebenden Fassung.
+  // Ein korrigierter Einstieg darf nicht neben einem veralteten Hero/Teaser stehen.
+  if(Object.hasOwn(patch,'subtitle')&&(typeof patch.subtitle!=='string'||!patch.subtitle.trim()
+   ||patch.subtitle.length>8000||patch.subtitle!==preview.subtitle))fail();
   assertFinalPersonalSection(patch.body_markdown);
  }else if(base.format==='book_and_impact'){
   if(preview.format!=='book_review'||Object.keys(patch).join(',')!=='body_markdown'
@@ -53,6 +57,7 @@ export function validateEditorialRevisionPreview(preview){
 export function reviseEditorial(base,revision,{at,content_hash}={}){
  if(revision.target.base_hash!==editorialRevisionBaseHash(base))throw Error('EDITORIAL_REVISION_BASE_CHANGED');
  const value={...base,...structuredClone(revision.patch),author_perspective_position:'last'};
+ if(base.format==='approved_editorial'&&Object.hasOwn(revision.patch,'subtitle'))value.teaser=value.subtitle;
  if(base.format==='book_and_impact')value.rendered=base.self_authored_work
   ?renderEditorialMarkdownWithFootnotes(value.body_markdown):renderEditorialMarkdown(value.body_markdown);
  if(at)value.updated_at=at;

@@ -39,6 +39,7 @@ export async function importApprovedEditorials(store,root){
    const base=applyApprovedEditorialRevisions(originals,root).find(a=>a.analysis_id===edition.analysis_id);
    if(!base)throw Error('EDITORIAL_REVISION_TARGET_MISSING');
    validateEditorialRevisionPreview({format:base.format==='book_and_impact'?'book_review':base.subtype||'opinion_analysis',title:base.title,
+    subtitle:edition.patch.subtitle??base.subtitle,
     markdown:edition.patch.body_markdown||'## Meine Einordnung\n\n'+edition.patch.author_perspective?.paragraphs.join('\n\n'),
     editorial_revision:{base,target:edition.target,patch:edition.patch}});
    revisions.editions.push(edition);
