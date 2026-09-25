@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,8 +9,8 @@ import {syntheticMediaReview} from './fixtures/media-review.mjs';
 
 const now='2026-09-13T12:00:00Z';
 function fixture() {
- const r=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
- const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===r.story_id));
+ const r=readRepositoryJson('content/news/reviews/2026-09-10-impact-semantics.json').reviews[0];
+ const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===r.story_id));
  record.impact_sources=r.assessment_sources;
  const output={impact_assessment:syntheticImpact21(r.impact_assessment),
   review:{status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Dieser konkrete Prüfpunkt wurde anhand der gelieferten Belege geprüft.'}])),findings:[]},

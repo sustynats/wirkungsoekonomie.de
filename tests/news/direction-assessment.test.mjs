@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import { IMPACT_PROMPT_RULE, IMPACT_PROMPT_DEFS } from '../../scripts/news/impact-assessment.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -251,7 +252,7 @@ test('adoption still permits ex-ante risk; retrospective outcome requires a sepa
 });
 
 test('full validation rejects malformed fresh direction without invalidating historical publications',()=>{
-  const stories=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+  const stories=readRepositoryJson('data/news/stories.json').stories;
   const s=stories.find(s=>s.published&&validateAnalysis({source_summary:s.source_summary,...s.analysis},s,{persisted:true}).length===0);
   const a={source_summary:s.source_summary,...structuredClone(s.analysis),...fixture(),story_id:s.story_id};
   // This test exercises legacy direction fields even when the live fixture
@@ -275,7 +276,7 @@ test('missing single-path directions are not displayed as open judgments; orders
 });
 
 test('editorial mixed direction also requires grounded positive paths',()=>{
-  const all=JSON.parse(fs.readFileSync('data/news/editorial-analyses.json')).analyses;
+  const all=readRepositoryJson('data/news/editorial-analyses.json').analyses;
   const a=structuredClone(all.find(a=>a.editorial_rules_version&&editorialJudgmentErrors(a).length===0));
   for(const d of Object.values(a.subject_dimensions))d.direction='mixed';
   for(const s of a.sections)for(const i of s.visual?.items||[])if(i.direction==='positive')i.direction='mixed';

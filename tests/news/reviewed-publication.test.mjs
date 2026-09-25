@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
@@ -11,13 +12,13 @@ import { prepareEditorialReview } from "../../scripts/news/publish-editorial-rev
 import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
 import { validateApprovedNews } from '../../scripts/news/bridge/approved-news.mjs';
 
-const review = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url)));
+const review = readRepositoryJson(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url));
 const registry = loadNewsRegistry(fileURLToPath(new URL("../../", import.meta.url)));
 const now = "2026-09-05T23:00:00Z";
 
-const mediaReview = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/seelze-media-2026-09-06.json", import.meta.url)));
+const mediaReview = readRepositoryJson(new URL("../../content/news/reviews/seelze-media-2026-09-06.json", import.meta.url));
 function originalMediaStory() {
-  const item = structuredClone(JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(story => story.story_id === mediaReview.story_id));
+  const item = structuredClone(readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories.find(story => story.story_id === mediaReview.story_id));
   item.title = item.sources[0].title;
   item.analysis = structuredClone(item.versions[0].analysis);
   item.source_summary = item.versions[0].source_summary;
@@ -149,12 +150,12 @@ test("undated official context is explicit, never a made-up news date", () => {
 });
 test("new concrete candidacy development is not automatically merged into generic election coverage", () => {
   const record = prepareReviewedStory(review, registry, [], now).record;
-  const stories = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories;
+  const stories = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories;
   assert.equal(duplicateGroups([...stories.filter(story => story.story_id !== record.story_id), record]).some(group => group.duplicate_ids.includes(record.story_id)), false);
 });
 
-const debateReview = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/2026-09-09-generaldebatte-nachricht.json", import.meta.url)));
-const debateOpinion = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/2026-09-09-generaldebatte-meinung-analyse.json", import.meta.url)));
+const debateReview = readRepositoryJson(new URL("../../content/news/reviews/2026-09-09-generaldebatte-nachricht.json", import.meta.url));
+const debateOpinion = readRepositoryJson(new URL("../../content/news/reviews/2026-09-09-generaldebatte-meinung-analyse.json", import.meta.url));
 function pendingDebate() {
   return { story_id: debateReview.story_id, slug: "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce", event_id: "original-debate-event", published: false, content_hash: debateReview.expected_content_hash, sources: structuredClone(debateReview.sources), first_seen: "2026-09-09T07:00:00Z", versions: [] };
 }

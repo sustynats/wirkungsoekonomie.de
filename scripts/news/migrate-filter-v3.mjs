@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -12,7 +13,7 @@ function storyContentHash(story) {
   return sha256(story.sources.map((source) => `${source.url}:${source.content_hash}`).sort().join("\n"));
 }
 
-const data = JSON.parse(fs.readFileSync(STORIES_FILE, "utf8"));
+const data = readRepositoryJson(STORIES_FILE, "utf8");
 const canonical = data.stories.find((story) => story.story_id === CANONICAL_ID);
 const duplicate = data.stories.find((story) => story.story_id === DUPLICATE_ID);
 if (!canonical || !duplicate) throw new Error("FILTER_V3_MIGRATION_STORIES_MISSING");
@@ -36,7 +37,7 @@ if (duplicate.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE") {
     note: "Die Meldung beschreibt denselben deutschen Kapazitätsmechanismus wie die fortgeführte Wirkungsakte. Beide Primärquellen werden dort gemeinsam ausgewertet.",
   };
 
-  fs.writeFileSync(STORIES_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  writeRepositoryJson(STORIES_FILE, data);
   console.log(`Zusammengeführt: ${DUPLICATE_ID} -> ${CANONICAL_ID}`);
 } else {
   console.log("Filter-v3-Datenmigration war bereits angewendet.");

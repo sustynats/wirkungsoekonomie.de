@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../newsroom-store.mjs';
 import fs from 'node:fs';
 import { bridgeSession } from './remote.mjs';
 import { DropboxChatGPTBridgeProvider } from './provider.mjs';
@@ -9,7 +10,7 @@ const { store, transport } = bridgeSession();
 const now = new Date().toISOString();
 await store.acquire(now, 'test');
 try {
-  const stories = JSON.parse(fs.readFileSync(new URL('../../../data/news/stories.json', import.meta.url))).stories;
+  const stories = readRepositoryJson(new URL('../../../data/news/stories.json', import.meta.url)).stories;
   const registry = loadNewsRegistry(new URL('../../../', import.meta.url).pathname);
   const requested = process.argv.find(a => a.startsWith('--story='))?.slice(8);
   const candidates = stories.filter(s => !s.published && !s.retired && s.listed !== false && s.sources?.length

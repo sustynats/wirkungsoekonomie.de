@@ -1,10 +1,11 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { evidenceLevelLabel, storyPage } from "../../scripts/news/build.mjs";
 import { readerHtmlHasEditorialResidue } from "../../scripts/news/reader-copy.mjs";
 
-const fixture = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(story => story.published && story.listed !== false && story.analysis && story.news_status);
+const fixture = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories.find(story => story.published && story.listed !== false && story.analysis && story.news_status);
 
 test("detail reading order starts with the news, then evidence and facts before analysis", () => {
   const story = structuredClone(fixture), before = structuredClone(story);
@@ -85,7 +86,7 @@ test("public ticker copy explains quality without infrastructure internals", () 
 });
 
 test("all existing reader pages keep concrete findings but no editorial boilerplate", () => {
-  const stories = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories;
+  const stories = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories;
   for (const story of stories.filter(item => item.published && item.listed !== false)) {
     const before = structuredClone(story);
     const html = storyPage(story);

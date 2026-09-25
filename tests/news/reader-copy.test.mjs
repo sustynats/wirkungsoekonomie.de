@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -17,7 +18,7 @@ test("editorial directives are rejected without modifying text", () => {
 });
 
 test("internal diagnostic fields remain allowed while public fields fail the existing quality gate", () => {
-  const story = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(item => item.published && item.listed !== false);
+  const story = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories.find(item => item.published && item.listed !== false);
   const analysis = { ...structuredClone(story.analysis), source_summary: story.source_summary, media_trigger: { reason: "TODO: intern prüfen" }, self_frame_check: { problems: ["Redaktionshinweis: Titel kürzen."] } };
   assert.equal(hasEditorialResidue(analysisReaderCopy(analysis)), false);
   analysis.detail_summary += " Redaktionshinweis: Bitte Quelle ergänzen.";
@@ -28,8 +29,8 @@ test("internal diagnostic fields remain allowed while public fields fail the exi
 });
 
 test("existing WÖk analyses show evidence, attribution and method links without internal process copy", () => {
-  const stories = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories;
-  const analyses = JSON.parse(fs.readFileSync(new URL("../../data/news/editorial-analyses.json", import.meta.url))).analyses;
+  const stories = readRepositoryJson(new URL("../../data/news/stories.json", import.meta.url)).stories;
+  const analyses = readRepositoryJson(new URL("../../data/news/editorial-analyses.json", import.meta.url)).analyses;
   for (const analysis of analyses.filter(item => item.status === "published")) {
     const before = structuredClone(analysis);
     const html = editorialAnalysisPage(analysis, stories.find(story => story.story_id === analysis.story_id));

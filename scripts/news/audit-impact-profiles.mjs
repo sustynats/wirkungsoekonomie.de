@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -27,7 +28,7 @@ export function auditImpactProfiles(records) {
 }
 if (process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
-  const report=auditImpactProfiles(JSON.parse(fs.readFileSync(path.join(root,'data/news/stories.json'))).stories);
+  const report=auditImpactProfiles(readRepositoryJson(path.join(root,'data/news/stories.json')).stories);
   const output=process.argv.find(v=>v.startsWith('--output='))?.slice(9);
   if(output)fs.writeFileSync(path.resolve(output),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify({active_stories:report.active_stories,visible:report.visible,latest50:report.latest50}));

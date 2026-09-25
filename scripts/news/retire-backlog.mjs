@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 // Einmalige Umstellung auf den Direktbetrieb (Entscheidung Natalie, 15.09.2026):
 // Die alte Warteschlange wird nicht nachgeliefert. Alle unveröffentlichten
 // Kandidaten werden sichtbar als "Warteschlange geschlossen" abgelegt; offene
@@ -38,11 +39,11 @@ export function retireBacklog(store, state, now) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const now = new Date().toISOString();
-  const store = JSON.parse(fs.readFileSync(files.stories, 'utf8'));
-  const state = JSON.parse(fs.readFileSync(files.state, 'utf8'));
+  const store = readRepositoryJson(files.stories, 'utf8');
+  const state = readRepositoryJson(files.state, 'utf8');
   const report = retireBacklog(store, state, now);
   if (!process.argv.includes('--dry-run')) {
-    fs.writeFileSync(files.stories, JSON.stringify(store, null, 2) + '\n');
+    writeRepositoryJson(files.stories, store);
     fs.writeFileSync(files.state, JSON.stringify(state, null, 2) + '\n');
   }
   console.log(JSON.stringify({ dry_run: process.argv.includes('--dry-run'), ...report }, null, 2));

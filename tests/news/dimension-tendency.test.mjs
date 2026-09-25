@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -79,7 +80,7 @@ test('the publishing sanitizer preserves base directions without optional visual
 });
 
 test('retroactive rendering covers every published story without rewriting stored judgments or versions',()=>{
-  const store=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url)));
+  const store=readRepositoryJson(new URL('../../data/news/stories.json',import.meta.url));
   for(const story of store.stories.filter(story=>story.published&&story.listed!==false)) {
     const before=JSON.stringify(story);
     const assessment=publicImpactAssessment(story);
@@ -108,7 +109,7 @@ test('retroactive rendering covers every published story without rewriting store
 });
 
 test('list and both detail MPD sections show the same available finding without changing the article',()=>{
-  const stories=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url))).stories;
+  const stories=readRepositoryJson(new URL('../../data/news/stories.json',import.meta.url)).stories;
   const story=structuredClone(stories.find(story=>story.published&&story.listed!==false));
   // The rendering shell may come from a real article, the judgment fixture may
   // not: a new live article must not silently change this test's assumptions.

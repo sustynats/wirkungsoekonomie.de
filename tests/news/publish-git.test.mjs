@@ -1,3 +1,5 @@
+import { readRepositoryJson, writeRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
+import { readGitStoryStore } from '../../scripts/news/publish-git.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -99,7 +101,7 @@ test("real git race regenerates pages with new renderer and preserves news data"
   write(local,'wirkungsticker/quellen/bild/index.html','rebuilt-old:2\n');cmd(local,['add','.']);cmd(local,['commit','-m','previous rebuild']);
   write(release,'scripts/renderer.txt','new\n');write(release,'wirkungsticker/quellen/bild/index.html','new:1\n');cmd(release,['add','.']);cmd(release,['commit','-m','release']);cmd(release,['push']);
   let builds=0;
-  const result=await publishGitUpdate({run:async args=>cmd(local,args),rebuild:async()=>{builds++;const data=JSON.parse(fs.readFileSync(path.join(local,'data/news/stories.json')));const renderer=fs.readFileSync(path.join(local,'scripts/renderer.txt'),'utf8').trim();write(local,'wirkungsticker/quellen/bild/index.html',`${renderer}:${data.news}\n`);},sleep:async()=>{}});
+  const result=await publishGitUpdate({run:async args=>cmd(local,args),rebuild:async()=>{builds++;const data=readRepositoryJson(path.join(local,'data/news/stories.json'));const renderer=fs.readFileSync(path.join(local,'scripts/renderer.txt'),'utf8').trim();write(local,'wirkungsticker/quellen/bild/index.html',`${renderer}:${data.news}\n`);},sleep:async()=>{}});
   assert.equal(result.regenerated,true);assert.equal(builds,1);
   assert.equal(cmd(local,['show','origin/main:data/news/stories.json']),'{"news":2}\n');
   assert.equal(cmd(local,['show','origin/main:wirkungsticker/quellen/bild/index.html']),'new:2\n');
@@ -136,14 +138,15 @@ test("repeated generated conflicts have a hard recovery bound and abort safely",
   assert.equal(pushed, false);
 });
 
-test("real git race merges different stories and rebuilds their common publication report", async t => {
+for (const sharded of [false, true]) test(`real git race merges different stories and rebuilds their common publication report (parts=${sharded})`, async t => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-story-race-"));
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   const cmd = (cwd, args) => execFileSync("git", args, { cwd, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, GIT_EDITOR: "true" } });
   const remote = path.join(root, "remote.git"), worker = path.join(root, "worker"), editor = path.join(root, "editor");
   const write = (dir, file, value) => { fs.mkdirSync(path.dirname(path.join(dir, file)), { recursive: true }); fs.writeFileSync(path.join(dir, file), value); };
   const identity = dir => { cmd(dir, ["config", "user.name", "Test"]); cmd(dir, ["config", "user.email", "test@example.org"]); };
-  const save = (dir, data, report) => { write(dir, "data/news/stories.json", `${JSON.stringify(data)}\n`); write(dir, "reports/wirkungsticker-source-integrity.json", report); cmd(dir, ["add", "."]); cmd(dir, ["commit", "-m", report.trim()]); };
+  const saveStore = (dir, data) => sharded ? writeRepositoryJson(path.join(dir, 'data/news/stories.json'), data) : write(dir, "data/news/stories.json", `${JSON.stringify(data)}\n`);
+  const save = (dir, data, report) => { saveStore(dir, data); write(dir, "reports/wirkungsticker-source-integrity.json", report); cmd(dir, ["add", "."]); cmd(dir, ["commit", "-m", report.trim()]); };
   const a = { story_id: "a", title: "old A", versions: [1] }, b = { story_id: "b", title: "old B" };
   cmd(root, ["init", "--bare", remote]); cmd(root, ["clone", remote, worker]); identity(worker); cmd(worker, ["checkout", "-b", "main"]);
   save(worker, store([a, b]), "base\n"); cmd(worker, ["push", "-u", "origin", "main"]);
@@ -154,11 +157,11 @@ test("real git race merges different stories and rebuilds their common publicati
   let builds = 0;
   const result = await publishGitUpdate({
     run: async args => cmd(worker, args), sleep: async () => {},
-    writeStoryStore: data => write(worker, "data/news/stories.json", `${JSON.stringify(data, null, 2)}\n`),
-    rebuild: async () => { builds++; const data = JSON.parse(fs.readFileSync(path.join(worker, "data/news/stories.json"))); write(worker, "reports/wirkungsticker-source-integrity.json", data.stories.map(s => s.title).join(" / ")); },
+    writeStoryStore: data => saveStore(worker, data),
+    rebuild: async () => { builds++; const data = readRepositoryJson(path.join(worker, "data/news/stories.json")); write(worker, "reports/wirkungsticker-source-integrity.json", data.stories.map(s => s.title).join(" / ")); },
   });
   assert.equal(result.regenerated, true); assert.equal(builds, 1);
-  const published = JSON.parse(cmd(worker, ["show", "origin/main:data/news/stories.json"]));
+  const published = await readGitStoryStore('origin/main', async args => cmd(worker, args));
   assert.deepEqual(published.stories.find(s => s.story_id === "a"), corrected);
   assert.equal(published.stories.find(s => s.story_id === "b").title, "worker B");
   assert.equal(cmd(worker, ["show", "origin/main:reports/wirkungsticker-source-integrity.json"]), "editor A / worker B");
