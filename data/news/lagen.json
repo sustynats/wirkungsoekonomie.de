@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T16:00:00.000Z",
+  "updated_at": "2026-09-25T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-25-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-25",
+      "window_from": "2026-09-24T16:00:00.000Z",
+      "window_to": "2026-09-25T04:00:00.000Z",
+      "stand": "2026-09-25T04:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 2,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-25T03:28:58.282Z",
+          "score": 5.7069
+        },
+        {
+          "story_id": "wt-1783a4db8d17924b",
+          "slug": "evakuierung-gasleck-in-greiz-wohngebiet-weitraumig-abgesperrt-17924b",
+          "title": "Laut Stern: Gasgeruch gemeldet, Suche nach Leck in Greiz",
+          "state": "neu",
+          "at": "2026-09-24T21:58:39.199Z",
+          "score": 9.4981
+        },
+        {
+          "story_id": "wt-a3ed2f2bbbd324bc",
+          "slug": "polen-todlicher-messerangriff-in-kloster-nahe-ukrainischer-grenze-d324bc",
+          "title": "Laut DER SPIEGEL: Tödlicher Messerangriff in polnischem Kloster nahe ukrainischer Grenze",
+          "state": "neu",
+          "at": "2026-09-24T20:55:15.466Z",
+          "score": 5.5996
+        },
+        {
+          "story_id": "wt-a203a680aa91d35f",
+          "slug": "schusse-boller-benzin-polizei-ermittelt-nach-zwei-vorfallen-in-heidenheim-91d35f",
+          "title": "Laut Polizei und Staatsanwaltschaft: Ermittlungen nach Schüssen und möglicher Brandstiftung in Heidenheim",
+          "state": "fortgeschrieben",
+          "at": "2026-09-24T16:30:22.984Z",
+          "score": 4.7922
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-24-abendlage",
       "slot": "abendlage",
