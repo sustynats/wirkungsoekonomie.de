@@ -12,13 +12,14 @@
     "institute": {
       "firstSeen": "2026-09-22T16:20:47.664Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-09-24T16:50:51.764Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0912a706b5980a19f78b9337",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-09-25T05:50:51.462Z"
+    }
+  ],
   "dailyDate": "2026-09-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2037,7 +2038,7 @@
       }
     },
     "last_new_at": "2026-09-24T22:20:47.850Z",
-    "checked_at": "2026-09-25T05:35:49.511Z",
+    "checked_at": "2026-09-25T05:50:51.462Z",
     "last_current_new_at": "2026-09-24T22:20:47.850Z"
   },
   "recovery_attempts": [
