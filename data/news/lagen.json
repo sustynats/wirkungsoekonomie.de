@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-25T04:00:00.000Z",
+  "updated_at": "2026-09-25T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-25-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-25",
+      "window_from": "2026-09-25T04:00:00.000Z",
+      "window_to": "2026-09-25T10:00:00.000Z",
+      "stand": "2026-09-25T10:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 2,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-25T09:57:28.056Z",
+          "score": 5.743
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Laut Deutschlandfunk: Gegenseitige Angriffe auf Infrastruktur und Industrieanlagen fortgesetzt",
+          "state": "neu",
+          "at": "2026-09-25T07:14:49.473Z",
+          "score": 9.5412
+        },
+        {
+          "story_id": "wt-13c18ec10581e46a",
+          "slug": "17-jahriger-in-berlin-steglitz-angeschossen-notoperation-in-der-nacht-81e46a",
+          "title": "Laut Polizei: 17-Jähriger in Berlin-Steglitz angeschossen und lebensgefährlich verletzt",
+          "state": "neu",
+          "at": "2026-09-25T06:00:49.511Z",
+          "score": 5.8356
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-25-morgenlage",
       "slot": "morgenlage",
