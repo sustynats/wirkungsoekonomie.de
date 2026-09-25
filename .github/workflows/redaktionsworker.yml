@@ -50,12 +50,9 @@ jobs:
       WOEK_EDITORIAL_MODEL: ${{ vars.WOEK_EDITORIAL_MODEL || 'gpt-5.6-luna' }}
       WOEK_EDITORIAL_ANALYSIS_MODEL: ${{ vars.WOEK_EDITORIAL_ANALYSIS_MODEL || 'gpt-6-astra' }}
       WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
-      # Dieselbe Stundenzahl wie die Nachrichtenspur, damit beide auf
-      # dasselbe Kontingent rechnen.
-      WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || '4' }}
-      WOEK_NEWS_NIGHT_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_NIGHT_STORIES_PER_HOUR || '' }}
-      WOEK_NEWS_DAY_FROM_HOUR: ${{ vars.WOEK_NEWS_DAY_FROM_HOUR || '7' }}
-      WOEK_NEWS_DAY_UNTIL_HOUR: ${{ vars.WOEK_NEWS_DAY_UNTIL_HOUR || '23' }}
+      # Unabhängige Redaktionsspur seit 25.09.; keine Nachrichtenplätze und
+      # kein Nachrichten-Nachtprofil für Analysen/Nachbesprechungen verwenden.
+      WOEK_EDITORIAL_MAX_JOBS_PER_HOUR: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_HOUR || '2' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
       # 16 je Tag seit 16.09.: Rückstand von rund 20 Aufträgen plus automatische
       # Sendungs- und Analysekandidaten; die automatische Spur bleibt Luna.

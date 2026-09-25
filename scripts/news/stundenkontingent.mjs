@@ -1,4 +1,5 @@
-// Ein Kontingent für alles, was bezahlt wird.
+// Historische Hilfen für das gemeinsame Kontingent (bis 25.09.2026).
+// Aktuell laufen Redaktion und Nachrichten unabhängig; Nutzung bleibt messbar.
 //
 // Natalie am 16.09.2026: „Sonst machen wir Meinung und Analyse, wenn es eng
 // wird, und Nachberichte als Teil der Veröffentlichung. Das heißt, dann kommt
@@ -14,6 +15,18 @@
 export const EDITORIAL_HOUR_KEY = 'editorial-hour-usage';
 export const EDITORIAL_WAITING_KEY = 'editorial-waiting';
 const WINDOW_MINUTES = 60;
+
+// Eigene technische Durchsatzgrenze, unabhängig von Nachrichtenbudget und
+// Tag-/Nachtprofil. Keine unbegrenzten Aufrufe; Tagesdeckel und Einmalverarbeitung
+// gelten weiterhin. Ein gesetztes 0 bleibt eine ausdrückliche Pause.
+export function configuredEditorialQuota(env = process.env) {
+  const value = Number(env.WOEK_EDITORIAL_MAX_JOBS_PER_HOUR ?? 2);
+  return Number.isSafeInteger(value) && value >= 0 ? value : 0;
+}
+
+export function independentHourlyRoom({ configured, used = 0 }) {
+  return Math.max(0, (Number(configured) || 0) - Math.max(0, Number(used) || 0));
+}
 
 const times = (value) => (Array.isArray(value?.drafts) ? value.drafts : Array.isArray(value) ? value : [])
   .map((entry) => Date.parse(typeof entry === 'string' ? entry : entry?.at || ''))

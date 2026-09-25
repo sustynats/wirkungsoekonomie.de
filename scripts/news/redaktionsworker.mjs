@@ -10,9 +10,10 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { EXHAUSTED_ORDERS_KEY, fehlerkennung } from './bridge/observation-keys.mjs';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
+import { assertFinalPersonalSection } from './editorial-approved-revisions.mjs';
 import { officialShowName } from './show-identity.mjs';
 import { repairMissingPackets } from './auftrag-einreichen.mjs';
-import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, noteEditorialDraft, tickerStoriesInWindow, sharedHourlyRoom, configuredHourlyQuota, waitingRecord } from './stundenkontingent.mjs';
+import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, noteEditorialDraft, configuredEditorialQuota, independentHourlyRoom, waitingRecord } from './stundenkontingent.mjs';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
@@ -323,6 +324,9 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
     const lines = preview.markdown.replace(/^\uFEFF/, '').split('\n');
     const kept = [];
     for (const line of lines) {
+      if (/^##\s+Quellen und Werkmetadaten\s*$/i.test(line)) {
+        kept.push('## Quellen'); repairs.push('markdown:Quellenüberschrift kanonisiert'); continue;
+      }
       const heading = /^#\s+(.*)$/.exec(line);
       if (!heading) { kept.push(line); continue; }
       const text = heading[1].replace(/\s+/g, ' ').trim();
@@ -378,6 +382,49 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
     repairs.push('visual:ohne belegte Freigabe entfernt');
   }
   return preview;
+}
+
+// Dasselbe Schlusssektions-Gate wie beim Import in die Redaktionsapp. Ein
+// lokales „gültig“ darf nicht erst nach der Übergabe in correction_pending enden.
+export function validateEditorialDelivery(output, packet, at) {
+  const validated = validateApiOutput(output, packet, at);
+  if (validated.preview?.format !== 'news' && validated.preview
+    && /\/editorial-request-contract-[34]\.json$/.test(packet.contract_path || '')) {
+    assertFinalPersonalSection(validated.preview.markdown, { footnotes: validated.preview.editorial_revision?.base?.self_authored_work });
+  }
+  return validated;
+}
+
+// Ausschließlich archivierte Antworten wiederverwenden. Keine Modellanfrage,
+// keine neue persönliche Passage und keine Veränderung der Freigabehistorie.
+export async function recoverCachedEditorialOutputs(session, rows, at) {
+  const recovered = [];
+  for (const row of rows.filter(r => r.input?.job_type === 'editorial_request' && r.status === 'correction_pending' && !r.ack && !r.accepted).slice(0, 10)) {
+    const id = row.input.job_id;
+    try {
+      const job = await session.store.get(id);
+      const correction = job?.corrections?.at(-1);
+      const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
+      if (!job || job.ack || job.accepted || job.status !== 'correction_pending' || !correction
+        || correction.error_output_path !== bridgePath('90_ERRORS', `${id}.correction-${correction.attempt}.output.json`)
+        || await session.transport.metadata(outputPath)) continue;
+      const raw = await session.transport.read(correction.error_output_path);
+      if (hash(raw) !== correction.original_output_hash) throw Error('EDITORIAL_CACHED_OUTPUT_CHANGED');
+      const output = JSON.parse(raw), repairs = [];
+      if (!output.preview) continue;
+      normalizeEditorialPreview(output.preview, { links: job.input.request?.links || [], repairs });
+      if (!repairs.length) continue;
+      const validated = validateEditorialDelivery(output, job.input, at);
+      await session.transport.writeAtomic(outputPath, validated);
+      if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw Error('EDITORIAL_DELIVERY_READBACK_FAILED');
+      await session.store.observe(`github-editorial-recovery:${id}`, { job_id: id, at, original_output_hash: correction.original_output_hash,
+        output_hash: hash(validated), repairs, provider_called: false, cost_usd: 0, status: 'OUTPUT_DELIVERED_NOT_PUBLISHED' });
+      recovered.push({ job_id: id, status: 'cached_output_redelivered', provider_called: false, repairs });
+    } catch (error) {
+      recovered.push({ job_id: id, status: 'cached_output_still_invalid', error: String(error.message).slice(0, 100) });
+    }
+  }
+  return recovered;
 }
 
 export const VISUAL_RIGHTS = ['OWN', 'CLEARED', 'LICENSED', 'CC_LICENSED', 'PERMISSION_GRANTED'];
@@ -485,7 +532,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   for (let pass = 0; pass <= (repairPass ? 1 : 0); pass += 1) {
     if (output.preview && job.intake?.revision_target) bindeKorrekturfassung(output.preview, job.intake, previewRepairs);
     if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
-    try { validated = validateApiOutput(output, packet, now()); break; }
+    try { validated = validateEditorialDelivery(output, packet, now()); break; }
     catch (error) { lastIssues = [String(error.message), ...(error.issues || [])]; }
     if (pass >= (repairPass ? 1 : 0)) break;
     let retry;
@@ -527,11 +574,11 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
   try {
     const day = isoDay(now());
     const counter = (await store.observation(`github-editorial-day:${day}`)) || { day, paid: 0, cost_usd: 0 };
-    // Der Wartestand wird zuerst vermerkt, vor jedem Abbruch: die
-    // Nachrichtenspur haelt nur dann einen Platz frei, wenn sie weiss, dass hier
-    // Arbeit liegt. Ein Abbruch ohne Vermerk wuerde die Reserve verfallen
-    // lassen - und genau dann bleibt die Redaktionsarbeit liegen.
+    // Wartestand und kostenlose Reparaturen vor jedem Kontingentabbruch:
+    // bereits bezahlte, technisch reparierbare Antworten benötigen keinen
+    // weiteren Modellaufruf und dürfen deshalb nicht am Durchsatzlimit hängen.
     const rows = await store.all();
+    const recoveredOutputs = await recoverCachedEditorialOutputs(live, rows, now());
     // Ein Auftrag in der Ablage ohne Paket im Postfach war am 17.09.2026 das
     // Ende der ganzen Spur: processEditorialRequest liest das Paket, brach mit
     // BRIDGE_DROPBOX_NOT_FOUND ab und nahm den Lauf mit. Die Reparatur gehoert
@@ -549,19 +596,14 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     await store.observe(EXHAUSTED_ORDERS_KEY, { at: now(), worker_version: WORKER_VERSION,
       orders: await erschoepfteAuftraege(store, rows) }).catch?.(() => {});
     const eigene = selectEditorialRequests(rows, { limit: 50 }).filter(manualRequest);
-    if (counter.paid >= maxJobsPerDay && !eigene.length) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
-    // Ein Kontingent fuer alles, was bezahlt wird (Natalie am 16.09.: die
-    // Nachbesprechungen und Analysen sind Teil derselben Veroeffentlichung,
-    // „dann kommt dann ein Artikel jeweils weniger"). Automatisch erzeugt wird
-    // weiter beides; wartende Auftraege verfallen nicht, sie kommen im
-    // naechsten Lauf dran.
-    const quota = configuredHourlyQuota(env, now());
+    if (counter.paid >= maxJobsPerDay && !eigene.length) return { status: 'daily_limit', day, paid: counter.paid, recovered_outputs: recoveredOutputs, results: [] };
+    // Natalie am 25.09.: Nachbesprechungen und Analysen laufen unabhängig vom
+    // Nachrichtenkontingent. Der alte gemeinsame Zähler hielt die komplette
+    // Redaktion an, sobald der Nachrichtenticker seine Stunde ausgeschöpft hatte.
+    const quota = configuredEditorialQuota(env);
     let hourUsage = (await store.observation(EDITORIAL_HOUR_KEY)) || { drafts: [] };
-    let tickerStories = 0;
-    try { tickerStories = tickerStoriesInWindow(JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json'), 'utf8')), now()); }
-    catch { /* ohne Nutzungsdatei zaehlt nur die eigene Spur */ }
-    const hourlyRoom = sharedHourlyRoom({ configured: quota, tickerStories, editorialDrafts: editorialDraftsInWindow(hourUsage, now()) });
-    if (hourlyRoom <= 0 && !eigene.length) return { status: 'hourly_quota_reached', day, quota, ticker_stories_last_hour: tickerStories,
+    const hourlyRoom = independentHourlyRoom({ configured: quota, used: editorialDraftsInWindow(hourUsage, now()) });
+    if (hourlyRoom <= 0 && !eigene.length) return { status: 'hourly_quota_reached', quota_scope: 'editorial_only', day, quota, recovered_outputs: recoveredOutputs,
       editorial_drafts_last_hour: editorialDraftsInWindow(hourUsage, now()), results: [] };
     // Rows that turn out to be delivered, exhausted or freshly claimed elsewhere
     // cost no model call; they must not use up the paid slots of this run.
@@ -595,7 +637,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       if (PAID_STATUS.has(result.status)) {
         paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6));
         await store.observe(`github-editorial-day:${day}`, counter);
-        // Der Vermerk macht den Platz fuer die Nachrichtenspur sichtbar.
+        // Eigene Nutzung dokumentieren, ohne Nachrichtenplätze zu verbrauchen.
         hourUsage = noteEditorialDraft(hourUsage, now());
         await store.observe(EDITORIAL_HOUR_KEY, hourUsage);
       }
@@ -605,7 +647,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // Auftrag gerade verbraucht haben.
     const erschoepft = await erschoepfteAuftraege(store, await store.all());
     await store.observe(EXHAUSTED_ORDERS_KEY, { at: now(), worker_version: WORKER_VERSION, orders: erschoepft }).catch?.(() => {});
-    return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, exhausted_orders: erschoepft.length, results };
+    return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, recovered_outputs: recoveredOutputs, quota_scope: 'editorial_only', open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, exhausted_orders: erschoepft.length, results };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }

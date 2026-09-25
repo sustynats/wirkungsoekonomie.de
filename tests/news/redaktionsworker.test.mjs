@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates, editorialModel, authorAnalysisModel, modelForEditorialRequest } from '../../scripts/news/redaktionsworker.mjs';
+import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates, editorialModel, authorAnalysisModel, modelForEditorialRequest, recoverCachedEditorialOutputs, validateEditorialDelivery } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 
@@ -40,6 +40,79 @@ function fakeSession(jobs) {
 }
 const jobId = 'wt_20260915T200000Z_' + 'b'.repeat(24);
 function queuedJob(id = jobId) { const input = packetFor(id); return { input, candidate: { story_id: 'wt-test', sources: [] }, status: 'queued', created_at: input.created_at, attempts: {}, intake: { owner, kind: 'opinion_analysis', fingerprint: 'f'.repeat(64) } }; }
+
+function cachedCorrection() {
+  const job = queuedJob(); job.status = 'correction_pending';
+  const output = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash, processed_at: now(), preview: preview() };
+  output.preview.markdown += '\n\n## Quellen und Werkmetadaten\n\n[Testquelle](https://example.org/source)';
+  const raw = JSON.stringify(output), archive = bridgePath('90_ERRORS', `${jobId}.correction-1.output.json`);
+  job.corrections = [{ attempt: 1, error_output_path: archive, original_output_hash: hash(raw) }];
+  const session = fakeSession([job]); session.files.set(archive, raw);
+  return { job, output, raw, archive, session };
+}
+
+test('worker applies the same final-section gate as the editorial desk before delivery', () => {
+  const { job, output } = cachedCorrection();
+  assert.throws(() => validateEditorialDelivery(output, job.input, now()), /EDITORIAL_FINAL_PERSPECTIVE_REQUIRED/);
+  normalizeEditorialPreview(output.preview);
+  assert.doesNotThrow(() => validateEditorialDelivery(output, job.input, now()));
+  output.preview.markdown = '## Eine Analyse\n\n' + 'Ein synthetischer Testtext ohne persönlichen Schluss. '.repeat(10);
+  assert.throws(() => validateEditorialDelivery(output, job.input, now()), /EDITORIAL_FINAL_PERSPECTIVE_REQUIRED/);
+});
+
+test('cached import correction is reused without model calls, approval, or alteration of its archive', async () => {
+  const { job, raw, archive, session } = cachedCorrection();
+  const result = await recoverCachedEditorialOutputs(session, [job], now());
+  assert.equal(result[0].status, 'cached_output_redelivered');
+  assert.equal(result[0].provider_called, false);
+  const path = bridgePath('20_OUTPUT_READY', `${jobId}.output.json`);
+  const delivered = JSON.parse(session.files.get(path));
+  assert.equal(delivered.preview.markdown, JSON.parse(raw).preview.markdown.replace('## Quellen und Werkmetadaten', '## Quellen'));
+  assert.equal(session.files.get(archive), raw);
+  assert.equal(job.status, 'correction_pending'); assert.equal(job.ack, undefined); assert.equal(job.accepted, undefined);
+  assert.equal(session.observations.get(`github-editorial-recovery:${jobId}`).cost_usd, 0);
+  assert.deepEqual(await recoverCachedEditorialOutputs(session, [job], now()), [], 'no overwrite or duplicate delivery');
+});
+
+test('cached recovery refuses changed archives, wrong bindings, missing personal sections, and approved jobs', async () => {
+  for (const reason of ['archive_changed', 'binding_changed', 'missing_section', 'approved']) {
+    const { job, output, archive, session } = cachedCorrection();
+    if (reason === 'approved') job.ack = { approved: true };
+    if (reason === 'binding_changed') output.input_hash = '0'.repeat(64);
+    if (reason === 'missing_section') output.preview.markdown = output.preview.markdown.replace('## Meine Einordnung', '## Ein anderer Abschnitt');
+    const raw = JSON.stringify(output);
+    session.files.set(archive, reason === 'archive_changed' ? raw + ' ' : raw);
+    job.corrections[0].original_output_hash = hash(raw);
+    const result = await recoverCachedEditorialOutputs(session, [job], now());
+    assert.equal(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)), false, reason);
+    assert.equal(result[0]?.status, reason === 'approved' ? undefined : 'cached_output_still_invalid', reason);
+  }
+});
+
+test('free cached recovery runs even when the editorial daily quota is exhausted', async () => {
+  const { session } = cachedCorrection();
+  session.observations.set('github-editorial-day:2026-09-15', { paid: 10, cost_usd: 1 });
+  const result = await runRedaktionsworker({ session, knowledge, now, env: {}, maxJobsPerDay: 10,
+    draft: async () => { assert.fail('recovery must not call a provider'); } });
+  assert.equal(result.status, 'daily_limit');
+  assert.equal(result.recovered_outputs[0].status, 'cached_output_redelivered');
+});
+
+test('automatische Nachbesprechung läuft trotz gesperrtem Nachrichtenkontingent bis zur privaten Vorschau', async () => {
+  const job = queuedJob();
+  job.input.request.kind = 'watched'; job.intake.kind = 'watched'; job.intake.trigger_type = 'automatic_episode';
+  job.input.input_hash = hash(job.input.request);
+  const session = fakeSession([job]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+  let calls = 0;
+  const result = await runRedaktionsworker({ session, knowledge, now,
+    env: { WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: '0', WOEK_NEWS_NIGHT_STORIES_PER_HOUR: '0' },
+    draft: async () => { calls++; return { output: { preview: { ...preview(), format: 'watched', source_media: { show: 'Testsendung', episode_title: 'Synthetischer Test', original_release_date: '2026-09-15', original_url: 'https://example.org/source' } } }, usage: { input_tokens: 10, output_tokens: 10 }, model: 'gpt-5.6-luna', cost: 0.001, answer: '{}' }; } });
+  assert.equal(result.status, 'ok'); assert.equal(calls, 1);
+  assert.equal(result.results[0].status, 'output_delivered');
+  assert.equal(job.input.request.publication_intent, 'final_approval_required');
+  assert.equal(job.status, 'queued', 'kein Freigabe- oder Publikationsschritt');
+});
 
 test('only queued editorial requests are selected, oldest first, bounded', () => {
   const rows = [
@@ -402,7 +475,7 @@ test('Formales gleicht die Software an: der fertige Entwurf geht nicht an einer 
   const session = fakeSession([queuedJob()]);
   session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
   const raw = preview();
-  raw.markdown = `# ${raw.title}\n\n${raw.markdown}\n\n# Nachtrag\n\nEin weiterer belegter Abschnitt zum Test der Angleichung.`;
+  raw.markdown = `# ${raw.title}\n\n${raw.markdown.replace('## Meine Einordnung', '# Nachtrag\n\nEin weiterer belegter Abschnitt zum Test der Angleichung.\n\n## Meine Einordnung')}`;
   raw.sources = [{ url: 'https://apnews.com/article/x', title: 'Female athletes accuse' }];
   const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' },
     { knowledge, draft: async () => ({ output: { preview: raw }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}' }), now });
