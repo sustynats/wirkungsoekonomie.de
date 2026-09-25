@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 // Kandidaten für Meinung & Analyse ohne ChatGPT: Aus stark relevanten, bereits
 // veröffentlichten Meldungen entsteht ein regulärer Redaktionsauftrag in der
 // privaten Redaktion (derselbe Weg wie ein von Natalie eingereichter Auftrag).
@@ -79,14 +80,14 @@ export async function proposeEditorialCandidates({ session = null, root = ROOT, 
     const reference = rows.find((row) => row?.input?.job_type === 'editorial_request');
     const owner = reference ? (await store.get(reference.input.job_id))?.intake?.owner : null;
     if (!/^\d{15,22}$/.test(owner || '')) return { status: 'owner_unknown', proposed: [] };
-    const catalog = stories || JSON.parse(fs.readFileSync(path.join(root, 'data/news/stories.json'), 'utf8')).stories;
+    const catalog = stories || readRepositoryJson(path.join(root, 'data/news/stories.json'), 'utf8').stories;
     const proposed = [];
     // Ohne ausdrueckliche Vorgabe wird der Anker aus der Lagen-Ablage gelesen.
     // Fehlt sie, bleibt es beim bisherigen Verhalten (staerkste Meldung).
     let anker = restrictTo;
     if (anker === undefined) {
       const lagenPfad = path.join(root, 'data/news/lagen.json');
-      const top = fs.existsSync(lagenPfad) ? topLageEintrag(JSON.parse(fs.readFileSync(lagenPfad, 'utf8'))) : null;
+      const top = fs.existsSync(lagenPfad) ? topLageEintrag(readRepositoryJson(lagenPfad, 'utf8')) : null;
       anker = top ? new Set([top.story_id]) : null;
     }
     const kandidaten = selectEditorialCandidates(catalog, now, { limit: Math.min(limit, maxPerDay - counter.proposed), assess, restrictTo: anker });

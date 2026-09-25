@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from '../newsroom-store.mjs';
 import { modelledPublicationIssues } from '../impact-scope.mjs';
 import { researchSourceSchema } from './impact-research.mjs';
 import { withMagnitudeCalculations } from '../impact-assessment.mjs';
@@ -117,7 +118,7 @@ export function impactMustStayPrivate(bridge, job, record) {
 
 export async function importImpactJobs(bridge, root, now, {semanticReview = ensureSemanticReview, prepareImage = createTitleImagePipeline({root,allowGeneration:false})} = {}) {
   const catalogs = [['stories.json', 'stories'], ['editorial-analyses.json', 'analyses']].map(([file, key]) => ({ file: path.join(root, 'data/news', file), key }));
-  for (const c of catalogs) c.data = JSON.parse(fs.readFileSync(c.file, 'utf8'));
+  for (const c of catalogs) c.data = readRepositoryJson(c.file, 'utf8');
   const names = new Set((await bridge.transport.list('20_OUTPUT_READY')).map(e => e.name)), results = [];
   for (const job of await bridge.store.all()) {
     if (job.input.job_type !== IMPACT_JOB_TYPE || closed.has(job.status) || !names.has(job.input.job_id + '.output.json')) continue;
@@ -162,7 +163,7 @@ export async function importImpactJobs(bridge, root, now, {semanticReview = ensu
   for (const c of catalogs.filter(c => c.changed)) {
     c.data.public_updated_at = now;
     const temp = `${c.file}.tmp-${process.pid}`;
-    fs.writeFileSync(temp, JSON.stringify(c.data, null, 2) + '\n'); fs.renameSync(temp, c.file);
+    writeRepositoryJson(c.file, c.data);
   }
   return results;
 }

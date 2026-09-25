@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import { readNewsroom } from './newsroom-store.mjs';
 import path from 'node:path';
@@ -13,7 +14,7 @@ export const berlinDayEnd = date => {
   const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Berlin',hour:'2-digit',hourCycle:'h23'}).format(new Date(`${date}T12:00:00Z`)));
   return new Date(Date.parse(date)+86400000-(hour-12)*3600000-1).toISOString();
 };
-const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+const read = file => readRepositoryJson(file, 'utf8');
 const cell = value => String(value ?? '–').replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ');
 
 export function auditDay({ date, now, newsroom, stories, report, registry }) {

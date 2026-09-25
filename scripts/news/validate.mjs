@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { assertChronologicalFeedHtml } from "./feed-order.mjs";
@@ -17,13 +18,13 @@ const readAppData = (relative) => {
   // Uebergang: bis der erste Lauf nach der Umstellung die Daten neu schreibt,
   // liegt im Arbeitsverzeichnis noch die ungepackte Fassung.
   if (fs.existsSync(gepackt)) return JSON.parse(gunzipSync(fs.readFileSync(gepackt)).toString("utf8"));
-  return JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
+  return readRepositoryJson(path.join(ROOT, relative), "utf8");
 };
 import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 import { persistedImpactAssessmentErrors } from "./migrate-impact-assessments.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
+const readJson = (relative) => readRepositoryJson(path.join(ROOT, relative), "utf8");
 const fail = (message) => { throw new Error(message); };
 
 const registry = loadNewsRegistry(ROOT);
@@ -200,7 +201,7 @@ const sensitiveFiles = [
 ];
 const secretPatterns = [/\bsk-[A-Za-z0-9_-]{20,}\b/, /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/, /\bAKIA[0-9A-Z]{16}\b/];
 for (const relative of sensitiveFiles) {
-  const text = fs.readFileSync(path.join(ROOT, relative), "utf8");
+  const text = relative === 'data/news/stories.json' ? JSON.stringify(store) : fs.readFileSync(path.join(ROOT, relative), "utf8");
   if (secretPatterns.some((pattern) => pattern.test(text))) fail(`SECRET_PATTERN_FOUND:${relative}`);
 }
 

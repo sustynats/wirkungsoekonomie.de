@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import { readNewsroom, writeNewsroom, repositoryJson } from './newsroom-store.mjs';
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
 import {editorialEvidenceReceipt} from './editorial-evidence.mjs';
@@ -128,11 +129,12 @@ const files = {
 
 function readJson(file) {
   if (file === files.newsroom) return readNewsroom(file);
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  return readRepositoryJson(file, "utf8");
 }
 
 function writeJson(file, value) {
   if (file === files.newsroom) return writeNewsroom(file, value);
+  if (file === files.stories) return writeRepositoryJson(file, value);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, repositoryJson(value), "utf8");
 }
@@ -1173,7 +1175,7 @@ export async function runWirkungsticker(options = {}) {
   // These jobs already have a complete, immutable published-source package.
   // Hand them off under the discovery lock before slow external feed I/O.
   if (bridge && !options.dryRun && bridgePhase !== 'import') {
-    const impactEditorials = fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/news/editorial-analyses.json'), 'utf8')).analyses : [];
+    const impactEditorials = fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json')) ? readRepositoryJson(path.join(ROOT, 'data/news/editorial-analyses.json'), 'utf8').analyses : [];
     report.bridge_impact_enqueued = await (await import('./bridge/impact.mjs')).discoverImpactJobs(bridge, [...storyStore.stories, ...impactEditorials], now);
   }
 

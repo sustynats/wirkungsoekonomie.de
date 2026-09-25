@@ -1,3 +1,4 @@
+import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import { backgroundBatchEligibility, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
 import { sourceIntegrityForStory } from './source-integrity.mjs';
@@ -11,8 +12,9 @@ import { MEDIA_ANALYSIS_VERSION, MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, applyS
 
 const DEFAULT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
-function read(file) { return JSON.parse(fs.readFileSync(file, "utf8")); }
+function read(file) { return readRepositoryJson(file, "utf8"); }
 function writeAtomic(file, value) {
+  if (path.basename(file) === 'stories.json') return writeRepositoryJson(file, value);
   const temporary = `${file}.tmp-${process.pid}`;
   fs.writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`, "utf8");
   fs.renameSync(temporary, file);

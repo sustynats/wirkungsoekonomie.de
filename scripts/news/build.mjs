@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import {renderShowIdentity} from './show-identity.mjs';
 import {EDITORIAL_CURATION_LABEL, renderEditorialAuthorship} from './editorial-authorship.mjs';
 import {appNavigation,buildAppPages} from './app-pages.mjs';
@@ -45,7 +46,7 @@ const LEGACY_MANIFEST_FILE = path.join(LEGACY_NEWS_DIR, ".generated-story-slugs.
 const EDITORIAL_MANIFEST_FILE = path.join(TICKER_DIR, "analyse/.generated-analysis-slugs.json");
 
 function readJson(file) {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  return readRepositoryJson(file, "utf8");
 }
 
 function write(file, content) {

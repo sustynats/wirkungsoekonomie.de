@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -118,7 +119,7 @@ test("Higgsfield downloads and persists one original; repeated request spends no
   assert.ok(Buffer.isBuffer(first.bytes)); assert.equal(second.reused,true);
   assert.equal(calls.filter((a)=>a[0]==="generate"&&a[1]==="create").length,1);
   assert.ok(fs.existsSync(path.join(directory,STORY.story_id,first.file)));
-  assert.equal(JSON.parse(fs.readFileSync(path.join(directory,"credits.json"))).reservations.length,1);
+  assert.equal(readRepositoryJson(path.join(directory,"credits.json")).reservations.length,1);
 });
 test("disabled provider and changed cost never create a paid job", async (t) => {
   const directory=temp(t),calls=[];
@@ -135,7 +136,7 @@ test("owner-approved image budget has no daily or monthly cap; balance and per-i
   const provider = createHiggsfieldAdapter({ directory, run: mockRun(calls), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }), enabled: true });
   await provider.generate(STORY);
   assert.equal(calls.filter(a => a[1] === "create").length, 1);
-  assert.equal(JSON.parse(fs.readFileSync(path.join(directory, "credits.json"))).reservations.length, 302);
+  assert.equal(readRepositoryJson(path.join(directory, "credits.json")).reservations.length, 302);
   const emptyCalls = [];
   await assert.rejects(createHiggsfieldAdapter({ directory: temp(t), enabled: true, run: mockRun(emptyCalls, { "account status": () => '{"credits":0}' }) }).generate(STORY), { code: "HIGGSFIELD_CREDITS_UNAVAILABLE" });
   assert.equal(emptyCalls.some(a => a[1] === "create"), false);
@@ -161,9 +162,9 @@ test("confirmed failed provider job permits one delayed replacement and then sto
   await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_RETRY_EXHAUSTED"});
   await assert.rejects(createHiggsfieldAdapter(options).generate(STORY),{code:"HIGGSFIELD_RETRY_EXHAUSTED"});
   assert.equal(calls.filter(a=>a[1]==="create").length,2);assert.equal(calls.filter(a=>a[1]==="wait").length,0);
-  const record=JSON.parse(fs.readFileSync(path.join(directory,STORY.story_id,"source-visual.json")));
+  const record=readRepositoryJson(path.join(directory,STORY.story_id,"source-visual.json"));
   assert.equal(record.previous_attempts.length,1);
-  assert.equal(JSON.parse(fs.readFileSync(path.join(directory,"credits.json"))).reservations.length,2);
+  assert.equal(readRepositoryJson(path.join(directory,"credits.json")).reservations.length,2);
 });
 test("confirmed provider failure can recover, but cancelled jobs never generate a replacement",async(t)=>{
   let clock="2026-09-04T09:00:00Z", failed=true;const calls=[],directory=temp(t);
@@ -328,7 +329,7 @@ test("new OCR version rechecks an old rejection from saved bytes without another
   const directory=temp(t),calls=[];let checks=0;
   const provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls),download:async()=>asset(),quality:async()=>{checks++;return {version:VISUAL_GATE_VERSION,status:"passed"};}});
   const original=await provider.generate(STORY),journal=path.join(directory,STORY.story_id,"source-visual.json");
-  const record=JSON.parse(fs.readFileSync(journal));record.quality_gate={version:"text-free-1",status:"rejected",reason:"IMAGE_CONTAINS_TEXT"};fs.writeFileSync(journal,JSON.stringify(record));
+  const record=readRepositoryJson(journal);record.quality_gate={version:"text-free-1",status:"rejected",reason:"IMAGE_CONTAINS_TEXT"};fs.writeFileSync(journal,JSON.stringify(record));
   const reused=await provider.generate(STORY);assert.equal(reused.reused,true);assert.equal(reused.sha256,original.sha256);assert.equal(checks,2);
   assert.equal(calls.filter(a=>a[1]==="create").length,1);
 });
@@ -374,7 +375,7 @@ test("approved backfill persists only its bounded snapshot before the runtime de
   const file=path.join(root,"data/news/stories.json");fs.writeFileSync(file,JSON.stringify({stories}));
   fs.writeFileSync(path.join(root,"reports/wirkungsticker-latest-run.json"),"{}");
   const result=await backfillTitleImages({root,limit:2,dryRun:false,maxDurationMs:0,prepare:()=>assert.fail("deadline must prevent work"),build:()=>{}});
-  const saved=JSON.parse(fs.readFileSync(file));assert.equal(result.selected,0);
+  const saved=readRepositoryJson(file);assert.equal(result.selected,0);
   assert.ok(saved.stories[0].title_image.retry_after);assert.ok(saved.stories[1].title_image.retry_after);assert.equal(saved.stories[2].title_image,undefined);
   assert.equal(publicTitleImage(saved.stories[0].title_image),null);
 });
@@ -394,7 +395,7 @@ test("overlay-only backfill selects existing editorial images and preserves a fa
     calls++; return { title_image: { mode: "impact_card" }, report: { status: "fallback" } };
   } });
   assert.equal(calls, 1); assert.equal(result.changed, 0); assert.equal(result.results[0].status, "preserved");
-  assert.deepEqual(JSON.parse(fs.readFileSync(file)).stories, stories);
+  assert.deepEqual(readRepositoryJson(file).stories, stories);
   await assert.rejects(backfillTitleImages({ root, editorialOnly: true }), /REQUIRES_RENDER_ONLY/);
 });
 
@@ -403,7 +404,7 @@ test("explicit revision creates one replacement, retains history and then reuses
   const provider = createHiggsfieldAdapter({ directory, run: mockRun(calls), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }), enabled: true });
   await provider.generate(STORY);
   const journal = path.join(directory, STORY.story_id, "source-visual.json");
-  const old = JSON.parse(fs.readFileSync(journal)); old.prompt_version = "old-prompt";
+  const old = readRepositoryJson(journal); old.prompt_version = "old-prompt";
   fs.writeFileSync(journal, JSON.stringify(old));
   const refresh = { ...STORY, refresh_prompt_version: C.prompt_version };
   const replaced = await provider.generate(refresh);
@@ -421,13 +422,13 @@ test("uncertain replacement keeps old journal and cannot pay for a duplicate", a
   const initial = createHiggsfieldAdapter({ directory, run: mockRun(calls), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }), enabled: true });
   await initial.generate(STORY);
   const journal = path.join(directory, STORY.story_id, "source-visual.json");
-  const old = JSON.parse(fs.readFileSync(journal)); old.prompt_version = "old-prompt";
+  const old = readRepositoryJson(journal); old.prompt_version = "old-prompt";
   fs.writeFileSync(journal, JSON.stringify(old));
   const provider = createHiggsfieldAdapter({ directory, enabled: true, run: mockRun(calls, { "generate create": () => { throw imageError("HIGGSFIELD_TIMEOUT"); }, "generate list": () => "[]" }) });
   const refresh = { ...STORY, refresh_prompt_version: C.prompt_version };
   await assert.rejects(provider.generate(refresh), { code: "HIGGSFIELD_TIMEOUT" });
   await assert.rejects(provider.generate(refresh), { code: "HIGGSFIELD_SUBMISSION_UNCERTAIN" });
-  assert.deepEqual(JSON.parse(fs.readFileSync(journal)), old);
+  assert.deepEqual(readRepositoryJson(journal), old);
   assert.equal(calls.filter(a => a[1] === "create").length, 2);
 });
 
@@ -490,7 +491,7 @@ test("explicit refresh snapshots eligible old images and newly visualisable card
   assert.equal(dry.results[2].would_generate, false);
   assert.equal(fs.readFileSync(file, "utf8"), before);
   await backfillTitleImages({ root, refreshEditorial: true, dryRun: false, maxDurationMs: 0, limit: 20, build: () => {} });
-  const saved = JSON.parse(fs.readFileSync(file)).stories;
+  const saved = readRepositoryJson(file).stories;
   assert.equal(saved[0].title_image.refresh_prompt_version, C.prompt_version);
   assert.deepEqual(publicTitleImage(saved[0].title_image), publicTitleImage(stories[0].title_image));
   for (const i of [1, 2, 4]) assert.deepEqual(saved[i], stories[i]);

@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -62,10 +63,10 @@ export function prepareEditorialReview(packet, story, previous = null, now = new
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const file = process.argv.find(arg => arg.endsWith(".json"));
   if (!file) throw new Error("Usage: node scripts/news/publish-editorial-review.mjs content/news/reviews/review.json [--publish]");
-  const packet = JSON.parse(fs.readFileSync(path.resolve(file), "utf8"));
+  const packet = readRepositoryJson(path.resolve(file), "utf8");
   const storeFile = path.join(ROOT, "data/news/editorial-analyses.json");
-  const store = JSON.parse(fs.readFileSync(storeFile, "utf8"));
-  const story = JSON.parse(fs.readFileSync(path.join(ROOT, "data/news/stories.json"), "utf8")).stories.find(item => item.story_id === packet.story_id);
+  const store = readRepositoryJson(storeFile, "utf8");
+  const story = readRepositoryJson(path.join(ROOT, "data/news/stories.json"), "utf8").stories.find(item => item.story_id === packet.story_id);
   const previous = store.analyses.find(item => item.slug === packet.slug);
   const result = prepareEditorialReview(packet, story, previous);
   if (result.changed && process.argv.includes("--publish")) {

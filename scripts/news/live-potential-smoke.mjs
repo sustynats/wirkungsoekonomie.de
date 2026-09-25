@@ -1,3 +1,4 @@
+import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 import path from 'node:path';
@@ -51,7 +52,7 @@ async function json(url) { return JSON.parse(gunzipSync(Buffer.from(await (await
 const cacheBust = url => `${url}${url.includes('?') ? '&' : '?'}release=${encodeURIComponent(releaseSha || Date.now())}`;
 
 export async function livePotentialCheck({ fetchJson = json, fetchText = text } = {}) {
-  const store = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/news/stories.json'), 'utf8'));
+  const store = readRepositoryJson(path.join(ROOT, 'data/news/stories.json'), 'utf8');
   const expectedManifest = JSON.parse(gunzipSync(fs.readFileSync(path.join(ROOT, 'wirkungsticker/data/app/manifest.json.gz'))).toString('utf8'));
   const reviewed = store.stories.filter(record => record.published && record.listed !== false
     && record.impact_assessment?.version === '2.1'

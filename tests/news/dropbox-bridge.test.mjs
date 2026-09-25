@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import {syntheticMediaReview} from './fixtures/media-review.mjs';
 import { syntheticScopeReview, syntheticImpact21, syntheticPotentialAssessment } from './fixtures/impact21.mjs';
 import { ensureSemanticReview } from '../../scripts/news/bridge/semantic-review.mjs';
@@ -326,8 +327,8 @@ test('API, batch, remote visual transport and local Higgsfield all reject before
   assert.equal(visualGenerationProvider({WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'higgsfield'}), 'higgsfield');
 });
 function nativeReviewFixture() {
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/eeg-netzpaket-richtungsbezug-2026-09-09.json'));
-  const original=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  const review=readRepositoryJson('content/news/reviews/eeg-netzpaket-richtungsbezug-2026-09-09.json');
+  const original=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===review.story_id));
   const version=original.versions.find(v=>sha256(JSON.stringify(v.analysis))===review.expected_analysis_hash);
   Object.assign(original,{analysis:version.analysis,content_hash:review.expected_content_hash,current_version:version.version});original.versions=original.versions.filter(v=>v.version<=version.version);
   delete original.pending_update;
@@ -456,7 +457,7 @@ test('last 30 image references are supplied without inventing historical descrip
   assert.equal(context.recent_visual_concepts[0].description_verified,false);
 });
 test('staging record survives ACK and duplicate reconciliation; production ACK requires committed marker',async t=>{
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.published&&s.listed!==false));
   // Publication order and punctuation in real headlines change during imports.
   // Exercise every HTML-sensitive character with a fixed title instead.
   record.title = 'Synthetischer Test: "Mensch & Planet" <prüfen> und Europas \'Demokratie\'';
@@ -475,7 +476,7 @@ test('staging record survives ACK and duplicate reconciliation; production ACK r
 });
 
 test('production ACK waits for matching pushed marker; temporary archival failure keeps the ACK and retries when due',async t=>{
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.published&&s.listed!==false));
   const {provider,store,transport}=setup(t,{stageOnly:false,adapt:()=>({decision:'publish',record})});
   await provider.enqueue([candidate()],[],now);const job=store.all()[0];
   transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify(output(job.input,'publish')));
@@ -529,7 +530,7 @@ test('bridge3 hold/reject never render; schema paths remain diagnostic in immuta
 });
 test('bridge3 Higgsfield failure uses the real card pipeline and persists private PNG before staged ACK',async t=>{
   bridge3Env(t);let calls=0;
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));delete record.title_image;
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.published&&s.listed!==false));delete record.title_image;
   const {directory,provider,store,transport}=setup(t,{stageOnly:false,adapt:()=>({decision:'publish',record})});
   provider.visualProvider=new HiggsfieldBridgeVisualProvider({directory,pipeline:options=>createTitleImagePipeline({...options,generate:async()=>{calls++;throw Object.assign(Error('Unavailable'),{code:'HIGGSFIELD_PROVIDER_UNAVAILABLE'});},raster:async(svg,{width,height})=>({png:png(width,height)})})});
   await provider.enqueue([candidate()],[],now,{testOnly:true});const job=store.all()[0];
@@ -573,7 +574,7 @@ test('native news without an optional visual brief reaches production acceptance
 
 test('missing visual brief renders a private free card and invalid supplied briefs remain blocked',async t=>{
   bridge3Env(t);const {directory}=setup(t);
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));delete record.title_image;
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.published&&s.listed!==false));delete record.title_image;
   let generations=0,renders=0;
   const visual=new HiggsfieldBridgeVisualProvider({directory,pipeline:options=>createTitleImagePipeline({...options,
     generate:async()=>{generations++;throw Error('NO_PAID_IMAGE');},
@@ -707,9 +708,9 @@ test('bridge pending drafts and updates retain source metadata but never persist
 });
 
 for (const pass of [true,false]) test(`bounded import finishes an older second pass before starting fresh drafts (pass=${pass})`,async t=>{
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const review=readRepositoryJson('content/news/reviews/2026-09-10-impact-semantics.json').reviews[0];
   const assessment=syntheticImpact21(review.impact_assessment);
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===review.story_id));
   record.sources.push(...review.assessment_sources);record.impact_assessment=assessment;
   const visited=[];
   const f=setup(t,{maxJobs:1,stageOnly:false,adapt:packet=>{
@@ -745,8 +746,8 @@ for (const pass of [true,false]) test(`bounded import finishes an older second p
 });
 
 for (const deferredMedia of [false,true,'complete']) for (const pass of [true,false]) test(`separate semantic review controls image generation and ACK (pass=${pass}, media=${deferredMedia})`,async t=>{
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];review.impact_assessment=syntheticImpact21(review.impact_assessment);
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  const review=readRepositoryJson('content/news/reviews/2026-09-10-impact-semantics.json').reviews[0];review.impact_assessment=syntheticImpact21(review.impact_assessment);
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===review.story_id));
   record.sources.push(...review.assessment_sources);record.impact_assessment=review.impact_assessment;
   if(deferredMedia){record.media_review_required=true;record.analysis={...record.analysis,media_impact:null};}
   if(deferredMedia==='complete')record.title='Im Beispiel wird vor einer Katastrophe gewarnt';
@@ -781,9 +782,9 @@ for (const deferredMedia of [false,true,'complete']) for (const pass of [true,fa
 });
 
 test('an all-pass semantic output with a missing required path returns for correction before acceptance',async t=>{
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const review=readRepositoryJson('content/news/reviews/2026-09-10-impact-semantics.json').reviews[0];
   const assessment=syntheticImpact21(review.impact_assessment);
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===review.story_id));
   record.sources.push(...review.assessment_sources);record.impact_assessment=assessment;
   let images=0;
   const f=setup(t,{correctionsEnabled:true,stageOnly:false,adapt:()=>({decision:'publish',record}),semanticReview:ensureSemanticReview,visualProvider:{receive:async()=>{images++;return {status:'fallback'};}}});
@@ -813,9 +814,9 @@ test('an all-pass semantic output with a missing required path returns for corre
 });
 
 test('a legacy all-pass hold becomes a bounded parent repair without rewriting its accepted review',async t=>{
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const review=readRepositoryJson('content/news/reviews/2026-09-10-impact-semantics.json').reviews[0];
   const assessment=syntheticImpact21(review.impact_assessment);
-  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  const record=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===review.story_id));
   record.sources.push(...review.assessment_sources);record.impact_assessment=assessment;
   const f=setup(t,{correctionsEnabled:true,stageOnly:false,adapt:()=>({decision:'publish',record}),semanticReview:ensureSemanticReview});
   await f.provider.enqueue([candidate()],[],now);let parent=f.store.all()[0];parent.candidate=record;f.store.put(parent);

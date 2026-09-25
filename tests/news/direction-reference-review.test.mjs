@@ -1,3 +1,4 @@
+import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,9 +8,9 @@ import { sha256 } from '../../scripts/news/lib.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 
 const registry=loadNewsRegistry(process.cwd());
-const reviews=name=>JSON.parse(fs.readFileSync(`content/news/reviews/${name}-2026-09-09.json`));
+const reviews=name=>readRepositoryJson(`content/news/reviews/${name}-2026-09-09.json`);
 function beforeReview(review) {
-  const s=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  const s=structuredClone(readRepositoryJson('data/news/stories.json').stories.find(s=>s.story_id===review.story_id));
   const version=s.versions.find(v=>sha256(JSON.stringify(v.analysis))===review.expected_analysis_hash);
   assert.ok(version,'review binds a preserved version');
   Object.assign(s,{analysis:structuredClone(version.analysis),current_version:version.version,content_hash:review.expected_content_hash});
