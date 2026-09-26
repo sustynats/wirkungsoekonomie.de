@@ -1,7 +1,104 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-26T10:00:00.000Z",
+  "updated_at": "2026-09-26T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-26-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-26",
+      "window_from": "2026-09-26T10:00:00.000Z",
+      "window_to": "2026-09-26T16:00:00.000Z",
+      "stand": "2026-09-26T16:00:00.000Z",
+      "headline": "Das sind die 10 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 10,
+        "neu": 5,
+        "fortgeschrieben": 5
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T15:40:26.084Z",
+          "score": 9.6957
+        },
+        {
+          "story_id": "wt-17a8f50307926f08",
+          "slug": "bomben-sprengung-am-rheinufer-in-bornheim-hersel-926f08",
+          "title": "Weltkriegsbombe im Rhein gefunden – etwa 500 Anwohner betroffen",
+          "state": "neu",
+          "at": "2026-09-26T15:29:04.689Z",
+          "score": 9.9141
+        },
+        {
+          "story_id": "wt-37f7dd9252599acf",
+          "slug": "offentliche-fahndung-mit-fotos-15-jahriger-getotet-verdachtige-manner-stellen-sich-599acf",
+          "title": "15-Jähriger im Hochsauerland getötet: Zwei gesuchte Männer stellen sich",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T14:33:07.713Z",
+          "score": 5.5087
+        },
+        {
+          "story_id": "wt-e6c76316a52244a8",
+          "slug": "angriff-tote-und-verletzte-nach-explosion-in-pakistan-2244a8",
+          "title": "Explosion an Polizeikontrollposten erschüttert Grenzgebiet zwischen Pakistan und Afghanistan",
+          "state": "neu",
+          "at": "2026-09-26T14:13:59.957Z",
+          "score": 9.7056
+        },
+        {
+          "story_id": "wt-d4a15dc3205d5150",
+          "slug": "unfalle-sechs-tote-nach-hausexplosion-in-athen-5d5150",
+          "title": "Laut Feuerwehr: Sechs Leichen nach Hausexplosion in Athen geborgen",
+          "state": "neu",
+          "at": "2026-09-26T13:00:59.561Z",
+          "score": 9.5028
+        },
+        {
+          "story_id": "wt-4ab54dd84b4c8ff0",
+          "slug": "nach-explosion-in-athen-leichen-von-zwei-us-touristen-aus-trummern-geborgen-4c8ff0",
+          "title": "Laut stern: Zwei US-Touristen nach Explosion in Athen aus Trümmern geborgen",
+          "state": "neu",
+          "at": "2026-09-26T11:58:54.839Z",
+          "score": 9.7096
+        },
+        {
+          "story_id": "wt-a7678f5793431a52",
+          "slug": "waffen-festnahme-nach-schussen-mit-schreckschusswaffe-in-merseburg-431a52",
+          "title": "Laut stern: Festnahme nach Schüssen mit Schreckschusswaffe in Merseburg",
+          "state": "neu",
+          "at": "2026-09-26T11:41:45.072Z",
+          "score": 3.2826
+        },
+        {
+          "story_id": "wt-73b3b73c6285aa6d",
+          "slug": "polizeieinsatz-schusse-auf-kolner-pizzeria-und-wohnung-85aa6d",
+          "title": "Laut stern: Schüsse treffen Kölner Pizzeria und Wohnung",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T10:51:35.754Z",
+          "score": 2.8933
+        },
+        {
+          "story_id": "wt-dc78e52bf1c1afb9",
+          "slug": "mindestens-drei-tote-bei-angriff-an-schule-c1afb9",
+          "title": "Mindestens drei Tote bei Schüssen an Schule auf den Philippinen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T10:37:32.692Z",
+          "score": 7.3543
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Laut DER SPIEGEL: Recherche stützt Bericht über Warnungen vor Hamas-Invasion",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T10:35:41.932Z",
+          "score": 4.8492
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-26-mittagslage",
       "slot": "mittagslage",
