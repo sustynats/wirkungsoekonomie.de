@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-26T09:39:31.993Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-26T10:31:30.951Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -7,10 +7,23 @@
   "language": "de",
   "items": [
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/die-interessante-frage-ist-nicht-ob-habeck-morgen-eine-partei-grundet-0a8fbd/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/die-interessante-frage-ist-nicht-ob-habeck-morgen-eine-partei-grundet-0a8fbd/",
+      "title": "Meinung & Analyse: Die interessante Frage ist nicht, ob Habeck morgen eine Partei gründet",
+      "summary": "Das Gerücht um Habeck und Wissing ist unbestätigt. Dahinter liegt aber eine reale politische Entwicklung: Mehrere Akteure beschreiben eine Lücke für ein neues liberales Angebot im demokratischen Zentrum.",
+      "date_published": "2026-09-26T10:23:45.580Z",
+      "date_modified": "2026-09-26T10:23:45.580Z",
+      "_woek_released_at": "2026-09-26T10:23:45.580Z",
+      "tags": [
+        "Meinung & Analyse"
+      ],
+      "_woek_type": "Meinung & Analyse"
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
       "title": "Laut DER SPIEGEL: Recherche stützt Bericht über Warnungen vor Hamas-Invasion",
-      "summary": "DER SPIEGEL berichtet, eine Recherche der New York Times stütze einen israelischen Bericht über Warnungen vor einer Hamas-Invasion. Ob Warnungen ignoriert wurden und welche politischen Folgen daraus entstehen, bleibt offen.",
+      "summary": "Eine Recherche der New York Times soll laut DER SPIEGEL einen israelischen Bericht über Warnungen vor einer Hamas-Invasion stützen. Ob Warnungen ignoriert wurden und welche Verantwortung daraus folgt, bleibt offen.",
       "date_published": "2026-09-26T09:28:00.000Z",
       "date_modified": "2026-09-26T09:28:00.000Z",
       "_woek_released_at": "2026-09-26T09:42:03.246Z",
@@ -23,7 +36,7 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "positive",
           "status": "potential"
         },
@@ -487,6 +500,20 @@
         "Meinung & Analyse"
       ],
       "_woek_type": "Meinung & Analyse"
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wenn-aus-einem-berliner-gerucht-eine-politische-frage-wird-a1fe03/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wenn-aus-einem-berliner-gerucht-eine-politische-frage-wird-a1fe03/",
+      "title": "Nachgehört: Wenn aus einem Berliner Gerücht eine politische Frage wird",
+      "summary": "Dieter Breymann spricht über eine mögliche Neugründung, bei der Robert Habeck und Volker Wissing eine Rolle spielen könnten. Belegt ist das nicht. Interessant ist, warum das Gerücht gerade jetzt anschlussfähig wird.",
+      "date_published": "2026-09-26T10:23:36.320Z",
+      "date_modified": "2026-09-26T10:23:36.320Z",
+      "_woek_released_at": "2026-09-26T10:23:36.320Z",
+      "_woek_original_episode_date": "2026-09-25",
+      "tags": [
+        "Nachgehört"
+      ],
+      "_woek_type": "Nachgehört"
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/pisa-lesen-lehrermangel-was-diese-folge-als-bildungsproblem-sichtbar-macht-f5afad/",
@@ -5837,12 +5864,13 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/mindestens-drei-tote-bei-angriff-an-schule-c1afb9/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/mindestens-drei-tote-bei-angriff-an-schule-c1afb9/",
       "title": "Mindestens drei Tote bei Schüssen an Schule auf den Philippinen",
-      "summary": "An einer Schule auf Mindanao sind nach übereinstimmenden Berichten mindestens drei Menschen getötet und mehrere weitere verletzt worden. Die Zahl der Verletzten und das Motiv des mutmaßlichen jugendlichen Schützen sind noch offen.",
+      "summary": "An einer Schule auf Mindanao wurden mindestens drei Menschen getötet und mehrere weitere verletzt. Der Angriff kann Vertrauen, Gesundheit und Bildung vor Ort belasten, doch langfristige Folgen und das Motiv sind nicht belegt.",
       "date_published": "2026-09-18T09:01:24.000Z",
       "date_modified": "2026-09-18T09:01:24.000Z",
       "_woek_released_at": "2026-09-18T11:18:37.517Z",
       "tags": [
-        "Politik"
+        "Politik",
+        "Gesellschaft"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
@@ -5854,12 +5882,12 @@
         },
         "planet": {
           "magnitude": 0,
-          "direction": "open",
+          "direction": "neutral",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
