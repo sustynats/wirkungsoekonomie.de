@@ -18,8 +18,13 @@
       "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-09-25",
+  "outbox": [
+    {
+      "id": "bf5c65e5cf876037bd69ffea",
+      "content": "WÖk Tagesbericht · 2026-09-26 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n⚠ Akademie: HTTP 402\n✓ Parlament: erreichbar\n⚠ Institut: HTTP 402\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 604 live · 499 aktuelle Lagen und Einzelakten aus 527 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-09-25) 8; heute bisher 1 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-09-26T06:00:40.410Z; 792 offene Prüfungen, 44 aktive Quellen.\nQueue: 792 offen (736 Kapazität · 0 technisch · 56 redaktionell); Status draining.\nQuellen-Funnel heute: 18454 Feed-Einträge → 172 neu/aktualisiert → 355 Story-Kandidaten → 26462 geeignet → 10 KI → 10 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 278; redaktionelle Quellenbeiträge: 748.\nProduktive Quellen im letzten Lauf: keine im letzten Lauf.\nEreignischeck (begrenzter Quellenbestand): 13 größere Ereignisse · 6 mit Veröffentlichung · 7 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.98 · heute $0.14 · Monat $64.47.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 422 Erstveröffentlichungen · 174 Aktualisierungen · 2768 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 10.48 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 129 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 11 neu · 10 aktualisiert · $7.97 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 27 abgeglichen · 8 angewendet · $0.301 nach Anbieter-Nutzungsdaten; $0.500 für 4 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.014; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €67.50 (Limit €100.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 2 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Redaktionelle Themenabdeckung: 3 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-09-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -2073,7 +2078,7 @@
       }
     },
     "last_new_at": "2026-09-26T05:35:54.845Z",
-    "checked_at": "2026-09-26T05:50:52.212Z",
+    "checked_at": "2026-09-26T06:05:51.894Z",
     "last_current_new_at": "2026-09-26T05:35:54.845Z"
   },
   "recovery_attempts": [
