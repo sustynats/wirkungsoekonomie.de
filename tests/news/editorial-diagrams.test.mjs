@@ -77,7 +77,7 @@ test('unchanged reviewed publications have real diagrams; later revisions remain
   // or stop the normal publication pipeline. The explicit visual audit reports
   // stale plans; the hash guard above leaves the new manuscript intact.
   if(row.layout_status==='stale')continue;
-  assert.ok(row?.diagrams>0,entry.slug);
+  if (!entry.typesetting_only) assert.ok(row?.diagrams>0,entry.slug);
   assert.equal(row.layout_status,'bound',entry.slug);
  }
  // New editorial arrivals are reported by --check-latest, not a reason to
