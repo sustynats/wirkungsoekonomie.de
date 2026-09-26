@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
-import { bridgePath, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
-import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
+import { bridgePath, hash, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
+import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, buildObservationRequest, episodeMateriality, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
 import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTranscriptText, timecode, audioSourceFor } from '../../scripts/news/sendungs-transkript.mjs';
 import { labelledTitle } from '../../scripts/news/build.mjs';
 
@@ -100,6 +100,56 @@ function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
   const transport = { writeAtomic: async (p, v) => { files.set(p, v); } };
   return { session: { store, transport }, files, observations, jobs };
 }
+
+test('Machtwechsel is one verified metadata-only source with no paid or automatic article generation', () => {
+  const series = loadShows().filter(s => s.id === 'machtwechsel');
+  assert.equal(series.length, 1);
+  assert.equal(series[0].feed, 'https://machtwechsel.podigee.io/feed/mp3');
+  assert.equal(series[0].observation_only, true);
+  assert.equal(series[0].respect_robots, true);
+  assert.equal(series[0].allow_paid_transcription, false);
+  assert.match(series[0].feed_evidence_url, /291-neue-episode$/);
+});
+
+test('observations retain metadata, gate materiality, never fetch media/transcripts and never queue a model job', async () => {
+  const show = { ...shows.lp, id: 'machtwechsel', observation_only: true };
+  const xml = jule.replace('In Sachsen-Anhalt bekommt die AfD 43,8 Prozent.', 'Wie lassen sich Steuerhinterziehung und geringe Wahlbeteiligung vermeiden?');
+  const f = fakeSession();
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [show], limit: 5, maxPerDay: 5,
+    fetchImpl: async url => { assert.equal(url, show.feed, 'no media, page or transcript request'); return {ok: true, text: async () => xml}; },
+    transcribeImpl: async () => assert.fail('no paid transcription') };
+  const report = await proposeEpisodeCandidates(options);
+  assert.equal(report.proposed.length, 1);
+  const candidate = f.jobs.at(-1);
+  assert.equal(candidate.status, 'accepted'); assert.equal(candidate.accepted.decision, 'hold');
+  assert.equal(candidate.intake.automatic_generation_allowed, false);
+  assert.match(candidate.input.request.brief, /kein Artikelauftrag/);
+  assert.doesNotMatch(candidate.input.request.brief, /Auftrag: Nachgehört-Beitrag/);
+  assert.equal(candidate.queued_at, undefined);
+  assert.equal(candidate.input.input_hash, hash(candidate.input.request));
+  assert.equal(candidate.input.manual_only, true);
+  assert.equal(candidate.input.request.publication_intent, 'final_approval_required');
+  assert.equal(candidate.input.origin.transcript, undefined);
+  assert.deepEqual(candidate.input.request.links, ['https://lanz-precht.example/262']);
+  assert.equal(f.files.size, 0, 'no generation inbox, no article, no transcript file');
+  const explicitTranscript = buildObservationRequest(parseEpisodes(xml, show)[0], show, {
+    owner: '1234567890123456', now, transcript: {url:'https://transcript.example/private',text:'Must not be retained'}, retry: true,
+  }).job;
+  assert.equal(explicitTranscript.input.origin.transcript, undefined);
+  assert.deepEqual(explicitTranscript.input.request.links, candidate.input.request.links);
+  assert.equal((await proposeEpisodeCandidates(options)).proposed.length, 0, 'same observation is never retried as a transcript job');
+  const meta = [...f.observations.entries()].find(([k]) => k.startsWith('episode-metadata:'))[1];
+  assert.equal(meta.published_at, '2026-09-10T23:01:00.000Z'); assert.ok(meta.shownotes); assert.equal(meta.materiality.relevant, true);
+  const duplicate = fakeSession({links:['https://lanz-precht.example/262']});
+  assert.equal((await proposeEpisodeCandidates({...options,session:duplicate.session})).proposed.length,0);
+  const irrelevant = fakeSession();
+  const quietXml = xml.replace(/<title>[^<]+<\/title>/, '<title>Unser Merch und die Tour</title>').replace(/<description>[^<]+<\/description>/, '<description>Tickets und Rabattcode.</description>');
+  assert.equal((await proposeEpisodeCandidates({...options,session:irrelevant.session,fetchImpl:async()=>({ok:true,text:async()=>quietXml})})).proposed.length,0);
+  assert.equal(episodeMateriality({title:'Kaufberatung',summary:'Neue Energie fuer Ihren Einkauf mit Rabatt'}).relevant,false);
+  const capped = fakeSession(); capped.observations.set('github-episode-day:2026-09-16',{proposed:5});
+  assert.equal((await proposeEpisodeCandidates({...options,session:capped.session})).proposed.length,0);
+  assert.ok([...capped.observations.keys()].some(k=>k.startsWith('episode-metadata:')), 'observation continues at proposal limit');
+});
 test('a new subscribed series without transcript waits without charge and does not starve a usable older episode', async () => {
   const blocked = { ...shows.illner, require_transcript: true, allow_paid_transcription: false };
   const ready = { ...shows.lp, require_transcript: true };
