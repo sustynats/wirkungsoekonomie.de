@@ -89,16 +89,34 @@ export function assertWithoutProcessNotes(markdown) {
   if (treffer.length) throw Object.assign(Error('EDITORIAL_PROCESS_NOTE_IN_TEXT'), { detail: treffer.join(' | ') });
 }
 
-export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [], authoredVisualLabels = {}, automaticArrowDiagrams = !markdown.includes('<!-- WÖK_VISUAL') } = {}) {
+export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionDiagrams = [], paragraphJoins = {}, authoredVisualLabels = {}, automaticArrowDiagrams = !markdown.includes('<!-- WÖK_VISUAL') } = {}) {
   // Authored markers define the visual scope. Other arrows may be a rejected
   // example, not an endorsed causal model; preserve them as ordinary prose.
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
-  const sections = [], headings = [], blocks = [];
+  const sections = [], headings = [];
   let current = { id: "einstieg", title: "", blocks: [] }, tableIndex = 0;
   const renderedSectionDiagrams = new Set();
   const authoredVisualIds = new Set();
-  const add = html => { current.blocks.push(html); blocks.push(html); };
+  const joinedSections = new Set();
+  const add = html => { current.blocks.push(html); };
   const endSection = () => {
+    // Explicit, manuscript-hash-bound typesetting only. Keep every word and
+    // inline element; never merge across headings, lists, quotes or visuals.
+    const joins = paragraphJoins[current.id];
+    if (joins !== undefined) {
+      if (!Array.isArray(joins)) throw Error('EDITORIAL_PARAGRAPH_JOIN_INVALID');
+      const original = current.blocks, joined = []; let cursor = 0;
+      for (const range of joins) {
+        if (!Array.isArray(range) || range.length !== 2) throw Error('EDITORIAL_PARAGRAPH_JOIN_INVALID');
+        const [start, end] = range;
+        if (!Number.isInteger(start) || !Number.isInteger(end) || start < cursor || end <= start || end >= original.length
+          || original.slice(start, end + 1).some(block => !/^<p>[\s\S]*<\/p>$/.test(block))) throw Error('EDITORIAL_PARAGRAPH_JOIN_INVALID');
+        joined.push(...original.slice(cursor, start), `<p>${original.slice(start, end + 1).map(block => block.slice(3, -4)).join(' ')}</p>`);
+        cursor = end + 1;
+      }
+      current.blocks = [...joined, ...original.slice(cursor)];
+      joinedSections.add(current.id);
+    }
     for (const diagram of sectionDiagrams.filter(d => d.sectionId ? d.sectionId === current.id : d.section === current.title)) {
       if (diagram.items.some(item => !markdown.includes(item))) throw Error('EDITORIAL_DIAGRAM_EXCERPT_CHANGED');
       add(renderTextDiagram(diagram, inlineEditorialMarkdown));
@@ -172,7 +190,8 @@ export function renderEditorialMarkdown(markdown, { tableDiagrams = {}, sectionD
   }
   endSection();
   if (renderedSectionDiagrams.size !== sectionDiagrams.length) throw Error('EDITORIAL_DIAGRAM_SECTION_NOT_FOUND');
-  return { html: blocks.join("\n"), sections: sections.filter(s => s.html), headings };
+  if (joinedSections.size !== Object.keys(paragraphJoins).length) throw Error('EDITORIAL_PARAGRAPH_SECTION_NOT_FOUND');
+  return { html: sections.map(s => s.html).filter(Boolean).join("\n"), sections: sections.filter(s => s.html), headings };
 }
 
 // Signed manuscripts may use named footnotes. Keep their text and source order;
