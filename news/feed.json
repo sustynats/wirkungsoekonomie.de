@@ -6302,8 +6302,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
-      "title": "Energie-Infrastruktur in Sumy und Odessa laut Deutschlandfunk beschädigt",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden laut Militärverwaltung mindestens 18 Menschen verletzt. Umfang der Ausfälle und Reparaturdauer sind offen.",
+      "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; für Kiew werden mindestens 18 Verletzte genannt. Ausmaß der Ausfälle und Reparaturdauer bleiben offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -6319,7 +6319,7 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
@@ -9653,17 +9653,33 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/zwei-messerangriffe-in-freiburg-tatverdachtiger-war-polizeibekannt-053fc8/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/zwei-messerangriffe-in-freiburg-tatverdachtiger-war-polizeibekannt-053fc8/",
-      "title": "Freiburg: Tatverdächtiger soll für zwei Messerangriffe verantwortlich sein",
-      "summary": "Nach dem tödlichen Messerangriff in Freiburg verdichten sich laut SWR die Ermittlungen: Der festgenommene 30-Jährige soll auch für einen früheren Angriff verantwortlich sein. Haftbefehl wegen vollendeten und versuchten Mordes ist in Vollzug; Motiv und Hintergründe bleiben offen.",
+      "title": "laut Polizei: Tatverdächtiger soll für zwei Messerangriffe verantwortlich sein",
+      "summary": "Nach dem Tod eines 74-Jährigen ermittelt die Polizei gegen einen festgenommenen Mann auch wegen eines früheren Messerangriffs. Der Tatverdacht ist nicht abschließend geklärt; Motiv und Beziehungen zu den Opfern bleiben offen.",
       "date_published": "2026-09-10T14:22:41.000Z",
       "date_modified": "2026-09-10T14:22:41.000Z",
       "_woek_released_at": "2026-09-10T15:46:51.329Z",
       "tags": [
-        "Gesellschaft"
+        "Geopolitik"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/nach-sprengstoff-verdacht-an-schweizer-grenze-deshalb-war-die-autobahn-so-lange-gesperrt-a14269/",
@@ -10412,8 +10428,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e/",
-      "title": "74-Jähriger nach Messerangriff in Freiburg gestorben",
-      "summary": "Nach einem Messerangriff in Freiburg ist ein 74-Jähriger gestorben, ein 30 Jahre alter Tatverdächtiger wurde festgenommen. Motiv, Beziehung zwischen den Beteiligten und ein möglicher Zusammenhang mit einem früheren Angriff sind noch offen.",
+      "title": "74-Jähriger stirbt in Freiburg; laut Polizei möglicher Zusammenhang mit weiterem Messerangriff",
+      "summary": "In Freiburg ist ein 74-Jähriger nach einem Messerangriff gestorben. Ob der festgenommene 30-Jährige auch für einen früheren Angriff verantwortlich ist, wird laut Polizei geprüft.",
       "date_published": "2026-09-09T09:02:32.000Z",
       "date_modified": "2026-09-09T09:02:32.000Z",
       "_woek_released_at": "2026-09-09T05:54:07.467Z",
@@ -10422,7 +10438,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/droge-mussen-antrag-zum-afd-verbot-einbringen-ac1645/",
