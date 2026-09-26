@@ -17,6 +17,20 @@ Politikfolge gleichsetzen.
 
 ## Gemeinsame Implementierung
 
+Seit 26.09.2026 kann dieselbe hashgebundene Layoutdatei auch rein typografische
+`paragraphJoins` enthalten: je Abschnitt geordnete, inklusive Indexbereiche der
+ursprünglichen HTML-Blöcke. Nur unmittelbar benachbarte Absätze dürfen verbunden
+werden; Überschriften, Listen, Quellenblöcke und Zitate werden nicht übergangen.
+`typesetting_only` kennzeichnet einen solchen Layoutplan ohne neue Grafik.
+Die beiden Habeck/Wissing-Beiträge wurden auf ausdrücklichen Wunsch Natalies so
+neu gesetzt. Manuskript, Quellen, Publikationsdatum und Freigabe-Hash bleiben
+bytegenau erhalten. Die Ausgabe ersetzt ausschließlich Absatzgrenzen durch
+Leerzeichen; eine neue Textfassung übernimmt einen alten Layoutplan nicht.
+Die beiden HTML-Seiten und ihre Suchmetadaten werden vom bestehenden
+Ticker-/Deployment-Build aus diesem Plan erzeugt. Der Satzkorrektur-PR enthält
+nur die Quellenänderung; automatisch angehängte, fachfremde #253-Projektionen
+gehören nicht zu diesem Veröffentlichungspaket.
+
 Der vorhandene Markdown-Renderer zeigt eigenständige Pfeilketten mit mindestens
 drei Schritten als zugängliche HTML-Ablaufgrafik. Beispiel:
 
