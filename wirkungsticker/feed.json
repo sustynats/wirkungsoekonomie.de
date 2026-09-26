@@ -1,11 +1,43 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-26T08:38:50.208Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-26T09:24:25.374Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-haus-nahe-akropolis-in-athen-ein-todesopfer-aus-trummern-geborgen-e5105b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-haus-nahe-akropolis-in-athen-ein-todesopfer-aus-trummern-geborgen-e5105b/",
+      "title": "Explosion in Wohnhaus nahe Akropolis: Ein Todesopfer aus Trümmern geborgen",
+      "summary": "Nach einer Explosion in einem Wohnhaus nahe der Akropolis wurde eine Leiche geborgen. Die Identität des Opfers und die Ursache sind nur teilweise geklärt.",
+      "date_published": "2026-09-26T08:23:20.000Z",
+      "date_modified": "2026-09-26T08:23:20.000Z",
+      "_woek_released_at": "2026-09-26T09:30:14.858Z",
+      "tags": [
+        "Gesundheit",
+        "Wirtschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/kollegen-im-stich-gelassen-polizistinnen-verlieren-nach-schiesserei-beamtenstatus-e50fc4/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/kollegen-im-stich-gelassen-polizistinnen-verlieren-nach-schiesserei-beamtenstatus-e50fc4/",
@@ -6318,8 +6350,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
-      "title": "Angriffe beschädigen laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa. Das mögliche Ausmaß der Ausfälle und die Dauer der Reparaturen bleiben offen.",
+      "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden laut Militärverwaltung mindestens 18 Menschen verletzt. Ausmaß der Ausfälle, Reparaturdauer und weitergehende Versorgungsfolgen bleiben offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -6336,7 +6368,7 @@
         },
         "planet": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
