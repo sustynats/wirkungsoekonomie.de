@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-26T06:24:30.175Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-26T07:09:19.637Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -6318,8 +6318,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
-      "title": "Energie-Infrastruktur in Sumy und Odessa laut Deutschlandfunk beschädigt",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden laut Militärverwaltung mindestens 18 Menschen verletzt. Umfang der Ausfälle und Reparaturdauer sind offen.",
+      "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden mindestens 18 Menschen verletzt. Ausmaß der Ausfälle und Reparaturdauer bleiben offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -6335,7 +6335,7 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
@@ -10441,8 +10441,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e/",
-      "title": "74-Jähriger nach Messerangriff in Freiburg gestorben",
-      "summary": "Nach einem Messerangriff in Freiburg ist ein 74-Jähriger gestorben, ein 30 Jahre alter Tatverdächtiger wurde festgenommen. Motiv, Beziehung zwischen den Beteiligten und ein möglicher Zusammenhang mit einem früheren Angriff sind noch offen.",
+      "title": "74-Jähriger stirbt in Freiburg; laut Polizei möglicher Zusammenhang mit weiterem Messerangriff",
+      "summary": "In Freiburg ist ein 74-Jähriger nach einem Messerangriff gestorben. Ob der festgenommene 30-Jährige auch für einen früheren Angriff verantwortlich ist, wird laut Polizei geprüft.",
       "date_published": "2026-09-09T09:02:32.000Z",
       "date_modified": "2026-09-09T09:02:32.000Z",
       "_woek_released_at": "2026-09-09T05:54:07.467Z",
@@ -10451,7 +10451,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/droge-mussen-antrag-zum-afd-verbot-einbringen-ac1645/",
