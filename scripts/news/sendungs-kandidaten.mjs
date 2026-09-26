@@ -10,7 +10,9 @@ import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
-import { decodeXml } from './lib.mjs';
+import { decodeXml, assertSafeFeedUrl } from './lib.mjs';
+import { respectRobots } from './access-policy.mjs';
+import { eventSignals } from './event-relevance.mjs';
 import { transcribeEpisode, fetchSubtitleTranscript } from './sendungs-transkript.mjs';
 import { episodeUrlKey, parseYouTubeFeed, inspectYouTubeEpisode, fetchYouTubeTranscript, matchingPodcastEpisode, matchingPodcastFallback } from './youtube-episodes.mjs';
 
@@ -95,6 +97,41 @@ export const observationKey = (show, episode) => `github-episode:${show.id}:${ha
 export const pageObservationKey = (episode) => /^https?:\/\//.test(episode?.page || '')
   ? `github-episode-page:${hash(episodeUrlKey(episode.page)).slice(0, 32)}`
   : null;
+
+// A metadata signal can justify a private research candidate, never a factual
+// verdict or an article. No person/party names and no implied election forecast.
+export function episodeMateriality(episode) {
+  const f = eventSignals(episode);
+  const representation = /\b(wahlbeteiligung|steuerhinterziehung|parteigrundung|neugrundung|eigene partei|reprasentation|koalition\w*|reformen)\b/.test(f.text);
+  return { relevant: !f.routine && (f.material || f.institutional || f.signals.length > 0 || representation),
+    basis: 'bounded_provider_metadata', signals: [...f.signals, ...(f.material ? ['material_function'] : []),
+      ...(f.institutional ? ['institutional_function'] : []), ...(representation ? ['democratic_or_fiscal_function'] : [])] };
+}
+
+export function buildObservationRequest(episode, show, options) {
+  // Even if a future feed offers a transcript/enclosure, this mode cannot
+  // fetch it, send it to a model or silently turn into the normal draft lane.
+  const result = buildEpisodeRequest({ ...episode, media: '', transcripts: [] }, show, { ...options, transcript: null, retry: false });
+  const { job } = result;
+  job.input.instructions = 'Nur privater Episodenkandidat aus Titel, Datum, Episoden-URL und begrenzten Shownotes. Keine automatische Texterstellung, Recherche, Transkription oder Publikation. Inhaltliche Bearbeitung erst nach konkretem Redaktionsauftrag; abschliessende Freigabe bleibt erforderlich.';
+  job.input.request.brief = [
+    `Redaktioneller Episodenkandidat: ${show.show_name} - „${episode.title}“ vom ${germanDate(episode.published_at)}.`,
+    episode.summary ? `Begrenzte Shownotes laut Anbieter: ${episode.summary}` : null,
+    'Themenhinweis aus offiziellen Metadaten, kein Artikelauftrag und kein Wortlautbeleg. Fragen im Titel sind keine Tatsachenbestaetigung.',
+    job.input.instructions,
+  ].filter(Boolean).join('\n').slice(0, 6000);
+  job.input.input_hash = hash(job.input.request);
+  delete job.queued_at;
+  job.intake.trigger_type = 'automatic_episode_observation';
+  job.intake.automatic_generation_allowed = false;
+  job.intake.editorial_hold = { code: 'SOURCE_VERIFICATION_REQUIRED',
+    reason: 'Beobachtete Episode mit materiellem Themenhinweis, noch kein Artikelentwurf. Die Shownotes belegen nicht den Wortlaut der Sendung.',
+    requested_information: 'Bei Interesse zur redaktionellen Bearbeitung beauftragen und eine zulaessige Beleggrundlage bereitstellen. Keine automatische Transkription oder Veroeffentlichung.',
+    held_at: options.now };
+  job.accepted = { decision: 'hold', reason: job.intake.editorial_hold.reason, accepted_at: options.now };
+  job.status = 'accepted';
+  return result;
+}
 
 export function knownEpisodeUrls({ editions = [], requests = [] } = {}) {
   const urls = new Set();
@@ -360,7 +397,8 @@ export async function fetchShowFeed(show, fetchImpl = fetch, timeoutMs = 20000) 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetchImpl(show.feed, { signal: controller.signal, headers: { 'User-Agent': 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)', Accept: 'application/rss+xml, application/xml, text/xml' } });
+    if (show.respect_robots) await respectRobots(show.feed, { request_timeout_ms: timeoutMs }, fetchImpl, assertSafeFeedUrl, new Set([new URL(show.feed).hostname]));
+    const response = await fetchImpl(show.feed, { signal: controller.signal, ...(show.observation_only ? { redirect: 'error' } : {}), headers: { 'User-Agent': show.respect_robots ? 'WOek-Wirkungsticker' : 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)', Accept: 'application/rss+xml, application/xml, text/xml' } });
     if (!response.ok) throw new Error(`SHOW_FEED_HTTP_${response.status}`);
     return await response.text();
   } finally { clearTimeout(timer); }
@@ -381,7 +419,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
   try {
     const day = String(now).slice(0, 10);
     const counter = (await store.observation(`github-episode-day:${day}`)) || { day, proposed: 0 };
-    if (counter.proposed >= maxPerDay) return { status: 'daily_limit', day, proposed: [] };
+    if (counter.proposed >= maxPerDay && !(shows || loadShows(root)).some(s => s.observation_only)) return { status: 'daily_limit', day, proposed: [] };
     const rows = await store.all();
     // The owner of the private desk is only known from a real submitted request.
     const reference = rows.find((row) => row?.input?.job_type === 'editorial_request');
@@ -409,6 +447,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
         const showAgeDays = Number(show.max_age_days) > 0 ? Number(show.max_age_days) : maxAgeDays;
         const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl, now, { onError: error => feedErrors.push(error) }), now, { maxAgeDays: showAgeDays, limit: 3 });
         for (const episode of episodes) {
+          if (show.monitoring_since && Date.parse(episode.published_at) < Date.parse(show.monitoring_since)) continue;
           // Die Kennung der Mediathek wechselt, sobald die untertitelte Fassung
           // gewinnt. Der Vermerk haengt deshalb an der Folge selbst (Titel ohne
           // Fassungszusatz und Sendezeit) und zusaetzlich an der Sendungsseite;
@@ -418,6 +457,16 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           const previous = (await store.observation(episodeAnchor))
             || (await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`))
             || (pageAnchor ? await store.observation(pageAnchor) : null);
+          if (show.observation_only) {
+            const materiality = episodeMateriality(episode);
+            // Stored in the existing observation table, not a second watchlist.
+            await store.observe(`episode-metadata:${show.id}:${hash(episode.guid).slice(0, 32)}`, {
+              show_id: show.id, title: episode.title, published_at: episode.published_at,
+              url: episode.page, shownotes: episode.summary, checked_at: now, materiality,
+              already_requested: Boolean(seen(episode.page)), candidate_job_id: previous?.job_id || null,
+            });
+            if (previous || seen(episode.page) || !materiality.relevant) continue;
+          }
           // Eine Folge, die ohne Wortlaut eingereiht wurde, darf genau einmal
           // erneut eingereiht werden, sobald ein Wortlaut vorliegt: der erste
           // Auftrag lief vertragsgemäß in eine Rückfrage und ist verbraucht
@@ -444,6 +493,22 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const runLimit = Math.max(0, Math.min(limit, maxPerDay - counter.proposed));
     for (const { episode, show, retry } of fresh.slice(0, runLimit ? Math.max(12, runLimit) : 0)) {
       if (proposed.length >= runLimit) break;
+      if (show.observation_only) {
+        const { job, fingerprint } = buildObservationRequest(episode, show, { owner, now });
+        if (await store.observation(`intake-fingerprint:${fingerprint}`)) continue;
+        await store.put(job);
+        const observation = { job_id: job.input.job_id, fingerprint, at: now, version: EPISODE_VERSION,
+          title: episode.title, observation_only: true, transcript_origin: null };
+        await store.observe(observationKey(show, episode), observation);
+        const pageKey = pageObservationKey(episode);
+        if (pageKey) await store.observe(pageKey, observation);
+        await store.observe(`intake-fingerprint:${fingerprint}`, { job_id: job.input.job_id });
+        // No 00_INBOX packet: this is not a generation request.
+        proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind,
+          title: episode.title, published_at: episode.published_at, observation_only: true });
+        counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
+        continue;
+      }
       // Reihenfolge des Wortlauts: offizielles Podcast-Transkript, dann die
       // amtlichen Untertitel für Hörgeschädigte, zuletzt eigene Spracherkennung.
       let transcript = await fetchYouTubeTranscript(episode, fetchImpl);

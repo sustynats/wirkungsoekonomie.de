@@ -59,6 +59,33 @@ unter denselben Locks. Erst der Nachweis des passenden Hash-Markers in der
 
 ## Betrieb
 
+### Reine Episodenbeobachtung
+
+`data/news/show-feeds.json` bleibt die gemeinsame Sendungskonfiguration.
+`observation_only: true` (seit 26.09.2026 fuer Machtwechsel) verwendet denselben
+Feed-Parser, Beobachtungsspeicher und Dublettenabgleich, aber keinen Entwurfsjob.
+Gespeichert werden Titel, Datum, Episodenadresse und hoechstens 4.000 Zeichen
+Shownotes. Ein lokaler Themenfilter erzeugt nur bei materiellem Hinweis einen
+privaten redaktionellen Kandidaten. Dieser bleibt `accepted` mit redaktionellem
+HOLD und `automatic_generation_allowed: false`; es gibt kein `00_INBOX`-Paket,
+keinen Audio-/Transkriptabruf, keine LLM-Verarbeitung und keine Publikation.
+Ein solcher Kandidat ist weder ein gepruefter Befund noch eine Freigabefassung.
+Inhaltliche Bearbeitung braucht einen konkreten Redaktionsauftrag; jede spaetere
+Publikation weiterhin die abschliessende, fassungsgebundene Freigabe.
+
+Die Metadatenbeobachtung laeuft auch am taeglichen Vorschlagslimit weiter;
+Kandidaten bleiben innerhalb der bestehenden Grenzen. Bereits beauftragte oder
+veroeffentlichte Episoden erzeugen keinen zweiten Kandidaten.
+Machtwechsels offizieller RSS-Feed wurde ueber den `rel=alternate`-Link auf
+`https://machtwechsel.podigee.io/291-neue-episode` sowie `atom:link rel=self`
+bestaetigt: `https://machtwechsel.podigee.io/feed/mp3`.
+Der bestehende Robots-Pruefer gilt vor jedem Feedabruf mit seinem regulaeren
+Cache; Feed-Weiterleitungen werden nicht automatisch verfolgt.
+
+Aktivierung: Der bestehende GitHub-Redaktionsworker liest `main`. Kein neuer
+Scheduler und kein Vercel-Deployment sind erforderlich. Ruecknahme: die einzelne
+Quelle auf `enabled: false` setzen; gespeicherte private Auftraege bleiben erhalten.
+
 `scripts/ops/woek-news-editorial.service` nutzt denselben privaten Bridge-Datenpfad.
 Das Release-Bündel enthält `scripts/news`, `scripts/ops`, `content/news`,
 `assets/data/navigation.json` und die Header-/Footer-Templates. Keine `.env` oder
