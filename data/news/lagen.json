@@ -1,7 +1,120 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-26T04:00:00.000Z",
+  "updated_at": "2026-09-26T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-26-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-26",
+      "window_from": "2026-09-26T04:00:00.000Z",
+      "window_to": "2026-09-26T10:00:00.000Z",
+      "stand": "2026-09-26T10:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 4,
+        "fortgeschrieben": 8
+      },
+      "entries": [
+        {
+          "story_id": "wt-a82ecd0000a14269",
+          "slug": "nach-sprengstoff-verdacht-an-schweizer-grenze-deshalb-war-die-autobahn-so-lange-gesperrt-a14269",
+          "title": "Rheinfelden: Sprengstoffsuche beendet, Grenzverkehr wieder freigegeben",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T09:43:40.720Z",
+          "score": 8.2047
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Laut DER SPIEGEL: Recherche stützt Bericht über Warnungen vor Hamas-Invasion",
+          "state": "neu",
+          "at": "2026-09-26T09:42:03.246Z",
+          "score": 5.9502
+        },
+        {
+          "story_id": "wt-96d8b1f701e5105b",
+          "slug": "explosion-in-haus-nahe-akropolis-in-athen-ein-todesopfer-aus-trummern-geborgen-e5105b",
+          "title": "Explosion in Wohnhaus nahe Akropolis: Ein Todesopfer aus Trümmern geborgen",
+          "state": "neu",
+          "at": "2026-09-26T09:30:14.858Z",
+          "score": 5.9174
+        },
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T09:28:45.523Z",
+          "score": 9.6632
+        },
+        {
+          "story_id": "wt-aa0db77f30c3deb1",
+          "slug": "uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1",
+          "title": "Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T08:44:01.933Z",
+          "score": 9.539
+        },
+        {
+          "story_id": "wt-0df5952c7921c1b7",
+          "slug": "bedrohung-gegen-schulen-bombendrohungen-gegen-schulen-gebaude-evakuiert-21c1b7",
+          "title": "Bombendrohungen gegen Schulen: Gebäude evakuiert, laut stern",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T08:15:16.621Z",
+          "score": 9.4591
+        },
+        {
+          "story_id": "wt-e8ec5c7f64053fc8",
+          "slug": "zwei-messerangriffe-in-freiburg-tatverdachtiger-war-polizeibekannt-053fc8",
+          "title": "laut Polizei: Tatverdächtiger soll für zwei Messerangriffe verantwortlich sein",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T07:30:33.681Z",
+          "score": 5.3349
+        },
+        {
+          "story_id": "wt-3e258fc08f00f85e",
+          "slug": "74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e",
+          "title": "74-Jähriger stirbt in Freiburg; laut Polizei möglicher Zusammenhang mit weiterem Messerangriff",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T07:15:49.279Z",
+          "score": 7.7939
+        },
+        {
+          "story_id": "wt-e0e45526c486a469",
+          "slug": "bei-raub-zu-boden-gestossen-spati-uberfall-in-wilmersdorf-mitarbeiter-am-kopf-verletzt-86a469",
+          "title": "Laut stern und Tagesspiegel: Mitarbeiter bei Späti-Überfall in Wilmersdorf am Kopf verletzt",
+          "state": "neu",
+          "at": "2026-09-26T06:30:00.554Z",
+          "score": 9.4167
+        },
+        {
+          "story_id": "wt-60f4e4d7d43fad99",
+          "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+          "title": "Laut Polizei: Angriffe auf Stromanlagen: Polizei fahndet weiter nach Verdächtigem",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T06:14:40.211Z",
+          "score": 9.1241
+        },
+        {
+          "story_id": "wt-c46eaf3fa3e1d9ce",
+          "slug": "autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce",
+          "title": "A861 laut SWR wegen Polizeieinsatzes gesperrt; zwei Festnahmen berichtet",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T05:27:59.903Z",
+          "score": 2.9944
+        },
+        {
+          "story_id": "wt-a07c4af1e4e50fc4",
+          "slug": "kollegen-im-stich-gelassen-polizistinnen-verlieren-nach-schiesserei-beamtenstatus-e50fc4",
+          "title": "Nach Schießerei: Streit um Beamtenstatus zweier Polizistinnen",
+          "state": "neu",
+          "at": "2026-09-26T05:13:37.826Z",
+          "score": 5.2045
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-26-morgenlage",
       "slot": "morgenlage",
