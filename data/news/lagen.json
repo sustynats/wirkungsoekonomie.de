@@ -1,7 +1,64 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-25T16:00:00.000Z",
+  "updated_at": "2026-09-26T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-26-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-26",
+      "window_from": "2026-09-25T16:00:00.000Z",
+      "window_to": "2026-09-26T04:00:00.000Z",
+      "stand": "2026-09-26T04:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 3,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T03:58:10.350Z",
+          "score": 5.7475
+        },
+        {
+          "story_id": "wt-31cd32a138d4d77d",
+          "slug": "detonation-weit-zu-horen-gefahrgut-transporter-explodiert-auf-a1-d4d77d",
+          "title": "Gefahrgut-Transporter explodiert auf A1 – niemand verletzt",
+          "state": "neu",
+          "at": "2026-09-25T20:02:36.981Z",
+          "score": 9.337
+        },
+        {
+          "story_id": "wt-6cce7ef135ca04b4",
+          "slug": "funf-vermisste-nach-gebaudeexplosion-nahe-akropolis-in-athen-ca04b4",
+          "title": "Gebäudeexplosion nahe Akropolis: Berichte nennen fünf oder sechs Vermisste",
+          "state": "neu",
+          "at": "2026-09-25T19:17:34.942Z",
+          "score": 3.2744
+        },
+        {
+          "story_id": "wt-ff0d970ac3d3793b",
+          "slug": "schusse-auf-restaurant-in-bad-godesberg-d3793b",
+          "title": "Laut WDR: Schüsse treffen Restaurant in Bad Godesberg",
+          "state": "neu",
+          "at": "2026-09-25T18:09:43.216Z",
+          "score": 5.1802
+        },
+        {
+          "story_id": "wt-1783a4db8d17924b",
+          "slug": "evakuierung-gasleck-in-greiz-wohngebiet-weitraumig-abgesperrt-17924b",
+          "title": "Laut Stern: Nach Gasgeruch werden 50 Anwohner in Greiz evakuiert",
+          "state": "fortgeschrieben",
+          "at": "2026-09-25T17:00:18.714Z",
+          "score": 5.3338
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-25-abendlage",
       "slot": "abendlage",
