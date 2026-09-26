@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-26T18:05:34.438Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-26T18:41:58.465Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-unter-russischer-besatzung-hungerkrise-in-oleschky-1b3f78/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-unter-russischer-besatzung-hungerkrise-in-oleschky-1b3f78/",
+      "title": "Laut DER SPIEGEL: DER SPIEGEL berichtet über drohende Hungerkatastrophe im besetzten Oleschky",
+      "summary": "DER SPIEGEL berichtet von einer drohenden Hungerkatastrophe in Oleschky und von eingeschlossenen Einwohnern. Die Versorgungslage und eine mögliche Evakuierung sind im vorliegenden Quellenbestand nicht unabhängig bestätigt.",
+      "date_published": "2026-09-26T18:06:00.000Z",
+      "date_modified": "2026-09-26T18:06:00.000Z",
+      "_woek_released_at": "2026-09-26T18:46:41.422Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explosion-mindestens-elf-tote-bei-anschlag-im-nordwesten-pakistans-a8d401/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explosion-mindestens-elf-tote-bei-anschlag-im-nordwesten-pakistans-a8d401/",
@@ -6600,7 +6631,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "title": "Nach Angaben des Deutschlandfunks beschädigen Angriffe Energie-Infrastruktur in Sumy und Odessa",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden laut Militärverwaltung mindestens 18 Menschen verletzt. Ausfälle, Schadenshöhe und Reparaturdauer sind offen.",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden laut Militärverwaltung mindestens 18 Menschen verletzt. Ausfälle, Schadenshöhe und Reparaturdauer bleiben offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -6616,12 +6647,12 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         }
