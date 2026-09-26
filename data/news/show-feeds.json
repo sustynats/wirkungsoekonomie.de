@@ -1,7 +1,27 @@
 {
-  "version": "2026-09-24.1",
+  "version": "2026-09-26.1",
   "note": "Episodenquellen der verfolgten Sendungen für automatische Nachgesehen/Nachgehört-Aufträge (scripts/news/sendungs-kandidaten.mjs). Mediathek-Sendungen laufen über die MediathekViewWeb-Abfrage, weil sie die amtlichen Untertitel für Hörgeschädigte (Barrierefreiheit) mitliefert; Podcasts über ihren offiziellen Feed mit podcast:transcript. Logo-Rechte stehen getrennt in show-visual-identities.json.",
   "shows": [
+    {
+      "id": "machtwechsel",
+      "show_name": "Machtwechsel",
+      "kind": "listened",
+      "provider": "Dagmar Rosenfeld und Robin Alexander / Studio Bummens, offizieller Podigee-Feed",
+      "feed": "https://machtwechsel.podigee.io/feed/mp3",
+      "homepage": "https://machtwechsel.podigee.io/",
+      "hosts": ["Dagmar Rosenfeld", "Robin Alexander"],
+      "publication_days": ["Wednesday", "Friday"],
+      "feed_verified_at": "2026-09-26",
+      "feed_evidence_url": "https://machtwechsel.podigee.io/291-neue-episode",
+      "feed_evidence": "Offizielles HTML rel=alternate application/rss+xml und RSS atom:link rel=self; HTTP 200. Rhythmus Mittwoch/Freitag in der Kanalbeschreibung. robots.txt: HTTP 404 am 26.09.2026, keine Sperrregel; bei jedem Lauf erneut nach bestehender Cache-Regel pruefen.",
+      "observation_only": true,
+      "respect_robots": true,
+      "allow_paid_transcription": false,
+      "monitoring_since": "2026-09-25T00:00:00.000Z",
+      "editorial_context": "Nur offizielle Episodenmetadaten und begrenzte Shownotes beobachten. Fragen im Titel sind keine Tatsachenbestaetigung. Keine Audio-, Volltext- oder Transkriptabrufe, keine automatische Entwurfserzeugung. Materiell relevante Folgen werden ausschliesslich als private Kandidaten zur redaktionellen Bearbeitung gespeichert. Jede spaetere Publikation braucht Natalies abschliessende Freigabe.",
+      "max_age_days": 14,
+      "enabled": true
+    },
     {
       "id": "missverstehen-sie-mich-richtig",
       "show_name": "Missverstehen Sie mich richtig",
