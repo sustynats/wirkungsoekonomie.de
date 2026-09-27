@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-27T19:00:47.684Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-27T19:28:29.302Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -221,6 +221,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/verdacht-der-brandstiftung-feuer-in-mehrfamilienhaus-21-menschen-evakuiert-670435/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/verdacht-der-brandstiftung-feuer-in-mehrfamilienhaus-21-menschen-evakuiert-670435/",
+      "title": "Feuer in Mehrfamilienhaus in Hamburg-Wilstorf: 21 Menschen evakuiert",
+      "summary": "Nach einem Brand in einem Mehrfamilienhaus in Hamburg-Wilstorf wurden 21 Menschen evakuiert. Das Landeskriminalamt ermittelt laut vorliegendem Bericht wegen des Verdachts der schweren Brandstiftung.",
+      "date_published": "2026-09-27T09:44:24.000Z",
+      "date_modified": "2026-09-27T09:44:24.000Z",
+      "_woek_released_at": "2026-09-27T19:31:24.104Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
@@ -7036,11 +7067,11 @@
         },
         "planet": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         }
