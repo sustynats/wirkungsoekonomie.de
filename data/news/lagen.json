@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-27T04:00:00.000Z",
+  "updated_at": "2026-09-27T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-27-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-27",
+      "window_from": "2026-09-27T04:00:00.000Z",
+      "window_to": "2026-09-27T10:00:00.000Z",
+      "stand": "2026-09-27T10:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 4,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-f72c7aea3f19193b",
+          "slug": "festnahmen-bei-britischem-luftwaffenstutzpunkt-19193b",
+          "title": "Laut tagesschau nimmt britische Polizei mehrere Männer in Fairford fest",
+          "state": "neu",
+          "at": "2026-09-27T09:58:56.781Z",
+          "score": 3.9971
+        },
+        {
+          "story_id": "wt-684e2fc65b04f7c3",
+          "slug": "video-autobombe-in-pakistan-explodiert-mindestens-20-tote-04f7c3",
+          "title": "Laut MDR: Autobombe explodiert an Polizeizentrale in Pakistan – mindestens 20 Tote",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T09:42:11.103Z",
+          "score": 8.2005
+        },
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T09:40:46.980Z",
+          "score": 9.6966
+        },
+        {
+          "story_id": "wt-dfe8cfa16e00af11",
+          "slug": "sudafrika-27-tote-bei-zwei-schusswaffenangriffen-00af11",
+          "title": "Laut Deutschlandfunk 27 Tote bei zwei Schusswaffenangriffen in Südafrika",
+          "state": "neu",
+          "at": "2026-09-27T08:29:50.608Z",
+          "score": 7.7496
+        },
+        {
+          "story_id": "wt-e0bb001050d68925",
+          "slug": "sprengstoffexperten-im-einsatz-explosion-auf-recyclinghof-mitarbeiter-schwer-verletzt-d68925",
+          "title": "Laut stern: Explosion auf Recyclinghof, Mitarbeiter schwer verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T07:22:00.038Z",
+          "score": 5.3111
+        },
+        {
+          "story_id": "wt-d495e09b6da8d401",
+          "slug": "explosion-mindestens-elf-tote-bei-anschlag-im-nordwesten-pakistans-a8d401",
+          "title": "Mindestens elf Tote bei Anschlag im Nordwesten Pakistans",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T06:14:32.371Z",
+          "score": 9.1237
+        },
+        {
+          "story_id": "wt-eea11b743f85dfdb",
+          "slug": "sizilien-flughafen-catania-bleibt-wegen-aschewolke-des-vulkans-atna-weiter-geschlossen-85dfdb",
+          "title": "Flughafen Catania bleibt wegen neuer Ätna-Aschewolke vorerst geschlossen",
+          "state": "neu",
+          "at": "2026-09-27T05:26:52.002Z",
+          "score": 3.2413
+        },
+        {
+          "story_id": "wt-4949843c39ceb342",
+          "slug": "massenschlagerei-in-koln-schuss-trifft-37-jahrigen-ins-bein-ceb342",
+          "title": "Schuss verletzt 37-Jährigen bei Massenschlägerei in Köln",
+          "state": "neu",
+          "at": "2026-09-27T05:11:01.193Z",
+          "score": 5.1973
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-27-morgenlage",
       "slot": "morgenlage",
