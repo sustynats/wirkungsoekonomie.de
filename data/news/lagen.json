@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-26T16:00:00.000Z",
+  "updated_at": "2026-09-27T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-27-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-27",
+      "window_from": "2026-09-26T16:00:00.000Z",
+      "window_to": "2026-09-27T04:00:00.000Z",
+      "stand": "2026-09-27T04:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 3,
+        "fortgeschrieben": 5
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T03:42:36.800Z",
+          "score": 5.7259
+        },
+        {
+          "story_id": "wt-450b6403101f043f",
+          "slug": "tater-radelte-davon-schusse-auf-meininger-markt-polizei-sucht-zeugen-1f043f",
+          "title": "Nach Angaben der Polizei: Mann gibt auf Meininger Markt mehrere Schüsse ab und flieht",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T20:57:53.464Z",
+          "score": 9.1637
+        },
+        {
+          "story_id": "wt-94c90931f6874e14",
+          "slug": "gewalt-mann-in-koln-angeschossen-fahndung-nach-verdachtigen-874e14",
+          "title": "Mann in Köln angeschossen – Fahndung nach Verdächtigen",
+          "state": "neu",
+          "at": "2026-09-26T19:56:30.686Z",
+          "score": 9.3285
+        },
+        {
+          "story_id": "wt-6847e65f681b3f78",
+          "slug": "ukraine-unter-russischer-besatzung-hungerkrise-in-oleschky-1b3f78",
+          "title": "Laut DER SPIEGEL droht in Oleschky eine Hungerkatastrophe",
+          "state": "neu",
+          "at": "2026-09-26T18:46:41.422Z",
+          "score": 9.3736
+        },
+        {
+          "story_id": "wt-e5d9220bd864f8c8",
+          "slug": "explosion-auf-wertstoffhof-in-uberlingen-ein-mitarbeiter-schwer-verletzt-64f8c8",
+          "title": "Laut SWR: Explosion auf Wertstoffhof in Überlingen: Mitarbeiter schwer verletzt, Ursache weiter offen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T18:09:52.399Z",
+          "score": 9.4304
+        },
+        {
+          "story_id": "wt-17183454da128b91",
+          "slug": "erneute-explosionen-in-frankfurt-17-jahriger-tatverdachtiger-festgenommen-128b91",
+          "title": "Laut hessenschau: Erneute Explosionen in Frankfurt – 17-jähriger Tatverdächtiger festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T17:44:14.364Z",
+          "score": 4.8948
+        },
+        {
+          "story_id": "wt-2d3f98683f6f8ac9",
+          "slug": "kriminalitat-handelsverband-besorgt-nach-serie-von-explosionen-6f8ac9",
+          "title": "Laut stern: Fünf Läden in Frankfurt und Offenbach durch Detonationen stark beschädigt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-26T17:03:53.826Z",
+          "score": 2.8387
+        },
+        {
+          "story_id": "wt-d495e09b6da8d401",
+          "slug": "explosion-mindestens-elf-tote-bei-anschlag-im-nordwesten-pakistans-a8d401",
+          "title": "Mindestens elf Tote bei Anschlag im Nordwesten Pakistans",
+          "state": "neu",
+          "at": "2026-09-26T16:44:48.541Z",
+          "score": 9.0622
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-26-abendlage",
       "slot": "abendlage",
