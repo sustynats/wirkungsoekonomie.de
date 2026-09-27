@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-27T10:00:00.000Z",
+  "updated_at": "2026-09-27T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-27-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-27",
+      "window_from": "2026-09-27T10:00:00.000Z",
+      "window_to": "2026-09-27T16:00:00.000Z",
+      "stand": "2026-09-27T16:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 6,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-90be31c27644288a",
+          "slug": "polizei-nimmt-funf-manner-bei-militarstutzpunkt-fest-44288a",
+          "title": "Laut Polizei: Fünf Männer bei Militärstützpunkt festgenommen",
+          "state": "neu",
+          "at": "2026-09-27T15:12:35.948Z",
+          "score": 5.8683
+        },
+        {
+          "story_id": "wt-bda05d6bd162b2ff",
+          "slug": "uk-police-make-arrests-evacuate-homes-in-major-incident-near-air-base-used-by-us-forces-62b2ff",
+          "title": "Laut britischer Polizei: Fünf Männer nach Vorfall nahe US-genutztem Luftwaffenstützpunkt festgenommen",
+          "state": "neu",
+          "at": "2026-09-27T14:14:58.960Z",
+          "score": 9.7083
+        },
+        {
+          "story_id": "wt-bbd7377e6a6286f2",
+          "slug": "two-mass-shootings-in-south-africa-leave-at-least-27-dead-6286f2",
+          "title": "Zwei Schusswaffenangriffe in Südafrika: 27 Tote laut Polizei",
+          "state": "neu",
+          "at": "2026-09-27T14:13:51.165Z",
+          "score": 8.2051
+        },
+        {
+          "story_id": "wt-4f54b2d9042cea88",
+          "slug": "krieg-im-jemen-huthi-melden-tote-und-dutzende-verletzte-bei-angriff-2cea88",
+          "title": "Laut Huthi: Mindestens sieben Tote und 40 Verletzte bei Luftangriff im Jemen",
+          "state": "neu",
+          "at": "2026-09-27T13:27:57.647Z",
+          "score": 9.5777
+        },
+        {
+          "story_id": "wt-dfe8cfa16e00af11",
+          "slug": "sudafrika-27-tote-bei-zwei-schusswaffenangriffen-00af11",
+          "title": "27 Tote bei zwei Schusswaffenangriffen in Südafrika",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T13:01:19.504Z",
+          "score": 7.7537
+        },
+        {
+          "story_id": "wt-921dcd6c2d25c4ce",
+          "slug": "eskalierter-streit-schusse-aus-schreckschusswaffe-mann-im-gesicht-verletzt-25c4ce",
+          "title": "Laut stern: 44-Jähriger in München durch Schüsse aus Schreckschusswaffe im Gesicht verletzt",
+          "state": "neu",
+          "at": "2026-09-27T12:12:35.418Z",
+          "score": 5.3683
+        },
+        {
+          "story_id": "wt-5afe31b3b84cebe1",
+          "slug": "grossbritannien-ernster-vorfall-nahe-luftwaffenbasis-mehrere-festnahmen-4cebe1",
+          "title": "Laut Polizei: Ernster Vorfall nahe Luftwaffenbasis – mehrere Männer festgenommen",
+          "state": "neu",
+          "at": "2026-09-27T11:57:53.726Z",
+          "score": 5.3275
+        },
+        {
+          "story_id": "wt-f72c7aea3f19193b",
+          "slug": "festnahmen-bei-britischem-luftwaffenstutzpunkt-19193b",
+          "title": "Laut tagesschau nimmt britische Polizei mehrere Männer in Fairford fest",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T10:56:00.554Z",
+          "score": 2.9056
+        },
+        {
+          "story_id": "wt-eea11b743f85dfdb",
+          "slug": "sizilien-flughafen-catania-bleibt-wegen-aschewolke-des-vulkans-atna-weiter-geschlossen-85dfdb",
+          "title": "Flughafen Catania bleibt wegen Ätna-Aschewolke bis Mitternacht gesperrt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T10:43:11.617Z",
+          "score": 4.87
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-27-mittagslage",
       "slot": "mittagslage",
