@@ -1,4 +1,5 @@
-import {searchWords, findSearchIds, matchesFilters} from './ticker-search.js?v=20260912-search2';
+import {searchWords, findSearchIds, matchesFilters} from './ticker-search.js?v=20260928-order';
+import {analysisOrderLabel} from './ticker-order.js?v=20260928-order';
 const API='/wirkungsticker/data/app/';
 const VIEW_KEY='woek:wirkungsticker:feed-view:v1';
 const main=document.querySelector('[data-ticker-app]');
@@ -81,6 +82,8 @@ async function boot(root){
   const params=new URLSearchParams(location.search);
   type=mode==='news'?'alle':selected('typ',params.get('typ')||'alle');topic=selected('ressort',params.get('ressort')||'alle');sort=params.get('sort')==='neueste'?'neueste':'relevanz';
   term=(params.get('q')||'').slice(0,160);if(query&&(document.activeElement!==query||restore))query.value=term;
+  const orderHint=root.querySelector('[data-app-order]');
+  if(orderHint)orderHint.textContent=analysisOrderLabel(type);
   for(const [name,value] of Object.entries({typ:type,ressort:topic,sort}))if(filterForm?.elements.namedItem(name))filterForm.elements.namedItem(name).value=value;
   root.querySelector('[data-app-filter-count]').textContent=type!=='alle'||topic!=='alle'?` (${Number(type!=='alle')+Number(topic!=='alle')})`:'';
   root.querySelectorAll('[data-app-filter]').forEach(a=>{const key=mode==='news'?'ressort':'typ';a.setAttribute('aria-current',String(a.dataset.appFilter===(mode==='news'?topic:type)));const p=new URLSearchParams(location.search);p.set(key,a.dataset.appFilter);a.href='?'+p;});
