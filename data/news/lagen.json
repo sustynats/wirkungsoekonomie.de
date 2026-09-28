@@ -1,7 +1,120 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-28T10:00:00.000Z",
+  "updated_at": "2026-09-28T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-28-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-28",
+      "window_from": "2026-09-28T10:00:00.000Z",
+      "window_to": "2026-09-28T16:00:00.000Z",
+      "stand": "2026-09-28T16:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 8,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T15:58:54.198Z",
+          "score": 5.747
+        },
+        {
+          "story_id": "wt-dfbee72e98a30a78",
+          "slug": "gewaltkriminalitat-messerattacke-in-wedding-16-jahriger-schwer-verletzt-a30a78",
+          "title": "Laut stern: 16-Jähriger nach Messerattacke in Wedding schwer verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T15:58:14.958Z",
+          "score": 5.7451
+        },
+        {
+          "story_id": "wt-7d282bac7adadc1b",
+          "slug": "evakuierung-wegen-kellerbrands-feuer-im-keller-80-menschen-mussen-reha-zentrum-verlassen-dadc1b",
+          "title": "Reha-Zentrum nach Kellerbrand evakuiert",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T13:35:32.233Z",
+          "score": 5.3487
+        },
+        {
+          "story_id": "wt-2132f4b143544e49",
+          "slug": "mann-nach-angriff-in-lebensgefahr-544e49",
+          "title": "Laut WDR: Mann stirbt nach Messerangriff in Düsseldorf",
+          "state": "neu",
+          "at": "2026-09-28T13:17:08.192Z",
+          "score": 3.5476
+        },
+        {
+          "story_id": "wt-72225ba7fa3a27e1",
+          "slug": "vulkan-auf-sizilien-flughafen-weiterhin-wegen-kilometer-hohe-aschewolke-von-atna-gesperr-3a27e1",
+          "title": "Laut stern: Ätna stört Flugverkehr auf Sizilien seit drei Tagen",
+          "state": "neu",
+          "at": "2026-09-28T13:15:43.715Z",
+          "score": 3.8046
+        },
+        {
+          "story_id": "wt-aa791024378bead9",
+          "slug": "polizei-sucht-trio-nach-mutmasslichen-paintball-schussen-augenlicht-in-gefahr-8bead9",
+          "title": "Nach mutmaßlichen Paintball-Schüssen: 21-Jähriger im Gesicht getroffen, Polizei sucht Zeugen",
+          "state": "neu",
+          "at": "2026-09-28T12:23:10.038Z",
+          "score": 9.3977
+        },
+        {
+          "story_id": "wt-640b7675c2574cbf",
+          "slug": "oktoberfest-2026-wiesn-streit-eskaliert-attacke-mit-besteckmesser-574cbf",
+          "title": "Laut stern: Tourist bei Streit im Festzelt mit Messer verletzt",
+          "state": "neu",
+          "at": "2026-09-28T12:08:41.735Z",
+          "score": 5.3575
+        },
+        {
+          "story_id": "wt-77beb51e3dbfc0b7",
+          "slug": "messerangriff-messerattacke-in-chemnitz-tatverdachtiger-weiter-fluchtig-bfc0b7",
+          "title": "Laut stern: 26-Jähriger in Chemnitz schwer verletzt, Tatverdächtiger weiter flüchtig",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T11:21:05.505Z",
+          "score": 4.9753
+        },
+        {
+          "story_id": "wt-daab7429b527c4ad",
+          "slug": "italien-atna-speit-aschewolken-flughafen-catania-gesperrt-27c4ad",
+          "title": "Laut DER SPIEGEL: Ätna-Asche legt Flughafen Catania lahm",
+          "state": "neu",
+          "at": "2026-09-28T11:20:11.671Z",
+          "score": 7.7513
+        },
+        {
+          "story_id": "wt-e6b63b7ba0feb466",
+          "slug": "nordrhein-westfalen-39-jahriger-bei-schussen-in-teestube-todlich-verletzt-feb466",
+          "title": "Laut Polizei und Staatsanwaltschaft: 39-Jähriger nach Schüssen in Teestube getötet",
+          "state": "neu",
+          "at": "2026-09-28T10:52:55.268Z",
+          "score": 5.647
+        },
+        {
+          "story_id": "wt-545a22a8c4961571",
+          "slug": "todliche-schusse-in-marl-tater-auf-der-flucht-961571",
+          "title": "Tödliche Schüsse in Marl: Laut Polizei wurde ein Mann getötet",
+          "state": "neu",
+          "at": "2026-09-28T10:18:55.143Z",
+          "score": 7.8097
+        },
+        {
+          "story_id": "wt-cdc958d95b9eb471",
+          "slug": "berlin-mann-direkt-vor-polizeiwache-angeschossen-9eb471",
+          "title": "Laut DER SPIEGEL: 22-Jähriger vor Polizeiwache angeschossen",
+          "state": "neu",
+          "at": "2026-09-28T10:17:48.307Z",
+          "score": 9.0495
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-28-mittagslage",
       "slot": "mittagslage",
