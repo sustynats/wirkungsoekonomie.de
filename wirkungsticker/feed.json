@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-28T05:09:17.904Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-28T05:24:30.815Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -7050,7 +7050,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur, 18 Menschen in Kiew verletzt",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden mindestens 18 Menschen verletzt. Umfang, Versorgungseffekte und Reparaturdauer bleiben offen.",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden mindestens 18 Menschen verletzt. Ausfälle, Schadensumfang und Reparaturdauer sind offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -7061,18 +7061,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 2,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "negative",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
@@ -8225,21 +8225,22 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/schwentinental-fliegerbombe-wird-morgen-entscharft-f8fdfc/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/schwentinental-fliegerbombe-wird-morgen-entscharft-f8fdfc/",
-      "title": "Laut NDR-Bericht: Fliegerbombe in Schwentinental erfolgreich entschärft – rund 2.600 Menschen durften zurück",
-      "summary": "Eine Fliegerbombe wurde in Schwentinental entschärft; rund 2.600 Menschen mussten vorübergehend ihre Wohnungen verlassen. Der Vorgang zeigt die kurzfristigen Sicherheits- und Versorgungsfolgen eines Bombenfunds.",
+      "title": "Fliegerbombe in Schwentinental entschärft, rund 2.600 Menschen können zurück",
+      "summary": "Die Fliegerbombe in Schwentinental ist entschärft, rund 2.600 Menschen konnten zurückkehren. Der Einsatz zeigt kurzfristige Belastungen durch Evakuierung und Versorgung, aber keine belegten längerfristigen Schäden.",
       "date_published": "2026-09-16T09:11:05.000Z",
       "date_modified": "2026-09-16T09:11:05.000Z",
       "_woek_released_at": "2026-09-16T11:56:21.688Z",
       "tags": [
         "Politik",
-        "Gesellschaft"
+        "Gesellschaft",
+        "Arbeit"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "negative",
           "status": "potential"
         },
         "planet": {
@@ -8248,7 +8249,7 @@
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
+          "magnitude": 0,
           "direction": "open",
           "status": "potential"
         }
