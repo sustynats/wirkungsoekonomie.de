@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-28T11:16:44.799Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-28T12:03:07.372Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -7,15 +7,46 @@
   "language": "de",
   "items": [
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/oktoberfest-2026-wiesn-streit-eskaliert-attacke-mit-besteckmesser-574cbf/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/oktoberfest-2026-wiesn-streit-eskaliert-attacke-mit-besteckmesser-574cbf/",
+      "title": "Laut stern: Tourist bei Streit im Festzelt mit Messer verletzt",
+      "summary": "Nach einem Streit in einem Festzelt auf dem Oktoberfest wurde laut stern ein Tourist verletzt; die Polizei nahm einen Verdächtigen fest. Der Auszug belegt den Vorfall nur aus einer Quelle und lässt Ablauf, Verletzungsgrad sowie Tatzuordnung offen.",
+      "date_published": "2026-09-28T11:22:36.000Z",
+      "date_modified": "2026-09-28T11:22:36.000Z",
+      "_woek_released_at": "2026-09-28T12:08:41.735Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/italien-atna-speit-aschewolken-flughafen-catania-gesperrt-27c4ad/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/italien-atna-speit-aschewolken-flughafen-catania-gesperrt-27c4ad/",
       "title": "Laut DER SPIEGEL: Ätna-Asche legt Flughafen Catania lahm",
-      "summary": "Eine Aschewolke des Ätna blockiert laut DER SPIEGEL derzeit Starts und Landungen in Catania. Wie lange die Sperrung dauert und wie viele Menschen betroffen sind, bleibt offen.",
+      "summary": "DER SPIEGEL berichtet von einer Ätna-Aschewolke und einer Sperrung des Flughafens Catania. Dauer, Ausmaß und Folgen sind auf Grundlage des vorliegenden Belegs offen.",
       "date_published": "2026-09-28T10:49:00.000Z",
       "date_modified": "2026-09-28T10:49:00.000Z",
       "_woek_released_at": "2026-09-28T11:20:11.671Z",
       "tags": [
-        "Europa"
+        "Politik"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
@@ -27,7 +58,7 @@
         },
         "planet": {
           "magnitude": 1,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
