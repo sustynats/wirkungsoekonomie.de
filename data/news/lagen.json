@@ -1,7 +1,72 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-27T16:00:00.000Z",
+  "updated_at": "2026-09-28T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-28-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-28",
+      "window_from": "2026-09-27T16:00:00.000Z",
+      "window_to": "2026-09-28T04:00:00.000Z",
+      "stand": "2026-09-28T04:00:00.000Z",
+      "headline": "Das sind die 6 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 6,
+        "neu": 2,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-e4f43c1731c0d920",
+          "slug": "vierte-festnahme-nach-todlichen-schussen-in-dietzenbach-c0d920",
+          "title": "Laut Staatsanwaltschaft: Vierter Verdächtiger nach tödlichen Schüssen in Dietzenbach festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T20:40:54.565Z",
+          "score": 9.1402
+        },
+        {
+          "story_id": "wt-63f14f261e4520a6",
+          "slug": "angriff-mit-schusswaffe-totungsdelikt-in-dietzenbach-vierter-verdachtiger-gefasst-4520a6",
+          "title": "Laut Polizei: Vierter Verdächtiger nach tödlichen Schüssen in Dietzenbach vorläufig festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T20:12:51.011Z",
+          "score": 5.1012
+        },
+        {
+          "story_id": "wt-41752b4534670435",
+          "slug": "verdacht-der-brandstiftung-feuer-in-mehrfamilienhaus-21-menschen-evakuiert-670435",
+          "title": "Feuer in Mehrfamilienhaus in Hamburg-Wilstorf: 21 Menschen evakuiert",
+          "state": "neu",
+          "at": "2026-09-27T19:31:24.104Z",
+          "score": 3.2936
+        },
+        {
+          "story_id": "wt-8586cf0c180d9171",
+          "slug": "fairford-britische-polizei-nimmt-mehrere-personen-fest-sprengstoffkommando-im-einsatz-0d9171",
+          "title": "Laut DER SPIEGEL: Britische Polizei nimmt in Fairford mehrere Personen fest – Sprengstoffkommando im Einsatz",
+          "state": "neu",
+          "at": "2026-09-27T19:04:08.021Z",
+          "score": 3.2557
+        },
+        {
+          "story_id": "wt-5afe31b3b84cebe1",
+          "slug": "grossbritannien-ernster-vorfall-nahe-luftwaffenbasis-mehrere-festnahmen-4cebe1",
+          "title": "Laut Polizei: Fünf Männer nahe der Basis Fairford wegen Verdachts auf Vorbereitung einer „Terrortat“ festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T18:25:46.458Z",
+          "score": 4.9525
+        },
+        {
+          "story_id": "wt-90be31c27644288a",
+          "slug": "polizei-nimmt-funf-manner-bei-militarstutzpunkt-fest-44288a",
+          "title": "Laut tagesschau: Fünf Männer bei Militärstützpunkt Fairford festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-27T17:55:29.479Z",
+          "score": 4.9104
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-27-abendlage",
       "slot": "abendlage",
