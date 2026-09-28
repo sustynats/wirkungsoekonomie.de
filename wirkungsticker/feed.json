@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-28T06:09:28.923Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-28T06:38:53.182Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -7050,7 +7050,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur, 18 Menschen in Kiew verletzt",
-      "summary": "Deutschlandfunk berichtet über beschädigte Energie-Infrastruktur in Sumy und Odessa sowie mindestens 18 Verletzte in Kiew. Schadensumfang, Ausfälle und Reparaturdauer sind weiterhin offen.",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in ukrainischen Regionen; in Kiew wurden mindestens 18 Menschen verletzt. Ausfälle, Schadenshöhe und Reparaturdauer sind offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -7061,12 +7061,12 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
+          "magnitude": 4,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
-          "magnitude": 2,
+          "magnitude": 3,
           "direction": "negative",
           "status": "potential"
         },
@@ -13654,8 +13654,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6/",
-      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
-      "summary": "Am BER meldete eine Frau einen gefährlichen Stoff, worauf Terminal 1 zeitweise geräumt wurde. Danach lief der Flugverkehr wieder regulär, einzelne Ausfälle und eine kurze Unterbrechung des Zugverkehrs blieben aber berichtet.",
+      "title": "Gefahrgut-Alarm am BER: Terminal 1 geräumt, Flugverkehr wieder regulär",
+      "summary": "Am BER wurde Terminal 1 nach einem Gefahrgut-Alarm geräumt; der Flugverkehr lief danach wieder regulär. Die Substanz blieb zunächst ungeklärt, eine Gefahr bestand nach bisherigen Erkenntnissen nicht.",
       "date_published": "2026-09-04T05:44:22.000Z",
       "date_modified": "2026-09-04T05:44:22.000Z",
       "_woek_released_at": "2026-09-04T06:37:20.682Z",
@@ -13665,7 +13665,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84/",
