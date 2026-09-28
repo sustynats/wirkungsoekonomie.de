@@ -419,7 +419,10 @@
         try {
           const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
           if (!saved) return;
-          if (saved.text) el['source-text'].value = saved.text;
+          if (saved.text) {
+            el['source-text'].value = saved.text;
+            updateInputMeta();
+          }
           if (Number.isFinite(saved.rate)) el.rate.value = String(saved.rate);
           if (Number.isFinite(saved.pitch)) el.pitch.value = String(saved.pitch);
           if (Number.isFinite(saved.volume)) el.volume.value = String(saved.volume);
