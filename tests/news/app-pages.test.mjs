@@ -4,6 +4,8 @@ import fs from 'node:fs';
 import {gunzipSync} from 'node:zlib';
 import {contentType,contentTopics,searchWords,searchBucket,appNavigation,PAGE_SIZE} from '../../scripts/news/app-pages.mjs';
 import {showIdentity,renderShowIdentity} from '../../scripts/news/show-identity.mjs';
+import {compareTickerRecords} from '../../assets/js/ticker-order.js';
+import {findSearchIds} from '../../assets/js/ticker-search.js';
 const root=new URL('../../',import.meta.url);
 const read=p=>fs.readFileSync(new URL(p,root),'utf8');
 // Die App-Daten liegen gepackt (app-pages.mjs). Bis der erste Lauf nach der
@@ -28,6 +30,19 @@ test('news and analyses partitions are bounded, complete, unique and chronologic
    for(const item of data.items){assert.equal(seen.has(item.id),false);seen.add(item.id);assert.equal(item.type==='news',key==='news-alle');assert.ok(Date.parse(item.date)<=prior);prior=Date.parse(item.date);assert.match(item.url,/^\/wirkungsticker\//);assert.doesNotMatch(item.html,/href="\.\.?\//);}
   }
   assert.equal(seen.size,manifest.feeds[key].count);
+ }
+});
+test('all analysis format pages and topic-filtered search agree, including date ties',async()=>{
+ const manifest=json('wirkungsticker/data/app/manifest.json');
+ const lookup=new Map(Object.values(manifest.lookup).map(r=>[r.id,r]));
+ for(const type of ['alle','analysis','book','listened','watched']){
+  const key='analysen-'+type;
+  const records=Array.from({length:manifest.feeds[key].pages},(_,i)=>json(`wirkungsticker/data/app/feeds/${key}-${i}.json`).items).flat();
+  assert.deepEqual(records.map(r=>r.id),[...records].sort((a,b)=>compareTickerRecords(a,b,type)).map(r=>r.id),key);
+  for(const topic of ['alle','politik']){
+   const ids=await findSearchIds({term:'',lookup,type,topic,mode:'analysen',sort:'neueste',loadBucket:()=>assert.fail('no search terms')});
+   assert.deepEqual(ids,records.filter(r=>topic==='alle'||r.topics.includes(topic)).map(r=>r.id),`${key}/${topic}`);
+  }
  }
 });
 test('search partitions support German prefixes and published records in every format',()=>{
