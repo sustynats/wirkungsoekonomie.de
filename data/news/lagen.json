@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-28T04:00:00.000Z",
+  "updated_at": "2026-09-28T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-28-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-28",
+      "window_from": "2026-09-28T04:00:00.000Z",
+      "window_to": "2026-09-28T10:00:00.000Z",
+      "stand": "2026-09-28T10:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 3,
+        "fortgeschrieben": 6
+      },
+      "entries": [
+        {
+          "story_id": "wt-6c551ea81d815a53",
+          "slug": "kriminalitat-ein-toter-und-zwei-verletzte-nach-schussen-in-teestube-815a53",
+          "title": "Laut stern: Ein Toter und zwei Verletzte nach Schüssen in einer Teestube in Marl",
+          "state": "neu",
+          "at": "2026-09-28T09:39:34.910Z",
+          "score": 7.9433
+        },
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur, 18 Menschen in Kiew verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T09:38:11.102Z",
+          "score": 9.6894
+        },
+        {
+          "story_id": "wt-dfbee72e98a30a78",
+          "slug": "gewaltkriminalitat-messerattacke-in-wedding-16-jahriger-schwer-verletzt-a30a78",
+          "title": "Laut stern: Messerattacke in Wedding – 16-Jähriger schwer verletzt",
+          "state": "neu",
+          "at": "2026-09-28T09:10:35.480Z",
+          "score": 3.8628
+        },
+        {
+          "story_id": "wt-59c50239e63e3d97",
+          "slug": "brande-busbrand-in-berlin-tegel-fahrzeug-evakuiert-3e3d97",
+          "title": "Laut stern und Der Tagesspiegel: Busbrand in Berlin-Tegel: Fahrzeug evakuiert",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T08:27:20.236Z",
+          "score": 3.4926
+        },
+        {
+          "story_id": "wt-457c1e577f057d4e",
+          "slug": "kriminalitat-messerangriff-in-fitnessstudio-tater-in-klinik-eingewiesen-057d4e",
+          "title": "Messerangriff in Flensburger Fitnessstudio: Mann verletzt, anderer in psychiatrische Klinik eingewiesen",
+          "state": "neu",
+          "at": "2026-09-28T07:12:38.889Z",
+          "score": 3.5351
+        },
+        {
+          "story_id": "wt-6267bf5562aa70a6",
+          "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
+          "title": "Gefahrgut-Alarm am BER: Terminal 1 geräumt, Flugverkehr wieder regulär",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T06:43:56.234Z",
+          "score": 3.7054
+        },
+        {
+          "story_id": "wt-577270be8984eb8d",
+          "slug": "temporary-wartime-weapons-depot-explosion-kills-14-outside-syria-s-idlib-84eb8d",
+          "title": "Laut Euronews: Explosion an temporärem Munitionslager nahe Idlib tötet 14 Menschen",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T06:15:10.330Z",
+          "score": 9.1255
+        },
+        {
+          "story_id": "wt-3cdbab4a36f8fdfc",
+          "slug": "schwentinental-fliegerbombe-wird-morgen-entscharft-f8fdfc",
+          "title": "Fliegerbombe in Schwentinental entschärft, rund 2.600 Menschen können zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T05:31:09.564Z",
+          "score": 5.5032
+        },
+        {
+          "story_id": "wt-50e17e4048044b29",
+          "slug": "notfalle-gefahrstoff-ausgetreten-fahre-in-rostock-evakuiert-044b29",
+          "title": "Laut stern: Unbekannter Gefahrstoff tritt auf Fähre im Rostocker Hafen aus",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T05:12:27.729Z",
+          "score": 4.9513
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-28-morgenlage",
       "slot": "morgenlage",
