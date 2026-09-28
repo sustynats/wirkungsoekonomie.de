@@ -7600,12 +7600,12 @@
         },
         "planet": {
           "magnitude": 1,
-          "direction": "mixed",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
