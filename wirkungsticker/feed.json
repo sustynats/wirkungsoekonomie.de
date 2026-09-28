@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-28T09:03:21.691Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-28T09:36:10.896Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-ein-toter-und-zwei-verletzte-nach-schussen-in-teestube-815a53/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-ein-toter-und-zwei-verletzte-nach-schussen-in-teestube-815a53/",
+      "title": "Laut stern: Ein Toter und zwei Verletzte nach Schüssen in einer Teestube in Marl",
+      "summary": "Laut stern starb in Marl nach nächtlichen Schüssen ein Mensch, zwei weitere wurden verletzt. Ablauf, Verantwortlichkeit und Hintergründe sind nach der vorliegenden Einzelquelle offen.",
+      "date_published": "2026-09-28T09:06:01.000Z",
+      "date_modified": "2026-09-28T09:06:01.000Z",
+      "_woek_released_at": "2026-09-28T09:39:34.910Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/gewaltkriminalitat-messerattacke-in-wedding-16-jahriger-schwer-verletzt-a30a78/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/gewaltkriminalitat-messerattacke-in-wedding-16-jahriger-schwer-verletzt-a30a78/",
@@ -7113,7 +7144,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2/",
       "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur, 18 Menschen in Kiew verletzt",
-      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden mindestens 18 Menschen verletzt. Ausfälle, Schadensumfang und Reparaturdauer bleiben offen.",
+      "summary": "Angriffe beschädigten laut Deutschlandfunk Energie-Infrastruktur in Sumy und Odessa; in Kiew wurden mindestens 18 Menschen verletzt. Ausfälle, Schadensumfang und Reparaturdauer sind weiterhin offen.",
       "date_published": "2026-09-17T14:53:31.000Z",
       "date_modified": "2026-09-17T14:53:31.000Z",
       "_woek_released_at": "2026-09-17T10:41:17.999Z",
@@ -7129,13 +7160,13 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 3,
+          "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "negative",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
