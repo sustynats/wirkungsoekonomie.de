@@ -4,7 +4,8 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {gunzipSync} from 'node:zlib';
-import {originalEpisodeDate, episodeDateLabel, feedDate, mixedFeedItems, assertChronologicalFeedHtml} from '../../scripts/news/feed-order.mjs';
+import {originalEpisodeDate, episodeDateLabel, episodeFeedDate, feedDate, mixedFeedItems, assertChronologicalFeedHtml} from '../../scripts/news/feed-order.mjs';
+import {compareTickerRecords, analysisOrderLabel} from '../../assets/js/ticker-order.js';
 import {buildAppPages} from '../../scripts/news/app-pages.mjs';
 import {findSearchIds} from '../../assets/js/ticker-search.js';
 import {editorialCard, combinedFeedItems, editorialAnalysisPage} from '../../scripts/news/build.mjs';
@@ -19,7 +20,7 @@ test('episode dates accept legacy German and ISO dates, with timestamps on the B
     ['2026-09-03T23:01:00.000Z','2026-09-04'],['2026-01-01T23:30:00Z','2026-01-02'],
     ['2026-09-18T00:30:00+02:00','2026-09-18']]) {
     assert.equal(originalEpisodeDate(episode(raw)),expected);
-    assert.equal(feedDate(episode(raw),'analysis'),`${expected}T00:00:00.000Z`);
+    assert.equal(episodeFeedDate(episode(raw)),`${expected}T00:00:00.000Z`);
   }
   assert.equal(episodeDateLabel(episode('2026-09-03T23:01:00.000Z')),'Folge vom 04.09.2026');
   assert.equal(episodeDateLabel(episode('2026-09-22',{subtype:'watched'})),'Sendung vom 22.09.2026');
@@ -30,6 +31,7 @@ test('unknown or invalid original dates fall back to first publication, never a 
     const value = episode(raw);
     assert.equal(originalEpisodeDate(value),'');
     assert.equal(feedDate(value,'analysis'),'2026-09-20T08:00:00.000Z');
+    assert.equal(episodeFeedDate(value),'2026-09-20T08:00:00.000Z');
     assert.equal(episodeDateLabel(value),'Datum der Originalfolge nicht angegeben');
   }
   assert.equal(feedDate(episode('',{published_at:undefined}),'analysis'),'');
@@ -38,22 +40,23 @@ test('unknown or invalid original dates fall back to first publication, never a 
 test('Lanz + Precht remains #263, #262, #261 even after a late import or correction of #261', () => {
   const values = [episode('2026-09-03T23:01:00.000Z'),episode('11.09.2026'),episode('18.09.2026',{updated_at:'2026-09-18T05:18:47Z'})];
   const before = JSON.stringify(values);
-  const ordered = mixedFeedItems([],values).map(x=>x.value);
+  const ordered = mixedFeedItems([],values,{episodeOrder:true}).map(x=>x.value);
   assert.deepEqual(ordered,[values[2],values[1],values[0]]);
-  assert.deepEqual(mixedFeedItems([],values.toReversed()).map(x=>x.value),ordered);
+  assert.deepEqual(mixedFeedItems([],values.toReversed(),{episodeOrder:true}).map(x=>x.value),ordered);
   assert.equal(JSON.stringify(values),before);
   const feed = combinedFeedItems([],values);
-  assert.deepEqual(feed.map(x=>x.original_episode_date),['2026-09-18','2026-09-11','2026-09-04']);
-  assert.equal(feed[2].published_at,values[0].published_at);
-  assert.equal(feed[2].updated_at,values[0].updated_at,'feed publication/correction metadata is not falsified');
+  assert.deepEqual(feed.map(x=>x.original_episode_date).sort(),['2026-09-04','2026-09-11','2026-09-18']);
+  const original = feed.find(x=>x.original_episode_date==='2026-09-04');
+  assert.equal(original.published_at,values[0].published_at);
+  assert.equal(original.updated_at,values[0].updated_at,'feed publication/correction metadata is not falsified');
 });
 
-test('ordinary opinions and books keep their existing publication/update ordering', () => {
+test('opinions, books and media use first publication in the overall list, never corrections', () => {
   for (const subtype of ['opinion_analysis','book_review',undefined]) {
     const value=episode('2026-01-01',{subtype});
     assert.equal(originalEpisodeDate(value),'');
     assert.equal(episodeDateLabel(value),'');
-    assert.equal(feedDate(value,'analysis'),'2026-09-24T09:00:00.000Z');
+    assert.equal(feedDate(value,'analysis'),'2026-09-20T08:00:00.000Z');
   }
 });
 
@@ -72,10 +75,10 @@ test('all published media cards and detail origins distinguish episode date from
   assert.equal(JSON.stringify(media),before);
 });
 
-test('home, initial HTML, paginated media feeds and filtered search share episode chronology', async () => {
+test('overall lists use publication; home media, paginated episode filters and search use episode chronology', async () => {
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-episode-order-'));
   try {
-    const values=Array.from({length:25},(_,i)=>episode(`2026-09-${String(i+1).padStart(2,'0')}`,{subtype:i%2?'watched':'listened'}));
+    const values=Array.from({length:25},(_,i)=>episode(`2026-09-${String(i+1).padStart(2,'0')}`,{subtype:i%2?'watched':'listened',published_at:`2026-10-${String(25-i).padStart(2,'0')}T08:00:00Z`}));
     const write=(file,body)=>{fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,body);};
     buildAppPages({root,stories:[],analyses:values,storiesById:new Map(),storyCard:()=>'',editorialCard,
       pageShell:({body})=>body,write,updatedAt:'2026-09-24T12:00:00Z'});
@@ -83,17 +86,36 @@ test('home, initial HTML, paginated media feeds and filtered search share episod
     const manifest=read('manifest');
     for (const type of ['alle','listened','watched']) {
       const key=`analysen-${type}`,items=Array.from({length:manifest.feeds[key].pages},(_,i)=>read(`feeds/${key}-${i}`).items).flat();
-      const expected=values.filter(v=>type==='alle'||v.subtype===type).toReversed().map(v=>v.slug);
+      const selected=values.filter(v=>type==='alle'||v.subtype===type);
+      const expected=(type==='alle'?selected:selected.toReversed()).map(v=>v.slug);
       assert.deepEqual(items.map(x=>x.url.split('/').at(-2)),expected);
-      assertChronologicalFeedHtml(items.map(x=>x.html).join(''));
+      assertChronologicalFeedHtml(items.map(x=>x.html).join(''),{episodeOrder:type!=='alle'});
       const lookup=new Map(Object.values(manifest.lookup).map(r=>[r.id,r]));
       const ids=await findSearchIds({term:'',lookup,type,topic:'alle',mode:'analysen',sort:'neueste',loadBucket:()=>assert.fail('no search terms')});
       assert.deepEqual(ids,items.map(x=>x.id));
     }
     const initial=fs.readFileSync(path.join(root,'wirkungsticker/analysen/index.html'),'utf8');
     assertChronologicalFeedHtml(initial);
-    assert.match(initial,/Folge vom 25\.09\.2026/);
+    assert.match(initial,/Folge vom 01\.09\.2026/);
+    assert.ok(initial.includes(analysisOrderLabel()));
     const home=fs.readFileSync(path.join(root,'wirkungsticker/index.html'),'utf8');
     assert.ok(home.indexOf('episode-2026-09-25')<home.indexOf('episode-2026-09-24'));
   } finally { fs.rmSync(root,{recursive:true,force:true}); }
+});
+
+test('same-day publication ties use the same URL order in feeds and search, not hashed IDs', async () => {
+  const a={id:'z',url:'/wirkungsticker/analyse/a/',type:'watched',date:'2026-09-25T18:00:00Z',episode_date:'2026-09-24T00:00:00Z',topics:['politik'],title:'Folge A'};
+  const b={...a,id:'a',url:'/wirkungsticker/analyse/b/',title:'Folge B'};
+  const late={...a,id:'late',url:'/wirkungsticker/analyse/late/',date:'2026-09-26T10:00:00Z',episode_date:'2026-09-10T00:00:00Z'};
+  const newer={...a,id:'newer',url:'/wirkungsticker/analyse/newer/',date:'2026-09-25T19:00:00Z'};
+  const values=[b,late,a,newer],lookup=new Map(values.map(r=>[r.id,r]));
+  const before=JSON.stringify(values);
+  for(const type of ['alle','watched']) {
+    const generated=[...values].sort((a,b)=>compareTickerRecords(a,b,type));
+    const ids=await findSearchIds({term:'',lookup,type,topic:'politik',mode:'analysen',sort:'neueste',loadBucket:()=>assert.fail('no search terms')});
+    assert.deepEqual(ids,generated.map(r=>r.id));
+    assert.deepEqual(ids,type==='alle'?['late','newer','z','a']:['newer','z','a','late']);
+  }
+  assert.equal(JSON.stringify(values),before);
+  assert.match(analysisOrderLabel('watched'),/Neueste Originalfolge zuerst/);
 });

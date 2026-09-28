@@ -18,7 +18,9 @@ for (const [datei, muster, marke, fingerabdruck, traeger] of [
   ['../../assets/js/news-app-viewport.js', /assets\/js\/news-app-viewport\.js\?v=([\w-]+)/, '20260918-tastatur', 'e7bc64988561691e'],
   // news-app.js holt seit dem 20.09.2026 gepackte Daten. Laedt ein Browser die
   // alte Fassung aus dem Cache, sucht sie Dateien, die es nicht mehr gibt.
-  ['../../assets/js/news-app.js', /assets\/js\/news-app\.js\?v=([\w-]+)/, '20260920-gepackt', 'ae4dccc4a00a4e5e', '../../scripts/news/app-pages.mjs'],
+  ['../../assets/js/news-app.js', /assets\/js\/news-app\.js\?v=([\w-]+)/, '20260928-order', 'e951194f08b7c2e2', '../../scripts/news/app-pages.mjs'],
+  ['../../assets/js/ticker-search.js', /ticker-search\.js\?v=([\w-]+)/, '20260928-order', '049d2e89d85e9bb6', '../../assets/js/news-app.js'],
+  ['../../assets/js/ticker-order.js', /ticker-order\.js\?v=([\w-]+)/, '20260928-order', 'e392074442d0e0b5', '../../assets/js/ticker-search.js'],
 ]) {
   test(`die Versionsmarke wandert mit ${datei.split('/').at(-1)}`, () => {
     assert.equal(inhalt(datei), fingerabdruck,
