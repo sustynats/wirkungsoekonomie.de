@@ -1,9 +1,10 @@
+import {compareTickerRecords} from '../../assets/js/ticker-order.js';
 // Public editorial timestamps, never ingestion or build time.
 const timestampOrLast = value => Number.isFinite(Date.parse(value)) ? Date.parse(value) : -Infinity;
 
 export const isEpisodeReview = value => ['listened', 'watched'].includes(value?.subtype);
 
-// Originalfolgen sind nach ihrem Berliner Kalendertag geordnet, nicht nach
+// In Medienfiltern sind Originalfolgen nach ihrem Berliner Kalendertag geordnet, nicht nach
 // Import, Freigabe oder spaeterer Korrektur der Besprechung. Altdaten enthalten
 // sowohl ISO-Zeitstempel als auch ISO- und deutsche Datumsangaben.
 export function originalEpisodeDate(value) {
@@ -35,11 +36,8 @@ export function originalNewsDate(value) {
   return sourceDates.length ? new Date(Math.min(...sourceDates)).toISOString() : '';
 }
 export function feedDate(value, type = "story") {
-  if (type === 'analysis' && isEpisodeReview(value)) {
-    const day = originalEpisodeDate(value);
-    // Mitternacht ist nur der gemeinsame Sortierschluessel fuer den Tag,
-    // keine behauptete Sendezeit. Publikations- und Aenderungsdaten bleiben erhalten.
-    if (day) return `${day}T00:00:00.000Z`;
+  if (type === 'analysis') {
+    // A correction is not a new publication, including for books and reviews.
     return Number.isFinite(Date.parse(value.published_at)) ? new Date(value.published_at).toISOString() : '';
   }
   if (type === "story") {
@@ -51,30 +49,35 @@ export function feedDate(value, type = "story") {
     if (original) return original;
     if (Number.isFinite(Date.parse(value.published_at))) return new Date(value.published_at).toISOString();
   }
-  const candidates = type === "analysis"
-    ? [value.updated_at, value.published_at]
-    : [value.last_updated, value.published_at];
+  const candidates = [value.last_updated, value.published_at];
   const dates = candidates.map(date => Date.parse(date)).filter(Number.isFinite);
   return dates.length ? new Date(Math.max(...dates)).toISOString() : "";
+}
+
+export function episodeFeedDate(value) {
+  const day = originalEpisodeDate(value);
+  // A calendar-day sort key, not an asserted broadcast time.
+  return day ? `${day}T00:00:00.000Z` : feedDate(value, 'analysis');
 }
 
 export function isLateNewsDelivery(story) {
   return !story.news_update_at && Date.parse(story.published_at) - Date.parse(feedDate(story)) > 3600000;
 }
 
-export function mixedFeedItems(stories, analyses) {
-  const key = item => `${item.type}:${(item.type === "analysis" ? item.value.analysis_id : item.value.story_id) || item.value.slug || ""}`;
-  const timestamp = item => timestampOrLast(feedDate(item.value, item.type));
+export function mixedFeedItems(stories, analyses, {episodeOrder = false} = {}) {
+  const record = item => ({date:feedDate(item.value, item.type),
+    episode_date:item.type === 'analysis' ? episodeFeedDate(item.value) : '',
+    url:`/wirkungsticker/${item.type === 'analysis' ? 'analyse/' : ''}${item.value.slug || item.value.analysis_id || item.value.story_id || ''}/`});
   return [
     ...stories.map(value => ({ type: "story", value })),
     ...analyses.map(value => ({ type: "analysis", value })),
-  ].sort((a, b) => timestamp(b) - timestamp(a) || (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
+  ].sort((a, b) => compareTickerRecords(record(a), record(b), episodeOrder ? 'media' : 'alle'));
 }
 
-export function assertChronologicalFeedHtml(html) {
+export function assertChronologicalFeedHtml(html, {episodeOrder = false} = {}) {
   let previous = Infinity;
   for (const [card] of html.matchAll(/<article\b(?=[^>]*\sdata-news-card(?:\s|>))[^>]*>/g)) {
-    const date = card.match(/\bdata-news-updated-at="([^"]*)"/)?.[1];
+    const date = (episodeOrder ? card.match(/\bdata-news-episode-date="([^"]*)"/)?.[1] : '') || card.match(/\bdata-news-updated-at="([^"]*)"/)?.[1];
     const current = timestampOrLast(date);
     if (current > previous) throw new Error("NEWS_FEED_NOT_CHRONOLOGICAL");
     previous = current;
