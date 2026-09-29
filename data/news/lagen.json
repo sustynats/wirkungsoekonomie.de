@@ -1,7 +1,80 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-28T16:00:00.000Z",
+  "updated_at": "2026-09-29T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-29-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-29",
+      "window_from": "2026-09-28T16:00:00.000Z",
+      "window_to": "2026-09-29T04:00:00.000Z",
+      "stand": "2026-09-29T04:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 5,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T03:31:35.543Z",
+          "score": 5.7105
+        },
+        {
+          "story_id": "wt-4e929be935f85a32",
+          "slug": "frau-durch-schuss-in-oberndorf-am-neckar-lebensgefahrlich-verletzt-verdachtiger-festgeno-f85a32",
+          "title": "Laut SWR Aktuell: Frau in Oberndorf durch Schuss lebensgefährlich verletzt",
+          "state": "neu",
+          "at": "2026-09-29T01:14:32.680Z",
+          "score": 10.2702
+        },
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-09-28T23:12:26.849Z",
+          "score": 9.3506
+        },
+        {
+          "story_id": "wt-c3b538749768fa86",
+          "slug": "fliegerbombe-in-nurnberg-zweite-bombe-binnen-weniger-wochen-in-nurnberg-entscharft-68fa86",
+          "title": "Erneut Fliegerbombe auf Nürnberger Firmengelände entdeckt",
+          "state": "neu",
+          "at": "2026-09-28T20:59:36.664Z",
+          "score": 9.4161
+        },
+        {
+          "story_id": "wt-13e90c2e31eecf69",
+          "slug": "messerangriff-verletzte-polizisten-und-schussabgabe-eecf69",
+          "title": "Messerangriff verletzte Polizisten und Schussabgabe",
+          "state": "neu",
+          "at": "2026-09-28T20:17:43.792Z",
+          "score": 9.358
+        },
+        {
+          "story_id": "wt-39c20f959761e554",
+          "slug": "bombenfund-rodenkirchen-auch-a4-muss-gesperrt-werden-61e554",
+          "title": "Laut WDR: Weltkriegsbombe in Köln-Rodenkirchen gefunden, A4 soll gesperrt werden",
+          "state": "neu",
+          "at": "2026-09-28T19:13:12.414Z",
+          "score": 9.2683
+        },
+        {
+          "story_id": "wt-55472ffc2a39e1fe",
+          "slug": "humanitare-krise-in-ukraine-kaum-essen-kein-entkommen-in-oleschky-39e1fe",
+          "title": "Oleschky: Versorgung und Evakuierung laut Bericht abgeschnitten",
+          "state": "neu",
+          "at": "2026-09-28T18:56:04.905Z",
+          "score": 9.2446
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-28-abendlage",
       "slot": "abendlage",
