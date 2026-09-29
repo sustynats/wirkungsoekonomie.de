@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-29T11:11:52.087Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-29T11:25:48.630Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -177,6 +177,38 @@
         "Buch & Wirkung"
       ],
       "_woek_type": "Buch & Wirkung"
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/brande-explosion-bei-unfall-mit-gasflaschen-mann-schwer-verletzt-e7a606/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/brande-explosion-bei-unfall-mit-gasflaschen-mann-schwer-verletzt-e7a606/",
+      "title": "Laut stern: Unfall mit Gasflaschen in Hamburg-Moorfleet – Bewohner lebensgefährlich verletzt",
+      "summary": "In Hamburg-Moorfleet kam es laut stern zu einem Unfall mit Gasflaschen, bei dem ein Einfamilienhaus brannte. Der Bewohner rettete sich selbst, wurde aber lebensgefährlich verletzt; Unfallhergang und Ursache bleiben offen.",
+      "date_published": "2026-09-29T03:51:29.000Z",
+      "date_modified": "2026-09-29T03:51:29.000Z",
+      "_woek_released_at": "2026-09-29T11:32:35.778Z",
+      "tags": [
+        "Energie",
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgehort-was-hei-t-westliche-zivilisation-und-wer-legt-das-fest-723b01/",
@@ -4286,7 +4318,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "title": "Laut Deutschlandfunk: Selenskyj erneuert Vorschlag für begrenzte Waffenruhe",
-      "summary": "Selenskyj erneuert laut Deutschlandfunk ein Angebot für eine begrenzte Waffenruhe. Ob Russland reagiert und daraus eine Vereinbarung oder Deeskalation entsteht, bleibt offen.",
+      "summary": "Selenskyj erneuert laut Deutschlandfunk ein Angebot für eine begrenzte Waffenruhe gegen ein Ende bestimmter russischer Angriffe. Ob Russland reagiert und daraus eine Vereinbarung oder Deeskalation entsteht, bleibt offen.",
       "date_published": "2026-09-22T00:08:50.000Z",
       "date_modified": "2026-09-22T00:08:50.000Z",
       "_woek_released_at": "2026-09-22T01:00:56.738Z",
@@ -4299,17 +4331,17 @@
       "_woek_impact_profile": {
         "human": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "positive",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
-          "direction": "mixed",
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "positive",
           "status": "potential"
         }
       }
