@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-29T12:13:14.091Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-29T12:28:38.023Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/blindganger-entdeckt-autobahn-muss-wegen-bombenentscharfung-gesperrt-werden-6b506e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/blindganger-entdeckt-autobahn-muss-wegen-bombenentscharfung-gesperrt-werden-6b506e/",
+      "title": "Laut stern: Blindgängerfund legt A4 wegen Entschärfung lahm",
+      "summary": "In Köln sollen wegen der Entschärfung eines Blindgängers Tausende Menschen ihre Wohnungen verlassen; laut stern ist auch die A4 betroffen. Wie lange die Sperrung und die Evakuierung dauern, bleibt offen.",
+      "date_published": "2026-09-29T12:18:04.000Z",
+      "date_modified": "2026-09-29T12:18:04.000Z",
+      "_woek_released_at": "2026-09-29T12:35:50.462Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/",
@@ -4331,17 +4362,17 @@
       "_woek_impact_profile": {
         "human": {
           "magnitude": 2,
-          "direction": "positive",
+          "direction": "mixed",
           "status": "potential"
         },
         "planet": {
           "magnitude": 1,
-          "direction": "positive",
+          "direction": "mixed",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "positive",
+          "magnitude": 1,
+          "direction": "mixed",
           "status": "potential"
         }
       }
