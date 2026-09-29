@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-29T10:00:00.000Z",
+  "updated_at": "2026-09-29T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-29-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-09-29",
+      "window_from": "2026-09-29T10:00:00.000Z",
+      "window_to": "2026-09-29T16:00:00.000Z",
+      "stand": "2026-09-29T16:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 5,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-91d144fd38312818",
+          "slug": "kriminalitat-todliche-schusse-in-teestube-tater-weiter-auf-der-flucht-312818",
+          "title": "Laut stern: Tödliche Schüsse in Marl – ein Mensch stirbt, zwei werden verletzt",
+          "state": "neu",
+          "at": "2026-09-29T15:55:04.626Z",
+          "score": 3.9863
+        },
+        {
+          "story_id": "wt-e551ac5b8c9cc029",
+          "slug": "landkreis-rottweil-schusse-am-bahnhof-frau-schwebt-in-lebensgefahr-9cc029",
+          "title": "Laut Stern: Schüsse am Bahnhof in Oberndorf – Frau in Lebensgefahr",
+          "state": "neu",
+          "at": "2026-09-29T14:00:19.554Z",
+          "score": 9.6676
+        },
+        {
+          "story_id": "wt-d40ed501d07d4680",
+          "slug": "sechs-tote-schusse-in-stade-drei-monate-fassungslosigkeit-und-fragen-7d4680",
+          "title": "Laut stern: Sechs Tote nach Schüssen in einer Jugendeinrichtung in Stade",
+          "state": "neu",
+          "at": "2026-09-29T13:41:15.738Z",
+          "score": 7.6146
+        },
+        {
+          "story_id": "wt-a363a011816b506e",
+          "slug": "blindganger-entdeckt-autobahn-muss-wegen-bombenentscharfung-gesperrt-werden-6b506e",
+          "title": "Laut stern: Blindgängerfund legt A4 wegen Entschärfung lahm",
+          "state": "neu",
+          "at": "2026-09-29T12:35:50.462Z",
+          "score": 5.4329
+        },
+        {
+          "story_id": "wt-bba2836634e7a606",
+          "slug": "brande-explosion-bei-unfall-mit-gasflaschen-mann-schwer-verletzt-e7a606",
+          "title": "Laut stern: Unfall mit Gasflaschen in Hamburg-Moorfleet – Bewohner lebensgefährlich verletzt",
+          "state": "neu",
+          "at": "2026-09-29T11:32:35.778Z",
+          "score": 7.2572
+        },
+        {
+          "story_id": "wt-0c42ad2e4ae24f14",
+          "slug": "brand-in-wittenberg-16-verletzte-werkstatt-fur-menschen-mit-behinderung-evakuiert-e24f14",
+          "title": "Laut MDR: 29 Verletzte bei Brand in Wittenberger Werkstatt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T10:32:21.175Z",
+          "score": 6.8399
+        },
+        {
+          "story_id": "wt-003d9a97b9ad5437",
+          "slug": "explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437",
+          "title": "Laut Tagesspiegel: Seoul wertet Minenexplosion als Waffenstillstandsverletzung",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T10:30:37.688Z",
+          "score": 6.8351
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Südkoreas Regierung wertet Minenexplosion als Verletzung des Waffenstillstands",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T10:12:41.355Z",
+          "score": 9.2852
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-29-mittagslage",
       "slot": "mittagslage",
