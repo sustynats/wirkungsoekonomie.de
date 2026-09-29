@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-29T15:36:24.246Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-29T15:51:16.698Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-todliche-schusse-in-teestube-tater-weiter-auf-der-flucht-312818/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-todliche-schusse-in-teestube-tater-weiter-auf-der-flucht-312818/",
+      "title": "Laut stern: Tödliche Schüsse in Marl – ein Mensch stirbt, zwei werden verletzt",
+      "summary": "In Marl berichtet der stern über Schüsse in zwei Fällen innerhalb weniger Wochen. Beim aktuellen Fall starb ein Mensch, zwei weitere wurden verletzt; Ablauf und Verantwortlichkeit bleiben offen.",
+      "date_published": "2026-09-29T14:24:26.000Z",
+      "date_modified": "2026-09-29T14:24:26.000Z",
+      "_woek_released_at": "2026-09-29T15:55:04.626Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/landkreis-rottweil-schusse-am-bahnhof-frau-schwebt-in-lebensgefahr-9cc029/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/landkreis-rottweil-schusse-am-bahnhof-frau-schwebt-in-lebensgefahr-9cc029/",
@@ -4411,7 +4442,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "title": "Laut Deutschlandfunk erneuert Selenskyj Vorschlag für begrenzte Waffenruhe",
-      "summary": "Selenskyj erneuert laut Deutschlandfunk ein Angebot für eine begrenzte Waffenruhe gegen ein Ende bestimmter Angriffe. Ob Russland reagiert oder daraus Deeskalation entsteht, bleibt offen.",
+      "summary": "Selenskyj erneuert laut Deutschlandfunk ein konditionales Angebot für eine begrenzte Waffenruhe. Ob Russland reagiert und daraus eine Deeskalation entsteht, bleibt offen.",
       "date_published": "2026-09-22T00:08:50.000Z",
       "date_modified": "2026-09-22T00:08:50.000Z",
       "_woek_released_at": "2026-09-22T01:00:56.738Z",
@@ -4423,18 +4454,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
-          "direction": "mixed",
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "positive",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "positive",
           "status": "potential"
         }
       }
