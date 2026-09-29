@@ -1,7 +1,80 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-29T04:00:00.000Z",
+  "updated_at": "2026-09-29T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-29-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-09-29",
+      "window_from": "2026-09-29T04:00:00.000Z",
+      "window_to": "2026-09-29T10:00:00.000Z",
+      "stand": "2026-09-29T10:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 5,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-0c42ad2e4ae24f14",
+          "slug": "brand-in-wittenberg-16-verletzte-werkstatt-fur-menschen-mit-behinderung-evakuiert-e24f14",
+          "title": "Brand in Wittenberg: Laut MDR 29 Verletzte, Werkstatt evakuiert",
+          "state": "neu",
+          "at": "2026-09-29T09:46:19.197Z",
+          "score": 8.462
+        },
+        {
+          "story_id": "wt-9c2b027038685a20",
+          "slug": "kriminalitat-ein-toter-und-zwei-verletzte-nach-schussen-in-teestube-685a20",
+          "title": "Laut stern: Ein Toter und zwei Verletzte nach Schüssen in Teestube",
+          "state": "neu",
+          "at": "2026-09-29T09:19:09.451Z",
+          "score": 6.3865
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Vorschlag für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T09:17:47.598Z",
+          "score": 5.6328
+        },
+        {
+          "story_id": "wt-39c20f959761e554",
+          "slug": "bombenfund-rodenkirchen-auch-a4-muss-gesperrt-werden-61e554",
+          "title": "Laut WDR: Weltkriegsbombe in Köln-Rodenkirchen soll heute entschärft werden",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T08:19:56.583Z",
+          "score": 3.4721
+        },
+        {
+          "story_id": "wt-003d9a97b9ad5437",
+          "slug": "explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437",
+          "title": "Laut Südkoreas Verteidigungsminister: Mine verletzt drei Offiziere im Grenzgebiet",
+          "state": "neu",
+          "at": "2026-09-29T07:35:48.483Z",
+          "score": 9.5995
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut Südkoreas Regierung verletzt nordkoreanische Mine den Waffenstillstand",
+          "state": "neu",
+          "at": "2026-09-29T07:17:32.533Z",
+          "score": 8.0487
+        },
+        {
+          "story_id": "wt-a48f14c04567427a",
+          "slug": "frau-durch-schuss-lebensgefahrlich-verletzt-nopper-entreisst-aktivisten-plakat-curevac-a-67427a",
+          "title": "Laut BioNTech: Standort in Tübingen soll Ende 2027 schließen",
+          "state": "neu",
+          "at": "2026-09-29T06:14:40.389Z",
+          "score": 5.3741
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-29-morgenlage",
       "slot": "morgenlage",
