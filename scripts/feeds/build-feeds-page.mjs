@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {RSS_CHANNELS, rssDiscoveryLinks} from "../news/rss-channels.mjs";
 
 // Übersichtsseite aller RSS-Feeds unter /feeds/. Scannt dynamisch feeds/*.xml
 // (Kanal-Titel/Beschreibung/Link) - neue Feeds erscheinen automatisch.
@@ -65,6 +66,7 @@ function pageShell(title, body, depth, opts = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(opts.metaTitle || `${title} - Wirkungsökonomie`)}</title>
     <meta name="description" content="${esc(opts.metaDescription || "")}">
+    ${rssDiscoveryLinks()}
     <link rel="stylesheet" href="${depth}assets/css/style.css?v=${CSS_VERSION}">
   </head>
   <body>
@@ -98,15 +100,17 @@ function main() {
     if (ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
     return a.localeCompare(b);
   });
-  const feeds = files.map((file) => {
+  const feeds = [...Object.values(RSS_CHANNELS).map(channel => ({
+    title: channel.title, description: channel.description, url: `${site}${channel.path}`,
+  })), ...files.map((file) => {
     const meta = channelMeta(fs.readFileSync(path.join(feedDir, file), "utf8"));
     return { file, url: `${site}/feeds/${file}`, ...meta };
-  }).filter((f) => f.title);
+  }).filter((f) => f.title)];
 
   const cards = feeds.map((f) => `      <article class="info-card">
         <h3>${esc(f.title)}</h3>
         <p class="card-summary">${esc(f.description)}</p>
-        <p class="card-meta"><span class="muted">${f.count} Einträge</span></p>
+        ${f.count === undefined ? "" : `<p class="card-meta"><span class="muted">${f.count} Einträge</span></p>`}
         <p><a class="btn btn-primary" href="${esc(f.url)}">Feed abonnieren ↗</a></p>
         <p class="muted" style="word-break:break-all;font-size:0.85rem">${esc(f.url)}</p>
       </article>`).join("\n");
@@ -131,7 +135,7 @@ ${cards}
   fs.mkdirSync(feedDir, { recursive: true });
   fs.writeFileSync(path.join(feedDir, "index.html"), pageShell("RSS-Feeds", body, "../", {
     metaTitle: "RSS-Feeds der Wirkungsökonomie",
-    metaDescription: "Alle RSS-Feeds der Wirkungsökonomie auf einen Blick: Quellenarchiv, Journal, Podcast, Bibliothek, Öffentlicher Wirkungsraum und Startseite."
+    metaDescription: "Wirkungsticker-News und Analysen getrennt abonnieren. Dazu alle weiteren RSS-Feeds der Wirkungsökonomie: Quellenarchiv, Journal, Podcast, Bibliothek und mehr."
   }));
   console.log(`[feeds] Übersichtsseite /feeds/ mit ${feeds.length} Feeds erzeugt.`);
 }

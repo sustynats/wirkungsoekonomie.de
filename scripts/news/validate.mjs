@@ -160,8 +160,18 @@ if (!pwaScript.includes('window.addEventListener("focus"') || !pwaScript.include
 const newsScript = fs.readFileSync(path.join(ROOT, "assets/js/news.js"), "utf8");
 if (!newsScript.includes("woek:wirkungsticker:list-state:v1") || !newsScript.includes("sessionStorage") || !newsScript.includes("scrollY") || !newsScript.includes("visibleLimit")) fail("NEWS_LIST_POSITION_RESTORE_INVALID");
 const rss = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.xml"), "utf8");
+const analysisRss = fs.readFileSync(path.join(ROOT, "wirkungsticker/analyse/feed.xml"), "utf8");
 const atom = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.atom"), "utf8");
-if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");
+if ([rss, analysisRss].some(xml => !xml.startsWith("<?xml") || !xml.includes("<rss ")) || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");
+// Both RSS channels must contain exactly their public JSON-feed subset, in the
+// same order. This also catches empty channels, duplicate items and leaks.
+const combinedFeed = readJson("wirkungsticker/feed.json").items;
+for (const [xml, isNews] of [[rss, true], [analysisRss, false]]) {
+  const actual = [...xml.matchAll(/<guid isPermaLink="true">([^<]+)<\/guid>/g)].map(match => match[1]);
+  const expected = combinedFeed.filter(item => (item._woek_type === "Wirkungsakte") === isNews).map(item => item.url);
+  if (JSON.stringify(actual) !== JSON.stringify(expected) || new Set(actual).size !== actual.length) fail("RSS_CHANNEL_CONTENT_INVALID");
+}
+if (fs.readFileSync(path.join(ROOT, "news/feed.xml"), "utf8") !== rss) fail("RSS_LEGACY_ALIAS_INVALID");
 for (const analysis of editorialStore.analyses.filter((item) => item.status === "published")) {
   const story = storiesById.get(analysis.story_id);
   if (!story?.published || story.listed === false) fail(`EDITORIAL_STORY_INVALID:${analysis.analysis_id}`);
@@ -187,7 +197,7 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   const analysisNextHref = nextHref?.startsWith("analyse/") ? `../${nextHref.slice("analyse/".length)}` : nextHref ? `../../${nextHref}` : null;
   if (readerIndex < 0 || !html.includes('data-news-reader="analysis"') || !html.includes("data-news-reader-back") || (nextHref && (!html.includes("Nächster Beitrag") || !html.includes(`href="${analysisNextHref}"`)))) fail(`EDITORIAL_READER_NAVIGATION_INVALID:${analysis.analysis_id}`);
   const storyHtml = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
-  if (!storyHtml.includes(`../analyse/${analysis.slug}/`) || !rss.includes(`/wirkungsticker/analyse/${analysis.slug}/`)) fail(`EDITORIAL_BACKLINK_OR_FEED_INVALID:${analysis.analysis_id}`);
+  if (!storyHtml.includes(`../analyse/${analysis.slug}/`) || !analysisRss.includes(`/wirkungsticker/analyse/${analysis.slug}/`)) fail(`EDITORIAL_BACKLINK_OR_FEED_INVALID:${analysis.analysis_id}`);
 }
 const portal = fs.readFileSync(path.join(ROOT, "news/index.html"), "utf8");
 if (portal.includes('rel="manifest"') || portal.includes("data-news-app-install")) fail("NEWS_PORTAL_MUST_NOT_SHARE_TICKER_APP");
