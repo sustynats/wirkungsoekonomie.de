@@ -4,7 +4,8 @@ Stand: 30. September 2026. Branch: `codex/wirkungsfenster`. Kein Merge, kein Dep
 
 ## Ausgangslage und Umfang
 
-- Basis: `09530f48d8511d8daa85c087be72d903fad24087` aus `sustynats/wirkungsoekonomie.de`.
+- Ausgangsaudit: `09530f48d8511d8daa85c087be72d903fad24087` aus `sustynats/wirkungsoekonomie.de`.
+- Vor dem PR auf `8281ec5cff767d80d9ba081a4c1a998972654c25` aktualisiert. Die sechs zwischenzeitlichen automatischen Ticker-Commits wurden unverändert als Basis übernommen; der PR enthält keine eigenen Ticker- oder Workflowänderungen.
 - Neuester ausdrücklich führender Leitfaden beim Start: v1.7. Die neue v1.8 ist kumulativ; v1.5–v1.7 einschließlich IOOI, DNS/GGO/GFA/eNAP und objektspezifischer BHO-Prüfarchitektur bleiben enthalten.
 - Der ursprüngliche lokale Checkout mit fremden Änderungen wurde nicht bearbeitet. Umsetzung in einem separaten verwalteten Worktree.
 - Bestandsprüfung: kein kanonisches Wirkungsfenster vorhanden. Wirkungssteuerung ist bereits dem kanonischen Wirkungslenkung-Eintrag zugeordnet. Wirkungskorridor existiert in einem anderen Benchmark-Kontext. Es wurden keine Doppelbegriffe oder Methoden angelegt.
@@ -35,7 +36,9 @@ Stand: 30. September 2026. Branch: `codex/wirkungsfenster`. Kein Merge, kein Dep
 | Bestehende Küchen-Rechentests | 7 Tests bestanden |
 | `npm run check:publication-editions` | Bestanden; datierte Ausgaben und 994 gebundene Korrekturdateien geschützt |
 | `npm run check:release-assets` | Lokaler Manifest-/Speichercheck bestanden; kein Nachweis eines öffentlichen v1.8-Downloads |
-| `npm run build:artifact` | Bestanden nach der Reader-Metadatenkorrektur; 0 defekte interne Links. |
+| `npm run build:artifact` | Bestanden auch für den bereinigten, auf `main` aktualisierten Branch; 0 defekte interne Links. |
+
+Kompakte Ergebnisdaten stehen in [checks.json](checks.json), die Rebuild-Hashes in [rebuild.json](rebuild.json). Suchindex und Taxonomie wurden nach dem Rebase erneut gebaut und stimmen bytegleich mit den eingecheckten Ausgaben überein.
 
 Die neuen Tests vergleichen gegen Hashes des Ausgangs-Commits: neun geschützte Kerndefinitionen, Berechnungsquellen, Register, historische Leitfaden-PDFs, datierte Lernquellen, Podcast und Tariftabellen. Sie prüfen außerdem Links/Anker, Definitionen, Schema, Suchindex, Sitemap, Quellen und die sechs methodischen Erweiterungen. Dies ist keine empirische Validierung des Begriffs oder vollständige Barrierefreiheitszertifizierung.
 
@@ -45,17 +48,17 @@ Die neuen Tests vergleichen gegen Hashes des Ausgangs-Commits: neun geschützte 
 - Tastatur: Sprunglink per Tab/Enter erreicht `main-content`; Tabellen besitzen benannte, fokussierbare Regionen. Keine JavaScript-Fehler in den geprüften neuen Seiten.
 - Druck: achtseitiger Browserdruck geprüft, einschließlich beider Tabellen. Der fokussierte Sprunglink und die persönliche Notizoberfläche werden nicht mitgedruckt.
 - Leitfaden-PDF: 56 A4-Seiten (1.240.416 Bytes; SHA-256 `8eac95d228a6db979bf99c0e69982c32719682b3236baa96afdb7df8950711ff`), Autorin Natalie Weber. Definitionen, neue Abschnitte sowie die beiden übernommenen Architekturabbildungen visuell geprüft. Die vorhandenen Bilddateien werden in v1.8 korrekt aufgelöst und auf die Druckbreite begrenzt; historische PDFs bleiben unverändert.
-- Screenshots: `desktop.png`, `mobile.png`, `mobile-application.png`, `print-application.png`.
+- Screenshots: [Desktop](desktop.png), [Mobil](mobile.png), [Anwendung mobil](mobile-application.png), [Druck](print-application.png), [Glossar](glossary-desktop.png).
 
 ## Vorhandene Auffälligkeiten und behobene neue Fehler
 
-Der Baseline-Build war erfolgreich, erzeugte aber bereits sehr umfangreiche sachfremde Normalisierungsänderungen. Diese gehören nicht zur Erweiterung und werden nicht übernommen. Der ältere Leitfaden-Generator setzt einen doppelten Migrationshinweis ein und verweist auf Abbildungen mit abweichenden Dateinamen; für neue v1.8-Ausgaben werden diese Darstellungsprobleme korrigiert, historische Quellen und PDFs nicht umgeschrieben.
+Der Baseline-Build war erfolgreich, erzeugte aber bereits sehr umfangreiche sachfremde Normalisierungsänderungen. Diese gehören nicht zur Erweiterung und werden nicht übernommen. Gemeinsame generierte Manifeste werden hingegen aus den vorhandenen Quellen neu erzeugt: Insbesondere das zuvor auf August datierte Contentmanifest enthält dadurch auch ältere Indexrückstände. Diese Metadaten-Neuerzeugung erklärt einen großen Teil des Diffs, ohne historische Originaltexte oder PDFs umzuschreiben. Der ältere Leitfaden-Generator setzt einen doppelten Migrationshinweis ein und verweist auf Abbildungen mit abweichenden Dateinamen; für neue v1.8-Ausgaben werden diese Darstellungsprobleme korrigiert, historische Quellen und PDFs nicht umgeschrieben.
 
 Ein älterer Kapitel-Export enthält ausdrücklich v1.0 vom 21. Mai 2026, wurde aber bislang mit dem jeweils führenden Registertitel beschriftet. Er wird jetzt transparent als historische Lesefassung markiert und verweist auf die kumulative aktuelle Fassung; der Originaltext bleibt erhalten. `content/documents/reader-editions.json` hält die abweichende Reader-Edition ausdrücklich fest; Register, Renderer und Qualitätsprüfung verwenden diese Angabe. Historische Aliasziele müssen weiterhin unmittelbar auf Text führen und `noindex,follow` tragen, aktuelle Aliasziele indexierbar bleiben.
 
 Der bestehende Bibliotheksgenerator ergänzt beim Rebuild außerdem sechs fehlende Metadatenseiten zu bereits vorhandenen Journal-PDFs. Diese kleinen Katalogkarten bleiben erhalten, damit die neu erzeugten Bibliotheksverweise auflösbar sind; Journaltexte, Ticker und politische Bewertungen wurden nicht geändert.
 
-Der Gesamtbuild-Artefaktlauf meldet zusätzlich 2.529 verwaiste Routen und 1.317 doppelte Titel als Warnungen. Dafür wurde kein eigener Baseline-Artefaktlauf hergestellt; diese siteweiten Warnungen werden nicht pauschal als neu oder als bereits vorhanden eingestuft.
+Der abschließende Artefaktlauf des bereinigten Branches meldet zusätzlich 2.528 verwaiste Routen und 1.316 doppelte Titel als Warnungen. Dafür wurde kein eigener Baseline-Artefaktlauf hergestellt; diese siteweiten Warnungen werden nicht pauschal als neu oder als bereits vorhanden eingestuft.
 
 Während der Umsetzung erkannte Fehler wurden korrigiert: Glossar-Selbstverlinkung mit doppelter Kurzdefinition, falscher Gegenfaktum-Slug, zunächst fehlender Sitemap-Eintrag, versehentlich mitbearbeitete Canvas-Varianten sowie die Bindung älterer Lern-PDF-Quellen. Die Quellen- und Publikationsschutzgates wurden nicht abgeschwächt.
 
