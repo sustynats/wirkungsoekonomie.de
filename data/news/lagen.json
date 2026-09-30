@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-29T16:00:00.000Z",
+  "updated_at": "2026-09-30T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-09-30-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-09-30",
+      "window_from": "2026-09-29T16:00:00.000Z",
+      "window_to": "2026-09-30T04:00:00.000Z",
+      "stand": "2026-09-30T04:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 1,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Selenskyj erneuert Vorschlag für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-09-30T01:19:49.913Z",
+          "score": 5.5275
+        },
+        {
+          "story_id": "wt-a363a011816b506e",
+          "slug": "blindganger-entdeckt-autobahn-muss-wegen-bombenentscharfung-gesperrt-werden-6b506e",
+          "title": "Laut stern: Blindgänger in Köln auf Acker kontrolliert gesprengt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T20:34:47.750Z",
+          "score": 3.1317
+        },
+        {
+          "story_id": "wt-941b315cc45bfca4",
+          "slug": "rohrbruch-in-berlin-spandau-flutet-strassen-haus-wird-evakuiert-5bfca4",
+          "title": "Laut Feuerwehr und Bauaufsicht: Rohrbruch in Berlin-Spandau flutet Straßen – Haus wird evakuiert",
+          "state": "neu",
+          "at": "2026-09-29T18:15:38.199Z",
+          "score": 9.1884
+        },
+        {
+          "story_id": "wt-823d9ccbc9b293b1",
+          "slug": "nachtlicher-messerangriff-mann-auf-heimweg-mit-messer-in-den-bauch-gestochen-b293b1",
+          "title": "Laut Polizei: 50-Jähriger bei nächtlichem Messerangriff verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-09-29T17:05:16.029Z",
+          "score": 8.8406
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-29-abendlage",
       "slot": "abendlage",
