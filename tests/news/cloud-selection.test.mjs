@@ -163,6 +163,19 @@ test('real runner exports below-threshold candidates and checks a return for fre
   console.log(JSON.stringify({ comparison: 'same_snapshot_fixture', input_hash: snapshot.input_hash,
     old_local_eligible: baseline.eligible.length, cloud_selected_new: checked.cloud_selection.selected.length,
     ai_calls: checked.ai_calls, published: checked.published_stories }));
+  // A real additional feed item arriving while the frozen package is reviewed
+  // must remain pending, rather than being consumed as a reviewed rejection.
+  const lateRss = rss.replace('</channel>', '<item><title>Neue Forschungsanlage eröffnet</title><link>https://example.org/late</link><description>Eine neue Anlage ermöglicht dokumentierte Materialtests.</description><pubDate>Wed, 30 Sep 2026 09:45:00 GMT</pubDate></item></channel>');
+  let lateState;
+  const withArrival = await runWirkungsticker({ ...input(), cloudSelection: { snapshot, result },
+    fetchFeedImpl: async () => ({ body: lateRss, final_url: registered.feed_url }),
+    captureState: value => { lateState = value; } });
+  assert.equal(withArrival.ai_calls, 0);
+  assert.equal(withArrival.cloud_selection.selected.length, 1);
+  const waiting = lateState.storyStore.stories.find(story => story.sources?.some(s => s.url === 'https://example.org/late'));
+  assert.ok(waiting, 'late arrival is retained in the established story store');
+  assert.equal(waiting.pending_reason, 'CLOUD_AFTER_EDITORIAL_CUTOFF');
+  assert.ok(lateState.state.pending_story_ids.includes(waiting.story_id));
   // Replay same frozen discovery context with the durable import receipt.
   const replayInput = input(); replayInput.state.cloud_selection_receipts = captured.state.cloud_selection_receipts;
   const replay = await runWirkungsticker({ ...replayInput, cloudSelection: { snapshot, result } });
