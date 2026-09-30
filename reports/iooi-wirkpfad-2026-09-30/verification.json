@@ -179,6 +179,11 @@
       "officialSources": 14,
       "masterItems": 621,
       "details": "Nach Zusammenführung aktueller Ticker-Daten zusätzlich lokal geprüft; News- und IOOI-Tests erneut vollständig bestanden."
+    },
+    {
+      "command": "Finaler main-Abgleich und Vergleich aller Source-of-Truth-Dateien gegen 4dce89807a5",
+      "result": "PASS",
+      "details": "Alle 22 fachlichen Quellen, Visuals und Tests unverändert gegenüber dem erfolgreichen GitHub-Website-Gate. Nur neuere Ticker-Daten aus main und deren Suchindex zusammengeführt; 1753 News-Tests, 10 IOOI-Tests, 6 Erklärungsebenen-Tests und Such-Gates anschließend erneut bestanden."
     }
   ],
   "audit": {
