@@ -1558,6 +1558,10 @@ export async function runWirkungsticker(options = {}) {
   newsroom.decisions ||= [];
   for (const candidate of currentClusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: cloudReceipt ? "cloud_selection_not_admitted" : "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
+  if (cloudDecisions) for (const candidate of clusters.filter(row => !cloudDecisions.has(row.story_id))) {
+    byId.set(candidate.story_id, pendingRecord(candidate, 'CLOUD_AFTER_EDITORIAL_CUTOFF', now));
+    report.quality_holds.push({ story_id: candidate.story_id, reason: 'CLOUD_AFTER_EDITORIAL_CUTOFF' });
+  }
   for (const candidate of lifoExpired) {
     const base = candidate.existing_story || pendingRecord(candidate, "LIFO_HORIZON_EXCEEDED", now);
     byId.set(candidate.story_id, expiredRecord(base, now));
@@ -1573,6 +1577,11 @@ export async function runWirkungsticker(options = {}) {
       const decision = cloudDecisions.get(candidate.story_id);
       // Semantic holds stay in the existing story store. A replay or a
       // redirected update must not close a previously deferred selected row.
+      if (!decision) {
+        byId.set(candidate.story_id, pendingRecord(candidate, 'CLOUD_AFTER_EDITORIAL_CUTOFF', now));
+        report.quality_holds.push({ story_id: candidate.story_id, reason: 'CLOUD_AFTER_EDITORIAL_CUTOFF' });
+        continue;
+      }
       if (['new', 'update'].includes(decision.decision) || cloudReceipt.replay) continue;
       if (decision.decision === 'defer') {
         byId.set(candidate.story_id, pendingRecord(candidate, 'CLOUD_SELECTION_DEFERRED', now));

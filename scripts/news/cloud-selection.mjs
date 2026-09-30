@@ -76,7 +76,10 @@ export function validateSelectionResult(snapshot, result, { candidates, stories,
     || hash([...(result.reviewed_candidate_ids || [])].sort()) !== hash(snapshot.candidates.map(row => row.candidate_id).sort()))
     fail('CLOUD_RESULT_INCOMPLETE');
   if (hash(comparisonEvents(stories)) !== snapshot.comparison_hash) fail('CLOUD_COMPARISON_STALE');
-  const current = makeSelectionSnapshot({ candidates, stories, runId: snapshot.run_id, now: snapshot.created_at, coverage: snapshot.coverage });
+  // Freeze the reviewed pool, not the collector: later arrivals remain unreviewed.
+  const reviewedIds = new Set(snapshot.candidates.map(row => row.candidate_id));
+  const current = makeSelectionSnapshot({ candidates: candidates.filter(row => reviewedIds.has(row.story_id)),
+    stories, runId: snapshot.run_id, now: snapshot.created_at, coverage: snapshot.coverage });
   if (current.input_hash !== snapshot.input_hash) fail('CLOUD_CANDIDATES_STALE');
   const sourceRows = new Map(snapshot.candidates.map(row => [row.candidate_id, row]));
   const actual = new Map(candidates.map(row => [row.story_id, row]));
@@ -147,12 +150,13 @@ export function selectionReceiptKey(snapshot, result) {
   return hash({ input_hash: snapshot.input_hash, result });
 }
 export function importSelection(snapshot, result, context) {
-  const selected = validateSelectionResult(snapshot, result, context);
+  assertSnapshot(snapshot);
   const key = selectionReceiptKey(snapshot, result);
   if (context.state.cloud_selection_receipts?.[snapshot.input_hash]) {
     if (context.state.cloud_selection_receipts[snapshot.input_hash].key !== key) fail('CLOUD_RESULT_CONFLICT');
     return { selected: [], key, replay: true };
   }
+  const selected = validateSelectionResult(snapshot, result, context);
   return { selected, key, replay: false };
 }
 export function acknowledgeSelection(state, snapshot, receipt, now) {

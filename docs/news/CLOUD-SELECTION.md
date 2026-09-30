@@ -175,3 +175,64 @@ Die vorhandene Luna-Artikel-API bleibt kostenpflichtig und nutzt weiterhin
 ihre unveränderten Modell-, Budget-, Stunden- und Freigaberegeln.
 Keine Behauptung kostenloser Artikelproduktion. Der Fixture-/Dryrun ruft
 weder diese API noch einen weiteren LLM-, Embedding- oder Suchdienst auf.
+
+
+## Ergänzung zu PR #1009: verbindlicher Ausgabetakt
+
+Veröffentlichung: 06:00, 12:00, 18:00 Europe/Berlin.
+Anfänglicher Vorbereitungsbeginn: 05:00, 11:00, 17:00.
+Auslieferungsbereit spätestens: 05:50, 11:50, 17:50.
+Diese Vorläufe sind Planwerte, keine gemessenen Durchlaufzeiten.
+
+edition-plan.mjs berechnet Ausgaben-ID, Vorbereitung und Bereitschaftsfrist
+mit dem vorhandenen Berlin-Zeitrechner, einschließlich Sommer-/Winterzeit.
+editionTiming trennt Auftragseingang, tatsächlichen Bearbeitungsbeginn,
+Quellen-Redaktionsschluss, Fertigstellung und Veröffentlichung. Warteschlange
+und Verarbeitung sind getrennte Messwerte. Frühe Fertigstellung bedeutet
+ready_awaiting_release. Ein expliziter künftiger Slot darf durch
+lage-schreiben.mjs keine öffentliche Lage vor ihrem Ausgabezeitpunkt schreiben.
+
+Der neue Planer ist noch kein gehosteter Zeitplan und keine Sperre sämtlicher
+Artikel-Deployments. Der bestehende Artikelpfad veröffentlicht laufend.
+Vor Aktivierung muss dessen vorhandener Deploymentweg die fertige Ausgabe bis
+zum Veröffentlichungstermin halten. Diese Betriebsanbindung ist noch offen.
+
+Der Snapshot friert die geprüften Kandidaten ein. Zusätzliche Kandidaten bei
+späterem Readback verändern seinen Hash nicht; geänderte geprüfte Kandidaten
+und geänderter veröffentlichter Vergleichsbestand werden weiter abgewiesen.
+Spätere Eingänge bleiben mit CLOUD_AFTER_EDITORIAL_CUTOFF im vorhandenen
+Story-Speicher wartend und gelten nicht als geprüft. Identische bereits
+quittierte Rückgaben sind auch nach Bestandsfortschreibung wirkungslose Replays;
+abweichende Rückgaben zum selben Snapshot bleiben Konflikte.
+
+## Bedingte Betriebsfreigabe und noch fehlende Nachweise
+
+Die Nutzerfreigabe zur Aktivierung liegt vor, sobald alle Voraussetzungen
+erfüllt sind. Für dieselbe Aktivierung ist keine erneute Bestätigung nötig.
+Der bisherige Betrieb bleibt bis dahin erhalten.
+
+Neu autorisiert ist ein fristgebundener Rückfall auf den bestehenden
+Nachrichtenpfad innerhalb unveränderter Budgets und Qualitätsgates. Die
+vorherige Ablehnung jeder bezahlten Rückfallverarbeitung ist damit überholt.
+Der bisherige Runner-Hardstop ist noch nicht durch einen nachgewiesenen
+Frist-/Rückfallbetrieb ersetzt; Produktion deshalb nicht aktivieren.
+
+Ausstehend: mindestens drei echte repräsentative Luna-Auswahlläufe mit
+redaktionellen Referenzen, tatsächlichem Modell, Laufzeit und verfügbarem
+Verbrauch; authentifizierter dauerhafter GitHub-/OCI-Rücktransport bei
+weiterlaufender Sammlung; gemessene komplette Kette mit Reserve; getesteter
+fristgebundener Rückfall; regulärer gehosteter Lauf mit öffentlicher Ausgabe.
+
+Im verbundenen Aufgabenbestand sind historische pausierte Wirkungsticker-
+Aufgaben vorhanden. Deren zurückgegebene Konfiguration enthält keinen
+Modell-/Reasoning-/Geschwindigkeitsnachweis. Die verfügbaren Erstellungs- und
+Änderungsschnittstellen bieten dafür keine Felder. Dies beschreibt den
+zugänglichen Schnittstellenumfang, nicht eine generelle Unmöglichkeit anderer
+Codex-Oberflächen. Eine verifizierte Oberfläche für GPT-6 Luna / Hoch /
+Standard wurde bisher nicht gefunden; keine erfundenen Einrichtungsschritte
+und keine Modellwahl allein durch Prompttext.
+
+Kosten: Export, Vertragstests und Importprüfung rufen keine Artikel-API auf.
+Echte gehostete Auswahl benötigt das Codex-Kontingent des verifizierten
+Routine-Modells. Die bestehende Artikel-API bleibt kostenpflichtig, mit
+unverändertem Modell und Budget. Keine zusätzliche Auswahl-API.

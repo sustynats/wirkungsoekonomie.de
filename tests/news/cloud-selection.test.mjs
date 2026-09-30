@@ -169,3 +169,22 @@ test('real runner exports below-threshold candidates and checks a return for fre
   assert.equal(replay.cloud_selection.replay, true); assert.equal(replay.ai_calls, 0);
   fs.rmSync(directory, { recursive: true });
 });
+
+test('later collection arrivals are outside the frozen review, changed reviewed inputs still fail', () => {
+  const f = fixture();
+  f.candidates.push(candidate('late', 'Später Eingang', 'Diese Meldung ging nach dem Redaktionsschluss ein.'));
+  assert.equal(check(f).length, 3);
+  f.candidates[0].sources[0].summary += ' Neue Quelleninformation.';
+  assert.throws(() => check(f), /CLOUD_CANDIDATES_STALE/);
+});
+test('acknowledged identical return is a no-op after collection and publication advance', () => {
+  const f = fixture();
+  acknowledgeSelection(f.state, f.snapshot, importSelection(f.snapshot, f.result, f), now);
+  f.candidates = [];
+  f.stories[0].current_version = 2;
+  f.now = '2026-10-01T10:00:00.000Z';
+  assert.equal(importSelection(f.snapshot, f.result, f).replay, true);
+  assert.equal(importSelection(f.snapshot, f.result, f).selected.length, 0);
+  f.result.complete = false;
+  assert.throws(() => importSelection(f.snapshot, f.result, f), /CLOUD_RESULT_CONFLICT/);
+});
