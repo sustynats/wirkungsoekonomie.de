@@ -65,11 +65,12 @@ Verarbeitete Resultate erhalten einen State-Beleg; identische Wiederholung
 liefert keine Auswahl, widersprüchliche Wiederholung scheitert.
 Die vorhandenen bezahlten Eingabe-Fingerprints bleiben zusätzlicher Schutz.
 
-Wenn WOEK_NEWS_CLOUD_SELECTION_ENABLED=true gesetzt ist, fehlt ohne ein
-gültiges Resultat die Freigabe für den Lauf. Kein stiller bezahlter Fallback.
-Solange die Variable ungesetzt bleibt, arbeitet der bestehende Betrieb
-unverändert. Importfehler sind sichtbar und benötigen einen frischen Export
-oder Quellenaufbereitung. Keine ungeprüfte Verwendung alter Resultate.
+Bei WOEK_NEWS_CLOUD_SELECTION_ENABLED=true erhält nur eine gültige Auswahl
+Zugang zum Cloud-Pfad. Ohne gültige Rückgabe hält der Lauf vor seiner expliziten
+Ausgabenfrist an; danach ist der protokollierte bestehende Nachrichtenpfad
+zulässig (siehe Fristkonfiguration unten). Solange die Variable ungesetzt
+bleibt, arbeitet der bestehende Betrieb unverändert. Alte Resultate werden
+nicht ungeprüft wiederverwendet.
 
 ## Kostenfreier Test und Vergleich
 
@@ -148,7 +149,7 @@ Ein UTC-Cron allein bildet die Berliner Sommerzeit nicht ab.
    neuer Vercel-Dienst. Snapshot und Resultat sind Datenartefakte des bestehenden
    Laufs, keine Artikelqueue. Dieser Patch implementiert den Datei-Adapter,
    aber keinen nachgewiesenen gehosteten Codex-Scheduler oder OCI-Uploaddienst.
-7. Nach grünem echten Ende-zu-Ende-Lauf UND ausdrücklicher Nutzerbestätigung
+7. Nach grünem echten Ende-zu-Ende-Lauf unter der bereits erteilten bedingten Freigabe
    im bestehenden API-Lauf WOEK_NEWS_CLOUD_SNAPSHOT_FILE und
    WOEK_NEWS_CLOUD_RESULT_FILE auf exakt die überprüften Dateien setzen.
    Erst dann WOEK_NEWS_CLOUD_SELECTION_ENABLED=true setzen. Beide Dateien
@@ -164,8 +165,11 @@ Ein UTC-Cron allein bildet die Berliner Sommerzeit nicht ab.
 Aktivierung benötigt weiter einen tatsächlich funktionierenden dauerhaften
 Dateitransport und einen nachweisbar passend konfigurierten Scheduler.
 Der Adapter allein ist keine Automation. Ein strenger frischer
-Kandidaten-/Bestandsvergleich kann nach zwischenzeitlichen Sammeländerungen
-einen erneuten Snapshot nötig machen; dafür gibt es keinen bezahlten Fallback.
+Kandidaten-/Bestandsvergleich kann bei geänderten geprüften Quellen oder
+veröffentlichtem Vergleichsbestand einen erneuten Snapshot nötig machen.
+Bloß zusätzlich eingegangene Kandidaten bleiben für die nächste Auswahl
+erhalten. Nach Fristablauf gilt der ausdrücklich autorisierte bestehende
+Rückfallweg, ohne zusätzliche bezahlte Auswahl-API.
 
 ## Kontingent und Kosten
 
