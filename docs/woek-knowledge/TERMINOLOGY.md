@@ -34,7 +34,7 @@ Regel: Bei Konflikt gilt der Begriffsleitfaden v1.5; das Glossar nur, soweit lei
 
 ## Präzisierungen in v1.5: eigenständige Wirkungsarchitektur
 
-IOOI ist ab v1.5 eine externe, optionale Results-Chain-Methode. Die WÖk beginnt bereits bei Auslöser, Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus und verbindet Wirkungsermittlung mit Evidenz und Zurechnung, Bewertung, Schutz und Systemprüfung sowie Rückkopplung und Lernen.
+Web-Präzisierung vom 30.09.2026: IOOI strukturiert eine Ergebniskette innerhalb eines Wirkungspfads. Die Wirkungsökonomie baut um Wirkpfade eine vollständige Analyse-, Evidenz-, Bewertungs-, Schutz- und Steuerungsarchitektur. Auch IOOI beginnt mit Input vor Outcome und Impact; der Unterschied liegt nicht im früheren Start. Potenzial und Risiko sind ex-ante Aussagen, Evidenz und Zurechnung Prüfschichten, Bewertung eine gesonderte normative Einordnung. Transformationswirkung ist eine eigene evidenzpflichtige Systemfrage, keine Stufe nach Impact; Impact kann je nach externem Rahmen bereits systemische Veränderungen umfassen. Historische Publikationsfassungen bleiben unverändert.
 
 Nichtkompensation ist das Schutzprinzip; Reverse Merit Order ist eine Bewertungslogik, die dieses Prinzip operationalisieren kann. Neutral, ambivalent und offen beziehungsweise nicht ausreichend bewertbar sind getrennte Einordnungen.
 

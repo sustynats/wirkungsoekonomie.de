@@ -633,7 +633,7 @@
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -21149,7 +21149,7 @@
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -22053,7 +22053,7 @@
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -22779,13 +22779,8 @@
       "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
       "longDefinition": "IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es ordnet eingesetzte Ressourcen, erbrachte Leistungen, eingetretene Veränderungen und weiterreichende Wirkungen. Aktivität kann zwischen Input und Output als zusätzliche Prozessstufe dargestellt werden, gehört aber nicht zum Akronym.\n\nIOOI kann einen Abschnitt eines Wirkungspfads strukturieren. Die Methode beweist weder, dass ein Outcome oder Impact tatsächlich eingetreten ist, noch dass er kausal zurechenbar oder normativ positiv ist. Dafür braucht es passende Evidenz, eine transparente Zurechnung und einen offengelegten Referenzrahmen.",
       "synonyms": [
-        "IOOI",
         "I-O-O-I",
-        "Input Output Outcome Impact",
-        "Results Chain",
-        "Logic Model",
-        "Wirkungslogik",
-        "Wirkungskette"
+        "Input Output Outcome Impact"
       ],
       "relatedTerms": [
         "ausloeser",
@@ -22816,7 +22811,7 @@
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "status": "anschlussbegriff",
       "version": "1.5"
     },
@@ -34907,7 +34902,7 @@
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -35016,7 +35011,7 @@
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -46032,7 +46027,7 @@
       "term": "Social Credit",
       "slug": "social-credit",
       "shortDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.",
-      "longDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen - nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.",
+      "longDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.",
       "synonyms": [
         "Social Credit",
         "Sozialkredit",
@@ -51685,7 +51680,12 @@
         "datenqualitaet",
         "nichtkompensationsprinzip"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        {
+          "title": "IOOI, Wirkungspfad und Wirkungsökonomie",
+          "url": "/verstehen/iooi-und-wirkungsoekonomie/"
+        }
+      ],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
@@ -57651,7 +57651,7 @@
       "term": "Wirkungsarchitektur",
       "slug": "wirkungsarchitektur",
       "shortDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.",
-      "longDefinition": "Wirkungsarchitektur bezeichnet die Ordnung, durch die Wirkung sichtbar, messbar, bewertbar, überprüfbar, gesteuert und lernfähig gemacht wird. Sie umfasst Daten, Indikatoren, Scorecards, Produktpässe, Standards, Gesetze, Institutionen, Anreize, Audits, Rechtsschutz und Korrekturzyklen.",
+      "longDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.\n\nSie legt um reale oder modellierte Wirkpfade querliegende Ebenen für Hypothesen, Evidenz und Zurechnung, Bewertung und Schutz sowie System- und Transformationsprüfung. IOOI kann eine Ergebniskette innerhalb eines Pfads strukturieren, ist aber nicht die Architektur selbst. Rückkopplung und Governance machen Erkenntnisse entscheidungsrelevant und korrigierbar.",
       "synonyms": [
         "Wirkungsarchitektur",
         "Architektur der Wirkung",
@@ -57723,7 +57723,12 @@
         "iooi",
         "referenzrahmen"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        {
+          "title": "IOOI, Wirkungspfad und Wirkungsökonomie",
+          "url": "/verstehen/iooi-und-wirkungsoekonomie/"
+        }
+      ],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
@@ -58181,8 +58186,8 @@
       "id": "wirkungsbewertung",
       "term": "Wirkungsbewertung",
       "slug": "wirkungsbewertung",
-      "shortDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
-      "longDefinition": "Wirkungsbewertung ist in der Wirkungsökonomie die begründete Einordnung von Wirkungen entlang eines Referenzrahmens wie SDGs, Agenda 2030 und SDG+ als WÖk-Erweiterung. Sie beschreibt nicht nur, ob etwas gemessen wurde, sondern wie tatsächliche oder plausibel erwartbare Zustandsveränderungen bewertet, begrenzt, verglichen und für Entscheidungen nutzbar gemacht werden.",
+      "shortDefinition": "Transparente Einordnung einer eingetretenen oder ausdrücklich modellierten Zustandsveränderung am offengelegten Referenzrahmen.",
+      "longDefinition": "Wirkungsbewertung ordnet eine eingetretene oder ausdrücklich modellierte Zustandsveränderung am offengelegten Referenzrahmen ein. Sie ist vom Feststellen, Messen und Zurechnen einer Veränderung zu trennen. Ex ante heißt sie ausdrücklich modellierte Wirkungsbewertung.\n\nDie Einordnung begründet Richtung, Betroffene, Raum, Zeit, Verteilung, Unsicherheit und relevante Schutzgrenzen. Sie ist keine zeitliche Wirkungsstufe nach Impact. Wirkung ist neutral und relational; eine positive Bewertung folgt nicht allein aus einem Ziel- oder Indikatorbezug.",
       "synonyms": [
         "Wirkungsbewertung",
         "Impact Assessment",
@@ -60753,8 +60758,8 @@
       "id": "wirkungskette",
       "term": "Wirkungskette",
       "slug": "wirkungskette",
-      "shortDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
-      "longDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.\n\nIn der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "shortDefinition": "Eine Wirkungskette ist eine bewusst lineare Vereinfachung von Auslösern, Leistungen und Veränderungen.",
+      "longDefinition": "Eine Wirkungskette stellt ausgewählte Zusammenhänge linear dar. Sobald mehrere Ursachen, Bedingungen, Nebenfolgen oder Rückkopplungen wichtig werden, ist Wirkungspfad oder Wirkungsnetz die passendere Darstellung. IOOI ist eine mögliche Results-Chain-Form; nicht jede Wirkungskette ist IOOI.\n\nEine Kette ist weder ein Kausalbeweis noch die WÖk-Wirkungsarchitektur. Potenzial, Evidenzprüfung und Bewertung sind keine zusätzlichen realen Kettenglieder.",
       "synonyms": [
         "Wirkungskette",
         "Results Chain",
@@ -61194,7 +61199,7 @@
       "term": "Wirkungslenkung",
       "slug": "wirkungslenkung",
       "shortDefinition": "Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.",
-      "longDefinition": "Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder - nur mit Rechtsgrundlage - Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.",
+      "longDefinition": "Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.",
       "synonyms": [
         "Wirkungslenkung",
         "wirkungsorientierte Steuerung",
@@ -62402,8 +62407,8 @@
       "id": "wirkpfad",
       "term": "Wirkungspfad",
       "slug": "wirkpfad",
-      "shortDefinition": "Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert - einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.",
-      "longDefinition": "Wirkpfade machen sichtbar, über welche Schritte eine Intervention zu Veränderungen führen könnte: von einer Entscheidung oder Aktivität über Ressourcen, Leistungen und Verhaltens- oder Strukturveränderungen bis zu direkten, indirekten und längerfristigen Wirkungen. Ein belastbarer Wirkpfad hält zugleich fest, für wen diese Veränderungen gelten, unter welchen Bedingungen sie eintreten, welche anderen Ursachen mitwirken, wo Schäden oder Kosten anfallen können und wie Beobachtungen die Annahmen verändern. Gerade in komplexen sozialen, ökologischen und demokratischen Systemen verlaufen Wirkpfade nicht nur vorwärts, sondern über Verzögerungen, Rückkopplungen, Wechselwirkungen und mögliche Externalisierung.",
+      "shortDefinition": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
+      "longDefinition": "Ein Wirkungspfad beschreibt mögliche oder beobachtete Veränderungswege: Ausgangslage, Auslöser, Mechanismen und Bedingungen, Handlungen, Leistungen, Zustandsveränderungen, Folge- und Systemwirkungen sowie Rückkopplungen. Betroffene, Raum, Zeit, Verteilung und Systemgrenze werden sichtbar gemacht. Für komplexe Verflechtungen kann ein Wirkungsnetz geeigneter sein.\n\nWirkungspotenzial und Wirkungsrisiko beschreiben, was auf dem Pfad möglich ist. Sie sind keine Stationen des Pfads. Evidenz und Zurechnung prüfen die Verbindungen und Beobachtungen; Bewertung ordnet Zustandsveränderungen am offengelegten Referenzrahmen ein. Beides ist vom realen oder modellierten Geschehen zu trennen.",
       "synonyms": [
         "Wirkungspfad",
         "Wirkpfad",
@@ -64041,7 +64046,12 @@
         "systemisches Wirkungsrisiko"
       ],
       "relatedTerms": [
+        "ausloeser",
         "wirkungspotenzial",
+        "wirkmechanismus",
+        "iooi",
+        "nebenwirkung",
+        "wirkung",
         "folgewirkung",
         "resonanzrisiko",
         "klimarisiko",
@@ -64076,7 +64086,6 @@
         "stranded-assets",
         "verfuegbarkeitsheuristik",
         "verlustaversion",
-        "wirkung",
         "wirkungsblindheit",
         "wirkungskompetenz",
         "wirkungsradar",
@@ -64084,11 +64093,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
-        "katechon",
-        "ausloeser",
-        "wirkmechanismus",
-        "iooi",
-        "nebenwirkung"
+        "katechon"
       ],
       "relatedMethods": [
         [
@@ -64126,9 +64131,9 @@
           "/einwaende/#zielkonflikte"
         ]
       ],
-      "category": "Risiko, Wirkung & Unternehmenssteuerung",
-      "status": "führender-begriff",
-      "version": "1.1"
+      "category": "Grundbegriff",
+      "status": "approved",
+      "version": "1.0"
     },
     {
       "id": "wirkungsrisiko-matrix",
@@ -64265,21 +64270,14 @@
         "positive-netto-wirkung",
         "wirkpfad",
         "wirkung",
-        "nichtkompensationsprinzip"
+        "nichtkompensationsprinzip",
+        "iooi"
       ],
       "relatedMethods": [
-        [
-          "Wirkungsumsatzsteuer",
-          "/werkzeuge/wirkungsumsatzsteuer/"
-        ],
-        [
-          "Wirkungshaushalt",
-          "/werkzeuge/wirkungshaushalt/"
-        ],
-        [
-          "Öffentliche Beschaffung",
-          "/werkzeuge/oeffentliche-beschaffung/"
-        ]
+        {
+          "title": "IOOI, Wirkungspfad und Wirkungsökonomie",
+          "url": "/verstehen/iooi-und-wirkungsoekonomie/"
+        }
       ],
       "relatedImpactFields": [
         {
@@ -66571,8 +66569,8 @@
       "id": "wirkungsrad",
       "term": "WÖk-Wirkungsrad",
       "slug": "wirkungsrad",
-      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.",
-      "longDefinition": "Das Wirkungsrad zeigt, dass reale Systeme nicht am Ende einer linearen Wirkungskette stehen bleiben. Auslöser, Wirkpotenziale, Interventionen und der IOOI-Wirkpfad erzeugen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen. Diese werden an einem Referenzrahmen bewertet, unter Schutzregeln zur Netto-Wirkung zusammengeführt und in die nächste Entscheidung zurückgeführt.\n\nDer neue Systemzustand wird wiederum zur Ausgangslage für die nächste Analyse. Das Modell ist ein Orientierungsbild, keine additive Rechenformel oder automatisierte Entscheidungsmaschine.",
+      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell: Erkenntnisse über Wirkpfade werden geprüft, bewertet und in neue Entscheidungen zurückgeführt.",
+      "longDefinition": "Das Wirkungsrad veranschaulicht Rückkopplung und Lernen. Es ist keine verlängerte Ergebniskette. Reale oder modellierte Wirkpfade, Evidenzprüfung und normative Bewertung bleiben getrennte Ebenen. IOOI kann einen Abschnitt eines Pfads als Results Chain ordnen.\n\nGeprüfte Erkenntnisse können neue Entscheidungen begründen, die Bedingungen künftiger Pfade verändern. Governance, Unsicherheit, Nichtkompensation und Reverse Merit Order begrenzen die Steuerung. Das Modell ist keine automatische Entscheidungsmaschine.",
       "synonyms": [
         "WÖk-Wirkungsrad",
         "Wirkungsrad",
