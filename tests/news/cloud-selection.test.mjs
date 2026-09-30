@@ -188,3 +188,34 @@ test('acknowledged identical return is a no-op after collection and publication 
   f.result.complete = false;
   assert.throws(() => importSelection(f.snapshot, f.result, f), /CLOUD_RESULT_CONFLICT/);
 });
+
+test('runner deadline fallback is visible and uses the old lane without a selection API', async () => {
+  const keys = ['WOEK_NEWS_CLOUD_SELECTION_ENABLED', 'WOEK_NEWS_EDITION_DATE', 'WOEK_NEWS_EDITION_SLOT',
+    'WOEK_NEWS_CLOUD_DEADLINE_AT', 'WOEK_NEWS_AI_ENABLED'];
+  const saved = Object.fromEntries(keys.map(key => [key, process.env[key]]));
+  Object.assign(process.env, { WOEK_NEWS_CLOUD_SELECTION_ENABLED: 'true', WOEK_NEWS_EDITION_DATE: '2026-09-30',
+    WOEK_NEWS_EDITION_SLOT: 'mittagslage', WOEK_NEWS_CLOUD_DEADLINE_AT: '2026-09-30T09:20:00Z', WOEK_NEWS_AI_ENABLED: 'false' });
+  try {
+    const registered = { source_id: 'test', publisher_id: 'test', name: 'Test', url: 'https://example.org/',
+      feed_url: 'https://example.org/rss', source_type: 'official_rss', primary_source: true, enabled: true,
+      access: { status: 'public', article: 'bounded_public_text', cost_usd: 0 } };
+    const input = { dryRun: true, now: '2026-09-30T09:20:00Z', registry: { sources: [registered], policy: {} },
+      state: { source_status: {}, seen_items: {}, pending_story_ids: [], relevance_filter_version: EVENT_RELEVANCE_VERSION },
+      storyStore: { stories: [] }, usage: { runs: [] },
+      newsroom: { source_items: {}, events: {}, event_sources: [], decisions: [], discovery_candidates: [] },
+      budgetFx: { rate_date: '2026-09-30', rate_usd_per_eur: 1.16 },
+      fetchFeedImpl: async () => ({ body: '<rss><channel></channel></rss>', final_url: registered.feed_url }),
+      callAiImpl: async () => { throw Error('PAID_CALL_FORBIDDEN'); } };
+    await assert.rejects(runWirkungsticker({ ...input, now: '2026-09-30T09:19:59Z' }), /CLOUD_SELECTION_WAITING_UNTIL_DEADLINE/);
+    const report = await runWirkungsticker(input);
+    assert.equal(report.cloud_fallback.route, 'existing_news_path');
+    assert.equal(report.cloud_fallback.edition_id, '2026-09-30-mittagslage');
+    assert.equal(report.ai_calls, 0);
+    assert.equal(report.published_stories, 0);
+    const invalid = await runWirkungsticker({ ...input, cloudSelection: { snapshot: {}, result: {} } });
+    assert.equal(invalid.cloud_fallback.reason, 'CLOUD_SNAPSHOT_HASH_INVALID');
+    assert.equal(invalid.ai_calls, 0);
+  } finally {
+    for (const key of keys) if (saved[key] === undefined) delete process.env[key]; else process.env[key] = saved[key];
+  }
+});

@@ -214,8 +214,15 @@ Der bisherige Betrieb bleibt bis dahin erhalten.
 Neu autorisiert ist ein fristgebundener Rückfall auf den bestehenden
 Nachrichtenpfad innerhalb unveränderter Budgets und Qualitätsgates. Die
 vorherige Ablehnung jeder bezahlten Rückfallverarbeitung ist damit überholt.
-Der bisherige Runner-Hardstop ist noch nicht durch einen nachgewiesenen
-Frist-/Rückfallbetrieb ersetzt; Produktion deshalb nicht aktivieren.
+cloud-runtime.mjs und der Runner erlauben diesen Pfad erst nach einer
+expliziten ausgabenbezogenen Cloud-Frist: WOEK_NEWS_EDITION_DATE,
+WOEK_NEWS_EDITION_SLOT, WOEK_NEWS_CLOUD_DEADLINE_AT. Die Frist muss
+zwischen Vorbereitungsbeginn und Bereitschaftsfrist liegen. Ohne gültige
+Konfiguration bleibt der Lauf geschlossen. Vor der Frist wird sichtbar
+abgebrochen, nach ihr wird genau der bestehende Pfad mit seinen Kosten-,
+Fingerprint- und Qualitätsgates verwendet; kein zweiter Modellaufruf für
+Auswahl. Fehlende/unlesbare Rückgaben folgen derselben Regel.
+Diese Anbindung ersetzt noch keinen realen Ausfallnachweis auf OCI.
 
 Ausstehend: mindestens drei echte repräsentative Luna-Auswahlläufe mit
 redaktionellen Referenzen, tatsächlichem Modell, Laufzeit und verfügbarem

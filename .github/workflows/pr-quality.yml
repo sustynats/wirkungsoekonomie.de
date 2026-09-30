@@ -29,6 +29,7 @@ jobs:
       - name: Whitespace and JavaScript syntax
         run: |
           git diff --check HEAD^ HEAD
+          node --check scripts/news/cloud-runtime.mjs
           node --check scripts/news/edition-plan.mjs
           node --check scripts/news/lage-schreiben.mjs
           node --check scripts/news/cloud-selection.mjs

@@ -1,3 +1,4 @@
+import { cloudDeadlinePolicy } from './cloud-runtime.mjs';
 import { readRepositoryJson, writeRepositoryJson } from './newsroom-store.mjs';
 import { readNewsroom, writeNewsroom, repositoryJson } from './newsroom-store.mjs';
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
@@ -1059,8 +1060,7 @@ export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, 
 }
 
 export async function runWirkungsticker(options = {}) {
-  if (process.env.WOEK_NEWS_CLOUD_SELECTION_ENABLED === 'true' && !options.cloudSelection && !options.selectionOnly)
-    throw new Error('CLOUD_SELECTION_REQUIRED_NO_PAID_FALLBACK');
+  options = { ...options };
   if (options.selectionOnly && !options.dryRun) throw new Error('CLOUD_EXPORT_REQUIRES_DRY_RUN');
   if (options.cloudSelection && !options.dryRun && process.env.WOEK_NEWS_CLOUD_SELECTION_ENABLED !== 'true')
     throw new Error('CLOUD_SELECTION_PRODUCTION_DISABLED');
@@ -1076,6 +1076,19 @@ export async function runWirkungsticker(options = {}) {
   const nowDate = options.now ? new Date(options.now) : process.env.WOEK_NEWS_NOW ? new Date(process.env.WOEK_NEWS_NOW) : new Date();
   if (!Number.isFinite(nowDate.getTime())) throw new Error("INVALID_RUN_TIME");
   const now = nowDate.toISOString();
+  let cloudFallback = null;
+  const chooseCloudFailure = reason => {
+    if (process.env.WOEK_NEWS_CLOUD_SELECTION_ENABLED !== 'true') throw Error(reason);
+    const policy = cloudDeadlinePolicy({ isoDate: process.env.WOEK_NEWS_EDITION_DATE,
+      slot: process.env.WOEK_NEWS_EDITION_SLOT, deadlineAt: process.env.WOEK_NEWS_CLOUD_DEADLINE_AT,
+      leadMinutes: Number(process.env.WOEK_NEWS_PREPARATION_LEAD_MINUTES || 60), now, reason });
+    console.error(JSON.stringify({ cloud_selection_failure: policy }));
+    if (policy.route === 'hold') throw Error('CLOUD_SELECTION_WAITING_UNTIL_DEADLINE');
+    cloudFallback = policy;
+    options.cloudSelection = null;
+  };
+  if (!options.selectionOnly && process.env.WOEK_NEWS_CLOUD_SELECTION_ENABLED === 'true' && !options.cloudSelection)
+    chooseCloudFailure(options.cloudSelectionError || 'CLOUD_SELECTION_MISSING');
   const runSchedule = scheduledSlot(nowDate);
   const isAutomatedRun = process.env.GITHUB_EVENT_NAME === "schedule"
     || (process.env.GITHUB_EVENT_NAME === "push" && process.env.GITHUB_REF === "refs/heads/codex/wirkungsticker-clock");
@@ -1097,6 +1110,7 @@ export async function runWirkungsticker(options = {}) {
   const pendingStoryIdsBefore = new Set(state.pending_story_ids || []);
   const sourceFunnel = createSourceFunnel(enabledSources, dueSources);
   const report = {
+    ...(cloudFallback ? { cloud_fallback: cloudFallback } : {}),
     schema_version: "1.2",
     processing_version: AI_PROCESSING_VERSION,
     processing_mode: mode,
@@ -1466,8 +1480,15 @@ export async function runWirkungsticker(options = {}) {
   }
   let cloudReceipt = null;
   if (options.cloudSelection) {
-    cloudReceipt = importSelection(options.cloudSelection.snapshot, options.cloudSelection.result,
-      { candidates: clusters, stories: storyStore.stories, state, now });
+    try {
+      cloudReceipt = importSelection(options.cloudSelection.snapshot, options.cloudSelection.result,
+        { candidates: clusters, stories: storyStore.stories, state, now });
+    } catch (error) {
+      chooseCloudFailure(error.message);
+      report.cloud_fallback = cloudFallback;
+    }
+  }
+  if (cloudReceipt) {
     // Keep the established update/version path and all downstream evidence,
     // cost, readiness and publication gates. Never merge published records.
     cloudReceipt.selected = cloudReceipt.selected.map(candidate => {

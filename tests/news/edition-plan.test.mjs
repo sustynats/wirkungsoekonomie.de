@@ -33,3 +33,14 @@ test('queue, processing, source cutoff and publication are independent measured 
   assert.equal(editionTiming(p, { ...facts, publishedAt: p.publication_at }).status, 'published');
   assert.equal(editionTiming(p, { ...facts, readyAt: '2026-09-30T03:51:00Z' }).ready_in_time, false);
 });
+
+test('Cloud failure holds before deadline and returns only the existing news path afterwards', async () => {
+  const { cloudDeadlinePolicy } = await import('../../scripts/news/cloud-runtime.mjs');
+  const context = { isoDate: '2026-09-30', slot: 'morgenlage', deadlineAt: '2026-09-30T03:20:00Z', reason: 'CLOUD_RESULT_EXPIRED' };
+  assert.equal(cloudDeadlinePolicy({ ...context, now: '2026-09-30T03:19:59Z' }).route, 'hold');
+  const fallback = cloudDeadlinePolicy({ ...context, now: context.deadlineAt });
+  assert.equal(fallback.route, 'existing_news_path');
+  assert.equal(fallback.deadline_missed, true);
+  assert.equal(fallback.reason, 'CLOUD_RESULT_EXPIRED');
+  assert.throws(() => cloudDeadlinePolicy({ ...context, deadlineAt: '2026-09-30T03:50:00Z', now: context.deadlineAt }), /CLOUD_DEADLINE_CONFIG_INVALID/);
+});
