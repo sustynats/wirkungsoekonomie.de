@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T11:46:46.689Z",
+  "generatedAt": "2026-09-30T22:22:24.061Z",
   "links": {
     "bundeshaushaltsordnung-paragraf-7": {
       "label": "§ 7 Bundeshaushaltsordnung (BHO)",
@@ -561,7 +561,7 @@
       "url": "/begriffe/aktivitaet/",
       "hoverDefinition": "Aktivität ist das konkrete Handeln zwischen Input und Output, etwa ein Projekt, eine Dienstleistung, ein Gesetz oder eine Investition.",
       "shortDefinition": "Aktivität bezeichnet das konkrete Handeln, durch das Inputs mobilisiert werden, um Leistungen oder Veränderungen zu ermöglichen.",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "synonyms": [
         "Aktivität",
         "Handlung",
@@ -19653,7 +19653,7 @@
       "url": "/begriffe/impact/",
       "hoverDefinition": "Impact bezeichnet meist breitere oder längerfristige Wirkung; er ist nicht automatisch positiv und kein Synonym für bloße Reichweite.",
       "shortDefinition": "Impact ist ein etablierter, je nach Fachfeld unterschiedlich verwendeter Begriff für höherstufige, längerfristige oder breitere Wirkungen.",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "synonyms": [
         "Impact",
         "höherstufige Wirkung",
@@ -20501,7 +20501,7 @@
       "url": "/begriffe/input/",
       "hoverDefinition": "Input sind eingesetzte Ressourcen wie Geld, Zeit, Personal, Material, Energie, Daten oder Infrastruktur; sie sind noch keine Wirkung.",
       "shortDefinition": "Input bezeichnet die Ressourcen, die für eine Aktivität, ein Projekt, ein Produkt, eine Organisation oder eine Intervention eingesetzt werden.",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "synonyms": [
         "Input",
         "Ressourceneinsatz",
@@ -21196,15 +21196,10 @@
       "url": "/begriffe/iooi/",
       "hoverDefinition": "IOOI strukturiert Input, Output, Outcome und Impact. Es ist weder das Grundmodell noch ein notwendiger Bestandteil der Wirkungsökonomie.",
       "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "synonyms": [
-        "IOOI",
         "I-O-O-I",
-        "Input Output Outcome Impact",
-        "Results Chain",
-        "Logic Model",
-        "Wirkungslogik",
-        "Wirkungskette"
+        "Input Output Outcome Impact"
       ],
       "relatedTerms": [
         "ausloeser",
@@ -32440,7 +32435,7 @@
       "url": "/begriffe/outcome/",
       "hoverDefinition": "Outcome ist eine eingetretene Veränderung und damit Wirkung, nicht nur eine erbrachte Leistung oder ein erreichter Output.",
       "shortDefinition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "synonyms": [
         "Outcome",
         "eingetretene Veränderung",
@@ -32543,7 +32538,7 @@
       "url": "/begriffe/output/",
       "hoverDefinition": "Output ist eine erbrachte Leistung, nicht automatisch Wirkung: Teilnahmen, Produkte oder Beratungen belegen noch keine Zustandsveränderung.",
       "shortDefinition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "synonyms": [
         "Output",
         "Leistungsergebnis",
@@ -48015,7 +48010,12 @@
         "datenqualitaet",
         "nichtkompensationsprinzip"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        {
+          "title": "IOOI, Wirkungspfad und Wirkungsökonomie",
+          "url": "/verstehen/iooi-und-wirkungsoekonomie/"
+        }
+      ],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
@@ -53643,7 +53643,12 @@
         "iooi",
         "referenzrahmen"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        {
+          "title": "IOOI, Wirkungspfad und Wirkungsökonomie",
+          "url": "/verstehen/iooi-und-wirkungsoekonomie/"
+        }
+      ],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
@@ -54082,8 +54087,8 @@
       "label": "Wirkungsbewertung",
       "slug": "wirkungsbewertung",
       "url": "/begriffe/wirkungsbewertung/",
-      "hoverDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
-      "shortDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
+      "hoverDefinition": "Transparente Einordnung einer eingetretenen oder ausdrücklich modellierten Zustandsveränderung am offengelegten Referenzrahmen.",
+      "shortDefinition": "Transparente Einordnung einer eingetretenen oder ausdrücklich modellierten Zustandsveränderung am offengelegten Referenzrahmen.",
       "category": "Bewertungs- und Steuerungslogik",
       "synonyms": [
         "Wirkungsbewertung",
@@ -56506,8 +56511,8 @@
       "label": "Wirkungskette",
       "slug": "wirkungskette",
       "url": "/begriffe/wirkungskette/",
-      "hoverDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
-      "shortDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
+      "hoverDefinition": "Eine Wirkungskette ist eine bewusst lineare Vereinfachung von Auslösern, Leistungen und Veränderungen.",
+      "shortDefinition": "Eine Wirkungskette ist eine bewusst lineare Vereinfachung von Auslösern, Leistungen und Veränderungen.",
       "category": "WÖk-Präzisierungsbegriff / Methodenbegriff",
       "synonyms": [
         "Wirkungskette",
@@ -58029,8 +58034,8 @@
       "label": "Wirkungspfad",
       "slug": "wirkpfad",
       "url": "/begriffe/wirkpfad/",
-      "hoverDefinition": "Ein Wirkpfad beschreibt prüfbar, wie ein Auslöser über Mechanismen und Bedingungen zu möglichen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen führt.",
-      "shortDefinition": "Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert - einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.",
+      "hoverDefinition": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
+      "shortDefinition": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
       "category": "WÖMS Methodensystem",
       "synonyms": [
         "Wirkungspfad",
@@ -59547,7 +59552,7 @@
       "url": "/begriffe/wirkungsrisiko/",
       "hoverDefinition": "Wirkungsrisiko ist die Möglichkeit, dass eine Handlung, ein Produkt, ein Geschäftsmodell, ein Kapitalfluss oder eine Entscheidung negative Zustandsveränderungen für Mensch, Planet oder Demokratie erzeugt.",
       "shortDefinition": "Wirkungsrisiko ist die Möglichkeit, dass eine Handlung, ein Produkt, ein Geschäftsmodell, ein Kapitalfluss oder eine Entscheidung negative Zustandsveränderungen für Mensch, Planet oder Demokratie erzeugt.",
-      "category": "Risiko, Wirkung & Unternehmenssteuerung",
+      "category": "Grundbegriff",
       "synonyms": [
         "Wirkungsrisiko",
         "Risiko negativer Wirkung",
@@ -59560,7 +59565,12 @@
         "systemisches Wirkungsrisiko"
       ],
       "relatedTerms": [
+        "ausloeser",
         "wirkungspotenzial",
+        "wirkmechanismus",
+        "iooi",
+        "nebenwirkung",
+        "wirkung",
         "folgewirkung",
         "resonanzrisiko",
         "klimarisiko",
@@ -59595,7 +59605,6 @@
         "stranded-assets",
         "verfuegbarkeitsheuristik",
         "verlustaversion",
-        "wirkung",
         "wirkungsblindheit",
         "wirkungskompetenz",
         "wirkungsradar",
@@ -59603,11 +59612,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
-        "katechon",
-        "ausloeser",
-        "wirkmechanismus",
-        "iooi",
-        "nebenwirkung"
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -59746,9 +59751,15 @@
         "positive-netto-wirkung",
         "wirkpfad",
         "wirkung",
-        "nichtkompensationsprinzip"
+        "nichtkompensationsprinzip",
+        "iooi"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        {
+          "title": "IOOI, Wirkungspfad und Wirkungsökonomie",
+          "url": "/verstehen/iooi-und-wirkungsoekonomie/"
+        }
+      ],
       "relatedImpactFields": [
         {
           "label": "Produkte & Konsum",
@@ -61843,8 +61854,8 @@
       "label": "WÖk-Wirkungsrad",
       "slug": "wirkungsrad",
       "url": "/begriffe/wirkungsrad/",
-      "hoverDefinition": "Das WÖk-Wirkungsrad erweitert lineare Wirkungsketten um Bewertung, Schutzregeln, Rückkopplung und Lernen.",
-      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.",
+      "hoverDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell: Erkenntnisse über Wirkpfade werden geprüft, bewertet und in neue Entscheidungen zurückgeführt.",
+      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell: Erkenntnisse über Wirkpfade werden geprüft, bewertet und in neue Entscheidungen zurückgeführt.",
       "category": "Architekturbegriff",
       "synonyms": [
         "WÖk-Wirkungsrad",

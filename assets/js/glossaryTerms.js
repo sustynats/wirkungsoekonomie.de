@@ -16339,13 +16339,8 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "iooi",
     "label": "IOOI",
     "aliases": [
-      "IOOI",
       "I-O-O-I",
-      "Input Output Outcome Impact",
-      "Results Chain",
-      "Logic Model",
-      "Wirkungslogik",
-      "Wirkungskette"
+      "Input Output Outcome Impact"
     ],
     "definition": "IOOI strukturiert Input, Output, Outcome und Impact. Es ist weder das Grundmodell noch ein notwendiger Bestandteil der Wirkungsökonomie.",
     "url": "/begriffe/iooi/",
@@ -41387,7 +41382,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungs-Scoring",
       "normative Wirkungseinordnung"
     ],
-    "definition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
+    "definition": "Transparente Einordnung einer eingetretenen oder ausdrücklich modellierten Zustandsveränderung am offengelegten Referenzrahmen.",
     "url": "/begriffe/wirkungsbewertung/",
     "priority": 1920,
     "autoLinkAllowed": true,
@@ -42754,7 +42749,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Impact Chain",
       "IOOI-Kette"
     ],
-    "definition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
+    "definition": "Eine Wirkungskette ist eine bewusst lineare Vereinfachung von Auslösern, Leistungen und Veränderungen.",
     "url": "/begriffe/wirkungskette/",
     "priority": 1979,
     "autoLinkAllowed": true,
@@ -43709,7 +43704,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungskette mit Annahmen",
       "kausaler Wirkungspfad"
     ],
-    "definition": "Ein Wirkpfad beschreibt prüfbar, wie ein Auslöser über Mechanismen und Bedingungen zu möglichen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen führt.",
+    "definition": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
     "url": "/begriffe/wirkpfad/",
     "priority": 2021,
     "autoLinkAllowed": true,
@@ -45842,7 +45837,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungsrad der Wirkungsökonomie",
       "lernendes Wirkungsrad"
     ],
-    "definition": "Das WÖk-Wirkungsrad erweitert lineare Wirkungsketten um Bewertung, Schutzregeln, Rückkopplung und Lernen.",
+    "definition": "Das WÖk-Wirkungsrad ist ein Lernmodell: Erkenntnisse über Wirkpfade werden geprüft, bewertet und in neue Entscheidungen zurückgeführt.",
     "url": "/begriffe/wirkungsrad/",
     "priority": 2114,
     "autoLinkAllowed": true,
