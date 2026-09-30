@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { impactArchitectureVisual } from "../lib/impact-architecture-visual.mjs";
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "so-wirkt-wirkungsoekonomie");
@@ -78,13 +79,13 @@ const html = `<!doctype html>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>So wirkt die Wirkungsökonomie</title>
-    <meta name="description" content="Sechs einfache Fragen: mögliche Folgen, tatsächliche Veränderungen, Evidenz, Bewertung, Schutzgrenzen und Lernen.">
+    <meta name="description" content="Sechs Prüffragen, keine Wirkungsstationen: Wirkpfad und optionale IOOI-Linse, Evidenz, Bewertung, Schutzgrenzen, Systemprüfung und Lernen.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="So wirkt die Wirkungsökonomie">
-    <meta property="og:description" content="Sechs einfache Fragen: mögliche Folgen, tatsächliche Veränderungen, Evidenz, Bewertung, Schutzgrenzen und Lernen.">
+    <meta property="og:description" content="Sechs Prüffragen, keine Wirkungsstationen: Wirkpfad und optionale IOOI-Linse, Evidenz, Bewertung, Schutzgrenzen, Systemprüfung und Lernen.">
     <meta property="og:url" content="https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"So wirkt die Wirkungsökonomie","url":"https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/","description":"Sechs einfache Fragen: mögliche Folgen, tatsächliche Veränderungen, Evidenz, Bewertung, Schutzgrenzen und Lernen.","inLanguage":"de"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"So wirkt die Wirkungsökonomie","url":"https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/","description":"Sechs Prüffragen, keine Wirkungsstationen: Wirkpfad und optionale IOOI-Linse, Evidenz, Bewertung, Schutzgrenzen, Systemprüfung und Lernen.","inLanguage":"de"}</script>
     <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
@@ -120,22 +121,24 @@ ${renderHeader(BASE)}
 
       <section class="section section-soft" id="wirkpfad" aria-labelledby="wirkpfad-title">
         <div class="section-header">
-          <p class="hero-kicker">Vor der Wirkung beginnen</p>
+          <p class="hero-kicker">Pfad und Prüfschichten unterscheiden</p>
           <h2 id="wirkpfad-title">Wirkungspotenzial ist nicht Wirkung.</h2>
-          <p>Die Wirkungsökonomie beginnt nicht erst dort, wo Wirkung eingetreten ist, sondern beim Auslöser, bei plausiblen Wirkmechanismen sowie bei Wirkungspotenzialen und Wirkungsrisiken. Ein plausibler Wirkmechanismus ist kein Wirkungsnachweis. Erst beobachtete, methodisch nachvollziehbare Zustandsveränderungen sind Wirkung.</p>
+          <p>Ein plausibler Wirkpfad ist kein Wirkungsnachweis. Potenzial und Risiko beschreiben mögliche Pfade, keine Stationen. Erst tatsächliche Zustandsveränderungen sind Wirkung. Auch IOOI beginnt mit dem Input vor Outcome und Impact; ein früherer Start unterscheidet die Ansätze nicht.</p>
         </div>
         <div class="card-grid three">
-          <article class="card"><p class="card-kicker">Vorwirkung</p><h3 class="card-title">Auslöser, Wirkstoff, Potenzial und Risiko</h3><p class="card-text">Ein Produkt, eine Regel, ein Preis, ein Kapitalfluss oder ein Narrativ kann etwas auslösen. Der Wirkstoff bleibt dabei eine didaktische Analogie, nicht eine naturwissenschaftliche Behauptung.</p></article>
-          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">IOOI kann einen Abschnitt strukturieren</h3><p class="card-text">IOOI steht für Input, Output, Outcome und Impact. Eine Aktivität kann als zusätzliche Prozessstufe zwischen Input und Output dargestellt werden; sie gehört nicht zum Akronym. Diese externe Results-Chain-Methode ist optional, kein Grundmodell der WÖk. Output ist noch keine Wirkung.</p></article>
-          <article class="card"><p class="card-kicker">Steuerung</p><h3 class="card-title">Maßstab, Schutz und Rückkopplung</h3><p class="card-text">Die Wirkungsökonomie ist die Gesamtarchitektur. IOOI kann darin optional einen Teil des Wirkungspfads strukturieren. Die WÖk selbst reicht von Wirkungspotenzial und Risiko über Evidenz, Bewertung und Schutzregeln bis zu Rückkopplung und Lernen.</p></article>
+          <article class="card"><p class="card-kicker">Möglicher Pfad</p><h3 class="card-title">Was könnte sich wodurch verändern?</h3><p class="card-text">Auslöser, Mechanismen und Bedingungen verbinden Handlungen und mögliche Folgen. Wirkungspotenzial und Wirkungsrisiko sind Aussagen über diesen Pfad, keine Stationen darin.</p></article>
+          <article class="card"><p class="card-kicker">Results Chain</p><h3 class="card-title">IOOI ordnet einen Abschnitt</h3><p class="card-text">IOOI steht für Input, Output, Outcome und Impact. Die externe, optionale Methode ordnet Ressourcen, Leistungen und Veränderungen innerhalb eines Pfads. Aktivität kann zwischen Input und Output stehen, gehört aber nicht zum Akronym.</p></article>
+          <article class="card"><p class="card-kicker">WÖk drumherum</p><h3 class="card-title">Prüfen, bewerten, absichern und lernen</h3><p class="card-text">Evidenz, Zurechnung, Bewertung, Schutz, Systemprüfung und Rückkopplung sind Ebenen um den Pfad. Transformationswirkung ist eine eigene evidenzpflichtige Systemfrage, keine Stufe nach Impact.</p></article>
         </div>
+        ${impactArchitectureVisual()}
         <p><a class="text-link" href="../verstehen/iooi-und-wirkungsoekonomie/">IOOI und Wirkungsökonomie im vollständigen Überblick</a></p>
       </section>
 
       <section class="section" id="wirkungsmodell" aria-labelledby="wirkungsmodell-title">
         <div class="section-header">
           <p class="hero-kicker">Modell</p>
-          <h2 id="wirkungsmodell-title">Sechs Fragen machen Wirkung verständlich</h2>
+          <h2 id="wirkungsmodell-title">Sechs Prüffragen machen Wirkung verständlich</h2>
+          <p><strong>Das sind sechs Prüf-Fragen, keine sechs Stationen, die eine Wirkung der Reihe nach durchläuft.</strong> Sie beziehen sich auf denselben Gegenstand und werden bei neuen Erkenntnissen erneut gestellt.</p>
         </div>
         <div class="card-grid three">
           <article class="card"><p class="card-kicker">1</p><h3 class="card-title">Was löst etwas aus?</h3><p class="card-text">Eine Entscheidung, ein Produkt, eine Regel oder eine Formulierung kann ein System verändern.</p></article>
@@ -179,7 +182,7 @@ ${renderHeader(BASE)}
           </article>
           <article class="card">
             <h3 class="card-title">Wirkpfad und Wirkungsarchitektur</h3>
-            <p class="card-text">Die eigenständige WÖk-Wirkungsarchitektur – mit optionalen Anschlussmethoden wie IOOI, Theory of Change, Evidenz, Bewertung, Schutzregeln und Rückkopplung.</p>
+            <p class="card-text">Die WÖk-Wirkungsarchitektur verbindet Evidenz, Bewertung, Schutz und Rückkopplung. IOOI und Theory of Change können als externe Methoden einbezogen werden.</p>
             <a class="text-link" href="../verstehen/iooi-und-wirkungsoekonomie/">Leitseite öffnen</a>
           </article>
         </div>

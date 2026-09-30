@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import { impactArchitectureVisual } from "../lib/impact-architecture-visual.mjs";
+import { ComparisonTable } from "../lib/explainer-components.mjs";
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "verstehen", "iooi-und-wirkungsoekonomie");
@@ -71,11 +73,13 @@ function renderFooter(base) {
     .replace("{{FOOTER_LEGAL_NAV}}", (navigation.footerLegal || []).map((item) => navLink(item, base)).join("\n"));
 }
 
+const TITLE = "IOOI, Wirkungspfad und Wirkungsökonomie - was gehört wohin?";
+const DESCRIPTION = "IOOI ordnet Input, Output, Outcome und Impact als Results Chain. Die WÖk legt Evidenz, Bewertung, Schutz, Systemprüfung und Rückkopplung um Wirkpfade, keine längere Kette.";
 const schema = {
   "@context": "https://schema.org",
   "@type": ["Article", "LearningResource"],
-  headline: "IOOI als externe Results Chain – und die Wirkungsökonomie",
-  description: "IOOI strukturiert Input, Output, Outcome und Impact als externe Results Chain. Die Wirkungsökonomie kann sie optional nutzen und verbindet Wirkung mit Evidenz, Bewertung, Schutz und Rückkopplung.",
+  headline: TITLE,
+  description: DESCRIPTION,
   inLanguage: "de-DE",
   learningResourceType: "Methodenerklärung",
   educationalLevel: "Einführung",
@@ -88,22 +92,22 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IOOI als externe Results Chain – und die Wirkungsökonomie</title>
-    <meta name="description" content="IOOI strukturiert Input, Output, Outcome und Impact als externe Results Chain. Die Wirkungsökonomie kann sie optional nutzen und verbindet Wirkung mit Evidenz, Bewertung, Schutz und Rückkopplung.">
-    <meta name="search_title" content="IOOI und Wirkungsökonomie">
-    <meta name="search_description" content="IOOI als optionale externe Results Chain; die eigenständige WÖk-Wirkungsarchitektur verbindet Wirkungsermittlung, Bewertung, Schutz und Rückkopplung.">
+    <title>${esc(TITLE)}</title>
+    <meta name="description" content="${esc(DESCRIPTION)}">
+    <meta name="search_title" content="${esc(TITLE)}">
+    <meta name="search_description" content="${esc(DESCRIPTION)}">
     <meta name="search_section" content="Verstehen">
     <meta name="search_type" content="Methodenerklärung">
     <link rel="canonical" href="https://wirkungsoekonomie.de/verstehen/iooi-und-wirkungsoekonomie/">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
-    <meta property="og:title" content="IOOI als externe Results Chain – und die Wirkungsökonomie">
-    <meta property="og:description" content="IOOI strukturiert Input, Output, Outcome und Impact als externe Results Chain. Die Wirkungsökonomie kann sie optional nutzen und verbindet Wirkung mit Evidenz, Bewertung, Schutz und Rückkopplung.">
+    <meta property="og:title" content="${esc(TITLE)}">
+    <meta property="og:description" content="${esc(DESCRIPTION)}">
     <meta property="og:url" content="https://wirkungsoekonomie.de/verstehen/iooi-und-wirkungsoekonomie/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IOOI als externe Results Chain – und die Wirkungsökonomie">
-    <meta name="twitter:description" content="Optionale Anschlussmethode und eigenständige WÖk-Wirkungsarchitektur.">
+    <meta name="twitter:title" content="${esc(TITLE)}">
+    <meta name="twitter:description" content="${esc(DESCRIPTION)}">
     <link rel="icon" href="${BASE}assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="${BASE}assets/css/style.css?v=20260612-mobile-table-fix">
     <script type="application/ld+json">${JSON.stringify(schema)}</script>
@@ -113,59 +117,43 @@ ${renderHeader(BASE)}
     <main data-search-content>
       <section class="hero compact-hero" data-no-glossary>
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${BASE}index.html">Start</a><span aria-hidden="true">/</span><a href="${BASE}verstehen/">Verstehen</a><span aria-hidden="true">/</span><span>IOOI und Wirkungsökonomie</span></nav>
-        <p class="hero-kicker">Methodenarchitektur</p>
-        <h1>IOOI als externe Results Chain – und die Wirkungsökonomie</h1>
-        <p class="hero-subtitle">IOOI kann einen Abschnitt eines Wirkungspfads als Results Chain strukturieren. Die Wirkungsökonomie ist eigenständig: Sie beginnt bei Auslösern, Wirkungspotenzialen, Wirkungsrisiken und Wirkmechanismen und verbindet Wirkung mit Evidenz, Maßstab, Schutz und Rückkopplung.</p>
+        <p class="hero-kicker">IOOI, Wirkpfad und WÖk</p>
+        <h1>Eine Kette ist noch keine Wirkungsarchitektur.</h1>
+        <p class="hero-subtitle">Eine Stadt richtet eine neue Buslinie ein. Was wird dafür gebraucht, was verändert sie - und was wissen wir wirklich darüber? An diesem Beispiel lassen sich IOOI, Wirkpfad und Wirkungsarchitektur auseinanderhalten.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#wirkungsrad">Wirkungsrad verstehen</a>
+          <a class="btn btn-primary" href="#buslinie">Mit der Buslinie beginnen</a>
           <a class="btn btn-secondary" href="#iooi">IOOI erklären</a>
           <a class="hero-secondary-link" href="${BASE}begriffe/iooi/">IOOI im Glossar</a>
         </div>
       </section>
 
-      <section class="section section-soft" aria-labelledby="kurzformel-title">
-        <div class="section-header compact">
-          <p class="hero-kicker">Die Kurzformel</p>
-          <h2 id="kurzformel-title">Wirkung ist zuerst eine Zustandsveränderung.</h2>
-          <p><strong>Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ, neutral oder ambivalent bewertet werden. Reicht die Evidenz nicht aus, bleibt die Einordnung offen.</strong> Die Wirkungsökonomie bewertet Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ und richtet Wirtschaft, Politik, Kapital, Medien und Entscheidungen auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.</p>
-          <p><strong>Nicht alles, was wirkt, ist erwünscht.</strong> Deshalb reicht es nicht, Wirkung zu messen. Man muss auch offenlegen, woran man sie misst.</p>
-        </div>
+      <section class="section section-soft" id="buslinie" aria-labelledby="buslinie-title">
+        <p class="hero-kicker">Ein erfundenes Beispiel, kein Wirkungsnachweis</p>
+        <h2 id="buslinie-title">Stell dir eine neue Buslinie vor.</h2>
+        <p>Die Stadt stellt Geld, Busse und Fahrer bereit. Das ist <strong>Input</strong>. Die Busse fahren: eine <strong>Aktivität</strong>. Die angebotenen Fahrten und bedienten Haltestellen sind <strong>Output</strong>. Nehmen wir an, mehr Menschen kommen dadurch ohne Auto zur Arbeit oder zur Schule: Das wäre <strong>Outcome</strong>. Wenn sich langfristig Verkehr, Emissionen oder Teilhabe verändern, kann das je nach verwendeter Results Chain <strong>Impact</strong> sein.</p>
+        <p>Aber hat wirklich die neue Linie die Veränderung ausgelöst? Wer profitiert - und wer nicht? Wurde dafür eine andere Linie gestrichen? Wie sicher sind die Daten? Welche Nebenfolgen entstehen? Und was sollte die Stadt jetzt bei Preis, Takt oder Budget ändern?</p>
+        <p><strong>IOOI ordnet die Ergebniskette. Die Wirkungsökonomie legt die Prüf-, Bewertungs- und Steuerungsschichten darum.</strong> Eine geplante Buslinie hat zunächst Wirkungspotenzial und Wirkungsrisiken. Erst eine tatsächliche Zustandsveränderung ist Wirkung; die Zurechnung zur Buslinie bleibt eine eigene Frage.</p>
       </section>
 
-      <section class="section" id="wirkungsrad" aria-labelledby="wirkungsrad-title">
-        <div class="section-header">
-          <p class="hero-kicker">Lernende Gesamtarchitektur</p>
-          <h2 id="wirkungsrad-title">Das WÖk-Wirkungsrad: ermitteln, bewerten, rückkoppeln</h2>
-          <p>Die Treppe erklärt einen Pfad. Das Wirkungsrad erklärt ein lernendes System: Eine Entscheidung verändert den Systemzustand, der wieder zur Ausgangslage der nächsten Entscheidung wird.</p>
+      <section class="section" id="ebenen" aria-labelledby="ebenen-title">
+        <span id="wirkungsrad"></span>
+        <p class="hero-kicker">Blickwinkel und Aufgaben, keine Wirkungsstationen</p>
+        <h2 id="ebenen-title">Ein Pfad, mehrere Ebenen</h2>
+        <p><strong>IOOI strukturiert eine Ergebniskette innerhalb eines Wirkungspfads. Die Wirkungsökonomie baut um Wirkpfade eine vollständige Analyse-, Evidenz-, Bewertungs-, Schutz- und Steuerungsarchitektur.</strong></p>
+        ${impactArchitectureVisual()}
+        <div class="card-grid three" aria-label="Fünf Blickwinkel auf denselben Wirkpfad">
+          <article class="card"><h3>Wirkpfad: Was geschieht oder könnte geschehen?</h3><p>Ausgangslage, Auslöser, Mechanismen und Bedingungen verbinden Handlungen mit möglichen oder beobachteten Veränderungen, Folge- und Systemwirkungen. Der neue Systemzustand wird zur nächsten Ausgangslage. Ein plausibler Pfad ist kein Kausalbeweis.</p></article>
+          <article class="card"><h3>IOOI: Wie ordnen wir Ressourcen, Leistungen und Veränderungen?</h3><p>Input → [Aktivität] → Output → Outcome → Impact. Die externe, optionale Results Chain kann einen Abschnitt des Pfads strukturieren. Aktivität ist eine zusätzliche Prozessstufe, kein Buchstabe im Akronym.</p></article>
+          <article class="card"><h3>Evidenz: Was ist beobachtet und zurechenbar?</h3><p>Baseline, Gegenfaktum, Datenqualität, Zusätzlichkeit, Attribution oder Contribution, Evidenzstatus und Unsicherheit werden entlang des Pfads geprüft. Beobachtung ist nicht Attribution.</p></article>
+          <article class="card"><h3>Bewertung und Schutz: Welcher Maßstab, welche Grenzen?</h3><p>Feststellen und Messen sind von Bewertung zu trennen. Mensch, Planet und Demokratie, Recht, Referenzrahmen, Verteilung und Zeit bestimmen die Einordnung. Netto-Wirkung darf Wirkungsgrenzen nicht aufrechnen: Nichtkompensation und Reverse Merit Order schützen vor Schönrechnung.</p></article>
+          <article class="card"><h3>Rückkopplung: Was ändern wir aufgrund dieses Wissens?</h3><p>Geprüfte Erkenntnisse können Preise, Steuern, Kapital, Versicherung, Beschaffung, Management, Recht, Politik oder Produktdesign verändern. Neue Entscheidungen verändern Bedingungen für weitere Wirkpfade und Monitoring. Reporting allein ist noch keine Rückkopplung.</p></article>
         </div>
-        <figure class="woek-visual-figure">
-          <picture>
-            <source media="(max-width: 760px)" srcset="${BASE}assets/visuals/model/woek_wirkungskreislauf_iooi_mobile.svg" type="image/svg+xml">
-            <img class="woek-visual" src="${BASE}assets/visuals/model/woek_wirkungskreislauf_iooi.svg" alt="WÖk-Wirkungskreislauf: Auslöser, Wirkungspotenzial und Wirkmechanismus; Wirkungspfad mit optionalem IOOI-Abschnitt; Wirkungsermittlung, Bewertung am Referenzrahmen, Schutz, Rückkopplung und Lernen." loading="lazy" decoding="async">
-          </picture>
-          <figcaption>Die Grafik fasst die Architektur zusammen. Die folgenden Abschnitte sind ihre vollständige Textalternative.</figcaption>
-        </figure>
-        <div class="card-grid three" aria-label="Drei Kernphasen der Wirkungsökonomie">
-          <article class="card"><p class="card-kicker">1. Wirkung ermitteln</p><h3 class="card-title">Was verändert sich tatsächlich?</h3><p class="card-text">Vorwirkung, Wirkungspfad, Wirkungsempfänger, Raum, Reichweite, Dauer, Zurechnung, Nebenfolgen und Datenqualität machen Veränderung prüfbar. IOOI kann dabei optional einen Abschnitt strukturieren.</p></article>
-          <article class="card"><p class="card-kicker">2. Wirkung bewerten</p><h3 class="card-title">Gemessen woran?</h3><p class="card-text">Agenda 2030, SDGs und SDG+ geben die Richtung an. Fachstandards, Recht und wissenschaftliche Schwellen können sie konkretisieren.</p></article>
-          <article class="card"><p class="card-kicker">3. Wirkung rückkoppeln</p><h3 class="card-title">Was folgt für die nächste Entscheidung?</h3><p class="card-text">Bewertete Wirkung verändert Preise, Steuern, Kapital, Förderung, Beschaffung, Management, Haushalt und Regulierung.</p></article>
-        </div>
-      </section>
-
-      <section class="section section-muted" aria-labelledby="vorwirkung-title">
-        <div class="section-header">
-          <p class="hero-kicker">Vor der Wirkung beginnen</p>
-          <h2 id="vorwirkung-title">Plausible Wirkung ist noch kein Wirkungsnachweis.</h2>
-          <p>Die Wirkungsökonomie beginnt nicht erst dort, wo Wirkung eingetreten ist. Sie trennt sorgfältig den Raum möglicher Wirkung von der späteren Feststellung tatsächlicher Veränderung.</p>
-        </div>
-        <div class="card-grid five">
-          <article class="card"><h3 class="card-title">Auslöser</h3><p class="card-text">Handlung, Unterlassen, Produkt, Gesetz, Preis, Narrativ, Technologie, Kapitalfluss oder Ereignis.</p></article>
-          <article class="card"><h3 class="card-title">Wirkstoff</h3><p class="card-text">Didaktische Analogie für einen Auslöser mit Wirkungspotenzial, nicht Wirkung selbst.</p></article>
-          <article class="card"><h3 class="card-title">Wirkungspotenzial</h3><p class="card-text">Möglichkeit, dass positive, negative, neutrale oder ambivalente Wirkung entsteht.</p></article>
-          <article class="card"><h3 class="card-title">Wirkungsrisiko</h3><p class="card-text">Möglichkeit negativer, unerwünschter oder systemisch destabilisierender Wirkung.</p></article>
-          <article class="card"><h3 class="card-title">Wirkmechanismus</h3><p class="card-text">Plausible Erklärung, wie eine Veränderung entstehen kann. Noch kein Kausalbeweis.</p></article>
-        </div>
-        <p class="notice"><strong>Für Medien, Sprache und Politik gilt besondere Vorsicht:</strong> Ohne empirischen Nachweis sprechen wir von Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum oder Wirkpfad – nicht von gesicherter Wirkung.</p>
+        <h3>Ex ante: Was könnte passieren - und warum?</h3>
+        <p>Wirkungspotenzial, Wirkungsrisiko, Hypothesen, Mechanismen, Bedingungen, Annahmen und Szenarien beziehen sich auf mehrere Verbindungen des Pfads. <strong>Potenzial und Risiko sind keine Stationen einer Kausalkette.</strong> Ein Wirkmechanismus erklärt eine Verbindung, statt eine weitere Zeitstation zu sein. Auch IOOI beginnt mit dem Input vor Outcome und Impact. Der Unterschied zur WÖk liegt nicht in einem früheren Start.</p>
+        <h3>Systemprüfung quer zum Pfad</h3>
+        <p>Die WÖk untersucht Wirkungen 1. Ordnung als direkte Zustandsveränderungen, 2. Ordnung als indirekte Folgen einschließlich Rebound, Spillover und Leakage sowie 3. Ordnung als Veränderungen von Regeln, Anreizen, Routinen, Standards, Märkten, Institutionen und künftigen Entscheidungen. Systemgrenze, Betroffene, Zeitverzug, Verteilung, Resilienz, Lock-ins und Schadensverlagerungen sind ausdrücklich zu prüfen. Unbelegte Kaskaden bleiben Hypothesen.</p>
+        <h3>Governance um alle Ebenen</h3>
+        <p>Versionierung, Audit oder Assurance, Transparenz, Rechtsschutz und Lernen halten Annahmen, Bewertungen und Entscheidungen nachvollziehbar und korrigierbar. Die WÖk ist keine Planwirtschaft, keine Sprachpolizei und kein Social-Credit-System. Sie bewertet keine Menschen.</p>
       </section>
 
       <section class="section" id="iooi" aria-labelledby="iooi-title">
@@ -180,8 +168,8 @@ ${renderHeader(BASE)}
             <tbody>
               <tr><th scope="row"><a href="${BASE}begriffe/input/">Input</a></th><td>Welche Ressourcen werden eingesetzt?</td><td>Geld, Zeit, Personal, Material, Energie, Infrastruktur, Wissen, Daten, natürliche Ressourcen.</td><td>Ressourceneinsatz, noch keine Wirkung.</td></tr>
               <tr><th scope="row"><a href="${BASE}begriffe/aktivitaet/">Aktivität</a></th><td>Was wird tatsächlich getan?</td><td>Projekt, Produktion, Dienstleistung, Gesetz, Kommunikation, Investition, Förderung oder Beschaffung.</td><td>Handlung zwischen Input und Output.</td></tr>
-              <tr><th scope="row"><a href="${BASE}begriffe/output/">Output</a></th><td>Welche direkte Leistung entsteht?</td><td>Produkte, Beratungen, Kurse, Infrastruktur, Reichweite, Teilnehmende, bereitgestellte Dienste.</td><td>Output ist noch nicht automatisch Wirkung.</td></tr>
-              <tr><th scope="row"><a href="${BASE}begriffe/outcome/">Outcome</a></th><td>Was verändert sich bei Betroffenen oder in Systemen?</td><td>Wissen, Fähigkeiten, Verhalten, Gesundheit, Lebenslage, Zugang, Sicherheit, Vertrauen, Ressourcenverbrauch.</td><td>Outcome ist bereits eine Wirkungsebene.</td></tr>
+              <tr><th scope="row"><a href="${BASE}begriffe/output/">Output</a></th><td>Welche direkte Leistung entsteht?</td><td>Produkte, Beratungen, Kurse, Infrastruktur, Reichweite, Teilnehmende, bereitgestellte Dienste.</td><td>Output ist eine Leistung, noch keine WÖk-Wirkung.</td></tr>
+              <tr><th scope="row"><a href="${BASE}begriffe/outcome/">Outcome</a></th><td>Was verändert sich bei Betroffenen oder in Systemen?</td><td>Wissen, Fähigkeiten, Verhalten, Gesundheit, Lebenslage, Zugang, Sicherheit, Vertrauen, Ressourcenverbrauch.</td><td>Eine tatsächliche Zustandsveränderung kann eine WÖk-Wirkung sein; Zurechnung bleibt gesondert zu prüfen.</td></tr>
               <tr><th scope="row"><a href="${BASE}begriffe/impact/">Impact</a></th><td>Welche breiteren oder längerfristigen Wirkungen entstehen?</td><td>Gesellschaftliche, ökologische, institutionelle oder Marktveränderungen.</td><td>Nicht automatisch positiv; fachfeldabhängig genauer definieren.</td></tr>
             </tbody>
           </table>
@@ -189,66 +177,24 @@ ${renderHeader(BASE)}
         <p class="notice"><strong>IOOI braucht ein Ziel.</strong> Es enthält keinen eigenen verbindlichen normativen Referenzrahmen. Anwenderinnen und Anwender müssen offenlegen, welche Outcomes und Impacts sie anstreben und woran sie diese bewerten.</p>
       </section>
 
-      <section class="section section-soft" aria-labelledby="verstehen-title">
-        <div class="section-header">
-          <p class="hero-kicker">Wirkung verstehen</p>
-          <h2 id="verstehen-title">Vom Wirkpfad zur belastbaren Analyse</h2>
-          <p>Ein Wirkungspfad lässt sich durch etablierte Evaluations- und Impact-Management-Fragen vertiefen. IOOI kann hierfür einen Abschnitt strukturieren. Die Fragen klären, was tatsächlich entstanden ist – für wen, wo, wie stark, wie lange und wodurch.</p>
-        </div>
-        <div class="card-grid three">
-          <article class="card"><h3 class="card-title">Wer und wo?</h3><p class="card-text">Wirkungsempfänger, unsichtbare Betroffene, Generationen, Ökosysteme, Institutionen, Wirkungsraum und Lieferkette sichtbar machen.</p></article>
-          <article class="card"><h3 class="card-title">Wie viel und wie lange?</h3><p class="card-text">Reichweite, Intensität, Dauer und Wirkungsordnungen prüfen. Eine große Reichweite ist nicht automatisch eine starke Veränderung.</p></article>
-          <article class="card"><h3 class="card-title">Wodurch und mit welcher Sicherheit?</h3><p class="card-text">Baseline, Counterfactual, Attribution, Kontribution, Datenqualität, Unsicherheit und Wirkungsrisiko offenlegen.</p></article>
-          <article class="card"><h3 class="card-title">Was wirkt daneben?</h3><p class="card-text">Nebenwirkung, Wechselwirkung, Displacement und Rebound erfassen. Positive Teilwirkungen können erhebliche Schäden nicht unsichtbar machen.</p></article>
-          <article class="card"><h3 class="card-title">Was verändert sich weiter?</h3><p class="card-text">Rückkopplungen, Lernprozesse, Systemfolgen, Lock-ins und Spillover machen aus einer linearen Kette ein Wirkungsnetz.</p></article>
-          <article class="card"><h3 class="card-title">Was bleibt offen?</h3><p class="card-text">Modellwerte, Proxies, Schätzungen und Evidenzlücken sichtbar halten. Zurechnung ohne Scheingenauigkeit ist besser als falsche Präzision.</p></article>
-        </div>
+      <section class="section section-soft" aria-labelledby="iooi-kann-title">
+        <h2 id="iooi-kann-title">Was IOOI gut kann</h2>
+        <p>IOOI hilft, Projekte und Programme verständlich zu strukturieren, Ressourcen von Leistungen und Veränderungen zu unterscheiden und Indikatoren sowie Annahmen entlang einer Ergebniskette zu ordnen. Das unterstützt Planung, Monitoring und Evaluation.</p>
+        <h3>Was IOOI allein nicht festlegt</h3>
+        <p>Das Akronym legt weder einen bestimmten Wirkmechanismus noch eine Methode zur Prüfung von Kausalität oder Beitrag fest. Auch normativer Referenzrahmen, nicht kompensierbare Schutzgrenzen, Bildung der Netto-Wirkung, gesonderte Systemprüfung und die Rückkopplung in Entscheidungen ergeben sich nicht aus den vier Buchstaben. Sie können im jeweiligen Evaluations- oder Managementdesign ergänzt werden.</p>
+        <p>Wirkung ist neutral und relational: eine tatsächliche Zustandsveränderung. Ihre Bewertung kann positiv, negativ, neutral oder ambivalent sein; bei unzureichender Evidenz bleibt sie offen. Ziel ist <strong>positive Netto-Wirkung</strong>. Globale Referenzen sind Agenda 2030 und SDGs; SDG+ ist eine WÖk-eigene Erweiterung. Für deutsche öffentliche und regulatorische Fälle ist zusätzlich die DNS relevant, soweit sachlich anwendbar. Recht, Grundrechte und Fachstandards konkretisieren die Prüfung. Ziel- oder Indikatorbezug ist kein Kausalitätsnachweis.</p>
+        <p>Eine ex-ante Einordnung heißt ausdrücklich <strong>modellierte Wirkungsbewertung</strong>. Nichtkompensation schützt harte Grenzen; Reverse Merit Order macht schwerwiegende Defizite vorrangig sichtbar. Vorteile an anderer Stelle können sie nicht unsichtbar machen.</p>
       </section>
-
-      <section class="section" aria-labelledby="bewertung-title">
-        <div class="section-header">
-          <p class="hero-kicker">Wirkung bewerten</p>
-          <h2 id="bewertung-title">Wirkung braucht einen Maßstab.</h2>
-          <p>Eine Desinformationskampagne kann wirksam sein. Ein suchtverstärkendes Geschäftsmodell kann wirksam sein. Ein fossiles Produkt kann wirtschaftlich erfolgreich sein. Wirksamkeit allein beantwortet deshalb nicht, ob eine Entwicklung gesellschaftlich erwünscht ist.</p>
-        </div>
-        <div class="impact-process" aria-label="Ablauf der Wirkungsbewertung">
-          <article class="impact-process__step"><span class="impact-process__index">1</span><h3>Was verändert sich?</h3><p>Wirkungsermittlung: Daten, Wirkpfad und Evidenz.</p></article>
-          <article class="impact-process__step"><span class="impact-process__index">2</span><h3>Gemessen woran?</h3><p><a href="${BASE}begriffe/referenzrahmen/">Referenzrahmen</a>: Agenda 2030, SDGs, SDG+ und passende Fachreferenzen.</p></article>
-          <article class="impact-process__step"><span class="impact-process__index">3</span><h3>Wie ist sie einzuordnen?</h3><p>Positiv, neutral oder negativ – transparent begründet.</p></article>
-          <article class="impact-process__step"><span class="impact-process__index">4</span><h3>Was bleibt unter allen Folgen?</h3><p>Netto-Wirkung unter Berücksichtigung von Risiken, Verlagerungen und Nebenfolgen.</p></article>
-          <article class="impact-process__step"><span class="impact-process__index">5</span><h3>Gibt es Grenzen?</h3><p>Wirkungsgrenzen und Nichtkompensation schützen vor Schönrechnung.</p></article>
-          <article class="impact-process__step"><span class="impact-process__index">6</span><h3>Was folgt?</h3><p>Transformationsprüfung und Rückkopplung in die nächste Entscheidung.</p></article>
-        </div>
-        <p>Die SDGs sind ein außergewöhnlich breit international vereinbarter Zielrahmen. <a href="${BASE}begriffe/sdg-plus/">SDG+</a> ist eine WÖk-eigene Erweiterung, keine offizielle UN-Kategorie. Sie konkretisiert systemische Voraussetzungen wie Demokratie, Rechtsstaatlichkeit, Informationsqualität, digitale Selbstbestimmung, institutionelles Vertrauen und Resilienz. Fachstandards wie ESRS, GRI, ISO, ILO, gesetzliche Grenzwerte und wissenschaftliche Schwellen liefern Daten, Messgrößen und operative Konkretisierung; sie sind nicht automatisch der normative Oberrahmen.</p>
+      <section class="section" aria-labelledby="transformation-title">
+        <h2 id="transformation-title">Impact ist nicht Transformationswirkung - aber kann sie berühren</h2>
+        <p><strong>Impact ist ein externer, quellenabhängiger Begriff.</strong> Je nach Methode kann er breitere, langfristige oder systemische Veränderungen umfassen. IOOI endet deshalb nicht grundsätzlich vor System- oder Transformationswirkung. Auch die <a href="https://www.oecd.org/en/topics/sub-issues/development-co-operation-evaluation-and-effectiveness/evaluation-criteria.html">OECD-DAC-Evaluationskriterien</a> untersuchen unter Impact weiterreichende und transformative Veränderungen.</p>
+        <p>Die WÖk macht <strong>Transformationswirkung ausdrücklich zu einer eigenen, evidenzpflichtigen Systemfrage</strong>: Verändern sich Regeln, Standards, Anreize, Infrastrukturen, Märkte, Machtverhältnisse oder künftige Entscheidungspfade? In welche Richtung, für wen und mit welcher Evidenz? Eine erwartete strukturelle Veränderung bleibt Transformationspotenzial.</p>
+        <p>Transformation ist keine automatische Stufe nach Impact. Ihre Richtung wird gesondert bewertet. Nicht jede längerfristige Veränderung ist transformativ, und nicht jede Transformation ist positiv.</p>
       </section>
-
-      <section class="section section-muted" aria-labelledby="schutz-title">
-        <div class="section-header">
-          <p class="hero-kicker">Netto-Wirkung und Schutz</p>
-          <h2 id="schutz-title">Zusammenführen, ohne schwere Schäden wegzurechnen</h2>
-          <p><a href="${BASE}begriffe/netto-wirkung/">Netto-Wirkung</a> ist keine einfache Addition. Sie führt positive und negative Wirkungen unter Berücksichtigung von Grenzen, Unsicherheit, Nebenfolgen und Nichtkompensation zusammen.</p>
-        </div>
-        <div class="card-grid three">
-          <article class="card"><h3 class="card-title">Wirkungsgrenzen</h3><p class="card-text">Menschenwürde, Kinder- und Zwangsarbeit, schwere Gesundheitsgefahren, irreversible ökologische Schäden, Biodiversitätskipprisiken und Rechtsstaatsabbau sind nicht beliebig verrechenbar.</p></article>
-          <article class="card"><h3 class="card-title">Reverse Merit Order</h3><p class="card-text">Ein schweres Defizit in einem zentralen Wirkungsfeld darf nicht durch gute Werte an anderer Stelle unsichtbar gemacht werden.</p></article>
-          <article class="card"><h3 class="card-title">Transformationswirkung</h3><p class="card-text">Sie prüft, ob Regeln, Standards, Anreize, Märkte, Institutionen oder Handlungspfade dauerhaft verändert werden.</p></article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="vergleich-title">
-        <div class="section-header"><p class="hero-kicker">Faire Einordnung</p><h2 id="vergleich-title">IOOI / Wirkungstreppe und Wirkungsökonomie</h2><p>Die Ansätze erfüllen unterschiedliche Aufgaben. Die WÖk beansprucht nicht, IOOI, Theory of Change oder Impact Management zu ersetzen.</p></div>
-        <div class="table-wrap"><table>
-          <thead><tr><th scope="col">Frage</th><th scope="col">IOOI / Wirkungstreppe</th><th scope="col">Wirkungsökonomie</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Hauptzweck</th><td>Wirkpfad strukturieren.</td><td>Wirkung ermitteln, bewerten und rückkoppeln.</td></tr>
-            <tr><th scope="row">Input, Output, Outcome, Impact</th><td>Ja.</td><td>Kann für einen optionalen IOOI-Abschnitt verwendet werden.</td></tr>
-            <tr><th scope="row">Baseline, Attribution, Kontribution</th><td>Je nach Anwendung ergänzbar.</td><td>Explizite Evidenzfragen.</td></tr>
-            <tr><th scope="row">Negative und unbeabsichtigte Wirkung</th><td>Integrierbar.</td><td>Systematisch mitzuerfassen.</td></tr>
-            <tr><th scope="row">Normativer Rahmen</th><td>Vom jeweiligen Anwender festzulegen.</td><td>Agenda 2030, SDGs, SDG+ sowie offen ausgewiesene ergänzende Referenzen.</td></tr>
-            <tr><th scope="row">Netto-Wirkung und Schutz</th><td>Kein Kernbestandteil des Akronyms.</td><td>Wirkungsgrenzen, Nichtkompensation und Reverse Merit Order als Schutzlogik.</td></tr>
-            <tr><th scope="row">Rückkopplung</th><td>Projektlernen und Management sind möglich.</td><td>Bewertung wird systematisch in Preise, Steuern, Kapital, Förderung, Beschaffung, Haushalt, Management und Regulierung zurückgeführt.</td></tr>
-          </tbody>
-        </table></div>
+      <section class="section section-muted" aria-labelledby="vergleich-title">
+        <h2 id="vergleich-title">Unterschiedliche Fragen, keine Rangliste</h2>
+        <p>IOOI kann für seine konkrete Frage sehr gut geeignet sein. Die WÖk beansprucht nicht, IOOI, Theory of Change oder Impact Management zu ersetzen.</p>
+        ${ComparisonTable({"caption":"IOOI und WÖk: Aufgaben und Umfang","columns":["Frage","IOOI / Results Chain","WÖk-Wirkungsarchitektur"],"rows":[["Hauptzweck","Eine Ergebniskette strukturieren.","Wirkpfade analysieren, prüfen, bewerten, absichern und in Entscheidungen zurückführen."],["Darstellungslogik","Ressourcen, Leistungen und Veränderungen; keine Kausalitätsgarantie.","Pfad oder Netz mit querliegenden Prüf- und Bewertungsebenen."],["Mechanismen / Annahmen","Können im Planungs- und Evaluationsdesign ergänzt werden.","Explizite Hypothesen über Verbindungen und Bedingungen."],["Evidenz / Zurechnung","Hängt vom Evaluationsdesign ab.","Explizite Prüfung von Baseline, Gegenfaktum, Beitrag und Unsicherheit."],["Referenzrahmen / Bewertung","Vom verwendeten Rahmen und Anwendungszweck abhängig.","Offengelegte Referenzen, Mensch-Planet-Demokratie, Recht und Kontextnormen."],["Nebenfolgen / Grenzen","Können berücksichtigt werden; das Akronym legt Schutzregeln nicht fest.","Netto-Wirkung, Nichtkompensation und Reverse Merit Order."],["System- / Transformationswirkung","Impact kann je nach Rahmen systemische Veränderungen umfassen.","Eigene evidenzpflichtige Systemfrage; Richtung gesondert bewerten."],["Rückkopplung / Steuerung","Projektlernen und Management sind möglich.","Bewertung mit wirtschaftlichen, staatlichen und gesellschaftlichen Entscheidungen verbinden."],["Governance / Versionierung","Kann im jeweiligen Verfahren geregelt werden.","Expliziter Bestandteil der Architektur: Transparenz, Audit, Rechtsschutz, Lernen."]]})}
       </section>
 
       <section class="section section-soft" aria-labelledby="beispiele-title">
@@ -256,7 +202,7 @@ ${renderHeader(BASE)}
         <div class="card-grid three">
           <article class="card"><p class="card-kicker">Bildungsprojekt</p><h3 class="card-title">Nicht nur Kurse zählen</h3><p class="card-text"><strong>IOOI:</strong> Budget, Team und Lernplattform ermöglichen Kurse und Teilnahmen. Kompetenz- und Teilhabeveränderungen sind Outcome; langfristige Bildungs- und Arbeitsmarktfolgen können Impact sein.</p><p class="card-text"><strong>WÖk:</strong> Wer wurde erreicht, was wäre ohnehin passiert, wie dauerhaft ist der Effekt und welche Bedeutung hat er für SDG 4, SDG 8 und SDG 10? Daraus folgen Budget-, Skalierungs- und Bildungspolitikentscheidungen.</p></article>
           <article class="card"><p class="card-kicker">Produkt: Apfel</p><h3 class="card-title">Ein Kilogramm ist kein Wirkungsurteil</h3><p class="card-text"><strong>IOOI:</strong> Wasser, Fläche, Arbeit, Energie und Material führen zu einem verkaufsfähigen Produkt. Nutzung und Produktion haben Folgen für Einkommen, Ernährung, Ressourcen und Gesundheit.</p><p class="card-text"><strong>WÖk:</strong> Scorecard, WÖk-IDs, Benchmarks und Schutzregeln prüfen Lieferkette, Wasserstress, Biodiversität, Klima und Arbeitsbedingungen. Die Bewertung kann Preis- und Beschaffungsentscheidungen verändern.</p></article>
-          <article class="card"><p class="card-kicker">Desinformation</p><h3 class="card-title">Reichweite ist nicht positive Wirkung</h3><p class="card-text"><strong>Vorwirkung und Wirkungspfad:</strong> Budget, Inhalte, Bots und Plattformmechaniken erzeugen Views, Shares und Kommentare. Ob sich Überzeugungen oder Vertrauen verändern, ist eine eigene Evidenzfrage.</p><p class="card-text"><strong>WÖk:</strong> Plausible demokratische Wirkungsrisiken werden am Referenzrahmen geprüft. Erst bei belegter Veränderung wird von eingetretener Wirkung gesprochen; daraus können Transparenz-, Medien- und Plattformregeln folgen.</p></article>
+          <article class="card"><p class="card-kicker">Desinformation</p><h3 class="card-title">Reichweite ist nicht positive Wirkung</h3><p class="card-text"><strong>Möglicher Wirkungspfad:</strong> Budget, Inhalte, Bots und Plattformmechaniken erzeugen Views, Shares und Kommentare. Ob sich Überzeugungen oder Vertrauen verändern, ist eine eigene Evidenzfrage.</p><p class="card-text"><strong>WÖk:</strong> Plausible demokratische Wirkungsrisiken werden am Referenzrahmen geprüft. Erst bei belegter Veränderung wird von eingetretener Wirkung gesprochen; daraus können Transparenz-, Medien- und Plattformregeln folgen.</p></article>
         </div>
       </section>
 
