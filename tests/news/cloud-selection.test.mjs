@@ -178,8 +178,12 @@ test('real runner exports below-threshold candidates and checks a return for fre
   assert.ok(lateState.state.pending_story_ids.includes(waiting.story_id));
   // Replay same frozen discovery context with the durable import receipt.
   const replayInput = input(); replayInput.state.cloud_selection_receipts = captured.state.cloud_selection_receipts;
-  const replay = await runWirkungsticker({ ...replayInput, cloudSelection: { snapshot, result } });
+  let replayStateWritten = false;
+  const replay = await runWirkungsticker({ ...replayInput, cloudSelection: { snapshot, result },
+    captureState: () => { replayStateWritten = true; } });
   assert.equal(replay.cloud_selection.replay, true); assert.equal(replay.ai_calls, 0);
+  assert.equal(replay.status, 'selection_replay');
+  assert.equal(replayStateWritten, false, 'replay cannot consume newly collected inputs');
   fs.rmSync(directory, { recursive: true });
 });
 

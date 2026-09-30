@@ -1502,6 +1502,10 @@ export async function runWirkungsticker(options = {}) {
     report.cloud_selection = { run_id: options.cloudSelection.snapshot.run_id,
       input_hash: options.cloudSelection.snapshot.input_hash, replay: cloudReceipt.replay,
       selected: cloudReceipt.selected.map(row => ({ story_id: row.story_id, ...row.cloud_selection })) };
+    // A replay must not persist freshly collected inputs as already seen.
+    // Leave discovery state untouched so changes reach the next review.
+    if (cloudReceipt.replay) return { ...report, status: 'selection_replay',
+      completed_at: now, ai_calls: 0, published_stories: 0, updated_stories: 0 };
     newsroom.decisions ||= [];
     for (const decision of options.cloudSelection.result.decisions) newsroom.decisions.push({
       at: now, decision: 'cloud_editorial_selection', selection_run_id: options.cloudSelection.snapshot.run_id,
