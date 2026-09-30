@@ -66,6 +66,8 @@ import { releaseDeterministicImpact } from './impact-gate.mjs';
 import { ladeAuftraege, auftraegeVorziehen, auftragsErgebnisse, zusammenfassung, schreibeErgebnisse } from './meldungsauftraege-lauf.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+import { makeSelectionSnapshot, importSelection, acknowledgeSelection } from './cloud-selection.mjs';
+
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
 const RELEVANCE_BACKFILL_DAYS = 2;
 // Direktbetrieb: geänderte Transport-/Prompt-Regeln machen frühere bezahlte
@@ -942,7 +944,7 @@ export function partitionAiQueue(eligible, stage, maxStories, now = new Date().t
 }
 
 export function aiDeferralReason(candidate, stage, remainingCalls) {
-  if (stage.stage >= 3 || (!candidate.reassessment && candidate.preanalysis.internal_relevance_score < stage.threshold)) return "AI_BUDGET_BLOCKED";
+  if (stage.stage >= 3 || (!candidate.cloud_selection && !candidate.reassessment && candidate.preanalysis.internal_relevance_score < stage.threshold)) return "AI_BUDGET_BLOCKED";
   return remainingCalls === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
 }
 
@@ -1057,6 +1059,11 @@ export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, 
 }
 
 export async function runWirkungsticker(options = {}) {
+  if (process.env.WOEK_NEWS_CLOUD_SELECTION_ENABLED === 'true' && !options.cloudSelection && !options.selectionOnly)
+    throw new Error('CLOUD_SELECTION_REQUIRED_NO_PAID_FALLBACK');
+  if (options.selectionOnly && !options.dryRun) throw new Error('CLOUD_EXPORT_REQUIRES_DRY_RUN');
+  if (options.cloudSelection && !options.dryRun && process.env.WOEK_NEWS_CLOUD_SELECTION_ENABLED !== 'true')
+    throw new Error('CLOUD_SELECTION_PRODUCTION_DISABLED');
   const mode = processingMode();
   visualGenerationProvider(); // Reject contradictory configuration before any work.
   let bridge = options.bridgeProvider;
@@ -1428,6 +1435,57 @@ export async function runWirkungsticker(options = {}) {
       relevance: candidate.preanalysis, event_score: candidate.preanalysis.event_score, attention_impact_gap: candidate.attention_impact_gap }, candidate.existing_story, candidate.preanalysis.event_score, now);
     for (const source of candidate.sources) if (source.source_item_id && newsroom.source_items[source.source_item_id]) newsroom.source_items[source.source_item_id].event_id = candidate.event_id;
   }
+  // The Cloud sees the pool before keyword thresholds, published-duplicate
+  // shortcuts, category balancing and paid-slot reservation. No second queue.
+  const selectionSnapshot = options.selectionOnly || options.cloudSelection
+    ? makeSelectionSnapshot({ candidates: clusters, stories: storyStore.stories,
+      runId: options.selectionRunId || report.run_id || `selection-${now}`, now,
+      coverage: { complete: report.source_failures === 0 && report.sources_not_due === 0 && report.sources_not_modified === 0,
+        source_successes: report.source_successes, source_failures: report.source_failures,
+        sources_not_due: report.sources_not_due, sources_not_modified: report.sources_not_modified,
+        limitations: ['changed_candidates_only', 'bounded_feed_windows', 'compact_excerpts',
+          ...(report.source_failures ? ['source_fetch_failures'] : []),
+          ...(report.sources_not_due ? ['sources_not_due_in_this_run'] : []),
+          ...(report.sources_not_modified ? ['not_modified_feeds_not_reloaded'] : [])] } })
+    : null;
+  if (options.selectionOnly) {
+    options.captureSelectionSnapshot?.(selectionSnapshot);
+    const baselineEligible = clusters.filter(candidate => candidate.reassessment || candidate.impact_reassessment
+      || candidate.preanalysis.internal_relevance_score >= 30 || candidate.preanalysis.discovery_review?.review)
+      .sort((a, b) => queuePriority(b, now) - queuePriority(a, now));
+    const baselineQueue = eventAuditEnabled ? balanceEventQueue(baselineEligible.map(candidate => ({
+      ...candidate, selection_base_priority: queuePriority(candidate, now) })), categoryCoverage(storyStore.stories, now)) : baselineEligible;
+    const baseline = { input_hash: selectionSnapshot.input_hash, scope: 'local_editorial_order_before_cost_and_integrity_gates',
+      eligible: baselineQueue.map(row => ({ candidate_id: row.story_id, score: row.preanalysis.internal_relevance_score,
+        topics: row.topic, source_count: row.sources.length })),
+      first_four_with_existing_reservations: partitionAiQueue(baselineQueue, { stage: 0, threshold: 30 }, 4, now).selected.map(row => row.story_id) };
+    options.captureSelectionBaseline?.(baseline);
+    return { ...report, status: 'selection_exported', cloud_selection: { input_hash: selectionSnapshot.input_hash,
+      run_id: selectionSnapshot.run_id, candidates: selectionSnapshot.candidates.length, coverage: selectionSnapshot.coverage },
+      completed_at: now, ai_calls: 0, published_stories: 0, updated_stories: 0 };
+  }
+  let cloudReceipt = null;
+  if (options.cloudSelection) {
+    cloudReceipt = importSelection(options.cloudSelection.snapshot, options.cloudSelection.result,
+      { candidates: clusters, stories: storyStore.stories, state, now });
+    // Keep the established update/version path and all downstream evidence,
+    // cost, readiness and publication gates. Never merge published records.
+    cloudReceipt.selected = cloudReceipt.selected.map(candidate => {
+      const sources = mergeSources(candidate.existing_story?.sources, candidate.sources);
+      const routed = { ...candidate, sources };
+      routed.content_hash = storyContentHash(routed);
+      routed.claims = claimLedgerFor(sources, routed.story_id, now);
+      routed.source_integrity = sourceIntegrityForStory(routed, registry, matchableStories, now);
+      return routed;
+    });
+    report.cloud_selection = { run_id: options.cloudSelection.snapshot.run_id,
+      input_hash: options.cloudSelection.snapshot.input_hash, replay: cloudReceipt.replay,
+      selected: cloudReceipt.selected.map(row => ({ story_id: row.story_id, ...row.cloud_selection })) };
+    newsroom.decisions ||= [];
+    for (const decision of options.cloudSelection.result.decisions) newsroom.decisions.push({
+      at: now, decision: 'cloud_editorial_selection', selection_run_id: options.cloudSelection.snapshot.run_id,
+      input_hash: options.cloudSelection.snapshot.input_hash, ...decision });
+  }
   report.story_clusters = freshCandidates.length;
   report.pending_stories_retried = retryCandidates.length;
   const month = now.slice(0, 7);
@@ -1463,7 +1521,7 @@ export async function runWirkungsticker(options = {}) {
   // waere schlimmer als eine Dublette.
   const publishedMatchable = (storyStore.stories || []).filter((story) => story.published && story.listed !== false);
   const duplicateOfPublished = clusters.filter((candidate) => {
-    if (lifoExpiredIds.has(candidate.story_id)) return false;
+    if (cloudReceipt || lifoExpiredIds.has(candidate.story_id)) return false;
     if (candidate.existing_story?.published || candidate.impact_reassessment || candidate.reassessment) return false;
     if (candidate.followup_due || candidate.deepening_due) return false;
     const item = { title: candidate.title, summary: candidate.sources?.[0]?.summary || '',
@@ -1486,10 +1544,10 @@ export async function runWirkungsticker(options = {}) {
   const currentClusters = clusters.filter((candidate) => !lifoExpiredIds.has(candidate.story_id) && !duplicateIds.has(candidate.story_id));
   report.lifo_expired = lifoExpired.length;
   report.lifo_horizon_hours = lifoHorizonMs / 3600000;
-  const initiallyEligible = currentClusters
+  const initiallyEligible = cloudReceipt ? cloudReceipt.selected.filter(candidate => !lifoExpiredIds.has(candidate.cloud_selection.candidate_id)) : currentClusters
     .filter((candidate) => candidate.reassessment || candidate.impact_reassessment || candidate.preanalysis.internal_relevance_score >= 30 || candidate.preanalysis.discovery_review?.review === true)
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
-  const eligible = eventAuditEnabled ? balanceEventQueue(initiallyEligible.map(candidate => ({ ...candidate, selection_base_priority: queuePriority(candidate, now) })), categoryCoverage(storyStore.stories, now)) : initiallyEligible;
+  const eligible = cloudReceipt ? initiallyEligible : eventAuditEnabled ? balanceEventQueue(initiallyEligible.map(candidate => ({ ...candidate, selection_base_priority: queuePriority(candidate, now) })), categoryCoverage(storyStore.stories, now)) : initiallyEligible;
   const eligibleIds = new Set(eligible.map(candidate => candidate.story_id));
   report.locally_rejected = currentClusters.length - eligible.length;
   report.eligible_stories = eligible.length;
@@ -1602,7 +1660,11 @@ export async function runWirkungsticker(options = {}) {
   report.catchup_control = catchUp.control;
   if (catchUp.control.enabled) report.budget_throttle = { ...report.budget_throttle,
     policy_version: "2.1", max_stories_per_run: 6, mode: "bounded_backlog_catchup" };
-  let { selected, deferred } = mode === 'api' ? partitionAiQueue(ready, catchUp.stage, maxAiStories, now) : { selected: [], deferred: [] };
+  const cloudLimit = Math.max(0, Math.min(maxAiStories, catchUp.stage.max_stories_per_run ?? Infinity));
+  let { selected, deferred } = mode !== 'api' ? { selected: [], deferred: [] }
+    : cloudReceipt ? { selected: stage.stage >= 3 ? [] : ready.slice(0, cloudLimit),
+      deferred: stage.stage >= 3 ? ready : ready.slice(cloudLimit) }
+      : partitionAiQueue(ready, catchUp.stage, maxAiStories, now);
   // Natalies Meldungsauftraege gehen vor (meldungsauftraege-lauf.mjs). Sie
   // landen nie im oeffentlichen Bestand, sondern in ihrer Freigabeliste.
   const meldungsauftraege = mode === 'api' ? ladeAuftraege(options.orderFile ?? process.env.WOEK_NEWS_ORDER_FILE) : [];
@@ -1703,7 +1765,7 @@ export async function runWirkungsticker(options = {}) {
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }
 
-  const aiEnabled = mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
+  const aiEnabled = !(options.cloudSelection && options.dryRun) && mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
     assertAutomaticImpactTransport(typeof options.callAiImpl === 'function');
     // Direktbetrieb: bis zu vier Aufrufe je Lauf mit je bis zu sechs Minuten.
@@ -2161,6 +2223,7 @@ export async function runWirkungsticker(options = {}) {
   usage.runs = retainUsageHistory(usage.runs, now);
   report.cost_monitoring = operatingCostSummary(usage, state.cost_monitoring_started_at, state.budget_fx, report.completed_at);
 
+  if (cloudReceipt && !cloudReceipt.replay) acknowledgeSelection(state, options.cloudSelection.snapshot, cloudReceipt, now);
   if (!options.dryRun) {
     writeJson(files.state, state);
     writeJson(files.stories, storyStore);

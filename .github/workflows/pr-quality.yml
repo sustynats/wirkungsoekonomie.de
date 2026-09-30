@@ -15,6 +15,28 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  cloud-selection:
+    name: Free Cloud selection adapter and runner handoff
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Whitespace and JavaScript syntax
+        run: |
+          git diff --check HEAD^ HEAD
+          node --check scripts/news/cloud-selection.mjs
+          node --check scripts/news/cloud-selection-cli.mjs
+          node --check scripts/news/run.mjs
+          node --check scripts/news/run-api.mjs
+      - name: Free fixtures and real runner export/import/replay
+        run: node --test tests/news/cloud-selection.test.mjs
+      - name: Existing news data validator
+        run: npm run news:validate
   chatgpt-bridge:
     name: Dropbox bridge authorization, encryption and immutable delivery
     runs-on: ubuntu-latest

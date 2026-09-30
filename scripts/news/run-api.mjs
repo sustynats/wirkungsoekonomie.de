@@ -8,8 +8,15 @@ if (process.env.WIRKUNGSTICKER_PROCESSING_MODE !== 'api') { console.error('DIREC
 const [{ runWirkungsticker }, { callOpenAiDirect, newsModel }] = await Promise.all([import('./run.mjs'), import('./openai-transport.mjs')]);
 if (!dryRun && !process.env.OPENAI_API_KEY) { console.error('OPENAI_API_KEY_MISSING'); process.exit(1); }
 const model = newsModel();
+const selectionPaths = [process.env.WOEK_NEWS_CLOUD_SNAPSHOT_FILE, process.env.WOEK_NEWS_CLOUD_RESULT_FILE];
+if (selectionPaths.some(Boolean) && !selectionPaths.every(Boolean)) throw new Error('CLOUD_SELECTION_FILES_INCOMPLETE');
+const cloudSelection = selectionPaths.every(Boolean) ? await (async () => {
+  const fs = await import('node:fs');
+  return { snapshot: JSON.parse(fs.readFileSync(selectionPaths[0], 'utf8')),
+    result: JSON.parse(fs.readFileSync(selectionPaths[1], 'utf8')) };
+})() : null;
 try {
-  const report = await runWirkungsticker({ dryRun, callAiImpl: (stories, options) => callOpenAiDirect(stories, { ...options, model }) });
+  const report = await runWirkungsticker({ dryRun, ...(cloudSelection ? { cloudSelection } : {}), callAiImpl: (stories, options) => callOpenAiDirect(stories, { ...options, model }) });
   console.log(JSON.stringify({ ...report, transport: 'direct-single-call-1', configured_model: model }, null, 2));
   // Ein gestörter Anbieter ist eine Betriebsmeldung des Health-Schritts, kein
   // Grund, den Importstand zu verwerfen: Zustand wird gebaut und committet,
