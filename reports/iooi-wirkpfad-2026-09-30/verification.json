@@ -29,7 +29,8 @@
     "scripts/lib/impact-architecture-visual.mjs",
     "assets/visuals/model/woek_wirkpfad_iooi_architektur.svg",
     "assets/visuals/model/woek_wirkpfad_iooi_architektur_mobile.svg",
-    "tests/site/iooi-architecture.test.mjs"
+    "tests/site/iooi-architecture.test.mjs",
+    "tests/news/explanation-layers.test.mjs"
   ],
   "generatedOutputs": [
     "assets/data/glossary-lookup.json",
@@ -144,6 +145,24 @@
       "result": "PASS",
       "brokenInternalLinks": 0,
       "details": "Bibliotheks-/Publikations-Tests, öffentliche JSON/JS/HTML-Prüfung, historische Kennzeichnung, Typografie, strikte Linkprüfung, Indexierbarkeit, Umfragen, Seitenfragen und Institutsprojekte bestanden."
+    },
+    {
+      "command": "node --test tests/news/explanation-layers.test.mjs",
+      "result": "PASS",
+      "tests": 6,
+      "details": "Bestehender Test erwartete wörtlich 'Sechs Fragen'; prüft nun die beauftragte Präzisierung 'Sechs Prüffragen' und ausdrücklich keine sechs Wirkungsstationen."
+    },
+    {
+      "command": "npm run check:url-baseline",
+      "result": "PASS",
+      "baseline": 4623,
+      "removed": 0
+    },
+    {
+      "command": "npm run news:test",
+      "result": "PASS",
+      "tests": 1753,
+      "details": "Vollständige Suite nach Anpassung des bestehenden Erklärungsebenen-Tests erneut erfolgreich."
     }
   ],
   "audit": {
@@ -168,5 +187,8 @@
     "workflowChanged": false
   },
   "openSubstantiveIssues": [],
-  "separateWork": "Der ältere Wirkungsfenster-Entwurf in Draft-PR #1010 wurde nicht verändert oder zusammengeführt."
+  "separateWork": "Der ältere Wirkungsfenster-Entwurf in Draft-PR #1010 wurde nicht verändert oder zusammengeführt.",
+  "ciCorrections": [
+    "PR-Gate deckte einen veralteten Überschriftentest in tests/news/explanation-layers.test.mjs auf. Die fachliche Ebenentrennung wird jetzt dort zusätzlich abgesichert."
+  ]
 }

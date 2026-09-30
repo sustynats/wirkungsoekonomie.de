@@ -27,7 +27,8 @@ test("Erklärungsebenen: konkretes Methodikbeispiel und sechs Prüfschritte vor 
 test("Erklärungsebenen: optionale IOOI-Methode, offene Evidenz und versioniertes Methodensystem", () => {
   const intro = read("so-wirkt-wirkungsoekonomie/index.html");
   assert.ok(intro.includes("IOOI steht für Input, Output, Outcome und Impact"));
-  assert.ok(intro.includes("Sechs Fragen"));
+  assert.match(intro, /Sechs Prüffragen/);
+  assert.match(intro, /sechs Prüf-Fragen, keine sechs Stationen/);
   assert.ok(intro.includes("ambivalent"));
   assert.ok(intro.includes("bleibt die Einordnung offen"));
   assert.doesNotMatch(intro, /Die WÖk ergänzt Evidenz|Input, Aktivität, Output/);
