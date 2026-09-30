@@ -163,6 +163,22 @@
       "result": "PASS",
       "tests": 1753,
       "details": "Vollständige Suite nach Anpassung des bestehenden Erklärungsebenen-Tests erneut erfolgreich."
+    },
+    {
+      "command": "GitHub PR quality gate",
+      "result": "PASS",
+      "commit": "4dce89807a5e97d5fc1001d98ddbf2d1b4322c23",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/actions/runs/36786602208",
+      "details": "Alle drei Jobs erfolgreich: Sicherheit, Linux-Rasterisierung, vollständiger Website-Build mit Such-/Taxonomie-Reproduzierbarkeit, Artefakt, Privacy und URL-Gates."
+    },
+    {
+      "command": "npm run check:state-sustainability",
+      "result": "PASS",
+      "publicHtmlFiles": 19987,
+      "requiredTerms": 18,
+      "officialSources": 14,
+      "masterItems": 621,
+      "details": "Nach Zusammenführung aktueller Ticker-Daten zusätzlich lokal geprüft; News- und IOOI-Tests erneut vollständig bestanden."
     }
   ],
   "audit": {
