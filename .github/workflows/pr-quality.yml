@@ -38,6 +38,10 @@ jobs:
           node --check scripts/news/run-api.mjs
       - name: Free fixtures and real runner export/import/replay
         run: node --test tests/news/cloud-selection.test.mjs tests/news/edition-plan.test.mjs
+      - name: Existing Typecheck and public language lint
+        run: |
+          npm run typecheck
+          npm run lint
       - name: Existing news data validator
         run: npm run news:validate
   chatgpt-bridge:
