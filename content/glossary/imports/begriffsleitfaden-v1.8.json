@@ -1,0 +1,64 @@
+{
+  "version": "1.8",
+  "date": "2026-09-30",
+  "terms": [
+    {
+      "termId": "wirkungsfenster",
+      "canonicalLabel": "Wirkungsfenster",
+      "slug": "wirkungsfenster",
+      "aliases": [],
+      "shortDefinition": "Bereich der Anwendung einer Maßnahme, in dem sie unter benannten Bedingungen ausreichend zum Wirkungsziel beitragen kann, ohne festgelegte Wirkungsgrenzen zu verletzen.",
+      "longDefinition": "Das Wirkungsfenster bezeichnet den kontext- und zeitabhängigen Bereich der Ausgestaltung, Intensität, Dauer und Kombination einer Maßnahme, in dem unter offengelegten Annahmen ein zuvor begründeter Zielbeitrag und positive Netto-Wirkung für Mensch, Planet und Demokratie erwartet werden können, ohne festgelegte Wirkungsgrenzen zu verletzen. Vor der Anwendung wird dieser Bereich als überprüfbare Hypothese beschrieben. Beobachtung, Evidenzprüfung und Rückkopplung dienen dazu, diese Annahme zu überprüfen und bei Bedarf die Anwendung zu verändern. Die Abgrenzung kann offen bleiben; nicht für jede Maßnahme lässt sich ein solcher Bereich begründen.",
+      "woekRelation": "WÖk-Präzisierungsbegriff für Gestaltung und Steuerung, anwendungsbezogen zu prüfen; kein extern validierter Universalstandard. Er verbindet Vorwirkung, Ermittlung, Evidenz und Bewertung, Schutz und Systemprüfung sowie Rückkopplung innerhalb der bestehenden sechs Module. Er ist weder ein siebtes Modul noch eine zusätzliche Pflichtstufe im Wirkungsrad.",
+      "usageNote": "Zielbeitrag, Schutzgrenzen, Evidenz und Entscheidung getrennt dokumentieren. Ein Wirkungsfenster kann mehrdimensional, unbekannt oder leer sein. Zahlenbereiche brauchen tragfähige Grundlagen; fehlende Angaben bleiben offen, nicht null oder neutral. Kein Gesamtscore, Optimalpunkt, Wirkungsnachweis oder automatischer Entscheid. Das therapeutische Fenster dient nur als medizinische Analogie, nicht als Synonym.",
+      "statusNote": "Konzeptionelle Präzisierung der WÖk, Begriffsleitfaden v1.8 vom 30. September 2026. Die medizinische Quelle erläutert ausschließlich die Analogie und validiert keine gesellschaftliche Anwendung.",
+      "status": "woek-praezisierungsbegriff",
+      "category": "Steuerungsbegriff",
+      "type": "Gestaltungs- und Prüfbegriff",
+      "version": "1.8",
+      "reviewStatus": "redaktionell präzisiert",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.8.md",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.8.md",
+      "sourceSection": "Ergänzung v1.8: Wirkungsfenster",
+      "sourceProvenance": "Die Definition stammt aus dem WÖk-Begriffsleitfaden. Die FDA-Quelle beschreibt das therapeutische Fenster im medizinischen Originalkontext; sie ist Analogiequelle, kein Wirkungsnachweis oder Universalstandard der WÖk.",
+      "officialSources": [
+        "Natalie Weber: Führender Begriffsleitfaden der Wirkungsökonomie v1.8|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+        "FDA: Setting and Implementing Standards for Narrow Therapeutic Index Drugs (medizinische Analogie)|https://www.fda.gov/drugs/cder-conversations/setting-and-implementing-standards-narrow-therapeutic-index-drugs"
+      ],
+      "structuredDataType": "DefinedTerm",
+      "relatedTools": [{"title":"Weniger Essen wegwerfen, ausreichend versorgen","url":"/verstehen/wirkungsfenster/"}],
+      "relatedTerms": ["wirkstoff", "wirkungsgrenze", "wirkungslenkung", "wirkungsrueckkopplung", "wirkungsmonitoring", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkungshypothesen-register", "nebenwirkung", "wechselwirkung", "counterfactual"],
+      "doNotConfuseWith": [
+        "Therapeutisches Fenster: medizinische Analogie, kein bedeutungsgleiches Synonym und keine Gesellschaft-als-Patient-Logik.",
+        "Wirkungsgrenze: begründete Schutzlinie; das Wirkungsfenster beschreibt einen möglichen Anwendungsbereich unter diesen Grenzen.",
+        "Wirkungsraum: Zusammenhang, in dem sich Zustände verändern; kein Anwendungsfenster.",
+        "Wirkungskorridor im Benchmark-Kontext: vorhandene Vergleichseinordnung, kein neuer Name für Wirkungsfenster.",
+        "Wirkungsnachweis und Entscheidung: eine Hypothese ersetzt weder Evidenz noch eine zuständige, rechtlich und fachlich begründete Entscheidung."
+      ],
+      "examples": ["Fiktive Schulküche: Weniger Lebensmittelabfall und ausreichende Versorgung gemeinsam prüfen. Passende Erstportionen, verlässlicher kostenloser Nachschlag, Mengenplanung und Zugänglichkeit bilden eine zu prüfende Kombination. Es werden keine numerischen Fenstergrenzen oder realen Pilotbefunde behauptet."],
+      "deepGlossarySections": [
+        {"title":"Ausgestaltung gemeinsam prüfen", "body":"Vorwirkung beschreibt Varianten, Intensität, Dauer, Voraussetzungen und Hypothesen. Wirkungsermittlung, Evidenz und Bewertung prüfen tatsächliche Umsetzung und Veränderungen. Schutz und Systemprüfung betrachten Grenzen, Verteilung, Nebenfolgen und Wechselwirkungen. Rückkopplung legt Beobachtung, Zuständigkeit und Anpassung fest.", "items":["Eine Einzelmaßnahme muss nicht das gesamte Problem lösen; ihr Zielbeitrag muss begründet sein.","Unterlassen und Alternativen ebenfalls prüfen. Stabilisierung und vermiedene Verschlechterung benötigen ein Gegenfaktum.","Wirkungshypothese: Welche Annahme ist widerlegbar? Wirkungszeit: Wann kann eine Veränderung eintreten, und wie lange hält sie an?"]},
+        {"title":"Schutz und Lernen", "body":"Schutzgrenzen werden nicht verschoben, um ein scheinbar größeres Fenster zu erzeugen. Nichtkompensation schützt vor der Verrechnung schwerer Schäden zwischen Gruppen, Feldern, Orten oder Zeiten; Reverse Merit Order begrenzt die Bewertung nach der bestehenden Schutzlogik.", "items":["Geplante Intensität und tatsächliche Umsetzung getrennt festhalten.","Bleibt Wirkung aus, zunächst Umsetzung, Mechanismus, Voraussetzungen, Daten und Zeitverzug prüfen; nicht automatisch den Einsatz erhöhen.","Gegenstandsbewertung und Folgen des darauf gerichteten Steuerungsinstruments getrennt prüfen."]},
+        {"title":"Medizinische Analogie mit eigener Grenze", "body":"Die FDA erläutert das therapeutische Fenster als Dosisbereich wirksamer Behandlung unter Vermeidung schwerer Nebenwirkungen. Das bedeutet keine Nebenwirkungsfreiheit. Wirkstoff bleibt in der WÖk eine didaktische Analogie; gesellschaftliche Systeme werden nicht wie Patienten behandelt.", "items":["Die medizinische Originalbedeutung bleibt bestehen und wird nicht automatisch auf den WÖk-Begriff verlinkt.","Für gesellschaftliche Maßnahmen wird weder eine allgemeine Dosiskurve noch eine schädliche Überdosis bei jeder Maßnahme unterstellt."]}
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "pageUrl": "/begriffe/wirkungsfenster/",
+      "glossaryOrderKey": "Wirkungsfenster"
+    }
+  ],
+  "extensions": [
+    {"termId":"wirkstoff", "title":"Ausgestaltung als Analogie", "body":"Die didaktische Analogie kann erklären, warum Intensität, Dauer, Kombination und Voraussetzungen einer Maßnahme zu prüfen sind. Das Wirkungsfenster beschreibt einen möglichen Anwendungsbereich. Es setzt Gesellschaft nicht mit einem Patienten gleich, behauptet keine Nebenwirkungsfreiheit und unterstellt nicht jeder Maßnahme eine schädliche Überdosis."},
+    {"termId":"wirkungsgrenze", "title":"Bezug zum Wirkungsfenster", "body":"Die Grenze bleibt die vorab begründete Schutzlinie. Das Wirkungsfenster beschreibt einen möglichen Anwendungsbereich unter diesen Grenzen. Grenzen dürfen nicht verschoben werden, um ein scheinbar größeres Fenster zu erzeugen. Nichtkompensation und Reverse Merit Order bleiben maßgeblich."},
+    {"termId":"wirkungslenkung", "title":"Lenkung und Steuerung im Anwendungsbereich", "body":"Wirkungslenkung gestaltet Anreize gezielt; Wirkungssteuerung umfasst Planung, Beobachtung, Bewertung und Verbesserung. Für beide präzisiert das Wirkungsfenster die Prüfung von Ausgestaltung, Intensität, Dauer und Voraussetzungen. Die Bewertung eines Gegenstands und die Folgen des darauf gerichteten Steuerungsinstruments sind getrennte Prüfgegenstände."},
+    {"termId":"wirkungsrueckkopplung", "title":"Anwendung überprüfen und verändern", "body":"Beim Wirkungsfenster wird dokumentiert, welche Beobachtung zu welcher Prüfung führt, wer zuständig ist und wann angepasst wird. Geplante Anwendung und tatsächliche Umsetzung werden verglichen. Ausbleibende Wirkung führt zunächst zur Prüfung von Umsetzung, Mechanismus, Voraussetzungen, Daten und Zeitverzug; sie rechtfertigt keine automatische Intensivierung."},
+    {"termId":"wirkungsmonitoring", "title":"Beobachtung des angenommenen Wirkungsfensters", "body":"Beobachtungsgrößen erfassen tatsächliche Umsetzung, Zielbeitrag, Verteilung und mögliche Grenzverletzungen über die Wirkungszeit. Ein Signal ist noch kein Kausalnachweis und keine automatische Entscheidung. Fehlende Angaben bleiben offen; Prüfzeitpunkt und Verantwortlichkeit verbinden Monitoring mit Evidenzprüfung und Rückkopplung."},
+    {"termId":"wirkungspotenzial", "title":"Anwendungsbedingungen konkretisieren", "body":"Das Wirkungsfenster fragt, bei welcher Ausgestaltung und unter welchen Voraussetzungen das mögliche Wirkungspotenzial ausreichend zum begründeten Ziel beitragen kann. Die Annahme ist vor der Anwendung kein Wirkungsnachweis."},
+    {"termId":"wirkungsrisiko", "title":"Risiken begrenzen", "body":"Welche Risiken, betroffenen Gruppen und Schutzgrenzen begrenzen ein angenommenes Wirkungsfenster? Auch Nebenfolgen außerhalb des unmittelbaren Anwendungsorts und erst später eintretende Schäden sind zu prüfen."},
+    {"termId":"wirkmechanismus", "title":"Ausgestaltung und Mechanismus", "body":"Warum sollte gerade die gewählte Kombination unter den benannten Voraussetzungen einen Zielbeitrag ermöglichen? Das Wirkungsfenster konkretisiert diese Frage; plausible Mechanismen und beobachtete Zustandsveränderungen bleiben getrennt."},
+    {"termId":"wirkungshypothesen-register", "title":"Wirkungsfenster als überprüfbare Hypothese", "body":"Im bestehenden Register kann die Annahme zum Wirkungsfenster mit Empfängern, Raum, Wirkungszeit, Baseline/Gegenfaktum, Voraussetzungen und Gegenbelegen dokumentiert werden. Ein unbekannter oder leerer Anwendungsbereich bleibt ausdrücklich sichtbar."},
+    {"termId":"nebenwirkung", "title":"Zielbeitrag und Nebenfolgen", "body":"Ein angenommenes Wirkungsfenster behauptet keine Nebenwirkungsfreiheit. Welche zusätzlichen Folgen entstehen für andere Gruppen, Felder, Orte oder Zeiten, und berühren sie festgelegte Wirkungsgrenzen?"},
+    {"termId":"wechselwirkung", "title":"Kombinationen statt isolierter Intensität", "body":"Ein Wirkungsfenster kann von der Kombination mehrerer Maßnahmen abhängen. Voraussetzungen, Wechselwirkungen und zeitliche Verzögerungen sind zu prüfen; eine höhere Intensität einer Einzelmaßnahme ist nicht automatisch geeigneter."}
+  ]
+}

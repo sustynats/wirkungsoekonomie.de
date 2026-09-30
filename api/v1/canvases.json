@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T11:51:25.422Z",
+  "generatedAt": "2026-09-30T20:08:22.992Z",
   "version": "2.0",
   "canonicalSource": "content/methods/woems-canvas.json",
   "publicExport": "public/data/woems-canvas.json",
@@ -2300,32 +2300,32 @@
         {
           "key": "entscheidungsfrage-und-optionen-darstellen",
           "label": "Entscheidungsfrage und Optionen darstellen",
-          "leitfrage": "Wie wird „Entscheidungsfrage und Optionen darstellen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Frage, welcher Zielbeitrag, welche Empfänger, welcher Raum und Zeitraum? Welche Alternativen einschließlich Unterlassen?"
         },
         {
           "key": "evidenz-und-annahmenstatus-zusammenfassen",
           "label": "Evidenz- und Annahmenstatus zusammenfassen",
-          "leitfrage": "Wie wird „Evidenz- und Annahmenstatus zusammenfassen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Baseline, welches Gegenfaktum, welche Evidenz und Unsicherheit tragen das angenommene Wirkungsfenster?"
         },
         {
           "key": "wirkungsprofil-und-empfanger-vergleichen",
           "label": "Wirkungsprofil und Empfänger vergleichen",
-          "leitfrage": "Wie wird „Wirkungsprofil und Empfänger vergleichen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Parameter und Voraussetzungen gelten? Geplante Anwendung, tatsächliche Umsetzung und Folgen getrennt darstellen."
         },
         {
           "key": "grenzen-risiken-und-resilienz-prufen",
           "label": "Grenzen, Risiken und Resilienz prüfen",
-          "leitfrage": "Wie wird „Grenzen, Risiken und Resilienz prüfen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Schutzgrenzen gelten mit welcher Quelle und Zuständigkeit? Welche Verteilung, Neben- und Wechselwirkungen bleiben kritisch?"
         },
         {
           "key": "empfehlung-mit-gegenargumenten-formulieren",
           "label": "Empfehlung mit Gegenargumenten formulieren",
-          "leitfrage": "Wie wird „Empfehlung mit Gegenargumenten formulieren“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Gegenargumente oder unbekannten beziehungsweise leeren Anwendungsbereiche begrenzen die Schlussfolgerung? Kein automatischer Entscheid."
         },
         {
           "key": "entscheidung-auflagen-monitoring-und-review-dokumentieren",
           "label": "Entscheidung, Auflagen, Monitoring und Review dokumentieren",
-          "leitfrage": "Wie wird „Entscheidung, Auflagen, Monitoring und Review dokumentieren“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Beobachtungsgrößen, Zeitverzüge, Prüfzeitpunkte, Verantwortlichkeiten und Versionen verbinden Entscheidung und Lernen?"
         }
       ],
       "pflichtfelder": [
@@ -2925,47 +2925,47 @@
         {
           "key": "aktueller-anreiz",
           "label": "aktueller Anreiz",
-          "leitfrage": "Was ist zu „aktueller Anreiz“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Anreize bestehen? Welche Alternative einschließlich Unterlassen wird mit welcher Baseline und welchem Gegenfaktum verglichen?"
         },
         {
           "key": "zielwirkung",
           "label": "Zielwirkung",
-          "leitfrage": "Was ist zu „Zielwirkung“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welcher begründete Zielbeitrag für welche Empfänger, welchen Raum und Zeitraum wird erwartet?"
         },
         {
           "key": "mechanismus",
           "label": "Mechanismus",
-          "leitfrage": "Was ist zu „Mechanismus“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Voraussetzungen und widerlegbaren Annahmen begründen das Wirkungsfenster?"
         },
         {
           "key": "empfanger",
           "label": "Empfänger",
-          "leitfrage": "Was ist zu „Empfänger“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Wer kann die Maßnahme tatsächlich nutzen und wer könnte ausgeschlossen werden?"
         },
         {
           "key": "signal",
           "label": "Signal",
-          "leitfrage": "Was ist zu „Signal“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Ausgestaltung, Intensität, Dauer und Kombination sind geplant und tatsächlich umgesetzt?"
         },
         {
           "key": "verteilung",
           "label": "Verteilung",
-          "leitfrage": "Was ist zu „Verteilung“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Wie verteilen sich Nutzen, Belastungen und Nebenfolgen zwischen Gruppen, Orten und Zeiten?"
         },
         {
           "key": "risiko",
           "label": "Risiko",
-          "leitfrage": "Was ist zu „Risiko“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Schutzgrenzen gelten mit welcher Quelle und Zuständigkeit? Welche Wechselwirkungen bleiben offen?"
         },
         {
           "key": "gegenkennzahl",
           "label": "Gegenkennzahl",
-          "leitfrage": "Was ist zu „Gegenkennzahl“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Beobachtungsgrößen erfassen Umsetzung und Schutz, welche Evidenz, Unsicherheit und Zeitverzüge bestehen?"
         },
         {
           "key": "ruckkopplung",
           "label": "Rückkopplung",
-          "leitfrage": "Was ist zu „Rückkopplung“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Wer prüft wann und entscheidet über Anpassungen? Wie werden Annahmen und Änderungen versioniert?"
         }
       ],
       "pflichtfelder": [
@@ -3424,32 +3424,32 @@
         {
           "key": "pilotfrage-und-entscheidung-bestimmen",
           "label": "Pilotfrage und Entscheidung bestimmen",
-          "leitfrage": "Wie wird „Pilotfrage und Entscheidung bestimmen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welchen begründeten Zielbeitrag soll die Hypothese prüfen? Welche Alternativen einschließlich Unterlassen?"
         },
         {
           "key": "scope-und-kontext-reprasentativ-wahlen",
           "label": "Scope und Kontext repräsentativ wählen",
-          "leitfrage": "Wie wird „Scope und Kontext repräsentativ wählen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Für welche Empfänger, welchen Raum und Zeitraum gelten Voraussetzungen und Übertragbarkeitsgrenzen?"
         },
         {
           "key": "wirkungs-und-betriebs-hypothesen-festlegen",
           "label": "Wirkungs- und Betriebs-Hypothesen festlegen",
-          "leitfrage": "Wie wird „Wirkungs- und Betriebs-Hypothesen festlegen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Ausgestaltung, Intensität, Dauer und Kombination bilden das angenommene Wirkungsfenster? Geplante und tatsächliche Anwendung getrennt erfassen."
         },
         {
           "key": "betroffene-schutz-und-ethik-einbeziehen",
           "label": "Betroffene, Schutz und Ethik einbeziehen",
-          "leitfrage": "Wie wird „Betroffene, Schutz und Ethik einbeziehen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Schutzgrenzen samt Quelle und Zuständigkeit, Verteilungsfolgen, Neben- und Wechselwirkungen sind zu beachten?"
         },
         {
           "key": "kii-daten-und-vergleich-planen",
           "label": "KII, Daten und Vergleich planen",
-          "leitfrage": "Wie wird „KII, Daten und Vergleich planen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Baseline, welches Gegenfaktum und welche Beobachtungsgrößen sind geeignet? Welche Evidenz, Unsicherheit und Zeitverzüge bleiben?"
         },
         {
           "key": "stop-redesign-und-skalierungskriterien-freigeben",
           "label": "Stop-, Redesign- und Skalierungskriterien freigeben",
-          "leitfrage": "Wie wird „Stop-, Redesign- und Skalierungskriterien freigeben“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Wer prüft wann, wer darf stoppen und welche Version gilt? Ein Pilot erzeugt keine automatische Freigabe für andere Kontexte."
         }
       ],
       "pflichtfelder": [
@@ -3600,32 +3600,32 @@
         {
           "key": "kritische-risiken-und-grenzen-auswahlen",
           "label": "Kritische Risiken und Grenzen auswählen",
-          "leitfrage": "Wie wird „Kritische Risiken und Grenzen auswählen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Schutzgrenzen mit Quelle und Zuständigkeit sowie welche Risiken für welche Empfänger begrenzen das Wirkungsfenster?"
         },
         {
           "key": "fuhrende-signale-und-datenquellen-definieren",
           "label": "Führende Signale und Datenquellen definieren",
-          "leitfrage": "Wie wird „Führende Signale und Datenquellen definieren“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Beobachtungsgrößen zeigen tatsächliche Anwendung und Zielbeitrag? Baseline, Gegenfaktum, Raum und Zeit benennen."
         },
         {
           "key": "schwellen-und-kombinationen-festlegen",
           "label": "Schwellen und Kombinationen festlegen",
-          "leitfrage": "Wie wird „Schwellen und Kombinationen festlegen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Parameterkombination und Voraussetzungen werden geprüft? Zahlenbereiche nur mit Evidenz; fehlende Angaben offen lassen."
         },
         {
           "key": "verifikation-und-fehlalarmbehandlung-planen",
           "label": "Verifikation und Fehlalarmbehandlung planen",
-          "leitfrage": "Wie wird „Verifikation und Fehlalarmbehandlung planen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Unsicherheit und Zeitverzüge beeinflussen Signale? Umsetzung, Mechanismus, Voraussetzungen und Daten vor Intensivierung prüfen."
         },
         {
           "key": "eskalation-schutz-und-stop-recht-regeln",
           "label": "Eskalation, Schutz und Stop-Recht regeln",
-          "leitfrage": "Wie wird „Eskalation, Schutz und Stop-Recht regeln“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Wer überprüft wann und entscheidet mit welcher Version über Alternativen, Anpassung oder Stop? Verteilung und Nebenfolgen berücksichtigen."
         },
         {
           "key": "wirksamkeit-des-fruhwarnsystems-testen",
           "label": "Wirksamkeit des Frühwarnsystems testen",
-          "leitfrage": "Wie wird „Wirksamkeit des Frühwarnsystems testen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Wie werden geplante und tatsächliche Anwendung, Fehlalarme und übersehene Veränderungen getrennt überprüft?"
         }
       ],
       "pflichtfelder": [
@@ -3644,37 +3644,37 @@
         {
           "key": "erwartet",
           "label": "erwartet",
-          "leitfrage": "Was ist zu „erwartet“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welcher Zielbeitrag, welche Empfänger, welcher Raum und Zeitraum wurden für das Wirkungsfenster angenommen? Welche Parameter und Voraussetzungen galten?"
         },
         {
           "key": "beobachtet",
           "label": "beobachtet",
-          "leitfrage": "Was ist zu „beobachtet“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Was wurde tatsächlich umgesetzt und beobachtet, gegenüber welcher Baseline und welchem Gegenfaktum? Was bleibt offen?"
         },
         {
           "key": "erklarung",
           "label": "Erklärung",
-          "leitfrage": "Was ist zu „Erklärung“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Tragen Mechanismus, Voraussetzungen und Daten die Erklärung? Welcher Zeitverzug, welche Evidenz und Unsicherheit bestehen?"
         },
         {
           "key": "nebenwirkung",
           "label": "Nebenwirkung",
-          "leitfrage": "Was ist zu „Nebenwirkung“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Verteilung, Neben- und Wechselwirkungen sowie Schutzgrenzen mit Quelle und Zuständigkeit sind berührt?"
         },
         {
           "key": "lernschleife",
           "label": "Lernschleife",
-          "leitfrage": "Was ist zu „Lernschleife“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Welche Alternativen einschließlich Unterlassen und welche Änderung der Ausgestaltung sind begründet? Grenzen nicht verschieben."
         },
         {
           "key": "entscheidung",
           "label": "Entscheidung",
-          "leitfrage": "Was ist zu „Entscheidung“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Wie unterscheiden sich Zielbeitrag, Schutzprüfung, Evidenz und Entscheidung? Kein Gesamtscore oder automatisches Erhöhen des Einsatzes."
         },
         {
           "key": "owner",
           "label": "Owner",
-          "leitfrage": "Was ist zu „Owner“ im konkreten Fall festzuhalten?"
+          "leitfrage": "Wer setzt die Anpassung um, wann wird erneut geprüft und wie werden Ausgangshypothese und neue Version dokumentiert?"
         }
       ],
       "pflichtfelder": [
@@ -3957,32 +3957,32 @@
         {
           "key": "zielzustand-und-unverhandelbare-grenzen-festlegen",
           "label": "Zielzustand und unverhandelbare Grenzen festlegen",
-          "leitfrage": "Wie wird „Zielzustand und unverhandelbare Grenzen festlegen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welcher Zielbeitrag für welche Empfänger, welchen Raum und Zeitraum? Welche Schutzgrenzen mit Quelle und Zuständigkeit gelten?"
         },
         {
           "key": "no-regret-und-low-regret-optionen-identifizieren",
           "label": "No-regret- und Low-regret-Optionen identifizieren",
-          "leitfrage": "Wie wird „No-regret- und Low-regret-Optionen identifizieren“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Varianten und Alternativen einschließlich Unterlassen werden gegen welche Baseline und welches Gegenfaktum geprüft?"
         },
         {
           "key": "reversible-experimente-und-vorbereitende-optionen-entwickeln",
           "label": "Reversible Experimente und vorbereitende Optionen entwickeln",
-          "leitfrage": "Wie wird „Reversible Experimente und vorbereitende Optionen entwickeln“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Parameter und Voraussetzungen bilden das vermutete Wirkungsfenster? Geplante und tatsächliche Anwendung getrennt festhalten."
         },
         {
           "key": "pfadabhangigkeiten-lock-ins-und-ubergangskosten-bewerten",
           "label": "Pfadabhängigkeiten, Lock-ins und Übergangskosten bewerten",
-          "leitfrage": "Wie wird „Pfadabhängigkeiten, Lock-ins und Übergangskosten bewerten“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Verteilungsfolgen, Nebenwirkungen und Wechselwirkungen begrenzen die Übertragbarkeit?"
         },
         {
           "key": "trigger-fur-ausbau-wechsel-pause-oder-exit-definieren",
           "label": "Trigger für Ausbau, Wechsel, Pause oder Exit definieren",
-          "leitfrage": "Wie wird „Trigger für Ausbau, Wechsel, Pause oder Exit definieren“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Welche Beobachtungsgrößen, Zeitverzüge und Evidenz tragen Kurswechsel? Was bleibt unsicher oder offen?"
         },
         {
           "key": "portfolio-budgets-und-verantwortlichkeiten-zuordnen",
           "label": "Portfolio, Budgets und Verantwortlichkeiten zuordnen",
-          "leitfrage": "Wie wird „Portfolio, Budgets und Verantwortlichkeiten zuordnen“ für den konkreten Fall nachvollziehbar bearbeitet?"
+          "leitfrage": "Wer prüft wann und entscheidet auf Grundlage welcher Version? Zahlenbereiche nur mit tragfähiger Grundlage."
         }
       ],
       "pflichtfelder": [

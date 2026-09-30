@@ -25,7 +25,7 @@ Lokale/hochgeladene Dateien, die älter sind als die führende Website-Referenz:
 | Gesamte Systemlogik | Die neue Ordnung des Wohlstands | 2026 | `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` (+ Online-Lesefassung `referenz/`) |
 | Management/Realisierung | WÖMM 2.0 | 10.07.2026, 98 S. | `assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf` (+ `bibliothek/eintraege/woemm-2-0/lesen/`) |
 | Methoden | WÖMS 2.0 (152 Methoden, 56 Canvas, 20 Journeys) | 10.07.2026, 387 S. | `assets/downloads/grundlagen/woems-2.0-referenzfassung.pdf` (+ Lesen-Fassung, JSON-Exporte) |
-| Sprache/Begriffe | WÖk-Begriffsleitfaden führend | **v1.5**, 15.08.2026 | `public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf` (+ `content/documents/online/woek-begriffsleitfaden-fuehrend.inc`) |
+| Sprache/Begriffe | WÖk-Begriffsleitfaden führend | **v1.8**, 30.09.2026 | `public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf` (+ `content/documents/online/woek-begriffsleitfaden-fuehrend.inc`) |
 | Öffentliche Begriffe | Glossar der Wirkungsökonomie | laufend | `glossar.html` → `begriffe/` (2281 Seiten), `assets/data/glossary-lookup.json` |
 | Normativ | SDG-/SDG+-Referenzrahmen (Lesefassung) + Onlinefassung | **v0.3** | `assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf` + `verstehen/sdgs-sdgplus/` |
 | Register/Indikatoren | WÖk Master Items | **v1.3 geprüft**, 13.08.2026 | `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` |
@@ -34,7 +34,7 @@ Lokale/hochgeladene Dateien, die älter sind als die führende Website-Referenz:
 ## Wichtige ersetzte/historische Quellen (nicht mehr als Ausgangsquellen verwenden)
 
 - `WOeK_Master_Items_final_v1.2.xlsx` / `woek-master-items-v1-2.pdf` - ersetzt durch v1.3 (622-Item-Zahl nicht mehr kanonisch; jetzt 621 WÖk-IDs, 28 Regeln). Inkonsistenz: `public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf` steht noch auf „aktuell" statt „ersetzt".
-- `WOeK_Begriffsleitfaden_fuehrend_v1.0.md/.pdf` bis v1.4 - historische, zitierfähige Fassungen. Für neue Inhalte gilt v1.5.
+- `WOeK_Begriffsleitfaden_fuehrend_v1.0.md/.pdf` bis v1.7 - historische, zitierfähige Fassungen. Für neue Inhalte gilt v1.8.
 - `Whitepaper-T-SROI.pdf` (multiplikative Logik) + Methodenpapier v1.0 - ersetzt durch Rechenstandard v1.1.
 - Ältere Fassungen (WStG Oktober 2025, ältere WP_*-Papiere, „Wenn Maschinen arbeiten" u.a.) - Status „aktuell"/„ältere Fassung" je Registereintrag prüfen; für Entwicklungsgeschichte verwendbar, nicht ungeprüft als aktuelle WÖk-Position.
 

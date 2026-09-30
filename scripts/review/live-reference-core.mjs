@@ -6,8 +6,8 @@ import crypto from "node:crypto";
 export const SOURCE_VERSION = "2026.0";
 export const IMPORT_VERSION = "2026.1-import";
 export const LIVE_REFERENCE_VERSION = "2026.2-live-reference";
-export const TERMINOLOGY_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.7.md";
-export const TERMINOLOGY_BASE_DATE = "2026-08-21";
+export const TERMINOLOGY_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.8.md";
+export const TERMINOLOGY_BASE_DATE = "2026-09-30";
 
 const htmlRoots = ["referenz", "dokumente"];
 

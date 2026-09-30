@@ -19014,7 +19014,9 @@ figure.impact-process { display: block; margin: var(--space-6) 0; }
 .content-save-tools > summary { cursor: pointer; min-height: 2.75rem; align-content: center; font-size: .9rem; }
 .content-save-tools > summary:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
 .content-save-tools .wirkungsraum-save-row { display: flex; flex-wrap: wrap; gap: .65rem; margin: .5rem 0; }
-@media print { .content-save-tools { display: none; } }
+@media print {
+  .content-save-tools, .skip-link, .wirkungsraum-note-panel { display: none !important; }
+}
 
 .explanation-hero > p, .explanation-hero > details { margin-inline: 0; max-width: 58rem; }
 .content-save-tools { margin-inline: 0; }

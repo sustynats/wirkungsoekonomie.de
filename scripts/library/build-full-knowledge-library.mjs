@@ -11,6 +11,8 @@ const GLOSSARY_INDEX_PATH = path.join(ROOT, "begriffe/index.html");
 const OUT = path.join(ROOT, "bibliothek/index.html");
 const DETAIL_DIR = path.join(ROOT, "bibliothek/eintraege");
 const DETAIL_REGISTRY_PATH = path.join(ROOT, "assets/data/library-source-details.json");
+// Chapter exports may preserve an older edition than their current library entry.
+const readerEditions = JSON.parse(fs.readFileSync(path.join(ROOT, "content/documents/reader-editions.json"), "utf8"));
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 const T_SROI_STANDARD_ONLINE = "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/";
 
@@ -642,6 +644,7 @@ fs.writeFileSync(DETAIL_REGISTRY_PATH, `${JSON.stringify({
   entries: generatedDetailDocuments.map((doc) => ({
     id: doc.id,
     detailSlug: doc.detailSlug,
+    ...(readerEditions[doc.detailSlug] ? { readerEdition: readerEditions[doc.detailSlug] } : {}),
     title: doc.title,
     type: displayType(doc),
     status: doc.status,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T19:11:51.810Z",
+  "generatedAt": "2026-09-30T20:04:52.721Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,21 +205,21 @@
     }
   ],
   "counts": {
-    "total": 3212,
+    "total": 3223,
     "byStatus": {
-      "archiviert": 4,
+      "archiviert": 5,
       "führend": 12,
-      "aktuell": 2630,
+      "aktuell": 2637,
       "Arbeitsfassung": 276,
-      "ältere Fassung": 263,
+      "ältere Fassung": 266,
       "ersetzt": 27
     },
     "byType": {
-      "Glossar": 51,
-      "Grundlagenwerk": 69,
+      "Glossar": 52,
+      "Grundlagenwerk": 70,
       "Methodik": 117,
       "Gesetzesentwurf": 40,
-      "Arbeitspapier": 2661,
+      "Arbeitspapier": 2670,
       "Beispiel": 18,
       "Dossier": 234,
       "Leitbild": 7,
@@ -228,19 +228,19 @@
       "Präsentation": 1
     },
     "bySource": {
-      "download-or-document": 914,
+      "download-or-document": 923,
       "curated-publication": 3,
       "leading-reference": 8,
-      "online-version": 2287
+      "online-version": 2289
     },
-    "downloadFiles": 920,
-    "onlineVersions": 2287
+    "downloadFiles": 929,
+    "onlineVersions": 2289
   },
   "documents": [
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.0",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.0",
@@ -265,7 +265,7 @@
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-4-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.4",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.4",
@@ -290,7 +290,7 @@
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-5-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.5",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.5",
@@ -315,7 +315,7 @@
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-6-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.6",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.6",
@@ -330,6 +330,31 @@
       "urls": {
         "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
         "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-7-pdf",
+      "title": "WÖk-Begriffsleitfaden v1.7 (historisch)",
+      "shortDescription": "Zitierfähige historische Fassung; die kumulative Version 1.8 ergänzt das Wirkungsfenster.",
+      "type": "Glossar",
+      "status": "archiviert",
+      "dateOrStand": "v1.7",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -651,7 +676,7 @@
     },
     {
       "id": "leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html",
-      "title": "WÖk-Begriffsleitfaden führend v1.7",
+      "title": "WÖk-Begriffsleitfaden führend v1.8",
       "shortDescription": "Maßgebliche Sprach- und Methodenreferenz: staatliche Prüfrahmen objektspezifisch einordnen, Wirkungsrelevanz statt Rechtsform prüfen, Problem und Ziel vor Empfehlungen klären und MasterItems von Indikatoren trennen.",
       "type": "Glossar",
       "status": "führend",
@@ -675,12 +700,12 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-7-pdf",
-      "title": "WÖk-Begriffsleitfaden führend v1.7",
-      "shortDescription": "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.7.",
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-8-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.8",
+      "shortDescription": "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.8.",
       "type": "Glossar",
       "status": "führend",
-      "dateOrStand": "v1.7",
+      "dateOrStand": "v1.8",
       "topics": [
         "Grundlagen & Orientierung"
       ],
@@ -690,8 +715,8 @@
         "PDF"
       ],
       "urls": {
-        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
-        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf"
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": true,
@@ -2979,6 +3004,31 @@
       "successorLabel": ""
     },
     {
+      "id": "online-version-referenz-aktualisierung-index-html",
+      "title": "Aktualisierung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "referenz/aktualisierung/",
+        "sourcePath": "referenz/aktualisierung/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "online-version-portale-digitalisierung-ki-wirkungsdatenraeume-algorithmische-fairness-index-html",
       "title": "Algorithmische fairness",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
@@ -4710,6 +4760,33 @@
         "sourcePath": "portale/internationale-ordnung-globalisierung-geopolitik/datenstandards-interoperabilitaet/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-demokratie-braucht-mehr-als-gute-sachpolitik-pdf",
+      "title": "Demokratie braucht mehr als gute sachpolitik",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/demokratie-braucht-mehr-als-gute-sachpolitik.pdf",
+        "sourcePath": "assets/pdf/journal/demokratie-braucht-mehr-als-gute-sachpolitik.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -58331,6 +58408,60 @@
       "successorLabel": ""
     },
     {
+      "id": "download-or-document-assets-pdf-journal-rne-2026-ki-klimaschutz-zukunft-der-arbeit-pdf",
+      "title": "Rne 2026 KI klimaschutz zukunft der arbeit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur, Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026",
+      "topics": [
+        "Daten & Infrastruktur",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/rne-2026-ki-klimaschutz-zukunft-der-arbeit.pdf",
+        "sourcePath": "assets/pdf/journal/rne-2026-ki-klimaschutz-zukunft-der-arbeit.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-rne-2026-merz-wohlstand-braucht-wirkung-pdf",
+      "title": "Rne 2026 merz wohlstand braucht wirkung",
+      "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Grundlagenwerk",
+      "status": "aktuell",
+      "dateOrStand": "2026",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/rne-2026-merz-wohlstand-braucht-wirkung.pdf",
+        "sourcePath": "assets/pdf/journal/rne-2026-merz-wohlstand-braucht-wirkung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "online-version-portale-transformation-uebergaenge-implementierung-roadmap-2030-2050-index-html",
       "title": "Roadmap 2030",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -63359,6 +63490,31 @@
       "successorLabel": ""
     },
     {
+      "id": "download-or-document-assets-pdf-journal-was-ein-tv-duell-bewirkt-pdf",
+      "title": "Was ein tv duell bewirkt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/was-ein-tv-duell-bewirkt.pdf",
+        "sourcePath": "assets/pdf/journal/was-ein-tv-duell-bewirkt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf",
       "title": "Wellen tiefen modell oeffentliche kommunikation",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
@@ -63594,6 +63750,33 @@
         "sourcePath": "portale/kritik-missverstaendnisse-schutzarchitektur/widerstand-neue-massstaebe/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wie-wallonien-die-extreme-rechte-klein-haelt-pdf",
+      "title": "Wie wallonien die extreme rechte klein haelt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wie-wallonien-die-extreme-rechte-klein-haelt.pdf",
+        "sourcePath": "assets/pdf/journal/wie-wallonien-die-extreme-rechte-klein-haelt.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -64296,6 +64479,31 @@
       "urls": {
         "primary": "wirkungsfelder/",
         "sourcePath": "wirkungsfelder/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "online-version-verstehen-wirkungsfenster-index-html",
+      "title": "Wirkungsfenster",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "verstehen/wirkungsfenster/",
+        "sourcePath": "verstehen/wirkungsfenster/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false,
@@ -76392,6 +76600,31 @@
       "successorLabel": ""
     },
     {
+      "id": "download-or-document-assets-pdf-journal-aktionsplan-nachhaltigkeit-2026-20-missionen-pdf",
+      "title": "Aktionsplan nachhaltigkeit 2026 20 missionen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-20",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/aktionsplan-nachhaltigkeit-2026-20-missionen.pdf",
+        "sourcePath": "assets/pdf/journal/aktionsplan-nachhaltigkeit-2026-20-missionen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "online-version-portale-migration-vielfalt-arbeitsmarkt-fachkraefte-demografie-index-html",
       "title": "Arbeitsmarkt fachkraefte demografie",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -80303,6 +80536,58 @@
       "urls": {
         "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/20_risiko_schutzmatrix 2.pdf",
         "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/20_risiko_schutzmatrix 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-rne-2026-nachhaltigkeitsziele-verlaessliche-politik-pdf",
+      "title": "Rne 2026 nachhaltigkeitsziele verlaessliche politik",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/rne-2026-nachhaltigkeitsziele-verlaessliche-politik.pdf",
+        "sourcePath": "assets/pdf/journal/rne-2026-nachhaltigkeitsziele-verlaessliche-politik.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-sachsen-anhalt-wahlergebnis-signal-fuer-europa-pdf",
+      "title": "Sachsen anhalt wahlergebnis signal fuer europa",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/sachsen-anhalt-wahlergebnis-signal-fuer-europa.pdf",
+        "sourcePath": "assets/pdf/journal/sachsen-anhalt-wahlergebnis-signal-fuer-europa.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,

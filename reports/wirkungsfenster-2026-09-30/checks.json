@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-30",
+  "auditBase": "09530f48d8511d8daa85c087be72d903fad24087",
+  "integratedMain": "8281ec5cff767d80d9ba081a4c1a998972654c25",
+  "implementationCommit": "d5349841e1e",
+  "fullBuild": {
+    "command": "SOURCE_DATE_EPOCH=1787270400 WOEK_PDF_BUILD_MODE=verify npm run build",
+    "exitCode": 0,
+    "postbuildIncluded": true
+  },
+  "finalArtifact": {
+    "command": "npm run build:artifact",
+    "exitCode": 0,
+    "brokenInternalLinks": 0,
+    "orphanWarnings": 2528,
+    "duplicateTitleWarnings": 1316,
+    "baselineArtifactComparison": false,
+    "newRoutesIncluded": true
+  },
+  "acceptance": {
+    "command": "npm run check:wirkungsfenster",
+    "passed": 8,
+    "failed": 0
+  },
+  "rebuild": {
+    "passes": 2,
+    "files": 33,
+    "hashes": "rebuild.json",
+    "methodikPartialBuildPreservesAddendum": true
+  },
+  "otherPassed": [
+    "typecheck",
+    "check:woems",
+    "check:publication-editions",
+    "check:release-assets",
+    "check-search-integration",
+    "search and taxonomy regeneration diff checks",
+    "7 kitchen calculation tests"
+  ],
+  "pdf": {
+    "file": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf",
+    "pages": 56,
+    "bytes": 1240416,
+    "sha256": "8eac95d228a6db979bf99c0e69982c32719682b3236baa96afdb7df8950711ff",
+    "author": "Natalie Weber",
+    "exactDefinitionsVerified": true,
+    "visuallyReviewed": true,
+    "uploadedToRelease": false
+  },
+  "browser": {
+    "desktop": true,
+    "mobileViewport": "390x844",
+    "keyboardSkipLink": true,
+    "horizontalOverflow": false,
+    "newPagesJavascriptErrors": 0,
+    "printPages": 8,
+    "fullAccessibilityAudit": false
+  },
+  "deployment": false,
+  "merged": false,
+  "remoteCi": "Not asserted; separate GitHub runs after PR creation."
+}

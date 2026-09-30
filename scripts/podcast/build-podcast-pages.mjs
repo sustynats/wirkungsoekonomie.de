@@ -287,6 +287,7 @@ function episodePage(episode) {
         </div>
       </section>
 
+      ${(episode.editorialUpdates || []).map(update => `<aside class="section publication-current-note" data-no-glossary><p><time datetime="${esc(update.date)}">${esc(update.label)}</time>: <a href="${esc(update.href)}">${esc(update.title)}</a>. ${esc(update.text)}</p></aside>`).join('')}
       <section class="section prose" id="transkript">
         <div class="section-header">
           <p class="hero-kicker">Transkript</p>

@@ -1,0 +1,160 @@
+{
+  "title": "Weniger Essen wegwerfen, ausreichend versorgen",
+  "description": "Wirkungsfenster verständlich erklärt: Ausgestaltung, Zielbeitrag und Schutzgrenzen gemeinsam prüfen, Annahmen an Beobachtungen überprüfen und nachsteuern.",
+  "date": "2026-09-30",
+  "intro": "Eine fiktive Schulküche möchte weniger Lebensmittel wegwerfen. Einfach allen weniger aufzutischen könnte Kinder unzureichend versorgen. Passende Erstportionen, verlässlicher kostenloser Nachschlag, gute Mengenplanung und eine für alle zugängliche Ausgabe müssen deshalb gemeinsam betrachtet werden. Ob diese Kombination den gewünschten Beitrag leistet, ist zunächst eine überprüfbare Annahme.",
+  "requirements": [
+    {
+      "label": "Zielbeitrag",
+      "title": "Was soll sich verbessern?",
+      "text": "Lebensmittelabfall soll sinken. Welcher Beitrag der Küche zum begründeten Ziel ausreicht, muss vorab erklärt werden. Die einzelne Maßnahme muss nicht das gesamte Problem allein lösen."
+    },
+    {
+      "label": "Schutzgrenzen",
+      "title": "Was muss gewährleistet bleiben?",
+      "text": "Kinder sollen ausreichend versorgt sein. Nachschlag muss tatsächlich erreichbar sein, auch bei wenig Zeit, Unterstützungsbedarf oder Hemmungen, danach zu fragen. Weniger Abfall kann eine schlechtere Versorgung nicht aufwiegen."
+    },
+    {
+      "label": "Bedingungen",
+      "title": "Wie passt beides zusammen?",
+      "text": "Portionen, Planung, Ausgabe und Nachschlag bilden eine gemeinsame Ausgestaltung. Ihre Eignung hängt vom konkreten Alltag ab. Es gibt hier weder erfundene Zahlenbereiche noch einen empirisch bestimmten Optimalpunkt."
+    }
+  ],
+  "architecture": {
+    "caption": "Das Wirkungsfenster innerhalb der bestehenden Architektur",
+    "columns": [
+      "Bestehende Aufgabe",
+      "Was wird geprüft?"
+    ],
+    "rows": [
+      [
+        "Vorwirkung",
+        "Varianten, Intensität, Dauer, Kombination, Voraussetzungen und überprüfbare Hypothesen beschreiben."
+      ],
+      [
+        "Ermittlung, Evidenz und Bewertung",
+        "Tatsächliche Umsetzung und Veränderungen feststellen; Baseline, Gegenfaktum, Attribution und Unsicherheit prüfen; den Befund am Referenzrahmen bewerten."
+      ],
+      [
+        "Schutz und Systemprüfung",
+        "Grenzen, Verteilung, Nebenfolgen, Wechselwirkungen und räumliche oder zeitliche Schadensverlagerung prüfen."
+      ],
+      [
+        "Rückkopplung und Lernen",
+        "Beobachtungsgrößen, Prüfzeitpunkt, Zuständigkeit und begründete Anpassung festlegen."
+      ]
+    ]
+  },
+  "feedback": {
+    "title": "Wenn die erwartete Veränderung ausbleibt",
+    "text": "Wurde die geplante Ausgestaltung tatsächlich umgesetzt? War der Nachschlag erreichbar? Trägt der vermutete Mechanismus? Waren Voraussetzungen vorhanden, Daten geeignet und Zeitverzögerungen berücksichtigt? Erst diese Prüfung ermöglicht eine begründete Anpassung.",
+    "action": "Nicht automatisch den Einsatz erhöhen. Eine andere Ausgestaltung, ein Wechsel, eine Pause oder ein begründetes Unterlassen gehören ebenfalls in den Vergleich."
+  },
+  "documentation": [
+    [
+      "Ziel und Vergleich",
+      "Wirkungsziel und begründeter Zielbeitrag; Empfänger, Raum und Zeit; Baseline und Gegenfaktum; Alternativen einschließlich Unterlassen."
+    ],
+    [
+      "Anwendung",
+      "Veränderbare Parameter wie Ausgestaltung, Intensität, Dauer und Kombination; Voraussetzungen; geplante Anwendung und tatsächliche Umsetzung getrennt."
+    ],
+    [
+      "Schutz und Verteilung",
+      "Schutzgrenzen mit Quelle und zuständiger Stelle; Verteilung, Nebenfolgen und Wechselwirkungen; relevante Systemgrenze und Wirkungen erster bis dritter Ordnung."
+    ],
+    [
+      "Wissen und Lernen",
+      "Evidenz und Unsicherheit; Beobachtungsgrößen und Zeitverzug; Prüfzeitpunkt, Verantwortlichkeit und Version; begründete Anpassung und verbleibende offene Fragen."
+    ]
+  ],
+  "methods": [
+    {
+      "id": "F13",
+      "title": "Anreizgestaltung",
+      "text": "Signal, Intensität, Voraussetzungen und erwarteten Zielbeitrag beschreiben. Die Folgen des Steuerungsinstruments eigenständig prüfen."
+    },
+    {
+      "id": "I06",
+      "title": "Adaptive Wirkungspfade",
+      "text": "Varianten unter veränderten Bedingungen vergleichen und beobachtbare Anlässe für Kurswechsel bestimmen."
+    },
+    {
+      "id": "E10",
+      "title": "Entscheidungsmemo",
+      "text": "Angenommenes Wirkungsfenster, Begründung, Evidenz, offene Fragen und zuständige Entscheidung getrennt dokumentieren."
+    },
+    {
+      "id": "H02",
+      "title": "Pilotdesign",
+      "text": "Die Hypothese unter benannten Bedingungen erproben und die Grenzen der Übertragbarkeit festhalten."
+    },
+    {
+      "id": "H06",
+      "title": "Frühwarnung und Eskalation",
+      "text": "Beobachtungsgrößen, Warnsignale, Prüfzeitpunkt und Zuständigkeit verbinden."
+    },
+    {
+      "id": "H07",
+      "title": "Review und Lernen",
+      "text": "Geplante Anwendung, tatsächliche Umsetzung und beobachtete Veränderungen vergleichen und Annahmen versioniert korrigieren."
+    }
+  ],
+  "notes": {
+    "modell": {
+      "title": "Maßnahmen passend ausgestalten und überprüfen",
+      "paragraphs": [
+        "Eine Schulküche kann Abfall verringern wollen und zugleich ausreichende Versorgung sichern müssen. Die Wirkungsökonomie prüft deshalb auch, unter welchen Bedingungen, in welcher Stärke und in welcher Kombination eine Maßnahme eingesetzt werden kann. Das Wirkungsfenster beschreibt diese überprüfbare Annahme innerhalb der bestehenden Gestaltungs-, Schutz- und Rückkopplungslogik.",
+        "Zwei Prüfgegenstände bleiben getrennt: Welche Folgen hat ein Produkt oder eine Tätigkeit? Und welche Folgen hat die Steuer, Förderung oder Beschaffungsregel, die darauf reagieren soll? Eine problematische Belastungswirkung des Steuerungsinstruments schreibt die ursprüngliche Gegenstandsbewertung nicht um. Auch der Steuerungsimpuls braucht eine eigene Prüfung von Mechanismus, Zielbeitrag, Verteilung, Schutz und tatsächlicher Umsetzung.",
+        "Ein vermutetes Wirkungsfenster ist kein Wirkungsnachweis und keine automatische Freigabe. Nichtkompensation und Reverse Merit Order bleiben maßgeblich; Erkenntnisse werden in die nächste Ausgestaltung zurückgeführt."
+      ]
+    },
+    "workflow": {
+      "title": "Auch den Steuerungsimpuls auf Folgen prüfen",
+      "paragraphs": [
+        "Aus einer Produktbewertung folgt noch nicht, welche Ausgestaltung einer Steuer, Förderung oder Beschaffungsregel geeignet ist. Für das Instrument werden Zielbeitrag, Voraussetzungen, Intensität, Dauer, Verteilungsfolgen und Schutzgrenzen eigenständig geprüft. Das angenommene Wirkungsfenster bleibt eine überprüfbare Hypothese.",
+        "Geplante Anwendung und tatsächliche Umsetzung sind getrennt zu beobachten. Bei ausbleibender Wirkung zuerst Umsetzung, Mechanismus, Voraussetzungen, Daten und Zeitverzug prüfen. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; Schutzgrenzen dürfen nicht für ein scheinbar größeres Fenster verschoben werden."
+      ]
+    },
+    "methodik": {
+      "title": "Zielbeitrag, Annahmen, Grenzen und Evidenz auseinanderhalten",
+      "paragraphs": [
+        "Im fiktiven Küchenbeispiel ist weniger Lebensmittelabfall der angestrebte Beitrag; passende Erstportionen mit verlässlichem Nachschlag sind eine Gestaltungshypothese. Ausreichende Versorgung ist gesondert zu schützen. Beobachtungen zur Umsetzung und Versorgung liefern Evidenz, ersetzen aber weder Attribution noch die zuständige Entscheidung.",
+        "Das Wirkungsfenster kann mehrdimensional, unbekannt oder leer sein. Zahlenbereiche sind nur bei tragfähiger Grundlage zulässig; fehlende Angaben bleiben offen, nicht null oder neutral. Auch Unterlassen und Alternativen sind zu prüfen. Eine Stabilisierung oder vermiedene Verschlechterung braucht ein begründetes Gegenfaktum. Nichtkompensation und Reverse Merit Order bleiben erhalten."
+      ]
+    },
+    "kueche": {
+      "title": "Die Küchenorganisation gemeinsam prüfen",
+      "paragraphs": [
+        "Das fiktive Küchenbeispiel lässt sich qualitativ vertiefen: Lebensmittelabfall reduzieren und ausreichende Versorgung erhalten gehören zusammen. Kleinere oder passendere Erstportionen sind nur eine Stellgröße. Verlässlicher kostenloser Nachschlag, Mengenplanung, Zeit und Zugänglichkeit der Ausgabe müssen gemeinsam betrachtet werden.",
+        "Die zu prüfende Hypothese lautet: Unter geeigneten Bedingungen kann diese Kombination zum Ziel beitragen, ohne die festgelegten Versorgungsgrenzen zu verletzen. Ob der Nachschlag tatsächlich erreichbar war und welche Gruppen Schwierigkeiten hatten, muss beobachtet werden. Ein vorgesehener Ablauf ist noch keine tatsächliche Umsetzung; weniger Abfall allein belegt keine ausreichende Versorgung.",
+        "Dieses Wirkungsfenster ist keine reale Pilotstudie und kein numerisches Portionsintervall. Das Beispiel ergänzt die vorhandene Rechnung um Gestaltungsfragen. Schutzgrenzen, Nichtkompensation und Reverse Merit Order gelten weiterhin; ein behaupteter Nutzen darf schwere Schäden für andere Kinder nicht ausgleichen."
+      ]
+    },
+    "gesamtbild": {
+      "title": "An den vorhandenen Entscheidungstoren nachprüfen",
+      "paragraphs": [
+        "Das Wirkungsfenster konkretisiert innerhalb der vorhandenen Tore, unter welchen Bedingungen eine Ausgestaltung ausreichend zum Ziel beitragen könnte und welche Grenzen gelten. Vorwirkung formuliert Varianten und Hypothesen; Ermittlung, Evidenz und Bewertung prüfen tatsächliche Veränderungen; Schutz und Rückkopplung führen zu begründetem Weiterarbeiten, Nachbessern oder erneuter Prüfung.",
+        "Die sechs Entscheidungstore und Reifegrade bleiben bestehen. Zielbeitrag, Evidenz, Schutzprüfung und Entscheidung werden getrennt dokumentiert. Nichtkompensation und Reverse Merit Order bleiben maßgeblich; die Annahme eines Wirkungsfensters erzeugt weder Freigabe noch Gesamtscore."
+      ]
+    }
+  },
+  "referenceUpdate": {
+    "description": "Transparente Aktualisierung der WÖk-Grundlagen: Buch und historische Publikationen, Begriffsleitfaden v1.8, Register v1.5, T-SROI v1.1 und staatliche Prüfarchitektur und Wirkungsfenster.",
+    "leadingReference": {
+      "title": "Begriffsleitfaden v1.8",
+      "status": "Führende Begriffsgrundlage · 30.09.2026",
+      "href": "/bibliothek/woek-begriffsleitfaden-fuehrend/",
+      "text": "Maßgeblich für Wirkung, Wirkungspotenzial, Wirkungsrisiko, Nachhaltigkeit und die Einordnung staatlicher Prüfarchitekturen. Die WÖk-eigene Nachhaltigkeitsdefinition ist als solche zu lesen. Kumulativ ergänzt v1.8 das Wirkungsfenster als Gestaltungs- und Prüfbegriff; die früheren Präzisierungen bleiben erhalten."
+    },
+    "terminologyUpdates": [
+      {
+        "date": "2026-09-30",
+        "title": "Wirkungsfenster: Delta v1.7 zu v1.8",
+        "text": "Die kumulative Version 1.8 beschreibt den möglichen Anwendungsbereich einer Maßnahme als überprüfbare Hypothese. Zielbeitrag, Schutzgrenzen, Evidenz und Entscheidung bleiben getrennt; auch der Steuerungsimpuls braucht eine eigenständige Folgenprüfung. Sechs Module, vorhandene WÖMS-Methoden und bestehende Berechnungen bleiben erhalten. Die medizinische Analogie wird ausdrücklich begrenzt.",
+        "href": "/verstehen/wirkungsfenster/",
+        "followup": "Historische Buch-PDFs, Fachpapiere, Audio und Sendetranskript bleiben unverändert. Spätere Buch- und Kursanpassungen zu Wirkungsrad, Lenkung, Risiko, Controlling und Pilotierung sind ein gesonderter Folgeumfang."
+      }
+    ]
+  }
+}

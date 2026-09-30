@@ -3,9 +3,15 @@ import path from 'node:path';
 import {writeContentPage} from '../lib/content-page.mjs';
 import {escapeHtml as esc} from '../lib/explainer-components.mjs';
 import {currentPdfEditions, editionLink} from '../lib/publication-editions.mjs';
+import {windowContent} from '../lib/wirkungsfenster.mjs';
 import {renderPublicationErratum, renderPublicationErratumDownload, applyPublicationErratumNotices} from '../lib/publication-erratum.mjs';
 
 const data = JSON.parse(fs.readFileSync('content/site/reference-update.json', 'utf8'));
+// Preserve the source of the dated September PDF; the newer web addendum has
+// its own versioned source and is displayed with its own date below.
+data.description = windowContent.referenceUpdate.description;
+data.references = data.references.map(item => item.href === '/bibliothek/woek-begriffsleitfaden-fuehrend/' ? windowContent.referenceUpdate.leadingReference : item);
+data.terminologyUpdates = windowContent.referenceUpdate.terminologyUpdates;
 const chapters = fs.readdirSync('referenz').filter(name => /^kapitel-\d{3}-/.test(name));
 const chapterLink = number => chapters.find(name => name.startsWith(`kapitel-${String(number).padStart(3,'0')}-`));
 let body = `<section class="hero compact-hero explanation-hero"><nav class="breadcrumb" aria-label="Brotkrumennavigation"><a href="/bibliothek/">Bibliothek</a><span aria-hidden="true">/</span><a href="/referenz/">Buch online</a><span aria-hidden="true">/</span><span>Aktualisierung</span></nav><p class="hero-kicker">Lesestand · <time datetime="${data.reviewedAt}">5. September 2026</time></p><h1>${esc(data.title)}</h1><p class="hero-subtitle">Das Buch erklärt das Gesamtsystem. Neuere Fachgrundlagen präzisieren einzelne Begriffe, Prüfregeln und Berechnungen. Diese Seite zeigt, wie beides zusammen gelesen wird.</p></section>
@@ -16,6 +22,7 @@ let body = `<section class="hero compact-hero explanation-hero"><nav class="brea
 const pdfSection = `<section class="section section-soft" id="aktualisierte-pdfs"><h2>Aktualisierte PDFs herunterladen</h2><p><strong>Neu am 6. September 2026:</strong> Ein kurzer Einstieg und ein vollständiger Lernweg zu Impact Controlling ergänzen die Lesefassungen. <a href="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woek-impact-controlling-erklaerung-2026-09-05.pdf">Die frühere Impact-Controlling-Erklärung vom 5. September bleibt im Archiv zugänglich</a>.</p><p>Die neuen Lesefassungen enthalten die datierte fachliche Ergänzung. Gedruckte Seitenzahlen und zitierte Ausgangstexte bleiben nachvollziehbar; die Ergänzung erhält eigene Seitenlabels.</p><div class="card-grid three">${currentPdfEditions().map(item => `<article class="card"><h3 class="card-title">${esc(item.title)}</h3><p data-publication-abstract>${item.kind === 'reading-edition' ? `Ausgangswerk mit ${item.updatePages} vorgeschalteten Seiten zur fachlichen Aktualisierung. Die ursprünglichen ${item.originalPages} Seiten bleiben erhalten.` : item.kind === 'addendum' ? 'Eigenständige Erläuterung der fachlichen Änderungen und maßgeblichen Referenzen.' : 'Überarbeitete Erläuterung mit Beispielen, Prüfweg, Quellen und Grenzen.'}</p><p>${editionLink(item.filename,'PDF öffnen')}</p></article>`).join('')}</div></section>`;
 body = body.replace('<section class="section"><h2>Die passende Quelle', pdfSection.replace('</div></section>',renderPublicationErratumDownload()+'</div></section>')+'<section class="section"><h2>Die passende Quelle');
 body = body.replace('<section class="section section-soft"><h2>Was dieser Abgleich', renderPublicationErratum()+'<section class="section section-soft"><h2>Was dieser Abgleich');
+body += (data.terminologyUpdates || []).map(update => `<section class="section section-soft" id="wirkungsfenster"><p class="hero-kicker">Begriffliche Ergänzung · <time datetime="${esc(update.date)}">30. September 2026</time></p><h2>${esc(update.title)}</h2><p>${esc(update.text)}</p><p>${esc(update.followup)}</p><p><a href="${esc(update.href)}">Wirkungsfenster verstehen</a> · <a href="/bibliothek/woek-begriffsleitfaden-fuehrend/">Begriffsleitfaden v1.8</a> · <a href="/bibliothek/woek-begriffsleitfaden-fuehrend-v1-7/">Historische v1.7</a></p></section>`).join('');
 writeContentPage({file:'referenz/aktualisierung/index.html', title:data.title, description:data.description, section:'Referenz', type:'Addendum', body});
 
 const marker = 'publication-current-note-20260905';

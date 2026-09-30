@@ -1,6 +1,6 @@
 # Live-Reference-Quellenhierarchie
 
-Stand: 2026-09-05
+Stand: 2026-09-30
 
 ## Ebene 1: Original / Source
 
@@ -11,8 +11,8 @@ Stand: 2026-09-05
 
 ## Ebene 2: Führende Terminologie
 
-- WOeK_Begriffsleitfaden_fuehrend_v1.7.md
-- Stand: 2026-08-21
+- WOeK_Begriffsleitfaden_fuehrend_v1.8.md
+- Stand: 2026-09-30
 - maßgeblich für Begriffe, Glossar, Hovers, Crosslinks, Sprachregeln und Terminologieprüfung
 
 ## Ebene 3: Neuere Logik- und Systemweiterentwicklungen

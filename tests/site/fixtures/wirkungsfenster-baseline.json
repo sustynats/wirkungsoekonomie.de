@@ -1,0 +1,1024 @@
+{
+  "base": "09530f48d8511d8daa85c087be72d903fad24087",
+  "protectedFiles": {
+    "assets/js/kitchen-impact.js": "2f382e9a55a52cb035ce9751e0cdb324534c882fe98dec9d4ff94147381f0227",
+    "scripts/lib/impact-course.mjs": "5eea0a3d227f05bb0e43757111f26ef97ffe3a8f33c2b6ecb2422f3702d65e61",
+    "content/site/impact-controlling-course.json": "2767042396bb0be32e977c0fb7493defe76842cd166365ce99da5dde11e42182",
+    "assets/data/woek-id-register.json": "c64e845f86ac70354f5bbb2cbf3b3ea54947335b1c3866bf81c50a39d803267d",
+    "content/podcast/wirkung-ist-nicht-absicht.txt": "cf4c7faf311acbe9ca91e2a8dad5c4d2aad7f0cb9fec1ba3af4fef2a9496f5bf",
+    "assets/data/term-registry.json": "bb4986fd697c07a1a53742f1a3c5b3b0ae08f0b5b3eecdbd6b68d587adb369c3",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf": "96712250a74a369768596c8e86b9fdc5dbce4da0d09d24bca365a03c399879c9",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf": "08c521533a8f891b45a73a16c2fc481ad936d0a2dcaf796a7a2f55f6319bd17c",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf": "28b99d5f4e20b50f74869fa8aefdbfbd3aa5c545d3156023e10539afe9e8cc69",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf": "9cf7c3a18ea4963e52c8bb177c93316a4fe0637e36ff3771a046a42a6dd1f0db",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf": "ec3fcc672ce22651dd86697ff2303bf897b7d05400e9f6e409a5e7647acd2a3d",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf": "0d988ce13c4264d9973428f8bd0a5f50502603ab6c055aabb3e9fd409755425c",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf": "93229fcfbe2bc522ab7fde50474e57c0c874e3b0b9113f6013b55616bc9d0089",
+    "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf": "94b60f34b87103e53b94aeda8047f36b11eb9279cc84686949966bda9d098133",
+    "scripts/portal/build-impact-controlling.mjs": "c2fbc2af754bb5a2c89633db11bf7b8c18d9e136959146e7a81d5be260d21f28",
+    "content/site/methodik.inc": "86b5bb1b5a9436652ed973a3687e1abfb5183e777906c9702070a9851000e320",
+    "content/site/reference-update.json": "d01f1c547d629bb3b303a65b1d37c0ccee521783f45b8a1f6a7d7f0b92286835"
+  },
+  "definitions": {
+    "wirkung": "3ebfe402b26f6a7bfe1ffb48e96626389d523fda74ec8bf115e40b665d100fd4",
+    "wirkungsraum": "199224f10e0971e6c4fa7cba2159422003ad6eae0ff639dcf0e3668a9fa893bb",
+    "netto-wirkung": "23070b8265db0647543f9f45be5cb57b08457d923c8af263aff9ba9dac7880e0",
+    "nichtkompensationsprinzip": "6ef85b2234fe3293271986ba7f206b66e203f3831a37e44280c30a21778f372d",
+    "reverse-merit-order": "f538bd8913c29647f5f56e1eff170f7b5c1b243cf23869d392ed9af4ee0a3c96",
+    "wirkungsresilienz": "3c3f976c2ed219dbdb05c1324635613fc380d742a375f46c6952e0e784b611e0",
+    "nwi": "d2567d9794be0d1aa8160b9b168f8c33eecdc08ddfab3d4e76a48fe14b4f9bfb",
+    "impact-of-investment": "d163b7913ce3673df67eeb16d6ab46b14296efa8bb34e1647224e17361989051",
+    "t-sroi": "b22d2ecf0aa0e6f964e0a59a9153a2736751e35206345ce121cfc6b38bb648fa"
+  },
+  "methods": {
+    "A01": "ac35b9440c9099b90ed6c7de24165c7682f1484111ec4c106b0ca377b1d038c2",
+    "A02": "dc686ee6272dc2eedc62a2ba9a888191ddaa69a27cbb645890e2fec25269b744",
+    "A03": "3e0c0644a4145170c855716a17484af37d6176a1e853c6c9247675d3f94abfb8",
+    "A04": "40d908f17eac6219006e58aa26e3ac0fe67b698acc0579d791f9cd5b3c37133f",
+    "A05": "3a1a3506f2ab5b7b072db7966d673645a43b469d27eff7aae0e4a64b8ee0ca9c",
+    "A06": "c92cf0da580dd294bb51c054b66cbfcc10f4eb40774cf5fe13f74bdad8490908",
+    "A07": "53763b65da56c1f963189b7f6cc508808cb44cebd135b85521fb600527f656f1",
+    "A08": "dac9eec7a24574b7e3daf6fe9595bf725e4e93ca036da22751fed32d8bf1ed65",
+    "B01": "48798a57d6e203556b73871dc3769f4b3d6f0adbf2e3cf036f416369c612f95d",
+    "B02": "e164492915b9dd412e35cbd8e40b19cb5a5b88ef98269843f532ce2818dca65f",
+    "B03": "30fbbe7dd104b81819ce8695970a24ec38909012fc0bf231b10dd6e79788f80f",
+    "B04": "d1e9cf53ca694054809a87a6ddef10b76a5e95ac3a0a5fea020701f6649ff693",
+    "B05": "a63a211eeabb487a1c8ea1189cd6b95844beb1f1c63a3f587b0b713f7e7bb0d8",
+    "B06": "66b463b6a6d3049680b6a4d99c4e13e3311122fdf62c159c0d07d1d704f1ead0",
+    "B07": "0495ec0c568ef90ed0e0df314bd5bce4795276658f48fe07f66e3cc238cce61a",
+    "B08": "b958d1e428ee97fa658ef5412bc90da1ba71741245922c690327fb19b8996da1",
+    "B09": "2d86134d3d442fbd66d6a948cc9cad60b3bc9ce0d6e6a6391c36c950d82151aa",
+    "B10": "e770e9c0093336c8d9b959ec4e37accc858152a61a4de8afe60a37dd3cb687cb",
+    "B11": "cdfac7497ab1da57ea5690251762c7aadad0f709db13fee209bda5e4649f5c34",
+    "B12": "a2cf4813de05c02b5bb4e3645ef8ca0b66bdd1bd4173b61fc338981e2326fdb6",
+    "C01": "f5e456bb1efc0a36a2eb5abb7b94548f39d2eaff816055eff9de9a00087cd89a",
+    "C02": "e673c11a328ecaef4a9d78b6bdbe134be28989d761ed9af1a61ed073a989f6e1",
+    "C03": "6a141dff889894f0be0f968685a15df1be1a5a2435e3aa15ad6df6af05bb7ca6",
+    "C04": "18c36f027ffa0621e764b7351fc6bdbf9b2dec7e99cd288215dd144c69e2f523",
+    "C05": "f13112db3144a92769f69a961ebb5e850102c31253107f1a9cbf849971e7a5ab",
+    "C06": "3d96e565a7f3d8a1ba4b22759e5843bb83475ba5f8a153592b6e6f5bce4d6e1e",
+    "C07": "ee3b32b49e51c5bfbd4ad4aee6e57b5f3c2e93e2b94caeda2b26c4df0f2af915",
+    "C08": "392d8f4ed3f3e5dc1fd2c0498d3369abf51dfdabbc2fb09f60d595ab32435e9a",
+    "C09": "d8264ba0df6298bbca2a4fe6be4436aa06cc84c75912d16c2a188858b65a723d",
+    "C10": "9323d76b53e0d6f301a1d42eb617d5e411bfcf2da1bbb00596ec708a05b26360",
+    "D01": "64d9007082fcecb680bceb72437698482e814efe0fa568fd4d5c0111aeab0772",
+    "D02": "5c5633403b6e246d92947d19639437e6e3f2fe29b1173fb1400e44f05f5f32b7",
+    "D03": "2462f6e35a2da865105f4c8f1c37e649c12807ecc52641288fc72010300a23e3",
+    "D04": "971a85d3f4c2174c26225b1f7d38c12309cb7e2ae2b21808a183f04001426ca1",
+    "D05": "4e8702d02f4e768fb8ddacdacdc2fee8b644fe7841130ba1fdc92245e27c55c3",
+    "D06": "67339b82c02677984366b4de6a542bc4913a9f3ffed6c9df35e07b54fe6f01a2",
+    "D07": "0e7caba9e13b17d3fa3b238479a1f8233b77ed6a0e4911697f4ad24fac1e63e9",
+    "D08": "b77658646536ec6e4d44f8c8134993fd178558d767c0294c2477e107080eb74b",
+    "D09": "cf9434839226f94f5d4a9c96f0506de5f0fce4773d152e234b32fec2547bcde4",
+    "D10": "319fa928c99f41a66524c0157d0b81fbfd3cf4a15cca4a04a30ee94b291856b3",
+    "D11": "8c7605d4952e067c2a71b8937c151bd4759039239ddbafdbf38334b726d2df67",
+    "D12": "5af4ec53ba70c31ecbaa010aca6b758193cff9484930263551e67d82f0637f8e",
+    "E01": "4588e2a01a16811bf0080ce40bf508424a9d420ea3210e4f89677b71adafdb94",
+    "E02": "8ef1099c8e2ec9263dd5d111af9d60000d2f9808c4c34d55d2d80c0b919ae082",
+    "E03": "127a7c8961cda9c2a9e5c30fbde6918965355ad453ebfeee9723a71f1b49cf8a",
+    "E04": "18a5ec5c43a121bc0e5c13692e862ae779397e0c05d3bcb742f054022aa51591",
+    "E05": "c89572b3ff13a77dd9fda4160c97e4ff84a9bfd806b10d6ef2facef301ce8125",
+    "E06": "6dfdefe20172b90ff6b6a2f7aa4bc097c8531bc23c37c257a3b9944b5f4db549",
+    "E07": "09b316e239474f3f3271b8bd5c2ddceaf8e769f8ae26e3311445a2ebf948bcf3",
+    "E08": "f6f48ebb1b7b81dc80dbb54d7072829903ec1cbb922581ee400df7b98f8a46d3",
+    "E09": "48cc76baf8768878b91c98a1d5527353877ba4ebf480aa086150bace5b865930",
+    "E10": "7f106ebedf7dd93bdcf5deb155c86e40749edae46a4cbee1ae6bef6c4a7036b0",
+    "E11": "23bc2056d899dea2b9880fd7dde03269386c1c36bd9df1a9cc55fca7da7a903d",
+    "E12": "3f6d36812020684a8418e3215c55bc763218f8aec9260f8683457b1565f3df2b",
+    "F01": "9101d5c88396e3f82a20d57021966080f902d1cce92513ff893b00fc7afb769e",
+    "F02": "96e31b95821a68e3b7f81e7e7d45bd93107dbc240110f8f285b314a6d7ff79cf",
+    "F03": "66a442934481d6db16ef0363cc79676b2d5d294fe5c1d994bad592a642195216",
+    "F04": "556a16dd32d9ccb40ac78af15b4d67c7996b0b3434046818bb4ed203182b5642",
+    "F05": "8a8e0d97e9c497628c61641087b147809c4d8165cc497a16ab0d8327741a2237",
+    "F06": "3acfa845d1196b8e012567d8f201047a0233692f6aae46592d730556dcbc6b3a",
+    "F07": "66d5b9098e39e5459c912465b1a3235fbc835f3254a6caf7b8650db9744d041f",
+    "F08": "5f28f7c23e258f8d0d8154b90f0262ce04a23f714b64170a9424092f51a511b5",
+    "F09": "03ae1eae9ea6dadc4e74825bb073491eef8f9130c7f33b50994574571666a64e",
+    "F10": "165365e8e28a0f09503783916b13d811383156a07203ce3f8f519d000be9f220",
+    "F11": "1e4831f7038799d137d255b6ded5a74323eb0f2c7c2e136a99fb493fc2d4c0b2",
+    "F12": "09cdadc7f43ace21ccfe4aecddb143b52aa7b245351621d051911b9b135e5bf5",
+    "F13": "bb70dd995de1627f2d3453042d1a496ba7d8ae828da9f41a46befeba83cf0cad",
+    "F14": "2c7fe70113cb428f3f44fcd143fe5ef2fa072567c730dc5855759c2154dd823c",
+    "G01": "75cd2881416abc6b7f7f24ffc6c1eb7661c57a1160b5f742019ce2e2913ac8c3",
+    "G02": "141c50e06b29eb1a21caedcfa45f45da9c5ac10dd9cadcd818069e171136d300",
+    "G03": "d8a6ad9bc020d13cb493fadd4421ffcc109ebcda4e89a89f9f3da4e072fb431d",
+    "G04": "d65669bc85093e887fb446180f567b54a0b0b7762c7c9a558c390d6b6a5cb672",
+    "G05": "fd3ef6f05c6abf129224dd69cd56702b41f2464db45a25bdca19f2a238bc899c",
+    "G06": "a1764957dc23a50287c3726c383a78169c58327333e154dcae57aad81d54a68a",
+    "G07": "4a7015e3b0b42549c6ce4c86e5c329936cab920d78d6c5ead6b0d6a79da72bd1",
+    "G08": "5543b0efc0068a1b1869d669daefc0af1cfbbbaefbd6fe4e3364862776a7d59b",
+    "H01": "3b950301ec2bc0b39bf848c2b8d3e19aeb2982876db22f8924f476aa6ebd3055",
+    "H02": "fe3fc97dcd799e80627db290c673db67063a72c2cf895b008011d0b184deb4d4",
+    "H03": "f126c1c8cdd9d15cd7eb66e1302f66c55ab7e98873c16416fa07565229145b6a",
+    "H04": "e31dd2e6154cdef3753284add8be9ed12df066d8ea322e996359e9436aa07a9c",
+    "H05": "90df5bc2657a32cb59f5c29783eada466e6a78000c7ff4a0d1bf7d511dcb0ed7",
+    "H06": "c3841e5e089f2c4a49d54ef50c0bf8ad804039444dd3d5f0b28b45bd1e20b56b",
+    "H07": "1488845c47e8e9e0e76e911b911f8cbb553ca2012f1bc9488b3ce0e11ebf58d2",
+    "H08": "34fe38246b93a053d6b5cffb5f86611041136a37c84dcbe3afc6f61be0c8cb59",
+    "I01": "780086b0717d8e4e677ba66c55fc7f2abae53c894954ab22e9a5a7c101deefdf",
+    "I02": "5b977c7926f965587650ba3821a249f54776b52561e645673f414b7ac9ec8b75",
+    "I03": "a285376dba8f4eacd4b6486e0eb970a0eabd104827c94513a6667ab41d3e4dfb",
+    "I04": "46d6bc99a235788d9430e46bc98849c03474b9d8996b30f653aa7c89732ee5ad",
+    "I05": "5c8108c6ffedfc3a5bada238758f67362b29356a866520a0d2e307da1ad72c5c",
+    "I06": "30c671ea93d256f8200c90aca3d49b08afaa2aa5e0b3426c58137bca336d9976",
+    "I07": "42855c2697e828c77dedc0d0d90686766bf232f50588c523cbefaef48fd3cc3d",
+    "I08": "851eb0dac71b56239879ad8dffa7af87b1c9821c36c6a44694cb083815ff9530",
+    "J01": "6726902a8b176916b71e042fce34b30f4c37dfd2b546a1a115f0375a0291c900",
+    "J02": "fa11f79f2c49de06400933fdee7a8f491c2ecbb5b09d4828ce77b7560cd1434b",
+    "J03": "66f4add3ba2a2709dd989a13eb9b14abc85d51cc24ad748bf80888c59ba89e7a",
+    "J04": "76ea31cca285ce946a9f699454e2d1c99320afca6f28fb7277ca900ece341716",
+    "J05": "d20b7aaaa932997d9aa6df33126a45b0802c14eb9aca44d46b54596a508670d1",
+    "J06": "ba3989ea87c0079fd85a8d9c413d50079e14051777b33010a2f958510f136275",
+    "J07": "d37cb2c8742c24358fd608ecd247a052853fdcb8df49cd24a6ec8ef9564b6758",
+    "J08": "ce05ca33bda7eeb2472570931d396ee64802cb50668a3ac7f100f56ec4367b54",
+    "K01": "b645bd1ac5c2b7aee9667825374bf95e2df7b3228bce725dac1f5ad9689a6b58",
+    "K02": "fd1c43bbc759d25fd9c1b4583ff7b53b187806d6ca2403afb6360d75aa381220",
+    "K03": "319b16efb44a20363eeb3a419bbc3d52d5e2a2f9abdea2ba5ccae1ccb8c7c270",
+    "K04": "1a7b870bf6679cff8626ada4f1d7aef07530b0ecdd6d157c4acce250809c0edc",
+    "K05": "77a952b33e46228cebbd333437cd1d030bf64907cfd98cd35f9182eea667622f",
+    "K06": "84912318dcdec724a9c4b2be3fc7fab74ed88a26c0ecec009f0abbfe3d742fef",
+    "K07": "ff23cfd4271c9c4d84e6d3c5e612348f56d91264b86a35c22e87f02cce94920c",
+    "K08": "e6e3404bc51244bb0b6e63cae799a25eceb687a6375fd1e4a75b1f4b57a822ba",
+    "L01": "edcaaff0f64415c044aa69eab4d5bb30ed627ff544adbf0c452a5de91e4a7110",
+    "L02": "360a1dd416d55aeb8ea1c47fa21a2363d1e7584040164652b26f64622f6c4a7e",
+    "L03": "bb6d74314b04a95897ab16eaac222d356185391b03395b1b8f82b3c0eacea199",
+    "L04": "b53b472158bc191b8b2a7cd4b8804255a7b77bb85d59b4f0ada7bad42f77fada",
+    "L05": "8134c3a5b1177ea56f8f5f3a24d58350c4fc65c80ddba442297ad955110d51da",
+    "L06": "037eded2d0a0001e4ee996f9d730eadb19ae615fb66276e4eb602d2c51d61f0c",
+    "L07": "ea29d579cc924369132cc561664218b2e9f33194cdac2af15a3d795b266169fe",
+    "L08": "1f5009f701de2014cbe924a0223d6aa111145f61e63b3aa06da74ff92b3a4a3d",
+    "M01": "dbe97fa77296a12fc4e1705e1ec7b8074aec1d3a2471b6cb8bbfa1147c8561f3",
+    "M02": "8bd0858bb04d131b7bda6712e87efcbb3c8585b2d60b9ae5bc8ed210654155fa",
+    "M03": "a5187252311c0a5b861db6c8f6c5ad0f640d03a36b412bab19524659c26c5490",
+    "M04": "00b2f96aa11b49edc8b0ddebcb34510e70bbff16dea693ff7b0a255981666f6f",
+    "M05": "3630a1ba48e7bf562196abc8a1deb4f113c920d9478b140756e26aa4d3a77d01",
+    "M06": "e5adb7d5bac874e6e6eeea1aa50648661f886c86e046e189916b04677f30d934",
+    "M07": "497407d3dff306f2eb09932a81e67a621d73df088ff130bfd77d60a16a8f73e3",
+    "M08": "ab32a0c5bfd05740c9c56a2b24fd393058fa4ac173ad5cfa1ee3ff758024472d",
+    "M09": "993d55567f2b9ca6654301da643c0f18291b64d4986e71618411bc2897d41619",
+    "M10": "f8bea9ec8ac4bf7e090bef58bfab555e542d14e5566182d5e7792485a4b09c8d",
+    "N01": "586e3d8b8c510513fe14de2250c1e03d5ebc14fa4823f101ea324f5fa9d22b2c",
+    "N02": "12c27ff61d7a09f5c3e699cad656cd0c221d91c132a0a77a55c3f58068ee7817",
+    "N03": "84979a5137cac91a6220174f557860a6274f8bcd64a0d6fd8e67889bd448d072",
+    "N04": "d7f58543f4b3473998212e1c5ad5886775494f6567d8b2e459061462d7e9aa86",
+    "N05": "ffbd2368e68fdda93e55fa8604b613269afbb90e12b3345ae8ced68a0cbad343",
+    "N06": "c30d7942853fe33ba621fdfecdbd6308f729a300c7deefda4dc32de56223a88d",
+    "N07": "69ee062a99c06d1e8dd64fe922d7d7559baba8b54d708fe886bf3afbd4afbe88",
+    "N08": "5f2c4b78eeb3420e858f8afc215eb0806f68694dbb0823b018bccfea39796b09",
+    "O01": "76dd8cf8815249ca7931becefffe6ea37d867ada46f1397aa4e8fba49a8372d5",
+    "O02": "9ae9f1d1afbec7312f31d49ed0757add754f145308bd4bd4722a0e85240d7701",
+    "O03": "698df611d03b8b34cb46cd5e9a30e5fa3f6186b3500eb16ac685a654ce7628da",
+    "O04": "3620fbf6d50d101d11a630f2f4cba83918dd31899df42ed915dfa82daeee8cd9",
+    "O05": "adedf0b723559bb3ff2e09a0ecd8787e9778f650b603fce23234bbf6591cb2c6",
+    "O06": "b685396fac129075fddae582534bf48aa3804436e105ec3064082deeb4e2b3a3",
+    "O07": "385097706e36b4df380fd441a724e6db8da1af055ced43a134626218ea7cbc6c",
+    "O08": "8d7486ccb94733ed89e98c54f8456ea21bd0db8d602f0ff742f6c47aceaf8227",
+    "P01": "e6ee1a57e3e063da3475a7c69d218fe4f77b3bcf4c9d4d7d608179d68881add7",
+    "P02": "cce0ce0c8da32650bb9bee9684e0821fefb7ebf1dff7178e201e462a0dd92052",
+    "P03": "2a61a8328ae297d50ebaff9e1ac51c78d83e88c77c57168cbe1dd433388a816d",
+    "P04": "85f9aa7a2c1cefc7554712310d1c17f2e30bd791f59e27994607d356e1b3e39e",
+    "P05": "8816281094cefa3c51225384808d8b70711e115346e5aa627653037084195a23",
+    "P06": "5c1f50de3ad3e65c812c48007301062f466575c448c3085f7066021f435174b6",
+    "P07": "58955dff2b721bb9c1501b9b68aed119455af599d977e55a3d56ddbdffcb325c",
+    "P08": "11b0bfc002ee3ca13d77667f1b631846f391fa4cd43f601266d3ae31f3c04286",
+    "P09": "fcd8fa5e5264aceefe5eaa3f859aa65696c6e6c3383ace9d3ab2ffdc07f755d3",
+    "P10": "0c7357af2168d4ae2015bec361ee0a75402394f9aae48a56ca057107174fe70a"
+  },
+  "canvases": {
+    "canvas-A01": {
+      "hash": "8a7980e9d984fcfb39494f67ccae690257b0192d08440c8a9230f652f4e94f8a",
+      "structure": "0316d99d7a9e2e077130dae27358e22fb2ccc0e90334def01e59dbee92bbfe4c"
+    },
+    "canvas-A02": {
+      "hash": "66a4e4412cf76dcf69c7736de802ff12876ab81bd9513d495fd46fbc3b663223",
+      "structure": "a38320169419f10ad4497968e6ea32af42f53740400ee1991e36d6cc68f92671"
+    },
+    "canvas-A03": {
+      "hash": "4efd60aa94d5656ec3c8f1b4b5d4262f1281eeb44c8cf482819e62c88699855d",
+      "structure": "49b995d27f2589d7c3d5c5de9c22ecbccccc187c3321cc7a52080778b56e67c0"
+    },
+    "canvas-A04": {
+      "hash": "29c65c385e3e8b33dc13c295a7e6545736343c0e20712a723ffc1907878ce704",
+      "structure": "88a4b79c152fbda0e030e15b703c2e9bfdf91efbc25e4bfa16c8ed8845d54459"
+    },
+    "canvas-A05": {
+      "hash": "0a150a9f9414351df3fa8795e34f442b741db8efc5048de17fd9ec19e42d8bcd",
+      "structure": "5c4a9e1098e4ebdf82a1a0e18458cfe5eca6a1064b5a1565f049586d2270fc3e"
+    },
+    "canvas-A06": {
+      "hash": "7c9f9bbcd3b0fe4feff0b9f01db60494238b62440b518417d92ae9fa73f6d1df",
+      "structure": "cd8d7ce1b89da075c172a5c92c59474bb5d239a0330815da61964fcbbe354c3a"
+    },
+    "canvas-A07": {
+      "hash": "747e4338043520e6ad89f574642ed40f7a6096515a6913bb3c3303faec8232d2",
+      "structure": "e3bce838b52ae46c17c96e5cb6668a8280c8bb93d954b01a52beac39aa901f98"
+    },
+    "canvas-A08": {
+      "hash": "95e7bc0a7ac5b17c5e0091dc8a1519c59f1a7b3b72efdc41e8cb8730c2f6c695",
+      "structure": "af9b87e07ef01b163a9582e5d141296bcc8126efb16bbe3110d8cdfab99c3172"
+    },
+    "canvas-B01": {
+      "hash": "f0867a661d700f711dffef3c2e46ed08414c2d3e2ba1d439b718d1e58579eeef",
+      "structure": "e30c03b83bd097177d1cb1e30dfeda7945cf80347493cc496234d2ab24b12757"
+    },
+    "canvas-B02": {
+      "hash": "2678662c780114a937ce5c74af09de5cca28f07273c1c775477e076a3cc46a5c",
+      "structure": "485bbda8b3dbc7bdc2603919784e367b8de220dfa126d29d09cfde2611b800a3"
+    },
+    "canvas-B03": {
+      "hash": "9520d5352f43b046c2e015a719ca5fc6b34f30183877f225ab61bd2b8266ca58",
+      "structure": "d181da822e75b455ee31125bcc92c7467a4071e45dd961a0d627d6572e79d426"
+    },
+    "canvas-B04": {
+      "hash": "769f3f2ae8b5f67c4f728181ee0246ffb6f689e9e12f4cd10af3757b4ef552ab",
+      "structure": "20b950aa21d1192e0821cbc4305572e055928bb7fe7e0b01249fa9cfeb5664e7"
+    },
+    "canvas-B05": {
+      "hash": "5a0ddab4b5649672d5aae4a1484c90c23b48d99bd8a3c58950d14198f790ba35",
+      "structure": "e5ecd2c47a46a704423b7daa1fe17c9ec4c44c83eda0f6409902918f3437a670"
+    },
+    "canvas-B06": {
+      "hash": "8de9c5b28848e6c8ee2d7677ec1825981837c3fc77f35a9d9e37afcba501109c",
+      "structure": "3cb6a0174ce58142da39c1ee49795446b59835dea8322071c263619108e4f703"
+    },
+    "canvas-B07": {
+      "hash": "eff1f234d8e1d6838f368418262c7d22f81647dfa03b686dad69b50e69e4d8ec",
+      "structure": "7156d0a4c1e96ca12a51219c3cd74b552cd29d2e4600f9d859bbea90a00cb809"
+    },
+    "canvas-B08": {
+      "hash": "46e3de49ca837ebf0bc47cd9f2b6d878437b5b0ed988ae7c7e100bbec919c59f",
+      "structure": "5cd031b40a1ff829c6ff5690c89877d8431f0ae35094434bdb132c35bca41c39"
+    },
+    "canvas-B09": {
+      "hash": "ec19a942cf0eef63c9fda1677fea953b90f716bbcc4e040601a6e75599dd2df0",
+      "structure": "ebd7d96cc6772f51896607bd89d475ddef100453246699363a6eb722a57b16e4"
+    },
+    "canvas-B10": {
+      "hash": "f86f078aca1a10d39d4f04f6030ce642c8b7fc134a4844d2f5bbabfacb1e9214",
+      "structure": "2ee98b6a63693701d5c652679c863311d5b50489e536305b7d92673ee4e86c20"
+    },
+    "canvas-B11": {
+      "hash": "1b53006355197917891eb041bc1b8ff937e2a1161dc65319935aa589240d73fa",
+      "structure": "31bd7a7af81200abef1f07d14d32e329db3dcb8b3cf216014c501ba1d4eb73c2"
+    },
+    "canvas-B12": {
+      "hash": "6b58c0b1c0d1dfde3ee1b3d70c6cfae30c5bd8d90be1207a8a5ed882e75d21e9",
+      "structure": "f399db2e3540780516b3ec4e2bab00bf6c78b64ce15d9f0e2ec0bcab83af6714"
+    },
+    "canvas-C01": {
+      "hash": "f84ba27bc6cf74e92e63a5c6f1110fd898e0bafc7c98f25751daaff37ba86b3b",
+      "structure": "7a2dd4b5c21d9d8892ebcf6cd837804e99db535e904ed5a9dac145f8a1e4d002"
+    },
+    "canvas-C02": {
+      "hash": "7cec1b638ce2de7446bf9b8f9325ca642a0c2fd054898214d8b1fc492c5d3fc3",
+      "structure": "aa30c9cb79d96324eb3ad72c15217e509debe1819d4f0c371500cf0b8e87fa9c"
+    },
+    "canvas-C03": {
+      "hash": "3d4cf56f2edc4f00a3f7997d9c0dd835ec410912b44147b091c13c6e0a9f0e92",
+      "structure": "06f9b37b1122e49046c5406488fa99e29b7689fd195a9de84049760ca4543407"
+    },
+    "canvas-C04": {
+      "hash": "dbf14ee99f15e3a10b0e1e9858ecf9948ce6441c402c9bf7195264e4c8943655",
+      "structure": "3da7982d68489db840e5a5a4f4a866ae79ed386f8a6ca81b9ea8334a212c3934"
+    },
+    "canvas-C05": {
+      "hash": "75609f550b1ee99a3438d36f807ee74f82b65ea0f5ed2e36024e6507bced358c",
+      "structure": "1c09c76d07c8522c6f3268501bff363debb39f776ea59701dd3a0b9b27d2fda4"
+    },
+    "canvas-C06": {
+      "hash": "bad9ef9815d0126a784d0fa11590f9a8c80d47f8a70b7caf80e551eefbd11eab",
+      "structure": "e48813243264be4459dea3ca592eabcf66d678d2209b1f57595beb066501fcf2"
+    },
+    "canvas-C07": {
+      "hash": "8b0a8693fdeb9779ab003d2786553c1cfcaea23efe0c8f24885c6a702f389cec",
+      "structure": "9852c60fbe5e1f9f9bf3590b04ea3da67f5c4060665fbe24fe853b21633209e7"
+    },
+    "canvas-C08": {
+      "hash": "3d90d5fc674c5c3cab5e5f8f969d405ada66fd8c24cd9a8a35641eb339c4dda0",
+      "structure": "a77ee23a4e37776ba54227100e66c01ebfaf47b3e6d43e642d0fd20e3d8bd9ef"
+    },
+    "canvas-C09": {
+      "hash": "b3847d1dab8a64a3eab16a86c3f49b543b5b1e6fac03eb0f0de0be019b6d4279",
+      "structure": "77d72e13920dfa564b1a8a2558a67a5fda402c08d3d512a3491eb270c6d7f295"
+    },
+    "canvas-C10": {
+      "hash": "c1d3745f8547316d7662871959ba415aefaf641d788c9f02c3f0bed35c73630a",
+      "structure": "aade81166400be3fef054b5519ed199456d98f174328d96f49f1c10e30c4909c"
+    },
+    "canvas-D01": {
+      "hash": "db9554cc83375e510e2b45d2bb228159ca9ea8b035ecdcd1af8f9c74b9a23526",
+      "structure": "13b719d7e91553fb793350369edd9b6d53468cb6a2e090146391919815e925d6"
+    },
+    "canvas-D02": {
+      "hash": "1e5e8c84900b66c79355397478cae35e810c240e310e66b93ad89d33694cbac4",
+      "structure": "a6da1d1ffc98ca61d6cbb7bf8c0990634d6afa156e7df0de902c2c68b27ce18d"
+    },
+    "canvas-D03": {
+      "hash": "8d041f7d6cd212d248494e21f0a6b9d60421e659efa0f8b8ece61062e7f0f016",
+      "structure": "408c1727d00bf7c89e08113aaf56c2d2434945afcc3c56f36acf16d3347ca091"
+    },
+    "canvas-D04": {
+      "hash": "673d43b1d63c6bb59ead6a5aafee9badf142e91d6ec529f199166540a871faa2",
+      "structure": "16cb60fbcaf20f460d613cbada130694bb47cd112117f9c21618d4fdde9b0f61"
+    },
+    "canvas-D05": {
+      "hash": "211fdb0327fe6a94a332c0357009cedec205240aeb9cb2956421b48150fadd23",
+      "structure": "cc39198ad826cb9390e65c9872a2a3f4e7ad35174c6d7a51435adb882cc89944"
+    },
+    "canvas-D06": {
+      "hash": "59c8589a21a5e8876fb663167635ab82b418ffd45b32a3673000354bb9079fcc",
+      "structure": "f736de7f03c39f7dc1bd5e23bb979f26fa5454935cdb43e9a37b4584461d2f71"
+    },
+    "canvas-D07": {
+      "hash": "a5faf457a867402944594515e1c71876469f5369afb5d09f016e4853c1927458",
+      "structure": "554c79ffab53a3766d50b6a2cf6f2dc1aa10006970ba48e1ed3fd00c237a41ff"
+    },
+    "canvas-D08": {
+      "hash": "c76609eaff8b68ddf86561971c21ae6b1aa53745e32f3c5d84f32ed7bcc3d4c0",
+      "structure": "7d747d03b8528bb8b717b4aead6010606092ceb48f82e166a9d3ea2fedd3d8fa"
+    },
+    "canvas-D09": {
+      "hash": "054472572ab18f60b8224c6dd65dd69b4055775b5d656ed1270d94fd1a3a05cf",
+      "structure": "1e9a3aa40674f4e5b6be2ea2cd35e72ce023342304485c2f0b4f2ada343b47f0"
+    },
+    "canvas-D10": {
+      "hash": "0a3e8398031cb63fbae713db0baa591d1e6df47b07bbd11663ebf51db21e1459",
+      "structure": "46185a89e4f2b1fb9d2e4bc338f4a06aa884f8165e6e06c889d2328e5d9185b7"
+    },
+    "canvas-D11": {
+      "hash": "c17a8233148f0de4f36e65efe47b1d6a0abe066a27026a835f1f49ef8dafc008",
+      "structure": "1e02627018896f1a31532400bc2ab6cf4c266df348fe517eb32fa434649d96d8"
+    },
+    "canvas-D12": {
+      "hash": "b795dbb2dd0bdacd7e4fabb686a9066ebc2e227af41a938fa0170ab6588bc1b1",
+      "structure": "76788ed7f2742db00b327550ce014cf70dbdf625f5628a624355563c17e7ffed"
+    },
+    "canvas-E01": {
+      "hash": "a9392c580fd59b2ff4778790fb6fff8e2256cfec3f62dcdd469dd6ed02ac31ad",
+      "structure": "9ede53f2c5bb488ded2c0c607f3f6d37a4c69a4d538444f550381483baa5eebe"
+    },
+    "canvas-E02": {
+      "hash": "005588ac7406c9c68db79f661f9552b58e01da774ea6b92096f64c9556d9dc27",
+      "structure": "fd17d91b80d6e748ca9ffd6ea4f9c5de018bc98f419879a15b03afd64a50c50b"
+    },
+    "canvas-E03": {
+      "hash": "e540b06791d19e03a6e9dc0aff469767878464bdba6bbed41b894a8b1b1749f9",
+      "structure": "81a04132cdcb17eb7902b6badac602c2e40c0a43d27ee4a754381f1a9114a9f1"
+    },
+    "canvas-E04": {
+      "hash": "aea92e95f2129ed193738d8d0023ed1f84d82a7925fcd6fd19881188480e3fc1",
+      "structure": "e46c42a1988e12b4ddd8fcb2d1762c552e6f1a8fdbf1024e62cca89f25e78d83"
+    },
+    "canvas-E05": {
+      "hash": "7ba5c5eb8694760e0161d5d45241af74814687b1169fde32cd15863fb0dc2cdb",
+      "structure": "ecff24f83897d6fbea7fd39f65fb7d4528fac1f206784d8282b7f4037eec0950"
+    },
+    "canvas-E06": {
+      "hash": "97df32a35b022eed42447f2366e4e642ed806445ff3b4752d34c89b82b632a36",
+      "structure": "4e16351b28c62af2867d94e85cd9aad124dffeb2c54ab0d86f07a8ad3d0b0140"
+    },
+    "canvas-E07": {
+      "hash": "ba4e41c23c0cda705e4c4eeccb25503f6ffbf2d06dbc56be9b9e367f02988b06",
+      "structure": "45a980429b4481bc529743beaeaf01f378f5946cfe98480ad09fbceb9edbe5ab"
+    },
+    "canvas-E08": {
+      "hash": "f27887330ff9a7f37f0dd411f2289f2dc00f74a68f87828790b28211b5e30a1a",
+      "structure": "89d4dc19964b78bbf5f2219ef14a86452325f3a67e1f32325f1a57f7815b0ef6"
+    },
+    "canvas-E09": {
+      "hash": "05b4615ed7ea15046219c3edd46383a035e036424e34192e441dd66ba3fb7f80",
+      "structure": "85bfa9110de3c7911aab763f2d3901210619ff3227b1671c6d828d7a84b21a81"
+    },
+    "canvas-E10": {
+      "hash": "2b68f2597411c391d9c61fa2d486d51b751e3b9a6b6d3c2517cea54793261076",
+      "structure": "8757e8a9409124bda648534cdc00b82593951bd56937226f99dc3e3fd90df672"
+    },
+    "canvas-E11": {
+      "hash": "0d4f6e90e4101797e805552ff6ee5cec151c9f5012a6005cc92819b37dd41dd1",
+      "structure": "b6288ae79e17039228d95246fe70dc7e69896941cdf23d6cca36b7faab6e6b28"
+    },
+    "canvas-E12": {
+      "hash": "d0035192eae2396a4c46acae7473b39e59331154a5b000dc076b0377ac8be473",
+      "structure": "4856e6a1579d249d159417e1e600caa5370e2f1fef69ae55a2894aaa04eead47"
+    },
+    "canvas-F01": {
+      "hash": "3140cb3dd68425a6218d763ff3009c12b84812bb8ae50e3d577af359ebc7097b",
+      "structure": "2251a940b1890a58a88030c3f5db50b6f7729ccb09d8b32681ed0ba9f0eb98b0"
+    },
+    "canvas-F02": {
+      "hash": "e3c0e4f4579beec7e9d5e074009aafaa0fe713e08c0a47839781c367ca8a351b",
+      "structure": "c4c3c355099a00197bf876187aee721958b7e60617ec289344618599a8983e04"
+    },
+    "canvas-F03": {
+      "hash": "b76dfa1763b89f0399e6ca28d222469c203506fbab996f77a0a050d28ea82450",
+      "structure": "db53139695c0cc40c2de43d08a8652fe622a16a5551761abf74325b94273c54e"
+    },
+    "canvas-F04": {
+      "hash": "95e5758a1164d5191be6950f54786e19f650351ebca2fc406d02f91a6484b6d7",
+      "structure": "b70b79e64d870bfa59ce233e2286aa1211df37c001be2eaad100dc581242fb80"
+    },
+    "canvas-F05": {
+      "hash": "8fab7b86397ebc2f391bfd000c8de0e4b932ce1af168277fa38a391e0e9abb9c",
+      "structure": "9d07e971172d4845f408e31de3e4635a40272bc47a4fd9562eeb3870dc1077b2"
+    },
+    "canvas-F06": {
+      "hash": "86a7073cdbb8a6a95551fa13bb0783db37c71ad9d09721a37c4cb6d8ea9eb735",
+      "structure": "e324dd80fe97c460ef721a8e7da05ef71d6c549207bfc56a8aae1e03e50e3c38"
+    },
+    "canvas-F07": {
+      "hash": "29a17ff556562ad022fb6f0ca9c80f3b1f114da9a4430c231e462ea9b250782a",
+      "structure": "010cf11eb46af67abac2d4cceb45801eb3cf83fc2530146e1bd6fc97da25f964"
+    },
+    "canvas-F08": {
+      "hash": "97818fcfaec677a7d33a253815420f239f90b0b636638ad8807edea2ccb56dfe",
+      "structure": "f5c235d045e7c1b1b84e97fa8c30d392117939c87112f03c65c42089f39800fe"
+    },
+    "canvas-F09": {
+      "hash": "f6ce45e2c7ba747a649796e58686a484befb4514c6bfc80e98dba0a60db9dece",
+      "structure": "ae5d8b6b7420667bc9c78f797e5621f7133aa6a511405109ffeec82564924d6b"
+    },
+    "canvas-F10": {
+      "hash": "12e42e48499e4d347e51c17e918db437d081aad1c022928ff9db377eaa918e9b",
+      "structure": "81bec214f97ba60beb033be0d862310dfe2c3169124c7c9393f9022a5ee2eebf"
+    },
+    "canvas-F11": {
+      "hash": "5e2245e4bfbc2a4beed6733226eb85bbb958c839cf69eb4a407d07f28799d89a",
+      "structure": "59590faa2ceb3a8c36df8d1e1150c37126f9d64885308035fc1d06d68e576e1a"
+    },
+    "canvas-F12": {
+      "hash": "b416c4d3e0962702733035904ab577a496b192ba29f001c8de283aa22d6802fc",
+      "structure": "e1abf64f38e04a36bee99a3465a345c9081ea7353dea22ef6d691f79dc014dde"
+    },
+    "canvas-F13": {
+      "hash": "eef625aed3bbfbc2e3f14afdff8f3efb0be39842ab5b25225411f10639de69a2",
+      "structure": "97974da5867ff7533d28287542f1c6080d65c77e7f2dbc8063ca03858d8083a8"
+    },
+    "canvas-F14": {
+      "hash": "a1276493a83dfe36f7f75dc929f28a3bd19f7ef65c7e6763a24d2290607628f6",
+      "structure": "e54356d5901df13da4f7787f8372453db8abdd6bdedbfce93dba38eae3880ee1"
+    },
+    "canvas-G01": {
+      "hash": "88954bded51712028f31ad29ef284f6d63e97b34f4ace357994db08c63ab95d4",
+      "structure": "3b654cdd28abcee7492964fbb675cd463792ab928acfff505661efdc03ec27f9"
+    },
+    "canvas-G02": {
+      "hash": "36a59ac88a1e9cd84b51ab8627ec5ee0b544b0068a5ac882aab74ebedefbafeb",
+      "structure": "a829d5dd7fc8ee5052c73b973924b90a54c646c3dc8944786723a5118bb8ada4"
+    },
+    "canvas-G03": {
+      "hash": "54853efff5074b41b2027fcc967204b5af49659999f3f1c7f3b866547777ade9",
+      "structure": "7900f16c23a7d75cf56fdf83d95812685a03522a5fa2c8d8b2f441f031ce9b2e"
+    },
+    "canvas-G04": {
+      "hash": "9980e80217498361f482f2d44223f0b2731094ed292e3b206068ecbe3e8fa08a",
+      "structure": "4f522b6b39d17ababcfb64186b00e0bbaa31d6831afbd86c0ce09871bf5b6152"
+    },
+    "canvas-G05": {
+      "hash": "d6c6f5f308306903e6b7d385dcaeee6ccada6c8723b41c61a04e9f007784aaf9",
+      "structure": "22e372ca4b27d1d74c9d301c72039145ffc3a9b9b5efe33495dfac9676a2ed1c"
+    },
+    "canvas-G06": {
+      "hash": "f6b610640d304cbca591a947e949a6e4dbf99e84cb3c26820d8b73d84200735b",
+      "structure": "7fd77adb1693e1f5f9b6a318a1e5e44c192f5870793c009430c147b199318d21"
+    },
+    "canvas-G07": {
+      "hash": "2f0a0a6c3b030ba20f72dd91640b88a434e02f914f49c253c867c3da5c72a968",
+      "structure": "daa4fa53ed3c06f2fdcf9f7749be5798fdbca68208e023a0ccc56124b1082fce"
+    },
+    "canvas-G08": {
+      "hash": "328b04fcfa494a784816dd4276c9b59a56cd36ecae7734d593ea4401b3908872",
+      "structure": "377d65f498fb578224fabd68eec733f5a81545ce57119aa7cc3d7a87c903fafd"
+    },
+    "canvas-H01": {
+      "hash": "16a973e3cd60ebab397c5fb594bfde0f4087d37b6825375d1f7d1c542350f84c",
+      "structure": "ef85a7cc0f6e800373cd2348efdaaac713d660e01c575a356ad94511128a929b"
+    },
+    "canvas-H02": {
+      "hash": "bedffb5f883d4063264a2f52e8f8c76b31a04adee145ddf88bccdca40976d152",
+      "structure": "908a9f804d112aebc193315c38680b3bbd0d106120e617ccf62dbf23cf66868b"
+    },
+    "canvas-H03": {
+      "hash": "aca220ef14aff8bbefeae5c0857322dbfd1c345f4b0230642516a4dfe3885c01",
+      "structure": "3527d864bab51106ab93005c0ffd43257b4815076dd0025196da20742339a147"
+    },
+    "canvas-H04": {
+      "hash": "61a01bb678a1e4c439baeb93b30df7c64b3e62063064bcc31dcefec64ddc58e2",
+      "structure": "e72f84d36fcd9b920d4e5eb6e622d94f1c406e6ef3613ea65d0b18ba59a9be1a"
+    },
+    "canvas-H05": {
+      "hash": "74446e973ecfd73cfb3dcd9054ef82f9a54689911fb5d7b153ef9705b771c920",
+      "structure": "854bf9c24255717670a7d13bec74e0ab375addc08074ccd99189ac493ab195fd"
+    },
+    "canvas-H06": {
+      "hash": "ff7bcc2c846679d9fa3f1d3328a56137ef71b3194c5d6326f0a76200e69ad58b",
+      "structure": "c1dc4edea07042c89461cd2da1cb6859e6677f8e40bff64965a1f784a90b665e"
+    },
+    "canvas-H07": {
+      "hash": "f996eca593c015da13beb5b8d0a5cb55a8d96361637c0a2be298c060a3cc9368",
+      "structure": "dcf48e9f8212e6acd92f5704f0afb7f10e2a41d12c3bdc30671ae06fa07f1dfe"
+    },
+    "canvas-H08": {
+      "hash": "a0e848c36f5168ba5c221084163b9f5a762198d87b1211c0a77336cf6c5e1bfe",
+      "structure": "c48827133988dc0e3822a578395d843a23b9a36e9d0df2fccb1fcdd8d6d26c65"
+    },
+    "canvas-I01": {
+      "hash": "4910f9f59a7426fb68b876dc2df364d14e24f7b1bfd69534e0e90189c3c0ca12",
+      "structure": "14ceaf635b1b564b8293fe33f9ffe2be5e7bfe43f08406fe4773f812c92561ab"
+    },
+    "canvas-I02": {
+      "hash": "08c39c529dce59ab3821f8b23178a3af17e56e9c5600f6db34b675085ad619fa",
+      "structure": "809df26c2ff94b3c801d21adbf6f5ba8370296ab88a717f42328d63d18324cf4"
+    },
+    "canvas-I03": {
+      "hash": "639e6dc8e198ce247620468bc0118bb1265fa574aa25d01efcbf3dc11a2ce142",
+      "structure": "1fe4b72b86f2d2000fe364b311b7de0a3588029f0887e8635181e55f34dfe8ed"
+    },
+    "canvas-I04": {
+      "hash": "fd30a49df45176610e8e161381a21a2c61a6010a04dd7e2b47d3df77a9fac193",
+      "structure": "b592e7b81f5a333cb130137257932a278e6aaaeb17e51584f30f94c0fb469ac4"
+    },
+    "canvas-I05": {
+      "hash": "03a40d90082315b94a92493cffd741a52bcf6f99071d25b3e644392767a8b457",
+      "structure": "f37f58a7de9f4b38e3b7db736d28541ba61cb61cfbc70f8be7a6781460b29eb9"
+    },
+    "canvas-I06": {
+      "hash": "dc8373a01f46abaa695895216f0e2761fec4d4423112c31881086de3de718690",
+      "structure": "c923d5b2ff7fa254fec45f9629b18989f3da1cf4c274a1824307189f8edba064"
+    },
+    "canvas-I07": {
+      "hash": "d9d09040a43de445ab2f7a01cc0d80924931153f5b7a59795b2b0496fa86ab8b",
+      "structure": "3854012a7645bc313d61f59f9dde74ebab739f062734cd47a4b76983328d789e"
+    },
+    "canvas-I08": {
+      "hash": "0654daabad6cf4ad6067aa711c9c0eb7f268494a370a5f1246963c80d2bf6dbf",
+      "structure": "d16354ac6882765bee2f2115d1c12148676a642192d3ca444c57aee2e9b299c0"
+    },
+    "canvas-J01": {
+      "hash": "f997c6128d8768842d44b2bd193f6b04c185d0be98bcf9d27656136597a5b84c",
+      "structure": "f3169d7508da70792a9bf53cc3f25832daf466ad1a59a63541fc6b9459c045d4"
+    },
+    "canvas-J02": {
+      "hash": "019572a5f9237993bf4c1311c95465cb43bcdd12f755799bd6a9d64855cf2625",
+      "structure": "1ac264c2b08d35d2c8693f599f5a34bd946ce2c0a79872c390868e090948d1f9"
+    },
+    "canvas-J03": {
+      "hash": "2ff030ddfcd39124fc7e62869cf929cf5370f18c94e4fe543f996e5c809d83b5",
+      "structure": "4ba1914d46d1ce92470946d8a4b101503f7b12aacfa7570cb171218604aa773a"
+    },
+    "canvas-J04": {
+      "hash": "050bff38ba4689d54b87ac7577712e58be8cbfd5e6a8320e6457ff3fcc574b98",
+      "structure": "b904911663f9e861e3a0183f9a8509609144db81bb82475832fee43a086d82c9"
+    },
+    "canvas-J05": {
+      "hash": "6131012950b4f3a9bd1aecd7565e9e0893ac3dfecfe0dc5aeea982750fe97a33",
+      "structure": "f40c9b13583ea62a1384b5d465315187277d10551d8f8bc5b1c6811ee54f735f"
+    },
+    "canvas-J06": {
+      "hash": "76f49ae0b21d88b6d3833aca6b31ff251dc058b4b504bd6094371c00ef7115b7",
+      "structure": "1e500acf22e4fc7d6e8f28ede5a41eff019af40ec816bba8b1cb6cf2d792f245"
+    },
+    "canvas-J07": {
+      "hash": "bfcc052bcd5b37d15e3b1fd36c7f31a4dc871bc858007670f86b9ac1724f6f82",
+      "structure": "92c00c3eac1420d9394219fd3bec7dec221b3b59d1fe6cfc89adf25d1ea88888"
+    },
+    "canvas-J08": {
+      "hash": "905efaa1264fcfd7f91f3776b2ffc40ce938829fc3f2b8fd6d009bf5ee1de103",
+      "structure": "0d682c7b541f9bfc1d6c4b96673a3fd80cbc657cc8a84ae06badfd7ae0951afe"
+    },
+    "canvas-K01": {
+      "hash": "bd1ddea04a1c0d792be872b3aa464f358b502dce9d0165c86521ca772612bf1a",
+      "structure": "4c7595ecc9e0bdd2de40df23f90299ba534119d0e47b4044eeb02eb62b55cd88"
+    },
+    "canvas-K02": {
+      "hash": "fb377deb73eae92c73cb7c4556dae5df32d590dd8f8aae188c5f94ee99f05b9b",
+      "structure": "7edff2cf80b2950d367bc9d7f357086a8085a078228e73ae829c20a0a721b5c2"
+    },
+    "canvas-K03": {
+      "hash": "97e200a38d23737bb16f956e7aefa7565083704bb265a076fbb224bf3b3ad818",
+      "structure": "98dc52be73d9dd20077c70650ee66bd634b8306eec5faf7c181b72c638c4c6cb"
+    },
+    "canvas-K04": {
+      "hash": "f64ea2e49411492147e9ac075d48324bf657afd29784395b8dccace6aa260d9e",
+      "structure": "924d6e4386056f3a866ab806e0fafb41e35d81126826033fcebe56d782a93ef0"
+    },
+    "canvas-K05": {
+      "hash": "1ac5f150c2eb71f3e136f49ec87bbaffda8c79e1e9f19fc2dc8672a7cffff6da",
+      "structure": "c1514fb136377068328dcc8c9eda0f869faea4f4b30710f01744e4cfb385048d"
+    },
+    "canvas-K06": {
+      "hash": "346d8e686af4751c0f12fa3003fda6c5df63281480ad5eab03c9b4f931460d87",
+      "structure": "8f73ef72702ad12233686d086c3e7d49673c264570fc0fd0c3e91d0c58901cb4"
+    },
+    "canvas-K07": {
+      "hash": "843d51f4fdcae0c18496013063ea9bf1220e5c7756219096dee44f5e4bc9b96b",
+      "structure": "0519a51c854f4c5a5ef4cd355709fc4aadfbd3528c869587a66623d115c83870"
+    },
+    "canvas-K08": {
+      "hash": "3fce04dd244c3c2d990568b706dc3921ab305e1a2304b6823251204b060d230d",
+      "structure": "bcf38fd7cb595c62f0d27901da24dc1f5982eb31367a9a498cdbf13086972e0e"
+    },
+    "canvas-L01": {
+      "hash": "606f2562f4f5fb75ae0ee03b64a00cf81d202b52a98425cf7382c74fc63c3a03",
+      "structure": "f5652e5e9382d898d04d2cc7801f968f02236b8cfb2798f835f8b02842820afa"
+    },
+    "canvas-L02": {
+      "hash": "86147375f15f1e81d8b5a27622ef958734f76065d78e0da9fc03347b033f496f",
+      "structure": "e7366d932bab3cac3c1745e061380402458a03411be4f1c14864cec2939e7811"
+    },
+    "canvas-L03": {
+      "hash": "1a1ab6377a0d989550f1c622f3de2f6f2ff6f4830a7fb8390749c0b0074681a3",
+      "structure": "f6717232c6b10bba8afe2bc695cfdc9dfd8ce005bef32bf62a33649cfd0a7742"
+    },
+    "canvas-L04": {
+      "hash": "2ba013d3298e4d4564ac71c39eac2569238aed2c61ba007c7f222d8510bf9aed",
+      "structure": "ca984a26b3e50028bb89c8be300bcde95ecad839d9e0230b37adc8882fd665a4"
+    },
+    "canvas-L05": {
+      "hash": "a55facb23b5bdb62c57733eee38727006993d46e91deca63e675246fb4656a95",
+      "structure": "af3ebef7491ea74d692ff36391de4bcdfb7b3949ac9907bffb89d41ef4d01de2"
+    },
+    "canvas-L06": {
+      "hash": "ac27ab288ab5e067596a8a5853ef44e47d67cbba12a7fee5f7ffb2abe230c3bd",
+      "structure": "8a2fdefd722e01b139f5cd094f40e17bb3aa83193619c15c58cf15fff7aa369b"
+    },
+    "canvas-L07": {
+      "hash": "4a299ea8cdae39bd23f9e8969651ba2e230e2d0974639d47c1a3bdcf9ef95e8b",
+      "structure": "9f562bae1149adfbf91727b29a898a29b6915c1d8c950224e0ab0f8d3af9852b"
+    },
+    "canvas-L08": {
+      "hash": "bc40c39413a1613cef0706dbaad5edbeda1592bb960338eb9ae9f59f25e49ce7",
+      "structure": "d79aca82e282caaa03b2c3d82e56493bedc975e225799bc00bc426ed1b2faf3f"
+    },
+    "canvas-M01": {
+      "hash": "83eef2d1393f3a21a5c237a83b429c12044611a4e6a98e5245c18fe167bbae38",
+      "structure": "359312bdff53e97407b6f77ff6b5e2ec7161813535d2fe7cb5d008106aa6ebb5"
+    },
+    "canvas-M02": {
+      "hash": "22f5a30faf4ffc5dd5195bbe3cb0525c0b8d76cf12a99dc06878fbec0505e6d2",
+      "structure": "45ab89a61d5cf58a3276f85540f173912bde3b311aebab55a4d6f4fe359bafdd"
+    },
+    "canvas-M03": {
+      "hash": "f660eb2f5df750850f09e782f94b567064783acdd159d05f2505311de9e9d0db",
+      "structure": "65cf609d11516be57101bd0b9411076c414d3937b8a9d6f7fa2ffa1596d1b29e"
+    },
+    "canvas-M04": {
+      "hash": "9356359bf935139e1e63c87b79f528a2bc7de4397dc1126d8b6ececf220481ab",
+      "structure": "a9fcce235f084cea861562ad77e923a20ee6dab0c94892e263eea7211547e00d"
+    },
+    "canvas-M05": {
+      "hash": "e13d2261b7fe40f1d9185d07a278dcb5794aada9f7573a644305e176a54670d5",
+      "structure": "fe7996a2d71b2155392ea4f153a46e52fd04b805e7785c1b0e5ff4d8ab1bc60a"
+    },
+    "canvas-M06": {
+      "hash": "251a3210bf3c9c72ffea6644573abe88d1ff805f193f8379fd13a2423f2672e7",
+      "structure": "f25eff6fceacab550d377786572ed9536c7564c2b27cac4af20ee6e1f5f2a01c"
+    },
+    "canvas-M07": {
+      "hash": "f4264900c43939d18149056e07b9a84c194ff8ae1e8d87801585fd700526d71b",
+      "structure": "9ba0abb737910243c82c42a3fdc1b26052f33677389db251df7a332d72d96c5d"
+    },
+    "canvas-M08": {
+      "hash": "bcc40b830f61c3e255a9ed88886dfe33410c42ececcc373e7bbf9bdb9202ab6c",
+      "structure": "c3ce143dd84e8e50a2327789047e36b4814f951e80e4810e42791976b9622ade"
+    },
+    "canvas-M09": {
+      "hash": "27c1c11ebd10d0b70447329fe0b2ef697dc4f6b314b76af7946d57236e59fa3d",
+      "structure": "7b7b4103b62efc07623d82ba6c5194b06e864a343c8ce8b2f16d13c5290dce07"
+    },
+    "canvas-M10": {
+      "hash": "e56f0c5b72c8f3abfb5a38a792a7da3bf67001471b04a6a21136e2bd8ff5a978",
+      "structure": "753a3509a6408ee6d2aa1456fe63b7341b99417f79a9b6933629a02e94e6896b"
+    },
+    "canvas-N01": {
+      "hash": "6f8264bc43ffe1e7f79e4985c7cc0aff2ccb31b14ff6090974e77bd778cb33a1",
+      "structure": "b834077141773c4ac1acd036352e0535cd5833d3d33522a5c2268f6c004ae10c"
+    },
+    "canvas-N02": {
+      "hash": "c3333b78d339b94da31282f0096f57f29cac8498cf13ccee4d9b7fceaf0570fd",
+      "structure": "7adbdeec050f784cf20cdf14f6eaa9640c495438d931666f9442a4b985619c93"
+    },
+    "canvas-N03": {
+      "hash": "c1ec20943af72bf6c547285d7a69d626c543fc4ede70447834049f757576d3f6",
+      "structure": "4cb6cb96dd91b682478b4be935969fa671192719e36ed8da916a77dad74057f8"
+    },
+    "canvas-N04": {
+      "hash": "4f247b7ca8736603c5cdf3c3210e3eea6f197d63495a4cfec72d99efaf7d42f8",
+      "structure": "9877a1babfa82261acd2c26c4388547d7df50ca2fda2d06bcd163705e3953968"
+    },
+    "canvas-N05": {
+      "hash": "942d034acaa654f53ceb7e38bdef156a84cffd3e461cb22bbb3ead2140bc5f8d",
+      "structure": "82e65f424a142702bf758d43b7aaefe558cc6052199f0148bca8ecaabd34dc65"
+    },
+    "canvas-N06": {
+      "hash": "b314ee2decc92e7fac6d509e4306285da7305e48d84fbb81f79ac1df9bd9d810",
+      "structure": "e3684d0baa438c9a322b03dcb3be502fd6e9f3a7366b62e22f747a067fb3f6b3"
+    },
+    "canvas-N07": {
+      "hash": "936399aa04f9f6e104fcced4828103f39b205f3bb504472dcaff1d2cc3309013",
+      "structure": "71de121c140d29d6b229296085aedefd9c9a250f2e67c42acce11bdae16de397"
+    },
+    "canvas-N08": {
+      "hash": "7bdca8603c2303356036e3bbb2a513cd5198b86beb7506d726276abff7fe7c9e",
+      "structure": "788fe9e184e5c2f1fff155d139b340602ac36a52fa067caa285785384e16ab64"
+    },
+    "canvas-O01": {
+      "hash": "6bc244cc88a66d4cb0d4c37a0bac14b61090bd24dc99d3b020338a56df1da63e",
+      "structure": "6218b816421eb8d858f574b7f505e780383dae4e8733b19f1832edaca0fdb8b2"
+    },
+    "canvas-O02": {
+      "hash": "209d5607a82e08f4fa077cbe80687d3b146df030a1d381d7defafa2310c87f6f",
+      "structure": "d73c81d50b5ef083f033ad6cb5ae9863fd174428806b095e7251be0662bfa620"
+    },
+    "canvas-O03": {
+      "hash": "0d9ba1942692adc4bfdde2d650b1ca64db0f34ec3fe854515e912af895623f75",
+      "structure": "396088c59637fbfd02057976c37df2b95e21c59b1253ce7861449dfc1a8b345d"
+    },
+    "canvas-O04": {
+      "hash": "3d931653d50f7c4887812249c5eac887f4ed225623314d7f9ded46bd3bf479b3",
+      "structure": "c1e1424b97422ab74729ad19bdda23276a6b0a9147d84e5295511f94703cf322"
+    },
+    "canvas-O05": {
+      "hash": "a80956377ee591b165e0c508ff9a5263143429a906678920bacbd6d307966cb5",
+      "structure": "88e7cfeec1d679d98b146a31ba77bb5a0b4be069cb435f3ba4c45c512828ffc2"
+    },
+    "canvas-O06": {
+      "hash": "c6539e783acd5b411df510f75ed03df181ae93acc986a9e82ca5385dbc7252ed",
+      "structure": "135356ea12fba0f0ad4be39ed07d1a582ef52ae6b75a3acb7df90c7992c25f7b"
+    },
+    "canvas-O07": {
+      "hash": "e8a61dca35e70dda53d213a57eb64aee020abc191adeccc8ac6268477732ed10",
+      "structure": "582fe4052a901dc45942bfee1dcfee9f4b12aa94a0caed66d4d5ada373afcbae"
+    },
+    "canvas-O08": {
+      "hash": "dfa4ab611099897b4872b1aaa2f9cad630263b82b3e798dceaa126b5f22ccc54",
+      "structure": "c205aa7d60d63b933fcb1de0a51ab6600f2965abfcec4be963e69a555d55eef4"
+    },
+    "canvas-P01": {
+      "hash": "11ffb2e08d757ac8accb575a350b2826befdb2182ff2adef36ed78cb6f57fb74",
+      "structure": "98d174ce77a12167742920ab6f9d3ea1a18e4f8d168c381af258138f7d149e7a"
+    },
+    "canvas-P02": {
+      "hash": "461f5ffd77cb10c4dea347337a96ec1350c8300f7e21dd662bf42aa0efc8c7cd",
+      "structure": "3e4bfbbd7c439a8fccf0b7ca95ea6b6ae06c4dc0ba00bcf0b781be398f88475e"
+    },
+    "canvas-P03": {
+      "hash": "b081467509016f67b77676214e4449dda9e187dc8c3955844be2aee85592320e",
+      "structure": "17db382e6cccd3143aa0233e179c19d7ef7093062c49a26fcd1f759f4f9700e8"
+    },
+    "canvas-P04": {
+      "hash": "b0a6426abbabf7d7ea26a1c6d325b8a6f905ac11362686cf8d80df1d9fb15ecd",
+      "structure": "5463c4cc5b2cc0812e100ad7a465e2b55b71f200dedea9f79d2edb2df1dbfaae"
+    },
+    "canvas-P05": {
+      "hash": "aef69597d60b79ae267b3f8eac19df4b01f8d63875bc142049e99e8d4d5bd5ac",
+      "structure": "f99fe5ded55ac066e6eaa2432bdf62cac5389601b757f3d058c9e1fb6f454815"
+    },
+    "canvas-P06": {
+      "hash": "05a5c41ba1e146b2f02adf89a37ace6fffb294f2764e508078e831dffc4c92cc",
+      "structure": "2692c0a67b0dcf3fc24ebcf81c50085613a02fdfb67cc1f06b3f1d93ca901e86"
+    },
+    "canvas-P07": {
+      "hash": "5618f778ea1503879ee41e5636fbbf5624bc7312a1fe1cd8137cb9b6865d9fd8",
+      "structure": "d95590e3a30e16b619324814d1e2a9b9b307a6339f5a8a3b47c1557767d692dc"
+    },
+    "canvas-P08": {
+      "hash": "567624e6391d85bce4a8f4381e21a0d5d978bd060143c11ad2fcad77890c086e",
+      "structure": "bc7c6dce79accc9bef88aef958afa03b504b4720e3bf953094c922d7c87ede74"
+    },
+    "canvas-P09": {
+      "hash": "8be75d8127dab2c234c53a20611393c24750f1335793578ec706c409d204e031",
+      "structure": "f11a3a72b60f8364dd80f1f10f9a4329d8d315ef4cd7977a3139ccaac4633826"
+    },
+    "canvas-P10": {
+      "hash": "5162464e19aa8c62c77bbc7eae13cdf83e79db7c6cba1d191911fc9600ffa72d",
+      "structure": "5d245f6dcf92b185a4e31270d7f1ee679f1f1a6606afc03e6778746dd68c760b"
+    },
+    "canvas-unternehmens-wirkungsarchitektur-canvas": {
+      "hash": "95d3540600c070ee9b44bbb5aa360ca2453affb19e176e8f2a05627d2e1796a4",
+      "structure": "e1d87bc9504eca354ce82067c5a36aec29f0761e1d558fc0875aca5325cd0e23"
+    },
+    "canvas-produktwirkungs-canvas": {
+      "hash": "7eceffeb3b36336572f9f140bb053fcfcb9d1ee8b07c0f5658a0a5c5d22ccb8b",
+      "structure": "164d80194baf49acaf6a75115f001dbf30d11d3391848fd25884ddddc87bf66a"
+    },
+    "canvas-lieferketten-wirkungsnetz": {
+      "hash": "c4cf7811d6f7326f7390948d75ec69d11dc7ab3808779292e0e1dd91cfb38751",
+      "structure": "5ecdc1da8c3227437c08a4f636905bfd2fe9e655c64c271f0865245b10a6c16a"
+    },
+    "canvas-geschaftsmodell-transformations-canvas": {
+      "hash": "06f3d42683d9f159ecb1799fb6b3a4a4c39a7a1b04eaf7145eb397286e60abc7",
+      "structure": "49543506c09b7840767894e717135c262d898b091b75a35cdfd81c29d81b349b"
+    },
+    "canvas-wirkungs-investment-these": {
+      "hash": "1feed2a57151d9a545f4f8fbc17fb05eec8a1af8939546eaed45756e314bd488",
+      "structure": "8ea0fbd46c99ed1c8380db4043962efae48d0263edc3594eb5e276675f866abb"
+    },
+    "canvas-kredit-wirkungsprufung": {
+      "hash": "b9b01bfe52cd74154bb09b873232d750a8935a8175f2eb06ae0109731e0f0c5d",
+      "structure": "ba64e00fcae77845fd9e46621a7023da28852359d49a07a90083620230b4b159"
+    },
+    "canvas-versicherbarkeits-und-resilienz-canvas": {
+      "hash": "d065b3f303b0f0a0e79e5c647151d0ec5beb4970ca72ed3be4e9425b38600d13",
+      "structure": "3baf7ca867ee844681a2bb40787a656eb91034ca56cadcc8b968c48baada7f8f"
+    },
+    "canvas-portfolio-kapitalwirkungs-canvas": {
+      "hash": "7318c9f951d279b7f74070982eb2fed5558ca488cb2bea1490237ad13f49940d",
+      "structure": "80c2c48aa413a496ade9842e3b57f9d6fc739c607a283ac0db15e83a903c83de"
+    },
+    "canvas-politik-wirkungs-canvas": {
+      "hash": "4e9913d6d67406b201d17432cc3ab01ccc8165c96a848e2520ca349ba41476ad",
+      "structure": "815a6b731df53d7d715aaf5b21fe24fa89689c5c23ce47f459419b5ce767e334"
+    },
+    "canvas-gesetzes-wirkungsfolgenabschatzung": {
+      "hash": "5a173831048fdc4e835e67f669ca5c6d2066352c210e18a3b7ad95edb224308f",
+      "structure": "7c8b15e7f74b0a0f2538f8a72844920a976d76040c44443656248cde288f23e8"
+    },
+    "canvas-wirkungshaushalts-canvas": {
+      "hash": "6c3dfa3f691cbe4c40bb05854a8755720ea19d41fda0639bb3c775696a6f15a4",
+      "structure": "41d505492b101f5a53128560c59cae0bccc0b48e6930e491c23365191d5f6de3"
+    },
+    "canvas-kommunale-wirkungssystemkarte": {
+      "hash": "59cb1e732dd593962e17f5b722e005c3d07bb4e9678c4edfb04304852cfb710d",
+      "structure": "4610b140c874db0cabde1e2a06c69ce61f89d261ad6c541dd96b4091e423d2c4"
+    },
+    "canvas-sozialraum-wirkungs-canvas": {
+      "hash": "67f40b1e873ab9038bb71d97e6a36a21746a7a029c60cb9d411bcfdce17280cc",
+      "structure": "7ce278c5074476031ac6765054fd6c3b21df63642dcfb6c44920a854d793a9f1"
+    },
+    "canvas-kohasions-und-vertrauenslandkarte": {
+      "hash": "843714e608f12311b18514613ceb31f505560595311de2c10817a64c18a35466",
+      "structure": "323311bca49cc1579c1687595e9be90f255c54dbc10f80c68487be33af33f23f"
+    },
+    "canvas-inklusions-und-zugangs-canvas": {
+      "hash": "e4de47317a0ae3b0367238a62dd4c7286bfd4d245087acc9e66d600aa71ff5a6",
+      "structure": "9bf162dba464b5f49c284353acbe230de9264b637c3082169cf32589bbda8bae"
+    },
+    "canvas-gesellschaftliche-resilienzkarte": {
+      "hash": "65bea964d1654ea70ec17f5b267e5d9d23382ac94e5773f4c16ebae8e7482086",
+      "structure": "f2c6d957db044b4c951233b9041a3e63a60ae66bb3236379f59253beef76bc84"
+    },
+    "canvas-medienwirkungs-canvas": {
+      "hash": "b36da30776f3a2c1ced72451f3c844ec710d0af7bc934ebe6c925998d75ba5dc",
+      "structure": "fe08bf8e400782955d6c3e538dddb99a6ad396a566636a8bfbae3ef3f467e4ce"
+    },
+    "canvas-narrativ-wirkungspfad": {
+      "hash": "0e78171ef1b9463938916dcbc541c9fc4291bdcae38acdc08d2ebe6052a47736",
+      "structure": "3b240c3a3430287a7f1661a53eee41055ea42f62e7d892d2f9ba284e259f7e15"
+    },
+    "canvas-algorithmische-plattform-wirkungsprufung": {
+      "hash": "637b54e36f47a90fe890733a8cd470fabe60df1089b9fd732f192f32511871d9",
+      "structure": "fef4d7515b80a2e26dc8627c3ec7788d8be62a81dbc4da581a78f7c175bdcc25"
+    },
+    "canvas-community-und-host-wirkungs-canvas": {
+      "hash": "a17a6a758cc5596781286bdf070b582a0b2000fc89ba13f9d4172206fc8a03fa",
+      "structure": "60ef7ffe6bcadf50c17406aa41f508fb7fba41b9f220b9a865f5f11008adafde"
+    },
+    "canvas-forschungswirkungs-canvas": {
+      "hash": "9f704c019dceb9499bcf45e564d0720881af42f9c7ee7be34459d9139e64d8ed",
+      "structure": "aa3b73ce8bd9ea17da187fc12a8cb3050cb051364039324a11dcd9049c30fa8e"
+    },
+    "canvas-wissenschaftliche-integritats-canvas": {
+      "hash": "d7cd51a97cfe038f055f652bcd972dd1d067a6006b724252a65826ab6450cae7",
+      "structure": "881505b6cb78ed89cb355a23394b0e78be7994044c92c72ff5a44864d2e75cfb"
+    },
+    "canvas-bildungswirkungs-canvas": {
+      "hash": "bc064d3611eea82e62f12d6e0270ca64ca8e003b465571eb10f6954ae804fe5a",
+      "structure": "a66f4cff5d9a70b90995cb551125148646e1d0282f9f5470eef374d3b1a1c3c2"
+    },
+    "canvas-wissensdiffusions-canvas": {
+      "hash": "6e3655a9eed038d7475c3a0f739cfb4edbaca3e0f50f9e2090c018b2e4133570",
+      "structure": "fda9c36d1bac6842a1b7d4781470a8d966128af0a2c60c66d752cb51926baddd"
+    },
+    "canvas-personliche-wirkungslandkarte": {
+      "hash": "d9c8a9895be8e128ff36a33ae51f7e39909005d134726e90d02b8f33d05f7ca1",
+      "structure": "b1212b265c9010115aec024be4b24e61872f97539ef4e4431a99af659b5e8dcf"
+    },
+    "canvas-lebensentscheidungs-wirkungscheck": {
+      "hash": "d0f2cc6e586e4a0bf5e4ef0a7bdf64363f88a8e041141a8338d0e85cef5c63ed",
+      "structure": "5028a63a62fb27e635ed27064b7faa481b32d7bf149cbedacbeb9d1df48b5469"
+    },
+    "canvas-selbstwirksamkeits-canvas": {
+      "hash": "490e2cf1f5639b183136f65ae70702e2c9d3f4eb13adcf8619e3aa17a26df7ba",
+      "structure": "4de566a5b787a426d6a84efcd4a7069e378af7088f0a9613d5043999cb758ee6"
+    },
+    "canvas-rollen-und-resonanzraum-canvas": {
+      "hash": "f26bfd14638d25d83c4455e20cd1141ecd965fc3ac962797aa7c3bbc1fb6f507",
+      "structure": "d2f6a7aec06f3640619ea49fb968685d9e8f3f329dd106f6d41332aa8c662d6e"
+    },
+    "canvas-wirkungspartnerschafts-mandat": {
+      "hash": "13596bd622cc6197967406928fd246e9272c6c9c9957bdb92bf1d4513f793b40",
+      "structure": "93d5e0ae1b614aa3b3949fce96b1a49f651d50cdbd71131dc73c54243317172d"
+    },
+    "canvas-ecosystem-wirkungsmodell": {
+      "hash": "673de21419a6c7755bb480ef5f2bc66c87d3be4809901168bd66ef6fab2cb6b4",
+      "structure": "c51393b506cc3c4b632562768f3dba2113cfc5c0ca45ffd69f8bdf2a712d6357"
+    },
+    "canvas-geteilte-daten-und-evidenzarchitektur": {
+      "hash": "217089a00d03b536b2edc81fb1c64e55f02e9c4dcaaecfd99bf8699b1dded3ea",
+      "structure": "051bb07f8ec9e8a4a9d2f2a623fc4920950df180837e137343bbda1c238f277e"
+    },
+    "canvas-konflikt-nutzen-und-lastenteilungs-canvas": {
+      "hash": "1e5a7c868dfe58d2b894e8f940d45e2edbd90018242fb040707f84904e7a8af3",
+      "structure": "cfb182f35e222f8dfc0e63117fd468f5cd4106103853fbdeb5280e7806e7dfd0"
+    },
+    "canvas-annahmen-und-unsicherheits-canvas": {
+      "hash": "25ae614ac341a6cbfffa94ea37ca5d5da87ab95ad3b610eaa26f900c93446fb5",
+      "structure": "7ae629b0049e7b4687036d84840ac0434c21254120b9526f7d3cc345f919390d"
+    },
+    "canvas-horizon-scanning-radar": {
+      "hash": "9e1c8d497726c7209f6cde02967ed22d8789da629d5cd2d877a7c469013c5411",
+      "structure": "a1c3f9ad16970d9c3ed6c132868c048a469252882d1aaf3d60b2ffe2160b2875"
+    },
+    "canvas-szenario-und-wirkungsstresstest-canvas": {
+      "hash": "2bcc797e4b4ed40460384c5e1398006d032849683bacd53eb034ef6eb94d2bf6",
+      "structure": "d372fa8400fba7fcf8fb11726a105e47b99eccc1e819167345e59c748983d23f"
+    },
+    "canvas-adaptive-pfade-canvas": {
+      "hash": "0738f84e6d6470a139bd101232d3e153b6a92bc21994e13300c810ed06c3ea21",
+      "structure": "01c4acd8ca81526b68944b708d3b56af6d2dbe974f490e8dc51eb42d9a3c75a2"
+    },
+    "canvas-wirkungs-capability-canvas": {
+      "hash": "91f5808fb379b51f027357d2cef929ae6c761b55b18a5f597a9a7a04be4ba059",
+      "structure": "0fbc70aa0335563cc3a30438e76f9f2f3e70a07e64682ca5b4713270cd241b05"
+    },
+    "canvas-capability-to-impact-heatmap": {
+      "hash": "ae2864fbb69b4dd647cfccd167f249a7ae0d8f38c22ca6fa6071781a76eff239",
+      "structure": "a65c5dba13627c689a7f7e75122ac11347e4d51c79280d41aff6390a07c7af94"
+    },
+    "canvas-wirkungswertstrom-canvas": {
+      "hash": "8f525af144426459ad25dda81f3f82a742dff4d818888b5cb62cba7ef1918cb1",
+      "structure": "5e51d3d6a4aeb2aeb649c476b2a78c8e989b3406a98a36889ad0e59af28a730f"
+    },
+    "canvas-target-operating-model-canvas": {
+      "hash": "f5b4d27bcba203377d19e73f767d6ebaaeb09a97f262f50d5dc441728131cf13",
+      "structure": "a53c3613847b227f4a23097f20fc62ac699d08813f8bb75296223a867f084c32"
+    },
+    "canvas-wirkungs-product-operating-model-canvas": {
+      "hash": "1f648e7577fc4791223c758f10ddbc203703b932ae05367ce5718631c4840458",
+      "structure": "91b494d22553da1e08f40af18e980f92d034259ff05d074a8f3fa3531afd86d9"
+    },
+    "canvas-wirkungs-teamtopologie-canvas": {
+      "hash": "dea6bc6eeb583f696e73fd746995d409bd839eb9df8b3385fa6b99451852c048",
+      "structure": "5f2ec12f1ba049f596058b1247baa96804684e7f9f4f02ae10706d76e746aa04"
+    },
+    "canvas-plattform-als-wirkungsinfrastruktur-canvas": {
+      "hash": "da3ce6c8537798398a4a3739c4ed19ee723d63336a49ecccb4b7837957a2e2c4",
+      "structure": "159fa9338a03aa2550095e3c25972b71899a779d7656a70e9f2e230edab38e84"
+    },
+    "canvas-produktfinanzierungs-canvas": {
+      "hash": "3989f97b9086bf63ef80b91ada00ee6d6b4937bab711719e1f47d95d0951ab20",
+      "structure": "2ecc0c21cafaa5564cd67c15b7e0f268aa30164c01c316dd94b3be00e2e2e49b"
+    },
+    "canvas-change-impact-canvas": {
+      "hash": "30af1e85e4f542db938be4034f406b8459e6d72272bf0e191ce7dce759b508c8",
+      "structure": "71df38c1fe6a51beaebe2cc106f89272c1ec4fc2350f4b352e72fb490bf7c90e"
+    },
+    "canvas-sponsor-und-change-netzwerk-canvas": {
+      "hash": "d1038ea5ad31e3aa1269557d8b9963fac22c9dc9cf5a98c18fac3c47084f6787",
+      "structure": "0165b91745815a9c2d4f9c20aa4678fc37844ecdb33587bc0790bb217dcdc42d"
+    },
+    "canvas-adoptions-und-verhaltens-canvas": {
+      "hash": "1ee11c457d7ed7c656b6b669b7c1e5af57b8bb1cf5d83a6407caaefa5c95b6c8",
+      "structure": "5d865d1e8dff23a7fbaf329ee7c931dbfd3afc1a807cb4d29c757ab5be729ac5"
+    },
+    "canvas-skills-und-wissensarchitektur-canvas": {
+      "hash": "798d9a8359355cf3648c4c761ebc0f8dec3aeba8e74c3cd2bb57defddf568bf7",
+      "structure": "dfe2ea7878aaa714187f01584545830204dc41bb7a31fb90780f070a4616f999"
+    },
+    "canvas-wirkungstransformations-portfolio": {
+      "hash": "7adea8a33765b608a120b8f09a3670af53cf8c8c84cb074c530312ac3ad5d96c",
+      "structure": "d28c91ab7d40b748f7bb7160336cdde8e39c95a3ecaeb6108ffcdb9ef2e55302"
+    },
+    "canvas-programm-und-abhangigkeits-canvas": {
+      "hash": "988d4b84d864e5c601b7911d378ccc9f649e06b77b159a8e1bf835d8fc6f51e4",
+      "structure": "38bf5a7d1cbca1c551856c100c6399678eb3d750bd646b1c140fee8768f5faa6"
+    },
+    "canvas-impact-and-benefits-realization-canvas": {
+      "hash": "a46b3081fcc2e32b4ad9a198876c45e5a62c198ea0b41535c48f60676f389d73",
+      "structure": "d05b91940539e31d58ff4a6fc8b309ae5b9e7ef980f533462509050b23d8decb"
+    },
+    "canvas-handover-in-den-regelbetrieb-canvas": {
+      "hash": "fb6fb81b3a5f37d27ce282b799a4709cbff6a2176e0b038eed27553b12448090",
+      "structure": "535d8209518d74e57fac08ce4765e6b0b7f190878393d53ae08c030d86ba0c06"
+    },
+    "canvas-wirkungsdaten-und-lineage-canvas": {
+      "hash": "39783643be8ce41a92e9f4b98a6a87dad0e4ff0b6053b77cef4e2f9c86459d8b",
+      "structure": "d56ad025e42377923aa336569ac5e9026abd41eacad4e26e558ad0bacc05c74a"
+    },
+    "canvas-ki-agenten-wirkungsgovernance-canvas": {
+      "hash": "27801551f049f91429949282b804c1d86dd43ea09d4e6f93b92a9b601fe063f6",
+      "structure": "21e0f73df9ca393d3f67e1ccb5c83428de090c586d19f51319f29b5bf81efafe"
+    },
+    "canvas-kritische-wirkungsservice-und-bia-canvas": {
+      "hash": "09745f3154d09d6946c1ef2a71c6500575b92fd59dca1d82c1eafd9f97f801c3",
+      "structure": "320f01b15942a8f58f4ca23238869238eed0116f9a9ac58ac27b789bd7a4de40"
+    },
+    "canvas-integrierte-assurance-canvas": {
+      "hash": "9cf419dce1b8db23cd1335733a8d11c4e17040b8be9c2e513d29b4b1588ed3c5",
+      "structure": "3a98f5d0c2d4c5f19543d1f4f277468de85a24c65f77ad308a3af090d5c46133"
+    }
+  },
+  "minimum": "08b244f87db8041950b15e5cfe041d24f1f9a3407c185fc502d785960535e6fd",
+  "podcastHash": "af9193bcfecad741e5d0128554d4d958a98c2227114352c0c8376ad373830b9f",
+  "workflowTables": []
+}
