@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { impactArchitectureVisual } from "../lib/impact-architecture-visual.mjs";
 import path from "node:path";
 
 const generatedAt = (() => {
@@ -361,6 +362,12 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta property="og:title" content="${esc(metaTitle)}">
     <meta property="og:description" content="${esc(metaDescription)}">
     <meta property="og:url" content="${esc(canonical)}">
+    ${options.structuredData ? `<meta name="search_title" content="${esc(metaTitle)}">
+    <meta name="search_description" content="${esc(metaDescription)}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="${esc(metaTitle)}">
+    <meta name="twitter:description" content="${esc(metaDescription)}">
+    <script type="application/ld+json">${JSON.stringify(options.structuredData).replace(/</g, "\\u003c")}</script>` : ""}
     <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
@@ -786,7 +793,10 @@ function curatedFilterButtons(name, label, options) {
 
 function termFilterData(term) {
   return {
-    type: filterToken(term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category),
+    type: unique([
+      filterToken(term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category),
+      term.status === "anschlussbegriff" ? "anschlussbegriff" : "",
+    ]).filter(Boolean).join(" "),
     theme: asList(term.theme || term.themes).map(filterToken),
     dimension: asList(term.dimensions).flatMap(dimensionTokens),
     wirklogik: asList(term.wirklogik).map(filterToken),
@@ -3107,6 +3117,7 @@ ${comparisonTableBlock(term)}
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}
+${["iooi", "wirkpfad"].includes(term.termId) ? impactArchitectureVisual() : ""}
 ${deepGlossarySectionsBlock(term)}
 ${fallbackDeepGlossaryBlock(term)}
 ${keyMessageBlock(term)}
@@ -3140,6 +3151,15 @@ ${chapterBlock(term)}
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
   if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
   pageOptions.canonicalPath = `/begriffe/${term.slug}/`;
+  if (term.emitDefinedTermSchema) {
+    pageOptions.structuredData = {
+      "@context": "https://schema.org", "@type": "DefinedTerm",
+      "@id": `https://wirkungsoekonomie.de${pageOptions.canonicalPath}#term`,
+      name: term.canonicalLabel, description: pageOptions.metaDescription,
+      url: `https://wirkungsoekonomie.de${pageOptions.canonicalPath}`,
+      inDefinedTermSet: "https://wirkungsoekonomie.de/begriffe/",
+    };
+  }
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 

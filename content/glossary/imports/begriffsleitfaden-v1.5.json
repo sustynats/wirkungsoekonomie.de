@@ -4,16 +4,16 @@
       "termId": "iooi",
       "canonicalLabel": "IOOI",
       "slug": "iooi",
-      "aliases": ["I-O-O-I", "Input Output Outcome Impact", "Results Chain", "Logic Model", "Wirkungslogik", "Wirkungskette"],
+      "aliases": ["I-O-O-I", "Input Output Outcome Impact"],
       "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
       "hoverDefinition": "IOOI strukturiert Input, Output, Outcome und Impact. Es ist weder das Grundmodell noch ein notwendiger Bestandteil der Wirkungsökonomie.",
       "longDefinition": "IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es ordnet eingesetzte Ressourcen, erbrachte Leistungen, eingetretene Veränderungen und weiterreichende Wirkungen. Aktivität kann zwischen Input und Output als zusätzliche Prozessstufe dargestellt werden, gehört aber nicht zum Akronym.\n\nIOOI kann einen Abschnitt eines Wirkungspfads strukturieren. Die Methode beweist weder, dass ein Outcome oder Impact tatsächlich eingetreten ist, noch dass er kausal zurechenbar oder normativ positiv ist. Dafür braucht es passende Evidenz, eine transparente Zurechnung und einen offengelegten Referenzrahmen.",
-      "woekRelation": "IOOI ist ein externer Anschlussbegriff, keine Grundlage oder Erweiterungsstufe der WÖk. Die Wirkungsökonomie beginnt bereits bei Auslöser, Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus. Sie verbindet Wirkungsermittlung mit Evidenz und Zurechnung, Bewertung, Schutz und Systemprüfung sowie Rückkopplung und Lernen. Ein WÖk-Wirkungspfad kann einen IOOI-kompatiblen Abschnitt enthalten.",
+      "woekRelation": "IOOI und WÖk beantworten unterschiedliche Fragen. IOOI ordnet eine Results Chain von Ressourcen über Leistungen zu Veränderungen. Ein WÖk-Wirkungspfad kann diese Struktur enthalten. Die WÖk legt Hypothesen und Wirkmechanismen, Evidenz und Zurechnung, Bewertung und Schutz, System- und Transformationsprüfung sowie Rückkopplung und Governance um den Pfad. Auch IOOI beginnt mit dem Input vor Outcome und Impact; der Unterschied liegt nicht in einem früheren Start.",
       "usageNote": "IOOI nicht mit IOI verwechseln. Bei jeder Anwendung offenlegen, welcher Teil des Wirkungspfads tatsächlich durch IOOI dargestellt wird und welche Evidenz, Bewertung und Rückkopplung zusätzlich nötig sind.",
-      "statusNote": "Anschlussbegriff aus Evaluation und Wirkungsorientierung. Die führende WÖk-Einordnung folgt dem Begriffsleitfaden v1.5.",
+      "statusNote": "Aktuelle Web-Einordnung, präzisiert am 30.09.2026. Historische Publikationen bleiben unverändert.",
       "status": "anschlussbegriff",
       "type": "Results-Chain-Methode",
-      "category": "Grundbegriff",
+      "category": "Anschlussbegriff",
       "version": "1.5",
       "reviewStatus": "approved",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.5.md",
@@ -25,28 +25,68 @@
         "PHINEO: Grundbegriffe der Wirkungsorientierung|https://www.phineo.org/magazin/glossar-grundbegriffe-wirkungsorientierung",
         "Bertelsmann Stiftung: Die iooi-Methode|https://www.bertelsmann-stiftung.de/de/unsere-projekte/abgeschlossene-projekte/cri-corporate-responsibility-index/projektthemen/die-iooi-methode"
       ],
-      "relatedTerms": ["ausloeser", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "input", "aktivitaet", "output", "outcome", "impact", "wirkungsnachweis", "wirkungsbewertung", "wirkungsrueckkopplung", "ioi"],
-      "doNotConfuseWith": ["IOI / Impact-of-Investment: ein WÖk-Instrument, nicht die Abkürzung für Input, Output, Outcome und Impact.", "Wirkungspfad: eine evidenzsensible Pfaddarstellung, die IOOI enthalten kann, aber nicht durch IOOI definiert ist.", "Wirkungsnachweis: IOOI strukturiert eine Kette, beweist aber keine Kausalität."],
-      "examples": ["Ein Bildungsprojekt nutzt Budget und Personal als Input, erbringt Kurse als Output, beobachtet Kompetenzveränderungen als Outcome und prüft langfristige Teilhabe als möglichen Impact.", "Eine Aktivität kann zwischen Input und Output ergänzt werden, ohne das Akronym zu verändern."],
+      "relatedTerms": [
+        "ausloeser",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkpfad",
+        "input",
+        "aktivitaet",
+        "output",
+        "outcome",
+        "impact",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "ioi"
+      ],
+      "doNotConfuseWith": [
+        "IOI / Impact-of-Investment: ein WÖk-Instrument, nicht die Abkürzung für Input, Output, Outcome und Impact.",
+        "Wirkungspfad: eine evidenzsensible Pfaddarstellung, die IOOI enthalten kann, aber nicht durch IOOI definiert ist.",
+        "Wirkungsnachweis: IOOI strukturiert eine Kette, beweist aber keine Kausalität."
+      ],
+      "examples": [
+        "Ein Bildungsprojekt nutzt Budget und Personal als Input, erbringt Kurse als Output, beobachtet Kompetenzveränderungen als Outcome und prüft langfristige Teilhabe als möglichen Impact.",
+        "Eine Aktivität kann zwischen Input und Output ergänzt werden, ohne das Akronym zu verändern."
+      ],
       "deepGlossarySections": [
-        {"title": "IOOI als optionale Methode", "body": "IOOI beantwortet eine klar begrenzte Frage: Wie lassen sich Ressourcen, Leistungen und Veränderungen als Results Chain strukturieren? Die WÖk kann diese Frage nutzen, geht aber nicht in ihr auf.", "items": ["WÖk-Vorwirkung: Auslöser, Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus.", "Optionaler IOOI-Abschnitt: Input → [Aktivität] → Output → Outcome → Impact.", "Danach: Evidenz und Zurechnung, Bewertung, Schutz und Systemprüfung, Rückkopplung und Lernen."]},
-        {"title": "Was IOOI nicht automatisch leistet", "body": "Aus einer plausiblen Kette folgt weder eine eingetretene Wirkung noch deren positive Bewertung. Beide Fragen bleiben methodisch getrennt.", "items": ["Evidenz, Baseline, Gegenfaktum und Unsicherheit prüfen.", "Betroffene, Raum, Zeit und Nebenfolgen sichtbar machen.", "Bewertung und Steuerungsfolgen ausdrücklich begründen."]}
+        {
+          "title": "IOOI als Linse innerhalb eines Wirkungspfads",
+          "body": "Die Ebenen sind Aufgaben und Blickwinkel, keine zeitliche Abfolge.",
+          "items": [
+            "Results Chain: Input → [Aktivität] → Output → Outcome → Impact. Aktivität gehört nicht zum Akronym.",
+            "Ex ante darüber: Potenziale, Risiken, Annahmen, Mechanismen und Szenarien.",
+            "Evidenz entlang des Pfads: Baseline, Gegenfaktum, Datenqualität, Zusätzlichkeit, Zurechnung und Unsicherheit.",
+            "WÖk außen herum: Bewertung, Schutz, System-/Transformationsprüfung, Rückkopplung und Governance."
+          ]
+        },
+        {
+          "title": "Planung und Prüfung unterscheiden",
+          "body": "IOOI unterstützt Planung, Monitoring und Evaluation. Das Akronym allein legt weder ein Kausaldesign noch normative Referenzen oder Schutzregeln fest. Sie können im jeweiligen Evaluationsdesign ergänzt werden."
+        }
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "maxAutoLinksPerPage": 1,
       "pageUrl": "/begriffe/iooi/",
-      "glossaryOrderKey": "IOOI"
+      "glossaryOrderKey": "IOOI",
+      "lastUpdated": "2026-09-30",
+      "metaDescription": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads."
     },
     {
       "termId": "wirkpfad",
       "canonicalLabel": "Wirkungspfad",
       "slug": "wirkpfad",
-      "aliases": ["Wirkpfad", "Wirkungskette mit Annahmen", "kausaler Wirkungspfad"],
-      "shortDefinition": "Ein Wirkungspfad ist eine versionierte und evidenzsensible Darstellung, wie aus einem Auslöser über Mechanismen und Bedingungen mögliche oder beobachtete Zustandsveränderungen, weitere Folgen und Rückkopplungen entstehen können.",
-      "hoverDefinition": "Ein Wirkungspfad erklärt nachvollziehbar mögliche oder beobachtete Veränderungswege. Er kann einen IOOI-kompatiblen Abschnitt enthalten, ist aber kein Kausalbeweis.",
-      "longDefinition": "Ein Wirkungspfad verbindet Auslöser, Wirkmechanismen, Bedingungen, Betroffene, Raum, Zeit und mögliche oder beobachtete Zustandsveränderungen. Er macht Nebenwirkungen, Wechselwirkungen, Unsicherheiten und Rückkopplungen sichtbar und wird mit Annahmen, Daten und seinem Versionsstand dokumentiert.\n\nEin Wirkungspfad kann einen IOOI-kompatiblen Abschnitt enthalten. Er ist jedoch weder durch IOOI definiert noch ein Beleg dafür, dass eine Wirkung eingetreten oder zurechenbar ist. Bei komplexen Zusammenhängen ergänzt ein Wirkungsnetz die lineare Sicht.",
-      "woekRelation": "Der Wirkungspfad gehört zur Wirkungsermittlung. Er verbindet die Vorwirkungsstufen der WÖk mit Evidenz und Zurechnung, ohne Bewertung, Schutzprinzipien oder Rückkopplung zu ersetzen.",
+      "aliases": [
+        "Wirkpfad",
+        "Wirkungskette mit Annahmen",
+        "kausaler Wirkungspfad"
+      ],
+      "shortDefinition": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
+      "hoverDefinition": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
+      "longDefinition": "Ein Wirkungspfad beschreibt mögliche oder beobachtete Veränderungswege: Ausgangslage, Auslöser, Mechanismen und Bedingungen, Handlungen, Leistungen, Zustandsveränderungen, Folge- und Systemwirkungen sowie Rückkopplungen. Betroffene, Raum, Zeit, Verteilung und Systemgrenze werden sichtbar gemacht. Für komplexe Verflechtungen kann ein Wirkungsnetz geeigneter sein.\n\nWirkungspotenzial und Wirkungsrisiko beschreiben, was auf dem Pfad möglich ist. Sie sind keine Stationen des Pfads. Evidenz und Zurechnung prüfen die Verbindungen und Beobachtungen; Bewertung ordnet Zustandsveränderungen am offengelegten Referenzrahmen ein. Beides ist vom realen oder modellierten Geschehen zu trennen.",
+      "woekRelation": "Ein WÖk-Wirkungspfad kann einen IOOI-kompatiblen Abschnitt enthalten. IOOI definiert ihn nicht. Die WÖk-Wirkungsarchitektur organisiert die Hypothesen-, Evidenz-, Bewertungs-, Schutz- und Rückkopplungsebenen um den Pfad.",
       "usageNote": "Als plausible, daten- oder evidenzsensible Darstellung kennzeichnen. Eine Kausalbehauptung nur dort formulieren, wo das Untersuchungsdesign sie trägt.",
       "status": "woek-praezisierungsbegriff",
       "type": "Methodenbegriff",
@@ -56,18 +96,52 @@
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.5.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.5.md",
       "sourceSection": "10.3 Pfade, Netze und öffentliche Resonanz",
-      "relatedTerms": ["ausloeser", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "iooi", "wirkungskette", "wirkungsnetz", "wirkungsnachweis", "wirkungsbewertung", "wirkungsrueckkopplung", "theory-of-change"],
-      "doNotConfuseWith": ["Wirkungskette: bewusst vereinfachte lineare Abfolge.", "Wirkungsnachweis: Prüfung, ob eine Zustandsveränderung tatsächlich eingetreten ist.", "Kausalbeweis: ein Wirkungspfad kann Hypothesen und Evidenz strukturieren, ersetzt aber kein Kausaldesign."],
-      "examples": ["Gesetzesänderung → veränderte Anreize → verändertes Verhalten → Zustandsveränderung → Nebenfolgen → Rückkopplung.", "Ein Wirkungspfad für ein Bildungsangebot kann IOOI, Voraussetzungen, Wirkmechanismen und Evidenzlücken zugleich zeigen."],
+      "relatedTerms": [
+        "ausloeser",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "iooi",
+        "wirkungskette",
+        "wirkungsnetz",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "theory-of-change"
+      ],
+      "doNotConfuseWith": [
+        "Wirkungskette: bewusst vereinfachte lineare Abfolge.",
+        "Wirkungsnachweis: Prüfung, ob eine Zustandsveränderung tatsächlich eingetreten ist.",
+        "Kausalbeweis: ein Wirkungspfad kann Hypothesen und Evidenz strukturieren, ersetzt aber kein Kausaldesign."
+      ],
+      "examples": [
+        "Gesetzesänderung → veränderte Anreize → verändertes Verhalten → Zustandsveränderung → Nebenfolgen → Rückkopplung.",
+        "Ein Wirkungspfad für ein Bildungsangebot kann IOOI, Voraussetzungen, Wirkmechanismen und Evidenzlücken zugleich zeigen."
+      ],
       "deepGlossarySections": [
-        {"title": "Bausteine eines belastbaren Wirkungspfads", "body": "Die Darstellung benennt mindestens den Auslöser, plausible Mechanismen, relevante Bedingungen und mögliche oder beobachtete Veränderungen.", "items": ["Betroffene, Wirkungsraum und Zeitraum.", "Wirkungspotenziale, Risiken und mögliche Nebenfolgen.", "Evidenzstatus, Gegenfaktum und Grenzen der Zurechnung."]},
-        {"title": "IOOI ist möglich, nicht notwendig", "body": "Ein IOOI-Abschnitt kann Ressourcen, Leistung und Veränderung strukturieren. Der Wirkungspfad bleibt weiter: Er beginnt vor Input und führt über die festgestellte Veränderung hinaus zu Nebenfolgen und Rückkopplungen.", "items": ["IOOI nicht als Definition des Wirkungspfads verwenden.", "Bei komplexen Systemen Wirkungsnetz und Rückkopplungen ergänzen."]}
+        {
+          "title": "Was geschieht - und was wissen wir darüber?",
+          "body": "Der Pfad beschreibt Zusammenhänge in der Welt. Seine Darstellung unterscheidet ausdrücklich Modellhypothesen, beobachtete Zustandsveränderungen und belegte oder offene Zurechnung.",
+          "items": [
+            "Auslöser, Mechanismen, Bedingungen, Betroffene, Raum und Zeit benennen.",
+            "Potenzial und Risiko als Aussagen über mögliche Pfade kennzeichnen.",
+            "Evidenz und Bewertung als getrennte Prüfschichten ausweisen."
+          ]
+        },
+        {
+          "title": "IOOI ist möglich, nicht notwendig",
+          "body": "Die externe Results Chain kann Ressourcen, Leistungen und Veränderungen ordnen. Sie ist weder der gesamte Wirkungspfad noch ein Kausalbeweis."
+        }
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "maxAutoLinksPerPage": 1,
       "pageUrl": "/begriffe/wirkpfad/",
-      "glossaryOrderKey": "Wirkungspfad"
+      "glossaryOrderKey": "Wirkungspfad",
+      "definition": "Ein Wirkungspfad beschreibt mögliche oder beobachtete Veränderungswege: Ausgangslage, Auslöser, Mechanismen und Bedingungen, Handlungen, Leistungen, Zustandsveränderungen, Folge- und Systemwirkungen sowie Rückkopplungen. Betroffene, Raum, Zeit, Verteilung und Systemgrenze werden sichtbar gemacht. Für komplexe Verflechtungen kann ein Wirkungsnetz geeigneter sein.\n\nWirkungspotenzial und Wirkungsrisiko beschreiben, was auf dem Pfad möglich ist. Sie sind keine Stationen des Pfads. Evidenz und Zurechnung prüfen die Verbindungen und Beobachtungen; Bewertung ordnet Zustandsveränderungen am offengelegten Referenzrahmen ein. Beides ist vom realen oder modellierten Geschehen zu trennen.",
+      "lastUpdated": "2026-09-30",
+      "metaDescription": "Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.",
+      "statusNote": "Aktuelle Web-Einordnung, präzisiert am 30.09.2026. Historische Publikationen bleiben unverändert."
     },
     {
       "termId": "wirkungsradar",

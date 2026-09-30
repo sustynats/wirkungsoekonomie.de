@@ -552,6 +552,11 @@ const canonicalTermOverrides = new Map([
 for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/site-review-2026-09-05.json"), "utf8")).terms) canonicalTermOverrides.set(term.termId, term);
 for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/model-and-controlling-2026-09-06.json"), "utf8")).terms) canonicalTermOverrides.set(term.termId, term);
 
+// Current web clarification wins over historical import snapshots and older overrides.
+for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/iooi-wirkpfad-clarification-2026-09-30.json"), "utf8")).terms) {
+  canonicalTermOverrides.set(term.termId, { ...canonicalTermOverrides.get(term.termId), ...term });
+}
+
 function applyCanonicalTermOverride(term) {
   const override = canonicalTermOverrides.get(term.termId);
   return override ? { ...term, ...override } : term;
