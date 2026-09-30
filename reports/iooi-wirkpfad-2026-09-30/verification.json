@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "subject": "IOOI, Wirkungspfad und Wirkungsarchitektur",
+  "editorialDate": "2026-09-30",
+  "verifiedOn": "2026-10-01",
+  "brief": {
+    "branch": "codex-brief/iooi-woek-clarity-2026-09-30",
+    "commit": "f3db89f16fe78032c18c59edee0f1625088c090f",
+    "path": "docs/codex-briefs/2026-09-30-iooi-wirkpfad-wirkungsarchitektur.md"
+  },
+  "sourceOfTruthFiles": [
+    "assets/data/term-registry.json",
+    "content/glossary/imports/iooi-wirkungsarchitektur.json",
+    "content/glossary/imports/begriffsleitfaden-v1.5.json",
+    "content/glossary/imports/iooi-wirkpfad-clarification-2026-09-30.json",
+    "content/kompass/compass-answer-templates.json",
+    "content/kompass/impact-paths.json",
+    "docs/woek-knowledge/TERMINOLOGY.md",
+    "docs/woek-knowledge/terminology.yaml",
+    "llms.txt",
+    "modell.html",
+    "vergleich.html",
+    "verstehen/index.html",
+    "package.json",
+    "scripts/glossary/build-glossary-registry.mjs",
+    "scripts/glossary/build-glossary-pages.mjs",
+    "scripts/site/build-iooi-wirkungsarchitektur.mjs",
+    "scripts/site/build-so-wirkt-wirkungsoekonomie.mjs",
+    "scripts/lib/impact-architecture-visual.mjs",
+    "assets/visuals/model/woek_wirkpfad_iooi_architektur.svg",
+    "assets/visuals/model/woek_wirkpfad_iooi_architektur_mobile.svg",
+    "tests/site/iooi-architecture.test.mjs"
+  ],
+  "generatedOutputs": [
+    "assets/data/glossary-lookup.json",
+    "assets/data/glossary-model.json",
+    "assets/data/glossary-reference-index.json",
+    "assets/data/glossary-relations.json",
+    "assets/js/glossaryTerms.js",
+    "public/data/glossary-reference-index.json",
+    "public/data/glossary-term-links.json",
+    "public/data/glossary.terms.json",
+    "public/data/glossary-version-history.json",
+    "public/downloads/exports/glossar.md",
+    "begriffe/index.html",
+    "verstehen/iooi-und-wirkungsoekonomie/index.html",
+    "so-wirkt-wirkungsoekonomie/index.html",
+    "begriffe/iooi/index.html",
+    "begriffe/wirkpfad/index.html",
+    "begriffe/wirkungskette/index.html",
+    "begriffe/wirkmechanismus/index.html",
+    "begriffe/wirkungspotenzial/index.html",
+    "begriffe/wirkungsrisiko/index.html",
+    "begriffe/aktivitaet/index.html",
+    "begriffe/outcome/index.html",
+    "begriffe/impact/index.html",
+    "begriffe/wirkungsbewertung/index.html",
+    "begriffe/transformationswirkung/index.html",
+    "begriffe/wirkungsarchitektur/index.html",
+    "begriffe/wirkungsrueckkopplung/index.html",
+    "begriffe/wirkungsrad/index.html",
+    "begriffe/input/index.html",
+    "begriffe/output/index.html",
+    "begriffe/wirkungstreppe/index.html",
+    "begriffe/wirkungsanalyse/index.html",
+    "assets/search/search-index.json",
+    "public/data/woek-search-meta.json",
+    "content/taxonomy/site-map.json"
+  ],
+  "visuals": {
+    "created": [
+      "assets/visuals/model/woek_wirkpfad_iooi_architektur.svg",
+      "assets/visuals/model/woek_wirkpfad_iooi_architektur_mobile.svg"
+    ],
+    "legacy": "Alte Kreislauf-SVGs bleiben als unbenutzte Legacy-Dateien erhalten; keine aktuelle HTML-Seite bindet sie ein."
+  },
+  "before": "Wirkpfad, Potenzial, Evidenz, Bewertung und Transformation erschienen als verlängerte zeitliche Kette.",
+  "after": "Realer/modellierter Pfad mit optionaler IOOI-Linse; Ex-ante-Aussagen, Evidenz/Zurechnung, Bewertung/Schutz und Systemprüfung als eigene Perspektiven; Governance, Rückkopplung und Lernen umschließen die Architektur.",
+  "checks": [
+    {
+      "command": "SOURCE_DATE_EPOCH=1787270400 WOEK_PDF_BUILD_MODE=verify npm run build",
+      "result": "PASS",
+      "details": "Vollbuild einschließlich Glossar-, Quellen-, Such-, Terminologie-, Reader- und Staatsarchitektur-Gates. Erster Lauf deckte eine Überschreibung der Risiko-Kerndefinition auf; nach Korrektur erfolgreich."
+    },
+    {
+      "command": "SOURCE_DATE_EPOCH=1787270400 npm run build:iooi; npm run build:so-wirkt; npm run glossary:build; node scripts/export/export-glossary.mjs",
+      "result": "PASS",
+      "details": "Nach Abgleich mit main erneut generiert."
+    },
+    {
+      "command": "npm run test:iooi",
+      "result": "PASS",
+      "tests": 10,
+      "details": "Begriffe, Taxonomie, tatsächlicher Glossarfilter, Ebenentrennung, Transformation, Prüffragen, fünf Grafik-Einbindungen, Metadaten, Busbeispiel und Kompass-Pfad."
+    },
+    {
+      "command": "npm run check:glossary-publication",
+      "result": "PASS",
+      "terms": 2161
+    },
+    {
+      "command": "node scripts/review/check-current-terminology.mjs",
+      "result": "PASS",
+      "coreTerms": 12,
+      "indexablePages": 18318
+    },
+    {
+      "command": "npm run taxonomy:build",
+      "result": "PASS",
+      "entries": 17698
+    },
+    {
+      "command": "npm run build:search; npm run check:search-integration; npm run check:search-contamination",
+      "result": "PASS",
+      "sourceEntries": 34536
+    },
+    {
+      "command": "npm run check:privacy",
+      "result": "PASS",
+      "textFilesScanned": 20385
+    },
+    {
+      "command": "npm run check:size",
+      "result": "PASS",
+      "megabytes": 820.1
+    },
+    {
+      "command": "Browserprüfung mit agent-browser",
+      "result": "PASS",
+      "details": "Fünf Pflichtseiten bei 1440 und 390 Pixeln; Grafikwechsel, Inhalt, keine horizontale Überbreite, keine Browserfehler. Suche IOOI -> Glossarseite; Anschlussbegriffe-Filter -> IOOI. SVG-Textgrenzen separat kontrolliert."
+    },
+    {
+      "command": "Artefakt-Abgleich der fünf Pflichtseiten und beider SVG-Dateien",
+      "result": "PASS",
+      "details": "Schichtengrafik vorhanden, kein Legacy-Bild oder alte Kettenformel; SVGs bytegleich zur Quelle."
+    },
+    {
+      "command": "git diff --check; git diff --name-only -- '*.pdf'",
+      "result": "PASS",
+      "details": "Keine Whitespacefehler, keine PDF-Änderungen."
+    },
+    {
+      "command": "SOURCE_DATE_EPOCH=1787270400 npm run build:artifact",
+      "result": "PASS",
+      "brokenInternalLinks": 0,
+      "details": "Bibliotheks-/Publikations-Tests, öffentliche JSON/JS/HTML-Prüfung, historische Kennzeichnung, Typografie, strikte Linkprüfung, Indexierbarkeit, Umfragen, Seitenfragen und Institutsprojekte bestanden."
+    }
+  ],
+  "audit": {
+    "currentForbiddenClaims": 0,
+    "historicalExceptions": [
+      "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-4-pdf/lesen/08-6-6-iooi-und-wirkungsarchitektur-v1-4-vor-der-wirkung-beginn/index.html"
+    ],
+    "historicalTreatment": "Historische Publikationen nicht umgeschrieben; fachliche Präzisierung als datierter aktueller Web-Override."
+  },
+  "sourceVerification": [
+    "https://www.oecd.org/en/topics/sub-issues/development-co-operation-evaluation-and-effectiveness/evaluation-criteria.html",
+    "https://impactfrontiers.org/norms/five-dimensions-of-impact/"
+  ],
+  "knownWarnings": [
+    "Der bestehende allgemeine Sprachcheck meldet 144 Hinweise im Gesamtbestand; kein blockierender Fehler.",
+    "Nicht blockierende Gesamtbestands-Hinweise des Linkprüfers: 2528 Waisenseiten und 1316 doppelte Seitentitel."
+  ],
+  "hosting": {
+    "platform": "Bestehendes GitHub Pages",
+    "vercelUsed": false,
+    "workflowChanged": false
+  },
+  "openSubstantiveIssues": [],
+  "separateWork": "Der ältere Wirkungsfenster-Entwurf in Draft-PR #1010 wurde nicht verändert oder zusammengeführt."
+}

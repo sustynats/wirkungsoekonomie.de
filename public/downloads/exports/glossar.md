@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-09-05T21:54:05.598Z
+Stand: 2026-09-30T22:22:32.175Z
 
 ## § 7 Bundeshaushaltsordnung (BHO)
 
@@ -5128,7 +5128,9 @@ N06 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefit
 
 ## Impact-Controlling
 
-Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.
+Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.
+
+Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.
 
 Impact-Controlling ist die operative Form des Wirkungscontrollings. Es übersetzt überprüfte Wirkungsdaten in Entscheidungen über Investitionen, Produkte, Beschaffung, Programme und Portfolios. Es misst nicht nur Aktivität oder Output, sondern die tatsächliche Veränderung von Zuständen und führt die Ergebnisse in Steuerung und Lernen zurück.
 
@@ -11133,7 +11135,7 @@ Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise,
 
 Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.
 
-Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen - nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
+Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
 
 ## Social Economy / Solidarity Economy
 
@@ -13989,7 +13991,9 @@ Wirkungsanalyse von Sprache fragt nicht nur, ob eine Aussage wahr ist, sondern w
 
 Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.
 
-Wirkungsarchitektur bezeichnet die Ordnung, durch die Wirkung sichtbar, messbar, bewertbar, überprüfbar, gesteuert und lernfähig gemacht wird. Sie umfasst Daten, Indikatoren, Scorecards, Produktpässe, Standards, Gesetze, Institutionen, Anreize, Audits, Rechtsschutz und Korrekturzyklen.
+Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.
+
+Sie legt um reale oder modellierte Wirkpfade querliegende Ebenen für Hypothesen, Evidenz und Zurechnung, Bewertung und Schutz sowie System- und Transformationsprüfung. IOOI kann eine Ergebniskette innerhalb eines Pfads strukturieren, ist aber nicht die Architektur selbst. Rückkopplung und Governance machen Erkenntnisse entscheidungsrelevant und korrigierbar.
 
 ## Wirkungsassurance
 
@@ -14047,9 +14051,11 @@ Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Sc
 
 ## Wirkungsbewertung
 
-Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.
+Transparente Einordnung einer eingetretenen oder ausdrücklich modellierten Zustandsveränderung am offengelegten Referenzrahmen.
 
-Wirkungsbewertung ist in der Wirkungsökonomie die begründete Einordnung von Wirkungen entlang eines Referenzrahmens wie SDGs, Agenda 2030 und SDG+ als WÖk-Erweiterung. Sie beschreibt nicht nur, ob etwas gemessen wurde, sondern wie tatsächliche oder plausibel erwartbare Zustandsveränderungen bewertet, begrenzt, verglichen und für Entscheidungen nutzbar gemacht werden.
+Wirkungsbewertung ordnet eine eingetretene oder ausdrücklich modellierte Zustandsveränderung am offengelegten Referenzrahmen ein. Sie ist vom Feststellen, Messen und Zurechnen einer Veränderung zu trennen. Ex ante heißt sie ausdrücklich modellierte Wirkungsbewertung.
+
+Die Einordnung begründet Richtung, Betroffene, Raum, Zeit, Verteilung, Unsicherheit und relevante Schutzgrenzen. Sie ist keine zeitliche Wirkungsstufe nach Impact. Wirkung ist neutral und relational; eine positive Bewertung folgt nicht allein aus einem Ziel- oder Indikatorbezug.
 
 ## Wirkungsbilanz und Leistungszerlegung
 
@@ -14461,11 +14467,11 @@ E07 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlich
 
 ## Wirkungskette
 
-Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.
+Eine Wirkungskette ist eine bewusst lineare Vereinfachung von Auslösern, Leistungen und Veränderungen.
 
-Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.
+Eine Wirkungskette stellt ausgewählte Zusammenhänge linear dar. Sobald mehrere Ursachen, Bedingungen, Nebenfolgen oder Rückkopplungen wichtig werden, ist Wirkungspfad oder Wirkungsnetz die passendere Darstellung. IOOI ist eine mögliche Results-Chain-Form; nicht jede Wirkungskette ist IOOI.
 
-In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
+Eine Kette ist weder ein Kausalbeweis noch die WÖk-Wirkungsarchitektur. Potenzial, Evidenzprüfung und Bewertung sind keine zusätzlichen realen Kettenglieder.
 
 ## Wirkungsklasse
 
@@ -14525,7 +14531,7 @@ Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditi
 
 Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.
 
-Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder - nur mit Rechtsgrundlage - Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
+Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
 
 ## Wirkungslücke
 
@@ -14599,9 +14605,9 @@ Die Bezeichnung ist kein staatlich verliehener akademischer Grad, keine Berufs- 
 
 ## Wirkungsökonomie
 
-Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.
+Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.
 
-Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.
+Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
@@ -14767,9 +14773,11 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkungspfad
 
-Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert - einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.
+Ein Wirkungspfad zeigt, wie aus einem Auslöser unter bestimmten Bedingungen Veränderungen entstehen könnten oder beobachtet wurden. Er kann IOOI enthalten, ist aber größer als eine Results Chain und kein Kausalbeweis.
 
-Wirkpfade machen sichtbar, über welche Schritte eine Intervention zu Veränderungen führen könnte: von einer Entscheidung oder Aktivität über Ressourcen, Leistungen und Verhaltens- oder Strukturveränderungen bis zu direkten, indirekten und längerfristigen Wirkungen. Ein belastbarer Wirkpfad hält zugleich fest, für wen diese Veränderungen gelten, unter welchen Bedingungen sie eintreten, welche anderen Ursachen mitwirken, wo Schäden oder Kosten anfallen können und wie Beobachtungen die Annahmen verändern. Gerade in komplexen sozialen, ökologischen und demokratischen Systemen verlaufen Wirkpfade nicht nur vorwärts, sondern über Verzögerungen, Rückkopplungen, Wechselwirkungen und mögliche Externalisierung.
+Ein Wirkungspfad beschreibt mögliche oder beobachtete Veränderungswege: Ausgangslage, Auslöser, Mechanismen und Bedingungen, Handlungen, Leistungen, Zustandsveränderungen, Folge- und Systemwirkungen sowie Rückkopplungen. Betroffene, Raum, Zeit, Verteilung und Systemgrenze werden sichtbar gemacht. Für komplexe Verflechtungen kann ein Wirkungsnetz geeigneter sein.
+
+Wirkungspotenzial und Wirkungsrisiko beschreiben, was auf dem Pfad möglich ist. Sie sind keine Stationen des Pfads. Evidenz und Zurechnung prüfen die Verbindungen und Beobachtungen; Bewertung ordnet Zustandsveränderungen am offengelegten Referenzrahmen ein. Beides ist vom realen oder modellierten Geschehen zu trennen.
 
 ## Wirkungspflicht des Eigentums
 
@@ -15445,11 +15453,11 @@ D03 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Ou
 
 ## WÖk-Wirkungsrad
 
-Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.
+Das WÖk-Wirkungsrad ist ein Lernmodell: Erkenntnisse über Wirkpfade werden geprüft, bewertet und in neue Entscheidungen zurückgeführt.
 
-Das Wirkungsrad zeigt, dass reale Systeme nicht am Ende einer linearen Wirkungskette stehen bleiben. Auslöser, Wirkpotenziale, Interventionen und der IOOI-Wirkpfad erzeugen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen. Diese werden an einem Referenzrahmen bewertet, unter Schutzregeln zur Netto-Wirkung zusammengeführt und in die nächste Entscheidung zurückgeführt.
+Das Wirkungsrad veranschaulicht Rückkopplung und Lernen. Es ist keine verlängerte Ergebniskette. Reale oder modellierte Wirkpfade, Evidenzprüfung und normative Bewertung bleiben getrennte Ebenen. IOOI kann einen Abschnitt eines Pfads als Results Chain ordnen.
 
-Der neue Systemzustand wird wiederum zur Ausgangslage für die nächste Analyse. Das Modell ist ein Orientierungsbild, keine additive Rechenformel oder automatisierte Entscheidungsmaschine.
+Geprüfte Erkenntnisse können neue Entscheidungen begründen, die Bedingungen künftiger Pfade verändern. Governance, Unsicherheit, Nichtkompensation und Reverse Merit Order begrenzen die Steuerung. Das Modell ist keine automatische Entscheidungsmaschine.
 
 ## WÖMM-Betriebssystem
 
