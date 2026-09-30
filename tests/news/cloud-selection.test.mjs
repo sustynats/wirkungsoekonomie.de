@@ -1,5 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { makeSelectionSnapshot, importSelection, acknowledgeSelection, validateSelectionResult } from '../../scripts/news/cloud-selection.mjs';
 import { runWirkungsticker } from '../../scripts/news/run.mjs';
 import { EVENT_RELEVANCE_VERSION } from '../../scripts/news/event-relevance.mjs';
@@ -88,6 +91,13 @@ test('uncertain redirection and conflicting published-event IDs are held', () =>
   d.decision = 'update'; d.event_id = 'event-known';
   assert.throws(() => check(f), /CLOUD_/);
 });
+test('run time alone does not change the semantic content hash', () => {
+  const f = fixture();
+  const next = makeSelectionSnapshot({ ...f, runId: 'next-run', now: '2026-09-30T10:30:00Z' });
+  assert.equal(next.content_hash, f.snapshot.content_hash);
+  assert.notEqual(next.input_hash, f.snapshot.input_hash);
+});
+
 test('manual-only contents never enter the snapshot', () => {
   const f = fixture();
   f.candidates.push({ ...f.candidates[0], story_id: 'manual', manual_only: true });
@@ -120,9 +130,15 @@ test('real runner exports below-threshold candidates and checks a return for fre
     fetchFeedImpl: async () => ({ body: rss, final_url: registered.feed_url }),
     callAiImpl: async () => { throw Error('PAID_CALL_FORBIDDEN'); },
   });
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-cloud-selection-'));
+  const snapshotFile = path.join(directory, 'snapshot.json'), resultFile = path.join(directory, 'result.json');
   let snapshot, baseline;
   const exported = await runWirkungsticker({ ...input(), selectionOnly: true,
-    selectionRunId: 'real-run', captureSelectionBaseline: value => { baseline = value; }, captureSelectionSnapshot: row => { snapshot = row; } });
+    selectionRunId: 'real-run', captureSelectionBaseline: value => { baseline = value; }, captureSelectionSnapshot: row => {
+      fs.writeFileSync(snapshotFile, JSON.stringify(row), { flag: 'wx', mode: 0o600 });
+      snapshot = JSON.parse(fs.readFileSync(snapshotFile, 'utf8'));
+      assert.deepEqual(snapshot, row);
+    } });
   assert.equal(exported.ai_calls, 0); assert.equal(snapshot.candidates.length, 1);
   assert.equal(baseline.input_hash, snapshot.input_hash);
   assert.equal(baseline.eligible.length, 0, 'semantic reviewer receives below-threshold single-source input');
@@ -135,13 +151,21 @@ test('real runner exports below-threshold candidates and checks a return for fre
       reason: 'Die fachliche Einzelquelle liefert überprüfbare technische Evidenz mit möglichem strukturellem Nutzen.',
       uncertainty: 'Die Übertragbarkeit auf andere Anwendungen ist noch offen.', topics: ['technology'],
       evidence: [{ source_id: row.sources[0].source_id, url: row.sources[0].url }] }] };
+  fs.writeFileSync(resultFile, JSON.stringify(result), { flag: 'wx', mode: 0o600 });
+  const returned = JSON.parse(fs.readFileSync(resultFile, 'utf8'));
+  assert.deepEqual(returned, result, 'complete return stored and read back without retyping');
   let captured;
-  const checked = await runWirkungsticker({ ...input(), cloudSelection: { snapshot, result },
+  const checked = await runWirkungsticker({ ...input(), cloudSelection: { snapshot, result: returned },
     captureState: value => { captured = value; } });
   assert.equal(checked.ai_calls, 0); assert.equal(checked.published_stories, 0);
   assert.equal(checked.cloud_selection.selected.length, 1);
+  assert.equal(checked.ai_stories, 1, 'candidate reaches the existing elaboration lane, with API disabled');
+  console.log(JSON.stringify({ comparison: 'same_snapshot_fixture', input_hash: snapshot.input_hash,
+    old_local_eligible: baseline.eligible.length, cloud_selected_new: checked.cloud_selection.selected.length,
+    ai_calls: checked.ai_calls, published: checked.published_stories }));
   // Replay same frozen discovery context with the durable import receipt.
   const replayInput = input(); replayInput.state.cloud_selection_receipts = captured.state.cloud_selection_receipts;
   const replay = await runWirkungsticker({ ...replayInput, cloudSelection: { snapshot, result } });
   assert.equal(replay.cloud_selection.replay, true); assert.equal(replay.ai_calls, 0);
+  fs.rmSync(directory, { recursive: true });
 });

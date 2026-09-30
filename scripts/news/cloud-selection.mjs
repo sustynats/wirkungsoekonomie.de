@@ -49,6 +49,7 @@ export function makeSelectionSnapshot({ candidates, stories, runId, now, coverag
   const payload = {
     schema_version: CLOUD_SELECTION_VERSION, run_id: runId, created_at: now,
     candidates: rows, events, comparison_hash: hash(events),
+    content_hash: hash({ candidates: rows, events }),
     coverage: coverage || { complete: false, limitations: ['source_coverage_not_supplied'] },
   };
   return { ...payload, input_hash: hash(payload) };

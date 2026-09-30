@@ -1541,7 +1541,9 @@ export async function runWirkungsticker(options = {}) {
     newsroom.decisions ||= [];
     newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: 'duplicate_of_published_story' });
   }
-  const currentClusters = clusters.filter((candidate) => !lifoExpiredIds.has(candidate.story_id) && !duplicateIds.has(candidate.story_id));
+  const cloudDecisions = cloudReceipt ? new Map(options.cloudSelection.result.decisions.map(row => [row.candidate_id, row])) : null;
+  const currentClusters = clusters.filter((candidate) => !lifoExpiredIds.has(candidate.story_id) && !duplicateIds.has(candidate.story_id)
+    && (!cloudDecisions || cloudDecisions.has(candidate.story_id)));
   report.lifo_expired = lifoExpired.length;
   report.lifo_horizon_hours = lifoHorizonMs / 3600000;
   const initiallyEligible = cloudReceipt ? cloudReceipt.selected.filter(candidate => !lifoExpiredIds.has(candidate.cloud_selection.candidate_id)) : currentClusters
@@ -1554,7 +1556,7 @@ export async function runWirkungsticker(options = {}) {
   for (const candidate of eligible) bumpCandidateFunnel(sourceFunnel, candidate, "eligible_stories");
   for (const candidate of currentClusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
   newsroom.decisions ||= [];
-  for (const candidate of currentClusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
+  for (const candidate of currentClusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: cloudReceipt ? "cloud_selection_not_admitted" : "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
   for (const candidate of lifoExpired) {
     const base = candidate.existing_story || pendingRecord(candidate, "LIFO_HORIZON_EXCEEDED", now);
@@ -1567,6 +1569,22 @@ export async function runWirkungsticker(options = {}) {
   // still reopen the same story through normal discovery.
   for (const candidate of currentClusters.filter(candidate => !eligibleIds.has(candidate.story_id))) {
     const existing = candidate.existing_story;
+    if (cloudDecisions) {
+      const decision = cloudDecisions.get(candidate.story_id);
+      // Semantic holds stay in the existing story store. A replay or a
+      // redirected update must not close a previously deferred selected row.
+      if (['new', 'update'].includes(decision.decision) || cloudReceipt.replay) continue;
+      if (decision.decision === 'defer') {
+        byId.set(candidate.story_id, pendingRecord(candidate, 'CLOUD_SELECTION_DEFERRED', now));
+      } else if (existing?.published) {
+        const { pending_update: _pendingUpdate, ...preserved } = existing;
+        byId.set(candidate.story_id, { ...preserved, review_checkpoint: {
+          ...reviewCheckpoint(candidate, now, 'no_material_update'), reviewed_by: 'cloud_selection' } });
+      } else if (existing) {
+        byId.set(candidate.story_id, rejectedRecord(existing, now, ['CLOUD_REPEAT_WITHOUT_UPDATE']));
+      }
+      continue;
+    }
     if (!existing) continue;
     if (existing.published) {
       const { pending_update: _pendingUpdate, ...preserved } = existing;

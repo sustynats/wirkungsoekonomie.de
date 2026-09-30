@@ -13,8 +13,9 @@ Keine Repository-Erkundung, Builds, Codeänderungen, Artikel, Veröffentlichung,
 Embeddings, Suchdienste oder kostenpflichtige Ersatzaufrufe.
 
 Lies zuerst die Kennungen, Hashes und Coverage-Hinweise des Pakets. Verwende
-bereits gespeicherte Ergebnisse für exakt denselben input_hash; bewerte ihn
-nicht erneut. Nur neue oder veränderte Kandidaten sind Arbeitsgegenstand.
+bereits gespeicherte Ergebnisse für exakt denselben input_hash. Bei gleichem
+content_hash ohne neue Vergleichsinformation keinen neuen Modellauftrag ausführen;
+keine alte Rückgabe an eine neue Lauf-ID binden. Nur neue oder veränderte Kandidaten sind Arbeitsgegenstand.
 Titel, Teaser und Datum sind Quellenaussagen; Paywalls und Zugangsverbote bleiben
 verbindlich. Fehlenden Kontext nicht erfinden. Alle Kandidaten und alle
 Vergleichsereignisse lesen. Bei Teilmengen anschließend eine gemeinsame

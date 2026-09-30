@@ -75,12 +75,20 @@ oder Quellenaufbereitung. Keine ungeprüfte Verwendung alter Resultate.
 
 ```sh
 node scripts/news/cloud-selection-cli.mjs export /tmp/cloud-selection/snapshot.json
+# Optional: vorheriges Paket als drittes Argument des Exports für Unverändert-Prüfung.
 node scripts/news/cloud-selection-cli.mjs check /tmp/cloud-selection/snapshot.json /tmp/cloud-selection/result.json
 node --test tests/news/cloud-selection.test.mjs
 npm run news:test
 npm run news:validate
 git diff --check
 ```
+
+content_hash bindet den semantischen Datenbestand ohne Laufzeit/Run-ID.
+Beim Export kann als drittes Argument ein vorheriger Snapshot angegeben werden.
+Bei gleichem content_hash entsteht kein neuer Auftrag/Dateiexport, sondern
+unchanged_input_no_new_review. Alte Entscheidungen werden dabei weder neu
+gebunden noch über ihre Gültigkeitsfrist hinaus für bezahlte Aufrufe zugelassen.
+Der Scheduler muss diesen optionalen Vorgängerparameter verbindlich verwenden.
 
 Export stoppt vor Budget-FX, Artikelabruf, Modell und Repositoryschreiben.
 check setzt AI_ENABLED=false und dryRun; zusätzlich verbietet der Runner
