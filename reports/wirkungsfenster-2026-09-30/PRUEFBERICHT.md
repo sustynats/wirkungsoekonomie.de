@@ -6,7 +6,7 @@ Stand: 30. September 2026. Branch: `codex/wirkungsfenster`. Kein Merge, kein Dep
 
 - Ausgangsaudit: `09530f48d8511d8daa85c087be72d903fad24087` aus `sustynats/wirkungsoekonomie.de`.
 - Vor dem PR auf `8281ec5cff767d80d9ba081a4c1a998972654c25` aktualisiert. Die sechs zwischenzeitlichen automatischen Ticker-Commits wurden unverändert als Basis übernommen; der PR enthält keine eigenen Ticker- oder Workflowänderungen.
-- Neuester ausdrücklich führender Leitfaden beim Start: v1.7. Die neue v1.8 ist kumulativ; v1.5–v1.7 einschließlich IOOI, DNS/GGO/GFA/eNAP und objektspezifischer BHO-Prüfarchitektur bleiben enthalten.
+- Neuester ausdrücklich führender Leitfaden beim Start: v1.7. Die neue v1.8 ist kumulativ; v1.5-v1.7 einschließlich IOOI, DNS/GGO/GFA/eNAP und objektspezifischer BHO-Prüfarchitektur bleiben enthalten.
 - Der ursprüngliche lokale Checkout mit fremden Änderungen wurde nicht bearbeitet. Umsetzung in einem separaten verwalteten Worktree.
 - Bestandsprüfung: kein kanonisches Wirkungsfenster vorhanden. Wirkungssteuerung ist bereits dem kanonischen Wirkungslenkung-Eintrag zugeordnet. Wirkungskorridor existiert in einem anderen Benchmark-Kontext. Es wurden keine Doppelbegriffe oder Methoden angelegt.
 - Medizinische Quelle: [FDA, Narrow Therapeutic Index Drugs](https://www.fda.gov/drugs/cder-conversations/setting-and-implementing-standards-narrow-therapeutic-index-drugs). Nur Analogiequelle, keine Validierung gesellschaftlicher Anwendungen. Keine medizinischen Synonyme im Autolinker.

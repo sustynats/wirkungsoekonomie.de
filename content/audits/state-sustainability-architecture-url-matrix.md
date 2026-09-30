@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4972**
+- Sitemap routes: **5006**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14986**
-- Routes with non-default #253 action: **3590**
+- Extra tracked source HTML not in sitemap: **15023**
+- Routes with non-default #253 action: **3592**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **278**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -78,6 +78,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
 | https://wirkungsoekonomie.de/wirkungswissenschaften/ | `wirkungswissenschaften/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/ | `wirkungsfelder/staat-recht-demokratie/index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/ | `wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html` | ADD_GGO_GFA_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/ | `wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html` | ADDENDUM_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -105,7 +106,6 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/ | `begriffe/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/7-bundeshaushaltsordnung/ | `begriffe/7-bundeshaushaltsordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, dns |
 | https://wirkungsoekonomie.de/begriffe/fuenftes-p-planet/ | `begriffe/fuenftes-p-planet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2057,6 +2057,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsethik/ | `begriffe/wirkungsethik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsexperiment/ | `begriffe/wirkungsexperiment/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsfeld/ | `begriffe/wirkungsfeld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsfenster/ | `begriffe/wirkungsfenster/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/wirkungsfinanzierung/ | `begriffe/wirkungsfinanzierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsfinanzpolitik/ | `begriffe/wirkungsfinanzpolitik/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsfolgenabschaetzung/ | `begriffe/wirkungsfolgenabschaetzung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung |
@@ -2358,6 +2359,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-54bbcad5ba91/ | `quellenarchiv/wok-g-54bbcad5ba91/index.html` | ADD_SOURCE_LINKS | - |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-57666aff0faa/ | `quellenarchiv/wok-g-57666aff0faa/index.html` | ADD_SOURCE_LINKS | - |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5797c44fb69d/ | `quellenarchiv/wok-g-5797c44fb69d/index.html` | ADD_SOURCE_LINKS | - |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-57dfde49e5d2/ | `quellenarchiv/wok-g-57dfde49e5d2/index.html` | ADD_SOURCE_LINKS | - |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-58f617ae8ee4/ | `quellenarchiv/wok-g-58f617ae8ee4/index.html` | ADD_SOURCE_LINKS | - |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-59a5f127fca8/ | `quellenarchiv/wok-g-59a5f127fca8/index.html` | ADD_SOURCE_LINKS | - |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5a91bfdcebb4/ | `quellenarchiv/wok-g-5a91bfdcebb4/index.html` | ADD_SOURCE_LINKS | - |
@@ -3669,13 +3671,6 @@ Signals are review candidates, not automatic errors.
 - `blog/nachhaltigkeit-ist-keine-parteifarbe.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence - Preserve as current source-bound reference; crosslink from relevant current pages.
 - `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence - Use as canonical five-case calibration corpus; recheck GGO §§43/44 claims and keep public-GFA vs public-eNAP provenance explicit.
 - `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
-- `wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html` - wirkungsblind, alternativen, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `werkzeuge/impact-controlling/index.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/abtreibung-und-patriarchale-ordnung-allianzen-beim-rechten-rollback-233683/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/japan-notenbank-hebt-leitzins-auf-hochsten-stand-seit-31-jahren-4b5913/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/bundeslander-einigung-auf-neuen-staatsvertrag-fur-die-digitale-medienwelt-488061/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3713,6 +3708,13 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html` - wirkungsblind, alternativen, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `werkzeuge/impact-controlling/index.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3888,8 +3890,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1382**
-- Combined matrix items (routes + extra HTML + support): **21340**
+- Tracked support text files inventoried: **1391**
+- Combined matrix items (routes + extra HTML + support): **21420**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3904,7 +3906,7 @@ Signals are review candidates, not automatic errors.
 | `assets/data/glossary-lookup.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | `assets/data/glossary-model.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | `assets/data/glossary-reference-index.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| `assets/data/glossary-relations.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
+| `assets/data/glossary-relations.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation |
 | `assets/data/journal-pdf-manifest.json` | journal_source_or_manifest | NO_CHANGE_REQUIRED | enap |
 | `assets/data/library-source-details.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | enap, evaluation |
 | `assets/data/library-version-registry.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | enap, evaluation |
@@ -3943,6 +3945,7 @@ Signals are review candidates, not automatic errors.
 | `content/documents/documents.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, enap, dns, evaluation |
 | `content/glossar/glossary-registry.ts` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/glossary/imports/begriffsleitfaden-v1.5.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | evaluation |
+| `content/glossary/imports/begriffsleitfaden-v1.8.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
 | `content/glossary/imports/curated-crosslinks.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | wirkungsblind, alternativen |
 | `content/glossary/imports/formalisierte-leistungsbegriffe.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | evaluation |
 | `content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | - |
@@ -3980,6 +3983,7 @@ Signals are review candidates, not automatic errors.
 | `content/methods/woems-methoden.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/news/manual/2026-09-09_kurzschluss-claudia-kemfert_buch-und-wirkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/news/manual/2026-09-09_werte-maja-goepel_buch-und-wirkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/news/manual/2026-09-28_arctic-meltdown-robert-habeck_buch-und-wirkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/news/media-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/news/reviews/2026-09-07-entzauberung-durch-macht.json` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
 | `content/news/reviews/2026-09-07-sachsen-anhalt-sonderanalyse.json` | support_text | ADD_SOURCE_LINKS | enap, dns, alternativen, evaluation |
@@ -4013,6 +4017,7 @@ Signals are review candidates, not automatic errors.
 | `content/site/reader-section-restorations.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/site/reference-update.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/site/state-benchmark-update-2026-09-06.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/site/wirkungsfenster.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/alternative-models-revival-monitor.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/bibliography.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/evidence-source-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
@@ -4305,7 +4310,7 @@ Signals are review candidates, not automatic errors.
 | `public/data/glossary-term-links.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `public/data/glossary-version-history.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, enap, egfa, dns, alternativen, evaluation |
 | `public/data/public-pdf-downloads.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
-| `public/data/relationship-manifest.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
+| `public/data/relationship-manifest.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, enap, egfa, dns, alternativen, evaluation |
 | `public/data/site-updates.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, enap, dns |
 | `public/data/tool-examples.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
 | `public/data/tool-landscape-2-0.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | novelty_or_absence |
@@ -4411,6 +4416,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/site/build-parlament-info.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/site/build-reference-update.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap |
 | `scripts/site/build-so-wirkt-wirkungsoekonomie.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
+| `scripts/site/build-wirkungsfenster.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/sources/check-evidence-source-archive-links.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/apply-v33-rechenstandard.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/deepen-sprint2.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
@@ -4465,7 +4471,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **21341**
+- Combined reviewed items: **21421**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
