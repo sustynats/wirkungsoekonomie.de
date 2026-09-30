@@ -35,6 +35,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/curated-crosslinks.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json"),
   path.join(root, "content/glossary/imports/begriffsleitfaden-v1.5.json"),
+  path.join(root, "content/glossary/imports/begriffsleitfaden-v1.8.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const modelOut = path.join(root, "assets/data/glossary-model.json");
@@ -551,6 +552,23 @@ const canonicalTermOverrides = new Map([
 // Dated clarification shared by detail pages, hover definitions and exports.
 for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/site-review-2026-09-05.json"), "utf8")).terms) canonicalTermOverrides.set(term.termId, term);
 for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/model-and-controlling-2026-09-06.json"), "utf8")).terms) canonicalTermOverrides.set(term.termId, term);
+// Apply the latest precision after legacy imports AND the existing overrides.
+// Extensions preserve core definitions and existing identities, including the
+// established Wirkungssteuerung alias of Wirkungslenkung.
+const terminologyPrecision = JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/begriffsleitfaden-v1.8.json"), "utf8"));
+for (const term of terminologyPrecision.terms) canonicalTermOverrides.set(term.termId, term);
+
+function applyTerminologyPrecision(term) {
+  const extension = terminologyPrecision.extensions.find(item => item.termId === term.termId);
+  if (!extension) return term;
+  return {
+    ...term,
+    relatedTerms: unique([...(term.relatedTerms || []), "wirkungsfenster"]),
+    relatedTools: uniqueEntries([...(term.relatedTools || []), {title: "Wirkungsfenster anwenden", url: "/verstehen/wirkungsfenster/#anwendung"}]),
+    deepGlossarySections: [...(term.deepGlossarySections || []).filter(item => item.title !== extension.title), {title: extension.title, body: extension.body, items: []}],
+    statusNote: [term.statusNote, "Ergänzung: Wirkungsfenster, Leitfaden v1.8 vom 30.09.2026; bestehende Kerndefinition bleibt erhalten."].filter(Boolean).join(" "),
+  };
+}
 
 function applyCanonicalTermOverride(term) {
   const override = canonicalTermOverrides.get(term.termId);
@@ -1047,6 +1065,7 @@ const rawTerms = [
 // Die kanonischen Kernbegriffe werden deshalb abschließend noch einmal gesetzt.
 const terms = dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
   .map(applyCanonicalTermOverride)
+  .map(applyTerminologyPrecision)
   .sort((a, b) => collator.compare(a.glossaryOrderKey || a.canonicalLabel, b.glossaryOrderKey || b.canonicalLabel));
 
 const glossarySourceRecords = attachGlossarySourceArchive(terms);

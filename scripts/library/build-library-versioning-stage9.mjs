@@ -175,7 +175,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf",
   "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
   "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx"
 ]);
@@ -185,7 +185,8 @@ const LEADING_REFERENCE_PATHS = new Set([
 // versionierte Dateien beschränkt und ignoriert zufällige Arbeitsartefakte.
 const EXPLICIT_PUBLIC_DOCUMENTS = new Set([
   "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
-  "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf"
+  "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf",
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf"
 ]);
 
 // Kuratierte Dokumentseiten aus dem Dokument-Generator dürfen nicht zusätzlich
@@ -276,40 +277,46 @@ const LEADING_OVERRIDES = new Map([
     shortDescription: "Öffentliche Begriffskarte für zentrale WÖk-Begriffe und Abkürzungen."
   }],
   ["bibliothek/woek-begriffsleitfaden-fuehrend/index.html", {
-    title: "WÖk-Begriffsleitfaden führend v1.7",
+    title: "WÖk-Begriffsleitfaden führend v1.8",
     type: "Glossar",
     status: "führend",
     shortDescription: "Maßgebliche Sprach- und Methodenreferenz: staatliche Prüfrahmen objektspezifisch einordnen, Wirkungsrelevanz statt Rechtsform prüfen, Problem und Ziel vor Empfehlungen klären und MasterItems von Indikatoren trennen."
   }],
-  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf", {
-    title: "WÖk-Begriffsleitfaden führend v1.7",
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf", {
+    title: "WÖk-Begriffsleitfaden führend v1.8",
     type: "Glossar",
     status: "führend",
-    shortDescription: "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.7."
+    shortDescription: "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.8."
+  }],
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf", {
+    title: "WÖk-Begriffsleitfaden v1.7 (historisch)",
+    type: "Glossar",
+    status: "archiviert",
+    shortDescription: "Zitierfähige historische Fassung; die kumulative Version 1.8 ergänzt das Wirkungsfenster."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.6",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.5",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.4",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.0",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.8."
   }],
   ["assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx", {
     title: "WÖk-Masterregister v1.5",

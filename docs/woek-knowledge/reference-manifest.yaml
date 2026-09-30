@@ -54,15 +54,16 @@ references:
     title: "WÖk-Begriffsleitfaden führend"
     domain: Sprache und Begriffe
     status: leading
-    version: "1.7"
-    date: "2026-08-21"
+    version: "1.8"
+    date: "2026-09-30"
     canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
-    download_asset: WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf
+    download_asset: WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf
     local_repository_copy: >
-      public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf;
-      Live-HTML: content/documents/online/woek-begriffsleitfaden-fuehrend.inc (Build: scripts/publications/build-begriffsleitfaden-v1.7.py);
-      Quell-MD: source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md (vollständige führende Fassung)
+      public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf;
+      Live-HTML: content/documents/online/woek-begriffsleitfaden-fuehrend.inc (Build: scripts/publications/build-begriffsleitfaden-v1.8.py);
+      Quell-MD: source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.8.md (vollständige führende Fassung)
     supersedes:
+      - {version: "1.7", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf, status: archiviert}
       - {version: "1.6", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf, status: archiviert}
       - {version: "1.5", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf, status: archiviert}
       - {version: "1.4", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf, status: archiviert}
@@ -72,7 +73,7 @@ references:
       - {version: "1.0", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf, status: archiviert}
     authority_scope: [begriffe, formulierung, wirkungsarchitektur, wirkpfad, wirkungsradar, resilienzsystematik, nachhaltigkeitsdefinition]
     notes: >
-      v1.7 ergänzt die objektspezifische staatliche Prüfarchitektur und erhält die eigenständige WÖk-Wirkungsarchitektur: IOOI ist eine externe optionale Results Chain,
+      v1.8 ergänzt Wirkungsfenster als Gestaltungs- und Prüfbegriff. v1.7 ergänzt die objektspezifische staatliche Prüfarchitektur und erhält die eigenständige WÖk-Wirkungsarchitektur: IOOI ist eine externe optionale Results Chain,
       der Wirkpfad ist versioniert und evidenzsensibel, das Wirkungsradar kein Diagramm. Führende Definition:
       „Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."
     last_verified: "2026-09-05"
@@ -88,7 +89,7 @@ references:
     local_repository_copy: "glossar.html → begriffe/ (2281 Begriffsseiten); Daten: assets/data/glossary-lookup.json (2121 Begriffe, 2026-08-05)"
     supersedes: []
     authority_scope: [oeffentliche_kurzdefinitionen]
-    notes: "Nur soweit mit Begriffsleitfaden v1.7 vereinbar; öffentliche Such- und API-Exporte werden im Website-Build synchronisiert."
+    notes: "Nur soweit mit Begriffsleitfaden v1.8 vereinbar; öffentliche Such- und API-Exporte werden im Website-Build synchronisiert."
     last_verified: "2026-08-14"
 
   - reference_id: SDG_SDGPLUS_REFERENZRAHMEN
@@ -158,8 +159,8 @@ registry_id_map:
   WOEMM_2_0:  [woemm-2-0]
   WOEMS_2_0:  [woems-2-0]
   WOEK_BEGRIFFSLEITFADEN:
-    - leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html  # Onlinefassung v1.7
-    - download-or-document-public-downloads-originals-woek-begriffsleitfaden…  # PDF v1.7
+    - leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html  # Onlinefassung v1.8
+    - download-or-document-public-downloads-originals-woek-begriffsleitfaden…  # PDF v1.8
   WOEK_GLOSSAR: [leading-reference-glossar-html]
   SDG_SDGPLUS_REFERENZRAHMEN:
     - download-or-document-assets-downloads-woek-sdg-sdgplus-referenzrahmen…   # Lesefassung v0.3 (PDF)
@@ -197,7 +198,7 @@ machine_readable_import:
   WOEK_BEGRIFFSLEITFADEN:
     status: TEXT
     artefakte:
-      - {pfad: content/documents/online/woek-begriffsleitfaden-fuehrend.inc, inhalt: "Volltext HTML, führende Fassung v1.5", build: scripts/publications/build-begriffsleitfaden-v1.5.py}
+      - {pfad: content/documents/online/woek-begriffsleitfaden-fuehrend.inc, inhalt: "Volltext HTML, führende Fassung v1.8", build: scripts/publications/build-begriffsleitfaden-v1.8.py}
       - {pfad: docs/woek-knowledge/terminology.yaml, inhalt: "21 Kernbegriffe strukturiert (Claude, Erstauszug)"}
     luecke: "Kein maschinenlesbares Mapping Leitfaden-Definition ↔ Glossar-Begriff (Glossar-Lookup 2121 Begriffe ist unabhängig gepflegt)"
   T_SROI_RECHENSTANDARD:
@@ -219,7 +220,7 @@ machine_readable_import:
     status: FULL
     artefakte: [{pfad: assets/data/glossary-lookup.json, inhalt: "2121 Begriffe (2026-08-05)"}, {pfad: api/v1/glossary/index.json, inhalt: "2092 - Snapshot-Drift, Rebuild nötig"}]
 
-# Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.7 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
+# Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.8 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
 # · Gesamtsystemlogik → Buch · Management → WÖMM 2.0 · Methoden/Canvas/Journeys → WÖMS 2.0 · SDG/SDG+ → Referenzrahmen v0.3 + Onlinefassung
 # · WÖk-IDs/Regeln/Benchmarks/Prüfstatus → Masterregister v1.5 · T-SROI → Rechenstandard v1.1.
 # Eine ältere Gesamtquelle überschreibt nie eine neuere fachgebietsspezifische führende Referenz.

@@ -18,6 +18,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { renderWindowNote } from '../lib/wirkungsfenster.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const read = (p) => JSON.parse(readFileSync(resolve(ROOT, p), 'utf8'));
@@ -327,6 +328,7 @@ function gesamtbild() {
           <video controls controlsList="nodownload" playsinline preload="metadata" style="width:100%;border-radius:12px;display:block" aria-label="Wirkungsökonomie einfach erklärt"><source src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woek-erklaervideo.mp4" type="video/mp4">Dein Browser unterstützt kein Video.</video>
         </figure>
       </section>
+      ${renderWindowNote('gesamtbild')}
       <section class="section"><div class="card">
         <p class="hero-kicker">Warum überhaupt ein neues Modell</p>
         <h2>Weil die alten Werkzeuge die falsche Tabelle führen</h2>

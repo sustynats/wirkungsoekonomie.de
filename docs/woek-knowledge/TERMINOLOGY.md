@@ -1,8 +1,8 @@
 # Terminology - Verbindliche WÖk-Begriffe
 
-Stand: 2026-08-15 · Führende Quelle: **WÖk-Begriffsleitfaden führend v1.5** (15.08.2026) - Live-HTML `content/documents/online/woek-begriffsleitfaden-fuehrend.inc`, PDF `public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf`.
+Stand: 2026-09-30 · Führende Quelle: **WÖk-Begriffsleitfaden führend v1.8** (30.09.2026) - Live-HTML `content/documents/online/woek-begriffsleitfaden-fuehrend.inc`, PDF `public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf`.
 Maschinenlesbar: [`terminology.yaml`](terminology.yaml) · Öffentliches Glossar: `begriffe/` (2281 Seiten, `assets/data/glossary-lookup.json`).
-Regel: Bei Konflikt gilt der Begriffsleitfaden v1.5; das Glossar nur, soweit leitfadenkonform. v1.0 bis v1.4 sind historische, zitierfähige Fassungen und **nicht** führend.
+Regel: Bei Konflikt gilt der kumulative Begriffsleitfaden v1.8; das Glossar nur, soweit leitfadenkonform. v1.0 bis v1.7 sind historische, zitierfähige Fassungen und **nicht** führend.
 
 ## Kernbegriffe (Definitionen aus v1.5, §10 - Abweichungen einzeln vermerkt)
 
@@ -53,3 +53,11 @@ Hierarchie: Resilienz → Nachhaltigkeit; acht Analysebausteine. Bei Neuveröffe
 - Nichtkompensation und Reverse Merit Order nennen, wenn Steuerungslogik/Bewertung/Priorisierung beschrieben wird.
 - Keine Personenbewertung, keine moralische Rangliste, kein Social Credit; WÖk ist keine Planwirtschaft und keine Sprachpolizei.
 - Bewertungs-/Skalenaussagen: Primärlogik ist **-3…+3** je Indikator (`content/methodik/scoring-rules.json`); -100…+100/GWV nur als gekennzeichnete Darstellungs-/Verwaltungsskala einzelner Use Cases (siehe `SOURCE_HIERARCHY.md`, SOURCE_CONFLICT 1).
+
+## Wirkungsfenster (v1.8)
+
+Bereich der Anwendung einer Maßnahme, in dem sie unter benannten Bedingungen ausreichend zum Wirkungsziel beitragen kann, ohne festgelegte Wirkungsgrenzen zu verletzen.
+
+Kanonische Kurz-/Langdefinition und Abgrenzungen: `content/glossary/imports/begriffsleitfaden-v1.8.json`. Öffentlich: /begriffe/wirkungsfenster/ und /verstehen/wirkungsfenster/#anwendung. Die historische Begriffsauswahl oben ersetzt diese aktuelle Vollfassung nicht; die Präzisierungen v1.6/v1.7 zur staatlichen Prüfarchitektur bleiben kumulativ erhalten.
+
+Anwendungsbezogene WÖk-Präzisierung, kein Universalstandard oder Wirkungsnachweis. Hypothese, Evidenz, Schutz und Entscheidung getrennt halten. Mehrdimensional, unbekannt oder leer ist möglich; fehlende Daten bleiben offen. Gegenstand und Steuerungsinstrument getrennt prüfen. Therapeutisches Fenster ist nur medizinische Analogie, kein Alias. Kein siebtes Modul, keine zusätzliche Pflichtstufe, kein Score und keine Berechnungsänderung.

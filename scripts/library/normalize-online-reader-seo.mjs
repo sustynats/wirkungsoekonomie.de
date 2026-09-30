@@ -460,7 +460,8 @@ for (const file of readerFiles(LIBRARY_ROOT)) {
   const overview = path.join(readerRoot, "index.html");
   const overviewHtml = fs.existsSync(overview) ? fs.readFileSync(overview, "utf8") : html;
   const detailSlug = path.basename(path.dirname(readerRoot));
-  const meta = detailsBySlug.get(detailSlug) || null;
+  const entry = detailsBySlug.get(detailSlug) || null;
+  const meta = entry?.readerEdition ? { ...entry, ...entry.readerEdition } : entry;
   const documentTitle = publicDocumentTitle(meta, overviewHtml, html);
   const detectedChapter = heading(html) || (isReaderRoot(file) ? documentTitle : fallbackChapterTitle(file));
   const chapter = CHAPTER_TITLE_OVERRIDES.get(routeFor(file)) || detectedChapter;

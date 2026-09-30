@@ -354,7 +354,7 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
-    <link rel="canonical" href="${esc(canonical)}">
+    <link rel="canonical" href="${esc(canonical)}">${options.structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(options.structuredData).replaceAll("<", "\\u003c")}</script>` : ""}
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
@@ -3140,6 +3140,16 @@ ${chapterBlock(term)}
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
   if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
   pageOptions.canonicalPath = `/begriffe/${term.slug}/`;
+  if (term.structuredDataType === "DefinedTerm") {
+    pageOptions.structuredData = {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      name: term.canonicalLabel,
+      description: term.shortDefinition,
+      url: `https://wirkungsoekonomie.de${pageOptions.canonicalPath}`,
+      inDefinedTermSet: "https://wirkungsoekonomie.de/begriffe/",
+    };
+  }
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 

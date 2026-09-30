@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-08-16T06:08:52.339Z",
-  "count": 2138,
+  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "count": 2162,
   "relations": {
+    "7-bundeshaushaltsordnung": {
+      "related": [
+        "vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-statt-rechtsform",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuse": [
+        "ggo-gfa-folgenpruefung-fuer-bundesregelungsvorhaben",
+        "enap-digitales-werkzeug-der-nachhaltigkeitspruefung-keine-universelle-pruefpflicht",
+        "woek-unabhaengige-ergaenzungsarchitektur-keine-haushaltsrechtliche-pruefung"
+      ]
+    },
     "fuenftes-p-planet": {
       "related": [
         "responsible-marketing",
@@ -208,7 +221,8 @@
         "politischer-vorraum",
         "salienz",
         "priming",
-        "oeffentlichkeit-als-wirkungsraum"
+        "oeffentlichkeit-als-wirkungsraum",
+        "resignifikation"
       ],
       "doNotConfuse": [
         "nicht-verwechseln-mit-zensur-agenda-setting-kann-durch-journalistische-auswahl-plattformlogik-politik-oder-kampagnen-entstehen"
@@ -652,7 +666,8 @@
         "wirkungsresilienz",
         "vertrauen",
         "klimarisiko",
-        "exposition"
+        "exposition",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": []
     },
@@ -1406,7 +1421,8 @@
         "autokratie",
         "faschistoid",
         "macht-und-gewalt",
-        "demokratiefeindlichkeit"
+        "demokratiefeindlichkeit",
+        "katechon"
       ],
       "doNotConfuse": []
     },
@@ -3817,7 +3833,8 @@
         "pluralismus",
         "opposition",
         "legitimitaet",
-        "liberale-demokratie"
+        "liberale-demokratie",
+        "katechon"
       ],
       "doNotConfuse": []
     },
@@ -3933,7 +3950,8 @@
         "oeffentlichkeit",
         "resonanzraum",
         "medienfreiheit",
-        "deliberative-demokratie"
+        "deliberative-demokratie",
+        "katechon"
       ],
       "doNotConfuse": []
     },
@@ -4129,7 +4147,9 @@
         "kii",
         "lieferkettenwirkung",
         "cradle-to-cradle",
-        "paltering"
+        "paltering",
+        "resignifikation",
+        "katechon"
       ],
       "doNotConfuse": [
         "irrtum-falsche-annahme-ohne-taeuschungsabsicht",
@@ -4169,6 +4189,21 @@
         "wirkung",
         "wirkungspotenzial",
         "wirkungsnachweis"
+      ]
+    },
+    "deutsche-nachhaltigkeitsstrategie": {
+      "related": [
+        "sdg-sdgplus-referenzrahmen",
+        "sdg-plus",
+        "dns-indikator",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-des-bundes",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuse": [
+        "sdgs-globaler-zielrahmen-der-vereinten-nationen",
+        "sdg-woek-eigene-erweiterung-keine-offizielle-un-oder-dns-kategorie",
+        "wirkungsnachweis-ziel-oder-indikatorbezug-allein-beweist-keine-kausalitaet"
       ]
     },
     "dezentralisierung": {
@@ -4473,7 +4508,8 @@
         "wirkungscontrolling",
         "kii",
         "lieferkettenwirkung",
-        "cradle-to-cradle"
+        "cradle-to-cradle",
+        "resignifikation"
       ],
       "doNotConfuse": [
         "harmonie-diskurskultur-verlangt-nicht-dass-alle-einverstanden-sind",
@@ -4545,6 +4581,16 @@
         "wirkung",
         "entlastung-als-stabilisierung"
       ]
+    },
+    "dns-indikator": {
+      "related": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "wirkungsindikator",
+        "zielbezug-und-wirkung",
+        "baseline",
+        "wirkungsmonitoring"
+      ],
+      "doNotConfuse": []
     },
     "dnsh-do-no-significant-harm": {
       "related": [
@@ -4809,6 +4855,14 @@
         "nicht-mit-positiver-netto-wirkung-gleichsetzen-die-bewertung-erfolgt-erst-ueber-referenzrahmen-bilanzgrenze-datenqualitaet-und-rueckkopplung",
         "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden"
       ]
+    },
+    "e-gesetzgebung": {
+      "related": [
+        "elektronische-nachhaltigkeitspruefung",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-des-bundes"
+      ],
+      "doNotConfuse": []
     },
     "eba": {
       "related": [
@@ -5173,6 +5227,16 @@
       "related": [
         "roaming-ladeinfrastruktur",
         "ladepunktbetreiber"
+      ],
+      "doNotConfuse": []
+    },
+    "elektronische-nachhaltigkeitspruefung": {
+      "related": [
+        "e-gesetzgebung",
+        "nachhaltigkeitspruefung-des-bundes",
+        "gesetzesfolgenabschaetzung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "state-gfa-enap-benchmark"
       ],
       "doNotConfuse": []
     },
@@ -6398,6 +6462,17 @@
         "nicht-als-heroische-einzelperson-darstellen-evolutorisches-unternehmertum-kann-auch-in-teams-netzwerken-genossenschaften-verwaltung-kommunen-oder-sozialen-innovationen-entstehen"
       ]
     },
+    "ex-ante-folgenpruefung-und-reality-check": {
+      "related": [
+        "gesetzesfolgenabschaetzung",
+        "wirkungsmonitoring",
+        "wirkungsrueckkopplung",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
+        "lern-und-rueckkopplungsarchitektur"
+      ],
+      "doNotConfuse": []
+    },
     "exergie": {
       "related": [
         "umwandlungskette",
@@ -7232,7 +7307,9 @@
         "framing-sprache-tonalitaet",
         "wirkpfad",
         "wirkungsrisiko",
-        "gegenframe"
+        "gegenframe",
+        "resignifikation",
+        "katechon"
       ],
       "doNotConfuse": [
         "frame-der-deutungsrahmen-framing-das-setzen-oder-verstaerken-dieses-rahmens",
@@ -7663,7 +7740,8 @@
       "related": [
         "framing",
         "reframing",
-        "wirkungskommunikation"
+        "wirkungskommunikation",
+        "resignifikation"
       ],
       "doNotConfuse": []
     },
@@ -7695,6 +7773,21 @@
         "sozialisierung-vergesellschaftung"
       ],
       "doNotConfuse": []
+    },
+    "gemeinsame-geschaeftsordnung-der-bundesministerien": {
+      "related": [
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-des-bundes",
+        "elektronische-nachhaltigkeitspruefung",
+        "e-gesetzgebung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-und-reality-check"
+      ],
+      "doNotConfuse": [
+        "deutsche-nachhaltigkeitsstrategie-nationaler-ziel-governance-und-monitoringrahmen",
+        "enap-digitales-pruefwerkzeug-nicht-die-rechts-oder-verfahrensgrundlage",
+        "woek-unabhaengige-ergaenzungsarchitektur-keine-bundesverwaltungsvorschrift"
+      ]
     },
     "gemeinsame-zukunftssicherung": {
       "related": [
@@ -8021,6 +8114,20 @@
         "verfassung"
       ],
       "doNotConfuse": []
+    },
+    "gesetzesfolgenabschaetzung": {
+      "related": [
+        "nachhaltigkeitspruefung-des-bundes",
+        "elektronische-nachhaltigkeitspruefung",
+        "e-gesetzgebung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-und-reality-check",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuse": [
+        "enap-digitales-werkzeug-fuer-die-nachhaltigkeitspruefung-nicht-die-gesamte-gfa",
+        "woek-wirkungsanalyse-unabhaengige-ergaenzungsarchitektur-nicht-die-amtliche-gfa-selbst"
+      ]
     },
     "gesicherte-leistung": {
       "related": [
@@ -9227,7 +9334,8 @@
         "wirkungshaushalt",
         "naturbasierte-loesungen",
         "physical-climate-risk",
-        "quartierswirkung"
+        "quartierswirkung",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": []
     },
@@ -9807,7 +9915,7 @@
         "roi",
         "impact-investing",
         "t-sroi",
-        "nwi",
+        "nationaler-wohlfahrtsindex",
         "sustainable-value",
         "esg"
       ]
@@ -10799,6 +10907,29 @@
       ],
       "doNotConfuse": []
     },
+    "katechon": {
+      "related": [
+        "narrativ",
+        "framing-sprache-tonalitaet",
+        "resonanzraum",
+        "resonanzrisiko",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "transformationswirkung",
+        "demokratie",
+        "desinformation",
+        "resignifikation",
+        "autoritarismus"
+      ],
+      "doNotConfuse": [
+        "retter-oder-erloeserfigur-der-katechon-ist-durch-die-funktion-des-aufhaltens-bestimmt-er-muss-weder-erloesung-versprechen-noch-eine-person-sein",
+        "messias-das-katechontische-motiv-haelt-einen-drohenden-endzustand-zurueck-es-bezeichnet-nicht-notwendig-eine-heilbringende-endfigur",
+        "autoritarismus-eine-katechontische-erzaehlung-kann-fuer-die-legitimation-ausserordentlicher-macht-relevant-sein-ist-aber-weder-mit-autoritarismus-gleichzusetzen-noch-dessen-nachweis",
+        "wirkmechanismus-katechon-benennt-ein-historisch-politisches-motiv-ein-konkreter-wirkmechanismus-muss-fuer-den-jeweiligen-fall-gesondert-beschrieben-und-empirisch-geprueft-werden",
+        "wirkungsnachweis-wiederholung-aufmerksamkeit-oder-oeffentliche-resonanz-belegen-noch-keine-veraenderung-von-wissen-haltung-vertrauen-institutionen-oder-verhalten"
+      ]
+    },
     "kausalitaet-und-zurechnung": {
       "related": [
         "wirkungszurechnung",
@@ -11160,9 +11291,35 @@
         "anpassungskapazitaet",
         "wirkungsresilienz",
         "klimawandel",
-        "klimaschutz"
+        "klimaschutz",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": []
+    },
+    "klimaanpassungsmanagerin": {
+      "related": [
+        "physical-climate-risk",
+        "klimarisiko",
+        "anpassungskapazitaet",
+        "vulnerabilitaet",
+        "exposition",
+        "klimafolgeschaeden",
+        "hitzeschutz-hitzeaktionsplan",
+        "wirkungsresilienz",
+        "wirkungsmanagement",
+        "wirkungsmonitoring",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "wirkungsrueckkopplung",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "klimaschutzmanagement-es-richtet-sich-primaer-auf-die-vermeidung-und-verringerung-von-treibhausgasemissionen-klimaanpassungsmanagement-befasst-sich-mit-folgen-und-risiken-eines-veraenderten-klimas-beide-aufgaben-koennen-eng-zusammenarbeiten",
+        "fachplanung-oder-katastrophenschutz-klimaanpassungsmanager-innen-koordinieren-ueber-fachgrenzen-hinweg-uebernehmen-aber-nicht-automatisch-die-operative-zustaendigkeit-aller-beteiligten-stellen",
+        "politische-entscheidung-die-rolle-bereitet-vor-vernetzt-koordiniert-und-begleitet-gewaehlte-gremien-und-zustaendige-verwaltungsstellen-bleiben-entscheidungs-und-verantwortungsbefugt",
+        "klimaresilienz-eine-stelle-oder-ein-anpassungskonzept-ist-noch-keine-nachgewiesene-resilienz-des-kommunalen-systems",
+        "wirkungsnachweis-aktivitaet-reichweite-foerdermittelabruf-oder-veroeffentlichte-konzepte-belegen-noch-keine-eingetretene-zustandsveraenderung"
+      ]
     },
     "klimabeschluss-des-bundesverfassungsgerichts": {
       "related": [
@@ -11193,7 +11350,8 @@
         "praeventionsdividende",
         "kipppunkte",
         "vorsorgeprinzip",
-        "t-sroi"
+        "t-sroi",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": [
         "nicht-nur-als-haushaltskosten-darstellen-klimafolgeschaeden-betreffen-leben-gesundheit-wuerde-wohnen-arbeit-ernaehrung-migration-demokratievertrauen-und-versicherbarkeit-monetaere-kostenschaetzungen-sind-wichtig-aber-nicht-vollstaendig"
@@ -11228,7 +11386,8 @@
         "wirkungskapital",
         "stranded-assets",
         "transformationspfad",
-        "resilienz"
+        "resilienz",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": [
         "klimarisiko-ist-nicht-nur-risiko-fuer-unternehmen-es-ist-risiko-fuer-lebensbedingungen-und-handlungsmoeglichkeiten-gleichzeitig-sind-klimaschutzmassnahmen-auf-nebenwirkungen-und-soziale-abfederung-zu-pruefen"
@@ -14182,6 +14341,16 @@
         "eine-additive-acht-punkte-formel"
       ]
     },
+    "nachhaltigkeitspruefung-des-bundes": {
+      "related": [
+        "gesetzesfolgenabschaetzung",
+        "elektronische-nachhaltigkeitspruefung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "zielbezug-und-wirkung"
+      ],
+      "doNotConfuse": []
+    },
     "nachtwaechterstaat": {
       "related": [
         "minarchismus",
@@ -14222,7 +14391,9 @@
         "sensemaking",
         "resonanz",
         "vertrautheitseffekt",
-        "gedaechtniskonsolidierung"
+        "gedaechtniskonsolidierung",
+        "resignifikation",
+        "katechon"
       ],
       "doNotConfuse": [
         "wirkung",
@@ -14236,6 +14407,19 @@
         "hannah-arendt"
       ],
       "doNotConfuse": []
+    },
+    "nationaler-wohlfahrtsindex": {
+      "related": [
+        "nwi",
+        "bip",
+        "wohlstand",
+        "wohlfahrtsstaat"
+      ],
+      "doNotConfuse": [
+        "nwi",
+        "bruttoinlandsprodukt",
+        "wirkungs-bip"
+      ]
     },
     "nationalismus": {
       "related": [
@@ -14317,7 +14501,8 @@
         "netto-wirkung",
         "wirkungsgrenze",
         "reverse-merit-order",
-        "folgewirkung"
+        "folgewirkung",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "wechselwirkung-gegenseitige-beeinflussung-mehrerer-faktoren",
@@ -14499,30 +14684,6 @@
         "sroi",
         "esg-rating",
         "t-sroi"
-      ]
-    },
-    "nwi": {
-      "related": [
-        "netto-wirkung",
-        "positive-netto-wirkung",
-        "t-sroi",
-        "scorecard",
-        "finalscore",
-        "wirkungscontrolling",
-        "reverse-merit-order",
-        "datenqualitaet",
-        "wirkungsdaten",
-        "kii",
-        "wirkungsscorecard-und-finalscore",
-        "externalitaeten-und-kostenverlagerungskarte",
-        "wirkungsportfolio",
-        "wirkungskapital-und-investitionsgate",
-        "wirkungsdashboard-und-managementcockpit",
-        "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
-      ],
-      "doNotConfuse": [
-        "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
       ]
     },
     "nettokreditaufnahme": {
@@ -15210,6 +15371,26 @@
     "oberschwingungen": {
       "related": [
         "spannungsqualitaet"
+      ],
+      "doNotConfuse": []
+    },
+    "objektspezifische-staatliche-pruefarchitektur": {
+      "related": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "gesetzesfolgenabschaetzung",
+        "7-bundeshaushaltsordnung",
+        "vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
+        "wirkungsrelevanz-statt-rechtsform"
+      ],
+      "doNotConfuse": []
+    },
+    "state-assessment-benchmark": {
+      "related": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "state-gfa-enap-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "ex-ante-folgenpruefung-und-reality-check",
+        "zielbezug-und-wirkung"
       ],
       "doNotConfuse": []
     },
@@ -16111,6 +16292,15 @@
         "parlament",
         "regierung",
         "gewaltenteilung"
+      ],
+      "doNotConfuse": []
+    },
+    "parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen": {
+      "related": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "wr",
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung"
       ],
       "doNotConfuse": []
     },
@@ -17473,6 +17663,22 @@
       ],
       "doNotConfuse": []
     },
+    "produkt-id": {
+      "related": [
+        "woek-id",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsnachweiskonto",
+        "wirkungsindikator",
+        "datenqualitaet"
+      ],
+      "doNotConfuse": [
+        "woek-id",
+        "wirkungswert",
+        "personen-id",
+        "score"
+      ]
+    },
     "produkt-markt-wirkungs-fit": {
       "related": [
         "value-proposition",
@@ -17731,7 +17937,8 @@
         "mediengleichschaltung",
         "agenda-setting",
         "wiedergeburtsnarrativ",
-        "resonanzraum"
+        "resonanzraum",
+        "resignifikation"
       ],
       "doNotConfuse": []
     },
@@ -19178,6 +19385,34 @@
       ],
       "doNotConfuse": []
     },
+    "resignifikation": {
+      "related": [
+        "framing-sprache-tonalitaet",
+        "gegenframe",
+        "reframing",
+        "narrativ",
+        "desinformation",
+        "propaganda",
+        "agenda-setting",
+        "wahrheitsillusionseffekt",
+        "diskurskultur",
+        "resonanzraum",
+        "wirkungsanalyse-von-sprache",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkpfad",
+        "katechon"
+      ],
+      "doNotConfuse": [
+        "framing-ein-frame-hebt-bestimmte-aspekte-hervor-und-ordnet-sie-resignifikation-veraendert-oder-besetzt-die-bedeutung-eines-ausdrucks-symbols-oder-historischen-narrativs-neu-beides-kann-zusammenwirken",
+        "reframing-reframing-bietet-bewusst-einen-anderen-deutungsrahmen-an-resignifikation-kann-darueber-hinaus-die-bedeutung-des-verwendeten-zeichens-oder-begriffs-selbst-verschieben",
+        "desinformation-desinformation-arbeitet-mit-falschen-oder-irrefuehrenden-aussagen-resignifikation-kann-auch-historisch-richtige-fragmente-verwenden-und-ihre-bedeutung-durch-auswahl-kombination-oder-kontextverschiebung-veraendern",
+        "propaganda-propaganda-ist-eine-breitere-organisierte-einfluss-und-mobilisierungsstrategie-resignifikation-kann-darin-ein-einzelner-mechanismus-sein",
+        "historische-forschung-und-revision-wissenschaftliche-neubewertung-prueft-quellen-gegenbelege-und-kontexte-methodisch-offen-die-von-weiss-kritisierte-strategische-resignifikation-nutzt-geschichte-als-politische-legitimationsressource-und-ueberschreibt-oder-verschiebt-zusammenhaenge",
+        "wirkungsnachweis-sichtbarkeit-wiederholung-empoerung-oder-mediale-reichweite-belegen-noch-keine-tatsaechliche-veraenderung-von-wissen-haltung-vertrauen-oder-verhalten"
+      ]
+    },
     "resilienz": {
       "related": [
         "wirkungsresilienz",
@@ -19388,7 +19623,9 @@
         "wirkungspotenzial",
         "diskurskultur",
         "framing",
-        "reframing"
+        "reframing",
+        "resignifikation",
+        "katechon"
       ],
       "doNotConfuse": [
         "wirkung",
@@ -19402,7 +19639,8 @@
         "wirkungspotenzial",
         "alarm-frame",
         "destruktives-narrativ",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "katechon"
       ],
       "doNotConfuse": [
         "wirkung",
@@ -21580,6 +21818,30 @@
         "sicherheitsstaat-resilienz-schuetzt-mensch-planet-und-demokratie-nicht-nur-macht-oder-grenzen",
         "utopie-staat-2035-bleibt-fehlbar-und-revisionspflichtig"
       ]
+    },
+    "staatliche-nachhaltigkeitsarchitektur": {
+      "related": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-des-bundes",
+        "elektronische-nachhaltigkeitspruefung",
+        "e-gesetzgebung",
+        "dns-indikator",
+        "parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen",
+        "state-assessment-benchmark"
+      ],
+      "doNotConfuse": []
+    },
+    "state-gfa-enap-benchmark": {
+      "related": [
+        "state-assessment-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-des-bundes",
+        "elektronische-nachhaltigkeitspruefung",
+        "zielbezug-und-wirkung",
+        "wirkungsbewertung"
+      ],
+      "doNotConfuse": []
     },
     "staatsdelegitimierung": {
       "related": [
@@ -25279,9 +25541,24 @@
         "anpassungskapazitaet",
         "klimarisiko",
         "wirkungsresilienz",
-        "physical-climate-risk"
+        "physical-climate-risk",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": []
+    },
+    "vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle": {
+      "related": [
+        "7-bundeshaushaltsordnung",
+        "ex-ante-folgenpruefung-und-reality-check",
+        "attributionsforschung",
+        "wirkungsmonitoring",
+        "objektspezifische-staatliche-pruefarchitektur"
+      ],
+      "doNotConfuse": [
+        "monitoring-fortlaufende-beobachtung-nicht-automatisch-systematische-erfolgskontrolle",
+        "enap-werkzeug-der-nachhaltigkeitspruefung-fuer-regelungsvorhaben",
+        "woek-reality-check-unabhaengige-versionierte-rueckkopplung-innerhalb-der-woek-architektur"
+      ]
     },
     "w-bip": {
       "related": [
@@ -25621,7 +25898,8 @@
         "wirkungsraum",
         "wirkpfad",
         "wirkungsrisiko",
-        "netto-wirkung"
+        "netto-wirkung",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "nicht-jede-wechselwirkung-ist-bereits-positive-wirkung-wechselwirkungen-koennen-positiv-negativ-neutral-ambivalent-verzoegert-oder-nichtlinear-sein",
@@ -26004,7 +26282,10 @@
         "wirkung",
         "wirkpfad",
         "wirkungstraeger",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "resignifikation",
+        "katechon",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "wirkungsnachweis-evidenz-dass-eine-veraenderung-eingetreten-und-gegebenenfalls-zurechenbar-ist",
@@ -26098,7 +26379,8 @@
         "folgencheck",
         "alarm-frame",
         "salienzsteuerung",
-        "ankereffekt"
+        "ankereffekt",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "ausloeser-der-praezise-oberbegriff-fuer-handlung-unterlassen-produkt-oder-ereignis",
@@ -26618,7 +26900,8 @@
         "folgencheck",
         "framing",
         "sprachlicher-trigger",
-        "resonanzraum"
+        "resonanzraum",
+        "resignifikation"
       ],
       "doNotConfuse": []
     },
@@ -27061,6 +27344,12 @@
     },
     "wirkungsblindheit": {
       "related": [
+        "wirkung",
+        "wirkungsrueckkopplung",
+        "gesetzesfolgenabschaetzung",
+        "staatliche-nachhaltigkeitsarchitektur",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
         "wirkungswahrheit",
         "wirkungsbewertung",
         "wirkungslenkung",
@@ -27072,13 +27361,11 @@
         "wirkungssimulation",
         "scheinleistung",
         "blindleistung",
-        "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "netto-wirkung",
         "positive-netto-wirkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
         "wirkungsgrenze",
         "wirkpfad",
         "wirkungsnetz",
@@ -27122,6 +27409,8 @@
         "sharing"
       ],
       "doNotConfuse": [
+        "keine-daten-fehlende-evidenz-ist-offen-nicht-automatisch-wirkungsblind-oder-neutral",
+        "keine-folgenpruefung-wirkungsblindheit-behauptet-nicht-dass-ein-system-keinerlei-folgenabschaetzung-besitzt",
         "unwissen-daten-koennen-vorhanden-sein-und-trotzdem-folgenlos-bleiben",
         "absichtliche-taeuschung-das-waere-greenwashing-impact-washing-oder-wirkungssimulation",
         "datenmangel-kann-ursache-sein-ist-aber-nicht-der-ganze-befund",
@@ -27675,6 +27964,29 @@
       ],
       "doNotConfuse": []
     },
+    "wirkungsfenster": {
+      "related": [
+        "wirkstoff",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsmonitoring",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungshypothesen-register",
+        "nebenwirkung",
+        "wechselwirkung",
+        "counterfactual"
+      ],
+      "doNotConfuse": [
+        "therapeutisches-fenster-medizinische-analogie-kein-bedeutungsgleiches-synonym-und-keine-gesellschaft-als-patient-logik",
+        "wirkungsgrenze-begruendete-schutzlinie-das-wirkungsfenster-beschreibt-einen-moeglichen-anwendungsbereich-unter-diesen-grenzen",
+        "wirkungsraum-zusammenhang-in-dem-sich-zustaende-veraendern-kein-anwendungsfenster",
+        "wirkungskorridor-im-benchmark-kontext-vorhandene-vergleichseinordnung-kein-neuer-name-fuer-wirkungsfenster",
+        "wirkungsnachweis-und-entscheidung-eine-hypothese-ersetzt-weder-evidenz-noch-eine-zustaendige-rechtlich-und-fachlich-begruendete-entscheidung"
+      ]
+    },
     "wirkungsfinanzierung": {
       "related": [
         "oeffentliche-netto-wirkung",
@@ -27993,7 +28305,8 @@
         "produktwirkung",
         "produktdaten",
         "responsible-marketing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "schwellenwert",
@@ -28174,7 +28487,8 @@
         "wirkungspilot-design",
         "wirkungsreview-und-lernende-retrospektive",
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
@@ -28717,7 +29031,8 @@
         "wirkungsrisiko",
         "wirkungsdaten",
         "wr",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "wirkungsrueckkopplung-sie-bringt-beobachtungen-evidenz-und-unsicherheit-in-spaetere-entscheidungen-zurueck",
@@ -28812,7 +29127,8 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "woek"
+        "woek",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "nicht-als-blosse-absicht-imagewirkung-oder-outputkennzahl-verwenden",
@@ -28848,6 +29164,22 @@
         "outputnachweis-dokumentiert-leistung-aber-nicht-zwingend-wirkung",
         "wirkungspotenzial-moeglichkeit-nicht-eingetretene-veraenderung",
         "wirkungsbewertung-normative-einordnung-nach-dem-nachweis-oder-der-transparenten-modellierung"
+      ]
+    },
+    "wirkungsnachweiskonto": {
+      "related": [
+        "wirkungssteuer",
+        "wstg",
+        "woek-id",
+        "produkt-id",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "wirkungssteuerkonto-als-moralische-gesamtbilanz",
+        "steuerkonto",
+        "social-credit",
+        "personenbewertung"
       ]
     },
     "wirkungsnetz": {
@@ -29595,9 +29927,11 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
+        "katechon",
         "ausloeser",
         "iooi",
-        "wirkungsnachweis"
+        "wirkungsnachweis",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "wirkung",
@@ -30137,6 +30471,19 @@
         "personenregister-oder-social-credit-ausgeschlossen"
       ]
     },
+    "wirkungsrelevanz-statt-rechtsform": {
+      "related": [
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-und-materialitaetsanalyse",
+        "wirkungsbewertung",
+        "attributionsforschung",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuse": [
+        "universelle-rechts-oder-pruefpflicht-woek-scope-und-staatlicher-anwendungsbereich-sind-getrennt",
+        "staatliche-attribution-politischer-kontext-oder-oeffentliches-eigentum-allein-genuegt-nicht-fuer-zurechnung"
+      ]
+    },
     "wirkungsrelevanz-und-materialitaetsanalyse": {
       "related": [
         "wirkungsempfaenger-und-stakeholder-landkarte",
@@ -30336,7 +30683,8 @@
         "rueckstellfaehigkeit",
         "daempfungsfaehigkeit",
         "anpassungsfaehigkeit",
-        "transformationsfaehigkeit"
+        "transformationsfaehigkeit",
+        "klimaanpassungsmanagerin"
       ],
       "doNotConfuse": [
         "robustheit",
@@ -30498,10 +30846,12 @@
         "financial-materiality",
         "impact-management",
         "wirkungscontrolling",
+        "katechon",
         "ausloeser",
         "wirkmechanismus",
         "iooi",
-        "nebenwirkung"
+        "nebenwirkung",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "finanzrisiko-finanzielle-auswirkungen-koennen-folge-von-wirkungsrisiken-sein-aber-wirkungsrisiken-beginnen-frueher",
@@ -30576,7 +30926,8 @@
         "positive-netto-wirkung",
         "wirkpfad",
         "wirkung",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "wirkungsfenster"
       ],
       "doNotConfuse": [
         "wirkungslenkung-sie-setzt-ziele-schutzgrenzen-und-instrumentregeln",
@@ -30706,8 +31057,11 @@
     "wirkungssteuer": {
       "related": [
         "wstg",
+        "wirkungsnachweiskonto",
         "wustg",
         "wirkungsrueckkopplung",
+        "scorecard",
+        "reverse-merit-order",
         "haushaltsneutralitaet",
         "energiearmut",
         "mobilitaetsarmut",
@@ -30732,7 +31086,6 @@
         "wirkungsgutschrift",
         "wirkungslenkung",
         "finalscore",
-        "reverse-merit-order",
         "produktscorecard",
         "wirkungsregister",
         "wirkungsgrenze",
@@ -30773,6 +31126,9 @@
       "doNotConfuse": [
         "co2-steuer",
         "pigou-steuer",
+        "universelle-supersteuer",
+        "automatische-score-steuer",
+        "personenbewertung",
         "co2-steuer-betrifft-ein-feld-wirkungssteuer-ist-mehrdimensional",
         "umweltsteuer-oekologisch-fokussiert-wirkungssteuer-umfasst-mensch-planet-und-demokratie",
         "strafsteuer-ziel-ist-rueckkopplung-nicht-bestrafung",
@@ -30786,11 +31142,15 @@
       "related": [
         "wirkungssteuer",
         "wstg",
+        "wirkungsnachweiskonto",
         "wustg",
+        "scorecard",
+        "woek-id",
+        "produkt-id",
+        "wr",
         "wirkungsumsatzsteuer",
         "wirkungseinkommensteuer",
         "wirkungshaushalt",
-        "wr",
         "wirkungsregister",
         "wirkungsaudit",
         "wirkungsassurance",
@@ -30814,7 +31174,6 @@
         "produktscorecard",
         "produktdaten",
         "digitaler-produktpass",
-        "woek-id",
         "wirkungsindikator",
         "benchmark",
         "archetyp",
@@ -30838,6 +31197,7 @@
       "doNotConfuse": [
         "wustg",
         "geltendes-steuerrecht",
+        "automatische-score-steuer",
         "wirkungssteuer-steuerlogik-wstg-rechtlicher-rahmen",
         "wustg-produkt-und-umsatzsteuerlogik-wstg-ist-breiter",
         "steuerreform-aendert-saetze-wstg-aendert-bemessungsmassstab",
@@ -31816,6 +32176,23 @@
         "kpi-kann-beliebig-sein-woek-id-ist-wirkungsoekonomisch-normiert"
       ]
     },
+    "nwi": {
+      "related": [
+        "nationaler-wohlfahrtsindex",
+        "netto-wirkung",
+        "finalscore",
+        "t-sroi",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "wirkungscontrolling"
+      ],
+      "doNotConfuse": [
+        "nationaler-wohlfahrtsindex",
+        "t-sroi",
+        "finalscore",
+        "sroi"
+      ]
+    },
     "woek-ids": {
       "related": [
         "woek-id",
@@ -31996,11 +32373,15 @@
     "wstg": {
       "related": [
         "wirkungssteuer",
+        "wirkungsnachweiskonto",
         "wustg",
+        "scorecard",
+        "wr",
         "soziale-marktwirtschaft"
       ],
       "doNotConfuse": [
-        "wustg"
+        "wustg",
+        "geltendes-recht"
       ]
     },
     "wu-wei": {
@@ -32190,6 +32571,17 @@
       "doNotConfuse": [
         "methode-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-workshopkonsens-darf-betroffene-negative-wirkung-machtasymmetrien-oder-minderheitsvoten-nicht-ausblenden"
       ]
+    },
+    "zielbezug-und-wirkung": {
+      "related": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "wirkung",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
+        "sdg-sdgplus-referenzrahmen"
+      ],
+      "doNotConfuse": []
     },
     "zielkonflikt": {
       "related": [

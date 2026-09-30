@@ -180,7 +180,8 @@ for (const file of libraryFiles) {
   const title = getTitle(html);
   const description = getDescription(html);
   const expectedCanonical = `${SITE_URL}${routeFor(file)}`;
-  const meta = detailsBySlug.get(detailSlugFor(file));
+  const entry = detailsBySlug.get(detailSlugFor(file));
+  const meta = entry?.readerEdition ? { ...entry, ...entry.readerEdition } : entry;
   if (!title || pathText.test(title)) fail(errors, file, "Seitentitel fehlt oder enthält Pfadtext.");
   if (!description || pathText.test(description)) fail(errors, file, "Beschreibung fehlt oder enthält Pfadtext.");
   if (getCanonical(html) !== expectedCanonical) fail(errors, file, `Canonical muss ${expectedCanonical} sein.`);
@@ -227,8 +228,14 @@ for (const alias of readerRouteAliases) {
     continue;
   }
   const targetHtml = fs.readFileSync(targetFile, "utf8");
-  if (hasNoindex(targetHtml) || isRedirect(targetHtml)) {
-    fail(errors, targetFile, `Alias-Ziel ${alias.to} muss eine indexierbare Lesefassung bleiben.`);
+  const targetEntry = detailsBySlug.get(detailSlugFor(targetFile));
+  const targetStatus = String(targetEntry?.readerEdition?.status || targetEntry?.status || "").toLocaleLowerCase("de-DE");
+  const historicalTarget = ["ersetzt", "archiviert"].includes(targetStatus);
+  if (isRedirect(targetHtml)) {
+    fail(errors, targetFile, `Alias-Ziel ${alias.to} muss unmittelbar eine Lesefassung sein.`);
+  }
+  if (historicalTarget ? !hasNoindexFollow(targetHtml) : hasNoindex(targetHtml)) {
+    fail(errors, targetFile, `Alias-Ziel ${alias.to} braucht ${historicalTarget ? "noindex,follow für seine historische Edition" : "eine indexierbare aktuelle Lesefassung"}.`);
   }
   const relativeAliasHref = `../${routeSlug(alias.from)}/`;
   const aliasReaderRoot = path.resolve(readerRootFor(sourceFile));

@@ -1,14 +1,21 @@
 # WÖk Terminology - historischer strukturierter Auszug aus v1.5 (15.08.2026)
-# Führende Vollfassung: Begriffsleitfaden v1.7 (21.08.2026). Neue Staatsarchitektur siehe reference-manifest.yaml.
-# Volltext-Erläuterungen: TERMINOLOGY.md · Bei Konflikt gilt die aktuelle Vollfassung v1.7; Glossar nur soweit leitfadenkonform.
+# Führende Vollfassung: Begriffsleitfaden v1.8 (30.09.2026). Neue Staatsarchitektur siehe reference-manifest.yaml.
+# Volltext-Erläuterungen: TERMINOLOGY.md · Bei Konflikt gilt die aktuelle Vollfassung v1.8; Glossar nur soweit leitfadenkonform.
 meta:
   leading_source: content/documents/online/woek-begriffsleitfaden-fuehrend.inc
-  leading_pdf: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf
+  leading_pdf: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf
+  leading_version: "1.8"
+  precision_source: content/glossary/imports/begriffsleitfaden-v1.8.json
   version: "1.5"
   date: "2026-08-15"
   last_verified: "2026-08-15"
 
 terms:
+  - id: wirkungsfenster
+    label: Wirkungsfenster
+    definition: "Bereich der Anwendung einer Maßnahme, in dem sie unter benannten Bedingungen ausreichend zum Wirkungsziel beitragen kann, ohne festgelegte Wirkungsgrenzen zu verletzen."
+    source: content/glossary/imports/begriffsleitfaden-v1.8.json
+    note: "Anwendungsbezogene Hypothese, kein Wirkungsnachweis, Universalstandard oder automatischer Entscheid. Therapeutisches Fenster ist nur medizinische Analogie, kein Alias. Fehlende Angaben bleiben offen."
   - id: wirkung
     label: Wirkung
     definition: "Tatsächliche Veränderung von Zuständen; positiv, negativ oder neutral, immer mit Bezugspunkt."

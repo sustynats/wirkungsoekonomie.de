@@ -139,15 +139,16 @@ ${renderHeader(BASE)}
         </div>
         <div class="card-grid three">
           <article class="card"><p class="card-kicker">1</p><h3 class="card-title">Was löst etwas aus?</h3><p class="card-text">Eine Entscheidung, ein Produkt, eine Regel oder eine Formulierung kann ein System verändern.</p></article>
-          <article class="card"><p class="card-kicker">2</p><h3 class="card-title">Was könnte sich verändern?</h3><p class="card-text">Wir beschreiben mögliche Folgen und Risiken. Was möglich ist, ist noch nicht eingetreten.</p></article>
+          <article class="card"><p class="card-kicker">2</p><h3 class="card-title">Was könnte sich verändern?</h3><p class="card-text">Wir beschreiben mögliche Folgen, Risiken und Anwendungsbedingungen: Welche Ausgestaltung, Intensität und Kombination könnte ausreichend zum Ziel beitragen? Was möglich ist, ist noch nicht eingetreten.</p></article>
           <article class="card"><p class="card-kicker">3</p><h3 class="card-title">Was hat sich tatsächlich verändert?</h3><p class="card-text">Wir vergleichen reale Zustände mit der Ausgangslage. Eine erbrachte Leistung allein ist noch keine Wirkung.</p></article>
           <article class="card"><p class="card-kicker">4</p><h3 class="card-title">Wie sicher wissen wir das?</h3><p class="card-text">Wir prüfen Quellen, Daten und andere mögliche Ursachen. Eine beobachtete Veränderung beweist noch nicht, wer sie verursacht hat.</p></article>
-          <article class="card"><p class="card-kicker">5</p><h3 class="card-title">Wie bewerten wir es – und wo liegen rote Linien?</h3><p class="card-text">Wir legen den Maßstab für Mensch, Planet und Demokratie offen. Schwere Schäden dürfen nicht mit Vorteilen an anderer Stelle verrechnet werden.</p></article>
-          <article class="card"><p class="card-kicker">6</p><h3 class="card-title">Was folgt daraus?</h3><p class="card-text">Die Erkenntnis soll die nächste Entscheidung verbessern. Neue Daten können zeigen, dass Annahmen oder Regeln geändert werden müssen.</p></article>
+          <article class="card"><p class="card-kicker">5</p><h3 class="card-title">Wie bewerten wir es – und wo liegen rote Linien?</h3><p class="card-text">Wir legen den Maßstab für Mensch, Planet und Demokratie offen. Schutzgrenzen, Verteilung und Nebenfolgen begrenzen die Anwendung. Schwere Schäden dürfen nicht mit Vorteilen an anderer Stelle verrechnet werden.</p></article>
+          <article class="card"><p class="card-kicker">6</p><h3 class="card-title">Was folgt daraus?</h3><p class="card-text">Die Erkenntnis soll die nächste Entscheidung verbessern. Wir legen Beobachtung, Zuständigkeit und Prüfzeitpunkt fest. Neue Daten können zeigen, dass Annahmen oder die Ausgestaltung geändert werden müssen.</p></article>
         </div>
       </section>
 
       <section class="section" id="rueckkopplung" aria-labelledby="rueckkopplung-title">
+        <p>Am fiktiven Küchenbeispiel wird das greifbar: <a href="/verstehen/wirkungsfenster/">Weniger Essen wegwerfen und ausreichende Versorgung sichern</a>. Das Wirkungsfenster verbindet Bedingungen, Schutz und Nachsteuerung innerhalb dieser sechs Fragen; es ist eine überprüfbare Hypothese.</p>
         <div class="prose">
           <p class="hero-kicker">Rückkopplung</p>
           <h2 id="rueckkopplung-title">Die Wirkungsökonomie ersetzt keine Demokratie</h2>

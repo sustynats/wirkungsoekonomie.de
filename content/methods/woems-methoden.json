@@ -2629,10 +2629,13 @@
         "Wirkungsprofil und Empfänger vergleichen.",
         "Grenzen, Risiken und Resilienz prüfen.",
         "Empfehlung mit Gegenargumenten formulieren.",
-        "Entscheidung, Auflagen, Monitoring und Review dokumentieren."
+        "Entscheidung, Auflagen, Monitoring und Review dokumentieren.",
+        "Das angenommene Wirkungsfenster mit Zielbeitrag, veränderbaren Parametern, Voraussetzungen und offenen Fragen im bestehenden Memo dokumentieren.",
+        "Zielbeitrag, Schutzgrenzen, Evidenz und zuständige Entscheidung getrennt festhalten; kein Gesamtscore oder automatischer Entscheid."
       ],
       "outputs": [
-        "Standardmemo mit Problem, Optionen, Evidenz, Wirkung, Grenzen, Risiken, Entscheidung, Auflagen und Lernplan."
+        "Standardmemo mit Problem, Optionen, Evidenz, Wirkung, Grenzen, Risiken, Entscheidung, Auflagen und Lernplan.",
+        "Fallbezogener Prüfvermerk zum Wirkungsfenster innerhalb der vorhandenen Arbeitsfläche, mit Annahmen, Befunden, Schutz, Verantwortlichkeit und Version."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
@@ -2640,20 +2643,26 @@
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
         "Optionen und Nulloption sind enthalten.",
         "Unsicherheit und Gegenargumente sind sichtbar.",
-        "Reviewdatum und Konsequenzen sind festgelegt."
+        "Reviewdatum und Konsequenzen sind festgelegt.",
+        "Zahlenbereiche nur mit tragfähiger Grundlage; fehlende Angaben bleiben offen, nicht null oder neutral."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
         "Memo nicht auf Ampeln reduzieren.",
-        "Entscheidung darf nicht durch Informationsmenge verschleiert werden."
+        "Entscheidung darf nicht durch Informationsmenge verschleiert werden.",
+        "Schutzgrenzen nicht verschieben. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; schwere Schäden zwischen Gruppen, Feldern, Orten oder Zeiten nicht verrechnen."
       ],
       "schnittstellen": {
-        "bautAuf": [],
+        "bautAuf": [
+          "A05",
+          "C07"
+        ],
         "fuehrtZu": [
           "H02",
           "H03",
-          "H07"
+          "H07",
+          "F14"
         ]
       },
       "canvasRef": "canvas-E10"
@@ -3391,10 +3400,13 @@
         "Monetäre und nicht monetäre Signale entwickeln.",
         "Verteilungs-, Fairness- und Manipulationsrisiken prüfen.",
         "Gegenanreize, Rebound und Gaming analysieren.",
-        "Pilot, KII und Korrekturregel festlegen."
+        "Pilot, KII und Korrekturregel festlegen.",
+        "Ausgestaltung, Intensität, Dauer und Kombination des Signals als Wirkungsfenster-Hypothese mit Voraussetzungen beschreiben; die Folgen des Steuerungsinstruments getrennt von der Gegenstandsbewertung prüfen.",
+        "Im vorhandenen Canvas Zielbeitrag, Baseline/Gegenfaktum und Alternativen einschließlich Unterlassen dokumentieren; geplante Anwendung von tatsächlicher Umsetzung unterscheiden."
       ],
       "outputs": [
-        "Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring."
+        "Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring.",
+        "Fallbezogener Prüfvermerk zum Wirkungsfenster innerhalb der vorhandenen Arbeitsfläche, mit Annahmen, Befunden, Schutz, Verantwortlichkeit und Version."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
@@ -3402,22 +3414,27 @@
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
         "Anreiz folgt Wirkmechanismus.",
         "Verteilung und Kaufkraft werden berücksichtigt.",
-        "Gaming und Rebound haben Gegenmaßnahmen."
+        "Gaming und Rebound haben Gegenmaßnahmen.",
+        "Zahlenbereiche nur mit tragfähiger Grundlage; fehlende Angaben bleiben offen, nicht null oder neutral."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
         "Menschen nicht manipulativ bewerten oder nudgen.",
-        "Preis allein löst keine Infrastruktur- oder Machtprobleme."
+        "Preis allein löst keine Infrastruktur- oder Machtprobleme.",
+        "Schutzgrenzen nicht verschieben. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; schwere Schäden zwischen Gruppen, Feldern, Orten oder Zeiten nicht verrechnen."
       ],
       "schnittstellen": {
         "bautAuf": [
           "B07",
-          "F03"
+          "F03",
+          "A05",
+          "C07"
         ],
         "fuehrtZu": [
           "H02",
-          "H05"
+          "H05",
+          "F14"
         ]
       },
       "canvasRef": "canvas-F13"
@@ -3941,10 +3958,13 @@
         "Wirkungs- und Betriebs-Hypothesen festlegen.",
         "Betroffene, Schutz und Ethik einbeziehen.",
         "KII, Daten und Vergleich planen.",
-        "Stop-, Redesign- und Skalierungskriterien freigeben."
+        "Stop-, Redesign- und Skalierungskriterien freigeben.",
+        "Das Wirkungsfenster als widerlegbare Hypothese mit Ausgestaltung, Intensität, Dauer und Kombination erproben; geplante und tatsächliche Anwendung getrennt erfassen.",
+        "Beobachtungszeit, Baseline/Gegenfaktum, Voraussetzungen und Grenzen der Übertragbarkeit dokumentieren; Stabilisierung oder vermiedene Verschlechterung nicht ohne Gegenfaktum zurechnen."
       ],
       "outputs": [
-        "Pilot-Charta mit Scope, Hypothesen, Population, KII, Risiken, Schutz, Governance, Stop und Skalierungskriterien."
+        "Pilot-Charta mit Scope, Hypothesen, Population, KII, Risiken, Schutz, Governance, Stop und Skalierungskriterien.",
+        "Fallbezogener Prüfvermerk zum Wirkungsfenster innerhalb der vorhandenen Arbeitsfläche, mit Annahmen, Befunden, Schutz, Verantwortlichkeit und Version."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
@@ -3952,13 +3972,15 @@
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
         "Pilot hat Vergleich und Baseline soweit möglich.",
         "Schutz und Stop-Rechte sind klar.",
-        "Skalierung ist nicht voreingestellt."
+        "Skalierung ist nicht voreingestellt.",
+        "Zahlenbereiche nur mit tragfähiger Grundlage; fehlende Angaben bleiben offen, nicht null oder neutral."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
         "Pilot nicht als politisches Verzögerungsinstrument nutzen.",
-        "Erfolgsdefinition nicht nachträglich verschieben."
+        "Erfolgsdefinition nicht nachträglich verschieben.",
+        "Schutzgrenzen nicht verschieben. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; schwere Schäden zwischen Gruppen, Feldern, Orten oder Zeiten nicht verrechnen."
       ],
       "schnittstellen": {
         "bautAuf": [
@@ -3966,13 +3988,16 @@
           "F08",
           "F09",
           "E07",
-          "H01"
+          "H01",
+          "A05",
+          "C07"
         ],
         "fuehrtZu": [
           "H03",
           "H05",
           "H06",
-          "H07"
+          "H07",
+          "F14"
         ]
       },
       "canvasRef": "canvas-H02"
@@ -4143,10 +4168,13 @@
         "Schwellen und Kombinationen festlegen.",
         "Verifikation und Fehlalarmbehandlung planen.",
         "Eskalation, Schutz und Stop-Recht regeln.",
-        "Wirksamkeit des Frühwarnsystems testen."
+        "Wirksamkeit des Frühwarnsystems testen.",
+        "Für das angenommene Wirkungsfenster Beobachtungsgrößen, Zeitverzug, Prüfzeitpunkt und Verantwortlichkeit verbinden; Schutzgrenzen mit Quelle und Zuständigkeit dokumentieren.",
+        "Signale zu tatsächlicher Anwendung, Verteilung, Nebenfolgen und Grenzverletzungen prüfen; fehlende Beobachtung weder als null noch als neutral ausgeben."
       ],
       "outputs": [
-        "Frühwarnregister mit Signal, Schwelle, Quelle, Owner, Eskalationsweg, Sofortschutz und Lernschleife."
+        "Frühwarnregister mit Signal, Schwelle, Quelle, Owner, Eskalationsweg, Sofortschutz und Lernschleife.",
+        "Fallbezogener Prüfvermerk zum Wirkungsfenster innerhalb der vorhandenen Arbeitsfläche, mit Annahmen, Befunden, Schutz, Verantwortlichkeit und Version."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
@@ -4154,24 +4182,29 @@
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
         "Frühsignale sind führend und kombinierbar.",
         "Eskalation hat Zeitvorgaben.",
-        "Fehlalarme werden gelernt, nicht bestraft."
+        "Fehlalarme werden gelernt, nicht bestraft.",
+        "Zahlenbereiche nur mit tragfähiger Grundlage; fehlende Angaben bleiben offen, nicht null oder neutral."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
         "Nur leicht messbare technische Signale wählen.",
-        "Whistleblower-Signale nicht als unvalidierte Störung abtun."
+        "Whistleblower-Signale nicht als unvalidierte Störung abtun.",
+        "Schutzgrenzen nicht verschieben. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; schwere Schäden zwischen Gruppen, Feldern, Orten oder Zeiten nicht verrechnen."
       ],
       "schnittstellen": {
         "bautAuf": [
           "D10",
           "B12",
-          "H05"
+          "H05",
+          "A05",
+          "C07"
         ],
         "fuehrtZu": [
           "E10",
           "H07",
-          "H08"
+          "H08",
+          "F14"
         ]
       },
       "canvasRef": "canvas-H06"
@@ -4193,10 +4226,13 @@
         "Abweichungen und unerwartete Wirkungen analysieren.",
         "Single-, Double- und Triple-Loop-Lernen unterscheiden.",
         "Änderungen, Stop oder Skalierung entscheiden.",
-        "Register, Methoden und Verantwortlichkeiten aktualisieren."
+        "Register, Methoden und Verantwortlichkeiten aktualisieren.",
+        "Angenommenes Wirkungsfenster, geplante Anwendung, tatsächliche Umsetzung und beobachtete Veränderungen getrennt vergleichen.",
+        "Bei ausbleibender Wirkung zuerst Umsetzung, Mechanismus, Voraussetzungen, Daten und Zeitverzug prüfen; Anpassung, Zuständigkeit und neue Version begründen, nicht automatisch den Einsatz erhöhen."
       ],
       "outputs": [
-        "Reviewprotokoll mit Evidenz, Abweichung, Beitrag, Nebenwirkung, Lernstufe und verbindlichen Änderungen."
+        "Reviewprotokoll mit Evidenz, Abweichung, Beitrag, Nebenwirkung, Lernstufe und verbindlichen Änderungen.",
+        "Fallbezogener Prüfvermerk zum Wirkungsfenster innerhalb der vorhandenen Arbeitsfläche, mit Annahmen, Befunden, Schutz, Verantwortlichkeit und Version."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
@@ -4204,13 +4240,15 @@
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
         "Betroffenenfeedback ist gleichwertige Evidenzquelle.",
         "Review führt zu Entscheidungen.",
-        "Erfolge werden ebenfalls auf Nebenwirkungen geprüft."
+        "Erfolge werden ebenfalls auf Nebenwirkungen geprüft.",
+        "Zahlenbereiche nur mit tragfähiger Grundlage; fehlende Angaben bleiben offen, nicht null oder neutral."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
         "Retrospektive nicht auf Prozessstimmung reduzieren.",
-        "Fehler nicht individualisieren."
+        "Fehler nicht individualisieren.",
+        "Schutzgrenzen nicht verschieben. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; schwere Schäden zwischen Gruppen, Feldern, Orten oder Zeiten nicht verrechnen."
       ],
       "schnittstellen": {
         "bautAuf": [
@@ -4218,7 +4256,9 @@
           "H03",
           "H04",
           "H05",
-          "H06"
+          "H06",
+          "A05",
+          "C07"
         ],
         "fuehrtZu": [
           "A01",
@@ -4629,23 +4669,28 @@
         "Reversible Experimente und vorbereitende Optionen entwickeln.",
         "Pfadabhängigkeiten, Lock-ins und Übergangskosten bewerten.",
         "Trigger für Ausbau, Wechsel, Pause oder Exit definieren.",
-        "Portfolio, Budgets und Verantwortlichkeiten zuordnen."
+        "Portfolio, Budgets und Verantwortlichkeiten zuordnen.",
+        "Varianten des angenommenen Wirkungsfensters unter wechselnden Voraussetzungen vergleichen; auch Unterlassen und Alternativen untersuchen.",
+        "Mehrdimensionale, unbekannte oder leere Anwendungsbereiche offen dokumentieren; Grenzen der Übertragbarkeit und begründete Anlässe für Anpassung festhalten."
       ],
       "outputs": [
-        "Adaptiver Pfad mit Sofortmaßnahmen, Realoptionen, Entscheidungspunkten, Triggern und Stop-/Skalierungsregeln."
+        "Adaptiver Pfad mit Sofortmaßnahmen, Realoptionen, Entscheidungspunkten, Triggern und Stop-/Skalierungsregeln.",
+        "Fallbezogener Prüfvermerk zum Wirkungsfenster innerhalb der vorhandenen Arbeitsfläche, mit Annahmen, Befunden, Schutz, Verantwortlichkeit und Version."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
         "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
         "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
         "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
-        "Trigger für Kurswechsel sind beobachtbar."
+        "Trigger für Kurswechsel sind beobachtbar.",
+        "Zahlenbereiche nur mit tragfähiger Grundlage; fehlende Angaben bleiben offen, nicht null oder neutral."
       ],
       "schutzregeln": [
         "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
         "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
-        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+        "Ein Lieblingsszenario nicht als Prognose ausgeben.",
+        "Schutzgrenzen nicht verschieben. Nichtkompensation und Reverse Merit Order gelten auch für das Instrument; schwere Schäden zwischen Gruppen, Feldern, Orten oder Zeiten nicht verrechnen."
       ],
       "schnittstellen": {
         "bautAuf": [
@@ -4654,9 +4699,12 @@
           "A03",
           "A04",
           "A05",
-          "A06"
+          "A06",
+          "C07"
         ],
-        "fuehrtZu": []
+        "fuehrtZu": [
+          "F14"
+        ]
       },
       "canvasRef": "canvas-I06"
     },

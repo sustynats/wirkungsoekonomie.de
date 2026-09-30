@@ -3,6 +3,15 @@
 Chronik aller wesentlichen Änderungen an der WÖk-Wissensbasis (`docs/woek-knowledge/`).
 Regel: Jede größere Änderung am Ökosystem (neues Tool, geänderte API, neue Methodik, neuer führender Begriff, neues Portal, neue Datenquelle, neue Akademiefunktion) wird hier mit Datum eingetragen.
 
+## 2026-09-30 - Wirkungsfenster (PR, noch nicht veröffentlicht)
+
+- Führende Arbeitsfassung auf kumulative v1.8 auf Basis von v1.7 angehoben; frühere Originale bleiben erhalten.
+- Wirkungsfenster als ein anwendungsbezogener WÖk-Präzisierungsbegriff, nicht als Kennzahl, Wirkungsnachweis oder automatische Freigabe ergänzt.
+- Kanonische Definition: `content/glossary/imports/begriffsleitfaden-v1.8.json`; Erklärung: `/verstehen/wirkungsfenster/`, Anwendung im selben Dokument unter `#anwendung`.
+- Medizinische Quelle ausschließlich als Analogie eingeordnet. Keine Änderung bestehender Rechenlogik, IDs, Schutzprinzipien oder politischer Bewertung.
+- F13, I06, E10, H02, H06 und H07 innerhalb bestehender Arbeitsflächen präzisiert; keine neue Methode oder globalen Pflichtfelder.
+- Spätere Buchauflagen und Kurse getrennt behandeln. Historische Buch-PDFs, Fachpapiere, Podcast-Audio und Transkript nicht nachträglich umgeschrieben.
+
 ## 2026-08-14
 
 - Phase 0 „WÖk Knowledge Bootstrap": Wissensbasis `docs/woek-knowledge/` initial angelegt (Claude).

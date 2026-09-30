@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-09-05T21:54:05.598Z
+Stand: 2026-09-30T20:04:07.803Z
 
 ## § 7 Bundeshaushaltsordnung (BHO)
 
@@ -5128,7 +5128,9 @@ N06 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefit
 
 ## Impact-Controlling
 
-Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.
+Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.
+
+Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.
 
 Impact-Controlling ist die operative Form des Wirkungscontrollings. Es übersetzt überprüfte Wirkungsdaten in Entscheidungen über Investitionen, Produkte, Beschaffung, Programme und Portfolios. Es misst nicht nur Aktivität oder Output, sondern die tatsächliche Veränderung von Zuständen und führt die Ergebnisse in Steuerung und Lernen zurück.
 
@@ -11133,7 +11135,7 @@ Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise,
 
 Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.
 
-Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen - nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
+Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
 
 ## Social Economy / Solidarity Economy
 
@@ -12517,7 +12519,7 @@ Transformationswellen entstehen nicht durch einen einzelnen Auslöser, sondern d
 
 ## Transformationswirkung
 
-Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen - etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade - verändert.
+Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen – etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade – verändert.
 
 Transformationswirkung bezeichnet eine tatsächliche Zustandsveränderung, die über einen Einzelfall hinaus die Struktur eines Systems verändert: etwa Regeln, Standards, Anreize, Infrastrukturen, Marktbedingungen oder institutionelle Routinen. Ob eine solche Veränderung eingetreten ist, muss mit Wirkpfad, Systemgrenze, Zeitraum, Vergleichsmaßstab, Daten und Gegenhypothesen begründet werden. Eine erwartete strukturelle Veränderung ist zunächst Transformationspotenzial oder eine Szenarioannahme. Sie darf nicht als eingetretene Wirkung ausgegeben werden.
 
@@ -14255,6 +14257,12 @@ Ein Wirkungsfeld ist ein thematischer Bereich, in dem Wirkungen entstehen, beoba
 
 Ein Wirkungsfeld ist ein thematischer Bereich, in dem Wirkungen entstehen, beobachtet und bewertet werden, etwa Gesundheit, Klima, Bildung oder Demokratie.
 
+## Wirkungsfenster
+
+Bereich der Anwendung einer Maßnahme, in dem sie unter benannten Bedingungen ausreichend zum Wirkungsziel beitragen kann, ohne festgelegte Wirkungsgrenzen zu verletzen.
+
+Das Wirkungsfenster bezeichnet den kontext- und zeitabhängigen Bereich der Ausgestaltung, Intensität, Dauer und Kombination einer Maßnahme, in dem unter offengelegten Annahmen ein zuvor begründeter Zielbeitrag und positive Netto-Wirkung für Mensch, Planet und Demokratie erwartet werden können, ohne festgelegte Wirkungsgrenzen zu verletzen. Vor der Anwendung wird dieser Bereich als überprüfbare Hypothese beschrieben. Beobachtung, Evidenzprüfung und Rückkopplung dienen dazu, diese Annahme zu überprüfen und bei Bedarf die Anwendung zu verändern. Die Abgrenzung kann offen bleiben; nicht für jede Maßnahme lässt sich ein solcher Bereich begründen.
+
 ## Wirkungsfinanzierung
 
 Wirkungsfinanzierung richtet öffentliche Finanzierung an Wirkungsziel, Wirkungsprüfung, Realressourcen, Risiko und Rückkopplung aus.
@@ -14525,7 +14533,7 @@ Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditi
 
 Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.
 
-Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder - nur mit Rechtsgrundlage - Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
+Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
 
 ## Wirkungslücke
 
@@ -14599,9 +14607,9 @@ Die Bezeichnung ist kein staatlich verliehener akademischer Grad, keine Berufs- 
 
 ## Wirkungsökonomie
 
-Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.
+Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.
 
-Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.
+Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
@@ -15025,7 +15033,7 @@ E09 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlich
 
 Wirkungsrückkopplung ist der Lernmechanismus, der beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurückführt.
 
-Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück - etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.
+Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück – etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.
 
 ## Wirkungsschule
 

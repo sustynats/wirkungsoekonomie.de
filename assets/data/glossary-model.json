@@ -31496,7 +31496,8 @@
         "netto-wirkung",
         "wirkungsgrenze",
         "nichtkompensationsprinzip",
-        "folgewirkung"
+        "folgewirkung",
+        "wirkungsfenster"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -46032,7 +46033,7 @@
       "term": "Social Credit",
       "slug": "social-credit",
       "shortDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.",
-      "longDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen - nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.",
+      "longDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.",
       "synonyms": [
         "Social Credit",
         "Sozialkredit",
@@ -51659,7 +51660,7 @@
       "id": "transformationswirkung",
       "term": "Transformationswirkung",
       "slug": "transformationswirkung",
-      "shortDefinition": "Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen - etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade - verändert.",
+      "shortDefinition": "Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen – etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade – verändert.",
       "longDefinition": "Transformationswirkung bezeichnet eine tatsächliche Zustandsveränderung, die über einen Einzelfall hinaus die Struktur eines Systems verändert: etwa Regeln, Standards, Anreize, Infrastrukturen, Marktbedingungen oder institutionelle Routinen. Ob eine solche Veränderung eingetreten ist, muss mit Wirkpfad, Systemgrenze, Zeitraum, Vergleichsmaßstab, Daten und Gegenhypothesen begründet werden. Eine erwartete strukturelle Veränderung ist zunächst Transformationspotenzial oder eine Szenarioannahme. Sie darf nicht als eingetretene Wirkung ausgegeben werden.",
       "synonyms": [
         "Transformationswirkung",
@@ -55743,7 +55744,8 @@
         "wirkungsraum",
         "wirkpfad",
         "wirkungsrisiko",
-        "netto-wirkung"
+        "netto-wirkung",
+        "wirkungsfenster"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -56605,7 +56607,8 @@
         "wirkungstraeger",
         "kognitive-dissonanz",
         "resignifikation",
-        "katechon"
+        "katechon",
+        "wirkungsfenster"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -56781,7 +56784,8 @@
         "folgencheck",
         "alarm-frame",
         "salienzsteuerung",
-        "ankereffekt"
+        "ankereffekt",
+        "wirkungsfenster"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -59459,6 +59463,38 @@
       "version": "1.0"
     },
     {
+      "id": "wirkungsfenster",
+      "term": "Wirkungsfenster",
+      "slug": "wirkungsfenster",
+      "shortDefinition": "Bereich der Anwendung einer Maßnahme, in dem sie unter benannten Bedingungen ausreichend zum Wirkungsziel beitragen kann, ohne festgelegte Wirkungsgrenzen zu verletzen.",
+      "longDefinition": "Das Wirkungsfenster bezeichnet den kontext- und zeitabhängigen Bereich der Ausgestaltung, Intensität, Dauer und Kombination einer Maßnahme, in dem unter offengelegten Annahmen ein zuvor begründeter Zielbeitrag und positive Netto-Wirkung für Mensch, Planet und Demokratie erwartet werden können, ohne festgelegte Wirkungsgrenzen zu verletzen. Vor der Anwendung wird dieser Bereich als überprüfbare Hypothese beschrieben. Beobachtung, Evidenzprüfung und Rückkopplung dienen dazu, diese Annahme zu überprüfen und bei Bedarf die Anwendung zu verändern. Die Abgrenzung kann offen bleiben; nicht für jede Maßnahme lässt sich ein solcher Bereich begründen.",
+      "synonyms": [
+        "Wirkungsfenster"
+      ],
+      "relatedTerms": [
+        "wirkstoff",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsmonitoring",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungshypothesen-register",
+        "nebenwirkung",
+        "wechselwirkung",
+        "counterfactual"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Steuerungsbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.8"
+    },
+    {
       "id": "wirkungsfinanzierung",
       "term": "Wirkungsfinanzierung",
       "slug": "wirkungsfinanzierung",
@@ -59991,7 +60027,8 @@
         "produktwirkung",
         "produktdaten",
         "responsible-marketing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "wirkungsfenster"
       ],
       "relatedMethods": [
         [
@@ -60305,7 +60342,8 @@
         "wirkungspilot-design",
         "wirkungsreview-und-lernende-retrospektive",
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "wirkungsfenster"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -61194,7 +61232,7 @@
       "term": "Wirkungslenkung",
       "slug": "wirkungslenkung",
       "shortDefinition": "Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.",
-      "longDefinition": "Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder - nur mit Rechtsgrundlage - Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.",
+      "longDefinition": "Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.",
       "synonyms": [
         "Wirkungslenkung",
         "wirkungsorientierte Steuerung",
@@ -61212,7 +61250,8 @@
         "wirkungsrisiko",
         "wirkungsdaten",
         "wirkungsrat",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "wirkungsfenster"
       ],
       "relatedMethods": [
         [
@@ -61387,7 +61426,8 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungsoekonomie"
+        "wirkungsoekonomie",
+        "wirkungsfenster"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -62666,7 +62706,8 @@
         "katechon",
         "ausloeser",
         "iooi",
-        "wirkungsnachweis"
+        "wirkungsnachweis",
+        "wirkungsfenster"
       ],
       "relatedMethods": [
         [
@@ -64088,7 +64129,8 @@
         "ausloeser",
         "wirkmechanismus",
         "iooi",
-        "nebenwirkung"
+        "nebenwirkung",
+        "wirkungsfenster"
       ],
       "relatedMethods": [
         [
@@ -64247,7 +64289,7 @@
       "term": "Wirkungsrückkopplung",
       "slug": "wirkungsrueckkopplung",
       "shortDefinition": "Wirkungsrückkopplung ist der Lernmechanismus, der beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurückführt.",
-      "longDefinition": "Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück - etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.",
+      "longDefinition": "Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück – etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.",
       "synonyms": [
         "Wirkungsrückkopplung",
         "Impact Feedback",
@@ -64265,7 +64307,8 @@
         "positive-netto-wirkung",
         "wirkpfad",
         "wirkung",
-        "nichtkompensationsprinzip"
+        "nichtkompensationsprinzip",
+        "wirkungsfenster"
       ],
       "relatedMethods": [
         [

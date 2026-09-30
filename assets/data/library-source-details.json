@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-06T08:39:56.932Z",
-  "count": 3101,
+  "generatedAt": "2026-09-30T20:06:09.401Z",
+  "count": 3111,
   "entries": [
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
@@ -54,6 +54,19 @@
       "source": "download-or-document",
       "detailUrl": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-6-pdf/",
       "primaryUrl": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf"
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-7-pdf",
+      "detailSlug": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-7-pdf",
+      "title": "WÖk-Begriffsleitfaden v1.7 (historisch)",
+      "type": "Glossar",
+      "status": "archiviert",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-7-pdf/",
+      "primaryUrl": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf"
     },
     {
       "id": "woemm-2-0",
@@ -162,7 +175,16 @@
     {
       "id": "leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html",
       "detailSlug": "leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html",
-      "title": "WÖk-Begriffsleitfaden führend v1.7",
+      "readerEdition": {
+        "title": "WÖk-Begriffsleitfaden v1.0 (historische Lesefassung)",
+        "status": "archiviert",
+        "sourceVersion": "v1.0",
+        "sourceDate": "2026-05-21",
+        "historicalNotice": "Standhinweis vom 30. September 2026: Dieser ältere Kapitel-Export enthält den ursprünglichen Begriffsstand vom 21. Mai 2026. Er ist nicht die kumulative Fassung v1.8 und bleibt für frühere Fundstellen erhalten.",
+        "successorUrl": "bibliothek/woek-begriffsleitfaden-fuehrend/",
+        "successorLabel": "Kumulativen Begriffsleitfaden v1.8 lesen"
+      },
+      "title": "WÖk-Begriffsleitfaden führend v1.8",
       "type": "Glossar",
       "status": "führend",
       "historicalNotice": "",
@@ -1263,6 +1285,19 @@
       "source": "online-version",
       "detailUrl": "/bibliothek/eintraege/online-version-verstehen-sdgs-sdgplus-agenda-2030-index-html/",
       "primaryUrl": "verstehen/sdgs-sdgplus/agenda-2030/"
+    },
+    {
+      "id": "online-version-referenz-aktualisierung-index-html",
+      "detailSlug": "online-version-referenz-aktualisierung-index-html",
+      "title": "Aktualisierung",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "online-version",
+      "detailUrl": "/bibliothek/eintraege/online-version-referenz-aktualisierung-index-html/",
+      "primaryUrl": "referenz/aktualisierung/"
     },
     {
       "id": "online-version-portale-digitalisierung-ki-wirkungsdatenraeume-algorithmische-fairness-index-html",
@@ -28695,6 +28730,32 @@
       "primaryUrl": "wirkungsfelder/wirtschaft-unternehmen/dossiers/risikomanagement_wirkungsrisiko_erm/"
     },
     {
+      "id": "download-or-document-assets-pdf-journal-rne-2026-ki-klimaschutz-zukunft-der-arbeit-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-rne-2026-ki-klimaschutz-zukunft-der-arbeit-pdf",
+      "title": "Rne 2026 KI klimaschutz zukunft der arbeit",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-rne-2026-ki-klimaschutz-zukunft-der-arbeit-pdf/",
+      "primaryUrl": "assets/pdf/journal/rne-2026-ki-klimaschutz-zukunft-der-arbeit.pdf"
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-rne-2026-merz-wohlstand-braucht-wirkung-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-rne-2026-merz-wohlstand-braucht-wirkung-pdf",
+      "title": "Rne 2026 merz wohlstand braucht wirkung",
+      "type": "Grundlagenwerk",
+      "status": "aktuell",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-rne-2026-merz-wohlstand-braucht-wirkung-pdf/",
+      "primaryUrl": "assets/pdf/journal/rne-2026-merz-wohlstand-braucht-wirkung.pdf"
+    },
+    {
       "id": "online-version-portale-transformation-uebergaenge-implementierung-roadmap-2030-2050-index-html",
       "detailSlug": "online-version-portale-transformation-uebergaenge-implementierung-roadmap-2030-2050-index-html",
       "title": "Roadmap 2030",
@@ -30892,6 +30953,19 @@
       "primaryUrl": "assets/pdf/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.pdf"
     },
     {
+      "id": "download-or-document-assets-pdf-journal-was-ein-tv-duell-bewirkt-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-was-ein-tv-duell-bewirkt-pdf",
+      "title": "Was ein tv duell bewirkt",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-was-ein-tv-duell-bewirkt-pdf/",
+      "primaryUrl": "assets/pdf/journal/was-ein-tv-duell-bewirkt.pdf"
+    },
+    {
       "id": "download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf",
       "detailSlug": "download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf",
       "title": "Wellen tiefen modell oeffentliche kommunikation",
@@ -31007,6 +31081,19 @@
       "source": "online-version",
       "detailUrl": "/bibliothek/eintraege/online-version-portale-kritik-missverstaendnisse-schutzarchitektur-widerstand-neue-massstaebe-in/",
       "primaryUrl": "portale/kritik-missverstaendnisse-schutzarchitektur/widerstand-neue-massstaebe/"
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wie-wallonien-die-extreme-rechte-klein-haelt-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-wie-wallonien-die-extreme-rechte-klein-haelt-pdf",
+      "title": "Wie wallonien die extreme rechte klein haelt",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-wie-wallonien-die-extreme-rechte-klein-haelt-pdf/",
+      "primaryUrl": "assets/pdf/journal/wie-wallonien-die-extreme-rechte-klein-haelt.pdf"
     },
     {
       "id": "download-or-document-assets-pdf-journal-wie-wirksam-ist-das-sondervermoegen-wirklich-pdf",
@@ -31345,6 +31432,19 @@
       "source": "online-version",
       "detailUrl": "/bibliothek/eintraege/online-version-wirkungsfelder-index-html/",
       "primaryUrl": "wirkungsfelder/"
+    },
+    {
+      "id": "online-version-verstehen-wirkungsfenster-index-html",
+      "detailSlug": "online-version-verstehen-wirkungsfenster-index-html",
+      "title": "Wirkungsfenster",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "online-version",
+      "detailUrl": "/bibliothek/eintraege/online-version-verstehen-wirkungsfenster-index-html/",
+      "primaryUrl": "verstehen/wirkungsfenster/"
     },
     {
       "id": "online-version-dokumente-wirkungsfinanzpolitik-index-html",
@@ -36911,6 +37011,19 @@
       "primaryUrl": "assets/pdf/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.pdf"
     },
     {
+      "id": "download-or-document-assets-pdf-journal-aktionsplan-nachhaltigkeit-2026-20-missionen-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-aktionsplan-nachhaltigkeit-2026-20-missionen-pdf",
+      "title": "Aktionsplan nachhaltigkeit 2026 20 missionen",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-aktionsplan-nachhaltigkeit-2026-20-missionen-pdf/",
+      "primaryUrl": "assets/pdf/journal/aktionsplan-nachhaltigkeit-2026-20-missionen.pdf"
+    },
+    {
       "id": "online-version-portale-migration-vielfalt-arbeitsmarkt-fachkraefte-demografie-index-html",
       "detailSlug": "online-version-portale-migration-vielfalt-arbeitsmarkt-fachkraefte-demografie-index-html",
       "title": "Arbeitsmarkt fachkraefte demografie",
@@ -38755,6 +38868,32 @@
       "source": "download-or-document",
       "detailUrl": "/bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-20-ris-2/",
       "primaryUrl": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/20_risiko_schutzmatrix 2.pdf"
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-rne-2026-nachhaltigkeitsziele-verlaessliche-politik-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-rne-2026-nachhaltigkeitsziele-verlaessliche-politik-pdf",
+      "title": "Rne 2026 nachhaltigkeitsziele verlaessliche politik",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-rne-2026-nachhaltigkeitsziele-verlaessliche-politik-pdf/",
+      "primaryUrl": "assets/pdf/journal/rne-2026-nachhaltigkeitsziele-verlaessliche-politik.pdf"
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-sachsen-anhalt-wahlergebnis-signal-fuer-europa-pdf",
+      "detailSlug": "download-or-document-assets-pdf-journal-sachsen-anhalt-wahlergebnis-signal-fuer-europa-pdf",
+      "title": "Sachsen anhalt wahlergebnis signal fuer europa",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": "",
+      "source": "download-or-document",
+      "detailUrl": "/bibliothek/eintraege/download-or-document-assets-pdf-journal-sachsen-anhalt-wahlergebnis-signal-fuer-europa-pdf/",
+      "primaryUrl": "assets/pdf/journal/sachsen-anhalt-wahlergebnis-signal-fuer-europa.pdf"
     },
     {
       "id": "online-version-verstehen-sdgs-sdgplus-sdg-11-nachhaltige-staedte-gemeinden-index-html",

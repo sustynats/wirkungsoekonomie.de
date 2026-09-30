@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "state-sustainability-architecture-20260821"
 MATERIALITY_MARKER = "state-sustainability-materiality-scope-20260821"
-CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.7"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.8"
 CURRENT_GUIDE_SURFACES = [
     "fuer/akademie.html",
     "fuer/buergerinnen.html",
