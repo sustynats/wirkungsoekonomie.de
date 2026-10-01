@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-01T07:00:43.372Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-01T07:18:34.043Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/tankrabatt-gilt-seit-mitternacht-sprit-schon-deutlich-gunstiger-insolvenzverfahren-bei-v-74d0be/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/tankrabatt-gilt-seit-mitternacht-sprit-schon-deutlich-gunstiger-insolvenzverfahren-bei-v-74d0be/",
+      "title": "Laut SWR: Boeing kollidiert mit Feuerwehr, A81 gesperrt und weitere Meldungen aus Baden-Württemberg",
+      "summary": "Der SWR bündelt Meldungen zu Verkehr, Gesundheit, Wohnen, Sicherheit, Energie und Beschäftigung in Baden-Württemberg. Mehrere Angaben sind vorläufig oder beruhen auf zugeschriebenen Aussagen; unabhängige Bestätigungen liegen nicht vor.",
+      "date_published": "2026-10-01T07:17:59.000Z",
+      "date_modified": "2026-10-01T07:17:59.000Z",
+      "_woek_released_at": "2026-10-01T07:23:37.825Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-zwischen-rentenstreit-parteikrise-und-kriegsalltag-1331ef/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-zwischen-rentenstreit-parteikrise-und-kriegsalltag-1331ef/",
@@ -37,8 +68,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/dresden-mutmasslicher-sexualstraftater-bei-festnahme-durch-schuss-verletzt-19fc35/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/dresden-mutmasslicher-sexualstraftater-bei-festnahme-durch-schuss-verletzt-19fc35/",
-      "title": "Laut Polizei: 51-Jähriger bei Festnahme in Dresden durch Schuss verletzt",
-      "summary": "Ein 51-Jähriger wurde laut Polizei bei einer Festnahme in Dresden durch einen Schuss verletzt. Der Ablauf und die Rechtmäßigkeit des Dienstwaffengebrauchs werden noch ermittelt.",
+      "title": "Laut Polizei: 51-Jähriger bei Festnahme in Dresden durch Schuss schwer verletzt",
+      "summary": "Bei einer Festnahme in Dresden wurde ein 51-Jähriger laut Polizei durch einen Schuss schwer verletzt. Die Ermittlungen prüfen auch, ob der Einsatz der Dienstwaffe rechtmäßig war.",
       "date_published": "2026-10-01T05:16:30.000Z",
       "date_modified": "2026-10-01T05:16:30.000Z",
       "_woek_released_at": "2026-10-01T05:31:33.769Z",
@@ -55,12 +86,12 @@
         },
         "planet": {
           "magnitude": 0,
-          "direction": "neutral",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         }
       }
