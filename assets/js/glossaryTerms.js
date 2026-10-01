@@ -41556,7 +41556,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Controlling von Netto-Wirkung",
       "Wirkungssteuerung im Unternehmen"
     ],
-    "definition": "Wirkungscontrolling ist das Controlling-System, das Wirkung über KII, Scorecards, NWI, T-SROI, Datenqualität und Rückkopplung in Unternehmensentscheidungen übersetzt.",
+    "definition": "Wirkungscontrolling ist das Controlling-System, das Wirkung über KII, Scorecards, WÖk-Netto-Wirkungsindex, T-SROI, Datenqualität und Rückkopplung in Unternehmensentscheidungen übersetzt.",
     "url": "/begriffe/wirkungscontrolling/",
     "priority": 1927,
     "autoLinkAllowed": true,
