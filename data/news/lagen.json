@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-30T16:00:00.000Z",
+  "updated_at": "2026-10-01T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-01-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-01",
+      "window_from": "2026-09-30T16:00:00.000Z",
+      "window_to": "2026-10-01T04:00:00.000Z",
+      "stand": "2026-10-01T04:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 1,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1d7fda049bef9",
+          "slug": "trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9",
+          "title": "Laut France 24: Trump und Selenskyj sprechen über möglichen Weg zum Ende des Ukraine-Kriegs",
+          "state": "fortgeschrieben",
+          "at": "2026-10-01T03:43:28.027Z",
+          "score": 7.727
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Laut stern: Erneuter Tankrabatt tritt in Kraft",
+          "state": "neu",
+          "at": "2026-10-01T02:29:44.425Z",
+          "score": 5.8746
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Selenskyj erneuert Vorschlag für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-01T01:12:40.291Z",
+          "score": 5.5176
+        }
+      ]
+    },
     {
       "lage_id": "2026-09-30-abendlage",
       "slot": "abendlage",
