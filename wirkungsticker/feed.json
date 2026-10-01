@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-01T09:18:45.036Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-01T09:41:19.306Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -151,6 +151,37 @@
         "planet": {
           "magnitude": 2,
           "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/dresden-prohlis-schusse-bei-verhaftung-51-jahriger-schwer-verletzt-695483/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/dresden-prohlis-schusse-bei-verhaftung-51-jahriger-schwer-verletzt-695483/",
+      "title": "Laut stern: 51-Jähriger bei Verhaftung in Dresden-Prohlis schwer verletzt",
+      "summary": "Der stern berichtet von einem eskalierten Verhaftungseinsatz in Dresden-Prohlis, bei dem ein 51-Jähriger schwer verletzt worden sein soll. Ablauf, Ursache der Schüsse und Rechtmäßigkeit des Einsatzes sind auf Grundlage der einzigen Quelle offen.",
+      "date_published": "2026-09-30T19:03:13.000Z",
+      "date_modified": "2026-09-30T19:03:13.000Z",
+      "_woek_released_at": "2026-10-01T09:49:45.699Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
           "status": "potential"
         },
         "democracy": {
@@ -3722,7 +3753,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
       "title": "Laut France 24: Trump und Selenskyj beraten in New York über mögliche Schritte zum Ende des Ukraine-Kriegs",
-      "summary": "Trump und Selenskyj sprachen laut France 24 in New York über den Ukraine-Krieg. Eine Energieabsprache und eine mögliche zeitlich begrenzte Waffenruhe bleiben unbestätigt.",
+      "summary": "Trump und Selenskyj trafen sich laut France 24 in New York zum Ukraine-Krieg. Eine Energieabsprache und eine mögliche begrenzte Waffenruhe bleiben unbestätigt.",
       "date_published": "2026-09-23T09:30:31.000Z",
       "date_modified": "2026-09-23T09:30:31.000Z",
       "_woek_released_at": "2026-09-23T10:12:19.347Z",
@@ -3739,13 +3770,13 @@
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "positive",
           "status": "potential"
         }
       }
