@@ -11,6 +11,7 @@ matrix=content/audits/state-sustainability-architecture-url-matrix
 mkdir -p reports
 rm -f reports/generated-release-audit.txt
 node scripts/news/audit-source-integrity.mjs --strict
+node --test tests/site/glossary-nwi-release.test.mjs
 python3 tools/audit_state_sustainability_architecture_fast.py --root . --output "$matrix.json" --markdown "$matrix.md"
 python3 tools/audit_state_sustainability_support_files.py --root . --matrix "$matrix.json" --markdown "$matrix.md"
 python3 tools/finalize_state_sustainability_matrix.py --root . --matrix "$matrix.json" --markdown "$matrix.md"
