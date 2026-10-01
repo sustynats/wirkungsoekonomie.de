@@ -127,10 +127,20 @@ export async function redaktionsauftraege({ session = null, now = new Date().toI
       }
     } finally { await bridge.store.release(true).catch(() => {}); }
   }
+  // Der Monitor braucht keine Schreibspur. Auch bei blockierter Warteschlange
+  // bleibt so pruefbar, ob ein GitHub-Lauf oder ein lokaler Server sie haelt.
+  // Nur Betriebsfelder ausgeben, niemals beliebige Server-/Auftragsobjekte.
+  const lock = betrieb?.run_lock;
+  const run_lock = lock ? {
+    lane: ['import', 'discovery'].includes(lock.lane) ? lock.lane : null,
+    process_holds_lock: typeof lock.process_holds_lock === 'boolean' ? lock.process_holds_lock : null,
+    owner: /^\d+:\d+$/.test(lock.owner || '') ? lock.owner : null,
+    acquired_at: /^\d{4}-\d{2}-\d{2}T[\d:.]+Z$/.test(lock.acquired_at || '') && Number.isFinite(Date.parse(lock.acquired_at)) ? lock.acquired_at : null,
+  } : null;
   return { at: now, offen: betrieb?.open_count ?? null, offene_auftraege: betrieb?.open_personal_count ?? null,
-    verbrauchte_auftraege: (auftraege || []).filter((befund) => befund.versuch?.verbraucht).length,
+    verbrauchte_auftraege: auftraege ? auftraege.filter((befund) => befund.versuch?.verbraucht).length : null,
     aeltester_offener_auftrag_minuten: Math.round(betrieb?.oldest_open_minutes ?? 0),
-    warteschlange_unlesbar: grund, auftraege };
+    warteschlange_unlesbar: grund, run_lock, auftraege };
 }
 
 if (process.argv[1] && process.argv[1].endsWith('redaktionsauftraege.mjs')) {

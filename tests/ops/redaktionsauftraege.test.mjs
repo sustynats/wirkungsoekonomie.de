@@ -55,6 +55,19 @@ test('eine belegte Importspur macht den Befund nicht wertlos', async () => {
   assert.equal(ergebnis.warteschlange_unlesbar, 'BRIDGE_RUN_LOCKED');
   assert.equal(ergebnis.offene_auftraege, 2, 'die Zahl offener Auftraege kommt ohne Spur');
   assert.deepEqual(calls, [], 'eine nicht erhaltene Spur wird nicht freigegeben');
+  assert.equal(ergebnis.verbrauchte_auftraege, null, 'nicht lesbar ist nicht null verbrauchte Auftraege');
+});
+
+test('die belegte Spur nennt nur verifizierbare Betriebsmetadaten, keine privaten Inhalte', async () => {
+  const belegt = { monitor: async () => ({ run_lock: { lane: 'import', process_holds_lock: true,
+    owner: '36911742512:1', acquired_at: now, secret: 'GEHEIMER AUFTRAGSTEXT' } }),
+    store: { acquire: async () => { throw new Error('BRIDGE_RUN_LOCKED'); } } };
+  const ergebnis = await redaktionsauftraege({ session: belegt, now });
+  assert.deepEqual(ergebnis.run_lock, { lane: 'import', process_holds_lock: true,
+    owner: '36911742512:1', acquired_at: now });
+  belegt.monitor = async () => ({ run_lock: { lane: 'GEHEIM', owner: 'GEHEIM', acquired_at: 'GEHEIM' } });
+  assert.deepEqual((await redaktionsauftraege({ session: belegt, now })).run_lock,
+    { lane: null, process_holds_lock: null, owner: null, acquired_at: null });
 });
 
 test('der Befund-Lauf hat seinen vollstaendigen Abhaengigkeitsbaum im sparse checkout', () => {
