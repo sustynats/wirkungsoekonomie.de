@@ -97,6 +97,14 @@ Doppelläufe.
 
 ## Kostenregeln
 
+- **Oktober-Freigabe vom 01.10.2026:** Natalie hat die zuletzt vorgeschlagene interne
+  Ausgabengrenze von 110 EUR freigegeben (`NEWS_AI_BUDGET_OCTOBER_EXTENSION`). Sie gilt
+  ab 01.10.2026, 04:15:56 UTC, bis 01.11.2026, 00:00 UTC, entsprechend dem
+  Monatswechsel des Kostenjournals. Keine rueckwirkende Aenderung der September-
+  oder frueheren Oktober-Freigaben. Dies ist eine Obergrenze, kein Ausgabenziel,
+  kein Guthabenkauf und keine Aenderung des bei OpenAI eingerichteten automatischen
+  Aufladens. Steuer-/Wechselkursreserven, Budgetstufen, Durchsatzgrenzen, gespeicherte
+  Kosten, Qualitaetsgates und persoenliche Freigaben bleiben unveraendert.
 - **Höchstens zwei bezahlte Versuche je Eingabestand.** `WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT=2`:
   Scheitert das Gate an einem strukturellen Fehler (fehlende Felder, Faktoren, Formate), folgt nach
   15 Minuten Backoff genau ein zweiter Versuch mit denselben Quellen (mit luna rund 1 Cent).
