@@ -1,8 +1,8 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4972**
+- Sitemap routes: **5004**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14986**
+- Extra tracked source HTML not in sitemap: **15016**
 - Routes with non-default #253 action: **3590**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **278**
 
@@ -861,7 +861,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/intertemporale-freiheitssicherung/ | `begriffe/intertemporale-freiheitssicherung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/invention/ | `begriffe/invention/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/investitionsschuld/ | `begriffe/investitionsschuld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/iooi/ | `begriffe/iooi/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
+| https://wirkungsoekonomie.de/begriffe/iooi/ | `begriffe/iooi/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/ipbes/ | `begriffe/ipbes/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ipcc/ | `begriffe/ipcc/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/iro/ | `begriffe/iro/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2017,7 +2017,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsabwehr/ | `begriffe/wirkungsabwehr/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsanalyse/ | `begriffe/wirkungsanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsanalyse-von-sprache/ | `begriffe/wirkungsanalyse-von-sprache/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsarchitektur/ | `begriffe/wirkungsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, evaluation |
+| https://wirkungsoekonomie.de/begriffe/wirkungsarchitektur/ | `begriffe/wirkungsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsassurance/ | `begriffe/wirkungsassurance/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsassurance-audit-und-methodenpruefung/ | `begriffe/wirkungsassurance-audit-und-methodenpruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsaudit/ | `begriffe/wirkungsaudit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -2026,7 +2026,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsbasiertes-value-pricing/ | `begriffe/wirkungsbasiertes-value-pricing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsbedingte-stranded-assets/ | `begriffe/wirkungsbedingte-stranded-assets/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsbelasteter-kredit/ | `begriffe/wirkungsbelasteter-kredit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsbewertung/ | `begriffe/wirkungsbewertung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/wirkungsbewertung/ | `begriffe/wirkungsbewertung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, dns |
 | https://wirkungsoekonomie.de/begriffe/wirkungsbilanz-und-leistungszerlegung/ | `begriffe/wirkungsbilanz-und-leistungszerlegung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsbiografie/ | `begriffe/wirkungsbiografie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsblindheit/ | `begriffe/wirkungsblindheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
@@ -2085,7 +2085,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungskapazitaet-des-staates/ | `begriffe/wirkungskapazitaet-des-staates/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungskapital/ | `begriffe/wirkungskapital/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskapital-und-investitionsgate/ | `begriffe/wirkungskapital-und-investitionsgate/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungskette/ | `begriffe/wirkungskette/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
+| https://wirkungsoekonomie.de/begriffe/wirkungskette/ | `begriffe/wirkungskette/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsklasse/ | `begriffe/wirkungsklasse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskommunikation/ | `begriffe/wirkungskommunikation/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungskompass/ | `begriffe/wirkungskompass/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2127,7 +2127,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsorientiertes-operating-model/ | `begriffe/wirkungsorientiertes-operating-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspaedagogik/ | `begriffe/wirkungspaedagogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspartnerschaft/ | `begriffe/wirkungspartnerschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkpfad/ | `begriffe/wirkpfad/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen, evaluation |
+| https://wirkungsoekonomie.de/begriffe/wirkpfad/ | `begriffe/wirkpfad/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/wirkungspflicht-des-eigentums/ | `begriffe/wirkungspflicht-des-eigentums/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspilot-design/ | `begriffe/wirkungspilot-design/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspionier/ | `begriffe/wirkungspionier/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -3843,11 +3843,11 @@ Signals are review candidates, not automatic errors.
 - `begriffe/wirkungs-bip/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungs-konversion-von-altkapital/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsabwehr/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
-- `begriffe/wirkungsarchitektur/index.html` - wirkungsblind, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
+- `begriffe/wirkungsarchitektur/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsassurance/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsaudit/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsbasierter-handel/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
-- `begriffe/wirkungsbewertung/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
+- `begriffe/wirkungsbewertung/index.html` - wirkungsblind, dns - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsblindheit/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsbudget/index.html` - wirkungsblind, alternativen, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungscontrolling/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3888,8 +3888,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1382**
-- Combined matrix items (routes + extra HTML + support): **21340**
+- Tracked support text files inventoried: **1386**
+- Combined matrix items (routes + extra HTML + support): **21406**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3948,7 +3948,8 @@ Signals are review candidates, not automatic errors.
 | `content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | - |
 | `content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
 | `content/glossary/imports/impact-controlling-rechenlogiken.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | novelty_or_absence |
-| `content/glossary/imports/iooi-wirkungsarchitektur.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen, evaluation |
+| `content/glossary/imports/iooi-wirkpfad-clarification-2026-09-30.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | dns, alternativen, evaluation |
+| `content/glossary/imports/iooi-wirkungsarchitektur.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | dns, alternativen, evaluation |
 | `content/glossary/imports/katechon.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | - |
 | `content/glossary/imports/klimaanpassungsmanagement.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | - |
 | `content/glossary/imports/legacy-detail-definitions.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
@@ -3980,6 +3981,7 @@ Signals are review candidates, not automatic errors.
 | `content/methods/woems-methoden.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/news/manual/2026-09-09_kurzschluss-claudia-kemfert_buch-und-wirkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/news/manual/2026-09-09_werte-maja-goepel_buch-und-wirkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/news/manual/2026-09-28_arctic-meltdown-robert-habeck_buch-und-wirkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/news/media-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/news/reviews/2026-09-07-entzauberung-durch-macht.json` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
 | `content/news/reviews/2026-09-07-sachsen-anhalt-sonderanalyse.json` | support_text | ADD_SOURCE_LINKS | enap, dns, alternativen, evaluation |
@@ -4339,6 +4341,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/import/import-wissensgesellschaft-wirkungsgesellschaft.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/journal/publish-lohnkosten-besser-werden.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/journal/publish-wirkstoff-narrative.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
+| `scripts/lib/impact-architecture-visual.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/lib/impact-course.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/lib/method-version-indexability.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns |
 | `scripts/methods/import-woems-source.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung |
@@ -4407,7 +4410,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/site/apply-website-architecture-v21.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/site/build-home-explainer.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/site/build-institut-teaser.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
-| `scripts/site/build-iooi-wirkungsarchitektur.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `scripts/site/build-iooi-wirkungsarchitektur.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
 | `scripts/site/build-parlament-info.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/site/build-reference-update.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap |
 | `scripts/site/build-so-wirkt-wirkungsoekonomie.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
@@ -4465,7 +4468,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **21341**
+- Combined reviewed items: **21407**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
