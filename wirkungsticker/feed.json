@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-01T11:42:46.520Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-01T12:01:31.897Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -203,6 +203,37 @@
         "Meinung & Analyse"
       ],
       "_woek_type": "Meinung & Analyse"
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/schusse-in-treptow-kopenick-zwei-manner-schwer-verletzt-68e4d5/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/schusse-in-treptow-kopenick-zwei-manner-schwer-verletzt-68e4d5/",
+      "title": "Laut Polizei: Zwei Männer bei Schüssen in Treptow-Köpenick schwer verletzt",
+      "summary": "Bei Schüssen in Baumschulenweg wurden laut Polizei zwei Männer verletzt, ein Begleiter blieb unverletzt. Die Verdächtigen sind nach dem vorliegenden Bericht geflüchtet; Motiv und Ablauf bleiben offen.",
+      "date_published": "2026-09-30T14:08:20.000Z",
+      "date_modified": "2026-09-30T14:08:20.000Z",
+      "_woek_released_at": "2026-10-01T12:09:47.184Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/schusswaffengewalt-wieder-schusse-in-berlin-polizei-sucht-tater-5a3270/",
@@ -3752,8 +3783,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
-      "title": "Laut France 24: Trump und Selenskyj beraten in New York über den Ukraine-Krieg",
-      "summary": "Trump und Selenskyj trafen sich laut France 24 in New York zum Ukraine-Krieg. Eine Energieabsprache und eine mögliche begrenzte Waffenruhe sind in der vorliegenden Quelle nicht unabhängig bestätigt.",
+      "title": "Laut France 24 beraten Trump und Selenskyj in New York über den Ukraine-Krieg",
+      "summary": "Trump und Selenskyj sprachen laut France 24 in New York über den Ukraine-Krieg. Eine Energieabsprache und eine zeitweise Waffenruhe bleiben unbestätigt.",
       "date_published": "2026-09-23T09:30:31.000Z",
       "date_modified": "2026-09-23T09:30:31.000Z",
       "_woek_released_at": "2026-09-23T10:12:19.347Z",
@@ -3765,18 +3796,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
-          "direction": "positive",
+          "magnitude": 1,
+          "direction": "mixed",
           "status": "potential"
         },
         "planet": {
           "magnitude": 1,
-          "direction": "positive",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "positive",
+          "magnitude": 1,
+          "direction": "mixed",
           "status": "potential"
         }
       }
