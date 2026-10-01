@@ -23,14 +23,15 @@ test('monitor sparse checkout includes the complete local module dependency grap
     visited.add(file);
     assert.ok(checkout.includes(file), `Monitor checkout is missing ${file}`);
     const code = fs.readFileSync(path.join(root, file), 'utf8');
-    for (const match of code.matchAll(/(?:from\s*|import\s*\(\s*|import\s*)['"](\.[^'"]+\.mjs)['"]/g)) {
+    // Shared browser/server helpers may use .js, not only .mjs.
+    for (const match of code.matchAll(/(?:from\s*|import\s*\(\s*|import\s*)['"](\.[^'"]+\.[cm]?js)['"]/g)) {
       visit(path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1])));
     }
     // Nicht nur Module: am 17.09.2026 las ein Test die Ticker-Workflow-Datei
     // per new URL(...), sie fehlte im Checkout, und der Monitor schwieg 30 Stunden.
     for (const match of code.matchAll(/new URL\(\s*['"](\.\.?\/[^'"]+)['"]\s*,\s*import\.meta\.url\s*\)/g)) {
       const target = path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1]));
-      if (target.endsWith('/') || target === '.' || target.endsWith('.mjs')) { if (target.endsWith('.mjs')) visit(target); continue; }
+      if (target.endsWith('/') || target === '.' || /\.[cm]?js$/.test(target)) { if (/\.[cm]?js$/.test(target)) visit(target); continue; }
       assert.ok(checkout.includes(target), `Monitor checkout is missing ${target} (read by ${file})`);
     }
   }
