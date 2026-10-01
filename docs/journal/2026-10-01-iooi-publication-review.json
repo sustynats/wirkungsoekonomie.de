@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-01",
+  "article": "https://wirkungsoekonomie.de/blog/iooi-wirkungsoekonomie-was-hat-die-strecke-bewirkt.html",
+  "manuscript_version": "1.2",
+  "original_filename": "IOOI_Wirkungsoekonomie_Journal_Endfassung.docx",
+  "original_sha256": "0824299e0b806d3ff6d001ece75f1b7f18061bfaaefa24d0aacbcff7021c7ac6",
+  "original_archive": "Unverändert im lokalen privaten Archiv; nicht im öffentlichen Release.",
+  "manuscript": "Alle Artikelabsätze, Überschriften, Rechenschritte, Quellen und Versionshinweise erhalten. Keine inhaltlichen Korrekturen.",
+  "typesetting": "Bestehende Journalvorlage, Quellenanker, Inhaltsverzeichnis, responsive Formeldarstellung; Quellenverzeichnis auf eigener PDF-Seite. Modellhinweis als sichtbare Notiz statt ausgeblendeter Alt-Statusklasse.",
+  "images": {
+    "title_sha256": "2ecde07a9080aa54228a75f797ca0a9df1c8d94a658cb0116d9afee4eac10967",
+    "embedded_diagram_sha256": "2fb0528d5ce40bd812b3bd0fd73c510270f95c78c34dc17832815b29211783a3",
+    "caption": "Titelillustration kennzeichnet positive Folgen als mögliche Ergebnisse, nicht als Wirkungsnachweis.",
+    "unchanged": true
+  },
+  "pdf": {
+    "pages": 11,
+    "mode": "Bestehende textorientierte Journal-Lesefassung; Hinweis auf Abbildungen in der Onlinefassung.",
+    "sha256": "a0f339379224fc32a047da9b81078d558004929f6fe18d7165881fb5edc81c46"
+  },
+  "source_verification": {
+    "urls": 14,
+    "all_retrieved": true,
+    "checks": [
+      "Aktionsplan S.9-10: Input, Output, Outcome, Impact; FWK und Phasenbezug",
+      "BMF: qualitative Impact-Angaben, kausale Zurechnung, Nachsteuerung",
+      "OECD gedruckte S.36,53-54,60-61: Impact, Results Chain, Theory of Change und Transformative Effects",
+      "PHINEO, Bertelsmann, Impact Frontiers und AMEC: bestehende Methodik und Lernschleifen",
+      "Agenda 2030 Absatz9 und SDG16.10.1: Demokratiebezug und Schutz des Journalismus",
+      "Differenz-von-Differenzen: Annahmen und Grenzen als Methodenreferenz",
+      "WÖk-Begriffsleitfaden v1.7 als ausdrücklich eigene Modellreferenz"
+    ]
+  },
+  "arithmetic": {
+    "observed_minutes": 4,
+    "baseline_goal_progress": 0.6666666667,
+    "estimated_attributed_minutes": 3,
+    "annual_hours": 100000,
+    "annual_side_effect_hours": -20000,
+    "annual_balance": 80000,
+    "sensitivity_hours": [
+      63333.33333333,
+      96666.66666667
+    ],
+    "ten_year_balance_hours": 720000,
+    "cost_per_hour": 166.6666666667
+  },
+  "checks": [
+    "Word-Manuskript vollständig gelesen und gerendert",
+    "Alle elf finalen PDF-Seiten visuell geprüft",
+    "HTML-Text gegen alle Artikelabsätze geprüft",
+    "68 interne Quellen- und Abschnittsanker geprüft",
+    "162 Journalartikel: Index und neue PDF-Zuordnung korrekt",
+    "Suchindex und Neuigkeitenintegration geprüft"
+  ],
+  "deployment": "GitHub Pages; Live-Abnahme nach erfolgreichem Deployment"
+}
