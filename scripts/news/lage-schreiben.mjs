@@ -9,7 +9,7 @@ import { readRepositoryJson } from './newsroom-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildLage, upsertLage, dueLage, lageDefinition } from './lage.mjs';
+import { buildLage, upsertLage, dueLage, lageDefinition, lageWindow } from './lage.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const STORIES_FILE = path.join(ROOT, 'data/news/stories.json');
@@ -21,6 +21,9 @@ export function schreibeLage({ slot, now = new Date().toISOString(), root = ROOT
   const gewaehlt = slot || dueLage(now);
   if (!gewaehlt) return { status: 'keine_lage_faellig', now };
   if (!lageDefinition(gewaehlt)) return { status: 'slot_unbekannt', slot: gewaehlt };
+  const window = lageWindow(gewaehlt, now);
+  if (!window || Date.parse(now) < Date.parse(window.to))
+    return { status: 'keine_lage_faellig', slot: gewaehlt, now, publication_at: window?.to || null };
   const stories = (readRepositoryJson(storiesFile, 'utf8').stories || [])
     .filter((story) => story.published && story.analysis && story.listed !== false);
   const lage = buildLage({ slot: gewaehlt, now, stories });
