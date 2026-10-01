@@ -16342,7 +16342,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "I-O-O-I",
       "Input Output Outcome Impact"
     ],
-    "definition": "IOOI strukturiert Input, Output, Outcome und Impact. Es ist weder das Grundmodell noch ein notwendiger Bestandteil der Wirkungsökonomie.",
+    "definition": "IOOI ordnet Input, Output, Outcome und Impact. Die WÖk setzt bei Problem und Ziel früher an, präzisiert diese Teilperspektive und geht mit Systemprüfung und Rückkopplung darüber hinaus.",
     "url": "/begriffe/iooi/",
     "priority": 755,
     "autoLinkAllowed": true,

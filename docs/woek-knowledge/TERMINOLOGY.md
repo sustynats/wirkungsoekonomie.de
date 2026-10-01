@@ -38,7 +38,13 @@ Web-Präzisierung vom 30.09.2026: IOOI strukturiert eine Ergebniskette innerhalb
 
 Nichtkompensation ist das Schutzprinzip; Reverse Merit Order ist eine Bewertungslogik, die dieses Prinzip operationalisieren kann. Neutral, ambivalent und offen beziehungsweise nicht ausreichend bewertbar sind getrennte Einordnungen.
 
+## Präzisierung vom 01.10.2026: früher ansetzen, innerhalb präzisieren, weitergehen
+
+IOOI ist keine Konkurrenz, sondern eine integrierbare Teilperspektive innerhalb der WÖk. Die Aussage vom 30.09. zum früheren Start ist zu präzisieren: Problem Review und Goal Review setzen im Prüf- und Entscheidungsprozess vor der Auswahl von Inputs an. Die WÖk geht mit Systemprüfung und Rückkopplung in wirtschaftliche und gesellschaftliche Entscheidungen über die IOOI-Darstellung hinaus. Das ist ein breiterer Prüfumfang, nicht bloß eine längere Kausalkette. Zugleich gelten Zustandsbezug, Baseline, Gegenfaktum, Zurechnung, Unsicherheit, Vermeidung von Doppelzählung, Nebenfolgen und Schutzgrenzen innerhalb eines IOOI-kompatiblen Abschnitts. IOOI ist selbst keine einheitliche Rechenvorschrift. Methodisch genauer spezifizierte Anforderungen gegenüber verkürzten Anwendungen sind von empirisch nachgewiesener Überlegenheit gegenüber sorgfältiger Evaluation zu unterscheiden. Maßgeblich ist `content/site/iooi-precision-2026-10-01.json`; Buch und Fachpapiere erhalten ein datiertes Addendum, keine stille historische Umschreibung.
+
 ## Resilienzsystematik & Nachhaltigkeit
+
+Die IOOI-Präzisierung vom 01.10.2026 umfasst auch den gesellschaftlichen Geltungsbereich: Eine Results Chain kann gesellschaftliche Veränderungen darstellen, stellt aber aus sich heraus keinen gesellschaftlichen Referenz-, Bewertungs- oder Steuerungsrahmen bereit. Die WÖk behandelt SDG+ (eigene Erweiterung, keine UN-Kategorie), Demokratie, Kommunikation und Medien ausdrücklich. Resonanzraum, Potenzial und Risiko dürfen dabei nicht zu gemessener Kommunikationswirkung umgedeutet werden.
 
 Führende Definition (v1.3, Abschnitt „Führende Definition Nachhaltigkeit"):
 > **„Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."**

@@ -11,8 +11,8 @@ export function ExampleCards(examples) {
   return `<div class="card-grid three">${examples.map(example => `<article class="card"><p class="card-kicker">${escapeHtml(example.label)}</p><h3 class="card-title">${escapeHtml(example.title)}</h3><p>${escapeHtml(example.text)}</p></article>`).join('')}</div>`;
 }
 
-export function ComparisonTable({caption, columns, rows}) {
-  return `<div class="table-wrap" role="region" aria-label="${escapeHtml(caption)}" tabindex="0"><table class="data-table"><caption>${escapeHtml(caption)}</caption><thead><tr>${columns.map(column => `<th scope="col">${escapeHtml(column)}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map((cell,i) => i === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+export function ComparisonTable({caption, columns, rows, scroll = false}) {
+  return `<div class="table-wrap${scroll ? ' table-scroll explanation-table-scroll' : ''}" role="region" aria-label="${escapeHtml(caption)}" tabindex="0"><table class="data-table"><caption>${escapeHtml(caption)}</caption><thead><tr>${columns.map(column => `<th scope="col">${escapeHtml(column)}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map((cell,i) => i === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
 export function FeedbackLoop({title, text, action}) {
