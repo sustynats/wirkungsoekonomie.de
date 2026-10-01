@@ -19002,6 +19002,11 @@ figure.impact-process { display: block; margin: var(--space-6) 0; }
 .explanation-details[open] > summary { margin-bottom: var(--space-5); }
 .explanation-details > summary:focus-visible, .table-wrap:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
 .data-table caption { text-align: left; color: var(--muted); padding-block: .75rem; }
+/* Opt-in comparison tables keep readable columns within a keyboard-scrollable region. */
+body .explanation-table-scroll.table-wrap .data-table { min-width: 42rem !important; table-layout: auto; }
+body .explanation-table-scroll.table-wrap th,
+body .explanation-table-scroll.table-wrap td { overflow-wrap: normal; word-break: normal; }
+@media print { body .explanation-table-scroll.table-wrap .data-table { min-width: 0 !important; } }
 .publication-current-note { margin: var(--space-5) auto; padding: var(--space-5); border-left: 4px solid var(--green); background: var(--paper); max-width: var(--content-readable); }
 @media (max-width: 900px) { .impact-process-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 540px) { .impact-process-steps { grid-template-columns: 1fr; } .impact-process-steps > li { padding: var(--space-4); } }

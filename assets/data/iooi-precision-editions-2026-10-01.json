@@ -1,0 +1,75 @@
+{
+  "reviewedAt": "2026-10-01",
+  "releaseTag": "woek-iooi-praezisierung-2026-10-01",
+  "files": [
+    {
+      "filename": "woek-iooi-methodische-praezisierung-2026-10-01.pdf",
+      "title": "IOOI als Teilperspektive: früher ansetzen, präziser prüfen, weitergehen",
+      "kind": "addendum",
+      "date": "2026-10-01",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-iooi-praezisierung-2026-10-01/woek-iooi-methodische-praezisierung-2026-10-01.pdf",
+      "sha256": "50770c7cffa80e9f6248109b0c1b592ad241553e2aa62464328838ced70bcc6d",
+      "bytes": 55988,
+      "pages": 5
+    },
+    {
+      "filename": "die-neue-ordnung-des-wohlstands-lesefassung-2026-10-01.pdf",
+      "title": "Die neue Ordnung des Wohlstands: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "date": "2026-10-01",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-iooi-praezisierung-2026-10-01/die-neue-ordnung-des-wohlstands-lesefassung-2026-10-01.pdf",
+      "sha256": "e26f8353efdd62137808a02d640cdc96170e45a9653c76a53b84b1c6b453a6bd",
+      "bytes": 30662212,
+      "pages": 1258,
+      "source": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
+      "sourceSha256": "4e04ea740de878099f8375a033c09aa39645f4715c710251cb3d6f41e9b2ba10",
+      "originalPages": 1250,
+      "updatePages": 8,
+      "supersedes": "die-neue-ordnung-des-wohlstands-lesefassung-2026-09-05.pdf",
+      "previousSha256": "5142c7ea166e26b5a5fa0c334ce7457fa4fd742340e84f2f4bcbacbbe5a2a36c",
+      "previousPages": 1253,
+      "retainedPagesVerified": 1253
+    },
+    {
+      "filename": "woemm-2-0-lesefassung-2026-10-01.pdf",
+      "title": "WÖMM 2.0: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "date": "2026-10-01",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-iooi-praezisierung-2026-10-01/woemm-2-0-lesefassung-2026-10-01.pdf",
+      "sha256": "6e731264427997d35c20ab8a7b1f01590876fac94d6b6f1dae5d8268d12facd9",
+      "bytes": 4133573,
+      "pages": 106,
+      "source": "assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf",
+      "sourceSha256": "1450cb5c1955f0451909333009249c75b86d9328c16aa4f82c0a4e7723c7b896",
+      "originalPages": 98,
+      "updatePages": 8,
+      "supersedes": "woemm-2-0-lesefassung-2026-09-05.pdf",
+      "previousSha256": "867d4c8a335294016088217ccc8e8ee55441b71e9f9016e371c48e1bc3654803",
+      "previousPages": 101,
+      "retainedPagesVerified": 101
+    },
+    {
+      "filename": "woems-2-0-lesefassung-2026-10-01.pdf",
+      "title": "WÖMS 2.0: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "date": "2026-10-01",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-iooi-praezisierung-2026-10-01/woems-2-0-lesefassung-2026-10-01.pdf",
+      "sha256": "845553282c113e1f318a582fc808347486ad0442f2eff16989402851e42fc20a",
+      "bytes": 8709375,
+      "pages": 395,
+      "source": "assets/downloads/grundlagen/woems-2.0-referenzfassung.pdf",
+      "sourceSha256": "10820c06a12ae6c072175abc8f01acb4d7dfc6fb9823add7469b31af58bfd57a",
+      "originalPages": 387,
+      "updatePages": 8,
+      "supersedes": "woems-2-0-lesefassung-2026-09-05.pdf",
+      "previousSha256": "611172b37c2e6d186154de2680580806008d37d124775e8874de83035b984340",
+      "previousPages": 390,
+      "retainedPagesVerified": 390
+    }
+  ],
+  "sourceHashes": {
+    "content/site/iooi-precision-2026-10-01.json": "da9545368d8ff597fda8ecbb039b5b406b6a2904a6b2134c27cc1fd50af59c95",
+    "scripts/publications/build-iooi-precision-editions.py": "d1b1bcbddf3327011cd4ce4e94c83e33ad304a631ddce33676ef4bb9d43a4087",
+    "scripts/publications/build-site-review-pdfs.py": "34b14def995f714d99b2d8ad107068e84732edfbbb73b4d2b86a8b9e94c29f67"
+  }
+}

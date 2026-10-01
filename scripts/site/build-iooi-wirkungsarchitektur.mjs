@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { impactArchitectureVisual } from "../lib/impact-architecture-visual.mjs";
 import { ComparisonTable } from "../lib/explainer-components.mjs";
+import { renderIooiPrecision } from "../lib/iooi-precision.mjs";
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "verstehen", "iooi-und-wirkungsoekonomie");
@@ -74,7 +75,7 @@ function renderFooter(base) {
 }
 
 const TITLE = "IOOI, Wirkungspfad und Wirkungsökonomie - was gehört wohin?";
-const DESCRIPTION = "IOOI ordnet Input, Output, Outcome und Impact als Results Chain. Die WÖk legt Evidenz, Bewertung, Schutz, Systemprüfung und Rückkopplung um Wirkpfade, keine längere Kette.";
+const DESCRIPTION = "IOOI ist eine Teilperspektive der WÖk. Die Wirkungsökonomie präzisiert Analyse und Berechnung innerhalb der Ergebniskette und verbindet sie mit Bewertung, Schutz und Steuerung.";
 const schema = {
   "@context": "https://schema.org",
   "@type": ["Article", "LearningResource"],
@@ -118,7 +119,7 @@ ${renderHeader(BASE)}
       <section class="hero compact-hero" data-no-glossary>
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${BASE}index.html">Start</a><span aria-hidden="true">/</span><a href="${BASE}verstehen/">Verstehen</a><span aria-hidden="true">/</span><span>IOOI und Wirkungsökonomie</span></nav>
         <p class="hero-kicker">IOOI, Wirkpfad und WÖk</p>
-        <h1>Eine Kette ist noch keine Wirkungsarchitektur.</h1>
+        <h1>IOOI ist ein Ausschnitt, kein Gegenmodell.</h1>
         <p class="hero-subtitle">Eine Stadt richtet eine neue Buslinie ein. Was wird dafür gebraucht, was verändert sie - und was wissen wir wirklich darüber? An diesem Beispiel lassen sich IOOI, Wirkpfad und Wirkungsarchitektur auseinanderhalten.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#buslinie">Mit der Buslinie beginnen</a>
@@ -132,7 +133,7 @@ ${renderHeader(BASE)}
         <h2 id="buslinie-title">Stell dir eine neue Buslinie vor.</h2>
         <p>Die Stadt stellt Geld, Busse und Fahrer bereit. Das ist <strong>Input</strong>. Die Busse fahren: eine <strong>Aktivität</strong>. Die angebotenen Fahrten und bedienten Haltestellen sind <strong>Output</strong>. Nehmen wir an, mehr Menschen kommen dadurch ohne Auto zur Arbeit oder zur Schule: Das wäre <strong>Outcome</strong>. Wenn sich langfristig Verkehr, Emissionen oder Teilhabe verändern, kann das je nach verwendeter Results Chain <strong>Impact</strong> sein.</p>
         <p>Aber hat wirklich die neue Linie die Veränderung ausgelöst? Wer profitiert - und wer nicht? Wurde dafür eine andere Linie gestrichen? Wie sicher sind die Daten? Welche Nebenfolgen entstehen? Und was sollte die Stadt jetzt bei Preis, Takt oder Budget ändern?</p>
-        <p><strong>IOOI ordnet die Ergebniskette. Die Wirkungsökonomie legt die Prüf-, Bewertungs- und Steuerungsschichten darum.</strong> Eine geplante Buslinie hat zunächst Wirkungspotenzial und Wirkungsrisiken. Erst eine tatsächliche Zustandsveränderung ist Wirkung; die Zurechnung zur Buslinie bleibt eine eigene Frage.</p>
+        <p><strong>IOOI ordnet die Ergebniskette. Die Wirkungsökonomie prüft auch innerhalb dieser Kette genauer, was als Veränderung, Beitrag und bewertbares Ergebnis gelten darf, und verbindet das mit dem gesamten Wirkungssystem.</strong> Eine geplante Buslinie hat zunächst Wirkungspotenzial und Wirkungsrisiken. Erst eine tatsächliche Zustandsveränderung ist Wirkung; die Zurechnung zur Buslinie bleibt eine eigene Frage.</p>
       </section>
 
       <section class="section" id="ebenen" aria-labelledby="ebenen-title">
@@ -149,7 +150,7 @@ ${renderHeader(BASE)}
           <article class="card"><h3>Rückkopplung: Was ändern wir aufgrund dieses Wissens?</h3><p>Geprüfte Erkenntnisse können Preise, Steuern, Kapital, Versicherung, Beschaffung, Management, Recht, Politik oder Produktdesign verändern. Neue Entscheidungen verändern Bedingungen für weitere Wirkpfade und Monitoring. Reporting allein ist noch keine Rückkopplung.</p></article>
         </div>
         <h3>Ex ante: Was könnte passieren - und warum?</h3>
-        <p>Wirkungspotenzial, Wirkungsrisiko, Hypothesen, Mechanismen, Bedingungen, Annahmen und Szenarien beziehen sich auf mehrere Verbindungen des Pfads. <strong>Potenzial und Risiko sind keine Stationen einer Kausalkette.</strong> Ein Wirkmechanismus erklärt eine Verbindung, statt eine weitere Zeitstation zu sein. Auch IOOI beginnt mit dem Input vor Outcome und Impact. Der Unterschied zur WÖk liegt nicht in einem früheren Start.</p>
+        <p>Wirkungspotenzial, Wirkungsrisiko, Hypothesen, Mechanismen, Bedingungen, Annahmen und Szenarien beziehen sich auf mehrere Verbindungen des Pfads. <strong>Potenzial und Risiko sind keine Stationen einer Kausalkette.</strong> Ein Wirkmechanismus erklärt eine Verbindung, statt eine weitere Zeitstation zu sein. Die WÖk setzt mit Problem- und Zielprüfung vor der Auswahl von Inputs an: früher im Prüf- und Entscheidungsprozess, nicht durch eine zusätzliche Potenzial-Station in der Kausalkette. Sie präzisiert zugleich die IOOI-Teilperspektive und geht mit Systemprüfung und Rückkopplung über deren Darstellung hinaus.</p>
         <h3>Systemprüfung quer zum Pfad</h3>
         <p>Die WÖk untersucht Wirkungen 1. Ordnung als direkte Zustandsveränderungen, 2. Ordnung als indirekte Folgen einschließlich Rebound, Spillover und Leakage sowie 3. Ordnung als Veränderungen von Regeln, Anreizen, Routinen, Standards, Märkten, Institutionen und künftigen Entscheidungen. Systemgrenze, Betroffene, Zeitverzug, Verteilung, Resilienz, Lock-ins und Schadensverlagerungen sind ausdrücklich zu prüfen. Unbelegte Kaskaden bleiben Hypothesen.</p>
         <h3>Governance um alle Ebenen</h3>
@@ -185,6 +186,7 @@ ${renderHeader(BASE)}
         <p>Wirkung ist neutral und relational: eine tatsächliche Zustandsveränderung. Ihre Bewertung kann positiv, negativ, neutral oder ambivalent sein; bei unzureichender Evidenz bleibt sie offen. Ziel ist <strong>positive Netto-Wirkung</strong>. Globale Referenzen sind Agenda 2030 und SDGs; SDG+ ist eine WÖk-eigene Erweiterung. Für deutsche öffentliche und regulatorische Fälle ist zusätzlich die DNS relevant, soweit sachlich anwendbar. Recht, Grundrechte und Fachstandards konkretisieren die Prüfung. Ziel- oder Indikatorbezug ist kein Kausalitätsnachweis.</p>
         <p>Eine ex-ante Einordnung heißt ausdrücklich <strong>modellierte Wirkungsbewertung</strong>. Nichtkompensation schützt harte Grenzen; Reverse Merit Order macht schwerwiegende Defizite vorrangig sichtbar. Vorteile an anderer Stelle können sie nicht unsichtbar machen.</p>
       </section>
+      ${renderIooiPrecision()}
       <section class="section" aria-labelledby="transformation-title">
         <h2 id="transformation-title">Impact ist nicht Transformationswirkung - aber kann sie berühren</h2>
         <p><strong>Impact ist ein externer, quellenabhängiger Begriff.</strong> Je nach Methode kann er breitere, langfristige oder systemische Veränderungen umfassen. IOOI endet deshalb nicht grundsätzlich vor System- oder Transformationswirkung. Auch die <a href="https://www.oecd.org/en/topics/sub-issues/development-co-operation-evaluation-and-effectiveness/evaluation-criteria.html">OECD-DAC-Evaluationskriterien</a> untersuchen unter Impact weiterreichende und transformative Veränderungen.</p>

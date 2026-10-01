@@ -58,3 +58,15 @@ for(const [source,correction] of Object.entries({...hygiene.localFiles,...hygien
  if(hash(source)!==correction.afterSha256)throw new Error(`Publication correction changed after verification: ${source}`);
 }
 console.log(`Publication hygiene: ${Object.keys(hygiene.localFiles).length} corrected files bound to verified hashes.`);
+
+const iooi=JSON.parse(fs.readFileSync('assets/data/iooi-precision-editions-2026-10-01.json','utf8'));
+if(iooi.reviewedAt!=='2026-10-01' || iooi.files.length!==4) throw new Error('Incomplete IOOI publication update');
+for(const [source,expected] of Object.entries(iooi.sourceHashes)) if(hash(source)!==expected) throw new Error(`IOOI PDF source changed: ${source}. Publish a new dated edition.`);
+for(const edition of iooi.files) {
+ if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${iooi.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1) throw new Error('Invalid IOOI release metadata');
+ if(edition.kind==='reading-edition') {
+  const prior=manifest.files.find(item=>item.filename===edition.supersedes);
+  if(!prior || edition.previousSha256!==prior.sha256 || edition.previousPages!==prior.pages || edition.retainedPagesVerified!==prior.pages || edition.pages!==edition.originalPages+edition.updatePages || edition.updatePages<=prior.updatePages) throw new Error(`IOOI edition lost source provenance: ${edition.filename}`);
+ }
+}
+console.log('IOOI update: four dated editions; every previous page retained and verified, earlier addenda preserved.');

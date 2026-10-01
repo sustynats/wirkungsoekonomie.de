@@ -4,6 +4,7 @@ import {writeContentPage} from '../lib/content-page.mjs';
 import {escapeHtml as esc} from '../lib/explainer-components.mjs';
 import {currentPdfEditions, editionLink} from '../lib/publication-editions.mjs';
 import {renderPublicationErratum, renderPublicationErratumDownload, applyPublicationErratumNotices} from '../lib/publication-erratum.mjs';
+import {iooiPrecision, renderIooiPrecision, applyIooiPrecisionNotices} from '../lib/iooi-precision.mjs';
 
 const data = JSON.parse(fs.readFileSync('content/site/reference-update.json', 'utf8'));
 const chapters = fs.readdirSync('referenz').filter(name => /^kapitel-\d{3}-/.test(name));
@@ -16,6 +17,9 @@ let body = `<section class="hero compact-hero explanation-hero"><nav class="brea
 const pdfSection = `<section class="section section-soft" id="aktualisierte-pdfs"><h2>Aktualisierte PDFs herunterladen</h2><p><strong>Neu am 6. September 2026:</strong> Ein kurzer Einstieg und ein vollständiger Lernweg zu Impact Controlling ergänzen die Lesefassungen. <a href="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woek-impact-controlling-erklaerung-2026-09-05.pdf">Die frühere Impact-Controlling-Erklärung vom 5. September bleibt im Archiv zugänglich</a>.</p><p>Die neuen Lesefassungen enthalten die datierte fachliche Ergänzung. Gedruckte Seitenzahlen und zitierte Ausgangstexte bleiben nachvollziehbar; die Ergänzung erhält eigene Seitenlabels.</p><div class="card-grid three">${currentPdfEditions().map(item => `<article class="card"><h3 class="card-title">${esc(item.title)}</h3><p data-publication-abstract>${item.kind === 'reading-edition' ? `Ausgangswerk mit ${item.updatePages} vorgeschalteten Seiten zur fachlichen Aktualisierung. Die ursprünglichen ${item.originalPages} Seiten bleiben erhalten.` : item.kind === 'addendum' ? 'Eigenständige Erläuterung der fachlichen Änderungen und maßgeblichen Referenzen.' : 'Überarbeitete Erläuterung mit Beispielen, Prüfweg, Quellen und Grenzen.'}</p><p>${editionLink(item.filename,'PDF öffnen')}</p></article>`).join('')}</div></section>`;
 body = body.replace('<section class="section"><h2>Die passende Quelle', pdfSection.replace('</div></section>',renderPublicationErratumDownload()+'</div></section>')+'<section class="section"><h2>Die passende Quelle');
 body = body.replace('<section class="section section-soft"><h2>Was dieser Abgleich', renderPublicationErratum()+'<section class="section section-soft"><h2>Was dieser Abgleich');
+body = body.replace(`Lesestand · <time datetime="${data.reviewedAt}">5. September 2026</time>`, `Ergänzungen bis <time datetime="${iooiPrecision.date}">1. Oktober 2026</time>`);
+body = body.replace('<h2>Aktualisierte PDFs herunterladen</h2>', '<h2>Aktualisierte PDFs herunterladen</h2><p><strong>Neu am 1. Oktober 2026:</strong> Buch, WÖMM und WÖMS enthalten die datierte IOOI-Präzisierung. Sie ist zusätzlich als eigenständiges Ergänzungspapier verfügbar. <a href="#praezisierung-20261001">Früher ansetzen, innerhalb präzisieren, gesellschaftlich weitergehen</a>.</p>');
+body += renderIooiPrecision();
 writeContentPage({file:'referenz/aktualisierung/index.html', title:data.title, description:data.description, section:'Referenz', type:'Addendum', body});
 
 const marker = 'publication-current-note-20260905';
@@ -60,9 +64,11 @@ for (const edition of currentPdfEditions().filter(item=>currentSurfaces.has(item
     const archiveUrl=releaseAssets[edition.source] || '/'+edition.source;
     const archiveMarker='publication-original-access-20260905';
     html=html.replace(new RegExp(`<!-- ${archiveMarker}:start -->[\\s\\S]*?<!-- ${archiveMarker}:end -->`, 'g'),'');
-    html=html.replace('</main>',`<!-- ${archiveMarker}:start --><section class="section"><h2>PDF-Lesefassungen</h2><p>${editionLink(edition.filename,'Aktualisierte Lesefassung vom 5. September 2026')}</p><p>Für bestehende Zitate bleibt auch die Fassung ohne die Ergänzung vom 5. September 2026 zugänglich.</p><p><a href="${esc(archiveUrl)}">PDF der historischen Ausgangsfassung öffnen</a></p></section><!-- ${archiveMarker}:end --></main>`);
+    const editionDate = edition.date ? new Date(edition.date+'T12:00:00Z').toLocaleDateString('de-DE',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}) : '5. September 2026';
+    html=html.replace('</main>',`<!-- ${archiveMarker}:start --><section class="section"><h2>PDF-Lesefassungen</h2><p>${editionLink(edition.filename,'Aktualisierte Lesefassung vom '+editionDate)}</p><p>Für bestehende Zitate bleibt auch die historische Fassung ohne die späteren Ergänzungen zugänglich.</p><p><a href="${esc(archiveUrl)}">PDF der historischen Ausgangsfassung öffnen</a></p></section><!-- ${archiveMarker}:end --></main>`);
     fs.writeFileSync(file,html);
     if(!file.startsWith('referenz/') && file!=='buch.html') updateNotice(file,'Die PDF-Lesefassung enthält jetzt die datierte fachliche Aktualisierung. Der zugrundeliegende Werktext behält seinen Publikationsstand.');
   }
 }
 applyPublicationErratumNotices();
+applyIooiPrecisionNotices();

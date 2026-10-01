@@ -556,6 +556,9 @@ for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/
 for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/iooi-wirkpfad-clarification-2026-09-30.json"), "utf8")).terms) {
   canonicalTermOverrides.set(term.termId, { ...canonicalTermOverrides.get(term.termId), ...term });
 }
+for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/iooi-precision-2026-10-01.json"), "utf8")).terms) {
+  canonicalTermOverrides.set(term.termId, { ...canonicalTermOverrides.get(term.termId), ...term });
+}
 
 function applyCanonicalTermOverride(term) {
   const override = canonicalTermOverrides.get(term.termId);
