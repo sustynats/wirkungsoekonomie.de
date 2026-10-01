@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import { bridgePath, hash, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
-import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, buildObservationRequest, episodeMateriality, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
+import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, buildObservationRequest, observationKey, pageObservationKey, pendingEpisodesKey, AUTOMATIC_DRAFT_POLICY, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
 import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTranscriptText, timecode, audioSourceFor } from '../../scripts/news/sendungs-transkript.mjs';
 import { labelledTitle } from '../../scripts/news/build.mjs';
 
@@ -96,60 +96,24 @@ function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
   const files = new Map(), observations = new Map();
   const jobs = [{ input: { job_id: 'wt_20260911T062716Z_' + 'a'.repeat(24), job_type: 'editorial_request', request: { links } }, status: 'queued', intake: { owner } }];
   const store = { acquire: async () => {}, release: async () => {}, all: async () => jobs.map((j) => ({ input: { job_id: j.input.job_id, job_type: j.input.job_type }, status: j.status })),
-    get: async (id) => jobs.find((j) => j.input.job_id === id) || null, put: async (job) => { jobs.push(job); }, observe: async (k, v) => { observations.set(k, v); }, observation: async (k) => observations.get(k) ?? null };
+    get: async (id) => jobs.find((j) => j.input.job_id === id) || null, put: async (job) => { const at = jobs.findIndex(j => j.input.job_id === job.input.job_id); if (at < 0) jobs.push(job); else jobs[at] = job; }, observe: async (k, v) => { observations.set(k, v); }, observation: async (k) => observations.get(k) ?? null };
   const transport = { writeAtomic: async (p, v) => { files.set(p, v); } };
   return { session: { store, transport }, files, observations, jobs };
 }
 
-test('Machtwechsel is one verified metadata-only source with no paid or automatic article generation', () => {
+test('all enabled subscriptions draft automatically, including Machtwechsel, without changing final approval', () => {
   const series = loadShows().filter(s => s.id === 'machtwechsel');
   assert.equal(series.length, 1);
   assert.equal(series[0].feed, 'https://machtwechsel.podigee.io/feed/mp3');
-  assert.equal(series[0].observation_only, true);
+  assert.equal(series[0].observation_only, false);
   assert.equal(series[0].respect_robots, true);
-  assert.equal(series[0].allow_paid_transcription, false);
+  assert.equal(series[0].require_transcript, true);
+  assert.equal(series[0].allow_paid_transcription, true);
   assert.match(series[0].feed_evidence_url, /291-neue-episode$/);
+  assert.ok(loadShows().every(show => show.draft_policy === AUTOMATIC_DRAFT_POLICY && !show.observation_only));
 });
 
-test('observations retain metadata, gate materiality, never fetch media/transcripts and never queue a model job', async () => {
-  const show = { ...shows.lp, id: 'machtwechsel', observation_only: true };
-  const xml = jule.replace('In Sachsen-Anhalt bekommt die AfD 43,8 Prozent.', 'Wie lassen sich Steuerhinterziehung und geringe Wahlbeteiligung vermeiden?');
-  const f = fakeSession();
-  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [show], limit: 5, maxPerDay: 5,
-    fetchImpl: async url => { assert.equal(url, show.feed, 'no media, page or transcript request'); return {ok: true, text: async () => xml}; },
-    transcribeImpl: async () => assert.fail('no paid transcription') };
-  const report = await proposeEpisodeCandidates(options);
-  assert.equal(report.proposed.length, 1);
-  const candidate = f.jobs.at(-1);
-  assert.equal(candidate.status, 'accepted'); assert.equal(candidate.accepted.decision, 'hold');
-  assert.equal(candidate.intake.automatic_generation_allowed, false);
-  assert.match(candidate.input.request.brief, /kein Artikelauftrag/);
-  assert.doesNotMatch(candidate.input.request.brief, /Auftrag: Nachgehört-Beitrag/);
-  assert.equal(candidate.queued_at, undefined);
-  assert.equal(candidate.input.input_hash, hash(candidate.input.request));
-  assert.equal(candidate.input.manual_only, true);
-  assert.equal(candidate.input.request.publication_intent, 'final_approval_required');
-  assert.equal(candidate.input.origin.transcript, undefined);
-  assert.deepEqual(candidate.input.request.links, ['https://lanz-precht.example/262']);
-  assert.equal(f.files.size, 0, 'no generation inbox, no article, no transcript file');
-  const explicitTranscript = buildObservationRequest(parseEpisodes(xml, show)[0], show, {
-    owner: '1234567890123456', now, transcript: {url:'https://transcript.example/private',text:'Must not be retained'}, retry: true,
-  }).job;
-  assert.equal(explicitTranscript.input.origin.transcript, undefined);
-  assert.deepEqual(explicitTranscript.input.request.links, candidate.input.request.links);
-  assert.equal((await proposeEpisodeCandidates(options)).proposed.length, 0, 'same observation is never retried as a transcript job');
-  const meta = [...f.observations.entries()].find(([k]) => k.startsWith('episode-metadata:'))[1];
-  assert.equal(meta.published_at, '2026-09-10T23:01:00.000Z'); assert.ok(meta.shownotes); assert.equal(meta.materiality.relevant, true);
-  const duplicate = fakeSession({links:['https://lanz-precht.example/262']});
-  assert.equal((await proposeEpisodeCandidates({...options,session:duplicate.session})).proposed.length,0);
-  const irrelevant = fakeSession();
-  const quietXml = xml.replace(/<title>[^<]+<\/title>/, '<title>Unser Merch und die Tour</title>').replace(/<description>[^<]+<\/description>/, '<description>Tickets und Rabattcode.</description>');
-  assert.equal((await proposeEpisodeCandidates({...options,session:irrelevant.session,fetchImpl:async()=>({ok:true,text:async()=>quietXml})})).proposed.length,0);
-  assert.equal(episodeMateriality({title:'Kaufberatung',summary:'Neue Energie fuer Ihren Einkauf mit Rabatt'}).relevant,false);
-  const capped = fakeSession(); capped.observations.set('github-episode-day:2026-09-16',{proposed:5});
-  assert.equal((await proposeEpisodeCandidates({...options,session:capped.session})).proposed.length,0);
-  assert.ok([...capped.observations.keys()].some(k=>k.startsWith('episode-metadata:')), 'observation continues at proposal limit');
-});
+// Regressions for automatic drafting and old observation records follow.
 test('a new subscribed series without transcript waits without charge and does not starve a usable older episode', async () => {
   const blocked = { ...shows.illner, require_transcript: true, allow_paid_transcription: false };
   const ready = { ...shows.lp, require_transcript: true };
@@ -163,6 +127,113 @@ test('a new subscribed series without transcript waits without charge and does n
 });
 const feeds = { 'https://feeds.example/illner': zdf, 'https://feeds.example/lanz': mvw, 'https://feeds.example/lp': jule };
 const fetchImpl = async (url) => ({ ok: url in feeds || /transcript|vtt/.test(url), text: async () => feeds[url] || `WEBVTT\n${'00:00:01.000 --> 00:00:02.000\nText mit Inhalt.\n'.repeat(20)}` });
+
+test('every new subscribed episode drafts without another materiality or observation-only gate', async () => {
+  const show = { ...shows.lp, observation_only: true };
+  const f = fakeSession();
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [show], fetchImpl,
+    transcribeImpl: async () => assert.fail('official transcript is available') };
+  const report = await proposeEpisodeCandidates(options);
+  assert.equal(report.proposed.length, 1);
+  const job = f.jobs.at(-1);
+  assert.equal(job.status, 'queued'); assert.equal(job.accepted, undefined);
+  assert.equal(job.intake.automatic_generation_allowed, true);
+  assert.equal(job.input.origin.draft_policy, AUTOMATIC_DRAFT_POLICY);
+  assert.equal(job.input.manual_only, true);
+  assert.equal(job.input.request.publication_intent, 'final_approval_required');
+  assert.ok(job.input.origin.transcript.text);
+  assert.equal(f.files.size, 1);
+  assert.equal((await proposeEpisodeCandidates(options)).proposed.length, 0);
+  const plainXml = jule.replace(/<title>[^<]+<\/title>/, '<title>Ein ruhiges Gespraech</title>')
+    .replace(/<description>[^<]+<\/description>/, '<description>Ein Gespraech ueber den Alltag.</description>');
+  const plain = await proposeEpisodeCandidates({ ...options, session: fakeSession().session,
+    fetchImpl: async url => ({ ok: true, text: async () => url === show.feed ? plainXml : 'Belegbarer Wortlaut. '.repeat(60) }) });
+  assert.equal(plain.proposed.length, 1, 'no news materiality prefilter for subscribed full episodes');
+});
+
+function observedFixture() {
+  const f = fakeSession(); const show = { ...shows.lp, id: 'machtwechsel', require_transcript: true };
+  const episode = parseEpisodes(jule, show)[0];
+  const old = buildObservationRequest(episode, show, { owner: '1234567890123456', now }).job;
+  f.jobs.push(old);
+  const mark = { job_id: old.input.job_id, fingerprint: old.intake.fingerprint, observation_only: true, transcript_origin: null };
+  f.observations.set(observationKey(show, episode), mark);
+  f.observations.set(pageObservationKey(episode), mark);
+  f.observations.set(`intake-fingerprint:${old.intake.fingerprint}`, { job_id: old.input.job_id });
+  return { ...f, show, episode, old };
+}
+
+test('an untouched metadata observation becomes a draft request in place exactly once', async () => {
+  const f = observedFixture();
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [f.show], fetchImpl };
+  const report = await proposeEpisodeCandidates(options);
+  assert.equal(report.proposed.length, 1); assert.equal(report.proposed[0].promoted_observation, true);
+  assert.equal(f.jobs.length, 2, 'no second article or job');
+  const job = f.jobs.at(-1);
+  assert.equal(job.input.job_id, f.old.input.job_id);
+  assert.equal(job.created_at, f.old.created_at);
+  assert.equal(job.input.origin.episode_published_at, f.episode.published_at);
+  assert.equal(job.status, 'queued'); assert.equal(job.accepted, undefined);
+  assert.equal(job.intake.editorial_hold, undefined);
+  assert.equal(job.intake.observation_promotion.previous_input_hash, f.old.input.input_hash);
+  assert.notEqual(job.input.input_hash, f.old.input.input_hash);
+  assert.equal(job.input.input_hash, hash(job.input.request));
+  assert.equal(job.input.request.publication_intent, 'final_approval_required');
+  assert.equal(f.files.get(bridgePath('00_INBOX', `${job.input.job_id}.input.json`)).job_id, job.input.job_id);
+  assert.equal((await proposeEpisodeCandidates(options)).proposed.length, 0);
+});
+
+test('observation promotion never replaces a processed, claimed, paid or human-reviewed edition', async () => {
+  for (const protect of [
+    f => { f.old.ack = { status: 'hold' }; },
+    f => { f.old.staging = { preview: {} }; },
+    f => { f.old.approval = { by: 'Natalie' }; },
+    f => { f.old.status = 'PUBLISHED'; },
+    f => { f.old.intake.trigger_type = 'manual'; },
+    f => f.observations.set(`github-attempt:${f.old.input.job_id}`, { provider_called: true }),
+    f => { f.session.transport.metadata = async () => ({ exists: true }); },
+  ]) {
+    const f = observedFixture(); protect(f); const before = JSON.stringify(f.old);
+    const report = await proposeEpisodeCandidates({ session: f.session, root: '/nonexistent', now, env: {}, shows: [f.show], fetchImpl });
+    assert.equal(report.proposed.length, 0); assert.equal(f.files.size, 0);
+    assert.equal(JSON.stringify(f.old), before);
+  }
+});
+
+test('daily caps keep discovered episodes pending even after the feed and age window move on', async () => {
+  const f = fakeSession(); const show = shows.lp;
+  f.observations.set('github-episode-day:2026-09-16', { proposed: 3 });
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [show], fetchImpl, maxPerDay: 3 };
+  const capped = await proposeEpisodeCandidates(options);
+  assert.equal(capped.status, 'daily_limit'); assert.equal(capped.pending_episodes, 1);
+  assert.equal(f.observations.get(pendingEpisodesKey(show)).episodes.length, 1);
+  const later = await proposeEpisodeCandidates({ ...options, now: '2026-10-01T08:00:00.000Z',
+    fetchImpl: async url => url === show.feed ? { ok: true, text: async () => '<rss><channel></channel></rss>' } : fetchImpl(url) });
+  assert.equal(later.proposed.length, 1);
+  assert.equal(later.proposed[0].published_at, '2026-09-10T23:01:00.000Z');
+  assert.equal(later.pending_episodes, 0);
+});
+
+test('all new feed episodes are retained, not only the latest three; disabled sources stay off', async () => {
+  const f = fakeSession(); const block = jule.match(/<item>[\s\S]*?<\/item>/)[0];
+  const xml = '<rss><channel>' + Array.from({ length: 5 }, (_, i) => block.replaceAll('262', String(300 + i))).join('') + '</channel></rss>';
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [shows.lp], limit: 1, maxPerDay: 10,
+    fetchImpl: async url => url === shows.lp.feed ? { ok: true, text: async () => xml } : fetchImpl(url) };
+  const report = await proposeEpisodeCandidates(options);
+  assert.equal(report.fresh_episodes, 5); assert.equal(report.pending_episodes, 4);
+  const off = await proposeEpisodeCandidates({ ...options, shows: [{ ...shows.lp, enabled: false }], fetchImpl: async () => assert.fail('disabled feed') });
+  assert.equal(off.checked_shows, 0); assert.equal(off.proposed.length, 0);
+});
+
+test('a lost inbox write leaves one recoverable job, not another transcription or duplicate job', async () => {
+  const f = fakeSession(); f.session.transport.writeAtomic = async () => { throw Error('TRANSPORT_FAILED'); };
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [shows.lp], fetchImpl };
+  await assert.rejects(proposeEpisodeCandidates(options), /TRANSPORT_FAILED/);
+  assert.equal(f.jobs.length, 2);
+  f.session.transport.writeAtomic = async () => assert.fail('regular worker repairs the stored input');
+  assert.equal((await proposeEpisodeCandidates(options)).proposed.length, 0);
+  assert.equal(f.jobs.length, 2);
+});
 
 test('new episodes of the followed shows become requests once, newest first, within the daily cap and never for known episodes', async () => {
   const { session, files, jobs } = fakeSession({ links: ['https://www.zdf.de/video/talk/maybrit-illner-128/illner-100'] });
