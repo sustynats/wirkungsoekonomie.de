@@ -18,8 +18,13 @@
       "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-09-28",
+  "outbox": [
+    {
+      "id": "2d5843a1b06bbb5f7c3cb92a",
+      "content": "WÖk Tagesbericht · 2026-10-01 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n⚠ Akademie: HTTP 402\n✓ Parlament: erreichbar\n⚠ Institut: HTTP 402\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 681 live · 562 aktuelle Lagen und Einzelakten aus 589 aktiven Wirkungsakten · 7 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-09-30) 0; heute bisher 12 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-01T19:56:09.751Z; 933 offene Prüfungen, 42 aktive Quellen.\nQueue: 933 offen (868 Kapazität · 0 technisch · 65 redaktionell); Status draining.\nQuellen-Funnel heute: 59572 Feed-Einträge → 1933 neu/aktualisiert → 2073 Story-Kandidaten → 67214 geeignet → 57 KI → 51 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 1677; redaktionelle Quellenbeiträge: 1609.\nProduktive Quellen im letzten Lauf: France 24.\nEreignischeck (begrenzter Quellenbestand): 14 größere Ereignisse · 3 mit Veröffentlichung · 11 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $3.57 · heute $0.83 · Monat $0.83.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 51 Erstveröffentlichungen · 167 Aktualisierungen · 381 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 15.28 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 14 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.016; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €0.87 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Redaktionelle Themenabdeckung: 3 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-01",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -2190,11 +2195,139 @@
       "https://wirkungsoekonomie.de/wirkungsticker/italien-atna-speit-aschewolken-flughafen-catania-gesperrt-27c4ad/": {
         "first_seen_at": "2026-09-28T11:44:02.612Z",
         "source_at": "2026-09-28T10:49:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/slowakei-zweites-todesopfer-nach-messerangriff-an-schule-23b5f4/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T17:39:11.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schuss-auf-fluchtigen-sek-stoppt-bewaffneten-mann-mit-schuss-in-die-beine-0a3ff2/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T16:52:58.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schwerverletzt-bei-explosion-manner-finden-pulver-und-zunden-es-an-d91d56/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T15:49:11.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/tankrabatt-gilt-seit-mitternacht-sprit-schon-deutlich-gunstiger-insolvenzverfahren-bei-v-74d0be/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T08:59:53.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sprengstoffdrohnen-vorfall-am-flughafen-leipzig-halle-e6c479/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T07:28:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/dresden-mutmasslicher-sexualstraftater-bei-festnahme-durch-schuss-verletzt-19fc35/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T05:16:30.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/braunsbedra-zwei-blindganger-werden-entscharft-evakuierung-ab-8-uhr-78ab49/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T05:14:05.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/erneuter-tankrabatt-tritt-in-kraft-f58d63/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-10-01T02:02:46.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/dresden-prohlis-schusse-bei-verhaftung-51-jahriger-schwer-verletzt-695483/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-30T19:03:13.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/braunsbedra-zwei-blindganger-entdeckt-evakuierung-geplant-35f7a8/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-30T14:31:23.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schusse-in-treptow-kopenick-zwei-manner-schwer-verletzt-68e4d5/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-30T14:08:20.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schusswaffengewalt-wieder-schusse-in-berlin-polizei-sucht-tater-5a3270/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-30T12:39:14.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/rohrbruch-in-berlin-spandau-flutet-strassen-haus-wird-evakuiert-5bfca4/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T17:38:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-todliche-schusse-in-teestube-tater-weiter-auf-der-flucht-312818/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T14:24:26.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/landkreis-rottweil-schusse-am-bahnhof-frau-schwebt-in-lebensgefahr-9cc029/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T12:48:03.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/blindganger-entdeckt-autobahn-muss-wegen-bombenentscharfung-gesperrt-werden-6b506e/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T12:18:04.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T07:05:47.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T06:58:01.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bombenfund-rodenkirchen-auch-a4-muss-gesperrt-werden-61e554/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T06:25:48.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/frau-durch-schuss-lebensgefahrlich-verletzt-nopper-entreisst-aktivisten-plakat-curevac-a-67427a/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T05:56:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/brand-in-wittenberg-16-verletzte-werkstatt-fur-menschen-mit-behinderung-evakuiert-e24f14/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T05:01:51.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/brande-explosion-bei-unfall-mit-gasflaschen-mann-schwer-verletzt-e7a606/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T03:51:29.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sechs-tote-schusse-in-stade-drei-monate-fassungslosigkeit-und-fragen-7d4680/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T03:00:13.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/frau-durch-schuss-in-oberndorf-am-neckar-lebensgefahrlich-verletzt-verdachtiger-festgeno-f85a32/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-29T01:03:27.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/humanitare-krise-in-ukraine-kaum-essen-kein-entkommen-in-oleschky-39e1fe/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T15:30:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/fliegerbombe-in-nurnberg-zweite-bombe-binnen-weniger-wochen-in-nurnberg-entscharft-68fa86/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T14:26:03.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-ein-toter-und-zwei-verletzte-nach-schussen-in-teestube-685a20/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T13:24:51.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vulkan-auf-sizilien-flughafen-weiterhin-wegen-kilometer-hohe-aschewolke-von-atna-gesperr-3a27e1/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T13:04:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mann-nach-angriff-in-lebensgefahr-544e49/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T12:23:16.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizei-sucht-trio-nach-mutmasslichen-paintball-schussen-augenlicht-in-gefahr-8bead9/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T12:04:59.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/oktoberfest-2026-wiesn-streit-eskaliert-attacke-mit-besteckmesser-574cbf/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-28T11:22:36.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/messerangriff-verletzte-polizisten-und-schussabgabe-eecf69/": {
+        "first_seen_at": "2026-10-01T20:30:39.068Z",
+        "source_at": "2026-09-27T22:00:00.000Z"
       }
     },
-    "last_new_at": "2026-09-28T11:44:02.612Z",
-    "checked_at": "2026-09-28T11:44:02.612Z",
-    "last_current_new_at": "2026-09-28T11:44:02.612Z"
+    "last_new_at": "2026-10-01T20:30:39.068Z",
+    "checked_at": "2026-10-01T20:30:39.068Z",
+    "last_current_new_at": "2026-10-01T20:30:39.068Z"
   },
   "recovery_attempts": [
     {
