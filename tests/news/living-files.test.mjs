@@ -245,6 +245,28 @@ test("article identity follows changed publisher slugs, not arbitrary IDs or que
   assert.notEqual(documentKey("https://example.org/a?id=1"), documentKey("https://example.org/a?id=2"));
   assert.equal(documentKey("javascript:alert(1)"), "");
 });
+
+test('MDR headline revisions keep one incident, while other documents and places stay separate', () => {
+  const base = 'https://www.mdr.de/nachrichten/sachsen-anhalt/halle/saalekreis/';
+  const early = base + 'evakuierung-entschaerfung-100,braunsbedra-fliegerbombe-100.html';
+  const later = base + 'evakuierung-entschaerfung-108,braunsbedra-fliegerbombe-100.html';
+  assert.equal(documentKey(early), documentKey(later));
+  assert.notEqual(documentKey(early), documentKey(base + 'evakuierung-entschaerfung-100,andere-fliegerbombe-100.html'));
+  assert.notEqual(documentKey(early), documentKey(early.replace('mdr.de', 'example.org')));
+  const original = story('mdr-old', 'Zwei Blindgänger in Braunsbedra entdeckt', { sources: [source('Zwei Blindgänger in Braunsbedra entdeckt', early)] });
+  const update = story('mdr-new', 'Laut MDR: In Braunsbedra drei Weltkriegsbomben entschärft', { source_summary: 'Bei Bauarbeiten im Saalekreis wurden Bomben gefunden.', sources: [source('Drei Weltkriegsbomben in Braunsbedra entschärft', later)] });
+  assert.deepEqual(fileSubject(update).places, ['braunsbedra'], 'a capitalized locative must not fall back to construction work as an apparent place');
+  const before = structuredClone([original, update]);
+  assert.equal(clusterItems([update.sources[0]], [original], now)[0].story_id, original.story_id);
+  const groups = duplicateGroups([original, update]);
+  assert.equal(groups.length, 1);
+  assert.equal(mergeLivingFiles([original, update], groups, now).length, 1);
+  for (const [i, record] of [original, update].entries()) {
+    for (const field of ['title', 'analysis', 'sources', 'versions', 'published_at']) assert.deepEqual(record[field], before[i][field]);
+  }
+  const otherPlace = story('elsewhere', 'Bomben in Halle entschärft', { sources: [source('Bomben in Halle entschärft', later)] });
+  assert.equal(duplicateGroups([before[0], otherPlace]).length, 0, 'same URL alone cannot override an explicit different place');
+});
 test("object, place and time distinguish follow-up from a different incident or response", () => {
   assert.equal(livingFileMatch(source("Polizei geht von Sabotage an Umspannwerk in Dormagen aus"), dormagen).score, 0.98);
   assert.equal(livingFileMatch(source("Polizei geht von Sabotage an Umspannwerk in Oldenburg aus"), dormagen).score, 0);

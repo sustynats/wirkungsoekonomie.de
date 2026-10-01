@@ -76,7 +76,12 @@ function uncachedDocumentKey(value) {
     // These publishers retain the article ID when the headline/slug changes.
     const id = host === "stern.de" ? url.pathname.match(/-(\d{7,})\.html$/)?.[1]
       : host === "spiegel.de" ? url.pathname.match(/-a-([a-f\d-]{36})(?:\.html)?$/i)?.[1]
-        : host === "tagesspiegel.de" ? url.pathname.match(/-(\d{7,})\.html$/)?.[1] : null;
+        : host === "tagesspiegel.de" ? url.pathname.match(/-(\d{7,})\.html$/)?.[1]
+          // MDR: der Teaser vor dem Komma wechselt bei Aktualisierungen; die
+          // Dokumentkennung dahinter bleibt. Beide Braunsbedra-URLs vom
+          // 30.09./01.10. verweisen auf dieselbe kanonische Verlagsseite.
+          : host === "mdr.de" && /^\/nachrichten\//.test(url.pathname)
+            ? url.pathname.match(/^(.*\/)[^/,]+,([^/,]+-\d+\.html)$/)?.slice(1).join('') : null;
     return id ? `${host}:article:${id}` : `${host}${url.pathname.replace(/\/$/, "")}${url.search}`;
   } catch { return ""; }
 }
@@ -85,7 +90,7 @@ const PLACE_EXCLUSIONS = new Set("der die das dem den einem einer im am an auf a
 function placesIn(text) {
   // Only locative phrases, never publisher coverage or the origin of a letter ("aus NRW").
   // German capitalized subject nouns ("in Mathematik") are not place evidence.
-  const matches = String(text || "").matchAll(/\b(?:in|bei|nahe)\s+(?:der\s+Stadt\s+)?([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im|ob der)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu);
+  const matches = String(text || "").matchAll(/\b(?:[Ii]n|[Bb]ei|[Nn]ahe)\s+(?:der\s+Stadt\s+)?([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im|ob der)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu);
   return unique([...matches].map((match) => canonicalPlace(match[1])).filter((place) => !PLACE_EXCLUSIONS.has(place)));
 }
 const MEDIA_NAMES = /\b(?:deutschlandfunk\w*|deutschlandradio\w*|deutsche welle|deutsche presse-agentur|deutschlandtrend|deutsche bahn\w*|british broadcasting corporation|france 24|france info|franceinfo)\b/g;
@@ -367,8 +372,11 @@ export function duplicateGroups(stories) {
       const doc = documentKey(canonical.sources?.[0]?.url);
       const leftTerms = terms(canonical.title), rightTerms = terms(other.title);
       const shared = leftTerms.filter((word) => rightTerms.includes(word)).length;
+      const versionedMdrArticle = doc?.startsWith('mdr.de:article:')
+        && a.places.length === 1 && b.places.length === 1 && a.places[0] === b.places[0]
+        && !a.multipleEvents && !b.multipleEvents;
       return Boolean(doc && doc === documentKey(other.sources?.[0]?.url) && a.places.length <= 1 && b.places.length <= 1
-        && shared >= 3 && shared / Math.max(1, Math.min(leftTerms.length, rightTerms.length)) >= 0.75
+        && (versionedMdrArticle || shared >= 3 && shared / Math.max(1, Math.min(leftTerms.length, rightTerms.length)) >= 0.75)
         && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 4 * DAY);
       })();
       if (matchesCanonical && matches.every(member => !subjectConflict(member, other)

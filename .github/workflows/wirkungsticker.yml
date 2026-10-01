@@ -82,7 +82,7 @@ jobs:
       - name: Queue potential reassessments for the newest online stories
         # Fester Bestandteil jedes Laufs (seit 16.09.): die jüngsten Online-Meldungen
         # ohne vollständiges freigegebenes Profil bleiben eingereiht, bis die Neufassung
-        # das Gate passiert; ein Platz je Lauf ist dafür reserviert (partitionAiQueue).
+        # das Gate passiert; ab vier Plaetzen bleibt ein Reparaturplatz reserviert.
         if: steps.slot.outputs.should_run == 'true'
         env:
           REASSESS_LIMIT: ${{ inputs.reassess_limit || vars.WOEK_NEWS_REASSESS_LIMIT || '30' }}

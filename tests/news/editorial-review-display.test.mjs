@@ -1,6 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {requestWithReview, orderedReviews, requestPresentation, supplementable} from '../../admin/redaktion/review-state.js';
+import {requestWithReview, orderedReviews, readyApprovalCount, requestPresentation, supplementable} from '../../admin/redaktion/review-state.js';
+
+test('approval badge counts only new approvable drafts, not holds, unchanged revisions or delivery',()=>{
+ const records=['NEEDS_REVIEW','REVISION_REQUESTED','HOLD','PUBLISHING','APPROVED_FOR_PUBLICATION','PUBLISHED','SKIPPED'].map(status=>({status}));
+ const before=structuredClone(records);
+ assert.equal(readyApprovalCount(records),0);
+ assert.equal(readyApprovalCount([...records,{status:'AWAITING_FINAL_APPROVAL'}]),1);
+ assert.equal(readyApprovalCount(),0);
+ assert.deepEqual(records,before,'display counts cannot alter approval or publication state');
+});
 
 test('a concrete research hold outranks a stale transport receipt or pending research label',()=>{
  const p=requestPresentation({ack_status:'staged',research_status:'queued',editorial_hold:{code:'EDITORIAL_CONTEXT_MISSING',reason:'Themenbezug fehlt.'},status_note:'Bitte einen Link ergänzen.'});
