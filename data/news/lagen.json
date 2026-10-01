@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-01T10:00:00.000Z",
+  "updated_at": "2026-10-01T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-01-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-01",
+      "window_from": "2026-10-01T10:00:00.000Z",
+      "window_to": "2026-10-01T16:00:00.000Z",
+      "stand": "2026-10-01T16:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 3,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-7d48863cfe78ab49",
+          "slug": "braunsbedra-zwei-blindganger-werden-entscharft-evakuierung-ab-8-uhr-78ab49",
+          "title": "Blindgänger in Braunsbedra entschärft – Evakuierung und Verkehrssperren beendet",
+          "state": "neu",
+          "at": "2026-10-01T14:31:54.566Z",
+          "score": 5.7553
+        },
+        {
+          "story_id": "wt-a5c4470efe35f7a8",
+          "slug": "braunsbedra-zwei-blindganger-entdeckt-evakuierung-geplant-35f7a8",
+          "title": "Laut MDR: In Braunsbedra drei Weltkriegsbomben entschärft",
+          "state": "neu",
+          "at": "2026-10-01T13:11:29.276Z",
+          "score": 6.0319
+        },
+        {
+          "story_id": "wt-fa20ffa90568e4d5",
+          "slug": "schusse-in-treptow-kopenick-zwei-manner-schwer-verletzt-68e4d5",
+          "title": "Laut Polizei: Zwei Männer bei Schüssen in Treptow-Köpenick schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-01T12:09:47.184Z",
+          "score": 5.3605
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-01-mittagslage",
       "slot": "mittagslage",
