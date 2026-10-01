@@ -6,9 +6,13 @@ export const NEWS_AI_BUDGET_SEPTEMBER_EXTENSION = Object.freeze({ from: '2026-09
 // Anhebung der September-Freigabe auf EUR 100 brutto, damit der neue Prozess bis
 // Monatsende läuft (gemessen rund 1 Cent je Meldung). Kein zusätzlicher Topf.
 export const NEWS_AI_BUDGET_DIRECT_OPERATION = Object.freeze({ from: '2026-09-15T18:40:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 100 });
+// Natalie, 01.10.2026: zuletzt vorgeschlagene EUR 110 als interne Oktober-
+// Ausgabengrenze freigegeben. Kein Guthabenkauf, keine Aenderung des Auto-Reloads.
+// Die datierte Freigabe erhaelt historische Grenzen und endet zum UTC-Monatswechsel.
+export const NEWS_AI_BUDGET_OCTOBER_EXTENSION = Object.freeze({ from: '2026-10-01T04:15:56.000Z', until: '2026-11-01T00:00:00.000Z', authorized_eur: 110 });
 // The September 9 grant is a shared API ceiling, not another EUR 75 pot.
 // Oracle must independently enforce that aggregate ceiling across all features.
-const NEWS_AI_BUDGET_APPROVALS = Object.freeze([NEWS_AI_BUDGET_DIRECT_OPERATION, NEWS_AI_BUDGET_SEPTEMBER_EXTENSION, NEWS_AI_BUDGET_EXCEPTION]);
+const NEWS_AI_BUDGET_APPROVALS = Object.freeze([NEWS_AI_BUDGET_OCTOBER_EXTENSION, NEWS_AI_BUDGET_DIRECT_OPERATION, NEWS_AI_BUDGET_SEPTEMBER_EXTENSION, NEWS_AI_BUDGET_EXCEPTION]);
 export const NEWS_REQUEST_RESERVATION_USD = 0.25;
 export const ASTRA_REQUEST_RESERVATION_USD = 3;
 const ECB_FX_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";

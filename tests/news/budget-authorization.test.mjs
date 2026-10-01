@@ -37,3 +37,24 @@ test('September 9 shared-ceiling extension is bounded and does not rewrite earli
   assert.equal(newsBudget(octoberFx, '2026-10-01T00:00:00.000Z', 75).authorized_eur, 25);
   assert.equal(newsBudget(octoberFx, '2026-10-01T00:00:00.000Z', 75).technical_limit_usd, 18.9);
 });
+
+test('October approval permits EUR 110 only after authorization and preserves all reserves', () => {
+  const fx = { rate_date: '2026-09-30', rate_usd_per_eur: 1.16 };
+  const at = '2026-10-01T04:15:56.000Z';
+  assert.equal(newsBudget(fx, '2026-10-01T04:15:55.999Z').authorized_eur, 25);
+  const approved = newsBudget(fx, at);
+  assert.equal(approved.authorized_eur, 110);
+  assert.equal(approved.technical_limit_usd, 83.19);
+  assert.equal(approved.tax_reserve_factor, 1.19);
+  assert.equal(approved.fx_reserve_factor, 0.9);
+  assert.equal(newsBudget(fx, at, 1000).authorized_eur, 110);
+  assert.equal(newsBudget(fx, at, 20).authorized_eur, 20);
+  assert.equal(newsBudget(fx, at, 0).technical_limit_usd, 0);
+  assert.equal(newsBudget(null, at).technical_limit_usd, 0);
+  assert.equal(newsBudget(fx, '2026-10-08T04:15:56.000Z').technical_limit_usd, 0);
+
+  const novemberFx = { rate_date: '2026-10-31', rate_usd_per_eur: 1.16 };
+  assert.equal(newsBudget(novemberFx, '2026-10-31T23:59:59.999Z').authorized_eur, 110);
+  assert.equal(newsBudget(novemberFx, '2026-11-01T00:00:00.000Z', 110).authorized_eur, 25);
+  assert.equal(newsBudget(novemberFx, '2026-11-01T00:00:00.000Z').technical_limit_usd, 18.9);
+});
