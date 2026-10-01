@@ -48,6 +48,17 @@ test('budget reserves, lower capacity limits, and local relevance rejection rema
   assert.equal(newsBudget({ rate_date: '2026-09-04', rate_usd_per_eur: 1.16 }, '2026-09-06T06:00:00Z', 500).authorized_eur, 25);
 });
 
+test('a relevance filter is not reported as exhausted money or an hourly quota', () => {
+  const candidate = { preanalysis: { internal_relevance_score: 20 } };
+  const stage = { stage: 0, threshold: 30 };
+  assert.equal(aiDeferralReason(candidate, stage, 0), 'EDITORIAL_RELEVANCE_BELOW_THRESHOLD');
+  assert.equal(aiDeferralReason(candidate, { ...stage, stage: 3 }, 8), 'AI_BUDGET_BLOCKED');
+  assert.equal(aiDeferralReason({ ...candidate, impact_reassessment: true }, stage, 0), 'AI_HOURLY_CALL_LIMIT');
+  assert.equal(aiDeferralReason({ ...candidate, reassessment: true }, stage, 8), 'AI_BUDGET_OR_BATCH_LIMIT');
+  const counts = queueSnapshot([{ published: false, pending_reason: 'EDITORIAL_RELEVANCE_BELOW_THRESHOLD' }], '2026-10-01T20:00:00Z');
+  assert.equal(counts.capacity, 0, 'a local editorial filter is not a capacity failure');
+});
+
 test('soft-budget runs reserve older work while fresh material keeps the majority', () => {
   const fresh = Array.from({ length: 12 }, (_, index) => ({ story_id: `fresh-${index}`, fresh: true, preanalysis: { internal_relevance_score: 90 } }));
   const result = partitionAiQueue([...fresh, ...candidates()], budgetStage(13.42, 18.9), 12);
@@ -128,13 +139,14 @@ test('an old source discovered just now is not an old queue entry', () => {
 test('one slot per run belongs to a queued potential reassessment while any is waiting', () => {
   const fresh = Array.from({ length: 12 }, (_, index) => ({ story_id: `fresh-${index}`, fresh: true, preanalysis: { internal_relevance_score: 90 } }));
   const repair = { story_id: 'repair-1', impact_reassessment: true, existing_story: { published: true, pending_update: { impact_reassessment: true } }, preanalysis: { internal_relevance_score: 20 } };
-  for (const limit of [2, 4, 8]) {
+  for (const limit of [4, 8]) {
     const result = partitionAiQueue([...fresh, repair], budgetStage(13.42, 18.9), limit);
     assert.equal(result.selected.length, Math.min(limit, 8));
     assert.ok(result.selected.some((item) => item.story_id === 'repair-1'), `limit ${limit}`);
     assert.ok(!result.deferred.some((item) => item.story_id === 'repair-1'));
   }
   assert.ok(!partitionAiQueue([...fresh, repair], budgetStage(13.42, 18.9), 1).selected.some((item) => item.story_id === 'repair-1'), 'a single-slot run keeps the fresh story');
+  assert.ok(!partitionAiQueue([...fresh, repair], budgetStage(13.42, 18.9), 2).selected.some((item) => item.story_id === 'repair-1'), 'a two-slot run must not spend half its capacity on an old publication');
   const none = partitionAiQueue(fresh, budgetStage(13.42, 18.9), 4);
   assert.equal(none.selected.length, 4);
 });

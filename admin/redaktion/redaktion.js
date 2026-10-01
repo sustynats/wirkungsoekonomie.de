@@ -1,5 +1,5 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
-import {approvalStates,orderedReviews,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
+import {approvalStates,orderedReviews,readyApprovalCount,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
 import {parkedReason} from './parked-review.js';
 import {enhancePrivateEditorialHtml} from '../../assets/js/editorial-diagrams.js';
@@ -186,10 +186,12 @@ load().catch(error=>note(error.message,true));
 
 $('tab-approval').addEventListener('click',()=>{show('approvals');load().catch(error=>note(error.message,true));});
 function drawReviews(reviews,revisions=new Map()){
-  // Eine angehaltene Ueberarbeitung braucht Natalie genauso wie eine fertige Fassung.
-  $('approval-count').textContent=reviews.filter(r=>['AWAITING_FINAL_APPROVAL','NEEDS_REVIEW'].includes(r.status)||revisions.get(r.job_id)?.attention).length||'';
+  // Klaerungsfaelle bleiben sichtbar, zaehlen aber nicht als neue Freigabe.
+  const ready=readyApprovalCount(reviews);
+  $('approval-count').textContent=ready||'';
   const list=$('approval-list');list.replaceChildren();
   if(!reviews.length){list.append(element('p','Sobald ein Beitrag fertig vorbereitet ist, erscheint hier seine Vorschau.','quiet'));return;}
+  if(!ready)list.append(element('p','Derzeit liegt keine neue Fassung zur abschließenden Freigabe bereit. Darunter stehen frühere Beiträge und gegebenenfalls offene Klärungen.','quiet'));
   for(const r of orderedReviews(reviews)){const card=element('article',undefined,'request-card'),revision=r.status==='REVISION_REQUESTED'?revisions.get(r.job_id):null;card.append(element('span',types[r.format]||'Redaktion','eyebrow'),element('h2',r.title));
    if(revision){card.append(element('span',revision.label,`state${revision.attention?' hold':''}`));if(revision.note)card.append(element('p',revision.note));}else card.append(element('p',approvalStates[r.status]||r.status));
    if(revision?.attention&&revision.parent&&supplementable(revision.parent)){const more=element('button','Informationen nachliefern','text-button');more.type='button';more.addEventListener('click',()=>startSupplement(revision.parent));card.append(more);}

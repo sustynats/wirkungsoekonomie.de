@@ -286,7 +286,7 @@ export function repartitionOversizedSourceQueues(stories, now) {
     const reason = pending.reason || pending.pending_reason;
     const queuedDraft = !story.published && (new Set([
       'AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT', 'AI_PROVIDER_UNAVAILABLE',
-      'AI_DISABLED', 'AI_BUDGET_BLOCKED', 'AI_RUN_TIME_LIMIT', 'SOURCE_INTEGRITY_OPEN',
+      'AI_DISABLED', 'AI_BUDGET_BLOCKED', 'EDITORIAL_RELEVANCE_BELOW_THRESHOLD', 'AI_RUN_TIME_LIMIT', 'SOURCE_INTEGRITY_OPEN',
     ]).has(reason) || shouldRetryQualityGate(reason, pending.quality_errors || [], 0));
     // Old unpublished queues must obey the same direct-event rule as new
     // arrivals, even below the input-size limit. Final editorial rejections and
@@ -914,35 +914,24 @@ export function partitionAiQueue(eligible, stage, maxStories, now = new Date().t
     const reservedIds = new Set(reserved.map((candidate) => candidate.story_id));
     selected = [...top, ...allowed.filter((candidate) => !reservedIds.has(candidate.story_id) && !topIds.has(candidate.story_id)).slice(0, limit - reserve - top.length), ...reserved];
   }
-  // The newest online stories queued for a potential reassessment (the last
-  // 30 published without a complete profile) must not be starved by the fresh
-  // stream: one slot per run is theirs as long as any is waiting.
+  // Reparaturen bleiben in der Queue, duerfen aber einen kleinen Zwei-Slot-Lauf
+  // nicht zur Haelfte belegen. Ab vier Plaetzen bleibt ein Reparaturplatz;
+  // kleine Laeufe folgen der zuvor thematisch ausbalancierten Rangfolge.
   const repair = allowed.find((candidate) => candidate.impact_reassessment);
-  if (repair && limit >= 2 && !selected.some((candidate) => candidate.impact_reassessment)) {
+  if (repair && limit >= 4 && !selected.some((candidate) => candidate.impact_reassessment)) {
     const keep = selected.filter((candidate) => candidate.story_id !== repair.story_id);
     selected = [...keep.slice(0, limit - 1), repair];
   }
-  // Natalie am 16.09.2026: „Messerangriffe haben auch eine Wirkung auf
-  // Demokratie und auf Sicherheit. Gerade vor dem Hintergrund der
-  // Sicherheitslage in Deutschland würde ich da schon ein Wirkungspotenzial
-  // erkennen." Ein akutes Sicherheitsereignis ist damit kein Chronikfall, der
-  // auf einen freien Platz warten darf. Frisch ist es ohnehin TOP; älter als
-  // drei Stunden verlor es bisher jeden Vergleich gegen den frischen Strom und
-  // verfiel im Horizont (16.09.: Waffenfund bei Speyer und Messerangriff in
-  // Potsdam, 17 Stunden alt, Relevanz 67 und 62, nie ausgewählt). Ein Platz je
-  // Lauf, solange eines wartet.
-  const acuteSafety = (candidate) => (candidate?.preanalysis?.event_score?.signals || []).includes('acute_safety');
-  const acute = allowed.find((candidate) => acuteSafety(candidate) && !candidate.impact_reassessment);
-  if (acute && limit >= 2 && !selected.some(acuteSafety)) {
-    const keep = selected.filter((candidate) => candidate.story_id !== acute.story_id);
-    selected = [...keep.slice(0, limit - 1), acute];
-  }
+  // Kein pauschaler Sicherheitsplatz: Natalies spaetere Vorgabe verlangt eine
+  // thematisch offene Auswahl. Ein relevantes Sicherheitsereignis bleibt
+  // waehlbar, verdrängt aber nicht allein wegen seines Themenetiketts anderes.
   const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
 }
 
 export function aiDeferralReason(candidate, stage, remainingCalls) {
-  if (stage.stage >= 3 || (!candidate.reassessment && candidate.preanalysis.internal_relevance_score < stage.threshold)) return "AI_BUDGET_BLOCKED";
+  if (stage.stage >= 3) return "AI_BUDGET_BLOCKED";
+  if (!candidate.reassessment && !candidate.impact_reassessment && candidate.preanalysis.internal_relevance_score < stage.threshold) return "EDITORIAL_RELEVANCE_BELOW_THRESHOLD";
   return remainingCalls === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
 }
 
@@ -1358,7 +1347,7 @@ export async function runWirkungsticker(options = {}) {
     ));
   await discoveryCheckpoint('events_clustered', { changed_items: changedItems.length, clusters: freshCandidates.length });
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["BRIDGE_PENDING", "IMPACT_REASSESSMENT_REQUESTED", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
+  const retryableReasons = new Set(["BRIDGE_PENDING", "IMPACT_REASSESSMENT_REQUESTED", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "EDITORIAL_RELEVANCE_BELOW_THRESHOLD", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
@@ -1698,7 +1687,7 @@ export async function runWirkungsticker(options = {}) {
   for (const candidate of deferred) {
     const deferredReason = aiDeferralReason(candidate, stage, remainingAiCallsThisHour);
     if (deferredReason === "AI_BUDGET_BLOCKED") report.budget_deferred = Number(report.budget_deferred || 0) + 1;
-    bumpCandidateFunnel(sourceFunnel, candidate, "capacity_deferred");
+    if (deferredReason !== "EDITORIAL_RELEVANCE_BELOW_THRESHOLD") bumpCandidateFunnel(sourceFunnel, candidate, "capacity_deferred");
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }

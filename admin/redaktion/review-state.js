@@ -101,6 +101,12 @@ export function orderedReviews(reviews) {
     || String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
 }
 
+// Die Zahl bei "Freigeben" verspricht eine neue freigabefaehige Fassung,
+// nicht bloss eine alte Rueckgabe oder einen technischen Klaerungsbedarf.
+export function readyApprovalCount(reviews = []) {
+  return reviews.filter((review) => review.status === 'AWAITING_FINAL_APPROVAL').length;
+}
+
 // A staging ACK describes an import. The versioned review describes the
 // owner's current decision and the independently verified publication.
 export function requestWithReview(request, review, revision = null) {

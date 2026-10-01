@@ -300,16 +300,15 @@ test('undercovered technology and economy reach review despite ordinary high-pri
   assert.equal(technology.preanalysis.internal_relevance_score,45,'queue selection does not invent a higher relevance or evidence score');
 });
 
-test('ein akutes Sicherheitsereignis bekommt einen Platz je Lauf', async () => {
+test('Sicherheitsmeldungen verdrängen nicht pauschal höher priorisierte Themen', async () => {
   const { partitionAiQueue } = await import('../../scripts/news/run.mjs');
   const candidate = (id, score, signals = []) => ({ story_id: id, sources: [], preanalysis: { internal_relevance_score: score,
     event_score: { signals, priority: score >= 75 ? 'TOP' : 'HIGH' }, news_value_signals: signals } });
   const stage = { stage: 1, threshold: 30, max_stories_per_run: 8 };
   const now = '2026-09-16T14:00:00.000Z';
-  // Natalie: eine Messerattacke hat Wirkung auf Sicherheit und Demokratie. Sie
-  // darf nicht hinter dem frischen Strom verfallen.
+  // Sicherheitsrelevanz bleibt erhalten, ist aber keine reservierte Rubrik.
   const queue = [candidate('frisch-1', 90), candidate('frisch-2', 85), candidate('frisch-3', 80), candidate('messerangriff', 67, ['acute_safety'])];
-  assert.deepEqual(partitionAiQueue(queue, stage, 3, now).selected.map((c) => c.story_id), ['frisch-1', 'frisch-2', 'messerangriff']);
+  assert.deepEqual(partitionAiQueue(queue, stage, 3, now).selected.map((c) => c.story_id), ['frisch-1', 'frisch-2', 'frisch-3']);
   // Ohne akutes Ereignis bleibt die Reihenfolge unberührt.
   assert.deepEqual(partitionAiQueue(queue.slice(0, 3), stage, 3, now).selected.map((c) => c.story_id), ['frisch-1', 'frisch-2', 'frisch-3']);
   // Ist eines schon gewählt, wird kein zweiter Platz belegt.
@@ -319,5 +318,5 @@ test('ein akutes Sicherheitsereignis bekommt einen Platz je Lauf', async () => {
   assert.deepEqual(partitionAiQueue(queue, stage, 1, now).selected.map((c) => c.story_id), ['frisch-1']);
   // Und die zurückgestellten Kandidaten bleiben vollständig.
   const result = partitionAiQueue(queue, stage, 3, now);
-  assert.deepEqual(result.deferred.map((c) => c.story_id), ['frisch-3']);
+  assert.deepEqual(result.deferred.map((c) => c.story_id), ['messerangriff']);
 });
