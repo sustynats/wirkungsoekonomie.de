@@ -5,6 +5,20 @@ Verbindliche Betriebsarchitektur des Wirkungstickers. Sie ersetzt die Dropbox-Ch
 
 ## Betriebsschalter und Wiederanlauf (23.09.2026)
 
+### Ergaenzung vom 01.10.2026: jede neue beobachtete Folge als privater Entwurf
+
+Fuer alle aktiv konfigurierten Sendungen und Podcasts ist kein neuer Einzelauftrag
+noetig. `scripts/news/sendungs-kandidaten.mjs` uebergibt neue Folgen in die bestehende
+private Redaktionsspur. Die fruehere Nur-Metadaten-Ausnahme fuer Machtwechsel und
+ihr zusaetzlicher Themenfilter entfallen. Unbearbeitete technische Beobachtungs-HOLDs
+werden ohne zweite Job-ID uebernommen; bereits bearbeitete oder freigegebene
+Fassungen bleiben geschuetzt. Ausstehende Episodenmetadaten bleiben im vorhandenen
+Beobachtungsspeicher erhalten, auch wenn das Tageskontingent voll ist oder die Folge
+spaeter aus dem Feedfenster faellt. Quellen-/Wortlautpruefung, Zugriffsschutz,
+Dublettenpruefung und unveraenderte Lauf-, Tages- und Transkriptionslimits gelten
+weiter. Keine automatische Veroeffentlichung: `single_final_approval` bleibt
+verbindlich. Details und Ruecknahme: `docs/news/PRIVATE-EDITORIAL.md`.
+
 ### Korrektur vom 25.09.2026: unabhängige Redaktionsspur
 
 Natalie hat die Kopplung von Nachrichten und Nachbesprechungen/Analysen ausdrücklich
