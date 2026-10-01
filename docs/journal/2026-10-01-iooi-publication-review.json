@@ -1,57 +1,58 @@
 {
   "date": "2026-10-01",
   "article": "https://wirkungsoekonomie.de/blog/iooi-wirkungsoekonomie-was-hat-die-strecke-bewirkt.html",
-  "manuscript_version": "1.2",
-  "original_filename": "IOOI_Wirkungsoekonomie_Journal_Endfassung.docx",
-  "original_sha256": "0824299e0b806d3ff6d001ece75f1b7f18061bfaaefa24d0aacbcff7021c7ac6",
-  "original_archive": "Unverändert im lokalen privaten Archiv; nicht im öffentlichen Release.",
-  "manuscript": "Alle Artikelabsätze, Überschriften, Rechenschritte, Quellen und Versionshinweise erhalten. Keine inhaltlichen Korrekturen.",
-  "typesetting": "Bestehende Journalvorlage, Quellenanker, Inhaltsverzeichnis, responsive Formeldarstellung; Quellenverzeichnis auf eigener PDF-Seite. Modellhinweis als sichtbare Notiz statt ausgeblendeter Alt-Statusklasse.",
+  "manuscript_version": "2.0",
+  "original_filename": "IOOI_Wirkungsoekonomie_Journal_Ebenenmodell_v2.docx",
+  "original_sha256": "5c615310fc12bb9e695299efe7cc97358639dc356152c170198105e8b5739fb1",
+  "original_archive": "Unverändert im privaten lokalen Archiv; ersetzte Fassung ebenfalls erhalten, nicht öffentlich ausgeliefert.",
+  "manuscript": "Alle 109 Artikelabsätze und acht Tabellenzeilen der neuen Vorlage übernommen. Titelbild unverändert. Zusätzliche Grafik der ersetzten Fassung entfernt.",
+  "typesetting": "Bestehende Journalvorlage, Quellenanker, Inhaltsverzeichnis, Formeln, semantische Tabelle mit wiederholtem Tabellenkopf im PDF; Quellen auf eigener Seite. Bestehender separater NWI-Begriffshinweis in Web und PDF, ohne Änderung des Manuskripttexts.",
+  "source_link_precision": {
+    "7": "Direkt auf den Begriffsleitfaden statt die Homepage verlinkt.",
+    "8": "Kanonische Buchadresse statt Weiterleitungsroute verwendet."
+  },
   "images": {
     "title_sha256": "2ecde07a9080aa54228a75f797ca0a9df1c8d94a658cb0116d9afee4eac10967",
-    "embedded_diagram_sha256": "2fb0528d5ce40bd812b3bd0fd73c510270f95c78c34dc17832815b29211783a3",
-    "caption": "Titelillustration kennzeichnet positive Folgen als mögliche Ergebnisse, nicht als Wirkungsnachweis.",
     "unchanged": true
   },
   "pdf": {
     "pages": 11,
-    "mode": "Bestehende textorientierte Journal-Lesefassung; Hinweis auf Abbildungen in der Onlinefassung.",
-    "sha256": "a0f339379224fc32a047da9b81078d558004929f6fe18d7165881fb5edc81c46"
+    "sha256": "ee1743748aa2d16976598dc9ebec9ff3edb566874564ae2dd69a3f34ce9ee078",
+    "bytes": 371151
   },
   "source_verification": {
-    "urls": 14,
-    "all_retrieved": true,
-    "checks": [
-      "Aktionsplan S.9-10: Input, Output, Outcome, Impact; FWK und Phasenbezug",
-      "BMF: qualitative Impact-Angaben, kausale Zurechnung, Nachsteuerung",
-      "OECD gedruckte S.36,53-54,60-61: Impact, Results Chain, Theory of Change und Transformative Effects",
-      "PHINEO, Bertelsmann, Impact Frontiers und AMEC: bestehende Methodik und Lernschleifen",
-      "Agenda 2030 Absatz9 und SDG16.10.1: Demokratiebezug und Schutz des Journalismus",
-      "Differenz-von-Differenzen: Annahmen und Grenzen als Methodenreferenz",
-      "WÖk-Begriffsleitfaden v1.7 als ausdrücklich eigene Modellreferenz"
-    ]
+    "entries": 12,
+    "reused_verified_sources": 9,
+    "new_or_precise_sources": [
+      "Eurostat NACE Rev. 2.1, Ausgabe 2026, vom 17. September 2026",
+      "Führender WÖk-Begriffsleitfaden v1.7, Instrumentendefinitionen",
+      "Grundlagenwerk, kanonische Buchadresse"
+    ],
+    "http_checks": "11 Direktabrufe mit HTTP 200; OECD-Katalog schützt automatisierte Direktabrufe (403), Publikation anhand amtlichem PDF und Web-Katalog geprüft."
   },
   "arithmetic": {
     "observed_minutes": 4,
-    "baseline_goal_progress": 0.6666666667,
+    "goal_progress_percent": 66.6666667,
     "estimated_attributed_minutes": 3,
     "annual_hours": 100000,
     "annual_side_effect_hours": -20000,
-    "annual_balance": 80000,
+    "annual_balance_hours": 80000,
     "sensitivity_hours": [
-      63333.33333333,
-      96666.66666667
+      63333.3333333,
+      96666.6666667
     ],
     "ten_year_balance_hours": 720000,
-    "cost_per_hour": 166.6666666667
+    "cost_per_hour": 166.6666667
   },
   "checks": [
-    "Word-Manuskript vollständig gelesen und gerendert",
-    "Alle elf finalen PDF-Seiten visuell geprüft",
-    "HTML-Text gegen alle Artikelabsätze geprüft",
-    "68 interne Quellen- und Abschnittsanker geprüft",
-    "162 Journalartikel: Index und neue PDF-Zuordnung korrekt",
-    "Suchindex und Neuigkeitenintegration geprüft"
+    "Alle neun Seiten des Word-Dokuments gerendert und geprüft",
+    "Alle elf Seiten der neuen PDF-Lesefassung visuell geprüft",
+    "HTML-Text und vollständige Tabelle gegen neue Vorlage abgeglichen",
+    "Titelbild anhand SHA-256 als unverändert bestätigt",
+    "29 interne Abschnitts- und Quellenanker gültig",
+    "Mobile Tabelle mit 390-Pixel-Ansicht und seitlichem Scrollen geprüft; keine überbreite Gesamtseite",
+    "Vollständiger lokaler Build und Veröffentlichungspaket erfolgreich",
+    "Interne Linkprüfung: 0 defekte Links; öffentliche Dokumentformate bestanden"
   ],
   "deployment": "GitHub Pages; Live-Abnahme nach erfolgreichem Deployment"
 }

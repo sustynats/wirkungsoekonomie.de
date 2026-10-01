@@ -1,0 +1,18 @@
+/* Keep four-column journal comparisons readable within the existing scroll wrapper. */
+@media screen and (max-width: 760px) {
+  body .article-body .table-scroll table {
+    min-width: 48rem !important;
+    max-width: none;
+  }
+
+  body .article-body .table-scroll th,
+  body .article-body .table-scroll td {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  body .article-body .table-scroll col:nth-child(1) { width: 9% !important; }
+  body .article-body .table-scroll col:nth-child(2) { width: 23% !important; }
+  body .article-body .table-scroll col:nth-child(3) { width: 28% !important; }
+  body .article-body .table-scroll col:nth-child(4) { width: 40% !important; }
+}
