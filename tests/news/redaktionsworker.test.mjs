@@ -402,6 +402,19 @@ test('the editorial steps wait for a busy import lane instead of skipping the cy
   assert.equal(skipped.status, 'skipped'); assert.equal(skipped.reason, 'BRIDGE_RUN_LOCKED'); assert.equal(attempts, 3);
 });
 
+test('queued drafts run before proposal work and three lane waits cannot consume the job timeout', async () => {
+  const fs = await import('node:fs');
+  const { LANE_WAIT } = await import('../../scripts/news/redaktionsworker.mjs');
+  assert.ok(LANE_WAIT.retries * LANE_WAIT.waitMs <= 60000);
+  const workflow = fs.readFileSync(new URL('../../.github/workflows/redaktionsworker.yml', import.meta.url), 'utf8');
+  assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('run: node scripts/news/redaktions-kandidaten.mjs'));
+  assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('run: node scripts/news/sendungs-kandidaten.mjs'));
+  for (const file of ['redaktions-kandidaten', 'sendungs-kandidaten']) {
+    const source = fs.readFileSync(new URL(`../../scripts/news/${file}.mjs`, import.meta.url), 'utf8');
+    assert.doesNotMatch(source, /retries: 20|waitMs: 30000/, 'proposals use the shared fifteen-second wait');
+  }
+});
+
 test('der Redaktionsvertrag nennt die Felder der Ablage, ohne einen fertigen Text daran scheitern zu lassen', async () => {
   const { validateApiOutput } = await import('../../scripts/news/bridge/api-processor.mjs');
   const { EDITORIAL_REQUEST_CONTRACT_V4 } = await import('../../scripts/news/bridge/intake-processing.mjs');

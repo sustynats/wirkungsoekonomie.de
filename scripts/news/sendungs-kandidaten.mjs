@@ -417,7 +417,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
   let acquired = false;
   try {
-    await acquireLane(() => store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}2` }), { retries: 20, waitMs: 30000, ...(laneWait || {}) });
+    await acquireLane(() => store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}2` }), { ...(laneWait || {}) });
     acquired = true;
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
   try {

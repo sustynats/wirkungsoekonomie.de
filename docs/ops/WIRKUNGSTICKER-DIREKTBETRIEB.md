@@ -294,6 +294,39 @@ Push (`--finalize`). Eine gestörte Redaktion hält den Nachrichtenlauf nie an.
 
 ## Prüfen
 
+### Betriebsreparatur vom 01.10.2026
+
+- Der Betriebsmonitor benoetigt auch `assets/js/ticker-order.js` im Sparse-Checkout.
+  Der Abhaengigkeitstest erfasst jetzt `.js`, `.mjs` und `.cjs`.
+- Der lesende Auftragsbefund zeigt den Importspur-Besitzer und den Erwerbszeitpunkt,
+  soweit vom Server vorhanden. Bei unlesbarer Queue ist die Zahl verbrauchter
+  Auftraege unbekannt (`null`), nicht null Auftraege.
+- Bereits eingereihte Entwuerfe laufen vor neuer Vorschlagssuche. Kandidaten warten
+  hoechstens 15 Sekunden, Entwuerfe 60 Sekunden auf einen belegten Importplatz;
+  zuvor konnten drei Zehn-Minuten-Wartefenster das 25-Minuten-Joblimit aufbrauchen.
+  Das ist keine Entsperrung: aktive Besitzer und Natalies Freigabe bleiben geschuetzt.
+- Kein reservierter Sicherheitsplatz mehr. Kleine Nachrichtenlaeufe folgen der
+  ausbalancierten Rangfolge; Potenzialreparaturen erhalten erst ab vier Plaetzen
+  einen reservierten Platz. Die Reparaturauftraege bleiben gespeichert.
+- `EDITORIAL_RELEVANCE_BELOW_THRESHOLD` unterscheidet die lokale Vorauswahl vom
+  tatsaechlichen Budgetstopp `AI_BUDGET_BLOCKED`.
+- MDR-Artikelversionen mit gleicher Dokumentkennung hinter dem Komma werden als
+  dasselbe Dokument erkannt. Ortspruefung, Datum und Konfliktschutz bleiben bindend.
+  Auch grossgeschriebenes „In“ wird als Ortsangabe erkannt. Zusammenfuehrungen
+  behalten historische Texte, Quellen und URLs; neue Belege werden erneut geprueft.
+- Die Zahl bei „Freigeben“ zaehlt nur `AWAITING_FINAL_APPROVAL`. Technische
+  Klaerungen und unveraenderte Rueckgaben bleiben sichtbar, werden aber nicht
+  mehr als neue freigabefaehige Entwuerfe angezeigt. Eine leere Freigabeliste
+  wird auch bei vorhandener Historie ausdruecklich erklaert.
+
+Die serverseitige Importsperre ist separat zu pruefen. Ein erfolgreicher Build,
+ein erreichbarer Health-Endpunkt oder ein neuer Worker-Start beweist noch keinen
+fertigen Entwurf und keine Veroeffentlichung. `process_holds_lock=false` bei
+`BRIDGE_RUN_LOCKED` bedeutet: ein anderer lokaler Prozess besitzt die SQLite-Spur.
+Kein TTL-Entsperren und kein Loeschen der Datenbank. Vor einem Servereingriff
+Besitzer und Aktivitaet feststellen, SQLite-Backup erstellen und den bestehenden
+Dienst-/Rollbackweg verwenden. Das private Freigaberegister bleibt massgeblich.
+
 ```bash
 npm run news:test
 WIRKUNGSTICKER_PROCESSING_MODE=api node scripts/news/run-api.mjs --dry-run
