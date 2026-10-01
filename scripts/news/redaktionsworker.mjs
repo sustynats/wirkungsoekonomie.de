@@ -126,10 +126,10 @@ export function researchInstructions(instructions, maxSearches) {
 // OpenAI bills hosted web search per call in addition to the tokens it adds.
 export const WEB_SEARCH_USD_PER_CALL = 0.01;
 
-// The news run holds the import lane for its whole duration and both workflows
-// start on the same Oracle push; instead of losing the cycle, an editorial step
-// waits for the lane (at most ten minutes).
-export const LANE_WAIT = { retries: 20, waitMs: 30000 };
+// Ein kurzer belegter Import darf abgewartet werden. Drei aufeinanderfolgende
+// Zehn-Minuten-Wartefenster verbrauchten dagegen das gesamte 25-Minuten-Joblimit.
+// Nach einer Minute bleibt der Auftrag fuer den naechsten regulaeren Lauf liegen.
+export const LANE_WAIT = { retries: 4, waitMs: 15000 };
 
 // The linked articles are fetched once and travel as text excerpts inside the
 // request packet (origin.source_excerpts). The profile accepts only supplied

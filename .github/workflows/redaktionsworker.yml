@@ -80,6 +80,14 @@ jobs:
           node-version: "22"
       - name: Worker tests
         run: node --test tests/news/redaktionsworker.test.mjs tests/news/import-approved-editorials.test.mjs
+      - name: Draft open editorial requests (one paid call per request)
+        # Liegengebliebene Auftraege zuerst. Discovery/Transkription darf nicht
+        # vorher das gesamte Laufzeitfenster verbrauchen. Neue Kandidaten werden
+        # spaetestens im folgenden regulaeren Lauf bearbeitet.
+        if: vars.WOEK_EDITORIAL_PAID_ENABLED == 'true'
+        env:
+          WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/editorial-raw-output
+        run: node scripts/news/redaktionsworker.mjs
       - name: Propose Meinung-und-Analyse candidates as editorial requests
         # Seit 16.09. standardmäßig an (Natalie: Meinung & Analyse soll automatisiert laufen);
         # abschaltbar über die Variable WOEK_EDITORIAL_AUTO_CANDIDATES=false.
@@ -101,16 +109,6 @@ jobs:
         if: vars.WOEK_EDITORIAL_AUTO_EPISODES != 'false'
         continue-on-error: true
         run: node scripts/news/sendungs-kandidaten.mjs
-      - name: Draft open editorial requests (one paid call per request)
-        # Expliziter Betriebsschalter; Wiederanlauf von Natalie am 23.09. freigegeben.
-        # Quellen-/Budgetgates und finale Freigabe in der Redaktionsapp bleiben bestehen.
-        if: vars.WOEK_EDITORIAL_PAID_ENABLED == 'true'
-        env:
-          # github.workspace ist auch in Schritten verfügbar; nur hier gesetzt, damit die
-          # Tests davor keine Fixture-Antworten in den Diagnoseordner schreiben.
-          # Kein Punkt-Ordner: upload-artifact lässt versteckte Dateien standardmäßig aus.
-          WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/editorial-raw-output
-        run: node scripts/news/redaktionsworker.mjs
       - name: Preserve paid model answers for diagnosis
         if: always()
         uses: actions/upload-artifact@v4
