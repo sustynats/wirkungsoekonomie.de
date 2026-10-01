@@ -1,7 +1,72 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-01T04:00:00.000Z",
+  "updated_at": "2026-10-01T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-01-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-01",
+      "window_from": "2026-10-01T04:00:00.000Z",
+      "window_to": "2026-10-01T10:00:00.000Z",
+      "stand": "2026-10-01T10:00:00.000Z",
+      "headline": "Das sind die 6 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 6,
+        "neu": 5,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-1dea456d53695483",
+          "slug": "dresden-prohlis-schusse-bei-verhaftung-51-jahriger-schwer-verletzt-695483",
+          "title": "Laut stern: 51-Jähriger bei Verhaftung in Dresden-Prohlis schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-01T09:49:45.699Z",
+          "score": 5.9716
+        },
+        {
+          "story_id": "wt-ce875eee145a3270",
+          "slug": "schusswaffengewalt-wieder-schusse-in-berlin-polizei-sucht-tater-5a3270",
+          "title": "Laut stern: Erneute Schüsse in Berlin, zwei Männer schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-01T08:33:49.276Z",
+          "score": 7.7606
+        },
+        {
+          "story_id": "wt-e927db99cae6c479",
+          "slug": "sprengstoffdrohnen-vorfall-am-flughafen-leipzig-halle-e6c479",
+          "title": "Bundestag befasst sich mit Sprengstoffdrohnen-Vorfall am Flughafen Leipzig/Halle",
+          "state": "neu",
+          "at": "2026-10-01T07:51:10.263Z",
+          "score": 6.1421
+        },
+        {
+          "story_id": "wt-6990b95b4474d0be",
+          "slug": "tankrabatt-gilt-seit-mitternacht-sprit-schon-deutlich-gunstiger-insolvenzverfahren-bei-v-74d0be",
+          "title": "Laut SWR: Verkehr, Gesundheit und Wohnen prägen Meldungslage in Baden-Württemberg",
+          "state": "neu",
+          "at": "2026-10-01T07:23:37.825Z",
+          "score": 3.9061
+        },
+        {
+          "story_id": "wt-c7f98b313319fc35",
+          "slug": "dresden-mutmasslicher-sexualstraftater-bei-festnahme-durch-schuss-verletzt-19fc35",
+          "title": "Laut Polizei: 51-Jähriger bei Festnahme in Dresden durch Schuss schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-01T05:31:33.769Z",
+          "score": 9.5703
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt in Kraft – Preise fallen laut SWR",
+          "state": "fortgeschrieben",
+          "at": "2026-10-01T04:49:32.032Z",
+          "score": 5.3876
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-01-morgenlage",
       "slot": "morgenlage",
