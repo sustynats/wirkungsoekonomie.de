@@ -12,12 +12,12 @@ import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { decodeXml, assertSafeFeedUrl } from './lib.mjs';
 import { respectRobots } from './access-policy.mjs';
-import { eventSignals } from './event-relevance.mjs';
 import { transcribeEpisode, fetchSubtitleTranscript } from './sendungs-transkript.mjs';
 import { episodeUrlKey, parseYouTubeFeed, inspectYouTubeEpisode, fetchYouTubeTranscript, matchingPodcastEpisode, matchingPodcastFallback } from './youtube-episodes.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const EPISODE_VERSION = 'sendungs-kandidaten-1';
+export const AUTOMATIC_DRAFT_POLICY = 'all-followed-episodes-2026-10-01';
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED']);
 const LABEL = { watched: 'Nachgesehen', listened: 'Nachgehört' };
 
@@ -90,7 +90,22 @@ export async function fetchTranscript(transcript, fetchImpl = fetch, timeoutMs =
 // Episodes Natalie already requested or published must not come back as proposals.
 // Eigene, selbst eingereihte Folgenauftraege sind an ihrer Herkunft erkennbar.
 export const ownEpisodeRequest = (job) => job?.intake?.trigger_type === 'automatic_episode'
+  || job?.intake?.trigger_type === 'automatic_episode_observation'
   || job?.input?.origin?.proposed_by === 'github_direct_worker';
+
+// Nur der alte, technisch erzeugte Metadaten-HOLD ist umstellbar. Menschliche
+// Entscheidungen, bereits bezahlte Bearbeitungen und Freigaben bleiben unberuehrt.
+export const observationOnlyRequest = (job) => job?.intake?.trigger_type === 'automatic_episode_observation'
+  && job.intake.automatic_generation_allowed === false && job.status === 'accepted'
+  && job.accepted?.decision === 'hold' && !job.ack && !job.staging && !job.completed_at
+  && !job.preview && !job.approval && !job.archived_at;
+export const pendingEpisodesKey = (show) => `github-episode-pending:${show.id}`;
+
+async function hasProcessingArtifact(transport, id) {
+  const occupied = await Promise.all(['10_CLAIMED', '20_OUTPUT_READY', '30_ACK'].map(folder =>
+    transport.metadata?.(bridgePath(folder, `${id}.${folder === '30_ACK' ? 'ack' : folder === '20_OUTPUT_READY' ? 'output' : 'input'}.json`))));
+  return occupied.some(Boolean);
+}
 
 // Ein Vermerk je Folge, nicht je Zeile der Mediathek.
 export const observationKey = (show, episode) => `github-episode:${show.id}:${hash(episode.key || episode.guid).slice(0, 32)}`;
@@ -98,19 +113,9 @@ export const pageObservationKey = (episode) => /^https?:\/\//.test(episode?.page
   ? `github-episode-page:${hash(episodeUrlKey(episode.page)).slice(0, 32)}`
   : null;
 
-// A metadata signal can justify a private research candidate, never a factual
-// verdict or an article. No person/party names and no implied election forecast.
-export function episodeMateriality(episode) {
-  const f = eventSignals(episode);
-  const representation = /\b(wahlbeteiligung|steuerhinterziehung|parteigrundung|neugrundung|eigene partei|reprasentation|koalition\w*|reformen)\b/.test(f.text);
-  return { relevant: !f.routine && (f.material || f.institutional || f.signals.length > 0 || representation),
-    basis: 'bounded_provider_metadata', signals: [...f.signals, ...(f.material ? ['material_function'] : []),
-      ...(f.institutional ? ['institutional_function'] : []), ...(representation ? ['democratic_or_fiscal_function'] : [])] };
-}
-
 export function buildObservationRequest(episode, show, options) {
-  // Even if a future feed offers a transcript/enclosure, this mode cannot
-  // fetch it, send it to a model or silently turn into the normal draft lane.
+  // Historischer Datensatz / Migrationsfixture, nicht mehr im aktiven Lauf.
+  // Der alte Auftrag bildet noch keine Zustimmung zur Publikation ab.
   const result = buildEpisodeRequest({ ...episode, media: '', transcripts: [] }, show, { ...options, transcript: null, retry: false });
   const { job } = result;
   job.input.instructions = 'Nur privater Episodenkandidat aus Titel, Datum, Episoden-URL und begrenzten Shownotes. Keine automatische Texterstellung, Recherche, Transkription oder Publikation. Inhaltliche Bearbeitung erst nach konkretem Redaktionsauftrag; abschliessende Freigabe bleibt erforderlich.';
@@ -277,7 +282,8 @@ export function buildEpisodeRequest(episode, show, { owner, now, transcript = nu
 
 export function loadShows(root = ROOT) {
   return (JSON.parse(fs.readFileSync(path.join(root, 'data/news/show-feeds.json'), 'utf8')).shows || [])
-    .filter((show) => show.enabled !== false && (/^https:\/\//.test(show.feed || '') || (show.mediathek?.title && show.mediathek?.channel)));
+    .filter((show) => show.enabled !== false && (/^https:\/\//.test(show.feed || '') || (show.mediathek?.title && show.mediathek?.channel)))
+    .map((show) => ({ ...show, observation_only: false, draft_policy: AUTOMATIC_DRAFT_POLICY }));
 }
 
 // MediathekViewWeb-Abfrage statt RSS: nur sie liefert url_subtitle, also die
@@ -380,14 +386,12 @@ export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toI
       failures.push(failure); onError?.(failure);
       if (audio) episodes.push({ ...candidate, page: audio.page, media: audio.media, duration: audio.duration,
         transcripts: audio.transcripts, delivery_kind: 'listened', podcast_basis: audio.page });
-      if (episodes.length >= 3) break;
       continue;
     }
     if (!episode) continue;
     const match = matchingPodcastEpisode(episode, podcast, show);
     if (match) Object.assign(episode, { media: match.media, transcripts: match.transcripts, podcast_basis: match.page || show.podcast_feed });
     episodes.push(episode);
-    if (episodes.length >= 3) break;
   }
   if (!episodes.length && failures.length && !onError) throw new Error(failures[0].error);
   return episodes;
@@ -398,7 +402,7 @@ export async function fetchShowFeed(show, fetchImpl = fetch, timeoutMs = 20000) 
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
     if (show.respect_robots) await respectRobots(show.feed, { request_timeout_ms: timeoutMs }, fetchImpl, assertSafeFeedUrl, new Set([new URL(show.feed).hostname]));
-    const response = await fetchImpl(show.feed, { signal: controller.signal, ...(show.observation_only ? { redirect: 'error' } : {}), headers: { 'User-Agent': show.respect_robots ? 'WOek-Wirkungsticker' : 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)', Accept: 'application/rss+xml, application/xml, text/xml' } });
+    const response = await fetchImpl(show.feed, { signal: controller.signal, ...(show.respect_robots || show.observation_only ? { redirect: 'error' } : {}), headers: { 'User-Agent': show.respect_robots ? 'WOek-Wirkungsticker' : 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)', Accept: 'application/rss+xml, application/xml, text/xml' } });
     if (!response.ok) throw new Error(`SHOW_FEED_HTTP_${response.status}`);
     return await response.text();
   } finally { clearTimeout(timer); }
@@ -419,7 +423,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
   try {
     const day = String(now).slice(0, 10);
     const counter = (await store.observation(`github-episode-day:${day}`)) || { day, proposed: 0 };
-    if (counter.proposed >= maxPerDay && !(shows || loadShows(root)).some(s => s.observation_only)) return { status: 'daily_limit', day, proposed: [] };
+    const followedShows = (shows || loadShows(root)).filter(show => show.enabled !== false);
     const rows = await store.all();
     // The owner of the private desk is only known from a real submitted request.
     const reference = rows.find((row) => row?.input?.job_type === 'editorial_request');
@@ -436,8 +440,13 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const known = knownEpisodeUrls({ editions, requests: requests.filter((job) => !ownEpisodeRequest(job)) });
     const seen = (u) => u && known.has(episodeUrlKey(u));
     const ownRequests = requests.filter((job) => !ownEpisodeRequest(job));
-    const feedErrors = [], fresh = [], duplicates = [];
-    for (const show of shows || loadShows(root)) {
+    const feedErrors = [], fresh = [], duplicates = [], pending = new Map();
+    for (const show of followedShows) {
+      const pendingKey = pendingEpisodesKey(show);
+      const saved = await store.observation(pendingKey);
+      const remembered = Array.isArray(saved?.episodes) ? saved.episodes : [];
+      const outstanding = new Map();
+      pending.set(show.id, outstanding);
       try {
         // Sendungen mit festem Rhythmus sind nach sieben Tagen erledigt. Reihen
         // wie Terra X Lesch & Co oder MAITHINK X senden in Staffeln und liegen
@@ -445,7 +454,14 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
         // gilt das Fenster ihrer Sendung, sonst waere ihre letzte Folge nie
         // vorgeschlagen worden.
         const showAgeDays = Number(show.max_age_days) > 0 ? Number(show.max_age_days) : maxAgeDays;
-        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl, now, { onError: error => feedErrors.push(error) }), now, { maxAgeDays: showAgeDays, limit: 3 });
+        let fetched = [];
+        try { fetched = await showEpisodes(show, fetchImpl, now, { onError: error => feedErrors.push(error) }); }
+        catch (error) { feedErrors.push({ show_id: show.id, error: String(error.message || error).slice(0, 80) }); }
+        // Ein Mengenlimit darf bereits erkannte Folgen nicht aus dem Feedfenster
+        // druecken. Nur begrenzte Metadaten, im bestehenden Beobachtungsspeicher.
+        // Frische Metadaten ergaenzen spaeter erscheinende Untertitel.
+        const episodes = [...new Map([...remembered, ...selectNewEpisodes(fetched, now, { maxAgeDays: showAgeDays, limit: fetched.length })]
+          .map(episode => [observationKey(show, episode), episode])).values()];
         for (const episode of episodes) {
           if (show.monitoring_since && Date.parse(episode.published_at) < Date.parse(show.monitoring_since)) continue;
           // Die Kennung der Mediathek wechselt, sobald die untertitelte Fassung
@@ -457,16 +473,21 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           const previous = (await store.observation(episodeAnchor))
             || (await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`))
             || (pageAnchor ? await store.observation(pageAnchor) : null);
-          if (show.observation_only) {
-            const materiality = episodeMateriality(episode);
-            // Stored in the existing observation table, not a second watchlist.
-            await store.observe(`episode-metadata:${show.id}:${hash(episode.guid).slice(0, 32)}`, {
-              show_id: show.id, title: episode.title, published_at: episode.published_at,
-              url: episode.page, shownotes: episode.summary, checked_at: now, materiality,
-              already_requested: Boolean(seen(episode.page)), candidate_job_id: previous?.job_id || null,
-            });
-            if (previous || seen(episode.page) || !materiality.relevant) continue;
-          }
+          const priorRequest = previous?.job_id ? await store.get(previous.job_id) : requests.find(job => ownEpisodeRequest(job)
+            && job.input.origin?.show_id === show.id && (job.input.origin.episode_guid === episode.guid
+              || job.input.request?.links?.some(url => episode.page && episodeUrlKey(url) === episodeUrlKey(episode.page))));
+          const promotion = observationOnlyRequest(priorRequest) ? priorRequest : null;
+          await store.observe(`episode-metadata:${show.id}:${hash(episode.guid).slice(0, 32)}`, {
+            show_id: show.id, title: episode.title, published_at: episode.published_at,
+            url: episode.page, shownotes: episode.summary, checked_at: now,
+            draft_policy: AUTOMATIC_DRAFT_POLICY, already_requested: Boolean(seen(episode.page)),
+            candidate_job_id: priorRequest?.input.job_id || previous?.job_id || null,
+          });
+          if (promotion && (await store.observation(`github-attempt:${promotion.input.job_id}`)
+            || await store.observation(`github-claim:${promotion.input.job_id}.input.json`))) continue;
+          if (promotion && await hasProcessingArtifact(transport, promotion.input.job_id)) continue;
+          if (previous?.observation_only && !promotion) continue;
+          if (!previous && priorRequest && !promotion) continue;
           // Eine Folge, die ohne Wortlaut eingereiht wurde, darf genau einmal
           // erneut eingereiht werden, sobald ein Wortlaut vorliegt: der erste
           // Auftrag lief vertragsgemäß in eine Rückfrage und ist verbraucht
@@ -474,16 +495,18 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           // Vermerke aus der Zeit vor dieser Regel kennen das Feld nicht; ein
           // fehlender Eintrag bedeutet ebenfalls: ohne Wortlaut eingereiht.
           const retryable = previous && (previous.transcript_origin ?? null) === null && !previous.retried_with_transcript;
-          if (previous && !retryable) continue;
+          if (previous && !retryable && !promotion) continue;
           // Die URL-Prüfung schützt vor Dubletten zu Natalies eigenen Aufträgen;
           // beim eigenen Wiederholungsversuch ist die Herkunft bekannt.
-          if (!previous && (seen(episode.page) || seen(episode.media))) continue;
+          if (seen(episode.page) || seen(episode.media)) continue;
           // Ein offener Auftrag Natalies zur selben Sendung und zum selben Thema
           // zählt wie eine bekannte Adresse: ihre Fassung hat Vorrang.
-          const twin = previous ? null : duplicateRequestFor(episode, show, ownRequests);
+          const twin = previous && !promotion ? null : duplicateRequestFor(episode, show, ownRequests);
           if (twin) { duplicates.push({ show_id: show.id, episode: episode.title, job_id: twin.job_id, shared: twin.shared.slice(0, 4) }); continue; }
-          fresh.push({ episode, show, retry: Boolean(previous) });
+          outstanding.set(episodeAnchor, episode);
+          fresh.push({ episode, show, retry: Boolean(previous) && !promotion, promotion });
         }
+        await store.observe(pendingKey, { at: now, policy: AUTOMATIC_DRAFT_POLICY, episodes: [...outstanding.values()] });
       } catch (error) { feedErrors.push({ show_id: show.id, error: String(error.message || error).slice(0, 80) }); }
     }
     fresh.sort((a, b) => b.episode.published_at.localeCompare(a.episode.published_at));
@@ -491,24 +514,8 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const transcriptDay = (await store.observation(`github-transcript-day:${day}`)) || { day, transcribed: 0, cost_usd: 0 };
     const transcriptErrors = [], waiting = [];
     const runLimit = Math.max(0, Math.min(limit, maxPerDay - counter.proposed));
-    for (const { episode, show, retry } of fresh.slice(0, runLimit ? Math.max(12, runLimit) : 0)) {
+    for (const { episode, show, retry, promotion } of fresh) {
       if (proposed.length >= runLimit) break;
-      if (show.observation_only) {
-        const { job, fingerprint } = buildObservationRequest(episode, show, { owner, now });
-        if (await store.observation(`intake-fingerprint:${fingerprint}`)) continue;
-        await store.put(job);
-        const observation = { job_id: job.input.job_id, fingerprint, at: now, version: EPISODE_VERSION,
-          title: episode.title, observation_only: true, transcript_origin: null };
-        await store.observe(observationKey(show, episode), observation);
-        const pageKey = pageObservationKey(episode);
-        if (pageKey) await store.observe(pageKey, observation);
-        await store.observe(`intake-fingerprint:${fingerprint}`, { job_id: job.input.job_id });
-        // No 00_INBOX packet: this is not a generation request.
-        proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind,
-          title: episode.title, published_at: episode.published_at, observation_only: true });
-        counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
-        continue;
-      }
       // Reihenfolge des Wortlauts: offizielles Podcast-Transkript, dann die
       // amtlichen Untertitel für Hörgeschädigte, zuletzt eigene Spracherkennung.
       let transcript = await fetchYouTubeTranscript(episode, fetchImpl);
@@ -542,17 +549,34 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript, retry });
       const key = observationKey(show, episode);
       const pageKey = pageObservationKey(episode);
-      if (await store.observation(`intake-fingerprint:${fingerprint}`)) { await store.observe(key, { job_id: null, fingerprint, at: now, version: EPISODE_VERSION, duplicate: true }); continue; }
+      if (promotion) {
+        const id = promotion.input.job_id;
+        // Keine bereits ausgegebene, beanspruchte oder freigegebene Fassung ersetzen.
+        if (await hasProcessingArtifact(transport, id) || !observationOnlyRequest(await store.get(id))) continue;
+        job.input.job_id = id; job.input.created_at = promotion.input.created_at;
+        job.created_at = promotion.created_at;
+        job.intake = { ...job.intake, owner: promotion.intake.owner, automatic_generation_allowed: true,
+          observation_promotion: { at: now, policy: AUTOMATIC_DRAFT_POLICY, previous_input_hash: promotion.input.input_hash,
+            previous_hold: promotion.intake.editorial_hold } };
+      } else if (await store.observation(`intake-fingerprint:${fingerprint}`)) { continue; }
+      job.input.origin.draft_policy = AUTOMATIC_DRAFT_POLICY;
+      job.intake.automatic_generation_allowed = true;
+      await store.put(job);
+      // Der normale Worker repariert fehlende Pakete anhand des gespeicherten
+      // Auftrags. Nicht erst den Dedupe-Vermerk ohne Auftrag zuruecklassen.
+      await transport.writeAtomic(bridgePath('00_INBOX', `${job.input.job_id}.input.json`), job.input);
       if (pageKey) await store.observe(pageKey, { job_id: job.input.job_id, at: now, version: EPISODE_VERSION, show_id: show.id, title: episode.title, transcript_origin: transcript?.origin || null, ...(retry ? { retried_with_transcript: true } : {}) });
       await store.observe(key, { job_id: job.input.job_id, fingerprint, at: now, version: EPISODE_VERSION, title: episode.title,
         transcript_origin: transcript?.origin || null, ...(retry ? { retried_with_transcript: true } : {}) });
-      await store.put(job);
       await store.observe(`intake-fingerprint:${fingerprint}`, { job_id: job.input.job_id });
-      await transport.writeAtomic(bridgePath('00_INBOX', `${job.input.job_id}.input.json`), job.input);
-      proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || null, transcript_cost_usd: transcript?.cost_usd || 0 });
+      pending.get(show.id).delete(key);
+      await store.observe(pendingEpisodesKey(show), { at: now, policy: AUTOMATIC_DRAFT_POLICY, episodes: [...pending.get(show.id).values()] });
+      proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, promoted_observation: Boolean(promotion), transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || null, transcript_cost_usd: transcript?.cost_usd || 0 });
       counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
     }
-    return { status: 'ok', day, checked_shows: (shows || loadShows(root)).length, fresh_episodes: fresh.length, feed_errors: feedErrors, duplicate_requests: duplicates, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
+    return { status: !proposed.length && counter.proposed >= maxPerDay ? 'daily_limit' : 'ok', day, draft_policy: AUTOMATIC_DRAFT_POLICY,
+      checked_shows: followedShows.length, pending_episodes: [...pending.values()].reduce((sum, rows) => sum + rows.size, 0),
+      fresh_episodes: fresh.length, feed_errors: feedErrors, duplicate_requests: duplicates, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
 }
 

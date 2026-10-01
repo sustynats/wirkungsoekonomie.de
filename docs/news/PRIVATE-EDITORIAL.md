@@ -59,23 +59,38 @@ unter denselben Locks. Erst der Nachweis des passenden Hash-Markers in der
 
 ## Betrieb
 
-### Reine Episodenbeobachtung
+### Automatische Entwuerfe fuer alle beobachteten Sendungen (01.10.2026)
 
 `data/news/show-feeds.json` bleibt die gemeinsame Sendungskonfiguration.
-`observation_only: true` (seit 26.09.2026 fuer Machtwechsel) verwendet denselben
-Feed-Parser, Beobachtungsspeicher und Dublettenabgleich, aber keinen Entwurfsjob.
-Gespeichert werden Titel, Datum, Episodenadresse und hoechstens 4.000 Zeichen
-Shownotes. Ein lokaler Themenfilter erzeugt nur bei materiellem Hinweis einen
-privaten redaktionellen Kandidaten. Dieser bleibt `accepted` mit redaktionellem
-HOLD und `automatic_generation_allowed: false`; es gibt kein `00_INBOX`-Paket,
-keinen Audio-/Transkriptabruf, keine LLM-Verarbeitung und keine Publikation.
-Ein solcher Kandidat ist weder ein gepruefter Befund noch eine Freigabefassung.
-Inhaltliche Bearbeitung braucht einen konkreten Redaktionsauftrag; jede spaetere
-Publikation weiterhin die abschliessende, fassungsgebundene Freigabe.
+Natalie hat am 01.10.2026 automatische private Analyseentwuerfe fuer jede neue
+Folge einer aktiv beobachteten Reihe beauftragt. Ein weiterer Einzelauftrag
+oder ein zusaetzlicher Themenfilter ist nicht erforderlich. Dies ersetzt die
+seit 26.09.2026 fuer Machtwechsel geltende reine Metadatenbeobachtung.
+`observation_only` unterdrueckt daher keine neuen Entwurfsauftraege mehr.
+Ausdruecklich deaktivierte Quellen bleiben deaktiviert; Ausschnitte werden
+weiterhin nach den vorhandenen Sendungs-/Laengenkriterien unterschieden.
 
-Die Metadatenbeobachtung laeuft auch am taeglichen Vorschlagslimit weiter;
-Kandidaten bleiben innerhalb der bestehenden Grenzen. Bereits beauftragte oder
-veroeffentlichte Episoden erzeugen keinen zweiten Kandidaten.
+Die Entwuerfe laufen ueber denselben Redaktionsworker, dieselbe private Queue,
+Quellenpruefung, Transkriptionsroute und dieselben unveraenderten Mengen- und
+Kostenlimits. Neue Folgen werden auch am Tageslimit erkannt. Noch ausstehende
+Folgen bleiben als begrenzte Metadaten im bestehenden Beobachtungsspeicher
+(`github-episode-pending:<show_id>`) erhalten, wenn sich Feed oder Zeitfenster
+spaeter verschieben. Dies ist keine zweite Publikationsqueue. Fehlender
+Wortlaut bleibt als Wartezustand sichtbar; Shownotes ersetzen keinen Wortlaut.
+Machtwechsel verlangt eine Transkriptgrundlage. Die erlaubte eigene Abschrift
+greift erst nach dem bisherigen Wartefenster und innerhalb des Tageslimits.
+
+Alte, ausschliesslich technisch erzeugte Metadaten-HOLDs duerfen unter derselben
+Job-ID zu einem Entwurfsauftrag werden, sofern noch kein Claim, bezahlter Versuch,
+Output, ACK oder menschlicher Review vorliegt. Der vorherige Input-Hash und
+HOLD-Grund werden im privaten Auftrag bewahrt. Menschlich bearbeitete Fassungen
+und Freigaben werden niemals ersetzt. Bereits beauftragte oder veroeffentlichte
+Folgen erzeugen keinen zweiten Artikel. Der normale Worker kann ein fehlendes
+INBOX-Paket aus dem bereits gespeicherten Auftrag wiederherstellen.
+
+Jeder Entwurf bleibt `manual_only: true` mit
+`publication_intent: final_approval_required`. Erst Natalies fassungsgebundene
+Zustimmung erlaubt die Veroeffentlichung. Buch & Wirkung bleibt manuell.
 Machtwechsels offizieller RSS-Feed wurde ueber den `rel=alternate`-Link auf
 `https://machtwechsel.podigee.io/291-neue-episode` sowie `atom:link rel=self`
 bestaetigt: `https://machtwechsel.podigee.io/feed/mp3`.
@@ -99,6 +114,7 @@ Release-Verzeichnis bereitstellen, Syntax und Speicherbedarf prüfen, dann den
 vorherigen Link und die gesicherte Konfiguration zurückgehen; private Daten bleiben
 erhalten. Keine Datenbankrücksetzung bei einem normalen Code-Rollback.
 
-Keine Text-KI-API, kein neuer KI-Anbieter und kein eigener ChatGPT-Weckdienst.
-Die derzeitige Einschränkung des automatischen ChatGPT-Dateirückschreibwegs bleibt
-separat zu lösen; die Eingabeseite behauptet keinen durchgängigen Cloud-Lauf.
+Der Eingabedienst selbst startet keine Text-KI-API und keinen eigenen
+ChatGPT-Weckdienst. Entwuerfe verarbeitet der bestehende GitHub-Redaktionsworker
+gemaess `docs/ops/WIRKUNGSTICKER-DIREKTBETRIEB.md`; die fruehere Einschraenkung
+des ChatGPT-Dateirueckschreibwegs ist keine Sperre dieser aktiven Route.
