@@ -129,6 +129,12 @@ Scheduler und kein Vercel-Deployment sind erforderlich. Ruecknahme: die einzelne
 Quelle auf `enabled: false` setzen; gespeicherte private Auftraege bleiben erhalten.
 
 `scripts/ops/woek-news-editorial.service` nutzt denselben privaten Bridge-Datenpfad.
+Nach der Publikationsmetadaten-Reparatur prueft der private Importer eine bereits
+bezahlte Nachrichtenrecherche einmal kostenlos erneut, wenn ausschliesslich der
+Nachrecherche-HOLD und ein zuvor nicht erkanntes Publikationsdatum die Fortsetzung
+blockieren. Der alte HOLD samt Antwort bleibt erhalten. Nur nach erneuter regulaerer
+Quellenpruefung entsteht der normale Nachrichtenauftrag; unabhängige Pruefung und
+Natalies abschliessende Freigabe bleiben erforderlich.
 Das Release-Bündel enthält `scripts/news`, `scripts/ops`, `content/news`,
 `assets/data/navigation.json` und die Header-/Footer-Templates. Keine `.env` oder
 Zugangswerte gehören ins Release. Discord-DM-Konfiguration liegt ausschließlich

@@ -1,5 +1,5 @@
 import {fetchPublicArticle,extractArticleText,preAnalyzeStory,claimLedgerFor,slugify} from '../lib.mjs';
-import {extractDiscoveryMetadata} from '../active-discovery.mjs';
+import {extractDiscoveryMetadata,PUBLICATION_METADATA_VERSION} from '../active-discovery.mjs';
 import {eventFingerprint,evidenceGroups} from '../newsroom.mjs';
 import {bridgeInput,sameBridgeEvent} from './adapter.mjs';
 import {hash,bridgePath} from './contract.mjs';
@@ -51,15 +51,26 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
  for(const row of store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.intake.kind')='news' AND json_extract(body,'$.intake.news_research') IS NOT NULL AND json_extract(body,'$.intake.news_job_id') IS NULL").all()){
   const parent=JSON.parse(row.body);
   if(parent.intake.news_research_hold)continue;
+  let metadataRecheck=false;
   if(parent.intake.news_repair_job_id){
    const child=store.get(parent.intake.news_repair_job_id);
    if(child?.status==='news_research_prepared')try{
     await transport.writeAtomic(bridgePath('00_INBOX',child.input.job_id+'.input.json'),child.input);
     child.status='queued';child.queued_at=now();store.put(child);
    }catch{/* The exact durable input is retried; no replacement job or output. */}
-   continue;
+   metadataRecheck=child?.accepted?.decision==='hold'
+    &&child.intake?.editorial_hold?.code==='SOURCE_VERIFICATION_REQUIRED'
+    &&parent.intake.source_errors?.some(item=>item.error_code==='SOURCE_PUBLICATION_METADATA_MISSING')
+    &&parent.intake.news_metadata_recheck?.version!==PUBLICATION_METADATA_VERSION;
+   if(!metadataRecheck)continue;
   }
   if(parent.intake.news_retry_at&&Date.parse(parent.intake.news_retry_at)>Date.parse(now()))continue;
+  if(metadataRecheck){
+   // Recheck the already-paid, immutable research once after an adapter fix.
+   // This does not regenerate text, approve anything or overwrite a HOLD.
+   parent.intake.news_metadata_recheck={version:PUBLICATION_METADATA_VERSION,at:now(),repair_job_id:parent.intake.news_repair_job_id};
+   store.put(parent);
+  }
   try{
    const preview=parent.intake.news_research,sources=[],sourceErrors=[];
    const leadUrls=parent.input.request.links||[];
@@ -97,7 +108,7 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    candidate.preanalysis=preAnalyzeStory(candidate,now());candidate.topic=candidate.preanalysis.topics;
    candidate.claims=claimLedgerFor(sources,candidate.story_id,now());candidate.evidence_groups=evidenceGroups(sources);
    const existing=existingIntakeNewsJob(store,candidate);
-   if(existing){parent.intake.news_job_id=existing;parent.intake.news_shared=true;store.put(parent);continue;}
+   if(existing){parent.intake.news_job_id=existing;parent.intake.news_shared=true;if(metadataRecheck)delete parent.intake.news_repair_job_id;store.put(parent);continue;}
    const input=bridgeInput(candidate,now());
    input.discovery.importance_signals.push('manual_editorial_request');
    if(parent.input.request.urgent)input.discovery.importance_signals.push('urgent_manual_editorial_request');
@@ -105,7 +116,7 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    let job=store.get(input.job_id);
    if(!job){job={input,candidate,status:'prepared',attempts:{},created_at:now(),intake_news_parent:parent.input.job_id};store.put(job);}
    if(job.status==='prepared'){await transport.writeAtomic(bridgePath('00_INBOX',input.job_id+'.input.json'),input);job.status='queued';job.queued_at=now();store.put(job);}
-   parent.intake.news_job_id=input.job_id;delete parent.last_error;store.put(parent);
+   parent.intake.news_job_id=input.job_id;if(metadataRecheck)delete parent.intake.news_repair_job_id;delete parent.last_error;store.put(parent);
   }catch(error){
    const delays=(parent.intake.source_errors||[]).filter(s=>s.error_code==='ROBOTS_CRAWL_DELAY_DEFERRED').map(s=>s.retry_after_seconds).filter(n=>Number.isFinite(n)&&n>0);
    const retryMs=delays.length?Math.max(30000,Math.min(...delays)*1000):15*60000;
@@ -113,7 +124,7 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    const needsResearch=['INTAKE_NEWS_LEAD_UNBOUND','INTAKE_NEWS_SOURCE_MISMATCH'].includes(error.message)
     ||error.message==='INTAKE_NEWS_VERIFIED_SOURCE_REQUIRED'&&parent.intake.source_errors?.length
       &&parent.intake.source_errors.every(s=>permanentSourceError(s.error_code));
-   if(needsResearch)try{await requestNewsResearchRepair({store,transport,registry,parent,error,now});}catch{/* Durable preparation resumes next poll. */}
+   if(needsResearch&&!metadataRecheck)try{await requestNewsResearchRepair({store,transport,registry,parent,error,now});}catch{/* Durable preparation resumes next poll. */}
   }
  }
 }

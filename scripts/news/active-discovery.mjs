@@ -6,6 +6,7 @@ import { categoryCoverage, eventCategories, eventSignals, balanceEventQueue, COV
 const ms = value => Date.parse(value || '') || 0;
 const host = value => { try { const url = new URL(value); return url.protocol === 'https:' ? url.hostname.replace(/^www\./, '') : null; } catch { return null; } };
 export const DISCOVERY_LIMITS = Object.freeze({ indexes_per_run: 2, metadata_per_run: 2, candidates_per_run: 12, index_items: 120, interval_minutes: 60 });
+export const PUBLICATION_METADATA_VERSION = 'scoped-publication-v2';
 
 // A query matrix over permission-reviewed public indexes, not an unlicensed
 // search API or an indiscriminate full-web crawl. Empty categories run first.
