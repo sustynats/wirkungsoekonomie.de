@@ -6,6 +6,12 @@ const root = process.cwd();
 const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const entryOverrides = new Map([
+  // Current discovery metadata must not reintroduce the historical ambiguous
+  // acronym on every build. The dated article and its addendum stay untouched.
+  ["/blog/geg-wirkungscheck-ioi-t-sroi.html", {
+    excerpt: "Journal-Beitrag zum Gebäudeenergiegesetz im Wirkungscheck: Wie IOI, die damalige WÖk-Kurzbezeichnung NWI und T-SROI den 65-Prozent-/Wärmepumpenpfad gegenüber einem Gas-Brennwertpfad mit Bio-Treppe bewerten.",
+    tags: ["Gebäudeenergiegesetz", "GEG", "Impact-of-Investment", "IOI", "T-SROI", "WÖk-Netto-Wirkungsindex", "Wirkungsfinanzpolitik", "Wärmepumpe", "Wärmewende", "positive Netto-Wirkung"],
+  }],
   ["/blog/wahl-o-mat-methodenkritik-sachsen-anhalt-2026.html", {
     readingTime: "23 Min.",
     excerpt: "Der Wahl-O-Mat ist Teil einer gesellschaftlichen Verstärkungsschleife: Auswahl, Framing und institutionelle Reichweite entscheiden mit darüber, welche politischen Problemdefinitionen zusätzlich Relevanz erhalten.",
