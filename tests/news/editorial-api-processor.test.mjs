@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { ApiEditorialProcessor, prepareApiJob, selectApiJobs, apiProcessorPreflight } from '../../scripts/news/bridge/api-processor.mjs';
+import { ApiEditorialProcessor, prepareApiJob, selectApiJobs, apiProcessorPreflight, PERSONAL_PREVIEW_SCOPE } from '../../scripts/news/bridge/api-processor.mjs';
 import { bridgePath, outputSchema } from '../../scripts/news/bridge/contract.mjs';
 import { preparedNewsPrompt } from './fixtures/api-news-input.mjs';
 import { NEWS_INPUT_READINESS_VERSION } from '../../scripts/news/news-input-readiness.mjs';
@@ -112,6 +112,27 @@ test('unsafe legacy automatic analyses and unbounded repairs never reach the API
 test('personal topics use the final approval contract and remain separate from ordinary news', () => {
   const request = prepareApiJob({ ...input, job_type: 'editorial_request', request: { kind: 'watched', author_notes: 'Meine wirkliche Vorgabe.' } }, knowledge);
   assert.equal(request.kind, 'personal'); assert.match(request.prompt, /single_final_approval/); assert.match(request.prompt, /Meine wirkliche Vorgabe/);
+});
+
+test('personal manuscript scope does not impose a native numeric news assessment or change the packet', () => {
+  for (const kind of ['opinion_analysis','book_review','listened','watched']) {
+    const packet={...input,job_type:'editorial_request',request:{kind,brief:'Belegtes Ereignis mit offener indirekter Dimension.'}};
+    const before=structuredClone(packet), request=prepareApiJob(packet,knowledge);
+    assert.ok(request.instructions.endsWith(PERSONAL_PREVIEW_SCOPE));
+    assert.match(request.instructions,/Fehlende tragende Tatsachenbelege.*echte HOLD-Gründe/);
+    assert.match(request.instructions,/Natalies abschließende Freigabe/);
+    assert.equal(JSON.parse(request.prompt).output_contract.workflow,'single_final_approval');
+    assert.ok(JSON.parse(request.prompt).output_contract.hold_output_schema);
+    assert.deepEqual(packet,before);
+  }
+  for (const packet of [input,{...input,job_type:'editorial_request',request:{kind:'news'}}]) {
+    const request=prepareApiJob(packet,knowledge);
+    assert.equal(request.instructions,knowledge.instructions);
+    assert.ok(!request.prompt.includes(PERSONAL_PREVIEW_SCOPE));
+  }
+  const review=prepareApiJob({...input,job_type:'impact_semantic_review',parent_job_id:id.replace(/a/g,'f')},knowledge);
+  assert.ok(!review.instructions.includes(PERSONAL_PREVIEW_SCOPE));
+  assert.match(JSON.parse(review.prompt).authoritative_impact_rule,/alle MPD-Dimensionen modelled/);
 });
 test('invalid shape spends once and never triggers a paid correction on subsequent runs', async () => {
   const f = fixture(); delete f.output.decision;
