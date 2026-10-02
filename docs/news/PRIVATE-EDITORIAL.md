@@ -80,6 +80,16 @@ Wortlaut bleibt als Wartezustand sichtbar; Shownotes ersetzen keinen Wortlaut.
 Machtwechsel verlangt eine Transkriptgrundlage. Die erlaubte eigene Abschrift
 greift erst nach dem bisherigen Wartefenster und innerhalb des Tageslimits.
 
+Seit 02.10.2026 duerfen Nachholfolgen ausserhalb des regulaeren Sieben-Tage-
+Fensters (bzw. eines laengeren globalen Fensters) hoechstens ein Viertel der
+bestehenden taeglichen Kandidatenplaetze nutzen, mindestens einen. Die langen
+Staffelfenster bleiben erhalten. Bereits angelegte automatische Auftraege des
+Tages werden dabei mitgezaehlt; weder Zaehler noch Auftraege werden geloescht.
+So bleiben Plaetze fuer aktuelle Folgen frei, deren Wortlaut erst spaeter
+erscheint. Die gesamte Tagesgrenze und die getrennten Bezahl-/Transkriptions-
+grenzen bleiben unveraendert. Zurueckgestellte Episoden werden mit Quelle,
+Originaldatum und konkretem Wartegrund im Laufbericht ausgewiesen.
+
 Alte, ausschliesslich technisch erzeugte Metadaten-HOLDs duerfen unter derselben
 Job-ID zu einem Entwurfsauftrag werden, sofern noch kein Claim, bezahlter Versuch,
 Output, ACK oder menschlicher Review vorliegt. Der vorherige Input-Hash und
