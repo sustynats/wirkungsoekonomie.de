@@ -1,4 +1,5 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
+import { attachmentSelectionError } from './attachment-limits.js';
 import {approvalStates,orderedReviews,readyApprovalCount,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
 import {parkedReason} from './parked-review.js';
@@ -102,8 +103,8 @@ function drawFiles(){
 }
 $('attachments').addEventListener('change',event=>{
   const incoming=[...event.target.files];event.target.value='';
-  if(selectedFiles.length+incoming.length>4){note('Bitte höchstens vier Screenshots auswählen.',true);return;}
-  if(incoming.some(file=>!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>8*1024*1024||file.size===0)){note('Bitte PNG-, JPEG- oder WebP-Bilder mit höchstens 8 MB pro Datei auswählen.',true);return;}
+  const error=attachmentSelectionError([...selectedFiles,...incoming]);
+  if(error){note(error,true);return;}
   selectedFiles.push(...incoming);pendingId=null;drawFiles();note('');
 });
 $('request-form').addEventListener('input',()=>{if(!sending)pendingId=null;});

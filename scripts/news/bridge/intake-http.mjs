@@ -1,11 +1,14 @@
 import { EDITORIAL_DECISION_BODY_LIMIT, COMMENT_TOO_LONG_MESSAGE } from '../../../admin/redaktion/feedback-limits.js';
 import { hash } from './contract.mjs';
 import { INTAKE_FILE_LIMIT } from './intake.mjs';
+import { EDITORIAL_ATTACHMENT_COUNT, ATTACHMENT_COUNT_MESSAGE, ATTACHMENT_TOTAL_MESSAGE } from '../../../admin/redaktion/attachment-limits.js';
 
 const ORIGINS=['https://wirkungsoekonomie.de','https://www.wirkungsoekonomie.de'];
 const BASE='/api/admin/news-editorial';
 const MESSAGES={EDITORIAL_COMMENT_TOO_LONG:COMMENT_TOO_LONG_MESSAGE,EDITORIAL_COMMENT_REQUIRED:'Bitte schreibe dazu, was geändert werden soll.',INTAKE_QUEUE_FULL:'Die Redaktion bearbeitet gerade die maximale Zahl offener Aufträge. Bitte später erneut absenden.',INTAKE_ATTACHMENTS_PENDING:'Ein Screenshot fehlt noch. Bitte die Übertragung erneut starten.',INTAKE_ALREADY_SUBMITTED:'Dieser Auftrag wurde bereits abgesendet.',INTAKE_IDEMPOTENCY_CONFLICT:'Der bereits gespeicherte Auftrag hat einen anderen Inhalt.',BRIDGE_RUN_LOCKED:'Die Recherche ist gerade aktiv. Dein Entwurf bleibt gespeichert; bitte in Kürze erneut absenden.',INTAKE_NOT_FOUND:'Dieser Auftrag wurde nicht gefunden.',INTAKE_PREVIEW_PENDING:'Der private Entwurf ist noch nicht fertig.',INTAKE_DRAFT_LIMIT:'Es liegen bereits zu viele unvollständige Entwürfe vor. Bitte die Redaktion prüfen lassen.'};
 const fail=(message,status)=>{throw Object.assign(Error(message),{status});};
+MESSAGES.INTAKE_ATTACHMENT_COUNT=ATTACHMENT_COUNT_MESSAGE;
+MESSAGES.INTAKE_ATTACHMENT_TOTAL=ATTACHMENT_TOTAL_MESSAGE;
 export function existingAdminAuthorizer({fetchImpl=fetch}={}){
   const cache=new Map();
   return async request=>{
@@ -62,8 +65,8 @@ export function createEditorialIntakeHandler({intake,approval,authorize=existing
       if(reviewMatch&&request.method==='POST'&&reviewMatch[2]){respond(200,approval.decide(owner,reviewMatch[1],await readBody(request,EDITORIAL_DECISION_BODY_LIMIT)));return true;}
       if(request.method==='GET'&&route==='/requests'){respond(200,{requests:intake.list(owner)});return true;}
       if(request.method==='POST'&&route==='/drafts'){const draft=intake.draft(owner,await readBody(request,100000));respond(201,{id:draft.id});return true;}
-      let match=route.match(/^\/drafts\/([a-f0-9-]{36})\/attachments\/([0-3])$/);
-      if(request.method==='PUT'&&match){intake.upload(owner,match[1],Number(match[2]),await readBody(request,INTAKE_FILE_LIMIT,false),request.headers['content-type']);respond(200,{ok:true});return true;}
+      let match=route.match(/^\/drafts\/([a-f0-9-]{36})\/attachments\/(0|[1-9]\d?)$/);
+      if(request.method==='PUT'&&match&&Number(match[2])<EDITORIAL_ATTACHMENT_COUNT){intake.upload(owner,match[1],Number(match[2]),await readBody(request,INTAKE_FILE_LIMIT,false),request.headers['content-type']);respond(200,{ok:true});return true;}
       match=route.match(/^\/drafts\/([a-f0-9-]{36})\/submit$/);
       if(request.method==='POST'&&match){await readBody(request,1000);const result=await intake.submit(owner,match[1]);respond(202,result);void prepare();return true;}
       match=route.match(/^\/requests\/(wt_\d{8}T\d{6}Z_[a-f0-9]{24})\/preview$/);

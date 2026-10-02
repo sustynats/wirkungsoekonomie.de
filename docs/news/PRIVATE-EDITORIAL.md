@@ -12,13 +12,22 @@ Prüfung des GitHub-Worker-Tokens und des laufenden Import-Locks.
 
 ## Ablauf
 
-Freitext, Links und bis zu vier Screenshots erzeugen einen Auftrag in derselben
+Freitext, Links und bis zu zwölf Screenshots erzeugen einen Auftrag in derselben
 SQLite-Datenbank und denselben Dropbox-Lifecycle-Ordnern. Der versionierte Vertrag
 heißt für neue Aufträge `editorial-request-contract-4.json`. Frühere Verträge bleiben unverändert erhalten. Recherche und vollständiger Entwurf
 erfordern keine erste Freigabe. Persönliche Aussagen und Erfahrungen werden nicht
 erfunden. Erst die abschließende, an den Vorschau-Hash gebundene Zustimmung erlaubt
 eine Veröffentlichung. Zurückgabe erfordert einen Kommentar; eine neue Fassung
 hebt die frühere Zustimmung auf. Publizierte Fassungen bleiben unveränderlich.
+
+Seit 02.10.2026 gilt für PNG, JPEG und WebP: höchstens zwölf Bilder, je 8 MiB,
+zusammen 32 MiB. Damit steigt die Bildanzahl, nicht die frühere maximale
+Gesamtdatenmenge von viermal 8 MiB. Formular, Intake und Bildworker verwenden
+`admin/redaktion/attachment-limits.js`. Alle Dateien werden einzeln authentifiziert
+übertragen und vor Freigabe des Auftrags geprüft; Prüfsummen, Bildvalidierung,
+Eigentümerprüfung und finale redaktionelle Freigabe bleiben erhalten. Der Worker
+meldet überschrittene Grenzen ausdrücklich, statt Bilder ab Nummer fünf still
+zu ignorieren. Bei der Oracle-Aktualisierung auch das gemeinsame Modul ausliefern.
 
 Manuelle Nachrichten durchlaufen zusätzlich die normalen Quellen-, Analyse- und
 unabhängigen semantischen Prüfungen als native Bridge-Jobs. Bis zur finalen
@@ -135,7 +144,7 @@ Nachrecherche-HOLD und ein zuvor nicht erkanntes Publikationsdatum die Fortsetzu
 blockieren. Der alte HOLD samt Antwort bleibt erhalten. Nur nach erneuter regulaerer
 Quellenpruefung entsteht der normale Nachrichtenauftrag; unabhängige Pruefung und
 Natalies abschliessende Freigabe bleiben erforderlich.
-Das Release-Bündel enthält `scripts/news`, `scripts/ops`, `content/news`,
+Das Release-Bündel enthält `scripts/news`, `scripts/ops`, `content/news`, `admin/redaktion`,
 `assets/data/navigation.json` und die Header-/Footer-Templates. Keine `.env` oder
 Zugangswerte gehören ins Release. Discord-DM-Konfiguration liegt ausschließlich
 in der geschützten privaten Datei `editorial-discord.json` (Modus 0600).

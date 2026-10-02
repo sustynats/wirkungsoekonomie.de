@@ -909,6 +909,25 @@ test('eine Korrekturfassung bindet der Worker selbst an die Veroeffentlichung', 
 // 20.09.2026: Natalie beauftragte eine Analyse mit vier Screenshots und bekam
 // nichts zur Freigabe. Der Worker hielt den Auftrag an: „Die vier Screenshots
 // liegen nicht als lesbarer Inhalt vor." Er hatte nur ihre Dateinamen gesehen.
+test('twelve screenshots reach the model; extra files and total-byte excess are never silently dropped', async()=>{
+  const {collectAttachmentImages,editorialModelInput,ATTACHMENT_MAX_BYTES}=await import('../../scripts/news/redaktionsworker.mjs');
+  const {createHash}=await import('node:crypto');
+  const bytes=Buffer.from('synthetic image'),sha256=createHash('sha256').update(bytes).digest('hex'),reads=[];
+  const attachments=Array.from({length:13},(_,i)=>({name:`${i}.png`,path:`/${i}.png`,mime:'image/png',size:bytes.length,sha256}));
+  const session={transport:{readBinary:async path=>{reads.push(path);return bytes;}}};
+  for(const count of [6,12]){
+    const result=await collectAttachmentImages(session,attachments.slice(0,count));
+    assert.equal(result.bilder.length,count);assert.deepEqual(result.uebersprungen,[]);assert.equal(editorialModelInput({prompt:'test',images:result.bilder})[0].content.length,count+1);
+  }
+  reads.length=0;const result=await collectAttachmentImages(session,attachments);
+  assert.equal(result.bilder.length,12);assert.equal(reads.length,12);assert.deepEqual(result.uebersprungen,[{anhang:'12.png',grund:'ANHANG_ANZAHLGRENZE'}]);
+  const limited=await collectAttachmentImages(session,attachments.slice(0,3),{totalBytes:bytes.length*2});assert.equal(limited.bilder.length,2);assert.equal(limited.uebersprungen[0].grund,'ANHANG_GESAMTGROESSE');
+  const understated=attachments.slice(0,3).map(a=>({...a,size:1}));
+  const actual=await collectAttachmentImages(session,understated,{totalBytes:bytes.length*2});assert.equal(actual.bilder.length,2);assert.equal(actual.uebersprungen[0].grund,'ANHANG_GESAMTGROESSE');
+  const large=Buffer.alloc(ATTACHMENT_MAX_BYTES);assert.equal(ATTACHMENT_MAX_BYTES,8*1024*1024);
+  const exact=await collectAttachmentImages({transport:{readBinary:async()=>large}},[{name:'8MiB.jpg',path:'/large',mime:'image/jpeg',size:large.length}]);assert.equal(exact.bilder.length,1);assert.deepEqual(exact.uebersprungen,[]);
+});
+
 test('Screenshots gehen als Material an das Modell, geprueft an ihrer Pruefsumme', async () => {
   const { collectAttachmentImages, editorialModelInput, attachmentPromptNote } = await import('../../scripts/news/redaktionsworker.mjs');
   const { createHash } = await import('node:crypto');

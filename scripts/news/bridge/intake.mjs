@@ -3,11 +3,12 @@ import path from 'node:path';
 import { randomUUID, randomInt } from 'node:crypto';
 import { hash, safeUrl, assertSchema, bridgePath } from './contract.mjs';
 import { inspectImage } from '../title-image/image-file.mjs';
+import { EDITORIAL_ATTACHMENT_COUNT, EDITORIAL_ATTACHMENT_BYTES, EDITORIAL_ATTACHMENTS_TOTAL_BYTES } from '../../../admin/redaktion/attachment-limits.js';
 
 export const INTAKE_KINDS=Object.freeze(['news','opinion_analysis','book_review','listened','watched']);
 const UUID=/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/;
 const TYPES={'image/png':'png','image/jpeg':'jpg','image/webp':'webp'};
-export const INTAKE_FILE_LIMIT=8*1024*1024;
+export const INTAKE_FILE_LIMIT=EDITORIAL_ATTACHMENT_BYTES;
 const fail=(code,status=400)=>{throw Object.assign(Error(code),{status});};
 // Old imports sometimes staged only this receipt. It is not a manuscript.
 // Keep the stored history, but advertise a preview only for actual content.
@@ -24,11 +25,13 @@ export function normalizeSubmission(value){
   const brief=text('brief',20000,true),linkText=text('links',16000),author_notes=text('author_notes',10000);
   const links=[...new Set((`${linkText}\n${brief}`.match(/https?:\/\/[^\s<>"\]]+/g)||[]).map(url=>safeUrl(url.replace(/[),.;!?]+$/,''))))];
   if(links.length>20||typeof value.publish!=='boolean'||typeof value.urgent!=='boolean')fail('INTAKE_INVALID');
-  if(!Array.isArray(value.attachments)||value.attachments.length>4)fail('INTAKE_ATTACHMENTS_INVALID');
+  if(!Array.isArray(value.attachments))fail('INTAKE_ATTACHMENTS_INVALID');
+  if(value.attachments.length>EDITORIAL_ATTACHMENT_COUNT)fail('INTAKE_ATTACHMENT_COUNT');
   const attachments=value.attachments.map(a=>{
     if(!a||!TYPES[a.type]||!Number.isInteger(a.size)||a.size<1||a.size>INTAKE_FILE_LIMIT||typeof a.name!=='string'||a.name.length>250)fail('INTAKE_ATTACHMENTS_INVALID');
     return {name:a.name.replace(/[\u0000-\u001f]/g,''),type:a.type,size:a.size};
   });
+  if(attachments.reduce((sum,a)=>sum+a.size,0)>EDITORIAL_ATTACHMENTS_TOTAL_BYTES)fail('INTAKE_ATTACHMENT_TOTAL');
   return {client_id:value.client_id,kind:value.kind,brief,links,author_notes,publish:false,urgent:value.urgent,attachments};
 }
 
