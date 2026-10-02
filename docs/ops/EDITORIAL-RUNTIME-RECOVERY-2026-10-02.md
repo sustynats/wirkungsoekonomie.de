@@ -70,16 +70,60 @@ aktiviert.
 
 ## Offener operativer Abschluss
 
-Ein Merge dieser Korrekturen ist noch kein Nachweis einer entsperrten Oracle-Spur.
-Vor Ort sind Sperre, PID, Fortschritt und betroffene Services lesend zu pruefen.
-Vor einem Eingriff: konsistentes Datenbank-/Konfigurationsbackup, gepruefter
-Rueckfallweg und Abgleich des tatsaechlich laufenden Serverstandes. Weder fremde
-lebende Locks stehlen noch private Daten durch Repositorydateien ersetzen.
+Der lesende Hostcheck hat den bisherigen Redaktionsserver als tatsaechlichen
+Sperrhalter identifiziert (seit 14.09. laufende Fassung). Am 02.10.2026 um
+05:38 UTC wurde ein privates konsistentes SQLite-/Konfigurationsbackup erstellt;
+Integritaetspruefung und Wiederherstellung in eine zweite Datenbank waren erfolgreich.
+Ein gezielter Neustart nur des Redaktionsservers um 05:39 UTC gab dessen eigene
+Sperre frei. Die nachfolgenden Import-/Discovery-Slots wurden wieder abgeschlossen.
+Keine Lockdatei wurde geloescht, kein fremder Besitzer enteignet, keine Freigabe erteilt.
+
+Der gemeinsame Dropbox-Transport begrenzt nun die komplette Antwort einschliesslich
+Body mit einer echten Deadline. Ein nicht reagierendes Fetch-/Body-Promise kann
+die besitzende Spur nicht dauerhaft festhalten. Transportausfaelle erzeugen keine
+redaktionelle Korrektur und verbrauchen keinen neuen bezahlten Versuch. Vorhandene
+Antworten werden unveraendert erneut eingelesen. Mehrdeutige Schreibversuche werden
+nicht automatisch wiederholt. Bestehende unveraenderliche Transportvertraege
+bleiben bei einem Runtime-Upgrade erhalten; nur fehlende Versionen werden angelegt.
+Der lokale Betriebsstatus zeigt Pollbeginn, Ende, Phase und den eigenen Lockbesitz.
+
+Ein Merge ist noch kein Runtime-Deployment. Die aktualisierte Fassung muss als
+commitgebundenes Artefakt mit ihren Abhaengigkeiten geprueft werden. Rueckfallziel
+bleibt die vorherige Laufzeit; private Datenbanken und Zugangswerte werden nicht
+mit Code ueberschrieben. Der temporaere, auf eine Quell-IP begrenzte SSH-Zugang
+wird nach dem Eingriff wieder entfernt.
 
 Danach muessen der normale Quittungslauf, die private Entwurfsbereitstellung,
 die App-Vorschau und der weitere planmaessige Lauf tatsaechlich nachgewiesen
 werden. Keine persoenliche Freigabe erteilen. Bereits oeffentliche Fassungen
 werden lediglich quittiert; neu vorbereitete Entwuerfe warten auf die Autorin.
+
+Der normale lokale Finalisierungs-Endpunkt hat anschliessend genau die zwei
+bereits ausgelieferten Fassungen anhand ihrer HTML-Inhaltshashes quittiert
+(`published: 2`, danach `pending: 0`). In der angemeldeten Redaktionsapp sind
+beide Karten als "Veroeffentlicht" sichtbar. Das ist keine neue Textpublikation.
+
+## Nachrichtenlauf: wachsender Einzelrecord
+
+Der Lauf 36968509294 brach beim Speichern mit `NEWSROOM_RECORD_TOO_LARGE:stories`
+ab. Die Geschichte `wt-0eb1ca5aac1439a2` hatte bereits vor diesem Lauf rund
+8,33 MB inklusive 136 Versionen und 135 historischen Potenzialbewertungen.
+Die naechste Fortschreibung ueberschritt das 8-MiB-Dateilimit. Dieses Limit
+war faelschlich zugleich eine Grenze fuer den gesamten einzelnen Datensatz.
+
+Der bestehende verlustfreie Part-Speicher kann jetzt auch einen grossen
+Einzelrecord auf mehrere pruefsummengebundene JSON-Dateien aufteilen. Die
+Speicherformatversion 2 wird nur dafuer verwendet; alte Manifeste bleiben lesbar.
+Jede Datei bleibt unter 8 MiB. Rekonstruierte Records werden zusaetzlich mit
+Gesamtlaenge und SHA-256 geprueft; ein 128-MiB-Leselimit verhindert unbegrenzte
+Einzelallokationen. Exakte Git-Revisionswiederherstellung verwendet denselben
+Decoder. Historien, Freigabehashes und oeffentliche Datenmodelle aendern sich nicht.
+Keine Historie wird abgeschnitten und kein Artikel erneut generiert. Das ist
+keine Erhoehung des Git-Dateilimits und kein neues Speichersystem.
+
+Die neuen Regressionen pruefen echte Einzelrecords oberhalb 8 MiB, geteiltes UTF-8,
+Reihenfolge, Objekt-/Arrayfelder, Wiederholbarkeit, beschaedigte/fehlende Teile und
+Wiederherstellung aus genau einer Git-Revision. Erzeugte Testdateien bleiben lokal.
 
 ## Lokale Pruefungen
 
@@ -94,3 +138,9 @@ Der Validator nennt weiterhin bestehende redaktionelle Hinweise zu Primaerbelege
 und einzelnen Ueberschriften; sie werden nicht als behoben ausgegeben. Der Build
 ist lokal, kein Produktionsnachweis. Seine erzeugten Bestandsartefakte werden
 nicht als inhaltliche Aenderungen in diesen Reparatur-Commit aufgenommen.
+
+Nach den Transport- und Speicherergaenzungen erneut ausgefuehrt:
+`npm run news:test` mit 1774 bestandenen Tests, gezielte Syntaxpruefungen und
+`git diff --check`. Die vier gezielten Bridge-Testdateien bestanden mit 121
+Tests, Speicher-/Publikationswiederherstellung mit 23 Tests. Kein bezahlter
+Modellaufruf ist Bestandteil dieser Tests.

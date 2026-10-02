@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import { BRIDGE_ROOT, FOLDERS, MAX_BYTES, hash, bridgePath } from './contract.mjs';
+import { withRequestDeadline } from '../request-deadline.mjs';
 
 export function allowedPath(value) {
   if (typeof value !== 'string' || !value.startsWith(`${BRIDGE_ROOT}/`) || value !== value.normalize('NFC')) throw new Error('BRIDGE_PATH_INVALID');
@@ -33,20 +34,27 @@ export function loadDropboxCredentials(file, repositoryRoot) {
 }
 
 export class DropboxTransport {
-  constructor({ credentials, fetchImpl = fetch, sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) }) { this.credentials = credentials; this.fetch = fetchImpl; this.sleep = sleep; this.archiveFolders = new Map(); }
+  constructor({ credentials, fetchImpl = fetch, sleep = ms => new Promise(resolve => setTimeout(resolve, ms)), requestTimeoutMs = 45000, authTimeoutMs = 20000 }) {
+    this.credentials = credentials; this.fetch = fetchImpl; this.sleep = sleep; this.archiveFolders = new Map();
+    this.requestTimeoutMs = Math.max(1, Math.min(45000, Number(requestTimeoutMs) || 45000));
+    this.authTimeoutMs = Math.max(1, Math.min(20000, Number(authTimeoutMs) || 20000));
+  }
   async token() {
     if (this.accessToken && Date.now() < this.expiresAt) return this.accessToken;
     const { app_key, app_secret, refresh_token } = this.credentials;
     const body = new URLSearchParams({ grant_type: 'refresh_token', refresh_token, client_id: app_key,
       ...(app_secret ? { client_secret: app_secret } : {}) });
-    let response;
+    let response, raw;
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
-        response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal: AbortSignal.timeout(20000) });
+        ({response, raw} = await withRequestDeadline(async signal => {
+          const response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal });
+          return {response, raw: await boundedBody(response, 20000)};
+        }, {timeoutMs: this.authTimeoutMs, code: 'BRIDGE_DROPBOX_AUTH_UNAVAILABLE'}));
         break;
       } catch (error) {
         const code = error.code || error.cause?.code;
-        const temporary = error.name === 'TimeoutError'
+        const temporary = error.name === 'TimeoutError' || error.message === 'BRIDGE_DROPBOX_AUTH_UNAVAILABLE'
           || ['ETIMEDOUT', 'ECONNRESET', 'ECONNREFUSED', 'EAI_AGAIN', 'ENOTFOUND', 'ENETUNREACH', 'UND_ERR_CONNECT_TIMEOUT'].includes(code);
         if (!temporary) throw error;
         if (attempt) throw Object.assign(new Error('BRIDGE_DROPBOX_AUTH_UNAVAILABLE'), { retryable: true });
@@ -63,7 +71,7 @@ export class DropboxTransport {
         ...(temporary && Number.isFinite(retryAfter) && retryAfter > 0 ? { retry_after_seconds: retryAfter } : {}),
       });
     }
-    const result = JSON.parse(await boundedBody(response, 20000));
+    const result = JSON.parse(raw);
     if (!result.access_token || !Number.isFinite(result.expires_in)) throw new Error('BRIDGE_DROPBOX_AUTH_INVALID');
     this.accessToken = result.access_token; this.expiresAt = Date.now() + (result.expires_in - 60) * 1000;
     return this.accessToken;
@@ -71,14 +79,19 @@ export class DropboxTransport {
   async request(endpoint, input, content, binary = false, attempt = 0) {
     const isContent = ['files/download', 'files/upload'].includes(endpoint);
     const accessToken = await this.token();
+    // The deadline covers headers AND body. An abort-ignoring upstream promise
+    // must not strand the caller's SQLite lane. This boundary contains no
+    // journal writes, and an ambiguous mutation is never automatically retried.
+    const {response, raw} = await withRequestDeadline(async signal => {
     const response = await this.fetch(`https://${isContent ? 'content' : 'api'}.dropboxapi.com/2/${endpoint}`, {
-      method: 'POST', redirect: 'error', signal: AbortSignal.timeout(45000),
+      method: 'POST', redirect: 'error', signal,
       headers: { Authorization: `Bearer ${accessToken}`,
         ...(this.credentials.root_namespace_id ? { 'Dropbox-API-Path-Root': JSON.stringify({ '.tag': 'root', root: this.credentials.root_namespace_id }) } : {}),
         ...(isContent ? { 'Dropbox-API-Arg': JSON.stringify(input), ...(content === undefined ? {} : { 'Content-Type': 'application/octet-stream' }) } : { 'Content-Type': 'application/json' }) },
       ...(isContent ? content === undefined ? {} : { body: content } : { body: JSON.stringify(input) }),
     });
-    const raw = await boundedBody(response, binary && response.ok ? 12582912 : MAX_BYTES, binary && response.ok);
+    return {response, raw: await boundedBody(response, binary && response.ok ? 12582912 : MAX_BYTES, binary && response.ok)};
+    }, {timeoutMs: this.requestTimeoutMs, code: 'BRIDGE_DROPBOX_REQUEST_TIMEOUT'});
     if (!response.ok) {
       let code = '';
       try { code = JSON.parse(raw).error_summary || ''; } catch { /* Never log upstream payloads. */ }

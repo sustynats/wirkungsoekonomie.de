@@ -4,7 +4,7 @@ import { isDeepStrictEqual } from "node:util";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { decodeNewsroom, writeRepositoryJson } from './newsroom-store.mjs';
+import { decodeNewsroom, newsroomParts, writeRepositoryJson } from './newsroom-store.mjs';
 const exec = promisify(execFile);
 
 const GENERATED_PATHS = ["news", "wirkungsticker", "sitemap.xml", "assets/search/search-index.json", "public/data/woek-search-meta.json", "content/taxonomy/site-map.json", "umfragen", "admin/umfragen", "reports/wirkungsticker-source-integrity.json", "reports/wirkungsticker-source-portfolio.json", "data/wirkungsticker/source-audit-2026-09-05.json"];
@@ -93,7 +93,7 @@ export async function readGitStoryStore(reference, run = git) {
   const manifest = JSON.parse(stdout(await run(['show', `${reference}:${STORY_STORE}`])));
   if (!manifest.storage_format) return manifest;
   const parts = new Map();
-  for (const field of manifest.fields || []) for (const part of field.parts || []) {
+  for (const part of newsroomParts(manifest)) {
     if (!/^[a-f0-9]{64}$/.test(part.sha256 || '')) throw Error('NEWSROOM_PART_INVALID');
     if (!parts.has(part.sha256)) parts.set(part.sha256, Buffer.from(stdout(await run(['show', `${reference}:${STORY_PARTS}/${part.sha256}.json`]))));
   }
