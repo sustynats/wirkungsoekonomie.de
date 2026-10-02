@@ -20,17 +20,18 @@
     "liegengebliebene-auftraege": {
       "firstSeen": "2026-10-02T07:06:05.328Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-02T08:05:54.426Z",
-      "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-02T08:05:54.426Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "015be522f2a09d2c924637f1",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-02T08:35:37.303Z"
+    },
+    {
+      "id": "418705a5af0024240b1e3ae8",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-02T08:35:37.303Z"
+    }
+  ],
   "dailyDate": "2026-10-02",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2338,11 +2339,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-verdacht-auf-sprengstoff-vor-oberstem-gericht-in-brasilien-gibt-polizei-entwarnung-d16eeb/": {
         "first_seen_at": "2026-10-02T07:50:40.080Z",
         "source_at": "2026-10-02T05:59:34.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3/": {
+        "first_seen_at": "2026-10-02T08:35:37.303Z",
+        "source_at": "2026-10-02T06:47:03.000Z"
       }
     },
-    "last_new_at": "2026-10-02T07:50:40.080Z",
-    "checked_at": "2026-10-02T08:20:55.548Z",
-    "last_current_new_at": "2026-10-02T07:50:40.080Z"
+    "last_new_at": "2026-10-02T08:35:37.303Z",
+    "checked_at": "2026-10-02T08:35:37.303Z",
+    "last_current_new_at": "2026-10-02T08:35:37.303Z"
   },
   "recovery_attempts": [
     {
