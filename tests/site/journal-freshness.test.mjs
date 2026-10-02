@@ -6,6 +6,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { renderJournalArchiveCard } from '../../scripts/blog/render-journal-archive.mjs';
 
 const origin = 'https://wirkungsoekonomie.de';
 const workerSource = fs.readFileSync(new URL('../../sw.js', import.meta.url), 'utf8');
@@ -135,4 +136,15 @@ test('the deploy artifact changes the journal script URL when its runtime change
   } finally {
     fs.rmSync(fixture, { recursive: true, force: true });
   }
+});
+
+
+test('the static fallback and browser archive use identical markup, filters and publication order', async () => {
+  const h = await render(posts);
+  const expected = [...posts].sort((a,b) => new Date(b.publishedAt || b.date) - new Date(a.publishedAt || a.date)).map(renderJournalArchiveCard).join('');
+  assert.equal(h.archive.innerHTML, expected);
+  const html = fs.readFileSync(new URL('../../blog.html', import.meta.url), 'utf8');
+  const archive = html.match(/data-journal-list>([\s\S]*?)<div class="card blog-archive-note"/)?.[1] || '';
+  const urls = [...archive.matchAll(/<a class="text-link" href="([^"]+)"/g)].map(match => new URL(match[1], origin).pathname);
+  assert.deepEqual(urls, posts.map(post => post.url));
 });

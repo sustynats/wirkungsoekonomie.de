@@ -88,6 +88,11 @@ if (!read("blog.html").includes(`data-journal-published-at="${latest.publishedAt
   throw new Error("blog.html: Der Aktualitätsanker für nachgeladene Journal-Daten fehlt oder ist veraltet.");
 }
 assertLatestJournalFeature("bibliothek/index.html", latest, "journal-library-card");
+const archive = read("blog.html").match(/data-journal-list>([\s\S]*?)<div class="card blog-archive-note"/)?.[1] || "";
+const archiveUrls = Array.from(archive.matchAll(/<a class="text-link" href="([^"]+)"/g), match => new URL(match[1], "https://wirkungsoekonomie.de/blog.html").pathname);
+if (JSON.stringify(archiveUrls) !== JSON.stringify(entries.map(entry => entry.url))) {
+  throw new Error("blog.html: Das statische Archiv enthält nicht alle veröffentlichten Beiträge in der aktuellen Reihenfolge.");
+}
 assertJournalBreadcrumbs();
 
 console.log(`Journal index check OK: ${entries.length} entries.`);
