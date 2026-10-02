@@ -31,10 +31,12 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-// 7 seit 18.09.2026: Korrekturfassungen bindet der Worker selbst an ihr Ziel
-// (bindeKorrekturfassung). Die Versionsmarke gibt verbrauchten Versuchen genau
-// eine neue Chance - darunter der Oelkrise-Korrektur, die daran scheiterte.
-export const WORKER_VERSION = 'redaktionsworker-7';
+// 8 seit 02.10.2026: Nach der behobenen Undici-/Quellenabruf-Blockade darf
+// ein abgebrochener Versuch ohne gespeicherte Antwort einmal wieder anlaufen.
+// Der gepruefte Bestand enthaelt einen solchen Lanz-&-Precht-Auftrag. Vorhandene
+// Antworten werden zuerst aus dem Archiv zugestellt; gelieferte Fassungen und
+// Freigaben bleiben unveraendert. Mengen-/Kostenlimits gelten weiterhin.
+export const WORKER_VERSION = 'redaktionsworker-8';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit

@@ -38,6 +38,16 @@ keine automatische Freigabe. Der Originaltext wird nicht ins Repository
 aufgenommen. Die lokale Vertragspruefung dieser archivierten Fassung sowie
 alle 40 Redaktionsworker-Tests bestanden.
 
+Der Betriebsbefund um 13:23 UTC enthaelt genau einen erschoepften Auftrag
+ohne gelieferte Antwort (Lanz & Precht, Versuch seit 05:46 UTC). Der zugrunde
+liegende Undici-/Quellenabruf-Absturz wurde separat behoben; eine archivierte
+Antwort ist fuer diesen Auftrag nicht vorhanden. Workerversion 8 aktiviert den
+bereits bestehenden einmaligen, versionsgebundenen Wiederanlauf. Keine
+Versuchszaehler werden geloescht, keine Modellantwort als wiederhergestellt
+ausgegeben. Ein weiterer Modellaufruf kann Kosten innerhalb der bestehenden
+Limits verursachen; bei erneutem Fehler wird er in dieser Version nicht
+wiederholt. Bereits zugestellte Entwuerfe bleiben ausgenommen.
+
 Lokal bestanden: 15 Journaltests, 31 Architektur-/Semantikgates einschliesslich
 NWI, 1775 Nachrichtentests vor der Nachholkorrektur, anschliessend alle 33
 Folgenkandidaten-Tests. Typecheck, Lint (mit bestehenden Hinweisen), Journal-
