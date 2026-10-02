@@ -1,7 +1,72 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-02T10:00:00.000Z",
+  "updated_at": "2026-10-02T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-02-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-02",
+      "window_from": "2026-10-02T10:00:00.000Z",
+      "window_to": "2026-10-02T16:00:00.000Z",
+      "stand": "2026-10-02T16:00:00.000Z",
+      "headline": "Das sind die 6 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 6,
+        "neu": 1,
+        "fortgeschrieben": 5
+      },
+      "entries": [
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Nach Angaben des Deutschlandfunks: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-02T15:41:31.228Z",
+          "score": 5.6987
+        },
+        {
+          "story_id": "wt-0eb1d7fda049bef9",
+          "slug": "trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9",
+          "title": "Laut France 24: Trump und Selenskyj sprechen über Wege zum Ende des Ukraine-Kriegs",
+          "state": "fortgeschrieben",
+          "at": "2026-10-02T15:20:49.922Z",
+          "score": 7.6412
+        },
+        {
+          "story_id": "wt-8fc6c9e0bb273d91",
+          "slug": "drogenkrieg-zwei-jahre-nach-explosion-in-koln-weitere-festnahme-273d91",
+          "title": "Nach Explosion in Köln: Polizei nimmt weiteren Verdächtigen fest",
+          "state": "neu",
+          "at": "2026-10-02T15:19:26.034Z",
+          "score": 5.8873
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Laut Deutschlandfunk dauern gegenseitige Angriffe auf Infrastruktur an",
+          "state": "fortgeschrieben",
+          "at": "2026-10-02T14:24:27.581Z",
+          "score": 9.4846
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Sami Abu Schehadeh zieht Kandidatur für die Knesset-Wahl zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-02T10:14:39.196Z",
+          "score": 8.7907
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Ökonomen erwarten laut Bericht weitere EZB-Zinserhöhung nach Ölpreisschock",
+          "state": "fortgeschrieben",
+          "at": "2026-10-02T10:13:37.664Z",
+          "score": 4.7879
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-02-mittagslage",
       "slot": "mittagslage",
