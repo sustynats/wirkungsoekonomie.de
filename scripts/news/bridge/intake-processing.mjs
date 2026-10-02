@@ -80,6 +80,9 @@ export async function importEditorialPreviews({store,transport,approval,now=()=>
   job.accepted={job_id:job.input.job_id,story_id:job.candidate.story_id,decision:'publish',staged:true,output_hash:hash(output),accepted_at:now()};
   job.status='accepted';job.accepted_at=now();store.put(job);staged++;
   }catch(error){
+   // A transport outage is not defective editorial content and must not create
+   // a correction job or consume a new paid attempt. Retry the immutable output.
+   if(error.retryable === true)throw error;
    const code=/^[A-Z_]+$/.test(error.message)?error.message:'EDITORIAL_OUTPUT_INVALID';failed.push({job_id:job.input.job_id,code});
    job.last_error={error_code:code,stage:'editorial_preview',failed_at:now(),retryable:false};
    if((job.corrections?.length||0)<CORRECTION_LIMIT){try{await prepareCorrection({store,transport},job,job.last_error,now());}catch{store.put(job);}}

@@ -361,6 +361,23 @@ test('a rejected web-search request is retried once with the older tool spelling
 });
 
 const page = (text) => ({ ok: true, status: 200, headers: { get: (k) => k.toLowerCase() === 'content-type' ? 'text/html; charset=utf-8' : null }, text: async () => `<html><head><title>Bericht über den Sachverhalt</title></head><body><article><p>${text}</p></article></body></html>` });
+test('source excerpts cancel ignored responses and bound headers, bodies and download size', async () => {
+  let cancelled = 0;
+  for (const [status, type] of [[503, 'text/html'], [200, 'application/pdf']]) {
+    const response = new Response(new ReadableStream({cancel(){cancelled++;}}), {status, headers:{'content-type':type}});
+    const result = await fetchLinkExcerpt('https://example.org/source', async () => response, 50);
+    assert.equal(result.excerpt, null);
+    assert.equal(result.status, status);
+  }
+  assert.equal(cancelled, 2);
+  for (const fetchImpl of [() => new Promise(() => {}), async () => ({...page(''),text: () => new Promise(() => {})})]) {
+    const result = await fetchLinkExcerpt('https://example.org/source', fetchImpl, 10);
+    assert.equal(result.status, 0); assert.equal(result.excerpt, null);
+  }
+  const large = new Response(new ReadableStream({cancel(){cancelled++;}}), {headers:{'content-type':'text/html','content-length':'2000001'}});
+  assert.equal((await fetchLinkExcerpt('https://example.org/source', async () => large, 50)).excerpt, null);
+  assert.equal(cancelled, 3);
+});
 test('linked sources travel as fetched excerpts inside the prompt copy while the stored packet stays bound', async () => {
   const session = fakeSession([queuedJob()]);
   const packet = packetFor(jobId);
@@ -409,6 +426,11 @@ test('queued drafts run before proposal work and three lane waits cannot consume
   const workflow = fs.readFileSync(new URL('../../.github/workflows/redaktionsworker.yml', import.meta.url), 'utf8');
   assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('run: node scripts/news/redaktions-kandidaten.mjs'));
   assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('run: node scripts/news/sendungs-kandidaten.mjs'));
+  assert.match(workflow, /id: editorial_draft\s+continue-on-error: true/);
+  assert.match(workflow, /if: always\(\) && steps\.editorial_draft\.outcome == 'failure'[\s\S]*exit 1/,
+    'discovery can finish, but a skipped/failed draft run must not leave a green workflow');
+  const workerSource = fs.readFileSync(new URL('../../scripts/news/redaktionsworker.mjs', import.meta.url), 'utf8');
+  assert.match(workerSource, /report\.status === 'skipped' && report\.reason !== 'BRIDGE_SLOT_ALREADY_COMPLETED'[\s\S]*process\.exitCode = 1/);
   for (const file of ['redaktions-kandidaten', 'sendungs-kandidaten']) {
     const source = fs.readFileSync(new URL(`../../scripts/news/${file}.mjs`, import.meta.url), 'utf8');
     assert.doesNotMatch(source, /retries: 20|waitMs: 30000/, 'proposals use the shared fifteen-second wait');

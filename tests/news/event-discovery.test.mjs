@@ -82,6 +82,62 @@ const item = (fields={}) => ({ source_id:'test', publisher_id:'test', url:'https
 const story = sources => ({story_id:'wt-test',title:sources[0].title,sources});
 const candidate = (id,priority,category,score=60) => ({story_id:id,preanalysis:{internal_relevance_score:score,event_score:{priority,category}}});
 
+const formationSources = () => [
+  { title: 'Reaktion auf Ukraine-Krieg - Bundeswehr baut eigenes Drohnenregiment auf', summary: 'Die Bundeswehr will erstmals ein Drohnenregiment aufstellen. Die Aufstellung ist für 2027 geplant.' },
+  { title: 'Verteidigung: Unbemannte Waffensysteme: Bundeswehr bekommt Drohnenregiment', summary: 'Verteidigungsminister kündigt ein neues Regiment mit unbemannten Systemen an. Die Bundeswehr baut es im kommenden Jahr auf.' },
+  { title: 'Pistorius zu Besuch in Bergen: Bundeswehr bekommt Drohnenregiment', summary: 'Die Bundeswehr wird ein eigenes Drohnenregiment aufstellen.' },
+  { title: '600 Soldaten, 500 Kilometer Reichweite: Pistorius kündigt Drohnenregiment für die Bundeswehr an', summary: 'Die Bundeswehr will ein Drohnenregiment aufstellen.' },
+].map((row, i) => item({ ...row, primary_source: false, source_id: `formation-${i}`, publisher_id: `formation-${i}`, url: `https://example.org/formation-${i}`, published_at: '2026-10-01T18:00:00Z' }));
+
+test('a single report about changed public capacity reaches review without accident, popularity or automatic approval', () => {
+  const current = '2026-10-02T05:00:00Z';
+  for (const row of [formationSources()[0], item({ title: 'Bundespolizei eröffnet neues Ausbildungszentrum', summary: '', primary_source: false, published_at: '2026-10-01T18:00:00Z' })]) {
+    const before = structuredClone(row);
+    const result = preAnalyzeStory(story([row]), current);
+    assert.ok(result.internal_relevance_score >= 30);
+    assert.ok(result.event_score.signals.includes('public_capacity_change'));
+    assert.ok(result.event_score.national_relevance_score > 0);
+    assert.equal(result.event_score.score_scope, 'editorial_review_priority_not_truth_or_MPD_direction');
+    assert.notEqual(result.event_score.breaking_status, 'breaking');
+    assert.equal(result.published, undefined);
+    assert.deepEqual(row, before, 'ex-ante wording and original source stay unchanged');
+  }
+  for (const title of ['Minister besucht neues Ausbildungszentrum', 'Rückblick: Bundeswehr bekommt neues Drohnenregiment', 'Minister eröffnet Fest mit Grußwort']) {
+    const result = preAnalyzeStory(story([item({ title, summary: '', primary_source: false })]), now);
+    assert.ok(!result.event_score.signals.includes('public_capacity_change'), title);
+  }
+});
+
+test('formation announcement fragments merge before payment, but not another day, formation, stage or commentary', () => {
+  const sources = formationSources(), current = '2026-10-02T05:00:00Z';
+  assert.equal(new Set(sources.map(row => structuredEventIdentity(row)?.key)).size, 1);
+  assert.equal(clusterItems(sources, [], current).length, 1);
+  for (const change of [
+    { title: 'Bundeswehr bekommt neues Panzerbataillon' },
+    { title: 'Bundeswehr bekommt Drohnenregiment 2' },
+    { title: 'Bundeswehr bekommt zweites Drohnenregiment' },
+    { title: 'Kommentar: Bundeswehr bekommt Drohnenregiment' },
+    { title: 'Bundeswehr bekommt Drohnenregiment: Standort für Stationierung festgelegt' },
+    { title: 'Rückblick: Bundeswehr bekommt Drohnenregiment' },
+    { published_at: '2026-10-02T18:00:00Z' },
+    { title: 'Bundespolizei bekommt Drohnenregiment' },
+  ]) assert.equal(eventCompatibility(sources[0], { ...sources[1], ...change }).same_event, false, JSON.stringify(change));
+  assert.equal(eventCompatibility({ ...sources[0], event_geography: ['DE'] }, { ...sources[1], event_geography: ['FR'] }).same_event, false);
+  const drafts = sources.map((row, i) => ({ story_id: `formation-${i}`, title: row.title, sources: [row], published: false, first_seen: row.published_at, last_updated: row.published_at, versions: [] }));
+  const originals = structuredClone(drafts);
+  const groups = duplicateGroups(drafts);
+  assert.equal(groups.length, 1);
+  assert.equal(groups[0].duplicate_ids.length, 3);
+  assert.equal(mergeLivingFiles(drafts, groups, current).length, 3);
+  assert.equal(drafts.filter(row => !isMerged(row)).length, 1);
+  assert.equal(drafts.find(row => !isMerged(row)).pending_update.sources.length, 4);
+  for (const row of drafts) {
+    assert.equal(row.published, false);
+    assert.deepEqual(row.sources, originals.find(old => old.story_id === row.story_id).sources);
+  }
+  assert.equal(mergeLivingFiles(drafts, duplicateGroups(drafts), current).length, 0);
+});
+
 test('September 9: all twelve event types reach review, not automatic publication', () => {
   for (const row of fixture.cases) {
     const result = preAnalyzeStory(story([item({...row, primary_source:false})]),now);
