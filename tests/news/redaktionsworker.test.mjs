@@ -98,6 +98,41 @@ test('free cached recovery runs even when the editorial daily quota is exhausted
   assert.equal(result.recovered_outputs[0].status, 'cached_output_redelivered');
 });
 
+test('cached screenshot provenance stays private and no public source URL is invented', async () => {
+  const { job, output, archive, session } = cachedCorrection();
+  const attachment = { path: bridgePath('00_INBOX', `${jobId}.attachment-0.jpg`), sha256: 'd'.repeat(64) };
+  job.input.request.attachments = [attachment];
+  output.preview.sources.unshift({ ...attachment, title: 'Privater Testausschnitt', publisher: 'Test', source_function: 'starting_material' });
+  output.preview.source_media = { type: 'user_attachment', bridge_path: attachment.path, sha256: attachment.sha256 };
+  const raw = JSON.stringify(output); session.files.set(archive, raw); job.corrections[0].original_output_hash = hash(raw);
+  const result = await recoverCachedEditorialOutputs(session, [job], now());
+  assert.equal(result[0].status, 'cached_output_redelivered');
+  const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  assert.deepEqual(delivered.preview.sources, preview().sources);
+  assert.equal(delivered.preview.source_media, undefined);
+  assert.equal(session.files.get(archive), raw);
+  assert.deepEqual(job.input.request.attachments, [attachment]);
+  assert.equal(job.ack, undefined);
+  assert.doesNotMatch(JSON.stringify(delivered), /00_INBOX|attachment-0/);
+});
+
+test('unknown attachments and malformed web sources still fail instead of being silently dropped', () => {
+  const attachment = { path: bridgePath('00_INBOX', `${jobId}.attachment-0.jpg`), sha256: 'd'.repeat(64) };
+  for (const source of [
+    { ...attachment, sha256: 'e'.repeat(64), source_function: 'starting_material' },
+    { ...attachment, source_function: 'event' },
+    { ...attachment, source_function: 'starting_material', url: '/relative-source' },
+  ]) {
+    const value = { ...preview(), sources: [source, ...preview().sources] };
+    normalizeEditorialPreview(value, { attachments: [attachment] });
+    assert.equal(value.sources.length, 2);
+    assert.throws(() => validateEditorialDelivery({ schema_version: '1.0', job_id: jobId, input_hash: packetFor(jobId).input_hash, processed_at: now(), preview: value }, packetFor(jobId), now()), /BRIDGE_SCHEMA_INVALID/);
+  }
+  const value = { ...preview(), sources: [{ ...attachment, source_function: 'starting_material' }] };
+  normalizeEditorialPreview(value, { attachments: [attachment] });
+  assert.throws(() => validateEditorialDelivery({ schema_version: '1.0', job_id: jobId, input_hash: packetFor(jobId).input_hash, processed_at: now(), preview: value }, packetFor(jobId), now()), /BRIDGE_SCHEMA_INVALID/);
+});
+
 test('automatische Nachbesprechung läuft trotz gesperrtem Nachrichtenkontingent bis zur privaten Vorschau', async () => {
   const job = queuedJob();
   job.input.request.kind = 'watched'; job.intake.kind = 'watched'; job.intake.trigger_type = 'automatic_episode';

@@ -1,11 +1,16 @@
 import fs from "node:fs";
 import path from "node:path";
-import { renderJournalArchiveCard } from "./render-journal-archive.mjs";
+import { renderJournalArchiveCard, listingExcerpt } from "./render-journal-archive.mjs";
 
 const root = process.cwd();
 const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const entryOverrides = new Map([
+  // Discovery tags are current, but the dated excerpt also belongs to the
+  // immutable PDF input. Qualify it only when rendering today's listing below.
+  ["/blog/geg-wirkungscheck-ioi-t-sroi.html", {
+    tags: ["Gebäudeenergiegesetz", "GEG", "Impact-of-Investment", "IOI", "T-SROI", "WÖk-Netto-Wirkungsindex", "Wirkungsfinanzpolitik", "Wärmepumpe", "Wärmewende", "positive Netto-Wirkung"],
+  }],
   ["/blog/wahl-o-mat-methodenkritik-sachsen-anhalt-2026.html", {
     readingTime: "23 Min.",
     excerpt: "Der Wahl-O-Mat ist Teil einer gesellschaftlichen Verstärkungsschleife: Auswahl, Framing und institutionelle Reichweite entscheiden mit darüber, welche politischen Problemdefinitionen zusätzlich Relevanz erhalten.",
@@ -332,7 +337,7 @@ function renderFeature(entry) {
                 ${renderBadges(entry)}
                 <p class="card-kicker">${escapeHtml(entry.category || "Journal")} · ${escapeHtml(formatDateLabel(entry.date))}${entry.readingTime ? ` · ${escapeHtml(entry.readingTime)}` : ""}</p>
                 <h3 class="card-title">${escapeHtml(entry.title)}</h3>
-                ${entry.excerpt ? `<p class="card-text">${escapeHtml(entry.excerpt)}</p>` : ""}
+                ${entry.excerpt ? `<p class="card-text">${escapeHtml(listingExcerpt(entry))}</p>` : ""}
                 <a class="text-link" href="${escapeHtml(siteRelative(entry.url))}">Aktuellen Beitrag lesen</a>
               </div>
             </article>`;
@@ -342,7 +347,7 @@ function renderSideEntry(entry) {
   return `<article class="journal-card">
               <p class="card-kicker">${escapeHtml(entry.category || "Journal")} · ${escapeHtml(formatDateLabel(entry.date))}</p>
               <h3 class="card-title">${escapeHtml(entry.title)}</h3>
-              ${entry.excerpt ? `<p class="card-text">${escapeHtml(entry.excerpt).slice(0, 180)}</p>` : ""}
+              ${entry.excerpt ? `<p class="card-text">${escapeHtml(listingExcerpt(entry)).slice(0, 180)}</p>` : ""}
               <a class="text-link" href="${escapeHtml(siteRelative(entry.url))}">Beitrag lesen</a>
             </article>`;
 }
@@ -425,7 +430,7 @@ function renderLibraryCard(entry) {
       <div class="journal-library-card-body">
         <p class="card-kicker">${escapeHtml(entry.category || "Journal")} · ${escapeHtml(formatDateLabel(entry.date))}${entry.readingTime ? ` · ${escapeHtml(entry.readingTime)}` : ""}</p>
         <h3>${escapeHtml(entry.title)}</h3>
-        ${entry.excerpt ? `<p>${escapeHtml(entry.excerpt)}</p>` : ""}
+        ${entry.excerpt ? `<p>${escapeHtml(listingExcerpt(entry))}</p>` : ""}
         <a class="text-link" href="${escapeHtml(pageRelative(entry.url, "../"))}">Artikel lesen</a>
       </div>
     </article>`;

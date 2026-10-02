@@ -431,6 +431,15 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     if (!/^\d{15,22}$/.test(owner || '')) return { status: 'owner_unknown', proposed: [] };
     const editorialRows = rows.filter((row) => row?.input?.job_type === 'editorial_request');
     const requests = []; for (const row of editorialRows) { const job = await store.get(row.input.job_id); if (job) requests.push(job); }
+    // Long seasonal feed windows are a backlog, not eight new episodes today.
+    // Leave most existing daily capacity for current broadcasts, including those
+    // whose subtitles arrive later. Derive use from durable jobs (also on upgrade).
+    const backlogDays = Math.max(7, maxAgeDays);
+    const isBacklog = (published, at) => Date.parse(at) - Date.parse(published) > backlogDays * 86400000;
+    const backlogLimit = Math.max(1, Math.floor(maxPerDay / 4));
+    let backlogProposed = requests.filter(job => ownEpisodeRequest(job)
+      && String(job.created_at || '').slice(0, 10) === day
+      && isBacklog(job.input.origin?.episode_published_at, job.created_at)).length;
     let editions = []; try { editions = JSON.parse(fs.readFileSync(path.join(root, 'data/news/personal-editorials.json'), 'utf8')).editions || []; } catch { /* no published editions yet */ }
     // Ein Auftrag der Redaktion zu derselben Folge blockiert weiterhin: ihre
     // Arbeit wird nicht verdoppelt. Der eigene, selbst eingereihte Auftrag darf
@@ -512,10 +521,13 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     fresh.sort((a, b) => b.episode.published_at.localeCompare(a.episode.published_at));
     const proposed = [];
     const transcriptDay = (await store.observation(`github-transcript-day:${day}`)) || { day, transcribed: 0, cost_usd: 0 };
-    const transcriptErrors = [], waiting = [];
+    const transcriptErrors = [], waiting = [], deferred = [];
     const runLimit = Math.max(0, Math.min(limit, maxPerDay - counter.proposed));
     for (const { episode, show, retry, promotion } of fresh) {
-      if (proposed.length >= runLimit) break;
+      const backlog = isBacklog(episode.published_at, now);
+      const defer = reason => deferred.push({ show_id: show.id, url: episode.page, published_at: episode.published_at, reason });
+      if (proposed.length >= runLimit) { defer(counter.proposed >= maxPerDay ? 'daily_limit' : 'run_limit'); continue; }
+      if (backlog && backlogProposed >= backlogLimit) { defer('backlog_capacity_reserved_for_current_episodes'); continue; }
       // Reihenfolge des Wortlauts: offizielles Podcast-Transkript, dann die
       // amtlichen Untertitel für Hörgeschädigte, zuletzt eigene Spracherkennung.
       let transcript = await fetchYouTubeTranscript(episode, fetchImpl);
@@ -573,10 +585,13 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       await store.observe(pendingEpisodesKey(show), { at: now, policy: AUTOMATIC_DRAFT_POLICY, episodes: [...pending.get(show.id).values()] });
       proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, promoted_observation: Boolean(promotion), transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || null, transcript_cost_usd: transcript?.cost_usd || 0 });
       counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
+      if (backlog) backlogProposed += 1;
     }
     return { status: !proposed.length && counter.proposed >= maxPerDay ? 'daily_limit' : 'ok', day, draft_policy: AUTOMATIC_DRAFT_POLICY,
       checked_shows: followedShows.length, pending_episodes: [...pending.values()].reduce((sum, rows) => sum + rows.size, 0),
-      fresh_episodes: fresh.length, feed_errors: feedErrors, duplicate_requests: duplicates, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
+      fresh_episodes: fresh.length, feed_errors: feedErrors, duplicate_requests: duplicates, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting,
+      deferred_episodes: deferred, backlog_proposed_today: backlogProposed, backlog_daily_limit: backlogLimit,
+      transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
 }
 

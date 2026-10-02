@@ -31,10 +31,12 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-// 7 seit 18.09.2026: Korrekturfassungen bindet der Worker selbst an ihr Ziel
-// (bindeKorrekturfassung). Die Versionsmarke gibt verbrauchten Versuchen genau
-// eine neue Chance - darunter der Oelkrise-Korrektur, die daran scheiterte.
-export const WORKER_VERSION = 'redaktionsworker-7';
+// 8 seit 02.10.2026: Nach der behobenen Undici-/Quellenabruf-Blockade darf
+// ein abgebrochener Versuch ohne gespeicherte Antwort einmal wieder anlaufen.
+// Der gepruefte Bestand enthaelt einen solchen Lanz-&-Precht-Auftrag. Vorhandene
+// Antworten werden zuerst aus dem Archiv zugestellt; gelieferte Fassungen und
+// Freigaben bleiben unveraendert. Mengen-/Kostenlimits gelten weiterhin.
+export const WORKER_VERSION = 'redaktionsworker-8';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
@@ -322,7 +324,7 @@ export function bindeKorrekturfassung(preview, intake, repairs = []) {
   return preview;
 }
 
-export function normalizeEditorialPreview(preview, { links = [], repairs = [] } = {}) {
+export function normalizeEditorialPreview(preview, { links = [], attachments = [], repairs = [] } = {}) {
   if (!preview || typeof preview !== 'object') return preview;
   if (typeof preview.markdown === 'string') {
     const title = String(preview.title || '').replace(/\s+/g, ' ').trim().toLowerCase();
@@ -349,6 +351,26 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
     // patch.body_markdown === preview.markdown, sonst verwirft sie den Entwurf.
     const patch = preview.editorial_revision?.patch;
     if (patch && typeof patch.body_markdown === 'string' && patch.body_markdown !== preview.markdown) patch.body_markdown = preview.markdown;
+  }
+  // User screenshots stay in the private, hash-bound intake. They are not
+  // public web sources and must never acquire an invented URL or leak a path.
+  // Only an exact match to the actual request permits this transport repair.
+  const privateAttachment = (path, sha256) => typeof path === 'string'
+    && /^[a-f0-9]{64}$/.test(String(sha256 || ''))
+    && attachments.some((item) => item.path === path && item.sha256 === sha256);
+  if (Array.isArray(preview.sources)) {
+    preview.sources = preview.sources.filter((source) => {
+      if (source?.source_function !== 'starting_material' || source.url
+        || !privateAttachment(source.path, source.sha256)) return true;
+      repairs.push('sources:belegter privater Anhang bleibt im Originalauftrag statt in öffentlichen Webquellen');
+      return false;
+    });
+  }
+  if (!['listened', 'watched'].includes(preview.format)
+    && preview.source_media?.type === 'user_attachment'
+    && privateAttachment(preview.source_media.bridge_path, preview.source_media.sha256)) {
+    delete preview.source_media;
+    repairs.push('source_media:belegter privater Anhang bleibt im Originalauftrag');
   }
   for (const source of Array.isArray(preview.sources) ? preview.sources : []) {
     if (!source || typeof source !== 'object') continue;
@@ -417,7 +439,7 @@ export async function recoverCachedEditorialOutputs(session, rows, at) {
       if (hash(raw) !== correction.original_output_hash) throw Error('EDITORIAL_CACHED_OUTPUT_CHANGED');
       const output = JSON.parse(raw), repairs = [];
       if (!output.preview) continue;
-      normalizeEditorialPreview(output.preview, { links: job.input.request?.links || [], repairs });
+      normalizeEditorialPreview(output.preview, { links: job.input.request?.links || [], attachments: job.input.request?.attachments || [], repairs });
       if (!repairs.length) continue;
       const validated = validateEditorialDelivery(output, job.input, at);
       await session.transport.writeAtomic(outputPath, validated);
@@ -536,7 +558,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   let validated = null, lastIssues = [], repairCalls = 0, cost = result.cost || 0, usage = result.usage;
   for (let pass = 0; pass <= (repairPass ? 1 : 0); pass += 1) {
     if (output.preview && job.intake?.revision_target) bindeKorrekturfassung(output.preview, job.intake, previewRepairs);
-    if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
+    if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], attachments: packet.request?.attachments || [], repairs: previewRepairs });
     try { validated = validateEditorialDelivery(output, packet, now()); break; }
     catch (error) { lastIssues = [String(error.message), ...(error.issues || [])]; }
     if (pass >= (repairPass ? 1 : 0)) break;
