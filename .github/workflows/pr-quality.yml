@@ -50,6 +50,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          fetch-depth: 0
+
+      - name: Prepare pinned history for release-equivalent historical checks
+        run: bash scripts/ops/prepare-release-history.sh
 
       - name: Setup Node
         uses: actions/setup-node@v4
