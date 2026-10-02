@@ -378,3 +378,28 @@ test('manual source repairs have a bounded chain; temporary source failures keep
   assert.equal(f.approval.claimPublications().length,0);
  });
 });
+
+test('publication adapter recovery reuses paid research once and preserves the held child and approvals',async t=>{
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ for(const scenario of ['recovered','still_missing','unrelated_hold','child_running'])await t.test(scenario,async t=>{
+  const f=setup(t),j=await job(f),id='wt_20261002T100000Z_'+'d'.repeat(24);
+  j.input.request.kind='news';j.intake.kind='news';j.intake.news_research={...preview(),format:'news',title:'Synthetisch: Kommune eröffnet eine Bibliothek'};
+  j.intake.news_repair_job_id=id;j.intake.source_errors=[{url:'https://example.org/source',error_code:'SOURCE_PUBLICATION_METADATA_MISSING'}];
+  j.accepted={staged:true,output_hash:'a'.repeat(64)};j.ack={status:'staged'};f.store.put(j);
+  const child={input:{...j.input,job_id:id},status:scenario==='child_running'?'queued':'accepted',
+   ...(scenario==='child_running'?{}:{accepted:{decision:'hold'}}),intake:{review_parent:j.input.job_id,kind:'news',editorial_hold:{code:scenario==='unrelated_hold'?'EDITORIAL_CONTEXT_MISSING':'SOURCE_VERIFICATION_REQUIRED',reason:'Synthetischer Quellen-HOLD'}}};
+  f.store.put(child);let calls=0;
+  const source={source_id:'test-news',name:'Test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A',publisher_id:'test',source_type:'media_rss'};
+  const body=`<meta property="og:title" content="${j.intake.news_research.title}"><article itemscope itemtype="https://schema.org/NewsArticle"><meta itemprop="mainEntityOfPage" content="https://example.org/source">${scenario==='still_missing'?'':`<meta itemprop="datePublished" content="${now()}">`}<p>Eine neue öffentliche Bibliothek bietet zusätzliche Arbeitsplätze zum Lernen. Der Fall ist vollständig synthetisch und dient ausschließlich der technischen Prüfung.</p></article>`;
+  const args={...f,registry:{sources:[source],policy:{}},fetchArticle:async()=>{calls++;return {body,final_url:'https://example.org/source'};}};
+  await prepareIntakeNews(args);await prepareIntakeNews(args);
+  const parent=f.store.get(j.input.job_id);
+  assert.deepEqual(parent.input,j.input);assert.deepEqual(parent.accepted,j.accepted);assert.deepEqual(parent.ack,j.ack);assert.deepEqual(f.store.get(id),child);
+  assert.equal(f.approval.claimPublications().length,0);
+  assert.equal(calls,['recovered','still_missing'].includes(scenario)?1:0);
+  if(scenario==='recovered'){
+   const native=f.store.get(parent.intake.news_job_id);assert.equal(native.input.job_type,'new_story');assert.equal(native.candidate.published,false);
+   assert.equal(parent.intake.news_repair_job_id,undefined);assert.equal(parent.intake.news_metadata_recheck.repair_job_id,id);assert.equal(f.store.all().length,3);
+  }else{assert.equal(parent.intake.news_job_id,undefined);assert.equal(parent.intake.news_repair_job_id,id);assert.equal(f.store.all().length,2);}
+ });
+});
