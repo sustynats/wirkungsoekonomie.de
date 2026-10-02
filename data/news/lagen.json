@@ -1,7 +1,72 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-01T16:00:00.000Z",
+  "updated_at": "2026-10-02T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-02-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-02",
+      "window_from": "2026-10-01T16:00:00.000Z",
+      "window_to": "2026-10-02T04:00:00.000Z",
+      "stand": "2026-10-02T04:00:00.000Z",
+      "headline": "Das sind die 6 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 6,
+        "neu": 4,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-0eb1d7fda049bef9",
+          "slug": "trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9",
+          "title": "Trump und Selenskyj sprechen über mögliche Wege zum Ende des Ukraine-Kriegs",
+          "state": "fortgeschrieben",
+          "at": "2026-10-02T03:43:16.114Z",
+          "score": 9.7268
+        },
+        {
+          "story_id": "wt-678ca9ebc1156f8c",
+          "slug": "frauen-erinnern-an-moglichen-femizid-in-rheine-156f8c",
+          "title": "Frauen erinnern in Rheine an getötete 46-Jährige",
+          "state": "neu",
+          "at": "2026-10-01T20:20:54.063Z",
+          "score": 5.3624
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk erneuert Selenskyj Vorschlag für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-01T19:36:12.831Z",
+          "score": 9.0503
+        },
+        {
+          "story_id": "wt-f73e7af61223b5f4",
+          "slug": "slowakei-zweites-todesopfer-nach-messerangriff-an-schule-23b5f4",
+          "title": "Slowakei: Laut Bildungsminister stirbt zweites Opfer nach Messerangriff an Schule",
+          "state": "neu",
+          "at": "2026-10-01T18:03:31.264Z",
+          "score": 7.6716
+        },
+        {
+          "story_id": "wt-d47cfb9a130a3ff2",
+          "slug": "schuss-auf-fluchtigen-sek-stoppt-bewaffneten-mann-mit-schuss-in-die-beine-0a3ff2",
+          "title": "Laut stern: SEK stoppt bewaffneten Mann in Krefeld mit Schuss in die Beine",
+          "state": "neu",
+          "at": "2026-10-01T17:24:49.343Z",
+          "score": 5.2552
+        },
+        {
+          "story_id": "wt-c89e56fabcd91d56",
+          "slug": "schwerverletzt-bei-explosion-manner-finden-pulver-und-zunden-es-an-d91d56",
+          "title": "Zwei Männer bei Explosion in Fellbach schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-01T16:47:25.175Z",
+          "score": 9.5659
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-01-abendlage",
       "slot": "abendlage",
