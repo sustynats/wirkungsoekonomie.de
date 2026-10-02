@@ -20,25 +20,22 @@
     "liegengebliebene-auftraege": {
       "firstSeen": "2026-10-02T07:06:05.328Z",
       "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-02T08:50:59.815Z",
-      "active": true
-    },
-    "freigabe-quittung": {
-      "firstSeen": "2026-10-02T09:35:55.403Z",
-      "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-02T11:05:53.143Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-02T11:23:21.504Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3f5210e69e9b0c310f7b649d",
+      "content": "✓ WÖk-Störung behoben\nQuittung freigegebener Fassungen\nPrüfung: 2026-10-02T11:35:58.078Z"
+    },
+    {
+      "id": "2129d65a25a5f2cdc52e96b2",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-02T11:35:58.078Z"
+    },
+    {
+      "id": "891373728f20c1bd9d9bae2b",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-02T11:35:58.078Z"
+    }
+  ],
   "dailyDate": "2026-10-02",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2350,11 +2347,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3/": {
         "first_seen_at": "2026-10-02T08:35:37.303Z",
         "source_at": "2026-10-02T06:47:03.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562/": {
+        "first_seen_at": "2026-10-02T11:35:58.078Z",
+        "source_at": "2026-10-02T09:30:18.000Z"
       }
     },
-    "last_new_at": "2026-10-02T08:35:37.303Z",
-    "checked_at": "2026-10-02T11:23:21.504Z",
-    "last_current_new_at": "2026-10-02T08:35:37.303Z"
+    "last_new_at": "2026-10-02T11:35:58.078Z",
+    "checked_at": "2026-10-02T11:35:58.078Z",
+    "last_current_new_at": "2026-10-02T11:35:58.078Z"
   },
   "recovery_attempts": [
     {
