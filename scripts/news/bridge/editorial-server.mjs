@@ -7,12 +7,12 @@ import path from 'node:path';
 import {randomInt} from 'node:crypto';
 import {BridgeStore} from './store.mjs';
 import {DropboxTransport,loadDropboxCredentials} from './dropbox.mjs';
-import {bridgePath} from './contract.mjs';
 import {EditorialIntake} from './intake.mjs';
 import {EditorialApproval} from './editorial-approval.mjs';
 import {createEditorialIntakeHandler,existingAdminAuthorizer} from './intake-http.mjs';
 import {EDITORIAL_REQUEST_CONTRACT,EDITORIAL_REQUEST_CONTRACT_V4,importEditorialPreviews} from './intake-processing.mjs';
 import {OPS_STATUS_KEY} from '../../ops/betriebsstatus.mjs';
+import {ensureEditorialContracts} from './editorial-bootstrap.mjs';
 
 const directory=process.env.WOEK_NEWS_BRIDGE_DIRECTORY,owner=process.env.WOEK_EDITORIAL_OWNER_DISCORD_ID;
 if(!path.isAbsolute(directory||'')||!/^\d{15,22}$/.test(owner||''))throw Error('EDITORIAL_PRIVATE_CONFIGURATION_REQUIRED');
@@ -28,28 +28,29 @@ const admin=existingAdminAuthorizer();
 // Redaktions-App liest ihn ueber ihr eigenes, angemeldetes Konto.
 const handler=createEditorialIntakeHandler({intake,approval,authorize:async req=>(await admin(req))===owner?owner:null,
   readStatus:()=>{try{return store.observation(OPS_STATUS_KEY);}catch{return null;}}});
-await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-3.json'),EDITORIAL_REQUEST_CONTRACT);
-await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-4.json'),EDITORIAL_REQUEST_CONTRACT_V4);
+console.log(JSON.stringify({event:'EDITORIAL_CONTRACTS_READY', contracts:await ensureEditorialContracts(transport,[EDITORIAL_REQUEST_CONTRACT,EDITORIAL_REQUEST_CONTRACT_V4])}));
 const notificationFile=path.join(directory,'editorial-discord.json');
 const notificationConfig=fs.existsSync(notificationFile)?JSON.parse(fs.readFileSync(notificationFile)):null;
 const registry=loadNewsRegistry(process.cwd());
-let polling=false;
+let polling=false,pollStartedAt=null,pollFinishedAt=null,pollPhase=null;
 async function poll(){
- if(polling)return;polling=true;
+ if(polling)return;polling=true;pollStartedAt=new Date().toISOString();pollPhase='import';
  try{
   let imported=false,importAcquired=false;
   try{importStore.acquire(new Date().toISOString(),'import',{manualRunId:`${Date.now()}:${randomInt(100000)}`});importAcquired=true;
    const result=await importEditorialPreviews({store:importStore,transport,approval});
+   console.log(JSON.stringify({event:'EDITORIAL_PREVIEWS_CHECKED',staged:result.staged||0,held:result.held||0,failed:result.failed?.length||0}));
    if(result.failed?.length)console.error(JSON.stringify({event:'EDITORIAL_CORRECTION_REQUESTED',jobs:result.failed}));
    stageIntakeNews({store:importStore,approval});imported=true;
   }catch(e){if(e.message!=='BRIDGE_RUN_LOCKED')console.error(JSON.stringify({event:'EDITORIAL_IMPORT_PENDING',code:/^[A-Z_]+$/.test(e.message)?e.message:'EDITORIAL_IMPORT_FAILED'}));}
   finally{if(importAcquired)importStore.release(imported);}
   let prepared=false,discoveryAcquired=false;
+  pollPhase='discovery';
   try{store.acquire(new Date().toISOString(),'discovery',{manualRunId:`${Date.now()}:${randomInt(100000)}`});discoveryAcquired=true;
    prepareEditorialRevisions({store,approval});await prepareIntakeNews({store,transport,registry});prepared=true;
   }catch(e){if(e.message!=='BRIDGE_RUN_LOCKED')console.error('EDITORIAL_RESEARCH_PENDING');}finally{if(discoveryAcquired)store.release(prepared);}
   await notifyEditorialReviews({approval,store,config:notificationConfig});
- }finally{polling=false;}
+ }finally{polling=false;pollFinishedAt=new Date().toISOString();pollPhase=null;}
 }
 const timer=setInterval(poll,30000);timer.unref();
 const server=http.createServer(async(req,res)=>{
@@ -57,7 +58,8 @@ const server=http.createServer(async(req,res)=>{
   const send=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
   if(req.headers.origin||!['127.0.0.1','::1','::ffff:127.0.0.1'].includes(req.socket.remoteAddress))return send(403,{});
   try{
-   if(req.url==='/internal/status'&&req.method==='GET')return send(200,{pending:approval.pendingPublication().length});
+   if(req.url==='/internal/status'&&req.method==='GET')return send(200,{pending:approval.pendingPublication().length,
+    poll:{running:polling,phase:pollPhase,started_at:pollStartedAt,finished_at:pollFinishedAt,import_lock:importStore.locked===true,discovery_lock:store.locked===true}});
    if(req.method!=='POST'||req.headers['content-type']!=='application/json')return send(400,{});
    if(req.url==='/internal/failure'){
     let raw='';for await(const chunk of req){raw+=chunk;if(raw.length>4096)return send(413,{});}

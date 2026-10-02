@@ -880,8 +880,8 @@ test('OAuth network recovery is bounded and never retries an ambiguous file writ
 
 test('the file-operation deadline starts only after OAuth recovery completes', async t => {
   const events=[];let tokens=0;
-  const timeout=AbortSignal.timeout.bind(AbortSignal);
-  t.mock.method(AbortSignal,'timeout',ms=>{events.push(`timeout:${ms}`);return timeout(ms)});
+  const timeout=globalThis.setTimeout;
+  t.mock.method(globalThis,'setTimeout',(callback,ms,...args)=>{events.push(`timeout:${ms}`);return timeout(callback,ms,...args)});
   const transport=new DropboxTransport({credentials:{},sleep:async ms=>events.push(`sleep:${ms}`),fetchImpl:async url=>{
     if(url.endsWith('/oauth2/token')) {
       events.push('auth');

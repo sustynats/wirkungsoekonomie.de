@@ -164,6 +164,13 @@ export function eventCompatibility(a, b) {
     return { same_event:same, related:structuredLeft?.institution===structuredRight?.institution,
       reason:same?'specific_incident_place_day':'different_or_unestablished_incident_identity' };
   }
+  if (structuredLeft?.kind === 'institutional_formation' || structuredRight?.kind === 'institutional_formation') {
+    // A later deployment, another unit or a commentary is not the formation
+    // announcement, even when most headline words remain identical.
+    const same = structuredLeft?.key === structuredRight?.key && !geographyConflict && courtCase.status === 'unestablished';
+    return { same_event: same, related: Boolean(structuredLeft && structuredRight && structuredLeft.institution === structuredRight.institution),
+      reason: same ? 'institution_proceeding_day' : 'different_or_unestablished_formation_identity' };
+  }
   if (structuredLeft && structuredRight && !geographyConflict && courtCase.status === 'unestablished') {
     return { same_event: structuredLeft.key === structuredRight.key, related: structuredLeft.institution === structuredRight.institution,
       reason: structuredLeft.key === structuredRight.key ? 'institution_proceeding_day' : 'different_proceeding_day' };
