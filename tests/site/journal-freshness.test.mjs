@@ -17,13 +17,14 @@ const previous = posts.find(post => post.date < latest.date);
 
 test('current journal discovery qualifies the historical WÖk acronym without rewriting the article', () => {
   const entry = posts.find(post => post.url === '/blog/geg-wirkungscheck-ioi-t-sroi.html');
-  assert.match(entry.excerpt, /damalige WÖk-Kurzbezeichnung NWI/);
+  // The index excerpt also feeds the protected dated PDF; qualify only cards.
+  assert.match(entry.excerpt, /IOI, NWI und T-SROI/);
+  assert.match(fs.readFileSync(new URL('../../blog.html', import.meta.url), 'utf8'), /damalige WÖk-Kurzbezeichnung NWI/);
   assert.ok(entry.tags.includes('WÖk-Netto-Wirkungsindex'));
   assert.ok(!entry.tags.includes('NWI'));
   const article = fs.readFileSync(new URL('../../blog/geg-wirkungscheck-ioi-t-sroi.html', import.meta.url), 'utf8');
   assert.match(article, /WOEK:NWI-DISAMBIGUATION:START/);
-  const generator = fs.readFileSync(new URL('../../scripts/blog/build-blog-index.mjs', import.meta.url), 'utf8');
-  assert.match(generator, /damalige WÖk-Kurzbezeichnung NWI/);
+  assert.match(renderJournalArchiveCard(entry), /damalige WÖk-Kurzbezeichnung NWI/);
 });
 
 function worker({ offline = false, saved = true, quota = false } = {}) {

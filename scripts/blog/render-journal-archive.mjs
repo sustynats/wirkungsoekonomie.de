@@ -1,4 +1,11 @@
 // Static counterpart of the browser archive; parity is checked in journal-freshness.test.mjs.
+export function listingExcerpt(entry) {
+  const excerpt = entry.excerpt || "";
+  return entry.url === "/blog/geg-wirkungscheck-ioi-t-sroi.html"
+    ? excerpt.replace(/\bIOI, NWI und T-SROI\b/g, "IOI, die damalige WÖk-Kurzbezeichnung NWI und T-SROI")
+    : excerpt;
+}
+
 export function renderJournalArchiveCard(post) {
     const tags = (post.tags || []).slice(0, 6);
     const tagSlugs = tags.map(slugify).filter(Boolean);
@@ -19,7 +26,7 @@ export function renderJournalArchiveCard(post) {
         <div class="blog-badge-row">${badges.map((badge) => `<span class="blog-origin-badge">${escapeHtml(badge)}</span>`).join("")}</div>
         <p class="card-kicker"><a class="category-link" href="#thema-${escapeHtml(categorySlug)}" data-blog-filter="${escapeHtml(categorySlug)}">${escapeHtml(post.category || "Journal")}</a> · <time datetime="${escapeHtml(post.date)}">${formatDate(post.date)}</time>${post.readingTime ? ` · ${escapeHtml(post.readingTime)}` : ""}</p>
         <h3 class="card-title">${escapeHtml(post.title)}</h3>
-        <p class="card-text">${escapeHtml(post.excerpt || "")}</p>
+        <p class="card-text">${escapeHtml(listingExcerpt(post))}</p>
         <a class="text-link" href="${escapeHtml(post.url)}">Beitrag lesen</a>
         ${tags.length ? `<div class="tag-list" aria-label="Schlagworte">${tags.map((tag) => `<a href="#tag-${escapeHtml(slugify(tag))}" data-blog-tag="${escapeHtml(slugify(tag))}">${escapeHtml(tag)}</a>`).join("")}</div>` : ""}
       </article>
