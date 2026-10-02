@@ -3,12 +3,50 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow, lageCheck, selbsttestCheck } from '../../scripts/ops/discord-monitor.mjs';
+import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow, lageCheck, selbsttestCheck, readEditorialMonitorStatus, writeEditorialMonitorStatus } from '../../scripts/ops/discord-monitor.mjs';
 
 const now = '2026-09-04T06:00:00Z';
 const fixture = () => ({ report: { status: 'ok', operational_status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [], queue: { status: 'clear', total: 0, capacity: 0, technical: 0, editorial: 0 }, source_funnel: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
 const healthy = [{ id: 'main', name: 'Hauptseite', ok: true }];
 const failed = [{ id: 'main', name: 'Hauptseite', ok: false, reason: 'HTTP 503' }];
+
+test('editorial monitor owns a short lane for journal reads and a separate slot for status delivery', async () => {
+  const calls = [], env = { GITHUB_RUN_ID: '123', GITHUB_RUN_ATTEMPT: '1' };
+  let locked = false;
+  const session = { store: {
+    acquire: async (...args) => { assert.equal(locked, false); locked = true; calls.push(['acquire', ...args]); },
+    observation: async key => { assert.equal(locked, true); return key === 'editorial-parked'
+      ? { parked: [{ code: 'TEST_HOLD' }], awaiting: 2, awaiting_since: now } : { orders: [{ job_id: 'test' }] }; },
+    observe: async (key, value) => { assert.equal(locked, true); calls.push(['observe', key, value]); },
+    release: async success => { assert.equal(locked, true); locked = false; calls.push(['release', success]); },
+  } };
+  const result = await readEditorialMonitorStatus({ session, env, now });
+  assert.equal(result.available, true); assert.equal(result.awaitingReceipt, 2);
+  assert.equal(result.exhaustedOrders.length, 1); assert.equal(locked, false);
+  await writeEditorialMonitorStatus({ session, env, now, status: { checked_at: now } });
+  assert.equal(locked, false);
+  assert.deepEqual(calls.filter(c => c[0] === 'acquire').map(c => c[3].manualRunId), ['123:17', '123:18']);
+  assert.equal(calls.find(c => c[0] === 'observe')[1], 'ops-status');
+});
+
+test('blocked or unreadable editorial state is unknown, never an empty healthy queue', async () => {
+  const env = { GITHUB_RUN_ID: '123' };
+  const locked = await readEditorialMonitorStatus({ env, now, session: { store: {
+    acquire: async () => { throw Error('BRIDGE_RUN_LOCKED'); },
+    observation: () => assert.fail('must not read without ownership'),
+    release: () => assert.fail('must not release another writer'),
+  } } });
+  assert.deepEqual(locked, { available: false, error: 'BRIDGE_RUN_LOCKED' });
+  const { checks } = evaluateChecks({ ...fixture(), processing_mode: 'api', editorialStatus: locked }, now);
+  assert.equal(checks.find(c => c.id === 'editorial-status').ok, false);
+  assert.ok(!checks.some(c => ['parked-editions', 'freigabe-quittung', 'liegengebliebene-auftraege'].includes(c.id)));
+  let released;
+  const unreadable = await readEditorialMonitorStatus({ env, now, session: { store: {
+    acquire: async () => {}, observation: async () => { throw Error('BROKEN_JOURNAL'); },
+    release: async success => { released = success; },
+  } } });
+  assert.equal(unreadable.available, false); assert.equal(released, false);
+});
 
 test('monitor sparse checkout includes the complete local module dependency graph', () => {
   const root = fileURLToPath(new URL('../../', import.meta.url));

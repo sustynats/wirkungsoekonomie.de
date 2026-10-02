@@ -30,6 +30,18 @@ function setup(t){
 async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
 const holdOutput=j=>({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),disposition:'hold',hold:{code:'EDITORIAL_CONTEXT_MISSING',reason:'Zum Auftrag fehlt der konkrete Themenbezug.',requested_information:'Bitte die Quelle oder das Thema ergänzen.'}});
 
+test('temporary output transport failure preserves the paid output and never requests content correction',async t=>{
+ const f=setup(t),j=await job(f);
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),preview:preview()}));
+ const before=f.store.get(j.input.job_id),read=f.transport.read;
+ f.transport.read=async()=>{throw Object.assign(Error('BRIDGE_DROPBOX_REQUEST_TIMEOUT'),{retryable:true});};
+ await assert.rejects(importEditorialPreviews(f),/BRIDGE_DROPBOX_REQUEST_TIMEOUT/);
+ assert.deepEqual(f.store.get(j.input.job_id),before);assert.equal(f.approval.get(j.input.job_id),null);
+ f.transport.read=read;assert.equal((await importEditorialPreviews(f)).staged,1);
+ assert.equal(f.approval.get(j.input.job_id).status,'AWAITING_FINAL_APPROVAL');
+ assert.equal(f.approval.claimPublications().length,0);
+});
+
 test('a research hold is visible, ACKed without publication and does not stop the next private preview',async t=>{
  const f=setup(t),j=await job(f);
  const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Zweiter vollständiger synthetischer Auftrag.',links:'https://example.org/source',author_notes:'',attachments:[],publish:false,urgent:false});

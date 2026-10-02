@@ -72,10 +72,14 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   try {
     const result = mode === 'finalize' ? await finalizeApprovedEditorials() : await claimApprovedEditorials();
     console.log(JSON.stringify({ mode, ...result }));
+    if (result.status === 'skipped' && result.reason !== 'BRIDGE_SLOT_ALREADY_COMPLETED') {
+      console.warn(`::warning::Redaktions-${mode} nicht ausgefuehrt: ${result.reason}`);
+    }
     if (process.env.GITHUB_OUTPUT && mode === 'claim') (await import('node:fs')).appendFileSync(process.env.GITHUB_OUTPUT, `changed=${Boolean(result.changed)}\n`);
   } catch (error) {
     // Eine gestörte private Redaktion darf den Nachrichtenlauf nie anhalten.
     console.error(JSON.stringify({ mode, status: 'failed', error: /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EDITORIAL_IMPORT_FAILED' }));
+    console.warn('::warning::Redaktionelle Uebernahme/Quittung fehlgeschlagen; Nachrichten laufen unabhaengig weiter.');
     process.exitCode = 0;
   }
 }
