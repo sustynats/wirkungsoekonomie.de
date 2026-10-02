@@ -94,6 +94,11 @@ jobs:
       - name: Build complete site before artifact checks
         run: WOEK_PDF_BUILD_MODE=verify npm run build
 
+      - name: Audit generated release before merge (no branch-writing projections)
+        # Use the same semantic/historical gates as publication. A card-renderer
+        # regression must fail here, not only after approved news wait to deploy.
+        run: bash scripts/ops/audit-generated-release.sh
+
       - name: Build public deploy artifact
         run: npm run build:artifact
 

@@ -7,6 +7,11 @@ on:
   pull_request:
     paths:
       - '**/*.html'
+      # Journal discovery/card repairs do not change approved #253 source
+      # projections. This branch-writing job otherwise rewrites thousands of
+      # unrelated pages and stale news feeds, conflicting with live ingestion.
+      # The complete PR build and release still run every semantic gate.
+      - '!blog.html'
       # The private editorial app does not project public #253 content. Its
       # source-only fixes must not receive stale generated news from this writer.
       - '!admin/redaktion/**'
@@ -24,6 +29,7 @@ on:
       # Dieselbe Begruendung wie bei scripts/news/** weiter unten.
       - '!content/news/**'
       - 'scripts/**'
+      - '!scripts/blog/**'
       # News ingestion and operational monitoring do not change #253 content.
       # Keep the branch-writing projection job off these server-only changes;
       # their tests and the complete PR website gates still run independently.

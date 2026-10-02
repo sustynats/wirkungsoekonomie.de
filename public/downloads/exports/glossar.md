@@ -11135,7 +11135,7 @@ Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise,
 
 Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.
 
-Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen - nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
+Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
 
 ## Social Economy / Solidarity Economy
 
@@ -14531,7 +14531,7 @@ Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditi
 
 Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.
 
-Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder - nur mit Rechtsgrundlage - Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
+Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
 
 ## Wirkungslücke
 
