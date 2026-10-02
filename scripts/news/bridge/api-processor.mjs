@@ -16,6 +16,11 @@ import { POTENTIAL_RESEARCH_RULE } from '../impact-potential.mjs';
 
 export const API_VALIDATION_REVISION = 'single-paid-attempt-7';
 
+// The personal manuscript adapter has no native impact_assessment field.
+// Scope the shared news methodology explicitly; a private narrative preview
+// must not be rejected solely for lacking a three-dimensional numeric profile.
+export const PERSONAL_PREVIEW_SCOPE = 'FORMATGRENZE: Dieser Auftrag erstellt einen persönlichen Manuskriptentwurf (Meinung & Analyse, Buch & Wirkung, Nachgehört oder Nachgesehen), keine reguläre Nachricht und keinen numerischen MPD-Fachpass. Maßgeblich ist der vorhandene private preview-Vertrag. Die Produktinvariante mit drei numerischen modelled-Dimensionen und sechs Faktoren gehört zum nativen Nachrichten-/Assessment-Vertrag; sie ist kein zusätzliches Pflichtschema für diesen persönlichen Manuskriptentwurf. Mensch, Planet und Demokratie fachlich prüfen: konkrete belegte oder bedingt modellierte Pfade, Gegenstand, Vergleich, Empfänger, Raum, Zeit, Richtung, Evidenz und Wissensgrenzen sichtbar erklären. Keine künstlichen Pfade oder Zahlen ergänzen. Ein fehlender vertretbarer Zahlenwert für eine Dimension allein ist kein HOLD-Grund für diesen Entwurf; die Grenze im Text sachlich benennen. Fehlende tragende Tatsachenbelege, irreführende Wirkungsbehauptungen und fehlender notwendiger Wortlaut bleiben echte HOLD-Gründe. Bereits vorhandene fachliche Bewertungen nicht automatisch entfernen oder ändern. Quellenprüfung, Schutzlogik, Freigabe-Hash und Natalies abschließende Freigabe gelten unverändert; kein Auftrag wird dadurch veröffentlicht. Für reguläre Nachrichten und deren unabhängigen Fachpass gilt diese Formatabgrenzung nicht.';
+
 function reviewAssignment(original) {
   const assignment = structuredClone(original);
   delete assignment.requested_output;
@@ -98,7 +103,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null, allowWebR
     packet_hash: hash(packet), kind, attempt: packet.correction_attempt || 0, profile_hash: knowledge.hash,
     instructions: kind === 'review' ? knowledge.instructions.replace(
       'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.',
-      'In diesem Fachpass steht ausschließlich das begrenzte Web-Suchtool zur Verfügung. Verwende als Tatsachenbelege mitgelieferte Textauszüge oder tatsächlich durch dieses Tool gelesene Belege. Keine Bilder oder Dateien erzeugen.') : knowledge.instructions, prompt };
+      'In diesem Fachpass steht ausschließlich das begrenzte Web-Suchtool zur Verfügung. Verwende als Tatsachenbelege mitgelieferte Textauszüge oder tatsächlich durch dieses Tool gelesene Belege. Keine Bilder oder Dateien erzeugen.') : knowledge.instructions + (kind === 'personal' && ['opinion_analysis','book_review','listened','watched'].includes(original.request?.kind) ? '\n\n' + PERSONAL_PREVIEW_SCOPE : ''), prompt };
   request.key = apiRequestKey(request);
   return validateApiRequest(request);
 }

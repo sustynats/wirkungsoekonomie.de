@@ -151,3 +151,17 @@ Der Eingabedienst selbst startet keine Text-KI-API und keinen eigenen
 ChatGPT-Weckdienst. Entwuerfe verarbeitet der bestehende GitHub-Redaktionsworker
 gemaess `docs/ops/WIRKUNGSTICKER-DIREKTBETRIEB.md`; die fruehere Einschraenkung
 des ChatGPT-Dateirueckschreibwegs ist keine Sperre dieser aktiven Route.
+
+### Formatabgrenzung im Entwurfsauftrag - 02.10.2026
+
+Der bestehende persoenliche `preview`-Vertrag fuer Meinung & Analyse,
+Buch & Wirkung, Nachgehoert und Nachgesehen ist ein Manuskriptvertrag, kein
+nativer numerischer `impact_assessment`-Auftrag. Die gemeinsame Wissensbasis
+wird deshalb im API-Auftrag ausdruecklich auf das tatsaechliche Format bezogen.
+Ein fehlender begruendbarer Zahlenwert allein sperrt keine persoenliche Vorschau.
+Qualitative MPD-Pruefung, konkrete bedingte Pfade und Wissensgrenzen bleiben
+erforderlich; fehlende tragende Fakten oder notwendiger Wortlaut bleiben HOLDs.
+Die Drei-Dimensionen-Invariante regulaerer Nachrichten und ihrer unabhaengigen
+Fachpruefung, alle Validatoren sowie die fassungsgebundene Abschlussfreigabe
+bleiben unveraendert. Vorhandene HOLDs oder bezahlte Antworten werden durch
+diese Prompt-Korrektur weder umgeschrieben noch automatisch erneut bezahlt.

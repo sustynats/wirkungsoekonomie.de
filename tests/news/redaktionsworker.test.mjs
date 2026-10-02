@@ -7,7 +7,7 @@ import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
 import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates, editorialModel, authorAnalysisModel, modelForEditorialRequest, recoverCachedEditorialOutputs, validateEditorialDelivery } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
-import { prepareApiJob } from '../../scripts/news/bridge/api-processor.mjs';
+import { prepareApiJob, PERSONAL_PREVIEW_SCOPE } from '../../scripts/news/bridge/api-processor.mjs';
 import { editorialRepairRequest, editorialRunNeedsAttention } from '../../scripts/news/redaktionsworker.mjs';
 
 const owner = '123456789012345678';
@@ -290,7 +290,7 @@ test('a queued request is claimed, drafted with one call, validated and delivere
   const draft = async (request) => { calls++; seen = request; return { output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.0034, answer: '{}' }; };
   const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
   assert.equal(result.status, 'output_delivered'); assert.equal(calls, 1);
-  assert.equal(seen.kind, 'personal'); assert.equal(seen.instructions, knowledge.instructions); assert.ok(seen.prompt.includes('opinion_analysis'));
+  assert.equal(seen.kind, 'personal'); assert.equal(seen.instructions, knowledge.instructions + '\n\n' + PERSONAL_PREVIEW_SCOPE); assert.ok(seen.prompt.includes('opinion_analysis'));
   assert.ok(session.files.has(bridgePath('10_CLAIMED', `${jobId}.input.json`)), 'input claimed');
   assert.ok(!session.files.has(bridgePath('00_INBOX', `${jobId}.input.json`)));
   const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
