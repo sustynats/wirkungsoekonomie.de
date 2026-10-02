@@ -206,12 +206,38 @@ test('daily caps keep discovered episodes pending even after the feed and age wi
   const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [show], fetchImpl, maxPerDay: 3 };
   const capped = await proposeEpisodeCandidates(options);
   assert.equal(capped.status, 'daily_limit'); assert.equal(capped.pending_episodes, 1);
+  assert.equal(capped.deferred_episodes[0].reason, 'daily_limit');
+  assert.equal(capped.deferred_episodes[0].url, 'https://lanz-precht.example/262');
   assert.equal(f.observations.get(pendingEpisodesKey(show)).episodes.length, 1);
   const later = await proposeEpisodeCandidates({ ...options, now: '2026-10-01T08:00:00.000Z',
     fetchImpl: async url => url === show.feed ? { ok: true, text: async () => '<rss><channel></channel></rss>' } : fetchImpl(url) });
   assert.equal(later.proposed.length, 1);
   assert.equal(later.proposed[0].published_at, '2026-09-10T23:01:00.000Z');
   assert.equal(later.pending_episodes, 0);
+});
+
+test('seasonal backlog cannot consume the capacity needed when current subtitles arrive later', async () => {
+  const f = fakeSession();
+  const show = { ...shows.lp, max_age_days: 210 };
+  const block = jule.match(/<item>[\s\S]*?<\/item>/)[0];
+  const old = '<rss><channel>' + Array.from({ length: 5 }, (_, i) => block
+    .replaceAll('262', String(300 + i)).replace('10 Sep 2026', '10 Mar 2026')).join('') + '</channel></rss>';
+  const options = { session: f.session, root: '/nonexistent', now, env: {}, shows: [show], limit: 8, maxPerDay: 8,
+    fetchImpl: async url => url === show.feed ? { ok: true, text: async () => old } : fetchImpl(url),
+    transcribeImpl: async () => assert.fail('official transcript, no paid transcription') };
+  const first = await proposeEpisodeCandidates(options);
+  assert.equal(first.proposed.length, 2);
+  assert.equal(first.pending_episodes, 3);
+  assert.ok(first.deferred_episodes.every(e => e.reason === 'backlog_capacity_reserved_for_current_episodes'));
+  const again = await proposeEpisodeCandidates(options);
+  assert.equal(again.proposed.length, 0, 'cap persists across runs from existing jobs');
+  const current = jule.replace('10 Sep 2026', '16 Sep 2026').replace('23:01:00', '03:01:00');
+  const later = await proposeEpisodeCandidates({ ...options,
+    fetchImpl: async url => url === show.feed ? { ok: true, text: async () => current } : fetchImpl(url) });
+  assert.equal(later.proposed.length, 1);
+  assert.equal(later.proposed[0].published_at, '2026-09-16T03:01:00.000Z');
+  assert.equal(later.pending_episodes, 3, 'older episodes remain remembered, not deleted');
+  assert.equal(f.observations.get('github-episode-day:2026-09-16').proposed, 3);
 });
 
 test('all new feed episodes are retained, not only the latest three; disabled sources stay off', async () => {
