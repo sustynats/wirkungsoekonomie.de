@@ -87,6 +87,13 @@ nicht automatisch wiederholt. Bestehende unveraenderliche Transportvertraege
 bleiben bei einem Runtime-Upgrade erhalten; nur fehlende Versionen werden angelegt.
 Der lokale Betriebsstatus zeigt Pollbeginn, Ende, Phase und den eigenen Lockbesitz.
 
+Im nachfolgenden Redaktionslauf 36970739307 trat ein eigenstaendiger Node-Absturz
+`Parser.finish: assert(!this.paused)` auf. Der Quellenabruf liess abgewiesene
+HTTP-/Nichttext-Antworten ungelesen. Dieser Pfad wird nun explizit abgebrochen;
+zugelassene Texte verwenden den vorhandenen 2-MB-Lesebegrenzer und die echte
+Gesamtdeadline. Passender Upstream-Befund: https://github.com/nodejs/undici/issues/5360.
+Das ist keine Quellenfreigabe: fehlgeschlagene Abrufe bleiben ohne Textauszug.
+
 Ein Merge ist noch kein Runtime-Deployment. Die aktualisierte Fassung muss als
 commitgebundenes Artefakt mit ihren Abhaengigkeiten geprueft werden. Rueckfallziel
 bleibt die vorherige Laufzeit; private Datenbanken und Zugangswerte werden nicht

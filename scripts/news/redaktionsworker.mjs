@@ -23,7 +23,8 @@ import { EINORDNUNG_NOTIZ } from './einordnung.mjs';
 import { prepareApiJob, validateApiOutput } from './bridge/api-processor.mjs';
 import { editorialKnowledge } from './bridge/editorial-knowledge.mjs';
 import { OPENAI_RESPONSES_URL, finalOutputText, decodeUsage, newsModel } from './openai-transport.mjs';
-import { extractJsonObject, extractArticleText } from './lib.mjs';
+import { extractJsonObject, extractArticleText, readLimitedBody } from './lib.mjs';
+import { withRequestDeadline } from './request-deadline.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { isIP } from 'node:net';
 import { modelRates } from './budget.mjs';
@@ -140,19 +141,23 @@ const privateHost = (host) => /^(localhost|.*\.local|.*\.internal)$/i.test(host)
 export async function fetchLinkExcerpt(url, fetchImpl = fetch, timeoutMs = 15000) {
   let parsed; try { parsed = new URL(url); } catch { return null; }
   if (parsed.protocol !== 'https:' || parsed.username || parsed.password || privateHost(parsed.hostname)) return null;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetchImpl(url, { signal: controller.signal, redirect: 'follow', headers: { Accept: 'text/html, application/xhtml+xml;q=0.9, text/plain;q=0.7, text/vtt;q=0.7', 'User-Agent': 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)' } });
-    if (!response.ok) return { url, status: response.status, excerpt: null };
+    return await withRequestDeadline(async signal => {
+    const response = await fetchImpl(url, { signal, redirect: 'follow', headers: { Accept: 'text/html, application/xhtml+xml;q=0.9, text/plain;q=0.7, text/vtt;q=0.7', 'User-Agent': 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)' } });
+    // Never leave an unread response paused in Node's HTTP parser. Apart from
+    // retaining sockets, this can crash Node on a peer FIN (undici #5360).
+    if (!response.ok) { await response.body?.cancel().catch(() => {}); return { url, status: response.status, excerpt: null }; }
     const type = String(response.headers?.get?.('content-type') || '');
-    if (!/html|xml|text\/plain|text\/vtt/i.test(type)) return { url, status: response.status, excerpt: null, content_type: type.slice(0, 60) };
-    const body = await response.text();
+    if (!/html|xml|text\/plain|text\/vtt/i.test(type)) {
+      await response.body?.cancel().catch(() => {});
+      return { url, status: response.status, excerpt: null, content_type: type.slice(0, 60) };
+    }
+    const body = await readLimitedBody(response, 2000000);
     const excerpt = /html|xml/i.test(type) ? extractArticleText(body, EXCERPT_MAX_CHARS) : body.replace(/\s+/g, ' ').trim().slice(0, EXCERPT_MAX_CHARS);
     const title = (body.match(/<title[^>]*>([^<]{3,200})<\/title>/i) || [])[1]?.replace(/\s+/g, ' ').trim() || null;
     return { url, status: response.status, title, excerpt: excerpt.length >= 120 ? excerpt : null, chars: excerpt.length };
+    }, {timeoutMs, code: 'EDITORIAL_SOURCE_TIMEOUT'});
   } catch (error) { return { url, status: 0, excerpt: null, error: String(error?.name || error).slice(0, 40) }; }
-  finally { clearTimeout(timer); }
 }
 export async function collectSourceExcerpts(links = [], fetchImpl = fetch) {
   const results = [];

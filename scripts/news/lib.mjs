@@ -305,7 +305,7 @@ export async function assertSafeFeedUrl(raw, allowedHosts, { resolveDns = true }
   return url;
 }
 
-async function readLimitedBody(response, maxBytes, { binary = false } = {}) {
+export async function readLimitedBody(response, maxBytes, { binary = false } = {}) {
   const declared = Number(response.headers.get("content-length") || 0);
   const tooLarge = (receivedBytes = 0) => Object.assign(new Error("FEED_TOO_LARGE"), {
     max_bytes: maxBytes, declared_bytes: declared, received_bytes: receivedBytes,

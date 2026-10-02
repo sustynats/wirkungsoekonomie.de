@@ -361,6 +361,23 @@ test('a rejected web-search request is retried once with the older tool spelling
 });
 
 const page = (text) => ({ ok: true, status: 200, headers: { get: (k) => k.toLowerCase() === 'content-type' ? 'text/html; charset=utf-8' : null }, text: async () => `<html><head><title>Bericht über den Sachverhalt</title></head><body><article><p>${text}</p></article></body></html>` });
+test('source excerpts cancel ignored responses and bound headers, bodies and download size', async () => {
+  let cancelled = 0;
+  for (const [status, type] of [[503, 'text/html'], [200, 'application/pdf']]) {
+    const response = new Response(new ReadableStream({cancel(){cancelled++;}}), {status, headers:{'content-type':type}});
+    const result = await fetchLinkExcerpt('https://example.org/source', async () => response, 50);
+    assert.equal(result.excerpt, null);
+    assert.equal(result.status, status);
+  }
+  assert.equal(cancelled, 2);
+  for (const fetchImpl of [() => new Promise(() => {}), async () => ({...page(''),text: () => new Promise(() => {})})]) {
+    const result = await fetchLinkExcerpt('https://example.org/source', fetchImpl, 10);
+    assert.equal(result.status, 0); assert.equal(result.excerpt, null);
+  }
+  const large = new Response(new ReadableStream({cancel(){cancelled++;}}), {headers:{'content-type':'text/html','content-length':'2000001'}});
+  assert.equal((await fetchLinkExcerpt('https://example.org/source', async () => large, 50)).excerpt, null);
+  assert.equal(cancelled, 3);
+});
 test('linked sources travel as fetched excerpts inside the prompt copy while the stored packet stays bound', async () => {
   const session = fakeSession([queuedJob()]);
   const packet = packetFor(jobId);
