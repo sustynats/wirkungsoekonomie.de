@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { renderJournalArchiveCard } from "./render-journal-archive.mjs";
 
 const root = process.cwd();
 const blogDir = path.join(root, "blog");
@@ -445,7 +446,11 @@ function updateBlogJournal(entries) {
     /      <section class="section" aria-labelledby="leitartikel-title">[\s\S]*?(?=\n      <section class="section section-muted" id="dossiers")/,
     renderBlogLatestSection(entries)
   );
-  const next = updateBlogStructuredData(withLatest, entries);
+  const withArchive = withLatest.replace(
+    /(<div class="card-grid blog-list-grid" id="redaktion-beitraege" data-journal-list>)[\s\S]*?(<\/div>\s*<div class="card blog-archive-note" id="beitraege-archiv-hinweis">)/,
+    (_match, start, end) => `${start}\n${entries.map(entry => renderJournalArchiveCard(entry).trim().replace(/[ \t]+$/gm, "")).join("\n")}\n        ${end}`
+  );
+  const next = updateBlogStructuredData(withArchive, entries);
   if (next !== current) fs.writeFileSync(blogHtmlPath, next, "utf8");
 }
 
