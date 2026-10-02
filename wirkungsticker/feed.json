@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-02T20:19:12.527Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-02T20:58:45.439Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -2830,8 +2830,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
-      "title": "Laut Deutschlandfunk dauern gegenseitige Angriffe auf Infrastruktur an",
-      "summary": "Der Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe und gemeldete Opfer in Kiew und Belgorod. Die Angaben sind nicht unabhängig bestätigt; mögliche Folgen für Infrastruktur und Versorgung bleiben offen.",
+      "title": "Gegenseitige Angriffe auf Infrastruktur und Industrieanlagen dauern laut Deutschlandfunk an",
+      "summary": "Der Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe und gemeldete Opfer in Kiew und Belgorod. Welche Schäden daraus für Infrastruktur und Versorgung entstehen, ist nicht unabhängig belegt.",
       "date_published": "2026-09-25T10:36:12.000Z",
       "date_modified": "2026-09-25T10:36:12.000Z",
       "_woek_released_at": "2026-09-25T07:14:49.473Z",
@@ -2845,15 +2845,15 @@
         "human": {
           "magnitude": 4,
           "direction": "negative",
-          "status": "observed"
+          "status": "potential"
         },
         "planet": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 3,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         }
@@ -4219,7 +4219,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
       "title": "Laut France 24: Trump und Selenskyj sprechen in New York über Wege zum Ende des Ukraine-Kriegs",
-      "summary": "Trump und Selenskyj sprachen laut France 24 in New York über den Ukraine-Krieg. Eine Verständigung zur Energieinfrastruktur wird Trump zugeschrieben; eine Waffenruhe bleibt unbelegt.",
+      "summary": "Trump und Selenskyj trafen sich laut France 24 in New York zum Ukraine-Krieg. Eine Verständigung zur Energieinfrastruktur wird Trump zugeschrieben; eine Waffenruhe bleibt offen.",
       "date_published": "2026-09-23T09:30:31.000Z",
       "date_modified": "2026-09-23T09:30:31.000Z",
       "_woek_released_at": "2026-09-23T10:12:19.347Z",
@@ -4231,18 +4231,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
-          "direction": "positive",
+          "magnitude": 4,
+          "direction": "negative",
           "status": "potential"
         },
         "planet": {
           "magnitude": 1,
-          "direction": "positive",
+          "direction": "mixed",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "positive",
+          "direction": "mixed",
           "status": "potential"
         }
       }
