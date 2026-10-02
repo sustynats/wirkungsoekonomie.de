@@ -39,7 +39,7 @@ export function extractDiscoveryMetadata(body, url, source) {
   const summary = sanitizeFeedText(article?.description || meta.description || meta['og:description'] || '', 1000);
   const declaredDay = source.primary_source && source.official_endpoint_verified
     ? pressReleaseDay(text) : null;
-  const rawDate = article?.datePublished || meta['article:published_time'] || declaredDay;
+  const rawDate = article?.datePublished || meta['article:published_time'] || scopedPublicationDate(text, url) || declaredDay;
   // Never promote dateModified or sitemap lastmod to publication time.
   if (!title || !rawDate || !ms(rawDate)) return null;
   return { source_id: source.source_id, publisher: source.name, source_type: source.source_type,
@@ -47,6 +47,46 @@ export function extractDiscoveryMetadata(body, url, source) {
     title, summary, url, published_at: rawDate === declaredDay ? declaredDay : new Date(ms(rawDate)).toISOString(),
     ...(rawDate === declaredDay ? {published_precision:'day'} : {}), item_id: sha256(url),
     content_hash: sha256(`${title}:${summary}:${rawDate}`), categories: [] };
+}
+
+// Some publishers expose original publication time as scoped HTML microdata
+// instead of JSON-LD. Require an explicit page identity; ignore nested media,
+// related articles, modification dates and conflicting publication declarations.
+function scopedPublicationDate(html, url) {
+  const clean = String(html).replace(/<!--[\s\S]*?-->/g, '').replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, '');
+  const attrs = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*["']([^"']*)["']/g)].map(m => [m[1].toLowerCase(), m[2]]));
+  const identity = value => { if (!value) return null; try { return new URL(value, url).href.split('#')[0].replace(/\/$/, ''); } catch { return null; } };
+  const target = identity(url), stack = [], articles = [];
+  const voidTags = new Set(['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr']);
+  for (const match of clean.matchAll(/<(\/?)([\w:-]+)\b([^>]*)>/g)) {
+    const [, closing, rawName, rawAttrs] = match, name = rawName.toLowerCase();
+    if (closing) {
+      const index = stack.findLastIndex(node => node.name === name);
+      if (index >= 0) stack.length = index;
+      continue;
+    }
+    const values = attrs(rawAttrs);
+    let scope = stack.at(-1)?.scope;
+    if (/\bitemscope(?:\s|=|$)/i.test(rawAttrs)) {
+      scope = { article: /^https?:\/\/schema\.org\/(?:NewsArticle|Article|ReportageNewsArticle)$/.test(values.itemtype || ''), identities: [], dates: [] };
+      if (scope.article) articles.push(scope);
+    }
+    if (scope?.article && ['meta', 'link', 'time'].includes(name)) {
+      const properties = (values.itemprop || '').split(/\s+/);
+      if (properties.includes('mainEntityOfPage')) scope.identities.push(identity(values.content || values.href || ''));
+      if (properties.includes('datePublished')) scope.dates.push(values.content || values.datetime || '');
+    }
+    if (!voidTags.has(name) && !/\/\s*$/.test(rawAttrs)) stack.push({ name, scope });
+  }
+  const matching = articles.filter(item => item.identities.length === 1 && item.identities[0] === target);
+  if (matching.length === 1 && matching[0].dates.length === 1 && ms(matching[0].dates[0])) return matching[0].dates[0];
+  // A page-level pub_date is explicit original-publication metadata (e.g. DLF).
+  // Accept only inside head and with a single matching canonical URL.
+  const head = clean.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] || '';
+  const tags = [...head.matchAll(/<(?:meta|link)\b[^>]*>/gi)].map(m => attrs(m[0]));
+  const canonical = tags.filter(tag => tag.rel === 'canonical').map(tag => identity(tag.href || ''));
+  const dates = tags.filter(tag => tag.name === 'pub_date').map(tag => tag.content);
+  return canonical.length === 1 && canonical[0] === target && dates.length === 1 && ms(dates[0]) ? dates[0] : null;
 }
 
 // An explicitly labelled release heading is publication evidence. Dates in

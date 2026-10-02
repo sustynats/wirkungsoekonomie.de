@@ -50,6 +50,23 @@ Dateigrenzen, Eigentümerprüfung und finale Freigabe bleiben bestehen.
 
 Fehlerhafte Outputs gelangen mit unverändertem Originalinput in den bestehenden
 begrenzten Reparaturprozess; fehlende Outputs verbrauchen keinen Versuch.
+Seit 02.10.2026 erhält die zustandslose Formatkorrektur die vollständige
+abgewiesene Antwort als nicht vertrauenswürdiges Material. Sie beginnt keine
+neue Recherche. Originalantwort und Reparaturantwort werden vor der Ablage
+hashgebunden unter `95_LOGS/editorial-answer-*` privat gesichert und zurückgelesen.
+Eine zusätzliche Quellenliste eines HOLD bleibt dort erhalten; das unveränderte
+HOLD-Urteil wird ohne weiteren Modellaufruf in das bestehende Transportschema
+übernommen. Andere Schemaprobleme bleiben prüfpflichtig.
+
+Der Web-fähige Redaktionsworker entfernt den widersprüchlichen werkzeuglosen
+Auftragstext ausschließlich aus seiner Prompt-Kopie. Quellen-Nachrecherchen
+verlangen einen echten Suchzugriff im bestehenden Suchkontingent. Ausdrücklich
+gesperrte Ausgangslinks werden nicht erneut als Textauszug geladen. Eine
+Nachrecherche ohne Suchversuch wird nicht als fachlicher Quellen-HOLD zugestellt.
+Technische Validierungs-/Verarbeitungsfehler machen den Lauf sichtbar fehlerhaft;
+ein begründeter redaktioneller HOLD bleibt dagegen ein privater Klärungszustand,
+keine Vorschau und keine Veröffentlichung. Frühere Freigaben, ACKs, Budgets und
+fachliche Quellenregeln werden nicht gelockert oder automatisch zurückgesetzt.
 Ein privater Discord-Hinweis wird je neuer Vorschaufassung einmal an die
 konfigurierte Eigentümerin gesendet. Keine Nachricht in einen öffentlichen Kanal.
 
