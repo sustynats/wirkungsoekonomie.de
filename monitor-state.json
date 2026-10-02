@@ -28,6 +28,14 @@
     "freigabe-quittung": {
       "firstSeen": "2026-10-02T09:35:55.403Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-02T11:05:53.143Z",
+      "active": false
+    },
+    "publication": {
+      "firstSeen": "2026-10-02T11:05:53.143Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2345,7 +2353,7 @@
       }
     },
     "last_new_at": "2026-10-02T08:35:37.303Z",
-    "checked_at": "2026-10-02T10:50:39.213Z",
+    "checked_at": "2026-10-02T11:05:53.143Z",
     "last_current_new_at": "2026-10-02T08:35:37.303Z"
   },
   "recovery_attempts": [
