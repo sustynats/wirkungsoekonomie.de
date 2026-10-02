@@ -36,6 +36,37 @@ const uniqueRuns = usage => [...new Map((usage?.runs || []).map(run => [run.run_
 const money = value => Number.isFinite(value) ? value.toFixed(2) : 'nicht verfügbar';
 const merged = story => story.retirement?.reason_code === 'MERGED_INTO_LIVING_FILE';
 
+// The authenticated bridge still requires lane ownership for observations.
+// Reading without it used to fail and then turn an unknown queue into zero
+// parked/exhausted orders. Keep this short and never hold the lane over probes,
+// Discord delivery or GitHub calls. No expiry/lock stealing is involved.
+async function withMonitorLane(session, now, env, suffix, action) {
+  await session.store.acquire(now, 'import', {
+    manualRunId: `${env.GITHUB_RUN_ID}:${env.GITHUB_RUN_ATTEMPT || '1'}${suffix}`,
+  });
+  let succeeded = false;
+  try { const result = await action(); succeeded = true; return result; }
+  finally { await session.store.release(succeeded); }
+}
+
+export async function readEditorialMonitorStatus({ session, now, env = process.env }) {
+  try {
+    return await withMonitorLane(session, now, env, '7', async () => {
+      const exhausted = await session.store.observation(EXHAUSTED_ORDERS_KEY);
+      const delivery = await session.store.observation(PARKED_KEY);
+      return { available: true, exhaustedOrders: exhausted?.orders || [], parked: delivery?.parked || [],
+        awaitingReceipt: Number(delivery?.awaiting) || 0, awaitingSince: delivery?.awaiting_since || null };
+    });
+  } catch (error) {
+    const code = /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EDITORIAL_STATUS_UNAVAILABLE';
+    return { available: false, error: code };
+  }
+}
+
+export async function writeEditorialMonitorStatus({ session, now, status, env = process.env }) {
+  return withMonitorLane(session, now, env, '8', () => session.store.observe(OPS_STATUS_KEY, status));
+}
+
 export function publicationFlow(usage, report, now) {
   // Background enrichments and deep dives cannot prove that the immediate
   // news queue is progressing. Ordinary news updates/rejections still can.
@@ -211,6 +242,10 @@ export function evaluateChecks(data, now) {
   const summary = summarizeNews(data, now);
   const bridgeMode = data.processing_mode === 'dropbox_chatgpt_bridge' || data.report?.processing_mode === 'dropbox_chatgpt_bridge';
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
+  if (data.editorialStatus) checks.push({ id: 'editorial-status', name: 'Private Redaktionsverarbeitung',
+    ok: data.editorialStatus.available === true, immediate: false,
+    reason: data.editorialStatus.available === true ? 'Redaktionsjournal mit eigener kurzer Sperre gelesen.'
+      : `Redaktionsjournal nicht pruefbar (${data.editorialStatus.error}). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.` });
   const runOk = summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && reportOperationallyHealthy(data.report);
   checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: runOk, reason: runOk ? 'letzter Lauf betrieblich gesund' : summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.', immediate: true });
   const providerDegraded = Boolean(data.report?.ai_provider_degraded || data.report?.ai_error);
@@ -241,31 +276,33 @@ export function evaluateChecks(data, now) {
     // dem 12.09. keine Meldung mehr ein Symbolmotiv bekam. Ein Kartenfallback
     // nach Anbieterhinweis ist erlaubt, aber ein Befund, kein Normalzustand.
     reason: `${missingImages} veröffentlichte Meldung(en) ohne nutzbares Titelbild; ${providerFallbacks} mit Kartenfallback, weil der Bilddienst nicht lieferte.` });
-  checks.push({ id: 'parked-editions', name: 'Geparkte Fassungen', ok: parked.length === 0, immediate: false,
-    reason: parked.length
-      ? `${parked.length} freigegebene Fassung(en) konnten nicht veroeffentlicht werden und warten in der privaten Freigabeliste: ${parked.map((entry) => entry.code).filter(Boolean).slice(0, 3).join(', ')}. Dort fehlt der Freigeben-Knopf; die App nennt den Grund.`
-      : 'Keine freigegebene Fassung haengt nach einem Veroeffentlichungsfehler.' });
-  // Die Gegenprobe zur geparkten Fassung: hier steht die Freigabe live, gilt auf
-  // dem Schreibtisch aber weiter als offen, weil die Quittung fehlt. Genau das
-  // lief am 17.09.2026 dauerhaft (BRIDGE_OWNER_MISMATCH, die Quittung holte die
-  // Importspur nicht). Zwei Stunden Toleranz: die Bestaetigung gehoert
-  // planmaessig einem spaeteren Lauf, der die ausgelieferte Seite sieht.
-  const awaiting = Number(data.awaitingReceipt) || 0;
-  const awaitingHours = age(data.awaitingSince, now) / 60;
-  const receiptStuck = awaiting > 0 && awaitingSince(data) && awaitingHours >= 2;
-  checks.push({ id: 'freigabe-quittung', name: 'Quittung freigegebener Fassungen', ok: !receiptStuck, immediate: false,
-    reason: receiptStuck
-      ? `${awaiting} freigegebene Fassung(en) stehen veroeffentlicht, gelten in der Redaktions-App seit ${Math.round(awaitingHours)} Stunden aber weiter als offen. Die Quittung an den Schreibtisch greift nicht.`
-      : awaiting > 0 ? `${awaiting} Fassung(en) warten auf die Quittung des naechsten Laufs - im Plan.` : 'Keine Freigabe wartet auf eine Quittung.' });
-  // Ein Auftrag, dessen einziger bezahlter Versuch nichts abgeliefert hat,
-  // kehrt erst mit einer Vertragskorrektur zurueck. Bis dahin wartet Natalie
-  // auf eine Analyse, die niemand mehr schreibt (17.09.2026: zwei Auftraege
-  // vom Morgen, dazu der Befund vom 16.09. mit einem seit dem 13.09.).
-  const erschoepft = Array.isArray(data.exhaustedOrders) ? data.exhaustedOrders : [];
-  checks.push({ id: 'liegengebliebene-auftraege', name: 'Liegengebliebene Redaktionsauftraege', ok: erschoepft.length === 0, immediate: false,
-    reason: erschoepft.length
-      ? `${erschoepft.length} Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit ${erschoepft.map((order) => order.seit).filter(Boolean).sort()[0] || 'unbekannt'}; Grund: ${[...new Set(erschoepft.map((order) => order.grund).filter(Boolean))].slice(0, 3).join(', ') || 'nicht vermerkt'}). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.`
-      : 'Kein Auftrag hat seinen Versuch ohne Entwurf verbraucht.' });
+  if (data.editorialStatus?.available !== false) {
+    checks.push({ id: 'parked-editions', name: 'Geparkte Fassungen', ok: parked.length === 0, immediate: false,
+      reason: parked.length
+        ? `${parked.length} freigegebene Fassung(en) konnten nicht veroeffentlicht werden und warten in der privaten Freigabeliste: ${parked.map((entry) => entry.code).filter(Boolean).slice(0, 3).join(', ')}. Dort fehlt der Freigeben-Knopf; die App nennt den Grund.`
+        : 'Keine freigegebene Fassung haengt nach einem Veroeffentlichungsfehler.' });
+    // Die Gegenprobe zur geparkten Fassung: hier steht die Freigabe live, gilt auf
+    // dem Schreibtisch aber weiter als offen, weil die Quittung fehlt. Genau das
+    // lief am 17.09.2026 dauerhaft (BRIDGE_OWNER_MISMATCH, die Quittung holte die
+    // Importspur nicht). Zwei Stunden Toleranz: die Bestaetigung gehoert
+    // planmaessig einem spaeteren Lauf, der die ausgelieferte Seite sieht.
+    const awaiting = Number(data.awaitingReceipt) || 0;
+    const awaitingHours = age(data.awaitingSince, now) / 60;
+    const receiptStuck = awaiting > 0 && awaitingSince(data) && awaitingHours >= 2;
+    checks.push({ id: 'freigabe-quittung', name: 'Quittung freigegebener Fassungen', ok: !receiptStuck, immediate: false,
+      reason: receiptStuck
+        ? `${awaiting} freigegebene Fassung(en) stehen veroeffentlicht, gelten in der Redaktions-App seit ${Math.round(awaitingHours)} Stunden aber weiter als offen. Die Quittung an den Schreibtisch greift nicht.`
+        : awaiting > 0 ? `${awaiting} Fassung(en) warten auf die Quittung des naechsten Laufs - im Plan.` : 'Keine Freigabe wartet auf eine Quittung.' });
+    // Ein Auftrag, dessen einziger bezahlter Versuch nichts abgeliefert hat,
+    // kehrt erst mit einer Vertragskorrektur zurueck. Bis dahin wartet Natalie
+    // auf eine Analyse, die niemand mehr schreibt (17.09.2026: zwei Auftraege
+    // vom Morgen, dazu der Befund vom 16.09. mit einem seit dem 13.09.).
+    const erschoepft = Array.isArray(data.exhaustedOrders) ? data.exhaustedOrders : [];
+    checks.push({ id: 'liegengebliebene-auftraege', name: 'Liegengebliebene Redaktionsauftraege', ok: erschoepft.length === 0, immediate: false,
+      reason: erschoepft.length
+        ? `${erschoepft.length} Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit ${erschoepft.map((order) => order.seit).filter(Boolean).sort()[0] || 'unbekannt'}; Grund: ${[...new Set(erschoepft.map((order) => order.grund).filter(Boolean))].slice(0, 3).join(', ') || 'nicht vermerkt'}). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.`
+        : 'Kein Auftrag hat seinen Versuch ohne Entwurf verbraucht.' });
+  }
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
   const freshCoverage = age(summary.coverageAudit?.checked_at, now) >= 0 && age(summary.coverageAudit?.checked_at, now) <= 45;
@@ -481,14 +518,9 @@ export async function main() {
   // Geparkte Fassungen: der Vermerk kommt aus derselben Ablage wie der Befund.
   data.parked = [];
   if (!dryRun) {
-    try { const auftraege = await bridgeSession().store.observation(EXHAUSTED_ORDERS_KEY);
-      data.exhaustedOrders = Array.isArray(auftraege?.orders) ? auftraege.orders : []; }
-    catch { data.exhaustedOrders = []; }
-    try { const vermerk = await bridgeSession().store.observation(PARKED_KEY);
-      data.parked = vermerk?.parked || [];
-      data.awaitingReceipt = Number(vermerk?.awaiting) || 0;
-      data.awaitingSince = vermerk?.awaiting_since || null; }
-    catch { data.parked = []; }
+    try { data.editorialStatus = await readEditorialMonitorStatus({ session: bridgeSession(), now }); }
+    catch { data.editorialStatus = { available: false, error: 'EDITORIAL_STATUS_UNAVAILABLE' }; }
+    if (data.editorialStatus.available) Object.assign(data, data.editorialStatus);
   }
   if (!dryRun && (!process.env.GH_TOKEN || !process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN || !/^\d{15,22}$/.test(process.env.WOEK_MONITOR_DISCORD_USER_ID || ''))) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
   const statePath = 'monitor-state.json';
@@ -573,8 +605,8 @@ export async function main() {
     recovery: (state.recovery_attempts || []).filter(attempt => attempt.at === now),
     delivery: observed.summary, report: data.report, at: now });
   if (!dryRun) {
-    try { await bridgeSession().store.observe(OPS_STATUS_KEY, status); }
-    catch { /* Die Auskunft ist eine Zugabe; sie darf den Monitor nicht anhalten. */ }
+    try { await writeEditorialMonitorStatus({ session: bridgeSession(), now, status }); }
+    catch { console.warn('EDITORIAL_STATUS_DELIVERY_FAILED'); }
   }
   console.log(JSON.stringify({ checked: checks.length, healthy: checks.filter(c => c.ok).length, activeIncidents: Object.keys(state.incidents).filter(k => state.incidents[k].active).length, delivered, dailyDate: state.dailyDate,
     failing: checks.filter((check) => !check.ok).map((check) => ({ id: check.id, name: check.name, immediate: Boolean(check.immediate) })),

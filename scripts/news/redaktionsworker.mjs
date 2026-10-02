@@ -657,6 +657,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   try {
     const report = await runRedaktionsworker();
     console.log(JSON.stringify(report, null, 2));
+    if (report.status === 'skipped' && report.reason !== 'BRIDGE_SLOT_ALREADY_COMPLETED') {
+      console.error(`::error::Redaktionsverarbeitung nicht ausgefuehrt: ${report.reason}`);
+      process.exitCode = 1;
+    }
     if (report.results?.some((r) => r.status === 'provider_unavailable')) process.exitCode = 1;
   } catch (error) {
     console.error(JSON.stringify({ status: 'failed', error: /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'REDAKTIONSWORKER_FAILED' }));

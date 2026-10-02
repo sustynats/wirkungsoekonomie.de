@@ -25,6 +25,19 @@ function deriveStructuredEventIdentity(item) {
   // an ICU formatter per pair dominated whole discovery runs. The calendar
   // and timezone are fixed; format a day only for a supported event identity.
   const publicationDay = () => Number.isFinite(stamp) ? berlinDay.format(stamp) : null;
+  // A specifically named formation and its institution on the same day,
+  // not a shared defence topic. Later stationing, deployment, procurement or
+  // another numbered formation must remain a separate development.
+  const formations = [...new Set([...title.matchAll(/\b([a-z]{4,}(?:regiment|bataillon|kommando))\b/g)].map(m => m[1]))];
+  const capacityActor = /\bbundeswehr\b/.test(title) ? 'bundeswehr' : /\bbundespolizei\b/.test(title) ? 'bundespolizei' : null;
+  const createsFormation = /\b(?:bekommt|erhalt|aufstellen|aufstellung|aufbau\w*|baut|baue|gebildet)\b|\bstellt\b.{0,100}\bauf\b/.test(text);
+  const differentStage = /\b(?:stationier\w*|verleg\w*|entsend\w*|einsatz\w*|beschafft|bestellt|geliefert|aufgelost|kritik|kommentar|ruckblick|zweites|weiteres)\b/.test(title);
+  const numberedFormation = /\b(?:\d+\.?\s+[a-z]*(?:regiment|bataillon|kommando)|[a-z]*(?:regiment|bataillon|kommando)\s+\d+)\b/.test(title);
+  if (capacityActor && formations.length === 1 && createsFormation && !differentStage && !numberedFormation && publicationDay()) {
+    const day = publicationDay();
+    return { key: `${capacityActor}:formation:${formations[0]}:${day}`, institution: capacityActor,
+      proceeding: `formation:${formations[0]}`, day, kind: 'institutional_formation' };
+  }
   // A concrete local safety event, not a whole border or publisher coverage.
   // No list of cities, countries, media brands or road numbers.
   const crossing = /\bgrenzubergang\w*\b/.test(text);

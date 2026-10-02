@@ -409,6 +409,11 @@ test('queued drafts run before proposal work and three lane waits cannot consume
   const workflow = fs.readFileSync(new URL('../../.github/workflows/redaktionsworker.yml', import.meta.url), 'utf8');
   assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('run: node scripts/news/redaktions-kandidaten.mjs'));
   assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('run: node scripts/news/sendungs-kandidaten.mjs'));
+  assert.match(workflow, /id: editorial_draft\s+continue-on-error: true/);
+  assert.match(workflow, /if: always\(\) && steps\.editorial_draft\.outcome == 'failure'[\s\S]*exit 1/,
+    'discovery can finish, but a skipped/failed draft run must not leave a green workflow');
+  const workerSource = fs.readFileSync(new URL('../../scripts/news/redaktionsworker.mjs', import.meta.url), 'utf8');
+  assert.match(workerSource, /report\.status === 'skipped' && report\.reason !== 'BRIDGE_SLOT_ALREADY_COMPLETED'[\s\S]*process\.exitCode = 1/);
   for (const file of ['redaktions-kandidaten', 'sendungs-kandidaten']) {
     const source = fs.readFileSync(new URL(`../../scripts/news/${file}.mjs`, import.meta.url), 'utf8');
     assert.doesNotMatch(source, /retries: 20|waitMs: 30000/, 'proposals use the shared fifteen-second wait');

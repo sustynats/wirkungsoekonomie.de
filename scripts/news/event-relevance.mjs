@@ -2,7 +2,7 @@
 // Event properties are intentionally independent of party, person and outlet names.
 import { evidenceGroups } from './newsroom.mjs';
 
-export const EVENT_RELEVANCE_VERSION = '2026-09-24.1';
+export const EVENT_RELEVANCE_VERSION = '2026-10-02.1';
 export const EVENT_EDITORIAL_POLICY_VERSION = '2026-09-09.2';
 export const COVERAGE_CATEGORIES = ['politics_de', 'economy', 'society', 'environment', 'health', 'science', 'technology', 'europe', 'international', 'security'];
 export const normalizeEventText = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').replace(/ß/g, 'ss').toLowerCase();
@@ -20,7 +20,8 @@ export function needsEventPolicyReview(story, now) {
   return score.signals.length > 0 && score.total_relevance_score >= 30;
 }
 const material = /\b(infrastruktur\w*|infrastructure|arbeitsplatz\w*|arbeitsplatze|beschaftigt\w*|jobs|workers|versorgung\w*|supply|bildung\w*|gesundheit\w*|grundrecht\w*|energy|energie\w*|emission\w*|investition\w*|investment\w*|haushalt\w*|budget\w*|inflation\w*)/;
-const institutions = /\b(bundestag|bundesrat|bundesregierung|bundeskanzler\w*|landtag\w*|parlament\w*|minister\w*|polizei\w*|staatsanwaltschaft\w*|gericht\w*|rechnungshof\w*|zentralbank\w*|bundesbank|statistikamt|behorde\w*|regulator\w*|central bank|parliament|government|court|police|auditors)\b/;
+const germanInstitutions = /\b(bundestag|bundesrat|bundesregierung|bundeshaushalt|bundeskanzler\w*|bundeswehr|bundespolizei|bundeskriminalamt|bundeskartellamt|bundesagentur)\b/;
+const institutions = /\b(bundestag|bundesrat|bundesregierung|bundeskanzler\w*|bundeswehr|bundespolizei|bundeskriminalamt|bundeskartellamt|bundesagentur|landtag\w*|parlament\w*|(?:[a-z]+)?minister\w*|polizei\w*|staatsanwaltschaft\w*|gericht\w*|rechnungshof\w*|zentralbank\w*|bundesbank|statistikamt|behorde\w*|regulator\w*|central bank|parliament|government|court|police|auditors)\b/;
 
 export function eventSignals(item = {}) {
   const t = normalizeEventText(`${item.title || ''} ${String(item.summary || '').slice(0, 1800)}`);
@@ -69,16 +70,24 @@ export function eventSignals(item = {}) {
     && /\b(springt|sprang|steigt|steigen|gestiegen|sturz\w*|rutsch\w*|druck|durchbrach|durchbricht|erstmals|rekord\w*|breach\w*|surge\w*|slip\w*)\b/.test(t)
     && /\b(100|hundert|rekord\w*|krieg\w*|liefer\w*|inflation\w*|versorgung\w*|iran|hormus|war|mideast)\b/.test(t));
   add('public_audit', /\b(rechnungshof\w*|auditors?|evaluation|prufbericht)\b/.test(t) && material.test(t));
+  // A concrete change in public capacity is review-worthy even without an
+  // accident, a price tag or many reports. This is not evidence of delivery:
+  // announcements keep their ex-ante status and all publication gates.
+  add('public_capacity_change', institutions.test(t)
+    && /\b(?:neu\w*|erstmals|erst\w*|eigen\w*)\b/.test(t)
+    && /\b(?:aufbau\w*|aufstellen|aufgestellt|aufstellung|baut|baue|bildet|gebildet|bekommt|erhalt|errichtet|eroffnet|bundelt)\b|\bstellt\b.{0,100}\bauf\b/.test(t)
+    && /\b(?:[a-z]*(?:regiment|bataillon|kommando|zentrum|behorde)|rettungsdienst|versorgungskapazitat|produktionskapazitat)\w*\b/.test(t)
+    && !/\b(?:besuch\w*|grusswort|festakt|jubilaum|ruckblick)\b/.test(normalizeEventText(item.title)));
   const routine = /\b(kaufberatung|produkttest|gewinnspiel|rabatt|gutschein|horoskop|lotto|hands-on|preisvergleich)\b/.test(t);
   return { signals: routine ? [] : signals, institutional: institutions.test(t), material: material.test(t),
     routine, agenda_only: /\b(terminhinweis|einladung|vorschau|wird.{0,30}erwartet|erwartet|expected|soll.{0,35}vorstellen)\b/.test(t),
-    national: /\b(bundestag|bundesrat|bundesregierung|bundeshaushalt|deutschland|bundesweit|bundeskanzler\w*)\b/.test(t), text: t };
+    national: germanInstitutions.test(t) || /\b(deutschland|bundesweit)\b/.test(t), text: t };
 }
 
 export function eventCategories(sources = []) {
   const t = normalizeEventText(sources.map(s => `${s.title || ''} ${s.summary || ''}`).join(' '));
   const tests = {
-    politics_de: /\b(bundestag|bundesrat|bundesregierung|bundeskanzler\w*|landtag\w*|ministerprasident\w*|parteiverbot|verbotsverfahren|brandmauer|wahl\w*)\b/,
+    politics_de: /\b(bundestag|bundesrat|bundesregierung|bundeskanzler\w*|bundeswehr|bundespolizei|bundeskriminalamt|bundeskartellamt|bundesagentur|landtag\w*|ministerprasident\w*|parteiverbot|verbotsverfahren|brandmauer|wahl\w*)\b/,
     economy: /\b(wirtschaft\w*|unternehmen\w*|konzern\w*|invest\w*|start[- ]?ups?|jungunternehmen|jungfirmen|scale[- ]?ups?|arbeitsplatz\w*|arbeitsplatze|beschaftigt\w*|finanz\w*|filial\w*|insolvenz\w*|sanierung\w*|[a-z]*olpreis\w*|brent|dax|inflation\w*|econom\w*|jobs|markets?)\b/,
     society: /\b(gesellschaft\w*|soziale?\w*|bildung\w*|schule\w*|armut\w*|pflege\w*|rente\w*|wohnen|familie\w*)\b/,
     environment: /\b(klima\w*|umwelt\w*|emission\w*|energ\w*|natur\w*|biodivers\w*|strom\w*|climate)\b/,
@@ -106,7 +115,7 @@ export function scoreEvent(story, now, baseScore = 0) {
   const has = name => signals.includes(name);
   const acute = has('acute_safety') || has('cross_border_disruption');
   const economic = signals.some(s => ['large_investment', 'employment_location', 'market_shock', 'technology_market_entry', 'startup_operating_milestone'].includes(s));
-  const political = signals.some(s => ['plenary_debate', 'public_budget', 'political_position', 'political_poll'].includes(s));
+  const political = signals.some(s => ['plenary_debate', 'public_budget', 'political_position', 'political_poll', 'public_capacity_change'].includes(s));
   const institutional_score = features.some(f => f.institutional) ? 80 : primary.length ? 55 : 10;
   const impact_score = bounded(Math.max(baseScore, has('large_investment') || has('market_shock') ? 78 : acute ? 72 : has('plenary_debate') || has('public_budget') ? 76 : economic || political || has('technology_conflict') ? 60 : has('public_audit') ? 58 : 0));
   const source_diversity_score = bounded(Math.max(0, origins - 1) * 20);

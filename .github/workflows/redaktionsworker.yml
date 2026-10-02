@@ -81,6 +81,8 @@ jobs:
       - name: Worker tests
         run: node --test tests/news/redaktionsworker.test.mjs tests/news/import-approved-editorials.test.mjs
       - name: Draft open editorial requests (one paid call per request)
+        id: editorial_draft
+        continue-on-error: true
         # Liegengebliebene Auftraege zuerst. Discovery/Transkription darf nicht
         # vorher das gesamte Laufzeitfenster verbrauchen. Neue Kandidaten werden
         # spaetestens im folgenden regulaeren Lauf bearbeitet.
@@ -117,3 +119,8 @@ jobs:
           retention-days: 3
           if-no-files-found: ignore
           path: ${{ github.workspace }}/editorial-raw-output
+      - name: Report incomplete editorial processing
+        if: always() && steps.editorial_draft.outcome == 'failure'
+        run: |
+          echo "::error::Der Redaktionslauf hat keine erfolgreiche Verarbeitung nachgewiesen. Eine blockierte Spur ist kein erfolgreicher Leerlauf."
+          exit 1
