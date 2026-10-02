@@ -26,6 +26,18 @@ Verarbeitung bleibt an ihre eigenen unveraenderten Kostenlimits gebunden.
 
 ## Pruefungen und Grenzen
 
+Eine archivierte Korrekturantwort vom 14.09. scheiterte weiterhin an
+`$.preview.sources[0].url`: ein privater Screenshot war faelschlich als
+oeffentliche Webquelle modelliert. Der Wiederaufnahmeweg kann einen solchen
+Eintrag jetzt ausschliesslich bei exakter Pfad-/SHA-256-Bindung an den
+Originalauftrag aus den oeffentlichen Webquellen nehmen. Anhang, Original-
+antwort und Auftrag bleiben privat erhalten; keine URL wird erfunden und
+fehlende oder ungebundene Quellen scheitern weiterhin. Sieben oeffentliche
+Quellen des konkreten Entwurfs bleiben erhalten. Keine Modellanfrage und
+keine automatische Freigabe. Der Originaltext wird nicht ins Repository
+aufgenommen. Die lokale Vertragspruefung dieser archivierten Fassung sowie
+alle 40 Redaktionsworker-Tests bestanden.
+
 Lokal bestanden: 15 Journaltests, 31 Architektur-/Semantikgates einschliesslich
 NWI, 1775 Nachrichtentests vor der Nachholkorrektur, anschliessend alle 33
 Folgenkandidaten-Tests. Typecheck, Lint (mit bestehenden Hinweisen), Journal-
