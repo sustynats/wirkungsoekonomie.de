@@ -1419,8 +1419,9 @@ function getArticleReadMinutes() {
 
 function enhanceLongArticleToc() {
   const articleBody = document.querySelector(".article-body");
+  // The existing article navigation may be a collapsible "In diesem Beitrag" card.
   const existingExplicitToc = document.querySelector(
-    ".article-toc, .toc-card[aria-label='Inhaltsverzeichnis'], [data-debate-toc]"
+    ".article-toc, .toc-card, [data-debate-toc]"
   );
 
   if (!articleBody || existingExplicitToc) {
