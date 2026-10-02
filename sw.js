@@ -2,6 +2,12 @@ const CACHE_NAME = "woek-app-shell-20260914-news-refresh";
 const NEWS_STATE_CACHE = "woek-news-notification-state-v1";
 const NEWS_STATE_URL = "/news/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-news-updates";
+const CONTENT_INDEX_PATHS = new Set([
+  "/assets/data/blog-index.json",
+  "/assets/data/document-library.json",
+  "/assets/data/podcast-index.json",
+  "/public/data/site-updates.json"
+]);
 const APP_SHELL = [
   "/app/",
   "/news/",
@@ -93,19 +99,25 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  // Mutable publication indexes must not replace current HTML with a saved older edition.
+  if (CONTENT_INDEX_PATHS.has(url.pathname)) {
+    event.respondWith(networkFirst(request, undefined, { cache: "no-cache" }));
+    return;
+  }
+
   event.respondWith(staleWhileRevalidate(request));
 });
 
-async function networkFirst(request, fallbackUrl) {
-  const cache = await caches.open(CACHE_NAME);
+async function networkFirst(request, fallbackUrl, fetchOptions) {
+  const cache = await caches.open(CACHE_NAME).catch(() => null);
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, fetchOptions);
     if (response.ok) {
-      await cache.put(request, response.clone());
+      await cache?.put(request, response.clone()).catch(() => undefined);
     }
     return response;
   } catch {
-    return (await cache.match(request, { ignoreSearch: true })) ?? (fallbackUrl ? await cache.match(fallbackUrl) : undefined) ?? new Response("", { status: 504, statusText: "Offline" });
+    return (await cache?.match(request)) ?? (await cache?.match(request, { ignoreSearch: true })) ?? (fallbackUrl ? await cache?.match(fallbackUrl) : undefined) ?? new Response("", { status: 504, statusText: "Offline" });
   }
 }
 

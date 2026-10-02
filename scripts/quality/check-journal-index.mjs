@@ -84,6 +84,9 @@ if (!homepage.includes('id="neues-aus-der-wirkungsoekonomie"') || !homepage.incl
   throw new Error("index.html: Die Startseite enthält keine funktionsfähige Sektion ‚Neues aus der Wirkungsökonomie‘.");
 }
 assertLatestJournalFeature("blog.html", latest);
+if (!read("blog.html").includes(`data-journal-published-at="${latest.publishedAt || latest.date}"`)) {
+  throw new Error("blog.html: Der Aktualitätsanker für nachgeladene Journal-Daten fehlt oder ist veraltet.");
+}
 assertLatestJournalFeature("bibliothek/index.html", latest, "journal-library-card");
 assertJournalBreadcrumbs();
 
