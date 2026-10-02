@@ -39,7 +39,7 @@
     return;
   }
 
-  fetch(dataUrl)
+  fetch(dataUrl, { cache: "no-cache" })
     .then((response) => {
       if (!response.ok) {
         throw new Error("Blog-Metadaten konnten nicht geladen werden.");
@@ -49,7 +49,14 @@
     .then((posts) => {
       const publishedPosts = posts
         .filter((post) => post.status === "published")
-        .sort((a, b) => new Date(b.date) - new Date(a.date));
+        .sort((a, b) => new Date(b.publishedAt || b.date) - new Date(a.publishedAt || a.date));
+
+      // An older worker or offline cache can still return a previous index during an update.
+      const renderedAt = Date.parse(homeTarget?.dataset.journalPublishedAt || "");
+      const indexedAt = Date.parse(publishedPosts[0]?.publishedAt || publishedPosts[0]?.date || "");
+      if (Number.isFinite(renderedAt) && (!Number.isFinite(indexedAt) || indexedAt < renderedAt)) {
+        return;
+      }
 
       if (homeTarget) {
         renderHomeJournal(homeTarget, publishedPosts);
@@ -64,7 +71,7 @@
       }
     })
     .catch(() => {
-      if (homeTarget) {
+      if (homeTarget && !homeTarget.querySelector("article")) {
         homeTarget.innerHTML =
           '<p class="card-text">Aktuelle Einordnungen findest du im <a class="text-link" href="/blog.html">Journal</a>.</p>';
       }
@@ -77,7 +84,7 @@
     });
 
   if (podcastTarget) {
-    fetch(podcastDataUrl)
+    fetch(podcastDataUrl, { cache: "no-cache" })
       .then((response) => {
         if (!response.ok) {
           throw new Error("Podcast-Metadaten konnten nicht geladen werden.");
@@ -129,6 +136,7 @@
     }
 
     const secondary = posts.slice(1, 3);
+    target.dataset.journalPublishedAt = latest.publishedAt || latest.date;
 
     target.innerHTML = `
       <div class="journal-home-grid">

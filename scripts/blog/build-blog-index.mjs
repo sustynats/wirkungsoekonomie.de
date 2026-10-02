@@ -349,7 +349,7 @@ function renderSideEntry(entry) {
 function renderHomeJournal(entries) {
   const [featured, ...rest] = entries;
   if (!featured) return "";
-  return `<div class="journal-home" data-journal-home aria-live="polite">
+  return `<div class="journal-home" data-journal-home data-journal-published-at="${escapeHtml(featured.publishedAt || featured.date)}" aria-live="polite">
             <div class="journal-home-grid">
               ${renderFeature(featured)}
               <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
@@ -368,7 +368,7 @@ function renderHomeJournal(entries) {
 function renderBlogJournal(entries) {
   const [featured, ...rest] = entries;
   if (!featured) return "";
-  return `<div class="journal-home" data-journal-home>
+  return `<div class="journal-home" data-journal-home data-journal-published-at="${escapeHtml(featured.publishedAt || featured.date)}">
             <div class="journal-home-grid">
               ${renderFeature(featured)}
               <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
@@ -432,7 +432,7 @@ function renderLibraryCard(entry) {
 
 function replaceLatestJournalBlock(html, replacement) {
   return html.replace(
-    /<div class="journal-home" data-journal-home(?:\s+aria-live="polite")?>[\s\S]*?<\/div>\s*(?=<noscript>|<\/section>)/,
+    /<div class="journal-home" data-journal-home\b[^>]*>[\s\S]*?<\/div>\s*(?=<noscript>|<\/section>)/,
     replacement
   );
 }
