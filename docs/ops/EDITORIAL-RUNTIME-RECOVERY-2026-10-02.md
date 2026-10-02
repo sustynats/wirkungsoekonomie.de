@@ -87,6 +87,14 @@ nicht automatisch wiederholt. Bestehende unveraenderliche Transportvertraege
 bleiben bei einem Runtime-Upgrade erhalten; nur fehlende Versionen werden angelegt.
 Der lokale Betriebsstatus zeigt Pollbeginn, Ende, Phase und den eigenen Lockbesitz.
 
+Der Redaktionsserver wurde um 06:01 UTC auf das commitgebundene Runtime-Artefakt
+`b8ec4667d5723bca29969a3a858a3159bdf7178d` umgestellt. Der Import aller benoetigten
+Module und der Registry war vor Aktivierung erfolgreich; der Server startete
+mit den vorhandenen unveraenderten Vertraegen. Das ist noch kein Nachweis einer
+neuen vollstaendigen Entwurfsvorschau. Der separate Bridge-Prozess und die
+GitHub-Worker sind eigene Auslieferungsziele und werden nicht durch diesen
+Symlinkwechsel aktualisiert.
+
 Im nachfolgenden Redaktionslauf 36970739307 trat ein eigenstaendiger Node-Absturz
 `Parser.finish: assert(!this.paused)` auf. Der Quellenabruf liess abgewiesene
 HTTP-/Nichttext-Antworten ungelesen. Dieser Pfad wird nun explizit abgebrochen;
@@ -151,3 +159,9 @@ Nach den Transport- und Speicherergaenzungen erneut ausgefuehrt:
 `git diff --check`. Die vier gezielten Bridge-Testdateien bestanden mit 121
 Tests, Speicher-/Publikationswiederherstellung mit 23 Tests. Kein bezahlter
 Modellaufruf ist Bestandteil dieser Tests.
+
+Nach der Quellenabrufkorrektur und dem Abgleich mit dem aktuellen main bestanden
+alle 1775 Tests von `npm run news:test`. Die Suchartefakte wurden mit dem
+regulaeren `build:search` neu erzeugt, damit parallele Journal-Aenderungen auf
+main unveraendert erhalten bleiben. Der breite PR-Build bleibt ein eigener
+Nachweis und wird nicht aus diesen lokalen Testergebnissen abgeleitet.
