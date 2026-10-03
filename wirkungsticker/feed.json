@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-03T15:23:23.225Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-03T15:39:51.420Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -2372,17 +2372,17 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "positive",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 0,
+          "direction": "neutral",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
+          "magnitude": 3,
           "direction": "positive",
           "status": "potential"
         }
@@ -2865,8 +2865,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
-      "title": "Nach Deutschlandfunk dauern gegenseitige Angriffe auf Infrastruktur an; 45 Menschen verletzt",
-      "summary": "Der Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe auf Infrastruktur sowie Verletzte und einen Todesfall nach Behördenangaben. Das mögliche Wirkungspotenzial reicht von unmittelbaren Risiken für Menschen bis zu Belastungen für Versorgung und Handlungsfähigkeit, bleibt aber wegen fehlender unabhängiger Bestätigung offen.",
+      "title": "Gegenseitige Angriffe auf Infrastruktur laut Deutschlandfunk fortgesetzt",
+      "summary": "Der Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe auf Infrastruktur sowie Verletzte und einen Todesfall nach Behördenangaben. Das mögliche Ausmaß für Menschen, Versorgung und staatliche Handlungsfähigkeit bleibt wegen der Einzelquelle und offener Schadensdaten unklar.",
       "date_published": "2026-09-25T10:36:12.000Z",
       "date_modified": "2026-09-25T10:36:12.000Z",
       "_woek_released_at": "2026-09-25T07:14:49.473Z",
@@ -2883,12 +2883,12 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 2,
-          "direction": "negative",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 3,
+          "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         }
