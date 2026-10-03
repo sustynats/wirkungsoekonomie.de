@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-03T04:00:00.000Z",
+  "updated_at": "2026-10-03T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-03-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-03",
+      "window_from": "2026-10-03T04:00:00.000Z",
+      "window_to": "2026-10-03T10:00:00.000Z",
+      "stand": "2026-10-03T10:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 1,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Nach Deutschlandfunk dauern gegenseitige Angriffe auf Infrastruktur an; 45 Menschen verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T09:35:09.046Z",
+          "score": 9.681
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk bietet Selenskyj begrenzte Waffenruhe an",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T09:33:59.970Z",
+          "score": 5.6778
+        },
+        {
+          "story_id": "wt-0104537ca2ee621b",
+          "slug": "diesel-und-rohol-g7-geben-bis-zu-100-millionen-barrel-frei-ee621b",
+          "title": "G7 geben bis zu 100 Millionen Barrel Diesel und Rohöl aus Reserven frei",
+          "state": "neu",
+          "at": "2026-10-03T08:15:59.093Z",
+          "score": 5.7111
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-03-morgenlage",
       "slot": "morgenlage",
