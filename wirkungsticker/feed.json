@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-03T09:14:00.648Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-03T09:29:49.495Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -2865,8 +2865,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
-      "title": "Laut Deutschlandfunk dauern gegenseitige Angriffe auf Infrastruktur an; 45 Menschen verletzt",
-      "summary": "Der Deutschlandfunk berichtet von fortgesetzten gegenseitigen Angriffen, 45 Verletzten nach einem Treffer auf ein Bürogebäude und einem Toten in Belgorod nach Behördenangaben. Unabhängige Bestätigungen zu Opferzahlen, Schäden und möglichen Ausfällen fehlen.",
+      "title": "Nach Deutschlandfunk dauern gegenseitige Angriffe auf Infrastruktur an; 45 Menschen verletzt",
+      "summary": "Der Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe auf Infrastruktur sowie Verletzte und einen Todesfall nach Behördenangaben. Das mögliche Wirkungspotenzial reicht von unmittelbaren Risiken für Menschen bis zu Belastungen für Versorgung und Handlungsfähigkeit, bleibt aber wegen fehlender unabhängiger Bestätigung offen.",
       "date_published": "2026-09-25T10:36:12.000Z",
       "date_modified": "2026-09-25T10:36:12.000Z",
       "_woek_released_at": "2026-09-25T07:14:49.473Z",
@@ -2883,12 +2883,12 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
+          "magnitude": 3,
           "direction": "negative",
           "status": "potential"
         }
@@ -5244,8 +5244,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
-      "title": "Laut Deutschlandfunk: Selenskyj bietet begrenzte Waffenruhe an",
-      "summary": "Selenskyj erneuert laut Deutschlandfunk ein Angebot: Russland soll Angriffe auf ukrainische Energie- und Infrastrukturziele einstellen, die Ukraine würde im Gegenzug deeskalieren. Ob daraus eine Waffenruhe entsteht, bleibt offen.",
+      "title": "Laut Deutschlandfunk bietet Selenskyj begrenzte Waffenruhe an",
+      "summary": "Selenskyj erneuert laut Deutschlandfunk ein konditionales Angebot zur Begrenzung von Angriffen auf Energie, Infrastruktur und Exporte. Ob Russland reagiert oder eine Waffenruhe entsteht, bleibt offen.",
       "date_published": "2026-09-22T00:08:50.000Z",
       "date_modified": "2026-09-22T00:08:50.000Z",
       "_woek_released_at": "2026-09-22T01:00:56.738Z",
@@ -5257,18 +5257,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
-          "direction": "negative",
+          "magnitude": 2,
+          "direction": "open",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 2,
-          "direction": "positive",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 3,
-          "direction": "mixed",
+          "magnitude": 2,
+          "direction": "open",
           "status": "potential"
         }
       }
