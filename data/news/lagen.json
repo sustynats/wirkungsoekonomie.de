@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-03T10:00:00.000Z",
+  "updated_at": "2026-10-03T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-03-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-03",
+      "window_from": "2026-10-03T10:00:00.000Z",
+      "window_to": "2026-10-03T16:00:00.000Z",
+      "stand": "2026-10-03T16:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 0,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Gegenseitige Angriffe auf Infrastruktur laut Deutschlandfunk fortgesetzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T15:46:26.879Z",
+          "score": 9.7124
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Bericht über mögliche Warnungen vor Hamas-Angriff erhöht Druck auf Netanyahu",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T15:44:59.965Z",
+          "score": 7.7083
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T15:26:46.284Z",
+          "score": 5.6577
+        },
+        {
+          "story_id": "wt-51c1a37b2920ff36",
+          "slug": "kriminalitat-manner-sollen-schusse-mit-kriegswaffen-geplant-haben-20ff36",
+          "title": "Laut Polizei: Zwei Verdächtige in Köln nach mutmaßlichen Schussplänen festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T12:10:08.037Z",
+          "score": 3.1115
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-03-mittagslage",
       "slot": "mittagslage",
