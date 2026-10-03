@@ -20,13 +20,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-03T12:51:00.827Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-03T18:50:36.739Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "356d9e961599358e21fab3c7",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-03T19:50:48.660Z"
+    }
+  ],
   "dailyDate": "2026-10-03",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2357,7 +2358,7 @@
       }
     },
     "last_new_at": "2026-10-03T08:50:55.493Z",
-    "checked_at": "2026-10-03T19:35:59.536Z",
+    "checked_at": "2026-10-03T19:50:48.660Z",
     "last_current_new_at": "2026-10-02T17:20:58.876Z"
   },
   "recovery_attempts": [
