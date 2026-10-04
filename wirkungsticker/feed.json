@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-04T13:10:50.489Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-04T13:46:05.042Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/in-berlin-moabit-polizei-ermittelt-wegen-schussen-auf-restaurant-4e45d9/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/in-berlin-moabit-polizei-ermittelt-wegen-schussen-auf-restaurant-4e45d9/",
+      "title": "Einschusslöcher an Restaurant in Berlin-Moabit entdeckt",
+      "summary": "An einem Restaurant in Berlin-Moabit wurden Einschusslöcher entdeckt. Die Polizei ermittelt, doch Hintergründe, Ablauf und mögliche Verletzte sind offen.",
+      "date_published": "2026-10-04T13:27:26.000Z",
+      "date_modified": "2026-10-04T13:27:26.000Z",
+      "_woek_released_at": "2026-10-04T13:51:19.427Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-wenn-die-brandmauer-nach-links-verschoben-wird-7eb5bd/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-wenn-die-brandmauer-nach-links-verschoben-wird-7eb5bd/",
@@ -2474,8 +2505,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
-      "title": "Bericht über Warnungen vor Hamas-Angriff lässt Verantwortungsfrage offen",
-      "summary": "Ein SPIEGEL-Auszug berichtet über eine Recherche zu möglichen Warnungen vor dem Hamas-Angriff im Oktober 2023. Der Quellenausschnitt klärt weder die Warnkette noch Netanyahus Kenntnisstand oder mögliche Folgen.",
+      "title": "Bericht über mögliche Warnungen vor Hamas-Angriff lässt Verantwortungsfrage offen",
+      "summary": "Ein SPIEGEL-Auszug berichtet über eine Recherche zu möglichen Warnungen vor dem Hamas-Angriff im Oktober 2023. Warnkette, Kenntnisstand und Verantwortungsfolgen bleiben offen.",
       "date_published": "2026-09-26T09:28:00.000Z",
       "date_modified": "2026-09-26T09:28:00.000Z",
       "_woek_released_at": "2026-09-26T09:42:03.246Z",
@@ -2488,13 +2519,13 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
-          "direction": "mixed",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "planet": {
           "magnitude": 0,
-          "direction": "neutral",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
