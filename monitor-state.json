@@ -20,13 +20,14 @@
     "freigabe-quittung": {
       "firstSeen": "2026-10-04T15:50:40.140Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-04T16:52:38.222Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6117c4b4a1fa0cf3e89379bf",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-04T17:06:43.756Z"
+    }
+  ],
   "dailyDate": "2026-10-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2373,7 +2374,7 @@
       }
     },
     "last_new_at": "2026-10-04T15:20:52.485Z",
-    "checked_at": "2026-10-04T17:04:12.041Z",
+    "checked_at": "2026-10-04T17:06:43.756Z",
     "last_current_new_at": "2026-10-04T15:20:52.485Z"
   },
   "recovery_attempts": [
