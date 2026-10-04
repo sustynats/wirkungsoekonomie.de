@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-04T10:00:00.000Z",
+  "updated_at": "2026-10-04T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-04-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-04",
+      "window_from": "2026-10-04T10:00:00.000Z",
+      "window_to": "2026-10-04T16:00:00.000Z",
+      "stand": "2026-10-04T16:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 2,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Laut DER SPIEGEL: Bericht zu Warnungen vor Hamas-Angriff lässt Verantwortung offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T15:59:41.693Z",
+          "score": 5.7492
+        },
+        {
+          "story_id": "wt-0a6c9dcbedaae698",
+          "slug": "schusse-in-berlin-einschusslocher-an-restaurant-in-moabit-aae698",
+          "title": "Einschusslöcher an Restaurant in Berlin-Moabit entdeckt",
+          "state": "neu",
+          "at": "2026-10-04T14:55:43.328Z",
+          "score": 3.8215
+        },
+        {
+          "story_id": "wt-1d6a6a2e184e45d9",
+          "slug": "in-berlin-moabit-polizei-ermittelt-wegen-schussen-auf-restaurant-4e45d9",
+          "title": "Einschusslöcher an Restaurant in Berlin-Moabit entdeckt",
+          "state": "neu",
+          "at": "2026-10-04T13:51:19.427Z",
+          "score": 3.6948
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe auf Infrastruktur und Industrieanlagen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T11:43:33.202Z",
+          "score": 7.0376
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-04-mittagslage",
       "slot": "mittagslage",
