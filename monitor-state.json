@@ -19,10 +19,15 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-04T10:20:55.007Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "8801678255151b1b7cbb2342",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-04T10:20:55.007Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2361,7 +2366,7 @@
       }
     },
     "last_new_at": "2026-10-03T20:05:57.491Z",
-    "checked_at": "2026-10-04T10:20:55.007Z",
+    "checked_at": "2026-10-04T10:35:56.713Z",
     "last_current_new_at": "2026-10-03T20:05:57.491Z"
   },
   "recovery_attempts": [
