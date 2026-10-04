@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-04T04:00:00.000Z",
+  "updated_at": "2026-10-04T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-04-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-04",
+      "window_from": "2026-10-04T04:00:00.000Z",
+      "window_to": "2026-10-04T10:00:00.000Z",
+      "stand": "2026-10-04T10:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 0,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T09:48:41.766Z",
+          "score": 5.7186
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Offene Fragen zu Warnungen vor Hamas-Angriff erhöhen Druck auf Netanyahu",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T09:47:37.932Z",
+          "score": 5.7156
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Nächtliche Angriffe auf Infrastruktur und Industrieanlagen laut Deutschlandfunk fortgesetzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T05:14:22.585Z",
+          "score": 4.9566
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-04-morgenlage",
       "slot": "morgenlage",
