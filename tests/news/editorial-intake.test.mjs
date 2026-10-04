@@ -7,7 +7,8 @@ import http from 'node:http';
 import {randomUUID} from 'node:crypto';
 import {once} from 'node:events';
 import {BridgeStore} from '../../scripts/news/bridge/store.mjs';
-import {EditorialIntake} from '../../scripts/news/bridge/intake.mjs';
+import {EditorialIntake,normalizeSubmission} from '../../scripts/news/bridge/intake.mjs';
+import {attachmentSelectionError,EDITORIAL_ATTACHMENT_BYTES,EDITORIAL_ATTACHMENTS_TOTAL_BYTES} from '../../admin/redaktion/attachment-limits.js';
 import {EditorialApproval} from '../../scripts/news/bridge/editorial-approval.mjs';
 import {createEditorialIntakeHandler,existingAdminAuthorizer} from '../../scripts/news/bridge/intake-http.mjs';
 import {importEditorialPreviews} from '../../scripts/news/bridge/intake-processing.mjs';
@@ -29,6 +30,36 @@ function setup(t){
 }
 async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
 const holdOutput=j=>({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),disposition:'hold',hold:{code:'EDITORIAL_CONTEXT_MISSING',reason:'Zum Auftrag fehlt der konkrete Themenbezug.',requested_information:'Bitte die Quelle oder das Thema ergänzen.'}});
+
+test('form and intake accept twelve screenshots but retain per-file and total payload limits',()=>{
+ const request={client_id:randomUUID(),kind:'opinion_analysis',brief:'Synthetischer Auftrag.',links:'',author_notes:'',attachments:[],publish:false,urgent:false};
+ const files=(count,size=1024)=>Array.from({length:count},(_,i)=>({name:`${i}.png`,type:'image/png',size}));
+ for(const count of [0,4,6,12]){request.attachments=files(count);assert.equal(attachmentSelectionError(request.attachments),'');assert.equal(normalizeSubmission(request).attachments.length,count);}
+ request.attachments=files(13);assert.match(attachmentSelectionError(request.attachments),/12/);assert.throws(()=>normalizeSubmission(request),/INTAKE_ATTACHMENT_COUNT/);
+ request.attachments=files(4,EDITORIAL_ATTACHMENT_BYTES);assert.equal(attachmentSelectionError(request.attachments),'');assert.equal(normalizeSubmission(request).attachments.reduce((sum,a)=>sum+a.size,0),EDITORIAL_ATTACHMENTS_TOTAL_BYTES);
+ request.attachments.push(...files(1,1));assert.match(attachmentSelectionError(request.attachments),/32 MiB/);assert.throws(()=>normalizeSubmission(request),/INTAKE_ATTACHMENT_TOTAL/);
+ for(const a of [{...files(1)[0],size:EDITORIAL_ATTACHMENT_BYTES+1},{...files(1)[0],size:0},{...files(1)[0],size:NaN},{...files(1)[0],type:'application/pdf'}]){
+  request.attachments=[a];assert.ok(attachmentSelectionError(request.attachments));assert.throws(()=>normalizeSubmission(request),/INTAKE_ATTACHMENTS_INVALID|BRIDGE_SCHEMA_INVALID/);
+ }
+});
+
+test('all twelve authenticated screenshot routes preserve attachments and cannot publish',async t=>{
+ const f=setup(t),bytes=fs.readFileSync('assets/img/people/natalie-weber-woek-analyse.jpg');
+ f.transport.writeBinaryAtomic=async(p,buffer)=>{f.files.set(p,Buffer.from(buffer));};
+ const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Synthetischer Auftrag mit zwölf Bildern.',links:'',author_notes:'',attachments:Array.from({length:12},(_,i)=>({name:`${i}.jpg`,type:'image/jpeg',size:bytes.length})),publish:false,urgent:false});
+ const handler=createEditorialIntakeHandler({...f,authorize:async req=>req.headers.authorization==='Bearer owner'?owner:req.headers.authorization==='Bearer other'?other:null});
+ const server=http.createServer(async(req,res)=>{if(!await handler(req,res)){res.writeHead(404);res.end();}});server.listen(0,'127.0.0.1');await once(server,'listening');t.after(()=>{handler.close();server.close();});
+ const url=`http://127.0.0.1:${server.address().port}/api/admin/news-editorial/drafts/${d.id}/attachments/`;
+ const headers={Authorization:'Bearer owner',Origin:'https://wirkungsoekonomie.de','Content-Type':'image/jpeg'};
+ assert.equal((await fetch(url+'5',{method:'PUT',headers:{...headers,Authorization:'Bearer other'},body:bytes})).status,404);
+ assert.equal((await fetch(url+'5',{method:'PUT',headers:{...headers,Origin:'https://evil.example'},body:bytes})).status,403);
+ for(let i=0;i<12;i++)assert.equal((await fetch(url+i,{method:'PUT',headers,body:bytes})).status,200,`screenshot ${i+1}`);
+ for(const index of ['12','99','-1','01'])assert.equal((await fetch(url+index,{method:'PUT',headers,body:bytes})).status,404);
+ const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();const j=f.store.get(result.job_id);
+ assert.equal(j.status,'queued');assert.equal(j.input.request.attachments.length,12);
+ for(const a of j.input.request.attachments)assert.deepEqual(f.files.get(a.path),bytes);
+ assert.equal(j.input.manual_only,true);assert.equal(j.input.request.publication_intent,'final_approval_required');assert.equal(f.approval.claimPublications().length,0);
+});
 
 test('temporary output transport failure preserves the paid output and never requests content correction',async t=>{
  const f=setup(t),j=await job(f);

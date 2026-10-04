@@ -28,6 +28,7 @@ import { withRequestDeadline } from './request-deadline.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { isIP } from 'node:net';
 import { modelRates } from './budget.mjs';
+import { EDITORIAL_ATTACHMENT_COUNT, EDITORIAL_ATTACHMENT_BYTES, EDITORIAL_ATTACHMENTS_TOTAL_BYTES, EDITORIAL_IMAGE_TYPES } from '../../admin/redaktion/attachment-limits.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
@@ -187,24 +188,29 @@ const providerDetail = (payload) => String(payload?.error?.message || payload?.e
 // als lesbarer Inhalt vor"; davor dieselbe Sackgasse bei der Freier-Analyse).
 // Bilder gehen jetzt als Material mit. Der Prüfsumme nach muss es dasselbe Bild
 // sein, das die App abgelegt hat.
-export const ATTACHMENT_IMAGE_TYPES = new Set(['image/png', 'image/jpeg', 'image/webp']);
-export const ATTACHMENT_MAX_BYTES = 6 * 1024 * 1024;
+export const ATTACHMENT_IMAGE_TYPES = new Set(EDITORIAL_IMAGE_TYPES);
+export const ATTACHMENT_MAX_BYTES = EDITORIAL_ATTACHMENT_BYTES;
 
-export async function collectAttachmentImages(session, attachments = [], { max = 4, maxBytes = ATTACHMENT_MAX_BYTES } = {}) {
+export async function collectAttachmentImages(session, attachments = [], { max = EDITORIAL_ATTACHMENT_COUNT, maxBytes = ATTACHMENT_MAX_BYTES, totalBytes = EDITORIAL_ATTACHMENTS_TOTAL_BYTES } = {}) {
   const bilder = [], uebersprungen = [];
-  for (const attachment of (Array.isArray(attachments) ? attachments : []).slice(0, max)) {
+  let usedBytes = 0;
+  for (const [index, attachment] of (Array.isArray(attachments) ? attachments : []).entries()) {
     const kennung = String(attachment?.name || attachment?.path || '').split('/').at(-1).slice(0, 60);
     const mime = String(attachment?.mime || '').toLowerCase();
+    if (index >= Math.min(max, EDITORIAL_ATTACHMENT_COUNT)) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_ANZAHLGRENZE' }); continue; }
     if (!ATTACHMENT_IMAGE_TYPES.has(mime)) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_KEIN_BILD' }); continue; }
-    if (Number(attachment?.size || 0) > maxBytes) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_ZU_GROSS' }); continue; }
+    if (Number(attachment?.size || 0) > Math.min(maxBytes, ATTACHMENT_MAX_BYTES)) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_ZU_GROSS' }); continue; }
+    if (usedBytes + Number(attachment?.size || 0) > Math.min(totalBytes, EDITORIAL_ATTACHMENTS_TOTAL_BYTES)) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_GESAMTGROESSE' }); continue; }
     let bytes = null;
     try { bytes = await session.transport.readBinary(attachment.path); }
     catch { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_NICHT_LESBAR' }); continue; }
-    if (!bytes?.length || bytes.length > maxBytes) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_ZU_GROSS' }); continue; }
+    if (!bytes?.length || bytes.length > Math.min(maxBytes, ATTACHMENT_MAX_BYTES)) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_ZU_GROSS' }); continue; }
+    if (usedBytes + bytes.length > Math.min(totalBytes, EDITORIAL_ATTACHMENTS_TOTAL_BYTES)) { uebersprungen.push({ anhang: kennung, grund: 'ANHANG_GESAMTGROESSE' }); continue; }
     if (attachment.sha256 && createHash('sha256').update(bytes).digest('hex') !== attachment.sha256) {
       uebersprungen.push({ anhang: kennung, grund: 'ANHANG_VERAENDERT' }); continue;
     }
     bilder.push({ name: kennung, mime, base64: bytes.toString('base64') });
+    usedBytes += bytes.length;
   }
   return { bilder, uebersprungen };
 }
