@@ -8,6 +8,18 @@
     "freigabe-quittung": {
       "firstSeen": "2026-10-04T15:50:40.140Z",
       "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-04T23:06:13.339Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-04T23:06:13.339Z",
+      "active": false
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-04T23:06:13.339Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2361,7 +2373,7 @@
       }
     },
     "last_new_at": "2026-10-04T17:36:23.813Z",
-    "checked_at": "2026-10-04T22:50:54.767Z",
+    "checked_at": "2026-10-04T23:06:13.339Z",
     "last_current_new_at": "2026-10-04T17:36:23.813Z"
   },
   "recovery_attempts": [
