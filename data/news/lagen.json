@@ -1,7 +1,64 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-03T16:00:00.000Z",
+  "updated_at": "2026-10-04T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-04-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-04",
+      "window_from": "2026-10-03T16:00:00.000Z",
+      "window_to": "2026-10-04T04:00:00.000Z",
+      "stand": "2026-10-04T04:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 2,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Selenskyj erneuert Vorschlag für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T03:18:23.930Z",
+          "score": 5.6922
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Laut DER SPIEGEL stützt eine Recherche Berichte über Warnungen vor dem Hamas-Angriff 2023",
+          "state": "fortgeschrieben",
+          "at": "2026-10-04T02:13:14.056Z",
+          "score": 7.6017
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Gegenseitige Angriffe auf Infrastruktur und Industrieanlagen fortgesetzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-03T22:59:07.142Z",
+          "score": 7.3321
+        },
+        {
+          "story_id": "wt-e834bec34d77dda6",
+          "slug": "unwetter-auf-griechischer-urlaubsinsel-kreta-einige-touristen-evakuiert-77dda6",
+          "title": "Laut Behörden: Unwetter auf Kreta, einige Touristen evakuiert",
+          "state": "neu",
+          "at": "2026-10-03T19:44:19.830Z",
+          "score": 5.3116
+        },
+        {
+          "story_id": "wt-5553a690280da8c9",
+          "slug": "heftiges-unwetter-auf-kreta-einige-touristen-evakuiert-menschen-stecken-in-autos-fest-0da8c9",
+          "title": "Heftiges Unwetter auf Kreta: Touristen evakuiert, Menschen in Autos eingeschlossen",
+          "state": "neu",
+          "at": "2026-10-03T19:43:22.029Z",
+          "score": 9.3102
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-03-abendlage",
       "slot": "abendlage",
