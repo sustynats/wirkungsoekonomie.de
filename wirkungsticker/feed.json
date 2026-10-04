@@ -1,11 +1,24 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-04T07:31:10.941Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-04T08:20:58.364Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/demokratie-lasst-sich-nicht-nur-militarisch-verteidigen-084bfa/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/demokratie-lasst-sich-nicht-nur-militarisch-verteidigen-084bfa/",
+      "title": "Meinung & Analyse: Demokratie lässt sich nicht nur militärisch verteidigen",
+      "summary": "Marina Weisband warnte bei Maybrit Illner schon im Februar 2025 vor Abhängigkeiten der digitalen Öffentlichkeit. Heute geben US-Förderprogramme für Europas Zivilgesellschaft ihrer Frage neue Aktualität: Wer gestaltet die Bedingungen, unter denen wir uns eine politische Meinung bilden?",
+      "date_published": "2026-10-04T07:58:42.937Z",
+      "date_modified": "2026-10-04T07:58:42.937Z",
+      "_woek_released_at": "2026-10-04T07:58:42.937Z",
+      "tags": [
+        "Meinung & Analyse"
+      ],
+      "_woek_type": "Meinung & Analyse"
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wenn-streit-zum-format-wird-ricarda-lang-bei-hart-aber-fair-360-56e026/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wenn-streit-zum-format-wird-ricarda-lang-bei-hart-aber-fair-360-56e026/",
@@ -2434,8 +2447,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
-      "title": "Bericht thematisiert mögliche Warnungen vor Hamas-Angriff",
-      "summary": "Ein Bericht greift mögliche Warnungen vor einem Hamas-Angriff auf und erhöht damit den Druck in einer öffentlichen Verantwortungsdebatte. Offen bleiben Originalbelege, Warnkette, Kenntnisstand und institutionelle Folgen.",
+      "title": "Laut Bericht: Bericht über Warnungen vor Hamas-Angriff erhöht Druck auf Netanyahu",
+      "summary": "Ein SPIEGEL-Bericht verweist auf mögliche Warnungen vor einem Hamas-Angriff im Oktober 2023. Belegt sind weder die Warnkette noch der Kenntnisstand Netanyahus oder institutionelle Folgen.",
       "date_published": "2026-09-26T09:28:00.000Z",
       "date_modified": "2026-09-26T09:28:00.000Z",
       "_woek_released_at": "2026-09-26T09:42:03.246Z",
@@ -2448,18 +2461,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 0,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
@@ -5321,7 +5334,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e/",
       "title": "Laut Deutschlandfunk: Selenskyj erneuert Vorschlag für begrenzte Waffenruhe",
-      "summary": "Selenskyj bietet Russland eine begrenzte Deeskalation an, wenn Angriffe auf ukrainische Energie, Infrastruktur und Exporte enden. Eine Reaktion Moskaus oder eine Waffenruhe ist nicht belegt.",
+      "summary": "Selenskyj erneuert laut Deutschlandfunk ein Angebot für begrenzte Deeskalation, falls Russland bestimmte Angriffe beendet. Eine Reaktion Moskaus oder eine Waffenruhe ist nicht belegt.",
       "date_published": "2026-09-22T00:08:50.000Z",
       "date_modified": "2026-09-22T00:08:50.000Z",
       "_woek_released_at": "2026-09-22T01:00:56.738Z",
@@ -5333,18 +5346,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
-          "direction": "mixed",
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 2,
-          "direction": "mixed",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "positive",
           "status": "potential"
         }
       }
