@@ -25,32 +25,25 @@
       "firstSeen": "2026-10-05T05:02:17.857Z",
       "active": true
     },
-    "institute": {
-      "firstSeen": "2026-10-05T05:22:12.273Z",
-      "active": true
-    },
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-05T05:22:12.273Z",
       "active": true
-    },
-    "academy": {
-      "firstSeen": "2026-10-05T05:23:50.251Z",
-      "active": true
-    },
-    "api": {
-      "firstSeen": "2026-10-05T05:45:33.957Z",
-      "active": false
-    },
-    "push": {
-      "firstSeen": "2026-10-05T05:45:33.957Z",
-      "active": false
     },
     "delivery-deploy.yml": {
       "firstSeen": "2026-10-05T05:45:33.957Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e0a05613251e24e469bdd65e",
+      "content": "✓ WÖk-Störung behoben\nAkademie\nPrüfung: 2026-10-05T05:51:07.060Z"
+    },
+    {
+      "id": "d3bb700736167d987d044e1a",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-05T05:51:07.060Z"
+    }
+  ],
   "dailyDate": "2026-10-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2405,7 +2398,7 @@
       }
     },
     "last_new_at": "2026-10-05T00:20:42.758Z",
-    "checked_at": "2026-10-05T05:45:33.957Z",
+    "checked_at": "2026-10-05T05:51:07.060Z",
     "last_current_new_at": "2026-10-05T00:20:42.758Z"
   },
   "recovery_attempts": [
