@@ -5,24 +5,25 @@
       "firstSeen": "2026-09-15T16:54:49.150Z",
       "active": true
     },
-    "freigabe-quittung": {
-      "firstSeen": "2026-10-04T15:50:40.140Z",
-      "active": true
-    },
     "editorial-coverage": {
       "firstSeen": "2026-10-05T04:30:12.420Z",
       "active": true
-    },
-    "delivery-redaktionsworker.yml": {
-      "firstSeen": "2026-10-05T05:22:12.273Z",
-      "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-05T07:23:42.900Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0be2cf16b2efa01f8669fe6e",
+      "content": "✓ WÖk-Störung behoben\nQuittung freigegebener Fassungen\nPrüfung: 2026-10-05T07:35:56.671Z"
+    },
+    {
+      "id": "354f3c6d50b86ab6c4a583b7",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-05T07:35:56.671Z"
+    },
+    {
+      "id": "702f41fa0c504b5746ae7437",
+      "content": "✓ WÖk-Störung behoben\nRedaktionslauf\nPrüfung: 2026-10-05T07:35:56.671Z"
+    }
+  ],
   "dailyDate": "2026-10-05",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2381,7 +2382,7 @@
       }
     },
     "last_new_at": "2026-10-05T06:22:17.924Z",
-    "checked_at": "2026-10-05T07:23:42.900Z",
+    "checked_at": "2026-10-05T07:35:56.671Z",
     "last_current_new_at": "2026-10-05T06:22:17.924Z"
   },
   "recovery_attempts": [
