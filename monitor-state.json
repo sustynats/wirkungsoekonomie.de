@@ -9,28 +9,33 @@
       "firstSeen": "2026-10-04T15:50:40.140Z",
       "active": true
     },
-    "institute": {
-      "firstSeen": "2026-10-05T04:21:32.544Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-05T04:21:32.544Z",
-      "active": true
-    },
     "run": {
       "firstSeen": "2026-10-05T04:30:12.420Z",
       "active": true
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-05T04:30:12.420Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-05T04:30:12.420Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9e6814e089876c5292b5b25d",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-05T04:36:24.974Z"
+    },
+    {
+      "id": "60369f11308901af4a028225",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-05T04:36:24.974Z"
+    },
+    {
+      "id": "6df348a76a4ec5805741a013",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-05T04:30:12.420Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2385,7 +2390,7 @@
       }
     },
     "last_new_at": "2026-10-05T00:20:42.758Z",
-    "checked_at": "2026-10-05T04:30:12.420Z",
+    "checked_at": "2026-10-05T04:36:24.974Z",
     "last_current_new_at": "2026-10-05T00:20:42.758Z"
   },
   "recovery_attempts": [
