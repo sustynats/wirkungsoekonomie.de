@@ -31,14 +31,15 @@
     },
     "institute": {
       "firstSeen": "2026-10-05T06:06:37.701Z",
-      "active": false
-    },
-    "academy": {
-      "firstSeen": "2026-10-05T06:10:31.765Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6c92cd75478ebed320b74c32",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-05T06:06:37.701Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-05",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2390,11 +2391,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/us-withdraws-all-b-1-bombers-from-british-military-base-raf-fairford-c317f3/": {
         "first_seen_at": "2026-10-05T00:20:42.758Z",
         "source_at": "2026-10-04T22:50:23.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sportplatz-wachenbuchen-grenzt-an-sperrgebiet-wo-ein-fehlschuss-richtig-teuer-wird-b1067b/": {
+        "first_seen_at": "2026-10-05T06:22:17.924Z",
+        "source_at": "2026-10-05T05:02:57.000Z"
       }
     },
-    "last_new_at": "2026-10-05T00:20:42.758Z",
-    "checked_at": "2026-10-05T06:10:31.765Z",
-    "last_current_new_at": "2026-10-05T00:20:42.758Z"
+    "last_new_at": "2026-10-05T06:22:17.924Z",
+    "checked_at": "2026-10-05T06:22:17.924Z",
+    "last_current_new_at": "2026-10-05T06:22:17.924Z"
   },
   "recovery_attempts": [
     {
