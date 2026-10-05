@@ -1,5 +1,5 @@
 {
-  "storage_format": "woek-newsroom-parts-1",
+  "storage_format": "woek-newsroom-parts-2",
   "fields": [
     {
       "key": "schema_version",
@@ -9,97 +9,108 @@
     {
       "key": "public_updated_at",
       "kind": "value",
-      "value": "2026-10-05T04:14:46.038Z"
+      "value": "2026-10-05T05:06:09.482Z"
     },
     {
       "key": "updated_at",
       "kind": "value",
-      "value": "2026-10-05T04:49:24.246Z"
+      "value": "2026-10-05T05:06:09.482Z"
     },
     {
       "key": "stories",
       "kind": "array",
-      "count": 8319,
+      "count": 8323,
       "parts": [
         {
-          "sha256": "71ea52ac424ee179d29d016110b63df81f068056f75357047a4daeec87ac62e4",
-          "bytes": 3830450
+          "kind": "record",
+          "sha256": "57f29e2b4aea812001f90e7cb53a11f574ebe6e964b47946bc6ccbe9062b0d9f",
+          "bytes": 8434227,
+          "parts": [
+            {
+              "sha256": "4eeacf249d8b7ad15c76a3dfff7914022e3cf4fef1fe286d6751a32d1b587d80",
+              "bytes": 8388606
+            },
+            {
+              "sha256": "2725c3482153ab5fa3a4a64623b1977c04f6c28ab961208b99d1b924a9147078",
+              "bytes": 2857034
+            }
+          ]
         },
         {
-          "sha256": "6a942006ebf307484c66db98f9579f64109238bbb41e03c05a67a961fae80c36",
-          "bytes": 7539888
+          "sha256": "764c76e4953cc6a2d4c4281bd318403be85498975ee0d67b2c66307370564046",
+          "bytes": 3891345
         },
         {
-          "sha256": "b496578c6876f05505f66b2c70624bfdb7ce9565d4f5bf91196c427899bc3fc1",
-          "bytes": 6583270
+          "sha256": "0c6f7cb32250ad236f2b31ac83fc1fda3af70773f8b11052c31239eab01ec8b8",
+          "bytes": 7545044
         },
         {
-          "sha256": "ee6b6f2854fd6cf8e66c0882aae65872e8385d1c6068142ad0fb3e87e86450a2",
-          "bytes": 7919120
+          "sha256": "af7cadfdb9d39adf496efeafa660b15e7b0202df93635c538722634c87cca441",
+          "bytes": 6586407
         },
         {
-          "sha256": "ed1ba0690eaff9078c7672ce26699fe8712889fd220b9fd77940bdc93eae1ab5",
-          "bytes": 8386600
+          "sha256": "1901a19d3abbe68fa2fdb7597617705f8605e46035ec7d05ad4b865057515bde",
+          "bytes": 8327458
         },
         {
-          "sha256": "cc32238ec7cb31f0ee7af0f41b178c459a719f96fdf84087aa98f61e91146bc7",
-          "bytes": 8385307
+          "sha256": "534783d1058fc02f08f0524cf5c8ad0e179ed0f1b98ef7dcffd397c58be11611",
+          "bytes": 8386148
         },
         {
-          "sha256": "2af4aee04721e92e9f82c32397e95281bb4574b6bde594b14a450331e1585910",
-          "bytes": 8385583
+          "sha256": "902f7e340696d08553828f79e965e8c5d711ff29fedd524b8429c4d8fa9237e9",
+          "bytes": 8292853
         },
         {
-          "sha256": "5e2a1514c130b64a525be6ab424dbc511cea0bbc1bc57028a178d8a6da1a7b11",
-          "bytes": 8321554
+          "sha256": "8988e0b187a4a339cab175d86f1e26366fa84ecfc7818e71e274c637952c1932",
+          "bytes": 8384866
         },
         {
-          "sha256": "46eb5fe8e7c6d47fe5a25f4a45df891625405f088f808cba06acef3e85cae60c",
-          "bytes": 8303123
+          "sha256": "4a574acc22f4ba08bc3662073b45dbb091d6b254258c85a701d40fe89d308f60",
+          "bytes": 8385975
         },
         {
-          "sha256": "0a5cb36eb8c988fe87fcbe5d4a271cfdc84c3cf5efdd44e9732d1892021e1ddd",
-          "bytes": 8296047
+          "sha256": "f326c9d3e32d1dfa3a5d35c33e94f8911c0c70acbd611c1619405c4bb9c6608b",
+          "bytes": 8382428
         },
         {
-          "sha256": "4ce7c23e5bec73e16fbf60dbade4145bf1dc1b11dde9840701156c5b1f943fb9",
-          "bytes": 8385582
+          "sha256": "66e808ff1268051e473e8ca0e147ec66a2289368deb43f2be720634ff1e1e0cb",
+          "bytes": 8375469
         },
         {
-          "sha256": "c555365c3f13c8d6e05d58a03b349b730694550017991e564ae67c68735f541d",
-          "bytes": 8221579
+          "sha256": "3d5cfac64d522ef2fd36c20371f9ddc1eada0f3b0af8b3662cb2b1af618d2bba",
+          "bytes": 8266095
         },
         {
-          "sha256": "7420f50e4d567ea17d9fc16ae261560f621e7838bbba26e3ddc0b71d6c66c5c9",
-          "bytes": 8239186
+          "sha256": "0b82beb4e2903a0b950fb583b8d36cfe933ebc92b12ae716eb477f27dd0f504e",
+          "bytes": 8285818
         },
         {
-          "sha256": "769540c556d02f398f9a939847e36dc7f65f1cfa7803e3a0271030e332ce85b8",
-          "bytes": 8174400
+          "sha256": "3bd2edc3462995a76dd8a6f05c200659c1ce5c2bb9aa06e44334ed6f69a4fd92",
+          "bytes": 8280262
         },
         {
-          "sha256": "164d102f2cd654a364ad9eecf1e17758a8bb34daabaae6a63b07d5e233bbf177",
-          "bytes": 8386234
+          "sha256": "170addf946d0c787879a075f02331371d2ae70680e970b7729a6ee333e4eb373",
+          "bytes": 8385500
         },
         {
-          "sha256": "9e8f22e0d23ea8eb1d35e65a04978171609a954334fe3e4eb9f331af6ab7e09e",
-          "bytes": 8301234
+          "sha256": "cfd43ec87fe1a24be3912f2200c009b90d9dc60ea7814024892af279d44098af",
+          "bytes": 8334690
         },
         {
-          "sha256": "c9cc52868aa6fdc5ecfa1699d22a4cf5e5b989cfa8f60253ff76471ddf24e2c8",
-          "bytes": 8245976
+          "sha256": "30be8757b7636c72ed2797e9e778f368cef818361afa589cc5fd093bea4d64cb",
+          "bytes": 8215202
         },
         {
-          "sha256": "fd75f40217ccbf486129a83585282a1f8dfae34f3c3d51d50189669ef433afca",
-          "bytes": 8360994
+          "sha256": "33b668068fc63601531e5944d94251aa05d9f5a72f0f1f7241ea985b0469ed5b",
+          "bytes": 8338256
         },
         {
-          "sha256": "00358ebd4b2ea8a23ffc0a0684c0d1ca2d995a57d5d94bc61077a21ed71e23ab",
-          "bytes": 8379112
+          "sha256": "35cf6f7aba598821ed8463336d2db5f71d9beccd9a97e913f1583e7ced736653",
+          "bytes": 8388163
         },
         {
-          "sha256": "4776a421f8af3eaf8bc1a9757028c6249effd0f3c01bfca91cc926bbb5bbc454",
-          "bytes": 7788554
+          "sha256": "9276de05cb89165b0f6c73ff1fbdeb50708fa1c8c24a22022a5ad3c5d147d06f",
+          "bytes": 7066122
         }
       ]
     }
