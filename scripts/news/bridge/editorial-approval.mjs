@@ -43,6 +43,19 @@ export class EditorialApproval {
   get(id){const r=this.db.prepare('SELECT body FROM editorial_reviews WHERE job_id=?').get(id);return r?JSON.parse(r.body):null;}
   owned(owner,id){const r=this.get(id);if(!actor(owner)||!r||r.owner!==owner)fail('EDITORIAL_REVIEW_NOT_FOUND',404);return r;}
   list(owner){if(!actor(owner))fail('EDITORIAL_OWNER_REQUIRED',403);return this.db.prepare('SELECT body FROM editorial_reviews WHERE owner=? ORDER BY json_extract(body,\'$.updated_at\') DESC').all(owner).map(r=>JSON.parse(r.body));}
+  // Cards need metadata, not every manuscript, revision base and publication
+  // edition. The full immutable preview stays behind the owner-checked route.
+  listSummaries(owner){
+    if(!actor(owner))fail('EDITORIAL_OWNER_REQUIRED',403);
+    return this.db.prepare(`SELECT job_id,
+      json_extract(body,'$.status') AS status, json_extract(body,'$.updated_at') AS updated_at,
+      json_extract(body,'$.preview.title') AS title, json_extract(body,'$.preview.format') AS format,
+      json_extract(body,'$.revision') AS revision, json_extract(body,'$.preview_hash') AS preview_hash,
+      json_extract(body,'$.publication.url') AS publication_url,
+      json_extract(body,'$.publication.error') AS publication_error
+      FROM editorial_reviews WHERE owner=? ORDER BY json_extract(body,'$.updated_at') DESC`)
+      .all(owner).map(({publication_url,publication_error,...r})=>({...r,publication:{url:publication_url,error:publication_error}}));
+  }
   save(record,event){this.db.prepare('INSERT INTO editorial_reviews VALUES(?,?,?) ON CONFLICT(job_id) DO UPDATE SET body=excluded.body').run(record.job_id,record.owner,JSON.stringify(record));this.db.prepare('INSERT INTO editorial_review_audit(job_id,at,body) VALUES(?,?,?)').run(record.job_id,this.now(),JSON.stringify(event));}
   // Worker-only: never expose this method through the browser API.
   stage(job,preview){

@@ -19,6 +19,16 @@ export class BridgeStore {
       CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY, body TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS slots (slot TEXT PRIMARY KEY, status TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS observations (key TEXT PRIMARY KEY, body TEXT NOT NULL);`);
+    // The journal includes large archived manuscripts. Frequent editorial
+    // lookups must not scan every JSON body on the small shared Oracle host.
+    // Additive indexes only: no queue state, approval or lane ownership changes.
+    this.db.exec(`
+      CREATE INDEX IF NOT EXISTS jobs_intake_owner_created ON jobs
+        (json_extract(body,'$.intake.owner'), json_extract(body,'$.created_at') DESC);
+      CREATE INDEX IF NOT EXISTS jobs_intake_kind ON jobs (json_extract(body,'$.intake.kind'));
+      CREATE INDEX IF NOT EXISTS jobs_type ON jobs (json_extract(body,'$.input.job_type'));
+      CREATE INDEX IF NOT EXISTS jobs_state ON jobs (json_extract(body,'$.status'));
+    `);
     const lockFile = `${file}.${lane}.lock`;
     this.lock = new DatabaseSync(lockFile);
     fs.chmodSync(lockFile, 0o600);
