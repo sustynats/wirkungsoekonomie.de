@@ -56,7 +56,7 @@ export function createEditorialIntakeHandler({intake,approval,authorize=existing
       const route=url.pathname.slice(BASE.length);
       // Betriebsauskunft: nur lesen, nur fuer das eigene Konto, nie oeffentlich.
       if(request.method==='GET'&&route==='/status'){respond(200,{status:(await readStatus())||null});return true;}
-      if(request.method==='GET'&&route==='/reviews'){respond(200,{reviews:approval.list(owner).map(({preview,...r})=>({...r,title:preview.title,format:preview.format}))});return true;}
+      if(request.method==='GET'&&route==='/reviews'){respond(200,{reviews:approval.listSummaries(owner)});return true;}
       let reviewMatch=route.match(/^\/reviews\/(wt_\d{8}T\d{6}Z_[a-f0-9]{24})(?:\/(decision))?$/);
       if(reviewMatch&&request.method==='GET'&&!reviewMatch[2]){respond(200,approval.preview(owner,reviewMatch[1]));return true;}
       if(reviewMatch&&request.method==='POST'&&reviewMatch[2]){respond(200,approval.decide(owner,reviewMatch[1],await readBody(request,EDITORIAL_DECISION_BODY_LIMIT)));return true;}
