@@ -1,4 +1,5 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
+import {editorialRequest} from './api-client.js';
 import {approvalStates,orderedReviews,readyApprovalCount,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
 import {parkedReason} from './parked-review.js';
@@ -8,17 +9,11 @@ const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
 const types={news:'Nachricht',opinion_analysis:'Meinung & Analyse',book_review:'Buch & Wirkung',listened:'Nachgehört',watched:'Nachgesehen'};
 let selectedFiles=[],requests=[],sending=false,pendingId=null,poll,supplement=null;
-let previewGeneration=0;
+let previewGeneration=0,reviewGeneration=0,loading=null;
 function note(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);}
 function element(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
 async function api(path='',options={}){
-  const token=auth();if(!token)throw Error('Bitte melde Dich mit Deinem Discord-Konto an.');
-  const headers={Authorization:`Bearer ${token}`,...options.headers};
-  if(options.body&&typeof options.body==='string')headers['Content-Type']='application/json';
-  const response=await fetch(API+path,{...options,headers,credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(90000)});
-  const data=await response.json().catch(()=>({error:'Der Server konnte gerade nicht erreicht werden.'}));
-  if(!response.ok){const e=Error(data.error||'Der Auftrag konnte noch nicht gespeichert werden.');e.status=response.status;throw e;}
-  return data;
+  return editorialRequest(API,path,auth(),options);
 }
 function login(){
   const state=crypto.randomUUID();sessionStorage.setItem(`woek_discord_oauth_state:${state}`,location.href.split('#')[0]);
@@ -44,6 +39,7 @@ function setSupplement(request){
 function startSupplement(request){setSupplement(request);show('compose');$('brief').focus();}
 function show(view){
   previewGeneration++;$('request-preview').hidden=true;$('request-list').hidden=false;
+  reviewGeneration++;$('approval-preview').hidden=true;$('approval-list').hidden=false;
   for(const id of ['compose','requests','receipt','approvals','betrieb'])$(id).hidden=id!==view;
   for(const [id,active] of [['tab-new',view==='compose'],['tab-list',view==='requests'],['tab-approval',view==='approvals'],['tab-status',view==='betrieb']]){$(id).classList.toggle('selected',active);$(id).setAttribute('aria-pressed',String(active));}
   note('');window.scrollTo({top:0,behavior:'smooth'});
@@ -168,19 +164,38 @@ async function openPrivatePreview(request){
     const retry=element('button','Erneut versuchen','secondary');retry.type='button';retry.addEventListener('click',()=>openPrivatePreview(request));mount.append(retry);
   }finally{if(generation===previewGeneration)mount.setAttribute('aria-busy','false');}
 }
-async function load(){
-  if(!auth())return;
+function load(){
+  if(loading)return loading;
+  if(!auth()){$('login-status').textContent='Bitte mit Discord anmelden. Eine Anmeldung in Discord allein öffnet noch keine Redaktionssitzung.';return Promise.resolve();}
+  const entering=$('workspace').hidden;
+  if(entering){$('login-status').textContent='Anmeldung wird geprüft und Redaktion geladen …';$('login').setAttribute('aria-busy','true');$('login-retry').disabled=true;}
+  loading=loadWorkspace().catch(error=>{
+    if(entering)$('login-status').textContent=error.message;
+    throw error;
+  }).finally(()=>{loading=null;$('login').setAttribute('aria-busy','false');$('login-retry').disabled=false;});
+  return loading;
+}
+async function loadWorkspace(){
+  const session=auth();
   const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));
+  if(auth()!==session)return;
   // Der Stand einer Rueckgabe steht im Ueberarbeitungsauftrag - roh gelesen, bevor die Rueckgabe ihn ueberdeckt.
   const revisions=revisionStates(data.requests,reviewData.reviews);
   requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.review_job_id||r.job_id),revisions.get(r.review_job_id||r.job_id)));drawReviews(reviewData.reviews,revisions);
   $('login').hidden=true;$('workspace').hidden=false;$('tab-status').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
   if(!poll)poll=setInterval(()=>{if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));},60000);
 }
-window.addEventListener('online',()=>note('Du bist wieder online.'));
+function resume(){if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));}
+window.addEventListener('online',resume);
+window.addEventListener('pageshow',resume);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&$('workspace').hidden)resume();});
+window.addEventListener('storage',event=>{if(event.key==='woek_community_auth'){
+  if(!auth()){$('workspace').hidden=true;$('tab-status').hidden=true;$('login').hidden=false;}
+  resume();
+}});
 window.addEventListener('offline',()=>note('Du bist offline. Bereits eingegangene Aufträge laufen auf dem Server weiter.'));
 window.addEventListener('beforeunload',event=>{if(sending){event.preventDefault();event.returnValue='';}});
-window.addEventListener('pagehide',()=>clearInterval(poll));
+window.addEventListener('pagehide',()=>{clearInterval(poll);poll=undefined;});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
 load().catch(error=>note(error.message,true));
 
@@ -198,8 +213,14 @@ function drawReviews(reviews,revisions=new Map()){
    const button=element('button','Vorschau öffnen','text-button');button.type='button';button.addEventListener('click',()=>openReview(r.job_id).catch(e=>note(e.message,true)));card.append(button);list.append(card);}
 }
 async function openReview(id){
- const r=await api(`/reviews/${id}`),p=r.preview,mount=$('approval-preview');mount.replaceChildren();mount.hidden=false;$('approval-list').hidden=true;
- const back=element('button','← Alle Vorschauen','text-button');back.type='button';back.addEventListener('click',()=>{mount.hidden=true;$('approval-list').hidden=false;});mount.append(back);
+ const generation=++reviewGeneration,mount=$('approval-preview');mount.replaceChildren();mount.hidden=false;$('approval-list').hidden=true;
+ const back=element('button','← Alle Vorschauen','text-button');back.type='button';back.addEventListener('click',()=>{reviewGeneration++;mount.hidden=true;$('approval-list').hidden=false;});mount.append(back);
+ const status=element('p','Vorschau wird geladen …','preview-status');status.setAttribute('role','status');status.tabIndex=-1;mount.append(status);mount.setAttribute('aria-busy','true');mount.scrollIntoView({block:'start'});status.focus({preventScroll:true});
+ try{
+ const r=await api(`/reviews/${id}`);
+ if(generation!==reviewGeneration)return;
+ if(!r.preview||typeof r.html!=='string')throw Error('Die vollständige Vorschau ist noch nicht verfügbar. Bitte erneut versuchen.');
+ const p=r.preview;status.remove();
  mount.append(element('p',`${types[p.format]} · Fassung ${r.revision}`,'eyebrow'),element('h2',p.title));if(p.subtitle)mount.append(element('p',p.subtitle));
  if(p.source_media){const m=p.source_media;mount.append(element('h3','Besprochen: '+m.show),element('p',m.episode_title),element('p',[m.original_release_date,...(m.hosts||[]),...(m.guests||[])].filter(Boolean).join(' · ')));}
  if(p.visual){const img=element('img');img.src=p.visual.url;img.alt=p.visual.alt;img.className='review-image';mount.append(img,element('p',p.visual.credit,'quiet'));}
@@ -225,5 +246,10 @@ async function openReview(id){
   for(const [action,title,cls]of[['APPROVE','Diese Fassung freigeben','primary'],['REVISE','Mit Kommentar zurückgeben','secondary'],['HOLD','Für später zurückstellen','text-button'],['SKIP','Nicht veröffentlichen','text-button']]){
    if(r.status==='NEEDS_REVIEW'&&action==='APPROVE')continue;const button=element('button',title,cls);button.type='button';button.addEventListener('click',async()=>{if(comment.value.length>EDITORIAL_COMMENT_LIMIT){note(COMMENT_TOO_LONG_MESSAGE,true);comment.focus();return;}if(action==='REVISE'&&!comment.value.trim()){note('Bitte schreibe dazu, was geändert werden soll.',true);comment.focus();return;}for(const b of controls.querySelectorAll('button'))b.disabled=true;try{await api(`/reviews/${id}/decision`,{method:'POST',body:JSON.stringify({action,preview_hash:r.preview_hash,comment:comment.value})});mount.hidden=true;$('approval-list').hidden=false;await load();note({APPROVE:'Freigabe gespeichert. Genau diese Fassung ist zur Veröffentlichung freigegeben.',REVISE:'Dein Kommentar ist gespeichert. Die überarbeitete Fassung erscheint wieder zur Freigabe.',HOLD:'Der Beitrag ist zurückgestellt.',SKIP:'Der Beitrag wird nicht veröffentlicht.'}[action]);}catch(e){note(e.status===409?'Die Fassung hat sich geändert. Bitte die neue Vorschau öffnen.':e.message,true);for(const b of controls.querySelectorAll('button'))b.disabled=false;}});controls.append(button);
   }mount.append(controls);
- }mount.scrollIntoView({behavior:'smooth',block:'start'});
+ }
+ }catch(error){
+  if(generation!==reviewGeneration)return;
+  status.textContent=error.message;status.classList.add('error');status.setAttribute('role','alert');
+  const retry=element('button','Vorschau erneut laden','secondary');retry.type='button';retry.addEventListener('click',()=>openReview(id));mount.replaceChildren(back,status,retry);
+ }finally{if(generation===reviewGeneration)mount.setAttribute('aria-busy','false');}
 }

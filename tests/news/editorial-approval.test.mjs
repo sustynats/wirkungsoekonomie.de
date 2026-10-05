@@ -7,6 +7,17 @@ const owner='1206956406805102593';
 const job={input:{job_id:'wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa'},intake:{owner}};
 const draft=()=>({format:'listened',source_media:{show:'Testshow',episode_title:'Eine Testfolge',original_release_date:'2026-09-10',original_url:'https://example.org/episode',hosts:[],guests:[]},title:'Ein geprüfter Gedanke zur gemeinsamen Zukunft',markdown:'## Ein Gedankenentwurf\n\nDieser ausdrücklich fiktive Testtext prüft ausschließlich den Freigabeablauf. Er enthält keine persönliche Meinung oder Erfahrung der Autorin.',sources:[{url:'https://example.org/episode',title:'Originalfolge',publisher:'Test-Publisher'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
 const setup=()=>new EditorialApproval(new DatabaseSync(':memory:'),{now:()=> '2026-09-10T15:30:00Z'});
+test('review cards are owner-scoped metadata without article, approval or publication bodies',()=>{
+ const s=setup(),r=s.stage(job,draft());
+ s.decide(owner,job.input.job_id,{action:'APPROVE',preview_hash:r.preview_hash});
+ s.claimPublications();
+ const before=s.get(job.input.job_id),cards=s.listSummaries(owner);
+ assert.equal(cards.length,1);assert.equal(cards[0].title,draft().title);assert.equal(cards[0].status,'PUBLISHING');
+ assert.equal(cards[0].preview_hash,r.preview_hash);assert.equal(cards[0].preview,undefined);assert.equal(cards[0].approval,undefined);assert.equal(cards[0].publication.edition,undefined);
+ assert.deepEqual(s.listSummaries('111111111111111111'),[]);assert.throws(()=>s.listSummaries('bad'),/OWNER_REQUIRED/);
+ assert.deepEqual(s.get(job.input.job_id),before);assert.equal(s.preview(owner,job.input.job_id).preview.markdown,draft().markdown);
+ s.db.close();
+});
 test('a preview never grants publication and only its owner may approve the exact version',()=>{
  const s=setup(),r=s.stage(job,draft());assert.equal(s.publishable(job.input.job_id),false);
  assert.throws(()=>s.decide('111111111111111111',job.input.job_id,{action:'APPROVE',preview_hash:r.preview_hash}),/NOT_FOUND/);
