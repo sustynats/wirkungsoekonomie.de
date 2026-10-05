@@ -11,14 +11,43 @@
     },
     "institute": {
       "firstSeen": "2026-10-05T04:21:32.544Z",
-      "active": false
+      "active": true
     },
     "editorial-status": {
       "firstSeen": "2026-10-05T04:21:32.544Z",
+      "active": true
+    },
+    "run": {
+      "firstSeen": "2026-10-05T04:30:12.420Z",
+      "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-05T04:30:12.420Z",
       "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-05T04:30:12.420Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "c074e904661ad0b301ce409c",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-05T04:21:32.544Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "933e2547d3ac8d0e06cf41f0",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-05T04:21:32.544Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "14020d295a5a92c458ad74dc",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-10-05T04:30:12.420Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "a968107b7ecf993d2f1cfb1e",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-05T04:30:12.420Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2373,7 +2402,7 @@
       }
     },
     "last_new_at": "2026-10-05T00:20:42.758Z",
-    "checked_at": "2026-10-05T04:21:32.544Z",
+    "checked_at": "2026-10-05T04:30:12.420Z",
     "last_current_new_at": "2026-10-05T00:20:42.758Z"
   },
   "recovery_attempts": [
