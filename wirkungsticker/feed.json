@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-05T05:06:09.482Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-05T05:27:29.802Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/sportplatz-wachenbuchen-grenzt-an-sperrgebiet-wo-ein-fehlschuss-richtig-teuer-wird-b1067b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/sportplatz-wachenbuchen-grenzt-an-sperrgebiet-wo-ein-fehlschuss-richtig-teuer-wird-b1067b/",
+      "title": "Sperrgebiet neben Sportplatz: KeWa Wachenbuchen verliert Bälle",
+      "summary": "Ein Sperrgebiet neben dem Sportplatz von KeWa Wachenbuchen lässt Bälle verloren gehen und erschwert das Training. Die Stadt Maintal stellt eine priorisierte Untersuchung des angrenzenden Bereichs in Aussicht, konkrete Abhilfe ist aber offen.",
+      "date_published": "2026-10-05T05:02:57.000Z",
+      "date_modified": "2026-10-05T05:02:57.000Z",
+      "_woek_released_at": "2026-10-05T05:32:27.684Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/us-withdraws-all-b-1-bombers-from-british-military-base-raf-fairford-c317f3/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/us-withdraws-all-b-1-bombers-from-british-military-base-raf-fairford-c317f3/",
@@ -2599,8 +2630,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888/",
-      "title": "Laut DER SPIEGEL: Bericht zu Warnungen vor Hamas-Angriff setzt Netanyahu unter Druck",
-      "summary": "Ein SPIEGEL-Bericht verweist auf mögliche Warnungen vor dem Hamas-Angriff im Oktober 2023 und eine stützende Recherche der New York Times. Ob Netanyahu die Warnungen kannte oder ignorierte, bleibt offen.",
+      "title": "Laut DER SPIEGEL: Bericht über Warnungen vor Hamas-Angriff erhöht Druck auf Netanyahu",
+      "summary": "Ein SPIEGEL-Bericht greift mögliche Warnungen vor dem Hamas-Angriff im Oktober 2023 auf. Ob Netanyahu davon wusste oder handelte, bleibt mit dem vorliegenden Auszug offen.",
       "date_published": "2026-09-26T09:28:00.000Z",
       "date_modified": "2026-09-26T09:28:00.000Z",
       "_woek_released_at": "2026-09-26T09:42:03.246Z",
@@ -2614,7 +2645,7 @@
       "_woek_impact_profile": {
         "human": {
           "magnitude": 1,
-          "direction": "positive",
+          "direction": "open",
           "status": "potential"
         },
         "planet": {
