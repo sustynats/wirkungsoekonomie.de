@@ -8,13 +8,14 @@
     "freigabe-quittung": {
       "firstSeen": "2026-10-04T15:50:40.140Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-04T23:51:20.001Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5fc461362c5deabd7d72e1fa",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-05T00:20:42.758Z"
+    }
+  ],
   "dailyDate": "2026-10-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2362,11 +2363,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/weltkriegsbomben-in-hannover-entscharft-17-500-anwohner-vorubergehend-evakuiert-4da2fa/": {
         "first_seen_at": "2026-10-04T17:36:23.813Z",
         "source_at": "2026-10-04T16:19:25.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/us-withdraws-all-b-1-bombers-from-british-military-base-raf-fairford-c317f3/": {
+        "first_seen_at": "2026-10-05T00:20:42.758Z",
+        "source_at": "2026-10-04T22:50:23.000Z"
       }
     },
-    "last_new_at": "2026-10-04T17:36:23.813Z",
-    "checked_at": "2026-10-05T00:05:42.955Z",
-    "last_current_new_at": "2026-10-04T17:36:23.813Z"
+    "last_new_at": "2026-10-05T00:20:42.758Z",
+    "checked_at": "2026-10-05T00:20:42.758Z",
+    "last_current_new_at": "2026-10-05T00:20:42.758Z"
   },
   "recovery_attempts": [
     {
