@@ -8,6 +8,14 @@
     "run": {
       "firstSeen": "2026-10-05T09:32:39.189Z",
       "active": true
+    },
+    "freigabe-quittung": {
+      "firstSeen": "2026-10-05T18:51:35.014Z",
+      "active": false
+    },
+    "lage": {
+      "firstSeen": "2026-10-05T18:51:35.014Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2366,11 +2374,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/sportplatz-wachenbuchen-grenzt-an-sperrgebiet-wo-ein-fehlschuss-richtig-teuer-wird-b1067b/": {
         "first_seen_at": "2026-10-05T06:22:17.924Z",
         "source_at": "2026-10-05T05:02:57.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizei-sucht-zeuginnen-und-zeugen-schusse-auf-vorbeifahrendes-auto-in-berlin-charlotten-ecb34b/": {
+        "first_seen_at": "2026-10-05T18:51:35.014Z",
+        "source_at": "2026-10-05T14:26:42.000Z"
       }
     },
-    "last_new_at": "2026-10-05T06:22:17.924Z",
-    "checked_at": "2026-10-05T09:32:39.189Z",
-    "last_current_new_at": "2026-10-05T06:22:17.924Z"
+    "last_new_at": "2026-10-05T18:51:35.014Z",
+    "checked_at": "2026-10-05T18:51:35.014Z",
+    "last_current_new_at": "2026-10-05T18:51:35.014Z"
   },
   "recovery_attempts": [
     {
