@@ -30,3 +30,7 @@ Die Doku beschreibt:
 - Datenbankmigrationen
 - Auth-, Rollen-, Curriculum-, Prüfungs- und Analytics-Flüsse
 - Oracle/OCI als externer Bot-/Feedback-/Analytics-Dienst sowie nicht vorhandene weitere Integrationen
+
+Ergänzende Übergabe für das geplante Institut:
+
+`<website-repo>/docs/claude-institut-architecture-handoff.md`
