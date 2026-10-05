@@ -28,13 +28,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-05T05:22:12.273Z",
       "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-05T06:06:37.701Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e822c0c0ce594fac339771e8",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-05T06:31:16.438Z"
+    }
+  ],
   "dailyDate": "2026-10-05",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2393,7 +2394,7 @@
       }
     },
     "last_new_at": "2026-10-05T06:22:17.924Z",
-    "checked_at": "2026-10-05T06:22:17.924Z",
+    "checked_at": "2026-10-05T06:31:16.438Z",
     "last_current_new_at": "2026-10-05T06:22:17.924Z"
   },
   "recovery_attempts": [
