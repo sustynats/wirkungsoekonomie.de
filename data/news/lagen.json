@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-06T10:00:00.000Z",
+  "updated_at": "2026-10-06T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-06-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-06",
+      "window_from": "2026-10-06T10:00:00.000Z",
+      "window_to": "2026-10-06T16:00:00.000Z",
+      "stand": "2026-10-06T16:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 3,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-541b92dd283617f3",
+          "slug": "bombendrohung-am-flughafen-stuttgart-ware-eine-komplette-sperrung-des-airports-vermeidba-3617f3",
+          "title": "Laut SWR: Flughafen Stuttgart nach Bombenbehauptung vorübergehend gesperrt",
+          "state": "neu",
+          "at": "2026-10-06T12:44:34.991Z",
+          "score": 5.4572
+        },
+        {
+          "story_id": "wt-bdfcbc9056d74af7",
+          "slug": "info-date-am-mittag-erster-afd-landtagsprasident-gewahlt-polizei-begrundet-vorubergehend-d74af7",
+          "title": "Laut SWR: Tobias Rausch erhält Mehrheit für Landtagspräsidentschaft in Sachsen-Anhalt",
+          "state": "neu",
+          "at": "2026-10-06T12:00:13.470Z",
+          "score": 5.334
+        },
+        {
+          "story_id": "wt-38bb06ddd2118de1",
+          "slug": "ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1",
+          "title": "Laut Bahnbetreiber: Russische Behörden melden zwei Tote; Drohnengefahr stoppt Tausende Züge",
+          "state": "neu",
+          "at": "2026-10-06T11:39:29.962Z",
+          "score": 9.7764
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-06-mittagslage",
       "slot": "mittagslage",
