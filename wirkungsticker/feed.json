@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-06T19:16:27.841Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-06T19:28:50.794Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -23,8 +23,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/einsatz-am-abend-schusse-am-stockholmer-schloss-polizei-nimmt-mann-fest-05acae/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/einsatz-am-abend-schusse-am-stockholmer-schloss-polizei-nimmt-mann-fest-05acae/",
-      "title": "Laut Polizei: Schüsse am Stockholmer Schloss, Mann festgenommen",
-      "summary": "Am Stockholmer Schloss fielen laut Polizei Schüsse, anschließend wurde ein Mann festgenommen. Ablauf, Motiv und mögliche Folgen des Einsatzes sind bislang offen.",
+      "title": "Mann am Stockholmer Schloss verletzt, Hintergründe unklar",
+      "summary": "Am Stockholmer Schloss fielen laut vorliegenden Berichten Schüsse, ein Mann wurde festgenommen und verletzt. Die Hintergründe sowie die polizeiliche Darstellung eines gezielten Einsatzes sind nicht unabhängig bestätigt.",
       "date_published": "2026-10-06T18:10:17.000Z",
       "date_modified": "2026-10-06T18:10:17.000Z",
       "_woek_released_at": "2026-10-06T18:34:16.322Z",
@@ -36,18 +36,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         },
         "planet": {
           "magnitude": 0,
-          "direction": "open",
+          "direction": "neutral",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         }
       }
@@ -148,8 +148,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1/",
-      "title": "Laut Bahnbetreiber: Laut russischen Behörden zwei Tote bei Drohnenangriff; in der Ukraine wurden 5.831 Züge evakuiert",
-      "summary": "Drohnengefahr führte laut Bahnbetreiber im September zur Evakuierung von 5.831 Zügen in der Ukraine. Russischen Behörden zufolge starben bei einem Angriff auf die Region Moskau zwei Menschen; die Angaben sind nicht unabhängig bestätigt.",
+      "title": "Laut Bahnbetreiber: 5.831 Züge in der Ukraine wegen Drohnengefahr evakuiert",
+      "summary": "Drohnengefahr führte laut Bahnbetreiber im September zur Evakuierung von 5.831 Zügen in der Ukraine. Angaben zu zwei Toten in der Region Moskau sowie zu Verletzten in Saporischschja stammen aus jeweils zugeschriebenen Einzelquellen und sind nicht unabhängig bestätigt.",
       "date_published": "2026-10-06T10:25:50.000Z",
       "date_modified": "2026-10-06T10:25:50.000Z",
       "_woek_released_at": "2026-10-06T11:39:29.962Z",
@@ -160,18 +160,18 @@
       "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
+          "magnitude": 4,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 3,
-          "direction": "negative",
+          "magnitude": 2,
+          "direction": "open",
           "status": "potential"
         }
       }
