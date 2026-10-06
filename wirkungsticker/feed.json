@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-06T14:46:38.277Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-06T15:10:26.319Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -1465,8 +1465,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/",
-      "title": "Laut Tagesspiegel: Explosion verletzt drei südkoreanische Offiziere; Seoul kündigt Maßnahmen an",
-      "summary": "Bei einer laut Tagesspiegel als Minenexplosion bezeichneten Explosion wurden drei südkoreanische Offiziere verletzt; einer verlor seinen Fuß. Seoul kündigt Maßnahmen an, deren Inhalt und mögliche Reaktionen Nordkoreas offen sind.",
+      "title": "Laut Tagesspiegel: Drei südkoreanische Offiziere bei Explosion verletzt; Seoul kündigt Maßnahmen an",
+      "summary": "Der Tagesspiegel berichtet über drei verletzte südkoreanische Offiziere und eine Ankündigung Seouls. Hergang, Zuschreibung und konkrete Folgemaßnahmen bleiben offen.",
       "date_published": "2026-09-29T07:05:47.000Z",
       "date_modified": "2026-09-29T07:05:47.000Z",
       "_woek_released_at": "2026-09-29T07:35:48.483Z",
@@ -1483,13 +1483,13 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 0,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "open",
+          "magnitude": 4,
+          "direction": "negative",
           "status": "potential"
         }
       }
@@ -1497,8 +1497,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
-      "title": "Laut stern: Minenexplosion im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere",
-      "summary": "Eine laut stern gemeldete Minenexplosion im koreanischen Grenzgebiet verletzte drei südkoreanische Offiziere schwer. Hergang, Verantwortungsfrage und konkrete Reaktionen bleiben offen.",
+      "title": "Laut stern: Drei südkoreanische Offiziere bei Minenexplosion im Grenzgebiet verletzt",
+      "summary": "Eine laut stern gemeldete Minenexplosion im koreanischen Grenzgebiet verletzte drei südkoreanische Offiziere schwer. Mögliche sicherheitspolitische Folgen bleiben wegen der fehlenden unabhängigen Bestätigung und offener Reaktionen unklar.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -1512,18 +1512,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
+          "magnitude": 4,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "open",
+          "direction": "positive",
           "status": "potential"
         }
       }
