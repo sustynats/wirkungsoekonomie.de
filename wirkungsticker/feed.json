@@ -1,11 +1,25 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-06T18:28:47.878Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-06T19:16:27.841Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-wenn-wehrpflicht-zur-gewissensfrage-wird-71edf6/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-wenn-wehrpflicht-zur-gewissensfrage-wird-71edf6/",
+      "title": "Nachgesehen: Wenn Wehrpflicht zur Gewissensfrage wird",
+      "summary": "„Hart aber fair 360“ stellt einen Bundeswehroffizier 20 Menschen gegenüber. Die Sendung zeigt, woran die Debatte über Abschreckung, Aufrüstung und Wehrdienst tatsächlich hängt: an der Frage, wessen Sicherheit geschützt werden soll und wer die Folgen trägt.",
+      "date_published": "2026-10-06T18:17:09.134Z",
+      "date_modified": "2026-10-06T18:17:09.134Z",
+      "_woek_released_at": "2026-10-06T18:17:09.134Z",
+      "_woek_original_episode_date": "2026-10-05",
+      "tags": [
+        "Nachgesehen"
+      ],
+      "_woek_type": "Nachgesehen"
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/einsatz-am-abend-schusse-am-stockholmer-schloss-polizei-nimmt-mann-fest-05acae/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/einsatz-am-abend-schusse-am-stockholmer-schloss-polizei-nimmt-mann-fest-05acae/",
@@ -134,8 +148,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1/",
-      "title": "Laut Bahnbetreiber: Russische Behörden melden zwei Tote; Drohnengefahr stoppt Tausende Züge",
-      "summary": "Laut Bahnbetreiber wurden in der Ukraine zahlreiche Züge wegen Drohnengefahr evakuiert; russische Behörden meldeten zwei Tote. Eine unabhängige Bestätigung liegt nicht vor.",
+      "title": "Laut Bahnbetreiber: Laut russischen Behörden zwei Tote bei Drohnenangriff; in der Ukraine wurden 5.831 Züge evakuiert",
+      "summary": "Drohnengefahr führte laut Bahnbetreiber im September zur Evakuierung von 5.831 Zügen in der Ukraine. Russischen Behörden zufolge starben bei einem Angriff auf die Region Moskau zwei Menschen; die Angaben sind nicht unabhängig bestätigt.",
       "date_published": "2026-10-06T10:25:50.000Z",
       "date_modified": "2026-10-06T10:25:50.000Z",
       "_woek_released_at": "2026-10-06T11:39:29.962Z",
@@ -146,18 +160,18 @@
       "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 2,
           "direction": "negative",
-          "status": "emerging"
+          "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 3,
+          "direction": "negative",
           "status": "potential"
         }
       }
@@ -1254,6 +1268,41 @@
       }
     },
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bundesrat-ubt-kritik-am-netzpaket-ed9ee7/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bundesrat-ubt-kritik-am-netzpaket-ed9ee7/",
+      "title": "Laut Bundesrat könnten Pläne den Netzausbau und erneuerbare Energien bremsen",
+      "summary": "Der Bundesrat kritisiert geplante Regeln für Stromnetze und erneuerbare Energien und fordert Nachbesserungen. Ob die Streitpunkte Ausbau, Investitionen und Akzeptanz tatsächlich verändern, ist noch offen.",
+      "date_published": "2026-10-01T00:00:00.000Z",
+      "date_modified": "2026-10-01T00:00:00.000Z",
+      "_woek_released_at": "2026-10-06T08:04:08.402Z",
+      "tags": [
+        "Energie",
+        "Demokratie",
+        "Politik",
+        "Klima",
+        "Wirtschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 3,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/dresden-prohlis-schusse-bei-verhaftung-51-jahriger-schwer-verletzt-695483/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/dresden-prohlis-schusse-bei-verhaftung-51-jahriger-schwer-verletzt-695483/",
       "title": "Laut stern: 51-Jähriger bei Verhaftung in Dresden-Prohlis schwer verletzt",
@@ -1560,8 +1609,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
-      "title": "Laut stern: Explosion im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere",
-      "summary": "Eine Mine verletzte laut stern drei südkoreanische Offiziere schwer; einer verlor seinen Fuß. Hergang, Verantwortungszuschreibung und politische Folgen sind nicht unabhängig bestätigt.",
+      "title": "Laut stern: Explosion einer Mine im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere",
+      "summary": "Laut stern wurden drei südkoreanische Offiziere durch die Explosion einer Mine schwer verletzt. Hergang, Verantwortungszuschreibung und politische Folgen sind weiterhin nicht unabhängig bestätigt.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -1575,7 +1624,7 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 2,
           "direction": "negative",
           "status": "observed"
         },
@@ -1585,8 +1634,8 @@
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "negative",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
