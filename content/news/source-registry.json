@@ -141,7 +141,8 @@
       "source_type": "official_rss",
       "topic": "Energie",
       "primary_source": true,
-      "enabled": true,
+      "enabled": false,
+      "disabled_reason": "Official RSS path is currently disallowed by the publisher's robots.txt; no alternate verified feed is available.",
       "priority": 94,
       "last_success": null,
       "last_error": null
@@ -221,7 +222,8 @@
       "source_type": "woek_public_assessments_json",
       "topic": "Demokratie",
       "primary_source": true,
-      "enabled": true,
+      "enabled": false,
+      "disabled_reason": "The configured public Parliament cases endpoint currently returns HTTP 404; re-enable only after a verified public endpoint is deployed.",
       "priority": 90,
       "last_success": null,
       "last_error": null
