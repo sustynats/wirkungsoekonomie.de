@@ -15,14 +15,31 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-06T06:54:37.840Z",
-      "active": false
+      "active": true
     },
     "lage": {
       "firstSeen": "2026-10-06T06:54:37.840Z",
+      "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-06T07:05:41.102Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-06T07:05:41.102Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "c32f9de25c3f68e6c862090c",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-06T06:54:37.840Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "7b4d7838adcde9f71a2b49ff",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionelle Lage: Die jüngste Lage ist 21.1 Stunden alt; spätestens alle sechs Stunden muss eine neue vorliegen. Der Schritt im Ticker-Lauf bricht absichtlich nicht ab, damit eine bezahlte Analyse nicht verloren geht - deshalb muss sein Ausfall hier auffallen.\nSeit: 2026-10-06T06:54:37.840Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-06",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2389,7 +2406,7 @@
       }
     },
     "last_new_at": "2026-10-06T00:43:29.040Z",
-    "checked_at": "2026-10-06T06:55:43.856Z",
+    "checked_at": "2026-10-06T07:05:41.102Z",
     "last_current_new_at": "2026-10-06T00:43:29.040Z"
   },
   "recovery_attempts": [
