@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-06T11:53:27.266Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-06T12:35:29.892Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-am-flughafen-stuttgart-ware-eine-komplette-sperrung-des-airports-vermeidba-3617f3/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-am-flughafen-stuttgart-ware-eine-komplette-sperrung-des-airports-vermeidba-3617f3/",
+      "title": "Laut SWR: Flughafen Stuttgart nach Bombenbehauptung vorübergehend gesperrt",
+      "summary": "Eine Bombenbehauptung löste laut SWR am Flughafen Stuttgart einen Polizeieinsatz und eine kurzzeitige Einstellung des Flugbetriebs aus. Offen bleiben die vollständigen Ermittlungsumstände und die strafrechtliche Einordnung.",
+      "date_published": "2026-10-06T11:42:41.000Z",
+      "date_modified": "2026-10-06T11:42:41.000Z",
+      "_woek_released_at": "2026-10-06T12:44:34.991Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "open",
           "status": "potential"
         }
       }
@@ -1467,7 +1498,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "title": "Laut stern: Minenexplosion verletzt drei südkoreanische Offiziere",
-      "summary": "Eine Minenexplosion verletzte laut stern drei südkoreanische Offiziere schwer; einer verlor seinen Fuß. Seoul wertet den Vorfall als Waffenstillstandsverstoß und kündigt Maßnahmen an, doch Hergang, Verantwortung und Reaktion bleiben teilweise offen.",
+      "summary": "Eine laut stern gemeldete Minenexplosion verletzte drei südkoreanische Offiziere schwer; einer verlor seinen Fuß. Seoul wertet den Vorfall als Waffenstillstandsverstoß und kündigt Maßnahmen an, doch Hergang und Verantwortung bleiben offen.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -1481,7 +1512,7 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 3,
           "direction": "negative",
           "status": "observed"
         },
