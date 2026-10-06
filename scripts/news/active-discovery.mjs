@@ -2,11 +2,12 @@ import { fetchFeed, fetchPublicArticle, parseFeed, sha256, sanitizeFeedText, pre
 import { sourceAccess } from './access-policy.mjs';
 import { annotateSourceItem } from './newsroom.mjs';
 import { categoryCoverage, eventCategories, eventSignals, balanceEventQueue, COVERAGE_CATEGORIES } from './event-relevance.mjs';
+import { publicationDateFromHib } from './publication-date.mjs';
 
 const ms = value => Date.parse(value || '') || 0;
 const host = value => { try { const url = new URL(value); return url.protocol === 'https:' ? url.hostname.replace(/^www\./, '') : null; } catch { return null; } };
 export const DISCOVERY_LIMITS = Object.freeze({ indexes_per_run: 2, metadata_per_run: 2, candidates_per_run: 12, index_items: 120, interval_minutes: 60 });
-export const PUBLICATION_METADATA_VERSION = 'scoped-publication-v2';
+export const PUBLICATION_METADATA_VERSION = 'scoped-publication-v3';
 
 // A query matrix over permission-reviewed public indexes, not an unlicensed
 // search API or an indiscriminate full-web crawl. Empty categories run first.
@@ -40,13 +41,15 @@ export function extractDiscoveryMetadata(body, url, source) {
   const summary = sanitizeFeedText(article?.description || meta.description || meta['og:description'] || '', 1000);
   const declaredDay = source.primary_source && source.official_endpoint_verified
     ? pressReleaseDay(text) : null;
-  const rawDate = article?.datePublished || meta['article:published_time'] || scopedPublicationDate(text, url) || declaredDay;
+  const hibDay = source.publication_date_adapter === 'bundestag-hib-date-v1' && title
+    ? publicationDateFromHib({ body: text, final_url: url }, { url, title }, new Date().toISOString())?.published_at : null;
+  const rawDate = article?.datePublished || meta['article:published_time'] || scopedPublicationDate(text, url) || declaredDay || hibDay;
   // Never promote dateModified or sitemap lastmod to publication time.
   if (!title || !rawDate || !ms(rawDate)) return null;
   return { source_id: source.source_id, publisher: source.name, source_type: source.source_type,
     primary_source: Boolean(source.primary_source), source_priority: 0, source_topic: source.topic,
-    title, summary, url, published_at: rawDate === declaredDay ? declaredDay : new Date(ms(rawDate)).toISOString(),
-    ...(rawDate === declaredDay ? {published_precision:'day'} : {}), item_id: sha256(url),
+    title, summary, url, published_at: rawDate === declaredDay || rawDate === hibDay ? rawDate : new Date(ms(rawDate)).toISOString(),
+    ...(rawDate === declaredDay || rawDate === hibDay ? {published_precision:'day'} : {}), item_id: sha256(url),
     content_hash: sha256(`${title}:${summary}:${rawDate}`), categories: [] };
 }
 
