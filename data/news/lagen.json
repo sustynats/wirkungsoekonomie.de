@@ -1,7 +1,64 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-06T04:00:00.000Z",
+  "updated_at": "2026-10-06T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-06-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-06",
+      "window_from": "2026-10-06T04:00:00.000Z",
+      "window_to": "2026-10-06T10:00:00.000Z",
+      "stand": "2026-10-06T10:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 2,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Bericht über mögliche Warnungen vor Hamas-Angriff erhöht Druck auf Netanyahu",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T09:45:01.065Z",
+          "score": 5.7084
+        },
+        {
+          "story_id": "wt-003d9a97b9ad5437",
+          "slug": "explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437",
+          "title": "Laut Tagesspiegel: Drei südkoreanische Offiziere bei Minenexplosion verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T09:43:58.660Z",
+          "score": 5.7055
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T07:26:00.443Z",
+          "score": 7.3222
+        },
+        {
+          "story_id": "wt-ca28ed8c577be065",
+          "slug": "immer-wieder-schusse-in-berlin-woher-bekommen-die-kriminellen-ihre-waffen-7be065",
+          "title": "Tagesspiegel fragt nach Waffen hinter Schüssen in Berlin",
+          "state": "neu",
+          "at": "2026-10-06T07:07:20.477Z",
+          "score": 5.5204
+        },
+        {
+          "story_id": "wt-1c3d4df5466c2ced",
+          "slug": "flughafen-stuttgart-wegen-bombendrohung-geraumt-grosser-polizeieinsatz-nach-streit-von-1-6c2ced",
+          "title": "Laut SWR: Bombenbehauptung legt Stuttgarter Flughafen vorübergehend lahm",
+          "state": "neu",
+          "at": "2026-10-06T07:06:28.287Z",
+          "score": 5.518
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-06-morgenlage",
       "slot": "morgenlage",
