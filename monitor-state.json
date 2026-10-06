@@ -13,24 +13,33 @@
       "firstSeen": "2026-10-05T18:51:35.014Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-06T06:54:37.840Z",
-      "active": true
-    },
-    "lage": {
-      "firstSeen": "2026-10-06T06:54:37.840Z",
-      "active": true
-    },
-    "academy": {
-      "firstSeen": "2026-10-06T07:05:41.102Z",
+    "sources": {
+      "firstSeen": "2026-10-06T07:15:21.878Z",
       "active": false
     },
-    "institute": {
-      "firstSeen": "2026-10-06T07:05:41.102Z",
+    "editorial-coverage": {
+      "firstSeen": "2026-10-06T07:15:21.878Z",
       "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-06T07:15:21.878Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9daa66d8cce1a8aa47c13937",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-06T07:15:21.878Z"
+    },
+    {
+      "id": "b10f22a5c2c54cf0d22c89de",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-06T07:15:21.878Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "0e753a0f5b4e77f29c16f673",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Lage\nPrüfung: 2026-10-06T07:15:21.878Z"
+    }
+  ],
   "dailyDate": "2026-10-06",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2397,7 +2406,7 @@
       }
     },
     "last_new_at": "2026-10-06T00:43:29.040Z",
-    "checked_at": "2026-10-06T07:05:41.102Z",
+    "checked_at": "2026-10-06T07:15:21.878Z",
     "last_current_new_at": "2026-10-06T00:43:29.040Z"
   },
   "recovery_attempts": [
