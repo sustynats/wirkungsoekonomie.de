@@ -16,6 +16,14 @@
     "delivery-deploy.yml": {
       "firstSeen": "2026-10-06T16:20:49.298Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-06T19:05:48.525Z",
+      "active": false
+    },
+    "publication": {
+      "firstSeen": "2026-10-06T19:05:48.525Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2405,7 +2413,7 @@
       }
     },
     "last_new_at": "2026-10-06T13:21:05.425Z",
-    "checked_at": "2026-10-06T18:50:59.414Z",
+    "checked_at": "2026-10-06T19:05:48.525Z",
     "last_current_new_at": "2026-10-06T13:21:05.425Z"
   },
   "recovery_attempts": [
