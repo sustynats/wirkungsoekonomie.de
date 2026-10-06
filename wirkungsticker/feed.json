@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-06T16:49:40.822Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-06T18:05:04.270Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-am-stuttgarter-flughafen-das-droht-dem-24-jahrigen-7c0a72/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-am-stuttgarter-flughafen-das-droht-dem-24-jahrigen-7c0a72/",
+      "title": "Bombendrohung am Stuttgarter Flughafen: Mögliche Folgen für den 24-Jährigen",
+      "summary": "Eine Bombendrohung legte den Stuttgarter Flughafen für ungefähr anderthalb Stunden lahm und betraf knapp 3.000 Menschen. Gegen den 24-Jährigen wird ermittelt; mögliche Schadenersatzansprüche sind laut einem Juraprofessor vom Einzelfall abhängig.",
+      "date_published": "2026-10-06T18:04:09.000Z",
+      "date_modified": "2026-10-06T18:04:09.000Z",
+      "_woek_released_at": "2026-10-06T18:12:07.469Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/info-date-am-mittag-erster-afd-landtagsprasident-gewahlt-polizei-begrundet-vorubergehend-d74af7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/info-date-am-mittag-erster-afd-landtagsprasident-gewahlt-polizei-begrundet-vorubergehend-d74af7/",
@@ -1497,8 +1528,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
-      "title": "Laut stern: Explosion einer nordkoreanischen Mine verletzt drei südkoreanische Offiziere",
-      "summary": "Eine vom stern berichtete Minenexplosion im koreanischen Grenzgebiet verletzte drei südkoreanische Offiziere schwer. Hergang, Verantwortungszuschreibung und mögliche politische Folgen sind nicht unabhängig bestätigt.",
+      "title": "Laut stern: Explosion im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere",
+      "summary": "Eine vom stern berichtete Minenexplosion im koreanischen Grenzgebiet verletzte drei südkoreanische Offiziere schwer. Hergang, Verantwortungszuschreibung und angekündigte politische Folgen sind nicht unabhängig bestätigt.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -1512,7 +1543,7 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 2,
           "direction": "negative",
           "status": "observed"
         },
@@ -1523,7 +1554,7 @@
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "negative",
           "status": "potential"
         }
       }
