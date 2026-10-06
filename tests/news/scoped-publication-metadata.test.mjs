@@ -22,3 +22,12 @@ test('explicit head pub_date is accepted only with matching canonical identity',
   assert.equal(extractDiscoveryMetadata(head(url,'<meta name="date" content="2026-10-02">'),url,source),null);
   assert.equal(extractDiscoveryMetadata(title+'<meta name="pub_date" content="2026-10-02">',url,source),null);
 });
+test('verified Bundestag HIB print identity supplies day precision for manual intake', () => {
+  const hibUrl='https://www.bundestag.de/presse/hib/kurzmeldungen-1222188';
+  const hibTitle='Bundesrat übt Kritik am Netzpaket';
+  const hibSource={source_id:'bundestag-hib',name:'Deutscher Bundestag',primary_source:true,official_endpoint_verified:true,publication_date_adapter:'bundestag-hib-date-v1'};
+  const html=`<html><head><meta property="og:title" content="${hibTitle}"><meta name="date" content="02.10.2026"><meta name="description" content="Amtliche Kurzmeldung"></head><body><span class="bt-date">02.10.2026</span><h1>${hibTitle}</h1><footer>Ausdruck aus dem Internet-Angebot des Deutschen Bundestages <p>${hibUrl}</p><p>Stand: 06.10.2026</p></footer></body></html>`;
+  const item=extractDiscoveryMetadata(html,hibUrl,hibSource);
+  assert.equal(item.published_at,'2026-10-02');
+  assert.equal(item.published_precision,'day');
+});

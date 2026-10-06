@@ -16,11 +16,46 @@ flock -w 30 9
 clock_key="${WOEK_CLOCK_KEY:-/home/ubuntu/.ssh/woek_wirkungsticker_clock}"
 clock_known_hosts="${WOEK_CLOCK_KNOWN_HOSTS:-/home/ubuntu/.ssh/woek_clock_known_hosts}"
 clock_now="$(date -u +%s)"
+clock_stale_lock_seconds="${WOEK_CLOCK_STALE_LOCK_SECONDS:-900}"
 export GIT_SSH_COMMAND="ssh -i $clock_key -o UserKnownHostsFile=$clock_known_hosts -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15"
 export GIT_AUTHOR_NAME="wirkungsticker-clock"
 export GIT_AUTHOR_EMAIL="wirkungsticker-clock@users.noreply.github.com"
 export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+
+recover_stale_git_lock() {
+  local lock_name="$1"
+  local lock_path="$clock_repo/$lock_name"
+  [[ -e "$lock_path" ]] || return 0
+
+  local lock_mtime lock_age archive_dir archive_path
+  lock_mtime="$(node -e 'const fs=require("node:fs");try{console.log(Math.floor(fs.statSync(process.argv[1]).mtimeMs/1000))}catch{process.exit(1)}' "$lock_path")"
+  if [[ ! "$lock_mtime" =~ ^[0-9]+$ ]]; then
+    echo "Cannot determine age of Git lock $lock_path; refusing recovery." >&2
+    return 75
+  fi
+  lock_age=$(( clock_now - lock_mtime ))
+  if (( lock_age < 0 || lock_age < clock_stale_lock_seconds )); then
+    echo "Git lock $lock_path is only ${lock_age}s old; refusing recovery." >&2
+    return 75
+  fi
+  if command -v fuser >/dev/null 2>&1 && fuser "$lock_path" >/dev/null 2>&1; then
+    echo "Git lock $lock_path is held by a process; refusing recovery." >&2
+    return 75
+  fi
+
+  archive_dir="${clock_repo}.stale-locks"
+  archive_path="$archive_dir/${lock_name//\//-}.$clock_now.$$"
+  mkdir -p "$archive_dir"
+  mv -- "$lock_path" "$archive_path"
+  echo "Recovered stale Git lock $lock_path (${lock_age}s old) to $archive_path."
+}
+
+# A killed shallow fetch can leave these empty lock files behind. The outer
+# wake lock serializes both clock lanes; an additional holder check protects
+# manual Git work. Archive old locks instead of deleting them silently.
+recover_stale_git_lock "shallow.lock"
+recover_stale_git_lock "gc.log.lock"
 
 if [[ "${WOEK_CLOCK_FORCE:-false}" != "true" ]]; then
   if [[ -f "$clock_state" ]]; then
