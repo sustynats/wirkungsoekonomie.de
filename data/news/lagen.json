@@ -1,7 +1,40 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-05T10:00:00.000Z",
+  "updated_at": "2026-10-06T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-06-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-06",
+      "window_from": "2026-10-05T16:00:00.000Z",
+      "window_to": "2026-10-06T04:00:00.000Z",
+      "stand": "2026-10-06T04:00:00.000Z",
+      "headline": "Das sind die 2 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 2,
+        "neu": 1,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Russland und Ukraine setzen gegenseitige Angriffe auf Infrastruktur fort",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T02:26:28.438Z",
+          "score": 9.6201
+        },
+        {
+          "story_id": "wt-f8eeece5c0b8234d",
+          "slug": "wegen-bombendrohung-stuttgarter-flughafen-kurzzeitig-lahmgelegt-tausende-menschen-betrof-b8234d",
+          "title": "Laut Polizei: Bombenbehauptung legt Stuttgarter Flughafen vorübergehend lahm",
+          "state": "neu",
+          "at": "2026-10-05T22:24:28.197Z",
+          "score": 5.534
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-05-mittagslage",
       "slot": "mittagslage",
