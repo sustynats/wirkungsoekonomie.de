@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-06T09:15:45.749Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-06T09:36:46.676Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -1373,7 +1373,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437/",
       "title": "Laut Tagesspiegel: Drei südkoreanische Offiziere bei Minenexplosion verletzt",
-      "summary": "Eine Explosion verletzte laut Tagesspiegel drei südkoreanische Offiziere; einer verlor seinen Fuß. Seoul kündigt Maßnahmen an, doch Hergang, Verantwortlichkeit und konkrete Schritte bleiben offen.",
+      "summary": "Eine Explosion verletzte laut Tagesspiegel drei südkoreanische Offiziere; einer verlor seinen Fuß. Südkorea kündigt Maßnahmen an, doch Verantwortlichkeit, Hergang und konkrete Schritte bleiben offen.",
       "date_published": "2026-09-29T07:05:47.000Z",
       "date_modified": "2026-09-29T07:05:47.000Z",
       "_woek_released_at": "2026-09-29T07:35:48.483Z",
@@ -1390,13 +1390,13 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
-          "direction": "negative",
+          "magnitude": 0,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 1,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         }
       }
@@ -2808,18 +2808,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
-          "direction": "open",
-          "status": "potential"
-        },
-        "planet": {
           "magnitude": 1,
           "direction": "open",
           "status": "potential"
         },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
         "democracy": {
-          "magnitude": 3,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
