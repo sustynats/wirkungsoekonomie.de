@@ -1,7 +1,56 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-05T04:00:00.000Z",
+  "updated_at": "2026-10-05T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-05-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-05",
+      "window_from": "2026-10-05T04:00:00.000Z",
+      "window_to": "2026-10-05T10:00:00.000Z",
+      "stand": "2026-10-05T10:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 1,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-05T07:49:43.367Z",
+          "score": 7.3881
+        },
+        {
+          "story_id": "wt-4ea25360d406eaef",
+          "slug": "ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef",
+          "title": "Gegenseitige Angriffe auf Infrastruktur und Industrieanlagen fortgesetzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-05T07:33:56.829Z",
+          "score": 7.3443
+        },
+        {
+          "story_id": "wt-eb66717f79b1067b",
+          "slug": "sportplatz-wachenbuchen-grenzt-an-sperrgebiet-wo-ein-fehlschuss-richtig-teuer-wird-b1067b",
+          "title": "Sperrgebiet neben Sportplatz: KeWa Wachenbuchen verliert Bälle",
+          "state": "neu",
+          "at": "2026-10-05T05:32:27.684Z",
+          "score": 5.2568
+        },
+        {
+          "story_id": "wt-0eb1ca5aac1439a2",
+          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
+          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in Sumy und Odessa",
+          "state": "fortgeschrieben",
+          "at": "2026-10-05T05:11:27.450Z",
+          "score": 8.9485
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-05-morgenlage",
       "slot": "morgenlage",
