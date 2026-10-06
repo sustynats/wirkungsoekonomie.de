@@ -17,7 +17,7 @@
   },
   "summary": {
     "registered_sources": 80,
-    "active_automated_sources": 48,
+    "active_automated_sources": 46,
     "trial_sources": 5,
     "coverage_good": 27,
     "coverage_partial": 12,
@@ -145,7 +145,6 @@
       "topic": "Energie",
       "coverage": "good",
       "active_sources": [
-        "bundesnetzagentur-presse",
         "bundestag-wirtschaft",
         "klimareporter-news",
         "dlf-wirtschaft"
@@ -156,7 +155,6 @@
       "topic": "Infrastruktur",
       "coverage": "good",
       "active_sources": [
-        "bundesnetzagentur-presse",
         "zdfheute-nachrichten",
         "dlf-nachrichten",
         "mdr-nachrichten"
@@ -167,7 +165,6 @@
       "topic": "kritische Infrastruktur",
       "coverage": "good",
       "active_sources": [
-        "bundesnetzagentur-presse",
         "heise-security",
         "zdfheute-nachrichten",
         "dlf-nachrichten"
@@ -1295,13 +1292,6 @@
       "trial_mode": false
     },
     {
-      "source_id": "bundesnetzagentur-presse",
-      "name": "Bundesnetzagentur - Pressemitteilungen",
-      "role": "A",
-      "cadence": "high_frequency",
-      "trial_mode": false
-    },
-    {
       "source_id": "umweltbundesamt-presse",
       "name": "Umweltbundesamt - Pressemitteilungen",
       "role": "A",
@@ -1325,13 +1315,6 @@
     {
       "source_id": "woek-journal",
       "name": "Journal der Wirkungsökonomie",
-      "role": "A",
-      "cadence": "high_frequency",
-      "trial_mode": false
-    },
-    {
-      "source_id": "woek-parlament-bewertungen",
-      "name": "Wirkungsportal Parlament - veröffentlichte WÖk-Bewertungen",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1586,8 +1569,22 @@
       "trial_mode": false
     },
     {
+      "source_id": "bundesnetzagentur-presse",
+      "name": "Bundesnetzagentur - Pressemitteilungen",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
       "source_id": "bmas-aktuell",
       "name": "Bundesministerium für Arbeit und Soziales",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "woek-parlament-bewertungen",
+      "name": "Wirkungsportal Parlament - veröffentlichte WÖk-Bewertungen",
       "role": "D",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -2000,7 +1997,7 @@
     },
     {
       "source_id": "bundesnetzagentur-presse",
-      "role": "A",
+      "role": "D",
       "trial_mode": false,
       "observation_status": "insufficient_window",
       "review_required": false,
@@ -2162,7 +2159,7 @@
     },
     {
       "source_id": "woek-parlament-bewertungen",
-      "role": "A",
+      "role": "D",
       "trial_mode": false,
       "observation_status": "insufficient_window",
       "review_required": false,
