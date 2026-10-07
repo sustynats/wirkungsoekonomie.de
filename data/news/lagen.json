@@ -1,7 +1,72 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-06T16:00:00.000Z",
+  "updated_at": "2026-10-07T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-07-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-07",
+      "window_from": "2026-10-06T16:00:00.000Z",
+      "window_to": "2026-10-07T04:00:00.000Z",
+      "stand": "2026-10-07T04:00:00.000Z",
+      "headline": "Das sind die 6 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 6,
+        "neu": 2,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine verletzt drei südkoreanische Offiziere",
+          "state": "fortgeschrieben",
+          "at": "2026-10-07T03:34:24.218Z",
+          "score": 7.7144
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Bericht stellt mögliche Warnungen vor Hamas-Angriff im Oktober 2023 infrage",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T20:51:27.182Z",
+          "score": 5.1548
+        },
+        {
+          "story_id": "wt-38bb06ddd2118de1",
+          "slug": "ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1",
+          "title": "Laut Bahnbetreiber: 5.831 Züge in der Ukraine wegen Drohnengefahr evakuiert",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T20:30:22.289Z",
+          "score": 7.1255
+        },
+        {
+          "story_id": "wt-3ce4932a9e05acae",
+          "slug": "einsatz-am-abend-schusse-am-stockholmer-schloss-polizei-nimmt-mann-fest-05acae",
+          "title": "Mann am Stockholmer Schloss verletzt, Hintergründe unklar",
+          "state": "neu",
+          "at": "2026-10-06T18:34:16.322Z",
+          "score": 5.3005
+        },
+        {
+          "story_id": "wt-e6925263df7c0a72",
+          "slug": "bombendrohung-am-stuttgarter-flughafen-das-droht-dem-24-jahrigen-7c0a72",
+          "title": "Bombendrohung am Stuttgarter Flughafen: Mögliche Folgen für den 24-Jährigen",
+          "state": "neu",
+          "at": "2026-10-06T18:12:07.469Z",
+          "score": 5.6835
+        },
+        {
+          "story_id": "wt-003d9a97b9ad5437",
+          "slug": "explodierte-nordkoreanische-mine-seoul-wertet-vorfall-im-grenzgebiet-als-verletzung-des--ad5437",
+          "title": "Laut Tagesspiegel: Explosion im koreanischen Grenzgebiet, Seoul kündigt Maßnahmen an",
+          "state": "fortgeschrieben",
+          "at": "2026-10-06T16:56:11.594Z",
+          "score": 8.828
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-06-abendlage",
       "slot": "abendlage",
