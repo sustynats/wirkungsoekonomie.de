@@ -56,7 +56,7 @@ export function loadBrowserSearchIndex(baseUrl) {
       // Compatibility for a locally served source checkout or an older release.
       return JSON.parse(new TextDecoder().decode(await checkedFetch(new URL('search-index.json', base))));
     }
-    if (manifest.schemaVersion !== 1 || manifest.json !== 'search-index.json' || !/^[a-f0-9]{16}$/.test(manifest.version)) throw new Error('Invalid search manifest');
+    if (manifest.schemaVersion !== 1 || manifest.json !== `browser-index-${manifest.version}.json` || !/^[a-f0-9]{16}$/.test(manifest.version)) throw new Error('Invalid search manifest');
     let bytes;
     if (typeof DecompressionStream !== 'undefined' && manifest.gzip === `browser-index-${manifest.version}.json.gz`) {
       try {
@@ -65,9 +65,9 @@ export function loadBrowserSearchIndex(baseUrl) {
       } catch (error) {
         // A stalled connection will not improve by downloading a larger file.
         if (error?.name === 'AbortError') throw error;
-        bytes = await checkedFetch(new URL(`${manifest.json}?v=${manifest.version}`, base));
+        bytes = await checkedFetch(new URL(manifest.json, base));
       }
-    } else bytes = await checkedFetch(new URL(`${manifest.json}?v=${manifest.version}`, base));
+    } else bytes = await checkedFetch(new URL(manifest.json, base));
     const entries = JSON.parse(new TextDecoder().decode(bytes));
     if (!Array.isArray(entries) || entries.length !== manifest.entries) throw new Error('Incomplete search index');
     return entries;

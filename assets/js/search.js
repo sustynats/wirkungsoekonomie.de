@@ -17,7 +17,7 @@
   const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
   const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
   const searchPageHref = siteLocale === "en" ? "/en/search/" : "/suche.html";
-  const searchDataVersion = "20260905-current-index";
+  const searchDataVersion = "20261007-fast-index";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
@@ -1287,7 +1287,8 @@
       state.associations = associations;
       state.entrypoints = entrypoints;
       state.ready = true;
-    })().catch(() => {
+    })().catch((error) => {
+      console.error("Search data could not be loaded.", error);
       status.textContent = i18n("Die Suche konnte nicht geladen werden. Bitte starte sie mit „Suchen“ erneut. Die Themenlinks bleiben verfügbar.", "Search could not be loaded. Please try Search again. Topic links remain available.");
     }).finally(() => {
       state.loading = null;

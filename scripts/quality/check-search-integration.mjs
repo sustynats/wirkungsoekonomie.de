@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { compactSearchEntries } from "../search/build-browser-search-index.mjs";
 
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
@@ -6,6 +7,7 @@ if (!fs.existsSync(indexPath)) throw new Error("Missing existing search index.")
 if (!fs.existsSync(metaPath)) throw new Error("Missing WÖk search meta.");
 
 const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+const browserIndex = compactSearchEntries(index);
 const urls = new Set();
 const errors = [];
 
@@ -35,10 +37,27 @@ const requiredTerms = [
   "wohnungsmarkt",
   "lieferkette",
   "digitaler produktpass",
+  "iooi",
 ];
 
 for (const term of requiredTerms) {
   if (!haystack.includes(term.toLowerCase())) errors.push(`No search hit for required term: ${term}`);
+}
+
+const browserHaystack = browserIndex
+  .map((entry) => `${entry.title} ${entry.description} ${entry.body} ${(entry.aliases || []).join(" ")}`)
+  .join("\n")
+  .toLowerCase();
+for (const term of requiredTerms) {
+  if (!browserHaystack.includes(term.toLowerCase())) errors.push(`No browser search hit for required term: ${term}`);
+}
+
+const browserIndexBytes = Buffer.byteLength(JSON.stringify(browserIndex));
+if (browserIndex.length < 1000) errors.push("Browser search index is unexpectedly small.");
+if (browserIndexBytes > 10 * 1024 * 1024) errors.push(`Browser search index exceeds 10 MiB: ${browserIndexBytes} bytes.`);
+if (browserIndex.some((entry) => String(entry.url || "").includes("#"))) errors.push("Browser search index contains fragment routes.");
+if (browserIndex.some((entry) => /^\/(?:bibliothek|quellenarchiv)\/.+/.test(String(entry.url || "")))) {
+  errors.push("Browser search index contains archive detail routes.");
 }
 
 if (!index.some((entry) => String(entry.id || "").startsWith("woek-term-"))) {
@@ -50,5 +69,10 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Search integration check passed for ${index.length} entries.`);
-
+console.log(
+  `Search integration check passed for ${index.length} full entries and ${browserIndex.length} browser entries (${(
+    browserIndexBytes /
+    1024 /
+    1024
+  ).toFixed(2)} MiB).`,
+);

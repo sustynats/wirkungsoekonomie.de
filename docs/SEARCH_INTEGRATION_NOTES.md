@@ -10,6 +10,7 @@ Relevante Dateien:
 
 - `suche.html`: bestehende Suchseite und Filter-UI.
 - `assets/js/search.js`: Suchlogik, Normalisierung, Synonyme, Filter, Scoring, Ergebnisdarstellung.
+- `assets/js/search-index-loader.js`: lädt den kompakten, versionierten Browserindex mit Timeout und Kompatibilitätsrückfall.
 - `assets/search/search-index.json`: zentraler Suchindex.
 - `assets/search/search-dictionary.json`: Synonyme, Aliasbegriffe und Begriffsassoziationen.
 - `assets/search/search-associations.json`: verwandte Suchkontexte.
@@ -56,7 +57,9 @@ Der Adapter `scripts/search/build-woek-search-index.mjs` erzeugt Suchdokumente a
 - `src/content/docs/**`
 - statischen Referenzseiten unter `/referenz/`, `/referenz/volltext/`, `/referenz/kapitel-.../`, `/referenz/teil-.../`, `/dokumente/`, `/begriffe/`, `/instrumente/`, `/beispiele/`, `/quellen/`, `/export/`, soweit vorhanden
 
-Die erzeugten Suchtreffer werden in `assets/search/search-index.json` im bestehenden Format ergänzt. Es entsteht keine zweite Suchdatei für die sichtbare Suche.
+Die erzeugten Suchtreffer werden in `assets/search/search-index.json` im bestehenden Format ergänzt. Der vollständige Index bleibt die fachliche Quelle und wird nicht direkt von der sichtbaren Suche verarbeitet.
+
+`scripts/search/build-browser-search-index.mjs` bündelt Abschnittstreffer je Seite, lässt Detaileinträge der großen Bibliotheks- und Quellenarchive aus und erzeugt daraus eine inhaltsadressierte JSON- und Gzip-Datei. Die Suchseite lädt bevorzugt die komprimierte Fassung; ältere Browser erhalten dieselbe kompakte JSON-Fassung. Der Qualitätscheck begrenzt den entpackten Browserindex auf 10 MiB und prüft die Pflichtbegriffe.
 
 Stand Phase 1 Live-Reference-Abschluss:
 
