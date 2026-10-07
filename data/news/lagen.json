@@ -1,7 +1,48 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-07T04:00:00.000Z",
+  "updated_at": "2026-10-07T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-07-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-07",
+      "window_from": "2026-10-07T04:00:00.000Z",
+      "window_to": "2026-10-07T10:00:00.000Z",
+      "stand": "2026-10-07T10:00:00.000Z",
+      "headline": "Das sind die 3 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 3,
+        "neu": 0,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine im koreanischen Grenzgebiet verletzt südkoreanische Offiziere",
+          "state": "fortgeschrieben",
+          "at": "2026-10-07T08:15:13.512Z",
+          "score": 7.459
+        },
+        {
+          "story_id": "wt-fbeee8eda9c20888",
+          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
+          "title": "Laut DER SPIEGEL: Bericht zu Warnungen vor Hamas-Angriff erhöht Druck auf Netanyahu",
+          "state": "fortgeschrieben",
+          "at": "2026-10-07T07:00:33.967Z",
+          "score": 5.2516
+        },
+        {
+          "story_id": "wt-38bb06ddd2118de1",
+          "slug": "ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1",
+          "title": "Laut Bahnbetreiber: 5.831 Züge in der Ukraine wegen Drohnengefahr evakuiert",
+          "state": "fortgeschrieben",
+          "at": "2026-10-07T06:37:37.350Z",
+          "score": 9.1878
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-07-morgenlage",
       "slot": "morgenlage",
