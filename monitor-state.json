@@ -16,6 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-07T06:51:02.259Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-07T08:05:47.225Z",
+      "active": false
+    },
+    "queue": {
+      "firstSeen": "2026-10-07T08:05:47.225Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2405,7 +2413,7 @@
       }
     },
     "last_new_at": "2026-10-06T13:21:05.425Z",
-    "checked_at": "2026-10-07T07:51:12.655Z",
+    "checked_at": "2026-10-07T08:05:47.225Z",
     "last_current_new_at": "2026-10-06T13:21:05.425Z"
   },
   "recovery_attempts": [
