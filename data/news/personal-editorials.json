@@ -4764,6 +4764,64 @@
       "published_at": "2026-10-06T18:17:09.134Z",
       "revision": 1,
       "content_hash": "7b1f31ebf2b79d09cd4c1d166bae44246a525da91c1932755c1069a83955e800"
+    },
+    {
+      "analysis_id": "woek-personal-d6361b682c7be899",
+      "slug": "wenn-der-digitale-ernstfall-kommt-muss-der-alltag-weitergehen-d6361b",
+      "format": "approved_editorial",
+      "subtype": "listened",
+      "manual_only": true,
+      "title": "Wenn der digitale Ernstfall kommt, muss der Alltag weitergehen",
+      "subtitle": "Nachgehört: Sascha Lobo spricht mit Harald Mannheim über Cyberresilienz, IT-Survivability und digitale Souveränität",
+      "body_markdown": "## Worum es in der Folge geht\n\nEin Supermarkt öffnet, obwohl in Teilen Berlins der Strom ausgefallen ist. Die Filiale wird beliefert, gekühlt und beheizt; auch das Kassensystem funktioniert weiter. Harald Mannheim nutzt dieses Beispiel im Gespräch mit Sascha Lobo, um einen Begriff zu erklären, der über klassische IT-Sicherheit hinausgeht: IT-Survivability. Nicht jeder Angriff muss verhindert werden können. Entscheidend ist auch, ob die Grundfunktion danach weiterläuft.\n\nDie Folge „Überleben im digitalen Ernstfall“ erschien am 7. Oktober 2026. Sie entstand in Zusammenarbeit mit Schwarz Digits. Das ist für die Einordnung wichtig: Mannheim spricht aus einer beruflichen Perspektive, die Bundeswehr, wehrtechnische Industrie und die IT- und Logistikinteressen der Schwarz-Gruppe verbindet. Unternehmensinteressen und unabhängige Belege sind deshalb getrennt zu betrachten.\n\n## Das Originalargument\n\nMannheim unterscheidet zwischen Schutz und Überlebensfähigkeit. IT-Sicherheit soll Angriffe abwehren. IT-Survivability beginnt dort, wo ein Angriff erfolgreich war: Systeme erkennen den Vorfall, begrenzen den Schaden, sichern Daten und halten die wichtigsten Funktionen aufrecht. Als Beispiele nennt er den Weiterbetrieb einer einzelnen Filiale und Behörden, die ihre Kernleistungen auch dann anbieten können, wenn Komfort- oder Randfunktionen ausfallen (ab 14:54 bis 16:31).\n\nSascha Lobo führt diese Idee mit dem Bild eines Fahrzeugs weiter, das nach einem beschädigten Luftreifen auf einer inneren Notlaufkonstruktion weiterfahren kann (ab 16:48 bis 18:09). Das Bild ist anschaulich, aber es bleibt eine Analogie. Ein digitales System ist kein Reifen; welche Grundfunktion tatsächlich geschützt werden kann, hängt von Architektur, Personal, Energieversorgung, Ersatzwegen und Zuständigkeiten ab.\n\nDie Folge verschiebt den Blick außerdem von einzelnen Unternehmen auf gekoppelte Systeme. Lebensmittelhandel, Logistik, Behörden, Energie, Wasser und Verteidigung hängen an digitalen Schnittstellen. Fällt eine Schnittstelle aus, kann der Schaden weiterwandern. Das Gespräch beschreibt deshalb nicht nur Cyberabwehr, sondern eine Architektur des Weiterfunktionierens.\n\n## Ein Beispiel für Verwundbarkeit\n\nAls historische Fallgeschichte wird der Angriff auf Maersk im Jahr 2017 erzählt. Nach dem Angriff mit Petya beziehungsweise NotPetya waren große Teile der IT-Infrastruktur nicht verfügbar. Ein Domain Controller in Ghana blieb offenbar deshalb unberührt, weil er wegen eines Stromausfalls vom Netz getrennt war. Diese Kopie half bei der Wiederherstellung. Der entscheidende Punkt ist nicht das glückliche Ereignis, sondern die Schwäche eines Systems, dessen redundante Komponenten gemeinsam ausfallen konnten.\n\nDie offizielle Maersk-Mitteilung bestätigt den Angriff vom 27. Juni 2017, den Ausfall mehrerer IT-Systeme und die eingeleiteten Maßnahmen zur Wiederherstellung. Die Geschichte vom erhalten gebliebenen Domain Controller wird durch unabhängige technische Darstellungen gestützt. Sie ist daher als Fallbeispiel belastbar; sie beweist aber nicht, dass jede Cloud- oder Backup-Architektur auf dieselbe Weise verwundbar ist.\n\n## Was digitale Souveränität hier bedeutet\n\nIm Gespräch bedeutet digitale Souveränität nicht Abschottung. Mannheim beschreibt sie als Fähigkeit, wichtige Systeme selbstbestimmt zu betreiben, Datenflüsse zu kontrollieren und im Krisenfall nicht vollständig von einer einzelnen fremden Infrastruktur abhängig zu sein (ab 34:35 bis 38:50 und ab 50:58 bis 51:38).\n\nDas führt zu einem echten Zielkonflikt: Daten müssen verfügbar bleiben, dürfen aber nicht beliebig verteilt werden. Redundanz kann die Wiederherstellung verbessern und zugleich die Angriffsfläche vergrößern. Ein Backup ist nur dann eine Schutzmaßnahme, wenn es erreichbar, wiederherstellbar und gegen denselben Angriff abgesichert ist. Mehr Datenkopien bedeuten nicht automatisch mehr Souveränität.\n\n## Wirkpfad: vom Angriff zur gesellschaftlichen Handlungsfähigkeit\n\nEin Angriff auf eine digitale Schnittstelle → Ausfall oder Einschränkung einer Grundfunktion → Verzögerungen bei Handel, Verwaltung oder Versorgung → Belastungen für Menschen und Vertrauensverlust in staatliche Handlungsfähigkeit.\n\nDieser Pfad ist als bedingte Wirkannahme einzuordnen. Die Folge belegt die einzelnen technischen Prinzipien und nennt konkrete Beispiele; sie misst jedoch nicht, wie häufig ein solcher Kaskadenverlauf eintritt oder welche gesellschaftlichen Folgen ein konkreter Angriff hätte.\n\nEine Gegenarchitektur kann anders verlaufen: vorbereitete Ausweichwege und dezentrale Grundfunktionen → begrenzter Ausfall einzelner Komfort- oder Randfunktionen → Weiterbetrieb zentraler Leistungen → bessere Bewältigungsfähigkeit für Betroffene und Institutionen.\n\nAuch dieser positive Pfad ist ein Potenzial, keine beobachtete Folge der besprochenen Maßnahmen. Die Bundeswehr-Übung „Red Storm Charlie“ in Hamburg zeigt, dass zivile Behörden, Bundeswehr und Unternehmen solche Krisenabläufe gemeinsam erproben. Dass eine Übung stattfindet, belegt aber noch nicht, dass die Systeme im Ernstfall ausreichend funktionieren. Entscheidend wären dokumentierte Auswertungen, behobene Schwachstellen und wiederholte Tests.\n\n## Mensch, Planet und Demokratie\n\n### Mensch\n\nDer unmittelbarste Pfad betrifft die Versorgung und erreichbare Hilfe. Wenn Kassen, Logistik, Behörden oder Kommunikationswege ausfallen, können Menschen nicht nur Komfort verlieren. Sie können Schwierigkeiten beim Einkauf, bei Anträgen, bei medizinischer Versorgung oder bei der Kommunikation mit Behörden bekommen. Besonders belastet wären Menschen, die auf digitale Dienste, Assistenz, Pflege oder erreichbare staatliche Hilfe angewiesen sind. Die Folge benennt diese Dimension, liefert aber keine belastbare Verteilungsanalyse nach Einkommen, Alter, Behinderung oder Geschlecht.\n\n### Planet\n\nDer Beitrag behandelt Planet-Folgen nur indirekt. Digitale Resilienz kann helfen, Logistik, Energie- und Wasserversorgung auch unter Störungen zu steuern. Zugleich benötigen redundante Rechenzentren, Kommunikationswege und Notfallinfrastrukturen zusätzliche Hardware und Energie. Ob ein konkretes Konzept netto positive oder negative Umweltwirkungen hätte, bleibt offen. Dafür fehlen im Gespräch Daten zu Energieverbrauch, Materialeinsatz, Lebensdauer und Ersatzbeschaffung.\n\n### Demokratie\n\nHier liegt eine zentrale Wirkungsidee der Folge. Wenn staatliche Kernleistungen trotz einer Krise sichtbar, verständlich und verlässlich weiterlaufen, kann das Vertrauen in Institutionen stabilisiert werden. Wenn Dienste dagegen ausfallen und niemand erklärt, was passiert, kann Unsicherheit wachsen. Diese Kommunikationswirkung ist von der technischen Ereigniswirkung zu trennen. Eine verständliche Fehlermeldung oder ein erreichbarer Krisenkanal ersetzt keine funktionierende Infrastruktur, kann aber die Orientierung verbessern.\n\nDie Folge warnt zugleich vor Panikkommunikation. Mannheim beschreibt ab etwa 12:06 bis 14:18, dass Problembewusstsein ohne erkennbare Handlungsmöglichkeiten in Resignation umschlagen kann. Das ist als plausibler Kommunikationsmechanismus nachvollziehbar. Die Sendung liefert dafür jedoch keine eigene Studie. Die Aussage bleibt deshalb eine begründete, aber nicht empirisch belegte Gesprächshypothese.\n\n## Was die Folge offenlässt\n\nDie Gesprächspartner sprechen viel über Vorsorge, Budget und Zuständigkeit. Weniger konkret wird, welche Mindestfunktionen in Deutschland verbindlich priorisiert werden sollen, wer sie im Krisenfall garantiert und wie Zielkonflikte entschieden werden. Offen bleibt auch, wie digitale Souveränität mit europäischen Abhängigkeiten, internationalen Lieferketten und der notwendigen Zusammenarbeit mit privaten Unternehmen verbunden werden soll.\n\nEbenso offen ist die Attribution einzelner Angriffe. Der Beitrag spricht über feindliche Mächte, hybride Konflikte und Cyberkrieg, ohne für einen konkreten aktuellen Angriff einen belastbaren Urheber festzustellen. Das ist sachlich angemessen. Bedrohungspotenzial und Attribution dürfen nicht verwechselt werden.\n\n## Meine Einordnung\n\nDie stärkste Einsicht dieser Folge liegt nicht in der Warnung vor dem nächsten spektakulären Angriff. Sie liegt in der nüchternen Frage, was danach noch funktionieren muss.\n\nEin System ist nicht resilient, weil es besonders modern aussieht. Es ist resilient, wenn Menschen trotz eines Ausfalls noch einkaufen, Hilfe erreichen, staatliche Leistungen beantragen, sich informieren und einander versorgen können. Dafür braucht es technische Schutzmaßnahmen. Es braucht aber ebenso klare Prioritäten, geübte Ausweichwege, verantwortliche Institutionen und verständliche Kommunikation.\n\nDer Begriff „digitale Souveränität“ wird in der Folge dann überzeugend, wenn er nicht als Werbeformel für nationale Abschottung dient, sondern als Schutz der Handlungsfähigkeit. Genau dort endet allerdings auch die Beweiskraft des Gesprächs. Es zeigt Mechanismen und plausible Wirkpfade. Es zeigt keine unabhängige Gesamtbilanz der vorgestellten Unternehmenslösungen und keine Messung, wie gut Deutschland oder Europa für den digitalen Ernstfall vorbereitet sind.\n\nFür die Wirkungsökonomie ist deshalb eine klare Trennung notwendig: Ein Angriff ist ein Risiko oder Ereignis. Eine vorbereitete Ausweicharchitektur ist ein Wirkungspotenzial. Der Weiterbetrieb einer konkreten Filiale oder eines konkreten Dienstes wäre eine beobachtete Folge. Diese Ebenen dürfen nicht zu einer einzigen Erfolgserzählung verschmelzen.\n\nTrotz dieser Grenze ist die Folge relevant. Sie macht verständlich, warum Cyberresilienz nicht nur ein Thema für Sicherheitsabteilungen ist. Sie betrifft Kassen, Lager, Behörden, Wasserwerke, Kommunikationswege und das Vertrauen, dass ein Gemeinwesen auch unter Druck handlungsfähig bleibt.",
+      "sources": [
+        {
+          "url": "https://tech-ki.podigee.io/77-uberleben-im-digitalen-ernstfall-mit-harald-mannheim",
+          "title": "Überleben im digitalen Ernstfall (mit Harald Mannheim) – Tech, KI & Schmetterlinge",
+          "publisher": "Tech, KI & Schmetterlinge / Podigee"
+        },
+        {
+          "url": "https://main.podigee-cdn.net/uploads/u10288/e04e65f0-085a-486e-9e2e-104938dad2af.vtt",
+          "title": "Offizielles Transkript der Folge",
+          "publisher": "Podigee"
+        },
+        {
+          "url": "https://www.stromnetz.berlin/uber-uns/presse/pressemitteilungen-2026/strom-ist-fur-alle-wieder-da/",
+          "title": "Strom ist für alle wieder da",
+          "publisher": "Stromnetz Berlin"
+        },
+        {
+          "url": "https://investor.maersk.com/da/news-releases/news-release-details/cyber-attack-update",
+          "title": "Cyber attack update",
+          "publisher": "A.P. Møller – Mærsk"
+        },
+        {
+          "url": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/216635816/200630_Report_WP_5_final.pdf",
+          "title": "CyberShip Project: Work Package 5 Report",
+          "publisher": "Technical University of Denmark"
+        },
+        {
+          "url": "https://www.bundeswehr.de/de/organisation/operatives-fuehrungskommando-der-bundeswehr/landeskommando/hamburg/uebung-red-storm-charlie",
+          "title": "Red Storm Charlie: Bundeswehr-Übung 2026 in Hamburg",
+          "publisher": "Bundeswehr"
+        },
+        {
+          "url": "https://diia.gov.ua/",
+          "title": "Дія – staatliche Online-Dienste",
+          "publisher": "Ministerium für digitale Transformation der Ukraine"
+        }
+      ],
+      "visual": null,
+      "source_media": {
+        "show": "Tech, KI & Schmetterlinge",
+        "episode_title": "Überleben im digitalen Ernstfall (mit Harald Mannheim) - Tech, KI & Schmetterlinge",
+        "original_release_date": "2026-10-07",
+        "original_url": "https://tech-ki.podigee.io/77-uberleben-im-digitalen-ernstfall-mit-harald-mannheim",
+        "duration": "82 Minuten"
+      },
+      "published_at": "2026-10-07T05:34:38.018Z",
+      "revision": 1,
+      "content_hash": "58fc32be7d56af6f09c7613d9b84e02d20d8c490243165f64765b92d5c4fe2cf"
     }
   ]
 }
