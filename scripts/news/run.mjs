@@ -1940,9 +1940,11 @@ export async function runWirkungsticker(options = {}) {
           continue;
         }
         const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
+        const providerBillingBlocked = /^AI_PROVIDER_(?:CREDIT_BALANCE_EXHAUSTED|SPEND_LIMIT_REACHED|QUOTA_EXHAUSTED)$/.test(reason);
         const providerRateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
         const rateLimited = budgetBlocked || providerRateLimited;
-        const deferred = rateLimited ? selected.slice(offset) : batch;
+        const deferred = rateLimited || providerBillingBlocked ? selected.slice(offset) : batch;
+        if (providerBillingBlocked) report.ai_provider_billing_blocked = true;
         if (budgetBlocked) {
           report.budget_blocked = true;
           report.budget_block_scope = ['news', 'shared'].includes(error.budgetScope) ? error.budgetScope : 'unknown';
@@ -1961,7 +1963,7 @@ export async function runWirkungsticker(options = {}) {
         // Ein ausgeschöpftes Client-Limit sperrt alle weiteren Aufrufe dieses
         // Laufs. Bei 5xx/Timeout ist dagegen nur die betroffene Story vertagt;
         // die übrigen vier reservierten Slots dürfen unabhängig weiterarbeiten.
-        if (rateLimited) break;
+        if (rateLimited || providerBillingBlocked) break;
       }
     }
   } else {
