@@ -23,7 +23,9 @@ export function schreibeLage({ slot, now = new Date().toISOString(), root = ROOT
   if (!lageDefinition(gewaehlt)) return { status: 'slot_unbekannt', slot: gewaehlt };
   const stories = (readRepositoryJson(storiesFile, 'utf8').stories || [])
     .filter((story) => story.published && story.analysis && story.listed !== false);
-  const lage = buildLage({ slot: gewaehlt, now, stories });
+  const reportFile = path.join(root, 'reports/wirkungsticker-latest-run.json');
+  const report = fs.existsSync(reportFile) ? readRepositoryJson(reportFile, 'utf8') : undefined;
+  const lage = buildLage({ slot: gewaehlt, now, stories, report });
   if (!lage) return { status: 'fenster_unlesbar', slot: gewaehlt, now };
   const vorher = fs.existsSync(lagenFile) ? readRepositoryJson(lagenFile, 'utf8') : { lagen: [] };
   const store = upsertLage(vorher, lage, { now });

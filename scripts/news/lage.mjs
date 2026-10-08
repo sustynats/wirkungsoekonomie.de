@@ -167,20 +167,34 @@ export function lageEntries({ stories = [], window: fenster, max = MAX_ENTRIES }
 }
 
 // Deterministischer Text, kein Modellaufruf. Die Zahl ist gezaehlt, nicht
-// geschaetzt, und null Entwicklungen sind eine Aussage, keine Leerstelle
-// (Natalie: „Seit 12 Uhr gab es zu diesem großen Thema keine belastbare neue
-// Entwicklung." ist journalistisch wertvoller als ein erfundener Artikel).
+// The list measures publication, not the absence of relevant events. A blocked
+// processor must never turn an empty edition into an editorial all-clear.
 export function lageHeadline({ entries = [], window: fenster } = {}) {
   const since = fenster?.since || 'seit dem letzten Stand';
-  if (!entries.length) return `Keine belastbare neue Entwicklung ${since}.`;
+  if (!entries.length) return `Noch keine neue Nachricht ${since} veröffentlicht.`;
   if (entries.length === 1) return `Das ist die eine Entwicklung, die ${since} wirkungsrelevant geworden ist.`;
   return `Das sind die ${entries.length} Entwicklungen, die ${since} wirkungsrelevant geworden sind.`;
 }
 
-export function buildLage({ slot, now, stories = [], max = MAX_ENTRIES } = {}) {
+export function lageProcessingStatus(report, now) {
+  const checkedAt = report?.completed_at || report?.started_at;
+  const age = Date.parse(now) - Date.parse(checkedAt);
+  if (!Number.isFinite(age) || age < 0 || age > 2 * 3600000) return null;
+  const providerBlocked = report.ai_provider_degraded || report.ai_provider_billing_blocked || report.ai_error;
+  const limited = Number(report.pending_story_count || 0) > 0 && (report.budget_blocked || report.ai_budget_pacing?.paused
+    || report.ai_calls_available_this_run === 0 && Number(report.eligible_stories || 0) > 0);
+  const sourceBlocked = Number(report.source_failures || 0) > 0 && !Number(report.source_successes || 0);
+  if (!providerBlocked && !limited && !sourceBlocked) return null;
+  return { state: providerBlocked ? 'provider_unavailable' : sourceBlocked ? 'source_unavailable' : 'processing_limited',
+    checked_at: checkedAt,
+    note: 'Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt.' };
+}
+
+export function buildLage({ slot, now, stories = [], max = MAX_ENTRIES, report } = {}) {
   const fenster = lageWindow(slot, now);
   if (!fenster) return null;
   const entries = lageEntries({ stories, window: fenster, max });
+  const processing = lageProcessingStatus(report, now);
   return {
     lage_id: lageId(fenster.isoDate, slot),
     slot, label: fenster.label, date: fenster.isoDate,
@@ -190,6 +204,7 @@ export function buildLage({ slot, now, stories = [], max = MAX_ENTRIES } = {}) {
     counts: { total: entries.length, neu: entries.filter((e) => e.state === 'neu').length,
       fortgeschrieben: entries.filter((e) => e.state === 'fortgeschrieben').length },
     entries,
+    ...(processing ? { processing_status: processing } : {}),
   };
 }
 
