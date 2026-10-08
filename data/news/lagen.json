@@ -10,13 +10,18 @@
       "window_from": "2026-10-07T16:00:00.000Z",
       "window_to": "2026-10-08T04:00:00.000Z",
       "stand": "2026-10-08T04:00:00.000Z",
-      "headline": "Keine belastbare neue Entwicklung seit gestern Abend.",
+      "headline": "Noch keine neue Nachricht seit gestern Abend veröffentlicht.",
       "counts": {
         "total": 0,
         "neu": 0,
         "fortgeschrieben": 0
       },
-      "entries": []
+      "entries": [],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-08T05:55:21.367Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
     },
     {
       "lage_id": "2026-10-07-abendlage",

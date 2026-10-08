@@ -45,7 +45,7 @@ test('keine Entwicklung wird als Aussage gezeigt, nicht als Leerstelle', () => {
   const html = startseite([lage('abendlage', 'Abendlage', '2026-09-17T16:00:00.000Z',
     'Keine belastbare neue Entwicklung seit 12 Uhr.', { total: 0, neu: 0, fortgeschrieben: 0 })]);
   assert.match(html, /Keine belastbare neue Entwicklung seit 12 Uhr\./);
-  assert.match(html, /keine belastbare neue Entwicklung<\/p>/);
+  assert.match(html, /noch keine neue Nachricht veröffentlicht<\/p>/);
 });
 
 test('ohne Ablage entsteht kein Abschnitt und nichts bricht', () => {
@@ -54,4 +54,12 @@ test('ohne Ablage entsteht kein Abschnitt und nichts bricht', () => {
     assert.ok(!html.includes('ticker-home-lagen'), 'kein leerer Rahmen');
     assert.match(html, /Aktuelle Meldungen/, 'die Startseite bleibt vollständig');
   }
+});
+
+test('eine blockierte Nachrichtenverarbeitung wird nicht als Nachrichtenleere ausgegeben', () => {
+  const value = lage('morgenlage', 'Morgenlage', '2026-09-17T04:00:00.000Z', 'Noch keine neue Nachricht seit gestern Abend veröffentlicht.', { total: 0 });
+  value.processing_status = { note: 'Verarbeitung ausstehend <geprüft>', state: 'processing_limited' };
+  const html = startseite([value]);
+  assert.match(html, /Verarbeitung verzögert/); assert.match(html, /role="status">Verarbeitung ausstehend &lt;geprüft&gt;/);
+  assert.doesNotMatch(html, /keine belastbare neue Entwicklung/);
 });
