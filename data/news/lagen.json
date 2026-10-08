@@ -1,7 +1,136 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-08T10:00:00.000Z",
+  "updated_at": "2026-10-08T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-08-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-08",
+      "window_from": "2026-10-08T10:00:00.000Z",
+      "window_to": "2026-10-08T16:00:00.000Z",
+      "stand": "2026-10-08T16:00:00.000Z",
+      "headline": "Das sind die 14 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 14,
+        "neu": 12,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt in Kraft, Preise zunächst um 10 bis 11 Cent gefallen – laut SWR",
+          "state": "fortgeschrieben",
+          "at": "2026-10-08T15:41:56.522Z",
+          "score": 6.1998
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer nordkoreanischen Mine verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-08T15:40:45.599Z",
+          "score": 7.6966
+        },
+        {
+          "story_id": "wt-f48d6d6c32cc2014",
+          "slug": "kriminalitat-eine-tote-bei-angriff-in-schule-in-polen-cc2014",
+          "title": "Laut Berichten: Eine Tote bei Angriff an polnischer Schule",
+          "state": "neu",
+          "at": "2026-10-08T14:57:44.552Z",
+          "score": 5.8271
+        },
+        {
+          "story_id": "wt-4239e1ac47da2d70",
+          "slug": "baden-wurttemberg-polizei-erschiesst-mann-vor-rathaus-von-tuttlingen-da2d70",
+          "title": "Tödlicher Schusswechsel vor dem Rathaus von Tuttlingen",
+          "state": "neu",
+          "at": "2026-10-08T14:33:58.092Z",
+          "score": 8
+        },
+        {
+          "story_id": "wt-bc2c0105e158ffe7",
+          "slug": "in-der-oberpfalz-anwohner-sollen-nach-schussgerauschen-in-hausern-bleiben-58ffe7",
+          "title": "Laut stern: Schussähnliche Geräusche lösen Einsatz in der Oberpfalz aus",
+          "state": "neu",
+          "at": "2026-10-08T13:26:43.361Z",
+          "score": 3.5742
+        },
+        {
+          "story_id": "wt-e41ebe1d15f02bab",
+          "slug": "krieg-gegen-die-ukraine-viele-tote-nach-russischem-angriff-auf-bus-in-der-ostukraine-f02bab",
+          "title": "Viele Tote nach Busangriff in der Ostukraine, laut Deutschlandfunk",
+          "state": "neu",
+          "at": "2026-10-08T13:04:45.618Z",
+          "score": 8.0132
+        },
+        {
+          "story_id": "wt-eabcb3a75f40425e",
+          "slug": "am-rathaus-tuttlingen-sind-schusse-gefallen-40425e",
+          "title": "Laut Polizei: 27-Jähriger stirbt nach Schüssen am Rathaus in Tuttlingen",
+          "state": "neu",
+          "at": "2026-10-08T12:25:18.265Z",
+          "score": 9.5803
+        },
+        {
+          "story_id": "wt-cbf73c112dc69236",
+          "slug": "polizeieinsatz-schusse-in-tuttlingen-lage-unklar-c69236",
+          "title": "Tödlicher Polizeieinsatz in Tuttlingen: Ablauf und Folgen bleiben offen",
+          "state": "neu",
+          "at": "2026-10-08T12:24:27.304Z",
+          "score": 5.7646
+        },
+        {
+          "story_id": "wt-c8996796a8809c37",
+          "slug": "grossangriff-an-putins-geburtstag-viele-tote-in-der-ukraine-809c37",
+          "title": "Schwere russische Angriffe treffen Kiew und weitere Regionen der Ukraine",
+          "state": "neu",
+          "at": "2026-10-08T12:03:48.495Z",
+          "score": 9.8439
+        },
+        {
+          "story_id": "wt-5ce15fef6b37179b",
+          "slug": "nach-warnung-selenskyjs-neue-russische-angriffe-auf-kiew-37179b",
+          "title": "Laut Medienberichten: Neue russische Angriffe auf Kiew nach Warnung Selenskyjs",
+          "state": "neu",
+          "at": "2026-10-08T11:20:35.527Z",
+          "score": 9.2239
+        },
+        {
+          "story_id": "wt-633ce379a45a8c5d",
+          "slug": "kriminalitat-eine-tote-bei-angriff-in-schule-in-polen-5a8c5d",
+          "title": "Eine Tote bei Messerangriff an polnischer Schule",
+          "state": "neu",
+          "at": "2026-10-08T10:43:21.774Z",
+          "score": 5.1205
+        },
+        {
+          "story_id": "wt-674fd7c83613c36d",
+          "slug": "russlands-google-drohnenangriff-beschadigt-jandex-rechenzentrum-13c36d",
+          "title": "Laut Jandex: Drohnenangriff beschädigt Rechenzentrum",
+          "state": "neu",
+          "at": "2026-10-08T10:41:32.139Z",
+          "score": 5.1154
+        },
+        {
+          "story_id": "wt-02b08f7f71ec905d",
+          "slug": "krieg-gegen-die-ukraine-ukraine-beschadigt-russisches-datenzentrum-ec905d",
+          "title": "Laut Deutschlandfunk: Ukraine legt russisches Yandex-Rechenzentrum lahm",
+          "state": "neu",
+          "at": "2026-10-08T10:20:23.529Z",
+          "score": 7.0566
+        },
+        {
+          "story_id": "wt-6c7d0fdc5154dce6",
+          "slug": "eine-tote-bei-erneutem-messerangriff-an-schule-in-polen-15-jahriger-festgenommen-54dce6",
+          "title": "Tote bei Messerangriff an Schule nahe Warschau",
+          "state": "neu",
+          "at": "2026-10-08T10:19:11.400Z",
+          "score": 9.0533
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-08-mittagslage",
       "slot": "mittagslage",
