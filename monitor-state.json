@@ -8,13 +8,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-08T14:51:38.051Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-08T16:50:36.284Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "eb2de75c85757624ae385169",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-08T17:21:17.353Z"
+    }
+  ],
   "dailyDate": "2026-10-08",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2462,11 +2463,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-eine-tote-bei-angriff-in-schule-in-polen-cc2014/": {
         "first_seen_at": "2026-10-08T15:36:08.913Z",
         "source_at": "2026-10-08T09:46:52.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/baden-wurttemberg-polizei-erschiesst-27-jahrigen-an-tuttlinger-rathaus-517fc2/": {
+        "first_seen_at": "2026-10-08T17:21:17.353Z",
+        "source_at": "2026-10-08T15:56:32.000Z"
       }
     },
-    "last_new_at": "2026-10-08T15:36:08.913Z",
-    "checked_at": "2026-10-08T17:05:39.090Z",
-    "last_current_new_at": "2026-10-08T15:36:08.913Z"
+    "last_new_at": "2026-10-08T17:21:17.353Z",
+    "checked_at": "2026-10-08T17:21:17.353Z",
+    "last_current_new_at": "2026-10-08T17:21:17.353Z"
   },
   "recovery_attempts": [
     {
