@@ -294,6 +294,34 @@ Push (`--finalize`). Eine gestörte Redaktion hält den Nachrichtenlauf nie an.
 
 ## Prüfen
 
+### Betriebsbefund und Korrektur vom 08.10.2026
+
+Eine leere Lage beschreibt den Veröffentlichungsstand, nicht das Fehlen
+relevanter Ereignisse. Die bisherige Aussage „Keine belastbare neue Entwicklung“
+war bei ausgefallener Verarbeitung irreführend. Neue leere Ausgaben sagen jetzt
+„Noch keine neue Nachricht ... veröffentlicht“. Ein frischer Laufbericht
+(höchstens zwei Stunden alt, nicht aus der Zukunft) ergänzt bei Anbieter-,
+Quellen- oder Verarbeitungssperren einen sachlichen Verzögerungshinweis.
+Historische Lageüberschriften, Nachrichten und Freigaben werden nicht pauschal
+umgeschrieben. Die Startseite und die Detailseite verwenden dieselbe Information.
+
+Der direkte OpenAI-Transport unterscheidet die expliziten 429-Abweisungen
+`credit_balance_exhausted`, Organisations-/Projekt-Ausgabengrenzen und
+`insufficient_quota` von vorübergehenden Ratenbegrenzungen. Bei einer solchen
+Abweisung erfolgt kein zweiter Transportversuch und kein weiterer
+Nachrichtenaufruf im selben Lauf. Der Bericht weist eine Anbietersperre aus,
+nicht eine erschöpfte lokale Stundengrenze. Eine ausdrückliche erste Ablehnung
+ohne Ausgabe oder Nutzungsbeleg verbraucht keine Kostenreserve; vorausgegangene
+unklare Anfragen bleiben konservativ behandelt. Historische Kostenjournale
+werden nicht nachträglich aufgrund einer pauschalen 429-Kennung geändert.
+
+Diese Korrektur füllt kein Guthaben auf und verändert keine Monats-, Stunden-,
+Modell-, Quellen- oder Freigaberegel. Ein Anbieter-Guthabenproblem braucht eine
+Bestätigung und gegebenenfalls eine Handlung im tatsächlich verwendeten
+Abrechnungskonto. Ein erfolgreicher Test oder Deploy ist kein Nachweis, dass
+der Anbieter wieder Entwürfe liefert. Regression: `news-provider-refusal.test.mjs`,
+`lage.test.mjs` und `lage-startseite.test.mjs`.
+
 ### Betriebsreparatur vom 01.10.2026
 
 - Der Betriebsmonitor benoetigt auch `assets/js/ticker-order.js` im Sparse-Checkout.

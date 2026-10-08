@@ -392,8 +392,9 @@ export function lageBody(lage, storiesById) {
     <p class="news-lage__kicker">${escapeHtml(lage.label)} · ${escapeHtml(datum)} · Stand ${escapeHtml(stand)} Uhr</p>
     <h1 class="news-lage__headline">${escapeHtml(lage.headline)}</h1>
     ${lage.publication_recovery?.note ? `<p class="news-analysis-copy" role="note">${escapeHtml(lage.publication_recovery.note)}</p>` : ''}
+    ${lage.processing_status?.note ? `<p class="news-analysis-copy" role="status">${escapeHtml(lage.processing_status.note)}</p>` : ''}
   </header>
-  ${cards || '<div class="news-empty"><h2>Keine belastbare neue Entwicklung in diesem Zeitraum.</h2><p>Der Ticker f\u00fcllt keine Ausgabe k\u00fcnstlich.</p></div>'}
+  ${cards || '<div class="news-empty"><h2>Noch keine neue Nachricht in diesem Zeitraum veröffentlicht.</h2><p>Das ist der Veröffentlichungsstand, kein Urteil über das Nachrichtenangebot. Der Ticker füllt keine Ausgabe künstlich.</p></div>'}
 </section>`;
 }
 

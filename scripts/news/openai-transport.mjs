@@ -603,6 +603,17 @@ async function requestAssessmentRepair({ prompt, story, analysis, issues, model,
 const retryable = (status) => status === 429 || status >= 500;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+// A billing refusal is not a temporary request-rate limit. Do not copy
+// arbitrary provider messages into public reports or retry a billing block.
+export function providerBillingRefusal(status, payload) {
+  if (status !== 429) return null;
+  const code = String(payload?.error?.code || '');
+  if (code === 'credit_balance_exhausted' || /no credits remaining|run out of credits/i.test(String(payload?.error?.message || ''))) return 'AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED';
+  if (['organization_spend_limit_exceeded', 'project_spend_limit_exceeded'].includes(code)) return 'AI_PROVIDER_SPEND_LIMIT_REACHED';
+  if (['organization_usage_limit_exceeded', 'insufficient_quota'].includes(code) || payload?.error?.type === 'insufficient_quota') return 'AI_PROVIDER_QUOTA_EXHAUSTED';
+  return null;
+}
+
 export async function callOpenAiDirect(stories, options = {}) {
   const apiKey = options.apiKey || process.env.OPENAI_API_KEY;
   if (!apiKey) throw Object.assign(new Error('OPENAI_API_KEY_MISSING'), { requestAttempts: 0, providerNotCalled: true, localRefusal: true });
@@ -645,6 +656,12 @@ export async function callOpenAiDirect(stories, options = {}) {
       payload = await response.json().catch(() => null);
       if (response.ok) break;
       if (response.status === 401 || response.status === 403) throw Object.assign(new Error('AI_PROVIDER_AUTH_FAILED'), { requestAttempts: attempts, providerNotCalled: attempts === 1 });
+      const billingRefusal = providerBillingRefusal(response.status, payload);
+      if (billingRefusal) throw Object.assign(new Error(billingRefusal), {
+        requestAttempts: attempts,
+        // An earlier timeout/5xx still retains its uncertain cost reserve.
+        providerNotCalled: attempts === 1 && !decodeUsage(payload) && !payload?.output,
+      });
       // Ein abgelehntes Schema erzeugt keine Antwort und ist kein bezahlter
       // Versuch: derselbe Versuch läuft ohne Schemazwang weiter.
       if (response.status === 400 && formatIndex < formats.length - 1) {

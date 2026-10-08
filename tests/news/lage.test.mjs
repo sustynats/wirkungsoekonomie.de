@@ -91,7 +91,7 @@ test('es gibt eine Obergrenze und ausdrücklich keine Untergrenze', () => {
 
 test('keine Entwicklung ist eine Aussage, keine Leerstelle', () => {
   const fenster = lageWindow('abendlage', '2026-09-17T16:05:00Z');
-  assert.equal(lageHeadline({ entries: [], window: fenster }), 'Keine belastbare neue Entwicklung seit 12 Uhr.');
+  assert.equal(lageHeadline({ entries: [], window: fenster }), 'Noch keine neue Nachricht seit 12 Uhr veröffentlicht.');
   assert.equal(lageHeadline({ entries: [1], window: fenster }), 'Das ist die eine Entwicklung, die seit 12 Uhr wirkungsrelevant geworden ist.');
   assert.equal(lageHeadline({ entries: [1, 2, 3], window: fenster }), 'Das sind die 3 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.');
   assert.match(lageHeadline({ entries: [1, 2], window: lageWindow('morgenlage', '2026-09-17T06:05:00Z') }), /seit gestern Abend/);
@@ -179,7 +179,7 @@ test('eine Lage ohne auflösbare Meldung bricht nicht und behauptet nichts', asy
     date: '2026-09-17', stand: '2026-09-17T16:00:00.000Z',
     headline: 'Keine belastbare neue Entwicklung seit 12 Uhr.', entries: [{ story_id: 'wt-verschwunden' }] };
   const html = lageBody(lage, new Map());
-  assert.match(html, /Keine belastbare neue Entwicklung in diesem Zeitraum/);
+  assert.match(html, /Noch keine neue Nachricht in diesem Zeitraum veröffentlicht/);
   assert.doesNotMatch(html, /data-news-card/, 'keine erfundene Karte');
 });
 
