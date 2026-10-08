@@ -15,10 +15,15 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-08T13:21:06.216Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "245bc68b083a60a968516b05",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-08T13:21:06.216Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-08",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2450,11 +2455,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/polizeieinsatz-schusse-in-tuttlingen-lage-unklar-c69236/": {
         "first_seen_at": "2026-10-08T12:51:02.924Z",
         "source_at": "2026-10-08T12:04:21.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/krieg-gegen-die-ukraine-viele-tote-nach-russischem-angriff-auf-bus-in-der-ostukraine-f02bab/": {
+        "first_seen_at": "2026-10-08T13:35:44.123Z",
+        "source_at": "2026-10-08T09:27:20.000Z"
       }
     },
-    "last_new_at": "2026-10-08T12:51:02.924Z",
-    "checked_at": "2026-10-08T13:21:06.216Z",
-    "last_current_new_at": "2026-10-08T12:51:02.924Z"
+    "last_new_at": "2026-10-08T13:35:44.123Z",
+    "checked_at": "2026-10-08T13:35:44.123Z",
+    "last_current_new_at": "2026-10-08T13:35:44.123Z"
   },
   "recovery_attempts": [
     {
