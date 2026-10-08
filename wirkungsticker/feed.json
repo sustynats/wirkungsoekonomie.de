@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-08T09:46:40.432Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-08T10:09:50.959Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/eine-tote-bei-erneutem-messerangriff-an-schule-in-polen-15-jahriger-festgenommen-54dce6/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/eine-tote-bei-erneutem-messerangriff-an-schule-in-polen-15-jahriger-festgenommen-54dce6/",
+      "title": "Tote bei Messerangriff an Schule nahe Warschau",
+      "summary": "An einer Schule nahe Warschau wurde laut Polizei eine Hausmeisterin getötet; zwei weitere Erwachsene wurden verletzt. Der Bericht nennt einen festgenommenen 15-Jährigen als mutmaßlichen Täter, lässt Tatablauf und Motiv aber offen.",
+      "date_published": "2026-10-08T09:55:59.000Z",
+      "date_modified": "2026-10-08T09:55:59.000Z",
+      "_woek_released_at": "2026-10-08T10:19:11.400Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-wenn-emporung-politik-ersetzt-4dfeac/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/nachgesehen-wenn-emporung-politik-ersetzt-4dfeac/",
@@ -33,6 +64,38 @@
         "Nachgesehen"
       ],
       "_woek_type": "Nachgesehen"
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/krieg-gegen-die-ukraine-ukraine-beschadigt-russisches-datenzentrum-ec905d/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/krieg-gegen-die-ukraine-ukraine-beschadigt-russisches-datenzentrum-ec905d/",
+      "title": "Laut Deutschlandfunk: Ukraine legt russisches Yandex-Rechenzentrum lahm",
+      "summary": "Ein ukrainischer Drohnenangriff soll ein wichtiges Yandex-Rechenzentrum in Russland lahmgelegt haben. Der Bericht nennt außerdem mindestens 30 Tote bei einem russischen Angriff auf einen Bus nach ukrainischen Angaben.",
+      "date_published": "2026-10-08T09:45:18.000Z",
+      "date_modified": "2026-10-08T09:45:18.000Z",
+      "_woek_released_at": "2026-10-08T10:20:23.529Z",
+      "tags": [
+        "Digitalisierung",
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/rote-linien-geheime-stimmen-offene-folgen-235210/",
