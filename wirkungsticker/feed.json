@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-09T08:55:13.630Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-09T09:42:27.917Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/mann-mit-pistole-in-rathaus-nach-schussen-in-tuttlingen-27-jahriger-wird-obduziert-9fe818/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/mann-mit-pistole-in-rathaus-nach-schussen-in-tuttlingen-27-jahriger-wird-obduziert-9fe818/",
+      "title": "Laut Stern: Tödliche Schüsse in Tuttlingen: Obduktion und Waffenuntersuchung sollen offene Fragen klären",
+      "summary": "Nach tödlichen Schüssen in Tuttlingen sollen die Leiche eines 27-Jährigen und eine Waffe untersucht werden. Ablauf und Motiv sind laut vorliegenden Stern-Berichten offen.",
+      "date_published": "2026-10-09T08:47:55.000Z",
+      "date_modified": "2026-10-09T08:47:55.000Z",
+      "_woek_released_at": "2026-10-09T09:50:05.274Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/schusse-am-rathaus-tuttlingen-27-jahriger-stirbt-295153/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/schusse-am-rathaus-tuttlingen-27-jahriger-stirbt-295153/",
@@ -1644,8 +1675,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562/",
-      "title": "Ökonomen erwarten laut Bericht weitere EZB-Zinserhöhung nach Ölpreisschock",
-      "summary": "Ein Bericht verbindet einen Ölpreisschock mit steigender Inflation im Euroraum und erwartet deshalb eine weitere EZB-Zinserhöhung. Ein Beschluss und konkrete Preis- oder Verteilungsdaten sind nicht belegt.",
+      "title": "Laut Bericht erwarten Ökonomen weitere EZB-Zinserhöhung nach Ölpreisschock",
+      "summary": "Ein gleichlautender Bericht verbindet einen Ölpreisschock mit steigender Inflation im Euroraum und erwartet deshalb eine weitere EZB-Zinserhöhung. Ein Beschluss und konkrete Preis- oder Verteilungsdaten sind nicht belegt.",
       "date_published": "2026-10-02T09:30:18.000Z",
       "date_modified": "2026-10-02T09:30:18.000Z",
       "_woek_released_at": "2026-10-02T09:38:07.090Z",
@@ -1659,16 +1690,16 @@
       "_woek_impact_profile": {
         "human": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "mixed",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "open",
           "status": "potential"
         }
