@@ -1,7 +1,93 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-09T10:00:00.000Z",
+  "updated_at": "2026-10-09T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-09-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-09",
+      "window_from": "2026-10-09T10:00:00.000Z",
+      "window_to": "2026-10-09T16:00:00.000Z",
+      "stand": "2026-10-09T16:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 3,
+        "fortgeschrieben": 5
+      },
+      "entries": [
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut dem Tagesspiegel: Ölpreisschock setzt EZB unter möglichen Zinserhöhungsdruck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T15:39:12.893Z",
+          "score": 5.6923
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Drei südkoreanische Offiziere bei Minenexplosion schwer verletzt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T15:38:11.586Z",
+          "score": 5.6894
+        },
+        {
+          "story_id": "wt-4d6f8f9ed994a637",
+          "slug": "schwerwiegender-affekt-62-jahriger-nach-messerangriff-auf-87-jahrige-mutter-in-berlin-fr-94a637",
+          "title": "Laut Tagesspiegel: 62-Jähriger nach Messerangriff auf 87-jährige Mutter freigesprochen",
+          "state": "neu",
+          "at": "2026-10-09T14:11:41.608Z",
+          "score": 5.6991
+        },
+        {
+          "story_id": "wt-38bb06ddd2118de1",
+          "slug": "ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1",
+          "title": "Laut Bahnbetreiber: Drohnengefahr evakuierte im September 5.831 Züge in der Ukraine",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T14:10:26.580Z",
+          "score": 7.4457
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt gilt, Spritpreise laut SWR zunächst gefallen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T13:33:23.643Z",
+          "score": 5.8428
+        },
+        {
+          "story_id": "wt-158ff36be1cae65a",
+          "slug": "17-jahriger-schwer-verletzt-messerattacke-auf-kirchweihfest-verdachtige-festgenommen-cae65a",
+          "title": "Laut stern: 17-Jähriger bei Messerangriff auf Kirchweihfest schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-09T13:07:28.736Z",
+          "score": 5.5208
+        },
+        {
+          "story_id": "wt-f222d6042ed177da",
+          "slug": "nach-todlichen-schussen-am-rathaus-tuttlingen-was-noch-geklart-werden-muss-d177da",
+          "title": "Nach LKA-Angaben: 27-Jähriger stirbt nach Schusswechsel am Tuttlinger Rathaus",
+          "state": "neu",
+          "at": "2026-10-09T11:59:58.729Z",
+          "score": 7.5263
+        },
+        {
+          "story_id": "wt-89cefa5bf1295153",
+          "slug": "schusse-am-rathaus-tuttlingen-27-jahriger-stirbt-295153",
+          "title": "Laut Polizei: 27-Jähriger stirbt nach Schüssen am Rathaus in Tuttlingen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T10:53:45.706Z",
+          "score": 5.3993
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-09T15:59:06.321Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-09-mittagslage",
       "slot": "mittagslage",
