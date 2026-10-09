@@ -11,10 +11,15 @@
     },
     "freigabe-quittung": {
       "firstSeen": "2026-10-09T13:06:08.278Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4b02ba15edd25c45a37dc6f6",
+      "content": "⚠ WÖk-Betriebsstörung\nQuittung freigegebener Fassungen: 2 freigegebene Fassung(en) stehen veroeffentlicht, gelten in der Redaktions-App seit 2 Stunden aber weiter als offen. Die Quittung an den Schreibtisch greift nicht.\nSeit: 2026-10-09T13:06:08.278Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2509,7 +2514,7 @@
       }
     },
     "last_new_at": "2026-10-09T12:35:44.244Z",
-    "checked_at": "2026-10-09T13:06:08.278Z",
+    "checked_at": "2026-10-09T13:20:50.259Z",
     "last_current_new_at": "2026-10-09T12:35:44.244Z"
   },
   "recovery_attempts": [
