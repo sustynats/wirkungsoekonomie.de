@@ -119,3 +119,19 @@ jobs:
 
       - name: Check site size
         run: npm run check:size
+
+      - name: Measure navigation of the complete public artifact (warning stage)
+        run: |
+          python3 -m unittest discover -s tests/navigation -v
+          node scripts/quality/check-navigation-discovery.mjs --report
+          cat reports/navigation/latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Attach navigation report to this PR run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: navigation-report
+          path: |
+            reports/navigation/latest.json
+            reports/navigation/latest.md
+          if-no-files-found: warn
