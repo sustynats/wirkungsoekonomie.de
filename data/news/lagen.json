@@ -1,7 +1,93 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-08T16:00:00.000Z",
+  "updated_at": "2026-10-09T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-09-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-09",
+      "window_from": "2026-10-08T16:00:00.000Z",
+      "window_to": "2026-10-09T04:00:00.000Z",
+      "stand": "2026-10-09T04:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 5,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-68eaa16bd969560f",
+          "slug": "festnahme-nach-todlichen-schussen-bei-waffenkontrolle-69560f",
+          "title": "Laut Polizei: Festnahme nach tödlichen Schüssen bei Waffenkontrolle",
+          "state": "neu",
+          "at": "2026-10-09T03:23:03.048Z",
+          "score": 10.4487
+        },
+        {
+          "story_id": "wt-fbcc22a1a5c907a0",
+          "slug": "polizei-mann-in-new-york-bei-auseinandersetzung-mit-bundeskraften-angeschossen-c907a0",
+          "title": "Polizei: Mann in New York bei Auseinandersetzung mit Bundeskräften angeschossen",
+          "state": "neu",
+          "at": "2026-10-09T01:02:10.576Z",
+          "score": 9.753
+        },
+        {
+          "story_id": "wt-f520875d1e67197d",
+          "slug": "wirbelsturme-hurrikan-isaias-verstarkt-sich-evakuierungen-an-us-kuste-67197d",
+          "title": "Laut Medienberichten: Hurrikan „Isaias“ verstärkt sich auf dem Weg zur US-Golfküste",
+          "state": "neu",
+          "at": "2026-10-08T23:55:45.883Z",
+          "score": 9.6608
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Explosion im koreanischen Grenzgebiet: Hergang und Verantwortung bleiben offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-08T22:54:36.096Z",
+          "score": 7.3258
+        },
+        {
+          "story_id": "wt-ae2045826c541665",
+          "slug": "kriminalitat-zweites-todesopfer-nach-schussen-bei-waffenkontrolle-541665",
+          "title": "Laut Polizei: Zweites Todesopfer nach Schüssen bei Waffenkontrolle in der Oberpfalz",
+          "state": "neu",
+          "at": "2026-10-08T21:50:18.950Z",
+          "score": 7.9865
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt in Kraft: Spritpreise laut SWR zunächst deutlich gefallen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-08T20:39:41.110Z",
+          "score": 5.6385
+        },
+        {
+          "story_id": "wt-8c5f7fac16517fc2",
+          "slug": "baden-wurttemberg-polizei-erschiesst-27-jahrigen-an-tuttlinger-rathaus-517fc2",
+          "title": "Laut Landeskriminalamt starb ein 27-Jähriger nach Schüssen am Tuttlinger Rathaus",
+          "state": "neu",
+          "at": "2026-10-08T16:46:01.882Z",
+          "score": 5.0639
+        },
+        {
+          "story_id": "wt-4239e1ac47da2d70",
+          "slug": "baden-wurttemberg-polizei-erschiesst-mann-vor-rathaus-von-tuttlingen-da2d70",
+          "title": "Tödlicher Schusswechsel vor dem Rathaus von Tuttlingen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-08T16:01:48.496Z",
+          "score": 6.7525
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-09T03:59:32.972Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-08-abendlage",
       "slot": "abendlage",
