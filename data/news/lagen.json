@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-09T04:00:00.000Z",
+  "updated_at": "2026-10-09T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-09-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-09",
+      "window_from": "2026-10-09T04:00:00.000Z",
+      "window_to": "2026-10-09T10:00:00.000Z",
+      "stand": "2026-10-09T10:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 5,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-ae5a9235ca9fe818",
+          "slug": "mann-mit-pistole-in-rathaus-nach-schussen-in-tuttlingen-27-jahriger-wird-obduziert-9fe818",
+          "title": "Laut Stern: Tödliche Schüsse in Tuttlingen: Obduktion und Waffenuntersuchung sollen offene Fragen klären",
+          "state": "neu",
+          "at": "2026-10-09T09:50:05.274Z",
+          "score": 5.9725
+        },
+        {
+          "story_id": "wt-f70ababb834b4f92",
+          "slug": "landkreis-oberhavel-polizeieinsatz-in-velten-gefahrenlage-abgewendet-4b4f92",
+          "title": "Laut stern: Mann mit Schusswaffen verschanzt sich in Velten",
+          "state": "neu",
+          "at": "2026-10-09T09:02:57.618Z",
+          "score": 5.8416
+        },
+        {
+          "story_id": "wt-68eaa16bd969560f",
+          "slug": "festnahme-nach-todlichen-schussen-bei-waffenkontrolle-69560f",
+          "title": "Laut Polizei: Zwei Behördenbeschäftigte bei Waffenkontrolle getötet, mutmaßlicher Täter festgenommen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T08:40:01.684Z",
+          "score": 10.0279
+        },
+        {
+          "story_id": "wt-ae2045826c541665",
+          "slug": "kriminalitat-zweites-todesopfer-nach-schussen-bei-waffenkontrolle-541665",
+          "title": "Laut Polizei: Zweites Todesopfer nach Schüssen bei Waffenkontrolle in der Oberpfalz",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T07:41:49.109Z",
+          "score": 7.8662
+        },
+        {
+          "story_id": "wt-89cefa5bf1295153",
+          "slug": "schusse-am-rathaus-tuttlingen-27-jahriger-stirbt-295153",
+          "title": "Laut Polizei stirbt 27-Jähriger nach Schüssen am Rathaus in Tuttlingen",
+          "state": "neu",
+          "at": "2026-10-09T07:00:33.770Z",
+          "score": 10.0016
+        },
+        {
+          "story_id": "wt-0b46040a427d7179",
+          "slug": "tote-bei-waffenkontrolle-mutmasslicher-todesschutze-festgenommen-7d7179",
+          "title": "Nach Angaben des Deutschlandfunks: Zwei Behördenmitarbeiter bei Waffenkontrolle getötet",
+          "state": "neu",
+          "at": "2026-10-09T06:58:36.423Z",
+          "score": 5.4961
+        },
+        {
+          "story_id": "wt-38bb06ddd2118de1",
+          "slug": "ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1",
+          "title": "Laut Bahnbetreiber: Drohnengefahr evakuierte im September 5.831 Züge in der Ukraine",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T06:33:35.411Z",
+          "score": 7.1766
+        },
+        {
+          "story_id": "wt-eed40a69a51c9d70",
+          "slug": "schusswechsel-in-tuttlinger-rathaus-polizei-erschiesst-27-jahrigen-audi-zieht-schlechtwe-1c9d70",
+          "title": "Laut SWR: Schusswechsel in Tuttlinger Rathaus – Polizei erschießt 27-Jährigen",
+          "state": "neu",
+          "at": "2026-10-09T05:50:42.776Z",
+          "score": 9.3075
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-09-morgenlage",
       "slot": "morgenlage",
