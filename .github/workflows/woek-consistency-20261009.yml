@@ -1,0 +1,89 @@
+name: WÖk consistency review 2026-10-09
+
+on:
+  push:
+    branches: [review/woek-consistency-20261009]
+    paths:
+      - '.github/workflows/woek-consistency-20261009.yml'
+      - 'scripts/review/consistency-20261009/**'
+      - 'content/grundlagen/woek-kern-20261009.*'
+      - 'tests/site/woek-consistency-20261009.test.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: woek-consistency-20261009
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/assets/
+            /assets/js/
+            /assets/data/
+            !/source-assets/
+            /source-assets/originals/*.md
+            !/public/
+            /public/data/
+            !/node_modules/
+            !/tmp/
+            !/_internal/
+            !/_site/
+            !/backups/
+            !/archive/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Export commit-bound textual source snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p review-artifacts
+          python - <<'PY'
+          import hashlib, json, os, pathlib, subprocess, tarfile
+          root = pathlib.Path.cwd()
+          allowed = {'.md','.mjs','.cjs','.js','.json','.py','.yml','.yaml','.html','.css','.txt','.csv','.toml'}
+          excluded = {'.git','node_modules','tmp','_site','_internal','backups','archive','private','secrets'}
+          paths = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          rows = []
+          with tarfile.open('review-artifacts/woek-text-source.tar.gz', 'w:gz') as out:
+              for name in paths:
+                  p = root / name
+                  if not name or any(part in excluded for part in p.relative_to(root).parts): continue
+                  if not p.is_file() or p.is_symlink() or p.suffix.lower() not in allowed or p.stat().st_size > 8_000_000: continue
+                  data = p.read_bytes()
+                  try: data.decode('utf-8')
+                  except UnicodeDecodeError: continue
+                  out.add(p, arcname=name, recursive=False)
+                  rows.append({'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+          manifest = {'commit':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'files':rows}
+          pathlib.Path('review-artifacts/source-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
+          print('Exported', len(rows), 'text files; no credentials or runtime environment included.')
+          PY
+      - name: Run added regression tests when present
+        shell: bash
+        run: |
+          set -euo pipefail
+          if test -f tests/site/woek-consistency-20261009.test.mjs; then
+            node --test tests/site/woek-consistency-20261009.test.mjs
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: woek-consistency-source-${{ github.sha }}
+          path: review-artifacts/
+          retention-days: 7
+          if-no-files-found: error
