@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigationskonzept Wirkungsökonomie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: Konzeptdokument mit fester Inhaltsleiste links (Desktop), Abschnitte als ruhige Textspalte,
+   Mockups und Tabellen dürfen breiter laufen. Marke: WÖk-Navy, Gold, Grün; Playfair + Source Sans 3. */
+:root {
+  --navy: #0B1020;
+  --navy-2: #161e36;
+  --paper: #F6F1E8;
+  --card: #FFFCF5;
+  --ink: #1d2230;
+  --muted: #4c4c45;
+  --line: #e1dacb;
+  --gold: #C89B3C;
+  --gold-deep: #8a6410;
+  --green: #2F7D5C;
+  --green-dark: #174F38;
+  --red: #a23b2a;
+  --good-bg: #e8f2ec;
+  --bad-bg: #f6e6e1;
+  --hero-ink: #F6F1E8;
+  --hero-muted: #c3c9da;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1322; --card: #161d31; --ink: #ebe6db; --muted: #b7b4ab; --line: #2b3452;
+    --gold-deep: #dcb860; --green: #62b48d; --green-dark: #93d3b1; --red: #e08a77;
+    --good-bg: #17302a; --bad-bg: #3a2420; --navy-2: #1c2541;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1322; --card: #161d31; --ink: #ebe6db; --muted: #b7b4ab; --line: #2b3452;
+  --gold-deep: #dcb860; --green: #62b48d; --green-dark: #93d3b1; --red: #e08a77;
+  --good-bg: #17302a; --bad-bg: #3a2420; --navy-2: #1c2541;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.62 var(--font-body); }
+a { color: var(--green-dark); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; line-height: 1.15; margin: 0; }
+h2 { font-size: clamp(1.55rem, 2.6vw, 2.05rem); font-weight: 600; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+h4 { font-size: 1.02rem; font-weight: 600; font-family: var(--font-body); }
+p, ul, ol { margin: 0; }
+ul, ol { padding-left: 1.25rem; display: grid; gap: 6px; }
+code { font: 500 .82em var(--font-mono); color: var(--gold-deep); overflow-wrap: anywhere; }
+strong { font-weight: 600; }
+
+.layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; max-width: 1240px; margin: 0 auto; padding-inline: 24px; }
+@media (max-width: 980px) { .layout { grid-template-columns: minmax(0, 1fr); gap: 0; padding-inline: 18px; } .toc { display: none; } }
+
+/* Kopf */
+.cover { background: var(--navy); color: var(--hero-ink); border-bottom: 3px solid var(--gold); }
+.cover .in { max-width: 1240px; margin: 0 auto; padding: 56px 24px 44px; display: grid; gap: 18px; }
+.cover .eyebrow { font: 500 .76rem/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.cover h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 700; max-width: 18ch; }
+.cover p.lead { font-size: 1.18rem; color: var(--hero-muted); max-width: 62ch; }
+.cover .meta { font-size: .9rem; color: var(--hero-muted); }
+
+/* Inhaltsleiste */
+.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; padding-block: 40px; max-height: calc(100vh - 24px); overflow-y: auto; }
+.toc p { font: 600 .78rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.toc ol { list-style: none; padding: 0; gap: 2px; counter-reset: t; }
+.toc a { display: block; text-decoration: none; color: var(--ink); font-size: .93rem; padding: 5px 10px; border-radius: 6px; border-left: 2px solid transparent; }
+.toc a:hover { background: var(--card); border-left-color: var(--gold); }
+
+main { padding-block: 40px 80px; display: grid; gap: 64px; min-width: 0; }
+section { display: grid; gap: 18px; min-width: 0; scroll-margin-top: 20px; }
+.prose { max-width: 70ch; display: grid; gap: 12px; }
+.num { font: 500 .78rem/1 var(--font-mono); color: var(--gold-deep); letter-spacing: .05em; }
+.muted { color: var(--muted); }
+
+/* Kennzahlen */
+.stats { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 4px; min-width: 0; }
+.stat b { font: 600 1.7rem/1.1 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: .9rem; color: var(--muted); }
+.stat.bad b { color: var(--red); }
+
+/* Kästen */
+.box { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: grid; gap: 10px; min-width: 0; }
+.box.gold { border-left: 4px solid var(--gold); border-radius: 0 12px 12px 0; }
+.box.green { border-left: 4px solid var(--green); border-radius: 0 12px 12px 0; }
+.grid2 { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.grid3 { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+
+/* Prinzipien */
+.principles { list-style: none; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.principles li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; }
+.principles li b { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; }
+
+/* Raum-Karte (IA) */
+.rooms { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); }
+.room { background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: 10px; padding: 14px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.room h4 { font-family: var(--font-display); font-size: 1.12rem; }
+.room .q { font-size: .88rem; color: var(--muted); }
+.room ul { list-style: none; padding: 0; gap: 3px; font-size: .9rem; }
+.room ul li::before { content: "› "; color: var(--gold-deep); }
+.room .src { font: 500 .72rem/1.4 var(--font-mono); color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+.eco { background: var(--navy); color: var(--hero-ink); border-radius: 10px; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; font-size: .92rem; }
+.eco b { color: var(--gold); font-weight: 600; }
+
+/* Mockups */
+.mock { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
+.mock-cap { font-size: .86rem; color: var(--muted); padding: 10px 14px; border-top: 1px solid var(--line); background: var(--paper); }
+.m-eco { background: #070b17; color: #aeb5c9; font-size: .78rem; display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 6px 16px; align-items: center; }
+.m-eco b { color: #F6F1E8; font-weight: 600; }
+.m-eco .r { margin-left: auto; display: flex; gap: 14px; }
+.m-main { background: var(--navy); color: #F6F1E8; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; padding: 12px 16px; }
+.m-logo { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+.m-logo i { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--gold); display: inline-block; }
+.m-nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .9rem; }
+.m-nav span { padding: 4px 0; border-bottom: 2px solid transparent; }
+.m-nav span.on { border-bottom-color: var(--gold); color: #fff; }
+.m-search { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+.m-field { background: #fffcf5; color: #6a6a62; border-radius: 6px; padding: 6px 10px; font-size: .84rem; min-width: 190px; display: flex; justify-content: space-between; gap: 12px; }
+.m-field kbd { font: 500 .72rem var(--font-mono); border: 1px solid #ccc; border-radius: 3px; padding: 0 4px; color: #6a6a62; }
+.m-ki { border: 1px solid var(--gold); color: var(--gold); border-radius: 6px; padding: 5px 9px; font-size: .82rem; }
+.m-mega { background: var(--card); border-bottom: 1px solid var(--line); display: grid; gap: 20px; padding: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.m-mega h5 { margin: 0 0 8px; font: 600 .76rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.m-mega ul { list-style: none; padding: 0; gap: 5px; font-size: .92rem; }
+.m-mega .all { font-weight: 600; color: var(--green-dark); }
+.m-mega .count { font: 500 .74rem var(--font-mono); color: var(--gold-deep); }
+.m-page { padding: 18px 20px; display: grid; gap: 8px; }
+.m-crumb { font-size: .82rem; color: var(--muted); }
+.m-crumb b { color: var(--ink); font-weight: 600; }
+.bar { height: 10px; border-radius: 5px; background: var(--line); }
+.phone { width: min(100%, 330px); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: var(--card); margin-inline: auto; }
+.ph-top { background: var(--navy); color: #F6F1E8; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; font-size: .9rem; }
+.ph-top .ic { display: flex; gap: 14px; font-size: .86rem; }
+.ph-body { padding: 14px; display: grid; gap: 10px; }
+.ph-field { border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; font-size: .88rem; color: var(--muted); }
+.acc { border-bottom: 1px solid var(--line); padding: 9px 2px; display: flex; justify-content: space-between; font-size: .95rem; }
+.acc.open { border-bottom: 0; font-weight: 600; }
+.acc-sub { padding: 0 0 8px 12px; display: grid; gap: 5px; font-size: .88rem; border-bottom: 1px solid var(--line); }
+.ph-eco { background: var(--paper); border-radius: 8px; padding: 10px; font-size: .84rem; display: grid; gap: 4px; }
+
+/* Seitenrahmen */
+.frame { display: grid; gap: 10px; }
+.fr { border: 1.5px dashed var(--line); border-radius: 8px; padding: 10px 12px; font-size: .9rem; display: grid; gap: 4px; }
+.fr b { font-weight: 600; }
+.fr.k { border-color: var(--gold); background: color-mix(in srgb, var(--gold) 8%, var(--card)); }
+.fr-cols { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); }
+@media (max-width: 640px) { .fr-cols { grid-template-columns: minmax(0, 1fr); } }
+.fr-end { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); }
+
+/* Suche */
+.sugg { border: 1px solid var(--line); border-radius: 0 0 10px 10px; background: var(--card); max-width: 520px; }
+.sugg .q { padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px 10px 0 0; background: #fffcf5; color: #1d2230; font-size: .95rem; margin-bottom: -1px; max-width: 520px; }
+.sugg h6 { margin: 0; padding: 8px 14px 2px; font: 600 .72rem/1.4 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.sugg div.it { padding: 6px 14px; font-size: .9rem; display: grid; gap: 2px; }
+.sugg div.it small { color: var(--muted); font-size: .82rem; }
+.sugg div.ki { border-top: 1px solid var(--line); padding: 10px 14px; font-size: .9rem; color: var(--green-dark); font-weight: 600; }
+
+/* Tabellen */
+.tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+.tw.wide table { min-width: 760px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--paper); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 .72rem/1 var(--font-mono); padding: 4px 7px; border-radius: 4px; white-space: nowrap; }
+.t-keep { background: var(--good-bg); color: var(--green-dark); }
+.t-hang { background: color-mix(in srgb, var(--gold) 18%, var(--card)); color: var(--gold-deep); }
+.t-redir { background: var(--paper); color: var(--muted); border: 1px solid var(--line); }
+.t-arch { background: var(--bad-bg); color: var(--red); }
+.ok { color: var(--green-dark); font-weight: 600; }
+.no { color: var(--red); font-weight: 600; }
+
+/* Phasen */
+.phases { display: grid; gap: 14px; }
+.phase { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 10px; }
+.phase-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; }
+.phase-head .num { font-size: .82rem; }
+.phase .cols { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.who { font: 600 .76rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+
+/* Entscheidungen */
+.decisions { list-style: none; padding: 0; counter-reset: d; display: grid; gap: 10px; }
+.decisions li { counter-increment: d; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px 14px 56px; position: relative; }
+.decisions li::before { content: counter(d); position: absolute; left: 16px; top: 13px; width: 28px; height: 28px; border-radius: 50%; background: var(--navy); color: var(--gold); display: grid; place-items: center; font: 600 .9rem var(--font-body); }
+
+footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: .9rem; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+@media (max-width: 520px) { body { font-size: 16px; } main { gap: 48px; } }
+</style>
+
+<header class="cover">
+  <div class="in">
+    <p class="eyebrow">Navigations- und Usability-Konzept · Version 1</p>
+    <h1>Jede Seite in drei Klicks, über eine Navigation</h1>
+    <p class="lead">Wie die rund 18.700 Seiten von wirkungsoekonomie.de über Menü, Suche und Querverweise erreichbar werden, ohne dass ein Inhalt verloren geht.</p>
+    <p class="meta">Stand 9. Oktober 2026 · Grundlage: Linkgraph über alle Seiten auf main (Commit 469f84d) und drei Audits zu Menü, Suche und Bereichs-Startseiten · Inhalte liefert Codex, dieses Konzept regelt nur die Zugänge.</p>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="Inhalt">
+    <p>Inhalt</p>
+    <ol>
+      <li><a href="#kurz">Kurzfassung</a></li>
+      <li><a href="#lage">Ausgangslage in Zahlen</a></li>
+      <li><a href="#prinzipien">Leitprinzipien</a></li>
+      <li><a href="#aufgaben">Wer sucht was</a></li>
+      <li><a href="#raeume">Die sieben Räume</a></li>
+      <li><a href="#menue">Menü und Kopfzeile</a></li>
+      <li><a href="#rahmen">Seitenrahmen</a></li>
+      <li><a href="#hubs">Bereichs-Startseiten</a></li>
+      <li><a href="#suche">Suche</a></li>
+      <li><a href="#verknuepfen">Querverweise und Kanonik</a></li>
+      <li><a href="#namen">Benennungsregister</a></li>
+      <li><a href="#umzug">Umzugsplan Bestand</a></li>
+      <li><a href="#oekosystem">Ökosystem und Englisch</a></li>
+      <li><a href="#a11y">Barrierefreiheit und Tempo</a></li>
+      <li><a href="#leitplanken">Leitplanken</a></li>
+      <li><a href="#messung">Zielwerte</a></li>
+      <li><a href="#phasen">Umsetzung in Phasen</a></li>
+      <li><a href="#entscheidungen">Entscheidungen für Natalie</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <!-- Kurzfassung -->
+    <section id="kurz" aria-labelledby="h-kurz">
+      <p class="num">Kurzfassung</p>
+      <h2 id="h-kurz">Das Problem ist nicht zu viel Inhalt, sondern zu wenige Wege dorthin</h2>
+      <div class="prose">
+        <p>Die Website hat eine außergewöhnlich große Wissensbasis. Aber das Menü zeigt auf jedem Bildschirm nur einen Hamburger mit neun flachen Links. Die Suche findet ungefähr drei von zehn Seiten. Jede achte Seite ist über keinen Link erreichbar. Und für denselben Bereich gibt es bis zu fünf verschiedene Namen.</p>
+        <p>Das Konzept löst das mit sieben Bausteinen, die aufeinander aufbauen:</p>
+      </div>
+      <div class="grid3">
+        <div class="box"><h4>1 · Sieben Räume</h4><p class="muted">Jeder Inhalt bekommt genau eine Heimat in einem von sieben klar benannten Räumen. Dazu kommt eine Ökosystem-Leiste für Akademie, Institut und Parlament.</p></div>
+        <div class="box"><h4>2 · Ein sichtbares Menü</h4><p class="muted">Auf dem Desktop stehen die Räume sichtbar mit Mega-Menü da, mobil gibt es ein Vollbild-Panel. Beides kommt aus einer einzigen Datenquelle.</p></div>
+        <div class="box"><h4>3 · Ein Seitenrahmen</h4><p class="muted">Jede Seite hat einen Breadcrumb, einen „Verwandt"-Block, einen „Nächster Schritt" und den Footer. So entstehen keine Sackgassen mehr.</p></div>
+        <div class="box"><h4>4 · Ein Muster für Bereichs-Startseiten</h4><p class="muted">Jede Bereichs-Startseite verlinkt alle ihre Unterbereiche. Lange Listen werden blätterbar, und die Filter zeigen Trefferzahlen.</p></div>
+        <div class="box"><h4>5 · Suche als Haupteingang</h4><p class="muted">Ein Suchfeld auf jeder Seite, Vorschläge schon beim Tippen, 100 % Abdeckung und bei leeren Treffern die Brücke zu „Frag die WÖk".</p></div>
+        <div class="box"><h4>6 · Querverweise</h4><p class="muted">Die vorhandenen Beziehungsdaten werden auf den Seiten ausgespielt, dazu Rückverweise wie „Zitiert in". Pro Thema gibt es eine kanonische Seite.</p></div>
+        <div class="box"><h4>7 · Leitplanken und Messung</h4><p class="muted">Keine URL wird gelöscht. Zusammengeführt wird per Weiterleitung. Zielwerte werden in der Build-Prüfung automatisch gemessen.</p></div>
+      </div>
+    </section>
+
+    <!-- Ausgangslage -->
+    <section id="lage" aria-labelledby="h-lage">
+      <p class="num">Ausgangslage</p>
+      <h2 id="h-lage">Was die Messung zeigt</h2>
+      <div class="stats">
+        <div class="stat bad"><b>56 %</b><span>der Seiten sind in höchstens drei Klicks ab der Startseite erreichbar</span></div>
+        <div class="stat bad"><b>2.157</b><span>Seiten (12 %) erreicht man über keinen Link, nur über Suche oder Direktlink</span></div>
+        <div class="stat bad"><b>≈ 30 %</b><span>der indexierbaren Seiten findet die Suche (rund 5.265 von 17.819)</span></div>
+        <div class="stat bad"><b>29 %</b><span>Abdeckung der Sitemap (5.093 URLs). Bibliothek, Online-Buch, Radar und Register fehlen fast ganz</span></div>
+        <div class="stat bad"><b>≥ 10</b><span>verschiedene Header sind gleichzeitig live, fünf davon auf großen Bereichen</span></div>
+        <div class="stat bad"><b>≈ 4.000</b><span>Inhaltsseiten ohne Footer (Bibliothekseinträge, WÖk-ID-Register, Methodenraum)</span></div>
+      </div>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Befund</th><th>Beleg</th><th>Folge für Besucher</th></tr></thead>
+          <tbody>
+            <tr><td>Menü auf allen Bildschirmen hinter dem Hamburger, nur eine flache Ebene</td><td><code>style.css</code> Z. 17915–18024 blendet die Navigation ohne Media-Query aus; ein Dropdown-Unterbau ist vorhanden, wird aber nicht genutzt</td><td>Auf dem Desktop gibt es keine sichtbare Orientierung; zu 20.000 Seiten führen 9 Links</td></tr>
+            <tr><td>Keine einzige Quelle für Header und Footer</td><td><code>assets/data/navigation.json</code> widerspricht <code>templates/header.html</code>; rund 20 Generatoren nutzen die veraltete Vorlage, rund 79 Skripte schreiben eigenes Markup</td><td>Menüpunkte und Namen wechseln von Seite zu Seite. Der Ticker hat zum Beispiel einen alten Header ohne „Institut"</td></tr>
+            <tr><td>Bereichs-Startseiten führen nicht zu ihren Inhalten</td><td>Wirkungsradar verlinkt 6 von 31 Unterbereichen, Erleben 4 von 22, Wirkungssteuerung 11 von 19, <code>tools/</code> keinen</td><td>386 Radar-Seiten, 679 Register-Einträge, 50 Studienskripte und 152 Quellen sind verwaist</td></tr>
+            <tr><td>Lange Klickwege</td><td>Bibliothek: 62 % der Seiten brauchen 4 oder mehr Klicks; Wirkungsticker: Median 6, maximal 16 (Blätterkette)</td><td>Ältere Lagen und tiefe Werke sind praktisch unauffindbar</td></tr>
+            <tr><td>Suche mit großen Lücken</td><td>feste Verzeichnisliste im Index-Builder, Bibliotheks- und Quellen-Unterseiten werden verworfen, 676 Weiterleitungs-Hüllen im Index, maximal 24 Treffer</td><td>Bibliothek, Quellenarchiv, Radar, Wirkungsfelder, Portale und Methodenraum sind nicht durchsuchbar</td></tr>
+            <tr><td>Parallele Wissensablagen</td><td>bibliothek, dokumente, downloads.html, downloads/, fachbibliothek, werkstatt, wissen, referenz, quellen, quellenarchiv, register</td><td>Dasselbe Dokument liegt unter bis zu sechs URLs, T-SROI unter mindestens 15</td></tr>
+            <tr><td>Katalog spiegelt die Website</td><td>2.249 „Onlinefassung"-Karten in der Bibliothek, davon 1.555 mit Titeln wie „E k72"; dazu 192 „-2"-Dubletten</td><td>Katalog, Zähler und Suche werden aufgebläht</td></tr>
+            <tr><td>Sehr schwere Bereichs-Startseiten</td><td>Begriffe 4,25 MB mit 854 Filter-Chips, Bibliothek 3,9 MB, WÖk-ID-Register 2,4 MB, Quellenarchiv 1,5 MB</td><td>Lange Ladezeiten mobil, Filter mit Rohcodes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box green">
+        <h4>Darauf lässt sich aufbauen</h4>
+        <ul>
+          <li>Breadcrumbs gibt es auf über 90 % der Seiten in den großen Bereichen. Sie werden vereinheitlicht, nicht neu erfunden.</li>
+          <li>Die Glossar-Verlinkung im Fließtext deckt 2.155 Begriffe ab.</li>
+          <li>Beziehungsdaten für 2.121 Begriffe liegen schon vor. Sichtbar sind sie bisher nur in „Mein Wirkungsraum".</li>
+          <li>Ein Fat Footer mit acht Gruppen existiert.</li>
+          <li>Die Kapitel des Online-Buchs sind vorbildlich: Endnoten, verwandte Kapitel und Begriffe, „Nächstes Kapitel". Dieses Muster wird zum Standard.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Prinzipien -->
+    <section id="prinzipien" aria-labelledby="h-prinzipien">
+      <p class="num">Leitprinzipien</p>
+      <h2 id="h-prinzipien">Acht Regeln, an denen sich jede Entscheidung misst</h2>
+      <ul class="principles">
+        <li><b>Nichts geht verloren</b><span class="muted">Keine URL wird entfernt. Zusammenführen heißt: Weiterleitung, Canonical und Eintrag im URL-Abgleich. Archivieren statt löschen.</span></li>
+        <li><b>Eine Heimat, viele Wege</b><span class="muted">Jeder Inhalt hat genau einen kanonischen Ort. Erreichbar ist er über Menü, Suche, Rolle, Thema und Querverweise.</span></li>
+        <li><b>Eine Quelle</b><span class="muted"><code>navigation.json</code> speist Header, Footer, Mega-Menü, Breadcrumbs, Sitemap-Gruppen und Suchfacetten.</span></li>
+        <li><b>Ein Name pro Sache</b><span class="muted">Gleiche Dinge heißen in Menü, Überschrift, Breadcrumb, Footer und Titel gleich.</span></li>
+        <li><b>Drei Wege auf jeder Seite</b><span class="muted">Nach oben (Breadcrumb), zur Seite (Verwandt) und weiter (Nächster Schritt).</span></li>
+        <li><b>Drei Klicks als Messgröße</b><span class="muted">Mindestens 95 % der Seiten sind in höchstens drei Klicks ab der Startseite erreichbar.</span></li>
+        <li><b>Mobil und barrierefrei zuerst</b><span class="muted">WCAG 2.2 AA, Touch-Ziele ab 44 px, Navigation funktioniert auch ohne JavaScript.</span></li>
+        <li><b>Statisch bleibt statisch</b><span class="muted">Alles entsteht beim Build. Keine neuen Seiten-Dubletten; die Größengrenze von GitHub Pages bleibt im Blick.</span></li>
+      </ul>
+    </section>
+
+    <!-- Aufgaben -->
+    <section id="aufgaben" aria-labelledby="h-aufgaben">
+      <p class="num">Wer sucht was</p>
+      <h2 id="h-aufgaben">Die neun häufigsten Aufgaben und ihr Zielweg</h2>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Aufgabe</th><th>Typische Person</th><th>Zielweg</th><th>Klicks</th></tr></thead>
+          <tbody>
+            <tr><td>Verstehen, was Wirkungsökonomie ist</td><td>Neuling</td><td>Startseite Abschnitt A → Verstehen</td><td class="n">0–1</td></tr>
+            <tr><td>Was bedeutet das für mich?</td><td>Bürger:in, Mieter:in, Unternehmen …</td><td>„Direkt einsteigen als" auf der Startseite oder Menü „Für wen"</td><td class="n">1</td></tr>
+            <tr><td>Ein Thema verstehen (Rente, Wohnen, KI)</td><td>Interessierte, Medien</td><td>Menü „Themen" → Wirkungsfeld → Dossier</td><td class="n">2–3</td></tr>
+            <tr><td>Einen Begriff nachschlagen</td><td>alle</td><td>Suchfeld: Definitionskarte schon im Vorschlag; Begriffe A–Z</td><td class="n">0–1</td></tr>
+            <tr><td>Eine Quelle oder ein Dokument finden und zitieren</td><td>Wissenschaft, Presse</td><td>Suche mit Facette „Bibliothek" oder Menü „Bibliothek" → Katalog</td><td class="n">1–2</td></tr>
+            <tr><td>Ein Werkzeug ausprobieren</td><td>Unternehmen, Kommunen</td><td>Menü „Anwenden" → Werkzeug</td><td class="n">2</td></tr>
+            <tr><td>Eine aktuelle Einordnung lesen</td><td>politisch Interessierte</td><td>Startseite „Meinung &amp; Analyse" oder Menü „Debatte &amp; Analyse"</td><td class="n">1</td></tr>
+            <tr><td>Lernen, ein Zertifikat machen</td><td>Lernende</td><td>Ökosystem-Leiste → Akademie</td><td class="n">1</td></tr>
+            <tr><td>Mitmachen, Kontakt aufnehmen</td><td>Engagierte, Partner</td><td>Menü „Mitmachen"</td><td class="n">1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Räume -->
+    <section id="raeume" aria-labelledby="h-raeume">
+      <p class="num">Informationsarchitektur</p>
+      <h2 id="h-raeume">Sieben Räume statt neun loser Punkte</h2>
+      <div class="prose">
+        <p>Jeder Raum beantwortet genau eine Frage. Die Menüleiste zeigt nur diese sieben Räume. Die zweite Ebene liegt im Mega-Menü. Akademie, Institut und Parlament sind eigene Welten und bekommen eine eigene Leiste darüber.</p>
+      </div>
+      <div class="eco"><b>Ökosystem-Leiste</b> Wirkungsökonomie · Akademie ↗ · Wirkungsinstitut ↗ · Wirkungsportal Parlament ↗ <span class="muted" style="color:var(--hero-muted)">· identisch auf allen Domains</span></div>
+      <div class="rooms">
+        <div class="room">
+          <h4>Verstehen</h4>
+          <p class="q">Was ist Wirkungsökonomie und wie funktioniert sie?</p>
+          <ul>
+            <li>Einstieg (Kurzfassung)</li>
+            <li>Der Marktmechanismus <span class="muted">(neue Seite von Codex)</span></li>
+            <li>Das Modell, So wirkt die WÖk</li>
+            <li>Instrumente der Wirkungssteuerung</li>
+            <li>Ausgangslage</li>
+            <li>SDGs &amp; SDG+</li>
+            <li>Vergleich mit anderen Ansätzen</li>
+            <li>Fragen &amp; Einwände</li>
+          </ul>
+          <p class="src">verstehen/ · wirkungssteuerung/ · einwaende/ · Einzelseiten modell, so-wirkt …</p>
+        </div>
+        <div class="room">
+          <h4>Für wen</h4>
+          <p class="q">Was bedeutet sie für mich?</p>
+          <ul>
+            <li>Bürger:innen, Mieter:innen</li>
+            <li>Rente &amp; Vorsorge</li>
+            <li>Unternehmen, Finanzmarkt</li>
+            <li>Politik &amp; Verwaltung, Kommunen</li>
+            <li>Journalismus &amp; Medien</li>
+            <li>Wissenschaft, Gesundheit, Landwirtschaft</li>
+            <li>Lernende &amp; Lehrende</li>
+          </ul>
+          <p class="src">fuer/ (19 Seiten)</p>
+        </div>
+        <div class="room">
+          <h4>Themen</h4>
+          <p class="q">Was sagt sie zu meinem Thema?</p>
+          <ul>
+            <li>14 Wirkungsfelder in 5 Gruppen</li>
+            <li>9 Querschnittsthemen: Sicherheit &amp; Resilienz, Geopolitik, KI &amp; Daten, Migration, Transformation …</li>
+            <li>je Feld: Dossiers, Detailkonzepte, Werkzeuge</li>
+          </ul>
+          <p class="src">wirkungsfelder/ (265) · portale/ (179, wird integriert)</p>
+        </div>
+        <div class="room">
+          <h4>Anwenden</h4>
+          <p class="q">Wie setze ich sie praktisch ein?</p>
+          <ul>
+            <li>Werkzeuge (Rechner, Checks, Demos)</li>
+            <li>Erleben: Produkt, Medien, Risiko</li>
+            <li>Stranded-Asset-Rechner</li>
+            <li>Methodenraum WÖMM &amp; WÖMS</li>
+            <li>Impact Controlling</li>
+            <li>Pilot starten</li>
+          </ul>
+          <p class="src">werkzeuge/ · erleben/ · methodenraum/ · stranded-assets/</p>
+        </div>
+        <div class="room">
+          <h4>Debatte &amp; Analyse</h4>
+          <p class="q">Wie ordnet sie das Aktuelle ein?</p>
+          <ul>
+            <li>Meinung &amp; Analyse</li>
+            <li>Wirkungsradar (Debattenkarten, Narrative)</li>
+            <li>Wirkungsticker: Lagen und Meldungen</li>
+            <li>Podcast</li>
+            <li>Neu auf der Website</li>
+          </ul>
+          <p class="src">blog/ · wirkungsradar/ · wirkungsticker/ · podcast/ · news/ + updates/</p>
+        </div>
+        <div class="room">
+          <h4>Bibliothek</h4>
+          <p class="q">Wo finde ich Belege und Texte?</p>
+          <ul>
+            <li>Werke &amp; Dokumente (Katalog)</li>
+            <li>Das Grundlagenwerk und Online-Buch</li>
+            <li>Begriffe (Glossar)</li>
+            <li>Quellenarchiv</li>
+            <li>WÖk-ID-Register</li>
+            <li>Studienskripte</li>
+          </ul>
+          <p class="src">bibliothek/ · referenz/ · begriffe/ · quellenarchiv/ · woek-id-register/ · dokumente/</p>
+        </div>
+        <div class="room">
+          <h4>Mitmachen</h4>
+          <p class="q">Wie kann ich mich beteiligen?</p>
+          <ul>
+            <li>Mitmachen und Kooperation</li>
+            <li>Umfragen</li>
+            <li>Der Wirkungsbrief</li>
+            <li>Presse und Kontakt</li>
+            <li>Über die Wirkungsökonomie, Natalie Weber</li>
+          </ul>
+          <p class="src">mitmachen.html · umfragen/ · ueber.html · natalie-weber.html</p>
+        </div>
+      </div>
+      <div class="box gold">
+        <h4>Warum diese Schnitte</h4>
+        <ul>
+          <li><strong>Wirkungssteuerung unter Verstehen:</strong> Wirkungssteuer, Wirkungshaushalt und Wirkungsrat sind Teil des Mechanismus. Die interaktiven Rechner dazu liegen unter Anwenden. Beide verlinken sich gegenseitig.</li>
+          <li><strong>Portale in Themen:</strong> Die 9 Portale sind inhaltlich Querschnittsthemen. Heute sind sie versteckt, die Portal-Startseite hat nur zwei eingehende Links. Ihre URLs bleiben, sie bekommen nur einen sichtbaren Platz.</li>
+          <li><strong>Lernen und Institut in die Ökosystem-Leiste:</strong> Akademie und Institut sind eigene Plattformen. Als Menüpunkte führten sie bisher auf lokale Zwischenseiten (<code>lernen/</code>, <code>institut/</code>). Diese Seiten bleiben als Brücken bestehen, im Menü steht künftig der direkte Weg.</li>
+          <li><strong>Ein Raum für Aktuelles:</strong> Journal, Ticker, Radar und News sind heute vier Bereiche mit drei Bedeutungen von „News". Künftig liegen sie in einem Raum, mit der Rubrik „Meinung &amp; Analyse" vorn.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Menü -->
+    <section id="menue" aria-labelledby="h-menue">
+      <p class="num">Globale Navigation</p>
+      <h2 id="h-menue">Kopfzeile, Mega-Menü und Footer</h2>
+      <div class="prose">
+        <p>Auf dem Desktop (ab 1024 px) ist das Menü immer sichtbar. Der Hamburger bleibt nur für schmale Bildschirme. Ein Klick auf einen Raum öffnet das Mega-Menü. Es öffnet sich bewusst nicht beim Überfahren mit der Maus, damit es per Tastatur und Touch genauso funktioniert.</p>
+      </div>
+
+      <div class="mock" role="img" aria-label="Mockup der Desktop-Kopfzeile mit geöffnetem Mega-Menü für den Raum Bibliothek">
+        <div class="m-eco"><b>Wirkungsökonomie</b><span>Akademie ↗</span><span>Wirkungsinstitut ↗</span><span>Parlament ↗</span><span class="r"><span>Mein Wirkungsraum</span><span>EN</span></span></div>
+        <div class="m-main">
+          <span class="m-logo"><i></i>Wirkungsökonomie</span>
+          <span class="m-nav"><span>Verstehen</span><span>Für wen</span><span>Themen</span><span>Anwenden</span><span>Debatte &amp; Analyse</span><span class="on">Bibliothek ▾</span><span>Mitmachen</span></span>
+          <span class="m-search"><span class="m-field">Suchen … <kbd>/</kbd></span><span class="m-ki">Frag die WÖk</span></span>
+        </div>
+        <div class="m-mega">
+          <div>
+            <h5>Bibliothek</h5>
+            <ul>
+              <li>Werke &amp; Dokumente <span class="count">3.105</span></li>
+              <li>Das Grundlagenwerk · Online-Buch <span class="count">108 Kapitel</span></li>
+              <li>Begriffe <span class="count">2.161</span></li>
+              <li>Quellenarchiv <span class="count">1.485</span></li>
+              <li>WÖk-ID-Register <span class="count">621</span></li>
+              <li>Studienskripte <span class="count">49</span></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Hier anfangen</h5>
+            <ul>
+              <li>Geführter Weg: Grundlagen in 5 Werken</li>
+              <li>Working Papers</li>
+              <li>Zitieren und Belege prüfen</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Über diesen Raum</h5>
+            <p class="muted" style="font-size:.9rem">Alle Texte, Begriffe und Belege der Wirkungsökonomie, offen und zitierfähig.</p>
+            <p style="margin-top:8px"><span class="all">Zur Bibliothek →</span></p>
+          </div>
+        </div>
+        <div class="mock-cap">Desktop: zwei Zeilen. Oben die Ökosystem-Leiste, darunter die sieben Räume, ein Suchfeld mit Kurztaste „/" und „Frag die WÖk". Das Mega-Menü hat drei Spalten: Unterbereiche mit Zahlen aus dem Build, kuratierte Einstiege und einen Link zur Bereichs-Startseite.</div>
+      </div>
+
+      <div class="grid2" style="align-items:start">
+        <div class="phone" role="img" aria-label="Mockup der mobilen Navigation als Vollbild-Panel">
+          <div class="ph-top"><span class="m-logo" style="font-size:.95rem"><i></i>WÖk</span><span class="ic"><span>⌕ Suche</span><span>✕ Schließen</span></span></div>
+          <div class="ph-body">
+            <div class="ph-field">Begriffe, Themen, Quellen suchen …</div>
+            <div class="acc"><span>Verstehen</span><span>+</span></div>
+            <div class="acc"><span>Für wen</span><span>+</span></div>
+            <div class="acc open"><span>Themen</span><span>−</span></div>
+            <div class="acc-sub"><span>Alle Wirkungsfelder</span><span>Rente &amp; soziale Sicherung</span><span>Wohnen &amp; Stadt</span><span>Sicherheit &amp; Resilienz</span><span class="ok">Alle Themen →</span></div>
+            <div class="acc"><span>Anwenden</span><span>+</span></div>
+            <div class="acc"><span>Debatte &amp; Analyse</span><span>+</span></div>
+            <div class="acc"><span>Bibliothek</span><span>+</span></div>
+            <div class="acc"><span>Mitmachen</span><span>+</span></div>
+            <div class="ph-eco"><b>Frag die WÖk</b><span>Mein Wirkungsraum · English</span><span>Akademie ↗ · Institut ↗ · Parlament ↗</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <h4>Mobil (unter 1024 px)</h4>
+          <ul>
+            <li>Die Kopfzeile zeigt nur Logo, Suche und Menü. Das Suchsymbol öffnet ein Overlay, der Cursor steht sofort im Feld.</li>
+            <li>Das Menü ist ein Vollbild-Dialog. Ganz oben steht ein Suchfeld, dann folgen die sieben Räume als Akkordeon, ganz unten Ökosystem, „Frag die WÖk", Wirkungsraum und Sprache.</li>
+            <li>Die zweite Ebene im Akkordeon entspricht der ersten Spalte im Mega-Menü.</li>
+            <li>Technisch: <code>aria-modal</code>, Fokus bleibt im Dialog, Escape schließt, ein Schließen-Knopf steht im Panel. Die Seite dahinter scrollt nicht mit.</li>
+            <li>Die Ticker-eigene Tab-Leiste bleibt als lokale Bereichsnavigation erhalten, aber unter dem globalen Header, nicht an seiner Stelle.</li>
+          </ul>
+          <h4 style="margin-top:8px">Footer</h4>
+          <ul>
+            <li>Der Fat Footer wird zur Sitemap der sieben Räume, mit je 6 bis 8 Links aus derselben <code>navigation.json</code>.</li>
+            <li>Dazu kommen eine Ökosystem-Zeile, der Wirkungsbrief und das Rechtliche, jeweils einmal.</li>
+            <li>Der Footer steht auf allen Seiten, auch auf Bibliothekseinträgen, WÖk-ID-Register, Methodenraum und der 404-Seite.</li>
+            <li>Keine Links auf Weiterleitungen mehr: Statt auf <code>journal/</code> zeigen die Links direkt auf das Journal, statt auf <code>akademie/</code> direkt auf die Akademie.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seitenrahmen -->
+    <section id="rahmen" aria-labelledby="h-rahmen">
+      <p class="num">Lokale Navigation</p>
+      <h2 id="h-rahmen">Ein Seitenrahmen für alle Inhaltsseiten</h2>
+      <div class="prose">
+        <p>Jede Inhaltsseite bekommt denselben Rahmen. Das Vorbild im eigenen Haus sind die Kapitel des Online-Buchs. Der Rahmen beseitigt die Sackgassen, die das Audit auf Register-, Quellen-, Methoden- und Analyseseiten gefunden hat.</p>
+      </div>
+      <div class="grid2" style="align-items:start">
+        <div class="frame" role="img" aria-label="Schema des Seitenrahmens">
+          <div class="fr"><b>Globaler Header</b><span class="muted">Ökosystem-Leiste und sieben Räume, aktiver Raum markiert</span></div>
+          <div class="fr k"><b>Breadcrumb</b><span class="muted">Start › Bibliothek › Quellenarchiv › <strong>WÖK-Q-0324</strong></span></div>
+          <div class="fr-cols">
+            <div class="fr"><b>Bereichsnavigation</b><span class="muted">Geschwister im Bereich. Desktop: Seitenleiste; mobil: „In diesem Bereich"</span></div>
+            <div class="fr"><b>Inhalt</b><span class="muted">Inhaltsverzeichnis ab drei Zwischenüberschriften; Kasten „Was ist Wirkungsökonomie?" auf Einstiegsseiten</span></div>
+          </div>
+          <div class="fr-end">
+            <div class="fr k"><b>Nächster Schritt</b><span class="muted">Weiter in der Reihe: nächstes Kapitel, nächste Lektion, nächste Lage</span></div>
+            <div class="fr k"><b>Verwandt</b><span class="muted">bis zu 6 Links über Bereichsgrenzen: Begriffe, Dokumente, Werkzeuge, Felder</span></div>
+            <div class="fr k"><b>Verwendet in</b><span class="muted">Rückverweise: Kapitel und Seiten, die diese Quelle oder ID nutzen</span></div>
+          </div>
+          <div class="fr"><b>Footer</b><span class="muted">überall derselbe</span></div>
+        </div>
+        <div class="box">
+          <h4>Regeln für den Rahmen</h4>
+          <ul>
+            <li><strong>Breadcrumb:</strong> beginnt immer mit „Start" und folgt dem Weg Raum › Bereich › Unterbereich. Die aktuelle Seite steht am Ende, unverlinkt und mit <code>aria-current="page"</code>.
+              <ul>
+                <li>Der Pfad kommt aus der kanonischen Heimat, nicht aus dem URL-Slug und nicht aus dem Dateinamen.</li>
+                <li>Einheitliches <code>aria-label="Brotkrumen"</code> plus <code>BreadcrumbList</code> als strukturierte Daten.</li>
+                <li>Mobil zeigt er die letzten zwei Ebenen mit „…" davor.</li>
+              </ul>
+            </li>
+            <li><strong>Bereichsnavigation</strong> nur dort, wo es viele Geschwister gibt: Wirkungsfeld-Unterseiten, Verstehen, Instrumente, Methodenraum, Radar-Module, Online-Buch, Akademie-Lernpfade.</li>
+            <li><strong>Seitenende-Block ist Pflicht:</strong> Mindestens einer der drei Blöcke muss gefüllt sein, sonst schlägt die Build-Prüfung fehl.</li>
+            <li><strong>„Verwandt"</strong> kommt aus <code>relationship-manifest.json</code> und wird beim Build statisch eingesetzt. Die Daten gibt es schon, sie werden bisher nur in „Mein Wirkungsraum" gezeigt.</li>
+            <li><strong>„Verwendet in"</strong> sind Rückverweise, die beim Build berechnet werden. Für das Quellenarchiv und das WÖk-ID-Register ist das der wichtigste neue Weg.</li>
+            <li><strong>Einsteiger-Kasten</strong> „Was ist Wirkungsökonomie?" auf Analysen, Ticker-Meldungen, Radar-Karten, Rollen- und Feldseiten. Er ist einklappbar und hat zwei Sätze. Den Text liefert Codex.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hubs -->
+    <section id="hubs" aria-labelledby="h-hubs">
+      <p class="num">Bereichs-Startseiten</p>
+      <h2 id="h-hubs">Ein Muster für jede Bereichs-Startseite</h2>
+      <div class="grid2" style="align-items:start">
+        <div class="frame" role="img" aria-label="Schema einer Bereichs-Startseite">
+          <div class="fr k"><b>1 · Kopf</b><span class="muted">Name aus dem Benennungsregister, ein Satz Zweck, Zahl aus dem Build</span></div>
+          <div class="fr k"><b>2 · Suche in diesem Bereich</b><span class="muted">dieselbe Suchmaschine, auf den Bereich gefiltert</span></div>
+          <div class="fr"><b>3 · Hier anfangen</b><span class="muted">3 bis 6 kuratierte Einstiege</span></div>
+          <div class="fr k"><b>4 · Alle Unterbereiche</b><span class="muted">als Kacheln, ausnahmslos alle</span></div>
+          <div class="fr k"><b>5 · Vollständige Liste</b><span class="muted">Filter mit Trefferzahlen, A–Z oder chronologisch, blätterbar mit 50 pro Seite als statische Seiten</span></div>
+          <div class="fr"><b>6 · Seitenende</b><span class="muted">verwandte Räume, nächster Schritt, Footer</span></div>
+        </div>
+        <div class="box">
+          <h4>Regeln</h4>
+          <ul>
+            <li>Eine Bereichs-Startseite verlinkt <strong>100 % ihrer Unterbereiche</strong>. Die Build-Prüfung zählt das nach.</li>
+            <li>Lange Listen werden auf <strong>statische Folgeseiten</strong> verteilt (<code>…/seite/2/</code>). Diese Seiten sind crawlbar und funktionieren ohne JavaScript. Das ersetzt die 1,5 bis 4,25 MB großen Einzelseiten.</li>
+            <li>Filter entstehen aus den Daten, mit <strong>Trefferzahlen und Klartext</strong>. Rohcodes wie <code>curated-publication</code> oder 854 Chips auf einer Seite fallen weg.</li>
+            <li>Ziel für die erste Ladung einer Bereichs-Startseite: <strong>unter 300 KB HTML</strong>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Bereichs-Startseite</th><th>Heute</th><th>Ziel</th></tr></thead>
+          <tbody>
+            <tr><td>Wirkungsradar</td><td>6 von 31 Unterbereichen verlinkt, 386 Seiten verwaist</td><td>alle 31 Module verlinkt; Debattenkarten und Narrative als blätterbare Listen</td></tr>
+            <tr><td>WÖk-ID-Register</td><td>Einträge nur per JavaScript, 621 ohne eingehenden Link, kein Footer</td><td>statische, blätterbare Liste nach Typ und SDG; Rückverweise „Verwendet in"</td></tr>
+            <tr><td>Wirkungsticker</td><td>Archiv nur über eine Blätterkette (Median 6, maximal 16 Klicks), 64 Lagen verwaist</td><td>Lage-Archiv nach Datum (Monat › Tag), Meldungen und Analysen als blätterbare Listen</td></tr>
+            <tr><td>Bibliothek</td><td>3,9 MB, alle Einträge auf einer Seite, Spiegelkarten, Studienskripte verwaist</td><td>Katalog nur echter Werke, blätterbar; Studienskripte und Leserfassungen eingehängt</td></tr>
+            <tr><td>Begriffe</td><td>4,25 MB, 854 Filter-Chips</td><td>A–Z blätterbar, sechs Filtergruppen mit Trefferzahlen</td></tr>
+            <tr><td>Quellenarchiv</td><td>1.333 von 1.485 verlinkt; drei verschiedene Gesamtzahlen</td><td>alle 1.485 verlinkt, eine Zahl, Rückverweise auf die Fundstellen</td></tr>
+            <tr><td>Erleben / Werkzeuge</td><td>Erleben verlinkt 4 von 22 Demos; <code>tools/</code> hat keinen Link</td><td>Werkzeuge als einzige Bereichs-Startseite mit Filter „Rechner / Demo / Methode / Check"; <code>tools/</code> leitet weiter</td></tr>
+            <tr><td>Wirkungssteuerung</td><td>11 von 19 Bausteinen verlinkt</td><td>alle 19 (WStG, WUStG, WEStG, CSRD, DPP …)</td></tr>
+            <tr><td>Methodenraum</td><td>keine <code>index.html</code>, kein Footer, nicht in Sitemap und Suche</td><td><code>methodenraum/</code> als echte Startseite im Raum Anwenden</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Suche -->
+    <section id="suche" aria-labelledby="h-suche">
+      <p class="num">Suche</p>
+      <h2 id="h-suche">Die Suche wird der Haupteingang</h2>
+      <div class="grid2" style="align-items:start">
+        <div role="img" aria-label="Mockup der Live-Vorschläge im Header-Suchfeld">
+          <div class="sugg">
+            <div class="q">reverse me|</div>
+            <h6>Begriff</h6>
+            <div class="it"><strong>Reverse Merit Order</strong><small>Das schwächste relevante Wirkungsfeld begrenzt die Gesamtbewertung.</small></div>
+            <h6>Seiten</h6>
+            <div class="it">Reverse Merit Order <small>Instrumente der Wirkungssteuerung</small></div>
+            <div class="it">Reverse Merit Order berechnen <small>Anwenden · Werkzeug</small></div>
+            <div class="it">Kapitel 34: Bewertung ohne Verrechnung <small>Online-Buch</small></div>
+            <div class="ki">Alle Treffer für „reverse me" · Frag die WÖk →</div>
+          </div>
+          <p class="muted" style="font-size:.86rem;margin-top:10px">Live-Vorschläge ab zwei Zeichen. Begriffe erscheinen mit Kurzdefinition, Seiten mit ihrem Raum. Enter öffnet die volle Ergebnisseite.</p>
+        </div>
+        <div class="box">
+          <h4>Was sich ändert</h4>
+          <ul>
+            <li><strong>100 % Abdeckung:</strong> Der Index entsteht aus „alle öffentlichen, indexierbaren Seiten minus Ausschlussliste" statt aus einer festen Verzeichnisliste. Weiterleitungen fliegen raus, HTML-Entities werden decodiert.</li>
+            <li><strong>Zwei Stufen:</strong> ein kleiner Vorschlags-Index (rund 150 KB: Titel, Begriffe, Aliase) für das Tippen, dazu ein Volltext, der in Teilen pro Bereich nachgeladen wird.
+              <ul><li>Codex prüft, ob Pagefind passt (das Markup steht schon auf 13.224 Seiten) oder ob die eigene Suche erweitert wird. Kriterien: Größe, Rechenlast auf dem Handy, Facetten, deutsche Wortformen, vorhandenes Synonym- und Tippfehler-Wörterbuch.</li></ul>
+            </li>
+            <li><strong>Ergebnisseite:</strong>
+              <ul>
+                <li>Begriffe als Direktantwort oben.</li>
+                <li>Gruppen nach Raum mit „Alle N in …".</li>
+                <li>Blättern statt fester 24 Treffer.</li>
+                <li>Abschnitts-Sprünge als Untertreffer.</li>
+                <li>Filter aus der URL-Taxonomie (Raum, Typ, Thema, Rolle, Datum) mit Trefferzahlen.</li>
+                <li>Ticker-Meldungen als eigene, niedrig gewichtete Gruppe.</li>
+              </ul>
+            </li>
+            <li><strong>Leere Treffer:</strong> Tippfehler-Vorschlag, „Frag die WÖk: ‹Anfrage›" über <code>woek-ki/?frage=</code>, dazu die Bereichs-Startseiten.</li>
+            <li><strong>Frag die WÖk ↔ Suche:</strong> KI-Antworten verlinken ihre Quellen im selben Tab und bieten „In der Suche weiterlesen".</li>
+            <li><strong>Eine Routenliste</strong> speist Sitemap, Suchindex und die Zahlen im Menü. Die Sitemap wird nach Bereichen in einen Sitemap-Index aufgeteilt.</li>
+            <li><strong>Englisch:</strong> eigener Index aus <code>en/**</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verknüpfen -->
+    <section id="verknuepfen" aria-labelledby="h-verknuepfen">
+      <p class="num">Querverweise und Kanonik</p>
+      <h2 id="h-verknuepfen">Ein Thema, eine Heimat, klar benannte Nebenrollen</h2>
+      <div class="prose">
+        <p>Viele Konzepte gibt es mehrfach, zum Beispiel T-SROI unter mindestens 15 URLs und Reverse Merit Order unter mindestens 9. Gelöscht wird keine davon. Jede Seite bekommt eine feste Rolle, und die Seiten verweisen mit festen Bezeichnungen aufeinander.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Rolle</th><th>Kanonischer Ort</th><th>Linktext auf den anderen Seiten</th></tr></thead>
+          <tbody>
+            <tr><td>Kurzdefinition</td><td><code>begriffe/&lt;slug&gt;/</code></td><td>„Kurzdefinition"</td></tr>
+            <tr><td>Konzept und Herleitung</td><td><code>wirkungssteuerung/&lt;baustein&gt;/</code> bzw. Verstehen</td><td>„Konzept"</td></tr>
+            <tr><td>Ausprobieren</td><td><code>werkzeuge/&lt;tool&gt;/</code></td><td>„Ausprobieren"</td></tr>
+            <tr><td>Im Buch</td><td><code>referenz/kapitel-…/</code></td><td>„Im Buch"</td></tr>
+            <tr><td>Originaldokument</td><td>ein Katalogeintrag in der Bibliothek</td><td>„Dokument"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="prose">
+        <li>Doppelte Bereichs-Startseiten werden zusammengeführt: <code>verstehen.html</code>, <code>erleben.html</code>, <code>anwendungen.html</code>, <code>downloads.html</code>, <code>sdg-plus.html</code>, <code>register/</code>, <code>fragen/</code>. Sie leiten weiter und tragen ein Canonical.</li>
+        <li>Die Doppel-Module im Radar werden zusammengeführt: Live und Debattenkarten, Resonanz und Resonanz-Kompass, Ursachen und Ursachen-Navigator.</li>
+        <li>Die Glossar-Verlinkung bleibt. Ihre 1,26 MB Daten werden aber erst nach dem Seitenaufbau geladen, und nur die Begriffe, die auf der Seite vorkommen. Die Liste dafür entsteht beim Build.</li>
+      </ul>
+    </section>
+
+    <!-- Namen -->
+    <section id="namen" aria-labelledby="h-namen">
+      <p class="num">Benennungsregister</p>
+      <h2 id="h-namen">Ein Name pro Sache, überall</h2>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Künftiger Name</th><th>Ersetzt</th><th>Wo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Debatte &amp; Analyse</strong></td><td>Debatte &amp; Radar, Öffentlicher Wirkungsraum</td><td>Raum im Menü</td></tr>
+            <tr><td><strong>Wirkungsradar</strong></td><td>Debatten-Kompass (als Bereichsname)</td><td>Bereich; „Debattenkarte" bleibt als Inhaltstyp</td></tr>
+            <tr><td><strong>Meinung &amp; Analyse</strong></td><td>Journal, Blog, Ticker-Analysen (als Rubrik)</td><td>eine Rubrik mit beiden Quellen</td></tr>
+            <tr><td><strong>Wirkungsticker</strong>, Tab „Meldungen"</td><td>Ticker-Tab „News"</td><td>Bereich</td></tr>
+            <tr><td><strong>Neu auf der Website</strong></td><td>Neues aus der WÖk, Updates (news/, updates/)</td><td>ein Änderungsprotokoll</td></tr>
+            <tr><td><strong>Anwenden</strong></td><td>Praxis &amp; Tools, Methoden &amp; Werkzeuge, Tools der WÖk</td><td>Raum im Menü</td></tr>
+            <tr><td><strong>Werkzeuge</strong></td><td>Toolkarten, Interaktive Demos (als Sammelname)</td><td>Bereich in Anwenden</td></tr>
+            <tr><td><strong>Bibliothek</strong> / <strong>Werke &amp; Dokumente</strong></td><td>Downloadzentrum, Fachbibliothek, Dokumentenbibliothek, Wissensraum, „Alle Dokumente bleiben sichtbar"</td><td>Raum / Katalog</td></tr>
+            <tr><td><strong>Das Grundlagenwerk</strong> / <strong>Online-Buch</strong></td><td>Referenz, Referenzportal, Buch online</td><td>Buchseite / Lesefassung</td></tr>
+            <tr><td><strong>Begriffe</strong></td><td>Glossar (bleibt als Suchwort)</td><td>Bereich in Bibliothek</td></tr>
+            <tr><td><strong>WÖk-ID-Register</strong></td><td>WÖk-Masterregister, Register, MasterItems</td><td>Bereich in Bibliothek</td></tr>
+            <tr><td><strong>Wirkungsinstitut</strong></td><td>Institut, Institut für Wirkungsökonomie</td><td>Ökosystem-Leiste</td></tr>
+            <tr><td><strong>Akademie</strong></td><td>Lernen, Lernportal, Akademie v4.0</td><td>Ökosystem-Leiste</td></tr>
+            <tr><td><strong>Frag die WÖk</strong></td><td>WÖk-KI, KI</td><td>Kopfzeile</td></tr>
+            <tr><td><strong>Fragen &amp; Einwände</strong></td><td>FAQ, Einwände (doppelte Seiten)</td><td>Verstehen</td></tr>
+            <tr><td><strong>Mein Wirkungsraum</strong></td><td>Ticker-Merkzettel, Akademie-Wirkungsraum (langfristig zusammenführen)</td><td>Ökosystem-Leiste</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Umzug -->
+    <section id="umzug" aria-labelledby="h-umzug">
+      <p class="num">Umzugsplan</p>
+      <h2 id="h-umzug">Jeder Bestandsbereich bekommt eine Heimat</h2>
+      <div class="prose">
+        <p>
+          <span class="tag t-keep">Behalten</span> bleibt kanonisch.
+          <span class="tag t-hang">Einhängen</span> bekommt einen sichtbaren Platz in einem Raum.
+          <span class="tag t-redir">Weiterleiten</span> wird zur Weiterleitungsseite mit Canonical, die URL bleibt.
+          <span class="tag t-arch">Archiv</span> wird auf noindex gesetzt und bekommt einen Archiv-Hinweis; die URL bleibt erreichbar.
+        </p>
+      </div>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Bestand</th><th>Raum</th><th>Aktion</th><th>Anmerkung</th></tr></thead>
+          <tbody>
+            <tr><td>verstehen/</td><td>Verstehen</td><td><span class="tag t-keep">Behalten</span></td><td>Bereichs-Startseite; Ausgangslage einhängen</td></tr>
+            <tr><td>verstehen.html, wirkungsoekonomie.html, modell.html, so-wirkt…, funktionsweise/, ordnung/, mehr.html, kompass.html, vergleich.html</td><td>Verstehen</td><td><span class="tag t-hang">Einhängen</span></td><td>als Kinder; <code>verstehen.html</code> leitet auf <code>verstehen/</code> weiter</td></tr>
+            <tr><td>wirkungssteuerung/</td><td>Verstehen</td><td><span class="tag t-hang">Einhängen</span></td><td>„Instrumente der Wirkungssteuerung", alle 19 Bausteine</td></tr>
+            <tr><td>verstehen/sdgs-sdgplus/</td><td>Verstehen</td><td><span class="tag t-keep">Behalten</span></td><td><code>sdg-sdgplus/</code>, <code>sdg-plus.html</code>, <code>sdg-plus/</code> leiten weiter</td></tr>
+            <tr><td>einwaende/</td><td>Verstehen</td><td><span class="tag t-keep">Behalten</span></td><td><code>fragen/</code> und <code>faq/</code> leiten weiter</td></tr>
+            <tr><td>fuer/</td><td>Für wen</td><td><span class="tag t-keep">Behalten</span></td><td>alle 14 Rollen verlinken (heute 13 von 17)</td></tr>
+            <tr><td>wirkungsfelder/</td><td>Themen</td><td><span class="tag t-keep">Behalten</span></td><td><code>wirkungsfinanzpolitik</code> einhängen; Doppel <code>gesundheit</code> / <code>gesundheit-pflege</code> und <code>dossier</code> / <code>dossiers</code> klären</td></tr>
+            <tr><td>portale/</td><td>Themen</td><td><span class="tag t-hang">Einhängen</span></td><td>9 Portale als Querschnittsthemen; die Sammelseite „Website 1.0" kommt ins Archiv</td></tr>
+            <tr><td>anwendungen.html</td><td>Themen</td><td><span class="tag t-redir">Weiterleiten</span></td><td>auf <code>wirkungsfelder/</code>, aus der Sitemap nehmen</td></tr>
+            <tr><td>werkzeuge/</td><td>Anwenden</td><td><span class="tag t-keep">Behalten</span></td><td>einzige Werkzeug-Startseite mit Filter</td></tr>
+            <tr><td>erleben/</td><td>Anwenden</td><td><span class="tag t-hang">Einhängen</span></td><td>alle 22 Demos verlinken; <code>erleben.html</code> leitet weiter</td></tr>
+            <tr><td>methodenraum.html, methodenraum/</td><td>Anwenden</td><td><span class="tag t-hang">Einhängen</span></td><td><code>methodenraum/index.html</code> anlegen, Header und Footer ergänzen</td></tr>
+            <tr><td>tools/, scanner.html, ausprobieren/</td><td>Anwenden</td><td><span class="tag t-redir">Weiterleiten</span></td><td>auf <code>werkzeuge/</code></td></tr>
+            <tr><td>stranded-assets/, pilot-starten/</td><td>Anwenden</td><td><span class="tag t-hang">Einhängen</span></td><td>sichtbar im Mega-Menü</td></tr>
+            <tr><td>oeffentlicher-wirkungsraum/</td><td>Debatte &amp; Analyse</td><td><span class="tag t-keep">Behalten</span></td><td>wird die Startseite des Raums</td></tr>
+            <tr><td>wirkungsradar/</td><td>Debatte &amp; Analyse</td><td><span class="tag t-keep">Behalten</span></td><td>alle 31 Module; Doppel-Module zusammenführen</td></tr>
+            <tr><td>wirkungsticker/</td><td>Debatte &amp; Analyse</td><td><span class="tag t-keep">Behalten</span></td><td>neues Lage-Archiv; globaler Header statt des alten</td></tr>
+            <tr><td>blog.html, journal/</td><td>Debatte &amp; Analyse</td><td><span class="tag t-keep">Behalten</span></td><td>Rubrik „Meinung &amp; Analyse"; Footer verlinkt direkt</td></tr>
+            <tr><td>news/, updates/</td><td>Debatte &amp; Analyse</td><td><span class="tag t-hang">Einhängen</span></td><td>werden zu „Neu auf der Website"; die 669 Weiterleitungen in <code>news/</code> bleiben</td></tr>
+            <tr><td>podcast/</td><td>Debatte &amp; Analyse</td><td><span class="tag t-keep">Behalten</span></td><td>in die Sitemap aufnehmen</td></tr>
+            <tr><td>bibliothek/</td><td>Bibliothek</td><td><span class="tag t-keep">Behalten</span></td><td>Katalog echter Werke; Canonical und Footer ergänzen</td></tr>
+            <tr><td>bibliothek/eintraege/online-version-* (2.249)</td><td>Bibliothek</td><td><span class="tag t-arch">Archiv</span></td><td>Spiegelkarten raus aus Katalog und Zählern; das Original bleibt</td></tr>
+            <tr><td>referenz/</td><td>Bibliothek</td><td><span class="tag t-keep">Behalten</span></td><td>Online-Buch; in die Sitemap aufnehmen</td></tr>
+            <tr><td>begriffe/</td><td>Bibliothek</td><td><span class="tag t-keep">Behalten</span></td><td><code>glossar.html</code> und <code>glossar/</code> bleiben Weiterleitungen; 243 interne Links auf <code>begriffe/</code> umstellen</td></tr>
+            <tr><td>quellenarchiv/</td><td>Bibliothek</td><td><span class="tag t-keep">Behalten</span></td><td>einziges Quellenregister; <code>evidenz/</code> bleibt als kuratierte Einführung</td></tr>
+            <tr><td>woek-id-register/</td><td>Bibliothek</td><td><span class="tag t-keep">Behalten</span></td><td><code>register/</code> zusammenführen; globaler Header und Footer</td></tr>
+            <tr><td>dokumente/</td><td>Bibliothek</td><td><span class="tag t-keep">Behalten</span></td><td>einzige Lesefassung je Dokument; Canonical ergänzen</td></tr>
+            <tr><td>downloads.html</td><td>Bibliothek</td><td><span class="tag t-redir">Weiterleiten</span></td><td>auf <code>bibliothek/</code></td></tr>
+            <tr><td>downloads/ (Rang-Pakete), fachbibliothek/, website-1-0-release/</td><td>Bibliothek</td><td><span class="tag t-arch">Archiv</span></td><td>interne Release-Schicht; aus Menü, Suche und Sitemap nehmen</td></tr>
+            <tr><td>lernen/, akademie.html</td><td>Ökosystem</td><td><span class="tag t-keep">Behalten</span></td><td>Brückenseite zur Akademie; <code>akademie/</code> bleibt Weiterleitung</td></tr>
+            <tr><td>institut/</td><td>Ökosystem</td><td><span class="tag t-keep">Behalten</span></td><td>Brückenseite zum Institut, aktueller Header</td></tr>
+            <tr><td>parlament/</td><td>Ökosystem</td><td><span class="tag t-keep">Behalten</span></td><td>Brückenseite; heute nur drei eingehende Links</td></tr>
+            <tr><td>mitmachen.html, umfragen/, ueber.html, natalie-weber.html</td><td>Mitmachen</td><td><span class="tag t-hang">Einhängen</span></td><td>im Raum Mitmachen gebündelt</td></tr>
+            <tr><td>woek-ki/, mein-wirkungsraum/, suche.html, app/</td><td>Kopfzeile</td><td><span class="tag t-keep">Behalten</span></td><td>Werkzeuge der Kopfzeile, keine Raum-Zuordnung</td></tr>
+            <tr><td>Finder-Dubletten „index 2.html" (18)</td><td>–</td><td><span class="tag t-arch">Archiv</span></td><td>noindex; Ursache im Build abstellen</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Ökosystem -->
+    <section id="oekosystem" aria-labelledby="h-oeko">
+      <p class="num">Ökosystem und Englisch</p>
+      <h2 id="h-oeko">Website, Akademie, Institut und Parlament als ein Haus</h2>
+      <div class="grid2">
+        <div class="box">
+          <h4>Ökosystem-Leiste</h4>
+          <ul>
+            <li>Eine schmale Leiste über jeder Kopfzeile, auf allen Domains gleich: Wirkungsökonomie · Akademie · Wirkungsinstitut · Wirkungsportal Parlament. Die aktuelle Welt ist markiert.</li>
+            <li>Heute verlinkt die Hauptseite keine Subdomain im Header oder Footer, und die Akademie-App verweist nur über Impressum und Datenschutz zurück.</li>
+            <li>Die Leiste wird als kleines gemeinsames Bauteil definiert (Markup, CSS, Labels), das jede App übernimmt.</li>
+            <li>Langfristig gibt es einen gemeinsamen „Mein Wirkungsraum" statt drei Konzepten.</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4>Englisch</h4>
+          <ul>
+            <li>Der Sprachschalter führt auf die passende Seite. Wo es keine englische Fassung gibt, führt er auf die englische Übersicht, gekennzeichnet als „English overview".</li>
+            <li>Der englische Header kommt aus derselben <code>navigation.json</code>, nur mit englischen Labels, nicht mit Ankern auf der Startseite.</li>
+            <li>Sofort-Fix: „Frag die WÖk" führt im englischen Header auf <code>en/</code> statt auf <code>en/woek-ai/</code>. Ursache ist ein veralteter Schlüssel in <code>normalize-site-header.mjs</code>.</li>
+            <li><code>hreflang</code>-Paare für alle übersetzten Seiten; heute gibt es nur fünf.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- A11y -->
+    <section id="a11y" aria-labelledby="h-a11y">
+      <p class="num">Barrierefreiheit und Tempo</p>
+      <h2 id="h-a11y">Pflichten, die die Build-Prüfung kontrolliert</h2>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Punkt</th><th>Heute</th><th>Ziel</th></tr></thead>
+          <tbody>
+            <tr><td>Skip-Link</td><td><span class="no">kaputt auf 557 Seiten</span> (Ziel-ID stimmt nicht)</td><td>zeigt immer auf das tatsächliche <code>main</code></td></tr>
+            <tr><td>Aktiver Menüpunkt</td><td><code>aria-current="page"</code> mehrfach pro Seite und für ganze Bereiche</td><td><code>page</code> nur für die aktuelle Seite, <code>true</code> für den aktiven Raum</td></tr>
+            <tr><td>Navigation ohne JavaScript</td><td><span class="no">keine Navigation</span> auf Seiten ohne <code>main.js</code> (zum Beispiel WÖk-Wirkungscheck)</td><td>Menü-Links stehen im HTML und funktionieren ohne Skript</td></tr>
+            <tr><td>Mega-Menü</td><td>nicht vorhanden</td><td>Disclosure-Muster mit <code>button</code>, <code>aria-expanded</code> und <code>aria-controls</code></td></tr>
+            <tr><td>Mobiles Menü</td><td>Fokusfalle ohne <code>aria-modal</code>, Schnellzugriffe doppelt im Accessibility-Tree</td><td>echter Dialog, jeder Link nur einmal</td></tr>
+            <tr><td>Breadcrumb</td><td>rund 5.000 ohne Label, eine Variante als <code>&lt;p&gt;</code></td><td>einheitliches <code>nav</code> mit Label und <code>BreadcrumbList</code></td></tr>
+            <tr><td>Gewicht der Bereichs-Startseiten</td><td>bis 4,25 MB</td><td>unter 300 KB in der ersten Ladung</td></tr>
+            <tr><td>Glossar-Daten</td><td>1,26 MB auf jeder Seite</td><td>nach dem Seitenaufbau, nur benötigte Begriffe</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Leitplanken -->
+    <section id="leitplanken" aria-labelledby="h-leit">
+      <p class="num">Leitplanken</p>
+      <h2 id="h-leit">So geht nichts verloren</h2>
+      <ul class="prose">
+        <li><strong>Keine URL wird entfernt.</strong> Die bestehende Prüfung gegen <code>reports/url-baseline.txt</code> bleibt das Tor. Zusammenführen heißt immer Weiterleitungsseite plus Canonical.</li>
+        <li><strong>Archiv ist kein Löschen.</strong> Archivierte Seiten bleiben erreichbar, tragen einen Hinweis und verlinken auf ihre aktuelle Heimat. Sie verschwinden nur aus Menü, Suche und Sitemap.</li>
+        <li><strong>Erfolgreiche Inhalte bleiben, wo sie wirken.</strong> Teaser, Werbevideos, Merken, Quiz und PDF-Funktionen werden nicht ohne ausdrückliche Rückbestätigung verschoben.</li>
+        <li><strong>Gebaute Seiten werden verglichen.</strong> Vor jedem Umbau werden die Verweise der gebauten Seite gegen die bestehende geprüft. Ein gescheiterter Build blockiert jede Veröffentlichung.</li>
+        <li><strong>Größenlimit von GitHub Pages:</strong> Das Blättern erzeugt neue, aber kleine Seiten, die Monolithen schrumpfen. Die Bilanz wird pro Phase gemessen.</li>
+      </ul>
+    </section>
+
+    <!-- Messung -->
+    <section id="messung" aria-labelledby="h-messung">
+      <p class="num">Zielwerte</p>
+      <h2 id="h-messung">Woran man sieht, dass es wirkt</h2>
+      <div class="tw wide">
+        <table>
+          <thead><tr><th>Kennzahl</th><th>Heute</th><th>Ziel</th><th>Gemessen durch</th></tr></thead>
+          <tbody>
+            <tr><td>Seiten in höchstens 3 Klicks ab Start</td><td class="n">56 %</td><td class="n">≥ 95 %</td><td>Linkgraph im Build</td></tr>
+            <tr><td>Über keinen Link erreichbar</td><td class="n">2.157 (12 %)</td><td class="n">0 (außer Archiv)</td><td>Linkgraph im Build</td></tr>
+            <tr><td>Suchabdeckung der indexierbaren Seiten</td><td class="n">≈ 30 %</td><td class="n">≥ 98 %</td><td>Abgleich Index ↔ Routenliste</td></tr>
+            <tr><td>Sitemap-Abdeckung</td><td class="n">29 %</td><td class="n">100 %</td><td>Abgleich Sitemap ↔ Routenliste</td></tr>
+            <tr><td>Header-Varianten</td><td class="n">≥ 10</td><td class="n">1</td><td>Hash-Zensus im Build</td></tr>
+            <tr><td>Inhaltsseiten ohne Footer</td><td class="n">≈ 4.000</td><td class="n">0</td><td>Zensus im Build</td></tr>
+            <tr><td>Seiten mit strukturiertem Breadcrumb</td><td class="n">0</td><td class="n">100 % der Inhaltsseiten</td><td>Zensus im Build</td></tr>
+            <tr><td>Bereichs-Startseiten, die alle Unterbereiche verlinken</td><td>z. B. Radar 6/31</td><td class="n">100 %</td><td>Hub-Prüfung</td></tr>
+            <tr><td>Größte Bereichs-Startseite</td><td class="n">4,25 MB</td><td class="n">&lt; 300 KB</td><td>Größenprüfung</td></tr>
+            <tr><td>Kaputte Skip-Links</td><td class="n">557</td><td class="n">0</td><td>A11y-Prüfung</td></tr>
+            <tr><td>Suchen ohne Treffer</td><td>unbekannt</td><td class="n">&lt; 5 %</td><td>datensparsame Zählung über die Supabase-Funktion</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">Alle Werte außer dem letzten lassen sich statisch messen. Die vorhandene Prüfung <code>check-navigation-discovery.mjs</code> wird um einen Navigationsbericht erweitert. Er läuft bei jedem Pull Request und zeigt die Entwicklung.</p>
+    </section>
+
+    <!-- Phasen -->
+    <section id="phasen" aria-labelledby="h-phasen">
+      <p class="num">Umsetzung</p>
+      <h2 id="h-phasen">Fünf Phasen, klare Aufteilung</h2>
+      <div class="prose"><p>Ich übernehme Gestaltung, Bauteile und Barrierefreiheit (Claude). Codex übernimmt Daten, Build, Inhalte und die Prüfungen. Jede Phase ist für sich veröffentlichbar und verbessert die Seite sofort.</p></div>
+      <div class="phases">
+        <div class="phase">
+          <div class="phase-head"><span class="num">Phase 0</span><h3>Fundament: eine Quelle, keine Brüche</h3></div>
+          <div class="cols">
+            <div><p class="who">Codex</p><ul>
+              <li><code>navigation.json</code> als einzige Quelle; alle Generatoren nutzen eine gemeinsame Header- und Footer-Funktion, auch die Ticker-Läufe</li>
+              <li>Footer auf allen Seiten; Links auf Weiterleitungen ersetzen</li>
+              <li>Skip-Links und den englischen Link zu „Frag die WÖk" reparieren; <code>main.js</code> auch auf dem Wirkungscheck einbinden</li>
+              <li>Weiterleitungsseiten aus dem Suchindex nehmen</li>
+            </ul></div>
+            <div><p class="who">Claude</p><ul>
+              <li>Header- und Footer-Bauteil (Markup, CSS, Barrierefreiheit) als Referenz</li>
+              <li>Benennungsregister final abstimmen</li>
+              <li>Navigationsbericht als Prüfspezifikation</li>
+            </ul></div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-head"><span class="num">Phase 1</span><h3>Finden: Suche, Sitemap, verwaiste Seiten</h3></div>
+          <div class="cols">
+            <div><p class="who">Codex</p><ul>
+              <li>Eine Routenliste für Sitemap (aufgeteilt nach Bereichen), Suchindex und Zahlen</li>
+              <li>Suche mit 100 % Abdeckung, Facetten aus der Taxonomie, Pagefind prüfen</li>
+              <li>Bereichs-Startseiten verlinken alle Kinder: Radar, Erleben, Wirkungssteuerung, Register (statisch), Lage-Archiv, Studienskripte, 152 Quellen</li>
+            </ul></div>
+            <div><p class="who">Claude</p><ul>
+              <li>Such-Erlebnis: Feld in der Kopfzeile, Vorschläge, Ergebnisseite, Umgang mit leeren Treffern, Brücke zu „Frag die WÖk"</li>
+            </ul></div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-head"><span class="num">Phase 2</span><h3>Orientieren: Menü und Seitenrahmen</h3></div>
+          <div class="cols">
+            <div><p class="who">Claude</p><ul>
+              <li>Sichtbares Desktop-Menü mit Mega-Menü, mobiles Vollbild-Panel, Ökosystem-Leiste</li>
+              <li>Vorlagen für Bereichs-Startseiten, Breadcrumb und Seitenrahmen</li>
+              <li>Startseiten-Abschnitt B an die sieben Räume angleichen</li>
+            </ul></div>
+            <div><p class="who">Codex</p><ul>
+              <li>Kanonische Heimat je Seite als Daten; daraus Breadcrumb und <code>BreadcrumbList</code></li>
+              <li>Statisches Blättern für lange Listen; Mega-Menü-Zahlen aus dem Build</li>
+            </ul></div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-head"><span class="num">Phase 3</span><h3>Verknüpfen: Querverweise und Bereinigung</h3></div>
+          <div class="cols">
+            <div><p class="who">Codex</p><ul>
+              <li>„Verwandt" und „Verwendet in" beim Build ausspielen</li>
+              <li>Doppelte Startseiten und Radar-Module zusammenführen, Themen-Dubletten mit Rollen versehen</li>
+              <li>Spiegelkarten und interne Release-Schicht ins Archiv</li>
+            </ul></div>
+            <div><p class="who">Claude</p><ul>
+              <li>Gestaltung des Seitenende-Blocks und des Einsteiger-Kastens</li>
+              <li>Glossar-Verlinkung leichter machen</li>
+            </ul></div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-head"><span class="num">Phase 4</span><h3>Ökosystem und Englisch</h3></div>
+          <div class="cols">
+            <div><p class="who">Codex mit den App-Repos</p><ul>
+              <li>Ökosystem-Leiste in Akademie, Institut und Parlament</li>
+              <li>Englische Navigation aus <code>navigation.json</code>, Sprachschalter auf die passende Seite, englischer Suchindex</li>
+            </ul></div>
+            <div><p class="who">Claude</p><ul>
+              <li>Gemeinsames Leisten-Bauteil, Prüfung der Einheitlichkeit über alle Domains</li>
+            </ul></div>
+          </div>
+        </div>
+      </div>
+      <div class="box gold">
+        <p><strong>Abhängigkeit:</strong> Die neue Seite zum Marktmechanismus, die Codex gerade schreibt, bekommt im Raum Verstehen direkt den zweiten Platz nach dem Einstieg. Im Mega-Menü und im Breadcrumb ist er dafür reserviert.</p>
+      </div>
+    </section>
+
+    <!-- Entscheidungen -->
+    <section id="entscheidungen" aria-labelledby="h-ent">
+      <p class="num">Entscheidungen</p>
+      <h2 id="h-ent">Was ich von dir brauche</h2>
+      <ol class="decisions">
+        <li><strong>Sieben Räume plus Ökosystem-Leiste:</strong> Verstehen · Für wen · Themen · Anwenden · Debatte &amp; Analyse · Bibliothek · Mitmachen, darüber Akademie, Wirkungsinstitut und Parlament. Passen dir Aufteilung und Namen?</li>
+        <li><strong>Portale werden zu Querschnittsthemen</strong> im Raum Themen, die URLs bleiben.</li>
+        <li><strong>Die interne Release-Schicht kommt ins Archiv</strong> („Website 1.0", Rang-Pakete in <code>downloads/</code>, <code>fachbibliothek/</code>): noindex mit Archiv-Hinweis, die URLs bleiben.</li>
+        <li><strong>Die 2.249 Spiegelkarten verlassen den Bibliothekskatalog</strong>, das Original bleibt jeweils erhalten.</li>
+        <li><strong>„Meinung &amp; Analyse" wird eine gemeinsame Rubrik</strong> für Journal-Artikel und Ticker-Analysen.</li>
+        <li><strong>Offen aus der letzten Runde:</strong> Die Abschnitte zu Staatsarchitektur und GGO/BHO ziehen von der Startseite auf die Seite für Politik und Verwaltung.</li>
+      </ol>
+      <p class="muted">Sobald du zustimmst, lege ich die Phasen als Aufträge für Codex in <code>docs/</code> ab und beginne mit dem Header- und Footer-Bauteil für Phase 0.</p>
+    </section>
+
+    <footer class="end">Navigationskonzept wirkungsoekonomie.de · Version 1 · 9. Oktober 2026 · Messgrundlage: main, Commit 469f84d (20.210 HTML-Dateien, 18.659 ohne Weiterleitungen).</footer>
+  </main>
+</div>
+
+</html>
