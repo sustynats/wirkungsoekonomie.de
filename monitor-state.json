@@ -15,7 +15,7 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-09T21:50:44.935Z",
-      "active": false
+      "active": true
     },
     "run": {
       "firstSeen": "2026-10-09T21:50:44.935Z",
@@ -23,18 +23,39 @@
     },
     "provider": {
       "firstSeen": "2026-10-09T21:50:44.935Z",
-      "active": false
+      "active": true
     },
     "queue": {
       "firstSeen": "2026-10-09T21:50:44.935Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-09T21:50:44.935Z",
       "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-09T22:05:51.626Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-09T22:05:51.626Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3bbb9173da0330a5fa15698c",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-09T21:50:44.935Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "90dc6b231bbbfd9119607bf1",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen. Laufbericht: 2026-10-09T21:40:27.183Z.\nSeit: 2026-10-09T21:50:44.935Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "d66a3170ac2a73691e658011",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 209 Minuten. Kapazitätswarteschlange: 649; redaktionelle Ablehnungen: 274.\nSeit: 2026-10-09T21:50:44.935Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2541,7 +2562,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-09T21:51:48.951Z",
+    "checked_at": "2026-10-09T22:05:51.626Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
