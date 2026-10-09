@@ -269,7 +269,7 @@ footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--
         <table>
           <thead><tr><th>Befund</th><th>Beleg</th><th>Folge für Besucher</th></tr></thead>
           <tbody>
-            <tr><td>Menü auf allen Bildschirmen hinter dem Hamburger, nur eine flache Ebene</td><td><code>style.css</code> Z. 17915–18024 blendet die Navigation ohne Media-Query aus; ein Dropdown-Unterbau ist vorhanden, wird aber nicht genutzt</td><td>Auf dem Desktop gibt es keine sichtbare Orientierung; zu 20.000 Seiten führen 9 Links</td></tr>
+            <tr><td>Menü auf allen Bildschirmen hinter dem Hamburger, nur eine flache Ebene</td><td><code>style.css</code> Z. 17915-18024 blendet die Navigation ohne Media-Query aus; ein Dropdown-Unterbau ist vorhanden, wird aber nicht genutzt</td><td>Auf dem Desktop gibt es keine sichtbare Orientierung; zu 20.000 Seiten führen 9 Links</td></tr>
             <tr><td>Keine einzige Quelle für Header und Footer</td><td><code>assets/data/navigation.json</code> widerspricht <code>templates/header.html</code>; rund 20 Generatoren nutzen die veraltete Vorlage, rund 79 Skripte schreiben eigenes Markup</td><td>Menüpunkte und Namen wechseln von Seite zu Seite. Der Ticker hat zum Beispiel einen alten Header ohne „Institut"</td></tr>
             <tr><td>Bereichs-Startseiten führen nicht zu ihren Inhalten</td><td>Wirkungsradar verlinkt 6 von 31 Unterbereichen, Erleben 4 von 22, Wirkungssteuerung 11 von 19, <code>tools/</code> keinen</td><td>386 Radar-Seiten, 679 Register-Einträge, 50 Studienskripte und 152 Quellen sind verwaist</td></tr>
             <tr><td>Lange Klickwege</td><td>Bibliothek: 62 % der Seiten brauchen 4 oder mehr Klicks; Wirkungsticker: Median 6, maximal 16 (Blätterkette)</td><td>Ältere Lagen und tiefe Werke sind praktisch unauffindbar</td></tr>
@@ -316,11 +316,11 @@ footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--
         <table>
           <thead><tr><th>Aufgabe</th><th>Typische Person</th><th>Zielweg</th><th>Klicks</th></tr></thead>
           <tbody>
-            <tr><td>Verstehen, was Wirkungsökonomie ist</td><td>Neuling</td><td>Startseite Abschnitt A → Verstehen</td><td class="n">0–1</td></tr>
+            <tr><td>Verstehen, was Wirkungsökonomie ist</td><td>Neuling</td><td>Startseite Abschnitt A → Verstehen</td><td class="n">0-1</td></tr>
             <tr><td>Was bedeutet das für mich?</td><td>Bürger:in, Mieter:in, Unternehmen …</td><td>„Direkt einsteigen als" auf der Startseite oder Menü „Für wen"</td><td class="n">1</td></tr>
-            <tr><td>Ein Thema verstehen (Rente, Wohnen, KI)</td><td>Interessierte, Medien</td><td>Menü „Themen" → Wirkungsfeld → Dossier</td><td class="n">2–3</td></tr>
-            <tr><td>Einen Begriff nachschlagen</td><td>alle</td><td>Suchfeld: Definitionskarte schon im Vorschlag; Begriffe A–Z</td><td class="n">0–1</td></tr>
-            <tr><td>Eine Quelle oder ein Dokument finden und zitieren</td><td>Wissenschaft, Presse</td><td>Suche mit Facette „Bibliothek" oder Menü „Bibliothek" → Katalog</td><td class="n">1–2</td></tr>
+            <tr><td>Ein Thema verstehen (Rente, Wohnen, KI)</td><td>Interessierte, Medien</td><td>Menü „Themen" → Wirkungsfeld → Dossier</td><td class="n">2-3</td></tr>
+            <tr><td>Einen Begriff nachschlagen</td><td>alle</td><td>Suchfeld: Definitionskarte schon im Vorschlag; Begriffe A-Z</td><td class="n">0-1</td></tr>
+            <tr><td>Eine Quelle oder ein Dokument finden und zitieren</td><td>Wissenschaft, Presse</td><td>Suche mit Facette „Bibliothek" oder Menü „Bibliothek" → Katalog</td><td class="n">1-2</td></tr>
             <tr><td>Ein Werkzeug ausprobieren</td><td>Unternehmen, Kommunen</td><td>Menü „Anwenden" → Werkzeug</td><td class="n">2</td></tr>
             <tr><td>Eine aktuelle Einordnung lesen</td><td>politisch Interessierte</td><td>Startseite „Meinung &amp; Analyse" oder Menü „Debatte &amp; Analyse"</td><td class="n">1</td></tr>
             <tr><td>Lernen, ein Zertifikat machen</td><td>Lernende</td><td>Ökosystem-Leiste → Akademie</td><td class="n">1</td></tr>
@@ -491,7 +491,7 @@ footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--
             <div class="ph-field">Begriffe, Themen, Quellen suchen …</div>
             <div class="acc"><span>Verstehen</span><span>+</span></div>
             <div class="acc"><span>Für wen</span><span>+</span></div>
-            <div class="acc open"><span>Themen</span><span>−</span></div>
+            <div class="acc open"><span>Themen</span><span>-</span></div>
             <div class="acc-sub"><span>Alle Wirkungsfelder</span><span>Rente &amp; soziale Sicherung</span><span>Wohnen &amp; Stadt</span><span>Sicherheit &amp; Resilienz</span><span class="ok">Alle Themen →</span></div>
             <div class="acc"><span>Anwenden</span><span>+</span></div>
             <div class="acc"><span>Debatte &amp; Analyse</span><span>+</span></div>
@@ -572,7 +572,7 @@ footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--
           <div class="fr k"><b>2 · Suche in diesem Bereich</b><span class="muted">dieselbe Suchmaschine, auf den Bereich gefiltert</span></div>
           <div class="fr"><b>3 · Hier anfangen</b><span class="muted">3 bis 6 kuratierte Einstiege</span></div>
           <div class="fr k"><b>4 · Alle Unterbereiche</b><span class="muted">als Kacheln, ausnahmslos alle</span></div>
-          <div class="fr k"><b>5 · Vollständige Liste</b><span class="muted">Filter mit Trefferzahlen, A–Z oder chronologisch, blätterbar mit 50 pro Seite als statische Seiten</span></div>
+          <div class="fr k"><b>5 · Vollständige Liste</b><span class="muted">Filter mit Trefferzahlen, A-Z oder chronologisch, blätterbar mit 50 pro Seite als statische Seiten</span></div>
           <div class="fr"><b>6 · Seitenende</b><span class="muted">verwandte Räume, nächster Schritt, Footer</span></div>
         </div>
         <div class="box">
@@ -593,7 +593,7 @@ footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--
             <tr><td>WÖk-ID-Register</td><td>Einträge nur per JavaScript, 621 ohne eingehenden Link, kein Footer</td><td>statische, blätterbare Liste nach Typ und SDG; Rückverweise „Verwendet in"</td></tr>
             <tr><td>Wirkungsticker</td><td>Archiv nur über eine Blätterkette (Median 6, maximal 16 Klicks), 64 Lagen verwaist</td><td>Lage-Archiv nach Datum (Monat › Tag), Meldungen und Analysen als blätterbare Listen</td></tr>
             <tr><td>Bibliothek</td><td>3,9 MB, alle Einträge auf einer Seite, Spiegelkarten, Studienskripte verwaist</td><td>Katalog nur echter Werke, blätterbar; Studienskripte und Leserfassungen eingehängt</td></tr>
-            <tr><td>Begriffe</td><td>4,25 MB, 854 Filter-Chips</td><td>A–Z blätterbar, sechs Filtergruppen mit Trefferzahlen</td></tr>
+            <tr><td>Begriffe</td><td>4,25 MB, 854 Filter-Chips</td><td>A-Z blätterbar, sechs Filtergruppen mit Trefferzahlen</td></tr>
             <tr><td>Quellenarchiv</td><td>1.333 von 1.485 verlinkt; drei verschiedene Gesamtzahlen</td><td>alle 1.485 verlinkt, eine Zahl, Rückverweise auf die Fundstellen</td></tr>
             <tr><td>Erleben / Werkzeuge</td><td>Erleben verlinkt 4 von 22 Demos; <code>tools/</code> hat keinen Link</td><td>Werkzeuge als einzige Bereichs-Startseite mit Filter „Rechner / Demo / Methode / Check"; <code>tools/</code> leitet weiter</td></tr>
             <tr><td>Wirkungssteuerung</td><td>11 von 19 Bausteinen verlinkt</td><td>alle 19 (WStG, WUStG, WEStG, CSRD, DPP …)</td></tr>
@@ -752,7 +752,7 @@ footer.end { border-top: 1px solid var(--line); padding-top: 18px; color: var(--
             <tr><td>parlament/</td><td>Ökosystem</td><td><span class="tag t-keep">Behalten</span></td><td>Brückenseite; heute nur drei eingehende Links</td></tr>
             <tr><td>mitmachen.html, umfragen/, ueber.html, natalie-weber.html</td><td>Mitmachen</td><td><span class="tag t-hang">Einhängen</span></td><td>im Raum Mitmachen gebündelt</td></tr>
             <tr><td>woek-ki/, mein-wirkungsraum/, suche.html, app/</td><td>Kopfzeile</td><td><span class="tag t-keep">Behalten</span></td><td>Werkzeuge der Kopfzeile, keine Raum-Zuordnung</td></tr>
-            <tr><td>Finder-Dubletten „index 2.html" (18)</td><td>–</td><td><span class="tag t-arch">Archiv</span></td><td>noindex; Ursache im Build abstellen</td></tr>
+            <tr><td>Finder-Dubletten „index 2.html" (18)</td><td>-</td><td><span class="tag t-arch">Archiv</span></td><td>noindex; Ursache im Build abstellen</td></tr>
           </tbody>
         </table>
       </div>
