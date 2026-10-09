@@ -8,13 +8,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-08T14:51:38.051Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-09T06:21:23.620Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "51c46babae998e1a13731404",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-09T07:21:02.425Z"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2486,11 +2487,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/schusswechsel-in-tuttlinger-rathaus-polizei-erschiesst-27-jahrigen-audi-zieht-schlechtwe-1c9d70/": {
         "first_seen_at": "2026-10-09T06:21:23.620Z",
         "source_at": "2026-10-09T05:34:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schusse-am-rathaus-tuttlingen-27-jahriger-stirbt-295153/": {
+        "first_seen_at": "2026-10-09T07:21:02.425Z",
+        "source_at": "2026-10-09T06:45:53.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/tote-bei-waffenkontrolle-mutmasslicher-todesschutze-festgenommen-7d7179/": {
+        "first_seen_at": "2026-10-09T07:21:02.425Z",
+        "source_at": "2026-10-09T06:40:36.000Z"
       }
     },
-    "last_new_at": "2026-10-09T06:21:23.620Z",
-    "checked_at": "2026-10-09T07:05:44.593Z",
-    "last_current_new_at": "2026-10-09T06:21:23.620Z"
+    "last_new_at": "2026-10-09T07:21:02.425Z",
+    "checked_at": "2026-10-09T07:21:02.425Z",
+    "last_current_new_at": "2026-10-09T07:21:02.425Z"
   },
   "recovery_attempts": [
     {
