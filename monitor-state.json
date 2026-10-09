@@ -12,6 +12,10 @@
     "freigabe-quittung": {
       "firstSeen": "2026-10-09T13:06:08.278Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-09T16:50:49.615Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2517,7 +2521,7 @@
       }
     },
     "last_new_at": "2026-10-09T14:50:41.530Z",
-    "checked_at": "2026-10-09T16:36:19.449Z",
+    "checked_at": "2026-10-09T16:50:49.615Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
