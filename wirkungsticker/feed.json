@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-09T17:44:09.089Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-09T20:42:01.559Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -185,6 +185,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/dienstwagen-bmw-zieht-wohl-leasingangebot-fur-afd-landtag-zuruck-6c4d4c/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/dienstwagen-bmw-zieht-wohl-leasingangebot-fur-afd-landtag-zuruck-6c4d4c/",
+      "title": "BMW zieht Leasingangebot für Dienstwagen des AfD-Landtagspräsidenten zurück",
+      "summary": "BMW soll ein Leasingangebot für den Dienstwagen des neuen AfD-Landtagspräsidenten in Sachsen-Anhalt zurückgezogen haben. Der konkrete Grund ist öffentlich nicht bestätigt; BMW kommentierte den Fall nicht.",
+      "date_published": "2026-10-09T08:46:15.790Z",
+      "date_modified": "2026-10-09T08:46:15.790Z",
+      "_woek_released_at": "2026-10-09T15:59:06.274Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "open",
           "status": "potential"
         }
       }
