@@ -27,14 +27,23 @@
     },
     "images": {
       "firstSeen": "2026-10-09T20:50:57.805Z",
+      "active": true
+    },
+    "institute": {
+      "firstSeen": "2026-10-09T21:06:02.048Z",
       "active": false
     },
-    "publication": {
-      "firstSeen": "2026-10-09T20:50:57.805Z",
+    "editorial-status": {
+      "firstSeen": "2026-10-09T21:06:02.048Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "31c8e1215255906d73b61c03",
+      "content": "⚠ WÖk-Betriebsstörung\nTitelbilder: 1 veröffentlichte Meldung(en) ohne nutzbares Titelbild; 5 mit Kartenfallback, weil der Bilddienst nicht lieferte.\nSeit: 2026-10-09T20:50:57.805Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2534,10 +2543,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/schwerwiegender-affekt-62-jahriger-nach-messerangriff-auf-87-jahrige-mutter-in-berlin-fr-94a637/": {
         "first_seen_at": "2026-10-09T14:50:41.530Z",
         "source_at": "2026-10-09T13:23:05.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/dienstwagen-bmw-zieht-wohl-leasingangebot-fur-afd-landtag-zuruck-6c4d4c/": {
+        "first_seen_at": "2026-10-09T21:06:02.048Z",
+        "source_at": "2026-10-09T08:46:15.790Z"
       }
     },
-    "last_new_at": "2026-10-09T14:50:41.530Z",
-    "checked_at": "2026-10-09T20:52:05.493Z",
+    "last_new_at": "2026-10-09T21:06:02.048Z",
+    "checked_at": "2026-10-09T21:06:02.048Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
