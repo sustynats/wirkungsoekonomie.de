@@ -6,6 +6,37 @@
   "language": "de",
   "items": [
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/schwerwiegender-affekt-62-jahriger-nach-messerangriff-auf-87-jahrige-mutter-in-berlin-fr-94a637/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/schwerwiegender-affekt-62-jahriger-nach-messerangriff-auf-87-jahrige-mutter-in-berlin-fr-94a637/",
+      "title": "Laut Tagesspiegel: 62-Jähriger nach Messerangriff auf 87-jährige Mutter freigesprochen",
+      "summary": "Ein Tagesspiegel-Bericht schildert einen Messerangriff eines 62-Jährigen auf seine 87-jährige Mutter und einen anschließenden Freispruch wegen Schuldunfähigkeit. Tatablauf, Verletzungsfolgen und gerichtliche Begründung bleiben in der vorliegenden Quelle teilweise offen.",
+      "date_published": "2026-10-09T13:23:05.000Z",
+      "date_modified": "2026-10-09T13:23:05.000Z",
+      "_woek_released_at": "2026-10-09T14:11:41.608Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/17-jahriger-schwer-verletzt-messerattacke-auf-kirchweihfest-verdachtige-festgenommen-cae65a/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/17-jahriger-schwer-verletzt-messerattacke-auf-kirchweihfest-verdachtige-festgenommen-cae65a/",
       "title": "Laut stern: 17-Jähriger bei Messerangriff auf Kirchweihfest schwer verletzt",
@@ -1052,13 +1083,14 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-drohnengefahr-stoppt-tausende-zuge-in-der-ukraine-118de1/",
       "title": "Laut Bahnbetreiber: Drohnengefahr evakuierte im September 5.831 Züge in der Ukraine",
-      "summary": "Im September wurden laut Bahnbetreiber 5.831 Züge in der Ukraine wegen Drohnengefahr evakuiert. Die Zahl weist auf wiederkehrende Sicherheits- und Verkehrsunterbrechungen hin, belegt aber noch nicht deren längerfristige Folgen.",
+      "summary": "Im September wurden laut Bahnbetreiber 5.831 Züge in der Ukraine wegen Drohnengefahr evakuiert. Die Zahl zeigt wiederkehrende Verkehrsunterbrechungen, belegt aber noch keine längerfristigen Versorgungsfolgen.",
       "date_published": "2026-10-06T10:25:50.000Z",
       "date_modified": "2026-10-06T10:25:50.000Z",
       "_woek_released_at": "2026-10-06T11:39:29.962Z",
       "tags": [
         "Gesellschaft",
-        "Geopolitik"
+        "Geopolitik",
+        "Energie"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
@@ -1075,7 +1107,7 @@
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "open",
           "status": "potential"
         }
       }
