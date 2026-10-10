@@ -544,3 +544,8 @@ Der Hauptzweig 891f7f4b522cdb644d90663667620596650cfd8f bleibt mit sämtlichen k
 ### P1.5: Neu eingegangene Ticker-Ausgabe erhalten
 
 Der zwischenzeitliche Hauptzweig f071e3f5f88e0f1445b8d081e39d77825cdbb346 wurde regulär zusammengeführt. Kanonische Nachrichtenquellen sind zum eingehenden Stand bytegleich. Der Such-Metadatenkonflikt ist aus den zusammengeführten Quellen regeneriert; die drei vor dem Build gesicherten Quellprojektionen bleiben im Commit erhalten. Quellenbuild, vollständiges Artefakt, historische/semantische Tore, URL-Bestand und Privacy bestanden. Größe 876,1 MB bei unveränderter harter Grenze 950 MB. Kennzahlen und Herkunft stehen in `reports/navigation/p1-5-final-sync.*`.
+
+
+### P1.5: Projektionen auf aktuellen Main-Stand begrenzt
+
+Der Navigationsbericht wurde mit dem eingegangenen Main-Stand cdae0f29e8f4e1023b1f9a28ba3e3b643951c18c zusammengeführt. 3.688 nicht zum Navigationsauftrag gehörende Dateien bleiben exakt auf diesem Main-Stand; ältere lokale HTML-, Nachrichten-, Glossar- und Umfragenprojektionen werden nicht mit diesem Teilauftrag veröffentlicht. Drei Such-/Taxonomieprojektionen wurden aus den unveränderten Main-Eingaben vor dem vollständigen Build erzeugt und separat auf Bytegleichheit geprüft. Vollständiger Quellbuild, öffentliches Artefakt, historische/fachliche Prüfungen, URL-Bestand, Datenschutz und harte Größengrenze bestanden. Die aktuelle Messung steht in reports/navigation/p1-5-scoped-sync.md. Keine redaktionelle Änderung und keine entfernte URL.
