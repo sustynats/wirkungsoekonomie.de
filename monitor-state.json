@@ -17,32 +17,33 @@
       "firstSeen": "2026-10-09T23:36:28.786Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-10T02:51:11.529Z",
-      "active": false
-    },
-    "institute": {
-      "firstSeen": "2026-10-10T02:53:11.168Z",
-      "active": false
-    },
     "run": {
       "firstSeen": "2026-10-10T02:53:11.168Z",
       "active": true
     },
     "provider": {
       "firstSeen": "2026-10-10T02:53:11.168Z",
-      "active": false
+      "active": true
     },
     "queue": {
       "firstSeen": "2026-10-10T02:53:11.168Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-10T02:53:11.168Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "25aa1482aef990583cc6302a",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen. Laufbericht: 2026-10-10T02:36:08.821Z.\nSeit: 2026-10-10T02:53:11.168Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "50f531e19e54f9a4cc0ecfd4",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 132 Minuten. Kapazitätswarteschlange: 658; redaktionelle Ablehnungen: 268.\nSeit: 2026-10-10T02:53:11.168Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2549,7 +2550,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T02:53:11.168Z",
+    "checked_at": "2026-10-10T03:06:02.414Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
