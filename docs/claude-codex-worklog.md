@@ -539,3 +539,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 ### 2026-10-10 · Codex · P1.5: zweiter Abgleich mit aktuellen Importen
 
 Der Hauptzweig 891f7f4b522cdb644d90663667620596650cfd8f bleibt mit sämtlichen kanonischen Nachrichtenquellen erhalten. Der einzige Metadatenkonflikt wurde aus dem zusammengeführten Quellstand regeneriert. Such-/Taxonomieprojektionen wurden vor dem Vollbuild eingecheckt und getrennt von dessen Ausgaben gesichert. Vollbuild, Artefaktbuild, semantische/historische Tore, URL-Bestand und Privacy bestanden. Die Größenprüfung meldet 876,0 MB bei 850 MB Warnschwelle und 950 MB harter Grenze. Aktuelle Zahlen und Herkunft: `reports/navigation/p1-5-main-sync.*`.
+
+
+### P1.5: Neu eingegangene Ticker-Ausgabe erhalten
+
+Der zwischenzeitliche Hauptzweig f071e3f5f88e0f1445b8d081e39d77825cdbb346 wurde regulär zusammengeführt. Kanonische Nachrichtenquellen sind zum eingehenden Stand bytegleich. Der Such-Metadatenkonflikt ist aus den zusammengeführten Quellen regeneriert; die drei vor dem Build gesicherten Quellprojektionen bleiben im Commit erhalten. Quellenbuild, vollständiges Artefakt, historische/semantische Tore, URL-Bestand und Privacy bestanden. Größe 876,1 MB bei unveränderter harter Grenze 950 MB. Kennzahlen und Herkunft stehen in `reports/navigation/p1-5-final-sync.*`.
