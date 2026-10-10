@@ -20,17 +20,18 @@
     "queue": {
       "firstSeen": "2026-10-10T11:26:28.688Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-10T16:41:34.746Z",
-      "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-10T16:51:04.955Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "50693cd116400d3067c1a0f8",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-10T17:21:32.511Z"
+    },
+    {
+      "id": "eda6d04d8c94ccc9911d66f3",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-10T17:21:32.511Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2537,7 +2538,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T17:06:11.963Z",
+    "checked_at": "2026-10-10T17:21:32.511Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
