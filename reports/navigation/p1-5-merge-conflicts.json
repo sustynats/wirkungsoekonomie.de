@@ -1,0 +1,133 @@
+{
+  "branchBeforeMerge": "daad7ad0138a09c7bda6967341446ba7e1a1d3be",
+  "incomingMain": "c669b94d38bedd0b005d9e773db2705628cb9af2",
+  "conflicts": [
+    {
+      "path": "news/feed.atom",
+      "branchSha256": "03f84053921fc9a51e427752987ab71ab1b99fba7addda725b27b75674a87f06",
+      "mainSha256": "a12863492ec47a76a2a6463941887aeb9ea507fa35ecc8e9f2d4b2313a5e5cf1",
+      "branchBytes": 517478,
+      "mainBytes": 519649,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "news/feed.xml",
+      "branchSha256": "7bef38fad1c20b7da38f677e8e1d11837617866181e1d7f2a809ee482bb6e549",
+      "mainSha256": "5f7407390a9b1d3d7a4a2b63e5102845dcee02325409e67f872633331ee6cbf0",
+      "branchBytes": 403876,
+      "mainBytes": 404617,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "public/data/woek-search-meta.json",
+      "branchSha256": "1f64fa54391c03aee0ae01eb95b3a6d258581efd419e26deb11d2d782b1d7712",
+      "mainSha256": "89d71686f035d779b0562e4e43f2e8c4625ccb05c17d55d455fcb7b4090be8d6",
+      "branchBytes": 15219734,
+      "mainBytes": 15221320,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "reports/wirkungsticker-latest-run.json",
+      "branchSha256": "6cc42c53e928b2259e765cfa8865f55cac07b5896657cc4e8a7b4551bbdde01a",
+      "mainSha256": "3179f4e851ad53f7b0c16bbad501ad8e4e9672b672a174e592aad737f9e8d044",
+      "branchBytes": 1704969,
+      "mainBytes": 1686816,
+      "kind": "run report; keep the incoming current main run, retain branch report in Git history",
+      "branchDateFields": {
+        "started_at": "2026-10-09T19:11:50.427Z"
+      },
+      "mainDateFields": {
+        "started_at": "2026-10-10T03:51:47.921Z"
+      }
+    },
+    {
+      "path": "sitemap.xml",
+      "branchSha256": "ab8e1657a132bbc50ee50632b7fb208e321bc2c2ad829999c1176b770273d50b",
+      "mainSha256": "90f3f53f6f2efa29364641af6a8970d1cc0247f3777f3882de335147b9674e0f",
+      "branchBytes": 635022,
+      "mainBytes": 635610,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/analyse/feed.xml",
+      "branchSha256": "f18c6e1b3731c4203e27588ff02d527ab555ff9bc2d6997ad6f67533972d2bbb",
+      "mainSha256": "8ac8e96ec7b100b7ef48574d0dff708856c766ef8ec13b1c90c7fccf54e270d5",
+      "branchBytes": 103067,
+      "mainBytes": 104452,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/analysen/index.html",
+      "branchSha256": "fdddd61bf53a627ca583793e2c342ce5a4c58876eff43ea47add759c22371130",
+      "mainSha256": "fb5fd493f8d92d473a4d61a6ca52fc4c4ba4eea2eb5e4b241da6c5848ac84f7f",
+      "branchBytes": 119737,
+      "mainBytes": 118701,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/data/stories.json",
+      "branchSha256": "286348521e794002cbf0cb18ec9b8e4e7aa07f79ef1c57187a4d78c9329f71fc",
+      "mainSha256": "bee800b1961c6ff95c898a94a96d37ceda71c34c8d3b2f0dccd8506901d09b43",
+      "branchBytes": 22179940,
+      "mainBytes": 22253834,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/feed.atom",
+      "branchSha256": "03f84053921fc9a51e427752987ab71ab1b99fba7addda725b27b75674a87f06",
+      "mainSha256": "a12863492ec47a76a2a6463941887aeb9ea507fa35ecc8e9f2d4b2313a5e5cf1",
+      "branchBytes": 517478,
+      "mainBytes": 519649,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/feed.xml",
+      "branchSha256": "7bef38fad1c20b7da38f677e8e1d11837617866181e1d7f2a809ee482bb6e549",
+      "mainSha256": "5f7407390a9b1d3d7a4a2b63e5102845dcee02325409e67f872633331ee6cbf0",
+      "branchBytes": 403876,
+      "mainBytes": 404617,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/index.html",
+      "branchSha256": "f63e6008d6638473675868595a2e40a5a5743919e802bffd295043b73f258ebb",
+      "mainSha256": "62a1718029d4a4c01ef80fd5269ef490d375333c05c8218e4da05c7a87225674",
+      "branchBytes": 117872,
+      "mainBytes": 118289,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/merkzettel/index.html",
+      "branchSha256": "2d410af8c82270a4acaf0511eeb4696b036039616772e731747a3bba95e436e9",
+      "mainSha256": "c21b1c9164dcc86fafbc985d092115947873240889a7950a412583f1ec4f6c00",
+      "branchBytes": 33343,
+      "mainBytes": 33353,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/news/index.html",
+      "branchSha256": "a4d078a9d174b573a2aef36db3052741aee32f154fe0c1ba47892e7fd5441029",
+      "mainSha256": "b2f091de88e9ee877794b959ea231e9bedfbeca80257778e0ffb9a94a2a78eee",
+      "branchBytes": 276767,
+      "mainBytes": 276110,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/quellen/index.html",
+      "branchSha256": "d653fd4fe7bcc32843c700cff7baa1488fc61324e19fd36539966632a12adcfe",
+      "mainSha256": "5e10b17d084b8dab5239a4da1f41c2191a069fe94c85ea83a58798688e7da78f",
+      "branchBytes": 77901,
+      "mainBytes": 77933,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    },
+    {
+      "path": "wirkungsticker/tote-bei-waffenkontrolle-mutmasslicher-todesschutze-festgenommen-7d7179/index.html",
+      "branchSha256": "4be1ce75304612f127e4962da71673ae57bd531f872b2677de05ca6188ee89ca",
+      "mainSha256": "16a350db4a17fbad5fc24e81ab34be1cb510f9a199da3a978f7c27dffebeecaf",
+      "branchBytes": 81212,
+      "mainBytes": 81227,
+      "kind": "generated public projection, regenerated from the merged canonical stores"
+    }
+  ],
+  "resolution": "Regenerate public projections from the latest merged source stores. Never replace canonical story, newsroom or editorial source data with a generated projection."
+}
