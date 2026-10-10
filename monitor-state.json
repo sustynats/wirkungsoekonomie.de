@@ -16,9 +16,34 @@
     "freigabe-quittung": {
       "firstSeen": "2026-10-09T23:36:28.786Z",
       "active": true
+    },
+    "run": {
+      "firstSeen": "2026-10-10T00:14:59.557Z",
+      "active": true
+    },
+    "provider": {
+      "firstSeen": "2026-10-10T00:14:59.557Z",
+      "active": false
+    },
+    "queue": {
+      "firstSeen": "2026-10-10T00:14:59.557Z",
+      "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-10T00:14:59.557Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "56a49eba6d68ce70ccfeb2a4",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-10-10T00:14:59.557Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "d232d8cbd592785caf234717",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-10T00:14:59.557Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2525,7 +2550,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T00:06:20.779Z",
+    "checked_at": "2026-10-10T00:14:59.557Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
