@@ -17,13 +17,9 @@
       "firstSeen": "2026-10-09T23:36:28.786Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-10T05:21:00.519Z",
-      "active": false
-    },
     "institute": {
       "firstSeen": "2026-10-10T05:22:32.019Z",
-      "active": false
+      "active": true
     },
     "run": {
       "firstSeen": "2026-10-10T05:22:32.019Z",
@@ -31,18 +27,31 @@
     },
     "provider": {
       "firstSeen": "2026-10-10T05:22:32.019Z",
-      "active": false
+      "active": true
     },
     "queue": {
       "firstSeen": "2026-10-10T05:22:32.019Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-10T05:22:32.019Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "21ea67a6adcde6aded0eedc7",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-10T05:22:32.019Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "4efaf257b618178beb012dd3",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen. Laufbericht: 2026-10-10T05:12:50.148Z.\nSeit: 2026-10-10T05:22:32.019Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "c0844423c22c496a9170c8d2",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 2 technisch blockierte Akte(n); älteste technische Blockade seit 663 Minuten. Kapazitätswarteschlange: 655; redaktionelle Ablehnungen: 267.\nSeit: 2026-10-10T05:22:32.019Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-09",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2549,7 +2558,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T05:22:32.019Z",
+    "checked_at": "2026-10-10T05:36:01.388Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
