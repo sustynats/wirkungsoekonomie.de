@@ -36,13 +36,14 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-10T06:55:14.357Z",
       "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-10T07:21:13.921Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "06c348d732fe52f4228a1271",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-10T07:51:01.832Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2549,7 +2550,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T07:36:07.334Z",
+    "checked_at": "2026-10-10T07:51:01.832Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
