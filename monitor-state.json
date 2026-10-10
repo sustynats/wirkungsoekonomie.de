@@ -20,6 +20,14 @@
     "liegengebliebene-auftraege": {
       "firstSeen": "2026-10-10T17:51:12.919Z",
       "active": true
+    },
+    "institute": {
+      "firstSeen": "2026-10-10T18:36:22.566Z",
+      "active": false
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-10T18:36:22.566Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2529,7 +2537,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T18:21:35.513Z",
+    "checked_at": "2026-10-10T18:36:22.566Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
