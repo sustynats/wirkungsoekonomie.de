@@ -453,7 +453,7 @@
     }
   ],
   "regional_coverage": {
-    "checked_at": "2026-10-10T07:41:12.422Z",
+    "checked_at": "2026-10-10T07:56:07.455Z",
     "required_states": 16,
     "configured_states": 15,
     "healthy_states": 14,
@@ -596,9 +596,9 @@
             "last_success": "2026-10-06T02:18:53.001Z",
             "latest_item": "2026-10-05T00:00:00.000Z",
             "last_error": "ROBOTS_UNAVAILABLE_403",
-            "governance_hold_until": "2026-10-10T07:54:05.418Z",
+            "governance_hold_until": "2026-10-11T07:56:07.455Z",
             "interval_minutes": 60,
-            "error_rate": 0.015
+            "error_rate": 0.017
           }
         ],
         "inactive_candidates": []
@@ -2299,7 +2299,7 @@
       "observation_status": "insufficient_window",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 49.6,
+      "source_utility_score": 49.5,
       "metrics": {
         "items_seen": 0,
         "items_local_rejected": 0,
