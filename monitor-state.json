@@ -21,10 +21,6 @@
       "firstSeen": "2026-10-10T11:26:28.688Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-10T12:35:59.899Z",
-      "active": true
-    },
     "run": {
       "firstSeen": "2026-10-10T13:52:47.032Z",
       "active": true
@@ -36,17 +32,14 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-10T13:52:47.032Z",
       "active": true
-    },
-    "academy": {
-      "firstSeen": "2026-10-10T14:05:52.423Z",
-      "active": false
-    },
-    "institute": {
-      "firstSeen": "2026-10-10T14:05:52.423Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9553c63f9814c0c4ab4f3847",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-10T14:12:22.461Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2553,7 +2546,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T14:05:52.423Z",
+    "checked_at": "2026-10-10T14:12:22.461Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
