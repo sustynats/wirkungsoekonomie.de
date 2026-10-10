@@ -33,20 +33,25 @@
       "firstSeen": "2026-10-10T17:31:52.693Z",
       "active": true
     },
-    "academy": {
-      "firstSeen": "2026-10-10T17:36:09.609Z",
-      "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-10T17:36:09.609Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-10T17:36:09.609Z",
-      "active": true
+    "liegengebliebene-auftraege": {
+      "firstSeen": "2026-10-10T17:51:12.919Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "d7466ea89d0496f8b90b1c90",
+      "content": "✓ WÖk-Störung behoben\nAkademie\nPrüfung: 2026-10-10T17:51:12.919Z"
+    },
+    {
+      "id": "9000fd343e922656c6d27e78",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-10T17:51:12.919Z"
+    },
+    {
+      "id": "d23f818c218ccb310428ff91",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-10T17:51:12.919Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2553,7 +2558,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T17:50:09.579Z",
+    "checked_at": "2026-10-10T17:51:12.919Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
