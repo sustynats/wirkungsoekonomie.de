@@ -1,0 +1,38 @@
+{
+  "branchBeforeMerge": "1d026db89bb2c1132f8d1e391291055d0f4df01c",
+  "incomingMain": "7ff1bac226ca03d09f2d17bd89bff83a5367aeb5",
+  "conflicts": [
+    {
+      "path": "assets/search/search-index.json",
+      "branchSha256": "0f10bb0ba1d5847fabb741357ccba390cdd72d16a8b30a4d05be7a627ce0031c",
+      "mainSha256": "baa7f99a5058a66fc14330d8d45745f0acbb98f581fc7efa067228f1cf08e8bc",
+      "resolution": "Rebuild from merged committed HTML sources before the complete build. Retain both legacy route sets and current curated metadata; regenerate bodies from the actual HTML sources."
+    },
+    {
+      "path": "public/data/woek-search-meta.json",
+      "branchSha256": "60df0ec0aacc8d43cc715b9e4bf0eea70e756bf8da1d9915e756fccda66abbcd",
+      "mainSha256": "e8c3788933f276c6afc3fd5d7374ad70749ecb8a511945d809f89f9a7c0eb743",
+      "resolution": "Rebuild from merged committed HTML sources before the complete build. Retain both legacy route sets and current curated metadata; regenerate bodies from the actual HTML sources."
+    }
+  ],
+  "legacyEntriesBranch": 1914,
+  "legacyEntriesMain": 40,
+  "legacyEntriesUnion": 1914,
+  "legacyBodiesRefreshedFromMergedSources": 1914,
+  "canonicalNewsStores": "Preserved exactly from incoming main; no raw source conflict.",
+  "validation": {
+    "sourceBuild": "PASS",
+    "publicArtifact": "PASS",
+    "semanticReleaseAudit": "PASS",
+    "urlBaseline": "PASS",
+    "privacy": "PASS",
+    "sourceSearchAndTaxonomyIdempotent": true,
+    "canonicalNewsDeltaAgainstIncomingMain": 0,
+    "navigationReport": "reports/navigation/p1-5-reconciled.json"
+  },
+  "committedSourceProjectionSha256": {
+    "assets/search/search-index.json": "ba814e2e86ea2993284bb2ae7087b94ad30f50632ab4f5bd9094290f9ddfae70",
+    "public/data/woek-search-meta.json": "8645ffa0ccf7d7d590ac6fa82de9ba41036fbf094d97961eafd87852d84da1b1",
+    "content/taxonomy/site-map.json": "62dbb9265d046eb884b65a7aefe08bc2005615c731f22060f9a19d50693c2bf3"
+  }
+}

@@ -1,7 +1,37 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-09T16:00:00.000Z",
+  "updated_at": "2026-10-10T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-10-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-10",
+      "window_from": "2026-10-09T16:00:00.000Z",
+      "window_to": "2026-10-10T04:00:00.000Z",
+      "stand": "2026-10-10T04:00:00.000Z",
+      "headline": "Das ist die eine Entwicklung, die seit gestern Abend wirkungsrelevant geworden ist.",
+      "counts": {
+        "total": 1,
+        "neu": 0,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine verletzt drei südkoreanische Offiziere",
+          "state": "fortgeschrieben",
+          "at": "2026-10-09T17:52:00.078Z",
+          "score": 9.4056
+        }
+      ],
+      "processing_status": {
+        "state": "provider_unavailable",
+        "checked_at": "2026-10-10T07:03:24.109Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-09-abendlage",
       "slot": "abendlage",
