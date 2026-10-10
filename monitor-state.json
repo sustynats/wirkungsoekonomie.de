@@ -21,24 +21,37 @@
       "firstSeen": "2026-10-10T17:51:12.919Z",
       "active": true
     },
-    "run": {
-      "firstSeen": "2026-10-10T22:18:58.661Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-10-10T22:18:58.661Z",
-      "active": false
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-10T22:18:58.661Z",
-      "active": true
-    },
     "institute": {
       "firstSeen": "2026-10-10T22:20:50.123Z",
+      "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-10T22:36:05.280Z",
       "active": false
+    },
+    "delivery-redaktionsworker.yml": {
+      "firstSeen": "2026-10-10T22:36:05.280Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "299df4b01d3756b64d97c9ac",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-10T22:20:50.123Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "af0d6f81fd93e7f546fae4fa",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-10T22:36:05.280Z"
+    },
+    {
+      "id": "e9a3c120dbfdd5c30ae000a6",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-10T22:36:05.280Z"
+    },
+    {
+      "id": "f2ceb7fde321b68aa2bb6033",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-10T22:36:05.280Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2545,7 +2558,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T22:20:50.123Z",
+    "checked_at": "2026-10-10T22:36:05.280Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
