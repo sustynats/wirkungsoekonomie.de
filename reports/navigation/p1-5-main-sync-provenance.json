@@ -1,0 +1,19 @@
+{
+  "incomingMain": "891f7f4b522cdb644d90663667620596650cfd8f",
+  "previousHead": "ce9f9d69d3066905476398186500149b71999c86",
+  "conflict": "public/data/woek-search-meta.json",
+  "resolution": "Regenerated from the merged committed HTML sources before the full build; staged snapshots preserved separately.",
+  "canonicalNewsDeltaAgainstIncomingMain": 0,
+  "sourceProjectionSha256": {
+    "assets/search/search-index.json": "3e4bfdfca6c533cfc397ba6486cbf10c682ef90a6ada0c9adcc7a2f04b03a106",
+    "public/data/woek-search-meta.json": "23ec1a2c876eb61646f7f49c0d17e2c8b9d5d700bed2a8c0e51e8a9999250efd",
+    "content/taxonomy/site-map.json": "825604431bcac0ffebec89213a74c6405bd22d4df9d9033ae1aec97fa960d586"
+  },
+  "fullSourceBuild": "PASS",
+  "publicArtifact": "PASS",
+  "semanticAndHistoricalGates": "PASS",
+  "urlBaseline": "PASS",
+  "privacy": "PASS",
+  "size": "876.0 MB; warning threshold 850 MB; below hard gate 950 MB",
+  "navigationReport": "reports/navigation/p1-5-main-sync.json"
+}
