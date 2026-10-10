@@ -20,6 +20,10 @@
     "queue": {
       "firstSeen": "2026-10-10T11:26:28.688Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-10T16:21:52.480Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2529,7 +2533,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T16:20:57.729Z",
+    "checked_at": "2026-10-10T16:21:52.480Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
