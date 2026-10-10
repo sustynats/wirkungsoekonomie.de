@@ -25,24 +25,33 @@
       "firstSeen": "2026-10-10T06:55:14.357Z",
       "active": true
     },
-    "institute": {
-      "firstSeen": "2026-10-10T08:25:56.787Z",
-      "active": false
-    },
     "editorial-status": {
       "firstSeen": "2026-10-10T08:25:56.787Z",
-      "active": false
+      "active": true
     },
     "provider": {
       "firstSeen": "2026-10-10T08:25:56.787Z",
-      "active": false
+      "active": true
     },
     "queue": {
       "firstSeen": "2026-10-10T08:25:56.787Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "bfbce7bd183d1db7ee8065f2",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-10T08:25:56.787Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "35f981965fce257f0275e072",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen. Laufbericht: 2026-10-10T08:16:19.964Z.\nSeit: 2026-10-10T08:25:56.787Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "05b3e72fb23f449734de5062",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 2 technisch blockierte Akte(n); älteste technische Blockade seit 472 Minuten. Kapazitätswarteschlange: 637; redaktionelle Ablehnungen: 259.\nSeit: 2026-10-10T08:25:56.787Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2549,7 +2558,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-10T08:25:56.787Z",
+    "checked_at": "2026-10-10T08:35:55.534Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
