@@ -117,6 +117,10 @@ test('technical failures are not green idle runs, while a researched editorial H
   }
   assert.equal(editorialRunNeedsAttention({results: [{status: 'output_delivered', disposition: 'hold'}]}), false);
   assert.equal(editorialRunNeedsAttention({results: []}), false);
+  assert.equal(editorialRunNeedsAttention({results: [{status:'attempt_exhausted',delivered:false}]}), true);
+  assert.equal(editorialRunNeedsAttention({results: [{status:'attempt_exhausted',delivered:true}]}), false);
+  assert.equal(editorialRunNeedsAttention({exhausted_orders:1,results:[]}), true);
+  assert.equal(editorialRunNeedsAttention({recovered_outputs:[{status:'cached_output_still_invalid'}],results:[]}), true);
 });
 
 test('disabled research is respected without a paid request', async () => {
@@ -124,6 +128,19 @@ test('disabled research is respected without a paid request', async () => {
     apiKey: 'test', webSearch: false, researchRequired: true,
     fetchImpl: async () => assert.fail('research switch must remain respected'),
   }), error => error.message === 'EDITORIAL_WEB_RESEARCH_DISABLED' && error.providerNotCalled);
+});
+test('lost checkpoint acknowledgements neither duplicate the provider call nor hide a rejected provider request',async()=>{
+ for(const phase of ['started','provider_unavailable']){
+  const job=queuedJob(),session=fakeSession([job]);session.files.set(bridgePath('00_INBOX',`${jobId}.input.json`),JSON.stringify(job.input));
+  const observe=session.store.observe;let failed=false,calls=0;
+  session.store.observe=async(key,value)=>{await observe(key,value);if(key===`github-attempt:${jobId}`&&value.status===phase&&!failed){failed=true;throw Object.assign(Error('BRIDGE_REMOTE_INVALID_RESPONSE'),{http_status:502});}};
+  const result=await processEditorialRequest(session,job,{knowledge,now,draft:async()=>{
+   calls++;if(phase==='provider_unavailable')throw Object.assign(Error('AI_PROVIDER_ERROR:429'),{providerNotCalled:true});
+   return {output:{preview:preview()},model:'gpt-5.6-luna',cost:0.01};
+  }});
+  assert.equal(calls,1);assert.equal(result.status,phase==='started'?'output_delivered':'provider_unavailable');
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).provider_called,phase==='started');
+ }
 });
 
 test('failed archival does not publish or lose accounting for an already paid answer', async () => {
