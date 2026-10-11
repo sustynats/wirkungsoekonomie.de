@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import { impactArchitectureVisual } from "../lib/impact-architecture-visual.mjs";
 import path from "node:path";
@@ -22,7 +23,7 @@ const searchIndexPath = "assets/search/search-index.json";
 const searchIndex = fs.existsSync(searchIndexPath)
   ? JSON.parse(fs.readFileSync(searchIndexPath, "utf8"))
   : [];
-const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const outDir = "begriffe";
 fs.mkdirSync(outDir, { recursive: true });

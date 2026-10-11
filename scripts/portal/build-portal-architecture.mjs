@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -55,19 +56,7 @@ function citeAnchor(id, label = "Zitierlink zu diesem Abschnitt") {
 }
 
 function placeholderHeader(base) {
-  return `<header class="site-header">
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="${base}index.html">Start</a>
-      </nav>
-    </header>`;
+  return `${renderSiteHeader(base, 'de')}`;
 }
 
 function preservedLayout(out) {

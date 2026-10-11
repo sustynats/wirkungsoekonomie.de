@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -331,21 +332,7 @@ function page({ rel, title, description, searchSection = "Wirkungsfelder", searc
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="${base}index.html" data-nav-match="index.html">Start</a>
-        <a href="${base}verstehen.html" data-nav-match="verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/">Verstehen</a>
-        <a href="${base}wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html|fuer/">Wirkungsfelder</a>
-        <a href="${base}werkzeuge/" data-nav-match="werkzeuge/|scorecard-dashboard.html|methodik/|workflow.html">Werkzeuge</a>
-        <a href="${base}erleben.html" data-nav-match="erleben.html|erleben/|scanner.html|scorecard-dashboard.html">Erleben</a>
-        <a href="${base}werkstatt/" data-nav-match="werkstatt/|downloads.html|dokumente/|referenz/|buch.html|evidenz/|quellen/">Werkstatt</a>
-        <a href="${base}akademie.html" data-nav-match="akademie.html|akademie/">Akademie</a>
-        <a href="${base}blog.html" data-nav-match="blog.html|blog/|wirkung-werte-journal/">Journal</a>
-        <a href="${base}suche.html" data-nav-match="suche.html">Suche</a>
-      </nav>
-    </header>
+    ${renderSiteHeader(base, 'de')}
     <main>
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}

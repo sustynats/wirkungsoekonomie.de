@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { communitySubmissionBlock, escapeHtml } from "../../components/wirkungsradar/communitySubmissionBlock.mjs";
@@ -61,11 +62,7 @@ function shell({ file, title, description, canonical, main }) {
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
-    </header>
+    ${renderSiteHeader(base, 'de')}
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Aufklärung ohne Frame-Verstärkung.</h2><p>Der Debatten-Kompass prüft Aussagen, Narrative und Frames nach Faktenkern, Wirkpfad und demokratischem Aufklärungsnutzen.</p><p><a class="text-link" href="${base}wirkungsradar/">Debatten-Kompass</a> · <a class="text-link" href="${base}wirkungsradar/pruefprozess/">Prüfprozess</a> · <a class="text-link" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>

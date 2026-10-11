@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -1211,7 +1212,7 @@ function shell({ base, route, title, description, kicker, h1, subtitle, actions,
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude><a class="brand" href="${base}index.html">Wirkungsökonomie</a><nav class="site-nav" id="site-nav"></nav></header>
+    ${renderSiteHeader(base, 'de')}
     <main data-pagefind-body>
       <section class="hero">
         <div class="hero-copy">

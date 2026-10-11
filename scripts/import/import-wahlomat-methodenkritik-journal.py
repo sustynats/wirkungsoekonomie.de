@@ -6,6 +6,10 @@ SOURCE_DOCX=/absoluter/pfad.docx TITLE_IMAGE=/absoluter/pfad.png \\
 python3 scripts/import/import-wahlomat-methodenkritik-journal.py
 """
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header_for_source
 
 import html
 import json
@@ -236,10 +240,10 @@ def apply_editorial_revision(content: str) -> str:
 
 def shell() -> tuple[str, str]:
     source = (ROOT / "blog" / "wahl-o-mat-sachsen-anhalt-2026.html").read_text(encoding="utf-8")
-    header_start = source.index('    <header class="site-header"')
+    header_start = source.index('<header class="site-header"')
     main_start = source.index("    <main", header_start)
     main_end = source.rindex("</main>")
-    return source[header_start:main_start], source[main_end + len("</main>"):]
+    return render_site_header_for_source(source), source[main_end + len("</main>"):]
 
 
 def write_article() -> None:

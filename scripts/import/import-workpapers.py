@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 
 import hashlib
 import html
@@ -305,19 +309,7 @@ def render_page(item: dict, paragraphs: list[str], issues: list[str], original_h
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="../../index.html">Start</a>
-        <a href="../../referenz/">Referenz</a>
-        <a href="../../begriffe/">Begriffe</a>
-        <a href="../../dokumente/">Dokumente</a>
-        <a href="../../suche.html">Suche</a>
-      </nav>
-    </header>
+    {render_site_header('../../')}
     <main class="reference-work" data-pagefind-body>
       <article class="article-shell">
         <nav class="breadcrumb"><a href="../">Dokumente</a> / {escape(item["title"])}</nav>
@@ -380,19 +372,7 @@ def render_library(imports: list[dict]) -> str:
     <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="../index.html">Start</a>
-        <a href="../referenz/">Referenz</a>
-        <a href="../begriffe/">Begriffe</a>
-        <a href="../dokumente/">Dokumente</a>
-        <a href="../suche.html">Suche</a>
-      </nav>
-    </header>
+    {render_site_header('../')}
     <main class="section" data-pagefind-body>
       <section class="hero compact-hero">
         <p class="hero-kicker">Wirkungsökonomie Online</p>

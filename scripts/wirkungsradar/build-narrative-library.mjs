@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 
@@ -999,28 +1000,7 @@ function pageShell({ title, description, canonical, base, main }) {
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="${base}index.html" data-nav-match="index.html">Start</a>
-        <a href="${base}verstehen.html" data-nav-match="verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/">Verstehen</a>
-        <a href="${base}so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/|so-wirkt-wirkungsoekonomie.html">So wirkt WÖk</a>
-        <a href="${base}wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
-        <a href="${base}werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html">Methoden &amp; Werkzeuge</a>
-        <a href="${base}erleben/" data-nav-match="erleben.html|erleben/|ausprobieren/">Erleben</a>
-        <a href="${base}akademie.html" data-nav-match="akademie.html|akademie/">Akademie</a>
-        <a href="${base}downloads.html" data-nav-match="werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/">Bibliothek</a>
-        <a href="${base}mitmachen.html" data-nav-match="mitmachen.html|mitmachen/|fuer/">Mitmachen</a>
-        <a href="${base}suche.html" data-nav-match="suche.html">Suche</a>
-      </nav>
-    </header>
+    ${renderSiteHeader(base, 'de')}
 ${main}
     <footer class="footer" data-search-exclude>
       <div class="footer-grid">

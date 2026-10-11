@@ -1,3 +1,4 @@
+import {renderSiteHeader} from './lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -2357,27 +2358,7 @@ function layout({ title, description, body, prefix = "", robots = "", canonicalP
     <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="${prefix}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="${prefix}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="${prefix}index.html" data-nav-match="index.html">Start</a>
-        <a href="${prefix}verstehen.html" data-nav-match="verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/">Verstehen</a>
-        <a href="${prefix}wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
-        <a href="${prefix}werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html">Methoden &amp; Werkzeuge</a>
-        <a href="${prefix}erleben/" data-nav-match="erleben.html|erleben/|ausprobieren/">Erleben</a>
-        <a href="${prefix}akademie.html" data-nav-match="akademie.html|akademie/">Akademie</a>
-        <a href="${prefix}downloads.html" data-nav-match="bibliothek/|downloads.html|dokumente/|referenz/|buch.html">Bibliothek</a>
-        <a href="${prefix}mitmachen.html" data-nav-match="mitmachen.html|mitmachen/|fuer/">Mitmachen</a>
-        <a href="${prefix}suche.html" data-nav-match="suche.html">Suche</a>
-      </nav>
-    </header>
+    ${renderSiteHeader(prefix, 'de')}
     <main data-pagefind-body>
 ${body}
     </main>

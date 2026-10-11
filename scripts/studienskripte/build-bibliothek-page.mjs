@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -157,10 +158,7 @@ function buildReaderPage(script) {
     <link rel="stylesheet" href="${base}assets/css/style.css">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <nav class="site-nav" aria-label="Hauptnavigation"><a href="${base}verstehen/">Verstehen</a><a href="${base}lernen/">Lernen</a><a href="../">Studienskripte</a></nav>
-    </header>
+    ${renderSiteHeader(base, 'de')}
     <main data-pagefind-body>
       <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Öffentliche Lesefassung · redaktionell freigegeben</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
       <section class="section"><div class="card"><dl class="document-card-meta"><dt>Track</dt><dd>${esc(script.track)}</dd><dt>Status</dt><dd>Freigegebene Lesefassung</dd></dl></div></section>
@@ -236,17 +234,7 @@ const html = `<!DOCTYPE html>
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="../../verstehen/">Verstehen</a>
-        <a href="../../lernen/">Lernen</a>
-        <a href="../">Bibliothek</a>
-      </nav>
-    </header>
+    ${renderSiteHeader('../../', 'de')}
     <main data-pagefind-body>
       <section class="hero compact-hero document-library-hero">
         <p class="hero-kicker">Bibliothek · Studienskripte</p>

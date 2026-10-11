@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { applyCurrentMethodologyCorrections } from "../review/live-reference-core.mjs";
@@ -15,7 +16,7 @@ const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
-const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const changelog = fs.existsSync("public/data/live-reference-changelog.json")
   ? JSON.parse(fs.readFileSync("public/data/live-reference-changelog.json", "utf8"))
   : { changes: [] };

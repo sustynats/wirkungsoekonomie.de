@@ -1,13 +1,19 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import {verifyPublicationHeaderMigration} from '../lib/publication-header-migration.mjs';
 const manifest=JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json','utf8'));
 const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const hygiene=JSON.parse(fs.readFileSync('assets/data/publication-hygiene-2026-09-06.json','utf8'));
+const navigationMigration=JSON.parse(fs.readFileSync('assets/data/navigation-source-migrations-2026-10-10.json','utf8'));
 function matchesSource(file,expected){
  const actual=hash(file);
  if(actual===expected)return true;
  const correction=hygiene.sourceCorrections[file] || hygiene.localFiles[file];
- return correction?.beforeSha256===expected && correction.afterSha256===actual;
+ if(correction?.beforeSha256===expected && correction.afterSha256===actual)return true;
+ const migration=navigationMigration.sources[file];
+ if(!migration || migration.beforeSha256!==expected)return false;
+ if(file!=='scripts/portal/build-impact-controlling.mjs' || migration.originalSource!=='source-assets/originals/navigation-p0-1-2026-10-10/build-impact-controlling.mjs')return false;
+ return verifyPublicationHeaderMigration(fs.readFileSync(migration.originalSource,'utf8'),fs.readFileSync(file,'utf8'),migration);
 }
 if(manifest.files.length!==8 || !manifest.sourceHashes)throw new Error('Incomplete dated PDF release manifest');
 const learning=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json','utf8'));
@@ -58,3 +64,7 @@ for(const [source,correction] of Object.entries({...hygiene.localFiles,...hygien
  if(hash(source)!==correction.afterSha256)throw new Error(`Publication correction changed after verification: ${source}`);
 }
 console.log(`Publication hygiene: ${Object.keys(hygiene.localFiles).length} corrected files bound to verified hashes.`);
+for(const [source,migration] of Object.entries(navigationMigration.sources)){
+ if(!matchesSource(source,migration.beforeSha256))throw new Error(`Header extraction changed a bound publication source: ${source}`);
+}
+console.log('Navigation extraction: original publication source archived; exact header/import-only comparison passed.');

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 /**
  * Replaces legacy full-text routes whose underlying papers contain a
  * person-scoring or automatic individual-decision model. The historical PDF
@@ -70,17 +71,7 @@ function pageFor(entry) {
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260802-historical-sources">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="../../verstehen.html">Verstehen</a>
-        <a href="../../wirkungsfelder/">Wirkungsfelder</a>
-        <a href="../../bibliothek/">Bibliothek</a>
-      </nav>
-    </header>
+    ${renderSiteHeader('../../', 'de')}
     <main class="section" data-search-exclude>
       <article class="article-shell">
         <nav class="breadcrumb" aria-label="Brotkrumen"><a href="../../bibliothek/">Bibliothek</a> / Historische Quellenfassung</nav>

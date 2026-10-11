@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import { readRepositoryJson } from './newsroom-store.mjs';
 import {renderShowIdentity} from './show-identity.mjs';
 import {EDITORIAL_CURATION_LABEL, renderEditorialAuthorship} from './editorial-authorship.mjs';
@@ -87,7 +88,7 @@ function navLink(item, base) {
 
 function renderLayout(base) {
   const navigation = readJson(path.join(ROOT, "assets/data/navigation.json"));
-  const header = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8")
+  const header = renderSiteHeader('{{BASE}}')
     .replaceAll("{{BASE}}", base);
   const footerNav = (navigation.footerGroups || []).map((group) => `
 <div class="footer-nav-group">

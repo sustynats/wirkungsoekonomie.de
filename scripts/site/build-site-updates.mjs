@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 
 import fs from "node:fs";
 import path from "node:path";
@@ -119,7 +120,7 @@ function navLink(item, base) {
 
 function layout(base) {
   const navigation = readJson("assets/data/navigation.json");
-  const header = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8").replaceAll("{{BASE}}", base);
+  const header = renderSiteHeader('{{BASE}}').replaceAll("{{BASE}}", base);
   const groups = navigation.footerGroups.map((group) => `<div class="footer-nav-group">
       <h3>${escapeHtml(group.title)}</h3>
       <div class="footer-nav-links">
