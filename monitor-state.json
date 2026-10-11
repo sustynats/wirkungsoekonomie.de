@@ -20,6 +20,10 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-11T20:41:21.323Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-11T23:21:07.714Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2529,7 +2533,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T23:06:07.910Z",
+    "checked_at": "2026-10-11T23:21:07.714Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
