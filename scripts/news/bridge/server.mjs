@@ -74,7 +74,7 @@ const server = http.createServer(async (req, res) => {
     if (op === 'store.get' && !JOB_ID.test(args[0]) || op === 'store.put' && !JOB_ID.test(args[0]?.input?.job_id)) throw new Error('BRIDGE_JOB_ID_INVALID');
     let result;
     if (op === 'store.release') { store.release(args[0] === true); store.observe(ownerKey, null); result = true; }
-    else if (op.startsWith('store.editorial')) {
+    else if (['store.editorialClaim','store.editorialFinalize','store.editorialFailure'].includes(op)) {
       if(lane !== 'import')throw Error('EDITORIAL_IMPORT_LANE_REQUIRED');
       const action=op==='store.editorialClaim'?'claim':op==='store.editorialFailure'?'failure':'finalize';
       const response=await fetch('http://127.0.0.1:8788/internal/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(args),signal:AbortSignal.timeout(30000)});
