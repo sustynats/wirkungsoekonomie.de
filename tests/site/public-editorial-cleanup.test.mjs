@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {stripEditorialHtmlNotes as clean, stripAiTrackingParameters} from '../../scripts/lib/public-editorial-cleanup.mjs';
+import {stripEditorialHtmlNotes as clean, stripAiTrackingParameters, findPublicEditorialResidue} from '../../scripts/lib/public-editorial-cleanup.mjs';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -62,4 +62,38 @@ test('production notes never consume preceding sections or inline content',()=>{
 test('subject-matter names and raw script literals are preserved',()=>{
  const html='<p>Claude ist ein KI-System. Der Codex Alimentarius ist ein Regelwerk.</p><script>const s="<p>Codex-Fassung</p>";</script>';
  assert.equal(clean(html),html);
+});
+
+test('software production callout is removed without consuming the score table or its funding conditions',()=>{
+ const before='<section><h2>Bewerten</h2><table><tr><td>50 %</td><td>-2</td></tr></table>';
+ const after='<p>Schutzverletzungen sperren die Entlastung.</p></section>';
+ const note='<div class="callout">Reales Produktprofil, Arbeitskalibrierung und gesetzlicher Tarif sind drei verschiedene Dinge. Eine Software darf feste Regeln anwenden. Sie darf offene Regeln nicht selbst erfinden.</div>';
+ assert.equal(clean(before+note+after),before+after);
+ assert.deepEqual(findPublicEditorialResidue(before+after),[]);
+ assert.equal(findPublicEditorialResidue(before+note+after).length,1);
+});
+
+test('reader cleanup retains historical identity, unknown evidence, privacy consent and actual technical topics',()=>{
+ const html='<p>Arbeitsfassung v0.1 vom 6. Juni 2026. Die Ursache ist nicht belegt.</p><p>Das Backend der Ladeinfrastruktur braucht Datenschutz.</p><p>Für redaktionelle Ausgaben werden Öffnungen pseudonymisiert ausgewertet.</p><p>Cognitive Bias Codex</p><p>Policy Deployment for Successful TQM</p>';
+ assert.equal(clean(html),html);
+ assert.deepEqual(findPublicEditorialResidue(html),[]);
+});
+
+test('editorial wording changes preserve original anchors, adjacent evidence and the table structure',()=>{
+ const html='<h2 id="28-redaktionshinweis-fuer-die-naechste-fassung">28. Redaktionshinweis für die nächste Fassung</h2><p>Für die nächste Fassung sollte das Dossier redaktionell neu sortiert werden: Quellen und Bezugslinien gehören an das Ende; ausgewählte Kapitel sollten stärker belegt werden.</p><p id="causal">Bedingte Wirkpfade bleiben ohne Nachweis offen.</p><table><tr><td>Begriffe</td><td>Glossarseiten und Toolseiten auf führende Definitionen bringen; IOOI/IOI-Suchkonflikt vermeiden; NWI-Platzhalter ersetzen.</td></tr></table>';
+ const output=clean(html);
+ assert.ok(output.includes('id="28-redaktionshinweis-fuer-die-naechste-fassung"'));
+ assert.ok(output.includes('<p id="causal">Bedingte Wirkpfade bleiben ohne Nachweis offen.</p>'));
+ assert.equal((output.match(/<td>/g)||[]).length,2);
+ assert.deepEqual(findPublicEditorialResidue(output),[]);
+ assert.equal(clean(output),output);
+});
+
+test('mixed inline lesson metadata retains prerequisites while replacing production and source placeholders',()=>{
+ const input='<p><strong>Voraussetzung:</strong> MV1 <strong>Status:</strong> fachlicher Master in Ausarbeitung · vor Veröffentlichung redaktionell prüfen <strong>Quellen:</strong> WÖMS 2.0</p><ul><li><strong>Medienquelle:</strong> [Platzhalter]</li></ul>';
+ const output=clean(input);
+ assert.ok(output.includes('<strong>Voraussetzung:</strong> MV1'));
+ assert.ok(output.includes('<strong>Quellen:</strong> WÖMS 2.0'));
+ assert.ok(output.includes('Entwurf'));
+ assert.deepEqual(findPublicEditorialResidue(output),[]);
 });

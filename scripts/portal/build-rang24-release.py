@@ -60,6 +60,7 @@ PORTAL_URLS = {
     21: "portale/kritik-missverstaendnisse-schutzarchitektur/",
     22: "portale/zukunftsbilder-wirkungswohlstand/",
     23: "portale/wirkungsakademie-fachbibliothek/",
+    24: "fachbibliothek/",
 }
 
 
@@ -346,7 +347,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
     <meta name="search_description" content="{html.escape(subtitle[:155])}">
     <meta name="search_section" content="Website 1.0">
     <meta name="search_type" content="Masterbibliothek">
-    <meta name="search_tags" content="Fachbibliothek, Downloads, Website 1.0, Releaseprüfung, Toolkarten, SDG+, Wirkungsökonomie">
+    <meta name="search_tags" content="Fachbibliothek, Downloads, Website 1.0, Dokumentenstand, Toolkarten, SDG+, Wirkungsökonomie">
     <link rel="canonical" href="{canonical}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
@@ -580,12 +581,12 @@ def release_report(portals: list[dict], offene: list[dict], qa: list[dict]) -> s
         rang = int(item.get("rang", 0))
         rel = PORTAL_URLS.get(rang, "")
         exists = bool(rel and ((ROOT / rel / "index.html").exists() if rel.endswith("/") else (ROOT / rel).exists()))
-        rows.append(f"<tr><td>Rang {rang}</td><td>{esc(item.get('portal'))}</td><td>{'online gefunden' if exists else 'prüfen'}</td><td>{esc(item.get('notes'))}</td></tr>")
-    issues = "".join(f"<article class='card'><p class='card-kicker'>{esc(i.get('severity'))}</p><h3 class='card-title'>{esc(i.get('issue'))}</h3><p class='card-text'>{esc(i.get('action'))}</p></article>" for i in offene)
-    checks = "".join(f"<tr><td>{esc(i.get('area'))}</td><td>{esc(i.get('item'))}</td><td>{esc(i.get('priority'))}</td><td>{esc(i.get('status')).replace('offen','in Prüfung')}</td></tr>" for i in qa)
-    return f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Releaseprüfung</p><h2>Rang 0 bis 23</h2></div><div class="table-wrap" role="region" tabindex="0"><table class="data-table"><thead><tr><th>Rang</th><th>Portal</th><th>Website-Status</th><th>Hinweis</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></section>
-<section class="section"><div class="section-header"><p class="hero-kicker">QA</p><h2>Offene Punkte und Risiken</h2></div><div class="card-grid two">{issues}</div></section>
-<section class="section"><div class="section-header"><p class="hero-kicker">Checkliste</p><h2>Release-Gates</h2></div><div class="table-wrap" role="region" tabindex="0"><table class="data-table"><thead><tr><th>Bereich</th><th>Prüfung</th><th>Priorität</th><th>Status</th></tr></thead><tbody>{checks}</tbody></table></div></section>"""
+        label = clean(item.get('portal')).replace('Onlinefassung-Template', 'Online-Buch').replace('Online-Volltext-Template', 'Online-Volltext').replace(' & Website-1.0-Releasepruefung', '')
+        access = f'<a href="../{html.escape(rel)}">Bereich öffnen</a>' if exists else 'Historischer Verzeichnisstand'
+        rows.append(f"<tr><td>Rang {rang}</td><td>{html.escape(label)}</td><td>{access}</td></tr>")
+    # Retain the source QA records for internal checks. Reader pages contain
+    # the document/portal overview, never production tasks or release gates.
+    return f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Dokumentenstand vom 25. Mai 2026</p><h2>Dokumentenbereiche</h2></div><div class="table-wrap" role="region" tabindex="0"><table class="data-table"><thead><tr><th>Rang</th><th>Portal</th><th>Zugang</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></section>"""
 
 
 def update_sitemap() -> None:
@@ -628,7 +629,7 @@ def main() -> None:
     page_shell(ROOT / "portale", "Portale der Wirkungsökonomie", "Übersicht über alle Portalbereiche und Rangpakete der Website 1.0.", portale_body)
 
     release_body = release_report(portals, offene, qa)
-    page_shell(ROOT / "website-1-0-release", "Website-1.0-Releaseprüfung", "Releasebericht für Masterbibliothek, Downloadzentrum, Portale, Toolkarten, SDG-/SDG+-Logik und QA.", release_body)
+    page_shell(ROOT / "website-1-0-release", "Dokumente der Website 1.0", "Historische Übersicht der Dokumentenbereiche und Portale vom 25. Mai 2026.", release_body)
 
     sdg_body = """<section class="section" id="bibliothek"><div class="card"><p class="hero-kicker">Weiterleitung und Kurzlogik</p><h2>SDGs, Agenda 2030 und SDG+</h2><p>Die SDGs und die Agenda 2030 bleiben der globale Referenzrahmen. SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p><p>Mensch, Planet und Demokratie ist die kommunikative Übersetzung dieser Zielstruktur.</p><a class="btn btn-primary" href="../verstehen/sdgs-sdgplus/">Zum SDG-/SDG+-Referenzrahmen</a></div></section>"""
     page_shell(ROOT / "sdg-sdgplus", "SDG-/SDG+-Referenzrahmen", "Zentrale Orientierung zu SDGs, Agenda 2030, SDG+ und Mensch, Planet und Demokratie.", sdg_body)
