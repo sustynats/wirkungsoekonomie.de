@@ -83,6 +83,15 @@ oder ein definitiv belegter Lane-Wartezustand wird nicht als technische
 Abweisung behandelt. Unklare Quittungen werden nicht blind wiederholt; weder
 Freigaben noch Kosten-/Modellregeln werden dadurch veraendert.
 
+Dasselbe abschliessende Gate umfasst die vorhandenen Holen-/Abgeben-Schritte
+manueller Nachrichtenauftraege. Lauf `38128938637` blieb am 11.10. ebenfalls
+gruen, obwohl `holen` mit `BRIDGE_REMOTE_INVALID_RESPONSE` und Exit 1 scheiterte.
+Die CLI und ihr privater Transport bleiben unveraendert; das Workflowgate liest
+nur ihre bisherigen Step-Outcomes. Die Zustellung in die Freigabeliste wird nicht
+als erfolgreich behandelt, wenn ihr Schritt technisch scheitert. Fehlende
+Ergebnisse (`nichts_abzugeben`) sind fuer sich kein technischer Fehler; ein
+zuvor gescheitertes Abholen bleibt daneben sichtbar.
+
 Vor der Oracle-Installation wird die neue `store.editorialJobs`-Operation
 ausserdem gegen den wirklichen HTTP-Handler geprueft. Ein bisheriger
 Praefixvergleich haette diesen reinen Journalread faelschlich an die private
