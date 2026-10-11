@@ -21,24 +21,29 @@
       "firstSeen": "2026-10-10T17:51:12.919Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-11T00:36:28.793Z",
-      "active": true
-    },
-    "run": {
-      "firstSeen": "2026-10-11T00:39:22.502Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-10-11T00:39:22.502Z",
-      "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-11T00:39:22.502Z",
-      "active": true
+    "institute": {
+      "firstSeen": "2026-10-11T01:06:01.151Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "c3da90f0bcaa7ed66423e30c",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-11T01:06:01.151Z"
+    },
+    {
+      "id": "bf20f696cde41ef3b2347603",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-11T01:06:01.151Z"
+    },
+    {
+      "id": "68e1bf9b16e03be1bd618188",
+      "content": "✓ WÖk-Störung behoben\nKI-Verarbeitung\nPrüfung: 2026-10-11T01:06:01.151Z"
+    },
+    {
+      "id": "44ce83be546bd3447703a727",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-11T01:06:01.151Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2545,7 +2550,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T00:51:05.310Z",
+    "checked_at": "2026-10-11T01:06:01.151Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
