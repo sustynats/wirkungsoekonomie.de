@@ -55,3 +55,34 @@ ${utility}
       </nav>
     </header>`;
 }
+
+// The global footer has the same navigation on every public page. Newsletter
+// interaction is a separate component, so private polls keep this exact footer
+// without acquiring a form or a cross-page runtime.
+export function renderSiteFooter(base='',navigation=loadNavigation()){
+  const seen=new Set();
+  const unique=items=>(items||[]).filter(item=>{
+    const key=item.href.replace(/index\.html(?=[?#]|$)/,'');
+    if(seen.has(key))return false;
+    seen.add(key);return true;
+  });
+  const link=item=>`<a href="${esc(base+item.href)}" data-nav-match="${esc(token(item))}">${esc(item.label)}</a>`;
+  const legal=unique(navigation.footerLegal).map(link).join('\n');
+  const groups=(navigation.footerGroups||[]).map(group=>{
+    const items=unique(group.items);if(!items.length)return '';
+    return `<div class="footer-nav-group"><h3>${esc(group.title)}</h3><div class="footer-nav-links">${items.map(link).join('\n')}</div></div>`;
+  }).filter(Boolean).join('\n');
+  return fs.readFileSync(path.join(ROOT,'templates/footer-shell.html'),'utf8')
+    .replaceAll('{{BASE}}',base).replace('{{FOOTER_NAV}}',groups).replace('{{FOOTER_LEGAL_NAV}}',legal).trimEnd();
+}
+
+export function renderFooterNewsletter(base=''){
+  return fs.readFileSync(path.join(ROOT,'templates/footer-newsletter.html'),'utf8').replaceAll('{{BASE}}',base).trimEnd();
+}
+
+export function renderFormerFooterLinks(file,base=''){
+  const definitions=JSON.parse(fs.readFileSync(path.join(ROOT,'content/site/navigation-footer-migrations.json'),'utf8'));
+  const migration=definitions.migrations.find(item=>item.sources.some(source=>source.path===file));
+  if(!migration)return '';
+  return `<nav class="publication-links" data-footer-links-migration="${esc(migration.id)}" aria-label="${esc(migration.label)}" data-search-exclude><h2>${esc(migration.label)}</h2><div>${migration.links.map(item=>`<a href="${esc(base+item.href)}">${esc(item.label)}</a>`).join(' ')}</div></nav>`;
+}
