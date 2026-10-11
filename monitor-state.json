@@ -35,19 +35,36 @@
     },
     "academy": {
       "firstSeen": "2026-10-11T05:54:01.250Z",
-      "active": false
+      "active": true
     },
     "institute": {
       "firstSeen": "2026-10-11T05:54:01.250Z",
-      "active": false
+      "active": true
     },
     "editorial-status": {
       "firstSeen": "2026-10-11T05:54:01.250Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-10-10",
+  "outbox": [
+    {
+      "id": "1063e09f9a9fb15b4889ef21",
+      "content": "⚠ WÖk-Betriebsstörung\nAkademie: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-11T05:54:01.250Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "748a8b9ebf37a4ee15df71b3",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-11T05:54:01.250Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "c8bf19361b128ca48901ca28",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-11T05:54:01.250Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "5bb998f262718381fea0301d",
+      "content": "WÖk Tagesbericht · 2026-10-11 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n⚠ Akademie: Zeitüberschreitung oder Verbindungsfehler\n✓ Parlament: erreichbar\n⚠ Institut: Zeitüberschreitung oder Verbindungsfehler\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 759 live · 608 aktuelle Lagen und Einzelakten aus 633 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-10-10) 0; heute bisher 0 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-11T05:42:11.132Z; 776 offene Prüfungen, 42 aktive Quellen.\nQueue: 776 offen (574 Kapazität · 3 technisch · 199 redaktionell); Status technical_delay.\nQuellen-Funnel heute: 20324 Feed-Einträge → 225 neu/aktualisiert → 272 Story-Kandidaten → 19381 geeignet → 10 KI → 0 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 358; redaktionelle Quellenbeiträge: 650.\nProduktive Quellen im letzten Lauf: keine im letzten Lauf.\nEreignischeck (begrenzter Quellenbestand): 15 größere Ereignisse · 0 mit Veröffentlichung · 15 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.00 · heute $0.00 · Monat $13.33.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 100 Erstveröffentlichungen · 470 Aktualisierungen · 1037 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 21.17 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 92 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nHeute noch keine veröffentlichte oder aktualisierte Akte für eine Kostenquote.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €14.16 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Private Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\n⚠ Automatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\n⚠ KI-Verarbeitung: Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen. Laufbericht: 2026-10-11T05:42:11.132Z.\n⚠ Nachrichten-Warteschlange: 3 technisch blockierte Akte(n); älteste technische Blockade seit 7081 Minuten. Kapazitätswarteschlange: 574; redaktionelle Ablehnungen: 199.\n⚠ Redaktionelle Themenabdeckung: 9 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\n⚠ Nachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -2553,7 +2570,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T05:54:01.250Z",
+    "checked_at": "2026-10-11T06:05:55.349Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
