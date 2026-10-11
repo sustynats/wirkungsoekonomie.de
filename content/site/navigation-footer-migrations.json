@@ -1,0 +1,50 @@
+{
+  "sourceCommit": "c09e15918588f9204c971227275f8edd7d2c346d",
+  "purpose": "Preserve the existing Website 1.0 footer links as local navigation while introducing one global footer. No archival decision or new main menu.",
+  "migrations": [
+    {
+      "id": "rang24",
+      "label": "Website 1.0",
+      "links": [
+        {
+          "label": "Fachbibliothek",
+          "href": "fachbibliothek/"
+        },
+        {
+          "label": "Downloads",
+          "href": "downloads/"
+        },
+        {
+          "label": "Tools",
+          "href": "werkzeuge/"
+        },
+        {
+          "label": "Releasebericht",
+          "href": "website-1-0-release/"
+        }
+      ],
+      "sources": [
+        {
+          "path": "portale/index.html",
+          "legacyFooterSha256": "f37f19f412799ba74e7a4b00a543e052cbd4e588423e228ae260f5d97d062256"
+        },
+        {
+          "path": "sdg-sdgplus/index.html",
+          "legacyFooterSha256": "f37f19f412799ba74e7a4b00a543e052cbd4e588423e228ae260f5d97d062256"
+        },
+        {
+          "path": "website-1-0-release/index.html",
+          "legacyFooterSha256": "f37f19f412799ba74e7a4b00a543e052cbd4e588423e228ae260f5d97d062256"
+        },
+        {
+          "path": "downloads/index.html",
+          "legacyFooterSha256": "f37f19f412799ba74e7a4b00a543e052cbd4e588423e228ae260f5d97d062256"
+        },
+        {
+          "path": "fachbibliothek/index.html",
+          "legacyFooterSha256": "f37f19f412799ba74e7a4b00a543e052cbd4e588423e228ae260f5d97d062256"
+        }
+      ]
+    }
+  ]
+}
