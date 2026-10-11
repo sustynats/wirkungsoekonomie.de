@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import { bridgePath, hash, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
 import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, buildObservationRequest, observationKey, pageObservationKey, pendingEpisodesKey, AUTOMATIC_DRAFT_POLICY, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
-import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTranscriptText, timecode, audioSourceFor } from '../../scripts/news/sendungs-transkript.mjs';
+import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTranscriptText, timecode, audioSourceFor, transcribeAudioFile } from '../../scripts/news/sendungs-transkript.mjs';
 import { labelledTitle } from '../../scripts/news/build.mjs';
 
 const now = '2026-09-16T06:00:00.000Z';
@@ -100,6 +100,65 @@ function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
   const transport = { writeAtomic: async (p, v) => { files.set(p, v); } };
   return { session: { store, transport }, files, observations, jobs };
 }
+
+test('audio billing refusals use the existing classifier; rate limits and server errors stay distinct', async () => {
+  const fs = await import('node:fs'), os = await import('node:os'), path = await import('node:path');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-transcription-billing-test-'));
+  const file = path.join(dir, 'fixture.mp3');
+  fs.writeFileSync(file, Buffer.from('local test fixture'));
+  try {
+    for (const [status, error, expected] of [
+      [429, { code: 'credit_balance_exhausted' }, 'AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED'],
+      [429, { message: 'You have no credits remaining. Add credits.' }, 'AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED'],
+      [429, { code: 'project_spend_limit_exceeded' }, 'AI_PROVIDER_SPEND_LIMIT_REACHED'],
+      [429, { type: 'insufficient_quota' }, 'AI_PROVIDER_QUOTA_EXHAUSTED'],
+      [429, { code: 'rate_limit_exceeded' }, null],
+      [503, { code: 'credit_balance_exhausted' }, null],
+    ]) {
+      let calls = 0;
+      await assert.rejects(() => transcribeAudioFile(file, { apiKey: 'fixture-only', fetchImpl: async (url, init) => {
+        calls++;
+        assert.equal(url, 'https://api.openai.com/v1/audio/transcriptions');
+        assert.equal(init.method, 'POST');
+        return { ok: false, status, json: async () => ({ error }) };
+      } }), rejected => {
+        assert.equal(rejected.message, `TRANSCRIBE_PROVIDER_ERROR:${status}`);
+        assert.equal(rejected.billingRefusal, expected);
+        return true;
+      });
+      assert.equal(calls, 1, 'no replay of a refused or uncertain transcription');
+    }
+  } finally { fs.rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('a billing refusal stops further machine transcripts, not free transcripts or private proposals', async () => {
+  for (const billingRefusal of ['AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED', 'AI_PROVIDER_SPEND_LIMIT_REACHED', 'AI_PROVIDER_QUOTA_EXHAUSTED', null]) {
+    const fixture = fakeSession();
+    const followed = ['billing-first', 'billing-next', 'free-transcript'].map(id => ({ id, show_name: id,
+      kind: 'listened', feed: `https://feeds.example/${id}`, require_transcript: true }));
+    const feed = id => `<rss><channel><item><title>${id}</title><link>https://episodes.example/${id}</link>
+      <guid>${id}</guid><pubDate>${id === 'billing-first' ? 'Sat, 12' : id === 'billing-next' ? 'Fri, 11' : 'Thu, 10'} Sep 2026 20:00:00 GMT</pubDate>
+      <enclosure url="https://media.example/${id}.mp3"/>
+      ${id === 'free-transcript' ? '<podcast:transcript url="https://media.example/free.vtt" type="text/vtt"/>' : ''}</item></channel></rss>`;
+    const calls = [];
+    const report = await proposeEpisodeCandidates({ session: fixture.session, root: '/nonexistent', now, env: {}, shows: followed,
+      limit: 3, maxPerDay: 5, subtitleWaitHours: 18,
+      fetchImpl: async url => ({ ok: true, text: async () => url.endsWith('.vtt') ? 'Wortlaut '.repeat(80) : feed(url.split('/').at(-1)) }),
+      transcribeImpl: async episode => { calls.push(episode.show_id); throw Object.assign(new Error('TRANSCRIBE_PROVIDER_ERROR:429'), { billingRefusal }); },
+    });
+    assert.deepEqual(calls, billingRefusal ? ['billing-first'] : ['billing-first', 'billing-next'], 'a plain rate-limit error is not a billing block');
+    assert.equal(report.transcript_provider_billing_error, billingRefusal);
+    assert.equal(report.transcript_errors.length, billingRefusal ? 1 : 2);
+    assert.deepEqual(report.deferred_episodes.map(row => row.reason), billingRefusal ? ['transcription_provider_billing_blocked'] : []);
+    assert.deepEqual(report.waiting_for_subtitles.map(row => row.show_id), ['billing-first', 'billing-next']);
+    assert.equal(report.pending_episodes, 2, 'blocked episodes remain durably pending');
+    assert.deepEqual(report.proposed.map(row => row.show_id), ['free-transcript']);
+    assert.equal(report.transcribed_today, 0);
+    assert.equal(report.transcript_cost_today_usd, 0);
+    assert.equal(fixture.jobs.at(-1).input.manual_only, true);
+    assert.equal(fixture.jobs.at(-1).input.request.publication_intent, 'final_approval_required');
+  }
+});
 
 test('all enabled subscriptions draft automatically, including Machtwechsel, without changing final approval', () => {
   const series = loadShows().filter(s => s.id === 'machtwechsel');
