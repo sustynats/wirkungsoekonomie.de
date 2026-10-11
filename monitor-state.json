@@ -35,10 +35,23 @@
     },
     "institute": {
       "firstSeen": "2026-10-11T07:06:05.059Z",
-      "active": false
+      "active": true
+    },
+    "delivery-redaktionsworker.yml": {
+      "firstSeen": "2026-10-11T07:15:14.451Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9e7ef0fcf05ec68af2917a20",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-11T07:06:05.059Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "9593e40c6d24e760e10d5934",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-11T07:15:14.451Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2545,7 +2558,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T07:06:05.059Z",
+    "checked_at": "2026-10-11T07:15:14.451Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
