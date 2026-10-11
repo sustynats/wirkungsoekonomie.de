@@ -134,7 +134,21 @@ export class EditorialIntake {
     }finally{this.deliveryStore.release(true);}
   }
   list(owner){
-    return this.store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.intake.owner')=? AND json_extract(body,'$.intake.research_parent') IS NULL ORDER BY json_extract(body,'$.created_at') DESC LIMIT 100").all(owner).map(row=>{
+    // List cards must not materialize complete manuscripts, model answers or
+    // revision histories in the small web-server heap. Full previews still
+    // use the unchanged owner-checked get/preview path.
+    const whitespace='\u0009\u000a\u000b\u000c\u000d \u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000\ufeff';
+    return this.store.db.prepare(`SELECT
+      json_remove(body,'$.staging','$.candidate','$.corrections','$.semantic_review',
+        '$.input.origin','$.accepted.record','$.accepted.editorial','$.intake.news_research') AS body,
+      COALESCE(json_extract(body,'$.accepted.editorial.title'),json_extract(body,'$.accepted.record.title'),json_extract(body,'$.intake.news_research.title')) AS title,
+      EXISTS(SELECT 1 FROM json_each(json_array(
+        json_extract(body,'$.staging.editorial_preview.markdown'),json_extract(body,'$.staging.record.source_summary'),
+        json_extract(body,'$.staging.record.analysis.summary'),json_extract(body,'$.staging.text')))
+        WHERE type='text' AND length(trim(value,?))>0 AND trim(value,?) NOT IN (?,?)) AS preview_available
+      FROM jobs WHERE json_extract(body,'$.intake.owner')=? AND json_extract(body,'$.intake.research_parent') IS NULL
+      ORDER BY json_extract(body,'$.created_at') DESC LIMIT 100`)
+      .all(whitespace,whitespace,...IMPORT_RECEIPTS,owner).map(row=>{
       const j=JSON.parse(row.body);
       const parent=j.intake.review_parent?this.store.get(j.intake.review_parent):null;
       const reviewJobId=parent?.intake?.owner===owner?parent.input.job_id:j.input.job_id;
@@ -146,7 +160,7 @@ export class EditorialIntake {
       }
       const editorialHold=research.intake?.editorial_hold||j.intake.editorial_hold;
       const researchStatus=research.intake?.news_research_hold?'hold':j.intake.news_repair_job_id?'queued':null;
-      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||j.intake.news_research?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(privatePreviewText(j)),research_status:researchStatus,editorial_hold:editorialHold||null,status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':editorialHold?[editorialHold.reason,editorialHold.requested_information].filter(Boolean).join(' '):researchStatus==='hold'?'Die Quellenbasis reicht noch nicht aus. Der Auftrag bleibt zur redaktionellen Klärung gespeichert.':researchStatus==='queued'?'Die Quellenbasis wird redaktionell nachrecherchiert. Anschließend folgen Nachrichtenprüfung und Vorschau.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
+      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:row.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(row.preview_available),research_status:researchStatus,editorial_hold:editorialHold||null,status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':editorialHold?[editorialHold.reason,editorialHold.requested_information].filter(Boolean).join(' '):researchStatus==='hold'?'Die Quellenbasis reicht noch nicht aus. Der Auftrag bleibt zur redaktionellen Klärung gespeichert.':researchStatus==='queued'?'Die Quellenbasis wird redaktionell nachrecherchiert. Anschließend folgen Nachrichtenprüfung und Vorschau.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
     });
   }
   preview(owner,id){

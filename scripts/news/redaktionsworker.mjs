@@ -15,6 +15,7 @@ import { officialShowName } from './show-identity.mjs';
 import { repairMissingPackets } from './auftrag-einreichen.mjs';
 import { EDITORIAL_HOUR_KEY, EDITORIAL_WAITING_KEY, editorialDraftsInWindow, noteEditorialDraft, configuredEditorialQuota, independentHourlyRoom, waitingRecord } from './stundenkontingent.mjs';
 import fs from 'node:fs';
+import { writeAttemptCheckpoint } from './bridge/attempt-checkpoint.mjs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
@@ -531,7 +532,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   // einer davon seit dem 13.09.; Natalie hat sie nie zur Freigabe gesehen.
   const contractFixed = Boolean(attempt) && attempt.status !== 'output_delivered' && attempt.version !== WORKER_VERSION
     && attempt.retried_for_version !== WORKER_VERSION;
-  if (attempt?.provider_called && !contractFixed) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered' };
+  if (attempt?.provider_called && !contractFixed) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered', attempt_status: attempt.status, attempted_at: attempt.at || null };
   const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
   if (await session.transport.metadata(outputPath) || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) return { job_id: id, status: 'already_delivered' };
   const name = `${id}.input.json`, sourcePath = bridgePath('00_INBOX', name), claimPath = bridgePath('10_CLAIMED', name);
@@ -575,13 +576,14 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     catch { return { job_id: id, status: 'claim_unknown' }; }
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', at: now() });
   }
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, requested_model: selectedModel, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+  const startedAttempt = { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, requested_model: selectedModel, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) };
+  await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, startedAttempt, attempt);
   let result;
   try { result = await draft(request, { model: selectedModel, webSearch: webResearch, researchRequired }); }
   catch (error) {
     const status = error.providerNotCalled ? 'provider_unavailable' : 'output_unusable';
     const message = [String(error.message), error.detail].filter(Boolean).join(' · ').slice(0, 320);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
     return { job_id: id, status, error: message, cost_usd: error.cost ?? 0 };
   }
   if (rawOutputDir) {
@@ -596,8 +598,8 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   const answerArchives = [];
   try { answerArchives.push(await archiveEditorialAnswer(session, id, packet, result, 0, now())); }
   catch {
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true,
-      status: 'validation_failed', error: 'EDITORIAL_ARCHIVE_FAILED', usage: result.usage, cost_usd: result.cost || 0, at: now() });
+    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true,
+      status: 'validation_failed', error: 'EDITORIAL_ARCHIVE_FAILED', usage: result.usage, cost_usd: result.cost || 0, at: now() }, startedAttempt);
     return { job_id: id, status: 'validation_failed', error: 'EDITORIAL_ARCHIVE_FAILED', cost_usd: result.cost || 0 };
   }
   const previewRepairs = [];
@@ -625,7 +627,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   }
   if (!validated) {
     const message = [...lastIssues, ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : []), ...(repairCalls ? ['eine Nachlieferung blieb erfolglos'] : [])].join('\n').slice(0, 2000);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
     return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: cost, repair_calls: repairCalls };
   }
   const latest = await session.store.get(id);
@@ -634,7 +636,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
   await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), answer_archives: answerArchives, model: result.model, usage, web_searches: webSearches, preview_repairs: previewRepairs, repair_calls: repairCalls, cost_usd: cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, bilder: bilder.length, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage, web_searches: result.web_searches ?? 0, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+  await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, bilder: bilder.length, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage, web_searches: result.web_searches ?? 0, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
   return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: cost, model: result.model, ...(repairCalls ? { repair_calls: repairCalls } : {}),
     ...(supplement ? { supplement_of: supplement.job_id, supplement_previous_version: Boolean(supplement.previous_version) } : {}),
     ...(bilder.length ? { bilder: bilder.length } : {}), ...(anhaengeUebersprungen.length ? { anhaenge_uebersprungen: anhaengeUebersprungen } : {}), web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
@@ -657,7 +659,8 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // Wartestand und kostenlose Reparaturen vor jedem Kontingentabbruch:
     // bereits bezahlte, technisch reparierbare Antworten benötigen keinen
     // weiteren Modellaufruf und dürfen deshalb nicht am Durchsatzlimit hängen.
-    const rows = await store.all();
+    const editorialRows = () => typeof store.editorialJobs==='function' ? store.editorialJobs() : store.all();
+    const rows = await editorialRows();
     const recoveredOutputs = await recoverCachedEditorialOutputs(live, rows, now());
     // Ein Auftrag in der Ablage ohne Paket im Postfach war am 17.09.2026 das
     // Ende der ganzen Spur: processEditorialRequest liest das Paket, brach mit
@@ -725,7 +728,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     }
     // Nach der Arbeit derselbe Vermerk noch einmal: dieser Lauf kann einen
     // Auftrag gerade verbraucht haben.
-    const erschoepft = await erschoepfteAuftraege(store, await store.all());
+    const erschoepft = await erschoepfteAuftraege(store, await editorialRows());
     await store.observe(EXHAUSTED_ORDERS_KEY, { at: now(), worker_version: WORKER_VERSION, orders: erschoepft }).catch?.(() => {});
     return { ...(repairedPackets.length ? { repaired_packets: repairedPackets } : {}), status: 'ok', day, recovered_outputs: recoveredOutputs, quota_scope: 'editorial_only', open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, exhausted_orders: erschoepft.length, results };
   } finally {
@@ -749,5 +752,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
 }
 
 export function editorialRunNeedsAttention(report) {
-  return Boolean(report.results?.some(result => ['provider_unavailable', 'validation_failed', 'output_unusable', 'request_failed'].includes(result.status)));
+  return Boolean(report.exhausted_orders > 0
+    || report.recovered_outputs?.some(result => result.status === 'cached_output_still_invalid')
+    || report.results?.some(result => ['provider_unavailable', 'validation_failed', 'output_unusable', 'request_failed'].includes(result.status)
+      || result.status === 'attempt_exhausted' && result.delivered !== true));
 }

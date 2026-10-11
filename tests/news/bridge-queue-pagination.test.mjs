@@ -6,6 +6,17 @@ import path from 'node:path';
 import {bridgeSession} from '../../scripts/news/bridge/remote.mjs';
 import {BridgeStore} from '../../scripts/news/bridge/store.mjs';
 const env={WOEK_NEWS_BRIDGE_URL:'https://130.162.217.58.sslip.io/api/news-bridge',WOEK_NEWS_BRIDGE_TOKEN:'fixture',GITHUB_RUN_ID:'12345'};
+test('editorial lookup pages only open identities and never loads old manuscript bodies',async t=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'editorial-light-')),local=new BridgeStore(path.join(dir,'queue.sqlite'));
+  t.after(()=>{local.close();fs.rmSync(dir,{recursive:true,force:true});});
+  for(let i=0;i<42;i++)local.put({input:{job_id:`job-${String(i).padStart(3,'0')}`,job_type:'editorial_request'},status:'queued',created_at:'2026-10-11',intake:{draft_id:'manual'},staging:{private:'unchanged'}});
+  local.put({input:{job_id:'old-news',job_type:'analysis'},status:'queued',staging:{private:'x'.repeat(3000000)}});
+  local.all=()=>assert.fail('full queue must not be materialized');let calls=0;
+  const remote=bridgeSession(env,{fetchImpl:async(_url,options)=>{calls++;const {op,args}=JSON.parse(options.body);assert.equal(op,'store.editorialJobs');return Response.json({ok:true,result:local.editorialJobs(...args)});}});
+  const rows=await remote.store.editorialJobs();assert.equal(rows.length,42);assert.equal(calls,3);
+  assert.ok(rows.every(row=>row.intake.draft_id==='manual'&&!row.staging));assert.ok(JSON.stringify(rows).length<15000);
+  assert.equal(local.get('old-news').staging.private.length,3000000);
+});
 
 test('semantic review lookup reads only the requested parent in one remote call', async t=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'woek-review-index-'));
