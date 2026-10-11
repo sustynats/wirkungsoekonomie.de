@@ -58,7 +58,7 @@ const server=http.createServer(async(req,res)=>{
   const send=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
   if(req.headers.origin||!['127.0.0.1','::1','::ffff:127.0.0.1'].includes(req.socket.remoteAddress))return send(403,{});
   try{
-   if(req.url==='/internal/status'&&req.method==='GET')return send(200,{pending:approval.pendingPublication().length,
+   if(req.url==='/internal/status'&&req.method==='GET')return send(200,{pending:approval.pendingPublicationCount(),
     poll:{running:polling,phase:pollPhase,started_at:pollStartedAt,finished_at:pollFinishedAt,import_lock:importStore.locked===true,discovery_lock:store.locked===true}});
    if(req.method!=='POST'||req.headers['content-type']!=='application/json')return send(400,{});
    if(req.url==='/internal/failure'){

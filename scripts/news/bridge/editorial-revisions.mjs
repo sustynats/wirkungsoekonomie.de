@@ -17,12 +17,12 @@ export function prepareEditorialRevisions({store,approval,now=()=>new Date().toI
 
 export async function notifyEditorialReviews({approval,store,config,fetchImpl=fetch}){
  if(!config?.token||!/^\d{15,22}$/.test(config.recipient||''))return;
- const records=approval.list(config.recipient).filter(r=>r.status==='AWAITING_FINAL_APPROVAL');
+ const records=approval.notificationCandidates(config.recipient);
  for(const r of records){
   const key='editorial-notified:'+r.job_id+':'+r.preview_hash;if(store.observation(key)?.sent_at)continue;
   const previous=store.observation(key);if(previous?.retry_after&&Date.parse(previous.retry_after)>Date.now())continue;
   try{
-   const content=`Neue Vorschau zur Freigabe: ${r.preview.title}\nText, Quellen und Bild liegen bereit. Bitte freigeben oder mit Kommentar zurückgeben:\nhttps://wirkungsoekonomie.de/admin/redaktion/#freigeben`;
+   const content=`Neue Vorschau zur Freigabe: ${r.title}\nText, Quellen und Bild liegen bereit. Bitte freigeben oder mit Kommentar zurückgeben:\nhttps://wirkungsoekonomie.de/admin/redaktion/#freigeben`;
    await sendDiscord({id:hash(key).slice(0,24),content},{...config,fetchImpl});store.observe(key,{sent_at:new Date().toISOString()});
   }catch{store.observe(key,{retry_after:new Date(Date.now()+15*60000).toISOString(),status:'NOTIFICATION_PENDING'});}
  }

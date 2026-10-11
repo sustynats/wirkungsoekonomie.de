@@ -28,6 +28,9 @@ export class BridgeStore {
       CREATE INDEX IF NOT EXISTS jobs_intake_kind ON jobs (json_extract(body,'$.intake.kind'));
       CREATE INDEX IF NOT EXISTS jobs_type ON jobs (json_extract(body,'$.input.job_type'));
       CREATE INDEX IF NOT EXISTS jobs_state ON jobs (json_extract(body,'$.status'));
+      CREATE INDEX IF NOT EXISTS jobs_intake_news_link ON jobs
+        (json_extract(body,'$.intake.news_job_id'))
+        WHERE json_extract(body,'$.intake.news_job_id') IS NOT NULL;
     `);
     const lockFile = `${file}.${lane}.lock`;
     this.lock = new DatabaseSync(lockFile);
