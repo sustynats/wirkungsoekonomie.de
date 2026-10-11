@@ -22,7 +22,18 @@ export function episodeIdentity(edition){
 
 export async function importApprovedEditorials(store,root){
  if(!store.editorialClaim)return {changed:false};
- const editions=await store.editorialClaim();if(!editions.length)return {changed:false};
+ const editions=await store.editorialClaim();
+ if(!Array.isArray(editions))throw Error('EDITORIAL_CLAIM_RESPONSE_INVALID');
+ if(!editions.length){
+  // A successful empty claim means no approved/publishing editions remain.
+  // Retire only the old receipt counter; parked review failures and receipts
+  // themselves must not be changed or inferred from this observation.
+  let previous=null;
+  if(store.observation)try{previous=await store.observation(PARKED_KEY);}catch{}
+  if(Number(previous?.awaiting)>0&&store.observe)await store.observe(PARKED_KEY,
+   {...previous,at:new Date().toISOString(),awaiting:0,awaiting_since:null}).catch?.(()=>{});
+  return {changed:false};
+ }
  const file=path.join(root,PERSONAL_FILE),data=fs.existsSync(file)?readRepositoryJson(file):{schema_version:'1.0',editions:[]};
  // awaiting: schon uebernommene Fassungen, die der Schreibtisch weiter
  // anbietet, weil die Quittung fehlt. Bleibt das stehen, steht Natalies
