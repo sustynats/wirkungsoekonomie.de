@@ -73,7 +73,15 @@ kein zusaetzlicher bezahlter Diagnoselauf und keine blinde Budgeterhoehung.
 
 ## Lokale Regressionen
 
+Vor der Oracle-Installation wird die neue `store.editorialJobs`-Operation
+ausserdem gegen den wirklichen HTTP-Handler geprueft. Ein bisheriger
+Praefixvergleich haette diesen reinen Journalread faelschlich an die private
+Finalize-Aktion geleitet. Nur die drei ausdruecklichen Claim-/Finalize-/Failure-
+Operationen erreichen nun diese Aktionen. Eigentuemertoken, Lane-Locks und
+Import-Lane-Grenzen bleiben unveraendert; es gibt keine neue Abschlussentscheidung.
+
 ```sh
+node --test tests/news/bridge-editorial-dispatch.test.mjs
 node --test tests/news/editorial-auth-throughput.test.mjs tests/news/editorial-checkpoint.test.mjs tests/news/redaktionsworker.test.mjs tests/news/editorial-intake.test.mjs tests/news/bridge-queue-pagination.test.mjs tests/news/bridge-remote-read-retry.test.mjs
 node --test tests/news/news-provider-refusal.test.mjs tests/news/direct-operation.test.mjs tests/news/budget-throughput.test.mjs tests/news/source-run-health.test.mjs
 npm run news:test
