@@ -72,6 +72,7 @@ const RELEVANCE_BACKFILL_DAYS = 2;
 // Versuche gegenstandslos; Kappung und Backoff zählen ab dieser Version neu.
 export const AI_PROCESSING_VERSION = "2026-09-15-direct-3";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE", "AI_PROVIDER_OUTPUT_INVALID"]);
+const PROVIDER_BILLING_ERRORS = new Set(["AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED", "AI_PROVIDER_SPEND_LIMIT_REACHED", "AI_PROVIDER_QUOTA_EXHAUSTED"]);
 const CAPACITY_HOLD_REASONS = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
 const RETRYABLE_QUALITY_ERRORS = [
@@ -1008,7 +1009,10 @@ function sanitizeError(error) {
   const message = error instanceof Error ? error.message : String(error);
   // These exact internal codes are not credentials. Redacting their length
   // would turn a retryable schema error into an unknown provider outage.
-  if (OUTPUT_FORMAT_ERRORS.has(message)) return message;
+  // Preserve only exact transport-normalized billing codes as well: masking
+  // them would disable the existing stop-after-first-refusal branch below.
+  // Provider messages, arbitrary suffixes and credentials remain redacted.
+  if (OUTPUT_FORMAT_ERRORS.has(message) || PROVIDER_BILLING_ERRORS.has(message)) return message;
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
 }
 
@@ -1940,7 +1944,7 @@ export async function runWirkungsticker(options = {}) {
           continue;
         }
         const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
-        const providerBillingBlocked = /^AI_PROVIDER_(?:CREDIT_BALANCE_EXHAUSTED|SPEND_LIMIT_REACHED|QUOTA_EXHAUSTED)$/.test(reason);
+        const providerBillingBlocked = PROVIDER_BILLING_ERRORS.has(reason);
         const providerRateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
         const rateLimited = budgetBlocked || providerRateLimited;
         const deferred = rateLimited || providerBillingBlocked ? selected.slice(offset) : batch;

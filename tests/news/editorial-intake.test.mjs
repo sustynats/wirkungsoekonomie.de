@@ -184,6 +184,17 @@ test('signature is delegated to existing admin service, never trusted from unsig
  const denied=existingAdminAuthorizer({fetchImpl:async()=>new Response('{}',{status:403})});assert.equal(await denied({headers:{authorization:'Bearer '+token}}),null);
  const accepted=existingAdminAuthorizer({fetchImpl:async()=>new Response('{}',{status:200})});assert.equal(await accepted({headers:{authorization:'Bearer '+token}}),owner);
 });
+test('listing large drafts preserves metadata and exact preview access without loading staging into cards',async t=>{
+ const f=setup(t),j=await job(f),text='Privates Manuskript. '.repeat(250000);
+ j.staging={editorial_preview:{markdown:text}};j.accepted={editorial:{title:'Titel aus dem Manuskript',markdown:text}};f.store.put(j);
+ const before=f.store.db.prepare('SELECT body FROM jobs WHERE id=?').get(j.input.job_id).body;
+ const [card]=f.intake.list(owner);assert.equal(card.title,'Titel aus dem Manuskript');assert.equal(card.preview_available,true);
+ assert.ok(JSON.stringify(card).length<5000);assert.equal(f.intake.preview(owner,j.input.job_id).text,text);
+ assert.equal(f.store.db.prepare('SELECT body FROM jobs WHERE id=?').get(j.input.job_id).body,before);
+ for(const empty of ['\n\t\u00a0','\nDer Entwurf wurde privat übernommen.\n']){
+  j.staging={text:empty};f.store.put(j);assert.equal(f.intake.list(owner)[0].preview_available,false);
+ }
+});
 test('malformed output does not block another preview; absent output never increments retries',async t=>{
  const f=setup(t),j=await job(f);assert.deepEqual(await importEditorialPreviews(f),{staged:0,failed:[]});assert.deepEqual(f.store.get(j.input.job_id).attempts,{});
  f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),'bad');assert.equal((await importEditorialPreviews(f)).failed.length,1);assert.equal(f.approval.list(owner).length,0);

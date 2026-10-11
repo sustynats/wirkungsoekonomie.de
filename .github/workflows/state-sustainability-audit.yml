@@ -102,6 +102,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Capture operational news sources outside #253
+        run: node scripts/quality/scope-state-projection-news.mjs capture --snapshot=${{ runner.temp }}/woek-state-news.json
       - name: Apply approved #253 deterministic projections
         run: |
           python tools/apply_state_sustainability_architecture.py
@@ -122,12 +124,17 @@ jobs:
           node scripts/site/build-methodik-explainer.mjs
           node scripts/site/apply-state-benchmark-update.mjs
           node scripts/site/apply-model-definition-update.mjs
-          node scripts/site/normalize-site-header.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
-          node scripts/site/normalize-site-footer.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
-          node scripts/quality/normalize-publication-typography.mjs . --tracked
+          node scripts/site/normalize-site-header.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html --prefix=wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html
+          node scripts/site/normalize-site-footer.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html --prefix=wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html
+          # Operational news HTML is maintained by ingestion, outside #253.
+          # Preserve it here; the complete release artifact still normalizes
+          # and checks all public typography with no exclusions.
+          node scripts/quality/normalize-publication-typography.mjs . --tracked --exclude-source-prefix=wirkungsticker/ --exclude-source-prefix=news/ --exclude-source-prefix=reports/
           node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
+      - name: Preserve unchanged operational news metadata
+        run: node scripts/quality/scope-state-projection-news.mjs restore --snapshot=${{ runner.temp }}/woek-state-news.json
       - name: Generate committed exhaustive #253 URL/file matrix
         run: |
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
@@ -159,6 +166,7 @@ jobs:
           fi
       - name: Verify projections and committed matrix are idempotent
         run: |
+          node scripts/quality/scope-state-projection-news.mjs capture --snapshot=${{ runner.temp }}/woek-state-news.json
           python tools/apply_state_sustainability_architecture.py
           python tools/apply_state_sustainability_wiwi_generator.py
           python tools/apply_state_sustainability_wiwi_scope.py
@@ -177,12 +185,13 @@ jobs:
           node scripts/site/build-methodik-explainer.mjs
           node scripts/site/apply-state-benchmark-update.mjs
           node scripts/site/apply-model-definition-update.mjs
-          node scripts/site/normalize-site-header.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
-          node scripts/site/normalize-site-footer.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
-          node scripts/quality/normalize-publication-typography.mjs . --tracked
+          node scripts/site/normalize-site-header.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html --prefix=wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html
+          node scripts/site/normalize-site-footer.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html --prefix=wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html --prefix=werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html
+          node scripts/quality/normalize-publication-typography.mjs . --tracked --exclude-source-prefix=wirkungsticker/ --exclude-source-prefix=news/ --exclude-source-prefix=reports/
           node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
+          node scripts/quality/scope-state-projection-news.mjs restore --snapshot=${{ runner.temp }}/woek-state-news.json
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md

@@ -569,11 +569,24 @@ Der vorbereitete reine Header-Patch wurde dreiseitig auf den aktuellen Hauptzwei
 
 Aktueller Vergleich: 20.172 öffentliche Seiten und sämtliche URLs erhalten; deutsche Header 4 -> 1. 19.871 Haupttexte sind exakt gleich; 298 Seiten ändern ausschließlich gemessene Dateigrößen, drei Referenzübersichten ausschließlich berechnete Lesedauer. Keine redaktionelle Abweichung. Quell- und Artefaktbuild beider Stände bestanden, ebenso Privacy, URL-Bestand, 31 historische/fachliche Architekturprüfungen, sechs Fachseitenprüfungen, sechs Header- und fünf Navigations-/Negativtests. Die historische Prüfung erkennt ausschließlich den exakt generierten globalen Header als Layoutänderung; unbekannte Header und jede Text-/Zahlenlöschung bleiben gesperrt. Größe 876,2 MB unter der unveränderten 950-MB-Grenze. Berichte: reports/navigation/p0-1-current.* und Herkunftsnachweis.
 
+### 2026-10-11 · P0.1: Projektionsjob und parallele Main-Nachrichten
+
+Der bestehende #253-Job normalisierte bisher auch Nachrichtenquellen und erneuerte ihre Suchmetadaten. Die beiden mutierenden Typografie-Schritte sind auf ihren Prüfgegenstand begrenzt; vorhandene Nachrichten-Metadaten werden nur bei vollständig bytegleichen Nachrichtenquellen erhalten. Jede fachliche Quellenänderung beendet den Lauf vor einer Rückschreibung. Vollständige Artefakt-, Fach-, Idempotenz- und Typografieprüfungen bleiben verpflichtend. Vier Negativ-/Abgrenzungstests und zwei identische native Projektionsläufe bestanden.
+
+Zwischenzeitliche Main-Nachrichten sind bytegleich erhalten (Basis ce4167d9ee7714fa3eee65d4d0be008c3196c56b); ihre 2.256 vorhandenen Metadatenzeilen bleiben erhalten. Die vom vorhandenen Projektionsautomat materialisierten Kernseiten bleiben Bestandteil der Integration. Automatisch neu berechnete Quellenkarten und die schon im bestehenden Modell-Projektor enthaltene Wirtschafts-/Gesellschaftseinordnung werden im gesonderten Vergleich ausgewiesen; sie sind kein isolierter Header-Effekt. Englisch und navigation.json bleiben unverändert.
+
+Quellen- und Artefakt-Build, Privacy, URL-Bestand sowie das 950-MB-Größentor bestanden. Das Artefakt umfasst 20.174 öffentliche HTML-Dateien; 17.699 sind indexierbar, 16.067 erreichbar, 1.632 noch nicht erreichbar; 3.973 Inhaltsseiten haben noch keinen Footer. Der kontrollierte isolierte Header-Vergleich bleibt p0-1-current-before/after. Integrationszahlen und Grenzen stehen in p0-1-bot-main-sync und dessen Provenienz.
+
 ### 2026-10-11 · P0.2: Ein gemeinsamer Footer
 
 Ein gemeinsamer Footer aus der unveränderten navigation.json wird auf allen deutschen öffentlichen Inhaltsseiten eingesetzt; Newsletter bleibt ein eigenständiger, datensparsamer Baustein. Doppelte Links werden entfernt. Fünf bisher nur im Rang-24-Footer vorhandene fachliche Links bleiben als lokale Navigation erhalten. Dokument-Inhaltsverzeichnisse erfassen ausschließlich den eigentlichen main-Inhalt, keinen Newsletter-Titel aus dem Footer.
 
 Kontrollierter Build auf 24809c0: 20.173 öffentliche HTML-Seiten vor und nach dem Auftrag, 0 URL-Verlust, 3.973 → 0 Inhaltsseiten ohne Footer und 44.280 → 37.528 Verweise auf Weiterleitungen. 17.698 indexierbare Seiten, 16.066 erreichbar, 1.632 weiterhin nicht erreichbar; weitere Teilaufträge folgen. Haupttextvergleich weist abgeleitete Dateigrößen, Lesedauern und Quellenkarten sowie die strukturelle Leser-Navigation gesondert aus. Fachliche Definitionen unverändert. Vollständige Quellen-/Artefakt-Builds und historische Fach-/Scopeprüfungen bestanden. Berichte: reports/navigation/p0-2-current-*. Englisch bleibt zurückgestellt.
+
+
+### 2026-10-11 · P0.2: Historische Rohseiten auch vor Teilprojektionen vollständig
+
+Die erste kalte GitHub-Fachprüfung erkannte drei historische Rohseiten mit altem Header. Die gemeinsame Kopf- und Fußnavigation ist nun bereits in diesen drei Quellen enthalten und wird in beiden Teilprojektionsläufen ausdrücklich angewendet. Die Haupttexte sind bytegleich erhalten; der Nachweis steht in reports/navigation/p0-2-historical-shell-preservation.json. Kein fachliches Tor wurde gelockert. Read-only-Prüfberichte werden von der mutierenden Quelltypografie ausgenommen; die vollständige Artefaktprüfung behält sämtliche Typografieregeln. Alle 31 Architektur- und sechs Fachseitenprüfungen bestanden; ein weiterer vollständiger Projektionslauf verändert keine der 27.894 erfassten Dateien. Neun Komponenten- und vier historische Grenztests bestanden.
 
 
 ### 2026-10-11 · Erste Website-Stufe und öffentliche Umsetzungshinweise

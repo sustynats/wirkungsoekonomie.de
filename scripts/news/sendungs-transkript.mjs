@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
+import { providerBillingRefusal } from './openai-transport.mjs';
 
 // Barrierefreiheit zuerst: ARD und ZDF veröffentlichen amtliche Untertitel für
 // Hörgeschädigte (EBU-TT/TTML, teils WebVTT oder SRT). Sie sind genauer als
@@ -163,7 +164,10 @@ export async function transcribeAudioFile(file, { apiKey = process.env.OPENAI_AP
     const response = await fetchImpl(TRANSCRIBE_URL, { method: 'POST', body: form, signal: controller.signal, headers: { Authorization: `Bearer ${apiKey}` } });
     status = response.status;
     payload = await response.json().catch(() => null);
-    if (!response.ok) throw Object.assign(new Error(`TRANSCRIBE_PROVIDER_ERROR:${status}`), { detail: String(payload?.error?.message || '').slice(0, 200) });
+    if (!response.ok) throw Object.assign(new Error(`TRANSCRIBE_PROVIDER_ERROR:${status}`), {
+      detail: String(payload?.error?.message || '').slice(0, 200),
+      billingRefusal: providerBillingRefusal(status, payload),
+    });
   } finally { clearTimeout(timer); }
   const duration = Number(payload?.duration) || 0;
   const built = buildTranscriptText(payload?.segments);
