@@ -163,6 +163,10 @@ unverändert. Benachrichtigungen lesen nur Eigentümer-Metadaten tatsächlich
 wartender Vorschauen; der interne Status zählt Publikationsaufträge per SQL,
 ohne historische Volltexte in den Node-Heap zu laden. Volltexte werden weiter
 nur über die Eigentümerprüfung bzw. den regulären Publikationslauf geladen.
+Der periodische manuelle Nachrichtenabgleich verwendet zusätzlich den partiellen
+`jobs_intake_news_link`-Index. Nur bereits mit einem Nachrichtenauftrag verbundene
+Intakes werden gelesen; der gesamte historische Jobs-Bestand wird dafür nicht
+mehr gescannt. Die Ergebnismenge und gespeicherten Aufträge bleiben unverändert.
 
 Der Eingabedienst selbst startet keine Text-KI-API und keinen eigenen
 ChatGPT-Weckdienst. Entwuerfe verarbeitet der bestehende GitHub-Redaktionsworker

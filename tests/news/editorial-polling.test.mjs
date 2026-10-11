@@ -1,11 +1,30 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import {DatabaseSync} from 'node:sqlite';
+import {BridgeStore} from '../../scripts/news/bridge/store.mjs';
 import {EditorialApproval} from '../../scripts/news/bridge/editorial-approval.mjs';
 import {notifyEditorialReviews} from '../../scripts/news/bridge/editorial-revisions.mjs';
 
 const owner='1206956406805102593',other='111111111111111111';
+test('the recurring intake-news lookup scans only linked jobs and preserves every stored body',t=>{
+ const directory=fs.mkdtempSync(path.join(os.tmpdir(),'editorial-polling-test-'));
+ const store=new BridgeStore(path.join(directory,'queue.sqlite'));
+ t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});
+ const insert=store.db.prepare('INSERT INTO jobs VALUES(?,?)');
+ for(let i=0;i<30;i++)insert.run('history-'+i,JSON.stringify({status:'acknowledged',staging:{text:'Synthetischer Alttext. '.repeat(10000)}}));
+ for(const id of ['linked-pending','linked-published'])insert.run(id,JSON.stringify({status:id==='linked-pending'?'pending':'acknowledged',intake:{news_job_id:'synthetic-child-'+id}}));
+ insert.run('unlinked',JSON.stringify({intake:{news_job_id:null}}));
+ const before=store.db.prepare('SELECT id,body FROM jobs ORDER BY id').all();
+ const query="SELECT body FROM jobs WHERE json_extract(body,'$.intake.news_job_id') IS NOT NULL";
+ const plan=store.db.prepare('EXPLAIN QUERY PLAN '+query).all();
+ assert.ok(plan.some(r=>r.detail.includes('jobs_intake_news_link')));
+ assert.deepEqual(store.db.prepare(query).all().map(r=>JSON.parse(r.body).intake.news_job_id).sort(),
+  ['synthetic-child-linked-pending','synthetic-child-linked-published']);
+ assert.deepEqual(store.db.prepare('SELECT id,body FROM jobs ORDER BY id').all(),before);
+});
 function fixture(t){
  const db=new DatabaseSync(':memory:'),approval=new EditorialApproval(db);t.after(()=>db.close());
  const insert=db.prepare('INSERT INTO editorial_reviews VALUES(?,?,?)');
