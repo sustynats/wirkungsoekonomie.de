@@ -29,16 +29,25 @@
       "firstSeen": "2026-10-11T11:35:59.382Z",
       "active": true
     },
-    "academy": {
-      "firstSeen": "2026-10-11T12:35:54.014Z",
+    "editorial-status": {
+      "firstSeen": "2026-10-11T12:41:18.211Z",
       "active": false
     },
-    "institute": {
-      "firstSeen": "2026-10-11T12:35:54.014Z",
+    "run": {
+      "firstSeen": "2026-10-11T12:41:18.211Z",
+      "active": true
+    },
+    "provider": {
+      "firstSeen": "2026-10-11T12:41:18.211Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "c13cf8c320023d1edde5b1a7",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-10-11T12:41:18.211Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2545,7 +2554,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T12:35:54.014Z",
+    "checked_at": "2026-10-11T12:41:18.211Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
