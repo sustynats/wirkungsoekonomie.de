@@ -1,7 +1,28 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-11T04:00:00.000Z",
+  "updated_at": "2026-10-11T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-11-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-11",
+      "window_from": "2026-10-11T04:00:00.000Z",
+      "window_to": "2026-10-11T10:00:00.000Z",
+      "stand": "2026-10-11T10:00:00.000Z",
+      "headline": "Noch keine neue Nachricht seit 6 Uhr veröffentlicht.",
+      "counts": {
+        "total": 0,
+        "neu": 0,
+        "fortgeschrieben": 0
+      },
+      "entries": [],
+      "processing_status": {
+        "state": "provider_unavailable",
+        "checked_at": "2026-10-11T10:07:47.681Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-11-morgenlage",
       "slot": "morgenlage",
