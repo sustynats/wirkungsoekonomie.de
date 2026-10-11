@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {writeContentPage} from '../lib/content-page.mjs';
 import {escapeHtml as esc} from '../lib/explainer-components.mjs';
-import {inlineEditorialMarkdown} from '../news/editorial-markdown.mjs';
+import {renderCorePriceSections} from '../lib/core-price-reader.mjs';
 const d=JSON.parse(fs.readFileSync('content/examples/two-shirts.json','utf8'));
 const box={module:{exports:{}}};vm.runInNewContext(fs.readFileSync('assets/js/two-shirts-calculations.js','utf8'),box);
 const c=box.module.exports,p=d.demo_policy,f=p.fund;
@@ -10,14 +10,7 @@ const x=c.fundScenario(d.products,p,{rate:p.rate_eur_per_kg,quantities:f.quantit
 const euro=n=>new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(n);
 const values={};
 const reference=fs.readFileSync('content/grundlagen/WOEK_KERNREFERENZ.md','utf8');
-const excerpts=['9.1','9.3','9.4'].map(number=>{
-  const start=reference.indexOf(`### ${number} `);
-  if(start<0)throw new Error('Missing provided core section '+number);
-  const next=reference.indexOf('\n### ',start+1);
-  const text=reference.slice(start,next<0?reference.length:next).trim();
-  const blocks=text.split(/\n\n+/);
-  return `<section>${blocks.map((block,i)=>i===0?`<h2>${esc(block.replace(/^### /,''))}</h2>`:`<p>${inlineEditorialMarkdown(block)}</p>`).join('\n')}</section>`;
-}).join('\n');
+const excerpts=renderCorePriceSections(reference);
 writeContentPage({file:'verstehen/preise-und-wirkungsfonds/index.html',title:'Preise und Wirkungsfonds',description:'Wie Belastung, finanzierte Entlastung und Umsatzsteuer im Modell zusammenspielen.',section:'Verstehen',type:'Grundlage',body:`<div data-no-glossary><p class="hero-kicker">Wirtschaft einfach erklärt</p><h1>Preise und Wirkungsfonds</h1><p>Wie kann die bessere Alternative tatsächlich günstiger werden? Die WÖk verbindet Belastungen mit finanzierten Entlastungen. Hier stehen die Grundlagen des Modells; die konkrete Faserregel im T-Shirt-Beispiel ist eine Lehrannahme und kein geltender Steuertarif.</p>${excerpts}<section><h2>Quellen</h2><p>WÖk-Kernreferenz v1.1 vom 9. Oktober 2026, Abschnitte 9.1, 9.3 und 9.4. W1: Natalie Weber, Begriffsleitfaden v1.8 vom 1. Oktober 2026. W2/W3: Buchentwürfe Band I, Kapitel 22.11, und Band II, Kapitel 57.8, vom 1. Oktober 2026. W4: WStG 3.0, Gesamtneufassung 2026, ein Gesetzesentwurf des Modells.</p><p><a href="/bibliothek/wirkungssteuer-wstg-3-0/">WStG-3.0-Entwurf</a> · <a href="https://www.gesetze-im-internet.de/ustg_1980/__10.html">E7: § 10 Absatz 1 UStG</a></p><p><a href="../zwei-t-shirts/">Zum durchgerechneten T-Shirt-Beispiel</a></p></section></div>`});
 for(const [i,id] of ['a','b'].entries())for(const [label,key] of [['old','oldGross'],['new','buyerPayment'],['cost','cost'],['levy','levy'],['fund','fundPayment'],['surplus','actualSurplus'],['vat','vatDue'],['seller','sellerGross'],['net','sellerNet']])values[`${label}_${id}`]=euro(x.rows[i][key]);
 for(const [label,key] of [['revenue','revenue'],['other_funds','otherFunds'],['admin','administrationCost'],['reserve','reserve'],['paid','paid'],['gap','fundingGap'],['balance','cashBalance']])values[label]=euro(x[key]);

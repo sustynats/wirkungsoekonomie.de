@@ -60,6 +60,8 @@ export function findPublicEditorialResidue(html) {
     .replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   const patterns = [
     /Eine Software darf feste Regeln anwenden/i,
+    /Für das vom Nutzer festgelegte Produktbeispiel/i,
+    /Für den zuletzt festgelegten Umsetzungspfad/i,
     /Backend später/i,
     /kein Formular-Backend vorhanden/i,
     /(?:Live-Reference|Import-?Version|Source-Hash|PDF-Fassung in Produktion)/i,
