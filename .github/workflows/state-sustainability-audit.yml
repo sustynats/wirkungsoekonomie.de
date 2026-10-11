@@ -48,6 +48,11 @@ on:
       # Protecting immutable source bytes does not change #253 Fach projections.
       # Its normal PR quality tests remain mandatory, without a branch writer.
       - '!scripts/lib/public-typography.mjs'
+      # Read-only navigation measurements do not change #253 source content.
+      # Their full PR build still runs the same semantic and historical gates.
+      # A projection commit here would alter the head after the checked report.
+      - '!scripts/quality/check-navigation-discovery.mjs'
+      - '!scripts/quality/navigation-report.py'
       - 'tools/apply_state_sustainability_architecture.py'
       - 'tools/apply_state_sustainability_sources.py'
       - 'tools/apply_state_sustainability_precision.py'
