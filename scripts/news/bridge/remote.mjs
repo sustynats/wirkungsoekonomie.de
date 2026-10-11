@@ -12,7 +12,7 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch,
   const url = new URL(endpoint);
   if (url.protocol !== 'https:' || url.hostname !== '130.162.217.58.sslip.io' || url.pathname !== '/api/news-bridge' || url.search || url.hash || url.username || url.password) throw new Error('BRIDGE_REMOTE_URL_INVALID');
   const owner = `${runId}:${env.GITHUB_RUN_ATTEMPT || '1'}`;
-  const readOperations = new Set(['store.get', 'store.all', 'store.semanticReviews', 'store.impactStagingIndex', 'store.observation',
+  const readOperations = new Set(['store.get', 'store.all', 'store.editorialJobs', 'store.semanticReviews', 'store.impactStagingIndex', 'store.observation',
     'dropbox.list', 'dropbox.read', 'dropbox.readBinary', 'dropbox.metadata', 'bridge.status', 'bridge.monitor']);
   async function requestOnce(op, args) {
     return withRequestDeadline(async signal => {
@@ -60,10 +60,10 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch,
     }
   }
   const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
-  store.all = async () => {
+  const jobPages = async op => {
     const jobs = [], cursors = new Set(); let after = '';
     for (;;) {
-      const page = await request('store.all', [{ page_size: 20, after }]);
+      const page = await request(op, [{ page_size: 20, after }]);
       if (Array.isArray(page) && !after) return page; // legacy server
       if (page?.page_version !== 1 || !Array.isArray(page.items)
         || page.items.length > 20 || !(page.next_cursor === null || typeof page.next_cursor === 'string')) throw Error('BRIDGE_QUEUE_PAGE_INVALID');
@@ -73,6 +73,11 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch,
       if (!page.items.length || !page.next_cursor || cursors.has(page.next_cursor)) throw Error('BRIDGE_QUEUE_CURSOR_INVALID');
       cursors.add(page.next_cursor); after = page.next_cursor;
     }
+  };
+  store.all = () => jobPages('store.all');
+  store.editorialJobs = async () => {
+    try { return await jobPages('store.editorialJobs'); }
+    catch (error) { if(error.message!=='BRIDGE_OPERATION_INVALID') throw error; return store.all(); }
   };
   store.semanticReviews = async parent => {
     try { return await request('store.semanticReviews', [parent]); }

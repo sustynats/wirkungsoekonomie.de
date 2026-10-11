@@ -122,6 +122,27 @@ export class BridgeStore {
         ack: row.ack_type != null && row.ack_type !== 'null', correction_count: row.correction_count,
       }));
   }
+  // The editorial worker needs open request identities, not the complete
+  // historical news queue. Bodies are fetched individually only when needed.
+  editorialJobs(page) {
+    if (!page || !Number.isInteger(page.page_size) || page.page_size<1 || page.page_size>20
+      || typeof page.after!=='string' || page.after.length>180) throw Error('BRIDGE_QUEUE_PAGE_INVALID');
+    const rows=this.db.prepare(`SELECT id, json_extract(body,'$.status') AS status,
+      json_extract(body,'$.created_at') AS created_at,
+      json_extract(body,'$.intake.draft_id') AS draft_id,
+      json_extract(body,'$.intake.trigger_type') AS trigger_type,
+      json_extract(body,'$.intake.manual_research') AS manual_research,
+      json_type(body,'$.ack') AS ack_type, json_type(body,'$.accepted') AS accepted_type
+      FROM jobs WHERE json_extract(body,'$.input.job_type')='editorial_request'
+      AND json_extract(body,'$.status') IN ('queued','correction_pending')
+      AND json_extract(body,'$.archived_at') IS NULL AND id>? ORDER BY id LIMIT ?`)
+      .all(page.after,page.page_size+1);
+    const visible=rows.slice(0,page.page_size);
+    return {page_version:1,items:visible.map(r=>({input:{job_id:r.id,job_type:'editorial_request'},
+      status:r.status,created_at:r.created_at,intake:{draft_id:r.draft_id,trigger_type:r.trigger_type,manual_research:r.manual_research===1},
+      ack:r.ack_type!=null&&r.ack_type!=='null',accepted:r.accepted_type!=null&&r.accepted_type!=='null'})),
+      next_cursor:rows.length>page.page_size?visible.at(-1).id:null};
+  }
   impactStagingIndex() {
     return this.db.prepare("SELECT id, json_extract(body,'$.staging.impact_record_hash') AS record_hash FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_reassessment' AND json_extract(body,'$.staging.impact_record.impact_assessment.version')='2.1' AND json_extract(body,'$.accepted.decision')='publish' ORDER BY id").all();
   }
