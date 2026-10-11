@@ -4,7 +4,7 @@
   "established_public_meaning": "Nationaler Wohlfahrtsindex (NWI)",
   "woek_model_public_name": "WÖk-Netto-Wirkungsindex",
   "official_source": "https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-nationaler-wohlfahrtsindex",
-  "route_count": 1137,
+  "route_count": 1138,
   "failure_count": 0,
   "gate": "PASS",
   "records": [
@@ -1181,15 +1181,6 @@
     {
       "source_path": "begriffe/wirkungsreview-und-lernende-retrospektive/index.html",
       "public_url": "/begriffe/wirkungsreview-und-lernende-retrospektive/",
-      "historical_publication": false,
-      "classification": "WOEK_NETTO_WIRKUNGS_INDEX_NAMESPACED",
-      "official_nwi_occurrences": 0,
-      "unqualified_nwi_occurrences": 0,
-      "status": "PASS"
-    },
-    {
-      "source_path": "begriffe/wirkungsrisiko/index.html",
-      "public_url": "/begriffe/wirkungsrisiko/",
       "historical_publication": false,
       "classification": "WOEK_NETTO_WIRKUNGS_INDEX_NAMESPACED",
       "official_nwi_occurrences": 0,
@@ -6642,12 +6633,30 @@
       "status": "PASS"
     },
     {
+      "source_path": "blog.html",
+      "public_url": "/blog.html",
+      "historical_publication": false,
+      "classification": "WOEK_NETTO_WIRKUNGS_INDEX_NAMESPACED",
+      "official_nwi_occurrences": 0,
+      "unqualified_nwi_occurrences": 0,
+      "status": "PASS"
+    },
+    {
       "source_path": "blog/geg-wirkungscheck-ioi-t-sroi.html",
       "public_url": "/blog/geg-wirkungscheck-ioi-t-sroi.html",
       "historical_publication": true,
       "classification": "HISTORICAL_APPROVED_WITH_DATED_NOTICE",
       "official_nwi_occurrences": 1,
       "unqualified_nwi_occurrences": 11,
+      "status": "PASS"
+    },
+    {
+      "source_path": "blog/iooi-wirkungsoekonomie-was-hat-die-strecke-bewirkt.html",
+      "public_url": "/blog/iooi-wirkungsoekonomie-was-hat-die-strecke-bewirkt.html",
+      "historical_publication": true,
+      "classification": "HISTORICAL_APPROVED_WITH_DATED_NOTICE",
+      "official_nwi_occurrences": 1,
+      "unqualified_nwi_occurrences": 7,
       "status": "PASS"
     },
     {

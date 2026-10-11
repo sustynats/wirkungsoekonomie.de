@@ -16,7 +16,7 @@ Diese Punkte entscheidet Natalie noch. Bis dahin bleiben sie, wie sie sind:
 - Die 2.249 Spiegelkarten (`bibliothek/eintraege/online-version-*`) aus dem Katalog nehmen.
 - Gemeinsame Rubrik „Meinung & Analyse" für Journal und Ticker-Analysen.
 - Staatsarchitektur- und GGO/BHO-Abschnitte von der Startseite umziehen.
-- Das sichtbare Desktop-Menü mit Mega-Menü (Phase 2, Claude). Die CSS-Regel, die die Navigation auf allen Breiten ausblendet (`style.css` Z. 17915–18024), bleibt vorerst.
+- Das sichtbare Desktop-Menü mit Mega-Menü (Phase 2, Claude). Die CSS-Regel, die die Navigation auf allen Breiten ausblendet (`style.css` Z. 17915-18024), bleibt vorerst.
 
 ## Leitplanken
 
@@ -48,7 +48,7 @@ Diese Punkte entscheidet Natalie noch. Bis dahin bleiben sie, wie sie sind:
 
 ### P0.2 Footer überall, eine Variante
 
-**Heute:** rund 4.000 Inhaltsseiten haben keinen Footer: alle 3.103 `bibliothek/eintraege/*`, `bibliothek/index.html` und weitere Bibliotheksseiten, 681 `woek-id-register/*`, 157 `methodenraum/*` und `404.html`. `scripts/site/normalize-site-footer.mjs` schließt `methodenraum` und `en/` aus (Z. 77–78). Live sind die Footer-Varianten f1, f2, f3, f4 und f7. Journal, Impressum und Datenschutz stehen doppelt drin.
+**Heute:** rund 4.000 Inhaltsseiten haben keinen Footer: alle 3.103 `bibliothek/eintraege/*`, `bibliothek/index.html` und weitere Bibliotheksseiten, 681 `woek-id-register/*`, 157 `methodenraum/*` und `404.html`. `scripts/site/normalize-site-footer.mjs` schließt `methodenraum` und `en/` aus (Z. 77-78). Live sind die Footer-Varianten f1, f2, f3, f4 und f7. Journal, Impressum und Datenschutz stehen doppelt drin.
 
 **Auftrag:** Ein Footer aus `navigation.json` auf allen Seiten. Doppelte Links entfernen.
 
@@ -71,8 +71,8 @@ Diese Punkte entscheidet Natalie noch. Bis dahin bleiben sie, wie sie sind:
 
 ### P0.4 Barrierefreiheits-Brüche
 
-- **Skip-Link:** zeigt auf 557 Seiten ins Leere. `main.js` Z. 103–114 setzt `#main-content`, `<main>` trägt dort aber eine andere `id` (wirkungsradar 512, blog 25, podcast 9 u. a.).
-- **`aria-current`** (`main.js` Z. 209–231, 268–281): `page` nur für die aktuelle Seite, `true` für den aktiven Bereich. Keine Mehrfachmarkierung durch überlappende Muster (z. B. `fuer/wirkungssteuer.html`, `woek-ki/`).
+- **Skip-Link:** zeigt auf 557 Seiten ins Leere. `main.js` Z. 103-114 setzt `#main-content`, `<main>` trägt dort aber eine andere `id` (wirkungsradar 512, blog 25, podcast 9 u. a.).
+- **`aria-current`** (`main.js` Z. 209-231, 268-281): `page` nur für die aktuelle Seite, `true` für den aktiven Bereich. Keine Mehrfachmarkierung durch überlappende Muster (z. B. `fuer/wirkungssteuer.html`, `woek-ki/`).
 - **Mobiles Panel:** als Dialog mit `aria-modal`. Die Schnellzugriffe nicht doppelt im Accessibility-Tree.
 - **Seiten ohne `main.js`** haben gar keine Navigation: `werkzeuge/faktencheck/` und `umfragen/stadtvergleich-bundestagswahl-2025/`.
 - **Breadcrumb-Landmarks** ohne Label vereinheitlichen auf `aria-label="Brotkrumen"`. In `wirkungssteuerung/*` steht der Breadcrumb heute als `<p>`.
@@ -81,7 +81,7 @@ Diese Punkte entscheidet Natalie noch. Bis dahin bleiben sie, wie sie sind:
 
 ### P0.5 Englischer Link zu „Frag die WÖk"
 
-In `scripts/site/normalize-site-header.mjs` (`renderEnglishUtilityLink`, Z. 55–65) steht noch der alte Schlüssel „WÖk-KI". Der englische Link führt deshalb auf `/en/` statt auf `/en/woek-ai/`.
+In `scripts/site/normalize-site-header.mjs` (`renderEnglishUtilityLink`, Z. 55-65) steht noch der alte Schlüssel „WÖk-KI". Der englische Link führt deshalb auf `/en/` statt auf `/en/woek-ai/`.
 
 ### P0.6 Kleine Brüche
 
