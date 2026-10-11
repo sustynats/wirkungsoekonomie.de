@@ -36,6 +36,14 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-11T10:25:58.909Z",
       "active": true
+    },
+    "institute": {
+      "firstSeen": "2026-10-11T10:50:53.881Z",
+      "active": false
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-11T10:50:53.881Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2545,7 +2553,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T10:47:38.363Z",
+    "checked_at": "2026-10-11T10:50:53.881Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
