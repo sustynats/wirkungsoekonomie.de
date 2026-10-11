@@ -247,6 +247,7 @@ jobs:
       # uebernimmt. Mit der alten Bedingung blieb jede Freigabe dauerhaft auf
       # "wird veroeffentlicht" stehen.
       - name: Acknowledge approved editions after the durable push
+        id: approval_receipt
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         continue-on-error: true
         env:
@@ -273,6 +274,11 @@ jobs:
           retention-days: 3
           if-no-files-found: ignore
           path: ${{ runner.temp }}/ai-raw-output
+      - name: Report incomplete editorial takeover or receipt
+        if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true && (steps.approved.outcome == 'failure' || steps.approval_receipt.outcome == 'failure')
+        run: |
+          echo "::error::Redaktionelle Uebernahme oder Freigabequittung fehlgeschlagen. Nachrichten und bezahlte Antworten bleiben gesichert; der Gesamtprozess ist nicht gesund."
+          exit 1
       - name: Preserve failed-run work and usage for recovery
         if: failure() && steps.slot.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4

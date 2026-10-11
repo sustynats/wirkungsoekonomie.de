@@ -73,6 +73,16 @@ kein zusaetzlicher bezahlter Diagnoselauf und keine blinde Budgeterhoehung.
 
 ## Lokale Regressionen
 
+Der regulaere Nachrichtenlauf `38124492776` blieb am 11.10. gruen, obwohl
+die Freigabequittung `BRIDGE_REMOTE_INVALID_RESPONSE` meldete. Die CLI liefert
+bei technischen Fehlern und fehlgeschlagenen Einzeluebernahmen nun Exit 1.
+Die bestehenden Continue-on-error-Schritte lassen Nachrichten, Build, Push,
+Deployment und Antwortarchivierung weiterhin laufen. Erst danach macht ein
+abschliessendes Gate den Gesamtprozess rot. Ein leerer erfolgreicher Readback
+oder ein definitiv belegter Lane-Wartezustand wird nicht als technische
+Abweisung behandelt. Unklare Quittungen werden nicht blind wiederholt; weder
+Freigaben noch Kosten-/Modellregeln werden dadurch veraendert.
+
 Vor der Oracle-Installation wird die neue `store.editorialJobs`-Operation
 ausserdem gegen den wirklichen HTTP-Handler geprueft. Ein bisheriger
 Praefixvergleich haette diesen reinen Journalread faelschlich an die private
@@ -81,6 +91,7 @@ Operationen erreichen nun diese Aktionen. Eigentuemertoken, Lane-Locks und
 Import-Lane-Grenzen bleiben unveraendert; es gibt keine neue Abschlussentscheidung.
 
 ```sh
+node --test tests/news/editorial-receipt-health.test.mjs
 node --test tests/news/bridge-editorial-dispatch.test.mjs
 node --test tests/news/editorial-auth-throughput.test.mjs tests/news/editorial-checkpoint.test.mjs tests/news/redaktionsworker.test.mjs tests/news/editorial-intake.test.mjs tests/news/bridge-queue-pagination.test.mjs tests/news/bridge-remote-read-retry.test.mjs
 node --test tests/news/news-provider-refusal.test.mjs tests/news/direct-operation.test.mjs tests/news/budget-throughput.test.mjs tests/news/source-run-health.test.mjs
