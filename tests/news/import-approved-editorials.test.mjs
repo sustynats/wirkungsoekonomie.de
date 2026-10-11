@@ -112,6 +112,46 @@ test('die Quittung haelt die Importspur selbst und nimmt einen eigenen Lauf-Plat
   assert.deepEqual(calls, [['acquire', 'import'], ['finalize'], ['release', true]]);
 });
 
+test('a successful empty claim retires stale receipt alarms without fabricating acknowledgements', async t => {
+  const calls = [];
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-receipt-observation-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const parked = [{ content_hash: 'a'.repeat(64), code: 'PERSONAL_SLUG_COLLISION' }];
+  const result = await claimApprovedEditorials({ session: fakeSession([], calls, {
+    vermerk: { at: '2026-10-09T20:00:00.000Z', awaiting: 3, awaiting_since: '2026-10-09T20:00:00.000Z', parked },
+  }), root });
+  assert.deepEqual(result, { status: 'ok', changed: false, failed: [], awaiting_receipt: 0 });
+  const observations = calls.filter(([kind]) => kind === 'observe');
+  assert.equal(observations.length, 1);
+  const [, key, observation] = observations[0];
+  assert.equal(key, 'editorial-parked');
+  assert.equal(observation.awaiting, 0);
+  assert.equal(observation.awaiting_since, null);
+  assert.deepEqual(observation.parked, parked);
+  assert.ok(Date.parse(observation.at) > Date.parse('2026-10-09T20:00:00.000Z'));
+  assert.deepEqual(calls.map(([kind]) => kind), ['acquire', 'claim', 'observe', 'release']);
+  assert.equal(fs.readdirSync(root).length, 0);
+});
+
+test('failed or malformed claims cannot clear a receipt alarm', async () => {
+  for (const claim of [async () => { throw Error('BRIDGE_REMOTE_TIMEOUT'); }, async () => ({ editions: [] })]) {
+    const calls = [];
+    const session = fakeSession([], calls, { vermerk: { awaiting: 3, awaiting_since: '2026-10-09T20:00:00.000Z' } });
+    session.store.editorialClaim = claim;
+    await assert.rejects(claimApprovedEditorials({ session }), /BRIDGE_REMOTE_TIMEOUT|EDITORIAL_CLAIM_RESPONSE_INVALID/);
+    assert.equal(calls.some(([kind]) => kind === 'observe'), false);
+    assert.equal(calls.some(([kind]) => kind === 'finalize'), false);
+    assert.deepEqual(calls.at(-1), ['release', true]);
+  }
+});
+
+test('an unreadable old observation is not replaced with an invented empty receipt history', async () => {
+  const calls = [], session = fakeSession([], calls);
+  session.store.observation = async () => { throw Error('BRIDGE_REMOTE_TIMEOUT'); };
+  assert.equal((await claimApprovedEditorials({ session })).status, 'ok');
+  assert.equal(calls.some(([kind]) => kind === 'observe'), false);
+});
+
 test('eine schon uebernommene Fassung zaehlt als unquittiert und wird vermerkt', async () => {
   const calls = [];
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-approved-'));
