@@ -136,7 +136,13 @@ blockieren. Der alte HOLD samt Antwort bleibt erhalten. Nur nach erneuter regula
 Quellenpruefung entsteht der normale Nachrichtenauftrag; unabhängige Pruefung und
 Natalies abschliessende Freigabe bleiben erforderlich.
 Das Release-Bündel enthält `scripts/news`, `scripts/ops`, `content/news`,
-`assets/data/navigation.json` und die Header-/Footer-Templates. Keine `.env` oder
+`assets/data/navigation.json`, `assets/data/sdg-reference.json`, die gemeinsamen
+Renderer unter `assets/js` (Editorial-Diagramme/-Visuals, Ticker-Sortierung/-Suche),
+`data/news/show-feeds.json`, `data/news/show-visual-identities.json`,
+`data/news/editorial-analyses.json`, `data/news/editorial-revisions.json`,
+`data/news/personal-editorials.json`, `admin/redaktion/feedback-limits.js`,
+`package.json` und die Header-/Footer-Templates. Abhängigkeiten stets am
+gepinnten Quellstand durch Import- und Registry-Startprüfung bestätigen. Keine `.env` oder
 Zugangswerte gehören ins Release. Discord-DM-Konfiguration liegt ausschließlich
 in der geschützten privaten Datei `editorial-discord.json` (Modus 0600).
 
@@ -146,6 +152,21 @@ Release-Verzeichnis bereitstellen, Syntax und Speicherbedarf prüfen, dann den
 `current`-Link wechseln. Caddy vor Reload validieren. Bei einem Fehler auf den
 vorherigen Link und die gesicherte Konfiguration zurückgehen; private Daten bleiben
 erhalten. Keine Datenbankrücksetzung bei einem normalen Code-Rollback.
+
+Die additiven SQLite-Indizes vor dem Dienststart am gesicherten Bestand unter
+den regulären freien Lane-Locks erstellen. Bridge und Eingabedienst nicht
+gleichzeitig ihre ersten Indexmigrationen ausführen lassen: zuerst Bridge
+starten und ihre normale HTTP-Bereitschaft nachweisen, danach Redaktion starten.
+Alte feste Releasepfade in vorhandenen Drop-ins dürfen den geprüften
+`current`-Link nicht übersteuern. Dienstlimits, Netz- und Freigaberegeln bleiben
+unverändert. Benachrichtigungen lesen nur Eigentümer-Metadaten tatsächlich
+wartender Vorschauen; der interne Status zählt Publikationsaufträge per SQL,
+ohne historische Volltexte in den Node-Heap zu laden. Volltexte werden weiter
+nur über die Eigentümerprüfung bzw. den regulären Publikationslauf geladen.
+Der periodische manuelle Nachrichtenabgleich verwendet zusätzlich den partiellen
+`jobs_intake_news_link`-Index. Nur bereits mit einem Nachrichtenauftrag verbundene
+Intakes werden gelesen; der gesamte historische Jobs-Bestand wird dafür nicht
+mehr gescannt. Die Ergebnismenge und gespeicherten Aufträge bleiben unverändert.
 
 Der Eingabedienst selbst startet keine Text-KI-API und keinen eigenen
 ChatGPT-Weckdienst. Entwuerfe verarbeitet der bestehende GitHub-Redaktionsworker
