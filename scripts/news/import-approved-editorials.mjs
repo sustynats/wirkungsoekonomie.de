@@ -76,10 +76,15 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       console.warn(`::warning::Redaktions-${mode} nicht ausgefuehrt: ${result.reason}`);
     }
     if (process.env.GITHUB_OUTPUT && mode === 'claim') (await import('node:fs')).appendFileSync(process.env.GITHUB_OUTPUT, `changed=${Boolean(result.changed)}\n`);
+    if (result.failed?.length) {
+      console.warn('::warning::Mindestens eine freigegebene Fassung konnte nicht uebernommen werden.');
+      process.exitCode = 1;
+    }
   } catch (error) {
-    // Eine gestörte private Redaktion darf den Nachrichtenlauf nie anhalten.
+    // The workflow continues news/build/delivery and preserves paid answers,
+    // but its final gate must see the unsuccessful editorial boundary.
     console.error(JSON.stringify({ mode, status: 'failed', error: /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EDITORIAL_IMPORT_FAILED' }));
     console.warn('::warning::Redaktionelle Uebernahme/Quittung fehlgeschlagen; Nachrichten laufen unabhaengig weiter.');
-    process.exitCode = 0;
+    process.exitCode = 1;
   }
 }
