@@ -1,0 +1,39 @@
+{
+  "sourceParent": "0df10c3aa6bfe7c0d769dfc4c691b0830b04b7f6",
+  "incomingMain": "5bbabb322ba6e7b7e5ae6eb697fcf354082dbe15",
+  "sourceCacheSnapshotTakenBeforeFullBuild": true,
+  "sourceCacheSnapshots": [
+    {
+      "path": "assets/search/search-index.json",
+      "sha256": "c33a8ea06f567b3ffda3b76afaf2197279aa90114c82b87461f556d9f771866f",
+      "incomingMainSha256": "9b5ae19edc3a24184789ecb9316d121ea77972802a5ae9f88a1caca7176719e3",
+      "byteIdenticalToIncomingMain": false
+    },
+    {
+      "path": "public/data/woek-search-meta.json",
+      "sha256": "2abd209ef8c3b60a8bd534db03c71d8938a6656fefd782e86f903399a2e3d2b2",
+      "incomingMainSha256": "2abd209ef8c3b60a8bd534db03c71d8938a6656fefd782e86f903399a2e3d2b2",
+      "byteIdenticalToIncomingMain": true
+    },
+    {
+      "path": "content/taxonomy/site-map.json",
+      "sha256": "08c1e69e11df740cb45cda4311dd4e1db3a2ef0e03adb2a4d266e0da3273d96a",
+      "incomingMainSha256": "08c1e69e11df740cb45cda4311dd4e1db3a2ef0e03adb2a4d266e0da3273d96a",
+      "byteIdenticalToIncomingMain": true
+    }
+  ],
+  "canonicalNewsDeltaAgainstIncomingMain": 0,
+  "scope": "P0.1; gemeinsamer deutscher Header. Die Änderung der Navigationsdaten bleibt ausgeschlossen.",
+  "checks": {
+    "sourceBuild": "PASS",
+    "artifactBuild": "PASS",
+    "historicalSemanticGates": "31/31 PASS",
+    "livingScope": "6/6 PASS",
+    "privacy": "PASS",
+    "urlBaseline": "PASS",
+    "size": "876.3 MB; Warnschwelle 850 MB, harte Grenze 950 MB"
+  },
+  "measurement": "p0-1-main-sync.json",
+  "controlledBeforeAfter": "p0-1-current-provenance.json",
+  "interpretation": "Der kontrollierte Vorher/Nachher-Vergleich bleibt an Main 73c71fc gebunden. Die zusätzliche Messung enthält die zwischenzeitliche Main-Morgenlage sowie neu erzeugte Quellindexdaten und ist kein isolierter Header-Vergleich. Erreichbarkeitsänderungen dieser Messung werden deshalb nicht dem Header zugeschrieben."
+}

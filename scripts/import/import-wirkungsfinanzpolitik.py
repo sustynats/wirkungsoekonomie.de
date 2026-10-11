@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header_for_source
 
 import hashlib
 import html
@@ -229,12 +233,12 @@ def render_body(blocks: list[dict]) -> tuple[str, list[tuple[str, str]]]:
 
 def page_shell_prefix_suffix(relative_depth: int) -> tuple[str, str]:
     page = SHELL_PAGE.read_text(encoding="utf-8")
-    header_start = page.index('    <header class="site-header"')
+    header_start = page.index('<header class="site-header"')
     main_start = page.index("    <main", header_start)
     main_close = "    </main>"
     main_end = page.rindex(main_close)
     footer = page[main_end + len(main_close) :]
-    header = page[header_start:main_start]
+    header = render_site_header_for_source(page)
     if relative_depth == 1:
         header = header.replace("../../", "../")
         footer = footer.replace("../../", "../")

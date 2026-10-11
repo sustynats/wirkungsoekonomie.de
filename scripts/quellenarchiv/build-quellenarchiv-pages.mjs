@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import {loadSourceSnapshot} from './source-snapshot.mjs';
@@ -24,7 +25,7 @@ const CSS_VERSION = "20260612-mobile-table-fix";
 const SITE_URL = "https://wirkungsoekonomie.de";
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
-const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 
 // ---------------------------------------------------------------------------

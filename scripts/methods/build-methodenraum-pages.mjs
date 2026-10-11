@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 /**
  * Generiert die Methodenraum-Seiten aus der kanonischen WÖMS-Registry (Codex-Lane):
  *   content/methods/woems-methoden.json   (152 Methoden, volle Felder)
@@ -39,35 +40,7 @@ const oli = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join('');
 // Header exakt wie methodenraum.html (relativer Präfix pro Tiefe)
 function header(base) {
   const u = (h) => `${base}${h}`;
-  return `    <header class="site-header" data-search-exclude>
-      <a class="brand" href="${u('index.html')}" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="${u('assets/img/brand/signet.svg')}" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
-        <a class="site-utility-link site-utility-link--suche" href="${u('suche.html')}" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
-        <a class="site-utility-link site-utility-link--woek-ki" href="${u('woek-ki/')}" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
-        <a class="site-utility-link site-utility-link--wok-app" href="${u('app/')}" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
-        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="${u('mein-wirkungsraum/')}" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
-        <a class="site-utility-link site-utility-link--language" href="${u('en/')}" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>
-      </nav>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="${u('index.html')}" data-nav-match="index.html">Start</a>
-        <a href="${u('verstehen/')}" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/|methodenraum.html|methodenraum/">Verstehen</a>
-        <a href="${u('fuer/')}" data-nav-match="fuer/|fuer-wen/">Für wen?</a>
-        <a href="${u('wirkungsfelder/')}" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
-        <a href="${u('wirkungssteuerung/')}" data-nav-match="wirkungssteuerung/">Wirkungssteuerung</a>
-        <a href="${u('oeffentlicher-wirkungsraum/')}" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Öffentlicher Wirkungsraum</a>
-        <a href="${u('werkzeuge/')}" data-nav-match="werkzeuge/|tools/|methodik/">Praxis &amp; Tools</a>
-        <a href="${u('lernen/')}" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
-        <a href="${u('bibliothek/')}" data-nav-match="bibliothek/|downloads.html|downloads/|fachbibliothek/|blog.html|blog/">Bibliothek</a>
-        <a href="${u('mitmachen.html')}" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
-      </nav>
-    </header>`;
+  return `    ${renderSiteHeader(base, 'de')}`;
 }
 
 function page({ base, title, desc, section = 'Verstehen', type = 'Übersicht', body }) {

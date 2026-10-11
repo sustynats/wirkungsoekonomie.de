@@ -6,6 +6,10 @@ Builder hält die öffentliche HTML-Fassung, Metadaten und die direkte Portal-CT
 konsistent, ohne redaktionelle Arbeitsanweisungen zu veröffentlichen.
 """
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header_for_source
 
 import html
 import json
@@ -133,14 +137,14 @@ def render_content(source: str) -> str:
 
 def site_shell() -> tuple[str, str]:
     source = (ROOT / "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html").read_text(encoding="utf-8")
-    header_start = source.index('    <header class="site-header"')
+    header_start = source.index('<header class="site-header"')
     main_start = source.index("    <main", header_start)
     main_end = source.rindex("</main>")
     footer = source[main_end + len("</main>") :]
     # Der globale Footer-Generator fügt das Newsletter-Skript einmalig ein.
     # Es darf nicht aus einer bereits normalisierten Quellseite mehrfach geerbt werden.
     footer = re.sub(r'\s*<script defer src="[^\"]*assets/js/newsletter\.js[^\"]*"></script>', "", footer)
-    return source[header_start:main_start], footer
+    return render_site_header_for_source(source), footer
 
 
 def write_article() -> None:

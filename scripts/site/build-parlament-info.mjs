@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import {renderInstituteProjects} from "../lib/institut-projects.mjs";
@@ -10,7 +11,7 @@ const BASE = "../";
 const PORTAL_URL = "https://parlament.wirkungsoekonomie.de/";
 
 const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
-const headerTemplate = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const footerTemplate = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Build the public WÖk master-register from the canonical v1.5 workbook."""
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 
 import csv
 import hashlib
@@ -153,7 +157,7 @@ def layout(title: str, description: str, body: str, prefix: str, canonical_path:
 <title>{esc(title)}</title><meta name="description" content="{esc(description)}">
 <meta name="search_title" content="{esc(title)}"><meta name="search_description" content="{esc(description)}"><meta name="search_section" content="WÖk-Masterregister"><meta name="search_type" content="Register">
 <link rel="stylesheet" href="{prefix}assets/css/style.css"><link rel="canonical" href="https://wirkungsoekonomie.de{esc(canonical_path)}"><link rel="icon" href="{prefix}assets/img/brand/favicon.svg" type="image/svg+xml"></head>
-<body><header class="site-header" data-search-exclude><a class="brand" href="{prefix}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="{prefix}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button><nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude><a href="{prefix}index.html">Start</a><a href="{prefix}verstehen/">Verstehen</a><a href="{prefix}wirkungsfelder/">Wirkungsfelder</a><a href="{prefix}werkzeuge/">Praxis &amp; Tools</a><a href="{prefix}bibliothek/">Bibliothek</a><a href="{prefix}suche.html">Suche</a></nav></header><main data-pagefind-body>{body}</main><script src="{prefix}assets/js/main.js"></script></body></html>'''
+<body>{render_site_header(prefix)}<main data-pagefind-body>{body}</main><script src="{prefix}assets/js/main.js"></script></body></html>'''
 
 
 def overview_page(items: list[dict[str, object]]) -> str:

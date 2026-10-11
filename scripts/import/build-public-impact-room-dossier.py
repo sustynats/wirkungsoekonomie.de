@@ -2,6 +2,10 @@
 """Build the public impact room long dossier from the editorial DOCX source."""
 
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 
 import html
 import os
@@ -289,11 +293,7 @@ def render_online_page(source: Path, target: Path):
   </style>
 </head>
 <body>
-  <header class="site-header" data-search-exclude>
-    <a class="brand" href="{BASE}index.html"><span class="brand-mark"><img src="{BASE}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
-  </header>
+  {render_site_header(BASE)}
   <main>
     <section class="hero portal-hero">
       <div class="hero-content">

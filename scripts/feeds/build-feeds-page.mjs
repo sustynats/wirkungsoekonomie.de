@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import {RSS_CHANNELS, rssDiscoveryLinks} from "../news/rss-channels.mjs";
@@ -7,7 +8,7 @@ import {RSS_CHANNELS, rssDiscoveryLinks} from "../news/rss-channels.mjs";
 const site = "https://wirkungsoekonomie.de";
 const CSS_VERSION = "20260612-mobile-table-fix";
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
-const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const feedDir = "feeds";
 

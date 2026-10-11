@@ -39,3 +39,18 @@ Der verbindliche Website-Styleguide liegt unter `styleguide.html`. Neue Seiten u
 ## Kontakt
 
 impact@wirkungsoekonomie.org
+
+## Gemeinsame Header-Quelle (P0.1)
+
+`assets/data/navigation.json` enthält die heutigen deutschen Menüeinträge. `scripts/lib/site-shell.mjs`
+exportiert die gemeinsame Funktion `renderSiteHeader(base, locale)`. Die
+Python-Generatoren verwenden den Adapter `scripts/lib/site_shell.py`.
+`templates/header.html` ist ein deterministischer Build-Cache;
+`node scripts/site/render-site-shell.mjs --templates` erzeugt ihn.
+Änderungen am Menü erfolgen ausschließlich in den Navigationsdaten.
+
+Die Normalisierung erfasst auch neu erzeugte öffentliche HTML-Dateien. Sie
+läuft nach dem vollständigen Build einschließlich Postbuild sowie in den
+Teil-Pipelines `news:build` und `build:parlament-info`. Die lokale Ticker-Leiste
+bleibt unter dem globalen Header erhalten. Die CSS-Regel für das noch
+ausgeblendete Desktop-Menü bleibt bis zur Entscheidung über Phase 2 bestehen.

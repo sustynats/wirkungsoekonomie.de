@@ -7,11 +7,14 @@ import json
 import re
 from html import escape
 from pathlib import Path
+import sys
 
 
 SITE_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SITE_ROOT))
+from scripts.lib.site_shell import render_site_header
 NAVIGATION = json.loads((SITE_ROOT / "assets/data/navigation.json").read_text(encoding="utf-8"))
-HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-8")
+HEADER_TEMPLATE = render_site_header("{{BASE}}")
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
 SYNC_EXCLUDED_DIRS = {
     ".git",

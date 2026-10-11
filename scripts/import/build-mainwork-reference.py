@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 
 import html
 import json
@@ -404,19 +408,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
     <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="{prefix}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="{prefix}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="{prefix}index.html">Start</a>
-        <a href="{prefix}referenz/">Referenz</a>
-        <a href="{prefix}begriffe/">Begriffe</a>
-        <a href="{prefix}dokumente/">Dokumente</a>
-        <a href="{prefix}suche.html">Suche</a>
-      </nav>
-    </header>
+    {render_site_header(prefix)}
     {body}
     <script src="{prefix}assets/js/main.js?v=20260612-mobile-table-fix"></script>
     <script src="{prefix}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>

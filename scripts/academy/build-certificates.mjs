@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -5,7 +6,7 @@ import crypto from "node:crypto";
 const sourcePath = "data/academy/certificates.json";
 const outRoot = "zertifikat";
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
-const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const registry = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 const siteUrl = "https://wirkungsoekonomie.de";

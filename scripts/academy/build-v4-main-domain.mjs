@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {renderSiteHeaderForSource} from '../lib/site-shell.mjs';
 
 import fs from "node:fs";
 import path from "node:path";
@@ -128,7 +129,7 @@ const curriculum = {
 
 function readShell(rel, fallback = rel) {
   const source = fs.readFileSync(path.join(ROOT, fs.existsSync(path.join(ROOT, rel)) ? rel : fallback), "utf8");
-  const header = source.match(/<header class="site-header"[\s\S]*?<\/header>/)?.[0];
+  const header = renderSiteHeaderForSource(source);
   const footer = source.match(/<footer class="footer"[\s\S]*?<\/footer>/)?.[0];
   if (!header || !footer) fail(`layout shell missing for ${rel}`);
   return { header, footer };
