@@ -1,0 +1,27 @@
+{
+  "incomingMain": "031712ef11c196145abbdb6a72f7d9e01a0c2686",
+  "checkedParent": "b18f8b3021064e515e5f0429179d19c2de0d73d2",
+  "restoredUnrelatedBotProjectionPaths": 3777,
+  "preservedMainRemovedContentShards": 49,
+  "canonicalNewsChangedPaths": [],
+  "generatedHtmlInReportPR": 0,
+  "sourceCaches": {
+    "assets/search/search-index.json": "87c4172ec9c94706b242ac38707361370c26d38d77200fae18c57f54edb5e57c",
+    "public/data/woek-search-meta.json": "a4c72c931bd545a563fd2ef30fac86d59c0fd20aa977169e2dbe167916d4c120",
+    "content/taxonomy/site-map.json": "934a9b07fe5d670c64f5d58f82149afc0434b9965369b037f1de75e704b86a49"
+  },
+  "stagedSourceCachesMatchPrebuildSnapshot": true,
+  "branchWriterExclusions": [
+    "scripts/quality/check-navigation-discovery.mjs",
+    "scripts/quality/navigation-report.py"
+  ],
+  "qualityGatePolicy": "Complete source and public artifact builds plus unchanged semantic/historical, privacy and URL gates.",
+  "sourceBuild": "PASS",
+  "artifactBuild": "PASS",
+  "semanticArchitecture": "31/31 PASS",
+  "wiwiLivingScope": "6/6 PASS",
+  "navigationTests": "3 PASS",
+  "removedUrls": 0,
+  "siteSizeMb": 876.0,
+  "siteSizeHardLimitMb": 950
+}

@@ -518,3 +518,40 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Ausgangswerte:** 56 % der Seiten in höchstens drei Klicks ab Start; 2.157 (12 %) über keinen Link erreichbar; Suche erfasst rund 30 % der indexierbaren Seiten, Sitemap 29 %; mindestens 10 Header-Varianten; rund 4.000 Inhaltsseiten ohne Footer; 557 kaputte Skip-Links.
 - **Für Codex sofort startbar:** Phase 0 (eine Quelle für Header und Footer, Brüche reparieren) und Phase 1 (Routenliste, Sitemap, Suche mit voller Abdeckung, Bereichs-Startseiten verlinken alle Kinder, Navigationsbericht als Build-Prüfung). Messskript als Vorlage: `docs/navigation/linkgraph-referenz.py`.
 - **Wartet auf Natalie:** Raum-Namen und Menü, Portale als Querschnittsthemen, Archiv der internen Release-Schicht, Spiegelkarten aus dem Katalog, Rubrik „Meinung & Analyse", Umzug der Staatsarchitektur-Abschnitte.
+
+### 2026-10-09 · Codex · P1.5: Navigationsbericht am öffentlichen Build
+- **Was:** Zusätzliche Artefaktmessung an der bestehenden Discovery-Prüfung: HTML-Linkgraph, Klicktiefe, noindex/Weiterleitungen, Header/Footer, Skip-Links, Breadcrumbs, Sitemap-Indizes, tatsächlich ausgelieferte Suche und Bereichs-Module. PR-Zusammenfassung plus herunterladbares JSON/Markdown. Zunächst Warnungen; Rückschrittsgate vorbereitet, Aktivierung erst nach Phase 1.
+- **Referenz:** `reports/navigation/baseline-p1-5.json`, Basis main `ea82011456dadcbd18bdd83489b613c04b1d5e01`, vollständiger Quellbuild und öffentliches Artefakt erfolgreich.
+- **Vorher/Nachher:** 17.691 indexierbare Seiten, 1.626 ohne HTML-Linkpfad, 9.963 in höchstens drei Klicks, 3.973 Inhaltsseiten ohne Footer, 550 defekte Skip-Links, Sitemap 5.077, Suche 7.075, 677 Weiterleitungen im Suchindex. Bei diesem reinen Messauftrag bleiben Seiten und Werte unverändert.
+- **Geprüft:** Drei Regressionstests für echte HTML-Verweise gegenüber JS-Daten, Ausschlüsse, rekursive Sitemap, Browserindex, relative Shell-Hashes und Rückschrittsprüfung. Bestehende Discovery-Invarianten bleiben aktiv.
+- **Offen:** Die Fehler selbst werden in P0.1-P0.6/P1.1-P1.4 bearbeitet; Menüentscheidung und Phase 2 bleiben ausstehend. Fachliche Konsistenz/PDFs laufen im eigenen Änderungspaket.
+
+### 2026-10-10 · Codex · P1.5: Projektionskonflikte mit aktuellem Main erhalten
+- **Was:** Den vom vorhandenen Audit-Automaten materialisierten Stand mit Main zusammengeführt. Alle 15 Konflikte betrafen öffentliche Projektionen, Feeds, Suchmetadaten, Sitemap und einen Laufbericht. Die aktuellen Quellbestände bleiben vollständig erhalten; öffentliche Projektionen wurden daraus neu gebaut. Beide Vorgeschichten bleiben im Merge erhalten.
+- **Geprüft:** Vollständiger Quellbuild, öffentlicher Artefaktbuild, Datenschutz, URL-Baseline, bestehende Discovery-Prüfung, drei Berichtstests und der vollständige semantische Release-Audit. Kanonische Dateien in `data/news/` stimmen exakt mit dem zusammengeführten Main überein.
+- **Messung:** 17.694 indexierbare Seiten; 1.669 ohne HTML-Linkpfad, 9.960 in höchstens drei Klicks, Sitemap 5.080, Browser-Suche 7.078. Der reine Bericht ändert keine Navigationsregeln. Die Veränderung gegenüber der älteren Referenz betrifft erhaltene neuere Inhalte und erneuerte Ticker-Projektionen; die fehlenden dauerhaften Archivverbindungen bleiben Aufgabe P1.4. Bericht und geprüfte Konflikt-Prüfsummen liegen in `reports/navigation/p1-5-merged.*` und `p1-5-merge-conflicts.json`.
+
+### 2026-10-10 · Codex · P1.5: zweite Konfliktprüfung und reproduzierbare Quellprojektion
+- Zwischenzeitliche Morgenlage und Nachrichtenquellen aus main 7ff1bac226ca03d09f2d17bd89bff83a5367aeb5 vollständig erhalten. Zwei Suchprojektionen kollidierten; beide Legacy-Routenbestände wurden berücksichtigt und Suchtexte aus den zusammengeführten Quellseiten erneuert. Kanonische Nachrichtenablage hat exakt null Abweichungen vom eingehenden main.
+- Die CI-Prüfung erzeugt Suche und Taxonomie vor dem Vollbuild. Deshalb werden diese projektierten Dateien aus dem unveränderten Quellstand erzeugt und auf Bytegleichheit eines zweiten Laufs geprüft. Das bestehende Gate bleibt unverändert.
+- Vollständiger Quellbuild, öffentliches Artefakt, semantisches Release-Audit, URL- und Datenschutzprüfungen erfolgreich. Bericht am Artefakt: 17.695 indexierbar, 1.629 ohne HTML-Linkpfad, 9.959 in höchstens drei Klicks. Die Warnungen betreffen noch offene Navigationsaufgaben; diese Messung ist keine inhaltliche Gesamtfreigabe.
+
+### 2026-10-10 · Codex · P1.5: zweiter Abgleich mit aktuellen Importen
+
+Der Hauptzweig 891f7f4b522cdb644d90663667620596650cfd8f bleibt mit sämtlichen kanonischen Nachrichtenquellen erhalten. Der einzige Metadatenkonflikt wurde aus dem zusammengeführten Quellstand regeneriert. Such-/Taxonomieprojektionen wurden vor dem Vollbuild eingecheckt und getrennt von dessen Ausgaben gesichert. Vollbuild, Artefaktbuild, semantische/historische Tore, URL-Bestand und Privacy bestanden. Die Größenprüfung meldet 876,0 MB bei 850 MB Warnschwelle und 950 MB harter Grenze. Aktuelle Zahlen und Herkunft: `reports/navigation/p1-5-main-sync.*`.
+
+
+### P1.5: Neu eingegangene Ticker-Ausgabe erhalten
+
+Der zwischenzeitliche Hauptzweig f071e3f5f88e0f1445b8d081e39d77825cdbb346 wurde regulär zusammengeführt. Kanonische Nachrichtenquellen sind zum eingehenden Stand bytegleich. Der Such-Metadatenkonflikt ist aus den zusammengeführten Quellen regeneriert; die drei vor dem Build gesicherten Quellprojektionen bleiben im Commit erhalten. Quellenbuild, vollständiges Artefakt, historische/semantische Tore, URL-Bestand und Privacy bestanden. Größe 876,1 MB bei unveränderter harter Grenze 950 MB. Kennzahlen und Herkunft stehen in `reports/navigation/p1-5-final-sync.*`.
+
+
+### P1.5: Projektionen auf aktuellen Main-Stand begrenzt
+
+Der Navigationsbericht wurde mit dem eingegangenen Main-Stand cdae0f29e8f4e1023b1f9a28ba3e3b643951c18c zusammengeführt. 3.688 nicht zum Navigationsauftrag gehörende Dateien bleiben exakt auf diesem Main-Stand; ältere lokale HTML-, Nachrichten-, Glossar- und Umfragenprojektionen werden nicht mit diesem Teilauftrag veröffentlicht. Drei Such-/Taxonomieprojektionen wurden aus den unveränderten Main-Eingaben vor dem vollständigen Build erzeugt und separat auf Bytegleichheit geprüft. Vollständiger Quellbuild, öffentliches Artefakt, historische/fachliche Prüfungen, URL-Bestand, Datenschutz und harte Größengrenze bestanden. Die aktuelle Messung steht in reports/navigation/p1-5-scoped-sync.md. Keine redaktionelle Änderung und keine entfernte URL.
+
+### 2026-10-11 - Codex: P1.5, stabiler Prüfzweig
+
+Der Zweig wurde gegen den zwischenzeitlichen Hauptzweig abgeglichen. Der branchschreibende #253-Automat hatte nach dem grünen Prüflauf 3.777 fremde Projektionen ergänzt; diese stimmen wieder exakt mit dem eingehenden Hauptzweig überein. Die beiden rein lesenden Navigationsprüfer lösen diesen Schreiber künftig nicht aus. Vollständiger Build sowie fachliche und historische Release-Prüfungen bleiben unverändert verpflichtend. Quellen des Nachrichtensystems wurden nicht geändert; die 49 zwischenzeitlich ersetzten Datenshards bleiben entfernt.
+
+Vollständiger Quellbuild, öffentliches Artefakt, Datenschutz, URL-Bestand, 31/31 Architekturprüfungen, 6/6 Fachseitenprüfungen und drei Berichtstests bestanden. Gebautes Artefakt: 17.697 indexierbare Seiten, 16.025 erreichbar, 9.958 in höchstens drei Klicks, 1.672 ohne statischen Pfad, 3.973 ohne Footer, 5.080 in Sitemap, 7.081 in Suche, 678 Such-Weiterleitungen, 550 kaputte Skip-Link-Ziele. Die Warnstufe dokumentiert diese offenen P0/P1-Aufgaben; sie ist keine Freigabe der gesamten Navigation. Umfang 876,0 MB unter der harten 950-MB-Grenze, oberhalb der 850-MB-Warnschwelle. Details: reports/navigation/p1-5-bot-sync.md und zugehöriger Herkunftsnachweis.
