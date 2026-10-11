@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 
@@ -573,27 +574,7 @@ function renderPage(doc, body, toc) {
     <link rel="stylesheet" href="/assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="/assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="/">Start</a>
-        <a href="/verstehen.html">Verstehen</a>
-        <a href="/wirkungsfelder/">Wirkungsfelder</a>
-        <a href="/werkzeuge/">Werkzeuge</a>
-        <a href="/erleben.html">Erleben</a>
-        <a href="/werkstatt/">Werkstatt</a>
-        <a href="/akademie.html">Akademie</a>
-        <a href="/blog.html">Journal</a>
-        <a href="/suche.html">Suche</a>
-      </nav>
-    </header>
+    ${renderSiteHeader('/', 'de')}
     <main>
       <p class="print-meta">Wirkungsökonomie · ${htmlEscape(doc.title)} · https://wirkungsoekonomie.de/wirkungsfelder/wirtschaft-unternehmen/${doc.slug}/ · Druckdatum: 24.05.2026</p>
       <section class="hero portal-hero">

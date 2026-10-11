@@ -11,7 +11,7 @@ const disclaimer='Diese Online-Umfrage ist nicht repräsentativ. Das Ergebnis bi
 export function shell(root,{title,description,route,body,image=DEFAULT_IMAGE,admin=false,poll=null,script='polls.js',visual=false}){
   const nav=JSON.parse(fs.readFileSync(path.join(root,'assets/data/navigation.json'),'utf8'));
   const link=item=>`<a href="${esc(/^(https?:|mailto:)/.test(item.href)?item.href:`/${item.href}`)}">${esc(item.label)}</a>`;
-  const header=fs.readFileSync(path.join(root,'templates/header.html'),'utf8').replaceAll('{{BASE}}','/');
+  const header=renderSiteHeader('/', 'de', nav);
   const footer=fs.readFileSync(path.join(root,'templates/footer.html'),'utf8').replaceAll('{{BASE}}','/').replace('{{FOOTER_NAV}}',nav.footerGroups.map(g=>`<div class="footer-nav-group"><h3>${esc(g.title)}</h3><div class="footer-nav-links">${g.items.map(link).join('\n')}</div></div>`).join('\n')).replace('{{FOOTER_LEGAL_NAV}}',nav.footerLegal.map(link).join('\n'));
   const canonical=`${SITE}${route}`,preview=new URL(image||DEFAULT_IMAGE,SITE).href;
   const html=`<!doctype html>
@@ -101,3 +101,4 @@ ${input('further_url','Weiterführender Link (optional)',{max:1500})}${input('fe
 <section id="poll-admin-feedback" aria-label="Internes Feedback"></section>
 <section id="poll-preview-panel" hidden><div class="poll-actions"><button id="poll-preview-close" class="btn btn-secondary" type="button">Vorschau schließen</button></div><h2 id="poll-preview-title"></h2><p id="poll-preview-intro"></p><div id="poll-preview-ui" class="poll-card"></div></section>
 </section></div><noscript>Für die geschützte Umfrageverwaltung benötigst Du JavaScript.</noscript>`});}
+import {renderSiteHeader} from '../lib/site-shell.mjs';

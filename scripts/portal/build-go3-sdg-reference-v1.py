@@ -1,4 +1,8 @@
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 
 import html
 import json
@@ -379,20 +383,7 @@ def page_template(doc: dict, body: str) -> str:
     <link rel="stylesheet" href="{base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="{base}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="{base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="{base}index.html">Start</a>
-        <a href="{base}verstehen/sdgs-sdgplus/">SDG-/SDG+</a>
-      </nav>
-    </header>
+    {render_site_header(base)}
     <main>
       <p class="print-meta">Wirkungsökonomie · {esc(title)} · {canonical} · Druckdatum: 24.05.2026</p>
       {body}

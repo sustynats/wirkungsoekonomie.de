@@ -1,0 +1,331 @@
+{
+  "writers": 54,
+  "headerLiteralsReplaced": 60,
+  "files": [
+    {
+      "path": "scripts/audit-documents-for-publication.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "90a41e7335830b0c99a350bcb9ec1a45d53794973e68d070de0d41b7bba30bb0",
+      "afterSha256": "41b0f1d24a9f62e923ebf032b580bf0a53b0f305d102000cfac0502864d38ae3"
+    },
+    {
+      "path": "scripts/import/build-mainwork-reference.py",
+      "headerLiterals": 1,
+      "beforeSha256": "c2daab7a1736007ec780f2780571fc0ebaf550fcc280bda2250a842ed874f43c",
+      "afterSha256": "448a202b2a6f966c15a2fee5b7859944a2410969dedb9ae127707f4e6a6998ef"
+    },
+    {
+      "path": "scripts/import/build-public-impact-room-dossier.py",
+      "headerLiterals": 1,
+      "beforeSha256": "aae8264f447918480d249a413662daf2ef7fe92d5a23187a977ec9030d0fa766",
+      "afterSha256": "5b12959c9421a45710b390adffaf38db3d972baa18c2ace53706cdcb724d17a3"
+    },
+    {
+      "path": "scripts/import/import-go5-wirtschaft-detailkonzepte.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "2d0edc2ae3aa1f3b4e6dd444f6a2d6dd88b5b0cc68c7c4ba1be933b628dc3f5f",
+      "afterSha256": "2e1b04e622b3d34552d03542cb84b71a07829be759574192e08254fe42a5d8bd"
+    },
+    {
+      "path": "scripts/import/import-mainwork-docx.py",
+      "headerLiterals": 1,
+      "beforeSha256": "8ef02ff6fe809cf4c5ff3d32866fc3643e9b1408c325090ee72b97ebbeea0999",
+      "afterSha256": "176bd7180fdcb8bb86c79aa2c883d36fda4c5bd8433722e131ffac8bca1fcda3"
+    },
+    {
+      "path": "scripts/import/import-workpapers.py",
+      "headerLiterals": 2,
+      "beforeSha256": "36c271c0267ae21cef67b82a2a92f47f1dccf49159c9b6ab68f324ce26347eba",
+      "afterSha256": "d4885c4c405bed6dbce6476d28cbedd5729db550cfe960f43d65db9120c869f0"
+    },
+    {
+      "path": "scripts/library/build-full-knowledge-library.mjs",
+      "headerLiterals": 2,
+      "beforeSha256": "9dcaba5731873c151d3f7621061f79387b7f02cff9ab2bc424b5910a0720108f",
+      "afterSha256": "0d4dff06d799ec0eabbea5ca7f01db3301d1779e5411297effba8cb342f510f1"
+    },
+    {
+      "path": "scripts/library/build_bibliothek_onlinefassungen.py",
+      "headerLiterals": 1,
+      "beforeSha256": "9592c57cdd4727dae432065b1710f99ad762fa6c963521f31a14fc699d0026a0",
+      "afterSha256": "a5efc6af414cfd8979ba55a6c16a5b4d38551792582a2d5ae45d26a000810286"
+    },
+    {
+      "path": "scripts/library/build_grundlagen_onlinefassung.py",
+      "headerLiterals": 1,
+      "beforeSha256": "b4c281dda3aec5d3bb486dda0821c03c19dd33246135b37adf19815a3de91e84",
+      "afterSha256": "1c9765b168165f47ceb719a19857e2c785805eeb1c525f345e88fdcd0cb67ebf"
+    },
+    {
+      "path": "scripts/methods/build-methodenraum-pages.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "bad3e4e6e316cfbb9e70476176e115af2b8f829f823d24e71d6c2dd15c2063b4",
+      "afterSha256": "da2df18f7552131be42ce16840a440440c048008955438e75c944bfbafce5f8e"
+    },
+    {
+      "path": "scripts/portal/build-business-enterprise.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "39df86b216b4f52a6ad044e7485b7e377b3945aa22b1244cf74d344d9605d3ba",
+      "afterSha256": "a6b7ed6090742344ecc2ffbef281e338bbcb8873f4ba3a6bf41b9324f814b747"
+    },
+    {
+      "path": "scripts/portal/build-detail-concept-corrections.mjs",
+      "headerLiterals": 2,
+      "beforeSha256": "3a1f667c037aa598583f16323debcb7f8dfa33f7d3a89579dbea8be139ffe1a2",
+      "afterSha256": "b7ed2a6bd1933aebeb51e048b35f2c072e247249622fad3d286f9e59e7c418d1"
+    },
+    {
+      "path": "scripts/portal/build-education-effect-school.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "b5c747b2514998f64ea17ea57d6bc4a7b1f410ee9f9408aad171b776b756bef6",
+      "afterSha256": "4ba9aed44176faf40156e915e1da7839a532216cefd31ef96c0c5b8164e92eb2"
+    },
+    {
+      "path": "scripts/portal/build-finance-capital.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "5a41385499db7051565be79132cf50996322a864cb2640fcaef3f94428aacaf6",
+      "afterSha256": "334063ae4931a9041bcf365bfb6cad8bafc2d4b564e5f77bd5e3443477bd1146"
+    },
+    {
+      "path": "scripts/portal/build-finance-market-nachtrag.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "aede1dbb780775d5b2c02f3eb4087bc6c11f8ebf4449913ee40443377243a5f9",
+      "afterSha256": "0e5fd5372bd0c508e9736a05e8939893866752d6b324fa7d8e28f594dcd2937c"
+    },
+    {
+      "path": "scripts/portal/build-go3-sdg-reference-v1.py",
+      "headerLiterals": 1,
+      "beforeSha256": "8e217088c176bbafa9dbabbff2db10c583c7cd49fa4dbe8b0fd6d7c2c6c6c23a",
+      "afterSha256": "c9dec77a934b95fd1347148b068a80ab8459b10169eb38ec032243109d40b43c"
+    },
+    {
+      "path": "scripts/portal/build-health-care.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "de4a85a88f80735d9b3e7519fd4287a8a9b2472f4f16234f46bd2012e202170f",
+      "afterSha256": "472925163b636ff2def86aaf657bab65f21ecdd3c30c7c560137dbd7e0a4616a"
+    },
+    {
+      "path": "scripts/portal/build-housing-city.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "ad633a65e16e61c3d7080b081fa4563998ab94d135477a5283ba8c9009b22d3b",
+      "afterSha256": "91497ec5ab23347d15f9426433a75cb520b2eb4f6967e6a0363122697e5290a6"
+    },
+    {
+      "path": "scripts/portal/build-impact-controlling.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "c2fbc2af754bb5a2c89633db11bf7b8c18d9e136959146e7a81d5be260d21f28",
+      "afterSha256": "c0183678dc51e59e11047ebcb0a84a64a9e0a749d3dfdd3bf1374ce30067bf33"
+    },
+    {
+      "path": "scripts/portal/build-pension-social-security.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "50be54faacb555027fc9fe696ae397811c521d26cfbce196397f7a9629bcab95",
+      "afterSha256": "73e15f5c364843d44008beec0ac25a84783aa37184fa4f2c733d370612216678"
+    },
+    {
+      "path": "scripts/portal/build-portal-architecture.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "d8873613767e0b2248194e3ddd358f1163f4ad932b017af13367830c7ab6c17a",
+      "afterSha256": "0d195fe27fff744754480a07d766ed200dfb77570f3f2235f82115375b5049b0"
+    },
+    {
+      "path": "scripts/portal/build-product-taxation.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "708f8d08d5c51cecd57c973946037276155b686b3a121e9d06dd373919b0bc0d",
+      "afterSha256": "e88603e14ef1c6b5bf1c968a3703c7041e0eaead07befefc602a06734f172999"
+    },
+    {
+      "path": "scripts/portal/build-rang17-digitalization.py",
+      "headerLiterals": 1,
+      "beforeSha256": "65106021606d2ec6af7bbff2eb46a73c3d8fe54511e387f2c693bcc0a2f05c04",
+      "afterSha256": "f4febf136e4b2cfc71a6e202760fb1d22ccae25060b46c0b4412d6de4d06a99a"
+    },
+    {
+      "path": "scripts/portal/build-rang18-science.py",
+      "headerLiterals": 1,
+      "beforeSha256": "8066e56262ced1fe7def292f4b20b727cdfc8406906d209710388040d5de678a",
+      "afterSha256": "d8bbcf6e2a5fb2823f2d49fc64bd42070fb5d8d49c4c43863eb378675f28ee5d"
+    },
+    {
+      "path": "scripts/portal/build-rang19-international-order.py",
+      "headerLiterals": 1,
+      "beforeSha256": "ae24343707bd74dd817cebfe43a714ce1d1ccc6c7e338674534062920eeb4f90",
+      "afterSha256": "561991dc9e644286266102da67b35ee1a2158ca64214f40dd49528e8904a585d"
+    },
+    {
+      "path": "scripts/portal/build-rang20-transformation.py",
+      "headerLiterals": 1,
+      "beforeSha256": "0e7dba8536eedfbb961959b5f81c7bf6017dabdaa746172f8f1adcbe96f75f79",
+      "afterSha256": "e23b682c8ee9ee6b3a6b64a74fa82ba5cff7732216fbd25b9a8a2298d75fcaf8"
+    },
+    {
+      "path": "scripts/portal/build-rang21-critique-protection.py",
+      "headerLiterals": 1,
+      "beforeSha256": "fa6042b16e543a6d5e350597625baaaae7051e306bb833cff2e8516225141c0f",
+      "afterSha256": "f85deb149079a8be1ee2ce595fa1daabdb7374fe47946ff9bd481576b42861d3"
+    },
+    {
+      "path": "scripts/portal/build-rang22-future-prosperity.py",
+      "headerLiterals": 1,
+      "beforeSha256": "7cc131d5a3215dd20723348427699bc24487f5cc8e7f222dda3a31ce844a7cf3",
+      "afterSha256": "161a46a6d30b3eed07a24c7cce23f00d0d6fd7ccbdcf95976cae799ba05ae50f"
+    },
+    {
+      "path": "scripts/portal/build-rang23-academy-library.py",
+      "headerLiterals": 1,
+      "beforeSha256": "2fb957bbed7a885404af8373ceaaf1ef702b59ac1e5cb4a6059fed172180d30a",
+      "afterSha256": "badb206cc0c85ae811d1700bf15632d193b2ce909d5e61593c6a055dab606feb"
+    },
+    {
+      "path": "scripts/portal/build-rang24-release.py",
+      "headerLiterals": 1,
+      "beforeSha256": "e789981a1c54faeb19f02ebd3639cc2413256fe59fad9c231c85185cdc6b6e5f",
+      "afterSha256": "aff53f2688aa45522d031617b3ffba07ca8d0c0b45f2a8699da1873e5ddb9531"
+    },
+    {
+      "path": "scripts/portal/build-science-innovation-digitalization.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "54fa46c83427de9c52f50c99015b3748b3954a85e4319ea09f71b12958bd8bf1",
+      "afterSha256": "62e5cf63f22c1e6cca2a6f0ad5b558573d643da0436ef29a294a0c2bc6711448"
+    },
+    {
+      "path": "scripts/portal/build-sdg-reference.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "28fe263f028cb0dded003b46ceb6abb2c68a92dc9544fb4d3dcdeb06a7f2d309",
+      "afterSha256": "d71fa5ed4f3d0cbece2113abb90cf9f460052a5a8c11ae7ca8ec96f6d17d1629"
+    },
+    {
+      "path": "scripts/portal/build-state-law-democracy.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "8b08169ae2a909eb01be6644bca94cacd32076644c3945debfa50dea9eac1a05",
+      "afterSha256": "e724a6e5c3fe694fcfcf5a20ec594f35b09decd718c288a24bd63494b2392c45"
+    },
+    {
+      "path": "scripts/portal/build-work-income-automation.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "47232abe677200a9556c610316fd832def8f60c2390390e1df8d953b67bde202",
+      "afterSha256": "84db7e85552e33aef656ee550613336028f1f4c59e9b8a489182e1a85ffceddc"
+    },
+    {
+      "path": "scripts/publications/archive-historical-person-scoring-pages.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "ed8130140ca35dc216aaa27e85ba5dcb8f8fa98b9904b4f55d7080b0eafabda1",
+      "afterSha256": "73352e4d1b36c903d86781b0e5b0b8a70dc5ba560da4c033bba0368ca7956be7"
+    },
+    {
+      "path": "scripts/publications/build-grundlagenpublikationen-pages.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "e703a579efa56c8eb95f891e9b029323c2b7f8d7d3cff21b532871c60b542c0a",
+      "afterSha256": "c0704b1befb60af73704e3522c6bd6f0dfca27afb07d0b8d1e5e582f5ffff5fc"
+    },
+    {
+      "path": "scripts/site/apply-website-architecture-v21.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "19254f855f9f0ca797b2847dcfa1ccb25ffeba282ff468f1967704ec7ca16f26",
+      "afterSha256": "4872d409562ec95ef6d897d825ae7dc4042d65a32de66b57a09d1b9b2a2604f1"
+    },
+    {
+      "path": "scripts/studienskripte/build-bibliothek-page.mjs",
+      "headerLiterals": 2,
+      "beforeSha256": "15c6876f54a81b27e2a1544dae0504e5d9435663f54e5ffbe5a8e570a332fd0b",
+      "afterSha256": "3095df9e8d86c40202e3891ca74e8fefab329dd60eda73fa93f2d484d0880b91"
+    },
+    {
+      "path": "scripts/tools/build-woek-id-register-public-explorer.py",
+      "headerLiterals": 1,
+      "beforeSha256": "0ab19a89b33279182d5128241bc48b2373b7000e8f88cc4ed31766f1ab22d2ad",
+      "afterSha256": "aceee31d59340bbed4ddc2f74488484b9535ef0f64fe4db479eeafcf0593d910"
+    },
+    {
+      "path": "scripts/wirkungsradar/apply-community-submission-block.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "a081ee4606f11db06230a8e3016e0563b98a20111e898001b47a88450721da2a",
+      "afterSha256": "d1b8bd3e2c64595e9b1e72435180671444e018052bc5432faef21c9224d96629"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-climate-energy-cluster.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "efd91199b3de690ec4163a24ffa12014f57099c9b706ba1fca95e73277a2f07e",
+      "afterSha256": "c2e21e1851427c8ac88ca26007494606dcd619a9fdaf169aece29c13c5256925"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-debt-investment-cluster.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "934d270518011526557589d3e1483f4c38a7c917db73f59349f4868b03a9c4c5",
+      "afterSha256": "dae9ae90173e9e8c600ae748bdd97dd0dbf8505495b5ecd63e08556884c0bbf3"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-democracy-public-sphere-cluster.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "9d3bd97dc9a64ee684808f543c3daa83eb16611253c5c9360fa8444e2a67d9ff",
+      "afterSha256": "db468f003944bb79966603f81487eabf304d6127ac4b380c1e5dd49c3d786534"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-heating-law-cluster.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "0b9eb3f1edfdb0a768ef87abca125a837cfbf922ff2b6766d8d784181228f42b",
+      "afterSha256": "d50a913e41de9869a0f5aef8a81ce4fa7e863d85550e6ec2f995b2d53d9f42af"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-migration-social-state-cluster.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "b58da1e7f6cb6abfc32222ad649c2baa3375f68dd2ee2bef4dd396f84049b87c",
+      "afterSha256": "48ed98931f556c58da209c37aecaf24197303de056a29cec350b2e1c715b6df6"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-narrative-library.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "59484cc59e73a893fcce8dcfd4f80a0077b1a034edf5925d992d022638a239c2",
+      "afterSha256": "f3f677bc2e35958bcd268f30d3ca9f14f1b39253754ac6e419db0ad598136a54"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-open-radar-packages.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "452911410021d230b1d961e7c36e222af0d71910d43fab9feb1089dbe6d92238",
+      "afterSha256": "0aa4c6bb2a4c24cfed8bd29ffb106ff2420579afb9a2a05d34c69c9d279fc328"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-psychology-library.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "19710f5e1abcf8352e32de8e09c73871aa8db9d7018e23ee224018ab78ef636b",
+      "afterSha256": "f56f8f2cb1c70b3f5b2a5eeb56336e7667fba0c34332b592f1f25ede0493fa34"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-resonance-compass.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "814f070cfdb0249f1ae9c2d3229cba3498b0ec8631d8551b20c130109ad1659b",
+      "afterSha256": "f7a4526f0e6bf5b121ecfc1886166f60e248b1c91e1bf9502bfee87b76f3b7b1"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-sprint3-ux.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "29e18b55677f0ba35faf82378a55d3f733bd1500aaf4e81295c1b122835614dd",
+      "afterSha256": "601612abbebe92aa136f07305ad29c2325f317f88f8cdefe894b83157c3bdb40"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-sprint4-trust.mjs",
+      "headerLiterals": 2,
+      "beforeSha256": "4fa66dab37bf7a5bd22cc6ffa12c1da176e1a16e1659ec1bca49c651afbfc101",
+      "afterSha256": "152f745458b28d4d6cc09cd10e1d21aafd2430695a3c63ed0fde42b04febd817"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-sprint5-distribution.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "f2cf317df74fc092b715f4ff836654b59549a8ebea78c7d98914087e613aec24",
+      "afterSha256": "1a44e2be24ce9ffcb4c8251ad469d8b458406620f1d543c0bdd4151011ca03b7"
+    },
+    {
+      "path": "scripts/wirkungsradar/build-tax-money-global-responsibility-cluster.mjs",
+      "headerLiterals": 1,
+      "beforeSha256": "f7488c5c17bc3a21ae9c4e0357b365976f1e44eab6468cb29cc28689ce588100",
+      "afterSha256": "f9bd22c2ea229384061fd814125d6751606db76f26ba9bb7407e5e1192cc1955"
+    },
+    {
+      "path": "tools/import_linkedin_articles.py",
+      "headerLiterals": 2,
+      "beforeSha256": "0acee5e7967ef25ac02f8d2a35afbe70a5642dc5186c3ae91eabd7f3384d3bb3",
+      "afterSha256": "ca3632a1303c492e90fecba713d8942210c82796e37a048737605ea89db35006"
+    }
+  ],
+  "scope": "Deutsche Header-Generatoren; zurückgestellte Sprachgeneratoren sind ausgeschlossen."
+}

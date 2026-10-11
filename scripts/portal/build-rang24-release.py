@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 
 import csv
 import html
@@ -355,11 +359,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
-    <header class="site-header">
-      <a class="brand" href="{href(prefix, 'index.html')}" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="{href(prefix, 'assets/img/brand/signet.svg')}" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">{nav}</nav>
-    </header>
+    {render_site_header(prefix)}
     <main id="inhalt" data-pagefind-body>
       <p class="print-meta">Wirkungsökonomie · Website 1.0 · {canonical} · Druckdatum: 2026-05-25</p>
       <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / Website 1.0</nav><p class="hero-kicker">Masterbibliothek · Website 1.0</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#bibliothek">Zur Bibliothek</a></div></div><aside class="card"><p class="card-kicker">Version</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>25. Mai 2026</dd></div><div><dt>Status</dt><dd>Öffentliche Releaseübersicht</dd></div></dl></aside></div></section>

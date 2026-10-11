@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import difflib
 from collections import Counter
 from html import unescape
 from pathlib import Path
@@ -94,6 +95,29 @@ def no_raw_public_enums() -> None:
         raise AssertionError(f"public raw internal status enums found: {bad[:20]}")
 
 
+def historical_content_diff(previous: str, current: str, expected_header: str, rel: str) -> str:
+    """Exclude only a verified replacement of the global site header.
+
+    The current replacement must equal the shared renderer's output. Unknown
+    headers, missing/duplicate headers and every change outside that exact
+    wrapper remain release errors. Historical prose is never excluded.
+    """
+    pattern = re.compile(r'<header\b[^>]*\bclass=["\'][^"\']*\bsite-header\b[^"\']*["\'][^>]*>[\s\S]*?</header>')
+    before = list(pattern.finditer(previous))
+    after = list(pattern.finditer(current))
+    if len(before) != 1 or len(after) != 1:
+        raise AssertionError(f'expected one global header on historical page: {rel}')
+    normal = lambda value: ' '.join(value.split())
+    if normal(before[0][0]) != normal(after[0][0]):
+        if normal(after[0][0]) != normal(expected_header):
+            raise AssertionError(f'unreviewed historical-page header replacement: {rel}')
+        if not re.search(r'<nav\b[^>]*\bclass=["\'][^"\']*\bsite-nav\b', before[0][0]):
+            raise AssertionError(f'unknown original global header: {rel}')
+        previous = previous[:before[0].start()] + previous[before[0].end():]
+        current = current[:after[0].start()] + current[after[0].end():]
+    return '\n'.join(difflib.unified_diff(previous.splitlines(), current.splitlines(), n=0))
+
+
 def historical_additions_only() -> None:
     """Require historical pages to remain content-preserving plus an explicit addendum.
 
@@ -110,21 +134,24 @@ def historical_additions_only() -> None:
     ).stdout.strip()
     for rel in HISTORICAL_ADDENDA:
         require(rel, ["Fachaddendum", "21.08.2026"])
-        proc = subprocess.run(
-            ["git", "diff", "--unified=0", merge_base, "--", rel],
-            cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-        )
-        if proc.returncode not in (0, 1):
+        proc = subprocess.run(["git", "show", f"{merge_base}:{rel}"],
+            cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if proc.returncode != 0:
             raise AssertionError(f"could not compare historical page {rel}: {proc.stderr}")
+        base = '../' * (len(Path(rel).parts) - 1)
+        expected_header = subprocess.check_output(
+            ['node', str(ROOT / 'scripts/site/render-site-shell.mjs'), '--base=' + base],
+            cwd=ROOT, text=True)
+        difference = historical_content_diff(proc.stdout, read(rel), expected_header, rel)
 
         removed = [
             ln[1:].strip()
-            for ln in proc.stdout.splitlines()
+            for ln in difference.splitlines()
             if ln.startswith("-") and not ln.startswith("---") and ln[1:].strip()
         ]
         added = [
             ln[1:].strip()
-            for ln in proc.stdout.splitlines()
+            for ln in difference.splitlines()
             if ln.startswith("+") and not ln.startswith("+++") and ln[1:].strip()
         ]
 

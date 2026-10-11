@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -508,11 +509,7 @@ function detailPage(doc, all, onlineByKey) {
     <link rel="stylesheet" href="../../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="../../../index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="../../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
-    </header>
+    ${renderSiteHeader('../../../', 'de')}
     <main class="section" data-pagefind-body>
       <article class="article-shell quellenarchiv-detail">
         <nav class="breadcrumb" aria-label="Brotkrumen"><a href="../../">Bibliothek</a> / ${esc(doc.title)}</nav>
@@ -699,17 +696,7 @@ const html = `<!DOCTYPE html>
     <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
-    </header>
+    ${renderSiteHeader('../', 'de')}
     <main data-pagefind-body>
       <section class="hero compact-hero document-library-hero">
         <p class="hero-kicker">Vollständige Wissensbibliothek</p>

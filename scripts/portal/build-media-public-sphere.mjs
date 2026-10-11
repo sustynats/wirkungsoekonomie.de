@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -14,7 +15,7 @@ const EXTRACT = `${SRC}/docx-extracts`;
 const portalData = JSON.parse(fs.readFileSync(path.join(ROOT, SOURCE, "medien_oeffentlichkeit_portal_matrix_v0_1.json"), "utf8"));
 const mwix = JSON.parse(fs.readFileSync(path.join(ROOT, SOURCE, "mwix_working_model_v0_1.json"), "utf8"));
 const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
-const headerTemplate = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8");
+const headerTemplate = renderSiteHeader('{{BASE}}');
 const footerTemplate = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 
 const modules = [

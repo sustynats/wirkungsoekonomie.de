@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header_for_source
 
 import html
 import json
@@ -170,11 +174,11 @@ def body_blocks(blocks: list[dict[str, str]]) -> list[dict[str, str]]:
 
 def extract_shell(relative_depth: int) -> tuple[str, str]:
     page = SHELL_PAGE.read_text(encoding="utf-8")
-    header_start = page.index('    <header class="site-header"')
+    header_start = page.index('<header class="site-header"')
     main_start = page.index("    <main", header_start)
     main_close = "    </main>"
     main_end = page.rindex(main_close)
-    header = page[header_start:main_start]
+    header = render_site_header_for_source(page)
     footer = page[main_end + len(main_close):]
     if relative_depth == 1:
         header = header.replace("../../", "../")

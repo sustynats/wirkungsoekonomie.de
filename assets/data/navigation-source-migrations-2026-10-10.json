@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-10",
+  "scope": "Exact global-header extraction only; PDF content and publication inputs unchanged. Original source preserved byte-for-byte. No historical release metadata changed.",
+  "sources": {
+    "scripts/portal/build-impact-controlling.mjs": {
+      "beforeSha256": "c2fbc2af754bb5a2c89633db11bf7b8c18d9e136959146e7a81d5be260d21f28",
+      "afterSha256": "c0183678dc51e59e11047ebcb0a84a64a9e0a749d3dfdd3bf1374ce30067bf33",
+      "originalSource": "source-assets/originals/navigation-p0-1-2026-10-10/build-impact-controlling.mjs",
+      "transformation": "single site-header HTML literal replaced by shared renderer plus its fixed import"
+    }
+  }
+}

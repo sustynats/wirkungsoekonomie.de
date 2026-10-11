@@ -1,0 +1,69 @@
+{
+  "baseCommit": "73c71fc6f8e0e0d4356913c71c44499ec66f8dee",
+  "scope": "Gemeinsamer deutscher Header; heutige Navigationsdaten und Fachinhalte erhalten.",
+  "sourceCacheSnapshots": [
+    {
+      "path": "assets/search/search-index.json",
+      "sha256": "860cef064366a5ca4c09a28fa4e4ab3b66416235d88d4de902a237e6b3f7a916",
+      "bytes": 80938682
+    },
+    {
+      "path": "public/data/woek-search-meta.json",
+      "sha256": "66d5d086e7b54e31b1e3c1848c51132182c669510b16cff11b02aa9ea86d3bc3",
+      "bytes": 15243791
+    },
+    {
+      "path": "content/taxonomy/site-map.json",
+      "sha256": "508fbafe0050488d532b3f69075f1ff956143aee0871b260dc61be5e580d2a5b",
+      "bytes": 5354880
+    }
+  ],
+  "checks": {
+    "sourceBuild": "PASS",
+    "controlSourceBuild": "PASS",
+    "publicArtifact": "PASS",
+    "controlPublicArtifact": "PASS",
+    "historicalSemanticGates": "31/31 PASS",
+    "livingScope": "6/6 PASS",
+    "navigationPythonTests": "5/5 PASS",
+    "headerTests": "6/6 PASS",
+    "privacy": "PASS",
+    "urlBaseline": "0 removed; PASS",
+    "size": "876.2 MB; hard limit 950 MB; warning limit 850 MB"
+  },
+  "before": {
+    "publicHtml": 20172,
+    "contentHtml": 18675,
+    "indexable": 17697,
+    "reachable": 16025,
+    "withinThreeClicks": 9958,
+    "unreachable": 1672,
+    "withoutFooter": 3973,
+    "sitemapCoverage": 5080,
+    "searchCoverage": 7081,
+    "redirectsInSearch": 678,
+    "brokenSkipLinks": 550,
+    "multipleCurrentPages": 0,
+    "linksToRedirects": 44277,
+    "htmlBytes": 446616955
+  },
+  "after": {
+    "publicHtml": 20172,
+    "contentHtml": 18675,
+    "indexable": 17697,
+    "reachable": 16025,
+    "withinThreeClicks": 9958,
+    "unreachable": 1672,
+    "withoutFooter": 3973,
+    "sitemapCoverage": 5080,
+    "searchCoverage": 7081,
+    "redirectsInSearch": 678,
+    "brokenSkipLinks": 550,
+    "multipleCurrentPages": 0,
+    "linksToRedirects": 44277,
+    "htmlBytes": 446811786
+  },
+  "syntaxFiles": 102,
+  "bodyComparison": "p0-1-current-body-comparison.json",
+  "navigationDataSha256": "192491fd043238d646c788b18fc7c76f382a82e70c059eea10c4a707661dccac"
+}

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[1]))
+from scripts.lib.site_shell import render_site_header
 
 import argparse
 import hashlib
@@ -324,25 +328,7 @@ def render_article(article: SourceArticle) -> str:
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="../../index.html">Start</a>
-        <a href="../../wirkungsoekonomie.html">Wirkungsökonomie</a>
-        <a href="../../buch.html">Das Buch</a>
-        <a href="../../modell.html">Modell</a>
-        <a href="../../anwendungen.html">Anwendungen</a>
-        <a class="active" href="../../blog.html">Journal</a>
-        <a href="../../akademie.html">Akademie</a>
-        <a href="../../mitmachen.html">Mitmachen</a>
-      </nav>
-    </header>
+    {render_site_header('../../')}
 
     <main>
       <article class="hero">
@@ -432,25 +418,7 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="../index.html">Start</a>
-        <a href="../wirkungsoekonomie.html">Wirkungsökonomie</a>
-        <a href="../buch.html">Das Buch</a>
-        <a href="../modell.html">Modell</a>
-        <a href="../anwendungen.html">Anwendungen</a>
-        <a class="active" href="../blog.html">Journal</a>
-        <a href="../akademie.html">Akademie</a>
-        <a href="../mitmachen.html">Mitmachen</a>
-      </nav>
-    </header>
+    {render_site_header('../')}
 
     <main>
       <section class="hero">

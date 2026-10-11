@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { publicHtmlFiles } from '../lib/public-html.mjs';
+import { renderSiteHeader } from '../lib/site-shell.mjs';
 
 const ROOT = process.cwd();
 // Optional prefixes let partial content builds use the shared navigation rules.
@@ -80,6 +81,7 @@ function englishMainLinks(base) {
 }
 
 function renderHeader(base, locale = "de", filePath = "") {
+  if (locale === "de") return renderSiteHeader(base, "de");
   const utilityLinks = (navigation.more || [])
     .map((item) => locale === "en" ? renderEnglishUtilityLink(base, item) : renderUtilityLink(base, item))
     .join("\n");
@@ -113,36 +115,32 @@ ${utilityLinks}
 }
 
 function headerFiles() {
-  const output = execFileSync("git", ["ls-files", "*.html"], {
-    cwd: ROOT,
-    encoding: "utf8",
-    maxBuffer: 512 * 1024 * 1024,
-  }).trim();
-
-  if (!output) return [];
-
-  return output
-    .split("\n")
-    .filter((file) => !prefixes.length || prefixes.some(prefix => file.startsWith(prefix)))
-    .map((file) => path.join(ROOT, file))
-    .filter((file) => !path.relative(ROOT, file).replace(/\\/g, "/").startsWith("templates/"))
-    .filter((file) => fs.existsSync(file))
-    .filter((file) => {
-      const html = fs.readFileSync(file, "utf8");
-      return html.includes('<header class="site-header"');
-    });
+  return publicHtmlFiles(ROOT).filter(file => {
+    const relative = path.relative(ROOT, file).replaceAll('\\', '/');
+    if (prefixes.length && !prefixes.some(prefix => relative.startsWith(prefix))) return false;
+    const html = fs.readFileSync(file, 'utf8');
+    if (/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html)) return false;
+    // Preserve the existing pipeline for the deferred locale exactly.
+    return !isEnglishFile(file) || html.includes('<header class="site-header"');
+  });
 }
 
 let changed = 0;
 
 for (const filePath of headerFiles()) {
   const before = fs.readFileSync(filePath, "utf8");
-  const afterHeader = before.replace(/<header class="site-header"[\s\S]*?<\/header>/, renderHeader(prefixFor(filePath), isEnglishFile(filePath) ? "en" : "de", filePath));
-  const after = afterHeader
+  const header = renderHeader(prefixFor(filePath), isEnglishFile(filePath) ? "en" : "de", filePath);
+  const pattern = /<header\b[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'][^>]*>[\s\S]*?<\/header>/;
+  const afterHeader = pattern.test(before) ? before.replace(pattern, () => header)
+    : before.replace(/(<body\b[^>]*>)/i, (_, body) => `${body}\n${header}`);
+  let after = afterHeader
     .replaceAll("20260612-shell-audio-fix", CSS_VERSION)
     .replaceAll("20260612-nav-restore", CSS_VERSION)
     .replaceAll("20260612-journal-mobile-fix", CSS_VERSION)
     .replaceAll("20260612-mobile-headline-fix", CSS_VERSION);
+  if (!isEnglishFile(filePath) && after.includes('site-header') && !/href=["'][^"']*assets\/css\/style\.css/.test(after)) {
+    after = after.replace(/<\/head>/i, `<link rel="stylesheet" href="${prefixFor(filePath)}assets/css/style.css?v=${CSS_VERSION}">\n</head>`);
+  }
   if (after !== before) {
     fs.writeFileSync(filePath, after);
     changed += 1;

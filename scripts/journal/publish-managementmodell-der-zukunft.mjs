@@ -1,3 +1,4 @@
+import {renderSiteHeaderForSource} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -160,7 +161,7 @@ function extract(source, startPattern, endPattern) {
 function headerFooter() {
   const source = fs.readFileSync(path.join(root, "blog", "der-versoehner-und-die-wellen", "index.html"), "utf8");
   return {
-    header: extract(source, /<header class="site-header"/, /<\/header>/),
+    header: renderSiteHeaderForSource(source),
     footer: extract(source, /<footer class="footer"/, /<\/footer>/),
   };
 }
