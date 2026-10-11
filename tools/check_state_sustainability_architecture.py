@@ -96,6 +96,14 @@ def no_raw_public_enums() -> None:
 
 
 def historical_content_diff(previous: str, current: str, expected_header: str, rel: str) -> str:
+    import importlib.util
+    shell_spec = importlib.util.spec_from_file_location("historical_navigation_shell", ROOT / "tools/historical_navigation_shell.py")
+    shell_module = importlib.util.module_from_spec(shell_spec)
+    shell_spec.loader.exec_module(shell_module)
+    Components, protected_publication = shell_module.Components, shell_module.protected_publication
+    if any(kind == 'footer' for _, _, kind in Components(previous).ranges + Components(current).ranges):
+        previous, current = protected_publication(previous, current, rel, ROOT)
+        return '\n'.join(difflib.unified_diff(previous.splitlines(), current.splitlines(), n=0))
     """Exclude only a verified replacement of the global site header.
 
     The current replacement must equal the shared renderer's output. Unknown

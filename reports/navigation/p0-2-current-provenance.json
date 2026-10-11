@@ -1,0 +1,19 @@
+{
+  "task": "P0.2",
+  "baseCommit": "24809c0a6df71e11170efabf9ab2b4d136a34b7e",
+  "before": "p0-2-current-before.json",
+  "after": "p0-2-current-after.json",
+  "bodyComparison": "p0-2-current-body-comparison.json",
+  "navigationJsonSha256": "192491fd043238d646c788b18fc7c76f382a82e70c059eea10c4a707661dccac",
+  "scope": "DE-Footer und strukturelle Leser-Navigation; keine englischen Generatoren oder Inhalte.",
+  "checks": [
+    "vollständiger Quellen-Build",
+    "vollständiger Artefakt-Build",
+    "31/31 Fachprüfung",
+    "6/6 Scopeprüfung",
+    "9 JavaScript-Komponententests",
+    "7 historische Python-Prüfungen"
+  ],
+  "currentResult": "20.173 URLs erhalten; 3.973 → 0 Inhaltsseiten ohne Footer; 44.280 → 37.528 Links auf Weiterleitungen.",
+  "sourceCachePolicy": "Vor Build festgehaltene Eingaben; keine nachträgliche Übernahme neu berechneter Suchcaches als fachliche Inhalte."
+}

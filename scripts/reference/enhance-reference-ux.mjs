@@ -1281,7 +1281,8 @@ function enhanceDocument(file) {
   const title = cleanTitle(html.match(/<h1[^>]*>(.*?)<\/h1>/is)?.[1] || path.basename(path.dirname(file)));
   const hasReaderTools = /class="[^"]*\bdocument-reader-tools\b[^"]*"/.test(html);
   const hasContextRail = /class="[^"]*\breference-context-rail\b[^"]*"/.test(html);
-  const headings = [...html.matchAll(/<h2\b([^>]*)>(.*?)<\/h2>/gis)]
+  const readerBody = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
+  const headings = [...readerBody.matchAll(/<h2\b([^>]*)>(.*?)<\/h2>/gis)]
     .map((match) => ({ id: match[1].match(/\sid=["']([^"']+)["']/i)?.[1] || "", title: cleanTitle(match[2]) }))
     .filter((item) => item.id && item.title)
     .slice(0, 12);
