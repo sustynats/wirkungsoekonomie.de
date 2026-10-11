@@ -25,16 +25,21 @@
       "firstSeen": "2026-10-11T05:54:01.250Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-11T05:54:01.250Z",
-      "active": true
-    },
     "academy": {
       "firstSeen": "2026-10-11T06:36:01.447Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9c31607b527e3cda8832db8e",
+      "content": "⚠ WÖk-Betriebsstörung\nAkademie: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-11T06:36:01.447Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "3076658dc80cf20dbdc718a4",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-11T06:50:48.048Z"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2541,7 +2546,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T06:36:01.447Z",
+    "checked_at": "2026-10-11T06:50:48.048Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
