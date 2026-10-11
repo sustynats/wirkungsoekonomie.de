@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
 const site = "https://wirkungsoekonomie.de";
@@ -80,3 +81,15 @@ if (failures.length) {
 }
 
 console.log(`Navigation and discovery check passed (${search.length} search results, ${Object.keys(searchMeta).length} search metadata entries).`);
+
+// Measure the delivered artifact only when explicitly requested after its build.
+// Source checks above remain mandatory in both modes.
+if (process.argv.includes('--report')) {
+  const args = ['scripts/quality/navigation-report.py', '--root', '_site',
+    '--output', 'reports/navigation/latest.json', '--markdown', 'reports/navigation/latest.md',
+    '--compare', 'reports/navigation/baseline-p1-5.json'];
+  if (process.argv.includes('--gate')) args.push('--gate');
+  const result = spawnSync('python3', args, { cwd: root, stdio: 'inherit' });
+  if (result.error) throw result.error;
+  if (result.status !== 0) process.exit(result.status || 1);
+}

@@ -1,0 +1,46 @@
+{
+  "incomingMain": "cdae0f29e8f4e1023b1f9a28ba3e3b643951c18c",
+  "previousHead": "c55a8f8dabfb4589a5e48894a4363d749e067bec",
+  "nonNavigationPathsPreservedExactlyFromIncomingMain": 3688,
+  "sourceProjections": [
+    {
+      "path": "assets/search/search-index.json",
+      "sha256": "c772940659bf3e7005fb8e687d047feb8febcd21f906e5ad86b2b5e0cf2322d0"
+    },
+    {
+      "path": "public/data/woek-search-meta.json",
+      "sha256": "f09f11db79bd2e1dc10c2086d731d2466fc1b6337bb8343e04ad66fd10a3e18d"
+    },
+    {
+      "path": "content/taxonomy/site-map.json",
+      "sha256": "934a9b07fe5d670c64f5d58f82149afc0434b9965369b037f1de75e704b86a49"
+    }
+  ],
+  "canonicalNewsAndOtherEditorialSourceChanges": 0,
+  "generatedHtmlProjectionChangesCommitted": 0,
+  "checks": {
+    "fullSourceBuild": "PASS",
+    "publicArtifact": "PASS",
+    "semanticHistoricalReleaseAudit": "31/31 PASS",
+    "livingScientificScope": "6/6 PASS",
+    "urlBaseline": "PASS",
+    "privacy": "PASS",
+    "size": "876.0 MB; existing warning above 850 MB; below hard 950 MB"
+  },
+  "counts": {
+    "publicHtml": 20172,
+    "contentHtml": 18675,
+    "indexable": 17697,
+    "reachable": 16025,
+    "withinThreeClicks": 9958,
+    "unreachable": 1672,
+    "withoutFooter": 3973,
+    "sitemapCoverage": 5080,
+    "searchCoverage": 7081,
+    "redirectsInSearch": 678,
+    "brokenSkipLinks": 550,
+    "multipleCurrentPages": 0,
+    "linksToRedirects": 44277,
+    "htmlBytes": 446616909
+  }
+}
