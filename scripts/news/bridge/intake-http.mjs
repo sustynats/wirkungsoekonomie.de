@@ -1,28 +1,39 @@
 import { EDITORIAL_DECISION_BODY_LIMIT, COMMENT_TOO_LONG_MESSAGE } from '../../../admin/redaktion/feedback-limits.js';
 import { hash } from './contract.mjs';
 import { INTAKE_FILE_LIMIT } from './intake.mjs';
+import { withRequestDeadline } from '../request-deadline.mjs';
 
 const ORIGINS=['https://wirkungsoekonomie.de','https://www.wirkungsoekonomie.de'];
 const BASE='/api/admin/news-editorial';
 const MESSAGES={EDITORIAL_COMMENT_TOO_LONG:COMMENT_TOO_LONG_MESSAGE,EDITORIAL_COMMENT_REQUIRED:'Bitte schreibe dazu, was geändert werden soll.',INTAKE_QUEUE_FULL:'Die Redaktion bearbeitet gerade die maximale Zahl offener Aufträge. Bitte später erneut absenden.',INTAKE_ATTACHMENTS_PENDING:'Ein Screenshot fehlt noch. Bitte die Übertragung erneut starten.',INTAKE_ALREADY_SUBMITTED:'Dieser Auftrag wurde bereits abgesendet.',INTAKE_IDEMPOTENCY_CONFLICT:'Der bereits gespeicherte Auftrag hat einen anderen Inhalt.',BRIDGE_RUN_LOCKED:'Die Recherche ist gerade aktiv. Dein Entwurf bleibt gespeichert; bitte in Kürze erneut absenden.',INTAKE_NOT_FOUND:'Dieser Auftrag wurde nicht gefunden.',INTAKE_PREVIEW_PENDING:'Der private Entwurf ist noch nicht fertig.',INTAKE_DRAFT_LIMIT:'Es liegen bereits zu viele unvollständige Entwürfe vor. Bitte die Redaktion prüfen lassen.'};
 const fail=(message,status)=>{throw Object.assign(Error(message),{status});};
-export function existingAdminAuthorizer({fetchImpl=fetch}={}){
-  const cache=new Map();
+export function existingAdminAuthorizer({fetchImpl=fetch,timeoutMs=10000}={}){
+  const cache=new Map(),pending=new Map();
   return async request=>{
     const header=request.headers.authorization||'';
     if(!/^Bearer [A-Za-z0-9_.-]{30,8000}$/.test(header))return null;
     const key=hash(header),cached=cache.get(key);
     if(cached&&cached.until>Date.now())return cached.owner;
+    if(pending.has(key))return pending.get(key);
+    if(pending.size>=128)fail('Die Anmeldung kann gerade nicht geprüft werden. Bitte erneut versuchen.',503);
     // Delegate signature, expiry, membership and CURRENT admin permissions to
     // the existing administration service. Its response body is never exposed.
-    const response=await fetchImpl('http://127.0.0.1:8787/api/admin/polls',{headers:{Authorization:header},redirect:'error',signal:AbortSignal.timeout(12000)});
-    await response.body?.cancel();
+    const check=(async()=>{
+    let response;
+    try { response=await withRequestDeadline(async signal=>{
+      const result=await fetchImpl('http://127.0.0.1:8787/api/admin/polls',{headers:{Authorization:header},redirect:'error',signal});
+      await result.body?.cancel();return result;
+    },{timeoutMs,code:'EDITORIAL_AUTH_TIMEOUT'}); }
+    catch { fail('Die Anmeldung kann gerade nicht geprüft werden. Deine Sitzung bleibt erhalten. Bitte erneut versuchen.',503); }
     if(response.status===401||response.status===403)return null;
     if(response.status!==200)fail('Die Anmeldung kann gerade nicht geprüft werden.',503);
     let identity;try{identity=JSON.parse(Buffer.from(header.slice(7).split('.')[0],'base64url'));}catch{return null;}
     if(!/^\d{15,22}$/.test(identity.sub||'')||identity.exp<=Date.now())return null;
     if(cache.size>128)cache.clear();cache.set(key,{owner:identity.sub,until:Math.min(identity.exp,Date.now()+30000)});
     return identity.sub;
+    })();
+    pending.set(key,check);
+    try{return await check;}finally{if(pending.get(key)===check)pending.delete(key);}
   };
 }
 async function readBody(request,limit,json=true){

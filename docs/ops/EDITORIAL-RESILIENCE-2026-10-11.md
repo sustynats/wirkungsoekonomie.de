@@ -1,0 +1,60 @@
+# Redaktions-Wiederanlauf und Webserverlast - 11.10.2026
+
+Die Verarbeitung wird ueber die bestehenden GitHub-Worker und Oracle-Dienste
+repariert. Keine neue Queue, kein Infrastrukturwechsel, kein Vercel-Build und
+keine Aenderung von Modellen, Budgets, Zugriffsschutz oder Schlussfreigaben.
+
+## Korrekturen
+
+- Ein ungelieferter `attempt_exhausted`-Auftrag, eine erschoepfte Auftragsliste
+  oder eine weiter ungueltige Cacheantwort macht den Worker sichtbar fehlerhaft.
+  Ein gelieferter Entwurf oder begruendeter redaktioneller HOLD bleibt ein Ergebnis.
+- Verlorene HTTP-Bestaetigungen der eigenen `github-attempt:`-Checkpointwrites
+  werden unter dem bestehenden exklusiven Import-Lock zurueckgelesen. Ein
+  passender gespeicherter Stand wird akzeptiert. Nur bei nachgewiesen unveraendertem
+  Vorzustand folgt hoechstens ein identischer Journalwrite. Unklare Readbacks,
+  fremde Aenderungen und Authentifizierungsfehler bleiben Stoppsignale. Keine
+  Wiederholung von Modellaufrufen, Dateiverschiebungen oder Freigabeentscheidungen.
+- Der Worker liest eine paginierte SQL-Projektion ausschliesslich offener
+  Redaktionsauftraege statt saemtlicher historischer Nachrichten mit Volltexten.
+  Der alte Server faellt nur bei ausdruecklich unbekannter Operation auf den
+  bisherigen Weg zurueck. Authentifizierungs- und Lockfehler werden nicht umgangen.
+- Die private Auftragsliste entfernt Artikel, Staging und grosse Historien schon
+  in SQLite, vor der JSON-Materialisierung im Webserver. Titel und das Vorliegen
+  eines wirklichen Vorschautextes bleiben sichtbar. Originaldaten und der
+  eigentuemergepruefte Volltext-Vorschauweg bleiben unveraendert.
+- Gleichzeitige Webanfragen derselben Sitzung teilen genau eine aktuelle
+  Berechtigungspruefung. Der bestehende 30-Sekunden-Cache wird nicht verlaengert.
+  Eine haengende Pruefung liefert vor dem Client-Abbruch eine begrenzte HTTP-503-
+  Antwort statt einer falschen Login-Ablehnung; die Sitzung wird nicht geloescht.
+
+## Auslieferung und Rueckfall
+
+GitHub nutzt die Worker-Korrektur erst nach Merge in `main`. Die Workerversion
+wird absichtlich nicht erhoeht: Ein Versionssprung wuerde alte bezahlte Versuche
+erneut zulassen und waere keine kostenlose Wiederherstellung.
+
+Die Oracle-Aenderungen sind separat backup-first auszuliefern, gemaess
+`docs/news/PRIVATE-EDITORIAL.md`: SQLite-Backup und Integritaetspruefung,
+aktuellen Release-Link/Unit/Caddy sichern, neue commitgebundene Runtime pruefen,
+Linkwechsel und kontrollierter Dienstneustart ohne Enteignung laufender Writer.
+Danach lokale HTTP-Latenz, echter Eigentuemerkonto-Login, Auftragsliste und
+Vorschau pruefen. Bei einem Fehler den vorherigen Runtime-Link wiederherstellen;
+kein Datenbank-Rollback und keine Ruecksetzung menschlicher Entscheidungen.
+
+Ein alter `started`-Versuch ohne verifizierbaren Anbieterbeleg bleibt unklar und
+wird nicht automatisch erneut bezahlt. Private Antwortarchive/Workflow-Belege
+pruefen; vorhandene Antworten ueber den regulaeren Import wiederverwenden.
+Ein lokales Manuskript ist noch keine in der App bereitgestellte Freigabefassung.
+
+## Lokale Regressionen
+
+```sh
+node --test tests/news/editorial-auth-throughput.test.mjs tests/news/editorial-checkpoint.test.mjs tests/news/redaktionsworker.test.mjs tests/news/editorial-intake.test.mjs tests/news/bridge-queue-pagination.test.mjs tests/news/bridge-remote-read-retry.test.mjs
+npm run news:test
+```
+
+Geprueft werden verlorene Write-Bestaetigungen vor/nach Anbieterantwort,
+Einmalaufruf, unveraenderte Freigaben, begrenzte Wiederholung, alte Server,
+Authentifizierungsfehler, parallele/haengende Sitzungspruefungen und grosse
+private Manuskripte. Ein bestandener Test ist kein Oracle-Deploymentnachweis.
