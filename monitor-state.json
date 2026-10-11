@@ -32,6 +32,10 @@
     "provider": {
       "firstSeen": "2026-10-11T19:45:44.094Z",
       "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-11T20:41:21.323Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2541,7 +2545,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T20:36:12.560Z",
+    "checked_at": "2026-10-11T20:41:21.323Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
