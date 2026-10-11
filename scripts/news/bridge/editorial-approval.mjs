@@ -39,6 +39,10 @@ export class EditorialApproval {
   constructor(db,{now=()=>new Date().toISOString()}={}){
     this.db=db;this.now=now;
     db.exec('CREATE TABLE IF NOT EXISTS editorial_reviews(job_id TEXT PRIMARY KEY,owner TEXT NOT NULL,body TEXT NOT NULL); CREATE TABLE IF NOT EXISTS editorial_review_audit(id INTEGER PRIMARY KEY,job_id TEXT NOT NULL,at TEXT NOT NULL,body TEXT NOT NULL)');
+    // Polls must not scan historical manuscript bodies to find an empty queue.
+    // These indexes are additive; immutable previews and approvals stay intact.
+    db.exec(`CREATE INDEX IF NOT EXISTS editorial_reviews_state ON editorial_reviews (json_extract(body,'$.status'));
+      CREATE INDEX IF NOT EXISTS editorial_reviews_owner_updated ON editorial_reviews (owner,json_extract(body,'$.updated_at') DESC);`);
   }
   get(id){const r=this.db.prepare('SELECT body FROM editorial_reviews WHERE job_id=?').get(id);return r?JSON.parse(r.body):null;}
   owned(owner,id){const r=this.get(id);if(!actor(owner)||!r||r.owner!==owner)fail('EDITORIAL_REVIEW_NOT_FOUND',404);return r;}
@@ -55,6 +59,13 @@ export class EditorialApproval {
       json_extract(body,'$.publication.error') AS publication_error
       FROM editorial_reviews WHERE owner=? ORDER BY json_extract(body,'$.updated_at') DESC`)
       .all(owner).map(({publication_url,publication_error,...r})=>({...r,publication:{url:publication_url,error:publication_error}}));
+  }
+  notificationCandidates(owner){
+    if(!actor(owner))fail('EDITORIAL_OWNER_REQUIRED',403);
+    return this.db.prepare(`SELECT job_id, json_extract(body,'$.preview_hash') AS preview_hash,
+      json_extract(body,'$.preview.title') AS title FROM editorial_reviews
+      WHERE json_extract(body,'$.status')='AWAITING_FINAL_APPROVAL' AND owner=?
+      ORDER BY json_extract(body,'$.updated_at') DESC`).all(owner);
   }
   save(record,event){this.db.prepare('INSERT INTO editorial_reviews VALUES(?,?,?) ON CONFLICT(job_id) DO UPDATE SET body=excluded.body').run(record.job_id,record.owner,JSON.stringify(record));this.db.prepare('INSERT INTO editorial_review_audit(job_id,at,body) VALUES(?,?,?)').run(record.job_id,this.now(),JSON.stringify(event));}
   // Worker-only: never expose this method through the browser API.
@@ -92,6 +103,7 @@ export class EditorialApproval {
     }catch(e){this.db.exec('ROLLBACK');throw e;}
   }
   pendingPublication(){return this.db.prepare("SELECT body FROM editorial_reviews WHERE json_extract(body,'$.status') IN ('APPROVED_FOR_PUBLICATION','PUBLISHING')").all().map(r=>JSON.parse(r.body));}
+  pendingPublicationCount(){return this.db.prepare("SELECT count(*) AS count FROM editorial_reviews WHERE json_extract(body,'$.status') IN ('APPROVED_FOR_PUBLICATION','PUBLISHING')").get().count;}
   claimPublications(){
     this.db.exec('BEGIN IMMEDIATE');
     try{const snapshots=[];for(const r of this.pendingPublication()){
