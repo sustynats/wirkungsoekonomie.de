@@ -47,10 +47,35 @@ wird nicht automatisch erneut bezahlt. Private Antwortarchive/Workflow-Belege
 pruefen; vorhandene Antworten ueber den regulaeren Import wiederverwenden.
 Ein lokales Manuskript ist noch keine in der App bereitgestellte Freigabefassung.
 
+## Nachrichten-Spur: Guthaben-/Limitfehler nicht zu Geheimnissen machen
+
+Der Lauf `38117764016` vom 11.10. meldete zwei Anbieterfehler nur als
+`[redacted]`, ohne neue Nachricht. Der Laengenschutz in `run.mjs` maskierte
+auch die drei bereits vom Transport normalisierten festen Billingcodes.
+Dadurch ging nicht nur die Diagnose verloren: Der vorhandene Stopp nach der
+ersten Guthaben-, Ausgaben- oder Quotenablehnung erkannte seinen Code nicht
+mehr und begann den naechsten Nachrichtenbatch.
+
+Nur diese drei exakten internen Codes bleiben nun wie die vorhandenen
+Formatfehler sichtbar. Unbekannte Meldungen, angehaengte Texte und Zugangswerte
+bleiben geschwaerzt. Mengen, Modelle, Kostengrenzen, Anbieterretries,
+Verarbeitungsfingerprints und historische Versuche werden nicht veraendert.
+Die Regression prueft den vollstaendigen Nachrichtenlauf mit zwei verschiedenen
+ausgewaehlten Updates und simulierten HTTP-Antworten: ein Aufruf, null Kosten,
+sichtbarer Sperrcode, keine Publikation und unveraenderte veroeffentlichte Texte.
+
+Die Unterscheidung von temporaerem 429 und Guthaben-/Ausgaben-/Quotensperre
+entspricht der am 11.10. gelesenen
+[OpenAI-Fehlerdokumentation](https://developers.openai.com/api/docs/guides/error-codes).
+Der alte geschwaerzte Bericht belegt allein noch nicht, welche dieser Sperren
+aktuell vorliegt. Das muss ein frischer regulaerer Lauf nach dem Merge zeigen;
+kein zusaetzlicher bezahlter Diagnoselauf und keine blinde Budgeterhoehung.
+
 ## Lokale Regressionen
 
 ```sh
 node --test tests/news/editorial-auth-throughput.test.mjs tests/news/editorial-checkpoint.test.mjs tests/news/redaktionsworker.test.mjs tests/news/editorial-intake.test.mjs tests/news/bridge-queue-pagination.test.mjs tests/news/bridge-remote-read-retry.test.mjs
+node --test tests/news/news-provider-refusal.test.mjs tests/news/direct-operation.test.mjs tests/news/budget-throughput.test.mjs tests/news/source-run-health.test.mjs
 npm run news:test
 ```
 
