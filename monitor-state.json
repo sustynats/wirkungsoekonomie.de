@@ -24,17 +24,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-11T10:50:53.881Z",
-      "active": true
-    },
-    "academy": {
-      "firstSeen": "2026-10-11T11:20:59.811Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "46f5a3e6c143a2c6e79781f4",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-11T11:33:31.178Z"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2541,7 +2538,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T11:20:59.811Z",
+    "checked_at": "2026-10-11T11:33:31.178Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
