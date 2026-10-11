@@ -25,12 +25,37 @@
       "firstSeen": "2026-10-11T03:36:00.039Z",
       "active": true
     },
-    "lage": {
-      "firstSeen": "2026-10-11T04:06:07.339Z",
+    "editorial-status": {
+      "firstSeen": "2026-10-11T04:25:19.383Z",
+      "active": false
+    },
+    "run": {
+      "firstSeen": "2026-10-11T04:25:19.383Z",
+      "active": true
+    },
+    "provider": {
+      "firstSeen": "2026-10-11T04:25:19.383Z",
+      "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-11T04:25:19.383Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "215e55c02ce869ee7912f54f",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-10-11T04:25:19.383Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "47aed1209f6798cde0d605b8",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-11T04:25:19.383Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "672ed305d9debecdf324b60f",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Lage\nPrüfung: 2026-10-11T04:25:19.383Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2537,7 +2562,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T04:21:03.030Z",
+    "checked_at": "2026-10-11T04:25:19.383Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
