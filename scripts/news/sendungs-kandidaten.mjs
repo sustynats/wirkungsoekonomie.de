@@ -20,6 +20,7 @@ export const EPISODE_VERSION = 'sendungs-kandidaten-1';
 export const AUTOMATIC_DRAFT_POLICY = 'all-followed-episodes-2026-10-01';
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED']);
 const LABEL = { watched: 'Nachgesehen', listened: 'Nachgehört' };
+const TRANSCRIPT_BILLING_ERRORS = new Set(['AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED', 'AI_PROVIDER_SPEND_LIMIT_REACHED', 'AI_PROVIDER_QUOTA_EXHAUSTED']);
 
 const clean = (value) => decodeXml(String(value || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const tag = (block, names) => { for (const name of names) { const m = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, 'i')); if (m) return clean(m[1]); } return ''; };
@@ -522,6 +523,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const proposed = [];
     const transcriptDay = (await store.observation(`github-transcript-day:${day}`)) || { day, transcribed: 0, cost_usd: 0 };
     const transcriptErrors = [], waiting = [], deferred = [];
+    let transcriptBillingError = null;
     const runLimit = Math.max(0, Math.min(limit, maxPerDay - counter.proposed));
     for (const { episode, show, retry, promotion } of fresh) {
       const backlog = isBacklog(episode.published_at, now);
@@ -543,15 +545,23 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       const waitingForSubtitles = deadline ? Date.parse(now) < Date.parse(deadline) : ageHours < subtitleWaitHours;
       if (!transcript && waitingForSubtitles) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry), ...(deadline ? { deadline } : {}) }); continue; }
       if (!transcript && transcribe && show.allow_paid_transcription !== false && transcriptDay.transcribed < maxTranscriptsPerDay) {
-        try {
-          const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });
-          if (machine) {
-            transcript = machine;
-            transcriptDay.transcribed += 1;
-            transcriptDay.cost_usd = Number((transcriptDay.cost_usd + (machine.cost_usd || 0)).toFixed(4));
-            await store.observe(`github-transcript-day:${day}`, transcriptDay);
+        // Eine ausdrueckliche Billingablehnung gilt fuer denselben Anbieter im
+        // gesamten Lauf. Kostenlose Wortlautquellen oben bleiben erreichbar.
+        if (transcriptBillingError) { defer('transcription_provider_billing_blocked'); }
+        else {
+          try {
+            const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });
+            if (machine) {
+              transcript = machine;
+              transcriptDay.transcribed += 1;
+              transcriptDay.cost_usd = Number((transcriptDay.cost_usd + (machine.cost_usd || 0)).toFixed(4));
+              await store.observe(`github-transcript-day:${day}`, transcriptDay);
+            }
+          } catch (error) {
+            if (TRANSCRIPT_BILLING_ERRORS.has(error?.billingRefusal)) transcriptBillingError = error.billingRefusal;
+            transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80), ...(error?.detail ? { detail: String(error.detail).slice(-300) } : {}) });
           }
-        } catch (error) { transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80), ...(error?.detail ? { detail: String(error.detail).slice(-300) } : {}) }); }
+        }
       }
       // Nach dem Wartefenster ohne Untertitel bleibt die eigene Abschrift. Erst
       // wenn auch die fehlt, wartet ein Wiederholungsversuch weiter: ein
@@ -590,6 +600,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     return { status: !proposed.length && counter.proposed >= maxPerDay ? 'daily_limit' : 'ok', day, draft_policy: AUTOMATIC_DRAFT_POLICY,
       checked_shows: followedShows.length, pending_episodes: [...pending.values()].reduce((sum, rows) => sum + rows.size, 0),
       fresh_episodes: fresh.length, feed_errors: feedErrors, duplicate_requests: duplicates, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting,
+      transcript_provider_billing_error: transcriptBillingError,
       deferred_episodes: deferred, backlog_proposed_today: backlogProposed, backlog_daily_limit: backlogLimit,
       transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
