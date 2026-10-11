@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -15,7 +16,7 @@ const DATA_STAND = "2026-06-09";
 const CSS_VERSION = "20260605-master-debattenkarten";
 const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 const NAVIGATION = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
-const HEADER_TEMPLATE = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8");
+const HEADER_TEMPLATE = renderSiteHeader('{{BASE}}');
 const FOOTER_TEMPLATE = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 const HEADER_UTILITY_LABELS = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 

@@ -558,9 +558,8 @@ function updateMainPages() {
 
 function buildRiskRegisterPage() {
   const base = read("verstehen/sdgs-sdgplus/index.html");
-  const headerMatch = base.match(/<header class="site-header"[\s\S]*?<\/header>/);
   const footerMatch = base.match(/<footer class="footer"[\s\S]*?<\/footer>/);
-  const header = (headerMatch?.[0] || "").replaceAll("../../", "../../../");
+  const header = renderSiteHeader('../../../');
   const footer = (footerMatch?.[0] || "").replaceAll("../../", "../../../");
   const page = `<!doctype html>
 <html lang="de">
@@ -706,3 +705,4 @@ function main() {
 }
 
 main();
+import {renderSiteHeader} from '../lib/site-shell.mjs';

@@ -1,0 +1,30 @@
+{
+  "task": "P0.1",
+  "scope": "Synchronisierung mit zwischenzeitlicher Main-Version und Begrenzung des bestehenden #253-Projektionsjobs.",
+  "incomingMain": "ce4167d9ee7714fa3eee65d4d0be008c3196c56b",
+  "originalHeaderBeforeAfter": [
+    "p0-1-current-before.json",
+    "p0-1-current-after.json"
+  ],
+  "integrationMeasurement": "p0-1-bot-main-sync.json",
+  "measurementAttribution": "Neue Main-Nachrichten und bestehende #253-Projektionen gehören zur Integration; sie werden nicht als Header-Effekt ausgegeben.",
+  "navigationJsonSha256": "192491fd043238d646c788b18fc7c76f382a82e70c059eea10c4a707661dccac",
+  "operationalSourcesChangedVersusIncomingMain": 0,
+  "operationalSearchMetadataRowsPreserved": 2256,
+  "EnglishAuthoredOrStagedChanges": 0,
+  "sourceCacheSnapshot": {
+    "assets/search/search-index.json": "3cd787f69f944c2c4ea0aeb3a6123b0a16bfb449eafff8fd5932c540b43b61a3",
+    "public/data/woek-search-meta.json": "38a823581a421270e6fc281f01482c68fbff0a9342f4ca8b1e556ea3676ff353",
+    "content/taxonomy/site-map.json": "3988d48da6fec3afc266266b250b2559ff4effe479fecac38c06227c5d13c39f"
+  },
+  "projectionReplay": "31/31 plus 6/6 bestanden; zweite identische Projektion ohne ungestagte Änderung vor dem vollständigen Build.",
+  "checks": [
+    "vollständiger Quellen-Build",
+    "vollständiger Artefakt-Build",
+    "Privacy",
+    "URL-Baseline",
+    "Größentor unter 950 MB",
+    "Header- und Projektions-Negativtests"
+  ],
+  "openNavigationItems": "Weitere Phase-0/1-Aufträge folgen in eigenen PRs. Kein Gesamtfreigabevermerk."
+}

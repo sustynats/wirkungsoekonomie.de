@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -66,24 +67,7 @@ function renderPublication(publication) {
     <link rel="stylesheet" href="/assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="/" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="/assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="/">Start</a>
-        <a href="/verstehen/">Verstehen</a>
-        <a href="/wirkungsfelder/">Wirkungsfelder</a>
-        <a href="/werkzeuge/">Praxis &amp; Tools</a>
-        <a href="/lernen/">Lernen</a>
-        <a href="/bibliothek/">Bibliothek</a>
-      </nav>
-    </header>
+    ${renderSiteHeader('/', 'de')}
     <main data-pagefind-body>
       <section class="hero compact-hero document-detail-hero">
         <p class="hero-kicker">${esc(publication.type || "Publikation")} · ${esc(publication.status || "Referenz")}</p>

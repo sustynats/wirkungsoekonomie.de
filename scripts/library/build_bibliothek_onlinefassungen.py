@@ -21,6 +21,10 @@ Aufruf:
   python3 scripts/library/build_bibliothek_onlinefassungen.py <id1,id2,...>
   python3 scripts/library/build_bibliothek_onlinefassungen.py all-standalone
 """
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header
 import sys, os, re, html, unicodedata
 from collections import Counter
 from pdf_reader_sections import ReaderSections
@@ -66,26 +70,7 @@ def public_chapter_override(detail_slug, source_title):
     return PUBLIC_CHAPTER_OVERRIDES.get(detail_slug, {}).get(source_title)
 
 
-HEADER = '''    <header class="site-header" data-search-exclude>
-      <a class="brand" href="{r}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="{r}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="{r}index.html">Start</a>
-        <a href="{r}verstehen/">Verstehen</a>
-        <a href="{r}fuer/">Für wen?</a>
-        <a href="{r}wirkungsfelder/">Wirkungsfelder</a>
-        <a href="{r}werkzeuge/">Praxis &amp; Tools</a>
-        <a href="{r}oeffentlicher-wirkungsraum/">Debatte &amp; Radar</a>
-        <a href="{r}lernen/">Lernen</a>
-        <a href="{r}bibliothek/" aria-current="page">Bibliothek</a>
-        <a href="{r}mitmachen.html">Mitmachen</a>
-      </nav>
-    </header>'''
+HEADER = render_site_header('{r}')
 
 
 def page_shell(r, title, desc, body, css_v="20260712-reader"):

@@ -1,3 +1,4 @@
+import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -322,17 +323,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation"><a href="${base}index.html">Start</a></nav>
-    </header>
+    ${renderSiteHeader(base, 'de')}
     <main${["werkzeuge/impact-controlling/index.html", "erleben/impact-controlling-rechner/index.html"].includes(rel) ? ' data-learning-page' : ''}>
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Onlinefassung · Druckdatum siehe Druckdialog</p>
 ${rel === "werkzeuge/impact-controlling/index.html" ? body(base, route).replaceAll('<p class="card-text">', '<p class="card-text" data-publication-abstract>').replaceAll('<p>Kausal begrenzte', '<p data-publication-abstract>Kausal begrenzte').replaceAll('<p>621 IDs', '<p data-publication-abstract>621 IDs').replaceAll('<p>Wie Nachhaltigkeitsberichterstattung', '<p data-publication-abstract>Wie Nachhaltigkeitsberichterstattung') : body(base, route)}

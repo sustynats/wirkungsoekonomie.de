@@ -9,6 +9,10 @@ python3 scripts/import/import-schachbrett-oeffentlichkeit-journal.py
 """
 
 from __future__ import annotations
+from pathlib import Path as _HeaderPath
+import sys as _header_sys
+_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
+from scripts.lib.site_shell import render_site_header_for_source
 
 import html
 import json
@@ -129,10 +133,10 @@ def copy_assets() -> None:
 
 def extract_shell() -> tuple[str, str]:
     shell = (ROOT / "blog" / "wellen-tiefen-modell-oeffentliche-kommunikation.html").read_text(encoding="utf-8")
-    header_start = shell.index('    <header class="site-header"')
+    header_start = shell.index('<header class="site-header"')
     main_start = shell.index("    <main", header_start)
     main_end = shell.rindex("    </main>")
-    return shell[header_start:main_start], shell[main_end + len("    </main>"):]
+    return render_site_header_for_source(shell), shell[main_end + len("    </main>"):]
 
 
 def render_table(rows: list[list[str]]) -> str:
