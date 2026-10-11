@@ -21,20 +21,41 @@
       "firstSeen": "2026-10-10T17:51:12.919Z",
       "active": true
     },
-    "institute": {
-      "firstSeen": "2026-10-11T02:20:57.018Z",
-      "active": true
-    },
     "editorial-status": {
       "firstSeen": "2026-10-11T02:35:59.734Z",
       "active": true
     },
-    "delivery-redaktionsworker.yml": {
-      "firstSeen": "2026-10-11T02:51:02.014Z",
+    "run": {
+      "firstSeen": "2026-10-11T02:57:44.018Z",
+      "active": true
+    },
+    "provider": {
+      "firstSeen": "2026-10-11T02:57:44.018Z",
+      "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-11T02:57:44.018Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ec99877a2281f869f7dde496",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-11T02:57:44.018Z"
+    },
+    {
+      "id": "a899f5d3684d5ac6f33ae7be",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-10-11T02:57:44.018Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "ea6297372b3b6ae9075f3c71",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-11T02:57:44.018Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "859e40fe18121f43c417181d",
+      "content": "✓ WÖk-Störung behoben\nRedaktionslauf\nPrüfung: 2026-10-11T02:57:44.018Z"
+    }
+  ],
   "dailyDate": "2026-10-10",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2541,7 +2562,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-11T02:51:02.014Z",
+    "checked_at": "2026-10-11T02:57:44.018Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
