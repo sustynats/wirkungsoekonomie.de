@@ -80,7 +80,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: state-sustainability-${{ github.event.pull_request.number || github.ref }}
@@ -142,7 +142,7 @@ jobs:
           npm run taxonomy:build
       - name: Preserve unchanged operational news metadata
         run: node scripts/quality/scope-state-projection-news.mjs restore --snapshot=${{ runner.temp }}/woek-state-news.json
-      - name: Generate committed exhaustive #253 URL/file matrix
+      - name: Generate exhaustive #253 URL/file matrix for this checked commit
         run: |
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
@@ -151,27 +151,17 @@ jobs:
         run: |
           python tools/check_state_sustainability_architecture.py
           python tools/check_state_sustainability_wiwi_scope.py
-      - name: Commit deterministic projections and audit matrix when needed
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      - name: Snapshot deterministic projections for the second-pass check
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet; then
-            echo 'All approved #253 projections and the release-blocking matrix are already committed.'
-          else
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add -A
-            git reset -- .github/workflows/ || true
-            if git diff --cached --quiet; then
-              echo 'Only workflow-file drift remains; do not self-commit it.'
-            else
-              git commit -m 'fix: materialize approved #253 projections and committed audit matrix'
-              git pull --rebase origin ${{ github.event.pull_request.head.ref }}
-              git push origin HEAD:${{ github.event.pull_request.head.ref }}
-            fi
-          fi
-      - name: Verify projections and committed matrix are idempotent
+          # Keep the first complete projection in the local index. The next
+          # pass must reproduce it exactly, using the same strict diff check.
+          # Generated discovery data is reported as an artifact; this audit
+          # never rewrites the PR head after its publication tests start.
+          git add -A
+          git reset -- .github/workflows/
+      - name: Verify projections and audit matrix are idempotent
         run: |
           node scripts/quality/scope-state-projection-news.mjs capture --snapshot=${{ runner.temp }}/woek-state-news.json
           python tools/apply_state_sustainability_architecture.py
