@@ -53,6 +53,13 @@ on:
       # A projection commit here would alter the head after the checked report.
       - '!scripts/quality/check-navigation-discovery.mjs'
       - '!scripts/quality/navigation-report.py'
+      # Reader layout and current-route discovery do not change #253 content.
+      # The full PR build still runs all semantic and historical gates. Keep
+      # this extra branch writer from committing generated sitemap snapshots
+      # against the independently advancing newsroom on main.
+      - '!scripts/site/build-two-shirts.mjs'
+      - '!scripts/lib/method-version-indexability.mjs'
+      - '!verstehen/preise-und-wirkungsfonds/index.html'
       - 'tools/apply_state_sustainability_architecture.py'
       - 'tools/apply_state_sustainability_sources.py'
       - 'tools/apply_state_sustainability_precision.py'

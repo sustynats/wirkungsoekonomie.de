@@ -26,9 +26,9 @@
     "WOEK_USP_IS_ADDITIVE_AND_SPECIFIC",
     "HISTORICAL_PUBLICATIONS_NOT_SILENTLY_REWRITTEN"
   ],
-  "sitemap_route_count": 5097,
+  "sitemap_route_count": 5095,
   "missing_source_count": 0,
-  "extra_tracked_html_not_in_sitemap_count": 15123,
+  "extra_tracked_html_not_in_sitemap_count": 15125,
   "missing_sources": [],
   "routes": [
     {
@@ -45261,70 +45261,6 @@
       "historical_publication": false,
       "relevance": "SEMANTIC_253_REVIEW",
       "source_refs": [],
-      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
-      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
-      "material_state_absence_signal": false,
-      "review_closed": true
-    },
-    {
-      "file_path": "verstehen/zwei-t-shirts/index.html",
-      "canonical_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
-      "sitemap_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
-      "sitemap_status": true,
-      "search_index_status": true,
-      "content_type": "foundations",
-      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
-      "matched_claims": [
-        "alternativen"
-      ],
-      "source_links_present": [
-        "gesetze-im-internet.de"
-      ],
-      "classification": [
-        "NO_CHANGE_REQUIRED"
-      ],
-      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
-      "owner_source": "source_html",
-      "verification_status": "SOURCE_SCANNED",
-      "source_path": "verstehen/zwei-t-shirts/index.html",
-      "public_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
-      "historical_publication": false,
-      "relevance": "SEMANTIC_253_REVIEW",
-      "source_refs": [
-        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
-      ],
-      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
-      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
-      "material_state_absence_signal": false,
-      "review_closed": true
-    },
-    {
-      "file_path": "verstehen/preise-und-wirkungsfonds/index.html",
-      "canonical_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
-      "sitemap_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
-      "sitemap_status": true,
-      "search_index_status": true,
-      "content_type": "foundations",
-      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
-      "matched_claims": [
-        "alternativen"
-      ],
-      "source_links_present": [
-        "gesetze-im-internet.de"
-      ],
-      "classification": [
-        "NO_CHANGE_REQUIRED"
-      ],
-      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
-      "owner_source": "source_html",
-      "verification_status": "SOURCE_SCANNED",
-      "source_path": "verstehen/preise-und-wirkungsfonds/index.html",
-      "public_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
-      "historical_publication": false,
-      "relevance": "SEMANTIC_253_REVIEW",
-      "source_refs": [
-        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
-      ],
       "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
       "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
       "material_state_absence_signal": false,
@@ -480965,6 +480901,37 @@
       "review_closed": true
     },
     {
+      "file_path": "verstehen/preise-und-wirkungsfonds/index.html",
+      "canonical_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
+      "sitemap_status": false,
+      "search_index_status": true,
+      "content_type": "foundations",
+      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
+      "matched_claims": [
+        "alternativen"
+      ],
+      "source_links_present": [
+        "gesetze-im-internet.de"
+      ],
+      "classification": [
+        "NO_CHANGE_REQUIRED"
+      ],
+      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
+      "owner_source": "source_html",
+      "verification_status": "TRACKED_HTML_NOT_IN_SITEMAP_REVIEW_VISIBILITY",
+      "source_path": "verstehen/preise-und-wirkungsfonds/index.html",
+      "public_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
+      "historical_publication": false,
+      "relevance": "SEMANTIC_253_REVIEW",
+      "source_refs": [
+        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
+      ],
+      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
+      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
+      "material_state_absence_signal": false,
+      "review_closed": true
+    },
+    {
       "file_path": "verstehen/regularien-standards/index.html",
       "canonical_url": "../../verstehen.html",
       "sitemap_status": false,
@@ -481217,6 +481184,37 @@
       "source_refs": [],
       "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
       "semantic_review_basis": "CONTEXTUAL_STATE_ABSENCE_REVIEW",
+      "material_state_absence_signal": false,
+      "review_closed": true
+    },
+    {
+      "file_path": "verstehen/zwei-t-shirts/index.html",
+      "canonical_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
+      "sitemap_status": false,
+      "search_index_status": true,
+      "content_type": "foundations",
+      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
+      "matched_claims": [
+        "alternativen"
+      ],
+      "source_links_present": [
+        "gesetze-im-internet.de"
+      ],
+      "classification": [
+        "NO_CHANGE_REQUIRED"
+      ],
+      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
+      "owner_source": "source_html",
+      "verification_status": "TRACKED_HTML_NOT_IN_SITEMAP_REVIEW_VISIBILITY",
+      "source_path": "verstehen/zwei-t-shirts/index.html",
+      "public_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
+      "historical_publication": false,
+      "relevance": "SEMANTIC_253_REVIEW",
+      "source_refs": [
+        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
+      ],
+      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
+      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
       "material_state_absence_signal": false,
       "review_closed": true
     },
@@ -522678,7 +522676,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "github_pages_deployment_workflow",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 20549,
+      "bytes": 20764,
       "source_path": ".github/workflows/deploy.yml",
       "public_url": null,
       "historical_publication": false,
@@ -546297,7 +546295,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "site_generator_or_quality_tool",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 12710,
+      "bytes": 12477,
       "source_path": "scripts/lib/method-version-indexability.mjs",
       "public_url": null,
       "historical_publication": false,
@@ -558231,7 +558229,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "site_generator_or_quality_tool",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 6056,
+      "bytes": 5958,
       "source_path": "scripts/site/build-two-shirts.mjs",
       "public_url": null,
       "historical_publication": false,
@@ -560304,7 +560302,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "sitemap",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 635738,
+      "bytes": 635513,
       "source_path": "sitemap.xml",
       "public_url": "https://wirkungsoekonomie.de/sitemap.xml",
       "historical_publication": false,
@@ -607502,70 +607500,6 @@
       "historical_publication": false,
       "relevance": "SEMANTIC_253_REVIEW",
       "source_refs": [],
-      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
-      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
-      "material_state_absence_signal": false,
-      "review_closed": true
-    },
-    {
-      "file_path": "verstehen/zwei-t-shirts/index.html",
-      "canonical_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
-      "sitemap_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
-      "sitemap_status": true,
-      "search_index_status": true,
-      "content_type": "foundations",
-      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
-      "matched_claims": [
-        "alternativen"
-      ],
-      "source_links_present": [
-        "gesetze-im-internet.de"
-      ],
-      "classification": [
-        "NO_CHANGE_REQUIRED"
-      ],
-      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
-      "owner_source": "source_html",
-      "verification_status": "SOURCE_SCANNED",
-      "source_path": "verstehen/zwei-t-shirts/index.html",
-      "public_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
-      "historical_publication": false,
-      "relevance": "SEMANTIC_253_REVIEW",
-      "source_refs": [
-        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
-      ],
-      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
-      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
-      "material_state_absence_signal": false,
-      "review_closed": true
-    },
-    {
-      "file_path": "verstehen/preise-und-wirkungsfonds/index.html",
-      "canonical_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
-      "sitemap_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
-      "sitemap_status": true,
-      "search_index_status": true,
-      "content_type": "foundations",
-      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
-      "matched_claims": [
-        "alternativen"
-      ],
-      "source_links_present": [
-        "gesetze-im-internet.de"
-      ],
-      "classification": [
-        "NO_CHANGE_REQUIRED"
-      ],
-      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
-      "owner_source": "source_html",
-      "verification_status": "SOURCE_SCANNED",
-      "source_path": "verstehen/preise-und-wirkungsfonds/index.html",
-      "public_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
-      "historical_publication": false,
-      "relevance": "SEMANTIC_253_REVIEW",
-      "source_refs": [
-        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
-      ],
       "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
       "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
       "material_state_absence_signal": false,
@@ -1043204,6 +1043138,37 @@
       "review_closed": true
     },
     {
+      "file_path": "verstehen/preise-und-wirkungsfonds/index.html",
+      "canonical_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
+      "sitemap_status": false,
+      "search_index_status": true,
+      "content_type": "foundations",
+      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
+      "matched_claims": [
+        "alternativen"
+      ],
+      "source_links_present": [
+        "gesetze-im-internet.de"
+      ],
+      "classification": [
+        "NO_CHANGE_REQUIRED"
+      ],
+      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
+      "owner_source": "source_html",
+      "verification_status": "TRACKED_HTML_NOT_IN_SITEMAP_REVIEW_VISIBILITY",
+      "source_path": "verstehen/preise-und-wirkungsfonds/index.html",
+      "public_url": "https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/",
+      "historical_publication": false,
+      "relevance": "SEMANTIC_253_REVIEW",
+      "source_refs": [
+        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
+      ],
+      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
+      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
+      "material_state_absence_signal": false,
+      "review_closed": true
+    },
+    {
       "file_path": "verstehen/regularien-standards/index.html",
       "canonical_url": "../../verstehen.html",
       "sitemap_status": false,
@@ -1043456,6 +1043421,37 @@
       "source_refs": [],
       "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
       "semantic_review_basis": "CONTEXTUAL_STATE_ABSENCE_REVIEW",
+      "material_state_absence_signal": false,
+      "review_closed": true
+    },
+    {
+      "file_path": "verstehen/zwei-t-shirts/index.html",
+      "canonical_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
+      "sitemap_status": false,
+      "search_index_status": true,
+      "content_type": "foundations",
+      "historical_or_current": "CURRENT_OR_LIVING_PAGE",
+      "matched_claims": [
+        "alternativen"
+      ],
+      "source_links_present": [
+        "gesetze-im-internet.de"
+      ],
+      "classification": [
+        "NO_CHANGE_REQUIRED"
+      ],
+      "required_action": "No material #253 change identified by path rule; semantic scan still applies.",
+      "owner_source": "source_html",
+      "verification_status": "TRACKED_HTML_NOT_IN_SITEMAP_REVIEW_VISIBILITY",
+      "source_path": "verstehen/zwei-t-shirts/index.html",
+      "public_url": "https://wirkungsoekonomie.de/verstehen/zwei-t-shirts/",
+      "historical_publication": false,
+      "relevance": "SEMANTIC_253_REVIEW",
+      "source_refs": [
+        "https://www.gesetze-im-internet.de/ustg_1980/__10.html"
+      ],
+      "status": "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE",
+      "semantic_review_basis": "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL",
       "material_state_absence_signal": false,
       "review_closed": true
     },
@@ -1084914,7 +1084910,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "github_pages_deployment_workflow",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 20549,
+      "bytes": 20764,
       "source_path": ".github/workflows/deploy.yml",
       "public_url": null,
       "historical_publication": false,
@@ -1108533,7 +1108529,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "site_generator_or_quality_tool",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 12710,
+      "bytes": 12477,
       "source_path": "scripts/lib/method-version-indexability.mjs",
       "public_url": null,
       "historical_publication": false,
@@ -1120467,7 +1120463,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "site_generator_or_quality_tool",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 6056,
+      "bytes": 5958,
       "source_path": "scripts/site/build-two-shirts.mjs",
       "public_url": null,
       "historical_publication": false,
@@ -1122540,7 +1122536,7 @@
       "required_action": "No separate mutation required unless the semantic scan or owning current page identifies a material #253 conflict.",
       "owner_source": "sitemap",
       "verification_status": "TRACKED_TEXT_SCANNED",
-      "bytes": 635738,
+      "bytes": 635513,
       "source_path": "sitemap.xml",
       "public_url": "https://wirkungsoekonomie.de/sitemap.xml",
       "historical_publication": false,
