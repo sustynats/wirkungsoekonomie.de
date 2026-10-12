@@ -101,6 +101,34 @@ function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
   return { session: { store, transport }, files, observations, jobs };
 }
 
+test('a missing video feed queues its official podcast with free words once, without changing approval or quotas', async () => {
+  const show = { id: 'podcast-recovery', show_name: 'Podcast Recovery', kind: 'watched', enabled: true,
+    youtube_channel_id: 'UCtest', feed: 'https://example.org/video-feed', podcast_feed: 'https://example.org/podcast-feed',
+    require_transcript: true, allow_paid_transcription: false, min_duration_seconds: 900, max_age_days: 14 };
+  const podcast = `<rss><item><title>Überleben im digitalen Ernstfall</title><link>https://example.org/episode</link><guid>official-audio</guid><pubDate>2026-09-15T01:00:00Z</pubDate><itunes:duration>4920</itunes:duration><enclosure url="https://example.org/episode.mp3"/><podcast:transcript url="https://example.org/words.vtt" type="text/vtt"/></item></rss>`;
+  const fetchImpl = async url => url === show.feed ? { ok: false, status: 404 }
+    : { ok: true, text: async () => url === show.podcast_feed ? podcast : 'WEBVTT\n\n00:00:01.000 --> 00:00:08.000\n' + 'Belegter Wortlaut '.repeat(100) };
+  const { session, jobs, observations } = fakeSession();
+  const options = { session, now, shows: [show], fetchImpl, transcribeImpl: async () => assert.fail('no paid transcription') };
+  const first = await proposeEpisodeCandidates(options);
+  assert.equal(first.proposed.length, 1);
+  assert.equal(first.proposed[0].kind, 'listened');
+  assert.equal(first.proposed[0].transcript_origin, 'provider_transcript');
+  assert.equal(first.transcribed_today, 0);
+  const job = jobs.find(j => j.input.job_id === first.proposed[0].job_id);
+  assert.equal(job.input.manual_only, true);
+  assert.equal(job.input.request.publication_intent, 'final_approval_required');
+  assert.equal(job.input.request.author_notes, '');
+  assert.match(job.input.request.brief, /^Nachgehört:/);
+  assert.equal(job.input.origin.episode_guid, 'official-audio');
+  assert.ok(job.input.origin.transcript.text.includes('Belegter Wortlaut'));
+  assert.equal(first.feed_errors[0].fallback, 'official_podcast');
+  const second = await proposeEpisodeCandidates(options);
+  assert.equal(second.proposed.length, 0);
+  assert.equal(jobs.length, 2, 'only one new private job');
+  assert.equal(observations.get(`github-episode-day:${now.slice(0, 10)}`).proposed, 1);
+});
+
 test('audio billing refusals use the existing classifier; rate limits and server errors stay distinct', async () => {
   const fs = await import('node:fs'), os = await import('node:os'), path = await import('node:path');
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-transcription-billing-test-'));
