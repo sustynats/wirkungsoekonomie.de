@@ -15,6 +15,45 @@ test('an uncertain write is never replayed',async()=>{
   let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return new Response('not-json');}});
   await assert.rejects(()=>s.store.put({input:{job_id:'test'}}),e=>e.message==='BRIDGE_REMOTE_INVALID_RESPONSE'&&e.transient_read_failure===false);assert.equal(calls,1);
 });
+test('an uncertain lane acquisition is confirmed by owner readback without replay',async()=>{
+  const calls=[];
+  const s=bridgeSession(env,{fetchImpl:async(_url,init)=>{
+    const op=JSON.parse(init.body).op;calls.push(op);
+    return op==='store.acquire' ? new Response('not-json')
+      : Response.json({ok:true,result:{run_lock:{lane:'import',owner:'12345:1',process_holds_lock:true}}});
+  }});
+  assert.equal(await s.store.acquire('2026-10-12T17:00:00Z','import'),true);
+  assert.deepEqual(calls,['store.acquire','bridge.monitor']);
+});
+test('an uncertain lane acquisition with another owner remains a failure',async()=>{
+  const calls=[];
+  const s=bridgeSession(env,{fetchImpl:async(_url,init)=>{
+    const op=JSON.parse(init.body).op;calls.push(op);
+    return op==='store.acquire' ? new Response('not-json')
+      : Response.json({ok:true,result:{run_lock:{lane:'import',owner:'other:1',process_holds_lock:true}}});
+  }});
+  await assert.rejects(()=>s.store.acquire('2026-10-12T17:00:00Z','import'),/BRIDGE_REMOTE_INVALID_RESPONSE/);
+  assert.deepEqual(calls,['store.acquire','bridge.monitor']);
+});
+test('an uncertain lane acquisition cannot be inferred from an unlocked lane',async()=>{
+  const calls=[];
+  const s=bridgeSession(env,{fetchImpl:async(_url,init)=>{
+    const op=JSON.parse(init.body).op;calls.push(op);
+    return op==='store.acquire' ? new Response('not-json')
+      : Response.json({ok:true,result:{run_lock:{lane:'import',owner:'12345:1',process_holds_lock:false}}});
+  }});
+  await assert.rejects(()=>s.store.acquire('2026-10-12T17:00:00Z','import'),/BRIDGE_REMOTE_INVALID_RESPONSE/);
+  assert.deepEqual(calls,['store.acquire','bridge.monitor']);
+});
+test('authentication failures during acquisition do not trigger owner readback',async()=>{
+  const calls=[];
+  const s=bridgeSession(env,{fetchImpl:async(_url,init)=>{
+    calls.push(JSON.parse(init.body).op);
+    return new Response('access denied',{status:401});
+  }});
+  await assert.rejects(()=>s.store.acquire('2026-10-12T17:00:00Z','import'),/BRIDGE_REMOTE_INVALID_RESPONSE/);
+  assert.deepEqual(calls,['store.acquire']);
+});
 test('unauthorized or forbidden responses and valid application errors are not retried',async()=>{
   for(const status of [401,403,409]){let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return new Response('access denied',{status});}});await assert.rejects(()=>s.monitor(),/BRIDGE_REMOTE_INVALID_RESPONSE/);assert.equal(calls,1);}
   let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return Response.json({ok:false,error:'BRIDGE_RUN_LOCKED'},{status:409});}});
