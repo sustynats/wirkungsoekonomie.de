@@ -109,6 +109,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Normalize current-route discovery before section projections
+        # News ingestion can omit the two current explanation routes from its
+        # sitemap snapshot. Add and validate them before the glossary/archive
+        # generators replace their sections, so both audit passes use the same
+        # route order. The final normalization and strict second-pass diff stay.
+        run: node scripts/quality/sync-sitemap-indexability.mjs
       - name: Capture operational news sources outside #253
         run: node scripts/quality/scope-state-projection-news.mjs capture --snapshot=${{ runner.temp }}/woek-state-news.json
       - name: Apply approved #253 deterministic projections
