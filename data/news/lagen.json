@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-12T10:00:00.000Z",
+  "updated_at": "2026-10-12T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-12-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-12",
+      "window_from": "2026-10-12T10:00:00.000Z",
+      "window_to": "2026-10-12T16:00:00.000Z",
+      "stand": "2026-10-12T16:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 5,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T15:49:07.648Z",
+          "score": 5.7198
+        },
+        {
+          "story_id": "wt-6f4a36659bd48af5",
+          "slug": "in-charlottenburg-sondereinheit-ermittelt-nach-moglicher-sprengstoffexplosion-d48af5",
+          "title": "Laut Berichten: Sondereinheit ermittelt nach lautem Knall in Charlottenburg",
+          "state": "neu",
+          "at": "2026-10-12T15:47:38.115Z",
+          "score": 3.9657
+        },
+        {
+          "story_id": "wt-ee5c52413822d479",
+          "slug": "erhohte-polizeiprasenz-schusse-bei-luneburg-polizei-durchsucht-drei-gebaude-22d479",
+          "title": "Laut stern: Polizei durchsucht drei Gebäude nach Schüssen bei Lüneburg",
+          "state": "neu",
+          "at": "2026-10-12T15:16:45.802Z",
+          "score": 5.8799
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Laut stern: Sami Abu Schehadeh zieht Kandidatur für Knesset-Wahl zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T14:45:37.528Z",
+          "score": 9.5434
+        },
+        {
+          "story_id": "wt-73e57ccffcb14645",
+          "slug": "trump-s-energy-ceasefire-announcement-was-news-for-me-zelensky-b14645",
+          "title": "Laut France 24: Selenskyj überrascht von Trumps Energie-Waffenruhe",
+          "state": "neu",
+          "at": "2026-10-12T14:12:58.845Z",
+          "score": 5.7027
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut dem Tagesspiegel: Ölpreisschock setzt EZB unter möglichen Zinserhöhungsdruck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T12:14:50.006Z",
+          "score": 5.1245
+        },
+        {
+          "story_id": "wt-35dfbf113ba48894",
+          "slug": "angriff-an-schule-in-frankreich-14-jahriger-soll-schulleiter-und-lehrerin-angeschossen-h-a48894",
+          "title": "Laut Tagesspiegel: 14-Jähriger soll Schulleiter und Lehrerin in Frankreich angeschossen haben",
+          "state": "neu",
+          "at": "2026-10-12T11:41:39.190Z",
+          "score": 9.2824
+        },
+        {
+          "story_id": "wt-4dd6029ffce40f69",
+          "slug": "trump-says-russia-and-ukraine-agree-to-energy-ceasefire-e40f69",
+          "title": "Laut France 24: Trump spricht von Energie-Waffenruhe, Selenskyj überrascht",
+          "state": "neu",
+          "at": "2026-10-12T11:10:26.573Z",
+          "score": 5.1957
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-12-mittagslage",
       "slot": "mittagslage",
