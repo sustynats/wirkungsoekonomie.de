@@ -1,0 +1,47 @@
+#shirt-example {max-width:1040px;margin:auto;padding:0 var(--space-gutter) var(--space-7);font-family:var(--font-body);color:var(--text);line-height:1.65}
+#shirt-example .hero {padding:var(--space-8) 0 var(--space-5);background:none}
+#shirt-example h1 {font-size:clamp(2.2rem,5vw,4rem);line-height:1.12;max-width:850px}
+#shirt-example h2 {font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.2}
+#shirt-example h3 {font-size:1.35rem}
+#shirt-example section {padding:var(--space-7) 0;border-top:1px solid var(--line);scroll-margin-top:7rem}
+#shirt-example .eyebrow {color:var(--green-dark);font-weight:750;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+#shirt-example .lede-note {padding:var(--space-4);background:var(--cream);border-left:4px solid var(--gold-deep);font-size:.95rem}
+#shirt-example .cards,#shirt-example .two-col {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-5);margin:var(--space-5) 0}
+#shirt-example .card {background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-5);min-width:0}
+#shirt-example .card.a {border-top:5px solid var(--navy)}
+#shirt-example .card.b {border-top:5px solid var(--green)}
+#shirt-example .big {font-family:var(--font-body);font-size:clamp(2rem,5vw,3rem);font-weight:800;display:block;font-variant-numeric:tabular-nums;line-height:1.2;margin:.5rem 0}
+#shirt-example .letter {font-weight:800;color:var(--green-dark)}
+#shirt-example .micro,#shirt-example .kicker {font-size:.88rem;color:var(--muted)}
+#shirt-example details {margin:var(--space-4) 0;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+#shirt-example summary {padding:var(--space-4);font-weight:700;cursor:pointer}
+#shirt-example .detail {padding:0 var(--space-5) var(--space-4);font-size:1rem}
+#shirt-example .table-scroll {overflow-x:auto;max-width:100%;margin:var(--space-4) 0}
+#shirt-example table {width:100%;border-collapse:collapse;font-size:.94rem}
+#shirt-example th,#shirt-example td {padding:.75rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+#shirt-example th {background:var(--cream)}
+#shirt-example caption {text-align:left;font-weight:700;padding:.75rem 0}
+#shirt-example .eq {font-family:ui-monospace,monospace;font-size:.87rem;overflow-wrap:anywhere;padding:var(--space-4);background:var(--cream);border-radius:var(--radius)}
+#shirt-example .chain {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem;margin:var(--space-5) 0}
+#shirt-example .chain>div {padding:1rem;border:1px solid var(--line);border-radius:var(--radius);font-size:.9rem;overflow-wrap:anywhere}
+#shirt-example .chain b {display:block;color:var(--green-dark);margin-bottom:.5rem}
+#shirt-example .scale {display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.3rem}
+#shirt-example .scale>span {padding:.7rem .2rem;border:1px solid var(--line);text-align:center;border-radius:var(--radius);font-weight:700}
+#shirt-example .scale small {display:block;font-size:.65rem;font-weight:400}
+#shirt-example .controls {display:grid;gap:var(--space-5);padding:var(--space-4);border:1px solid var(--line);border-radius:var(--radius);margin:var(--space-5) 0}
+#shirt-example label {display:block;font-size:.95rem;font-weight:650}
+#shirt-example input[type=range] {width:100%;accent-color:var(--green);min-height:2rem}
+#shirt-example input[type=number],#shirt-example select {font:inherit;width:100%;padding:.7rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+#shirt-example .checkbox {display:flex;gap:.75rem;align-items:flex-start}
+#shirt-example .checkbox input {width:1.25rem;height:1.25rem;flex-shrink:0;margin-top:.3rem}
+#shirt-example .callout,#shirt-example .status {padding:var(--space-4);background:var(--cream);border-left:3px solid var(--green);margin:var(--space-5) 0}
+#shirt-example .item-line {display:flex;justify-content:space-between;gap:var(--space-4);padding:.5rem 0;border-top:1px solid var(--line);font-size:.93rem}
+#shirt-example .item-line b {white-space:nowrap}
+#shirt-example .buttons,#shirt-example .anchor-nav {display:flex;gap:.6rem;flex-wrap:wrap;margin:var(--space-5) 0}
+#shirt-example .button,#shirt-example .anchor-nav a {border:1px solid var(--line);padding:.65rem .85rem;border-radius:var(--radius);background:var(--white);color:var(--navy);font:inherit;font-size:.88rem;cursor:pointer;text-decoration:none}
+#shirt-example .source-list {list-style:none;padding:0}
+#shirt-example .source-list li {border-top:1px solid var(--line);padding:var(--space-4) 0;overflow-wrap:anywhere}
+#shirt-example .source-list p {font-size:.88rem;color:var(--muted)}
+#shirt-example :is(a,button,input,select,summary):focus-visible {outline:3px solid var(--gold-deep);outline-offset:3px}
+@media(max-width:700px){#shirt-example .cards,#shirt-example .two-col{grid-template-columns:1fr}#shirt-example .chain{grid-template-columns:1fr 1fr}#shirt-example .chain>div:last-child{grid-column:1/-1}#shirt-example .hero{padding-top:var(--space-7)}#shirt-example .detail{padding:0 var(--space-4) var(--space-4)}}
+@media print{#shirt-example .buttons,#shirt-example .controls,#shirt-example .anchor-nav{display:none}#shirt-example .card{break-inside:avoid}#shirt-example .hero{padding-top:0}}
