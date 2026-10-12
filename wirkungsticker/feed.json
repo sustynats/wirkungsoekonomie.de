@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-12T14:34:49.859Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-12T15:06:49.455Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/erhohte-polizeiprasenz-schusse-bei-luneburg-polizei-durchsucht-drei-gebaude-22d479/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/erhohte-polizeiprasenz-schusse-bei-luneburg-polizei-durchsucht-drei-gebaude-22d479/",
+      "title": "Laut stern: Polizei durchsucht drei Gebäude nach Schüssen bei Lüneburg",
+      "summary": "Im Raum Lüneburg durchsucht die Polizei laut stern drei Gebäude nach mehreren Schussvorfällen. Mögliche Verbindungen zwischen den Fällen werden geprüft, sind aber nicht belegt.",
+      "date_published": "2026-10-12T14:47:07.000Z",
+      "date_modified": "2026-10-12T14:47:07.000Z",
+      "_woek_released_at": "2026-10-12T15:16:45.802Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/angriff-an-schule-in-frankreich-14-jahriger-soll-schulleiter-und-lehrerin-angeschossen-h-a48894/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/angriff-an-schule-in-frankreich-14-jahriger-soll-schulleiter-und-lehrerin-angeschossen-h-a48894/",
@@ -2978,8 +3009,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
-      "title": "Laut südkoreanischer Regierung: Mine verletzt drei Offiziere schwer",
-      "summary": "Eine südkoreanische Regierung wertet eine Minenexplosion als Verstoß gegen den Waffenstillstand und kündigt Maßnahmen an. Drei Offiziere wurden laut dem einzigen vorliegenden Bericht schwer verletzt; Hergang und Verantwortung bleiben offen.",
+      "title": "Laut südkoreanischer Regierung: Minenexplosion verletzt drei Offiziere schwer",
+      "summary": "Eine Mine verletzt laut einem stern-Bericht drei südkoreanische Offiziere schwer; Seoul bewertet den Vorfall als Bruch des Waffenstillstands. Hergang, Verantwortung und konkrete Reaktion bleiben offen.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -2993,17 +3024,17 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
+          "magnitude": 4,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
           "magnitude": 1,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
+          "magnitude": 4,
           "direction": "negative",
           "status": "potential"
         }
