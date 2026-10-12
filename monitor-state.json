@@ -15,10 +15,19 @@
     },
     "institute": {
       "firstSeen": "2026-10-12T17:20:48.547Z",
+      "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-12T17:36:18.497Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "79d4890a539eb9cfcd98e0e7",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-12T17:20:48.547Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-12",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2581,7 +2590,7 @@
       }
     },
     "last_new_at": "2026-10-12T16:50:45.028Z",
-    "checked_at": "2026-10-12T17:20:48.547Z",
+    "checked_at": "2026-10-12T17:36:18.497Z",
     "last_current_new_at": "2026-10-12T16:50:45.028Z"
   },
   "recovery_attempts": [
