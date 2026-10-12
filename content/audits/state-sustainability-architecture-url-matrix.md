@@ -2,7 +2,7 @@
 
 - Sitemap routes: **5095**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **15121**
+- Extra tracked source HTML not in sitemap: **15125**
 - Routes with non-default #253 action: **3590**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **283**
 
@@ -3893,8 +3893,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1401**
-- Combined matrix items (routes + extra HTML + support): **21617**
+- Tracked support text files inventoried: **1407**
+- Combined matrix items (routes + extra HTML + support): **21627**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3979,6 +3979,7 @@ Signals are review candidates, not automatic errors.
 | `content/glossary/imports/wirkungssteuer-wstg-v3.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | evaluation |
 | `content/glossary/imports/woems-woemm-2.0.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/glossary/terms.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, alternativen, evaluation |
+| `content/grundlagen/WOEK_KERNREFERENZ.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns, alternativen, evaluation |
 | `content/institut/projects.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `content/kompass/compass-answer-templates.json` | support_text | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
 | `content/methodik/data-sources.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
@@ -4421,6 +4422,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/site/build-parlament-info.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/site/build-reference-update.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap |
 | `scripts/site/build-so-wirkt-wirkungsoekonomie.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
+| `scripts/site/build-two-shirts.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/sources/check-evidence-source-archive-links.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/apply-v33-rechenstandard.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/deepen-sprint2.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
@@ -4475,7 +4477,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **21618**
+- Combined reviewed items: **21628**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
