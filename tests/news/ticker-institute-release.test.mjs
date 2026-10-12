@@ -5,10 +5,40 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import test from 'node:test';
+import {syncInstituteProjectsHome} from '../../scripts/lib/institut-projects.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const generator = 'scripts/site/build-institut-projects.mjs';
 const checker = 'scripts/quality/check-institut-projects.mjs';
+
+test('home synchronization preserves the earlier shirt entry and all unrelated sections', t => {
+  const fixture=fs.mkdtempSync(path.join(os.tmpdir(),'institute-home-'));
+  t.after(()=>fs.rmSync(fixture,{recursive:true,force:true}));
+  const file=path.join(fixture,'index.html');
+  const before='<header>Header</header><main><section id="preise-verstehen"><a href="/verstehen/zwei-t-shirts/">T-Shirts</a></section>';
+  const after='<section id="other">Unchanged content</section></main><footer>Footer</footer>';
+  fs.writeFileSync(file,before+'<section id="institutsprojekte"><p>Internal stale counts</p></section>'+after);
+  syncInstituteProjectsHome({file});
+  const result=fs.readFileSync(file,'utf8');
+  assert.ok(result.startsWith(before));assert.ok(result.endsWith(after));
+  assert.equal((result.match(/id="institutsprojekte"/g)||[]).length,1);
+  assert.equal((result.match(/<article class="card">/g)||[]).length,3);
+  assert.doesNotMatch(result,/Internal stale counts|nachgetragenen Aufgaben erledigt/);
+  const first=result;syncInstituteProjectsHome({file});
+  assert.equal(fs.readFileSync(file,'utf8'),first);
+});
+
+test('full home synchronization rejects a missing file or unknown project placement', t => {
+  const fixture=fs.mkdtempSync(path.join(os.tmpdir(),'institute-home-guard-'));
+  t.after(()=>fs.rmSync(fixture,{recursive:true,force:true}));
+  const file=path.join(fixture,'index.html');
+  assert.throws(()=>syncInstituteProjectsHome({file}),/ENOENT/);
+  for(const value of ['<main>No project section</main>', '<section id="institutsprojekte"></section><section id="institutsprojekte"></section>']) {
+    fs.writeFileSync(file,value);
+    assert.throws(()=>syncInstituteProjectsHome({file}),/Expected one existing/);
+    assert.equal(fs.readFileSync(file,'utf8'),value);
+  }
+});
 
 test('fast ticker releases regenerate institute sources before footer, search and publication checks', () => {
   const workflow = fs.readFileSync(path.join(root, '.github/workflows/deploy.yml'), 'utf8');
