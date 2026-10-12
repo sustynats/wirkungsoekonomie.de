@@ -25,24 +25,25 @@
       "firstSeen": "2026-10-12T01:05:53.605Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-12T01:57:03.661Z",
-      "active": false
-    },
     "run": {
       "firstSeen": "2026-10-12T01:57:03.661Z",
       "active": true
     },
     "provider": {
       "firstSeen": "2026-10-12T01:57:03.661Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-12T01:57:03.661Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "d530cef4e462864c2909c5fa",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen. Laufbericht: 2026-10-12T01:41:23.448Z.\nSeit: 2026-10-12T01:57:03.661Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2549,7 +2550,7 @@
       }
     },
     "last_new_at": "2026-10-09T21:06:02.048Z",
-    "checked_at": "2026-10-12T01:57:03.661Z",
+    "checked_at": "2026-10-12T02:05:58.800Z",
     "last_current_new_at": "2026-10-09T14:50:41.530Z"
   },
   "recovery_attempts": [
