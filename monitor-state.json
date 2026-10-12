@@ -13,16 +13,17 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-12T10:06:12.932Z",
-      "active": false
-    },
     "editorial-coverage": {
       "firstSeen": "2026-10-12T10:06:12.932Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "537f54370658b19aa2acb148",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-12T10:06:12.932Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-12",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2550,11 +2551,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/europe-today-trump-claims-ukraine-russia-energy-ceasefire-as-baltics-stay-on-alert-3da5f7/": {
         "first_seen_at": "2026-10-12T07:35:46.361Z",
         "source_at": "2026-10-12T06:01:50.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/trump-touts-surprise-energy-ceasefire-zelensky-says-he-hasn-t-seen-details-moscow-silent-7d0006/": {
+        "first_seen_at": "2026-10-12T10:21:28.356Z",
+        "source_at": "2026-10-12T09:19:32.000Z"
       }
     },
-    "last_new_at": "2026-10-12T07:35:46.361Z",
-    "checked_at": "2026-10-12T10:06:12.932Z",
-    "last_current_new_at": "2026-10-12T07:35:46.361Z"
+    "last_new_at": "2026-10-12T10:21:28.356Z",
+    "checked_at": "2026-10-12T10:21:28.356Z",
+    "last_current_new_at": "2026-10-12T10:21:28.356Z"
   },
   "recovery_attempts": [
     {
