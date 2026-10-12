@@ -1,0 +1,37 @@
+{
+  "releaseTag": "woek-begriffsleitfaden-v1.8-lesefassung-2026-10-12",
+  "date": "2026-10-12",
+  "sourceSuccession": {
+    "content/site/reference-update.json": {
+      "beforeSha256": "d01f1c547d629bb3b303a65b1d37c0ccee521783f45b8a1f6a7d7f0b92286835",
+      "archive": "source-assets/originals/reference-guide-transition-20261012/reference-update.json",
+      "afterSha256": "840ce74c79a90fd6b94aef760b4168e4eafcd25d20806b0db3f5c64e1a325ab2",
+      "pdf": "public/downloads/originals/WOeK_Grundlagen_Fachreferenzen_2026-10-12.pdf",
+      "pdfSha256": "af0476208e8cf89d19177ef85a10edf8f920ac3885a042365ac7af8974a8aec7",
+      "visualReview": "reports/consistency-20261009/guide-reference-pdf-check.json",
+      "visualReviewSha256": "338a7ec13852f185e468977106b89b9d8bdf686d6d737c06cdbbb2e8fbd35169"
+    }
+  },
+  "sources": {
+    "scripts/site/build-reference-update.mjs": "3f14b7e3b1c1c2af1cf767ccee1c88fcc70b5390c99090ffa6a68643ebde7492",
+    "scripts/publications/build-guide-reference-pdf.py": "9f1d790f845f44e11c8f389ce264f52dcce68d57a17a23116ec908438827a7c4"
+  },
+  "files": [
+    {
+      "title": "Begriffsleitfaden v1.8",
+      "description": "Begriffs- und Methodenreferenz, Stand 1. Oktober 2026; Lesefassung vom 12. Oktober 2026.",
+      "path": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf",
+      "sha256": "e0636c0d0e483c04e0fe382007d1fa5743915ecfd27a8a7929d2831571bac48b",
+      "pages": 39,
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-begriffsleitfaden-v1.8-lesefassung-2026-10-12/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf"
+    },
+    {
+      "title": "Grundlagen und Fachreferenzen",
+      "description": "Maßgebliche Fachgrundlagen und Einordnungen zu den Buchkapiteln, Stand 12. Oktober 2026.",
+      "path": "public/downloads/originals/WOeK_Grundlagen_Fachreferenzen_2026-10-12.pdf",
+      "sha256": "af0476208e8cf89d19177ef85a10edf8f920ac3885a042365ac7af8974a8aec7",
+      "pages": 3,
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-begriffsleitfaden-v1.8-lesefassung-2026-10-12/WOeK_Grundlagen_Fachreferenzen_2026-10-12.pdf"
+    }
+  ]
+}

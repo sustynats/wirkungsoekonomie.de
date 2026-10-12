@@ -63,7 +63,7 @@ def main() -> None:
     build_source()
     os.environ.update({
         "WOEK_PUBLICATION_SOURCE": str(GENERATED.relative_to(ROOT)),
-        "WOEK_PUBLICATION_ONLINE": "content/documents/online/woek-begriffsleitfaden-fuehrend.inc",
+        "WOEK_PUBLICATION_ONLINE": "content/documents/online/woek-begriffsleitfaden-v1-7.inc",
         "WOEK_PUBLICATION_PDF": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
         "WOEK_PUBLICATION_TITLE": "Führender Begriffsleitfaden der Wirkungsökonomie",
         "WOEK_PUBLICATION_EDITION": "Version 1.7 · Stand 21. August 2026 · Führendes Referenzdokument",
