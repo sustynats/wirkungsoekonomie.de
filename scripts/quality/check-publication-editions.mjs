@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 import {verifyPublicationHeaderMigration} from '../lib/publication-header-migration.mjs';
+import {matchesGuideReferenceSource,verifyGuideReadingEdition} from '../lib/guide-reading-publication.mjs';
 const manifest=JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json','utf8'));
 const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const hygiene=JSON.parse(fs.readFileSync('assets/data/publication-hygiene-2026-09-06.json','utf8'));
@@ -8,6 +9,7 @@ const navigationMigration=JSON.parse(fs.readFileSync('assets/data/navigation-sou
 function matchesSource(file,expected){
  const actual=hash(file);
  if(actual===expected)return true;
+ if(matchesGuideReferenceSource(file,expected))return true;
  const correction=hygiene.sourceCorrections[file] || hygiene.localFiles[file];
  if(correction?.beforeSha256===expected && correction.afterSha256===actual)return true;
  const migration=navigationMigration.sources[file];
@@ -68,3 +70,5 @@ for(const [source,migration] of Object.entries(navigationMigration.sources)){
  if(!matchesSource(source,migration.beforeSha256))throw new Error(`Header extraction changed a bound publication source: ${source}`);
 }
 console.log('Navigation extraction: original publication source archived; exact header/import-only comparison passed.');
+verifyGuideReadingEdition();
+console.log('Guide v1.8 and reference overview: complete new PDFs, source succession and reviewed pages verified.');
