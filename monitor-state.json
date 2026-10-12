@@ -17,12 +17,17 @@
       "firstSeen": "2026-10-12T17:36:18.497Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-12T22:20:58.597Z",
-      "active": false
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-12T22:35:52.161Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "69032e835427a8d961230461",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-12T22:35:52.161Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-12",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2586,11 +2591,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/huthi-anschlag-aufnahmen-zeigen-gewaltige-explosion-in-flughafen-von-riad-d24a7a/": {
         "first_seen_at": "2026-10-12T18:05:43.489Z",
         "source_at": "2026-10-12T16:22:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/hochwasser-zugang-zu-iguazu-wasserfallen-fur-touristen-gesperrt-2263a8/": {
+        "first_seen_at": "2026-10-12T22:35:52.161Z",
+        "source_at": "2026-10-12T21:08:37.000Z"
       }
     },
-    "last_new_at": "2026-10-12T18:05:43.489Z",
-    "checked_at": "2026-10-12T22:20:58.597Z",
-    "last_current_new_at": "2026-10-12T18:05:43.489Z"
+    "last_new_at": "2026-10-12T22:35:52.161Z",
+    "checked_at": "2026-10-12T22:35:52.161Z",
+    "last_current_new_at": "2026-10-12T22:35:52.161Z"
   },
   "recovery_attempts": [
     {
