@@ -1,8 +1,12 @@
 import {renderSiteHeader} from '../lib/site-shell.mjs';
 import fs from "node:fs";
 import path from "node:path";
-import {renderInstituteProjects} from "../lib/institut-projects.mjs";
+import {renderInstituteProjects,syncInstituteProjectsHome} from "../lib/institut-projects.mjs";
 import "./build-institut-projects.mjs";
+
+// The full institute assembly also updates the existing home cards. The
+// independent project-dossier generator remains usable in partial releases.
+syncInstituteProjectsHome();
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "institut");
