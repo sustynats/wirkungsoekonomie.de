@@ -367,7 +367,27 @@ export async function fetchMediathekEpisodes(show, fetchImpl = fetch, timeoutMs 
 }
 export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toISOString(), { onError = null } = {}) {
   if (show.mediathek) return fetchMediathekEpisodes(show, fetchImpl);
-  const xml = await fetchShowFeed(show, fetchImpl);
+  let xml;
+  try { xml = await fetchShowFeed(show, fetchImpl); }
+  catch (error) {
+    // Ein fehlender Kanalfeed darf die bereits zugeordnete offizielle Audioreihe
+    // nicht verstecken. Nur 404/410, keine Ausweichroute um Zugriffs-/Ratensperren.
+    if (!show.youtube_channel_id || !show.podcast_feed
+      || !['SHOW_FEED_HTTP_404', 'SHOW_FEED_HTTP_410'].includes(error.message)) throw error;
+    let podcast;
+    try { podcast = parseEpisodes(await fetchShowFeed({ ...show, feed: show.podcast_feed }, fetchImpl), show); }
+    catch (podcastError) {
+      onError?.({ show_id: show.id, url: show.podcast_feed, error: String(podcastError.message || podcastError).slice(0, 80) });
+      throw error;
+    }
+    const audio = selectNewEpisodes(podcast, now, { maxAgeDays: show.max_age_days || 14, limit: podcast.length })
+      .filter(e => e.duration >= (show.min_duration_seconds || 900) && /^https:\/\//.test(e.page) && /^https:\/\//.test(e.media));
+    if (!audio.length) throw error;
+    onError?.({ show_id: show.id, url: show.feed, error: error.message, fallback: 'official_podcast' });
+    // RSS-GUID, Originaldatum und Wortlautquellen bleiben erhalten; keine Aussage
+    // ueber ein nicht geprueftes Video. Normale Dedupe-/Wortlaut-/Freigabegates folgen.
+    return audio.map(e => ({ ...e, delivery_kind: 'listened', podcast_basis: e.page }));
+  }
   if (!show.youtube_channel_id) return parseEpisodes(xml, show);
   const candidates = selectNewEpisodes(parseYouTubeFeed(xml, show), now, { maxAgeDays: show.max_age_days || 14, limit: 15 });
   let podcast = [];
