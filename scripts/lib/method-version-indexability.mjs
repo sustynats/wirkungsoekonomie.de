@@ -10,6 +10,11 @@ export const CURRENT_METHOD_ROUTES = [
   "/wirkungsfelder/gesundheit-pflege/dossiers/",
 ];
 
+export const CURRENT_EXPLAINER_ROUTES = [
+  "/verstehen/zwei-t-shirts/",
+  "/verstehen/preise-und-wirkungsfonds/",
+];
+
 // Die aktuelle staatliche Nachhaltigkeitsarchitektur ist kein Methodenpaket.
 // Ihre Glossar-, Register- und Quellenrouten bleiben deshalb separat typisiert,
 // werden aber ebenso verpflichtend in der Sitemap gehalten.
@@ -238,7 +243,8 @@ function routeFromSitemapBlock(block) {
 }
 
 function sitemapEntry(route) {
-  return `  <url><loc>${SITE_ORIGIN}${route}</loc><lastmod>${LASTMOD}</lastmod></url>`;
+  const lastmod = CURRENT_EXPLAINER_ROUTES.includes(route) ? "2026-10-12" : LASTMOD;
+  return `  <url><loc>${SITE_ORIGIN}${route}</loc><lastmod>${lastmod}</lastmod></url>`;
 }
 
 // Remove robots-excluded routes and duplicate locations from a sitemap. The
@@ -247,7 +253,7 @@ function sitemapEntry(route) {
 export function synchronizeSitemapIndexability({
   siteRoot,
   sitemapPath = path.join(siteRoot, "sitemap.xml"),
-  requiredRoutes = [...CURRENT_METHOD_ROUTES, ...CURRENT_STATE_ARCHITECTURE_ROUTES],
+  requiredRoutes = [...CURRENT_METHOD_ROUTES, ...CURRENT_STATE_ARCHITECTURE_ROUTES, ...CURRENT_EXPLAINER_ROUTES],
   excludedRoutes = [],
   write = true,
 } = {}) {
