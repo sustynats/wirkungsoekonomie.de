@@ -81,6 +81,7 @@ test('another real source and growing context yield to evidence before optional 
   const prompt = buildAnalysisPrompt([fixture]);
   assert.ok(prompt.length <= 44000);
   assert.match(prompt, /In diesem Durchlauf visuals:null/);
+  assert.doesNotMatch(prompt, /currentness\.followup_defaults/);
   assert.match(prompt, /media_impact/);
   assert.match(prompt, /Politisch symmetrisch prüfen/);
   assert.match(prompt, /drei voneinander unabhängige Pflichtgates/);
@@ -151,6 +152,77 @@ test('repeated long source URLs are losslessly factored with every reference ret
   const packed=serializeEvidencePackets([story],true);
   assert.ok(packed.length<JSON.stringify([story]).length);
   assert.deepEqual(expandPacketTransport(JSON.parse(packed)[0]),story);
+});
+
+test('due followup tables preserve every historical record, explicit null and missing field', () => {
+  const repeated = 'Die angekündigte Änderung ist noch nicht unabhängig nachgewiesen.';
+  const story = { sources: [{ source_id: 'source-one', url: 'https://example.org/one', evidence_segments: [] }],
+    currentness: { checked_at: '2026-10-12T03:43:13.340Z', matching_current_feed_items: 0, followups_due: [
+      { followup_id: 'followup-one', story_id: 'wt-living-file', claim: repeated, expected_by: null, status: 'announced', details: { unresolved: true } },
+      { followup_id: 'followup-two', story_id: 'wt-living-file', claim: repeated, expected_by_evidence_hash: null, status: 'announced', optional: undefined },
+    ] } };
+  const before = structuredClone(story);
+  const packed = JSON.parse(serializeEvidencePackets([story], true))[0];
+  assert.equal(packed.currentness.followups_due_table.format, 'cells-v2');
+  assert.equal(packed.currentness.followups_due_table.rows.length, 2);
+  assert.deepEqual(expandPacketTransport(packed), JSON.parse(JSON.stringify(story)));
+  assert.deepEqual(story, before);
+  for (const followups_due of [[], null]) {
+    const empty = { currentness: { followups_due } };
+    assert.deepEqual(expandPacketTransport(JSON.parse(serializeEvidencePackets([empty], true))[0]), empty);
+  }
+  const legacy = { currentness: { checked_at: '2026-10-12', followups_due: story.currentness.followups_due } };
+  assert.deepEqual(expandPacketTransport(legacy), legacy);
+});
+
+test('followup defaults require unanimity and preserve minority status, zero, false and absence', () => {
+  const story = { currentness: { followups_due: Array.from({ length: 42 }, (_, i) => ({
+    followup_id: `distinct-${i}`, story_id: 'wt-common-story', source_id: 'same-source',
+    expected_by_evidence_hash: null, enabled: false, count: 0, empty: '',
+    status: i === 41 ? 'resolved' : 'scheduled', ...(i === 0 ? { expected_by: null } : {}),
+    ...(i === 1 ? { optional: undefined } : {}),
+  })) } };
+  const before = structuredClone(story);
+  const [packed] = JSON.parse(serializeEvidencePackets([story], true));
+  assert.deepEqual(packed.currentness.followup_defaults, {
+    story_id: 'wt-common-story', source_id: 'same-source', expected_by_evidence_hash: null, enabled: false, count: 0, empty: '',
+  });
+  assert.ok(packed.currentness.followups_due_table.columns.includes('status'));
+  assert.ok(packed.currentness.followups_due_table.columns.includes('expected_by'));
+  assert.deepEqual(expandPacketTransport(packed), JSON.parse(JSON.stringify(story)));
+  assert.deepEqual(story, before);
+  const identical = { currentness: { followups_due: Array.from({ length: 4 }, () => ({ status: 'scheduled', expected_by: null })) } };
+  assert.deepEqual(expandPacketTransport(JSON.parse(serializeEvidencePackets([identical], true))[0]), identical);
+});
+
+test('42 due followups fit the unchanged prompt budget without pruning history or evidence', () => {
+  const sources = [{ source_id: 'source-one', url: 'https://example.org/one', title: 'Angekündigte Entscheidung bleibt offen',
+    summary: 'Die Quelle berichtet über eine Ankündigung. Ob sie umgesetzt wird, ist bislang offen.', published_at: '2026-09-26T09:28:00Z' }];
+  const candidate = { story_id: 'wt-living-file', title: sources[0].title, sources,
+    currentness: { checked_at: '2026-10-12T03:43:13.340Z', compared_current_feed_items: 832, matching_current_feed_items: 0,
+      followups_due: Array.from({ length: 42 }, (_, i) => ({
+        followup_id: `followup-${String(i).padStart(16, '0')}`, source_id: 'source-one', story_id: 'wt-living-file',
+        claim: `Behauptung ${i}: Die Entscheidung wurde angekündigt, ihre Umsetzung bleibt offen. Ein unabhängiger Nachweis fehlt bislang.`,
+        measurable_indicator: `Prüfgröße ${i}: ${'Ein unabhängiger Umsetzungsnachweis ist erforderlich. '.repeat(2)}`,
+        expected_by: null, expected_by_evidence_hash: null, announced_at: '2026-09-26T09:28:00.000Z',
+        follow_up_date: '2026-10-01T00:00:00.000Z', status: 'announced',
+      })) } };
+  candidate.claims = claimLedgerFor(sources, candidate.story_id, candidate.currentness.checked_at);
+  candidate.preanalysis = preAnalyzeStory(candidate);
+  const before = structuredClone(candidate);
+  const prompt = buildAnalysisPrompt([candidate]);
+  assert.ok(prompt.length <= 44000);
+  assert.match(prompt, /currentness\.followup_defaults ergänzen fehlende Felder jeder followups_due-Zeile/);
+  const [packed] = JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0]);
+  assert.equal(packed.currentness.followups_due_table.rows.length, 42);
+  const packet = expandPacketTransport(packed);
+  assert.deepEqual(packet.currentness, candidate.currentness);
+  assert.deepEqual(packet.sources.map(source => [source.source_id, source.url]), sources.map(source => [source.source_id, source.url]));
+  assert.equal(packet.claims.length, candidate.claims.length);
+  assert.deepEqual(candidate, before);
+  const huge = structuredClone(candidate);
+  huge.currentness.followups_due[0].claim = 'Unersetzbare eigenständige Angabe. '.repeat(2000);
+  assert.throws(() => buildAnalysisPrompt([huge]), error => error.message === 'AI_INPUT_TOO_LARGE' && error.requestAttempts === 0);
 });
 test('an authenticated budget refusal is not retried or charged as an unknown provider failure',async()=>{
   let calls=0;
