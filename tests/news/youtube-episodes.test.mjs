@@ -40,6 +40,43 @@ test('a podcast fallback requires the same title, a near date and matching durat
   assert.equal(matchingPodcastEpisode(episode, [audio], show), audio);
   for (const change of [{ title: 'Anderes Thema' }, { published_at: '2026-09-20' }, { duration: 90 }]) assert.equal(matchingPodcastEpisode(episode, [{ ...audio, ...change }], show), null);
 });
+test('Mediathek episode without captions uses only its matched official podcast audio', async () => {
+  const s = { id: 'caren-miosga', show_name: 'Caren Miosga', kind: 'watched', provider: 'NDR',
+    mediathek: { topic: 'Caren Miosga', channel: 'NDR' }, podcast_feed: 'https://www.ndr.de/podcast/carenmiosga146.xml', min_duration_seconds: 2400 };
+  const title = 'Wie kommt die Regierung aus der Krise, Herr Söder?';
+  const page = 'https://www.ardmediathek.de/video/miosga-11-10';
+  const audioPage = 'https://www.ndr.de/fernsehen/sendungen/caren-miosga/miosga-11-10.html';
+  const row = { title, timestamp: Date.parse('2026-10-11T19:45:00Z') / 1000, duration: 3593,
+    url_website: page, url_video_low: 'https://cdn.example/miosga.mp4', url_subtitle: '', id: 'miosga-11-10' };
+  const item = (name, duration = '00:59:57') => `<item><title>${name}</title><link>${audioPage}</link><pubDate>Sun, 11 Oct 2026 21:45:00 +0200</pubDate><itunes:duration>${duration}</itunes:duration><enclosure url="https://cdn.example/miosga.mp3"/></item>`;
+  const podcast = `<rss>${item('Anderes Thema')}${item(title)}</rss>`;
+  const fetchImpl = async (url, init) => init?.method === 'POST'
+    ? { ok: true, json: async () => ({ result: { results: [row] } }) }
+    : { ok: true, text: async () => podcast };
+  const [episode] = await showEpisodes(s, fetchImpl);
+  assert.equal(episode.page, page, 'the video identity remains stable for deduplication');
+  assert.equal(episode.media, 'https://cdn.example/miosga.mp3');
+  assert.equal(episode.podcast_basis, audioPage);
+  assert.equal(episode.delivery_kind, 'listened', 'audio-only analysis is not labelled Nachgesehen');
+  const { job } = buildEpisodeRequest(episode, s, { owner: '1234567890123456', now: '2026-10-12T20:00:00Z' });
+  assert.equal(job.input.request.kind, 'listened');
+  assert.ok(job.input.request.links.includes(audioPage));
+  assert.match(job.input.request.brief, /Zeitmarken gelten dann für die Podcastfassung/);
+  const [withoutMatch] = await showEpisodes(s, async (url, init) => init?.method === 'POST'
+    ? { ok: true, json: async () => ({ result: { results: [row] } }) }
+    : { ok: true, text: async () => `<rss>${item('Anderes Thema')}</rss>` });
+  assert.equal(withoutMatch.media, row.url_video_low, 'an unrelated audio item cannot replace the video');
+  const [ambiguous] = await showEpisodes(s, async (url, init) => init?.method === 'POST'
+    ? { ok: true, json: async () => ({ result: { results: [row] } }) }
+    : { ok: true, text: async () => `<rss>${item(title)}${item(title)}</rss>` });
+  assert.equal(ambiguous.media, row.url_video_low, 'ambiguous audio matches cannot replace the video');
+  const [withCaptions] = await showEpisodes(s, async (url, init) => {
+    if (init?.method === 'POST') return { ok: true, json: async () => ({ result: { results: [{ ...row, url_subtitle: 'https://cdn.example/miosga.vtt' }] } }) };
+    assert.fail('a captioned episode needs no audio fallback');
+  });
+  assert.equal(withCaptions.delivery_kind, undefined);
+  assert.equal(withCaptions.subtitle_url, 'https://cdn.example/miosga.vtt');
+});
 test('three requested series use existing private approval route; no logos or automatic publication', () => {
   const registered = loadShows().filter((s) => s.youtube_channel_id);
   assert.equal(registered.length, 3);
