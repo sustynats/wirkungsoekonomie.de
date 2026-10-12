@@ -229,7 +229,12 @@ def terminology_guide_provenance() -> None:
         if "Führender Begriffsleitfaden der Wirkungsökonomie v1.0" in text or "Führender Begriffsleitfaden der Wirkungsökonomie v1.2" in text:
             raise AssertionError(f"{rel}: obsolete guide is still presented as a current source")
 
-    require(CANONICAL_BENCHMARK, ["WÖk-Masterregister v1.5", CURRENT_GUIDE_LABEL])
+    # This published benchmark records the terminology used on 21 August.
+    # Updating today's leading guide must not rewrite its historical source
+    # citation or invalidate the PDF of the unchanged article.
+    require(CANONICAL_BENCHMARK, ["WÖk-Masterregister v1.5", "WÖk-Begriffsleitfaden führend v1.7", 'property="article:published_time" content="2026-08-21T10:30:00+02:00"'])
+    if CURRENT_GUIDE_LABEL in read(CANONICAL_BENCHMARK):
+        raise AssertionError("published August benchmark was silently assigned a later terminology source")
     # The v1.5 register source catalogue records its release-time terminology
     # baseline v1.6. It is provenance, not a competing current-guide surface.
     require("woek-id-register/quellen/index.html", ["Quellenkatalog v1.5", "Begriffsleitfaden der Wirkungsökonomie v1.6", "WÖk Master Items v1.5"])

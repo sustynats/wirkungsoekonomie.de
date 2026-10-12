@@ -29,7 +29,6 @@ CURRENT_GUIDE_SURFACES = [
     "fuer/wirkungseinkommen.html",
     "fuer/wissenschaft-forschung.html",
     "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
-    "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
 ]
 REQUIRED_GLOSSARY_ROUTES = [
     "/begriffe/7-bundeshaushaltsordnung/",
