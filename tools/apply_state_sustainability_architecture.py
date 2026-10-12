@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "state-sustainability-architecture-20260821"
 MATERIALITY_MARKER = "state-sustainability-materiality-scope-20260821"
-CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.7"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.8"
 CURRENT_GUIDE_SURFACES = [
     "fuer/akademie.html",
     "fuer/buergerinnen.html",
@@ -181,10 +181,12 @@ def sync_current_guide_label(rel: str) -> bool:
         return False
     text = path.read_text(encoding="utf-8")
     updated = text.replace("WÖk-Begriffsleitfaden führend v1.6", CURRENT_GUIDE_LABEL)
+    updated = updated.replace("WÖk-Begriffsleitfaden führend v1.7", CURRENT_GUIDE_LABEL)
     updated = updated.replace(
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.6",
-        "Führender Begriffsleitfaden der Wirkungsökonomie v1.7",
+        "Führender Begriffsleitfaden der Wirkungsökonomie v1.8",
     )
+    updated = updated.replace("Führender Begriffsleitfaden der Wirkungsökonomie v1.7", "Führender Begriffsleitfaden der Wirkungsökonomie v1.8")
     if updated == text:
         return False
     path.write_text(updated, encoding="utf-8")
