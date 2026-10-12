@@ -1,7 +1,32 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-11T16:00:00.000Z",
+  "updated_at": "2026-10-12T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-12-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-12",
+      "window_from": "2026-10-11T16:00:00.000Z",
+      "window_to": "2026-10-12T04:00:00.000Z",
+      "stand": "2026-10-12T04:00:00.000Z",
+      "headline": "Das ist die eine Entwicklung, die seit gestern Abend wirkungsrelevant geworden ist.",
+      "counts": {
+        "total": 1,
+        "neu": 1,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-9ed774261dd327be",
+          "slug": "krieg-gegen-die-ukraine-selenskyj-erklart-bereitschaft-zu-neuwahlen-im-falle-einer-60-ta-d327be",
+          "title": "Laut Deutschlandfunk: Selenskyj erklärt Bereitschaft zu Neuwahlen bei 60-tägiger Waffenruhe",
+          "state": "neu",
+          "at": "2026-10-12T02:54:13.087Z",
+          "score": 5.9086
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-11-abendlage",
       "slot": "abendlage",
