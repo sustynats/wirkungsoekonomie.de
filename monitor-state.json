@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-12T11:20:49.043Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2549,7 +2553,7 @@
       }
     },
     "last_new_at": "2026-10-12T10:21:28.356Z",
-    "checked_at": "2026-10-12T11:06:15.169Z",
+    "checked_at": "2026-10-12T11:20:49.043Z",
     "last_current_new_at": "2026-10-12T10:21:28.356Z"
   },
   "recovery_attempts": [
