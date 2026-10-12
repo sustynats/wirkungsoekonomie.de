@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "title": "Zwei T-Shirts. Neue Preise. Andere Anreize.",
+    "version": "0.2",
+    "date": "2026-10-09",
+    "status": "Lernmodell mit Belastung und Fondsentlastung; keine rechtliche Freigabe",
+    "model_author": "Natalie Weber",
+    "numeric_data_status": "Sämtliche Produkt-, Preis- und Lohnwerte sind erfundene Lernannahmen. Keine realen Unternehmensdaten.",
+    "classification": "NACE Rev. 2.1; vorhandene Legacy-NACE-Zuordnungen im WÖk-Register sind nicht automatisch migriert."
+  },
+  "products": [
+    {
+      "id": "A",
+      "label": "T-Shirt A",
+      "cost_eur": 8,
+      "mass_kg": 0.2,
+      "recycled_fraction": 0,
+      "climate_stages_kg": [
+        2,
+        1,
+        3,
+        1,
+        1
+      ],
+      "batch_units": 1000,
+      "batch_input_kg": 250,
+      "batch_recycled_kg": 0,
+      "water_withdrawal_ml": 0.1,
+      "water_discharge_ml": 0.07,
+      "employees": 100,
+      "employees_living_wage": 50,
+      "cost_stages_eur": [
+        1.5,
+        1.2,
+        2.3,
+        3
+      ]
+    },
+    {
+      "id": "B",
+      "label": "T-Shirt B",
+      "cost_eur": 10,
+      "mass_kg": 0.2,
+      "recycled_fraction": 0.75,
+      "climate_stages_kg": [
+        1,
+        0.6,
+        0.8,
+        0.6,
+        0.4
+      ],
+      "batch_units": 1000,
+      "batch_input_kg": 250,
+      "batch_recycled_kg": 187.5,
+      "water_withdrawal_ml": 0.06,
+      "water_discharge_ml": 0.045,
+      "employees": 100,
+      "employees_living_wage": 90,
+      "cost_stages_eur": [
+        2,
+        1.8,
+        3.2,
+        3
+      ]
+    }
+  ],
+  "demo_policy": {
+    "module_id": "LEHRMODELL-FASER-01",
+    "legal_status": "Kein geltendes Recht. Kein verabschiedeter WÖk-Tarif. Keine automatische Freigabe durch diese Demonstration.",
+    "unit": "EUR/kg nicht privilegierter Primärfaser im fertigen, vergleichbaren T-Shirt",
+    "rate_eur_per_kg": 20,
+    "unlevied_virgin_fraction": 0.25,
+    "same_margin_eur": 4,
+    "vat_rate": 0.19,
+    "common_net_selling_price_eur": 14,
+    "formula": "Abgabe = Satz × max(0, Primärfasermasse - Freimengenanteil × Produktfasermasse)",
+    "scope": "Einmalige Erstbereitstellung im betrachteten Absatzmarkt; importierte Vorprodukte liefern Daten, kein zusätzlicher gleicher Aufschlag beim Grenzübertritt.",
+    "activation": "Aktivierung und Zuordnung des Schuldners bedürfen eines eigenen zulässigen Gesetzes.",
+    "calibration": "20 EUR/kg und 25 % Freianteil sind veränderbare Rechenannahmen. Sie stammen weder aus UN/GRI noch aus einem geltenden Steuertarif oder dem Masterregister.",
+    "fund": {
+      "quantities": [
+        100,
+        100
+      ],
+      "reserve_fraction": 0.2,
+      "administration_cost_eur": 0,
+      "other_funds_eur": 0,
+      "pass_through": 1,
+      "eligibility_assumed": [
+        false,
+        true
+      ],
+      "status": "Neue Lehrregel, keine bestehende Auszahlungsnorm",
+      "formula": "Gleicher Lernsatz je berechtigter zurückgewonnener Fasermasse, begrenzt auf Kaufbetrag und verfügbares Periodenbudget",
+      "eligibility_status": "Ausreichend geprüftes Gesamtprofil bei B als Lehrannahme; kein Schluss aus Rezyklatanteil oder den unvollständigen Beispieldaten"
+    }
+  },
+  "stages": [
+    {
+      "name": "Fasern anbauen oder zurückgewinnen",
+      "nace": "01.16",
+      "label": "Anbau von Faserpflanzen",
+      "note": "01.16 betrifft den Anbau frischer Fasern, nicht das Recycling. Die passende Recyclingaktivität ist fallbezogen gesondert zu klassifizieren."
+    },
+    {
+      "name": "Garn spinnen",
+      "nace": "13.10",
+      "label": "Spinnstoffaufbereitung und Spinnerei"
+    },
+    {
+      "name": "Jerseystoff herstellen",
+      "nace": "13.91",
+      "label": "Herstellung von gewirktem und gestricktem Stoff"
+    },
+    {
+      "name": "Stoff färben und veredeln",
+      "nace": "13.30",
+      "label": "Veredlung von Textilien"
+    },
+    {
+      "name": "T-Shirt herstellen",
+      "nace": "14.10",
+      "label": "Herstellung von Bekleidung aus gewirktem und gestricktem Stoff",
+      "note": "Zuordnung des hier angenommenen gestrickten Jerseyprodukts. Die tatsächliche Tätigkeit und die Erläuterungen der Klassifikation bleiben maßgeblich."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "title": "Eurostat: NACE - Übersicht",
+      "url": "https://ec.europa.eu/eurostat/web/nace",
+      "role": "Version und Funktion der Wirtschaftszweigklassifikation"
+    },
+    {
+      "id": "E2",
+      "title": "NACE Rev. 2.1: Verordnung (EU) 2023/137, Anhang",
+      "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R0137",
+      "role": "Codes 01.16, 13.10, 13.30, 13.91, 14.10; keine Wirkungsbewertung"
+    },
+    {
+      "id": "E3",
+      "title": "Europäische Kommission: Combined Nomenclature",
+      "url": "https://taxation-customs.ec.europa.eu/customs/common-customs-tariff-cct/tariff-classification-goods/combined-nomenclature_en",
+      "role": "Unterscheidung Waren-/Zollklassifikation und Wirtschaftszweigklassifikation. Konkrete Warennummer nicht ohne Produkteigenschaften vergeben."
+    },
+    {
+      "id": "E4",
+      "title": "GRI 301: Materials 2016, Angaben 301-1 und 301-2",
+      "url": "https://www.globalreporting.org/publications/documents/english/gri-301-materials-2016/",
+      "role": "Materialinput und Rezyklatanteil auf Organisationsebene. Produktzuordnung benötigt zusätzliche Nachweise."
+    },
+    {
+      "id": "E5",
+      "title": "GRI 303: Water and Effluents 2018, Angaben 303-3, 303-4, 303-5",
+      "url": "https://www.globalreporting.org/publications/documents/english/gri-303-water-and-effluents-2018",
+      "role": "Entnahme, Einleitung, Verbrauch und Standortkontext; kein universeller Schadenswert pro Liter"
+    },
+    {
+      "id": "E6",
+      "title": "GRI 305: Emissions 2016, Angaben 305-1 bis 305-3",
+      "url": "https://www.globalreporting.org/publications/documents/english/gri-305-emissions-2016/",
+      "role": "Organisations- und Wertschöpfungskettenemissionen; Produktfußabdruck nicht ohne Zurechnung ableiten"
+    },
+    {
+      "id": "E7",
+      "title": "GHG Protocol: Product Life Cycle Accounting and Reporting Standard",
+      "url": "https://ghgprotocol.org/product-standard",
+      "role": "Produktbezogene Bilanzgrenze, Material- und Prozesszuordnung; Vergleich braucht passende Produktregeln"
+    },
+    {
+      "id": "E8",
+      "title": "GRI 414: Supplier Social Assessment 2016, insbesondere 414-2",
+      "url": "https://www.globalreporting.org/publications/documents/english/gri-414-supplier-social-assessment-2016/",
+      "role": "Lieferantenbewertung und soziale Auswirkungen; keine automatische Living-Wage-Quote und kein Wirksamkeitsbeweis aus Auditquoten"
+    },
+    {
+      "id": "E9",
+      "title": "GRI 403: Occupational Health and Safety 2018, insbesondere 403-9",
+      "url": "https://www.globalreporting.org/publications/documents/english/gri-403-occupational-health-and-safety-2018/",
+      "role": "Arbeitsunfälle und Bezugsstunden; kein automatischer Unfallwert je T-Shirt"
+    },
+    {
+      "id": "E10",
+      "title": "GRI: Aktualisierte Klima- und Energiestandards",
+      "url": "https://www.globalreporting.org/standards/standards-development/topic-standard-for-climate-change-and-energy/",
+      "role": "GRI 102/103 veröffentlicht 2025, wirksam ab Januar 2027; Berichtsfassung und Zeitpunkt offenlegen"
+    },
+    {
+      "id": "E11",
+      "title": "UN: SDG 6",
+      "url": "https://sdgs.un.org/goals/goal6",
+      "role": "Zielbezüge 6.3 und 6.4, keine Produktzertifizierung"
+    },
+    {
+      "id": "E12",
+      "title": "UN: SDG 8",
+      "url": "https://sdgs.un.org/goals/goal8",
+      "role": "Zielbezüge 8.5, 8.7 und 8.8"
+    },
+    {
+      "id": "E13",
+      "title": "UN: SDG 12",
+      "url": "https://sdgs.un.org/goals/goal12",
+      "role": "Zielbezüge 12.2, 12.4 und 12.5"
+    },
+    {
+      "id": "E14",
+      "title": "UN: SDG 13",
+      "url": "https://sdgs.un.org/goals/goal13",
+      "role": "Klimabezug; 13.2 ist eine politische Zielvorgabe, kein T-Shirt-Messstandard"
+    },
+    {
+      "id": "E15",
+      "title": "Mehrwertsteuersystemrichtlinie 2006/112/EG, konsolidiert",
+      "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02006L0112-20250414",
+      "role": "Art. 73/78, 168 und 401: Bemessungsgrundlage, Vorsteuer und Grenzen weiterer Abgaben"
+    },
+    {
+      "id": "E16",
+      "title": "EU-Richtlinie 2025/1892: Textilien und erweiterte Herstellerverantwortung",
+      "url": "https://eur-lex.europa.eu/eli/dir/2025/1892/oj/eng",
+      "role": "Realer sektorspezifischer Anschluss. Keine Rechtsgrundlage für das gesamte hier entworfene Abgabenmodell."
+    },
+    {
+      "id": "E17",
+      "title": "WTO: GATT, insbesondere Artikel II und III",
+      "url": "https://www.wto.org/english/docs_e/legal_e/gatt47_e.htm",
+      "role": "Inländerbehandlung und Abgrenzung zum Zoll; keine pauschale Freigabe produktionsbezogener Wirkungsabgaben"
+    },
+    {
+      "id": "E18",
+      "title": "AEUV Artikel 110",
+      "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:12016E110",
+      "role": "Keine diskriminierende inländische Besteuerung gleichartiger Waren anderer Mitgliedstaaten"
+    },
+    {
+      "id": "W1",
+      "title": "Begriffsleitfaden v1.8, 1. Oktober 2026",
+      "url": "",
+      "role": "Projektquelle: Definitionen, getrennte Datenrollen, Nichtkompensation, IOOI und SDG+"
+    },
+    {
+      "id": "W2",
+      "title": "WStG 3.0, Gesamtneufassung 2026, §§ 59, 65-67",
+      "url": "https://wirkungsoekonomie.de/bibliothek/wirkungssteuer-wstg-3-0/",
+      "role": "Projektquelle: vorgeschlagene steuerrechtliche Architektur; kein geltendes Gesetz"
+    },
+    {
+      "id": "W3",
+      "title": "WÖk-Registerauszug v1.5, Snapshot vom 9. Oktober 2026",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/assets/data/woek-id-register.json",
+      "role": "Exakt entnommene Kandidatenkennungen und offener Validierungsstatus; kein Beleg eines vollständig fachlich freigegebenen Registers."
+    },
+    {
+      "id": "E19",
+      "title": "Umsatzsteuergesetz § 10 Absatz 1",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__10.html",
+      "role": "Preisbezogene Subventionen als Gegenleistung; keine Freigabe des Fondsmoduls"
+    },
+    {
+      "id": "W4",
+      "title": "Kernreferenz v1.1: Preise und Wirkungsfonds",
+      "url": "/verstehen/preise-und-wirkungsfonds/",
+      "role": "Architektur von Kaufkraftschutz und Wirkungsfonds; keine Auszahlungsformel je Shirt"
+    }
+  ]
+}
