@@ -60,6 +60,24 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch,
     }
   }
   const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
+  // A gateway can truncate the response after Oracle has committed the lane
+  // acquisition. Never replay that uncertain write. A read-only monitor can
+  // establish whether this exact workflow owns the still-held lane instead.
+  store.acquire = async (...args) => {
+    try { return await request('store.acquire', args); }
+    catch (error) {
+      if (error.message !== 'BRIDGE_REMOTE_INVALID_RESPONSE'
+        || error.operation !== 'store.acquire'
+        || !(error.http_status === 200 || error.http_status >= 500)) throw error;
+      let observed;
+      try { observed = await request('bridge.monitor'); }
+      catch { throw error; }
+      const lane = env.WOEK_NEWS_BRIDGE_PHASE === 'discovery' ? 'discovery' : 'import';
+      if (observed?.run_lock?.lane === lane && observed.run_lock.owner === owner
+        && observed.run_lock.process_holds_lock === true) return true;
+      throw error;
+    }
+  };
   const jobPages = async op => {
     const jobs = [], cursors = new Set(); let after = '';
     for (;;) {
