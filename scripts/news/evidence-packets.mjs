@@ -50,6 +50,18 @@ function packTransport(story) {
   // Match normal JSON omission semantics before producing positional cells:
   // an undefined property is absent, not a real null value.
   story = JSON.parse(JSON.stringify(story));
+  const followups = story.currentness?.followups_due;
+  if (Array.isArray(followups) && followups.length >= 4) {
+    // Unanimous scalar values only: absence is never inferred from null. This
+    // removes repeated metadata, not distinct claims, dates or statuses.
+    const defaults = Object.fromEntries(Object.entries(followups[0]).filter(([key, value]) =>
+      (value === null || ['string', 'number', 'boolean'].includes(typeof value))
+      && followups.every(row => Object.hasOwn(row, key) && row[key] === value)));
+    if (Object.keys(defaults).length) {
+      story.currentness.followup_defaults = defaults;
+      story.currentness.followups_due = followups.map(row => Object.fromEntries(Object.entries(row).filter(([key]) => !Object.hasOwn(defaults, key))));
+    }
+  }
   const counts = new Map();
   function count(value, key) {
     if (typeof value === 'string' && value.length >= 16) counts.set(value, (counts.get(value) || 0) + 1);
@@ -85,17 +97,21 @@ function packTransport(story) {
   if (evidence.length) result.evidence = evidence;
   // Raw cells remove an unnecessary wrapper per value. Explicit nulls have a
   // separate presence bitmap; absent and null never become interchangeable.
-  for (const key of ['sources', 'claims', 'evidence', 'related_ticker_history']) {
-    if (!result[key]?.length) continue;
-    const columns = [...new Set(result[key].flatMap(row => Object.keys(row)))];
+  const tables = ['sources', 'claims', 'evidence', 'related_ticker_history'].map(key => [result, key]);
+  // Due followups grow with a living file too. Pack only the transport shape;
+  // never drop historical records, resolve their status or change their IDs.
+  if (Array.isArray(result.currentness?.followups_due)) tables.push([result.currentness, 'followups_due']);
+  for (const [target, key] of tables) {
+    if (!target[key]?.length) continue;
+    const columns = [...new Set(target[key].flatMap(row => Object.keys(row)))];
     const present_nulls = [];
-    const rows = result[key].map((row, r) => columns.map((column, c) => {
+    const rows = target[key].map((row, r) => columns.map((column, c) => {
       if (!Object.hasOwn(row, column)) return null;
       if (row[column] === null) present_nulls.push([r, c]);
       return row[column];
     }));
-    result[`${key}_table`] = { format: 'cells-v2', columns, rows, ...(present_nulls.length ? { present_nulls } : {}) };
-    delete result[key];
+    target[`${key}_table`] = { format: 'cells-v2', columns, rows, ...(present_nulls.length ? { present_nulls } : {}) };
+    delete target[key];
   }
   return result;
 }
@@ -112,15 +128,22 @@ export function expandPacketTransport(packed) {
   }
   const result = expand(packed);
   delete result.text_pool;
-  for (const key of ['sources', 'claims', 'evidence', 'related_ticker_history']) {
-    const table = result[`${key}_table`];
+  const tables = ['sources', 'claims', 'evidence', 'related_ticker_history'].map(key => [result, key]);
+  if (result.currentness?.followups_due_table) tables.push([result.currentness, 'followups_due']);
+  for (const [target, key] of tables) {
+    const table = target[`${key}_table`];
     if (!table) continue;
     const explicitNulls = new Set((table.present_nulls || []).map(([r, c]) => `${r}:${c}`));
-    result[key] = table.rows.map((row, r) => Object.fromEntries(table.columns.flatMap((column, i) =>
+    target[key] = table.rows.map((row, r) => Object.fromEntries(table.columns.flatMap((column, i) =>
       table.format === 'cells-v2'
         ? row[i] === null && !explicitNulls.has(`${r}:${i}`) ? [] : [[column, row[i]]]
         : row[i] === null ? [] : [[column, row[i][0]]])));
-    delete result[`${key}_table`];
+    delete target[`${key}_table`];
+  }
+  if (result.currentness?.followup_defaults) {
+    const { followup_defaults, ...currentness } = result.currentness;
+    result.currentness = { ...currentness,
+      followups_due: currentness.followups_due.map(row => ({ ...followup_defaults, ...row })) };
   }
   if (result.evidence) {
     for (const { source_index, ...segment } of result.evidence) {

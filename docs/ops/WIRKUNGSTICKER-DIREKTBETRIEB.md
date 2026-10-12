@@ -51,6 +51,17 @@ keine Behauptung eines gesehenen Videos. Bei 401/403, Ratenbegrenzung oder
 anderen Zugriffsfehlern greift diese Wiederaufnahme nicht. Fehlender Wortlaut,
 Dubletten, Kosten-/Mengengrenzen und Natalies Schlussfreigabe bleiben bindend.
 
+Ergaenzung vom 12.10.2026: Bei wachsenden Nachrichtenakten werden auch faellige
+Nachverfolgungen (`currentness.followups_due`) in der vorhandenen verlustfreien
+`cells-v2`-Tabellenverpackung uebertragen. Reihenfolge, Kennungen, Wortlaut,
+Quellen, Termine, Status sowie ausdrueckliche Nullwerte bleiben rekonstruierbar;
+einstimmig vorhandene identische Skalarfelder werden einmal als
+`currentness.followup_defaults` gespeichert und je Zeile wieder ergaenzt.
+Fehlende und nullbelegte Felder bleiben verschieden. Kein historischer Eintrag
+wird entfernt oder als erledigt markiert. Alte Pakete
+bleiben lesbar. Die Eingabegroessen-, Quellen-, Kosten- und Publikationsgates
+gelten unveraendert; ein technisch zu grosses Paket loest keinen Anbieteraufruf aus.
+
 Der Worker prüft die letzte persönliche Hauptsektion bereits vor der Übergabe an die
 Redaktionsapp. Archivierte, abgewiesene Antworten können ohne neuen Modellaufruf erneut
 übergeben werden, wenn ausschließlich bestehende technische Normalisierungen genügen
