@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-12T18:40:59.156Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-12T19:23:18.359Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -499,13 +499,14 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/behorden-mindestens-zwolf-tote-und-309-verletzte-bei-angriff-auf-flughafen-riad-a00105/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/behorden-mindestens-zwolf-tote-und-309-verletzte-bei-angriff-auf-flughafen-riad-a00105/",
       "title": "Nach Behördenangaben: Mindestens zwölf Tote und 309 Verletzte bei Angriff auf Flughafen Riad",
-      "summary": "Bei einem Angriff auf den Flughafen von Riad wurden nach Behördenangaben mindestens zwölf Menschen getötet und 309 verletzt. Die Berichte bestätigen den schweren Vorfall, lassen Verantwortlichkeit und weitere Eskalationsschritte aber offen.",
+      "summary": "Bei dem Angriff auf den Flughafen von Riad wurden nach Behördenangaben mindestens zwölf Menschen getötet und 309 verletzt. Der Flughafenbetrieb war beeinträchtigt, während Verantwortlichkeit und weitere Eskalationsschritte offenbleiben.",
       "date_published": "2026-10-10T22:23:02.000Z",
       "date_modified": "2026-10-10T22:23:02.000Z",
       "_woek_released_at": "2026-10-12T05:18:33.982Z",
       "tags": [
         "Gesellschaft",
-        "Politik"
+        "Politik",
+        "Geopolitik"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
@@ -517,11 +518,11 @@
         },
         "planet": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
+          "magnitude": 3,
           "direction": "negative",
           "status": "potential"
         }
@@ -3136,7 +3137,7 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
-      "title": "Laut stern: Explosion einer Mine verletzt drei südkoreanische Offiziere schwer",
+      "title": "Laut stern: Explosion einer Mine im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere schwer",
       "summary": "Eine Mine explodierte laut stern im koreanischen Grenzgebiet und verletzte drei südkoreanische Offiziere schwer. Hergang, Verantwortung und mögliche Reaktionen bleiben im vorliegenden Quellenbestand offen.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
@@ -3151,18 +3152,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 2,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
-          "magnitude": 0,
-          "direction": "neutral",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         }
       }
