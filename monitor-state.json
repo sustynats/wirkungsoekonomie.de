@@ -17,17 +17,34 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-12T05:41:44.688Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-12T05:41:44.688Z",
       "active": true
+    },
+    "run": {
+      "firstSeen": "2026-10-12T06:05:53.453Z",
+      "active": true
+    },
+    "publication": {
+      "firstSeen": "2026-10-12T06:05:53.453Z",
+      "active": false
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-10-11",
+  "outbox": [
+    {
+      "id": "c0649b53d8c9d79b4c27faba",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-10-12T06:05:53.453Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "4cbd6edd1ba704f6f35ecfe4",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-12T06:05:53.453Z"
+    },
+    {
+      "id": "cfd9a2a4e85d0cc81f85677c",
+      "content": "WÖk Tagesbericht · 2026-10-12 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 763 live · 611 aktuelle Lagen und Einzelakten aus 636 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-10-11) 0; heute bisher 3 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-12T05:20:49.668Z; 794 offene Prüfungen, 42 aktive Quellen.\nQueue: 794 offen (594 Kapazität · 2 technisch · 198 redaktionell); Status technical_delay.\nQuellen-Funnel heute: 16806 Feed-Einträge → 271 neu/aktualisiert → 324 Story-Kandidaten → 14194 geeignet → 8 KI → 4 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 350; redaktionelle Quellenbeiträge: 475.\nProduktive Quellen im letzten Lauf: stern, tagesschau-access, WDR.\nEreignischeck (begrenzter Quellenbestand): 26 größere Ereignisse · 2 mit Veröffentlichung · 24 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.00 · heute $0.08 · Monat $13.41.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 103 Erstveröffentlichungen · 471 Aktualisierungen · 1077 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 20.63 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 123 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.020; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €14.24 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Automatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\n⚠ Nachrichten-Warteschlange: 2 technisch blockierte Akte(n); älteste technische Blockade seit 8492 Minuten. Kapazitätswarteschlange: 594; redaktionelle Ablehnungen: 198.\n⚠ Liegengebliebene Redaktionsauftraege: 1 Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit 2026-10-09T21:03:10.095Z; Grund: nicht vermerkt). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.\n⚠ Veröffentlichung: 2 sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.\n⚠ Nachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\n⚠ Redaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-12",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -2537,7 +2554,7 @@
       }
     },
     "last_new_at": "2026-10-12T03:35:53.855Z",
-    "checked_at": "2026-10-12T05:51:16.672Z",
+    "checked_at": "2026-10-12T06:05:53.453Z",
     "last_current_new_at": "2026-10-12T03:35:53.855Z"
   },
   "recovery_attempts": [
