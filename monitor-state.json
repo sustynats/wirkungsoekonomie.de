@@ -15,18 +15,27 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-12T16:06:15.751Z",
-      "active": false
+      "active": true
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-12T16:06:15.751Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-12T16:06:15.751Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "88bc12aa48014c7ebd174fa8",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-12T16:06:15.751Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "a5b50f68900225fa29678c74",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 2 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-12T16:06:15.751Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-12",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2574,11 +2583,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/erhohte-polizeiprasenz-schusse-bei-luneburg-polizei-durchsucht-drei-gebaude-22d479/": {
         "first_seen_at": "2026-10-12T15:50:51.834Z",
         "source_at": "2026-10-12T14:47:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/in-charlottenburg-sondereinheit-ermittelt-nach-moglicher-sprengstoffexplosion-d48af5/": {
+        "first_seen_at": "2026-10-12T16:21:12.950Z",
+        "source_at": "2026-10-12T15:33:38.000Z"
       }
     },
-    "last_new_at": "2026-10-12T15:50:51.834Z",
-    "checked_at": "2026-10-12T16:07:11.166Z",
-    "last_current_new_at": "2026-10-12T15:50:51.834Z"
+    "last_new_at": "2026-10-12T16:21:12.950Z",
+    "checked_at": "2026-10-12T16:21:12.950Z",
+    "last_current_new_at": "2026-10-12T16:21:12.950Z"
   },
   "recovery_attempts": [
     {
