@@ -18489,6 +18489,19 @@ h1, h2, h3 {
   .document-online-text .table-scroll table {
     min-width: 34rem; /* statt 42rem */
   }
+
+  .document-online-text .table-scroll table {
+    min-width: 42rem !important;
+    max-width: none;
+    table-layout: auto;
+  }
+
+  .document-online-text .table-scroll th,
+  .document-online-text .table-scroll td {
+    min-width: 9rem;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
 }
 
 /* ------------------------------------------------------------------ */

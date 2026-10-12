@@ -43,7 +43,7 @@ MATRIX_REQUIRED_FIELDS = {
 }
 CANONICAL_BENCHMARK = "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"
 NWI_AUDIT = "content/audits/nwi-acronym-disambiguation.json"
-CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.7"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.8"
 CURRENT_GUIDE_URL = "/bibliothek/woek-begriffsleitfaden-fuehrend/"
 CURRENT_GUIDE_SURFACES = [
     "fuer/akademie.html",
@@ -225,11 +225,16 @@ def terminology_guide_provenance() -> None:
     for rel in CURRENT_GUIDE_SURFACES:
         text = read(rel)
         if CURRENT_GUIDE_LABEL not in text or "woek-begriffsleitfaden-fuehrend/" not in text:
-            raise AssertionError(f"{rel}: living source surface does not point to the leading terminology guide v1.7")
+            raise AssertionError(f"{rel}: living source surface does not point to the leading terminology guide v1.8")
         if "Führender Begriffsleitfaden der Wirkungsökonomie v1.0" in text or "Führender Begriffsleitfaden der Wirkungsökonomie v1.2" in text:
             raise AssertionError(f"{rel}: obsolete guide is still presented as a current source")
 
-    require(CANONICAL_BENCHMARK, ["WÖk-Masterregister v1.5", CURRENT_GUIDE_LABEL])
+    # This published benchmark records the terminology used on 21 August.
+    # Updating today's leading guide must not rewrite its historical source
+    # citation or invalidate the PDF of the unchanged article.
+    require(CANONICAL_BENCHMARK, ["WÖk-Masterregister v1.5", "WÖk-Begriffsleitfaden führend v1.7", 'property="article:published_time" content="2026-08-21T10:30:00+02:00"'])
+    if CURRENT_GUIDE_LABEL in read(CANONICAL_BENCHMARK):
+        raise AssertionError("published August benchmark was silently assigned a later terminology source")
     # The v1.5 register source catalogue records its release-time terminology
     # baseline v1.6. It is provenance, not a competing current-guide surface.
     require("woek-id-register/quellen/index.html", ["Quellenkatalog v1.5", "Begriffsleitfaden der Wirkungsökonomie v1.6", "WÖk Master Items v1.5"])
@@ -237,7 +242,10 @@ def terminology_guide_provenance() -> None:
     records = json.loads(read("content/quellenarchiv/glossary-source-records.json")).get("sources", [])
     current = next((source for source in records if source.get("title") == CURRENT_GUIDE_LABEL), None)
     if not current or current.get("reviewStatus") != "fuehrend" or not str(current.get("url", "")).endswith(CURRENT_GUIDE_URL):
-        raise AssertionError("leading terminology guide v1.7 has no correct source-archive record")
+        raise AssertionError("leading terminology guide v1.8 has no correct source-archive record")
+    historical_v17 = next((source for source in records if "Begriffsleitfaden" in source.get("title", "") and "v1.7" in source.get("title", "")), None)
+    if not historical_v17 or historical_v17.get("reviewStatus") != "historisch" or historical_v17.get("url") != "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-public-assets-v2/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf":
+        raise AssertionError("historical terminology guide v1.7 has no preserved edition-specific source")
     historical_v16 = next((source for source in records if "Begriffsleitfaden" in source.get("title", "") and "v1.6" in source.get("title", "")), None)
     if not historical_v16 or historical_v16.get("reviewStatus") != "historisch" or not str(historical_v16.get("url", "")).endswith("/woek-begriffsleitfaden-fuehrend-v1-6/"):
         raise AssertionError("historical terminology guide v1.6 was silently redirected to the current publication")
