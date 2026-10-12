@@ -77,3 +77,43 @@ test('one inaccessible video does not discard a later accessible episode', async
     ? `<feed>${entry('lmnopqrstuv')}${entry('abcdefghijk')}</feed>` : url.includes('lmnopqrstuv') ? '' : html() }), '2026-09-25T12:00:00Z', { onError: e => failures.push(e) });
   assert.equal(list.length, 1); assert.equal(failures.length, 1); assert.equal(list[0].page, episode.page);
 });
+
+test('a missing YouTube feed still discovers full episodes from its configured official podcast', async () => {
+  const s = { ...show, feed: 'https://example.org/video-feed', podcast_feed: 'https://example.org/podcast-feed', kind: 'watched', max_age_days: 14 };
+  const item = (title, duration, date = episode.published_at) => `<item><title>${title}</title><link>https://example.org/audio-${duration}</link><guid>audio-${duration}</guid><pubDate>${date}</pubDate><itunes:duration>${duration}</itunes:duration><enclosure url="https://example.org/${duration}.mp3"/><podcast:transcript url="https://example.org/words.vtt" type="text/vtt"/></item>`;
+  const podcast = `<rss>${item(episode.title, 3600)}${item('Ausschnitt', 90)}${item('Alte Folge', 4000, '2026-09-01T06:00:00Z')}${item('Unbekannte Dauer', '')}</rss>`;
+  for (const status of [404, 410]) {
+    const failures = [];
+    const list = await showEpisodes(s, async url => url === s.feed
+      ? { ok: false, status } : { ok: true, text: async () => podcast }, '2026-09-25T12:00:00Z', { onError: e => failures.push(e) });
+    assert.equal(list.length, 1);
+    assert.equal(list[0].guid, 'audio-3600');
+    assert.equal(list[0].page, 'https://example.org/audio-3600');
+    assert.equal(list[0].published_at, new Date(episode.published_at).toISOString());
+    assert.equal(list[0].delivery_kind, 'listened');
+    assert.equal(list[0].podcast_basis, list[0].page);
+    assert.equal(list[0].youtube_caption, undefined);
+    assert.equal(list[0].transcripts[0].url, 'https://example.org/words.vtt');
+    assert.deepEqual(failures, [{ show_id: s.id, url: s.feed, error: `SHOW_FEED_HTTP_${status}`, fallback: 'official_podcast' }]);
+  }
+});
+
+test('podcast feed recovery does not route around access or policy errors', async () => {
+  const s = { ...show, feed: 'https://example.org/video-feed', podcast_feed: 'https://example.org/podcast-feed' };
+  for (const status of [401, 403, 429, 500]) {
+    const calls = [];
+    await assert.rejects(showEpisodes(s, async url => { calls.push(url); return { ok: false, status }; }), new RegExp(`SHOW_FEED_HTTP_${status}`));
+    assert.deepEqual(calls, [s.feed]);
+  }
+  const noPodcast = { ...s, podcast_feed: undefined };
+  await assert.rejects(showEpisodes(noPodcast, async () => ({ ok: false, status: 404 })), /SHOW_FEED_HTTP_404/);
+});
+
+test('an unavailable or empty official podcast keeps the original missing-feed error visible', async () => {
+  const s = { ...show, feed: 'https://example.org/video-feed', podcast_feed: 'https://example.org/podcast-feed' };
+  const failures = [];
+  await assert.rejects(showEpisodes(s, async url => ({ ok: false, status: url === s.feed ? 404 : 403 }), undefined, { onError: e => failures.push(e) }), /SHOW_FEED_HTTP_404/);
+  assert.deepEqual(failures, [{ show_id: s.id, url: s.podcast_feed, error: 'SHOW_FEED_HTTP_403' }]);
+  await assert.rejects(showEpisodes(s, async url => url === s.feed ? { ok: false, status: 404 }
+    : { ok: true, text: async () => '<rss><channel/></rss>' }), /SHOW_FEED_HTTP_404/);
+});
