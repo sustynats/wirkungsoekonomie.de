@@ -42,6 +42,15 @@ und Veröffentlichungszeit zugeordnete Langfassung als **Nachgehört** weiterlau
 deren Wortlaut muss weiterhin vorliegen. Daraus werden keine visuellen Beobachtungen
 abgeleitet. Ohne sichere Zuordnung bleibt die Folge mit sichtbarem Fehler zurück.
 
+Ergaenzung vom 12.10.2026: Fehlt bereits der YouTube-Kanalfeed (HTTP 404/410),
+darf die ausdruecklich konfigurierte offizielle Podcastreihe direkt beobachtet
+werden. Nur zeitlich passende Langfassungen mit belegter Dauer, Episodenseite
+und Audioquelle werden als Nachgehoert weitergegeben. RSS-GUID, Originaldatum,
+Wortlautquellen und der sichtbare Kanalfeedfehler bleiben erhalten. Das ist
+keine Behauptung eines gesehenen Videos. Bei 401/403, Ratenbegrenzung oder
+anderen Zugriffsfehlern greift diese Wiederaufnahme nicht. Fehlender Wortlaut,
+Dubletten, Kosten-/Mengengrenzen und Natalies Schlussfreigabe bleiben bindend.
+
 Der Worker prüft die letzte persönliche Hauptsektion bereits vor der Übergabe an die
 Redaktionsapp. Archivierte, abgewiesene Antworten können ohne neuen Modellaufruf erneut
 übergeben werden, wenn ausschließlich bestehende technische Normalisierungen genügen
