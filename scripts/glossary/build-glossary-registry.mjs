@@ -871,11 +871,11 @@ function sourceLabelForArchive(value) {
 }
 
 const CURRENT_TERMINOLOGY_GUIDE = {
-  version: "1.7",
-  title: "WÖk-Begriffsleitfaden führend v1.7",
+  version: "1.8",
+  title: "WÖk-Begriffsleitfaden führend v1.8",
   url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
 };
-const HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS = new Set(["1.0", "1.2", "1.3", "1.4", "1.5", "1.6"]);
+const HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS = new Set(["1.0", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7"]);
 
 function terminologyGuideVersion(label) {
   if (!/begriffsleitfaden/i.test(String(label || ""))) return "";
@@ -887,6 +887,9 @@ function terminologyGuideUrl(label) {
   if (!/begriffsleitfaden/i.test(String(label || ""))) return "";
   const version = terminologyGuideVersion(label);
   if (!version || version === CURRENT_TERMINOLOGY_GUIDE.version) return CURRENT_TERMINOLOGY_GUIDE.url;
+  if (version === "1.7") {
+    return "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-public-assets-v2/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf";
+  }
   if (HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS.has(version)) {
     return `https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend-v1-${version.split(".")[1]}/`;
   }
@@ -959,7 +962,7 @@ function attachGlossarySourceArchive(terms) {
         title: sourceLabel,
         url: sourceUrl || null,
         doi: null,
-        author: internal ? "Wirkungsökonomie" : null,
+        author: isTerminologyGuide ? "Natalie Weber" : (internal ? "Wirkungsökonomie" : null),
         year: null,
         type: "glossarquelle",
         typeLabel: internal ? "WÖk-Primärquelle" : (isCatalogLocator || isLiteratureSearch ? "Bibliografischer Nachweis" : "Bibliografischer Quellenverweis"),
@@ -1006,6 +1009,11 @@ function attachGlossarySourceArchive(terms) {
   // So bleibt die bisherige URL-ID für die kanonische Publikation stabil,
   // während historische Zitate auf ihre jeweilige Versionsseite zeigen.
   recordFor({ label: CURRENT_TERMINOLOGY_GUIDE.title, url: CURRENT_TERMINOLOGY_GUIDE.url, term: {} });
+  recordFor({
+    label: "WÖk-Begriffsleitfaden führend v1.7",
+    url: terminologyGuideUrl("WÖk-Begriffsleitfaden führend v1.7"),
+    term: {},
+  });
   recordFor({
     label: "WÖk-Begriffsleitfaden führend v1.6",
     url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend-v1-6/",
