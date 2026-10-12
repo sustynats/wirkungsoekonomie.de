@@ -250,7 +250,7 @@ const germanDuration = (s) => s ? `${Math.round(s / 60)} Minuten` : '';
 // exactly like a submitted request (same contract, same approval path).
 export function buildEpisodeRequest(episode, show, { owner, now, transcript = null, retry = false }) {
   const kind = episode.delivery_kind === 'listened' || show.kind === 'listened' ? 'listened' : 'watched', label = LABEL[kind];
-  const links = [episode.page, episode.media, transcript?.url].filter((u) => /^https:\/\//.test(u || '')).slice(0, 4);
+  const links = [episode.page, episode.podcast_basis, episode.media, transcript?.url].filter((u) => /^https:\/\//.test(u || '')).slice(0, 4);
   const brief = [`${label}: ${show.show_name} – „${episode.title}“ vom ${germanDate(episode.published_at)}.`,
     episode.summary ? `Beschreibung laut Anbieter: ${episode.summary}` : null,
     episode.duration ? `Dauer: ${germanDuration(episode.duration)}.` : null,
@@ -366,7 +366,24 @@ export async function fetchMediathekEpisodes(show, fetchImpl = fetch, timeoutMs 
   } finally { clearTimeout(timer); }
 }
 export async function showEpisodes(show, fetchImpl = fetch, now = new Date().toISOString(), { onError = null } = {}) {
-  if (show.mediathek) return fetchMediathekEpisodes(show, fetchImpl);
+  if (show.mediathek) {
+    const episodes = await fetchMediathekEpisodes(show, fetchImpl);
+    if (!show.podcast_feed || episodes.every((episode) => episode.subtitle_url)) return episodes;
+    // Some broadcasters publish the matching full-length audio while their
+    // Mediathek feed still omits captions. Match exact title, date and duration;
+    // never infer a video's words or visuals from an unrelated podcast item.
+    let podcast;
+    try { podcast = parseEpisodes(await fetchShowFeed({ feed: show.podcast_feed }, fetchImpl), show); }
+    catch { return episodes; } // A failed auxiliary feed must not hide the video.
+    return episodes.map((episode) => {
+      if (episode.subtitle_url) return episode;
+      const matches = podcast.filter((candidate) => matchingPodcastEpisode(episode, [candidate], show));
+      const audio = matches.length === 1 ? matches[0] : null;
+      if (!audio || !/^https:\/\//.test(audio.media || '') || !/^https:\/\//.test(audio.page || '')) return episode;
+      return { ...episode, media: audio.media, transcripts: audio.transcripts,
+        delivery_kind: 'listened', podcast_basis: audio.page };
+    });
+  }
   let xml;
   try { xml = await fetchShowFeed(show, fetchImpl); }
   catch (error) {
