@@ -117,6 +117,9 @@ jobs:
           npm run polls:test
           npm run polls:build
           npm run news:build
+          # Shared publication gates compare institute prose with its current
+          # source snapshot, not with HTML left over from an earlier full build.
+          node scripts/site/build-institut-projects.mjs
           # Fast ticker releases must retain the current shared footer as well.
           npm run normalize:footer
           npm run build:search
