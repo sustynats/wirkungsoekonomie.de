@@ -21,16 +21,21 @@
       "firstSeen": "2026-10-11T20:41:21.323Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-12T03:50:51.261Z",
-      "active": true
-    },
     "lage": {
       "firstSeen": "2026-10-12T04:05:49.265Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "245526e0901f6966812042ae",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-12T04:20:51.027Z"
+    },
+    {
+      "id": "c118b0c3d799f9000c2d1559",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionelle Lage: Die jüngste Lage ist 12.3 Stunden alt; spätestens alle sechs Stunden muss eine neue vorliegen. Der Schritt im Ticker-Lauf bricht absichtlich nicht ab, damit eine bezahlte Analyse nicht verloren geht - deshalb muss sein Ausfall hier auffallen.\nSeit: 2026-10-12T04:05:49.265Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2541,7 +2546,7 @@
       }
     },
     "last_new_at": "2026-10-12T03:35:53.855Z",
-    "checked_at": "2026-10-12T04:05:49.265Z",
+    "checked_at": "2026-10-12T04:20:51.027Z",
     "last_current_new_at": "2026-10-12T03:35:53.855Z"
   },
   "recovery_attempts": [
