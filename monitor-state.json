@@ -17,12 +17,21 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-11T20:41:21.323Z",
+    "run": {
+      "firstSeen": "2026-10-12T05:36:18.901Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "381088812a761adcea8ab7e6",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-10-12T05:36:18.901Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "5976add9f536e564b8372805",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-12T05:36:18.901Z"
+    }
+  ],
   "dailyDate": "2026-10-11",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2533,7 +2542,7 @@
       }
     },
     "last_new_at": "2026-10-12T03:35:53.855Z",
-    "checked_at": "2026-10-12T05:21:09.202Z",
+    "checked_at": "2026-10-12T05:36:18.901Z",
     "last_current_new_at": "2026-10-12T03:35:53.855Z"
   },
   "recovery_attempts": [
