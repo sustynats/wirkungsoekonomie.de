@@ -179,6 +179,10 @@ export function requestNamesShow(text, show) {
   const id = String(show?.id || '');
   if (!id) return false;
   if (compact.includes(compactWords(id))) return true;
+  // Bei diesem Sendungsnamen sind die Teile allgemeine Adjektive, keine
+  // tragenden Eigennamen wie "Lanz". "fair" in einem Wirtschaftsauftrag
+  // plus dessen Artikeldatum bezeichnet keine Hart-aber-fair-Folge.
+  if (id === 'hart-aber-fair') return false;
   return id.split(/[^a-z0-9]+/i).some((part) => part.length >= 4 && words.has(compactWords(part)));
 }
 

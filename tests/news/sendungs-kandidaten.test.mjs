@@ -101,6 +101,46 @@ function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
   return { session: { store, transport }, files, observations, jobs };
 }
 
+test('allgemeine Wörter hart oder fair plus Datum nennen keine Sendung', async () => {
+  const { duplicateRequestFor, requestNamesShow } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  const show = { id: 'hart-aber-fair' };
+  const episode = { title: 'Starke Ränder, schwache Mitte', published_at: '2026-09-15T19:00:00Z' };
+  const jobs = brief => [{ input: { job_id: 'wt_20260916T000700Z_' + 'b'.repeat(24), request: { kind: 'opinion', brief } } }];
+  for (const word of ['hart', 'fair']) {
+    const brief = `KI-Umbau der Autobranche vom 15.09.2026 analysieren: Wie ${word} sind die Regeln?`;
+    assert.equal(requestNamesShow(brief, show), false, 'ein allgemeines Adjektiv ist kein Sendungsname');
+    assert.equal(duplicateRequestFor(episode, show, jobs(brief)), null, 'auch das gleiche Datum ist keine Folgenidentität');
+  }
+  for (const brief of ['Hart aber fair vom 15.09.2026 bitte nachsehen', 'HART-ABER-FAIR 360 vom 15. September 2026']) {
+    assert.equal(requestNamesShow(brief, show), true);
+    assert.ok(duplicateRequestFor(episode, show, jobs(brief))?.shared.includes('sendetag'), 'echte Sendungsaufträge bleiben geschützt');
+  }
+  assert.equal(duplicateRequestFor(episode, show, jobs('Hart aber fair vom 14.09.2026 nachsehen')), null);
+  assert.equal(requestNamesShow('Bitte zum Lanz', { id: 'markus-lanz' }), true, 'tragende Personennamen bleiben zulässig');
+});
+
+test('falscher BMW-Dublettenbezug blockiert keine kostenlose Folgen-Einreihung', async () => {
+  const show = { id: 'hart-aber-fair', show_name: 'Hart aber fair', kind: 'watched', feed: 'https://example.org/haf-feed',
+    require_transcript: true, allow_paid_transcription: false, min_duration_seconds: 1500 };
+  const feed = `<rss><channel><item><title>Starke Ränder, schwache Mitte</title><link>https://example.org/haf-episode</link><guid>synthetic-haf-episode</guid><pubDate>2026-09-15T19:00:00Z</pubDate><itunes:duration>3600</itunes:duration><enclosure url="https://example.org/haf.mp4"/><podcast:transcript url="https://example.org/haf.vtt" type="text/vtt"/></item></channel></rss>`;
+  const words = 'WEBVTT\n\n00:00:01.000 --> 00:00:08.000\n' + 'Synthetischer belegter Wortlaut '.repeat(100);
+  const { session, jobs } = fakeSession();
+  jobs[0].input.job_id = 'wt_20260916T000700Z_' + 'b'.repeat(24);
+  jobs[0].input.request = { kind: 'opinion', title: 'BMW und der KI-Umbau', brief: 'Artikel vom 15.09.2026: Ist der KI-Umbau fair?', links: ['https://example.org/bmw'] };
+  const options = { session, now, shows: [show], fetchImpl: async url => ({ ok: true, text: async () => url === show.feed ? feed : words }),
+    transcribeImpl: async () => assert.fail('keine bezahlte Abschrift'), maxTranscriptsPerDay: 0 };
+  const first = await proposeEpisodeCandidates(options);
+  assert.deepEqual(first.duplicate_requests, []);
+  assert.equal(first.proposed.length, 1);
+  assert.equal(first.transcribed_today, 0);
+  const job = jobs.find(j => j.input.job_id === first.proposed[0].job_id);
+  assert.equal(job.input.origin.show_id, show.id);
+  assert.equal(job.input.request.publication_intent, 'final_approval_required');
+  assert.equal(job.input.origin.transcript.text, words.trim());
+  const second = await proposeEpisodeCandidates(options);
+  assert.deepEqual(second.proposed, [], 'dieselbe Folge wird weiterhin nur einmal eingereiht');
+});
+
 test('a missing video feed queues its official podcast with free words once, without changing approval or quotas', async () => {
   const show = { id: 'podcast-recovery', show_name: 'Podcast Recovery', kind: 'watched', enabled: true,
     youtube_channel_id: 'UCtest', feed: 'https://example.org/video-feed', podcast_feed: 'https://example.org/podcast-feed',
