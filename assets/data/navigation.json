@@ -520,9 +520,10 @@
         },
         {
           "label": "Akademie",
-          "href": "akademie/",
+          "href": "akademie.html",
           "match": [
-            "akademie/"
+            "akademie/",
+            "akademie.html"
           ]
         },
         {
@@ -560,9 +561,11 @@
         },
         {
           "label": "Journal",
-          "href": "journal/",
+          "href": "blog.html",
           "match": [
-            "journal/"
+            "journal/",
+            "blog.html",
+            "blog/"
           ]
         },
         {
@@ -665,7 +668,7 @@
     },
     {
       "label": "Journal",
-      "href": "journal/",
+      "href": "blog.html",
       "match": [
         "journal/",
         "blog.html",
