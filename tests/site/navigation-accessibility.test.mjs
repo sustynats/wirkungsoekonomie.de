@@ -30,8 +30,8 @@ test("navigation state resolves overlapping area matches by specificity", () => 
     ),
     "fuer/wirkungssteuer.html".length,
   );
-  assert.equal((navigation.match(/setAttribute\("aria-current", "page"\)/g) || []).length, 0);
-  assert.match(navigation, /existingPageMarker \? "true" : "page"/);
+  assert.equal((navigation.match(/setAttribute\("aria-current", "page"\)/g) || []).length, 1);
+  assert.match(navigation, /if \(!existingPageMarker\) exactPageLink\.setAttribute\("aria-current", "page"\)/);
   assert.match(navigation, /activeArea\.setAttribute\("aria-current", "true"\)/);
 });
 

@@ -83,7 +83,7 @@
     const exactPageLink = links.find((link) => normalizeNavigationRoute(link.pathname) === currentRoute);
     if (exactPageLink) {
       exactPageLink.classList.add("active");
-      exactPageLink.setAttribute("aria-current", existingPageMarker ? "true" : "page");
+      if (!existingPageMarker) exactPageLink.setAttribute("aria-current", "page");
     }
 
     const activeArea = mainLinks
