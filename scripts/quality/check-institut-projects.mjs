@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { readBuiltSearchEntries } from '../search/build-browser-search-index.mjs';
 
 const root = process.argv.includes('--artifact') ? '_site' : '.';
 const data = JSON.parse(fs.readFileSync('content/institut/projects.json', 'utf8'));
@@ -9,7 +10,11 @@ const operational = /oracle|vercel|hosting|kostengate|kostensteuerung|kostenrege
 if (operational.test(JSON.stringify(data))) throw new Error('Private operational content in public institute project data.');
 const overview = fs.readFileSync(path.join(root, 'institut/projekte/index.html'), 'utf8');
 if (/oracle-always-free|Umzug des Instituts/.test(overview)) throw new Error('Private operational project linked in institute overview.');
-const searchEntries = JSON.parse(fs.readFileSync(path.join(root, 'assets/search/search-index.json'), 'utf8'));
+const sourceSearchIndex = path.join(root, 'assets/search/search-index.json');
+const searchEntries = fs.existsSync(sourceSearchIndex)
+  ? JSON.parse(fs.readFileSync(sourceSearchIndex, 'utf8'))
+  : readBuiltSearchEntries(path.resolve(root));
+if (!searchEntries.length) throw new Error('Public search index is missing.');
 const searchRoute = value => {
   try {
     const url = new URL(value, 'https://wirkungsoekonomie.de');

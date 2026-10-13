@@ -32,8 +32,13 @@ class NavigationReportTests(unittest.TestCase):
             put('assets/js/site-navigation.js', 'skipLink.href = "#main-content";')
             put('sitemap.xml', '<sitemapindex><sitemap><loc>https://wirkungsoekonomie.de/maps/bereich.xml</loc></sitemap></sitemapindex>')
             put('maps/bereich.xml', '<urlset><url><loc>https://wirkungsoekonomie.de/bereich/detail/</loc></url></urlset>')
-            put('assets/search/browser-index-manifest.json', '{"json":"part.json"}')
-            put('assets/search/part.json', json.dumps([{'url': '/bereich/detail/'}, {'url': '/alt.html'}]))
+            put('assets/search/browser-index-manifest.json', json.dumps({
+                'schemaVersion': 2,
+                'core': {'json': 'core.json'},
+                'archives': [{'json': 'archive.json'}],
+            }))
+            put('assets/search/core.json', json.dumps([{'url': '/bereich/detail/'}]))
+            put('assets/search/archive.json', json.dumps([{'url': '/alt.html'}]))
             result = report.measure(root)
             self.assertEqual(result['counts']['indexable'], 4)
             self.assertEqual(result['unreachable'], ['/nur-js/'])
