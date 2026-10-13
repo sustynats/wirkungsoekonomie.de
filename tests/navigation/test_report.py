@@ -10,6 +10,11 @@ spec.loader.exec_module(report)
 
 
 class NavigationReportTests(unittest.TestCase):
+    def test_route_only_shortens_an_actual_index_file(self):
+        self.assertEqual(report.route('index.html'), '/')
+        self.assertEqual(report.route('bereich/index.html'), '/bereich/')
+        self.assertEqual(report.route('bereich/wirkungsindex.html'), '/bereich/wirkungsindex.html')
+
     def test_authored_graph_and_delivered_indexes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -47,6 +52,29 @@ class NavigationReportTests(unittest.TestCase):
         self.assertEqual(report.shell_hash(a, 'header', '/fuer/'), report.shell_hash(b, 'header', '/fuer/unternehmen/'))
         self.assertNotEqual(report.shell_hash(a, 'header', '/fuer/'), report.shell_hash(b.replace('Verstehen', 'Andere'), 'header', '/fuer/unternehmen/'))
         self.assertIsNone(report.shell_hash('<footer class="article-footer">Artikel</footer>', 'footer', '/'))
+
+    def test_public_route_manifest_is_the_shared_indexable_inventory(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            def put(name, text):
+                file = root / name
+                file.parent.mkdir(parents=True, exist_ok=True)
+                file.write_text(text)
+            put('index.html', '<a href="sichtbar/">Sichtbar</a><a href="weiter/">Weiter</a>')
+            put('sichtbar/index.html', '<title>Sichtbar</title>')
+            put('weiter/index.html', '<title>Ohne Listeneintrag</title>')
+            put('bereich/tools/index.html', '<title>Öffentliches Werkzeug</title>')
+            put('assets/data/public-routes.json', json.dumps({'routes': [
+                {'url': '/', 'file': 'index.html'},
+                {'url': '/sichtbar/', 'file': 'sichtbar/index.html'},
+                {'url': '/bereich/tools/', 'file': 'bereich/tools/index.html'},
+            ]}))
+            result = report.measure(root, search_urls=set())
+            self.assertEqual(result['routeSource'], 'assets/data/public-routes.json')
+            self.assertEqual(result['counts']['indexable'], 3)
+            self.assertEqual(result['counts']['routeListCoverage'], 3)
+            self.assertEqual(result['areas']['bereich']['indexable'], 1)
+            self.assertNotIn('weiter', result['areas'])
 
     def test_regression_gate_uses_coverage_not_index_growth(self):
         counts = dict(indexable=10, unreachable=0, withoutFooter=0, redirectsInSearch=0, brokenSkipLinks=0, multipleCurrentPages=0, linksToRedirects=0, withinThreeClicks=10, sitemapCoverage=10, searchCoverage=10)

@@ -45,11 +45,16 @@ test('source-shell readers preserve only locale and relative base, not a stale m
 test('public inventory includes new pages and excludes implementation directories', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'navigation-fixture-'));
   try {
-    for (const file of ['index.html', 'neue-seite/index.html', 'scripts/privat.html', '_site/alt.html', 'admin/privat.html']) {
+    for (const file of ['index.html', 'neue-seite/index.html', 'neue-seite/tools/index.html', 'neue-seite/export/lesefassung.html', 'scripts/privat.html', '_site/alt.html', 'admin/privat.html']) {
       fs.mkdirSync(path.dirname(path.join(root, file)), {recursive: true});
       fs.writeFileSync(path.join(root, file), '<main>Fixture</main>');
     }
-    assert.deepEqual(publicHtmlFiles(root).map(file => path.relative(root, file)), ['index.html', 'neue-seite/index.html']);
+    assert.deepEqual(publicHtmlFiles(root).map(file => path.relative(root, file)), [
+      'index.html',
+      'neue-seite/export/lesefassung.html',
+      'neue-seite/index.html',
+      'neue-seite/tools/index.html',
+    ]);
   } finally {
     fs.rmSync(root, {recursive: true, force: true});
   }

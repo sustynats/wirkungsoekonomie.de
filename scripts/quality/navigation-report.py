@@ -11,8 +11,8 @@ from collections import Counter,defaultdict,deque
 import re,json,hashlib,argparse,xml.etree.ElementTree as ET
 
 SITE='https://wirkungsoekonomie.de'
-EXCLUDED={'.git','.github','.claude','.next','.codex-backup','_internal','_debug','_site','admin','components','content','data','docs','export','lib','manifest','node_modules','outputs','ops','public','reports','scripts','source-assets','src','templates','tests','tiktok_archive','tiktok_library','tools','woek-akademie-app','woek-institut-app','woek-parlament-app'}
-def route(file):return '/'+(file[:-10] if file.endswith('index.html') else file) if file!='index.html' else '/'
+EXCLUDED={'.git','.github','.claude','.next','.codex-backup','_internal','_debug','_site','admin','api','assets','components','content','data','docs','en','export','intern','lib','manifest','node_modules','outputs','ops','public','reports','scripts','source-assets','src','templates','tests','tiktok_archive','tiktok_library','tools','woek-akademie-app','woek-institut-app','woek-parlament-app'}
+def route(file):return '/'+(file[:-10] if file.endswith('/index.html') else file) if file!='index.html' else '/'
 def resolved(base,value):
     url=urlsplit(urljoin(SITE+base,value))
     if url.scheme not in {'http','https'} or url.netloc not in {'wirkungsoekonomie.de','www.wirkungsoekonomie.de'}:return None
@@ -54,7 +54,8 @@ def measure(root,search_urls=None):
     files={};pages={};raws={};aliases={}
     for f in sorted(root.rglob('*.html')):
         rel=f.relative_to(root).as_posix()
-        if any(p in EXCLUDED or p.startswith('.') for p in Path(rel).parts[:-1]):continue
+        first=Path(rel).parts[0]
+        if first in EXCLUDED or first.startswith('.'):continue
         r=route(rel);files[r]=rel;aliases['/'+rel]=r
         if rel.endswith('/index.html'):aliases['/'+rel[:-11]]=r
         text=f.read_text(errors='replace');raws[r]=text;pages[r]=Page(text)
@@ -112,7 +113,16 @@ def measure(root,search_urls=None):
     for u in search_urls:
         t=target('/',u)
         if t and t[0]:search.add(t[0])
-    active={r for r,p in pages.items() if not p.noindex and not p.redirect and r!='/404.html'}
+    route_manifest=root/'assets/data/public-routes.json'
+    if route_manifest.exists():
+        route_data=json.loads(route_manifest.read_text())
+        active={unquote(item.get('url')) for item in route_data.get('routes',[]) if item.get('url')}
+        missing=sorted(active-pages.keys())
+        if missing:raise ValueError('Public route manifest contains routes without HTML pages: '+', '.join(missing[:20]))
+        route_source='assets/data/public-routes.json'
+    else:
+        active={r for r,p in pages.items() if not p.noindex and not p.redirect and r!='/404.html'}
+        route_source='HTML metadata fallback'
     content={r for r,p in pages.items() if not p.redirect}
     areas=defaultdict(Counter)
     for r in sorted(active):
@@ -125,8 +135,8 @@ def measure(root,search_urls=None):
         modules={r+child[len(r):].split('/')[0]+'/' for child in children if '/' in child[len(r):]}
         existing_modules={m for m in modules if m in active}
         hubs[r]={'bytes':len(raws[r].encode()),'indexableChildren':len(children),'modules':len(existing_modules),'linkedModules':len(existing_modules&edges[r]),'missingModules':sorted(existing_modules-edges[r])}
-    counts={'publicHtml':len(pages),'contentHtml':len(content),'indexable':len(active),'reachable':sum(r in depth for r in active),'withinThreeClicks':sum(depth.get(r,10**9)<=3 for r in active),'unreachable':sum(r not in depth for r in active),'withoutFooter':sum(not pages[r].footer for r in content),'sitemapCoverage':len(active&sitemap),'searchCoverage':len(active&search),'redirectsInSearch':sum(pages[r].redirect for r in search),'brokenSkipLinks':len(set(broken_skip)),'multipleCurrentPages':sum(p.current>1 for p in pages.values()),'linksToRedirects':len(redirect_links),'htmlBytes':sum(len(raws[r].encode()) for r in pages)}
-    return {'schemaVersion':1,'measurement':'HTMLParser; BFS of authored HTML links; physical public routes; sitemap-index recursion; delivered browser index','counts':counts,'variants':{k:{lang:dict(v) for lang,v in langs.items()} for k,langs in variants.items()},'areas':{a:dict(v) for a,v in sorted(areas.items())},'unreachable':[r for r in sorted(active) if r not in depth],'brokenSkipLinks':sorted(set(broken_skip)),'linksToRedirects':redirect_links[:100],'redirectLinkSampleLimit':100,'hubs':hubs,'hubBytes':{r:h['bytes'] for r,h in hubs.items()}}
+    counts={'publicHtml':len(pages),'contentHtml':len(content),'indexable':len(active),'routeListCoverage':len(active),'reachable':sum(r in depth for r in active),'withinThreeClicks':sum(depth.get(r,10**9)<=3 for r in active),'unreachable':sum(r not in depth for r in active),'withoutFooter':sum(not pages[r].footer for r in content),'sitemapCoverage':len(active&sitemap),'searchCoverage':len(active&search),'redirectsInSearch':sum(pages[r].redirect for r in search),'brokenSkipLinks':len(set(broken_skip)),'multipleCurrentPages':sum(p.current>1 for p in pages.values()),'linksToRedirects':len(redirect_links),'htmlBytes':sum(len(raws[r].encode()) for r in pages)}
+    return {'schemaVersion':1,'measurement':'HTMLParser; BFS of authored HTML links; canonical route manifest when present; sitemap-index recursion; delivered browser index','routeSource':route_source,'counts':counts,'variants':{k:{lang:dict(v) for lang,v in langs.items()} for k,langs in variants.items()},'areas':{a:dict(v) for a,v in sorted(areas.items())},'unreachable':[r for r in sorted(active) if r not in depth],'brokenSkipLinks':sorted(set(broken_skip)),'linksToRedirects':redirect_links[:100],'redirectLinkSampleLimit':100,'hubs':hubs,'hubBytes':{r:h['bytes'] for r,h in hubs.items()}}
 
 def regressions(before,after):
     """Compare proportions for coverage and absolute defects for invariant gates."""
@@ -143,9 +153,9 @@ def regressions(before,after):
 
 def markdown(after,before=None):
     a=(before or after)['counts'];b=after['counts']
-    labels={'indexable':'Indexierbare Seiten','unreachable':'Ohne Linkpfad ab Start','withinThreeClicks':'In höchstens drei Klicks','withoutFooter':'Inhaltsseiten ohne Footer','sitemapCoverage':'In Sitemap','searchCoverage':'In ausgelieferter Suche','redirectsInSearch':'Weiterleitungen in Suche','brokenSkipLinks':'Defekte Skip-Links','multipleCurrentPages':'Mehrfach aria-current=page','linksToRedirects':'Links auf Weiterleitungen','htmlBytes':'HTML-Bytes'}
+    labels={'indexable':'Indexierbare Seiten laut Routenliste','routeListCoverage':'In gemeinsamer Routenliste','unreachable':'Ohne Linkpfad ab Start','withinThreeClicks':'In höchstens drei Klicks','withoutFooter':'Inhaltsseiten ohne Footer','sitemapCoverage':'In Sitemap','searchCoverage':'In ausgelieferter Suche','redirectsInSearch':'Weiterleitungen in Suche','brokenSkipLinks':'Defekte Skip-Links','multipleCurrentPages':'Mehrfach aria-current=page','linksToRedirects':'Links auf Weiterleitungen','htmlBytes':'HTML-Bytes'}
     lines=['# Navigationsbericht','','Gemessen am gebauten öffentlichen Artefakt. „Nicht erreichbar“ bezeichnet einen fehlenden HTML-Linkpfad ab der Startseite, keinen HTTP-Fehler. JavaScript-Listen ersetzen keine statischen Links. Die Abdeckung verwendet alle indexierbaren Seiten; noindex, Meta-Refresh und interne Pfade sind ausgeschlossen. Footer werden auf allen Inhaltsseiten geprüft, auch noindex.','','| Kennzahl | Vorher | Nachher |','|---|---:|---:|']
-    for key,label in labels.items():lines.append(f'| {label} | {a[key]:,} | {b[key]:,} |')
+    for key,label in labels.items():lines.append(f'| {label} | {a.get(key,a.get("indexable",0) if key=="routeListCoverage" else 0):,} | {b.get(key,0):,} |')
     lines+=['','| Bereich | Indexierbar | Ohne Linkpfad | ≤3 Klicks | Sitemap | Suche | Ohne Footer | Brotkrumen |','|---|---:|---:|---:|---:|---:|---:|---:|']
     for area,c in after['areas'].items():lines.append('| '+area+' | '+' | '.join(str(c.get(k,0)) for k in ('indexable','unreachable','withinThreeClicks','sitemap','search','withoutFooter','breadcrumb'))+' |')
     lines+=['','| Bauteil | Sprache | Varianten |','|---|---|---:|']
