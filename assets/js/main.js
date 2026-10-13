@@ -1,5 +1,3 @@
-const navToggle = document.querySelector(".nav-toggle");
-const siteNav = document.querySelector(".site-nav");
 const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
 window.loadWoekSearchIndex = async () => {
@@ -12,9 +10,6 @@ const siteAnalyticsSessionKey = "wirkungsoekonomie-site-session";
 const siteAnalyticsVisitorKey = "wirkungsoekonomie-site-visitor";
 const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
 const uiText = {
-  skipLink: siteLocale === "en" ? "Skip to content" : "Zum Inhalt springen",
-  menuOpen: siteLocale === "en" ? "Open menu" : "Menü öffnen",
-  menuClose: siteLocale === "en" ? "Close menu" : "Menü schließen",
   learningAdd: siteLocale === "en" ? "Add to learning list" : "Zur Lernliste hinzufügen",
   learningAdded: siteLocale === "en" ? "✓ In learning list" : "✓ In Lernliste",
   collectionUntitled: siteLocale === "en" ? "Untitled collection" : "Unbenannte Sammlung",
@@ -100,185 +95,7 @@ function relativeSiteUrl(path) {
   return new URL(`../../${String(path).replace(/^\/+/, "")}`, scriptUrl).href;
 }
 
-if (mainElement) {
-  mainElement.id = mainElement.id || "main-content";
-  mainElement.setAttribute("tabindex", "-1");
-}
-
-if (mainElement && !document.querySelector(".skip-link")) {
-  const skipLink = document.createElement("a");
-  skipLink.className = "skip-link";
-  skipLink.href = "#main-content";
-  skipLink.textContent = uiText.skipLink;
-  document.body.prepend(skipLink);
-}
-
 document.querySelectorAll(".article-status-note").forEach((note) => note.remove());
-
-if (navToggle && siteNav) {
-  let navReturnFocus = null;
-  const focusableSelector = [
-    "a[href]",
-    "button:not([disabled])",
-    "summary",
-    "input:not([disabled])",
-    "select:not([disabled])",
-    "textarea:not([disabled])",
-    "[tabindex]:not([tabindex='-1'])",
-  ].join(",");
-
-  const closeNavigation = () => {
-    siteNav.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-    navToggle.setAttribute("aria-label", uiText.menuOpen);
-    document.body.classList.remove("nav-is-open");
-  };
-
-  navToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? uiText.menuClose : uiText.menuOpen);
-    document.body.classList.toggle("nav-is-open", isOpen);
-    navReturnFocus = isOpen && document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    if (isOpen) {
-      window.requestAnimationFrame(() => siteNav.querySelector("a")?.focus());
-    }
-  });
-
-  document.addEventListener("click", (event) => {
-    if (!(event.target instanceof Node) || !siteNav.classList.contains("open")) {
-      return;
-    }
-
-    if (!siteNav.contains(event.target) && !navToggle.contains(event.target)) {
-      closeNavigation();
-    }
-  });
-
-  siteNav.addEventListener("click", (event) => {
-    if (event.target instanceof HTMLAnchorElement) {
-      closeNavigation();
-    }
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (!siteNav.classList.contains("open")) {
-      return;
-    }
-
-    if (event.key === "Escape") {
-      closeNavigation();
-      (navReturnFocus || navToggle).focus();
-      return;
-    }
-
-    if (event.key === "Tab") {
-      const focusable = Array.from(siteNav.querySelectorAll(focusableSelector)).filter(
-        (element) => element instanceof HTMLElement && !element.hasAttribute("hidden"),
-      );
-      if (!focusable.length) {
-        return;
-      }
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    }
-  });
-}
-
-if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(document.querySelectorAll(".site-header a")).some((link) => /suche\.html/.test(link.getAttribute("href") || ""))) {
-  const searchLink = document.createElement("a");
-  searchLink.href = siteLocale === "en" ? relativeSiteUrl("en/search/") : relativeSiteUrl("suche.html");
-  searchLink.className = "site-search-shortcut";
-  searchLink.textContent = siteLocale === "en" ? "Search" : "Suche";
-  searchLink.setAttribute("aria-label", siteLocale === "en" ? "Open search section" : "Website-Suche öffnen");
-  searchLink.setAttribute("title", siteLocale === "en" ? "Search" : "Suche");
-  if (window.location.pathname.endsWith("/suche.html")) {
-    searchLink.classList.add("active");
-    searchLink.setAttribute("aria-current", "page");
-  }
-  siteNav.after(searchLink);
-}
-
-document.querySelectorAll(".site-nav a, .site-utility-nav a, .site-nav-utility a").forEach((link) => {
-  if (!(link instanceof HTMLAnchorElement)) {
-    return;
-  }
-
-  const normalizedPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
-  const matchTokens = (link.dataset.navMatch || "").split("|").filter(Boolean);
-  const linkPath = link.pathname.replace(/^\/+/, "") || "index.html";
-  const isCurrent = matchTokens.length
-    ? matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token))
-    : normalizedPath === linkPath || normalizedPath.endsWith(`/${linkPath}`);
-
-  link.classList.toggle("active", isCurrent);
-  if (isCurrent) {
-    link.setAttribute("aria-current", "page");
-    const more = link.closest(".nav-more");
-    if (more instanceof HTMLDetailsElement) {
-      more.classList.add("active");
-    }
-  } else {
-    link.removeAttribute("aria-current");
-  }
-});
-
-document.querySelectorAll(".site-nav .nav-more[data-nav-match]").forEach((details) => {
-  if (!(details instanceof HTMLDetailsElement)) {
-    return;
-  }
-
-  const normalizedPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
-  const matchTokens = (details.dataset.navMatch || "").split("|").filter(Boolean);
-  const isCurrent = matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token));
-  details.classList.toggle("active", isCurrent || details.classList.contains("active"));
-});
-
-function ensureFooterDiscoveryLinks() {
-  if (siteLocale !== "de") return;
-  const group = Array.from(document.querySelectorAll(".footer-nav-group")).find(
-    (item) => item.querySelector("h3")?.textContent?.trim().toLowerCase() === "mitmachen",
-  );
-  const links = group?.querySelector(".footer-nav-links");
-  if (!links) return;
-  [
-    ["Presse", "w/natalie-weber/presse/"],
-    ["FAQ", "w/natalie-weber/faq/"],
-  ].forEach(([label, path]) => {
-    if (Array.from(links.querySelectorAll("a")).some((link) => link.textContent?.trim() === label)) return;
-    const link = document.createElement("a");
-    link.href = relativeSiteUrl(path);
-    link.dataset.navMatch = path;
-    link.dataset.footerDiscoveryLink = "true";
-    link.textContent = label;
-    const legalLink = Array.from(links.querySelectorAll("a")).find((item) => item.textContent?.trim() === "Impressum");
-    links.insertBefore(link, legalLink || null);
-  });
-}
-
-ensureFooterDiscoveryLinks();
-
-document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) => {
-  if (!(link instanceof HTMLAnchorElement)) {
-    return;
-  }
-  const normalizedPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
-  const matchTokens = (link.dataset.navMatch || "").split("|").filter(Boolean);
-  const isCurrent = matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token));
-  link.classList.toggle("active", isCurrent);
-  if (isCurrent) {
-    link.setAttribute("aria-current", "page");
-  } else {
-    link.removeAttribute("aria-current");
-  }
-});
 
 function isDebugPath(path = window.location.pathname) {
   return /^\/?_debug(\/|$)/.test(path);
@@ -2058,7 +1875,7 @@ function initPublicationAccessFallback() {
         <p class="card-kicker">${kicker}</p>
         <h3 class="card-title">${title}</h3>
         <p class="card-text">${text}</p>
-        <div class="portal-card-actions">${normalizePath(link) === currentPath ? `<span class="text-note is-current" aria-current="page">Du bist auf dieser Seite.</span>` : `<a class="text-link" href="${link}">${label}</a>`}</div>
+        <div class="portal-card-actions">${normalizePath(link) === currentPath ? `<span class="text-note is-current" aria-current="true">Du bist auf dieser Seite.</span>` : `<a class="text-link" href="${link}">${label}</a>`}</div>
       </article>
     `).join("")}</div>
   `;
