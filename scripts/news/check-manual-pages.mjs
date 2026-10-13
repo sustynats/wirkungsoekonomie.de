@@ -21,12 +21,17 @@ export function checkManualPages(outputRoot, editions = applyApprovedEditorialRe
     const page = plain(html);
     let cursor = page.indexOf(escape(edition.title));
     if (cursor < 0 || !html.includes('data-manuscript-sha256="' + edition.manuscript_sha256 + '"')) throw Error("MANUAL_PAGE_IDENTITY:" + edition.slug);
-    for (const section of edition.rendered.sections) for (const block of section.blocks) {
+    for (const section of edition.rendered.sections) {
+      // The public artifact deliberately removes the internal production note
+      // section. All substantive manuscript sections remain byte-checked.
+      if (section.id === "redaktioneller-hinweis") continue;
+      for (const block of section.blocks) {
       const text = publicExpectedText(block);
       if (!text) continue;
       const at = page.indexOf(text, cursor);
       if (at < 0) throw Error("MANUAL_PUBLISHED_TEXT_CHANGED:" + edition.slug + ":" + text.slice(0, 100));
       cursor = at + text.length;
+      }
     }
     if (!html.includes(EDITORIAL_AUTHOR.image) || !html.includes(edition.book.cover)
       || html.includes("/undefined/") || !html.includes('"@type":"Book"')
