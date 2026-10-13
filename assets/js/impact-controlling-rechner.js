@@ -192,20 +192,21 @@
     set("nwi", nwi.nwi === null ? "blockiert" : `${formatScore(nwi.nwi)} Punkte`);
     set("ioi", evaluated ? `${decimal.format(result.ioi)} EUR/EUR` : "blockiert");
     set("tsroi", evaluated ? `${decimal.format(result.tsroi)} : 1` : "blockiert");
-    set("totalValue", money.format(result.benefitPv));
+    const formatMoney = value => typeof value === "number" && Number.isFinite(value) ? money.format(value) : "nicht berechenbar";
+    set("totalValue", formatMoney(result.benefitPv));
     set("positiveNetValue", result.gate.passed
-      ? `konservative Szenario-Untergrenze: ${money.format(result.lowerNetBenefitPv)}`
-      : `Szenario-Untergrenze: ${money.format(result.lowerNetBenefitPv)} - keine positive Kennzahl`);
+      ? `konservative Szenario-Untergrenze: ${formatMoney(result.lowerNetBenefitPv)}`
+      : `Szenario-Untergrenze: ${formatMoney(result.lowerNetBenefitPv)} - keine positive Kennzahl`);
     set("explanation", evaluated
       ? `${selected.explanation} ${result.explanation}`
       : `${selected.explanation} ${result.gate.explanation} ${result.gate.reasons.join(" ")}`);
     const steps = output("steps");
     if (steps) {
-      const share = result.causalShare * 100;
+      const shareLabel = result.calculationComplete ? `${decimal.format(result.causalShare * 100)} %` : "nicht berechenbar";
       steps.innerHTML = [
-        `Kausaler Anteil für den beanspruchten Nutzen: ${decimal.format(share)} %. Attribution, Counterfactual (Deadweight) und Verdrängung werden vor der Bewertung berücksichtigt.`,
-        `Diskontierter direkter Nutzen: ${money.format(result.directPv)}; zusätzlicher transformativ belegter Nutzen: ${money.format(result.transformativePv)}; konservativ angesetzte Schäden: ${money.format(result.harmPv)}. Der Szenarioabschlag reduziert nur die beanspruchten Nutzenströme vor der Abzinsung, nicht Schäden.`,
-        `Diskontierter Netto-Nutzen: ${money.format(result.benefitPv)}. Diskontierte Ressourcen: ${money.format(result.costPv)} bei ${rateLabel} Diskontsatz. Demo-Annahme: r = r_K; in einer Prüfung können beide Sätze getrennt begründet werden.`,
+        `Kausaler Anteil für den beanspruchten Nutzen: ${shareLabel}. Attribution, Counterfactual (Deadweight) und Verdrängung werden vor der Bewertung berücksichtigt.`,
+        `Diskontierter direkter Nutzen: ${formatMoney(result.directPv)}; zusätzlicher transformativ belegter Nutzen: ${formatMoney(result.transformativePv)}; konservativ angesetzte Schäden: ${formatMoney(result.harmPv)}. Der Szenarioabschlag reduziert nur die beanspruchten Nutzenströme vor der Abzinsung, nicht Schäden.`,
+        `Diskontierter Netto-Nutzen: ${formatMoney(result.benefitPv)}. Diskontierte Ressourcen: ${formatMoney(result.costPv)} bei ${rateLabel} Diskontsatz. Demo-Annahme: r = r_K; in einer Prüfung können beide Sätze getrennt begründet werden.`,
         evaluated
           ? `Gate offen: T-SROI = ${money.format(result.benefitPv)} / ${money.format(result.costPv)} = ${decimal.format(result.tsroi)} : 1.`
           : `Gate blockiert: ${result.gate.reasons.join(" ")} Deshalb werden IOI und T-SROI nicht positiv ausgewiesen.`,

@@ -117,13 +117,24 @@ export function readPublicSitemapRoutes(root) {
   if (!fs.existsSync(indexPath)) return [];
   const index = fs.readFileSync(indexPath, "utf8");
   const routes = [];
+  // Older GitHub Pages builds use a single flat urlset instead of the newer
+  // sitemap index plus area files. Read that form as well so the same
+  // indexability gates cover both publication layouts.
+  const urlPattern = /<url>\s*<loc>([^<]+)<\/loc>(?:\s*<lastmod>[^<]*<\/lastmod>)?\s*<\/url>/g;
+  if (!/<sitemap>\s*<loc>/u.test(index)) {
+    for (const urlMatch of index.matchAll(urlPattern)) {
+      const url = new URL(urlMatch[1].replaceAll("&amp;", "&"));
+      if (url.origin === SITE_ORIGIN) routes.push(url.pathname);
+    }
+    return routes;
+  }
   for (const match of index.matchAll(/<sitemap>\s*<loc>([^<]+)<\/loc>\s*<\/sitemap>/g)) {
     const parsed = new URL(match[1].replaceAll("&amp;", "&"));
     if (parsed.origin !== SITE_ORIGIN) continue;
     const file = path.join(absoluteRoot, decodeURIComponent(parsed.pathname).replace(/^\/+/, ""));
     if (!fs.existsSync(file)) throw new Error(`Sitemap index target is missing: ${file}`);
     const xml = fs.readFileSync(file, "utf8");
-    for (const urlMatch of xml.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<\/url>/g)) {
+    for (const urlMatch of xml.matchAll(urlPattern)) {
       const url = new URL(urlMatch[1].replaceAll("&amp;", "&"));
       if (url.origin === SITE_ORIGIN) routes.push(url.pathname);
     }

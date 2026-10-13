@@ -1,0 +1,36 @@
+{
+  "reviewedAt": "2026-10-13",
+  "releaseTag": "woek-consistency-2026-10-09",
+  "supersedesSources": [
+    "content/site/home-explainer.json",
+    "content/site/impact-controlling-course.json",
+    "scripts/lib/impact-course.mjs",
+    "scripts/site/build-home-explainer.mjs",
+    "scripts/portal/build-impact-controlling.mjs",
+    "assets/js/kitchen-impact.js",
+    "assets/js/impact-controlling-rechner.js",
+    "scripts/publications/build-consistency-learning-editions.py"
+  ],
+  "sourceHashes": {
+    "content/site/home-explainer.json": "999b20a79b9819a2e6415b252e1fbb6844ac988baca6ddc6e42272e80bf94081",
+    "content/site/impact-controlling-course.json": "2767042396bb0be32e977c0fb7493defe76842cd166365ce99da5dde11e42182",
+    "scripts/lib/impact-course.mjs": "5eea0a3d227f05bb0e43757111f26ef97ffe3a8f33c2b6ecb2422f3702d65e61",
+    "scripts/site/build-home-explainer.mjs": "1c364a346a6d9707998c9e617a1abaca10fe0925555a0ebfe4645f747e41d6fb",
+    "scripts/portal/build-impact-controlling.mjs": "398cc5b6325c5f445542c9fc7effd15210799dc55dd0ef50e462de8fa32ddf4c",
+    "assets/js/kitchen-impact.js": "2f382e9a55a52cb035ce9751e0cdb324534c882fe98dec9d4ff94147381f0227",
+    "assets/js/impact-controlling-rechner.js": "8a41ff106adaba85fb5978cd8921ad992b87ff9f80f69f92a72b93199a15e122",
+    "scripts/publications/build-consistency-learning-editions.py": "00167af93b3f06a271e7c976d041fd63bb9dfae6388c1d687613af40876a4062"
+  },
+  "files": [
+    {
+      "filename": "woek-impact-controlling-lernweg-2026-10-13.pdf",
+      "title": "Impact Controlling: vollständiger Lernweg",
+      "kind": "explainer",
+      "supersedes": "woek-impact-controlling-lernweg-2026-10-11.pdf",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-consistency-2026-10-09/woek-impact-controlling-lernweg-2026-10-13.pdf",
+      "sha256": "83b0030ad0dffea24b28d6195079359e4c4dded88248b998fe3b0e6b9bdd2a57",
+      "pages": 21,
+      "bytes": 80934
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Phase 1 UX Completion Report
 
-Stand: 2026-08-13
+Stand: 2026-10-13
 
 ## Corporate Design
 
@@ -36,7 +36,7 @@ Alle 108 Kapitelrouten existieren. Priorisierte Kapitel wurden als Reader-Seiten
 - Kapitel 31: WÖk-IDs und Indikatorenarchitektur
 - Kapitel 32: Benchmarks, Skalen und Scorecards
 - Kapitel 33: Reverse Merit Order
-- Kapitel 34: T-SROI und systemische Transformationsmessung
+- Kapitel 34: T-SROI und die Prüfung von Transformationspfaden
 - Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume
 - Kapitel 36: Wirkung als Rechtsprinzip
 - Kapitel 37: Das Wirkungssteuergesetz WStG

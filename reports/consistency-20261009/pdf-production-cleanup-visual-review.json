@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-13",
+  "status": "PASS",
+  "scope": "Every public PDF page with a pixel difference from HEAD, plus the complete current combined book",
+  "firstReview": {
+    "manifest": "recovery/final-pdf-production-visual-pre-detail-20261013/manifest.json",
+    "manifestSha256": "d3fef616ce3799f348bf6cd61f9f92d7d58ecbcf974da67ec2bce99fdaa675ae",
+    "renderedPages": 2940,
+    "contactSheets": 118,
+    "acceptedPages": 2817,
+    "acceptedPdfs": 628,
+    "rejectedAndRebuiltPages": 123,
+    "rejectedAndRebuiltPdfs": 10
+  },
+  "remediationReview": {
+    "report": "reports/consistency-20261009/detail-compendium-visual-review-20261013.json",
+    "reportSha256": "39abc12d3699ce046c3dde3860ef30c1bfab8686d2098afc04de4a02d34d4bb9",
+    "manifest": "recovery/detail-compendia-visual-20261013/manifest.json",
+    "manifestSha256": "2bdae96d16c9e046181940667ba6403162fc46e25c518e4707d84d008d218476",
+    "uniqueReviewedPages": 107,
+    "uniquePdfs": 5,
+    "exactDuplicatePdfs": 5,
+    "paths": [
+      "assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.pdf",
+      "assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.pdf",
+      "assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.pdf",
+      "assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.pdf",
+      "assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.pdf"
+    ]
+  },
+  "finalProductionResidueReview": {
+    "report": "reports/consistency-20261009/pdf-production-residue-visual-review-final-20261013.json",
+    "reportSha256": "73d1f8e9484731b4bb4211f9377ade3e72aaab3499bd1f5b06a883587f6a0b6b",
+    "manifest": "/Users/hagen/Documents/WOEK-Relaunch-2026-10/recovery/final-pdf-residue-visual-20261013/manifest.json",
+    "manifestSha256": "6d957b1be5d295f0eb0c3cb38c486814ba950250921137719995acd067d97960",
+    "reviewedPages": 29,
+    "reviewedPdfs": 16,
+    "paths": [
+      "assets/downloads/tool_spezifikation_finanzsystem_kapital_tool_suite.pdf",
+      "assets/downloads/tool_spezifikation_medienwirkungs_tool_suite.pdf",
+      "assets/downloads/tool_spezifikation_medienwirkungscheck.pdf",
+      "assets/downloads/tool_spezifikation_wirkungsrenten_rechner.pdf",
+      "assets/downloads/tool_spezifikation_wirkungsrentenrechner.pdf",
+      "assets/downloads/tool_spezifikation_wirkungsschule_tool_suite.pdf",
+      "assets/downloads/tool_spezifikation_wissenschaft_innovation_digitalisierung_tool_suite.pdf",
+      "content/governance/woek-language-rules.pdf",
+      "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf",
+      "docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.pdf",
+      "docs/go3-sdg-referenzrahmen-v1/source/pdf/01_woek_sdgs_agenda2030_referenzrahmen_detailkonzept_v1_0.pdf",
+      "docs/go3-sdg-referenzrahmen-v1/source/pdf/02_woek_sdgplus_erweiterung_detailkonzept_v1_0.pdf",
+      "docs/go3-sdg-referenzrahmen-v1/source/pdf/03_woek_sdg_unterziele_global_europa_deutschland_detailkonzept_v1_0.pdf",
+      "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.pdf",
+      "docs/sanierung-detaildossiers/source/woek_standard_umfangreiche_detailkonzepte_dossiers_v1_0.pdf",
+      "public/downloads/exports/glossar.pdf"
+    ]
+  },
+  "independentBookReview": {
+    "report": "reports/consistency-20261009/book-pdf-visual-review.json",
+    "reportSha256": "8f9e9b7b6ab45e413d3238e57f8f77451ca0e6c3041ecd0e18e3da599b2e8622",
+    "pdf": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
+    "sha256": "807d53d55360366e888349fdf2d0bf8705353db28d5e18dbcba86c0b68ca133b",
+    "pages": 1546
+  },
+  "pixelIdenticalChangedPdfs": [
+    "assets/pdf/journal/demokratie-braucht-mehr-als-gute-sachpolitik.pdf",
+    "assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf",
+    "assets/pdf/journal/gruener-plan-deutschland-wirkungscheck.pdf",
+    "assets/pdf/journal/was-ein-tv-duell-bewirkt.pdf",
+    "assets/pdf/journal/wie-wallonien-die-extreme-rechte-klein-haelt.pdf",
+    "public/downloads/originals/NATS_WOeK_allgemein.pdf"
+  ],
+  "findings": {
+    "resolvedEditorialProductionNotes": 26,
+    "clipping": 0,
+    "overlap": 0,
+    "blankRedactionResidue": 0,
+    "remainingProductionNotes": 0,
+    "unresolved": 0
+  }
+}

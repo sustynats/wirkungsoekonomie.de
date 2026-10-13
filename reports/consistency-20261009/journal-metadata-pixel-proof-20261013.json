@@ -1,0 +1,385 @@
+{
+  "date": "2026-10-13",
+  "status": "PASS",
+  "scope": "Six metadata-only correction steps covering 71 pages; the preserved archive copies are metadata-sanitized while their rendered historical pages remain bound; one later removal of an editorial heading is separately hash-bound to the complete public PDF visual review.",
+  "correctionReport": "reports/consistency-20261009/pdf-metadata-corrections-20261013.json",
+  "correctionReportSha256": "431a5dce40724ceb8e4e0b9548f62b114552ad233fea07ad9681042265502b69",
+  "finalInventory": "reports/consistency-20261009/pdf-publishing-metadata-final-20261013.json",
+  "finalInventorySha256": "ec2bf453f4b10c424cf11bdf984b95672b69a661a6f9dafccf083de03ceef019",
+  "files": [
+    {
+      "source": "assets/pdf/journal/aktionsplan-nachhaltigkeit-detailliertes-update-2026-10-05.pdf",
+      "archive": "source-assets/originals/journal-metadata-20261013/aktionsplan-nachhaltigkeit-detailliertes-update-2026-10-05.pdf",
+      "predecessorSha256": "313fed6130dc693f934b9b3ad88f13627a7bf3fd208540f4d8cb68a8ba74a5fc",
+      "metadataOnlyOutputSha256": "fea9131843b7036b3b8fdb01d62d5c10f4bbf57c160d26dc8307e63e0d0ee969",
+      "currentSha256": "fea9131843b7036b3b8fdb01d62d5c10f4bbf57c160d26dc8307e63e0d0ee969",
+      "pages": 21,
+      "status": "PASS",
+      "metadataCorrectionRenderedPagesUnchanged": true,
+      "identicalPagePixels": [
+        {
+          "page": 1,
+          "sha256": "8fbef8060f3315dffa9a5b2c1fb836a3bede9386eb54dc32e939aeaa06742eb8"
+        },
+        {
+          "page": 2,
+          "sha256": "abf5ffe80501e9d04bde79b8df9d2c5a0c0a0779bac3c91431aa78b3800c56d2"
+        },
+        {
+          "page": 3,
+          "sha256": "3f4f47c05e6fe794fdc8a24a226ec783a49f5af218a679bcdbf4d7194c166a5e"
+        },
+        {
+          "page": 4,
+          "sha256": "8264b6130af137ebf272c3984a2da9a0fdbde53e179f9c49e5668e49879295ad"
+        },
+        {
+          "page": 5,
+          "sha256": "e7f7cc8c9b29f6fec4c25608ea57b171ed3e3e5b55b29ea8529f79a848e93032"
+        },
+        {
+          "page": 6,
+          "sha256": "e0d22a5a4b64f398687a5f6645dfbcd59e624f7fcc4f88bbb888119614d23ff8"
+        },
+        {
+          "page": 7,
+          "sha256": "ee5ab1dc4ff9887e2697185932606ae8d25ca158af7383cb389d5b6fbdd4ff00"
+        },
+        {
+          "page": 8,
+          "sha256": "d1492c8376ffaeaf0b22066e17c9d4fcc74799640e89dfaa4a8f656bd505e108"
+        },
+        {
+          "page": 9,
+          "sha256": "af093979d0ea949c9f6856c132beadb61773d7e38e62d4b273967f822dc004fd"
+        },
+        {
+          "page": 10,
+          "sha256": "4e660c2e916dcb91f5ba68d67bcdc347ee69620e0d889a7e4048ac85acc56e18"
+        },
+        {
+          "page": 11,
+          "sha256": "c16a743932f5267ec8f540c820834f404136bdf5a25c88cb08cfc691851877f9"
+        },
+        {
+          "page": 12,
+          "sha256": "943f7e093a2a6d7633e9916ed49d9546a68a7464e9dfad66239df91ae40c01a8"
+        },
+        {
+          "page": 13,
+          "sha256": "491d0d79b556a98fd3cf2d5522d7332fe31451e016d06809093c9e638e0284eb"
+        },
+        {
+          "page": 14,
+          "sha256": "195ed50f19ee46b4e31e967293db5e7705d54ce05850db5491c6cb35f42f451b"
+        },
+        {
+          "page": 15,
+          "sha256": "28ba0f4045f5a0765ed35d4a5d8c1672bf70470172fc05bf762f2f7879b10d6a"
+        },
+        {
+          "page": 16,
+          "sha256": "2b678d892d4b2682e5756dfafabb242aaee6e40a37dc56ef7969604deaae9a73"
+        },
+        {
+          "page": 17,
+          "sha256": "829c89c84cff582df5112586c259b1d0fa9360d20039b3be5c7b25d2c59e91de"
+        },
+        {
+          "page": 18,
+          "sha256": "332fcc084a19252215d7bcc583d0c4bd31ea96ca46bed773e442b9c13f5077e2"
+        },
+        {
+          "page": 19,
+          "sha256": "d0bbdaa2315467438d693634f41a3ee8a653356a023e74f4f9e043524f777ad7"
+        },
+        {
+          "page": 20,
+          "sha256": "2833e6c36ee0c03c0ca3c541f42109743c07cfb7feae4a22a5e30b6025ab99fa"
+        },
+        {
+          "page": 21,
+          "sha256": "dbb6bc7426d3fac02b0a7d977190fa963c23738988bdbc038455c14ec8db5612"
+        }
+      ],
+      "currentAdditionalReviewedVisualPages": [
+        {
+          "page": 21,
+          "reason": "public editorial heading removed after metadata correction",
+          "visualReview": "PASS",
+          "renderSha256": "94d402ae348153109896f09204942aa9cd2118e1b903cf81acafe2344b57ec2a"
+        }
+      ]
+    },
+    {
+      "source": "assets/pdf/journal/demokratie-braucht-mehr-als-gute-sachpolitik.pdf",
+      "archive": "source-assets/originals/journal-metadata-20261013/demokratie-braucht-mehr-als-gute-sachpolitik.pdf",
+      "predecessorSha256": "3febd370d89e58a832d31c10d60caf9fd8542fa359a90e14f99894b344843b33",
+      "metadataOnlyOutputSha256": "ac1f47dbe9aaea6c3cdea578d6087e68c9fd3b74c834874b9d4c72ee0639f000",
+      "currentSha256": "ac1f47dbe9aaea6c3cdea578d6087e68c9fd3b74c834874b9d4c72ee0639f000",
+      "pages": 9,
+      "status": "PASS",
+      "metadataCorrectionRenderedPagesUnchanged": true,
+      "identicalPagePixels": [
+        {
+          "page": 1,
+          "sha256": "0800467dfb6608aaba3cb3d37d67947aca6f8a4ee8b6a512e9e33fff079c7fa0"
+        },
+        {
+          "page": 2,
+          "sha256": "3f6e3f8a9a8c9596f928b402c8ed3e663583709f862a765bec4ff6436a7b1835"
+        },
+        {
+          "page": 3,
+          "sha256": "ffa0f3cf92e03858b795cee0355efc63a281195867d46f8f6c1bc437a35e1c76"
+        },
+        {
+          "page": 4,
+          "sha256": "602b3e1d2e5ddd690caccacd15c4759e8150646d67b1819685a5100b62e13939"
+        },
+        {
+          "page": 5,
+          "sha256": "282d32dbfaef3b2662c901ddecad2c73d3e161718ee49c0ec26a508846fcc4e3"
+        },
+        {
+          "page": 6,
+          "sha256": "4ac53225e3fb25b4a1405372d22ebe78dceabad133baecc457dcc9f5a62cc8fc"
+        },
+        {
+          "page": 7,
+          "sha256": "64d9bfe6afbd8534554274672928f847d0aaf4319e77a7143215f433c6ca68d3"
+        },
+        {
+          "page": 8,
+          "sha256": "c00fc2f2636da1727f0a1f916b1fc93bb40741f8ea550420657557a32ef5588a"
+        },
+        {
+          "page": 9,
+          "sha256": "2f7ab53640e602a831cecc8e983e2aa73a87c29e127d9bb6a55c6cdd2ebd69f6"
+        }
+      ],
+      "currentAdditionalReviewedVisualPages": []
+    },
+    {
+      "source": "assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf",
+      "archive": "source-assets/originals/journal-metadata-20261013/geg-wirkungscheck-ioi-t-sroi.pdf",
+      "predecessorSha256": "cadf08024cdf5178da8ffa465f95acd5ab00863f7972d9001bb00317ba9e60da",
+      "metadataOnlyOutputSha256": "e336ecc247e0814eb01d0f7f44d9dd7dc89daad710d265d1ec62ef8c63a50aca",
+      "currentSha256": "e336ecc247e0814eb01d0f7f44d9dd7dc89daad710d265d1ec62ef8c63a50aca",
+      "pages": 8,
+      "status": "PASS",
+      "metadataCorrectionRenderedPagesUnchanged": true,
+      "identicalPagePixels": [
+        {
+          "page": 1,
+          "sha256": "3194e44668e08369e2fd79ca7610ae243e0956e523944e1eecc09231ecc238b9"
+        },
+        {
+          "page": 2,
+          "sha256": "3b33566be7e672d2798e7d67225b0731288774b37aa7903a8b106d98eab80c94"
+        },
+        {
+          "page": 3,
+          "sha256": "feb2b8cde9715c194a2fae1e6250fc0a413367667fb03f6bbcd85414a97e6d3c"
+        },
+        {
+          "page": 4,
+          "sha256": "a5907ae5c7d60fe15d5737982aef6092efb9f1764eba2e587f84ccc40c074912"
+        },
+        {
+          "page": 5,
+          "sha256": "e48d06c5d227510dd58434a6ddfbdf6324208dabb3d1b256f6daeead10ec43ed"
+        },
+        {
+          "page": 6,
+          "sha256": "27b43b1d46a10df782e165e3dbaaa99da8c159d7fa7df04c45487528427962ea"
+        },
+        {
+          "page": 7,
+          "sha256": "87119f6f146a9f5dc2440777cb5e86a316165e5e3d1ce5e87e4f4cd42603cc0b"
+        },
+        {
+          "page": 8,
+          "sha256": "b0bb9ef3b91c12b55e249c917ecadbe1dfca21a191bd0cee7957526d822cb84a"
+        }
+      ],
+      "currentAdditionalReviewedVisualPages": []
+    },
+    {
+      "source": "assets/pdf/journal/gruener-plan-deutschland-wirkungscheck.pdf",
+      "archive": "source-assets/originals/journal-metadata-20261013/gruener-plan-deutschland-wirkungscheck.pdf",
+      "predecessorSha256": "b602ee8f67167be65e3780d1029a45dcd5a1d08faaa2a595597ce9a08b55ceca",
+      "metadataOnlyOutputSha256": "e945d6b09b5c7472c2fe335bf4e6659332a8a383d2da7d3aa7a1b0c751c50483",
+      "currentSha256": "e945d6b09b5c7472c2fe335bf4e6659332a8a383d2da7d3aa7a1b0c751c50483",
+      "pages": 12,
+      "status": "PASS",
+      "metadataCorrectionRenderedPagesUnchanged": true,
+      "identicalPagePixels": [
+        {
+          "page": 1,
+          "sha256": "8aebe0696c2b7facd75872db2fdbf779db53e37eba51fbcbfbd45d226aac0297"
+        },
+        {
+          "page": 2,
+          "sha256": "314ce1eed26626f05c36bf153a043af344255cad1216d4a7e6888cd4ad2ba92d"
+        },
+        {
+          "page": 3,
+          "sha256": "0018e93ab5adaf2a2ba9fd0758b9a18655aa5353c47d38722fd1511c51cd52e5"
+        },
+        {
+          "page": 4,
+          "sha256": "dc236864d2e1a53a98be463f5aec9011be63e6d8ee05840797493c3082818387"
+        },
+        {
+          "page": 5,
+          "sha256": "35832626520ca70a0fa7822737628850f1317c26902b22f05e45e27c5c985c0d"
+        },
+        {
+          "page": 6,
+          "sha256": "271ac12ed0218364cea1097b0b56cc8318664e008bf68a7e69048301e2d90d6e"
+        },
+        {
+          "page": 7,
+          "sha256": "5f92648b899bc46daf708a070fd6d89d1910382a2772cd4ed8c46a1ee3908dba"
+        },
+        {
+          "page": 8,
+          "sha256": "be605273b94fa170b04ee9153e7502fb6b199f6d3da5a9fd736d28d0ec2d22d9"
+        },
+        {
+          "page": 9,
+          "sha256": "a3aaaad6129c36c06a2bb64abba3ffc60d8df12c93347d2dfd9e6890c175b6d3"
+        },
+        {
+          "page": 10,
+          "sha256": "a2004fc71ff306280df825b1d2227318218bd06d2bfbc4fb95ce048174769587"
+        },
+        {
+          "page": 11,
+          "sha256": "2b8827340ad93cea46d997735f519a3bbb189109907aadc586887c35152ba06d"
+        },
+        {
+          "page": 12,
+          "sha256": "fe556c4605216c929c04a443532c4dbddb3baf88f785a3ba970a5c4d16982394"
+        }
+      ],
+      "currentAdditionalReviewedVisualPages": []
+    },
+    {
+      "source": "assets/pdf/journal/was-ein-tv-duell-bewirkt.pdf",
+      "archive": "source-assets/originals/journal-metadata-20261013/was-ein-tv-duell-bewirkt.pdf",
+      "predecessorSha256": "789f7ac79877a6b5013f189ece0481e860626dc782e3b050147d1cc5cebbf989",
+      "metadataOnlyOutputSha256": "b6578a04ddcfb693fffd2d0ce7787f303d3c42f0d4940a914df543e89933bb38",
+      "currentSha256": "b6578a04ddcfb693fffd2d0ce7787f303d3c42f0d4940a914df543e89933bb38",
+      "pages": 14,
+      "status": "PASS",
+      "metadataCorrectionRenderedPagesUnchanged": true,
+      "identicalPagePixels": [
+        {
+          "page": 1,
+          "sha256": "1af1d5e5da0d7dcf2588eb88382a898296d4843092bf586b57751b4482f482c7"
+        },
+        {
+          "page": 2,
+          "sha256": "246a2d92810aa1605c43fa84d70e7c329792ba2979350445239ead3755170eeb"
+        },
+        {
+          "page": 3,
+          "sha256": "994317b4f6fc71d5f6d3e160d82f1918e2cf9793ba718b097105d5edaeaf59e4"
+        },
+        {
+          "page": 4,
+          "sha256": "76ed5167f75eb7f24e9af96e359fd6a13ee307ea39f81010267324351d53c2b9"
+        },
+        {
+          "page": 5,
+          "sha256": "ff3e8dc6f26792e333222f9d77b71e29bc3dacd7e386dd525a9dc2ee8582983a"
+        },
+        {
+          "page": 6,
+          "sha256": "787bdb135d35858d941d402bb52718cb197beff49cfc104f33f47231da7abf5e"
+        },
+        {
+          "page": 7,
+          "sha256": "6d89b3976d2f72b4c1e35531a324c4eac23c519e9fb2d9f83f75ea8aa7807c3d"
+        },
+        {
+          "page": 8,
+          "sha256": "8bc0eb4dbb6b21d5fd66162d72120e4b92be14f2bfcb0a6eb1a94c1f95911b38"
+        },
+        {
+          "page": 9,
+          "sha256": "263f224304b2bb2a47844e9981767b2734a290e9e1a9e88c7d08a0720db781c9"
+        },
+        {
+          "page": 10,
+          "sha256": "55a4ee42c9e3f7d3d7c1e980ec0c8f995eaf895af34d0de513cc7f41208c7aed"
+        },
+        {
+          "page": 11,
+          "sha256": "750b44975b1db2748886ea0ed84c5247c6efcbbdc9a642f1b399a21d9ef305c1"
+        },
+        {
+          "page": 12,
+          "sha256": "438f5b2eda6df2e877311bfc3725bf60cf21d35ae3847f581f1a8d22bd7a15d1"
+        },
+        {
+          "page": 13,
+          "sha256": "fac837e74ddbcbe3c45a4d83e8496f66e63e99071d951449ab15343e683cade2"
+        },
+        {
+          "page": 14,
+          "sha256": "023b221a774fd1b2ae3a4838f52499ace8f60407c32ba8e9bcf92234fd0cbe20"
+        }
+      ],
+      "currentAdditionalReviewedVisualPages": []
+    },
+    {
+      "source": "assets/pdf/journal/wie-wallonien-die-extreme-rechte-klein-haelt.pdf",
+      "archive": "source-assets/originals/journal-metadata-20261013/wie-wallonien-die-extreme-rechte-klein-haelt.pdf",
+      "predecessorSha256": "f2b39dcb72b2fcb810b319342a0d1da4a4d50ab78461ceaa628696fa7919ce40",
+      "metadataOnlyOutputSha256": "781d4014ce02f7e6cc829c44aec23f3ae35f784dbcfcc3f5025d443cdec8845b",
+      "currentSha256": "781d4014ce02f7e6cc829c44aec23f3ae35f784dbcfcc3f5025d443cdec8845b",
+      "pages": 7,
+      "status": "PASS",
+      "metadataCorrectionRenderedPagesUnchanged": true,
+      "identicalPagePixels": [
+        {
+          "page": 1,
+          "sha256": "9ea83c4c344a97a7b86a326877e219e4b9507e43f3ede6bafe15ca60d3e5db14"
+        },
+        {
+          "page": 2,
+          "sha256": "3b1c1fa98ca1bcc95613d2c796443725672f47a4c11cef675c907b4abfdd18d3"
+        },
+        {
+          "page": 3,
+          "sha256": "9871e07bc0fe1eeeb1b9745d104d43e07aa18db209b8f25e11570266084d8cd9"
+        },
+        {
+          "page": 4,
+          "sha256": "943b21219ff8487f95006e3c520c9c4f739d2ad10da682df9aab5fee5a2b20e6"
+        },
+        {
+          "page": 5,
+          "sha256": "ff829243acf17e0f13250ad727141ecc6b52a9b54fd8c02e1c8e973dbf291ed0"
+        },
+        {
+          "page": 6,
+          "sha256": "2409e7bbf465a825ad697dc77d88e723c8f9112019652524f24feaf3df636655"
+        },
+        {
+          "page": 7,
+          "sha256": "3598d51d671c792158217a4315a410b26e3d27eb70951338db1bb4769e8b3836"
+        }
+      ],
+      "currentAdditionalReviewedVisualPages": []
+    }
+  ],
+  "totals": {
+    "files": 6,
+    "pages": 71,
+    "postMetadataReviewedVisualChanges": 1
+  }
+}

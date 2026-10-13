@@ -1,6 +1,6 @@
 # Delta-Review-Report
 
-Stand: 2026-08-02
+Stand: 2026-10-13
 
 Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schicht.
 
@@ -17,14 +17,14 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k006-lr-2026-2`
 - Quelle: Nachhaltigkeit-Systemarchitektur / führender Begriffsleitfaden
 - Aktion: Delta-Review-Ergänzung für Cluster Systemarchitektur.
-- Live-Referenztext/Hinweis: Nachhaltigkeit wird in der lebenden Referenz nicht als Zusatzlabel, ESG-Ersatz oder Berichtspflicht gelesen, sondern als Ergebnis gelingender Wirkungsrückkopplung. Maßgeblich bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie; Nachhaltigkeit beschreibt die resiliente Systemfähigkeit, die daraus entstehen kann.
+- Live-Referenztext/Hinweis: Nachhaltigkeit ist nach der führenden WÖk-Definition die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Diese Begriffsbestimmung gehört zum WÖk-Modell. Positive Netto-Wirkung, Systemresilienz und Wirkungsrückkopplung bleiben zu unterscheiden; eine einzelne positive Wirkung belegt noch keine langfristige Nachhaltigkeit.
 
 ### /referenz/kapitel-010-wirkung/ - addendum
 
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k010-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkung ist in der Wirkungsökonomie neutral und relational: die tatsächliche Veränderung von Zuständen. Wenn eine Zielgröße gemeint ist, lautet sie positive Netto-Wirkung für Mensch, Planet und Demokratie. Eine Absicht, ein Output, ein Bericht oder ein Image ist noch keine Wirkung.
 
@@ -33,7 +33,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k011-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkungspotenzial bezeichnet die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung. Der Begriff Wirkstoff wird nur als didaktische Analogie verwendet: Ein gesellschaftlicher Wirkstoff kann etwas auslösen, muss aber über Wirkmechanismus, Wirkungspfad, Kontext, Dosis, Nebenwirkung und Wechselwirkung geprüft werden.
 
@@ -42,7 +42,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k012-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkungslenkung und Wirkungsrückkopplung sind verschiedene Dinge. Wirkungslenkung legt Richtung, Ziele, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Wirkungsrückkopplung führt beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurück. Erst die Rückkopplung zeigt, ob die Lenkung beibehalten, verändert oder beendet werden muss.
 
@@ -51,7 +51,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k013-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkungsraum, Resonanzraum, Wirkungsträger und Wirkungsempfänger werden getrennt geführt. Ein Wirkungsraum ist der Bereich, in dem Zustände verändert werden; ein Resonanzraum ist ein sozialer oder kultureller Raum, in dem Deutungen, Zugehörigkeit und Reaktionen entstehen können.
 
@@ -60,7 +60,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k016-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkungsarchitektur meint nicht eine Website oder ein Diagramm, sondern das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Preisen, Steuern, Governance, Kontrolle, Lernen und Rückkopplung. Wirkungswahrheit meint Wirkungsnähe und Transparenz über Folgen, kein Wahrheitsmonopol.
 
@@ -78,7 +78,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k022-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen: Ziele, Schutzgrenzen, Prioritäten und Instrumente. Wirkungsrückkopplung ist der Lernmechanismus: Beobachtungen über tatsächliche Zustandsveränderungen, Datenqualität und Unsicherheit fließen in die nächste Entscheidung ein. Eine Preis-, Steuer- oder Förderregel kann ein Instrument der Lenkung sein; sie ist nicht mit der Rückkopplung selbst gleichzusetzen.
 
@@ -87,7 +87,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k023-lr-2026-2`
-- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
+- Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.7.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
 - Live-Referenztext/Hinweis: Wirkungsresilienz wird als positive, normativ gebundene Resilienz verstanden: Ein System bleibt unter Stress handlungsfähig, lernt und stärkt tragende Lebens-, Sozial- und Demokratiefunktionen. Robustheit allein reicht nicht; auch destruktive Systeme können robust sein.
 
@@ -96,7 +96,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k030-lr-2026-2`
-- Quelle: Technische Leitlinien WUStG / WÖk Master Items v1.2
+- Quelle: Technische Leitlinien WUStG / WÖk-Masterregister v1.5
 - Aktion: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
 - Live-Referenztext/Hinweis: Die Messlogik der lebenden Referenz unterscheidet Berichtsdaten, Steuerungsdaten und Wirkungsdaten. Daten werden erst dann wirkungsökonomisch relevant, wenn sie auf Zustandsveränderungen, Datenqualität, Systemgrenzen und Rückkopplung bezogen werden.
 
@@ -105,18 +105,18 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k031-lr-2026-2`
-- Quelle: WOeK_Master_Items_final_v1.2.xlsx
+- Quelle: WOeK_Masterregister_v1.5_2026-08-21.xlsx
 - Aktion: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
-- Live-Referenztext/Hinweis: Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
+- Live-Referenztext/Hinweis: Die WÖk-ID ist ein stabiler technischer und fachlicher Anker für einen Prüfgegenstand. Das Masterregister v1.5 unterscheidet MasterItems von operationalisierten Wirkindikatoren. Eine ID, eine SDG/SDG+-Zuordnung oder eine Regelzuweisung ist noch keine Messung und kein Wirkungsnachweis. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Leere Eingaben bleiben unbewertet; eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
 
 ### /referenz/kapitel-032-benchmarks-skalen-und-scorecards/ - addendum
 
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k032-lr-2026-2`
-- Quelle: Technische Leitlinien WUStG / WÖk Master Items v1.2
+- Quelle: Technische Leitlinien WUStG / WÖk-Masterregister v1.5
 - Aktion: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
-- Live-Referenztext/Hinweis: Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Archetypen und FinalScores müssen mit Datenqualität, Wirkungsgrenzen und Nichtkompensation verbunden werden.
+- Live-Referenztext/Hinweis: Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Regeln und FinalScores müssen mit Datenqualität, Wirkungsgrenzen, Assurance und Nichtkompensation verbunden werden. Nicht aktiv validierte Benchmarks werden nicht als aktive Bewertungsgrundlage ausgegeben.
 
 ### /referenz/kapitel-033-reverse-merit-order/ - addendum
 
@@ -143,7 +143,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k037-lr-2026-2`
 - Quelle: WStG_Oktober2025
 - Aktion: Delta-Review-Ergänzung für Cluster Steuerlogik.
-- Live-Referenztext/Hinweis: Das WStG wird als Rahmengesetz der wirkungsbasierten Steuerordnung geführt. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen.
+- Live-Referenztext/Hinweis: Das WStG ist ein vorgeschlagenes Rahmengesetz im WÖk-Modell, kein geltendes Recht. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen.
 
 ### /referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/ - addendum
 
@@ -152,7 +152,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k038-lr-2026-2`
 - Quelle: Technische Leitlinien WUStG / WP_Produkte / Apfelbeispiel
 - Aktion: Delta-Review-Ergänzung für Cluster Steuerlogik.
-- Live-Referenztext/Hinweis: Das WUStG ist die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden.
+- Live-Referenztext/Hinweis: Das WUStG ist ein Gesetzesmodell für die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie, kein geltendes Recht. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden.
 
 ### /referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/ - addendum
 
@@ -186,9 +186,9 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k050-lr-2026-2`
-- Quelle: Technische Leitlinien WUStG / WÖk Master Items v1.2
+- Quelle: Technische Leitlinien WUStG / WÖk-Masterregister v1.5
 - Aktion: Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.
-- Live-Referenztext/Hinweis: Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarks und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung ohne geprüfte Datenbasis.
+- Live-Referenztext/Hinweis: Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarkstatus, Assurance und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung und keine automatische Entscheidung ohne geprüfte Datenbasis.
 
 ### /referenz/kapitel-051-das-apfelbeispiel/ - addendum
 
@@ -249,7 +249,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k085-lr-2026-2`
-- Quelle: WP_Produkte / technische Leitlinien / WÖk Master Items v1.2
+- Quelle: WP_Produkte / technische Leitlinien / WÖk-Masterregister v1.5
 - Aktion: Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.
 - Live-Referenztext/Hinweis: Der digitale Produktpass wird als technische Brücke zwischen Produktdaten, WÖk-ID, Scorecards, Lieferkette und Rückkopplung verstanden. Er ersetzt keine Bewertung, sondern transportiert prüfbare Daten und Versionen.
 

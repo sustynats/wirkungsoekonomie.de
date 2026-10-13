@@ -27,8 +27,6 @@ def main():
     build = json.loads(BUILD.read_text())
     source = json.loads(SOURCE.read_text())
     pdf = ROOT / build['pdf']
-    if not pdf.exists():
-        pdf = ROOT / 'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf'
     if digest(SOURCE) != build['sourceSha256'] or digest(pdf) != build['pdfSha256']:
         raise RuntimeError('Reading source or PDF changed; rebuild before checking')
     if digest(ROOT / build['onlineSource']) != build['onlineSourceSha256']:

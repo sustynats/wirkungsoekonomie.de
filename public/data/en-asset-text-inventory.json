@@ -1,12 +1,12 @@
 {
   "schemaVersion": "2026-07-english-asset-text-inventory",
-  "generatedAt": "2026-08-02",
+  "generatedAt": "2026-10-13",
   "scope": "Static inventory for visible German text in website image assets. SVG text can usually be translated directly; raster images need manual/OCR review and English variants where embedded text exists.",
   "summary": {
-    "totalImages": 299,
-    "svgEditableText": 5,
-    "rasterReviewNeeded": 121,
-    "noVisibleGermanTextDetected": 173
+    "totalImages": 379,
+    "svgEditableText": 6,
+    "rasterReviewNeeded": 185,
+    "noVisibleGermanTextDetected": 188
   },
   "assets": [
     {
@@ -32,25 +32,27 @@
     {
       "file": "assets/img/blog/2026-05-17-massstabskrise.png",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Systemgrafik zur Maßstabskrise: alte Ordnung misst Bewegung, neue Ordnung steuert Wirkung für Mensch, Planet und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-05-17-massstabskrise.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 2,
+      "usageCount": 1,
       "usedBy": [
-        "blog.html",
         "blog/wir-messen-das-falsche.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Systemgrafik: Gewinn, Wachstum und Reichweite gelten als Erfolg; die Wirkungsökonomie fragt nach Wirkung.",
         "Systemgrafik zur Maßstabskrise: alte Ordnung misst Bewegung, neue Ordnung steuert Wirkung für Mensch, Planet und Demokratie."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -82,7 +84,6 @@
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Wirkstoffe (als didaktische Analogie) wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung.",
         "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Resonanzfaktoren wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -121,13 +122,15 @@
       "file": "assets/img/blog/2026-05-23-was-ist-nachhaltigkeit-wirklich.png",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 2,
+      "usageCount": 3,
       "usedBy": [
+        "blog.html",
         "blog.html",
         "blog/was-ist-nachhaltigkeit-wirklich.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
+        "Illustration zu Nachhaltigkeit, Systemresilienz, SDGs und Wirkung.",
         "Titelbild zum Beitrag Was ist Nachhaltigkeit wirklich mit Haus, Solardach, Stadt, Windrädern und Familie."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -136,8 +139,9 @@
       "file": "assets/img/blog/2026-05-27-social-taxonomy.png",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
       ],
       "detectedSvgText": [],
@@ -150,8 +154,9 @@
       "file": "assets/img/blog/2026-05-27-wirkungsschule.png",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html"
       ],
       "detectedSvgText": [],
@@ -217,7 +222,7 @@
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Infografik zu Energiegenossenschaften, Energy Sharing und Strom vom Nachbarn.",
+        "Infografik zu Energiegenossenschaften, Energy Sharing, lokaler Photovoltaik und Strom vom Nachbarn.",
         "Infografik zu Energiegenossenschaften: gemeinschaftliche Erzeugung, Teilen und Handeln von erneuerbarem Strom, lokale Nutzung, Reststrom und Vorteile für Klima, Region und Gemeinschaft."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -226,8 +231,9 @@
       "file": "assets/img/blog/2026-06-02-sprache-spaltet-oder-verbindet.png",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/sprache-als-politischer-wirkstoff-rechte-narrative.html"
       ],
       "detectedSvgText": [],
@@ -250,8 +256,9 @@
       "file": "assets/img/blog/2026-06-07-wellen-tiefen-modell-oeffentliche-kommunikation.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/wellen-tiefen-modell-oeffentliche-kommunikation.html"
       ],
       "detectedSvgText": [],
@@ -263,62 +270,84 @@
     {
       "file": "assets/img/blog/2026-06-08-der-versoehner-und-die-wellen.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Kompass zwischen dunkler politischer Sprache und heller demokratischer Zukunft als Visualisierung von Sprache als politischem Wirkstoff."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-06-08-kognitive-dissonanz-als-wirkungsbremse.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
       "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-06-09-meinungsfreiheit-ist-keine-folgenfreiheit.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Illustration einer Waage zwischen Meinungsfreiheit und Verantwortung für Wirkung, mit öffentlicher Kommunikation, Rathaus, Gericht und Stadt im Hintergrund."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-06-09-nicht-billiger-werden-besser-werden.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Illustration zu Lohnkosten, Produktivität, Innovation und Infrastruktur mit Kompass zwischen billiger werden und besser werden."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-06-10-partei-der-verwundbarkeit-afd-programm.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Illustration zur Frage Verwundbarkeit oder Resilienz mit AfD-Logo, beschädigter politischer Landschaft und resilienter Zukunftsinfrastruktur."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-06-10-schoepferisch-zerstoert-konservative-politik-systemresilienz.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Illustration zu konservativer Politik, Systemresilienz, Bewahrung und Anpassungsfähigkeit."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-06-11-wirkungsfinanzpolitik-schulden-ohne-wirkung.png",
@@ -331,7 +360,6 @@
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Wirkungsfinanzpolitik als Waage: Wirkschulden stehen Schulden ohne Wirkung gegenüber.",
         "Wirkungsfinanzpolitik als Waage: Wirkschulden mit Bildung, Klimaschutz und Infrastruktur stehen Schulden ohne Wirkung gegenüber."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -340,8 +368,9 @@
       "file": "assets/img/blog/2026-06-12-boden-kein-broetchen-wohnungsmarkt.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.html"
       ],
       "detectedSvgText": [],
@@ -354,8 +383,9 @@
       "file": "assets/img/blog/2026-06-12-geg-wirkungscheck-ioi-t-sroi.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/geg-wirkungscheck-ioi-t-sroi.html"
       ],
       "detectedSvgText": [],
@@ -368,12 +398,14 @@
       "file": "assets/img/blog/2026-06-12-gemeinwohl-kompass-wirkungsoekonomie.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
+        "Wirkung statt Kapital: geteilte Bildwelt mit altem Kapitalmaßstab, neuem Wirkungsmaßstab und Kompass für Mensch, Planet und Demokratie.",
         "Wirkung statt Kapital: ein Kompass richtet Wirtschaft an Mensch, Planet und Demokratie aus; links das alte Kapitalparadigma, rechts das Wirkungsparadigma."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -382,8 +414,9 @@
       "file": "assets/img/blog/2026-06-12-technologieoffenheit-wirkungsoffenheit-geg-verbrenner.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.html"
       ],
       "detectedSvgText": [],
@@ -396,8 +429,9 @@
       "file": "assets/img/blog/2026-06-15-ki-souveraenitaet-fable-moment.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.html"
       ],
       "detectedSvgText": [],
@@ -410,8 +444,9 @@
       "file": "assets/img/blog/2026-06-15-ki-texte-kennzeichnen-wirkung-verantwortung.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/ki-texte-kennzeichnen-wirkung-verantwortung.html"
       ],
       "detectedSvgText": [],
@@ -424,8 +459,9 @@
       "file": "assets/img/blog/2026-06-15-kollaps-zivilisation-systemresilienz-sdgplus.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.html"
       ],
       "detectedSvgText": [],
@@ -438,8 +474,9 @@
       "file": "assets/img/blog/2026-06-15-social-media-verbot-kinder-falscher-ansatz.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/social-media-verbot-kinder-falscher-ansatz.html"
       ],
       "detectedSvgText": [],
@@ -452,8 +489,9 @@
       "file": "assets/img/blog/2026-06-15-wissensgesellschaft-wirkungsgesellschaft.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html"
       ],
       "detectedSvgText": [],
@@ -466,8 +504,9 @@
       "file": "assets/img/blog/2026-06-19-was-der-staat-wirklich-produziert.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.html"
       ],
       "detectedSvgText": [],
@@ -480,8 +519,9 @@
       "file": "assets/img/blog/2026-06-29-die-stille-neubewertung.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/die-stille-neubewertung.html"
       ],
       "detectedSvgText": [],
@@ -494,8 +534,9 @@
       "file": "assets/img/blog/2026-06-30-der-verbrenner-risikomanagement-finanzsystem.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.html"
       ],
       "detectedSvgText": [],
@@ -508,8 +549,9 @@
       "file": "assets/img/blog/2026-06-30-stranded-germany-refinanzierungsresilienz.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/stranded-germany-afd-politik-refinanzierungsresilienz.html"
       ],
       "detectedSvgText": [],
@@ -522,12 +564,14 @@
       "file": "assets/img/blog/2026-07-02-wirkstoff-narrative-rechte-frames.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
+        "Dunkles Titelbild zu Wirkstoff Narrative: rechte Frames werden als kommunikativer Wirkstoff wiederholt, verstärkt und können Vertrauen sowie Demokratie belasten.",
         "Dunkles Titelbild zu Wirkstoff (didaktische Analogie) Narrative: rechte Frames werden als kommunikativer Wirkstoff (didaktische Analogie) wiederholt, verstärkt und können Vertrauen sowie Demokratie belasten."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -536,8 +580,9 @@
       "file": "assets/img/blog/2026-07-04-wirkungsinstitut-think-tank.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/warum-ich-das-wirkungsinstitut-gegruendet-habe.html"
       ],
       "detectedSvgText": [],
@@ -550,8 +595,9 @@
       "file": "assets/img/blog/2026-07-07-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.html"
       ],
       "detectedSvgText": [],
@@ -563,12 +609,16 @@
     {
       "file": "assets/img/blog/2026-07-10-das-managementmodell-der-zukunft.webp",
       "kind": "raster",
-      "status": "no-visible-german-text-detected",
-      "usageCount": 0,
-      "usedBy": [],
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
       "detectedSvgText": [],
-      "germanAltOrTitle": [],
-      "recommendation": "No action detected by this static inventory."
+      "germanAltOrTitle": [
+        "Das Managementmodell der Zukunft mit Wirkungskompass und den Wirkungsräumen Mensch, Planet, Demokratie, Unternehmen, Staat, Finanzsystem, Öffentlichkeit und Technologie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "assets/img/blog/2026-07-23-fraunhofersche-linien-des-preises.jpg",
@@ -576,7 +626,7 @@
       "status": "raster-review-needed",
       "usageCount": 2,
       "usedBy": [
-        "bibliothek/index.html",
+        "blog.html",
         "blog/die-fraunhoferschen-linien-des-preises.html"
       ],
       "detectedSvgText": [],
@@ -590,12 +640,10 @@
       "file": "assets/img/blog/2026-07-25-das-schachbrett-der-oeffentlichkeit.jpg",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 4,
+      "usageCount": 2,
       "usedBy": [
-        "bibliothek/index.html",
         "blog.html",
-        "blog/das-schachbrett-der-oeffentlichkeit.html",
-        "index.html"
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
@@ -698,6 +746,473 @@
       "detectedSvgText": [],
       "germanAltOrTitle": [
         "Wirkungsökonomisches Stufenmodell vom Auslöser zur Rückkopplung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-03-atomkraft-wetterabhaengigkeit-hinter-beton.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/atomkraft-wetterabhaengigkeit-hinter-beton.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Kernkraftwerk mit Kühltürmen an einem ausgetrockneten Flussbett; im Hintergrund Wind- und Solaranlagen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-03-nachhaltige-betriebswirtschaft-wirkungssteuerung.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/nachhaltige-betriebswirtschaft-wirkungssteuerung.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-03-wohlstandsverlust-preise-klimakrise.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wohlstandsverlust-preise-klimakrise.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Symbolbild für Klimarisiken: Waldbrand und Dürre, ein sich auflösender Kassenbon sowie Hochwasser- und Sturmschäden in einer Stadt."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-05-das-bessere-spiel-abb-1.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-bessere-spiel.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 1: Lokal plausible Entscheidungen können über Kostenverlagerung, Systemschwächung und Misstrauen eine negative Rückkopplung erzeugen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-05-das-bessere-spiel-abb-2.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-bessere-spiel.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 2: Die WÖk ist keine einzelne Kennzahl, sondern eine mehrschichtige Architektur aus Referenzrahmen, Beobachtung, Grenzen, Integrität, Rückkopplung, Kooperation, Kontrolle und Lernen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-05-das-bessere-spiel-abb-3.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-bessere-spiel.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 3: Kooperative Wehrhaftigkeit stärkt den Vertrauenskreislauf und unterbricht die Kaskade aus Täuschung, Misstrauen und pauschaler Kontrolle."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-05-das-bessere-spiel.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/das-bessere-spiel.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Geteiltes Spielfeld: Ausbeutung und Kooperation als zwei Systemlogiken."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-08-wahl-o-mat-sachsen-anhalt-2026.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wahl-o-mat-sachsen-anhalt-2026.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Karte von Sachsen-Anhalt mit Wahlzettel und Wirkungsrad für Mensch, Planet und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-09-wahl-o-mat-methodenkritik-sachsen-anhalt-2026.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wahl-o-mat-methodenkritik-sachsen-anhalt-2026.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Methodenkritik zum Wahl-O-Mat: Eine These kann unterschiedliche plausible Bedeutungen und Antworten auslösen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-sondervermoegen-svik-abb-1.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 1: Grundarchitektur des SVIK Quelle: Art. 143h GG, SVIKG und LuKIFG; eigene Darstellung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-sondervermoegen-svik-abb-2.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 2: Geplante Ausgaben der Bundessäule 2027 Quelle: BMF, Regierungsentwurf Bundeshaushalt 2027; eigene Darstellung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-sondervermoegen-svik-abb-3.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 3: BNW-Klimaklassifikation der Bundessäule 2026 und 2027 Quelle: BNW-Sondervermögenstracker, Stand Juli 2026; eigene Darstellung. Dargestellt sind nur die veröffentlichten positiven/teilpositiven und neutralen Anteile."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-sondervermoegen-svik-abb-4.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-sondervermoegen-svik-abb-5.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 5: Kumulierte Zielverfehlung in Verkehr und Gebäuden laut Projektionsdaten 2026 Quelle: Umweltbundesamt, Projektionsdaten 2026; eigene Darstellung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-wie-wirksam-ist-das-sondervermoegen-wirklich.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Deutschlandkarte über dem Reichstagsgebäude, verbunden mit Bahn, erneuerbarer Energie, Gesundheitsversorgung und den Dimensionen Mensch, Planet und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-wirkungscheck-vor-politischen-entscheidungen.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-08-15-wirkungscheck-vor-und-nach-politischen-entscheidungen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/politik-an-ihren-folgen-messen.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wirkungsportal Parlament: Wirkungscheck vor und nach politischen Entscheidungen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-20-deutschlands-nachhaltigkeitsarchitektur-wirkungssteuerung.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/nachhaltigkeit-ist-keine-parteifarbe.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Reichstagsgebäude neben der Deutschen Nachhaltigkeitsstrategie und einem digitalen Wirkungsdashboard von Zielen über Messung bis zur Wirkung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-21-enap-woek-benchmark-fuenf-bundesvorhaben.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Vergleich von eNAP-Nachhaltigkeitsprüfung und WÖk-Wirkungsmodell vor dem Reichstagsgebäude mit Gesetzesvorlage und Wirkungsfeldern."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-27-tv-duell-wirkungsoekonomische-systemanalyse.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/was-ein-tv-duell-bewirkt.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "TV-Duell mit zwei Kandidaten, Moderation und Publikum; Titel: Was ein TV-Duell bewirkt, bevor jemand gewählt ist."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-08-28-demokratie-braucht-mehr-als-gute-sachpolitik.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/demokratie-braucht-mehr-als-gute-sachpolitik.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Dunkle Illustration mit digitalem Kommunikationsnetz, Reichstagsgebäude und Karte von Sachsen-Anhalt; Titel: Demokratie braucht mehr als gute Sachpolitik."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-09-07-sachsen-anhalt-signal-fuer-europa.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/sachsen-anhalt-wahlergebnis-signal-fuer-europa.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Illustrative Collage: Sachsen-Anhalt als Signal für Europa? Wahlergebnis mit 43,8 Prozent, internationale Kommunikationsnetze und demokratische Institutionen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-09-21-wallonien-flandern-schutzmechanismen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wie-wallonien-die-extreme-rechte-klein-haelt.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Illustration einer wallonischen Landschaft mit den Schutzbereichen Politik, Medien und Zivilgesellschaft; im Vordergrund Demonstrierende."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-09-29-rne-2026-ki-klimaschutz-zukunft-der-arbeit.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/rne-2026-ki-klimaschutz-zukunft-der-arbeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelillustration: KI und Klimaschutz - Gute Arbeit gestalten. Zwei Menschen arbeiten gemeinsam an einem technischen Bauteil; ein Bildschirm zeigt Kreisläufe zwischen Technik, Umwelt und Menschen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-09-29-rne-2026-merz-wohlstand-braucht-wirkung.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/rne-2026-merz-wohlstand-braucht-wirkung.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "KI-generierte symbolische Titelillustration zur Merz-Rede beim RNE: Wohlstand braucht Wirkung, nicht nur Versprechen. Ein Redner vor Publikum und das Berliner Radialsystem; keine dokumentarische Aufnahme."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-09-29-rne-2026-nachhaltigkeitsziele-verlaessliche-politik.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/rne-2026-nachhaltigkeitsziele-verlaessliche-politik.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelillustration: Nachhaltigkeit braucht verlässliche Politik. Ein Quartier mit Solardächern, Grünflächen und barrierefreien Wegen wächst aus einem Bauplan."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-09-30-aktionsplan-nachhaltigkeit-2026-20-missionen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/aktionsplan-nachhaltigkeit-2026-20-missionen.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelillustration zum Aktionsplan Nachhaltigkeit mit Kanzleramt und Motiven zu Wohnen, Mobilität, Bildung, Gesundheit und Natur. Keine amtliche Veröffentlichung der Bundesregierung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-10-01-iooi-wirkungsoekonomie-was-hat-die-strecke-bewirkt.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/iooi-wirkungsoekonomie-was-hat-die-strecke-bewirkt.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Redaktionelle Illustration zum fiktiven Bahnbeispiel: Ein Zug auf einer Brücke, die IOOI-Ergebniskette und die Prüffragen Vergleichen, Zurechnen, Belegen und Entscheiden."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-10-02-rechtsruck-fukuyama-suche-nach-bedeutung.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/rechtsruck-fukuyama-suche-nach-bedeutung.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Redaktionelle Titelcollage zu Fukuyamas Denken und dem Rechtsruck: Anerkennung, Teilhabe und Zusammenhalt stehen Spaltung und Radikalisierung gegenüber."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-10-05-aktionsplan-nachhaltigkeit-detailliertes-update-2026.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 4,
+      "usedBy": [
+        "bibliothek/index.html",
+        "bibliothek/index.html",
+        "blog.html",
+        "blog/aktionsplan-nachhaltigkeit-detailliertes-update-2026-10-05.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelillustration zum detaillierten Update des Aktionsplans Nachhaltigkeit mit Berliner Regierungsgebäuden, fünf Handlungsfeldern und 20 Missionen. Keine amtliche Veröffentlichung der Bundesregierung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-10-09-gruener-plan-deutschland-wirkungscheck.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 5,
+      "usedBy": [
+        "bibliothek/index.html",
+        "bibliothek/index.html",
+        "blog.html",
+        "blog.html",
+        "blog/gruener-plan-deutschland-wirkungscheck.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelillustration zum Grünen-Plan im Wirkungscheck mit Reichstag, Wirkungskompass, Diagramm und den Themen Klimaschutz, soziale Gerechtigkeit, Demokratie, nachhaltige Wirtschaft und lebenswerte Regionen. Keine Parteiveröffentlichung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-10-09-gruener-plan-wirkungscheck-pruefkette.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/gruener-plan-deutschland-wirkungscheck.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Schematische Prüfkette der Wirkungsökonomie: Problem, Ziel, Eingriff, mögliche Folge und Prüfung; Querschnittsprüfung mit Gegenfaktum, Verteilung, Nebenfolgen, Schutzgrenzen und Datenqualität."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
@@ -980,6 +1495,132 @@
       "recommendation": "No action detected by this static inventory."
     },
     {
+      "file": "assets/img/books/arctic-meltdown-robert-habeck.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 3,
+      "usedBy": [
+        "wirkungsticker/analyse/arctic-meltdown-robert-habeck/index.html",
+        "wirkungsticker/analyse/arctic-meltdown-robert-habeck/index.html",
+        "wirkungsticker/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/code-null-florian-schwiecker.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "wirkungsticker/analyse/code-null-florian-schwiecker/index.html",
+        "wirkungsticker/analyse/code-null-florian-schwiecker/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/deutschland-2033-justus-bender.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "wirkungsticker/analyse/deutschland-2033-justus-bender/index.html",
+        "wirkungsticker/analyse/deutschland-2033-justus-bender/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/die-empoerungsfalle-cheema-mendel.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "wirkungsticker/analyse/die-empoerungsfalle-cheema-mendel/index.html",
+        "wirkungsticker/analyse/die-empoerungsfalle-cheema-mendel/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Offizielles Cover: Die Empörungsfalle. Wie wir wieder streiten lernen von Saba-Nur Cheema, Meron Mendel"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/die-neue-ordnung-des-wohlstands-band-1.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "wirkungsticker/analyse/die-neue-ordnung-des-wohlstands-natalie-weber/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Offizielles Cover: Die neue Ordnung des Wohlstands. Band I: Grundlagen, System und Wertschöpfung von Natalie Weber"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/die-neue-ordnung-des-wohlstands-band-2.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "wirkungsticker/analyse/die-neue-ordnung-des-wohlstands-natalie-weber/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Offizielles Cover: Die neue Ordnung des Wohlstands. Band II: Volkswirtschaft, Gesellschaft und Ausblick von Natalie Weber"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/kurzschluss-claudia-kemfert.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "wirkungsticker/analyse/kurzschluss-claudia-kemfert/index.html",
+        "wirkungsticker/analyse/kurzschluss-claudia-kemfert/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/orca-franziska-gaensler.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "wirkungsticker/analyse/orca-franziska-gaensler/index.html",
+        "wirkungsticker/analyse/orca-franziska-gaensler/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Offizielles Cover: Orca von Franziska Gänsler"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/books/werte-maja-goepel.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "wirkungsticker/analyse/werte-maja-goepel/index.html",
+        "wirkungsticker/analyse/werte-maja-goepel/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Offizielles Cover: Werte. Ein Kompass für die Zukunft von Maja Göpel"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
       "file": "assets/img/brand/app-icon-192.png",
       "kind": "raster",
       "status": "no-visible-german-text-detected",
@@ -1049,9 +1690,10 @@
       "file": "assets/img/brand/logo-header.svg",
       "kind": "svg",
       "status": "svg-editable-text",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
-        "styleguide.html"
+        "styleguide.html",
+        "vorlesen/index.html"
       ],
       "detectedSvgText": [
         "Header-Logo der Wirkungsökonomie",
@@ -1059,7 +1701,8 @@
         "WIRKUNGSÖKONOMIE"
       ],
       "germanAltOrTitle": [
-        "Header-Logo der Wirkungsökonomie"
+        "Header-Logo der Wirkungsökonomie",
+        "Wirkungsökonomie"
       ],
       "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
     },
@@ -1067,10 +1710,11 @@
       "file": "assets/img/brand/signet.svg",
       "kind": "svg",
       "status": "svg-editable-text",
-      "usageCount": 159,
+      "usageCount": 188,
       "usedBy": [
+        "admin/redaktion/index.html",
         "akademie.html",
-        "akademie.html",
+        "akademie/curriculum-v3-2.html",
         "akademie/grundlagen.html",
         "akademie/lernpfad.html",
         "akademie/pruefungen.html",
@@ -1079,8 +1723,7 @@
         "anwendungen.html",
         "anwendungen/scanner.html",
         "app/index.html",
-        "begriffe/index.html",
-        "bibliothek/index.html"
+        "begriffe/index.html"
       ],
       "detectedSvgText": [
         "Signet der Wirkungsökonomie",
@@ -1090,6 +1733,32 @@
         "Wirkungsökonomie Logo",
         "Signet der Wirkungsökonomie"
       ],
+      "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
+    },
+    {
+      "file": "assets/img/brand/wirkungsoekonomie-share-v2.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/brand/wirkungsoekonomie-share-v2.svg",
+      "kind": "svg",
+      "status": "svg-editable-text",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [
+        "Wirkungsökonomie",
+        "Das Logo der Wirkungsökonomie. Mensch, Planet und Demokratie.",
+        "Signet der Wirkungsökonomie",
+        "Drei verbundene Kreise und ein Kompass als Zeichen fuer wirkungsorientierte Orientierung.",
+        "Mensch · Planet · Demokratie"
+      ],
+      "germanAltOrTitle": [],
       "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
     },
     {
@@ -1135,12 +1804,82 @@
       "file": "assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 102,
       "usedBy": [
-        "styleguide.html"
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html",
+        "blog.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
+        "Stranded Assets im Gebäudebestand: Wenn Immobilienwirkung zum Finanzrisiko wird",
+        "Warum spätes Handeln immer teurer wird - und was Politik und Wirtschaft falsch verstehen",
+        "Warum Politik immer zu spät handelt",
+        "Warum das neue Gebäudeenergiegesetz teuer werden kann",
+        "Das Integritäts-Paradoxon - Warum Fakten uns nicht mehr retten.",
+        "Das Integritäts-Paradoxon: Warum wir gerade das zerstören, was wir bewahren wollen",
+        "Reporting-Burnout oder Resilienz-Chance?",
+        "Das größte Missverständnis bei Nachhaltigkeit",
+        "Die Architektur der europäischen Nachhaltigkeitsregulierung",
+        "Vom Wissen zur Wirkung",
+        "Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik",
+        "Multikrisen zeigen eine neue ökonomische Realität: Risiken sind keine Ideologie - sie werden eingepreist",
+        "Die Grüngasstrategie im Wärmemarkt",
+        "Wirkungsökonomische Einordnung geopolitischer Konflikte - am Beispiel des Iran-Konflikts",
+        "Social Media für Kinder - Jugendschutz oder Ersatz für fehlende Regulierung?",
+        "Die unterschätzte Macht der Tonalität in der Kommunikation",
+        "Multipolare Systemdynamik 2025 - Sicherheit, Transformation und die stille Destabilisierung Europas",
+        "Demokratie schützen, Menschen zurückgewinnen: Der lange Weg aus der Radikalisierung",
+        "Zeit der Monster - München, Macht und das große Missverständnis von Sicherheit",
+        "Der CO₂-Preis könnte zu einem der wirksamsten Kostenentlastungsinstrumente für Bürger:innen werden",
+        "Wirkungsökonomie: Wir messen Wirkung längst. Warum steuern wir noch nicht danach?",
+        "Warum der Rückhalt für Klimaschutz sinkt - und was das über unsere Demokratie verrät",
+        "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+        "Wie setzt man die Wirkungsökonomie um - ohne das System zu überfordern?",
+        "Wirkungsorientierte Unternehmensführung",
+        "Millionen Seiten - und trotzdem keine Verantwortung",
+        "Macht ohne Mehrheit: Die AfD-Strategie wirkungsökonomisch erklärt",
+        "Vom Nachhaltigkeitsbewusstsein zur Wirkungsökonomie",
+        "Warum unser Wirtschaftsmodell an seine logischen Grenzen stößt",
+        "Wirkung statt Weltbild",
+        "Wirkung schlägt Wahrheit",
+        "Wirkung schlägt Wahrheit: Wie öffentliche Kommunikation Demokratie formt",
+        "Schadenökonomie",
+        "Das größte Steuersparprogramm der Geschichte",
+        "Warum Leistung ohne Wirkung eine Illusion ist",
+        "Warum Leistung ohne Wirkung eine Illusion ist - und was Thermodynamik mit Marktwirtschaft zu tun hat",
+        "Schadenökonomie: Wie Aufhetzung und Spaltung profitabel Wirtschaft und Gesellschaft zerstören",
+        "Gedankenspiel: Wenn sich Demokratien selbst zerstören",
+        "Die Grenzen der Zukunftsforschung - und ihr blinder Fleck",
+        "Medien, Plattformen und Wirkung",
+        "Die Wirkungsökonomie als lernendes Kreislaufsystem",
+        "Warum Demokratie sich selbst destabilisiert",
+        "Wenn Politik scheitert, übernimmt der Finanzmarkt - und das ist unsere Chance",
+        "Die Wirkungsökonomie - Warum wir ein neues Gesellschaftsmodell brauchen",
+        "Medien &amp; Wirkung - Warum die Zukunft der Demokratie von sauberen Informationsflüssen abhängt",
+        "Produktbesteuerung durch Wirkung - Wenn Preise beginnen, die Wahrheit zu sagen",
+        "Wie die Wirkungsökonomie das Rentenproblem wirklich lösen kann",
+        "Wirkung statt Leistung",
+        "Wirkung statt Zertifikate - wie die Wirkungsökonomie den Label-Dschungel beendet",
+        "Warum das Richtige endlich günstiger wird",
+        "Neues Grundsicherungs-Kapitel - nur ein Namenswechsel? Eine WÖk-Analyse zum CDU/SPD-Plan zur Abschaffung des Bürgergelds",
+        "Technologieoffenheit - Freiheit oder Fossilfalle?",
+        "Warum die freie Marktwirtschaft sich selbst zerstört - und wie sie zu retten ist",
+        "Was China mit Solar macht - und warum wir davon profitieren",
+        "Solar verschenken wäre billiger, als weitermachen wie bisher.",
+        "Wenn Maschinen arbeiten - warum die Wirkungsökonomie keine Angst vor KI hat",
+        "Die Wirkungsökonomie - Warum wir Wirtschaft, Politik und Gesellschaft neu denken müssen",
+        "Die Wirtschaft ist keine Märklin-Eisenbahn.",
+        "Wirkung statt Kapital - Zeit für eine neue Logik",
         "Reduzierte Systemgrafik der Wirkungsökonomie"
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -1173,8 +1912,9 @@
       "file": "assets/img/generated/oeffentlicher-wirkungsraum-hero.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 2,
       "usedBy": [
+        "blog.html",
         "blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html"
       ],
       "detectedSvgText": [],
@@ -2290,16 +3030,12 @@
     {
       "file": "assets/img/linkedin/thumbs/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-01-80848ceef5.webp",
       "kind": "raster",
-      "status": "raster-review-needed",
-      "usageCount": 1,
-      "usedBy": [
-        "blog.html"
-      ],
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
       "detectedSvgText": [],
-      "germanAltOrTitle": [
-        "Abbildung aus dem Beitrag Warum wir schneller „grün“ werden, als es sich AfD und CDU je vorstellen konnten"
-      ],
-      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
     },
     {
       "file": "assets/img/methodenraum/praesentation/slide-01.jpg",
@@ -2452,6 +3188,29 @@
       "recommendation": "No action detected by this static inventory."
     },
     {
+      "file": "assets/img/people/natalie-weber-buch-und-wirkung.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 20,
+      "usedBy": [
+        "wirkungsticker/analyse/arctic-meltdown-robert-habeck/index.html",
+        "wirkungsticker/analyse/arctic-meltdown-robert-habeck/index.html",
+        "wirkungsticker/analyse/code-null-florian-schwiecker/index.html",
+        "wirkungsticker/analyse/code-null-florian-schwiecker/index.html",
+        "wirkungsticker/analyse/deutschland-2033-justus-bender/index.html",
+        "wirkungsticker/analyse/deutschland-2033-justus-bender/index.html",
+        "wirkungsticker/analyse/die-empoerungsfalle-cheema-mendel/index.html",
+        "wirkungsticker/analyse/die-empoerungsfalle-cheema-mendel/index.html",
+        "wirkungsticker/analyse/die-neue-ordnung-des-wohlstands-natalie-weber/index.html",
+        "wirkungsticker/analyse/die-neue-ordnung-des-wohlstands-natalie-weber/index.html",
+        "wirkungsticker/analyse/kurzschluss-claudia-kemfert/index.html",
+        "wirkungsticker/analyse/kurzschluss-claudia-kemfert/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
       "file": "assets/img/people/natalie-weber-sustynats.jpeg",
       "kind": "raster",
       "status": "raster-review-needed",
@@ -2476,16 +3235,60 @@
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
-      "file": "assets/img/people/natalie-weber.jpeg",
+      "file": "assets/img/people/natalie-weber-woek-analyse.jpg",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 1,
+      "usageCount": 100,
       "usedBy": [
-        "index.html"
+        "wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html",
+        "wirkungsticker/analyse/basf-und-evonik-gro-er-ist-noch-nicht-zukunftsfahiger-915f16/index.html",
+        "wirkungsticker/analyse/basf-und-evonik-gro-er-ist-noch-nicht-zukunftsfahiger-915f16/index.html",
+        "wirkungsticker/analyse/cnn-ist-kein-gewohnlicher-unternehmenszukauf-450068/index.html",
+        "wirkungsticker/analyse/cnn-ist-kein-gewohnlicher-unternehmenszukauf-450068/index.html",
+        "wirkungsticker/analyse/demokratie-lasst-sich-nicht-nur-militarisch-verteidigen-084bfa/index.html",
+        "wirkungsticker/analyse/demokratie-lasst-sich-nicht-nur-militarisch-verteidigen-084bfa/index.html",
+        "wirkungsticker/analyse/der-aktionsplan-ist-da-jetzt-zahlt-was-sich-wirklich-andert-d65ba8/index.html",
+        "wirkungsticker/analyse/der-aktionsplan-ist-da-jetzt-zahlt-was-sich-wirklich-andert-d65ba8/index.html",
+        "wirkungsticker/analyse/der-tankrabatt-kann-preise-dampfen-und-setzt-zugleich-das-falsche-signal-04aafe/index.html",
+        "wirkungsticker/analyse/der-tankrabatt-kann-preise-dampfen-und-setzt-zugleich-das-falsche-signal-04aafe/index.html",
+        "wirkungsticker/analyse/deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/people/natalie-weber.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/people/nats_portrait_nachgehoert.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 168,
+      "usedBy": [
+        "wirkungsticker/analyse/bei-lanz-reformen-machtfragen-und-die-rechnung-hinter-der-f-35-6fb2d5/index.html",
+        "wirkungsticker/analyse/bei-lanz-reformen-machtfragen-und-die-rechnung-hinter-der-f-35-6fb2d5/index.html",
+        "wirkungsticker/analyse/caren-miosga-der-wahlabend-wird-zum-streit-uber-reformen-und-politische-mitte-a4f2be/index.html",
+        "wirkungsticker/analyse/caren-miosga-der-wahlabend-wird-zum-streit-uber-reformen-und-politische-mitte-a4f2be/index.html",
+        "wirkungsticker/analyse/der-westen-als-streitbegriff-was-historische-selbstbilder-heute-bewirken-697da5/index.html",
+        "wirkungsticker/analyse/der-westen-als-streitbegriff-was-historische-selbstbilder-heute-bewirken-697da5/index.html",
+        "wirkungsticker/analyse/extremhitze-wenn-der-rettungsdienst-an-seine-grenzen-kommt-6710e4/index.html",
+        "wirkungsticker/analyse/extremhitze-wenn-der-rettungsdienst-an-seine-grenzen-kommt-6710e4/index.html",
+        "wirkungsticker/analyse/fachkraftemangel-ist-mehr-als-eine-frage-der-arbeitsstunden-cfb7ef/index.html",
+        "wirkungsticker/analyse/fachkraftemangel-ist-mehr-als-eine-frage-der-arbeitsstunden-cfb7ef/index.html",
+        "wirkungsticker/analyse/gerechtigkeit-als-prufstein-was-die-illner-runde-sichtbar-macht-a03817/index.html",
+        "wirkungsticker/analyse/gerechtigkeit-als-prufstein-was-die-illner-runde-sichtbar-macht-a03817/index.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Natalie Weber, Begründerin der Wirkungsökonomie"
+        "Natalie Weber mit Kopfhörern und Smartphone am Tisch"
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
@@ -2580,6 +3383,425 @@
       "detectedSvgText": [],
       "germanAltOrTitle": [],
       "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/a-alltag-v2.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "umfragen/stadtvergleich-bundestagswahl-2025/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Dieselbe Stadt mit gemischtem Energieausbau, erhaltenen Straßen- und Parkflächen sowie ergänzten Wohngebäuden."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/a.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/b-alltag-v2.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/b-alltag-v3.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/b.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/basis.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "umfragen/stadtvergleich-bundestagswahl-2025/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Fiktive deutsche Stadt mit Umland, Fluss, Bahnhof, Wohnvierteln, Kita, Schule und Krankenhaus. Gemeinsamer Ausgangszustand aller Szenarien."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/c-alltag-v2.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/c-alltag-v3.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/c.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/d-energy-v2.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/d.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/e-alltag-v2.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/e-alltag-v3.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/e.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/f-alltag-v2.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/f.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/g-alltag-v3.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/polls/wirkstadt/g.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/gelingens-und-scheiternsbedingungen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Gegenüberstellung von Gelingensbedingungen wie Wirkungswahrheit, faire Lastenverteilung, glaubwürdige Regeln, Machtbegrenzung und Lernfähigkeit sowie Scheiternsbedingungen wie Scheingenauigkeit, ungerechter Übergang, Willkür, Capture und starre Kennzahlen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/kooperative-wehrhaftigkeit-kreislauf.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Kreislauf aus Vertrauensvorschuss, Transparenz und Beobachtbarkeit, fairer proportionaler Reaktion, Wiedergutmachung und Lernen sowie erneuerter Kooperation."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/sdg-plus-dreischichtige-architektur.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "SDG+ als drei Ebenen: Ziele und Schutzrahmen, systemische Ermöglichungsbedingungen sowie Integritäts- und Vertrauensschicht mit Verfahrensgerechtigkeit, institutioneller Vertrauenswürdigkeit, Datenintegrität, Machtbegrenzung, Reparatur und Lernfähigkeit."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/synergetisches-vertrauensmodell.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Kreislauf aus Kooperation, bestätigter Verlässlichkeit, Vertrauen, niedrigeren Transaktionskosten und Innovation, geschützt durch Transparenz, risikobasierte Verifikation, proportionale Folgen und Wiedergutmachung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/wirkungsdilemmata-familie.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Übersicht über gekoppelte Wirkungsdilemmata: Gefangenendilemma, öffentliche Güter, Allmende, Assurance, Koordination, Eskalation, Freiwilligendilemma, Prinzipal-Agent, intergenerationelle Dilemmata, Lock-in, Macht und Capture, Anticommons, Goodhart-Effekte und Vertrauensbruch."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/wirkungsintegritaet-schutzarchitektur.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Zwölf übereinanderliegende Schutzschichten von tatsächlicher Zustandsveränderung bis Rechtsschutz und Korrektur."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus/woek-mehrschichtige-architektur.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Sieben Schichten der Wirkungsökonomie: Referenzrahmen, Wirkungswahrheit, Wirkungsgrenzen, Rückkopplung, Kooperation, Integrität sowie Lernen. Normativer Kern ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/publications/woek-architektur-v15.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/publications/woek-systemhierarchie-v15.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/shows/lage-der-nation-official.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "wirkungsticker/analyse/ldn492-nachgehort-wie-aus-39-sitzen-tatsachliche-macht-werden-kann-defd69/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/shows/lanz-precht-official.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 8,
+      "usedBy": [
+        "wirkungsticker/analyse/nachgehort-eine-partei-wirkt-lange-bevor-sie-regiert-741dd3/index.html",
+        "wirkungsticker/analyse/nachgehort-ki-apokalypse-zwischen-realem-risiko-und-eigener-geschaftserzahlung-0e73a0/index.html",
+        "wirkungsticker/analyse/nachgehort-lanz-und-precht-uber-antisemitismus-israelkritik-und-politische-instrumentalisierung-6e29b0/index.html",
+        "wirkungsticker/analyse/nachgehort-vergesellschaftung-schafft-keinen-neuen-wohnraum-kann-aber-mieten-begrenzen-a4f28c/index.html",
+        "wirkungsticker/analyse/pisa-lesen-lehrermangel-was-diese-folge-als-bildungsproblem-sichtbar-macht-f5afad/index.html",
+        "wirkungsticker/analyse/wenn-demokratie-mehr-sein-muss-als-ein-wahlergebnis-e4839d/index.html",
+        "wirkungsticker/analysen/index.html",
+        "wirkungsticker/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/shows/maithink-x-official.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 6,
+      "usedBy": [
+        "wirkungsticker/analyse/maithink-x-ordnet-su-stoffe-zwischen-zuckerersatz-und-unsicherheit-ein-959092/index.html",
+        "wirkungsticker/analyse/nachgesehen-maithink-x-macht-me-cfs-sichtbar-und-zeigt-die-grenzen-des-wissens-179b02/index.html",
+        "wirkungsticker/analyse/pfas-warum-alles-verbieten-nicht-die-ganze-antwort-ist-786ec7/index.html",
+        "wirkungsticker/analyse/was-musik-mit-uns-macht-und-warum-unsere-ohren-nicht-neutral-sind-359448/index.html",
+        "wirkungsticker/analyse/wasser-ist-da-aber-nicht-uberall-sicher-verfugbar-48b787/index.html",
+        "wirkungsticker/analyse/wenn-sich-erinnerungen-echt-anfuhlen-aber-falsch-sein-konnen-bdc55e/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/shows/markus-lanz-official.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 18,
+      "usedBy": [
+        "wirkungsticker/analyse/bei-lanz-reformen-machtfragen-und-die-rechnung-hinter-der-f-35-6fb2d5/index.html",
+        "wirkungsticker/analyse/markus-lanz-machtkampf-antisemitismus-und-die-frage-nach-dem-politischen-streit-e1716e/index.html",
+        "wirkungsticker/analyse/markus-lanz-vom-17-september-2026-macht-wohnungsnot-und-die-grenzen-politischer-erzahlungen-31e83e/index.html",
+        "wirkungsticker/analyse/markus-lanz-zwischen-afd-abgrenzung-europa-und-dem-streit-uber-migration-259c3f/index.html",
+        "wirkungsticker/analyse/markus-lanz-zwischen-politischer-brandmauer-und-wachsender-wut-6fd1ca/index.html",
+        "wirkungsticker/analyse/markus-lanz-zwischen-wahlniederlage-brandmauer-und-der-frage-was-demokratie-leisten-muss-9c3352/index.html",
+        "wirkungsticker/analyse/nachgesehen-wenn-aus-wahlerfolg-staatsmacht-wird-markus-lanz-nach-sachsen-anhalt-8f185b/index.html",
+        "wirkungsticker/analyse/nachgesehen-wenn-wahlergebnisse-zu-regierungsfragen-werden-cad1af/index.html",
+        "wirkungsticker/analyse/nachgesehen-wenn-wohnungsnot-machtfragen-und-abgrenzung-zusammenkommen-498e80/index.html",
+        "wirkungsticker/analyse/nachgesehen-zwischen-rentenstreit-parteikrise-und-kriegsalltag-1331ef/index.html",
+        "wirkungsticker/analyse/was-die-wahlabende-uber-berlin-schwerin-und-die-bundespolitik-zeigen-8ee28f/index.html",
+        "wirkungsticker/analyse/wenn-die-brandmauer-im-ungefahren-endet-ab743b/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/shows/maybrit-illner-official.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 7,
+      "usedBy": [
+        "wirkungsticker/analyse/gerechtigkeit-als-prufstein-was-die-illner-runde-sichtbar-macht-a03817/index.html",
+        "wirkungsticker/analyse/nachgesehen-die-denkzettelwahl-was-muss-sich-andern-358de7/index.html",
+        "wirkungsticker/analyse/nachgesehen-viele-krisen-wenig-ruckhalt-woruber-bei-maybrit-illner-gestritten-wurde-a19eee/index.html",
+        "wirkungsticker/analyse/nachgesehen-wenn-wahlergebnisse-reformen-und-brandmauern-unter-druck-setzen-9b97bc/index.html",
+        "wirkungsticker/analyse/wenn-reformen-gerecht-sein-sollen-reicht-tempo-nicht-112de9/index.html",
+        "wirkungsticker/analysen/index.html",
+        "wirkungsticker/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/shows/systemfragen-official.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/shows/terra-x-lesch-official.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 3,
+      "usedBy": [
+        "wirkungsticker/analyse/extremhitze-wenn-der-rettungsdienst-an-seine-grenzen-kommt-6710e4/index.html",
+        "wirkungsticker/analyse/maja-gopel-warum-veranderung-politisch-schwer-wird-bdd5b0/index.html",
+        "wirkungsticker/analyse/wenn-science-fiction-an-die-grenzen-der-physik-geht-a754a8/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
     {
       "file": "public/assets/imported/woek-main-2026/image1.png",

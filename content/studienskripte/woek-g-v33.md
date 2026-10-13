@@ -439,7 +439,7 @@ Der **NWI** ordnet ein Wirkungsprofil auf einer offengelegten Skala. Er zeigt po
 
 Der **IOI** ist eine engere Geldrechnung. Er fragt: Wie viel direkt monetarisierter und kausal begrenzter Nettonutzen entsteht je Ressourceneuro? Dafür müssen Nutzen, Schäden, Investition und inkrementelle Kosten in Euro derselben Preis-, Zeit- und Systembasis dokumentiert sein.
 
-Der **T-SROI** baut nicht aus NWI-Punkten oder einer allgemeinen Vorstellung von Transformation eine zweite Quote. Er verwendet dieselbe Geldlogik wie der IOI und ergänzt sie nur um einen zusätzlich belegten Transformationsnutzenstrom. Dieser Strom kann beispielsweise aus einer nachweislich übernommenen Praxis, einer belegten dauerhaften Standardänderung oder einer messbaren Folgewirkung entstehen. Er braucht aber einen eigenen Wirkpfad, Empfängerkreis, Vergleichsfall, Zeitraum, Preisbasis und Zurechnungsanteil. Ohne diesen Nachweis bleibt der Befund eine Transformationshypothese oder ein Wirkungsrisiko - nicht ein Aufschlag.
+Der **T-SROI** baut nicht aus NWI-Punkten oder einer allgemeinen Vorstellung von Transformation eine zweite Quote. Er verwendet dieselbe Geldlogik wie der IOI und ergänzt sie nur um einen zusätzlich belegten Transformationsnutzenstrom. Dieser Strom kann beispielsweise aus einer nachweislich übernommenen Praxis, einer belegten dauerhaften Standardänderung oder einer messbaren Folgewirkung entstehen. Er braucht aber einen eigenen Wirkpfad, Empfängerkreis, Vergleichsfall, Zeitraum, Preisbasis und Zurechnungsanteil. Ohne diesen Nachweis bleibt der Befund eine Transformationshypothese oder ein Wirkungsrisiko – nicht ein Aufschlag.
 
 Die drei Fragen lassen sich so merken:
 
@@ -455,7 +455,7 @@ Eine rote Linie oder ein negatives Kernprofil nach Reverse Merit Order wird nich
 
 Der klassische **ROI** fragt nach finanziellem Rückfluss im Verhältnis zum eingesetzten Kapital. Das kann für eine Wirtschaftlichkeitsentscheidung wichtig sein, beschreibt aber keine umfassende Wirkung auf Mensch, Planet oder Demokratie.
 
-Der klassische **SROI** macht gesellschaftliche, soziale oder ökologische Folgen in Geld sichtbar. Seine Qualität hängt - wie bei jeder Monetarisierung - von Systemgrenze, Preisbasis, Vergleichsfall, Doppelzählungen und der Behandlung von Schäden ab.
+Der klassische **SROI** macht gesellschaftliche, soziale oder ökologische Folgen in Geld sichtbar. Seine Qualität hängt – wie bei jeder Monetarisierung – von Systemgrenze, Preisbasis, Vergleichsfall, Doppelzählungen und der Behandlung von Schäden ab.
 
 Der **NWI** bleibt davon getrennt: Er ist ein begründetes Wirkungsprofil, keine Währung. **IOI** und **T-SROI** sind dagegen Eurorechnungen. Der IOI enthält direkt monetarisierten, kausal begrenzten Nutzen. Der T-SROI enthält denselben direkten Nutzen und nur zusätzlich einen eigenständig belegten Transformationsnutzen. Schäden \(S\) werden innerhalb derselben Systemgrenze separat abgezogen. Beide Quoten bleiben geschlossen, wenn das Schutz-Gate nicht offen ist.
 
@@ -989,7 +989,7 @@ Politische Anschlussfähigkeit und Umsetzungsoptionen
 
 SDG-/SDG+-Bezug
 
-Website- und Bereichintegration
+Anwendung
 
 Fazit
 
@@ -1066,7 +1066,7 @@ Politische Anschlussfähigkeit und Umsetzungsoptionen
 
 SDG-/SDG+-Bezug
 
-Website- und Bereichintegration
+Anwendung
 
 Fazit
 
@@ -1098,7 +1098,7 @@ Inhaltsübersicht #
 
 Frühere Lehrtexte enthielten eine multiplikative Darstellung des T-SROI. Sie bleibt nicht als Rechenregel in dieser Lernfassung stehen, denn eine Formel muss nicht nur eindrucksvoll aussehen, sondern auch mit ihren Einheiten funktionieren. Punkte, Prozentwerte, Euro und Vermutungen über spätere Verbreitung sind verschiedene Messgrößen. Sie können nebeneinander erklärt werden, aber nicht ohne Übersetzung einfach miteinander multipliziert werden.
 
-Der aktuelle Ausgangspunkt ist deshalb schlicht: Erst beschreiben wir den Wirkpfad. Dann prüfen wir das Profil. Dann rechnen wir - wenn alle nötigen Euroströme, Annahmen und Schutzbedingungen vorliegen. Das ist weniger spektakulär als eine große Gesamtzahl, aber genau dadurch überprüfbar.
+Der aktuelle Ausgangspunkt ist deshalb schlicht: Erst beschreiben wir den Wirkpfad. Dann prüfen wir das Profil. Dann rechnen wir – wenn alle nötigen Euroströme, Annahmen und Schutzbedingungen vorliegen. Das ist weniger spektakulär als eine große Gesamtzahl, aber genau dadurch überprüfbar.
 
 #### 7.8.1 Drei Fragen, drei Werkzeuge
 
@@ -1231,7 +1231,7 @@ Bevor du eine T-SROI-Zahl akzeptierst, stelle fünf Fragen:
 2. Ist klar, welcher Nutzen direkt und welcher transformativ ist?
 3. Gibt es für den transformativ ausgewiesenen Teil einen eigenen Wirkpfad und eine Gegenhypothese?
 4. Sind Schäden separat, Systemgrenze und Gegenfaktik sichtbar?
-5. Ist das Schutz-Gate offen - oder wäre „blockiert / nicht bewertbar“ die ehrlichere Antwort?
+5. Ist das Schutz-Gate offen – oder wäre „blockiert / nicht bewertbar“ die ehrlichere Antwort?
 
 Kann eine dieser Fragen nicht beantwortet werden, ist das kein Grund, das Projekt schlechtzureden. Es ist ein Grund, die Rechnung noch nicht als positive Wirkungsbehauptung auszugeben.
 
@@ -1269,7 +1269,7 @@ Eine gute Tabelle enthält nicht nur Zahlen. Sie sagt auch, woher die Zahlen kom
 
 Diese Karte ist keine Bürokratie um der Bürokratie willen. Sie ist das Etikett auf der Dose. Wer weiß, was drin ist, kann entscheiden, ob die Dose für die Frage passt. Wer das Etikett weglässt, kann aus derselben Zahl fast alles machen.
 
-Auch externe Quellen brauchen eine Rolle. Ein gesetzlicher Emissionsfaktor kann eine Rechenannahme stützen. Eine wissenschaftliche Studie kann einen Wirkpfad oder einen Schadenskostensatz begründen. Ein Unternehmensbericht kann Daten liefern, aber nicht ohne Weiteres die eigene positive Wirkung beweisen. Eine Expert:innen-Einschätzung kann eine Annahme plausibilisieren, aber sie ersetzt keine Beobachtung. In der Dokumentation sollte deshalb neben jeder Quelle stehen: Messung, Studie, Modell, Rechtsquelle, Schätzung oder Erfahrungswissen. So wird sichtbar, was eine Quelle kann - und was nicht.
+Auch externe Quellen brauchen eine Rolle. Ein gesetzlicher Emissionsfaktor kann eine Rechenannahme stützen. Eine wissenschaftliche Studie kann einen Wirkpfad oder einen Schadenskostensatz begründen. Ein Unternehmensbericht kann Daten liefern, aber nicht ohne Weiteres die eigene positive Wirkung beweisen. Eine Expert:innen-Einschätzung kann eine Annahme plausibilisieren, aber sie ersetzt keine Beobachtung. In der Dokumentation sollte deshalb neben jeder Quelle stehen: Messung, Studie, Modell, Rechtsquelle, Schätzung oder Erfahrungswissen. So wird sichtbar, was eine Quelle kann – und was nicht.
 
 #### 7.8.12 Mini-Workshop: Aus einem Projekt eine saubere Vorlage machen
 

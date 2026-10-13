@@ -721,7 +721,7 @@ function overviewPage() {
     <section class="section"><h2>Mit dem Beispiel selbst rechnen</h2><p>Der einfache Rechner führt in drei Schritten von der Beobachtung über den Vergleich zur Jahresplanung. Die fachliche Geldrechnung ist eine optionale Vertiefung.</p><a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Den einfachen Rechner öffnen</a></section>
     <section class="section section-soft" id="vertiefung-arbeitsmaterial" data-publication-hub="curated" aria-labelledby="vertiefung-arbeitsmaterial-title">
       <h2 id="vertiefung-arbeitsmaterial-title">Fachgrundlagen und Materialien</h2>
-      <p data-pdf-exclude>${editionLink("woek-impact-controlling-lernweg-2026-09-06.pdf", "Den vollständigen Lernweg als PDF lesen")}</p>
+      <p data-pdf-exclude>${editionLink("woek-impact-controlling-lernweg-2026-10-13.pdf", "Den vollständigen Lernweg als PDF lesen")}</p>
       <p>Für aktuelle Rechnungen ist der T-SROI-Rechenstandard v1.1 maßgeblich. Frühere konzeptionelle Papiere bleiben nachvollziehbar, begründen aber keine abweichende aktuelle Rechenregel.</p>
       <div id="methodenpapiere" class="card-grid three">
         <article class="card"><p class="card-kicker">Führende Rechenfassung · v1.1</p><h3 class="card-title">T-SROI: Nutzen, Kosten und Schutz-Gate</h3><p>Kausal begrenzte und diskontierte Netto-Nutzenrechnung. Profilwerte, Geldströme und Schutzentscheidung bleiben getrennt.</p><div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div></article>

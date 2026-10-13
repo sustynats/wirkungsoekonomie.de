@@ -4,10 +4,12 @@ import {escapeHtml} from './explainer-components.mjs';
 function allPdfEditions() {
   const historical = JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json', 'utf8')).files;
   const learning = JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json', 'utf8')).files;
+  const learningV2 = JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-10-11.json', 'utf8')).files;
+  const learningV3 = JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-10-13.json', 'utf8')).files;
   const state=JSON.parse(fs.readFileSync('assets/data/state-benchmark-edition-2026-09-06.json','utf8')).files;
   const modelV11=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8')).files;
   const modelV12=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-2.json','utf8')).files;
-  return [...historical, ...learning, ...state, ...modelV11, ...modelV12];
+  return [...historical, ...learning, ...learningV2, ...learningV3, ...state, ...modelV11, ...modelV12];
 }
 export function currentPdfEditions() {
   const all = allPdfEditions();

@@ -1,6 +1,7 @@
 (function initImpactCalculations(root) {
   "use strict";
 
+  // consistency-20261009: missing inputs are not neutral observations.
   const MIN_DATA_QUALITY = 0.6;
   const MAX_HORIZON_YEARS = 100;
 
@@ -35,47 +36,37 @@
 
   function calculateFinalScore(scores, redLineActive = false) {
     const entries = Object.entries(scores || {});
-    const values = entries.map(([, value]) => clampScore(value));
-    const weakestIndex = values.length ? values.indexOf(Math.min(...values)) : -1;
-    const weakestField = weakestIndex >= 0 ? entries[weakestIndex][0] : "nicht gesetzt";
-    if (redLineActive) {
-      return {
-        finalScore: -3,
-        weakestField: "rote Linie",
-        status: "blocked",
-        explanation: "Eine rote Linie blockiert die positive Gesamtbehauptung. Gute Werte in anderen Feldern heben sie nicht auf.",
-      };
+    if (redLineActive === true) {
+      return { finalScore: -3, weakestField: "rote Linie", status: "blocked",
+        explanation: "Eine rote Linie blockiert die positive Gesamtbehauptung. Gute Werte in anderen Feldern heben sie nicht auf." };
     }
-    const finalScore = values.length ? Math.min(...values) : 0;
-    return {
-      finalScore,
-      weakestField,
-      status: finalScore > 0 ? "positive" : finalScore === 0 ? "uncertain" : "critical",
-      explanation: "Der FinalScore folgt der Reverse Merit Order: Das schwächste Kernfeld begrenzt die Gesamtbewertung.",
-    };
+    const invalid = entries.filter(([, value]) => !isScoreValue(value));
+    if (!entries.length || invalid.length) {
+      return { finalScore: null, weakestField: invalid.map(([key]) => key).join(", ") || "nicht gesetzt", status: "unassessed",
+        explanation: "Das Profil ist unvollständig oder enthält ungültige Werte. Fehlende Daten sind nicht der neutrale Wert 0." };
+    }
+    const values = entries.map(([, value]) => Number(value));
+    const finalScore = Math.min(...values);
+    return { finalScore, weakestField: entries[values.indexOf(finalScore)][0],
+      status: finalScore > 0 ? "positive" : finalScore === 0 ? "neutral" : "critical",
+      explanation: "Der FinalScore folgt in diesem Modell der Reverse Merit Order: Das schwächste dokumentierte Kernfeld begrenzt die Gesamtbewertung." };
   }
 
-  function calculateNWI({ positive = 0, negative = 0, redLineActive = false, gatePassed = false } = {}) {
-    const raw = number(positive) - Math.abs(number(negative));
-    if (redLineActive || gatePassed !== true) {
-      return {
-        raw,
-        nwi: null,
-        status: "blocked",
-        explanation: "Der Rohwert bleibt für die Prüfung sichtbar, darf bei geschlossenem Schutz-Gate aber nicht als positive Netto-Wirkung ausgewiesen werden.",
-      };
+  function calculateNWI({ positive, negative, redLineActive = false, gatePassed = false } = {}) {
+    const complete = isExplicitFiniteNumber(positive) && Number(positive) >= 0 && isExplicitFiniteNumber(negative);
+    const raw = complete ? Number(positive) - Math.abs(Number(negative)) : null;
+    if (!complete || !Number.isFinite(raw) || redLineActive || gatePassed !== true) {
+      return { raw, nwi: null, status: "blocked",
+        explanation: !complete
+          ? "Die Profilwerte sind nicht vollständig dokumentiert. Fehlende Daten werden nicht mit 0 ersetzt."
+          : "Der Rohwert bleibt für die Prüfung sichtbar; bei geschlossenem Schutz-Gate wird keine positive Netto-Wirkung ausgewiesen." };
     }
-    return {
-      raw,
-      nwi: raw,
-      status: raw > 0 ? "tragfaehig" : raw === 0 ? "unklar" : "kritisch",
-      explanation: "Der WÖk-Netto-Wirkungsindex ist eine dimensionsgleiche Netto-Differenz. Datenqualität wird ausgewiesen, aber weder Schäden noch Punkte werden damit multipliziert.",
-    };
+    return { raw, nwi: raw, status: raw > 0 ? "tragfaehig" : raw === 0 ? "neutral" : "kritisch",
+      explanation: "Der WÖk-Netto-Wirkungsindex ist eine dimensionsgleiche Netto-Differenz. Datenqualität wird ausgewiesen, aber weder Schäden noch Punkte werden damit multipliziert." };
   }
 
   function isExplicitFiniteNumber(value) {
-    return value !== null
-      && value !== undefined
+    return (typeof value === "number" || typeof value === "string")
       && !(typeof value === "string" && value.trim() === "")
       && Number.isFinite(Number(value));
   }
@@ -184,18 +175,18 @@
   // attenuated by the benefit factor. The conservative scenario reduces only
   // the claimed benefit stream before discounting; it never reduces harm.
   function calculateTSROI({
-    investment = 0,
-    annualDirectBenefit = 0,
-    annualTransformativeBenefit = 0,
-    annualHarm = 0,
-    annualOperatingCost = 0,
-    years = 1,
-    benefitDiscountRate = 0.05,
+    investment,
+    annualDirectBenefit,
+    annualTransformativeBenefit,
+    annualHarm,
+    annualOperatingCost,
+    years,
+    benefitDiscountRate,
     costDiscountRate = benefitDiscountRate,
-    attribution = 1,
-    deadweight = 0,
-    displacement = 0,
-    uncertainty = 0,
+    attribution,
+    deadweight,
+    displacement,
+    uncertainty,
     scores,
     redLineActive = false,
     dataQuality,
@@ -254,6 +245,17 @@
     const safeCostPv = costPv > 0 ? costPv : null;
     const rawIoi = safeCostPv ? directNetPv / safeCostPv : null;
     const rawTsroi = safeCostPv ? benefitPv / safeCostPv : null;
+    const monetaryValues = { horizon, causalShare, directAnnual, transformativeAnnual, harmAnnual,
+      attributableBenefitAnnual, conservativeBenefitAnnual, grossAnnual, conservativeAnnual,
+      directPv, transformativePv, harmPv, benefitPv, lowerNetBenefitPv, investmentPv,
+      operatingCostPv, costPv, rawIoi, rawTsroi };
+    const overflow = Object.values(monetaryValues).some(value => value !== null && !Number.isFinite(value));
+    if (overflow) {
+      gate.passed = false;
+      gate.reasons.push("Die Eingaben überschreiten den numerisch darstellbaren Rechenbereich.");
+      gate.explanation = "Das Schutz-Gate ist geschlossen: Der Rechenbereich wurde überschritten.";
+    }
+    const calculationComplete = inputErrors.length === 0 && !overflow;
     return {
       gate,
       finalScore: gate.finalScore,
@@ -283,6 +285,10 @@
       explanation: gate.passed
         ? "T-SROI ist der diskontierte, kausal zugerechnete Nutzen abzüglich konservativ angesetzter Schäden in EUR je diskontiertem EUR Ressourceneinsatz. Der konservative Szenarioabschlag reduziert nur beanspruchte Nutzenströme, nicht Schäden."
         : "T-SROI und IOI bleiben blockiert; Rohwerte dürfen nicht als positive Gesamtkennzahl gelesen werden.",
+      calculationComplete,
+      inputErrors,
+      // Diagnostic zero substitution must not leak into a displayed calculation.
+      ...(calculationComplete ? {} : Object.fromEntries(Object.keys(monetaryValues).map(key => [key, null]))),
     };
   }
 

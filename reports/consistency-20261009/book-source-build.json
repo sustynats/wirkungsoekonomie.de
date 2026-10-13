@@ -1,0 +1,931 @@
+[
+  {
+    "volume": "I",
+    "source": "source-assets/originals/books-20261001/PRINT_6x9_Band-I_SDGplus_2026-10-01_Entwurf.docx",
+    "sourceSha256": "dea6cc852ba41a56b34fc0a7c7ea5367f3f7c56a607df43a09007f6ee035e643",
+    "output": "source-assets/generated/books-20261009/PRINT_6x9_Band-I_Konsistenz_2026-10-10.docx",
+    "outputSha256": "2941c3a5beb751a3b1b40b3f73185e0191fb4fef87cb54c5cb10d8f13761901d",
+    "corrections": 387,
+    "paragraphs": 6097,
+    "tables": 20,
+    "sections": 1,
+    "preservedImages": 1,
+    "correctedImages": {
+      "word/media/image2.png": "3f9d4225b92f6b72d7ab6f0cb8425e4a82495a985ad20fc4f9ca5bb5b9f5807e",
+      "word/media/image14.png": "a5a433fd6569a4d3da44d0b297b8e1914c8d1b47af06dfa628a86e1f03b58b4b",
+      "word/media/image15.png": "b8a372c89818bdbe3132cb1361f7d3de45a4458fb0d2f5ad8f2038d016d0be99",
+      "word/media/image21.png": "eec919583fb3d127224022e21a013289d77cfe0935c994d6e8260b453d2073f9",
+      "word/media/image25.jpeg": "a14f4f413da6acd24e8c70a67f86318b1383b701cd62af936c1f10e0ca10e102",
+      "word/media/image36.png": "41db6ac82ac26e09e17c064f098769bdb4c4eabc7c0a5d94372fe386e55040e0",
+      "word/media/image37.png": "1dbe70214f993df59a58484cf0129e6504f772ee873db841aeb756a6fa5f7857",
+      "word/media/image38.png": "a750606b6f990e6bfb94278c39d31c0c94e34ad586b5342cbf2c1cca7b367265",
+      "word/media/image39.png": "6922e7b58a01ab7bd4071a20c19be2e952b7bc73c5a7e3cd44b87a0d8f479a02",
+      "word/media/image40.png": "cde7715e212584deea922c7009b29680ecdac5869948c62cdc8120b519648437",
+      "word/media/image41.png": "9517793cbce1567223dd077c7cf9475e80562620f86d237ab69a166f5ed3def1",
+      "word/media/image42.png": "cee89d6d6ff9190ecec8881ce9a6a9c1e403a67c6ae97455e5872b8b1498487f",
+      "word/media/image43.png": "98028314c6f5e6547c78ef457c4349b9bc2ced131261f94dea98a86905c3d9c8",
+      "word/media/image44.png": "516fa8623b19f74d9bdd25f766aba285599aa548ce46821b4cfba80afd502e05",
+      "word/media/image45.png": "cf4919370f571bc437d016af7e727a6c80b5184f8f7bda023e0bdf694b174a20",
+      "word/media/image46.png": "b988a54dfb3b090560ceb8203193842e86df0917b8f716de659f2577d7f3be03",
+      "word/media/image53.jpeg": "88a8f39fee4dfdd994d52e4263aed46ccd349308170d7900afcf0896296aab83",
+      "word/media/image54.jpeg": "d326e64a5aaf3fb7096be6e0d5236cdcda9eed29aae585f064425746f8e1e823",
+      "word/media/image55.png": "64b389ee25adff6528c48a95986a190e16eced0531c2ce56306633c92df45549",
+      "word/media/image20.png": "5b7b699fd7751b44ea69b5288146cf195200baea9ff83ae978d906f4a9e79df2",
+      "word/media/image22.jpeg": "1ca0f94050b1477129a398546a82a46141a777ed68c8ee48528b126978046517",
+      "word/media/image27.png": "61b4cd08a36ce0819cd874991485661ce6e9287ab713c6ccc5326664d4b2f58f",
+      "word/media/image29.png": "ff4cb426777a0a574d17877e1181469326c0e8a2ae2baf33510bff185859f625",
+      "word/media/image30.png": "404c008e0b9bbfaca3f146d5415d392bb30836d39f1503bbee2f58d287708dd5",
+      "word/media/image52.jpeg": "0f867dc26721ae939964d30ceefdc61ef4c8a9ba895733a5b7aae825d640d855",
+      "word/media/image3.png": "f8980d735ec2045ddfbbb06c53538d6a87a4288f642a7a81e56bd36240fd0d4d",
+      "word/media/image4.png": "e2babe6ab38b436aace4139cd2050ed8165e0053d03d3280ef6f21fea7c6e26c",
+      "word/media/image5.png": "c9f668d76550c22dcc27a514ff5756209d020f416ec9b840e3c1ad568212d4f2",
+      "word/media/image6.png": "e8c2d0eb0d8ac087f8a108d5aa27e6ecf47f4f261f5cf98e3bb6d013ffe0053b",
+      "word/media/image7.png": "cdface64d38b61f1d66ca868fd72ba9e07ba3a92a63045cef845c03d73abc2df",
+      "word/media/image8.png": "76d6382139b954c69f4602bd3e5e717d6a65b676915bf6c5250d4644a926db83",
+      "word/media/image9.png": "eb637684ddfe7732281bf22eb55553c4e7e8b126a39da63ed2a43ca8f5e2a747",
+      "word/media/image10.png": "f16450e1daf098858228a073eb96a0da5fcb72cb71d8058b73f598e273ee3e9e",
+      "word/media/image11.png": "a88c6bbbcbb45ae4977b383ed6a1a718ff3bf028740a6edd8caf18e7cf2697c2",
+      "word/media/image12.png": "736839ce36ffb7d5e7d4b6baa4d459443245b0aa1bc94207ce361b6e8d6f79bc",
+      "word/media/image13.png": "9136e34d8380aba4cbad495df0f5e55f55218f2b11c5d5cb46fbbb0331c155da",
+      "word/media/image16.png": "57eb228f6d11f45e1dd099237c922dbaf8460e0b96c91d74f879d72d0a3d639e",
+      "word/media/image17.png": "f4871c5f72f0acfc971804687a7ad866325683dffd122cf4c9592b5dc60720b4",
+      "word/media/image18.png": "85ae485b3cc0d74a2e5f345c8e797ce820fa105860b9ac925219e80155168d4d",
+      "word/media/image19.png": "cc87aaa0fff6d83f4d8a00d388c54b9878dc7ad3606f2afc5f94f724f267bdd7",
+      "word/media/image23.png": "6d292354b72ba7a795964d969a2c7bed04d15ce260f442c08cdf26db5d4adcf6",
+      "word/media/image24.png": "2946839f173f0b57f57657ce0746552e49975c36ab8de6691b96510912654124",
+      "word/media/image26.png": "5fb3089bb919c2794af6240cfbe63fb20193af0df318faf83db4c5310d735799",
+      "word/media/image28.png": "0208111cb714ccca849226a36a58f88881de02907962a01ff3b999594a1bb813",
+      "word/media/image31.png": "5d461da3fb860cdbf4c340e5b41da6b4f47781aac27c39ed2cccfee35e185d5d",
+      "word/media/image32.png": "649783fdb25d5fe36447cff368586a5ce1e94ceb418a06855862e1d8917a0255",
+      "word/media/image33.png": "eba4b7face569a72275dba84fb949c39e7a9cab82facc1784cd1527bd0107861",
+      "word/media/image34.png": "96c4cb946a9234a80ad147218c73d36551745ffadec74bd589fbee2777c9594e",
+      "word/media/image35.png": "83b44e442539eea969182636a5bd8ec1a9ddf47678e682dab8281d33cb8c59c6",
+      "word/media/image47.jpeg": "a4c882808b6273d28eeab5cf34a109921e7effa8f3cb731be1496d566a7b9df8",
+      "word/media/image48.png": "bde720d6820398c4a5667f6921aba9cd1c8120deedc28b21a29a083f1b4b192f",
+      "word/media/image49.png": "1a53f8d528097b3020c0bc029235bc91149be7ebc11bd0f15b32564a9373d647",
+      "word/media/image50.png": "5c4757835eafc1b96de0d6bbb70e83bbb4421154013fafb2fdbe2c819114b05d",
+      "word/media/image51.png": "ad68dbce0badb42f584cdb6745e482486df171a37cf86d657cb96869638f27e1",
+      "word/media/image70.png": "6c50669f29b059fe55dfb484b90094d33fdfab1952f45029f430d8e3f617754f"
+    },
+    "standChanges": [
+      {
+        "paragraphIndex": 0,
+        "beforeText": "Manuskriptentwurf 01.10.2026: SDG+-Definition und Quellenzuordnung gezielt präzisiert. Historische Druckdatei unverändert. Kein Druckfreigabestatus. Seitenumbruch und Inhaltsverzeichnis sind vor einer neuen Auflage erneut zu prüfen. Quellen: https://sdgs.un.org/2030agenda; https://sdgs.un.org/goals/goal16; https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#praezisierung-20261001.",
+        "afterText": "Lesefassung vom 13. Oktober 2026. Wirtschafts- und Gesellschaftsmodell (Entwurf). Begriffsgrundlage: Begriffsleitfaden v1.8. Rechenstandard: T-SROI v1.1. Die historischen Manuskripte bleiben erhalten."
+      }
+    ],
+    "typographyRunsNormalized": 223,
+    "mathematicalGlyphRuns": 143,
+    "umlautLigatureLayout": {
+      "wordRuns": 132,
+      "affectedWords": [
+        "Angriffsflächen",
+        "Baufläche",
+        "Bewertungsfläche",
+        "Datenflüsse",
+        "Datenflüssen",
+        "Energieflüsse",
+        "Fläche",
+        "Flächen",
+        "Flächenbedarf",
+        "Flächenverbrauch",
+        "Flächenversiegelung",
+        "Flüsse",
+        "Geldflüsse",
+        "Grünflächen",
+        "Informationsflüsse",
+        "Kapitalflüsse",
+        "Kapitalflüssen",
+        "Lernfläche",
+        "Materialflüssen",
+        "Oberfläche",
+        "Oberflächen",
+        "Oberflächeneigenschaft",
+        "Oberflächenkorrektur",
+        "Oberflächenzahlen",
+        "Produktionsfläche",
+        "Rechenfläche",
+        "Ressourcenflüsse",
+        "Rückflüsse",
+        "Wirkungsdatenflüsse",
+        "auflädt",
+        "auflösen",
+        "flä",
+        "oberflächliche",
+        "oberflächlicher",
+        "verflüchtigt",
+        "überflüssig",
+        "überflüssiges"
+      ],
+      "sourceTextUnchanged": true
+    },
+    "tableLayout": [
+      {
+        "tableIndex": 1,
+        "columnWidthsPt": [
+          64.64,
+          85.81,
+          79.87,
+          66.58
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 41,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 15-1: Scheinleistung, Blindleistung, Verlustleistung und Wirkleistung",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 2,
+        "columnWidthsPt": [
+          69.24,
+          80.4,
+          147.26
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 7,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": null
+      },
+      {
+        "tableIndex": 3,
+        "columnWidthsPt": [
+          85.34,
+          106.24,
+          105.32
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 8,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 31-1: WÖk-ID und verknüpfte Messarchitektur",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 4,
+        "columnWidthsPt": [
+          79.49,
+          125.42,
+          92.04
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 10,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 31-2: Beispiele für Indikatorfamilien",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 5,
+        "columnWidthsPt": [
+          37.78,
+          65.2,
+          105.03,
+          88.88
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 18,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 31-3: Datenqualitätsklassen",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 6,
+        "columnWidthsPt": [
+          34.07,
+          92.7,
+          85.4,
+          84.73
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 28,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 32-1: Wirkungsskala von -3 bis +3",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 7,
+        "columnWidthsPt": [
+          96.69,
+          200.26
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 10,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 32-2: Aufbau einer Scorecard",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 8,
+        "columnWidthsPt": [
+          44.06,
+          80.26,
+          55.15,
+          117.42
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 1,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 33-1: Modellbeispiele zur Reverse Merit Order",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 9,
+        "columnWidthsPt": [
+          86.17,
+          81.42,
+          129.36
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 4,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 34-1: ROI, SROI, WÖk-Netto-Wirkungsindex und T-SROI im Vergleich",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 10,
+        "columnWidthsPt": [
+          86.71,
+          96.22,
+          114.02
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 21,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 34-2: Transformationspfade und ihre Nachweisbedingungen",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 11,
+        "columnWidthsPt": [
+          55.15,
+          77.35,
+          64.16,
+          100.29
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 30,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 38-1: Profilstufen und mögliche Instrumente - keine automatische Rechtsfolge",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 12,
+        "columnWidthsPt": [
+          77.05,
+          219.9
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 0,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 38-2: Vorsteuerrecht und eigenständige Lieferketteninstrumente",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 13,
+        "columnWidthsPt": [
+          81.64,
+          106.09,
+          109.21
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 7,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 50-1: Produkt-Scorecard als Muster",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 14,
+        "columnWidthsPt": [
+          67.67,
+          72.91,
+          72.91,
+          83.41
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 18,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 51-1: Modellhafte Scorecard für das Apfelbeispiel",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 15,
+        "columnWidthsPt": [
+          78.91,
+          109.43,
+          108.61
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 3,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 52-1: Verbraucherinformation am Produkt",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 16,
+        "columnWidthsPt": [
+          67.67,
+          113.52,
+          115.76
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 13,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 52-2: T-Shirt als Wirkungsmodell",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 17,
+        "columnWidthsPt": [
+          98.22,
+          93.67,
+          105.01
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 7,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 53-1: Modellvergleich - Billigmarkt und angestrebter Wirkungsmarkt",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 18,
+        "columnWidthsPt": [
+          69.25,
+          108.68,
+          119.01
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 12,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 53-2: T-Shirt-Scorecard als Marktmodell",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 19,
+        "columnWidthsPt": [
+          51.31,
+          119.84,
+          125.8
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 0,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 53-3: Branchenlogiken nach Wirkung",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      }
+    ],
+    "pageBreakLayout": [
+      {
+        "paragraphIndex": 103,
+        "explicitPageBreakPreserved": true,
+        "emptyLinePt": 1
+      },
+      {
+        "paragraphIndex": 151,
+        "explicitPageBreakPreserved": true,
+        "emptyLinePt": 1,
+        "pageBreakRelocatedToParagraphEnd": 150,
+        "imageDrawingPreserved": true
+      },
+      {
+        "paragraphIndex": 3814,
+        "explicitPageBreakPreserved": true,
+        "emptyLinePt": 1,
+        "pageBreakRelocatedToParagraphEnd": 3812
+      },
+      {
+        "paragraphIndex": 4111,
+        "explicitPageBreakPreserved": true,
+        "emptyLinePt": 1,
+        "pageBreakRelocatedToParagraphEnd": 4110
+      },
+      {
+        "paragraphIndex": 4171,
+        "explicitPageBreakPreserved": true,
+        "emptyLinePt": 1
+      },
+      {
+        "paragraphIndex": 4415,
+        "explicitPageBreakPreserved": true,
+        "emptyLinePt": 1
+      }
+    ],
+    "referenceBreakLayout": [
+      {
+        "paragraphIndex": 1860,
+        "reference": "E-K8-8",
+        "keepTogether": true,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "b83da54bbccfab60833b358e0cb8ad7f520c7a65ebfb7e315838b95f0cf39a58"
+      },
+      {
+        "paragraphIndex": 4414,
+        "reference": "E-K33-2",
+        "keepTogether": true,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "b0576c4eff1f59139c44744383dcc1e3a63f9aade252a4fb046f6b102ad2b6a5"
+      }
+    ],
+    "sdgBodyLayout": [
+      {
+        "paragraphIndex": 3860,
+        "beforeStyle": "Heading 3",
+        "afterStyle": "Normal",
+        "keepWithNext": false,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "293b37edf78d5a16039596053c4a3cfbd4c5abaac046a4fc29b223aa08fb6611"
+      },
+      {
+        "paragraphIndex": 3861,
+        "beforeStyle": "Heading 3",
+        "afterStyle": "Normal",
+        "keepWithNext": false,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "c8280611f7b4419b30e9e438e52898eb0403f2050a889d69203de4f8f6b41889"
+      },
+      {
+        "paragraphIndex": 3862,
+        "beforeStyle": "Heading 3",
+        "afterStyle": "Normal",
+        "keepWithNext": false,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "38e81b4cee9362819b39452f3453cdf98a0bd5bb7a74725a6e9cad041f57cf28"
+      },
+      {
+        "paragraphIndex": 3863,
+        "beforeStyle": "Heading 3",
+        "afterStyle": "Normal",
+        "keepWithNext": false,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "2a5ee9081bd5e108d721607dfc73058a1c4a02a194069e8d8b490823fe33f16c"
+      },
+      {
+        "paragraphIndex": 3864,
+        "beforeStyle": "Heading 3",
+        "afterStyle": "Normal",
+        "keepWithNext": false,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "066c63183bb634b766ad5db433d4adae34d23717e4c155f64eee031feef8b1ca"
+      }
+    ],
+    "shortContinuationLayout": [
+      {
+        "paragraphIndex": 4117,
+        "keepTogether": true,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "287f7d2f55f8f4c6c1bc3f81da67b8dab20cd07ad964ee1545f16e11d22295bd"
+      },
+      {
+        "paragraphIndex": 4189,
+        "keepTogether": true,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "47da2223473eb5d35ad7dd3f5ac0868a63301822a4680d0911b31461d9f7e42f"
+      },
+      {
+        "paragraphIndex": 5551,
+        "keepWithNext": true,
+        "nextParagraphIndex": 5552,
+        "sourceTextUnchanged": true,
+        "sourceTextSha256": "3ed8ee32bdbd182ff0a8025d4704382e9469a5e3335d6322a31de737587e81cf"
+      }
+    ],
+    "tocRefresh": {
+      "proof": "reports/consistency-20261009/book-toc-updated-I.json",
+      "proofSha256": "fade5956c3ccdd62cc2b4bc94cc0a94885fc6cb7ec5fb5ed2b664605f76024fa",
+      "beforeSha256": "05068ad6ab2966b6858dccd2f2be0f332b6394928ff49e15b6be40829767bc6a",
+      "renderedPdfSha256": "0db0eaf4b2193ea6ca3f378e86224e1298f052397f9d7985e1267ce67b266546",
+      "verifiedEntries": 75
+    }
+  },
+  {
+    "volume": "II",
+    "source": "source-assets/originals/books-20261001/PRINT_6x9_Band-II_SDGplus_2026-10-01_Entwurf.docx",
+    "sourceSha256": "c3b4164e1f35f2ff00121e3f5be441f6db89ebde7e880ffcdde1350d6a53673f",
+    "output": "source-assets/generated/books-20261009/PRINT_6x9_Band-II_Konsistenz_2026-10-10.docx",
+    "outputSha256": "00ffaa74602fa7155c4431fc9bd4f7249904672cfba19f1524173f1201f867a0",
+    "corrections": 128,
+    "paragraphs": 6136,
+    "tables": 10,
+    "sections": 1,
+    "preservedImages": 0,
+    "correctedImages": {
+      "word/media/image2.png": "3f9d4225b92f6b72d7ab6f0cb8425e4a82495a985ad20fc4f9ca5bb5b9f5807e",
+      "word/media/image64.jpeg": "30d7339d7faf4a65a5328a2b407c9280c93935bd04b184d9a414bc3369159ae7",
+      "word/media/image66.jpeg": "c6b185304dee3056a7b9bbdf8164257197dca31d0df369e67fa7138fdda5ab0c",
+      "word/media/image60.png": "0f7604e448526fb3f7d1da1c1a72e368e98d433b446e0b0ffea79712e6bea6ad",
+      "word/media/image56.jpeg": "da315bf0e7e535b5c80913f67ca12007b4f66d4cc8c0d1f167f6a0facde2b65b",
+      "word/media/image59.png": "214d84b84cfe3b217ec6932326d448576e9b3fd3b53b4df1e746ac3f85689e05",
+      "word/media/image57.jpeg": "58352338fe6c5b792863c144a3ebe37aa586dc6d2d6c83e97a8ccbfd44759fb3",
+      "word/media/image58.png": "f8a130289c7cfdf03d2e3ecb257adc07772f49c14577a31eb592a4c99934ec09",
+      "word/media/image61.png": "6177a190893a3c58da2cc3b3ebdf3b4a041b288948fb0d4a79f736abe8830fb1",
+      "word/media/image62.png": "6e75f575e0cb390d5a809f681a706e1f4a32b49e737b98ae9987deb7d160ae8a",
+      "word/media/image63.png": "cc718505f540370e812e2ab15aa1a095a03c01517ccbe7f9dbc2114aa36eab55",
+      "word/media/image65.png": "97be8d442ebcf1d293aeb9649e282602961056bd8dca5f3fe5b47564c4474757",
+      "word/media/image67.png": "05e3b01af36b5ab0db4735b2c654e88e29534414a4b6abaef065d03cb92e29d9",
+      "word/media/image68.png": "8c86dc0dc33e0acf71ed22704dd7c45e0a228fe5f238f76e4ad42d2be6663b49",
+      "word/media/image69.png": "5e87d6db152504b52ccb63d844e853a43eefe1cf43b65acd5c248a0c33b38987",
+      "word/media/image70.png": "6c50669f29b059fe55dfb484b90094d33fdfab1952f45029f430d8e3f617754f"
+    },
+    "standChanges": [
+      {
+        "paragraphIndex": 0,
+        "beforeText": "Manuskriptentwurf 01.10.2026: SDG+-Definition und Quellenzuordnung gezielt präzisiert. Historische Druckdatei unverändert. Kein Druckfreigabestatus. Seitenumbruch und Inhaltsverzeichnis sind vor einer neuen Auflage erneut zu prüfen. Quellen: https://sdgs.un.org/2030agenda; https://sdgs.un.org/goals/goal16; https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#praezisierung-20261001.",
+        "afterText": "Lesefassung vom 13. Oktober 2026. Wirtschafts- und Gesellschaftsmodell (Entwurf). Begriffsgrundlage: Begriffsleitfaden v1.8. Rechenstandard: T-SROI v1.1. Die historischen Manuskripte bleiben erhalten. Die gemeinsamen Belege zu Kurzfassung, Begriffen, Vorwort und Abkürzungen stehen in Band I unter denselben Quellenkennungen."
+      }
+    ],
+    "typographyRunsNormalized": 303,
+    "mathematicalGlyphRuns": 54,
+    "umlautLigatureLayout": {
+      "wordRuns": 99,
+      "affectedWords": [
+        "Auflösung",
+        "Bezugsfläche",
+        "Energieflüsse",
+        "Fläche",
+        "Flächen",
+        "Flächenbedarf",
+        "Flächennutzung",
+        "Flächenverbrauch",
+        "Flüchtlingswelle",
+        "Flüsse",
+        "Geflüchtete",
+        "Geldflüsse",
+        "Grünflächen",
+        "Informationsflüsse",
+        "Kapitalflüsse",
+        "Kapitalflüssen",
+        "Kreislauflösung",
+        "Materialflüsse",
+        "Oberfläche",
+        "Oberflächen",
+        "Oberflächengestaltung",
+        "Rohstoffländer",
+        "Rückflüsse",
+        "Schlupflöcher",
+        "Wohnfläche",
+        "auflöst",
+        "flächendeckend",
+        "flüchtig",
+        "geflüchtete",
+        "oberflächlich",
+        "oberflächlichen",
+        "überflüssig",
+        "überflüssige"
+      ],
+      "sourceTextUnchanged": true
+    },
+    "tableLayout": [
+      {
+        "tableIndex": 0,
+        "columnWidthsPt": [
+          70.08,
+          85.25,
+          74.17,
+          67.4
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 48,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 54-1: Wirkungs-BIP als Aktivitätszerlegung",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 1,
+        "columnWidthsPt": [
+          85.8,
+          102.88,
+          108.22
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 22,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 55-1: Wachstumslogiken im Vergleich",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 2,
+        "columnWidthsPt": [
+          80.76,
+          105.45,
+          110.73
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 6,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 55-2: Grenze zwischen Wachstum und Zerstörung",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 3,
+        "columnWidthsPt": [
+          77.13,
+          99.2,
+          120.62
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 3,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 56-1: Erwerbsarbeit, Maschinenleistung und Wirkleistung",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 4,
+        "columnWidthsPt": [
+          80.57,
+          92.29,
+          124.08
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 12,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 57-1: Bedingungsloses Grundeinkommen und Wirkungseinkommen",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 5,
+        "columnWidthsPt": [
+          98.89,
+          97.63,
+          100.39
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 6,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": null
+      },
+      {
+        "tableIndex": 6,
+        "columnWidthsPt": [
+          97.62,
+          85.73,
+          113.6
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 0,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": null
+      },
+      {
+        "tableIndex": 7,
+        "columnWidthsPt": [
+          102.41,
+          194.54
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 7,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": {
+          "text": "Tabelle 62-1: Prüffelder einer wirkungsökonomischen Programmanalyse",
+          "keepWithNext": true,
+          "sourceTextUnchanged": true
+        }
+      },
+      {
+        "tableIndex": 8,
+        "columnWidthsPt": [
+          136.7,
+          160.25
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 0,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": null
+      },
+      {
+        "tableIndex": 9,
+        "columnWidthsPt": [
+          61.66,
+          61.08,
+          96.67,
+          77.49
+        ],
+        "fontPt": 9,
+        "fontFamily": "Frank Ruhl Hofshi",
+        "regularFontSha256": "4c949aee5e93d7f816e9e76ef807d964ab2ba821c4533b77f4d451f89f581698",
+        "boldFontSha256": "738df99ce285d69e83e2cd2809c340591d805f4af9b2609ca9ec50c14c3f9691",
+        "cellMarginPt": 3.5,
+        "splitRows": false,
+        "discretionaryBreaks": 7,
+        "hyphenationDictionary": "Pyphen 0.17.2 / de_DE",
+        "captionLayout": null
+      }
+    ],
+    "pageBreakLayout": [],
+    "referenceBreakLayout": [],
+    "sdgBodyLayout": [],
+    "shortContinuationLayout": [],
+    "tocRefresh": {
+      "proof": "reports/consistency-20261009/book-toc-updated-II.json",
+      "proofSha256": "a0a14e353dcd05b006c8850aa10d5e06280688ab1cc12ab439958b6d0248f826",
+      "beforeSha256": "8803132506521fd02fcb5454a2de73bf2a3b33df804d922104c233a47fecb436",
+      "renderedPdfSha256": "68968b59cc238c0b9008ffa6bd046f6f087b4e679737456b8c612039fcc7ade3",
+      "verifiedEntries": 73
+    }
+  }
+]

@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-09-30T22:22:32.175Z
+Stand: 2026-10-13T19:25:11.129Z
 
 ## § 7 Bundeshaushaltsordnung (BHO)
 
@@ -14101,7 +14101,7 @@ E06 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlich
 
 ## Wirkungscontrolling
 
-Wirkungscontrolling ist das Controlling-System, das Wirkung über KII, Scorecards, NWI, T-SROI, Datenqualität und Rückkopplung in Unternehmensentscheidungen übersetzt.
+Wirkungscontrolling ist das Controlling-System, das Wirkung über KII, Scorecards, WÖk-Netto-Wirkungsindex, T-SROI, Datenqualität und Rückkopplung in Unternehmensentscheidungen übersetzt.
 
 Wirkungscontrolling bezeichnet die systematische Erfassung, Bewertung, Analyse und Rückkopplung von Wirkung in der Unternehmenssteuerung. Es erweitert klassisches Controlling um die Frage, welche Zustandsveränderungen durch Unternehmensentscheidungen entstehen und wie diese Veränderungen in Entscheidungen zurückgeführt werden.
 

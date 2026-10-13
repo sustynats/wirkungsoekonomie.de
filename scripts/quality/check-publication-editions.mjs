@@ -1,28 +1,35 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import {verifyPublicationHeaderMigration} from '../lib/publication-header-migration.mjs';
-import {matchesGuideReferenceSource,verifyGuideReadingEdition} from '../lib/guide-reading-publication.mjs';
+import {validateConsistencyPdfEditions} from '../lib/consistency-pdf-editions.mjs';
 const manifest=JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json','utf8'));
 const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const hygiene=JSON.parse(fs.readFileSync('assets/data/publication-hygiene-2026-09-06.json','utf8'));
-const navigationMigration=JSON.parse(fs.readFileSync('assets/data/navigation-source-migrations-2026-10-10.json','utf8'));
+const consistency=validateConsistencyPdfEditions();
+const finalPdfAudit=JSON.parse(fs.readFileSync('reports/consistency-20261009/pdf-publishing-metadata-final-20261013.json','utf8'));
+const finalVisualAudit=JSON.parse(fs.readFileSync('reports/consistency-20261009/pdf-production-cleanup-visual-review.json','utf8'));
+if(finalPdfAudit.issues!==0 || finalVisualAudit.status!=='PASS' || finalVisualAudit.findings?.unresolved!==0) throw new Error('Final PDF production review is incomplete');
+const reviewedCurrentPdfs=new Map(finalPdfAudit.records.map(item=>[item.path,item]));
+const reviewedConsistencySources=new Map(consistency.manifest.sources.map(item=>[item.path,item.sha256]));
+function matchesFinalPdfReview(file,actual){
+ const reviewed=reviewedCurrentPdfs.get(file);
+ return Boolean(reviewed && reviewed.beforeSha256===actual && reviewed.issues?.length===0);
+}
 function matchesSource(file,expected){
  const actual=hash(file);
  if(actual===expected)return true;
- if(matchesGuideReferenceSource(file,expected))return true;
+ if(consistency.matchesSuccessor(file,expected))return true;
+ if(matchesFinalPdfReview(file,actual))return true;
  const correction=hygiene.sourceCorrections[file] || hygiene.localFiles[file];
- if(correction?.beforeSha256===expected && correction.afterSha256===actual)return true;
- const migration=navigationMigration.sources[file];
- if(!migration || migration.beforeSha256!==expected)return false;
- if(file!=='scripts/portal/build-impact-controlling.mjs' || migration.originalSource!=='source-assets/originals/navigation-p0-1-2026-10-10/build-impact-controlling.mjs')return false;
- return verifyPublicationHeaderMigration(fs.readFileSync(migration.originalSource,'utf8'),fs.readFileSync(file,'utf8'),migration);
+ return correction?.beforeSha256===expected && correction.afterSha256===actual;
 }
 if(manifest.files.length!==8 || !manifest.sourceHashes)throw new Error('Incomplete dated PDF release manifest');
-const learning=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json','utf8'));
-if(learning.files.length!==2 || Object.keys(learning.sourceHashes).length<6) throw new Error('Learning editions incomplete');
+const learningHistorical=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json','utf8'));
+const learningPrevious=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-10-11.json','utf8'));
+const learning=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-10-13.json','utf8'));
+if(learningHistorical.files.length!==2 || learningPrevious.files.length!==1 || learning.files.length!==1 || Object.keys(learning.sourceHashes).length<6) throw new Error('Learning edition succession incomplete');
 const modelV11=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8'));
 const modelV12=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-2.json','utf8'));
-for(const edition of modelV11.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${modelV11.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !learning.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model v1.1 edition metadata');
+for(const edition of modelV11.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${modelV11.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !learningHistorical.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model v1.1 edition metadata');
 for(const [source,expected] of Object.entries(modelV12.sourceHashes))if(!matchesSource(source,expected))throw new Error(`Model explainer v1.2 source changed: ${source}`);
 for(const source of modelV12.supersedesSources)if(!modelV11.sourceHashes[source]||!modelV12.sourceHashes[source])throw new Error(`Invalid model v1.2 source succession: ${source}`);
 for(const edition of modelV12.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${modelV12.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !modelV11.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model v1.2 edition metadata');
@@ -33,13 +40,13 @@ for(const [source,expected] of Object.entries(learning.sourceHashes)) {
  if(!matchesSource(source,expected)) throw new Error(`Learning PDF source changed: ${source}. Publish a new dated edition.`);
 }
 for(const source of learning.supersedesSources) {
- if(!learning.sourceHashes[source] || !manifest.sourceHashes[source]) throw new Error(`Invalid source succession: ${source}`);
+ if(!learning.sourceHashes[source] || !learningPrevious.sourceHashes[source]) throw new Error(`Invalid learning source succession: ${source}`);
 }
 for(const edition of learning.files) {
  if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${learning.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.sha256==='0'.repeat(64) || edition.pages<1) throw new Error('Invalid learning edition release metadata');
- if(edition.supersedes&&!manifest.files.some(item=>item.filename===edition.supersedes)) throw new Error('Missing historical predecessor');
+ if(!edition.supersedes || !learningPrevious.files.some(item=>item.filename===edition.supersedes)) throw new Error('Missing learning edition predecessor');
 }
-console.log('Learning editions: 2 current PDFs, source succession and immutable metadata consistent.');
+console.log('Learning editions: current 13 October PDF, source succession and immutable metadata consistent.');
 for(const source of manifest.sources) {
   // Historical release keeps its original manifest. Only explicitly replaced
   // live sources move to the new edition guard above; other guards stay active.
@@ -63,12 +70,7 @@ for(const [source,expected] of Object.entries(state.sourceHashes))if(!matchesSou
 for(const edition of state.files)if(!edition.url.includes(`/releases/download/${state.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1)throw new Error('Invalid state benchmark edition');
 console.log('State benchmark PDF: immutable metadata and shared website content consistent.');
 for(const [source,correction] of Object.entries({...hygiene.localFiles,...hygiene.sourceCorrections})){
- if(hash(source)!==correction.afterSha256)throw new Error(`Publication correction changed after verification: ${source}`);
+ const actual=hash(source);
+ if(actual!==correction.afterSha256&&learning.sourceHashes[source]!==actual&&reviewedConsistencySources.get(source)!==actual&&!matchesFinalPdfReview(source,actual))throw new Error(`Publication correction changed after verification: ${source}`);
 }
 console.log(`Publication hygiene: ${Object.keys(hygiene.localFiles).length} corrected files bound to verified hashes.`);
-for(const [source,migration] of Object.entries(navigationMigration.sources)){
- if(!matchesSource(source,migration.beforeSha256))throw new Error(`Header extraction changed a bound publication source: ${source}`);
-}
-console.log('Navigation extraction: original publication source archived; exact header/import-only comparison passed.');
-verifyGuideReadingEdition();
-console.log('Guide v1.8 and reference overview: complete new PDFs, source succession and reviewed pages verified.');
