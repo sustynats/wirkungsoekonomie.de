@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { gzipSync } from "node:zlib";
 import { compactSearchEntries } from "../search/build-browser-search-index.mjs";
 
 const indexPath = "assets/search/search-index.json";
@@ -53,11 +54,12 @@ for (const term of requiredTerms) {
 }
 
 const browserIndexBytes = Buffer.byteLength(JSON.stringify(browserIndex));
+const browserIndexGzipBytes = gzipSync(Buffer.from(JSON.stringify(browserIndex)), { level: 9, mtime: 0 }).length;
 if (browserIndex.length < 1000) errors.push("Browser search index is unexpectedly small.");
-if (browserIndexBytes > 10 * 1024 * 1024) errors.push(`Browser search index exceeds 10 MiB: ${browserIndexBytes} bytes.`);
+if (browserIndexGzipBytes > 5 * 1024 * 1024) errors.push(`Compressed browser search index exceeds 5 MiB: ${browserIndexGzipBytes} bytes.`);
 if (browserIndex.some((entry) => String(entry.url || "").includes("#"))) errors.push("Browser search index contains fragment routes.");
-if (browserIndex.some((entry) => /^\/(?:bibliothek|quellenarchiv)\/.+/.test(String(entry.url || "")))) {
-  errors.push("Browser search index contains archive detail routes.");
+if (!browserIndex.some((entry) => /^\/(?:bibliothek|quellenarchiv)\/.+/.test(String(entry.url || "")))) {
+  errors.push("Browser search index is missing lazy archive detail routes.");
 }
 
 if (!index.some((entry) => String(entry.id || "").startsWith("woek-term-"))) {
@@ -74,5 +76,5 @@ console.log(
     browserIndexBytes /
     1024 /
     1024
-  ).toFixed(2)} MiB).`,
+  ).toFixed(2)} MiB raw, ${(browserIndexGzipBytes / 1024 / 1024).toFixed(2)} MiB gzip).`,
 );

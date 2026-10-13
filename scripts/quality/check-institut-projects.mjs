@@ -9,7 +9,21 @@ const operational = /oracle|vercel|hosting|kostengate|kostensteuerung|kostenrege
 if (operational.test(JSON.stringify(data))) throw new Error('Private operational content in public institute project data.');
 const overview = fs.readFileSync(path.join(root, 'institut/projekte/index.html'), 'utf8');
 if (/oracle-always-free|Umzug des Instituts/.test(overview)) throw new Error('Private operational project linked in institute overview.');
-const searchEntries = JSON.parse(fs.readFileSync(path.join(root, 'assets/search/search-index.json'), 'utf8'));
+const sourceSearchIndex = path.join(root, 'assets/search/search-index.json');
+const readBuiltSearchEntries = searchRoot => {
+  const directory = path.join(searchRoot, 'assets/search');
+  const manifestPath = path.join(directory, 'browser-index-manifest.json');
+  if (!fs.existsSync(manifestPath)) return [];
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  return [manifest.core, ...(manifest.archives || [])]
+    .map(part => part?.json)
+    .filter(Boolean)
+    .flatMap(file => JSON.parse(fs.readFileSync(path.join(directory, file), 'utf8')));
+};
+const searchEntries = fs.existsSync(sourceSearchIndex)
+  ? JSON.parse(fs.readFileSync(sourceSearchIndex, 'utf8'))
+  : readBuiltSearchEntries(path.resolve(root));
+if (!searchEntries.length) throw new Error('Public search index is missing.');
 const searchRoute = value => {
   try {
     const url = new URL(value, 'https://wirkungsoekonomie.de');

@@ -14,6 +14,7 @@ import {
   sitemapRoutes,
 } from "../lib/method-version-indexability.mjs";
 import { readPublicSitemapRoutes } from "../lib/public-sitemaps.mjs";
+import { readBuiltSearchEntries } from "../search/build-browser-search-index.mjs";
 
 const artifact = process.argv.includes("--artifact");
 const root = artifact ? path.join(process.cwd(), "_site") : process.cwd();
@@ -22,10 +23,14 @@ const sitemapPath = path.join(root, "sitemap.xml");
 const releaseAssetsPath = path.join(process.cwd(), "assets", "data", "public-release-assets.json");
 const failures = [];
 
-if (!fs.existsSync(indexPath)) failures.push(`Suchindex fehlt: ${path.relative(process.cwd(), indexPath)}`);
+if (!fs.existsSync(indexPath) && !(artifact && fs.existsSync(path.join(root, "assets", "search", "browser-index-manifest.json")))) {
+  failures.push(`Suchindex fehlt: ${path.relative(process.cwd(), indexPath)}`);
+}
 if (!fs.existsSync(sitemapPath)) failures.push(`Sitemap fehlt: ${path.relative(process.cwd(), sitemapPath)}`);
 
-const entries = fs.existsSync(indexPath) ? JSON.parse(fs.readFileSync(indexPath, "utf8")) : [];
+const entries = fs.existsSync(indexPath)
+  ? JSON.parse(fs.readFileSync(indexPath, "utf8"))
+  : (artifact ? readBuiltSearchEntries(root) : []);
 const sitemap = fs.existsSync(sitemapPath)
   ? (artifact ? readPublicSitemapRoutes(root) : sitemapRoutes(fs.readFileSync(sitemapPath, "utf8")))
   : [];
