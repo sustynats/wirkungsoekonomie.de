@@ -11,10 +11,10 @@ node scripts/quality/check-navigation-discovery.mjs --report
 Die bisherige Discovery-Prüfung bleibt vollständig aktiv. Die zusätzliche
 Messung schreibt JSON und Markdown nach `reports/navigation/`. Jeder PR-Lauf
 zeigt das Markdown in seiner Zusammenfassung und speichert beide Dateien als
-Artefakt. Während Phase 0 und 1 sind Abweichungen Warnungen. Nach Abschluss von
-Phase 1 wird ein vollständig geprüfter neuer Referenzbericht gespeichert und
-`--gate` in der Pipeline aktiviert; das blockiert sinkende Abdeckung und neue
-Navigationsfehler. Der Drei-Klick-Anteil ist weiterhin ein Ziel für Phase 2.
+Artefakt. Seit Abschluss von Phase 1 ist der vollständig geprüfte Bericht mit
+18.168 indexierbaren und erreichbaren Routen die Referenz. `--gate` blockiert
+sinkende Abdeckung und neue Navigationsfehler. Der Drei-Klick-Anteil von
+95,86 Prozent bleibt die Mindestabdeckung für folgende Änderungen.
 
 „Ohne Linkpfad“ bedeutet: Von der Startseite existiert über die tatsächlich
 vorhandenen HTML-Verweise kein Weg zu dieser URL. Es bedeutet keinen HTTP-404.
