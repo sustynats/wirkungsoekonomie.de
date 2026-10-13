@@ -23,6 +23,7 @@ const excludedTopLevelDirs = new Set([
   "content",
   "data",
   "docs",
+  "en",
   "export",
   "lib",
   "manifest",
@@ -352,9 +353,6 @@ function copyPublicRuntimeContentData() {
     ...["compass-answer-templates.json", "compass-questions.json", "compass-topics.json", "impact-paths.json"]
       .map((fileName) => path.join("content/kompass", fileName)),
     path.join("content/wissen", "wissenskarten.json"),
-    path.join("public/data", "en-asset-text-inventory.json"),
-    path.join("public/data", "en-document-translation-manifest.json"),
-    path.join("public/data", "en-route-coverage.json"),
     path.join("public/data", "woek-g-curriculum.json"),
     path.join("public/data", "woems-canvas.json"),
     path.join("public/data", "woems-methoden.json"),
@@ -372,6 +370,54 @@ function copyPublicRuntimeContentData() {
   }
 
   if (copied) console.log(`Copied ${copied} public runtime content data files.`);
+}
+
+function removeOfflineEnglishSurface() {
+  const englishDirectory = path.join(artifactDir, "en");
+  fs.rmSync(englishDirectory, { recursive: true, force: true });
+
+  for (const relative of [
+    "public/data/en-asset-text-inventory.json",
+    "public/data/en-document-translation-manifest.json",
+    "public/data/en-route-coverage.json",
+  ]) {
+    fs.rmSync(path.join(artifactDir, relative), { force: true });
+  }
+
+  let cleanedHtml = 0;
+  for (const file of walkFiles(artifactDir)) {
+    if (!/\.html?$/iu.test(file)) continue;
+    const before = fs.readFileSync(file, "utf8");
+    const after = before
+      .replace(/\s*<link\b(?=[^>]*\brel=["']alternate["'])(?=[^>]*\bhreflang=["']en["'])[^>]*>\s*/giu, "\n")
+      .replace(/\s*<a\b(?=[^>]*\bhref=["'](?:https:\/\/wirkungsoekonomie\.de\/|(?:\.\.\/)*|\/)?en\/(?:[?#][^"']*)?["'])[^>]*>[\s\S]*?<\/a>\s*/giu, "\n");
+    if (after !== before) {
+      fs.writeFileSync(file, after, "utf8");
+      cleanedHtml += 1;
+    }
+  }
+
+  const searchIndexPath = path.join(artifactDir, "assets/search/search-index.json");
+  let removedSearchEntries = 0;
+  if (fs.existsSync(searchIndexPath)) {
+    const entries = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
+    const publicEntries = entries.filter((entry) => !/^\/en(?:\/|$)/u.test(String(entry?.url || "").split("#")[0]));
+    removedSearchEntries = entries.length - publicEntries.length;
+    fs.writeFileSync(searchIndexPath, JSON.stringify(publicEntries), "utf8");
+  }
+
+  const sitemapPath = path.join(artifactDir, "sitemap.xml");
+  let removedSitemapEntries = 0;
+  if (fs.existsSync(sitemapPath)) {
+    const before = fs.readFileSync(sitemapPath, "utf8");
+    const after = before.replace(/\s*<url\b[^>]*>[\s\S]*?<loc>\s*https:\/\/wirkungsoekonomie\.de\/en(?:\/[^<]*)?<\/loc>[\s\S]*?<\/url>\s*/giu, () => {
+      removedSitemapEntries += 1;
+      return "\n";
+    });
+    fs.writeFileSync(sitemapPath, after, "utf8");
+  }
+
+  console.log(`English surface kept offline: ${cleanedHtml} page link(s) cleaned, ${removedSearchEntries} search entry/entries and ${removedSitemapEntries} sitemap entry/entries removed.`);
 }
 
 function copyLegacyRedirectFiles() {
@@ -449,6 +495,38 @@ function validateLegacyToolsRedirect() {
     throw new Error("Public sitemap must not contain the non-canonical /tools/ route.");
   }
   console.log("Legacy /tools/ redirect and sitemap exclusion passed.");
+}
+
+function validateOfflineEnglishSurface() {
+  const failures = [];
+  if (fs.existsSync(path.join(artifactDir, "en"))) failures.push("directory en/");
+  for (const relative of [
+    "public/data/en-asset-text-inventory.json",
+    "public/data/en-document-translation-manifest.json",
+    "public/data/en-route-coverage.json",
+  ]) {
+    if (fs.existsSync(path.join(artifactDir, relative))) failures.push(relative);
+  }
+  const sitemapPath = path.join(artifactDir, "sitemap.xml");
+  if (fs.existsSync(sitemapPath) && /https:\/\/wirkungsoekonomie\.de\/en(?:\/|<)/iu.test(fs.readFileSync(sitemapPath, "utf8"))) {
+    failures.push("English sitemap route");
+  }
+  const searchIndexPath = path.join(artifactDir, "assets/search/search-index.json");
+  if (fs.existsSync(searchIndexPath)) {
+    const entries = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
+    if (entries.some((entry) => /^\/en(?:\/|$)/u.test(String(entry?.url || "").split("#")[0]))) failures.push("English search entry");
+  }
+  for (const file of walkFiles(artifactDir)) {
+    if (!/\.html?$/iu.test(file)) continue;
+    const html = fs.readFileSync(file, "utf8");
+    if (/\bhreflang=["']en["']/iu.test(html)) failures.push(`${toPosixRelative(file)}: English alternate`);
+    if (/<a\b(?=[^>]*\bhref=["'](?:https:\/\/wirkungsoekonomie\.de\/|(?:\.\.\/)*|\/)?en\/)[^>]*>/iu.test(html)) {
+      failures.push(`${toPosixRelative(file)}: English navigation link`);
+    }
+    if (failures.length >= 20) break;
+  }
+  if (failures.length) throw new Error(`English surface must stay offline:\n${failures.join("\n")}`);
+  console.log("English surface is absent from routes, navigation, sitemap and search.");
 }
 
 function sanitizePublicDataString(value) {
@@ -857,9 +935,6 @@ function prunePublicArtifact() {
       relative.startsWith("public/data/") &&
       ![
         "public/data/relationship-manifest.json",
-        "public/data/en-asset-text-inventory.json",
-        "public/data/en-document-translation-manifest.json",
-        "public/data/en-route-coverage.json",
         "public/data/woek-g-curriculum.json",
         "public/data/woems-canvas.json",
         "public/data/woems-methoden.json",
@@ -898,6 +973,7 @@ for (const entry of fs.readdirSync(root, { withFileTypes: true }).sort((a, b) =>
   if (copyEntry(entry)) copied += 1;
 }
 
+removeOfflineEnglishSurface();
 normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 copySnapshotManifestFiles();
@@ -909,6 +985,7 @@ removeNonCanonicalSitemapEntries();
 // Referenzierte Runtime-Dateien werden erst nach dem ersten Durchlauf kopiert.
 // Deshalb braucht das fertige Artefakt einen zweiten, abschließenden Durchlauf.
 normalizePublicArtifactLinksAndText();
+removeOfflineEnglishSurface();
 prunePublicArtifact();
 // Small raster previews are first-party web assets, built on the existing
 // GitHub Pages runner. No provider, paid service or workstation is required.
@@ -920,6 +997,7 @@ validateMainworkFulltextArtifact();
 validatePublicScripts();
 validatePublicJson();
 validateLegacyToolsRedirect();
+validateOfflineEnglishSurface();
 validatePublicArtifactSafety();
 
 const mb = collectSize(artifactDir) / 1024 / 1024;

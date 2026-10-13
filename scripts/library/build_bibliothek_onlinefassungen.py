@@ -21,10 +21,6 @@ Aufruf:
   python3 scripts/library/build_bibliothek_onlinefassungen.py <id1,id2,...>
   python3 scripts/library/build_bibliothek_onlinefassungen.py all-standalone
 """
-from pathlib import Path as _HeaderPath
-import sys as _header_sys
-_header_sys.path.insert(0, str(_HeaderPath(__file__).resolve().parents[2]))
-from scripts.lib.site_shell import render_site_header
 import sys, os, re, html, unicodedata
 from collections import Counter
 from pdf_reader_sections import ReaderSections
@@ -39,20 +35,6 @@ ALREADY = {"woemm-2-0", "woems-2-0"}
 # Welle 1: hochwertige eigenständige Werke zuerst
 WAVE1_TYPES = {"Grundlagenwerk", "Whitepaper", "Gesetzesentwurf", "Leitbild"}
 
-# Dauerhafte öffentliche Kapitelbezeichnungen. Die PDF-Überschriften bleiben
-# unverändert zitierbar; die Lesefassung erhält eine neutrale, verständliche URL
-# und Überschrift. Historische URLs werden anschließend vom SEO-Normalisierer
-# als noindex-Weiterleitungen gepflegt.
-PUBLIC_CHAPTER_OVERRIDES = {
-    "download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf": {
-        "7. Mindestanforderungen in Codex": {
-            "title": "7. Mindestanforderungen für öffentliche Inhalte",
-            "slug": "07-7-mindestanforderungen-fuer-oeffentliche-inhalte",
-        },
-    },
-}
-
-
 def esc(s):
     return html.escape(s or "", quote=True)
 
@@ -65,12 +47,26 @@ def slugify(t):
     return re.sub(r"-+", "-", t) or "abschnitt"
 
 
-def public_chapter_override(detail_slug, source_title):
-    """Return an optional public title/slug override for one PDF chapter."""
-    return PUBLIC_CHAPTER_OVERRIDES.get(detail_slug, {}).get(source_title)
-
-
-HEADER = render_site_header('{r}')
+HEADER = '''    <header class="site-header" data-search-exclude>
+      <a class="brand" href="{r}index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="{r}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="{r}index.html">Start</a>
+        <a href="{r}verstehen/">Verstehen</a>
+        <a href="{r}fuer/">Für wen?</a>
+        <a href="{r}wirkungsfelder/">Wirkungsfelder</a>
+        <a href="{r}werkzeuge/">Praxis &amp; Tools</a>
+        <a href="{r}oeffentlicher-wirkungsraum/">Debatte &amp; Radar</a>
+        <a href="{r}lernen/">Lernen</a>
+        <a href="{r}bibliothek/" aria-current="page">Bibliothek</a>
+        <a href="{r}mitmachen.html">Mitmachen</a>
+      </nav>
+    </header>'''
 
 
 def page_shell(r, title, desc, body, css_v="20260712-reader"):
@@ -233,16 +229,142 @@ def pattern_chapters(pdf, running):
     return out if len(out) >= 3 else None
 
 
-def build_one(pdf_path, detail_slug, title, short):
+def outline_chapters(pdf, toc, clvl):
+    """Keep only outline entries that still point to real, ordered headings.
+
+    Publication cleanup can remove an obsolete heading from a PDF body while
+    leaving its bookmark behind.  Such a bookmark must not recreate the
+    removed text in the online edition or abort all other reader pages.
+    """
+    reader = ReaderSections(pdf)
+    chapters = []
+    rejected = []
+    current = None
+    last_start = -1
+
+    for toc_index, (lvl, raw_title, page) in enumerate(toc):
+        title = (raw_title or "").strip()
+        if not title:
+            continue
+        entry = {"title": title, "source_title": title,
+                 "page": page - 1, "toc_index": toc_index}
+        if lvl <= clvl:
+            entry.update({"idx": len(chapters), "subs": []})
+            try:
+                span = reader.locate(entry)
+            except ValueError:
+                rejected.append(title)
+                current = None
+                continue
+            if span[0] <= last_start:
+                rejected.append(title)
+                current = None
+                continue
+            entry["_span"] = span
+            chapters.append(entry)
+            current = entry
+            last_start = span[0]
+        elif current is not None and lvl == clvl + 1:
+            try:
+                span = reader.locate(entry, after=current["_span"][1])
+            except ValueError:
+                rejected.append(title)
+                continue
+            entry["_span"] = span
+            current["subs"].append(entry)
+
+    # A valid subsection must sit between its chapter heading and the next
+    # chapter heading.  Broken outline nesting is ignored entry by entry.
+    for index, chapter in enumerate(chapters):
+        begin = chapter["_span"][1]
+        end = chapters[index + 1]["_span"][0] if index + 1 < len(chapters) else len(reader.text)
+        valid_subs = []
+        cursor = begin
+        for sub in chapter["subs"]:
+            span = sub["_span"]
+            if begin <= span[0] < span[1] <= end and span[0] >= cursor:
+                valid_subs.append(sub)
+                cursor = span[1]
+            else:
+                rejected.append(sub["title"])
+        chapter["subs"] = valid_subs
+        chapter["idx"] = index
+        chapter["end"] = chapters[index + 1]["page"] if index + 1 < len(chapters) else pdf.page_count
+        chapter.pop("_span", None)
+        for sub in chapter["subs"]:
+            sub.pop("_span", None)
+    return chapters, rejected
+
+
+def existing_reader_routes(outdir):
+    """Return previously published chapter directories for URL preservation."""
+    if not os.path.isdir(outdir):
+        return set()
+    return {
+        name for name in os.listdir(outdir)
+        if os.path.isdir(os.path.join(outdir, name))
+        and os.path.isfile(os.path.join(outdir, name, "index.html"))
+    }
+
+
+def redirect_stale_reader_routes(outdir, previous, current, metadata=None):
+    """Keep old chapter URLs, but never keep their obsolete page contents."""
+    target = "/" + os.path.relpath(outdir, ROOT).replace(os.sep, "/").strip("/") + "/"
+    metadata = metadata or {}
+    historical = str(metadata.get("status") or "").strip().lower() in {"ersetzt", "archiviert"}
+    successor = "/" + str(metadata.get("successorUrl") or "").strip("/") + "/" if metadata.get("successorUrl") else ""
+    if historical:
+        heading = "Historische, ersetzte Fassung"
+        explanation = esc(metadata.get("historicalNotice") or "Diese historische Quellenfassung ist nicht der aktuelle fachliche Stand.")
+        successor_link = (f'<p><a href="{esc(successor)}">{esc(metadata.get("successorLabel") or "Aktuelle Einordnung öffnen")}</a></p>'
+                          if successor else "")
+    else:
+        heading = "Aktuelle Onlinefassung"
+        explanation = "Diese Adresse führt zur aktuellen Onlinefassung."
+        successor_link = ""
+    html_redirect = f'''<!doctype html>
+<html lang="de" data-reader-node-redirect><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="refresh" content="0; url={target}">
+<title>Weiterleitung | Bibliothek der Wirkungsökonomie</title>
+<link rel="canonical" href="https://wirkungsoekonomie.de{target}"></head>
+<body><main data-search-exclude><h1 id="kapitel">{heading}</h1>
+<p>{explanation}</p>
+<p><a href="{target}">Zur Dokumentation dieser Fassung</a></p>
+{successor_link}</main></body></html>
+'''
+    for route in sorted(previous - set(current)):
+        target = os.path.join(outdir, route, "index.html")
+        with open(target, "w", encoding="utf-8") as handle:
+            handle.write(html_redirect)
+
+
+def build_one(pdf_path, detail_slug, title, short, metadata=None):
     pdf = fitz.open(pdf_path)
     running = running_lines(pdf)
     toc = pdf.get_toc()
     clvl = detect_chapter_level(toc)
     outdir = os.path.join(ROOT, "bibliothek", "eintraege", detail_slug, "lesen")
+    previous_routes = existing_reader_routes(outdir)
     os.makedirs(outdir, exist_ok=True)
     rel_pdf = os.path.relpath(os.path.join(ROOT, pdf_path), ROOT)
 
-    # Kapitel-Seeds bestimmen: aus TOC oder (bei langem TOC-losem PDF) aus Schriftgrößen
+    # Kapitel-Seeds bestimmen: aus einem validierten TOC oder (bei langem
+    # TOC-losem PDF) aus Schriftgrößen. Veraltete PDF-Lesezeichen dürfen weder
+    # entfernte Produktionshinweise wieder veröffentlichen noch den Build
+    # abbrechen.
+    chapters = []
+    rejected_outline = []
+    if clvl is not None:
+        chapters, rejected_outline = outline_chapters(pdf, toc, clvl)
+        if rejected_outline:
+            names = "; ".join(rejected_outline[:4])
+            more = f" (+{len(rejected_outline) - 4})" if len(rejected_outline) > 4 else ""
+            print(f"    bereinigt: {len(rejected_outline)} veraltete Gliederungseinträge: {names}{more}")
+        if not chapters:
+            clvl = None
+
     font_seeds = None
     if clvl is None and pdf.page_count > 8:
         font_seeds = font_chapters(pdf, running) or pattern_chapters(pdf, running)
@@ -270,19 +392,12 @@ def build_one(pdf_path, detail_slug, title, short):
         with open(os.path.join(outdir, "index.html"), "w") as f:
             f.write(page_shell(r, title + " – Onlinefassung",
                                f"Zitierbare Onlinefassung von {title}.", body))
+        redirect_stale_reader_routes(outdir, previous_routes, set(), metadata)
         return 1  # eine Seite
 
     # ---- Kapitel-Lesefassung ----
     npages = pdf.page_count
-    chapters = []
-    if clvl is not None:
-        for toc_index, (lvl, t, page) in enumerate(toc):
-            t = (t or "").strip()
-            if lvl <= clvl:
-                chapters.append({"idx": len(chapters), "title": t, "page": page - 1, "toc_index": toc_index, "subs": []})
-            elif chapters and lvl == clvl + 1:
-                chapters[-1]["subs"].append({"title": t, "page": page - 1, "toc_index": toc_index})
-    else:  # aus Schriftgrößen erkannte Kapitel (kein PDF-TOC) -> per Text-Position splitten
+    if clvl is None:  # aus Schriftgrößen erkannte Kapitel (kein PDF-TOC) -> per Text-Position splitten
         full = "\n".join(pdf[p].get_text() for p in range(npages))
         valid = []
         for t, _pno in font_seeds:
@@ -296,15 +411,11 @@ def build_one(pdf_path, detail_slug, title, short):
             seg = seg.split("\n", 1)[1] if "\n" in seg else seg  # Überschriftzeile weg
             chapters.append({"idx": len(chapters), "title": t, "page": 0, "subs": [], "text": seg})
     for i, ch in enumerate(chapters):
+        ch["idx"] = i
         ch["end"] = chapters[i + 1]["page"] if i + 1 < len(chapters) else npages
         source_title = ch["title"]
-        override = public_chapter_override(detail_slug, source_title)
         ch["source_title"] = source_title
-        if override:
-            ch["title"] = override["title"]
-            ch["slug"] = override["slug"]
-        else:
-            ch["slug"] = f'{ch["idx"]:02d}-{slugify(source_title)[:60]}'
+        ch["slug"] = f'{ch["idx"]:02d}-{slugify(source_title)[:60]}'
 
     if clvl is not None:
         ReaderSections(pdf).partition(chapters)
@@ -381,6 +492,7 @@ def build_one(pdf_path, detail_slug, title, short):
     with open(os.path.join(outdir, "index.html"), "w") as f:
         f.write(page_shell(r, title + " – Onlinefassung",
                            f"Zitierbare Onlinefassung von {title}.", overview))
+    redirect_stale_reader_routes(outdir, previous_routes, {chapter["slug"] for chapter in chapters}, metadata)
     return len(chapters)
 
 
@@ -433,7 +545,7 @@ if __name__ == "__main__":
             continue
         title = x.get("title") or slug
         try:
-            n = build_one(os.path.join(ROOT, pdf), slug, title, short_label(title))
+            n = build_one(os.path.join(ROOT, pdf), slug, title, short_label(title), x)
             if n == 1:
                 made_single += 1
             else:

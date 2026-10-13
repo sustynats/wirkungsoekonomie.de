@@ -121,7 +121,7 @@
 <p>Das bedeutet nicht, dass Resonanz über normative Bewertung gestellt wird. Im Gegenteil: Resonanz ohne positive Netto-Wirkung kann destruktiv sein. Polarisierung kann hoch resonant sein. Hass kann mobilisieren. Auch solche Dynamiken sind Verstärkungsprozesse - allerdings destabilisieren sie den Zustandsraum langfristig.</p>
 <p>Die Integration von Resonanz erfordert daher eine doppelte Perspektive: Sie ist Verstärkungsfaktor, aber ihre Richtung muss mit systemischer Stabilität kompatibel sein. Resonanz wird so zu einer qualitativen Modulationsvariable innerhalb der Interdependenzmatrix.</p>
 <p>An diesem Punkt wird die Architektur der Wirkungsökonomie sichtbar:</p>
-<p>- Nachhaltigkeitsdimensionen als Zustandskoordinaten- Interdependenzmatrix als Kopplungsstruktur- Netto-Wirkung als Gesamtverschiebung im Zustandsraum- Engpassbedingungen als Stabilitätsgrenzen- Resonanz als Verstärkungs- oder Dämpfungsmechanismus</p>
+<ul><li>Nachhaltigkeitsdimensionen als Zustandskoordinaten- Interdependenzmatrix als Kopplungsstruktur- Netto-Wirkung als Gesamtverschiebung im Zustandsraum- Engpassbedingungen als Stabilitätsgrenzen- Resonanz als Verstärkungs- oder Dämpfungsmechanismus</li></ul>
 <p>Damit entsteht ein kohärentes Modell gesellschaftlicher Dynamik.</p>
 <p>Doch eine entscheidende Frage bleibt noch offen: Wenn bestimmte Dimensionen strukturelle Mindestbedingungen darstellen und Resonanz die Wirksamkeit moduliert - wie kann verhindert werden, dass destruktive Effekte durch rechnerische Kompensation verdeckt werden?</p>
 <p>Hier setzt die Engpass- oder Reverse-Merit-Logik an.</p>
@@ -147,7 +147,7 @@
 <p>Diese Logik ist zugleich restriktiv und produktiv. Restriktiv, weil sie destruktive Aktivitäten klar begrenzt. Produktiv, weil sie Innovation in jene Bereiche lenkt, die mehrere Dimensionen gleichzeitig stabilisieren. Sie belohnt nicht bloße Effizienz, sondern strukturelle Kohärenz.</p>
 <p>Engpasslogik transformiert damit die Steuerungsfrage. Nicht „Wie maximieren wir Wert?“ sondern „Wie vermeiden wir strukturelle Destabilisierung?“ wird zum Leitprinzip. Nachhaltigkeit erscheint nicht länger als Zusatzoption, sondern als Bedingung der Möglichkeit wirtschaftlicher Aktivität.</p>
 <p>Mit dieser Engpassperspektive ist die theoretische Architektur vollständig:</p>
-<p>- Zustandsraum statt Zielkatalog- Interdependenzmatrix statt isolierter Indikatoren- Netto-Wirkung statt Erstwirkung- Resonanz als Verstärkungsmechanismus- Engpasslogik als Stabilitätsbedingung</p>
+<ul><li>Zustandsraum statt Zielkatalog- Interdependenzmatrix statt isolierter Indikatoren- Netto-Wirkung statt Erstwirkung- Resonanz als Verstärkungsmechanismus- Engpasslogik als Stabilitätsbedingung</li></ul>
 <p>Doch Theorie allein genügt nicht. Die entscheidende Frage lautet nun: Wie wird diese Architektur in eine lernende Steuerungslogik übersetzt? Wie kann ein politisches und ökonomisches System interdependente Netto-Wirkung operationalisieren, ohne in technokratische Übersteuerung zu verfallen?</p>
 <p>Hier beginnt der Übergang von der Systemtheorie zur Institutionenarchitektur.</p>
 <h2 id="vii-vom-modell-zur-steuerung">VII. Vom Modell zur Steuerung</h2>

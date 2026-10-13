@@ -1,0 +1,28 @@
+{
+  "mode": "read-only candidate discovery, not overall publication approval",
+  "pdfsChecked": 925,
+  "uniquePdfs": 915,
+  "objectsChecked": 436007,
+  "metadataStreamsChecked": 207,
+  "imageMetadataChecked": 988,
+  "attachmentsChecked": 0,
+  "findings": [
+    {
+      "path": "assets/pdf/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.pdf",
+      "sha256": "e66fa6347f47445f208eb81cca725fe554482ddfbdfc86b2d9abee39648c5fed",
+      "objectsChecked": 868,
+      "metadataStreamsChecked": 0,
+      "imageMetadataChecked": 0,
+      "attachmentsChecked": 0,
+      "findings": [
+        {
+          "surface": "object-dictionary",
+          "xref": 156,
+          "matched": "anthropic",
+          "context": " 63 253.91999 318 266.66999 ]\n  /A <<\n    /Type /Action\n    /S /URI\n    /URI (https://www.anthropic.com/news/fable-mythos-access)\n  >>\n  /StructParent 81\n>>"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

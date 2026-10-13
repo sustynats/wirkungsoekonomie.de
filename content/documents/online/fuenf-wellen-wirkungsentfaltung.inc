@@ -454,7 +454,7 @@
 <p>Das Wellenmodell kann dabei disziplinieren. Jede Welle verlangt eine konkrete Antwort. Was wird sichtbar? Wer ist betroffen? Wie wird bewertet? Wer reagiert? Was verändert sich?</p>
 <p>Quellenbezug: [I1], [I2], [I12]</p>
 <h3>6.10 Dokumenten- und Website-Logik</h3>
-<p>Für die Website sollte die allgemeine Wellenlogik nicht überladen präsentiert werden. Auf der Seite des öffentlichen Wirkungsraums bleibt die Kommunikationsfassung maßgeblich. In Grundlagen-, Akademie- oder Dossierbereichen kann dann erklärt werden, dass diese Kommunikationsfassung die spezielle Form eines allgemeineren wirkungsökonomischen Musters ist.</p>
+
 <p>Das verhindert Nutzerverwirrung. Wer eine Debattenkarte sucht, braucht keine Abhandlung über Kapitalmärkte. Wer das Modell theoretisch verstehen will, braucht die allgemeine Herleitung. Die Informationsarchitektur sollte diese Wege unterscheiden.</p>
 <p>Empfehlung: Öffentlicher Wirkungsraum = Praxis und Kommunikationsfassung. Dossier Wirkungsentfaltung = allgemeine Theorie. Akademie = Brücke zwischen beiden. Glossar = begriffliche Sicherung.</p>
 <p>Quellenbezug: [I1], [I12]</p>
@@ -492,7 +492,7 @@
 <p>Quellenbezug: [I2], [I11], [E8], [E10]</p>
 <h3>8.5 Implementierung in Akademie und Website</h3>
 <p>Für die Akademie sollte das Modell in drei Modulen vermittelt werden. Modul eins erklärt die allgemeine Wirkungsentfaltung: Sichtbarkeit, Betroffenheit, Bewertung, Resonanz/Anpassung, Struktur/Rückkopplung und Tiefe. Modul zwei zeigt die Kommunikationsfassung: Aufmerksamkeit, Emotion, Deutung, Resonanz, Verschiebung. Modul drei wendet das Modell auf konkrete Fälle an: Debattenkarte, Produkt, Kapitalentscheidung, politische Maßnahme.</p>
-<p>Für die Website sollte der öffentliche Wirkungsraum praktisch bleiben. Die Theorie muss kurz und orientierend eingeführt werden, aber der unmittelbare Nutzen steht oben: Was ist die Behauptung? Wie antworte ich? Was passiert im Diskurs? Welche Narrative wirken? Welche Tiefe liegt darunter?</p>
+
 <p>Das Dossier kann im Hintergrund die methodische Grundlage liefern. Es muss nicht jeder Nutzerin sofort alles erklären. Aber es gibt dem Projekt eine stabile Architektur.</p>
 <p>Quellenbezug: [I12], [I1]</p>
 <h2>Anhang A - Mastertemplate für Wirkungsräume</h2>

@@ -24,10 +24,8 @@ from docx.shared import Cm, Pt, RGBColor
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = Path(
-    "Dossier_Oeffentlicher_Wirkungsraum_Wellen_Tiefe_WOeK_100Seiten_Arbeitsfassung.docx"
-)
-SOURCE_COPY = ROOT / "docs/oeffentlicher-wirkungsraum/source/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.docx"
+SOURCE = ROOT / "source-assets/generated/publication-cleanup-20261013/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.docx"
+SOURCE_COPY = ROOT / "source-assets/generated/publication-cleanup-20261013/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1-styled.docx"
 PDF_TARGET = ROOT / "assets/downloads/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.pdf"
 PAGE_TARGET = ROOT / "oeffentlicher-wirkungsraum/dossier-stein-wellen-tiefe/index.html"
 
@@ -36,7 +34,7 @@ SUBTITLE = (
     "Ein Langdossier über Debatten, Resonanz, Aufmerksamkeit und demokratische Resilienz."
 )
 CANONICAL = "https://wirkungsoekonomie.de/oeffentlicher-wirkungsraum/dossier-stein-wellen-tiefe/"
-DATE = "2026-06-07"
+DATE = "2026-10-13"
 BASE = "../../"
 
 
@@ -125,7 +123,7 @@ def convert_pdf(source: Path, target: Path):
         capture_output=True,
         check=False,
     )
-    generated = source.with_suffix(".pdf")
+    generated = target.parent / f"{source.stem}.pdf"
     if generated != target and generated.exists():
         generated.replace(target)
     if result.returncode != 0 or not target.exists():

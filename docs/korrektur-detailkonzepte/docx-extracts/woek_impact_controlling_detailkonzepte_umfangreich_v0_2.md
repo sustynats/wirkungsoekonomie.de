@@ -20,21 +20,13 @@ v0.2
 
 Status
 
-nachgelieferte Korrekturfassung
+Fachliche Arbeitsfassung
 
 Stand
 
 24. Mai 2026
 
 Leitformel: Wirkung statt Kapital. Für Mensch, Planet und Demokratie.
-
-Vorwort und Korrekturhinweis
-
-Diese nachgelieferte Korrekturfassung ersetzt die bisher sehr kurzen Detailkonzept-Skizzen. Sie ist bewusst als ausführliches Detailkonzept-Kompendium aufgebaut. Jeder Unterbereich erhält eine fachliche Ausarbeitung mit Problem, Wirkungslogik, Systemarchitektur, Messlogik, politischer Anschlussfähigkeit, Risiken und Online-/Dossierbezug.
-
-Die Inhalte sind öffentlich formuliert. Interne Umsetzungs- und Prozesshinweise wurden bewusst nicht aufgenommen. Öffentliche Dokumente erklären Fachinhalte, nicht Arbeitsabläufe.
-
-Öffentlicher CharakterDieses Dokument ist als fachliche Grundlage für Website, Online-Volltext, Download und Dossier geeignet. Es enthält keine internen technischen Arbeitsanweisungen.
 
 Grundthese des Bereichs
 
@@ -120,7 +112,7 @@ Detailkonzepte
 
 Impact Controlling als System
 
-Dieses Detailkonzept vertieft den Unterbereich „Impact Controlling als System“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Von Berichtsdaten zu Steuerungsdaten, Entscheidungsrückkopplung, Management und Politik. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Impact Controlling als System“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Von Berichtsdaten zu Steuerungsdaten, Entscheidungsrückkopplung, Management und Politik.
 
 1. Ausgangslage und alte Logik
 
@@ -188,15 +180,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelImpact Controlling als System: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Impact Controlling als System: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 T-SROI
 
-Dieses Detailkonzept vertieft den Unterbereich „T-SROI“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Transformational Social Return on Investment, Systemhebel, Diffusion, Resilienz und Transformation. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „T-SROI“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Transformational Social Return on Investment, Systemhebel, Diffusion, Resilienz und Transformation.
 
 1. Ausgangslage und alte Logik
 
@@ -264,15 +252,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelT-SROI: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: T-SROI: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Netto-Wirkungs-Index NWI
 
-Dieses Detailkonzept vertieft den Unterbereich „Netto-Wirkungs-Index NWI“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Operative Wirkungskannzahl, Scoring, Nicht-Kompensation, Ergebnislogik. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Netto-Wirkungs-Index NWI“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Operative Wirkungskannzahl, Scoring, Nicht-Kompensation, Ergebnislogik.
 
 1. Ausgangslage und alte Logik
 
@@ -340,15 +324,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelNetto-Wirkungs-Index NWI: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Netto-Wirkungs-Index NWI: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 WÖk-IDs
 
-Dieses Detailkonzept vertieft den Unterbereich „WÖk-IDs“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Adresse der Wirkung, SDG-/SDG+-Bezug, Indikatorfamilien, Datenherkunft und Governance. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „WÖk-IDs“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Adresse der Wirkung, SDG-/SDG+-Bezug, Indikatorfamilien, Datenherkunft und Governance.
 
 1. Ausgangslage und alte Logik
 
@@ -416,15 +396,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWÖk-IDs: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: WÖk-IDs: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Scorecards
 
-Dieses Detailkonzept vertieft den Unterbereich „Scorecards“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Strukturierte Wirkungserfassung für Produkt, Projekt, Unternehmen, Politikmaßnahme. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Scorecards“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Strukturierte Wirkungserfassung für Produkt, Projekt, Unternehmen, Politikmaßnahme.
 
 1. Ausgangslage und alte Logik
 
@@ -492,15 +468,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelScorecards: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Scorecards: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Reverse Merit Order
 
-Dieses Detailkonzept vertieft den Unterbereich „Reverse Merit Order“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Engpasslogik, rote Linien, kein Schönrechnen schwerer negativer Wirkung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Reverse Merit Order“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Engpasslogik, rote Linien, kein Schönrechnen schwerer negativer Wirkung.
 
 1. Ausgangslage und alte Logik
 
@@ -568,15 +540,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelReverse Merit Order: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Reverse Merit Order: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Benchmarks und Archetypen
 
-Dieses Detailkonzept vertieft den Unterbereich „Benchmarks und Archetypen“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Sektorale Vergleichswerte, NACE, Schwellen, automatische Score-Ableitung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Benchmarks und Archetypen“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Sektorale Vergleichswerte, NACE, Schwellen, automatische Score-Ableitung.
 
 1. Ausgangslage und alte Logik
 
@@ -644,15 +612,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelBenchmarks und Archetypen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Benchmarks und Archetypen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Datenqualität und Assurance
 
-Dieses Detailkonzept vertieft den Unterbereich „Datenqualität und Assurance“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Vertrauensstufen, Prüfpfade, Auditierbarkeit, Unsicherheit und Plausibilität. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Datenqualität und Assurance“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Vertrauensstufen, Prüfpfade, Auditierbarkeit, Unsicherheit und Plausibilität.
 
 1. Ausgangslage und alte Logik
 
@@ -720,15 +684,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelDatenqualität und Assurance: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Datenqualität und Assurance: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Digitale Produktpässe und Wirkungsdatenräume
 
-Dieses Detailkonzept vertieft den Unterbereich „Digitale Produktpässe und Wirkungsdatenräume“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Interoperable Infrastruktur, Produktgedächtnis, Datenräume, Datenschutz. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Digitale Produktpässe und Wirkungsdatenräume“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Interoperable Infrastruktur, Produktgedächtnis, Datenräume, Datenschutz.
 
 1. Ausgangslage und alte Logik
 
@@ -796,15 +756,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelDigitale Produktpässe und Wirkungsdatenräume: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Digitale Produktpässe und Wirkungsdatenräume: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 KII statt KPI
 
-Dieses Detailkonzept vertieft den Unterbereich „KII statt KPI“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Key Impact Indicators in Management, Controlling, Budgetierung und Zielsystemen. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „KII statt KPI“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Key Impact Indicators in Management, Controlling, Budgetierung und Zielsystemen.
 
 1. Ausgangslage und alte Logik
 
@@ -872,15 +828,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelKII statt KPI: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: KII statt KPI: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Beispielrechnungen
 
-Dieses Detailkonzept vertieft den Unterbereich „Beispielrechnungen“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Agri-Solar, Produkt, Lieferkette, Unternehmen, öffentlicher Haushalt. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Beispielrechnungen“ innerhalb des Portals „Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards“. Agri-Solar, Produkt, Lieferkette, Unternehmen, öffentlicher Haushalt.
 
 1. Ausgangslage und alte Logik
 
@@ -948,15 +900,7 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelBeispielrechnungen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
-
-Gemeinsame Veröffentlichungslogik
-
-Jeder Unterbereich wird auf der Website als vollständige Online-Fassung veröffentlicht. Das Detailkonzept bildet die fachliche Grundlage, das Einzeldossier ergänzt Beispiele, Berechnungen, Datenquellen und Umsetzungsvarianten. Downloads sind Export und Archiv, nicht der Hauptzugang.
+Kernformel: Beispielrechnungen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Quellen- und Referenzrahmen
 

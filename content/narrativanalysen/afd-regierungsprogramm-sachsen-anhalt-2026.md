@@ -41,6 +41,6 @@ Diese Datei bereitet die spätere Ausarbeitung vor. Sie ist keine abgeschlossene
 - "Planwirtschaftliche Energiewende"
 - "Kehrtwende um 180 Grad"
 
-## Redaktioneller Hinweis
+## Einordnung
 
 Vor einer finalen Veröffentlichung muss jede Originalstelle mit Quelle, Kontext, Abrufdatum und kurzem Auszug dokumentiert werden.

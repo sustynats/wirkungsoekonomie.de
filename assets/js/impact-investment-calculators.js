@@ -58,6 +58,7 @@
   };
 
   const currency = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+  const formatMoney = value => typeof value === "number" && Number.isFinite(value) ? currency.format(value) : "nicht berechenbar";
   const decimal = new Intl.NumberFormat("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   function rawValue(form, name) {
@@ -195,7 +196,7 @@
     const evaluated = result.status === "evaluated";
     setText(root, "ioi", evaluated ? `${decimal.format(result.ioi)} EUR/EUR` : "blockiert");
     setText(root, "tsroi", evaluated ? `${decimal.format(result.tsroi)} : 1` : "blockiert");
-    setText(root, "netImpact", currency.format(result.benefitPv));
+    setText(root, "netImpact", formatMoney(result.benefitPv));
     setText(root, "financialReturn", financialPv === null ? "nicht berechenbar" : currency.format(financialPv));
     setText(root, "interpretation", evaluated
       ? `${selected?.interpretation || "Modellhafte Demonstration."} ${result.explanation}`
@@ -204,8 +205,8 @@
       financialPv === null
         ? "Finanzsicht: Netto-Rückflussquote ist wegen unvollständiger oder ungültiger Eingaben nicht berechenbar."
         : `Finanzsicht: diskontierter Netto-Rückfluss ${currency.format(financialPv)} (Finanzrückfluss abzüglich Betriebskosten); nach Abzug der Anfangsinvestition ${currency.format(Number(investment))} ergibt sich ${decimal.format(financialRoi)} : 1.`,
-      `Direkter Nutzen ${currency.format(result.directPv)}, transformativer Nutzen ${currency.format(result.transformativePv)} und konservativ angesetzte Schäden ${currency.format(result.harmPv)} werden vor der Quote getrennt ausgewiesen; der Szenarioabschlag reduziert nur beanspruchte Nutzen, nicht Schäden.`,
-      `Diskontierter Netto-Nutzen ${currency.format(result.benefitPv)}; diskontierte Ressourcen ${currency.format(result.costPv)}. Demo-Annahme: r = r_K; in einer Prüfung können Nutzen- und Ressourcendiskontsätze getrennt begründet werden.`,
+      `Direkter Nutzen ${formatMoney(result.directPv)}, transformativer Nutzen ${formatMoney(result.transformativePv)} und konservativ angesetzte Schäden ${formatMoney(result.harmPv)} werden vor der Quote getrennt ausgewiesen; der Szenarioabschlag reduziert nur beanspruchte Nutzen, nicht Schäden.`,
+      `Diskontierter Netto-Nutzen ${formatMoney(result.benefitPv)}; diskontierte Ressourcen ${formatMoney(result.costPv)}. Demo-Annahme: r = r_K; in einer Prüfung können Nutzen- und Ressourcendiskontsätze getrennt begründet werden.`,
       evaluated
         ? `Gate offen: IOI = ${decimal.format(result.ioi)} EUR/EUR; T-SROI = ${decimal.format(result.tsroi)} : 1.`
         : `Gate blockiert: ${result.gate.reasons.join(" ")} Keine positive IOI- oder T-SROI-Aussage.`,

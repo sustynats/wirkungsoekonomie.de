@@ -20,21 +20,13 @@ v0.2
 
 Status
 
-nachgelieferte Korrekturfassung
+Fachliche Arbeitsfassung
 
 Stand
 
 24. Mai 2026
 
 Leitformel: Wirkung statt Kapital. Für Mensch, Planet und Demokratie.
-
-Vorwort und Korrekturhinweis
-
-Diese nachgelieferte Korrekturfassung ersetzt die bisher sehr kurzen Detailkonzept-Skizzen. Sie ist bewusst als ausführliches Detailkonzept-Kompendium aufgebaut. Jeder Unterbereich erhält eine fachliche Ausarbeitung mit Problem, Wirkungslogik, Systemarchitektur, Messlogik, politischer Anschlussfähigkeit, Risiken und Online-/Dossierbezug.
-
-Die Inhalte sind öffentlich formuliert. Interne Umsetzungs- und Prozesshinweise wurden bewusst nicht aufgenommen. Öffentliche Dokumente erklären Fachinhalte, nicht Arbeitsabläufe.
-
-Öffentlicher CharakterDieses Dokument ist als fachliche Grundlage für Website, Online-Volltext, Download und Dossier geeignet. Es enthält keine internen technischen Arbeitsanweisungen.
 
 Grundthese des Bereichs
 
@@ -126,7 +118,7 @@ Detailkonzepte
 
 Wohnen als Wirkungsraum
 
-Dieses Detailkonzept vertieft den Unterbereich „Wohnen als Wirkungsraum“ innerhalb des Portals „Wohnen & Stadt“. Wohnen als Daseinsvorsorge, Gesundheitsraum, Teilhaberaum und demokratischer Stabilitätsfaktor. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wohnen als Wirkungsraum“ innerhalb des Portals „Wohnen & Stadt“. Wohnen als Daseinsvorsorge, Gesundheitsraum, Teilhaberaum und demokratischer Stabilitätsfaktor.
 
 1. Ausgangslage und alte Logik
 
@@ -194,15 +186,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWohnen als Wirkungsraum: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wohnen als Wirkungsraum: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Mietwirkung und Bezahlbarkeit
 
-Dieses Detailkonzept vertieft den Unterbereich „Mietwirkung und Bezahlbarkeit“ innerhalb des Portals „Wohnen & Stadt“. Mietbelastung, Einkommenswirkung, Verdrängung, soziale Stabilität. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Mietwirkung und Bezahlbarkeit“ innerhalb des Portals „Wohnen & Stadt“. Mietbelastung, Einkommenswirkung, Verdrängung, soziale Stabilität.
 
 1. Ausgangslage und alte Logik
 
@@ -270,15 +258,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelMietwirkung und Bezahlbarkeit: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Mietwirkung und Bezahlbarkeit: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wohnwirkungsindex WIX-Wohn
 
-Dieses Detailkonzept vertieft den Unterbereich „Wohnwirkungsindex WIX-Wohn“ innerhalb des Portals „Wohnen & Stadt“. Messlogik, Indikatoren, Scorefelder, Gewichtung, Nicht-Kompensation. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wohnwirkungsindex WIX-Wohn“ innerhalb des Portals „Wohnen & Stadt“. Messlogik, Indikatoren, Scorefelder, Gewichtung, Nicht-Kompensation.
 
 1. Ausgangslage und alte Logik
 
@@ -346,15 +330,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWohnwirkungsindex WIX-Wohn: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wohnwirkungsindex WIX-Wohn: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Sanierung, Energie und Warmmietenneutralität
 
-Dieses Detailkonzept vertieft den Unterbereich „Sanierung, Energie und Warmmietenneutralität“ innerhalb des Portals „Wohnen & Stadt“. Klima, Energiearmut, Modernisierung, soziale Abfederung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Sanierung, Energie und Warmmietenneutralität“ innerhalb des Portals „Wohnen & Stadt“. Klima, Energiearmut, Modernisierung, soziale Abfederung.
 
 1. Ausgangslage und alte Logik
 
@@ -422,15 +402,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelSanierung, Energie und Warmmietenneutralität: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Sanierung, Energie und Warmmietenneutralität: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Eigentum, Vermietung und Wirkungspflicht
 
-Dieses Detailkonzept vertieft den Unterbereich „Eigentum, Vermietung und Wirkungspflicht“ innerhalb des Portals „Wohnen & Stadt“. Rendite, Verantwortung, faire Vermietung, Anreizsysteme. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Eigentum, Vermietung und Wirkungspflicht“ innerhalb des Portals „Wohnen & Stadt“. Rendite, Verantwortung, faire Vermietung, Anreizsysteme.
 
 1. Ausgangslage und alte Logik
 
@@ -498,15 +474,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelEigentum, Vermietung und Wirkungspflicht: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Eigentum, Vermietung und Wirkungspflicht: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Boden, Leerstand und Spekulation
 
-Dieses Detailkonzept vertieft den Unterbereich „Boden, Leerstand und Spekulation“ innerhalb des Portals „Wohnen & Stadt“. Bodenwert, Nutzungspflicht, Leerstand, Gemeinwohlbindung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Boden, Leerstand und Spekulation“ innerhalb des Portals „Wohnen & Stadt“. Bodenwert, Nutzungspflicht, Leerstand, Gemeinwohlbindung.
 
 1. Ausgangslage und alte Logik
 
@@ -574,15 +546,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelBoden, Leerstand und Spekulation: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Boden, Leerstand und Spekulation: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Quartier, Stadt und Sozialraumprofil
 
-Dieses Detailkonzept vertieft den Unterbereich „Quartier, Stadt und Sozialraumprofil“ innerhalb des Portals „Wohnen & Stadt“. Nachbarschaft, Infrastruktur, Bildung, Gesundheit, Mobilität, Sicherheit. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Quartier, Stadt und Sozialraumprofil“ innerhalb des Portals „Wohnen & Stadt“. Nachbarschaft, Infrastruktur, Bildung, Gesundheit, Mobilität, Sicherheit.
 
 1. Ausgangslage und alte Logik
 
@@ -650,15 +618,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelQuartier, Stadt und Sozialraumprofil: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Quartier, Stadt und Sozialraumprofil: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Verdrängung, Gentrifizierung und Teilhabe
 
-Dieses Detailkonzept vertieft den Unterbereich „Verdrängung, Gentrifizierung und Teilhabe“ innerhalb des Portals „Wohnen & Stadt“. Dynamiken der Aufwertung, Schutz, Vielfalt und demokratisches Vertrauen. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Verdrängung, Gentrifizierung und Teilhabe“ innerhalb des Portals „Wohnen & Stadt“. Dynamiken der Aufwertung, Schutz, Vielfalt und demokratisches Vertrauen.
 
 1. Ausgangslage und alte Logik
 
@@ -726,15 +690,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelVerdrängung, Gentrifizierung und Teilhabe: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Verdrängung, Gentrifizierung und Teilhabe: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Kommunale Wohnwirkungspolitik
 
-Dieses Detailkonzept vertieft den Unterbereich „Kommunale Wohnwirkungspolitik“ innerhalb des Portals „Wohnen & Stadt“. Kommunale Budgets, Wirkungsfonds, Planung, Beteiligung und Pilotgebiete. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Kommunale Wohnwirkungspolitik“ innerhalb des Portals „Wohnen & Stadt“. Kommunale Budgets, Wirkungsfonds, Planung, Beteiligung und Pilotgebiete.
 
 1. Ausgangslage und alte Logik
 
@@ -802,15 +762,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelKommunale Wohnwirkungspolitik: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Kommunale Wohnwirkungspolitik: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Finanzierung, Förderlogik und Wirkungsfonds
 
-Dieses Detailkonzept vertieft den Unterbereich „Finanzierung, Förderlogik und Wirkungsfonds“ innerhalb des Portals „Wohnen & Stadt“. Förderung nach Wirkung, Investitionslogik, Sozial- und Klimadividende. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Finanzierung, Förderlogik und Wirkungsfonds“ innerhalb des Portals „Wohnen & Stadt“. Förderung nach Wirkung, Investitionslogik, Sozial- und Klimadividende.
 
 1. Ausgangslage und alte Logik
 
@@ -878,15 +834,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelFinanzierung, Förderlogik und Wirkungsfonds: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Finanzierung, Förderlogik und Wirkungsfonds: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Mieterstrom und Energie-Gemeinschaften
 
-Dieses Detailkonzept vertieft den Unterbereich „Mieterstrom und Energie-Gemeinschaften“ innerhalb des Portals „Wohnen & Stadt“. Dezentrale Energie, Teilhabe an Energiewende, Preiswirkung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Mieterstrom und Energie-Gemeinschaften“ innerhalb des Portals „Wohnen & Stadt“. Dezentrale Energie, Teilhabe an Energiewende, Preiswirkung.
 
 1. Ausgangslage und alte Logik
 
@@ -954,15 +906,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelMieterstrom und Energie-Gemeinschaften: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Mieterstrom und Energie-Gemeinschaften: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Gesundes, barrierefreies und resilientes Wohnen
 
-Dieses Detailkonzept vertieft den Unterbereich „Gesundes, barrierefreies und resilientes Wohnen“ innerhalb des Portals „Wohnen & Stadt“. Innenraumqualität, Hitze, Barrierefreiheit, Resilienz, Krisenfestigkeit. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Gesundes, barrierefreies und resilientes Wohnen“ innerhalb des Portals „Wohnen & Stadt“. Innenraumqualität, Hitze, Barrierefreiheit, Resilienz, Krisenfestigkeit.
 
 1. Ausgangslage und alte Logik
 
@@ -1030,15 +978,7 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelGesundes, barrierefreies und resilientes Wohnen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
-
-Gemeinsame Veröffentlichungslogik
-
-Jeder Unterbereich wird auf der Website als vollständige Online-Fassung veröffentlicht. Das Detailkonzept bildet die fachliche Grundlage, das Einzeldossier ergänzt Beispiele, Berechnungen, Datenquellen und Umsetzungsvarianten. Downloads sind Export und Archiv, nicht der Hauptzugang.
+Kernformel: Gesundes, barrierefreies und resilientes Wohnen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Quellen- und Referenzrahmen
 

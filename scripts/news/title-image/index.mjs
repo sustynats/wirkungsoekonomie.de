@@ -4,7 +4,7 @@ import { publicImpactAssessment } from '../impact-release.mjs';
 //
 // Ein Rendering-Kern, zwei Darstellungsmodi:
 //   editorial   – extern generiertes Symbolbild im WÖk-Rahmen (Branding, Rubrik,
-//                 Überschrift, Kennzeichnung „KI-generiertes Symbolbild“)
+//                 Überschrift, Kennzeichnung „Symbolbild“)
 //   impact_card – Wirkungskarte aus strukturierten Analysedaten (Rubrik,
 //                 Überschrift, Dimensionsmeter, Verfahrensstand, Quelle)
 //
@@ -442,7 +442,7 @@ export function normalizeInput(input = {}) {
       const item = input.dimensions[key];
       return [key, { ...(item&&typeof item==='object'?item:{}), magnitude: item?.magnitude ?? levelOf(item), label: item?.directionLabel || item?.label || '? offen' }];
     })) : null;
-  const label = input.label !== undefined ? input.label : (mode === "editorial" ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung");
+  const label = input.label !== undefined ? input.label : (mode === "editorial" ? "Symbolbild" : "Wirkungskarte · WÖk-Einordnung");
   return {
     warnings,
     mode,

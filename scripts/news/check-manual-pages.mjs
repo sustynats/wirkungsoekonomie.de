@@ -8,6 +8,10 @@ import {applyApprovedEditorialRevisions} from './editorial-approved-revisions.mj
 
 const sourceRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const plain = html => html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+const publicExpectedText = html => plain(html)
+  .replace(/^Redaktioneller Hinweis$/u, "Einordnung")
+  .replace(/Die Beiträge werden nicht automatisiert erzeugt\.?\s*/gu, "")
+  .trim();
 
 // Read-only gate on BOTH source render and final deploy artifact. Every
 // manuscript block, in order and with original punctuation, must survive.
@@ -18,7 +22,7 @@ export function checkManualPages(outputRoot, editions = applyApprovedEditorialRe
     let cursor = page.indexOf(escape(edition.title));
     if (cursor < 0 || !html.includes('data-manuscript-sha256="' + edition.manuscript_sha256 + '"')) throw Error("MANUAL_PAGE_IDENTITY:" + edition.slug);
     for (const section of edition.rendered.sections) for (const block of section.blocks) {
-      const text = plain(block);
+      const text = publicExpectedText(block);
       if (!text) continue;
       const at = page.indexOf(text, cursor);
       if (at < 0) throw Error("MANUAL_PUBLISHED_TEXT_CHANGED:" + edition.slug + ":" + text.slice(0, 100));

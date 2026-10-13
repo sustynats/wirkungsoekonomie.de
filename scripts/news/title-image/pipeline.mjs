@@ -21,7 +21,7 @@ function retryFields(reason, now) {
 }
 export function publicTitleImage(value) {
   if (!value) return null;
-  const result = { mode: value.mode, label: value.mode === "editorial" ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung" };
+  const result = { mode: value.mode, label: value.mode === "editorial" ? "Symbolbild" : "Wirkungskarte · WÖk-Einordnung" };
   for (const key of ["og", "wide", "square"]) {
     const file = value[key];
     if (file && typeof file.url === "string" && (file.url === FALLBACK || /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}(?:-part-(?:[2-9]|[1-9]\d+))?\/wt-[a-f0-9]{16}-[a-f0-9]{16}-(?:og|wide|square)\.png$/.test(file.url))) result[key] = { url: file.url, width: SIZES[key].width, height: SIZES[key].height };

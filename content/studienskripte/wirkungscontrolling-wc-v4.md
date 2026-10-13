@@ -778,7 +778,7 @@ Politische Anschlussfähigkeit und Umsetzungsoptionen
 
 SDG-/SDG+-Bezug
 
-Website- und Bereichintegration
+Anwendung
 
 Fazit
 

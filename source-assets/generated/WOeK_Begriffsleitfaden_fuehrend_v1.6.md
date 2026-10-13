@@ -1206,14 +1206,16 @@ Die Prüfung war websiteweit strukturell und terminologisch. Historische Blog- u
 - Mehrere aktuelle Online-Buch- und Fachseiten führen im Terminologiehinweis noch Version 1.0 als Grundlage. Historische Originaldokumente dürfen unverändert bleiben; aktuelle HTML-Seiten und laufende Referenzhinweise sollten auf Version 1.5 umgestellt werden.
 
 
-## 15.2 Verbindliche Migrationsmatrix
+## 15.2 Historische Migrationsmatrix aus Version 1.5
+
+Die folgende Matrix dokumentiert den damaligen v1.5-Migrationsauftrag. Sie ist kein offener v1.6-Release-Tracker. Für neue Inhalte gelten die Ergänzung v1.6, die dort genannten amtlichen Quellen und die aktuellen maschinenlesbaren Qualitätsgates.
 
 
 | Priorität | Bereich | Erforderliche Anpassung |
 | --- | --- | --- |
 | P0 | IOOI-Seite `/verstehen/iooi-und-wirkungsoekonomie/` | Die bereits gute Gegenstandsabgrenzung beibehalten, aber verbleibende Hierarchiesignale bereinigen: IOOI als externe optionale Teilmethode kennzeichnen; Meta-Titel/Formulierungen „was die WÖk ergänzt“ vermeiden; „Vorwirkung, IOOI, ...“ durch „Vorwirkung, Wirkungsermittlung, ...“ ersetzen; Grafik und Alt-Texte entsprechend anpassen. |
 | P0 | Verstehen-Hub | Teaser „IOOI erklärt den Weg, WÖk ergänzt den Maßstab“ durch die eigenständige WÖk-Architektur ersetzen. IOOI nur im Bereich Anschlussmethoden nennen. |
-| P0 | Live-Fassung Begriffsleitfaden | Version 1.5 veröffentlichen, v1.4 als historische Fassung erhalten, aktuelle Downloads und Verweise umstellen. |
+| Erledigt v1.6 | Live-Fassung Begriffsleitfaden | Version 1.6 ist die führende Fassung; v1.5 und ältere Fassungen bleiben als historische, zitierfähige Entwicklungsstände erhalten. |
 | P0 | Wirkungspfad im Glossar | Lineare Definition über Aktivitäten, Outputs und Outcomes ersetzen durch die v1.5-Definition. IOOI-kompatiblen Abschnitt nur optional erwähnen. |
 | P0 | IOOI im Glossar | Kategorie von „Grundbegriff/Wirkungslogikmodell“ auf „Anschlussbegriff/Results-Chain-Methode“ ändern; Definition und Querverweise auf v1.5 ausrichten; IOOI und IOI strikt trennen. |
 | P0 | Wirkungsradar im Glossar | Alte Spinnennetzdefinition entfernen. Neue Instrumentdefinition verwenden. Für die Grafik den Begriff „Wirkungsprofil im Radardiagramm“ anlegen. |

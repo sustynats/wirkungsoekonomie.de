@@ -622,7 +622,7 @@ SDG-/SDG+-Bezug
 
 Politische Anschlussfähigkeit und Umsetzungsoptionen
 
-Website- und Portalintegration
+Anwendung
 
 Fazit
 

@@ -8,30 +8,31 @@ Every visible public German route needs an English counterpart below `/en/` with
 
 ## Summary
 
-- Public visible source routes: 14749
+- Public visible source routes: 17154
 - English routes already present: 8
-- English routes missing: 14741
+- English routes missing: 17146
 
 ## Categories
 
 | Category | Total | Available | Missing |
 | --- | ---: | ---: | ---: |
-| bibliothek | 7581 | 1 | 7580 |
-| begriffe | 2073 | 0 | 2073 |
-| referenz | 1662 | 0 | 1662 |
-| quellenarchiv | 1024 | 0 | 1024 |
-| woek-id-register | 624 | 0 | 624 |
-| wirkungsradar | 594 | 0 | 594 |
+| bibliothek | 8553 | 1 | 8552 |
+| begriffe | 2162 | 0 | 2162 |
+| referenz | 1663 | 0 | 1663 |
+| quellenarchiv | 1486 | 0 | 1486 |
+| wirkungsticker | 925 | 0 | 925 |
+| woek-id-register | 681 | 0 | 681 |
+| wirkungsradar | 468 | 0 | 468 |
 | wirkungsfelder | 240 | 0 | 240 |
 | portale | 179 | 0 | 179 |
+| blog | 175 | 0 | 175 |
 | methodenraum | 157 | 0 | 157 |
-| blog | 153 | 0 | 153 |
 | werkzeuge | 95 | 1 | 94 |
 | werkstatt | 66 | 0 | 66 |
-| verstehen | 51 | 0 | 51 |
-| api | 38 | 0 | 38 |
+| verstehen | 52 | 0 | 52 |
+| api | 29 | 0 | 29 |
 | erleben | 25 | 0 | 25 |
-| dokumente | 22 | 0 | 22 |
+| dokumente | 23 | 0 | 23 |
 | top-level | 21 | 1 | 20 |
 | wirkungssteuerung | 20 | 0 | 20 |
 | fuer | 18 | 0 | 18 |
@@ -39,12 +40,14 @@ Every visible public German route needs an English counterpart below `/en/` with
 | downloads | 10 | 0 | 10 |
 | quellen | 10 | 0 | 10 |
 | podcast | 9 | 0 | 9 |
+| akademie | 8 | 0 | 8 |
 | w | 8 | 0 | 8 |
 | wirkungswissenschaften | 8 | 0 | 8 |
-| akademie | 7 | 0 | 7 |
 | wissen | 6 | 0 | 6 |
+| institut | 5 | 0 | 5 |
 | methodik | 4 | 0 | 4 |
 | sdg-plus | 3 | 0 | 3 |
+| umfragen | 3 | 0 | 3 |
 | oeffentlicher-wirkungsraum | 2 | 0 | 2 |
 | anwendungen | 1 | 0 | 1 |
 | app | 1 | 1 | 0 |
@@ -57,10 +60,11 @@ Every visible public German route needs an English counterpart below `/en/` with
 | fragen | 1 | 0 | 1 |
 | funktionsweise | 1 | 0 | 1 |
 | homepage | 1 | 1 | 0 |
-| institut | 1 | 0 | 1 |
 | journal | 1 | 0 | 1 |
 | lernen | 1 | 0 | 1 |
 | mein-wirkungsraum | 1 | 1 | 0 |
+| news | 1 | 0 | 1 |
+| parlament | 1 | 0 | 1 |
 | pilot-starten | 1 | 0 | 1 |
 | register | 1 | 0 | 1 |
 | sdg-sdgplus | 1 | 0 | 1 |
@@ -76,25 +80,17 @@ Every visible public German route needs an English counterpart below `/en/` with
 
 | German route | English target | Category | Title |
 | --- | --- | --- | --- |
-| `/akademie.html` | `/en/akademie/` | top-level | Akademie \| Lernpfad Wirkungskompetenz |
-| `/akademie/grundlagen.html` | `/en/akademie/grundlagen/` | akademie | Grundlagen der Wirkungsökonomie \| Akademie für Wirkungsökonomie |
-| `/akademie/lernpfad.html` | `/en/akademie/lernpfad/` | akademie | Lernpfad Wirkungskompetenz \| Akademie für Wirkungsökonomie |
-| `/akademie/pruefungen.html` | `/en/akademie/pruefungen/` | akademie | Prüfungen, Zertifikat und FAQ \| Akademie für Wirkungsökonomie |
-| `/akademie/studienstruktur.html` | `/en/akademie/studienstruktur/` | akademie | Studium und Studienstruktur \| Akademie für Wirkungsökonomie |
-| `/akademie/weiterbildung.html` | `/en/akademie/weiterbildung/` | akademie | Weiterbildung, Aufbaupfade und Meisterstufe \| Akademie für Wirkungsökonomie |
+| `/akademie.html` | `/en/akademie/` | top-level | Akademie für Wirkungsökonomie · Curriculum v4.0 |
+| `/akademie/curriculum-v3-2.html` | `/en/akademie/curriculum-v3-2/` | akademie | Historisches Curriculum v3.2 \| Akademie für Wirkungsökonomie |
+| `/akademie/grundlagen.html` | `/en/akademie/grundlagen/` | akademie | Grundlagen v4.0 \| Akademie für Wirkungsökonomie |
+| `/akademie/lernpfad.html` | `/en/akademie/lernpfad/` | akademie | Lernpfad v4.0 \| Akademie für Wirkungsökonomie |
+| `/akademie/pruefungen.html` | `/en/akademie/pruefungen/` | akademie | Prüfungen v4.0 \| Akademie für Wirkungsökonomie |
+| `/akademie/studienstruktur.html` | `/en/akademie/studienstruktur/` | akademie | Studienstruktur v4.0 \| Akademie für Wirkungsökonomie |
+| `/akademie/weiterbildung.html` | `/en/akademie/weiterbildung/` | akademie | Weiterbildung v4.0 \| Akademie für Wirkungsökonomie |
 | `/akademie/wirkungsfinanzpolitik/` | `/en/akademie/wirkungsfinanzpolitik/` | akademie | Öffentliche Finanzen nach Wirkung \| Akademie der Wirkungsökonomie |
 | `/akademie/wirkungsradar/` | `/en/akademie/wirkungsradar/` | akademie | Wirkungsradar lernen \| Wirkungsökonomie Akademie |
 | `/anwendungen.html` | `/en/anwendungen/` | top-level | Anwendungen der Wirkungsökonomie - Alias der Wirkungsfelder |
 | `/anwendungen/scanner.html` | `/en/anwendungen/scanner/` | anwendungen | WÖk-Scanner Anwendung - Wirkungsökonomie |
-| `/api/` | `/en/api/` | api | WÖk API · Daten |
-| `/api/v1/canvases/` | `/en/api/v1/canvases/` | api | WÖk API · woems-canvas-registry |
-| `/api/v1/capabilities/` | `/en/api/v1/capabilities/` | api | WÖk API · Daten |
-| `/api/v1/glossary/` | `/en/api/v1/glossary/` | api | WÖk API · Daten |
-| `/api/v1/` | `/en/api/v1/` | api | WÖk API · Daten |
-| `/api/v1/methods/` | `/en/api/v1/methods/` | api | WÖk API · woems-methoden-registry |
-| `/api/v1/sdg-plus/` | `/en/api/v1/sdg-plus/` | api | WÖk API · Daten |
-| `/api/v1/search/` | `/en/api/v1/search/` | api | WÖk API · Daten |
-| `/api/v1/wirkungsradar/` | `/en/api/v1/wirkungsradar/` | api | WÖk API · Daten |
 | `/api/wirkungsradar/cards/arbeit-lohnt-sich-nicht-mehr/` | `/en/api/wirkungsradar/cards/arbeit-lohnt-sich-nicht-mehr/` | api |  |
 | `/api/wirkungsradar/cards/co2-preis-oder-fossile-systemkosten/` | `/en/api/wirkungsradar/cards/co2-preis-oder-fossile-systemkosten/` | api |  |
 | `/api/wirkungsradar/cards/deutschland-nur-zwei-prozent/` | `/en/api/wirkungsradar/cards/deutschland-nur-zwei-prozent/` | api |  |
@@ -124,6 +120,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/api/wirkungsradar/distribution/windraeder-voegel-wald-beton-rueckbau/` | `/en/api/wirkungsradar/distribution/windraeder-voegel-wald-beton-rueckbau/` | api |  |
 | `/api/wirkungsradar/report-myth/` | `/en/api/wirkungsradar/report-myth/` | api |  |
 | `/api/wirkungsradar/report-narrative/` | `/en/api/wirkungsradar/report-narrative/` | api |  |
+| `/begriffe/7-bundeshaushaltsordnung/` | `/en/begriffe/7-bundeshaushaltsordnung/` | begriffe | § 7 Bundeshaushaltsordnung (BHO) - Wirkungsökonomie |
 | `/begriffe/abfallhierarchie/` | `/en/begriffe/abfallhierarchie/` | begriffe | Abfallhierarchie \| Glossar der Wirkungsökonomie |
 | `/begriffe/abregelung/` | `/en/begriffe/abregelung/` | begriffe | Abregelung \| Glossar der Wirkungsökonomie |
 | `/begriffe/ac-laden/` | `/en/begriffe/ac-laden/` | begriffe | AC-Laden \| Glossar der Wirkungsökonomie |
@@ -143,11 +140,14 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/begriffe/ai-act/` | `/en/begriffe/ai-act/` | begriffe | AI Act - Wirkungsökonomie |
 | `/begriffe/akkumulation/` | `/en/begriffe/akkumulation/` | begriffe | Akkumulation \| Glossar der Wirkungsökonomie |
 | `/begriffe/akkumulator/` | `/en/begriffe/akkumulator/` | begriffe | Akkumulator / Akku \| Glossar der Wirkungsökonomie |
+| `/begriffe/aktivitaet/` | `/en/begriffe/aktivitaet/` | begriffe | Aktivität - Wirkungsökonomie |
 | `/begriffe/alan-watts-daoismus/` | `/en/begriffe/alan-watts-daoismus/` | begriffe | Alan Watts / Daoismus \| Glossar der Wirkungsökonomie |
 | `/begriffe/alarm-frame/` | `/en/begriffe/alarm-frame/` | begriffe | Alarm-Frame \| Glossar der Wirkungsökonomie |
 | `/begriffe/algorithmische-fairness/` | `/en/begriffe/algorithmische-fairness/` | begriffe | Algorithmische Fairness und digitale Rechte - Wirkungsökonomie |
 | `/begriffe/algorithmische-verstaerkung/` | `/en/begriffe/algorithmische-verstaerkung/` | begriffe | Algorithmische Verstärkung \| Glossar der Wirkungsökonomie |
 | `/begriffe/allgemeines-gleichgewicht/` | `/en/begriffe/allgemeines-gleichgewicht/` | begriffe | Allgemeines Gleichgewicht \| Glossar der Wirkungsökonomie |
+| `/begriffe/allmende/` | `/en/begriffe/allmende/` | begriffe | Allmende - Wirkungsökonomie |
+| `/begriffe/allmendedilemma/` | `/en/begriffe/allmendedilemma/` | begriffe | Allmendedilemma - Wirkungsökonomie |
 | `/begriffe/allmendeproblem/` | `/en/begriffe/allmendeproblem/` | begriffe | Allmendeproblem \| Glossar der Wirkungsökonomie |
 | `/begriffe/allokation/` | `/en/begriffe/allokation/` | begriffe | Allokation \| Glossar der Wirkungsökonomie |
 | `/begriffe/alltag-2035/` | `/en/begriffe/alltag-2035/` | begriffe | Alltag 2035 - Wirkungsökonomie |
@@ -156,3 +156,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/begriffe/amartya-sen/` | `/en/begriffe/amartya-sen/` | begriffe | Amartya Sen \| Glossar der Wirkungsökonomie |
 | `/begriffe/amathia/` | `/en/begriffe/amathia/` | begriffe | Amathia \| Glossar der Wirkungsökonomie |
 | `/begriffe/ambiguitaetsintoleranz/` | `/en/begriffe/ambiguitaetsintoleranz/` | begriffe | Ambiguitätsintoleranz \| Glossar der Wirkungsökonomie |
+| `/begriffe/america-first/` | `/en/begriffe/america-first/` | begriffe | America First - Wirkungsökonomie |
+| `/begriffe/anaerobe-vergaerung/` | `/en/begriffe/anaerobe-vergaerung/` | begriffe | Anaerobe Vergärung \| Glossar der Wirkungsökonomie |
+| `/begriffe/anarchokapitalismus/` | `/en/begriffe/anarchokapitalismus/` | begriffe | Anarchokapitalismus \| Glossar der Wirkungsökonomie |
+| `/begriffe/angstappell/` | `/en/begriffe/angstappell/` | begriffe | Angstappell \| Glossar der Wirkungsökonomie |
