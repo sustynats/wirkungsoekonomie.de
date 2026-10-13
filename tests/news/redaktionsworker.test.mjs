@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates, editorialModel, authorAnalysisModel, modelForEditorialRequest, recoverCachedEditorialOutputs, validateEditorialDelivery } from '../../scripts/news/redaktionsworker.mjs';
+import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates, editorialModel, authorAnalysisModel, modelForEditorialRequest, recoverCachedEditorialOutputs, recoverUnsentEditorialAnswers, validateEditorialDelivery } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 import { prepareApiJob, PERSONAL_PREVIEW_SCOPE } from '../../scripts/news/bridge/api-processor.mjs';
@@ -210,6 +210,159 @@ test('free cached recovery runs even when the editorial daily quota is exhausted
     draft: async () => { assert.fail('recovery must not call a provider'); } });
   assert.equal(result.status, 'daily_limit');
   assert.equal(result.recovered_outputs[0].status, 'cached_output_redelivered');
+});
+
+function unsentMediaAnswer() {
+  const job = queuedJob(); job.input.request.kind = 'listened';
+  job.input.input_hash = hash(job.input.request);
+  const output = { preview: { ...preview(), format: 'listened', source_media: {
+    show: 'Synthetische Testsendung', episode_title: 'Eine fiktive Folge',
+    original_release_date: '2026-09-15', original_url: 'https://example.org/source',
+  } } };
+  output.preview.markdown += '\n\n## Sendungsdaten\n\nSynthetische Testsendung, 15. September 2026. [Original](https://example.org/source).';
+  const record = { job_id: jobId, input_hash: job.input.input_hash, pass: 0, at: now(),
+    model: 'gpt-5.6-luna', usage: null, cost_usd: 0.02, web_searches: 1,
+    output, answer: JSON.stringify(output) };
+  const archive = bridgePath('95_LOGS', `editorial-answer-${jobId}-${hash(record)}.json`);
+  const raw = JSON.stringify(record), session = fakeSession([job]);
+  session.files.set(archive, raw);
+  session.observations.set(`github-attempt:${jobId}`, { job_id: jobId, provider_called: true,
+    version: 'redaktionsworker-8', status: 'validation_failed',
+    error: 'EDITORIAL_FINAL_PERSPECTIVE_REQUIRED\neine Nachlieferung blieb erfolglos',
+    cost_usd: 0.02, repair_calls: 1, at: now() });
+  return { job, output, record, raw, archive, session };
+}
+
+test('formal media footer uses the existing import heading without changing its paragraphs or sources', () => {
+  const { job, output } = unsentMediaAnswer();
+  const bound = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash,
+    processed_at: now(), ...structuredClone(output) };
+  assert.throws(() => validateEditorialDelivery(bound, job.input, now()), /FINAL_PERSPECTIVE_REQUIRED/);
+  const original = structuredClone(bound.preview), repairs = [];
+  normalizeEditorialPreview(bound.preview, { repairs });
+  assert.equal(bound.preview.markdown, original.markdown.replace('## Sendungsdaten', '## Originalfolge'));
+  assert.deepEqual(bound.preview.sources, original.sources);
+  assert.deepEqual(bound.preview.source_media, original.source_media);
+  assert.doesNotThrow(() => validateEditorialDelivery(bound, job.input, now()));
+  normalizeEditorialPreview(bound.preview, { repairs: [] });
+  assert.equal(repairs.length, 1);
+});
+
+test('media metadata normalization does not hide another main section or supply a missing personal ending', () => {
+  for (const reason of ['missing_personal', 'late_analysis', 'wrong_format', 'missing_media']) {
+    const { job, output } = unsentMediaAnswer();
+    if (reason === 'missing_personal') output.preview.markdown = output.preview.markdown.replace('## Meine Einordnung', '## Ein anderer Abschnitt');
+    if (reason === 'late_analysis') output.preview.markdown += '\n\n## Nachtraegliche Analyse\n\nEin weiterer Haupttext.';
+    if (reason === 'wrong_format') output.preview.format = 'opinion_analysis';
+    if (reason === 'missing_media') delete output.preview.source_media;
+    normalizeEditorialPreview(output.preview);
+    const bound = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash, processed_at: now(), ...output };
+    assert.throws(() => validateEditorialDelivery(bound, job.input, now()), undefined, reason);
+  }
+});
+
+test('a paid answer rejected before delivery is restored free with immutable archives and no approval', async () => {
+  const { job, raw, archive, session } = unsentMediaAnswer();
+  const result = await recoverUnsentEditorialAnswers(session, [job], now());
+  assert.equal(result[0].status, 'cached_output_redelivered');
+  assert.equal(result[0].provider_called, false);
+  assert.equal(session.files.get(archive), raw);
+  const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  assert.equal(delivered.input_hash, job.input.input_hash);
+  assert.equal(delivered.preview.markdown, JSON.parse(raw).output.preview.markdown.replace('## Sendungsdaten', '## Originalfolge'));
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).cost_usd, 0.02);
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).repair_calls, 1);
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).status, 'output_delivered');
+  assert.equal(session.observations.get(`github-editorial-recovery:${jobId}`).cost_usd, 0);
+  assert.equal(job.status, 'queued'); assert.equal(job.ack, undefined); assert.equal(job.accepted, undefined);
+  assert.deepEqual(await recoverUnsentEditorialAnswers(session, [job], now()), []);
+});
+
+test('the restored media answer stages in the unchanged editorial app but cannot publish without final approval', async () => {
+  const { DatabaseSync } = await import('node:sqlite');
+  const { EditorialApproval } = await import('../../scripts/news/bridge/editorial-approval.mjs');
+  const { job, session } = unsentMediaAnswer();
+  await recoverUnsentEditorialAnswers(session, [job], now());
+  const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  const desk = new EditorialApproval(new DatabaseSync(':memory:'), { now });
+  try {
+    const staged = desk.stage(job, delivered.preview);
+    assert.equal(staged.status, 'AWAITING_FINAL_APPROVAL');
+    assert.equal(staged.approval, null);
+    assert.deepEqual(desk.claimPublications(), []);
+    assert.match(desk.preview(owner, jobId).html, /Originalfolge/);
+  } finally { desk.db.close(); }
+});
+
+test('unsent recovery refuses unknown attempts, changed archives, wrong bindings, HOLDs and processed jobs', async () => {
+  for (const reason of ['unknown', 'other_error', 'changed_archive', 'binding', 'hold', 'ack', 'accepted']) {
+    const { job, record, raw, archive, session } = unsentMediaAnswer();
+    if (reason === 'unknown') session.observations.get(`github-attempt:${jobId}`).status = 'started';
+    if (reason === 'other_error') session.observations.get(`github-attempt:${jobId}`).error = 'SOURCE_VERIFICATION_REQUIRED';
+    if (reason === 'changed_archive') session.files.set(archive, raw.replace('Eine fiktive Folge', 'Unbestaetigte Folge'));
+    if (reason === 'binding' || reason === 'hold') {
+      session.files.delete(archive);
+      if (reason === 'binding') record.input_hash = '0'.repeat(64);
+      else record.output = { disposition: 'hold', hold: { code: 'SOURCE_VERIFICATION_REQUIRED' } };
+      session.files.set(bridgePath('95_LOGS', `editorial-answer-${jobId}-${hash(record)}.json`), JSON.stringify(record));
+    }
+    if (reason === 'ack') job.ack = { approved: true };
+    if (reason === 'accepted') job.accepted = { staged: true };
+    const before = structuredClone(session.observations.get(`github-attempt:${jobId}`));
+    await recoverUnsentEditorialAnswers(session, [job], now());
+    assert.equal(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)), false, reason);
+    assert.deepEqual(session.observations.get(`github-attempt:${jobId}`), before, reason);
+  }
+});
+
+test('unsent recovery preserves an existing output or ACK file without another delivery', async () => {
+  for (const folder of ['20_OUTPUT_READY', '30_ACK']) {
+    const { job, session } = unsentMediaAnswer();
+    const target = bridgePath(folder, `${jobId}.${folder === '30_ACK' ? 'ack' : 'output'}.json`);
+    session.files.set(target, 'Existing immutable result.');
+    assert.deepEqual(await recoverUnsentEditorialAnswers(session, [job], now()), []);
+    assert.equal(session.files.get(target), 'Existing immutable result.');
+    assert.equal(session.calls.filter(c => c[0] === 'write').length, 0);
+  }
+});
+
+test('a later user supplement prevents recovery of the superseded paid draft', async () => {
+  const { job, session } = unsentMediaAnswer();
+  const additional = queuedJob('wt_20260915T210000Z_' + 'c'.repeat(24));
+  additional.input.request.brief = supplementBrief(jobId, 'Eine spaetere synthetische Ergaenzung.');
+  additional.input.input_hash = hash(additional.input.request);
+  await session.store.put(additional);
+  assert.deepEqual(await recoverUnsentEditorialAnswers(session, [job, additional], now()), []);
+  assert.equal(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)), false);
+});
+
+test('recovery checks current acknowledgement and input binding again immediately before delivery', async () => {
+  for (const reason of ['ack', 'input_changed']) {
+    const { job, archive, session } = unsentMediaAnswer();
+    const read = session.transport.read;
+    session.transport.read = async path => {
+      const raw = await read(path);
+      if (path === archive) {
+        if (reason === 'ack') job.ack = { approved: true };
+        else job.input.input_hash = 'f'.repeat(64);
+      }
+      return raw;
+    };
+    await recoverUnsentEditorialAnswers(session, [job], now());
+    assert.equal(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)), false, reason);
+    assert.equal(session.observations.get(`github-attempt:${jobId}`).status, 'validation_failed');
+  }
+});
+
+test('free unsent recovery precedes daily capacity checks without changing paid counters', async () => {
+  const { session } = unsentMediaAnswer();
+  const counter = { paid: 10, cost_usd: 1 };
+  session.observations.set('github-editorial-day:2026-09-15', structuredClone(counter));
+  const result = await runRedaktionsworker({ session, knowledge, now, env: {}, maxJobsPerDay: 10,
+    draft: async () => assert.fail('an archived paid answer must never be regenerated') });
+  assert.equal(result.status, 'daily_limit');
+  assert.equal(result.recovered_outputs[0].status, 'cached_output_redelivered');
+  assert.deepEqual(session.observations.get('github-editorial-day:2026-09-15'), counter);
 });
 
 test('cached screenshot provenance stays private and no public source URL is invented', async () => {
