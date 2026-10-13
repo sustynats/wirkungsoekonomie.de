@@ -16,17 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-12T23:36:03.655Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-13T04:32:52.424Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-13T04:36:00.974Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3167d9a4d9e74ae703e4db19",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-13T04:50:59.147Z"
+    }
+  ],
   "dailyDate": "2026-10-12",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2601,7 +2598,7 @@
       }
     },
     "last_new_at": "2026-10-13T00:51:19.740Z",
-    "checked_at": "2026-10-13T04:36:00.974Z",
+    "checked_at": "2026-10-13T04:50:59.147Z",
     "last_current_new_at": "2026-10-13T00:51:19.740Z"
   },
   "recovery_attempts": [
