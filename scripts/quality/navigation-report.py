@@ -19,13 +19,13 @@ def resolved(base,value):
     return unquote(url.path),unquote(url.fragment)
 class Page(HTMLParser):
     def __init__(self,text):
-        super().__init__(convert_charrefs=True);self.links=[];self.ids=set();self.noindex=False;self.redirect=False;self.footer=False;self.breadcrumb=False;self.skip=[];self.current=0;self.lang='de';self.canonical='';self.has_main=False;self.main_id='';self.main_js=False;self.feed(text)
+        super().__init__(convert_charrefs=True);self.links=[];self.ids=set();self.noindex=False;self.redirect=False;self.footer=False;self.breadcrumb=False;self.skip=[];self.current=0;self.lang='de';self.canonical='';self.has_main=False;self.main_id='';self.navigation_js=False;self.feed(text)
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if tag=='html':self.lang=a.get('lang','de').split('-')[0]
         if a.get('id'):self.ids.add(a['id'])
         if tag=='main':self.has_main=True;self.main_id=a.get('id','')
-        if tag=='script' and re.search(r'(?:^|/)main\.js(?:[?#]|$)',a.get('src','')):self.main_js=True
+        if tag=='script' and re.search(r'(?:^|/)site-navigation\.js(?:[?#]|$)',a.get('src','')):self.navigation_js=True
         if tag=='meta':
             if a.get('name','').lower() in {'robots','googlebot'} and re.search(r'\bnoindex\b',a.get('content',''),re.I):self.noindex=True
             if a.get('http-equiv','').lower()=='refresh':self.redirect=True
@@ -63,8 +63,8 @@ def measure(root,search_urls=None):
         if not value:return None
         p=value[0];return (p if p in pages else aliases.get(p) or aliases.get(p+'.html') or aliases.get(p.rstrip('/')+'/index.html')),value[1]
     edges={};redirect_links=[];broken_skip=[];variants={'header':defaultdict(Counter),'footer':defaultdict(Counter)}
-    mainjs=(root/'assets/js/main.js').read_text() if (root/'assets/js/main.js').exists() else ''
-    legacy_dynamic_skip=bool(re.search(r'skipLink\.href\s*=\s*["\']#main-content["\']',mainjs))
+    navigationjs=(root/'assets/js/site-navigation.js').read_text() if (root/'assets/js/site-navigation.js').exists() else ''
+    legacy_dynamic_skip=bool(re.search(r'skipLink\.href\s*=\s*["\']#main-content["\']',navigationjs))
     for r,p in pages.items():
         linked=set()
         for url in p.links:
@@ -76,7 +76,7 @@ def measure(root,search_urls=None):
         for url in p.skip:
             t=target(r,url)
             if not t or t[0]!=r or not t[1] or t[1] not in p.ids:broken_skip.append(r)
-        if legacy_dynamic_skip and not p.skip and p.main_js and p.has_main and p.main_id and p.main_id!='main-content':broken_skip.append(r)
+        if legacy_dynamic_skip and not p.skip and p.navigation_js and p.has_main and p.main_id and p.main_id!='main-content':broken_skip.append(r)
         if not p.redirect:
             for kind in variants:
                 h=shell_hash(raws[r],kind,r)

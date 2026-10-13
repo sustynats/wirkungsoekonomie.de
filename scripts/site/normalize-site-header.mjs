@@ -107,10 +107,11 @@ ${utilityLinks}
       </button>
       <nav class="site-nav" id="site-nav" aria-label="${navLabel}" data-search-exclude>
 ${mainLinks}
-        <div class="site-nav-utility" aria-label="${utilityLabel}">
+        <div class="site-nav-utility" aria-label="${utilityLabel}" aria-hidden="true" inert>
 ${utilityLinks}
         </div>
       </nav>
+      <script src="${base}assets/js/site-navigation.js?v=20261013-a11y" defer></script>
     </header>`;
 }
 
