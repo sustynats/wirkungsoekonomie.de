@@ -12,21 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-13T06:53:09.209Z",
-      "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-13T11:35:54.881Z",
-      "active": false
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-13T11:35:54.881Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0783d58ec6566e0f5bafd57b",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-13T12:06:23.000Z"
+    }
+  ],
   "dailyDate": "2026-10-13",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2614,11 +2607,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-trump-putin-will-deal-mehr-als-selenskyj-a1745a/": {
         "first_seen_at": "2026-10-13T11:35:54.881Z",
         "source_at": "2026-10-12T22:55:35.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sicherheit-flughafen-nurnberg-gesperrt-mogliche-luftnotlage-4470a6/": {
+        "first_seen_at": "2026-10-13T12:06:23.000Z",
+        "source_at": "2026-10-13T11:11:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nurnberg-flughafen-wegen-mutmasslicher-notlage-gesperrt-82da75/": {
+        "first_seen_at": "2026-10-13T12:06:23.000Z",
+        "source_at": "2026-10-13T11:06:00.000Z"
       }
     },
-    "last_new_at": "2026-10-13T11:35:54.881Z",
-    "checked_at": "2026-10-13T11:35:54.881Z",
-    "last_current_new_at": "2026-10-13T11:05:57.490Z"
+    "last_new_at": "2026-10-13T12:06:23.000Z",
+    "checked_at": "2026-10-13T12:06:23.000Z",
+    "last_current_new_at": "2026-10-13T12:06:23.000Z"
   },
   "recovery_attempts": [
     {
