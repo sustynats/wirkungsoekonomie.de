@@ -30,6 +30,7 @@ const residualPatterns = [
   /Originalmanuskript erhalten; interner ausstehender Freigabevermerk aus der öffentlichen Darstellung entfernt\.?/iu,
   /Diese Fassung wurde von Natalie Weber zur Veröffentlichung freigegeben\. Sie wird nicht automatisch veröffentlicht\.?/iu,
   /KI-Werkzeuge können Recherche und Ausarbeitung unterstützen\. Sie ersetzen nicht die redaktionelle Verantwortung der Autorin\.?/iu,
+  /Methodik und redaktionelle Verantwortung für dieses Format\.?/iu,
   /Die Beiträge werden nicht automatisiert erzeugt\.?/iu,
   /Für die Website sollte/iu,
   /Auf \/verstehen\/sdgs-sdgplus\/ eine interaktive Matrix mit 17 SDGs und 169 Targets einbauen\.?/iu,
@@ -100,6 +101,12 @@ function sanitize(content) {
     .replace(/Originalmanuskript erhalten; interner ausstehender Freigabevermerk aus der öffentlichen Darstellung entfernt\.?/giu, "")
     .replace(/(?:<p\b[^>]*>\s*)?Diese Fassung wurde von Natalie Weber zur Veröffentlichung freigegeben\. Sie wird nicht automatisch veröffentlicht\.?(?:\s*<\/p>)?/giu, "")
     .replace(/(?:<details>\s*<summary>Zur Arbeitsweise<\/summary>\s*<p>)?KI-Werkzeuge können Recherche und Ausarbeitung unterstützen\. Sie ersetzen nicht die redaktionelle Verantwortung der Autorin\.?(?:<\/p>\s*<\/details>)?/giu, "")
+    .replace(/<aside\b[^>]*class=["'][^"']*news-editorial-transparency[^"']*["'][\s\S]*?<\/aside>/giu, "")
+    .replace(/<small\b[^>]*class=["'][^"']*news-editorial-card__curation[^"']*["'][\s\S]*?<\/small>/giu, "")
+    .replace(/<li\b[^>]*>\s*<a\b[^>]*href=["']#redaktioneller-hinweis["'][^>]*>Redaktioneller Hinweis<\/a>\s*<\/li>/giu, "")
+    .replace(/<section\b[^>]*id=["']redaktioneller-hinweis["'][\s\S]*?<\/section>/giu, "")
+    .replace(/<p\b[^>]*class=["'][^"']*news-method-note[^"']*["'][^>]*>\s*Redaktionell überarbeitet und erneut freigegeben am[\s\S]*?<\/p>/giu, "")
+    .replace(/Methodik und redaktionelle Verantwortung für dieses Format\.?/giu, "Methodik des Wirkungstickers.")
     .replace(/Die Beiträge werden nicht automatisiert erzeugt\.?/giu, "")
     .replace(/<p\b[^>]*>\s*Für die Website sollte[\s\S]*?<\/p>/giu, "")
     .replace(/<p\b[^>]*>\s*[•]\s*Auf \/verstehen\/sdgs-sdgplus\/[\s\S]*?<\/p>\s*(?:<p\b[^>]*>\s*[•][\s\S]*?<\/p>\s*){0,3}/giu, "")

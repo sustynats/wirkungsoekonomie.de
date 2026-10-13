@@ -1,5 +1,3 @@
-import {escape} from './editorial-markdown.mjs';
-
 // Formatweite Kuration ist keine Behauptung, jede historische Fassung sei
 // einzeln manuell geprueft oder ohne KI entstanden. Einzel-Freigabe nur dort,
 // wo der vorhandene Publikationsadapter eine solche Freigabe voraussetzt.
@@ -15,5 +13,6 @@ export function hasPersonalRelease(analysis) {
 }
 
 export function renderEditorialAuthorship(analysis) {
-  return `<aside class="news-editorial-transparency" role="note" aria-label="Kuration und Verantwortung"><strong>${escape(EDITORIAL_CURATION_LABEL)}</strong><p>${escape(EDITORIAL_RESPONSIBILITY)}</p></aside>`;
+  // Public articles keep the normal byline; internal curation and production notes stay out of the public reading view.
+  return '';
 }

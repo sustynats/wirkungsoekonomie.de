@@ -612,6 +612,9 @@ function normalizePublicArtifactLinksAndText() {
     const relative = toPosixRelative(file);
 
     content = stripAiTrackingParameters(stripEditorialHtmlNotes(stripPrivateDocumentLinks(rewritePublicReleaseAssetReferences(content))))
+      // Repair one legacy source-link typo that must never reach the public
+      // artifact; the canonical bibliographic URL is word-history.
+      .replaceAll("PDF-history-witch-hunt", "word-history-witch-hunt")
       .replace(/Claude\/Codex\/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche\./gi, "Parallel laufende Arbeitsprozesse können gleichzeitig in dieselben Bereiche schreiben.")
       .replaceAll(
         "docs/go2-produktionsreihenfolge/source/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",

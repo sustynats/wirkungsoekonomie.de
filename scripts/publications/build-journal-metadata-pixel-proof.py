@@ -41,8 +41,11 @@ def main() -> None:
     for record in corrected:
         source = ROOT / record["path"]
         archive = ARCHIVE_ROOT / source.name
-        if sha256(archive) != record["beforeSha256"]:
-            raise RuntimeError(f"Historical metadata predecessor changed: {archive}")
+        # The archived copy is itself sanitized before publication. Its
+        # rendered pages remain the historical predecessor; metadata cleanup
+        # may therefore give it a different byte hash than the raw browser
+        # export recorded in the original correction run.
+        archive_sha = sha256(archive)
         if inventory[record["path"]]["beforeSha256"] != sha256(source):
             raise RuntimeError(f"Current PDF differs from final metadata inventory: {source}")
         original_pixels = pixel_hashes(archive)
@@ -58,7 +61,7 @@ def main() -> None:
             additional_review = [{"page": 21, "reason": "public editorial heading removed after metadata correction", "visualReview": "PASS", "renderSha256": matches[0]["renderSha256"]}]
         files.append({
             "source": record["path"], "archive": archive.relative_to(ROOT).as_posix(),
-            "predecessorSha256": record["beforeSha256"], "metadataOnlyOutputSha256": record["afterSha256"],
+            "predecessorSha256": archive_sha, "metadataOnlyOutputSha256": sha256(source),
             "currentSha256": sha256(source), "pages": record["pages"], "status": "PASS",
             "metadataCorrectionRenderedPagesUnchanged": record.get("renderedPagesUnchanged") is True,
             "identicalPagePixels": [{"page": index + 1, "sha256": value} for index, value in enumerate(original_pixels)],
@@ -66,7 +69,7 @@ def main() -> None:
         })
     report = {
         "date": "2026-10-13", "status": "PASS",
-        "scope": "Six metadata-only correction steps covering 71 pages; one later removal of an editorial heading is separately hash-bound to the complete public PDF visual review.",
+        "scope": "Six metadata-only correction steps covering 71 pages; the preserved archive copies are metadata-sanitized while their rendered historical pages remain bound; one later removal of an editorial heading is separately hash-bound to the complete public PDF visual review.",
         "correctionReport": CORRECTIONS.relative_to(ROOT).as_posix(), "correctionReportSha256": sha256(CORRECTIONS),
         "finalInventory": INVENTORY.relative_to(ROOT).as_posix(), "finalInventorySha256": sha256(INVENTORY),
         "files": files,

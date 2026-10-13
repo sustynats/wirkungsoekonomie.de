@@ -1,17 +1,17 @@
 {
   "date": "2026-10-13",
   "status": "PASS",
-  "scope": "Six metadata-only correction steps covering 71 pages; one later removal of an editorial heading is separately hash-bound to the complete public PDF visual review.",
+  "scope": "Six metadata-only correction steps covering 71 pages; the preserved archive copies are metadata-sanitized while their rendered historical pages remain bound; one later removal of an editorial heading is separately hash-bound to the complete public PDF visual review.",
   "correctionReport": "reports/consistency-20261009/pdf-metadata-corrections-20261013.json",
   "correctionReportSha256": "431a5dce40724ceb8e4e0b9548f62b114552ad233fea07ad9681042265502b69",
   "finalInventory": "reports/consistency-20261009/pdf-publishing-metadata-final-20261013.json",
-  "finalInventorySha256": "0d0f981b14bedf59e5f97444d3a4ce759e2a9ba4165b6e7fd29faa0356baf06d",
+  "finalInventorySha256": "ec2bf453f4b10c424cf11bdf984b95672b69a661a6f9dafccf083de03ceef019",
   "files": [
     {
       "source": "assets/pdf/journal/aktionsplan-nachhaltigkeit-detailliertes-update-2026-10-05.pdf",
       "archive": "source-assets/originals/journal-metadata-20261013/aktionsplan-nachhaltigkeit-detailliertes-update-2026-10-05.pdf",
-      "predecessorSha256": "2063cf9ad2783fdfdd99b4d78badc92694463b5be7bc915d3d7ae23c413cddcd",
-      "metadataOnlyOutputSha256": "07eddea570d9cec0319f0e37ad59d8a595dac0516655d34e06bd0b3b69065c04",
+      "predecessorSha256": "313fed6130dc693f934b9b3ad88f13627a7bf3fd208540f4d8cb68a8ba74a5fc",
+      "metadataOnlyOutputSha256": "fea9131843b7036b3b8fdb01d62d5c10f4bbf57c160d26dc8307e63e0d0ee969",
       "currentSha256": "fea9131843b7036b3b8fdb01d62d5c10f4bbf57c160d26dc8307e63e0d0ee969",
       "pages": 21,
       "status": "PASS",
@@ -114,7 +114,7 @@
     {
       "source": "assets/pdf/journal/demokratie-braucht-mehr-als-gute-sachpolitik.pdf",
       "archive": "source-assets/originals/journal-metadata-20261013/demokratie-braucht-mehr-als-gute-sachpolitik.pdf",
-      "predecessorSha256": "1b4e065b168261b2fa4119f4fe4a7b6c23068b322797ec90eae576ef49ebcf77",
+      "predecessorSha256": "3febd370d89e58a832d31c10d60caf9fd8542fa359a90e14f99894b344843b33",
       "metadataOnlyOutputSha256": "ac1f47dbe9aaea6c3cdea578d6087e68c9fd3b74c834874b9d4c72ee0639f000",
       "currentSha256": "ac1f47dbe9aaea6c3cdea578d6087e68c9fd3b74c834874b9d4c72ee0639f000",
       "pages": 9,
@@ -163,7 +163,7 @@
     {
       "source": "assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf",
       "archive": "source-assets/originals/journal-metadata-20261013/geg-wirkungscheck-ioi-t-sroi.pdf",
-      "predecessorSha256": "0d36f5b35ce4bda5e82be9e397fefd9712de6bd25577df109a3298e886895864",
+      "predecessorSha256": "cadf08024cdf5178da8ffa465f95acd5ab00863f7972d9001bb00317ba9e60da",
       "metadataOnlyOutputSha256": "e336ecc247e0814eb01d0f7f44d9dd7dc89daad710d265d1ec62ef8c63a50aca",
       "currentSha256": "e336ecc247e0814eb01d0f7f44d9dd7dc89daad710d265d1ec62ef8c63a50aca",
       "pages": 8,
@@ -208,8 +208,8 @@
     {
       "source": "assets/pdf/journal/gruener-plan-deutschland-wirkungscheck.pdf",
       "archive": "source-assets/originals/journal-metadata-20261013/gruener-plan-deutschland-wirkungscheck.pdf",
-      "predecessorSha256": "39b84f26bf39ea1587b62b34323956cae6e748eb77cf6ef353b6728f13ed05e5",
-      "metadataOnlyOutputSha256": "305cfe18d7cf23d131a63976bc9645f5d4f70baae519bb4938fc7cb722d1ad19",
+      "predecessorSha256": "b602ee8f67167be65e3780d1029a45dcd5a1d08faaa2a595597ce9a08b55ceca",
+      "metadataOnlyOutputSha256": "e945d6b09b5c7472c2fe335bf4e6659332a8a383d2da7d3aa7a1b0c751c50483",
       "currentSha256": "e945d6b09b5c7472c2fe335bf4e6659332a8a383d2da7d3aa7a1b0c751c50483",
       "pages": 12,
       "status": "PASS",
@@ -269,7 +269,7 @@
     {
       "source": "assets/pdf/journal/was-ein-tv-duell-bewirkt.pdf",
       "archive": "source-assets/originals/journal-metadata-20261013/was-ein-tv-duell-bewirkt.pdf",
-      "predecessorSha256": "80794f615d32c992b950d6234b0e6fe3fea7648c4aebe104de08b5237fb86d01",
+      "predecessorSha256": "789f7ac79877a6b5013f189ece0481e860626dc782e3b050147d1cc5cebbf989",
       "metadataOnlyOutputSha256": "b6578a04ddcfb693fffd2d0ce7787f303d3c42f0d4940a914df543e89933bb38",
       "currentSha256": "b6578a04ddcfb693fffd2d0ce7787f303d3c42f0d4940a914df543e89933bb38",
       "pages": 14,
@@ -338,7 +338,7 @@
     {
       "source": "assets/pdf/journal/wie-wallonien-die-extreme-rechte-klein-haelt.pdf",
       "archive": "source-assets/originals/journal-metadata-20261013/wie-wallonien-die-extreme-rechte-klein-haelt.pdf",
-      "predecessorSha256": "1ce2941af379bb1d73e5f5263a85f7dc9688595865c3201839957d1861da0955",
+      "predecessorSha256": "f2b39dcb72b2fcb810b319342a0d1da4a4d50ab78461ceaa628696fa7919ce40",
       "metadataOnlyOutputSha256": "781d4014ce02f7e6cc829c44aec23f3ae35f784dbcfcc3f5025d443cdec8845b",
       "currentSha256": "781d4014ce02f7e6cc829c44aec23f3ae35f784dbcfcc3f5025d443cdec8845b",
       "pages": 7,

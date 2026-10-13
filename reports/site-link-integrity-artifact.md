@@ -1,9 +1,9 @@
 # Site Link Integrity
 Stand: generiert aus dem aktuellen Arbeitsbaum
-- HTML-Seiten: 21570
+- HTML-Seiten: 21666
 - Interne Broken Links: 0
-- Waisenseiten ohne eingehende Links: 3907
-- Doppelte Seitentitel: 1164
+- Waisenseiten ohne eingehende Links: 3951
+- Doppelte Seitentitel: 1162
 ## Broken Links
 ## Waisenseiten
 - /afd-programm/
@@ -166,11 +166,11 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - /begriffe/zivilgesellschaftliche-infrastruktur/
 - /bibliothek/agenda2030-sdg-esg-handout/
 - /bibliothek/apfel-t-shirt-wirkung-im-preis/
-- ... 3747 weitere
+- ... 3791 weitere
 ## Doppelte Seitentitel
 - Weiterleitung: /afd-programm/, /akademie/, /anwendungen/, /ausprobieren/, /blog/, /buch/, /datenschutz/, /fa-qs-und-links/, /funktionsweise.html, /impressum/, /inhalt-und-strategie/, /leitbild/, /mitmachen/, /modell/, /natalie-weber.html, /scorecard-dashboard/, /sdg-und-sdg-plus/, /teil-i-grundlagen/, /teil-ii-methoden-and-instrumente/, /teil-iii-anwendung-and-praxis/, /teil-iv-transformation-and-zukunft/, /ueber-die-w-oek/, /ueber-die-woek/, /ueber/, /veroeffentlichungen/, /w-est-g-journal/, /wirkung-werte-journal/, /wirkungsoekonomie/
 - WÖk API · Daten: /api/, /api/v1/, /api/v1/capabilities/, /api/v1/glossary/, /api/v1/sdg-plus/, /api/v1/search/, /api/v1/wirkungsradar/
-- Archivierte Kopie - weitergeleitet: /assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0 2.html, /referenz/teil-15-internationale-ordnung-globalisierung-und-geopolitik/index 2.html, /referenz/teil-17-kritik-missverstaendnisse-und-ideologische-projektionen/index 2.html, /verstehen/index 2.html, /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html
+- Weiterleitung zur aktuellen Fassung: /assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0 2.html, /referenz/teil-15-internationale-ordnung-globalisierung-und-geopolitik/index 2.html, /referenz/teil-17-kritik-missverstaendnisse-und-ideologische-projektionen/index 2.html, /referenz/version-1-1/index 2.html, /verstehen/index 2.html, /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html
 - DNSH / Do No Significant Harm - Weiterleitung zum Glossarbegriff DNSH - Do No Significant Harm: /begriffe/dnsh-2/, /begriffe/dnsh/
 - WÖk-Netto-Wirkungsindex - Weiterleitung zum Glossarbegriff WÖk-Netto-Wirkungsindex: /begriffe/netto-wirkungs-index/, /begriffe/nwi-2/
 - Nicht-Kompensation - Weiterleitung zum Glossarbegriff Nichtkompensationsprinzip: /begriffe/nicht-kompensation-2/, /begriffe/nicht-kompensation/
@@ -248,4 +248,4 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - 12. SDGs als strukturierter Umgang mit realen Systemrisiken – WÖk sdg geschichte vorlaeufer verhandlungsprozess det… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta-2/lesen/14-12-sdgs-als-strukturierter-umgang-mit-realen-systemrisiken/, /bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta/lesen/14-12-sdgs-als-strukturierter-umgang-mit-realen-systemrisiken/
 - 13. Wirkungsökonomische Einordnung: vom Zielrahmen zur Rückkopplung – WÖk sdg geschichte vorlaeufer verhandlungspro… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta-2/lesen/15-13-wirkungsokonomische-einordnung-vom-zielrahmen-zur-ruckkop/, /bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta/lesen/15-13-wirkungsokonomische-einordnung-vom-zielrahmen-zur-ruckkop/
 - 14. Europa und Deutschland: Übersetzung in Monitoring und Strategie – WÖk sdg geschichte vorlaeufer verhandlungspro… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta-2/lesen/16-14-europa-und-deutschland-ubersetzung-in-monitoring-und-stra/, /bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta/lesen/16-14-europa-und-deutschland-ubersetzung-in-monitoring-und-stra/
-- ... 1084 weitere
+- ... 1082 weitere
