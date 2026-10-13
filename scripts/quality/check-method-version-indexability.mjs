@@ -13,6 +13,7 @@ import {
   routeForHtmlFile,
   sitemapRoutes,
 } from "../lib/method-version-indexability.mjs";
+import { readPublicSitemapRoutes } from "../lib/public-sitemaps.mjs";
 
 const artifact = process.argv.includes("--artifact");
 const root = artifact ? path.join(process.cwd(), "_site") : process.cwd();
@@ -25,7 +26,9 @@ if (!fs.existsSync(indexPath)) failures.push(`Suchindex fehlt: ${path.relative(p
 if (!fs.existsSync(sitemapPath)) failures.push(`Sitemap fehlt: ${path.relative(process.cwd(), sitemapPath)}`);
 
 const entries = fs.existsSync(indexPath) ? JSON.parse(fs.readFileSync(indexPath, "utf8")) : [];
-const sitemap = fs.existsSync(sitemapPath) ? sitemapRoutes(fs.readFileSync(sitemapPath, "utf8")) : [];
+const sitemap = fs.existsSync(sitemapPath)
+  ? (artifact ? readPublicSitemapRoutes(root) : sitemapRoutes(fs.readFileSync(sitemapPath, "utf8")))
+  : [];
 
 function canonicalFor(html = "") {
   return String(html).match(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*\bhref=["']([^"']+)["'][^>]*>/iu)?.[1] || "";
