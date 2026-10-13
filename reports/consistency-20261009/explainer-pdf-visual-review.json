@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-13",
+  "scope": "Complete current learning and NATS editions",
+  "pdfs": [
+    {
+      "id": "impact-controlling-learning",
+      "path": "source-assets/generated/consistency-20261013/pdf/woek-impact-controlling-lernweg-2026-10-13.pdf",
+      "pdfSha256": "83b0030ad0dffea24b28d6195079359e4c4dded88248b998fe3b0e6b9bdd2a57",
+      "pages": 21,
+      "visualPageCoverage": 21,
+      "evidence": "reports/consistency-20261009/learning-pdf-visual-review.json"
+    },
+    {
+      "id": "nats-woek",
+      "path": "public/downloads/originals/NATS_WOeK_allgemein.pdf",
+      "pdfSha256": "3a4b7b97d5ec66a82b253d3e96ae0f395d2c49312749266da50daa1239fc82f4",
+      "pages": 60,
+      "visualPageCoverage": 60,
+      "evidence": "recovery/final-pdf-production-visual-pre-detail-20261013/manifest.json",
+      "reviewedViaExactDuplicate": "public/downloads/originals/NATS_WOeK_allgemein 2.pdf"
+    }
+  ],
+  "findings": {
+    "clipping": 0,
+    "overlap": 0,
+    "productionResidue": 0,
+    "unresolved": 0
+  }
+}

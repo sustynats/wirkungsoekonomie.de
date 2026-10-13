@@ -167,6 +167,6 @@ Ein System ist in dieser Logik nachhaltig, wenn vier Bedingungen gleichzeitig er
 5. IPCC (2022): *Climate Change 2022: Impacts, Adaptation and Vulnerability*. AR6 WGII, Annex II: Glossary, "Resilience"; ergänzend Kapitel 1 und 18. DOI: https://doi.org/10.1017/9781009325844.029
 6. Steffen, W. et al. (2018): *Trajectories of the Earth System in the Anthropocene*. Proceedings of the National Academy of Sciences 115(33), 8252-8259. DOI: https://doi.org/10.1073/pnas.1810141115
 
-## Redaktioneller Hinweis
+## Einordnung
 
 Die anschauliche Formel "Ein System funktioniert auch morgen noch" kann als Einstieg dienen. Sie ist keine ausreichende Fachdefinition: Auch ein fossiles, autoritäres oder ausbeuterisches System kann morgen noch funktionieren. Führend ist daher die Kurzformel der langfristig gesicherten Wirkungsresilienz im MPD-Referenzrahmen.

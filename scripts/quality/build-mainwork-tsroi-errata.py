@@ -32,7 +32,10 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INPUT = ROOT / "assets/pdf/die-neue-ordnung-des-wohlstands.pdf"
 MARKER_KEY = "/WOEKMethodRevision"
 MARKER_VALUE = "2026-08-02-t-sroi-rechenstandard-v1-1"
+CONSISTENCY_MARKER_KEY = "/WOEKSourceRevision"
+CONSISTENCY_MARKER_VALUE = "2026-10-13-books-source-consistency"
 PAGE_NUMBERS = (477, 478)
+CONSISTENCY_PAGE_NUMBERS = (558, 559)
 RETIRED_SNIPPETS = (
     "T-SROI = Transformationswirkung",
     "T-SROI = (T_struktur",
@@ -254,6 +257,26 @@ def text_for_pages(reader: PdfReader) -> str:
 
 
 def validate_current(reader: PdfReader) -> None:
+    metadata = reader.metadata or {}
+    if str(metadata.get(CONSISTENCY_MARKER_KEY, "")) == CONSISTENCY_MARKER_VALUE:
+        if len(reader.pages) < max(CONSISTENCY_PAGE_NUMBERS):
+            raise RuntimeError("Bereinigte Hauptwerk-Ausgabe ist unvollständig.")
+        text = "\n".join(
+            (reader.pages[number - 1].extract_text() or "")
+            for number in CONSISTENCY_PAGE_NUMBERS
+        )
+        required = (
+            "T-SROI = PV_N / PV_R",
+            "PV_N^L",
+            "Der Abschlag u kürzt nur Nutzen, nicht",
+        )
+        for snippet in required:
+            if snippet not in text:
+                raise RuntimeError(f"Aktueller T-SROI-Rechenstandard fehlt in der bereinigten Ausgabe: {snippet}")
+        for snippet in RETIRED_SNIPPETS:
+            if snippet in text:
+                raise RuntimeError(f"Überholte T-SROI-Multiplikatorformel ist noch auslesbar: {snippet}")
+        return
     if len(reader.pages) < max(PAGE_NUMBERS):
         raise RuntimeError("Hauptwerk enthält die erwarteten Seiten 477 und 478 nicht.")
     text = text_for_pages(reader)
@@ -271,6 +294,14 @@ def apply_revision(input_path: Path, output_path: Path, force: bool = False) -> 
     source_reader = PdfReader(str(input_path))
     if len(source_reader.pages) < max(PAGE_NUMBERS):
         raise RuntimeError("Hauptwerk enthält die erwarteten Seiten 477 und 478 nicht.")
+    metadata = source_reader.metadata or {}
+    consistency_current = str(metadata.get(CONSISTENCY_MARKER_KEY, "")) == CONSISTENCY_MARKER_VALUE
+    if consistency_current and not force:
+        if input_path.resolve() != output_path.resolve():
+            output_path.write_bytes(input_path.read_bytes())
+        validate_current(PdfReader(str(output_path)))
+        print("Hauptwerk-PDF enthält bereits die geprüfte bereinigte T-SROI-Fassung.")
+        return
     already_current = revision_marker(source_reader) == MARKER_VALUE
     if already_current and not force:
         if input_path.resolve() != output_path.resolve():

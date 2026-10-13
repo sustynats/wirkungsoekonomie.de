@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "date": "2026-10-13",
+  "scope": "All 1,546 current pages reviewed for layout; all correction-sensitive pages reviewed in detail; publishing copies are pixel-identical to the reviewed renders.",
+  "reviewInventorySha256": "385599a9fb5456cb34fc371be204ae0cb7a36f33b26b3c6e54459ba39aa62bb8",
+  "publishingCopyReportSha256": "ddfdc865efecb52785215cd582e7fc68d33a058ebf1f8c2f3f123ba5d375e55a",
+  "correctionsMasterSha256": "6ae58a42cb354c3767dbf5bb48259b392fa39d760a59d04120e6d13dcbc4ebed",
+  "referenceIntegrity": {
+    "path": "reports/consistency-20261009/book-reference-integrity-515.json",
+    "sha256": "86319f581e2ba9563067113a05d8e6692501dbf9ceba8b3d96a9b9f4221084fe"
+  },
+  "sourceSuccessionSha256": "c58a99c5551d80af277f925ed7254782d5b300ec712b55703db1850543e1f575",
+  "pdfs": [
+    {
+      "volume": "I",
+      "filename": "die-neue-ordnung-des-wohlstands-band-i-2026-10-13.pdf",
+      "pdfSha256": "df7371b13d55a73d0c36ab2dee589e9a183cf32b856f6f3ddffce6b0873c3f8a",
+      "renderedPdfSha256": "bee717ed053b82fc234041bac8f30d98e7c8cf6d9ff0a3172e18cb5d4e8c7e45",
+      "docx": "source-assets/generated/books-20261009/PRINT_6x9_Band-I_Konsistenz_2026-10-10.docx",
+      "docxSha256": "2941c3a5beb751a3b1b40b3f73185e0191fb4fef87cb54c5cb10d8f13761901d",
+      "pages": 789,
+      "visualPageCoverage": 789,
+      "detailedPageCoverage": 263,
+      "layoutSheets": 50,
+      "detailSheets": 88,
+      "actuallyViewedCurrentSheets": 99,
+      "exactFullPageReuseSheets": 2,
+      "exactDetailBodyReuseSheets": 37,
+      "publishingPagesPixelIdenticalToReviewedRender": 789,
+      "navigationPreserved": true,
+      "hiddenProductionMetadataFindings": 0,
+      "status": "PASS"
+    },
+    {
+      "volume": "II",
+      "filename": "die-neue-ordnung-des-wohlstands-band-ii-2026-10-13.pdf",
+      "pdfSha256": "52d676736ebd5fe2415e0d0be3de6664c5c04737151bcbb0d289f3a6173a241d",
+      "renderedPdfSha256": "70e5cd0bd1baed36514539ea4c7ac8f030c8b753e003c4315fe8fd401eed68e6",
+      "docx": "source-assets/generated/books-20261009/PRINT_6x9_Band-II_Konsistenz_2026-10-10.docx",
+      "docxSha256": "00ffaa74602fa7155c4431fc9bd4f7249904672cfba19f1524173f1201f867a0",
+      "pages": 757,
+      "visualPageCoverage": 757,
+      "detailedPageCoverage": 99,
+      "layoutSheets": 48,
+      "detailSheets": 33,
+      "actuallyViewedCurrentSheets": 24,
+      "exactFullPageReuseSheets": 57,
+      "exactDetailBodyReuseSheets": 0,
+      "publishingPagesPixelIdenticalToReviewedRender": 757,
+      "navigationPreserved": true,
+      "hiddenProductionMetadataFindings": 0,
+      "status": "PASS"
+    }
+  ],
+  "totals": {
+    "pages": 1546,
+    "visualPageCoverage": 1546,
+    "detailedPageCoverage": 362,
+    "sheets": 219,
+    "actuallyViewedCurrentSheets": 123,
+    "exactDetailBodyReuseSheets": 37
+  }
+}

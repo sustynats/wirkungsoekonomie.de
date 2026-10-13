@@ -20,21 +20,13 @@ v0.2
 
 Status
 
-nachgelieferte Korrekturfassung
+Fachliche Arbeitsfassung
 
 Stand
 
 24. Mai 2026
 
 Leitformel: Wirkung statt Kapital. Für Mensch, Planet und Demokratie.
-
-Vorwort und Korrekturhinweis
-
-Diese nachgelieferte Korrekturfassung ersetzt die bisher sehr kurzen Detailkonzept-Skizzen. Sie ist bewusst als ausführliches Detailkonzept-Kompendium aufgebaut. Jeder Unterbereich erhält eine fachliche Ausarbeitung mit Problem, Wirkungslogik, Systemarchitektur, Messlogik, politischer Anschlussfähigkeit, Risiken und Online-/Dossierbezug.
-
-Die Inhalte sind öffentlich formuliert. Interne Umsetzungs- und Prozesshinweise wurden bewusst nicht aufgenommen. Öffentliche Dokumente erklären Fachinhalte, nicht Arbeitsabläufe.
-
-Öffentlicher CharakterDieses Dokument ist als fachliche Grundlage für Website, Online-Volltext, Download und Dossier geeignet. Es enthält keine internen technischen Arbeitsanweisungen.
 
 Grundthese des Bereichs
 
@@ -114,7 +106,7 @@ Detailkonzepte
 
 Wirkung als Rechtsprinzip
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkung als Rechtsprinzip“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Verfassungsbezug, Art. 20a, MPD-Rahmen, Grenzen technokratischer Steuerung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkung als Rechtsprinzip“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Verfassungsbezug, Art. 20a, MPD-Rahmen, Grenzen technokratischer Steuerung.
 
 1. Ausgangslage und alte Logik
 
@@ -182,15 +174,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkung als Rechtsprinzip: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkung als Rechtsprinzip: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wirkungssteuergesetz WStG
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkungssteuergesetz WStG“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Rahmengesetz, Wirkung als Bemessungslogik, Haushaltsneutralität, Steuerarten. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkungssteuergesetz WStG“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Rahmengesetz, Wirkung als Bemessungslogik, Haushaltsneutralität, Steuerarten.
 
 1. Ausgangslage und alte Logik
 
@@ -258,15 +246,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkungssteuergesetz WStG: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkungssteuergesetz WStG: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wirkungsumsatzsteuer im Rechtsrahmen
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkungsumsatzsteuer im Rechtsrahmen“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. WUStG, Produktwirkung, FinalScore, Vorsteuerlogik, Rechtsschutz. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkungsumsatzsteuer im Rechtsrahmen“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. WUStG, Produktwirkung, FinalScore, Vorsteuerlogik, Rechtsschutz.
 
 1. Ausgangslage und alte Logik
 
@@ -334,15 +318,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkungsumsatzsteuer im Rechtsrahmen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkungsumsatzsteuer im Rechtsrahmen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wirkungseinkommensteuer WEstG
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkungseinkommensteuer WEstG“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Einkommen, Leistung, Wirkungskontext, Tätigkeits- und Kapitalwirkung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkungseinkommensteuer WEstG“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Einkommen, Leistung, Wirkungskontext, Tätigkeits- und Kapitalwirkung.
 
 1. Ausgangslage und alte Logik
 
@@ -410,15 +390,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkungseinkommensteuer WEstG: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkungseinkommensteuer WEstG: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wirkungshaushalt
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkungshaushalt“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Jeder Euro muss wirken, Wirkungsprüfung, Priorisierung, Vermeidung staatlicher Blindleistung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkungshaushalt“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Jeder Euro muss wirken, Wirkungsprüfung, Priorisierung, Vermeidung staatlicher Blindleistung.
 
 1. Ausgangslage und alte Logik
 
@@ -486,15 +462,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkungshaushalt: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkungshaushalt: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wirkungsrat
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkungsrat“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Unabhängigkeit, Zusammensetzung, Benchmarks, Evaluation, Lobbyismus-Schutz. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkungsrat“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Unabhängigkeit, Zusammensetzung, Benchmarks, Evaluation, Lobbyismus-Schutz.
 
 1. Ausgangslage und alte Logik
 
@@ -562,15 +534,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkungsrat: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkungsrat: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Verwaltung und Rechtsschutz
 
-Dieses Detailkonzept vertieft den Unterbereich „Verwaltung und Rechtsschutz“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Verfahren, Einspruch, Transparenz, Verhältnismäßigkeit, Übergangslogik. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Verwaltung und Rechtsschutz“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Verfahren, Einspruch, Transparenz, Verhältnismäßigkeit, Übergangslogik.
 
 1. Ausgangslage und alte Logik
 
@@ -638,15 +606,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelVerwaltung und Rechtsschutz: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Verwaltung und Rechtsschutz: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Politische Wirkungsprüfung
 
-Dieses Detailkonzept vertieft den Unterbereich „Politische Wirkungsprüfung“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Parteipolitisch offen, Wirkungsfolgenabschätzung, Optionen und Diskurs. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Politische Wirkungsprüfung“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Parteipolitisch offen, Wirkungsfolgenabschätzung, Optionen und Diskurs.
 
 1. Ausgangslage und alte Logik
 
@@ -714,15 +678,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelPolitische Wirkungsprüfung: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Politische Wirkungsprüfung: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Lobbyismus und Machtkonzentration
 
-Dieses Detailkonzept vertieft den Unterbereich „Lobbyismus und Machtkonzentration“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Schutz der Wirkungslogik vor Vereinnahmung, Transparenz und Korrektur. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Lobbyismus und Machtkonzentration“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Schutz der Wirkungslogik vor Vereinnahmung, Transparenz und Korrektur.
 
 1. Ausgangslage und alte Logik
 
@@ -790,15 +750,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelLobbyismus und Machtkonzentration: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Lobbyismus und Machtkonzentration: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Bürgerbeteiligung und Wirkungsdemokratie
 
-Dieses Detailkonzept vertieft den Unterbereich „Bürgerbeteiligung und Wirkungsdemokratie“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Bürgerräte, Jugendräte, Teilhabe, öffentliche Wirkungsberichte. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Bürgerbeteiligung und Wirkungsdemokratie“ innerhalb des Portals „Staat, Recht & Demokratie / WStG / Wirkungsrat“. Bürgerräte, Jugendräte, Teilhabe, öffentliche Wirkungsberichte.
 
 1. Ausgangslage und alte Logik
 
@@ -866,15 +822,7 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelBürgerbeteiligung und Wirkungsdemokratie: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
-
-Gemeinsame Veröffentlichungslogik
-
-Jeder Unterbereich wird auf der Website als vollständige Online-Fassung veröffentlicht. Das Detailkonzept bildet die fachliche Grundlage, das Einzeldossier ergänzt Beispiele, Berechnungen, Datenquellen und Umsetzungsvarianten. Downloads sind Export und Archiv, nicht der Hauptzugang.
+Kernformel: Bürgerbeteiligung und Wirkungsdemokratie: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Quellen- und Referenzrahmen
 

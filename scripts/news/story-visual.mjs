@@ -11,7 +11,7 @@ export function renderStoryVisual(story, { href = "", detail = false, loading = 
   if (!story?.analysis || !story.title) return "";
   const image = publicTitleImage(story.title_image);
   const heading = detail ? "h1" : "h2";
-  const label = image?.background ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung";
+  const label = image?.background ? "Symbolbild" : "Wirkungskarte · WÖk-Einordnung";
   return `<div class="news-story-visual" data-news-story-visual>
     <figure class="news-story-visual__frame">
       ${image?.background ? `<img class="news-story-visual__background" src="${escape(image.background.url)}" alt="${escape(image.background.alt_text)}" width="1200" height="675" loading="${loading}" decoding="async">` : ""}

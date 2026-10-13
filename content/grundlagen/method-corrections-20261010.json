@@ -1,0 +1,674 @@
+[
+  {
+    "id": "woemm",
+    "source": "source-assets/originals/methods-20261010/woemm-2.0-referenzfassung.pdf",
+    "sourceSha256": "ca0d87a4ceec1148de27c66297ed0760c495424c6b7116317c4aca4231bd11d1",
+    "pages": 98,
+    "linkCorrections": [
+      {
+        "page": 95,
+        "beforeUri": "https://www.iso.org/standard/62085.html",
+        "afterUri": "https://www.iso.org/standard/9001"
+      }
+    ],
+    "output": "source-assets/generated/methods-20261010/woemm-2.0-konsistenz-2026-10-10.pdf",
+    "regions": [
+      {
+        "page": 1,
+        "rect": [
+          180,
+          253,
+          435,
+          276
+        ],
+        "beforeText": "Juli 2026\n",
+        "afterHtml": "<p>Konsistenzfassung 10. Oktober 2026 · Grundlage Juli 2026</p>",
+        "reason": "Bestehende Standzeile; tatsächliche Text- und Tabellenkorrekturen nachvollziehbar kennzeichnen.",
+        "fontPt": 8.8,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 2,
+        "rect": [
+          314,
+          281,
+          556,
+          298
+        ],
+        "beforeText": "10. Juli 2026\n",
+        "afterHtml": "<p>10. Juli 2026; fachliche Korrektur 10. Oktober 2026</p>",
+        "reason": "Dokumentsteckbrief: Originalstand und überarbeitete aktuelle Fassung unterscheiden.",
+        "fontPt": 8.1,
+        "background": [
+          0.95686,
+          0.96863,
+          0.96471
+        ]
+      },
+      {
+        "page": 2,
+        "rect": [
+          314,
+          351,
+          556,
+          370
+        ],
+        "beforeText": "SDGs, Agenda 2030 und die transparente WÖk-Erweiterung SDG+\n",
+        "afterHtml": "<p>Agenda 2030/SDGs; DNS bei deutschen öffentlichen Fällen; SDG+ ist WÖk-eigen.</p>",
+        "reason": "Objektspezifische Referenzrahmen auch im Dokumentsteckbrief konsistent ausweisen.",
+        "fontPt": 7.1,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 2,
+        "rect": [
+          56.8,
+          621,
+          561,
+          691
+        ],
+        "beforeText": "Das WÖMM setzt deshalb nicht ein weiteres Nachhaltigkeitsmodul neben Strategie, Finanzen und Organisation. Es ordnet \ndas Management insgesamt neu. Wirkung ist die tatsächliche Veränderung von Zuständen. Ihre positive oder negative \nRichtung wird am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ bewertet. Ziel ist positive Netto-Wirkung unter \nBeachtung nicht kompensierbarer Grenzen. Wirtschaftliche Tragfähigkeit bleibt notwendig, wird aber vom Zweck zur \nBedingung. Gewinn bleibt, aber er wird zum Feedback, nicht zum letzten Maßstab.\n",
+        "afterHtml": "<p>Das WÖMM ordnet das Management nach tatsächlichen Zustandsveränderungen. Ihre Bewertung verlangt Wirkmechanismus, Evidenz und den relevanten Referenz- und Schutzrahmen: global Agenda 2030/SDGs, in deutschen öffentlichen Fällen zusätzlich DNS; SDG+ ist die WÖk-eigene Erweiterung. Zielbezug allein belegt keine Wirkung. Ziel ist positive Netto-Wirkung unter nicht kompensierbaren Grenzen. Wirtschaftliche Tragfähigkeit bleibt notwendig; Gewinn wird zum Feedback, nicht zum letzten Maßstab.</p>",
+        "reason": "Zielbezug von Zustandsveränderung, Kausalität und Schutzrahmen unterscheiden.",
+        "fontPt": 9.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 12,
+        "rect": [
+          56.8,
+          620,
+          561,
+          679
+        ],
+        "beforeText": "Die Richtung der Wirkung wird im WÖMM nicht aus privater Moral abgeleitet. Maßgeblich sind die SDGs und die Agenda \n2030 als globaler Referenzrahmen sowie SDG+ als transparente Erweiterung um Demokratie, Medienqualität, \nRechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale \nSelbstbestimmung. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.\n",
+        "afterHtml": "<p>Wirkungsbewertung folgt begründeten Zustandsveränderungen, Wirkmechanismen, Evidenz und Referenz- und Schutzräumen. Global gelten Agenda 2030/SDGs; bei deutschen öffentlichen Fällen zusätzlich die DNS. SDG+ ist eine WÖk-eigene Erweiterung, etwa für Demokratie, Medien, Rechtsstaatlichkeit und digitale Selbstbestimmung. Ziel- oder Indikatorbezug ist kein Kausalitätsbeweis. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p>",
+        "reason": "Begründete Bewertung und objektspezifische staatliche Referenzarchitektur.",
+        "fontPt": 9.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 12,
+        "rect": [
+          56.8,
+          412,
+          561,
+          437
+        ],
+        "beforeText": "Anschlussquellen: Weber: Die neue Ordnung des Wohlstands, Kapitel 42-47 · ISO 37000:2021 · ISO 9001:2015 / Revision 2026 · The Open Group: \nTOGAF · Business Architecture Guild: BIZBOK\n",
+        "afterHtml": "<p>Anschlussquellen: Weber: Die neue Ordnung des Wohlstands, Kapitel 42-47 · ISO 37000:2021 · ISO 9001:2026 (ISO-Fassung; Übergang objektspezifisch prüfen) · The Open Group: TOGAF · Business Architecture Guild: BIZBOK</p>",
+        "reason": "Aktuellen ISO-Stand am Gebrauchspunkt nach offizieller Quelle präzisieren; https://www.iso.org/standard/9001",
+        "fontPt": 8,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 95,
+        "rect": [
+          56.8,
+          103.5,
+          414,
+          116
+        ],
+        "beforeText": "ISO: ISO 9001:2015 - Quality Management Systems; Revision 2026 in final approval at document stand. \n",
+        "afterHtml": "<p>ISO 9001:2026 (16.09.2026); ISO 9001:2015/Amd 1:2024: Vorgänger.</p>",
+        "reason": "Offizieller Publikationsstatus ersetzt die überholte Ankündigung; bestehender Quellenlink bleibt erhalten.",
+        "fontPt": 7.7,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 80,
+        "rect": [
+          56.8,
+          525,
+          561,
+          582
+        ],
+        "beforeText": "KPI zeigen Leistung, Output, Effizienz oder wirtschaftliche Zielerreichung. KII zeigen Wirkung oder Wirkungsnähe. Beide \nwerden benötigt, dürfen aber nicht verwechselt werden. „Anzahl geschulter Mitarbeitender“ ist Output; „dauerhafte \nVerringerung kritischer Sicherheitsereignisse“ kann Wirkung sein. „Anzahl verkaufter Solarmodule“ ist Marktleistung; \n„vermiedene Emissionen unter Berücksichtigung von Material, Netzintegration und Rebound“ nähert sich Netto-Wirkung.\n",
+        "afterHtml": "<p>KPI zeigen Leistung, Output, Effizienz oder wirtschaftliche Zielerreichung. KII sind Wirkungsindikatoren; beobachtete Zustandsveränderungen, modelliertes Potenzial und Risiko bleiben gekennzeichnet. Beide werden benötigt, dürfen aber nicht verwechselt werden. Schulungsteilnahmen sind Output; dauerhaft weniger Sicherheitsereignisse können Wirkung sein. Verkaufte Solarmodule sind Marktleistung; vermiedene Emissionen brauchen Vergleichsfall, Material-, Netz- und Reboundprüfung.</p>",
+        "reason": "KII und Output sind kein automatischer Wirkungs- oder Kausalitätsnachweis.",
+        "fontPt": 9.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 80,
+        "rect": [
+          56.8,
+          616,
+          561,
+          687
+        ],
+        "beforeText": "Der Netto-Wirkungs-Index (NWI) dient als operative Kennzahl für zusammengeführte Wirkung unter Mindestbedingungen, \nNichtkompensation, Datenqualität und Zeitbezug. Der T-SROI fragt darüber hinaus nach Transformations- und \nSystemhebelwirkung: Verändert die Maßnahme Pfade, Standards, Infrastruktur, Resilienz und künftige Entscheidungen? T-\nSROI setzt eine tragfähige Netto-Wirkungsprüfung voraus. Ein Projekt mit negativer Grundwirkung wird nicht durch hohe \nDiffusion transformativ.\n",
+        "afterHtml": "<p>Der WÖk-Netto-Wirkungs-Index (NWI) ist ein nichtmonetärer, regelgebundener Index und vom Nationalen Wohlfahrtsindex zu unterscheiden. Schutzgrenzen, Nichtkompensation, Reverse Merit Order, Verteilung und Unsicherheit bleiben sichtbar. T-SROI ist ein monetäres EUR/EUR-Verhältnis: Barwert zurechenbarer direkter und separat belegter transformativer Nettonutzen geteilt durch den Barwert der Ressourcen. Transformationswirkung wird mit eigenem Wirkpfad belegt; freie Multiplikatoren und die Kompensation harter Grenzverletzungen sind ausgeschlossen.</p>",
+        "reason": "Nichtmonetären Index, monetäres Verhältnis und Systemveränderung trennen.",
+        "fontPt": 9.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 93,
+        "rect": [
+          56.8,
+          195,
+          561,
+          735
+        ],
+        "beforeText": "Begriff\nDefinition\nWirkung\ntatsächliche Zustandsveränderung; positiv, negativ oder neutral.\nPositive Netto-Wirkung\nZielgröße der WÖk: systemisch tragfähige Wirkung für Mensch, Planet und \nDemokratie unter roten Linien.\nWirkungspotenzial\nMöglichkeit, dass Wirkung eintreten kann; noch kein Wirkungsnachweis.\nWirkungsrisiko\nMöglichkeit negativer oder destabilisierender Wirkung.\nWirkmechanismus\nErklärung, wie eine Wirkung entstehen soll oder entstehen kann.\nWirkungsraum\nBereich, in dem Folgen entstehen, etwa Lieferkette, Organisation, Markt, \nÖkosystem oder Öffentlichkeit.\nWirkungspfad\nplausibler Weg vom Auslöser über Mechanismen zu Zustandsveränderungen \nund Folgen.\nWirkungsnetz\nvernetzte Darstellung von Wirkungen, Rückkopplungen, Interdependenzen \nund Zeitverzögerungen.\nWirkungsgrenze\nrote Linie, ab der negative Wirkung nicht kompensiert werden darf.\nReverse Merit Order\ndas schwächste zentrale Wirkungsfeld begrenzt die Gesamtbewertung.\nKII\nKey Impact Indicator; Kennzahl für Wirkung oder Wirkungsnähe.\nNWI\nNetto-Wirkungs-Index; operative Verdichtung von Wirkung unter \nMindestbedingungen und Nichtkompensation.\nT-SROI\nTransformational Social Return on Investment; Bewertung von \nTransformations- und Systemhebelwirkung auf Grundlage geprüfter Netto-\nWirkung.\nWirkungsrückkopplung\nMechanismus, durch den bewertete Wirkung Preise, Budgets, Kapital, \nProzesse oder Entscheidungen verändert.\nWirkungsarchitektur\nGesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, \nKontrolle und Lernen.\nWirkungskompetenz\nFähigkeit, Wirkung, Potenziale, Nebenwirkungen, Zielkonflikte und \nRückkopplungen zu erkennen, zu bewerten und zu steuern.\n",
+        "afterHtml": "<table><colgroup><col style=\"width:29%\"><col style=\"width:71%\"></colgroup><tr><th>Begriff</th><th>Definition</th></tr><tr><td>Wirkung</td><td>tatsächliche Zustandsveränderung; positiv, negativ oder neutral.</td></tr><tr><td>Positive Netto-Wirkung</td><td>Zielgröße der WÖk: systemisch tragfähige Wirkung für Mensch, Planet und Demokratie unter roten Linien.</td></tr><tr><td>Wirkungspotenzial</td><td>Möglichkeit, dass Wirkung eintreten kann; noch kein Wirkungsnachweis.</td></tr><tr><td>Wirkungsrisiko</td><td>Möglichkeit negativer oder destabilisierender Wirkung.</td></tr><tr><td>Wirkmechanismus</td><td>Erklärung, wie eine Wirkung entstehen soll oder entstehen kann.</td></tr><tr><td>Wirkungsraum</td><td>Bereich, in dem Folgen entstehen, etwa Lieferkette, Organisation, Markt, Ökosystem oder Öffentlichkeit.</td></tr><tr><td>Wirkungspfad</td><td>plausibler Weg vom Auslöser über Mechanismen zu Zustandsveränderungen und Folgen.</td></tr><tr><td>Wirkungsnetz</td><td>vernetzte Darstellung von Wirkungen, Rückkopplungen, Interdependenzen und Zeitverzögerungen.</td></tr><tr><td>Wirkungsgrenze</td><td>rote Linie, ab der negative Wirkung nicht kompensiert werden darf.</td></tr><tr><td>Reverse Merit Order</td><td>das schwächste zentrale Wirkungsfeld begrenzt die Gesamtbewertung.</td></tr><tr><td>KII</td><td>Key Impact Indicator; Indikator tatsächlicher oder erwarteter Wirkung. Beobachtung, Potenzial und Risiko getrennt kennzeichnen; der Indikator allein beweist keine Kausalität.</td></tr><tr><td>NWI</td><td>WÖk-Netto-Wirkungs-Index: nichtmonetärer, regelgebundener Index unter Mindestbedingungen, Nichtkompensation und Reverse Merit Order; kein Nationaler Wohlfahrtsindex.</td></tr><tr><td>T-SROI</td><td>Monetäres EUR/EUR-Verhältnis der Barwerte kausal zurechenbarer direkter und separat belegter transformativer Nettonutzen zu Ressourcen; Rechenstandard v1.1, eigener Wirkpfad und Schutz-Gate.</td></tr><tr><td>Wirkungsrückkopplung</td><td>Mechanismus, durch den Bewertung tatsächlicher Wirkung nach geltenden Regeln Preise, Budgets, Kapital, Prozesse oder Entscheidungen verändert. Berichterstattung allein ist keine Rückkopplung.</td></tr><tr><td>Wirkungsarchitektur</td><td>Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen.</td></tr><tr><td>Wirkungskompetenz</td><td>Fähigkeit, Wirkung, Potenziale, Nebenwirkungen, Zielkonflikte und Rückkopplungen zu erkennen, zu bewerten und zu steuern.</td></tr></table>",
+        "reason": "Vollständiges Originalglossar; alle Begriffe und Vergleichsdimensionen erhalten.",
+        "fontPt": 9,
+        "background": [
+          1,
+          1,
+          1
+        ],
+        "rows": [
+          [
+            "Begriff",
+            "Definition"
+          ],
+          [
+            "Wirkung",
+            "tatsächliche Zustandsveränderung; positiv, negativ oder neutral."
+          ],
+          [
+            "Positive Netto-Wirkung",
+            "Zielgröße der WÖk: systemisch tragfähige Wirkung für Mensch, Planet und Demokratie unter roten Linien."
+          ],
+          [
+            "Wirkungspotenzial",
+            "Möglichkeit, dass Wirkung eintreten kann; noch kein Wirkungsnachweis."
+          ],
+          [
+            "Wirkungsrisiko",
+            "Möglichkeit negativer oder destabilisierender Wirkung."
+          ],
+          [
+            "Wirkmechanismus",
+            "Erklärung, wie eine Wirkung entstehen soll oder entstehen kann."
+          ],
+          [
+            "Wirkungsraum",
+            "Bereich, in dem Folgen entstehen, etwa Lieferkette, Organisation, Markt, Ökosystem oder Öffentlichkeit."
+          ],
+          [
+            "Wirkungspfad",
+            "plausibler Weg vom Auslöser über Mechanismen zu Zustandsveränderungen und Folgen."
+          ],
+          [
+            "Wirkungsnetz",
+            "vernetzte Darstellung von Wirkungen, Rückkopplungen, Interdependenzen und Zeitverzögerungen."
+          ],
+          [
+            "Wirkungsgrenze",
+            "rote Linie, ab der negative Wirkung nicht kompensiert werden darf."
+          ],
+          [
+            "Reverse Merit Order",
+            "das schwächste zentrale Wirkungsfeld begrenzt die Gesamtbewertung."
+          ],
+          [
+            "KII",
+            "Key Impact Indicator; Indikator tatsächlicher oder erwarteter Wirkung. Beobachtung, Potenzial und Risiko getrennt kennzeichnen; der Indikator allein beweist keine Kausalität."
+          ],
+          [
+            "NWI",
+            "WÖk-Netto-Wirkungs-Index: nichtmonetärer, regelgebundener Index unter Mindestbedingungen, Nichtkompensation und Reverse Merit Order; kein Nationaler Wohlfahrtsindex."
+          ],
+          [
+            "T-SROI",
+            "Monetäres EUR/EUR-Verhältnis der Barwerte kausal zurechenbarer direkter und separat belegter transformativer Nettonutzen zu Ressourcen; Rechenstandard v1.1, eigener Wirkpfad und Schutz-Gate."
+          ],
+          [
+            "Wirkungsrückkopplung",
+            "Mechanismus, durch den Bewertung tatsächlicher Wirkung nach geltenden Regeln Preise, Budgets, Kapital, Prozesse oder Entscheidungen verändert. Berichterstattung allein ist keine Rückkopplung."
+          ],
+          [
+            "Wirkungsarchitektur",
+            "Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen."
+          ],
+          [
+            "Wirkungskompetenz",
+            "Fähigkeit, Wirkung, Potenziale, Nebenwirkungen, Zielkonflikte und Rückkopplungen zu erkennen, zu bewerten und zu steuern."
+          ]
+        ]
+      },
+      {
+        "page": 94,
+        "rect": [
+          62,
+          113,
+          561,
+          272
+        ],
+        "beforeText": "Weber, Natalie (2026): Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie. \nInsbesondere Teil III „Das lernende System“, Teil V „Messung, Daten und Methodik“ und Teil VII „Unternehmen, \nManagement und Wertschöpfung“.\nWeber, Natalie (2026): Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026.\nWeber, Natalie (2025): Grundlagenpapier Wirkungsökonomie.\nWeber, Natalie (2025): Systemmodell der Wirkungsökonomie - die systemische Ordnungskarte Mensch-Planet-\nDemokratie.\nWeber, Natalie (2025): Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.\nWeber, Natalie (2025): Whitepaper T-SROI - der neue Standard für Impact-Controlling in der Wirkungsökonomie.\nWeber, Natalie (2025): Technische Leitlinien zum Wirkungssteuergesetz; WÖk-ID- und Scorecard-Architektur.\nWeber, Natalie (2025): Wirkungsökonomie in der Lieferkette; Produkt- und Lieferkettenbeispiele.\n",
+        "afterHtml": "<p>• Weber, Natalie (2026): Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie. Insbesondere Teil III „Das lernende System“, Teil V „Messung, Daten und Methodik“ und Teil VII „Unternehmen, Management und Wertschöpfung“.</p><p>• Weber, Natalie (2026): Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.8, Stand 1. Oktober 2026 (aktuelle Begriffsgrundlage).</p><p>• Weber, Natalie (2025): Grundlagenpapier Wirkungsökonomie.</p><p>• Weber, Natalie (2025): Systemmodell der Wirkungsökonomie - die systemische Ordnungskarte Mensch-Planet- Demokratie.</p><p>• Weber, Natalie (2025): Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.</p><p>• Weber, Natalie (2025): Whitepaper T-SROI (historische Fassung). Für Rechnungen gilt der T-SROI-Rechenstandard v1.1 (2026).</p><p>• Weber, Natalie (2025): Technische Leitlinien zum Wirkungssteuergesetz; WÖk-ID- und Scorecard-Architektur.</p><p>• Weber, Natalie (2025): Wirkungsökonomie in der Lieferkette; Produkt- und Lieferkettenbeispiele.</p>",
+        "reason": "Aktuelle Begriffs- und Rechenquellen am Gebrauchspunkt; historische Arbeiten als solche erhalten.",
+        "fontPt": 9,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "woems",
+    "source": "source-assets/originals/methods-20261010/woems-2.0-referenzfassung.pdf",
+    "sourceSha256": "0009b557a24adcdb9aa07be3c8d5b4b800b8675d002c889cc9b5a4fbd5c13bd1",
+    "pages": 387,
+    "linkCorrections": [],
+    "output": "source-assets/generated/methods-20261010/woems-2.0-konsistenz-2026-10-10.pdf",
+    "regions": [
+      {
+        "page": 1,
+        "rect": [
+          151,
+          508,
+          461,
+          531
+        ],
+        "beforeText": "Referenzfassung 2.0 · Juli 2026\n",
+        "afterHtml": "<p style=\"text-align:center\">Referenzfassung 2.0 · Konsistenzkorrektur 10.10.2026 · Grundlage Juli 2026</p>",
+        "reason": "Bestehende Standzeile transparent aktualisieren.",
+        "fontPt": 8.1,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 13,
+        "rect": [
+          60,
+          313,
+          556,
+          359
+        ],
+        "beforeText": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ, neutral oder ambivalent sein und braucht immer \neinen Bezugspunkt. Positive Wirkung liegt im WÖMS vor, wenn eine Veränderung auf SDGs, Agenda 2030 und SDG+ einzahlt; Zielgröße \nist positive Netto-Wirkung für Mensch, Planet und Demokratie. [INT-02]\n",
+        "afterHtml": "<p>Wirkung bedeutet tatsächliche Zustandsveränderung und ist neutral und relational. Positive oder negative Bewertung verlangt Wirkmechanismus, Evidenz sowie Referenz- und Schutzräume: global Agenda 2030/SDGs, bei deutschen öffentlichen Fällen zusätzlich DNS; SDG+ ist WÖk-eigen. Zielbezug allein beweist weder Wirkung noch Kausalität. Zielgröße bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie. [INT-02]</p>",
+        "reason": "Fehlerhafte Gleichsetzung von Zielbeitrag und positiver Wirkung korrigieren.",
+        "fontPt": 9,
+        "background": [
+          0.95294,
+          0.96471,
+          0.96078
+        ]
+      },
+      {
+        "page": 98,
+        "rect": [
+          52.5,
+          102,
+          562,
+          141
+        ],
+        "beforeText": "Positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, \nZeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl verdichten.\n",
+        "afterHtml": "<p>Der WÖk-NWI ist ein nichtmonetärer, regelgebundener Index aus bewerteten Zustandsveränderungen. Er ist weder der Nationale Wohlfahrtsindex noch der monetäre IOI. Verteilung, Zeit, Unsicherheit, Nichtkompensation und Reverse Merit Order begrenzen die Verdichtung.</p>",
+        "reason": "NWI-Typ, Referenz und Schutzbedingungen präzisieren.",
+        "fontPt": 9.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 98,
+        "rect": [
+          52.5,
+          414,
+          562,
+          504
+        ],
+        "beforeText": "1. Bewertungsobjekt und Zeitraum festlegen.\n2. Relevante positive und negative Wirkungen aus Scorecards übernehmen.\n3. Verteilung, Dauer, Reichweite und Datenqualität berücksichtigen.\n4. Nichtkompensierbare Felder separat prüfen.\n5. NWI und Unsicherheitsband berechnen oder regelbasiert bestimmen.\n6. Interpretation und Entscheidungsgrenzen dokumentieren.\n",
+        "afterHtml": "<p>1. Bewertungsobjekt, Systemgrenze und Zeitraum festlegen.</p><p>2. Belegte positive und negative Zustandsveränderungen aus Scorecards übernehmen.</p><p>3. Verteilung, Dauer und Unsicherheit offenlegen; Reichweite ist kein Wirkungsnachweis.</p><p>4. Nichtkompensierbare Felder und den Engpass nach Reverse Merit Order separat prüfen.</p><p>5. NWI regelgebunden bestimmen; fehlende Daten bleiben offen, keine erfundene Null oder Datenqualitätsmultiplikation.</p><p>6. Interpretation, Sensitivität und Entscheidungsgrenzen dokumentieren.</p>",
+        "reason": "Keine neue Formel erfinden; fehlende Daten, Reichweite und Datenqualität fachlich korrekt behandeln.",
+        "fontPt": 8.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 99,
+        "rect": [
+          52.5,
+          89,
+          562,
+          104
+        ],
+        "beforeText": "NWI-Hauptwert mit Konfidenzband; daneben nicht aggregierte Grenzindikatoren und Verteilungsprofil.\n",
+        "afterHtml": "<p>Nichtmonetärer WÖk-NWI mit Unsicherheitsband; Schutzgrenzen, Verteilung, Datenlücken und Reverse Merit Order separat.</p>",
+        "reason": "Indexdarstellung und separate Schutzprüfung.",
+        "fontPt": 9,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 100,
+        "rect": [
+          76.5,
+          89,
+          520,
+          105
+        ],
+        "beforeText": "Transformationskennzahl · Bewerten · aktuelle Rechenfassung v1.1 · WÖK-Q-1024\n",
+        "afterHtml": "<p>Monetäres Verhältnis EUR/EUR · Bewerten · Rechenstandard v1.1 · WÖK-Q-1024</p>",
+        "reason": "T-SROI darf nicht als dimensionslose Transformationskennzahl bezeichnet werden.",
+        "fontPt": 8.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 101,
+        "rect": [
+          52.5,
+          89,
+          562,
+          116
+        ],
+        "beforeText": "Formel- und Scorecarddarstellung: geprüfte Netto-Wirkung je Investition × begründete Transformationsfaktoren; separate \nRisikokorrektur.\n",
+        "afterHtml": "<p>Barwerte direkter und separat belegter transformativer Nettonutzen sowie Ressourcen in EUR derselben Preisbasis; Ergebnis EUR/EUR. Wirkungsprofil, Risiken, Schutz-Gate und Unsicherheit bleiben separat sichtbar.</p>",
+        "reason": "Freie Transformationsmultiplikatoren durch tatsächliche Rechengrößen ersetzen.",
+        "fontPt": 9,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 101,
+        "rect": [
+          52.5,
+          138,
+          562,
+          216
+        ],
+        "beforeText": "\nEmpfänger, Systemgrenzen und Referenzrahmen sind eindeutig.\n\nEmpirische Befunde, Annahmen und normative Bewertungen bleiben unterscheidbar.\n\nErgebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.\n\nPositive operative Netto-Wirkung ist Voraussetzung.\n\nMultiplikatoren sind begründet und sensitivitätsgeprüft.\n\nTransformationsrisiken bleiben sichtbar.\n",
+        "afterHtml": "<p>• Empfänger, Systemgrenzen, Vergleichsfall und Referenzrahmen sind eindeutig.</p><p>• Befunde, Annahmen und Bewertungen bleiben unterscheidbar; direkte und transformative Nutzen werden nicht doppelt gezählt.</p><p>• Zurechnung, Deadweight und Verdrängung korrigieren beanspruchten Nutzen, nicht den Schaden.</p><p>• Transformative Nutzen brauchen eigene Wirkpfade und Preisnachweise; freie Multiplikatoren sind ausgeschlossen.</p><p>• Grenzverletzung oder fehlende Pflichtdaten: blockiert oder nicht bewertbar; kein positiver öffentlicher Wert.</p><p>• Ergebnis, konservative Untergrenze und Sensitivität führen zu einer dokumentierten Entscheidung oder Lernfrage.</p>",
+        "reason": "Nutzen, Schaden, Attribution, Gate und Unsicherheit konsistent mit v1.1.",
+        "fontPt": 8.4,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 101,
+        "rect": [
+          52.5,
+          238,
+          562,
+          290
+        ],
+        "beforeText": "\nErgebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.\n\nBetroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.\n\nGroße Visionen nicht durch hohe Multiplikatoren belohnen.\n\nSROI-Monetarisierung nicht unkritisch übernehmen.\n",
+        "afterHtml": "<p>• Versionierte Entscheidungsgrundlage, keine endgültige Wahrheit.</p><p>• Betroffene, negative Wirkungen und Machtasymmetrien verschwinden nicht durch Workshopkonsens.</p><p>• Große Visionen sind kein Beleg für transformativen Nutzen; Schäden bleiben vollständig sichtbar.</p><p>• Monetarisierung nicht erzwingen; Schutzgrenzen sind nicht kompensierbar.</p>",
+        "reason": "Keine unbelegten Faktoren; methodische Reichweite und Nichtkompensation erhalten.",
+        "fontPt": 8.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 101,
+        "rect": [
+          52.5,
+          313,
+          562,
+          340
+        ],
+        "beforeText": "Interne und externe Anschlussquellen: INT-08 · INT-01 · EXT-IMP-07 · EXT-IMP-08 · EXT-IMP-10. Die WÖMS-Ausgestaltung verbindet diese Quellen mit der \nwirkungsökonomischen Begriffs-, Grenz-, Nichtkompensations- und Rückkopplungslogik.\n",
+        "afterHtml": "<p>INT-08 (aktueller T-SROI-Rechenstandard v1.1), INT-01 sowie EXT-IMP-07/08/10 als Anschlussquellen. Historische T-SROI-Texte werden nicht als aktuelle Rechenvorschrift verwendet. Schutz-, Begriffs- und Rückkopplungsregeln bleiben verbindlich.</p>",
+        "reason": "Tatsächliche maßgebliche Quelle am Gebrauchspunkt.",
+        "fontPt": 8.5,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 375,
+        "rect": [
+          302.5,
+          374,
+          384,
+          395
+        ],
+        "beforeText": "Aggregierte operative\nWirkung\n",
+        "afterHtml": "<p>Nichtmonetärer Index</p>",
+        "reason": "Typ D08 im bestehenden Methodenvergleich.",
+        "fontPt": 7.2,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 375,
+        "rect": [
+          300,
+          394,
+          384,
+          435
+        ],
+        "beforeText": "Transformationskennzahl\n",
+        "afterHtml": "<p>Monetäres EUR/EUR</p>",
+        "reason": "Typ D09 im bestehenden Methodenvergleich.",
+        "fontPt": 7.2,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 381,
+        "rect": [
+          52.5,
+          440.8,
+          562,
+          452
+        ],
+        "beforeText": "EXT-MGT-13  ISO 9001:2015: Quality management systems - Requirements. International Organization for Standardization.iii\n",
+        "afterHtml": "<p>EXT-MGT-13  ISO 9001:2026: Quality management systems - Requirements. ISO 9001:2015/Amd 1:2024: Vorgängerfassung.</p>",
+        "reason": "Aktueller ISO-Stand; historische Quelle ausdrücklich erhalten; https://www.iso.org/standard/9001",
+        "fontPt": 7,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 384,
+        "rect": [
+          52.5,
+          375.2,
+          562,
+          386
+        ],
+        "beforeText": "EXT-QA-02 ISO 9001:2015: Quality management systems - Requirements.i\n",
+        "afterHtml": "<p>EXT-QA-02 ISO 9001:2026: Quality management systems - Requirements. ISO 9001:2015/Amd 1:2024: Vorgängerfassung.</p>",
+        "reason": "Auch die zweite ISO-Quellenstelle auf denselben geprüften Stand bringen.",
+        "fontPt": 7,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "page": 380,
+        "rect": [
+          52.0,
+          46,
+          566,
+          736
+        ],
+        "beforeText": "Begriff\nDefinition\nEvidenz\nNachvollziehbare Grundlage einer Aussage; ihre Belastbarkeit ist fragen- und \nkontextabhängig.\nKII\nKey Impact Indicator: entscheidungsrelevante Kennzahl tatsächlicher oder \nerwarteter Wirkung.\nNetto-Wirkung\nZusammenführung positiver und negativer Wirkungen unter Verteilung, Zeit, \nDatenqualität, Mindestbedingungen und Nichtkompensation.\nNichtkompensation\nVerbot, schwere negative Wirkung oder Grenzverletzungen durch positive \nWirkung an anderer Stelle aufzurechnen.\nNWI\nNetto-Wirkungs-Index: operative Kennzahl für geprüfte Netto-Wirkung.\nPositive Netto-Wirkung\nZielgröße der Wirkungsökonomie: systemisch tragfähige Wirkung für Mensch, \nPlanet und Demokratie.\nResonanzraum\nSozialer oder medialer Raum, in dem Deutungen, Emotionen, Zugehörigkeit und \nHandlungsbereitschaft anschlussfähig werden.\nReverse Merit Order\nEngpasslogik, nach der das schwächste relevante Wirkungsfeld oder eine \nMindestgrenze die Gesamteinstufung begrenzt.\nSDG+\nTransparente WÖk-Erweiterung um Demokratie, Medienqualität, \nRechtsstaatlichkeit, Diskursfähigkeit, Vertrauen, Zusammenhalt und digitale \nSelbstbestimmung.\nT-SROI\nTransformational Social Return on Investment: Kennzahl für systemische \nTransformationswirkung auf Basis geprüfter Netto-Wirkung.\nWirkung\nTatsächliche Veränderung von Zuständen; neutral und relational.\nWirkungsarchitektur\nGesamtsystem aus Daten, Methoden, Regeln, Institutionen, Anreizen, \nGovernance, Kontrolle und Lernen.\nWirkungsempfänger\nMenschen, Gruppen, Lebewesen, Ökosysteme, Institutionen oder künftige \nGenerationen, die von Wirkung betroffen sind.\nWirkungsgrenze\nNicht beliebig verrechenbare Schutz- oder Mindestbedingung.\nWirkungslenkung\nRückführung von Wirkungsbewertung in Preise, Kapital, Budgets, Förderung, \nBeschaffung, Regeln oder Entscheidungen.\nWirkungsordnung\nEbene direkter, indirekter oder strukturverändernder Wirkung.\nWirkungspotenzial\nMöglichkeit, dass Wirkung eintreten kann; noch keine Wirkung.\nWirkungsrisiko\nMöglichkeit negativer oder destabilisierender Wirkung.\nWirkungsraum\nBereich, in dem Folgen entfaltet werden: räumlich, sozial, institutionell, digital, \nökologisch oder zeitlich.\nWirkstoff\nDidaktische Analogie für einen Auslöser mit Wirkungspotenzial; nicht selbst die \nWirkung.\nWÖk-ID\nStandardisierte Identifikation eines Wirkungsindikators oder Datenobjekts in der \nWirkungsökonomie.\n",
+        "afterHtml": "<table><colgroup><col style=\"width:29%\"><col style=\"width:71%\"></colgroup><tr><th>Begriff</th><th>Definition</th></tr><tr><td>Evidenz</td><td>Nachvollziehbare Grundlage einer Aussage; ihre Belastbarkeit ist fragen- und kontextabhängig.</td></tr><tr><td>KII</td><td>Key Impact Indicator; Indikator tatsächlicher oder erwarteter Wirkung. Beobachtung, Potenzial und Risiko getrennt kennzeichnen; kein Kausalitätsbeweis durch den Indikator allein.</td></tr><tr><td>Netto-Wirkung</td><td>Zusammenführung positiver und negativer Wirkungen unter Verteilung, Zeit, Datenqualität, Mindestbedingungen und Nichtkompensation.</td></tr><tr><td>Nichtkompensation</td><td>Verbot, schwere negative Wirkung oder Grenzverletzungen durch positive Wirkung an anderer Stelle aufzurechnen.</td></tr><tr><td>NWI</td><td>WÖk-Netto-Wirkungs-Index: nichtmonetärer, regelgebundener Index unter Schutzgrenzen und Reverse Merit Order; kein Nationaler Wohlfahrtsindex.</td></tr><tr><td>Positive Netto-Wirkung</td><td>Zielgröße der Wirkungsökonomie: systemisch tragfähige Wirkung für Mensch, Planet und Demokratie.</td></tr><tr><td>Resonanzraum</td><td>Sozialer oder medialer Raum, in dem Deutungen, Emotionen, Zugehörigkeit und Handlungsbereitschaft anschlussfähig werden.</td></tr><tr><td>Reverse Merit Order</td><td>Engpasslogik, nach der das schwächste relevante Wirkungsfeld oder eine Mindestgrenze die Gesamteinstufung begrenzt.</td></tr><tr><td>SDG+</td><td>WÖk-eigene Erweiterung der Referenz- und Schutzräume, etwa Demokratie, Medien, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Selbstbestimmung; kein offizielles UN-System.</td></tr><tr><td>T-SROI</td><td>Monetäres EUR/EUR-Verhältnis: Barwert zurechenbarer direkter und separat belegter transformativer Nettonutzen / Barwert der Ressourcen; Rechenstandard v1.1, eigener Wirkpfad, Schutz-Gate.</td></tr><tr><td>Wirkung</td><td>Tatsächliche Veränderung von Zuständen; neutral und relational.</td></tr><tr><td>Wirkungsarchitektur</td><td>Gesamtsystem aus Daten, Methoden, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen.</td></tr><tr><td>Wirkungsempfänger</td><td>Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen oder künftige Generationen, die von Wirkung betroffen sind.</td></tr><tr><td>Wirkungsgrenze</td><td>Nicht beliebig verrechenbare Schutz- oder Mindestbedingung.</td></tr><tr><td>Wirkungslenkung</td><td>Rückführung von Wirkungsbewertung in Preise, Kapital, Budgets, Förderung, Beschaffung, Regeln oder Entscheidungen.</td></tr><tr><td>Wirkungsordnung</td><td>Direkte, indirekte und systemische bzw. strukturverändernde Folgen; Zeitverzögerung wird zusätzlich ausgewiesen und beweist für sich keine höhere Wirkungsordnung.</td></tr><tr><td>Wirkungspotenzial</td><td>Möglichkeit, dass Wirkung eintreten kann; noch keine Wirkung.</td></tr><tr><td>Wirkungsrisiko</td><td>Möglichkeit negativer oder destabilisierender Wirkung.</td></tr><tr><td>Wirkungsraum</td><td>Bereich, in dem Folgen entfaltet werden: räumlich, sozial, institutionell, digital, ökologisch oder zeitlich.</td></tr><tr><td>Wirkstoff</td><td>Didaktische Analogie für einen Auslöser mit Wirkungspotenzial; nicht selbst die Wirkung.</td></tr><tr><td>WÖk-ID</td><td>Identifikation eines MasterItems. MasterItem → bewertbarer Wirkungszustand → messbarer Indikator → Beobachtung → Analyse; konkrete Verwendung und Quelle bleiben getrennt nachvollziehbar.</td></tr></table>",
+        "reason": "Vollständiges Originalglossar; alle Begriffe und Vergleichsdimensionen erhalten.",
+        "fontPt": 9,
+        "background": [
+          1,
+          1,
+          1
+        ],
+        "rows": [
+          [
+            "Begriff",
+            "Definition"
+          ],
+          [
+            "Evidenz",
+            "Nachvollziehbare Grundlage einer Aussage; ihre Belastbarkeit ist fragen- und kontextabhängig."
+          ],
+          [
+            "KII",
+            "Key Impact Indicator; Indikator tatsächlicher oder erwarteter Wirkung. Beobachtung, Potenzial und Risiko getrennt kennzeichnen; kein Kausalitätsbeweis durch den Indikator allein."
+          ],
+          [
+            "Netto-Wirkung",
+            "Zusammenführung positiver und negativer Wirkungen unter Verteilung, Zeit, Datenqualität, Mindestbedingungen und Nichtkompensation."
+          ],
+          [
+            "Nichtkompensation",
+            "Verbot, schwere negative Wirkung oder Grenzverletzungen durch positive Wirkung an anderer Stelle aufzurechnen."
+          ],
+          [
+            "NWI",
+            "WÖk-Netto-Wirkungs-Index: nichtmonetärer, regelgebundener Index unter Schutzgrenzen und Reverse Merit Order; kein Nationaler Wohlfahrtsindex."
+          ],
+          [
+            "Positive Netto-Wirkung",
+            "Zielgröße der Wirkungsökonomie: systemisch tragfähige Wirkung für Mensch, Planet und Demokratie."
+          ],
+          [
+            "Resonanzraum",
+            "Sozialer oder medialer Raum, in dem Deutungen, Emotionen, Zugehörigkeit und Handlungsbereitschaft anschlussfähig werden."
+          ],
+          [
+            "Reverse Merit Order",
+            "Engpasslogik, nach der das schwächste relevante Wirkungsfeld oder eine Mindestgrenze die Gesamteinstufung begrenzt."
+          ],
+          [
+            "SDG+",
+            "WÖk-eigene Erweiterung der Referenz- und Schutzräume, etwa Demokratie, Medien, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Selbstbestimmung; kein offizielles UN-System."
+          ],
+          [
+            "T-SROI",
+            "Monetäres EUR/EUR-Verhältnis: Barwert zurechenbarer direkter und separat belegter transformativer Nettonutzen / Barwert der Ressourcen; Rechenstandard v1.1, eigener Wirkpfad, Schutz-Gate."
+          ],
+          [
+            "Wirkung",
+            "Tatsächliche Veränderung von Zuständen; neutral und relational."
+          ],
+          [
+            "Wirkungsarchitektur",
+            "Gesamtsystem aus Daten, Methoden, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen."
+          ],
+          [
+            "Wirkungsempfänger",
+            "Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen oder künftige Generationen, die von Wirkung betroffen sind."
+          ],
+          [
+            "Wirkungsgrenze",
+            "Nicht beliebig verrechenbare Schutz- oder Mindestbedingung."
+          ],
+          [
+            "Wirkungslenkung",
+            "Rückführung von Wirkungsbewertung in Preise, Kapital, Budgets, Förderung, Beschaffung, Regeln oder Entscheidungen."
+          ],
+          [
+            "Wirkungsordnung",
+            "Direkte, indirekte und systemische bzw. strukturverändernde Folgen; Zeitverzögerung wird zusätzlich ausgewiesen und beweist für sich keine höhere Wirkungsordnung."
+          ],
+          [
+            "Wirkungspotenzial",
+            "Möglichkeit, dass Wirkung eintreten kann; noch keine Wirkung."
+          ],
+          [
+            "Wirkungsrisiko",
+            "Möglichkeit negativer oder destabilisierender Wirkung."
+          ],
+          [
+            "Wirkungsraum",
+            "Bereich, in dem Folgen entfaltet werden: räumlich, sozial, institutionell, digital, ökologisch oder zeitlich."
+          ],
+          [
+            "Wirkstoff",
+            "Didaktische Analogie für einen Auslöser mit Wirkungspotenzial; nicht selbst die Wirkung."
+          ],
+          [
+            "WÖk-ID",
+            "Identifikation eines MasterItems. MasterItem → bewertbarer Wirkungszustand → messbarer Indikator → Beobachtung → Analyse; konkrete Verwendung und Quelle bleiben getrennt nachvollziehbar."
+          ]
+        ]
+      },
+      {
+        "page": 381,
+        "rect": [
+          52.5,
+          68,
+          562,
+          222
+        ],
+        "beforeText": "INT-01  Weber, Natalie (2026): Die neue Ordnung des Wohlstands. Begründung, Systemarchitektur und Anwendungsfelder der Wirkungsökonomie. Interne \nReferenzfassung, Juli 2026.\nINT-02  Weber, Natalie (2026): Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026.\nINT-03  Weber, Natalie (2026): Das Wirkungsökonomische Managementmodell (WÖMM) 1.0. Managementlehre der Wirkungsökonomie, Juli 2026.\nINT-04  Weber, Natalie (2025/2026): Systemmodell der Wirkungsökonomie - die systemische Ordnungskarte Mensch-Planet-Demokratie.\nINT-05  Weber, Natalie (2026): Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.\nINT-06  Weber, Natalie (2025): Technische Leitlinien zum Wirkungssteuergesetz (WUStG), Vollversion Extended v2.\nINT-07  Weber, Natalie (2025/2026): WÖk Master Items final v1.2 - WÖk-IDs, Indikatorfamilien, Benchmarks und Scorelogiken.\nINT-08  Weber, Natalie (2025): T-SROI - Der neue Standard für Impact-Controlling in der Wirkungsökonomie.\nINT-09  Weber, Natalie (2025): Wirkungsökonomie in der Lieferkette.\nINT-10  Weber, Natalie (2025): Der Wirkungsrat - institutionelle Verankerung der Wirkungsökonomie.\nINT-11  Weber, Natalie (2025): Grundlagenpapier Wirkungsökonomie - Paradigmenwechsel für Wirtschaft, Wissenschaft, Gesellschaft und Politik.\nINT-12  Weber, Natalie (2025): Wirkungssteuergesetz (WStG/WUStG) und zugehörige Produkt-, Einkommens- und Anwendungsarbeiten.\nINT-13 Weber, Natalie (2026): Das Wirkungsökonomische Methodensystem (WÖMS) 1.0. Grundlage und Vorgängerfassung der erweiterten Version 2.0.\n",
+        "afterHtml": "<p style=\"margin:0\">INT-01 Weber, Natalie (2026): Die neue Ordnung des Wohlstands. Begründung, Systemarchitektur und Anwendungsfelder der Wirkungsökonomie. Interne Referenzfassung, Juli 2026.</p><p style=\"margin:0\">INT-02 Weber, Natalie (2026): Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.8, 1. Oktober 2026 (aktuelle Begriffsgrundlage).</p><p style=\"margin:0\">INT-03 Weber, Natalie (2026): Das Wirkungsökonomische Managementmodell (WÖMM) 1.0: historische Vorgängerfassung. Aktuell: WÖMM 2.0, Konsistenzkorrektur 10.10.2026.</p><p style=\"margin:0\">INT-04 Weber, Natalie (2025/2026): Systemmodell der Wirkungsökonomie - die systemische Ordnungskarte Mensch-Planet-Demokratie.</p><p style=\"margin:0\">INT-05 Weber, Natalie (2026): Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.</p><p style=\"margin:0\">INT-06 Weber, Natalie (2025): Technische Leitlinien zum Wirkungssteuergesetz (WUStG), Vollversion Extended v2.</p><p style=\"margin:0\">INT-07 Weber, Natalie (2025/2026): WÖk Master Items final v1.5 - 621 MasterItems; konkrete Zustands- und Indikatorzuordnung separat prüfen.</p><p style=\"margin:0\">INT-08 Weber, Natalie (2026): T-SROI-Rechenstandard v1.1 (maßgebliche Rechenvorschrift). T-SROI-Arbeit von 2025: historische Grundlage.</p><p style=\"margin:0\">INT-09 Weber, Natalie (2025): Wirkungsökonomie in der Lieferkette.</p><p style=\"margin:0\">INT-10 Weber, Natalie (2025): Der Wirkungsrat - institutionelle Verankerung der Wirkungsökonomie.</p><p style=\"margin:0\">INT-11 Weber, Natalie (2025): Grundlagenpapier Wirkungsökonomie - Paradigmenwechsel für Wirtschaft, Wissenschaft, Gesellschaft und Politik.</p><p style=\"margin:0\">INT-12 Weber, Natalie (2025): Wirkungssteuergesetz (WStG/WUStG) und zugehörige Produkt-, Einkommens- und Anwendungsarbeiten.</p><p style=\"margin:0\">INT-13 Weber, Natalie (2026): Das Wirkungsökonomische Methodensystem (WÖMS) 1.0. Grundlage und Vorgängerfassung der erweiterten Version 2.0.</p>",
+        "reason": "Aktuelle Quellen und historische Bezugsarbeiten auseinanderhalten; alle INT-01 bis INT-13 erhalten.",
+        "fontPt": 7.2,
+        "background": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  }
+]

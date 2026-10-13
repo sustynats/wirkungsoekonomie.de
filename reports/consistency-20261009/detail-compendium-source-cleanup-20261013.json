@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-13",
+  "status": "PASS",
+  "scope": "Five current detail-compendium source texts",
+  "records": [
+    {
+      "path": "docs/korrektur-detailkonzepte/docx-extracts/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.md",
+      "beforeSha256": "a70b74c48edd2d4e1afa5c49cb97dbbd4b020ce0d04a6a8d65ef7cd7305fa19f",
+      "afterSha256": "2510e956aea0e2a572d5990305cc3db6ae1cc509a1990b733ca4fedef419e24e",
+      "removedParagraphs": 28,
+      "revisedParagraphs": 12,
+      "formatCorrections": 11
+    },
+    {
+      "path": "docs/korrektur-detailkonzepte/docx-extracts/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.md",
+      "beforeSha256": "5b50db3a59c6124d7c561f9f81fdeb88ad338298b8c454416543ff0212930a37",
+      "afterSha256": "5bd8f44064a9620bd1590a706d65aa44e3c60174a483a69b87e865c9e15d37bc",
+      "removedParagraphs": 28,
+      "revisedParagraphs": 12,
+      "formatCorrections": 11
+    },
+    {
+      "path": "docs/korrektur-detailkonzepte/docx-extracts/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.md",
+      "beforeSha256": "30b7abed9f995031c769d8fdbc461327bca266c84a4c464a96c3d9263ca8dc95",
+      "afterSha256": "c5ef2114ecb02c2ed6aea566210a64239ffb583fb0d0db91b18bc499eb652be9",
+      "removedParagraphs": 26,
+      "revisedParagraphs": 11,
+      "formatCorrections": 10
+    },
+    {
+      "path": "docs/korrektur-detailkonzepte/docx-extracts/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.md",
+      "beforeSha256": "f2a631041a0082869e6ccb6fca5ffdc69666382a0286b6225b03e499fbcb9542",
+      "afterSha256": "c5dbad534924f7c2a354fb4448eb1e27ecd2912c76205fdbc19159e8d68dc475",
+      "removedParagraphs": 30,
+      "revisedParagraphs": 13,
+      "formatCorrections": 12
+    },
+    {
+      "path": "docs/korrektur-detailkonzepte/docx-extracts/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.md",
+      "beforeSha256": "25719f4774d23e9592ca181eccd88d6471329e4626c5745d671373de14dd7bb9",
+      "afterSha256": "9f464a36c8a83f7fe16d9ee5107e8bd3636ae425a743b19e2c6ee11bc1aa9438",
+      "removedParagraphs": 30,
+      "revisedParagraphs": 13,
+      "formatCorrections": 12
+    }
+  ],
+  "totals": {
+    "sources": 5,
+    "removedParagraphs": 142,
+    "revisedParagraphs": 61,
+    "formatCorrections": 56
+  }
+}

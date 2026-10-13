@@ -1,7 +1,9 @@
+import { applyReferenceCorrections } from "./consistency-20261009/reference-core.mjs";
 import {hasPublicationAccess} from '../lib/publication-access.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { spawnSync } from "node:child_process";
 
 export const SOURCE_VERSION = "2026.0";
 export const IMPORT_VERSION = "2026.1-import";
@@ -375,6 +377,7 @@ function updateCurrentTSroiMethodLinks(html) {
 
 export function applyCurrentMethodologyCorrections(html, chapterNumber, { currentReference = false } = {}) {
   let next = currentReference ? updateCurrentTSroiMethodLinks(updateRetiredTSroiSourceCitations(html)) : html;
+  if (currentReference) next = applyReferenceCorrections(next, { withNotice: Boolean(chapterNumber) });
   const corrections = {
     32: {
       "woek-main-2026-k032-s004-p004": "Der NWI trennt zwei Aufgaben, die leicht verwechselt werden. Zuerst übersetzt die Scorecard Rohdaten in dimensionsgleiche Feldscores s<sub>i</sub> auf einer vorher dokumentierten Skala, zum Beispiel von −3 bis +3. Daraus kann ein beschreibender Profilwert P = Σ<sub>i</sub> w<sub>i</sub>s<sub>i</sub> mit vorab festgelegten Gewichten w<sub>i</sub> und Σw<sub>i</sub> = 1 entstehen. Danach prüft das Schutz-Gate G die roten Linien, kritischen Felder, Systemgrenze, Zurechnung und Datenqualität. NWI = P darf nur bei G = 1 ausgewiesen werden. Datenqualität und Unsicherheit verändern nicht still die Punkte; sie bestimmen Evidenzstatus, Intervall und gegebenenfalls die Blockade.",
@@ -667,6 +670,12 @@ export function applyLiveReferenceLayer() {
     fs.writeFileSync("public/data/mainwork-reference.json", `${JSON.stringify(mainwork, null, 2)}\n`);
   }
 
+  // Reapply the reviewed source-bound edition after the older delta layer.
+  // Abort on an unknown paragraph instead of overwriting intervening changes.
+  const correctedBook = spawnSync('python3', ['scripts/publications/apply-consistency-online-book.py'],
+    { cwd: process.cwd(), stdio: 'inherit' });
+  if (correctedBook.error) throw correctedBook.error;
+  if (correctedBook.status !== 0) throw new Error('Source-bound online book correction failed');
   writeLiveReferenceReports(changes);
   return changes;
 }

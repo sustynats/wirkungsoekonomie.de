@@ -132,7 +132,7 @@ function loadDetails() {
   return new Map(entries.filter((entry) => entry?.detailSlug).map((entry) => [entry.detailSlug, entry]));
 }
 
-const technicalReaderNote = /\b(?:CodeX|Codex)\b|\b(?:interne[rs]?\s+)?Repository(?:-|\s)*(?:Anweisungen?|Pfade?|Strukturen?|Informationen?|Hinweise?)\b|\bRedaktioneller Hinweis\b|\b(?:Import-Version|Source-Hash|Live-Reference|Reviewstatus|UX-priorisiert|partially-delta-reviewed)\b|\bExportpfad\b|bestätigten DOCX-Fassung/iu;
+const technicalReaderNote = /\b(?:CodeX|Codex)\b|\b(?:interne[rs]?\s+)?Repository(?:-|\s)*(?:Anweisungen?|Pfade?|Strukturen?|Informationen?|Hinweise?)\b|\bRedaktioneller Hinweis\b|\b(?:Import-Version|Source-Hash|Live-Reference|Reviewstatus|UX-priorisiert|partially-delta-reviewed)\b|bestätigten DOCX-Fassung|WÖk-Produktionsprozess|Quellen werden nicht als öffentlicher Download angeboten/iu;
 const pathText = /(?:download-or-document|assets\/downloads|\/(?:bibliothek|eintraege|lesen)\/|index\.html|file:\/\/)/iu;
 const errors = [];
 const detailsBySlug = loadDetails();

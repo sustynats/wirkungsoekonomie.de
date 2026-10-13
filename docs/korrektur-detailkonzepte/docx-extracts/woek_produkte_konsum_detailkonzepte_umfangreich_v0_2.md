@@ -20,21 +20,13 @@ v0.2
 
 Status
 
-nachgelieferte Korrekturfassung
+Fachliche Arbeitsfassung
 
 Stand
 
 24. Mai 2026
 
 Leitformel: Wirkung statt Kapital. Für Mensch, Planet und Demokratie.
-
-Vorwort und Korrekturhinweis
-
-Diese nachgelieferte Korrekturfassung ersetzt die bisher sehr kurzen Detailkonzept-Skizzen. Sie ist bewusst als ausführliches Detailkonzept-Kompendium aufgebaut. Jeder Unterbereich erhält eine fachliche Ausarbeitung mit Problem, Wirkungslogik, Systemarchitektur, Messlogik, politischer Anschlussfähigkeit, Risiken und Online-/Dossierbezug.
-
-Die Inhalte sind öffentlich formuliert. Interne Umsetzungs- und Prozesshinweise wurden bewusst nicht aufgenommen. Öffentliche Dokumente erklären Fachinhalte, nicht Arbeitsabläufe.
-
-Öffentlicher CharakterDieses Dokument ist als fachliche Grundlage für Website, Online-Volltext, Download und Dossier geeignet. Es enthält keine internen technischen Arbeitsanweisungen.
 
 Grundthese des Bereichs
 
@@ -120,7 +112,7 @@ Detailkonzepte
 
 Produktwirkung und Produktlebenszyklus
 
-Dieses Detailkonzept vertieft den Unterbereich „Produktwirkung und Produktlebenszyklus“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Rohstoffe, Herstellung, Nutzung, Ende, Produktdaten statt Produktimage, Produktverantwortung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Produktwirkung und Produktlebenszyklus“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Rohstoffe, Herstellung, Nutzung, Ende, Produktdaten statt Produktimage, Produktverantwortung.
 
 1. Ausgangslage und alte Logik
 
@@ -188,15 +180,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelProduktwirkung und Produktlebenszyklus: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Produktwirkung und Produktlebenszyklus: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Produktbesteuerung durch Wirkung
 
-Dieses Detailkonzept vertieft den Unterbereich „Produktbesteuerung durch Wirkung“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. FinalScore, Steuerklasse, Preisumkehr, Sozial- und Kaufkraftschutz, Übergang. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Produktbesteuerung durch Wirkung“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. FinalScore, Steuerklasse, Preisumkehr, Sozial- und Kaufkraftschutz, Übergang.
 
 1. Ausgangslage und alte Logik
 
@@ -264,15 +252,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelProduktbesteuerung durch Wirkung: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Produktbesteuerung durch Wirkung: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Wirkungsumsatzsteuer / Produktwirkungssteuer
 
-Dieses Detailkonzept vertieft den Unterbereich „Wirkungsumsatzsteuer / Produktwirkungssteuer“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Umsatzsteuerlogik als Rückkopplungsarchitektur, Vorsteuer, Bonus-Malus, WUStG-Anschluss. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Wirkungsumsatzsteuer / Produktwirkungssteuer“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Umsatzsteuerlogik als Rückkopplungsarchitektur, Vorsteuer, Bonus-Malus, WUStG-Anschluss.
 
 1. Ausgangslage und alte Logik
 
@@ -340,15 +324,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWirkungsumsatzsteuer / Produktwirkungssteuer: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Wirkungsumsatzsteuer / Produktwirkungssteuer: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Produktscorecards
 
-Dieses Detailkonzept vertieft den Unterbereich „Produktscorecards“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Kernfelder, Bewertungslogik, Datenfelder, FinalScore, Sonderfälle. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Produktscorecards“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Kernfelder, Bewertungslogik, Datenfelder, FinalScore, Sonderfälle.
 
 1. Ausgangslage und alte Logik
 
@@ -416,15 +396,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelProduktscorecards: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Produktscorecards: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 WÖk-IDs im Produktbereich
 
-Dieses Detailkonzept vertieft den Unterbereich „WÖk-IDs im Produktbereich“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Indikatorregister, SDG-/SDG+-Mapping, NACE, ESRS, GRI, Datenqualität. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „WÖk-IDs im Produktbereich“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Indikatorregister, SDG-/SDG+-Mapping, NACE, ESRS, GRI, Datenqualität.
 
 1. Ausgangslage und alte Logik
 
@@ -492,15 +468,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelWÖk-IDs im Produktbereich: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: WÖk-IDs im Produktbereich: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Reverse Merit Order
 
-Dieses Detailkonzept vertieft den Unterbereich „Reverse Merit Order“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Nicht-Kompensation, schwächstes Wirkungsfeld, rote Linien, Schutz vor Ablasshandel. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Reverse Merit Order“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Nicht-Kompensation, schwächstes Wirkungsfeld, rote Linien, Schutz vor Ablasshandel.
 
 1. Ausgangslage und alte Logik
 
@@ -568,15 +540,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelReverse Merit Order: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Reverse Merit Order: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Apfelbeispiel
 
-Dieses Detailkonzept vertieft den Unterbereich „Apfelbeispiel“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Regionaler Bio-Apfel vs. Importapfel, NACE 01.24, SDGs, Scorecard, Steuerklasse. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Apfelbeispiel“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Regionaler Bio-Apfel vs. Importapfel, NACE 01.24, SDGs, Scorecard, Steuerklasse.
 
 1. Ausgangslage und alte Logik
 
@@ -644,15 +612,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelApfelbeispiel: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Apfelbeispiel: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Lieferkettenwirkung
 
-Dieses Detailkonzept vertieft den Unterbereich „Lieferkettenwirkung“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Vorleistungen, Lieferanten-Scorecards, Vorsteuerfähigkeit, globale Wirkungsketten. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Lieferkettenwirkung“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Vorleistungen, Lieferanten-Scorecards, Vorsteuerfähigkeit, globale Wirkungsketten.
 
 1. Ausgangslage und alte Logik
 
@@ -720,15 +684,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelLieferkettenwirkung: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Lieferkettenwirkung: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Konzernbeispiel / BASF Polyamid
 
-Dieses Detailkonzept vertieft den Unterbereich „Konzernbeispiel / BASF Polyamid“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. CSRD/ESRS-Daten auf Produktgruppen, Anlagen und Benchmarks herunterbrechen. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Konzernbeispiel / BASF Polyamid“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. CSRD/ESRS-Daten auf Produktgruppen, Anlagen und Benchmarks herunterbrechen.
 
 1. Ausgangslage und alte Logik
 
@@ -796,15 +756,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelKonzernbeispiel / BASF Polyamid: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Konzernbeispiel / BASF Polyamid: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Verbraucherinformation und Wirkungspunkte
 
-Dieses Detailkonzept vertieft den Unterbereich „Verbraucherinformation und Wirkungspunkte“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Regaltransparenz, Label, Bonuslogik, Freiheit ohne moralische Überforderung. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Verbraucherinformation und Wirkungspunkte“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. Regaltransparenz, Label, Bonuslogik, Freiheit ohne moralische Überforderung.
 
 1. Ausgangslage und alte Logik
 
@@ -872,15 +828,11 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelVerbraucherinformation und Wirkungspunkte: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
+Kernformel: Verbraucherinformation und Wirkungspunkte: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Politische Rahmenbedingungen
 
-Dieses Detailkonzept vertieft den Unterbereich „Politische Rahmenbedingungen“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. WStG, WUStG, Wirkungsrat, Datenschutz, Prüfpflichten, Übergänge und sozialer Schutz. Es ist als öffentliche Arbeitsfassung angelegt und bildet die fachliche Grundlage für Online-Volltext, Einzeldossier, Toolbezug und politische Anschlussfähigkeit.
+Dieses Detailkonzept vertieft den Unterbereich „Politische Rahmenbedingungen“ innerhalb des Portals „Produkte & Konsum / Wirkungsumsatzsteuer“. WStG, WUStG, Wirkungsrat, Datenschutz, Prüfpflichten, Übergänge und sozialer Schutz.
 
 1. Ausgangslage und alte Logik
 
@@ -948,15 +900,7 @@ Regelmäßige Überprüfung der Indikatoren und Benchmarks.
 
 Die Umsetzung sollte lernend erfolgen: Pilotraum, Datenprüfung, freiwillige Erprobung, Evaluation, öffentliche Konsultation, Anpassung und erst danach breitere Anwendung. So bleibt die Wirkungsökonomie anschlussfähig und schützt den demokratischen Diskurs vor der Behauptung, es gebe nur eine einzige zulässige Lösung.
 
-8. Online-, Dossier- und Toolbezug
-
-Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Toolbezug. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt mit Inhaltsverzeichnis, Druckfunktion, SDG-/SDG+-Bezug, Buchankern und Glossarverknüpfungen.
-
-KernformelPolitische Rahmenbedingungen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
-
-Gemeinsame Veröffentlichungslogik
-
-Jeder Unterbereich wird auf der Website als vollständige Online-Fassung veröffentlicht. Das Detailkonzept bildet die fachliche Grundlage, das Einzeldossier ergänzt Beispiele, Berechnungen, Datenquellen und Umsetzungsvarianten. Downloads sind Export und Archiv, nicht der Hauptzugang.
+Kernformel: Politische Rahmenbedingungen: Nicht die Aktivität allein zählt, sondern ihre positive Netto-Wirkung, ihre Risiken und ihre demokratisch überprüfbare Rückkopplung.
 
 Quellen- und Referenzrahmen
 

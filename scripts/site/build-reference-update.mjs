@@ -1,3 +1,4 @@
+import { applyCurrentScopeNotice } from '../review/consistency-20261009/reference-core.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {writeContentPage} from '../lib/content-page.mjs';
@@ -68,3 +69,6 @@ for (const edition of currentPdfEditions().filter(item=>currentSurfaces.has(item
   }
 }
 applyPublicationErratumNotices();
+
+// consistency-20261009: keep the dated current review after historical addenda.
+{ const f='referenz/aktualisierung/index.html'; fs.writeFileSync(f,applyCurrentScopeNotice(fs.readFileSync(f,'utf8'))); }

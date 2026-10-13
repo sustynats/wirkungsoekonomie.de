@@ -8,6 +8,13 @@ const sandbox = { module: { exports: {} }, globalThis: {} };
 vm.createContext(sandbox);
 vm.runInContext(source, sandbox);
 const calc = sandbox.module.exports;
+// Explicit assumptions of these historical learning fixtures, not defaults for user data.
+const explicitModelAssumptions20261009 = {
+  annualTransformativeBenefit: 0, annualHarm: 0, annualOperatingCost: 0,
+  benefitDiscountRate: 0.05, attribution: 1, deadweight: 0, displacement: 0,
+  uncertainty: 0,
+};
+const modelTSROI = (input) => calc.calculateTSROI({ ...explicitModelAssumptions20261009, ...input });
 
 function assert(condition, message) {
   if (!condition) {
@@ -39,7 +46,7 @@ const independentNwiGate = calc.calculateNwiGate({
 });
 assert(independentNwiGate.passed, "NWI must have its own documented protection gate without a monetary resource denominator.");
 
-const evaluated = calc.calculateTSROI({
+const evaluated = modelTSROI({
   investment: 1000000,
   annualDirectBenefit: 500000,
   annualTransformativeBenefit: 200000,
@@ -56,7 +63,7 @@ assert(evaluated.gate.passed, "A complete positive profile and conservative lowe
 assert(Math.abs(evaluated.benefitPv - 1115646.2585) < 0.01, "T-SROI must discount net benefit cash flows correctly.");
 assert(Math.abs(evaluated.tsroi - 1.1156462585) < 0.000001, "T-SROI must be a EUR/EUR ratio of discounted net benefit and resources.");
 
-const blockedRedLine = calc.calculateTSROI({
+const blockedRedLine = modelTSROI({
   investment: 100,
   annualDirectBenefit: 200,
   years: 1,
@@ -66,7 +73,7 @@ const blockedRedLine = calc.calculateTSROI({
 });
 assert(blockedRedLine.status === "blocked" && blockedRedLine.tsroi === null, "T-SROI must block an active red line instead of showing a positive value.");
 
-const blockedProfile = calc.calculateTSROI({
+const blockedProfile = modelTSROI({
   investment: 100,
   annualDirectBenefit: 200,
   years: 1,
@@ -75,7 +82,7 @@ const blockedProfile = calc.calculateTSROI({
 });
 assert(blockedProfile.status === "blocked" && blockedProfile.ioi === null, "A negative core profile must block IOI and T-SROI.");
 
-const lowQuality = calc.calculateTSROI({
+const lowQuality = modelTSROI({
   investment: 100,
   annualDirectBenefit: 200,
   annualHarm: 50,
@@ -86,7 +93,7 @@ const lowQuality = calc.calculateTSROI({
 assert(lowQuality.status === "blocked", "Insufficient data quality must close the gate.");
 assert(Math.abs(lowQuality.harmPv - (50 / 1.05)) < 0.001, "Data quality must not attenuate a monetary harm value.");
 
-const conservativeHarm = calc.calculateTSROI({
+const conservativeHarm = modelTSROI({
   investment: 1000,
   annualDirectBenefit: 1000,
   annualHarm: 200,
@@ -100,7 +107,7 @@ const conservativeHarm = calc.calculateTSROI({
 assert(Math.abs(conservativeHarm.directPv - (500 / 1.05)) < 0.001, "The causal share must reduce the claimed benefit.");
 assert(Math.abs(conservativeHarm.harmPv - (200 / 1.05)) < 0.001, "The base model must not silently reduce conservative harms with the benefit factor.");
 
-const conservativeScenario = calc.calculateTSROI({
+const conservativeScenario = modelTSROI({
   investment: 1000,
   annualDirectBenefit: 100,
   annualHarm: 60,
@@ -114,7 +121,7 @@ const conservativeScenario = calc.calculateTSROI({
 assert(Math.abs(conservativeScenario.lowerNetBenefitPv - (20 / 1.05)) < 0.001, "The conservative scenario must reduce only claimed benefits and leave harm unchanged.");
 assert(conservativeScenario.lowerNetBenefitPv < conservativeScenario.benefitPv, "A conservative benefit reduction must never make the lower net benefit more favorable.");
 
-const separateTransformation = calc.calculateTSROI({
+const separateTransformation = modelTSROI({
   investment: 100,
   annualDirectBenefit: 100,
   annualTransformativeBenefit: 50,
@@ -128,7 +135,7 @@ const separateTransformation = calc.calculateTSROI({
 assert(Math.abs(separateTransformation.transformativePv - (50 / 1.05)) < 0.001, "A documented transformative benefit must be a separate discounted EUR stream, not a multiplier.");
 assert(Math.abs(separateTransformation.tsroi - (140 / 1.05 / 100)) < 0.000001, "T-SROI must add separately evidenced benefits and subtract harm before division by resources.");
 
-const zeroSafe = calc.calculateTSROI({
+const zeroSafe = modelTSROI({
   investment: 0,
   annualDirectBenefit: 10,
   years: 1,
@@ -140,7 +147,7 @@ const zeroSafe = calc.calculateTSROI({
 assert(zeroSafe.status === "blocked" && zeroSafe.tsroi === null && !zeroSafe.gate.passed, "Zero resources must close the gate and block the ratio instead of inventing a denominator.");
 assert(independentNwiGate.passed && zeroSafe.status === "blocked", "A documented NWI profile must remain independently evaluable when a separate monetary T-SROI ratio has no denominator.");
 
-const undocumentedGate = calc.calculateTSROI({
+const undocumentedGate = modelTSROI({
   investment: 100,
   annualDirectBenefit: 200,
   years: 1,
@@ -149,7 +156,7 @@ const undocumentedGate = calc.calculateTSROI({
 });
 assert(undocumentedGate.status === "blocked" && !undocumentedGate.gate.passed, "T-SROI must fail closed without explicit system-boundary and attribution evidence.");
 
-const incompleteProfile = calc.calculateTSROI({
+const incompleteProfile = modelTSROI({
   investment: 100,
   annualDirectBenefit: 200,
   years: 1,
@@ -185,7 +192,7 @@ for (const [label, patch] of Object.entries({
   negativeHarm: { annualHarm: -100 },
   negativeOperatingCost: { annualOperatingCost: -100 },
 })) {
-  const invalid = calc.calculateTSROI({ ...validGateInput, ...patch });
+  const invalid = modelTSROI({ ...validGateInput, ...patch });
   assert(invalid.status === "blocked" && !invalid.gate.passed && invalid.tsroi === null, `${label} must fail closed instead of being normalized into a favorable result.`);
 }
 

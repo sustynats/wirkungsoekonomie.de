@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-13",
+  "status": "PASS",
+  "scope": "Every page of five rebuilt current detail compendia; five duplicate downloads verified byte-identical",
+  "uniquePdfs": 5,
+  "exactDuplicatePdfs": 5,
+  "reviewedPages": 107,
+  "contactSheets": 5,
+  "findings": {
+    "clipping": 0,
+    "overlap": 0,
+    "blankRedactionResidue": 0,
+    "productionNotes": 0,
+    "unresolved": 0
+  },
+  "manifestSha256": "2bdae96d16c9e046181940667ba6403162fc46e25c518e4707d84d008d218476",
+  "pdfs": [
+    {
+      "pdf": "assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.pdf",
+      "duplicate": "assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "sha256": "6d2aedd33d2e68b852b10646727544e9b7d7094ecac99c0fac85cae160162232",
+      "pages": 21
+    },
+    {
+      "pdf": "assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.pdf",
+      "duplicate": "assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "sha256": "a8a15adfed170e91fcebc6e50cab714b27ee331e4726749a1fcc440c27a88bce",
+      "pages": 21
+    },
+    {
+      "pdf": "assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.pdf",
+      "duplicate": "assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "sha256": "243f2ab67ed514ab3601985f86aac861b69df3f1dd36b0965b600f5f25d7d512",
+      "pages": 19
+    },
+    {
+      "pdf": "assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.pdf",
+      "duplicate": "assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "sha256": "9595a93a1323356ea6e437aab85c45c9406e2ca3552b3bcfee4682c01e1bb8b7",
+      "pages": 23
+    },
+    {
+      "pdf": "assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.pdf",
+      "duplicate": "assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2 2.pdf",
+      "sha256": "d7be87678b1ee6a23400e63d45598784b367281f7e78e059aa3e019bbf6cea09",
+      "pages": 23
+    }
+  ]
+}

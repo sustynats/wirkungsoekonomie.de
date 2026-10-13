@@ -1,235 +1,88 @@
-Wirkungsökonomie · Natalie Weber
+# Qualitätsstandard für umfangreiche Detailkonzepte und Dossiers
 
-STANDARD
+Fachlicher Mindeststandard der Wirkungsökonomie
 
-Umfangreiche Detailkonzepte und Dossiers
+**Autorin:** Institut für Wirkungsökonomie; Natalie Weber  
+**Version:** v1.1  
+**Status:** Fachlicher Qualitätsstandard  
+**Stand:** 13. Oktober 2026
 
-Verbindlicher Korrekturstandard für alle Wirkungsfelder, Werkzeuge, Unterbereiche und Online-Volltexte
+Ein Detailkonzept oder Dossier trägt seine Bezeichnung nur, wenn es den Gegenstand fachlich eigenständig, nachvollziehbar und mit erkennbaren Grenzen behandelt.
 
-Autorin
+## 1. Zweck und Geltung
 
-Natalie Weber
+Dieser Standard beschreibt die fachlichen Anforderungen an ausführliche Detailkonzepte und Dossiers der Wirkungsökonomie. Er gilt themenübergreifend und richtet die Tiefe einer Veröffentlichung an der materiellen Wirkungsrelevanz des Gegenstands aus.
 
-Referenz
+Die Wirkungsökonomie ist ein Wirtschafts- und Gesellschaftsmodell. Ihre Prüfgegenstände umfassen wirtschaftliche, soziale, ökologische und demokratische Wirkungsräume. Dazu gehören insbesondere Produkte und Konsum, Unternehmen und Kapital, Arbeit und Einkommen, Wohnen, Gesundheit, Pflege, Bildung, Medien, Wissenschaft, Staat, Recht und Demokratie.
 
-Wirkungsökonomie
+## 2. Dokumenttypen
 
-Version
+Ein **Detailkonzept** entwickelt einen abgegrenzten Gegenstand systematisch. Es verbindet Begriffe, Wirkmechanismen, Akteurslagen, Daten, Bewertungslogik, rechtliche und politische Anschlussstellen sowie Schutzbedingungen.
 
-v1.0
+Ein **Dossier** wendet die Grundlagen auf eine konkrete Frage oder Fallgruppe an. Es verbindet Beispiele, Datenquellen, Berechnungswege, Handlungsoptionen, Einwände und Grenzen.
 
-Status
+Ein **Kurzüberblick** ordnet einen Gegenstand ein, ersetzt aber keine fachliche Langfassung. Umfang und Bezeichnung müssen zueinander passen.
 
-verbindlicher Sanierungsstandard
+## 3. Mindeststruktur eines Detailkonzepts
 
-Stand
+Ein Detailkonzept enthält, soweit für den Gegenstand einschlägig:
 
-24. Mai 2026
+- Executive Summary und klare Gegenstandsabgrenzung
+- Ausgangsdiagnose, Referenzzustand und Problemthese
+- Begriffsdefinitionen und Abgrenzungen
+- Akteursgruppen, Interessenlagen und Verteilungseffekte
+- Wirkpfad von Ausgangslage über Maßnahme und Wirkmechanismus bis zur tatsächlichen Zustandsveränderung
+- direkte, indirekte und zeitverzögerte Folgen sowie Wirkungen erster bis dritter Ordnung
+- Bezüge zu Mensch, Planet und Demokratie
+- SDG- und SDG+-Bezug; in deutschen öffentlichen und regulatorischen Fällen zusätzlich die Deutsche Nachhaltigkeitsstrategie
+- Datenquellen, Messlogik, Einheiten, Unsicherheiten und Datenqualität
+- Beispiele, Gegenfaktum und Grenzen der Attribution
+- rechtliche, regulatorische und institutionelle Anschlussstellen
+- Risiken, Zielkonflikte, Missbrauchsschutz und harte Schutzgrenzen
+- politische Anschlussfähigkeit und nachvollziehbare Umsetzungsoptionen
+- Quellen und weiterführende Referenzen
 
-Geltung
+## 4. Mindeststruktur eines Dossiers
 
-Rang 0 bis Rang 13 sowie alle künftigen Ränge
+Ein Dossier beantwortet mindestens folgende Fragen:
 
-„Ein Dokument heißt nur dann Detailkonzept oder Dossier, wenn es wirklich die fachliche Tiefe eines Detailkonzepts oder Dossiers hat.“
+- Welches Problem und welcher Referenzzustand werden untersucht?
+- Welche tatsächlichen Zustandsveränderungen sind plausibel oder nachgewiesen?
+- Welche Gruppen tragen Nutzen, Lasten und Risiken?
+- Welche direkten, indirekten und zeitverzögerten Folgen sind wesentlich?
+- Welche Daten, Annahmen, Formeln und Einheiten werden verwendet?
+- Welche Schutzbedingungen und nicht kompensierbaren Grenzen gelten?
+- Welche Alternativen und Umsetzungspfade bestehen?
+- Welche Unsicherheiten, offenen Punkte und Gegenargumente bleiben?
 
-1. Korrekturentscheidung
+Mindestens ein konkretes Beispiel oder Anwendungsszenario macht die Bewertungslogik prüfbar. Modellwerte und Demos bleiben als solche gekennzeichnet.
 
-Die bisher erzeugten kurzen Detailkonzepte und Einzeldossiers vieler Ränge erfüllen nicht den vereinbarten Standard. Sie dürfen nicht als Detailkonzept oder Dossier gelten, wenn sie nur zwei Seiten oder kurze Stichpunkte enthalten.
+## 5. Bewertungslogik
 
-Verbindliche Referenz ist das bereits erstellte Detailkonzept „Investor:innen und Vermieter:innen im wirkungsökonomischen Wohnungsmarkt“. Dieses Dokument zeigt die erwartete Richtung: ausführliche Ausgangsdiagnose, Akteursgruppen, Tabellen, rechtliche Anschlussstellen, Anreizlogik, Spekulationsschutz, politische Anschlussfähigkeit, Website-Integration und Fazit.
+Wirkung bezeichnet eine tatsächliche Veränderung von Zuständen. Wirkung, Wirkungspotenzial und Wirkungsrisiko werden getrennt ausgewiesen. Reichweite, Aktivität, Output oder Zielbezug belegen für sich allein keine Wirkung.
 
-Die Konsequenz: Alle bisherigen Kurzfassungen werden rückwirkend saniert. Sie werden entweder zu umfangreichen Detailkonzepten und Dossiers ausgebaut oder klar als Kurzüberblick, Intro oder Entwurf gekennzeichnet.
+Positive oder negative Wirkung wird aus Zustandsveränderung, Wirkmechanismus, Evidenz und Unsicherheit sowie den einschlägigen Referenz- und Schutzräumen hergeleitet. Wenn eine Zielgröße gemeint ist, lautet sie positive Netto-Wirkung.
 
-2. Unterschied zwischen Portaltext, Detailkonzept und Dossier
+Nichtkompensation schützt harte Grenzen davor, durch positive Werte in anderen Bereichen verrechnet zu werden. Die Reverse Merit Order priorisiert besonders schädliche Wirkungen und dringende Schutzbedarfe. Bewertung ersetzt weder politische Entscheidung noch Rechtsschutz.
 
-Ebene
+## 6. Formeln, Beispiele und Schutzbedingungen
 
-Funktion
+Formeln benennen Variablen, Einheiten, Bezugszeitraum und Wertebereich. Eingaben müssen nachvollziehbar sein. Schutzbedingungen begrenzen unzulässige Ergebnisse und verhindern Scheingenauigkeit.
 
-Portaltext
+Beispielzahlen müssen aus der angegebenen Regel folgen. Entlastung und Belastung werden vollständig gerechnet; ein Zuschlag von null ist keine Preissenkung. Finanzierungsannahmen und die Weitergabe wirtschaftlicher Vorteile werden sichtbar gemacht.
 
-öffentlicher Einstieg, Orientierung, Karten, Verlinkung, Übersicht; nicht die fachliche Vollausarbeitung
+Personen werden nicht bewertet. Das Modell begründet keine moralische Rangliste, kein Social-Credit-System und keine automatisierte Entscheidung über individuelle Rechte.
 
-Detailkonzept
+## 7. Anforderungen an Quellen und staatliche Referenzrahmen
 
-systematische fachliche Ausarbeitung eines Unterbereichs mit Theorie, Definitionen, Akteurslogik, Daten, Bewertung, Recht, Politik und Website-Integration
+Quellen müssen die jeweilige Aussage tragen. Ziel- und Indikatorbezug sind kein Kausalitätsnachweis. Beobachtung und Attribution werden getrennt.
 
-Dossier
+Bei staatlichen Maßnahmen werden vorhandene Prüfrahmen objektspezifisch berücksichtigt. Für Bundesregelungsvorhaben gehören dazu insbesondere die Deutsche Nachhaltigkeitsstrategie, die Gesetzesfolgenabschätzung nach GGO, die Nachhaltigkeitsprüfung und eNAP/eGFA. Die Wirkungsökonomie ergänzt diese Architektur durch eine wirkungsbezogene Prüfung; sie ersetzt sie nicht.
 
-praxisnahe Anwendung mit Beispielen, Datenquellen, Berechnungslogik, Umsetzungspfaden, Einwänden und Toolbezug
+Für finanzwirksame Maßnahmen werden § 7 BHO und die VV-BHO sowie gegebenenfalls weitere Fachrahmen geprüft. Öffentliche Eigentumsanteile allein belegen keine konkrete Regierungsentscheidung oder politische Attribution.
 
-Online-Volltext
+## 8. Qualitätskriterien
 
-vollständige lesbare HTML-/MDX-Version des Detailkonzepts oder Dossiers; Hauptzugang der Website
+Eine Fassung ist fachlich belastbar, wenn Definitionen konsistent, Quellen tragfähig, Formeln und Einheiten prüfbar, Beispielzahlen reproduzierbar, Schutzbedingungen wirksam und wesentliche Unsicherheiten offen ausgewiesen sind.
 
-Download
-
-DOCX/PDF als Archiv- und Exportfassung; Ergänzung, nicht Ersatz des Online-Volltexts
-
-3. Mindeststruktur eines Detailkonzepts
-
-Ein Detailkonzept muss die fachliche Tiefe eines eigenständigen öffentlichen Arbeitspapiers haben. Es ist nicht nur eine Zusammenfassung, sondern die systematische Ausarbeitung des jeweiligen Unterbereichs.
-
-Cover mit Wirkungsökonomie-CD, Autorin Natalie Weber, Version, Status und Stand
-
-Kurzprofil mit Dokumenttyp, Portal, Unterbereich, Öffentlichkeitshinweis und Disclaimer
-
-Inhaltsübersicht
-
-Executive Summary
-
-Ausgangsdiagnose / Problemthese
-
-Alte Logik / bisheriger Maßstab / Markt- oder Staatsversagen
-
-Wirkungsökonomischer Perspektivwechsel
-
-Begriffsdefinitionen und Abgrenzungen
-
-Akteursgruppen und Interessenlage
-
-Wirkungsmodell: Mensch, Planet, Demokratie
-
-SDG-/SDG+-Bezug mit Unterziel-/Indikatorbezug
-
-WÖk-ID-/Scorecard-/NWI-/T-SROI-Bezug
-
-Datenquellen, Messlogik und Datenqualität
-
-Beispiele und Falllogiken
-
-Finanzierungs-, Steuer-, Fonds- oder Anreizbezug
-
-Rechtliche und regulatorische Anschlussstellen heute
-
-Politische Anschlussfähigkeit und Umsetzungsoptionen
-
-Risiken, Zielkonflikte und Missbrauchsschutz
-
-Tool-/Rechner-/Demo-Konzept
-
-Website- und Portalintegration
-
-Fazit
-
-Quellen / Referenzen / weiterführende Links
-
-4. Mindeststruktur eines Dossiers
-
-Ein Dossier ist die praxisnahe Anwendungsebene. Es muss konkreter, beispielorientierter und berechnungsnäher sein als das Detailkonzept.
-
-Cover und Kurzprofil
-
-Was ist das Problem?
-
-Warum ist es wirkungsökonomisch relevant?
-
-Was bedeutet es für Bürger:innen, Unternehmen, Verwaltung, Politik und Kapital?
-
-Konkrete Beispiele
-
-Datenquellen und Indikatoren
-
-Berechnungslogik / Scorecard / T-SROI / NWI / Wirkungsfondsbezug, falls relevant
-
-Beispielrechnung oder Anwendungsszenario
-
-Politische Anschlussfähigkeit
-
-Umsetzungspfade: kurzfristig, mittelfristig, langfristig
-
-Tool-/Rechner-Anwendung
-
-Fragen, Einwände und Missverständnisse
-
-Quellen und weiterführende Links
-
-5. Mindestumfang
-
-Detailkonzept: in der Regel 15-30 Seiten, bei komplexen Themen auch mehr.
-
-Dossier: in der Regel 10-20 Seiten.
-
-Kein Dokument mit 1-3 Seiten darf als Detailkonzept oder Dossier bezeichnet werden.
-
-Kurze Fassungen sind als Kurzüberblick, Executive Summary, Intro oder Teaser zulässig, aber nicht als Hauptdokument.
-
-Jedes Detailkonzept braucht Tabellen, Akteurslogik, Messbezug und politische Anschlussfähigkeit.
-
-Jedes Dossier braucht mindestens ein konkretes Beispiel, eine Daten-/Indikatorlogik und einen Umsetzungspfad.
-
-6. Verbindliche öffentliche Leitplanken
-
-Öffentliche Dokumente enthalten keine CodeX-, Repository- oder internen Umsetzungsanweisungen.
-
-Wirkung wird neutral und relational verwendet; positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet.
-
-Keine Personenbewertung, kein Social Credit, keine technokratische Entscheidungsersetzung.
-
-Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht.
-
-Politische Ausgestaltungsspielräume bleiben sichtbar: Parteien können unterschiedliche Wege wählen.
-
-Quellen, Datenqualität, Unsicherheiten und Grenzen werden offen benannt.
-
-7. Website-Pflichten
-
-Für jedes Detailkonzept und jedes Dossier müssen Website und Download gemeinsam gedacht werden. Der Online-Volltext ist Hauptzugang; DOCX/PDF sind zusätzliche Downloads.
-
-vollständige Online-Fassung mit Inhaltsverzeichnis und Kapitelankern
-
-funktionierende Downloads mit Version, Stand und Status
-
-Toolkarten mit Link oder Status „Demo in Vorbereitung“
-
-mobile-taugliche Navigation und responsive Tabellen
-
-SDG-/SDG+-Badges mit Verlinkung zur Referenzseite
-
-Buchanker und Glossarlinks
-
-Quellenblock und weiterführende Links
-
-Druckfunktion und saubere Druckansicht
-
-8. Sanierungsumfang
-
-Die Sanierung betrifft alle bisher vorbereiteten Ränge 0 bis 13. Die beigefügte Sanierungsmatrix umfasst 168 Unterbereiche. Für jeden Unterbereich sind mindestens ein umfangreiches Detailkonzept, ein umfangreiches Einzeldossier und jeweils eine Online-Volltextfassung erforderlich.
-
-Das bedeutet: Die bisherigen Kurzdokumente sind nicht ausreichend. Sie werden entweder zu echten Ausarbeitungen erweitert oder als Kurzfassungen gekennzeichnet und von den Detail-/Dossier-Downloadplätzen entfernt.
-
-9. Priorisierte Reihenfolge
-
-Rang 0 SDG-/SDG+-Referenzrahmen
-
-Rang 1 Produkte & Konsum / Wirkungsumsatzsteuer
-
-Rang 2 Impact Controlling / T-SROI / WÖk-IDs / Scorecards
-
-Rang 3 Staat, Recht & Demokratie / WStG / Wirkungsrat
-
-Rang 4 Wirtschaft & Unternehmen
-
-Rang 5 Wohnen & Stadt
-
-Rang 6 Arbeit & Einkommen / Automatisierung
-
-Rang 7 Rente & soziale Sicherung
-
-Rang 8 Bildung / Wirkungsschule
-
-Rang 9 Medien, Social Media, Journalismus & Öffentlichkeit
-
-Rang 10 Gesundheit & Pflege
-
-Rang 11 Wissenschaft, Innovation & Digitalisierung
-
-Rang 12 Finanzsystem & Kapital
-
-Rang 13 Klima, Energie & Ressourcen
-
-10. Freigabekriterium
-
-Eine Seite oder ein Unterbereich darf nur als vollständig gelten, wenn Detailkonzept und Dossier umfangreich ausgearbeitet, online vollständig lesbar, downloadbar, mobil geprüft, intern bereinigt und querverlinkt sind.
-
-Alles andere bleibt Entwurf. Das ist die zentrale Korrektur, damit die Website nicht länger Kurzfragmente als ausgearbeitete Konzepte ausgibt.
+Der Text muss auch für Menschen verständlich sein, die die Wirkungsökonomie noch nicht kennen. Fachliche Tiefe zeigt sich durch nachvollziehbare Herleitung und belastbare Anwendung, nicht durch Umfang allein.
