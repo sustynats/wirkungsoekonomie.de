@@ -1,7 +1,136 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-13T10:00:00.000Z",
+  "updated_at": "2026-10-13T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-13-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-13",
+      "window_from": "2026-10-13T10:00:00.000Z",
+      "window_to": "2026-10-13T16:00:00.000Z",
+      "stand": "2026-10-13T16:00:00.000Z",
+      "headline": "Das sind die 14 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 14,
+        "neu": 12,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-bec2ce3860ed8736",
+          "slug": "schulen-amokalarm-an-wuppertaler-gesamtschule-wohl-fehlalarm-ed8736",
+          "title": "Entwarnung nach Amokalarm an zwei Wuppertaler Schulen",
+          "state": "neu",
+          "at": "2026-10-13T15:26:08.377Z",
+          "score": 5.9858
+        },
+        {
+          "story_id": "wt-91b10bab4660c503",
+          "slug": "albrecht-durer-airport-nurnberg-darum-wurden-eurofighter-nach-nurnberg-geschickt-60c503",
+          "title": "Laut DER SPIEGEL: Eurofighter nach Notfallcode über Nürnberg im Einsatz",
+          "state": "neu",
+          "at": "2026-10-13T14:59:16.534Z",
+          "score": 5.8313
+        },
+        {
+          "story_id": "wt-a7bf4a9e63788834",
+          "slug": "schusse-an-franzosischer-schule-antiterror-ermittler-ubernehmen-788834",
+          "title": "Laut stern: Antiterror-Ermittler übernehmen Ermittlungen nach Schüssen an Schule",
+          "state": "neu",
+          "at": "2026-10-13T14:37:27.270Z",
+          "score": 5.7707
+        },
+        {
+          "story_id": "wt-e9ea31d7c48ec772",
+          "slug": "notfall-im-luftverkehr-entwarnung-nach-alarm-an-flughafen-nurnberg-8ec772",
+          "title": "Laut Polizei: Entwarnung nach möglicher Luftnotlage am Flughafen Nürnberg",
+          "state": "neu",
+          "at": "2026-10-13T13:17:32.104Z",
+          "score": 3.5487
+        },
+        {
+          "story_id": "wt-c51005bea8b03505",
+          "slug": "polizeieinsatz-flugzeug-in-nurnberg-nach-unbestatigter-notlage-gelandet-b03505",
+          "title": "Laut stern: Flugzeug landet in Nürnberg nach unbestätigter Notlage",
+          "state": "neu",
+          "at": "2026-10-13T12:50:07.459Z",
+          "score": 3.4726
+        },
+        {
+          "story_id": "wt-6cee47cf9e140791",
+          "slug": "polizeieinsatz-flughafen-nurnberg-gesperrt-mutmassliche-luftnotlage-140791",
+          "title": "Laut Polizei: Flughafen Nürnberg wegen möglicher Luftnotlage gesperrt",
+          "state": "neu",
+          "at": "2026-10-13T12:49:13.862Z",
+          "score": 3.4701
+        },
+        {
+          "story_id": "wt-f8cc8cf4ef5dc8ea",
+          "slug": "polizeieinsatz-flugbetrieb-in-nurnberg-lauft-nach-alarm-wieder-5dc8ea",
+          "title": "Laut stern: Flugbetrieb in Nürnberg läuft nach Alarm wieder",
+          "state": "neu",
+          "at": "2026-10-13T12:25:54.449Z",
+          "score": 5.4053
+        },
+        {
+          "story_id": "wt-44aabce5ec5ee20a",
+          "slug": "sicherheit-flughafen-nurnberg-vorubergehend-gesperrt-polizei-gibt-entwarnung-5ee20a",
+          "title": "Flughafen Nürnberg vorübergehend gesperrt – laut Polizei keine Gefahr",
+          "state": "neu",
+          "at": "2026-10-13T11:54:48.131Z",
+          "score": 3.3189
+        },
+        {
+          "story_id": "wt-f34c0173914470a6",
+          "slug": "sicherheit-flughafen-nurnberg-gesperrt-mogliche-luftnotlage-4470a6",
+          "title": "Flughafen Nürnberg wegen möglicher Luftnotlage gesperrt",
+          "state": "neu",
+          "at": "2026-10-13T11:28:33.362Z",
+          "score": 5.746
+        },
+        {
+          "story_id": "wt-9c3c7b61b182da75",
+          "slug": "nurnberg-flughafen-wegen-mutmasslicher-notlage-gesperrt-82da75",
+          "title": "Laut DER SPIEGEL: Flughafen Nürnberg wegen mutmaßlicher Notlage gesperrt",
+          "state": "neu",
+          "at": "2026-10-13T11:27:25.683Z",
+          "score": 3.2429
+        },
+        {
+          "story_id": "wt-1ae8af7cf2a1745a",
+          "slug": "ukraine-krieg-trump-putin-will-deal-mehr-als-selenskyj-a1745a",
+          "title": "Trump beharrt auf Energie-Waffenruhe und setzt Selenskyj unter Druck",
+          "state": "neu",
+          "at": "2026-10-13T11:03:18.387Z",
+          "score": 7.6759
+        },
+        {
+          "story_id": "wt-c25ac3848c42c932",
+          "slug": "berlin-brandenburg-unbestatigte-luftnotlage-flughafen-nurnberg-gesperrt-42c932",
+          "title": "Laut Tagesspiegel: Flughafen Nürnberg wegen unbestätigter Luftnotlage gesperrt",
+          "state": "neu",
+          "at": "2026-10-13T10:36:29.178Z",
+          "score": 5.1014
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut Tagesspiegel: Ölpreisschock setzt EZB unter Zinserhöhungsdruck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T10:14:26.635Z",
+          "score": 4.7901
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T10:13:29.937Z",
+          "score": 4.7875
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-13-mittagslage",
       "slot": "mittagslage",

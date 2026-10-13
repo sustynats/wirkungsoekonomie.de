@@ -3,11 +3,12 @@ import path from "node:path";
 import { publicHtmlFiles } from '../lib/public-html.mjs';
 import { renderSiteHeader } from '../lib/site-shell.mjs';
 
-const ROOT = process.cwd();
+const PROJECT_ROOT = process.cwd();
+const ROOT = process.argv.includes("--artifact") ? path.join(PROJECT_ROOT, "_site") : PROJECT_ROOT;
 // Optional prefixes let partial content builds use the shared navigation rules.
 const prefixes = process.argv.slice(2).filter(arg => arg.startsWith("--prefix=")).map(arg => arg.slice(9));
 const CSS_VERSION = "20260628-radar-toc";
-const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
+const navigation = JSON.parse(fs.readFileSync(path.join(PROJECT_ROOT, "assets/data/navigation.json"), "utf8"));
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"]/g, (char) => ({
@@ -119,10 +120,11 @@ function headerFiles() {
   return publicHtmlFiles(ROOT).filter(file => {
     const relative = path.relative(ROOT, file).replaceAll('\\', '/');
     if (prefixes.length && !prefixes.some(prefix => relative.startsWith(prefix))) return false;
+    // The English edition remains offline and outside the current release.
+    if (isEnglishFile(file)) return false;
     const html = fs.readFileSync(file, 'utf8');
     if (/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html)) return false;
-    // Preserve the existing pipeline for the deferred locale exactly.
-    return !isEnglishFile(file) || html.includes('<header class="site-header"');
+    return true;
   });
 }
 
