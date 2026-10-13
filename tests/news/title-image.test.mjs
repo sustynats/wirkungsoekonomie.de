@@ -52,7 +52,7 @@ test("Editorial rendert Motiv, Kennzeichnung und eingebettete Fonts", () => {
   assert.equal(result.mode, "editorial");
   assert.equal(result.height, 675);
   assert.match(result.svg, /<image href="data:image\/svg\+xml;base64,/);
-  assert.match(result.svg, /KI-generiertes Symbolbild/);
+  assert.match(result.svg, /Symbolbild/);
   assert.match(result.svg, /@font-face\{font-family:"Source Serif 4";font-weight:700/);
   assert.match(result.svg, /url\(data:font\/woff2;base64,/);
   assert.match(result.svg, /TRAGWEITE &amp; RICHTUNG/);
@@ -72,7 +72,7 @@ test("Editorial panel shares card coordinates in all sizes, including headline-f
     assert.match(editorial.svg, /Mensch/);
     assert.match(editorial.svg, /Planet/);
     assert.match(editorial.svg, /Demokratie/);
-    assert.match(editorial.svg, /KI-generiertes Symbolbild/);
+    assert.match(editorial.svg, /Symbolbild/);
   }
 });
 
