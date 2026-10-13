@@ -7,7 +7,7 @@ export function authorPerspectiveHeader({heading = '<h2>Meine Einordnung</h2>', 
 }
 
 export function renderEditorialSection(section, portraitOptions = {}) {
-  const personal = section.title === 'Meine Einordnung';
+  const personal = section.title === 'Meine Einordnung' || section.title === 'Meine persönliche Einordnung';
   let html = section.html;
   if (personal) html = html.replace(/^<h2>[^]*?<\/h2>/, heading => authorPerspectiveHeader({...portraitOptions, heading}));
   return `<section class="news-editorial-article__section${personal ? ' news-author-perspective' : ''}" id="${escape(section.id)}"${personal ? ' aria-label="Persönliche Einordnung der Autorin"' : ''}>${html}</section>`;
