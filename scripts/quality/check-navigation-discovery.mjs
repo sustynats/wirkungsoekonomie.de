@@ -85,6 +85,9 @@ console.log(`Navigation and discovery check passed (${search.length} search resu
 // Measure the delivered artifact only when explicitly requested after its build.
 // Source checks above remain mandatory in both modes.
 if (process.argv.includes('--report')) {
+  const redirectLinks = spawnSync('node', ['scripts/quality/normalize-internal-redirect-links.mjs', '--artifact', '--check'], { cwd: root, stdio: 'inherit' });
+  if (redirectLinks.error) throw redirectLinks.error;
+  if (redirectLinks.status !== 0) process.exit(redirectLinks.status || 1);
   const args = ['scripts/quality/navigation-report.py', '--root', '_site',
     '--output', 'reports/navigation/latest.json', '--markdown', 'reports/navigation/latest.md',
     '--compare', 'reports/navigation/baseline-p1-5.json'];
