@@ -304,7 +304,7 @@ code{overflow-wrap:anywhere}
   <nav class="breadcrumb" aria-label="Pfad">
     <ol><li><a href="../../">Startseite</a></li><li><a href="../../werkzeuge/">Praxis &amp; Tools</a></li><li aria-current="page">Wirkungswahl-Kompass</li></ol>
   </nav>
-  <main id="main"><div class="wrap" id="view" tabindex="-1"></div></main>
+  <main id="main"><div class="wrap" id="view" tabindex="-1"><div class="eyebrow">Wirkungswahl-Kompass</div><h1>Wo du stehst. Was Parteien vorschlagen. Was daraus folgen kann.</h1></div></main>
   <footer class="foot" id="foot"></footer>
 </div>
 
@@ -427,6 +427,7 @@ function partyStance(pid,qid){const p=POSBY[qid]&&POSBY[qid][pid];return p&&type
 
 /* ---- HTML-Helfer ---- */
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const h1=s=>'<h1>'+esc(s)+'</h1>';
 function dimChip(id){return `<span class="chip"><span class="sw" style="background:${dimVar(id)}"></span>${esc(DIM_SHORT[id]||id)}</span>`;}
 function pTag(p){return S.reveal?esc(p.name):'Partei '+p.code;}
 function pxBadge(px){const m={hoch:'px-hoch',mittel:'px-mittel',gering:'px-gering',gegen:'px-gegen',keine:'px-keine'}[px.key];
@@ -468,7 +469,7 @@ const SCREENS={
  landing(){const on=DATA.resultCopy.onboarding||[];return `
   ${demoNote}
   <div class="eyebrow">Wirkungswahl-Kompass</div>
-  <h1>${esc(DATA.meta.claim)}</h1>
+  ${h1(DATA.meta.claim)}
   ${on.length?`<div class="card">${on.map(l=>`<p style="margin:.2em 0 .6em">${esc(l)}</p>`).join('')}</div>`:''}
   <div class="grid2" style="margin:14px 0">
     <div class="card" style="margin:0"><div class="eyebrow" style="color:var(--green)">Der Kompass ist</div><ul style="margin:0;padding-left:18px">
