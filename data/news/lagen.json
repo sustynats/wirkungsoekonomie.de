@@ -1,7 +1,125 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-12T16:00:00.000Z",
+  "updated_at": "2026-10-13T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-13-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-13",
+      "window_from": "2026-10-12T16:00:00.000Z",
+      "window_to": "2026-10-13T04:00:00.000Z",
+      "stand": "2026-10-13T04:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 5,
+        "fortgeschrieben": 7
+      },
+      "entries": [
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut Tagesspiegel: Ölpreisschock setzt EZB unter möglichen Zinserhöhungsdruck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T03:45:07.783Z",
+          "score": 5.7293
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer nordkoreanischen Mine verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T02:27:12.477Z",
+          "score": 5.6211
+        },
+        {
+          "story_id": "wt-b65b40659fb03efc",
+          "slug": "schusswaffenangriff-eines-14-jahrigen-in-frankreich-zwei-verletzte-b03efc",
+          "title": "Schusswaffenangriff in Südfrankreich: Laut Polizei wurden ein Schulleiter und eine Lehrerin verletzt",
+          "state": "neu",
+          "at": "2026-10-13T00:23:27.900Z",
+          "score": 4.1993
+        },
+        {
+          "story_id": "wt-f08e02f92e2263a8",
+          "slug": "hochwasser-zugang-zu-iguazu-wasserfallen-fur-touristen-gesperrt-2263a8",
+          "title": "Laut stern: Zugang zu den Iguazú-Wasserfällen wegen Hochwassers gesperrt",
+          "state": "neu",
+          "at": "2026-10-12T22:04:01.268Z",
+          "score": 5.5056
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Laut SWR Aktuell: Tankrabatt tritt in Kraft; Spritpreise fallen zunächst",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T21:03:28.171Z",
+          "score": 7.6715
+        },
+        {
+          "story_id": "wt-77f80de1a304012e",
+          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
+          "title": "Laut Deutschlandfunk: Selenskyj erneuert Angebot für begrenzte Waffenruhe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T20:39:06.661Z",
+          "score": 5.1377
+        },
+        {
+          "story_id": "wt-7e0c6dae20a00105",
+          "slug": "behorden-mindestens-zwolf-tote-und-309-verletzte-bei-angriff-auf-flughafen-riad-a00105",
+          "title": "Nach Behördenangaben: Mindestens zwölf Tote und 309 Verletzte bei Angriff auf Flughafen Riad",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T19:30:08.183Z",
+          "score": 9.5419
+        },
+        {
+          "story_id": "wt-674fd7c83613c36d",
+          "slug": "russlands-google-drohnenangriff-beschadigt-jandex-rechenzentrum-13c36d",
+          "title": "Laut AFP: Drohnenangriff beschädigt Jandex-Rechenzentrum",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T18:45:54.098Z",
+          "score": 4.9804
+        },
+        {
+          "story_id": "wt-89cefa5bf1295153",
+          "slug": "schusse-am-rathaus-tuttlingen-27-jahriger-stirbt-295153",
+          "title": "27-Jähriger stirbt nach mutmaßlichem Schusswechsel in Tuttlingen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-12T18:22:00.076Z",
+          "score": 9.4472
+        },
+        {
+          "story_id": "wt-f8dc30e634d24a7a",
+          "slug": "huthi-anschlag-aufnahmen-zeigen-gewaltige-explosion-in-flughafen-von-riad-d24a7a",
+          "title": "Laut stern: Aufnahmen zeigen Explosion am Flughafen von Riad",
+          "state": "neu",
+          "at": "2026-10-12T17:33:06.262Z",
+          "score": 7.1293
+        },
+        {
+          "story_id": "wt-cae808f5b42a6478",
+          "slug": "mehrere-fahrzeuge-und-fensterscheiben-beschadigt-berliner-polizei-ermittelt-nach-mutmass-2a6478",
+          "title": "Mehrere Fahrzeuge und Fensterscheiben beschädigt: laut Berliner Polizei wird nach mutmaßlicher Sprengstoffexplosion in Charlottenburg ermittelt",
+          "state": "neu",
+          "at": "2026-10-12T16:17:43.538Z",
+          "score": 3.0246
+        },
+        {
+          "story_id": "wt-ffbc1ca2c1bb4cb4",
+          "slug": "polizei-totet-mann-in-rathaus-in-tuttlingen-waffe-des-27-jahrigen-war-wohl-nur-spielzeug-bb4cb4",
+          "title": "Laut SWR: Polizei erschießt 27-Jährigen in Tuttlingen – Waffe war wohl Knallpistole",
+          "state": "neu",
+          "at": "2026-10-12T16:16:46.515Z",
+          "score": 7.0233
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-13T04:01:49.696Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-12-abendlage",
       "slot": "abendlage",
