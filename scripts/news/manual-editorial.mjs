@@ -39,7 +39,10 @@ export function parseManualFrontmatter(source) {
 export function manualEdition(record, source, { root } = {}) {
   if (record.format !== BOOK_FORMAT || record.manual_only !== true || record.editorial_mode !== "manual_manuscript") fail("MANUAL_PUBLICATION_AUTHORITY_REQUIRED");
   if (record.sha256 !== sha(source)) fail("MANUAL_MANUSCRIPT_HASH_MISMATCH");
-  const { data: fm, body } = parseManualFrontmatter(source);
+  const { data: originalFm, body } = parseManualFrontmatter(source);
+  const attachment = record.source_layout === 'approved_attachment';
+  if (attachment && (record.publication_approved !== true || !record.approval_basis || originalFm.author !== EDITORIAL_AUTHOR.name)) fail('MANUAL_PUBLICATION_AUTHORITY_REQUIRED');
+  const fm = attachment ? { ...originalFm, ...record.publication_metadata } : originalFm;
   if (fm.content_type === 'Autorinnenbeitrag') return manualAuthorEdition(record, source, { fm, body, root });
   if (fm.manual_only !== true || fm.format !== "Buch & Wirkung" || fm.content_type !== "buchbesprechung"
     || fm.section !== "Meinung & Analyse" || fm.author_profile !== "reuse_existing_meinung_analyse_profile") fail("MANUAL_FORMAT_INVALID");
@@ -50,11 +53,11 @@ export function manualEdition(record, source, { root } = {}) {
     || !["published", "draft"].includes(record.status)) fail("MANUAL_PUBLICATION_METADATA_INVALID");
   // These exact duplicated Markdown masthead blocks are represented by the
   // shared hero/byline. No prose is shortened, rewritten or normalized.
-  const subtype = /\*\*Buch & Wirkung · (Grundlagenbuch|Romanbesprechung|Thrillerbesprechung|Buchbesprechung)\*\*/.exec(body)?.[1];
+  const subtype = attachment ? 'Buchbesprechung' : /\*\*Buch & Wirkung · (Grundlagenbuch|Romanbesprechung|Thrillerbesprechung|Buchbesprechung)\*\*/.exec(body)?.[1];
   if (!subtype) fail("MANUAL_MASTHEAD_MISMATCH");
   // Match exact text blocks, allowing the author's blank-line spacing. The
   // signed original is never normalized or rewritten.
-  const masthead = [`# ${fm.title}`, `**Buch & Wirkung · ${subtype}**`, `*${fm.subtitle}*`];
+  const masthead = attachment ? [`# ${fm.title}`] : [`# ${fm.title}`, `**Buch & Wirkung · ${subtype}**`, `*${fm.subtitle}*`];
   let articleBody = body.trimStart();
   if (fm.spoiler_note) {
     const label = body.includes(`> **Spoiler-Hinweis:** ${fm.spoiler_note}`) ? 'Spoiler-Hinweis' : 'Hinweis';
@@ -64,9 +67,9 @@ export function manualEdition(record, source, { root } = {}) {
     if (!articleBody.startsWith(block + '\n')) fail("MANUAL_MASTHEAD_MISMATCH");
     articleBody = articleBody.slice(block.length).trimStart();
   }
-  const rendered = renderEditorialMarkdown(articleBody, { authoredVisualLabels: record.visual_labels || {} });
+  const rendered = renderEditorialMarkdown(articleBody, { authoredVisualLabels: record.visual_labels || {}, sectionDiagrams: record.section_diagrams || [] });
   const bookSection = rendered.sections.find(s => s.title === "Das Buch");
-  if (!bookSection || !rendered.sections.some(s => s.title === "Meine Einordnung")) fail("MANUAL_BOOK_SECTIONS_REQUIRED");
+  if ((!attachment && !bookSection) || !rendered.sections.some(s => s.title === "Meine Einordnung" || (attachment && s.title === "Meine persönliche Einordnung"))) fail("MANUAL_BOOK_SECTIONS_REQUIRED");
   const cover = record.book_cover;
   if (!cover || !safeFile(cover.file) || !/^https:\/\//.test(cover.source || "") || !cover.credit || !/^[a-f0-9]{64}$/.test(cover.sha256 || "")) fail("MANUAL_OFFICIAL_COVER_REQUIRED");
   if (root) {
@@ -159,7 +162,7 @@ export function renderManualArticle(analysis) {
   const cover = analysis.book;
   const contents = `<details class="news-editorial-toc"><summary>${analysis.self_authored_work ? 'Inhalt des Autorinnenbeitrags' : 'Inhalt der Buchbesprechung'}</summary><ol>${analysis.rendered.headings.filter(h => h.level === 2).map(h => `<li><a href="#${h.id}">${escape(h.title)}</a></li>`).join("")}</ol></details>`;
   return contents + analysis.rendered.sections.map(s => {
-    const personal = s.title === "Meine Einordnung", book = s.title === "Das Buch";
+    const personal = s.title === "Meine Einordnung" || s.title === "Meine persönliche Einordnung", book = s.title === "Das Buch";
     if (personal) return renderEditorialSection(s, {portrait: analysis.author.image, portraitAlt: analysis.author.image_alt});
     return `<section class="news-editorial-article__section${personal ? " news-author-perspective" : ""}${book ? " news-book-metadata" : ""}" id="${s.id}"${personal ? ' aria-label="Persönliche Einordnung der Autorin"' : ""}>${book ? `<figure class="news-book-cover"><img src="${escape(cover.cover)}" width="${cover.coverWidth}" height="${cover.coverHeight}" alt="Offizielles Cover: ${escape(cover.title)} von ${escape(cover.author)}" loading="lazy" decoding="async"><figcaption><a class="text-link" href="${escape(cover.coverSource)}" target="_blank" rel="noopener noreferrer">${escape(cover.coverCredit)}</a></figcaption></figure><div>${s.html}</div>` : s.html}</section>`;
   }).join("\n");
