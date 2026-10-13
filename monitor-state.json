@@ -12,6 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "institute": {
+      "firstSeen": "2026-10-13T12:51:05.033Z",
+      "active": false
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-13T12:51:05.033Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2610,11 +2618,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nurnberg-flughafen-wegen-mutmasslicher-notlage-gesperrt-82da75/": {
         "first_seen_at": "2026-10-13T12:06:23.000Z",
         "source_at": "2026-10-13T11:06:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sicherheit-flughafen-nurnberg-vorubergehend-gesperrt-polizei-gibt-entwarnung-5ee20a/": {
+        "first_seen_at": "2026-10-13T12:51:05.033Z",
+        "source_at": "2026-10-13T11:35:02.000Z"
       }
     },
-    "last_new_at": "2026-10-13T12:06:23.000Z",
-    "checked_at": "2026-10-13T12:35:53.399Z",
-    "last_current_new_at": "2026-10-13T12:06:23.000Z"
+    "last_new_at": "2026-10-13T12:51:05.033Z",
+    "checked_at": "2026-10-13T12:51:05.033Z",
+    "last_current_new_at": "2026-10-13T12:51:05.033Z"
   },
   "recovery_attempts": [
     {
