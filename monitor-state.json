@@ -16,9 +16,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-13T06:53:09.209Z",
       "active": true
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-13T08:03:13.877Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "46037c4a8e2599e3d9e7e00c",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-13T08:03:13.877Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-13",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2590,11 +2599,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/schusswaffenangriff-eines-14-jahrigen-in-frankreich-zwei-verletzte-b03efc/": {
         "first_seen_at": "2026-10-13T00:51:19.740Z",
         "source_at": "2026-10-12T22:16:53.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-mehrere-schusse-auf-geschaft-in-kolner-innenstadt-abgegeben-883cae/": {
+        "first_seen_at": "2026-10-13T08:03:13.877Z",
+        "source_at": "2026-10-13T07:13:49.000Z"
       }
     },
-    "last_new_at": "2026-10-13T00:51:19.740Z",
-    "checked_at": "2026-10-13T07:51:01.511Z",
-    "last_current_new_at": "2026-10-13T00:51:19.740Z"
+    "last_new_at": "2026-10-13T08:03:13.877Z",
+    "checked_at": "2026-10-13T08:03:13.877Z",
+    "last_current_new_at": "2026-10-13T08:03:13.877Z"
   },
   "recovery_attempts": [
     {
