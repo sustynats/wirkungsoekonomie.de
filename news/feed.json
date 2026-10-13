@@ -3753,7 +3753,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "title": "Laut stern: Explosion im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere schwer",
-      "summary": "Eine Explosion im koreanischen Grenzgebiet verletzte laut stern drei südkoreanische Offiziere schwer. Die südkoreanische Verantwortungszuschreibung und mögliche Folgen für die Sicherheitslage sind nicht unabhängig bestätigt.",
+      "summary": "Eine Mine verletzte laut stern drei südkoreanische Offiziere schwer; einer verlor seinen Fuß. Hergang, Verantwortungszuschreibung und angekündigte Reaktion sind nicht unabhängig bestätigt.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -3772,13 +3772,13 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 0,
+          "magnitude": 1,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "mixed",
+          "direction": "negative",
           "status": "potential"
         }
       }
@@ -5639,8 +5639,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-gegenseitige-angriffe-auf-infrastruktur-und-industrieanlagen-06eaef/",
-      "title": "Russland und Ukraine setzen gegenseitige Angriffe auf Infrastruktur fort",
-      "summary": "Der Deutschlandfunk berichtet über fortgesetzte gegenseitige Angriffe sowie gemeldete Verletzte und einen Todesfall. Reichweite und Folgen für Infrastruktur, Versorgung und Institutionen bleiben offen.",
+      "title": "Gegenseitige Angriffe auf Infrastruktur fortgesetzt, laut Deutschlandfunk 45 Menschen verletzt",
+      "summary": "Russland und die Ukraine setzen laut Deutschlandfunk gegenseitige Angriffe auf Infrastruktur fort. Gemeldete Verletzte und ein Todesfall sind nicht unabhängig bestätigt; Umfang und Dauer möglicher Schäden bleiben offen.",
       "date_published": "2026-09-25T10:36:12.000Z",
       "date_modified": "2026-09-25T10:36:12.000Z",
       "_woek_released_at": "2026-09-25T07:14:49.473Z",
@@ -5657,7 +5657,7 @@
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
@@ -7013,6 +7013,38 @@
         "democracy": {
           "magnitude": 2,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/trump-and-zelensky-discuss-path-to-ending-ukraine-war-49bef9/",
+      "title": "Laut France 24: Trump und Selenskyj sprechen in New York über Wege zum Ende des Ukraine-Kriegs",
+      "summary": "Das Treffen von Trump und Selenskyj eröffnet laut France 24 mögliche Gesprächspfade zu Kriegsende, Energieinfrastruktur und einer zeitweiligen Waffenruhe. Belegt sind weder eine verbindliche Vereinbarung noch eine eingetretene Veränderung der Angriffslage.",
+      "date_published": "2026-09-23T09:30:31.000Z",
+      "date_modified": "2026-09-23T09:30:31.000Z",
+      "_woek_released_at": "2026-09-23T10:12:19.347Z",
+      "tags": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
           "status": "potential"
         }
       }
@@ -10697,6 +10729,37 @@
         },
         "planet": {
           "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-mehrere-opfer-bei-gegenseitigen-angriffen-f04271/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-mehrere-opfer-bei-gegenseitigen-angriffen-f04271/",
+      "title": "Laut Deutschlandfunk mehrere Tote und Verletzte bei gegenseitigen Angriffen in der Ukraine",
+      "summary": "Der Deutschlandfunk berichtet über Tote und Verletzte nach erneuten Angriffen in mehreren Regionen der Ukraine. Das Ausmaß der Schäden und die unabhängige Bestätigung der Angaben bleiben offen.",
+      "date_published": "2026-09-18T16:54:18.000Z",
+      "date_modified": "2026-09-18T16:54:18.000Z",
+      "_woek_released_at": "2026-09-18T17:12:08.525Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
