@@ -332,7 +332,19 @@ export function normalizeEditorialPreview(preview, { links = [], attachments = [
     const title = String(preview.title || '').replace(/\s+/g, ' ').trim().toLowerCase();
     const lines = preview.markdown.replace(/^\uFEFF/, '').split('\n');
     const kept = [];
+    let personalSection = false;
     for (const line of lines) {
+      if (/^##\s+Meine Einordnung\s*$/.test(line)) personalSection = true;
+      // Formale Sendungsmetadaten duerfen nach der persoenlichen Einordnung
+      // stehen. Dieselbe kanonische Ueberschrift versteht auch der bestehende
+      // Oracle-Import; keine neue Hauptsektion oder inhaltliche Umschreibung.
+      if (personalSection && ['listened', 'watched'].includes(preview.format)
+        && preview.source_media?.show && preview.source_media?.episode_title
+        && /^https:\/\//.test(preview.source_media?.original_url || '')
+        && /^\d{4}-\d{2}-\d{2}/.test(preview.source_media?.original_release_date || '')
+        && /^##\s+Sendungsdaten\s*$/i.test(line)) {
+        kept.push('## Originalfolge'); repairs.push('markdown:Sendungsmetadaten als Originalfolge kanonisiert'); continue;
+      }
       if (/^##\s+Quellen und Werkmetadaten\s*$/i.test(line)) {
         kept.push('## Quellen'); repairs.push('markdown:Quellenüberschrift kanonisiert'); continue;
       }
@@ -449,6 +461,73 @@ export async function recoverCachedEditorialOutputs(session, rows, at) {
       await session.store.observe(`github-editorial-recovery:${id}`, { job_id: id, at, original_output_hash: correction.original_output_hash,
         output_hash: hash(validated), repairs, provider_called: false, cost_usd: 0, status: 'OUTPUT_DELIVERED_NOT_PUBLISHED' });
       recovered.push({ job_id: id, status: 'cached_output_redelivered', provider_called: false, repairs });
+    } catch (error) {
+      recovered.push({ job_id: id, status: 'cached_output_still_invalid', error: String(error.message).slice(0, 100) });
+    }
+  }
+  return recovered;
+}
+
+// Bezahlte Antworten, die schon VOR der Zustellung an der Schlussstruktur
+// scheiterten, liegen unveraendert in 95_LOGS. Nur dieser belegte Formatfehler
+// ist hier reparierbar: kein Reset, keine neue Modellanfrage, kein HOLD-Upgrade.
+export async function recoverUnsentEditorialAnswers(session, rows, at) {
+  const recovered = [];
+  let entries = null, superseded = null;
+  for (const row of rows.filter(r => r.input?.job_type === 'editorial_request'
+    && r.status === 'queued' && !r.ack && !r.accepted).slice(0, 10)) {
+    const id = row.input.job_id;
+    if (!JOB_ID.test(id || '')) continue;
+    try {
+      const attempt = await session.store.observation(`github-attempt:${id}`);
+      if (!attempt?.provider_called || attempt.status !== 'validation_failed'
+        || !/^EDITORIAL_FINAL_PERSPECTIVE_REQUIRED(?:\n|$)/.test(attempt.error || '')) continue;
+      superseded ||= await supersededCandidates(session, selectEditorialRequests(rows, { limit: 30 }));
+      if (superseded.has(id)) continue;
+      const job = await session.store.get(id);
+      const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
+      if (!job || job.status !== 'queued' || job.ack || job.accepted
+        || await session.transport.metadata(outputPath)
+        || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) continue;
+      entries ||= await session.transport.list('95_LOGS');
+      const pattern = new RegExp(`^editorial-answer-${id}-([a-f0-9]{64})\\.json$`);
+      const archives = [];
+      for (const entry of entries.filter(e => pattern.test(e.name)).slice(0, 4)) {
+        const archivePath = bridgePath('95_LOGS', entry.name);
+        const record = JSON.parse(await session.transport.read(archivePath));
+        if (hash(record) !== pattern.exec(entry.name)[1]) throw Error('EDITORIAL_CACHED_OUTPUT_CHANGED');
+        if (record.job_id !== id || record.input_hash !== job.input.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
+        if (record.output?.preview && !record.output.disposition) archives.push({ record, archivePath });
+      }
+      archives.sort((a, b) => (b.record.pass || 0) - (a.record.pass || 0)
+        || String(b.record.at || '').localeCompare(String(a.record.at || '')));
+      let restored = false;
+      for (const { record, archivePath } of archives) {
+        const output = { ...structuredClone(record.output), schema_version: '1.0',
+          job_id: id, input_hash: job.input.input_hash, processed_at: at };
+        const repairs = [];
+        if (job.intake?.revision_target) bindeKorrekturfassung(output.preview, job.intake, repairs);
+        normalizeEditorialPreview(output.preview, { links: job.input.request?.links || [],
+          attachments: job.input.request?.attachments || [], repairs });
+        if (!repairs.includes('markdown:Sendungsmetadaten als Originalfolge kanonisiert')) continue;
+        if (job.input.request?.research_repair && !(record.web_searches > 0)) continue;
+        const validated = validateEditorialDelivery(output, job.input, at);
+        const latest = await session.store.get(id);
+        if (!latest || latest.status !== 'queued' || latest.input.input_hash !== job.input.input_hash || latest.ack || latest.accepted
+          || await session.transport.metadata(outputPath)
+          || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) break;
+        await session.transport.writeAtomic(outputPath, validated);
+        if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw Error('EDITORIAL_DELIVERY_READBACK_FAILED');
+        await session.store.observe(`github-editorial-recovery:${id}`, { job_id: id, at,
+          archive_path: archivePath, original_output_hash: hash(record), output_hash: hash(validated),
+          repairs, provider_called: false, cost_usd: 0, status: 'OUTPUT_DELIVERED_NOT_PUBLISHED' });
+        await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, {
+          ...attempt, status: 'output_delivered', disposition: 'preview', at,
+          recovered_without_provider: true, recovered_from_archive: archivePath }, attempt);
+        recovered.push({ job_id: id, status: 'cached_output_redelivered', provider_called: false, repairs });
+        restored = true; break;
+      }
+      if (!restored) recovered.push({ job_id: id, status: 'cached_output_still_invalid', error: 'EDITORIAL_CACHED_FORMAT_NOT_REPAIRABLE' });
     } catch (error) {
       recovered.push({ job_id: id, status: 'cached_output_still_invalid', error: String(error.message).slice(0, 100) });
     }
@@ -661,7 +740,10 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // weiteren Modellaufruf und dürfen deshalb nicht am Durchsatzlimit hängen.
     const editorialRows = () => typeof store.editorialJobs==='function' ? store.editorialJobs() : store.all();
     const rows = await editorialRows();
-    const recoveredOutputs = await recoverCachedEditorialOutputs(live, rows, now());
+    const recoveredOutputs = [
+      ...await recoverCachedEditorialOutputs(live, rows, now()),
+      ...await recoverUnsentEditorialAnswers(live, rows, now()),
+    ];
     // Ein Auftrag in der Ablage ohne Paket im Postfach war am 17.09.2026 das
     // Ende der ganzen Spur: processEditorialRequest liest das Paket, brach mit
     // BRIDGE_DROPBOX_NOT_FOUND ab und nahm den Lauf mit. Die Reparatur gehoert
