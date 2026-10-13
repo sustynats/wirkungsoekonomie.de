@@ -13,16 +13,17 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "institute": {
-      "firstSeen": "2026-10-13T12:51:05.033Z",
-      "active": false
-    },
     "editorial-coverage": {
       "firstSeen": "2026-10-13T12:51:05.033Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ed339e7115dbbf10d2e05470",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 5 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-13T12:51:05.033Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-13",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2622,11 +2623,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/sicherheit-flughafen-nurnberg-vorubergehend-gesperrt-polizei-gibt-entwarnung-5ee20a/": {
         "first_seen_at": "2026-10-13T12:51:05.033Z",
         "source_at": "2026-10-13T11:35:02.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizeieinsatz-flugbetrieb-in-nurnberg-lauft-nach-alarm-wieder-5dc8ea/": {
+        "first_seen_at": "2026-10-13T13:06:28.712Z",
+        "source_at": "2026-10-13T12:08:04.000Z"
       }
     },
-    "last_new_at": "2026-10-13T12:51:05.033Z",
-    "checked_at": "2026-10-13T12:51:05.033Z",
-    "last_current_new_at": "2026-10-13T12:51:05.033Z"
+    "last_new_at": "2026-10-13T13:06:28.712Z",
+    "checked_at": "2026-10-13T13:06:28.712Z",
+    "last_current_new_at": "2026-10-13T13:06:28.712Z"
   },
   "recovery_attempts": [
     {
