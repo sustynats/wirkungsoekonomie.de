@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "proof": [
+    {
+      "volume": "II",
+      "sourceSha256": "c3b4164e1f35f2ff00121e3f5be441f6db89ebde7e880ffcdde1350d6a53673f",
+      "freshDerivationSha256": "c6601999434aa2c139718e00c70d1d577a4a4d7a5ba5f6744787994b5b11ecbb",
+      "currentDocxSha256": "719591ca2b5a51985a4384d602555f20ecd0fbbf192412d5bc4056f88b18b70c",
+      "identicalZipParts": 31,
+      "tocEntries": 73,
+      "onlyPermittedDifference": "Existing TOC page-number text; body, tables, relationships, media and other parts identical"
+    },
+    {
+      "volume": "I",
+      "sourceSha256": "dea6cc852ba41a56b34fc0a7c7ea5367f3f7c56a607df43a09007f6ee035e643",
+      "freshDerivationSha256": "0e02e668cfeedf2adec2b461fffaf6a95e0ec2e192195cb5c5976c58c2272d9d",
+      "currentDocxSha256": "5938a75439fa77b08369cf4e3cea76dc9b2904fe558bdc5643739b12fded9d27",
+      "identicalZipParts": 71,
+      "tocEntries": 75,
+      "onlyPermittedDifference": "Existing TOC page-number text; body, tables, relationships, media and other parts identical"
+    }
+  ],
+  "correctionsSourceSha256": "d9acbef63f246391a5ec4a018bce149da33647d9c49c752edf9a3ba771a06b4b",
+  "figureSourceSha256": "d3b14b027b68654e9f43274be64715377897925ee4306787d6f4f3452d1b530a",
+  "tocVerified": [
+    {
+      "volume": "II",
+      "entries": 73,
+      "reportSha256": "149c9a48f1c07f82d86168e8cfa79147d4d07789111e6dc2082aedae73f77638"
+    },
+    {
+      "volume": "I",
+      "entries": 75,
+      "reportSha256": "a42572feaebf98b29d6ccdc60a5c8cd91cfb32ab9843907f60bffead38ebfb63"
+    }
+  ]
+}

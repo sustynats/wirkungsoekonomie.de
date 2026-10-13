@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-13",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+      "beforeSha256": "0e6caa3413253871212bfdeb23967b915c788a6c79866752f92ba893594057a9",
+      "afterSha256": "81488fb377a59efd91309d7c63edb7aae16eb206e59a248c90f22cb330eefe66",
+      "pages": 64,
+      "changedVisualPages": [
+        4
+      ],
+      "removedBlocks": [
+        {
+          "page": 4,
+          "text": "Das Dossier ist als 100-Seiten-Arbeitsfassung aufgebaut: von der Theorie über die fünf Wellen bis zur konkreten Website- und Debattenkartenlogik."
+        }
+      ]
+    },
+    {
+      "path": "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+      "beforeSha256": "f88174a275adddc68fbd7b496480aad4236e83910adc9b2c2e3886843e5357c4",
+      "afterSha256": "ae422fb64fbb6b1c55eeb0be26c7341504606f451e4fae77f5f1cccec6169068",
+      "pages": 33,
+      "changedVisualPages": [
+        19
+      ],
+      "removedBlocks": [
+        {
+          "page": 19,
+          "text": "Das Thema sollte nicht nur im Glossar erscheinen. Doppelte Wesentlichkeit ist ein Knotenpunkt für mehrere Bereiche der Website: Verstehen, Glossar, Methoden, Unternehmen, Lieferketten, Daten, Impact-Controlling, Risikomanagement, Resilienz und Wirkungsökonomie."
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "pages": 97,
+    "changedVisualPages": 2,
+    "removedBlocks": 2
+  }
+}

@@ -59,13 +59,6 @@ class ReaderSections:
                     return abs(candidates[-1] - destination.y) if candidates else float('inf')
                 positions.sort(key=distance)
         pos = positions[0] if positions else -1
-        if pos < 0 and title in {
-            '14. Führende Mini-Definitionen für Hover, Glossar und CodeX',
-            '7. Mindestanforderungen in Codex',
-        }:
-            # Historical privacy redaction removed the production label from
-            # the PDF body, but preserved its outline and public chapter URL.
-            return self.locate({**entry, 'title': title.rsplit(' ', 1)[0], 'source_title': title.rsplit(' ', 1)[0]}, after=after)
         if pos < 0 and title.startswith('Slide ') and title[6:].isdigit():
             return self.offsets[page], self.offsets[page]
         if pos < 0 and title == 'Leitfragen' and 'aktuelle T-SROI-Einordnung v1.1' in self.pages[page]:

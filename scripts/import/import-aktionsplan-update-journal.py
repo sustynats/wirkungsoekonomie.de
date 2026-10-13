@@ -44,7 +44,7 @@ DATE_ISO = "2026-10-05T12:00:00+02:00"
 SECTION = "Nachhaltigkeit & Regierungssteuerung"
 HERO_IMAGE = "2026-10-05-aktionsplan-nachhaltigkeit-detailliertes-update-2026.png"
 HERO_ALT = (
-    "KI-generierte redaktionelle Titelillustration zum detaillierten Update des Aktionsplans "
+    "Titelillustration zum detaillierten Update des Aktionsplans "
     "Nachhaltigkeit mit Berliner Regierungsgebäuden, fünf Handlungsfeldern und 20 Missionen. "
     "Keine amtliche Veröffentlichung der Bundesregierung."
 )
@@ -441,7 +441,7 @@ def write_article(source_sha: str, image_sha: str) -> None:
     <p class="meta">{esc(meta)}</p>
     <p class="meta">{esc(meta_update)}</p>
   </div>
-  <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{HERO_IMAGE}" width="1672" height="941" alt="{esc(HERO_ALT)}" decoding="async" fetchpriority="high"><figcaption>KI-generierte redaktionelle Titelillustration. Keine amtliche Veröffentlichung oder Dokumentenabbildung der Bundesregierung.</figcaption></figure>
+  <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{HERO_IMAGE}" width="1672" height="941" alt="{esc(HERO_ALT)}" decoding="async" fetchpriority="high"><figcaption>Titelillustration. Keine amtliche Veröffentlichung oder Dokumentenabbildung der Bundesregierung.</figcaption></figure>
 </article>
 <section class="article-page"><div class="article-body">
 {toc}

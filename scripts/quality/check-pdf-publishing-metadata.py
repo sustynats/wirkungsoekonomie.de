@@ -1,13 +1,13 @@
 """Check delivered WÖk PDFs; correct publishing metadata without page edits."""
 from pathlib import Path
-import argparse,json,hashlib,re
+import argparse,json,hashlib,re,subprocess
 import pymupdf
 import xml.etree.ElementTree as ET
 
 PUBLISHER='Institut für Wirkungsökonomie'
 AUTHOR='Natalie Weber'
 TOOL=re.compile(r'OpenAI|ChatGPT|\bCodex\b|\bClaude\b|Anthropic|(?:AI|KI)[- ](?:generated|generiert|erstellt)',re.I)
-ACCEPTED={AUTHOR,PUBLISHER,PUBLISHER+' / '+AUTHOR}
+ACCEPTED={AUTHOR,PUBLISHER,PUBLISHER+' / '+AUTHOR,PUBLISHER+'; '+AUTHOR}
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def info_fields(document):
@@ -65,11 +65,25 @@ def main():
     args=parser.parse_args();root=args.root.resolve()
     # Match the public artifact locations. Immutable source manuscripts remain
     # available for provenance; corrections happen in delivered publication copies.
-    files=sorted({p for prefix in ['assets','public/downloads','downloads'] for p in (root/prefix).rglob('*.pdf')})
+    collision_candidates={p for prefix in ['assets','public/downloads','downloads'] for p in (root/prefix).rglob('*.pdf')}
+    # Finder created 79 untracked collision copies. Most are dataless iCloud
+    # stubs, and merely trying to open one can start an unbounded download. Build
+    # the publication inventory from Git plus the one reviewed new NATS delivery
+    # copy, so the audit remains deterministic even if Finder hydrates a stub.
+    tracked_scan=subprocess.run(
+        ['git','ls-files','-z','--','*.pdf'],
+        cwd=root,check=True,capture_output=True,
+    )
+    tracked={(root/Path(value.decode())).resolve() for value in tracked_scan.stdout.split(b'\0') if value}
+    reviewed_untracked={
+        (root/'public/downloads/originals/NATS_WOeK_allgemein 2.pdf').resolve(),
+    }
+    files=sorted(Path(p) for p in tracked|reviewed_untracked if Path(p).exists())
+    placeholders=sorted(p for p in collision_candidates if p.resolve() not in tracked|reviewed_untracked)
     records=[]
     for path in files:
         record=correct(path,args.fix);record['path']=path.relative_to(root).as_posix();records.append(record)
-    report={'pdfsChecked':len(records),'pagesChecked':sum(r['pages'] for r in records),'issues':sum(bool(r['issues']) for r in records),'corrected':sum(r['corrected'] for r in records),'records':records}
+    report={'pdfsChecked':len(records),'pagesChecked':sum(r['pages'] for r in records),'issues':sum(bool(r['issues']) for r in records),'corrected':sum(r['corrected'] for r in records),'excludedUntrackedCollisionCopies':len(placeholders),'records':records}
     if args.report:args.report.parent.mkdir(parents=True,exist_ok=True);args.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({key:value for key,value in report.items() if key!='records'},ensure_ascii=False))
     if any(r['issues'] and not r['corrected'] for r in records):raise SystemExit(1)

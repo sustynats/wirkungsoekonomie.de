@@ -45,7 +45,7 @@ SECTION = "Politik & Gesellschaft"
 HERO_IMAGE = "2026-10-09-gruener-plan-deutschland-wirkungscheck.jpg"
 EMBEDDED_IMAGE = "2026-10-09-gruener-plan-wirkungscheck-pruefkette.png"
 HERO_ALT = (
-    "KI-generierte redaktionelle Titelillustration zum Grünen-Plan im Wirkungscheck mit Reichstag, "
+    "Titelillustration zum Grünen-Plan im Wirkungscheck mit Reichstag, "
     "Wirkungskompass, Diagramm und den Themen Klimaschutz, soziale Gerechtigkeit, Demokratie, "
     "nachhaltige Wirtschaft und lebenswerte Regionen. Keine Parteiveröffentlichung."
 )
@@ -447,7 +447,7 @@ def write_article(source_sha: str, image_sha: str, embedded_sha: str, paragraphs
     <p class="meta">{byline}</p>
     <p class="meta">{linkify_refs(source_note)}</p>
   </div>
-  <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{HERO_IMAGE}" width="1280" height="720" alt="{esc(HERO_ALT)}" decoding="async" fetchpriority="high"><figcaption>KI-generierte redaktionelle Titelillustration. Keine Parteiveröffentlichung oder amtliche Dokumentenabbildung.</figcaption></figure>
+  <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{HERO_IMAGE}" width="1280" height="720" alt="{esc(HERO_ALT)}" decoding="async" fetchpriority="high"><figcaption>Titelillustration. Keine Parteiveröffentlichung oder amtliche Dokumentenabbildung.</figcaption></figure>
 </article>
 <section class="article-page"><div class="article-body">
 {toc}

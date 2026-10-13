@@ -28,7 +28,9 @@ const scannedPaths = [
 ];
 
 const blockedContentPatterns = [
-  { label: "unreviewed production name", pattern: /\b(?:Claude|ChatGPT)\b/i },
+  // Claude Shannon is an external source author in the published bibliography;
+  // keep the production-name gate for editorial/tool references.
+  { label: "unreviewed production name", pattern: /\bClaude\b(?!\s+E\.\s*\(1948\))|\bChatGPT\b/i },
   { label: "local home or temporary directory", pattern: /(?<![\w/.:])\/(?:home|var\/folders)\/|[A-Z]:[\\/]Users[\\/]/i },
   { label: "local macOS home path", pattern: /\/Users\// },
   { label: "local Linux Hagen path", pattern: /\/home\/hagen\//i },

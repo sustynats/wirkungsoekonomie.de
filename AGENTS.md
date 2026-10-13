@@ -153,3 +153,13 @@ Wenn keine geeigneten Komponenten vorhanden sind, koennen kleine wiederverwendba
 - FeedbackLoop
 
 Diese Bausteine sollen generisch bleiben und nur die Inhalte der jeweiligen Seite als Daten erhalten.
+
+## Fachliche Kernreferenz und nachprüfbare Aussagen
+
+- Vor fachlichen WÖk-Aufgaben `content/grundlagen/WOEK_KERNREFERENZ.md` und danach die passende Originalquelle lesen. Diese Arbeitsreferenz ersetzt keine Originalquelle oder Freigabe.
+- Die WÖk ist ein Wirtschafts- und Gesellschaftsmodell: Medien, Demokratie, Wohnen, Gesundheit, Pflege und Bildung sind keine optionalen Nebenthemen. Den systematischen Prüfauftrag nicht als vollständige Kenntnis aller Wirkungen ausgeben.
+- Aktuelle Begriffsgrundlage: Projekt-Leitfaden v1.8 vom 1.10.2026. Fehlenden Import in Website oder PDFs ausdrücklich melden; keine Aktualität allein aus Dateiname oder Datum ableiten.
+- IOOI ist eine optionale externe Ergebniskette, keine WÖk-Gesamtarchitektur. SDG+ konkretisiert und ergänzt vorhandene UN-Bezüge pro Aspekt.
+- Rechenstandard, Formel, Implementierung, Beispiel und Ausgabe unabhängig abgleichen. Fehlende Daten sind nicht 0, ein unbekannter Zustand ist nicht neutral, ein bestandener Build ist kein empirischer Wirkungsnachweis.
+- Erst Situation und Mechanismus erklären, dann den Fachbegriff. Hypothetische Beispiele ausdrücklich kennzeichnen; keine frei gesetzten Eurobeträge als Produktsteuermechanik ausgeben.
+- Abschlussmeldungen trennen: lokal bearbeitet, getestet, fachlich geprüft, im Repository gespeichert und live veröffentlicht. Eine offene Aufgabe ist keine laufende Automation.

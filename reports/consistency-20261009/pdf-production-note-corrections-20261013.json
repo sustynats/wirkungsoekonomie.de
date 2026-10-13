@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-13",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+      "original": "source-assets/originals/pdf-production-hints-20261013/pre-overlay-originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+      "beforeSha256": "b18291bad602ba66e5c922db1e7dba619bc2489618689bb624957918da07cd78",
+      "afterSha256": "8e8546c40d50894b82f129f494b8f24b900069840aeacdfaf3f086208521a325",
+      "pages": 15,
+      "changedVisualPages": [
+        1,
+        15
+      ],
+      "unchangedPageRenders": 13
+    },
+    {
+      "path": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf",
+      "original": "source-assets/originals/pdf-production-hints-20261013/pre-overlay-originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf",
+      "beforeSha256": "d68b34696885c37b9616d5f64ccc8a9875912a358038b2eeb62e9a584ec1209f",
+      "afterSha256": "44f9acc1fdc57c5b1c3f5b81f5c789f70b90a77375fe5555e5de7295f8406d46",
+      "pages": 20,
+      "changedVisualPages": [
+        1,
+        19
+      ],
+      "unchangedPageRenders": 18
+    },
+    {
+      "path": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+      "original": "source-assets/originals/pdf-production-hints-20261013/pre-overlay-originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+      "beforeSha256": "b71a30bcbecd08355ff99a89251aa89013e627f296180a7d5c287255fe3441e1",
+      "afterSha256": "c54691f7197ce318bbaab2009083cf2a5ea12a517cec393910c89c0516de68ab",
+      "pages": 23,
+      "changedVisualPages": [
+        1,
+        22
+      ],
+      "unchangedPageRenders": 21
+    },
+    {
+      "path": "public/downloads/originals/NATS_WOeK_allgemein 2.pdf",
+      "original": "source-assets/originals/pdf-production-hints-20261013/public-downloads-originals/NATS_WOeK_allgemein 2.pdf",
+      "beforeSha256": "49e88d8f3dba77d72efb486df06b5f3827b1bf0561e68a38ecbfce65e2751248",
+      "afterSha256": "3a4b7b97d5ec66a82b253d3e96ae0f395d2c49312749266da50daa1239fc82f4",
+      "pages": 60,
+      "changedVisualPages": [],
+      "unchangedPageRenders": 60
+    }
+  ],
+  "description": "Public publishing copies contain no production-only AI, editor or implementation labels; archived originals remain byte-identical."
+}

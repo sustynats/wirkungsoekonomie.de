@@ -1,0 +1,44 @@
+{
+  "revision": "2026-10-13-books-source-consistency",
+  "date": "2026-10-13",
+  "status": "reviewed-reading-edition-draft",
+  "volumes": [
+    {
+      "volume": "I",
+      "sha256": "df7371b13d55a73d0c36ab2dee589e9a183cf32b856f6f3ddffce6b0873c3f8a",
+      "pages": 789,
+      "docx": "source-assets/generated/books-20261009/PRINT_6x9_Band-I_Konsistenz_2026-10-10.docx",
+      "docxSha256": "2941c3a5beb751a3b1b40b3f73185e0191fb4fef87cb54c5cb10d8f13761901d",
+      "filename": "die-neue-ordnung-des-wohlstands-band-i-2026-10-13.pdf"
+    },
+    {
+      "volume": "II",
+      "sha256": "52d676736ebd5fe2415e0d0be3de6664c5c04737151bcbb0d289f3a6173a241d",
+      "pages": 757,
+      "docx": "source-assets/generated/books-20261009/PRINT_6x9_Band-II_Konsistenz_2026-10-10.docx",
+      "docxSha256": "00ffaa74602fa7155c4431fc9bd4f7249904672cfba19f1524173f1201f867a0",
+      "filename": "die-neue-ordnung-des-wohlstands-band-ii-2026-10-13.pdf"
+    }
+  ],
+  "combined": {
+    "filename": "die-neue-ordnung-des-wohlstands-konsistenz-2026-10-13.pdf",
+    "sha256": "807d53d55360366e888349fdf2d0bf8705353db28d5e18dbcba86c0b68ca133b",
+    "pages": 1546,
+    "bytes": 28790143,
+    "deliveryPath": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf"
+  },
+  "visualReview": {
+    "path": "reports/consistency-20261009/book-pdf-visual-review.json",
+    "sha256": "92389d096d2b04cbbdab51dc7be4fb15dcc9bf2598d5044c0151bea6401714d5"
+  },
+  "historical": {
+    "path": "source-assets/originals/mainwork-2026-08-02/die-neue-ordnung-des-wohlstands-lesefassung.pdf",
+    "sha256": "fdb961e70f0929b636d1847fb7862daa74770d54455c8ffa8010ff0adc829e8d",
+    "label": "Bisherige 1.250-seitige Lesefassung mit T-SROI-Erratum vom 2. August 2026"
+  },
+  "deliveryPixelComparison": {
+    "status": "PASS",
+    "pages": 1546,
+    "dpi": 72
+  }
+}
