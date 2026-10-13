@@ -49,10 +49,11 @@ ${utility}
       </button>
       <nav class="site-nav" id="site-nav" aria-label="${esc(labels.main||(english?'Main navigation':'Hauptnavigation'))}" data-search-exclude>
 ${main}
-        <div class="site-nav-utility" aria-label="${esc(utilityLabel)}">
+        <div class="site-nav-utility" aria-label="${esc(utilityLabel)}" aria-hidden="true" inert>
 ${utility}
         </div>
       </nav>
+      <script src="${esc(base)}assets/js/site-navigation.js?v=20261013-a11y" defer></script>
     </header>`;
 }
 
