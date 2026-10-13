@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-13T15:46:07.765Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-13T16:10:28.963Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -318,6 +318,37 @@
         "planet": {
           "magnitude": 0,
           "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/organisierte-kriminalitat-explosion-schusse-wachsende-gefahr-fur-unbeteiligte-b6f4c7/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/organisierte-kriminalitat-explosion-schusse-wachsende-gefahr-fur-unbeteiligte-b6f4c7/",
+      "title": "Explosion am Stuttgarter Platz beschädigt Autos und Wohnungsfenster",
+      "summary": "Am Stuttgarter Platz explodierte laut den gelieferten Berichten ein Sprengkörper; Splitter beschädigten Autos und die Fenster einer Wohnung. Die Gefahreneinschätzung der Gewerkschaft der Polizei ist als zugeschriebene Aussage belegt, ihre Grundlage bleibt offen.",
+      "date_published": "2026-10-13T10:50:56.000Z",
+      "date_modified": "2026-10-13T10:50:56.000Z",
+      "_woek_released_at": "2026-10-13T16:19:38.227Z",
+      "tags": [
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
           "status": "potential"
         },
         "democracy": {
