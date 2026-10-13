@@ -18,6 +18,13 @@ Manuelle, redaktionell freigegebene Buchbesprechungen von Natalie Weber
   für den gemeinsamen Seiten-Build. Modellgrenzen weisen das Format zurück.
 - Neue Rezension: offizielles Cover + Buchdaten + freigegebener vollständiger
   Text. Kein neuer Renderer, kein individuelles Portrait erforderlich.
+- Bei freigegebenen Anhängen mit abweichendem Frontmatter kann das Manifest
+  `source_layout=approved_attachment` und `publication_metadata` führen.
+  Das signierte Original bleibt bytegenau erhalten; die Veröffentlichungsdaten
+  ergänzen Rubrik, eigene URL und Buchdaten. Explizite Freigabe, Autorin und
+  Originalhash werden weiterhin geprüft. Die persönliche Schlusssektion darf
+  unverändert „Meine persönliche Einordnung“ heißen. Die vorhandene
+  Vorbesprechung wird als verwandter Beitrag verlinkt, nicht ersetzt.
 - Inhaltliche Änderungen brauchen einen neuen freigegebenen Text, neue
   Prüfsumme und einen transparenten Versionsverlauf. Historie nicht still ändern.
 
