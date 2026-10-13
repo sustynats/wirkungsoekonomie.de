@@ -13,12 +13,15 @@ export const internalDirectories = new Set([
 
 export function publicHtmlFiles(root = process.cwd()) {
   const files = [];
-  function walk(directory) {
+  function walk(directory, depth = 0) {
     for (const entry of fs.readdirSync(directory, {withFileTypes: true})) {
       if (entry.isSymbolicLink()) continue;
       const file = path.join(directory, entry.name);
       if (entry.isDirectory()) {
-        if (!entry.name.startsWith('.') && !internalDirectories.has(entry.name)) walk(file);
+        // These names describe repository-only directories at the root. The
+        // same words can be legitimate public route segments below a public
+        // area, for example `/wirkungsfelder/bildung/tools/`.
+        if (!entry.name.startsWith('.') && (depth > 0 || !internalDirectories.has(entry.name))) walk(file, depth + 1);
       } else if (entry.name.endsWith('.html')) files.push(file);
     }
   }
