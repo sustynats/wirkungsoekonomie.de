@@ -1,11 +1,24 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-13T04:52:49.930Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-13T05:13:06.180Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/arctic-meltdown-nach-erscheinen-habecks-arktis-these-im-wirkungscheck-49cb81/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/arctic-meltdown-nach-erscheinen-habecks-arktis-these-im-wirkungscheck-49cb81/",
+      "title": "Buch & Wirkung: Arctic Meltdown nach Erscheinen: Habecks Arktis-These im Wirkungscheck",
+      "summary": "Robert Habecks öffentlich zugängliche Passagen und Autorengespräche verbinden Klima, Sicherheit und Geopolitik. Eine vertiefte Einordnung des Ansatzes und seiner politischen Folgerungen.",
+      "date_published": "2026-10-13T05:13:06.180Z",
+      "date_modified": "2026-10-13T05:13:06.180Z",
+      "_woek_released_at": "2026-10-13T05:13:06.180Z",
+      "tags": [
+        "Buch & Wirkung"
+      ],
+      "_woek_type": "Buch & Wirkung"
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wer-entscheidet-was-auf-unseren-tellern-landet-9a5bdc/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wer-entscheidet-was-auf-unseren-tellern-landet-9a5bdc/",
@@ -2543,8 +2556,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3/",
-      "title": "Laut stern: Sami Abu Schehadeh zieht Kandidatur für Knesset-Wahl zurück",
-      "summary": "Sami Abu Schehadeh soll seine Knesset-Kandidatur angesichts eines drohenden Ausschlusses zurückgezogen haben. Der genaue gerichtliche Status und die institutionellen Folgen bleiben offen.",
+      "title": "Laut stern: Sami Abu Schehadeh zieht Knesset-Kandidatur angesichts drohenden Ausschlusses zurück",
+      "summary": "Sami Abu Schehadeh hat seine Knesset-Kandidatur laut stern angesichts eines drohenden Ausschlusses zurückgezogen. Der genaue Gerichtsstatus und die Folgen für die Kandidatenliste bleiben offen.",
       "date_published": "2026-10-02T06:47:03.000Z",
       "date_modified": "2026-10-02T06:47:03.000Z",
       "_woek_released_at": "2026-10-02T07:19:42.557Z",
@@ -2560,13 +2573,13 @@
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 0,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 4,
-          "direction": "negative",
+          "magnitude": 3,
+          "direction": "mixed",
           "status": "potential"
         }
       }
@@ -3255,7 +3268,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "title": "Laut stern: Explosion einer nordkoreanischen Mine verletzt drei südkoreanische Offiziere schwer",
-      "summary": "Eine Explosion im koreanischen Grenzgebiet verletzte laut stern drei südkoreanische Offiziere schwer. Die Regierung in Seoul kündigte Maßnahmen an; Hergang, Verantwortung und Folgen bleiben offen.",
+      "summary": "Eine laut stern Nordkorea zugerechnete Minenexplosion verletzte drei südkoreanische Offiziere schwer. Hergang, Verantwortungszuschreibung und politische Folgen sind nicht unabhängig bestätigt.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -3269,7 +3282,7 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
+          "magnitude": 4,
           "direction": "negative",
           "status": "observed"
         },
