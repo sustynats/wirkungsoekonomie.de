@@ -186,3 +186,20 @@ Die Drei-Dimensionen-Invariante regulaerer Nachrichten und ihrer unabhaengigen
 Fachpruefung, alle Validatoren sowie die fassungsgebundene Abschlussfreigabe
 bleiben unveraendert. Vorhandene HOLDs oder bezahlte Antworten werden durch
 diese Prompt-Korrektur weder umgeschrieben noch automatisch erneut bezahlt.
+
+### Sendungsmetadaten und kostenlose Wiederaufnahme - 13.10.2026
+
+Der GitHub-Worker kanonisiert bei Nachgehoert/Nachgesehen die formale
+Schlussueberschrift `Sendungsdaten` als die bereits erlaubte `Originalfolge`,
+sofern die Originalfolge in `source_media` gebunden ist. Textabsaetze,
+Quellen, Originaldatum und persoenliche Einordnung bleiben unveraendert.
+Der bestehende Oracle-Import und sein Schlusssektions-Gate bleiben gleich.
+
+Scheiterte eine bereits bezahlte Antwort vor der Zustellung ausschliesslich
+an diesem belegten Schlussstrukturfehler, kann der normale Worker ihre private
+`editorial-answer`-Ablage kostenlos wieder aufnehmen. Dateipruefsumme,
+Auftragskennung und Eingabehash muessen stimmen; Originalarchive werden nicht
+geaendert. Ausgabe und ACK duerfen nicht bereits vorhanden sein. Es gibt keinen
+Modellaufruf, keinen Budget-/Versionsreset und keine Publikationsfreigabe.
+Unbekannte gestartete Versuche, HOLDs und bereits uebernommene oder freigegebene
+Fassungen sind ausgeschlossen. Alle bisherigen Inhalts-/Importgates gelten.
