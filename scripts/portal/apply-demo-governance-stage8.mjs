@@ -29,7 +29,7 @@ const defaults = {
   ],
   docs: [
     { label: "Arbeitsbibliothek", href: "werkstatt/arbeitsbibliothek/" },
-    { label: "Sprachregelwerk", href: "content/governance/woek-language-rules.md" },
+    { label: "Begriffsleitfaden", href: "bibliothek/woek-begriffsleitfaden-fuehrend/" },
     { label: "Einwände & Schutzgrenzen", href: "einwaende/" },
   ],
   nextText: "Nutze das Ergebnis als Lern- und Diskussionsanstoß und prüfe danach Methodik, Datenlage und passende Wirkungsfelder.",

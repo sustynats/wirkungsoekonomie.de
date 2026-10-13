@@ -16,10 +16,6 @@
 //   referenz/teil-XX/index 2.html     -> referenz/teil-XX/     (index.html)
 //   …/WOeK_…_v1.0 2.html              -> …/WOeK_…_v1.0.html
 //
-// Bereits als Redirect-Stub vorliegende Kopien (z. B. referenz/version-1-1/
-// index 2.html, erzeugt von scripts/reference/enhance-reference-ux.mjs) werden
-// nicht angefasst, damit es genau einen Eigentümer pro Route gibt.
-//
 // Die Bibliothek (scripts/library/build-library-versioning-stage9.mjs) und der
 // Suchindex (scripts/search/build-woek-search-index.mjs) blenden die
 // " … 2.html"-Routen bereits aus, sodass ausschließlich das kanonische
@@ -31,6 +27,7 @@ import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const MACOS_DUPLICATE_HTML = / \d+\.html$/;
+const CHECK_MODE = process.argv.includes("--check");
 
 function esc(value = "") {
   return String(value)
@@ -40,8 +37,8 @@ function esc(value = "") {
     .replaceAll('"', "&quot;");
 }
 
-function trackedFiles() {
-  const output = execFileSync("git", ["ls-files", "-z"], { cwd: ROOT, encoding: "utf8", maxBuffer: 512 * 1024 * 1024,});
+function gitFiles(args) {
+  const output = execFileSync("git", ["ls-files", ...args, "-z"], { cwd: ROOT, encoding: "utf8", maxBuffer: 512 * 1024 * 1024,});
   return output.split("\0").filter(Boolean);
 }
 
@@ -67,40 +64,32 @@ function archiveStubHtml(destination) {
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="refresh" content="0; url=${safeDestination}">
     <link rel="canonical" href="${safeDestination}">
-    <title>Archivierte Kopie - weitergeleitet</title>
+    <title>Weiterleitung zur aktuellen Fassung</title>
     <script>window.location.replace("${safeDestination}");</script>
   </head>
   <body>
     <main>
-      <p>Diese Seite war eine versehentliche Dateikopie und wird auf die
-        aktuelle Fassung weitergeleitet.</p>
+      <p>Diese Adresse führt zur aktuellen Fassung.</p>
       <p><a href="${safeDestination}">Zur aktuellen Fassung</a></p>
     </main>
   </body>
 </html>`;
 }
 
-function isRedirectStub(abs) {
-  try {
-    return /http-equiv=["']refresh["']/i.test(fs.readFileSync(abs, "utf8"));
-  } catch {
-    return false;
-  }
-}
-
-const duplicates = trackedFiles().filter((rel) => MACOS_DUPLICATE_HTML.test(rel));
-let archived = 0;
-let skippedStub = 0;
+const duplicates = gitFiles([]).filter((rel) => MACOS_DUPLICATE_HTML.test(rel));
+const newDuplicates = gitFiles(["--others", "--exclude-standard"]).filter((rel) => MACOS_DUPLICATE_HTML.test(rel));
+let normalized = 0;
+let unchanged = 0;
 let missingCanonical = 0;
+const stale = [];
+
+for (const rel of newDuplicates) {
+  console.error(`archive-macos-duplicate-routes: neue Finder-Dublette ist nicht erlaubt: ${rel}`);
+}
 
 for (const rel of duplicates) {
   const abs = path.join(ROOT, rel);
   if (!fs.existsSync(abs)) continue;
-  if (isRedirectStub(abs)) {
-    // Bereits von einem anderen Generator als Stub gepflegt.
-    skippedStub += 1;
-    continue;
-  }
   const canonicalRel = canonicalSiblingOf(rel);
   if (!fs.existsSync(path.join(ROOT, canonicalRel))) {
     // Ohne kanonisches Geschwister wäre eine Weiterleitung inhaltlich unklar –
@@ -112,11 +101,29 @@ for (const rel of duplicates) {
   const destination = redirectDestinationFor(canonicalRel);
   const html = `${archiveStubHtml(destination)}\n`;
   const current = fs.existsSync(abs) ? fs.readFileSync(abs, "utf8") : "";
-  if (current !== html) fs.writeFileSync(abs, html);
-  archived += 1;
+  if (current === html) {
+    unchanged += 1;
+    continue;
+  }
+  if (CHECK_MODE) {
+    stale.push(rel);
+    continue;
+  }
+  fs.writeFileSync(abs, html);
+  normalized += 1;
 }
 
-console.log(
-  `archive-macos-duplicate-routes: ${archived} Kopie-Routen als Redirect-Stub archiviert` +
-    ` (bereits Stub: ${skippedStub}, ohne kanonisches Geschwister: ${missingCanonical}).`
-);
+if (CHECK_MODE) {
+  if (stale.length || missingCanonical || newDuplicates.length) {
+    for (const rel of stale) console.error(`archive-macos-duplicate-routes: nicht normalisiert: ${rel}`);
+    process.exitCode = 1;
+  } else {
+    console.log(`archive-macos-duplicate-routes: ${unchanged} URL-erhaltende noindex-Weiterleitungen geprüft.`);
+  }
+} else {
+  console.log(
+    `archive-macos-duplicate-routes: ${normalized} Kopie-Routen normalisiert` +
+      ` (bereits aktuell: ${unchanged}, ohne kanonisches Geschwister: ${missingCanonical}).`
+  );
+  if (newDuplicates.length) process.exitCode = 1;
+}
