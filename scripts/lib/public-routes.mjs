@@ -125,8 +125,9 @@ function exclusionReason(relative, meta) {
 }
 
 function areaFor(route) {
-  const segment = decodeURIComponent(route).split("/").filter(Boolean)[0];
-  return segment || "start";
+  const segments = decodeURIComponent(route).split("/").filter(Boolean);
+  if (!segments.length || (segments.length === 1 && !route.endsWith("/"))) return "start";
+  return segments[0];
 }
 
 export function collectPublicRoutes(root) {

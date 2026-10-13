@@ -13,6 +13,7 @@ function fixture() {
     fs.writeFileSync(file, html);
   };
   put("index.html", '<html lang="de"><title>Wirkung &amp;amp; Wirtschaft</title><main>Start</main></html>');
+  put("kontakt.html", '<html lang="de"><title>Kontakt</title><main>Kontakt</main></html>');
   put("verstehen/index.html", '<html lang="de"><link rel="canonical" href="https://wirkungsoekonomie.de/verstehen/"><title>Verstehen</title></html>');
   put("verstehen/entwurf/index.html", '<meta name="robots" content="noindex,follow"><title>Entwurf</title>');
   put("verstehen.html", '<link rel="canonical" href="/verstehen/"><title>Alias</title>');
@@ -34,7 +35,7 @@ test("the manifest contains every and only public canonical indexable German pag
   const root = fixture();
   try {
     const manifest = collectPublicRoutes(root);
-    assert.deepEqual(manifest.routes.map((entry) => entry.url), ["/", "/verstehen/"]);
+    assert.deepEqual(manifest.routes.map((entry) => entry.url), ["/", "/kontakt.html", "/verstehen/"]);
     assert.equal(manifest.routes[0].title, "Wirkung & Wirtschaft");
     assert.deepEqual(manifest.counts.excluded, {
       alternateCanonical: 1,
@@ -44,7 +45,7 @@ test("the manifest contains every and only public canonical indexable German pag
       notFound: 1,
       redirect: 1,
     });
-    assert.deepEqual(manifest.counts.byArea, { start: 1, verstehen: 1 });
+    assert.deepEqual(manifest.counts.byArea, { start: 2, verstehen: 1 });
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
