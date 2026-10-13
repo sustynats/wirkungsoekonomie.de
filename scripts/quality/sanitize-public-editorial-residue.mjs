@@ -39,6 +39,9 @@ const residualPatterns = [
 ];
 
 function walk(directory) {
+  // The search index is generated data and contains searchable domain text.
+  // Broad editorial-residue patterns must not remove legitimate phrases from it.
+  if (path.relative(root, directory).startsWith(path.join("assets", "search"))) return [];
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     if (entry.isDirectory()) {
       if (excludedDirectories.has(entry.name)) return [];
