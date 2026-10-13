@@ -56,7 +56,7 @@
     faktencheck: ["/begriffe/faktencheck/", "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/", "/anwendungen/scanner.html"],
     wirkstoff: ["/begriffe/wirkstoff/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
     wirkungsraum: ["/begriffe/wirkungsraum/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
-    wirkungspfad: ["/begriffe/wirkungspfad/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
+    wirkungspfad: ["/begriffe/wirkpfad/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
     wirkungspotenzial: ["/begriffe/wirkungspotenzial/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
     wirkungskompetenz: ["/begriffe/wirkungskompetenz/", "/begriffe/idgs/", "/verstehen/sdgs-sdgplus/"],
     idg: ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
@@ -89,11 +89,11 @@
     automatisierung: ["/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/", "/begriffe/maschinenwertschoepfungsbeitrag/"],
     bildung: ["/wirkungsfelder/bildung/", "/begriffe/wirkungskompetenz/"],
     gesundheit: ["/wirkungsfelder/gesundheit-pflege/", "/wirkungsfelder/"],
-    westdeutsche: ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
-    ostdeutschland: ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
-    "ostdeutschland deutsche": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
-    "deutsche wohnen": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
-    "nur in ostdeutschland": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
+    westdeutsche: ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/"],
+    ostdeutschland: ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/"],
+    "ostdeutschland deutsche": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/"],
+    "deutsche wohnen": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/"],
+    "nur in ostdeutschland": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/"],
   };
   const RECOMMENDED_QUERY_ENTRYPOINTS = {
     wirkung: {
@@ -1270,7 +1270,7 @@
     if (state.loading) return state.loading;
     state.loading = (async () => {
       const [index, dictionary, associations, entrypoints] = await Promise.all([
-        import(new URL('search-index-loader.js?v=20260906-progress', searchScriptUrl).href).then(({ loadBrowserSearchIndex }) => loadBrowserSearchIndex(new URL('../search/', searchScriptUrl).href)),
+        import(new URL('search-index-loader.js?v=20261013-p1-3', searchScriptUrl).href).then(({ loadBrowserSearchIndex }) => loadBrowserSearchIndex(new URL('../search/', searchScriptUrl).href)),
         fetch(dataUrl("search-dictionary.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('dictionary'); return response.json(); }),
         fetch(dataUrl("search-associations.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('associations'); return response.json(); }),
         fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('entrypoints'); return response.json(); }),

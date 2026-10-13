@@ -105,10 +105,19 @@ def measure(root,search_urls=None):
     if search_urls is None:
         manifest=root/'assets/search/browser-index-manifest.json'
         index=root/'assets/search/search-index.json'
-        if manifest.exists():index=manifest.parent/json.loads(manifest.read_text())['json']
-        data=json.loads(index.read_text()) if index.exists() else []
+        manifest_data=json.loads(manifest.read_text()) if manifest.exists() else None
+        if manifest_data and manifest_data.get('schemaVersion')==2:
+            parts=[manifest_data.get('core',{}),*manifest_data.get('archives',[])]
+            data=[]
+            for part in parts:
+                part_file=manifest.parent/part.get('json','')
+                if not part_file.is_file():raise ValueError(f'Search manifest contains a missing index file: {part_file}')
+                data.extend(json.loads(part_file.read_text()))
+        else:
+            if manifest_data:index=manifest.parent/manifest_data['json']
+            data=json.loads(index.read_text()) if index.exists() else []
         # Match the actually delivered compact browser index in source mode.
-        search_urls={e.get('url','') for e in data if not re.match(r'^/(bibliothek|quellenarchiv)/.+',e.get('url',''))} if not manifest.exists() else {e.get('url','') for e in data}
+        search_urls={e.get('url','') for e in data if not re.match(r'^/(bibliothek|quellenarchiv)/.+',e.get('url',''))} if not manifest_data else {e.get('url','') for e in data}
     search=set()
     for u in search_urls:
         t=target('/',u)
