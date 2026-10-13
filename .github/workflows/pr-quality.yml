@@ -120,10 +120,10 @@ jobs:
       - name: Check site size
         run: npm run check:size
 
-      - name: Measure navigation of the complete public artifact (warning stage)
+      - name: Measure and gate navigation of the complete public artifact
         run: |
           python3 -m unittest discover -s tests/navigation -v
-          node scripts/quality/check-navigation-discovery.mjs --report
+          node scripts/quality/check-navigation-discovery.mjs --report --gate
           cat reports/navigation/latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Attach navigation report to this PR run
