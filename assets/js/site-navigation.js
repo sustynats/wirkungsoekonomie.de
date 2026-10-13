@@ -78,11 +78,12 @@
       link.removeAttribute("aria-current");
     });
     document.querySelectorAll(".site-nav .nav-more").forEach((details) => details.classList.remove("active"));
+    const existingPageMarker = document.querySelector('[aria-current="page"]');
 
     const exactPageLink = links.find((link) => normalizeNavigationRoute(link.pathname) === currentRoute);
     if (exactPageLink) {
       exactPageLink.classList.add("active");
-      exactPageLink.setAttribute("aria-current", "page");
+      exactPageLink.setAttribute("aria-current", existingPageMarker ? "true" : "page");
     }
 
     const activeArea = mainLinks
