@@ -1,7 +1,64 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-13T04:00:00.000Z",
+  "updated_at": "2026-10-13T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-13-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-13",
+      "window_from": "2026-10-13T04:00:00.000Z",
+      "window_to": "2026-10-13T10:00:00.000Z",
+      "stand": "2026-10-13T10:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 2,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-ffbc1ca2c1bb4cb4",
+          "slug": "polizei-totet-mann-in-rathaus-in-tuttlingen-waffe-des-27-jahrigen-war-wohl-nur-spielzeug-bb4cb4",
+          "title": "Neue Ermittlungsdetails zum tödlichen Polizeieinsatz in Tuttlingen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T09:01:37.881Z",
+          "score": 7.5879
+        },
+        {
+          "story_id": "wt-0ee1596257f429d9",
+          "slug": "polizei-einsatz-erneut-schusse-in-kolner-innenstadt-f429d9",
+          "title": "Laut WDR: Erneut Schüsse auf zwei Geschäfte in Kölner Innenstadt",
+          "state": "neu",
+          "at": "2026-10-13T07:50:34.075Z",
+          "score": 3.6405
+        },
+        {
+          "story_id": "wt-2ff0c90200883cae",
+          "slug": "kriminalitat-mehrere-schusse-auf-geschaft-in-kolner-innenstadt-abgegeben-883cae",
+          "title": "Laut stern: Schüsse auf Geschäft in Kölner Innenstadt, Zeitpunkt unklar",
+          "state": "neu",
+          "at": "2026-10-13T07:30:11.558Z",
+          "score": 5.5839
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Laut stern: Sami Abu Schehadeh zieht Knesset-Kandidatur vor drohendem Ausschluss zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T06:35:32.456Z",
+          "score": 9.1821
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Laut SWR Aktuell: Tankrabatt tritt in Kraft – Preise fallen zunächst, dauerhafte Weitergabe bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-13T04:59:00.995Z",
+          "score": 5.4139
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-13-morgenlage",
       "slot": "morgenlage",
