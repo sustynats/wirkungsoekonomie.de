@@ -195,6 +195,12 @@ function renderDirectoryPage(root, { areaLabel, hubRoute, page, pages, routes, c
   const base = pageBase(relative);
   const title = `${areaLabel}: Seite ${page}`;
   const section = directorySection({ areaLabel, hubRoute, page, pages, routes, cards });
+  // The English edition stays offline. These pages are generated after the
+  // general artifact cleanup, so remove only the generated legal link here.
+  const footer = renderSiteFooter(base).replace(
+    `<a href="${base}en/" data-nav-match="en/">English</a>\n`,
+    "",
+  );
   return `<!doctype html>
 <html lang="de" ${GENERATED_PAGE_MARKER}="true">
 <head>
@@ -216,7 +222,7 @@ function renderDirectoryPage(root, { areaLabel, hubRoute, page, pages, routes, c
     </section>
     ${section}
   </main>
-  ${renderSiteFooter(base)}
+  ${footer}
   ${renderFooterNewsletter(base)}
   <script src="/assets/js/newsletter.js?v=20260815-landing" defer></script>
   <script src="/assets/js/main.js" defer></script>

@@ -231,7 +231,7 @@ test("pipeline creates OG, wide and square, labels editorial, and reuses complet
   const prepare=worker(t,{generate:async()=>{generations++;return asset();},raster:async(_svg,{width,height})=>{renders++;return {png:png(width,height)};}});
   const first=await prepare(STORY);
   assert.equal(first.title_image.mode,"editorial"); assert.equal(first.title_image.og.width,1200); assert.equal(first.title_image.wide.height,675); assert.equal(first.title_image.square.width,1080);
-  assert.equal(publicTitleImage(first.title_image).label,"KI-generiertes Symbolbild");
+  assert.equal(publicTitleImage(first.title_image).label,"Symbolbild");
   const second=await prepare({...STORY,title_image:first.title_image});
   assert.equal(second.report.title_reused,true); assert.equal(generations,1); assert.equal(renders,3);
 });
