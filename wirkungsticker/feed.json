@@ -1,11 +1,43 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-14T10:24:03.848Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-14T10:50:57.875Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/naturgewalt-822f5d/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/naturgewalt-822f5d/",
+      "title": "Laut stern: Besuchersteg an den Iguazú-Wasserfällen vorübergehend gesperrt",
+      "summary": "Der Besuchersteg an den Iguazú-Wasserfällen ist laut stern aus Sicherheitsgründen vorübergehend gesperrt. Als Auslöser nennt der Bericht ergiebige Regenfälle und stark aufgewühltes Wasser; Dauer und weitere Folgen sind offen.",
+      "date_published": "2026-10-14T10:45:12.000Z",
+      "date_modified": "2026-10-14T10:45:12.000Z",
+      "_woek_released_at": "2026-10-14T11:01:17.921Z",
+      "tags": [
+        "Klima",
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/keine-lebensgefahr-polizist-schiesst-autofahrer-in-berlin-mitte-an-b54a19/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/keine-lebensgefahr-polizist-schiesst-autofahrer-in-berlin-mitte-an-b54a19/",
@@ -3848,7 +3880,7 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
-      "title": "Laut stern: Minenexplosion im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere",
+      "title": "Drei südkoreanische Offiziere bei Minenexplosion verletzt, laut südkoreanischer Regierung",
       "summary": "Eine vom stern berichtete Minenexplosion im koreanischen Grenzgebiet verletzte drei südkoreanische Offiziere schwer. Hergang, Verantwortungszuschreibung und politische Folgen sind nicht unabhängig bestätigt.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
@@ -3863,18 +3895,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 3,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
-          "magnitude": 0,
-          "direction": "neutral",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 2,
-          "direction": "negative",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
