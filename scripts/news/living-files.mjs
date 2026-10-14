@@ -399,19 +399,22 @@ const RELATED_TOPICS = [
 ];
 const TERMS_IGNORED = new Set("nach neue neuen einer eines werden sollen durch uber gegen unter jetzt mehr beim politik wirtschaft energie gesundheit europa gesellschaft deutschland meldung bericht berichtet regierung beschliesst beschlossen plant trump trumps donald supreme court federal judge gericht gerichts bundesverfassungsgericht bundesregierung bundestag bundesrat kommission prasident minister polizei".split(" "));
 const terms = (text) => unique((normal(text).match(/[a-z0-9]{4,}/g) || []).filter((word) => !TERMS_IGNORED.has(word)));
+// Closure wording describes a status, not a shared concrete object. Keep this
+// display-only filter separate from terms(), which also serves deduplication.
+const relatedTerms = (text) => terms(text).filter((word) => !/^(?:vorubergehend|gesperrt|sperrung|sicherheitsgrund)/.test(word));
 const relationText = (story) => `${story.title || ""} ${String(story.source_summary || "").split(/\n\s*\n/)[0].slice(0, 450)}`;
 
 export function relatedStories(story, stories, limit = 5) {
   const active = stories.filter((item) => item.published && item.analysis && item.listed !== false && !isMerged(item));
   const topicKeys = (item) => RELATED_TOPICS.filter(([, , pattern]) => pattern.test(normal(`${item.title || ""} ${String(item.source_summary || "").split(/[.!?]\s/)[0].slice(0, 240)}`)));
-  const leftTopics = topicKeys(story), left = terms(relationText(story));
+  const leftTopics = topicKeys(story), left = relatedTerms(relationText(story));
   const frequency = new Map();
-  for (const item of active) for (const word of terms(relationText(item))) frequency.set(word, (frequency.get(word) || 0) + 1);
+  for (const item of active) for (const word of relatedTerms(relationText(item))) frequency.set(word, (frequency.get(word) || 0) + 1);
   return active.filter((item) => item.story_id !== story.story_id).flatMap((item) => {
     const topics = topicKeys(item);
     const sharedTopic = leftTopics.find(([key]) => topics.some(([other]) => key === other));
-    const shared = terms(relationText(item)).filter((word) => left.includes(word) && frequency.get(word) <= Math.max(3, active.length * 0.2));
-    const titleShared = terms(item.title).filter((word) => terms(story.title).includes(word) && shared.includes(word));
+    const shared = relatedTerms(relationText(item)).filter((word) => left.includes(word) && frequency.get(word) <= Math.max(3, active.length * 0.2));
+    const titleShared = relatedTerms(item.title).filter((word) => relatedTerms(story.title).includes(word) && shared.includes(word));
     if (!sharedTopic && !(shared.length >= 3 && titleShared.length >= 2)) return [];
     return [{ story: item, reason: sharedTopic?.[1] || "Gemeinsamer konkreter Gegenstand", score: (sharedTopic ? 10 : 0) + Math.min(6, shared.length) }];
   }).sort((a, b) => b.score - a.score || time(b.story.last_updated) - time(a.story.last_updated) || a.story.story_id.localeCompare(b.story.story_id)).slice(0, Math.max(0, Math.min(5, limit)));
