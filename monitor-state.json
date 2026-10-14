@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-14T14:08:47.757Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "25fc3b8a2554df864f0acbf3",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-14T15:21:07.115Z"
+    }
+  ],
   "dailyDate": "2026-10-14",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2662,11 +2663,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-messerangriff-an-schule-15-jahriger-soll-in-haft-f6950a/": {
         "first_seen_at": "2026-10-14T12:50:45.437Z",
         "source_at": "2026-10-14T11:35:08.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-nach-fund-einer-leiche-polizei-nimmt-tatverdachtigen-fest-1c31e3/": {
+        "first_seen_at": "2026-10-14T15:21:07.115Z",
+        "source_at": "2026-10-14T14:07:51.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-wieder-schusse-auf-geschafte-polizei-verstarkt-prasenz-827a51/": {
+        "first_seen_at": "2026-10-14T15:21:07.115Z",
+        "source_at": "2026-10-14T14:01:48.000Z"
       }
     },
-    "last_new_at": "2026-10-14T12:50:45.437Z",
-    "checked_at": "2026-10-14T15:06:06.800Z",
-    "last_current_new_at": "2026-10-14T12:50:45.437Z"
+    "last_new_at": "2026-10-14T15:21:07.115Z",
+    "checked_at": "2026-10-14T15:21:07.115Z",
+    "last_current_new_at": "2026-10-14T15:21:07.115Z"
   },
   "recovery_attempts": [
     {
