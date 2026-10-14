@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-14T11:35:59.457Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ba1c92ac6140f03470066fe1",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-14T12:50:45.437Z"
+    }
+  ],
   "dailyDate": "2026-10-14",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2658,11 +2659,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/naturgewalt-822f5d/": {
         "first_seen_at": "2026-10-14T11:35:59.457Z",
         "source_at": "2026-10-14T10:45:12.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-messerangriff-an-schule-15-jahriger-soll-in-haft-f6950a/": {
+        "first_seen_at": "2026-10-14T12:50:45.437Z",
+        "source_at": "2026-10-14T11:35:08.000Z"
       }
     },
-    "last_new_at": "2026-10-14T11:35:59.457Z",
-    "checked_at": "2026-10-14T12:36:04.210Z",
-    "last_current_new_at": "2026-10-14T11:35:59.457Z"
+    "last_new_at": "2026-10-14T12:50:45.437Z",
+    "checked_at": "2026-10-14T12:50:45.437Z",
+    "last_current_new_at": "2026-10-14T12:50:45.437Z"
   },
   "recovery_attempts": [
     {
