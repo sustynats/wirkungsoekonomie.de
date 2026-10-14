@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-14T17:07:45.259Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-14T17:33:36.072Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -3602,7 +3602,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/erneuter-tankrabatt-tritt-in-kraft-f58d63/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/erneuter-tankrabatt-tritt-in-kraft-f58d63/",
       "title": "Tankrabatt in Kraft: Preise fallen zunächst, dauerhafte Entlastung bleibt offen",
-      "summary": "Der Tankrabatt ist in Kraft, die Spritpreise fielen zunächst. Wie dauerhaft die Entlastung wirkt und welche Folgen sie für Verteilung, Klima und öffentliche Mittel hat, bleibt offen.",
+      "summary": "Der Tankrabatt ist in Kraft und die Preise sanken zunächst. Wie dauerhaft die Entlastung wirkt und wer sie erhält, bleibt offen.",
       "date_published": "2026-10-01T02:02:46.000Z",
       "date_modified": "2026-10-01T02:02:46.000Z",
       "_woek_released_at": "2026-10-01T02:29:44.425Z",
@@ -3615,9 +3615,9 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "positive",
-          "status": "potential"
+          "status": "observed"
         },
         "planet": {
           "magnitude": 2,
@@ -3625,9 +3625,9 @@
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "negative",
-          "status": "potential"
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "emerging"
         }
       }
     },
@@ -3974,7 +3974,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7/",
       "title": "Laut Regierung in Seoul: Explosion einer Mine verletzt drei südkoreanische Offiziere schwer",
-      "summary": "Eine Explosion einer Mine verletzte laut stern drei südkoreanische Offiziere schwer. Verantwortungszuschreibung und mögliche Reaktionen sind nicht unabhängig bestätigt.",
+      "summary": "Eine Mine verletzte laut stern drei südkoreanische Offiziere schwer; einer verlor seinen Fuß. Die Verantwortungszuschreibung und mögliche Reaktionen bleiben unbestätigt.",
       "date_published": "2026-09-29T06:58:01.000Z",
       "date_modified": "2026-09-29T06:58:01.000Z",
       "_woek_released_at": "2026-09-29T07:17:32.533Z",
@@ -3988,18 +3988,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 3,
+          "magnitude": 4,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 0,
           "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 1,
-          "direction": "open",
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
