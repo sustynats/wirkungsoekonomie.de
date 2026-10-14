@@ -648,7 +648,10 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
     score = Math.min(score, 24);
     drivers.push('Service-Erklärung ohne neue Entscheidung, Evidenz oder politische Entwicklung');
   }
-  const topics = TOPIC_RULES.filter(([, pattern]) => pattern.test(text)).map(([topic]) => topic);
+  // The police idiom is not a power-grid reference. Mask it only for the
+  // energy topic; relevance, evidence gates and real network terms stay intact.
+  const energyTopicText = text.replace(/\b(?:polizei|fahndern?|ermittlern?)\s+(?:[\p{L}\p{N}_-]+\s+){0,4}ins\s+netz\s+gegangen\b/giu, " ");
+  const topics = TOPIC_RULES.filter(([topic, pattern]) => pattern.test(topic === "Energie" ? energyTopicText : text)).map(([topic]) => topic);
   if (!topics.length) topics.push(source.topic || item.source_topic || "Politik");
   const dimensions = [];
   if (/\b(arbeit|sozial|gesund|bildung|wohnen|armut|menschenrecht|verbraucher|familie|pflege)\w*/i.test(text)) dimensions.push("Mensch");
