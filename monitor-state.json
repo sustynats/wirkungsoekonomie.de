@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-14T11:35:59.457Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2650,11 +2654,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/keine-lebensgefahr-polizist-schiesst-autofahrer-in-berlin-mitte-an-b54a19/": {
         "first_seen_at": "2026-10-14T11:06:05.104Z",
         "source_at": "2026-10-14T10:21:13.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/naturgewalt-822f5d/": {
+        "first_seen_at": "2026-10-14T11:35:59.457Z",
+        "source_at": "2026-10-14T10:45:12.000Z"
       }
     },
-    "last_new_at": "2026-10-14T11:06:05.104Z",
-    "checked_at": "2026-10-14T11:21:05.744Z",
-    "last_current_new_at": "2026-10-14T11:06:05.104Z"
+    "last_new_at": "2026-10-14T11:35:59.457Z",
+    "checked_at": "2026-10-14T11:35:59.457Z",
+    "last_current_new_at": "2026-10-14T11:35:59.457Z"
   },
   "recovery_attempts": [
     {
