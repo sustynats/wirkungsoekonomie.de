@@ -440,6 +440,33 @@ test("the same politician and court do not make separate legal questions a concr
   assert.deepEqual(relatedStories(ballot, [ballot, citizenship]), []);
 });
 
+test("temporary closures do not link Iguazú waterfalls to unrelated airports", () => {
+  const iguazu = story("iguazu", "Laut stern: Besuchersteg an den Iguazú-Wasserfällen vorübergehend gesperrt", {
+    source_summary: "Der stern berichtet über eine vorübergehende Sperrung des Besucherstegs an den Iguazú-Wasserfällen. Als Grund werden Sicherheitsbedenken genannt. Die Wasserfälle liegen an der Grenze zwischen Argentinien und Brasilien. Nach dem Bericht führte der Fluss nach ergiebigen Regenfällen stark aufgewühltes Wasser. Der stern stellt diesen Zusammenhang mit dem Klima-Phänomen El Niño her.",
+  });
+  const counterpart = story("iguazu-flood", "Laut stern: Zugang zu den Iguazú-Wasserfällen wegen Hochwassers gesperrt", {
+    source_summary: "Der stern berichtet, dass die Iguazú-Wasserfälle an der Grenze zwischen Brasilien und Argentinien wegen Hochwassers für Touristen gesperrt wurden. Die Sperrung betrifft den Zugang zum Nationalpark Iguazú. Nach dem Bericht warnten Behörden außerdem vor steigenden Pegeln der Flüsse Paraná und Uruguay. Als Auslöser werden Regenfälle im Zusammenhang mit dem Klima-Phänomen El Niño genannt.",
+  });
+  const nuremberg = story("nuremberg", "Flughafen Nürnberg vorübergehend gesperrt - laut Polizei keine Gefahr", {
+    source_summary: "Der Deutschlandfunk berichtet über eine vorübergehende Sperrung des Flughafens Nürnberg wegen einer sogenannten Luftnotlage. Nach Angaben der Polizei bestand keine Gefahr; die Ermittlungen zur Ursache des Alarms laufen weiter. Laut dem Bericht sahen drei Piloten unabhängig voneinander ein Objekt, bei dem es sich möglicherweise um eine Drohne handelte.",
+  });
+  const stuttgart = story("stuttgart", "Laut SWR: Flughafen Stuttgart nach Bombenbehauptung vorübergehend gesperrt", {
+    source_summary: "Der SWR berichtet über einen Polizeieinsatz am Flughafen Stuttgart nach der Äußerung eines Mannes an einem Gate, er habe eine Bombe dabei. Der Flugbetrieb wurde laut dem Bericht kurzzeitig eingestellt; die Bundespolizei begründet die weiträumige Sperrung damit, dass der Mann zuvor die Sicherheitskontrolle passiert habe und sich im Gate-Bereich bewegt habe.",
+  });
+  // In a real-sized corpus generic closure words fall below the frequency cap.
+  const corpus = [iguazu, counterpart, nuremberg, stuttgart,
+    ...Array.from({ length: 20 }, (_, i) => story(`other-${i}`, `Unabhängiges Ereignis ${i}`))];
+  const before = structuredClone(corpus);
+  assert.deepEqual(relatedStories(iguazu, corpus).map(({ story }) => story.story_id), ["iguazu-flood"]);
+  assert.deepEqual(corpus, before, "display links cannot mutate articles or histories");
+});
+
+test("inflected closure wording alone is not a concrete common object", () => {
+  const bridge = story("bridge", "Vorübergehende Sperrung: gesperrte Brücke in Hamburg", { source_summary: "Vorübergehende Sperrungen aus Sicherheitsgründen." });
+  const museum = story("museum", "Vorübergehende Sperrung: gesperrte Ausstellung in Dresden", { source_summary: "Vorübergehende Sperrungen aus Sicherheitsgründen." });
+  assert.deepEqual(relatedStories(bridge, [bridge, museum]), []);
+});
+
 test("headless runs consolidate before AI and never retry a retired duplicate", async () => {
   const registrySource = { source_id: "test", publisher_id: "test", name: "Test", url: "https://example.org/", feed_url: "https://example.org/rss", enabled: true, source_type: "official_rss", primary_source: true, access: { status: "public", article: "metadata_only", cost_usd: 0 }, frequency_class: "high_frequency" };
   const canonical = structuredClone(dormagen);
