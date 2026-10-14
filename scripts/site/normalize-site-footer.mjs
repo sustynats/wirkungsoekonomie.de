@@ -41,7 +41,12 @@ if(process.argv[1] && path.resolve(process.argv[1])===new URL(import.meta.url).p
     if(relative.startsWith('en/'))continue; // Zurückgestellte Sprachfassung: bisheriges Verhalten erhalten.
     if(prefixes.length && !prefixes.some(prefix=>relative.startsWith(prefix)))continue;
     const base=pageBase(relative);
-    const before=fs.readFileSync(file,'utf8'),after=normalizeSiteFooter(before,base,renderFormerFooterLinks(relative,base));
+    const before=fs.readFileSync(file,'utf8');
+    let after=normalizeSiteFooter(before,base,renderFormerFooterLinks(relative,base));
+    if(process.argv.includes('--artifact')){
+      // The English edition is deliberately offline in the public artifact.
+      after=after.replace(`<a href="${base}en/" data-nav-match="en/">English</a>\n`,'');
+    }
     if(after!==before){fs.writeFileSync(file,after);changed++;}
   }
   console.log(`normalized site footers: ${changed}`);
