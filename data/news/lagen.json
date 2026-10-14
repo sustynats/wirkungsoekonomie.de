@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-14T10:00:00.000Z",
+  "updated_at": "2026-10-14T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-14-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-14",
+      "window_from": "2026-10-14T10:00:00.000Z",
+      "window_to": "2026-10-14T16:00:00.000Z",
+      "stand": "2026-10-14T16:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 5,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut Regierung in Seoul: Explosion einer Mine verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-14T15:59:18.077Z",
+          "score": 7.7481
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt in Kraft: Spritpreise sinken zunächst, dauerhafte Entlastung bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-14T15:10:56.525Z",
+          "score": 5.6137
+        },
+        {
+          "story_id": "wt-9c70735ad8827a51",
+          "slug": "kriminalitat-wieder-schusse-auf-geschafte-polizei-verstarkt-prasenz-827a51",
+          "title": "Bielefeld: Wieder Schüsse auf Geschäfte – laut Polizei wird Präsenz verstärkt",
+          "state": "neu",
+          "at": "2026-10-14T14:39:01.519Z",
+          "score": 5.7751
+        },
+        {
+          "story_id": "wt-e0ef6e236b1c31e3",
+          "slug": "kriminalitat-nach-fund-einer-leiche-polizei-nimmt-tatverdachtigen-fest-1c31e3",
+          "title": "Laut stern: Nach Fund einer Leiche nimmt Polizei Tatverdächtigen fest",
+          "state": "neu",
+          "at": "2026-10-14T14:37:48.283Z",
+          "score": 5.7717
+        },
+        {
+          "story_id": "wt-604a76f33ff6950a",
+          "slug": "kriminalitat-messerangriff-an-schule-15-jahriger-soll-in-haft-f6950a",
+          "title": "Messerangriff an Schule: Laut stern wurden ein Schüler und eine Lehrerin verletzt",
+          "state": "neu",
+          "at": "2026-10-14T12:13:49.969Z",
+          "score": 5.3718
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut Tagesspiegel: Ölpreisschock setzt Euroraum unter Inflationsdruck – EZB-Zinsschritt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-14T11:48:51.123Z",
+          "score": 7.0524
+        },
+        {
+          "story_id": "wt-e11db6fce9822f5d",
+          "slug": "naturgewalt-822f5d",
+          "title": "Laut stern: Besuchersteg an den Iguazú-Wasserfällen vorübergehend gesperrt",
+          "state": "neu",
+          "at": "2026-10-14T11:01:17.921Z",
+          "score": 5.1703
+        },
+        {
+          "story_id": "wt-434a6be9eab54a19",
+          "slug": "keine-lebensgefahr-polizist-schiesst-autofahrer-in-berlin-mitte-an-b54a19",
+          "title": "Laut stern: Polizist schießt Autofahrer nach Verfolgungsjagd in Berlin-Mitte an",
+          "state": "neu",
+          "at": "2026-10-14T10:32:30.770Z",
+          "score": 3.0903
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-14-mittagslage",
       "slot": "mittagslage",
