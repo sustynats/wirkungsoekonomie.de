@@ -350,6 +350,27 @@ test("Regelbasierter Relevanzfilter priorisiert materielle Primärquellen", () =
   assert.equal(high.analysis_type, "ex_ante");
 });
 
+test("der Polizei ins Netz gegangen ist kein Energiethema und ändert keine Prüfgates", () => {
+  for (const phrase of ["der Polizei ins Netz gegangen", "der Polizei nun ins Netz gegangen", "den Fahndern endlich ins Netz gegangen", "den Ermittlern jetzt endgültig ins Netz gegangen"]) {
+    const item = { title: "Nach Leichenfund: Verdächtiger festgenommen", summary: `Ein Mann starb durch eine Schussverletzung. Ein Verdächtiger ist ${phrase}.`, categories: [], source_topic: "Gesellschaft" };
+    const before = structuredClone(item);
+    const classified = classifyItem(item, { topic: "Gesellschaft" });
+    const control = classifyItem({ ...item, summary: item.summary.replace(phrase, "von Beamten festgenommen") }, { topic: "Gesellschaft" });
+    assert.deepEqual(classified.topics, ["Gesellschaft"], phrase);
+    assert.deepEqual(classified, control, "Relevanz, Status, Dimensionen und Inhaltsgates bleiben unverändert");
+    assert.deepEqual(item, before, "keine Quellen- oder Aktenänderung");
+  }
+});
+
+test("echte Netz-Meldungen behalten Energie, auch neben einer Festnahme", () => {
+  for (const title of ["Windpark ist ins Netz gegangen", "Solaranlage geht ans Netz", "Netzausbau kommt voran", "Polizei untersucht Sabotage am Stromnetz", "Kraftwerk bleibt am Netz"]) {
+    const classified = classifyItem({ title, summary: "", categories: [] }, { topic: "Gesellschaft" });
+    assert.ok(classified.topics.includes("Energie"), title);
+  }
+  const mixed = classifyItem({ title: "Stromausfall nach Sabotage", summary: "Ein Verdächtiger ist der Polizei nun ins Netz gegangen.", categories: [] }, { topic: "Gesellschaft" });
+  assert.ok(mixed.topics.includes("Energie"), "eigenständige Energiebegriffe bleiben erhalten");
+});
+
 test("Relevanzfilter verwechselt modern und Modelle nicht mit Mode", () => {
   const transparency = classifyItem({
     title: "Grüne fordern modernes Bundestransparenzgesetz",
