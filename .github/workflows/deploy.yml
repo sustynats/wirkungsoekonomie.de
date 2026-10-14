@@ -371,9 +371,12 @@ jobs:
           publish_immutable_asset \
             'assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx' \
             'WOeK_Masterregister_v1.5_2026-08-21.xlsx'
+          # Das alte v1.6-Asset bleibt als historische Originalfassung
+          # unverändert im Release. Die bereinigte öffentliche Fassung wird
+          # unter einem eigenen, unveränderlichen Namen ausgeliefert.
           publish_immutable_asset \
             'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf' \
-            'WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf'
+            'WOeK_Begriffsleitfaden_fuehrend_v1.6-bereinigt-2defe3b6.pdf'
           publish_immutable_asset \
             'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf' \
             'WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf'
