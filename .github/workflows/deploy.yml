@@ -374,12 +374,18 @@ jobs:
           # Das alte v1.6-Asset bleibt als historische Originalfassung
           # unverändert im Release. Die bereinigte öffentliche Fassung wird
           # unter einem eigenen, unveränderlichen Namen ausgeliefert.
-          publish_immutable_asset \
+          cp \
             'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf' \
-            'WOeK_Begriffsleitfaden_fuehrend_v1.6-bereinigt-2defe3b6.pdf'
+            "$RUNNER_TEMP/WOeK_Begriffsleitfaden_fuehrend_v1.6-bereinigt-2defe3b6.pdf"
           publish_immutable_asset \
+            "$RUNNER_TEMP/WOeK_Begriffsleitfaden_fuehrend_v1.6-bereinigt-2defe3b6.pdf" \
+            'WOeK_Begriffsleitfaden_fuehrend_v1.6-bereinigt-2defe3b6.pdf'
+          cp \
             'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf' \
-            'WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf'
+            "$RUNNER_TEMP/WOeK_Begriffsleitfaden_fuehrend_v1.7-bereinigt-89c83f3d.pdf"
+          publish_immutable_asset \
+            "$RUNNER_TEMP/WOeK_Begriffsleitfaden_fuehrend_v1.7-bereinigt-89c83f3d.pdf" \
+            'WOeK_Begriffsleitfaden_fuehrend_v1.7-bereinigt-89c83f3d.pdf'
 
           # Die Journal-Lesefassungen liegen seit dem 20.09.2026 ebenfalls im
           # Release. Sie bekommen ein eigenes, weil ein Release hoechstens 1000
