@@ -24,8 +24,8 @@ test("opinion and analysis is a shared label, not a new route or fabricated hist
     assert.match(html, /Meinung &amp; Analyse/);
     assert.ok(html.includes(`https://wirkungsoekonomie.de/wirkungsticker/analyse/${record.slug}/`));
     assert.ok(html.includes(`"datePublished":"${record.published_at}"`));
-    assert.equal(html.split(EDITORIAL_RESPONSIBILITY).length - 1, 1);
-    assert.ok(html.indexOf("news-editorial-byline") < html.indexOf(EDITORIAL_RESPONSIBILITY));
+    assert.equal(html.split(EDITORIAL_RESPONSIBILITY).length - 1, 0);
+    assert.doesNotMatch(html, /Themenauswahl und redaktionelle Verantwortung liegen bei Natalie Weber/);
     if (!record.author_perspective) assert.doesNotMatch(html, /id="meine-einordnung"/);
   }
   assert.match(AUTHOR_ANALYSIS_RULE, /Fakten/);
