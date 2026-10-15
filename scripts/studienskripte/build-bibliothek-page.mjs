@@ -14,134 +14,35 @@ for (const script of releasedScripts) {
   byTrack.set(script.track, list);
 }
 
-function esc(value) {
-  return String(value ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
+import { historicalPublicScriptBody, historicalHeadingTitle, legacyParagraphFingerprint, historicalHtmlText } from './legacy-public-script.mjs';
+import { esc, renderReader } from './reader-renderer.mjs';
 
-function statusLabel(status) {
-  if (status === "pilot-arbeitsfassung") return "Pilot-Arbeitsfassung";
-  if (status === "rohfassung-v0") return "Rohfassung V0";
-  if (status === "studienskript-v1-rohfassung") return "V1-Rohfassung";
-  if (status === "studienskript-v1") return "Studienskript V1";
-  return status;
-}
-
-function slugify(value) {
-  return String(value ?? "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "") || "abschnitt";
-}
-
-function inlineHtml(value) {
-  const text = String(value ?? "");
-  const parts = [];
-  const linkPattern = /\[([^\]]+)\]\(([^)\s]+)(?:\s+[^)]*)?\)/g;
-  let offset = 0;
-  let match;
-  const emphasis = (part) => esc(part)
-    .replace(/`([^`]+)`/g, "<code>$1</code>")
-    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, "<em>$1</em>");
-  while ((match = linkPattern.exec(text))) {
-    parts.push(emphasis(text.slice(offset, match.index)));
-    const href = match[2].trim();
-    const external = /^https?:\/\//i.test(href);
-    parts.push(`<a class="text-link" href="${esc(href)}"${external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${emphasis(match[1])}</a>`);
-    offset = linkPattern.lastIndex;
-  }
-  parts.push(emphasis(text.slice(offset)));
-  return parts.join("");
-}
-
-function renderReader(markdown) {
-  const lines = markdown.replace(/\r\n/g, "\n").replace(/^---[\s\S]*?---\s*/, "").split("\n");
-  const toc = [];
-  const html = [];
-  const used = new Set();
-  let paragraph = [];
-  let list = [];
-  let table = [];
-  let paragraphCount = 0;
-  const uniqueId = (value) => {
-    const base = slugify(value);
-    let id = base;
-    let suffix = 2;
-    while (used.has(id)) id = `${base}-${suffix++}`;
-    used.add(id);
-    return id;
-  };
-  const flushParagraph = () => {
-    if (!paragraph.length) return;
-    paragraphCount += 1;
-    html.push(`<p id="${uniqueId(`absatz-${paragraphCount}`)}">${inlineHtml(paragraph.join(" "))}</p>`);
-    paragraph = [];
-  };
-  const flushList = () => {
-    if (!list.length) return;
-    html.push(`<ul>${list.map((item) => `<li>${inlineHtml(item)}</li>`).join("")}</ul>`);
-    list = [];
-  };
-  const flushTable = () => {
-    if (!table.length) return;
-    const rows = table
-      .map((row) => row.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()))
-      .filter((row) => !row.every((cell) => /^:?-{3,}:?$/.test(cell)));
-    if (rows.length > 1) {
-      const [head, ...body] = rows;
-      html.push(`<div class="table-wrap"><table class="data-table"><thead><tr>${head.map((cell) => `<th>${inlineHtml(cell)}</th>`).join("")}</tr></thead><tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${inlineHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
-    }
-    table = [];
-  };
-  const heading = (level, text) => {
-    flushParagraph();
-    flushList();
-    flushTable();
-    const plain = String(text).replace(/[*`]/g, "").trim();
-    const id = uniqueId(plain);
-    toc.push({ level, text: plain, id });
-    html.push(`<h${level} id="${id}">${inlineHtml(plain)}</h${level}>`);
-  };
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    if (!line) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      continue;
-    }
-    const match = line.match(/^(#{1,4})\s+(.+)$/);
-    if (match) {
-      heading(Math.max(2, match[1].length), match[2]);
-    } else if (line.startsWith("|") && line.endsWith("|")) {
-      flushParagraph();
-      flushList();
-      table.push(line);
-    } else if (/^(?:[-*]|\d+\.)\s+/.test(line)) {
-      flushParagraph();
-      flushTable();
-      list.push(line.replace(/^(?:[-*]|\d+\.)\s+/, ""));
-    } else {
-      flushList();
-      flushTable();
-      paragraph.push(line);
-    }
-  }
-  flushParagraph();
-  flushList();
-  flushTable();
-  return { toc, html: html.join("\n") };
-}
+const legacyAnchors = JSON.parse(readFileSync(join(ROOT, 'content/studienskripte/legacy-public-anchors.json'), 'utf8')).readers;
 
 function buildReaderPage(script) {
   const source = readFileSync(join(ROOT, script.masterPath), "utf8");
-  const { toc, html } = renderReader(source);
+  const rendered = renderReader(historicalPublicScriptBody(source, {publicPageExists: file => existsSync(join(ROOT,file))}));
+  const previous = legacyAnchors[script.slug];
+  if (!previous) throw new Error('Missing public anchor snapshot: '+script.slug);
+  const key = value => historicalHeadingTitle(value).replace(/[*`_]/g,'').trim();
+  const oldByTitle = new Map();
+  for(const heading of previous.headings){const list=oldByTitle.get(key(heading.text))??[];list.push(heading.id);oldByTitle.set(key(heading.text),list);}
+  const idMap = new Map();const used=new Set();
+  const toc=rendered.toc.map(item=>{const candidates=oldByTitle.get(key(item.text))??[];let id=candidates.find(value=>!used.has(value))??item.id;used.add(id);idMap.set(item.id,id);return {...item,id};});
+  let html=rendered.html.replace(/\bid="([^"]+)"/g,(_,id)=>`id="${esc(idMap.get(id)??id)}"`);
+  const byParagraph=new Map();
+  for(const paragraph of previous.paragraphs){const key=paragraph.section_id+':'+paragraph.fingerprint;const list=byParagraph.get(key)??[];list.push(paragraph.id);byParagraph.set(key,list);}
+  const reserved=new Set(previous.ids);let section='';
+  html=html.replace(/<h[1-6]\b[^>]*id="([^"]+)"[^>]*>[\s\S]*?<\/h[1-6]>|<p\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/p>/g,(block,headingId,paragraphId,content)=>{
+    if(headingId){section=headingId;return block;}
+    const candidates=byParagraph.get(section+':'+legacyParagraphFingerprint(historicalHtmlText(content)))??[];
+    let id=candidates.find(value=>!used.has(value));
+    if(!id){id=reserved.has(paragraphId)?'archiv-'+paragraphId:paragraphId;while(used.has(id)||reserved.has(id))id='archiv-'+id;}
+    used.add(id);return block.replace(`id="${paragraphId}"`,`id="${esc(id)}"`);
+  });
+  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
+  if(new Set(ids).size!==ids.length)throw new Error('Duplicate historical anchor: '+script.slug);
+  const aliases=previous.ids.filter(id=>!ids.includes(id)).map(id=>`<span id="${esc(id)}"></span>`).join('');
   const base = "../../../";
   const destination = join(ROOT, script.publicPath, "index.html");
   mkdirSync(join(ROOT, script.publicPath), { recursive: true });
@@ -155,13 +56,15 @@ function buildReaderPage(script) {
     <meta name="search_title" content="${esc(script.code)}: ${esc(script.title)}">
     <meta name="search_section" content="Bibliothek · Studienskripte">
     <meta name="search_type" content="Studienskript">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/${esc(script.publicPath)}">
     <link rel="stylesheet" href="${base}assets/css/style.css">
   </head>
   <body>
     ${renderSiteHeader(base, 'de')}
     <main data-pagefind-body>
-      <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Öffentliche Lesefassung · redaktionell freigegeben</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
-      <section class="section"><div class="card"><dl class="document-card-meta"><dt>Track</dt><dd>${esc(script.track)}</dd><dt>Status</dt><dd>Freigegebene Lesefassung</dd></dl></div></section>
+      <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Historische Lesefassung</p><div aria-hidden="true" class="historical-anchor-aliases">${aliases}</div><p>Diese Fassung dokumentiert einen früheren Skriptstand. <a href="../v4/">Zu den aktuellen Vorlesungsskripten des Curriculum 4.0</a>.</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
+      <section class="section"><div class="card"><dl class="document-card-meta"><dt>Studienbereich</dt><dd>${esc(script.track)}</dd><dt>Status</dt><dd>Historischer Skriptstand</dd></dl></div></section>
       <section class="section"><nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><div class="toc-links">${toc.map((item) => `<a class="toc-level-${item.level}" href="#${item.id}">${esc(item.text)}</a>`).join("")}</div></nav></section>
       <article class="section narrow">${html}</article>
     </main>
@@ -200,19 +103,19 @@ const sections = Array.from(byTrack.entries()).map(([track, scripts]) => `
       <section class="section">
         <div class="section-header">
           <h2>${esc(track)}</h2>
-            <p>${scripts.length} redaktionell freigegebene Lesefassungen.</p>
+            <p>${scripts.length} frühere Lesefassungen.</p>
         </div>
         <div class="knowledge-library-grid">
           ${scripts.map((script) => `
           <article class="knowledge-library-card">
             <div class="document-card-badges">
               <span class="status-badge">Studienskript</span>
-              <span class="status-badge">${esc(statusLabel(script.status))}</span>
+              <span class="status-badge">Historische Lesefassung</span>
             </div>
             <h3>${esc(script.code)}: ${esc(script.title)}</h3>
-            <p>Diese öffentliche Lesefassung ist redaktionell freigegeben. PDF, Video und Präsentationsmaterial können unabhängig davon ergänzt werden.</p>
+            <p>Diese Lesefassung dokumentiert einen früheren Skriptstand. Der aktuelle Lehrstand steht im Curriculum 4.0.</p>
             <dl class="document-card-meta">
-              <dt>Status</dt><dd>Freigegeben</dd>
+              <dt>Fassung</dt><dd>Historischer Skriptstand</dd>
               <dt>Format</dt><dd>Online-Lesefassung</dd>
             </dl>
             <p><a class="btn btn-primary" href="${esc(script.slug)}/">Lesefassung öffnen</a></p>
@@ -243,15 +146,15 @@ const html = `<!DOCTYPE html>
       </section>
       <section class="section section-muted">
         <div class="section-header">
-          <h2>Produktionsstand</h2>
-          <p>${releasedScripts.length} Studienskripte sind redaktionell freigegeben und hier online lesbar. Weitere Formate wie PDF, Video und Präsentationen erscheinen separat, sobald sie final vorliegen.</p>
+          <h2>Frühere Skriptfassungen</h2>
+          <p>${releasedScripts.length} frühere Lesefassungen bleiben als Archiv zugänglich. Den aktuellen Lehrstand findest du in den <a href="v4/">178 Vorlesungsskripten des Curriculum 4.0</a>.</p>
         </div>
       </section>
 ${sections}
       <section class="section section-muted">
         <div class="section-header">
           <h2>Grenze zu Prüfungen</h2>
-          <p>Mini-Quiz und Verständnisfragen können im Skript öffentlich stehen. Zertifikatsprüfungen, Antwortlogik, CorrectAnswer-Felder, Scoring-Regeln und Fallrubrics bleiben geschützt in der Akademie-App.</p>
+          <p>Die öffentlichen Skripte enthalten Übungen und Verständnisfragen. Zertifikatsprüfungen und deren Lösungen sind nur im persönlichen Studienraum zugänglich.</p>
         </div>
       </section>
     </main>
@@ -264,3 +167,5 @@ writeFileSync(join(ROOT, "bibliothek", "studienskripte", "index.html"), html.rep
 for (const script of releasedScripts) buildReaderPage(script);
 const cleanedReaderPages = sanitizeExistingReaderPages();
 if (cleanedReaderPages) console.log(`Redaktionelle Produktionshinweise aus ${cleanedReaderPages} Studienskript-Lesefassungen entfernt.`);
+
+await import('./build-v4-readers.mjs');

@@ -1,3 +1,4 @@
+import { hasNegationNear, cleanClaimHtml as cleanHtml } from './claim-negation.mjs';
 import fs from "node:fs";
 import path from "node:path";
 
@@ -181,21 +182,6 @@ collectHtml(".");
 function isNoindex(html) {
   return /<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*\bnoindex\b/i.test(html)
     || /<meta\b[^>]*\bcontent=["'][^"']*\bnoindex\b[^"']*["'][^>]*\bname=["']robots["']/i.test(html);
-}
-
-function cleanHtml(html) {
-  return html
-    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/gi, " ")
-    .replace(/&(?:amp|quot|apos|lt|gt);/gi, " ")
-    .replace(/\s+/g, " ");
-}
-
-function hasNegationNear(text, start, end) {
-  const context = text.slice(Math.max(0, start - 130), Math.min(text.length, end + 130));
-  return /\b(?:nicht|nie|kein(?:e|en|em|er|es)?|weder|ohne|ausgeschlossen|verboten)\b/i.test(context);
 }
 
 function isExplicitlyFramedClaim(text, start, end) {

@@ -1,0 +1,1445 @@
+{
+  "date": "2026-10-15",
+  "basis": [
+    "content/grundlagen/WOEK_KERNREFERENZ.md",
+    "Begriffsleitfaden v1.8, Original 1.10.2026",
+    "T-SROI-Rechenstandard v1.1",
+    "Buch Band I 22.11 und Band II 57.8/98, Originalmanuskripte 1.10.2026",
+    "WStG 3.0 §§61/100, Original",
+    "Amtliche UStG §10 und Aktionsplan-Beschlussfassung 30.09.2026"
+  ],
+  "scope": "Gezielter Delta-Abgleich der Einstiege, Lernziele, Begriffe, Wirkpfade, Schutz-/Entscheidungslogik und betroffenen Beispiele in allen 178 Lektionen. Vorhandene August-/September-Prüfung wird für richtige Inhalte geerbt. Keine Behauptung einer neuen Vollprüfung sämtlicher empirischer oder externer Einzelaussagen.",
+  "substantive_corrections": 7,
+  "preserved_examples": [
+    "V41: automatischer Gesamtscore entscheidet keinen Steuersatz; unverändert.",
+    "GOV-11 Juli-Beteiligungsfassung und 19 Missionen ausdrücklich historisch erhalten.",
+    "V10-Rechenfall 8 auf 5 Prozent: 3 Prozentpunkte und 37,5 Prozent relativ, unverändert.",
+    "WC-V4-07 Schulungsbeispiel: 100/200 Euro je Teilnahme, beide 500 Euro je zusätzlich zurechenbarer Anwendung; unverändert."
+  ],
+  "records": [
+    {
+      "lecture_id": "WOEK-G-BASE-001",
+      "public_path": "grundstudium/base/v01-die-massstabskrise.md",
+      "public_sha256": "f5d479bdf0982c3f4ba9077115ac8f1dedf2511cac2017d5b608008d75e8d03a",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-002",
+      "public_path": "grundstudium/base/v02-wirkung-statt-kapital.md",
+      "public_sha256": "9a5a11f30e57fcce18c51f78e7d6f12d64e75b62b5f1bb72bcc8a4f3d845f12e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-003",
+      "public_path": "grundstudium/base/v03-anschluss-und-steuerungsarchitektur.md",
+      "public_sha256": "85d740d200bfd98ba56e93416f85120136a99f772a7b1c6e6bb1b2c12e2e1b9f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-004",
+      "public_path": "grundstudium/base/v04-erfolgsgroessen-unvollstaendig.md",
+      "public_sha256": "acd2d9b15fb082724928ae739821818acc116f9051bdc5e60a4ebf739f760676",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-005",
+      "public_path": "grundstudium/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md",
+      "public_sha256": "5198eccc784ffc0262a0691e6f2ecec67bef3535b9a5e23197fccecb33f05ee1",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-006",
+      "public_path": "grundstudium/base/v06-zukunftsfaehigkeit-risiko-resilienz.md",
+      "public_sha256": "ffeea0627a357a56a918d057ce0942b6d9d1a219682f28b9cf132f7a18dc9023",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-007",
+      "public_path": "grundstudium/base/v07-mensch-als-wirkungsdimension.md",
+      "public_sha256": "63236df8c1f0e4d71824c95e412031ab3903490acb14270c6ee104a89801e1fd",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-008",
+      "public_path": "grundstudium/base/v08-planet-als-wirkungsdimension.md",
+      "public_sha256": "26e320fb9ae827dd81c8cc1fce4edb76b2a57c209e8ec54e0c7fb531f0c6b201",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-009",
+      "public_path": "grundstudium/base/v09-demokratie-als-wirkungsdimension.md",
+      "public_sha256": "96c3000ce8687c80a1f9a1fabe5f16c81bde745e5df18f059983bce45f80772e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-010",
+      "public_path": "grundstudium/base/v10-wirkung-ist-nicht-absicht.md",
+      "public_sha256": "7c4e2072ffaf03d519d4ab5d3f9dfd0e0ecbfb4a586595a32d3176c9dd90a707",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Beobachtete Wirkung und kausale Attribution getrennt; Kernreferenz Abschnitt 2."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-100",
+      "public_path": "grundstudium/base/v100-praxisprojekt-indikatoren-datenquellen-ids.md",
+      "public_sha256": "69c5e107465b6f100b0ff49425bd36ac240381d347ab1492ee456466da38d471",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-101",
+      "public_path": "grundstudium/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md",
+      "public_sha256": "74766ae396e3b26d284a9b6fbb23f99a5a28a8b489312f9e54c06bc6877413dd",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-102",
+      "public_path": "grundstudium/base/v102-praxisprojekt-risiko-resilienz-transformation.md",
+      "public_sha256": "3c4820438d05b294f50a14ef8c7c3ccc565389d506c30e9b4a2cbac83df17eb7",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-103",
+      "public_path": "grundstudium/base/v103-praxisprojekt-unsicherheit-kritik.md",
+      "public_sha256": "185b8c18fa1ccfcc6a15daf3738351f8038edc37f043f559cf17385f7c69606c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-104",
+      "public_path": "grundstudium/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md",
+      "public_sha256": "0f767ff10100bb6304080d8e0e1b4ff7170fdfc18ee79f98f6a693a6b284b339",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-105",
+      "public_path": "grundstudium/base/v105-praxisprojekt-iteration-umsetzungsplan.md",
+      "public_sha256": "f314b6db84fd80e11ef0821480bb2610aada368b9c50764f7a1316266f324f8c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-106",
+      "public_path": "grundstudium/base/v106-praxisprojekt-wirkungsdossier-schreiben.md",
+      "public_sha256": "7335b88908d3c3647ef4daef63650c378081224c96a3ff79877b48023b47d021",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-107",
+      "public_path": "grundstudium/base/v107-praxisprojekt-praesentation-verteidigung.md",
+      "public_sha256": "6cb43fa5b22f621c91463a7fc3d8c57bfca507e264a3db2f0e63be24d8039c91",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-108",
+      "public_path": "grundstudium/base/v108-transferplan-persoenliche-wirkungskompetenz.md",
+      "public_sha256": "e8b8ec120181a1d6e367ff6f9e6030971a93267d1823cdc277d1e760b48460e7",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-011",
+      "public_path": "grundstudium/base/v11-positive-negative-ambivalente-wirkung.md",
+      "public_sha256": "a546917fc2ecc186d9040f8369eba7e81366c0dd78869722250f1b280cfa88bc",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-012",
+      "public_path": "grundstudium/base/v12-wirkungsempfaenger-und-wirkungsraeume.md",
+      "public_sha256": "0dad6133e907ef24456a5a6404c233bccca5ccf56c54b760d047385615a9a124",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-013",
+      "public_path": "grundstudium/base/v13-problem-review.md",
+      "public_sha256": "9e27ec5861fb33b455ace4322dd9396a52f99b6b1c6d85c14af64978d7ad8af9",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-014",
+      "public_path": "grundstudium/base/v14-goal-review.md",
+      "public_sha256": "c2975ef9873b389de8baf45a33c7936632da4d0ff8282f3187c1031836675a42",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-015",
+      "public_path": "grundstudium/base/v15-wirkpfad-evidenz-attribution.md",
+      "public_sha256": "84ec55b5279548cb481f01331d26d05f8751c97b92c328a373983a542f23c6a2",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-016",
+      "public_path": "grundstudium/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md",
+      "public_sha256": "0c5359c2ebadd44cb7e93d9ab83e68ce8fb31fffc6c62ee6f14428e431f13763",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-017",
+      "public_path": "grundstudium/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md",
+      "public_sha256": "5266087bcf502b0afda2208b7e71d7eccf736b1521d74e75f9a54e2cdac000f7",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-018",
+      "public_path": "grundstudium/base/v18-zeit-generationen-unsichtbare-betroffene.md",
+      "public_sha256": "9a797941d2e7cde3e0edbb5f78cef34145ed808b7f18c3a6469d9ef0ad76f27c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-019",
+      "public_path": "grundstudium/base/v19-wirkstoff-analogie-mechanismus-potenzial.md",
+      "public_sha256": "1ce05ec8221213868ad8abd750ea38c770e56fac539838cee1c31f5d3f17e7dd",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-020",
+      "public_path": "grundstudium/base/v20-gesellschaftliche-resonanzfaktoren.md",
+      "public_sha256": "58aa80b79f3e6692974caa98fa190c5797e9ed8f0b9a07b5bfab4592666053ba",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-021",
+      "public_path": "grundstudium/base/v21-produkte-technologien-institutionen-als-ausloeser.md",
+      "public_sha256": "2cbde69971d679ade53e4dd03691022989645b986e68d076c3f9b8eb626485dc",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-022",
+      "public_path": "grundstudium/base/v22-wirkungssprache-und-quellenklarheit.md",
+      "public_sha256": "02b8aa5fdd17636a62dbc71b7443d5762bfeee89acdc3ad475c145aa36c9504c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-023",
+      "public_path": "grundstudium/base/v23-unsicherheit-ambivalenz-transparente-bewertung.md",
+      "public_sha256": "e3ef6deb7e8d46e511e7455df1766d5161df379b1f7008360651bcc3cfa9f538",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-024",
+      "public_path": "grundstudium/base/v24-deeskalierende-demokratiestaerkende-kommunikation.md",
+      "public_sha256": "1171ef3a4749d8e16f24ccd0f1ceeb4cda976b9513c9dbbda95a07cebb33c0d3",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-025",
+      "public_path": "grundstudium/base/v25-agenda2030-und-sdgs.md",
+      "public_sha256": "05d38db15a32914afe58488f5b17d4fade91eadb9502c5814cc059a6da5d0309",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-026",
+      "public_path": "grundstudium/base/v26-sdg-plus-woek-referenzrahmen.md",
+      "public_sha256": "e4dea0617986161b9d5cad3529ca355e718bd3212b4dda3125269fbd85efabdc",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-027",
+      "public_path": "grundstudium/base/v27-referenzebenen-recht-schutzgrenzen.md",
+      "public_sha256": "15acb24fb12d8ab055a5ba61992e691a02cd651df8ba5485e745d99f6886b70d",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-028",
+      "public_path": "grundstudium/base/v28-datenwelten-reporting-staat-indikatoren.md",
+      "public_sha256": "e3e665596e36a2c0f2b1f955ba0e175f942cb6845e0baa19ebce039e795af7c5",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-029",
+      "public_path": "grundstudium/base/v29-masterregister-wirkindikatorenregister.md",
+      "public_sha256": "5a93a4e76b28352f868c1e02ef2bedddef08116f80427ff9fa14b7082e584c44",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-030",
+      "public_path": "grundstudium/base/v30-datenqualitaet-provenienz-unsicherheit.md",
+      "public_sha256": "26ea94c614f0410c773bca4cda6d52449907d4ba8eaf99087c313a7d5c53a9b3",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-031",
+      "public_path": "grundstudium/base/v31-aggregation-und-nettowirkung.md",
+      "public_sha256": "af8f3786f275b6f44273d572f51098fcc1b8b23c714dc4de658fde37130c93b4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-032",
+      "public_path": "grundstudium/base/v32-scorecards-bewertungsprofile.md",
+      "public_sha256": "c0ac94d225b5cd3652df9cc656253f37c0734110d313f46b806f8865160ef4ef",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-033",
+      "public_path": "grundstudium/base/v33-nwi-vs-t-sroi.md",
+      "public_sha256": "839f6d00f918d9d8cf5c237c899e083cf254d987513048b5c4ac31e43c675ee3",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Unbelegte Überlegenheitsformulierung entfernen und die beschlossene Euro-zu-Euro-Rechnung abgrenzen; Rechenstandard v1.1. Rechenstandard v1.1: G=0 sperrt die positive Kennzahl selbst, nicht nur die automatische Entscheidung."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-034",
+      "public_path": "grundstudium/base/v34-reverse-merit-order.md",
+      "public_sha256": "2242eb94fd062baa5443b7cf68fecef92354fe334baee1268ce0183f30fe71b4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-035",
+      "public_path": "grundstudium/base/v35-nichtkompensation.md",
+      "public_sha256": "972e208a69e5d5ed2359dd94ca668af0307065c2a4a91c95270bfa699b333c92",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-036",
+      "public_path": "grundstudium/base/v36-profile-lesen-begruenden.md",
+      "public_sha256": "8a241a587cc5ec0098c9f8e40f88ad367c9cf7c75c5f4aff77194e474847184b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-037",
+      "public_path": "grundstudium/base/v37-externalitaeten-und-versteckte-folgekosten.md",
+      "public_sha256": "e92acad3054457ab553f04a7397c40a9d9c5ab77d7233bfba2ed9b1426fd5189",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-038",
+      "public_path": "grundstudium/base/v38-preis-als-wirkungssignal.md",
+      "public_sha256": "ea556a62ed12ff4739b8293f6da93518498cfa82716efffc1ab23b3f52d97efd",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-039",
+      "public_path": "grundstudium/base/v39-verbraucherinformation-soziale-abfederung.md",
+      "public_sha256": "e4541594025957df5c14df65e1c6a2daddba22939bfd9fc36365f9161b7feba1",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-040",
+      "public_path": "grundstudium/base/v40-wirkungssteuergesetz-als-policy-modell.md",
+      "public_sha256": "a312b7bf8279719bd2ca19894d71a14fb06ac5d90fd4a56b5c546fb14ce8113b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-041",
+      "public_path": "grundstudium/base/v41-wirkungssteuer-rate-design.md",
+      "public_sha256": "71b2f25defb48aa1a613568f4f6e76f73cb1b859b0993c0c289e62d578627775",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-042",
+      "public_path": "grundstudium/base/v42-lieferketten-importwirkung-und-grenzausgleich.md",
+      "public_sha256": "d3e0ffa2aade056e76fd8c971e3442ae0e13667d51d44edf01696f961ae39015",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-043",
+      "public_path": "grundstudium/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md",
+      "public_sha256": "821d61439d1807585a6a8992d314dc01f8ef7a7f9c9d7f84107d178fb6d21871",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-044",
+      "public_path": "grundstudium/base/v44-oeffentliche-beschaffung-transformationshebel.md",
+      "public_sha256": "322fb22667e282028ac4927c5c1b745fef52963cf2b655a63d2be66bf4f6238f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-045",
+      "public_path": "grundstudium/base/v45-wirkungsberichte-evaluation-reality-check.md",
+      "public_sha256": "ba8e654ebd8fafaa846b84632a3a2c5873515be7c403b6eaa2e2dfbbd44cf7ba",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-046",
+      "public_path": "grundstudium/base/v46-kapitalwirkung-und-rendite.md",
+      "public_sha256": "4c1c49ce98e92abf803d77d66bb560ccfa210732d13a26f1d44ac6066d371c08",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-047",
+      "public_path": "grundstudium/base/v47-t-sroi-investitionscontrolling.md",
+      "public_sha256": "b94e7497005a46d4c39175e670c39f750c4e2261c6bfeb088e9c2bd284f62d2a",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Total Impact ist keine alternative Auflösung des T; maßgeblich ist T-SROI-Rechenstandard v1.1, Rechenformel und Keine freie Multiplikatorlogik."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-048",
+      "public_path": "grundstudium/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
+      "public_sha256": "abcd979bd9dde2b487304099a4a086621bd4d15c8ab9cbbb4046704ac00a6e6e",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Wirkungsfonds wurde auf Investmentfonds verengt; Finanzierungsadditionalität mit realer Wirkung gleichgesetzt. Belege: Band I 22.11, Band II 57.8/98, WStG 3.0 §§ 61/100, UStG § 10 Abs. 1 (amtlich geprüft 14.10.2026), Kernreferenz 9.1-9.5."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-049",
+      "public_path": "grundstudium/base/v49-wirkungswohlstand.md",
+      "public_sha256": "87cd75f7193f5d2fa69979e88f895c845d725988b1d6cdf24816294108bd8d5d",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-050",
+      "public_path": "grundstudium/base/v50-wirkungs-bip-modell-und-grenzen.md",
+      "public_sha256": "4e02cb5fa994c28ee8d687bcee2a5c82abf9565cf940ca879ec623ab49f5f33e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-051",
+      "public_path": "grundstudium/base/v51-krisen-bip-und-schadensvermeidung.md",
+      "public_sha256": "520a8c4f349399972e45e241750f30d784cbb9ae792e12e8672bcb7a2769ddaf",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-052",
+      "public_path": "grundstudium/base/v52-wirkungseinkommen-policy-modell.md",
+      "public_sha256": "ca23a7a9dba76022ef5fd2aeec57c3ab38b6e9b604a75b4e482b7370ac30aa9e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-053",
+      "public_path": "grundstudium/base/v53-wirkungsrente-generationengerechte-sicherung.md",
+      "public_sha256": "cccde632a053a366083fa6cbb36dbfb2e1463b98f6f9ac364befd7168a91c1c4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-054",
+      "public_path": "grundstudium/base/v54-arbeit-wirkleistung-und-verteilung.md",
+      "public_sha256": "abedff78d4b900327b25ee2a7a6e9397f88d5c4c07fa74f8c75b009343ee0035",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-055",
+      "public_path": "grundstudium/base/v55-wirkungsfinanzpolitik-policy-architektur.md",
+      "public_sha256": "d4e5b1d7c0758f4cdb9e33a1d993e34befc0c42d7abcc05f7d723dc2405a4bf4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-056",
+      "public_path": "grundstudium/base/v56-geld-kredit-und-kapitallenkung.md",
+      "public_sha256": "8d8db07af7adbdc39d8971e7ffd045c51b29c8ed8625d0db6e88fa2f014d8f5b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-057",
+      "public_path": "grundstudium/base/v57-wirkungsindikatoren-volkswirtschaften.md",
+      "public_sha256": "80558e49227c57576b12a8bc254840486727e1fbd6bd767fd2ed096753f0bb4a",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-058",
+      "public_path": "grundstudium/base/v58-wachstum-suffizienz-wohlstand.md",
+      "public_sha256": "57f7b517690a8ed3e464c01ccbd8e225d79aaf088e56a9b7fc81e3ac327cc865",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-059",
+      "public_path": "grundstudium/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md",
+      "public_sha256": "63083c924c49da844444a3c68234f0f076bb8cfb39e44f59da8409d3649c38f4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-060",
+      "public_path": "grundstudium/base/v60-messgrenzen-und-monetarisierung.md",
+      "public_sha256": "439352fc268062f598ea7b4abfe078b9905a7729f2dacd8d09b8693206e988aa",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-061",
+      "public_path": "grundstudium/base/v61-resilienz-grundbegriffe.md",
+      "public_sha256": "f169ec49698c9f8b13f726ba7bf88a1dd966d6d7ed0a8e9807fe853ba786532b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-062",
+      "public_path": "grundstudium/base/v62-apparente-reaktive-aktive-leistung-resilienzanalogie.md",
+      "public_sha256": "9abe9d27d5d19e11999daf36650c689c6d60fbd7cc1abc50020e090159efa846",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-063",
+      "public_path": "grundstudium/base/v63-kipppunkte-schwellen-irreversible-schaeden.md",
+      "public_sha256": "d21d72dfa9596ce0381c1d67e5a5c0898ad2b2a857f4073f2d178aaee41b099a",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-064",
+      "public_path": "grundstudium/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md",
+      "public_sha256": "091a3e4577a824cb86298193690842d3947364f3aa68d5f75e6a5945dac7e70a",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-065",
+      "public_path": "grundstudium/base/v65-lieferkettenresilienz-abhaengigkeitsrisiken.md",
+      "public_sha256": "90f8a4fb42f96890e191355957a94038918eeea516def1c65f9f704e19b5c7ef",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-066",
+      "public_path": "grundstudium/base/v66-versorgungssicherheit-als-wirkungswert.md",
+      "public_sha256": "b88b058052eeb7e33830b002f4c379406e851e3dab4f2ec8e7e6c897ff204e69",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-067",
+      "public_path": "grundstudium/base/v67-resilienz-in-scorecards.md",
+      "public_sha256": "24629823af530a40e55a3da86fadea7aa3a0df3a03bfd54849ecd4786f76c52f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-068",
+      "public_path": "grundstudium/base/v68-praeventionswert-und-krisen-bip.md",
+      "public_sha256": "f481f03e26cdc5066287906045abc701e72f95beca4b0d8a30f87ea7f14daa23",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-069",
+      "public_path": "grundstudium/base/v69-stresstests-fruehwarnung-wirkungsradar.md",
+      "public_sha256": "071a19798ae88cc20c4b621bb3efa550b21ac21daa45212e6df21d129c336a1e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-070",
+      "public_path": "grundstudium/base/v70-oeffentlichkeit-als-infrastruktur.md",
+      "public_sha256": "f7e3c98c74a60b6133cc94ab2ab59e89664746f209ccdd0e69b0fa58dfda0566",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-071",
+      "public_path": "grundstudium/base/v71-angriffe-auf-rueckkopplung.md",
+      "public_sha256": "55f77c47fe38aa639bd9e77047cbaa052fd54193a115399f3b38de95f5ef8f95",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-072",
+      "public_path": "grundstudium/base/v72-civic-shield-resilienzdesign.md",
+      "public_sha256": "d70ce74f0e415c61c8b6782998db556a343a73b04f2df538b26606ea11dfc054",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-073",
+      "public_path": "grundstudium/base/v73-produkte-als-wirkungstraeger.md",
+      "public_sha256": "6d20aa6a980c0be2dbf8287b544965094dca854fc3dcff45b0c71aed928f8c44",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-074",
+      "public_path": "grundstudium/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md",
+      "public_sha256": "a48fe4b1f37c34d1e08c7f1b2376b06f7396e1886376ee47db2f4dc51fc79fba",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-075",
+      "public_path": "grundstudium/base/v75-digitale-produktpaesse-wirkung-am-regal.md",
+      "public_sha256": "b6e4eb83b4a4c4fe6de4189b58ff9549655f61545b338bf2b710ef5b953b47c0",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-076",
+      "public_path": "grundstudium/base/v76-unternehmen-als-wirkungssysteme.md",
+      "public_sha256": "a35af4072a5430e700e954107db1ae80ec3f70449ecf99b79a997fb5ed93b35c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-077",
+      "public_path": "grundstudium/base/v77-beschaffung-lieferantenbewertung.md",
+      "public_sha256": "5d17645670a4ff8b68d30ce7a257ca7abb0ef1aa5ec24f1b6a4df1d7ed9fa9f4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-078",
+      "public_path": "grundstudium/base/v78-wirkungscontrolling-erm-boni.md",
+      "public_sha256": "f859fae7ec8d56e677bc6140177df614ff8fd3c610f49804fd99940d5a0b20c5",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-079",
+      "public_path": "grundstudium/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md",
+      "public_sha256": "d940f4afc25a66d86572c0d1f5561c172f9a3dea59a7e58a037f2fbdd6b62273",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Inputs, Kapazitätsbestand und erbrachte Leistungen waren als Outputs gleichgesetzt; IOOI-Abgrenzung der Kernreferenz. Auch im Abschnitt Pflegequalität: Personalstellen als Input/Kapazität, geleistete Pflege als Output getrennt."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-080",
+      "public_path": "grundstudium/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md",
+      "public_sha256": "02123cb5d4f529fee4a0246bbadc131c10c29ac7ff16c8bf3813e9e8fb52c31b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-081",
+      "public_path": "grundstudium/base/v81-wohnen-landwirtschaft-regionale-wertschoepfung.md",
+      "public_sha256": "025984ed3a83fe1de669f75d27688bbb506143ab0b1b3bcc761710778dfe7edc",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-082",
+      "public_path": "grundstudium/base/v82-politische-programme-wirkungspotenziale.md",
+      "public_sha256": "fc669aa2bf3c598d081b2f967f805f7c2da89e56f6e7746fb257f8b3dc97d22a",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-083",
+      "public_path": "grundstudium/base/v83-medien-plattform-scorecards.md",
+      "public_sha256": "ec5cea6eb4beeb2be998d722c7ee7b5fbd5b29de72fafb5582d86559c96a25ce",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-084",
+      "public_path": "grundstudium/base/v84-wirkung-im-alltag-ohne-moralische-ueberforderung.md",
+      "public_sha256": "5919e3292cc8e9455695526e04fdbca7c0a8b3a13c4029c6a162ffbc1c38d736",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-085",
+      "public_path": "grundstudium/base/v85-institutionen-und-woek-governance-vorschlaege.md",
+      "public_sha256": "58a7447f51782d19e5aeff9c06fd3ee299ef7102f1dbe0d25a0f0c09d3e2f1eb",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-086",
+      "public_path": "grundstudium/base/v86-rechtsschutz-transparenz-legitimation.md",
+      "public_sha256": "2a0055c07cee284c12c0366609f883de788f3c0b99d5a575a65c1c311ba0b1db",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-087",
+      "public_path": "grundstudium/base/v87-lobbyismus-gaming-und-manipulationsschutz.md",
+      "public_sha256": "42ed4d08319d5566823c8614136a78344dfb65342bd7972ba03685867b095155",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-088",
+      "public_path": "grundstudium/base/v88-wirkungsdatenraeume-register.md",
+      "public_sha256": "10ccd5e37a82a31d048f1d37183ff1e22cde2f0fdabe40b0f7d846ba86b539c6",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-089",
+      "public_path": "grundstudium/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md",
+      "public_sha256": "621cd51cde072fdba467178d5b6c74d22563715a1af9c732cec702ee72bfa8ff",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-090",
+      "public_path": "grundstudium/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md",
+      "public_sha256": "cceb47d9a7f2e6c0d7d7cb0685a2ad1fa44644072e1a3d34730578fb2d8be8e9",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-091",
+      "public_path": "grundstudium/base/v91-importwirkung-grenzausgleich-cbam.md",
+      "public_sha256": "d361d417b11133ab4e32ba70f5cf12aee2c612549ff8975bedf64b76223c8c8b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-092",
+      "public_path": "grundstudium/base/v92-globale-fairness-statt-wirkungsimperialismus.md",
+      "public_sha256": "db59b9a3d872309df08a05da892999083c00a817e4754257b2de5ad21c6725bd",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-093",
+      "public_path": "grundstudium/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md",
+      "public_sha256": "b72c56a77d987e77fb53dafa2dd05aacbd1b9f5f00c84bcdf996f9587750f334",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-094",
+      "public_path": "grundstudium/base/v94-lange-wellen-kondratieff-hypothese.md",
+      "public_sha256": "88812760869e8cd942030a7523dfad8607394bb1a0e92153f6ef1a014b79855e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-095",
+      "public_path": "grundstudium/base/v95-piloten-sandboxes-lernregulierung.md",
+      "public_sha256": "8c7513ce4aff1dd86490fff4ea514b584f0a9f7edf60d9ed3a1aa200950a939d",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-096",
+      "public_path": "grundstudium/base/v96-wirkungsarchitektur-entwerfen.md",
+      "public_sha256": "cccdbba6781654d4a52bf98b51ffcfb05e97c90b1b4b1b021fd0d2798f4feba5",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-097",
+      "public_path": "grundstudium/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md",
+      "public_sha256": "f987a80ab90cd36b0dd8f772109cff2b3e9ab42b29cfd7615e82a0cbbfc42399",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-098",
+      "public_path": "grundstudium/base/v98-praxisprojekt-problem-review-baseline.md",
+      "public_sha256": "85c5974fe4de919d874d95194abe88b994fa027102e3253b84d08f840094a92e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-099",
+      "public_path": "grundstudium/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md",
+      "public_sha256": "e91e72aaa08a1f2ad98ad75aadf9b54cfdc9313568cf57af6a80244578332d20",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-HIST-01",
+      "public_path": "grundstudium/gov-01-von-brundtland-zu-rio.md",
+      "public_sha256": "79c38762efe53a41b0f5efc53619336e3936a41f288b26a8f78460fe7881fd7e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-HIST-02",
+      "public_path": "grundstudium/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md",
+      "public_sha256": "a871fc71d7837823c86772fb8978df6017a3a63cfe8d48e54cfef7f3fbe858ad",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-HIST-03",
+      "public_path": "grundstudium/gov-03-agenda2030-zur-dns-2025.md",
+      "public_sha256": "85777a7a93cf3dc582277b1d164cab98796b037e448f924e22bff2fe6441fe56",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-DNS-01",
+      "public_path": "grundstudium/gov-04-dns-als-managementsystem.md",
+      "public_sha256": "5487e1f8af607a8bb23056f6cecb4445ddd4d18b09725fb1de4a01d6e01e5275",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-INST-01",
+      "public_path": "grundstudium/gov-05-institutionen-und-verantwortlichkeiten.md",
+      "public_sha256": "24b8fd30cae4143a13ce324f27a34c95218281c85ad1c4cdd354b8c5458486d5",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-IND-01",
+      "public_path": "grundstudium/gov-06-dns-indikatoren-und-monitoring.md",
+      "public_sha256": "274ba0647027b7797fba1e5ea41a718b7236dcfc9574439c9eaab209f747de90",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-GFA-01",
+      "public_path": "grundstudium/gov-07-ggo-gesetzesfolgen.md",
+      "public_sha256": "5ddfec0960bb9f420ed22aef3c1e19291cee8be35f4d57fec50df80b766ffe1d",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-ENAP-01",
+      "public_path": "grundstudium/gov-08-nachhaltigkeitspruefung-und-enap.md",
+      "public_sha256": "46312fe397dff65d4c76f3e4c87393bf06f74654d8f00bc7eedb164e501a9af1",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-EGFA-01",
+      "public_path": "grundstudium/gov-09-egfa-und-e-gesetzgebung.md",
+      "public_sha256": "2d6991efdc4a7f110d2459ae2ea21583b896b88527f2fc63b994cdac180eb0db",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-PARL-01",
+      "public_path": "grundstudium/gov-10-parlamentarische-nachhaltigkeitspruefung.md",
+      "public_sha256": "10ca1c3bef5d67d25b896f0e11482491ab3e3c9f52f99010cfa8b5a654bf0b2f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-AP26-01",
+      "public_path": "grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md",
+      "public_sha256": "cd3fcbf87db44edb34d1ff4f5485988bf5a6548f345cccd2324e011d43d0eb4a",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Die als aktuell verbindlich bezeichnete Beteiligungsfassung wurde am 30.09.2026 vom Kabinettsbeschluss abgelöst. Amtliche Seite und Beschlussfassung am 15.10.2026 geprüft; Juli-Beispiele ausdrücklich historisch erhalten."
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-COMPARE-01",
+      "public_path": "grundstudium/gov-12-enap-woek-benchmarklabor.md",
+      "public_sha256": "969edf71b5f4708aa67c9db88ab50175baa9ea6b2efbc2310a4b5da7706abc46",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-001",
+      "public_path": "angebote/grundlagen/g-v4-01-wirkung-statt-nur-aktivitaet.md",
+      "public_sha256": "8c8f642acc5cfd744040ad44a89bb60580bcd75607aeaaa862e1f4f5b044add7",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-002",
+      "public_path": "angebote/grundlagen/g-v4-02-problem-ziel-wirkpfad.md",
+      "public_sha256": "4c27a405fe0ce0af9d8f3a9fb6d909380857bcffe86b1b2cd30631220cd0b543",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-003",
+      "public_path": "angebote/grundlagen/g-v4-03-referenzrahmen.md",
+      "public_sha256": "9ca00bb53ab318ff16e8d77d7c2b76412dc4d82630b7abbe8b9c9565a7a50a89",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-004",
+      "public_path": "angebote/grundlagen/g-v4-04-evidenz-indikatoren-zurechnung.md",
+      "public_sha256": "d677d4620904caa4031e952d57bd7a89b7e1120168b1cfb8b9aa8ae26961642b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-005",
+      "public_path": "angebote/grundlagen/g-v4-05-nettowirkung-schutzgrenzen.md",
+      "public_sha256": "2c16e44f1e0039a8c134b3bca970ff41db69b0dfb35339d16a7013ae7f46f197",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-006",
+      "public_path": "angebote/grundlagen/g-v4-06-optionen-steuerung-instrumente.md",
+      "public_sha256": "d27dfdb8e6b7ef46e4e29c42bb53f2c213ff245715eaeed9272136ff0b4c6ab6",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-007",
+      "public_path": "angebote/grundlagen/g-v4-07-reality-check-grenzen.md",
+      "public_sha256": "632569e27d5fa5550ecc0b4dfbb440c107aa6ec6574d5a1ff6d72532e1bb4a62",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-001",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-01-systemkontext.md",
+      "public_sha256": "0288e230ce8b06ac20f561654c6000d55fc1fa2beafb5fcdb47c7bf51497ed67",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-002",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-02-problem-baseline-empfaenger.md",
+      "public_sha256": "f15ce09e41514e7692a689cc8bf70e88d5e71367a4307019aadb35dc86306780",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-003",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-03-ziele-referenzen.md",
+      "public_sha256": "5c76ccb95d22d709a1b3f7e2501544c7923d1c64a82fc1b67911dd2d18fb92f1",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-004",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-04-wirkpfade-kausalannahmen.md",
+      "public_sha256": "52e7c01196f6467dc6046575a3ca462c25e07f6fa7317626cdb0036802925068",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-005",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-05-materialitaet-potenziale-risiken.md",
+      "public_sha256": "385ab8528d391cbd19dcb4f3a6d07abe5c83e91c1d9daf341091695c39be78a4",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-006",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-06-schutzgrenzen-nichtkompensation.md",
+      "public_sha256": "a95904417abdced0316d63a8bde08c1937d7648452ac444e129b513d27e44770",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-007",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-07-optionen-delivery-coherence.md",
+      "public_sha256": "f7db9c34f4c897754204b69d181a8c5d6256586ea87d50a0517aae4fbcb13646",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-008",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-08-strategie-entscheidungsarchitektur.md",
+      "public_sha256": "06e182d22cc10ddc5b1a497a7d73a3ad933fa58554fe4d0f7b3d9737dd005487",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-009",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-09-wirkungskommunikation.md",
+      "public_sha256": "ce11d61cdde69c766fa168cef3ebc7db2aa8262329df6b459db811e5cefa0cd1",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-010",
+      "public_path": "angebote/wirkungsmanagement/wm-v4-10-reality-check-90-tage.md",
+      "public_sha256": "0f53bc785fc8766dc7d30294565b6bf4dbf31c96fc4a60303f547b5daaaf5c02",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-001",
+      "public_path": "angebote/wirkungscontrolling/01-vom-kpi-zur-wirkungsbeobachtung.md",
+      "public_sha256": "383cf0b491d5bfe279fad3de8b8f5cd536c08bf5d56083cc8b7b5434a0427863",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-002",
+      "public_path": "angebote/wirkungscontrolling/02-datenwelten-und-quellenfunktionen.md",
+      "public_sha256": "13b27de94d913683441a82e6c1a72d152cfcce41fd975bc6600c4ff8ccf88656",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-003",
+      "public_path": "angebote/wirkungscontrolling/03-masterregister-wirkindikatorenregister-provenienz.md",
+      "public_sha256": "6b89d344c4e1775f075c690cafba22beb75e3935ae2fdfbb8c1c22d3ff0d6afa",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-004",
+      "public_path": "angebote/wirkungscontrolling/04-scorecards-als-wirkungsprofile.md",
+      "public_sha256": "a8d270a8245b1ac641148243e355fa6a7fd7813d195ba1015abf6ed547fb850f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-005",
+      "public_path": "angebote/wirkungscontrolling/05-nichtkompensation-schutzgrenzen-rmo.md",
+      "public_sha256": "e26c6a91f22039f29f72935507b7226e93a5f6d460820c47c7a2c15da0a7cf7b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-006",
+      "public_path": "angebote/wirkungscontrolling/06-monitoring-gegenfaktum-attribution-reality-check.md",
+      "public_sha256": "bc45b0fa3459430ae511f47baca2457b7ce6e01fe4e8c8d05c00c31f24909a22",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-007",
+      "public_path": "angebote/wirkungscontrolling/07-nettowirkung-transformation-investitionseffizienz.md",
+      "public_sha256": "68cb23e6bc72b8a51045eee65352bdcf1a951cde3ecac0046c2861b32a026600",
+      "delta_result": "SCOPED_CORRECTION",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "Unzulässigen neuen Alias NWI-DE entfernen; IOI und T-SROI nach dem maßgeblichen Rechenstandard v1.1 als unterschiedliche Euro-Rechnungen definieren."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-008",
+      "public_path": "angebote/wirkungscontrolling/08-controlling-in-capex-opex-portfolio-einkauf.md",
+      "public_sha256": "6f6141f3e9ec0423fab5eafc3d0de90096649d2ea71b392a2e3d2db2fd6738d5",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-009",
+      "public_path": "angebote/wirkungscontrolling/09-audit-assurance-und-gaming-schutz.md",
+      "public_sha256": "7e3e97dbd80f6c1650904db804c98c813da8dc757b26bd784c0485263d1da494",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-010",
+      "public_path": "angebote/wirkungscontrolling/10-integrierter-abschlussfall-und-lernschleife.md",
+      "public_sha256": "13ef824b4992a6a5263f0943a0c4bf44c923bfc546eec8d313ec5b88ee72298f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-001",
+      "public_path": "angebote/multiplikatoren/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md",
+      "public_sha256": "c0d533aba9f0221b0ff2a472e49e4a6bdd9a50908dbb2ead248fba6700a822c1",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-002",
+      "public_path": "angebote/multiplikatoren/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md",
+      "public_sha256": "bb9c5c99543a06beb90b17f57df911e8da0b45a94e79c880211d2080d3caaf4e",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-003",
+      "public_path": "angebote/multiplikatoren/mult-v4-03-vom-problem-zur-entscheidung.md",
+      "public_sha256": "32fe438d0d054094b981841534d64762d8eadfe8f0124445c3f5a4c00f53ad7b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-004",
+      "public_path": "angebote/multiplikatoren/mult-v4-04-didaktik-20-sekunden-2-minuten-tiefe.md",
+      "public_sha256": "bef986bcaa9e4d26d704ac49a210adc0e34c866d9f0e5049218fe6c6b315fb11",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-005",
+      "public_path": "angebote/multiplikatoren/mult-v4-05-ehrliche-wirkungskommunikation.md",
+      "public_sha256": "77f371d512f505399ef0fbb237596e237683442d98ef9ee83f11aa073e0488d5",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-006",
+      "public_path": "angebote/multiplikatoren/mult-v4-06-medien-narrative-demokratische-resilienz.md",
+      "public_sha256": "20fbf59cfe7c930d762c633e9ad9ba3fc489b8ddb873f3f5f1cd114d7b7614ca",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-007",
+      "public_path": "angebote/multiplikatoren/mult-v4-07-rolle-ethik-autorisierung.md",
+      "public_sha256": "e68866b17b3b706808879e9dbfdcaf870067780356b8694fdbb22796056856e8",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-008",
+      "public_path": "angebote/multiplikatoren/mult-v4-08-integrierte-fallarbeit-und-pruefung.md",
+      "public_sha256": "9dd9b81ad06363ac4181661278612e58bef18e5d9880104719f5519f303d01bd",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-001",
+      "public_path": "angebote/demokratie-buerger/db-v4-01-rechte-regeln-korrekturfaehigkeit.md",
+      "public_sha256": "f249e49bc0c3f0e01da2a6e8a7f86a9661823420a7a2f0f92f19c97a103d9c46",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-002",
+      "public_path": "angebote/demokratie-buerger/db-v4-02-wirkungsraeume-schutzgueter-vertrauen.md",
+      "public_sha256": "ebbb993b93b543e01ceb5732bdd76d2b772ed40902a93dce30420cacf223853f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-003",
+      "public_path": "angebote/demokratie-buerger/db-v4-03-fakt-quelle-beobachtung-wirkung.md",
+      "public_sha256": "97621a6a9b9eac6ee9d7de45d73a7b345245ad738742baf7766701c07ab2f61c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-004",
+      "public_path": "angebote/demokratie-buerger/db-v4-04-narrative-deutungsrahmen.md",
+      "public_sha256": "3c87970b0a6229dbb154b129fe7e748a23193d89653990ae7e89c559f4bdace6",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-005",
+      "public_path": "angebote/demokratie-buerger/db-v4-05-framing-wiederholung-korrektur.md",
+      "public_sha256": "25289590153b3d17c8fa74c805388b4856d84f41284df16d8e965881f664c0fc",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-006",
+      "public_path": "angebote/demokratie-buerger/db-v4-06-emotion-reaktanz-identitaet.md",
+      "public_sha256": "d7592fb230cc32ed5edeef18ce50d22a6cb3b052b9495cd9e20f2f49a277ba12",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-007",
+      "public_path": "angebote/demokratie-buerger/db-v4-07-plattformen-desinformation-synthetische-medien.md",
+      "public_sha256": "35f4a82d071e03033c83c9ef3484af34e50e25aa3c14518d8d1b988d81add1f6",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-008",
+      "public_path": "angebote/demokratie-buerger/db-v4-08-antworten-grenzen-sicherheit.md",
+      "public_sha256": "f2d49d5c6f6f3a7a938753f9287ce9181e0ad143a9cbcc620901bbd5f85e545b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-009",
+      "public_path": "angebote/demokratie-buerger/db-v4-09-gespraeche-unter-konflikt.md",
+      "public_sha256": "dd3ff3787f6b7293842f80e722c322a69f7e2e917a6a81945853977759b3d859",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-010",
+      "public_path": "angebote/demokratie-buerger/db-v4-10-zivilcourage-teilhabe.md",
+      "public_sha256": "3968afad0902d6bcf6c2e60ecb520513b859fb51ce8305492b63c0de0a1bad1f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-011",
+      "public_path": "angebote/demokratie-buerger/db-v4-11-persoenlicher-resilienz-reality-check-plan.md",
+      "public_sha256": "bdbd4a77a2f061e6af7623db0b787613215e1c468657d21fe140b7e7475e03ba",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-001",
+      "public_path": "angebote/demokratie-medien/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md",
+      "public_sha256": "dc3f6504034ae8c6beacd5936790b5cb054d0729a0fbc902ab94a9a01685b5da",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-002",
+      "public_path": "angebote/demokratie-medien/dm-v4-02-oeffentlichkeit-demokratische-infrastruktur.md",
+      "public_sha256": "0678e645f2d3228d3379635530ffdbb7093667638417aa170c0d26d3d576296f",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-003",
+      "public_path": "angebote/demokratie-medien/dm-v4-03-reichweite-wiederholung-verteilung.md",
+      "public_sha256": "f9dc79b2d8bd82f8164ce975e40dd882d5c80e7b354e1971e380e8c9b98a2b05",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-004",
+      "public_path": "angebote/demokratie-medien/dm-v4-04-moderation-live-druck.md",
+      "public_sha256": "2d06af87bf85c5d8f61aa7f695e34a322e4d8848088ffafd977ecce682b77744",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-005",
+      "public_path": "angebote/demokratie-medien/dm-v4-05-kommunikationsmuster-ohne-personenrating.md",
+      "public_sha256": "62e345ff7c0dcfeebff0edff28c20a1bc7a6298150f3e20592ad66b45b26e613",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-006",
+      "public_path": "angebote/demokratie-medien/dm-v4-06-frames-reframes-optionen.md",
+      "public_sha256": "a4dad9b3a05addb92db6b51412e074fa7eab0f383ecb5d008fcb0faa3dddac9b",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-007",
+      "public_path": "angebote/demokratie-medien/dm-v4-07-hart-fragen-verifizieren-verstaerkung.md",
+      "public_sha256": "455e59f5438d2d58d5cffcf8768f12e4507cbe86550318c327e720fb4090de84",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-008",
+      "public_path": "angebote/demokratie-medien/dm-v4-08-bild-ton-schnitt-ki-provenienz.md",
+      "public_sha256": "6f9d4259b7f59410d1e3bf452ce9a7d060a53b11cd8260bb090c2c5e4535416c",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-009",
+      "public_path": "angebote/demokratie-medien/dm-v4-09-wuerde-minderheitenschutz-grenzen.md",
+      "public_sha256": "30925b6bff6ef0eb012a07c7ed48edc3f460d0d4ae99887704f1cbe861174744",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-010",
+      "public_path": "angebote/demokratie-medien/dm-v4-10-quellenklarheit-versionierung-korrektur.md",
+      "public_sha256": "0e904602a06caf63a00dc96c0d8445738bf0e6316e9f2bff2dd781d1f1d9eace",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-011",
+      "public_path": "angebote/demokratie-medien/dm-v4-11-krisenkommunikation-desinformation-hybride-lagen.md",
+      "public_sha256": "9b877c3096c5f9a6ebf88aa1598addf37582a63be28357e34808de8ef633de19",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-012",
+      "public_path": "angebote/demokratie-medien/dm-v4-12-redaktionsprotokoll-reality-check.md",
+      "public_sha256": "fb1762bf67ddb8afc81e281932ae2109edddc38ae3b7104e2dae202997e60772",
+      "delta_result": "PREVIOUS_REVIEW_INHERITED_NO_SUBSTANTIVE_REWRITE",
+      "historical_reference": "September v1.7 correctly historical; current common basis v1.8",
+      "finding": "No additional contradiction established in the October delta scope; original content retained."
+    }
+  ]
+}

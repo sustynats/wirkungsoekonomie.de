@@ -398,6 +398,25 @@ def materiality_scope_precision() -> None:
         )
 
 
+def unqualified_public_nwi_offsets(page: str) -> list[int]:
+    # Navigation repeats section labels without their surrounding definition.
+    # Validate the authored heading/body, not that duplicate label in a TOC.
+    visible = re.sub(r"<nav\b[^>]*>.*?</nav>", " ", page, flags=re.I | re.S)
+    visible = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", visible, flags=re.I | re.S)
+    visible = unescape(re.sub(r"<[^>]+>", " ", visible))
+    visible = re.sub(r"https?://\S+", " ", visible)
+    result = []
+    for match in re.finditer(r"\bNWI\b", visible, flags=re.I):
+        context = visible[max(0, match.start() - 220):min(len(visible), match.end() + 220)]
+        qualified = (
+            re.search(r"National(?:er|en|e|em|es)\s+Wohlfahrtsindex", context, flags=re.I)
+            or re.search(r"(?:frühere|damalige|historische)\s+(?:WÖk-)?(?:Kurz)?bezeichnung", context, flags=re.I)
+        )
+        if not qualified:
+            result.append(match.start())
+    return result
+
+
 def nwi_acronym_disambiguated() -> None:
     report = json.loads(read(NWI_AUDIT))
     if report.get("gate") != "PASS" or int(report.get("failure_count", -1)) != 0:
@@ -439,18 +458,9 @@ def nwi_acronym_disambiguated() -> None:
         page = read(rel)
         if (rel.startswith(historical_prefixes) or rel in HISTORICAL_ADDENDA) and "WOEK:NWI-DISAMBIGUATION:START" in page:
             continue
-        visible = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", page, flags=re.I | re.S)
-        visible = unescape(re.sub(r"<[^>]+>", " ", visible))
-        visible = re.sub(r"https?://\S+", " ", visible)
-        for match in re.finditer(r"\bNWI\b", visible, flags=re.I):
-            context = visible[max(0, match.start() - 220):min(len(visible), match.end() + 220)]
-            qualified = (
-                re.search(r"National(?:er|en|e|em|es)\s+Wohlfahrtsindex", context, flags=re.I)
-                or re.search(r"(?:frühere|damalige|historische)\s+(?:WÖk-)?(?:Kurz)?bezeichnung", context, flags=re.I)
-            )
-            if not qualified:
-                ambiguous.append((rel, match.start()))
-                break
+        offsets = unqualified_public_nwi_offsets(page)
+        if offsets:
+            ambiguous.append((rel, offsets[0]))
     if ambiguous:
         raise AssertionError(f"public HTML contains unqualified NWI: {ambiguous[:20]}")
 

@@ -247,6 +247,10 @@ def apply_html() -> tuple[int, int]:
         if historical and woek_signal(original):
             if MARKER_START in original:
                 continue
+            # An already qualified text does not need a notice claiming it
+            # uses the old ambiguous acronym. Keep the actual text unchanged.
+            if not unqualified_nwi_occurrences(visible_semantic_text(original)):
+                continue
             insertion = original.rfind("</main>")
             updated = (
                 original[:insertion] + NOTICE + "\n" + original[insertion:]
@@ -280,6 +284,7 @@ def apply_machine_surfaces() -> int:
 
 
 def visible_semantic_text(text: str) -> str:
+    text = re.sub(r"<nav\b[^>]*>.*?</nav>", " ", text, flags=re.I | re.S)
     text = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", text, flags=re.I | re.S)
     text = re.sub(r"<[^>]+>", " ", text)
     text = unescape(text)

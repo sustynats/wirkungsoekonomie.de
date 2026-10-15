@@ -31,9 +31,9 @@ Kennzahlen helfen, wenn ihre Frage klar ist. Sie schaden, wenn sie verschiedene 
 - **Netto-Wirkung:** mehrdimensionale Gesamtbetrachtung unter Grenzen, Verteilung, Zeit, Evidenz und Unsicherheit.
 - **Transformationswirkung:** Veränderung von Regeln, Anreizen, Infrastrukturen oder Pfaden.
 - **SROI:** etablierte Methodik zur monetären Bewertung ausgewählter sozialer/weiterer Wirkungen, mit Annahmen zu Deadweight, Attribution, Displacement und Drop-off.
-- **T-SROI:** WÖk-eigener Transformationsrahmen auf Grundlage geprüfter Netto-Wirkung.
-- **Impact of Investment (IoI):** WÖk-eigene investitionsbezogene Wirkungskennzahl; nur bei sauber definierter Wirkungseinheit sinnvoll.
-- **NWI-DE:** hier Kurzbezeichnung für den etablierten Nationalen Wohlfahrtsindex; WÖk-Netto-Wirkungs-Index nicht unqualifiziert als „NWI“ verwenden.
+- **T-SROI:** WÖk-eigenes Verhältnis aus diskontiertem, kausal begrenztem direktem und separat belegtem transformativem Netto-Nutzen in Euro zu diskontierten Ressourcen in Euro; nur bei erfüllter Schutzprüfung.
+- **Impact of Investment (IOI):** WÖk-eigenes Verhältnis des diskontierten, kausal begrenzten direkten Nettonutzens in Euro zu diskontierten Ressourcen in Euro; Systemgrenze, Zurechnung und Schutzprüfung müssen tragen.
+- **Nationaler Wohlfahrtsindex (NWI):** etablierter externer Wohlfahrtsindex; den WÖk-Netto-Wirkungsindex ausdrücklich als solchen benennen.
 
 ## Fachliche Vertiefung
 
@@ -62,6 +62,8 @@ SROI und Impact Investing liefern etablierte Bewertungs- und Finanzierungsansät
 WÖk strukturiert mehrere Kennzahlen nach ihrer Frage. Keine Kennzahl ist Gesamtarchitektur oder automatische Recommendation.
 
 ## Primär- und Anschlussquellen
+
+- T-SROI-Rechenstandard v1.1 (einschließlich IOI-Abgrenzung): https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/
 
 - WÖk Begriffsleitfaden v1.5: https://wirkungsoekonomie.de/
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
@@ -99,7 +101,7 @@ Es gibt nicht die eine Wirkungszahl. Manche Kennzahlen fragen: Was bleibt netto 
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
 
 ### NWI und T-SROI eindeutig benennen
 

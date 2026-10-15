@@ -42,7 +42,7 @@ Finanzierungsarchitektur kann deshalb selbst Wirkmechanismus sein.
 
 ### Fonds
 
-bündelt Kapital und investiert nach definiertem Mandat.
+bündelt Mittel und verwendet sie nach definiertem Mandat, etwa für Investitionen, Zuschüsse, Garantien oder soziale Entlastung.
 
 ### Garantie
 
@@ -128,7 +128,13 @@ Garantie ist nicht „kostenlos“, nur weil zunächst kein Geld fließt.
 
 ## 8. Wirkungsfonds
 
-Ein Fonds braucht:
+Ein WÖk-Wirkungsfonds ist nicht auf einen renditeorientierten Investmentfonds beschränkt. Er kann Prävention, Transformation, Resilienz, kommunale Projekte und soziale Entlastung finanzieren. Bei Produkten gehört dazu die aktive Entlastung nachweislich besserer Alternativen. Null zusätzliche Wirkungssteuer allein senkt den bisherigen Kaufbetrag nicht.
+
+Die Entlastung benötigt einen nach den gemeinsamen Regeln belegten Anspruch, ein tatsächlich verfügbares und zugewiesenes Budget sowie einen nachprüfbaren Zahlungsweg. Erwartete vermiedene Gesundheits- oder Umweltschäden sind noch keine Einzahlung in den Fonds. Derselbe Euro darf nicht gleichzeitig für Produktentlastung und andere Zusagen verplant werden. Sinkt das Aufkommen aus schädlicheren Produkten, muss die Finanzierung erneut geprüft werden. Nichtkompensation und Reverse Merit Order bleiben Teil der Schutzprüfung; fehlende Daten begründen keine Förderberechtigung.
+
+Bei einem unmittelbar preisbezogenen Zuschuss sind Verkäufererlös, Zahlung der Kundschaft, Fondsleistung und Umsatzsteuerbemessungsgrundlage getrennt zu prüfen. Ein solcher Zuschuss darf nicht ungeprüft vor der Umsatzsteuer vom Nettopreis abgezogen werden (§ 10 Abs. 1 UStG).
+
+Für einen als Investmentfonds ausgestalteten Fonds gelten insbesondere:
 
 - klare Investmentthese,
 - Impact Thesis/Wirkpfade,
@@ -177,7 +183,7 @@ Prüfe:
 
 | Begriff | Bedeutung |
 |---|---|
-| Finanzierungsadditionalität | zusätzliche Investition/Wirkung durch konkrete Finanzierungsstruktur |
+| Finanzierungsadditionalität | zusätzlicher Finanzierungsbeitrag gegenüber dem Vergleichsfall; zusätzliche reale Wirkung ist gesondert nachzuweisen |
 | Garantie | Risikoübernahme für definierten Ausfallteil |
 | Versicherung | vertraglicher Risikotransfer gegen Prämie |
 | Blended Finance | Kombination unterschiedlicher Kapitalquellen/Risikoprofile |
@@ -207,6 +213,10 @@ Nicht automatisch; es kann verlagert/konzentriert werden.
 Versicherungsökonomik, Impact Investing und Blended Finance existieren lange. WÖk ergänzt den gemeinsamen Wirkungs-/Counterfactual-/Distribution-/Boundary-/Reality-Check-Pfad und trennt realwirtschaftliche Wirkung von Finanzierungsmechanismus.
 
 ## 14. Quellen
+
+- Natalie Weber: Die neue Ordnung des Wohlstands, Band I, Kapitel 22.11; Band II, Kapitel 57.8 und 98 (Manuskriptstand 1.10.2026); WStG 3.0, §§ 61 und 100.
+- Umsatzsteuergesetz § 10 Abs. 1: https://www.gesetze-im-internet.de/ustg_1980/__10.html
+- Preise und Wirkungsfonds, erklärende Lesefassung: https://wirkungsoekonomie.de/verstehen/preise-und-wirkungsfonds/
 
 - OECD Blended Finance: https://www.oecd.org/dac/financing-sustainable-development/blended-finance-principles/
 - European Investment Fund: https://www.eif.org/
@@ -266,4 +276,4 @@ Der Merksatz lautet:
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
