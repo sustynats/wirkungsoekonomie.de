@@ -1,9 +1,8 @@
 /* ==========================================================================
-   Wirkungslexikon politischer Sprache – klickbarer Prototyp (Claude, 15.10.2026)
-   Vanilla JS, keine Abhängigkeiten, läuft per file:// oder lokalem Server.
-   Daten: window.WL_DATA (wortgetreu aus wirkungslexikon_master_v3.json).
-   Diese Datei ist die Referenzlogik für Codex (Ableitungen, Filter, Zustände),
-   nicht zwingend der Produktionscode. Siehe HANDOFF_CODEX.md.
+   Wirkungslexikon politischer Sprache – Darstellung und Suche (15.10.2026)
+   Vanilla JS, keine Laufzeitabhängigkeiten; progressive Browser-Erweiterung.
+   Daten: geprüfter, zum jeweiligen Ausgabemodus gehörender JSON-Bestand.
+   Gemeinsame Logik für statische Darstellung, Ableitungen, Filter und Zustände.
    ========================================================================== */
 export function createLexicon(DATA, config = {}) {
 

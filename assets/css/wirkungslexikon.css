@@ -1,5 +1,5 @@
 /* ==========================================================================
-   WIRKUNGSLEXIKON POLITISCHER SPRACHE – Komponenten-CSS v1.0 (Claude, 15.10.2026)
+   WIRKUNGSLEXIKON POLITISCHER SPRACHE – Komponenten-CSS v1.0 (15.10.2026)
    Zu portieren nach assets/css/wirkungslexikon.css (Codex). Setzt die Site-Tokens
    aus assets/css/style.css voraus (--navy, --ivory, --green, --font-heading …).
    Alle Klassen tragen das Präfix .wl- und sind seiten-gescoped – keine globalen
@@ -800,7 +800,7 @@ a.wl-area:hover{box-shadow:var(--wl-shadow-lift);border-top-color:var(--wl-green
 }
 
 
-/* Integration: potential summaries and audience links use Claude's tokens. */
+/* Integration: potential summaries and audience links use the design tokens. */
 .wl-preview-potential{font-size:.95rem;line-height:1.5;color:var(--wl-text);width:100%;}
 .wl-preview-potential p{margin-top:.4rem;}
 .wl-audience-switch{display:flex;flex-wrap:wrap;gap:.7rem 1rem;margin-block:1rem;}
@@ -809,7 +809,7 @@ a.wl-area:hover{box-shadow:var(--wl-shadow-lift);border-top-color:var(--wl-green
 .wl-page .footer{margin-top:var(--wl-s8);}
 .wl-row__ev{display:block;}
 .wl-page .wl-search__input{min-width:0;}
-@media print{.wl-page .footer,.wl-audience-switch{display:none!important;}}
+@media print{.wl-page .footer,.wl-audience-switch,.wl-page .skip-link,.wl-breadcrumb{display:none!important;}}
 
 @font-face{font-family:"WL Playfair";src:url('/assets/fonts/playfair-display-600.woff2') format('woff2');font-weight:600;font-display:swap;}
 @font-face{font-family:"WL Source Sans";src:url('/assets/fonts/source-sans-3-400.woff2') format('woff2');font-weight:400;font-display:swap;}

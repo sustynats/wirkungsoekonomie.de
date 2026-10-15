@@ -343,6 +343,8 @@ jobs:
             /scripts/search/build-browser-search-index.mjs
             /scripts/lib/public-routes.mjs
             /scripts/lib/public-sitemaps.mjs
+            /scripts/quality/check-public-artifact-privacy.mjs
+            /scripts/quality/check-size.mjs
             /templates/header.html
             /templates/footer.html
             /templates/wirkungslexikon.html
@@ -398,6 +400,12 @@ jobs:
           PY
       - name: Integrate navigation, search and sitemaps with unchanged-content proof
         run: node scripts/wirkungslexikon/integrate.mjs --artifact "$RUNNER_TEMP/lexikon-public" --candidate outputs/wirkungslexikon/public --proof "$RUNNER_TEMP/lexikon-proof/unchanged-content.json"
+      - name: Check existing privacy and site-size gates
+        run: |
+          ln -s "$RUNNER_TEMP/lexikon-public" _site
+          node scripts/quality/check-public-artifact-privacy.mjs
+          node scripts/quality/check-size.mjs
+          rm _site
       - name: Test complete public artifact in a browser
         run: |
           node scripts/wirkungslexikon/static-server.mjs "$RUNNER_TEMP/lexikon-public" 8797 &

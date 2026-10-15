@@ -65,6 +65,8 @@ try{
  assert.equal(await page.locator('.site-header').isVisible(),false);
  assert.equal(await page.locator('.wl-actions').isVisible(),false);
  assert.equal(await page.locator('.wl-subnav').isVisible(),false);
+ assert.equal(await page.locator('.skip-link').isVisible(),false);
+ assert.equal(await page.locator('.wl-breadcrumb').isVisible(),false);
  assert(await page.locator('.wl-node').count()>0);
  const external=page.locator('a[href^="https://"]').first();
  assert((await external.evaluate(el=>getComputedStyle(el,'::after').content)).includes('https://'));
