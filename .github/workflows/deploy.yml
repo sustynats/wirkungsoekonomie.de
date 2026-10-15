@@ -9,6 +9,20 @@ on:
       - main
   workflow_dispatch:
     inputs:
+      lexikon_only:
+        description: Build an isolated approved lexicon release against the active production artifact
+        required: false
+        default: false
+        type: boolean
+      lexikon_publish:
+        description: Publish the tested lexicon artifact (otherwise prepare a review artifact only)
+        required: false
+        default: false
+        type: boolean
+      lexikon_expected_commit:
+        description: Exact 40-character source commit for the lexicon release
+        required: false
+        type: string
       speedtest_only:
         description: Preserve the active live artifact byte-for-byte and publish only the five speedtest files
         required: false
@@ -38,7 +52,7 @@ concurrency:
 
 jobs:
   build:
-    if: inputs.speedtest_only != true && !contains(github.event.head_commit.message, '[parliament-autopilot]')
+    if: inputs.speedtest_only != true && inputs.lexikon_only != true && !contains(github.event.head_commit.message, '[parliament-autopilot]')
     runs-on: ubuntu-latest
     outputs:
       ticker_only: ${{ steps.release-mode.outputs.ticker_only }}
@@ -306,6 +320,134 @@ jobs:
           PY
       - name: Publish the speedtest-only update
         id: speedtest-deployment
+        uses: actions/deploy-pages@v5
+
+  lexikon:
+    if: github.event_name == 'workflow_dispatch' && inputs.lexikon_only == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      actions: read
+      deployments: read
+      pages: write
+      id-token: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/wirkungslexikon/
+            /scripts/search/build-browser-search-index.mjs
+            /scripts/lib/public-routes.mjs
+            /scripts/lib/public-sitemaps.mjs
+            /templates/header.html
+            /templates/footer.html
+            /templates/wirkungslexikon.html
+            /templates/wirkungslexikon-share.html
+            /content/wirkungslexikon/
+            /assets/data/navigation.json
+            /assets/css/style.css
+            /assets/css/wirkungslexikon.css
+            /assets/js/wirkungslexikon.mjs
+            /assets/js/wirkungslexikon-init.mjs
+            /assets/js/newsletter.js
+            /assets/fonts/
+            /assets/img/brand/
+            /assets/img/wirkungslexikon/
+      - name: Verify exact approved source commit
+        env:
+          EXPECTED: ${{ inputs.lexikon_expected_commit }}
+        run: |
+          test "$EXPECTED" = "$(git rev-parse HEAD)"
+          test ${#EXPECTED} -eq 40
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4
+        id: chrome
+        with:
+          chrome-version: '152.0.7977.82'
+      - name: Install isolated browser tooling
+        run: |
+          npm install --prefix "$RUNNER_TEMP/wl-tools" --no-package-lock playwright@1.58.2
+          echo "WL_PLAYWRIGHT=$RUNNER_TEMP/wl-tools/node_modules/playwright" >> "$GITHUB_ENV"
+          echo "WL_CHROME_BIN=${{ steps.chrome.outputs.chrome-path }}" >> "$GITHUB_ENV"
+      - name: Build approved public lexicon only
+        run: |
+          node scripts/wirkungslexikon/build.mjs --public
+          node scripts/wirkungslexikon/render-social.mjs --public
+          node scripts/wirkungslexikon/public-test.mjs --images
+      - name: Back up exact active production artifact
+        run: node scripts/wirkungslexikon/deployment.mjs baseline "$RUNNER_TEMP/lexikon-proof"
+      - name: Extract validated production backup
+        run: |
+          python3 - <<'PY'
+          import os, tarfile
+          from pathlib import Path
+          temp=Path(os.environ['RUNNER_TEMP'])
+          with tarfile.open(temp/'lexikon-proof/download/artifact.tar') as archive:
+              if any(m.issym() or m.islnk() or not (m.isfile() or m.isdir()) for m in archive.getmembers()):
+                  raise SystemExit('Unexpected archive entries')
+              archive.extractall(temp/'lexikon-public', filter='data')
+          PY
+      - name: Integrate navigation, search and sitemaps with unchanged-content proof
+        run: node scripts/wirkungslexikon/integrate.mjs --artifact "$RUNNER_TEMP/lexikon-public" --candidate outputs/wirkungslexikon/public --proof "$RUNNER_TEMP/lexikon-proof/unchanged-content.json"
+      - name: Test complete public artifact in a browser
+        run: |
+          node scripts/wirkungslexikon/static-server.mjs "$RUNNER_TEMP/lexikon-public" 8797 &
+          WL_SERVER_PID=$!
+          trap 'kill "$WL_SERVER_PID"' EXIT
+          node scripts/wirkungslexikon/integration-test.mjs --artifact "$RUNNER_TEMP/lexikon-public" --out "$RUNNER_TEMP/lexikon-proof/integration-tests.json"
+          cp outputs/wirkungslexikon/public/social-proof.json "$RUNNER_TEMP/lexikon-proof/social-proof.json"
+      - name: Save reproducible review and rollback proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: lexikon-release-proof
+          path: ${{ runner.temp }}/lexikon-proof/*.json
+          retention-days: 30
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ${{ runner.temp }}/lexikon-public
+
+  lexikon-deploy:
+    needs: lexikon
+    if: github.event_name == 'workflow_dispatch' && inputs.lexikon_only == true && inputs.lexikon_publish == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      deployments: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.lexikon-deployment.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/wirkungslexikon/deployment.mjs
+            /scripts/wirkungslexikon/model.mjs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: lexikon-release-proof
+          path: ${{ runner.temp }}/lexikon-proof
+      - name: Refuse stale production overwrite
+        run: node scripts/wirkungslexikon/deployment.mjs verify-baseline "$RUNNER_TEMP/lexikon-proof"
+      - name: Publish exact reviewed artifact
+        id: lexikon-deployment
         uses: actions/deploy-pages@v5
 
   release-assets:
