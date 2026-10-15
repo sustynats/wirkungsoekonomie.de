@@ -19092,3 +19092,19 @@ figure.impact-process { display: block; margin: var(--space-6) 0; }
 @media (max-width: 360px) {
   .site-header .brand::after { content: none; }
 }
+
+@media screen and (max-width: 760px) {
+  body :is(#modelle-und-instrumente, #bestehende-ansaetze) .table-wrap .data-table {
+    min-width: 42rem !important;
+    max-width: none;
+    table-layout: auto;
+  }
+  body :is(#modelle-und-instrumente, #bestehende-ansaetze) .table-wrap :is(th, td) {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  body :is(#modelle-und-instrumente, #bestehende-ansaetze) .data-table th:first-child {
+    width: 10rem;
+    hyphens: none;
+  }
+}

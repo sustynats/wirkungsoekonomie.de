@@ -9,7 +9,8 @@ function allPdfEditions() {
   const state=JSON.parse(fs.readFileSync('assets/data/state-benchmark-edition-2026-09-06.json','utf8')).files;
   const modelV11=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8')).files;
   const modelV12=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-2.json','utf8')).files;
-  return [...historical, ...learning, ...learningV2, ...learningV3, ...state, ...modelV11, ...modelV12];
+  const methodik=JSON.parse(fs.readFileSync('assets/data/methodik-edition-2026-10-16.json','utf8')).files;
+  return [...historical, ...learning, ...learningV2, ...learningV3, ...state, ...modelV11, ...modelV12, ...methodik];
 }
 export function currentPdfEditions() {
   const all = allPdfEditions();
