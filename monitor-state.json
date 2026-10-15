@@ -13,20 +13,21 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-15T12:05:58.474Z",
-      "active": true
-    },
     "editorial-coverage": {
-      "firstSeen": "2026-10-15T12:50:47.238Z",
-      "active": true
-    },
-    "publication": {
       "firstSeen": "2026-10-15T12:50:47.238Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "692e7fea78836209784269af",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-15T13:35:57.993Z"
+    },
+    {
+      "id": "68c856bc44df346af34e2029",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-15T13:35:57.993Z"
+    }
+  ],
   "dailyDate": "2026-10-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2678,11 +2679,23 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-wieder-schusse-auf-geschafte-polizei-verstarkt-prasenz-827a51/": {
         "first_seen_at": "2026-10-14T15:21:07.115Z",
         "source_at": "2026-10-14T14:01:48.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/essen-nach-gefangenenbefreiung-polizei-sucht-weiter-nach-tatern-3225e4/": {
+        "first_seen_at": "2026-10-15T13:35:57.993Z",
+        "source_at": "2026-10-15T11:53:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/goldbarren-schusswaffe-und-190-bankkonten-razzia-von-finanzfahndern-gegen-geldwasche-net-f9735c/": {
+        "first_seen_at": "2026-10-15T13:35:57.993Z",
+        "source_at": "2026-10-15T11:37:48.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/starkregen-in-der-turkei-rettungsaktionen-nach-uberschwemmung-in-istanbul-zwei-tote-38e76e/": {
+        "first_seen_at": "2026-10-15T13:35:57.993Z",
+        "source_at": "2026-10-15T06:35:55.000Z"
       }
     },
-    "last_new_at": "2026-10-14T15:21:07.115Z",
-    "checked_at": "2026-10-15T13:21:03.433Z",
-    "last_current_new_at": "2026-10-14T15:21:07.115Z"
+    "last_new_at": "2026-10-15T13:35:57.993Z",
+    "checked_at": "2026-10-15T13:35:57.993Z",
+    "last_current_new_at": "2026-10-15T13:35:57.993Z"
   },
   "recovery_attempts": [
     {
