@@ -16,6 +16,10 @@
     "delivery-deploy.yml": {
       "firstSeen": "2026-10-15T12:05:58.474Z",
       "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-15T12:20:49.784Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2673,7 +2677,7 @@
       }
     },
     "last_new_at": "2026-10-14T15:21:07.115Z",
-    "checked_at": "2026-10-15T12:05:58.474Z",
+    "checked_at": "2026-10-15T12:20:49.784Z",
     "last_current_new_at": "2026-10-14T15:21:07.115Z"
   },
   "recovery_attempts": [
