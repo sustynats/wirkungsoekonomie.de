@@ -3,6 +3,7 @@ import path from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
 import {ROOT,read,atomic,sha} from './model.mjs';
 import {patchSearch} from './search-label.mjs';
+import {loadAudienceTeasers,applyAudienceTeaser} from './audience-teasers.mjs';
 
 export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=null}={}) {
  const out=path.resolve(artifact), source=path.resolve(candidate);
@@ -11,7 +12,8 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  const all=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?all(path.join(dir,e.name)):e.isFile()?[path.join(dir,e.name)]:[]);
  const before=new Map(all(out).map(f=>[path.relative(out,f),sha(fs.readFileSync(f))]));
  if(!before.has('index.html')||fs.readFileSync(path.join(out,'CNAME'),'utf8').trim()!=='wirkungsoekonomie.de')throw Error('Vollständiger Produktionsbestand mit erwarteter Domain fehlt');
- const changed=[];
+ const changed=[];const teasers=loadAudienceTeasers(supportRoot);
+ for(const item of teasers)if(!fs.existsSync(path.join(out,item.path)))throw Error('Zielgruppen-Seite fehlt: '+item.path);
  // Remove only an earlier generated lexicon; revoked pages and social assets cannot survive.
  const previous=path.join(out,'wirkungslexikon/.generated.json');
  if(fs.existsSync(previous))for(const rel of read(previous).files){if(rel.includes('..')||path.isAbsolute(rel))throw Error('Ungültiger Lexikonpfad');fs.rmSync(path.join(out,'wirkungslexikon',rel),{force:true});}
@@ -34,7 +36,8 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
   if(path.relative(out,f)==='oeffentlicher-wirkungsraum/index.html'&&!old.includes('data-wl-hub'))html=html.replace('</main>',hub+'</main>');
   const searchUrls=[];
   html=html.replace(/src="([^"\s]*assets\/js\/search\.js)(?:\?[^"\s]*)?"/g,all=>{const prefix=all.match(/src="([^?\"]+)/)[1];const next='src="'+prefix+'?v='+searchVersion+'"';searchUrls.push([all,next]);return next;});
-  if(html!==old){let restored=html;for(const [a,b]of navChanges.reverse())restored=restored.replace(b,a);if(!old.includes('data-wl-hub'))restored=restored.replace(hub,'');for(const [a,b]of searchUrls)restored=restored.replace(b,a);if(restored!==old)throw Error('Inhalt außerhalb der Navigation/Suchskriptversion würde verändert: '+f);fs.writeFileSync(f,html);navProof.push(path.relative(out,f));}
+  const teaser=teasers.find(item=>item.path===path.relative(out,f));const teaserChange=teaser?applyAudienceTeaser(html,teaser):null;if(teaserChange)html=teaserChange.html;
+  if(html!==old){let restored=html;if(teaserChange)restored=restored.replace(teaserChange.after,teaserChange.before);for(const [a,b]of navChanges.reverse())restored=restored.replace(b,a);if(!old.includes('data-wl-hub'))restored=restored.replace(hub,'');for(const [a,b]of searchUrls)restored=restored.replace(b,a);if(restored!==old)throw Error('Inhalt außerhalb der Navigation, freigegebenen Teaser oder Suchskriptversion würde verändert: '+f);fs.writeFileSync(f,html);navProof.push(path.relative(out,f));}
  }
  const pages=read(path.join(source,'wirkungslexikon/search-meta.json'));
  const sourceIndex=path.join(out,'assets/search/search-index.json');
@@ -78,7 +81,7 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  for(const name of new Set([...before.keys(),...after.keys()]))if(before.get(name)!==after.get(name)&&!allowed(name))unexpected.push(name);
  if(unexpected.length)throw Error('Unerwartete Änderungen: '+unexpected.join(', '));
  for(const f of all(path.join(out,'wirkungslexikon')).filter(f=>/\.(?:html|json|xml|mjs)$/.test(f))){const text=fs.readFileSync(f,'utf8');if(/\/Users\/|\/private\/tmp\/|\bgh[pousr]_[A-Za-z0-9_]{20,}/.test(text))throw Error('Privater Datenrest: '+f);}
- const proof={cards:data.entries.length,pages:pages.length,navigationPages:navProof.length,unchangedFiles:[...before.keys()].filter(n=>before.get(n)===after.get(n)).length,changedFiles:[...new Set([...before.keys(),...after.keys()])].filter(n=>before.get(n)!==after.get(n)),unrelatedContentUnchanged:true,unexpectedChanges:unexpected};
+ const proof={cards:data.entries.length,pages:pages.length,navigationPages:navProof.length,audienceTeasers:teasers.map(item=>item.path),unchangedFiles:[...before.keys()].filter(n=>before.get(n)===after.get(n)).length,changedFiles:[...new Set([...before.keys(),...after.keys()])].filter(n=>before.get(n)!==after.get(n)),unrelatedContentUnchanged:true,unexpectedChanges:unexpected};
  if(proofFile)atomic(proofFile,proof);
  return proof;
 }

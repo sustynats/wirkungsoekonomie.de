@@ -3,6 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {ROOT,read,atomic} from './model.mjs';
+import {loadAudienceTeasers} from './audience-teasers.mjs';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.WL_PLAYWRIGHT||'playwright');
 const args=process.argv.slice(2),value=k=>args[args.indexOf(k)+1];
@@ -84,6 +85,19 @@ try{
  checks.push({name:'Existing global search finds lexicon cards through the regenerated lazy search index',status:'PASS'});
  const nojs=await browser.newContext({javaScriptEnabled:false});const p=await nojs.newPage();await p.goto(base+'/wirkungslexikon/');assert.equal(await p.locator('.wl-row').count(),132);await nojs.close();
  checks.push({name:'Public no-JavaScript A–Z list contains exactly 132 approved cards',status:'PASS'});
+ const ap=await context.newPage();
+ for(const item of loadAudienceTeasers()){
+  const html=fs.readFileSync(path.join(artifact,item.path),'utf8');assert.equal((html.match(/data-wl-audience-teaser="true"/g)||[]).length,1);
+  for(const width of [390,1440]){
+   await ap.setViewportSize({width,height:900});await ap.goto(base+'/'+item.path,{waitUntil:'domcontentloaded'});
+   const teaser=ap.locator('[data-wl-audience-teaser]');assert((await teaser.textContent()).includes('Ergänzendes Nachschlagewerk'));
+   assert.equal(await teaser.locator('a').getAttribute('href'),item.href);
+   const bounds=await teaser.boundingBox();assert(bounds&&bounds.x>=0&&bounds.x+bounds.width<=width+1,'Teaser fits viewport');
+   assert.equal(await ap.locator('.site-header a[href="/wirkungslexikon/"]').count(),0);
+  }
+  assert.equal((await context.request.get(base+item.href)).status(),200);
+ }
+ await ap.close();checks.push({name:'Four audience portals show supplementary lexicon teasers with working links on mobile and desktop',status:'PASS'});
  assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);
  checks.push({name:'No uncaught errors or failing same-origin asset requests',status:'PASS'});
  atomic(out,{status:'PASS',cards:132,checks});console.log(JSON.stringify({status:'PASS',cards:132,checks}));
