@@ -1,0 +1,167 @@
+
+> wirkungsoekonomie-reference@2026.1.0 postbuild
+> node --test tests/site/terminology-claim-context.test.mjs && node scripts/blog/build-journal-pdfs.mjs && node scripts/assets/sync-journal-release-assets.mjs --check && node scripts/quality/produce-public-pdf-downloads.mjs && node scripts/review/check-current-terminology.mjs && npm run check:mainwork-tsroi-pdf && npm run check:woems-tsroi-pdf && npm run check:current-capital-tsroi-pdfs && npm run check:current-tsroi-standard && npm run check:retired-tsroi-citations && npm run check:glossary-publication && npm run test:iooi && node scripts/portal/restore-reader-sections.mjs && node scripts/site/apply-state-benchmark-update.mjs && node scripts/site/apply-model-definition-update.mjs && node scripts/library/consolidate-empty-reader-nodes.mjs && npm run normalize:reference-readers && npm run check:online-readers && node scripts/tools/sanitize-public-tool-language.mjs && npm run check:tool-language-idempotence && node scripts/quality/sanitize-public-library-formats.mjs && npm run check:public-library-formats && python3 tools/restore_state_sustainability_historical_publications.py && python3 tools/apply_nwi_disambiguation.py && npm run check:state-sustainability && python3 scripts/publications/apply-consistency-online-book.py && python3 scripts/publications/apply-consistency-online-book.py --check && npm run test:publication-consistency && python3 scripts/publications/apply-consistency-online-figures.py --check
+
+✔ explicitly rejected misconceptions in teaching are not asserted definitions (1.27475ms)
+✔ navigation labels do not duplicate a counterexample without its rejection (0.401417ms)
+✔ actual contradictions remain blocked, even if another section calls something false (0.061708ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77.015667
+Journal-PDFs: 0 erstellt, 166 unverändert.
+{"status":"aktuell","journal":166}
+Public PDF downloads inventoried: 733.
+Current terminology guardrail passed (12 core terms; 18913 indexable HTML pages scanned).
+
+> wirkungsoekonomie-reference@2026.1.0 check:mainwork-tsroi-pdf
+> python3 scripts/quality/build-mainwork-tsroi-errata.py --check
+
+Hauptwerk-PDF: T-SROI-Rechenstandard v1.1 und Ersatzseiten geprüft.
+
+> wirkungsoekonomie-reference@2026.1.0 check:woems-tsroi-pdf
+> python3 scripts/quality/build-woems-tsroi-errata.py --check
+
+WÖMS-PDF: T-SROI-Rechenstandard v1.1 geprüft.
+
+> wirkungsoekonomie-reference@2026.1.0 check:current-capital-tsroi-pdfs
+> python3 scripts/quality/build-current-capital-tsroi-pdf-corrections.py --check
+
+detail-08: geprüft.
+detail-30: geprüft.
+detail-31: geprüft.
+tool-suite: geprüft.
+
+> wirkungsoekonomie-reference@2026.1.0 check:current-tsroi-standard
+> node scripts/studienskripte/check-current-tsroi-rechenstandard.mjs
+
+Aktueller T-SROI-Rechenstandard geprüft: 3/3 Studienskripte und 18638 indexierbare Seiten.
+
+> wirkungsoekonomie-reference@2026.1.0 check:retired-tsroi-citations
+> node scripts/review/check-retired-tsroi-citation-normalization.mjs
+
+T-SROI-Zitationsnormalisierung bestanden: 136 Quellenabsätze geprüft; zweiter Lauf ist textgleich.
+
+> wirkungsoekonomie-reference@2026.1.0 check:glossary-publication
+> node scripts/glossary/check-glossary-publication-quality.mjs
+
+Glossar-Publikationsqualität bestanden: 2161 Begriffe, Canonicals, veröffentlichte Querverweise und Quellen-URLs geprüft.
+
+> wirkungsoekonomie-reference@2026.1.0 test:iooi
+> node --test tests/site/iooi-architecture.test.mjs
+
+✔ IOOI acronym has four terms; activity is optional and external taxonomy survives the merge (2.033542ms)
+✔ IOOI terms are reachable through the public Anschlussbegriffe filter (13.986333ms)
+✔ current explanation does not reintroduce a longer temporal IOOI chain (7.70525ms)
+✔ potentials, mechanisms, evidence and normative assessment remain distinct (0.786708ms)
+✔ transformation is an evidence-bound system lens and Impact may include structural change (0.119292ms)
+✔ six modules are questions rather than six real chronological stations (0.852917ms)
+✔ all five required routes use accessible responsive layer visuals, not the legacy graphic (1.057875ms)
+✔ bus example precedes terminology and metadata uses one consistent description (0.3525ms)
+✔ compass bus path does not turn checking and assessment into causal stations (0.360125ms)
+✔ updated glossary pages share canonical descriptions with DefinedTerm metadata (2.242458ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 173.271458
+Recovered 0 original sections.
+State benchmark update: 15 publication surfaces.
+Model definition: 10 central publication surfaces.
+Reader navigation: 1810 empty generated nodes lead directly to the following text; old URLs retained.
+
+> wirkungsoekonomie-reference@2026.1.0 normalize:reference-readers
+> node scripts/reference/normalize-reference-reader-seo.mjs
+
+Referenz-SEO normalisiert: 0 Seiten geändert; 1664 indexierbare Seiten mit Titel, Beschreibung und Canonical.
+  Noindex-/Redirect-Seiten unverändert kanonisch belassen: 5; technische Lesereste entfernt: 0.
+
+> wirkungsoekonomie-reference@2026.1.0 check:online-readers
+> node scripts/quality/check-online-reader-quality.mjs
+
+Online-Reader-Qualität bestanden: 8599 Bibliotheksseiten, 1664 indexierbare Referenzseiten und 108 Kapitelreader geprüft.
+Sanitized public tool language in 0 files.
+
+> wirkungsoekonomie-reference@2026.1.0 check:tool-language-idempotence
+> node scripts/tools/sanitize-public-tool-language.mjs --self-test && node scripts/tools/sanitize-public-tool-language.mjs --check
+
+Public tool-language fixed-point self-test passed.
+Public tool-language normalisation is idempotent and up to date.
+Öffentliche Bibliotheksformate normalisiert: 301 Datei(en).
+
+> wirkungsoekonomie-reference@2026.1.0 check:public-library-formats
+> node scripts/quality/check-public-library-formats.mjs
+
+Public library format gate passed: no MD, DOCX or ZIP public library entries.
+Restored 3 protected historical #253 publication(s).
+{"source_changed": false, "living_pages_changed": 378, "historical_notices_added": 711, "machine_surfaces_changed": 0, "inventoried_routes": 1241, "failures": 0}
+
+> wirkungsoekonomie-reference@2026.1.0 check:state-sustainability
+> node scripts/quality/check-state-sustainability-architecture.mjs
+
+Staatsarchitektur-Audit bestanden: 21960 öffentliche HTML-Dateien, 18 Pflichtbegriffe, 14 amtliche Quellen, 621 MasterItems.
+Auditbericht: reports/state-sustainability-sitewide-audit-2026-08-21.json
+{"status": "PASS", "reviewedTargets": 466, "newlyApplied": 8, "files": 44}
+{"status": "PASS", "reviewedTargets": 466, "newlyApplied": 0, "files": 44}
+
+> wirkungsoekonomie-reference@2026.1.0 test:publication-consistency
+> python3 tests/site/online-book-corrections.test.py && python3 tests/site/pdf-publishing-metadata.test.py && python3 tests/site/book-reference-integrity.test.py && python3 tests/site/book-figure-integrity.test.py && python3 tests/site/book-typography.test.py && python3 tests/site/book-source-edit.test.py && python3 tests/publications/test_book_delivery.py && node --test tests/site/consistency-pdf-editions.test.mjs tests/publications/consistency-edition-guards.test.mjs
+
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.035s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.013s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.052s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+OK
+✔ an unchanged review manifest cannot approve tampered current PDF bytes (242.845041ms)
+✔ the prior original remains guarded after a real source succession (90.86475ms)
+✔ PASS and matching report checksum do not compensate for a missing reviewed page (69.695959ms)
+✔ unknown later calculator changes require a new reviewed edition (67.1935ms)
+✔ accepts an identified assembly after genuine pagination changes (5.534416ms)
+✔ 1525 pages cannot exempt an unrelated publication from its visual review (3.157583ms)
+✔ the identified assembly still requires the reviewed volume hashes (3.241125ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 544.224708
+{"status": "PASS", "figures": 21, "newlyApplied": 0}

@@ -9,11 +9,12 @@
 **status:** `FACH_ENDCONTENT_REVIEWED_VERSION_SENSITIVE`  
 **source_version:** `2026-08-21.1`  
 **reviewed_at:** 2026-08-21  
+**current_status_checked_at:** 2026-10-15  
 **change_reason:** Neuer Pflichtstrang. Der Aktionsplan 2026 verändert die aktuelle staatliche Nachhaltigkeits-Governance; wegen laufender Finalisierung wird der Lehrstand ausdrücklich versioniert und muss bei Veröffentlichung der Endfassung erneut geprüft werden.
 
 ## 20-Sekunden-Einstieg
 
-Am 16. Juli 2026 veröffentlichte die Bundesregierung eine **Beteiligungsfassung** des Aktionsplans Nachhaltigkeit. Sie enthält 19 Missionen in fünf Handlungsfeldern und soll die DNS stärker in konkrete, ressortübergreifende und messbare Umsetzung übersetzen. Wichtig: Am 21. August 2026 ist diese Fassung **noch nicht die angekündigte Endfassung**; die Bundesregierung zielt auf einen finalen Aktionsplan im September 2026. Deshalb lernen wir hier nicht nur Inhalte, sondern auch saubere Versionierung politischer Strategien.
+Am 16. Juli 2026 veröffentlichte die Bundesregierung eine **Beteiligungsfassung** des Aktionsplans Nachhaltigkeit. Sie enthält 19 Missionen in fünf Handlungsfeldern und soll die DNS stärker in konkrete, ressortübergreifende und messbare Umsetzung übersetzen. Am 30. September 2026 beschloss das Kabinett den Aktionsplan mit **20 Missionen**. Die folgenden Beispiele zur Beteiligungsfassung bleiben als historische Fallarbeit erhalten; sie beschreiben nicht den aktuellen Beschlussstand.
 
 ## Lernziele
 
@@ -21,7 +22,7 @@ Nach dieser Vorlesung kannst du:
 
 1. DNS 2025 und Aktionsplan Nachhaltigkeit 2026 funktional unterscheiden.
 2. die Beteiligungsfassung vom 16. Juli 2026 als versionierten Zwischenstand einordnen.
-3. die fünf Handlungsfelder und die 19 Missionslogik beschreiben.
+3. die fünf Handlungsfelder und 19 Missionen der Beteiligungsfassung historisch einordnen und vom späteren Beschluss unterscheiden.
 4. Mission, Zielstellung, Maßnahmenpaket, Meilenstein, Indikator und Wirkung trennen.
 5. den Aktionsplan mit WÖk auf Baseline, Mechanismus, Delivery, Ressourcen, Verteilung, Schutzgrenzen und Reality Check prüfen.
 6. erklären, warum die Mission „Nachhaltigkeit in das Gesetzgebungsverfahren systematisch integrieren“ für GFA/eNAP besonders relevant ist.
@@ -47,19 +48,21 @@ Damit entsteht eine zusätzliche Ebene:
 
 Der Aktionsplan ersetzt die DNS nicht. Die Beteiligungsfassung sagt ausdrücklich, dass das Ziel- und Indikatorensystem der DNS 2025 weiter gilt und Destatis das Monitoring fortsetzt.
 
-## 2. Versionierungsstatus: Beteiligungsfassung, nicht Endfassung
+## 2. Versionierungsstatus: historischer Entwurf und beschlossener Aktionsplan
 
 Die vorliegende Fassung trägt den Stand **16.07.2026** und ist ausdrücklich als **Beteiligungsfassung** bezeichnet.
 
 Die Bundesregierung hat anschließend eine Beteiligungsphase durchgeführt und angekündigt, den Aktionsplan im September 2026 zu finalisieren.
 
-Deshalb ist für v4.0 verbindlich:
+Für die historische Analyse der Juli-Fassung gilt:
 
 `document_status = PARTICIPATION_DRAFT_2026-07-16`
 
-Nicht:
+Für den aktuellen Stand gilt dagegen:
 
-`FINAL_ACTION_PLAN`
+`document_status = CABINET_ADOPTED_2026-09-30`
+
+Die [amtliche Veröffentlichung](https://www.bundesregierung.de/breg-de/aktuelles/aktionsplan-nachhaltigkeit-2440506) und der [beschlossene Aktionsplan](https://www.bundesregierung.de/resource/blob/975228/2454612/a7e895a521b75a36851a240efb7faa2a/2026-09-30-aktionspla-nachhaltigkeit-data.pdf?download=1) belegen 20 Missionen. Auch die Kapitelstruktur wurde verändert. DNS-Ziele und Indikatoren gelten weiter. Der Kabinettsbeschluss belegt weder Umsetzung noch Wirkung und setzt angekündigte Rechtsänderungen nicht selbst in Kraft.
 
 Diese Unterscheidung ist fachlich wichtig. Zwischen Beteiligungs- und Endfassung können Missionen, Zuständigkeiten, Zielstellungen, Meilensteine oder Formulierungen verändert werden.
 
@@ -226,9 +229,9 @@ Darum gilt:
 
 ## 11. Typische Fehlinterpretationen
 
-### Fehler 1: „Der Aktionsplan 2026 ist bereits final.“
+### Fehler 1: „Die Juli-Fassung ist der beschlossene Aktionsplan.“
 
-Falsch zum Stand 21.08.2026. Vorliegend ist die Beteiligungsfassung vom 16.07.2026; die Finalisierung ist für September angekündigt.
+Falsch. Sie war am 21.08.2026 noch ein Entwurf. Der spätere Kabinettsbeschluss vom 30.09.2026 ist eine eigene Fassung; beide dürfen nicht gleichgesetzt werden.
 
 ### Fehler 2: „Der Aktionsplan ersetzt die DNS.“
 
@@ -271,12 +274,12 @@ Nicht jede Mission muss zu einem anderen WÖk-Urteil führen. Konvergenz ist mö
 
 ### Quellenfunktion
 
-- Beteiligungsfassung: `CURRENT_POLICY_DRAFT`, `MISSION_SOURCE`, `GOVERNANCE/DELIVERY_CONTEXT`
+- Beteiligungsfassung: `HISTORICAL_POLICY_DRAFT`, `MISSION_SOURCE`, `GOVERNANCE/DELIVERY_CONTEXT`
 - DNS 2025: `PARENT_STRATEGY_REFERENCE`
 
 ### Versions-Gate
 
-Diese Vorlesung ist spätestens bei Veröffentlichung der angekündigten Endfassung fachlich erneut zu prüfen. Änderungen werden als `VERSION_DELTA` dokumentiert; der Stand 16.07.2026 bleibt historisch erhalten.
+Versionsabgleich am 15.10.2026: Beschlussdatum, Missionszahl, Kapitelstruktur und fortbestehender DNS-Rahmen wurden anhand der amtlichen Beschlussfassung geprüft. Die Juli-Beispiele bleiben ausdrücklich historisch. Weitere Änderungen an Maßnahmen und Rechtslage erfordern einen erneuten Quellenabgleich.
 
 ## 14. Transferaufgabe
 
@@ -320,7 +323,7 @@ Am 16. Juli 2026 veröffentlicht die Bundesregierung eine Beteiligungsfassung f�
 
 Und das Wort Beteiligungsfassung ist wichtig.
 
-Denn Stand heute, am 21. August 2026, ist das noch nicht die angekündigte Endfassung. Die soll im September kommen.
+Am damaligen Prüfdatum, dem 21. August 2026, war das noch nicht die Endfassung. Inzwischen liegt der Kabinettsbeschluss vom 30. September vor. Die folgende Fallarbeit betrachtet ausdrücklich den früheren Beteiligungsstand.
 
 Also lernen wir hier gleich zwei Dinge.
 
@@ -328,7 +331,7 @@ Erstens den Inhalt.
 
 Und zweitens saubere Versionierung.
 
-Der Aktionsplan enthält 19 Missionen in fünf Handlungsfeldern. Die Idee ist: Aus der sehr breiten Deutschen Nachhaltigkeitsstrategie sollen ausgewählte, ressortübergreifende Veränderungsaufträge stärker in konkrete Umsetzung kommen.
+Die Juli-Beteiligungsfassung enthält 19 Missionen in fünf Handlungsfeldern. Die Idee ist: Aus der sehr breiten Deutschen Nachhaltigkeitsstrategie sollen ausgewählte, ressortübergreifende Veränderungsaufträge stärker in konkrete Umsetzung kommen.
 
 Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und - wo möglich - Wirksamkeitsmessung bekommen.
 
@@ -352,13 +355,13 @@ Nicht: Wir wissen es besser.
 
 Sondern: Wir machen aus einer politischen Mission eine überprüfbare Wirkungshypothese mit Delivery, Gegenfaktum und Reality Check.
 
-Und wenn im September die Endfassung kommt, prüfen wir diese Vorlesung noch einmal.
+Der Versionsabgleich mit dem späteren Kabinettsbeschluss steht in Abschnitt 2. Die Juli-Fallarbeit bleibt als historisches Beispiel nachvollziehbar.
 
 Denn auch das ist Wirkungskompetenz: Nicht so tun, als wäre ein Zwischenstand für immer die Wahrheit.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
 
 ### Welcher staatliche Prüfrahmen passt zum Gegenstand?
 
@@ -374,4 +377,4 @@ Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M�
 
 ### Zeitabhängiger Status
 
-Die am 6. September 2026 geprüfte [Seite der Bundesregierung zum Aktionsplan](https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/aktionsplan-nachhaltigkeit-2392096) beschreibt weiter den Beteiligungsentwurf. Ein späterer Kabinettsbeschluss darf erst nach Prüfung von Datum und veröffentlichter Fassung als beschlossen gelehrt werden. Vor jeder Präsentationsproduktion erneut prüfen.
+Historischer Prüfstand: Die am 6. September 2026 geprüfte [Seite der Bundesregierung zum Aktionsplan](https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/aktionsplan-nachhaltigkeit-2392096) beschreibt weiter den Beteiligungsentwurf. Ein späterer Kabinettsbeschluss darf erst nach Prüfung von Datum und veröffentlichter Fassung als beschlossen gelehrt werden. Vor jeder Präsentationsproduktion erneut prüfen.

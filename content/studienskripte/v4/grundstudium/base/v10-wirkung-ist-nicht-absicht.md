@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine gute Absicht ist ein Startpunkt, keine Wirkung. Auch eine umgesetzte Maßnahme und ihr Output beweisen noch nicht, dass sich der relevante Zustand verändert hat. v4.0 trennt deshalb sauber: Absicht → Maßnahme → Output → beobachteter Outcome → kausal zugerechnete Wirkung.
+Eine gute Absicht ist ein Startpunkt, keine Wirkung. Auch eine umgesetzte Maßnahme und ihr Output beweisen noch nicht, dass sich der relevante Zustand verändert hat. v4.0 trennt deshalb sauber: Absicht → Maßnahme → Output → beobachteter Outcome → Prüfung der kausalen Zurechnung der beobachteten Zustandsveränderung.
 
 ## Lernziele
 
@@ -100,7 +100,7 @@ Wir meinen es gut - und trotzdem kann etwas anders wirken als gedacht. Genau des
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
 
 
 ## Vertiefendes Lehrkapitel · 6. September 2026

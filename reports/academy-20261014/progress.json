@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-15",
+  "substantively_corrected_lectures": 7,
+  "other_v4_lectures_content_inherited": 171,
+  "historical_currentness_claim_corrected": 178,
+  "canonical_app_public_bodies_equal": 178,
+  "new_public_reader_routes": 178,
+  "pdfs_regenerated": 7,
+  "pdf_pages_rendered_and_visually_checked": 40,
+  "app_tests": "PASS",
+  "app_build_typecheck_lint": "PASS",
+  "app_source_release_gate": "PASS (120/120, zero remediation blockers)",
+  "app_production_activation": "UNCHANGED; source/PDF link updates not deployed",
+  "app_source_pr": 109,
+  "app_source_merge": "bf857e12ea860b603883f7d44498813874d28752",
+  "website_build_phases": "PASS: complete prebuild/build/postbuild, source audit and final public artifact",
+  "publication": "READY_FOR_MAIN_SITE_AND_PDF_RELEASE",
+  "external_blockers": [
+    "Vercel account soft block FAIR_USE_LIMITS_EXCEEDED (fluidCpuDuration); no build attempted or gate weakened.",
+    "Existing Oracle SSH endpoint timeout; no migration attempted."
+  ],
+  "remaining": [
+    "Publish reviewed source tree and seven PDF editions through existing Pages process; verify actual live responses and checksums.",
+    "Provide copyable Claude instruction for targeted presentation changes."
+  ],
+  "review_scope": "Focused October delta audit across all 178 scripts with previously reviewed inheritance; no blanket empirical validation or error-free claim.",
+  "app_pdf_links_pr": 110,
+  "app_pdf_links_merge": "8d11e04d07b8fe7b6bfcc3d51ef23e2e4ac58cb3",
+  "artifact_gate": "PASS",
+  "artifact_pages_checked": 22417,
+  "editorial_residue_pages_flagged": 0,
+  "search_coverage": "178/178 canonical script routes present",
+  "website_full_build": "PASS: WOEK_PDF_BUILD_MODE=verify npm run build, exit 0",
+  "app_reader_entry_pr": 111,
+  "app_reader_entry_merge": "5ec205c8d06f595b81c112bc3114d2aaafc22f31"
+}

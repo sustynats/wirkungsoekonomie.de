@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-15",
+  "status": "PASS_FOR_PUBLIC_SCRIPT_RELEASE",
+  "app_production_deployment": "BLOCKED_BY_EXISTING_HOSTING_GATES",
+  "logs": [
+    {
+      "check": "main-postbuild",
+      "file": "reports/academy-20261014/main-postbuild-20261015.txt",
+      "sha256": "ef4d0c794640249c04f0b6c46ad621c82743e3a841b8029301177bbd8b7f5cf8"
+    },
+    {
+      "check": "public-artifact",
+      "file": "reports/academy-20261014/public-artifact-20261015.txt",
+      "sha256": "b33cd9b90b5c452d01e3ae7811e981ef847c4146af7d873a06880f25de9ea149"
+    },
+    {
+      "check": "reader-tests",
+      "file": "reports/academy-20261014/reader-tests-20261015.txt",
+      "sha256": "b4a431563a73a8b9c66309fae87aa78f997d873d83b9e07c3d47a970dee2ef65"
+    },
+    {
+      "check": "academy-source-view",
+      "file": "reports/academy-20261014/academy-source-view-20261015.txt",
+      "sha256": "85c3418bf964c1fb951176eb7ce5bf957900eb21e5c7a0c5fc188bfbb6246dbd"
+    },
+    {
+      "check": "terminology",
+      "file": "reports/academy-20261014/terminology-20261015.txt",
+      "sha256": "c9752669db1c850afa611d3a5576d513d6fd77c8bed9675e5755a852852cdd3b"
+    }
+  ],
+  "limits": "No waiver of quality, privacy, hosting or cost gates. No blanket correctness or empirical validation claim.",
+  "full_website_build": {
+    "command": "WOEK_PDF_BUILD_MODE=verify npm run build",
+    "exit_code": 0,
+    "log_sha256": "20e572edf8ec8c0277b7f395bf209e608deba6043b128af56addaea2543bebc7"
+  },
+  "app_reader_entry": {
+    "pr": 111,
+    "merge": "5ec205c8d06f595b81c112bc3114d2aaafc22f31",
+    "tests": 2,
+    "build": "PASS",
+    "lint": "PASS"
+  },
+  "public_artifact": {
+    "status": "PASS",
+    "german_html_pages": 22417,
+    "editorial_residue": 0,
+    "public_search_routes": "18513/18513",
+    "broken_links": 0,
+    "reported_orphans": 3008,
+    "reported_duplicate_titles": 1167,
+    "limitations": "Orphan routes and duplicate titles are inherited diagnostics; no blanket error-free claim."
+  },
+  "app_final_tests": {
+    "command": "npm test",
+    "exit_code": 0,
+    "reader_regression_tests": 2,
+    "reference_and_negative_tests": 6,
+    "curriculum": "120/120; zero remediation blockers",
+    "runtime": "staging PASS; production release=false",
+    "assessment_and_public_smoke": "PASS",
+    "log_sha256": "517ecc91a168ce3499484b4ae44cbdb07cb8a3712ec023e1ab4f467bbaa3face"
+  }
+}
