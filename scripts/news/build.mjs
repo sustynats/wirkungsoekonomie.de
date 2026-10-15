@@ -359,6 +359,7 @@ export function storyCard(story, index, {privateImpactPreview = false, hrefBase 
 
 export function editorialCard(analysis, story, index, { hrefBase = "./" } = {}) {
   const personal=analysis.format===PERSONAL_FORMAT;
+  if(personal&&typeof analysis.body_markdown==='string')analysis={...analysis,reading_time_minutes:Math.max(1,Math.ceil(analysis.body_markdown.split(/\s+/).length/210))};
   const book = analysis.format === BOOK_FORMAT;
   const href = `${hrefBase}analyse/${analysis.slug}/`;
   const topic = (story?.topic || analysis.tags || []).join(" ").toLowerCase();
@@ -822,6 +823,8 @@ export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, r
 }
 
 function personalEditorialPage(a, {nextItem = null} = {}){
+ // Display-derived metadata must not alter an immutable revision base/hash.
+ a={...a,reading_time_minutes:Math.max(1,Math.ceil(a.body_markdown.split(/\s+/).length/210))};
  const label=personalLabel(a.subtype),canonical=`${SITE}/wirkungsticker/analyse/${a.slug}/`;
  const publicationHash=a.approved_editorial_revision?.content_hash||a.content_hash;
  const nextLink=nextItem?`<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextItem.href)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextItem.title)}</strong></span><span aria-hidden="true">→</span></a>`:'';

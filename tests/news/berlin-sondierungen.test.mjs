@@ -42,6 +42,7 @@ test('Lanz revision preserves the original immutable edition, identity and chron
  assert.equal(revised.updated_at.slice(0,10),'2026-10-15');
  assert.equal(feedDate(revised,'analysis'),old.published_at);
  const html=editorialAnalysisPage(revised);
+ assert.ok(html.includes(` · ${Math.ceil(revised.body_markdown.split(/\s+/).length/210)} Min.`));
  assert.ok(html.includes(`"datePublished":"${old.published_at}"`));
  assert.ok(html.includes(`"dateModified":"${revised.updated_at}"`));
  assert.ok(html.includes(`https://wirkungsoekonomie.de/wirkungsticker/analyse/${old.slug}/`));
