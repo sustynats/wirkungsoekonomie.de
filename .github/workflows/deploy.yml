@@ -125,6 +125,9 @@ jobs:
           # an old header plus a new footer must not bypass that check.
           node scripts/site/normalize-site-header.mjs
           npm run normalize:footer
+          # Use the same approved terminology projection as a full build.
+          # Historical prose stays intact and receives its dated notice.
+          python3 tools/apply_nwi_disambiguation.py
           npm run build:search
           npm run news:validate
       - name: Audit the generated release including new news routes
