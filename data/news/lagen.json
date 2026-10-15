@@ -1,7 +1,80 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-15T10:00:00.000Z",
+  "updated_at": "2026-10-15T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-15-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-15",
+      "window_from": "2026-10-15T10:00:00.000Z",
+      "window_to": "2026-10-15T16:00:00.000Z",
+      "stand": "2026-10-15T16:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 3,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Laut SWR Aktuell: Tankrabatt in Kraft, Spritpreise zunächst gefallen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T15:34:19.136Z",
+          "score": 6.1787
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T15:33:06.153Z",
+          "score": 7.6753
+        },
+        {
+          "story_id": "wt-71a7a66a9df9735c",
+          "slug": "goldbarren-schusswaffe-und-190-bankkonten-razzia-von-finanzfahndern-gegen-geldwasche-net-f9735c",
+          "title": "Razzia in Berlin gegen mutmaßliches Geldwäsche-Netzwerk",
+          "state": "neu",
+          "at": "2026-10-15T12:28:19.840Z",
+          "score": 5.412
+        },
+        {
+          "story_id": "wt-158a427f533225e4",
+          "slug": "essen-nach-gefangenenbefreiung-polizei-sucht-weiter-nach-tatern-3225e4",
+          "title": "Essen: Laut DER SPIEGEL fahndet Polizei nach Gefangenenbefreiung weiter nach Tätern",
+          "state": "neu",
+          "at": "2026-10-15T12:27:23.857Z",
+          "score": 5.4094
+        },
+        {
+          "story_id": "wt-d463fc29ec38e76e",
+          "slug": "starkregen-in-der-turkei-rettungsaktionen-nach-uberschwemmung-in-istanbul-zwei-tote-38e76e",
+          "title": "Laut Stern: Zwei Tote nach Überschwemmungen in Istanbul gemeldet",
+          "state": "neu",
+          "at": "2026-10-15T11:59:24.638Z",
+          "score": 7.3317
+        },
+        {
+          "story_id": "wt-e41ebe1d15f02bab",
+          "slug": "krieg-gegen-die-ukraine-viele-tote-nach-russischem-angriff-auf-bus-in-der-ostukraine-f02bab",
+          "title": "Nach ukrainischen Angaben mindestens 30 Tote bei russischem Busangriff im Osten der Ukraine",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T11:31:57.587Z",
+          "score": 9.5054
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Berichte sehen Inflationsdruck im Euroraum – weitere EZB-Zinserhöhung bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T11:30:02.654Z",
+          "score": 5.0001
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-15-mittagslage",
       "slot": "mittagslage",
