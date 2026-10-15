@@ -5,7 +5,7 @@ import {ROOT,read,atomic,sha} from './model.mjs';
 import {patchSearch} from './search-label.mjs';
 import {loadAudienceTeasers,applyAudienceTeaser} from './audience-teasers.mjs';
 
-export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=null}={}) {
+export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=null,pruneSearch=true}={}) {
  const out=path.resolve(artifact), source=path.resolve(candidate);
  const data=read(path.join(source,'wirkungslexikon/daten.json'));
  if(data.entries.some(e=>e.pruefstatus!=='freigegeben'))throw Error('Unfreigegebene Karte im öffentlichen Artefakt');
@@ -64,7 +64,7 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
    writePublicRoutes(out);
   }
  }
- if(searchModule.buildBrowserSearchIndex)searchModule.buildBrowserSearchIndex(out,{pruneFullIndex:true});
+ if(searchModule.buildBrowserSearchIndex)searchModule.buildBrowserSearchIndex(out,{pruneFullIndex:pruneSearch});
  else searchModule.writeBrowserSearchIndex({sourcePath:sourceIndex,targetPath:path.join(out,'assets/search/search-browser-index.json')});
  const sitemapModule=path.join(supportRoot,'scripts/lib/public-sitemaps.mjs');
  if(fs.existsSync(sitemapModule)){

@@ -14,6 +14,7 @@ try{
  const bytes=Buffer.from(await r.arrayBuffer());if(sha(bytes)!==artifact.sha256)throw Error('Prüfsumme des Lexikonartefakts stimmt nicht');
  const file=path.join(tmp,'lexikon.tar.gz');fs.writeFileSync(file,bytes);
  const py=spawnSync('python3',['-c',`import sys,tarfile\nfrom pathlib import Path\np=Path(sys.argv[1])\nwith tarfile.open(p/'lexikon.tar.gz') as a:\n if any(m.issym() or m.islnk() or not(m.isfile() or m.isdir()) for m in a.getmembers()):raise RuntimeError('Unexpected archive entry')\n a.extractall(p/'candidate',filter='data')`,tmp],{encoding:'utf8'});if(py.status)throw Error(py.stderr);
- const result=await integrate({artifact:path.join(ROOT,'_site'),candidate:path.join(tmp,'candidate')});
+ // The standard website build still needs this index for its final search step.
+ const result=await integrate({artifact:path.join(ROOT,'_site'),candidate:path.join(tmp,'candidate'),pruneSearch:false});
  console.log(JSON.stringify({...result,changedFiles:result.changedFiles.length}));
 }finally{fs.rmSync(tmp,{recursive:true,force:true});}
