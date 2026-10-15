@@ -343,10 +343,16 @@ jobs:
             /scripts/search/build-browser-search-index.mjs
             /scripts/lib/public-routes.mjs
             /scripts/lib/public-sitemaps.mjs
+            /scripts/lib/site-shell.mjs
+            /scripts/quality/build-public-area-directories.mjs
+            /scripts/quality/check-public-area-directories.mjs
             /scripts/quality/check-public-artifact-privacy.mjs
             /scripts/quality/check-size.mjs
             /templates/header.html
             /templates/footer.html
+            /templates/footer-shell.html
+            /templates/footer-newsletter.html
+            /tests/site/public-area-directories.test.mjs
             /templates/wirkungslexikon.html
             /templates/wirkungslexikon-share.html
             /content/wirkungslexikon/
@@ -382,6 +388,7 @@ jobs:
           echo "WL_CHROME_BIN=${{ steps.chrome.outputs.chrome-path }}" >> "$GITHUB_ENV"
       - name: Build approved public lexicon only
         run: |
+          node --test tests/site/public-area-directories.test.mjs
           node scripts/wirkungslexikon/build.mjs --public
           node scripts/wirkungslexikon/render-social.mjs --public
           node scripts/wirkungslexikon/public-test.mjs --images
@@ -405,6 +412,7 @@ jobs:
           ln -s "$RUNNER_TEMP/lexikon-public" _site
           node scripts/quality/check-public-artifact-privacy.mjs
           node scripts/quality/check-size.mjs
+          node scripts/quality/check-public-area-directories.mjs --artifact
           rm _site
       - name: Test complete public artifact in a browser
         run: |

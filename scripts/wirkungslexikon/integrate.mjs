@@ -29,13 +29,13 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  const hub='<section class="section" data-wl-hub="true"><div class="section-header"><p class="hero-kicker">Politische Sprache verstehen</p><h2>Wirkungslexikon politischer Sprache</h2><p>Begriffe, Bedeutungsverschiebungen und Wirkungspotenziale mit Quellen und klaren Evidenzgrenzen.</p><p><a class="btn btn-primary" href="/wirkungslexikon/">Wirkungslexikon öffnen</a></p></div></section>';
  const navProof=[];
  for(const f of all(out).filter(f=>f.endsWith('.html')&&!f.startsWith(path.join(out,'wirkungslexikon/')))){
-  const old=fs.readFileSync(f,'utf8');let html=old;
-  if(!old.includes('data-wl-global'))html=html.replace(/(<header\b[^>]*class="site-header"[\s\S]*?<a\b[^>]*>Debatte &amp; Radar<\/a>)/,'$1'+navLink)
-    .replace(/(<h[23][^>]*>Debatte &amp; Radar<\/h[23]>\s*<div class="footer-nav-links">)/,'$1'+navLink);
+  const old=fs.readFileSync(f,'utf8');let html=old;const navChanges=[];const insertNav=match=>{navChanges.push([match,match+navLink]);return match+navLink;};
+  if(!old.match(/<header\b[\s\S]*?<\/header>/)?.[0].includes('>Wirkungslexikon</a>'))html=html.replace(/(<header\b[^>]*class="site-header"[\s\S]*?<a\b[^>]*>Debatte &amp; Radar<\/a>)/,insertNav);
+  if(!old.match(/<footer\b[\s\S]*?<\/footer>/)?.[0].includes('>Wirkungslexikon</a>'))html=html.replace(/(<h[23][^>]*>Debatte &amp; Radar<\/h[23]>\s*<div class="footer-nav-links">)/,insertNav);
   if(path.relative(out,f)==='oeffentlicher-wirkungsraum/index.html'&&!old.includes('data-wl-hub'))html=html.replace('</main>',hub+'</main>');
   const searchUrls=[];
   html=html.replace(/src="([^"\s]*assets\/js\/search\.js)(?:\?[^"\s]*)?"/g,all=>{const prefix=all.match(/src="([^?\"]+)/)[1];const next='src="'+prefix+'?v='+searchVersion+'"';searchUrls.push([all,next]);return next;});
-  if(html!==old){let restored=old.includes('data-wl-global')?html:html.split(navLink).join('');if(!old.includes('data-wl-hub'))restored=restored.replace(hub,'');for(const [a,b]of searchUrls)restored=restored.replace(b,a);if(restored!==old)throw Error('Inhalt außerhalb der Navigation/Suchskriptversion würde verändert: '+f);fs.writeFileSync(f,html);navProof.push(path.relative(out,f));}
+  if(html!==old){let restored=html;for(const [a,b]of navChanges.reverse())restored=restored.replace(b,a);if(!old.includes('data-wl-hub'))restored=restored.replace(hub,'');for(const [a,b]of searchUrls)restored=restored.replace(b,a);if(restored!==old)throw Error('Inhalt außerhalb der Navigation/Suchskriptversion würde verändert: '+f);fs.writeFileSync(f,html);navProof.push(path.relative(out,f));}
  }
  const pages=read(path.join(source,'wirkungslexikon/search-meta.json'));
  const sourceIndex=path.join(out,'assets/search/search-index.json');
@@ -45,8 +45,22 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  const added=pages.map(p=>{const slug=p.path.slice('/wirkungslexikon/'.length).replace(/\/$/,'');const e=data.entries.find(e=>e.slug===slug);return {id:'wirkungslexikon-'+(slug||'start'),title:p.title,url:p.path,description:p.description,body:e?['Wirkungslexikon',e.wirkungspotenzial.moegliche_veraenderung,e.bedeutung_und_kontext,e.akteur,e.psychologischer_effekt.name,...e.kategorien].join(' '):p.description,type:e?'Wirkungskarte':'Seite',section:'Wirkungslexikon',format:'HTML',tags:e?[...e.kategorien,e.korpus,e.akteur]:['Wirkungslexikon'],priority:65};});
  atomic(sourceIndex,[...prior.filter(e=>!String(e.url).startsWith('/wirkungslexikon/')),...added]);
  const routesFile=path.join(supportRoot,'scripts/lib/public-routes.mjs');
+ const directoryPaths=new Set();
  if(fs.existsSync(routesFile)){
   const {writePublicRoutes}=await import(pathToFileURL(routesFile).href);writePublicRoutes(out);
+  const directoryModule=path.join(supportRoot,'scripts/quality/build-public-area-directories.mjs');
+  if(fs.existsSync(directoryModule)){
+   const priorManifest=read(path.join(out,'assets/data/public-area-directories.json'));
+   const selected=priorManifest.areas.filter(a=>['start','wirkungslexikon'].includes(a.area));
+   const hubs=new Map(selected.map(a=>{const rel=a.hub.slice(1)+(a.hub.endsWith('/')?'index.html':'');return [rel,fs.readFileSync(path.join(out,rel),'utf8')];}));
+   for(const a of selected)for(const p of a.generatedPages||[])directoryPaths.add(p.file);
+   const {buildPublicAreaDirectories}=await import(pathToFileURL(directoryModule).href);
+   const directories=buildPublicAreaDirectories(out,{onlyAreas:['start','wirkungslexikon']});
+   const strip=s=>s.replace(/<section\b(?=[^>]*\bdata-public-area-directory=["']true["'])[^>]*>[\s\S]*?<\/section>/gi,'').replace(/\s+<\/main>/g,'</main>');
+   for(const [rel,old]of hubs){if(strip(fs.readFileSync(path.join(out,rel),'utf8'))!==strip(old))throw Error('Verzeichnisaufbau würde redaktionellen Inhalt verändern: '+rel);directoryPaths.add(rel);}
+   for(const a of directories.areas.filter(a=>['start','wirkungslexikon'].includes(a.area)))for(const p of a.generatedPages||[])directoryPaths.add(p.file);
+   writePublicRoutes(out);
+  }
  }
  if(searchModule.buildBrowserSearchIndex)searchModule.buildBrowserSearchIndex(out,{pruneFullIndex:true});
  else searchModule.writeBrowserSearchIndex({sourcePath:sourceIndex,targetPath:path.join(out,'assets/search/search-browser-index.json')});
@@ -61,7 +75,7 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  }
  const after=new Map(all(out).map(f=>[path.relative(out,f),sha(fs.readFileSync(f))]));
  const unexpected=[];
- const allowed=name=>name.startsWith('wirkungslexikon/')||name.startsWith('assets/search/')||name.startsWith('sitemaps/')||['assets/css/wirkungslexikon.css','assets/js/wirkungslexikon.mjs','assets/js/wirkungslexikon-init.mjs','assets/js/search.js','assets/data/public-routes.json','sitemap.xml'].includes(name)||name.startsWith('assets/img/wirkungslexikon/')||name.startsWith('assets/fonts/')&&!before.has(name)||navProof.includes(name);
+ const allowed=name=>name.startsWith('wirkungslexikon/')||name.startsWith('assets/search/')||name.startsWith('sitemaps/')||['assets/css/wirkungslexikon.css','assets/js/wirkungslexikon.mjs','assets/js/wirkungslexikon-init.mjs','assets/js/search.js','assets/data/public-routes.json','assets/data/public-area-directories.json','sitemap.xml'].includes(name)||directoryPaths.has(name)||name.startsWith('assets/img/wirkungslexikon/')||name.startsWith('assets/fonts/')&&!before.has(name)||navProof.includes(name);
  for(const name of new Set([...before.keys(),...after.keys()]))if(before.get(name)!==after.get(name)&&!allowed(name))unexpected.push(name);
  if(unexpected.length)throw Error('Unerwartete Änderungen: '+unexpected.join(', '));
  for(const f of all(path.join(out,'wirkungslexikon')).filter(f=>/\.(?:html|json|xml|mjs)$/.test(f))){const text=fs.readFileSync(f,'utf8');if(/\/Users\/|\/private\/tmp\/|\bgh[pousr]_[A-Za-z0-9_]{20,}/.test(text))throw Error('Privater Datenrest: '+f);}

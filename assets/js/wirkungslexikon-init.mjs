@@ -9,7 +9,7 @@ wl.init();
 if(simulation){const rewrite=()=>document.querySelectorAll('[href^="/wirkungslexikon/"]').forEach(a=>a.setAttribute('href','/public'+a.getAttribute('href')));rewrite();new MutationObserver(rewrite).observe(document.querySelector('#app'),{childList:true,subtree:true});}
 // Existing site navigation, without starting unrelated analytics or API services.
 const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('#site-nav');
-if(toggle&&nav) toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);document.body.classList.toggle('nav-is-open',open);});
+if(toggle&&nav&&!document.querySelector('script[src*="site-navigation.js"]')) toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);document.body.classList.toggle('nav-is-open',open);});
 const form=document.querySelector('#wl-editor');
 if(form){
  let revision=0;
