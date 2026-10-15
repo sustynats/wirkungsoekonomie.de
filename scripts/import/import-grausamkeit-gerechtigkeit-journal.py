@@ -36,7 +36,7 @@ DATE_ISO = "2026-10-15T18:00:00+02:00"
 SECTION = "Meinung & Analyse"
 HERO_IMAGE = "2026-10-15-wenn-grausamkeit-als-gerechtigkeit-gilt.png"
 HERO_ALT = (
-    "KI-generierte Titelillustration: eine Frau zwischen düsteren Feindbild-Parolen und einer hellen Szene "
+    "Titelillustration: eine Frau zwischen düsteren Feindbild-Parolen und einer hellen Szene "
     "mit dem Schild ‚Menschen statt Schlagzeilen‘. Symbolbild, keine dokumentarische Aufnahme."
 )
 TAGS = [
@@ -378,7 +378,7 @@ def write_article(source_sha: str, image_sha: str, paragraphs: list[dict[str, ob
     <p class="journal-pdf-download-row no-print" data-search-exclude><a class="btn btn-secondary journal-pdf-download" data-journal-pdf-download href="../assets/pdf/journal/{SLUG}.pdf" download>PDF herunterladen</a></p>
     <p class="meta">{byline}</p>
   </div>
-  <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{HERO_IMAGE}" width="1672" height="941" alt="{esc(HERO_ALT)}" decoding="async" fetchpriority="high"><figcaption>KI-generierte redaktionelle Titelillustration; Symbolbild.</figcaption></figure>
+  <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{HERO_IMAGE}" width="1672" height="941" alt="{esc(HERO_ALT)}" decoding="async" fetchpriority="high"><figcaption>Titelillustration; Symbolbild.</figcaption></figure>
 </article>
 <section class="article-page"><div class="article-body">
 {toc}
