@@ -3437,8 +3437,8 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
-          "direction": "negative",
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "planet": {
@@ -4146,18 +4146,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 4,
+          "magnitude": 3,
           "direction": "negative",
           "status": "observed"
         },
         "planet": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 2,
-          "direction": "negative",
+          "direction": "open",
           "status": "potential"
         }
       }
