@@ -46,7 +46,8 @@ try{
   assert((await page.locator('.wl-results-count').textContent()).includes('132'));
   assert.equal(await page.locator('.wl-modebar').count(),0);
   assert.equal(await page.locator('a[href="/wirkungslexikon/redaktion/"]').count(),0);
-  assert(await page.locator('.site-header a[href="/wirkungslexikon/"]').count()>0);
+  assert.equal(await page.locator('.site-header a[href="/wirkungslexikon/"]').count(),0);
+  assert(await page.locator('footer a[href="/wirkungslexikon/"]').count()>0);
   if(width===390){await page.locator('.nav-toggle').click();assert.equal(await page.locator('.nav-toggle').getAttribute('aria-expanded'),'true');await page.keyboard.press('Escape');assert.equal(await page.locator('.nav-toggle').getAttribute('aria-expanded'),'false');}
   await page.goto(base+'/wirkungslexikon/neue-merz-problem-im-stadtbild/');
   await page.waitForFunction(()=>document.documentElement.dataset.wlReady==='true');

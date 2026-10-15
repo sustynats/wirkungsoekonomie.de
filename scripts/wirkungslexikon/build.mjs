@@ -55,8 +55,6 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   if(group && !group.items.some(i=>i.href==='wirkungslexikon/')) group.items.push({label:'Wirkungslexikon',href:'wirkungslexikon/',match:['wirkungslexikon/']});
   const link=i=>`<a href="/${esc(i.href)}">${esc(i.label)}</a>`;
   let header=fs.readFileSync(path.join(ROOT,'templates/header.html'),'utf8').replaceAll('{{BASE}}','/');
-  header=header.replace('data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|news/|woek-ki/|app/"','data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|wirkungslexikon/|news/|woek-ki/|app/"');
-  if(!header.includes('href="/wirkungslexikon/"'))header=header.replace(/(<a[^>]+href="\/oeffentlicher-wirkungsraum\/"[^>]*>Debatte &amp; Radar<\/a>)/, '$1<a href="/wirkungslexikon/" data-nav-match="wirkungslexikon/">Wirkungslexikon</a>');
   let footer=fs.readFileSync(path.join(ROOT,'templates/footer.html'),'utf8').replaceAll('{{BASE}}','/')
     .replace('{{FOOTER_NAV}}',nav.footerGroups.map(g=>`<div class="footer-nav-group"><h3>${esc(g.title)}</h3><div class="footer-nav-links">${g.items.map(link).join('')}</div></div>`).join(''))
     .replace('{{FOOTER_LEGAL_NAV}}',nav.footerLegal.filter(i=>i.href!=='en/').map(link).join(''));

@@ -30,7 +30,6 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  const navProof=[];
  for(const f of all(out).filter(f=>f.endsWith('.html')&&!f.startsWith(path.join(out,'wirkungslexikon/')))){
   const old=fs.readFileSync(f,'utf8');let html=old;const navChanges=[];const insertNav=match=>{navChanges.push([match,match+navLink]);return match+navLink;};
-  if(!old.match(/<header\b[\s\S]*?<\/header>/)?.[0].includes('>Wirkungslexikon</a>'))html=html.replace(/(<header\b[^>]*class="site-header"[\s\S]*?<a\b[^>]*>Debatte &amp; Radar<\/a>)/,insertNav);
   if(!old.match(/<footer\b[\s\S]*?<\/footer>/)?.[0].includes('>Wirkungslexikon</a>'))html=html.replace(/(<h[23][^>]*>Debatte &amp; Radar<\/h[23]>\s*<div class="footer-nav-links">)/,insertNav);
   if(path.relative(out,f)==='oeffentlicher-wirkungsraum/index.html'&&!old.includes('data-wl-hub'))html=html.replace('</main>',hub+'</main>');
   const searchUrls=[];
