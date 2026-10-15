@@ -1,7 +1,61 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-14T16:00:00.000Z",
+  "updated_at": "2026-10-15T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-15-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-15",
+      "window_from": "2026-10-14T16:00:00.000Z",
+      "window_to": "2026-10-15T04:00:00.000Z",
+      "stand": "2026-10-15T04:00:00.000Z",
+      "headline": "Das sind die 4 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 4,
+        "neu": 0,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt gilt, laut SWR Aktuell sinken Preise zunächst – dauerhafte Entlastung bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T03:36:50.870Z",
+          "score": 6.2178
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut Tagesspiegel und stern: Ölpreisschock setzt Euroraum unter Inflationsdruck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T02:33:33.205Z",
+          "score": 7.6299
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine verletzt drei südkoreanische Offiziere schwer",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T00:04:54.793Z",
+          "score": 7.9235
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Laut stern: Sami Abu Schehadeh zieht Knesset-Kandidatur zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-14T20:52:35.294Z",
+          "score": 9.1564
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-15T04:14:09.091Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-14-abendlage",
       "slot": "abendlage",
