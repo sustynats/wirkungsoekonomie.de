@@ -37,6 +37,13 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   fs.mkdirSync(target,{recursive:true});
   // Delete only files previously owned by this generator (including revoked cards).
   const oldManifest=path.join(target,'.generated.json');
+  const oldRuntime=path.join(target,'runtime.json'),oldShare=path.join(target,'share-card.html');
+  const previousShare=fs.existsSync(oldShare)?fs.readFileSync(oldShare,'utf8'):null;
+  const unchangedImages=new Map();
+  if(fs.existsSync(oldManifest)&&fs.existsSync(oldRuntime)){
+    const previous=read(oldRuntime);const same=new Set(data.entries.filter(e=>JSON.stringify(e)===JSON.stringify(previous.data.entries.find(o=>o.slug===e.slug))).map(e=>e.slug));
+    if(previous.config.mode===mode)for(const rel of read(oldManifest).files)if(/^[a-z0-9-]+\/(og|portrait|square)\.png$/.test(rel)&&same.has(rel.split('/')[0])&&fs.existsSync(path.join(target,rel)))unchangedImages.set(rel,fs.readFileSync(path.join(target,rel)));
+  }
   if(fs.existsSync(oldManifest)) for(const f of read(oldManifest).files) {
     if(!f.includes('..') && !path.isAbsolute(f)) fs.rmSync(path.join(target,f),{force:true});
   }
@@ -107,6 +114,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
     .replace("const draft=e.pruefstatus!=='freigegeben'", "const draft=config.mode==='preview'||e.pruefstatus!=='freigegeben'")
     .replace('if(lvl) on[lvl]=true;',"if(lvl && (config.mode==='preview'||e.evidenzstufe_bestaetigt===lvl)) on[lvl]=true;");
   write('share-card.html',share);
+  if(previousShare===share)for(const [rel,bytes]of unchangedImages){fs.writeFileSync(path.join(target,rel),bytes);written.push(rel);}
   write('.generated.json',{mode,masterSha256:model.checksum,revision:model.editorial.revision,entries:data.entries.length,files:[...written,'.generated.json']});
   if(assets) {
     for(const rel of ['assets/css/style.css','assets/css/wirkungslexikon.css','assets/js/wirkungslexikon.mjs','assets/js/wirkungslexikon-init.mjs','assets/fonts','assets/img/brand','assets/img/wirkungslexikon']) {

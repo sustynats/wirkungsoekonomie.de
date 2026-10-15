@@ -31,3 +31,5 @@ Die manuelle GitHub-Pages-Veröffentlichung bindet die erwartete Quellrevision, 
 ## Grenzen der technischen Prüfung
 
 Ein bestandener Build oder Quellenlinktest ist keine fachliche Einzelbegutachtung. Automatische axe-Tests ersetzen keinen vollständigen Screenreader-Test. Unpräzise Quellenfundstellen, standardisierte Texte und offene Originalabgleiche bleiben redaktionelle Aufgaben. Es gibt keine automatische Personenbewertung, Wirkungs-Scores oder Social-Credit-Funktion.
+
+Nach einer Speicherung werden unveränderte Social-Bilder beibehalten; geänderte oder zurückgezogene Fassungen verlieren ihre alten Bilder. Der lokale Server rendert fehlende Vorschau-Bilder neu. Dafür muss Playwright verfügbar sein (oder über `WL_PLAYWRIGHT` aufgelöst werden). Ein fehlgeschlagener Bildaufbau hebt die bereits gespeicherte Kartenrevision nicht auf; `socialImagesReady` im API-Ergebnis zeigt diesen Fall. Ein erneuter Aufbau ist mit `render-social.mjs --missing` möglich.

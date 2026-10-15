@@ -3,10 +3,13 @@ import path from 'node:path';
 import http from 'node:http';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
 import {ROOT, atomic, read, loadModel} from './model.mjs';
 import {saveEntry} from './editorial.mjs';
 import {build} from './build.mjs';
 const base=path.join(ROOT,'outputs/wirkungslexikon');
+const run=promisify(execFile);
 const authFile=path.join(base,'access.json');
 if(!fs.existsSync(authFile))atomic(authFile,{username:'redaktion',password:crypto.randomBytes(24).toString('base64url'),name:'Lokale Redaktion',role:'editor'});
 const access=read(authFile);
@@ -32,7 +35,7 @@ const server=http.createServer(async(req,res)=>{
     if(req.method==='GET'){const model=loadModel();const entry=model.data.entries.find(e=>e.slug===u.searchParams.get('slug'));return json(entry?200:404,{entry,revision:model.editorial.revision,actor:access.name});}
     if(req.method==='POST'){
      if(saving)return json(409,{error:'Speicherung läuft; bitte erneut versuchen'});saving=true;
-     try{const result=saveEntry(await body(),access);build();build({mode:'public'});return json(200,result);}finally{saving=false;}
+     try{const result=saveEntry(await body(),access);build();build({mode:'public'});let socialImagesReady=true;try{await run(process.execPath,[path.join(ROOT,'scripts/wirkungslexikon/render-social.mjs'),'--missing'],{timeout:180000});}catch{socialImagesReady=false;}return json(200,{...result,socialImagesReady});}finally{saving=false;}
     }
    }
    if(u.pathname==='/api/wirkungslexikon/reports'){
