@@ -14,14 +14,14 @@ for (const script of releasedScripts) {
   byTrack.set(script.track, list);
 }
 
-import { historicalPublicScriptBody, historicalHeadingTitle } from './legacy-public-script.mjs';
+import { historicalPublicScriptBody, historicalHeadingTitle, legacyParagraphFingerprint, historicalHtmlText } from './legacy-public-script.mjs';
 import { esc, renderReader } from './reader-renderer.mjs';
 
 const legacyAnchors = JSON.parse(readFileSync(join(ROOT, 'content/studienskripte/legacy-public-anchors.json'), 'utf8')).readers;
 
 function buildReaderPage(script) {
   const source = readFileSync(join(ROOT, script.masterPath), "utf8");
-  const rendered = renderReader(historicalPublicScriptBody(source));
+  const rendered = renderReader(historicalPublicScriptBody(source, {publicPageExists: file => existsSync(join(ROOT,file))}));
   const previous = legacyAnchors[script.slug];
   if (!previous) throw new Error('Missing public anchor snapshot: '+script.slug);
   const key = value => historicalHeadingTitle(value).replace(/[*`_]/g,'').trim();
@@ -29,7 +29,17 @@ function buildReaderPage(script) {
   for(const heading of previous.headings){const list=oldByTitle.get(key(heading.text))??[];list.push(heading.id);oldByTitle.set(key(heading.text),list);}
   const idMap = new Map();const used=new Set();
   const toc=rendered.toc.map(item=>{const candidates=oldByTitle.get(key(item.text))??[];let id=candidates.find(value=>!used.has(value))??item.id;used.add(id);idMap.set(item.id,id);return {...item,id};});
-  const html=rendered.html.replace(/\bid="([^"]+)"/g,(_,id)=>`id="${esc(idMap.get(id)??id)}"`);
+  let html=rendered.html.replace(/\bid="([^"]+)"/g,(_,id)=>`id="${esc(idMap.get(id)??id)}"`);
+  const byParagraph=new Map();
+  for(const paragraph of previous.paragraphs){const key=paragraph.section_id+':'+paragraph.fingerprint;const list=byParagraph.get(key)??[];list.push(paragraph.id);byParagraph.set(key,list);}
+  const reserved=new Set(previous.ids);let section='';
+  html=html.replace(/<h[1-6]\b[^>]*id="([^"]+)"[^>]*>[\s\S]*?<\/h[1-6]>|<p\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/p>/g,(block,headingId,paragraphId,content)=>{
+    if(headingId){section=headingId;return block;}
+    const candidates=byParagraph.get(section+':'+legacyParagraphFingerprint(historicalHtmlText(content)))??[];
+    let id=candidates.find(value=>!used.has(value));
+    if(!id){id=reserved.has(paragraphId)?'archiv-'+paragraphId:paragraphId;while(used.has(id)||reserved.has(id))id='archiv-'+id;}
+    used.add(id);return block.replace(`id="${paragraphId}"`,`id="${esc(id)}"`);
+  });
   const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
   if(new Set(ids).size!==ids.length)throw new Error('Duplicate historical anchor: '+script.slug);
   const aliases=previous.ids.filter(id=>!ids.includes(id)).map(id=>`<span id="${esc(id)}"></span>`).join('');
