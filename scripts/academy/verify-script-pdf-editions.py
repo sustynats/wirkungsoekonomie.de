@@ -21,7 +21,7 @@ for item in report['files']:
  assert d.metadata['author']=='Natalie Weber'
  metadata=json.dumps(d.metadata,ensure_ascii=False)+d.get_xml_metadata()
  assert not re.search(r'Codex|Claude|ChatGPT|OpenAI|ReportLab|PyMuPDF',metadata,re.I),item['lecture_id']+' metadata residue'
- results.append({'lecture_id':item['lecture_id'],'source_sha256':item['source_sha256'],'pdf_sha256':item['sha256'],'pages':len(d),'full_article_text_parity':'PASS','metadata':'PASS'})
+ results.append({'lecture_id':item['lecture_id'],'source_sha256':item['source_sha256'],'pdf_sha256':item['sha256'],'reader_article_sha256':hashlib.sha256(article.encode()).hexdigest(),'pages':len(d),'full_article_text_parity':'PASS','metadata':'PASS'})
 assert len(results)==7
 (ROOT/'reports/academy-20261014/pdf-source-view-verification.json').write_text(json.dumps({'status':'PASS','scope':'Full public teaching article, excluding title/byline/page footer and nonpublic source-production sections. All final PDF page renders separately reviewed.','files':results},ensure_ascii=False,indent=2)+'\n')
 print('PDF source/view, complete article text, hashes and metadata: PASS (7 PDFs, 40 pages)')

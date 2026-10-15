@@ -14,11 +14,12 @@ for (const script of releasedScripts) {
   byTrack.set(script.track, list);
 }
 
-import { esc, renderReader, statusLabel } from './reader-renderer.mjs';
+import { historicalPublicScriptBody } from './legacy-public-script.mjs';
+import { esc, renderReader } from './reader-renderer.mjs';
 
 function buildReaderPage(script) {
   const source = readFileSync(join(ROOT, script.masterPath), "utf8");
-  const { toc, html } = renderReader(source);
+  const { toc, html } = renderReader(historicalPublicScriptBody(source));
   const base = "../../../";
   const destination = join(ROOT, script.publicPath, "index.html");
   mkdirSync(join(ROOT, script.publicPath), { recursive: true });
@@ -32,13 +33,15 @@ function buildReaderPage(script) {
     <meta name="search_title" content="${esc(script.code)}: ${esc(script.title)}">
     <meta name="search_section" content="Bibliothek · Studienskripte">
     <meta name="search_type" content="Studienskript">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/${esc(script.publicPath)}">
     <link rel="stylesheet" href="${base}assets/css/style.css">
   </head>
   <body>
     ${renderSiteHeader(base, 'de')}
     <main data-pagefind-body>
-      <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Öffentliche Lesefassung · redaktionell freigegeben</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
-      <section class="section"><div class="card"><dl class="document-card-meta"><dt>Track</dt><dd>${esc(script.track)}</dd><dt>Status</dt><dd>Freigegebene Lesefassung</dd></dl></div></section>
+      <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Historische Lesefassung</p><p>Diese Fassung dokumentiert einen früheren Skriptstand. <a href="../v4/">Zu den aktuellen Vorlesungsskripten des Curriculum 4.0</a>.</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
+      <section class="section"><div class="card"><dl class="document-card-meta"><dt>Studienbereich</dt><dd>${esc(script.track)}</dd><dt>Status</dt><dd>Historischer Skriptstand</dd></dl></div></section>
       <section class="section"><nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><div class="toc-links">${toc.map((item) => `<a class="toc-level-${item.level}" href="#${item.id}">${esc(item.text)}</a>`).join("")}</div></nav></section>
       <article class="section narrow">${html}</article>
     </main>
@@ -77,19 +80,19 @@ const sections = Array.from(byTrack.entries()).map(([track, scripts]) => `
       <section class="section">
         <div class="section-header">
           <h2>${esc(track)}</h2>
-            <p>${scripts.length} redaktionell freigegebene Lesefassungen.</p>
+            <p>${scripts.length} frühere Lesefassungen.</p>
         </div>
         <div class="knowledge-library-grid">
           ${scripts.map((script) => `
           <article class="knowledge-library-card">
             <div class="document-card-badges">
               <span class="status-badge">Studienskript</span>
-              <span class="status-badge">${esc(statusLabel(script.status))}</span>
+              <span class="status-badge">Historische Lesefassung</span>
             </div>
             <h3>${esc(script.code)}: ${esc(script.title)}</h3>
-            <p>Diese öffentliche Lesefassung ist redaktionell freigegeben. PDF, Video und Präsentationsmaterial können unabhängig davon ergänzt werden.</p>
+            <p>Diese Lesefassung dokumentiert einen früheren Skriptstand. Der aktuelle Lehrstand steht im Curriculum 4.0.</p>
             <dl class="document-card-meta">
-              <dt>Status</dt><dd>Freigegeben</dd>
+              <dt>Fassung</dt><dd>Historischer Skriptstand</dd>
               <dt>Format</dt><dd>Online-Lesefassung</dd>
             </dl>
             <p><a class="btn btn-primary" href="${esc(script.slug)}/">Lesefassung öffnen</a></p>
@@ -120,15 +123,15 @@ const html = `<!DOCTYPE html>
       </section>
       <section class="section section-muted">
         <div class="section-header">
-          <h2>Produktionsstand</h2>
-          <p>${releasedScripts.length} Studienskripte sind redaktionell freigegeben und hier online lesbar. Weitere Formate wie PDF, Video und Präsentationen erscheinen separat, sobald sie final vorliegen.</p>
+          <h2>Frühere Skriptfassungen</h2>
+          <p>${releasedScripts.length} frühere Lesefassungen bleiben als Archiv zugänglich. Den aktuellen Lehrstand findest du in den <a href="v4/">178 Vorlesungsskripten des Curriculum 4.0</a>.</p>
         </div>
       </section>
 ${sections}
       <section class="section section-muted">
         <div class="section-header">
           <h2>Grenze zu Prüfungen</h2>
-          <p>Mini-Quiz und Verständnisfragen können im Skript öffentlich stehen. Zertifikatsprüfungen, Antwortlogik, CorrectAnswer-Felder, Scoring-Regeln und Fallrubrics bleiben geschützt in der Akademie-App.</p>
+          <p>Die öffentlichen Skripte enthalten Übungen und Verständnisfragen. Zertifikatsprüfungen und deren Lösungen sind nur im persönlichen Studienraum zugänglich.</p>
         </div>
       </section>
     </main>

@@ -21,13 +21,18 @@ test('all canonical scripts have a reader, source hash, unique route and valid l
 test('seven corrected PDF editions are linked to their exact source identities', () => {
   const proof = JSON.parse(fs.readFileSync('reports/academy-20261014/pdf-build.json'));
   const pdfs = proof.files;
-  assert.equal(proof.render_contract.length,4);
-  for(const file of proof.render_contract) assert.equal(createHash('sha256').update(fs.readFileSync(file.file)).digest('hex'),file.sha256,`PDF renderer contract changed: ${file.file}`);
+  const parity = JSON.parse(fs.readFileSync('reports/academy-20261014/pdf-source-view-verification.json')).files;
+  const contract = proof.compatible_render_contract ?? proof.render_contract;
+  assert.equal(contract.length,4);
+  for(const file of contract) assert.equal(createHash('sha256').update(fs.readFileSync(file.file)).digest('hex'),file.sha256,`PDF renderer contract changed: ${file.file}`);
   assert.equal(pdfs.length,7);
   for (const pdf of pdfs) {
     const row = rows.find(r=>r.lecture_id===pdf.lecture_id);assert.ok(row?.corrected);
     assert.equal(row.source_sha256,pdf.source_sha256);
     assert.ok(row.pdf_url.endsWith('/'+row.pdf));
+    const binding=parity.find(x=>x.lecture_id===row.lecture_id);assert.equal(binding.pdf_sha256,pdf.sha256);
+    const article=/<article class="section narrow">([\s\S]*?)<\/article>/.exec(fs.readFileSync(`${row.route}index.html`,'utf8'))[1];
+    assert.equal(createHash('sha256').update(article).digest('hex'),binding.reader_article_sha256,'PDF article binding: '+row.lecture_id);
   }
 });
 test('protected questions never enter a public reader, while source-function teaching survives', () => {
@@ -41,4 +46,18 @@ test('source-function teaching survives while internal state labels become publi
   assert.match(body,/Ein Gesetz belegt seinen Inhalt/);
   assert.match(body,/öffentlich nicht belegt ist nicht nicht geprüft/);
   assert.doesNotMatch(body,/NOT_PUBLICLY|NOT_ASSESSED/);
+});
+
+
+test('teaching labels and causal-chain assignments survive the metadata projection',()=>{
+ const shown=learningScriptBody('# Lehre\n\n**lecture_id:** `X`\n**Produkt:** Gut.\n**Fehler:** Falsche Behauptung.\n**Korrektur:** Begründete Einordnung.\n**A:** Weiterbildung.\n**M:** Kompetenzzuwachs.\n**ΔZ:** Zustandsänderung.\n**R:** Gegenfaktum.\n**Arbeitsprodukt:** Ein Entscheidungsmemo.');
+ assert.doesNotMatch(shown,/lecture_id/);
+ for(const text of ['Gut.','Falsche Behauptung.','Begründete Einordnung.','Weiterbildung.','Kompetenzzuwachs.','Zustandsänderung.','Gegenfaktum.','Ein Entscheidungsmemo.'])assert.ok(shown.includes(text),text);
+});
+test('historical readers retain teaching and original routes without production scaffolding',async()=>{
+ const {historicalPublicScriptBody}=await import('../../scripts/studienskripte/legacy-public-script.mjs');
+ const cleaned=historicalPublicScriptBody('# Lehre\n## 3. Transkript (Gerüst)\nEine Scorecard ist ein Profil.\nDer Produktionsstandort ist ein Wirkungsraum.\n### 4.5 Chart-Spec\n```chart-spec\npreferred_asset: internal.svg\n```\n## V1-Finalisierung: Vertiefung\nWirkung bleibt relational.\n## 7. Tiefenskript-Erweiterung Sprint 9\nEin sinnvolles Beispiel.');
+ assert.match(cleaned,/Eine Scorecard ist ein Profil/);assert.match(cleaned,/Der Produktionsstandort ist ein Wirkungsraum/);assert.match(cleaned,/Wirkung bleibt relational/);assert.match(cleaned,/Ein sinnvolles Beispiel/);assert.doesNotMatch(cleaned,/chart-spec|preferred_asset|Gerüst|Finalisierung|Sprint 9/i);
+ const legacy=JSON.parse(fs.readFileSync('content/studienskripte/index.json')).scripts.filter(x=>x.editorialStatus==='freigegeben');assert.equal(legacy.length,49);
+ for(const row of legacy){const page=fs.readFileSync(`${row.publicPath}index.html`,'utf8');assert.match(page,/Historische Lesefassung/);assert.match(page,/name="robots" content="noindex,follow"/);assert.match(page,/href="..\/v4\/"/);assert.doesNotMatch(page,/\bProduktionsstand\b|redaktionell freigegeben|Chart-Spec|Transkript \(Gerüst\)|Erklärgerüst|V1-Finalisierung|V1-Abschlussnotiz|Tiefenskript-Erweiterung Sprint/i);}
 });

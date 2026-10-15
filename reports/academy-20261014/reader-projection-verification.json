@@ -1,0 +1,350 @@
+{
+  "status": "LOCAL_REGRESSION_AND_PDF_EQUIVALENCE_PASS_FULL_CI_PENDING",
+  "canonical_sources_unchanged": 178,
+  "online_projections_adjusted": [
+    "WOEK-G-BASE-021",
+    "WOEK-G-GOV-HIST-03",
+    "WOEK-G-GOV-DNS-01",
+    "WOEK-G-GOV-IND-01",
+    "WOEK-G-GOV-PARL-01",
+    "WOEK-G-GOV-COMPARE-01",
+    "WOEK-WB-G-V4-001",
+    "WOEK-WB-G-V4-002",
+    "WOEK-WB-G-V4-004",
+    "WOEK-WB-WM-V4-007",
+    "WOEK-WB-WM-V4-010",
+    "WOEK-WB-WC-V4-004",
+    "WOEK-WB-WC-V4-006",
+    "WOEK-WB-WC-V4-010"
+  ],
+  "changes": "Replace overbroad metadata-field removal with an explicit production-field list; preserve definitions, causal chains, corrections and learner assignments. Public evidence-role codes use readable labels.",
+  "historical_readers": 49,
+  "historical_originals_unchanged": [
+    {
+      "file": "content/studienskripte/woek-g-v02.md",
+      "sha256": "a00d47483f771e69f7aaccb476fbace5c6e73f829157154d2551215af0b222c9",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/woek-g-v04.md",
+      "sha256": "f05ac598e53325448fd9165d9409c91086bb44d3fc99c87b4ea466eb5682ed06",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/woek-g-v05.md",
+      "sha256": "4ff76e5a16593215fa5bc4eb375763c3fef5adf4db25e89909bcb99df4243e6d",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/woek-g-v06.md",
+      "sha256": "843cc60433af05c99f5966a6a75faa884a6282056efee111ced59036258e81dd",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/woek-g-v09.md",
+      "sha256": "7366d85eef98f136fed1c1207f641549e961bb069ea4f28c5c9cfe36cfe57ae7",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/woek-g-v10.md",
+      "sha256": "46613a1f1f6fa3c14310177085cec85acf9a284a82cf6564f831d343ddef748e",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/woek-g-v11.md",
+      "sha256": "db758bfdd104bf94581a873b4119cf1291be45ee80b94c2f2b9f9499ad14b99c",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungsmanagement-v1.md",
+      "sha256": "f388485c43fc66a3ddbc6c1db03b0de21df6bdbf488f3da6d4d6d6118ab34437",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungsmanagement-v2.md",
+      "sha256": "8a1469d24edb7fb8591930d0924e0f2719323fa41da0fe342ffcedbbc24191ba",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungsmanagement-v3.md",
+      "sha256": "4e83df5ad69a27d5409e8d4974bb4a001dbd687a7ef6f3bd61a01656aba307a4",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungsmanagement-v4.md",
+      "sha256": "5df614f84a6faf4d845d5f84c953b4c05586349601b9a83f201218451bf88869",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungsmanagement-v5.md",
+      "sha256": "6d744463172140067bcdb0a10371a244d486aa175672708e1f2f1bbc2dd33130",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungsmanagement-v7.md",
+      "sha256": "452661d3076342edf6e0f40914e9390caa3cff9760a149bcfe90cc67352fbdb1",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungscontrolling-wc-v1.md",
+      "sha256": "4c7b5a7fcb6cf2a39a0686f54e9bf21ea50217b45172a4093c532123575dfbaa",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungscontrolling-wc-v2.md",
+      "sha256": "99347886ec2b41597e7e59a30a533913e13358c2f16108fae1168444e21e68d2",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungscontrolling-wc-v3.md",
+      "sha256": "f9670aef236150c861830846c3be753703fef1611557c7527ef60808378e511b",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungscontrolling-wc-v4.md",
+      "sha256": "b02ff453776170283986af6e4acfc391014dc9a273eed5e03b7e088f1fb9e41d",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungscontrolling-wc-v5.md",
+      "sha256": "9268b87caa4b36798b66fc0ec3c0ac3aaae548103038660b2c273571abc45098",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/wirkungscontrolling-wc-v9.md",
+      "sha256": "9eb68ae442424ba88938c3c4f716ee4a0c0ecda59567e18c1b0782986ff59c62",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv2.md",
+      "sha256": "4f6172106f7fa50c715087eeba09e95e69100e65284f3b770ec075b600aca3d1",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv3.md",
+      "sha256": "13307721a9738aadcdd2bde3d599006bdd92182722e0a7711dd757fbf32e00cc",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv4.md",
+      "sha256": "008b50de22dbdcf11ba4630bf8c22ee95e7f9b5db2b2dda96bd6a032957272a9",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv5.md",
+      "sha256": "a593f72844eb61ac5c844e8177388906700b0fe6255126513e407603e5c590f5",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv6.md",
+      "sha256": "1b12ade9ef756bfdc4c35a4e5c3c053fe30c6f28a12e1339f4ae4df2ec3ea210",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv7.md",
+      "sha256": "8040edbbf9d81c9b7b4f43bc0aa5538e27a3000b5054e2e6a103f594ecaca7e3",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/multiplikatoren-mv8.md",
+      "sha256": "9a80a9718933a6eb500f1f6489146ffefd8f6689af1c307e278933675bb60fc8",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-d1.md",
+      "sha256": "143d7e80da34130dfda821193b1d19744f9c50c148d4d156ad32e2a07f8d328d",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-d2.md",
+      "sha256": "f442c64e6a2bd339ecfff1412f56d8460df77826166f8295d4b3225b1281d79d",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-d3.md",
+      "sha256": "450ec04f235eea61a04d75bfbcdfc15a36609d1a2176065a4214b9a68639d381",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v2.md",
+      "sha256": "3210b92bd0afe2a8c350e08cbf94f6411a1fdcef3d41e2058bf29712b23615a7",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v3.md",
+      "sha256": "5a5ec8d1bd11cc6f2243b648d489ecfb71083f76c3ecb3b44af4e837c88f50ca",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v4.md",
+      "sha256": "b6c8784975bcc20d3bd1cb94b1eea4baec7d738364a2d7ef604215f16c056c9f",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v5.md",
+      "sha256": "39484ffe4605e5c65ea1ff8c813903e4044041408104bbadbf908275f76971e0",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v6.md",
+      "sha256": "f5f711a023008d7b8ed31e3383c4e79297bf6b79168cabd26fedd1f0dede1f93",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v7.md",
+      "sha256": "077c277b079f37dc109832f342008fd7911688d69f9c98aa11093a06340d4d97",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v8.md",
+      "sha256": "1926282ce3b16c26dc5f665025713270e7d47d43d0b69ce7573cdf9ff9220667",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v9.md",
+      "sha256": "0170f3c5ce8861b8d7f1e7e2a4f9e3e842dec70e33d4356bae2027bd0526af08",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v10.md",
+      "sha256": "3560a353830b689d29c8846f79a17fba9983b041ba7a94513454d1ed260d7acb",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-buerger-db-v11.md",
+      "sha256": "2c77957b830f2a232d603278cdc0d4272ddca1de321918927bc8d5e1b80faf84",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v2.md",
+      "sha256": "1eb3e91b2b076501809abaf70e96c429411456eba29f9db9ab40bfaf011603d2",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v3.md",
+      "sha256": "1f3a9cd4da8d14d7471662d587570372a78c66f94d55ead33276df8f671db666",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v4.md",
+      "sha256": "7c9dafbe6cbf7b918806cb83fbdd83ed95415899d0e42f19fb5dd3d748a627cb",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v5.md",
+      "sha256": "b2b70a4c7380a813d27c2264bbaa9d203904faad90d133df31aea062608eb3cd",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v6.md",
+      "sha256": "b67d287676af39bb397f172c23f0de7406315b8ed2fc04a093cbe0985c5559c2",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v7.md",
+      "sha256": "d2f1c1b3ffa8f7235a16d3214d81785c3ef8524e1706bd2ae9abfab5da908dc7",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v8.md",
+      "sha256": "1e36dfd1f6c5e6d3642666bd493f42ea8ac5d5616f5e5cc203c0cde1aca64a8a",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v9.md",
+      "sha256": "0be1018cf078ba9ea80bef2fcf1c900435f907708bf119b448e2919a68c7e820",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v10.md",
+      "sha256": "19b510897fc551c064d67cad4eea5f0f32411d6242db00cbf29aff960089b8be",
+      "original_blob_unchanged": true
+    },
+    {
+      "file": "content/studienskripte/demokratie-schuetzen-medien-moderation-dm-v11.md",
+      "sha256": "435ea53937f457b2b757ee1b790eb147eb93311b86178055f9fb16fed4e04c4f",
+      "original_blob_unchanged": true
+    }
+  ],
+  "historical_urls_preserved": true,
+  "historical_indexability": "noindex,follow; all 49 remain linked from the archive, current 178 retain search visibility",
+  "production_note_cleanup": "Remove authoring specifications, placeholder media and production completion notes; preserve actual explanations, examples, tables and self-study material.",
+  "seven_pdf_files_unchanged": true,
+  "complete_pdf_article_equivalence": {
+    "status": "PASS",
+    "scope": "Full public teaching article, excluding title/byline/page footer and nonpublic source-production sections. All final PDF page renders separately reviewed.",
+    "files": [
+      {
+        "lecture_id": "WOEK-G-BASE-010",
+        "source_sha256": "7c4e2072ffaf03d519d4ab5d3f9dfd0e0ecbfb4a586595a32d3176c9dd90a707",
+        "pdf_sha256": "44840dc135d6b2ae60ee8c5b0867cd89c171f576db2522c7a7c38cb933fcb18f",
+        "reader_article_sha256": "2a99795486ba53639f9eab54ff013760d7d187d6d9002a19494e914c098af2ec",
+        "pages": 4,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      },
+      {
+        "lecture_id": "WOEK-G-BASE-033",
+        "source_sha256": "839f6d00f918d9d8cf5c237c899e083cf254d987513048b5c4ac31e43c675ee3",
+        "pdf_sha256": "f3fee745fc47e40ae32e13b13be00623029acc0715fcd713aa869e86ab093d66",
+        "reader_article_sha256": "4d9313ebf1cf2cc6c386917f05abc3dd5220e5d33a6578067b303d7c50fbb0b1",
+        "pages": 7,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      },
+      {
+        "lecture_id": "WOEK-G-BASE-047",
+        "source_sha256": "b94e7497005a46d4c39175e670c39f750c4e2261c6bfeb088e9c2bd284f62d2a",
+        "pdf_sha256": "3aeb1067061405f3a86463a0f575b3db1a054e3864f16e06aed5e52536343cdf",
+        "reader_article_sha256": "74db12799eb332f4efa2f0c27fafbb469b0c96945f01dbadc32bd2e6b57c2cf1",
+        "pages": 6,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      },
+      {
+        "lecture_id": "WOEK-G-BASE-048",
+        "source_sha256": "abcd979bd9dde2b487304099a4a086621bd4d15c8ab9cbbb4046704ac00a6e6e",
+        "pdf_sha256": "efc3ae1e24b2693e60d8dd3f64aff11e3e4d799fd3314242a14abe42d2e354a9",
+        "reader_article_sha256": "8431f9a381e6c9ae55dd899b40d941dd5adef0f27979b3d15fbf325ad8f696d8",
+        "pages": 6,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      },
+      {
+        "lecture_id": "WOEK-G-BASE-079",
+        "source_sha256": "d940f4afc25a66d86572c0d1f5561c172f9a3dea59a7e58a037f2fbdd6b62273",
+        "pdf_sha256": "980e94c237df8d45d31b7a906ef40160fcde0b88d04335b1d50697a463cf3b31",
+        "reader_article_sha256": "481990914964c17110c0156cff7e069ea4770ad122f008f25bb568f5e2024ba5",
+        "pages": 5,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      },
+      {
+        "lecture_id": "WOEK-G-GOV-AP26-01",
+        "source_sha256": "cd3fcbf87db44edb34d1ff4f5485988bf5a6548f345cccd2324e011d43d0eb4a",
+        "pdf_sha256": "cf2e9326f2a2bc087dbd7fa71530e7dffdae30a57cee8e81c37f2f9685629bbf",
+        "reader_article_sha256": "ddf891283dcfb5f8f7f42a0b3a85ce3d0d40747ffd6e5b148db918410c5bc7d4",
+        "pages": 8,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      },
+      {
+        "lecture_id": "WOEK-WB-WC-V4-007",
+        "source_sha256": "68cb23e6bc72b8a51045eee65352bdcf1a951cde3ecac0046c2861b32a026600",
+        "pdf_sha256": "95786be10201a1b05e485f1fe318c8c81a9d6b9977b94b203852f83d9013016f",
+        "reader_article_sha256": "e413ce8d139d6c40f3bc6d9fc93a47590ef3a6696c912fdd60cfc82f42234ada",
+        "pages": 4,
+        "full_article_text_parity": "PASS",
+        "metadata": "PASS"
+      }
+    ]
+  },
+  "regression_tests": {
+    "website_js": 9,
+    "website_python": 7,
+    "app_reader": 4,
+    "app_reference": 6,
+    "app_build_typecheck_lint": "PASS"
+  },
+  "limits": "No new model content, no source rewriting of historical originals, no PDF version-label substitution, no quality or cost gate waiver."
+}
