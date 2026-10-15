@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Im Gesundheitswesen ist „mehr Leistung“ nicht automatisch „mehr Gesundheit“. Mehr Untersuchungen, Betten oder Ausgaben sind Outputs. Entscheidend sind **Gesundheit, Lebensqualität, Sicherheit, Zugang und Pflegequalität**. Prävention ist besonders anspruchsvoll, weil ihr Erfolg oft darin besteht, dass etwas nicht passiert. WÖk verbindet deshalb medizinische Evidenz, Versorgung, Verteilung, Prävention und Systemresilienz - ohne ärztliche oder HTA-Entscheidungen zu ersetzen.
+Im Gesundheitswesen ist „mehr Leistung“ nicht automatisch „mehr Gesundheit“. Ausgaben sind Inputs, verfügbare Betten eine Versorgungskapazität und durchgeführte Untersuchungen Outputs. Entscheidend sind **Gesundheit, Lebensqualität, Sicherheit, Zugang und Pflegequalität**. Prävention ist besonders anspruchsvoll, weil ihr Erfolg oft darin besteht, dass etwas nicht passiert. WÖk verbindet deshalb medizinische Evidenz, Versorgung, Verteilung, Prävention und Systemresilienz - ohne ärztliche oder HTA-Entscheidungen zu ersetzen.
 
 ## Lernziele
 
@@ -83,10 +83,9 @@ Effective Access hängt an:
 
 ## 5. Pflegequalität
 
-Output:
+Inputs und Kapazitäten: besetzte Personalstellen und verfügbare Pflegezeit.
 
-- Pflegestunden,
-- Personalstellen.
+Output: tatsächlich erbrachte Pflegeleistungen beziehungsweise geleistete Pflegestunden.
 
 Outcomes:
 
@@ -242,4 +241,4 @@ Der Merksatz lautet:
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

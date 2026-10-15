@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-15",
+  "status": "REVIEWED_RELEASE_CANDIDATE",
+  "scope": "Nur dokumentierte Fehlerkorrekturen; keine Gesamtfreigabe. Präsentationen erstellt Claude aus den Skripten. Ältere richtige Beispiele, Stile und Referenzen bleiben erhalten.",
+  "app_baseline": "a654a8a428bad58fe253d6330d696d90293f13c5",
+  "website_baseline": "101d291aed06ff9c50c6c5e05ecf95429ed053bb",
+  "corrections": [
+    {
+      "file": "v47-t-sroi-investitionscontrolling.md",
+      "reason": "Total Impact ist keine alternative Auflösung des T; maßgeblich ist T-SROI-Rechenstandard v1.1, Rechenformel und Keine freie Multiplikatorlogik.",
+      "files": [
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v47-t-sroi-investitionscontrolling.md",
+          "before_sha256": "28173d266f88020397638181fc290c4adb70d9bcbc624edfc262240b752d1821",
+          "after_sha256": "198e8b3426e64b78b9be33eb60e9e5ed8fe6a329d3a7e867d1082a15ce2d0fee"
+        },
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/grundstudium/base/v47-t-sroi-investitionscontrolling.md",
+          "before_sha256": "360bec90b9c6a832965686f7abd2f294c530ff387e0dbccb754f52a2ce9fdd50",
+          "after_sha256": "b94e7497005a46d4c39175e670c39f750c4e2261c6bfeb088e9c2bd284f62d2a"
+        }
+      ]
+    },
+    {
+      "file": "v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
+      "reason": "Wirkungsfonds wurde auf Investmentfonds verengt; Finanzierungsadditionalität mit realer Wirkung gleichgesetzt. Belege: Band I 22.11, Band II 57.8/98, WStG 3.0 §§ 61/100, UStG § 10 Abs. 1 (amtlich geprüft 14.10.2026), Kernreferenz 9.1-9.5.",
+      "files": [
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
+          "before_sha256": "ea69605c56cd13bf69302f17a4aeb8ae17ad29c4a841436384a5651adb6c6819",
+          "after_sha256": "1293222289d6805827d5f4dab5b3d0d414c0483758b7c022d9a47fdf05d97222"
+        },
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/grundstudium/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
+          "before_sha256": "a7f2865173b597af211223b53595440b7f8ff82966f4f8c6085e87c814f643f5",
+          "after_sha256": "abcd979bd9dde2b487304099a4a086621bd4d15c8ab9cbbb4046704ac00a6e6e"
+        }
+      ]
+    },
+    {
+      "file": "v33-nwi-vs-t-sroi.md",
+      "reason": "Unbelegte Überlegenheitsformulierung entfernen und die beschlossene Euro-zu-Euro-Rechnung abgrenzen; Rechenstandard v1.1. Rechenstandard v1.1: G=0 sperrt die positive Kennzahl selbst, nicht nur die automatische Entscheidung.",
+      "files": [
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v33-nwi-vs-t-sroi.md",
+          "before_sha256": "f9bb10daa72060c466a97c24e644ccd7a0ef2a3c44345d6385c3f8243ebd4307",
+          "after_sha256": "37da59445fa01c2e75e0214775d9a9899a53524c5913c95fe3722c4b5b2f96e5"
+        },
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/grundstudium/base/v33-nwi-vs-t-sroi.md",
+          "before_sha256": "8992b2a101a37920fc76948f70c44b7aca77fd99e5dc12f5e6a5298897fdfe66",
+          "after_sha256": "839f6d00f918d9d8cf5c237c899e083cf254d987513048b5c4ac31e43c675ee3"
+        }
+      ]
+    },
+    {
+      "file": "07-nettowirkung-transformation-investitionseffizienz.md",
+      "reason": "Unzulässigen neuen Alias NWI-DE entfernen; IOI und T-SROI nach dem maßgeblichen Rechenstandard v1.1 als unterschiedliche Euro-Rechnungen definieren.",
+      "files": [
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/07-nettowirkung-transformation-investitionseffizienz.md",
+          "before_sha256": "e85d282d419d0b049bfe79ba4ec364cee5bdf232db4b62fe28658ff4e7d49905",
+          "after_sha256": "75d1017366f295df1c84770c11d98ef5cb46d328672b7c7451545df9255dece4"
+        },
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/angebote/wirkungscontrolling/07-nettowirkung-transformation-investitionseffizienz.md",
+          "before_sha256": "652e5d4a37afe4b739be0015434396f937f7942dfaea624966410d1ccb253ae8",
+          "after_sha256": "68cb23e6bc72b8a51045eee65352bdcf1a951cde3ecac0046c2861b32a026600"
+        }
+      ]
+    },
+    {
+      "file": "v10-wirkung-ist-nicht-absicht.md",
+      "reason": "Beobachtete Wirkung und kausale Attribution getrennt; Kernreferenz Abschnitt 2.",
+      "files": [
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/grundstudium/base/v10-wirkung-ist-nicht-absicht.md",
+          "before_sha256": "f5cc342ea98c6173837e1549d84b5f78f35707b449b8fa04af00d7ba05d67614",
+          "after_sha256": "7c4e2072ffaf03d519d4ab5d3f9dfd0e0ecbfb4a586595a32d3176c9dd90a707"
+        },
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v10-wirkung-ist-nicht-absicht.md",
+          "before_sha256": "aef5dea6726dfbc93b25a0429a58056aa80c8ad0ba2a026b1dd5faa727383c0a",
+          "after_sha256": "bf872850fa2c6ef89fec5e4e99527e71efd35c4a890d49275173cb703889bd3c"
+        }
+      ]
+    },
+    {
+      "file": "v79-gesundheit-pflege-praevention-wirkungsraeume.md",
+      "reason": "Inputs, Kapazitätsbestand und erbrachte Leistungen waren als Outputs gleichgesetzt; IOOI-Abgrenzung der Kernreferenz. Auch im Abschnitt Pflegequalität: Personalstellen als Input/Kapazität, geleistete Pflege als Output getrennt.",
+      "files": [
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/grundstudium/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md",
+          "before_sha256": "1d9f417c16b59b34f6b60ecadec72f68d21c8e0ebdf9bfc03ee14937b790c8bc",
+          "after_sha256": "d940f4afc25a66d86572c0d1f5561c172f9a3dea59a7e58a037f2fbdd6b62273"
+        },
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md",
+          "before_sha256": "e634e3f0626608a627fbab988c513c8a92d87cd25a6193932bdaba7b80ebcdc8",
+          "after_sha256": "ae3645ffa18fe4feebe107a4b69878e31fb213db4a83ecb97e7813472d89f704"
+        }
+      ]
+    },
+    {
+      "file": "gov-11-aktionsplan-nachhaltigkeit-2026.md",
+      "reason": "Die als aktuell verbindlich bezeichnete Beteiligungsfassung wurde am 30.09.2026 vom Kabinettsbeschluss abgelöst. Amtliche Seite und Beschlussfassung am 15.10.2026 geprüft; Juli-Beispiele ausdrücklich historisch erhalten.",
+      "files": [
+        {
+          "repo": "website",
+          "path": "content/studienskripte/v4/grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md",
+          "before_sha256": "5f95939f400c41fef8b0e5d8aba50a763d22e8daf63355406fee8adc16a66d26",
+          "after_sha256": "cd3fcbf87db44edb34d1ff4f5485988bf5a6548f345cccd2324e011d43d0eb4a"
+        },
+        {
+          "repo": "app",
+          "path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-11-aktionsplan-nachhaltigkeit-2026.md",
+          "before_sha256": "265312c593b7f2ee101d947bbaf69b38141e9f01d49513be1a11abfcf553cb26",
+          "after_sha256": "0229981b4fc14b44d4469ad372c9d4ccdf665e13c074e9a92cf59e2bdb7660c8"
+        }
+      ]
+    }
+  ]
+}

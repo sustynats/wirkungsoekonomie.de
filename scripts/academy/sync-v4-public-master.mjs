@@ -19,6 +19,16 @@ if (checkOnly) {
   process.exit(0);
 }
 
+// The public files became the canonical authoring source after the bootstrap.
+// A historical re-import must never erase reviewed September/October changes.
+const existingMaster = join(repoRoot, 'content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json');
+try {
+  const current = JSON.parse(await readFile(existingMaster, 'utf8'));
+  if (current.public_text_correction || current.lectures?.some(item => item.content_correction || item.public_text_correction)) {
+    throw new Error('Canonical public amendments exist. Historical bootstrap re-import is blocked; use a reviewed three-way migration preserving those amendments. --check verifies without writing.');
+  }
+} catch (error) { if (error.code !== 'ENOENT') throw error; }
+
 const lock = JSON.parse(await readFile(lockPath, 'utf8'));
 const sourceDirArg = process.argv.find(value => value.startsWith('--source-dir='));
 const localSourceDir = sourceDirArg ? resolve(sourceDirArg.slice('--source-dir='.length)) : null;

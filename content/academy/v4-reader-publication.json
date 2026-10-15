@@ -1,0 +1,1802 @@
+{
+  "date": "2026-10-15",
+  "release_tag": "woek-academy-script-corrections-2026-10-15",
+  "scope": "Canonical public script projections; app activation and assessments remain separate.",
+  "count": 178,
+  "readers": [
+    {
+      "lecture_id": "WOEK-G-BASE-001",
+      "code": "V01",
+      "offering_id": "WOEK-G",
+      "title": "V01 · Die Maßstabskrise",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-001/",
+      "source": "content/studienskripte/v4/grundstudium/base/v01-die-massstabskrise.md",
+      "source_sha256": "f5d479bdf0982c3f4ba9077115ac8f1dedf2511cac2017d5b608008d75e8d03a",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-002",
+      "code": "V02",
+      "offering_id": "WOEK-G",
+      "title": "V02 · Wirkung statt Kapital",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-002/",
+      "source": "content/studienskripte/v4/grundstudium/base/v02-wirkung-statt-kapital.md",
+      "source_sha256": "9a5a11f30e57fcce18c51f78e7d6f12d64e75b62b5f1bb72bcc8a4f3d845f12e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-003",
+      "code": "V03",
+      "offering_id": "WOEK-G",
+      "title": "V03 · Die Wirkungsökonomie als Anschluss- und Steuerungsarchitektur",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-003/",
+      "source": "content/studienskripte/v4/grundstudium/base/v03-anschluss-und-steuerungsarchitektur.md",
+      "source_sha256": "85d740d200bfd98ba56e93416f85120136a99f772a7b1c6e6bb1b2c12e2e1b9f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-004",
+      "code": "V04",
+      "offering_id": "WOEK-G",
+      "title": "V04 · Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-004/",
+      "source": "content/studienskripte/v4/grundstudium/base/v04-erfolgsgroessen-unvollstaendig.md",
+      "source_sha256": "acd2d9b15fb082724928ae739821818acc116f9051bdc5e60a4ebf739f760676",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-005",
+      "code": "V05",
+      "offering_id": "WOEK-G",
+      "title": "V05 · Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-005/",
+      "source": "content/studienskripte/v4/grundstudium/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md",
+      "source_sha256": "5198eccc784ffc0262a0691e6f2ecec67bef3535b9a5e23197fccecb33f05ee1",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-006",
+      "code": "V06",
+      "offering_id": "WOEK-G",
+      "title": "V06 · Zukunftsfähigkeit, Risiko und Resilienz",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-006/",
+      "source": "content/studienskripte/v4/grundstudium/base/v06-zukunftsfaehigkeit-risiko-resilienz.md",
+      "source_sha256": "ffeea0627a357a56a918d057ce0942b6d9d1a219682f28b9cf132f7a18dc9023",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-007",
+      "code": "V07",
+      "offering_id": "WOEK-G",
+      "title": "V07 · Mensch als Wirkungsdimension",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-007/",
+      "source": "content/studienskripte/v4/grundstudium/base/v07-mensch-als-wirkungsdimension.md",
+      "source_sha256": "63236df8c1f0e4d71824c95e412031ab3903490acb14270c6ee104a89801e1fd",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-008",
+      "code": "V08",
+      "offering_id": "WOEK-G",
+      "title": "V08 · Planet als Wirkungsdimension",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-008/",
+      "source": "content/studienskripte/v4/grundstudium/base/v08-planet-als-wirkungsdimension.md",
+      "source_sha256": "26e320fb9ae827dd81c8cc1fce4edb76b2a57c209e8ec54e0c7fb531f0c6b201",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-009",
+      "code": "V09",
+      "offering_id": "WOEK-G",
+      "title": "V09 · Demokratie als Wirkungsdimension",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-009/",
+      "source": "content/studienskripte/v4/grundstudium/base/v09-demokratie-als-wirkungsdimension.md",
+      "source_sha256": "96c3000ce8687c80a1f9a1fabe5f16c81bde745e5df18f059983bce45f80772e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-010",
+      "code": "V10",
+      "offering_id": "WOEK-G",
+      "title": "V10 · Wirkung ist nicht Absicht",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-010/",
+      "source": "content/studienskripte/v4/grundstudium/base/v10-wirkung-ist-nicht-absicht.md",
+      "source_sha256": "7c4e2072ffaf03d519d4ab5d3f9dfd0e0ecbfb4a586595a32d3176c9dd90a707",
+      "corrected": true,
+      "pdf": "woek-g-base-010-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-g-base-010-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-100",
+      "code": "V100",
+      "offering_id": "WOEK-G",
+      "title": "V100 · Praxisprojekt: Indikatoren, Datenquellen und WÖk-IDs auswählen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-100/",
+      "source": "content/studienskripte/v4/grundstudium/base/v100-praxisprojekt-indikatoren-datenquellen-ids.md",
+      "source_sha256": "69c5e107465b6f100b0ff49425bd36ac240381d347ab1492ee456466da38d471",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-101",
+      "code": "V101",
+      "offering_id": "WOEK-G",
+      "title": "V101 · Praxisprojekt: Scorecard, Reverse Merit Order und Optionsvergleich anwenden",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-101/",
+      "source": "content/studienskripte/v4/grundstudium/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md",
+      "source_sha256": "74766ae396e3b26d284a9b6fbb23f99a5a28a8b489312f9e54c06bc6877413dd",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-102",
+      "code": "V102",
+      "offering_id": "WOEK-G",
+      "title": "V102 · Praxisprojekt: Risiko, Resilienz und Transformationshebel prüfen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-102/",
+      "source": "content/studienskripte/v4/grundstudium/base/v102-praxisprojekt-risiko-resilienz-transformation.md",
+      "source_sha256": "3c4820438d05b294f50a14ef8c7c3ccc565389d506c30e9b4a2cbac83df17eb7",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-103",
+      "code": "V103",
+      "offering_id": "WOEK-G",
+      "title": "V103 · Praxisprojekt: Unsicherheit, Gegenpositionen und Kritik einarbeiten",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-103/",
+      "source": "content/studienskripte/v4/grundstudium/base/v103-praxisprojekt-unsicherheit-kritik.md",
+      "source_sha256": "185b8c18fa1ccfcc6a15daf3738351f8038edc37f043f559cf17385f7c69606c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-104",
+      "code": "V104",
+      "offering_id": "WOEK-G",
+      "title": "V104 · Praxisprojekt: soziale Tragfähigkeit und Missbrauchsschutz",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-104/",
+      "source": "content/studienskripte/v4/grundstudium/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md",
+      "source_sha256": "0f767ff10100bb6304080d8e0e1b4ff7170fdfc18ee79f98f6a693a6b284b339",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-105",
+      "code": "V105",
+      "offering_id": "WOEK-G",
+      "title": "V105 · Praxisprojekt: Iteration, Recommendation und Umsetzungsplan",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-105/",
+      "source": "content/studienskripte/v4/grundstudium/base/v105-praxisprojekt-iteration-umsetzungsplan.md",
+      "source_sha256": "f314b6db84fd80e11ef0821480bb2610aada368b9c50764f7a1316266f324f8c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-106",
+      "code": "V106",
+      "offering_id": "WOEK-G",
+      "title": "V106 · Praxisprojekt: Das Wirkungsdossier schreiben - reproduzierbar, prüfbar, versioniert",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-106/",
+      "source": "content/studienskripte/v4/grundstudium/base/v106-praxisprojekt-wirkungsdossier-schreiben.md",
+      "source_sha256": "7335b88908d3c3647ef4daef63650c378081224c96a3ff79877b48023b47d021",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-107",
+      "code": "V107",
+      "offering_id": "WOEK-G",
+      "title": "V107 · Praxisprojekt: Präsentation und Verteidigung - Quellen, Methode und Unsicherheit vertreten",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-107/",
+      "source": "content/studienskripte/v4/grundstudium/base/v107-praxisprojekt-praesentation-verteidigung.md",
+      "source_sha256": "6cb43fa5b22f621c91463a7fc3d8c57bfca507e264a3db2f0e63be24d8039c91",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-108",
+      "code": "V108",
+      "offering_id": "WOEK-G",
+      "title": "V108 · Transferplan und persönliche Wirkungskompetenz - professionell, revisionsfähig, lernend",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-108/",
+      "source": "content/studienskripte/v4/grundstudium/base/v108-transferplan-persoenliche-wirkungskompetenz.md",
+      "source_sha256": "e8b8ec120181a1d6e367ff6f9e6030971a93267d1823cdc277d1e760b48460e7",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-011",
+      "code": "V11",
+      "offering_id": "WOEK-G",
+      "title": "V11 · Positive, negative und ambivalente Wirkung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-011/",
+      "source": "content/studienskripte/v4/grundstudium/base/v11-positive-negative-ambivalente-wirkung.md",
+      "source_sha256": "a546917fc2ecc186d9040f8369eba7e81366c0dd78869722250f1b280cfa88bc",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-012",
+      "code": "V12",
+      "offering_id": "WOEK-G",
+      "title": "V12 · Wirkungsempfänger und Wirkungsräume",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-012/",
+      "source": "content/studienskripte/v4/grundstudium/base/v12-wirkungsempfaenger-und-wirkungsraeume.md",
+      "source_sha256": "0dad6133e907ef24456a5a6404c233bccca5ccf56c54b760d047385615a9a124",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-013",
+      "code": "V13",
+      "offering_id": "WOEK-G",
+      "title": "V13 · Problem Review: Vom behaupteten Problem zur belastbaren Ausgangslage",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-013/",
+      "source": "content/studienskripte/v4/grundstudium/base/v13-problem-review.md",
+      "source_sha256": "9e27ec5861fb33b455ace4322dd9396a52f99b6b1c6d85c14af64978d7ad8af9",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-014",
+      "code": "V14",
+      "offering_id": "WOEK-G",
+      "title": "V14 · Goal Review: Vom Problem zum problemadäquaten Ziel",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-014/",
+      "source": "content/studienskripte/v4/grundstudium/base/v14-goal-review.md",
+      "source_sha256": "c2975ef9873b389de8baf45a33c7936632da4d0ff8282f3187c1031836675a42",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-015",
+      "code": "V15",
+      "offering_id": "WOEK-G",
+      "title": "V15 · Vom Ziel zum Wirkpfad: IOOI, A→M→ΔZ→R, Evidenz und Attribution",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-015/",
+      "source": "content/studienskripte/v4/grundstudium/base/v15-wirkpfad-evidenz-attribution.md",
+      "source_sha256": "84ec55b5279548cb481f01331d26d05f8751c97b92c328a373983a542f23c6a2",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-016",
+      "code": "V16",
+      "offering_id": "WOEK-G",
+      "title": "V16 · Märkte, Produkte und Lieferketten als Wirkungsräume",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-016/",
+      "source": "content/studienskripte/v4/grundstudium/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md",
+      "source_sha256": "0c5359c2ebadd44cb7e93d9ab83e68ce8fb31fffc6c62ee6f14428e431f13763",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-017",
+      "code": "V17",
+      "offering_id": "WOEK-G",
+      "title": "V17 · Medien, Sprache und Öffentlichkeit als Wirkungsräume",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-017/",
+      "source": "content/studienskripte/v4/grundstudium/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md",
+      "source_sha256": "5266087bcf502b0afda2208b7e71d7eccf736b1521d74e75f9a54e2cdac000f7",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-018",
+      "code": "V18",
+      "offering_id": "WOEK-G",
+      "title": "V18 · Zeit, Generationen und unsichtbare Betroffene",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-018/",
+      "source": "content/studienskripte/v4/grundstudium/base/v18-zeit-generationen-unsichtbare-betroffene.md",
+      "source_sha256": "9a797941d2e7cde3e0edbb5f78cef34145ed808b7f18c3a6469d9ef0ad76f27c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-019",
+      "code": "V19",
+      "offering_id": "WOEK-G",
+      "title": "V19 · Wirkstoff-Analogie, Wirkmechanismus und Wirkungspotenzial",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-019/",
+      "source": "content/studienskripte/v4/grundstudium/base/v19-wirkstoff-analogie-mechanismus-potenzial.md",
+      "source_sha256": "1ce05ec8221213868ad8abd750ea38c770e56fac539838cee1c31f5d3f17e7dd",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-020",
+      "code": "V20",
+      "offering_id": "WOEK-G",
+      "title": "V20 · Gesellschaftliche Resonanzfaktoren",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-020/",
+      "source": "content/studienskripte/v4/grundstudium/base/v20-gesellschaftliche-resonanzfaktoren.md",
+      "source_sha256": "58aa80b79f3e6692974caa98fa190c5797e9ed8f0b9a07b5bfab4592666053ba",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-021",
+      "code": "V21",
+      "offering_id": "WOEK-G",
+      "title": "V21 · Produkte, Technologien und Institutionen als Auslöser",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-021/",
+      "source": "content/studienskripte/v4/grundstudium/base/v21-produkte-technologien-institutionen-als-ausloeser.md",
+      "source_sha256": "2cbde69971d679ade53e4dd03691022989645b986e68d076c3f9b8eb626485dc",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-022",
+      "code": "V22",
+      "offering_id": "WOEK-G",
+      "title": "V22 · Wirkungssprache und Quellenklarheit",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-022/",
+      "source": "content/studienskripte/v4/grundstudium/base/v22-wirkungssprache-und-quellenklarheit.md",
+      "source_sha256": "02b8aa5fdd17636a62dbc71b7443d5762bfeee89acdc3ad475c145aa36c9504c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-023",
+      "code": "V23",
+      "offering_id": "WOEK-G",
+      "title": "V23 · Unsicherheit, Ambivalenz und transparente Bewertung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-023/",
+      "source": "content/studienskripte/v4/grundstudium/base/v23-unsicherheit-ambivalenz-transparente-bewertung.md",
+      "source_sha256": "e3ef6deb7e8d46e511e7455df1766d5161df379b1f7008360651bcc3cfa9f538",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-024",
+      "code": "V24",
+      "offering_id": "WOEK-G",
+      "title": "V24 · Deeskalierende und demokratiestärkende Kommunikation",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-024/",
+      "source": "content/studienskripte/v4/grundstudium/base/v24-deeskalierende-demokratiestaerkende-kommunikation.md",
+      "source_sha256": "1171ef3a4749d8e16f24ccd0f1ceeb4cda976b9513c9dbbda95a07cebb33c0d3",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-025",
+      "code": "V25",
+      "offering_id": "WOEK-G",
+      "title": "V25 · Agenda 2030 und SDGs: globaler Referenzrahmen, Ziele und Grenzen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-025/",
+      "source": "content/studienskripte/v4/grundstudium/base/v25-agenda2030-und-sdgs.md",
+      "source_sha256": "05d38db15a32914afe58488f5b17d4fade91eadb9502c5814cc059a6da5d0309",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-026",
+      "code": "V26",
+      "offering_id": "WOEK-G",
+      "title": "V26 · SDG+: WÖk-eigener Ergänzungsrahmen für demokratische und epistemische Resilienz",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-026/",
+      "source": "content/studienskripte/v4/grundstudium/base/v26-sdg-plus-woek-referenzrahmen.md",
+      "source_sha256": "e4dea0617986161b9d5cad3529ca355e718bd3212b4dda3125269fbd85efabdc",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-027",
+      "code": "V27",
+      "offering_id": "WOEK-G",
+      "title": "V27 · Referenzebenen, Rechte, Staatsziele, Schutzgrenzen und rote Linien",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-027/",
+      "source": "content/studienskripte/v4/grundstudium/base/v27-referenzebenen-recht-schutzgrenzen.md",
+      "source_sha256": "15acb24fb12d8ab055a5ba61992e691a02cd651df8ba5485e745d99f6886b70d",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-028",
+      "code": "V28",
+      "offering_id": "WOEK-G",
+      "title": "V28 · Datenwelten trennen: Reportingstandards, staatliche Indikatoren und Datenfunktionen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-028/",
+      "source": "content/studienskripte/v4/grundstudium/base/v28-datenwelten-reporting-staat-indikatoren.md",
+      "source_sha256": "e3e665596e36a2c0f2b1f955ba0e175f942cb6845e0baa19ebce039e795af7c5",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-029",
+      "code": "V29",
+      "offering_id": "WOEK-G",
+      "title": "V29 · WÖk-Masterregister, Wirkindikatorenregister, Benchmarks und Archetypen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-029/",
+      "source": "content/studienskripte/v4/grundstudium/base/v29-masterregister-wirkindikatorenregister.md",
+      "source_sha256": "5a93a4e76b28352f868c1e02ef2bedddef08116f80427ff9fa14b7082e584c44",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-030",
+      "code": "V30",
+      "offering_id": "WOEK-G",
+      "title": "V30 · Datenqualität, Provenienz, Audit und Unsicherheit",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-030/",
+      "source": "content/studienskripte/v4/grundstudium/base/v30-datenqualitaet-provenienz-unsicherheit.md",
+      "source_sha256": "26ea94c614f0410c773bca4cda6d52449907d4ba8eaf99087c313a7d5c53a9b3",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-031",
+      "code": "V31",
+      "offering_id": "WOEK-G",
+      "title": "V31 · Von Einzelwirkung zu Bewertungsprofilen: Aggregation nur wo fachlich zulässig",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-031/",
+      "source": "content/studienskripte/v4/grundstudium/base/v31-aggregation-und-nettowirkung.md",
+      "source_sha256": "af8f3786f275b6f44273d572f51098fcc1b8b23c714dc4de658fde37130c93b4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-032",
+      "code": "V32",
+      "offering_id": "WOEK-G",
+      "title": "V32 · Scorecards und mehrdimensionale Bewertungsprofile",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-032/",
+      "source": "content/studienskripte/v4/grundstudium/base/v32-scorecards-bewertungsprofile.md",
+      "source_sha256": "c0ac94d225b5cd3652df9cc656253f37c0734110d313f46b806f8865160ef4ef",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-033",
+      "code": "V33",
+      "offering_id": "WOEK-G",
+      "title": "V33 · WÖk-Netto-Wirkungsindex und T-SROI unterscheiden - Einsatzbereich und Grenzen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-033/",
+      "source": "content/studienskripte/v4/grundstudium/base/v33-nwi-vs-t-sroi.md",
+      "source_sha256": "839f6d00f918d9d8cf5c237c899e083cf254d987513048b5c4ac31e43c675ee3",
+      "corrected": true,
+      "pdf": "woek-g-base-033-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-g-base-033-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-034",
+      "code": "V34",
+      "offering_id": "WOEK-G",
+      "title": "V34 · Reverse Merit Order als Priorisierungslogik",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-034/",
+      "source": "content/studienskripte/v4/grundstudium/base/v34-reverse-merit-order.md",
+      "source_sha256": "2242eb94fd062baa5443b7cf68fecef92354fe334baee1268ce0183f30fe71b4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-035",
+      "code": "V35",
+      "offering_id": "WOEK-G",
+      "title": "V35 · Nichtkompensation: Schutz vor Greenwashing, Rights-Washing und Scheinsaldierung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-035/",
+      "source": "content/studienskripte/v4/grundstudium/base/v35-nichtkompensation.md",
+      "source_sha256": "972e208a69e5d5ed2359dd94ca668af0307065c2a4a91c95270bfa699b333c92",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-036",
+      "code": "V36",
+      "offering_id": "WOEK-G",
+      "title": "V36 · Scorecards lesen, begründen und Scheingenauigkeit vermeiden",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-036/",
+      "source": "content/studienskripte/v4/grundstudium/base/v36-profile-lesen-begruenden.md",
+      "source_sha256": "8a241a587cc5ec0098c9f8e40f88ad367c9cf7c75c5f4aff77194e474847184b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-037",
+      "code": "V37",
+      "offering_id": "WOEK-G",
+      "title": "V37 · Externalitäten und versteckte Folgekosten",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-037/",
+      "source": "content/studienskripte/v4/grundstudium/base/v37-externalitaeten-und-versteckte-folgekosten.md",
+      "source_sha256": "e92acad3054457ab553f04a7397c40a9d9c5ab77d7233bfba2ed9b1426fd5189",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-038",
+      "code": "V38",
+      "offering_id": "WOEK-G",
+      "title": "V38 · Preis als Wirkungssignal - wann Preissignale wirken und wann nicht",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-038/",
+      "source": "content/studienskripte/v4/grundstudium/base/v38-preis-als-wirkungssignal.md",
+      "source_sha256": "ea556a62ed12ff4739b8293f6da93518498cfa82716efffc1ab23b3f52d97efd",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-039",
+      "code": "V39",
+      "offering_id": "WOEK-G",
+      "title": "V39 · Verbraucherinformation und soziale Abfederung: Wahlfähigkeit statt Moralappell",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-039/",
+      "source": "content/studienskripte/v4/grundstudium/base/v39-verbraucherinformation-soziale-abfederung.md",
+      "source_sha256": "e4541594025957df5c14df65e1c6a2daddba22939bfd9fc36365f9161b7feba1",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-040",
+      "code": "V40",
+      "offering_id": "WOEK-G",
+      "title": "V40 · Das Wirkungssteuergesetz als WÖk-Policy-Modell - keine bestehende Rechtslage",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-040/",
+      "source": "content/studienskripte/v4/grundstudium/base/v40-wirkungssteuergesetz-als-policy-modell.md",
+      "source_sha256": "a312b7bf8279719bd2ca19894d71a14fb06ac5d90fd4a56b5c546fb14ce8113b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-041",
+      "code": "V41",
+      "offering_id": "WOEK-G",
+      "title": "V41 · Wirkungssteuer: Tarif-, Bonus-Malus- und Boundary-Design statt FinalScore-Automatismus",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-041/",
+      "source": "content/studienskripte/v4/grundstudium/base/v41-wirkungssteuer-rate-design.md",
+      "source_sha256": "71b2f25defb48aa1a613568f4f6e76f73cb1b859b0993c0c289e62d578627775",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-042",
+      "code": "V42",
+      "offering_id": "WOEK-G",
+      "title": "V42 · Lieferketten, Vorleistungen und Importwirkung - Datenweitergabe statt Herkunftspauschale",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-042/",
+      "source": "content/studienskripte/v4/grundstudium/base/v42-lieferketten-importwirkung-und-grenzausgleich.md",
+      "source_sha256": "d3e0ffa2aade056e76fd8c971e3442ae0e13667d51d44edf01696f961ae39015",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-043",
+      "code": "V43",
+      "offering_id": "WOEK-G",
+      "title": "V43 · Öffentliche Haushalte nach Wirkung lesen - bestehende Haushaltslogik und WÖk-Zusatz",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-043/",
+      "source": "content/studienskripte/v4/grundstudium/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md",
+      "source_sha256": "821d61439d1807585a6a8992d314dc01f8ef7a7f9c9d7f84107d178fb6d21871",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-044",
+      "code": "V44",
+      "offering_id": "WOEK-G",
+      "title": "V44 · Öffentliche Beschaffung als Transformationshebel - Recht, Wirkung und Lebenszyklus",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-044/",
+      "source": "content/studienskripte/v4/grundstudium/base/v44-oeffentliche-beschaffung-transformationshebel.md",
+      "source_sha256": "322fb22667e282028ac4927c5c1b745fef52963cf2b655a63d2be66bf4f6238f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-045",
+      "code": "V45",
+      "offering_id": "WOEK-G",
+      "title": "V45 · Wirkungsberichte, Evaluation und Reality Check - Rückkopplung ohne Scheinkausalität",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-045/",
+      "source": "content/studienskripte/v4/grundstudium/base/v45-wirkungsberichte-evaluation-reality-check.md",
+      "source_sha256": "ba8e654ebd8fafaa846b84632a3a2c5873515be7c403b6eaa2e2dfbbd44cf7ba",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-046",
+      "code": "V46",
+      "offering_id": "WOEK-G",
+      "title": "V46 · Kapitalwirkung und Kapitalrendite: zwei verschiedene Fragen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-046/",
+      "source": "content/studienskripte/v4/grundstudium/base/v46-kapitalwirkung-und-rendite.md",
+      "source_sha256": "4c1c49ce98e92abf803d77d66bb560ccfa210732d13a26f1d44ac6066d371c08",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-047",
+      "code": "V47",
+      "offering_id": "WOEK-G",
+      "title": "V47 · T-SROI im Investitionscontrolling - WÖk-Erweiterung eines etablierten SROI-Ansatzes",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-047/",
+      "source": "content/studienskripte/v4/grundstudium/base/v47-t-sroi-investitionscontrolling.md",
+      "source_sha256": "b94e7497005a46d4c39175e670c39f750c4e2261c6bfeb088e9c2bd284f62d2a",
+      "corrected": true,
+      "pdf": "woek-g-base-047-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-g-base-047-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-048",
+      "code": "V48",
+      "offering_id": "WOEK-G",
+      "title": "V48 · Wirkungsfonds, Versicherbarkeit und Risikobewertung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-048/",
+      "source": "content/studienskripte/v4/grundstudium/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
+      "source_sha256": "abcd979bd9dde2b487304099a4a086621bd4d15c8ab9cbbb4046704ac00a6e6e",
+      "corrected": true,
+      "pdf": "woek-g-base-048-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-g-base-048-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-049",
+      "code": "V49",
+      "offering_id": "WOEK-G",
+      "title": "V49 · Vom BIP zum Wirkungswohlstand - Wohlstand als mehrdimensionaler Zustand",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-049/",
+      "source": "content/studienskripte/v4/grundstudium/base/v49-wirkungswohlstand.md",
+      "source_sha256": "87cd75f7193f5d2fa69979e88f895c845d725988b1d6cdf24816294108bd8d5d",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-050",
+      "code": "V50",
+      "offering_id": "WOEK-G",
+      "title": "V50 · Wirkungs-BIP als WÖk-Modell - Nutzen, Grenzen und Abgrenzung zum Nationalen Wohlfahrtsindex",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-050/",
+      "source": "content/studienskripte/v4/grundstudium/base/v50-wirkungs-bip-modell-und-grenzen.md",
+      "source_sha256": "4e02cb5fa994c28ee8d687bcee2a5c82abf9565cf940ca879ec623ab49f5f33e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-051",
+      "code": "V51",
+      "offering_id": "WOEK-G",
+      "title": "V51 · Krisen-BIP und Kosten der Schadensvermeidung - Aktivität, Verlust und Wiederherstellung trennen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-051/",
+      "source": "content/studienskripte/v4/grundstudium/base/v51-krisen-bip-und-schadensvermeidung.md",
+      "source_sha256": "520a8c4f349399972e45e241750f30d784cbb9ae792e12e8672bcb7a2769ddaf",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-052",
+      "code": "V52",
+      "offering_id": "WOEK-G",
+      "title": "V52 · Wirkungseinkommen - WÖk-Policy-Modell für gesellschaftlich relevante Leistung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-052/",
+      "source": "content/studienskripte/v4/grundstudium/base/v52-wirkungseinkommen-policy-modell.md",
+      "source_sha256": "ca23a7a9dba76022ef5fd2aeec57c3ab38b6e9b604a75b4e482b7370ac30aa9e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-053",
+      "code": "V53",
+      "offering_id": "WOEK-G",
+      "title": "V53 · Wirkungsrente und generationengerechte Sicherung - WÖk-Policy-Modell, kein bestehender Rentenanspruch",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-053/",
+      "source": "content/studienskripte/v4/grundstudium/base/v53-wirkungsrente-generationengerechte-sicherung.md",
+      "source_sha256": "cccde632a053a366083fa6cbb36dbfb2e1463b98f6f9ac364befd7168a91c1c4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-054",
+      "code": "V54",
+      "offering_id": "WOEK-G",
+      "title": "V54 · Arbeit, Wirkleistung und Verteilung - Wertschöpfung, Wirkung und Entlohnung auseinanderhalten",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-054/",
+      "source": "content/studienskripte/v4/grundstudium/base/v54-arbeit-wirkleistung-und-verteilung.md",
+      "source_sha256": "abedff78d4b900327b25ee2a7a6e9397f88d5c4c07fa74f8c75b009343ee0035",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-055",
+      "code": "V55",
+      "offering_id": "WOEK-G",
+      "title": "V55 · Wirkungsfinanzpolitik - Haushalt, Fiskalregeln und Outcome gemeinsam denken",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-055/",
+      "source": "content/studienskripte/v4/grundstudium/base/v55-wirkungsfinanzpolitik-policy-architektur.md",
+      "source_sha256": "d4e5b1d7c0758f4cdb9e33a1d993e34befc0c42d7abcc05f7d723dc2405a4bf4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-056",
+      "code": "V56",
+      "offering_id": "WOEK-G",
+      "title": "V56 · Geld, Kredit und Kapitallenkung - Mandate, Risiko und reale Investitionswirkung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-056/",
+      "source": "content/studienskripte/v4/grundstudium/base/v56-geld-kredit-und-kapitallenkung.md",
+      "source_sha256": "8d8db07af7adbdc39d8971e7ffd045c51b29c8ed8625d0db6e88fa2f014d8f5b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-057",
+      "code": "V57",
+      "offering_id": "WOEK-G",
+      "title": "V57 · Wirkungsindikatoren für Volkswirtschaften: BIP, DNS, SDGs, Wohlfahrt und Resilienz",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-057/",
+      "source": "content/studienskripte/v4/grundstudium/base/v57-wirkungsindikatoren-volkswirtschaften.md",
+      "source_sha256": "80558e49227c57576b12a8bc254840486727e1fbd6bd767fd2ed096753f0bb4a",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-058",
+      "code": "V58",
+      "offering_id": "WOEK-G",
+      "title": "V58 · Wachstum, Suffizienz und Wohlstand - empirische Fragen statt Lagerdenken",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-058/",
+      "source": "content/studienskripte/v4/grundstudium/base/v58-wachstum-suffizienz-wohlstand.md",
+      "source_sha256": "57f7b517690a8ed3e464c01ccbd8e225d79aaf088e56a9b7fc81e3ac327cc865",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-059",
+      "code": "V59",
+      "offering_id": "WOEK-G",
+      "title": "V59 · Verteilungsgerechtigkeit und soziale Tragfähigkeit",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-059/",
+      "source": "content/studienskripte/v4/grundstudium/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md",
+      "source_sha256": "63083c924c49da844444a3c68234f0f076bb8cfb39e44f59da8409d3649c38f4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-060",
+      "code": "V60",
+      "offering_id": "WOEK-G",
+      "title": "V60 · Messgrenzen: Was sich nicht sinnvoll monetarisieren oder saldieren lässt",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-060/",
+      "source": "content/studienskripte/v4/grundstudium/base/v60-messgrenzen-und-monetarisierung.md",
+      "source_sha256": "439352fc268062f598ea7b4abfe078b9905a7729f2dacd8d09b8693206e988aa",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-061",
+      "code": "V61",
+      "offering_id": "WOEK-G",
+      "title": "V61 · Resilienz verstehen: Robustheit, Redundanz, Diversität und Anpassungsfähigkeit",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-061/",
+      "source": "content/studienskripte/v4/grundstudium/base/v61-resilienz-grundbegriffe.md",
+      "source_sha256": "f169ec49698c9f8b13f726ba7bf88a1dd966d6d7ed0a8e9807fe853ba786532b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-062",
+      "code": "V62",
+      "offering_id": "WOEK-G",
+      "title": "V62 · Apparente, reaktive und aktive Leistung - eine Resilienz-Analogie mit klaren Grenzen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-062/",
+      "source": "content/studienskripte/v4/grundstudium/base/v62-apparente-reaktive-aktive-leistung-resilienzanalogie.md",
+      "source_sha256": "9abe9d27d5d19e11999daf36650c689c6d60fbd7cc1abc50020e090159efa846",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-063",
+      "code": "V63",
+      "offering_id": "WOEK-G",
+      "title": "V63 · Kipppunkte, Schwellen und irreversible Schäden",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-063/",
+      "source": "content/studienskripte/v4/grundstudium/base/v63-kipppunkte-schwellen-irreversible-schaeden.md",
+      "source_sha256": "d21d72dfa9596ce0381c1d67e5a5c0898ad2b2a857f4073f2d178aaee41b099a",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-064",
+      "code": "V64",
+      "offering_id": "WOEK-G",
+      "title": "V64 · Kreislaufwirtschaft und regenerative Geschäftsmodelle - vom Materialkreislauf zur Systemwirkung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-064/",
+      "source": "content/studienskripte/v4/grundstudium/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md",
+      "source_sha256": "091a3e4577a824cb86298193690842d3947364f3aa68d5f75e6a5945dac7e70a",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-065",
+      "code": "V65",
+      "offering_id": "WOEK-G",
+      "title": "V65 · Lieferkettenresilienz und Abhängigkeitsrisiken",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-065/",
+      "source": "content/studienskripte/v4/grundstudium/base/v65-lieferkettenresilienz-abhaengigkeitsrisiken.md",
+      "source_sha256": "90f8a4fb42f96890e191355957a94038918eeea516def1c65f9f704e19b5c7ef",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-066",
+      "code": "V66",
+      "offering_id": "WOEK-G",
+      "title": "V66 · Versorgungssicherheit als Wirkungswert - Lehren aus Krisen ohne Krisenfetisch",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-066/",
+      "source": "content/studienskripte/v4/grundstudium/base/v66-versorgungssicherheit-als-wirkungswert.md",
+      "source_sha256": "b88b058052eeb7e33830b002f4c379406e851e3dab4f2ec8e7e6c897ff204e69",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-067",
+      "code": "V67",
+      "offering_id": "WOEK-G",
+      "title": "V67 · Resilienz in Scorecards integrieren - Kapazitäten, Schwellen und Erholungsfähigkeit",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-067/",
+      "source": "content/studienskripte/v4/grundstudium/base/v67-resilienz-in-scorecards.md",
+      "source_sha256": "24629823af530a40e55a3da86fadea7aa3a0df3a03bfd54849ecd4786f76c52f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-068",
+      "code": "V68",
+      "offering_id": "WOEK-G",
+      "title": "V68 · Präventionswert und Krisen-BIP: vermiedene Schäden richtig einordnen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-068/",
+      "source": "content/studienskripte/v4/grundstudium/base/v68-praeventionswert-und-krisen-bip.md",
+      "source_sha256": "f481f03e26cdc5066287906045abc701e72f95beca4b0d8a30f87ea7f14daa23",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-069",
+      "code": "V69",
+      "offering_id": "WOEK-G",
+      "title": "V69 · Stresstests, Frühwarnung und Wirkungsradar",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-069/",
+      "source": "content/studienskripte/v4/grundstudium/base/v69-stresstests-fruehwarnung-wirkungsradar.md",
+      "source_sha256": "071a19798ae88cc20c4b621bb3efa550b21ac21daa45212e6df21d129c336a1e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-070",
+      "code": "V70",
+      "offering_id": "WOEK-G",
+      "title": "V70 · Öffentlichkeit als Infrastruktur: Information, Vertrauen und gesellschaftliche Korrekturfähigkeit",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-070/",
+      "source": "content/studienskripte/v4/grundstudium/base/v70-oeffentlichkeit-als-infrastruktur.md",
+      "source_sha256": "f7e3c98c74a60b6133cc94ab2ab59e89664746f209ccdd0e69b0fa58dfda0566",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-071",
+      "code": "V71",
+      "offering_id": "WOEK-G",
+      "title": "V71 · Angriffe auf die Rückkopplung: Desinformation, Einschüchterung und institutionelle Erosion",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-071/",
+      "source": "content/studienskripte/v4/grundstudium/base/v71-angriffe-auf-rueckkopplung.md",
+      "source_sha256": "55f77c47fe38aa639bd9e77047cbaa052fd54193a115399f3b38de95f5ef8f95",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-072",
+      "code": "V72",
+      "offering_id": "WOEK-G",
+      "title": "V72 · Civic Shield: Resilienzdesign für Öffentlichkeit, Medien und digitale Räume",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-072/",
+      "source": "content/studienskripte/v4/grundstudium/base/v72-civic-shield-resilienzdesign.md",
+      "source_sha256": "d70ce74f0e415c61c8b6782998db556a343a73b04f2df538b26606ea11dfc054",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-073",
+      "code": "V73",
+      "offering_id": "WOEK-G",
+      "title": "V73 · Produkte als Wirkungsträger - vom Produktmerkmal zum Lebenszyklus-Outcomes",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-073/",
+      "source": "content/studienskripte/v4/grundstudium/base/v73-produkte-als-wirkungstraeger.md",
+      "source_sha256": "6d20aa6a980c0be2dbf8287b544965094dca854fc3dcff45b0c71aed928f8c44",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-074",
+      "code": "V74",
+      "offering_id": "WOEK-G",
+      "title": "V74 · Produktfallstudien: Apfel, T-Shirt, Strom und Haferdrink",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-074/",
+      "source": "content/studienskripte/v4/grundstudium/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md",
+      "source_sha256": "a48fe4b1f37c34d1e08c7f1b2376b06f7396e1886376ee47db2f4dc51fc79fba",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-075",
+      "code": "V75",
+      "offering_id": "WOEK-G",
+      "title": "V75 · Digitale Produktpässe und Wirkung am Regal - Dateninfrastruktur statt Nachhaltigkeitssiegel",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-075/",
+      "source": "content/studienskripte/v4/grundstudium/base/v75-digitale-produktpaesse-wirkung-am-regal.md",
+      "source_sha256": "b6e4eb83b4a4c4fe6de4189b58ff9549655f61545b338bf2b710ef5b953b47c0",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-076",
+      "code": "V76",
+      "offering_id": "WOEK-G",
+      "title": "V76 · Unternehmen als Wirkungssysteme - Geschäftsmodell, Betrieb und Wertschöpfungskette",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-076/",
+      "source": "content/studienskripte/v4/grundstudium/base/v76-unternehmen-als-wirkungssysteme.md",
+      "source_sha256": "a35af4072a5430e700e954107db1ae80ec3f70449ecf99b79a997fb5ed93b35c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-077",
+      "code": "V77",
+      "offering_id": "WOEK-G",
+      "title": "V77 · Beschaffung und Lieferantenbewertung - Wirkung in Vergabe und Einkauf anschlussfähig machen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-077/",
+      "source": "content/studienskripte/v4/grundstudium/base/v77-beschaffung-lieferantenbewertung.md",
+      "source_sha256": "5d17645670a4ff8b68d30ce7a257ca7abb0ef1aa5ec24f1b6a4df1d7ed9fa9f4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-078",
+      "code": "V78",
+      "offering_id": "WOEK-G",
+      "title": "V78 · Wirkungscontrolling, ERM und Boni - Steuerung ohne KPI-Gaming",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-078/",
+      "source": "content/studienskripte/v4/grundstudium/base/v78-wirkungscontrolling-erm-boni.md",
+      "source_sha256": "f859fae7ec8d56e677bc6140177df614ff8fd3c610f49804fd99940d5a0b20c5",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-079",
+      "code": "V79",
+      "offering_id": "WOEK-G",
+      "title": "V79 · Gesundheit, Pflege und Prävention als Wirkungsräume",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-079/",
+      "source": "content/studienskripte/v4/grundstudium/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md",
+      "source_sha256": "d940f4afc25a66d86572c0d1f5561c172f9a3dea59a7e58a037f2fbdd6b62273",
+      "corrected": true,
+      "pdf": "woek-g-base-079-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-g-base-079-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-080",
+      "code": "V80",
+      "offering_id": "WOEK-G",
+      "title": "V80 · Bildung und Wirkungskompetenz als Daseinsvorsorge",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-080/",
+      "source": "content/studienskripte/v4/grundstudium/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md",
+      "source_sha256": "02123cb5d4f529fee4a0246bbadc131c10c29ac7ff16c8bf3813e9e8fb52c31b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-081",
+      "code": "V81",
+      "offering_id": "WOEK-G",
+      "title": "V81 · Wohnen, Landwirtschaft und regionale Wertschöpfung - ortsgebundene Wirkungsräume",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-081/",
+      "source": "content/studienskripte/v4/grundstudium/base/v81-wohnen-landwirtschaft-regionale-wertschoepfung.md",
+      "source_sha256": "025984ed3a83fe1de669f75d27688bbb506143ab0b1b3bcc761710778dfe7edc",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-082",
+      "code": "V82",
+      "offering_id": "WOEK-G",
+      "title": "V82 · Politische Programme als Wirkungspotenziale - Mandat ist nicht Maßnahme",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-082/",
+      "source": "content/studienskripte/v4/grundstudium/base/v82-politische-programme-wirkungspotenziale.md",
+      "source_sha256": "fc669aa2bf3c598d081b2f967f805f7c2da89e56f6e7746fb257f8b3dc97d22a",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-083",
+      "code": "V83",
+      "offering_id": "WOEK-G",
+      "title": "V83 · Medien- und Plattform-Scorecards: zwei Bewertungsebenen, keine Gesinnungsnote",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-083/",
+      "source": "content/studienskripte/v4/grundstudium/base/v83-medien-plattform-scorecards.md",
+      "source_sha256": "ec5cea6eb4beeb2be998d722c7ee7b5fbd5b29de72fafb5582d86559c96a25ce",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-084",
+      "code": "V84",
+      "offering_id": "WOEK-G",
+      "title": "V84 · Wirkung im Alltag ohne moralische Überforderung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-084/",
+      "source": "content/studienskripte/v4/grundstudium/base/v84-wirkung-im-alltag-ohne-moralische-ueberforderung.md",
+      "source_sha256": "5919e3292cc8e9455695526e04fdbca7c0a8b3a13c4029c6a162ffbc1c38d736",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-085",
+      "code": "V85",
+      "offering_id": "WOEK-G",
+      "title": "V85 · Institutionen und Regeln: Bestehende Governance vs. WÖk-Vorschläge",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-085/",
+      "source": "content/studienskripte/v4/grundstudium/base/v85-institutionen-und-woek-governance-vorschlaege.md",
+      "source_sha256": "58a7447f51782d19e5aeff9c06fd3ee299ef7102f1dbe0d25a0f0c09d3e2f1eb",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-086",
+      "code": "V86",
+      "offering_id": "WOEK-G",
+      "title": "V86 · Rechtsschutz, Transparenz und demokratische Legitimation",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-086/",
+      "source": "content/studienskripte/v4/grundstudium/base/v86-rechtsschutz-transparenz-legitimation.md",
+      "source_sha256": "2a0055c07cee284c12c0366609f883de788f3c0b99d5a575a65c1c311ba0b1db",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-087",
+      "code": "V87",
+      "offering_id": "WOEK-G",
+      "title": "V87 · Schutz vor Lobbyismus, Score-Gaming und Wirkungsmanipulation",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-087/",
+      "source": "content/studienskripte/v4/grundstudium/base/v87-lobbyismus-gaming-und-manipulationsschutz.md",
+      "source_sha256": "42ed4d08319d5566823c8614136a78344dfb65342bd7972ba03685867b095155",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-088",
+      "code": "V88",
+      "offering_id": "WOEK-G",
+      "title": "V88 · Wirkungsdatenräume und Register: Interoperabilität statt Zentraldatenbank",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-088/",
+      "source": "content/studienskripte/v4/grundstudium/base/v88-wirkungsdatenraeume-register.md",
+      "source_sha256": "10ccd5e37a82a31d048f1d37183ff1e22cde2f0fdabe40b0f7d846ba86b539c6",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-089",
+      "code": "V89",
+      "offering_id": "WOEK-G",
+      "title": "V89 · Datenschutz, Cyberresilienz und digitale Souveränität",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-089/",
+      "source": "content/studienskripte/v4/grundstudium/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md",
+      "source_sha256": "621cd51cde072fdba467178d5b6c74d22563715a1af9c732cec702ee72bfa8ff",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-090",
+      "code": "V90",
+      "offering_id": "WOEK-G",
+      "title": "V90 · KI-gestützte Wirkungsmodelle und ihre Grenzen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-090/",
+      "source": "content/studienskripte/v4/grundstudium/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md",
+      "source_sha256": "cceb47d9a7f2e6c0d7d7cb0685a2ad1fa44644072e1a3d34730578fb2d8be8e9",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-091",
+      "code": "V91",
+      "offering_id": "WOEK-G",
+      "title": "V91 · Importwirkung, Grenzausgleich und CBAM",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-091/",
+      "source": "content/studienskripte/v4/grundstudium/base/v91-importwirkung-grenzausgleich-cbam.md",
+      "source_sha256": "d361d417b11133ab4e32ba70f5cf12aee2c612549ff8975bedf64b76223c8c8b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-092",
+      "code": "V92",
+      "offering_id": "WOEK-G",
+      "title": "V92 · Globale Fairness statt Wirkungsimperialismus",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-092/",
+      "source": "content/studienskripte/v4/grundstudium/base/v92-globale-fairness-statt-wirkungsimperialismus.md",
+      "source_sha256": "db59b9a3d872309df08a05da892999083c00a817e4754257b2de5ad21c6725bd",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-093",
+      "code": "V93",
+      "offering_id": "WOEK-G",
+      "title": "V93 · Wirkungsklauseln in Handel, Kapital und Entwicklung",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-093/",
+      "source": "content/studienskripte/v4/grundstudium/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md",
+      "source_sha256": "b72c56a77d987e77fb53dafa2dd05aacbd1b9f5f00c84bcdf996f9587750f334",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-094",
+      "code": "V94",
+      "offering_id": "WOEK-G",
+      "title": "V94 · Lange Wellen und „6. Kondratieff“: historische Hypothese, kein Wirkungsbeweis",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-094/",
+      "source": "content/studienskripte/v4/grundstudium/base/v94-lange-wellen-kondratieff-hypothese.md",
+      "source_sha256": "88812760869e8cd942030a7523dfad8607394bb1a0e92153f6ef1a014b79855e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-095",
+      "code": "V95",
+      "offering_id": "WOEK-G",
+      "title": "V95 · Pilotprojekte, Sandboxes und Lernschleifen",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-095/",
+      "source": "content/studienskripte/v4/grundstudium/base/v95-piloten-sandboxes-lernregulierung.md",
+      "source_sha256": "8c7513ce4aff1dd86490fff4ea514b584f0a9f7edf60d9ed3a1aa200950a939d",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-096",
+      "code": "V96",
+      "offering_id": "WOEK-G",
+      "title": "V96 · Wirkungsarchitektur entwerfen: Systemhebel, Rückkopplung und adaptive Governance",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-096/",
+      "source": "content/studienskripte/v4/grundstudium/base/v96-wirkungsarchitektur-entwerfen.md",
+      "source_sha256": "cccdbba6781654d4a52bf98b51ffcfb05e97c90b1b4b1b021fd0d2798f4feba5",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-097",
+      "code": "V97",
+      "offering_id": "WOEK-G",
+      "title": "V97 · Praxisprojekt starten: Wirkungsfeld, Gegenstand, Quelle und Scope",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-097/",
+      "source": "content/studienskripte/v4/grundstudium/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md",
+      "source_sha256": "f987a80ab90cd36b0dd8f772109cff2b3e9ab42b29cfd7615e82a0cbbfc42399",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-098",
+      "code": "V98",
+      "offering_id": "WOEK-G",
+      "title": "V98 · Praxisprojekt: Ausgangszustand, Problem Review und Gegenfaktum ohne Eingriff",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-098/",
+      "source": "content/studienskripte/v4/grundstudium/base/v98-praxisprojekt-problem-review-baseline.md",
+      "source_sha256": "85c5974fe4de919d874d95194abe88b994fa027102e3253b84d08f840094a92e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-BASE-099",
+      "code": "V99",
+      "offering_id": "WOEK-G",
+      "title": "V99 · Praxisprojekt: Wirkungsfrage, Goal Review und prüfbarer Wirkpfad",
+      "route": "bibliothek/studienskripte/v4/woek-g-base-099/",
+      "source": "content/studienskripte/v4/grundstudium/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md",
+      "source_sha256": "e91e72aaa08a1f2ad98ad75aadf9b54cfdc9313568cf57af6a80244578332d20",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-HIST-01",
+      "code": "GOV-01",
+      "offering_id": "WOEK-G",
+      "title": "GOV-01 · Von Brundtland zu Rio: Nachhaltigkeit wird zum Governance-Prinzip",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-hist-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-01-von-brundtland-zu-rio.md",
+      "source_sha256": "79c38762efe53a41b0f5efc53619336e3936a41f288b26a8f78460fe7881fd7e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-HIST-02",
+      "code": "GOV-02",
+      "offering_id": "WOEK-G",
+      "title": "GOV-02 · Von Agenda 21 zur deutschen Nachhaltigkeitsstrategie 2002",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-hist-02/",
+      "source": "content/studienskripte/v4/grundstudium/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md",
+      "source_sha256": "a871fc71d7837823c86772fb8978df6017a3a63cfe8d48e54cfef7f3fbe858ad",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-HIST-03",
+      "code": "GOV-03",
+      "offering_id": "WOEK-G",
+      "title": "GOV-03 · Von Agenda 2030 zur DNS 2025: Kontinuität und Neuaufstellung",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-hist-03/",
+      "source": "content/studienskripte/v4/grundstudium/gov-03-agenda2030-zur-dns-2025.md",
+      "source_sha256": "85777a7a93cf3dc582277b1d164cab98796b037e448f924e22bff2fe6441fe56",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-DNS-01",
+      "code": "GOV-04",
+      "offering_id": "WOEK-G",
+      "title": "GOV-04 · DNS als Managementsystem: Prinzipien, Transformationsbereiche und Hebel",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-dns-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-04-dns-als-managementsystem.md",
+      "source_sha256": "5487e1f8af607a8bb23056f6cecb4445ddd4d18b09725fb1de4a01d6e01e5275",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-INST-01",
+      "code": "GOV-05",
+      "offering_id": "WOEK-G",
+      "title": "GOV-05 · Wer steuert Nachhaltigkeit? Kanzleramt, Ressorts, StA NEZ, RNE, Destatis und Bundestag",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-inst-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-05-institutionen-und-verantwortlichkeiten.md",
+      "source_sha256": "24b8fd30cae4143a13ce324f27a34c95218281c85ad1c4cdd354b8c5458486d5",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-IND-01",
+      "code": "GOV-06",
+      "offering_id": "WOEK-G",
+      "title": "GOV-06 · DNS-Indikatoren und Monitoring: Zielwert ist nicht Wirkung",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-ind-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-06-dns-indikatoren-und-monitoring.md",
+      "source_sha256": "274ba0647027b7797fba1e5ea41a718b7236dcfc9574439c9eaab209f747de90",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-GFA-01",
+      "code": "GOV-07",
+      "offering_id": "WOEK-G",
+      "title": "GOV-07 · §§ 43-44 GGO: Gesetzesfolgen, Alternativen, Nebenwirkungen und spätere Überprüfung",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-gfa-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-07-ggo-gesetzesfolgen.md",
+      "source_sha256": "5ddfec0960bb9f420ed22aef3c1e19291cee8be35f4d57fec50df80b766ffe1d",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-ENAP-01",
+      "code": "GOV-08",
+      "offering_id": "WOEK-G",
+      "title": "GOV-08 · Nachhaltigkeitsprüfung und eNAP: Was der Bund bereits systematisch prüft",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-enap-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-08-nachhaltigkeitspruefung-und-enap.md",
+      "source_sha256": "46312fe397dff65d4c76f3e4c87393bf06f74654d8f00bc7eedb164e501a9af1",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-EGFA-01",
+      "code": "GOV-09",
+      "offering_id": "WOEK-G",
+      "title": "GOV-09 · eGFA und E-Gesetzgebung: digitale Prozessintegration und öffentliche Dokumentationsgrenzen",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-egfa-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-09-egfa-und-e-gesetzgebung.md",
+      "source_sha256": "2d6991efdc4a7f110d2459ae2ea21583b896b88527f2fc63b994cdac180eb0db",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-PARL-01",
+      "code": "GOV-10",
+      "offering_id": "WOEK-G",
+      "title": "GOV-10 · Parlamentarische Nachhaltigkeitsprüfung: PBnEZ und das Verhältnis zur Exekutive",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-parl-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-10-parlamentarische-nachhaltigkeitspruefung.md",
+      "source_sha256": "10ca1c3bef5d67d25b896f0e11482491ab3e3c9f52f99010cfa8b5a654bf0b2f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-AP26-01",
+      "code": "GOV-11",
+      "offering_id": "WOEK-G",
+      "title": "GOV-11 · Aktionsplan Nachhaltigkeit 2026: Missionen, Beteiligungsstand und Wirkungsfragen",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-ap26-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md",
+      "source_sha256": "cd3fcbf87db44edb34d1ff4f5485988bf5a6548f345cccd2324e011d43d0eb4a",
+      "corrected": true,
+      "pdf": "woek-g-gov-ap26-01-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-g-gov-ap26-01-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-G-GOV-COMPARE-01",
+      "code": "GOV-12",
+      "offering_id": "WOEK-G",
+      "title": "GOV-12 · Staatliche GFA/eNAP vs. WÖk: Benchmarklabor mit realen Bundesfällen",
+      "route": "bibliothek/studienskripte/v4/woek-g-gov-compare-01/",
+      "source": "content/studienskripte/v4/grundstudium/gov-12-enap-woek-benchmarklabor.md",
+      "source_sha256": "969edf71b5f4708aa67c9db88ab50175baa9ea6b2efbc2310a4b5da7706abc46",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-001",
+      "code": "G-V4-01",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-01 · Wirkung statt nur Aktivität",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-001/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-01-wirkung-statt-nur-aktivitaet.md",
+      "source_sha256": "8c8f642acc5cfd744040ad44a89bb60580bcd75607aeaaa862e1f4f5b044add7",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-002",
+      "code": "G-V4-02",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-02 · Von Problem und Ziel zum Wirkpfad",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-002/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-02-problem-ziel-wirkpfad.md",
+      "source_sha256": "4c27a405fe0ce0af9d8f3a9fb6d909380857bcffe86b1b2cd30631220cd0b543",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-003",
+      "code": "G-V4-03",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-03 · Woran wird Wirkung bewertet?",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-003/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-03-referenzrahmen.md",
+      "source_sha256": "9ca00bb53ab318ff16e8d77d7c2b76412dc4d82630b7abbe8b9c9565a7a50a89",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-004",
+      "code": "G-V4-04",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-04 · Evidenz, Indikatoren und Zurechnung",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-004/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-04-evidenz-indikatoren-zurechnung.md",
+      "source_sha256": "d677d4620904caa4031e952d57bd7a89b7e1120168b1cfb8b9aa8ae26961642b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-005",
+      "code": "G-V4-05",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-05 · Netto-Wirkung und Schutzgrenzen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-005/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-05-nettowirkung-schutzgrenzen.md",
+      "source_sha256": "2c16e44f1e0039a8c134b3bca970ff41db69b0dfb35339d16a7013ae7f46f197",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-006",
+      "code": "G-V4-06",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-06 · Optionen, Steuerung und Instrumente",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-006/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-06-optionen-steuerung-instrumente.md",
+      "source_sha256": "d27dfdb8e6b7ef46e4e29c42bb53f2c213ff245715eaeed9272136ff0b4c6ab6",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-G-V4-007",
+      "code": "G-V4-07",
+      "offering_id": "WOEK-WB-G",
+      "title": "G-V4-07 · Reality Check und Grenzen der Wirkungsökonomie",
+      "route": "bibliothek/studienskripte/v4/woek-wb-g-v4-007/",
+      "source": "content/studienskripte/v4/angebote/grundlagen/g-v4-07-reality-check-grenzen.md",
+      "source_sha256": "632569e27d5fa5550ecc0b4dfbb440c107aa6ec6574d5a1ff6d72532e1bb4a62",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-001",
+      "code": "WM-V4-01",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-01 · Wirkungsmanagement im bestehenden Nachhaltigkeits- und ESG-System",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-001/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-01-systemkontext.md",
+      "source_sha256": "0288e230ce8b06ac20f561654c6000d55fc1fa2beafb5fcdb47c7bf51497ed67",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-002",
+      "code": "WM-V4-02",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-02 · Problem, Ausgangszustand und Wirkungsempfänger",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-002/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-02-problem-baseline-empfaenger.md",
+      "source_sha256": "f15ce09e41514e7692a689cc8bf70e88d5e71367a4307019aadb35dc86306780",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-003",
+      "code": "WM-V4-03",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-03 · Ziele und Referenzen sauber setzen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-003/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-03-ziele-referenzen.md",
+      "source_sha256": "5c76ccb95d22d709a1b3f7e2501544c7923d1c64a82fc1b67911dd2d18fb92f1",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-004",
+      "code": "WM-V4-04",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-04 · Wirkpfade und Kausalannahmen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-004/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-04-wirkpfade-kausalannahmen.md",
+      "source_sha256": "52e7c01196f6467dc6046575a3ca462c25e07f6fa7317626cdb0036802925068",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-005",
+      "code": "WM-V4-05",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-05 · Materialität, Potenziale und Risiken",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-005/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-05-materialitaet-potenziale-risiken.md",
+      "source_sha256": "385ab8528d391cbd19dcb4f3a6d07abe5c83e91c1d9daf341091695c39be78a4",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-006",
+      "code": "WM-V4-06",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-06 · Schutzgrenzen, Nichtkompensation und Zielkonflikte",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-006/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-06-schutzgrenzen-nichtkompensation.md",
+      "source_sha256": "a95904417abdced0316d63a8bde08c1937d7648452ac444e129b513d27e44770",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-007",
+      "code": "WM-V4-07",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-07 · Optionen, Delivery, Ressourcen und Policy Coherence",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-007/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-07-optionen-delivery-coherence.md",
+      "source_sha256": "f7db9c34f4c897754204b69d181a8c5d6256586ea87d50a0517aae4fbcb13646",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-008",
+      "code": "WM-V4-08",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-08 · Wirkungsstrategie und Entscheidungsarchitektur",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-008/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-08-strategie-entscheidungsarchitektur.md",
+      "source_sha256": "06e182d22cc10ddc5b1a497a7d73a3ad933fa58554fe4d0f7b3d9737dd005487",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-009",
+      "code": "WM-V4-09",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-09 · Evidenzgerechte Wirkungskommunikation",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-009/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-09-wirkungskommunikation.md",
+      "source_sha256": "ce11d61cdde69c766fa168cef3ebc7db2aa8262329df6b459db811e5cefa0cd1",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WM-V4-010",
+      "code": "WM-V4-10",
+      "offering_id": "WOEK-WB-WM",
+      "title": "WM-V4-10 · 90-Tage-Plan, Reality Check und Lernschleife",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wm-v4-010/",
+      "source": "content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-10-reality-check-90-tage.md",
+      "source_sha256": "0f53bc785fc8766dc7d30294565b6bf4dbf31c96fc4a60303f547b5daaaf5c02",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-001",
+      "code": "WC-V4-01",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-01 · Vom KPI zur Wirkungsbeobachtung",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-001/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/01-vom-kpi-zur-wirkungsbeobachtung.md",
+      "source_sha256": "383cf0b491d5bfe279fad3de8b8f5cd536c08bf5d56083cc8b7b5434a0427863",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-002",
+      "code": "WC-V4-02",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-02 · Datenwelten und Quellenfunktionen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-002/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/02-datenwelten-und-quellenfunktionen.md",
+      "source_sha256": "13b27de94d913683441a82e6c1a72d152cfcce41fd975bc6600c4ff8ccf88656",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-003",
+      "code": "WC-V4-03",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-03 · Masterregister, Wirkindikatorenregister und Provenienz",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-003/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/03-masterregister-wirkindikatorenregister-provenienz.md",
+      "source_sha256": "6b89d344c4e1775f075c690cafba22beb75e3935ae2fdfbb8c1c22d3ff0d6afa",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-004",
+      "code": "WC-V4-04",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-04 · Scorecards als Wirkungsprofile",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-004/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/04-scorecards-als-wirkungsprofile.md",
+      "source_sha256": "a8d270a8245b1ac641148243e355fa6a7fd7813d195ba1015abf6ed547fb850f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-005",
+      "code": "WC-V4-05",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-05 · Nichtkompensation, Schutzgrenzen und Reverse Merit Order",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-005/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/05-nichtkompensation-schutzgrenzen-rmo.md",
+      "source_sha256": "e26c6a91f22039f29f72935507b7226e93a5f6d460820c47c7a2c15da0a7cf7b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-006",
+      "code": "WC-V4-06",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-06 · Monitoring, Gegenfaktum, Attribution und Reality Check",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-006/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/06-monitoring-gegenfaktum-attribution-reality-check.md",
+      "source_sha256": "bc45b0fa3459430ae511f47baca2457b7ce6e01fe4e8c8d05c00c31f24909a22",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-007",
+      "code": "WC-V4-07",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-07 · Netto-Wirkung, Transformationswirkung und Investitionseffizienz",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-007/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/07-nettowirkung-transformation-investitionseffizienz.md",
+      "source_sha256": "68cb23e6bc72b8a51045eee65352bdcf1a951cde3ecac0046c2861b32a026600",
+      "corrected": true,
+      "pdf": "woek-wb-wc-v4-007-2026-10-15.pdf",
+      "pdf_url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-academy-script-corrections-2026-10-15/woek-wb-wc-v4-007-2026-10-15.pdf"
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-008",
+      "code": "WC-V4-08",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-08 · Controlling in CAPEX, OPEX, Portfolio und Einkauf",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-008/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/08-controlling-in-capex-opex-portfolio-einkauf.md",
+      "source_sha256": "6f6141f3e9ec0423fab5eafc3d0de90096649d2ea71b392a2e3d2db2fd6738d5",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-009",
+      "code": "WC-V4-09",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-09 · Audit, Assurance und Gaming-Schutz",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-009/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/09-audit-assurance-und-gaming-schutz.md",
+      "source_sha256": "7e3e97dbd80f6c1650904db804c98c813da8dc757b26bd784c0485263d1da494",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-WC-V4-010",
+      "code": "WC-V4-10",
+      "offering_id": "WOEK-WB-WC",
+      "title": "WC-V4-10 · Integrierter Abschlussfall und Lernschleife",
+      "route": "bibliothek/studienskripte/v4/woek-wb-wc-v4-010/",
+      "source": "content/studienskripte/v4/angebote/wirkungscontrolling/10-integrierter-abschlussfall-und-lernschleife.md",
+      "source_sha256": "13ef824b4992a6a5263f0943a0c4bf44c923bfc546eec8d313ec5b88ee72298f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-001",
+      "code": "MULT-V4-01",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-01 · WÖk in 20 Sekunden - ohne Strohmann",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-001/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md",
+      "source_sha256": "c0d533aba9f0221b0ff2a472e49e4a6bdd9a50908dbb2ead248fba6700a822c1",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-002",
+      "code": "MULT-V4-02",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-02 · Das Wirkungsvokabular sicher erklären",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-002/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md",
+      "source_sha256": "bb9c5c99543a06beb90b17f57df911e8da0b45a94e79c880211d2080d3caaf4e",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-003",
+      "code": "MULT-V4-03",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-03 · Vom Problem zur Entscheidung",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-003/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-03-vom-problem-zur-entscheidung.md",
+      "source_sha256": "32fe438d0d054094b981841534d64762d8eadfe8f0124445c3f5a4c00f53ad7b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-004",
+      "code": "MULT-V4-04",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-04 · Didaktik: 20 Sekunden, 2 Minuten, Tiefe",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-004/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-04-didaktik-20-sekunden-2-minuten-tiefe.md",
+      "source_sha256": "bef986bcaa9e4d26d704ac49a210adc0e34c866d9f0e5049218fe6c6b315fb11",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-005",
+      "code": "MULT-V4-05",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-05 · Ehrliche Wirkungskommunikation",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-005/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-05-ehrliche-wirkungskommunikation.md",
+      "source_sha256": "77f371d512f505399ef0fbb237596e237683442d98ef9ee83f11aa073e0488d5",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-006",
+      "code": "MULT-V4-06",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-06 · Medien, Narrative und demokratische Resilienz",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-006/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-06-medien-narrative-demokratische-resilienz.md",
+      "source_sha256": "20fbf59cfe7c930d762c633e9ad9ba3fc489b8ddb873f3f5f1cd114d7b7614ca",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-007",
+      "code": "MULT-V4-07",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-07 · Rolle, Ethik und Autorisierung",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-007/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-07-rolle-ethik-autorisierung.md",
+      "source_sha256": "e68866b17b3b706808879e9dbfdcaf870067780356b8694fdbb22796056856e8",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-MP-V4-008",
+      "code": "MULT-V4-08",
+      "offering_id": "WOEK-MP",
+      "title": "MULT-V4-08 · Integrierte Fallarbeit und Prüfung",
+      "route": "bibliothek/studienskripte/v4/woek-mp-v4-008/",
+      "source": "content/studienskripte/v4/angebote/multiplikatoren/mult-v4-08-integrierte-fallarbeit-und-pruefung.md",
+      "source_sha256": "9dd9b81ad06363ac4181661278612e58bef18e5d9880104719f5519f303d01bd",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-001",
+      "code": "DB-V4-01",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-01 · Demokratie: Rechte, Regeln und Korrekturfähigkeit",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-001/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-01-rechte-regeln-korrekturfaehigkeit.md",
+      "source_sha256": "f249e49bc0c3f0e01da2a6e8a7f86a9661823420a7a2f0f92f19c97a103d9c46",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-002",
+      "code": "DB-V4-02",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-02 · Demokratische Wirkungsräume und Schutzgüter",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-002/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-02-wirkungsraeume-schutzgueter-vertrauen.md",
+      "source_sha256": "ebbb993b93b543e01ceb5732bdd76d2b772ed40902a93dce30420cacf223853f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-003",
+      "code": "DB-V4-03",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-03 · Fakt, Quelle, Beobachtung und Wirkung",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-003/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-03-fakt-quelle-beobachtung-wirkung.md",
+      "source_sha256": "97621a6a9b9eac6ee9d7de45d73a7b345245ad738742baf7766701c07ab2f61c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-004",
+      "code": "DB-V4-04",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-04 · Narrative und Deutungsrahmen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-004/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-04-narrative-deutungsrahmen.md",
+      "source_sha256": "3c87970b0a6229dbb154b129fe7e748a23193d89653990ae7e89c559f4bdace6",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-005",
+      "code": "DB-V4-05",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-05 · Framing, Wiederholung und Korrektur",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-005/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-05-framing-wiederholung-korrektur.md",
+      "source_sha256": "25289590153b3d17c8fa74c805388b4856d84f41284df16d8e965881f664c0fc",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-006",
+      "code": "DB-V4-06",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-06 · Emotion, Reaktanz und Identität - was Forschung tatsächlich trägt",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-006/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-06-emotion-reaktanz-identitaet.md",
+      "source_sha256": "d7592fb230cc32ed5edeef18ce50d22a6cb3b052b9495cd9e20f2f49a277ba12",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-007",
+      "code": "DB-V4-07",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-07 · Plattformen, Desinformation und synthetische Medien",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-007/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-07-plattformen-desinformation-synthetische-medien.md",
+      "source_sha256": "35f4a82d071e03033c83c9ef3484af34e50e25aa3c14518d8d1b988d81add1f6",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-008",
+      "code": "DB-V4-08",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-08 · Antworten, Grenzen und Sicherheit",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-008/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-08-antworten-grenzen-sicherheit.md",
+      "source_sha256": "f2d49d5c6f6f3a7a938753f9287ce9181e0ad143a9cbcc620901bbd5f85e545b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-009",
+      "code": "DB-V4-09",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-09 · Gespräche unter Konflikt",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-009/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-09-gespraeche-unter-konflikt.md",
+      "source_sha256": "dd3ff3787f6b7293842f80e722c322a69f7e2e917a6a81945853977759b3d859",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-010",
+      "code": "DB-V4-10",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-10 · Zivilcourage und Teilhabe",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-010/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-10-zivilcourage-teilhabe.md",
+      "source_sha256": "3968afad0902d6bcf6c2e60ecb520513b859fb51ce8305492b63c0de0a1bad1f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DB-V4-011",
+      "code": "DB-V4-11",
+      "offering_id": "WOEK-WB-DB",
+      "title": "DB-V4-11 · Persönlicher Resilienz- und Reality-Check-Plan",
+      "route": "bibliothek/studienskripte/v4/woek-wb-db-v4-011/",
+      "source": "content/studienskripte/v4/angebote/demokratie-buerger/db-v4-11-persoenlicher-resilienz-reality-check-plan.md",
+      "source_sha256": "bdbd4a77a2f061e6af7623db0b787613215e1c468657d21fe140b7e7475e03ba",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-001",
+      "code": "DM-V4-01",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-01 · Gemeinsame Grundlage: Wirkung, Demokratie und Referenzebenen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-001/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md",
+      "source_sha256": "dc3f6504034ae8c6beacd5936790b5cb054d0729a0fbc902ab94a9a01685b5da",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-002",
+      "code": "DM-V4-02",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-02 · Öffentlichkeit als demokratische Infrastruktur und Wirkungsraum",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-002/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-02-oeffentlichkeit-demokratische-infrastruktur.md",
+      "source_sha256": "0678e645f2d3228d3379635530ffdbb7093667638417aa170c0d26d3d576296f",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-003",
+      "code": "DM-V4-03",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-03 · Reichweite, Wiederholung und Verteilung",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-003/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-03-reichweite-wiederholung-verteilung.md",
+      "source_sha256": "f9dc79b2d8bd82f8164ce975e40dd882d5c80e7b354e1971e380e8c9b98a2b05",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-004",
+      "code": "DM-V4-04",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-04 · Moderation unter Live-Druck",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-004/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-04-moderation-live-druck.md",
+      "source_sha256": "2d06af87bf85c5d8f61aa7f695e34a322e4d8848088ffafd977ecce682b77744",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-005",
+      "code": "DM-V4-05",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-05 · Kommunikationsmuster quellengebunden analysieren",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-005/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-05-kommunikationsmuster-ohne-personenrating.md",
+      "source_sha256": "62e345ff7c0dcfeebff0edff28c20a1bc7a6298150f3e20592ad66b45b26e613",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-006",
+      "code": "DM-V4-06",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-06 · Frames und Reframes als konkurrierende Darstellungsoptionen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-006/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-06-frames-reframes-optionen.md",
+      "source_sha256": "a4dad9b3a05addb92db6b51412e074fa7eab0f383ecb5d008fcb0faa3dddac9b",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-007",
+      "code": "DM-V4-07",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-07 · Hart fragen, verifizieren, ohne unnötige Verstärkung",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-007/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-07-hart-fragen-verifizieren-verstaerkung.md",
+      "source_sha256": "455e59f5438d2d58d5cffcf8768f12e4507cbe86550318c327e720fb4090de84",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-008",
+      "code": "DM-V4-08",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-08 · Bild, Ton, Schnitt, KI und multimodale Provenienz",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-008/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-08-bild-ton-schnitt-ki-provenienz.md",
+      "source_sha256": "6f9d4259b7f59410d1e3bf452ce9a7d060a53b11cd8260bb090c2c5e4535416c",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-009",
+      "code": "DM-V4-09",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-09 · Würde, Minderheitenschutz und nicht kompensierbare Grenzen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-009/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-09-wuerde-minderheitenschutz-grenzen.md",
+      "source_sha256": "30925b6bff6ef0eb012a07c7ed48edc3f460d0d4ae99887704f1cbe861174744",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-010",
+      "code": "DM-V4-10",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-10 · Quellenklarheit, Versionierung und Korrekturkultur",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-010/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-10-quellenklarheit-versionierung-korrektur.md",
+      "source_sha256": "0e904602a06caf63a00dc96c0d8445738bf0e6316e9f2bff2dd781d1f1d9eace",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-011",
+      "code": "DM-V4-11",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-11 · Krisenkommunikation, Desinformation und hybride Lagen",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-011/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-11-krisenkommunikation-desinformation-hybride-lagen.md",
+      "source_sha256": "9b877c3096c5f9a6ebf88aa1598addf37582a63be28357e34808de8ef633de19",
+      "corrected": false
+    },
+    {
+      "lecture_id": "WOEK-WB-DM-V4-012",
+      "code": "DM-V4-12",
+      "offering_id": "WOEK-WB-DM",
+      "title": "DM-V4-12 · Redaktions-/Moderationsprotokoll und Reality Check",
+      "route": "bibliothek/studienskripte/v4/woek-wb-dm-v4-012/",
+      "source": "content/studienskripte/v4/angebote/demokratie-medien/dm-v4-12-redaktionsprotokoll-reality-check.md",
+      "source_sha256": "fb1762bf67ddb8afc81e281932ae2109edddc38ae3b7104e2dae202997e60772",
+      "corrected": false
+    }
+  ]
+}
