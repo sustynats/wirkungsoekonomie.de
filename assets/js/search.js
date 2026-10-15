@@ -707,6 +707,7 @@
   }
 
   function makeSnippet(entry, rawQuery) {
+    if (String(entry.url || "").startsWith("/wirkungslexikon/") && String(entry.description || "").startsWith("Wirkungspotenzial:")) return entry.description;
     const fallback = entry.description || entry.body || "";
     const body = String(entry.body || fallback);
     const query = normalize(rawQuery);
