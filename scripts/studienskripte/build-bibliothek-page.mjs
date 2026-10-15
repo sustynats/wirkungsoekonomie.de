@@ -14,12 +14,25 @@ for (const script of releasedScripts) {
   byTrack.set(script.track, list);
 }
 
-import { historicalPublicScriptBody } from './legacy-public-script.mjs';
+import { historicalPublicScriptBody, historicalHeadingTitle } from './legacy-public-script.mjs';
 import { esc, renderReader } from './reader-renderer.mjs';
+
+const legacyAnchors = JSON.parse(readFileSync(join(ROOT, 'content/studienskripte/legacy-public-anchors.json'), 'utf8')).readers;
 
 function buildReaderPage(script) {
   const source = readFileSync(join(ROOT, script.masterPath), "utf8");
-  const { toc, html } = renderReader(historicalPublicScriptBody(source));
+  const rendered = renderReader(historicalPublicScriptBody(source));
+  const previous = legacyAnchors[script.slug];
+  if (!previous) throw new Error('Missing public anchor snapshot: '+script.slug);
+  const key = value => historicalHeadingTitle(value).replace(/[*`_]/g,'').trim();
+  const oldByTitle = new Map();
+  for(const heading of previous.headings){const list=oldByTitle.get(key(heading.text))??[];list.push(heading.id);oldByTitle.set(key(heading.text),list);}
+  const idMap = new Map();const used=new Set();
+  const toc=rendered.toc.map(item=>{const candidates=oldByTitle.get(key(item.text))??[];let id=candidates.find(value=>!used.has(value))??item.id;used.add(id);idMap.set(item.id,id);return {...item,id};});
+  const html=rendered.html.replace(/\bid="([^"]+)"/g,(_,id)=>`id="${esc(idMap.get(id)??id)}"`);
+  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
+  if(new Set(ids).size!==ids.length)throw new Error('Duplicate historical anchor: '+script.slug);
+  const aliases=previous.ids.filter(id=>!ids.includes(id)).map(id=>`<span id="${esc(id)}"></span>`).join('');
   const base = "../../../";
   const destination = join(ROOT, script.publicPath, "index.html");
   mkdirSync(join(ROOT, script.publicPath), { recursive: true });
@@ -40,7 +53,7 @@ function buildReaderPage(script) {
   <body>
     ${renderSiteHeader(base, 'de')}
     <main data-pagefind-body>
-      <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Historische Lesefassung</p><p>Diese Fassung dokumentiert einen früheren Skriptstand. <a href="../v4/">Zu den aktuellen Vorlesungsskripten des Curriculum 4.0</a>.</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
+      <section class="hero compact-hero document-library-hero"><p class="hero-kicker">Bibliothek · Studienskript ${esc(script.code)}</p><h1>${esc(script.title)}</h1><p class="hero-subtitle">Historische Lesefassung</p><div aria-hidden="true" class="historical-anchor-aliases">${aliases}</div><p>Diese Fassung dokumentiert einen früheren Skriptstand. <a href="../v4/">Zu den aktuellen Vorlesungsskripten des Curriculum 4.0</a>.</p><div class="hero-actions"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button></div></section>
       <section class="section"><div class="card"><dl class="document-card-meta"><dt>Studienbereich</dt><dd>${esc(script.track)}</dd><dt>Status</dt><dd>Historischer Skriptstand</dd></dl></div></section>
       <section class="section"><nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><div class="toc-links">${toc.map((item) => `<a class="toc-level-${item.level}" href="#${item.id}">${esc(item.text)}</a>`).join("")}</div></nav></section>
       <article class="section narrow">${html}</article>
