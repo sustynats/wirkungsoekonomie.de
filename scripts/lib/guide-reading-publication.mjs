@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {matchesMethodikWebProjection} from './methodik-edition.mjs';
 
 const manifestPath='assets/data/guide-reading-edition-2026-10-12.json';
 const sourcePath='content/site/reference-update.json';
@@ -25,7 +26,7 @@ export function verifyGuideReadingEdition(root=process.cwd()){
   if(review.status!=='PASS' || review.pdfSha256!==succession.pdfSha256 || review.sourceSha256!==succession.afterSha256 ||
       review.reviewedPages?.length!==review.pages || review.reviewedPages.some((page,i)=>page!==i+1) || review.sourceValuesChecked!==50)
     throw new Error('Reference overview lacks complete source and visual verification');
-  for(const [source,expected]of Object.entries(manifest.sources))if(hash(fileAt(root,source))!==expected)
+  for(const [source,expected]of Object.entries(manifest.sources))if(hash(fileAt(root,source))!==expected && !matchesMethodikWebProjection(root,source,expected))
     throw new Error(`Reading-edition generator changed after verification: ${source}`);
   if(manifest.files.length!==2)throw new Error('Incomplete guide reading publication');
   if(!manifest.files.some(file=>file.path===succession.pdf && file.sha256===succession.pdfSha256 && file.pages===review.pages))

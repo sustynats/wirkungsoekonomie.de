@@ -1,0 +1,959 @@
+{
+ "total_pages": 21977,
+ "real_pages": 19784,
+ "depth_hist": {
+  "2": 7428,
+  "1": 76,
+  "nicht erreichbar": 2317,
+  "0": 1,
+  "3": 2834,
+  "4": 6306,
+  "5": 181,
+  "6+": 641
+ },
+ "sitemap_resolved": 5160,
+ "areas": {
+  "bibliothek": {
+   "pages": 12022,
+   "real": 10813,
+   "d1": 1,
+   "depth_sum": 32633,
+   "reached": 9874,
+   "header": 10813,
+   "d2": 3148,
+   "bread": 10531,
+   "sitemap": 4,
+   "stubs": 1209,
+   "d3": 584,
+   "noindex": 784,
+   "d4": 6121,
+   "unreached": 939,
+   "no_inbound": 4,
+   "d5": 20
+  },
+  "begriffe": {
+   "pages": 2321,
+   "real": 2162,
+   "d1": 1,
+   "depth_sum": 4323,
+   "reached": 2162,
+   "header": 2162,
+   "sitemap": 2162,
+   "d2": 2161,
+   "bread": 2161,
+   "stubs": 159
+  },
+  "referenz": {
+   "pages": 1672,
+   "real": 1664,
+   "d1": 2,
+   "depth_sum": 4858,
+   "reached": 1664,
+   "header": 1664,
+   "d2": 130,
+   "bread": 1662,
+   "stubs": 8,
+   "d3": 1532,
+   "sitemap": 1
+  },
+  "quellenarchiv": {
+   "pages": 1487,
+   "real": 1487,
+   "d1": 7,
+   "depth_sum": 2663,
+   "reached": 1335,
+   "header": 1487,
+   "sitemap": 1335,
+   "d2": 1328,
+   "bread": 1486,
+   "unreached": 152,
+   "no_inbound": 152
+  },
+  "wirkungsticker": {
+   "pages": 1045,
+   "real": 1045,
+   "unreached": 95,
+   "no_inbound": 83,
+   "header": 1045,
+   "noindex": 39,
+   "d1": 1,
+   "depth_sum": 6227,
+   "reached": 950,
+   "sitemap": 921,
+   "d6+": 641,
+   "bread": 953,
+   "d4": 122,
+   "d5": 120,
+   "d3": 45,
+   "d2": 21
+  },
+  "news": {
+   "pages": 712,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "bread": 1,
+   "header": 1,
+   "sitemap": 1,
+   "stubs": 711
+  },
+  "woek-id-register": {
+   "pages": 681,
+   "real": 681,
+   "d2": 1,
+   "depth_sum": 5,
+   "reached": 2,
+   "bread": 681,
+   "header": 681,
+   "sitemap": 2,
+   "unreached": 679,
+   "no_inbound": 621,
+   "d3": 1
+  },
+  "wirkungsradar": {
+   "pages": 661,
+   "real": 633,
+   "d1": 2,
+   "depth_sum": 747,
+   "reached": 269,
+   "bread": 593,
+   "header": 633,
+   "d2": 148,
+   "unreached": 364,
+   "no_inbound": 305,
+   "d4": 14,
+   "d3": 66,
+   "d5": 39,
+   "noindex": 165,
+   "stubs": 28
+  },
+  "wirkungsfelder": {
+   "pages": 279,
+   "real": 265,
+   "d1": 6,
+   "depth_sum": 707,
+   "reached": 265,
+   "header": 265,
+   "sitemap": 223,
+   "d2": 76,
+   "bread": 264,
+   "d3": 183,
+   "noindex": 25,
+   "stubs": 14
+  },
+  "blog": {
+   "pages": 180,
+   "real": 177,
+   "d2": 172,
+   "depth_sum": 348,
+   "reached": 176,
+   "bread": 177,
+   "header": 177,
+   "d1": 4,
+   "sitemap": 30,
+   "stubs": 3,
+   "unreached": 1
+  },
+  "portale": {
+   "pages": 179,
+   "real": 179,
+   "d3": 146,
+   "depth_sum": 570,
+   "reached": 179,
+   "bread": 179,
+   "header": 179,
+   "sitemap": 179,
+   "d4": 33
+  },
+  "methodenraum": {
+   "pages": 157,
+   "real": 157,
+   "d3": 155,
+   "depth_sum": 469,
+   "reached": 157,
+   "bread": 157,
+   "header": 157,
+   "d2": 2
+  },
+  "werkzeuge": {
+   "pages": 101,
+   "real": 99,
+   "d1": 5,
+   "depth_sum": 202,
+   "reached": 94,
+   "header": 99,
+   "sitemap": 87,
+   "unreached": 5,
+   "no_inbound": 4,
+   "noindex": 4,
+   "d2": 74,
+   "bread": 96,
+   "stubs": 2,
+   "d3": 12,
+   "d4": 2,
+   "d5": 1
+  },
+  "werkstatt": {
+   "pages": 76,
+   "real": 66,
+   "d2": 35,
+   "depth_sum": 163,
+   "reached": 66,
+   "header": 66,
+   "sitemap": 56,
+   "bread": 65,
+   "d3": 31,
+   "stubs": 10
+  },
+  "verstehen": {
+   "pages": 63,
+   "real": 54,
+   "d1": 3,
+   "depth_sum": 134,
+   "reached": 54,
+   "header": 54,
+   "stubs": 9,
+   "d2": 22,
+   "bread": 50,
+   "sitemap": 50,
+   "d3": 29
+  },
+  "api": {
+   "pages": 38,
+   "real": 38,
+   "unreached": 38,
+   "no_inbound": 38,
+   "header": 9,
+   "noindex": 9
+  },
+  "(root)": {
+   "pages": 29,
+   "real": 26,
+   "d2": 11,
+   "depth_sum": 32,
+   "reached": 22,
+   "header": 26,
+   "noindex": 4,
+   "d1": 10,
+   "sitemap": 18,
+   "unreached": 4,
+   "no_inbound": 4,
+   "d0": 1,
+   "stubs": 3,
+   "bread": 2
+  },
+  "dokumente": {
+   "pages": 28,
+   "real": 28,
+   "d2": 13,
+   "depth_sum": 71,
+   "reached": 28,
+   "header": 28,
+   "d3": 15,
+   "bread": 26,
+   "noindex": 5
+  },
+  "erleben": {
+   "pages": 26,
+   "real": 25,
+   "d1": 1,
+   "depth_sum": 47,
+   "reached": 24,
+   "header": 25,
+   "sitemap": 18,
+   "d2": 23,
+   "bread": 15,
+   "unreached": 1,
+   "no_inbound": 1,
+   "stubs": 1
+  },
+  "wirkungssteuerung": {
+   "pages": 20,
+   "real": 20,
+   "d2": 8,
+   "depth_sum": 51,
+   "reached": 20,
+   "bread": 20,
+   "header": 20,
+   "d3": 8,
+   "d1": 2,
+   "d5": 1,
+   "sitemap": 1,
+   "d4": 1
+  },
+  "fuer": {
+   "pages": 19,
+   "real": 19,
+   "d2": 11,
+   "depth_sum": 28,
+   "reached": 17,
+   "header": 19,
+   "sitemap": 15,
+   "d1": 6,
+   "unreached": 2,
+   "no_inbound": 2,
+   "noindex": 1,
+   "bread": 3
+  },
+  "assets": {
+   "pages": 19,
+   "real": 15,
+   "unreached": 15,
+   "no_inbound": 11,
+   "header": 11,
+   "bread": 2,
+   "stubs": 4
+  },
+  "ordnung": {
+   "pages": 14,
+   "real": 14,
+   "d3": 5,
+   "depth_sum": 41,
+   "reached": 12,
+   "header": 14,
+   "sitemap": 7,
+   "unreached": 2,
+   "no_inbound": 2,
+   "d2": 1,
+   "d4": 6,
+   "bread": 1
+  },
+  "quellen": {
+   "pages": 10,
+   "real": 10,
+   "d4": 5,
+   "depth_sum": 35,
+   "reached": 10,
+   "header": 10,
+   "d3": 5
+  },
+  "downloads": {
+   "pages": 10,
+   "real": 10,
+   "d3": 10,
+   "depth_sum": 30,
+   "reached": 10,
+   "bread": 10,
+   "header": 10,
+   "sitemap": 10
+  },
+  "akademie": {
+   "pages": 9,
+   "real": 8,
+   "d2": 5,
+   "depth_sum": 13,
+   "reached": 6,
+   "header": 8,
+   "sitemap": 6,
+   "stubs": 1,
+   "unreached": 2,
+   "no_inbound": 2,
+   "bread": 2,
+   "d3": 1
+  },
+  "podcast": {
+   "pages": 9,
+   "real": 9,
+   "d1": 1,
+   "depth_sum": 17,
+   "reached": 9,
+   "bread": 9,
+   "header": 9,
+   "d2": 8
+  },
+  "wirkungswissenschaften": {
+   "pages": 8,
+   "real": 8,
+   "d1": 1,
+   "depth_sum": 15,
+   "reached": 8,
+   "header": 8,
+   "sitemap": 1,
+   "d2": 7
+  },
+  "w": {
+   "pages": 8,
+   "real": 8,
+   "d2": 6,
+   "depth_sum": 14,
+   "reached": 8,
+   "bread": 8,
+   "header": 8,
+   "d1": 2
+  },
+  "en": {
+   "pages": 7,
+   "real": 7,
+   "d1": 1,
+   "depth_sum": 15,
+   "reached": 7,
+   "header": 7,
+   "sitemap": 7,
+   "d2": 4,
+   "d3": 2,
+   "bread": 3
+  },
+  "wissen": {
+   "pages": 6,
+   "real": 6,
+   "unreached": 4,
+   "no_inbound": 2,
+   "header": 6,
+   "sitemap": 1,
+   "d3": 1,
+   "depth_sum": 4,
+   "reached": 2,
+   "d1": 1
+  },
+  "institut": {
+   "pages": 5,
+   "real": 5,
+   "d1": 5,
+   "depth_sum": 5,
+   "reached": 5,
+   "bread": 5,
+   "header": 5,
+   "sitemap": 4
+  },
+  "sdg-plus": {
+   "pages": 4,
+   "real": 3,
+   "d2": 2,
+   "depth_sum": 8,
+   "reached": 3,
+   "bread": 2,
+   "header": 3,
+   "sitemap": 3,
+   "d4": 1,
+   "stubs": 1
+  },
+  "methodik": {
+   "pages": 4,
+   "real": 4,
+   "d1": 3,
+   "depth_sum": 5,
+   "reached": 4,
+   "bread": 1,
+   "header": 4,
+   "sitemap": 4,
+   "d2": 1
+  },
+  "umfragen": {
+   "pages": 3,
+   "real": 3,
+   "d1": 1,
+   "depth_sum": 5,
+   "reached": 3,
+   "bread": 3,
+   "header": 3,
+   "sitemap": 3,
+   "d2": 2
+  },
+  "journal": {
+   "pages": 2,
+   "stubs": 1,
+   "real": 1,
+   "d3": 1,
+   "depth_sum": 3,
+   "reached": 1,
+   "bread": 1,
+   "header": 1
+  },
+  "oeffentlicher-wirkungsraum": {
+   "pages": 2,
+   "real": 2,
+   "d1": 1,
+   "depth_sum": 3,
+   "reached": 2,
+   "bread": 2,
+   "header": 2,
+   "d2": 1
+  },
+  "discord": {
+   "pages": 2,
+   "real": 2,
+   "unreached": 2,
+   "no_inbound": 2,
+   "header": 2,
+   "noindex": 2
+  },
+  "anwendungen": {
+   "pages": 2,
+   "stubs": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "intern": {
+   "pages": 2,
+   "real": 2,
+   "unreached": 2,
+   "no_inbound": 2,
+   "header": 2,
+   "noindex": 2
+  },
+  "newsletter": {
+   "pages": 2,
+   "real": 2,
+   "unreached": 2,
+   "no_inbound": 2,
+   "header": 2,
+   "noindex": 2
+  },
+  "daten": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "lernen": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "teil-iv-transformation-and-zukunft": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "leitbild": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "ueber": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "ausprobieren": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "buch": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "vorlesen": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "header": 1,
+   "noindex": 1
+  },
+  "speedtest": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "header": 1,
+   "noindex": 1
+  },
+  "app": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "bread": 1,
+   "header": 1
+  },
+  "fa-qs-und-links": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "sdg-sdgplus": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "bread": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "datenschutz": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "ueber-die-w-oek": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "afd-programm": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "faq": {
+   "pages": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "bread": 1,
+   "header": 1
+  },
+  "manifest": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "inhalt-und-strategie": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "veroeffentlichungen": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "teil-iii-anwendung-and-praxis": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "stranded-assets": {
+   "pages": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "einwaende": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "bread": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "woek-ki": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "header": 1
+  },
+  "fragen": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "header": 1
+  },
+  "so-wirkt-wirkungsoekonomie": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "bread": 1,
+   "header": 1
+  },
+  "teil-ii-methoden-and-instrumente": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "updates": {
+   "pages": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "header": 1
+  },
+  "parlament": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "bread": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "feeds": {
+   "pages": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "header": 1
+  },
+  "suche": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "impressum": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "register": {
+   "pages": 1,
+   "real": 1,
+   "d3": 1,
+   "depth_sum": 3,
+   "reached": 1,
+   "bread": 1,
+   "header": 1
+  },
+  "sustynats": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "header": 1
+  },
+  "teil-i-grundlagen": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "mein-wirkungsraum": {
+   "pages": 1,
+   "real": 1,
+   "d1": 1,
+   "depth_sum": 1,
+   "reached": 1,
+   "bread": 1,
+   "header": 1
+  },
+  "pilot-starten": {
+   "pages": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "wirkung-werte-journal": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "wirkungsoekonomie": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "website-1-0-release": {
+   "pages": 1,
+   "real": 1,
+   "d4": 1,
+   "depth_sum": 4,
+   "reached": 1,
+   "bread": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "fuer-wen": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "scorecard-dashboard": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "mitmachen": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "referenzrahmen": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "export": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "header": 1
+  },
+  "funktionsweise": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "header": 1
+  },
+  "ueber-die-woek": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "sdg-und-sdg-plus": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "evidenz": {
+   "pages": 1,
+   "real": 1,
+   "d2": 1,
+   "depth_sum": 2,
+   "reached": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "fachbibliothek": {
+   "pages": 1,
+   "real": 1,
+   "d3": 1,
+   "depth_sum": 3,
+   "reached": 1,
+   "bread": 1,
+   "header": 1,
+   "sitemap": 1
+  },
+  "w-est-g-journal": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "modell": {
+   "pages": 1,
+   "stubs": 1
+  },
+  "glossar": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "header": 1,
+   "noindex": 1
+  },
+  "zertifikat": {
+   "pages": 1,
+   "real": 1,
+   "unreached": 1,
+   "no_inbound": 1,
+   "header": 1,
+   "noindex": 1
+  }
+ },
+ "home_out": 77,
+ "sample_unreached": {
+  "(root)": [
+   "offline.html",
+   "mehr.html",
+   "404.html",
+   "styleguide.html"
+  ],
+  "woek-id-register": [
+   "woek-id-register/wok-g-128/index.html",
+   "woek-id-register/wok-p-128/index.html",
+   "woek-id-register/wok-e-174/index.html",
+   "woek-id-register/wok-s-120/index.html",
+   "woek-id-register/wok-g-117/index.html"
+  ],
+  "vorlesen": [
+   "vorlesen/index.html"
+  ],
+  "speedtest": [
+   "speedtest/index.html"
+  ],
+  "discord": [
+   "discord/wm-tippspiel/datenschutz.html",
+   "discord/wm-tippspiel/nutzungsbedingungen.html"
+  ],
+  "quellenarchiv": [
+   "quellenarchiv/wok-g-9d79a968933f/index.html",
+   "quellenarchiv/wok-g-2ed1d15fdcb3/index.html",
+   "quellenarchiv/wok-g-8edbbca73935/index.html",
+   "quellenarchiv/wok-g-0066ca12ae28/index.html",
+   "quellenarchiv/wok-g-c3b2198e9711/index.html"
+  ],
+  "sdg-sdgplus": [
+   "sdg-sdgplus/index.html"
+  ],
+  "bibliothek": [
+   "bibliothek/studienskripte/index.html",
+   "bibliothek/studienskripte/woek-g-v04/index.html",
+   "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v9/index.html",
+   "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v3/index.html",
+   "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v7/index.html"
+  ],
+  "wirkungsradar": [
+   "wirkungsradar/workshops/index.html",
+   "wirkungsradar/workshops/print/klima-energie/index.html",
+   "wirkungsradar/studio/workshop/windraeder-voegel-wald-beton-rueckbau/index.html",
+   "wirkungsradar/studio/workshop/deutschland-nur-zwei-prozent/index.html",
+   "wirkungsradar/studio/workshop/ukraine-unterstuetzung-steuergeld/index.html"
+  ],
+  "blog": [
+   "blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/index.html"
+  ],
+  "fuer": [
+   "fuer/wirkungssteuer.html",
+   "fuer/kommunen/mannheim-sdg-haushalt/index.html"
+  ],
+  "sustynats": [
+   "sustynats/index.html"
+  ],
+  "ordnung": [
+   "ordnung/fuer-buergerinnen.html",
+   "ordnung/fuer-politik.html"
+  ],
+  "wirkungsticker": [
+   "wirkungsticker/offline.html",
+   "wirkungsticker/lage/2026-09-30-mittagslage/index.html",
+   "wirkungsticker/lage/2026-10-06-morgenlage/index.html",
+   "wirkungsticker/lage/2026-10-02-abendlage/index.html",
+   "wirkungsticker/lage/2026-10-11-mittagslage/index.html"
+  ],
+  "akademie": [
+   "akademie/lernpfad.html",
+   "akademie/wirkungsradar/index.html"
+  ],
+  "api": [
+   "api/index.html",
+   "api/v1/index.html",
+   "api/v1/canvases/index.html",
+   "api/v1/methods/index.html",
+   "api/v1/capabilities/index.html"
+  ],
+  "werkzeuge": [
+   "werkzeuge/wahlkreis-wirkungscheck/index.html",
+   "werkzeuge/wirkungscheck-bundestag-v2/index.html",
+   "werkzeuge/beispiele/index.html",
+   "werkzeuge/impact-controlling/methodenpapiere/index.html",
+   "werkzeuge/impact-controlling/dossiers/index.html"
+  ],
+  "intern": [
+   "intern/video-aus-bild-und-audio/index.html",
+   "intern/studio-aufnahme-6f3d9c2a/index.html"
+  ],
+  "erleben": [
+   "erleben/wirkungsradar-demo/index.html"
+  ],
+  "newsletter": [
+   "newsletter/bestaetigen.html",
+   "newsletter/abmelden.html"
+  ],
+  "export": [
+   "export/index.html"
+  ],
+  "funktionsweise": [
+   "funktionsweise/index.html"
+  ],
+  "assets": [
+   "assets/data/document-online/nachhaltigkeitstransformation-im-handwerk.html",
+   "assets/data/document-online/nachhaltiger-einzelhandel.html",
+   "assets/data/document-online/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.html",
+   "assets/data/document-online/nachhaltiges-marketing-mix.html",
+   "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/WOeK_Rang21_Gesamtpaket_Alle_Inhalte_v1.0.html"
+  ],
+  "wissen": [
+   "wissen/index.html",
+   "wissen/sechster-kondratieff.html",
+   "wissen/methodik/index.html",
+   "wissen/themen/index.html"
+  ],
+  "glossar": [
+   "glossar/index.html"
+  ],
+  "zertifikat": [
+   "zertifikat/index.html"
+  ]
+ }
+}
