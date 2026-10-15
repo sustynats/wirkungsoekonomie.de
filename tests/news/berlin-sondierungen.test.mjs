@@ -48,6 +48,8 @@ test('Lanz revision preserves the original immutable edition, identity and chron
  assert.ok(html.includes(`https://wirkungsoekonomie.de/wirkungsticker/analyse/${old.slug}/`));
  assert.match(html,/Erstveröffentlichung: 08\.10\.2026 · Redaktionell überarbeitet: 15\.10\.2026/);
  assert.ok(html.includes(`/wirkungsticker/analyse/${fresh.slug}/`));
+ assert.ok(revised.body_markdown.includes('https://mi.sachsen-anhalt.de/api/media/VSB%202025%20Onlinefassung-e3b0c442.pdf?collection=document'));
+ assert.ok(!revised.body_markdown.includes('VSB_2025_gesamtfassung_Presse.pdf'));
  for(const arrow of ['Wirkpfad der politischen Grenzziehung','Wirkpfad für jüdisches Leben'])assert.ok(revised.body_markdown.includes(arrow));
 });
 
