@@ -13,13 +13,26 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-14T17:36:05.365Z",
+    "run": {
+      "firstSeen": "2026-10-15T06:05:40.703Z",
       "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-10-14",
+  "outbox": [
+    {
+      "id": "93929166026ec65a11c216d3",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-10-15T06:05:40.703Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "7f62c230bb062c5a97fa7db4",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-15T06:05:40.703Z"
+    },
+    {
+      "id": "583185cbee79c581207ad978",
+      "content": "WÖk Tagesbericht · 2026-10-15 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 812 live · 647 aktuelle Lagen und Einzelakten aus 670 aktiven Wirkungsakten · 7 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-10-14) 5; heute bisher 0 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-15T05:20:15.187Z; 1028 offene Prüfungen, 43 aktive Quellen.\nQueue: 1028 offen (732 Kapazität · 0 technisch · 296 redaktionell); Status draining.\nQuellen-Funnel heute: 17735 Feed-Einträge → 244 neu/aktualisiert → 388 Story-Kandidaten → 21400 geeignet → 8 KI → 6 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 390; redaktionelle Quellenbeiträge: 551.\nProduktive Quellen im letzten Lauf: stern.\nEreignischeck (begrenzter Quellenbestand): 14 größere Ereignisse · 0 mit Veröffentlichung · 14 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.97 · heute $0.15 · Monat $16.40.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 137 Erstveröffentlichungen · 579 Aktualisierungen · 1337 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 17.84 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 123 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.025; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €17.43 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Automatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\n⚠ Liegengebliebene Redaktionsauftraege: 1 Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit 2026-10-09T21:03:10.095Z; Grund: nicht vermerkt). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.\n⚠ Redaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -2673,7 +2686,7 @@
       }
     },
     "last_new_at": "2026-10-14T15:21:07.115Z",
-    "checked_at": "2026-10-15T05:51:10.524Z",
+    "checked_at": "2026-10-15T06:05:40.703Z",
     "last_current_new_at": "2026-10-14T15:21:07.115Z"
   },
   "recovery_attempts": [
