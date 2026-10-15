@@ -72,6 +72,26 @@ test("RSS uses existing chronological selection and preserves correction GUIDs",
   const xml = tickerRssFeeds([], [older, analyses[1]]).analyses;
   assert.deepEqual(guids(xml), [RSS_SITE+"/wirkungsticker/analyse/nachgehoert/", RSS_SITE+"/wirkungsticker/analyse/older/"]);
   assert.match(xml, /<lastBuildDate>Wed, 30 Sep 2026 06:00:00 GMT/);
+  const item = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].find(match => match[1].includes('<link>'+RSS_SITE+'/wirkungsticker/analyse/older/</link>'))?.[1];
+  assert.ok(item);
+  assert.match(item, /<pubDate>Mon, 28 Sep 2026 06:00:00 GMT<\/pubDate>/);
+  assert.doesNotMatch(item, /<pubDate>Wed, 30 Sep/);
+});
+
+test('RSS correction keeps 8 October publication separate from 15 October modification, with a safe legacy fallback', () => {
+  const original = '2026-10-08T14:59:20.090Z';
+  const modified = '2026-10-15T13:37:04.793Z';
+  const entry = {...analysis('original', 'approved_editorial', 'watched'), published_at:original, updated_at:modified};
+  const before = JSON.stringify(entry);
+  const feed = tickerRssFeeds([], [entry]).analyses;
+  assert.match(feed, /<pubDate>Thu, 08 Oct 2026 14:59:20 GMT<\/pubDate>/);
+  assert.match(feed, /<lastBuildDate>Thu, 15 Oct 2026 13:37:04 GMT<\/lastBuildDate>/);
+  assert.equal(JSON.stringify(entry), before);
+  for (const published_at of [undefined, '', 'not-a-date']) {
+    const legacy = renderRssFeed([{...entry,published_at}], RSS_CHANNELS.analyses);
+    assert.match(legacy, /<pubDate>Thu, 15 Oct 2026 13:37:04 GMT<\/pubDate>/);
+    assert.doesNotMatch(legacy, /Invalid Date/);
+  }
 });
 
 test("both RSS subscriptions are autodiscoverable and visibly linked in existing app routes", t => {

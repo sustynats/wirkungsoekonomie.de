@@ -31,7 +31,8 @@ export function renderRssFeed(items, channel) {
   const updated = new Date(dates.length ? Math.max(...dates) : 0).toUTCString();
   return `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>${xml(channel.title)}</title><link>${RSS_SITE}${channel.home}</link><description>${xml(channel.description)}</description><language>de-de</language><lastBuildDate>${updated}</lastBuildDate><atom:link href="${RSS_SITE}${channel.path}" rel="self" type="application/rss+xml"/>${items.map(item => {
-    const date = [item.updated_at, item.published_at].map(value => Date.parse(value)).find(Number.isFinite);
+    // A correction updates the channel, not the item's first publication.
+    const date = [item.published_at, item.updated_at].map(value => Date.parse(value)).find(Number.isFinite);
     return `<item><title>${xml(item.title)}</title><link>${xml(item.url)}</link><guid isPermaLink="true">${xml(item.url)}</guid>${date === undefined ? "" : `<pubDate>${new Date(date).toUTCString()}</pubDate>`}<description>${xml(item.summary)}</description></item>`;
   }).join("")}</channel></rss>`;
 }
