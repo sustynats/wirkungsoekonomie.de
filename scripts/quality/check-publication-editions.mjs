@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 import {validateConsistencyPdfEditions} from '../lib/consistency-pdf-editions.mjs';
+import {validateMethodikEdition} from '../lib/methodik-edition.mjs';
 const manifest=JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json','utf8'));
 const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const hygiene=JSON.parse(fs.readFileSync('assets/data/publication-hygiene-2026-09-06.json','utf8'));
 const consistency=validateConsistencyPdfEditions();
+const methodik=validateMethodikEdition();
 const finalPdfAudit=JSON.parse(fs.readFileSync('reports/consistency-20261009/pdf-publishing-metadata-final-20261013.json','utf8'));
 const finalVisualAudit=JSON.parse(fs.readFileSync('reports/consistency-20261009/pdf-production-cleanup-visual-review.json','utf8'));
 if(finalPdfAudit.issues!==0 || finalVisualAudit.status!=='PASS' || finalVisualAudit.findings?.unresolved!==0) throw new Error('Final PDF production review is incomplete');
@@ -17,6 +19,7 @@ function matchesFinalPdfReview(file,actual){
 function matchesSource(file,expected){
  const actual=hash(file);
  if(actual===expected)return true;
+ if(methodik.matchesSuccessor(file,expected))return true;
  if(consistency.matchesSuccessor(file,expected))return true;
  if(matchesFinalPdfReview(file,actual))return true;
  const correction=hygiene.sourceCorrections[file] || hygiene.localFiles[file];

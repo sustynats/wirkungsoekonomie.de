@@ -1,7 +1,8 @@
 {
-  "title": "Wie die Wirkungsökonomie prüft und bestehende Ansätze verbindet",
-  "description": "WÖk-Methodik am Busbeispiel: Wirkung ermitteln, am SDG-Rahmen bewerten und Entscheidungen verbessern. Mit DNS, GFA, eNAP, BHO und bestehenden Methoden.",
-  "reviewedAt": "2026-09-05",
+  "title": "Methodik der Wirkungsökonomie",
+  "description": "Wissenschaftliche Grundlagen, WÖk-Modelle und Prüfverfahren: von Quellen und Wirkpfaden zu begründeten Entscheidungen. Mit menschlicher Fachprüfung, Redaktion und Abnahme.",
+  "reviewedAt": "2026-10-16",
+  "pdfEdition": "woek-methodik-grundlagen-modelle-verantwortung-2026-10-16.pdf",
   "process": {
     "label": "Wirkpfad am fiktiven Busbeispiel",
     "steps": [
@@ -28,6 +29,20 @@
       ["Nachhaltigkeitsberichte, ESRS/GRI und Produktdaten", "Strukturierte Angaben zu Tätigkeiten, Risiken, Auswirkungen und Wertschöpfung liefern.", "Diese Angaben sind Quellen für die Prüfung. Berichts-, Einheiten- und Bilanzgrenzen werden offengelegt; ein Bericht ersetzt weder den Kausalnachweis noch die nachfolgende Entscheidung."],
       ["Lebenszyklusanalysen und Kosten-Nutzen-Verfahren", "Umweltfolgen entlang eines Lebenswegs beziehungsweise bewertbare Nutzen und Kosten systematisch erfassen.", "Fachmethoden bleiben erhalten. Die WÖk verbindet ihre Ergebnisse mit Verteilung, Resilienz und Schutzgrenzen. Unterschiedliche Einheiten werden nicht ungeprüft zu einem Score addiert."],
       ["Management, Beschaffung und Kapitalallokation", "Ziele umsetzen, Verantwortung zuweisen, Ressourcen verteilen und Leistung kontrollieren.", "WÖMM und WÖMS sollen Bewertung mit Entscheidung und Lernen verbinden: Wer ändert nach welchem Befund welche Regel, Investition oder Maßnahme?"]
+    ]
+  },
+  "models": {
+    "caption": "Die WÖk-Bausteine und ihre unterschiedlichen Aufgaben",
+    "columns": ["Baustein", "Aufgabe", "Anwendung und Grenze"],
+    "rows": [
+      ["Wirkungsökonomie", "Wirtschafts- und Gesellschaftsmodell: Erkenntnisse über Folgen werden mit Entscheidungen, Institutionen und Anreizen verbunden.", "Umfasst Wirtschaft, Staat, Medien, Wohnen, Gesundheit, Pflege, Bildung und Demokratie. Einzelne Instrumente bilden jeweils Ausschnitte ab."],
+      ["WÖk-Wirkungsarchitektur und Wirkpfad", "Verbindet Problem- und Zielprüfung, A → M → ΔZ → R, Evidenz, Schutz, Optionsvergleich, Rückkopplung und Lernen.", "Wirkungen erster bis dritter Ordnung, Kaskaden, Verteilung, Resilienz und Gegenfaktum werden am konkreten Gegenstand geprüft. Ein plausibler Pfad bleibt bis zum Beleg eine Hypothese."],
+      ["WÖMM - Wirkungsökonomisches Managementmodell", "Ordnet Organisationen als lernende Wirkungssysteme und beschreibt Führung, Entscheidungen, Governance und Reifegrad.", "Konkretisiert, wer nach welchen Befunden eine Entscheidung verändert. Führungsverantwortung bleibt bei Menschen."],
+      ["WÖMS - Wirkungsökonomisches Methodensystem", "Operationalisiert das Managementmodell mit versionierten Methoden, Qualitätsregeln, Schutzlinien und definierten Ergebnissen.", "Die passende Methode wird für die konkrete Frage gewählt. Ein Methodenkatalog ersetzt kein Untersuchungsdesign und keine fachliche Prüfung."],
+      ["WÖk-ID und Datenordnung", "Verknüpfen Prüfgegenstände, Zustandsgrößen, Indikatoren, Quellen und Beobachtungen nachvollziehbar.", "Eine Kennung ist kein Messwert. Einheit, Bezugsgröße, Zeitraum, Raum, Datenqualität und Quellenrolle bleiben erforderlich."],
+      ["Scorecard und WÖk-Netto-Wirkungsindex", "Ordnen und verdichten ein nichtmonetäres Wirkungsprofil nach begründeten Maßstäben.", "Daten, Bewertung und Schutzprüfung bleiben unterscheidbar. Nichtkompensation schützt harte Grenzen; Reverse Merit Order begrenzt Bewertungen bei kritischen Defiziten."],
+      ["IOI und T-SROI", "Setzen geprüften monetarisierten Nettonutzen zum Ressourceneinsatz ins Verhältnis. T-SROI bezieht zusätzlich separat belegte transformative Nutzenströme ein.", "Euro-zu-Euro-Verhältnisse mit begründeten System- und Zeitgrenzen. Nichtmonetäre Folgen und Schutzbedingungen bleiben eigenständige Befunde."],
+      ["Rückkopplungsinstrumente", "Verbinden Befunde etwa mit Management, Beschaffung, Haushalten, Kapital, Preisen, Wirkungssteuer oder Wirkungsfonds.", "Welche Folge eine Bewertung auslöst, braucht eine eigene begründete Regel und Zuständigkeit. Gesetzesmodelle sind Vorschläge, keine bereits geltenden Tarife."]
     ]
   },
   "feedback": {

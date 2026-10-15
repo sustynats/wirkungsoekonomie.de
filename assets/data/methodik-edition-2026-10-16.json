@@ -1,0 +1,51 @@
+{
+  "reviewedAt": "2026-10-16",
+  "releaseTag": "woek-methodik-2026-10-16",
+  "sourceHashes": {
+    "content/site/methodik.json": "e033a9eb842d0311d176b7be5299b1ff837394555b052686656c4566f68318e8",
+    "content/site/methodik.inc": "8868be94d08be8e3d92c5d43eb32f4898bd78fb3eeb247297eb94b7b338bb6e5",
+    "scripts/site/build-methodik-explainer.mjs": "2de62ff1e41c8ad00685d3551966446ebb08c0295aae1666aaa18b32cf476c72",
+    "scripts/publications/build-methodik-edition.py": "dcdef1b3dfccc7a8160d9f177375eb21233d0c5629b3f7f1d5556339e9b3a95b",
+    "scripts/publications/build-site-review-pdfs.py": "34b14def995f714d99b2d8ad107068e84732edfbbb73b4d2b86a8b9e94c29f67"
+  },
+  "sourceSuccessions": {
+    "content/site/methodik.json": {
+      "archive": "source-assets/history/methodik-20261016/methodik.json",
+      "predecessorSha256": "7713f8d97dffad2914fc5d51383154e4625c2a8c079429e1053a028f752c9a77",
+      "currentSha256": "e033a9eb842d0311d176b7be5299b1ff837394555b052686656c4566f68318e8"
+    },
+    "content/site/methodik.inc": {
+      "archive": "source-assets/history/methodik-20261016/methodik.inc",
+      "predecessorSha256": "86b5bb1b5a9436652ed973a3687e1abfb5183e777906c9702070a9851000e320",
+      "currentSha256": "8868be94d08be8e3d92c5d43eb32f4898bd78fb3eeb247297eb94b7b338bb6e5"
+    }
+  },
+  "visualReview": "reports/methodik-20261016/pdf-visual-review.json",
+  "sourceReview": "reports/methodik-20261016/pdf-source-verification.json",
+  "files": [
+    {
+      "filename": "woek-methodik-grundlagen-modelle-verantwortung-2026-10-16.pdf",
+      "title": "Methodik der Wirkungsökonomie",
+      "kind": "explainer",
+      "source": "source-assets/generated/methodik-20261016/pdf/woek-methodik-grundlagen-modelle-verantwortung-2026-10-16.pdf",
+      "sha256": "f341d37ccbc34d4ee94c63916639b82d9af6ecaf88c3a8a307874aa28e4b0968",
+      "bytes": 78125,
+      "pages": 9,
+      "supersedes": "woek-methodik-integration-2026-09-05.pdf",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-methodik-2026-10-16/woek-methodik-grundlagen-modelle-verantwortung-2026-10-16.pdf"
+    }
+  ],
+  "webProjection": {
+    "source": "scripts/site/build-reference-update.mjs",
+    "archive": "source-assets/history/methodik-20261016/build-reference-update.mjs",
+    "beforeSha256": "9fd10ff31e32968d2877509a71e723e9bb99979cfe42fbef90f662d81830819e",
+    "afterSha256": "05b0e3e5ff91f801f3e18dc7da416e1a129e5f32640175d77ec0977fa059367b",
+    "guideArchive": "source-assets/history/methodik-20261016/build-reference-update-20261012.mjs",
+    "guideSha256": "3f14b7e3b1c1c2af1cf767ccee1c88fcc70b5390c99090ffa6a68643ebde7492",
+    "scope": "Only the PDF access cards and their edition dates; reference prose and PDF inputs retained",
+    "unchangedPdfInputs": {
+      "content/site/reference-update.json": "840ce74c79a90fd6b94aef760b4168e4eafcd25d20806b0db3f5c64e1a325ab2",
+      "scripts/publications/build-guide-reference-pdf.py": "9f1d790f845f44e11c8f389ce264f52dcce68d57a17a23116ec908438827a7c4"
+    }
+  }
+}

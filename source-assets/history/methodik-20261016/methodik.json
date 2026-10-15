@@ -1,0 +1,38 @@
+{
+  "title": "Wie die Wirkungsökonomie prüft und bestehende Ansätze verbindet",
+  "description": "WÖk-Methodik am Busbeispiel: Wirkung ermitteln, am SDG-Rahmen bewerten und Entscheidungen verbessern. Mit DNS, GFA, eNAP, BHO und bestehenden Methoden.",
+  "reviewedAt": "2026-09-05",
+  "process": {
+    "label": "Wirkpfad am fiktiven Busbeispiel",
+    "steps": [
+      {"symbol": "A", "title": "Auslöser", "text": "Eine Gemeinde bestellt einen zusätzlichen Abendbus. Das ist zunächst eine Entscheidung."},
+      {"symbol": "M", "title": "Mechanismus", "text": "Der Bus könnte Menschen ohne Auto den Weg zur Arbeit erleichtern. Fahrplan, Anschlüsse und Preis entscheiden mit."},
+      {"symbol": "ΔZ", "title": "Zustandsveränderung", "text": "Erreichen mehr Menschen ihre Arbeitsstelle? Entfallen Autofahrten? Welche zusätzlichen Emissionen entstehen?"},
+      {"symbol": "R", "title": "Referenz", "text": "Teilhabe, Klima und Zugang werden an begründeten Zielen und Schutzgrenzen eingeordnet. Ein SDG-Symbol allein reicht nicht."}
+    ],
+    "caption": "A → M → ΔZ → R: Auslöser, Mechanismus, Zustandsveränderung, Referenz. Die Pfeile sind zu prüfende Beziehungen. Sie beweisen noch keine Kausalität."
+  },
+  "examples": [
+    {"label": "Leistung", "title": "Der Bus fährt", "text": "Zehn zusätzliche Fahrten zeigen, was geliefert wurde: einen Output. Daraus folgt noch nicht, dass Menschen besser ankommen."},
+    {"label": "Veränderung", "title": "Menschen kommen an", "text": "Kürzere Wegezeiten oder besser erreichbare Arbeitsplätze wären relevante Veränderungen. Vor der Umsetzung sind sie Erwartungen; danach brauchen sie Beobachtungsdaten."},
+    {"label": "Zurechnung", "title": "Was hat der Bus bewirkt?", "text": "Vielleicht hat zugleich ein Arbeitgeber seine Schichtzeiten geändert. Ein Vergleich mit der Entwicklung ohne das Angebot hilft, den Beitrag des Busses einzugrenzen."}
+  ],
+  "integration": {
+    "caption": "Bestehende Ansätze und ihre Anschlussstellen in der WÖk",
+    "columns": ["Ansatz", "Was er beiträgt", "Wie die WÖk daran anschließt"],
+    "rows": [
+      ["Agenda 2030 und SDGs", "Globaler Zielrahmen mit miteinander verbundenen Zielen und dem Anspruch, niemanden zurückzulassen.", "Ziele werden für den konkreten Fall übersetzt. Positive und negative Zustandsveränderungen, Zielkonflikte und Schutzgrenzen bleiben getrennt sichtbar. SDG+ ist eine eigene Ergänzung der WÖk."],
+      ["DNS, GFA, eNAP/eGFA und Haushaltsprüfung", "Staatliche Ziele, Prüfung von Folgen und Alternativen, Dokumentation sowie Monitoring und Erfolgskontrolle im jeweiligen Anwendungsbereich.", "Vorhandene Prüfungen werden mit Quellenstatus übernommen und einem unabhängigen WÖk-Befund gegenübergestellt. Übereinstimmung ist ein zulässiges Ergebnis."],
+      ["Theory of Change und IOOI", "Annahmen und eine Ergebniskette von Ressourcen und Leistungen zu Veränderungen strukturieren.", "Optionaler Anschluss für einzelne Wirkungspfade. Die WÖk betrachtet außerdem Unterlassen, Wechselwirkungen, Kaskaden, Referenzräume und institutionelle Rückkopplung."],
+      ["Evaluation und kausale Forschung", "Zielerreichung, Wirksamkeit, Kohärenz und Beitrag einer Maßnahme untersuchen; Gegenfaktum und Unsicherheit begründen.", "Evidenz wird passend zur Aussage verwendet. Beobachtung, plausible Erklärung und belastbare Zurechnung erhalten unterschiedliche Aussagekraft."],
+      ["Nachhaltigkeitsberichte, ESRS/GRI und Produktdaten", "Strukturierte Angaben zu Tätigkeiten, Risiken, Auswirkungen und Wertschöpfung liefern.", "Diese Angaben sind Quellen für die Prüfung. Berichts-, Einheiten- und Bilanzgrenzen werden offengelegt; ein Bericht ersetzt weder den Kausalnachweis noch die nachfolgende Entscheidung."],
+      ["Lebenszyklusanalysen und Kosten-Nutzen-Verfahren", "Umweltfolgen entlang eines Lebenswegs beziehungsweise bewertbare Nutzen und Kosten systematisch erfassen.", "Fachmethoden bleiben erhalten. Die WÖk verbindet ihre Ergebnisse mit Verteilung, Resilienz und Schutzgrenzen. Unterschiedliche Einheiten werden nicht ungeprüft zu einem Score addiert."],
+      ["Management, Beschaffung und Kapitalallokation", "Ziele umsetzen, Verantwortung zuweisen, Ressourcen verteilen und Leistung kontrollieren.", "WÖMM und WÖMS sollen Bewertung mit Entscheidung und Lernen verbinden: Wer ändert nach welchem Befund welche Regel, Investition oder Maßnahme?"]
+    ]
+  },
+  "feedback": {
+    "title": "Nach der Entscheidung beginnt die nächste Prüfung",
+    "text": "Im Busbeispiel werden Nutzung, Erreichbarkeit, Emissionen und Kosten nach einer vorher festgelegten Frist geprüft. Bei schlechten Anschlüssen kann ein geänderter Fahrplan mehr helfen als zusätzliche Fahrten. Auch eine verworfene Annahme ist ein wichtiges Ergebnis.",
+    "action": "Beobachten → Annahmen prüfen → Entscheidung anpassen → erneut beobachten. Ein veröffentlichter Bericht wird erst durch eine solche Reaktion zur Rückkopplung."
+  }
+}
