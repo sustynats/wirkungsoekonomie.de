@@ -19,14 +19,23 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-15T12:50:47.238Z",
-      "active": false
+      "active": true
     },
     "publication": {
       "firstSeen": "2026-10-15T12:50:47.238Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4a65198071014e291c5bfefe",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 5 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-15T12:50:47.238Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "1a4b71b3851e428512b990ab",
+      "content": "⚠ WÖk-Betriebsstörung\nVeröffentlichung: 1 sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.\nSeit: 2026-10-15T12:50:47.238Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2681,7 +2690,7 @@
       }
     },
     "last_new_at": "2026-10-14T15:21:07.115Z",
-    "checked_at": "2026-10-15T12:50:47.238Z",
+    "checked_at": "2026-10-15T13:06:12.395Z",
     "last_current_new_at": "2026-10-14T15:21:07.115Z"
   },
   "recovery_attempts": [
