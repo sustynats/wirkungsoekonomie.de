@@ -46,6 +46,13 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Interne Produktionsnotizen und lokale Dateipfade gehören nicht in veröffentlichte Inhalte oder Metadaten.
 - Vor Veröffentlichung sind Texte, PDF-Inhalte, Office-Dateien, Metadaten und Download-Fassungen zu prüfen. Technische Bereinigungen historischer Publikationen werden mit Datum und Prüfsummen dokumentiert; Originale bleiben im privaten Archiv erhalten.
 
+## Menschliche Fachverantwortung und KI-Unterstützung
+
+- Nutzerentscheidung vom 16.10.2026 für die gesamte Wirkungsökonomie: Fachliche Beurteilung, redaktionelle Bearbeitung, Abnahme und abschließende Entscheidung liegen beim Menschen. KI dient vor allem der Effizienz und unterstützt Recherche, Strukturierung, Datenaufbereitung, Vergleiche, Rechenprüfungen und Entwürfe.
+- Fragestellung, Methodenwahl, Bewertungsmaßstäbe, fachliche Einordnung und Verantwortung bleiben menschliche Aufgaben. KI-Vorschläge sind Arbeitsmaterial und kein eigenständiger wissenschaftlicher Beleg; eine technische Prüfung ersetzt keine fachliche oder redaktionelle Abnahme.
+- Eine menschliche Einzelfreigabe oder redaktionelle Prüfung darf nur behauptet werden, wenn sie für die konkrete Fassung belegt ist. Historischen Inhalten keine persönliche Prüfung oder Zustimmung nachträglich zuschreiben. Rollen und tatsächlich durchgeführte Prüfungen nachvollziehbar halten.
+- Wissenschaftliche Anschlussquellen, eigene Modellentscheidungen, normative Maßstäbe und empirische Nachweise unterscheiden. Aus Quellenbezug, einem Methodennamen oder einem bestandenen Build keine Zertifizierung oder Validierung des Gesamtmodells ableiten.
+
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
 - Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Wirtschaft, Staat, Institutionen und gesellschaftliches Zusammenleben gehören zu ihrem Gegenstandsbereich; einzelne Instrumente bilden nur Ausschnitte ab.

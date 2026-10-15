@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "reviewedAt": "2026-10-16",
+  "reviewKind": "rendered-page visual inspection by Codex; no human professional acceptance asserted",
+  "pdfSha256": "f341d37ccbc34d4ee94c63916639b82d9af6ecaf88c3a8a307874aa28e4b0968",
+  "renderCommand": "pdftoppm -r 100 -png",
+  "pages": [
+    {
+      "page": 1,
+      "pngSha256": "c892a882222b8b509867fcd2533216db3c7c643ba70b08e7a1eaeaca95926c29",
+      "visualReview": "PASS",
+      "observation": "Titel, Institutszeile, Datum und Busbeispiel lesbar; keine Überlagerung oder abgeschnittene Zeile."
+    },
+    {
+      "page": 2,
+      "pngSha256": "c8d3de05e17fb2cd1b516f6ed7b111435f9ff967da8989573205b04603ecc89b",
+      "visualReview": "PASS",
+      "observation": "Vier Prozesskarten vollständig; wissenschaftliche Grundlagen und Quellenlinks lesbar."
+    },
+    {
+      "page": 3,
+      "pngSha256": "0b382b76b0ea646e04f7c634ed786e99213e00de10cadc13bf59da1de0ab427c",
+      "visualReview": "PASS",
+      "observation": "Grundlagen und Modellabgrenzung vollständig; Tabelle mit klarer Kopfzeile und sauberem Seitenumbruch."
+    },
+    {
+      "page": 4,
+      "pngSha256": "f1484a8712f5041f2c513986e940c6866de3f938c4937df6bfd42d3424ba31d7",
+      "visualReview": "PASS",
+      "observation": "Modelltabelle einschließlich WÖMS, Kennzahlen und Rückkopplung lesbar; keine Kollisionen."
+    },
+    {
+      "page": 5,
+      "pngSha256": "922805b6ed4bd915b3364f2c564922b1c1e77d79fa0b2a943bb1404f4d725f50",
+      "visualReview": "PASS",
+      "observation": "Prüfschritte und Rückkopplung vollständig; Integrationstabelle beginnt mit lesbarer Kopfzeile."
+    },
+    {
+      "page": 6,
+      "pngSha256": "9e1bbc2100dbdd7da1bd36186f35c5687c2be27d6d846dde1680c14330c63fda",
+      "visualReview": "PASS",
+      "observation": "Integrationstabelle und staatliche Referenzarchitektur vollständig; Tabellenfortsetzung verständlich."
+    },
+    {
+      "page": 7,
+      "pngSha256": "5da76a971f24082b396fea3d8afdb48641a6e219f236b83453b1f6c7ab2b6cd5",
+      "visualReview": "PASS",
+      "observation": "BHO, Vergleich, materielle Relevanz und Referenzräume lesbar; ausgeklappte Erläuterungen enthalten."
+    },
+    {
+      "page": 8,
+      "pngSha256": "62394498e9a3d710cf7ee10788f9c0d86af4cc53b99186c31110ac14944f80e7",
+      "visualReview": "PASS",
+      "observation": "Menschliche Fachprüfung, Redaktion, Abnahme und Entscheidung vollständig und deutlich lesbar."
+    },
+    {
+      "page": 9,
+      "pngSha256": "26073da473c3e94c5d1a789792468269f944d0a6bbe90c4b100e1899d99b77c5",
+      "visualReview": "PASS",
+      "observation": "Qualität, Grenzen, Quellen, Leitfadenstand und Autor lesbar; Fußzeile korrekt."
+    }
+  ],
+  "humanProfessionalAcceptance": "not asserted by this technical and visual report"
+}
