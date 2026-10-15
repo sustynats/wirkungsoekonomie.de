@@ -118,7 +118,7 @@ assert(
 assert(projection.historical_curriculum.version === "3.2", "historische v3.2-Referenz fehlt");
 assert(projection.historical_curriculum.archive_commit === "4d93bbefc3a7249ff27fc0f2ebbcf0493354a13a", "v3.2-Archiv-SHA-Drift");
 
-console.log("ACADEMY_SCRIPT_MASTER_MIRROR_PARITY: PASS (178/178 committed sanitized public lectures)");
+console.log("ACADEMY_COMMITTED_PUBLIC_MASTER_INTEGRITY: PASS (178/178 committed sanitized public lectures)");
 console.log("PUBLIC_ACADEMY_CURRICULUM_DERIVED_FROM_CANON: PASS (10/40/120)");
 console.log("ACADEMY_OFFERING_CATALOG_WEB_APP_PARITY: PASS (6 offerings / 58 lectures)");
 console.log("PUBLIC_ACADEMY_ASSESSMENT_VERSION_MATCH: PASS (10 + 4 metadata-only)");

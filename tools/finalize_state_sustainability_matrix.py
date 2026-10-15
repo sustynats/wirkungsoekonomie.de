@@ -106,7 +106,20 @@ def source_plain_text(rel: str) -> str:
 
 def material_state_absence_claim(rel: str) -> bool:
     text = source_plain_text(rel)
-    return any(pattern.search(text) for pattern in MATERIAL_STATE_ABSENCE_PATTERNS)
+    for pattern in MATERIAL_STATE_ABSENCE_PATTERNS:
+        for match in pattern.finditer(text):
+            # Teaching may explicitly reject this very inference. A nearby
+            # unrelated negation, or another asserted denial, does not clear it.
+            prefix = text[max(0, match.start() - 150):match.start()]
+            rejected = re.search(
+                r"\b(?:unzulässig|falsch|unbelegt|irreführend)\s+(?:wäre|ist)\s+"
+                r"(?:(?:daher|deshalb)\s+)?(?:der\s+)?"
+                r"(?:schluss|die\s+behauptung|zu\s+behaupten)\b[^.!?]{0,110}$",
+                prefix, re.I,
+            )
+            if not rejected:
+                return True
+    return False
 
 
 def has_visible_state_method_note(rel: str) -> bool:

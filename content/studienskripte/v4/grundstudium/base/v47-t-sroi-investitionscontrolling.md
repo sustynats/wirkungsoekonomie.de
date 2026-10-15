@@ -81,7 +81,7 @@ Sie brauchen:
 
 ## 4. Was T-SROI ergänzen soll
 
-WÖk-T-SROI steht für eine **Transformations-/Total-Impact-orientierte Erweiterungsidee**.
+WÖk-T-SROI bezeichnet die **transformationsbezogene Erweiterung des Social Return on Investment**. Nach dem T-SROI-Rechenstandard v1.1 gehen direkte und separat belegte transformative Nutzenströme in die diskontierte Netto-Nutzenrechnung ein. Datenqualität und Schutzgrenzen sind Prüfbedingungen, keine Nutzenmultiplikatoren.
 
 Zusätzliche Perspektiven können sein:
 
@@ -220,6 +220,8 @@ SROI existiert unabhängig von WÖk. T-SROI ist eine WÖk-Hypothese zur Erweiter
 
 ## 13. Quellen
 
+- T-SROI-Rechenstandard v1.1, Rechenformel und Nutzenströme: https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/
+
 - Social Value International, Guide to SROI: https://www.socialvalueint.org/guide-to-sroi
 - Impact Frontiers: https://impactfrontiers.org/
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
@@ -271,7 +273,7 @@ Der Merksatz lautet:
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
 
 ### NWI und T-SROI eindeutig benennen
 

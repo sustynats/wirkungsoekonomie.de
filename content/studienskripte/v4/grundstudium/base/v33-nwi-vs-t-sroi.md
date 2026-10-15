@@ -76,7 +76,7 @@ Dabei interessieren zusätzlich:
 - langfristige Pfadabhängigkeit,
 - Transformationsfähigkeit statt nur kurzfristigem Nutzen.
 
-Das ist anspruchsvoller als „Euro sozialer Wert pro investiertem Euro“.
+Der aktuelle WÖk-T-SROI ist ein Euro-zu-Euro-Verhältnis: diskontierter, kausal begrenzter direkter und separat belegter transformativer Netto-Nutzen geteilt durch diskontierte Ressourcen. Nicht monetarisierbare Befunde bleiben daneben sichtbar. Ein allgemeiner empirischer Überlegenheitsnachweis gegenüber SROI folgt daraus nicht.
 
 ## 4. Klassischer SROI: Gegenfaktum und Zurechnung sind bereits wichtig
 
@@ -119,7 +119,7 @@ Beispiel:
 
 Ein Projekt erzeugt hohen monetarisierten sozialen Nutzen, verletzt aber nachweislich eine harte rechtliche Schutzgrenze.
 
-Dann ist der T-SROI-Wert **nicht** die finale Entscheidungsregel.
+Dann ist das Schutz-Gate G = 0: Der T-SROI ist **blockiert / nicht bewertbar**. Ein rechnerisch hoher Quotient darf weder als positiver T-SROI noch als Priorisierungssignal ausgegeben werden. Schutzverletzung und übriges Wirkungsprofil bleiben sichtbar.
 
 Die richtige Reihenfolge:
 
@@ -240,6 +240,8 @@ NWI und T-SROI bleiben Modelle der Denkschule, deren Validität an transparenten
 
 ## 13. Quellen
 
+- T-SROI-Rechenstandard v1.1 (einschließlich IOI-Abgrenzung): https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/
+
 ### Externe Fachquelle
 
 - Social Value International, Standards and Guidance: https://www.socialvalueint.org/standards-and-guidance
@@ -318,7 +320,7 @@ Darum lautet der Merksatz:
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
-Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; der damaligen Einordnung lag der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/) zugrunde. Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
 
 ### NWI und T-SROI eindeutig benennen
 
