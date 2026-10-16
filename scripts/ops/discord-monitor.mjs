@@ -457,6 +457,7 @@ function discordParts(content) {
 
 export async function sendDiscord(event, { token, recipient, fetchImpl = fetch }) {
   if (!token || !/^\d{15,22}$/.test(recipient || '')) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
+  if(event.attachment&&(!/^[a-z0-9][a-z0-9._-]{0,119}\.txt$/.test(event.attachment.filename||'')||typeof event.attachment.content!=='string'||Buffer.byteLength(event.attachment.content)>65536))throw new Error('MONITOR_DM_ATTACHMENT_INVALID');
   const parts = discordParts(event.content);
   const headers = { authorization: `Bot ${token}`, 'content-type': 'application/json' };
   const channelResponse = await fetchImpl('https://discord.com/api/v10/users/@me/channels', { method: 'POST', headers, body: JSON.stringify({ recipient_id: recipient }), signal: AbortSignal.timeout(12_000) });
@@ -467,7 +468,14 @@ export async function sendDiscord(event, { token, recipient, fetchImpl = fetch }
   // limit duplicates on retry; do not silently cut off final costs/warnings.
   for (const [index, content] of parts.entries()) {
     const nonce = index === 0 ? event.id : eventId(`${event.id}:part:${index}`);
-    const response = await fetchImpl(`https://discord.com/api/v10/channels/${channel.id}/messages`, { method: 'POST', headers, body: JSON.stringify({ content, nonce, enforce_nonce: true, allowed_mentions: { parse: [] } }), signal: AbortSignal.timeout(12_000) });
+    const payload={ content, nonce, enforce_nonce: true, allowed_mentions: { parse: [] },...(event.suppressEmbeds?{flags:4}:{}) };
+    let body=JSON.stringify(payload),requestHeaders=headers;
+    if(index===0&&event.attachment){
+      payload.attachments=[{id:0,filename:event.attachment.filename}];
+      const form=new FormData();form.set('payload_json',JSON.stringify(payload));form.set('files[0]',new Blob([event.attachment.content],{type:'text/plain;charset=utf-8'}),event.attachment.filename);
+      body=form;requestHeaders={authorization:headers.authorization};
+    }
+    const response = await fetchImpl(`https://discord.com/api/v10/channels/${channel.id}/messages`, { method: 'POST', headers:requestHeaders, body, signal: AbortSignal.timeout(12_000) });
     if (!response.ok) throw new Error(`MONITOR_DM_SEND_HTTP_${response.status}`);
   }
 }

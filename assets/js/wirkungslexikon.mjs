@@ -397,12 +397,12 @@ export function createLexicon(DATA, config = {}) {
         <h1 class="wl-hero__title" id="hero-title">Wirkungslexikon politischer Sprache</h1>
         <p class="wl-hero__lead">Politische Begriffe nachschlagen, Quellen prüfen und Wirkungspotenziale verstehen.</p>
         ${searchHtml('hero', params.get('q') || '')}
-        <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a>${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
+        <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a><a href="${href('/narrativ-melden')}">Narrativ melden</a>${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
       </section>
     </div>
 
     <details class="wl-intro" id="einleitung">
-      <summary class="wl-container"><span>Über das Lexikon: Einleitung und Lesehilfe</span></summary>
+      <summary class="wl-container"><span class="wl-intro__preview"><strong>Über das Wirkungslexikon</strong><span>Potenziale verstehen und Belege einordnen.</span></span><span class="wl-intro__action"><span class="wl-intro__open">Einleitung öffnen</span><span class="wl-intro__close">Einleitung schließen</span></span></summary>
       <div class="wl-intro__body">
         <div class="wl-container">
         <p class="wl-lead">${p[0] || ''}</p>
@@ -510,6 +510,29 @@ export function createLexicon(DATA, config = {}) {
       </div>
       <ul class="wl-suggest" id="sg-${id}" role="listbox" aria-label="Vorschläge" hidden></ul>
     </form>`;
+  }
+
+  function viewNarrativeReport() {
+    return `<div class="wl-container wl-container--narrow wl-section-space">
+      <nav class="wl-breadcrumb" aria-label="Brotkrumen"><ol><li><a href="${href('/')}">Wirkungslexikon</a></li><li aria-current="page">Narrativ melden</li></ol></nav>
+      <h1>Narrativ melden</h1>
+      <div class="wl-prose"><p>Ist Ihnen ein politischer Begriff, eine wiederkehrende Erzählung oder eine neue Verwendung aufgefallen? Schicken Sie uns den Wortlaut und die Fundstelle zur redaktionellen Prüfung.</p>
+      <p>Die Meldung ist ohne Anmeldung, Namen oder E-Mail-Adresse möglich. Eine Meldung führt nicht automatisch zu einem Lexikoneintrag.</p></div>
+      <form id="wl-narrative-report" class="wl-report-form wl-stack" action="https://130.162.217.58.sslip.io/api/wirkungslexikon/narrativ-melden" method="post">
+        <p class="wl-small">Pflichtfelder sind gekennzeichnet. Bitte nur öffentliche Fundstellen und keine privaten Kontaktdaten eintragen.</p>
+        <div class="wl-field"><label for="narrative-term">Begriff oder Narrativ (Pflichtfeld)</label><input id="narrative-term" name="term" required minlength="3" maxlength="180" autocomplete="off" placeholder="Welcher Ausdruck oder welche Erzählung ist Ihnen aufgefallen?"></div>
+        <div class="wl-field"><label for="narrative-wording">Beobachteter Wortlaut (Pflichtfeld)</label><p id="narrative-wording-help" class="wl-small">Möglichst genau zitieren. Falls Sie sinngemäß wiedergeben, schreiben Sie das bitte dazu.</p><textarea id="narrative-wording" name="wording" required minlength="10" maxlength="6000" rows="5" aria-describedby="narrative-wording-help"></textarea></div>
+        <div class="wl-field"><label for="narrative-source">Wo gefunden? (Pflichtfeld)</label><p id="narrative-source-help" class="wl-small">Link mit Fundstelle oder Name der Publikation bzw. Sendung, Seite oder Zeitmarke. Auch öffentliche Veranstaltungen sind möglich.</p><textarea id="narrative-source" name="source" required minlength="5" maxlength="1500" rows="3" aria-describedby="narrative-source-help"></textarea></div>
+        <div class="wl-field"><label for="narrative-speaker">Wer hat es geäußert? (optional)</label><input id="narrative-speaker" name="speaker" maxlength="300" autocomplete="off"></div>
+        <div class="wl-field"><label for="narrative-date">Datum der Fundstelle (optional)</label><input id="narrative-date" name="foundOn" type="date"></div>
+        <div class="wl-field"><label for="narrative-context">Kontext und Ihr Hinweis (optional)</label><textarea id="narrative-context" name="context" maxlength="3000" rows="4" placeholder="Was fiel Ihnen an der Verwendung auf? Was sollte die Redaktion prüfen?"></textarea></div>
+        <div class="wl-report-form__trap" aria-hidden="true"><label for="narrative-website">Dieses Feld bitte leer lassen</label><input id="narrative-website" name="website" tabindex="-1" autocomplete="off"></div>
+        <p class="wl-small" id="narrative-privacy">Ihre Angaben werden intern zur Prüfung gespeichert und über den bestehenden Discord-Bot privat an die Redaktion übermittelt. Technische Verbindungsdaten können im Betrieb anfallen. <a href="/datenschutz.html">Datenschutzhinweise</a></p>
+        <button class="wl-btn" type="submit" disabled aria-describedby="narrative-privacy">Ohne Kontaktangaben senden</button>
+        <div id="narrative-result" class="wl-report-form__result" role="status" tabindex="-1"></div>
+      </form>
+      <noscript><p>Zum direkten Absenden wird JavaScript benötigt. Alternativ können Sie der Redaktion über die <a href="/impressum.html">Kontaktangaben im Impressum</a> schreiben.</p></noscript>
+    </div>`;
   }
 
   function legendHtml(withText) {
@@ -1371,5 +1394,5 @@ export function createLexicon(DATA, config = {}) {
     if (document.getElementById('wl-explorer')) route();
     document.documentElement.dataset.wlReady = 'true';
   }
-  return { init, href, rewriteRoutes, viewStart, viewCard, viewCategories, viewCategory, viewArea, viewMethodik, viewRedaktionen, explorerHtml, rowHtml, tileHtml, ladderOf, relatedOf, isBoiler, korpusOf, hasShift, runQuery, CATS, AREAS, STATUS, ev, esc, termHtml, effectLine };
+  return { init, href, rewriteRoutes, viewStart, viewCard, viewCategories, viewCategory, viewArea, viewMethodik, viewRedaktionen, viewNarrativeReport, explorerHtml, rowHtml, tileHtml, ladderOf, relatedOf, isBoiler, korpusOf, hasShift, runQuery, CATS, AREAS, STATUS, ev, esc, termHtml, effectLine };
 }

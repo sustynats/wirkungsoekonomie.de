@@ -21,11 +21,11 @@ try{
   assert.equal((await page.goto(base+'/wirkungslexikon/')).status(),200);await ready(page);await page.evaluate(()=>document.fonts.ready);
   const m=await page.evaluate(width=>{
    const y=s=>Math.round(document.querySelector(s).getBoundingClientRect().top+scrollY);
-   return {width,viewportHeight:innerHeight,search:y('#q-hero'),explorer:y('#karten'),firstTerm:y('.wl-results .wl-row__term,.wl-results .wl-tile__term'),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth};
+   const term=document.querySelector('.wl-results .wl-row__term,.wl-results .wl-tile__term');return {width,viewportHeight:innerHeight,search:y('#q-hero'),explorer:y('#karten'),firstTerm:y('.wl-results .wl-row__term,.wl-results .wl-tile__term'),firstTermBottom:Math.ceil(term.getBoundingClientRect().bottom+scrollY),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth};
   },width);measurements.push(m);
   assert.equal(m.overflow,false,`No horizontal overflow at ${width}px`);
   assert(m.search<500,`Search appears in first viewport at ${width}px`);
-  assert(m.firstTerm<m.viewportHeight,`First term is visible without scrolling at ${width}px: ${m.firstTerm}`);
+  assert(m.firstTermBottom<=m.viewportHeight,`First complete term is visible without scrolling at ${width}px: ${m.firstTermBottom}`);
   assert.equal(await page.locator('#einleitung').getAttribute('open'),null);
   assert.equal(await page.locator('form[role=search]').count(),1);
   if([360,390,1440].includes(width))await page.screenshot({path:path.join(out,'START-'+width+'.png')});
