@@ -233,6 +233,73 @@ function unsentMediaAnswer() {
   return { job, output, record, raw, archive, session };
 }
 
+function unsentSourceFooterAnswer() {
+  const fixture = unsentMediaAnswer();
+  const { job, output, record, session } = fixture;
+  job.input.request.kind = 'opinion_analysis';
+  job.input.input_hash = hash(job.input.request);
+  output.preview.format = 'opinion_analysis';
+  delete output.preview.source_media;
+  output.preview.markdown = output.preview.markdown.replace('## Sendungsdaten', '## Quellen und Aussagegrenzen');
+  record.input_hash = job.input.input_hash;
+  record.answer = JSON.stringify(output);
+  const raw = JSON.stringify(record);
+  const archive = bridgePath('95_LOGS', `editorial-answer-${jobId}-${hash(record)}.json`);
+  session.files.delete(fixture.archive);
+  session.files.set(archive, raw);
+  return { job, output, record, raw, archive, session };
+}
+
+test('source limitations footer is canonicalized without changing prose, sources or the final-section gate', () => {
+  const { job, output } = unsentSourceFooterAnswer();
+  const bound = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash,
+    processed_at: now(), ...structuredClone(output) };
+  assert.throws(() => validateEditorialDelivery(bound, job.input, now()), /FINAL_PERSPECTIVE_REQUIRED/);
+  const original = structuredClone(bound.preview), repairs = [];
+  normalizeEditorialPreview(bound.preview, { repairs });
+  assert.equal(bound.preview.markdown, original.markdown.replace('## Quellen und Aussagegrenzen', '## Quellen'));
+  assert.deepEqual(bound.preview.sources, original.sources);
+  assert.deepEqual(repairs, ['markdown:Quellenüberschrift kanonisiert']);
+  assert.doesNotThrow(() => validateEditorialDelivery(bound, job.input, now()));
+  normalizeEditorialPreview(bound.preview, { repairs: [] });
+  assert.equal(repairs.length, 1);
+
+  for (const reason of ['missing_personal', 'late_analysis', 'unknown_footer']) {
+    const next = structuredClone(output);
+    if (reason === 'missing_personal') next.preview.markdown = next.preview.markdown.replace('## Meine Einordnung', '## Ein anderer Abschnitt');
+    if (reason === 'late_analysis') next.preview.markdown += '\n\n## Nachtraegliche Analyse\n\nEin weiterer Haupttext.';
+    if (reason === 'unknown_footer') next.preview.markdown = next.preview.markdown.replace('## Quellen und Aussagegrenzen', '## Quellen und neue Analyse');
+    normalizeEditorialPreview(next.preview);
+    assert.throws(() => validateEditorialDelivery({ ...bound, ...next }, job.input, now()), /FINAL_PERSPECTIVE_REQUIRED/, reason);
+  }
+});
+
+test('unsent paid source-footer answer is recovered free, immutable and still requires final approval', async () => {
+  const { DatabaseSync } = await import('node:sqlite');
+  const { EditorialApproval } = await import('../../scripts/news/bridge/editorial-approval.mjs');
+  const { job, raw, archive, session } = unsentSourceFooterAnswer();
+  const before = structuredClone(session.observations.get(`github-attempt:${jobId}`));
+  const result = await recoverUnsentEditorialAnswers(session, [job], now());
+  assert.equal(result[0].status, 'cached_output_redelivered');
+  assert.equal(result[0].provider_called, false);
+  assert.equal(session.files.get(archive), raw);
+  const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  assert.equal(delivered.input_hash, job.input.input_hash);
+  assert.equal(delivered.preview.markdown, JSON.parse(raw).output.preview.markdown.replace('## Quellen und Aussagegrenzen', '## Quellen'));
+  assert.deepEqual(delivered.preview.sources, JSON.parse(raw).output.preview.sources);
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).cost_usd, before.cost_usd);
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).repair_calls, before.repair_calls);
+  assert.equal(session.observations.get(`github-editorial-recovery:${jobId}`).cost_usd, 0);
+  assert.deepEqual(await recoverUnsentEditorialAnswers(session, [job], now()), []);
+  const desk = new EditorialApproval(new DatabaseSync(':memory:'), { now });
+  try {
+    assert.equal(desk.stage(job, delivered.preview).status, 'AWAITING_FINAL_APPROVAL');
+    assert.equal(desk.preview(owner, jobId).approval, null);
+    assert.deepEqual(desk.claimPublications(), []);
+    assert.match(desk.preview(owner, jobId).html, /Quellen/);
+  } finally { desk.db.close(); }
+});
+
 test('formal media footer uses the existing import heading without changing its paragraphs or sources', () => {
   const { job, output } = unsentMediaAnswer();
   const bound = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash,
