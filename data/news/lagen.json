@@ -1,7 +1,64 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-16T04:00:00.000Z",
+  "updated_at": "2026-10-16T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-16-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-16",
+      "window_from": "2026-10-16T04:00:00.000Z",
+      "window_to": "2026-10-16T10:00:00.000Z",
+      "stand": "2026-10-16T10:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 0,
+        "fortgeschrieben": 5
+      },
+      "entries": [
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt tritt in Kraft, Preisweitergabe bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T09:26:47.198Z",
+          "score": 5.6577
+        },
+        {
+          "story_id": "wt-f08e02f92e2263a8",
+          "slug": "hochwasser-zugang-zu-iguazu-wasserfallen-fur-touristen-gesperrt-2263a8",
+          "title": "Zugang zu den Iguazú-Wasserfällen wegen Hochwassers gesperrt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T09:25:30.573Z",
+          "score": 5.6542
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Bericht: Ölpreisschock setzt Euroraum-Inflation unter Druck, EZB-Zinsschritt bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T08:52:10.858Z",
+          "score": 5.5616
+        },
+        {
+          "story_id": "wt-c8996796a8809c37",
+          "slug": "grossangriff-an-putins-geburtstag-viele-tote-in-der-ukraine-809c37",
+          "title": "Schwere russische Angriffe treffen Kiew und weitere Regionen der Ukraine",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T07:32:05.628Z",
+          "score": 9.8391
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Laut stern zieht Sami Abu Schehadeh seine Knesset-Kandidatur zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T06:55:27.431Z",
+          "score": 5.2374
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-16-morgenlage",
       "slot": "morgenlage",
