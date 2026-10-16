@@ -1,7 +1,101 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-15T16:00:00.000Z",
+  "updated_at": "2026-10-16T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-16-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-16",
+      "window_from": "2026-10-15T16:00:00.000Z",
+      "window_to": "2026-10-16T04:00:00.000Z",
+      "stand": "2026-10-16T04:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 4,
+        "fortgeschrieben": 5
+      },
+      "entries": [
+        {
+          "story_id": "wt-89cf51ab8a350307",
+          "slug": "16-jahriger-erschiesst-in-grundschule-in-den-usa-drei-kinder-und-einen-lehrer-350307",
+          "title": "Laut Polizei: 16-Jähriger erschießt in US-Grundschule drei Kinder und einen Lehrer",
+          "state": "neu",
+          "at": "2026-10-16T03:45:06.373Z",
+          "score": 9.9793
+        },
+        {
+          "story_id": "wt-02b08f7f71ec905d",
+          "slug": "krieg-gegen-die-ukraine-ukraine-beschadigt-russisches-datenzentrum-ec905d",
+          "title": "Laut Deutschlandfunk: Ukrainischer Drohnenangriff legt Yandex-Rechenzentrum lahm",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T01:34:59.816Z",
+          "score": 5.5486
+        },
+        {
+          "story_id": "wt-6f981ba3f99c36ba",
+          "slug": "two-hospitalised-after-shooting-at-oregon-elementary-school-gunman-dead-9c36ba",
+          "title": "Laut France 24: Zwei Menschen nach Schüssen an Grundschule in Oregon im Krankenhaus, Schütze tot",
+          "state": "neu",
+          "at": "2026-10-16T00:29:24.098Z",
+          "score": 9.7075
+        },
+        {
+          "story_id": "wt-f4626f4b3f4652ce",
+          "slug": "ukraine-krieg-stromausfall-in-teilen-von-kiew-und-dem-umland-nach-russischen-angriffen-4652ce",
+          "title": "Stromausfall in Teilen von Kiew nach russischen Angriffen, laut Deutschlandfunk",
+          "state": "neu",
+          "at": "2026-10-15T23:27:25.159Z",
+          "score": 5.6214
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Laut stern: Sami Abu Schehadeh zieht Knesset-Kandidatur nach drohendem Ausschluss zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T20:58:30.792Z",
+          "score": 9.1646
+        },
+        {
+          "story_id": "wt-41cebb141f528ae7",
+          "slug": "seoul-explosion-nordkoreanischer-mine-in-grenzgebiet-ist-verletzung-von-waffenstillstand-528ae7",
+          "title": "Laut stern: Explosion einer Mine im koreanischen Grenzgebiet verletzt drei südkoreanische Offiziere",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T20:57:32.121Z",
+          "score": 9.1632
+        },
+        {
+          "story_id": "wt-d463fc29ec38e76e",
+          "slug": "starkregen-in-der-turkei-rettungsaktionen-nach-uberschwemmung-in-istanbul-zwei-tote-38e76e",
+          "title": "Mindestens zwei Tote nach Überschwemmungen in Istanbul, weitere Regenfälle erwartet",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T19:28:07.658Z",
+          "score": 7.5391
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Inflationsdruck im Euroraum: Weitere EZB-Zinserhöhung bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-15T18:17:10.757Z",
+          "score": 4.9405
+        },
+        {
+          "story_id": "wt-6f5d5a6d16158804",
+          "slug": "streit-ums-geld-eu-staats-und-regierungschefs-verhandeln-uber-eu-haushalt-158804",
+          "title": "EU-Staats- und Regierungschefs beginnen Verhandlungen über nächsten EU-Haushalt",
+          "state": "neu",
+          "at": "2026-10-15T16:39:55.773Z",
+          "score": 5.0555
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-16T04:06:15.479Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-15-abendlage",
       "slot": "abendlage",
