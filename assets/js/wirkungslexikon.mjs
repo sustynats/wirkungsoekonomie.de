@@ -747,7 +747,7 @@ export function createLexicon(DATA, config = {}) {
     const funktionIsMech = e.moegliche_kommunikative_funktion === pe.allgemeiner_mechanismus;
 
     const nodes = [];
-    const example = config.examplesV10 && e.redaktion_v10_beispiel_und_erklaerung;
+    const example = (MODE==='preview'||config.examplesV10) && e.redaktion_v10_beispiel_und_erklaerung;
     if(example){
       nodes.push({id:'kurz-gesagt',ev:'deutung',step:'Wortwahl',title:'Was hier gesagt wird',body:`<p><strong>${termHtml(e.lemma_kurz||e.begriff)}</strong> · ${esc(e.akteur)}</p><p class="wl-small">Untersuchter Ausdruck bzw. redaktionelles Lemma. <a href="#original">Originalwortlaut, Kontext und Zitatstatus prüfen</a>.</p>`});
       nodes.push({id:'alltagsbeispiel',ev:'potenzial',step:'Alltag',title:'Ein Beispiel aus dem Alltag',body:`<div class="wl-example"><p class="wl-example__label">Gedankenbeispiel - keine dokumentierte Begebenheit</p><p>${esc(example.didaktisches_beispiel)}</p></div>`});
