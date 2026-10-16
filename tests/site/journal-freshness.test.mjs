@@ -27,10 +27,10 @@ test('current journal discovery qualifies the historical WÖk acronym without re
   assert.match(renderJournalArchiveCard(entry), /damalige WÖk-Kurzbezeichnung NWI/);
 });
 
-function worker({ offline = false, saved = true, quota = false } = {}) {
+function worker({ offline = false, saved = true, quota = false, cachedValue = [previous], liveValue = [latest] } = {}) {
   const handlers = new Map(), requests = [], writes = [];
   const cache = {
-    match: async () => saved ? Response.json([previous]) : undefined,
+    match: async () => saved ? Response.json(cachedValue) : undefined,
     put: async (_request, response) => { if (quota) throw Error('quota'); writes.push(await response.json()); },
   };
   vm.runInNewContext(workerSource, {
@@ -40,15 +40,41 @@ function worker({ offline = false, saved = true, quota = false } = {}) {
     fetch: async (request, options) => {
       requests.push({ request, options });
       if (offline) throw Error('offline');
-      return Response.json([latest]);
+      return Response.json(liveValue);
     },
   });
-  return { requests, writes, async load(pathname) {
+  return { requests, writes, async load(pathname, options) {
     let response;
-    handlers.get('fetch')({ request: new Request(origin + pathname), respondWith: promise => { response = promise; } });
+    handlers.get('fetch')({ request: new Request(origin + pathname, options), respondWith: promise => { response = promise; } });
     return response;
   } };
 }
+
+const oldSearchManifest = { schemaVersion: 1, version: '1111111111111111', json: 'search-index-1111111111111111.json' };
+const currentSearchManifest = { schemaVersion: 2, version: '2222222222222222', core: { json: 'search-core-2222222222222222.json' } };
+for (const pathname of ['/assets/search/browser-index-manifest.json', '/assets/search/browser-index-manifest.json?v=older']) {
+  test(`online ${pathname} delivers schema 2 on the first request even when schema 1 is saved`, async () => {
+    const h = worker({ cachedValue: oldSearchManifest, liveValue: currentSearchManifest });
+    assert.deepEqual(await (await h.load(pathname, { cache: 'no-cache' })).json(), currentSearchManifest);
+    assert.equal(h.requests[0].options.cache, 'no-cache');
+    assert.deepEqual(h.writes[0], currentSearchManifest);
+  });
+}
+
+test('offline search keeps its last current JSON manifest; missing data does not become an HTML page', async () => {
+  for (const saved of [true, false]) {
+    const h = worker({ offline: true, saved, cachedValue: currentSearchManifest });
+    const response = await h.load('/assets/search/browser-index-manifest.json');
+    assert.equal(response.status, saved ? 200 : 504);
+    if (saved) assert.deepEqual(await response.json(), currentSearchManifest);
+    else assert.equal(await response.text(), '');
+  }
+});
+
+test('a full cache cannot downgrade a fresh search manifest', async () => {
+  const h = worker({ quota: true, cachedValue: oldSearchManifest, liveValue: currentSearchManifest });
+  assert.deepEqual(await (await h.load('/assets/search/browser-index-manifest.json')).json(), currentSearchManifest);
+});
 
 for (const pathname of ['/assets/data/blog-index.json', '/assets/data/blog-index.json?v=old-script', '/assets/data/document-library.json', '/assets/data/podcast-index.json', '/public/data/site-updates.json']) {
   test(`online ${pathname} uses current data on the first visit, despite a saved older edition`, async () => {
