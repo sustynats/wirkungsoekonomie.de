@@ -3,6 +3,7 @@ const NEWS_STATE_CACHE = "woek-news-notification-state-v1";
 const NEWS_STATE_URL = "/news/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-news-updates";
 const CONTENT_INDEX_PATHS = new Set([
+  "/assets/search/browser-index-manifest.json",
   "/assets/data/blog-index.json",
   "/assets/data/document-library.json",
   "/assets/data/podcast-index.json",
