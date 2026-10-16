@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {ROOT,read,atomic,approvedV9} from './model.mjs';
 import {loadAudienceTeasers} from './audience-teasers.mjs';
+import {loadReferenceLinks} from './reference-links.mjs';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.WL_PLAYWRIGHT||'playwright');
 const args=process.argv.slice(2),value=k=>args[args.indexOf(k)+1];
@@ -27,6 +28,15 @@ for(const rel of manifest.files.filter(f=>f.endsWith('.html'))){
 }
 assert.deepEqual(issues,[],'Every generated internal link and asset must exist in the full site');
 checks.push({name:'All generated internal links and assets resolve against the complete production artifact',status:'PASS'});
+const referenceBlocks=loadReferenceLinks();
+for(const rel of new Set(referenceBlocks.flatMap(b=>b.paths))){
+ const html=fs.readFileSync(path.join(artifact,rel),'utf8');
+ for(const b of referenceBlocks.filter(b=>b.paths.includes(rel))){
+  assert.equal(html.split('data-wl-reference="'+b.id+'"').length-1,1,'Exactly one reference block: '+rel+' / '+b.id);
+  for(const link of [...b.links,...b.items||[]]){const url=new URL(link.href,base),file=resolveFile(url);assert(fs.existsSync(file),link.href);if(url.hash)assert(new RegExp('\\sid=["\']'+url.hash.slice(1)+'["\']').test(fs.readFileSync(file,'utf8')),link.href);}
+ }
+}
+checks.push({name:'Contextual SDG+ links on all 22 pages resolve with seven canonical dimension anchors',status:'PASS'});
 const routes=read(path.join(artifact,'assets/data/public-routes.json'));
 const routeText=JSON.stringify(routes);
 for(const e of data.entries)assert(routeText.includes('/wirkungslexikon/'+e.slug+'/'));

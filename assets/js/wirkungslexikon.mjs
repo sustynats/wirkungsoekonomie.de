@@ -397,7 +397,7 @@ export function createLexicon(DATA, config = {}) {
         <h1 class="wl-hero__title" id="hero-title">Wirkungslexikon politischer Sprache</h1>
         <p class="wl-hero__lead">Politische Begriffe nachschlagen, Quellen prüfen und Wirkungspotenziale verstehen.</p>
         ${searchHtml('hero', params.get('q') || '')}
-        <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a><a href="${href('/narrativ-melden')}">Narrativ melden</a>${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
+        <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a><a href="${href('/narrativ-melden')}">Narrativ melden</a>${config.referenceLinks?'<a href="#sdgplus-bezug">Grundlage: SDG+</a>':''}${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
       </section>
     </div>
 

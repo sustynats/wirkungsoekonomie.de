@@ -1,4 +1,5 @@
 import {renderSiteHeader} from '../lib/site-shell.mjs';
+import {applyReferenceLinks} from '../wirkungslexikon/reference-links.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -236,7 +237,7 @@ function read(rel) {
 function write(rel, html) {
   const out = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(out), { recursive: true });
-  fs.writeFileSync(out, `${html.replace(/[ \t]+$/gm, "")}\n`, "utf8");
+  fs.writeFileSync(out, `${applyReferenceLinks(html,rel).html.replace(/[ \t]+$/gm, "")}\n`, "utf8");
 }
 
 function citeAnchor(id, label = "Zitierlink zu diesem Abschnitt") {
