@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {ROOT,read,atomic,sha,validate} from './model.mjs';
+import {validateExample,EXAMPLE_FIELD} from './examples.mjs';
 export const V9=path.resolve(process.env.WL_V9_BASE||path.join(ROOT,'outputs/wirkungslexikon/v9'));
 export const canonical=v=>JSON.stringify(v,(_,x)=>x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,x[k]])):x);
 export const digest=v=>sha(canonical(v));
@@ -46,6 +47,7 @@ export function applyAttestation(store,a,trust,base=V9){const p=verifyAttestatio
 }
 export function publicObjects(store,base=V9){return Object.values(store.objects).filter(o=>o.publishedHash).map(o=>({type:o.type,revision:o.publishedHash,content:read(path.join(base,'snapshots',o.publishedHash+'.json'))}));}
 export function validateExtensions(e){
+ if(e[EXAMPLE_FIELD])validateExample(e[EXAMPLE_FIELD]);
  for(const k of ['lemma_kurz','originalwortlaut','original_textstelle_als_beleg','akteur_normalisiert','psychologischer_mechanismus_standardisiert'])if(e[k]!=null&&typeof e[k]!=='string')throw Error('INVALID_EXTENSION_TYPE:'+k);
  for(const q of [...e.quellen,...e.wissenschaftliche_quellen])for(const k of ['id','title','url','role','locator','author','date'])if(q[k]!=null&&typeof q[k]!=='string')throw Error('INVALID_SOURCE_TYPE:'+k);
  const n=e.narrativeinordnung_v7;if(!n||!Array.isArray(n.narrativ_ids)||n.narrativ_ids.some(id=>typeof id!=='string')||n.menschliche_pruefung!==null||n.automatische_veroeffentlichung!==false)throw Error('UNCONFIRMED_NARRATIVE_TYPE');

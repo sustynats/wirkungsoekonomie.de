@@ -862,3 +862,17 @@ a.wl-area:hover{box-shadow:var(--wl-shadow-lift);border-top-color:var(--wl-green
 .wl-prose p:has(>.wl-btn){display:flex;flex-wrap:wrap;gap:1rem;align-items:center;}
 
 .wl-share__preview img{display:block;max-width:100%;height:auto;max-height:60vh;object-fit:contain;border-radius:6px;box-shadow:var(--wl-shadow);}
+.wl-example { padding:var(--wl-s4); border-left:4px solid var(--wl-accent,#34507a); background:var(--wl-surface-alt,#f4f6f8); border-radius:0 .5rem .5rem 0; }
+.wl-example__label { font-size:.875rem; font-weight:700; color:var(--wl-ink); margin:0 0 .75rem; }
+.wl-example p:last-child { margin-bottom:0; }
+.wl-card-layout--examples #kurz-gesagt { padding-bottom:var(--wl-s4); }
+.wl-card-layout--examples #alltagsbeispiel { scroll-margin-top:6rem; }
+.wl-card-layout--examples .wl-toc a { display:inline-flex; align-items:center; min-height:44px; min-width:44px; padding:.5rem .65rem; }
+.wl-card-layout--examples .wl-toc--bar li { flex:0 0 auto; }
+.wl-card-tools summary { cursor:pointer; min-height:44px; padding:.6rem 0; font-weight:600; }
+.wl-card-head--examples .wl-term-meta,.wl-card-head--examples > .wl-tag-list { display:none; }
+.wl-card-head--examples .wl-audience-switch { margin-top:var(--wl-s3); }
+.wl-card-head--examples .wl-card-tools .wl-actions { margin-top:var(--wl-s3); }
+@media (max-width:1100px) {
+  .wl-card-layout--examples .wl-card-aside { order:1; }
+}
