@@ -14,4 +14,6 @@ Für dieses Paket wird ein Merge mit `[lexikon-release]` im Commit-Titel verwend
 
 Hosting: bestehendes GitHub Pages/GitHub Releases. Kein Vercel-Build, keine neue Infrastruktur oder kostenpflichtige Erweiterung. Die bestehende Vercel-Kontoprüfung meldet aktiviert bepreiste Observability und eine Fair-Use-Sperre; diese werden mit dem Lexikon nicht verändert oder beansprucht.
 
-Der Journalartikel folgt erst nach tatsächlicher Live-Abnahme des Lexikons. LinkedIn bleibt eine eigenständige Veröffentlichungsvorlage; es wird kein fremder Account automatisch bedient. Word- und Markdown-Originale bleiben erhalten.
+Natalie Weber hat anschließend klargestellt: Beide Artikel wurden neu geschrieben und werden von ihr selbst bei LinkedIn und für das Journal hochgeladen. Keine weitere Artikelbearbeitung oder Veröffentlichung durch Codex. Das Lexikon-Release enthält keine Artikelübernahme.
+
+Die geschützte Redaktion läuft lokal mit Zugriffskontrolle. Neue Entwürfe und Zusatzobjekte bauen ausschließlich die private Vorschau neu. Bereits veröffentlichte Revisionen bleiben unverändert; keine automatische Produktionserzeugung beim Speichern. Dieser Ablauf wurde mit bereits veröffentlichten Objekten in einem isolierten HTTP-/Browser-Test geprüft. Ein entferntes persönliches SSO-Redaktionskonto ist nicht als bereits eingerichtet zu verstehen.

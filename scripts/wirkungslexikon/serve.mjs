@@ -43,7 +43,7 @@ const server=http.createServer(async(req,res)=>{
     if(req.method==='GET'){const id=u.searchParams.get('id');if(!id)return json(200,{objects:Object.values(index.objects),templates:index.templates,patches:index.patches,approvalEnabled:false});const o=index.objects[id];return o?json(200,{type:o.type,id:o.id,entry:reviewValue(o),revision:o.draftHash}):json(404,{error:'Unbekanntes Prüfobjekt'});}
     if(req.method==='POST'){
      if(saving)return json(409,{error:'Speicherung läuft; bitte erneut versuchen'});saving=true;
-     try{const result=saveReview(await body(),{role:access.role,subject:access.username});buildV9();buildV9({mode:'public'});return json(200,result);}finally{saving=false;}
+     try{const result=saveReview(await body(),{role:access.role,subject:access.username});buildV9();return json(200,result);}finally{saving=false;}
     }
     return json(405,{error:'Methode nicht erlaubt'});
    }
@@ -51,7 +51,7 @@ const server=http.createServer(async(req,res)=>{
     if(req.method==='GET'){const model=currentModel();const key=u.searchParams.get('slug');const o=isV9?Object.values(loadStore().objects).find(o=>o.id===key||o.slug===key):null;const entry=isV9?(o?read(path.join(V9,'snapshots',o.draftHash+'.json')):null):model.data.entries.find(e=>e.slug===key);return json(entry?200:404,{entry,revision:model.editorial.revision,actor:access.name});}
     if(req.method==='POST'){
      if(saving)return json(409,{error:'Speicherung läuft; bitte erneut versuchen'});saving=true;
-     try{const result=saveEntry(await body(),access);if(isV9){buildV9();buildV9({mode:'public'});return json(200,{...result,socialImagesReady:false});}build();build({mode:'public'});let socialImagesReady=true;try{await run(process.execPath,[path.join(ROOT,'scripts/wirkungslexikon/render-social.mjs'),'--missing'],{timeout:180000});}catch{socialImagesReady=false;}return json(200,{...result,socialImagesReady});}finally{saving=false;}
+     try{const result=saveEntry(await body(),access);if(isV9){buildV9();return json(200,{...result,socialImagesReady:false});}build();build({mode:'public'});let socialImagesReady=true;try{await run(process.execPath,[path.join(ROOT,'scripts/wirkungslexikon/render-social.mjs'),'--missing'],{timeout:180000});}catch{socialImagesReady=false;}return json(200,{...result,socialImagesReady});}finally{saving=false;}
     }
    }
    if(u.pathname==='/api/wirkungslexikon/reports'){
