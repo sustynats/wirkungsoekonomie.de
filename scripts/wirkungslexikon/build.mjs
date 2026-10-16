@@ -3,11 +3,13 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { ROOT, CONTENT, loadModel, publicData, read, atomic, sha } from './model.mjs';
+import {digest} from './v9-store.mjs';
 import {renderSiteFooter,renderFooterNewsletter} from '../lib/site-shell.mjs';
 import { createLexicon } from '../../assets/js/wirkungslexikon.mjs';
 
 export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexikon',mode), model=null, assets=true, textOverrides={}, configExtras={}, extraPages=[], extraSubnav='', negativePublicationTest=false}={}) {
   if (!['preview','public'].includes(mode)) throw Error('Unbekannter Build-Modus');
+  if(!model&&mode==='public'){const p=read(path.join(CONTENT,'publication-policy.json')).lexikon;if(p.version==='V9'&&p.released){const frozen=read(path.join(CONTENT,'publication-v9.json'));if(digest(frozen)!==p.payloadSha256)throw Error('V9_PAYLOAD_APPROVAL_MISMATCH');return build({...frozen,mode,out,assets});}}
   if(!model) {
     if(fs.existsSync(path.join(CONTENT,'wirkungslexikon_master_v3.json')))model=loadModel();
     else if(mode==='public'&&fs.existsSync(path.join(CONTENT,'published.json'))){const published=read(path.join(CONTENT,'published.json'));model={data:published,editorial:{history:published.publicationHistory||{},revision:published.publicationRevision||0},checksum:published.masterSha256};}
