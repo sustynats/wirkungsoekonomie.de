@@ -5,6 +5,7 @@ import {ROOT,read,sha} from './model.mjs';
 import {V9,loadStore,digest,snapshot,event} from './v9-store.mjs';
 import {schemaCheck,escape,structured} from './v9-review.mjs';
 import {supplementIndex,supplementValue} from './narrative-supplement.mjs';
+import {inventoryCounts,normalizeInventoryTerm} from './inventory.mjs';
 
 export const researchBase=(base=V9)=>path.join(base,'research_candidates');
 export const researchIndex=(base=V9)=>fs.existsSync(path.join(researchBase(base),'store.json'))?read(path.join(researchBase(base),'store.json')):null;
@@ -17,7 +18,11 @@ export const schemas={
  chain:{type:'object',required:['id','titel','stationen','quellen_ids','gegenpfad'],properties:{...strings(['id','titel','gegenpfad']),stationen:{type:'array',minItems:1,items:{type:'object',required:['stufe','inhalt'],properties:strings(['stufe','inhalt'])}},quellen_ids:{type:'array',minItems:1,items:{type:'string'}}}}
 };
 export function validateResearch(type,value,index,main){
- if(!schemas[type])throw Error('UNKNOWN_RESEARCH_TYPE');schemaCheck(value,schemas[type]);
+ if(!schemas[type])throw Error('UNKNOWN_RESEARCH_TYPE');
+ const sourcePending=type==='candidate'&&value.recherchevorschlag_ohne_quelle===true;
+ const schema=sourcePending?{...schemas.candidate,properties:{...schemas.candidate.properties,quellen_ids:{type:'array',items:{type:'string'}}}}:schemas[type];
+ schemaCheck(value,schema);
+ if(sourcePending&&(value.belegmodus!=='ANALYTISCHES_LEMMA'||value.hat_originalwortlaut_zitat!==false||value.quellenrolle_geprueft!==false||value.quellen_ids.length||value.originalquelle_status!=='ORIGINALQUELLE_FEHLT'))throw Error('UNVERIFIED_PROPOSAL_MUST_NOT_CLAIM_SOURCE');
  const walk=v=>{if(!v||typeof v!=='object')return;for(const[k,x]of Object.entries(v)){if(['is_public','approved','published','reviewed_by','verified_by','verified_at','publicHash','humanReview','menschliche_freigabe'].includes(k)&&x!==false&&x!==null)throw Error('HUMAN_REVIEW_REQUIRED');if(k==='review_state'&&x!=='SOURCE_NEEDED')throw Error('HUMAN_REVIEW_REQUIRED');walk(x);}};walk(value);
  if(type==='candidate'){
   for(const name of ['themenfeld','nachgewiesene_verwendung','bedeutungsverschiebung_oder_rahmung','mechanismus_arbeitshypothese','wirkungspotenzial_bedingt','wirkungsstatus','attribution','dokumentierte_strategische_absicht','redaktionelle_praezisierung','politische_entscheidungs_vorwirkung_hypothese','qa_offen','review_empfohlen','prioritaet_zur_weiteren_recherche','datenherkunft'])if(typeof value[name]!=='string'||!value[name].trim())throw Error('RESEARCH_FIELD_REQUIRED:'+name);
@@ -62,13 +67,42 @@ export function saveResearch({id,entry,expectedHash,reason},principal,base=V9){
  o.draftHash=snapshot(entry,researchBase(base));o.title=entry.lemma||entry.titel;o.review_state='SOURCE_NEEDED';o.is_public=false;o.publicHash=null;o.verified_by=null;o.verified_at=null;o.history.push({at:new Date().toISOString(),subject:principal.subject,reason,revision:o.draftHash});
  event(index,{action:'research_draft_saved',object:id,subject:principal.subject,role:principal.role,revision:o.draftHash,reason,approvalsCreated:0},researchBase(base));return {id,entry,revision:o.draftHash,approved:false};
 }
+export function addResearch({id,type,entry,reason},principal,base=V9,options={}){
+ if(principal.role!=='editor'||!principal.subject)throw Error('EDITOR_REQUIRED');
+ if(!/^[A-Z0-9][A-Z0-9_-]{2,119}$/.test(id||'')||!['candidate','watch','source','chain'].includes(type))throw Error('INVALID_RESEARCH_ID_OR_TYPE');
+ if(typeof reason!=='string'||reason.trim().length<10||reason.length>2000)throw Error('REASON_REQUIRED');
+ const index=researchIndex(base),main=loadStore(base);if(!index)throw Error('RESEARCH_REGISTER_REQUIRED');
+ if(index.objects[id])throw Error('DUPLICATE_RESEARCH_ID');
+ if(type==='candidate'&&entry.kandidaten_id!==id||['source','chain'].includes(type)&&entry.id!==id)throw Error('IMMUTABLE_RESEARCH_ID');
+ if(type==='candidate'||type==='watch'){
+  const term=normalizeInventoryTerm(entry.lemma);
+  for(const o of Object.values(main.objects).filter(o=>o.type==='wirkungskarte')){const card=read(path.join(base,'snapshots',o.draftHash+'.json'));if([card.begriff,card.lemma_kurz].some(v=>v&&normalizeInventoryTerm(v)===term))return {created:false,existingCard:o.id,slug:o.slug};}
+  const prior=Object.values(supplementIndex(base)?.objects||{}).filter(o=>o.type==='candidate').map(o=>({o,v:supplementValue(o,base)}));
+  const fresh=Object.values(index.objects).filter(o=>['candidate','watch'].includes(o.type)).map(o=>({o,v:researchValue(o,base)}));
+  const match=[...prior,...fresh].find(({v})=>normalizeInventoryTerm(v.lemma)===term);if(match)return {created:false,existingResearch:match.o.id};
+ }
+ validateResearch(type,entry,index,main);
+ index.objects[id]={id,type,title:entry.lemma||entry.titel,draftHash:snapshot(entry,researchBase(base)),is_public:false,review_state:'SOURCE_NEEDED',verified_by:null,verified_at:null,publicHash:null,history:[],sourceClaimsOnly:true};
+ event(index,{action:'research_item_added',object:id,type,subject:principal.subject,role:principal.role,reason,approvalsCreated:0},researchBase(base));
+ const counts=inventoryCounts({base,file:options.inventoryFile});return {created:true,id,approved:false,counts};
+}
+export function promoteResearchWatch({id,entry,expectedHash,reason},principal,base=V9,options={}){
+ if(principal.role!=='editor'||!principal.subject)throw Error('EDITOR_REQUIRED');
+ if(typeof reason!=='string'||reason.trim().length<10)throw Error('REASON_REQUIRED');
+ const index=researchIndex(base),o=index?.objects[id];if(!o||o.type!=='watch'||o.draftHash!==expectedHash)throw Error('WATCH_REVISION_CONFLICT');
+ if(entry.kandidaten_id!==id)throw Error('IMMUTABLE_RESEARCH_ID');validateResearch('candidate',entry,index,loadStore(base));
+ const previous=o.draftHash;o.type='candidate';o.draftHash=snapshot(entry,researchBase(base));o.title=entry.lemma;o.is_public=false;o.publicHash=null;o.review_state='SOURCE_NEEDED';
+ o.history.push({at:new Date().toISOString(),subject:principal.subject,reason,previousType:'watch',previousRevision:previous,revision:o.draftHash});
+ event(index,{action:'watch_recorded_as_analysis_candidate',object:id,subject:principal.subject,role:principal.role,reason,revision:o.draftHash,previousRevision:previous,approvalsCreated:0},researchBase(base));
+ return {id,created:true,counts:inventoryCounts({base,file:options.inventoryFile})};
+}
 const route=o=>'/wirkungslexikon/redaktion/breitrecherche/'+o.id.toLowerCase()+'/';
 export function researchPresentation(base=V9){
  const index=researchIndex(base);if(!index)return {extraPages:[],familyLinks:{}};
  const objects=Object.values(index.objects),guard='<p class="wl-guard">Private Recherche · SOURCE_NEEDED · keine menschliche Quellenbestätigung und keine Publikationsfreigabe. Lieferangaben sind keine neuen Lexikonkarten.</p>',wrap=h=>'<div class="wl-container wl-container--narrow wl-section-space">'+h+'</div>';
  const link=o=>`<a href="${route(o)}">${escape(o.id+' · '+o.title)}</a>`;
  const list=items=>'<ul>'+items.map(o=>{const e=researchValue(o,base);return `<li data-research-item data-source-mode="${escape(e.belegmodus||o.type)}">${link(o)} · ${escape(e.belegmodus||o.type)}<p>${escape(e.wirkungspotenzial_bedingt||e.recherchefrage||e.grenze||'Bedingte Verkettung; kein Kausalnachweis.')}</p></li>`;}).join('')+'</ul>';
- const extraPages=[{rel:'redaktion/breitrecherche/',title:'Private Breitrecherche: 73 Kandidaten',html:wrap(`<h1>Breitrecherche: 73 Kandidaten</h1>${guard}<p>73 Kandidaten: sieben gelieferte direkte Verwendungsbelege, 47 metasprachliche Erwähnungen, 19 analytische Lemmata. Zusätzlich 23 unbestätigte Suchthemen, 43 Quellen und vier bedingte Wirkpfade. Alle Prüfzustände starten bei SOURCE_NEEDED.</p><label for="research-search">Privates Register durchsuchen</label><input class="wl-input" id="research-search" type="search"><label for="research-mode">Quellen- und Gegenstandsrolle</label><select class="wl-input" id="research-mode"><option value="">Alle Rollen</option>${['DIREKT_VERWENDET','META_ERWAEHNT','ANALYTISCHES_LEMMA','watch','source','chain'].map(v=>`<option>${v}</option>`).join('')}</select><p id="research-count" role="status">143 private Objekte</p>${list(objects)}<h2>17 unveränderte Vorarbeiten</h2><p>Nur Referenzen auf das vorhandene Nachtragsregister. „Hitler war ein Linker“ ist eine Überschneidung; kein zusätzlicher freigegebener Eintrag.</p><ul>${index.previous17.map(o=>`<li><a href="/wirkungslexikon/redaktion/narrativketten/${escape(o.id.toLowerCase())}/">${escape(o.id)}</a></li>`).join('')}</ul><h2>Methodik der Lieferung</h2><pre class="wl-codebox">${escape(fs.readFileSync(path.join(index.source,'03_METHODIK/RECHERCHEMETHODIK_UND_EVIDENZTRENNUNG.md'),'utf8'))}</pre><p><a href="/wirkungslexikon/redaktion/">Hauptredaktion</a></p>`)}],familyLinks={};
+ const extraPages=[{rel:'redaktion/breitrecherche/',title:'Privates Rechercheregister',html:wrap(`<h1>Breitrecherche: ${objects.filter(o=>o.type==='candidate').length} Kandidaten</h1>${guard}<p>${objects.filter(o=>o.type==='candidate').length} Kandidaten, ${objects.filter(o=>o.type==='watch').length} unbestätigte Suchthemen, ${objects.filter(o=>o.type==='source').length} Quellen und ${objects.filter(o=>o.type==='chain').length} bedingte Wirkpfade. Kandidaten und Suchthemen sind verschiedene Prüfstände; nur Kandidaten gehen in die aggregierte Bestandsanzeige ein. Alle Prüfzustände starten bei SOURCE_NEEDED.</p><label for="research-search">Privates Register durchsuchen</label><input class="wl-input" id="research-search" type="search"><label for="research-mode">Quellen- und Gegenstandsrolle</label><select class="wl-input" id="research-mode"><option value="">Alle Rollen</option>${['DIREKT_VERWENDET','META_ERWAEHNT','ANALYTISCHES_LEMMA','watch','source','chain'].map(v=>`<option>${v}</option>`).join('')}</select><p id="research-count" role="status">${objects.length} private Objekte</p>${list(objects)}<h2>17 unveränderte Vorarbeiten</h2><p>Nur Referenzen auf das vorhandene Nachtragsregister. „Hitler war ein Linker“ ist eine Überschneidung; kein zusätzlicher freigegebener Eintrag.</p><ul>${index.previous17.map(o=>`<li><a href="/wirkungslexikon/redaktion/narrativketten/${escape(o.id.toLowerCase())}/">${escape(o.id)}</a></li>`).join('')}</ul><h2>Methodik der Lieferung</h2><pre class="wl-codebox">${escape(fs.readFileSync(path.join(index.source,'03_METHODIK/RECHERCHEMETHODIK_UND_EVIDENZTRENNUNG.md'),'utf8'))}</pre><p><a href="/wirkungslexikon/redaktion/">Hauptredaktion</a></p>`)}],familyLinks={};
  for(const o of objects){const e=researchValue(o,base),refs=(e.quellen_ids||[]).map(id=>index.objects[id]);
   if(o.type==='candidate')for(const id of e.narrativfamilien_v9)(familyLinks[id]||=[]).push({title:o.title,url:route(o)});
   const roles=o.type==='candidate'?{dokumentierte_originalverwendung:e.belegmodus==='DIREKT_VERWENDET'?e.nachgewiesene_verwendung:null,metasprachliche_erwaehnung:e.belegmodus==='META_ERWAEHNT'?e.nachgewiesene_verwendung:null,analytisches_lemma:e.belegmodus==='ANALYTISCHES_LEMMA'?e.lemma:null}:{};
@@ -78,6 +112,8 @@ export function researchPresentation(base=V9){
  return {extraPages,familyLinks};
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)){
- const args=process.argv.slice(2),v=k=>args[args.indexOf(k)+1];if(args[0]!=='import')throw Error('Use import --source ... --archive ...');
+ const args=process.argv.slice(2),v=k=>args[args.indexOf(k)+1];
+ if(args[0]==='add'){const request=read(path.resolve(v('--file')));console.log(JSON.stringify(addResearch(request,{role:'editor',subject:process.env.WL_EDITOR_SUBJECT||'local-editor'})));process.exit(0);}
+ if(args[0]!=='import')throw Error('Use import --source ... --archive ... OR add --file <private-request.json>');
  const index=importResearch(path.resolve(v('--source')),{archive:path.resolve(v('--archive'))});console.log(JSON.stringify({objects:Object.keys(index.objects).length,counts:index.counts,archiveSha256:index.archiveSha256,approvalsCreated:0}));
 }
