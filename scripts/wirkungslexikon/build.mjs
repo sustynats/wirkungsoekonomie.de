@@ -62,7 +62,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   let header=fs.readFileSync(path.join(ROOT,'templates/header.html'),'utf8').replaceAll('{{BASE}}','/');
   const footer=renderSiteFooter('/',nav).replace('<div class="footer-inner">','<div class="footer-inner">'+renderFooterNewsletter('/')).replace(/<a\b[^>]*href="\/en\/"[^>]*>English<\/a>/g,'');
   const subnav=`<nav class="wl-subnav" aria-label="Wirkungslexikon"><div class="wl-container wl-subnav__inner"><a class="wl-subnav__title" href="/wirkungslexikon/">Wirkungslexikon</a><div class="wl-subnav__links">
-  <a href="/wirkungslexikon/">Übersicht</a><a href="/wirkungslexikon/#karten">Alle Karten</a><a href="/wirkungslexikon/kategorien/">Kategorien</a><a href="/wirkungslexikon/fuer-buerger/">Für Bürgerinnen und Bürger</a><a href="/wirkungslexikon/fuer-redaktionen/">Für Redaktionen</a><a href="/wirkungslexikon/fuer-wissenschaft/">Wissenschaft</a><a href="/wirkungslexikon/methodik/">Methodik</a>${extraSubnav}${mode==='preview'?'<a href="/wirkungslexikon/redaktion/">Redaktion</a>':''}</div></div></nav>`;
+  <a href="/wirkungslexikon/">Übersicht</a><a href="/wirkungslexikon/#karten">Alle Karten</a><a href="/wirkungslexikon/narrativ-melden/">Narrativ melden</a><a href="/wirkungslexikon/kategorien/">Kategorien</a><a href="/wirkungslexikon/fuer-buerger/">Für Bürgerinnen und Bürger</a><a href="/wirkungslexikon/fuer-redaktionen/">Für Redaktionen</a><a href="/wirkungslexikon/fuer-wissenschaft/">Wissenschaft</a><a href="/wirkungslexikon/methodik/">Methodik</a>${extraSubnav}${mode==='preview'?'<a href="/wirkungslexikon/redaktion/">Redaktion</a>':''}</div></div></nav>`;
   const banner=mode==='preview'?`<div class="wl-preview-banner" role="region" aria-label="Redaktionsstatus"><strong>Geschützte Redaktionsvorschau</strong><span>${data.entries.length} Karten im Redaktionsbestand · ${data.entries.filter(e=>e.pruefstatus==='freigegeben').length} freigegeben · Stand ${esc(data.stand)}</span><span>Dauerhaftes Nachschlage- und Analysewerk · diese Vorschau ist nicht öffentlich</span></div>`:'';
   const template=fs.readFileSync(path.join(ROOT,'templates/wirkungslexikon.html'),'utf8');
   const styleVersion=sha(fs.readFileSync(path.join(ROOT,'assets/css/wirkungslexikon.css'))).slice(0,12);
@@ -87,6 +87,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   }
   // Complete static list is the no-JS fallback. Browser enhancement paginates later.
   page('','Wirkungslexikon politischer Sprache',wl.viewStart(new URLSearchParams({ansicht:'liste',anzahl:String(data.entries.length||24)})));
+  page('narrativ-melden/','Narrativ melden',wl.viewNarrativeReport());
   page('kategorien/','Kategorien',wl.viewCategories());
   for(const c of wl.CATS) { const v=wl.viewCategory(c.slug);page(`kategorien/${c.slug}/`,v.title,v.html); }
   for(const a of wl.AREAS.filter(a=>mode==='preview'||!a.internal)) { const v=wl.viewArea(a.key,new URLSearchParams());page((a.key==='ifr'?'institut-fuer-remigration':a.key)+'/',v.title,v.html); }
