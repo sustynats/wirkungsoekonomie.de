@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-16",
+  "scope": "Existing public search curation for the central Methodik page",
+  "before": {
+    "deploymentCommit": "c96b22285dce90307049d28b885e1dc46ac7c681",
+    "query": "Methodik der Wirkungsökonomie",
+    "searchLoadsWithoutManifestError": true,
+    "recommendedEntry": "Wirkungsökonomie verstehen",
+    "centralMethodikPageInVisibleResultGroups": false
+  },
+  "afterLocalBrowser": {
+    "origin": "http://127.0.0.1:8772",
+    "queries": ["Methodik", "Methodik der Wirkungsökonomie"],
+    "recommendedEntry": "Methodik der Wirkungsökonomie",
+    "centralMethodikPageInVisibleResultGroups": true,
+    "recommendedLinkClicked": true,
+    "destination": "/methodik/",
+    "destinationH1": "Methodik der Wirkungsökonomie"
+  },
+  "change": {
+    "existingMechanism": "CURATED_QUERY_ROUTES; recommended entry derived from the indexed canonical page",
+    "addedQueryMappings": 2,
+    "addedHtmlRoutes": 0,
+    "removedHtmlRoutes": 0,
+    "changedPageContent": 0,
+    "changedMenuLabels": 0,
+    "changedPDFs": 0
+  },
+  "tests": {
+    "command": "node --test tests/site/browser-search.test.mjs tests/site/search-api.test.mjs tests/site/journal-freshness.test.mjs",
+    "passed": 24,
+    "failed": 0,
+    "includesP13SuggestAndSearch": true
+  },
+  "publicArtifactNavigation": "Before/after counts are supplied by the full CI artifact reports; unbuilt source HTML is not represented as the deployed site.",
+  "humanProfessionalAcceptance": "Not asserted by these technical and browser checks"
+}
