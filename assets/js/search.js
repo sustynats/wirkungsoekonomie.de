@@ -49,6 +49,8 @@
     weitere: 0,
   };
   const CURATED_QUERY_ROUTES = {
+    methodik: ["/methodik/", "/methodik/datenbasis.html"],
+    "methodik der wirkungsoekonomie": ["/methodik/", "/methodik/datenbasis.html"],
     wirkung: ["/begriffe/wirkung/", "/modell.html", "/kompass.html", "/wirkungsoekonomie.html"],
     "netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
     "positive netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
