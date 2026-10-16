@@ -65,6 +65,8 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   <a href="/wirkungslexikon/">Übersicht</a><a href="/wirkungslexikon/#karten">Alle Karten</a><a href="/wirkungslexikon/kategorien/">Kategorien</a><a href="/wirkungslexikon/fuer-buerger/">Für Bürgerinnen und Bürger</a><a href="/wirkungslexikon/fuer-redaktionen/">Für Redaktionen</a><a href="/wirkungslexikon/fuer-wissenschaft/">Wissenschaft</a><a href="/wirkungslexikon/methodik/">Methodik</a>${extraSubnav}${mode==='preview'?'<a href="/wirkungslexikon/redaktion/">Redaktion</a>':''}</div></div></nav>`;
   const banner=mode==='preview'?`<div class="wl-preview-banner" role="region" aria-label="Redaktionsstatus"><strong>Geschützte Redaktionsvorschau</strong><span>${data.entries.length} Karten im Redaktionsbestand · ${data.entries.filter(e=>e.pruefstatus==='freigegeben').length} freigegeben · Stand ${esc(data.stand)}</span><span>Dauerhaftes Nachschlage- und Analysewerk · diese Vorschau ist nicht öffentlich</span></div>`:'';
   const template=fs.readFileSync(path.join(ROOT,'templates/wirkungslexikon.html'),'utf8');
+  const styleVersion=sha(fs.readFileSync(path.join(ROOT,'assets/css/wirkungslexikon.css'))).slice(0,12);
+  const scriptVersion=sha(['assets/js/wirkungslexikon.mjs','assets/js/wirkungslexikon-init.mjs'].map(rel=>fs.readFileSync(path.join(ROOT,rel),'utf8')).join('\n')).slice(0,12);
   const pages=[];
   function page(rel,title,html,entry=null) {
     const url=`${site}/wirkungslexikon/${rel}`;
@@ -77,7 +79,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
       meta+=`<script type="application/ld+json">${JSON.stringify(json).replaceAll('<','\\u003c')}</script>`;
       meta+=`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Wirkungslexikon',item:site+'/wirkungslexikon/'},{'@type':'ListItem',position:2,name:title,item:url}]}).replaceAll('<','\\u003c')}</script>`;
     }
-    const replacements={TITLE:esc(title),DESCRIPTION:esc(description),ROBOTS:mode==='preview'?'noindex, nofollow, noarchive':'index, follow',META:meta,HEADER:header,FOOTER:footer,SUBNAV:subnav,BANNER:banner,CONTENT:wl.rewriteRoutes(html)};
+    const replacements={TITLE:esc(title),DESCRIPTION:esc(description),ROBOTS:mode==='preview'?'noindex, nofollow, noarchive':'index, follow',META:meta,HEADER:header,FOOTER:footer,SUBNAV:subnav,BANNER:banner,CONTENT:wl.rewriteRoutes(html),STYLE_VERSION:styleVersion,SCRIPT_VERSION:scriptVersion};
     const result=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>replacements[key]??'');
     write(rel+'index.html',result);
     pages.push({path:'/wirkungslexikon/'+rel,title,description});
