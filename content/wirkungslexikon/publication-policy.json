@@ -1,0 +1,43 @@
+{
+  "lexikon": {
+    "released": true,
+    "publicArtifact": {
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungslexikon-v9-20261016-final/wirkungslexikon-public-v9-20261016-final.tar.gz",
+      "sha256": "73556291c74b1bcfa598b5047264b97a8c177b32f6680a6fd6a1fe1553385000",
+      "cards": 180,
+      "families": 20,
+      "programmeDossiers": 21,
+      "privateCards": 0
+    },
+    "status": "V9_DIRECT_HUMAN_APPROVAL",
+    "historicalV3Approval": {
+      "person": "Natalie Weber",
+      "date": "2026-10-15T20:09:42.401Z",
+      "approvalReference": "Direkte Chat-Freigabe und Livegang-Auftrag vom 15.10.2026"
+    },
+    "version": "V9",
+    "person": "Natalie Weber",
+    "approvalReceipt": "natalie-weber-v9-final-20261016",
+    "archiveSha256": "a0d7f812580c380c78958b9ac5e094ed2e34e6c26ce037ec5afa88cb51af6315",
+    "dataSha256": "e902d58b6c329a347a289f937819f7813101912717d3a51f24371f19bd07876b",
+    "payloadSha256": "2a198ad1bc3dffcef5d7f91004b130eb69c8b61f5af1e27983b30d00f98ce13c"
+  },
+  "journal": {
+    "released": false,
+    "requiresLexiconLive": true,
+    "requiresNatalieWeberApproval": true,
+    "sourceVersion": "V9"
+  },
+  "linkedin": {
+    "released": false,
+    "requiresLexiconLive": true,
+    "requiresNatalieWeberApproval": true,
+    "sourceVersion": "V9"
+  },
+  "preview": {
+    "authenticationRequired": true,
+    "robots": "noindex, nofollow, noarchive",
+    "noPublicSearch": true
+  },
+  "notes": "Direkte neue Freigabe der Abschlussfassung durch Natalie Weber am 16.10.2026; Originale und frühere Sperren bleiben privat versioniert. Keine automatische Freigabe späterer Änderungen."
+}

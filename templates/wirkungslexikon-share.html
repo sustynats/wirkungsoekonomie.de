@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Wirkungskarte – Social-Card-Vorlage</title>
+<!--
+  PRODUKTIONSVORLAGE für Social-Cards (Codex): wird beim Build je FREIGEGEBENER Karte
+  per Chrome headless gerendert (wie scripts/news/title-image), z. B.
+    chrome --headless --window-size=1200,630 --screenshot=og/<slug>.png "share-card.html?slug=<slug>&format=og"
+  Formate: og 1200×630 · portrait 1080×1350 · square 1080×1080
+  Parameter: slug, format, entwurf=1 (erzwingt Entwurfsmarke; automatisch bei pruefstatus ≠ freigegeben)
+-->
+<style>
+@font-face{font-family:"Playfair Display";font-weight:500;src:url("fonts/playfair-display-500.woff2") format("woff2");}
+@font-face{font-family:"Playfair Display";font-weight:600;src:url("fonts/playfair-display-600.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-weight:400;src:url("fonts/source-sans-3-400.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-weight:600;src:url("fonts/source-sans-3-600.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-weight:700;src:url("fonts/source-sans-3-700.woff2") format("woff2");}
+:root{--ink:#0B1020;--slate:#24314F;--ivory:#F6F1E8;--muted:#4A4A44;--line:#D9D1C2;--green:#174F38;--flag:#5E4300;--flagbg:#FFF3D6;--gold:#C89B3C;--nachher:#EDF0F6;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{background:var(--ivory);}
+.card{position:relative;width:var(--w);height:var(--h);overflow:hidden;background:var(--ivory);color:var(--ink);
+  font-family:"Source Sans 3",system-ui,sans-serif;display:flex;flex-direction:column;padding:var(--pad);gap:var(--gap);}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:10px;background:var(--slate);}
+.top{display:flex;align-items:center;gap:16px;}
+.top img{width:var(--logo);height:var(--logo);}
+.brand{display:flex;flex-direction:column;gap:2px;}
+.brand b{font-weight:700;font-size:var(--fs-brand);letter-spacing:.12em;color:var(--green);}
+.brand span{font-weight:600;font-size:var(--fs-brand);letter-spacing:.08em;color:var(--muted);text-transform:uppercase;}
+.draft{margin-left:auto;align-self:flex-start;padding:8px 14px;border:2px solid var(--gold);border-radius:6px;background:var(--flagbg);color:var(--flag);font-weight:700;font-size:var(--fs-brand);letter-spacing:.06em;}
+.term{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:var(--fs-term);line-height:1.06;letter-spacing:-.015em;
+  display:-webkit-box;-webkit-line-clamp:var(--term-lines);-webkit-box-orient:vertical;overflow:hidden;text-wrap:balance;}
+.shift{flex:0 1 auto;min-height:0;display:grid;grid-template-columns:var(--cols);gap:0;align-items:stretch;}
+.box{min-height:0;display:flex;flex-direction:column;gap:10px;padding:var(--box-pad);border-radius:16px;overflow:hidden;}
+.box.v{background:#fff;border:1.5px solid #B9B0A0;}
+.box.n{background:var(--nachher);border:2.5px solid var(--slate);}
+.box small{font-weight:700;font-size:var(--fs-label);letter-spacing:.1em;color:var(--muted);}
+.box p{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:var(--fs-box);line-height:1.32;
+  display:-webkit-box;-webkit-line-clamp:var(--box-lines);-webkit-box-orient:vertical;overflow:hidden;}
+.arrow{display:grid;place-items:center;color:var(--slate);}
+.arrow svg{width:var(--arrow);height:var(--arrow);transform:var(--arrow-rot);}
+.mech{flex:0 1 auto;min-height:0;display:flex;flex-direction:column;gap:12px;}
+.mech small{font-weight:700;font-size:var(--fs-label);letter-spacing:.1em;color:var(--muted);}
+.mech strong{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:calc(var(--fs-box) * 1.3);line-height:1.2;}
+.mech p{font-size:var(--fs-box);line-height:1.4;display:-webkit-box;-webkit-line-clamp:var(--box-lines);-webkit-box-orient:vertical;overflow:hidden;}
+.ladder{margin-top:auto;display:grid;gap:10px;}
+.ladder small{font-weight:700;font-size:var(--fs-label);letter-spacing:.1em;color:var(--muted);}
+.ladder ol{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:8px;}
+.ladder li{display:flex;flex-direction:column;gap:6px;padding:12px 12px 14px;border:1.5px solid var(--line);border-radius:10px;background:#FBF8F2;}
+.ladder li b{font-family:"Playfair Display",Georgia,serif;font-size:calc(var(--fs-box) * 1.2);line-height:1;color:#8F897C;display:flex;justify-content:space-between;align-items:center;}
+.ladder li b i{width:14px;height:14px;border-radius:50%;border:2.5px dotted #5C5A52;}
+.ladder li span{font-size:var(--fs-label);line-height:1.2;color:var(--muted);font-weight:600;}
+.ladder li.on{background:#fff;border-color:var(--ink);}
+.ladder li.on b{color:var(--ink);} .ladder li.on b i{border:0;background:var(--ink);}
+.og .ladder{display:none;}
+.mech + .foot,.shift + .foot{margin-top:auto;}
+.foot{display:grid;gap:8px;padding-top:18px;border-top:1.5px solid var(--line);}
+.ev{display:flex;align-items:center;gap:12px;font-weight:700;font-size:var(--fs-foot);}
+.ev i{width:18px;height:18px;border-radius:50%;flex:none;}
+.ev i.b{background:var(--ink);} .ev i.o{border:2.5px dotted #5C5A52;}
+.url{font-size:calc(var(--fs-foot) * .9);color:var(--muted);}
+/* Formate */
+.og{--w:1200px;--h:630px;--pad:46px 64px 40px;--gap:22px;--logo:46px;--fs-brand:15px;--fs-term:52px;--term-lines:2;--cols:1fr 64px 1fr;--box-pad:18px 22px;--fs-label:13px;--fs-box:22px;--box-lines:4;--arrow:40px;--arrow-rot:none;--fs-foot:20px;}
+.portrait{--w:1080px;--h:1350px;--pad:72px 72px 64px;--gap:36px;--logo:60px;--fs-brand:20px;--fs-term:78px;--term-lines:3;--cols:1fr;--box-pad:28px 32px;--fs-label:17px;--fs-box:34px;--box-lines:5;--arrow:52px;--arrow-rot:rotate(90deg);--fs-foot:26px;}
+.portrait .shift{grid-template-rows:auto 72px auto;}
+.square{--w:1080px;--h:1080px;--pad:64px 68px 56px;--gap:28px;--logo:56px;--fs-brand:18px;--fs-term:66px;--term-lines:2;--cols:1fr;--box-pad:22px 28px;--fs-label:15px;--fs-box:28px;--box-lines:3;--arrow:44px;--arrow-rot:rotate(90deg);--fs-foot:24px;}
+.square .shift{grid-template-rows:auto 58px auto;}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="data/lexikon-daten.js"></script>
+<script>
+(function(){
+  const p=new URLSearchParams(location.search);
+  const fmt=['og','portrait','square'].includes(p.get('format'))?p.get('format'):'og';
+  const e=WL_DATA.entries.find(x=>x.slug===p.get('slug'))||WL_DATA.entries.find(x=>x.slug==='neue-merz-problem-im-stadtbild');
+  const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  /* Kurzlabels & Stufen identisch zu js/wirkungslexikon.js (KORPUS, TYP_STUFE) */
+  const SHORT={'AfD – offizielle Programmatik':'AfD · Programmatik','AfD – Bundestagsanträge':'AfD · Bundestagsantrag','Sellner / Institut für Remigration – Website':'Sellner/IFR · Website','Sellner / IFR – Policy Paper Sachsen-Anhalt 2026':'Sellner/IFR · Papier Sachsen-Anhalt (sekundär)','CDU/CSU – dokumentierte öffentliche Aussagen':'CDU/CSU · öffentliche Aussage','Begriffe & Symbole – Bedeutungswandel':'Begriff & Symbol','Zivilgesellschaft – Gegenrahmungen':'Zivilgesellschaft · Gegenrahmung','Offene Recherche – noch keiner Organisation als Zitat zugeordnet':'Offene Recherche · kein Zitat'};
+  const STUFE={'parlamentarische Debatte':'B','dokumentierter Parlamentsvorgang':'B','dokumentierte öffentliche Reaktion':'C','öffentliche Gegenrahmung':'C','dokumentierte Rücknahme':'C','journalistischer Faktencheck':'C','dokumentierte Gegenrede':'C','dokumentierte Präzisierung':'C','beobachtete Mobilisierung':'C','parlamentarische Entscheidung':'C','parlamentarische Ablehnung':'C','Antragsablehnung':'C','parlamentarischer Prozess':'C','institutionelle Entscheidung':'D','nachweisbare Regeländerung':'D','staatliche Umsetzung einer Regel':'D','normative Regelung':'D','dokumentierte Entscheidung':'D'};
+  const stufe=t=>STUFE[t]||null; /* unbekannter Typ → keine Stufe (wie genereller experimenteller Mechanismus) */
+  const bv=e.bedeutungsverschiebung, bw=e.beobachtete_wirkung, lvl=bw&&stufe(bw.typ);
+  const draft=e.pruefstatus!=='freigegeben'||p.get('entwurf')==='1';
+  const d=/^(\d{4})-(\d{2})-(\d{2})/.exec(e.geprueft_am||''); const date=d?`${+d[3]}.${+d[2]}.${d[1]}`:'';
+  /* Mini-Evidenzleiter: A belegt, wenn Quelle (nicht Kandidat); B–D aus Befundtyp; E/F derzeit nie */
+  function ladderHtml(){
+    const on={A:e.quellen.length>0&&e.pruefstatus!=='recherchekandidat_originalstelle_fehlt'}; if(lvl) on[lvl]=true;
+    const names={A:'Text',B:'Output',C:'Reaktion',D:'Institution',E:'Einstellung',F:'Kausal'};
+    return `<div class="ladder"><small>EVIDENZLEITER · WAS ÜBER DIE WIRKUNG BELEGT IST</small><ol>${'ABCDEF'.split('').map(l=>`<li class="${on[l]?'on':''}"><b>${l}<i></i></b><span>${names[l]}</span></li>`).join('')}</ol></div>`;
+  }
+  const arrow='<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 16h22M19 9l7 7-7 7"/></svg>';
+  const body=(bv.urspruengliche_bedeutung&&bv.politisch_verwendete_bedeutung)
+    ? `<div class="shift"><div class="box v"><small>AUSGANGSBEDEUTUNG</small><p>${esc(bv.urspruengliche_bedeutung)}</p></div><div class="arrow">${arrow}</div><div class="box n"><small>IM POLITISCHEN GEBRAUCH</small><p>${esc(bv.politisch_verwendete_bedeutung)}</p></div></div>`
+    : `<div class="mech"><small>PSYCHOLOGISCHER MECHANISMUS</small><strong>${esc(e.psychologischer_effekt.name)}</strong><p>${esc(e.bedeutung_und_kontext)}</p></div>${ladderHtml()}`;
+  document.getElementById('root').innerHTML=`<article class="card ${fmt}" aria-label="Wirkungskarte ${esc(e.begriff)}">
+    <div class="top"><img src="img/signet.svg" alt=""><div class="brand"><b>WIRKUNGSLEXIKON POLITISCHER SPRACHE</b><span>${esc(SHORT[e.korpus]||e.korpus)}</span></div>${draft?'<span class="draft">ENTWURF · NICHT FREIGEGEBEN</span>':''}</div>
+    <h1 class="term">${esc(e.begriff)}</h1>
+    ${body}
+    <div class="foot"><p class="ev"><i class="${lvl?'b':'o'}"></i>${lvl?`Beobachtet: ${esc(bw.typ)} (Stufe ${lvl}) – keine Einstellungsänderung gemessen`:'Keine spezifische Wirkung nachgewiesen'}</p>
+      <p class="url">wirkungsoekonomie.de/wirkungslexikon/${esc(e.slug)}/ · Stand ${date}</p></div>
+  </article>`;
+  document.body.style.width=getComputedStyle(document.querySelector('.card')).width;
+})();
+</script>
+</body>
+</html>

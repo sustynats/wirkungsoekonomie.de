@@ -52,7 +52,7 @@ function generatedPageRoute(hubRoute, page) {
   return `/${area}/seite/${page}/`;
 }
 
-function removeGeneratedPages(root) {
+function removeGeneratedPages(root, selectedRoutes = null) {
   const removed = new Set();
   const cardsByArea = new Map();
   const visit = (directory) => {
@@ -66,6 +66,7 @@ function removeGeneratedPages(root) {
         const canonical = html.match(/<link\b[^>]*\brel=["']canonical["'][^>]*\bhref=["']([^"']+)["'][^>]*>/i)?.[1];
         if (canonical) {
           const route = new URL(canonical, SITE_ORIGIN).pathname;
+          if (selectedRoutes && !selectedRoutes.has(route)) continue;
           removed.add(route);
           const match = route.match(/^\/([^/]+)\/seite\/(\d+)\/$/);
           if (match && HEAVY_CARD_CLASSES.has(match[1])) {
@@ -263,18 +264,23 @@ function areaGroups(routes) {
   return byHub;
 }
 
-export function buildPublicAreaDirectories(root) {
+export function buildPublicAreaDirectories(root, { onlyAreas = null } = {}) {
   const absoluteRoot = path.resolve(root);
-  const previous = removeGeneratedPages(absoluteRoot);
+  const previousManifestPath = path.join(absoluteRoot, DIRECTORY_MANIFEST);
+  const previousManifest = fs.existsSync(previousManifestPath) ? JSON.parse(fs.readFileSync(previousManifestPath, "utf8")) : { areas: [] };
+  const allGenerated = new Set(previousManifest.areas.flatMap(area => (area.generatedPages || []).map(page => page.url)));
+  const selectedGenerated = onlyAreas ? new Set(previousManifest.areas.filter(area => onlyAreas.includes(area.area)).flatMap(area => (area.generatedPages || []).map(page => page.url))) : null;
+  const previous = removeGeneratedPages(absoluteRoot, selectedGenerated);
   const routeManifestPath = path.join(absoluteRoot, DEFAULT_MANIFEST);
   if (!fs.existsSync(routeManifestPath)) throw new Error(`Public route manifest is missing: ${routeManifestPath}`);
   const routeManifest = JSON.parse(fs.readFileSync(routeManifestPath, "utf8"));
-  const routes = (routeManifest.routes || []).filter((route) => !previous.removed.has(route.url));
+  const routes = (routeManifest.routes || []).filter((route) => !previous.removed.has(route.url) && !allGenerated.has(route.url));
   const groups = areaGroups(routes);
-  const output = [];
-  const covered = new Set();
+  const output = onlyAreas ? previousManifest.areas.filter(area => !onlyAreas.includes(area.area)) : [];
+  const covered = new Set(onlyAreas ? [...groups.values()].filter(group => !onlyAreas.includes(group.area)).flatMap(group => group.routes.map(route => route.url)) : []);
 
   for (const group of groups.values()) {
+    if (onlyAreas && !onlyAreas.includes(group.area)) continue;
     const hubFile = routeToFile(absoluteRoot, group.hubRoute);
     if (!fs.existsSync(hubFile)) throw new Error(`Public area hub is missing: ${group.hubRoute}`);
     const original = fs.readFileSync(hubFile, "utf8");
