@@ -29,7 +29,9 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
     empty_results:'Zu dieser Suche gibt es derzeit keinen passenden Eintrag. Versuchen Sie einen anderen Begriff oder setzen Sie die Filter zurück.',
     disclaimer_pilot:undefined};
   const history = Object.fromEntries(Object.entries(model.editorial.history).filter(([slug])=>data.entries.some(e=>e.slug===slug)));
-  const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras};
+  const inventory=read(path.join(CONTENT,'bestandszahlen.json'));
+  if(!inventory||inventory.originalCards!==180||inventory.uniqueCandidates!==inventory.newCandidates+inventory.priorCandidates-inventory.overlap||inventory.totalDistinct!==inventory.originalCards+inventory.uniqueCandidates||inventory.watchlistExcluded<0)throw Error('LEXIKON_BESTANDSZAHLEN_UNSTIMMIG');
+  const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras,inventoryCounts:{totalDistinct:inventory.totalDistinct,uniqueCandidates:inventory.uniqueCandidates,asOf:inventory.asOf}};
   const full=createLexicon(model.data,{mode:'preview'});
   const strings=new Set();
   const walk=v=>{ if(typeof v==='string'&&full.isBoiler(v)) strings.add(v); else if(Array.isArray(v)) v.forEach(walk); else if(v&&typeof v==='object') Object.values(v).forEach(walk); };
