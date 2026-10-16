@@ -19,6 +19,8 @@ try{
   await page.setViewportSize({width,height:900});
   for(const rel of paths){
    const response=await page.goto(base+'/'+rel.replace(/index\.html$/,''),{waitUntil:'domcontentloaded'});assert.equal(response.status(),200,rel);
+   // This existing directory alias navigates to its HTML target in the browser.
+   if(rel==='sdg-plus/medien-demokratie/index.html')await page.waitForURL('**/sdg-plus/medien-demokratie.html');
    if(rel.startsWith('wirkungslexikon/'))await page.waitForFunction(()=>document.documentElement.dataset.wlReady==='true');
    for(const block of blocks.filter(b=>b.paths.includes(rel))){
     const section=page.locator('[data-wl-reference="'+block.id+'"]');assert.equal(await section.count(),1,block.id);assert.equal(await section.getAttribute('aria-labelledby'),block.id+'-title');
@@ -30,7 +32,7 @@ try{
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth);assert.equal(overflow,false,rel+' overflow');
    let violations=[];
    if(process.env.WL_AXE_PATH){await page.addScriptTag({path:process.env.WL_AXE_PATH});violations=await page.evaluate(async()=> (await axe.run({include:[['[data-wl-reference]']]},{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}})).violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)})));assert.deepEqual(violations,[],rel);}
-   rows.push({path:rel,width,blocks:blocks.filter(b=>b.paths.includes(rel)).map(b=>b.id),overflow,violations});
+   rows.push({path:rel,actualUrl:page.url(),width,blocks:blocks.filter(b=>b.paths.includes(rel)).map(b=>b.id),overflow,violations});
    if(['wirkungslexikon/index.html','verstehen/sdgs-sdgplus/index.html'].includes(rel)){await page.locator('[data-wl-reference]').first().scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,(rel.startsWith('wirkungslexikon/')?'LEXIKON':'SDGPLUS')+'-'+width+'.png')});}
   }
  }

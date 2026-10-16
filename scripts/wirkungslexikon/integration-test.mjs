@@ -36,7 +36,7 @@ for(const rel of new Set(referenceBlocks.flatMap(b=>b.paths))){
   for(const link of [...b.links,...b.items||[]]){const url=new URL(link.href,base),file=resolveFile(url);assert(fs.existsSync(file),link.href);if(url.hash)assert(new RegExp('\\sid=["\']'+url.hash.slice(1)+'["\']').test(fs.readFileSync(file,'utf8')),link.href);}
  }
 }
-checks.push({name:'Contextual SDG+ links on all 22 pages resolve with seven canonical dimension anchors',status:'PASS'});
+checks.push({name:'Contextual SDG+ links on all 27 pages resolve with seven canonical dimension anchors',status:'PASS'});
 const routes=read(path.join(artifact,'assets/data/public-routes.json'));
 const routeText=JSON.stringify(routes);
 for(const e of data.entries)assert(routeText.includes('/wirkungslexikon/'+e.slug+'/'));
