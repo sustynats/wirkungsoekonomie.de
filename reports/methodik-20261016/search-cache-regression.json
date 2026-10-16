@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-16",
+  "scope": "Root service worker: mutable search manifest freshness",
+  "before": {
+    "tests": 19,
+    "passed": 16,
+    "failed": 3,
+    "failure": "Saved schema 1 delivered instead of current schema 2 on first online request"
+  },
+  "after": {
+    "tests": 24,
+    "passed": 24,
+    "failed": 0,
+    "suites": [
+      "journal-freshness",
+      "browser-search",
+      "search-api"
+    ]
+  },
+  "productionChange": "Add the search manifest to the existing network-first publication-index paths",
+  "unchanged": [
+    "content",
+    "URLs",
+    "menu labels",
+    "PDF bytes",
+    "cache namespaces",
+    "private data handling"
+  ],
+  "humanProfessionalAcceptance": "Not asserted by technical regression tests"
+}
