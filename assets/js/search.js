@@ -23,6 +23,7 @@
   const MAX_VISIBLE_RESULTS = 24;
   const SEARCH_RESULT_CACHE_LIMIT = 40;
   const SEARCH_GROUPS = [
+    { id: "wirkungslexikon", label: i18n("Wirkungslexikon", "Political language lexicon"), max: 4 },
     { id: "fragen", label: i18n("Fragen & Einwände", "Questions & objections"), max: 4 },
     { id: "begriffe", label: i18n("Begriffe", "Terms"), max: 5 },
     { id: "grundlagen", label: i18n("Grundlagen", "Foundations"), max: 4 },
@@ -36,6 +37,7 @@
     { id: "weitere", label: i18n("Weitere Treffer", "More results"), max: 4 },
   ];
   const GROUP_SCORE_BONUS = {
+    wirkungslexikon: 135,
     fragen: 340,
     begriffe: 260,
     grundlagen: 135,
@@ -350,6 +352,7 @@
   }
 
   function classifyEntry(entry) {
+    if (String(entry.url || "").startsWith("/wirkungslexikon/")) return "wirkungslexikon";
     const url = normalize(entry.url);
     const title = normalize(entry.title);
     const section = normalize(entry.section);
@@ -437,6 +440,7 @@
   }
 
   function getDisplayBadge(entry, groupId) {
+    if (groupId === "wirkungslexikon") return entry.type === "Wirkungskarte" ? "Wirkungskarte" : "Wirkungslexikon";
     if (groupId === "fragen") return "Frage";
     if (groupId === "begriffe") return "Begriff";
     if (groupId === "grundlagen") return "Grundlage";

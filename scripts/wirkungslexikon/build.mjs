@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { ROOT, CONTENT, loadModel, publicData, read, atomic, sha } from './model.mjs';
 import {digest} from './v9-store.mjs';
 import {renderSiteFooter,renderFooterNewsletter} from '../lib/site-shell.mjs';
+import {loadReferenceLinks,applyReferenceLinks} from './reference-links.mjs';
 import { createLexicon } from '../../assets/js/wirkungslexikon.mjs';
 
 export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexikon',mode), model=null, assets=true, textOverrides={}, configExtras={}, extraPages=[], extraSubnav='', negativePublicationTest=false}={}) {
@@ -33,6 +34,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   const strings=new Set();
   const walk=v=>{ if(typeof v==='string'&&full.isBoiler(v)) strings.add(v); else if(Array.isArray(v)) v.forEach(walk); else if(v&&typeof v==='object') Object.values(v).forEach(walk); };
   data.entries.forEach(walk);config.boilerTexts=[...strings];
+  const referenceBlocks=loadReferenceLinks();config.referenceLinks=referenceBlocks.length>0;
   const wl=createLexicon(data,config);
   const esc=wl.esc;
   const site='https://wirkungsoekonomie.de';
@@ -81,7 +83,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
     }
     const replacements={TITLE:esc(title),DESCRIPTION:esc(description),ROBOTS:mode==='preview'?'noindex, nofollow, noarchive':'index, follow',META:meta,HEADER:header,FOOTER:footer,SUBNAV:subnav,BANNER:banner,CONTENT:wl.rewriteRoutes(html),STYLE_VERSION:styleVersion,SCRIPT_VERSION:scriptVersion};
     const result=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>replacements[key]??'');
-    write(rel+'index.html',result);
+    write(rel+'index.html',applyReferenceLinks(result,'wirkungslexikon/'+rel+'index.html',referenceBlocks).html);
     pages.push({path:'/wirkungslexikon/'+rel,title,description});
     if(entry) write(rel+'daten.json',entry);
   }

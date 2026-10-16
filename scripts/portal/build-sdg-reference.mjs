@@ -1,4 +1,5 @@
 import {renderSiteHeader} from '../lib/site-shell.mjs';
+import {applyReferenceLinks} from '../wirkungslexikon/reference-links.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -492,7 +493,7 @@ ${body(base, route)}
   </body>
 </html>
 `;
-  fs.writeFileSync(out, html.replace(/[ \t]+$/gm, ""), "utf8");
+  fs.writeFileSync(out, applyReferenceLinks(html,rel).html.replace(/[ \t]+$/gm, ""), "utf8");
 }
 
 function printActions(extra = "") {
