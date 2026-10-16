@@ -747,6 +747,15 @@ export function createLexicon(DATA, config = {}) {
     const funktionIsMech = e.moegliche_kommunikative_funktion === pe.allgemeiner_mechanismus;
 
     const nodes = [];
+    const example = (MODE==='preview'||config.examplesV10) && e.redaktion_v10_beispiel_und_erklaerung;
+    if(example){
+      nodes.push({id:'kurz-gesagt',ev:'deutung',step:'Wortwahl',title:'Was hier gesagt wird',body:`<p><strong>${termHtml(e.lemma_kurz||e.begriff)}</strong> · ${esc(e.akteur)}</p><p class="wl-small">Untersuchter Ausdruck bzw. redaktionelles Lemma. <a href="#original">Originalwortlaut, Kontext und Zitatstatus prüfen</a>.</p>`});
+      nodes.push({id:'alltagsbeispiel',ev:'potenzial',step:'Alltag',title:'Ein Beispiel aus dem Alltag',body:`<div class="wl-example"><p class="wl-example__label">Gedankenbeispiel - keine dokumentierte Begebenheit</p><p>${esc(example.didaktisches_beispiel)}</p></div>`});
+      nodes.push({id:'wortwahl',ev:'deutung',step:'Vorstellung',title:'Was die Wortwahl nahelegt',body:`<p>${esc(example.direkte_erklaerung)}</p><p>${esc(example.was_der_satz_verschiebt)}</p>`});
+      nodes.push({id:'gefuehle',ev:'potenzial',step:'Gefühle',title:'Welche Gefühle angesprochen werden können',body:`<p>${esc(example.emotionales_potenzial_als_hypothese)}</p><p class="wl-small">Mögliche Reaktionen unter bestimmten Bedingungen; keine gemessenen Gefühle einzelner Menschen.</p>`});
+      nodes.push({id:'betroffene',ev:'potenzial',step:'Betroffene',title:'Wer betroffen ist und was daraus werden kann',body:`<p>${esc(example.betroffene)}</p><dl class="wl-facts"><div class="wl-facts__full"><dt>Wirkungspotenzial</dt><dd>${esc(wp.moegliche_veraenderung)}</dd></div><div class="wl-facts__full"><dt>Bedingungen</dt><dd>${esc(wp.bedingungen)}</dd></div><div class="wl-facts__full"><dt>Mögliche Gegenwirkung</dt><dd>${esc(wp.gegenwirkung)}</dd></div><div class="wl-facts__full"><dt>Längerfristiger möglicher Pfad</dt><dd>${esc(e.langfristiges_potenzial)}</dd></div></dl><p><a href="#ziel">Dokumentierte politische Forderungen und interpretierte Funktionen getrennt prüfen</a>.</p>`});
+      nodes.push({id:'evidenz-kurz',ev:'beleg',step:'Nachweis',title:'Was belegt ist und was offen bleibt',body:`<p>Das Gedankenbeispiel erläutert eine Möglichkeit. Es belegt weder einen realen Vorfall noch eine eingetretene Einstellungsänderung. Die Quellenlage der untersuchten Verwendung bleibt davon getrennt.</p><ul><li><a href="#original">Originalverwendung und Kontext</a></li><li><a href="#beobachtet">Dokumentierte Vorgänge, Reaktionen und Evidenzgrenzen</a></li><li><a href="#quellen">Quellen und Revisionsverlauf</a></li></ul>`});
+    }
     /* 1 ─ Original */
     nodes.push({ id: 'original', ev: isKandidat ? 'offen' : 'beleg', step: 'Quelle', title: 'Im Original', body: `
       ${config.v9&&MODE==='preview'?'<p class="wl-guard">Angaben des V8-Redaktionsentwurfs; menschliche Original- und Kontextprüfung noch nicht bestätigt. Der historische V3-Prüfstatus bleibt erhalten.</p>':''}
@@ -954,7 +963,7 @@ export function createLexicon(DATA, config = {}) {
     <div class="wl-container">
       <nav class="wl-breadcrumb" aria-label="Brotkrumen"><ol><li><a href="#/">Start</a></li><li><a href="#/">Wirkungslexikon</a></li>
         ${area ? `<li><a href="${href('/bereich/' + area.key)}">${esc(area.title)}</a></li>` : ''}<li aria-current="page">${termHtml(e.begriff)}</li></ol></nav>
-      <header class="wl-card-head">
+      <header class="wl-card-head${example?' wl-card-head--examples':''}">
         <div class="wl-card-head__top">${sourceChip(e)}${MODE === 'preview' ? flagFor(e) : ''}</div>
         <h1 class="wl-term">${termHtml(e.begriff)}</h1>
         <ul class="wl-term-meta">
@@ -964,16 +973,18 @@ export function createLexicon(DATA, config = {}) {
         </ul>
         <ul class="wl-tag-list" aria-label="Kategorien">${e.kategorien.map((c) => `<li>${catTag(c)}</li>`).join('')}</ul>
         ${MODE === 'preview' ? `<p><a class="wl-btn wl-btn--secondary" href="/wirkungslexikon/redaktion/?slug=${esc(e.slug)}">Karte redaktionell bearbeiten</a></p>` : ''}
-        <nav class="wl-audience-switch" aria-label="Lesezugang"><a href="#wirkkette">Verständlich erklärt</a><a href="#original">Journalistische Recherche</a><a href="#quellen">Wissenschaft und Analyse</a></nav>
+        <nav class="wl-audience-switch" aria-label="Lesezugang"><a href="${example?'#alltagsbeispiel':'#wirkkette'}">Verständlich erklärt</a><a href="#original">Journalistische Recherche</a><a href="#quellen">Wissenschaft und Analyse</a></nav>
+        ${example?'<details class="wl-card-tools"><summary>Teilen, zitieren, drucken oder Fehler melden</summary>':''}
         <div class="wl-actions">
           <button class="wl-btn" type="button" data-share="${esc(e.slug)}">${ICON.share}Karte teilen</button>
           <button class="wl-btn wl-btn--secondary" type="button" data-cite="${esc(e.slug)}">${ICON.cite}Zitieren</button>
           <button class="wl-btn wl-btn--secondary" type="button" data-print>${ICON.print}Drucken/PDF</button>
           <button class="wl-btn wl-btn--ghost" type="button" data-report="${esc(e.slug)}">${ICON.flag}${esc(UI.report_problem || 'Fehler melden')}</button>
         </div>
+        ${example?'</details>':''}
         ${MODE === 'preview' && e.pruefstatus !== 'freigegeben' ? `<div class="wl-flag-panel" style="margin-top:var(--wl-s5)"><strong>Interne Vorschau · ${esc(STATUS[e.pruefstatus])}</strong><p>${esc(e.redaktioneller_vorbehalt)} Diese Seite ist nicht öffentlich, nicht indexiert und nicht teilbar.</p></div>` : ''}
       </header>
-      <div class="wl-card-layout">
+      <div class="wl-card-layout${example?' wl-card-layout--examples':''}">
         <nav class="wl-toc wl-toc--bar" aria-label="Abschnitte dieser Karte"><ol>${toc}</ol></nav>
         <div class="wl-card-main">
           <ol class="wl-path">${nodes.map((n, i) => `<li class="wl-node" data-ev="${n.ev}" id="${n.id}" aria-labelledby="${n.id}-h">
