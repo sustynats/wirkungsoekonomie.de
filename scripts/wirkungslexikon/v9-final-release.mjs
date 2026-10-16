@@ -41,6 +41,8 @@ const entries=merged.entries.map(e=>{
  projected.publication={approval:receipt.id,sourceRevision:store.objects[e.id].draftHash,quoteClass:p?.quellen_rolle||(lemma?'REDAKTIONELLES_LEMMA_KEIN_ORIGINALZITAT':'QUELLENAUSZUG'),quoteDisplay:!lemma,sourceKind:secondary?'secondary':'primary'};
  projected.zitierstatus=lemma?'Redaktionelles Lemma - kein Sprecherzitat':secondary?'Wörtlicher Quellenauszug; Quellenrolle beachten':'Belegter Quellenauszug; siehe Originalfundstelle';
  projected.redaktioneller_vorbehalt='Fachlich und zur Veröffentlichung freigegeben durch Natalie Weber, 16.10.2026. Quellenbehauptungen bleiben attribuiert; Wirkungspotenziale sind keine empirisch nachgewiesenen Einzelfallwirkungen.';
+ const historicalGate='Originalfundstelle redaktionell rekonstruiert; keine Freigabe, Veröffentlichung oder Änderung des gesperrten Masterstatus. Vor Publikation abschließende Prüfung durch Natalie Weber, einschließlich behaupteter Tatsachen und rechtlicher Einordnung.';
+ if(e.redaktioneller_vorbehalt.startsWith(historicalGate)){const substantive=e.redaktioneller_vorbehalt.slice(historicalGate.length).trim();if(substantive)projected.redaktioneller_vorbehalt+=' '+substantive;}
  if(e.slug.startsWith('offen-')){const afd=/\bAfD\b/.test(e.akteur);corpora[e.id]={key:afd?'afd-aussagen':'belegte-begriffsverwendung',short:afd?'AfD · dokumentierte Aussage':e.akteur,area:afd?'afd':'umdeutungen'};projected.korpus=afd?'AfD - dokumentierte öffentliche Aussage':'Belegte Begriffsverwendung - unterschiedliche Urheber';}
  if(e.korpus.includes('Policy Paper'))corpora[e.id]={key:'ifr-papier',short:'Sellner/IFR · Originalpapier Sachsen-Anhalt',area:'ifr',sekundaer:false};
  confirmedNarrativeLinks[e.id]=e.narrativeinordnung_v7?.narrativ_ids||[];
