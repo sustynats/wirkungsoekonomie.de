@@ -1,7 +1,45 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-16T10:00:00.000Z",
+  "updated_at": "2026-10-16T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-16-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-16",
+      "window_from": "2026-10-16T10:00:00.000Z",
+      "window_to": "2026-10-16T16:00:00.000Z",
+      "stand": "2026-10-16T16:00:00.000Z",
+      "headline": "Das sind die 2 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 2,
+        "neu": 1,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt in Kraft: Spritpreise fallen zunächst, Weitergabe bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-16T11:31:11.044Z",
+          "score": 7.5033
+        },
+        {
+          "story_id": "wt-efc8097ce6352310",
+          "slug": "teen-shooter-kills-three-children-and-teacher-at-oregon-elementary-school-352310",
+          "title": "Nach Polizeiangaben: Drei Kinder und eine Lehrkraft bei Schüssen an Schule in Oregon getötet",
+          "state": "neu",
+          "at": "2026-10-16T10:28:18.375Z",
+          "score": 9.0786
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-16T16:11:52.381Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-16-mittagslage",
       "slot": "mittagslage",
