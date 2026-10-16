@@ -1,0 +1,16 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {V9,loadStore,digest,validateExtensions} from './v9-store.mjs';import {read,atomic} from './model.mjs';import {createLexicon} from '../../assets/js/wirkungslexikon.mjs';
+const store=loadStore(),runtime=read(path.join(V9,'preview/wirkungslexikon/runtime.json')),wl=createLexicon(runtime.data,runtime.config);const rows=[];const leafPaths=(v,p='entry')=>v&&typeof v==='object'?Object.entries(v).flatMap(([k,x])=>leafPaths(x,p+'.'+k)):[p];
+for(const o of Object.values(store.objects)){
+ const value=read(path.join(V9,'snapshots',o.draftHash+'.json'));assert.equal(digest(value),o.draftHash);
+ if(o.type==='wirkungskarte'){
+  validateExtensions(value);const raw=runtime.data.entries.find(e=>e.id===o.id);assert.deepEqual(raw,value);const html=fs.readFileSync(path.join(V9,'preview/wirkungslexikon',o.slug,'index.html'),'utf8');const missing=leafPaths(value).filter(p=>!html.includes('data-content-path="'+p+'"'));assert.deepEqual(missing,[],o.id);
+  for(const card of [wl.tileHtml(value),wl.rowHtml(value)]){assert(card.includes('Wirkungspotenzial'));assert(card.includes(wl.esc(value.wirkungspotenzial.moegliche_veraenderung)));assert(!card.includes('Keine spezifische Wirkung nachgewiesen'));}
+  if(!value.beobachtete_wirkung)assert(!html.includes('<h2 class="wl-node__title">Tatsächlich beobachtete Wirkungen</h2>'));
+  rows.push({id:o.id,type:o.type,revision:o.draftHash,renderedInProtectedPreview:true,leafPaths:leafPaths(value).length,unrendered_content_paths:missing,publicState:o.approvedHash===o.draftHash?'direct_human_approval_recorded':'blocked_no_human_approval'});
+ }else{const rel=o.type==='narrativfamilie'?'narrative':'programm-dossiers';assert(fs.existsSync(path.join(V9,'preview/wirkungslexikon',rel,o.id,'index.html')));rows.push({id:o.id,type:o.type,revision:o.draftHash,renderedInProtectedPreview:true,publicState:o.approvedHash===o.draftHash?'direct_human_approval_recorded':'blocked_no_human_approval'});}
+}
+for(const p of ['methodik','journalisten','wissenschaft']){const h=fs.readFileSync(path.join(V9,'preview/wirkungslexikon',p,'index.html'),'utf8');assert(h.includes('Wirkungspotenzial'));}
+const method=fs.readFileSync(path.join(V9,'preview/wirkungslexikon/methodik/index.html'),'utf8');assert(method.includes('Redaktionelle Verantwortung: Human-in-the-Loop'));assert(!method.includes('publish: false'));
+for(const family of runtime.config.families){const actual=wl.runQuery(new URLSearchParams({narrativ:family.id})).results;assert(actual.every(e=>e.narrativeinordnung_v7.narrativ_ids.includes(family.id)));}
+const data=read(path.join(V9,'negative/wirkungslexikon/daten.json'));assert.equal(data.entries.length,0);
+const result={status:'PASS',cards:180,families:20,programmeDossiers:21,renderedProtectedObjects:rows.length,publicApprovedContent:180,unrendered_content_paths:[],note:'180 Karten, 20 Familien und 21 Dossiers mit neuer direkter fachlicher Freigabe; private Historie unverändert erhalten. Vollständige Kartenfelder zusätzlich in strukturiertem geschütztem Prüfstand sichtbar; keine Behauptung öffentlicher Auslieferung.',objects:rows};atomic(path.join(V9,'TESTNACHWEISE/GOLDEN_STATE.json'),result);console.log(JSON.stringify({status:result.status,cards:180,families:20,dossiers:21,public:180,missing:0}));

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {ROOT,read,sha} from './model.mjs';
+const args=process.argv.slice(2),value=k=>args[args.indexOf(k)+1];
+const source=path.resolve(args.includes('--source')?value('--source'):path.join(ROOT,'outputs/wirkungslexikon/public'));
+const target=path.resolve(args.includes('--out')?value('--out'):path.join(ROOT,'outputs/wirkungslexikon/wirkungslexikon-public-v3-20261015.tar.gz'));
+const manifest=read(path.join(source,'wirkungslexikon/.generated.json'));
+if(manifest.mode!=='public')throw Error('Nur der öffentliche Bestand darf archiviert werden');
+const files=manifest.files.map(p=>'wirkungslexikon/'+p);
+files.push('assets/css/wirkungslexikon.css','assets/js/wirkungslexikon.mjs','assets/js/wirkungslexikon-init.mjs','assets/img/wirkungslexikon/titelbild-worte-wirken.png');
+for(const font of ['playfair-display-500','playfair-display-600','source-sans-3-400','source-sans-3-600','source-sans-3-700'])files.push('assets/fonts/'+font+'.woff2');
+for(const name of files)if(name.includes('..')||path.isAbsolute(name)||!fs.statSync(path.join(source,name)).isFile())throw Error('Ungültiger Manifestpfad: '+name);
+fs.mkdirSync(path.dirname(target),{recursive:true});
+const result=spawnSync('python3',['-c',`import sys,json,tarfile,gzip\nfrom pathlib import Path\nroot=Path(sys.argv[1]);target=Path(sys.argv[2]);files=json.load(sys.stdin)\nwith target.open('wb') as raw:\n with gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0) as zipped:\n  with tarfile.open(fileobj=zipped,mode='w') as archive:\n   for name in sorted(set(files)):\n    p=root/name;info=tarfile.TarInfo(name);info.size=p.stat().st_size;info.mode=0o644;info.uid=info.gid=0;info.mtime=0\n    with p.open('rb') as source:archive.addfile(info,source)`,source,target],{input:JSON.stringify(files),encoding:'utf8'});
+if(result.status)throw Error(result.stderr);
+console.log(JSON.stringify({file:target,files:new Set(files).size,cards:manifest.entries,bytes:fs.statSync(target).size,sha256:sha(fs.readFileSync(target))},null,2));
