@@ -10,6 +10,9 @@ import {saveEntry as saveLegacyEntry} from './editorial.mjs';
 import {V9,loadStore,saveDraft} from './v9-store.mjs';
 import {buildV9} from './v9-build.mjs';
 import {reviewIndex,reviewValue,saveReview} from './v9-review.mjs';
+import {supplementIndex,supplementValue,saveSupplement} from './narrative-supplement.mjs';
+import {researchIndex,researchValue,saveResearch} from './research-register.mjs';
+import {methodIndex,methodValue,saveMethod} from './methodology-drafts.mjs';
 import {build} from './build.mjs';
 const isV9=process.env.WL_VERSION==='9';
 const base=isV9?V9:path.join(ROOT,'outputs/wirkungslexikon');
@@ -38,6 +41,26 @@ const server=http.createServer(async(req,res)=>{
     if(!req.headers['content-type']?.startsWith('application/json'))return json(415,{error:'JSON erforderlich'});
    }
    if(isV9&&u.pathname==='/api/wirkungslexikon/workflow'){if(req.method!=='GET')return json(403,{error:'OFFICIAL_ACCOUNT_NOT_CONNECTED: keine Freigabe über technische oder KI-Schnittstelle'});const store=loadStore();return json(200,{version:'V9',role:access.role,approvalEnabled:false,objects:Object.values(store.objects).map(({id,type,state,draftHash,publishedHash})=>({id,type,state,draftHash,publishedHash}))});}
+   if(isV9&&u.pathname==='/api/wirkungslexikon/methodik-entwuerfe'){
+    const index=methodIndex();if(req.method==='GET'){const id=u.searchParams.get('id');if(!id)return json(200,{objects:Object.values(index.objects),approvalEnabled:false});const o=index.objects[id];return o?json(200,{id,entry:methodValue(o),revision:o.draftHash,approved:false}):json(404,{error:'Unbekannter Methodikentwurf'});}
+    if(req.method==='POST'){if(saving)return json(409,{error:'Speicherung läuft'});saving=true;try{const result=saveMethod(await body(),{role:access.role,subject:access.username});buildV9();return json(200,result);}finally{saving=false;}}
+    return json(405,{error:'Methode nicht erlaubt'});
+   }
+   if(isV9&&u.pathname==='/api/wirkungslexikon/breitrecherche'){
+    const index=researchIndex();if(!index)return json(404,{error:'Recherchepaket nicht importiert'});
+    if(req.method==='GET'){const id=u.searchParams.get('id');if(!id)return json(200,{objects:Object.values(index.objects),approvalEnabled:false});const o=index.objects[id];return o?json(200,{id,entry:researchValue(o),revision:o.draftHash,approved:false}):json(404,{error:'Unbekanntes Rechercheobjekt'});}
+    if(req.method==='POST'){if(saving)return json(409,{error:'Speicherung läuft'});saving=true;try{const result=saveResearch(await body(),{role:access.role,subject:access.username});buildV9();return json(200,result);}finally{saving=false;}}
+    return json(405,{error:'Methode nicht erlaubt'});
+   }
+   if(isV9&&u.pathname==='/api/wirkungslexikon/narrativketten'){
+    const index=supplementIndex();if(!index)return json(404,{error:'Nachtrag nicht importiert'});
+    if(req.method==='GET'){const id=u.searchParams.get('id');if(!id)return json(200,{objects:Object.values(index.objects),approvalEnabled:false});const o=index.objects[id];return o?json(200,{id,entry:supplementValue(o),revision:o.draftHash,approved:false}):json(404,{error:'Unbekannter Kandidat'});}
+    if(req.method==='POST'){
+     if(saving)return json(409,{error:'Speicherung läuft; bitte erneut versuchen'});saving=true;
+     try{const result=saveSupplement(await body(),{role:access.role,subject:access.username});buildV9();return json(200,result);}finally{saving=false;}
+    }
+    return json(405,{error:'Methode nicht erlaubt'});
+   }
    if(isV9&&u.pathname==='/api/wirkungslexikon/review'){
     const index=reviewIndex();if(!index)return json(404,{error:'Prüfpaket nicht importiert'});
     if(req.method==='GET'){const id=u.searchParams.get('id');if(!id)return json(200,{objects:Object.values(index.objects),templates:index.templates,patches:index.patches,approvalEnabled:false});const o=index.objects[id];return o?json(200,{type:o.type,id:o.id,entry:reviewValue(o),revision:o.draftHash}):json(404,{error:'Unbekanntes Prüfobjekt'});}

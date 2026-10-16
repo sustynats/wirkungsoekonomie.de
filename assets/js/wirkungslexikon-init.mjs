@@ -7,6 +7,29 @@ const {data,config}=await response.json();
 config.mount=simulation?'/public':'';
 const wl=createLexicon(data,config);
 wl.init();
+const narrativeForm=document.getElementById('wl-narrative-report');
+if(narrativeForm){
+ const result=document.getElementById('narrative-result'),submit=narrativeForm.querySelector('button[type=submit]');let requestId=crypto.randomUUID(),sending=false;
+ submit.disabled=false;
+ narrativeForm.addEventListener('submit',async event=>{
+  event.preventDefault();if(sending||!narrativeForm.reportValidity())return;
+  sending=true;submit.disabled=true;result.textContent='Meldung wird übermittelt …';result.setAttribute('role','status');
+  const fields=Object.fromEntries(new FormData(narrativeForm));
+  try{
+   const response=await fetch(narrativeForm.action,{method:'POST',mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'application/json'},body:JSON.stringify({...fields,requestId}),signal:AbortSignal.timeout(20000)});
+   const v=await response.json().catch(()=>({}));
+   if(!response.ok||!v.ok||v.id!==requestId){
+    const messages={INVALID_FIELDS:'Bitte prüfen Sie die Angaben und die Länge der Felder.',TOO_MANY_REPORTS:'Es wurden gerade mehrere Meldungen über diese Verbindung gesendet. Bitte versuchen Sie es später erneut.',REPORT_TOO_LARGE:'Die Meldung ist zu lang. Bitte kürzen Sie die Angaben.',REQUEST_CONFLICT:'Diese Übertragung konnte nicht eindeutig zugeordnet werden. Bitte laden Sie die Seite neu und senden Sie die Meldung erneut.'};
+    throw Error(messages[v.error]||'Die Meldung konnte gerade nicht gespeichert werden. Ihre Eingaben bleiben erhalten. Bitte versuchen Sie es später erneut.');
+   }
+   result.textContent='Vielen Dank. Ihre Meldung ist zur redaktionellen Prüfung gespeichert. Vorgangsnummer: '+v.id+'.';
+   narrativeForm.reset();result.focus();
+   const another=document.createElement('button');another.type='button';another.className='wl-btn wl-btn--secondary';another.textContent='Weitere Fundstelle melden';
+   another.addEventListener('click',()=>{requestId=crypto.randomUUID();submit.disabled=false;result.replaceChildren();narrativeForm.elements.term.focus();});result.append(document.createElement('br'),another);
+  }catch(error){result.setAttribute('role','alert');result.textContent=error.name==='TimeoutError'||error.name==='TypeError'?'Die Verbindung ist gerade nicht verfügbar. Ihre Eingaben bleiben erhalten. Bitte versuchen Sie es erneut.':error.message;submit.disabled=false;result.focus();}
+  finally{sending=false;}
+ });
+}
 if(simulation){const rewrite=()=>document.querySelectorAll('[href^="/wirkungslexikon/"]').forEach(a=>a.setAttribute('href','/public'+a.getAttribute('href')));rewrite();new MutationObserver(rewrite).observe(document.querySelector('#app'),{childList:true,subtree:true});}
 // Existing site navigation, without starting unrelated analytics or API services.
 const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('#site-nav');
@@ -29,6 +52,15 @@ const dossierSearch=document.querySelector("[data-dossier-search]");if(dossierSe
 const reviewSearch=document.querySelector('#review-search');
 if(reviewSearch)reviewSearch.addEventListener('input',()=>{const q=reviewSearch.value.toLocaleLowerCase('de');let n=0;document.querySelectorAll('[data-review-item]').forEach(el=>{el.hidden=!el.textContent.toLocaleLowerCase('de').includes(q);if(!el.hidden)n++;});document.querySelector('#review-count').textContent=n+' Vorschläge';});
 const reviewForm=document.querySelector('#wl-review-editor');
+const supplementForm=document.getElementById('wl-supplement-editor');
+if(supplementForm){
+ const input=document.getElementById('supplement-json'),reason=document.getElementById('supplement-reason'),result=document.getElementById('supplement-result'),button=supplementForm.querySelector('button[type=submit]');let revision=supplementForm.dataset.revision;
+ supplementForm.addEventListener('submit',async e=>{e.preventDefault();button.disabled=true;try{
+  const response=await fetch(supplementForm.dataset.endpoint||'/api/wirkungslexikon/narrativketten',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:supplementForm.dataset.supplementId,entry:JSON.parse(input.value),expectedHash:revision,reason:reason.value})});const value=await response.json();if(!response.ok)throw Error(value.error||'Speichern fehlgeschlagen');revision=value.revision;result.textContent='Entwurfsrevision gespeichert: '+revision+'. Keine Freigabe oder Veröffentlichung.';
+ }catch(error){result.textContent=error.message;}finally{button.disabled=false;}});
+}
+const researchSearch=document.getElementById('research-search'),researchMode=document.getElementById('research-mode');
+if(researchSearch&&researchMode){const filter=()=>{const q=researchSearch.value.toLocaleLowerCase('de'),mode=researchMode.value;let count=0;for(const row of document.querySelectorAll('[data-research-item]')){row.hidden=!(row.textContent.toLocaleLowerCase('de').includes(q)&&(!mode||row.dataset.sourceMode===mode));if(!row.hidden)count++;}document.getElementById('research-count').textContent=count+' private Objekte';};researchSearch.addEventListener('input',filter);researchMode.addEventListener('change',filter);}
 if(reviewForm){
  const select=document.querySelector('#review-select'),input=document.querySelector('#review-json'),result=document.querySelector('#review-result');let revision=null,type=null;
  const r=await fetch('/api/wirkungslexikon/review');if(!r.ok)throw Error('Prüfobjekte nicht verfügbar');const registry=await r.json();
