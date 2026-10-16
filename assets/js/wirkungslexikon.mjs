@@ -395,8 +395,8 @@ export function createLexicon(DATA, config = {}) {
       <nav class="wl-breadcrumb" aria-label="Brotkrumen"><ol><li><a href="#/">Start</a></li><li><a href="#/">Debatte &amp; Radar</a></li><li aria-current="page">Wirkungslexikon</li></ol></nav>
       <section class="wl-hero wl-hero--lookup" aria-labelledby="hero-title">
         <h1 class="wl-hero__title" id="hero-title">Wirkungslexikon politischer Sprache</h1>
-        <p class="wl-hero__lead">Politische Begriffe nachschlagen, Quellen prüfen und Wirkungspotenziale verstehen.</p>
-        ${config.inventoryCounts ? `<p class="wl-small" aria-label="Bestand des Wirkungslexikons"><strong>${config.inventoryCounts.totalDistinct}</strong> erfasste Begriffe und Analyseansätze · <strong>${vis.length}</strong> veröffentlichte Wirkungskarten · <strong>${config.inventoryCounts.uniqueCandidates}</strong> weitere Recherchekandidaten (Stand ${esc(config.inventoryCounts.asOf)})</p>` : ''}
+        <p class="wl-hero__lead">Begriffe, Quellen und Wirkungspotenziale nachschlagen.</p>
+        ${config.inventoryCounts ? `<p class="wl-inventory" aria-label="Bestand des Wirkungslexikons"><span data-inventory-total="${config.inventoryCounts.totalDistinct}"><strong>${config.inventoryCounts.totalDistinct}</strong> <span aria-hidden="true">erfasst</span><span class="wl-visually-hidden">erfasste Begriffe und Analyseansätze</span></span><span data-inventory-published="${MODE==='public'?vis.length:config.inventoryCounts.publishedCards}"><strong>${MODE==='public'?vis.length:config.inventoryCounts.publishedCards}</strong> <span aria-hidden="true">veröffentlicht</span><span class="wl-visually-hidden">veröffentlichte Wirkungskarten</span></span><span data-inventory-research="${config.inventoryCounts.uniqueCandidates}"><strong>${config.inventoryCounts.uniqueCandidates}</strong> <span aria-hidden="true">in Recherche</span><span class="wl-visually-hidden">weitere Begriffe in redaktioneller Recherche</span></span></p>` : ''}
         ${searchHtml('hero', params.get('q') || '')}
         <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a><a href="${href('/narrativ-melden')}">Narrativ melden</a>${config.referenceLinks?'<a href="#sdgplus-bezug">Grundlage: SDG+</a>':''}${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
       </section>
@@ -408,8 +408,8 @@ export function createLexicon(DATA, config = {}) {
         <div class="wl-container">
         <p class="wl-lead">${p[0] || ''}</p>
         <ul class="wl-hero__facts">
-          ${config.inventoryCounts ? `<li><strong>${config.inventoryCounts.totalDistinct}</strong> erfasste Begriffe und Analyseansätze insgesamt, darunter <strong>${config.inventoryCounts.uniqueCandidates}</strong> noch nicht veröffentlichte Recherchekandidaten</li>` : ''}
-          <li>${MODE === 'preview' ? `<strong>${total}</strong> Wirkungskarten im Redaktionsbestand` : vis.length ? `<strong>${vis.length}</strong> geprüfte Wirkungskarten` : 'Wirkungskarten werden <strong>einzeln freigegeben</strong>'}</li>
+          ${config.inventoryCounts ? `<li><strong>${config.inventoryCounts.totalDistinct}</strong> erfasste Begriffe und Analyseansätze insgesamt</li><li><strong>${config.inventoryCounts.uniqueCandidates}</strong> weitere Begriffe in redaktioneller Recherche</li>` : ''}
+          <li>${MODE === 'preview' ? `<strong>${total}</strong> Wirkungskarten im Redaktionsbestand` : vis.length ? `<strong>${vis.length}</strong> veröffentlichte Wirkungskarten` : 'Wirkungskarten werden <strong>einzeln freigegeben</strong>'}</li>
           <li><strong>${CATS.length}</strong> erklärte Kategorien</li>
           <li><strong>6</strong> Evidenzstufen A–F, keine Scores</li>
           ${MODE === 'preview' ? `<li><strong>${released}</strong> freigegeben</li>` : ''}
@@ -1405,7 +1405,11 @@ export function createLexicon(DATA, config = {}) {
     window.addEventListener('popstate', route);
     hydrate(document.getElementById('app'));
     if (document.getElementById('wl-explorer')) route();
-    document.documentElement.dataset.wlReady = 'true';
+    const ready=()=>{document.documentElement.dataset.wlReady='true';};
+    if(document.getElementById('wl-explorer')&&location.hash==='#karten'){
+      const align=()=>scrollToEl(document.getElementById('karten'));
+      align();(document.fonts?.ready||Promise.resolve()).then(()=>{align();ready();});
+    }else ready();
   }
   return { init, href, rewriteRoutes, viewStart, viewCard, viewCategories, viewCategory, viewArea, viewMethodik, viewRedaktionen, viewNarrativeReport, explorerHtml, rowHtml, tileHtml, ladderOf, relatedOf, isBoiler, korpusOf, hasShift, runQuery, CATS, AREAS, STATUS, ev, esc, termHtml, effectLine };
 }
