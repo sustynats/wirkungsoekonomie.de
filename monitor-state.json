@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-16T11:20:53.233Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2694,10 +2698,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/16-jahriger-erschiesst-in-grundschule-in-den-usa-drei-kinder-und-einen-lehrer-350307/": {
         "first_seen_at": "2026-10-16T04:21:02.747Z",
         "source_at": "2026-10-16T01:33:06.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/teen-shooter-kills-three-children-and-teacher-at-oregon-elementary-school-352310/": {
+        "first_seen_at": "2026-10-16T11:20:53.233Z",
+        "source_at": "2026-10-15T21:58:33.000Z"
       }
     },
-    "last_new_at": "2026-10-16T04:21:02.747Z",
-    "checked_at": "2026-10-16T11:05:45.193Z",
+    "last_new_at": "2026-10-16T11:20:53.233Z",
+    "checked_at": "2026-10-16T11:20:53.233Z",
     "last_current_new_at": "2026-10-16T04:21:02.747Z"
   },
   "recovery_attempts": [
