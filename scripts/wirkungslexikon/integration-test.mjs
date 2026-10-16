@@ -62,6 +62,7 @@ try{
   if(width===390){await page.locator('.nav-toggle').click();assert.equal(await page.locator('.nav-toggle').getAttribute('aria-expanded'),'true');await page.keyboard.press('Escape');assert.equal(await page.locator('.nav-toggle').getAttribute('aria-expanded'),'false');}
   await page.goto(base+'/wirkungslexikon/neue-merz-problem-im-stadtbild/');
   await page.waitForFunction(()=>document.documentElement.dataset.wlReady==='true');
+  if(await page.locator('.wl-card-tools').count())await page.locator('.wl-card-tools summary').click();
   await page.locator('[data-share]').click();await page.waitForSelector('#dlg-share[open]');
   const img=page.locator('#dlg-share img');assert(await img.count()>0);
   await page.waitForFunction(()=>{const el=document.querySelector('#dlg-share img');return el?.complete&&el.naturalWidth>0;});

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import {assertExampleRelease,EXAMPLE_FIELD} from './examples.mjs';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const CONTENT = path.join(ROOT, 'content/wirkungslexikon');
 export const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
@@ -18,6 +19,7 @@ export function approvedV9(data) {
   const policy=read(path.join(CONTENT,'publication-policy.json')).lexikon;
   const canonical=v=>JSON.stringify(v,(_,x)=>x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,x[k]])):x);
   if(!policy.released||policy.person!=='Natalie Weber'||!policy.dataSha256||sha(canonical(data))!==policy.dataSha256)throw Error('V9_REVISION_APPROVAL_MISMATCH');
+  if(data.entries.some(e=>e[EXAMPLE_FIELD]))assertExampleRelease(data,read(path.join(CONTENT,'approval-examples-v10.json')));
   return true;
 }
 export function validate(data, {allowSubset=false}={}) {
@@ -64,6 +66,7 @@ export function loadModel() {
 }
 export function publicData(data) {
   if(approvedV9(data))return data;
+  if(data.entries.some(e=>e[EXAMPLE_FIELD]))throw Error('EXAMPLES_HUMAN_RELEASE_REQUIRED');
   const entries = data.entries.filter(e=>e.pruefstatus==='freigegeben' && !approvalProblems(e).length);
   const sourceIds = new Set(entries.flatMap(e=>[...e.quellen.map(q=>q.id), ...(e.beobachtete_wirkung?.beleg_ids || [])]));
   return {titel:data.titel, version:data.version, stand:data.stand, kategorien:data.kategorien, entries,
