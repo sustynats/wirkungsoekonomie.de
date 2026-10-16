@@ -6,6 +6,7 @@ import {V9,loadStore,digest,snapshot,event} from './v9-store.mjs';
 import {schemaCheck,escape,structured} from './v9-review.mjs';
 import {supplementIndex,supplementValue} from './narrative-supplement.mjs';
 import {inventoryCounts,normalizeInventoryTerm} from './inventory.mjs';
+import {V11_FIELD,validateV11} from './v11-content.mjs';
 
 export const researchBase=(base=V9)=>path.join(base,'research_candidates');
 export const researchIndex=(base=V9)=>fs.existsSync(path.join(researchBase(base),'store.json'))?read(path.join(researchBase(base),'store.json')):null;
@@ -36,6 +37,7 @@ export function validateResearch(type,value,index,main){
  }
  if(type==='candidate'||type==='chain')for(const id of value.quellen_ids)if(!index.objects[id]||index.objects[id].type!=='source')throw Error('UNKNOWN_RESEARCH_SOURCE');
  if(type==='source'&&!/^https?:\/\/\S+$/.test(value.url))throw Error('INVALID_SOURCE_URL');
+ if(value[V11_FIELD])validateV11(value[V11_FIELD],new Set(Object.values(index.objects).filter(o=>o.type==='source').map(o=>o.id)));
  return value;
 }
 export function importResearch(source,{base=V9,archive}={}){
@@ -84,7 +86,7 @@ export function addResearch({id,type,entry,reason},principal,base=V9,options={})
  validateResearch(type,entry,index,main);
  index.objects[id]={id,type,title:entry.lemma||entry.titel,draftHash:snapshot(entry,researchBase(base)),is_public:false,review_state:'SOURCE_NEEDED',verified_by:null,verified_at:null,publicHash:null,history:[],sourceClaimsOnly:true};
  event(index,{action:'research_item_added',object:id,type,subject:principal.subject,role:principal.role,reason,approvalsCreated:0},researchBase(base));
- const counts=inventoryCounts({base,file:options.inventoryFile});return {created:true,id,approved:false,counts};
+ const counts=type==='source'||options.deferInventory?null:inventoryCounts({base,file:options.inventoryFile});return {created:true,id,approved:false,counts};
 }
 export function promoteResearchWatch({id,entry,expectedHash,reason},principal,base=V9,options={}){
  if(principal.role!=='editor'||!principal.subject)throw Error('EDITOR_REQUIRED');
