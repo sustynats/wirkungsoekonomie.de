@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-15T23:20:46.662Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-16T00:23:11.555Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,37 @@
         },
         "democracy": {
           "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/two-hospitalised-after-shooting-at-oregon-elementary-school-gunman-dead-9c36ba/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/two-hospitalised-after-shooting-at-oregon-elementary-school-gunman-dead-9c36ba/",
+      "title": "Laut France 24: Zwei Menschen nach Schüssen an Grundschule in Oregon im Krankenhaus, Schütze tot",
+      "summary": "An einer Grundschule in Oregon wurden laut France 24 zwei Menschen nach Schüssen ins Krankenhaus gebracht; der Schütze wurde tot aufgefunden. Der Bericht nennt eine Abriegelung, lässt aber Ablauf, Motiv und weitere Gefahrenlage offen.",
+      "date_published": "2026-10-15T21:58:33.000Z",
+      "date_modified": "2026-10-15T21:58:33.000Z",
+      "_woek_released_at": "2026-10-16T00:29:24.098Z",
+      "tags": [
+        "Soziales"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         }
