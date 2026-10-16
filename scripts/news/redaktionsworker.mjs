@@ -345,7 +345,7 @@ export function normalizeEditorialPreview(preview, { links = [], attachments = [
         && /^##\s+Sendungsdaten\s*$/i.test(line)) {
         kept.push('## Originalfolge'); repairs.push('markdown:Sendungsmetadaten als Originalfolge kanonisiert'); continue;
       }
-      if (/^##\s+Quellen und Werkmetadaten\s*$/i.test(line)) {
+      if (/^##\s+Quellen und (?:Werkmetadaten|Aussagegrenzen)\s*$/i.test(line)) {
         kept.push('## Quellen'); repairs.push('markdown:Quellenüberschrift kanonisiert'); continue;
       }
       const heading = /^#\s+(.*)$/.exec(line);
@@ -509,7 +509,10 @@ export async function recoverUnsentEditorialAnswers(session, rows, at) {
         if (job.intake?.revision_target) bindeKorrekturfassung(output.preview, job.intake, repairs);
         normalizeEditorialPreview(output.preview, { links: job.input.request?.links || [],
           attachments: job.input.request?.attachments || [], repairs });
-        if (!repairs.includes('markdown:Sendungsmetadaten als Originalfolge kanonisiert')) continue;
+        if (!repairs.some(repair => [
+          'markdown:Sendungsmetadaten als Originalfolge kanonisiert',
+          'markdown:Quellenüberschrift kanonisiert',
+        ].includes(repair))) continue;
         if (job.input.request?.research_repair && !(record.web_searches > 0)) continue;
         const validated = validateEditorialDelivery(output, job.input, at);
         const latest = await session.store.get(id);
