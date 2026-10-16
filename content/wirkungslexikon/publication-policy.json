@@ -2,8 +2,8 @@
   "lexikon": {
     "released": true,
     "publicArtifact": {
-      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungslexikon-v10-20261016-bestand-r3/wirkungslexikon-public-v10-20261016-bestand-r3.tar.gz",
-      "sha256": "b79c5c511b1ca78b3e96ac6553da9d68ca0b7853ee52273bbe79528e644ae91c",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungslexikon-v10-20261016-journal-r4/wirkungslexikon-public-v10-20261016-journal-r4.tar.gz",
+      "sha256": "0e5ff27049d19a35fd4ebd5671d5ee4b3cbb5a1df20fbc0796aa29608aca4efd",
       "cards": 180,
       "families": 20,
       "programmeDossiers": 21,
@@ -26,10 +26,20 @@
     "inventoryReleaseAuthority": "Direkte Freigabe Natalie Weber im Gespräch; automatisch fortgeschriebene aggregierte Bestandszahlen. Konkrete neue Eintragstexte werden gesondert zugeordnet."
   },
   "journal": {
-    "released": false,
+    "released": true,
     "requiresLexiconLive": true,
     "requiresNatalieWeberApproval": true,
-    "sourceVersion": "V9"
+    "sourceVersion": "V9",
+    "releaseMode": "AUTHOR_PUBLISHED_REFERENCE_ONLY",
+    "publicationConfirmedBy": "Natalie Weber",
+    "publicationConfirmation": "Zur Info, der Journalbeitrag ist veröffentlicht. wegen der Verlinkung.",
+    "publishedArticle": {
+      "href": "/blog/wirkungslexikon-politische-sprache-was-worte-vorbereiten.html",
+      "title": "Das Wirkungslexikon politischer Sprache: Was Worte vorbereiten können",
+      "image": "/assets/img/blog/2026-10-16-wirkungslexikon-politische-sprache.png",
+      "imageAlt": "Titelillustration zum Wirkungslexikon politischer Sprache. Symbolbild, keine dokumentarische Aufnahme.",
+      "publishedAt": "2026-10-16T10:00:00+02:00"
+    }
   },
   "linkedin": {
     "released": false,
