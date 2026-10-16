@@ -277,7 +277,10 @@ export function createLexicon(DATA, config = {}) {
     closeSuggest();
     const host = document.getElementById('wl-explorer');
     if (!host) return;
-    host.innerHTML = rewriteRoutes(explorerHtml(new URLSearchParams(location.search)));
+    const params = new URLSearchParams(location.search);
+    host.innerHTML = rewriteRoutes(explorerHtml(params));
+    const search = document.getElementById('q-hero');
+    if (search) search.value = params.get('q') || '';
     hydrate(host);
   }
 
@@ -388,22 +391,28 @@ export function createLexicon(DATA, config = {}) {
     const total = ENTRIES.length;
     const released = ENTRIES.filter((e) => e.pruefstatus === 'freigegeben').length;
     return `
-    <div class="wl-container">
+    <div class="wl-container wl-start">
       <nav class="wl-breadcrumb" aria-label="Brotkrumen"><ol><li><a href="#/">Start</a></li><li><a href="#/">Debatte &amp; Radar</a></li><li aria-current="page">Wirkungslexikon</li></ol></nav>
-      <section class="wl-hero" aria-labelledby="hero-title">
-        <span class="wl-eyebrow wl-hero__eyebrow">Debatte &amp; Radar · Wirkungslexikon</span>
+      <section class="wl-hero wl-hero--lookup" aria-labelledby="hero-title">
         <h1 class="wl-hero__title" id="hero-title">Wirkungslexikon politischer Sprache</h1>
-        <p class="wl-hero__lead">${p[0] || ''}</p>
+        <p class="wl-hero__lead">Politische Begriffe nachschlagen, Quellen prüfen und Wirkungspotenziale verstehen.</p>
         ${searchHtml('hero', params.get('q') || '')}
-        <div class="wl-quickterms"><span>Zum Beispiel:</span>${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t }))}">${esc(t)}</a>`).join('')}</div>
+        <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a>${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
+      </section>
+    </div>
+
+    <details class="wl-intro" id="einleitung">
+      <summary class="wl-container"><span>Über das Lexikon: Einleitung und Lesehilfe</span></summary>
+      <div class="wl-intro__body">
+        <div class="wl-container">
+        <p class="wl-lead">${p[0] || ''}</p>
         <ul class="wl-hero__facts">
           <li>${MODE === 'preview' ? `<strong>${total}</strong> Wirkungskarten im Redaktionsbestand` : vis.length ? `<strong>${vis.length}</strong> geprüfte Wirkungskarten` : 'Wirkungskarten werden <strong>einzeln freigegeben</strong>'}</li>
           <li><strong>${CATS.length}</strong> erklärte Kategorien</li>
           <li><strong>6</strong> Evidenzstufen A–F, keine Scores</li>
           ${MODE === 'preview' ? `<li><strong>${released}</strong> freigegeben</li>` : ''}
         </ul>
-      </section>
-    </div>
+        </div>
 
     <section class="wl-section-space" aria-labelledby="intro-title">
       <div class="wl-container wl-two-col">
@@ -480,7 +489,10 @@ export function createLexicon(DATA, config = {}) {
       </div>
     </section>
 
-    <section class="wl-section-space" id="karten" aria-labelledby="explorer-title" style="background:var(--wl-surface-soft);border-top:1px solid var(--wl-line)">
+      </div>
+    </details>
+
+    <section class="wl-section-space wl-lookup" id="karten" aria-labelledby="explorer-title">
       <div class="wl-container"><div id="wl-explorer">${explorerHtml(params)}</div></div>
     </section>
 
@@ -489,7 +501,7 @@ export function createLexicon(DATA, config = {}) {
 
   function searchHtml(id, value, inline) {
     return `<form class="wl-search${inline ? ' wl-search--inline' : ''}" role="search" data-search="${id}" action="#/">
-      <label class="wl-search__label${inline ? ' wl-visually-hidden' : ''}" for="q-${id}">${esc(UI.search_label || 'Suchen')}</label>
+      <label class="wl-search__label${inline ? ' wl-visually-hidden' : ''}" for="q-${id}">Im Lexikon suchen</label>
       <div class="wl-search__field">
         <span class="wl-search__icon">${ICON.search}</span>
         <input class="wl-search__input" id="q-${id}" name="q" type="search" value="${esc(value)}" autocomplete="off" spellcheck="false"
@@ -646,9 +658,8 @@ export function createLexicon(DATA, config = {}) {
     const emptyPublic = MODE === 'public' && vis.length === 0;
     return `
       <div class="wl-results-bar" style="margin-bottom:var(--wl-s2)">
-        <div><span class="wl-eyebrow" style="margin:0 0 .3rem">Alle Wirkungskarten</span><h2 class="wl-h2" id="explorer-title" style="margin:0">Suchen, filtern, entdecken</h2></div>
+        <h2 class="wl-h2" id="explorer-title" style="margin:0">${r.q ? 'Suchergebnisse' : 'Begriffe A–Z'}</h2>
       </div>
-      <div style="margin:var(--wl-s4) 0 var(--wl-s5);max-width:44rem">${searchHtml('explorer', r.q, true)}</div>
       ${emptyPublic ? `<div class="wl-empty"><strong>Noch keine Wirkungskarte freigegeben</strong>Öffentlich erscheinen Karten erst nach redaktioneller Einzelfreigabe. Methodik und Leitfaden sind bereits lesbar.</div>` : `
       <div class="wl-explorer__layout">
         <div class="wl-facets${FACETS_OPEN ? ' is-open' : ''}" id="facets" role="region" aria-labelledby="facets-title"${FACETS_OPEN ? ' style="transition:none"' : ''}>
@@ -1168,7 +1179,11 @@ export function createLexicon(DATA, config = {}) {
       const p = new URLSearchParams(); if (input.value.trim()) p.set('q', input.value.trim());
       closeSuggest();
       if (document.getElementById('wl-explorer')) navigateKeepScroll(href('/', p)); else location.href = href('/', p) + '#karten';
-      setTimeout(() => { scrollToEl($('#karten')); }, 0);
+      setTimeout(() => {
+        const heading = $('#explorer-title');
+        if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+        scrollToEl($('#karten'));
+      }, 0);
     });
     input.addEventListener('input', () => showSuggest(input, list));
     input.addEventListener('keydown', (e) => {

@@ -268,6 +268,28 @@ a.wl-tag:hover{border-color:var(--wl-ink);}
 .wl-hero__facts{display:flex;flex-wrap:wrap;gap:.35rem 1.25rem;margin:var(--wl-s5) 0 0;padding:0;list-style:none;color:#AEB8CD;font-size:.92rem;}
 .wl-hero__facts strong{color:#F6F1E8;font-variant-numeric:tabular-nums;}
 
+/* Nachschlagen zuerst: ein Suchfeld, kurze Wege; die vollständige Einführung
+   bleibt ohne JavaScript über das native details-Element erreichbar. */
+.wl-start .wl-breadcrumb{margin-block:var(--wl-s3);}
+.wl-hero--lookup{margin-top:0;padding:clamp(1.25rem,2vw,1.5rem);overflow:visible;}
+.wl-hero--lookup::after{inset:0;width:auto;height:auto;border:0;border-radius:inherit;box-shadow:none;background:radial-gradient(circle at 100% 0,rgba(246,241,232,.06),transparent 60%);}
+.wl-hero--lookup .wl-hero__title{max-width:none;font-size:clamp(1.7rem,3.1vw,2.5rem);margin-bottom:.5rem;}
+.wl-hero--lookup .wl-hero__lead{font-size:1.05rem;line-height:1.45;max-width:none;margin:0;}
+.wl-hero--lookup .wl-search{margin-top:var(--wl-s3);max-width:none;}
+.wl-hero--lookup .wl-quickterms{flex-wrap:nowrap;gap:.35rem .5rem;margin-top:var(--wl-s3);overflow-x:auto;padding-block:.15rem;scrollbar-width:thin;}
+.wl-hero--lookup .wl-quickterms a{flex:none;}
+.wl-intro{margin-top:var(--wl-s4);}
+.wl-intro > summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3rem;padding-block:.65rem;cursor:pointer;list-style:none;color:var(--wl-green-dark);font-weight:700;}
+.wl-intro > summary::-webkit-details-marker{display:none;}
+.wl-intro > summary::after{content:"+";font-size:1.4rem;line-height:1;flex:none;}
+.wl-intro[open] > summary::after{content:"−";}
+.wl-intro__body{padding-top:var(--wl-s4);}
+.wl-intro .wl-hero__facts{margin-top:var(--wl-s3);color:var(--wl-muted);}
+.wl-intro .wl-hero__facts strong{color:var(--wl-ink);}
+.wl-lookup{padding-top:var(--wl-s5);background:var(--wl-surface-soft);border-top:1px solid var(--wl-line);}
+.wl-lookup .wl-results-bar,.wl-lookup .wl-az{margin-bottom:var(--wl-s2);}
+.wl-lookup .wl-results__letter:first-child{margin-top:0;font-size:1.2rem;line-height:1.3;}
+
 /* Suchfeld mit Vorschlagsliste (Combobox-Muster, WAI-ARIA 1.2) */
 .wl-search{position:relative;margin-top:var(--wl-s5);max-width:44rem;}
 .wl-search__label{display:block;margin-bottom:.45rem;color:#F6F1E8;font-weight:700;}

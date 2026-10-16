@@ -1,4 +1,5 @@
-import {createLexicon} from './wirkungslexikon.mjs';
+// Carry the build's content version into the module dependency as well.
+const {createLexicon}=await import('./wirkungslexikon.mjs'+new URL(import.meta.url).search);
 const simulation=location.pathname.startsWith('/public/');
 const response=await fetch((simulation?'/public':'')+'/wirkungslexikon/runtime.json',{cache:'no-cache'});
 if(!response.ok) throw Error('Lexikondaten nicht verfügbar');
