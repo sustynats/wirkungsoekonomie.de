@@ -479,13 +479,12 @@ export function createLexicon(DATA, config = {}) {
           <a class="wl-teaser" href="#/fuer-redaktionen"><span class="wl-eyebrow" style="margin:0">Für Redaktionen</span><span class="wl-teaser__title">Acht Prüffragen</span><span class="wl-small">Schlagworte in überprüfbare Sachbeschreibungen übersetzen – ohne Zitate zu verfälschen.</span></a>
           <a class="wl-teaser" href="#/kategorien"><span class="wl-eyebrow" style="margin:0">Raster</span><span class="wl-teaser__title">${CATS.length} Kategorien</span><span class="wl-small">Erklärte Mechanismen mit Beispielen – kein Gütesiegel, keine Schuldzuweisung.</span></a>
         </div>
-        <div class="wl-journal" data-article-locked>
-          <img src="img/titelbild_worte_wirken_16x9.png" alt="Titelbild des Journalartikels „Worte wirken. Auch wenn wir es nicht bemerken.“: eine Frau im Vordergrund, links Schlagwort-Schilder, rechts Menschen im Abendlicht." width="1672" height="941" loading="lazy">
+        <div class="wl-journal" ${config.journalArticle?'data-article-published':'data-article-locked'}>
+          <img src="${esc(config.journalArticle?.image||'img/titelbild_worte_wirken_16x9.png')}" alt="${esc(config.journalArticle?.imageAlt||'Titelbild des Journalartikels „Worte wirken. Auch wenn wir es nicht bemerken.“: eine Frau im Vordergrund, links Schlagwort-Schilder, rechts Menschen im Abendlicht.')}" width="1672" height="941" loading="lazy">
           <div class="wl-journal__body">
             <span class="wl-eyebrow" style="color:#E7C67C;margin:0">Wirkungsökonomie-Journal</span>
-            <h3>Worte wirken. Auch wenn wir es nicht bemerken.</h3>
-            <p>Ein eigenständiger Begleitartikel zum Lexikon. Veröffentlichung nach ausdrücklicher Freigabe.</p>
-            <p><span class="wl-flag wl-flag--locked">Link erst nach Veröffentlichung des Artikels</span></p>
+            <h3>${esc(config.journalArticle?.title||'Worte wirken. Auch wenn wir es nicht bemerken.')}</h3>
+            ${config.journalArticle?`<p>Der Begleitartikel zum Wirkungslexikon ist im Journal erschienen.</p><p><a class="wl-btn wl-btn--secondary" href="${esc(config.journalArticle.href)}">Begleitartikel im Journal lesen</a></p>`:'<p>Ein eigenständiger Begleitartikel zum Lexikon. Veröffentlichung nach ausdrücklicher Freigabe.</p><p><span class="wl-flag wl-flag--locked">Link erst nach Veröffentlichung des Artikels</span></p>'}
           </div>
         </div>
       </div>

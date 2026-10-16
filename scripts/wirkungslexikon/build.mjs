@@ -32,7 +32,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   const history = Object.fromEntries(Object.entries(model.editorial.history).filter(([slug])=>data.entries.some(e=>e.slug===slug)));
   const suppressInventory=negativePublicationTest&&data.entries.length===0;
   const inventory=suppressInventory?null:inventoryCounts();
-  const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras,inventoryCounts:suppressInventory?null:{totalDistinct:inventory.totalDistinct,uniqueCandidates:inventory.uniqueCandidates,asOf:inventory.asOf,publishedCards:mode==='public'?data.entries.length:publicData(read(path.join(CONTENT,'publication-v9.json')).model.data).entries.length}};
+  const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras,journalArticle:policy.journal.released?policy.journal.publishedArticle:null,inventoryCounts:suppressInventory?null:{totalDistinct:inventory.totalDistinct,uniqueCandidates:inventory.uniqueCandidates,asOf:inventory.asOf,publishedCards:mode==='public'?data.entries.length:publicData(read(path.join(CONTENT,'publication-v9.json')).model.data).entries.length}};
   const full=createLexicon(model.data,{mode:'preview'});
   const strings=new Set();
   const walk=v=>{ if(typeof v==='string'&&full.isBoiler(v)) strings.add(v); else if(Array.isArray(v)) v.forEach(walk); else if(v&&typeof v==='object') Object.values(v).forEach(walk); };
