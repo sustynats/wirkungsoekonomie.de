@@ -89,3 +89,28 @@ test("area directories paginate routes and existing cards without changing child
     fs.rmSync(root, { recursive: true, force: true });
   }
 });
+
+test("targeted lexicon directories preserve unrelated hubs and pagination byte-for-byte", () => {
+  const root = fixture();
+  try {
+    buildPublicAreaDirectories(root);
+    const preserved = ["blog.html", "blog/beitrag/index.html", "begriffe/index.html", "begriffe/seite/2/index.html", "begriffe/seite/3/index.html", "begriffe/seite/4/index.html"];
+    const before = new Map(preserved.map(name => [name, fs.readFileSync(path.join(root, name), "utf8")]));
+    const manifestFile = path.join(root, "assets/data/public-routes.json");
+    const routes = JSON.parse(fs.readFileSync(manifestFile, "utf8")).routes;
+    for (let i = 0; i <= 51; i++) {
+      const url = i === 0 ? "/wirkungslexikon/" : `/wirkungslexikon/test-${i}/`;
+      const file = url.slice(1) + "index.html";
+      fs.mkdirSync(path.dirname(path.join(root, file)), {recursive:true});
+      fs.writeFileSync(path.join(root, file), '<html><head><title>Test</title></head><body><main><h1>Lexikon</h1><p>Unveränderter Inhalt.</p></main></body></html>');
+      routes.push({url,file,area:"wirkungslexikon",title:"Lexikon"});
+    }
+    fs.writeFileSync(manifestFile, JSON.stringify({routes}));
+    const result = buildPublicAreaDirectories(root, {onlyAreas:["start", "wirkungslexikon"]});
+    assert.equal(result.areas.find(a=>a.area==="wirkungslexikon").pages, 2);
+    for (const [name, text] of before) assert.equal(fs.readFileSync(path.join(root, name), "utf8"), text, name);
+    assert.match(fs.readFileSync(path.join(root, "suche.html"), "utf8"), /href="\/wirkungslexikon\/"/);
+    assert.match(fs.readFileSync(path.join(root, "wirkungslexikon/index.html"), "utf8"), /Unveränderter Inhalt/);
+    assert.ok(fs.existsSync(path.join(root,"wirkungslexikon/seite/2/index.html")));
+  } finally { fs.rmSync(root,{recursive:true,force:true}); }
+});
