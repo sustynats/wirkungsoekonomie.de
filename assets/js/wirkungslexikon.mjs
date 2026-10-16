@@ -396,6 +396,7 @@ export function createLexicon(DATA, config = {}) {
       <section class="wl-hero wl-hero--lookup" aria-labelledby="hero-title">
         <h1 class="wl-hero__title" id="hero-title">Wirkungslexikon politischer Sprache</h1>
         <p class="wl-hero__lead">Politische Begriffe nachschlagen, Quellen prüfen und Wirkungspotenziale verstehen.</p>
+        ${config.inventoryCounts ? `<p class="wl-small" aria-label="Bestand des Wirkungslexikons"><strong>${config.inventoryCounts.totalDistinct}</strong> erfasste Begriffe und Analyseansätze · <strong>${vis.length}</strong> veröffentlichte Wirkungskarten · <strong>${config.inventoryCounts.uniqueCandidates}</strong> weitere Recherchekandidaten (Stand ${esc(config.inventoryCounts.asOf)})</p>` : ''}
         ${searchHtml('hero', params.get('q') || '')}
         <div class="wl-quickterms"><a href="#karten">Alle Begriffe ↓</a><a href="${href('/narrativ-melden')}">Narrativ melden</a>${config.referenceLinks?'<a href="#sdgplus-bezug">Grundlage: SDG+</a>':''}${QUICKTERMS.map((t) => `<a href="${href('/', new URLSearchParams({ q: t, anker: 'karten' }))}">${esc(t)}</a>`).join('')}</div>
       </section>
@@ -407,6 +408,7 @@ export function createLexicon(DATA, config = {}) {
         <div class="wl-container">
         <p class="wl-lead">${p[0] || ''}</p>
         <ul class="wl-hero__facts">
+          ${config.inventoryCounts ? `<li><strong>${config.inventoryCounts.totalDistinct}</strong> erfasste Begriffe und Analyseansätze insgesamt, darunter <strong>${config.inventoryCounts.uniqueCandidates}</strong> noch nicht veröffentlichte Recherchekandidaten</li>` : ''}
           <li>${MODE === 'preview' ? `<strong>${total}</strong> Wirkungskarten im Redaktionsbestand` : vis.length ? `<strong>${vis.length}</strong> geprüfte Wirkungskarten` : 'Wirkungskarten werden <strong>einzeln freigegeben</strong>'}</li>
           <li><strong>${CATS.length}</strong> erklärte Kategorien</li>
           <li><strong>6</strong> Evidenzstufen A–F, keine Scores</li>
