@@ -1,0 +1,7 @@
+import fs from 'node:fs';import {ROOT} from './model.mjs';import assert from 'node:assert/strict';import path from 'node:path';
+const root=ROOT,access=JSON.parse(fs.readFileSync(root+'/outputs/wirkungslexikon/v9/access.json'));
+const auth='Basic '+Buffer.from(access.username+':'+access.password).toString('base64'),base=process.env.WL_EXAMPLES_PRIVATE_BASE||'http://127.0.0.1:8802';const result=[];
+for(const url of ['/wirkungslexikon/','/wirkungslexikon/daten.json','/wirkungslexikon/runtime.json','/wirkungslexikon/search-index.json','/api/wirkungslexikon/editorial?slug=offen-heizhammer','/api/wirkungslexikon/workflow']){const r=await fetch(base+url);assert.equal(r.status,401);result.push({url,anonymous:r.status});}
+const r=await fetch(base+'/wirkungslexikon/offen-heizhammer/',{headers:{authorization:auth}});assert.equal(r.status,200);assert(r.headers.get('x-robots-tag').includes('noindex'));assert(r.headers.get('cache-control').includes('no-store'));assert((await r.text()).includes('Gedankenbeispiel'));
+const workflow=await fetch(base+'/api/wirkungslexikon/workflow',{method:'POST',headers:{authorization:auth,'content-type':'application/json'},body:JSON.stringify({action:'approve'})});assert.equal(workflow.status,403);
+fs.writeFileSync(root+'/outputs/wirkungslexikon/v10/private-tests.json',JSON.stringify({status:'PASS',anonymousRoutes:result,authorizedPreview:true,noindex:true,noStore:true,approvalApi:403},null,2));console.log('Protected preview and approval API gates PASS');
