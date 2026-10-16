@@ -20,6 +20,7 @@ import {
   parseFeed,
   parseWoekPublicAssessments,
   sanitizeFeedText,
+  sentenceCount,
   scheduledSlot,
   storySimilarity,
   validateAnalysis,
@@ -556,6 +557,33 @@ test("Strukturierte Providerantwort wird übernommen", async () => {
   const result = await callWoekAi([candidate()], { fetchImpl: async () => new Response(JSON.stringify({ ok: true, answer, provider: "Oracle WOeK-KI API", model: "gpt-5.5", mode: "test", sources: [] }), { status: 200, headers: { "content-type": "application/json" } }) });
   assert.equal(result.analyses[0].story_id, "wt-test");
   assert.equal(result.model, "gpt-5.5");
+});
+
+test('Sankt place-name abbreviations are not extra summary sentences', () => {
+  for (const place of ['St. Pauli', 'St. Gallen', 'St.\u00a0Johann']) {
+    assert.equal(sentenceCount(`Das Vorhaben in ${place} wird geprüft. Die Folgen sind noch offen.`), 2);
+    assert.equal(sentenceCount(`Das Vorhaben in ${place} wird geprüft. Die Folgen sind offen. Eine Prüfung fehlt.`), 3);
+    assert.equal(sentenceCount(`Die Prüfung läuft. Das Vorhaben in ${place} bleibt offen.`), 2);
+  }
+  assert.equal(sentenceCount('Erster Satz. Zweiter Satz. Dritter Satz.'), 3);
+  assert.equal(sentenceCount('Die Prüfung endet am 16. Oktober. Dr. Weber erläutert sie.'), 2);
+});
+
+test('Sankt summary correction leaves the two-sentence and other publication gates intact', () => {
+  const story = candidate(), analysis = validAnalysis();
+  analysis.summary = 'Das Vorhaben in St. Gallen wird geprüft. Die Folgen sind noch offen.';
+  assert.deepEqual(validateAnalysis(analysis, story), []);
+  const before = structuredClone(analysis);
+  assert.deepEqual(validateAnalysis(analysis, story), []);
+  assert.deepEqual(analysis, before);
+  analysis.summary += ' Eine weitere Prüfung fehlt.';
+  assert.ok(validateAnalysis(analysis, story).includes('AI_SUMMARY_SENTENCE_COUNT'));
+  analysis.summary = before.summary;
+  analysis.impact_potential = 'Die Regel bewirkt 90 Prozent weniger Emissionen und <b>Erfolg</b>.';
+  const errors = validateAnalysis(analysis, story);
+  assert.ok(errors.includes('AI_EX_ANTE_CAUSAL_OVERCLAIM'));
+  assert.ok(errors.includes('AI_HTML_NOT_ALLOWED'));
+  assert.ok(errors.some(error => error.startsWith('AI_UNSUPPORTED_NUMBER')));
 });
 
 test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () => {
