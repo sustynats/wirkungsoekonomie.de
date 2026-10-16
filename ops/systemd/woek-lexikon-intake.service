@@ -1,0 +1,28 @@
+[Unit]
+Description=Private inbox and Discord notifications for lexicon narrative reports
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/woek-lexikon-intake/current
+Environment=WL_INTAKE_DIRECTORY=/var/lib/woek-lexikon-intake
+Environment=WL_INTAKE_DISCORD_CONFIG=/var/lib/woek-news-bridge/editorial-discord.json
+Environment=WL_INTAKE_PORT=8791
+ExecStart=/usr/bin/node scripts/wirkungslexikon/intake-server.mjs
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=40
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/woek-lexikon-intake
+MemoryMax=128M
+CPUQuota=20%
+
+[Install]
+WantedBy=multi-user.target
