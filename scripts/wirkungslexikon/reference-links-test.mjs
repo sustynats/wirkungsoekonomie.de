@@ -1,12 +1,12 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';import {execFileSync} from 'node:child_process';
 import {ROOT,read,sha} from './model.mjs';import {digest} from './v9-store.mjs';import {loadReferenceLinks,applyReferenceLinks,referenceSearchTags} from './reference-links.mjs';
 const blocks=loadReferenceLinks(),component=path.join(ROOT,'outputs/wirkungslexikon/public'),site=process.env.WL_SITE||path.join(ROOT,'outputs/wirkungslexikon/v9-final-deployment/candidate'),files=[...new Set(blocks.flatMap(b=>b.paths))];
-test('Reference registry: 26 contextual blocks on 22 existing pages, seven specific dimensions, no card assignments',()=>{
- assert.equal(blocks.length,26);assert.equal(files.length,22);const methods=blocks.find(b=>b.id==='sdgplus-methodik');assert.equal(methods.items.length,7);assert(new Set(methods.items.map(i=>i.href)).size===7);assert(!Object.keys(read(path.join(ROOT,'content/wirkungslexikon/sdgplus-links.json'))).includes('entries'));
+test('Reference registry: 29 contextual blocks on 27 existing pages, seven specific dimensions, no card assignments',()=>{
+ assert.equal(blocks.length,29);assert.equal(files.length,27);const methods=blocks.find(b=>b.id==='sdgplus-methodik');assert.equal(methods.items.length,7);assert(new Set(methods.items.map(i=>i.href)).size===7);assert(!Object.keys(read(path.join(ROOT,'content/wirkungslexikon/sdgplus-links.json'))).includes('entries'));
 });
 test('Host additions preserve exact prior text, including historical documents; reapplication is idempotent',()=>{
  for(const rel of files.filter(f=>!f.startsWith('wirkungslexikon/'))){
-  const current=fs.readFileSync(path.join(ROOT,rel),'utf8'),before=execFileSync('git',['show','0c49ab62b685141af1cc809d88c42285506560b6:'+rel],{cwd:ROOT,encoding:'utf8'});const result=applyReferenceLinks(before,rel,blocks);assert.equal(current,result.html);let restored=result.html;for(const e of result.edits.toReversed())restored=restored.replace(e.after,e.before);assert.equal(restored,before);assert.equal(applyReferenceLinks(result.html,rel,blocks).html,result.html);
+  const current=fs.readFileSync(path.join(ROOT,rel),'utf8'),before=process.env.WL_REFERENCE_BASE?fs.readFileSync(path.join(process.env.WL_REFERENCE_BASE,rel),'utf8'):execFileSync('git',['show','0c49ab62b685141af1cc809d88c42285506560b6:'+rel],{cwd:ROOT,encoding:'utf8'});const result=applyReferenceLinks(before,rel,blocks);assert.equal(current,result.html);let restored=result.html;for(const e of result.edits.toReversed())restored=restored.replace(e.after,e.before);assert.equal(restored,before);assert.equal(applyReferenceLinks(result.html,rel,blocks).html,result.html);
  }
 });
 test('Every new link and fragment resolves to its actual canonical content',()=>{
