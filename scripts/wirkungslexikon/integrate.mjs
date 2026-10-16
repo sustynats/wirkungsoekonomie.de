@@ -4,6 +4,7 @@ import {pathToFileURL,fileURLToPath} from 'node:url';
 import {ROOT,read,atomic,sha} from './model.mjs';
 import {patchSearch} from './search-label.mjs';
 import {loadAudienceTeasers,applyAudienceTeaser} from './audience-teasers.mjs';
+import {loadReferenceLinks,applyReferenceLinks,referenceSearchTags} from './reference-links.mjs';
 
 export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=null,pruneSearch=true}={}) {
  const out=path.resolve(artifact), source=path.resolve(candidate);
@@ -12,7 +13,8 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  const all=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?all(path.join(dir,e.name)):e.isFile()?[path.join(dir,e.name)]:[]);
  const before=new Map(all(out).map(f=>[path.relative(out,f),sha(fs.readFileSync(f))]));
  if(!before.has('index.html')||fs.readFileSync(path.join(out,'CNAME'),'utf8').trim()!=='wirkungsoekonomie.de')throw Error('Vollständiger Produktionsbestand mit erwarteter Domain fehlt');
- const changed=[];const teasers=loadAudienceTeasers(supportRoot);
+ const changed=[];const teasers=loadAudienceTeasers(supportRoot),referenceBlocks=loadReferenceLinks(supportRoot),referencePages=[];
+ for(const b of referenceBlocks)for(const rel of b.paths)if(!rel.startsWith('wirkungslexikon/')&&!fs.existsSync(path.join(out,rel)))throw Error('Kanonische Referenzseite fehlt: '+rel);
  for(const item of teasers)if(!fs.existsSync(path.join(out,item.path)))throw Error('Zielgruppen-Seite fehlt: '+item.path);
  // Remove only an earlier generated lexicon; revoked pages and social assets cannot survive.
  const previous=path.join(out,'wirkungslexikon/.generated.json');
@@ -41,7 +43,8 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
   const searchUrls=[];
   html=html.replace(/src="([^"\s]*assets\/js\/search\.js)(?:\?[^"\s]*)?"/g,all=>{const prefix=all.match(/src="([^?\"]+)/)[1];const next='src="'+prefix+'?v='+searchVersion+'"';searchUrls.push([all,next]);return next;});
   const teaser=teasers.find(item=>item.path===path.relative(out,f));const teaserChange=teaser?applyAudienceTeaser(html,teaser):null;if(teaserChange)html=teaserChange.html;
-  if(html!==old){let restored=html;if(teaserChange)restored=restored.replace(teaserChange.after,teaserChange.before);for(const [a,b]of navChanges.reverse())restored=restored.replace(b,a);if(!old.includes('data-wl-hub'))restored=restored.replace(hub,'');for(const [a,b]of searchUrls)restored=restored.replace(b,a);if(restored!==old)throw Error('Inhalt außerhalb der Navigation, freigegebenen Teaser oder Suchskriptversion würde verändert: '+f);fs.writeFileSync(f,html);navProof.push(path.relative(out,f));}
+  const referenceChange=applyReferenceLinks(html,path.relative(out,f),referenceBlocks);html=referenceChange.html;if(referenceChange.edits.length)referencePages.push(path.relative(out,f));
+  if(html!==old){let restored=html;for(const e of referenceChange.edits.toReversed())restored=restored.replace(e.after,e.before);if(teaserChange)restored=restored.replace(teaserChange.after,teaserChange.before);for(const [a,b]of navChanges.reverse())restored=restored.replace(b,a);if(!old.includes('data-wl-hub'))restored=restored.replace(hub,'');for(const [a,b]of searchUrls)restored=restored.replace(b,a);if(restored!==old)throw Error('Inhalt außerhalb der Navigation, freigegebenen Teaser oder Referenzhinweise würde verändert: '+f);fs.writeFileSync(f,html);navProof.push(path.relative(out,f));}
  }
  atomic(path.join(out,'wirkungslexikon/.generated.json'),{...sourceManifest,files:deploymentFiles});
  const pages=read(path.join(source,'wirkungslexikon/search-meta.json'));
@@ -50,7 +53,8 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  const prior=fs.existsSync(sourceIndex)?read(sourceIndex):searchModule.readBuiltSearchEntries?searchModule.readBuiltSearchEntries(out):[];
  if(!prior.length)throw Error('Vorhandener globaler Suchindex kann nicht gelesen werden');
  const added=pages.map(p=>{const slug=p.path.slice('/wirkungslexikon/'.length).replace(/\/$/,'');const e=data.entries.find(e=>e.slug===slug);return {id:'wirkungslexikon-'+(slug||'start'),title:p.title,url:p.path,description:p.description,body:e?['Wirkungslexikon',e.wirkungspotenzial.moegliche_veraenderung,e.bedeutung_und_kontext,e.akteur,e.psychologischer_effekt.name,...e.kategorien].join(' '):p.description,type:e?'Wirkungskarte':'Seite',section:'Wirkungslexikon',format:'HTML',tags:e?[...e.kategorien,e.korpus,e.akteur]:['Wirkungslexikon'],priority:65};});
- atomic(sourceIndex,[...prior.filter(e=>!String(e.url).startsWith('/wirkungslexikon/')),...added]);
+ const indexed=[...prior.filter(e=>!String(e.url).startsWith('/wirkungslexikon/')),...added].map(e=>{const p=new URL(e.url,'https://wirkungsoekonomie.de').pathname;return referenceSearchTags(e,p.slice(1)+(p.endsWith('/')?'index.html':''),referenceBlocks);});
+ atomic(sourceIndex,indexed);
  const routesFile=path.join(supportRoot,'scripts/lib/public-routes.mjs');
  const directoryPaths=new Set();
  if(fs.existsSync(routesFile)){
@@ -95,7 +99,7 @@ export async function integrate({artifact,candidate,supportRoot=ROOT,proofFile=n
  for(const name of new Set([...before.keys(),...after.keys()]))if(before.get(name)!==after.get(name)&&!allowed(name))unexpected.push(name);
  if(unexpected.length)throw Error('Unerwartete Änderungen: '+unexpected.join(', '));
  for(const f of all(path.join(out,'wirkungslexikon')).filter(f=>/\.(?:html|json|xml|mjs)$/.test(f))){const text=fs.readFileSync(f,'utf8');if(/\/Users\/|\/private\/tmp\/|\bgh[pousr]_[A-Za-z0-9_]{20,}/.test(text))throw Error('Privater Datenrest: '+f);}
- const proof={cards:data.entries.length,pages:pages.length,navigationPages:navProof.length,audienceTeasers:teasers.map(item=>item.path),unchangedFiles:[...before.keys()].filter(n=>before.get(n)===after.get(n)).length,changedFiles:[...new Set([...before.keys(),...after.keys()])].filter(n=>before.get(n)!==after.get(n)),unrelatedContentUnchanged:true,unexpectedChanges:unexpected};
+ const proof={cards:data.entries.length,pages:pages.length,navigationPages:navProof.length,referencePages,audienceTeasers:teasers.map(item=>item.path),unchangedFiles:[...before.keys()].filter(n=>before.get(n)===after.get(n)).length,changedFiles:[...new Set([...before.keys(),...after.keys()])].filter(n=>before.get(n)!==after.get(n)),unrelatedContentUnchanged:true,unexpectedChanges:unexpected};
  if(proofFile)atomic(proofFile,proof);
  return proof;
 }
