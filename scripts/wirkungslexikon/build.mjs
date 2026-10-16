@@ -4,6 +4,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { ROOT, CONTENT, loadModel, publicData, read, atomic, sha } from './model.mjs';
 import {digest} from './v9-store.mjs';
+import {inventoryCounts} from './inventory.mjs';
 import {renderSiteFooter,renderFooterNewsletter} from '../lib/site-shell.mjs';
 import {loadReferenceLinks,applyReferenceLinks} from './reference-links.mjs';
 import { createLexicon } from '../../assets/js/wirkungslexikon.mjs';
@@ -29,7 +30,9 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
     empty_results:'Zu dieser Suche gibt es derzeit keinen passenden Eintrag. Versuchen Sie einen anderen Begriff oder setzen Sie die Filter zurück.',
     disclaimer_pilot:undefined};
   const history = Object.fromEntries(Object.entries(model.editorial.history).filter(([slug])=>data.entries.some(e=>e.slug===slug)));
-  const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras};
+  const suppressInventory=negativePublicationTest&&data.entries.length===0;
+  const inventory=suppressInventory?null:inventoryCounts();
+  const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras,inventoryCounts:suppressInventory?null:{totalDistinct:inventory.totalDistinct,uniqueCandidates:inventory.uniqueCandidates,asOf:inventory.asOf,publishedCards:mode==='public'?data.entries.length:publicData(read(path.join(CONTENT,'publication-v9.json')).model.data).entries.length}};
   const full=createLexicon(model.data,{mode:'preview'});
   const strings=new Set();
   const walk=v=>{ if(typeof v==='string'&&full.isBoiler(v)) strings.add(v); else if(Array.isArray(v)) v.forEach(walk); else if(v&&typeof v==='object') Object.values(v).forEach(walk); };
@@ -72,7 +75,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   const pages=[];
   function page(rel,title,html,entry=null) {
     const url=`${site}/wirkungslexikon/${rel}`;
-    const description=entry ? `Wirkungspotenzial: ${entry.wirkungspotenzial.moegliche_veraenderung}` : 'Dauerhaftes wissenschaftlich fundiertes Nachschlage- und Analysewerk zu politischer Sprache, ihren Bedeutungsverschiebungen und Wirkungspotenzialen.';
+    const description=!entry&&rel===''&&config.inventoryCounts ? `${config.inventoryCounts.totalDistinct} erfasste Begriffe und Analyseansätze: ${data.entries.length} veröffentlichte Wirkungskarten und ${config.inventoryCounts.uniqueCandidates} weitere Begriffe in redaktioneller Recherche. Quellen und Wirkungspotenziale politischer Sprache verstehen.` : entry ? `Wirkungspotenzial: ${entry.wirkungspotenzial.moegliche_veraenderung}` : 'Dauerhaftes wissenschaftlich fundiertes Nachschlage- und Analysewerk zu politischer Sprache, ihren Bedeutungsverschiebungen und Wirkungspotenzialen.';
     let meta='';
     if(mode==='public') {
       meta=`<link rel="canonical" href="${esc(url)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(url)}"><meta property="og:type" content="${entry?'article':'website'}">`;
