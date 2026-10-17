@@ -17,24 +17,29 @@
       "firstSeen": "2026-10-16T12:21:10.020Z",
       "active": true
     },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-17T00:40:17.085Z",
-      "active": true
-    },
-    "run": {
-      "firstSeen": "2026-10-17T00:57:25.531Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-10-17T00:57:25.531Z",
-      "active": true
-    },
-    "queue": {
-      "firstSeen": "2026-10-17T00:57:25.531Z",
-      "active": true
+    "editorial-status": {
+      "firstSeen": "2026-10-17T01:20:44.804Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ad86188702191c35bece0a52",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-17T01:20:44.804Z"
+    },
+    {
+      "id": "e72bc0ca904607820a9e5b4a",
+      "content": "✓ WÖk-Störung behoben\nKI-Verarbeitung\nPrüfung: 2026-10-17T01:20:44.804Z"
+    },
+    {
+      "id": "d3701f4a2fbb1bb459bab557",
+      "content": "✓ WÖk-Störung behoben\nNachrichten-Warteschlange\nPrüfung: 2026-10-17T01:20:44.804Z"
+    },
+    {
+      "id": "289796d9634bee16d5e6c81c",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-17T01:20:44.804Z"
+    }
+  ],
   "dailyDate": "2026-10-16",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2721,7 +2726,7 @@
       }
     },
     "last_new_at": "2026-10-16T11:20:53.233Z",
-    "checked_at": "2026-10-17T01:06:15.169Z",
+    "checked_at": "2026-10-17T01:20:44.804Z",
     "last_current_new_at": "2026-10-16T04:21:02.747Z"
   },
   "recovery_attempts": [
