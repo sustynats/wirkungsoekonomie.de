@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-17T15:36:33.977Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2730,10 +2734,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-in-berlin-sondierungen-gehen-weiter-belastung-durch-neuen-emde-post-07a1c9/": {
         "first_seen_at": "2026-10-17T15:06:21.402Z",
         "source_at": "2026-10-16T06:52:40.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/usa-und-russland-trump-setzt-geplante-sanktionen-aus-aaf060/": {
+        "first_seen_at": "2026-10-17T15:36:33.977Z",
+        "source_at": "2026-10-17T06:29:00.000Z"
       }
     },
-    "last_new_at": "2026-10-17T15:06:21.402Z",
-    "checked_at": "2026-10-17T15:21:09.023Z",
+    "last_new_at": "2026-10-17T15:36:33.977Z",
+    "checked_at": "2026-10-17T15:36:33.977Z",
     "last_current_new_at": "2026-10-17T13:56:23.255Z"
   },
   "recovery_attempts": [
