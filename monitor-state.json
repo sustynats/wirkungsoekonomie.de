@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-17T20:50:51.596Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2758,11 +2762,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/zehn-jahre-danach-basf-explosion-mit-funf-toten-5b6eb2/": {
         "first_seen_at": "2026-10-17T20:20:45.167Z",
         "source_at": "2026-10-17T18:38:03.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/eisengiesserei-ueckermunde-widerstand-gegen-geplante-schliessung-23c951/": {
+        "first_seen_at": "2026-10-17T20:50:51.596Z",
+        "source_at": "2026-10-17T18:18:34.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vorfall-in-nrw-angriff-in-seniorenheim-eine-tote-und-zwei-schwerverletzte-5c9f90/": {
+        "first_seen_at": "2026-10-17T20:50:51.596Z",
+        "source_at": "2026-10-16T22:36:45.000Z"
       }
     },
-    "last_new_at": "2026-10-17T20:20:45.167Z",
-    "checked_at": "2026-10-17T20:36:12.452Z",
-    "last_current_new_at": "2026-10-17T20:20:45.167Z"
+    "last_new_at": "2026-10-17T20:50:51.596Z",
+    "checked_at": "2026-10-17T20:50:51.596Z",
+    "last_current_new_at": "2026-10-17T20:50:51.596Z"
   },
   "recovery_attempts": [
     {
