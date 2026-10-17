@@ -1,11 +1,73 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-17T15:26:24.697Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-17T16:38:58.111Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/hinweisportal-freigeschaltet-explosion-vor-laden-in-marl-unweit-von-anderem-tatort-8c211c/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/hinweisportal-freigeschaltet-explosion-vor-laden-in-marl-unweit-von-anderem-tatort-8c211c/",
+      "title": "Explosion vor Laden in Marl: Hinweisportal für Zeugen freigeschaltet",
+      "summary": "In Marl explodierte laut einem Stern-Bericht ein Gegenstand vor einem Laden; die Polizei sucht über ein Hinweisportal Zeugen. Ursache, Schäden und ein möglicher Zusammenhang mit tödlichen Schüssen in der Nähe sind offen.",
+      "date_published": "2026-10-17T16:17:36.000Z",
+      "date_modified": "2026-10-17T16:17:36.000Z",
+      "_woek_released_at": "2026-10-17T16:44:42.526Z",
+      "tags": [
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-marl-zusammenhang-mit-todlichen-schussen-5b8b25/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-marl-zusammenhang-mit-todlichen-schussen-5b8b25/",
+      "title": "Laut Polizei: Explosion in Marl – Zeugen gesucht",
+      "summary": "In Marl hat es laut einem WDR-Bericht eine Explosion gegeben; die Polizei sucht Zeuginnen und Zeugen. Ursache, Folgen und ein möglicher Zusammenhang mit einer Schießerei sind offen.",
+      "date_published": "2026-10-17T15:20:22.000Z",
+      "date_modified": "2026-10-17T15:20:22.000Z",
+      "_woek_released_at": "2026-10-17T12:52:30.871Z",
+      "tags": [
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/sprengung-einer-alten-bombe-schafherde-muss-nach-bombenfund-umziehen-63ebd0/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/sprengung-einer-alten-bombe-schafherde-muss-nach-bombenfund-umziehen-63ebd0/",
@@ -33,37 +95,6 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
-          "status": "potential"
-        }
-      }
-    },
-    {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-marl-zusammenhang-mit-todlichen-schussen-5b8b25/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-marl-zusammenhang-mit-todlichen-schussen-5b8b25/",
-      "title": "Laut Polizei: Explosion in Marl – Zusammenhang mit Schießerei wird geprüft",
-      "summary": "In Marl hat es laut WDR am Samstagmorgen eine Explosion gegeben. Die Polizei prüft, ob sie mit einer Schießerei zusammenhängt; Ursache und Folgen bleiben offen.",
-      "date_published": "2026-10-17T12:06:08.000Z",
-      "date_modified": "2026-10-17T12:06:08.000Z",
-      "_woek_released_at": "2026-10-17T12:52:30.871Z",
-      "tags": [
-        "Gesundheit"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": false,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "potential"
-        },
-        "planet": {
-          "magnitude": 0,
-          "direction": "neutral",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 1,
-          "direction": "negative",
           "status": "potential"
         }
       }
