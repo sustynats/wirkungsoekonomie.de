@@ -302,6 +302,39 @@ test('unscored side paths are discarded and a decisive boundary on a positive pa
   assert.ok(assessmentIssues({ story_id: 'wt-1' }, story).includes('IMPACT_ASSESSMENT_REQUIRED'));
 });
 
+for (const incomplete of [false, true]) test(`paid follow-ups are archived unchanged (${incomplete ? 'incomplete' : 'completed'})`, async (t) => {
+  const os = await import('node:os'), path = await import('node:path');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-paid-followup-'));
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+  const original = JSON.stringify({ analyses: [{ story_id: 'wt-1', publication_recommendation: true,
+    source_summary: 'Original synthetic summary.', impact_assessment: syntheticPotentialAssessment() }] });
+  const replacement = JSON.stringify({ source_summary: 'Replacement synthetic summary, preserved exactly as received.' });
+  let requests = 0;
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', rawOutputDir: dir,
+    findIssues: () => ['AI_SOURCE_SUMMARY_LENGTH'], fetchImpl: async () => {
+      requests++;
+      const payload = requests === 1 ? responsePayload(original) : incomplete
+        ? { ...responsePayload(''), status: 'incomplete', incomplete_details: { reason: 'max_output_tokens' }, output: [] }
+        : responsePayload(replacement);
+      return { ok: true, status: 200, json: async () => payload };
+    } });
+  assert.equal(requests, 2); assert.equal(result.repair_calls, 1);
+  const files = fs.readdirSync(dir);
+  assert.equal(files.length, 2, 'both paid replies must survive, including a follow-up without a final message');
+  const followupFile = files.find(name => name.endsWith('-nachlieferung.json'));
+  assert.ok(followupFile);
+  const followup = JSON.parse(fs.readFileSync(path.join(dir, followupFile), 'utf8'));
+  const initial = JSON.parse(fs.readFileSync(path.join(dir, files.find(name => name !== followupFile)), 'utf8'));
+  assert.equal(initial.answer, original);
+  assert.equal(followup.answer, incomplete ? null : replacement);
+  assert.equal(followup.status, incomplete ? 'incomplete' : 'completed');
+  assert.equal(followup.model, 'gpt-5.4-mini-2026-03-17');
+  assert.equal(followup.usage.output_tokens, 800);
+  assert.deepEqual(followup.story_ids, ['wt-1']);
+  assert.ok(followup.issues.includes('AI_SOURCE_SUMMARY_LENGTH'));
+  if (incomplete) assert.equal(followup.incomplete.reason, 'max_output_tokens');
+});
+
 test('an answer without a usable assessment gets exactly one focused follow-up in the same call, a complete one none', async () => {
   const texts = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S' });
   const repairedAssessment = syntheticPotentialAssessment();
