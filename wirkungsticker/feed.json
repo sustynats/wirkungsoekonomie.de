@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-17T20:46:45.003Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-17T22:00:12.279Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -191,6 +191,38 @@
         },
         "democracy": {
           "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/israelische-siedler-greifen-im-westjordanland-europaische-diplomaten-an-af2016/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/israelische-siedler-greifen-im-westjordanland-europaische-diplomaten-an-af2016/",
+      "title": "Israelische Siedler greifen im Westjordanland europäische Diplomaten an",
+      "summary": "Zwei Medien berichten über einen Angriff israelischer Siedler auf einen europäischen Diplomatenkonvoi im Westjordanland. Der Vorgang ist belegt, Details zu Ablauf, Verletzungen und Folgen bleiben offen.",
+      "date_published": "2026-10-17T17:23:00.000Z",
+      "date_modified": "2026-10-17T17:23:00.000Z",
+      "_woek_released_at": "2026-10-17T22:03:57.781Z",
+      "tags": [
+        "Europa",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         }
