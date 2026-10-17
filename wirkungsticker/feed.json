@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-17T20:29:54.712Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-17T20:46:45.003Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/todlicher-messerangriff-in-seniorenheim-im-munsterland-1d9588/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/todlicher-messerangriff-in-seniorenheim-im-munsterland-1d9588/",
+      "title": "Laut ZDFheute: Eine Tote und zwei Schwerverletzte nach Messerangriff in Seniorenheim",
+      "summary": "In einem Seniorenheim in Olfen starb eine 86-jährige Bewohnerin, zwei Frauen wurden schwer verletzt. Tatverdächtiger, Motiv und Tatablauf sind nur vorläufig beschrieben; die Folgen für Schutz und Vertrauen in der Einrichtung bleiben offen.",
+      "date_published": "2026-10-17T20:14:00.000Z",
+      "date_modified": "2026-10-17T20:14:00.000Z",
+      "_woek_released_at": "2026-10-17T20:51:47.700Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-behorden-ein-toter-bei-russischem-angriff-auf-cherson-16801a/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-behorden-ein-toter-bei-russischem-angriff-auf-cherson-16801a/",
@@ -97,6 +128,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/aktuelles-zum-krieg-in-der-ukraine-8e43f6/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/aktuelles-zum-krieg-in-der-ukraine-8e43f6/",
+      "title": "Laut ZDFheute: Trump setzt neue Russland-Sanktionen aus",
+      "summary": "ZDFheute berichtet, dass Trump neue Russland-Sanktionen per Dekret aussetzt. Umfang, Dauer und Folgen des Schritts sowie mögliche Gespräche bleiben offen.",
+      "date_published": "2026-10-17T17:57:00.000Z",
+      "date_modified": "2026-10-17T17:57:00.000Z",
+      "_woek_released_at": "2026-10-17T20:52:33.493Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
