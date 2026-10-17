@@ -20,9 +20,26 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-17T00:40:17.085Z",
       "active": true
+    },
+    "run": {
+      "firstSeen": "2026-10-17T00:57:25.531Z",
+      "active": true
+    },
+    "provider": {
+      "firstSeen": "2026-10-17T00:57:25.531Z",
+      "active": false
+    },
+    "queue": {
+      "firstSeen": "2026-10-17T00:57:25.531Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "d1815232b0484b047e70b455",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-10-17T00:57:25.531Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-16",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2709,7 +2726,7 @@
       }
     },
     "last_new_at": "2026-10-16T11:20:53.233Z",
-    "checked_at": "2026-10-17T00:51:10.159Z",
+    "checked_at": "2026-10-17T00:57:25.531Z",
     "last_current_new_at": "2026-10-16T04:21:02.747Z"
   },
   "recovery_attempts": [
