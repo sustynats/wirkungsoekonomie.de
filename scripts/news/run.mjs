@@ -41,6 +41,7 @@ import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences, promptEvidenceSegments } from "./newsroom.mjs";
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
 import { consolidateLeizenDuplicates } from "./migrate-leizen-duplicates.mjs";
+import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
@@ -1333,6 +1334,10 @@ export async function runWirkungsticker(options = {}) {
   report.source_queue_repartitions = repartition.changes;
   const freshUrls = new Set(changedItems.map(item => item.url));
   changedItems.push(...repartition.requeued_sources.filter(item => !freshUrls.has(item.url)));
+  // A reviewed provenance wording correction rides the ordinary locked,
+  // atomic update. It changes no sources, paid answer or assessment.
+  report.source_provenance_clarifications = applyDocumentedSourceIndependenceClarifications(storyStore.stories || [], now);
+  report.updated_stories += report.source_provenance_clarifications.filter(change => change.status === 'applied').length;
   // The two independently verified Leizen duplicates need an exact-source
   // consolidation. Generic place matching rightly cannot infer town/state
   // equivalence from their headlines; this mapping is evidence-bound and
