@@ -9,7 +9,7 @@ import {renderSiteFooter,renderFooterNewsletter} from '../lib/site-shell.mjs';
 import {loadReferenceLinks,applyReferenceLinks} from './reference-links.mjs';
 import { createLexicon } from '../../assets/js/wirkungslexikon.mjs';
 
-export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexikon',mode), model=null, assets=true, textOverrides={}, configExtras={}, extraPages=[], extraSubnav='', negativePublicationTest=false}={}) {
+export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexikon',mode), model=null, assets=true, textOverrides={}, configExtras={}, extraPages=[], extraSubnav='', negativePublicationTest=false, inventoryOptions={}}={}) {
   if (!['preview','public'].includes(mode)) throw Error('Unbekannter Build-Modus');
   if(!model&&mode==='public'){const p=read(path.join(CONTENT,'publication-policy.json')).lexikon;if(p.version==='V9'&&p.released){const frozen=read(path.join(CONTENT,'publication-v9.json'));if(digest(frozen)!==p.payloadSha256)throw Error('V9_PAYLOAD_APPROVAL_MISMATCH');return build({...frozen,mode,out,assets});}}
   if(!model) {
@@ -31,7 +31,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
     disclaimer_pilot:undefined};
   const history = Object.fromEntries(Object.entries(model.editorial.history).filter(([slug])=>data.entries.some(e=>e.slug===slug)));
   const suppressInventory=negativePublicationTest&&data.entries.length===0;
-  const inventory=suppressInventory?null:inventoryCounts();
+  const inventory=suppressInventory?null:inventoryCounts(inventoryOptions);
   const config={mode,ui,texts,histories:Object.keys(history).length?history:(data.publicationHistory||{}),...configExtras,journalArticle:policy.journal.released?policy.journal.publishedArticle:null,inventoryCounts:suppressInventory?null:{totalDistinct:inventory.totalDistinct,uniqueCandidates:inventory.uniqueCandidates,asOf:inventory.asOf,publishedCards:mode==='public'?data.entries.length:publicData(read(path.join(CONTENT,'publication-v9.json')).model.data).entries.length}};
   const full=createLexicon(model.data,{mode:'preview'});
   const strings=new Set();
@@ -68,7 +68,7 @@ export function build({mode='preview', out=path.join(ROOT,'outputs/wirkungslexik
   const footer=renderSiteFooter('/',nav).replace('<div class="footer-inner">','<div class="footer-inner">'+renderFooterNewsletter('/')).replace(/<a\b[^>]*href="\/en\/"[^>]*>English<\/a>/g,'');
   const subnav=`<nav class="wl-subnav" aria-label="Wirkungslexikon"><div class="wl-container wl-subnav__inner"><a class="wl-subnav__title" href="/wirkungslexikon/">Wirkungslexikon</a><div class="wl-subnav__links">
   <a href="/wirkungslexikon/">Übersicht</a><a href="/wirkungslexikon/#karten">Alle Karten</a><a href="/wirkungslexikon/narrativ-melden/">Narrativ melden</a><a href="/wirkungslexikon/kategorien/">Kategorien</a><a href="/wirkungslexikon/fuer-buerger/">Für Bürgerinnen und Bürger</a><a href="/wirkungslexikon/fuer-redaktionen/">Für Redaktionen</a><a href="/wirkungslexikon/fuer-wissenschaft/">Wissenschaft</a><a href="/wirkungslexikon/methodik/">Methodik</a>${extraSubnav}${mode==='preview'?'<a href="/wirkungslexikon/redaktion/">Redaktion</a>':''}</div></div></nav>`;
-  const banner=mode==='preview'?`<div class="wl-preview-banner" role="region" aria-label="Redaktionsstatus"><strong>Geschützte Redaktionsvorschau</strong><span>${data.entries.length} Karten im Redaktionsbestand · ${data.entries.filter(e=>e.pruefstatus==='freigegeben').length} freigegeben · Stand ${esc(data.stand)}</span><span>Dauerhaftes Nachschlage- und Analysewerk · diese Vorschau ist nicht öffentlich</span></div>`:'';
+  const banner=mode==='preview'?`<div class="wl-preview-banner" role="region" aria-label="Redaktionsstatus"><strong>Geschützte Redaktionsvorschau</strong><span>${data.entries.length} Karten im Redaktionsbestand · ${config.inventoryCounts?.publishedCards??data.entries.filter(e=>e.pruefstatus==='freigegeben').length} Karten im öffentlichen Lexikon · Stand ${esc(data.stand)}</span><span>Dauerhaftes Nachschlage- und Analysewerk · diese Vorschau ist nicht öffentlich</span></div>`:'';
   const template=fs.readFileSync(path.join(ROOT,'templates/wirkungslexikon.html'),'utf8');
   const styleVersion=sha(fs.readFileSync(path.join(ROOT,'assets/css/wirkungslexikon.css'))).slice(0,12);
   const scriptVersion=sha(['assets/js/wirkungslexikon.mjs','assets/js/wirkungslexikon-init.mjs'].map(rel=>fs.readFileSync(path.join(ROOT,rel),'utf8')).join('\n')).slice(0,12);

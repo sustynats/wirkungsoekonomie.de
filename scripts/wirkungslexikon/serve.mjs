@@ -31,6 +31,7 @@ const server=http.createServer(async(req,res)=>{
  const auth=req.headers.authorization||'';
  const expected='Basic '+Buffer.from(access.username+':'+access.password).toString('base64');
  if(!equal(auth,expected)){res.setHeader('WWW-Authenticate','Basic realm="Wirkungslexikon Redaktion", charset="UTF-8"');res.writeHead(401);res.end('Zugang geschützt');return;}
+ if(isV9&&fs.existsSync(path.join(base,'.v11-import.lock'))){res.writeHead(503,{'Retry-After':'2'});res.end('Versionierter Import läuft. Bitte erneut laden.');return;}
  const u=new URL(req.url,'http://localhost');
  const json=(code,v)=>{res.writeHead(code,{'Content-Type':'application/json; charset=utf-8'});res.end(JSON.stringify(v));};
  async function body(){let raw='';for await(const c of req){raw+=c;if(raw.length>300000)throw Error('Eingabe zu groß');}return JSON.parse(raw);}
