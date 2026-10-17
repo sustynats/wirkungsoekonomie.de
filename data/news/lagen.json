@@ -1,7 +1,93 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-17T04:00:00.000Z",
+  "updated_at": "2026-10-17T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-17-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-17",
+      "window_from": "2026-10-17T04:00:00.000Z",
+      "window_to": "2026-10-17T10:00:00.000Z",
+      "stand": "2026-10-17T10:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 1,
+        "fortgeschrieben": 7
+      },
+      "entries": [
+        {
+          "story_id": "wt-4dd6029ffce40f69",
+          "slug": "trump-says-russia-and-ukraine-agree-to-energy-ceasefire-e40f69",
+          "title": "Laut France 24: Trump spricht von Energie-Waffenruhe, Selenskyj überrascht",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T09:51:42.987Z",
+          "score": 9.727
+        },
+        {
+          "story_id": "wt-6f5d5a6d16158804",
+          "slug": "streit-ums-geld-eu-staats-und-regierungschefs-verhandeln-uber-eu-haushalt-158804",
+          "title": "EU-Spitze beginnt Verhandlungen über nächsten EU-Haushalt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T09:50:30.626Z",
+          "score": 7.7236
+        },
+        {
+          "story_id": "wt-2805bb7f763da5f7",
+          "slug": "europe-today-trump-claims-ukraine-russia-energy-ceasefire-as-baltics-stay-on-alert-3da5f7",
+          "title": "Laut Euronews behauptet Trump eine Energie-Waffenruhe zwischen Russland und der Ukraine",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T09:19:17.276Z",
+          "score": 5.6369
+        },
+        {
+          "story_id": "wt-50ca5b396bc4b562",
+          "slug": "ezb-wird-zinsen-anheben-iran-krieg-treibt-inflation-im-euroraum-auf-drei-jahres-hoch-c4b562",
+          "title": "Laut Berichten: Ölpreisschock setzt Euroraum unter Inflationsdruck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T09:18:18.709Z",
+          "score": 5.6342
+        },
+        {
+          "story_id": "wt-c5f4cfd87cf58d63",
+          "slug": "erneuter-tankrabatt-tritt-in-kraft-f58d63",
+          "title": "Tankrabatt tritt in Kraft; Weitergabe an Autofahrer bleibt offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T08:47:37.202Z",
+          "score": 5.5489
+        },
+        {
+          "story_id": "wt-e59c6f295497409c",
+          "slug": "nach-schussen-in-hamburg-razzia-der-polizei-auf-dem-kiez-97409c",
+          "title": "Nach Schüssen in Hamburg: Laut NDR kontrolliert die Polizei 30 Menschen",
+          "state": "neu",
+          "at": "2026-10-17T07:40:03.339Z",
+          "score": 5.6113
+        },
+        {
+          "story_id": "wt-71ab3e2a4dbd5ba3",
+          "slug": "drohender-ausschluss-chef-von-arabisch-israelischer-partei-zieht-kandidatur-fur-knesset--bd5ba3",
+          "title": "Laut stern: Sami Abu Schehadeh zieht Knesset-Kandidatur zurück",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T07:38:05.262Z",
+          "score": 5.3558
+        },
+        {
+          "story_id": "wt-5ce15fef6b37179b",
+          "slug": "nach-warnung-selenskyjs-neue-russische-angriffe-auf-kiew-37179b",
+          "title": "Laut Medienberichten: Neue russische Angriffe auf Kiew und andere ukrainische Städte",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T07:37:05.923Z",
+          "score": 9.3531
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-17T10:10:22.084Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-17-morgenlage",
       "slot": "morgenlage",
@@ -5299,95 +5385,6 @@
           "state": "neu",
           "at": "2026-09-17T10:41:17.999Z",
           "score": 7.8651
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-17-mittagslage",
-      "slot": "mittagslage",
-      "label": "Mittagslage",
-      "date": "2026-09-17",
-      "window_from": "2026-09-17T04:00:00.000Z",
-      "window_to": "2026-09-17T10:00:00.000Z",
-      "stand": "2026-09-17T10:00:00.000Z",
-      "headline": "Das sind die 9 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 9,
-        "neu": 7,
-        "fortgeschrieben": 2
-      },
-      "entries": [
-        {
-          "story_id": "wt-be44bfcbc823aafd",
-          "slug": "merz-bleibt-kanzler-frei-warnt-vor-personaldebatten-und-minderheitsregierung-23aafd",
-          "title": "Laut Tagesspiegel: Frei warnt vor Personaldebatten und Minderheitsregierung",
-          "state": "neu",
-          "at": "2026-09-17T09:27:23.863Z",
-          "score": 3.9094
-        },
-        {
-          "story_id": "wt-82d71d1e1270e6b3",
-          "slug": "gegen-wunsch-von-trump-us-notenbank-fed-hebt-erstmals-seit-2023-leitzins-an-70e6b3",
-          "title": "US-Notenbank Fed erhöht Leitzins erstmals seit 2023",
-          "state": "neu",
-          "at": "2026-09-17T09:15:50.590Z",
-          "score": 7.8773
-        },
-        {
-          "story_id": "wt-58c33de01adbcd60",
-          "slug": "erneute-explosionen-in-frankfurt-laden-auf-berger-strasse-und-zeil-beschadigt-dbcd60",
-          "title": "Laut hessenschau: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
-          "state": "neu",
-          "at": "2026-09-17T09:09:49.107Z",
-          "score": 6
-        },
-        {
-          "story_id": "wt-8229c6de51d5d54a",
-          "slug": "schon-die-dritte-nacht-mit-detonationen-polizei-ermittelt-nach-zwei-weiteren-explosionen-d5d54a",
-          "title": "Laut Polizei: Nach zwei Explosionen in Frankfurt wird verdächtige Person festgenommen",
-          "state": "neu",
-          "at": "2026-09-17T07:58:31.038Z",
-          "score": 5.8713
-        },
-        {
-          "story_id": "wt-cfe395d486558be9",
-          "slug": "kriminalitat-polizei-meldet-eine-festnahme-nach-explosionen-in-frankfurt-558be9",
-          "title": "Laut Polizei: Festnahme nach zwei weiteren Explosionen in Frankfurt",
-          "state": "neu",
-          "at": "2026-09-17T07:56:47.023Z",
-          "score": 6
-        },
-        {
-          "story_id": "wt-35f79ae84a18d479",
-          "slug": "nach-explosionen-in-weimar-fehlt-vom-hausbesitzer-jede-spur-18d479",
-          "title": "Explosionen in Weimar: Suche nach 61-jährigem Hausbesitzer dauert an",
-          "state": "fortgeschrieben",
-          "at": "2026-09-17T07:01:01.251Z",
-          "score": 9.7528
-        },
-        {
-          "story_id": "wt-7fc6ef7afc458288",
-          "slug": "ukraine-krieg-neue-russland-sanktionen-was-der-us-kongress-beschlossen-hat-458288",
-          "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
-          "state": "neu",
-          "at": "2026-09-17T06:58:35.646Z",
-          "score": 7.4961
-        },
-        {
-          "story_id": "wt-d1bafe5a495d34fb",
-          "slug": "usa-kongress-beschliesst-gesetz-fur-russland-sanktionen-5d34fb",
-          "title": "Laut Deutschlandfunk: US-Repräsentantenhaus verabschiedet Sanktionspaket gegen Russland",
-          "state": "fortgeschrieben",
-          "at": "2026-09-17T05:42:57.321Z",
-          "score": 7.036
-        },
-        {
-          "story_id": "wt-337679fe5fe35b70",
-          "slug": "grossbrand-in-mannheimer-recyclingbetrieb-fenster-und-turen-geschlossen-halten-e35b70",
-          "title": "Großbrand in Mannheimer Recyclinghof: Warnung aufgehoben",
-          "state": "neu",
-          "at": "2026-09-17T04:25:32.678Z",
-          "score": 5.071
         }
       ]
     }
