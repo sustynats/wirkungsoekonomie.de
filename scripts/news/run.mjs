@@ -50,6 +50,7 @@ import { independentHourlyRoom } from "./stundenkontingent.mjs";
 import { sameEventByFacts } from "./ereignisfakten.mjs";
 import { configuredHourlyQuota } from "./stundenkontingent.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
+import { unchangedPublishedFollowup, waitForFollowupEvidence } from './followup-reuse.mjs';
 import { numberTokens, evidenceNumberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
@@ -673,7 +674,12 @@ export function publishedRecord(candidate, analysis, ai, now) {
     evidence_groups: candidate.evidence_groups,
     source_integrity: sourceIntegrityRecord(candidate.source_integrity),
     followups: [
-      ...(existing?.followups || []),
+      ...(existing?.followups || []).map(followup => {
+        if (['resolved', 'cancelled'].includes(followup.status) || !(Date.parse(followup.follow_up_date) <= Date.parse(now))) return followup;
+        const { evidence_wait: _wait, ...preserved } = followup;
+        return { ...preserved, last_checked_at: now, last_check_result: 'assessed_in_published_version',
+          last_checked_version: versionNumber, follow_up_date: new Date(Date.parse(now) + 7 * 86400000).toISOString() };
+      }),
       ...newFollowups.filter((followup) => !(existing?.followups || []).some((old) => old.claim === followup.claim && old.source_id === followup.source_id)).map(({ expected_by_evidence, ...followup }) => ({
         ...followup, expected_by_evidence_hash: expected_by_evidence ? sha256(expected_by_evidence) : null, followup_id: `followup-${sha256(`${candidate.story_id}:${followup.claim}`).slice(0, 16)}`,
         announced_at: candidate.sources.find((source) => source.source_id === followup.source_id)?.published_at || null,
@@ -1541,6 +1547,14 @@ export async function runWirkungsticker(options = {}) {
       byId.set(candidate.story_id, pendingRecord(candidate, "SOURCE_INTEGRITY_OPEN", now, candidate.source_integrity?.issues?.map((issue) => issue.code) || ["SOURCE_INTEGRITY_OPEN"]));
       report.source_integrity_holds.push({ story_id: candidate.story_id, issues: candidate.source_integrity?.issues || [] });
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "source_integrity_hold", issues: candidate.source_integrity?.issues || [] });
+      return false;
+    }
+    if (unchangedPublishedFollowup(candidate)) {
+      byId.set(candidate.story_id, waitForFollowupEvidence(candidate, now));
+      report.reviews_reused += 1;
+      (report.followups_waiting_for_new_evidence ||= []).push({ story_id: candidate.story_id,
+        last_paid_version: candidate.existing_story.current_version, reason: 'NO_NEW_SOURCE_EVIDENCE' });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, decision: 'followup_waiting_for_new_source_evidence' });
       return false;
     }
     if (canReuseReview(candidate, now)) {

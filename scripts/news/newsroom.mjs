@@ -4,6 +4,7 @@ import { sourceAccess } from "./access-policy.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
 import { projectionCache } from './projection-cache.mjs';
+import { followupEvidenceFingerprint } from './followup-reuse.mjs';
 const fingerprints = projectionCache();
 
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
@@ -241,7 +242,11 @@ export function coverageReport(sources, stories) {
 }
 
 export function dueFollowups(stories, now) {
-  return stories.flatMap((story) => (story.followups || []).filter((followup) => !["resolved", "cancelled"].includes(followup.status) && ms(followup.follow_up_date) && ms(followup.follow_up_date) <= ms(now)).map((followup) => ({ ...followup, story_id: story.story_id })));
+  return stories.flatMap((story) => (story.followups || []).filter((followup) => !["resolved", "cancelled"].includes(followup.status)
+    && ms(followup.follow_up_date) && ms(followup.follow_up_date) <= ms(now)
+    && (!followup.evidence_wait?.source_fingerprint
+      || followup.evidence_wait.source_fingerprint !== followupEvidenceFingerprint(story.sources)))
+    .map((followup) => ({ ...followup, story_id: story.story_id })));
 }
 
 export function nextDeepeningCheckpoint(now) {
