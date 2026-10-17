@@ -16,6 +16,10 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-17T20:50:51.596Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-17T21:36:18.703Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2770,11 +2774,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/vorfall-in-nrw-angriff-in-seniorenheim-eine-tote-und-zwei-schwerverletzte-5c9f90/": {
         "first_seen_at": "2026-10-17T20:50:51.596Z",
         "source_at": "2026-10-16T22:36:45.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/todlicher-messerangriff-in-seniorenheim-im-munsterland-1d9588/": {
+        "first_seen_at": "2026-10-17T21:36:18.703Z",
+        "source_at": "2026-10-17T20:14:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/aktuelles-zum-krieg-in-der-ukraine-8e43f6/": {
+        "first_seen_at": "2026-10-17T21:36:18.703Z",
+        "source_at": "2026-10-17T17:57:00.000Z"
       }
     },
-    "last_new_at": "2026-10-17T20:50:51.596Z",
-    "checked_at": "2026-10-17T21:21:05.987Z",
-    "last_current_new_at": "2026-10-17T20:50:51.596Z"
+    "last_new_at": "2026-10-17T21:36:18.703Z",
+    "checked_at": "2026-10-17T21:36:18.703Z",
+    "last_current_new_at": "2026-10-17T21:36:18.703Z"
   },
   "recovery_attempts": [
     {
