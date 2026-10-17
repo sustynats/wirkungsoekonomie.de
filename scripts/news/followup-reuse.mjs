@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { isDeepStrictEqual } from 'node:util';
 import { sourceReviewFingerprint } from './evidence-packets.mjs';
 
 // Scheduling is not new evidence. Bind the wait to substantive source fields,
@@ -16,6 +17,7 @@ export function unchangedPublishedFollowup(candidate) {
   const reason = old?.pending_update?.reason;
   return Boolean(candidate.followup_due && old?.published && old.listed !== false
     && !candidate.reassessment && !candidate.impact_reassessment && !candidate.deepening_due
+    && !old.pending_update?.reassessment && !old.pending_update?.impact_reassessment
     && !candidate.consolidation && !old.pending_update?.consolidation
     && (!reason || ['AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT', 'AI_RUN_TIME_LIMIT', 'AI_DISABLED'].includes(reason))
     && !(old.pending_update?.quality_errors || []).length
@@ -30,7 +32,17 @@ export function unchangedPublishedFollowup(candidate) {
 
 export function waitForFollowupEvidence(candidate, now) {
   if (!unchangedPublishedFollowup(candidate)) throw Error('FOLLOWUP_REUSE_NOT_ESTABLISHED');
-  const { pending_update: _pendingUpdate, ...record } = candidate.existing_story;
+  const { pending_update: pending, ...record } = candidate.existing_story;
+  // Filtering (for example a future publication date) may leave an unexamined
+  // source outside this candidate. Reusing old evidence must not discard it.
+  const pendingSourcesExamined = !pending || !Object.hasOwn(pending, 'sources')
+    || (Array.isArray(pending.sources) && pending.sources.every(source => source?.source_id && source.url && source.content_hash
+      && candidate.sources.some(examined => Object.entries(source).every(([key, value]) =>
+        Object.hasOwn(examined, key) && isDeepStrictEqual(value, examined[key])))));
+  if (pending && ((Object.hasOwn(pending, 'content_hash') && pending.content_hash !== candidate.content_hash)
+    || !pendingSourcesExamined)) {
+    record.pending_update = structuredClone(pending);
+  }
   const fingerprint = followupEvidenceFingerprint(candidate.sources);
   record.followups = (record.followups || []).map(followup =>
     !['resolved', 'cancelled'].includes(followup.status) && Date.parse(followup.follow_up_date) <= Date.parse(now)

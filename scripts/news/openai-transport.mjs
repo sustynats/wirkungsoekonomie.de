@@ -2,6 +2,7 @@
 // Nachricht, ohne Bridge, Dropbox, ChatGPT-Worker oder Zweitprüfung per API.
 // Der Aufruf liefert das vollständige veröffentlichungsreife Paket; alles
 // danach ist deterministisch (Gate, Ableitung der Tragweite, Build).
+import fs from 'node:fs';
 import { buildAnalysisPrompt, decodeWoekAiResponse, sanitizeFeedText } from './lib.mjs';
 import { deriveAssessmentCalculations, IMPACT_VERSION } from './impact-assessment.mjs';
 import { semanticIssues } from './impact-publication.mjs';
@@ -687,7 +688,6 @@ export async function callOpenAiDirect(stories, options = {}) {
   const rawDir = options.rawOutputDir || process.env.WOEK_NEWS_RAW_OUTPUT_DIR;
   if (rawDir) {
     try {
-      const fs = await import('node:fs');
       fs.mkdirSync(rawDir, { recursive: true });
       const stamp = new Date().toISOString().replace(/[:.]/g, '-');
       const ids = stories.map(s => s.story_id).join('_').slice(0, 80) || 'call';
