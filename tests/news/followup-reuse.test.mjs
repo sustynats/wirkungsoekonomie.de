@@ -63,6 +63,32 @@ test('a capacity-only pending flag is cleared without editing the paid publicati
   assert.equal(record.current_version, 28); assert.equal(record.title, c.existing_story.title);
   assert.equal(record.followups[0].evidence_wait.reason, 'NO_NEW_SOURCE_EVIDENCE');
 });
+test('a free followup comparison preserves pending evidence excluded from this candidate', () => {
+  const c = fixture();
+  c.existing_story.pending_update = { reason: 'AI_HOURLY_CALL_LIMIT', content_hash: 'new-future-input',
+    sources: [...structuredClone(c.sources), { ...source, url: source.url + '/future', content_hash: 'future-1', published_at: '2026-10-18T08:00:00Z' }] };
+  const before = structuredClone(c.existing_story.pending_update);
+  const record = waitForFollowupEvidence(c, now);
+  assert.deepEqual(record.pending_update, before, 'unexamined source bytes and their binding must not disappear');
+  assert.deepEqual(c.existing_story.pending_update, before);
+  assert.equal(record.followups[0].status, 'scheduled');
+  assert.equal(record.followups[0].last_checked_at, undefined);
+  assert.deepEqual(record.versions, c.existing_story.versions);
+});
+test('derived candidate metadata does not make an entirely examined source packet look unconsumed', () => {
+  const c = fixture();
+  c.existing_story.pending_update = { reason: 'AI_HOURLY_CALL_LIMIT', content_hash: c.content_hash, sources: structuredClone(c.sources) };
+  c.sources[0].registry_only_note = 'Derived locally, not an extra pending source.';
+  const record = waitForFollowupEvidence(c, now);
+  assert.equal(record.pending_update, undefined);
+  assert.equal(record.followups[0].status, 'scheduled');
+});
+test('explicit pending repair flags survive a candidate that did not copy them', () => {
+  for (const flag of ['reassessment', 'impact_reassessment']) {
+    const c = fixture(); c.existing_story.pending_update = { reason: 'AI_HOURLY_CALL_LIMIT', [flag]: true };
+    assert.equal(unchangedPublishedFollowup(c), false);
+  }
+});
 test('the reuse gate precedes queue slots, article requests and provider calls', () => {
   const code = fs.readFileSync('scripts/news/run.mjs', 'utf8');
   const gate = code.indexOf('if (unchangedPublishedFollowup(candidate))');
