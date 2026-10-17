@@ -54,3 +54,38 @@ Für eine rein technische Minimalprobe ist weiterhin Version 1 erlaubt, aber aus
 7. Erst danach aktuelle Updates und neue Meldungen bearbeiten; historische Neubewertungen bleiben nachrangig.
 
 Die Vorbereitung aktiviert keine Automation. Nachrichten brauchen weiterhin vollständige Quellen- und Wirkungsprüfung. Persönliche Beiträge bleiben an Natalies Freigabe gebunden.
+
+## Bezahlte Rohantworten als verschlüsselte Actions-Artefakte
+
+Actions-Artefakte eines öffentlichen Repositories sind kein privater Speicher.
+Die normalen Nachrichten- und Redaktionsworker archivieren deshalb nur noch
+verschlüsselte Kopien ihrer Rohantworten. Der bestehende öffentliche
+3072-Bit-RSA-Schlüssel wird vor bezahlter Arbeit geprüft; die Worker erhalten
+keinen privaten Schlüssel und benötigen kein neues Secret.
+
+`scripts/news/sealed-raw-output.mjs` verwendet RSA-OAEP-SHA256 und AES-256-GCM
+mit einem zufälligen Schlüssel und einer zufälligen Nonce pro Datei. Dateiname,
+Originalbytes, Bytezahl und SHA-256 liegen gemeinsam im verschlüsselten Inhalt.
+Die ursprüngliche Datei bleibt auf dem Runner unverändert. Das Archivformat
+`woek-paid-raw-1` ist ausdrücklich keine Bridge-Zustellung und keine Freigabe.
+Es löst weder einen Import noch einen Anbieteraufruf aus.
+
+Die Artefaktnamen und ihre dreitägige Aufbewahrung bleiben bestehen. Ihr Inhalt
+besteht aus nummerierten `*.sealed.json`-Dateien. Scheitert die Verschlüsselung,
+wird der Lauf rot; es gibt keinen Klartext-Fallback. Vor dem Löschen älterer
+Klartext-Artefakte müssen deren vollständige private Sicherung und Prüfsummen
+bestätigt und die Löschung autorisiert sein.
+
+Für eine autorisierte Wiederaufnahme zuerst das Artefakt in ein privates
+Betriebsverzeichnis außerhalb des Repositories herunterladen. Mit dem bereits
+privat verfügbaren Bridge-Schlüssel in `CHATGPT_BRIDGE_PRIVATE_KEY` kann jede
+Datei lokal wiederhergestellt werden:
+
+```sh
+node scripts/news/sealed-raw-output.mjs --decrypt /private/0001.sealed.json /private/restored
+```
+
+Der Befehl verifiziert GCM-Authentizität, Schlüsselbindung, Bytezahl und SHA-256,
+schreibt mit Modus 0600 und überschreibt keine vorhandene Datei. Er gibt weder
+Schlüssel noch Text aus. Die normale Quellenprüfung und fassungsgebundene
+Schlussfreigabe bleiben anschließend weiterhin verpflichtend.

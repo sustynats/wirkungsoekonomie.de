@@ -80,6 +80,8 @@ jobs:
           node-version: "22"
       - name: Worker tests
         run: node --test tests/news/redaktionsworker.test.mjs tests/news/import-approved-editorials.test.mjs
+      - name: Validate the existing archive encryption key before paid work
+        run: node scripts/news/sealed-raw-output.mjs --check-key
       - name: Draft open editorial requests (one paid call per request)
         id: editorial_draft
         continue-on-error: true
@@ -111,14 +113,18 @@ jobs:
         if: vars.WOEK_EDITORIAL_AUTO_EPISODES != 'false'
         continue-on-error: true
         run: node scripts/news/sendungs-kandidaten.mjs
-      - name: Preserve paid model answers for diagnosis
+      - name: Seal paid originals for private recovery
+        id: sealed_raw
         if: always()
+        run: node scripts/news/sealed-raw-output.mjs --seal "$GITHUB_WORKSPACE/editorial-raw-output" "$RUNNER_TEMP/sealed-paid-output"
+      - name: Preserve encrypted paid model answers for diagnosis
+        if: always() && steps.sealed_raw.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: editorial-raw-output-${{ github.run_id }}-${{ github.run_attempt }}
           retention-days: 3
           if-no-files-found: ignore
-          path: ${{ github.workspace }}/editorial-raw-output
+          path: ${{ runner.temp }}/sealed-paid-output
       - name: Report incomplete editorial processing
         if: always() && steps.editorial_draft.outcome == 'failure'
         run: |
