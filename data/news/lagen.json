@@ -1,7 +1,149 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-17T10:00:00.000Z",
+  "updated_at": "2026-10-17T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-17-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-17",
+      "window_from": "2026-10-17T10:00:00.000Z",
+      "window_to": "2026-10-17T16:00:00.000Z",
+      "stand": "2026-10-17T16:00:00.000Z",
+      "headline": "Das sind die 15 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 15,
+        "neu": 9,
+        "fortgeschrieben": 6
+      },
+      "entries": [
+        {
+          "story_id": "wt-efc8097ce6352310",
+          "slug": "teen-shooter-kills-three-children-and-teacher-at-oregon-elementary-school-352310",
+          "title": "Laut Polizei: Vier Tote bei Schüssen an Grundschule in Oregon",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T15:31:56.626Z",
+          "score": 7.6721
+        },
+        {
+          "story_id": "wt-b0e81cef4cc96587",
+          "slug": "four-killed-in-oregon-elementary-school-shooting-including-three-children-aged-5-to-11-c96587",
+          "title": "Drei Kinder und eine Lehrkraft bei Schüssen an Schule in Oregon getötet",
+          "state": "neu",
+          "at": "2026-10-17T15:30:15.323Z",
+          "score": 8.4174
+        },
+        {
+          "story_id": "wt-60e792c8ddaaf060",
+          "slug": "usa-und-russland-trump-setzt-geplante-sanktionen-aus-aaf060",
+          "title": "Laut ZDFheute: Trump setzt geplante Sanktionen gegen Russland aus",
+          "state": "neu",
+          "at": "2026-10-17T15:13:05.354Z",
+          "score": 9.8697
+        },
+        {
+          "story_id": "wt-1a343a7966b03c3c",
+          "slug": "thorsten-frei-unionsfraktionschef-will-anderungen-bei-zuckersteuer-b03c3c",
+          "title": "Laut Spiegel und Deutschlandfunk: Frei fordert Übergangsfristen bei Zuckersteuer",
+          "state": "neu",
+          "at": "2026-10-17T14:29:04.387Z",
+          "score": 6.2474
+        },
+        {
+          "story_id": "wt-ebdc1baa0807a1c9",
+          "slug": "regierungsbildung-in-berlin-sondierungen-gehen-weiter-belastung-durch-neuen-emde-post-07a1c9",
+          "title": "Sondierungen in Berlin gehen trotz Kritik an Linke-Abgeordneter Vanessa Emde weiter",
+          "state": "neu",
+          "at": "2026-10-17T14:28:06.932Z",
+          "score": 7.7448
+        },
+        {
+          "story_id": "wt-4a2d4c498f63ebd0",
+          "slug": "sprengung-einer-alten-bombe-schafherde-muss-nach-bombenfund-umziehen-63ebd0",
+          "title": "Laut stern: Bombenfund am Rhein zwingt Schafherde zum Umzug",
+          "state": "neu",
+          "at": "2026-10-17T13:25:50.658Z",
+          "score": 5.5718
+        },
+        {
+          "story_id": "wt-26966ecdb8e20626",
+          "slug": "regierungsbildung-in-berlin-berliner-linke-uberrascht-von-aussetzung-der-sondierungen-e20626",
+          "title": "Sondierungen in Berlin abgeschlossen, laut DPA aus Parteikreisen Koalitionsverhandlungen vorgeschlagen",
+          "state": "neu",
+          "at": "2026-10-17T12:53:22.985Z",
+          "score": 5.9816
+        },
+        {
+          "story_id": "wt-4a8533ae0c5b8b25",
+          "slug": "explosion-in-marl-zusammenhang-mit-todlichen-schussen-5b8b25",
+          "title": "Laut Polizei: Explosion in Marl – Zusammenhang mit Schießerei wird geprüft",
+          "state": "neu",
+          "at": "2026-10-17T12:52:30.871Z",
+          "score": 5.6846
+        },
+        {
+          "story_id": "wt-f4626f4b3f4652ce",
+          "slug": "ukraine-krieg-stromausfall-in-teilen-von-kiew-und-dem-umland-nach-russischen-angriffen-4652ce",
+          "title": "Laut Deutschlandfunk: Stromausfall in Teilen von Kiew und dem Umland nach russischen Angriffen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T12:12:05.345Z",
+          "score": 7.1169
+        },
+        {
+          "story_id": "wt-1ae8af7cf2a1745a",
+          "slug": "ukraine-krieg-trump-putin-will-deal-mehr-als-selenskyj-a1745a",
+          "title": "ZDFheute: Trump beharrt auf Energie-Waffenruhe und setzt Selenskyj unter Druck",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T11:53:46.306Z",
+          "score": 5.066
+        },
+        {
+          "story_id": "wt-e5375640faebb0fe",
+          "slug": "cameroonian-journalist-shot-in-bamenda-ebb0fe",
+          "title": "Nach Angaben von France 24: Journalist in Bamenda angeschossen, junge Frau getötet",
+          "state": "neu",
+          "at": "2026-10-17T11:52:35.657Z",
+          "score": 5.6887
+        },
+        {
+          "story_id": "wt-73e57ccffcb14645",
+          "slug": "trump-s-energy-ceasefire-announcement-was-news-for-me-zelensky-b14645",
+          "title": "Laut France 24: Nach Trumps Energie-Waffenruhe-Ankündigung folgen neue russische Angriffe",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T10:54:09.932Z",
+          "score": 6.9005
+        },
+        {
+          "story_id": "wt-9ed774261dd327be",
+          "slug": "krieg-gegen-die-ukraine-selenskyj-erklart-bereitschaft-zu-neuwahlen-im-falle-einer-60-ta-d327be",
+          "title": "Laut Deutschlandfunk: Selenskyj stellt Neuwahlen bei 60-tägiger Waffenruhe in Aussicht",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T10:53:04.189Z",
+          "score": 6.8974
+        },
+        {
+          "story_id": "wt-30a367c9ec7d0006",
+          "slug": "trump-touts-surprise-energy-ceasefire-zelensky-says-he-hasn-t-seen-details-moscow-silent-7d0006",
+          "title": "Laut France 24 kündigt Trump eine Energie-Waffenruhe an – Details bleiben offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T10:35:40.366Z",
+          "score": 4.8491
+        },
+        {
+          "story_id": "wt-5162811f80138338",
+          "slug": "entsetzen-nach-todlichen-schussen-an-us-schule-trump-ruhmt-eingreifenden-anwohner-138338",
+          "title": "Laut Stern: Vier Tote nach Schusswaffenangriff an Grundschule in Oregon",
+          "state": "neu",
+          "at": "2026-10-17T10:34:37.572Z",
+          "score": 7.0962
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-17T16:03:46.949Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-17-mittagslage",
       "slot": "mittagslage",
@@ -5296,95 +5438,6 @@
           "state": "neu",
           "at": "2026-09-17T16:56:31.648Z",
           "score": 5.0785
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-17-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-17",
-      "window_from": "2026-09-17T10:00:00.000Z",
-      "window_to": "2026-09-17T16:00:00.000Z",
-      "stand": "2026-09-17T16:00:00.000Z",
-      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 9,
-        "neu": 7,
-        "fortgeschrieben": 2
-      },
-      "entries": [
-        {
-          "story_id": "wt-d0b87be2a421eeeb",
-          "slug": "solartechnik-sma-investiert-80-millionen-euro-in-neues-werk-21eeeb",
-          "title": "SMA Solar eröffnet in Niestetal neues Werk für Wechselrichter",
-          "state": "neu",
-          "at": "2026-09-17T15:42:46.457Z",
-          "score": 7.9522
-        },
-        {
-          "story_id": "wt-281f3b3f226d191e",
-          "slug": "corona-maskenaffare-warum-jens-spahn-die-verantwortung-tragt-egal-wie-das-urteil-ausfall-6d191e",
-          "title": "Maskenbeschaffung bleibt politisch und haushalterisch umstritten",
-          "state": "neu",
-          "at": "2026-09-17T13:55:37.194Z",
-          "score": 3.6545
-        },
-        {
-          "story_id": "wt-58c33de01adbcd60",
-          "slug": "erneute-explosionen-in-frankfurt-laden-auf-berger-strasse-und-zeil-beschadigt-dbcd60",
-          "title": "Laut hessenschau: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
-          "state": "fortgeschrieben",
-          "at": "2026-09-17T13:25:24.504Z",
-          "score": 5.3206
-        },
-        {
-          "story_id": "wt-cfe395d486558be9",
-          "slug": "kriminalitat-polizei-meldet-eine-festnahme-nach-explosionen-in-frankfurt-558be9",
-          "title": "Laut Polizei: Festnahme nach zwei weiteren Explosionen in Frankfurt",
-          "state": "fortgeschrieben",
-          "at": "2026-09-17T13:10:18.774Z",
-          "score": 5.2786
-        },
-        {
-          "story_id": "wt-aa0db77f30c3deb1",
-          "slug": "uberwachungskamera-filmt-tater-bei-anschlag-an-zeil-erneute-explosion-in-frankfurt-c3deb1",
-          "title": "Laut Polizei: Erneute Explosionen beschädigen Café und Shisha-Bar in Frankfurt",
-          "state": "neu",
-          "at": "2026-09-17T12:55:40.931Z",
-          "score": 5.488
-        },
-        {
-          "story_id": "wt-0df5952c7921c1b7",
-          "slug": "bedrohung-gegen-schulen-bombendrohungen-gegen-schulen-gebaude-evakuiert-21c1b7",
-          "title": "Bombendrohungen gegen Schulen: Gebäude evakuiert, laut stern",
-          "state": "neu",
-          "at": "2026-09-17T12:13:13.193Z",
-          "score": 5.3701
-        },
-        {
-          "story_id": "wt-cb532148d6a98dbc",
-          "slug": "drei-schulen-in-engen-wegen-zweimaliger-bombendrohung-evakuiert-a98dbc",
-          "title": "Laut SWR: Drei Schulen in Engen nach zwei Bombendrohungen evakuiert",
-          "state": "neu",
-          "at": "2026-09-17T12:04:35.888Z",
-          "score": 5.7398
-        },
-        {
-          "story_id": "wt-b40ed385d3ba5f9a",
-          "slug": "ministerprasident-dr-markus-soder-zum-rucktritt-von-justizminister-georg-eisenreich-gros-ba5f9a",
-          "title": "Laut Söder zieht sich Justizminister Georg Eisenreich aus Bayerns politischer Spitze zurück",
-          "state": "neu",
-          "at": "2026-09-17T11:11:07.582Z",
-          "score": 3.1976
-        },
-        {
-          "story_id": "wt-0eb1ca5aac1439a2",
-          "slug": "russischer-angriffskrieg-ukraine-meldet-mindestens-18-verletzte-nach-angriffen-auf-kiew-1439a2",
-          "title": "Laut Deutschlandfunk: Angriffe beschädigen Energie-Infrastruktur in der Ukraine",
-          "state": "neu",
-          "at": "2026-09-17T10:41:17.999Z",
-          "score": 7.8651
         }
       ]
     }
