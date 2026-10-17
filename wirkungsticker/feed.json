@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-17T10:48:20.988Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-17T11:45:35.431Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/cameroonian-journalist-shot-in-bamenda-ebb0fe/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/cameroonian-journalist-shot-in-bamenda-ebb0fe/",
+      "title": "Nach Angaben von France 24: Journalist in Bamenda angeschossen",
+      "summary": "Ein Journalist wurde laut France 24 in Bamenda angeschossen; eine junge Frau starb bei demselben Angriff. Der Bericht belegt die akute Sicherheitslage, aber noch keine unabhängige Einordnung von Tätern, Motiv oder Folgen.",
+      "date_published": "2026-10-17T11:16:09.000Z",
+      "date_modified": "2026-10-17T11:16:09.000Z",
+      "_woek_released_at": "2026-10-17T11:52:35.657Z",
+      "tags": [
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/entsetzen-nach-todlichen-schussen-an-us-schule-trump-ruhmt-eingreifenden-anwohner-138338/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/entsetzen-nach-todlichen-schussen-an-us-schule-trump-ruhmt-eingreifenden-anwohner-138338/",
@@ -1267,8 +1298,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-trump-putin-will-deal-mehr-als-selenskyj-a1745a/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-trump-putin-will-deal-mehr-als-selenskyj-a1745a/",
-      "title": "Trump beharrt auf Energie-Waffenruhe und setzt Selenskyj unter Druck",
-      "summary": "Trump beharrt auf einer Waffenruhe für Angriffe auf Energieanlagen und setzt Selenskyj nach ZDFheute weiter unter Druck. Ob die Vereinbarung gilt, welche Bedingungen gelten und ob Verstöße stattgefunden haben, bleibt teilweise offen.",
+      "title": "ZDFheute: Trump beharrt auf Energie-Waffenruhe und setzt Selenskyj unter Druck",
+      "summary": "Trump beharrt laut ZDFheute auf einer Energie-Waffenruhe, während Selenskyj deren Einhaltung durch Russland fordert. Ob die Vereinbarung gilt und Angriffe beendet, bleibt offen.",
       "date_published": "2026-10-12T22:55:35.000Z",
       "date_modified": "2026-10-12T22:55:35.000Z",
       "_woek_released_at": "2026-10-13T11:03:18.387Z",
@@ -1282,17 +1313,17 @@
       "_woek_impact_profile": {
         "human": {
           "magnitude": 2,
-          "direction": "positive",
+          "direction": "mixed",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "positive",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 3,
-          "direction": "negative",
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
