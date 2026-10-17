@@ -17,24 +17,25 @@
       "firstSeen": "2026-10-16T12:21:10.020Z",
       "active": true
     },
-    "run": {
-      "firstSeen": "2026-10-17T05:22:55.222Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-10-17T05:22:55.222Z",
-      "active": true
-    },
-    "queue": {
-      "firstSeen": "2026-10-17T05:22:55.222Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-17T05:22:55.222Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "78688c8bb0f6fbdf5b5eb40f",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-17T05:57:25.620Z"
+    },
+    {
+      "id": "442021a5c2f44a8911245ae2",
+      "content": "✓ WÖk-Störung behoben\nKI-Verarbeitung\nPrüfung: 2026-10-17T05:57:25.620Z"
+    },
+    {
+      "id": "6d239e42644e5a1dd02ffdea",
+      "content": "✓ WÖk-Störung behoben\nNachrichten-Warteschlange\nPrüfung: 2026-10-17T05:57:25.620Z"
+    }
+  ],
   "dailyDate": "2026-10-16",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2721,7 +2722,7 @@
       }
     },
     "last_new_at": "2026-10-16T11:20:53.233Z",
-    "checked_at": "2026-10-17T05:50:59.780Z",
+    "checked_at": "2026-10-17T05:57:25.620Z",
     "last_current_new_at": "2026-10-16T04:21:02.747Z"
   },
   "recovery_attempts": [
