@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-17T11:45:35.431Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-17T12:08:36.486Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -183,6 +183,38 @@
       "_woek_type": "Nachgesehen"
     },
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-stromausfall-in-teilen-von-kiew-und-dem-umland-nach-russischen-angriffen-4652ce/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-stromausfall-in-teilen-von-kiew-und-dem-umland-nach-russischen-angriffen-4652ce/",
+      "title": "Laut Deutschlandfunk: Stromausfall in Teilen von Kiew und dem Umland nach russischen Angriffen",
+      "summary": "Nach einem laut Deutschlandfunk russischen Angriff ist in Teilen Kiews und des Umlands der Strom ausgefallen. Die Wiederherstellung hängt laut ukrainischem Energieministerium von der Sicherheitslage ab; Ausmaß und Dauer bleiben offen.",
+      "date_published": "2026-10-16T06:29:44.000Z",
+      "date_modified": "2026-10-16T06:29:44.000Z",
+      "_woek_released_at": "2026-10-15T23:27:25.159Z",
+      "tags": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wenn-die-antwort-sofort-da-ist-was-aus-dem-denken-werden-konnte-8f911a/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/analyse/wenn-die-antwort-sofort-da-ist-was-aus-dem-denken-werden-konnte-8f911a/",
       "title": "Nachgehört: Wenn die Antwort sofort da ist: Was aus dem Denken werden könnte",
@@ -218,38 +250,6 @@
         "planet": {
           "magnitude": 0,
           "direction": "neutral",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "potential"
-        }
-      }
-    },
-    {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-stromausfall-in-teilen-von-kiew-und-dem-umland-nach-russischen-angriffen-4652ce/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-stromausfall-in-teilen-von-kiew-und-dem-umland-nach-russischen-angriffen-4652ce/",
-      "title": "Stromausfall in Teilen von Kiew nach russischen Angriffen, laut Deutschlandfunk",
-      "summary": "In Teilen von Kiew und dem Umland ist nach einem von Deutschlandfunk berichteten russischen Angriff der Strom ausgefallen. Umfang, Dauer und Folgen der Unterbrechung sind noch offen.",
-      "date_published": "2026-10-15T23:17:38.000Z",
-      "date_modified": "2026-10-15T23:17:38.000Z",
-      "_woek_released_at": "2026-10-15T23:27:25.159Z",
-      "tags": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": false,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "emerging"
-        },
-        "planet": {
-          "magnitude": 1,
-          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
