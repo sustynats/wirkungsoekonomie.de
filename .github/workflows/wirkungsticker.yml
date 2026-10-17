@@ -99,6 +99,9 @@ jobs:
           WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
           WOEK_NEWS_ORDER_FILE: ${{ runner.temp }}/meldungsauftraege/auftraege.json
         run: node scripts/news/meldungsauftraege.mjs holen
+      - name: Validate the existing archive encryption key before paid work
+        if: steps.slot.outputs.should_run == 'true'
+        run: node scripts/news/sealed-raw-output.mjs --check-key
       - name: Import, analyze (one call per story) and build
         if: steps.slot.outputs.should_run == 'true'
         env:
@@ -284,14 +287,18 @@ jobs:
       - name: Verify ticker run health
         if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
-      - name: Preserve paid model answers for gate diagnosis
+      - name: Seal paid originals for private recovery
+        id: sealed_raw
         if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        run: node scripts/news/sealed-raw-output.mjs --seal "$RUNNER_TEMP/ai-raw-output" "$RUNNER_TEMP/sealed-paid-output"
+      - name: Preserve encrypted paid model answers for gate diagnosis
+        if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true && steps.sealed_raw.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: ai-raw-output-${{ github.run_id }}-${{ github.run_attempt }}
           retention-days: 3
           if-no-files-found: ignore
-          path: ${{ runner.temp }}/ai-raw-output
+          path: ${{ runner.temp }}/sealed-paid-output
       - name: Report incomplete editorial takeover or receipt
         if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true && (steps.approved.outcome == 'failure' || steps.approval_receipt.outcome == 'failure' || steps.news_order_fetch.outcome == 'failure' || steps.news_order_delivery.outcome == 'failure' || steps.paid_answer_recovery.outcome == 'failure')
         run: |
