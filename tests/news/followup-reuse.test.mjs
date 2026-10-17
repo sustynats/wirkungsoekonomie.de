@@ -71,6 +71,18 @@ test('the reuse gate precedes queue slots, article requests and provider calls',
   assert.ok(gate < code.indexOf('const analysisBatch = await Promise.all'));
   assert.match(code, /last_check_result: 'assessed_in_published_version'/);
 });
+test('newly collected evidence reopens the original questions before the paid packet is built', () => {
+  const c = fixture(), waiting = waitForFollowupEvidence(c, now);
+  assert.equal(dueFollowups([waiting], now).length, 0);
+  const sources = structuredClone(waiting.sources); sources[0].summary += ' A new verified development.';
+  const reopened = dueFollowups([{ ...waiting, sources }], now);
+  assert.equal(reopened.length, 1);
+  assert.equal(reopened[0].claim, waiting.followups[0].claim);
+  const code = fs.readFileSync('scripts/news/run.mjs', 'utf8');
+  assert.match(code, /candidateFollowups = dueFollowups\(\[\{ \.\.\.candidate\.existing_story, sources: candidate\.sources \}\], now\)/);
+  assert.match(code, /if \(candidate\.followup_due\) dueFollowupIds\.add\(candidate\.story_id\)/);
+  assert.match(code, /followups_due: candidateFollowups/);
+});
 test('a successful publication acknowledges only due checks, preserving dates and future questions', () => {
   const c = fixture(); c.story_id = 's'; c.slug = 'original';
   c.existing_story.published_at = '2026-10-02T07:19:42.557Z';

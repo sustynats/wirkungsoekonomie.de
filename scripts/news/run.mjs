@@ -1417,7 +1417,12 @@ export async function runWirkungsticker(options = {}) {
     candidate.claims = claimLedgerFor(candidate.sources, candidate.story_id, now);
     candidate.evidence_groups = evidenceGroups(candidate.sources);
     candidate.content_hash = storyContentHash(candidate);
-    candidate.currentness = { ...freshnessFor(candidate, now), checked_at: now, compared_current_feed_items: allItems.length, matching_current_feed_items: alternativeItems.length, followups_due: scheduledFollowups.filter((followup) => followup.story_id === candidate.story_id) };
+    // A newly arrived source must reopen the original questions in this same
+    // request, not only after the new version has already been published.
+    const candidateFollowups = dueFollowups([{ ...candidate.existing_story, sources: candidate.sources }], now);
+    candidate.followup_due = candidateFollowups.length > 0;
+    if (candidate.followup_due) dueFollowupIds.add(candidate.story_id);
+    candidate.currentness = { ...freshnessFor(candidate, now), checked_at: now, compared_current_feed_items: allItems.length, matching_current_feed_items: alternativeItems.length, followups_due: candidateFollowups };
     candidate.attention_impact_gap = candidate.preanalysis.internal_relevance_score >= 48 && candidate.evidence_groups.possible_independent_origins <= 2
       ? { status: "possible_gap_in_observed_sources", observed_origins: candidate.evidence_groups.possible_independent_origins, note: "Geringe beobachtete Quellenbreite, keine Aussage über die gesamte Medienaufmerksamkeit." } : null;
     candidate.source_integrity = sourceIntegrityForStory(candidate, registry, matchableStories, now);
