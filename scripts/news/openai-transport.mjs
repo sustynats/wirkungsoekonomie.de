@@ -89,8 +89,8 @@ export function storyBriefing(story) {
     'Zahlen in event_claims: Jede Zahl einer Aussage muss wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst. Steht sie dort nicht, formuliere die Aussage ohne Zahl.',
     ...(numbers.length ? [`Belegbare Zahlen je Quelle (Schreibweise wie in der Quelle, Dezimalkomma erlaubt): ${numbers.join(' | ')}.`] : []),
     origins >= 2
-      ? `Der Quellenbestand hat ${origins} voneinander unabhängige Herkünfte. status confirmed_claim nur, wenn du für diese Aussage zwei davon zitierst; sonst single_source_claim, primary_source_claim oder uncertain_claim.`
-      : `Der Quellenbestand hat nur ${origins === 1 ? 'eine' : 'keine'} unabhängige Herkunft. status confirmed_claim ist damit ausgeschlossen: nutze single_source_claim, primary_source_claim (nur bei zitierter Primärquelle) oder uncertain_claim.`,
+      ? `Der Quellenbestand hat ${origins} möglicherweise getrennte Herkunftsgruppen. Das ist KEIN Nachweis voneinander unabhängiger Recherche: Verlagszuordnung allein bleibt unverifiziert. Quellen im Lesertext nicht als unabhängig bezeichnen, solange ihre Unabhängigkeit nicht ausdrücklich belegt ist. status confirmed_claim nur bei tatsächlich unabhängig bestätigter Aussage und zwei passenden Belegen; sonst single_source_claim, primary_source_claim oder uncertain_claim.`
+      : `Der Quellenbestand hat nur ${origins === 1 ? 'eine mögliche' : 'keine'} Herkunftsgruppe; deren Unabhängigkeit ist damit nicht nachgewiesen. status confirmed_claim ist ausgeschlossen: nutze single_source_claim, primary_source_claim (nur bei zitierter Primärquelle) oder uncertain_claim.`,
     'Zähle Wörter, Sätze und Absätze, bevor du antwortest: eine Antwort außerhalb dieser Spannen ist unbrauchbar und die Meldung erscheint nicht.'].join('\n');
 }
 
@@ -367,8 +367,9 @@ export function sourceNumberBriefing(story, limit = BRIEFING_NUMBERS_PER_SOURCE)
   });
 }
 
-// Wie viele voneinander unabhängige Herkünfte der gelieferte Quellenbestand
-// überhaupt hergibt. Mehr als das kann keine Aussage belegen.
+// Upper bound on possibly separate origins, not verified independence.
+// Keep the public function name for existing callers; evidenceGroups marks
+// publisher-only provenance explicitly unverified.
 export function independentOrigins(story) {
   const sources = Array.isArray(story?.sources) ? story.sources : [];
   return sources.length ? evidenceGroups(sources).possible_independent_origins : 0;
