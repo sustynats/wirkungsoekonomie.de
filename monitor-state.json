@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-17T20:50:51.596Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-17T21:55:59.299Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "62174f225155c74976e2a619",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-17T22:35:52.060Z"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2782,11 +2783,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/aktuelles-zum-krieg-in-der-ukraine-8e43f6/": {
         "first_seen_at": "2026-10-17T21:36:18.703Z",
         "source_at": "2026-10-17T17:57:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/israelische-siedler-greifen-im-westjordanland-europaische-diplomaten-an-af2016/": {
+        "first_seen_at": "2026-10-17T22:35:52.060Z",
+        "source_at": "2026-10-17T17:23:00.000Z"
       }
     },
-    "last_new_at": "2026-10-17T21:36:18.703Z",
-    "checked_at": "2026-10-17T22:21:12.017Z",
-    "last_current_new_at": "2026-10-17T21:36:18.703Z"
+    "last_new_at": "2026-10-17T22:35:52.060Z",
+    "checked_at": "2026-10-17T22:35:52.060Z",
+    "last_current_new_at": "2026-10-17T22:35:52.060Z"
   },
   "recovery_attempts": [
     {
