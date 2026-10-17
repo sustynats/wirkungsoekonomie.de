@@ -15,10 +15,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-17T15:50:52.878Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "77d4917320d330959a81bc2b",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-17T15:50:52.878Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2738,10 +2743,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/usa-und-russland-trump-setzt-geplante-sanktionen-aus-aaf060/": {
         "first_seen_at": "2026-10-17T15:36:33.977Z",
         "source_at": "2026-10-17T06:29:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/four-killed-in-oregon-elementary-school-shooting-including-three-children-aged-5-to-11-c96587/": {
+        "first_seen_at": "2026-10-17T16:06:24.051Z",
+        "source_at": "2026-10-16T03:23:21.000Z"
       }
     },
-    "last_new_at": "2026-10-17T15:36:33.977Z",
-    "checked_at": "2026-10-17T15:50:52.878Z",
+    "last_new_at": "2026-10-17T16:06:24.051Z",
+    "checked_at": "2026-10-17T16:06:24.051Z",
     "last_current_new_at": "2026-10-17T13:56:23.255Z"
   },
   "recovery_attempts": [
