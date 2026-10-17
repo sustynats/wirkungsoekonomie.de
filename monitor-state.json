@@ -20,6 +20,10 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-17T10:45:24.432Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-17T11:05:44.703Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2710,11 +2714,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-schussen-in-hamburg-razzia-der-polizei-auf-dem-kiez-97409c/": {
         "first_seen_at": "2026-10-17T08:20:48.365Z",
         "source_at": "2026-10-16T09:37:38.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/entsetzen-nach-todlichen-schussen-an-us-schule-trump-ruhmt-eingreifenden-anwohner-138338/": {
+        "first_seen_at": "2026-10-17T11:05:44.703Z",
+        "source_at": "2026-10-17T09:50:11.000Z"
       }
     },
-    "last_new_at": "2026-10-17T08:20:48.365Z",
-    "checked_at": "2026-10-17T10:51:10.012Z",
-    "last_current_new_at": "2026-10-16T04:21:02.747Z"
+    "last_new_at": "2026-10-17T11:05:44.703Z",
+    "checked_at": "2026-10-17T11:05:44.703Z",
+    "last_current_new_at": "2026-10-17T11:05:44.703Z"
   },
   "recovery_attempts": [
     {
