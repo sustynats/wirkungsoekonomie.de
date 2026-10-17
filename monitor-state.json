@@ -19,14 +19,19 @@
     },
     "queue": {
       "firstSeen": "2026-10-17T13:56:23.255Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-17T13:56:23.255Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4a4b4089b5ee0e953be886f1",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 92 Minuten. Kapazitätswarteschlange: 538; redaktionelle Ablehnungen: 240.\nSeit: 2026-10-17T13:56:23.255Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2737,7 +2742,7 @@
       }
     },
     "last_new_at": "2026-10-17T13:56:23.255Z",
-    "checked_at": "2026-10-17T13:56:23.255Z",
+    "checked_at": "2026-10-17T14:05:58.175Z",
     "last_current_new_at": "2026-10-17T13:56:23.255Z"
   },
   "recovery_attempts": [
