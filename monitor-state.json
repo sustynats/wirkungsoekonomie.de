@@ -16,17 +16,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-17T15:50:52.878Z",
       "active": true
-    },
-    "queue": {
-      "firstSeen": "2026-10-17T16:56:35.887Z",
-      "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-17T16:56:35.887Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "7e5d61b882acd541a1efbf4b",
+      "content": "✓ WÖk-Störung behoben\nNachrichten-Warteschlange\nPrüfung: 2026-10-17T17:17:47.770Z"
+    },
+    {
+      "id": "8d6bfd4b1c191aaee3c853d5",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-17T17:17:47.770Z"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2750,11 +2751,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/four-killed-in-oregon-elementary-school-shooting-including-three-children-aged-5-to-11-c96587/": {
         "first_seen_at": "2026-10-17T16:06:24.051Z",
         "source_at": "2026-10-16T03:23:21.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/hinweisportal-freigeschaltet-explosion-vor-laden-in-marl-unweit-von-anderem-tatort-8c211c/": {
+        "first_seen_at": "2026-10-17T17:17:47.770Z",
+        "source_at": "2026-10-17T16:17:36.000Z"
       }
     },
-    "last_new_at": "2026-10-17T16:06:24.051Z",
-    "checked_at": "2026-10-17T17:05:46.099Z",
-    "last_current_new_at": "2026-10-17T13:56:23.255Z"
+    "last_new_at": "2026-10-17T17:17:47.770Z",
+    "checked_at": "2026-10-17T17:17:47.770Z",
+    "last_current_new_at": "2026-10-17T17:17:47.770Z"
   },
   "recovery_attempts": [
     {
