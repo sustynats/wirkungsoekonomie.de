@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-17T19:38:58.585Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f1aad797f993ca829e89c60d",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-17T20:20:45.167Z"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2754,11 +2755,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/geld-fur-pflege-von-grunflachen-und-spielplatzen-fehlt-c09fc6/": {
         "first_seen_at": "2026-10-17T19:51:13.731Z",
         "source_at": "2026-10-17T17:48:05.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-behorden-ein-toter-bei-russischem-angriff-auf-cherson-16801a/": {
+        "first_seen_at": "2026-10-17T20:20:45.167Z",
+        "source_at": "2026-10-17T19:33:22.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/zehn-jahre-danach-basf-explosion-mit-funf-toten-5b6eb2/": {
+        "first_seen_at": "2026-10-17T20:20:45.167Z",
+        "source_at": "2026-10-17T18:38:03.000Z"
       }
     },
-    "last_new_at": "2026-10-17T19:51:13.731Z",
-    "checked_at": "2026-10-17T20:05:48.233Z",
-    "last_current_new_at": "2026-10-17T19:51:13.731Z"
+    "last_new_at": "2026-10-17T20:20:45.167Z",
+    "checked_at": "2026-10-17T20:20:45.167Z",
+    "last_current_new_at": "2026-10-17T20:20:45.167Z"
   },
   "recovery_attempts": [
     {
