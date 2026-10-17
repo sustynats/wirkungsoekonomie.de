@@ -19,10 +19,15 @@
     },
     "images": {
       "firstSeen": "2026-10-17T07:51:11.080Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "7a2dd0bd57d23ab47154d095",
+      "content": "⚠ WÖk-Betriebsstörung\nTitelbilder: 1 veröffentlichte Meldung(en) ohne nutzbares Titelbild; 5 mit Kartenfallback, weil der Bilddienst nicht lieferte.\nSeit: 2026-10-17T07:51:11.080Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2709,7 +2714,7 @@
       }
     },
     "last_new_at": "2026-10-16T11:20:53.233Z",
-    "checked_at": "2026-10-17T07:51:11.080Z",
+    "checked_at": "2026-10-17T08:06:07.339Z",
     "last_current_new_at": "2026-10-16T04:21:02.747Z"
   },
   "recovery_attempts": [
