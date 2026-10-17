@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-16T12:21:10.020Z",
       "active": true
-    },
-    "images": {
-      "firstSeen": "2026-10-17T07:51:11.080Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4e652451b97c80bec65ea26e",
+      "content": "✓ WÖk-Störung behoben\nTitelbilder\nPrüfung: 2026-10-17T08:20:48.365Z"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2706,10 +2707,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/teen-shooter-kills-three-children-and-teacher-at-oregon-elementary-school-352310/": {
         "first_seen_at": "2026-10-16T11:20:53.233Z",
         "source_at": "2026-10-15T21:58:33.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nach-schussen-in-hamburg-razzia-der-polizei-auf-dem-kiez-97409c/": {
+        "first_seen_at": "2026-10-17T08:20:48.365Z",
+        "source_at": "2026-10-16T09:37:38.000Z"
       }
     },
-    "last_new_at": "2026-10-16T11:20:53.233Z",
-    "checked_at": "2026-10-17T08:06:07.339Z",
+    "last_new_at": "2026-10-17T08:20:48.365Z",
+    "checked_at": "2026-10-17T08:20:48.365Z",
     "last_current_new_at": "2026-10-16T04:21:02.747Z"
   },
   "recovery_attempts": [
