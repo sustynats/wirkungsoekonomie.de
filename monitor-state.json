@@ -17,16 +17,17 @@
       "firstSeen": "2026-10-16T12:21:10.020Z",
       "active": true
     },
-    "queue": {
-      "firstSeen": "2026-10-17T13:56:23.255Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-17T13:56:23.255Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "2399c09961d286d23bfae2a3",
+      "content": "✓ WÖk-Störung behoben\nNachrichten-Warteschlange\nPrüfung: 2026-10-17T14:18:13.822Z"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2737,7 +2738,7 @@
       }
     },
     "last_new_at": "2026-10-17T13:56:23.255Z",
-    "checked_at": "2026-10-17T14:13:38.059Z",
+    "checked_at": "2026-10-17T14:18:13.822Z",
     "last_current_new_at": "2026-10-17T13:56:23.255Z"
   },
   "recovery_attempts": [
