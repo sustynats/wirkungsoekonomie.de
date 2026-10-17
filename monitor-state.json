@@ -16,9 +16,22 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-16T12:21:10.020Z",
       "active": true
+    },
+    "queue": {
+      "firstSeen": "2026-10-17T13:56:23.255Z",
+      "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-17T13:56:23.255Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "8316a7d945c0d756d210759a",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-17T13:56:23.255Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-17",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2722,11 +2735,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-in-berlin-berliner-linke-uberrascht-von-aussetzung-der-sondierungen-e20626/": {
         "first_seen_at": "2026-10-17T13:35:53.389Z",
         "source_at": "2026-10-13T17:59:48.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sprengung-einer-alten-bombe-schafherde-muss-nach-bombenfund-umziehen-63ebd0/": {
+        "first_seen_at": "2026-10-17T13:56:23.255Z",
+        "source_at": "2026-10-17T12:18:14.000Z"
       }
     },
-    "last_new_at": "2026-10-17T13:35:53.389Z",
-    "checked_at": "2026-10-17T13:51:05.418Z",
-    "last_current_new_at": "2026-10-17T13:35:53.389Z"
+    "last_new_at": "2026-10-17T13:56:23.255Z",
+    "checked_at": "2026-10-17T13:56:23.255Z",
+    "last_current_new_at": "2026-10-17T13:56:23.255Z"
   },
   "recovery_attempts": [
     {
