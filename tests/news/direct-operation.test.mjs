@@ -760,8 +760,9 @@ test('ein nicht belegbarer Aussagestatus wird herabgestuft, nicht verworfen', as
   assert.deepEqual(none, []);
 
   // Die Vorgabe nennt die Zahl der Herkünfte, damit es gar nicht dazu kommt.
-  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary] }), /nur eine unabhängige Herkunft.*confirmed_claim ist damit ausgeschlossen/s);
-  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary, agency] }), /2 voneinander unabhängige Herkünfte/);
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary] }), /nur eine mögliche Herkunftsgruppe.*confirmed_claim ist ausgeschlossen/s);
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary, agency] }), /2 möglicherweise getrennte Herkunftsgruppen/);
+  assert.doesNotMatch(storyBriefing({ sources: [primary, agency] }), /hat 2 voneinander unabhängige Herkünfte/);
 });
 
 test('die Vorgabe nennt die belegbaren Zahlen je Quelle, mit demselben Auszug wie die Prüfung', async () => {

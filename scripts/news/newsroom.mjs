@@ -85,6 +85,29 @@ export function evidenceGroups(sources = []) {
   return { groups: [...groups.values()].map(ids => [...new Set(ids)]), possible_independent_origins: groups.size, independence_is_verified: false, dependencies: [...reasons.values()] };
 }
 
+// A count of publishers is not proof of independent reporting. This narrow
+// reader-copy gate does not classify an event or rewrite any paid answer.
+// Its code intentionally has no paid format-repair/retry mapping.
+export function sourceIndependenceTextErrors(analysis = {}, sources = []) {
+  const verified = sources.filter(source => source.provenance?.independence_established === true);
+  if (evidenceGroups(verified).possible_independent_origins >= 2) return [];
+  const adjective = /\b(?:voneinander\s+)?unabhängig\p{L}*\s+(?:journalistisch\p{L}*\s+)?(?:Quellen|Berichte|Recherchen)\b/giu;
+  const predicate = /\b(?:Quellen|Berichte|Recherchen)\b[^.!?;]{0,45}\b(?:sind|berichten|recherchieren)\s+(?:voneinander\s+)?unabhängig\b/giu;
+  const fields = ['source_summary', 'summary', 'detail_summary', 'attribution', 'evidence_level'];
+  for (const field of fields) for (const clause of String(analysis[field] || '').split(/[.!?;]|,\s*(?:aber|doch|jedoch|sondern)\s+/iu)) {
+    for (const pattern of [adjective, predicate]) for (const match of clause.matchAll(pattern)) {
+      const prefix = clause.slice(0, match.index);
+      const tail = clause.slice(match.index + match[0].length);
+      // Local denials/uncertainty must not exempt a different positive claim
+      // later in the field. Nor does "nicht nur" deny independence.
+      if (/\b(?:keine?\p{L}*|nicht(?!\s+nur\b)|möglicherweise|könnten|ungeklärt)\b[^,;]{0,55}$/iu.test(prefix)) continue;
+      if (/^\s+(?:sind|ist)\s+(?:noch\s+)?nicht\s+(?:belegt|bestätigt|nachgewiesen)\b/iu.test(tail)) continue;
+      return ['SOURCE_INDEPENDENCE_NOT_ESTABLISHED'];
+    }
+  }
+  return [];
+}
+
 const EVENT_TYPES = [
   ["judgment", /\b(urteil|gericht|court|ruling|verdict)\w*/i],
   ["enacted", /\b(in kraft|takes effect|enters into force)\b/i],
@@ -268,7 +291,7 @@ export function discoveryCandidates(sources, knownSources, now) {
 }
 
 export function validateNewsroomAnalysis(analysis, story) {
-  const errors = [];
+  const errors = sourceIndependenceTextErrors(analysis, story.sources || []);
   if (!new Set(["developing", "preliminary", "confirmed", "disputed", "corrected", "updated"]).has(analysis.news_status)) errors.push("NEWS_STATUS_REQUIRED");
   const claims = analysis.event_claims;
   if (!Array.isArray(claims) || !claims.length || claims.length > 6) return [...errors, "EVENT_CLAIMS_REQUIRED"];
