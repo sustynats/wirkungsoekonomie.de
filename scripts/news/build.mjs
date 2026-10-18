@@ -670,7 +670,21 @@ export function renderEditorialLinks(analyses) {
 
 export const newsReaderKey = item => `${item.type}:${item.type === "analysis" ? item.value.analysis_id : item.value.story_id}`;
 
+function preservesMergedPublication(story) {
+  return story.published && story.listed === false
+    && story.retirement?.reason_code === 'MERGED_INTO_LIVING_FILE'
+    && story.retirement.preserve_full_publication === true;
+}
+
+function mergedPublicationNotice(story) {
+  const retirement = story.retirement;
+  const links = (retirement.canonical_stories || []).map(target =>
+    `<li><a href="../${escapeHtml(target.slug)}/">${escapeHtml(target.title)}</a></li>`).join('');
+  return `<aside class="notice news-correction" role="note" data-merged-publication-notice><p><strong>Transparenzhinweis: historischer Stand</strong></p><p>Zusammengeführt am ${escapeHtml(formatDate(retirement.at, { dateOnly: true }))}. ${escapeHtml(retirement.note)}</p><p>Der vollständige bisherige Artikel bleibt unten lesbar. Die Zusammenführung bestätigt seine frühere Bewertung nicht erneut.</p><p>Fortgeführte Wirkungsakte:</p><ul>${links}</ul></aside>`;
+}
+
 export function storyPage(story, { newerStory = null, nextStory = null, allStories = [], caseFile = null, editorialAnalysis = null, editorialAnalyses = null, publicStorySlugs = new Set(), privateImpactPreview = false } = {}) {
+  const historicalArchive = preservesMergedPublication(story);
   const titleImage = publicTitleImage(story.title_image);
   const a = story.analysis;
   const detailSummary = expandedDetailSummary(a);
@@ -698,7 +712,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
   const nextLink = nextStory ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextStory.href || `../${nextStory.slug}/`)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextStory.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
   const returnLink = `<a class="btn btn-secondary news-return-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">←</span><span>Zur Übersicht</span></a>`;
   const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail"${story.editorial_approval_hash ? ` data-editorial-approval-hash="${escapeHtml(story.editorial_approval_hash)}"` : ""}>
-  <section class="hero news-hero news-hero--story"><div class="hero-copy">${renderUpdateBanner(story, { detail: true, caseFile })}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav>${backToOverview(overviewHref(story))}<p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}`, impactContext:{privateImpactPreview} })}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderImpactTime(story)}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
+  ${historicalArchive ? mergedPublicationNotice(story) : ''}<section class="hero news-hero news-hero--story"><div class="hero-copy">${renderUpdateBanner(story, { detail: true, caseFile })}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav>${backToOverview(overviewHref(story))}<p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}`, impactContext:{privateImpactPreview} })}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderImpactTime(story)}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
 
   ${renderNewsStatusNotice(story)}
   ${(story.corrections || []).map((correction) => `<aside class="notice news-correction" role="note"><p><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}</strong></p><p>${escapeHtml(correction.note)}</p></aside>`).join("")}
@@ -733,7 +747,8 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     titleImage,
     canonical: `${SITE}/wirkungsticker/${story.slug}/`,
     base: "../../",
-    robots: privateImpactPreview ? "noindex,nofollow" : "",
+    robots: privateImpactPreview ? "noindex,nofollow" : historicalArchive ? "noindex,follow" : "",
+    feedLinks: !historicalArchive,
     body: privateImpactPreview ? `<aside class="notice" data-private-impact-preview>Private Vorschau. Noch keine Freigabe zur Veröffentlichung.</aside>${body}` : body,
     jsonLd: {
       "@context": "https://schema.org", "@type": "AnalysisNewsArticle", "@id": `${SITE}/wirkungsticker/${story.slug}/#article`,
@@ -834,7 +849,8 @@ function personalEditorialPage(a, {nextItem = null} = {}){
  return pageShell({title:a.title,description:a.subtitle,canonical,body,base:'../../../',extraScript:'<script src="../../../assets/js/news-share.js?v=20260911-dynamic-share"></script>',jsonLd:{'@context':'https://schema.org','@type':'Article',url:canonical,articleSection:label,headline:a.title,datePublished:a.published_at,dateModified:a.updated_at||a.published_at,author:{'@type':'Person',name:'Natalie Weber'},citation:a.sources.map(s=>s.url)}});
 }
 
-function retiredStoryPage(story) {
+export function retiredStoryPage(story) {
+  if (preservesMergedPublication(story)) return storyPage(story);
   const retirement = story.retirement || {};
   const canonicalTargets = (retirement.canonical_story_ids || []).map((storyId) => {
     const target = retirement.canonical_stories?.find((entry) => entry.story_id === storyId);
