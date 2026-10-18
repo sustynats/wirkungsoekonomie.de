@@ -17,16 +17,29 @@
       "firstSeen": "2026-10-18T17:14:09.020Z",
       "active": true
     },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-18T17:14:09.020Z",
-      "active": true
-    },
     "editorial-status": {
       "firstSeen": "2026-10-18T17:37:27.636Z",
+      "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-18T18:21:09.114Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-18T18:21:09.114Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5c977d391156a5f95cab094f",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-18T17:37:27.636Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "3feaee73bea69a8845248ea4",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-18T18:21:09.114Z"
+    }
+  ],
   "dailyDate": "2026-10-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2870,11 +2883,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/grune-banaszak-rot-grun-rot-braucht-klare-absprachen-vor-start-44ea73/": {
         "first_seen_at": "2026-10-18T16:34:30.271Z",
         "source_at": "2026-10-18T11:30:37.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/trump-endorses-embattled-israeli-pm-netanyahu-ahead-of-october-27-election-0ab08c/": {
+        "first_seen_at": "2026-10-18T18:21:09.114Z",
+        "source_at": "2026-10-18T16:25:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/messerangriff-in-obdachlosenheim-mann-schwer-verletzt-ed8fe5/": {
+        "first_seen_at": "2026-10-18T18:21:09.114Z",
+        "source_at": "2026-10-18T15:14:29.000Z"
       }
     },
-    "last_new_at": "2026-10-18T16:34:30.271Z",
-    "checked_at": "2026-10-18T17:37:27.636Z",
-    "last_current_new_at": "2026-10-18T16:34:30.271Z"
+    "last_new_at": "2026-10-18T18:21:09.114Z",
+    "checked_at": "2026-10-18T18:21:09.114Z",
+    "last_current_new_at": "2026-10-18T18:21:09.114Z"
   },
   "recovery_attempts": [
     {
