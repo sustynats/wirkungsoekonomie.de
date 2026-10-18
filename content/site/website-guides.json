@@ -97,9 +97,9 @@
     },
     {
       "id": "website-rundgang",
-      "status": "audio-pending",
+      "status": "ready",
       "format": "overview",
-      "kind": "audio",
+      "kind": "video",
       "title": "Was bietet dir diese Website?",
       "description": "Finde den passenden Einstieg für deine Fragen.",
       "date": "18. Oktober 2026",
@@ -108,43 +108,44 @@
       ],
       "review": {
         "content": "passed",
-        "audio": "pending",
-        "cast": "pending",
-        "duration": "pending",
-        "transcript": "pending"
+        "audio": "passed",
+        "cast": "passed",
+        "duration": "passed",
+        "transcript": "passed"
       },
       "transcript": [
         {
-          "speaker": "Jonas",
-          "text": "Wo fängst du auf dieser Website an? Ich bin Jonas."
+          "text": "Genau das schauen wir uns heute an. Wir analysieren nämlich die Konzepte der Wirkungsökonomie von Natalie Weber."
         },
         {
-          "speaker": "Mara",
-          "text": "Und ich bin Mara. Die Wirkungsökonomie von Natalie Weber fragt: Was verändern Entscheidungen tatsächlich für Menschen, Lebensgrundlagen und Demokratie? Sie ist ein offenes Wirtschafts- und Gesellschaftsmodell. Hier findest du seine Grundlagen und Anwendungen."
+          "text": "Es geht heute einfach um die große Frage: Was verändern unsere alltäglichen Handlungen eigentlich wirklich an unseren Lebensgrundlagen und unserer Demokratie? Und genau da setzt dieses offene Gesellschaftsmodell an."
         },
         {
-          "speaker": "Jonas",
-          "text": "Und was habe ich persönlich davon?"
+          "text": "Richtig, aber im Kern ist es ein Rahmenwerk, das die oft unsichtbaren Konsequenzen unseres Wirtschaftens aufzeigt."
         },
         {
-          "speaker": "Mara",
-          "text": "Als Bürger findest du Alltagsbeispiele zu Produkten, Wohnen und Medien. In der Wissenschaft kannst du Begriffe, Annahmen, Methoden und Quellen prüfen. Für politische Arbeit gibt es Vorschläge und Prüfwege, die an bestehende Folgenprüfungen anschließen. Im Journalismus hilft das Wirkungslexikon, manipulative Deutungen zu erkennen und Originalquellen einzuordnen."
+          "text": "Als ganz normale Bürger seht ihr auf der Plattform dann anhand konkreter Alltagsbeispiele, wie bestimmte Wohnentscheidungen oder Baustoffe direkte Auswirkungen haben."
         },
         {
-          "speaker": "Jonas",
-          "text": "Wie finde ich den passenden Weg?"
+          "text": "Für solche Fälle gibt es dort das sogenannte Wirkungslexikon."
         },
         {
-          "speaker": "Mara",
-          "text": "Starte bei „Für wen“ mit deiner Perspektive. Unter „Verstehen“ lernst du die Grundidee. Die „Wirkungsfelder“ führen zu deinem Thema. „Methoden und Werkzeuge“ bieten Prüfwege und gekennzeichnete Demos. Die „Bibliothek“ erschließt Fachtexte und ihren jeweiligen Stand. Im „Journal“ findest du aktuelle Einordnungen; die „Akademie“ bietet Lernmaterialien."
+          "text": "Es ist darauf ausgelegt, manipulative Deutungen oder, sagen wir mal, rhetorische Nebelkerzen in öffentlichen Debatten zu entlarven. Journalisten können damit lernen, Originalquellen richtig einzuordnen."
         },
         {
-          "speaker": "Jonas",
-          "text": "Du musst also nicht alles auf einmal lesen."
+          "text": "Exakt. Und auch für die Wissenschaft oder die politische Arbeit gibt es solche spezifischen Zugänge. Etwa konkrete Prüfwege für Gesetzesfolgenabschätzungen."
         },
         {
-          "speaker": "Mara",
-          "text": "Genau. Wähle eine Frage, öffne das passende Thema und folge den nächsten Schritten. Beginne mit „Für wen“."
+          "text": "Ja, absolut. Da können Forscher dann die zugrunde liegenden Methoden kritisch durchleuchten."
+        },
+        {
+          "text": "Es gibt zwar Bereiche wie das Verstehen für das theoretische Fundament oder eine Bibliothek für tiefergehende Fachtexte."
+        },
+        {
+          "text": "Das heißt also: Die wichtigste Lektion für die Nutzung ist, bloß nicht versuchen, alles auf einmal zu erfassen."
+        },
+        {
+          "text": "Aber wie starte ich dann am besten, ohne mich zu verlieren? Die Seite ist gezielt so aufgebaut, dass Nutzer über den Bereich Für wen einsteigen sollten."
         }
       ],
       "sources": [
@@ -155,6 +156,22 @@
         {
           "title": "Einstiege nach Perspektive",
           "url": "https://wirkungsoekonomie.de/fuer/"
+        },
+        {
+          "title": "Für Bürgerinnen und Bürger",
+          "url": "https://wirkungsoekonomie.de/fuer/buergerinnen.html"
+        },
+        {
+          "title": "Wissenschaft und Forschung",
+          "url": "https://wirkungsoekonomie.de/fuer/wissenschaft-forschung.html"
+        },
+        {
+          "title": "Politik und Staat",
+          "url": "https://wirkungsoekonomie.de/fuer/politik.html"
+        },
+        {
+          "title": "Journalismus und Öffentlichkeit",
+          "url": "https://wirkungsoekonomie.de/fuer/journalismus.html"
         }
       ],
       "links": [
@@ -166,7 +183,13 @@
           "href": "/wirkungsfelder/",
           "label": "Dein Thema finden"
         }
-      ]
+      ],
+      "anchor": "ueberblickvideo",
+      "seconds": 81.76,
+      "sha256": "f0b17b9b5bb3a7640b8c15a36bd8d5379e26a7958c28a9b7937eaaa52b6efc6b",
+      "src": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/website-rundgang-2026-10-18-v1/website-rundgang.mp4",
+      "poster": "/assets/website-guides/website-rundgang-poster.png",
+      "captions": "/assets/website-guides/website-rundgang-de.vtt"
     }
   ]
 }
