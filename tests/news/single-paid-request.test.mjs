@@ -34,6 +34,22 @@ function fixture(published) {
     aiBatchDelayImpl: async () => {} };
 }
 
+test('the scheduled worker enforces the same single-paid-input rule as the local runner', t => {
+  const workflow = fs.readFileSync(new URL('../../.github/workflows/wirkungsticker.yml', import.meta.url), 'utf8');
+  const configured = workflow.match(/^\s+WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT:\s*"(\d+)"\s*$/m)?.[1];
+  assert.ok(configured, 'the worker must declare its paid-input contract explicitly');
+  const previous = process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT;
+  process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT = configured;
+  t.after(() => previous === undefined ? delete process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT
+    : process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT = previous);
+  const original = fixture(false).storyStore.stories[0];
+  const candidate = { ...original, existing_story: original };
+  const paid = pendingRecord(candidate, 'QUALITY_GATE_FAILED', now);
+  assert.equal(paidAttemptsExhausted({ ...candidate, existing_story: paid }), true,
+    'the real workflow environment must block a replacement after the first paid receipt');
+  assert.equal(configured, '1');
+});
+
 for (const published of [false, true]) for (const reason of ['AI_OUTPUT_INVALID', 'QUALITY_GATE_FAILED']) {
   test(`a paid input stays exhausted after evidence changes away and back (${published ? 'published update' : 'first publication'}, ${reason})`, () => {
     const original = fixture(published).storyStore.stories[0];
