@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-18T22:20:55.071Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "aceed69caf2f25afacffc357",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-18T23:34:42.753Z"
+    }
+  ],
   "dailyDate": "2026-10-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2893,7 +2894,7 @@
       }
     },
     "last_new_at": "2026-10-18T22:35:54.516Z",
-    "checked_at": "2026-10-18T23:21:20.928Z",
+    "checked_at": "2026-10-18T23:34:42.753Z",
     "last_current_new_at": "2026-10-18T22:35:54.516Z"
   },
   "recovery_attempts": [
