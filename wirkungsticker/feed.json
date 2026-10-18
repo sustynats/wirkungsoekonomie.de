@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-18T14:44:20.420Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-18T15:12:20.420Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -40,7 +40,7 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/zaun-an-leipziger-flughafen-beschadigt-polizei-sucht-ursache-3717fa/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/zaun-an-leipziger-flughafen-beschadigt-polizei-sucht-ursache-3717fa/",
-      "title": "Laut Polizei: Fahrzeug wahrscheinlich durchbricht Zaun am Leipziger Flughafen",
+      "title": "Laut Polizei: Fahrzeug beschädigt wahrscheinlich den Zaun am Leipziger Flughafen",
       "summary": "Am Leipziger Flughafen ermittelt die Polizei nach einem beschädigten Zaun; ein Fahrzeug gilt laut Beamten als wahrscheinliche Ursache. Ob eine Gefahr bestand oder der Betrieb beeinträchtigt wurde, bleibt offen.",
       "date_published": "2026-10-18T12:39:12.000Z",
       "date_modified": "2026-10-18T12:39:12.000Z",
@@ -52,17 +52,17 @@
       "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "potential"
-        },
-        "planet": {
           "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         },
+        "planet": {
+          "magnitude": 0,
+          "direction": "negative",
+          "status": "potential"
+        },
         "democracy": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         }
@@ -90,6 +90,38 @@
         "planet": {
           "magnitude": 0,
           "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/grossbrand-in-lehesten-500-000-euro-schaden-wohnhaus-evakuiert-a96a66/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/grossbrand-in-lehesten-500-000-euro-schaden-wohnhaus-evakuiert-a96a66/",
+      "title": "Laut MDR: Großbrand in Lehesten zerstört Maschinenhalle, Wohnhaus evakuiert",
+      "summary": "Ein Brand zerstörte laut MDR eine Maschinenhalle in Lehesten; vier Menschen wurden aus einem Wohnhaus gerettet. Die Schadenshöhe und die Ursache sind vorläufig, eine unabhängige Bestätigung liegt nicht vor.",
+      "date_published": "2026-10-18T12:29:22.000Z",
+      "date_modified": "2026-10-18T12:29:22.000Z",
+      "_woek_released_at": "2026-10-18T15:19:30.631Z",
+      "tags": [
+        "Gesundheit",
+        "Europa"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
