@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-18T07:29:48.509Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-18T09:19:42.772Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -65,6 +65,38 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/nordpiste-gesperrt-erneuter-zwischenfall-am-flughafen-leipzig-halle-betrieb-eingeschrank-739d7a/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/nordpiste-gesperrt-erneuter-zwischenfall-am-flughafen-leipzig-halle-betrieb-eingeschrank-739d7a/",
+      "title": "Nordpiste am Flughafen Leipzig/Halle nach erneutem Zwischenfall gesperrt",
+      "summary": "Am Flughafen Leipzig/Halle ist die Nordpiste nach einem erneuten Zwischenfall gesperrt worden. Unklar sind weiterhin Ursache, Dauer der Sperrung und mögliche weitere Folgen.",
+      "date_published": "2026-10-18T06:23:39.021Z",
+      "date_modified": "2026-10-18T06:23:39.021Z",
+      "_woek_released_at": "2026-10-18T09:23:38.738Z",
+      "tags": [
+        "Politik",
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
