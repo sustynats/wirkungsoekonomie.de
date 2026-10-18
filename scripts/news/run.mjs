@@ -41,6 +41,7 @@ import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences, promptEvidenceSegments } from "./newsroom.mjs";
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
 import { consolidateLeizenDuplicates } from "./migrate-leizen-duplicates.mjs";
+import { consolidateKirchnerDuplicates } from "./consolidate-kirchner-duplicates.mjs";
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1357,6 +1358,11 @@ export async function runWirkungsticker(options = {}) {
   const leizenMerges = consolidateLeizenDuplicates(storyStore.stories || [], now);
   report.living_file_merges = leizenMerges;
   report.retired_stories += leizenMerges.length;
+  // Exact, documented source-edition pair; no new analysis or paid retry.
+  const kirchnerConsolidation = consolidateKirchnerDuplicates(storyStore.stories || [], now);
+  report.kirchner_duplicate_consolidation = kirchnerConsolidation;
+  report.living_file_merges.push(...kirchnerConsolidation.changes);
+  report.retired_stories += kirchnerConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
