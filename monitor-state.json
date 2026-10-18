@@ -13,20 +13,21 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-18T17:14:09.020Z",
-      "active": false
-    },
     "editorial-coverage": {
       "firstSeen": "2026-10-18T17:14:09.020Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-18T17:14:09.020Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "76a72b65e01a7416fd408433",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-18T17:14:09.020Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2873,7 +2874,7 @@
       }
     },
     "last_new_at": "2026-10-18T16:34:30.271Z",
-    "checked_at": "2026-10-18T17:14:09.020Z",
+    "checked_at": "2026-10-18T17:36:09.005Z",
     "last_current_new_at": "2026-10-18T16:34:30.271Z"
   },
   "recovery_attempts": [
