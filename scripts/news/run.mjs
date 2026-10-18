@@ -772,17 +772,15 @@ export function lifoHorizonMilliseconds(env = process.env) {
   return Number.isFinite(hours) && hours > 0 ? hours * 3600000 : 0;
 }
 
-// Ein bezahlter Versuch je Eingabestand. Einzige Ausnahme: eine formal
-// unbrauchbare Anbieterantwort (kein gültiges JSON) darf genau einmal
-// wiederholt werden, weil sie keine inhaltliche Entscheidung darstellt.
+// Ein bezahlter Versuch je Eingabestand. Auch eine leere, abgebrochene oder
+// formal unbrauchbare Antwort bleibt ein bezahlter Versuch und wird archiviert.
+// Ein neuer Zeitabschnitt erlaubt keine Ersatzgenerierung derselben Eingabe.
 export function paidAttemptsExhausted(candidate, limit = Number(process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT || 1)) {
   const existing = candidate.existing_story;
   const previous = existing?.ai_retry;
-  const reason = existing?.pending_update?.reason || existing?.pending_reason;
-  const effectiveLimit = reason === "AI_OUTPUT_INVALID" ? Math.max(2, limit) : Math.max(1, limit);
   return Boolean(previous && previous.version === AI_PROCESSING_VERSION
     && previous.fingerprint === retryInputFingerprint(candidate)
-    && Number(previous.retry_count || 0) >= effectiveLimit);
+    && Number(previous.retry_count || 0) >= Math.max(1, limit));
 }
 
 export function retryCoolingDown(candidate, now) {

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { runWirkungsticker } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, paidAttemptsExhausted } from '../../scripts/news/run.mjs';
 import { callOpenAiDirect } from '../../scripts/news/openai-transport.mjs';
 
 const now = '2026-10-18T06:00:00.000Z';
@@ -77,3 +77,54 @@ for (const published of [false, true]) test(`one paid output is held without a s
   assert.equal(calls, 1); assert.equal(again.ai_calls, 0);
   assert.equal(fs.readdirSync(dir).length, 1);
 });
+
+for (const published of [false, true]) for (const malformed of [false, true]) {
+  test(`invalid paid output cannot buy a later replacement (${published ? 'published update' : 'first publication'}, ${malformed ? 'malformed JSON' : 'empty incomplete reply'})`, async t => {
+    const previousMode = process.env.WIRKUNGSTICKER_PROCESSING_MODE;
+    process.env.WIRKUNGSTICKER_PROCESSING_MODE = 'api';
+    t.after(() => previousMode === undefined ? delete process.env.WIRKUNGSTICKER_PROCESSING_MODE
+      : process.env.WIRKUNGSTICKER_PROCESSING_MODE = previousMode);
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-invalid-paid-regression-'));
+    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+    const input = fixture(published), before = structuredClone(input.storyStore.stories[0]);
+    const answer = malformed ? '{"analyses":[' : null;
+    let calls = 0, saved;
+    const callAiImpl = (stories, options) => callOpenAiDirect(stories, { ...options,
+      apiKey: 'test-only', model: 'gpt-5.4-mini', rawOutputDir: dir,
+      retryDelayImpl: async () => assert.fail('No transport retry in this regression'),
+      fetchImpl: async () => {
+        calls++;
+        return Response.json({ model: 'gpt-5.4-mini', status: 'incomplete',
+          incomplete_details: { reason: 'max_output_tokens' },
+          usage: { input_tokens: 100, output_tokens: 4000 },
+          output: malformed ? [{ type: 'message', role: 'assistant',
+            content: [{ type: 'output_text', text: answer }] }] : [] });
+      } });
+    const report = await runWirkungsticker({ ...input, callAiImpl, captureState: value => saved = value });
+    assert.equal(calls, 1); assert.equal(report.ai_calls, 1);
+    assert.equal(report.ai_output_invalid, 1);
+    assert.ok(report.estimated_cost_usd > 0, 'reported paid usage remains accounted for');
+    assert.equal(report.published_stories, 0); assert.equal(report.updated_stories, 0);
+    const held = saved.storyStore.stories.find(s => s.story_id === before.story_id);
+    const sameInput = { ...held, existing_story: held, sources: held.pending_update?.sources || held.sources };
+    assert.equal(paidAttemptsExhausted(sameInput, 1), true);
+    const changedInput = { ...sameInput, sources: sameInput.sources.map(s => ({ ...s,
+      summary: s.summary + ' Eine neue belegte Entwicklung verändert den Eingabestand.' })) };
+    assert.equal(paidAttemptsExhausted(changedInput, 1), false, 'new evidence remains distinct from a paid replacement');
+    const archive = fs.readFileSync(path.join(dir, fs.readdirSync(dir)[0]), 'utf8');
+    assert.equal(JSON.parse(archive).answer, answer);
+    assert.equal(JSON.parse(archive).status, 'incomplete');
+    for (const next of ['2026-10-18T08:00:00.000Z', '2026-10-18T10:00:00.000Z']) {
+      const again = await runWirkungsticker({ ...input, ...saved, now: next,
+        callAiImpl, captureState: value => saved = value });
+      assert.equal(calls, 1, 'unchanged paid input stays held after the retry time and a fresh hour');
+      assert.equal(again.ai_calls, 0);
+      const held = saved.storyStore.stories.find(s => s.story_id === before.story_id);
+      for (const key of ['published', 'published_at', 'current_version', 'versions', 'analysis', 'original_potential_assessment']) {
+        assert.deepEqual(held[key], before[key], `preserve ${key}`);
+      }
+      assert.equal(fs.readdirSync(dir).length, 1);
+      assert.equal(fs.readFileSync(path.join(dir, fs.readdirSync(dir)[0]), 'utf8'), archive);
+    }
+  });
+}
