@@ -15,10 +15,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-18T22:20:55.071Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9e6044b869089a871b4f7249",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-18T22:20:55.071Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2886,11 +2891,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/forschungsprojekt-waldschaden-sollen-mit-hilfe-von-ki-und-satellitenbildern-besser-erfas-3f9bba/": {
         "first_seen_at": "2026-10-18T21:25:44.548Z",
         "source_at": "2026-10-18T19:59:39.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-in-berlin-weimer-linkspartei-offnet-antisemitismus-tur-und-tor-e706dd/": {
+        "first_seen_at": "2026-10-18T22:35:54.516Z",
+        "source_at": "2026-10-18T20:40:43.000Z"
       }
     },
-    "last_new_at": "2026-10-18T21:25:44.548Z",
-    "checked_at": "2026-10-18T22:20:55.071Z",
-    "last_current_new_at": "2026-10-18T21:25:44.548Z"
+    "last_new_at": "2026-10-18T22:35:54.516Z",
+    "checked_at": "2026-10-18T22:35:54.516Z",
+    "last_current_new_at": "2026-10-18T22:35:54.516Z"
   },
   "recovery_attempts": [
     {
