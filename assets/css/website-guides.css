@@ -1,0 +1,10 @@
+.website-guide{max-width:1120px;margin:1.5rem auto 2rem;padding:clamp(1.1rem,3vw,2rem);background:#fff9ee;border:1px solid #e8e4dc;border-left:4px solid #2f7d5c;border-radius:8px;color:#222}
+.website-guide-meta{font-size:.85rem;color:#174f38;font-weight:650;letter-spacing:.02em;margin:0 0 .45rem}
+.website-guide h2{margin:.2rem 0 .65rem;font-size:clamp(1.35rem,3vw,1.9rem);line-height:1.2;color:#0b1020}
+.website-guide-intro>p:last-child{max-width:72ch;margin-bottom:1.1rem}
+.website-guide audio,.website-guide video{display:block;width:100%;margin:1rem 0;border-radius:6px}.website-guide video{aspect-ratio:16/9;background:#0b1020}
+.website-guide details{border-top:1px solid #e8e4dc;padding:.75rem 0}.website-guide summary{cursor:pointer;font-weight:600;padding:.25rem 0}.website-guide summary:focus-visible,.website-guide a:focus-visible{outline:3px solid #9a6f12;outline-offset:4px}
+.website-guide-transcript{max-width:78ch;line-height:1.65}.website-guide-transcript p{margin:.8rem 0}.website-guide-transcript strong{color:#174f38}
+.website-guide-next{display:flex;flex-wrap:wrap;gap:.65rem 1.5rem;padding:.8rem 0}.website-guide-next a{color:#174f38;font-weight:650;text-underline-offset:.2em}
+.website-guide-production{font-size:.85rem;color:#575b55}.website-guide-production p{max-width:85ch}.website-guide-production ul{padding-left:1.2rem}
+@media(max-width:640px){.website-guide{margin:1rem .75rem}.website-guide-next{flex-direction:column;gap:.75rem}}

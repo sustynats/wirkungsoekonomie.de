@@ -71,6 +71,11 @@ for (const story of store.stories) {
     if (!fs.existsSync(retiredPage)) fail(`RETIRED_STORY_PAGE_MISSING:${story.slug}`);
     const retiredHtml = fs.readFileSync(retiredPage, "utf8");
     if (!retiredHtml.includes("Transparenzhinweis") || !retiredHtml.includes('name="robots" content="noindex,follow"')) fail(`RETIRED_STORY_PAGE_INVALID:${story.story_id}`);
+    if (story.retirement.preserve_full_publication === true
+      && (!isMerged(story) || !retiredHtml.includes('data-merged-publication-notice')
+        || !retiredHtml.includes('id="nachricht"') || !retiredHtml.includes('id="versionsverlauf"'))) {
+      fail(`MERGED_PUBLICATION_ARCHIVE_INCOMPLETE:${story.story_id}`);
+    }
   }
 }
 
