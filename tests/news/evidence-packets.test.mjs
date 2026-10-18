@@ -152,7 +152,7 @@ test('bridge discovery retries an API-size hold using the same native file budge
   assert.deepEqual(saved.versions, previous.versions);
 });
 
-test('malformed AI output is retained and retried automatically after backoff', async () => {
+test('malformed paid output stays held after backoff without replacing the published record', async () => {
   let captured, calls=0, fail=true;
   const callAiImpl=async stories=>{
     calls++;
@@ -175,12 +175,14 @@ test('malformed AI output is retained and retried automatically after backoff', 
   await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:10:00.000Z',callAiImpl,captureState:value=>captured=value});
   assert.equal(calls,1);
   fail=false;
-  // Eine Stunde später: der bezahlte Fehlversuch liegt außerhalb des
-  // Taktungsfensters, sonst pausiert die Monatstaktung diese Stunde zu Recht.
+  // Ein neues Taktungsfenster berechtigt nicht zur Ersatzgenerierung desselben
+  // bereits bezahlten Eingabestands, auch wenn der Transport wieder verfügbar ist.
   const third=await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T13:16:00.000Z',callAiImpl,captureState:value=>captured=value});
-  assert.equal(calls,2);
-  assert.equal(third.ai_batches_completed,1);
-  assert.equal(captured.storyStore.stories[0].pending_update,undefined);
+  assert.equal(calls,1);
+  assert.equal(third.ai_calls,0);
+  assert.equal(captured.storyStore.stories[0].pending_update.reason,'AI_ATTEMPT_LIMIT_REACHED');
+  assert.deepEqual(captured.storyStore.stories[0].analysis,storedStory().analysis);
+  assert.deepEqual(captured.storyStore.stories[0].versions,storedStory().versions);
 });
 
 for (const code of ['AI_PROVIDER_OUTPUT_INVALID', 'AI_SCHEMA_ANALYSES_REQUIRED']) test(`reported ${code} cost reaches the journal and source funnel without publication`, async () => {
