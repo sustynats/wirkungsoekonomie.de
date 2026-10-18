@@ -16,17 +16,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-18T07:05:52.588Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-18T10:50:51.792Z",
-      "active": true
-    },
-    "queue": {
-      "firstSeen": "2026-10-18T10:50:51.792Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "12d73d8491144b5b47232459",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-18T11:20:47.957Z"
+    },
+    {
+      "id": "91d4021a3bbb9acf5c4e35a4",
+      "content": "✓ WÖk-Störung behoben\nNachrichten-Warteschlange\nPrüfung: 2026-10-18T11:20:47.957Z"
+    }
+  ],
   "dailyDate": "2026-10-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2833,7 +2834,7 @@
       }
     },
     "last_new_at": "2026-10-18T09:51:11.019Z",
-    "checked_at": "2026-10-18T11:06:16.900Z",
+    "checked_at": "2026-10-18T11:20:47.957Z",
     "last_current_new_at": "2026-10-18T09:51:11.019Z"
   },
   "recovery_attempts": [
