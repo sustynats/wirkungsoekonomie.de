@@ -42,6 +42,7 @@ import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, ev
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
 import { consolidateLeizenDuplicates } from "./migrate-leizen-duplicates.mjs";
 import { consolidateKirchnerDuplicates } from "./consolidate-kirchner-duplicates.mjs";
+import { consolidateKamenDuplicates } from "./consolidate-kamen-duplicates.mjs";
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1363,6 +1364,11 @@ export async function runWirkungsticker(options = {}) {
   report.kirchner_duplicate_consolidation = kirchnerConsolidation;
   report.living_file_merges.push(...kirchnerConsolidation.changes);
   report.retired_stories += kirchnerConsolidation.changes.length;
+  // Another reviewed exact pair; preserve both paid editions.
+  const kamenConsolidation = consolidateKamenDuplicates(storyStore.stories || [], now);
+  report.kamen_duplicate_consolidation = kamenConsolidation;
+  report.living_file_merges.push(...kamenConsolidation.changes);
+  report.retired_stories += kamenConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
