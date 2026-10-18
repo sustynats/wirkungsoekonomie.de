@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-18T21:25:44.548Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2878,11 +2882,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-in-berlin-medien-20-spd-abgeordnete-gegen-verhandlungen-mit-linke-6c0c0b/": {
         "first_seen_at": "2026-10-18T20:06:30.330Z",
         "source_at": "2026-10-18T19:06:45.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/forschungsprojekt-waldschaden-sollen-mit-hilfe-von-ki-und-satellitenbildern-besser-erfas-3f9bba/": {
+        "first_seen_at": "2026-10-18T21:25:44.548Z",
+        "source_at": "2026-10-18T19:59:39.000Z"
       }
     },
-    "last_new_at": "2026-10-18T20:06:30.330Z",
-    "checked_at": "2026-10-18T21:21:35.865Z",
-    "last_current_new_at": "2026-10-18T20:06:30.330Z"
+    "last_new_at": "2026-10-18T21:25:44.548Z",
+    "checked_at": "2026-10-18T21:25:44.548Z",
+    "last_current_new_at": "2026-10-18T21:25:44.548Z"
   },
   "recovery_attempts": [
     {
