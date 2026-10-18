@@ -1774,8 +1774,12 @@ export async function runWirkungsticker(options = {}) {
         }));
         aiRequestStarted = true;
         const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
-          // Der Transport kennt das Bewertungsobjekt, nicht die Lesertextregeln.
-          // Für die eine Nachlieferung bekommt er sie als Prüffunktion mit.
+          // Eine abgeschlossene bezahlte Antwort bleibt unverändert archiviert.
+          // Befunde gehen ins lokale Gate, nicht in eine zweite bezahlte
+          // Generierung. Budget, Kontingent und Modell bleiben unverändert.
+          repair: false,
+          // Der historische Diagnosehook kennt neben dem Bewertungsobjekt die
+          // Lesertextregeln; repair:false sperrt seine bezahlte Nachlieferung.
           // Die Belege der Antwort sind Verweise (evidence_id) auf die
           // Textstellen, die der Auftrag mitgeliefert hat. Aufgelöst werden sie
           // erst nach dem Aufruf - die Prüffunktion der Nachlieferung lief also
