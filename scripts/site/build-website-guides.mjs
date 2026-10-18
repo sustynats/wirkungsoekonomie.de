@@ -6,12 +6,14 @@ import {injectGuide, validateGuide} from '../lib/website-guides.mjs';
 const root = process.cwd();
 const flag = process.argv.indexOf('--artifact');
 const target = flag === -1 ? root : path.resolve(process.argv[flag + 1] || '_site');
+const pageFilter = process.argv.find(arg => arg.startsWith('--page='))?.slice(7);
 const data = JSON.parse(fs.readFileSync('content/site/website-guides.json', 'utf8'));
 const ids = new Set();
 let count = 0;
 for (const guide of data.guides) {
   if (ids.has(guide.id)) throw Error('Duplicate website guide: ' + guide.id);
   ids.add(guide.id);
+  if (pageFilter && !guide.pages.includes(pageFilter)) continue;
   if (!validateGuide(guide)) continue;
   for (const asset of [guide.poster, guide.captions].filter(Boolean)) {
     if (!/^\/assets\/website-guides\/[a-z0-9.-]+$/.test(asset)) throw Error('Invalid guide support asset');
@@ -20,6 +22,7 @@ for (const guide of data.guides) {
     if (target !== root) { const dest = path.join(target, asset.slice(1)); fs.mkdirSync(path.dirname(dest), {recursive:true}); fs.copyFileSync(source, dest); }
   }
   for (const route of guide.pages) {
+    if (pageFilter && route !== pageFilter) continue;
     if (route.startsWith('/') || route.includes('..') || !route.endsWith('.html')) throw Error('Invalid guide page');
     const file = path.join(target, route);
     const html = fs.readFileSync(file, 'utf8');

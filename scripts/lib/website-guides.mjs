@@ -5,6 +5,7 @@ export function validateGuide(guide) {
   if (!guide.id || !/^[a-z0-9-]+$/.test(guide.id)) throw Error('Invalid guide id');
   if (guide.status !== 'ready') return false;
   if (guide.anchor && !/^[a-z][a-z0-9-]*$/.test(guide.anchor)) throw Error('Invalid guide anchor');
+  if (guide.legacyMedia && (guide.legacyMedia.anchor !== guide.anchor || !guide.legacyMedia.src?.startsWith('https://github.com/sustynats/wirkungsoekonomie.de/releases/download/'))) throw Error('Invalid legacy media replacement');
   for (const check of checks) if (guide.review?.[check] !== 'passed') throw Error(guide.id + ': missing ' + check + ' review');
   if (!(guide.seconds >= 60 && guide.seconds <= 90) && guide.format === 'overview') throw Error(guide.id + ': overview must last 60-90 seconds');
   if (!(Number.isFinite(guide.seconds) && guide.seconds > 0)) throw Error('Missing measured duration');
@@ -44,6 +45,15 @@ export function injectGuide(html, guide) {
   if (from !== -1) html = html.slice(0, from > 0 && html[from - 1] === '\n' ? from - 1 : from) + html.slice(to + end.length);
   const block = renderGuide(guide);
   if (!block) return html;
+  if (guide.legacyMedia) {
+    const old = guide.legacyMedia;
+    // Replace only the named former player. The versioned explainer/PDF generator stays intact.
+    const details = new RegExp('<details\\b[^>]*\\bid="' + old.anchor + '"[^>]*>[\\s\\S]*?</details>', 'g');
+    html = html.replace(details, previous => {
+      if (!previous.includes('src="' + old.src + '"')) throw Error('Unexpected media at legacy anchor: ' + old.anchor);
+      return '<p><a class="text-link" href="#' + e(guide.anchor) + '">' + e(old.label) + '</a></p>';
+    });
+  }
   const main = /<main\b[^>]*>/.exec(html);
   if (!main) throw Error('Guide target has no main element');
   const mainEnd = html.indexOf('</main>', main.index);
