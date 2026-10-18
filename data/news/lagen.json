@@ -1,7 +1,117 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-18T10:00:00.000Z",
+  "updated_at": "2026-10-18T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-18-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-18",
+      "window_from": "2026-10-18T10:00:00.000Z",
+      "window_to": "2026-10-18T16:00:00.000Z",
+      "stand": "2026-10-18T16:00:00.000Z",
+      "headline": "Das sind die 11 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 11,
+        "neu": 10,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-7035efc77944ea73",
+          "slug": "grune-banaszak-rot-grun-rot-braucht-klare-absprachen-vor-start-44ea73",
+          "title": "Laut ZDFheute fordert Banaszak klare Absprachen vor Koalitionsgesprächen",
+          "state": "neu",
+          "at": "2026-10-18T15:57:25.417Z",
+          "score": 8.4928
+        },
+        {
+          "story_id": "wt-bac40ab0f2a96a66",
+          "slug": "grossbrand-in-lehesten-500-000-euro-schaden-wohnhaus-evakuiert-a96a66",
+          "title": "Laut MDR: Großbrand in Lehesten zerstört Maschinenhalle, Wohnhaus evakuiert",
+          "state": "neu",
+          "at": "2026-10-18T15:19:30.631Z",
+          "score": 5.8875
+        },
+        {
+          "story_id": "wt-7d2d5761df9f3147",
+          "slug": "kriminalitat-messerangriff-in-unterkunft-60-jahriger-schwer-verletzt-9f3147",
+          "title": "Laut stern: 60-Jähriger bei Messerangriff in Kamener Unterkunft schwer verletzt",
+          "state": "neu",
+          "at": "2026-10-18T14:50:10.442Z",
+          "score": 5.806
+        },
+        {
+          "story_id": "wt-3ce400e46883f80c",
+          "slug": "sicherheitsvorfall-fahrzeug-durchbricht-zaun-am-flughafen-leipzig-halle-83f80c",
+          "title": "Laut stern: Nächtlicher Vorfall am Flughafen Leipzig/Halle: Fahrzeug soll Zaun durchbrochen haben",
+          "state": "neu",
+          "at": "2026-10-18T13:44:00.558Z",
+          "score": 5.9894
+        },
+        {
+          "story_id": "wt-428da1fc1a3717fa",
+          "slug": "zaun-an-leipziger-flughafen-beschadigt-polizei-sucht-ursache-3717fa",
+          "title": "Laut Polizei: Fahrzeug beschädigt wahrscheinlich den Zaun am Leipziger Flughafen",
+          "state": "neu",
+          "at": "2026-10-18T13:43:10.275Z",
+          "score": 3.8844
+        },
+        {
+          "story_id": "wt-6243bba9f0d47122",
+          "slug": "wir-brauchen-zeit-zum-abwagen-rubio-verteidigt-aussetzung-neuer-sanktionen-gegen-russlan-d47122",
+          "title": "Laut Tagesspiegel: Rubio verteidigt Aussetzung neuer Sanktionen gegen Russland",
+          "state": "neu",
+          "at": "2026-10-18T12:43:32.136Z",
+          "score": 5.4543
+        },
+        {
+          "story_id": "wt-08bdfc8f10adf883",
+          "slug": "sachsen-anhalt-kirchner-will-afd-bsw-zusammenarbeit-schriftlich-regeln-adf883",
+          "title": "Laut stern: Kirchner will AfD-BSW-Zusammenarbeit schriftlich regeln",
+          "state": "neu",
+          "at": "2026-10-18T12:24:10.218Z",
+          "score": 5.4005
+        },
+        {
+          "story_id": "wt-c40c82d4edfed764",
+          "slug": "afd-fraktionschef-kirchner-will-zusammenarbeit-mit-bsw-schriftlich-festhalten-fed764",
+          "title": "AfD-Fraktionschef Kirchner will laut MDR Zusammenarbeit mit BSW schriftlich festhalten",
+          "state": "neu",
+          "at": "2026-10-18T12:23:08.354Z",
+          "score": 5.8976
+        },
+        {
+          "story_id": "wt-78fd011c11ce0c5f",
+          "slug": "koalition-spd-chef-klingbeil-fordert-von-seiner-partei-bekenntnis-zum-regierungswillen-ce0c5f",
+          "title": "Laut Deutschlandfunk: Klingbeil fordert SPD zu Bekenntnis zum Regierungswillen auf",
+          "state": "neu",
+          "at": "2026-10-18T11:39:11.764Z",
+          "score": 3.2755
+        },
+        {
+          "story_id": "wt-a2802bb1a85d4460",
+          "slug": "ju-deutschlandtag-soder-fordert-brandmauer-nach-links-5d4460",
+          "title": "Laut Berichten: Söder fordert eine „Brandmauer nach links“",
+          "state": "neu",
+          "at": "2026-10-18T11:18:16.254Z",
+          "score": 5.8085
+        },
+        {
+          "story_id": "wt-a1befdd477739d7a",
+          "slug": "nordpiste-gesperrt-erneuter-zwischenfall-am-flughafen-leipzig-halle-betrieb-eingeschrank-739d7a",
+          "title": "Nordpiste am Flughafen Leipzig/Halle nach erneutem Zwischenfall gesperrt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-18T10:28:45.077Z",
+          "score": 4.8299
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-18T16:17:09.194Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-18-mittagslage",
       "slot": "mittagslage",
@@ -73,12 +183,7 @@
           "at": "2026-10-18T04:58:17.213Z",
           "score": 5.3591
         }
-      ],
-      "processing_status": {
-        "state": "processing_limited",
-        "checked_at": "2026-10-18T15:37:16.160Z",
-        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
-      }
+      ]
     },
     {
       "lage_id": "2026-10-18-morgenlage",
@@ -5367,87 +5472,6 @@
           "state": "neu",
           "at": "2026-09-18T16:11:53.840Z",
           "score": 9.2057
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-18-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-18",
-      "window_from": "2026-09-18T10:00:00.000Z",
-      "window_to": "2026-09-18T16:00:00.000Z",
-      "stand": "2026-09-18T16:00:00.000Z",
-      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 8,
-        "neu": 7,
-        "fortgeschrieben": 1
-      },
-      "entries": [
-        {
-          "story_id": "wt-2593bb5f1d0951a8",
-          "slug": "bei-wunstorf-abgesturzte-drohne-suche-nach-teilen-dauert-an-0951a8",
-          "title": "Laut Polizei dauert die Suche nach Teilen einer mutmaßlich abgestürzten Drohne bei Wunstorf an",
-          "state": "neu",
-          "at": "2026-09-18T15:56:41.631Z",
-          "score": 5.9908
-        },
-        {
-          "story_id": "wt-e0bb001050d68925",
-          "slug": "sprengstoffexperten-im-einsatz-explosion-auf-recyclinghof-mitarbeiter-schwer-verletzt-d68925",
-          "title": "Laut stern: Explosion auf Recyclinghof, Mitarbeiter schwer verletzt",
-          "state": "neu",
-          "at": "2026-09-18T15:40:22.893Z",
-          "score": 9.9455
-        },
-        {
-          "story_id": "wt-be0ebac4cfdc4b24",
-          "slug": "gewaltkriminalitat-17-schusse-in-adlershof-polizei-fahndet-weiter-nach-tatern-dc4b24",
-          "title": "Laut Tagesspiegel: 17 Schüsse in Adlershof, ein Opfer schwer verletzt",
-          "state": "neu",
-          "at": "2026-09-18T13:40:28.678Z",
-          "score": 5.8488
-        },
-        {
-          "story_id": "wt-8fce6e6793e05359",
-          "slug": "philippinen-banga-national-high-school-drei-tote-nach-schussen-an-schule-e05359",
-          "title": "Mindestens drei Tote bei Schüssen an Schule auf den Philippinen",
-          "state": "neu",
-          "at": "2026-09-18T13:27:10.744Z",
-          "score": 10.3252
-        },
-        {
-          "story_id": "wt-e5d9220bd864f8c8",
-          "slug": "explosion-auf-wertstoffhof-in-uberlingen-ein-mitarbeiter-schwer-verletzt-64f8c8",
-          "title": "Laut SWR: Explosion auf Wertstoffhof in Überlingen verletzt Mitarbeiter schwer",
-          "state": "neu",
-          "at": "2026-09-18T12:56:16.643Z",
-          "score": 9.9897
-        },
-        {
-          "story_id": "wt-450b6403101f043f",
-          "slug": "tater-radelte-davon-schusse-auf-meininger-markt-polizei-sucht-zeugen-1f043f",
-          "title": "Nach Angaben der Polizei: Schüsse auf Meininger Markt",
-          "state": "neu",
-          "at": "2026-09-18T11:53:55.097Z",
-          "score": 3.3164
-        },
-        {
-          "story_id": "wt-dc78e52bf1c1afb9",
-          "slug": "mindestens-drei-tote-bei-angriff-an-schule-c1afb9",
-          "title": "Mindestens drei Tote bei Schüssen an Schule auf den Philippinen",
-          "state": "neu",
-          "at": "2026-09-18T11:18:37.517Z",
-          "score": 7.7184
-        },
-        {
-          "story_id": "wt-f196694f5c601438",
-          "slug": "versuchter-totschlag-nach-messerangriff-in-dresden-anklage-gegen-36-jahrigen-601438",
-          "title": "Laut Staatsanwaltschaft: Anklage gegen 36-Jährigen nach Messerangriff in Dresden",
-          "state": "fortgeschrieben",
-          "at": "2026-09-18T10:56:05.882Z",
-          "score": 4.9058
         }
       ]
     }
