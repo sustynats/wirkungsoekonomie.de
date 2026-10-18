@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-18T04:54:58.322Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-18T05:11:27.365Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,39 @@
         "democracy": {
           "magnitude": 1,
           "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/kali-bergbau-minister-kali-abwasser-in-grube-bischofferode-einlagern-85b3ed/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/kali-bergbau-minister-kali-abwasser-in-grube-bischofferode-einlagern-85b3ed/",
+      "title": "Kali-Abwasser könnte laut Minister in Grube Bischofferode eingelagert werden",
+      "summary": "Ein thüringischer Minister schlägt laut Stern vor, Kali-Abwasser in der Grube Bischofferode einzulagern. Belegt sind weder eine Entscheidung noch technische oder ökologische Prüfungen.",
+      "date_published": "2026-10-18T03:30:04.000Z",
+      "date_modified": "2026-10-18T03:30:04.000Z",
+      "_woek_released_at": "2026-10-18T05:14:25.105Z",
+      "tags": [
+        "Klima",
+        "Arbeit",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 3,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
