@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {minimiseSensitivePollHtml} from '../polls/privacy.mjs';
 import {publicHtmlFiles} from '../lib/public-html.mjs';
 import {renderSiteFooter,renderFooterNewsletter,renderFormerFooterLinks,pageBase} from '../lib/site-shell.mjs';
@@ -32,7 +33,7 @@ export function normalizeSiteFooter(before,base='',localNavigation=''){
   return minimiseSensitivePollHtml(after);
 }
 
-if(process.argv[1] && path.resolve(process.argv[1])===new URL(import.meta.url).pathname){
+if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   const root=process.argv.includes('--artifact')?path.join(process.cwd(),'_site'):process.cwd();
   const prefixes=process.argv.slice(2).filter(arg=>arg.startsWith('--prefix=')).map(arg=>arg.slice(9));
   let changed=0;
