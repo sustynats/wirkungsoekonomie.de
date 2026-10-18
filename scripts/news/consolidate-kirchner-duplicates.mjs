@@ -7,13 +7,36 @@ const bindings = [
     slug: 'afd-fraktionschef-kirchner-will-zusammenarbeit-mit-bsw-schriftlich-festhalten-fed764',
     published_at: '2026-10-18T12:23:08.354Z',
     url: 'https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/zusammenarbeit,afd-bsw-164.html',
-    hash: '2e8cf6e54719dc14cd5a5f1688fd800254ec7f547359a0f2e8064bc19233c393' },
+    hash: '2e8cf6e54719dc14cd5a5f1688fd800254ec7f547359a0f2e8064bc19233c393',
+    capacity_input_hash: '8e0b2b4b57808a5b979fc101b523c251380ad617f7b059c2578dba9fa10df309' },
   { id: 'wt-08bdfc8f10adf883',
     slug: 'sachsen-anhalt-kirchner-will-afd-bsw-zusammenarbeit-schriftlich-regeln-adf883',
     published_at: '2026-10-18T12:24:10.218Z',
     url: 'https://www.stern.de/gesellschaft/regional/sachsen-anhalt/sachsen-anhalt--kirchner-will-afd-bsw-zusammenarbeit-schriftlich-regeln-38414802.html',
-    hash: '91a19ae2a2e5060e0c899eb68de0ebfdeccdfcd160c376fb6667655f85290f85' },
+    hash: '91a19ae2a2e5060e0c899eb68de0ebfdeccdfcd160c376fb6667655f85290f85',
+    capacity_input_hash: '049048be5ac8dcec6f6ca9855345185f952ddb2fb56d1ff2dc539d699386b3fc' },
 ];
+
+const empty = value => Array.isArray(value) && value.length === 0;
+const pendingKeys = new Set(['detected_at', 'content_hash', 'sources', 'reason', 'quality_errors',
+  'quality_retry_count', 'quality_retry_after', 'reassessment', 'fresh', 'consolidation', 'source_integrity']);
+
+function retainedCapacityHold(pending, binding, at) {
+  if (!pending) return true;
+  // The normal 18 October run added these exact unchanged-source capacity
+  // records while the PR was in CI. Retain them, including the canonical open
+  // review; never clear a hold, replace an answer or approve new evidence here.
+  return Object.keys(pending).every(key => pendingKeys.has(key))
+    && pending.detected_at === '2026-10-18T14:01:05.511Z' && Date.parse(at) >= Date.parse(pending.detected_at)
+    && pending.content_hash === binding.capacity_input_hash
+    && ['AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT'].includes(pending.reason)
+    && pending.sources?.length === 1 && pending.sources[0].url === binding.url
+    && pending.sources[0].content_hash === binding.hash
+    && pending.fresh === false && pending.reassessment === false && pending.consolidation === false
+    && empty(pending.quality_errors) && pending.quality_retry_count === 0 && pending.quality_retry_after === null
+    && pending.source_integrity?.status === 'verified' && pending.source_integrity.publication_status === 'eligible'
+    && empty(pending.source_integrity.issue_codes) && empty(pending.source_integrity.warning_codes);
+}
 
 export function consolidateKirchnerDuplicates(stories, at) {
   if (!Number.isFinite(Date.parse(at))) throw new Error('INVALID_CONSOLIDATION_TIME');
@@ -35,7 +58,7 @@ export function consolidateKirchnerDuplicates(stories, at) {
     && story.published_at === bindings[i].published_at && Date.parse(at) >= Date.parse(story.published_at)
     && story.sources?.length === 1 && story.sources[0].url === bindings[i].url
     && story.sources[0].content_hash === bindings[i].hash
-    && !story.pending_update && !story.retirement);
+    && retainedCapacityHold(story.pending_update, bindings[i], at) && !story.retirement);
   if (!matches || duplicate.living_file?.merged_story_ids?.length
     || canonical.living_file?.merged_story_ids?.includes(duplicate.story_id)) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };

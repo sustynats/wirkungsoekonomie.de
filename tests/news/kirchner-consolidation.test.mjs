@@ -30,6 +30,57 @@ function fixture() {
   }));
 }
 
+function capacityFixture() {
+  return fixture().map((story, i) => ({ ...story, pending_update: {
+    detected_at: '2026-10-18T14:01:05.511Z',
+    content_hash: ['8e0b2b4b57808a5b979fc101b523c251380ad617f7b059c2578dba9fa10df309',
+      '049048be5ac8dcec6f6ca9855345185f952ddb2fb56d1ff2dc539d699386b3fc'][i],
+    sources: structuredClone(story.sources), reason: 'AI_BUDGET_OR_BATCH_LIMIT',
+    quality_errors: [], quality_retry_count: 0, quality_retry_after: null,
+    reassessment: false, fresh: false, consolidation: false,
+    source_integrity: { status: 'verified', publication_status: 'eligible', issue_codes: [], warning_codes: [] },
+  } }));
+}
+
+test('the observed unchanged-source capacity holds survive listing repair byte-for-byte', () => {
+  for (const reason of ['AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT']) {
+    const pair = capacityFixture();
+    for (const story of pair) story.pending_update.reason = reason;
+    const before = structuredClone(pair);
+    assert.equal(consolidateKirchnerDuplicates(pair, '2026-10-18T16:00:00.000Z').status, 'applied');
+    for (const [i, record] of pair.entries()) for (const key of Object.keys(before[i])) {
+      if (key !== 'listed') assert.deepEqual(record[key], before[i][key], key);
+    }
+    assert.equal(pair[0].pending_update.reason, reason, 'canonical review is still open');
+    assert.equal(pair[1].pending_update.reason, reason, 'historical queue record is retained, not reset');
+    assert.equal(consolidateKirchnerDuplicates(pair, '2026-10-19T00:00:00.000Z').status, 'already_applied');
+  }
+});
+
+for (const mutate of [
+  p => { p[0].pending_update.content_hash = 'new-input'; },
+  p => { p[1].pending_update.sources[0].content_hash = 'new-source'; },
+  p => { p[0].pending_update.sources[0].url = 'https://example.org/new'; },
+  p => { p[1].pending_update.sources.push({ url: 'https://example.org/addition' }); },
+  p => { p[0].pending_update.reason = 'QUALITY_GATE_FAILED'; },
+  p => { p[1].pending_update.quality_errors = ['NEEDS_REVIEW']; },
+  p => { p[0].pending_update.quality_retry_count = 1; },
+  p => { p[1].pending_update.quality_retry_after = '2026-10-19T00:00:00.000Z'; },
+  p => { p[0].pending_update.fresh = true; },
+  p => { p[1].pending_update.reassessment = true; },
+  p => { p[0].pending_update.consolidation = true; },
+  p => { p[1].pending_update.impact_reassessment = true; },
+  p => { p[0].pending_update.detected_at = '2026-10-19T00:00:00.000Z'; },
+  p => { p[1].pending_update.source_integrity.status = 'hold'; },
+  p => { p[0].pending_update.source_integrity.publication_status = 'held'; },
+  p => { p[1].pending_update.source_integrity.issue_codes = ['UNKNOWN_SOURCE']; },
+  p => { p[0].pending_update.source_integrity.warning_codes = ['REVIEW']; },
+]) test('new or uncertain pending work still blocks consolidation without any partial mutation', () => {
+  const pair = capacityFixture(); mutate(pair); const before = structuredClone(pair);
+  assert.equal(consolidateKirchnerDuplicates(pair, '2026-10-18T16:00:00.000Z').status, 'held');
+  assert.deepEqual(pair, before);
+});
+
 test('the exact source-bound pair is listed once without rewriting either paid article', () => {
   for (const reversed of [false, true]) {
     const pair = fixture(), before = structuredClone(pair);
