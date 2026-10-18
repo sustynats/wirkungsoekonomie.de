@@ -12,6 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-18T19:36:10.766Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-18T19:36:10.766Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2870,11 +2878,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/spd-vorsitz-hubertus-heil-schliesst-kandidatur-nicht-aus-05e8af/": {
         "first_seen_at": "2026-10-18T19:21:38.048Z",
         "source_at": "2026-10-18T17:46:33.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kandidatur-moglich-bringt-sich-hubertus-heil-als-spd-chef-in-stellung-1902a7/": {
+        "first_seen_at": "2026-10-18T19:36:10.766Z",
+        "source_at": "2026-10-18T18:04:00.000Z"
       }
     },
-    "last_new_at": "2026-10-18T19:21:38.048Z",
-    "checked_at": "2026-10-18T19:21:38.048Z",
-    "last_current_new_at": "2026-10-18T19:21:38.048Z"
+    "last_new_at": "2026-10-18T19:36:10.766Z",
+    "checked_at": "2026-10-18T19:36:10.766Z",
+    "last_current_new_at": "2026-10-18T19:36:10.766Z"
   },
   "recovery_attempts": [
     {
