@@ -343,25 +343,40 @@ export function refreshUnpublishedDraftTitle(candidate) {
   return candidate;
 }
 
+// Keep receipts for older paid inputs too: source evidence can change A -> B -> A.
+// Seed from legacy ai_retry without rewriting or discarding that receipt.
+function paidRetryHistory(record) {
+  const receipts = new Map();
+  for (const attempt of [...(Array.isArray(record?.ai_retry_history) ? record.ai_retry_history : []), record?.ai_retry]) {
+    if (!attempt?.version || !attempt?.fingerprint) continue;
+    const key = JSON.stringify([attempt.version, attempt.fingerprint]);
+    const previous = receipts.get(key);
+    if (!previous || Number(attempt.retry_count || 0) >= Number(previous.retry_count || 0)) receipts.set(key, attempt);
+  }
+  return [...receipts.values()];
+}
+
 export function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const existing = candidate.existing_story;
-  const sameAttempt = existing?.ai_retry?.fingerprint === retryInputFingerprint(candidate)
-    && existing?.ai_retry?.version === AI_PROCESSING_VERSION;
+  const previousAttempt = paidRetryHistory(existing).find(attempt => attempt.fingerprint === retryInputFingerprint(candidate)
+    && attempt.version === AI_PROCESSING_VERSION);
   const previousQualityRetries = Number(existing?.pending_update?.quality_retry_count ?? existing?.quality_retry_count ?? 0);
   const retryableOutput = reason === "QUALITY_GATE_FAILED" || reason === "AI_OUTPUT_INVALID";
   const qualityRetryCount = previousQualityRetries + (retryableOutput ? 1 : 0);
-  const consecutiveRetries = (sameAttempt ? Number(existing.ai_retry.retry_count || 0) : 0) + (retryableOutput ? 1 : 0);
+  const consecutiveRetries = Number(previousAttempt?.retry_count || 0) + (retryableOutput ? 1 : 0);
   const retryDelayMinutes = consecutiveRetries <= 1 ? 15 : consecutiveRetries === 2 ? 30 : consecutiveRetries === 3 ? 60 : Math.min(720, 180 * (2 ** Math.min(2, consecutiveRetries - 4)));
   const qualityRetryAfter = retryableOutput ? new Date(Date.parse(now) + retryDelayMinutes * 60000).toISOString() : null;
   const aiRetry = retryableOutput ? {
     version: AI_PROCESSING_VERSION, fingerprint: retryInputFingerprint(candidate),
-    first_failed_at: sameAttempt ? existing.ai_retry.first_failed_at || existing.ai_retry.failed_at || now : now,
+    first_failed_at: previousAttempt?.first_failed_at || previousAttempt?.failed_at || now,
     failed_at: now, retry_after: qualityRetryAfter, retry_count: consecutiveRetries,
   } : existing?.ai_retry;
+  const history = paidRetryHistory({ ai_retry_history: paidRetryHistory(existing), ai_retry: aiRetry });
   if (existing?.published) {
     return {
       ...existing,
       ...(aiRetry ? { ai_retry: aiRetry } : {}),
+      ...(history.length ? { ai_retry_history: history } : {}),
       pending_update: {
         detected_at: existing.pending_update?.detected_at || now,
         content_hash: candidate.content_hash,
@@ -384,6 +399,7 @@ export function pendingRecord(candidate, reason, now, qualityErrors = []) {
   return {
     story_id: candidate.story_id,
     ...(aiRetry ? { ai_retry: aiRetry } : {}),
+    ...(history.length ? { ai_retry_history: history } : {}),
     slug: candidate.slug,
     title: candidate.title,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
@@ -776,9 +792,7 @@ export function lifoHorizonMilliseconds(env = process.env) {
 // formal unbrauchbare Antwort bleibt ein bezahlter Versuch und wird archiviert.
 // Ein neuer Zeitabschnitt erlaubt keine Ersatzgenerierung derselben Eingabe.
 export function paidAttemptsExhausted(candidate, limit = Number(process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT || 1)) {
-  const existing = candidate.existing_story;
-  const previous = existing?.ai_retry;
-  return Boolean(previous && previous.version === AI_PROCESSING_VERSION
+  return paidRetryHistory(candidate.existing_story).some(previous => previous.version === AI_PROCESSING_VERSION
     && previous.fingerprint === retryInputFingerprint(candidate)
     && Number(previous.retry_count || 0) >= Math.max(1, limit));
 }

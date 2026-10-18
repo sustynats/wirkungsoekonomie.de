@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { runWirkungsticker, paidAttemptsExhausted } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, paidAttemptsExhausted, pendingRecord } from '../../scripts/news/run.mjs';
 import { callOpenAiDirect } from '../../scripts/news/openai-transport.mjs';
 
 const now = '2026-10-18T06:00:00.000Z';
@@ -32,6 +32,37 @@ function fixture(published) {
     fetchFeedImpl: async () => ({ not_modified: true, final_url: source.feed_url }),
     fetchArticleImpl: async () => { throw new Error('No live network in this regression'); },
     aiBatchDelayImpl: async () => {} };
+}
+
+for (const published of [false, true]) for (const reason of ['AI_OUTPUT_INVALID', 'QUALITY_GATE_FAILED']) {
+  test(`a paid input stays exhausted after evidence changes away and back (${published ? 'published update' : 'first publication'}, ${reason})`, () => {
+    const original = fixture(published).storyStore.stories[0];
+    const firstInput = { ...original, existing_story: original, sources: original.pending_update?.sources || original.sources };
+    // A legacy record has only its most recent retry, with no history yet.
+    const first = pendingRecord(firstInput, reason, now);
+    const firstAttempt = structuredClone(first.ai_retry);
+    const legacy = structuredClone(first);
+    delete legacy.ai_retry_history;
+    const secondInput = { ...firstInput, existing_story: legacy,
+      sources: firstInput.sources.map(s => ({ ...s, summary: s.summary + ' Neue belegte Entwicklung B.' })) };
+    assert.equal(paidAttemptsExhausted(secondInput, 1), false, 'genuinely changed evidence remains eligible');
+    const second = pendingRecord(secondInput, reason, '2026-10-18T08:00:00.000Z');
+    assert.notEqual(second.ai_retry.fingerprint, firstAttempt.fingerprint);
+    // Simulate persistence and an unrelated free capacity hold before returning to A.
+    const persisted = JSON.parse(JSON.stringify(pendingRecord({ ...secondInput, existing_story: second },
+      'AI_BUDGET_OR_BATCH_LIMIT', '2026-10-18T10:00:00.000Z')));
+    assert.equal(paidAttemptsExhausted({ ...firstInput, existing_story: persisted }, 1), true,
+      'returning to an older paid input must not authorize a replacement');
+    assert.equal(paidAttemptsExhausted({ ...secondInput, existing_story: persisted }, 1), true);
+    assert.deepEqual(first.ai_retry, firstAttempt, 'the original receipt is not modified');
+    assert.deepEqual(persisted.ai_retry_history.find(a => a.fingerprint === firstAttempt.fingerprint), firstAttempt);
+    assert.equal(persisted.ai_retry_history.length, 2, 'free holds do not duplicate paid receipts');
+    assert.equal(paidAttemptsExhausted({ ...secondInput, existing_story: persisted,
+      sources: secondInput.sources.map(s => ({ ...s, summary: s.summary + ' Neue belegte Entwicklung C.' })) }, 1), false);
+    for (const key of ['published', 'published_at', 'current_version', 'versions', 'analysis', 'original_potential_assessment']) {
+      assert.deepEqual(persisted[key], original[key], `preserve ${key}`);
+    }
+  });
 }
 
 for (const published of [false, true]) test(`one paid output is held without a second generation (${published ? 'published update' : 'first publication'})`, async t => {
