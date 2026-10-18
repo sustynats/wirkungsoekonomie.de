@@ -1,7 +1,149 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-17T16:00:00.000Z",
+  "updated_at": "2026-10-18T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-18-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-18",
+      "window_from": "2026-10-17T16:00:00.000Z",
+      "window_to": "2026-10-18T04:00:00.000Z",
+      "stand": "2026-10-18T04:00:00.000Z",
+      "headline": "Das sind die 15 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 15,
+        "neu": 12,
+        "fortgeschrieben": 3
+      },
+      "entries": [
+        {
+          "story_id": "wt-802a803dcbf01094",
+          "slug": "kanada-tote-und-verletzte-bei-grossbrand-auf-kanadischer-militarbasis-f01094",
+          "title": "Laut Deutschlandfunk: Großbrand auf kanadischer Militärbasis fordert Tote und Verletzte",
+          "state": "neu",
+          "at": "2026-10-18T03:47:32.187Z",
+          "score": 7.9827
+        },
+        {
+          "story_id": "wt-f73e7af61223b5f4",
+          "slug": "slowakei-zweites-todesopfer-nach-messerangriff-an-schule-23b5f4",
+          "title": "Slowakei: Laut Bildungsminister stirbt zweites Opfer nach Messerangriff an Schule",
+          "state": "fortgeschrieben",
+          "at": "2026-10-18T02:40:07.616Z",
+          "score": 10.1391
+        },
+        {
+          "story_id": "wt-d8108b7c358363ba",
+          "slug": "regierungsbildung-rot-grun-rot-in-berlin-ruckt-naher-kritik-der-cdu-8363ba",
+          "title": "Rot-Grün-Rot in Berlin rückt näher – Koalitionsverhandlungen geplant",
+          "state": "neu",
+          "at": "2026-10-18T01:34:06.335Z",
+          "score": 5.7974
+        },
+        {
+          "story_id": "wt-0104537ca2ee621b",
+          "slug": "diesel-und-rohol-g7-geben-bis-zu-100-millionen-barrel-frei-ee621b",
+          "title": "Nach Angaben Macrons: G7 wollen bis zu 100 Millionen Barrel freigeben",
+          "state": "fortgeschrieben",
+          "at": "2026-10-18T00:31:50.809Z",
+          "score": 7.4609
+        },
+        {
+          "story_id": "wt-151b96fb2e15e4ed",
+          "slug": "ukraine-krieg-russische-hauptstadt-ziel-massiver-angriffe-selenskyj-satelliteninternet-w-15e4ed",
+          "title": "Laut Selenskyj: Starlink in der Ukraine weiter gedrosselt – Russland meldet Drohnenangriffe auf Moskau",
+          "state": "neu",
+          "at": "2026-10-17T23:19:51.561Z",
+          "score": 7.6109
+        },
+        {
+          "story_id": "wt-d2fbe3584eaf2016",
+          "slug": "israelische-siedler-greifen-im-westjordanland-europaische-diplomaten-an-af2016",
+          "title": "Israelische Siedler greifen im Westjordanland europäische Diplomaten an",
+          "state": "neu",
+          "at": "2026-10-17T22:03:57.781Z",
+          "score": 6.134
+        },
+        {
+          "story_id": "wt-ea76c75f558e43f6",
+          "slug": "aktuelles-zum-krieg-in-der-ukraine-8e43f6",
+          "title": "Laut ZDFheute: Trump setzt neue Russland-Sanktionen aus",
+          "state": "neu",
+          "at": "2026-10-17T20:52:33.493Z",
+          "score": 5.4063
+        },
+        {
+          "story_id": "wt-b6071c4bce1d9588",
+          "slug": "todlicher-messerangriff-in-seniorenheim-im-munsterland-1d9588",
+          "title": "Laut ZDFheute: Eine Tote und zwei Schwerverletzte nach Messerangriff in Seniorenheim",
+          "state": "neu",
+          "at": "2026-10-17T20:51:47.700Z",
+          "score": 7.9053
+        },
+        {
+          "story_id": "wt-6ac2210a9523c951",
+          "slug": "eisengiesserei-ueckermunde-widerstand-gegen-geplante-schliessung-23c951",
+          "title": "Eisengießerei Ueckermünde: Widerstand gegen geplante Schließung",
+          "state": "neu",
+          "at": "2026-10-17T20:11:43.835Z",
+          "score": 7.3496
+        },
+        {
+          "story_id": "wt-efa4d15d665c9f90",
+          "slug": "vorfall-in-nrw-angriff-in-seniorenheim-eine-tote-und-zwei-schwerverletzte-5c9f90",
+          "title": "Nach Medienberichten: Eine Tote und zwei Schwerverletzte nach Angriff in Seniorenheim in NRW",
+          "state": "neu",
+          "at": "2026-10-17T20:10:50.057Z",
+          "score": 9.3484
+        },
+        {
+          "story_id": "wt-49988d3de416801a",
+          "slug": "ukraine-krieg-behorden-ein-toter-bei-russischem-angriff-auf-cherson-16801a",
+          "title": "Laut Behörden: Ein Toter und 19 Verletzte bei russischem Angriff auf Cherson",
+          "state": "neu",
+          "at": "2026-10-17T19:50:52.229Z",
+          "score": 7.3207
+        },
+        {
+          "story_id": "wt-5915a5de3b5b6eb2",
+          "slug": "zehn-jahre-danach-basf-explosion-mit-funf-toten-5b6eb2",
+          "title": "Laut SWR Aktuell: Zehn Jahre nach der BASF-Explosion: Fünf Tote, zwölf Verletzte und neue Sicherheitsvorkehrungen",
+          "state": "neu",
+          "at": "2026-10-17T19:49:28.454Z",
+          "score": 9.3187
+        },
+        {
+          "story_id": "wt-4140f5479ec09fc6",
+          "slug": "geld-fur-pflege-von-grunflachen-und-spielplatzen-fehlt-c09fc6",
+          "title": "Laut NDR fehlt Bezirken Geld für die Pflege von Grünflächen und Spielplätzen",
+          "state": "neu",
+          "at": "2026-10-17T19:06:17.749Z",
+          "score": 7.2587
+        },
+        {
+          "story_id": "wt-26966ecdb8e20626",
+          "slug": "regierungsbildung-in-berlin-berliner-linke-uberrascht-von-aussetzung-der-sondierungen-e20626",
+          "title": "Berlin: Linke, Grüne und SPD wollen laut DPA aus Parteikreisen Koalitionsverhandlungen vorschlagen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-17T17:47:47.493Z",
+          "score": 4.8997
+        },
+        {
+          "story_id": "wt-14c42d2d62e85757",
+          "slug": "ukraine-news-selenskyj-kundigt-neue-angriffe-auf-russische-raffinerien-an-e85757",
+          "title": "Laut Selenskyj: Ukraine will Angriffe auf russische Raffinerien wieder aufnehmen",
+          "state": "neu",
+          "at": "2026-10-17T17:24:11.862Z",
+          "score": 9.1169
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-18T04:05:58.863Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-17-abendlage",
       "slot": "abendlage",
@@ -5333,111 +5475,6 @@
           "state": "neu",
           "at": "2026-09-18T04:55:52.084Z",
           "score": 5.1552
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-18-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-18",
-      "window_from": "2026-09-17T16:00:00.000Z",
-      "window_to": "2026-09-18T04:00:00.000Z",
-      "stand": "2026-09-18T04:00:00.000Z",
-      "headline": "Das sind die 11 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 11,
-        "neu": 10,
-        "fortgeschrieben": 1
-      },
-      "entries": [
-        {
-          "story_id": "wt-057722ef54ceaa10",
-          "slug": "weisses-haus-usa-weisen-uno-bericht-uber-mogliche-kriegsverbrechen-im-iran-zuruck-ceaa10",
-          "title": "USA weisen laut Deutschlandfunk UNO-Bericht zu möglichen Kriegsverbrechen im Iran zurück",
-          "state": "neu",
-          "at": "2026-09-18T00:23:55.501Z",
-          "score": 7.6999
-        },
-        {
-          "story_id": "wt-bc9d5aae223d144a",
-          "slug": "vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a",
-          "title": "Laut stern-Umfrage liegt SPD in Mecklenburg-Vorpommern knapp vor AfD",
-          "state": "neu",
-          "at": "2026-09-17T23:10:46.015Z",
-          "score": 4
-        },
-        {
-          "story_id": "wt-17183454da128b91",
-          "slug": "erneute-explosionen-in-frankfurt-17-jahriger-tatverdachtiger-festgenommen-128b91",
-          "title": "Laut hessenschau: Erneute Explosionen in Frankfurt, 17-jähriger Tatverdächtiger festgenommen",
-          "state": "neu",
-          "at": "2026-09-17T20:55:54.013Z",
-          "score": 9.411
-        },
-        {
-          "story_id": "wt-894c65ec59488061",
-          "slug": "bundeslander-einigung-auf-neuen-staatsvertrag-fur-die-digitale-medienwelt-488061",
-          "title": "Laut Deutschlandfunk: Länder-Rundfunkkommission beschließt Entwurf für neuen Staatsvertrag",
-          "state": "neu",
-          "at": "2026-09-17T20:10:19.343Z",
-          "score": 7.9917
-        },
-        {
-          "story_id": "wt-e28fbc8bc4621d07",
-          "slug": "bayerns-justizminister-eisenreich-tritt-zuruck-und-verlasst-politik-621d07",
-          "title": "Bayerns Justizminister Georg Eisenreich kündigt Rücktritt und Abschied aus der Politik an",
-          "state": "neu",
-          "at": "2026-09-17T19:56:06.877Z",
-          "score": 5.3279
-        },
-        {
-          "story_id": "wt-ab2596b44d22f190",
-          "slug": "pflege-in-der-krise-sachsen-will-mitreden-22f190",
-          "title": "Laut MDR will Sachsen bei der Pflegereform mitreden",
-          "state": "neu",
-          "at": "2026-09-17T19:39:41.184Z",
-          "score": 5.3051
-        },
-        {
-          "story_id": "wt-3e1270e788859189",
-          "slug": "lehrer-uberstunden-muss-arbeitszeit-zukunftig-erfasst-werden-859189",
-          "title": "Laut MDR: Bundesverwaltungsgericht urteilt zu Arbeitszeit von Lehrkräften",
-          "state": "neu",
-          "at": "2026-09-17T19:09:33.186Z",
-          "score": 5.2633
-        },
-        {
-          "story_id": "wt-9a23a552e50afd76",
-          "slug": "urteil-bundesverwaltungsgericht-kippt-ausgleich-fur-uberstunden-eines-rektors-0afd76",
-          "title": "Laut Deutschlandfunk: Bundesverwaltungsgericht hebt Überstundenausgleich für Rektor auf",
-          "state": "neu",
-          "at": "2026-09-17T18:55:21.864Z",
-          "score": 7.7855
-        },
-        {
-          "story_id": "wt-aa4c65bfac0e1b17",
-          "slug": "nach-wahlniederlage-schwedischer-ministerprasident-kristersson-erklart-rucktritt-0e1b17",
-          "title": "Nach Angaben des Deutschlandfunks: Schwedischer Ministerpräsident Kristersson kündigt Rücktritt an",
-          "state": "neu",
-          "at": "2026-09-17T18:39:05.973Z",
-          "score": 5.221
-        },
-        {
-          "story_id": "wt-cf7f064177001cb5",
-          "slug": "us-wirtschaft-us-notenbank-erhoht-erstmals-seit-juli-2023-wieder-leitzins-001cb5",
-          "title": "US-Notenbank erhöht Leitzins auf 3,75 bis 4,00 Prozent",
-          "state": "fortgeschrieben",
-          "at": "2026-09-17T17:04:51.390Z",
-          "score": 4.8401
-        },
-        {
-          "story_id": "wt-85695a3a0ab0befa",
-          "slug": "deutschland-und-kanada-investieren-millionen-in-ki-projekt-lawzero-b0befa",
-          "title": "Deutschland und Kanada fördern sicherheitsorientiertes KI-Projekt",
-          "state": "neu",
-          "at": "2026-09-17T16:56:31.648Z",
-          "score": 5.0785
         }
       ]
     }
