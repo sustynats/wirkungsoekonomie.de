@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-18T07:05:52.588Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-18T16:08:08.629Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ab259828f6839aea7751c292",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-18T16:34:30.271Z"
+    }
+  ],
   "dailyDate": "2026-10-18",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2862,11 +2863,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/grossbrand-in-lehesten-500-000-euro-schaden-wohnhaus-evakuiert-a96a66/": {
         "first_seen_at": "2026-10-18T15:51:31.019Z",
         "source_at": "2026-10-18T12:29:22.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/grune-banaszak-rot-grun-rot-braucht-klare-absprachen-vor-start-44ea73/": {
+        "first_seen_at": "2026-10-18T16:34:30.271Z",
+        "source_at": "2026-10-18T11:30:37.000Z"
       }
     },
-    "last_new_at": "2026-10-18T15:51:31.019Z",
-    "checked_at": "2026-10-18T16:08:08.629Z",
-    "last_current_new_at": "2026-10-18T15:51:31.019Z"
+    "last_new_at": "2026-10-18T16:34:30.271Z",
+    "checked_at": "2026-10-18T16:34:30.271Z",
+    "last_current_new_at": "2026-10-18T16:34:30.271Z"
   },
   "recovery_attempts": [
     {
