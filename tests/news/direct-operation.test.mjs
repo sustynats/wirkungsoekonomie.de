@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat, fieldFromFinding, combinedRepairFormat } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
-import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
+import { paidAttemptsExhausted, paidAttemptReceiptStatus, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
 import { syntheticPotentialAssessment, syntheticPotentialPath } from './fixtures/impact21.mjs';
@@ -132,8 +132,79 @@ test('a story with one exhausted paid attempt is not paid again for the same inp
   const candidate = { title: 'T', sources, existing_story: { current_version: 0, ai_retry: { version: AI_PROCESSING_VERSION, retry_count: 1, fingerprint: sha256(JSON.stringify({ title: 'T', published_version: 0, sources: sources.map(sourceReviewFingerprint).sort() })) } } };
   assert.equal(paidAttemptsExhausted(candidate, 1), true);
   assert.equal(paidAttemptsExhausted(candidate, 2), false);
-  assert.equal(paidAttemptsExhausted({ ...candidate, sources: [{ ...sources[0], content_hash: 'changed' }] }, 1), false);
+  const changed = { ...candidate, sources: [{ ...sources[0], content_hash: 'changed' }] };
+  // An unbound historical hash cannot prove which evidence was already paid.
+  assert.equal(paidAttemptsExhausted(changed, 1), true);
+  assert.equal(paidAttemptReceiptStatus(changed, 1), 'unverified_legacy_paid_input');
+  const before = structuredClone(candidate.existing_story);
+  const bound = pendingRecord(candidate, 'AI_ATTEMPT_LIMIT_REACHED', '2026-10-19T06:00:00.000Z');
+  assert.equal(paidAttemptsExhausted({ ...changed, existing_story: bound }, 1), false);
+  assert.equal(paidAttemptReceiptStatus({ ...changed, existing_story: bound }, 1), 'new_source_evidence');
+  assert.deepEqual(candidate.existing_story, before, 'binding must not mutate the original receipt');
+  assert.equal(bound.ai_retry.fingerprint, before.ai_retry.fingerprint);
+  assert.equal(bound.ai_retry.retry_count, before.ai_retry.retry_count);
+  assert.match(bound.ai_retry.evidence_fingerprint, /^[a-f0-9]{64}$/);
   assert.equal(paidAttemptsExhausted({ title: 'T', sources }, 1), false);
+});
+
+test('publisher clock changes cannot buy another answer for identical evidence', () => {
+  const candidate = { story_id: 'wt-clock', title: 'T', sources };
+  const existing = pendingRecord(candidate, 'AI_OUTPUT_INVALID', '2026-10-19T01:37:01.065Z', ['AI_PROVIDER_OUTPUT_INVALID']);
+  const incoming = { ...candidate, existing_story: existing, sources: sources.map(source => ({ ...source,
+    published_at: '2026-10-19T04:51:39.000Z', source_published_at: '2026-10-19T04:51:39.000Z', ingested_at: '2026-10-19T05:16:43.424Z' })) };
+  assert.equal(paidAttemptsExhausted(incoming, 1), true);
+  assert.equal(paidAttemptReceiptStatus(incoming, 1), 'same_paid_input');
+  assert.equal(paidAttemptsExhausted(JSON.parse(JSON.stringify(incoming)), 1), true, 'receipt survives durable storage');
+});
+
+test('unproved legacy clocks and unsupported evidence receipts fail closed without inventing a binding', () => {
+  const candidate = { story_id: 'wt-clock', title: 'T', sources };
+  const original = pendingRecord(candidate, 'QUALITY_GATE_FAILED', '2026-10-19T01:00:00.000Z', ['AI_SUMMARY_SENTENCE_COUNT']);
+  delete original.ai_retry.evidence_fingerprint;
+  delete original.ai_retry.evidence_fingerprint_version;
+  original.ai_retry_history = [structuredClone(original.ai_retry)];
+  const incoming = { ...candidate, existing_story: original,
+    sources: sources.map(source => ({ ...source, source_published_at: '2026-10-19T05:00:00.000Z' })) };
+  assert.equal(paidAttemptReceiptStatus(incoming, 1), 'unverified_legacy_paid_input');
+  const held = pendingRecord(incoming, 'AI_ATTEMPT_LIMIT_REACHED', '2026-10-19T06:00:00.000Z');
+  assert.deepEqual(held.ai_retry, original.ai_retry, 'do not backfill from a mismatching legacy input');
+  for (const receipt of [
+    { ...original.ai_retry, evidence_fingerprint_version: 'future-unknown', evidence_fingerprint: 'a'.repeat(64) },
+    { ...original.ai_retry, evidence_fingerprint_version: 'paid-input-evidence-1', evidence_fingerprint: 'malformed' },
+  ]) {
+    assert.equal(paidAttemptsExhausted({ ...incoming, existing_story: { ai_retry: receipt } }, 1), true);
+  }
+});
+
+test('bound paid evidence still distinguishes text, sources, provenance and published versions', () => {
+  const candidate = { story_id: 'wt-clock', title: 'T', sources };
+  const existing = pendingRecord(candidate, 'QUALITY_GATE_FAILED', '2026-10-19T01:00:00.000Z', ['AI_SUMMARY_SENTENCE_COUNT']);
+  for (const delta of [
+    { content_hash: 'changed' }, { summary: 'Ein materiell geänderter Bericht.' },
+    { title: 'Andere Quellenüberschrift' }, { url: 'https://example.org/another' },
+    { source_id: 'another' }, { source_role: 'primary_evidence' },
+    { primary_source: false }, { requires_corroboration: true },
+    { provenance: { origin: 'independent-source' } }, { research_metadata: { verified_evidence: 'new' } },
+  ]) {
+    assert.equal(paidAttemptsExhausted({ ...candidate, existing_story: existing,
+      sources: [{ ...sources[0], ...delta }] }, 1), false, JSON.stringify(delta));
+  }
+  assert.equal(paidAttemptsExhausted({ ...candidate, title: 'Neuer Gegenstand', existing_story: existing }, 1), false);
+  assert.equal(paidAttemptsExhausted({ ...candidate, existing_story: { ...existing, current_version: 1 } }, 1), false);
+});
+
+test('A to B to A retains every paid evidence receipt despite new publisher clocks and ordering', () => {
+  const a = { story_id: 'wt-clock', title: 'T', sources };
+  const paidA = pendingRecord(a, 'AI_OUTPUT_INVALID', '2026-10-19T01:00:00.000Z', ['AI_PROVIDER_OUTPUT_INVALID']);
+  const b = { ...a, sources: [{ ...sources[0], content_hash: 'B' }], existing_story: paidA };
+  assert.equal(paidAttemptsExhausted(b, 1), false);
+  const paidB = pendingRecord(b, 'QUALITY_GATE_FAILED', '2026-10-19T02:00:00.000Z', ['AI_SUMMARY_SENTENCE_COUNT']);
+  assert.equal(paidB.ai_retry_history.length, 2);
+  const back = { ...a, existing_story: paidB, sources: [{ ...sources[0], published_at: '2026-10-19T05:00:00.000Z' }] };
+  assert.equal(paidAttemptsExhausted(back, 1), true);
+  const held = pendingRecord(back, 'AI_ATTEMPT_LIMIT_REACHED', '2026-10-19T06:00:00.000Z');
+  assert.deepEqual(held.ai_retry_history, paidB.ai_retry_history);
+  assert.equal(paidAttemptsExhausted({ ...back, existing_story: held }, 1), true);
 });
 
 test('backlog retirement closes unpublished candidates and drops pending updates, keeping published texts', () => {
