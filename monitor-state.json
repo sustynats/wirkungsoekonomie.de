@@ -17,16 +17,21 @@
       "firstSeen": "2026-10-19T08:40:44.281Z",
       "active": true
     },
-    "publication": {
-      "firstSeen": "2026-10-19T08:40:44.281Z",
-      "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-19T08:40:44.281Z",
-      "active": true
+    "editorial-status": {
+      "firstSeen": "2026-10-19T09:05:55.088Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "b18bf4a8d48fd319db1bb518",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-19T09:05:55.088Z"
+    },
+    {
+      "id": "c462c1207780ad605435f4df",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-19T09:05:55.088Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2934,11 +2939,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/trump-verteidigt-aussetzen-von-sanktionen-gegen-russland-gegen-kritik-f14781/": {
         "first_seen_at": "2026-10-19T08:06:02.449Z",
         "source_at": "2026-10-18T23:07:25.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-trump-verteidigt-aussetzen-von-russland-sanktionen-will-moskau-am-verhandl-7c773a/": {
+        "first_seen_at": "2026-10-19T09:05:55.088Z",
+        "source_at": "2026-10-19T07:19:46.000Z"
       }
     },
-    "last_new_at": "2026-10-19T08:06:02.449Z",
-    "checked_at": "2026-10-19T08:51:03.117Z",
-    "last_current_new_at": "2026-10-19T08:06:02.449Z"
+    "last_new_at": "2026-10-19T09:05:55.088Z",
+    "checked_at": "2026-10-19T09:05:55.088Z",
+    "last_current_new_at": "2026-10-19T09:05:55.088Z"
   },
   "recovery_attempts": [
     {
