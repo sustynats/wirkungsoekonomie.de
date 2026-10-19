@@ -255,8 +255,10 @@ test('recovered ARD binding passes the unchanged importer and still requires edi
   job.input.input_hash = hash(job.input.request);
   const output = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash, processed_at: now(), preview: ardPreview() };
   assert.throws(() => validateEditorialDelivery(output, job.input, now()), /EDITORIAL_PREVIEW_EVENT_UNBOUND/);
+  assert.throws(() => validateEditorialDelivery(output, { original_input: job.input }, now()), /EDITORIAL_PREVIEW_EVENT_UNBOUND/);
   normalizeEditorialPreview(output.preview, { links: job.input.request.links });
   assert.doesNotThrow(() => validateEditorialDelivery(output, job.input, now()));
+  assert.doesNotThrow(() => validateEditorialDelivery(output, { original_input: job.input }, now()));
   const db = new DatabaseSync(':memory:'); db.exec('CREATE TABLE jobs (body TEXT NOT NULL)');
   db.prepare('INSERT INTO jobs VALUES (?)').run(JSON.stringify(job));
   const store = { db, get: () => job, put: next => db.prepare('UPDATE jobs SET body=?').run(JSON.stringify(next)) };

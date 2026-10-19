@@ -455,7 +455,7 @@ export function normalizeEditorialPreview(preview, { links = [], attachments = [
 // lokales „gültig“ darf nicht erst nach der Übergabe in correction_pending enden.
 export function validateEditorialDelivery(output, packet, at) {
   const validated = validateApiOutput(output, packet, at);
-  const requested = packet.request?.links || [];
+  const requested = (packet.original_input || packet).request?.links || [];
   if (validated.preview && requested.length
     && !validated.preview.sources.some(source => requested.includes(source.url))) throw Error('EDITORIAL_PREVIEW_EVENT_UNBOUND');
   if (validated.preview?.format !== 'news' && validated.preview
