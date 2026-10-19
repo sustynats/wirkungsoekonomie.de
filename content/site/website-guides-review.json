@@ -44,7 +44,10 @@
         "video": "1920x1080 H.264/AAC; vollständige Decodierung erfolgreich; eigene Website-Grafiken mit vier Zielgruppen.",
         "transcript": "Redaktionell geglätteter Text der tatsächlichen Schnittfolge, nicht das ursprünglich gewünschte Skript.",
         "listeningByTool": false
-      }
+      },
+      "status": "SUPERSEDED_AFTER_USER_CAST_CORRECTION",
+      "supersededBySha256": "87ba7983962bd1760bcede0ac34166208371e935ce57d3f51fc3483dcbb5b551",
+      "reason": "Nutzer meldete Jonas teilweise in beiden Parts; neue konkrete V5 ersetzt diese Fassung."
     },
     {
       "guide": "buerger-einstieg-kurz",
@@ -135,6 +138,52 @@
       "technicalReview": {
         "content": "Quellengebundene Kurzfassung aus veröffentlichten Primärtexten; bestätigte Audiodatei unverändert.",
         "transcript": "Redaktionell geglätteter Text der tatsächlichen Schnittfolge; keine Zuordnung ungeprüfter Sprecherwechsel.",
+        "listeningByTool": false
+      }
+    },
+    {
+      "guide": "website-rundgang",
+      "asset": "website-rundgang-v5.mp4",
+      "sha256": "87ba7983962bd1760bcede0ac34166208371e935ce57d3f51fc3483dcbb5b551",
+      "seconds": 75.85,
+      "humanReview": {
+        "date": "2026-10-19",
+        "scope": [
+          "Stimmen",
+          "Übergänge",
+          "Veröffentlichung"
+        ],
+        "answer": "Beide passen, veröffentlichen",
+        "question": "Startseitenfilm V5 (76 Sekunden) und Staat/Recht/Demokratie V4 (80 Sekunden): Passen bei beiden die Stimmen und Übergänge für die Veröffentlichung?",
+        "file": "website-rundgang-v5-entwurf.mp4"
+      },
+      "technicalReview": {
+        "content": "Tatsächliche Schnittfolge und vollständige Roh-/Endschnitt-ASR gegen veröffentlichte Primärtexte geprüft.",
+        "transcript": "Wortlaut der konkreten neuen Fassung; getrennte Sprecherbeiträge im Schnittplan.",
+        "cast": "Konkrete neue Fassung durch menschliches Hörurteil bestätigt. Keine gesprochenen Selbstvorstellungen.",
+        "listeningByTool": false
+      }
+    },
+    {
+      "guide": "staat-recht-demokratie-kurz",
+      "asset": "staat-recht-demokratie-kurz-v4.mp3",
+      "sha256": "a73520a2b8ec4c556531729333a2cd7a37c6d6b0322855837e7bf764e6b073aa",
+      "seconds": 79.79,
+      "humanReview": {
+        "date": "2026-10-19",
+        "scope": [
+          "Stimmen",
+          "Übergänge",
+          "Veröffentlichung"
+        ],
+        "answer": "Beide passen, veröffentlichen",
+        "question": "Startseitenfilm V5 (76 Sekunden) und Staat/Recht/Demokratie V4 (80 Sekunden): Passen bei beiden die Stimmen und Übergänge für die Veröffentlichung?",
+        "file": "staat-recht-demokratie-kurz-v4-entwurf.mp3"
+      },
+      "technicalReview": {
+        "content": "Tatsächliche Schnittfolge und vollständige Roh-/Endschnitt-ASR gegen veröffentlichte Primärtexte geprüft.",
+        "transcript": "Wortlaut der konkreten neuen Fassung; getrennte Sprecherbeiträge im Schnittplan.",
+        "cast": "Konkrete neue Fassung durch menschliches Hörurteil bestätigt. Keine gesprochenen Selbstvorstellungen.",
         "listeningByTool": false
       }
     }
