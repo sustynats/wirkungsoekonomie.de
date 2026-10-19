@@ -12,6 +12,18 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-19T15:00:28.229Z",
+      "active": false
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-19T15:00:28.229Z",
+      "active": false
+    },
+    "publication": {
+      "firstSeen": "2026-10-19T15:00:28.229Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2973,7 +2985,7 @@
       }
     },
     "last_new_at": "2026-10-19T14:21:19.805Z",
-    "checked_at": "2026-10-19T14:50:47.064Z",
+    "checked_at": "2026-10-19T15:00:28.229Z",
     "last_current_new_at": "2026-10-19T14:21:19.805Z"
   },
   "recovery_attempts": [
