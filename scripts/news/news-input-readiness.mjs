@@ -3,6 +3,15 @@ import { isProgrammeListing } from './programme-listing.mjs';
 
 export const NEWS_INPUT_READINESS_VERSION = '2026-09-14.1';
 const normalized = value => String(value || '').replace(/\s+/g, ' ').trim();
+const begin = '\nUNTRUSTED_SOURCE_DATA_BEGIN\n', end = '\nUNTRUSTED_SOURCE_DATA_END';
+
+function inputPackets(prompt) {
+  const start = prompt.indexOf(begin), finish = prompt.indexOf(end, start + begin.length);
+  if (start < 0 || finish < 0 || prompt.indexOf(begin, start + begin.length) >= 0) throw Error();
+  const packets = JSON.parse(prompt.slice(start + begin.length, finish));
+  if (!Array.isArray(packets) || !packets.length) throw Error();
+  return packets;
+}
 
 // Free input-completeness check, NOT factual/editorial approval. Check the
 // actual bounded model input, not a richer pre-truncation source. RSS can supply
@@ -12,11 +21,8 @@ export function newsInputReadiness(prompt) {
   const add = (code, source_id = null) => issues.push({ code, ...(source_id ? { source_id } : {}) });
   let packets;
   try {
-    const begin = '\nUNTRUSTED_SOURCE_DATA_BEGIN\n', end = '\nUNTRUSTED_SOURCE_DATA_END';
-    const start = prompt.indexOf(begin), finish = prompt.indexOf(end, start + begin.length);
-    if (start < 0 || finish < 0 || prompt.indexOf(begin, start + begin.length) >= 0) throw Error();
-    packets = JSON.parse(prompt.slice(start + begin.length, finish));
-    if (!Array.isArray(packets) || packets.length !== 1) throw Error();
+    packets = inputPackets(prompt);
+    if (packets.length !== 1) { packets = null; throw Error(); }
   } catch { add('NEWS_INPUT_PACKET_INVALID'); }
   let story, usableSources = 0;
   if (packets) try {
@@ -55,4 +61,21 @@ export function newsInputReadiness(prompt) {
   } catch { add('NEWS_INPUT_EVIDENCE_INVALID'); }
   return { version: NEWS_INPUT_READINESS_VERSION, status: issues.length ? 'NEEDS_PREPARATION' : 'READY_FOR_DRAFT',
     scope: 'input_completeness_not_editorial_approval', story_id: story?.story_id || null, usable_sources: usableSources, issues };
+}
+
+// Native requests can contain several events. Inspect each exact, already
+// bounded packet; do not rebuild it from richer source data or admit multiple
+// events through the single-event bridge gate. Dictionaries are packet-local.
+export function newsBatchInputReadiness(prompt) {
+  let stories;
+  try {
+    stories = inputPackets(prompt).map(packet => newsInputReadiness(`${begin}${JSON.stringify([packet])}${end}`));
+    const ids = stories.map(story => story.story_id);
+    if (ids.some(id => !id) || new Set(ids).size !== ids.length) throw Error();
+  } catch {
+    stories = [newsInputReadiness('invalid packet')];
+  }
+  return { version: NEWS_INPUT_READINESS_VERSION,
+    status: stories.every(story => story.status === 'READY_FOR_DRAFT') ? 'READY_FOR_DRAFT' : 'NEEDS_PREPARATION',
+    scope: 'input_completeness_not_editorial_approval', stories };
 }

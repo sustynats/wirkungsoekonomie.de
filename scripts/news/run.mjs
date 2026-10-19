@@ -1077,7 +1077,7 @@ function sanitizeError(error) {
   // Preserve only exact transport-normalized billing codes as well: masking
   // them would disable the existing stop-after-first-refusal branch below.
   // Provider messages, arbitrary suffixes and credentials remain redacted.
-  if (OUTPUT_FORMAT_ERRORS.has(message) || PROVIDER_BILLING_ERRORS.has(message)) return message;
+  if (OUTPUT_FORMAT_ERRORS.has(message) || PROVIDER_BILLING_ERRORS.has(message) || message === 'NEWS_INPUT_NEEDS_PREPARATION') return message;
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
 }
 
@@ -2043,6 +2043,26 @@ export async function runWirkungsticker(options = {}) {
           }
         }
         const reason = sanitizeError(error);
+        if (reason === 'NEWS_INPUT_NEEDS_PREPARATION' && error?.requestAttempts === 0 && error?.providerNotCalled === true) {
+          const preparations = error.newsPreparation?.stories || [];
+          const unbound = !preparations.length || preparations.some(preparation => !preparation.story_id);
+          for (const candidate of batch) {
+            const preparation = preparations.find(item => item.story_id === candidate.story_id);
+            if (unbound || !preparation || preparation.status !== 'READY_FOR_DRAFT') {
+              const issues = preparation?.issues?.length ? preparation.issues : [{ code: 'NEWS_INPUT_PACKET_INVALID' }];
+              (report.news_preparation_holds ||= []).push({ ...preparation, story_id: candidate.story_id, issues });
+              byId.set(candidate.story_id, pendingRecord(candidate, reason, now, issues.map(issue => issue.code)));
+              newsroom.decisions.push({ at: now, story_id: candidate.story_id, decision: 'needs_source_preparation', issues });
+            } else {
+              // One incomplete event refuses the whole provider request. A
+              // complete neighbour remains normally retryable, not rejected.
+              byId.set(candidate.story_id, pendingRecord(candidate, 'AI_BUDGET_OR_BATCH_LIMIT', now));
+              report.quality_holds.push({ story_id: candidate.story_id, reason: 'AI_BUDGET_OR_BATCH_LIMIT' });
+              bumpCandidateFunnel(sourceFunnel, candidate, 'capacity_deferred');
+            }
+          }
+          continue;
+        }
         if (reason === "AI_INPUT_TOO_LARGE" && error?.requestAttempts === 0) {
           for (const candidate of batch) {
             bumpCandidateFunnel(sourceFunnel, candidate, "technical_retries");
