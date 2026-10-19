@@ -1,11 +1,43 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-19T17:06:27.415Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-19T17:39:22.058Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/dreier-koalition-in-mv-plant-klima-check-fur-neue-gesetze-4c530e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/dreier-koalition-in-mv-plant-klima-check-fur-neue-gesetze-4c530e/",
+      "title": "Laut NDR: Dreier-Koalition in MV plant Klima-Check für neue Gesetze",
+      "summary": "SPD, Linke und Grüne planen laut NDR in Mecklenburg-Vorpommern einen Klima-Check für neue Gesetze und Verordnungen. Wie verbindlich das Instrument wird und welche Folgen es entfalten kann, ist noch offen.",
+      "date_published": "2026-10-19T16:30:24.000Z",
+      "date_modified": "2026-10-19T16:30:24.000Z",
+      "_woek_released_at": "2026-10-19T17:46:48.747Z",
+      "tags": [
+        "Klima",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/polizei-ermittelt-schon-wieder-schusse-auf-leeres-gebaude-in-ostwestfalen-f5462d/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/polizei-ermittelt-schon-wieder-schusse-auf-leeres-gebaude-in-ostwestfalen-f5462d/",
@@ -466,37 +498,6 @@
       }
     },
     {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/anschlag-auf-doner-imbiss-in-hofheim-glasturen-und-fenster-zerstort-fa80c8/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/anschlag-auf-doner-imbiss-in-hofheim-glasturen-und-fenster-zerstort-fa80c8/",
-      "title": "Explosion beschädigt Döner-Imbiss in Hofheim",
-      "summary": "Eine Explosion hat in Hofheim einen Döner-Imbiss schwer beschädigt; laut Polizei wurde niemand verletzt. Ob die Tat mit früheren Explosionen zusammenhängt, ist offen.",
-      "date_published": "2026-10-19T08:09:50.000Z",
-      "date_modified": "2026-10-19T08:09:50.000Z",
-      "_woek_released_at": "2026-10-19T10:01:38.056Z",
-      "tags": [
-        "Gesundheit"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": true,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 2,
-          "direction": "negative",
-          "status": "observed"
-        },
-        "planet": {
-          "magnitude": 1,
-          "direction": "negative",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 1,
-          "direction": "open",
-          "status": "potential"
-        }
-      }
-    },
-    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/bericht-klingbeils-etat-planung-verstosst-gegen-deutsche-stabilitatsvorgaben-94b3db/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/bericht-klingbeils-etat-planung-verstosst-gegen-deutsche-stabilitatsvorgaben-94b3db/",
       "title": "Bericht: Klingbeils Etat-Planung verstößt laut einem Zeitungsbericht gegen Stabilitätsvorgaben",
@@ -717,6 +718,38 @@
         "democracy": {
           "magnitude": 2,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/berliner-spd-fur-koalitionsgesprache-mit-linkspartei-und-grunen-13b5c5/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/berliner-spd-fur-koalitionsgesprache-mit-linkspartei-und-grunen-13b5c5/",
+      "title": "Laut Tagesschau: Berliner SPD stimmt Koalitionsgesprächen mit Linken und Grünen zu",
+      "summary": "Die Berliner SPD unterstützt laut Tagesschau Koalitionsgespräche mit Linken und Grünen. Die Grünen müssen über den Gesprächsbeginn noch entscheiden.",
+      "date_published": "2026-10-19T02:32:15.000Z",
+      "date_modified": "2026-10-19T02:32:15.000Z",
+      "_woek_released_at": "2026-10-19T17:45:43.243Z",
+      "tags": [
+        "Politik",
+        "Demokratie"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         }
       }
