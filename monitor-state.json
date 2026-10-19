@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-19T08:40:44.281Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "10d1a80140fef88381dacbd7",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-19T14:21:19.805Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2970,11 +2971,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-wochenlanger-hangepartie-zentrumschefin-soll-regierung-in-schweden-bilden-5d6456/": {
         "first_seen_at": "2026-10-19T14:06:24.309Z",
         "source_at": "2026-10-19T13:03:56.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/rekordpreise-fur-energie-bundesbank-rechnet-mit-hoher-inflationsrate-bis-ins-nachste-jah-bcf98e/": {
+        "first_seen_at": "2026-10-19T14:21:19.805Z",
+        "source_at": "2026-10-19T13:29:01.000Z"
       }
     },
-    "last_new_at": "2026-10-19T14:06:24.309Z",
-    "checked_at": "2026-10-19T14:06:24.309Z",
-    "last_current_new_at": "2026-10-19T14:06:24.309Z"
+    "last_new_at": "2026-10-19T14:21:19.805Z",
+    "checked_at": "2026-10-19T14:21:19.805Z",
+    "last_current_new_at": "2026-10-19T14:21:19.805Z"
   },
   "recovery_attempts": [
     {
