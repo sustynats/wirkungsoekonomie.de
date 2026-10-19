@@ -1,6 +1,13 @@
 import {escapeHtml as e} from './explainer-components.mjs';
 
 const checks = ['content', 'audio', 'cast', 'duration', 'transcript'];
+const primarySourceHosts = new Set(['wirkungsoekonomie.de', 'institut.wirkungsoekonomie.de', 'www.deutsche-rentenversicherung.de', 'www.gesetze-im-internet.de']);
+function publishedPrimarySource(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && !url.username && !url.password && !url.port && primarySourceHosts.has(url.hostname);
+  } catch { return false; }
+}
 export function validateGuide(guide) {
   if (!guide.id || !/^[a-z0-9-]+$/.test(guide.id)) throw Error('Invalid guide id');
   if (guide.status !== 'ready') return false;
@@ -13,8 +20,8 @@ export function validateGuide(guide) {
   if (guide.kind === 'video' && (!/^\/assets\/website-guides\/[a-z0-9-]+\.(png|svg|webp)$/.test(guide.poster) || !/^\/assets\/website-guides\/[a-z0-9-]+\.vtt$/.test(guide.captions))) throw Error('Video requires a local poster and captions');
   if (!guide.transcript?.length || !guide.sources?.length) throw Error('Missing transcript or sources');
   for (const turn of guide.transcript) if ((turn.speaker && !['Mara', 'Jonas'].includes(turn.speaker)) || !turn.text?.trim()) throw Error('Invalid speaker or empty turn');
-  for (const source of guide.sources) if (!/^https:\/\/wirkungsoekonomie\.de\//.test(source.url)) throw Error('Use published primary sources');
-  for (const link of guide.links || []) if (!/^\/(?!\/)[a-z0-9/._#-]*$/i.test(link.href)) throw Error('Invalid local next link');
+  for (const source of guide.sources) if (!publishedPrimarySource(source.url)) throw Error('Use published primary sources');
+  for (const link of guide.links || []) if (!/^\/(?!\/)[a-z0-9/._#-]*$/i.test(link.href) && link.href !== 'https://institut.wirkungsoekonomie.de/') throw Error('Invalid next link');
   return true;
 }
 

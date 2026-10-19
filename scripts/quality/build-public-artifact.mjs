@@ -532,8 +532,8 @@ function validateOfflineEnglishSurface() {
 function sanitizePublicDataString(value) {
   return String(value || "")
     .replace(/\b(\d+\.\d+)-live-reference\b/gi, "$1")
-    .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
-    .replace(/\/(?:assets|downloads|docs|content|public)\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
+    .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[?#][^"'\s<>]*)?/gi, "")
+    .replace(/\/(?:assets|downloads|docs|content|public)\/[^"'\s<>]+\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[?#][^"'\s<>]*)?/gi, "")
     .replace(/\b[\wÄÖÜäöüß.+() -]+\.(?:md|docx?|rtf)\b/giu, "")
     .replace(/\b(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|partially-delta-reviewed|needs-human-review|delta-reviewed)\b/gi, "")
     .replace(/\b(?:Live-Reference|Delta-Review|Changelog)\b/gi, "")
@@ -583,8 +583,10 @@ function sanitizePublicJsonValue(value) {
 }
 
 function stripPrivateDocumentLinks(content) {
+  // An extension prefix is not a workfile: .mdr hosts and .documents paths
+  // are ordinary sources. Keep actual document links blocked as before.
   return content.replace(
-    /<a\b([^>]*?)\shref=(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2([^>]*)>([\s\S]*?)<\/a>/gi,
+    /<a\b([^>]*?)\shref=(["'])[^"']*\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[^"']*)?\2([^>]*)>([\s\S]*?)<\/a>/gi,
     (match, before, quote, after, label) => `<span${before}${after}>${label}</span>`,
   );
 }
@@ -649,11 +651,11 @@ function normalizePublicArtifactLinksAndText() {
 
     if (ext === ".js") {
       content = content
-        .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?:[^"']*)?)\1/gi, (match, quote, value) => {
+        .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[^"']*)?)\1/gi, (match, quote, value) => {
           if (!/(?:^|\/|\\)(?:assets|downloads|docs|public|content|src|rang\d+|woek_|WOeK_|WÖk_|README|[0-9]{2}_)/.test(value)) return match;
           return `${quote}${quote}`;
         })
-        .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2/gi, "$1: \"\"");
+        .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[^"']*)?\2/gi, "$1: \"\"");
       if (content !== before) {
         fs.writeFileSync(file, content, "utf8");
         changed += 1;
@@ -678,18 +680,18 @@ function normalizePublicArtifactLinksAndText() {
         .replace(/Webfassung eines Arbeitspapiers der Wirkungsökonomie mit Originaldatei\./gi, "Öffentliche Webfassung eines Arbeitspapiers der Wirkungsökonomie.")
         .replace(/Webfassung aus der gelieferten Originaldatei\.[^<]*/gi, "Öffentliche Webfassung.")
         .replace(/Originaldatei/gi, "Ausgangsdokument")
-        .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?:[^"']*)?)\1/gi, (match, quote, value) => {
+        .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[^"']*)?)\1/gi, (match, quote, value) => {
           if (!/(?:^|\/|\\)(?:assets|downloads|docs|public|content|src|rang\d+|woek_|WOeK_|WÖk_|README|[0-9]{2}_)/.test(value)) return match;
           return `${quote}${quote}`;
         })
-        .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2/gi, "$1: \"\"")
-        .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""');
+        .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[^"']*)?\2/gi, "$1: \"\"")
+        .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[^"]*)?"/gi, '"$1": ""');
     }
 
     // Inline application code must not be treated as prose: the generic
     // workfile scrubber would misread document.documentElement as a .doc filename.
     if (ext !== ".js" && relative !== "werkzeuge/wirkungswahl-kompass/index.html") {
-      content = content.replace(/(?:^|[\s"'>(])[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)/giu, (match) => {
+      content = content.replace(/(?:^|[\s"'>(])[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)(?![a-z0-9_-])/giu, (match) => {
         const prefix = /^[\s"'>(]/u.test(match) ? match[0] : "";
         return `${prefix}Arbeitsdatei entfernt`;
       });
