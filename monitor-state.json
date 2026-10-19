@@ -17,16 +17,21 @@
       "firstSeen": "2026-10-19T19:05:55.706Z",
       "active": true
     },
-    "publication": {
-      "firstSeen": "2026-10-19T19:28:57.574Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-19T19:28:57.574Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-19T20:06:09.306Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f8bc2a7f26983b22bce42dba",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-19T20:06:09.306Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3010,11 +3015,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/berliner-spd-fur-koalitionsgesprache-mit-linkspartei-und-grunen-13b5c5/": {
         "first_seen_at": "2026-10-19T18:36:18.711Z",
         "source_at": "2026-10-19T02:32:15.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizei-15-jahriger-soll-anderen-teenager-angeschossen-haben-7d905c/": {
+        "first_seen_at": "2026-10-19T20:06:09.306Z",
+        "source_at": "2026-10-19T18:30:29.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ki-entwicklung-bundesregierung-vereinbart-zusammenarbeit-mit-us-chipentwickler-nvidia-1d7bdd/": {
+        "first_seen_at": "2026-10-19T20:06:09.306Z",
+        "source_at": "2026-10-19T18:27:00.000Z"
       }
     },
-    "last_new_at": "2026-10-19T18:36:18.711Z",
-    "checked_at": "2026-10-19T19:51:47.261Z",
-    "last_current_new_at": "2026-10-19T18:36:18.711Z"
+    "last_new_at": "2026-10-19T20:06:09.306Z",
+    "checked_at": "2026-10-19T20:06:09.306Z",
+    "last_current_new_at": "2026-10-19T20:06:09.306Z"
   },
   "recovery_attempts": [
     {
