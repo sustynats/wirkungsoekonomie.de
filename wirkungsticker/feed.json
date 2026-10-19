@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-19T06:44:04.354Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-19T07:00:48.993Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -195,6 +195,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/trump-verteidigt-aussetzen-von-sanktionen-gegen-russland-gegen-kritik-f14781/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/trump-verteidigt-aussetzen-von-sanktionen-gegen-russland-gegen-kritik-f14781/",
+      "title": "Trump verteidigt laut vorliegenden Berichten das Aussetzen von Sanktionen gegen Russland",
+      "summary": "Trump verteidigt das Aussetzen von Sanktionen gegen Russland mit laufenden Friedensverhandlungen. Welche Sanktionen betroffen sind und welche Folgen der Schritt hat, bleibt offen.",
+      "date_published": "2026-10-18T23:07:25.000Z",
+      "date_modified": "2026-10-18T23:07:25.000Z",
+      "_woek_released_at": "2026-10-19T07:07:24.430Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
