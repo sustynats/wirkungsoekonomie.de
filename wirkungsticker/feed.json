@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-19T19:33:51.092Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-19T20:17:58.427Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -157,6 +157,38 @@
         },
         "democracy": {
           "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/israelische-polizei-nimmt-nach-siedler-angriffen-zehn-verdachtige-fest-b424e8/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/israelische-polizei-nimmt-nach-siedler-angriffen-zehn-verdachtige-fest-b424e8/",
+      "title": "Laut israelischer Polizei: Zehn Verdächtige nach Angriffen im Westjordanland festgenommen",
+      "summary": "Die israelische Polizei meldet zehn Festnahmen nach berichteten Siedlerangriffen im Westjordanland. Identität, Tatvorwürfe und der Verfahrensstand der Verdächtigen sind offen.",
+      "date_published": "2026-10-19T14:19:50.000Z",
+      "date_modified": "2026-10-19T14:19:50.000Z",
+      "_woek_released_at": "2026-10-19T20:25:32.654Z",
+      "tags": [
+        "Wirtschaft",
+        "Europa"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         }
