@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-19T19:08:47.918Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-19T19:33:51.092Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -285,6 +285,40 @@
         "democracy": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/krieg-erneut-russische-angriffe-auf-energiesektor-550-000-haushalte-in-der-ukraine-ohne--9845bf/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/krieg-erneut-russische-angriffe-auf-energiesektor-550-000-haushalte-in-der-ukraine-ohne--9845bf/",
+      "title": "Erneute Angriffe auf ukrainische Energieanlagen – Haushalte ohne Strom",
+      "summary": "Erneute Angriffe trafen laut Deutschlandfunk den ukrainischen Energiesektor und weitere Infrastruktur. Nach ukrainischen Angaben sind etwa 550.000 Haushalte ohne Strom; Umfang und Dauer der Schäden bleiben offen.",
+      "date_published": "2026-10-19T11:10:39.000Z",
+      "date_modified": "2026-10-19T11:10:39.000Z",
+      "_woek_released_at": "2026-10-19T19:39:32.248Z",
+      "tags": [
+        "Energie",
+        "Geopolitik",
+        "Finanzen",
+        "Klima"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
