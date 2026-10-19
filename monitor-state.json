@@ -16,17 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-19T19:05:55.706Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-19T19:28:57.574Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-19T20:06:09.306Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6295d3b8e9c0f5c1702a0770",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-19T20:21:18.125Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3018,10 +3015,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ki-entwicklung-bundesregierung-vereinbart-zusammenarbeit-mit-us-chipentwickler-nvidia-1d7bdd/": {
         "first_seen_at": "2026-10-19T20:06:09.306Z",
         "source_at": "2026-10-19T18:27:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/krieg-erneut-russische-angriffe-auf-energiesektor-550-000-haushalte-in-der-ukraine-ohne--9845bf/": {
+        "first_seen_at": "2026-10-19T20:21:18.125Z",
+        "source_at": "2026-10-19T11:10:39.000Z"
       }
     },
-    "last_new_at": "2026-10-19T20:06:09.306Z",
-    "checked_at": "2026-10-19T20:06:09.306Z",
+    "last_new_at": "2026-10-19T20:21:18.125Z",
+    "checked_at": "2026-10-19T20:21:18.125Z",
     "last_current_new_at": "2026-10-19T20:06:09.306Z"
   },
   "recovery_attempts": [
