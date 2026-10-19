@@ -6,6 +6,57 @@ import os from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import vm from 'node:vm';
+
+// Exercise the actual artifact projection without running its full filesystem
+// build. Canonical news, paid answers and approved manuscripts are not inputs
+// to this in-memory, public-output-only fixture.
+function projectArtifactFiles(files) {
+ const source = fs.readFileSync(new URL('../../scripts/quality/build-public-artifact.mjs', import.meta.url), 'utf8');
+ const start = source.indexOf('function sanitizePublicDataString(');
+ const end = source.indexOf('function validateNoCorruptedHtmlAttributes(', start);
+ assert.ok(start > 0 && end > start);
+ const projected = new Map(Object.entries(files));
+ vm.runInNewContext(source.slice(start, end) + '\nnormalizePublicArtifactLinksAndText();', {
+  path, artifactDir: '/artifact', walkFiles: () => [...projected.keys()],
+  fs: {readFileSync: file => projected.get(file), writeFileSync: (file, text) => projected.set(file, text)},
+  toPosixRelative: file => file.slice('/artifact/'.length),
+  rewritePublicReleaseAssetReferences: text => text,
+  stripEditorialHtmlNotes: clean, stripAiTrackingParameters, console: {log() {}},
+ });
+ return Object.fromEntries(projected);
+}
+
+test('artifact preserves real MDR and docs source links and URL strings, not just reader labels', () => {
+ const urls = [
+  'https://www.mdr.de/nachrichten/deutschland/wirtschaft/upm-leuna-wald-holz-rodung,upm-104.html',
+  'https://docs.python.org/3/library/html.html',
+  'https://example.org/research.rtfm/report.html',
+ ];
+ for (const url of urls) {
+  const html = `<main><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">Originalquelle ansehen</a></main>`;
+  const json = JSON.stringify({source: url, title: 'Unveränderter Quellenbezug'});
+  const js = `const sourceUrl = "${url}";`;
+  const files = {'/artifact/index.html': html, '/artifact/data.json': json, '/artifact/app.js': js};
+  const output = projectArtifactFiles(files);
+  assert.equal(output['/artifact/index.html'], html, url);
+  assert.deepEqual(JSON.parse(output['/artifact/data.json']), JSON.parse(json), url);
+  assert.equal(output['/artifact/app.js'], js, url);
+  assert.deepEqual(projectArtifactFiles(output), output, 'idempotent');
+ }
+});
+
+test('artifact still blocks actual Markdown, Word and RTF links, including queries and fragments', () => {
+ for (const file of ['private.md', 'private.doc', 'private.docx', 'PRIVATE.RTF']) {
+  for (const href of [`/docs/${file}`, `../content/${file}?download=1#text`, `https://example.org/private/${file}#text`]) {
+   const html = `<a class="text-link" href="${href}"><strong>Arbeitsunterlage</strong></a><p>Öffentlicher Befund bleibt unverändert.</p>`;
+   const out = projectArtifactFiles({'/artifact/index.html': html})['/artifact/index.html'];
+   assert.equal(out, '<span class="text-link"><strong>Arbeitsunterlage</strong></span><p>Öffentlicher Befund bleibt unverändert.</p>');
+  }
+ }
+ const out = projectArtifactFiles({'/artifact/data.json': JSON.stringify({source: 'https://example.org/private/source.docx', title: 'Öffentlich', internalNote: 'privat'})});
+ assert.deepEqual(JSON.parse(out['/artifact/data.json']), {source: '', title: 'Öffentlich'});
+});
 
 test('tracking cleanup preserves question marks followed by HTML entities in all text contexts', () => {
  const html = '<p>&quot;Was hat sie getrieben?&quot; für zu klein. Warum?&#34; Wieso?&#x22; Wirklich?&rdquo; Frage?&amp;</p><script>const quote="Frage?&quot;";</script>';
