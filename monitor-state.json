@@ -16,6 +16,14 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-19T00:40:59.065Z",
       "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-19T01:05:59.379Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-19T01:05:59.379Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -2890,11 +2898,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-in-berlin-weimer-linkspartei-offnet-antisemitismus-tur-und-tor-e706dd/": {
         "first_seen_at": "2026-10-18T22:35:54.516Z",
         "source_at": "2026-10-18T20:40:43.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/angriffskrieg-drei-tote-und-stromausfalle-nach-russischen-angriffen-auf-die-ukraine-fd4f40/": {
+        "first_seen_at": "2026-10-19T01:05:59.379Z",
+        "source_at": "2026-10-19T00:09:48.000Z"
       }
     },
-    "last_new_at": "2026-10-18T22:35:54.516Z",
-    "checked_at": "2026-10-19T00:53:36.695Z",
-    "last_current_new_at": "2026-10-18T22:35:54.516Z"
+    "last_new_at": "2026-10-19T01:05:59.379Z",
+    "checked_at": "2026-10-19T01:05:59.379Z",
+    "last_current_new_at": "2026-10-19T01:05:59.379Z"
   },
   "recovery_attempts": [
     {
