@@ -3,6 +3,7 @@ import {renderSiteHeaderForSource} from '../lib/site-shell.mjs';
 
 import fs from "node:fs";
 import path from "node:path";
+import {execFileSync} from "node:child_process";
 
 await import("./verify-v4-public-master.mjs");
 
@@ -292,6 +293,9 @@ for (const [rel, content] of outputs) {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, content, "utf8");
 }
+// Preserve the reviewed website explanation when this standalone projector
+// regenerates the learning hub, using the same native guide build as releases.
+execFileSync(process.execPath, [path.join(ROOT, "scripts/site/build-website-guides.mjs"), "--page=lernen/index.html"], {cwd:ROOT, stdio:"inherit"});
 
 const sitemapPath = path.join(ROOT, "sitemap.xml");
 const sitemapUrls = [...outputs.keys()].map((route) => route.endsWith("index.html")
