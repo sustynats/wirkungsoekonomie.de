@@ -1,7 +1,120 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-19T04:00:00.000Z",
+  "updated_at": "2026-10-19T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-19-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-19",
+      "window_from": "2026-10-19T04:00:00.000Z",
+      "window_to": "2026-10-19T10:00:00.000Z",
+      "stand": "2026-10-19T10:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 12,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-68467ccec45f163d",
+          "slug": "upm-raffinerie-in-leuna-schadigt-das-holzbasierte-plastik-die-natur-5f163d",
+          "title": "UPM-Raffinerie in Leuna eröffnet – Streit über Holz als Kunststoffrohstoff",
+          "state": "neu",
+          "at": "2026-10-19T09:34:02.872Z",
+          "score": 7.9279
+        },
+        {
+          "story_id": "wt-57da610cef0737b6",
+          "slug": "israel-festnahmen-nach-angriff-von-siedlern-auf-journalisten-und-diplomaten-0737b6",
+          "title": "Laut DER SPIEGEL: Festnahmen nach Angriff von Siedlern auf Journalisten und Diplomaten",
+          "state": "neu",
+          "at": "2026-10-19T08:52:02.650Z",
+          "score": 9.8112
+        },
+        {
+          "story_id": "wt-3865f668a865bc7f",
+          "slug": "deutsche-konnen-sich-wieder-mehr-leisten-die-hohe-inflation-hat-dieses-wachstum-lange-ze-65bc7f",
+          "title": "Nach Daten eines Wirtschaftsinstituts übersteigt der Lohnzuwachs wieder die Teuerung",
+          "state": "neu",
+          "at": "2026-10-19T08:50:47.840Z",
+          "score": 5.8078
+        },
+        {
+          "story_id": "wt-e6f5bced9f7c773a",
+          "slug": "ukraine-krieg-trump-verteidigt-aussetzen-von-russland-sanktionen-will-moskau-am-verhandl-7c773a",
+          "title": "Laut Deutschlandfunk: Trump verteidigt Aussetzen von Russland-Sanktionen",
+          "state": "neu",
+          "at": "2026-10-19T07:54:51.732Z",
+          "score": 5.6524
+        },
+        {
+          "story_id": "wt-f88aac324194b3db",
+          "slug": "bericht-klingbeils-etat-planung-verstosst-gegen-deutsche-stabilitatsvorgaben-94b3db",
+          "title": "Bericht: Klingbeils Etat-Planung verstößt laut einem Zeitungsbericht gegen Stabilitätsvorgaben",
+          "state": "neu",
+          "at": "2026-10-19T07:34:06.734Z",
+          "score": 5.5948
+        },
+        {
+          "story_id": "wt-6345bdbaf4e8fd51",
+          "slug": "einsatz-explosion-in-donerimbiss-in-hofheim-e8fd51",
+          "title": "Explosion in Dönerimbiss in Hofheim – Polizei vermutet Vorsatz",
+          "state": "neu",
+          "at": "2026-10-19T07:33:00.805Z",
+          "score": 3.5917
+        },
+        {
+          "story_id": "wt-f166cf89aff14781",
+          "slug": "trump-verteidigt-aussetzen-von-sanktionen-gegen-russland-gegen-kritik-f14781",
+          "title": "Trump verteidigt laut vorliegenden Berichten das Aussetzen von Sanktionen gegen Russland",
+          "state": "neu",
+          "at": "2026-10-19T07:07:24.430Z",
+          "score": 7.5206
+        },
+        {
+          "story_id": "wt-00dbacd022975f86",
+          "slug": "frank-elderson-from-climate-and-nature-risks-to-economic-resilience-and-competitiveness-975f86",
+          "title": "EZB-Vertreter Elderson ordnet Klima- und Naturrisiken als makroökonomisches Thema ein",
+          "state": "neu",
+          "at": "2026-10-19T06:47:45.115Z",
+          "score": 7.466
+        },
+        {
+          "story_id": "wt-8de914ec7a34f058",
+          "slug": "unter-eu-durchschnitt-weniger-als-jede-dritte-fuhrungskraft-in-deutschland-ist-weiblich-34f058",
+          "title": "Laut Destatis: Weniger als jede dritte Führungskraft in Deutschland ist weiblich",
+          "state": "neu",
+          "at": "2026-10-19T06:28:52.503Z",
+          "score": 3.4135
+        },
+        {
+          "story_id": "wt-f4af19f082ead0c3",
+          "slug": "ukraine-u-bahn-station-in-kiew-bei-russischem-angriff-beschadigt-ead0c3",
+          "title": "Laut Deutschlandfunk: U-Bahn-Station in Kiew bei russischem Luftangriff getroffen",
+          "state": "neu",
+          "at": "2026-10-19T06:27:40.568Z",
+          "score": 9.4102
+        },
+        {
+          "story_id": "wt-b7e839d43a601807",
+          "slug": "die-juristische-presseschau-vom-17-bis-19-oktober-2026-strafbarkeit-von-online-challenge-601807",
+          "title": "Laut LTO: Bundesrat fordert härteres Vorgehen gegen gefährliche Online-Challenges",
+          "state": "neu",
+          "at": "2026-10-19T06:05:59.738Z",
+          "score": 5.35
+        },
+        {
+          "story_id": "wt-cf883f702ad84313",
+          "slug": "brazil-s-lula-bolsonaro-clash-in-bitter-debate-ahead-of-election-runoff-d84313",
+          "title": "Lula und Flávio Bolsonaro greifen sich in TV-Debatte vor Stichwahl an",
+          "state": "neu",
+          "at": "2026-10-19T05:22:24.552Z",
+          "score": 5.2289
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-19-morgenlage",
       "slot": "morgenlage",
@@ -5359,127 +5472,6 @@
           "state": "neu",
           "at": "2026-09-19T10:25:52.027Z",
           "score": 5.0719
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-19-mittagslage",
-      "slot": "mittagslage",
-      "label": "Mittagslage",
-      "date": "2026-09-19",
-      "window_from": "2026-09-19T04:00:00.000Z",
-      "window_to": "2026-09-19T10:00:00.000Z",
-      "stand": "2026-09-19T10:00:00.000Z",
-      "headline": "Das sind die 13 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 13,
-        "neu": 11,
-        "fortgeschrieben": 2
-      },
-      "entries": [
-        {
-          "story_id": "wt-799303ce581dfeb8",
-          "slug": "trump-setzt-neue-us-sanktionen-gegen-russland-in-kraft-1dfeb8",
-          "title": "Trump setzt neue US-Sanktionen gegen Russland in Kraft",
-          "state": "neu",
-          "at": "2026-09-19T09:55:13.686Z",
-          "score": 8
-        },
-        {
-          "story_id": "wt-f0ab6fbd584961da",
-          "slug": "hatte-fast-einen-krieg-ausgelost-us-truppen-bereiteten-offenbar-angriff-auf-schiff-aus-c-4961da",
-          "title": "US-Truppen bereiteten laut Bericht offenbar nach KI-Fehler Angriff auf Schiff aus China vor",
-          "state": "neu",
-          "at": "2026-09-19T09:42:47.538Z",
-          "score": 5.9522
-        },
-        {
-          "story_id": "wt-77beb51e3dbfc0b7",
-          "slug": "messerangriff-messerattacke-in-chemnitz-tatverdachtiger-weiter-fluchtig-bfc0b7",
-          "title": "Laut stern: 26-Jähriger in Chemnitz schwer verletzt, Verdächtiger weiter flüchtig",
-          "state": "neu",
-          "at": "2026-09-19T09:11:48.425Z",
-          "score": 5.8661
-        },
-        {
-          "story_id": "wt-bc9d5aae223d144a",
-          "slug": "vor-landtagswahl-in-mecklenburg-vorpommern-spd-schiebt-sich-in-umfrage-vor-afd-3d144a",
-          "title": "Laut stern-Umfrage liegt SPD in Mecklenburg-Vorpommern knapp vor AfD",
-          "state": "fortgeschrieben",
-          "at": "2026-09-19T08:41:58.651Z",
-          "score": 5.5333
-        },
-        {
-          "story_id": "wt-3b0b1dd2daa327ab",
-          "slug": "nach-ankundigung-von-donald-trump-cnn-journalisten-arbeiten-trotz-verbots-ab-sofort-weit-a327ab",
-          "title": "Laut DER SPIEGEL: CNN-Journalisten arbeiten trotz angekündigtem Zutrittsverbot weiter",
-          "state": "neu",
-          "at": "2026-09-19T08:08:25.265Z",
-          "score": 9.6901
-        },
-        {
-          "story_id": "wt-232754c767f45ee7",
-          "slug": "tankrabatt-und-preisdeckel-gegen-hohe-spritpreise-f45ee7",
-          "title": "Laut WDR: Tankrabatt und Preisdeckel sollen Autofahrer entlasten",
-          "state": "neu",
-          "at": "2026-09-19T07:53:22.616Z",
-          "score": 7.6483
-        },
-        {
-          "story_id": "wt-63f14f261e4520a6",
-          "slug": "angriff-mit-schusswaffe-totungsdelikt-in-dietzenbach-vierter-verdachtiger-gefasst-4520a6",
-          "title": "Laut Polizei: Vierter Tatverdächtiger nach tödlichen Schüssen in Dietzenbach vorläufig festgenommen",
-          "state": "neu",
-          "at": "2026-09-19T07:25:49.196Z",
-          "score": 3.5717
-        },
-        {
-          "story_id": "wt-e4f43c1731c0d920",
-          "slug": "vierte-festnahme-nach-todlichen-schussen-in-dietzenbach-c0d920",
-          "title": "Laut Staatsanwaltschaft: Vierter Verdächtiger nach tödlichen Schüssen in Dietzenbach festgenommen",
-          "state": "neu",
-          "at": "2026-09-19T06:37:46.175Z",
-          "score": 5.4382
-        },
-        {
-          "story_id": "wt-abe226f3ad34c006",
-          "slug": "ukraine-krieg-trump-unterzeichnet-paket-mit-sanktionen-gegen-russland-34c006",
-          "title": "Trump unterzeichnet US-Sanktionspaket gegen Russland",
-          "state": "neu",
-          "at": "2026-09-19T06:25:25.315Z",
-          "score": 5.4039
-        },
-        {
-          "story_id": "wt-c256eb221825bed0",
-          "slug": "washington-us-prasident-trump-verbannt-mehrere-medien-aus-dem-weissen-haus-25bed0",
-          "title": "Laut Deutschlandfunk: Trump untersagt CNN, MS NOW und Politico den Zugang zum Weißen Haus",
-          "state": "neu",
-          "at": "2026-09-19T06:12:33.035Z",
-          "score": 9.3682
-        },
-        {
-          "story_id": "wt-f8e9ba47320c307f",
-          "slug": "ukraine-krieg-usa-verhangen-neue-sanktionen-gegen-russland-selenskyj-dankt-trump-0c307f",
-          "title": "Laut Deutschlandfunk: Trump unterzeichnet neue Sanktionen gegen Russland",
-          "state": "neu",
-          "at": "2026-09-19T05:26:47.129Z",
-          "score": 5.2411
-        },
-        {
-          "story_id": "wt-45b402bd2485a3b0",
-          "slug": "angriff-auf-polizeiwache-in-pakistan-zahl-der-todesopfer-auf-31-gestiegen-85a3b0",
-          "title": "Laut Polizei: Bei Angriff auf Polizeiwache in Pakistan mindestens 31 Tote",
-          "state": "neu",
-          "at": "2026-09-19T05:12:04.226Z",
-          "score": 7.2002
-        },
-        {
-          "story_id": "wt-1e97ba2918206370",
-          "slug": "explosionen-mindestens-14-tote-bei-anschlag-mit-autobombe-in-pakistan-206370",
-          "title": "Laut Polizei mindestens 16 Tote bei Autobombenanschlag in Pakistan",
-          "state": "fortgeschrieben",
-          "at": "2026-09-19T04:56:05.726Z",
-          "score": 9.4058
         }
       ]
     }
