@@ -3,6 +3,7 @@
 // kebab shop, damaged entrance/windows and no reported injuries. This is
 // incident identity, not independent corroboration or a new factual review.
 import { sourceReviewFingerprint } from './evidence-packets.mjs';
+import { isDeepStrictEqual } from 'node:util';
 
 const bindings = [
   { id: 'wt-6345bdbaf4e8fd51', version: 2,
@@ -40,6 +41,35 @@ const routed = (canonical, duplicate) => canonical?.published && canonical.liste
   && duplicate.retirement.canonical_story_ids[0] === canonical.story_id
   && canonical.living_file?.merged_story_ids?.includes(duplicate.story_id);
 
+// A regular poll queued the already-published duplicate again while waiting for
+// capacity. Preserve that entire marker, never call it a completed review. Only
+// ingestion time may differ from the exact paid source; every real review,
+// changed datum, unknown instruction or failed gate still blocks this repair.
+const retainedDuplicatePendingInput = (story, at) => {
+  const pending = story.pending_update;
+  if (!pending || pending.reason !== 'AI_BUDGET_OR_BATCH_LIMIT'
+    || pending.content_hash !== story.content_hash
+    || !Number.isFinite(Date.parse(pending.detected_at)) || Date.parse(pending.detected_at) > Date.parse(at)
+    || pending.reassessment !== false || pending.fresh !== false || pending.consolidation !== false
+    || pending.impact_reassessment || pending.quality_retry_count !== 0 || pending.quality_retry_after !== null
+    || !Array.isArray(pending.quality_errors) || pending.quality_errors.length
+    || Object.keys(pending).some(key => !['detected_at', 'content_hash', 'sources', 'reason',
+      'quality_errors', 'quality_retry_count', 'quality_retry_after', 'reassessment', 'fresh',
+      'consolidation', 'impact_reassessment', 'source_integrity'].includes(key))) return false;
+  const integrity = pending.source_integrity;
+  if (integrity?.status !== 'verified' || integrity.publication_status !== 'eligible'
+    || !Array.isArray(integrity.issue_codes) || integrity.issue_codes.length
+    || !Array.isArray(integrity.warning_codes) || integrity.warning_codes.length
+    || !Number.isFinite(Date.parse(integrity.checked_at)) || Date.parse(integrity.checked_at) > Date.parse(at)
+    || !sourcesMatch(pending.sources, bindings[1])) return false;
+  const withoutIngestion = ({ ingested_at: _ingestedAt, ...source }) => source;
+  return pending.sources.every(source => {
+    const paid = story.sources.find(old => old.url === source.url);
+    return Number.isFinite(Date.parse(source.ingested_at)) && Date.parse(source.ingested_at) <= Date.parse(at)
+      && isDeepStrictEqual(withoutIngestion(source), withoutIngestion(paid));
+  });
+};
+
 export function consolidateHofheimDuplicates(stories, at) {
   if (!Number.isFinite(Date.parse(at))) throw Error('INVALID_CONSOLIDATION_TIME');
   const pair = bindings.map(binding => stories.find(story => story.story_id === binding.id));
@@ -50,7 +80,8 @@ export function consolidateHofheimDuplicates(stories, at) {
   const [canonical, duplicate] = pair;
   if (routed(canonical, duplicate)) return { status: 'already_applied', changes: [] };
   if (!pair.every((story, i) => editionMatches(story, bindings[i]) && story.listed !== false
-    && Date.parse(at) >= Date.parse(story.updated_at) && story.pending_update == null
+    && Date.parse(at) >= Date.parse(story.updated_at)
+    && (story.pending_update == null || (i === 1 && retainedDuplicatePendingInput(story, at)))
     && !story.retirement && !story.living_file)) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
   }
@@ -72,7 +103,8 @@ export function consolidateHofheimDuplicates(stories, at) {
 export function retainedHofheimPaidInput(candidate, stories) {
   const canonical = candidate.existing_story;
   if (candidate.story_id !== bindings[0].id || canonical?.story_id !== bindings[0].id
-    || !editionMatches(canonical, bindings[0]) || candidate.reassessment || candidate.impact_reassessment) return false;
+    || !editionMatches(canonical, bindings[0]) || candidate.reassessment || candidate.impact_reassessment
+    || candidate.followup_due || candidate.deepening_due || candidate.consolidation) return false;
   const duplicates = stories.filter(story => story.story_id === bindings[1].id);
   if (duplicates.length !== 1 || !editionMatches(duplicates[0], bindings[1]) || !routed(canonical, duplicates[0])) return false;
   const sources = candidate.sources || [];

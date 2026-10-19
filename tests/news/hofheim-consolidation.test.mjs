@@ -31,6 +31,66 @@ function fixture() {
   }));
 }
 
+function retainedPending(pair) {
+  pair[1].pending_update = { detected_at: '2026-10-19T14:00:55.224Z', content_hash: pair[1].content_hash,
+    sources: pair[1].sources.map(s => ({ ...s, ingested_at: '2026-10-19T14:10:00Z' })),
+    reason: 'AI_BUDGET_OR_BATCH_LIMIT', quality_errors: [], quality_retry_count: 0, quality_retry_after: null,
+    reassessment: false, fresh: false, consolidation: false,
+    source_integrity: { status: 'verified', publication_status: 'eligible', version: '1.2',
+      checked_at: '2026-10-19T14:10:00Z', fingerprint: 'synthetic-retained-input', issue_codes: [], warning_codes: [] } };
+  return pair;
+}
+
+test('only the exact duplicate capacity marker survives routing unchanged, never as a completed review', async () => {
+  const pair = retainedPending(fixture()), before = structuredClone(pair);
+  assert.equal(consolidateHofheimDuplicates(pair, at).status, 'applied');
+  for (const [i, s] of pair.entries()) for (const key of Object.keys(before[i])) {
+    if (key !== 'listed') assert.deepEqual(s[key], before[i][key], key);
+  }
+  let captured, calls = 0;
+  const report = await runWirkungsticker({ dryRun: true, now: at,
+    registry: { schema_version: '1.0', sources: [], policy: {} },
+    state: { source_status: {}, seen_items: {}, pending_story_ids: [], relevance_filter_version: '4.0' },
+    storyStore: { stories: pair }, usage: { runs: [] },
+    newsroom: { source_items: {}, events: {}, event_sources: [], discovery_candidates: [] },
+    budgetFx: { rate_date: '2026-10-16', rate_usd_per_eur: 1.16 },
+    callAiImpl: async () => { calls++; throw Error('No paid replacement'); },
+    fetchArticleImpl: async () => { throw Error('No live network'); }, captureState: x => { captured = x; } });
+  assert.equal(report.hofheim_duplicate_consolidation.status, 'already_applied');
+  assert.deepEqual(captured.storyStore.stories.find(s => s.story_id === duplicateId).pending_update, before[1].pending_update);
+  assert.equal(calls, 0);
+});
+
+test('real, failed, future, unknown and changed pending work still blocks both records atomically', () => {
+  for (const mutate of [
+    p => { p[0].pending_update = structuredClone(p[1].pending_update); },
+    p => { p[1].pending_update.content_hash = 'changed'; },
+    p => { p[1].pending_update.reason = 'QUALITY_GATE_FAILED'; },
+    p => { p[1].pending_update.reassessment = true; },
+    p => { p[1].pending_update.impact_reassessment = true; },
+    p => { p[1].pending_update.fresh = true; }, p => { p[1].pending_update.consolidation = true; },
+    p => { p[1].pending_update.quality_errors.push('review-needed'); },
+    p => { p[1].pending_update.quality_retry_count = 1; },
+    p => { p[1].pending_update.quality_retry_after = at; },
+    p => { p[1].pending_update.owner_instruction = 'synthetic-manual-review'; },
+    p => { p[1].pending_update.detected_at = '2026-10-20T00:00:00Z'; },
+    p => { p[1].pending_update.source_integrity.checked_at = '2026-10-20T00:00:00Z'; },
+    p => { p[1].pending_update.sources[0].ingested_at = '2026-10-20T00:00:00Z'; },
+    p => { p[1].pending_update.source_integrity.status = 'open'; },
+    p => { p[1].pending_update.source_integrity.publication_status = 'held'; },
+    p => { p[1].pending_update.source_integrity.issue_codes.push('changed'); },
+    p => { p[1].pending_update.source_integrity.warning_codes.push('changed'); },
+    ...['summary', 'title', 'content_hash', 'published_at', 'publisher', 'url', 'source_role'].map(key =>
+      p => { p[1].pending_update.sources[0][key] = 'changed'; }),
+    p => { p[1].pending_update.sources[0].provenance = { independence_established: true }; },
+    p => { p[1].pending_update.sources[0].article_excerpt = 'Additional evidence'; },
+    p => { p[1].pending_update.sources.push(structuredClone(p[1].pending_update.sources[0])); },
+  ]) {
+    const pair = retainedPending(fixture()); mutate(pair); const before = structuredClone(pair);
+    assert.equal(consolidateHofheimDuplicates(pair, at).status, 'held'); assert.deepEqual(pair, before);
+  }
+});
+
 test('the exact Hofheim V2/V1 pair is listed once, without changing any paid or historical field', () => {
   for (const reverse of [false, true]) {
     const pair = fixture(), before = structuredClone(pair);
@@ -91,6 +151,7 @@ test('the same retained paid source union never becomes a new paid assessment af
     c => { c.sources[2].content_hash = 'new'; }, c => { c.sources[2].url = 'https://example.org/new'; },
     c => { c.sources[2].provenance = { publisher_id: 'other' }; }, c => { c.sources.push({ url: 'https://example.org/addition' }); },
     c => { c.reassessment = true; }, c => { c.impact_reassessment = true; },
+    c => { c.followup_due = true; }, c => { c.deepening_due = true; }, c => { c.consolidation = true; },
   ]) { const changed = structuredClone(candidate); mutate(changed); assert.equal(retainedHofheimPaidInput(changed, pair), false); }
   assert.equal(retainedHofheimPaidInput({ ...candidate, sources: pair[0].sources }, pair), false);
   assert.equal(retainedHofheimPaidInput(candidate, [pair[0]]), false);
