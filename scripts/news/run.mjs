@@ -43,6 +43,7 @@ import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFil
 import { consolidateLeizenDuplicates } from "./migrate-leizen-duplicates.mjs";
 import { consolidateKirchnerDuplicates } from "./consolidate-kirchner-duplicates.mjs";
 import { consolidateKamenDuplicates } from "./consolidate-kamen-duplicates.mjs";
+import { consolidateTrumpSanctionsDuplicates, retainedSanctionsPaidInput } from './consolidate-trump-sanctions-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1411,6 +1412,12 @@ export async function runWirkungsticker(options = {}) {
   report.kamen_duplicate_consolidation = kamenConsolidation;
   report.living_file_merges.push(...kamenConsolidation.changes);
   report.retired_stories += kamenConsolidation.changes.length;
+  // A verified DLF URL change split one event into two paid publications.
+  // Keep both full texts; the archived document also remains a routing alias.
+  const sanctionsConsolidation = consolidateTrumpSanctionsDuplicates(storyStore.stories || [], now);
+  report.trump_sanctions_duplicate_consolidation = sanctionsConsolidation;
+  report.living_file_merges.push(...sanctionsConsolidation.changes);
+  report.retired_stories += sanctionsConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1596,6 +1603,13 @@ export async function runWirkungsticker(options = {}) {
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
+    if (retainedSanctionsPaidInput(candidate, storyStore.stories)) {
+      (report.retained_published_source_inputs ||= []).push({ story_id: candidate.story_id,
+        archived_story_id: 'wt-e6f5bced9f7c773a', reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
+        decision: 'retained_published_source_input', reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
+      return false; // Keep any pending review; never reset or regenerate it.
+    }
     if (eventAuditEnabled && unchangedRankingBackfill(candidate)) {
       const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
       byId.set(candidate.story_id, { ...preserved, review_checkpoint: { ...reviewCheckpoint(candidate, now, 'no_material_update'), reviewed_by: 'unchanged_published_evidence' } });
