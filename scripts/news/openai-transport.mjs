@@ -14,6 +14,7 @@ import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 import { evidenceGroups } from './newsroom.mjs';
 import { sourceNumberTokens } from './numeric-evidence.mjs';
+import { newsBatchInputReadiness } from './news-input-readiness.mjs';
 
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
 export const DEFAULT_NEWS_MODEL = 'gpt-5.4-mini';
@@ -626,6 +627,15 @@ export async function callOpenAiDirect(stories, options = {}) {
   // folgt genau ein Versuch im einfachen JSON-Modus, also das alte Verhalten.
   const wantSchema = options.schema !== false && process.env.WOEK_NEWS_ANALYSIS_SCHEMA !== 'false' && !options.prompt && schemaEligible(stories);
   const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api', ...(wantSchema ? { includeVisuals: false } : {}) });
+  // Private editorial orders supply their own contract. Regular news must
+  // pass the existing free completeness gate on the actual bounded input,
+  // before fetch, usage booking or a paid-attempt receipt can exist.
+  if (!options.prompt) {
+    const preparation = newsBatchInputReadiness(prompt);
+    if (preparation.status !== 'READY_FOR_DRAFT') throw Object.assign(new Error('NEWS_INPUT_NEEDS_PREPARATION'), {
+      requestAttempts: 0, providerNotCalled: true, localRefusal: true, newsPreparation: preparation,
+    });
+  }
   // Ein Aufruf je Meldung ist der Regelfall; dann kann die Anweisung die
   // Vorgaben dieser einen Meldung nennen, ohne den Meldungsteil zu vergrößern.
   const briefing = stories.length === 1 ? storyBriefing(stories[0]) : '';
