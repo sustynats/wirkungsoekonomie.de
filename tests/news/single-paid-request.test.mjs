@@ -12,7 +12,7 @@ const source = { source_id: 'test', publisher_id: 'test', name: 'Test', url: 'ht
   access: { status: 'public', article: 'metadata_only', cost_usd: 0 }, frequency_class: 'high_frequency' };
 const item = { source_id: 'test', publisher_id: 'test', publisher: 'Test',
   url: 'https://example.org/klimagesetz', title: 'Bund beschließt Klimagesetz zur Energieversorgung',
-  summary: 'Neue verbindliche Regeln verändern Investitionen in Energie und Infrastruktur.',
+  summary: 'Neue verbindliche Regeln verändern Investitionen in Energie und Infrastruktur. Die zuständige Behörde erläutert die geplanten Maßnahmen an öffentlichen Gebäuden und nennt die beteiligten Einrichtungen sowie den vorgesehenen Beginn im kommenden Jahr.',
   primary_source: true, published_at: now };
 
 function fixture(published) {

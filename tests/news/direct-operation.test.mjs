@@ -12,7 +12,7 @@ import { retireBacklog } from '../../scripts/news/retire-backlog.mjs';
 import { queueReassessment, needsPotentialRepair } from '../../scripts/news/queue-reassessment.mjs';
 import { costFromUsage, modelRates } from '../../scripts/news/budget.mjs';
 
-const sources = [{ source_id: 'official', url: 'https://example.org/meldung', title: 'Amtliche Meldung', summary: 'Eine Behörde kündigt ein Programm an.', publisher: 'Behörde', primary_source: true, published_at: '2026-09-15T08:00:00.000Z', content_hash: 'h1' }];
+const sources = [{ source_id: 'official', url: 'https://example.org/meldung', title: 'Amtliche Meldung', summary: 'Eine Behörde kündigt ein Programm an. Die zuständige Verwaltung erläutert die geplanten Arbeiten an öffentlichen Gebäuden und nennt die beteiligten Einrichtungen sowie den vorgesehenen Beginn im kommenden Jahr.', publisher: 'Behörde', primary_source: true, published_at: '2026-09-15T08:00:00.000Z', content_hash: 'h1' }];
 const stories = [{ story_id: 'wt-1', slug: 'wt-1', title: 'Eine Behörde kündigt ein Programm an', sources, claims: [{ claim_id: 'c1', claim: 'Programm angekündigt', source_id: 'official' }] }];
 const responsePayload = (text, extra = {}) => ({ id: 'resp_1', model: 'gpt-5.4-mini-2026-03-17', status: 'completed',
   output: [{ type: 'reasoning', summary: [] }, { type: 'message', role: 'assistant', status: 'completed', content: [{ type: 'output_text', text }] }],
