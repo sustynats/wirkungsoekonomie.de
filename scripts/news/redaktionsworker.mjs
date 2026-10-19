@@ -326,6 +326,20 @@ export function bindeKorrekturfassung(preview, intake, repairs = []) {
   return preview;
 }
 
+// ARD short and canonical video paths carry the same immutable CRID. Do not
+// infer identity from a title, redirect, query parameter or another host.
+function ardVideoCrid(value) {
+  try {
+    const url = new URL(value);
+    if (url.protocol !== 'https:' || url.host !== 'www.ardmediathek.de'
+      || url.username || url.password || url.search || url.hash) return null;
+    const id = /^\/video\/(?:[^/]+\/)*([A-Za-z0-9_-]{20,512})\/?$/.exec(url.pathname)?.[1];
+    if (!id) return null;
+    const decoded = Buffer.from(id, 'base64url');
+    return decoded.toString('base64url') === id && /^crid:\/\/[a-z0-9.-]+\/[^\s?#]+$/i.test(decoded.toString('utf8')) ? id : null;
+  } catch { return null; }
+}
+
 export function normalizeEditorialPreview(preview, { links = [], attachments = [], repairs = [] } = {}) {
   if (!preview || typeof preview !== 'object') return preview;
   if (typeof preview.markdown === 'string') {
@@ -413,6 +427,18 @@ export function normalizeEditorialPreview(preview, { links = [], attachments = [
       if (page) { media.original_url = page; repairs.push('source_media:Sendungsseite aus dem Auftrag ergänzt'); }
     }
   }
+  if (preview.format === 'watched' && Array.isArray(preview.sources)
+    && !preview.sources.some(source => links.includes(source.url))) {
+    const id = ardVideoCrid(media?.original_url);
+    const requested = id && links.find(url => ardVideoCrid(url) === id);
+    const source = requested && preview.sources.find(source => ardVideoCrid(source.url) === id);
+    if (source) {
+      // Keep the paid manuscript, evidence excerpts and canonical media URL.
+      // Only restore the exact request URL required by the unchanged importer.
+      source.url = requested;
+      repairs.push('sources:ARD-Sendungslink an identische CRID des Auftrags gebunden');
+    }
+  }
   // Ein Bild ohne belegte Nutzungserlaubnis ist kein Grund, einen fertigen Text
   // zu verwerfen: der Vertrag erlaubt ausdrücklich visual null. Die Ablage
   // verlangt eine Adresse auf wirkungsoekonomie.de, Alternativtext, Nachweis,
@@ -429,6 +455,9 @@ export function normalizeEditorialPreview(preview, { links = [], attachments = [
 // lokales „gültig“ darf nicht erst nach der Übergabe in correction_pending enden.
 export function validateEditorialDelivery(output, packet, at) {
   const validated = validateApiOutput(output, packet, at);
+  const requested = packet.request?.links || [];
+  if (validated.preview && requested.length
+    && !validated.preview.sources.some(source => requested.includes(source.url))) throw Error('EDITORIAL_PREVIEW_EVENT_UNBOUND');
   if (validated.preview?.format !== 'news' && validated.preview
     && /\/editorial-request-contract-[34]\.json$/.test(packet.contract_path || '')) {
     assertFinalPersonalSection(validated.preview.markdown, { footnotes: validated.preview.editorial_revision?.base?.self_authored_work });

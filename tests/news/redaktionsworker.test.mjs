@@ -188,6 +188,91 @@ test('cached import correction is reused without model calls, approval, or alter
   assert.deepEqual(await recoverCachedEditorialOutputs(session, [job], now()), [], 'no overwrite or duplicate delivery');
 });
 
+const ardTestId = Buffer.from('crid://test.example/explicitly-synthetic-episode').toString('base64url');
+const ardRequestUrl = `https://www.ardmediathek.de/video/${ardTestId}`;
+const ardSourceUrl = `https://www.ardmediathek.de/video/test-show/test-episode/test/${ardTestId}`;
+function ardPreview(sourceUrl = ardSourceUrl) {
+  return { ...preview(), format: 'watched', sources: [{ url: sourceUrl, title: 'Synthetic episode', publisher: 'Test' }],
+    source_media: { show: 'Synthetic show', episode_title: 'Synthetic episode', original_release_date: '2026-09-15', original_url: ardSourceUrl } };
+}
+
+test('ARD canonical and short video paths bind only the identical CRID, without changing the manuscript', () => {
+  const value = ardPreview(), original = structuredClone(value), repairs = [];
+  normalizeEditorialPreview(value, { links: [ardRequestUrl], repairs });
+  assert.equal(value.sources[0].url, ardRequestUrl);
+  assert.equal(value.markdown, original.markdown);
+  assert.deepEqual(value.source_media, original.source_media);
+  assert.deepEqual({ ...value.sources[0], url: original.sources[0].url }, original.sources[0]);
+  assert.equal(repairs.length, 1);
+  normalizeEditorialPreview(value, { links: [ardRequestUrl], repairs });
+  assert.equal(repairs.length, 1, 'idempotent normalization');
+});
+
+test('ARD source binding refuses other episodes, ambiguous routes, untrusted hosts and mismatched media', () => {
+  const otherId = Buffer.from('crid://test.example/another-synthetic-episode').toString('base64url');
+  for (const sourceUrl of [
+    ardSourceUrl.replace(ardTestId, otherId), ardSourceUrl.replace('https:', 'http:'),
+    ardSourceUrl.replace('www.ardmediathek.de', 'www.ardmediathek.de.example'),
+    ardSourceUrl.replace('https://', 'https://user@'), ardSourceUrl.replace('/video/', '/live/'),
+    `${ardSourceUrl}?episode=other`, `${ardSourceUrl}#other`, ardSourceUrl.replace(ardTestId, 'not-a-crid'),
+  ]) {
+    const value = ardPreview(sourceUrl), before = structuredClone(value), repairs = [];
+    normalizeEditorialPreview(value, { links: [ardRequestUrl], repairs });
+    assert.deepEqual(value, before, sourceUrl); assert.deepEqual(repairs, [], sourceUrl);
+  }
+  const mismatch = ardPreview(); mismatch.source_media.original_url = ardSourceUrl.replace(ardTestId, otherId);
+  normalizeEditorialPreview(mismatch, { links: [ardRequestUrl] });
+  assert.equal(mismatch.sources[0].url, ardSourceUrl);
+  const alreadyBound = ardPreview(); alreadyBound.sources.push({ ...alreadyBound.sources[0], url: ardRequestUrl });
+  normalizeEditorialPreview(alreadyBound, { links: [ardRequestUrl] });
+  assert.equal(alreadyBound.sources[0].url, ardSourceUrl, 'leave an already exact binding unchanged');
+});
+
+test('cached ARD path correction reuses the immutable paid output before quota checks and never calls a model', async () => {
+  const { job, output, archive, session } = cachedCorrection();
+  job.input.request.kind = 'watched'; job.input.request.links = [ardRequestUrl];
+  job.input.input_hash = hash(job.input.request);
+  output.input_hash = job.input.input_hash; output.preview = ardPreview();
+  const raw = JSON.stringify(output); session.files.set(archive, raw);
+  job.corrections[0].original_output_hash = hash(raw);
+  session.observations.set('github-editorial-day:2026-09-15', { paid: 10, cost_usd: 1 });
+  const result = await runRedaktionsworker({ session, knowledge, now, env: {}, maxJobsPerDay: 10,
+    draft: async () => assert.fail('paid original must not be regenerated') });
+  assert.equal(result.status, 'daily_limit');
+  assert.equal(result.recovered_outputs[0].status, 'cached_output_redelivered');
+  assert.equal(session.files.get(archive), raw);
+  const delivered = JSON.parse(session.files.get(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  assert.deepEqual(delivered, { ...output, preview: { ...output.preview, sources: [{ ...output.preview.sources[0], url: ardRequestUrl }] } });
+  assert.equal(job.status, 'correction_pending'); assert.equal(job.ack, undefined); assert.equal(job.accepted, undefined);
+  assert.equal(session.observations.get(`github-editorial-recovery:${jobId}`).cost_usd, 0);
+});
+
+test('recovered ARD binding passes the unchanged importer and still requires edition-bound final approval', async () => {
+  const { DatabaseSync } = await import('node:sqlite');
+  const { EditorialApproval } = await import('../../scripts/news/bridge/editorial-approval.mjs');
+  const { importEditorialPreviews } = await import('../../scripts/news/bridge/intake-processing.mjs');
+  const job = queuedJob(); job.input.request.kind = 'watched'; job.input.request.links = [ardRequestUrl];
+  job.input.input_hash = hash(job.input.request);
+  const output = { schema_version: '1.0', job_id: jobId, input_hash: job.input.input_hash, processed_at: now(), preview: ardPreview() };
+  assert.throws(() => validateEditorialDelivery(output, job.input, now()), /EDITORIAL_PREVIEW_EVENT_UNBOUND/);
+  normalizeEditorialPreview(output.preview, { links: job.input.request.links });
+  assert.doesNotThrow(() => validateEditorialDelivery(output, job.input, now()));
+  const db = new DatabaseSync(':memory:'); db.exec('CREATE TABLE jobs (body TEXT NOT NULL)');
+  db.prepare('INSERT INTO jobs VALUES (?)').run(JSON.stringify(job));
+  const store = { db, get: () => job, put: next => db.prepare('UPDATE jobs SET body=?').run(JSON.stringify(next)) };
+  const { transport, files } = fakeSession([job]);
+  files.set(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`), JSON.stringify(output));
+  const approval = new EditorialApproval(db, { now });
+  try {
+    const result = await importEditorialPreviews({ store, transport, approval, now });
+    assert.equal(result.staged, 1); assert.deepEqual(result.failed, []);
+    assert.equal(approval.get(jobId).status, 'AWAITING_FINAL_APPROVAL');
+    assert.equal(approval.get(jobId).approval, null);
+    assert.deepEqual(approval.claimPublications(), []);
+    assert.equal(approval.preview(owner, jobId).preview.markdown, output.preview.markdown);
+  } finally { db.close(); }
+});
+
 test('cached recovery refuses changed archives, wrong bindings, missing personal sections, and approved jobs', async () => {
   for (const reason of ['archive_changed', 'binding_changed', 'missing_section', 'approved']) {
     const { job, output, archive, session } = cachedCorrection();
@@ -879,8 +964,9 @@ test('eine an unseren Formvorgaben gescheiterte Ablage darf nach der Vertragskor
 });
 
 test('Formales gleicht die Software an: der fertige Entwurf geht nicht an einer Darstellungsregel verloren', async () => {
-  const session = fakeSession([queuedJob()]);
-  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const job = queuedJob(), session = fakeSession([job]);
+  job.input.request.links = ['https://apnews.com/article/x']; job.input.input_hash = hash(job.input.request);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
   const raw = preview();
   raw.markdown = `# ${raw.title}\n\n${raw.markdown.replace('## Meine Einordnung', '# Nachtrag\n\nEin weiterer belegter Abschnitt zum Test der Angleichung.\n\n## Meine Einordnung')}`;
   raw.sources = [{ url: 'https://apnews.com/article/x', title: 'Female athletes accuse' }];
@@ -929,7 +1015,7 @@ test('eine Nachlieferung trägt den früheren Auftrag samt bisheriger Fassung un
   session.files.set(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`), JSON.stringify({ preview: { ...preview(), title: 'Erste Fassung' } }));
   session.files.set(bridgePath('00_INBOX', `${supplementId}.input.json`), JSON.stringify(supplementInput));
   let seen = null;
-  const draft = async (request) => { seen = request; return { output: { preview: preview() }, model: 'gpt-5.6-luna', usage: { input_tokens: 10, output_tokens: 10 }, cost: 0.01, answer: '{}' }; };
+  const draft = async (request) => { seen = request; const output = preview(); output.sources.push({ url: 'https://example.org/zusatz', title: 'Synthetischer Zusatz', publisher: 'Test' }); return { output: { preview: output }, model: 'gpt-5.6-luna', usage: { input_tokens: 10, output_tokens: 10 }, cost: 0.01, answer: '{}' }; };
   const result = await processEditorialRequest(session, { input: { job_id: supplementId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now: () => '2026-09-16T09:05:00.000Z' });
   assert.equal(result.status, 'output_delivered');
   assert.equal(result.supplement_of, jobId);
