@@ -1,7 +1,120 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-19T10:00:00.000Z",
+  "updated_at": "2026-10-19T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-19-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-19",
+      "window_from": "2026-10-19T10:00:00.000Z",
+      "window_to": "2026-10-19T16:00:00.000Z",
+      "stand": "2026-10-19T16:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 11,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-db5d1eb0978edd4c",
+          "slug": "spanien-unwetter-nahe-valencia-und-alicante-hunderte-menschen-evakuiert-8edd4c",
+          "title": "Laut DER SPIEGEL: Unwetter nahe Valencia und Alicante, Hunderte Menschen evakuiert",
+          "state": "neu",
+          "at": "2026-10-19T15:34:04.117Z",
+          "score": 7.928
+        },
+        {
+          "story_id": "wt-acf2b5b4babd4476",
+          "slug": "cold-case-36-jahre-nach-messerangriff-sucht-polizei-wichtigen-zeugen-bd4476",
+          "title": "36 Jahre nach Messerangriff: Polizei sucht wichtigen Zeugen",
+          "state": "neu",
+          "at": "2026-10-19T14:44:11.428Z",
+          "score": 3.7894
+        },
+        {
+          "story_id": "wt-44d56f5975c5ef6e",
+          "slug": "herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e",
+          "title": "Herbstferien in NRW: Mehrere Autobahnen wegen Bauarbeiten gesperrt",
+          "state": "neu",
+          "at": "2026-10-19T14:09:12.649Z",
+          "score": 5.6923
+        },
+        {
+          "story_id": "wt-412f8e0900bcf98e",
+          "slug": "rekordpreise-fur-energie-bundesbank-rechnet-mit-hoher-inflationsrate-bis-ins-nachste-jah-bcf98e",
+          "title": "Laut Bundesbank bleibt der Preisdruck in Deutschland zunächst hoch",
+          "state": "neu",
+          "at": "2026-10-19T13:44:18.398Z",
+          "score": 5.6231
+        },
+        {
+          "story_id": "wt-6345bdbaf4e8fd51",
+          "slug": "einsatz-explosion-in-donerimbiss-in-hofheim-e8fd51",
+          "title": "Laut Stern: Explosion in Dönerimbiss in Hofheim, Ursache offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-19T13:43:06.205Z",
+          "score": 5.3697
+        },
+        {
+          "story_id": "wt-6fc173737d5d6456",
+          "slug": "nach-wochenlanger-hangepartie-zentrumschefin-soll-regierung-in-schweden-bilden-5d6456",
+          "title": "Schwedens Zentrum soll nach politischer Hängepartie Koalitionsbedingungen ausloten",
+          "state": "neu",
+          "at": "2026-10-19T13:20:28.162Z",
+          "score": 6.0569
+        },
+        {
+          "story_id": "wt-d2b6c4fcbadd76ae",
+          "slug": "scharf-18-000-euro-fur-die-zukunft-wir-sichern-jungen-menschen-chancen-auf-dem-arbeitsma-dd76ae",
+          "title": "Laut Bayerischem Arbeitsministerium: Bayerisches Arbeitsministerium fördert JOBLINGE mit 18.000 Euro für fünf Jobcamps",
+          "state": "neu",
+          "at": "2026-10-19T12:56:38.599Z",
+          "score": 5.4907
+        },
+        {
+          "story_id": "wt-98d6d817a6203529",
+          "slug": "nicht-zu-einer-kaderpartei-werden-ortsverein-von-berlins-spd-chef-krach-gegen-koalition--203529",
+          "title": "Laut Tagesspiegel: SPD-Ortsverein von Steffen Krach fordert Mitgliederentscheid über Koalition mit der Linken",
+          "state": "neu",
+          "at": "2026-10-19T11:21:34.352Z",
+          "score": 5.2266
+        },
+        {
+          "story_id": "wt-472102551f878daf",
+          "slug": "durchbruch-eines-zaunes-zwei-manner-stellen-sich-nach-vorfall-am-flughafen-leipzig-878daf",
+          "title": "Zwei Männer stellen sich nach Zaun-Durchbruch am Flughafen Leipzig",
+          "state": "neu",
+          "at": "2026-10-19T11:20:41.493Z",
+          "score": 3.3693
+        },
+        {
+          "story_id": "wt-7a8763869aefd23b",
+          "slug": "ermittlungen-laufen-schusse-auf-einfamilienhaus-in-bruhl-zwei-tatverdachtige-efd23b",
+          "title": "Schüsse auf Einfamilienhaus in Brühl – Ermittlungen laufen",
+          "state": "neu",
+          "at": "2026-10-19T10:35:30.556Z",
+          "score": 5.0986
+        },
+        {
+          "story_id": "wt-e083b8d828fa80c8",
+          "slug": "anschlag-auf-doner-imbiss-in-hofheim-glasturen-und-fenster-zerstort-fa80c8",
+          "title": "Explosion beschädigt Döner-Imbiss in Hofheim",
+          "state": "neu",
+          "at": "2026-10-19T10:01:38.056Z",
+          "score": 5.0045
+        },
+        {
+          "story_id": "wt-0449bfee0665a288",
+          "slug": "sturmtief-adam-unwetter-in-spanien-menschen-warten-auf-dachern-auf-rettung-65a288",
+          "title": "Laut Stern und Tagesspiegel: Sturmtief „Adam“ setzt Straßen und Campingplätze in Spanien unter Wasser",
+          "state": "neu",
+          "at": "2026-10-19T10:00:31.878Z",
+          "score": 9.0015
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-19-mittagslage",
       "slot": "mittagslage",
@@ -5375,95 +5488,6 @@
           "state": "fortgeschrieben",
           "at": "2026-09-19T16:11:39.292Z",
           "score": 6.7662
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-19-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-19",
-      "window_from": "2026-09-19T10:00:00.000Z",
-      "window_to": "2026-09-19T16:00:00.000Z",
-      "stand": "2026-09-19T16:00:00.000Z",
-      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 9,
-        "neu": 9,
-        "fortgeschrieben": 0
-      },
-      "entries": [
-        {
-          "story_id": "wt-025eca19f84fbaa8",
-          "slug": "eroffnung-im-norden-46-millionen-euro-investition-coherent-eroffnet-neubau-4fbaa8",
-          "title": "Coherent eröffnet Neubau in Lübeck mit 46 Millionen Euro Investition",
-          "state": "neu",
-          "at": "2026-09-19T15:56:48.615Z",
-          "score": 5.9911
-        },
-        {
-          "story_id": "wt-d8301a6ac34d30b0",
-          "slug": "partei-jugendorganisation-jusos-verlangen-abkehr-vom-reformkurs-der-bundesregierung-4d30b0",
-          "title": "Thüringens Jusos kritisieren SPD-Kurs und lehnen Kürzungen im Sozialbereich ab",
-          "state": "neu",
-          "at": "2026-09-19T15:10:44.561Z",
-          "score": 5.8632
-        },
-        {
-          "story_id": "wt-9b00217eb8ece771",
-          "slug": "wohnungsmarkt-jedes-zweite-wg-zimmer-in-berlin-kostet-mehr-als-650-euro-ece771",
-          "title": "Jedes zweite WG-Zimmer in Berlin kostet mehr als 650 Euro",
-          "state": "neu",
-          "at": "2026-09-19T14:53:16.765Z",
-          "score": 6.3147
-        },
-        {
-          "story_id": "wt-7b25cee01b6074aa",
-          "slug": "gorch-fock-kriegstuchtig-zwischen-eisbergen-und-buckelwalen-6074aa",
-          "title": "Laut NDR: „Gorch Fock“ kehrt nach Kiel zurück",
-          "state": "neu",
-          "at": "2026-09-19T14:41:21.963Z",
-          "score": 5.7816
-        },
-        {
-          "story_id": "wt-1c7b1cd9b571ef0f",
-          "slug": "ukraine-news-russland-will-mit-afd-bei-gaslieferungen-kooperieren-71ef0f",
-          "title": "Laut MDR: Russland bietet AfD Kooperation bei Gaslieferungen an",
-          "state": "neu",
-          "at": "2026-09-19T13:26:39.031Z",
-          "score": 5.574
-        },
-        {
-          "story_id": "wt-492fde11550f416a",
-          "slug": "scharf-jugendherbergen-sind-lernorte-der-demokratie-jugendarbeit-und-jugendpolitik-0f416a",
-          "title": "Laut Bayerischer Staatsregierung bezeichnet Ministerin Scharf Jugendherbergen als Lernorte der Demokratie",
-          "state": "neu",
-          "at": "2026-09-19T11:42:35.195Z",
-          "score": 5.285
-        },
-        {
-          "story_id": "wt-9dd7fd56217f0777",
-          "slug": "sparpaket-gesundheitsminister-linnemann-krankenkassen-sollen-doch-wieder-uber-anhebung-v-7f0777",
-          "title": "Laut Gesundheitsminister Linnemann sollen Krankenkassen wieder über Zusatzbeiträge informieren",
-          "state": "neu",
-          "at": "2026-09-19T11:26:32.266Z",
-          "score": 5.2404
-        },
-        {
-          "story_id": "wt-00a2585a64ddcf4e",
-          "slug": "was-fur-ein-wahnsinn-grune-kritisieren-tankrabatt-plane-ddcf4e",
-          "title": "Tankrabatt und Spritpreisdeckel geplant – Kritik an Entlastung",
-          "state": "neu",
-          "at": "2026-09-19T10:55:41.332Z",
-          "score": 5.1547
-        },
-        {
-          "story_id": "wt-6ff0e95859ad76f8",
-          "slug": "kundigung-wann-eine-arbeitsrechtsschutzversicherung-sinnvoll-ist-ad76f8",
-          "title": "Kündigungsschutzklage kann laut Finanztip mehrere tausend Euro kosten",
-          "state": "neu",
-          "at": "2026-09-19T10:25:52.027Z",
-          "score": 5.0719
         }
       ]
     }
