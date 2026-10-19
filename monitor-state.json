@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-19T19:05:55.706Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-19T21:27:57.966Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "b731aad155729f5823f69d56",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-19T22:36:21.726Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3026,11 +3027,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/dann-versundigen-wir-uns-an-unseren-kindern-verband-kritisiert-qualitat-der-ganztagsbetr-fab36b/": {
         "first_seen_at": "2026-10-19T21:21:09.652Z",
         "source_at": "2026-10-19T19:24:02.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/starreporterin-christiane-amanpour-hort-bei-cnn-auf-8bfc56/": {
+        "first_seen_at": "2026-10-19T22:36:21.726Z",
+        "source_at": "2026-10-19T20:52:57.000Z"
       }
     },
-    "last_new_at": "2026-10-19T21:21:09.652Z",
-    "checked_at": "2026-10-19T22:20:49.880Z",
-    "last_current_new_at": "2026-10-19T21:21:09.652Z"
+    "last_new_at": "2026-10-19T22:36:21.726Z",
+    "checked_at": "2026-10-19T22:36:21.726Z",
+    "last_current_new_at": "2026-10-19T22:36:21.726Z"
   },
   "recovery_attempts": [
     {
