@@ -44,6 +44,7 @@ import { consolidateLeizenDuplicates } from "./migrate-leizen-duplicates.mjs";
 import { consolidateKirchnerDuplicates } from "./consolidate-kirchner-duplicates.mjs";
 import { consolidateKamenDuplicates } from "./consolidate-kamen-duplicates.mjs";
 import { consolidateTrumpSanctionsDuplicates, retainedSanctionsPaidInput } from './consolidate-trump-sanctions-duplicates.mjs';
+import { consolidateHofheimDuplicates, retainedHofheimPaidInput } from './consolidate-hofheim-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1418,6 +1419,10 @@ export async function runWirkungsticker(options = {}) {
   report.trump_sanctions_duplicate_consolidation = sanctionsConsolidation;
   report.living_file_merges.push(...sanctionsConsolidation.changes);
   report.retired_stories += sanctionsConsolidation.changes.length;
+  const hofheimConsolidation = consolidateHofheimDuplicates(storyStore.stories || [], now);
+  report.hofheim_duplicate_consolidation = hofheimConsolidation;
+  report.living_file_merges.push(...hofheimConsolidation.changes);
+  report.retired_stories += hofheimConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1603,9 +1608,11 @@ export async function runWirkungsticker(options = {}) {
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
-    if (retainedSanctionsPaidInput(candidate, storyStore.stories)) {
+    const retainedArchived = retainedSanctionsPaidInput(candidate, storyStore.stories) ? 'wt-e6f5bced9f7c773a'
+      : retainedHofheimPaidInput(candidate, storyStore.stories) ? 'wt-e083b8d828fa80c8' : null;
+    if (retainedArchived) {
       (report.retained_published_source_inputs ||= []).push({ story_id: candidate.story_id,
-        archived_story_id: 'wt-e6f5bced9f7c773a', reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
+        archived_story_id: retainedArchived, reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
         decision: 'retained_published_source_input', reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
       return false; // Keep any pending review; never reset or regenerate it.
