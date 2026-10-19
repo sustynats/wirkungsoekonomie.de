@@ -15,10 +15,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-19T07:06:13.763Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "725ea0c7f2712c1a56dca4c7",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-19T07:06:13.763Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -2910,11 +2915,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ukraine-u-bahn-station-in-kiew-bei-russischem-angriff-beschadigt-ead0c3/": {
         "first_seen_at": "2026-10-19T07:06:13.763Z",
         "source_at": "2026-10-19T04:51:39.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/frank-elderson-from-climate-and-nature-risks-to-economic-resilience-and-competitiveness-975f86/": {
+        "first_seen_at": "2026-10-19T07:20:38.083Z",
+        "source_at": "2026-10-19T06:00:00.000Z"
       }
     },
-    "last_new_at": "2026-10-19T07:06:13.763Z",
-    "checked_at": "2026-10-19T07:06:13.763Z",
-    "last_current_new_at": "2026-10-19T07:06:13.763Z"
+    "last_new_at": "2026-10-19T07:20:38.083Z",
+    "checked_at": "2026-10-19T07:20:38.083Z",
+    "last_current_new_at": "2026-10-19T07:20:38.083Z"
   },
   "recovery_attempts": [
     {
