@@ -360,7 +360,8 @@ function paidRetryHistory(record) {
 
 export function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const existing = candidate.existing_story;
-  const previousAttempt = paidRetryHistory(existing).find(attempt => attempt.fingerprint === retryInputFingerprint(candidate)
+  const verifiedHistory = paidHistoryForCandidate(candidate);
+  const previousAttempt = verifiedHistory.find(attempt => attempt.fingerprint === retryInputFingerprint(candidate)
     && attempt.version === AI_PROCESSING_VERSION);
   const previousQualityRetries = Number(existing?.pending_update?.quality_retry_count ?? existing?.quality_retry_count ?? 0);
   const retryableOutput = reason === "QUALITY_GATE_FAILED" || reason === "AI_OUTPUT_INVALID";
@@ -370,10 +371,13 @@ export function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const qualityRetryAfter = retryableOutput ? new Date(Date.parse(now) + retryDelayMinutes * 60000).toISOString() : null;
   const aiRetry = retryableOutput ? {
     version: AI_PROCESSING_VERSION, fingerprint: retryInputFingerprint(candidate),
+    evidence_fingerprint_version: PAID_INPUT_EVIDENCE_VERSION,
+    evidence_fingerprint: paidInputEvidenceFingerprint(candidate),
     first_failed_at: previousAttempt?.first_failed_at || previousAttempt?.failed_at || now,
     failed_at: now, retry_after: qualityRetryAfter, retry_count: consecutiveRetries,
-  } : existing?.ai_retry;
-  const history = paidRetryHistory({ ai_retry_history: paidRetryHistory(existing), ai_retry: aiRetry });
+  } : verifiedHistory.find(attempt => attempt.version === existing?.ai_retry?.version
+    && attempt.fingerprint === existing?.ai_retry?.fingerprint) || existing?.ai_retry;
+  const history = paidRetryHistory({ ai_retry_history: verifiedHistory, ai_retry: aiRetry });
   if (existing?.published) {
     return {
       ...existing,
@@ -782,6 +786,46 @@ function retryInputFingerprint(candidate) {
     sources: (candidate.sources || []).map(sourceReviewFingerprint).sort() }));
 }
 
+const PAID_INPUT_EVIDENCE_VERSION = 'paid-input-evidence-1';
+
+// A publisher may refresh only its feed clock. That is observable metadata,
+// not permission to regenerate the same paid answer. Keep the stricter dated
+// review fingerprint unchanged; this separate receipt only prevents spending.
+function paidInputEvidenceFingerprint(candidate) {
+  return sha256(JSON.stringify({ version: PAID_INPUT_EVIDENCE_VERSION, title: candidate.title,
+    published_version: candidate.existing_story?.current_version || 0,
+    sources: (candidate.sources || []).map(source => sourceReviewFingerprint({ ...source,
+      published_at: null, source_published_at: null })).sort() }));
+}
+
+function paidHistoryForCandidate(candidate) {
+  const fingerprint = retryInputFingerprint(candidate);
+  const evidenceFingerprint = paidInputEvidenceFingerprint(candidate);
+  return paidRetryHistory(candidate.existing_story).map(attempt => {
+    // Bind a legacy receipt only when its original, date-sensitive hash is
+    // reproduced exactly. Never guess an old paid input from today's sources.
+    if (attempt.version !== AI_PROCESSING_VERSION || attempt.fingerprint !== fingerprint
+      || attempt.evidence_fingerprint_version !== undefined || attempt.evidence_fingerprint !== undefined) return attempt;
+    return { ...attempt, evidence_fingerprint_version: PAID_INPUT_EVIDENCE_VERSION,
+      evidence_fingerprint: evidenceFingerprint };
+  });
+}
+
+export function paidAttemptReceiptStatus(candidate, limit = Number(process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT || 1)) {
+  const attempts = paidHistoryForCandidate(candidate).filter(previous => previous.version === AI_PROCESSING_VERSION
+    && Number(previous.retry_count || 0) >= Math.max(1, limit));
+  if (!attempts.length) return 'no_prior_paid_attempt';
+  const fingerprint = retryInputFingerprint(candidate), evidenceFingerprint = paidInputEvidenceFingerprint(candidate);
+  if (attempts.some(previous => previous.fingerprint === fingerprint)) return 'same_paid_input';
+  const bound = previous => previous.evidence_fingerprint_version === PAID_INPUT_EVIDENCE_VERSION
+    && /^[a-f0-9]{64}$/.test(previous.evidence_fingerprint || '');
+  if (attempts.some(previous => bound(previous) && previous.evidence_fingerprint === evidenceFingerprint)) return 'same_paid_input';
+  // Old hashes alone cannot distinguish changed evidence from a changed clock.
+  // Unknown historical write/cost effects stay held until their input is proved.
+  if (attempts.some(previous => !bound(previous))) return 'unverified_legacy_paid_input';
+  return 'new_source_evidence';
+}
+
 // Horizont in Stunden; 0 oder leer schaltet den Horizont ab (nur für Tests und
 // ausdrückliche Betriebsentscheidungen). Standard im Direktbetrieb: 24 Stunden.
 export function lifoHorizonMilliseconds(env = process.env) {
@@ -794,9 +838,7 @@ export function lifoHorizonMilliseconds(env = process.env) {
 // formal unbrauchbare Antwort bleibt ein bezahlter Versuch und wird archiviert.
 // Ein neuer Zeitabschnitt erlaubt keine Ersatzgenerierung derselben Eingabe.
 export function paidAttemptsExhausted(candidate, limit = Number(process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT || 1)) {
-  return paidRetryHistory(candidate.existing_story).some(previous => previous.version === AI_PROCESSING_VERSION
-    && previous.fingerprint === retryInputFingerprint(candidate)
-    && Number(previous.retry_count || 0) >= Math.max(1, limit));
+  return ['same_paid_input', 'unverified_legacy_paid_input'].includes(paidAttemptReceiptStatus(candidate, limit));
 }
 
 export function retryCoolingDown(candidate, now) {
@@ -1562,12 +1604,14 @@ export async function runWirkungsticker(options = {}) {
       return false;
     }
     // Direktbetrieb: ein bezahlter Versuch je unverändertem Eingabestand. Erst
-    // neue Evidenz (anderer Fingerprint) darf erneut einen Aufruf auslösen.
-    if (paidAttemptsExhausted(candidate)) {
+    // belegte neue Evidenz, nicht ein anderer Quellenzeitstempel, darf zahlen.
+    const receiptStatus = paidAttemptReceiptStatus(candidate);
+    if (['same_paid_input', 'unverified_legacy_paid_input'].includes(receiptStatus)) {
       bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
       byId.set(candidate.story_id, pendingRecord(candidate, "AI_ATTEMPT_LIMIT_REACHED", now, candidate.existing_story?.pending_update?.quality_errors || candidate.existing_story?.quality_errors || []));
-      report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_ATTEMPT_LIMIT_REACHED" });
-      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "paid_attempt_limit_hold" });
+      if (receiptStatus === 'unverified_legacy_paid_input') report.paid_inputs_held_unverified = Number(report.paid_inputs_held_unverified || 0) + 1;
+      report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_ATTEMPT_LIMIT_REACHED", receipt_status: receiptStatus });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "paid_attempt_limit_hold", receipt_status: receiptStatus });
       return false;
     }
     // One durable retry clock for fresh feed arrivals, deepening and followups.
