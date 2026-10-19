@@ -19,14 +19,23 @@
     },
     "publication": {
       "firstSeen": "2026-10-19T19:28:57.574Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-19T19:28:57.574Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-19T19:36:12.916Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3ba67966c2ee1f13e83d5d30",
+      "content": "⚠ WÖk-Betriebsstörung\nVeröffentlichung: 1 sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.\nSeit: 2026-10-19T19:28:57.574Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3013,7 +3022,7 @@
       }
     },
     "last_new_at": "2026-10-19T18:36:18.711Z",
-    "checked_at": "2026-10-19T19:28:57.574Z",
+    "checked_at": "2026-10-19T19:36:12.916Z",
     "last_current_new_at": "2026-10-19T18:36:18.711Z"
   },
   "recovery_attempts": [
