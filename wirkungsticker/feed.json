@@ -1,11 +1,43 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-19T13:13:34.665Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-19T13:36:07.025Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/rekordpreise-fur-energie-bundesbank-rechnet-mit-hoher-inflationsrate-bis-ins-nachste-jah-bcf98e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/rekordpreise-fur-energie-bundesbank-rechnet-mit-hoher-inflationsrate-bis-ins-nachste-jah-bcf98e/",
+      "title": "Laut Bundesbank bleibt der Preisdruck in Deutschland zunächst hoch",
+      "summary": "Die Bundesbank erwartet laut Deutschlandfunk anhaltenden Preisdruck und eine nur langsame Rückkehr der Inflation zur angestrebten Zwei-Prozent-Marke. Hohe Energiepreise könnten Haushalte und Unternehmen weiter belasten; konkrete Verteilungs- und Folgedaten fehlen.",
+      "date_published": "2026-10-19T13:29:01.000Z",
+      "date_modified": "2026-10-19T13:29:01.000Z",
+      "_woek_released_at": "2026-10-19T13:44:18.398Z",
+      "tags": [
+        "Energie",
+        "Finanzen"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/nach-wochenlanger-hangepartie-zentrumschefin-soll-regierung-in-schweden-bilden-5d6456/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/nach-wochenlanger-hangepartie-zentrumschefin-soll-regierung-in-schweden-bilden-5d6456/",
@@ -439,30 +471,31 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/einsatz-explosion-in-donerimbiss-in-hofheim-e8fd51/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/einsatz-explosion-in-donerimbiss-in-hofheim-e8fd51/",
-      "title": "Explosion in Dönerimbiss in Hofheim – Polizei vermutet Vorsatz",
-      "summary": "In einem Dönerimbiss im Main-Taunus-Kreis hat es laut Stern eine Explosion gegeben. Die Polizei vermutet Vorsatz, doch Ursache, Schäden und mögliche Verletzte sind offen.",
+      "title": "Laut Stern: Explosion in Dönerimbiss in Hofheim, Ursache offen",
+      "summary": "In Hofheim wurde laut Stern eine Explosion in einem Dönerimbiss gemeldet; die Polizei vermutet Vorsatz, doch Ursache und Folgen sind offen. Eine unabhängige Bestätigung liegt nicht vor.",
       "date_published": "2026-10-19T05:47:03.000Z",
       "date_modified": "2026-10-19T05:47:03.000Z",
       "_woek_released_at": "2026-10-19T07:33:00.805Z",
       "tags": [
-        "Gesundheit"
+        "Gesundheit",
+        "Geopolitik"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         },
         "planet": {
-          "magnitude": 0,
-          "direction": "open",
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         }
       }
