@@ -34,8 +34,26 @@ export function observedMajorEvents(items, now, { limit = 600, hours = 48 } = {}
 
 export function findEventStory(event, stories, now) {
   const urls = new Set(event.sources.map(source => source.url));
-  const direct = stories.filter(story => !isMerged(story) && (story.sources || []).some(s => urls.has(s.url)));
+  const matching = stories.filter(story => (story.sources || []).some(s => urls.has(s.url)));
+  const direct = matching.filter(story => !isMerged(story));
   if (direct.length) return direct.sort((a, b) => Number(active(b)) - Number(active(a)))[0];
+  const archives = matching.filter(isMerged);
+  if (archives.length) {
+    // A preserved public archive is not a missing first publication. Follow
+    // only its explicit reciprocal route and the exact stored source edition;
+    // do not approve changed evidence, chain aliases or mutate either file.
+    const targets = archives.flatMap(archive => {
+      const ids = archive.retirement?.canonical_story_ids;
+      if (archive.published !== true || archive.listed !== false
+        || archive.retirement.preserve_full_publication !== true || ids?.length !== 1
+        || !event.sources.some(source => /^[a-f0-9]{64}$/.test(source.content_hash || '')
+          && archive.sources.some(saved => saved.url === source.url && saved.content_hash === source.content_hash))) return [];
+      const found = stories.filter(story => story.story_id === ids[0]);
+      return found.length === 1 && active(found[0])
+        && found[0].living_file?.merged_story_ids?.includes(archive.story_id) ? found : [];
+    });
+    return new Set(targets.map(story => story.story_id)).size === 1 ? targets[0] : undefined;
+  }
   const keys = new Set(event.sources.map(item => structuredEventIdentity(item)?.key).filter(Boolean));
   const ids = new Set([event.event_id,...event.sources.map(source=>source.event_id)].filter(Boolean));
   return stories.find(story => active(story) && (ids.has(story.event_id)
