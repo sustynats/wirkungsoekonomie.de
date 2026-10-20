@@ -28,6 +28,22 @@ const membersAre = (s, target) => s.living_file?.merged_story_ids?.length === 1
   && s.living_file.merged_story_ids[0] === target.story_id;
 const routed = (a, b) => a?.published && a.listed !== false && !a.retirement
   && pointsTo(b, a) && b.retirement.preserve_full_publication === true && membersAre(a, b);
+const paidFingerprint = s => sourceReviewFingerprint({ ...s, published_at: null, source_published_at: null });
+function retainedPending(story, pair, reversed, at) {
+  const p = story.pending_update;
+  if (!p) return true;
+  const allowed = new Set(['detected_at', 'content_hash', 'sources', 'reason', 'quality_errors',
+    'quality_retry_count', 'quality_retry_after', 'reassessment', 'fresh', 'consolidation',
+    'impact_reassessment', 'source_integrity']);
+  if (Object.keys(p).some(k => !allowed.has(k)) || p.reassessment || p.impact_reassessment
+    || (p.consolidation && !(reversed && story === pair[1]))
+    || !['QUALITY_GATE_FAILED', 'AI_ATTEMPT_LIMIT_REACHED', 'AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT'].includes(p.reason)
+    || !Array.isArray(p.sources) || !p.sources.length
+    || (p.content_hash && !bindings.some(b => b.content === p.content_hash))
+    || (p.detected_at && (!Number.isFinite(Date.parse(p.detected_at)) || Date.parse(p.detected_at) > Date.parse(at)))) return false;
+  const paid = new Set(pair.flatMap(s => s.sources).map(paidFingerprint));
+  return p.sources.every(s => s && paid.has(paidFingerprint(s)));
+}
 
 export function consolidateObersontheimDuplicates(stories, at) {
   if (!Number.isFinite(Date.parse(at))) throw Error('INVALID_CONSOLIDATION_TIME');
@@ -45,7 +61,7 @@ export function consolidateObersontheimDuplicates(stories, at) {
   const reversed = pointsTo(canonical, duplicate) && membersAre(duplicate, canonical)
     && duplicate.listed !== false && !duplicate.retirement && !canonical.living_file;
   if (!pair.every((s, i) => editionMatches(s, bindings[i]) && Date.parse(at) >= Date.parse(s.updated_at))
-    || (!untouched && !reversed)) {
+    || (!untouched && !reversed) || !pair.every(s => retainedPending(s, pair, reversed, at))) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
   }
   if (reversed) {
@@ -73,6 +89,14 @@ export function consolidateObersontheimDuplicates(stories, at) {
     canonical_story_id: canonical.story_id, reason: 'source_bound_obersontheim_duplicate_2026_10_20' }] };
 }
 
+// Build and validation read the same exact-source publication projection.
+// All existing source/content/queue gates continue to run on that view.
+export function projectObersontheimPublication(stories) {
+  const result = consolidateObersontheimDuplicates(stories, OBERSONTHEIM_ROUTING_AUDITED_AT);
+  if (result.status === 'held') throw Error(`OBERSONTHEIM_ROUTING_REPAIR_HELD:${result.reason}`);
+  return result;
+}
+
 export function retainedObersontheimPaidInput(candidate, stories) {
   const canonical = candidate.existing_story;
   if (candidate.story_id !== bindings[0].id || canonical?.story_id !== bindings[0].id
@@ -82,7 +106,6 @@ export function retainedObersontheimPaidInput(candidate, stories) {
   if (duplicates.length !== 1 || !editionMatches(duplicates[0], bindings[1]) || !routed(canonical, duplicates[0])) return false;
   const sources = candidate.sources || [];
   if (!sources.length || sources.some(s => !s || s.url !== url)) return false;
-  const fingerprint = s => sourceReviewFingerprint({ ...s, published_at: null, source_published_at: null });
-  const paid = new Set([...canonical.sources, ...duplicates[0].sources].map(fingerprint));
-  return sources.every(s => paid.has(fingerprint(s)));
+  const paid = new Set([...canonical.sources, ...duplicates[0].sources].map(paidFingerprint));
+  return sources.every(s => paid.has(paidFingerprint(s)));
 }

@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { consolidateObersontheimDuplicates as consolidate, retainedObersontheimPaidInput as retained } from '../../scripts/news/consolidate-obersontheim-duplicates.mjs';
+import { consolidateObersontheimDuplicates as consolidate, retainedObersontheimPaidInput as retained, projectObersontheimPublication as project } from '../../scripts/news/consolidate-obersontheim-duplicates.mjs';
 import { duplicateGroups } from '../../scripts/news/living-files.mjs';
 import { runWirkungsticker } from '../../scripts/news/run.mjs';
 
 const at = '2026-10-20T07:00:00Z';
 const url = 'https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/kreis-schwaebisch-hall--schuesse-mit-schreckschusspistole-loesen-sek-einsatz-aus-38421916.html';
 function fixture() {
-  return [
+  const pair = [
     ['wt-ccc96fc0c7d39047', 'd39047', '2026-10-20T00:19:37.498Z', '86f14afdb543b849906393f9589d134d7e9182276cf770986a33b75853ea2697', '3278db82c5ae4ad30d9d3e3fbd3a676b4c1e5abe7b576e1e89536c6762e894c3'],
     ['wt-9909c1676a2f8602', '2f8602', '2026-10-20T06:20:25.471Z', '8ecf20d5ce8065f2bba46671a059473ecc2c3a35b99bd018e2e3ff79ab0552f9', '121313df7ebd74c783f9c1f50ba4ef5d1584d5ff700c6a03bee8d4aee762fe92'],
   ].map(([story_id, suffix, date, content_hash, hash], i) => ({
@@ -20,9 +20,11 @@ function fixture() {
     source_summary: `Retained complete manuscript ${i}.`, analysis: { marker: `paid-${i}` },
     versions: [{ version: 1, marker: `original-${i}` }], claims: [{ marker: `claims-${i}` }],
     followups: [{ marker: 'open' }], ai_retry_history: [{ fingerprint: 'paid-original' }],
-    pending_update: i === 0 ? { reason: 'QUALITY_GATE_FAILED', quality_errors: ['IMPACT_PATH_TIME_CONFLICT:planet', 'AI_SOURCE_SUMMARY_LENGTH'], owner_note: 'keep this pending review' } : null,
+    pending_update: null,
     unknown_retained: { marker: 'keep' },
   }));
+  pair[0].pending_update = { reason: 'QUALITY_GATE_FAILED', quality_errors: ['IMPACT_PATH_TIME_CONFLICT:planet', 'AI_SOURCE_SUMMARY_LENGTH'], sources: structuredClone(pair[1].sources) };
+  return pair;
 }
 
 test('exact source-bound routing keeps the original public URL and every paid field and pending review', () => {
@@ -67,6 +69,9 @@ test('changed editions, source evidence, manual approvals and unrelated routing 
     p => { p[0].manual_only = true; }, p => { p[1].editorial_approval_hash = 'owner-approved'; },
     p => { p[1].living_file = { merged_story_ids: ['unknown'] }; },
     p => { p[0].retirement = { reason_code: 'OTHER' }; },
+    p => { p[0].pending_update.owner_instruction = 'keep unknown instruction'; },
+    p => { p[0].pending_update.sources[0].content_hash = 'new-evidence'; },
+    p => { p[0].pending_update.reassessment = true; },
   ]) {
     const pair = fixture(); mutate(pair); const before = structuredClone(pair);
     assert.equal(consolidate(pair, at).status, 'held'); assert.deepEqual(pair, before);
@@ -74,6 +79,16 @@ test('changed editions, source evidence, manual approvals and unrelated routing 
   assert.equal(consolidate([], at).status, 'not_present');
   assert.equal(consolidate(fixture().slice(0, 1), at).status, 'not_present');
   assert.throws(() => consolidate(fixture(), 'invalid'), /INVALID_CONSOLIDATION_TIME/);
+});
+
+test('release projection fails closed on changed pending inputs and leaves the regular queue checks intact', () => {
+  const pair = fixture(), pending = structuredClone(pair[0].pending_update);
+  assert.equal(project(pair).status, 'applied');
+  assert.deepEqual(pair[0].pending_update, pending);
+  const changed = fixture(); changed[0].pending_update.sources[0].content_hash = 'new';
+  const before = structuredClone(changed);
+  assert.throws(() => project(changed), /OBERSONTHEIM_ROUTING_REPAIR_HELD/);
+  assert.deepEqual(changed, before);
 });
 
 test('archived exact paid source editions are not purchased again, while new evidence and explicit reviews remain eligible', () => {
