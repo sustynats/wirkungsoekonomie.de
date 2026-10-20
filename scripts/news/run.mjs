@@ -45,6 +45,7 @@ import { consolidateKirchnerDuplicates } from "./consolidate-kirchner-duplicates
 import { consolidateKamenDuplicates } from "./consolidate-kamen-duplicates.mjs";
 import { consolidateTrumpSanctionsDuplicates, retainedSanctionsPaidInput } from './consolidate-trump-sanctions-duplicates.mjs';
 import { consolidateHofheimDuplicates, retainedHofheimPaidInput } from './consolidate-hofheim-duplicates.mjs';
+import { consolidateObersontheimDuplicates, retainedObersontheimPaidInput } from './consolidate-obersontheim-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1423,6 +1424,10 @@ export async function runWirkungsticker(options = {}) {
   report.hofheim_duplicate_consolidation = hofheimConsolidation;
   report.living_file_merges.push(...hofheimConsolidation.changes);
   report.retired_stories += hofheimConsolidation.changes.length;
+  const obersontheimConsolidation = consolidateObersontheimDuplicates(storyStore.stories || [], now);
+  report.obersontheim_duplicate_consolidation = obersontheimConsolidation;
+  report.living_file_merges.push(...obersontheimConsolidation.changes);
+  report.retired_stories += obersontheimConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1609,7 +1614,8 @@ export async function runWirkungsticker(options = {}) {
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
     const retainedArchived = retainedSanctionsPaidInput(candidate, storyStore.stories) ? 'wt-e6f5bced9f7c773a'
-      : retainedHofheimPaidInput(candidate, storyStore.stories) ? 'wt-e083b8d828fa80c8' : null;
+      : retainedHofheimPaidInput(candidate, storyStore.stories) ? 'wt-e083b8d828fa80c8'
+      : retainedObersontheimPaidInput(candidate, storyStore.stories) ? 'wt-9909c1676a2f8602' : null;
     if (retainedArchived) {
       (report.retained_published_source_inputs ||= []).push({ story_id: candidate.story_id,
         archived_story_id: retainedArchived, reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
