@@ -11,6 +11,31 @@ const source = (title, url = "https://example.org/a", more = {}) => ({ title, ur
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
 
+test('an administrative district suffix is not a different incident place', () => {
+  const title = 'Schüsse mit Schreckschusspistole lösen SEK-Einsatz aus';
+  const url = 'https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/kreis-schwaebisch-hall--schuesse-mit-schreckschusspistole-loesen-sek-einsatz-aus-38421916.html';
+  const original = source(title, url, { summary: 'Der Einsatz war in Obersontheim-Oberfischach.' });
+  const previous = story('original', title, { sources: [original], source_summary: 'Die Polizei rückte in Obersontheim-Oberfischach im Kreis Schwäbisch Hall an.' });
+  const updated = { ...original, published_at: '2026-09-04T12:00:00Z' };
+  const before = structuredClone(previous);
+  assert.deepEqual(fileSubject(previous).places, ['obersontheim-oberfischach']);
+  assert.equal(subjectConflict(updated, previous), false);
+  assert.equal(livingFileMatch(updated, previous).score, 1);
+  const [cluster] = clusterItems([updated], [previous], updated.published_at);
+  assert.equal(cluster.story_id, previous.story_id);
+  assert.equal(cluster.existing_story, previous);
+  assert.deepEqual(previous, before);
+  const elsewhere = { ...updated, summary: 'Der Einsatz war in Gaildorf.' };
+  assert.equal(subjectConflict(elsewhere, previous), true);
+  assert.equal(livingFileMatch(elsewhere, previous).score, 0);
+});
+
+test('real locative town-name suffixes remain distinct', () => {
+  assert.deepEqual(fileSubject({ title: 'Einsatz in Frankfurt am Main' }).places, ['frankfurt am main']);
+  assert.deepEqual(fileSubject({ title: 'Einsatz in Freiburg im Breisgau' }).places, ['freiburg im breisgau']);
+  assert.equal(subjectConflict({ title: 'Einsatz in Frankfurt am Main' }, { title: 'Einsatz in Frankfurt an der Oder' }), true);
+});
+
 test('school subjects in a checked summary are not conflicting geographical places', () => {
   for (const subject of ['Mathematik', 'Lesen', 'Naturwissenschaften']) {
     const title = 'Schule: Deutschland in neuer Vergleichsstudie mit schwächeren Ergebnissen';
