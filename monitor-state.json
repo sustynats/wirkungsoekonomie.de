@@ -21,16 +21,17 @@
       "firstSeen": "2026-10-20T12:22:40.536Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-20T12:22:40.536Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-20T12:22:40.536Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "45821be46c38b6432eb3ee66",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-20T12:50:48.790Z"
+    }
+  ],
   "dailyDate": "2026-10-20",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3094,11 +3095,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/amazon-investiert-im-nachsten-jahr-16-milliarden-euro-in-deutsche-cloud-und-ki-421db3/": {
         "first_seen_at": "2026-10-20T12:21:18.585Z",
         "source_at": "2026-10-20T09:53:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bayern-kampft-gegen-berliner-enteignungsplane-d2d997/": {
+        "first_seen_at": "2026-10-20T12:50:48.790Z",
+        "source_at": "2026-10-20T11:00:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-das-plant-rot-grun-rot-fur-berlin-b43091/": {
+        "first_seen_at": "2026-10-20T12:50:48.790Z",
+        "source_at": "2026-10-17T18:33:42.000Z"
       }
     },
-    "last_new_at": "2026-10-20T12:21:18.585Z",
-    "checked_at": "2026-10-20T12:36:02.979Z",
-    "last_current_new_at": "2026-10-20T12:21:18.585Z"
+    "last_new_at": "2026-10-20T12:50:48.790Z",
+    "checked_at": "2026-10-20T12:50:48.790Z",
+    "last_current_new_at": "2026-10-20T12:50:48.790Z"
   },
   "recovery_attempts": [
     {
