@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-20T04:39:47.124Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-20T05:03:46.144Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -51,8 +51,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explosion-geldautomat-an-waschanlage-in-marsberg-gesprengt-52e3b5/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explosion-geldautomat-an-waschanlage-in-marsberg-gesprengt-52e3b5/",
-      "title": "Geldautomat an Waschanlage in Marsberg gesprengt",
-      "summary": "In Marsberg wurde laut einer einzelnen journalistischen Meldung ein Geldautomat an einer Waschanlage gesprengt. Unklar sind der genaue Ablauf, die Verantwortlichen und eine mögliche Beute.",
+      "title": "Laut stern: Geldautomat an Waschanlage in Marsberg gesprengt",
+      "summary": "In Marsberg wurde laut stern ein Geldautomat an einer Waschanlage gesprengt. Ablauf, Verantwortliche, mögliche Beute und Folgen bleiben offen.",
       "date_published": "2026-10-20T04:24:15.000Z",
       "date_modified": "2026-10-20T04:24:15.000Z",
       "_woek_released_at": "2026-10-20T04:46:29.909Z",
@@ -68,13 +68,45 @@
           "status": "potential"
         },
         "planet": {
-          "magnitude": 0,
-          "direction": "neutral",
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 1,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/der-checkpoint-am-morgen-partei-kommission-soll-senatsmitglieder-der-grunen-auswahlen-7d8569/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/der-checkpoint-am-morgen-partei-kommission-soll-senatsmitglieder-der-grunen-auswahlen-7d8569/",
+      "title": "Laut Tagesspiegel soll eine vierköpfige Kommission mögliche Senatsmitglieder der Grünen auswählen",
+      "summary": "Die Grünen sollen laut Tagesspiegel nach Kritik am Spitzenduo eine vierköpfige Kommission zur Auswahl möglicher Regierungsmitglieder einsetzen. Offen bleiben Zusammensetzung, Kriterien und konkrete politische Folgen.",
+      "date_published": "2026-10-20T04:07:04.000Z",
+      "date_modified": "2026-10-20T04:07:04.000Z",
+      "_woek_released_at": "2026-10-20T05:12:06.080Z",
+      "tags": [
+        "Demokratie",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
