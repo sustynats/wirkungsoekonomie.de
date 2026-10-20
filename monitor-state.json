@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-20T06:05:51.149Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6ed23399dece74ae6e52b926",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-20T11:20:46.613Z"
+    }
+  ],
   "dailyDate": "2026-10-20",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3070,11 +3071,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-explosionen-in-weimar-polizei-sucht-erneut-in-trummern-nach-vermisstem-bewohner-16a8e2/": {
         "first_seen_at": "2026-10-20T10:36:25.788Z",
         "source_at": "2026-10-20T09:34:26.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/amazon-plant-investitionen-von-16-milliarden-euro-in-deutschland-b95a17/": {
+        "first_seen_at": "2026-10-20T11:20:46.613Z",
+        "source_at": "2026-10-20T10:10:00.000Z"
       }
     },
-    "last_new_at": "2026-10-20T10:36:25.788Z",
-    "checked_at": "2026-10-20T11:05:53.770Z",
-    "last_current_new_at": "2026-10-20T10:36:25.788Z"
+    "last_new_at": "2026-10-20T11:20:46.613Z",
+    "checked_at": "2026-10-20T11:20:46.613Z",
+    "last_current_new_at": "2026-10-20T11:20:46.613Z"
   },
   "recovery_attempts": [
     {
