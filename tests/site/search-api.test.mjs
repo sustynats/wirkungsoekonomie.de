@@ -7,7 +7,7 @@ test("suggest and search expose the P1.3 interface with non-empty dynamic facets
   const originalFetch = globalThis.fetch;
   const core = [
     { title: "Wirkung verstehen", url: "/verstehen/wirkung/", description: "Wirkung ist eine Zustandsveränderung.", body: "Outcome und Wirkung", aliases: ["Impact"], raum: "Verstehen", typ: "Seite", thema: ["Wirkung"], rolle: [], priority: 70 },
-    { title: "Wirkungsrechner", url: "/werkzeuge/rechner/", description: "Wirkung nachvollziehbar rechnen.", body: "Rechner", aliases: [], raum: "Werkzeuge", typ: "Werkzeug", thema: ["Wirkung"], rolle: ["Unternehmen"], priority: 60 },
+    { title: "Wirkungsrechner", url: "/werkzeuge/rechner/", description: "Wirkung nachvollziehbar rechnen.", body: "Rechner", aliases: ["Impact Controlling"], raum: "Werkzeuge", typ: "Werkzeug", thema: ["Wirkung"], rolle: ["Unternehmen"], priority: 200 },
   ];
   const archives = [
     { title: "Archivpapier Wirkung", url: "/bibliothek/wirkung/", description: "Historische Herleitung.", body: "Wirkung", aliases: [], raum: "Bibliothek", typ: "Publikation", thema: ["Wirkung"], rolle: [], priority: 30 },
@@ -47,6 +47,9 @@ test("suggest and search expose the P1.3 interface with non-empty dynamic facets
     assert.ok(all.facets.typ.every((item) => item.count > 0));
     assert.ok(all.facets.thema.every((item) => item.count > 0));
     assert.deepEqual(all.facets.rolle, [{ value: "Unternehmen", count: 1 }]);
+
+    const exactAlias = await client.search("Impact");
+    assert.equal(exactAlias.results[0].url, "/verstehen/wirkung/", "an exact editorial alias precedes a higher-priority partial alias");
 
     const tools = await client.search("Wirkung", { raum: "Werkzeuge", typ: "Werkzeug" });
     assert.equal(tools.total, 1);

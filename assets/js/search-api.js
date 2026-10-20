@@ -87,7 +87,8 @@ function score(entry, rawQuery, terms) {
   if (title === query) value += 500;
   else if (title.startsWith(query)) value += 260;
   else if (title.includes(query)) value += 180;
-  if (aliases.includes(query)) value += 120;
+  if (asArray(entry.aliases).some((alias) => normalize(alias) === query)) value += 260;
+  else if (aliases.includes(query)) value += 120;
   if (description.includes(query)) value += 70;
   if (direct) value += 55;
   value += Math.min(semanticMatches.length * 8, 80);

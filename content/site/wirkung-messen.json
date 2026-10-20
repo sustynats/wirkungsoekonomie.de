@@ -1,0 +1,421 @@
+{
+  "title": "Wie lässt sich Wirkung messen und nachweisen?",
+  "subtitle": "Von der guten Absicht zu überprüfbaren Veränderungen für Mensch, Planet und Demokratie.",
+  "description": "Wirkung messen und nachweisen: konkrete KII, Vergleichsgruppen, Mobilitäts-Lernrechnung, Kommunikationsbeispiel und Arbeitsvorlagen für korrigierbare Entscheidungen.",
+  "date": "2026-10-20",
+  "route": "/verstehen/wirkung-messen/",
+  "learning": {
+    "values": [
+      14,
+      10,
+      14,
+      13
+    ],
+    "labels": [
+      "Gruppe A vorher",
+      "Gruppe A nachher",
+      "Vergleichsgruppe B vorher",
+      "Vergleichsgruppe B nachher"
+    ],
+    "unit": "% des verfügbaren Haushaltseinkommens",
+    "target": null,
+    "targetNote": "Vor Beginn sachlich zu begründen; kein aus dem Ergebnis abgeleiteter Zielwert."
+  },
+  "process": {
+    "label": "Prüfablauf von der Frage zur korrigierten Entscheidung",
+    "steps": [
+      {
+        "symbol": "1",
+        "title": "Frage und Ziel klären",
+        "text": "Welche Funktion soll sich für welche Menschen verbessern? Echte Alternativen vergleichen."
+      },
+      {
+        "symbol": "2",
+        "title": "Messplan festlegen",
+        "text": "Größen, Quellen, Ausgangszustand, Vergleich, Unsicherheit und Schutzbedingungen vorab benennen."
+      },
+      {
+        "symbol": "3",
+        "title": "Veränderung beobachten",
+        "text": "Mit derselben Messweise erfassen, was sich tatsächlich verändert. Datenlücken offenlassen."
+      },
+      {
+        "symbol": "4",
+        "title": "Vergleich und Zurechnung prüfen",
+        "text": "Gemeinsame Entwicklung und andere Ursachen untersuchen. Befund und Erklärung trennen."
+      },
+      {
+        "symbol": "5",
+        "title": "Bewerten und schützen",
+        "text": "Verteilung, Nebenfolgen und begründete Grenzen prüfen. Eine Zahl ist kein Gesamturteil."
+      },
+      {
+        "symbol": "6",
+        "title": "Entscheiden und korrigieren",
+        "text": "Zuständige Menschen legen Schritte und Prüftermine fest. Neue Befunde können die Entscheidung ändern."
+      }
+    ],
+    "caption": "Die Reihenfolge zeigt einen Prüfablauf, keinen bewiesenen Ursache-Wirkungs-Verlauf."
+  },
+  "kpiComparison": {
+    "caption": "Dieselbe Handlung: Leistung und Zustandsveränderung unterscheiden",
+    "columns": [
+      "Prüfgegenstand",
+      "KPI: Was wurde geleistet?",
+      "KII: Was ist zu untersuchen?"
+    ],
+    "rows": [
+      [
+        "Verkehrsangebot",
+        "Zusätzliche Fahrten und bereitgestellte Plätze",
+        "Erreichbarkeit notwendiger Orte, Kostenbelastung und Sicherheit"
+      ],
+      [
+        "Qualifizierung",
+        "Teilnahmen und Abschlüsse",
+        "Beschäftigung und Einkommen nach 12 und 24 Monaten; tatsächlich genutzte Kompetenzen"
+      ],
+      [
+        "Öffentliche Information",
+        "Veröffentlichungen und Reichweite",
+        "Sachverständnis, Berichtigung von Fehlannahmen und Zugang zu Beteiligung"
+      ]
+    ]
+  },
+  "indicators": [
+    {
+      "id": "mobilitaetskosten",
+      "dimension": "Mensch",
+      "title": "Wie belastend sind notwendige Wege?",
+      "question": "Welchen Einkommensanteil müssen Haushalte für notwendige Mobilität einsetzen?",
+      "method": "Je Haushalt notwendige Mobilitätsausgaben durch positives verfügbares Einkommen desselben Zeitraums teilen und mit 100 multiplizieren. In beiden Gruppen denselben Mittelwert individueller Quoten bilden. Kostenumfang und Erstattungen vorab festlegen.",
+      "unit": "% je Haushalt; Gruppenunterschiede in Prozentpunkten",
+      "dataNeed": "Wegetagebücher, Kostenbelege, kompatible Einkommensangaben und Zahl nicht berechenbarer Fälle. Keine realen Haushaltswerte auf dieser Seite.",
+      "observationTime": "Mehrere vergleichbare Vorperioden; danach 6, 12, 24 und 36 Monate.",
+      "comparison": "Geeignete Haushalte ohne Maßnahme und eigene Ausgangswerte; Einkommen und Raum getrennt auswerten.",
+      "uncertainty": "Nichtteilnahme, Erinnerungsfehler, Einkommenswechsel, Panel-Ausfälle und unterschiedliche Kostenabgrenzung.",
+      "limit": "Bei Einkommen null, negativ oder fehlend keine Quote und kein Ersatzwert 0. Ein niedrigerer Anteil durch ausgefallene notwendige Wege ist kein ungeteilter Erfolg.",
+      "sources": [
+        "begriffe",
+        "einkommen",
+        "vergleich"
+      ]
+    },
+    {
+      "id": "erreichbarkeit",
+      "dimension": "Mensch",
+      "title": "Kommen Menschen an notwendige Orte?",
+      "question": "Wer erreicht Arbeit, Bildung, Versorgung und Betreuung unter den vereinbarten Bedingungen?",
+      "method": "Vorab Ziele, relevante Tageszeiten, Höchstwegezeiten, Bezahlbarkeit, Barrierefreiheit, Sicherheit und Mindestqualität begründen. Menschen mit erfüllten Bedingungen durch die betreffende Zielgruppe teilen und mit 100 multiplizieren. Zugangsprobleme zusätzlich qualitativ erheben.",
+      "unit": "% der definierten Zielgruppe; Zeit und Preis getrennt",
+      "dataNeed": "Fahrpläne, tatsächliche Zuverlässigkeit, Wege- und Zugangsdaten sowie barrierearme Befragung der Betroffenen.",
+      "observationTime": "Vor Beginn und zu festen Folgezeitpunkten, einschließlich Ferien, Randzeiten und saisonaler Änderungen.",
+      "comparison": "Dieselben Ziele, Populationen und Bedingungen für tatsächliche Alternativen und den Verlauf ohne Eingriff.",
+      "uncertainty": "Unvollständige Fahrplandaten, veränderte Zielorte, Stichprobenfehler und schwer erreichbare Gruppen.",
+      "limit": "Eine nahe Haltestelle oder ein guter Durchschnitt beweist keine nutzbare Verbindung. Keine politisch bequem gesetzte Universalgrenze.",
+      "sources": [
+        "zugang",
+        "beteiligung"
+      ]
+    },
+    {
+      "id": "lebenszyklus",
+      "dimension": "Planet",
+      "title": "Was entsteht über den Lebenszyklus?",
+      "question": "Wie verändern sich Treibhausgasemissionen bei funktional vergleichbarer Mobilität?",
+      "method": "Herstellung, Infrastrukturanteile, Betrieb, Wartung und Lebensende mit offengelegter Bilanzgrenze erfassen. Gesamtmenge ausweisen und auf dieselbe funktionale Einheit beziehen, etwa einen Personenkilometer bei vergleichbarer Erreichbarkeit. Auslastung und Leerfahrten berücksichtigen.",
+      "unit": "kg CO2e je funktionaler Einheit und absolute kg CO2e im Zeitraum",
+      "dataNeed": "Aktivitätsdaten, Energie- und Materialeinsatz, passende Emissionsfaktoren, Herkunft, Nutzungsdauer und Entsorgung.",
+      "observationTime": "Lebenszyklus im begründeten Nutzungsszenario; tatsächliche Betriebsdaten jährlich nachführen.",
+      "comparison": "Funktional gleiche Alternativen, gleicher Zeitraum und kompatible Bilanzgrenzen.",
+      "uncertainty": "Faktoren, Strommix, Auslastung, Lebensdauer, künftige Nutzung und Rebound. Sensitivitäten getrennt zeigen.",
+      "limit": "Berechnete künftige Lebenszykluswerte sind modelliert. Niedrigere Emissionen pro Kilometer können mit mehr absoluten Emissionen einhergehen. Kein alleiniger Gesamtbeweis.",
+      "sources": [
+        "klima",
+        "begriffe"
+      ]
+    },
+    {
+      "id": "wasser",
+      "dimension": "Planet",
+      "title": "Wo wird Wasser knapp?",
+      "question": "Wie verändert sich Wasserverbrauch in den betroffenen Einzugsgebieten und Jahreszeiten?",
+      "method": "Verbrauch nach dokumentierter Wasserbilanz je Einzugsgebiet und Saison erfassen; Entnahme, Rückflüsse, Verdunstung und Verlagerung getrennt dokumentieren. Lokale Verfügbarkeit und Wasserqualität daneben ausweisen. Keine frei gesetzte Stressgewichtung.",
+      "unit": "m3 Verbrauch je Gebiet und Zeitraum; Entnahme und Rückflüsse separat",
+      "dataNeed": "Standortbezogene Betriebs- und Lieferkettendaten, Wasserbilanz, örtliche Ressourcen- und Stressdaten; bisher Datenbedarf.",
+      "observationTime": "Vorher und nachher bei vergleichbarer Saison, einschließlich Trockenperioden.",
+      "comparison": "Gleiche Funktion und Bilanzgrenze; räumliche Verlagerung innerhalb der Lieferkette prüfen.",
+      "uncertainty": "Fehlende Lieferkettendaten, wechselnde Wasserverfügbarkeit, Rückflussqualität und Zeitbezug.",
+      "limit": "Ein globaler Summenwert verdeckt lokale Engpässe. Der amtliche Wasserstressindikator misst etwas anderes als dieser Verbrauchswert.",
+      "sources": [
+        "wasser",
+        "begriffe"
+      ]
+    },
+    {
+      "id": "beteiligungszugang",
+      "dimension": "Demokratie",
+      "title": "Können Betroffene tatsächlich mitreden?",
+      "question": "Welche betroffenen Gruppen erhalten rechtzeitig zugängliche Informationen und können Anliegen wirksam einbringen?",
+      "method": "Grundgesamtheit und relevante Gruppen vorab bestimmen. Getrennt erfassen: rechtzeitig und zugänglich informierte Menschen, tatsächlich nutzbare Beteiligungsmöglichkeiten, eingebrachte Anliegen und begründete Antworten. Für Anteilswerte den jeweiligen Nenner offenlegen; Interviews prüfen versteckte Ausschlüsse.",
+      "unit": "% je klar definiertem Zugangsschritt; Antwortdauer in Tagen; qualitative Befunde",
+      "dataNeed": "Barrierearme Erhebung unter Betroffenen und Nichtteilnehmenden, Verfahrensprotokolle, Rückmeldungen und dokumentierte Antworten.",
+      "observationTime": "Vor Einführungsentscheidung, während des Verfahrens und nach Ablauf der zugesagten Antwortfristen.",
+      "comparison": "Dasselbe Verfahren vor und nach einer Änderung oder vergleichbare Verfahren; Unterschiede der Betroffenen beachten.",
+      "uncertainty": "Selbstauswahl, Nichterreichbarkeit, verdeckte Einschüchterung und unterschiedliche Anliegen.",
+      "limit": "Die Zahl angebotener Veranstaltungen beweist keinen Zugang. Zustimmung zur WÖk oder zu einer Partei ist keine Erfolgskennzahl.",
+      "sources": [
+        "beteiligung",
+        "begriffe"
+      ]
+    },
+    {
+      "id": "sachverstaendnis",
+      "dimension": "Demokratie",
+      "title": "Was wurde verstanden oder berichtigt?",
+      "question": "Ändert eine Information das Verständnis unabhängig überprüfbarer Sachfragen?",
+      "method": "Vorab sachlich prüfbare Fragen, richtige Antworten und Auswertung festlegen. Anteil korrekt beantworteter Fragen sowie Veränderungen einzelner Fehlannahmen mit derselben Messweise erfassen; geeignete Vergleichsgruppe und qualitative Verständnisfragen ergänzen.",
+      "unit": "% korrekter Antworten und Veränderungen in Prozentpunkten; keine Gesinnungsnote",
+      "dataNeed": "Quellen für die Sachfragen, dokumentierte Information oder Korrektur, freiwillige wiederholte Befragung und Informationen über Panel-Ausfälle.",
+      "observationTime": "Vor der Information, kurz danach und erneut mit begründetem Abstand für Dauerhaftigkeit.",
+      "comparison": "Geeignete Vergleichsgruppe; alternative Informationsquellen und gesellschaftliche Parallelereignisse berücksichtigen.",
+      "uncertainty": "Testlernen, andere Medien, wechselnde Teilnahme, Frageformulierung und soziale Erwünschtheit.",
+      "limit": "Inhaltsanalyse und Reichweite messen keinen Publikumseffekt. Tatsächlich gemessener Wissenszuwachs ist eine reale Veränderung; Zurechnung und späteres Handeln bleiben eigene Fragen.",
+      "sources": [
+        "vergleich",
+        "beteiligung"
+      ]
+    },
+    {
+      "id": "resilienz",
+      "dimension": "Querschnitt",
+      "title": "Was bleibt unter einer Störung funktionsfähig?",
+      "question": "Welche wesentlichen Leistungen bleiben bei einer konkret definierten Störung erhalten, und wie schnell werden sie wiederhergestellt?",
+      "method": "Störung, Dauer, notwendige Dienste und Mindestqualität vorab festlegen. Erhaltene Leistungen je Dienst auf den benötigten Umfang beziehen; Ausfall- und Wiederherstellungsdauer getrennt dokumentieren. Gemeinsame Ausfallursachen und erreichbare Alternativen prüfen.",
+      "unit": "% je wesentlicher Leistung; Ausfall- und Wiederherstellungsdauer in Stunden oder Tagen",
+      "dataNeed": "Netz- und Lieferantenabhängigkeiten, Vorräte, Ersatzangebote sowie protokollierte Übungen oder tatsächliche Störungsverläufe.",
+      "observationTime": "Vorab Szenarien prüfen; Übungen wiederholen; echte Ereignisse und Nachbeobachtung gesondert auswerten.",
+      "comparison": "Dasselbe Störungsbild, dieselben notwendigen Leistungen und Mindestqualitäten für die Alternativen.",
+      "uncertainty": "Szenarioauswahl, gemeinsame Ausfälle, veränderte Nachfrage und lückenhafte Ereignisdaten.",
+      "limit": "Simulation, geprüftes Modell, Übung und realer Krisenbefund sind verschiedene Datenarten. Ausgebliebener Schaden allein beweist keine Präventionsleistung.",
+      "sources": [
+        "resilienz",
+        "begriffe"
+      ]
+    }
+  ],
+  "profile": [
+    {
+      "key": "subject",
+      "label": "Prüfgegenstand und Entscheidung",
+      "value": "Lernfall: verbessertes Verkehrsangebot einer fiktiven Gemeinde. Soll das Angebot nach der Erprobung fortgeführt, verändert oder ausgeweitet werden?"
+    },
+    {
+      "key": "function",
+      "label": "Gewünschte Funktion und Betroffene",
+      "value": "Haushalte erreichen notwendige Ziele zuverlässig, bezahlbar, barrierearm und sicher. Betrachtet werden Haushalte im vorab abgegrenzten Gemeindegebiet, getrennt nach Einkommen, räumlicher Lage und Zugangsbedarf."
+    },
+    {
+      "key": "period",
+      "label": "Raum und Beobachtungszeit",
+      "value": "Fiktives Gemeindegebiet; reale Gebietsabgrenzung noch festzulegen. Erhebungen 24, 12 und 6 Monate vor Beginn sowie unmittelbar davor; anschließend nach 6, 12, 24 und 36 Monaten. Einführungsphase: Monate 0 bis 3."
+    },
+    {
+      "key": "definition",
+      "label": "Definition, Formel und Aggregation",
+      "value": "Für jeden Haushalt h mit positivem verfügbaren Einkommen: q_h = notwendige Mobilitätsausgaben_h / verfügbares Einkommen_h * 100. In jeder Gruppe derselbe arithmetische Mittelwert der gültigen individuellen Haushaltsquoten: Summe(q_h) / Anzahl gültiger Haushalte. Kein Quotient aggregierter Ausgaben und Einkommen; keine Äquivalenzgewichtung in dieser Lernrechnung."
+    },
+    {
+      "key": "boundary",
+      "label": "Ein- und Ausschlüsse",
+      "value": "Ausgaben und Einkommen desselben Monats erfassen. Notwendige Wege zu Arbeit, Bildung, Versorgung und Betreuung vorab definieren; Tickets sowie anteilige Fahrzeug-, Energie-, Wartungs- und Versicherungskosten nachvollziehbar zuordnen. Freizeitwege und reine Zeitkosten sind nicht in dieser Geldquote enthalten, bleiben aber für die Gesamtprüfung relevant. Erstattungen gesondert zeigen; Finanzierungs- und Verteilungsfolgen nicht als Ressourcenersparnis verbuchen."
+    },
+    {
+      "key": "invalidIncome",
+      "label": "Ungültige Nenner und fehlende Angaben",
+      "value": "Bei fehlendem, null oder negativem Einkommen keine Quote berechnen. Zahl und Struktur dieser Fälle gesondert ausweisen und ihre tatsächliche Versorgung prüfen. Fehlende Werte nicht durch 0 ersetzen. Auch unbekannte Ausgaben oder unvollständige Zeiträume bleiben offen."
+    },
+    {
+      "key": "baseline",
+      "label": "Ausgangswert",
+      "valueFrom": "baseline"
+    },
+    {
+      "key": "target",
+      "label": "Vorab begründeter Zielwert",
+      "valueFrom": "target"
+    },
+    {
+      "key": "counterfactual",
+      "label": "Gegenfaktum und Vergleich",
+      "valueFrom": "counterfactual"
+    },
+    {
+      "key": "data",
+      "label": "Datenquelle, Quellenrolle und Erhebung",
+      "value": "Für einen realen Fall: freiwilliges, datensparsam erhobenes Haushalts-Wegetagebuch und kompatible Einkommensangaben; Fahrplan- und Zugangsdaten dienen der ergänzenden Versorgungsprüfung. Rechnungen und Tickets belegen Kosten, nicht automatisch Notwendigkeit oder Ursache. Geschichtetes Panel mit dokumentierter Auswahl und denselben Fragen in beiden Gruppen; Stichprobenumfang und Ausfallbehandlung sind vorab fachlich zu planen, noch nicht festgelegt. Das veröffentlichte Beispiel enthält ausschließlich Modellannahmen."
+    },
+    {
+      "key": "access",
+      "label": "Datenzugang und Datenschutz",
+      "value": "Vor einer echten Erhebung Rechtsgrundlage, Einwilligung wo erforderlich, Zuständigkeit, Zugriffsrechte, Löschfristen und sichere Verarbeitung klären. Identifizierende Angaben nicht veröffentlichen; kleine Gruppen schützen. Öffentlich nur ausreichend aggregierte Ergebnisse. Diese Webseite erhebt keine Haushaltsdaten."
+    },
+    {
+      "key": "observations",
+      "label": "Datenstatus und vier Lernwerte",
+      "valueFrom": "observations"
+    },
+    {
+      "key": "attribution",
+      "label": "Zurechnung und mögliche Widerlegung",
+      "value": "Vereinfachte Differenz-von-Differenzen auf Gruppenmittelwerten. Erforderlich: plausible parallele Entwicklung ohne Maßnahme, keine unterschiedlich wirksamen zusätzlichen Eingriffe, keine relevanten Übertragungseffekte, vergleichbare Population und Erhebung. Mehrere Vorperioden und fachlich passende Unsicherheitsanalyse vorsehen. Andere Einkommensentwicklung, Energiepreise, Umzüge, ausgefallene notwendige Wege oder ein anderes Verkehrsprogramm können die Interpretation widerlegen. Zwei Zahlenpaare belegen die Voraussetzungen nicht."
+    },
+    {
+      "key": "uncertainty",
+      "label": "Unsicherheit, Verteilung und Nebenfolgen",
+      "value": "Stichprobenfehler, Erinnerungsfehler, Panel-Ausfälle und Methodensprünge prüfen. Ergebnisse nach Einkommen und Raum ausweisen, ohne einzelne Haushalte zu bewerten. Kein erfundenes Konfidenzintervall. Zugänglichkeit, Sicherheit, Lärm, Schadstoffe, Emissionen, Rohstoffe, Verlagerung und Rebound gesondert prüfen."
+    },
+    {
+      "key": "protection",
+      "label": "Schutzbedingungen",
+      "value": "Eine sinkende Kostenquote darf nicht auf weggefallenen notwendigen Wegen beruhen. Erreichbarkeit und Barrierefreiheit müssen geprüft sein. Begründete harte Schutzgrenzen und einschlägige Rechte sind nicht mit Kostenentlastung verrechenbar; konkret anzuwendende Kriterien vor der Erprobung fachlich festlegen."
+    },
+    {
+      "key": "responsibility",
+      "label": "Datenverantwortung, Entscheidung und Termin",
+      "value": "Im vorgeschlagenen Messplan sichert das kommunale Statistik- oder Erhebungsteam die Datendefinitionen; Mobilitätsplanung und fachliche Evaluation prüfen den Befund. Der zuständige Gemeinderat beziehungsweise die rechtlich zuständige Stelle entscheidet. Zuständige Personen sind im realen Auftrag zu benennen. Auswertung nach 6 und 12 Monaten, erneute Entscheidung spätestens nach 24 Monaten; bei Schutzverletzung sofortige Prüfung und Abhilfe."
+    },
+    {
+      "key": "correction",
+      "label": "Vorab benannte Korrekturregel",
+      "value": "Verschlechtert sich notwendige Erreichbarkeit, wird die Ausgestaltung unmittelbar überprüft. Bei ungeeigneter Vergleichsgruppe keine belastbare Zurechnung berichten, sondern das Design nachbessern. Bei verletzter harter Schutzgrenze positive Gesamtfreigabe blockieren und Abhilfe veranlassen. Fortführung oder Ausweitung bleibt auch bei günstigem Befund eine verantwortliche Entscheidung."
+    },
+    {
+      "key": "provenance",
+      "label": "Quellen, Version, Änderung und Prüfstatus",
+      "value": "Lernfassung vom 20. Oktober 2026. Begriffe: führender Leitfaden v1.8; Vergleichsmethode: World Bank, Impact Evaluation in Practice, Kapitel 3 und 7. Vier Prozentwerte sind gesetzte Lernannahmen. Messvorschrift beschrieben, keine empirische Erhebung und kein Kausalnachweis. Konkrete menschliche Fach- und Redaktionsabnahme ist gesondert zu dokumentieren."
+    },
+    {
+      "key": "masterItem",
+      "label": "Verknüpfung zum Masterregister",
+      "value": {
+        "id": null,
+        "status": "Keine fachlich bestätigte Zuordnung für dieses Lernblatt. Der lokale Beispielschlüssel ist kein Eintrag im Masterregister."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "begriffe",
+      "title": "Führender Begriffsleitfaden v1.8",
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/",
+      "role": "WÖk-Begriffe: Messung, Nachweis, KII, Ebenenmodell, Nichtkompensation und menschliche Verantwortung. Keine empirische Validierung des Gesamtmodells."
+    },
+    {
+      "id": "register",
+      "title": "Masterregister v1.5 und getrennte Indikatorenarchitektur",
+      "url": "/woek-id-register/methodik/",
+      "role": "Prüfgegenstände und ihre Verknüpfung mit Zustandsgrößen, Indikatoren und Beobachtungen. Eine vorhandene ID bestätigt kein validiertes Messverfahren."
+    },
+    {
+      "id": "vergleich",
+      "title": "World Bank / IDB: Impact Evaluation in Practice, 2. Auflage (2016)",
+      "url": "/quellenarchiv/wok-e-0009/",
+      "role": "Kapitel 3 und 7: Gegenfaktum und Differenz-von-Differenzen; Kapitel 9, 13, 15 und 16: Verzerrungen, Ethik, Stichprobe und Daten. Der Methodenname belegt nicht, dass Voraussetzungen im Einzelfall erfüllt sind."
+    },
+    {
+      "id": "einkommen",
+      "title": "Eurostat: Disposable income",
+      "url": "/quellenarchiv/wok-e-0010/",
+      "role": "Begrifflicher Datenanschluss für verfügbares Einkommen. Die hier definierte Mobilitätsquote ist eine fallbezogene Messvorschrift, kein als amtlich ausgegebener Eurostat-Indikator."
+    },
+    {
+      "id": "zugang",
+      "title": "UN-Habitat: Metadaten zu SDG 11.2.1 (2025)",
+      "url": "/quellenarchiv/wok-e-0011/",
+      "role": "Zugang zum öffentlichen Verkehr. Die fallbezogene Erreichbarkeit notwendiger Ziele ist weiter gefasst; die amtlichen Haltestellendistanzen sind kein universeller Grenzwert für alle notwendigen Wege."
+    },
+    {
+      "id": "klima",
+      "title": "GHG Protocol: Product Life Cycle Accounting and Reporting Standard (2011)",
+      "url": "/quellenarchiv/wok-q-0942/",
+      "role": "Lebenszyklus, funktionaler Bezug, Bilanzgrenzen und Datenqualität. Prospektive Annahmen und künftige Emissionen sind keine vollständig gemessene Zukunft."
+    },
+    {
+      "id": "wasser",
+      "title": "FAO / UN: Metadaten zu SDG 6.4.2 (2024)",
+      "url": "/quellenarchiv/wok-e-0012/",
+      "role": "Wasserstress als Verhältnis von Entnahme zu verfügbaren Ressourcen unter Berücksichtigung ökologischer Anforderungen. Kontextquelle, keine Gleichsetzung mit dem lokalen Verbrauchswert und kein frei erfundener Stressfaktor."
+    },
+    {
+      "id": "beteiligung",
+      "title": "OECD Guidelines for Citizen Participation Processes (2022)",
+      "url": "/quellenarchiv/wok-e-0013/",
+      "role": "Zweck, Inklusion, Information, Beteiligung und Rückmeldung nachvollziehbar planen und evaluieren. Kein Beleg dafür, dass ein konkretes Verfahren bereits wirksam war."
+    },
+    {
+      "id": "resilienz",
+      "title": "UNDRR: Disaster Resilience Scorecard for Cities (2017)",
+      "url": "/quellenarchiv/wok-e-0014/",
+      "role": "Systemabhängigkeiten, kritische Leistungen und Vorsorge prüfen. Eine Selbsteinschätzung, Übung oder Simulation ist kein beobachteter Krisenverlauf."
+    },
+    {
+      "id": "kennzahlen",
+      "title": "T-SROI-Rechenstandard v1.1",
+      "url": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+      "role": "Führende WÖk-Geldstromrechnung mit getrennten Schäden, Ressourcen, Zurechnung und Schutz-Gate. Diese Erklärseite führt keine neue Formel für T-SROI ein."
+    },
+    {
+      "id": "woems",
+      "title": "WÖMS 2.0: Messdesign, Evidenz und lernender Review",
+      "url": "/bibliothek/eintraege/woems-2-0/",
+      "role": "D03/D04: Indikatoren und KII spezifizieren; D06: Datenqualität und Evidenz; D12: Evaluationsdesign; H07: Befunde in einen verantwortlichen Review zurückführen. Aktuelle Präzisierungen des Begriffsleitfadens und des T-SROI-Standards gehen älteren Rechenstellen vor."
+    },
+    {
+      "id": "woemm",
+      "title": "WÖMM 2.0: Messung, Rollen und Wirkungsrealisierung",
+      "url": "/bibliothek/eintraege/woemm-2-0/",
+      "role": "Daten und Controlling, Verantwortungskette und Wirkungsrealisierungsplan: Baseline, Ziel, Evidenz, Zuständigkeit und Korrektur verbinden. Ein beschriebenes Managementverfahren bestätigt keine bereits realisierte Wirkung."
+    }
+  ],
+  "faqIds": [
+    "wirkung-messen",
+    "kii-kein-kausalbeweis",
+    "wirkungspotenzial-nachweis",
+    "wirkung-befund-entscheidung"
+  ],
+  "decisions": [
+    {
+      "label": "Zugang verschlechtert",
+      "title": "Geringere Kosten allein reichen nicht.",
+      "text": "Sinkt die Quote, weil notwendige Wege wegfallen, prüft die Mobilitätsplanung Ursachen und Ausgestaltung. Die Entlastung ist kein ungeteilter Erfolg."
+    },
+    {
+      "label": "Vergleich ungeeignet",
+      "title": "Die Zurechnung bleibt offen.",
+      "text": "Die fachliche Evaluation prüft Vortrends, weitere Eingriffe und Stichprobe. Bis das Design verbessert ist, wird kein belastbar zurechenbarer Zusatznutzen berichtet."
+    },
+    {
+      "label": "Harte Grenze verletzt",
+      "title": "Positive Gesamtfreigabe blockiert.",
+      "text": "Die zuständige Stelle veranlasst Abhilfe und weitere Prüfung. Vorteile in anderen Bereichen neutralisieren keine vorher begründete harte Schutzverletzung."
+    },
+    {
+      "label": "Zusatznutzen begründet",
+      "title": "Fortführung ist eine zu prüfende Option.",
+      "text": "Bei erfüllten Schutzbedingungen prüfen zuständige Menschen Fortführung oder Ausweitung mit Alternativen und Finanzierung. Ein Score entscheidet nicht automatisch."
+    }
+  ],
+  "feedback": {
+    "title": "Wer handelt als Nächstes?",
+    "text": "Im Mobilitätsplan prüfen Erhebungsteam, Mobilitätsplanung und fachliche Evaluation nach 6 und 12 Monaten gemeinsam Daten, Zugänge und Nebenfolgen. Neue Erkenntnisse werden mit Methodenversion dokumentiert.",
+    "action": "Spätestens nach 24 Monaten entscheidet die zuständige Stelle erneut; Schutzverletzungen werden sofort behandelt. Verantwortliche Personen sind im konkreten Auftrag vorab zu benennen."
+  },
+  "searchAliases": [
+    "Wirkung messen",
+    "Wirkungsnachweis",
+    "KII",
+    "Wirkungspotenzial",
+    "Wie wird Wirkung überprüft?"
+  ]
+}

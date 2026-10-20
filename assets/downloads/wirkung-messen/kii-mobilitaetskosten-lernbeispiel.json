@@ -1,0 +1,130 @@
+{
+  "format": "Lokales KII-Arbeitsblatt",
+  "version": "1.0",
+  "date": "2026-10-20",
+  "title": "KII-Steckbrief: Mobilitätskosten-Lernbeispiel",
+  "localExampleKey": "lernbeispiel-mobilitaetskosten",
+  "registerEntry": false,
+  "note": "Lokales Arbeitsblatt, kein Zentralregister und keine Kennung aus dem WÖk-Masterregister. Unbekannte Werte bleiben null. Keine reale Erhebung und kein Kausalnachweis.",
+  "fields": [
+    {
+      "key": "subject",
+      "label": "Prüfgegenstand und Entscheidung",
+      "value": "Lernfall: verbessertes Verkehrsangebot einer fiktiven Gemeinde. Soll das Angebot nach der Erprobung fortgeführt, verändert oder ausgeweitet werden?"
+    },
+    {
+      "key": "function",
+      "label": "Gewünschte Funktion und Betroffene",
+      "value": "Haushalte erreichen notwendige Ziele zuverlässig, bezahlbar, barrierearm und sicher. Betrachtet werden Haushalte im vorab abgegrenzten Gemeindegebiet, getrennt nach Einkommen, räumlicher Lage und Zugangsbedarf."
+    },
+    {
+      "key": "period",
+      "label": "Raum und Beobachtungszeit",
+      "value": "Fiktives Gemeindegebiet; reale Gebietsabgrenzung noch festzulegen. Erhebungen 24, 12 und 6 Monate vor Beginn sowie unmittelbar davor; anschließend nach 6, 12, 24 und 36 Monaten. Einführungsphase: Monate 0 bis 3."
+    },
+    {
+      "key": "definition",
+      "label": "Definition, Formel und Aggregation",
+      "value": "Für jeden Haushalt h mit positivem verfügbaren Einkommen: q_h = notwendige Mobilitätsausgaben_h / verfügbares Einkommen_h * 100. In jeder Gruppe derselbe arithmetische Mittelwert der gültigen individuellen Haushaltsquoten: Summe(q_h) / Anzahl gültiger Haushalte. Kein Quotient aggregierter Ausgaben und Einkommen; keine Äquivalenzgewichtung in dieser Lernrechnung."
+    },
+    {
+      "key": "boundary",
+      "label": "Ein- und Ausschlüsse",
+      "value": "Ausgaben und Einkommen desselben Monats erfassen. Notwendige Wege zu Arbeit, Bildung, Versorgung und Betreuung vorab definieren; Tickets sowie anteilige Fahrzeug-, Energie-, Wartungs- und Versicherungskosten nachvollziehbar zuordnen. Freizeitwege und reine Zeitkosten sind nicht in dieser Geldquote enthalten, bleiben aber für die Gesamtprüfung relevant. Erstattungen gesondert zeigen; Finanzierungs- und Verteilungsfolgen nicht als Ressourcenersparnis verbuchen."
+    },
+    {
+      "key": "invalidIncome",
+      "label": "Ungültige Nenner und fehlende Angaben",
+      "value": "Bei fehlendem, null oder negativem Einkommen keine Quote berechnen. Zahl und Struktur dieser Fälle gesondert ausweisen und ihre tatsächliche Versorgung prüfen. Fehlende Werte nicht durch 0 ersetzen. Auch unbekannte Ausgaben oder unvollständige Zeiträume bleiben offen."
+    },
+    {
+      "key": "baseline",
+      "label": "Ausgangswert",
+      "value": {
+        "value": 14,
+        "unit": "%",
+        "status": "Modelliert: gesetzte Lernannahme; keine reale Erhebung"
+      }
+    },
+    {
+      "key": "target",
+      "label": "Vorab begründeter Zielwert",
+      "value": {
+        "value": null,
+        "unit": "%",
+        "note": "Vor Beginn sachlich zu begründen; kein aus dem Ergebnis abgeleiteter Zielwert."
+      }
+    },
+    {
+      "key": "counterfactual",
+      "label": "Gegenfaktum und Vergleich",
+      "value": {
+        "value": 13,
+        "unit": "%",
+        "status": "Modellierter Verlauf für A ohne Maßnahme, nur unter den Vergleichsannahmen"
+      }
+    },
+    {
+      "key": "data",
+      "label": "Datenquelle, Quellenrolle und Erhebung",
+      "value": "Für einen realen Fall: freiwilliges, datensparsam erhobenes Haushalts-Wegetagebuch und kompatible Einkommensangaben; Fahrplan- und Zugangsdaten dienen der ergänzenden Versorgungsprüfung. Rechnungen und Tickets belegen Kosten, nicht automatisch Notwendigkeit oder Ursache. Geschichtetes Panel mit dokumentierter Auswahl und denselben Fragen in beiden Gruppen; Stichprobenumfang und Ausfallbehandlung sind vorab fachlich zu planen, noch nicht festgelegt. Das veröffentlichte Beispiel enthält ausschließlich Modellannahmen."
+    },
+    {
+      "key": "access",
+      "label": "Datenzugang und Datenschutz",
+      "value": "Vor einer echten Erhebung Rechtsgrundlage, Einwilligung wo erforderlich, Zuständigkeit, Zugriffsrechte, Löschfristen und sichere Verarbeitung klären. Identifizierende Angaben nicht veröffentlichen; kleine Gruppen schützen. Öffentlich nur ausreichend aggregierte Ergebnisse. Diese Webseite erhebt keine Haushaltsdaten."
+    },
+    {
+      "key": "observations",
+      "label": "Datenstatus und vier Lernwerte",
+      "value": {
+        "values": {
+          "aBefore": 14,
+          "aAfter": 10,
+          "bBefore": 14,
+          "bAfter": 13
+        },
+        "unit": "%",
+        "status": "Modelliert: vier erfundene Lernannahmen; Mittelwerte individueller Haushaltsquoten"
+      }
+    },
+    {
+      "key": "attribution",
+      "label": "Zurechnung und mögliche Widerlegung",
+      "value": "Vereinfachte Differenz-von-Differenzen auf Gruppenmittelwerten. Erforderlich: plausible parallele Entwicklung ohne Maßnahme, keine unterschiedlich wirksamen zusätzlichen Eingriffe, keine relevanten Übertragungseffekte, vergleichbare Population und Erhebung. Mehrere Vorperioden und fachlich passende Unsicherheitsanalyse vorsehen. Andere Einkommensentwicklung, Energiepreise, Umzüge, ausgefallene notwendige Wege oder ein anderes Verkehrsprogramm können die Interpretation widerlegen. Zwei Zahlenpaare belegen die Voraussetzungen nicht."
+    },
+    {
+      "key": "uncertainty",
+      "label": "Unsicherheit, Verteilung und Nebenfolgen",
+      "value": "Stichprobenfehler, Erinnerungsfehler, Panel-Ausfälle und Methodensprünge prüfen. Ergebnisse nach Einkommen und Raum ausweisen, ohne einzelne Haushalte zu bewerten. Kein erfundenes Konfidenzintervall. Zugänglichkeit, Sicherheit, Lärm, Schadstoffe, Emissionen, Rohstoffe, Verlagerung und Rebound gesondert prüfen."
+    },
+    {
+      "key": "protection",
+      "label": "Schutzbedingungen",
+      "value": "Eine sinkende Kostenquote darf nicht auf weggefallenen notwendigen Wegen beruhen. Erreichbarkeit und Barrierefreiheit müssen geprüft sein. Begründete harte Schutzgrenzen und einschlägige Rechte sind nicht mit Kostenentlastung verrechenbar; konkret anzuwendende Kriterien vor der Erprobung fachlich festlegen."
+    },
+    {
+      "key": "responsibility",
+      "label": "Datenverantwortung, Entscheidung und Termin",
+      "value": "Im vorgeschlagenen Messplan sichert das kommunale Statistik- oder Erhebungsteam die Datendefinitionen; Mobilitätsplanung und fachliche Evaluation prüfen den Befund. Der zuständige Gemeinderat beziehungsweise die rechtlich zuständige Stelle entscheidet. Zuständige Personen sind im realen Auftrag zu benennen. Auswertung nach 6 und 12 Monaten, erneute Entscheidung spätestens nach 24 Monaten; bei Schutzverletzung sofortige Prüfung und Abhilfe."
+    },
+    {
+      "key": "correction",
+      "label": "Vorab benannte Korrekturregel",
+      "value": "Verschlechtert sich notwendige Erreichbarkeit, wird die Ausgestaltung unmittelbar überprüft. Bei ungeeigneter Vergleichsgruppe keine belastbare Zurechnung berichten, sondern das Design nachbessern. Bei verletzter harter Schutzgrenze positive Gesamtfreigabe blockieren und Abhilfe veranlassen. Fortführung oder Ausweitung bleibt auch bei günstigem Befund eine verantwortliche Entscheidung."
+    },
+    {
+      "key": "provenance",
+      "label": "Quellen, Version, Änderung und Prüfstatus",
+      "value": "Lernfassung vom 20. Oktober 2026. Begriffe: führender Leitfaden v1.8; Vergleichsmethode: World Bank, Impact Evaluation in Practice, Kapitel 3 und 7. Vier Prozentwerte sind gesetzte Lernannahmen. Messvorschrift beschrieben, keine empirische Erhebung und kein Kausalnachweis. Konkrete menschliche Fach- und Redaktionsabnahme ist gesondert zu dokumentieren."
+    },
+    {
+      "key": "masterItem",
+      "label": "Verknüpfung zum Masterregister",
+      "value": {
+        "id": null,
+        "status": "Keine fachlich bestätigte Zuordnung für dieses Lernblatt. Der lokale Beispielschlüssel ist kein Eintrag im Masterregister."
+      }
+    }
+  ]
+}

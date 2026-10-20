@@ -44,10 +44,9 @@ function normalizeHref(href, sourceFile) {
   if (!clean) return "";
   const basename = clean.split("/").pop() || "";
   if (/\.[a-z0-9]+$/i.test(basename) && !basename.endsWith(".html")) return "";
-  if (clean.startsWith("/")) return clean.endsWith("/") || clean.endsWith(".html") ? clean : `${clean}/`;
-  const abs = path.resolve(path.dirname(sourceFile), clean);
-  const rel = path.relative(root, abs).split(path.sep).join("/");
-  return rel.endsWith("/") || rel.endsWith(".html") ? `/${rel}` : `/${rel}/`;
+  // Resolve URL dot segments at the web origin, never outside the artifact root.
+  const route = new URL(clean, `https://wirkungsoekonomie.de${routeFor(sourceFile)}`).pathname;
+  return route.endsWith("/") || route.endsWith(".html") ? route : `${route}/`;
 }
 
 function titleOf(html) {

@@ -1,3 +1,4 @@
+import {isPublicLearningDownload} from '../lib/public-learning-downloads.mjs';
 import fs from "node:fs";
 import path from "node:path";
 
@@ -44,6 +45,7 @@ function walk(dir) {
     if (/\.(csv|json|xlsx|xls)$/i.test(entry.name) && publicDownloadDirPattern.test(rel)) {
       if (allowedSpreadsheetPattern.test(rel)) continue;
       if (allowedRegisterExportPattern.test(rel)) continue;
+      if (isPublicLearningDownload(rel)) continue;
       forbiddenFiles.push(path.relative(root, full));
     }
   }
@@ -65,7 +67,7 @@ for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const sanitized = html
     .replace(forbiddenAnchorPattern, (match, before, _quote, hrefValue, after, inner) => {
-      if (/^https?:\/\//i.test(hrefValue) || allowedSpreadsheetPattern.test(hrefValue) || allowedRegisterExportPattern.test(hrefValue) || allowedPublicDataPattern.test(hrefValue)) return match;
+      if (/^https?:\/\//i.test(hrefValue) || allowedSpreadsheetPattern.test(hrefValue) || allowedRegisterExportPattern.test(hrefValue) || allowedPublicDataPattern.test(hrefValue) || isPublicLearningDownload(hrefValue)) return match;
       const attrs = `${before || ""} ${after || ""}`;
       const classMatch = attrs.match(/\bclass=(["'])([^"']*)\1/i);
       const classAttr = classMatch ? ` class=${classMatch[1]}${classMatch[2]}${classMatch[1]}` : ' class="badge"';
@@ -82,7 +84,10 @@ for (const file of htmlFiles) {
 const findings = [];
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
-  if (forbiddenDownloadPattern.test(html)) findings.push(path.relative(root, file));
+  for (const match of html.matchAll(new RegExp(forbiddenDownloadPattern.source,'gi'))) {
+    const href=match[0].match(/(?:href|src)=["']([^"']+)["']/i)?.[1];
+    if (!isPublicLearningDownload(href)) {findings.push(path.relative(root,file));break;}
+  }
 }
 
 if (findings.length || forbiddenFiles.length) {
@@ -97,4 +102,4 @@ if (findings.length || forbiddenFiles.length) {
   process.exit(1);
 }
 
-console.log(`Public download policy check OK: only public PDFs and the allowed WÖK-ID spreadsheet remain. Sanitized ${sanitizedFiles} HTML files.`);
+console.log(`Public download policy check OK: only public PDFs, approved register exports and explicitly listed learning worksheets remain. Sanitized ${sanitizedFiles} HTML files.`);

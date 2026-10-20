@@ -51,6 +51,10 @@
     weitere: 0,
   };
   const CURATED_QUERY_ROUTES = {
+    "wirkung messen": ["/verstehen/wirkung-messen/", "/methodik/"],
+    "wirkungsnachweis": ["/verstehen/wirkung-messen/", "/begriffe/wirkungsnachweis/"],
+    "kii": ["/verstehen/wirkung-messen/", "/begriffe/kii/"],
+    "wie wird wirkung ueberprueft": ["/verstehen/wirkung-messen/", "/methodik/"],
     methodik: ["/methodik/", "/methodik/datenbasis.html"],
     "methodik der wirkungsoekonomie": ["/methodik/", "/methodik/datenbasis.html"],
     wirkung: ["/begriffe/wirkung/", "/modell.html", "/kompass.html", "/wirkungsoekonomie.html"],
@@ -61,7 +65,7 @@
     wirkstoff: ["/begriffe/wirkstoff/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
     wirkungsraum: ["/begriffe/wirkungsraum/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
     wirkungspfad: ["/begriffe/wirkpfad/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
-    wirkungspotenzial: ["/begriffe/wirkungspotenzial/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
+    wirkungspotenzial: ["/begriffe/wirkungspotenzial/", "/verstehen/wirkung-messen/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
     wirkungskompetenz: ["/begriffe/wirkungskompetenz/", "/begriffe/idgs/", "/verstehen/sdgs-sdgplus/"],
     idg: ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
     idgs: ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
