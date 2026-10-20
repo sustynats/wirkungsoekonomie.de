@@ -1,7 +1,128 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-20T10:00:00.000Z",
+  "updated_at": "2026-10-20T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-20-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-20",
+      "window_from": "2026-10-20T10:00:00.000Z",
+      "window_to": "2026-10-20T16:00:00.000Z",
+      "stand": "2026-10-20T16:00:00.000Z",
+      "headline": "Das sind die 13 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 13,
+        "neu": 11,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-d4114446ca469e89",
+          "slug": "kreis-schwabisch-hall-sek-einsatz-nach-schussen-mit-schreckschusswaffe-in-u-haft-469e89",
+          "title": "Laut stern: Nach Schüssen in Obersontheim gelingt Festnahme erst mit SEK-Unterstützung",
+          "state": "neu",
+          "at": "2026-10-20T15:41:32.236Z",
+          "score": 3.9487
+        },
+        {
+          "story_id": "wt-7e7ad974e135dd3e",
+          "slug": "neue-daten-zur-grundsicherung-1-4-millionen-menschen-beziehen-in-deutschland-burgergeld-35dd3e",
+          "title": "Laut Stern: Die meisten Arbeitslosen leben in zwei Bundesländern",
+          "state": "neu",
+          "at": "2026-10-20T15:19:04.154Z",
+          "score": 5.8863
+        },
+        {
+          "story_id": "wt-5cd007a6df97a5e8",
+          "slug": "merz-verkundet-investitionszusagen-in-hohe-von-rund-230-milliarden-97a5e8",
+          "title": "Laut Merz: Unternehmen sagen Investitionen von rund 230 Milliarden Euro zu",
+          "state": "neu",
+          "at": "2026-10-20T14:52:59.888Z",
+          "score": 3.8139
+        },
+        {
+          "story_id": "wt-14299087f9a08eaa",
+          "slug": "ermittlungen-laufen-sprengstoffverdacht-in-karlsruhe-lost-grosseinsatz-aus-a08eaa",
+          "title": "Laut stern: Großeinsatz in Karlsruhe nach Sprengstoffverdacht",
+          "state": "neu",
+          "at": "2026-10-20T14:52:10.111Z",
+          "score": 4
+        },
+        {
+          "story_id": "wt-baded471349d1ba0",
+          "slug": "amazon-will-4-8-milliarden-euro-in-rechenzentren-im-rhein-main-gebiet-investieren-9d1ba0",
+          "title": "Laut hessenschau: Amazon plant 4,8 Milliarden Euro für Rechenzentren im Rhein-Main-Gebiet",
+          "state": "neu",
+          "at": "2026-10-20T13:31:14.565Z",
+          "score": 7.5868
+        },
+        {
+          "story_id": "wt-c40c82d4edfed764",
+          "slug": "afd-fraktionschef-kirchner-will-zusammenarbeit-mit-bsw-schriftlich-festhalten-fed764",
+          "title": "Laut MDR: AfD will Zusammenarbeit mit BSW in Sachsen-Anhalt schriftlich festhalten",
+          "state": "fortgeschrieben",
+          "at": "2026-10-20T13:05:53.607Z",
+          "score": 7.2664
+        },
+        {
+          "story_id": "wt-06d434328cbf3e96",
+          "slug": "spektakulare-bergung-ukrainischer-soldat-erstmals-mit-flugdrohne-evakuiert-videos-zeigen-bf3e96",
+          "title": "Laut Stern: Ukrainischer Soldat erstmals per Flugdrohne evakuiert",
+          "state": "neu",
+          "at": "2026-10-20T12:35:23.655Z",
+          "score": 3.4317
+        },
+        {
+          "story_id": "wt-bd01d5c770d2d997",
+          "slug": "bayern-kampft-gegen-berliner-enteignungsplane-d2d997",
+          "title": "Laut Bayerischer Staatsregierung drängt Bayern auf Gesetz gegen Berliner Vergesellschaftungspläne",
+          "state": "neu",
+          "at": "2026-10-20T12:09:20.294Z",
+          "score": 5.3593
+        },
+        {
+          "story_id": "wt-d0e2e846eab43091",
+          "slug": "regierungsbildung-das-plant-rot-grun-rot-fur-berlin-b43091",
+          "title": "Laut Tagesspiegel: Rot-Grün-Rot in Berlin: Sondierungspapier und Streit über Teilhabe",
+          "state": "neu",
+          "at": "2026-10-20T12:08:13.325Z",
+          "score": 5.3562
+        },
+        {
+          "story_id": "wt-9d8f79481631265d",
+          "slug": "polizei-in-hannover-stoppt-mit-messern-bewaffnete-frau-durch-schuss-31265d",
+          "title": "Laut Polizei: Schuss verletzt mit Messern bewaffnete Frau in Hannover",
+          "state": "neu",
+          "at": "2026-10-20T11:43:20.636Z",
+          "score": 9.7383
+        },
+        {
+          "story_id": "wt-cbe886ad69421db3",
+          "slug": "amazon-investiert-im-nachsten-jahr-16-milliarden-euro-in-deutsche-cloud-und-ki-421db3",
+          "title": "Amazon will laut heise 16 Milliarden Euro in deutsche Cloud und KI investieren",
+          "state": "neu",
+          "at": "2026-10-20T11:08:42.146Z",
+          "score": 5.1908
+        },
+        {
+          "story_id": "wt-a62461b6b1b95a17",
+          "slug": "amazon-plant-investitionen-von-16-milliarden-euro-in-deutschland-b95a17",
+          "title": "Amazon plant 16 Milliarden Euro für Rechenzentren und KI in Deutschland",
+          "state": "neu",
+          "at": "2026-10-20T10:42:40.196Z",
+          "score": 5.5832
+        },
+        {
+          "story_id": "wt-b33c44251616a8e2",
+          "slug": "nach-explosionen-in-weimar-polizei-sucht-erneut-in-trummern-nach-vermisstem-bewohner-16a8e2",
+          "title": "Laut Polizei: Suche nach vermisstem Bewohner in Weimar-Trümmern geht weiter",
+          "state": "fortgeschrieben",
+          "at": "2026-10-20T10:18:47.780Z",
+          "score": 6.8022
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-20-mittagslage",
       "slot": "mittagslage",
@@ -5423,79 +5544,6 @@
           "state": "neu",
           "at": "2026-09-20T16:11:55.725Z",
           "score": 9.0166
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-20-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-20",
-      "window_from": "2026-09-20T10:00:00.000Z",
-      "window_to": "2026-09-20T16:00:00.000Z",
-      "stand": "2026-09-20T16:00:00.000Z",
-      "headline": "Das sind die 7 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 7,
-        "neu": 7,
-        "fortgeschrieben": 0
-      },
-      "entries": [
-        {
-          "story_id": "wt-56dc1046cf0daf53",
-          "slug": "cyberkriminalitat-hacker-erbeutet-daten-von-studierenden-der-munchner-lmu-0daf53",
-          "title": "Laut stern: Hacker erbeutet Daten von Studierenden der Münchner LMU",
-          "state": "neu",
-          "at": "2026-09-20T13:55:28.716Z",
-          "score": 5.6541
-        },
-        {
-          "story_id": "wt-57d0e73ba080bec8",
-          "slug": "spezialkrafte-im-einsatz-waffenfund-in-keller-in-rathenow-anwohner-evakuiert-80bec8",
-          "title": "Waffen und Munition in Rathenow gefunden, Anwohner evakuiert",
-          "state": "neu",
-          "at": "2026-09-20T13:41:24.932Z",
-          "score": 3.8231
-        },
-        {
-          "story_id": "wt-4eb94b797e3a7840",
-          "slug": "judischer-siedler-im-westjordanland-getotet-verdachtiger-festgenommen-3a7840",
-          "title": "Laut Behörden: Jüdischer Siedler im Westjordanland getötet, Verdächtiger festgenommen",
-          "state": "neu",
-          "at": "2026-09-20T13:11:06.726Z",
-          "score": 7.8653
-        },
-        {
-          "story_id": "wt-f205d07a7d4f5073",
-          "slug": "einsatz-in-gelsenkirchen-passanten-bedroht-polizei-schiesst-auf-38-jahrigen-4f5073",
-          "title": "Laut stern und WDR: Polizei schießt in Gelsenkirchen auf bewaffneten 38-Jährigen",
-          "state": "neu",
-          "at": "2026-09-20T12:44:18.014Z",
-          "score": 6.2408
-        },
-        {
-          "story_id": "wt-99541a66fec14c9e",
-          "slug": "schulen-strassen-klimafolgen-stadte-und-gemeindebund-fordert-doppelt-so-viel-geld-aus-de-c14c9e",
-          "title": "Laut Deutschlandfunk: Kommunen fordern mindestens doppelt so viel Geld aus dem Sondervermögen",
-          "state": "neu",
-          "at": "2026-09-20T12:26:29.298Z",
-          "score": 8
-        },
-        {
-          "story_id": "wt-e83d249afe16dbba",
-          "slug": "kunstliche-intelligenz-studie-menschen-sind-noch-deutlich-besser-in-bilderkennung-als-ki-16dbba",
-          "title": "Menschen erkennen Silhouetten besser als KI – laut Studie",
-          "state": "neu",
-          "at": "2026-09-20T11:10:27.188Z",
-          "score": 5.1957
-        },
-        {
-          "story_id": "wt-b762a45eda4cc3be",
-          "slug": "nahost-mehrere-tote-bei-israelischen-angriffen-im-gazastreifen-gemeldet-hamas-bestatigt--4cc3be",
-          "title": "Nach Angaben des von der Hamas kontrollierten Gesundheitsministeriums mindestens vier Tote bei israelischen Angriffen im Gazastreifen",
-          "state": "neu",
-          "at": "2026-09-20T10:27:34.895Z",
-          "score": 5.5766
         }
       ]
     }
