@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-20T07:28:02.253Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-20T07:55:58.015Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/juso-chef-turmer-halt-gesetz-gegen-vergesellschaftung-fur-schnapsidee-eeea55/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/juso-chef-turmer-halt-gesetz-gegen-vergesellschaftung-fur-schnapsidee-eeea55/",
+      "title": "Laut stern nennt Juso-Chef Türmer geplantes Vergesellschaftungsverbot „Schnapsidee“",
+      "summary": "Juso-Chef Philipp Türmer fordert laut stern, das geplante Vergesellschaftungsverbot zu stoppen. Seine Zweifel an rechtlicher Durchsetzbarkeit und Sinnhaftigkeit sind eine Einzelposition; Gesetzesinhalt und Rechtslage bleiben offen.",
+      "date_published": "2026-10-20T07:08:03.000Z",
+      "date_modified": "2026-10-20T07:08:03.000Z",
+      "_woek_released_at": "2026-10-20T08:01:26.726Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/gefahrliche-korperverletzung-schuss-auf-jugendlichen-ermittlungen-gegen-15-jahrigen-9d5971/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/gefahrliche-korperverletzung-schuss-auf-jugendlichen-ermittlungen-gegen-15-jahrigen-9d5971/",
@@ -64,37 +95,6 @@
         "democracy": {
           "magnitude": 1,
           "direction": "positive",
-          "status": "potential"
-        }
-      }
-    },
-    {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/kreis-schwabisch-hall-schusse-mit-schreckschusspistole-losen-sek-einsatz-aus-2f8602/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/kreis-schwabisch-hall-schusse-mit-schreckschusspistole-losen-sek-einsatz-aus-2f8602/",
-      "title": "Laut stern: Schüsse mit Schreckschusspistole lösen SEK-Einsatz im Kreis Schwäbisch Hall aus",
-      "summary": "Nach Angaben des stern rückte die Polizei nach Schüssen in Obersontheim-Oberfischach an; ein SEK unterstützte die Festnahme. Verletzte, Motiv und ein möglicher Drogeneinfluss bleiben offen.",
-      "date_published": "2026-10-20T06:11:02.000Z",
-      "date_modified": "2026-10-20T06:11:02.000Z",
-      "_woek_released_at": "2026-10-20T06:20:25.471Z",
-      "tags": [
-        "Gesellschaft"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": false,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 1,
-          "direction": "open",
-          "status": "potential"
-        },
-        "planet": {
-          "magnitude": 0,
-          "direction": "open",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 1,
-          "direction": "open",
           "status": "potential"
         }
       }
@@ -232,6 +232,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/kreis-schwabisch-hall-schusse-mit-schreckschusspistole-losen-sek-einsatz-aus-d39047/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/kreis-schwabisch-hall-schusse-mit-schreckschusspistole-losen-sek-einsatz-aus-d39047/",
+      "title": "Laut stern: Schüsse mit Schreckschusspistole lösen SEK-Einsatz im Kreis Schwäbisch Hall aus",
+      "summary": "Im Kreis Schwäbisch Hall soll ein Einsatz nach Schüssen auf offener Straße in einer Festnahme durch ein Spezialeinsatzkommando geendet haben. Der Sachverhalt beruht auf einem einzelnen stern-Bericht; Verletzte, Motiv und genauer Ablauf bleiben offen.",
+      "date_published": "2026-10-20T00:02:55.000Z",
+      "date_modified": "2026-10-20T00:02:55.000Z",
+      "_woek_released_at": "2026-10-20T00:19:37.498Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         }
       }
