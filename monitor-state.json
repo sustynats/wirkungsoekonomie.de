@@ -16,17 +16,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-19T19:05:55.706Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-20T04:59:14.729Z",
-      "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-20T05:06:14.484Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "eb2c652a6970dad78b880979",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-20T05:36:00.376Z"
+    },
+    {
+      "id": "46a3bcb14f1be81594508759",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-20T05:36:00.376Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3042,11 +3043,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kreis-schwabisch-hall-schusse-mit-schreckschusspistole-losen-sek-einsatz-aus-d39047/": {
         "first_seen_at": "2026-10-20T00:51:08.355Z",
         "source_at": "2026-10-20T00:02:55.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-geldautomat-an-waschanlage-in-marsberg-gesprengt-52e3b5/": {
+        "first_seen_at": "2026-10-20T05:36:00.376Z",
+        "source_at": "2026-10-20T04:24:15.000Z"
       }
     },
-    "last_new_at": "2026-10-20T00:51:08.355Z",
-    "checked_at": "2026-10-20T05:20:51.984Z",
-    "last_current_new_at": "2026-10-20T00:51:08.355Z"
+    "last_new_at": "2026-10-20T05:36:00.376Z",
+    "checked_at": "2026-10-20T05:36:00.376Z",
+    "last_current_new_at": "2026-10-20T05:36:00.376Z"
   },
   "recovery_attempts": [
     {
