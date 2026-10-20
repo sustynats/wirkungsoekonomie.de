@@ -16,17 +16,18 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-20T06:05:51.149Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-20T07:05:59.729Z",
-      "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-20T07:51:13.791Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "8c25f95f72077790b364e663",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-20T08:35:46.908Z"
+    },
+    {
+      "id": "e77818d388f4ded4652517e5",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-20T08:35:46.908Z"
+    }
+  ],
   "dailyDate": "2026-10-20",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3050,11 +3051,27 @@
       "https://wirkungsoekonomie.de/wirkungsticker/der-checkpoint-am-morgen-partei-kommission-soll-senatsmitglieder-der-grunen-auswahlen-7d8569/": {
         "first_seen_at": "2026-10-20T05:51:03.134Z",
         "source_at": "2026-10-20T04:07:04.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/juso-chef-turmer-halt-gesetz-gegen-vergesellschaftung-fur-schnapsidee-eeea55/": {
+        "first_seen_at": "2026-10-20T08:35:46.908Z",
+        "source_at": "2026-10-20T07:08:03.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/gefahrliche-korperverletzung-schuss-auf-jugendlichen-ermittlungen-gegen-15-jahrigen-9d5971/": {
+        "first_seen_at": "2026-10-20T08:35:46.908Z",
+        "source_at": "2026-10-20T07:00:19.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vermisstensuche-nach-gasexplosion-polizei-sucht-erneut-nach-vermisstem-b0b9b5/": {
+        "first_seen_at": "2026-10-20T08:35:46.908Z",
+        "source_at": "2026-10-20T06:49:46.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/trumpflation-immobilienkredite-so-teuer-wie-seit-2009-nicht-mehr-feaf51/": {
+        "first_seen_at": "2026-10-20T08:35:46.908Z",
+        "source_at": "2026-10-20T03:00:18.000Z"
       }
     },
-    "last_new_at": "2026-10-20T05:51:03.134Z",
-    "checked_at": "2026-10-20T08:21:10.634Z",
-    "last_current_new_at": "2026-10-20T05:51:03.134Z"
+    "last_new_at": "2026-10-20T08:35:46.908Z",
+    "checked_at": "2026-10-20T08:35:46.908Z",
+    "last_current_new_at": "2026-10-20T08:35:46.908Z"
   },
   "recovery_attempts": [
     {
