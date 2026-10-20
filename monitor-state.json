@@ -13,12 +13,17 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-19T19:05:55.706Z",
-      "active": true
+    "editorial-status": {
+      "firstSeen": "2026-10-20T05:51:03.134Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "2bbac04c49094912ff387be2",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-20T05:51:03.134Z"
+    }
+  ],
   "dailyDate": "2026-10-19",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3038,11 +3043,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/explosion-geldautomat-an-waschanlage-in-marsberg-gesprengt-52e3b5/": {
         "first_seen_at": "2026-10-20T05:36:00.376Z",
         "source_at": "2026-10-20T04:24:15.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/der-checkpoint-am-morgen-partei-kommission-soll-senatsmitglieder-der-grunen-auswahlen-7d8569/": {
+        "first_seen_at": "2026-10-20T05:51:03.134Z",
+        "source_at": "2026-10-20T04:07:04.000Z"
       }
     },
-    "last_new_at": "2026-10-20T05:36:00.376Z",
-    "checked_at": "2026-10-20T05:36:00.376Z",
-    "last_current_new_at": "2026-10-20T05:36:00.376Z"
+    "last_new_at": "2026-10-20T05:51:03.134Z",
+    "checked_at": "2026-10-20T05:51:03.134Z",
+    "last_current_new_at": "2026-10-20T05:51:03.134Z"
   },
   "recovery_attempts": [
     {
