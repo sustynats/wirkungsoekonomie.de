@@ -7,6 +7,20 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { mergeDisjointStoryStores, publishGitUpdate, regeneratablePublicationPath, fetchPublicationBase } from "../../scripts/news/publish-git.mjs";
+// Git fixture teardown may briefly see ENOTEMPTY; never hide a persistent error.
+const removeTestRepository = (root, remove = fs.rmSync) => remove(root, {
+  recursive: true, force: true, maxRetries: 5, retryDelay: 50,
+});
+
+test('temporary Git fixture cleanup requests bounded native retries and preserves errors', () => {
+  const root = 'test-double-only-no-real-directory';
+  removeTestRepository(root, (target, options) => {
+    assert.equal(target, root);
+    assert.deepEqual(options, { recursive: true, force: true, maxRetries: 5, retryDelay: 50 });
+  });
+  const permanent = Object.assign(new Error('persistent fixture cleanup error'), { code: 'ENOTEMPTY' });
+  assert.throws(() => removeTestRepository(root, () => { throw permanent; }), error => error === permanent);
+});
 const store = (stories, minute = 0) => ({ schema_version: "1.1", updated_at: `2026-09-06T01:${String(minute).padStart(2, "0")}:00Z`, stories });
 test("disjoint story edits preserve both complete records and version histories", () => {
   const a = { story_id: "a", versions: [{ v: 1 }], sources: ["original"] }, b = { story_id: "b", title: "before" };
@@ -63,7 +77,7 @@ test('a shallow publication fetch is bounded and requires a proven common ancest
 
 test('a real depth-one Actions checkout retains its new article while integrating upstream',async t=>{
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-shallow-publish-'));
- t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ t.after(()=>removeTestRepository(root));
  const cmd=(cwd,args)=>execFileSync('git',args,{cwd,encoding:'utf8',stdio:['ignore','pipe','pipe'],env:{...process.env,GIT_EDITOR:'true'}});
  const origin=path.join(root,'origin.git'),editor=path.join(root,'editor'),worker=path.join(root,'worker');
  const identity=dir=>{cmd(dir,['config','user.name','Test']);cmd(dir,['config','user.email','test@example.org']);};
@@ -86,7 +100,7 @@ test("only reproducible publication outputs are eligible for conflict recovery",
 });
 test("real git race regenerates pages with new renderer and preserves news data", async t=>{
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-publish-race-'));
-  t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  t.after(()=>removeTestRepository(root));
   const cmd=(cwd,args)=>execFileSync('git',args,{cwd,encoding:'utf8',stdio:['ignore','pipe','pipe'],env:{...process.env,GIT_EDITOR:'true'}});
   const remote=path.join(root,'remote.git'),local=path.join(root,'worker'),release=path.join(root,'release');
   cmd(root,['init','--bare',remote]);cmd(root,['clone',remote,local]);
@@ -140,7 +154,7 @@ test("repeated generated conflicts have a hard recovery bound and abort safely",
 
 for (const sharded of [false, true]) test(`real git race merges different stories and rebuilds their common publication report (parts=${sharded})`, async t => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-story-race-"));
-  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  t.after(() => removeTestRepository(root));
   const cmd = (cwd, args) => execFileSync("git", args, { cwd, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, GIT_EDITOR: "true" } });
   const remote = path.join(root, "remote.git"), worker = path.join(root, "worker"), editor = path.join(root, "editor");
   const write = (dir, file, value) => { fs.mkdirSync(path.dirname(path.join(dir, file)), { recursive: true }); fs.writeFileSync(path.join(dir, file), value); };
