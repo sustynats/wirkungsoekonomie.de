@@ -229,7 +229,9 @@ test('eine Lage ohne neue Meldung wird ausgeliefert', async () => {
   const fs = await import('node:fs');
   const yaml = fs.readFileSync(new URL('../../.github/workflows/wirkungsticker.yml', import.meta.url), 'utf8');
   const commit = yaml.slice(yaml.indexOf('name: Commit one atomic update'), yaml.indexOf('name: Acknowledge approved editions'));
-  assert.match(commit, /git diff --cached --name-only \| grep -qE '\^\(news\/\|wirkungsticker\/\)'/,
+  assert.match(commit, /STAGED_FILES="\$\(git diff --cached --name-only\)"/,
+    'der Commit-Schritt liest die vollständige Dateiliste ohne frühes Pipe-Ende');
+  assert.match(commit, /grep -qE '\^\(news\/\|wirkungsticker\/\)' <<< "\$STAGED_FILES"/,
     'der Commit-Schritt meldet, ob sich ausgelieferte Seiten geändert haben');
   assert.match(commit, /PUBLIC_FILES=true/, 'gemessen wird vor dem Commit');
   assert.match(commit, /echo "public_files=\$PUBLIC_FILES" >> "\$GITHUB_OUTPUT"/, 'gemeldet erst nach der erfolgreichen Veröffentlichung');
