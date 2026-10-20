@@ -1,3 +1,4 @@
+import {isPublicLearningDownload} from '../lib/public-learning-downloads.mjs';
 import fs from "node:fs";
 import path from "node:path";
 
@@ -8,6 +9,8 @@ import path from "node:path";
  * contain Markdown working files, DOCX source files and archival packages.
  * They are useful while producing the site, but they are not useful public
  * destinations.  A reader needs a stable online page or a cited PDF instead.
+ * The explicitly requested, generated learning worksheets are public editable
+ * material; their four exact paths are kept in the shared allowlist.
  *
  * This normaliser is intentionally stricter than a text replacement:
  * every blocked href must resolve to an existing PDF and, where available, to
@@ -59,7 +62,7 @@ function extension(value = "") {
 }
 
 function isBlockedHref(value = "") {
-  return BLOCKED_EXTENSIONS.has(extension(value));
+  return BLOCKED_EXTENSIONS.has(extension(value)) && !isPublicLearningDownload(value);
 }
 
 function readReleaseAssets() {
@@ -199,7 +202,15 @@ function normalizePublicFormatLanguage(html, pass = 0) {
 function sanitizeFile(file) {
   const before = fs.readFileSync(file, "utf8");
   const unresolved = [];
-  const linked = before.replace(/<a\b([^>]*?)\bhref=(['"])([^'"]+)\2([^>]*)>([\s\S]*?)<\/a>/gi, (match, beforeHref, quote, rawHref, afterHref, innerHtml) => {
+  // Keep only the explicitly requested public worksheet anchors intact. Other
+  // production-format links still need a real public PDF, as before.
+  const worksheets=[];
+  if (before.includes('WOEK_WORKSHEET_LINK_')) throw Error('Reserved worksheet marker in source');
+  const protectedHtml=before.replace(/<a\b[^>]*\bhref=(["'])([^"']+)\1[^>]*>[\s\S]*?<\/a>/gi,(match,_quote,href)=>{
+    if (!isPublicLearningDownload(href)) return match;
+    return `WOEK_WORKSHEET_LINK_${worksheets.push(match)-1}_END`;
+  });
+  const linked = protectedHtml.replace(/<a\b([^>]*?)\bhref=(['"])([^'"]+)\2([^>]*)>([\s\S]*?)<\/a>/gi, (match, beforeHref, quote, rawHref, afterHref, innerHtml) => {
     if (!isBlockedHref(rawHref)) return match;
     const publicTarget = publicPdfHref(file, rawHref);
     if (publicTarget.error) {
@@ -211,7 +222,7 @@ function sanitizeFile(file) {
   });
 
   if (unresolved.length) return { before, after: before, unresolved };
-  const after = normalizePublicFormatLanguage(linked);
+  const after = normalizePublicFormatLanguage(linked).replace(/WOEK_WORKSHEET_LINK_(\d+)_END/g,(_,index)=>worksheets[Number(index)]);
   return { before, after, unresolved: [] };
 }
 

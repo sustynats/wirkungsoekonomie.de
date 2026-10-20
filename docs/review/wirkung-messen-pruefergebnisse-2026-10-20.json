@@ -1,0 +1,212 @@
+{
+  "title": "Wie lässt sich Wirkung messen und nachweisen?",
+  "route": "/verstehen/wirkung-messen/",
+  "testedBaseCommit": "483e5d1df725c74f0fca602003784f1c5495cde9",
+  "integrationBaseCommit": "ca351c7d981ec4f532edc12610973a33e514b2ae",
+  "sourceDateEpoch": 1787270400,
+  "checks": [
+    {
+      "command": "WOEK_PDF_BUILD_MODE=verify SOURCE_DATE_EPOCH=1787270400 npm run build",
+      "result": "PASS",
+      "detail": "vollständiger Pre-/Build-/Postbuild, Exit 0"
+    },
+    {
+      "command": "SOURCE_DATE_EPOCH=1787270400 npm run build:artifact",
+      "result": "PASS",
+      "detail": "vollständige Artefaktkette, Exit 0"
+    },
+    {
+      "command": "npm run measurement:test",
+      "result": "PASS",
+      "detail": "20/20, einschließlich realem Artefakt, Arbeitsblättern, Privatschutz und Suchschnittstelle"
+    },
+    {
+      "command": "npm run news:test",
+      "result": "PASS",
+      "detail": "2082/2082"
+    },
+    {
+      "command": "node --test tests/site/search-api.test.mjs tests/site/browser-search.test.mjs",
+      "result": "PASS",
+      "detail": "5/5"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests/navigation -v",
+      "result": "PASS",
+      "detail": "7/7"
+    },
+    {
+      "command": "bash scripts/ops/audit-generated-release.sh",
+      "result": "PASS",
+      "detail": "31/31 und 6/6; Quellenintegrität bestanden"
+    },
+    {
+      "command": "npm run check:privacy",
+      "result": "PASS",
+      "detail": "Artefaktprüfung bestanden"
+    },
+    {
+      "command": "npm run check:url-baseline",
+      "result": "PASS",
+      "detail": "keine entfernte Baseline-URL"
+    },
+    {
+      "command": "npm run check:size",
+      "result": "PASS",
+      "detail": "937,5 MB; Warnung ab 850 MB, hartes Limit 950 MB unverändert"
+    },
+    {
+      "command": "node scripts/quality/check-navigation-discovery.mjs --report --gate",
+      "result": "PASS",
+      "detail": "Öffentliche Routen vollständig erreichbar und indexiert"
+    },
+    {
+      "command": "npm run check:hosting-cost",
+      "result": "PASS",
+      "detail": "PASS; kein Vercel-Build und kein neuer Dienst"
+    }
+  ],
+  "navigation": {
+    "publicHtml": 22878,
+    "contentHtml": 19941,
+    "indexable": 18881,
+    "routeListCoverage": 18881,
+    "reachable": 18881,
+    "withinThreeClicks": 18129,
+    "unreachable": 0,
+    "withoutFooter": 0,
+    "sitemapCoverage": 18881,
+    "searchCoverage": 18881,
+    "redirectsInSearch": 0,
+    "brokenSkipLinks": 0,
+    "multipleCurrentPages": 0,
+    "linksToRedirects": 0,
+    "htmlBytes": 494122797
+  },
+  "artifactConsistency": {
+    "changedFiles": [
+      "verstehen/wirkung-messen/index.html"
+    ],
+    "newPageOnlyChangedBySearchMetadata": true,
+    "artifactHashes": {
+      "verstehen/wirkung-messen/index.html": "3c975500425f945af17c9fec40838afd92059f03fccd11386566d81567d97ff7",
+      "assets/js/measurement-learning.js": "60e25e301ad25b28de8699c02acc602ffc6e6130485df9389456eac3187f2835",
+      "assets/css/measurement-learning.css": "3b1b754cab319aaa896f90642682e7fb0c3e82d3833f51a648cf70814566e24a",
+      "assets/downloads/wirkung-messen/kii-arbeitsvorlage.json": "c2bf8b9d07b1ed735a70a9ae6f58e59242d86763cb466dca7f0a2cc4fbb9b746",
+      "assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.md": "7f8340ebc643ec5ed77b646b6cfaa7ba94866162f5039addbe667a8bb545cbc3",
+      "assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.json": "c6e1c4147694918a7f4ff3ad73cd390c71a13c522813b2b85cf02e4d1c55708c",
+      "assets/downloads/wirkung-messen/kii-arbeitsvorlage.md": "d295acf3c3a2fa575fbafcf0fbc8ff34d6fef4124e4cc99a635dda305f4ad422",
+      "verstehen/index.html": "b88186e4d134e5bbb9f8d904cfec654576cfc7daf60366076d26b8d4e1456e63",
+      "methodik/index.html": "67a262c83d06edc29367ebc3b9a105a888079b631a75bdce01f74f531d729adc",
+      "methodik/datenbasis.html": "b8e0ef86af84485e970b0d2c9d248ed5f887dea51bf70c987477528c729d6d2d",
+      "fuer/kommunen.html": "6e1724c9d3453149f3b94b35a6588b503eff7f258670a962b07148c3b0ec6b46",
+      "werkzeuge/impact-controlling/index.html": "767fd6d6c445506bb8d149ab7e0301fc85534b1376a83be89c67f51d2eb62710",
+      "wirkungslexikon/methodik/index.html": "1339adc20c53b92f1279b73bf1a93893a4a536f6d99651eedab3ebbe155285f0"
+    }
+  },
+  "downloads": [
+    {
+      "route": "/assets/downloads/wirkung-messen/kii-arbeitsvorlage.json",
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 2461,
+      "sha256": "c2bf8b9d07b1ed735a70a9ae6f58e59242d86763cb466dca7f0a2cc4fbb9b746"
+    },
+    {
+      "route": "/assets/downloads/wirkung-messen/kii-arbeitsvorlage.md",
+      "status": 200,
+      "contentType": "text/markdown",
+      "bytes": 1001,
+      "sha256": "d295acf3c3a2fa575fbafcf0fbc8ff34d6fef4124e4cc99a635dda305f4ad422"
+    },
+    {
+      "route": "/assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.json",
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 8211,
+      "sha256": "c6e1c4147694918a7f4ff3ad73cd390c71a13c522813b2b85cf02e4d1c55708c"
+    },
+    {
+      "route": "/assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.md",
+      "status": 200,
+      "contentType": "text/markdown",
+      "bytes": 6573,
+      "sha256": "7f8340ebc643ec5ed77b646b6cfaa7ba94866162f5039addbe667a8bb545cbc3"
+    }
+  ],
+  "searchApiHttp": [
+    {
+      "query": "Wirkung messen",
+      "rank": 1,
+      "total": 18359,
+      "found": true
+    },
+    {
+      "query": "Wirkungsnachweis",
+      "rank": 3,
+      "total": 18356,
+      "found": true
+    },
+    {
+      "query": "KII",
+      "rank": 12,
+      "total": 1436,
+      "found": true
+    },
+    {
+      "query": "Wirkungspotenzial",
+      "rank": 15,
+      "total": 18356,
+      "found": true
+    },
+    {
+      "query": "Wie wird Wirkung überprüft?",
+      "rank": 1,
+      "total": 18454,
+      "found": true
+    }
+  ],
+  "browser": {
+    "result": "PARTIAL_MAC_LOCK",
+    "desktopWidths": [
+      1393,
+      1512
+    ],
+    "mobileWidths": [
+      390,
+      320
+    ],
+    "horizontalOverflowObserved": false,
+    "verified": [
+      "Einstieg, Vergleichsgrafik und Messkarte",
+      "Rechner 3/0/-3 sowie Werte über 100",
+      "leere Eingabe mit ARIA-Fehler und verborgenem Ergebnis",
+      "Reset per Enter und Fokuswechsel mit Tab",
+      "vollständiges statisches Rechenbeispiel bei per CSP blockiertem JavaScript",
+      "ein Inhaltsverzeichnis und keine doppelten IDs",
+      "Oberflächensuche: Wirkung messen, Wirkungsnachweis, KII, Wirkungspotenzial"
+    ],
+    "pending": [
+      "letzte Oberflächenkontrolle der vollständigen Frage Wie wird Wirkung überprüft? nach Entsperren des Macs",
+      "noch geplanter letzter Mobil-Interaktionsdurchgang"
+    ],
+    "screenshots": [
+      "desktop-einstieg.jpg",
+      "desktop-lernrechnung.jpg",
+      "mobil-320.jpg",
+      "ohne-javascript.jpg"
+    ],
+    "evidenceDirectory": "../pruefbelege/"
+  },
+  "professionalAcceptance": "PENDING_HUMAN_REVIEW",
+  "editorialAcceptance": "PENDING_HUMAN_REVIEW",
+  "published": false,
+  "releaseId": null,
+  "liveVerificationOfNewPage": false,
+  "historicalPdfChanges": 0,
+  "remainingWarnings": [
+    "850-MB-Warnschwelle überschritten, 950-MB-Hartlimit eingehalten",
+    "Rohbericht: 3115 Dateien ohne eingehenden Verweis und 1169 Titelgruppen; öffentliche indexierbare Routen vollständig erreichbar",
+    "letzte Browserkontrolle durch gesperrten Mac unterbrochen"
+  ]
+}

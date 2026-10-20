@@ -11,6 +11,7 @@ const generatedAt = (() => {
 })();
 const source = path.join(root, "assets/data/term-registry.json");
 const supplementSources = [
+  path.join(root, "content/glossary/imports/wirkung-messen-links.json"),
   path.join(root, "content/glossary/imports/wirkungsfinanzpolitik-term-definitions.json"),
   path.join(root, "content/glossary/imports/legacy-detail-definitions.json"),
   path.join(root, "content/glossary/imports/wirkungsgrad-differenzierung.json"),
@@ -668,6 +669,7 @@ function mergeTermData(primary, secondary) {
     curatedSources: uniqueEntries([...(primary.curatedSources || []), ...(secondary.curatedSources || [])]),
     sourceLinks: uniqueEntries([...(primary.sourceLinks || []), ...(secondary.sourceLinks || [])]),
     relatedDocuments: uniqueEntries([...(primary.relatedDocuments || []), ...(secondary.relatedDocuments || [])]),
+    ...((primary.relatedMethods || secondary.relatedMethods) ? {relatedMethods: uniqueEntries([...(primary.relatedMethods || []), ...(secondary.relatedMethods || [])])} : {}),
     doNotConfuseWith: unique([...(primary.doNotConfuseWith || []), ...(secondary.doNotConfuseWith || [])]),
     deprecatedUsage: unique([...(primary.deprecatedUsage || []), ...(secondary.deprecatedUsage || [])]),
   };

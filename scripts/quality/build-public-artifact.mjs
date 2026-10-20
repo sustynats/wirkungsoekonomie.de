@@ -1,3 +1,5 @@
+import {isPublicLearningDownload,protectPublicLearningDownloadLinks} from '../lib/public-learning-downloads.mjs';
+import {compactPublicRuntimeJson} from '../lib/compact-runtime-json.mjs';
 import {stripEditorialHtmlNotes, stripAiTrackingParameters} from "../lib/public-editorial-cleanup.mjs";
 import fs from "node:fs";
 import path from "node:path";
@@ -530,6 +532,7 @@ function validateOfflineEnglishSurface() {
 }
 
 function sanitizePublicDataString(value) {
+  if (isPublicLearningDownload(value)) return String(value);
   return String(value || "")
     .replace(/\b(\d+\.\d+)-live-reference\b/gi, "$1")
     .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?![a-z0-9_-])(?:[?#][^"'\s<>]*)?/gi, "")
@@ -612,6 +615,11 @@ function normalizePublicArtifactLinksAndText() {
     let content = fs.readFileSync(file, "utf8");
     const before = content;
     const relative = toPosixRelative(file);
+    // These four generated public learning files must remain byte-identical.
+    // Artifact privacy, JSON validity and link gates still inspect them.
+    if (isPublicLearningDownload(relative)) continue;
+    const worksheets=(ext === '.html' || ext === '.htm') ? protectPublicLearningDownloadLinks(content) : null;
+    if (worksheets) content=worksheets.content;
 
     content = stripAiTrackingParameters(stripEditorialHtmlNotes(stripPrivateDocumentLinks(rewritePublicReleaseAssetReferences(content))))
       // Repair one legacy source-link typo that must never reach the public
@@ -704,6 +712,7 @@ function normalizePublicArtifactLinksAndText() {
       );
     }
 
+    if (worksheets) content=worksheets.restore(content);
     if (content !== before) {
       fs.writeFileSync(file, content, "utf8");
       changed += 1;
@@ -956,7 +965,7 @@ function prunePublicArtifact() {
       continue;
     }
 
-    if ([".md", ".doc", ".docx", ".rtf"].includes(ext)) {
+    if ([".md", ".doc", ".docx", ".rtf"].includes(ext) && !isPublicLearningDownload(relative)) {
       removeFile(file, "editorial/source file is not public");
       pruned += 1;
       continue;
@@ -992,6 +1001,8 @@ removeNonCanonicalSitemapEntries();
 normalizePublicArtifactLinksAndText();
 removeOfflineEnglishSurface();
 prunePublicArtifact();
+const compactedBytes = compactPublicRuntimeJson(artifactDir);
+console.log(`Compacted ticker runtime JSON without changing values: ${compactedBytes} bytes saved.`);
 // Small raster previews are first-party web assets, built on the existing
 // GitHub Pages runner. No provider, paid service or workstation is required.
 const { buildArticleShareImages } = await import("../news/share-image.mjs");

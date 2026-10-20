@@ -1,6 +1,6 @@
 # Bibliografie der Wirkungsökonomie
 
-Stand: 2026-08-02
+Stand: 2026-10-20
 
 Direkte Quellenlinks führen zur Originalquelle. Ein ausdrücklich als Katalognachweis gekennzeichneter Link dient dem bibliografischen Auffinden und ist kein Volltext.
 
@@ -49,3 +49,9 @@ Direkte Quellenlinks führen zur Originalquelle. Ein ausdrücklich als Katalogna
 - **Europäische Union; EUR-Lex** (2016): *Vertrag über die Europäische Union, konsolidierte Fassung - Artikel 3*. Europäische Union. EUR-Lex. [Originalquelle](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:12016M003) · [Quellensteckbrief](/quellenarchiv/wok-q-0993/)
 - **Europäische Union; EUR-Lex** (2016): *Vertrag über die Arbeitsweise der Europäischen Union, konsolidierte Fassung - Artikel 11*. Europäische Union. EUR-Lex. [Originalquelle](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:12016E011) · [Quellensteckbrief](/quellenarchiv/wok-q-0994/)
 - **Europäische Union; EUR-Lex** (2016): *Vertrag über die Arbeitsweise der Europäischen Union, konsolidierte Fassung - Artikel 13*. Europäische Union. EUR-Lex. [Originalquelle](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:12016E013) · [Quellensteckbrief](/quellenarchiv/wok-q-0995/)
+- **World Bank / Inter-American Development Bank** (2016): *World Bank / IDB: Impact Evaluation in Practice, 2. Auflage (2016)*. World Bank / Inter-American Development Bank. [Originalquelle](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice) · [Quellensteckbrief](/quellenarchiv/wok-e-0009/)
+- **Eurostat** (o. J.): *Eurostat: Disposable income*. Eurostat. [Originalquelle](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Disposable_income) · [Quellensteckbrief](/quellenarchiv/wok-e-0010/)
+- **UN-Habitat / United Nations Statistics Division** (2025): *UN-Habitat: Metadaten zu SDG 11.2.1 (2025)*. UN-Habitat / United Nations Statistics Division. [Originalquelle](https://unstats.un.org/sdgs/metadata/files/Metadata-11-02-01.pdf) · [Quellensteckbrief](/quellenarchiv/wok-e-0011/)
+- **FAO / United Nations Statistics Division** (2024): *FAO / UN: Metadaten zu SDG 6.4.2 (2024)*. FAO / United Nations Statistics Division. [Originalquelle](https://unstats.un.org/sdgs/metadata/files/Metadata-06-04-02.pdf) · [Quellensteckbrief](/quellenarchiv/wok-e-0012/)
+- **OECD** (2022): *OECD Guidelines for Citizen Participation Processes (2022)*. OECD. [Originalquelle](https://www.oecd.org/en/publications/oecd-guidelines-for-citizen-participation-processes_f765caf6-en.html) · [Quellensteckbrief](/quellenarchiv/wok-e-0013/)
+- **UNDRR** (2017): *UNDRR: Disaster Resilience Scorecard for Cities (2017)*. UNDRR. [Originalquelle](https://mcr2030.undrr.org/disaster-resilience-scorecard-cities) · [Quellensteckbrief](/quellenarchiv/wok-e-0014/)

@@ -1,9 +1,79 @@
 [
-  {"id":"warum-sdg-plus","question":"Warum SDG+, wenn es bereits die SDGs gibt?","answer":"Die 17 SDGs bleiben der globale Rahmen. SDG+ ist eine eigene Erweiterung der Wirkungsökonomie, etwa für demokratische, institutionelle und digitale Schutzräume. Sie ist keine offizielle Erweiterung der Vereinten Nationen. Welcher zusätzliche Prüfgegenstand nötig ist, muss konkret begründet werden; ein Zielbezug allein belegt keine Wirkung.","href":"/methodik/","label":"Referenzrahmen und Integration verstehen"},
-  {"id":"politik-kontakt","question":"Wie können Politik und Verwaltung einen Fall erproben?","answer":"Ein sinnvoller Einstieg ist eine klar abgegrenzte Entscheidung mit bekanntem Problem, Ziel, Datenbasis und Zuständigkeit. Zuerst wird festgehalten, welche staatlichen Prüfverfahren für diesen Gegenstand bereits gelten. Dann lässt sich prüfen, welche zusätzlichen Befunde der WÖk-Ansatz liefert. Eine Kontaktaufnahme begründet noch keinen vereinbarten Pilotversuch.","href":"/mitmachen.html","label":"Kontakt und Mitgestaltung"},
-  {"id":"unternehmen-testen","question":"Wie kann ein Unternehmen Impact Controlling ausprobieren?","answer":"Beginne mit einer Maßnahme und einer wichtigen Veränderung: etwa weniger Materialverluste bei gleicher Leistung. Lege Ausgangswert, Vergleich, Messweise, Nebenfolgen und die nächste Entscheidung fest. Das Küchenbeispiel zeigt die Schritte einschließlich Formeln. Die Demo ist eine Lernhilfe; reale Freigaben brauchen eigene Belege.","href":"/werkzeuge/impact-controlling/","label":"Vollständiges Beispiel durchgehen"},
-  {"id":"landwirtschaft-bio-automatisch-gut","question":"Ist Bio in der WÖk automatisch gut?","answer":"Ein Label liefert Informationen über bestimmte Anforderungen und Verfahren. Es beweist nicht sämtliche Wirkungen eines konkreten Produkts. Entscheidend sind belegte Veränderungen und relevante Grenzen, etwa bei Boden, Wasser, Klima, Tierwohl, Arbeit und Versorgung. Bewertung und Vergleich müssen Produkt, Standort, Zeitraum und Datenlage berücksichtigen.","href":"/fuer/landwirtschaft/","label":"Landwirtschaft im WÖk-Modell"},
-  {"id":"landwirtschaft-essen-teurer","question":"Wird Essen durch die Wirkungsökonomie teurer?","answer":"Eine pauschale Preisprognose ist nicht möglich. Preise hängen unter anderem von Produktionsbedingungen, Nachfrage und der konkreten Ausgestaltung möglicher Regeln ab. Das WÖk-Modell will schädliche Folgen berücksichtigen und positive Netto-Wirkung begünstigen. Bezahlbare Versorgung und Verteilungsfolgen müssen dabei ausdrücklich geprüft werden; ein Modellversprechen ersetzt diese Prüfung nicht.","href":"/fuer/landwirtschaft/","label":"Versorgung, Kosten und Folgen einordnen"},
-  {"id":"landwirtschaft-konventionell-bestraft","question":"Wird konventionelle Landwirtschaft pauschal bestraft?","answer":"Die WÖk beurteilt Maßnahmen und ihre begründeten Folgen. Die Zugehörigkeit zu einer Betriebsform ist dafür kein vollständiger Wirkungsnachweis. Verbesserungen und Risiken müssen im jeweiligen Kontext mit transparenten Daten, Vergleichsmaßstäben und Schutzgrenzen geprüft werden. Die hier beschriebenen wirtschaftspolitischen Instrumente sind Vorschläge, kein geltendes Abgabensystem.","href":"/fuer/landwirtschaft/","label":"Den Ansatz für landwirtschaftliche Betriebe lesen"},
-  {"id":"landwirtschaft-importe","question":"Wie werden Importe und verlagerte Schäden berücksichtigt?","answer":"Eine Verbesserung im Inland kann Nachteile andernorts verdecken. Deshalb müssen bei relevanten Lieferketten auch Veränderungen im Ausland, Datenlücken und mögliche Verlagerungen geprüft werden. Gleiche fachliche Maßstäbe sind das Ziel; welche rechtlichen Instrumente zulässig und praktisch umsetzbar sind, hängt vom konkreten Vorschlag ab. Fehlende Lieferkettendaten gelten nicht automatisch als neutrale Wirkung.","href":"/methodik/datenbasis.html","label":"Systemgrenzen und Datenanforderungen"}
+  {
+    "id": "warum-sdg-plus",
+    "question": "Warum SDG+, wenn es bereits die SDGs gibt?",
+    "answer": "Die 17 SDGs bleiben der globale Rahmen. SDG+ ist eine eigene Erweiterung der Wirkungsökonomie, etwa für demokratische, institutionelle und digitale Schutzräume. Sie ist keine offizielle Erweiterung der Vereinten Nationen. Welcher zusätzliche Prüfgegenstand nötig ist, muss konkret begründet werden; ein Zielbezug allein belegt keine Wirkung.",
+    "href": "/methodik/",
+    "label": "Referenzrahmen und Integration verstehen"
+  },
+  {
+    "id": "politik-kontakt",
+    "question": "Wie können Politik und Verwaltung einen Fall erproben?",
+    "answer": "Ein sinnvoller Einstieg ist eine klar abgegrenzte Entscheidung mit bekanntem Problem, Ziel, Datenbasis und Zuständigkeit. Zuerst wird festgehalten, welche staatlichen Prüfverfahren für diesen Gegenstand bereits gelten. Dann lässt sich prüfen, welche zusätzlichen Befunde der WÖk-Ansatz liefert. Eine Kontaktaufnahme begründet noch keinen vereinbarten Pilotversuch.",
+    "href": "/mitmachen.html",
+    "label": "Kontakt und Mitgestaltung"
+  },
+  {
+    "id": "unternehmen-testen",
+    "question": "Wie kann ein Unternehmen Impact Controlling ausprobieren?",
+    "answer": "Beginne mit einer Maßnahme und einer wichtigen Veränderung: etwa weniger Materialverluste bei gleicher Leistung. Lege Ausgangswert, Vergleich, Messweise, Nebenfolgen und die nächste Entscheidung fest. Das Küchenbeispiel zeigt die Schritte einschließlich Formeln. Die Demo ist eine Lernhilfe; reale Freigaben brauchen eigene Belege.",
+    "href": "/werkzeuge/impact-controlling/",
+    "label": "Vollständiges Beispiel durchgehen"
+  },
+  {
+    "id": "landwirtschaft-bio-automatisch-gut",
+    "question": "Ist Bio in der WÖk automatisch gut?",
+    "answer": "Ein Label liefert Informationen über bestimmte Anforderungen und Verfahren. Es beweist nicht sämtliche Wirkungen eines konkreten Produkts. Entscheidend sind belegte Veränderungen und relevante Grenzen, etwa bei Boden, Wasser, Klima, Tierwohl, Arbeit und Versorgung. Bewertung und Vergleich müssen Produkt, Standort, Zeitraum und Datenlage berücksichtigen.",
+    "href": "/fuer/landwirtschaft/",
+    "label": "Landwirtschaft im WÖk-Modell"
+  },
+  {
+    "id": "landwirtschaft-essen-teurer",
+    "question": "Wird Essen durch die Wirkungsökonomie teurer?",
+    "answer": "Eine pauschale Preisprognose ist nicht möglich. Preise hängen unter anderem von Produktionsbedingungen, Nachfrage und der konkreten Ausgestaltung möglicher Regeln ab. Das WÖk-Modell will schädliche Folgen berücksichtigen und positive Netto-Wirkung begünstigen. Bezahlbare Versorgung und Verteilungsfolgen müssen dabei ausdrücklich geprüft werden; ein Modellversprechen ersetzt diese Prüfung nicht.",
+    "href": "/fuer/landwirtschaft/",
+    "label": "Versorgung, Kosten und Folgen einordnen"
+  },
+  {
+    "id": "landwirtschaft-konventionell-bestraft",
+    "question": "Wird konventionelle Landwirtschaft pauschal bestraft?",
+    "answer": "Die WÖk beurteilt Maßnahmen und ihre begründeten Folgen. Die Zugehörigkeit zu einer Betriebsform ist dafür kein vollständiger Wirkungsnachweis. Verbesserungen und Risiken müssen im jeweiligen Kontext mit transparenten Daten, Vergleichsmaßstäben und Schutzgrenzen geprüft werden. Die hier beschriebenen wirtschaftspolitischen Instrumente sind Vorschläge, kein geltendes Abgabensystem.",
+    "href": "/fuer/landwirtschaft/",
+    "label": "Den Ansatz für landwirtschaftliche Betriebe lesen"
+  },
+  {
+    "id": "landwirtschaft-importe",
+    "question": "Wie werden Importe und verlagerte Schäden berücksichtigt?",
+    "answer": "Eine Verbesserung im Inland kann Nachteile andernorts verdecken. Deshalb müssen bei relevanten Lieferketten auch Veränderungen im Ausland, Datenlücken und mögliche Verlagerungen geprüft werden. Gleiche fachliche Maßstäbe sind das Ziel; welche rechtlichen Instrumente zulässig und praktisch umsetzbar sind, hängt vom konkreten Vorschlag ab. Fehlende Lieferkettendaten gelten nicht automatisch als neutrale Wirkung.",
+    "href": "/methodik/datenbasis.html",
+    "label": "Systemgrenzen und Datenanforderungen"
+  },
+  {
+    "id": "wirkung-messen",
+    "question": "Wie lässt sich Wirkung messen und nachweisen?",
+    "answer": "Zuerst werden Problem, Betroffene und Ziel geklärt. Danach legt ein Messplan Zustandsgrößen, Ausgangswerte, Datenquellen, Vergleich und Schutzbedingungen fest. Beobachtung zeigt eine Veränderung; Zurechnung untersucht ihren Zusammenhang mit der Entscheidung. Bewertung und verantwortliche Korrektur sind weitere Schritte. Die Mobilitäts-Lernrechnung zeigt die Unterschiede.",
+    "href": "/verstehen/wirkung-messen/",
+    "label": "Messplan und Lernrechnung nachvollziehen"
+  },
+  {
+    "id": "kii-kein-kausalbeweis",
+    "question": "Beweist eine bessere KII-Zahl schon Wirkung oder deren Ursache?",
+    "answer": "Eine KII beschreibt eine für die Entscheidung wichtige Zustandsgröße. Eine verlässlich beobachtete Veränderung kann eine reale Wirkung sein, während ihre Zurechnung offen bleibt. Weder eine Kennzahl noch eine WÖk-ID belegt allein die Ursache. KPI ergänzen KII durch Angaben zu Leistungen und Umsetzung.",
+    "href": "/verstehen/wirkung-messen/#beobachten-und-zurechnen",
+    "label": "Kennzahlen und Nachweis unterscheiden"
+  },
+  {
+    "id": "wirkungspotenzial-nachweis",
+    "question": "Was unterscheidet Wirkungspotenzial von einem Wirkungsnachweis?",
+    "answer": "Wirkungspotenzial beschreibt begründete mögliche Veränderungen, Mechanismen und Bedingungen. Wirkung ist eine tatsächliche Zustandsveränderung. Nachgewiesene Veränderungen von Wissen können bereits reale Wirkung sein, auch bevor spätere Handlungen eintreten. Die Zurechnung zur Information oder Maßnahme braucht eine gesonderte Prüfung.",
+    "href": "/verstehen/wirkung-messen/#kommunikation",
+    "label": "Information, Potenzial und Befund prüfen"
+  },
+  {
+    "id": "wirkung-befund-entscheidung",
+    "question": "Wie wird Wirkung überprüft und was folgt aus dem Befund?",
+    "answer": "Feste Folgeerhebungen, geeignete Vergleiche und offengelegte Unsicherheit ermöglichen eine erneute Prüfung. Verschlechtert sich notwendiger Zugang oder wird eine harte Schutzgrenze verletzt, müssen zuständige Menschen Abhilfe und weitere Schritte bestimmen. Ein günstiger Einzelwert oder Score löst keine automatische Gesamtfreigabe, Förderung oder Rechtsfolge aus.",
+    "href": "/verstehen/wirkung-messen/#bewerten-und-handeln",
+    "label": "Verantwortung und Korrekturregeln ansehen"
+  }
 ]

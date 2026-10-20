@@ -3,6 +3,8 @@
 const q = (label, href, tag = 'Vertiefung') => ({ label, href, tag });
 
 export const PAGE_QUESTIONS = {
+  // This explanation already includes its professional FAQ and one explicit TOC.
+  '/verstehen/wirkung-messen/': [],
   '/akademie.html': [
     q('Wie ist das Studium der Wirkungsökonomie aufgebaut?', '/akademie/studienstruktur.html', 'Studium'),
     q('Welche Prüfungen und Praxisleistungen gehören dazu?', '/akademie/pruefungen.html', 'Lernen'),

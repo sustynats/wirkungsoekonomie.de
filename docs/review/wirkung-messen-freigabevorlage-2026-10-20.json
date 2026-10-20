@@ -1,0 +1,248 @@
+{
+  "title": "Wie lässt sich Wirkung messen und nachweisen?",
+  "route": "/verstehen/wirkung-messen/",
+  "baseCommit": "ca351c7d981ec4f532edc12610973a33e514b2ae",
+  "reviewPackageSha256": "ec56ddcfdf06ed314bc75f5b845d4f42116abe1326f775fb083da03a4cea8794",
+  "sources": [
+    {
+      "path": "assets/css/measurement-learning.css",
+      "sha256": "3b1b754cab319aaa896f90642682e7fb0c3e82d3833f51a648cf70814566e24a"
+    },
+    {
+      "path": "assets/data/navigation.json",
+      "sha256": "cd50485d83e5107eb3e4a760553be315e9285a179b7c2c84fab43d9c5d000885"
+    },
+    {
+      "path": "assets/js/contextual-questions.js",
+      "sha256": "f17c62b8f1456ce2296f97939539a072565c7a5e7f4e9899c7753cd70a4ba883"
+    },
+    {
+      "path": "assets/js/measurement-learning.js",
+      "sha256": "60e25e301ad25b28de8699c02acc602ffc6e6130485df9389456eac3187f2835"
+    },
+    {
+      "path": "assets/js/search-api.js",
+      "sha256": "3ca3db71172e2010b718f6311228406fbed268d8186c0d72e0636d952ec09e78"
+    },
+    {
+      "path": "assets/js/search.js",
+      "sha256": "b56869c0d86a0f00d7faf24932a3d95d224fd798220d6647b7decda7c9dccb8c"
+    },
+    {
+      "path": "content/glossary/imports/wirkung-messen-links.json",
+      "sha256": "ef2ab5b905a7a7704cebc96c23aacdd0bb6d7af14f42bfd3c8ded9fac25887a0"
+    },
+    {
+      "path": "content/grundlagen/WOEK_KERNREFERENZ.md",
+      "sha256": "5fc40c2eb9c9f3affde87e8ab3b518fa68f2115a8d05877a96f728b1e5edb147"
+    },
+    {
+      "path": "content/quellenarchiv/evidence-source-records.json",
+      "sha256": "efc3886bd73ba41e98e958dde72196d833ea6e4454b8d0f61d90fb3f4f0ef1b5"
+    },
+    {
+      "path": "content/quellenarchiv/publication-supplements/wirkung-messen-20261020.json",
+      "sha256": "aa55ea2be9c595f63985a43435fe986d336a717ae3d9235b3dff15f911a481a3"
+    },
+    {
+      "path": "content/site/core-questions.json",
+      "sha256": "38488cc69d5f6f1e568814f746273c01d5d0c6708418c0d4f5f2d1bacf995476"
+    },
+    {
+      "path": "content/site/related-reading.json",
+      "sha256": "add6c0d8053180a0a3a2222fc13bb6474f18506b6084cab6f6352683945fd751"
+    },
+    {
+      "path": "content/site/wirkung-messen.inc",
+      "sha256": "5d5661ced6ece63fb2b9c01c682a5b8b47d5639539f76855fe52e8443118667f"
+    },
+    {
+      "path": "content/site/wirkung-messen.json",
+      "sha256": "e7732c3047d9ce7ecc9c05470b4b94b959a70eb8d3d5d71ad8350d368b40f79a"
+    },
+    {
+      "path": "content/sources/bibliography.bib",
+      "sha256": "0da446a4e38a46fc0c9040cc0070ddfe859db3ccd9d255057305c2a35bd59f40"
+    },
+    {
+      "path": "content/sources/bibliography.json",
+      "sha256": "0cfd6aac7b30c1ae88eb235234243472086b4bda2860e94ac41c4a6c46c338af"
+    },
+    {
+      "path": "content/sources/bibliography.md",
+      "sha256": "babda5ea93dff8c5c0971b63b48da0b0d867b5e6e756762c0c961026d1ca3494"
+    },
+    {
+      "path": "content/sources/evidence-source-registry.json",
+      "sha256": "da6f4cd885a3342d3426a5472c9f0ea8e9b152b2bfe5f407b2e24441d0afc69e"
+    },
+    {
+      "path": "docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md",
+      "sha256": "55cb47caa3a0bcf32af6353eb983e97bdb5769eff638e34c34486c148ccb02ec"
+    },
+    {
+      "path": "package.json",
+      "sha256": "838678f20a80285f870907f569085afd1768ff9b99e44cfaccdc81434593b52f"
+    },
+    {
+      "path": "scripts/glossary/build-glossary-registry.mjs",
+      "sha256": "9d7fd2924822861ada0a3ae38b615fc2748724cc4c4d34a571bccb94ec8d9658"
+    },
+    {
+      "path": "scripts/lib/compact-runtime-json.mjs",
+      "sha256": "1ba6efa19abcc560bc021d70001b9114b1b8ed2443b1568e65bb5b776c07d9ef"
+    },
+    {
+      "path": "scripts/lib/content-page.mjs",
+      "sha256": "68d1f688d0c07fc9d8b6b5436e43b6ac7fe99d6e478bca86ba19aeb7f9f1b977"
+    },
+    {
+      "path": "scripts/lib/explainer-components.mjs",
+      "sha256": "05fcaea1568266209d3fac75252732ad72cc21dd611a626b24a6f7039437320d"
+    },
+    {
+      "path": "scripts/lib/public-learning-downloads.mjs",
+      "sha256": "e227cb35eb73a0d38e68998d4136f8bbe52da5b137c4be9662b924a9830a825e"
+    },
+    {
+      "path": "scripts/lib/site-shell.mjs",
+      "sha256": "0754a2b4333ac44284ef5e969007d4a316606c62d61e531c418870941684f42f"
+    },
+    {
+      "path": "scripts/portal/build-impact-controlling.mjs",
+      "sha256": "398cc5b6325c5f445542c9fc7effd15210799dc55dd0ef50e462de8fa32ddf4c"
+    },
+    {
+      "path": "scripts/quality/build-public-artifact.mjs",
+      "sha256": "781d31191a1cc87bc09c5f0f42da9d6fccc458dec29d0e2aed908ea724ec70ed"
+    },
+    {
+      "path": "scripts/quality/check-public-library-formats.mjs",
+      "sha256": "ca6f15ce961a7f0f68e58db7fc1879325012aa75a7b168bde8fd776f21ec2481"
+    },
+    {
+      "path": "scripts/quality/check-site-links.mjs",
+      "sha256": "8c842f3c23f05460532d29c1b8f98eaa0ae8f46a6305b6d5bc1d86011d62e603"
+    },
+    {
+      "path": "scripts/quality/sanitize-public-download-links.mjs",
+      "sha256": "b16b5cbb96f6dcdacee80d451a23ac668e3f66733c9f1c61fce7ff5ba580dc95"
+    },
+    {
+      "path": "scripts/quality/sanitize-public-library-formats.mjs",
+      "sha256": "eb7e75f9799114463cb818a5c6680b58839b6e64b4bbc5d29fc9a779d86b38c2"
+    },
+    {
+      "path": "scripts/search/build-woek-search-index.mjs",
+      "sha256": "6b501fe1ea2b55587fd99e9ce25d6014ccf3feb633aa9a024596378d46672f80"
+    },
+    {
+      "path": "scripts/site/apply-related-reading.mjs",
+      "sha256": "c8b6c98a18a705945634bfbffa404491e2e9b118fec76024c94f3c590296291f"
+    },
+    {
+      "path": "scripts/site/build-measurement-explainer.mjs",
+      "sha256": "3884c8e31dc56c912d9042b3c814fceb5e6a357a519ab1c4fce386eaf16d5408"
+    },
+    {
+      "path": "scripts/wirkungslexikon/reference-links.mjs",
+      "sha256": "7c15e43be050890fc2dd83a9591474b65b3187f2e85ef693d3777f9e6ad8e595"
+    },
+    {
+      "path": "templates/content-page.html",
+      "sha256": "1ca1d3afabadbd187003453ed9c3c0155b550877d28db33e5eed01459e2784af"
+    },
+    {
+      "path": "templates/footer-newsletter.html",
+      "sha256": "c64eae59d7ae2e7cb9effd0d040de03e05b8cdeacfaab6be6392aca5224afe34"
+    },
+    {
+      "path": "templates/footer-shell.html",
+      "sha256": "fc36843fe5de861b3f5161c19b501b996adb834ef7da5101aeedb84357e983d4"
+    },
+    {
+      "path": "tests/news/ticker-institute-release.test.mjs",
+      "sha256": "cd8998dea993e61c68bb6fec3988ad62cb37e1815ade2440cc432c541104da31"
+    },
+    {
+      "path": "tests/site/compact-runtime-json.test.mjs",
+      "sha256": "201e224f9ead182be97becb9abae0c5dd6d1f16f6ee99a91b6303ed216b5963f"
+    },
+    {
+      "path": "tests/site/measurement-learning.test.mjs",
+      "sha256": "8032fd8ba2e4718ef872963875648a4bbdcdcd451088a23c32f15df2c2fe3415"
+    },
+    {
+      "path": "tests/site/public-editorial-cleanup.test.mjs",
+      "sha256": "0a464606e9edf346bcc1833a7a6b6677379e9b3f8806edea11e5c2456a126d85"
+    },
+    {
+      "path": "tests/site/search-api.test.mjs",
+      "sha256": "d686858dc894e635d2adde20d56c75906425e3e91c1d27281769965b88571284"
+    },
+    {
+      "path": "tests/site/site-link-integrity.test.mjs",
+      "sha256": "263fa4901824b606dc93422828daebe40427cf5634d3cdf0352a9170cdd066bc"
+    }
+  ],
+  "status": "PENDING_HUMAN_REVIEW",
+  "technicalReport": "docs/review/wirkung-messen-2026-10-20.md",
+  "fachlicheAbnahme": {
+    "name": null,
+    "date": null,
+    "decision": null,
+    "notes": null
+  },
+  "redaktionelleAbnahme": {
+    "name": null,
+    "date": null,
+    "decision": null,
+    "notes": null
+  },
+  "veroeffentlicht": false,
+  "releaseCommit": null,
+  "requiredReview": [
+    "Messvorschriften und Quellenfunktion, einschließlich der fallbezogenen Mobilitätsquote und ihrer Grenzen",
+    "Lernannahmen, Differenz-von-Differenzen und keine doppelte Bereinigung oder pauschale gesellschaftliche Ersparnis",
+    "Demokratie, Rechte, Nichtkompensation, menschliche Verantwortung und konkrete Korrekturschritte",
+    "Lesbarkeit, Querverweise, Arbeitsblätter und öffentliche Einordnung der älteren Datenübersicht"
+  ],
+  "nextStep": "Nach tatsächlicher Fach- und Redaktionsabnahme diese Fassung bestätigen. Bei Inhaltsänderung Hashes und technische Prüfungen erneuern. Erst danach PR über den bestehenden Prozess übernehmen, vorhandenen Deployment-Workflow abwarten und Live-Inhalt, Navigation, Suche sowie vier Downloads prüfen.",
+  "artifacts": [
+    {
+      "path": "assets/css/measurement-learning.css",
+      "sha256": "3b1b754cab319aaa896f90642682e7fb0c3e82d3833f51a648cf70814566e24a"
+    },
+    {
+      "path": "assets/downloads/wirkung-messen/kii-arbeitsvorlage.json",
+      "sha256": "c2bf8b9d07b1ed735a70a9ae6f58e59242d86763cb466dca7f0a2cc4fbb9b746"
+    },
+    {
+      "path": "assets/downloads/wirkung-messen/kii-arbeitsvorlage.md",
+      "sha256": "d295acf3c3a2fa575fbafcf0fbc8ff34d6fef4124e4cc99a635dda305f4ad422"
+    },
+    {
+      "path": "assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.json",
+      "sha256": "c6e1c4147694918a7f4ff3ad73cd390c71a13c522813b2b85cf02e4d1c55708c"
+    },
+    {
+      "path": "assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.md",
+      "sha256": "7f8340ebc643ec5ed77b646b6cfaa7ba94866162f5039addbe667a8bb545cbc3"
+    },
+    {
+      "path": "assets/js/measurement-learning.js",
+      "sha256": "60e25e301ad25b28de8699c02acc602ffc6e6130485df9389456eac3187f2835"
+    },
+    {
+      "path": "verstehen/wirkung-messen/index.html",
+      "sha256": "3c975500425f945af17c9fec40838afd92059f03fccd11386566d81567d97ff7"
+    }
+  ],
+  "testedBaseCommit": "483e5d1df725c74f0fca602003784f1c5495cde9",
+  "testReport": "docs/review/wirkung-messen-pruefergebnisse-2026-10-20.json",
+  "preview": "http://127.0.0.1:8784/verstehen/wirkung-messen/",
+  "remainingVisualChecks": [
+    "letzte Oberflächenkontrolle der vollständigen Frage Wie wird Wirkung überprüft? nach Entsperren des Macs",
+    "noch geplanter letzter Mobil-Interaktionsdurchgang"
+  ]
+}

@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {isPublicLearningDownload,protectPublicLearningDownloadLinks} from '../../scripts/lib/public-learning-downloads.mjs';
 import assert from 'node:assert/strict';
 import {stripEditorialHtmlNotes as clean, stripAiTrackingParameters, findPublicEditorialResidue} from '../../scripts/lib/public-editorial-cleanup.mjs';
 import fs from 'node:fs';
@@ -18,6 +19,7 @@ function projectArtifactFiles(files) {
  assert.ok(start > 0 && end > start);
  const projected = new Map(Object.entries(files));
  vm.runInNewContext(source.slice(start, end) + '\nnormalizePublicArtifactLinksAndText();', {
+  isPublicLearningDownload, protectPublicLearningDownloadLinks,
   path, artifactDir: '/artifact', walkFiles: () => [...projected.keys()],
   fs: {readFileSync: file => projected.get(file), writeFileSync: (file, text) => projected.set(file, text)},
   toPosixRelative: file => file.slice('/artifact/'.length),
@@ -147,4 +149,15 @@ test('mixed inline lesson metadata retains prerequisites while replacing product
  assert.ok(output.includes('<strong>Quellen:</strong> WÖMS 2.0'));
  assert.ok(output.includes('Entwurf'));
  assert.deepEqual(findPublicEditorialResidue(output),[]);
+});
+
+test('artifact preserves four public learning files and their links without exposing other workfiles',()=>{
+ const paths=['kii-arbeitsvorlage','kii-mobilitaetskosten-lernbeispiel'].flatMap(name=>['json','md'].map(ext=>'assets/downloads/wirkung-messen/'+name+'.'+ext));
+ const links=paths.map(file=>`<a href="/${file}" download>Arbeitsvorlage</a>`).join('');
+ const privateLink='<a href="/docs/private.md">Intern</a>';
+ const files={'/artifact/index.html':links+privateLink,...Object.fromEntries(paths.map(file=>['/artifact/'+file,fs.readFileSync(file,'utf8')]))};
+ const out=projectArtifactFiles(files);
+ assert.equal(out['/artifact/index.html'],links+'<span>Intern</span>');
+ for(const file of paths)assert.equal(out['/artifact/'+file],files['/artifact/'+file],file);
+ assert.deepEqual(projectArtifactFiles(out),out);
 });

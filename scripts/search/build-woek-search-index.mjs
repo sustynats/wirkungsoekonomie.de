@@ -522,6 +522,7 @@ function entriesFromContent(file) {
     clean(text.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i)?.[1]);
   const metaSection = clean(text.match(/<meta\s+name=["']search_section["']\s+content=["']([^"']+)["']/i)?.[1]);
   const metaType = clean(text.match(/<meta\s+name=["']search_type["']\s+content=["']([^"']+)["']/i)?.[1]);
+  const metaAliases = (text.match(/<meta\s+name=["']search_aliases["']\s+content=["']([^"']*)["']/i)?.[1] || "").split("|").map(clean).filter(Boolean);
   const metaIndexKind = clean(text.match(/<meta\s+name=["']search_index_kind["']\s+content=["']([^"']+)["']/i)?.[1]);
   const title =
     metaTitle ||
@@ -571,7 +572,7 @@ const isRegister = /woek-master-items-(?:final-)?v1-2|woek-master-items-v1-3/.te
     standards: [],
     instruments: [],
     tags: isExplicitJournalEntry ? ["WÖk-Journal"] : ["WÖk-Referenz"],
-    aliases: [],
+    aliases: metaAliases,
     body,
     semanticTerms: pageSemanticTerms,
     semanticText: pageSemanticTerms.join(" "),

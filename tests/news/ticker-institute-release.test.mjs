@@ -60,7 +60,8 @@ test('the existing generator repairs stale chronicle output without editing sour
   const inputs = [generator, checker, 'scripts/lib/content-page.mjs', 'scripts/lib/site-shell.mjs',
     'scripts/lib/explainer-components.mjs', 'scripts/lib/institut-projects.mjs',
     'content/institut/projects.json', 'content/institut/source-revisions.json',
-    'assets/data/navigation.json', 'templates/content-page.html', 'templates/footer.html'];
+    'assets/data/navigation.json', 'templates/content-page.html', 'templates/footer.html',
+    'templates/footer-shell.html', 'templates/footer-newsletter.html'];
   for (const file of inputs) {
     const target = path.join(fixture, file);
     fs.mkdirSync(path.dirname(target), {recursive: true});

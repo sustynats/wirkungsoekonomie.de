@@ -1,3 +1,4 @@
+import {isPublicLearningDownload} from '../lib/public-learning-downloads.mjs';
 import fs from "node:fs";
 import path from "node:path";
 
@@ -34,7 +35,7 @@ function extension(value = "") {
 }
 
 function blocked(value = "") {
-  return BLOCKED_EXTENSIONS.has(extension(value));
+  return BLOCKED_EXTENSIONS.has(extension(value)) && !isPublicLearningDownload(value);
 }
 
 function collectRegistryFindings() {
@@ -70,7 +71,7 @@ function collectHtmlFindings() {
     if (!fs.existsSync(file)) continue;
     const html = fs.readFileSync(file, "utf8");
     for (const match of html.matchAll(hrefPattern)) {
-      findings.push(`${file}: blocked public link ${match[1]}`);
+      if (!isPublicLearningDownload(match[1])) findings.push(`${file}: blocked public link ${match[1]}`);
     }
     if (visibleFormatPattern.test(html)) {
       findings.push(`${file}: visible public library format label includes DOCX, MD or ZIP`);
@@ -87,4 +88,4 @@ if (findings.length) {
   process.exit(1);
 }
 
-console.log("Public library format gate passed: no MD, DOCX or ZIP public library entries.");
+console.log("Public library format gate passed: source formats protected; explicitly listed learning worksheets preserved.");
