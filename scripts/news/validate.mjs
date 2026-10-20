@@ -1,4 +1,5 @@
 import { readRepositoryJson } from './newsroom-store.mjs';
+import { projectObersontheimPublication } from './consolidate-obersontheim-duplicates.mjs';
 import fs from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { assertChronologicalFeedHtml } from "./feed-order.mjs";
@@ -31,6 +32,7 @@ const registry = loadNewsRegistry(ROOT);
 checkManualPages(ROOT);
 const state = readJson("data/news/state.json");
 const store = readJson("data/news/stories.json");
+projectObersontheimPublication(store.stories || []);
 const usage = readJson("data/news/usage.json");
 const editorialStore = fs.existsSync(path.join(ROOT, "data/news/editorial-analyses.json")) ? readJson("data/news/editorial-analyses.json") : { candidates: [], analyses: [] };
 
