@@ -16,6 +16,10 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-20T18:15:34.853Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-20T18:21:27.279Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3126,10 +3130,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/strassburg-eu-parlament-starkt-rechte-von-reisenden-3dc32e/": {
         "first_seen_at": "2026-10-20T18:05:46.523Z",
         "source_at": "2026-10-20T13:10:28.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/afd-bestatigt-hackerangriff-auf-e-mail-konten-29318d/": {
+        "first_seen_at": "2026-10-20T18:21:27.279Z",
+        "source_at": "2026-10-20T06:13:25.000Z"
       }
     },
-    "last_new_at": "2026-10-20T18:05:46.523Z",
-    "checked_at": "2026-10-20T18:15:34.853Z",
+    "last_new_at": "2026-10-20T18:21:27.279Z",
+    "checked_at": "2026-10-20T18:21:27.279Z",
     "last_current_new_at": "2026-10-20T18:05:46.523Z"
   },
   "recovery_attempts": [
