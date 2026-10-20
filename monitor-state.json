@@ -13,28 +13,33 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-20T12:22:40.536Z",
-      "active": false
-    },
     "run": {
       "firstSeen": "2026-10-20T12:22:40.536Z",
       "active": true
     },
     "sources": {
       "firstSeen": "2026-10-20T12:22:40.536Z",
-      "active": false
+      "active": true
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-20T12:22:40.536Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-20T12:22:40.536Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "25a6d5f85e8a84573902d4e1",
+      "content": "⚠ WÖk-Betriebsstörung\nQuellenabruf: 3 fehlgeschlagene Quellenabrufe im letzten Lauf.\nSeit: 2026-10-20T12:22:40.536Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "1827bc7656d0ab62aa931a01",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 3 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-20T12:22:40.536Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-20",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3101,7 +3106,7 @@
       }
     },
     "last_new_at": "2026-10-20T12:21:18.585Z",
-    "checked_at": "2026-10-20T12:22:40.536Z",
+    "checked_at": "2026-10-20T12:36:02.979Z",
     "last_current_new_at": "2026-10-20T12:21:18.585Z"
   },
   "recovery_attempts": [
