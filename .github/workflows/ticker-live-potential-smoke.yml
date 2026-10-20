@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: ticker-live-potential-smoke
@@ -27,9 +28,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Download the immutable artifact of the completed deployment
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/ticker-deployed-pages
       - name: Verify live article, news-feed and bookmark potential surfaces
         env:
           WOEK_RELEASE_SHA: ${{ github.event.workflow_run.head_sha }}
+          WOEK_LIVE_EXPECTED_ARTIFACT_TAR: ${{ runner.temp }}/ticker-deployed-pages/artifact.tar
           WOEK_LIVE_BASE_URL: https://wirkungsoekonomie.de
           WOEK_LIVE_SMOKE_ATTEMPTS: '12'
           WOEK_LIVE_SMOKE_DELAY_MS: '10000'
