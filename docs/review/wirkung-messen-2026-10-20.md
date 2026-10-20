@@ -1,7 +1,7 @@
 # Wirkung messen und nachweisen - Umsetzungs- und Prüfbericht
 
 Stand: 20. Oktober 2026. Ausgangscommit: `95da13435fe1925c65915e9589bc445133a8b419`.
-Arbeitszweig: `codex/wirkung-messen-20261020`. Vor Umsetzung mit `main` auf `483e5d1df725c74f0fca602003784f1c5495cde9` abgeglichen; zwischenzeitliche Änderungen erhalten.
+Arbeitszweig: `codex/wirkung-messen-20261020`. Vollständig lokal geprüft auf `483e5d1df725c74f0fca602003784f1c5495cde9`. Danach fünf reine Ticker-Commits bis `25ed3baa5bcd756e18d4616e44cd0ea7a822286c` konfliktfrei übernommen. Alle 45 gebundenen Auftragsquellen blieben unverändert; die drei Such-/Taxonomieprojektionen wurden auf dem neuen Stand neu erzeugt und in einer Wiederholung unverändert bestätigt.
 
 ## Umsetzung und Platzierung
 
@@ -86,4 +86,6 @@ Lokale Vorschau des tatsächlichen öffentlichen Artefakts: `http://127.0.0.1:87
 - `assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.md`
 - `assets/downloads/wirkung-messen/kii-mobilitaetskosten-lernbeispiel.json`
 
-Die Freigabevorlage bindet Quellen und Artefakte per SHA-256. Unterschrift, Datum und Entscheidung bleiben bis zur tatsächlichen menschlichen Fach- und Redaktionsabnahme leer. Nach Entsperren des Macs die verbleibende Browserkontrolle abschließen. Danach benötigt diese konkrete Fassung Natalies fachliche und redaktionelle Abnahme. Erst anschließend über den vorhandenen PR-/GitHub-Pages-Prozess veröffentlichen und die ausgelieferten Seiten, Navigation, Suche und Arbeitsblätter live kontrollieren. Für diese Fassung wurde kein Release und kein Production-Deployment ausgelöst.
+Die Freigabevorlage bindet Quellen und Artefakte per SHA-256. Unterschrift, Datum und Entscheidung bleiben bis zur tatsächlichen menschlichen Fach- und Redaktionsabnahme leer. Nach Entsperren des Macs die verbleibende Browserkontrolle abschließen. Danach benötigt diese konkrete Fassung die tatsächliche fachliche und redaktionelle Abnahme durch die zuständigen Menschen. Erst anschließend über den vorhandenen PR-/GitHub-Pages-Prozess veröffentlichen und die ausgelieferten Seiten, Navigation, Suche und Arbeitsblätter live kontrollieren. Für diese Fassung wurde kein Release und kein Production-Deployment ausgelöst.
+
+Implementierungscommit: `02619f66bbcd2cd6f241448c8e50ba82724ada0d`. Die anschließende Projektion übernimmt ausschließlich die aus dem aktuellen `main` neu erzeugten Such-/Taxonomiedaten und diese Prüfunterlagen. Alle 45 gebundenen Quellen blieben nach dem Rebase unverändert. Die Prüfungen des endgültigen PR-Heads sind zusätzlich im bestehenden GitHub-Workflow einzusehen.
