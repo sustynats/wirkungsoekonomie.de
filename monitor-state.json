@@ -12,9 +12,18 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-20T20:59:46.062Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6ff51cda02872f2014ff42f1",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-20T20:59:46.062Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-20",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3142,11 +3151,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-selenskyj-trifft-in-oslo-us-unterhandler-c4048c/": {
         "first_seen_at": "2026-10-20T20:20:59.656Z",
         "source_at": "2026-10-20T08:07:14.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/schwarzmeerregion-nato-verstarkt-uberwachung-nach-wiederholten-drohnenangriffen-auf-hand-c4b3be/": {
+        "first_seen_at": "2026-10-20T20:59:46.062Z",
+        "source_at": "2026-10-20T20:01:33.000Z"
       }
     },
-    "last_new_at": "2026-10-20T20:20:59.656Z",
-    "checked_at": "2026-10-20T20:51:25.472Z",
-    "last_current_new_at": "2026-10-20T19:06:08.338Z"
+    "last_new_at": "2026-10-20T20:59:46.062Z",
+    "checked_at": "2026-10-20T20:59:46.062Z",
+    "last_current_new_at": "2026-10-20T20:59:46.062Z"
   },
   "recovery_attempts": [
     {
