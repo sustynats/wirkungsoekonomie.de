@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-20T07:03:13.147Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-20T07:28:02.253Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/gefahrliche-korperverletzung-schuss-auf-jugendlichen-ermittlungen-gegen-15-jahrigen-9d5971/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/gefahrliche-korperverletzung-schuss-auf-jugendlichen-ermittlungen-gegen-15-jahrigen-9d5971/",
+      "title": "Laut stern: Ermittlungen nach Schuss auf Jugendlichen in Herford",
+      "summary": "In Herford soll ein 15-Jähriger an einem Busbahnhof auf einen 16-Jährigen geschossen haben, der schwer verletzt wurde. Die Angaben stammen aus einem stern-Bericht; Ablauf, Motiv und rechtliche Bewertung sind offen.",
+      "date_published": "2026-10-20T07:00:19.000Z",
+      "date_modified": "2026-10-20T07:00:19.000Z",
+      "_woek_released_at": "2026-10-20T07:34:24.850Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/vermisstensuche-nach-gasexplosion-polizei-sucht-erneut-nach-vermisstem-b0b9b5/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/vermisstensuche-nach-gasexplosion-polizei-sucht-erneut-nach-vermisstem-b0b9b5/",
@@ -168,6 +199,38 @@
         },
         "democracy": {
           "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/trumpflation-immobilienkredite-so-teuer-wie-seit-2009-nicht-mehr-feaf51/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/trumpflation-immobilienkredite-so-teuer-wie-seit-2009-nicht-mehr-feaf51/",
+      "title": "Laut Berichten: Immobilienkredite so teuer wie seit 2009 nicht mehr",
+      "summary": "Immobilienkredite sind laut vorliegenden Berichten so teuer wie seit 2009 nicht mehr. Das kann den Zugang zu Wohneigentum und den Wohnungsbau erschweren, konkrete Folgen bleiben offen.",
+      "date_published": "2026-10-20T03:00:18.000Z",
+      "date_modified": "2026-10-20T03:00:18.000Z",
+      "_woek_released_at": "2026-10-20T07:33:08.782Z",
+      "tags": [
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
           "direction": "open",
           "status": "potential"
         }
