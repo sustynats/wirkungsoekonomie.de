@@ -41,6 +41,11 @@ function retainedPending(story, pair, reversed, at) {
     || !Array.isArray(p.sources) || !p.sources.length
     || (p.content_hash && !bindings.some(b => b.content === p.content_hash))
     || (p.detected_at && (!Number.isFinite(Date.parse(p.detected_at)) || Date.parse(p.detected_at) > Date.parse(at)))) return false;
+  const integrity = p.source_integrity;
+  if (integrity && (integrity.status !== 'verified' || integrity.publication_status !== 'eligible'
+    || !Array.isArray(integrity.issue_codes) || integrity.issue_codes.length
+    || !Array.isArray(integrity.warning_codes) || integrity.warning_codes.length
+    || !Number.isFinite(Date.parse(integrity.checked_at)) || Date.parse(integrity.checked_at) > Date.parse(at))) return false;
   const paid = new Set(pair.flatMap(s => s.sources).map(paidFingerprint));
   return p.sources.every(s => s && paid.has(paidFingerprint(s)));
 }

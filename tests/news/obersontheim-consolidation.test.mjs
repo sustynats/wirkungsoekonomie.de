@@ -72,6 +72,8 @@ test('changed editions, source evidence, manual approvals and unrelated routing 
     p => { p[0].pending_update.owner_instruction = 'keep unknown instruction'; },
     p => { p[0].pending_update.sources[0].content_hash = 'new-evidence'; },
     p => { p[0].pending_update.reassessment = true; },
+    p => { p[0].pending_update.source_integrity = { status: 'open', publication_status: 'held', issue_codes: ['new'], warning_codes: [], checked_at: at }; },
+    p => { p[0].pending_update.source_integrity = { status: 'verified', publication_status: 'eligible', issue_codes: [], warning_codes: ['unknown'], checked_at: at }; },
   ]) {
     const pair = fixture(); mutate(pair); const before = structuredClone(pair);
     assert.equal(consolidate(pair, at).status, 'held'); assert.deepEqual(pair, before);
