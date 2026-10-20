@@ -253,7 +253,10 @@ jobs:
           # vor dem Commit (danach ist nichts mehr vorgemerkt), gemeldet erst
           # nach der erfolgreichen Veroeffentlichung.
           PUBLIC_FILES=false
-          if git diff --cached --name-only | grep -qE '^(news/|wirkungsticker/)'; then PUBLIC_FILES=true; fi
+          # Vollstaendig lesen: grep -q in einer pipefail-Pipeline kann git
+          # nach einem fruehen Treffer per SIGPIPE beenden und false melden.
+          STAGED_FILES="$(git diff --cached --name-only)"
+          if grep -qE '^(news/|wirkungsticker/)' <<< "$STAGED_FILES"; then PUBLIC_FILES=true; fi
           git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
           node scripts/news/publish-git.mjs
           RELEASE_COMMIT="$(git rev-parse HEAD)"
