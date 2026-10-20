@@ -1,4 +1,5 @@
 import { readRepositoryJson } from './newsroom-store.mjs';
+import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 import path from 'node:path';
@@ -10,6 +11,33 @@ const attempts = Math.max(1, Number(process.env.WOEK_LIVE_SMOKE_ATTEMPTS || 12))
 const delayMs = Math.max(1000, Number(process.env.WOEK_LIVE_SMOKE_DELAY_MS || 10000));
 const DIMENSIONS = ['human', 'planet', 'democracy'];
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+// A release rebuilds App projections. The committed projection can therefore
+// predate a canonical-only editorial change; it is not the deployed baseline.
+// Read only the manifest from the immutable artifact of that exact deploy run.
+export function readExpectedManifest({
+  artifactTar = process.env.WOEK_LIVE_EXPECTED_ARTIFACT_TAR,
+  sourceCommit = releaseSha,
+  root = ROOT,
+} = {}) {
+  if (sourceCommit && !artifactTar) throw new Error('DEPLOYED_ARTIFACT_REQUIRED');
+  let bytes;
+  if (artifactTar) {
+    const names = execFileSync('tar', ['-tf', artifactTar], { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 })
+      .split('\n').filter(name => ['wirkungsticker/data/app/manifest.json.gz', './wirkungsticker/data/app/manifest.json.gz'].includes(name));
+    if (names.length !== 1) throw new Error('DEPLOYED_APP_MANIFEST_AMBIGUOUS_OR_MISSING');
+    // No archive entry is extracted to disk, including links or relative paths.
+    bytes = execFileSync('tar', ['-xOf', artifactTar, names[0]], { maxBuffer: 2 * 1024 * 1024 });
+  } else {
+    // Explicit local/manual use without a release commit remains supported.
+    bytes = fs.readFileSync(path.join(root, 'wirkungsticker/data/app/manifest.json.gz'));
+  }
+  const manifest = JSON.parse(gunzipSync(bytes, { maxOutputLength: 8 * 1024 * 1024 }).toString('utf8'));
+  if (!manifest.revision || typeof manifest.revision !== 'string' || !manifest.feeds || !manifest.lookup) {
+    throw new Error('DEPLOYED_APP_MANIFEST_INVALID');
+  }
+  return manifest;
+}
 
 export function completePotential(record) {
   const a = record?.impact_assessment;
@@ -51,9 +79,12 @@ async function text(url) { return (await response(url)).text(); }
 async function json(url) { return JSON.parse(gunzipSync(Buffer.from(await (await response(url)).arrayBuffer())).toString('utf8')); }
 const cacheBust = url => `${url}${url.includes('?') ? '&' : '?'}release=${encodeURIComponent(releaseSha || Date.now())}`;
 
-export async function livePotentialCheck({ fetchJson = json, fetchText = text } = {}) {
-  const store = readRepositoryJson(path.join(ROOT, 'data/news/stories.json'), 'utf8');
-  const expectedManifest = JSON.parse(gunzipSync(fs.readFileSync(path.join(ROOT, 'wirkungsticker/data/app/manifest.json.gz'))).toString('utf8'));
+export async function livePotentialCheck({
+  fetchJson = json,
+  fetchText = text,
+  store = readRepositoryJson(path.join(ROOT, 'data/news/stories.json'), 'utf8'),
+  expectedManifest = readExpectedManifest(),
+} = {}) {
   const reviewed = store.stories.filter(record => record.published && record.listed !== false
     && record.impact_assessment?.version === '2.1'
     && record.impact_semantic_review?.status === 'ready');
@@ -96,9 +127,11 @@ export async function livePotentialCheck({ fetchJson = json, fetchText = text } 
 }
 
 async function main() {
+  // The immutable tar may be large; read its baseline once, not on every poll.
+  const expectedManifest = readExpectedManifest();
   let last;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try { last = await livePotentialCheck(); }
+    try { last = await livePotentialCheck({ expectedManifest }); }
     catch (error) { last = { ok: false, stage: 'network', errors: [String(error?.message || error)] }; }
     console.log(JSON.stringify({ attempt, ...last }));
     if (last.ok) return;
