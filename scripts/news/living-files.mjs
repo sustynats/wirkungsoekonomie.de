@@ -10,7 +10,11 @@ const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
 const unique = (values) => [...new Set(values)];
 const intersects = (a, b) => a.some((value) => b.includes(value));
-const canonicalPlace = value => normal(value).replace(/^(?:kiew|kyiv)$/, "kyjiw");
+const canonicalPlace = value => normal(value)
+  // The locative parser can capture "Ort im Kreis" before the district name.
+  // This is an administrative qualifier, unlike "Freiburg im Breisgau".
+  .replace(/\s+im\s+(?:kreis|landkreis|regierungsbezirk)$/, '')
+  .replace(/^(?:kiew|kyiv)$/, "kyjiw");
 
 // A named delegation, its destination and a short time window identify a
 // visit. A war, an actor or a publication URL alone does not. Extract only

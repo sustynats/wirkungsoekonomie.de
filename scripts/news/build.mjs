@@ -34,6 +34,7 @@ import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs"
 import { articleShareCard } from "./share-image.mjs";
 import { loadManualEditorials, renderManualArticle, renderBookCover, BOOK_FORMAT } from "./manual-editorial.mjs";
 import {applyApprovedEditorialRevisions,approvedEditorialRevisions} from './editorial-approved-revisions.mjs';
+import { projectObersontheimPublication } from './consolidate-obersontheim-duplicates.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
@@ -987,6 +988,9 @@ function updateSitemap(stories, updatedAt, oldSlugs, extraRoutes = []) {
 
 export function buildNewsSite() {
   const data = readJson(STORIES_FILE);
+  // Pure release projection until the next regular locked worker persists it.
+  // A changed/ambiguous edition blocks delivery instead of publishing twice.
+  projectObersontheimPublication(data.stories || []);
   const editorialStore = fs.existsSync(EDITORIAL_ANALYSES_FILE) ? readJson(EDITORIAL_ANALYSES_FILE) : { analyses: [] };
   if (PUBLIC_IMPACT_PROFILE_VERSION) assertImpactCoverage(impactCoverage([...(data.stories || []),...(editorialStore.analyses || [])],{minimumMaterialCounts:IMPACT_RELEASE.minimum_material_counts}));
   const revisedEditorials=applyApprovedEditorialRevisions([...(editorialStore.analyses||[]),...loadManualEditorials(ROOT),...loadPersonalEditorials(ROOT)],ROOT);
