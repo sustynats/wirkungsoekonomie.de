@@ -15,10 +15,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-20T15:20:53.750Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ba41d3c193e7c9c640f42d8e",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-20T15:20:53.750Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-20",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3098,11 +3103,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/amazon-will-4-8-milliarden-euro-in-rechenzentren-im-rhein-main-gebiet-investieren-9d1ba0/": {
         "first_seen_at": "2026-10-20T14:21:00.133Z",
         "source_at": "2026-10-20T13:04:46.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/merz-verkundet-investitionszusagen-in-hohe-von-rund-230-milliarden-97a5e8/": {
+        "first_seen_at": "2026-10-20T15:36:23.993Z",
+        "source_at": "2026-10-20T14:37:57.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ermittlungen-laufen-sprengstoffverdacht-in-karlsruhe-lost-grosseinsatz-aus-a08eaa/": {
+        "first_seen_at": "2026-10-20T15:36:23.993Z",
+        "source_at": "2026-10-20T14:32:24.000Z"
       }
     },
-    "last_new_at": "2026-10-20T14:21:00.133Z",
-    "checked_at": "2026-10-20T15:20:53.750Z",
-    "last_current_new_at": "2026-10-20T14:21:00.133Z"
+    "last_new_at": "2026-10-20T15:36:23.993Z",
+    "checked_at": "2026-10-20T15:36:23.993Z",
+    "last_current_new_at": "2026-10-20T15:36:23.993Z"
   },
   "recovery_attempts": [
     {
