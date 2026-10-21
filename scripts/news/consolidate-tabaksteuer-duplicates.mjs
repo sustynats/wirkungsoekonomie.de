@@ -26,6 +26,14 @@ const bindings = [
         'fcdc01c915644867975196299182a0c5ae712d95357f79846cb8bf193eaa0330'],
     ] },
 ];
+// Later coverage of that same commencement error, not a second law or a
+// completed correction. Admit only the paid edition actually observed.
+const ltoBinding = { id: 'wt-40b9f5e44ed9b503', version: 1,
+  slug: 'nach-panne-im-bundesfinanzministerium-tabaksteuergesetz-tritt-versehentlich-fruher-in-kr-d9b503',
+  at: '2026-10-21T16:45:34.517Z',
+  content: '5bf031a2a8d8b9531ee468d7593f190b042c9b898e9bb5dce31c547991e58b6d',
+  sources: [['https://www.lto.de/recht/nachrichten/n/tabaksteuer-gesetz-aenderung-versehentlich-bundesfinanzministerium?r=rss',
+    'f901d8cf966ce933d76e97dbe1d4c7745d01478bd4a9c845db0b4f1605eea2b7']] };
 const pendingSources = [...bindings[0].sources,
   ['https://www.stern.de/politik/deutschland/gesetz-zur-tabaksteuer-tritt-aus-versehen-zu-frueh-in-kraft-38427596.html',
     '6eb6b7b0368169faa89e700aabdf31eccac2ce5ea74bd7c144aa5686a88642bc'],
@@ -39,11 +47,14 @@ const sourcesMatch = (sources, expected) => Array.isArray(sources) && sources.le
 const editionMatches = (s, b) => s?.published && !s.manual_only && !s.editorial_approval_hash
   && s.current_version === b.version && s.slug === b.slug && s.content_hash === b.content
   && s.published_at === b.at && s.updated_at === b.at && sourcesMatch(s.sources, b.sources);
-const routed = (a, b) => a?.published && a.listed !== false && !a.retirement
-  && a.living_file?.merged_story_ids?.length === 1 && a.living_file.merged_story_ids[0] === b?.story_id
+const routed = (a, b, ids = [b?.story_id]) => a?.published && a.listed !== false && !a.retirement
+  && isDeepStrictEqual(a.living_file?.merged_story_ids, ids)
   && b?.published && !b.living_file && b.listed === false && b.retirement?.reason_code === 'MERGED_INTO_LIVING_FILE'
   && b.retirement.preserve_full_publication === true && b.retirement.canonical_story_ids?.length === 1
   && b.retirement.canonical_story_ids[0] === a.story_id;
+const ltoRouted = (a, b, lto) => Boolean(lto)
+  && routed(a, b, [bindings[1].id, ltoBinding.id])
+  && routed(a, lto, [bindings[1].id, ltoBinding.id]);
 const paidFingerprint = source => sourceReviewFingerprint({ ...source, published_at: null, source_published_at: null });
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
@@ -83,7 +94,39 @@ export function consolidateTabaksteuerDuplicates(stories, at) {
     return { status: 'held', reason: 'STORY_ID_AMBIGUOUS', changes: [] };
   }
   const [canonical, duplicate] = pair;
-  if (routed(canonical, duplicate)) return { status: 'already_applied', changes: [] };
+  const later = stories.filter(s => s.story_id === ltoBinding.id);
+  if (later.length > 1) return { status: 'held', reason: 'STORY_ID_AMBIGUOUS', changes: [] };
+  const lto = later[0];
+  if (ltoRouted(canonical, duplicate, lto)) return { status: 'already_applied', changes: [] };
+  if (routed(canonical, duplicate)) {
+    if (!lto) return { status: 'already_applied', changes: [] };
+    if (!pair.every((s, i) => editionMatches(s, bindings[i]) && before(s.updated_at, at)
+        && (s.pending_update == null || i === 0 && retainedFailedPending(s, at)))
+      || !editionMatches(lto, ltoBinding) || !before(lto.updated_at, at)
+      || lto.listed === false || lto.retirement || lto.living_file || lto.pending_update != null
+      || lto.sources.some(s => s.article_excerpt || s.evidence_segments || !before(s.ingested_at, at))
+      || !Array.isArray(canonical.living_file.consolidations)
+      || canonical.living_file.consolidations.length !== 1
+      || canonical.living_file.consolidations[0].story_id !== duplicate.story_id) {
+      return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
+    }
+    // Extend only the existing exact two-member route. Keep its notice and
+    // timestamp, all three paid readers, and the failed review verbatim.
+    canonical.living_file.merged_story_ids.push(lto.story_id);
+    canonical.living_file.consolidations.push({ at, story_id: lto.story_id, slug: lto.slug, title: lto.title,
+      reason: 'Spaetere LTO-Berichterstattung zum selben berichteten Inkrafttretensfehler der Tabaksteuer am 21. Oktober 2026; offene Rechtsfragen bleiben offen',
+    });
+    lto.listed = false;
+    lto.retired_at = at;
+    lto.retirement = { at, reason_code: 'MERGED_INTO_LIVING_FILE', canonical_story_ids: [canonical.story_id],
+      preserve_full_publication: true,
+      canonical_stories: [{ story_id: canonical.story_id, slug: canonical.slug, title: canonical.title }],
+      note: 'Diese spaetere LTO-basierte Fassung betrifft denselben berichteten Inkrafttretensfehler wie die verlinkte Wirkungsakte. Alle vollstaendigen bezahlten Fassungen und ihre jeweiligen Quellen bleiben erhalten. Die zusaetzlichen offenen Rechtsfragen werden nicht als geklaert oder gemeinsam neu geprueft ausgegeben; auch die bisher offene Nachpruefung bleibt offen.' };
+    return { status: 'applied', changes: [{ story_id: lto.story_id, canonical_story_id: canonical.story_id,
+      reason: 'source_bound_tabaksteuer_lto_duplicate_2026_10_21' }] };
+  }
+  // Do not partially rewrite an unexpected three-edition routing state.
+  if (lto) return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
   if (!pair.every((s, i) => editionMatches(s, bindings[i]) && s.listed !== false && !s.retirement && !s.living_file
     && before(s.updated_at, at) && (s.pending_update == null || i === 0 && retainedFailedPending(s, at)))) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
@@ -103,7 +146,7 @@ export function consolidateTabaksteuerDuplicates(stories, at) {
     canonical_story_id: canonical.story_id, reason: 'source_bound_tabaksteuer_duplicate_2026_10_21' }] };
 }
 
-// A known union of already paid packets is not permission for a third call.
+// A known union of already paid packets is not permission for another call.
 // The failed packet remains pending; it is never labeled approved/published.
 export function retainedTabaksteuerPaidInput(candidate, stories, at) {
   const canonical = candidate.existing_story;
@@ -112,13 +155,18 @@ export function retainedTabaksteuerPaidInput(candidate, stories, at) {
     || candidate.reassessment || candidate.impact_reassessment || candidate.followup_due
     || candidate.deepening_due || candidate.consolidation) return false;
   const peers = stories.filter(s => s.story_id === bindings[1].id);
-  if (peers.length !== 1 || !editionMatches(peers[0], bindings[1]) || !routed(canonical, peers[0])) return false;
+  const later = stories.filter(s => s.story_id === ltoBinding.id);
+  if (peers.length !== 1 || later.length > 1 || !editionMatches(peers[0], bindings[1])) return false;
+  if (later.length) {
+    if (!editionMatches(later[0], ltoBinding) || !ltoRouted(canonical, peers[0], later[0])) return false;
+  } else if (!routed(canonical, peers[0])) return false;
   const sources = candidate.sources;
-  if (!Array.isArray(sources) || !sources.some(s => s?.url === bindings[1].sources[0][0])
+  const archivedUrls = [...peers, ...later].flatMap(s => s.sources.map(source => source.url));
+  if (!Array.isArray(sources) || !sources.some(s => archivedUrls.includes(s?.url))
     || sources.some(s => !s || s.article_excerpt || s.evidence_segments)) return false;
   const retainedFailure = retainedFailedPending(canonical, at);
   if (canonical.pending_update != null && !retainedFailure) return false;
   const failed = retainedFailure ? canonical.pending_update.sources : [];
-  const paid = new Set([...canonical.sources, ...peers[0].sources, ...failed].map(paidFingerprint));
+  const paid = new Set([...canonical.sources, ...peers[0].sources, ...later.flatMap(s => s.sources), ...failed].map(paidFingerprint));
   return sources.every(s => paid.has(paidFingerprint(s)));
 }

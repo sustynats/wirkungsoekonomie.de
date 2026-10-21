@@ -195,3 +195,131 @@ test('the normal serial runner repeats the listing-only repair without clearing 
     assert.deepEqual(captured.storyStore.stories.find(s => s.story_id === canonicalId).pending_update, pendingBefore);
   }
 });
+
+const ltoId = 'wt-40b9f5e44ed9b503', laterAt = '2026-10-21T17:00:00Z';
+function laterFixture(withPending = true) {
+  const pair = withPending ? failedPending(fixture()) : fixture();
+  consolidateTabaksteuerDuplicates(pair, at);
+  const lto = { ...fixture()[1], story_id: ltoId,
+    title: 'Synthetic later legal coverage of the same commencement error',
+    slug: 'nach-panne-im-bundesfinanzministerium-tabaksteuergesetz-tritt-versehentlich-fruher-in-kr-d9b503',
+    published_at: '2026-10-21T16:45:34.517Z', updated_at: '2026-10-21T16:45:34.517Z',
+    content_hash: '5bf031a2a8d8b9531ee468d7593f190b042c9b898e9bb5dce31c547991e58b6d',
+    sources: [{ ...source(2), source_id: 'synthetic-later',
+      url: 'https://www.lto.de/recht/nachrichten/n/tabaksteuer-gesetz-aenderung-versehentlich-bundesfinanzministerium?r=rss',
+      content_hash: 'f901d8cf966ce933d76e97dbe1d4c7745d01478bd4a9c845db0b4f1605eea2b7',
+      published_at: '2026-10-21T13:43:26Z', ingested_at: '2026-10-21T16:40:12.834Z' }],
+  };
+  return [...pair, lto];
+}
+
+test('the exact later LTO edition extends only the established route and retains all three paid editions', () => {
+  for (const withPending of [false, true]) for (const reverse of [false, true]) {
+    const stories = laterFixture(withPending), before = structuredClone(stories);
+    const result = consolidateTabaksteuerDuplicates(reverse ? [...stories].reverse() : stories, laterAt);
+    assert.equal(result.status, 'applied');
+    assert.deepEqual(result.changes.map(c => c.story_id), [ltoId]);
+    assert.deepEqual(stories[0].living_file.merged_story_ids, [duplicateId, ltoId]);
+    assert.deepEqual(stories[0].living_file.consolidations[0], before[0].living_file.consolidations[0]);
+    assert.deepEqual(stories[1], before[1]); // Do not reinstall/rewrite the earlier repair.
+    assert.deepEqual(stories[2].retirement.canonical_story_ids, [canonicalId]);
+    assert.equal(stories[2].retirement.preserve_full_publication, true);
+    assert.equal(stories.filter(s => s.listed !== false).length, 1);
+    for (const [i, s] of stories.entries()) for (const key of Object.keys(before[i])) {
+      if (key !== 'living_file' && key !== 'listed') assert.deepEqual(s[key], before[i][key], key);
+    }
+    const once = structuredClone(stories);
+    assert.equal(consolidateTabaksteuerDuplicates(stories, laterAt).status, 'already_applied');
+    assert.deepEqual(stories, once);
+  }
+});
+
+test('changed later editions, extra work and unknown routes hold atomically', () => {
+  for (const mutate of [
+    s => { s[2].current_version++; }, s => { s[2].content_hash = 'changed'; },
+    s => { s[2].sources[0].content_hash = 'changed'; }, s => { s[2].sources[0].url += '&other=1'; },
+    s => { s[2].sources[0].article_excerpt = 'New full text'; },
+    s => { s[2].sources[0].evidence_segments = ['New evidence']; },
+    s => { s[2].sources[0].ingested_at = '2026-10-22T00:00:00Z'; },
+    s => { s[2].sources.push(source(0)); }, s => { s[2].slug = 'changed'; },
+    s => { s[2].published_at = laterAt; }, s => { s[2].updated_at = laterAt; },
+    s => { s[2].manual_only = true; }, s => { s[2].editorial_approval_hash = 'private'; },
+    s => { s[2].published = false; }, s => { s[2].listed = false; },
+    s => { s[2].retirement = { reason_code: 'OTHER' }; },
+    s => { s[2].living_file = { merged_story_ids: ['unknown'] }; },
+    s => { s[2].pending_update = { owner_instruction: 'New work' }; },
+    s => { s[0].current_version++; }, s => { s[1].sources[0].content_hash = 'changed'; },
+    s => { s[0].pending_update.sources[0].article_excerpt = 'New evidence'; },
+    s => { s[0].ai_retry.evidence_fingerprint = 'changed'; },
+    s => { s[1].pending_update = { reason: 'New work' }; },
+    s => { s[0].living_file.merged_story_ids.push('unknown'); },
+    s => { s[0].living_file.consolidations.push({ story_id: 'unknown' }); },
+    s => { s.push(structuredClone(s[2])); },
+    s => { delete s[0].living_file; delete s[1].retirement; s[1].listed = true; },
+  ]) {
+    const stories = laterFixture(); mutate(stories); const before = structuredClone(stories);
+    assert.equal(consolidateTabaksteuerDuplicates(stories, laterAt).status, 'held');
+    assert.deepEqual(stories, before);
+  }
+  const early = laterFixture(), before = structuredClone(early);
+  assert.equal(consolidateTabaksteuerDuplicates(early, at).status, 'held');
+  assert.deepEqual(early, before);
+});
+
+test('the retained LTO input routes to the canonical file without purchasing another union review', () => {
+  const stories = laterFixture(); consolidateTabaksteuerDuplicates(stories, laterAt);
+  for (const sources of [stories[2].sources, stories.flatMap(s => s.sources),
+    [...stories.flatMap(s => s.sources), ...stories[0].pending_update.sources]]) {
+    const candidate = { story_id: canonicalId, existing_story: stories[0], sources: structuredClone(sources) };
+    const before = structuredClone(stories);
+    assert.equal(retainedTabaksteuerPaidInput(candidate, stories, laterAt), true);
+    candidate.sources.forEach(s => { s.published_at = laterAt; s.source_published_at = laterAt; });
+    assert.equal(retainedTabaksteuerPaidInput(candidate, stories, laterAt), true);
+    for (const mutate of [
+      c => { c.sources.at(-1).summary = 'New evidence'; }, c => { c.sources.at(-1).content_hash = 'changed'; },
+      c => { c.sources.at(-1).article_excerpt = 'New full text'; }, c => { c.sources.at(-1).evidence_segments = ['New evidence']; },
+      c => { c.reassessment = true; }, c => { c.followup_due = true; },
+      c => { c.impact_reassessment = true; }, c => { c.deepening_due = true; }, c => { c.consolidation = true; },
+    ]) { const changed = structuredClone(candidate); mutate(changed); assert.equal(retainedTabaksteuerPaidInput(changed, stories, laterAt), false); }
+    assert.deepEqual(stories, before);
+    assert.equal(retainedTabaksteuerPaidInput(candidate, [...stories, structuredClone(stories[2])], laterAt), false);
+  }
+  assert.equal(clusterItems([{ ...stories[2].sources[0], published_at: laterAt }], stories, laterAt)[0].story_id, canonicalId);
+});
+
+test('the later archived reader stays complete and the original file links both editions', () => {
+  const sample = readRepositoryJson(new URL('../../data/news/stories.json', import.meta.url)).stories.find(s => s.published && s.listed !== false && s.analysis);
+  const stories = laterFixture().map(s => ({ ...structuredClone(sample), ...s, analysis: structuredClone(sample.analysis) }));
+  const body = html => html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
+  const original = storyPage(stories[2]); consolidateTabaksteuerDuplicates(stories, laterAt);
+  const archived = retiredStoryPage(stories[2]);
+  assert.equal(body(archived).replace(/<aside\b[^>]*data-merged-publication-notice[\s\S]*?<\/aside>/, ''), body(original));
+  assert.match(archived, /name="robots" content="noindex,follow"/);
+  assert.ok(archived.includes(`href="../${stories[0].slug}/"`));
+  const notice = renderConsolidations(stories[0], new Set(stories.slice(1).map(s => s.slug)));
+  for (const s of stories.slice(1)) assert.ok(notice.includes(`href="../${s.slug}/"`));
+});
+
+test('the normal serial runner applies the later listing delta once without clearing the failed review or buying a response', async () => {
+  let captured, calls = 0; const stories = laterFixture(), before = structuredClone(stories);
+  const options = { dryRun: true, now: laterAt, registry: { schema_version: '1.0', sources: [], policy: {} },
+    state: { source_status: {}, seen_items: {}, pending_story_ids: [], relevance_filter_version: '4.0' },
+    storyStore: { stories }, usage: { runs: [] },
+    newsroom: { source_items: {}, events: {}, event_sources: [], discovery_candidates: [] },
+    budgetFx: { rate_date: '2026-10-20', rate_usd_per_eur: 1.16 },
+    callAiImpl: async () => { calls++; throw Error('No paid replacement'); },
+    fetchArticleImpl: async () => { throw Error('No live network'); }, captureState: x => { captured = x; } };
+  const first = await runWirkungsticker(options);
+  assert.equal(first.tabaksteuer_duplicate_consolidation.status, 'applied');
+  assert.equal(first.retired_stories, 1); assert.equal(first.public_changed, true);
+  const second = await runWirkungsticker({ ...options, storyStore: captured.storyStore, state: captured.state });
+  assert.equal(second.tabaksteuer_duplicate_consolidation.status, 'already_applied');
+  assert.equal(second.retired_stories, 0); assert.equal(calls, 0);
+  const canonical = captured.storyStore.stories.find(s => s.story_id === canonicalId);
+  assert.deepEqual(canonical.pending_update, before[0].pending_update);
+  assert.deepEqual(canonical.ai_retry, before[0].ai_retry);
+  for (const s of before) {
+    const retained = captured.storyStore.stories.find(x => x.story_id === s.story_id);
+    for (const key of ['sources', 'analysis', 'versions', 'publication_history', 'content_hash', 'current_version', 'published_at', 'updated_at']) assert.deepEqual(retained[key], s[key]);
+  }
+});
