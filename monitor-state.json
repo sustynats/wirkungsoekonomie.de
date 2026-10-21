@@ -12,13 +12,14 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-21T06:20:48.657Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "2f4a048fd5c89aac4ba73ed7",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-21T07:21:15.069Z"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3174,11 +3175,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/hackerangriff-ausweiskopie-von-berliner-senatorin-bonde-im-darknet-944dff/": {
         "first_seen_at": "2026-10-21T06:36:24.877Z",
         "source_at": "2026-10-21T04:05:27.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/fehler-des-ministeriums-neues-tabaksteuer-gesetz-tritt-aus-versehen-bereits-in-kraft-c5796e/": {
+        "first_seen_at": "2026-10-21T07:21:15.069Z",
+        "source_at": "2026-10-21T06:33:39.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizeieinsatz-schussabgabe-auf-geschaft-in-kolner-innenstadt-fd04c7/": {
+        "first_seen_at": "2026-10-21T07:21:15.069Z",
+        "source_at": "2026-10-21T04:09:47.000Z"
       }
     },
-    "last_new_at": "2026-10-21T06:36:24.877Z",
-    "checked_at": "2026-10-21T07:05:55.145Z",
-    "last_current_new_at": "2026-10-21T06:36:24.877Z"
+    "last_new_at": "2026-10-21T07:21:15.069Z",
+    "checked_at": "2026-10-21T07:21:15.069Z",
+    "last_current_new_at": "2026-10-21T07:21:15.069Z"
   },
   "recovery_attempts": [
     {
