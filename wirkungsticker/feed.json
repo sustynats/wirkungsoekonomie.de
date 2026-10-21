@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-21T06:34:47.831Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-21T07:01:10.454Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/verkehr-sperrung-auf-a31-zwischen-riepe-und-emden-ost-120fe2/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/verkehr-sperrung-auf-a31-zwischen-riepe-und-emden-ost-120fe2/",
+      "title": "Laut stern: Bombenhinweis sperrt A31 zwischen Riepe und Emden-Ost",
+      "summary": "Ein Bombenhinweis soll laut stern die A31 zwischen Riepe und Emden-Ost lahmlegen. Ab 9.00 Uhr ist dem Bericht zufolge eine Umleitung nötig; Ursache, Gefahrenlage und Dauer bleiben offen.",
+      "date_published": "2026-10-21T06:55:46.000Z",
+      "date_modified": "2026-10-21T06:55:46.000Z",
+      "_woek_released_at": "2026-10-21T07:09:43.739Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/fehler-des-ministeriums-neues-tabaksteuer-gesetz-tritt-aus-versehen-bereits-in-kraft-c5796e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/fehler-des-ministeriums-neues-tabaksteuer-gesetz-tritt-aus-versehen-bereits-in-kraft-c5796e/",
@@ -136,8 +167,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/wirtschaftsauskunftei-bundesgerichtshof-urteilt-zu-transparenz-beim-alten-schufa-score-00c08a/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/wirtschaftsauskunftei-bundesgerichtshof-urteilt-zu-transparenz-beim-alten-schufa-score-00c08a/",
-      "title": "Laut Deutschlandfunk: BGH urteilt zu Transparenz beim alten Schufa-Score",
-      "summary": "Der BGH urteilt laut vorliegenden Berichten zu Auskunftspflichten beim alten Schufa-Score. Welche Transparenzpflichten daraus folgen, bleibt ohne Urteilstenor offen.",
+      "title": "Transparenz beim alten Schufa-Score: BGH-Urteil mit offenem Tenor",
+      "summary": "Der BGH entscheidet über Transparenz und Auskunft zum alten Schufa-Score; der genaue Urteilstenor bleibt in den vorliegenden Ausschnitten offen. Für Betroffene könnte die Entscheidung den Zugang zu Bonitätsinformationen verändern, ihre praktische Wirkung hängt aber von Begründung und Umsetzung ab.",
       "date_published": "2026-10-21T01:30:07.000Z",
       "date_modified": "2026-10-21T01:30:07.000Z",
       "_woek_released_at": "2026-10-21T00:13:38.060Z",
@@ -155,11 +186,11 @@
         },
         "planet": {
           "magnitude": 0,
-          "direction": "neutral",
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 3,
+          "magnitude": 2,
           "direction": "positive",
           "status": "potential"
         }
