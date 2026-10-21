@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-21T14:41:13.945Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-21T16:56:29.291Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ca0264b6c6bbdaff50ad1655",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-21T17:36:21.308Z"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3222,11 +3223,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-trump-gesandter-witkoff-reist-nach-russland-262311/": {
         "first_seen_at": "2026-10-21T16:50:56.832Z",
         "source_at": "2026-10-20T19:40:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nach-panne-im-bundesfinanzministerium-tabaksteuergesetz-tritt-versehentlich-fruher-in-kr-d9b503/": {
+        "first_seen_at": "2026-10-21T17:36:21.308Z",
+        "source_at": "2026-10-21T13:43:26.000Z"
       }
     },
-    "last_new_at": "2026-10-21T16:50:56.832Z",
-    "checked_at": "2026-10-21T17:21:07.476Z",
-    "last_current_new_at": "2026-10-21T15:34:32.679Z"
+    "last_new_at": "2026-10-21T17:36:21.308Z",
+    "checked_at": "2026-10-21T17:36:21.308Z",
+    "last_current_new_at": "2026-10-21T17:36:21.308Z"
   },
   "recovery_attempts": [
     {
