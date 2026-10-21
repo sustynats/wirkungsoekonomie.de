@@ -17,32 +17,37 @@
       "firstSeen": "2026-10-21T11:20:49.553Z",
       "active": true
     },
-    "publication": {
-      "firstSeen": "2026-10-21T11:20:49.553Z",
-      "active": false
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-21T11:24:37.201Z",
-      "active": false
-    },
     "provider": {
       "firstSeen": "2026-10-21T11:24:37.201Z",
-      "active": false
+      "active": true
     },
     "queue": {
       "firstSeen": "2026-10-21T11:24:37.201Z",
-      "active": false
+      "active": true
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-21T11:24:37.201Z",
-      "active": false
+      "active": true
     },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-21T11:24:37.201Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "deeebc9714e212b480e7d1b8",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Schnittstelle antwortete mit HTTP 503; die Ursache ist noch nicht bestimmt. Laufbericht: 2026-10-21T11:10:37.819Z.\nSeit: 2026-10-21T11:24:37.201Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "a91d39a71dce7fed227df257",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 2888 Minuten. Kapazitätswarteschlange: 630; redaktionelle Ablehnungen: 334.\nSeit: 2026-10-21T11:24:37.201Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "933d812a27c210c890d476d5",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-21T11:24:37.201Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3218,11 +3223,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/einsatz-in-gewerbegebiet-vermutlich-explosion-in-lagerhalle-in-bochum-ein-toter-3f789a/": {
         "first_seen_at": "2026-10-21T10:21:49.398Z",
         "source_at": "2026-10-21T09:23:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/britische-regierung-genehmigt-umstrittene-forderung-in-nordsee-gasfeld-0d1b34/": {
+        "first_seen_at": "2026-10-21T11:36:13.533Z",
+        "source_at": "2026-10-21T09:35:29.000Z"
       }
     },
-    "last_new_at": "2026-10-21T10:21:49.398Z",
-    "checked_at": "2026-10-21T11:24:37.201Z",
-    "last_current_new_at": "2026-10-21T10:21:49.398Z"
+    "last_new_at": "2026-10-21T11:36:13.533Z",
+    "checked_at": "2026-10-21T11:36:13.533Z",
+    "last_current_new_at": "2026-10-21T11:36:13.533Z"
   },
   "recovery_attempts": [
     {
