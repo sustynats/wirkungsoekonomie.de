@@ -8,6 +8,8 @@ on 21 October 2026 reached that gate; a subsequent normal data release passed at
 existing artifact checks. Its fixed allowlist contains only public runtime
 catalogs and feeds addressed by stable paths. It removes exactly space, tab,
 carriage return and line feed outside JSON strings from their artifact copies.
+The routing manifest is deliberately excluded: its existing regeneration gate
+requires exact serialized bytes. Neither that file nor that gate changes.
 
 It validates strict UTF-8 and JSON before any write. It does not parse and
 reserialize values: every string byte, escape, numeric token, key order and

@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {PUBLIC_RUNTIME_JSON, compactJsonBytes, compactPublicRuntimeJson} from '../../scripts/quality/compact-public-runtime-json.mjs';
+import {writePublicRoutes} from '../../scripts/lib/public-routes.mjs';
 
 const script = new URL('../../scripts/quality/compact-public-runtime-json.mjs', import.meta.url);
 function fixture(t) {
@@ -59,7 +60,8 @@ test('only fixed-path artifact catalogs change; source, readers and hash-bound d
   for (const relative of PUBLIC_RUNTIME_JSON) put(`_site/${relative}`, original);
   const protectedPaths = ['data/news/personal-editorials.json', 'data/news/stories.json.parts/abc.json',
     '_site/data/snapshot.json', '_site/wirkungsticker/data/stories.json', '_site/assets/search/search-core-abc.json',
-    '_site/assets/data/public-release-assets.json', '_site/downloads/original.json', '_site/bibliothek/reader/index.html'];
+    '_site/assets/data/public-release-assets.json', '_site/assets/data/public-routes.json',
+    '_site/downloads/original.json', '_site/bibliothek/reader/index.html'];
   for (const relative of [...PUBLIC_RUNTIME_JSON, ...protectedPaths]) put(relative, original);
   const report = compactPublicRuntimeJson(artifact);
   assert.equal(report.files.length, PUBLIC_RUNTIME_JSON.length);
@@ -81,6 +83,19 @@ test('validates all candidates before writing and tolerates absent optional cata
   const empty = path.join(artifact, 'empty', '_site');
   fs.mkdirSync(empty, {recursive: true});
   assert.deepEqual(compactPublicRuntimeJson(empty), {files: [], saved_bytes: 0});
+});
+
+test('preserves the exact routing manifest bytes and its unchanged regeneration gate', t => {
+  const {artifact, put} = fixture(t);
+  put('_site/index.html', '<html lang="de"><head><title>Home</title><link rel="canonical" href="https://wirkungsoekonomie.de/"></head><body><main><h1>Home</h1></main></body></html>');
+  put(`_site/${PUBLIC_RUNTIME_JSON[0]}`, '{ "x" : 1 }\n');
+  writePublicRoutes(artifact);
+  const manifest = path.join(artifact, 'assets/data/public-routes.json');
+  const before = fs.readFileSync(manifest);
+  const report = compactPublicRuntimeJson(artifact);
+  assert.ok(report.saved_bytes > 0);
+  assert.deepEqual(fs.readFileSync(manifest), before);
+  assert.doesNotThrow(() => writePublicRoutes(artifact, manifest, {check: true}));
 });
 
 test('rejects root, parent and file symlinks, hard links, and non-artifact roots', t => {

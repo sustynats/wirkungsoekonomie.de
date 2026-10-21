@@ -13,7 +13,6 @@ export const PUBLIC_RUNTIME_JSON = Object.freeze([
   'assets/data/glossary-relations.json',
   'assets/data/library-version-registry.json',
   'assets/data/library-source-details.json',
-  'assets/data/public-routes.json',
   'wirkungsticker/feed.json',
   'news/feed.json',
 ]);
