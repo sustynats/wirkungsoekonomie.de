@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-21T00:07:52.815Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-21T01:13:51.282Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,38 @@
         "democracy": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/nigeria-records-first-ebola-case-as-outbreak-spreads-across-africa-aa2b98/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/nigeria-records-first-ebola-case-as-outbreak-spreads-across-africa-aa2b98/",
+      "title": "Laut France 24: Nigeria meldet ersten Ebola-Fall während Ausbruch in Afrika",
+      "summary": "Nigeria meldet laut France 24 den ersten Ebola-Fall des Landes in einem aktuellen regionalen Ausbruch. Umfang, Verlauf und mögliche Folgen der Lage sind mit der vorliegenden Einzelquelle noch nicht unabhängig abgesichert.",
+      "date_published": "2026-10-20T23:18:58.000Z",
+      "date_modified": "2026-10-20T23:18:58.000Z",
+      "_woek_released_at": "2026-10-21T01:20:11.580Z",
+      "tags": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
