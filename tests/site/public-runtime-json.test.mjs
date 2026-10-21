@@ -59,7 +59,9 @@ test('only fixed-path artifact catalogs change; source, readers and hash-bound d
   const original = '{\n  "text": "Complete manuscript -  with spaces", "number": 9007199254740993\n}\n';
   for (const relative of PUBLIC_RUNTIME_JSON) put(`_site/${relative}`, original);
   const protectedPaths = ['data/news/personal-editorials.json', 'data/news/stories.json.parts/abc.json',
-    '_site/data/snapshot.json', '_site/wirkungsticker/data/stories.json', '_site/assets/search/search-core-abc.json',
+    '_site/data/snapshot.json', '_site/wirkungsticker/data/stories.json.parts/abc.json',
+    '_site/wirkungsticker/data/app/manifest.json', '_site/wirkungsticker/data/app/items/abc.json',
+    '_site/assets/search/search-core-abc.json',
     '_site/assets/data/public-release-assets.json', '_site/assets/data/public-routes.json',
     '_site/downloads/original.json', '_site/bibliothek/reader/index.html'];
   for (const relative of [...PUBLIC_RUNTIME_JSON, ...protectedPaths]) put(relative, original);
@@ -70,6 +72,35 @@ test('only fixed-path artifact catalogs change; source, readers and hash-bound d
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join(artifact, relative))), JSON.parse(original));
   }
   for (const relative of [...PUBLIC_RUNTIME_JSON, ...protectedPaths]) assert.equal(fs.readFileSync(path.join(root, relative), 'utf8'), original);
+  assert.equal(compactPublicRuntimeJson(artifact).saved_bytes, 0);
+});
+
+test('compacts the fixed public ticker projection while preserving every value and all canonical/frozen source bytes', t => {
+  const {root, artifact, put} = fixture(t);
+  const relative = 'wirkungsticker/data/stories.json';
+  assert.ok(PUBLIC_RUNTIME_JSON.includes(relative));
+  const original = String.raw`{
+    "schema_version": "1.2", "updated_at": "2026-10-21T19:31:45.521Z",
+    "stories": [{"story_id": "test-story", "version": 77,
+      "source_summary": "  Complete text\nwith  meaningful spaces, Grüße 😀 and \"quotes\".",
+      "sources": [{"url": "https://example.org/source?x=1&y=2"}],
+      "large_number": 9007199254740993, "spelling": 1.2300e+04}],
+    "editorial_analyses": [{"analysis_id": "test-approved", "teaser": "Unchanged  teaser"}]
+  }`;
+  const file = put(`_site/${relative}`, original);
+  const protectedFiles = [relative, 'data/news/stories.json', 'data/news/stories.json.parts/abc.json',
+    'data/news/personal-editorials.json', 'data/news/editorial-analyses.json',
+    '_site/wirkungsticker/test-story/index.html', '_site/wirkungsticker/data/app/items/abc.json'];
+  for (const name of protectedFiles) put(name, original);
+  const report = compactPublicRuntimeJson(artifact);
+  const compacted = fs.readFileSync(file);
+  assert.deepEqual(report.files.map(entry => entry.path), [relative]);
+  assert.ok(report.saved_bytes > 0);
+  assert.deepEqual(compacted, compactJsonBytes(Buffer.from(original)));
+  assert.deepEqual(JSON.parse(compacted), JSON.parse(original));
+  assert.match(compacted.toString(), /9007199254740993/);
+  assert.match(compacted.toString(), /1\.2300e\+04/);
+  for (const name of protectedFiles) assert.equal(fs.readFileSync(path.join(root, name), 'utf8'), original);
   assert.equal(compactPublicRuntimeJson(artifact).saved_bytes, 0);
 });
 
