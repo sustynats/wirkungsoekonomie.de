@@ -46,6 +46,7 @@ import { consolidateKamenDuplicates } from "./consolidate-kamen-duplicates.mjs";
 import { consolidateTrumpSanctionsDuplicates, retainedSanctionsPaidInput } from './consolidate-trump-sanctions-duplicates.mjs';
 import { consolidateHofheimDuplicates, retainedHofheimPaidInput } from './consolidate-hofheim-duplicates.mjs';
 import { consolidateObersontheimDuplicates, retainedObersontheimPaidInput } from './consolidate-obersontheim-duplicates.mjs';
+import { consolidateTabaksteuerDuplicates, retainedTabaksteuerPaidInput } from './consolidate-tabaksteuer-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1428,6 +1429,10 @@ export async function runWirkungsticker(options = {}) {
   report.obersontheim_duplicate_consolidation = obersontheimConsolidation;
   report.living_file_merges.push(...obersontheimConsolidation.changes);
   report.retired_stories += obersontheimConsolidation.changes.length;
+  const tabaksteuerConsolidation = consolidateTabaksteuerDuplicates(storyStore.stories || [], now);
+  report.tabaksteuer_duplicate_consolidation = tabaksteuerConsolidation;
+  report.living_file_merges.push(...tabaksteuerConsolidation.changes);
+  report.retired_stories += tabaksteuerConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1613,6 +1618,15 @@ export async function runWirkungsticker(options = {}) {
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
+    if (retainedTabaksteuerPaidInput(candidate, storyStore.stories, now)) {
+      const reason = 'RETAINED_PAID_SOURCE_INPUTS_NOT_NEW_REVIEW';
+      (report.retained_paid_source_inputs ||= []).push({ story_id: candidate.story_id,
+        archived_story_id: 'wt-120df3585dc5796e', reason,
+        pending_review_retained: Boolean(candidate.existing_story?.pending_update) });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
+        decision: 'retained_paid_source_inputs', reason });
+      return false;
+    }
     const retainedArchived = retainedSanctionsPaidInput(candidate, storyStore.stories) ? 'wt-e6f5bced9f7c773a'
       : retainedHofheimPaidInput(candidate, storyStore.stories) ? 'wt-e083b8d828fa80c8'
       : retainedObersontheimPaidInput(candidate, storyStore.stories) ? 'wt-9909c1676a2f8602' : null;
