@@ -1,7 +1,85 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-21T04:00:00.000Z",
+  "updated_at": "2026-10-21T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-21-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-21",
+      "window_from": "2026-10-21T04:00:00.000Z",
+      "window_to": "2026-10-21T10:00:00.000Z",
+      "stand": "2026-10-21T10:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 5,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-9e08a3019a3f789a",
+          "slug": "einsatz-in-gewerbegebiet-vermutlich-explosion-in-lagerhalle-in-bochum-ein-toter-3f789a",
+          "title": "Toter in Lagerhalle in Bochum gefunden – Ursache offen",
+          "state": "neu",
+          "at": "2026-10-21T09:35:17.928Z",
+          "score": 3.9314
+        },
+        {
+          "story_id": "wt-72c0af15a6b20c91",
+          "slug": "fluchtlingslager-b20c91",
+          "title": "Stern berichtet über Flüchtlingslager Dschabalia im nördlichen Gazastreifen",
+          "state": "neu",
+          "at": "2026-10-21T08:20:24.830Z",
+          "score": 9.7234
+        },
+        {
+          "story_id": "wt-44d56f5975c5ef6e",
+          "slug": "herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e",
+          "title": "Herbstferien: Mehrere Autobahnen in NRW wegen Bauarbeiten gesperrt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-21T08:19:23.216Z",
+          "score": 5.4705
+        },
+        {
+          "story_id": "wt-2da394f2ae00c08a",
+          "slug": "wirtschaftsauskunftei-bundesgerichtshof-urteilt-zu-transparenz-beim-alten-schufa-score-00c08a",
+          "title": "Transparenz beim alten Schufa-Score: BGH-Urteil mit offenem Tenor",
+          "state": "fortgeschrieben",
+          "at": "2026-10-21T07:11:10.941Z",
+          "score": 7.2811
+        },
+        {
+          "story_id": "wt-7c70420047120fe2",
+          "slug": "verkehr-sperrung-auf-a31-zwischen-riepe-und-emden-ost-120fe2",
+          "title": "Laut stern: Bombenhinweis sperrt A31 zwischen Riepe und Emden-Ost",
+          "state": "neu",
+          "at": "2026-10-21T07:09:43.739Z",
+          "score": 3.527
+        },
+        {
+          "story_id": "wt-7f41845135fd04c7",
+          "slug": "polizeieinsatz-schussabgabe-auf-geschaft-in-kolner-innenstadt-fd04c7",
+          "title": "Erneute Schüsse auf Uhrengeschäft in Kölner Innenstadt gemeldet",
+          "state": "neu",
+          "at": "2026-10-21T06:42:12.832Z",
+          "score": 5.4506
+        },
+        {
+          "story_id": "wt-372a7adf68944dff",
+          "slug": "hackerangriff-ausweiskopie-von-berliner-senatorin-bonde-im-darknet-944dff",
+          "title": "rbb24-Recherchen zufolge: Ausweiskopie von Berliner Senatorin Bonde im Darknet",
+          "state": "neu",
+          "at": "2026-10-21T05:53:37.767Z",
+          "score": 7.3156
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-21T10:02:14.728Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-21-morgenlage",
       "slot": "morgenlage",
@@ -5487,83 +5565,6 @@
           "state": "neu",
           "at": "2026-09-21T10:07:12.746Z",
           "score": 9.02
-        }
-      ],
-      "publication_recovery": {
-        "recovered_at": "2026-09-22T05:33:26.129Z",
-        "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
-      }
-    },
-    {
-      "lage_id": "2026-09-21-mittagslage",
-      "slot": "mittagslage",
-      "label": "Mittagslage",
-      "date": "2026-09-21",
-      "window_from": "2026-09-21T04:00:00.000Z",
-      "window_to": "2026-09-21T10:00:00.000Z",
-      "stand": "2026-09-21T10:00:00.000Z",
-      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 7,
-        "neu": 6,
-        "fortgeschrieben": 1
-      },
-      "entries": [
-        {
-          "story_id": "wt-81ec2dd4ad821608",
-          "slug": "zug-evakuiert-16-jahriger-fahrt-auf-zugdach-mit-und-erleidet-stromschlag-821608",
-          "title": "Zug evakuiert nach Stromschlag auf Zugdach",
-          "state": "neu",
-          "at": "2026-09-21T09:52:29.218Z",
-          "score": 9.9791
-        },
-        {
-          "story_id": "wt-33d7725bd2abf3f0",
-          "slug": "three-south-korean-soldiers-injured-in-dmz-explosion-seoul-says-abf3f0",
-          "title": "Drei südkoreanische Soldaten bei Explosion in der DMZ verletzt, laut Seoul",
-          "state": "neu",
-          "at": "2026-09-21T09:08:21.273Z",
-          "score": 5.8565
-        },
-        {
-          "story_id": "wt-32d6a5f4a960d3a5",
-          "slug": "texas-ice-agent-verletzt-mann-bei-schussen-in-liberaler-enklave-austin-60d3a5",
-          "title": "Laut Spiegel: ICE-Agent verletzt Mann bei Schüssen in Austin",
-          "state": "fortgeschrieben",
-          "at": "2026-09-21T07:58:32.333Z",
-          "score": 5.4126
-        },
-        {
-          "story_id": "wt-c6d5b6f3dffbe9ee",
-          "slug": "die-juristische-presseschau-vom-19-bis-21-september-2026-prozess-gegen-scheuer-startet-j-fbe9ee",
-          "title": "LTO berichtet über Prozessstart gegen Exminister Scheuer und Reformvorschläge des Juristentags",
-          "state": "neu",
-          "at": "2026-09-21T06:21:46.730Z",
-          "score": 5.3938
-        },
-        {
-          "story_id": "wt-07f7e067e963967e",
-          "slug": "wahlen-linke-setzt-auf-berlin-erfolg-hoffnung-fur-leipzig-2027-63967e",
-          "title": "Leipzig 2027: Linke verweist auf Berliner Wahlergebnis",
-          "state": "neu",
-          "at": "2026-09-21T05:27:54.043Z",
-          "score": 3.2442
-        },
-        {
-          "story_id": "wt-420984531ef09cdd",
-          "slug": "wahl-in-russland-putins-kriegsparlament-kremlpartei-zur-wahlsiegerin-erklart-f09cdd",
-          "title": "Kremlpartei bei Parlamentswahl in Russland zur Siegerin erklärt",
-          "state": "neu",
-          "at": "2026-09-21T05:10:30.945Z",
-          "score": 7.6959
-        },
-        {
-          "story_id": "wt-6507f4857e5bd85a",
-          "slug": "seit-kriegsbeginn-iranische-wirtschaft-um-mehr-als-zehn-prozent-geschrumpft-5bd85a",
-          "title": "Iranische Wirtschaft laut offiziellen Angaben um mehr als zehn Prozent geschrumpft",
-          "state": "neu",
-          "at": "2026-09-21T04:57:27.112Z",
-          "score": 5.1596
         }
       ],
       "publication_recovery": {
