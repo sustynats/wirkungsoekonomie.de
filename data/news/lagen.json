@@ -1,7 +1,64 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-21T10:00:00.000Z",
+  "updated_at": "2026-10-21T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-21-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-21",
+      "window_from": "2026-10-21T10:00:00.000Z",
+      "window_to": "2026-10-21T16:00:00.000Z",
+      "stand": "2026-10-21T16:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 4,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-bcd55b507a7426e1",
+          "slug": "bombenentscharfungen-b1-in-dortmund-wird-voll-gesperrt-7426e1",
+          "title": "Laut WDR: Zwei Blindgänger in Dortmund: B1 wird voll gesperrt",
+          "state": "neu",
+          "at": "2026-10-21T14:52:10.085Z",
+          "score": 5.8116
+        },
+        {
+          "story_id": "wt-7bdf95719b825b4f",
+          "slug": "polizei-beendet-suche-vermisster-bleibt-verschwunden-825b4f",
+          "title": "Laut Polizei: Suche nach vermisstem Hausbesitzer in Weimar erfolglos beendet",
+          "state": "neu",
+          "at": "2026-10-21T14:51:18.326Z",
+          "score": 5.8092
+        },
+        {
+          "story_id": "wt-4defce9a41239a9e",
+          "slug": "besserer-schutz-gegen-naturkatastrophen-geplant-pflichtversicherung-light-gegen-klimagef-239a9e",
+          "title": "Laut Eckpunktepapier soll Elementarschutz zum Standard werden",
+          "state": "neu",
+          "at": "2026-10-21T14:27:41.623Z",
+          "score": 7.7436
+        },
+        {
+          "story_id": "wt-9e08a3019a3f789a",
+          "slug": "einsatz-in-gewerbegebiet-vermutlich-explosion-in-lagerhalle-in-bochum-ein-toter-3f789a",
+          "title": "Toter in Bochumer Lagerhalle gefunden – Ursache und Gefahrenlage offen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-21T12:28:35.980Z",
+          "score": 9.1628
+        },
+        {
+          "story_id": "wt-340a08fe400d1b34",
+          "slug": "britische-regierung-genehmigt-umstrittene-forderung-in-nordsee-gasfeld-0d1b34",
+          "title": "Laut stern: Britische Regierung genehmigt Förderung in Nordsee-Gasfeld",
+          "state": "neu",
+          "at": "2026-10-21T10:31:20.398Z",
+          "score": 9.0871
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-21-mittagslage",
       "slot": "mittagslage",
@@ -5481,91 +5538,6 @@
           "score": 9.0134
         }
       ]
-    },
-    {
-      "lage_id": "2026-09-21-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-21",
-      "window_from": "2026-09-21T10:00:00.000Z",
-      "window_to": "2026-09-21T16:00:00.000Z",
-      "stand": "2026-09-21T16:00:00.000Z",
-      "headline": "Das sind die 8 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 8,
-        "neu": 8,
-        "fortgeschrieben": 0
-      },
-      "entries": [
-        {
-          "story_id": "wt-6216449746f5a277",
-          "slug": "burokratieabbau-im-tourismus-f5a277",
-          "title": "Bundestag thematisiert Zukunft von Praxischecks im Tourismus",
-          "state": "neu",
-          "at": "2026-09-21T14:59:06.415Z",
-          "score": 6.3309
-        },
-        {
-          "story_id": "wt-372cd422804114a6",
-          "slug": "bundestag-und-bundesrat-sollen-in-dieser-woche-neuen-tankrabatt-beschliessen-4114a6",
-          "title": "Nach Angaben des Bundesfinanzministeriums: Neuer Tankrabatt soll ab 1. Oktober gelten",
-          "state": "neu",
-          "at": "2026-09-21T14:22:17.286Z",
-          "score": 6.2286
-        },
-        {
-          "story_id": "wt-c0cc887ed3c3381e",
-          "slug": "bericht-aus-der-kabinettssitzung-vom-21-september-2026-c3381e",
-          "title": "Bayern veröffentlicht Bilanz der Städtebauförderung seit 1971",
-          "state": "neu",
-          "at": "2026-09-21T13:06:07.202Z",
-          "score": 3.517
-        },
-        {
-          "story_id": "wt-823d9ccbc9b293b1",
-          "slug": "nachtlicher-messerangriff-mann-auf-heimweg-mit-messer-in-den-bauch-gestochen-b293b1",
-          "title": "Laut Polizei: 50-Jähriger bei nächtlichem Messerangriff verletzt",
-          "state": "neu",
-          "at": "2026-09-21T12:48:47.851Z",
-          "score": 5.4689
-        },
-        {
-          "story_id": "wt-d342c025d5f2ad88",
-          "slug": "wolfsburg-explosion-zerstort-kita-im-schachtweg-grosses-gluck-f2ad88",
-          "title": "Explosion zerstört Kita in Wolfsburg – Kinder vorübergehend umverteilt",
-          "state": "neu",
-          "at": "2026-09-21T12:32:49.526Z",
-          "score": 5.4245
-        },
-        {
-          "story_id": "wt-03ddef7dd2f77ba4",
-          "slug": "streit-eskalierte-24-jahriger-nach-messerangriff-in-haft-f77ba4",
-          "title": "Nach Streit in Aschaffenburg: 24-Jähriger in Untersuchungshaft",
-          "state": "neu",
-          "at": "2026-09-21T12:13:59.562Z",
-          "score": 3.3722
-        },
-        {
-          "story_id": "wt-1363984c6520395e",
-          "slug": "protests-erupt-after-ice-shooting-in-texas-20395e",
-          "title": "Laut France 24: Proteste nach Schuss eines ICE-Beamten in Texas",
-          "state": "neu",
-          "at": "2026-09-21T10:22:04.880Z",
-          "score": 5.0613
-        },
-        {
-          "story_id": "wt-85e0ad305c33aab6",
-          "slug": "waldbrand-in-kolumbien-bedroht-bei-touristen-beliebte-andenstadt-villa-de-leyva-33aab6",
-          "title": "Waldbrand erreicht die Nähe der bei Touristen beliebten Andenstadt Villa de Leyva",
-          "state": "neu",
-          "at": "2026-09-21T10:07:12.746Z",
-          "score": 9.02
-        }
-      ],
-      "publication_recovery": {
-        "recovered_at": "2026-09-22T05:33:26.129Z",
-        "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
-      }
     }
   ]
 }
