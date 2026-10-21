@@ -1622,6 +1622,7 @@ export async function runWirkungsticker(options = {}) {
       const reason = 'RETAINED_PAID_SOURCE_INPUTS_NOT_NEW_REVIEW';
       (report.retained_paid_source_inputs ||= []).push({ story_id: candidate.story_id,
         archived_story_id: 'wt-120df3585dc5796e', reason,
+        archived_story_ids: [...candidate.existing_story.living_file.merged_story_ids],
         pending_review_retained: Boolean(candidate.existing_story?.pending_update) });
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
         decision: 'retained_paid_source_inputs', reason });
