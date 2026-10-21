@@ -1,7 +1,149 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-20T16:00:00.000Z",
+  "updated_at": "2026-10-21T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-21-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-21",
+      "window_from": "2026-10-20T16:00:00.000Z",
+      "window_to": "2026-10-21T04:00:00.000Z",
+      "stand": "2026-10-21T04:00:00.000Z",
+      "headline": "Das sind die 15 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 15,
+        "neu": 14,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-09a10505ad0c0424",
+          "slug": "zigaretten-nach-ministeriumspatzer-gesetz-tritt-aus-versehen-in-kraft-0c0424",
+          "title": "Laut stern und Tagesspiegel: Zigarettensteuergesetz gilt schon jetzt statt ab 2027",
+          "state": "neu",
+          "at": "2026-10-21T03:29:25.792Z",
+          "score": 5.9575
+        },
+        {
+          "story_id": "wt-d235b001edaa2b98",
+          "slug": "nigeria-records-first-ebola-case-as-outbreak-spreads-across-africa-aa2b98",
+          "title": "Laut France 24: Nigeria meldet ersten Ebola-Fall während Ausbruch in Afrika",
+          "state": "neu",
+          "at": "2026-10-21T01:20:11.580Z",
+          "score": 5.778
+        },
+        {
+          "story_id": "wt-2da394f2ae00c08a",
+          "slug": "wirtschaftsauskunftei-bundesgerichtshof-urteilt-zu-transparenz-beim-alten-schufa-score-00c08a",
+          "title": "Laut Deutschlandfunk: BGH verkündet Urteil zum alten Schufa-Score",
+          "state": "neu",
+          "at": "2026-10-21T00:13:38.060Z",
+          "score": 5.6856
+        },
+        {
+          "story_id": "wt-e230ac96d053d8d7",
+          "slug": "armenien-weltnaturkonferenz-berat-uber-artenvielfalt-53d8d7",
+          "title": "In Eriwan beraten fast 200 Länder über Artenvielfalt",
+          "state": "neu",
+          "at": "2026-10-20T21:54:29.327Z",
+          "score": 7.4923
+        },
+        {
+          "story_id": "wt-9de887f8ca73464f",
+          "slug": "bertelsmann-studie-unvereinbarkeit-von-angehorigen-pflege-und-beruf-verscharft-arbeitskr-73464f",
+          "title": "Laut Bertelsmann-Studie kann Angehörigenpflege Arbeitskräftemangel verschärfen",
+          "state": "neu",
+          "at": "2026-10-20T20:46:22.867Z",
+          "score": 7.3978
+        },
+        {
+          "story_id": "wt-25a6f9b953c4b3be",
+          "slug": "schwarzmeerregion-nato-verstarkt-uberwachung-nach-wiederholten-drohnenangriffen-auf-hand-c4b3be",
+          "title": "NATO verstärkt Überwachung im Schwarzen Meer nach Drohnenangriffen",
+          "state": "neu",
+          "at": "2026-10-20T20:22:38.506Z",
+          "score": 5.3648
+        },
+        {
+          "story_id": "wt-8c831b5c56c4048c",
+          "slug": "ukraine-krieg-selenskyj-trifft-in-oslo-us-unterhandler-c4048c",
+          "title": "Selenskyj trifft in Oslo US-Unterhändler Witkoff",
+          "state": "neu",
+          "at": "2026-10-20T19:42:17.176Z",
+          "score": 7.3087
+        },
+        {
+          "story_id": "wt-fb9a0310de8f29de",
+          "slug": "urteil-gericht-untersagt-bilder-von-grundstuck-bei-google-maps-8f29de",
+          "title": "Nach Angaben des Deutschlandfunks: Gericht untersagt Luftbilder eines Grundstücks bei Google Maps",
+          "state": "neu",
+          "at": "2026-10-20T18:52:06.669Z",
+          "score": 5.239
+        },
+        {
+          "story_id": "wt-323081a3ee8dc9be",
+          "slug": "verbrenner-aus-mitte-fraktionen-im-eu-parlament-handeln-kompromiss-aus-8dc9be",
+          "title": "Laut stern: Mitte-Fraktionen im EU-Parlament handeln Kompromiss zur Lockerung der CO2-Grenzwerte aus",
+          "state": "neu",
+          "at": "2026-10-20T18:27:38.486Z",
+          "score": 3.2051
+        },
+        {
+          "story_id": "wt-d4114446ca469e89",
+          "slug": "kreis-schwabisch-hall-sek-einsatz-nach-schussen-mit-schreckschusswaffe-in-u-haft-469e89",
+          "title": "Laut stern: Nach Schüssen in Obersontheim gelingt Festnahme erst mit SEK-Unterstützung",
+          "state": "fortgeschrieben",
+          "at": "2026-10-20T18:26:45.104Z",
+          "score": 2.9538
+        },
+        {
+          "story_id": "wt-cab76c05b02f2d79",
+          "slug": "friedensverhandlungen-in-oslo-selenskyjs-abwehrkampf-gegen-trump-2f2d79",
+          "title": "Gespräche in Oslo über mögliche Zugeständnisse der Ukraine und einen US-Friedensdeal",
+          "state": "neu",
+          "at": "2026-10-20T18:01:50.585Z",
+          "score": 9.1692
+        },
+        {
+          "story_id": "wt-41350713c229318d",
+          "slug": "afd-bestatigt-hackerangriff-auf-e-mail-konten-29318d",
+          "title": "Nach Angaben der AfD: Hackerangriff auf E-Mail-Postfächer bestätigt",
+          "state": "neu",
+          "at": "2026-10-20T17:38:46.539Z",
+          "score": 5.2773
+        },
+        {
+          "story_id": "wt-4dbf6739803dc32e",
+          "slug": "strassburg-eu-parlament-starkt-rechte-von-reisenden-3dc32e",
+          "title": "Neue Reiseregeln: Zustimmung des Rats steht noch aus",
+          "state": "neu",
+          "at": "2026-10-20T17:17:25.927Z",
+          "score": 5.8621
+        },
+        {
+          "story_id": "wt-f11ae8129dcabd48",
+          "slug": "audi-pruft-a8-produktion-mit-huawei-aus-china-investoren-setzen-auf-dax-und-deutschland-cabd48",
+          "title": "Laut manager magazin prüft Audi A8-Produktion mit Huawei aus China",
+          "state": "neu",
+          "at": "2026-10-20T17:16:28.389Z",
+          "score": 5.1062
+        },
+        {
+          "story_id": "wt-867750309323ecf8",
+          "slug": "gesundheitsminister-krankenhausplan-keine-standortschliessungen-im-saarland-23ecf8",
+          "title": "Laut Stern: Neue Krankenhausplanung im Saarland soll Anfang 2027 in Kraft treten",
+          "state": "neu",
+          "at": "2026-10-20T16:54:39.600Z",
+          "score": 5.0759
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-21T04:15:37.935Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-20-abendlage",
       "slot": "abendlage",
@@ -5433,119 +5575,6 @@
         "recovered_at": "2026-09-22T05:33:26.129Z",
         "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
       }
-    },
-    {
-      "lage_id": "2026-09-21-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-21",
-      "window_from": "2026-09-20T16:00:00.000Z",
-      "window_to": "2026-09-21T04:00:00.000Z",
-      "stand": "2026-09-21T04:00:00.000Z",
-      "headline": "Das sind die 12 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 12,
-        "neu": 10,
-        "fortgeschrieben": 2
-      },
-      "entries": [
-        {
-          "story_id": "wt-8c4e4b177deb690b",
-          "slug": "ukraine-krieg-selenskyj-kundigt-treffen-mit-us-prasident-trump-in-new-york-an-eb690b",
-          "title": "Selenskyj kündigt an: Selenskyj kündigt Treffen mit Trump in New York an",
-          "state": "neu",
-          "at": "2026-09-21T03:57:25.431Z",
-          "score": 5.9964
-        },
-        {
-          "story_id": "wt-99541a66fec14c9e",
-          "slug": "schulen-strassen-klimafolgen-stadte-und-gemeindebund-fordert-doppelt-so-viel-geld-aus-de-c14c9e",
-          "title": "Laut Deutschlandfunk: Kommunalverband verlangt mehr Geld aus dem Sondervermögen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-21T02:41:04.411Z",
-          "score": 7.6404
-        },
-        {
-          "story_id": "wt-2a74229dc373a957",
-          "slug": "iran-krieg-iranische-wirtschaft-schrumpft-drastisch-und-der-olpreis-steigt-73a957",
-          "title": "Iran-Krieg: Iranische Wirtschaft schrumpft drastisch, Ölpreis steigt",
-          "state": "neu",
-          "at": "2026-09-21T01:36:29.477Z",
-          "score": 7.8007
-        },
-        {
-          "story_id": "wt-32d6a5f4a960d3a5",
-          "slug": "texas-ice-agent-verletzt-mann-bei-schussen-in-liberaler-enklave-austin-60d3a5",
-          "title": "Laut Spiegel: ICE-Agent verletzt Mann bei Schüssen in Austin",
-          "state": "neu",
-          "at": "2026-09-20T23:11:42.455Z",
-          "score": 3.7037
-        },
-        {
-          "story_id": "wt-4eb94b797e3a7840",
-          "slug": "judischer-siedler-im-westjordanland-getotet-verdachtiger-festgenommen-3a7840",
-          "title": "Laut Behörden: Jüdischer Siedler im Westjordanland getötet, Verdächtiger festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-20T22:12:11.564Z",
-          "score": 5.2669
-        },
-        {
-          "story_id": "wt-9bfc552959060348",
-          "slug": "un-bericht-veraltete-zieldaten-fuhrten-zu-us-angriff-auf-iranische-schule-060348",
-          "title": "Laut UN-Bericht: Veraltete Zieldaten sollen US-Angriff auf iranische Schule ermöglicht haben",
-          "state": "neu",
-          "at": "2026-09-20T19:41:58.668Z",
-          "score": 9.3083
-        },
-        {
-          "story_id": "wt-96e038e5d352c9e7",
-          "slug": "mutmasslicher-tater-gefasst-mann-bei-messerangriff-in-wohnung-lebensgefahrlich-verletzt-52c9e7",
-          "title": "Laut stern: 46-Jähriger nach Messerangriff in Wohnung lebensgefährlich verletzt",
-          "state": "neu",
-          "at": "2026-09-20T18:42:43.039Z",
-          "score": 9.226
-        },
-        {
-          "story_id": "wt-96424905afe6f014",
-          "slug": "germany-s-merz-admits-disaster-in-state-elections-vows-to-press-ahead-with-reforms-e6f014",
-          "title": "AfD liegt laut Exit Polls in Mecklenburg-Vorpommern vorn",
-          "state": "neu",
-          "at": "2026-09-20T17:55:24.270Z",
-          "score": 7.1603
-        },
-        {
-          "story_id": "wt-07b9ebbb7e5f6b5e",
-          "slug": "afd-wird-laut-hochrechnungen-starkste-kraft-cdu-sturzt-ab-5f6b5e",
-          "title": "Laut Hochrechnungen: AfD stärkste Kraft in Mecklenburg-Vorpommern, CDU vor Ausscheiden",
-          "state": "neu",
-          "at": "2026-09-20T17:41:16.519Z",
-          "score": 7.8494
-        },
-        {
-          "story_id": "wt-1d15eac3b9b4f628",
-          "slug": "wahl-zum-abgeordnetenhaus-berliner-fdp-vorsitzender-bietet-rucktritt-an-b4f628",
-          "title": "Berliner FDP-Chef Meyer bietet laut Medien Rücktritt an",
-          "state": "neu",
-          "at": "2026-09-20T17:25:10.970Z",
-          "score": 5.1183
-        },
-        {
-          "story_id": "wt-63ed7fc1b2bdbf11",
-          "slug": "saudi-arabien-agypten-jordanien-und-kuwait-verurteilen-huthi-angriff-auf-riad-us-aussenm-bdbf11",
-          "title": "Ägypten, Jordanien und Kuwait verurteilen laut Deutschlandfunk Huthi-Angriffe auf Riad",
-          "state": "neu",
-          "at": "2026-09-20T16:43:38.702Z",
-          "score": 9.0606
-        },
-        {
-          "story_id": "wt-6b20749bc0c14bdb",
-          "slug": "russland-meldet-cyberangriffe-auf-wahl-infrastruktur-c14bdb",
-          "title": "Laut Wahlkommission: Russland meldet während Parlamentswahl Cyberangriffe auf Wahlinfrastruktur",
-          "state": "neu",
-          "at": "2026-09-20T16:11:55.725Z",
-          "score": 9.0166
-        }
-      ]
     }
   ]
 }
