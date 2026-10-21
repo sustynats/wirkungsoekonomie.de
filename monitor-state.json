@@ -16,17 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-21T18:50:52.230Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-21T20:20:58.219Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-21T21:50:42.839Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "15b94c1d0d4efcf9f449062d",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-21T22:06:22.635Z"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3266,10 +3263,18 @@
       "https://wirkungsoekonomie.de/wirkungsticker/genf-uno-konferenz-zum-sudan-ohne-greifbare-ergebnisse-zu-ende-gegangen-0de1db/": {
         "first_seen_at": "2026-10-21T21:50:42.839Z",
         "source_at": "2026-10-21T19:23:38.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/selenskyj-fordert-teilnahme-an-putin-xi-trump-treffen-86781b/": {
+        "first_seen_at": "2026-10-21T22:06:22.635Z",
+        "source_at": "2026-10-20T20:15:01.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukrainekrieg-us-sondergesandter-will-mit-selenskyj-sprechen-und-putin-treffen-79dd6f/": {
+        "first_seen_at": "2026-10-21T22:06:22.635Z",
+        "source_at": "2026-10-20T15:54:00.000Z"
       }
     },
-    "last_new_at": "2026-10-21T21:50:42.839Z",
-    "checked_at": "2026-10-21T21:50:42.839Z",
+    "last_new_at": "2026-10-21T22:06:22.635Z",
+    "checked_at": "2026-10-21T22:06:22.635Z",
     "last_current_new_at": "2026-10-21T21:50:42.839Z"
   },
   "recovery_attempts": [
