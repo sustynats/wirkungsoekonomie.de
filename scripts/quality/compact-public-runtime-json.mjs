@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-// Only fixed-path runtime catalogs, never manuscripts, approved editions,
+// Only fixed-path runtime catalogs/projections, never canonical manuscripts, approved editions,
 // content-addressed shards/manifests, snapshots or downloadable originals.
 // Source files remain unchanged; this runs after artifact generation only.
 export const PUBLIC_RUNTIME_JSON = Object.freeze([
@@ -15,6 +15,9 @@ export const PUBLIC_RUNTIME_JSON = Object.freeze([
   'assets/data/library-source-details.json',
   'wirkungsticker/feed.json',
   'news/feed.json',
+  // Public projection produced by publicStory(), NOT data/news/stories.json,
+  // its content-addressed parts or the private/frozen editorial records.
+  'wirkungsticker/data/stories.json',
 ]);
 
 export function compactJsonBytes(input) {
