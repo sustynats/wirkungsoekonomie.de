@@ -16,6 +16,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 from pathlib import Path
 from zipfile import ZipFile
 from xml.etree import ElementTree as ET
@@ -34,7 +35,7 @@ DESCRIPTION = (
 DATE = "21. Oktober 2026"
 DATE_ISO = "2026-10-21T10:00:00+02:00"
 SECTION = "Grundlagen"
-HERO_IMAGE = "2026-10-21-wirkungsoekonomie-wirtschaftlicher-erfolg.png"
+HERO_IMAGE = "2026-10-21-wirkungsoekonomie-wirtschaftlicher-erfolg.webp"
 HERO_ALT = (
     "Illustration zur Wirkungsökonomie: eine reparierbare Waschmaschine zwischen Werkstatt, Preis, Familie, "
     "Gemeinschaft und nachhaltiger Stadtentwicklung. Symbolbild, keine dokumentarische Aufnahme."
@@ -174,8 +175,17 @@ def read_paragraphs() -> tuple[list[dict[str, object]], int, int]:
 def copy_assets() -> tuple[str, str]:
     ASSETS.mkdir(parents=True, exist_ok=True)
     hero = ASSETS / HERO_IMAGE
-    if TITLE_IMAGE.resolve() != hero.resolve():
-        shutil.copy2(TITLE_IMAGE, hero)
+    if TITLE_IMAGE.suffix.lower() == ".webp":
+        if TITLE_IMAGE.resolve() != hero.resolve():
+            shutil.copy2(TITLE_IMAGE, hero)
+    else:
+        encoder = shutil.which("cwebp")
+        if not encoder:
+            raise RuntimeError("cwebp wird benötigt, um das Titelbild platzsparend als WebP zu veröffentlichen.")
+        subprocess.run(
+            [encoder, "-quiet", "-q", "94", "-m", "6", "-mt", str(TITLE_IMAGE), "-o", str(hero)],
+            check=True,
+        )
     return (
         hashlib.sha256(SOURCE_DOCX.read_bytes()).hexdigest(),
         hashlib.sha256(hero.read_bytes()).hexdigest(),
