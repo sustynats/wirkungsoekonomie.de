@@ -15,10 +15,19 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-21T18:50:52.230Z",
+      "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-21T19:06:19.888Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "516c5fbb7d9848762fe03936",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 2 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-21T18:50:52.230Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3230,11 +3239,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/wittkoff-gesprache-mit-putin-waren-konstruktiv-es-gibt-aber-noch-wichtige-arbeit-21f014/": {
         "first_seen_at": "2026-10-21T18:35:59.650Z",
         "source_at": "2026-10-21T17:26:21.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/skandal-um-cambridge-analytica-gericht-verurteilt-facebook-mutter-meta-zu-25-milliarden--3092e8/": {
+        "first_seen_at": "2026-10-21T19:06:19.888Z",
+        "source_at": "2026-10-21T18:10:52.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/deutschland-bundesregierung-plant-pflichtversicherung-fur-elementarschaden-e84276/": {
+        "first_seen_at": "2026-10-21T19:06:19.888Z",
+        "source_at": "2026-10-21T16:25:00.000Z"
       }
     },
-    "last_new_at": "2026-10-21T18:35:59.650Z",
-    "checked_at": "2026-10-21T18:50:52.230Z",
-    "last_current_new_at": "2026-10-21T18:35:59.650Z"
+    "last_new_at": "2026-10-21T19:06:19.888Z",
+    "checked_at": "2026-10-21T19:06:19.888Z",
+    "last_current_new_at": "2026-10-21T19:06:19.888Z"
   },
   "recovery_attempts": [
     {
