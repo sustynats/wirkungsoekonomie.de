@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-22T04:00:00.000Z",
+  "updated_at": "2026-10-22T10:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-22-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-22",
+      "window_from": "2026-10-22T04:00:00.000Z",
+      "window_to": "2026-10-22T10:00:00.000Z",
+      "stand": "2026-10-22T10:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 9,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-34eaab86f353ae12",
+          "slug": "gesundheit-kostenlose-adipositas-beratung-gericht-stoppt-werbung-53ae12",
+          "title": "Laut Stern: Gericht stoppt Werbung für kostenlose Adipositas-Beratung",
+          "state": "neu",
+          "at": "2026-10-22T09:41:43.576Z",
+          "score": 5.9492
+        },
+        {
+          "story_id": "wt-ad0db8421b44ef47",
+          "slug": "keine-lebensgefahr-18-jahriger-in-hellersdorf-bei-messerattacke-verletzt-44ef47",
+          "title": "Laut Stern: 18-Jähriger in Hellersdorf bei Messerattacke verletzt",
+          "state": "neu",
+          "at": "2026-10-22T08:30:11.408Z",
+          "score": 9.7505
+        },
+        {
+          "story_id": "wt-ff45177f5af6f8fa",
+          "slug": "wust-will-stromsteuer-fur-alle-senken-f6f8fa",
+          "title": "Laut ZDFheute: Wüst will Stromsteuer für alle senken",
+          "state": "neu",
+          "at": "2026-10-22T07:23:57.181Z",
+          "score": 7.5665
+        },
+        {
+          "story_id": "wt-b3bfe7680403f89f",
+          "slug": "einsatz-in-gewerbegebiet-ermittlungen-nach-explosion-in-bochumer-lagerhalle-dauern-an-03f89f",
+          "title": "Laut stern: Explosion in Bochumer Lagerhalle – Ermittlungen dauern an",
+          "state": "neu",
+          "at": "2026-10-22T07:22:59.279Z",
+          "score": 9.5639
+        },
+        {
+          "story_id": "wt-bce984fe3feedf18",
+          "slug": "meta-zuckerberg-setzt-neue-aktienstruktur-durch-und-erhoht-ki-investitionen-eedf18",
+          "title": "Laut manager magazin: Meta ordnet Aktienstruktur neu und erhöht KI-Investitionen",
+          "state": "neu",
+          "at": "2026-10-22T06:33:08.218Z",
+          "score": 7.4254
+        },
+        {
+          "story_id": "wt-d30d3e0c1def3f1d",
+          "slug": "us-gericht-zugriff-von-doge-agenten-auf-behordendaten-war-illegal-ef3f1d",
+          "title": "Laut heise: US-Gericht wertet Zugriff auf Behördendaten als illegal",
+          "state": "neu",
+          "at": "2026-10-22T06:31:37.466Z",
+          "score": 9.4212
+        },
+        {
+          "story_id": "wt-a103aca77129f019",
+          "slug": "beamte-beamtenbezuge-vor-sondersitzung-tauziehen-der-fraktionen-29f019",
+          "title": "Beamtenbezüge in Thüringen: Vor Sondersitzung gibt es noch keine Einigung",
+          "state": "neu",
+          "at": "2026-10-22T06:04:02.373Z",
+          "score": 5.3446
+        },
+        {
+          "story_id": "wt-58e2ce158dc74615",
+          "slug": "ministerprasidentenkonferenz-wust-fordert-rasche-senkung-der-stromsteuer-fur-alle-c74615",
+          "title": "Laut Deutschlandfunk: Wüst fordert rasche Stromsteuersenkung für alle",
+          "state": "neu",
+          "at": "2026-10-22T05:23:47.171Z",
+          "score": 8.2537
+        },
+        {
+          "story_id": "wt-39d194527d0c922d",
+          "slug": "meta-mark-zuckerbergs-knuddel-ki-muse-beruhigt-die-markte-0c922d",
+          "title": "Laut DER SPIEGEL besänftigen Metas Quartalszahlen und KI Muse zunächst die Investoren",
+          "state": "neu",
+          "at": "2026-10-22T04:34:09.128Z",
+          "score": 7.0949
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-22-morgenlage",
       "slot": "morgenlage",
@@ -5528,79 +5617,6 @@
           "state": "neu",
           "at": "2026-09-22T10:26:59.746Z",
           "score": 5.075
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-22-mittagslage",
-      "slot": "mittagslage",
-      "label": "Mittagslage",
-      "date": "2026-09-22",
-      "window_from": "2026-09-22T04:00:00.000Z",
-      "window_to": "2026-09-22T10:00:00.000Z",
-      "stand": "2026-09-22T10:00:00.000Z",
-      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 7,
-        "neu": 5,
-        "fortgeschrieben": 2
-      },
-      "entries": [
-        {
-          "story_id": "wt-33f4aabbf0dabd4f",
-          "slug": "berlin-brandenburg-evonik-kundigt-abbau-von-3-200-stellen-ab-dabd4f",
-          "title": "Evonik kündigt laut Stern Abbau von 3.200 Stellen an",
-          "state": "neu",
-          "at": "2026-09-22T09:58:28.106Z",
-          "score": 7.9957
-        },
-        {
-          "story_id": "wt-b8f4f0a8e55c0e9b",
-          "slug": "borse-dax-mit-gewinnen-nasdaq-auf-rekordhoch-5c0e9b",
-          "title": "Dax gerät ins Minus, Nasdaq erreicht Rekordhoch",
-          "state": "neu",
-          "at": "2026-09-22T08:11:37.840Z",
-          "score": 5.699
-        },
-        {
-          "story_id": "wt-f205d07a7d4f5073",
-          "slug": "einsatz-in-gelsenkirchen-passanten-bedroht-polizei-schiesst-auf-38-jahrigen-4f5073",
-          "title": "Laut WDR: Polizistin schießt in Gelsenkirchen auf bewaffneten Mann",
-          "state": "fortgeschrieben",
-          "at": "2026-09-22T07:02:29.451Z",
-          "score": 9.7569
-        },
-        {
-          "story_id": "wt-bd65c0cb99b2f858",
-          "slug": "nachtliche-evakuierung-nach-kampfmittelfung-in-nideggen-b2f858",
-          "title": "Rund 100 Menschen verlassen nachts Häuser in Nideggen-Schmidt nach Kampfmittelfund",
-          "state": "neu",
-          "at": "2026-09-22T06:52:52.265Z",
-          "score": 3.4802
-        },
-        {
-          "story_id": "wt-77f80de1a304012e",
-          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
-          "title": "Laut Deutschlandfunk: Selenskyj bietet Deeskalation bei Ende russischer Angriffe auf ukrainische Infrastruktur an",
-          "state": "fortgeschrieben",
-          "at": "2026-09-22T06:43:21.543Z",
-          "score": 5.2038
-        },
-        {
-          "story_id": "wt-7bfb8f8b229f214e",
-          "slug": "100-tage-geas-reform-eingesperrt-am-flughafen-9f214e",
-          "title": "GEAS-Reform: laut taz Berichte über Haft in Flughafenverfahren",
-          "state": "neu",
-          "at": "2026-09-22T05:17:10.002Z",
-          "score": 9.2144
-        },
-        {
-          "story_id": "wt-60c5b772d4fa9730",
-          "slug": "un-generaldebatte-iran-krieg-und-gronland-abkommen-trumps-agenda-in-new-york-fa9730",
-          "title": "UN-Generaldebatte in New York steht im Zeichen ungelöster Konflikte",
-          "state": "neu",
-          "at": "2026-09-22T04:58:04.226Z",
-          "score": 3.1613
         }
       ]
     }
