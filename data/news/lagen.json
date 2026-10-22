@@ -1,7 +1,149 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-21T16:00:00.000Z",
+  "updated_at": "2026-10-22T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-22-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-22",
+      "window_from": "2026-10-21T16:00:00.000Z",
+      "window_to": "2026-10-22T04:00:00.000Z",
+      "stand": "2026-10-22T04:00:00.000Z",
+      "headline": "Das sind die 15 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 15,
+        "neu": 15,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-806f21eac3c41b99",
+          "slug": "berlin-spd-will-pflegereform-im-bundestag-nachbessern-c41b99",
+          "title": "Laut Deutschlandfunk: SPD will Pflegereform im Bundestag nachbessern",
+          "state": "neu",
+          "at": "2026-10-22T02:22:50.776Z",
+          "score": 5.8651
+        },
+        {
+          "story_id": "wt-40c7c5afe4c633ae",
+          "slug": "kunstliche-intelligenz-meta-investiert-mindestens-135-milliarden-dollar-in-ki-c633ae",
+          "title": "Meta plant laut stern und Tagesspiegel Investitionen von mindestens 135 Milliarden Dollar in KI",
+          "state": "neu",
+          "at": "2026-10-22T00:04:18.325Z",
+          "score": 5.6726
+        },
+        {
+          "story_id": "wt-f9caf47f3d31e296",
+          "slug": "mitreden-sollte-die-afd-verboten-werden-31e296",
+          "title": "Wüst will laut NDR Voraussetzungen für AfD-Verbotsverfahren prüfen lassen",
+          "state": "neu",
+          "at": "2026-10-21T23:04:58.851Z",
+          "score": 5.5903
+        },
+        {
+          "story_id": "wt-fa9361e36479dd6f",
+          "slug": "ukrainekrieg-us-sondergesandter-will-mit-selenskyj-sprechen-und-putin-treffen-79dd6f",
+          "title": "US-Sondergesandter plant Gespräche mit Selenskyj und Putin",
+          "state": "neu",
+          "at": "2026-10-21T20:52:16.329Z",
+          "score": 5.4059
+        },
+        {
+          "story_id": "wt-2fb8d2cf3286781b",
+          "slug": "selenskyj-fordert-teilnahme-an-putin-xi-trump-treffen-86781b",
+          "title": "Laut Tagesschau: Selenskyj fordert Teilnahme der Ukraine an möglichem Putin-Trump-Xi-Treffen",
+          "state": "neu",
+          "at": "2026-10-21T20:51:28.785Z",
+          "score": 7.9048
+        },
+        {
+          "story_id": "wt-5155db3edae3ad9a",
+          "slug": "konkurrenz-durch-ki-us-bildagentur-getty-images-beantragt-insolvenz-e3ad9a",
+          "title": "Nach Angaben des Deutschlandfunks: Getty Images beantragt Insolvenz",
+          "state": "neu",
+          "at": "2026-10-21T20:07:44.826Z",
+          "score": 5.7651
+        },
+        {
+          "story_id": "wt-350148f0e00de1db",
+          "slug": "genf-uno-konferenz-zum-sudan-ohne-greifbare-ergebnisse-zu-ende-gegangen-0de1db",
+          "title": "Laut Deutschlandfunk: UNO-Konferenz zum Sudan endet ohne greifbare Ergebnisse",
+          "state": "neu",
+          "at": "2026-10-21T19:31:45.521Z",
+          "score": 7.2941
+        },
+        {
+          "story_id": "wt-6f3ecba690b5d98e",
+          "slug": "fossile-energie-britische-regierung-genehmigt-umstrittene-gasfeld-bohrungen-in-der-nords-b5d98e",
+          "title": "Laut Deutschlandfunk: Britische Regierung gibt grünes Licht für umstrittene Gasfeld-Bohrungen",
+          "state": "neu",
+          "at": "2026-10-21T19:30:54.014Z",
+          "score": 9.2929
+        },
+        {
+          "story_id": "wt-aac89ef9136bdd3c",
+          "slug": "alter-skandal-neues-urteil-meta-soll-milliarden-wegen-cambridge-analytica-zahlen-6bdd3c",
+          "title": "Laut stern: Meta in New Mexico zu 25 Milliarden Dollar verurteilt",
+          "state": "neu",
+          "at": "2026-10-21T19:09:37.965Z",
+          "score": 5.2634
+        },
+        {
+          "story_id": "wt-96d776ca1fb3967a",
+          "slug": "offene-fragen-nach-dem-afd-leak-b3967a",
+          "title": "Offene Fragen nach dem AfD-Leak",
+          "state": "neu",
+          "at": "2026-10-21T19:08:36.405Z",
+          "score": 5.262
+        },
+        {
+          "story_id": "wt-89e5e12272e84276",
+          "slug": "deutschland-bundesregierung-plant-pflichtversicherung-fur-elementarschaden-e84276",
+          "title": "Laut DER SPIEGEL plant die Bundesregierung eine Pflichtversicherung für Elementarschäden",
+          "state": "neu",
+          "at": "2026-10-21T18:21:00.131Z",
+          "score": 7.1958
+        },
+        {
+          "story_id": "wt-eeecd4ce013092e8",
+          "slug": "skandal-um-cambridge-analytica-gericht-verurteilt-facebook-mutter-meta-zu-25-milliarden--3092e8",
+          "title": "Laut Tagesspiegel: Jury in New Mexico verurteilt Meta zu 25 Milliarden Dollar Strafe",
+          "state": "neu",
+          "at": "2026-10-21T18:20:02.097Z",
+          "score": 7.1945
+        },
+        {
+          "story_id": "wt-3b52bde98d21f014",
+          "slug": "wittkoff-gesprache-mit-putin-waren-konstruktiv-es-gibt-aber-noch-wichtige-arbeit-21f014",
+          "title": "Laut Witkoff waren Gespräche mit Putin „konstruktiv“",
+          "state": "neu",
+          "at": "2026-10-21T17:52:10.252Z",
+          "score": 5.1558
+        },
+        {
+          "story_id": "wt-fa936ea9938a132a",
+          "slug": "eu-ermittelt-gegen-booking-com-wegen-betrugsfallen-8a132a",
+          "title": "Laut EU-Kommission: Ermittlungen gegen Booking.com wegen möglicher Verbraucherschutzverstöße",
+          "state": "neu",
+          "at": "2026-10-21T17:10:05.663Z",
+          "score": 5.0974
+        },
+        {
+          "story_id": "wt-103a701c12262311",
+          "slug": "ukraine-krieg-trump-gesandter-witkoff-reist-nach-russland-262311",
+          "title": "Trump-Gesandter Witkoff reist mit neuen Friedensvorschlägen nach Russland",
+          "state": "neu",
+          "at": "2026-10-21T16:01:01.821Z",
+          "score": 7.0014
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-22T04:08:05.317Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-21-abendlage",
       "slot": "abendlage",
@@ -5464,83 +5606,6 @@
           "state": "neu",
           "at": "2026-09-22T04:58:04.226Z",
           "score": 3.1613
-        }
-      ]
-    },
-    {
-      "publication_recovery": {
-        "recovered_at": "2026-09-22T05:33:26.129Z",
-        "note": "Nachträglich bereitgestellt am 22. September: Wegen einer technischen Veröffentlichungsstörung waren diese bereits geprüften Meldungen zunächst nicht erreichbar. Der angegebene Stand bezeichnet das Nachrichtenfenster, nicht den Zeitpunkt der nachgeholten Auslieferung."
-      },
-      "lage_id": "2026-09-22-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-22",
-      "window_from": "2026-09-21T16:00:00.000Z",
-      "window_to": "2026-09-22T04:00:00.000Z",
-      "stand": "2026-09-22T04:00:00.000Z",
-      "headline": "Das sind die 7 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 7,
-        "neu": 7,
-        "fortgeschrieben": 0
-      },
-      "entries": [
-        {
-          "story_id": "wt-5a09d8ea33380b91",
-          "slug": "evakuierung-haus-von-familie-wegen-rissen-evakuiert-abriss-nebenan-380b91",
-          "title": "Laut stern: Familienhaus nach Schäden durch Abrissarbeiten evakuiert",
-          "state": "neu",
-          "at": "2026-09-22T01:34:53.404Z",
-          "score": 9.7985
-        },
-        {
-          "story_id": "wt-77f80de1a304012e",
-          "slug": "ukraine-krieg-selenskyj-bietet-deeskalation-an-wenn-russland-angriffe-auf-ukrainischen-e-04012e",
-          "title": "Laut Deutschlandfunk: Selenskyj bietet Deeskalation bei Ende russischer Angriffe auf ukrainische Infrastruktur an",
-          "state": "neu",
-          "at": "2026-09-22T01:00:56.738Z",
-          "score": 6
-        },
-        {
-          "story_id": "wt-150f901b2a42b95e",
-          "slug": "wirtschaft-porsche-chef-dementiert-medienbericht-uber-weiteren-stellenabbau-42b95e",
-          "title": "Porsche-Chef weist laut Deutschlandfunk Bericht über weiteren Stellenabbau zurück",
-          "state": "neu",
-          "at": "2026-09-21T19:41:49.057Z",
-          "score": 5.3081
-        },
-        {
-          "story_id": "wt-a7912228c8853d53",
-          "slug": "landtagswahl-in-mv-linke-vorstand-in-mv-fur-sondierung-mit-spd-und-grunen-853d53",
-          "title": "Laut stern: Linke in MV für Gespräche mit SPD und Grünen offen",
-          "state": "neu",
-          "at": "2026-09-21T19:05:53.143Z",
-          "score": 7.2582
-        },
-        {
-          "story_id": "wt-2989a3fd91f6cb95",
-          "slug": "mercedes-vorstand-kundigt-werkschliessungen-an-wenn-arbeitskosten-nicht-sinken-f6cb95",
-          "title": "Mercedes erwägt laut Produktionsvorstand die Schließung von zwei deutschen Werken",
-          "state": "neu",
-          "at": "2026-09-21T18:10:45.526Z",
-          "score": 7.1816
-        },
-        {
-          "story_id": "wt-56811694cac5f342",
-          "slug": "kolumbien-waldbrand-in-touristenstadt-villa-de-leyva-teilweise-unter-kontrolle-c5f342",
-          "title": "Waldbrand in Villa de Leyva teilweise unter Kontrolle",
-          "state": "neu",
-          "at": "2026-09-21T16:44:47.741Z",
-          "score": 7.0622
-        },
-        {
-          "story_id": "wt-0590727208645523",
-          "slug": "geteiltes-echo-zur-starkung-digitaler-ermittlungsbefugnisse-645523",
-          "title": "Anhörung zu digitalen Ermittlungsbefugnissen zeigt geteilte Positionen",
-          "state": "neu",
-          "at": "2026-09-21T16:09:39.896Z",
-          "score": 9.0134
         }
       ]
     }
