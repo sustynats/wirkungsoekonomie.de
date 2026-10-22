@@ -13,16 +13,25 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-22T06:20:56.278Z",
-      "active": true
-    },
     "editorial-status": {
       "firstSeen": "2026-10-22T10:06:23.988Z",
+      "active": true
+    },
+    "institute": {
+      "firstSeen": "2026-10-22T10:21:03.034Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5f7b71212cb4a54ba672cae3",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-22T10:06:23.988Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "30c121a31e8022918587b492",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-22T10:21:03.034Z"
+    }
+  ],
   "dailyDate": "2026-10-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3318,11 +3327,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/keine-lebensgefahr-18-jahriger-in-hellersdorf-bei-messerattacke-verletzt-44ef47/": {
         "first_seen_at": "2026-10-22T09:20:53.114Z",
         "source_at": "2026-10-22T08:01:18.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/gesundheit-kostenlose-adipositas-beratung-gericht-stoppt-werbung-53ae12/": {
+        "first_seen_at": "2026-10-22T10:21:03.034Z",
+        "source_at": "2026-10-22T09:29:45.000Z"
       }
     },
-    "last_new_at": "2026-10-22T09:20:53.114Z",
-    "checked_at": "2026-10-22T10:06:23.988Z",
-    "last_current_new_at": "2026-10-22T09:20:53.114Z"
+    "last_new_at": "2026-10-22T10:21:03.034Z",
+    "checked_at": "2026-10-22T10:21:03.034Z",
+    "last_current_new_at": "2026-10-22T10:21:03.034Z"
   },
   "recovery_attempts": [
     {
