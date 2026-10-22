@@ -13,17 +13,22 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-22T02:06:31.778Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-22T05:12:11.292Z",
       "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-10-21",
+  "outbox": [
+    {
+      "id": "e130da826f16e42bc18a62c1",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-22T06:05:56.850Z"
+    },
+    {
+      "id": "4aeaba7b7de822e01f91b43e",
+      "content": "WÖk Tagesbericht · 2026-10-22 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 980 live · 795 aktuelle Lagen und Einzelakten aus 820 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-10-21) 27; heute bisher 6 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-22T05:26:28.816Z; 976 offene Prüfungen, 42 aktive Quellen.\nQueue: 976 offen (660 Kapazität · 1 technisch · 315 redaktionell); Status draining.\nQuellen-Funnel heute: 17466 Feed-Einträge → 284 neu/aktualisiert → 257 Story-Kandidaten → 17737 geeignet → 8 KI → 7 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 398; redaktionelle Quellenbeiträge: 721.\nProduktive Quellen im letzten Lauf: stern.\nEreignischeck (begrenzter Quellenbestand): 13 größere Ereignisse · 10 mit Veröffentlichung · 3 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.84 · heute $0.10 · Monat $21.90.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 292 Erstveröffentlichungen · 689 Aktualisierungen · 1785 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 10.34 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 152 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.014; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €23.20 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Liegengebliebene Redaktionsauftraege: 1 Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit 2026-10-09T21:03:10.095Z; Grund: nicht vermerkt). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.\n⚠ Nachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\n⚠ Redaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -3290,11 +3295,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/meta-mark-zuckerbergs-knuddel-ki-muse-beruhigt-die-markte-0c922d/": {
         "first_seen_at": "2026-10-22T05:21:26.798Z",
         "source_at": "2026-10-22T03:00:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ministerprasidentenkonferenz-wust-fordert-rasche-senkung-der-stromsteuer-fur-alle-c74615/": {
+        "first_seen_at": "2026-10-22T06:05:56.850Z",
+        "source_at": "2026-10-22T04:05:04.000Z"
       }
     },
-    "last_new_at": "2026-10-22T05:21:26.798Z",
-    "checked_at": "2026-10-22T05:51:03.387Z",
-    "last_current_new_at": "2026-10-22T05:21:26.798Z"
+    "last_new_at": "2026-10-22T06:05:56.850Z",
+    "checked_at": "2026-10-22T06:05:56.850Z",
+    "last_current_new_at": "2026-10-22T06:05:56.850Z"
   },
   "recovery_attempts": [
     {
