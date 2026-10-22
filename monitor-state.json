@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-22T06:20:56.278Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-22T06:30:45.545Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "22f963bf3aa3ce41be1224d8",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-22T06:50:55.274Z"
+    }
+  ],
   "dailyDate": "2026-10-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3294,11 +3295,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ministerprasidentenkonferenz-wust-fordert-rasche-senkung-der-stromsteuer-fur-alle-c74615/": {
         "first_seen_at": "2026-10-22T06:05:56.850Z",
         "source_at": "2026-10-22T04:05:04.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/beamte-beamtenbezuge-vor-sondersitzung-tauziehen-der-fraktionen-29f019/": {
+        "first_seen_at": "2026-10-22T06:50:55.274Z",
+        "source_at": "2026-10-22T04:30:04.000Z"
       }
     },
-    "last_new_at": "2026-10-22T06:05:56.850Z",
-    "checked_at": "2026-10-22T06:36:03.381Z",
-    "last_current_new_at": "2026-10-22T06:05:56.850Z"
+    "last_new_at": "2026-10-22T06:50:55.274Z",
+    "checked_at": "2026-10-22T06:50:55.274Z",
+    "last_current_new_at": "2026-10-22T06:50:55.274Z"
   },
   "recovery_attempts": [
     {
