@@ -289,15 +289,28 @@ test('the retained LTO input routes to the canonical file without purchasing ano
 
 test('the later archived reader stays complete and the original file links both editions', () => {
   const sample = readRepositoryJson(new URL('../../data/news/stories.json', import.meta.url)).stories.find(s => s.published && s.listed !== false && s.analysis);
-  const stories = laterFixture().map(s => ({ ...structuredClone(sample), ...s, analysis: structuredClone(sample.analysis) }));
   const body = html => html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
-  const original = storyPage(stories[2]); consolidateTabaksteuerDuplicates(stories, laterAt);
-  const archived = retiredStoryPage(stories[2]);
-  assert.equal(body(archived).replace(/<aside\b[^>]*data-merged-publication-notice[\s\S]*?<\/aside>/, ''), body(original));
-  assert.match(archived, /name="robots" content="noindex,follow"/);
-  assert.ok(archived.includes(`href="../${stories[0].slug}/"`));
-  const notice = renderConsolidations(stories[0], new Set(stories.slice(1).map(s => s.slug)));
-  for (const s of stories.slice(1)) assert.ok(notice.includes(`href="../${s.slug}/"`));
+  for (const seed of [sample, { ...sample,
+    pending_update: { reason: 'AI_HOURLY_CALL_LIMIT' },
+    retirement: { reason_code: 'UNRELATED_LIVE_RETIREMENT' },
+    living_file: { merged_story_ids: ['unrelated-live-story'] },
+  }]) {
+    // Borrow rendering fields, never unrelated live routing or pending work.
+    // The synthetic editions retain their own exact pending/routing contract.
+    const stories = laterFixture().map(s => ({ ...structuredClone(seed),
+      pending_update: undefined, retirement: undefined, living_file: undefined,
+      ...s, analysis: structuredClone(seed.analysis) }));
+    const before = structuredClone(stories), original = storyPage(stories[2]);
+    assert.equal(consolidateTabaksteuerDuplicates(stories, laterAt).status, 'applied');
+    const archived = retiredStoryPage(stories[2]);
+    assert.equal(body(archived).replace(/<aside\b[^>]*data-merged-publication-notice[\s\S]*?<\/aside>/, ''), body(original));
+    assert.match(archived, /name="robots" content="noindex,follow"/);
+    assert.ok(archived.includes(`href="../${stories[0].slug}/"`));
+    const notice = renderConsolidations(stories[0], new Set(stories.slice(1).map(s => s.slug)));
+    for (const s of stories.slice(1)) assert.ok(notice.includes(`href="../${s.slug}/"`));
+    assert.deepEqual(stories[0].pending_update, before[0].pending_update);
+    assert.deepEqual(stories[0].ai_retry, before[0].ai_retry);
+  }
 });
 
 test('the normal serial runner applies the later listing delta once without clearing the failed review or buying a response', async () => {
