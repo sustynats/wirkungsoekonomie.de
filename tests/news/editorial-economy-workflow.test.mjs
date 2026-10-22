@@ -8,6 +8,28 @@ import { spawnSync } from 'node:child_process';
 const root = path.resolve(import.meta.dirname, '../..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 
+test('optional ffmpeg setup cannot consume the editorial job before source observation and archival', () => {
+  const workflow = read('.github/workflows/redaktionsworker.yml');
+  const step = name => workflow.split(`      - name: ${name}\n`)[1]?.split('\n      - name: ')[0];
+  const setup = step('Set up ffmpeg for episode transcripts');
+  assert.ok(setup, 'the optional ffmpeg setup step must exist');
+  const timeout = Number(setup.match(/^        timeout-minutes: (\d+)$/m)?.[1]);
+  assert.ok(timeout >= 1 && timeout <= 3, 'ffmpeg setup must stop within three minutes, not at the 25-minute job limit');
+  assert.match(setup, /^        continue-on-error: true$/m);
+  assert.match(setup, /if: vars\.WOEK_EDITORIAL_AUTO_EPISODES != 'false' && vars\.WOEK_EPISODE_TRANSCRIBE != 'false'/);
+  assert.match(setup, /run: command -v ffmpeg >\/dev\/null \|\| \{ sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; \}/);
+  const observation = step('Propose Nachgesehen and Nachgehört requests from the followed shows');
+  assert.match(observation, /if: vars\.WOEK_EDITORIAL_AUTO_EPISODES != 'false'/);
+  assert.match(observation, /run: node scripts\/news\/sendungs-kandidaten\.mjs/);
+  assert.ok(workflow.indexOf('run: node scripts/news/redaktionsworker.mjs') < workflow.indexOf('      - name: Set up ffmpeg'));
+  assert.ok(workflow.indexOf('      - name: Set up ffmpeg') < workflow.indexOf('run: node scripts/news/sendungs-kandidaten.mjs'));
+  assert.match(step('Seal paid originals for private recovery'), /if: always\(\)/);
+  assert.match(step('Preserve encrypted paid model answers for diagnosis'), /if: always\(\) && steps\.sealed_raw\.outcome == 'success'/);
+  assert.match(step('Report incomplete editorial processing'), /if: always\(\) && steps\.editorial_draft\.outcome == 'failure'/);
+  assert.match(workflow, /concurrency:\n  group: redaktionsworker\n  cancel-in-progress: false/);
+  assert.match(workflow, /^    timeout-minutes: 25$/m);
+});
+
 test('the direct news lane carries no scheduled editorial spending and no editorial request inputs', () => {
   // Direktbetrieb seit 15.09.2026: Meinung & Analyse läuft nicht mehr als
   // zweite bezahlte Lane im Nachrichtenworkflow. Explizite Aufträge gehören
