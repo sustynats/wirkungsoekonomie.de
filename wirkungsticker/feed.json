@@ -1,11 +1,43 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-22T15:21:57.618Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-22T15:48:09.922Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/was-der-arbeitgeber-fur-deine-gesundheit-tun-kann-a88834/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/was-der-arbeitgeber-fur-deine-gesundheit-tun-kann-a88834/",
+      "title": "Gesundheit am Arbeitsplatz: Mehr als Yoga und Obstkorb",
+      "summary": "Der WDR zeigt, dass Gesundheitsförderung im Betrieb auch Arbeitszeiten, Belastung und frühe Hilfe umfassen kann. Ob solche Maßnahmen Fehlzeiten oder psychische Erkrankungen tatsächlich verringern, bleibt im Bericht offen.",
+      "date_published": "2026-10-22T15:05:45.000Z",
+      "date_modified": "2026-10-22T15:05:45.000Z",
+      "_woek_released_at": "2026-10-22T15:58:05.882Z",
+      "tags": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/14-milliarden-euro-bis-2031-lander-fordern-vom-bund-mehr-geld-fur-den-nahverkehr-081ec6/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/14-milliarden-euro-bis-2031-lander-fordern-vom-bund-mehr-geld-fur-den-nahverkehr-081ec6/",
@@ -28,6 +60,37 @@
         "planet": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/gunther-paal-gericht-verurteilt-kabarettist-wegen-kindesmissbrauchs-zu-haftstrafe-bd7a98/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/gunther-paal-gericht-verurteilt-kabarettist-wegen-kindesmissbrauchs-zu-haftstrafe-bd7a98/",
+      "title": "Laut Deutschlandfunk: Österreichischer Kabarettist Günther Paal zu drei Jahren Haft verurteilt",
+      "summary": "Ein Wiener Gericht hat Günther Paal laut Deutschlandfunk wegen Kindesmissbrauchs zu drei Jahren Haft verurteilt. Das Urteil ist noch nicht rechtskräftig; der Fall berührt besonders den Schutz eines Kindes und das Vertrauen in öffentliche Personen.",
+      "date_published": "2026-10-22T13:41:00.000Z",
+      "date_modified": "2026-10-22T13:41:00.000Z",
+      "_woek_released_at": "2026-10-22T15:57:03.837Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
           "status": "potential"
         },
         "democracy": {
