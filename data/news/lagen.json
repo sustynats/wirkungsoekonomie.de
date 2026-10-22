@@ -1,7 +1,120 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-22T10:00:00.000Z",
+  "updated_at": "2026-10-22T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-22-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-22",
+      "window_from": "2026-10-22T10:00:00.000Z",
+      "window_to": "2026-10-22T16:00:00.000Z",
+      "stand": "2026-10-22T16:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 12,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-74b994eb5da88834",
+          "slug": "was-der-arbeitgeber-fur-deine-gesundheit-tun-kann-a88834",
+          "title": "Gesundheit am Arbeitsplatz: Mehr als Yoga und Obstkorb",
+          "state": "neu",
+          "at": "2026-10-22T15:58:05.882Z",
+          "score": 7.9947
+        },
+        {
+          "story_id": "wt-9fca16c391bd7a98",
+          "slug": "gunther-paal-gericht-verurteilt-kabarettist-wegen-kindesmissbrauchs-zu-haftstrafe-bd7a98",
+          "title": "Laut Deutschlandfunk: Österreichischer Kabarettist Günther Paal zu drei Jahren Haft verurteilt",
+          "state": "neu",
+          "at": "2026-10-22T15:57:03.837Z",
+          "score": 7.9918
+        },
+        {
+          "story_id": "wt-19c8c417f2081ec6",
+          "slug": "14-milliarden-euro-bis-2031-lander-fordern-vom-bund-mehr-geld-fur-den-nahverkehr-081ec6",
+          "title": "Nach Angaben des Tagesspiegels: Länder fordern 14 Milliarden Euro bis 2031 für den Nahverkehr",
+          "state": "neu",
+          "at": "2026-10-22T15:29:53.661Z",
+          "score": 5.9164
+        },
+        {
+          "story_id": "wt-87ed4e8eb6306fb2",
+          "slug": "deepwater-horizon-katastrophe-tierbestande-im-golf-von-mexiko-sind-geschrumpft-306fb2",
+          "title": "Bestände von Meerestieren im Golf von Mexiko laut Studie stark zurückgegangen",
+          "state": "neu",
+          "at": "2026-10-22T14:34:29.961Z",
+          "score": 9.7625
+        },
+        {
+          "story_id": "wt-eb184cd8738a77a7",
+          "slug": "block-prozess-tonaufnahmen-der-zeit-durfen-vorerst-nicht-ausgewertet-werden-8a77a7",
+          "title": "Nach Angaben des NDR: Gericht untersagt vorerst Auswertung von »Zeit«-Tonaufnahmen",
+          "state": "neu",
+          "at": "2026-10-22T13:27:47.046Z",
+          "score": 5.5772
+        },
+        {
+          "story_id": "wt-105417760cf7e4ec",
+          "slug": "frust-uber-iran-krieg-spritpreise-und-inflation-vertrauen-der-us-wahler-in-trump-fallt-a-f7e4ec",
+          "title": "Laut Tagesspiegel: Umfrage sieht Vertrauen in Trump auf Rekordtief",
+          "state": "neu",
+          "at": "2026-10-22T13:04:11.173Z",
+          "score": 5.9134
+        },
+        {
+          "story_id": "wt-b3593172a03bf491",
+          "slug": "produktpiraterie-eu-beschlagnahmt-rekordmenge-an-gefalschten-waren-3bf491",
+          "title": "Laut Behörden beschlagnahmt die EU Rekordmenge gefälschter Waren",
+          "state": "neu",
+          "at": "2026-10-22T12:02:50.039Z",
+          "score": 3.3412
+        },
+        {
+          "story_id": "wt-495f04753e6271c3",
+          "slug": "neuer-standort-in-cottbus-amazon-verteilzentrum-volle-auslastung-bis-weihnachten-6271c3",
+          "title": "Amazon-Verteilzentrum in Cottbus eröffnet, Hochlauf läuft",
+          "state": "neu",
+          "at": "2026-10-22T12:01:36.393Z",
+          "score": 5.3378
+        },
+        {
+          "story_id": "wt-017932f0f573cfea",
+          "slug": "nfl-spieler-soll-mitspieler-mit-schusswaffe-bedroht-haben-trainer-reagiert-73cfea",
+          "title": "Laut DER SPIEGEL: NFL-Spieler soll auf Clubgelände Schusswaffe gezogen haben",
+          "state": "neu",
+          "at": "2026-10-22T11:38:56.681Z",
+          "score": 9.2748
+        },
+        {
+          "story_id": "wt-6ef0009256106a41",
+          "slug": "menschenrechte-europaisches-parlament-ehrt-internationalen-strafgerichtshof-106a41",
+          "title": "Laut Medienberichten: Europäisches Parlament ehrt Internationalen Strafgerichtshof",
+          "state": "neu",
+          "at": "2026-10-22T10:42:32.717Z",
+          "score": 3.1182
+        },
+        {
+          "story_id": "wt-186556458ed61ad9",
+          "slug": "bombenfund-fliegerbombe-in-nurnberg-gefunden-evakuierung-geplant-d61ad9",
+          "title": "Fliegerbombe in Nürnberg gefunden – Evakuierung geplant",
+          "state": "neu",
+          "at": "2026-10-22T10:41:38.646Z",
+          "score": 3.1157
+        },
+        {
+          "story_id": "wt-38bf78667b411727",
+          "slug": "wohnblock-in-lauchhammer-noch-immer-nicht-vollstandig-geraumt-411727",
+          "title": "Laut rbb24: Wohnblock in Lauchhammer bleibt nach Rissen teilweise geräumt",
+          "state": "neu",
+          "at": "2026-10-22T10:14:16.410Z",
+          "score": 9.0396
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-22-mittagslage",
       "slot": "mittagslage",
@@ -5512,111 +5625,6 @@
           "state": "neu",
           "at": "2026-09-22T16:11:04.121Z",
           "score": 5.0154
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-22-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-22",
-      "window_from": "2026-09-22T10:00:00.000Z",
-      "window_to": "2026-09-22T16:00:00.000Z",
-      "stand": "2026-09-22T16:00:00.000Z",
-      "headline": "Das sind die 11 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 11,
-        "neu": 11,
-        "fortgeschrieben": 0
-      },
-      "entries": [
-        {
-          "story_id": "wt-cdcfe085f7ede02d",
-          "slug": "kiosk-in-dortmund-uberfallen-tater-auf-der-flucht-ede02d",
-          "title": "Laut WDR: Kiosk in Dortmund überfallen – mehrere Schüsse, zwei Menschen verletzt",
-          "state": "neu",
-          "at": "2026-09-22T15:58:25.838Z",
-          "score": 3.9956
-        },
-        {
-          "story_id": "wt-8b46db7c7001a2e4",
-          "slug": "standort-vor-dem-aus-mann-hummel-lehnt-alternativkonzept-von-ig-metall-und-betriebsrat-a-01a2e4",
-          "title": "Laut SWR lehnt Mann+Hummel Konzept zum Erhalt des Speyerer Standorts ab",
-          "state": "neu",
-          "at": "2026-09-22T15:12:59.201Z",
-          "score": 7.8694
-        },
-        {
-          "story_id": "wt-ecd21ad392320417",
-          "slug": "polizei-grosseinsatz-an-gymnasium-in-weisswasser-falscher-amokalarm-320417",
-          "title": "Laut Polizei: Falscher Amokalarm an Gymnasium in Weißwasser endet mit Entwarnung",
-          "state": "neu",
-          "at": "2026-09-22T13:57:38.563Z",
-          "score": 5.7448
-        },
-        {
-          "story_id": "wt-62cb41beb7c1b0c6",
-          "slug": "mercedes-vorstand-kundigt-werkschliessungen-an-wenn-arbeitskosten-nicht-sinken-widerstan-c1b0c6",
-          "title": "Laut Mercedes-Produktionsvorstand könnten zwei deutsche Werke schließen, wenn Arbeitskosten nicht sinken",
-          "state": "neu",
-          "at": "2026-09-22T13:40:44.430Z",
-          "score": 7.6132
-        },
-        {
-          "story_id": "wt-4630ee748ea719bd",
-          "slug": "linke-wahlsieg-israels-botschafter-sieht-nach-berlin-wahl-gefahr-fur-juden-a719bd",
-          "title": "Nach Angaben der Berichte: Israels Botschafter sieht nach Linke-Wahlsieg Gefahr für Juden",
-          "state": "neu",
-          "at": "2026-09-22T13:11:34.134Z",
-          "score": 5.5321
-        },
-        {
-          "story_id": "wt-926ecc376c6775c6",
-          "slug": "schuss-auf-fensterscheibe-frau-entdeckt-einschussloch-in-wohnungsfenster-6775c6",
-          "title": "Einschussloch in Wohnungsfenster entdeckt – Polizei ermittelt",
-          "state": "neu",
-          "at": "2026-09-22T12:27:30.925Z",
-          "score": 5.4922
-        },
-        {
-          "story_id": "wt-51e295efc835c09c",
-          "slug": "am-30-september-kriegsmunition-wird-gesprengt-berlin-und-potsdam-betroffen-35c09c",
-          "title": "Am 30. September soll Kriegsmunition nördlich von Potsdam gesprengt werden",
-          "state": "neu",
-          "at": "2026-09-22T12:09:57.102Z",
-          "score": 5.361
-        },
-        {
-          "story_id": "wt-ae2ce044170c0ca5",
-          "slug": "nach-hausexplosion-in-weimar-weiter-keine-spur-von-vermisstem-mann-0c0ca5",
-          "title": "Nach Hausexplosion in Weimar: Laut Polizei weiterhin keine Spur vom vermissten Mann",
-          "state": "neu",
-          "at": "2026-09-22T11:56:13.541Z",
-          "score": 5.7782
-        },
-        {
-          "story_id": "wt-3c46d73b1a47ea71",
-          "slug": "entwarnung-nach-kampfmittelfund-in-nideggen-47ea71",
-          "title": "Entwarnung nach Kampfmittelfund in Nideggen",
-          "state": "neu",
-          "at": "2026-09-22T11:27:50.258Z",
-          "score": 3.244
-        },
-        {
-          "story_id": "wt-257effa65d3ed614",
-          "slug": "turkei-mindestens-elf-verletzte-bei-schusswaffenangriff-nahe-schule-3ed614",
-          "title": "Mindestens elf Verletzte bei Schusswaffenangriff nahe einer Schule in der Türkei",
-          "state": "neu",
-          "at": "2026-09-22T10:42:20.521Z",
-          "score": 5.6176
-        },
-        {
-          "story_id": "wt-be8450daf5fe4eb6",
-          "slug": "munitionsfunde-in-potsdam-teile-von-gross-glienicke-werden-ende-september-abgesperrt-fe4eb6",
-          "title": "Laut Tagesspiegel: Am 30. September wird in Groß Glienicke ein Sperrkreis eingerichtet",
-          "state": "neu",
-          "at": "2026-09-22T10:26:59.746Z",
-          "score": 5.075
         }
       ]
     }
