@@ -20,15 +20,15 @@ function harness(fetcher,{mode='news',initialQuery='',navigationType='navigate',
  const root=element({tickerApp:mode});root.querySelectorAll=selector=>selector==='[data-app-filter]'?filters:[];
  root.querySelector=selector=>({'[data-app-grid]':grid,'[data-app-status]':status,'[data-app-more]':more,'.ticker-app-toolbar':{getBoundingClientRect:()=>({top:60})},'.ticker-app-filter-menu':menu,'[data-app-filter-form]':form,'[data-app-filter-count]':element(),'.ticker-app-filters':chips,'input[name=q]':mode==='suche'?query:null,'form[role=search]':mode==='suche'?searchForm:null}[selector]||filters.find(f=>selector===`[data-app-filter="${f.dataset.appFilter}"]`)||null);
  const location={pathname:`/wirkungsticker/${mode}/`,search:initialQuery?'?q='+initialQuery:'',origin:'https://example.test'};
- const events={},store=new Map(),historyEntries=[''],newsNav=element(),scrolls=[];let historyIndex=0;
+ const events={},contentListeners=[],store=new Map(),historyEntries=[''],newsNav=element(),scrolls=[];let historyIndex=0;
  if(stored)store.set(`woek:ticker-app:v2:${location.pathname}${location.search}`,JSON.stringify(stored));
  let intersect=()=>{};
  const window={addEventListener(k,fn){events[k]=fn;},scrollTo(options){scrolls.push(options.top);},performance:{getEntriesByType:()=>[{type:navigationType}]},IntersectionObserver:true};
- const sandbox={...search,getComputedStyle:()=>({top:'54px'}),document:{querySelector:()=>null,querySelectorAll:s=>s==='.ticker-app-nav a[href="/wirkungsticker/news/"]'?[newsNav]:[],addEventListener(){},dispatchEvent(){}},window,location,history:{pushState(_s,_t,url){location.search=new URL(url,location.origin+location.pathname).search;historyEntries.splice(++historyIndex);historyEntries.push(location.search);},replaceState(_s,_t,url){location.search=url;historyEntries[historyIndex]=url;}},fetch:fetchImpl||(async(url,opts)=>{const datei=url.replace('/wirkungsticker/data/app/','');if(!datei.endsWith('.gz'))return {ok:false,status:404};return gepackt(await fetcher(datei.slice(0,-3),opts));}),AbortController,URL,URLSearchParams,CSS:{escape:String},CustomEvent:class{},localStorage:{getItem:()=>null,setItem(){}},sessionStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},requestAnimationFrame:fn=>fn(),setTimeout,clearTimeout,scrollY:0,Response,TextDecoder,Blob};
+ const sandbox={...search,getComputedStyle:()=>({top:'54px'}),document:{querySelector:()=>null,querySelectorAll:s=>s==='.ticker-app-nav a[href="/wirkungsticker/news/"]'?[newsNav]:[],addEventListener(){},dispatchEvent(event){if(event.type==='wirkungsraum:content-added')contentListeners.splice(0).forEach(resolve=>resolve());}},window,location,history:{pushState(_s,_t,url){location.search=new URL(url,location.origin+location.pathname).search;historyEntries.splice(++historyIndex);historyEntries.push(location.search);},replaceState(_s,_t,url){location.search=url;historyEntries[historyIndex]=url;}},fetch:fetchImpl||(async(url,opts)=>{const datei=url.replace('/wirkungsticker/data/app/','');if(!datei.endsWith('.gz'))return {ok:false,status:404};return gepackt(await fetcher(datei.slice(0,-3),opts));}),AbortController,URL,URLSearchParams,CSS:{escape:String},CustomEvent:class{constructor(type){this.type=type;}},localStorage:{getItem:()=>null,setItem(){}},sessionStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},requestAnimationFrame:fn=>fn(),setTimeout,clearTimeout,scrollY:0,Response,TextDecoder,Blob};
  if(entpacken)sandbox.DecompressionStream=DecompressionStream;
  sandbox.IntersectionObserver=class{constructor(callback){intersect=()=>callback([{isIntersecting:true}]);}observe(){}};
  vm.runInNewContext(client+';globalThis.testBoot=boot;',sandbox);
- return {start:()=>sandbox.testBoot(root),news:()=>newsNav.events.click({preventDefault(){}}),scrolls,location,intersect:()=>intersect(),back:()=>{location.search=historyEntries[--historyIndex];events.popstate();},search:value=>{query.value=value;searchForm.events.submit({preventDefault(){}});},grid,status,more,filter:name=>filters.find(f=>f.dataset.appFilter===name).events.click({preventDefault(){}})};
+ return {start:()=>sandbox.testBoot(root),nextContent:()=>new Promise(resolve=>contentListeners.push(resolve)),news:()=>newsNav.events.click({preventDefault(){}}),scrolls,location,intersect:()=>intersect(),back:()=>{location.search=historyEntries[--historyIndex];events.popstate();},search:value=>{query.value=value;searchForm.events.submit({preventDefault(){}});},grid,status,more,filter:name=>filters.find(f=>f.dataset.appFilter===name).events.click({preventDefault(){}})};
 }
 const manifest=revision=>({revision,feeds:{'news-alle':{pages:2},'news-technik':{pages:2}},lookup:{}});
 const packet=(revision,label)=>({revision,items:[{html:`<article data-news-card>${label}</article>`}]});
@@ -74,18 +74,25 @@ test('back restores the previous filter with its already loaded pages',async()=>
  app.back();await tick();assert.match(app.grid.innerHTML,/news-alle-0/);assert.match(app.grid.innerHTML,/news-alle-1/);
  assert.doesNotMatch(app.grid.innerHTML,/news-technik/);assert.equal(app.more.hidden,true);
 });
-test('loading more cannot reuse old result IDs while the next search is pending',async()=>{
- let resolveNew;const pending=new Promise(resolve=>{resolveNew=resolve;});
+test('loading more cannot reuse old result IDs while the next search is pending',{timeout:5000},async()=>{
+ let resolveNew,resolveItem,itemRequested;
+ const pending=new Promise(resolve=>{resolveNew=resolve;}),item=new Promise(resolve=>{resolveItem=resolve;}),requested=new Promise(resolve=>{itemRequested=resolve;});
  const rows=Array.from({length:21},(_,i)=>({id:String(i),type:'news',date:'2026-09-11',title:'Alpha',topics:[]}));
- const app=harness(file=>file==='manifest.json'?{revision:'v1',feeds:{},lookup:Object.fromEntries(rows.map(r=>['/'+r.id,r]))}
+ const beta={id:'beta-only',type:'news',date:'2026-09-11',title:'Beta',topics:[]};
+ const app=harness(file=>file==='manifest.json'?{revision:'v1',feeds:{},lookup:Object.fromEntries([...rows,beta].map(r=>['/'+r.id,r]))}
   :file==='search/'+search.searchBucket('alpha')+'.json'?{alpha:rows.map(r=>r.id)}
   :file==='search/'+search.searchBucket('beta')+'.json'?pending
+  :file==='items/beta-only.json'?(itemRequested(),item)
   :{html:`<article data-news-card>${file}</article>`},{mode:'suche',initialQuery:'alpha'});
  await app.start();assert.match(app.grid.innerHTML,/items\/0/);
  app.search('beta');await tick();assert.equal(app.more.disabled,true);
  app.intersect();await tick();assert.equal(app.grid.innerHTML,'');
- resolveNew({beta:['20']});await tick();await tick();
- assert.match(app.grid.innerHTML,/items\/20/);assert.doesNotMatch(app.grid.innerHTML,/items\/0/);
+ // Gzip-Streams laufen asynchron; Timer-Ticks belegen keinen fertigen Render.
+ // Auch nach dem neuen Index bleibt die Karte bewusst bis zur Freigabe offen.
+ const rendered=app.nextContent();resolveNew({beta:['beta-only']});await requested;
+ assert.equal(app.grid.innerHTML,'');assert.equal(app.more.disabled,true);
+ resolveItem({html:'<article data-news-card>items/beta-only.json</article>'});await rendered;
+ assert.match(app.grid.innerHTML,/items\/beta-only/);assert.doesNotMatch(app.grid.innerHTML,/items\/0/);
  assert.equal(app.more.hidden,true);
 });
 
