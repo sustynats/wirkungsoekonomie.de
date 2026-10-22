@@ -764,6 +764,128 @@ test('the editorial call carries a bounded web search and a rejected request is 
   assert.equal(server.providerNotCalled, false);
 });
 
+test('malformed paid JSON is privately preserved verbatim, remains blocked and never buys a retry', async () => {
+  const fs = await import('node:fs'), os = await import('node:os'), path = await import('node:path');
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'editorial-malformed-'));
+  try {
+    const job = queuedJob(), session = fakeSession([job]);
+    session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+    const answer = 'SYNTHETIC_PRIVATE_ANSWER: {"preview":';
+    const payload = { id: 'resp_synthetic', model: 'gpt-5.6-luna', status: 'incomplete', incomplete_details: {reason: 'max_output_tokens'},
+      usage: {input_tokens: 100, output_tokens: 200}, output: [{type: 'message', content: [{type: 'output_text', text: answer}]}] };
+    let calls = 0;
+    const draft = async (request, options) => {
+      try { return await draftEditorialOutput(request, { ...options, apiKey: 'synthetic', fetchImpl: async () => {
+        calls++; return {ok: true, status: 200, json: async () => payload};
+      } }); }
+      catch (error) {
+        assert.doesNotMatch(JSON.stringify(error), /SYNTHETIC_PRIVATE_ANSWER|resp_synthetic/);
+        assert.doesNotMatch(require('node:util').inspect(error), /SYNTHETIC_PRIVATE_ANSWER|resp_synthetic/);
+        throw error;
+      }
+    };
+    const options = {knowledge, now, draft, rawOutputDir: directory};
+    const result = await processEditorialRequest(session, job, options);
+    assert.equal(result.status, 'output_unusable'); assert.equal(result.error, 'AI_MALFORMED_JSON');
+    assert.equal(result.raw_answer_preserved, true); assert.deepEqual(result.archive_errors, []);
+    assert.equal(calls, 1); assert.doesNotMatch(JSON.stringify(result), /SYNTHETIC_PRIVATE_ANSWER|resp_synthetic/);
+    const names = fs.readdirSync(directory); assert.equal(names.length, 1); assert.match(names[0], /^[A-Za-z0-9_.-]+\.json$/);
+    const local = JSON.parse(fs.readFileSync(path.join(directory, names[0]), 'utf8'));
+    assert.equal(local.answer, answer); assert.deepEqual(local.raw_response, payload);
+    assert.equal(local.job_id, jobId); assert.equal(local.input_hash, job.input.input_hash);
+    assert.equal(fs.statSync(path.join(directory, names[0])).mode & 0o777, 0o600);
+    const archive = [...session.files].find(([p]) => p.includes('/95_LOGS/editorial-answer-'));
+    const stored = JSON.parse(archive[1]); assert.equal(stored.answer, answer); assert.deepEqual(stored.raw_response, payload);
+    assert.equal(stored.input_hash, job.input.input_hash); assert.equal(stored.failure_code, 'AI_MALFORMED_JSON');
+    const attempt = session.observations.get(`github-attempt:${jobId}`);
+    assert.equal(attempt.provider_called, true); assert.equal(attempt.cost_usd, result.cost_usd);
+    assert.equal(attempt.raw_answer_preserved, true); assert.deepEqual(attempt.answer_archives, [archive[0]]);
+    assert.equal((await processEditorialRequest(session, job, options)).status, 'attempt_exhausted');
+    assert.deepEqual(await recoverUnsentEditorialAnswers(session, [job], now()), []);
+    assert.equal(calls, 1); assert.equal(job.accepted, undefined); assert.equal(job.ack, undefined);
+    assert.equal(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)), false);
+  } finally { fs.rmSync(directory, {recursive: true, force: true}); }
+});
+
+test('a response without final text retains the private provider payload, not a fabricated preview', async () => {
+  const job = queuedJob(), session = fakeSession([job]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+  const payload = {model: 'gpt-5.6-luna', usage: {input_tokens: 100, output_tokens: 20}, output: [{type: 'message', content: [{type: 'refusal', refusal: 'Synthetic refusal'}]}]};
+  const result = await processEditorialRequest(session, job, {knowledge, now, rawOutputDir: null,
+    draft: (request, options) => draftEditorialOutput(request, {...options, apiKey: 'synthetic', fetchImpl: async () => ({ok: true, status: 200, json: async () => payload})})});
+  assert.equal(result.error, 'AI_PROVIDER_OUTPUT_INVALID'); assert.equal(result.raw_answer_preserved, true);
+  const archive = [...session.files].find(([p]) => p.includes('/95_LOGS/editorial-answer-'));
+  assert.deepEqual(JSON.parse(archive[1]).raw_response, payload);
+  assert.equal(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)), false);
+});
+
+test('an uncertain bridge archive write is not repeated; the local paid original survives', async () => {
+  const fs = await import('node:fs'), os = await import('node:os'), path = await import('node:path');
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'editorial-archive-unknown-'));
+  try {
+    const job = queuedJob(), session = fakeSession([job]);
+    session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+    let writes = 0, calls = 0;
+    session.transport.writeAtomic = async () => {writes++; throw Error('BRIDGE_REMOTE_INVALID_RESPONSE');};
+    const options = {knowledge, now, rawOutputDir: directory, draft: async () => {calls++; throw Object.assign(Error('AI_MALFORMED_JSON'),
+      {cost: 0.02, paidResult: {answer: 'Synthetic broken JSON {', raw_response: {id: 'resp_synthetic'}, model: 'gpt-5.6-luna', cost: 0.02}});}};
+    const result = await processEditorialRequest(session, job, options);
+    assert.equal(result.status, 'output_unusable'); assert.equal(result.raw_answer_preserved, true);
+    assert.deepEqual(result.archive_errors, ['EDITORIAL_ARCHIVE_FAILED']);
+    assert.equal(fs.readdirSync(directory).length, 1); assert.equal(writes, 1); assert.equal(calls, 1);
+    assert.equal((await processEditorialRequest(session, job, options)).status, 'attempt_exhausted');
+    assert.equal(writes, 1); assert.equal(calls, 1);
+  } finally { fs.rmSync(directory, {recursive: true, force: true}); }
+});
+
+test('failure of both private archives is visible without clearing the paid attempt', async () => {
+  const fs = await import('node:fs'), os = await import('node:os'), path = await import('node:path');
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'editorial-archive-failure-'));
+  try {
+    const blocked = path.join(directory, 'not-a-directory'); fs.writeFileSync(blocked, 'synthetic');
+    const job = queuedJob(), session = fakeSession([job]);
+    session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+    session.transport.writeAtomic = async () => {throw Error('unavailable');};
+    const result = await processEditorialRequest(session, job, {knowledge, now, rawOutputDir: blocked, draft: async () => {
+      throw Object.assign(Error('AI_MALFORMED_JSON'), {cost: 0.02, paidResult: {answer: 'Synthetic broken JSON {', cost: 0.02}});
+    }});
+    assert.equal(result.raw_answer_preserved, false);
+    assert.deepEqual(result.archive_errors, ['EDITORIAL_RAW_ARCHIVE_FAILED', 'EDITORIAL_ARCHIVE_FAILED']);
+    const attempt = session.observations.get(`github-attempt:${jobId}`);
+    assert.equal(attempt.provider_called, true); assert.equal(attempt.cost_usd, 0.02); assert.equal(attempt.status, 'output_unusable');
+    assert.equal(attempt.raw_answer_preserved, false);
+  } finally { fs.rmSync(directory, {recursive: true, force: true}); }
+});
+
+test('malformed output from the existing repair pass is also archived without another repair', async () => {
+  const job = queuedJob(), session = fakeSession([job]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+  let calls = 0;
+  const options = {knowledge, now, rawOutputDir: null, draft: async () => {
+    calls++;
+    if (calls === 1) return {output: {preview: {...preview(), checks: {source_binding: false}}}, model: 'gpt-5.6-luna', cost: 0.01};
+    throw Object.assign(Error('AI_MALFORMED_JSON'), {cost: 0.02, paidResult: {answer: 'Synthetic broken repair {', raw_response: {id: 'resp_synthetic_repair'}, cost: 0.02}});
+  }};
+  const result = await processEditorialRequest(session, job, options);
+  assert.equal(result.status, 'validation_failed'); assert.equal(result.raw_answer_preserved, true);
+  assert.equal(result.cost_usd, 0.03); assert.equal(calls, 2);
+  const archives = [...session.files].filter(([p]) => p.includes('/95_LOGS/editorial-answer-')).map(([,text]) => JSON.parse(text));
+  assert.equal(archives.length, 2); assert.equal(archives.find(r => r.pass === 1).answer, 'Synthetic broken repair {');
+  const attempt = session.observations.get(`github-attempt:${jobId}`);
+  assert.equal(attempt.answer_archives.length, 2); assert.equal(attempt.provider_called, true); assert.equal(attempt.cost_usd, 0.03);
+  assert.equal((await processEditorialRequest(session, job, options)).status, 'attempt_exhausted'); assert.equal(calls, 2);
+});
+
+test('a rejected unpaid request does not create a paid response archive', async () => {
+  const job = queuedJob(), session = fakeSession([job]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(job.input));
+  const result = await processEditorialRequest(session, job, {knowledge, now, rawOutputDir: null,
+    draft: async () => {throw Object.assign(Error('AI_PROVIDER_ERROR:429'), {providerNotCalled: true});}});
+  assert.equal(result.status, 'provider_unavailable'); assert.equal(result.raw_answer_preserved, undefined);
+  assert.equal([...session.files.keys()].some(p => p.includes('/95_LOGS/editorial-answer-')), false);
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).provider_called, false);
+});
+
 test('a claim left behind by a decommissioned worker is adopted after the stale window, a fresh one is respected', async () => {
   for (const [age, expected] of [[8, 'output_delivered'], [1, 'claimed_elsewhere']]) {
     const session = fakeSession([queuedJob()]);
