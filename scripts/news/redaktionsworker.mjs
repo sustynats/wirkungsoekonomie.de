@@ -253,10 +253,13 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
   const webSearches = (payload?.output || []).filter((item) => item?.type === 'web_search_call').length;
   const cost = usage ? Number((((usage.input_tokens - (usage.cached_input_tokens || 0)) * rates.inputUsdPerMillion + (usage.cached_input_tokens || 0) * rates.cachedInputUsdPerMillion + usage.output_tokens * rates.outputUsdPerMillion) / 1e6 + webSearches * WEB_SEARCH_USD_PER_CALL).toFixed(6)) : null;
   const text = finalOutputText(payload);
-  if (!text) throw Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), { usage, model: reportedModel, cost, incomplete: payload?.incomplete_details?.reason || null });
+  // Parse failure consumes the paid attempt too. Carry the original response
+  // only to the private archive, never into the public run report or a retry.
+  const paidResult = { answer: text, raw_response: payload, usage, model: reportedModel, cost, web_searches: webSearches };
+  if (!text) throw Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), { usage, model: reportedModel, cost, paidResult, incomplete: payload?.incomplete_details?.reason || null });
   let parsed;
-  try { parsed = extractJsonObject(text); } catch { throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost }); }
-  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost });
+  try { parsed = extractJsonObject(text); } catch { throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost, paidResult }); }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost, paidResult });
   return { output: parsed, usage, model: reportedModel, cost, answer: text, web_searches: webSearches, web_search_variant: webSearch ? Math.min(variant, variants.length - 1) : null };
 }
 
@@ -616,11 +619,35 @@ async function archiveEditorialAnswer(session, id, packet, result, pass, at) {
   const record = { job_id: id, input_hash: packet.input_hash, pass, at,
     model: result.model, usage: result.usage || null, cost_usd: result.cost ?? null,
     web_searches: result.web_searches ?? null, output: result.output,
-    answer: result.answer || JSON.stringify(result.output) };
+    answer: result.answer || JSON.stringify(result.output),
+    ...(result.raw_response ? { raw_response: result.raw_response } : {}),
+    ...(result.failure_code ? { failure_code: result.failure_code } : {}) };
   const archive = bridgePath('95_LOGS', `editorial-answer-${id}-${hash(record)}.json`);
   await session.transport.writeAtomic(archive, record);
   if (hash(JSON.parse(await session.transport.read(archive))) !== hash(record)) throw Error('EDITORIAL_ARCHIVE_READBACK_FAILED');
   return archive;
+}
+
+async function archiveUnusableEditorialAnswer(session, id, packet, error, pass, now, rawOutputDir) {
+  if (error.providerNotCalled || !error.paidResult) return {};
+  const paid = { ...error.paidResult, failure_code: String(error.message) };
+  const archives = [], failures = [];
+  let localPreserved = false;
+  // This directory is sealed by the existing workflow, including on error.
+  // Keep a local original even if the bridge archive write is uncertain.
+  if (rawOutputDir) {
+    try {
+      fs.mkdirSync(rawOutputDir, { recursive: true, mode: 0o700 });
+      const filename = path.join(rawOutputDir, `${now().replace(/[:.]/g, '-')}-${id}-unusable-${pass}.json`);
+      const bytes = Buffer.from(JSON.stringify({ job_id: id, input_hash: packet.input_hash, pass, ...paid }, null, 2));
+      fs.writeFileSync(filename, bytes, { flag: 'wx', mode: 0o600 });
+      if (!fs.readFileSync(filename).equals(bytes)) throw Error('RAW_READBACK_FAILED');
+      localPreserved = true;
+    } catch { failures.push('EDITORIAL_RAW_ARCHIVE_FAILED'); }
+  }
+  try { archives.push(await archiveEditorialAnswer(session, id, packet, paid, pass, now())); }
+  catch { failures.push('EDITORIAL_ARCHIVE_FAILED'); }
+  return { answer_archives: archives, raw_answer_preserved: localPreserved || archives.length > 0, archive_errors: failures };
 }
 
 export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false',
@@ -694,8 +721,10 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   catch (error) {
     const status = error.providerNotCalled ? 'provider_unavailable' : 'output_unusable';
     const message = [String(error.message), error.detail].filter(Boolean).join(' · ').slice(0, 320);
-    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
-    return { job_id: id, status, error: message, cost_usd: error.cost ?? 0 };
+    const recovery = await archiveUnusableEditorialAnswer(session, id, packet, error, 0, now, rawOutputDir);
+    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...recovery, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
+    return { job_id: id, status, error: message, cost_usd: error.cost ?? 0,
+      ...(error.paidResult ? { raw_answer_preserved: recovery.raw_answer_preserved === true, archive_errors: recovery.archive_errors || [] } : {}) };
   }
   if (rawOutputDir) {
     try { fs.mkdirSync(rawOutputDir, { recursive: true }); fs.writeFileSync(path.join(rawOutputDir, `${now().replace(/[:.]/g, '-')}-${id}.json`), JSON.stringify({ job_id: id, model: result.model, usage: result.usage, answer: result.answer }, null, 2)); } catch { /* best effort */ }
@@ -714,7 +743,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     return { job_id: id, status: 'validation_failed', error: 'EDITORIAL_ARCHIVE_FAILED', cost_usd: result.cost || 0 };
   }
   const previewRepairs = [];
-  let validated = null, lastIssues = [], repairCalls = 0, cost = result.cost || 0, usage = result.usage, webSearches = result.web_searches ?? 0;
+  let validated = null, lastIssues = [], repairCalls = 0, cost = result.cost || 0, usage = result.usage, webSearches = result.web_searches ?? 0, failedAnswerRecovery = {};
   for (let pass = 0; pass <= (repairPass ? 1 : 0); pass += 1) {
     normalizeEditorialHold(output, previewRepairs);
     if (output.preview && job.intake?.revision_target) bindeKorrekturfassung(output.preview, job.intake, previewRepairs);
@@ -727,7 +756,13 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     if (pass >= (repairPass ? 1 : 0) || lastIssues.includes('EDITORIAL_RESEARCH_NOT_PERFORMED')) break;
     let retry;
     try { retry = await draft(editorialRepairRequest(request, output, lastIssues, previewRepairs), { model: selectedModel, webSearch: false }); }
-    catch (error) { cost += error.cost || 0; break; }
+    catch (error) {
+      cost += error.cost || 0;
+      failedAnswerRecovery = await archiveUnusableEditorialAnswer(session, id, packet, error, pass + 1, now, rawOutputDir);
+      if (failedAnswerRecovery.answer_archives) answerArchives.push(...failedAnswerRecovery.answer_archives);
+      lastIssues.push(String(error.message), ...(failedAnswerRecovery.archive_errors || []));
+      break;
+    }
     repairCalls += 1;
     webSearches += retry.web_searches ?? 0;
     cost = Number((cost + (retry.cost || 0)).toFixed(6));
@@ -738,8 +773,9 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   }
   if (!validated) {
     const message = [...lastIssues, ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : []), ...(repairCalls ? ['eine Nachlieferung blieb erfolglos'] : [])].join('\n').slice(0, 2000);
-    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
-    return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: cost, repair_calls: repairCalls };
+    await writeAttemptCheckpoint(session.store, `github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage, cost_usd: cost, repair_calls: repairCalls, at: now(), ...failedAnswerRecovery, ...(failedAnswerRecovery.answer_archives ? {answer_archives: answerArchives} : {}), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) }, startedAttempt);
+    return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: cost, repair_calls: repairCalls,
+      ...(failedAnswerRecovery.raw_answer_preserved !== undefined ? {raw_answer_preserved: failedAnswerRecovery.raw_answer_preserved, archive_errors: failedAnswerRecovery.archive_errors} : {}) };
   }
   const latest = await session.store.get(id);
   if (!latest || latest.ack || latest.accepted) return { job_id: id, status: 'already_processed', cost_usd: result.cost };
