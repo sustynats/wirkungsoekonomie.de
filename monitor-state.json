@@ -15,14 +15,23 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-22T17:21:15.258Z",
-      "active": false
+      "active": true
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-22T17:21:15.258Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e963491fbec0d8572ea345dc",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-22T17:21:15.258Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "85acc08a8f9e4939749f8c34",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 2 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-22T17:21:15.258Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3370,11 +3379,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/gunther-paal-gericht-verurteilt-kabarettist-wegen-kindesmissbrauchs-zu-haftstrafe-bd7a98/": {
         "first_seen_at": "2026-10-22T16:36:24.233Z",
         "source_at": "2026-10-22T13:41:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/evakuierung-wegen-gasleck-in-der-aachener-innenstadt-abd325/": {
+        "first_seen_at": "2026-10-22T17:36:17.398Z",
+        "source_at": "2026-10-22T16:07:18.000Z"
       }
     },
-    "last_new_at": "2026-10-22T16:36:24.233Z",
-    "checked_at": "2026-10-22T17:21:15.258Z",
-    "last_current_new_at": "2026-10-22T16:36:24.233Z"
+    "last_new_at": "2026-10-22T17:36:17.398Z",
+    "checked_at": "2026-10-22T17:36:17.398Z",
+    "last_current_new_at": "2026-10-22T17:36:17.398Z"
   },
   "recovery_attempts": [
     {
