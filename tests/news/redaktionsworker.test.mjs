@@ -774,9 +774,16 @@ test('malformed paid JSON is privately preserved verbatim, remains blocked and n
     const payload = { id: 'resp_synthetic', model: 'gpt-5.6-luna', status: 'incomplete', incomplete_details: {reason: 'max_output_tokens'},
       usage: {input_tokens: 100, output_tokens: 200}, output: [{type: 'message', content: [{type: 'output_text', text: answer}]}] };
     let calls = 0;
-    const draft = (request, options) => draftEditorialOutput(request, { ...options, apiKey: 'synthetic', fetchImpl: async () => {
-      calls++; return {ok: true, status: 200, json: async () => payload};
-    } });
+    const draft = async (request, options) => {
+      try { return await draftEditorialOutput(request, { ...options, apiKey: 'synthetic', fetchImpl: async () => {
+        calls++; return {ok: true, status: 200, json: async () => payload};
+      } }); }
+      catch (error) {
+        assert.doesNotMatch(JSON.stringify(error), /SYNTHETIC_PRIVATE_ANSWER|resp_synthetic/);
+        assert.doesNotMatch(require('node:util').inspect(error), /SYNTHETIC_PRIVATE_ANSWER|resp_synthetic/);
+        throw error;
+      }
+    };
     const options = {knowledge, now, draft, rawOutputDir: directory};
     const result = await processEditorialRequest(session, job, options);
     assert.equal(result.status, 'output_unusable'); assert.equal(result.error, 'AI_MALFORMED_JSON');

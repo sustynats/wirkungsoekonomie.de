@@ -256,10 +256,11 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
   // Parse failure consumes the paid attempt too. Carry the original response
   // only to the private archive, never into the public run report or a retry.
   const paidResult = { answer: text, raw_response: payload, usage, model: reportedModel, cost, web_searches: webSearches };
-  if (!text) throw Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), { usage, model: reportedModel, cost, paidResult, incomplete: payload?.incomplete_details?.reason || null });
+  const outputError = code => Object.defineProperty(Object.assign(new Error(code), { usage, model: reportedModel, cost }), 'paidResult', { value: paidResult });
+  if (!text) throw Object.assign(outputError('AI_PROVIDER_OUTPUT_INVALID'), { incomplete: payload?.incomplete_details?.reason || null });
   let parsed;
-  try { parsed = extractJsonObject(text); } catch { throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost, paidResult }); }
-  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost, paidResult });
+  try { parsed = extractJsonObject(text); } catch { throw outputError('AI_MALFORMED_JSON'); }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw outputError('AI_MALFORMED_JSON');
   return { output: parsed, usage, model: reportedModel, cost, answer: text, web_searches: webSearches, web_search_variant: webSearch ? Math.min(variant, variants.length - 1) : null };
 }
 
