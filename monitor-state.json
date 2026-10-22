@@ -23,10 +23,15 @@
     },
     "lage": {
       "firstSeen": "2026-10-22T04:05:49.996Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0704d5da343253d754711b33",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionelle Lage: Die jüngste Lage ist 12.3 Stunden alt; spätestens alle sechs Stunden muss eine neue vorliegen. Der Schritt im Ticker-Lauf bricht absichtlich nicht ab, damit eine bezahlte Analyse nicht verloren geht - deshalb muss sein Ausfall hier auffallen.\nSeit: 2026-10-22T04:05:49.996Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3286,11 +3291,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/berlin-spd-will-pflegereform-im-bundestag-nachbessern-c41b99/": {
         "first_seen_at": "2026-10-22T03:06:19.214Z",
         "source_at": "2026-10-22T01:55:31.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-berlins-spd-chef-bundeswehr-weiter-an-schulen-prasent-b09761/": {
+        "first_seen_at": "2026-10-22T04:20:49.565Z",
+        "source_at": "2026-10-22T03:00:04.000Z"
       }
     },
-    "last_new_at": "2026-10-22T03:06:19.214Z",
-    "checked_at": "2026-10-22T04:05:49.996Z",
-    "last_current_new_at": "2026-10-22T03:06:19.214Z"
+    "last_new_at": "2026-10-22T04:20:49.565Z",
+    "checked_at": "2026-10-22T04:20:49.565Z",
+    "last_current_new_at": "2026-10-22T04:20:49.565Z"
   },
   "recovery_attempts": [
     {
