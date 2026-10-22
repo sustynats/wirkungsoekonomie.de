@@ -13,12 +13,17 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-21T18:50:52.230Z",
-      "active": true
+    "editorial-status": {
+      "firstSeen": "2026-10-22T01:51:33.595Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "32383e86549502dfbff5d41a",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-22T01:51:33.595Z"
+    }
+  ],
   "dailyDate": "2026-10-21",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3277,7 +3282,7 @@
       }
     },
     "last_new_at": "2026-10-22T00:50:49.049Z",
-    "checked_at": "2026-10-22T01:36:21.102Z",
+    "checked_at": "2026-10-22T01:51:33.595Z",
     "last_current_new_at": "2026-10-22T00:50:49.049Z"
   },
   "recovery_attempts": [
