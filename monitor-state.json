@@ -12,14 +12,6 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-22T11:06:23.857Z",
-      "active": false
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-22T11:06:23.857Z",
-      "active": false
     }
   },
   "outbox": [],
@@ -3326,11 +3318,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/wohnblock-in-lauchhammer-noch-immer-nicht-vollstandig-geraumt-411727/": {
         "first_seen_at": "2026-10-22T10:51:12.880Z",
         "source_at": "2026-10-22T09:54:43.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bombenfund-fliegerbombe-in-nurnberg-gefunden-evakuierung-geplant-d61ad9/": {
+        "first_seen_at": "2026-10-22T11:21:05.036Z",
+        "source_at": "2026-10-22T10:12:29.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/menschenrechte-europaisches-parlament-ehrt-internationalen-strafgerichtshof-106a41/": {
+        "first_seen_at": "2026-10-22T11:21:05.036Z",
+        "source_at": "2026-10-22T10:07:41.000Z"
       }
     },
-    "last_new_at": "2026-10-22T10:51:12.880Z",
-    "checked_at": "2026-10-22T11:06:23.857Z",
-    "last_current_new_at": "2026-10-22T10:51:12.880Z"
+    "last_new_at": "2026-10-22T11:21:05.036Z",
+    "checked_at": "2026-10-22T11:21:05.036Z",
+    "last_current_new_at": "2026-10-22T11:21:05.036Z"
   },
   "recovery_attempts": [
     {
