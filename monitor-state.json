@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-22T17:21:15.258Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-22T17:56:44.311Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ea22ef5c7ef9810a12de9a6b",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-22T18:51:19.570Z"
+    }
+  ],
   "dailyDate": "2026-10-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3378,11 +3379,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/eusalp-jahresforum-2026-in-lindau-auszeichnung-fur-nature-loop-energy-aus-altomunster-eu-c2e3f6/": {
         "first_seen_at": "2026-10-22T17:51:07.100Z",
         "source_at": "2026-10-22T16:31:24.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/a5-bei-baden-baden-wird-wegen-bombenentscharfung-in-sinzheim-gesperrt-275e19/": {
+        "first_seen_at": "2026-10-22T18:51:19.570Z",
+        "source_at": "2026-10-22T17:32:39.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/reports-show-us-and-israel-are-planning-new-strikes-on-iran-6f80c5/": {
+        "first_seen_at": "2026-10-22T18:51:19.570Z",
+        "source_at": "2026-10-22T15:34:34.000Z"
       }
     },
-    "last_new_at": "2026-10-22T17:51:07.100Z",
-    "checked_at": "2026-10-22T18:06:02.731Z",
-    "last_current_new_at": "2026-10-22T17:51:07.100Z"
+    "last_new_at": "2026-10-22T18:51:19.570Z",
+    "checked_at": "2026-10-22T18:51:19.570Z",
+    "last_current_new_at": "2026-10-22T18:51:19.570Z"
   },
   "recovery_attempts": [
     {
