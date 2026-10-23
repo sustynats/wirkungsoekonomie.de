@@ -24,6 +24,10 @@
     "lage": {
       "firstSeen": "2026-10-23T11:02:28.715Z",
       "active": true
+    },
+    "freigabe-quittung": {
+      "firstSeen": "2026-10-23T11:51:12.858Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3457,7 +3461,7 @@
       }
     },
     "last_new_at": "2026-10-23T10:06:08.386Z",
-    "checked_at": "2026-10-23T11:36:16.975Z",
+    "checked_at": "2026-10-23T11:51:12.858Z",
     "last_current_new_at": "2026-10-23T10:06:08.386Z"
   },
   "recovery_attempts": [
