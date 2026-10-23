@@ -22,6 +22,14 @@ not candidates. No historical text, paid answer, source, approval, version or
 publication timestamp is removed or regenerated. All existing historical,
 privacy, navigation, URL, search and size gates still run.
 
+On 23 October the complete PR build reached 950.4 MiB although a normal
+ticker-only release passed at 948.9 MiB. The allowlist therefore also includes
+the stable-path public relationship and canvas projections and the two public
+glossary/canvas API catalogs with their `index.json` aliases. These are generated
+runtime copies, not frozen source snapshots. Only their artifact whitespace is
+removed; source files, download originals and hash-bound files remain intact.
+This small, bounded recovery must not be described as permanent growth capacity.
+
 This recovers a bounded amount of whitespace, not unlimited capacity. Further
 growth must still be monitored. Do not increase the cap or remove publications
 to clear it. Large immutable publication assets use the existing GitHub Release

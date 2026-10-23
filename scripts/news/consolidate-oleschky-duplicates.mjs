@@ -33,6 +33,32 @@ const routed = (a, b) => a?.published && a.listed !== false && !a.retirement
   && isDeepStrictEqual(b.retirement.canonical_story_ids, [bindings[0].id]);
 const paidFingerprint = s => sourceReviewFingerprint({ ...s, published_at: null, source_published_at: null });
 
+// A later regular poll held the exact paid SPIEGEL packet for hourly capacity.
+// Only ingestion time differs. Preserve the entire marker, never mark it
+// reviewed: an unknown field, new evidence or explicit review still holds.
+const retainedDuplicatePendingInput = (story, at) => {
+  const pending = story.pending_update;
+  if (!pending || pending.reason !== 'AI_HOURLY_CALL_LIMIT' || pending.content_hash !== story.content_hash
+    || !before(pending.detected_at, at) || Date.parse(pending.detected_at) < Date.parse(story.published_at)
+    || pending.reassessment !== false || pending.fresh !== true || pending.consolidation !== false
+    || pending.impact_reassessment || pending.quality_retry_count !== 0 || pending.quality_retry_after !== null
+    || !Array.isArray(pending.quality_errors) || pending.quality_errors.length
+    || Object.keys(pending).some(key => !['detected_at', 'content_hash', 'sources', 'reason',
+      'quality_errors', 'quality_retry_count', 'quality_retry_after', 'reassessment', 'fresh',
+      'consolidation', 'impact_reassessment', 'source_integrity'].includes(key))) return false;
+  const integrity = pending.source_integrity;
+  if (integrity?.status !== 'verified' || integrity.publication_status !== 'eligible' || integrity.version !== '1.2'
+    || !before(integrity.checked_at, at) || !/^[a-f0-9]{64}$/.test(integrity.fingerprint || '')
+    || !Array.isArray(integrity.issue_codes) || integrity.issue_codes.length
+    || !Array.isArray(integrity.warning_codes) || integrity.warning_codes.length
+    || Object.keys(integrity).some(key => !['status', 'publication_status', 'version', 'checked_at',
+      'fingerprint', 'issue_codes', 'warning_codes'].includes(key))
+    || !Array.isArray(pending.sources) || pending.sources.length !== 1 || !pending.sources[0]) return false;
+  const withoutIngestion = ({ ingested_at: _ingestedAt, ...source }) => source;
+  return before(pending.sources[0].ingested_at, at)
+    && isDeepStrictEqual(withoutIngestion(pending.sources[0]), withoutIngestion(story.sources[0]));
+};
+
 export function consolidateOleschkyDuplicates(stories, at) {
   if (!Number.isFinite(Date.parse(at))) throw Error('INVALID_CONSOLIDATION_TIME');
   const pair = bindings.map(b => stories.filter(s => s.story_id === b.id));
@@ -45,7 +71,8 @@ export function consolidateOleschkyDuplicates(stories, at) {
   if (routed(canonical, duplicate)) return { status: 'already_applied', changes: [] };
   // Unknown pending work or prior routing needs another explicit review.
   // Preflight both records before mutating either; never clear an open review.
-  if ([canonical, duplicate].some(s => s.listed === false || s.retirement || s.living_file || s.pending_update != null)) {
+  if ([canonical, duplicate].some((s, i) => s.listed === false || s.retirement || s.living_file
+    || (s.pending_update != null && !(i === 1 && retainedDuplicatePendingInput(s, at))))) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
   }
   canonical.living_file = { merged_story_ids: [duplicate.story_id], consolidations: [{
@@ -57,7 +84,7 @@ export function consolidateOleschkyDuplicates(stories, at) {
   duplicate.retirement = { at, reason_code: 'MERGED_INTO_LIVING_FILE', canonical_story_ids: [canonical.story_id],
     preserve_full_publication: true,
     canonical_stories: [{ story_id: canonical.story_id, slug: canonical.slug, title: canonical.title }],
-    note: 'Diese separat vorbereitete Fassung betrifft dieselbe Ankuendigung wie die verlinkte Wirkungsakte. Beide vollstaendigen Texte, Quellen und historischen Bewertungen bleiben erhalten. Die technische Zusammenfuehrung ist keine neue fachliche Pruefung und kein Nachweis einer eingehaltenen Waffenruhe oder erfolgten Evakuierung.' };
+    note: 'Diese separat vorbereitete Fassung betrifft dieselbe Ankuendigung wie die verlinkte Wirkungsakte. Beide vollstaendigen Texte, Quellen und historischen Bewertungen bleiben erhalten. Eine offene Nachpruefung bleibt offen. Die technische Zusammenfuehrung ist keine neue fachliche Pruefung und kein Nachweis einer eingehaltenen Waffenruhe oder erfolgten Evakuierung.' };
   return { status: 'applied', changes: [{ story_id: duplicate.story_id, canonical_story_id: canonical.story_id,
     reason: 'source_bound_oleschky_announcement_duplicate_2026_10_23' }] };
 }

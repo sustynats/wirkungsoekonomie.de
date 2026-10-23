@@ -33,6 +33,51 @@ function fixture() {
   }));
 }
 
+function retainedPendingPair() {
+  const pair = fixture(), source = pair[1].sources[0];
+  source.ingested_at = '2026-10-23T18:59:00.000Z';
+  pair[1].pending_update = {
+    detected_at: '2026-10-23T19:43:26.460Z', content_hash: pair[1].content_hash,
+    sources: [{ ...structuredClone(source), ingested_at: '2026-10-23T19:49:00.000Z' }],
+    reason: 'AI_HOURLY_CALL_LIMIT', quality_errors: [], quality_retry_count: 0,
+    quality_retry_after: null, reassessment: false, fresh: true, consolidation: false,
+    source_integrity: { status: 'verified', publication_status: 'eligible', version: '1.2',
+      checked_at: '2026-10-23T19:49:00.000Z', fingerprint: 'a'.repeat(64), issue_codes: [], warning_codes: [] },
+  };
+  return pair;
+}
+
+test('an exactly retained paid duplicate packet may route without clearing or completing its capacity-held marker', () => {
+  const pair = retainedPendingPair(), before = structuredClone(pair);
+  assert.equal(consolidateOleschkyDuplicates(pair, at).status, 'applied');
+  for (const [i, story] of pair.entries()) for (const key of Object.keys(before[i])) {
+    if (key !== 'listed') assert.deepEqual(story[key], before[i][key], key);
+  }
+  assert.deepEqual(pair[1].pending_update, before[1].pending_update);
+  const routed = structuredClone(pair);
+  assert.equal(consolidateOleschkyDuplicates(pair, at).status, 'already_applied');
+  assert.deepEqual(pair, routed);
+});
+
+for (const change of [
+  p => { p[1].pending_update.sources[0].summary += ' new evidence'; },
+  p => { p[1].pending_update.sources[0].article_excerpt = 'new evidence'; },
+  p => { p[1].pending_update.content_hash = 'changed'; },
+  p => { p[1].pending_update.reason = 'QUALITY_GATE_FAILED'; },
+  p => { p[1].pending_update.reassessment = true; },
+  p => { p[1].pending_update.impact_reassessment = true; },
+  p => { p[1].pending_update.consolidation = true; },
+  p => { p[1].pending_update.quality_errors = ['OPEN_REVIEW']; },
+  p => { p[1].pending_update.quality_retry_count = 1; },
+  p => { p[1].pending_update.unknown_instruction = true; },
+  p => { p[1].pending_update.source_integrity.issue_codes = ['OPEN']; },
+  p => { p[1].pending_update.sources[0].ingested_at = '2026-10-24T00:00:00.000Z'; },
+  p => { p[0].pending_update = structuredClone(p[1].pending_update); },
+]) test('a changed or unknown pending review is held atomically, never treated as retained transport', () => {
+  const pair = retainedPendingPair(); change(pair); const before = structuredClone(pair);
+  assert.equal(consolidateOleschkyDuplicates(pair, at).status, 'held'); assert.deepEqual(pair, before);
+});
+
 test('only the exact paid pair is listed once; every previous field except listed remains unchanged', () => {
   for (const reverse of [false, true]) {
     const pair = fixture(), before = structuredClone(pair);
@@ -114,11 +159,12 @@ test('the historical reader keeps its entire prior main body plus a transparent 
   assert.ok(after.includes(`href="../${pair[0].slug}/"`)); assert.deepEqual(pair[1], preserved);
 });
 
-test('the ordinary serial runner applies the listing repair once with no provider call or new edition', async () => {
+for (const retainedPending of [false, true]) test('the ordinary serial runner routes once without a provider call, new edition or clearing retained pending work', async () => {
   let captured, calls = 0;
+  const initial = retainedPending ? retainedPendingPair() : fixture();
   const options = { dryRun: true, now: at, registry: { schema_version: '1.0', sources: [], policy: {} },
     state: { source_status: {}, seen_items: {}, pending_story_ids: [], relevance_filter_version: '4.0' },
-    storyStore: { stories: fixture() }, usage: { runs: [] },
+    storyStore: { stories: initial }, usage: { runs: [] },
     newsroom: { source_items: {}, events: {}, event_sources: [], discovery_candidates: [] },
     budgetFx: { rate_date: '2026-10-23', rate_usd_per_eur: 1.16 },
     callAiImpl: async () => { calls++; throw Error('No paid replacement'); },
@@ -126,7 +172,8 @@ test('the ordinary serial runner applies the listing repair once with no provide
   const first = await runWirkungsticker(options);
   assert.equal(first.oleschky_duplicate_consolidation.status, 'applied'); assert.equal(first.retired_stories, 1);
   assert.equal(first.public_changed, true); assert.equal(first.published_stories, 0); assert.equal(first.updated_stories, 0);
-  assert.equal(calls, 0); assert.deepEqual(options.storyStore.stories, fixture());
+  assert.equal(calls, 0); assert.deepEqual(options.storyStore.stories, initial);
+  if (retainedPending) assert.deepEqual(captured.storyStore.stories[1].pending_update, initial[1].pending_update);
   const second = await runWirkungsticker({ ...options, ...captured });
   assert.equal(second.oleschky_duplicate_consolidation.status, 'already_applied');
   assert.equal(second.retired_stories, 0); assert.equal(second.public_changed, false); assert.equal(calls, 0);
