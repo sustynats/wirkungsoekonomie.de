@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-23T18:24:51.454Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-23T18:51:28.306Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -28,6 +28,37 @@
         "planet": {
           "magnitude": 0,
           "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-russland-krieg-melania-trump-verkundet-lokale-waffenruhe-verkunden-kreml-und-kyj-2c6e77/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-russland-krieg-melania-trump-verkundet-lokale-waffenruhe-verkunden-kreml-und-kyj-2c6e77/",
+      "title": "Laut DER SPIEGEL: Lokale Waffenruhe in Oleschky soll Evakuierung ermöglichen",
+      "summary": "DER SPIEGEL berichtet über eine vom Weißen Haus mitgeteilte lokale Waffenruhe in Oleschky. Ob sie eine Evakuierung ermöglicht und umgesetzt wird, ist offen.",
+      "date_published": "2026-10-23T17:02:00.000Z",
+      "date_modified": "2026-10-23T17:02:00.000Z",
+      "_woek_released_at": "2026-10-23T19:00:21.102Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "positive",
           "status": "potential"
         },
         "democracy": {
