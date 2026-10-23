@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-23T16:25:35.314Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-23T17:05:23.168Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -23,6 +23,37 @@
         "human": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/drohnenalarm-in-moskau-flughafen-scheremetjewo-vorubergehend-evakuiert-1775d9/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/drohnenalarm-in-moskau-flughafen-scheremetjewo-vorubergehend-evakuiert-1775d9/",
+      "title": "Laut Tagesspiegel: Flughafen Scheremetjewo in Moskau vorübergehend evakuiert",
+      "summary": "Am Moskauer Flughafen Scheremetjewo mussten sich Menschen laut Tagesspiegel nach einem Drohnenalarm vorübergehend an Schutzorte begeben. Ursache, Dauer und Folgen bleiben im vorliegenden Beleg offen.",
+      "date_published": "2026-10-23T14:53:42.000Z",
+      "date_modified": "2026-10-23T14:53:42.000Z",
+      "_woek_released_at": "2026-10-23T17:16:45.701Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         },
         "planet": {
