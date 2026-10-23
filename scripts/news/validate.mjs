@@ -23,7 +23,7 @@ const readAppData = (relative) => {
 };
 import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 import { persistedImpactAssessmentErrors } from "./migrate-impact-assessments.mjs";
-import { hasSecretPattern, newsroomSecretScanText } from "./secret-scan.mjs";
+import { hasSecretPattern, newsroomSecretScanText, stateSecretScanText } from "./secret-scan.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => readRepositoryJson(path.join(ROOT, relative), "utf8");
@@ -218,7 +218,8 @@ const sensitiveFiles = [
   "content/news/source-registry.json", "data/news/stories.json", "data/news/state.json", "data/news/usage.json",
 ];
 for (const relative of sensitiveFiles) {
-  const text = relative === 'data/news/stories.json' ? newsroomSecretScanText(store) : fs.readFileSync(path.join(ROOT, relative), "utf8");
+  const text = relative === 'data/news/stories.json' ? newsroomSecretScanText(store)
+    : relative === 'data/news/state.json' ? stateSecretScanText(state) : fs.readFileSync(path.join(ROOT, relative), "utf8");
   if (hasSecretPattern(text)) fail(`SECRET_PATTERN_FOUND:${relative}`);
 }
 
