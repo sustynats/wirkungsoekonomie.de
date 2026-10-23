@@ -12,9 +12,18 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-23T05:45:24.900Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "53cdc8d998b198610a58bf5c",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-23T05:45:24.900Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-22",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3410,11 +3419,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/trump-ukraine-verfugt-wieder-uber-satelliten-internetdienst-starlink-bb1476/": {
         "first_seen_at": "2026-10-23T04:08:23.333Z",
         "source_at": "2026-10-23T02:12:02.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/spd-chef-homann-dringt-auf-prufung-eines-afd-verbots-c83404/": {
+        "first_seen_at": "2026-10-23T05:45:24.900Z",
+        "source_at": "2026-10-23T04:53:59.000Z"
       }
     },
-    "last_new_at": "2026-10-23T04:08:23.333Z",
-    "checked_at": "2026-10-23T05:35:42.118Z",
-    "last_current_new_at": "2026-10-23T04:08:23.333Z"
+    "last_new_at": "2026-10-23T05:45:24.900Z",
+    "checked_at": "2026-10-23T05:45:24.900Z",
+    "last_current_new_at": "2026-10-23T05:45:24.900Z"
   },
   "recovery_attempts": [
     {
