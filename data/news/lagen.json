@@ -1,7 +1,133 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-22T16:00:00.000Z",
+  "updated_at": "2026-10-23T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-23-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-23",
+      "window_from": "2026-10-22T16:00:00.000Z",
+      "window_to": "2026-10-23T04:00:00.000Z",
+      "stand": "2026-10-23T04:00:00.000Z",
+      "headline": "Das sind die 13 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 13,
+        "neu": 12,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-b36383922ebb1476",
+          "slug": "trump-ukraine-verfugt-wieder-uber-satelliten-internetdienst-starlink-bb1476",
+          "title": "Nach Angaben von Trump verfügt die Ukraine wieder über Starlink",
+          "state": "neu",
+          "at": "2026-10-23T03:30:50.775Z",
+          "score": 7.9595
+        },
+        {
+          "story_id": "wt-229663029c47d5eb",
+          "slug": "maradona-prozess-urteil-soll-am-22-dezember-fallen-47d5eb",
+          "title": "Laut stern: Im Maradona-Prozess soll das Urteil am 22. Dezember fallen",
+          "state": "neu",
+          "at": "2026-10-23T01:10:51.412Z",
+          "score": 5.7651
+        },
+        {
+          "story_id": "wt-d2a35504ce2b5ac1",
+          "slug": "finnland-betriebsgenehmigung-fur-unterirdisches-endlager-fur-atommull-2b5ac1",
+          "title": "Finnland genehmigt grundsätzlich Betrieb eines unterirdischen Atommüll-Endlagers",
+          "state": "neu",
+          "at": "2026-10-22T22:01:06.529Z",
+          "score": 7.8545
+        },
+        {
+          "story_id": "wt-ee3c4e53eb4d1bab",
+          "slug": "gipfeltreffen-in-istanbul-europaische-und-islamisch-gepragte-staaten-beraten-uber-palast-4d1bab",
+          "title": "Laut türkisches Außenministerium und Berliner Regierungskreise, laut Deutschlandfunk: Staaten beraten in Istanbul über Palästina, Hormus, Jemen und Ukraine",
+          "state": "neu",
+          "at": "2026-10-22T20:51:09.523Z",
+          "score": 5.4044
+        },
+        {
+          "story_id": "wt-806f21eac3c41b99",
+          "slug": "berlin-spd-will-pflegereform-im-bundestag-nachbessern-c41b99",
+          "title": "Laut Deutschlandfunk: SPD dringt auf Nachbesserungen bei der Pflegereform",
+          "state": "fortgeschrieben",
+          "at": "2026-10-22T20:03:32.559Z",
+          "score": 7.0883
+        },
+        {
+          "story_id": "wt-66966643b571496c",
+          "slug": "ukraine-news-trump-verteidigt-neue-russland-politik-71496c",
+          "title": "Laut MDR: Trump verteidigt Aussetzung von Russland-Sanktionen",
+          "state": "neu",
+          "at": "2026-10-22T20:02:36.788Z",
+          "score": 9.337
+        },
+        {
+          "story_id": "wt-706071d0e530045d",
+          "slug": "bekanntgabe-in-strassburg-internationaler-strafgerichtshof-erhalt-den-sacharow-preis-des-30045d",
+          "title": "Internationaler Strafgerichtshof erhält Sacharow-Preis des EU-Parlaments",
+          "state": "neu",
+          "at": "2026-10-22T19:36:27.309Z",
+          "score": 5.3006
+        },
+        {
+          "story_id": "wt-61a6da2a0cdb3a0d",
+          "slug": "kanzlerpartei-bei-23-prozent-umfrage-sieht-kleineren-abstand-zwischen-afd-und-union-db3a0d",
+          "title": "Laut Tagesspiegel: Umfrage sieht Union bei 23 Prozent und kleineren Abstand zur AfD",
+          "state": "neu",
+          "at": "2026-10-22T18:33:02.709Z",
+          "score": 5.2126
+        },
+        {
+          "story_id": "wt-0bcc75785d2c0f8e",
+          "slug": "ukraine-krieg-gouverneur-von-donezk-familien-mit-kindern-sollen-bestimmte-gebiete-verlas-2c0f8e",
+          "title": "Familien mit Kindern sollen Gebiete im Osten der Ukraine verlassen",
+          "state": "neu",
+          "at": "2026-10-22T18:32:14.861Z",
+          "score": 7.6706
+        },
+        {
+          "story_id": "wt-2e793abd6e6f80c5",
+          "slug": "reports-show-us-and-israel-are-planning-new-strikes-on-iran-6f80c5",
+          "title": "Laut Berichten: USA und Israel planen neue Angriffe auf Iran",
+          "state": "neu",
+          "at": "2026-10-22T18:09:55.899Z",
+          "score": 9.1805
+        },
+        {
+          "story_id": "wt-d310149615275e19",
+          "slug": "a5-bei-baden-baden-wird-wegen-bombenentscharfung-in-sinzheim-gesperrt-275e19",
+          "title": "Laut SWR Aktuell: A5 bei Baden-Baden wegen Bombenentschärfung gesperrt",
+          "state": "neu",
+          "at": "2026-10-22T18:09:18.733Z",
+          "score": 5.1796
+        },
+        {
+          "story_id": "wt-093c9f028ec2e3f6",
+          "slug": "eusalp-jahresforum-2026-in-lindau-auszeichnung-fur-nature-loop-energy-aus-altomunster-eu-c2e3f6",
+          "title": "EUSALP-Jahresforum 2026 in Lindau: Bayern wirbt für alpenweite Zusammenarbeit",
+          "state": "neu",
+          "at": "2026-10-22T17:17:29.462Z",
+          "score": 5.1076
+        },
+        {
+          "story_id": "wt-10b1f8e4fbabd325",
+          "slug": "evakuierung-wegen-gasleck-in-der-aachener-innenstadt-abd325",
+          "title": "Laut WDR: Gasleck in Aachener Innenstadt, mehrere Häuser evakuiert",
+          "state": "neu",
+          "at": "2026-10-22T16:51:12.886Z",
+          "score": 5.0711
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-23T04:18:52.133Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-22-abendlage",
       "slot": "abendlage",
@@ -5541,95 +5667,6 @@
           "state": "neu",
           "at": "2026-09-23T08:55:35.002Z",
           "score": 8.5
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-23-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-23",
-      "window_from": "2026-09-22T16:00:00.000Z",
-      "window_to": "2026-09-23T04:00:00.000Z",
-      "stand": "2026-09-23T04:00:00.000Z",
-      "headline": "Das sind die 9 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 9,
-        "neu": 9,
-        "fortgeschrieben": 0
-      },
-      "entries": [
-        {
-          "story_id": "wt-a116ddc61af069b3",
-          "slug": "ukraine-krieg-eu-verlangert-russland-sanktionen-bis-2029-f069b3",
-          "title": "Laut Deutschlandfunk: EU verlängert Russland-Sanktionen bis 2029 und streicht zwei Oligarchen von der Liste",
-          "state": "neu",
-          "at": "2026-09-23T01:27:04.247Z",
-          "score": 5.7876
-        },
-        {
-          "story_id": "wt-8636078631bdcc11",
-          "slug": "regierungsbildung-sachsen-anhalts-bsw-landeschef-afd-weiss-nicht-was-sie-will-bdcc11",
-          "title": "Laut BSW-Landeschef: AfD und BSW sprechen über Zusammenarbeit in Magdeburg",
-          "state": "neu",
-          "at": "2026-09-23T00:10:22.013Z",
-          "score": 5.6811
-        },
-        {
-          "story_id": "wt-b14b2c4a44419fb2",
-          "slug": "iran-newsblog-angriffe-rund-um-strasse-von-hormus-preis-fur-brent-rohol-steigt-419fb2",
-          "title": "Laut stern-Newsblog: Angriffe rund um Straße von Hormus lassen Brent-Rohölpreis steigen",
-          "state": "neu",
-          "at": "2026-09-22T20:48:51.395Z",
-          "score": 7.4012
-        },
-        {
-          "story_id": "wt-1d3fd4e1a02fe3e4",
-          "slug": "einsatz-verdacht-auf-giftiges-quecksilber-dhl-zentrum-evakuiert-2fe3e4",
-          "title": "Gefahrstoffverdacht: DHL-Zentrum in Leizen evakuiert",
-          "state": "neu",
-          "at": "2026-09-22T20:37:28.602Z",
-          "score": 10.5
-        },
-        {
-          "story_id": "wt-37f7dd9252599acf",
-          "slug": "offentliche-fahndung-mit-fotos-15-jahriger-getotet-verdachtige-manner-stellen-sich-599acf",
-          "title": "Laut stern und Tagesspiegel: Zwei Männer stellen sich nach öffentlicher Fahndung",
-          "state": "neu",
-          "at": "2026-09-22T17:58:07.132Z",
-          "score": 5.1822
-        },
-        {
-          "story_id": "wt-6bb3e30fcdd6c388",
-          "slug": "notfalle-zwei-weltkriegsbomben-in-wiesbaden-entdeckt-evakuierung-d6c388",
-          "title": "Zwei Weltkriegsbomben in Wiesbaden entdeckt – Anwohner müssen Häuser verlassen",
-          "state": "neu",
-          "at": "2026-09-22T17:19:32.489Z",
-          "score": 3.6105
-        },
-        {
-          "story_id": "wt-6d9ed8132146bd6c",
-          "slug": "explosionen-in-weimar-eigentumer-bleibt-verschwunden-46bd6c",
-          "title": "Suche nach dem Eigentümer eines zerstörten Wohnhauses in Weimar geht weiter",
-          "state": "neu",
-          "at": "2026-09-22T16:58:04.881Z",
-          "score": 7.2007
-        },
-        {
-          "story_id": "wt-4e7da9f92e682eb7",
-          "slug": "drohnenfund-in-niedersachsen-womoglich-sprengstoff-in-der-nahe-entdeckt-682eb7",
-          "title": "Laut Rechercheverbund: Verdächtiges Material nahe Drohnenfund in Niedersachsen entdeckt",
-          "state": "neu",
-          "at": "2026-09-22T16:43:42.204Z",
-          "score": 9.0607
-        },
-        {
-          "story_id": "wt-eaf508a3d7f8d4df",
-          "slug": "eu-beschliesst-aufhebung-von-sanktionen-gegen-zwei-russische-oligarchen-f8d4df",
-          "title": "Laut stern: EU hebt Sanktionen gegen zwei russische Oligarchen auf",
-          "state": "neu",
-          "at": "2026-09-22T16:11:04.121Z",
-          "score": 5.0154
         }
       ]
     }
