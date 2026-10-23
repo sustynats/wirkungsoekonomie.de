@@ -159,7 +159,7 @@ jobs:
           WOEK_NEWS_MAX_OUTPUT_TOKENS: ${{ vars.WOEK_NEWS_MAX_OUTPUT_TOKENS || '32000' }}
           WOEK_NEWS_DRY_RUN: ${{ inputs.dry_run }}
         run: |
-          if [ "$WOEK_NEWS_DRY_RUN" = "true" ]; then node scripts/news/run-api.mjs --dry-run; else node scripts/news/run-api.mjs; fi
+          if [ "$WOEK_NEWS_DRY_RUN" = "true" ]; then node scripts/news/run-api.mjs --dry-run; else node scripts/news/run-api.mjs --defer-site-build; fi
       - name: Hand analysed news orders to Natalie's approval list
         id: news_order_delivery
         if: ${{ !cancelled() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true }}
@@ -214,7 +214,11 @@ jobs:
         run: |
           set -euo pipefail
           node scripts/news/lage-schreiben.mjs
-          npm run news:build
+      # Build once, after all imports and Lage. This is a required step even
+      # when the optional Lage writer failed; its errors cannot waive gates.
+      - name: Build public ticker after editorial imports and Lage
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        run: npm run news:build
       - name: Synchronize public survey pages from Oracle
         id: polls
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
@@ -308,7 +312,9 @@ jobs:
           echo "::error::Redaktionelle Auftragsuebergabe, Freigabequittung oder archivierte Wiederaufnahme fehlgeschlagen. Nachrichten und bezahlte Antworten bleiben gesichert; der Gesamtprozess ist nicht gesund."
           exit 1
       - name: Preserve failed-run work and usage for recovery
-        if: failure() && steps.slot.outputs.should_run == 'true'
+        # A job timeout is cancelled, not failure(). Preserve completed paid
+        # work in that case as well; never rerun a provider to reconstruct it.
+        if: always() && (failure() || cancelled()) && steps.slot.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: news-recovery-${{ github.run_id }}-${{ github.run_attempt }}
