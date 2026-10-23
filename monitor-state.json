@@ -16,13 +16,14 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-23T10:12:20.951Z",
       "active": true
-    },
-    "freigabe-quittung": {
-      "firstSeen": "2026-10-23T11:51:12.858Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ef3dae73b76f7da30f8d544a",
+      "content": "✓ WÖk-Störung behoben\nQuittung freigegebener Fassungen\nPrüfung: 2026-10-23T17:21:18.575Z"
+    }
+  ],
   "dailyDate": "2026-10-23",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3450,11 +3451,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/trump-als-klimaschutzer-c4e4d4/": {
         "first_seen_at": "2026-10-23T10:06:08.386Z",
         "source_at": "2026-10-23T07:27:36.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/moskau-flughafen-scheremetjewo-nach-drohnen-alarm-evakuiert-7caacc/": {
+        "first_seen_at": "2026-10-23T17:21:18.575Z",
+        "source_at": "2026-10-23T15:30:00.000Z"
       }
     },
-    "last_new_at": "2026-10-23T10:06:08.386Z",
-    "checked_at": "2026-10-23T17:06:42.850Z",
-    "last_current_new_at": "2026-10-23T10:06:08.386Z"
+    "last_new_at": "2026-10-23T17:21:18.575Z",
+    "checked_at": "2026-10-23T17:21:18.575Z",
+    "last_current_new_at": "2026-10-23T17:21:18.575Z"
   },
   "recovery_attempts": [
     {
