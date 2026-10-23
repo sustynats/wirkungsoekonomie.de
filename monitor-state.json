@@ -13,16 +13,17 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-23T18:06:04.141Z",
-      "active": false
-    },
     "editorial-coverage": {
       "firstSeen": "2026-10-23T18:06:04.141Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "c9f887f20e92fde2bbca6ea9",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 8 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-23T18:06:04.141Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-23",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3458,11 +3459,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/drohnenalarm-in-moskau-flughafen-scheremetjewo-vorubergehend-evakuiert-1775d9/": {
         "first_seen_at": "2026-10-23T17:51:13.682Z",
         "source_at": "2026-10-23T14:53:42.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/innenminister-spricht-von-terror-tat-bei-paris-4d85fd/": {
+        "first_seen_at": "2026-10-23T18:21:27.902Z",
+        "source_at": "2026-10-23T15:15:56.000Z"
       }
     },
-    "last_new_at": "2026-10-23T17:51:13.682Z",
-    "checked_at": "2026-10-23T18:06:04.141Z",
-    "last_current_new_at": "2026-10-23T17:51:13.682Z"
+    "last_new_at": "2026-10-23T18:21:27.902Z",
+    "checked_at": "2026-10-23T18:21:27.902Z",
+    "last_current_new_at": "2026-10-23T18:21:27.902Z"
   },
   "recovery_attempts": [
     {
