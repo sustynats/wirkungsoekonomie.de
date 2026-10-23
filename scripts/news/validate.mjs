@@ -23,6 +23,7 @@ const readAppData = (relative) => {
 };
 import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 import { persistedImpactAssessmentErrors } from "./migrate-impact-assessments.mjs";
+import { hasSecretPattern, newsroomSecretScanText } from "./secret-scan.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => readRepositoryJson(path.join(ROOT, relative), "utf8");
@@ -216,10 +217,9 @@ const sensitiveFiles = [
   "scripts/news/living-files.mjs", "scripts/news/case-files.mjs",
   "content/news/source-registry.json", "data/news/stories.json", "data/news/state.json", "data/news/usage.json",
 ];
-const secretPatterns = [/\bsk-[A-Za-z0-9_-]{20,}\b/, /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/, /\bAKIA[0-9A-Z]{16}\b/];
 for (const relative of sensitiveFiles) {
-  const text = relative === 'data/news/stories.json' ? JSON.stringify(store) : fs.readFileSync(path.join(ROOT, relative), "utf8");
-  if (secretPatterns.some((pattern) => pattern.test(text))) fail(`SECRET_PATTERN_FOUND:${relative}`);
+  const text = relative === 'data/news/stories.json' ? newsroomSecretScanText(store) : fs.readFileSync(path.join(ROOT, relative), "utf8");
+  if (hasSecretPattern(text)) fail(`SECRET_PATTERN_FOUND:${relative}`);
 }
 
 console.log(`Wirkungsticker validiert: ${registry.sources.length} Quellen, ${store.stories.filter((story) => story.published).length} veröffentlichte Storys, ${usage.runs.length} protokollierte Läufe.`);
