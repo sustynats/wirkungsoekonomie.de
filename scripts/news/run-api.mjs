@@ -9,7 +9,7 @@ const [{ runWirkungsticker }, { callOpenAiDirect, newsModel }] = await Promise.a
 if (!dryRun && !process.env.OPENAI_API_KEY) { console.error('OPENAI_API_KEY_MISSING'); process.exit(1); }
 const model = newsModel();
 try {
-  const report = await runWirkungsticker({ dryRun, callAiImpl: (stories, options) => callOpenAiDirect(stories, { ...options, model }) });
+  const report = await runWirkungsticker({ dryRun, deferSiteBuild: process.argv.includes("--defer-site-build"), callAiImpl: (stories, options) => callOpenAiDirect(stories, { ...options, model }) });
   console.log(JSON.stringify({ ...report, transport: 'direct-single-call-1', configured_model: model }, null, 2));
   // Ein gestörter Anbieter ist eine Betriebsmeldung des Health-Schritts, kein
   // Grund, den Importstand zu verwerfen: Zustand wird gebaut und committet,
