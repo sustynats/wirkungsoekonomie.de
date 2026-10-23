@@ -12,6 +12,10 @@
     "delivery-redaktionsworker.yml": {
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-23T08:21:19.979Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3422,11 +3426,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-zerbrochene-fensterscheiben-nach-knall-in-speyer-493f99/": {
         "first_seen_at": "2026-10-23T06:36:25.034Z",
         "source_at": "2026-10-23T05:18:37.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/brand-in-wohnung-kuhlschrank-geht-in-flammen-auf-mehrfamilienhaus-evakuiert-e5533d/": {
+        "first_seen_at": "2026-10-23T08:21:19.979Z",
+        "source_at": "2026-10-23T06:21:38.000Z"
       }
     },
-    "last_new_at": "2026-10-23T06:36:25.034Z",
-    "checked_at": "2026-10-23T08:06:25.558Z",
-    "last_current_new_at": "2026-10-23T06:36:25.034Z"
+    "last_new_at": "2026-10-23T08:21:19.979Z",
+    "checked_at": "2026-10-23T08:21:19.979Z",
+    "last_current_new_at": "2026-10-23T08:21:19.979Z"
   },
   "recovery_attempts": [
     {
