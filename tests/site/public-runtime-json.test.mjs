@@ -104,6 +104,36 @@ test('compacts the fixed public ticker projection while preserving every value a
   assert.equal(compactPublicRuntimeJson(artifact).saved_bytes, 0);
 });
 
+test('stable public relationship, canvas and API projections retain every token; originals and snapshots do not change', t => {
+  const {root, artifact, put} = fixture(t);
+  const catalogs = ['public/data/relationship-manifest.json', 'public/data/woems-canvas.json',
+    'api/v1/glossary.json', 'api/v1/glossary/index.json', 'api/v1/canvases.json', 'api/v1/canvases/index.json'];
+  const original = String.raw`{
+    "generatedAt": "2026-10-23T20:40:00.000Z",
+    "definition": "Unchanged  definition\nwith \"quoted\" terms and Grüße.",
+    "links": [ "/begriffe/wirkung/", "/methodenraum/" ],
+    "large_integer": 9007199254740993, "numeric_token": 1.2300e+04
+  }`;
+  const protectedPaths = ['_site/data/wirkungskompass/snapshots/example.latest.json',
+    '_site/assets/data/public-routes.json', '_site/assets/data/public-release-assets.json',
+    '_site/assets/search/search-core-0123456789abcdef.json', '_site/downloads/canvas-original.json'];
+  for (const relative of catalogs) {
+    assert.ok(PUBLIC_RUNTIME_JSON.includes(relative));
+    put(`_site/${relative}`, original);
+    put(relative, original);
+  }
+  for (const relative of protectedPaths) put(relative, original);
+  const report = compactPublicRuntimeJson(artifact);
+  assert.deepEqual(report.files.map(file => file.path).sort(), [...catalogs].sort());
+  assert.ok(report.saved_bytes > 0);
+  for (const relative of catalogs) {
+    assert.deepEqual(fs.readFileSync(path.join(artifact, relative)), compactJsonBytes(Buffer.from(original)));
+    assert.equal(fs.readFileSync(path.join(root, relative), 'utf8'), original);
+  }
+  for (const relative of protectedPaths) assert.equal(fs.readFileSync(path.join(root, relative), 'utf8'), original);
+  assert.equal(compactPublicRuntimeJson(artifact).saved_bytes, 0);
+});
+
 test('validates all candidates before writing and tolerates absent optional catalogs', t => {
   const {artifact, put} = fixture(t);
   const original = '{ "x" : 1 }\n';
