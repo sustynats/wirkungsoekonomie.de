@@ -75,6 +75,8 @@
       "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
       "min_duration_seconds": 1500,
       "enabled": true,
+      "require_transcript": true,
+      "allow_paid_transcription": false,
       "mediathek": {
         "topic": "maybrit illner",
         "title": "maybrit illner",
@@ -89,6 +91,8 @@
       "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel bis 14:00 des Folgetags",
       "min_duration_seconds": 1500,
       "enabled": true,
+      "require_transcript": true,
+      "allow_paid_transcription": false,
       "mediathek": {
         "topic": "Markus Lanz",
         "title": "Markus Lanz",
