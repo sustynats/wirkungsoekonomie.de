@@ -240,6 +240,57 @@ test('all enabled subscriptions draft automatically, including Machtwechsel, wit
   assert.ok(loadShows().every(show => show.draft_policy === AUTOMATIC_DRAFT_POLICY && !show.observation_only));
 });
 
+test('Lanz und Illner warten auch nach der Frist ausschließlich auf offiziellen Wortlaut', async t => {
+  const configured = loadShows();
+  for (const id of ['markus-lanz', 'maybrit-illner']) await t.test(id, async () => {
+    const show = configured.find(show => show.id === id);
+    assert.equal(show.require_transcript, true, 'keinen Auftrag ohne Wortlaut einreihen');
+    assert.equal(show.allow_paid_transcription, false, 'keine eigene Ersatzabschrift nach der Frist');
+    const fixture = fakeSession();
+    const subtitleUrl = `https://captions.example/${id}.vtt`;
+    const words = 'WEBVTT\n\n00:00:01.000 --> 00:00:08.000\n' + 'Synthetischer amtlicher Wortlaut '.repeat(100);
+    let subtitlesAvailable = false;
+    const row = { title: `${show.show_name} vom 22. Oktober 2026`,
+      timestamp: Math.floor(Date.parse('2026-10-22T21:15:00Z') / 1000), duration: 4500,
+      url_website: `https://www.zdf.de/video/talk/${id}/synthetic-official-only`,
+      url_video_low: `https://media.example/${id}.mp4`, id: `synthetic-official-only-${id}` };
+    const fetchImpl = async (url, init) => {
+      if (init?.method === 'POST') return { ok: true, json: async () => ({ result: { results: [
+        { ...row, url_subtitle: subtitlesAvailable ? subtitleUrl : '' },
+      ] } }) };
+      assert.equal(url, subtitleUrl, 'nur den tatsächlich angebotenen Untertitel abrufen');
+      return { ok: true, text: async () => words };
+    };
+    const options = { session: fixture.session, root: '/nonexistent', shows: [show], fetchImpl,
+      env: { WOEK_EPISODE_TRANSCRIBE: 'true', WOEK_EPISODE_SUBTITLE_WAIT_HOURS: '12' },
+      limit: 2, maxPerDay: 10, maxTranscriptsPerDay: 2,
+      transcribeImpl: async () => assert.fail('auch nach der Frist keine kostenpflichtige Ersatzabschrift') };
+    for (const at of ['2026-10-23T12:05:00.000Z', '2026-10-23T13:05:00.000Z']) {
+      const waiting = await proposeEpisodeCandidates({ ...options, now: at });
+      assert.deepEqual(waiting.proposed, []);
+      assert.equal(waiting.waiting_for_subtitles[0].reason, 'ohne Wortlaut');
+      assert.equal(waiting.transcribed_today, 0);
+      assert.equal(waiting.transcript_cost_today_usd, 0);
+      assert.equal(fixture.jobs.length, 1, 'kein wortloser oder doppelter Auftrag');
+      assert.equal(fixture.files.size, 0);
+    }
+    subtitlesAvailable = true;
+    const ready = await proposeEpisodeCandidates({ ...options, now: '2026-10-23T13:15:00.000Z' });
+    assert.equal(ready.proposed.length, 1);
+    assert.equal(ready.proposed[0].transcript_origin, 'accessibility_subtitles');
+    assert.equal(ready.transcribed_today, 0);
+    assert.equal(ready.transcript_cost_today_usd, 0);
+    const job = fixture.jobs.find(job => job.input.job_id === ready.proposed[0].job_id);
+    assert.equal(job.input.origin.transcript.origin, 'accessibility_subtitles');
+    assert.equal(job.input.manual_only, true);
+    assert.equal(job.input.request.publication_intent, 'final_approval_required');
+    const repeated = await proposeEpisodeCandidates({ ...options, now: '2026-10-23T13:20:00.000Z' });
+    assert.deepEqual(repeated.proposed, [], 'später eingetroffenen Wortlaut nur einmal einreihen');
+    assert.equal(fixture.jobs.length, 2);
+    assert.equal(fixture.files.size, 1);
+  });
+});
+
 // Regressions for automatic drafting and old observation records follow.
 test('a new subscribed series without transcript waits without charge and does not starve a usable older episode', async () => {
   const blocked = { ...shows.illner, require_transcript: true, allow_paid_transcription: false };
@@ -576,7 +627,7 @@ test('ein Wiederholungsversuch nimmt nach dem Wartefenster die eigene Abschrift'
   assert.deepEqual(blocked.waiting_for_subtitles.map((w) => w.reason), ['ohne Wortlaut']);
 });
 
-test('Lanz wartet bis 14:00 des Folgetags auf die amtlichen Untertitel, danach greift die eigene Abschrift', async () => {
+test('eine ausdrücklich erlaubte Ersatzroute beginnt erst nach dem Berliner Stichtag', async () => {
   const { transcriptDeadline, berlinOffsetMinutes, loadShows } = await import('../../scripts/news/sendungs-kandidaten.mjs');
   // Sommerzeit und Winterzeit: der Stichtag ist Berliner Wanduhrzeit.
   assert.equal(transcriptDeadline('2026-09-15T20:45:00.000Z', { day_offset: 1, berlin_hour: 14 }), '2026-09-16T12:00:00.000Z');
@@ -591,7 +642,7 @@ test('Lanz wartet bis 14:00 des Folgetags auf die amtlichen Untertitel, danach g
   assert.deepEqual(lanzConfig.transcript_deadline, { day_offset: 1, berlin_hour: 14 });
 
   const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500,
-    transcript_deadline: { day_offset: 1, berlin_hour: 14 } };
+    transcript_deadline: { day_offset: 1, berlin_hour: 14 }, require_transcript: true, allow_paid_transcription: true };
   const row = { title: 'Markus Lanz vom 15. September 2026', timestamp: Math.floor(Date.parse('2026-09-15T20:45:00Z') / 1000), duration: 4611,
     url_website: 'https://www.zdf.de/video/talk/lanz-99', url_video_low: 'https://cdn.example/lanz.mp4', url_subtitle: '', id: 'lanz99' };
   const fetchImpl = async (url, init) => init?.method === 'POST' ? { ok: true, json: async () => ({ result: { results: [row] } }) } : { ok: true, text: async () => '' };
