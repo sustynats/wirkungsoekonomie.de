@@ -18,8 +18,13 @@
       "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-10-22",
+  "outbox": [
+    {
+      "id": "f849ff2070b7c92f6d9b7d82",
+      "content": "WÖk Tagesbericht · 2026-10-23 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 1015 live · 828 aktuelle Lagen und Einzelakten aus 853 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-10-22) 34; heute bisher 5 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-23T05:32:21.971Z; 969 offene Prüfungen, 44 aktive Quellen.\nQueue: 969 offen (622 Kapazität · 0 technisch · 347 redaktionell); Status draining.\nQuellen-Funnel heute: 14567 Feed-Einträge → 259 neu/aktualisiert → 270 Story-Kandidaten → 13967 geeignet → 8 KI → 6 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 374; redaktionelle Quellenbeiträge: 610.\nProduktive Quellen im letzten Lauf: WDR.\nEreignischeck (begrenzter Quellenbestand): 10 größere Ereignisse · 7 mit Veröffentlichung · 3 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.67 · heute $0.09 · Monat $22.56.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 325 Erstveröffentlichungen · 696 Aktualisierungen · 1841 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 9.50 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 152 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.012; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €23.89 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Liegengebliebene Redaktionsauftraege: 2 Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit 2026-10-09T21:03:10.095Z; Grund: AI_MALFORMED_JSON). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.\n⚠ Nachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\n⚠ Redaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-23",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -3418,11 +3423,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/spd-chef-homann-dringt-auf-prufung-eines-afd-verbots-c83404/": {
         "first_seen_at": "2026-10-23T05:45:24.900Z",
         "source_at": "2026-10-23T04:53:59.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/keine-heizung-arbeiten-am-gasleck-in-aachen-dauern-an-96d57c/": {
+        "first_seen_at": "2026-10-23T06:06:18.539Z",
+        "source_at": "2026-10-23T05:22:06.000Z"
       }
     },
-    "last_new_at": "2026-10-23T05:45:24.900Z",
-    "checked_at": "2026-10-23T05:50:58.461Z",
-    "last_current_new_at": "2026-10-23T05:45:24.900Z"
+    "last_new_at": "2026-10-23T06:06:18.539Z",
+    "checked_at": "2026-10-23T06:06:18.539Z",
+    "last_current_new_at": "2026-10-23T06:06:18.539Z"
   },
   "recovery_attempts": [
     {
