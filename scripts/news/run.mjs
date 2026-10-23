@@ -1116,6 +1116,12 @@ export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, 
   throw lastError;
 }
 
+// The serial workflow builds after approved editions and Lage are imported.
+// Standalone callers still build by default; no validation is skipped.
+export function buildNewsAfterRun(options = {}, build = buildNewsSite) {
+  if (options.deferSiteBuild !== true) build();
+}
+
 export async function runWirkungsticker(options = {}) {
   const mode = processingMode();
   visualGenerationProvider(); // Reject contradictory configuration before any work.
@@ -2333,7 +2339,7 @@ export async function runWirkungsticker(options = {}) {
       try{const editorial=await (await import('./bridge/personal-publication.mjs')).importApprovedEditorials(bridge.store,ROOT);if(editorial.changed)report.public_changed=true;}catch{report.personal_editorial_pending=true;}
       writeJson(files.report,report);
     }
-    buildNewsSite();
+    buildNewsAfterRun(options);
   }
   options.captureState?.({ state, storyStore, usage, newsroom });
   return report;

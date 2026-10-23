@@ -15,6 +15,12 @@ test('failure checkpoint retains routing and editorial decisions alongside stori
   assert.ok(checkpoint.includes('data/news/personal-editorials.json'));
   assert.ok(!checkpoint.includes('.env'));
 });
+test('a cancelled timeout retains the full failed-work checkpoint as well as sealed paid originals', () => {
+  const yaml=fs.readFileSync(new URL('../../.github/workflows/wirkungsticker.yml',import.meta.url),'utf8');
+  const checkpoint=yaml.slice(yaml.indexOf('- name: Preserve failed-run work'));
+  assert.match(checkpoint, /if: always\(\) && \(failure\(\) \|\| cancelled\(\)\) && steps\.slot\.outputs\.should_run == 'true'/);
+  assert.match(checkpoint, /name: news-recovery-\$\{\{ github\.run_id \}\}-\$\{\{ github\.run_attempt \}\}/);
+});
 test('failed run report is parsed as data; no unpublished article counts as live', () => {
   const log = JSON.stringify(report,null,2).split('\n').map(line => `update\tImport, analyze and build\t2026-09-06T17:22:36Z ${line}`).join('\n');
   assert.deepEqual(reportFromRunLog(log),report);
