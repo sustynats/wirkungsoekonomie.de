@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-23T05:24:53.889Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-23T05:49:56.254Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -35,6 +35,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-zerbrochene-fensterscheiben-nach-knall-in-speyer-493f99/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-zerbrochene-fensterscheiben-nach-knall-in-speyer-493f99/",
+      "title": "Laut Stern: Explosion in Speyer, zehn Menschen evakuiert",
+      "summary": "In Speyer kam es laut Stern zu einer Explosion, nach der zehn Menschen evakuiert wurden. Die Ursache bleibt offen; Verletzte wurden laut Quelle nicht gemeldet.",
+      "date_published": "2026-10-23T05:18:37.000Z",
+      "date_modified": "2026-10-23T05:18:37.000Z",
+      "_woek_released_at": "2026-10-23T05:58:31.039Z",
+      "tags": [
+        "Gesundheit"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         }
       }
