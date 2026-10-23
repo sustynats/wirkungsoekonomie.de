@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-23T17:05:23.168Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-23T17:33:16.973Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/innenminister-spricht-von-terror-tat-bei-paris-4d85fd/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/innenminister-spricht-von-terror-tat-bei-paris-4d85fd/",
+      "title": "Nach Angaben der tagesschau: Schüsse in mehreren Vororten von Paris",
+      "summary": "Nach Angaben der tagesschau gab es in mehreren Vororten von Paris Schüsse, einen Toten und mehrere Schwerverletzte. Die Bezeichnung als „terroristische Tat“ stammt vom französischen Innenminister und ist nicht unabhängig bestätigt.",
+      "date_published": "2026-10-23T15:15:56.000Z",
+      "date_modified": "2026-10-23T15:15:56.000Z",
+      "_woek_released_at": "2026-10-23T17:43:39.799Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
