@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-24T06:05:50.904Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-24T06:11:59.091Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "08e2907202435f272ff705a3",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-24T07:06:31.074Z"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3490,11 +3491,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/die-sorge-vor-einer-neuen-wahlluge-trumps-e67258/": {
         "first_seen_at": "2026-10-24T06:20:55.804Z",
         "source_at": "2026-10-24T04:15:01.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nach-todlichem-angriff-israelische-armee-startet-grossoffensive-im-westjordanland-9102aa/": {
+        "first_seen_at": "2026-10-24T07:06:31.074Z",
+        "source_at": "2026-10-24T05:37:52.000Z"
       }
     },
-    "last_new_at": "2026-10-24T06:20:55.804Z",
-    "checked_at": "2026-10-24T06:51:33.941Z",
-    "last_current_new_at": "2026-10-24T06:20:55.804Z"
+    "last_new_at": "2026-10-24T07:06:31.074Z",
+    "checked_at": "2026-10-24T07:06:31.074Z",
+    "last_current_new_at": "2026-10-24T07:06:31.074Z"
   },
   "recovery_attempts": [
     {
